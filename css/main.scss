@@ -43,6 +43,56 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        // Core variables and mixins
+        "bootstrap-sass/assets/stylesheets/bootstrap/variables",
+        "bootstrap-sass/assets/stylesheets/bootstrap/mixins",
+
+        // Reset and dependencies
+        "bootstrap-sass/assets/stylesheets/bootstrap/normalize",
+        "bootstrap-sass/assets/stylesheets/bootstrap/print",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/glyphicons",
+
+        // Core CSS
+        "bootstrap-sass/assets/stylesheets/bootstrap/scaffolding",
+        "bootstrap-sass/assets/stylesheets/bootstrap/type",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/code",
+        "bootstrap-sass/assets/stylesheets/bootstrap/grid",
+        "bootstrap-sass/assets/stylesheets/bootstrap/tables",
+        "bootstrap-sass/assets/stylesheets/bootstrap/forms",
+        "bootstrap-sass/assets/stylesheets/bootstrap/buttons",
+
+        // Components
+        "bootstrap-sass/assets/stylesheets/bootstrap/component-animations",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/dropdowns",
+        "bootstrap-sass/assets/stylesheets/bootstrap/button-groups",
+        "bootstrap-sass/assets/stylesheets/bootstrap/input-groups",
+        "bootstrap-sass/assets/stylesheets/bootstrap/navs",
+        "bootstrap-sass/assets/stylesheets/bootstrap/navbar",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs",
+        "bootstrap-sass/assets/stylesheets/bootstrap/pagination",
+        "bootstrap-sass/assets/stylesheets/bootstrap/pager",
+        "bootstrap-sass/assets/stylesheets/bootstrap/labels",
+        "bootstrap-sass/assets/stylesheets/bootstrap/badges",
+        "bootstrap-sass/assets/stylesheets/bootstrap/jumbotron",
+        "bootstrap-sass/assets/stylesheets/bootstrap/thumbnails",
+        "bootstrap-sass/assets/stylesheets/bootstrap/alerts",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/progress-bars",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/media",
+        "bootstrap-sass/assets/stylesheets/bootstrap/list-group",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/panels",
+        "bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/wells",
+        "bootstrap-sass/assets/stylesheets/bootstrap/close",
+
+        // Components w/ JavaScript
+        "bootstrap-sass/assets/stylesheets/bootstrap/modals",
+        "bootstrap-sass/assets/stylesheets/bootstrap/tooltip",
+        "bootstrap-sass/assets/stylesheets/bootstrap/popovers",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/carousel",
+
+        // Utility classes
+        "bootstrap-sass/assets/stylesheets/bootstrap/utilities",
+        "bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities",
         "base",
         "layout",
         "syntax-highlighting"

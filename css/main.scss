@@ -3,7 +3,7 @@
 ---
 @charset "utf-8";
 
-
+$thm-fonts-path: "/fonts";
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
@@ -43,6 +43,10 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        // fonts
+        "fonts",
+        "fontawesome/scss/font-awesome",
+
         // Core variables and mixins
         "bootstrap-sass/assets/stylesheets/bootstrap/variables",
         "bootstrap-sass/assets/stylesheets/bootstrap/mixins",
@@ -85,14 +89,15 @@ $on-laptop:        800px;
         "bootstrap-sass/assets/stylesheets/bootstrap/close",
 
         // Components w/ JavaScript
-        "bootstrap-sass/assets/stylesheets/bootstrap/modals",
-        "bootstrap-sass/assets/stylesheets/bootstrap/tooltip",
-        "bootstrap-sass/assets/stylesheets/bootstrap/popovers",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/modals",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/tooltip",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/popovers",
         //"bootstrap-sass/assets/stylesheets/bootstrap/carousel",
 
         // Utility classes
         "bootstrap-sass/assets/stylesheets/bootstrap/utilities",
         "bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities",
+
         "base",
         "layout",
         "syntax-highlighting"

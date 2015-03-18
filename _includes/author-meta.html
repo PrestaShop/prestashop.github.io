@@ -1,0 +1,27 @@
+{% assign author=site.data.authors[page.author] %}
+
+<div class="author-avatar">
+  <img class="img-circle" src="{{ author.avatar }}">
+</div>
+
+<p class="author-name">by {{ author.display_name }}</p>
+
+<ul class="list-group author-details">
+
+  {% if author.github %}
+  <li>
+    <a class="list-group-item" href="https://github.com/{{ author.github }}">
+      {% icon fa-github %} GitHub
+    </a>
+  </li>
+  {% endif %}
+
+  {% if author.twitter %}
+  <li>
+    <a class="list-group-item" href="https://twitter.com/{{ author.twitter }}">
+      {% icon fa-twitter %} Twitter
+    </a>
+  </li>
+  {% endif %}
+
+</ul>

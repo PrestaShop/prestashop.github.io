@@ -84,21 +84,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 /**
  * Links
  */
-a {
+a,
+a:visited {
     color: $brand-color;
     text-decoration: none;
-
+/*
     &:visited {
         color: darken($brand-color, 15%);
-    }
+    }*/
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        //text-decoration: underline;
     }
 }
 
@@ -148,29 +148,75 @@ pre {
     }
 }
 
-
+/**
+ * Content
+ */
 
 /**
- * Wrapper
+ * Posts
  */
-.wrapper {
-    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
-    max-width:         calc(800px - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
+.post-header {
+    margin: $spacing-unit 0 1.5*$spacing-unit;
+    text-align: center;
+    border-top: 1px solid $text-color;
+    border-bottom: 1px solid $text-color;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin: 16px 0 12px 0;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$spacing-unit}));
-        max-width:         calc(800px - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+        font-size: 36px;
+    }
+}
+
+/**
+ * Author
+ */
+aside.author {
+    div.author-avatar {
+        margin-bottom: 12px;
+    }
+    ul.author-details {
+        margin: 0 !important;
+        list-style-type: none;
+        a {
+            color: $text-color;
+        }
+    }
+    p.author-name {
+        text-align: center;
+        font-size: 115%;
+    }
+    .list-group-item {
+        border-left: 0;
+        border-right: 0;
     }
 }
 
 
+/**
+ * Footer
+ */
+footer.site-footer {
+    border-top: 1px solid $text-color;
+    text-align: center;
+    padding: 26px 0;
+    margin-top: 74px;
+    p {
+        font-size: 85%;
+    }
+    .fa {
+        margin: 0 6px;
+    }
+    a {
+        color: $text-color;
+        text-decoration: none;
+    }
+}
 
 /**
  * Clearfix
@@ -184,21 +230,3 @@ pre {
     }
 }
 
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
-}

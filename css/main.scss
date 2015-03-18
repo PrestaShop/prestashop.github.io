@@ -14,7 +14,9 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$white-text-color:  #f9f9f9;
+$background-color: #ffffff;
+$dark-background-color: #333333;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -73,11 +75,11 @@ $on-laptop:        800px;
         "bootstrap-sass/assets/stylesheets/bootstrap/navs",
         "bootstrap-sass/assets/stylesheets/bootstrap/navbar",
         //"bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs",
-        "bootstrap-sass/assets/stylesheets/bootstrap/pagination",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/pagination",
         "bootstrap-sass/assets/stylesheets/bootstrap/pager",
         "bootstrap-sass/assets/stylesheets/bootstrap/labels",
         "bootstrap-sass/assets/stylesheets/bootstrap/badges",
-        "bootstrap-sass/assets/stylesheets/bootstrap/jumbotron",
+        //"bootstrap-sass/assets/stylesheets/bootstrap/jumbotron",
         "bootstrap-sass/assets/stylesheets/bootstrap/thumbnails",
         "bootstrap-sass/assets/stylesheets/bootstrap/alerts",
         //"bootstrap-sass/assets/stylesheets/bootstrap/progress-bars",
@@ -99,6 +101,6 @@ $on-laptop:        800px;
         "bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities",
 
         "base",
-        "layout",
+        //"layout",
         "syntax-highlighting"
 ;

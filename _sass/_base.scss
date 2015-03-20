@@ -1,3 +1,9 @@
+@media (min-width:970px) and (max-width: 2500px) {
+    .container {
+     width: $screen-md;
+    }
+}
+
 /**
  * Reset some basic elements
  */
@@ -73,7 +79,85 @@ li {
          margin-bottom: 0;
     }
 }
+.post-meta ul {
+    margin: 0;
+    list-style-type: none
+}
+ul.post-list {
+    list-style-type: none;
+    margin: 16px 0;
+    li {
+        margin-bottom: 16px;
+        padding-left: 42px;
+        h2 {
+            margin: 0 0 0 -42px;
+            text-transform: capitalize;
+            i {
+                width: 32px;
+                text-align: center;
+            }
+            a {
+                color: $text-color;
+                &:hover {
+                    color: $brand-color;
+                }
+            }
+        }
+        h4 {
+            margin: ($spacing-unit / 4) 0 0 0;
+            color: $brand-color-2;
+            font-size: 75%;
+            text-transform: uppercase;
+        }
+        p {
+            margin-top: $spacing-unit / 2;
+        }
+    }
+    .post-divider {
+        height: 0px;
+        margin: $spacing-unit 0;
+        border-top: 1px dashed $grey-color-light;
+    }
+    .post-date {
+        color: $grey-color;
+        font-size: 75%;
+        text-transform: uppercase;
+    }
+}
 
+.topic {
+    margin: 64px 0 0 0;
+    text-transform: capitalize;
+}
+
+ul.howtos-list {
+    list-style-type: none;
+    margin: 16px 0;
+    li a {
+        margin-bottom: 16px;
+        padding-left: 64px;
+        color: $text-color;
+        h4 {
+            color: $text-color;
+            margin: 0 0 0 64px;
+            text-transform: capitalize;
+            i {
+                margin-left: -42px;
+                width: 21px;
+                text-align: center;
+            }
+        }
+        &:hover {
+            color: $brand-color;
+        }
+        .subtitle {
+            margin: 0 0 0 50px;
+            color: $brand-color-2;
+            font-size: 75%;
+            text-transform: uppercase;
+        }
+    }
+}
 
 
 /**
@@ -97,8 +181,8 @@ a:visited {
     }*/
 
     &:hover {
-        color: $text-color;
-        //text-decoration: underline;
+        color: $brand-color-2;
+        text-decoration: none;
     }
 }
 
@@ -156,10 +240,8 @@ pre {
  * Posts
  */
 .post-header {
-    margin: $spacing-unit 0 1.5*$spacing-unit;
+    margin: 2*$spacing-unit 0 2.5*$spacing-unit;
     text-align: center;
-    border-top: 1px solid $text-color;
-    border-bottom: 1px solid $text-color;
 }
 
 .post-title {
@@ -167,10 +249,6 @@ pre {
     letter-spacing: -1px;
     line-height: 1;
     margin: 16px 0 12px 0;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
 }
 
 /**
@@ -214,7 +292,9 @@ footer.site-footer {
     }
     a {
         color: $text-color;
-        text-decoration: none;
+        &:hover {
+            color: $brand-color-2;
+        }
     }
 }
 

@@ -4,20 +4,40 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Latest post</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
+
+      {% unless forloop.first %}
+        <li>
+          <div class="post-divider"></div>
+        </li>
+      {% endunless %}
+
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <div class="post-meta">
+          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
 
         <h2>
+            {% if post.icon %}
+              <i class="fa {{ post.icon }}"></i>
+            {% else %}
+              <i class="fa fa-terminal"></i>
+            {% endif %}
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+
+        {% if post.subtitle %}
+          <h4>{{ post.subtitle }}</h4>
+        {% endif %}
+
+        <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

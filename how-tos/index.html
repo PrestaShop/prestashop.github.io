@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="">
+
+  <h1 class="page-heading">How-Tos</h1>
+
+  <p>If there is anything you want to know, you might find the answer here.</p>
+
+    {% for coll in site.page_collections %}
+      {% assign topic = coll.first[0] %}
+
+      {% if site.data['page_collections'][topic].pages[0] %}
+
+        <h3 class="topic"> <i class="fa {{ coll.first[1]['icon'] }}"></i> {{ topic }}</h3>
+
+        <ul class="howtos-list">
+        {% for post in site.data['page_collections'][topic].pages %}
+
+          <li>
+            <a href="{{ post.url }}">
+
+              <h4> {% icon fa-chevron-right %} {{ post.title }}</h4>
+
+              {% if post.subtitle %}
+                <span class="subtitle">{{ post.subtitle }}</span>
+              {% endif %}
+            </a>
+          </li>
+
+        {% endfor %}
+        </ul>
+
+      {% endif %}
+
+    {% endfor %}
+
+</div>

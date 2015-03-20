@@ -3,7 +3,12 @@ title: "PrestaShop Developers' blog"
 email: build@prestashop.com
 description: "Official blog for PrestaShop development straight from the core dev team."
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://dev.prestashop.com" # the base hostname & protocol for your site
+url: "http://build.prestashop.com" # the base hostname & protocol for your site
+
+permalink: /:categories/:title/
+
+
+disqus_shortname: prestashopbuild
 
 twitter_username: PrestaShop
 github_username:  PrestaShop
@@ -18,3 +23,18 @@ sass:
         - _sass
         - _bower_components
     style: compressed
+
+# Page collection are used for how-tos pages
+page_collections:
+- theme:
+    source: _howtos/theme
+    icon: fa-text-width
+- module:
+    source: _howtos/module
+    icon: fa-plug
+- misc:
+    source: _howtos/misc
+    icon: fa-random
+- upgrade:
+    source: _howtos/upgrade
+    icon: fa-refresh

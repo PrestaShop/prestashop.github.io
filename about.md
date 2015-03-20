@@ -4,21 +4,21 @@ title: About
 permalink: /about/
 ---
 
-### Why
+## Why
 
 This blog is about everything that has to do with PrestaShop. This blog is written by the whole PrestaShop product team: developers, designers, writers,...
 
 We write about the upcoming changes in the codebase, architectures or any behavior change that might affect you. You will also find a How-Tos to learn how to use a new features.
 
-### Contribute
+## Contribute
 
 How about writing a guess post here ? Maybe you've been working with PrestaShop for a while and you want to write about how you use it. That might inspire other people in the community !
 
-Also if we merge one of your cool *Pull Request* on {% icon fa-github %} [GitHub](http://gihub.com/PrestaShop/PrestaShop) we will probably invite you to tell us more about it here.
+Also if we merge one of your cool *Pull Request* on [GitHub](http://gihub.com/PrestaShop/PrestaShop) we will probably invite you to tell us more about it here.
 
 Before you start you can send us a short proposal at [{{ site.email }}](mailto:{{ site.email }})
 
-### Guidelines
+## Guidelines
 
 **Support**
 

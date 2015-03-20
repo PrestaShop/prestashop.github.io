@@ -80,9 +80,13 @@ li {
     }
 }
 .post-meta ul {
-    margin: 0;
-    list-style-type: none
+    margin: $spacing-unit 0 0;
+    list-style-type: none;
+    padding: 12px;
+    border-top: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
 }
+
 ul.post-list {
     list-style-type: none;
     margin: 16px 0;
@@ -275,6 +279,13 @@ aside.author {
     }
 }
 
+
+/**
+ * Comments
+ */
+#disqus_thread {
+    margin: 2*$spacing-unit 0 $spacing-unit;
+}
 
 /**
  * Footer

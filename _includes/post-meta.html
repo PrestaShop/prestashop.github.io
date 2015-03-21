@@ -4,16 +4,16 @@
 
       <li>{% icon fa-calendar %} {{ page.date | date: "%b %-d, %Y" }}</li>
 
-      {% if page.categories[1] %}
+      {% unless page.tags == empty %}
         <li>
           {% icon fa-tags %}
 
-          {% for cat in page.categories %}
+          {% for cat in page.tags %}
             <span class="label label-primary">{{ cat }}</span>
           {% endfor %}
 
         </li>
-      {% endif %}
+      {% endunless %}
 
     </ul>
   </div>

@@ -6,7 +6,7 @@ date:   2015-03-04 15:12:00
 author: julienbourdeau
 icon: fa-pencil
 tags: [help]
-published: false
+published: true
 ---
 
 When we started talking about a dev blog, we thought about who can write, what we want to talk about, 
@@ -44,12 +44,21 @@ Next, fork the repo into your GitHub account then clone it on your local machine
 If you don't know how to do this, please [check out the GitHub Help](https://help.github.com/articles/fork-a-repo/).
 
 
+### Install dependencies and build Jekyll
+
+*Bundler* will install Jekyll and all the ruby dependencies. Then *Bower* will install all the front-end required libraries
+like 'bootstrap-sass' or 'fontawesome'. Finally we use bundler to build jekyll and watch any file change.
+
+{% highlight bash %}
 bundle install
 bower install
 bundle exec jekyll build --watch
+{% endhighlight %}
 
-
-
+{% alert note %}
+When you're using the `--watch` option, it's only watching content or styles. So if you are changing
+any plugin or some line in your `_config.yml`, you'll have to quit (`ctrl+C`) and rebuild.
+{% endalert %}
 
 ## Create a new article
 
@@ -134,7 +143,8 @@ julienbourdeau:
 
 ### Markdown & Liquid
 
-
+* https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+* https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 ### Images
 

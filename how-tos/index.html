@@ -18,6 +18,7 @@ layout: default
         <ul class="howtos-list">
         {% for post in site.data['page_collections'][topic].pages %}
 
+          {% if post.published %}
           <li>
             <a href="{{ post.url }}">
 
@@ -28,6 +29,7 @@ layout: default
               {% endif %}
             </a>
           </li>
+          {% endif %}
 
         {% endfor %}
         </ul>

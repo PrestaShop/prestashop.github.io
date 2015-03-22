@@ -278,6 +278,10 @@ code {
     text-align: center;
 }
 
+.alert-note {
+    @extend .alert-warning;
+}
+
 /**
  * Author
  */

@@ -50,6 +50,10 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
+.post-content img {
+    @extend .img-responsive;
+    margin: auto;
+}
 
 
 
@@ -64,7 +68,11 @@ figcaption {
     font-size: $small-font-size;
 }
 
-
+table {
+    @extend .table;
+    @extend .table-bordered;
+    @extend .table-striped;
+}
 
 /**
  * Lists
@@ -213,27 +221,15 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
-    font-size: 15px;
+p code {
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: $code-bg-color;
+    color: #dd1144;
 }
 
 code {
     padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
 }
 
 /**

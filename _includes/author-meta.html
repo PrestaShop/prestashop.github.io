@@ -4,24 +4,7 @@
   <img class="img-circle" src="{{ author.avatar }}">
 </div>
 
-<p class="author-name">by {{ author.display_name }}</p>
-
-<ul class="list-group author-details">
-
-  {% if author.github %}
-  <li>
-    <a class="list-group-item" href="https://github.com/{{ author.github }}">
-      {% icon fa-github %} GitHub
-    </a>
-  </li>
-  {% endif %}
-
-  {% if author.twitter %}
-  <li>
-    <a class="list-group-item" href="https://twitter.com/{{ author.twitter }}">
-      {% icon fa-twitter %} Twitter
-    </a>
-  </li>
-  {% endif %}
-
-</ul>
+<div class="aside-meta">By</div>
+<p class="author-name">
+  {{ author.display_name }}
+</p>

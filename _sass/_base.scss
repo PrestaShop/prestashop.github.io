@@ -37,7 +37,8 @@ body {
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
-%vertical-rhythm {
+%vertical-rhythm,
+.vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -179,6 +180,40 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+.post-header {
+    margin: 2*$spacing-unit 0 2.5*$spacing-unit;
+    text-align: center;
+
+    h1 {
+        font-size: 3em;
+        font-weight: 400;
+        letter-spacing: -1px;
+        line-height: 1;
+        margin: 0;
+    }
+    h3 {
+        font-size: 1.3em;
+        margin: 0.5*$spacing-unit 0 0 0;
+    }
+}
+.post-content {
+    h2 {
+        font-size: 2.5em;
+        font-weight: 500;
+        margin: 2*$spacing-unit 0 $spacing-unit;
+        padding-bottom: $spacing-unit / 3;
+        border-bottom: 1px solid $grey-color;
+    }
+    h3 {
+        font-size: 1.8em;
+        font-weight: 400;
+        margin: 1.5*$spacing-unit 0 $spacing-unit;
+    }
+    h4 {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+}
 
 /**
  * Links
@@ -236,42 +271,36 @@ code {
  * Content
  */
 
-/**
- * Posts
- */
-.post-header {
-    margin: 2*$spacing-unit 0 2.5*$spacing-unit;
+.aside-meta {
+    font-size: 0.8em;
+    color: $grey-color;
+    text-transform: uppercase;
     text-align: center;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-    margin: 16px 0 12px 0;
 }
 
 /**
  * Author
  */
-aside.author {
-    div.author-avatar {
-        margin-bottom: 12px;
-    }
-    ul.author-details {
+.author-avatar {
+    margin-bottom: 0.5*$spacing-unit;
+}
+.author-name {
+    text-align: center;
+}
+
+/**
+ * Share buttons
+ */
+aside.share-buttons {
+    ul {
         margin: 0 !important;
         list-style-type: none;
         a {
             color: $text-color;
         }
-    }
-    p.author-name {
-        text-align: center;
-        font-size: 115%;
-    }
-    .list-group-item {
-        border-left: 0;
-        border-right: 0;
+        li {
+            margin-bottom: 6px;
+        }
     }
 }
 
@@ -280,7 +309,7 @@ aside.author {
  * Comments
  */
 #disqus_thread {
-    margin: 2*$spacing-unit 0 $spacing-unit;
+    margin: 3*$spacing-unit 0 $spacing-unit;
 }
 
 /**

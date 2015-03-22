@@ -3,10 +3,13 @@
 ---
 @charset "utf-8";
 
-$thm-fonts-path: "/fonts";
+$thm-fonts-path: "/assets/fonts";
+
+$fa-font-path:  $thm-fonts-path + "/fontawesome";
+$OpenSansPath:  $thm-fonts-path + "/open-sans";
 
 // Our variables
-$base-font-family: Helvetica; // TODO
+$base-font-family: 'Open Sans', serif; // TODO
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -19,6 +22,7 @@ $background-color: #ffffff;
 $dark-background-color: #333333;
 $brand-color:      #2a7ae2;
 $brand-color-2:    #ed2279;
+$code-bg-color:    #fafaff;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -29,8 +33,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         // fonts
-        "fonts",
         "fontawesome/scss/font-awesome",
+        "open-sans-fontface/open-sans.scss",
 
         // Core variables and mixins
         "bootstrap-sass/assets/stylesheets/bootstrap/variables",

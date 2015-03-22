@@ -18,6 +18,8 @@ instagram_username: prestacrew
 markdown: kramdown
 highlighter: pygments
 
+exclude: ["bower.json", "Gemfile", "Gemfile.lock", "CNAME"]
+
 sass:
     load_paths:
         - _sass

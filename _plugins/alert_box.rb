@@ -39,6 +39,10 @@ eos
           str << "<h4><i class='fa fa-file-text-o'></i> Note</h4>"
         elsif (alert_type == 'info')
           str << "<h4><i class='fa fa-info-circle'></i> Info</h4>"
+        elsif (alert_type == 'important')
+          str << "<h4><i class='fa fa-exclamation-triangle'></i> Important</h4>"
+        elsif (alert_type == 'tip')
+          str << "<h4><i class='fa fa-magic'></i> Tip</h4>"
         end
       end
 

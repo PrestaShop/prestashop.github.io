@@ -29,7 +29,9 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-
+.text-center {
+    text-align: center;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -257,15 +259,29 @@ blockquote {
 /**
  * Code formatting
  */
-p code {
+p code,
+li code {
+    padding: 1px 5px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: $code-bg-color;
     color: #dd1144;
 }
 
-code {
-    padding: 1px 5px;
+
+/**
+ * Header
+ */
+
+.site-header {
+    padding: $spacing-unit 0;
+    a, a:visited {
+        color: $text-color;
+    }
+    .site-title {
+        font-size: 2em;
+        font-family: monospace;
+    }
 }
 
 /**
@@ -281,6 +297,12 @@ code {
 
 .alert-note {
     @extend .alert-warning;
+}
+.alert-important {
+    @extend .alert-danger;
+}
+.alert-tip {
+    @extend .alert-success;
 }
 
 /**

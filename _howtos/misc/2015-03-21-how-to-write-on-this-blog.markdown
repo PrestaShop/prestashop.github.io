@@ -153,10 +153,15 @@ Exemple:
 {% highlight yaml %}
 julienbourdeau:
     display_name: Julien Bourdeau
+    role: Core developer
     avatar: https://avatars1.githubusercontent.com/u/1525636
     email: julien@prestashop.com
     twitter: julienbourdeau
     github: julienbourdeau
+    website: http://www.example.com
+    description: >
+        This is a description of the author with details about what he does really 
+        and the cool thing is: it's multiline.
 {% endhighlight %}
 
 

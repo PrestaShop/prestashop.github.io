@@ -4,17 +4,6 @@
     }
 }
 
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
-}
-
-
 
 /**
  * Basic styling
@@ -90,12 +79,37 @@ li {
          margin-bottom: 0;
     }
 }
-.post-meta ul {
-    margin: $spacing-unit 0 0;
-    list-style-type: none;
+.post-meta {
+    margin: 2.5*$spacing-unit 0 0;
     padding: 12px;
     border-top: 1px solid $grey-color-light;
     border-bottom: 1px solid $grey-color-light;
+    ul.details {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .author-details {
+        border-left: 1px solid $grey-color-light;
+        h5 {
+            font-weight: 500;
+            margin-bottom: $spacing-unit/3;
+        }
+        h4 {
+            margin-top: 0;
+            font-weight: 600;
+            span {
+                padding-top: $spacing-unit/5;
+                display: block;
+                font-weight: 500;
+                color: $grey-color;
+                font-size: 0.8em;
+            }
+        }
+        p {
+            font-size: 0.9em;
+        }
+    }
 }
 
 ul.post-list {
@@ -223,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 a,
 a:visited {
-    color: $brand-color;
+    //color: $brand-color;
     text-decoration: none;
 /*
     &:visited {
@@ -231,7 +245,7 @@ a:visited {
     }*/
 
     &:hover {
-        color: $brand-color-2;
+        //color: $brand-color-2;
         text-decoration: none;
     }
 }

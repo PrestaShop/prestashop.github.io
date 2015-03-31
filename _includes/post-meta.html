@@ -1,19 +1,59 @@
 
   <div class="post-meta">
-    <ul class="">
+    <div class="row">
 
-      <li>{% icon fa-calendar %} {{ page.date | date: "%b %-d, %Y" }}</li>
+      <div class="col-md-4">
+        <ul class="details">
 
-      {% unless page.tags == empty %}
-        <li>
-          {% icon fa-tags %}
+          <li>{% icon fa-calendar %} {{ page.date | date: "%b %-d, %Y" }}</li>
 
-          {% for cat in page.tags %}
-            <span class="label label-primary">{{ cat }}</span>
-          {% endfor %}
+          {% unless page.tags == empty %}
+            <li>
+              {% icon fa-tags %}
 
-        </li>
-      {% endunless %}
+              {% for cat in page.tags %}
+                <span class="label label-primary">{{ cat }}</span>
+              {% endfor %}
 
-    </ul>
+            </li>
+          {% endunless %}
+
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+              <h5>About the author</h5>
+              
+              <h4>
+                {{ author.display_name }}
+                <span>{{ author.role }}</span>
+              </h4>
+              <p>{{ author.description }}</p>
+
+              {% if author.github %}
+                <a class="btn btn-default btn-sm" href="https://github.com/{{ author.github }}">
+                  <i class="fa fa-github"></i> GitHub
+                </a>
+              {% endif %}
+              {% if author.twitter %}
+                <a class="btn btn-default btn-sm" href="https://twitter.com/{{ author.twitter }}">
+                  <i class="fa fa-twitter"></i> Twitter
+                </a>
+              {% endif %}
+              {% if author.website %}
+                <a class="btn btn-default btn-sm" href="{{ author.website }}">
+                  <i class="fa fa-home"></i> Website
+                </a>
+              {% endif %}
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>

@@ -56,7 +56,7 @@ on their website, according to your OS.
 
 * [Ruby](https://www.ruby-lang.org/en/documentation/installation/) (I use Ruby 2.0.0)
 * [NPM](https://www.npmjs.com/)
-* [Bower](http://bundler.io/)
+* [Bower](http://bower.io/)
 * [Bundler](http://bundler.io/)
 
 

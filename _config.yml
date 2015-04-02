@@ -2,17 +2,18 @@
 title: "PrestaShop Developers' blog"
 email: build@prestashop.com
 description: "Official blog for PrestaShop development straight from the core dev team."
-baseurl: "/build.prestashop.com" # the subpath of your site, e.g. /blog/
-url: "http://prestashop.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://build.prestashop.dev" # the base hostname & protocol for your site
 
 permalink: /:categories/:title/
 
-
+google-analytics: "UA-2753771-31"
 disqus_shortname: prestashopbuild
 
 twitter_username: PrestaShop
 github_username:  PrestaShop
 instagram_username: prestacrew
+spotify_username: prestacrew
 
 # Build settings
 markdown: kramdown

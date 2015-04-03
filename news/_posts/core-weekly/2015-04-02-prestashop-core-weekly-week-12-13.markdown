@@ -20,11 +20,9 @@ The Core Weekly report is ever evolving, so if you have ideas on how to improve 
 ## Milestones
 
 There's been a huge milestone for PrestaShop this week: we moved! It took a few days, but now that we're settling down (with Puff Daddy, our own in-house kitten!), I can finish the Core Weekly quietly :)
-Hey, I took a few picture and built an album with them, check it out! [http://imgur.com/a/Glx7d]()
+Hey, I took a few picture and built an album with them, check it out! [http://imgur.com/a/Glx7d](http://imgur.com/a/Glx7d)
 
-Also, we started a poll on the forum about moving to PSR-2's Coding Style Guide. Let us know you opinion! [https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/]()
-
-Finally, [something's brewing here](https://github.com/PrestaShop/build.prestashop.com)...
+Also, we started a poll on the forum about moving to PSR-2's Coding Style Guide. Let us know you opinion! [https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/](https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/)
 
 ## Code changes
 

@@ -12,7 +12,7 @@ tags:
 Welcome to the inaugural post relating what has been going on in the development side of PrestaShop!
 
 I aim to make this a weekly occurrence (as the title implies), in which I'll highlight some of the more important happenings in and around the Core.
-In short, this is for those who do not visit [https://github.com/PrestaShop/PrestaShop/commits/1.6]() and [http://forge.prestashop.com/browse/PSCSX]()) on a daily basis :)
+In short, this is for those who do not visit [https://github.com/PrestaShop/PrestaShop/commits/1.6](https://github.com/PrestaShop/PrestaShop/commits/1.6) and [http://forge.prestashop.com/browse/PSCSX](http://forge.prestashop.com/browse/PSCSX)) on a daily basis :)
 
 
 ## Milestones
@@ -27,8 +27,8 @@ Last week was marked by two milestones:
 	* Display product images on invoices
 	* Installer in French (Quebec) and Portuguese (Portugal)
 
-See the announcement forum post here: [https://www.prestashop.com/forums/topic/418728-prestashop-16013-is-available-for-download]()
-And the changelog for v1.6.0.13 is here: [https://www.prestashop.com/en/developers-versions/changelog/1.6.0.13]()
+See the announcement forum post here: [https://www.prestashop.com/forums/topic/418728-prestashop-16013-is-available-for-download](https://www.prestashop.com/forums/topic/418728-prestashop-16013-is-available-for-download)
+And the changelog for v1.6.0.13 is here: [https://www.prestashop.com/en/developers-versions/changelog/1.6.0.13](https://www.prestashop.com/en/developers-versions/changelog/1.6.0.13)
 
 
 ## Community day
@@ -73,8 +73,8 @@ Find all Forge tickets closed last week here: [click here!](http://forge.prestas
 
 ### Notable commits to the 1.6 branch:
 
-* 30000th commit! [https://github.com/PrestaShop/PrestaShop/commit/be9ddb7e6a2f12dddaffe1e9fb098a64c66ecc29]() Props gRoussac.
-* Invoice : Display shipping and wrapping breakdown by rate in case of summed taxes [https://github.com/PrestaShop/PrestaShop/commit/2d02b90f845ab75f21ec516de0d09dddef5390ad]() Props djfm.
+* 30000th commit! [https://github.com/PrestaShop/PrestaShop/commit/be9ddb7e6a2f12dddaffe1e9fb098a64c66ecc29](https://github.com/PrestaShop/PrestaShop/commit/be9ddb7e6a2f12dddaffe1e9fb098a64c66ecc29) Props gRoussac.
+* Invoice : Display shipping and wrapping breakdown by rate in case of summed taxes [https://github.com/PrestaShop/PrestaShop/commit/2d02b90f845ab75f21ec516de0d09dddef5390ad](https://github.com/PrestaShop/PrestaShop/commit/2d02b90f845ab75f21ec516de0d09dddef5390ad) Props djfm.
 * jocel1 closed bugs #PSCSX-4829 and many others; dramatically improving performances.
 
 

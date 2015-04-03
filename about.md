@@ -28,7 +28,7 @@ This blog is not for support, if you need help you can search [our forum](http:/
 
 **Feature requests**
 
-If you want to see some feature added to PrestaShop, please vote or open a proposal on our XXXXXXX.
+If you want to see some feature added to PrestaShop, please vote or open a proposal on our [UserVoice](http://feedback.prestashop.com/forums/124931-general).
 
 **Bug report**
 

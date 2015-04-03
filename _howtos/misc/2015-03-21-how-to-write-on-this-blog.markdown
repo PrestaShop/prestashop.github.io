@@ -26,6 +26,12 @@ best option out there -- and **you can actually make a *Pull Request* on GitHub 
 
 ## TL;DR
 
+{% alert note %}
+First: tell us what you want to write about! We won't accept just about any submission :)
+
+Write to us with your idea (we can be reached at build@prestashop.com), with a rough idea or the whole thing ready, and let's talk about it. Once we agree on the subject, then you are good to go!
+{% endalert %}
+
 You don’t have to read all the details below: if you want to write an article right away, you can simply follow those steps:
 
 1. Fork [the repo](https://github.com/PrestaShop/build.prestashop.com) (see [GitHub doc](https://help.github.com/articles/fork-a-repo/))

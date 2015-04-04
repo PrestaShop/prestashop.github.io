@@ -44,7 +44,7 @@ You don’t have to read all the details below: if you want to write an article 
 [Download a demo article](https://gist.githubusercontent.com/julienbourdeau/98a944e00c3ceb5dff5e/raw/a7d6c292ca501c66cb24e34ff805630f1289c306/2015-12-31-demo-post.markdown){: .btn .btn-success download="2015-12-31-demo-post.markdown"}
 {: .text-center}
 
-You can even get GitHub to do most of the work for you for you: see the video below.
+You can even get GitHub to do most of the work for you: see the video below.
 
 <iframe width="797" height="598" src="https://www.youtube.com/embed/vU4pj0-3Odc?rel=0" frameborder="0" allowfullscreen></iframe>
 

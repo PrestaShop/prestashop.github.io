@@ -11,33 +11,42 @@
     <div class="row">
       <div id="social-icons" class="col-sm-12 col-md-4 col-md-offset-4">
 
-          <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+          <a href="{{ "/feed.xml" | prepend: site.baseurl }}" title="">
             {% icon fa-rss fa-2x %}
           </a>
 
           {% if site.github_username %}
-            <a href="https://github.com/{{ site.github_username }}">
+            <a href="https://github.com/{{ site.github_username }}" title="">
               {% icon fa-github fa-2x %}
             </a>
           {% endif %}
 
           {% if site.twitter_username %}
-            <a href="https://twitter.com/{{ site.twitter_username }}">
+            <a href="https://twitter.com/{{ site.twitter_username }}" title="">
               {% icon fa-twitter fa-2x %}
             </a>
           {% endif %}
 
           {% if site.instagram_username %}
-            <a href="https://instagram.com/{{ site.instagram_username }}">
+            <a href="https://instagram.com/{{ site.instagram_username }}" title="">
               {% icon fa-instagram fa-2x %}
             </a>
           {% endif %}
 
           {% if site.spotify_username %}
-            <a href="https://play.spotify.com/user/{{ site.spotify_username }}">
+            <a href="https://play.spotify.com/user/{{ site.spotify_username }}" title="">
               {% icon fa-spotify fa-2x %}
             </a>
           {% endif %}
+
+          <span class="separator"> | </span>
+
+          {% if site.status_page_url %}
+            <a href="{{ site.status_page_url }}" title="PrestaShop Cloud Health">
+              {% icon fa-heartbeat fa-2x %}
+            </a>
+          {% endif %}
+
       </div>
     </div>
 

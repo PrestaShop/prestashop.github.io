@@ -37,7 +37,7 @@ You don’t have to read all the details below: if you want to write an article 
 1. Fork [the repo](https://github.com/PrestaShop/build.prestashop.com) (see [GitHub doc](https://help.github.com/articles/fork-a-repo/))
 1. Download [this sample file](https://gist.githubusercontent.com/julienbourdeau/98a944e00c3ceb5dff5e/raw/a7d6c292ca501c66cb24e34ff805630f1289c306/2015-12-31-demo-post.markdown){: download="2015-12-31-demo-post.markdown"}.
 1. Rename it according to the date and your topic **(NOTE: the date in the file name is mandatory)**.
-1. Move it to the right folder: `_posts/news` for a blog post, `_howtos/CATEGORY` for a tutorial.
+1. Move it to the right folder: `news/_posts` for a blog post, `_howtos/CATEGORY` for a tutorial.
 1. Write it.
 1. Make a [Pull-Request](https://help.github.com/articles/creating-a-pull-request/) on the initial project you forked.
 

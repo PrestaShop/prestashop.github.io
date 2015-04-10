@@ -81,7 +81,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [2806](https://github.com/PrestaShop/PrestaShop/pull/2806): fix PSCSX-5171 - missing translation in PDF, by AlexEven.
 
  
-We're making good progress towards a significant new version, where a lot has been optimized. The coming version of PrestaShop will be faster and strong then any you have seen before!
+We're making good progress towards a significant new version, where a lot has been optimized. The coming version of PrestaShop will be faster and stronger than any you have seen before!
 
 Thank you to the PrestaShop Core developers for making sure the code is always top-notch, and thank you to our super contributors for their non-ending flow of great ideas: PrestaEdit, gskema, wellic, TomasVotruba, natrim, axometeam, dkarvounaris, doekia, and cedricfontaine... and those whose contributions were not merged, too! Also, a big thanks to all those who contribute with tickets on the Forge!
 
@@ -92,6 +92,6 @@ Remember: if you want to contribute to PrestaShop with code, read those:
 
 ...and if you do not know how to fix an issue but wish to report it, read this: [How to use the Forge to contribute to PrestaShop](http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop). Thank you!
 
-That's it for the previous two weeks! We'll be back to a truly weekly report next week. Until then, let me know if I forgot something, or if you have ideas about how to improve the Core Weekly report!
+Until the next Core Weekly report, let me know if I forgot something here, or if you have ideas about how to improve the this report!
 
 Cheers!

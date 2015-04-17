@@ -31,7 +31,7 @@ As always, click on the PR's number to open its page on GitHub.
 #### Code typos
 
  * [2849](https://github.com/PrestaShop/PrestaShop/pull/2849): Missing space, by jeromenadaud.
- * [2851](https://github.com/PrestaShop/PrestaShop/pull/2851) and [2852](https://github.com/PrestaShop/PrestaShop/pull/2852): Replaces </br> tag with <br />. Thank you zimmi1!
+ * [2851](https://github.com/PrestaShop/PrestaShop/pull/2851) and [2852](https://github.com/PrestaShop/PrestaShop/pull/2852): Replaces &lt;/br&gt; tag with &lt;br&nbsp;/&gt;. Thank you zimmi1!
  
 #### Text fixes
 
@@ -82,9 +82,9 @@ As always, click on the PR's number to open its page on GitHub.
  * [2859](https://github.com/PrestaShop/PrestaShop/pull/2859): PHPDoc + unused var, by jeromenadaud.
  
 
-See all the PRs merged into the codebase since April 6th here: https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-04-06+is%3Aclosed
+See all the PRs merged into the codebase since April 6th [here](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-04-06+is%3Aclosed).
 
-Thank you to our contributors for their PRs: zimmi1, eric-rouvier, prestarocket, DanH42, guestisp, PrestaEdit, doekia, and gskema... and those whose contributions were not merged yet! Also, a big thanks to all those who contribute with tickets on the Forge!
+Thank you to our contributors for their PRs: [DanH42](https://github.com/DanH42), [doekia](https://github.com/doekia), [eric-rouvier](https://github.com/eric-rouvier), [gskema](https://github.com/gskema), [guestisp](https://github.com/guestisp), [PrestaEdit](https://github.com/PrestaEdit), [prestarocket](https://github.com/prestarocket), and [zimmi1](https://github.com/zimmi1)... and those whose contributions were not merged yet! Also, a big thanks to all those who contribute with tickets on the Forge!
 
 Remember: if you want to contribute to PrestaShop with code, read those:
 
@@ -93,6 +93,6 @@ Remember: if you want to contribute to PrestaShop with code, read those:
 
 ...and if you do not know how to fix an issue but wish to report it, read this: [How to use the Forge to contribute to PrestaShop](http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop). Thank you!
 
-Until the next Core Weekly report, let me know if I forgot something here, or if you have ideas about how to improve the this report!
+Until the next Core Weekly report, let me know if I forgot something here, or if you have ideas about how to improve this report!
 
 Happy contributin' everyone!

@@ -29,11 +29,11 @@ Generally, you shouldn't version the following types of files:
 
 The first thing you need to decide is whether you want to keep track of the PrestaShop core files changes or not. If you're using PrestaShop correctly, you shouldn't modify core files to suit your needs -- you should [override the core classes in order to modify PrestaShop's behavior](http://doc.prestashop.com/display/PS16/Overriding+default+behaviors).
 
-If you don't want to version the core file, you have to clone your repo then drop the PrestaShop files (from a stable release) into the folder.
+If you don't want to version the core files, you have to clone your repo then drop the PrestaShop files (from a stable release) into the folder.
 
 But in my opinion, **it is better to version core files**.
 
-Indeed, even if you don't intend to modify the core file, you might have to apply specific patches. It's always **better to make sure that all your environments are exactly the same**. This way, it's much easier to deploy a new environment.
+Indeed, even if you don't intend to modify the core files, you might have to apply specific patches. It's always **better to make sure that all your environments are exactly the same**. This way, it's much easier to deploy a new environment.
 
 Even better: if you create a branch which tracks PrestaShop/PrestaShop (1.6 branch), **you will be able to [cherry-pick](http://git-scm.com/docs/git-cherry-pick) the patches you need**.
 
@@ -43,7 +43,7 @@ Even better: if you create a branch which tracks PrestaShop/PrestaShop (1.6 bran
 
 If you host your project on GitHub, you can choose to initialize your project with a `.gitignore` file.
 
-We recently [updated it](https://github.com/github/gitignore/pull/1479) as a result you'll get the file below ([direct link](https://github.com/github/gitignore/blob/master/Prestashop.gitignore)):
+We recently [updated it](https://github.com/github/gitignore/pull/1479), as a result you'll get the file below ([direct link](https://github.com/github/gitignore/blob/master/Prestashop.gitignore)):
 
 {% gist julienbourdeau/0f7d629cb7f9bc6995fc %}
 

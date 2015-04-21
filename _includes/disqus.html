@@ -6,6 +6,14 @@
             /* * * CONFIGURATION VARIABLES * * */
             var disqus_shortname = '{{ site.disqus_shortname }}';
 
+            {% if page.disqus_identifier %}
+                var disqus_identifier = '{{ page.disqus_identifier}}';
+            {% endif %}
+
+            {% if page.disqus_url %}
+                var disqus_url = '{{ page.disqus_url}}';
+            {% endif %}
+
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

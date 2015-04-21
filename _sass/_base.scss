@@ -147,10 +147,14 @@ ul.post-list {
         margin: $spacing-unit 0;
         border-top: 1px dashed $grey-color-light;
     }
-    .post-date {
+    .list-post-meta {
         color: $grey-color;
         font-size: 75%;
         text-transform: uppercase;
+        span.separator:before {
+            content: ' | ';
+            padding: 6px;
+        }
     }
 }
 

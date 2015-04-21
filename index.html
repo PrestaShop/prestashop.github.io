@@ -25,7 +25,7 @@ comment_counter: true
           </span>
           <span class="separator"></span>
           {% icon fa-comment %}
-          <span class="disqus-comment-count" data-disqus-url="{% if post.disqus_url %}{{ post.disqus_url }}{% else %}{{ post.url }}{% endif %}"></span>
+          <span class="disqus-comment-count" data-disqus-url="{% if post.disqus_url %}{{ post.disqus_url }}{% else %}{{ post.url | prepend: site.url }}{% endif %}"></span>
         </div>
 
         <h2>

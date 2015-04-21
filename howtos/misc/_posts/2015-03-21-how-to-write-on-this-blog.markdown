@@ -3,25 +3,26 @@ layout: post
 title:  "How to write on this blog"
 subtitle: "or: How we tried to ensure that only developers could write on the devblog :)"
 date:   2015-03-04 15:12:00
+disqus_url: "http://build.prestashop.com/misc/how-to-write-on-this-blog/"
 author: julienbourdeau
 icon: fa-pencil
 tags: [help]
 published: true
 ---
 
-When we started talking about a dev blog among us, we thought about who could write, what we wanted to talk about, 
+When we started talking about a dev blog among us, we thought about who could write, what we wanted to talk about,
 who was going to review the articles...
 
 Technically, WordPress was the first solution we reviewed but after giving it more thought we realized it would be too much of a hassle to maintain: plugin updates, core updates, database backups, security issues, etc.
 
-We then came up with a better idea: [Jekyll](http://jekyllrb.com/). 
+We then came up with a better idea: [Jekyll](http://jekyllrb.com/).
 
 ![Jekyll Logo](/assets/images/2015/04/jekyll.png)
 
 Jekyll uses a set of configuration and data files, article files (written in [Markdown](http://daringfireball.net/projects/markdown/) or pretty much [any other format](http://jekyllrb.com/docs/posts/)), and resources (CSS, images, fonts, etc.) to generate a **fully static website, made only of plain HTML files**.
 Since you can version everything with *Git* and you don't have to set up any database, it seems like the easiest 'CMS'. So that's what we're reading now: plain HTML generated from Markdown markup through Jekyll!
 
-This blog is also meant to become the 'place to be' for the PrestaShop tech community, and Jekyll is definitely the 
+This blog is also meant to become the 'place to be' for the PrestaShop tech community, and Jekyll is definitely the
 best option out there -- and **you can actually make a *Pull Request* on GitHub to edit any content.** Actually, [GitHub's Pages](https://pages.github.com/) features is powered by Jekyll too, so we're not really choosing in the blind here :)
 
 ## TL;DR
@@ -102,7 +103,7 @@ As a contributing writer on the Build blog, you are mostly interested in **/asse
 With Jekyll, the location of your files matter. On this blog, we have two kinds of articles:
 
 * **News**: They live in the `news/_posts` folder and they show up on the home page.
-* **How-Tos**: They live in the `_howtos` folder and are sorted by topic. These posts are displayed on the How-Tos 
+* **How-Tos**: They live in the `_howtos` folder and are sorted by topic. These posts are displayed on the How-Tos
 page and they are sorted by topic.
 
 {% alert note %}
@@ -133,7 +134,7 @@ Copy and paste the following lines at the top of your new file, and customize th
 ---
 layout: post
 title:  "Here goes the title of your article"
-subtitle: "This text will be displayed below your title" 
+subtitle: "This text will be displayed below your title"
 date:   2015-03-04 15:12:00
 author: julienbourdeau
 icon: fa-pencil
@@ -187,7 +188,7 @@ If you are struggling to get the result you want, you can still use pure HTML.
 
 
 
-## Tips and tricks 
+## Tips and tricks
 
 This part describes some important tricks to write a good article.
 

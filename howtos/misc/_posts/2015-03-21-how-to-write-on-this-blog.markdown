@@ -38,7 +38,7 @@ You don’t have to read all the details below: if you want to write an article 
 1. Fork [the repo](https://github.com/PrestaShop/build.prestashop.com) (see [GitHub doc](https://help.github.com/articles/fork-a-repo/))
 1. Download [this sample file](https://gist.githubusercontent.com/julienbourdeau/98a944e00c3ceb5dff5e/raw/a7d6c292ca501c66cb24e34ff805630f1289c306/2015-12-31-demo-post.markdown){: download="2015-12-31-demo-post.markdown"}.
 1. Rename it according to the date and your topic **(NOTE: the date in the file name is mandatory)**.
-1. Move it to the right folder: `news/_posts` for a blog post, `_howtos/CATEGORY` for a tutorial.
+1. Move it to the right folder: `news/_posts` for a blog post, `howtos/CATEGORY` for a tutorial.
 1. Write it.
 1. Make a [Pull-Request](https://help.github.com/articles/creating-a-pull-request/) on the initial project you forked.
 
@@ -93,7 +93,7 @@ When you're using the `--watch` option, it only watches content and styles. So i
 
 ### Directory structure
 
-As a contributing writer on the Build blog, you are mostly interested in **/assets**, **/_howtos** and **/news** folders.
+As a contributing writer on the Build blog, you are mostly interested in **/assets**, **/howtos** and **/news** folders.
 
 ![Jekyll Logo](/assets/images/2015/04/directory_structure.png)
 
@@ -103,11 +103,11 @@ As a contributing writer on the Build blog, you are mostly interested in **/asse
 With Jekyll, the location of your files matter. On this blog, we have two kinds of articles:
 
 * **News**: They live in the `news/_posts` folder and they show up on the home page.
-* **How-Tos**: They live in the `_howtos` folder and are sorted by topic. These posts are displayed on the How-Tos
-page and they are sorted by topic.
+* **How-Tos**: They live in the `howtos` folder and are sorted by topic. These posts are displayed on the home page as well as the How-Tos
+page which is sorted by topic.
 
 {% alert note %}
-If you need to create a new topic, create a subfolder in `_howtos` and edit the `page_collections` configuration in `config.yml`.
+If you need to create a new topic, create a subfolder in `howtos` and edit the `howtos` configuration in `_config.yml`.
 
 The topics are displayed in the same order as shown in the `_config.yml` file.
 

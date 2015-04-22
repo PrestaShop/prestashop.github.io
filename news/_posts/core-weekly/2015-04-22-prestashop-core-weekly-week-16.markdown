@@ -21,11 +21,11 @@ The PSR-2 survey is still running, [give us your opinion](https://www.prestashop
 
 Julien, one of PrestaShop's Core developers, wrote an article about [the best `.gitignore` file for PrestaShop projects](http://build.prestashop.com/howtos/misc/prestashop-perfect-gitignore/). If you use Git to version your files, you should definitely read it!
 
-Slow week in the development front, as the Core spent the first three days of the week in a training session, and thus had little time to both code and accept pull requests.
+Slow week on the development front, as the Core team spent the first three days of the week in a training session, and thus had little time to both code and accept pull requests.
 But I'm telling you, next week will bring a whole lot of merges!
 
 That being said, of note among the merged PRs last week:
- * In PR 2886, gskema added a new parameter in Tools::fileAttachment(), for when you don't want to grab the file contents and hold it in memory (especially large files).
+ * In PR 2886, gskema added a new parameter in Tools::fileAttachment(), for when you don't want to grab the files content and hold it in memory (especially large files).
  * In PR 2888, ZiZuu-store made a fix to pass the Context in Link->getLanguageLink(), which makes it possible to use the Context into templates and more.
 
 
@@ -43,7 +43,7 @@ As always, click on the PR's number to open its page on GitHub.
 #### Back office
 
  * [2875](https://github.com/PrestaShop/PrestaShop/pull/2875): Updated forums link. Thank you unlocomqx!
- * [2881](https://github.com/PrestaShop/PrestaShop/pull/2881): Wrong back to product button link. Thank you Shagshag!
+ * [2881](https://github.com/PrestaShop/PrestaShop/pull/2881): Wrong 'back to product' button link. Thank you Shagshag!
  
 #### Core
 
@@ -54,7 +54,7 @@ As always, click on the PR's number to open its page on GitHub.
 
 See all the PRs merged into the codebase since April 13th [here](https://github.com/PrestaShop/PrestaShop/pulls?page=2&pulls_only=true&q=is%3Apr+merged%3A%3E2015-04-13+is%3Aclosed+sort%3Aupdated&utf8=%E2%9C%93).
 
-Thank you to our contributors for their PRs: [gskema](https://github.com/gskema), [unlocomqx](https://github.com/unlocomqx), [Shagshag](https://github.com/Shagshag), [ZiZuu-store](https://github.com/ZiZuu-store) and those whose contributions were not merged yet! Also, a big thanks to all those who contribute with tickets on the Forge!
+Thank you to our contributors for their PRs: [gskema](https://github.com/gskema), [unlocomqx](https://github.com/unlocomqx), [Shagshag](https://github.com/Shagshag), [ZiZuu-store](https://github.com/ZiZuu-store) and those whose contributions haven't been merged yet! Also, a big thanks to all those who contribute with tickets on the Forge!
 
 Remember: if you want to contribute to PrestaShop with code, read those:
 

@@ -25,6 +25,7 @@ Slow week on the development front, as the Core team spent the first three days 
 But I'm telling you, next week will bring a whole lot of merges!
 
 That being said, of note among the merged PRs last week:
+
  * In PR 2886, gskema added a new parameter in Tools::fileAttachment(), for when you don't want to grab the files content and hold it in memory (especially large files).
  * In PR 2888, ZiZuu-store made a fix to pass the Context in Link->getLanguageLink(), which makes it possible to use the Context into templates and more.
 

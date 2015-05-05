@@ -18,15 +18,15 @@ This edition of the Core Weekly report highlights changes in PrestaShop core cod
 
 ## Milestones
 
-The PSR-2 survey is still running, [give us your opinion](https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/)! Give us your opinion!
+The PSR-2 survey is still running, [give us your opinion](https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/)!
 
 Of note among the merged PRs in the last two weeks:
 
- * In PR 2865, contributor gskema added a new method, Language::getIDs(), which returns an array of language IDs. Very useful for own you only need the language ID and not the whole language array. A lot of functions could be refactored by using this new method. Some lines could even lose foreach loops.
+ * In PR 2865, contributor gskema added a new method, Language::getIDs(), which returns an array of language IDs. Very useful when you only need the language ID and not the whole language array. A lot of functions could be refactored by using this new method. Some lines could even lose foreach loops.
  * In PR 2891, core dev jeromenadaud updated Font Awesome to version 4.3.0 (from version 4.0.3).
  * In PR 2655, contributor PrestaEdit added a new Cart hook, named actionAfterDeleteProductInCart. Comment if you think "actionCartProductRemoveAfter" would be a better name!
  * In PR 2554, contributor PrestaEdit added a new Mail hook, named actionGetExtraMailTemplateVars. Comment if you think "actionMailSendTemplatesVariablesPrepareAfter" would be a better name!
- * In PR 2905, core dev julienboudreau introduced a much improvde invoice template! Let us know what you think of it!
+ * In PR 2905, core dev julienboudreau introduced a much improved invoice template! Let us know what you think of it!
  * In PR 2900, core dev jeromenadaud introduced a new check, to display a warning if the server uses a PHP version below 5.4.
 
 
@@ -50,7 +50,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [2830](https://github.com/PrestaShop/PrestaShop/pull/2830): Fix bug #PSCSX-4326, Specific prices + group reduction, by gRoussac.
  * [2934](https://github.com/PrestaShop/PrestaShop/pull/2934): Correct company field JS validation function. Thank you gskema!
  * [2944](https://github.com/PrestaShop/PrestaShop/pull/2944): duplicated var in product.js, by gRoussac.
- * [2924](https://github.com/PrestaShop/PrestaShop/pull/2924): FixBug #PSCSX-5255 - Quantity reduction now base on original price, by jeromenadaud.
+ * [2924](https://github.com/PrestaShop/PrestaShop/pull/2924): FixBug #PSCSX-5255 - Quantity reduction now based on original price, by jeromenadaud.
  * [2950](https://github.com/PrestaShop/PrestaShop/pull/2950): Fix #PSCSX-5397, bad bigpic display, by gRoussac.
  
 #### Back office

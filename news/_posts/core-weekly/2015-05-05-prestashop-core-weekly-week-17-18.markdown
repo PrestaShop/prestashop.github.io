@@ -22,11 +22,11 @@ The PSR-2 survey is still running, [give us your opinion](https://www.prestashop
 
 Of note among the merged PRs in the last two weeks:
 
- * In PR 2865, contributor gskema added a new method, Language::getIDs(), which returns an array of language IDs. Very useful when you only need the language ID and not the whole language array. A lot of functions could be refactored by using this new method. Some lines could even lose foreach loops.
+ * In PR 2865, contributor gskema added a new method, `Language::getIDs()`, which returns an array of language IDs. Very useful when you only need the language ID and not the whole language array. A lot of functions could be refactored by using this new method. Some lines could even lose their `foreach` loops.
  * In PR 2891, core dev jeromenadaud updated Font Awesome to version 4.3.0 (from version 4.0.3).
- * In PR 2655, contributor PrestaEdit added a new Cart hook, named actionAfterDeleteProductInCart. Comment if you think "actionCartProductRemoveAfter" would be a better name!
- * In PR 2554, contributor PrestaEdit added a new Mail hook, named actionGetExtraMailTemplateVars. Comment if you think "actionMailSendTemplatesVariablesPrepareAfter" would be a better name!
- * In PR 2905, core dev julienboudreau introduced a much improved invoice template! Let us know what you think of it!
+ * In PR 2655, contributor PrestaEdit added a new Cart hook, named `actionAfterDeleteProductInCart`. Comment if you think "`actionCartProductRemoveAfter`" would be a better name!
+ * In PR 2554, contributor PrestaEdit added a new Mail hook, named `actionGetExtraMailTemplateVars`. Comment if you think "`actionMailSendTemplatesVariablesPrepareAfter`" would be a better name!
+ * In PR 2905, core dev julienboudreau introduced a much improved invoice template! The template is now split into multiple sub-templates (which can be overridden), there is a new zone for legal free text (along with the `displayInvoiceLegalFreeText` hook), and made it much better looking! Also, the options for images in PDF moved from Preferences > orders to Orders > Invoices and Orders > credit slips. Let us know what you think of it!
  * In PR 2900, core dev jeromenadaud introduced a new check, to display a warning if the server uses a PHP version below 5.4.
 
 

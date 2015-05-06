@@ -11,7 +11,7 @@ tags:
 
 Missed a week, but the Core Weekly report is still alive and kicking!
 
-I spent last half in a training session, and half on days off. Sorry if you missed our weekly meeting! ...but that only means that this week, you get DOUBLE DOSE of that :)
+I spent last week half in a training session, and half on days off. Sorry if you missed that weekly meeting of ours! ...but that only means that this week, you get DOUBLE DOSE of that :)
 
 This edition of the Core Weekly report highlights changes in PrestaShop core codebase during the last two weeks, from Monday 20th or April to Sunday 3rd of May, 2015.
 
@@ -28,6 +28,7 @@ Of note among the merged PRs in the last two weeks:
  * In PR 2554, contributor PrestaEdit added a new Mail hook, named `actionGetExtraMailTemplateVars`. Comment if you think "`actionMailSendTemplatesVariablesPrepareAfter`" would be a better name!
  * In PR 2905, core dev julienboudreau introduced a much improved invoice template! The template is now split into multiple sub-templates (which can be overridden), there is a new zone for legal free text (along with the `displayInvoiceLegalFreeText` hook), and made it much better looking! Also, the options for images in PDF moved from Preferences > orders to Orders > Invoices and Orders > credit slips. Let us know what you think of it!
  * In PR 2900, core dev jeromenadaud introduced a new check, to display a warning if the server uses a PHP version below 5.4.
+ * In PR 2967, core dev Shudrum removed the order\_changed.html/.txt e-mail template, and replaced it with the new `actionOrderEdited` hook. This follows [PR 13](https://github.com/PrestaShop/mailalerts/pull/13) on the `mailalerts` module, which introduces two new mails: return\_slip and order\_changed. Explore those changes!
 
 
 ## Code changes

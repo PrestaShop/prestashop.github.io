@@ -44,6 +44,11 @@
                   <i class="fa fa-comments"></i> Forum
                 </a>
               {% endif %}
+              {% if author.crowdin %}
+                <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/{{ author.crowdin }}">
+                  <i class="fa fa-language"></i> Crowdin
+                </a>
+              {% endif %}
               {% if author.twitter %}
                 <a class="btn btn-default btn-sm" href="https://twitter.com/{{ author.twitter }}">
                   <i class="fa fa-twitter"></i> Twitter

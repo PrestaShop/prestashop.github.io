@@ -166,6 +166,7 @@ julienbourdeau:
     twitter: julienbourdeau
     github: julienbourdeau
     forum: 761923-julien-bourdeau
+    crowdin: julienbourdeau
     website: http://www.example.com
     description: >
         This is a description of the author with details about what he really does

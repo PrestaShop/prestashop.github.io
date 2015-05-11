@@ -27,7 +27,7 @@
           <div class="row">
             <div class="col-md-11 col-md-offset-1">
               <h5>About the author</h5>
-              
+
               <h4>
                 {{ author.display_name }}
                 <span>{{ author.role }}</span>
@@ -37,6 +37,11 @@
               {% if author.github %}
                 <a class="btn btn-default btn-sm" href="https://github.com/{{ author.github }}">
                   <i class="fa fa-github"></i> GitHub
+                </a>
+              {% endif %}
+              {% if author.forum %}
+                <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/{{ author.forum }}">
+                  <i class="fa fa-comments"></i> Forum
                 </a>
               {% endif %}
               {% if author.twitter %}

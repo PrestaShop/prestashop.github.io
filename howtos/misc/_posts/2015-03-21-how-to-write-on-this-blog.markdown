@@ -165,6 +165,7 @@ julienbourdeau:
     email: julien@prestashop.com
     twitter: julienbourdeau
     github: julienbourdeau
+    forum: 761923-julien-bourdeau
     website: http://www.example.com
     description: >
         This is a description of the author with details about what he really does

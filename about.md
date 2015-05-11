@@ -14,7 +14,7 @@ We write about the upcoming changes in the codebase, current and future architec
 
 ## Contribute
 
-How about writing a guest post here? Maybe you've been working with PrestaShop for a while and you want to write about how you use it, or you feel a cool feature could use a highlight with sample code? Go ahead, suggest a new article — that might even inspire other people in the community to write too!
+How about writing a guest post here? Maybe you've been working with PrestaShop for a while and you want to write about how you use it, or you feel a cool feature could use a highlight with sample code? Go ahead, [suggest a new article](http://build.prestashop.com/howtos/misc/how-to-write-on-this-blog/) — that might even inspire other people in the community to write too!
 
 Before you start you can send us a short proposal at [{{ site.email }}](mailto:{{ site.email }})
 

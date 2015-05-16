@@ -307,10 +307,17 @@ li code {
 /**
  * Content
  */
+#post-sidebar aside {
+    margin-bottom: $spacing-unit;
+    &:not(:first-child) {
+        padding-top: $spacing-unit;
+        border-top: 1px solid $grey-color-light;
+    }
+}
 
 .aside-meta {
     font-size: 0.8em;
-    color: $grey-color;
+    color: $grey-color-dark;
     text-transform: uppercase;
     text-align: center;
 }

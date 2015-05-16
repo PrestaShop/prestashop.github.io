@@ -18,6 +18,10 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+strong {
+    font-weight: 600;
+}
+
 .text-center {
     text-align: center;
 }
@@ -205,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 
     h1 {
-        font-size: 3em;
+        font-size: 2.8em;
         font-weight: 400;
         letter-spacing: -1px;
         line-height: 1;
@@ -218,8 +222,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 .post-content {
+    padding: 0 $spacing-unit;
+
     h2 {
-        font-size: 2.5em;
+        font-size: 2.2em;
         font-weight: 500;
         margin: 2*$spacing-unit 0 $spacing-unit;
         padding-bottom: $spacing-unit / 3;
@@ -282,6 +288,7 @@ li code {
     border-radius: 3px;
     background-color: $code-bg-color;
     color: #dd1144;
+    font-size: 0.9em;
 }
 
 

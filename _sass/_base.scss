@@ -126,7 +126,7 @@ ul.post-list {
                 text-align: center;
             }
             a {
-                color: $text-color;
+                color: $text-color !important;
                 &:hover {
                     color: $brand-color;
                 }
@@ -239,16 +239,12 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Links
  */
-a,
-a:visited,
-a:active,
-a:focus {
-    //color: $brand-color;
+a:not(.btn),
+a:not(.btn):visited,
+a:not(.btn):active,
+a:not(.btn):focus {
+    color: $brand-color-3;
     text-decoration: none;
-/*
-    &:visited {
-        color: darken($brand-color, 15%);
-    }*/
 
     &:hover {
         //color: $brand-color-2;
@@ -381,7 +377,7 @@ footer.site-footer {
         margin: 0 6px;
     }
     a {
-        color: $text-color;
+        color: $text-color !important;
         &:hover {
             color: $brand-color-2;
         }

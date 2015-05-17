@@ -5,44 +5,78 @@ comment_counter: true
 
 <div class="home">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
+  <div class="row">
+    <div class="col-md-12">
 
-      {% unless forloop.first %}
-        <li>
-          <div class="post-divider"></div>
-        </li>
-      {% endunless %}
+      <ul class="post-list">
+        {% for post in paginator.posts %}
 
-      <li>
+          {% unless forloop.first %}
+            <li>
+              <div class="post-divider"></div>
+            </li>
+          {% endunless %}
 
-        <div class="list-post-meta">
-          <span class="post-date">
-            {% icon fa-clock-o %}
-            {{ post.date | date: "%b %-d, %Y" }}
-          </span>
-          <span class="separator"></span>
-          {% icon fa-comment %}
-          <span class="disqus-comment-count" data-disqus-url="{% if post.disqus_url %}{{ post.disqus_url }}{% else %}{{ post.url | prepend: site.url }}{% endif %}"></span>
-        </div>
+          <li>
 
-        <h2>
-            {% if post.icon %}
-              <i class="fa {{ post.icon }}"></i>
-            {% else %}
-              <i class="fa fa-terminal"></i>
+            <div class="list-post-meta">
+              <span class="post-date">
+                {% icon fa-clock-o %}
+                {{ post.date | date: "%b %-d, %Y" }}
+              </span>
+              <span class="separator"></span>
+              {% icon fa-comment %}
+              <span class="disqus-comment-count" data-disqus-url="{% if post.disqus_url %}{{ post.disqus_url }}{% else %}{{ post.url | prepend: site.url }}{% endif %}"></span>
+            </div>
+
+            <h2>
+                {% if post.icon %}
+                  <i class="fa {{ post.icon }}"></i>
+                {% else %}
+                  <i class="fa fa-terminal"></i>
+                {% endif %}
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+
+            {% if post.subtitle %}
+              <h4>{{ post.subtitle }}</h4>
             {% endif %}
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
 
-        {% if post.subtitle %}
-          <h4>{{ post.subtitle }}</h4>
-        {% endif %}
+            <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 
-        <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+          </li>
+        {% endfor %}
+      </ul>
 
-      </li>
-    {% endfor %}
-  </ul>
+    </div>
+  </div>
+
+  <!-- Pagination links -->
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <nav>
+        <ul class="pager">
+
+          <li class="previous {% unless paginator.previous_page_path %}disabled{% endunless%}">
+            <a href="{{ paginator.previous_page_path  || "#" }}">
+              <span aria-hidden="true">&larr;</span> Newer
+            </a>
+          </li>
+          <li>
+            <span class="page_number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+          </li>
+          <li class="next {% unless paginator.next_page_path %}disabled{% endunless%}">
+            <a href="{{ paginator.next_page_path || "#" }}">
+              Older <span aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </div>
 
 </div>

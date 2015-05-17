@@ -115,7 +115,7 @@ li {
 
 ul.post-list {
     list-style-type: none;
-    margin: 16px 0;
+    margin: (2 * $spacing-unit) 0;
     li {
         margin-bottom: 16px;
         padding-left: 42px;

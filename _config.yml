@@ -7,6 +7,9 @@ url: "http://build.prestashop.com" # the base hostname & protocol for your site
 
 permalink: /:categories/:title/
 
+paginate: 7
+paginate_path: "/page:num/"
+
 google_analytics: "UA-2753771-31"
 disqus_shortname: prestashopbuild
 

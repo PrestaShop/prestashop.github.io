@@ -1,0 +1,20 @@
+strong {
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+/**
+ * Links
+ */
+a:not(.btn),
+a:not(.btn):visited,
+a:not(.btn):active,
+a:not(.btn):focus {
+    color: $brand-color-3;
+    text-decoration: none !important;
+
+    &:hover {
+        color: $brand-color-2;
+        text-decoration: none !important;
+    }
+}

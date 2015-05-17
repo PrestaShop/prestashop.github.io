@@ -46,6 +46,8 @@ $grey-color-dark:  darken($grey-color, 25%);
         "bootstrap-sass/assets/stylesheets/bootstrap/print",
         //"bootstrap-sass/assets/stylesheets/bootstrap/glyphicons",
 
+        "basic",
+
         // Core CSS
         "bootstrap-sass/assets/stylesheets/bootstrap/scaffolding",
         "bootstrap-sass/assets/stylesheets/bootstrap/type",
@@ -89,6 +91,5 @@ $grey-color-dark:  darken($grey-color, 25%);
         "bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities",
 
         "base",
-        //"layout",
         "syntax-highlighting"
 ;

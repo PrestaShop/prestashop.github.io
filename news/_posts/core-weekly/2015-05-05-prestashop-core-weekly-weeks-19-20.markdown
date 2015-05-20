@@ -20,8 +20,8 @@ The PSR-2 survey is still running, [and you can still vote](https://www.prestash
 
 Of note among the merged PRs in the last two weeks:
 
- * In [3007](https://github.com/PrestaShop/PrestaShop/pull/3007), core dev jeromenadaud we introduce a new style to the back-office and login form of PrestaShop, in accordance to the rebranding currently under way at PrestaShop. More about that very soon! The design work was done by PrestaShop UX designer syswarren.
- * In [2967](https://github.com/PrestaShop/PrestaShop/pull/2967), core dev Shudrum kept on modifying the email template, removing order_changed.
+ * In [3007](https://github.com/PrestaShop/PrestaShop/pull/3007), PrestaShop R&D Director Jérôme Nadaud (jeromenadaud) introduced a new style to the back-office and login form of PrestaShop, in accordance to the rebranding currently under way at the PrestaShop company. More about that very soon! The design work was done by PrestaShop's Lead Product Designer Julie Chabin (syswarren).
+ * In [2967](https://github.com/PrestaShop/PrestaShop/pull/2967), core dev Julien Martin (Shudrum) kept on modifying the email template, removing order_changed.
 
 
 ## Code changes

@@ -90,7 +90,7 @@ Services are bound to the container at the very early stage of the application i
 
 At the moment you mostly access the IoC container through the Service Locator.
 
-For instance:  `Adapter_ServiceLocator::get('Core_Foundation_Database_Database')` will retrieve the instance of the database from the container.
+For instance:  `Adapter_ServiceLocator::get('Core_Foundation_Database_DatabaseInterface')` will retrieve the instance of the database from the container.
 
 *In the future, Adapter_ServiceLocator will no longer be needed. The IoC container will be threaded down from the application bootstrapping code to the controllers layer and controllers will pull their dependencies from the container directly. Using the `Adapter_ServiceLocator` is a temporary measure that enables us to work with the concepts from the new architecture without the need for risky refactoring.*
 
@@ -127,7 +127,7 @@ class MyModule extends Module
 {
     private $db;
 
-    public function __construct(Core_Foundation_Database_Database $db)
+    public function __construct(Core_Foundation_Database_DatabaseInterface $db)
     {
         // initialization code
         $this->db = $db;

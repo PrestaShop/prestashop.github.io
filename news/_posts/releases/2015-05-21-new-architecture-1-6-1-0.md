@@ -208,6 +208,6 @@ We now have some of the building blocks we need to create more robust code with 
 
 We're releasing these new technical features knowing that they will need to be improved upon and nothing is set in stone yet.
 
-Please feel free to comment, share any concerns you may have, or join us on GitHub and contribute!
+Please feel free to comment, share any concerns you may have, or [join us on GitHub](https://github.com/PrestaShop) and contribute!
 
 More articles and examples from the new architecture will follow.

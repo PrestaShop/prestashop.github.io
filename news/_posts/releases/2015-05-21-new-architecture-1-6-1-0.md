@@ -57,7 +57,7 @@ Two new top-level directories were added to the source tree, `Core` and `Adapter
 
 Code in the `Core` directory is what we refer to when we say "the new architecture".
 
-There are two main requirements for all the code in `Core`:
+There are two main requirements for all the code in `Core` :
 
 - Code in `Core` MUST HAVE *meaningful* unit tests
 - Code in `Core` MUST BE modular
@@ -188,11 +188,11 @@ Adapter_ServiceLocator::get('Core_Foundation_Database_EntityManager');
 
 Currently, entity repositories support the following methods:
 
-- `findOne($id)`: finds an entity by its primary key
-- `findOneByXYZ($XYZFieldValue)`: finds zero or one entity
-- `findByXYZ($XYZFieldValue)`: finds zero or more entities
-- `findOneBy(array $conditions)`: finds zero or one entity that matches all of the passed conditions
-- `findOneBy(array $conditions)`: finds zero or more entities that match all of the passed conditions
+- `findOne($id)` : finds an entity by its primary key
+- `findOneByXYZ($XYZFieldValue)` : finds zero or one entity
+- `findByXYZ($XYZFieldValue)` : finds zero or more entities
+- `findOneBy(array $conditions)` : finds zero or one entity that matches all of the passed conditions
+- `findOneBy(array $conditions)` : finds zero or more entities that match all of the passed conditions
 
 *It remains to be decided how to fit the more complex parts of our ORM into this abstraction: language fields, multishop fields. Ideas?*
 

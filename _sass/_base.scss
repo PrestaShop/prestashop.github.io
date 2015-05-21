@@ -268,11 +268,10 @@ blockquote {
  */
 p code,
 li code {
-    padding: 1px 5px;
+    padding: 0.1em 0.3em;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: $code-bg-color;
-    color: #dd1144;
     font-size: 0.9em;
 }
 

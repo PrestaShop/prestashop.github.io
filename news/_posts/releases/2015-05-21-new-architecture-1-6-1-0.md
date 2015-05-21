@@ -188,7 +188,7 @@ Adapter_ServiceLocator::get('Core_Foundation_Database_EntityManager');
 
 Currently, entity repositories support the following methods:
 
-- `findOne($id)` : find an entity by its primary key
+- `findOne($id)` : finds an entity by its primary key
 - `findOneByXYZ($XYZFieldValue)` : finds zero or one entity
 - `findByXYZ($XYZFieldValue)` : finds zero or more entities
 - `findOneBy(array $conditions)` : finds zero or one entity that matches all of the passed conditions

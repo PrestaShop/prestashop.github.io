@@ -27,6 +27,7 @@ First of all, don't panic. We are not breaking anything (yet). We're just adding
 As much as possible, new features will be implemented using the elements from the new architecture. Old code will benefit from the new components where they provide an obvious improvement but we have no intent to systematically rewrite legacy code and move it to the new architecture. This is not a 2.0 version, but a (big) step to bring PrestaShop up to speed.
 
 Besides architecture improvements, our plan for the coming year includes:
+
 - adopting the PSR-2 norm
 - switching to PHP 5.4 (namespaces, closures...!)
 - switching to composer for dependency management (no more submodules!)

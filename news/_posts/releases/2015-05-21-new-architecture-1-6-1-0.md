@@ -200,7 +200,7 @@ Going forward, we want to move all of the SQL queries out of the entity (`Object
 
 We want models to be as small as possible and `EntityRepository`s provide a great way to separate the database interaction layer from the business code.
 
-Since we want to keep the current lightweight feeling of PrestaShop development we are considering a hybrid DataMapper / ActiveRecord pattern where `EntityRepository`s should be used to retrieve models from the database but where we still have a `save` method on models that saves them to the database.
+For database interaction in general, we are considering a hybrid DataMapper / ActiveRecord pattern where `EntityRepository`s would be used to retrieve models from the database but where we would still have a `save` method on models that persists them to the database.
 
 ## Conclusion
 

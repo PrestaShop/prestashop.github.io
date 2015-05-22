@@ -27,6 +27,7 @@ First of all, don't panic. We are not breaking anything (yet). We're just adding
 As much as possible, new features will be implemented using the elements from the new architecture. Old code will benefit from the new components where they provide an obvious improvement but we have no intent to systematically rewrite legacy code and move it to the new architecture. This is not a 2.0 version, but a (big) step to bring PrestaShop up to speed.
 
 Besides architecture improvements, our plan for the coming year includes:
+
 - adopting the PSR-2 norm
 - switching to PHP 5.4 (namespaces, closures...!)
 - switching to composer for dependency management (no more submodules!)
@@ -90,7 +91,7 @@ Services are bound to the container at the very early stage of the application i
 
 At the moment you mostly access the IoC container through the Service Locator.
 
-For instance:  `Adapter_ServiceLocator::get('Core_Foundation_Database_Database')` will retrieve the instance of the database from the container.
+For instance:  `Adapter_ServiceLocator::get('Core_Foundation_Database_DatabaseInterface')` will retrieve the instance of the database from the container.
 
 *In the future, Adapter_ServiceLocator will no longer be needed. The IoC container will be threaded down from the application bootstrapping code to the controllers layer and controllers will pull their dependencies from the container directly. Using the `Adapter_ServiceLocator` is a temporary measure that enables us to work with the concepts from the new architecture without the need for risky refactoring.*
 
@@ -127,7 +128,7 @@ class MyModule extends Module
 {
     private $db;
 
-    public function __construct(Core_Foundation_Database_Database $db)
+    public function __construct(Core_Foundation_Database_DatabaseInterface $db)
     {
         // initialization code
         $this->db = $db;
@@ -200,7 +201,7 @@ Going forward, we want to move all of the SQL queries out of the entity (`Object
 
 We want models to be as small as possible and `EntityRepository`s provide a great way to separate the database interaction layer from the business code.
 
-Since we want to keep the current lightweight feeling of PrestaShop development we are considering a hybrid DataMapper / ActiveRecord pattern where `EntityRepository`s should be used to retrieve models from the database but where we still have a `save` method on models that saves them to the database.
+For database interaction in general, we are considering a hybrid DataMapper / ActiveRecord pattern where `EntityRepository`s would be used to retrieve models from the database but where we would still have a `save` method on models that persists them to the database.
 
 ## Conclusion
 

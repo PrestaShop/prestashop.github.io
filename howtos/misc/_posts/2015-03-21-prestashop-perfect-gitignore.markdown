@@ -61,7 +61,7 @@ If you don't want to version the core files, PrestaShop contributor Adonis Karav
 The website offers an easy-to-use interface, but if (like me) you want to show off, you can use the following Git alias in your configuration:
 
 {% highlight bash %}
-$ git config --global alias.ignore '"gi() { curl -L -s https://www.gitignore.io/api/$@ >> .gitignore ;}; gi"
+$ git config --global alias.ignore "gi() { curl -L -s https://www.gitignore.io/api/$@ >> .gitignore ;}; gi"
 {% endhighlight %}
 
 Next, the following command will generate a `.gitignore` file inside the current directory [containing these lines](https://www.gitignore.io/api/prestashop,osx,phpstorm).

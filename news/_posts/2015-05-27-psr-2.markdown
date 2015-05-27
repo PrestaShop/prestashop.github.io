@@ -1,0 +1,44 @@
+---
+layout: post                                  # Always leave `post`
+title:  "PSR-2 norm && PrestaShop"                     # Edit your title
+subtitle: "The common coding standards"            # Edit your subtitle
+date:   2015-05-27 15:00:00                   # The current date
+author: jeromenadaud                          # Your username in `_data/authors.yml`
+icon: fa-pencil                               # Use any icon from FontAwesome
+tags: [PSR-2, Norm, PHP-FIG, Coding, Standards]                  # comma-separated tag list
+published: false                              # Always leave to false
+---
+
+## PSR-2 norm && PrestaShop
+
+### Actually the fact
+
+PrestaShop has actually is own Coding Standards based on [http://www.php-fig.org/psr/psr-1/]()
+
+### The main differences with PSR-2
+
+### So why ?
+PrestaShop is loved by is community and we love our community, we want to adopt, in order to make a better code, a common coding standards loved and voted []() by you.
+
+Most popular Open Source project using PSR-2:
+
+### When and how ?
+
+_Current code_
+
+PrestaShop new architecture is already following PSR-2 coding style, just check it here : []()
+For the main PrestaShop actual code, classes, controllers, etc. we will start to move all PrestaShop coding standards to PSR-2 following PrestaShop 1.6.1 Release.
+
+Please be patient it's now easy to move all code without any bugs
+
+_Pull request_
+
+Factually the next Pull Request following PrestaShop 1.6.1 release must follow PSR-2 standards.
+
+_What append with my pending code review Pull Request ?_
+
+Don't worry, we will merge it as is and correct coding standards after.
+
+_My PrestaShop module was developed following PrestaShop standards, are you fucking me?_
+
+PrestaShop is changing, and we are trying to use common coding standards, don't worry about your module, it still be valid, and PrestaShop validator []() will no reject it. For your future modules, please follow PSR-2 coding standards and make community even better.

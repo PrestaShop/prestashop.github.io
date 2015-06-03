@@ -1,44 +1,157 @@
 ---
-layout: post                                  # Always leave `post`
-title:  "PSR-2 norm && PrestaShop"                     # Edit your title
-subtitle: "The common coding standards"            # Edit your subtitle
-date:   2015-05-27 15:00:00                   # The current date
-author: jeromenadaud                          # Your username in `_data/authors.yml`
-icon: fa-pencil                               # Use any icon from FontAwesome
-tags: [PSR-2, Norm, PHP-FIG, Coding, Standards]                  # comma-separated tag list
-published: false                              # Always leave to false
+layout: post
+title:  "PSR-2 norm && PrestaShop"
+subtitle: "The common coding standards"
+date:   2015-05-27 15:00:00
+author: jeromenadaud
+icon: fa-code
+tags: [PSR-2, Norm, PHP-FIG, Coding, Standards]
+published: false
 ---
 
 ## PSR-2 norm && PrestaShop
 
 ### Actually the fact
 
-PrestaShop has actually is own Coding Standards based on [http://www.php-fig.org/psr/psr-1/]()
+PrestaShop has actually is own [Coding Standards](http://doc.prestashop.com/display/PS16/Coding+Standards) based on [PSR-1](http://www.php-fig.org/psr/psr-1/)
 
 ### The main differences with PSR-2
 
+{% alert important  Not allowed%}
+At this moment namespaces and closures will not be allowed as we need to anounce very soon the minimum PHP 5.4 support for PrestaShop
+{% endalert %}
+
+_1. Lines_
+
+The soft limit on line length MUST be 120 characters; automated style checkers MUST warn but MUST NOT error at the soft limit.
+
+_2. Keywords_
+
+The PHP constants true, false, and null MUST be in lower case.
+
+_3. Properties_
+
+Property names SHOULD NOT be prefixed with a single underscore to indicate protected or private visibility.
+
+_4. Methods_
+
+Method names SHOULD NOT be prefixed with a single underscore to indicate protected or private visibility.
+
+_5.1. if, elseif, else_
+
+An if structure looks like the following. Note the placement of parentheses, spaces, and braces; and that else and elseif are on the same line as the closing brace from the earlier body.
+
+```
+<?php
+if ($expr1) {
+    // if body
+} elseif ($expr2) {
+    // elseif body
+} else {
+    // else body;
+}
+```
+
+_5.2. switch, case_
+
+A switch structure looks like the following. Note the placement of parentheses, spaces, and braces. The case statement MUST be indented once from switch, and the break keyword (or other terminating keyword) MUST be indented at the same level as the case body. There MUST be a comment such as // no break when fall-through is intentional in a non-empty case body.
+
+```
+<?php
+switch ($expr) {
+    case 0:
+        echo 'First case, with a break';
+        break;
+    case 1:
+        echo 'Second case, which falls through';
+        // no break
+    case 2:
+    case 3:
+    case 4:
+        echo 'Third case, return instead of break';
+        return;
+    default:
+        echo 'Default case';
+        break;
+}
+```
+
+_5.3. while, do while, for, foreach, try, catch_
+
+A while statement looks like the following. Note the placement of parentheses, spaces, and braces.
+
+```
+<?php
+while ($expr) {
+    // structure body
+}
+```
+
+Similarly, a do while statement looks like the following. Note the placement of parentheses, spaces, and braces.
+
+```
+<?php
+do {
+    // structure body;
+} while ($expr);
+```
+
+A for statement looks like the following. Note the placement of parentheses, spaces, and braces.
+
+```
+<?php
+for ($i = 0; $i < 10; $i++) {
+    // for body
+}
+```
+
+A foreach statement looks like the following. Note the placement of parentheses, spaces, and braces.
+
+```
+<?php
+foreach ($iterable as $key => $value) {
+    // foreach body
+}
+```
+
+A try catch block looks like the following. Note the placement of parentheses, spaces, and braces.
+
+```
+<?php
+try {
+    // try body
+} catch (FirstExceptionType $e) {
+    // catch body
+} catch (OtherExceptionType $e) {
+    // catch body
+}
+```
+
 ### So why ?
-PrestaShop is loved by is community and we love our community, we want to adopt, in order to make a better code, a common coding standards loved and voted []() by you.
+[PSR-2](http://www.php-fig.org/psr/psr-2/) is a coding style guide standard published by the PHP Framework Interoperability Group (or PHP-FIG), an informal group of representatives from major PHP projects, which offers a place to "talk about the commonalities between our projects and find ways we can work together" (see the FAQ). The group issues a series of standards (PSRs, or PHP Standard Recommendation) on how to best build a PHP project.
+
+PrestaShop is loved by is community and we love our community, we want to adopt, in order to make a better code, a common coding standards loved and voted by you.
+Please [vote](https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/) result.
 
 Most popular Open Source project using PSR-2:
 
 ### When and how ?
 
-_Current code_
+_1. Current code_
 
-PrestaShop new architecture is already following PSR-2 coding style, just check it here : []()
+PrestaShop new architecture is already following PSR-2 coding style, just check it [here](https://github.com/PrestaShop/PrestaShop/blob/1.6/Core/Business/Payment/Core_Business_Payment_PaymentOption.php).
 For the main PrestaShop actual code, classes, controllers, etc. we will start to move all PrestaShop coding standards to PSR-2 following PrestaShop 1.6.1 Release.
 
-Please be patient it's now easy to move all code without any bugs
+Please be patient it's not easy to move all code without any bugs, anyway you participate to this change just making a pull-request. Please have a look at [this](https://github.com/PrestaShop/PrestaShop/blob/1.6/CONTRIBUTING.md) in order to help us by CONTRIBUTING to next change.
 
-_Pull request_
+_2. Pull-request_
 
 Factually the next Pull Request following PrestaShop 1.6.1 release must follow PSR-2 standards.
 
-_What append with my pending code review Pull Request ?_
+_3. What append with my pull-request in pending code review ?_
 
 Don't worry, we will merge it as is and correct coding standards after.
 
-_My PrestaShop module was developed following PrestaShop standards, are you fucking me?_
+_4. My PrestaShop module was developed following PrestaShop standards, are you fucking me ?_
 
-PrestaShop is changing, and we are trying to use common coding standards, don't worry about your module, it still be valid, and PrestaShop validator []() will no reject it. For your future modules, please follow PSR-2 coding standards and make community even better.
+PrestaShop is changing, and we are trying to use common coding standards, don't worry about your module, it still be valid, and PrestaShop [validator](https://validator.prestashop.com) will no reject it. For your future modules, please follow PSR-2 coding standards and make community even better.

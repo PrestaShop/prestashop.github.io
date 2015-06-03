@@ -6,7 +6,7 @@ date:   2015-05-27 15:00:00
 author: jeromenadaud
 icon: fa-code
 tags: [PSR-2, Norm, PHP-FIG, Coding, Standards]
-published: false
+published: true
 ---
 
 We are planning to switch to PSR-2, here is the why, the how and the when!
@@ -44,9 +44,9 @@ In effect, from the moment PrestaShop 1.6.1.0 is released, the **next pull reque
 
 #### 3. About pull requests that are currently waiting for a code review
 
-Many pull requests were written before we announced the project to move to PSR-2. 
+Many pull requests were written before we announced the project to move to PSR-2.
 
-Don't worry, we will merge them as-is, and correct their use of PSR-2 afterwards ourselves. 
+Don't worry, we will merge them as-is, and correct their use of PSR-2 afterwards ourselves.
 
 Obviously, you are more than welcome to upgrade your PRs to PSR-2 yourself :)
 
@@ -56,7 +56,7 @@ All existing modules' contributors have worked hard to follow the PrestaShop Cod
 
 The fact that PrestaShop is changing and is going to use a common coding standard doesn't mean existing modules will suddenly stop being valid!
 
-The [PrestaShop validator](https://validator.prestashop.com) will not reject modules if they follow the old standard for quite some time. 
+The [PrestaShop validator](https://validator.prestashop.com) will not reject modules if they follow the old standard for quite some time.
 
 For your future modules, please follow the PSR-2 coding standards: this will benefit the whole community.
 
@@ -66,7 +66,7 @@ For your future modules, please follow the PSR-2 coding standards: this will ben
 Now it is time to see where the PrestaShop Coding Standards and PSR-2 differ.
 
 {% alert important %}
-At the time of writing, namespaces and closures are not allowed, because we first need to announce the switch to PHP 5.4 as the minimum version supported by PrestaShop. 
+At the time of writing, namespaces and closures are not allowed, because we first need to announce the switch to PHP 5.4 as the minimum version supported by PrestaShop.
 
 This will be announced very soon, and applied in the coming year.
 {% endalert %}
@@ -93,8 +93,7 @@ Method names SHOULD NOT be prefixed with a single underscore to indicate protect
 
 An `if` structure looks like the following. Note the placement of parenthesis, spaces, and braces; and that `else` and `elseif` are on the same line as the closing brace from the earlier body.
 
-```
-<?php
+{% highlight php startinline=true %}
 if ($expr1) {
     // if body
 } elseif ($expr2) {
@@ -102,14 +101,13 @@ if ($expr1) {
 } else {
     // else body;
 }
-```
+{% endhighlight %}
 
 ##### 5.2. switch, case
 
 A `switch` structure looks like the following. Note the placement of parenthesis, spaces, and braces. The case statement MUST be indented once from switch, and the break keyword (or other terminating keyword) MUST be indented at the same level as the case body. There MUST be a comment such as `// no break` when fall-through is intentional in a non-empty case body.
 
-```
-<?php
+{% highlight php startinline=true %}
 switch ($expr) {
     case 0:
         echo 'First case, with a break';
@@ -126,50 +124,45 @@ switch ($expr) {
         echo 'Default case';
         break;
 }
-```
+{% endhighlight %}
 
 ##### 5.3. while, do while, for, foreach, try, catch
 
 A `while` statement looks like the following. Note the placement of parenthesis, spaces, and braces.
 
-```
-<?php
+{% highlight php startinline=true %}
 while ($expr) {
     // structure body
 }
-```
+{% endhighlight %}
 
 Similarly, a `do while` statement looks like the following. Note the placement of parenthesis, spaces, and braces.
 
-```
-<?php
+{% highlight php startinline=true %}
 do {
     // structure body;
 } while ($expr);
-```
+{% endhighlight %}
 
 A `for` statement looks like the following. Note the placement of parenthesis, spaces, and braces.
 
-```
-<?php
+{% highlight php startinline=true %}
 for ($i = 0; $i < 10; $i++) {
     // for body
 }
-```
+{% endhighlight %}
 
 A `foreach` statement looks like the following. Note the placement of parenthesis, spaces, and braces.
 
-```
-<?php
+{% highlight php startinline=true %}
 foreach ($iterable as $key => $value) {
     // foreach body
 }
-```
+{% endhighlight %}
 
 A try catch block looks like the following. Note the placement of parenthesis, spaces, and braces.
 
-```
-<?php
+{% highlight php startinline=true %}
 try {
     // try body
 } catch (FirstExceptionType $e) {
@@ -177,7 +170,7 @@ try {
 } catch (OtherExceptionType $e) {
     // catch body
 }
-```
+{% endhighlight %}
 
 ### End of an era, beginning of a new one!
 

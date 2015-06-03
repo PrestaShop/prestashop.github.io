@@ -2,10 +2,10 @@
 layout: post
 title:  "PrestaShop && the PSR-2 coding style guide"
 subtitle: "Adopting a common coding standard"
-date:   2015-05-27 15:00:00
+date:   2015-06-03 18:54:00
 author: jeromenadaud
 icon: fa-code
-tags: [PSR-2, Norm, PHP-FIG, Coding, Standards]
+tags: [PSR-2, Norm, PHP-FIG, Coding Standards]
 published: true
 ---
 

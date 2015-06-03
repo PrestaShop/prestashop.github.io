@@ -234,12 +234,22 @@ h1, h2, h3, h4, h5, h6 {
         margin: 1.5*$spacing-unit 0 $spacing-unit;
     }
     h4 {
+        margin-top: $spacing-unit;
         font-size: 1.2em;
         font-weight: 600;
+    }
+    h5 {
+        margin-top: $spacing-unit;
+        font-size: 1.2em;
+        font-weight: 500;
     }
 
     li {
         margin-bottom: $spacing-unit / 5;
+    }
+
+    .alert h4 {
+        margin-top: 0;
     }
 }
 

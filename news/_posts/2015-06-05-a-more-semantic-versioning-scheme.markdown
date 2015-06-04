@@ -16,20 +16,20 @@ tags:
 
 The upcoming version 1.6.1.0 represents an opportunity for us to make a lot of good changes for both the project and the community, as you may have noticed recently.
 
-One thing that’s been bugging us for quite some (and most probably users, developers, etc.) is the way PrestaShop’s version numbers are handled -- in that they are not really handled as much as rarely consistent.
+One thing that’s been bugging us for quite some time (and most probably users, developers, etc.) is the way PrestaShop’s version numbers are handled — in that they are not really handled as much as rarely consistent.
 
 Let’s see for instance what happened in [the last few versions of the 1.6.x branch](https://www.prestashop.com/en/developers-versions/changelog/1.6.0.14):
 
 - 1.6.0.7: Many bugfixes, many improvements, a few new features.
 - 1.6.0.8: Several bugfixes, a few improvements.
-- 1.6.0.9: Many bugfixes, many im provements, a few new features.
+- 1.6.0.9: Many bugfixes, many improvements, a few new features.
 - 1.6.0.10: Internal version, never publicly released.
 - 1.6.0.11: Many bugfixes, many improvements, several new features.
 - 1.6.0.12: Many bugfixes, several improvements and some new features.
 - 1.6.0.13: 2 bugfixes.
 - 1.6.0.14: 1 bugfix.
 
-See where I’m going with this? Looking only at the version numbers, you can never tell if a new version contains a few useful corrections, or if it brings many cool features, or if it changes the database schema or the whole system. It’s not easy to know if it is a simple update or a complex one. It’s not clear if it’s going to be business as usual, or if you’ll have to rework your themes/modules.
+See where I’m going with this? Looking only at the version numbers, you can never tell if a new version contains a few useful corrections, or if it brings many cool features, or if it changes the database schema or the whole system. It’s not easy to know if it is a simple update, or a complex one. It’s not clear if it’s going to be business as usual, or if you’ll have to rework your themes/modules.
 
 In short, it’s difficult to know, just by looking at the version number, whether it’s a minor or a major version.
 
@@ -49,9 +49,9 @@ From version 1.6.1.0 onward, we are moving towards SemVer.
 > 
 > Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
-The most important point of SemVer is the predictability of potential breakage: looking at the version number, you know from the get go whether that new version contains bugfixes, or bugfixes and features, or bugfixes, features and potentially impacting changes from the previous major version.
+The most important point of SemVer is the predictability of potential breakage: looking at the version number, you know from the get-go whether that new version contains bugfixes; or bugfixes and features; or bugfixes, features and potentially impacting changes from the previous major version.
 
-Version numbers become more coherent, updates become more predictable, and developers know when to check for impacts their modules, themes or clients!
+Version numbers become more coherent, updates become more predictable, and developers know when to check for impacts on their modules, themes or clients' stores!
 
 
 ### How will it apply to PrestaShop version numbering?
@@ -65,7 +65,7 @@ This means that version numbers will be based on 1.MAJOR.MINOR.PATCH. And we kee
 
 ### So, when will the numerals change?
 
-1.6.1.0 is the forthcoming major version, to be released in June. It changes a few things in the way things work internally but keeps all retrocompatibility intact, so modules and themes that worked with 1.6.0.14 will continue to work with 1.6.1.0.
+1.6.1.0 is the forthcoming major version, which should be released in the coming weeks. It brings a few changes in the way things work internally but it keeps all retrocompatibility intact, so modules and themes that worked with 1.6.0.14 will continue to work with 1.6.1.0.
 
 Starting with 1.6.1.0, new versions of PrestaShop will use the new SemVer-inspired numbering scheme.
 
@@ -74,7 +74,7 @@ What this means is:
 - The next version which brings retrocompatible changes (or “minor” version) will be 1.6.2.0. It will also contain bugfixes.
 - The next version which brings incompatible changes (or “major” version) will be 1.7.0.0. It will also contain retrocompatible changes and bugfixes. Also, the incompatible changes might be few and minor, but SemVer has strict rules...
 
-Adopting this SemVer-inspired numbering numbering scheme, version number will be much more consistent and coherent, the need for 3rd-party developers to update their code will be more predictable, and the whole community will get a better understanding of what an upgrade might imply.
+Adopting this SemVer-inspired numbering scheme, version numbers will be much more consistent and coherent, the need for 3rd-party developers to update their code will be more predictable, and the whole community will get a better understanding of what an upgrade might imply.
 
 
 ### What about the coming new architecture?
@@ -84,7 +84,7 @@ Since you read this blog every day (don't you?), you know that [we are working o
 
 ### So does that mean 1.7.0.0 is coming soon?
 
-Yes! Thanks to the new architecture, currently in the works, iIt might even be coming before winter of 2015! :)
+Yes! Thanks to the new architecture, currently in the works, it might even be coming before winter of 2015! :)
 
 What about 1.8.0.0? Well, maybe sooner than it took between 1.5 and 1.6!
 
@@ -102,7 +102,7 @@ Security updates, if there are any, are fixed in patch versions. Patch versions 
 
 Patch versions fix critical bugs and security issues (which are more or less the same thing). They might also fix some trivial bugs, but the point of a patch version is to fix problematic issues, not to close non-critical Forge tickets.
 
-Eventually, once we have proven that upgrading to a patch version is seamless for developers and designers, and beneficial for the whole community, we plan on implementing automatic background updates for patch versions: if there’s a critical issue in the software, PrestaShop will be able to update itself as soon as the fix is available on our servers, and you will wake up to an email from your store telling you that it just got better and safer during the night! Of course, a module would be able to disable that feature -- but that’s another discussion we will have!
+Eventually, once we have proven that upgrading to a patch version is seamless for developers and designers, and beneficial for the whole community, we plan on implementing automatic background updates for patch versions: if there’s a critical issue in the software, PrestaShop will be able to update itself as soon as the fix is available on our servers, and you will wake up to an email from your store telling you that it just got better and safer during the night! Of course, a module would be able to disable that feature — but that’s another discussion we will have!
 
 
 ### What about the database?
@@ -114,7 +114,7 @@ With our SemVer-like versioning, the database will never be updated in patch ver
 
 ### Alright, alright, I get it, it’s better! So, when is 1.6.1.0 coming?
 
-[1.6.1.0-rc3 was released last week](http://build.prestashop.com/news/prestashop-1-6-1-0-rc3/), 1.6.0.1-rc4 will be released this week, other RC version might be released as needed, depending on the feedback of the community.
+[1.6.1.0-rc3 was released last week](http://build.prestashop.com/news/prestashop-1-6-1-0-rc3/), 1.6.0.1-rc4 should be released this week, other RC versions might be released as needed, depending on the feedback from the community.
 
 We plan on releasing the stable version of PrestaShop 1.6.1.0 by the end of June, or early-July. Until then, please help us make it the most robust version ever released!
 

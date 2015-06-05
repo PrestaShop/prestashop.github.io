@@ -84,11 +84,11 @@ As always, click on the PR's number to open its page on GitHub.
  * [3053](https://github.com/PrestaShop/PrestaShop/pull/3053): Can I Haz a new Core?, by djfm, tchauviere, mdomenjoud.
  * [3091](https://github.com/PrestaShop/PrestaShop/pull/3091): Update new CORE : Fixes, by tchauviere and djfm.
  * [3088](https://github.com/PrestaShop/PrestaShop/pull/3088): need to recalculate depth only when current depth as changed, by sfroment42.
- * [3101](https://github.com/PrestaShop/PrestaShop/pull/3101): Performances : flush cache to avoid storing too big arrays, by jocel1.
+ * [3101](https://github.com/PrestaShop/PrestaShop/pull/3101): Performances - flush cache to avoid storing too big arrays, by jocel1.
  * [3104](https://github.com/PrestaShop/PrestaShop/pull/3104): Optimize searchByName performances, by jocel1.
- * [3106](https://github.com/PrestaShop/PrestaShop/pull/3106): Performances : improve search reindex performance with cache enabled, by jocel1.
- * [3107](https://github.com/PrestaShop/PrestaShop/pull/3107): Performances : remove SQL_NO_CACHE from specificPrice, by jocel1.
- * [3111](https://github.com/PrestaShop/PrestaShop/pull/3111): Performances : disable cache during import, by jocel1.
+ * [3106](https://github.com/PrestaShop/PrestaShop/pull/3106): Performances - improve search reindex performance with cache enabled, by jocel1.
+ * [3107](https://github.com/PrestaShop/PrestaShop/pull/3107): Performances - remove SQL_NO_CACHE from specificPrice, by jocel1.
+ * [3111](https://github.com/PrestaShop/PrestaShop/pull/3111): Performances - disable cache during import, by jocel1.
  * [3019](https://github.com/PrestaShop/PrestaShop/pull/3019): set tax correctly with specific price, julienbourdeau.
 
 #### Unit tests
@@ -123,11 +123,11 @@ As always, click on the PR's number to open its page on GitHub.
  * [3028](https://github.com/PrestaShop/PrestaShop/pull/3028): Multistore option rebranding, by jeromenadaud.
  
 
-See all the PRs merged into the codebase since May the 18th (be with you!) [here](https://github.com/PrestaShop/PrestaShop/pulls?page=1&pulls_only=true&q=is%3Apr+merged%3A%3E2015-05-18+is%3Aclosed+sort%3Aupdated&utf8=%E2%9C%93).
+See all the PRs merged into the codebase since May the 18th  [here](https://github.com/PrestaShop/PrestaShop/pulls?page=1&pulls_only=true&q=is%3Apr+merged%3A%3E2015-05-18+is%3Aclosed+sort%3Aupdated&utf8=%E2%9C%93).
 
 Thank you to our contributors whose Pull Requests were merged: [frederic-benoist](https://github.com/frederic-benoist), [gskema](https://github.com/gskema), [joseantgv](https://github.com/joseantgv), [Nobodaddy](https://github.com/Nobodaddy), [PrestaEdit](https://github.com/PrestaEdit), [rolandschuetz](https://github.com/rolandschuetz), and [vAugagneur](https://github.com/vAugagneur). Also, thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
 
-Remember: if you want to contribute to PrestaShop with code, read those:
+If you want to contribute to PrestaShop with code, read those:
 
  * [Contributing code to PrestaShop](http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop)
  * [How to write a commit message](http://doc.prestashop.com/display/PS16/How+to+write+a+commit+message)

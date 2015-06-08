@@ -2,7 +2,7 @@
 layout: post
 title:  "A more semantic versioning scheme"
 subtitle: "Moving towards SemVer"
-date:   2015-06-04 16:29:47
+date:   2015-06-08 17:56:00
 author: xavierborderie
 icon: fa-code-fork
 tags:
@@ -46,7 +46,7 @@ From version 1.6.1.0 onward, we are moving towards SemVer.
 > - MAJOR version when you make incompatible API changes,
 > - MINOR version when you add functionality in a backwards-compatible manner, and
 > - PATCH version when you make backwards-compatible bug fixes.
-> 
+>
 > Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
 The most important point of SemVer is the predictability of potential breakage: looking at the version number, you know from the get-go whether that new version contains bugfixes; or bugfixes and features; or bugfixes, features and potentially impacting changes from the previous major version.
@@ -114,7 +114,7 @@ With our SemVer-like versioning, the database will never be updated in patch ver
 
 ### Alright, alright, I get it, it’s better! So, when is 1.6.1.0 coming?
 
-[1.6.1.0-rc3 was released last week](http://build.prestashop.com/news/prestashop-1-6-1-0-rc3/), 1.6.0.1-rc4 should be released this week, other RC versions might be released as needed, depending on the feedback from the community.
+[1.6.1.0-rc3 was released 2 weeks ago](http://build.prestashop.com/news/prestashop-1-6-1-0-rc3/), 1.6.0.1-rc4 should be released this week, other RC versions might be released as needed, depending on the feedback from the community.
 
 We plan on releasing the stable version of PrestaShop 1.6.1.0 by the end of June, or early-July. Until then, please help us make it the most robust version ever released!
 

@@ -43,6 +43,7 @@ From version 1.6.1.0 onward, we are moving towards SemVer.
 [SemVer](http://semver.org/), short for Semantic Versioning, is a specification by Gravatar co-founder and GitHub ex-CEO Tom Preston-Werner. In its latest incarnation (v2.0.0), it describes its proposed versioning scheme as follows:
 
 > Given a version number MAJOR.MINOR.PATCH, increment the:
+> 
 > - MAJOR version when you make incompatible API changes,
 > - MINOR version when you add functionality in a backwards-compatible manner, and
 > - PATCH version when you make backwards-compatible bug fixes.
@@ -70,6 +71,7 @@ This means that version numbers will be based on 1.MAJOR.MINOR.PATCH. And we kee
 Starting with 1.6.1.0, new versions of PrestaShop will use the new SemVer-inspired numbering scheme.
 
 What this means is:
+
 - The next bugfix-only version (or “patch” version) will be v1.6.1.1, then if we need more, v1.6.1.2, v1.6.1.3, etc.
 - The next version which brings retrocompatible changes (or “minor” version) will be 1.6.2.0. It will also contain bugfixes.
 - The next version which brings incompatible changes (or “major” version) will be 1.7.0.0. It will also contain retrocompatible changes and bugfixes. Also, the incompatible changes might be few and minor, but SemVer has strict rules...

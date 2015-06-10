@@ -20,12 +20,10 @@ comment_counter: true
           <li>
 
             <div class="list-post-meta">
-              <span class="post-date">
-                {% icon fa-clock-o %}
+              <span class="post-date"> 
                 {{ post.date | date: "%b %-d, %Y" }}
               </span>
               <span class="separator"></span>
-              {% icon fa-comment %}
               <span class="disqus-comment-count" data-disqus-url="{% if post.disqus_url %}{{ post.disqus_url }}{% else %}{{ post.url | prepend: site.url }}{% endif %}"></span>
             </div>
 
@@ -43,7 +41,7 @@ comment_counter: true
             {% endif %}
 
             <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-
+			<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Continue reading &rarr;</a>
           </li>
         {% endfor %}
       </ul>

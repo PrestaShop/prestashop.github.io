@@ -1,6 +1,6 @@
 strong {
-    font-weight: 600;
-    font-size: 0.9em;
+    font-weight: 700;
+    font-size: .95em;
 }
 
 /**
@@ -14,7 +14,9 @@ a:not(.btn):focus {
     text-decoration: none !important;
 
     &:hover {
-        color: $brand-color-2;
+        color: $brand-color-3;
         text-decoration: none !important;
     }
 }
+
+ 

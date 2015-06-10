@@ -1,7 +1,53 @@
-@media (min-width:970px) and (max-width: 2500px) {
+@media (min-width:990px) and (max-width: 2500px) {
     .container {
      width: $screen-md;
     }
+}
+
+@media only screen and (max-width : 989px) {
+    #post-sidebar {
+	    display: none;
+    }
+    .author-details {
+	    padding-top: 20px;
+    }
+   .site-header {	
+   text-align: center;	
+       img {
+	    margin-top: -30px;
+	    width: 60% !important;
+	    height: 60% !important;
+    }
+	.nav-pills {
+		float: none !important;
+	}
+	.nav{
+		display: inline-block !important;
+	}
+}
+}
+
+@media only screen and (max-width : 480px) {
+    #post-sidebar {
+	    display: none;
+    }
+    .author-details {
+	    padding-top: 20px;
+    }
+   .site-header {	
+   text-align: center;	
+       img {
+	    margin-top: -100px !important;
+	    width: 100% !important;
+	    height: 100% !important;
+    }
+	.nav-pills {
+		float: none !important;
+	}
+	.nav{
+		display: inline-block !important;
+	}
+}
 }
 
 
@@ -12,7 +58,7 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+    font-weight: 400;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -71,7 +117,7 @@ table {
  * Lists
  */
 ul, ol {
-    margin-left: $spacing-unit;
+/*     margin-left: $spacing-unit; */
 }
 
 li {
@@ -84,14 +130,12 @@ li {
     margin: 2.5*$spacing-unit 0 0;
     padding: 12px;
     border-top: 1px solid $grey-color-light;
-    border-bottom: 1px solid $grey-color-light;
     ul.details {
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
     .author-details {
-        border-left: 1px solid $grey-color-light;
         h5 {
             font-weight: 500;
             margin-bottom: $spacing-unit/3;
@@ -117,14 +161,17 @@ ul.post-list {
     list-style-type: none;
     margin: (2 * $spacing-unit) 0;
     li {
-        margin-bottom: 16px;
-        padding-left: 42px;
+        padding-left: 5px;
         h2 {
-            margin: 0 0 0 -42px;
             text-transform: capitalize;
+            font-weight: 700;
             i {
                 width: 32px;
                 text-align: center;
+                font-size: 55%;
+                margin: 10px 0 0 -40px;
+                position: absolute;
+                color: $grey-color;
             }
             a {
                 color: $text-color !important;
@@ -138,6 +185,7 @@ ul.post-list {
             color: $brand-color-2;
             font-size: 75%;
             text-transform: uppercase;
+            font-weight: 600;
         }
         p {
             margin-top: $spacing-unit / 2;
@@ -145,8 +193,8 @@ ul.post-list {
     }
     .post-divider {
         height: 0px;
-        margin: $spacing-unit 0;
-        border-top: 1px dashed $grey-color-light;
+        margin: $spacing-unit 0 100px 0;
+        border-top: 1px solid $grey-color-light;
     }
     .list-post-meta {
         color: $grey-color;
@@ -161,7 +209,31 @@ ul.post-list {
 
 .topic {
     margin: 64px 0 0 0;
+    font-size: 1em;
+    line-height: 2.2em;
+    font-weight: 400;
     text-transform: capitalize;
+    border-bottom: 1px solid $grey-color-light;
+}
+
+.topic i {
+    font-size: .7em;
+    color: $grey-color;
+    margin-bottom: 5px;
+
+}
+
+.page-heading{
+	 text-transform: capitalize;
+     font-weight: 700;
+}
+
+.page-subtitle{
+	  color: $brand-color-2;
+      font-size: 75%;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: -10px;
 }
 
 ul.howtos-list {
@@ -173,11 +245,12 @@ ul.howtos-list {
         color: $text-color;
         h4 {
             color: $text-color;
-            margin: 0 0 0 64px;
-            text-transform: capitalize;
+            margin: 0 0 0 30px;
+            font-weight: 600;
+            font-style: 1em;
             i {
                 margin-left: -42px;
-                width: 21px;
+                width: 10px;
                 text-align: center;
             }
         }
@@ -185,10 +258,9 @@ ul.howtos-list {
             color: $brand-color;
         }
         .subtitle {
-            margin: 0 0 0 50px;
-            color: $brand-color-2;
-            font-size: 75%;
-            text-transform: uppercase;
+            margin: 0 0 0 55px;
+            color: $grey-color;
+            font-size: 0.8em;
         }
     }
 }
@@ -199,38 +271,40 @@ ul.howtos-list {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
+    margin-top: 5px;
 }
 
 .post-header {
-    margin: 2*$spacing-unit 0 2.5*$spacing-unit;
-    text-align: center;
+    margin: 2*$spacing-unit 0 2.5*$spacing-unit 15px;
 
     h1 {
-        font-size: 2.8em;
-        font-weight: 400;
-        letter-spacing: -1px;
+        font-size: 2em;
+        font-weight: 700;
         line-height: 1;
         margin: 0;
         text-transform: capitalize;
     }
     h3 {
-        font-size: 1.3em;
+        font-size: 0.8em;
+        font-weight: 600;
         margin: 0.5*$spacing-unit 0 0 0;
+        color: $brand-color-2;
+        text-transform: uppercase;
     }
 }
 .post-content {
-    padding: 0 $spacing-unit;
+    padding: 0 $spacing-unit/2;
 
     h2 {
-        font-size: 2.2em;
-        font-weight: 500;
+        font-size: 1.5em;
+        font-weight: 700;
         margin: 2*$spacing-unit 0 $spacing-unit;
         padding-bottom: $spacing-unit / 3;
-        border-bottom: 1px solid $grey-color;
+        border-bottom: 1px solid $grey-color-light;
     }
     h3 {
-        font-size: 1.8em;
-        font-weight: 400;
+        font-size: 1.2em;
+        font-weight: 700;
         margin: 1.5*$spacing-unit 0 $spacing-unit;
     }
     h4 {
@@ -250,6 +324,9 @@ h1, h2, h3, h4, h5, h6 {
 
     .alert h4 {
         margin-top: 0;
+    }
+     .alert p {
+        font-size: 0.9em;
     }
 }
 
@@ -291,13 +368,25 @@ li code {
  */
 
 .site-header {
-    padding: $spacing-unit 0;
+	padding: 110px 0 100px 0 !important; 
+	
     a, a:visited {
         color: $text-color;
+        font-size: 0.8em;
+        font-weight: 600;
+        display: inline-block;
+		border: 1px solid #ddd;
+		padding: 5px 14px !important;
+		margin-right: 5px;
+    }
+    img {
+	    margin-top: -30px;
     }
     .site-title {
         font-size: 1.6em;
-        font-family: monospace;
+        border: none;
+        padding: 0;
+
     }
 }
 
@@ -306,17 +395,16 @@ li code {
  */
 #post-sidebar aside {
     margin-bottom: $spacing-unit;
+    margin-left: $spacing-unit/2;
     &:not(:first-child) {
         padding-top: $spacing-unit;
-        border-top: 1px solid $grey-color-light;
     }
 }
 
 .aside-meta {
-    font-size: 0.8em;
-    color: $grey-color-dark;
-    text-transform: uppercase;
-    text-align: center;
+    font-size: 0.7em;
+    color: $grey-color;
+
 }
 
 .alert-note {
@@ -332,11 +420,16 @@ li code {
 /**
  * Author
  */
+.author {
+	border-right: solid 1px $grey-color-light;
+}
 .author-avatar {
     margin-bottom: 0.5*$spacing-unit;
+    max-width: 40%;
 }
 .author-name {
-    text-align: center;
+	font-size: 0.9em;
+    text-align: left;
 }
 
 /**
@@ -348,9 +441,11 @@ aside.share-buttons {
         list-style-type: none;
         a {
             color: $text-color;
+            font-size: 1em;
         }
         li {
             margin-bottom: 6px;
+			font-size: 0.8em;
         }
     }
 }
@@ -367,24 +462,27 @@ aside.share-buttons {
  * Footer
  */
 footer.site-footer {
-    border-top: 1px solid $text-color;
     text-align: center;
     padding: 26px 0;
     margin-top: 74px;
     p {
-        font-size: 85%;
+        font-size: 0.7em;
+        color: $grey-color;
+        
     }
     .fa {
         margin: 0 6px;
     }
     a {
-        color: $text-color !important;
+        color: $grey-color !important;
         &:hover {
-            color: $brand-color-2;
+            color: $grey-color-light;
         }
     }
     .separator {
-        font-size: 2.5em;
+        font-size: 1em;
+        color: $grey-color;
+        
     }
 }
 
@@ -399,4 +497,46 @@ footer.site-footer {
         clear: both;
     }
 }
+/**
+ * Font awesome size
+ */
+.fa-2x{
+	font-size: 1em !important;
+}
 
+.label-primary {
+	background-color: #a2e2ef;
+}
+
+.label {
+	line-height: 2;
+}
+
+.btn-default {
+	border-color: $grey-color-light;
+	border-radius: 55px !important;
+}
+
+.read-more {
+	font-size: 0.7em;
+	text-align: right;
+	display: block;
+}
+
+.pager {
+	font-size: 0.8em;
+	font-weight: 600;
+}
+
+.nav-pills li a {
+	border-radius: 55px;
+}
+
+.list-group-item{
+	padding: 10px 15px 0 0;
+	border: none;
+}
+
+.list-group-item:hover{
+	background-color: white !important;
+}

@@ -10,24 +10,24 @@ $OpenSansPath:  $thm-fonts-path + "/open-sans";
 
 // Our variables
 $base-font-family: 'Open Sans', serif; // TODO
-$base-font-size:   17px;
+$base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #363a41;
 $white-text-color:  #f9f9f9;
 $background-color: #ffffff;
 $dark-background-color: #333333;
 $brand-color:      #2a7ae2;
-$brand-color-2:    #e31569;
-$brand-color-3:    #00aff0;
+$brand-color-2:    #df0067;
+$brand-color-3:    #1da6c2;
 $code-bg-color:    #fafaff;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:       #939393;
+$grey-color-light: #e8e8e8;
+$grey-color-dark:  #555555;
 
 
 

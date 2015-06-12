@@ -22,7 +22,7 @@ In the News department, after choosing to [change our Coding Standards to PSR-2]
 
 Of note among the merged PRs in the last two weeks:
 
- * In PR 3090, Core developer Julien Martin (Shudrum) rewrote the way the maintenance message is displayed, made it translatable (finally)!), and added two new admin hooks to control its display.
+ * In PR 3090, Core developer Julien Martin (Shudrum) rewrote the way the maintenance message is displayed, made it translatable (finally!), and added two new admin hooks to control its display.
  * In PR 3142, product manager François-Marie de Jouvencel (djfm) added 5 languages to the installer: Bulgarian, Croatian, Lithuanian, Slovene, and Swedish!
  * In PR 3079, Core developer Gregory Roussac (gRoussac) added the ability to edit the caption of product images.
 
@@ -36,14 +36,14 @@ As always, click on the PR's number to open its page on GitHub.
 #### Text fixes
 
  * [3133](https://github.com/PrestaShop/PrestaShop/pull/3133): Wording change in blocktopmenu, by maximebiloe.
- 
+
 #### Front office
 
  * [3090](https://github.com/PrestaShop/PrestaShop/pull/3090): New message for maintenance mode, by Shudrum.
  * [3137](https://github.com/PrestaShop/PrestaShop/pull/3137): preview layout for disabled product, by maximebiloe.
  * [3143](https://github.com/PrestaShop/PrestaShop/pull/3143): images.tpl - wording, by AlexEven.
  * [3149](https://github.com/PrestaShop/PrestaShop/pull/3149): Fix typo in function name, by xBorderie.
- 
+
 #### Back office
 
  * [3123](https://github.com/PrestaShop/PrestaShop/pull/3123): Undefined javascript variable, by jeromenadaud.
@@ -52,7 +52,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [3079](https://github.com/PrestaShop/PrestaShop/pull/3079): Ability to edit images legends, by gRoussac.
  * [3144](https://github.com/PrestaShop/PrestaShop/pull/3144): Remove caption selection with one image, by jeromenadaud.
  * [3148](https://github.com/PrestaShop/PrestaShop/pull/3148): Install specific modules for hosted shops, by Quetzacoalt91.
- 
+
 #### Core
 
  * [3112](https://github.com/PrestaShop/PrestaShop/pull/3112): Fix missing language identifier, by jeromenadaud.
@@ -64,18 +64,18 @@ As always, click on the PR's number to open its page on GitHub.
 #### Unit tests
 
  * [3094](https://github.com/PrestaShop/PrestaShop/pull/3094): Tests : Added test for shipping with PS_ATCP_SHIPWRAP, by djfm.
- 
+
 #### Modules
 
  * [3130](https://github.com/PrestaShop/PrestaShop/pull/3130): Update price on voucher delete in blockcart module, by maximebiloe.
- 
+
 #### Installer
 
  * [3126](https://github.com/PrestaShop/PrestaShop/pull/3126): CSS update, by jeromenadaud.
  * [3139](https://github.com/PrestaShop/PrestaShop/pull/3139): Change CNIL info, by jeromenadaud.
  * [3142](https://github.com/PrestaShop/PrestaShop/pull/3142): Added Bulgarian, Croatian, Lithuanian, Slovene, Swedish, by djfm.
  * [3145](https://github.com/PrestaShop/PrestaShop/pull/3145): Update /de/install.php. Thank you, Nobodaddy!
- 
+
 
 See all the PRs merged into the codebase since May the 18th  [here](https://github.com/PrestaShop/PrestaShop/pulls?page=2&q=is%3Apr+merged%3A%3E2015-06-01+is%3Aclosed+sort%3Aupdated&utf8=%E2%9C%93).
 

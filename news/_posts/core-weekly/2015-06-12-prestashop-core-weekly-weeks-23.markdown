@@ -20,7 +20,7 @@ Also, version 1.6.1.0-rc4 was released earlier this week! Help us test it! [Read
 
 In the News department, after choosing to [change our Coding Standards to PSR-2](http://build.prestashop.com/news/prestashop-moves-to-psr-2/), we are [adopting a SemVer-like versioning scheme](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/).
 
-Of note among the merged PRs in the last two weeks:
+Of note among the merged PRs in the last weeks
 
  * In PR 3090, Core developer Julien Martin (Shudrum) rewrote the way the maintenance message is displayed, made it translatable (finally!), and added two new admin hooks to control its display.
  * In PR 3142, product manager François-Marie de Jouvencel (djfm) added 5 languages to the installer: Bulgarian, Croatian, Lithuanian, Slovene, and Swedish!

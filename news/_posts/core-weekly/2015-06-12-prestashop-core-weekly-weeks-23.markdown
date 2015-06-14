@@ -16,7 +16,7 @@ Hi again! This edition of the Core Weekly report highlights changes in PrestaSho
 
 Yesterday was [PrestaShop Day](http://www.prestashopday.com/), THE yearly event for the PrestaShop community! We met many of you, learnt a lot, and got to tell about our plans for the future -- among which [the new architecture](http://build.prestashop.com/news/new-architecture-1-6-1-0/), and most importantly, [PrestaShop's Integration Fund](https://www.prestashop.com/blog/en/prestashop-launches-1000000-integration-fund-community/), for which the company will dedicate $1,000,000 to the Community to build more local modules! Developers, this is your chance to shine!
 
-Also, version 1.6.1.0-rc4 was released earlier this week! Help us test it! [Read all about it here](http://build.prestashop.com/news/prestashop-1.6.0.1-rc4/)! Test, test, test!
+Also, version 1.6.1.0-rc4 was released earlier this week! Help us test it! [Read all about it here](http://build.prestashop.com/news/prestashop-1.6.1.0-rc4/)! Test, test, test!
 
 In the News department, after choosing to [change our Coding Standards to PSR-2](http://build.prestashop.com/news/prestashop-moves-to-psr-2/), we are [adopting a SemVer-like versioning scheme](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/).
 

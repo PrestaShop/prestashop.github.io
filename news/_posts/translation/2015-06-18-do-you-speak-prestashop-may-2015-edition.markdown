@@ -2,7 +2,7 @@
 layout: post
 title:  "Do you speak PrestaShop? – May 2015 edition"
 subtitle: "The awesome work of our multilingual community"
-date:   2015-06-17 18:29:47
+date:   2015-06-18 10:29:47
 author: alexeven
 icon: fa-globe
 tags: i18n, l10n
@@ -24,34 +24,34 @@ A lot of you are working everyday on Crowdin to have PrestaShop available in man
 
 #### Top 10 translators:
 
-Translator | Language | # Words
----------- | -------- | ----------------
- 1. xymarior |(Portuguese)  |4694
- 2. MartinsZB | Latvian |3131
- 3. xabigar | Basque| 1605
- 4. martinlaihm | Trad. Chinese |1551
- 5. michalurva | Slovak | 1336
- 6. Koral | Polish |1106
- 7. juandortech | Spanish |982
- 8. ggedamed | Romanian |888
- 9. nghiazer | Vietnamese |716
-10. extendus | Swedish |611
+| |Translator | Language | # Words
+|-|---------- | -------- | ----------------
+ 1. | xymarior |(Portuguese)  |4694
+ 2. | MartinsZB | Latvian |3131
+ 3. | xabigar | Basque| 1605
+ 4. | martinlaihm | Trad. Chinese |1551
+ 5. | michalurva | Slovak | 1336
+ 6. | Koral | Polish |1106
+ 7. | juandortech | Spanish |982
+ 8. | ggedamed | Romanian |888
+ 9. | nghiazer | Vietnamese |716
+10. | extendus | Swedish |611
 
 
 #### Top 10 proofreaders:
 
-Translator | Language | # Words
----------- | -------- | ----------------
- 1. xymarior |(Portuguese)  |5563
- 2. MartinsZB | Latvian |3470
- 3. ggedamed | Romanian | 1304
- 4. marionetarh | Spanish |789
- 5. mortenborg | Danish | 762
- 6. xabigar | Basque |674
- 7. DaoKakao | Russian |632
- 8. extendus | Swedish |611
- 9. lolypop000 | Slovenian |607
-10. filipfilipovic | Croatian |607
+| | Translator | Language | # Words
+|-| ---------- | -------- | ----------------
+ 1. | xymarior |(Portuguese)  |5563
+ 2. | MartinsZB | Latvian |3470
+ 3. | ggedamed | Romanian | 1304
+ 4. | marionetarh | Spanish |789
+ 5. | mortenborg | Danish | 762
+ 6. | xabigar | Basque |674
+ 7. | DaoKakao | Russian |632
+ 8. | extendus | Swedish |611
+ 9. | lolypop000 | Slovenian |607
+10. | filipfilipovic | Croatian |607
 
 **A big applause to them!**
 

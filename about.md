@@ -16,9 +16,13 @@ We write about the upcoming changes in the codebase, current and future architec
 
 How about writing a guest post here? Maybe you've been working with PrestaShop for a while and you want to write about how you use it, or you feel a cool feature could use a highlight with sample code? Go ahead, [suggest a new article](http://build.prestashop.com/howtos/misc/how-to-write-on-this-blog/) — that might even inspire other people in the community to write too!
 
-Before you start you can send us a short proposal at [{{ site.email }}](mailto:{{ site.email }})
+Before you start you can send us a short proposal at [{{ site.email }}](mailto:{{ site.email }}). Once we have agreed with you on the topic, you can submit your article using a simple pull request! Make sure you read the [How To Write On This Blog](http://build.prestashop.com/howtos/misc/how-to-write-on-this-blog/) tutorial first!
 
-Also, if we merge one of your cool *Pull Request* on [GitHub](http://gihub.com/PrestaShop/PrestaShop), we will probably invite you to tell us more about it here.
+Note that all content on the Build.PrestaShop.com site is licensed under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/) -- meaning that it is in the Public Domain. Use it however you want!
+
+![CC0 Logo](/assets/images/2015/06/cc-zero.png)
+
+Also, if we merge one of your cool pull request on [the PrestaShop project](http://gihub.com/PrestaShop/PrestaShop), we will probably invite you to tell us more about it here.
 
 ## Guidelines
 

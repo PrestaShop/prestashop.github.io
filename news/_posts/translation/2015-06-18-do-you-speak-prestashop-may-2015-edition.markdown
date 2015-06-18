@@ -5,8 +5,8 @@ subtitle: "The awesome work of our multilingual community"
 date:   2015-06-18 10:29:47
 author: alexeven
 icon: fa-globe
-tags: i18n, l10n
-published :false
+tags: [translation, i18n, l10n]
+published: true
 
 ---
 
@@ -26,7 +26,7 @@ A lot of you are working everyday on Crowdin to have PrestaShop available in man
 
 | |Translator | Language | # Words
 |-|---------- | -------- | ----------------
- 1. | xymarior |(Portuguese)  |4694
+ 1. | xymarior | Portuguese  |4694
  2. | MartinsZB | Latvian |3131
  3. | xabigar | Basque| 1605
  4. | martinlaihm | Trad. Chinese |1551
@@ -42,7 +42,7 @@ A lot of you are working everyday on Crowdin to have PrestaShop available in man
 
 | | Translator | Language | # Words
 |-| ---------- | -------- | ----------------
- 1. | xymarior |(Portuguese)  |5563
+ 1. | xymarior | Portuguese |5563
  2. | MartinsZB | Latvian |3470
  3. | ggedamed | Romanian | 1304
  4. | marionetarh | Spanish |789
@@ -60,6 +60,8 @@ A lot of you are working everyday on Crowdin to have PrestaShop available in man
 PrestaShop was fully available (= 100% translated and validated) in 10 languages:
 
 * Croatian
+* English
+* French
 * German
 * Norwegian
 * Persian
@@ -67,11 +69,11 @@ PrestaShop was fully available (= 100% translated and validated) in 10 languages
 * Russian
 * Slovenian
 * Swedish
-* (English and French)
 
 ## 99% translated languages
 
 … and almost fully translated (and validated) in the following 7 languages:
+
 * Dutch
 * Indonesian
 * Italian

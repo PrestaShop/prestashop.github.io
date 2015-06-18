@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop Core Weekly - Week 24"
 subtitle: "An inside look at PrestaShop's codebase"
-date:   2015-06-12 18:29:47
+date:   2015-06-19 12:29:47
 author: xavierborderie
 icon: fa-calendar
 tags:
@@ -16,7 +16,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop core cod
 
 The Core team is working on version 1.6.1.0, and the fourth Release Candidate version still needs some testing! [Read all about it here](http://build.prestashop.com/news/prestashop-1-6-1-0-rc4/)!
 
-It was a short week, since last Thursday we organized the PrestaShop Day in Paris, and the whole team was attending and even presenting workshops for potential contributors and partners. We hope you learnt a lot! We will try to publish the slides of our workshops very soon right here on the Build devblog.
+It was a short week, since last Thursday we organized the PrestaShop Day in Paris ([see the official report here](https://www.prestashop.com/blog/en/prestashopday-recapping-amazing-event/)), and the whole team was attending and even presenting workshops for potential contributors and partners. We hope you learnt a lot! We will try to publish the slides of our workshops very soon right here on the Build PrestaShop devblog.
 
 As a reminder, we recently chose to [change our Coding Standards to PSR-2](http://build.prestashop.com/news/prestashop-moves-to-psr-2/), and to [adopt a SemVer-like versioning scheme](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/).
 
@@ -51,7 +51,7 @@ As always, click on the PR's number to open its page on GitHub.
 #### PDF
 
  * [3158](https://github.com/PrestaShop/PrestaShop/pull/3158): Change invoice after feedback, by julienbourdeau.
- 
+
 
 See all the PRs merged into the codebase since June the 8th [here](https://github.com/PrestaShop/PrestaShop/pulls?page=2&q=is%3Apr+merged%3A%3E2015-06-08+is%3Aclosed+sort%3Aupdated&utf8=%E2%9C%93).
 

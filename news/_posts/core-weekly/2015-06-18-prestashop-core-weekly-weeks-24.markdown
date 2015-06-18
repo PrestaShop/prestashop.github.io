@@ -35,8 +35,8 @@ As always, click on the PR's number to open its page on GitHub.
 #### Front office
 
  * [3162](https://github.com/PrestaShop/PrestaShop/pull/3162): Advanced EU Compliance fixes, by tchauviere.
- * [3077](https://github.com/PrestaShop/PrestaShop/pull/3077): Fix bug triggered when adding customizable product twice in cart. Thank you kelu95!
- * [3050](https://github.com/PrestaShop/PrestaShop/pull/3050): Fix bug triggered when adding new customized product into new order. Thank you kelu95!
+ * [3077](https://github.com/PrestaShop/PrestaShop/pull/3077): Fix bug triggered when adding customizable product twice in cart, by kelu95.
+ * [3050](https://github.com/PrestaShop/PrestaShop/pull/3050): Fix bug triggered when adding new customized product into new order, by kelu95.
  
 #### Back office
 
@@ -55,7 +55,7 @@ As always, click on the PR's number to open its page on GitHub.
 
 See all the PRs merged into the codebase since June the 8th [here](https://github.com/PrestaShop/PrestaShop/pulls?page=2&q=is%3Apr+merged%3A%3E2015-06-08+is%3Aclosed+sort%3Aupdated&utf8=%E2%9C%93).
 
-Thank you to [kelu95](https://github.com/kelu95), who had two Pull Requests merged! Also, thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
+Thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
 
 If you want to contribute to PrestaShop with code, read those:
 

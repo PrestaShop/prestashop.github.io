@@ -28,11 +28,11 @@ Thanks to our internal tools (to be publicly released soon!), we quickly identif
 
 At the PHP level, without the cache activated, after launching a crawl on a real shop, we collected all the data we needed in a few minutes:
 
-![PHP bottleneck](/assets/images/2015/06/php_bottleneck.jpg)
+![PHP bottleneck](/assets/images/2015/06/perfs/php_bottleneck.jpg)
 
 Same at the SQL level:
 
-![SQL bottleneck](/assets/images/2015/06/bottleneck.jpg)
+![SQL bottleneck](/assets/images/2015/06/perfs/bottleneck.jpg)
 
 Thanks to these findings, we have rewritten a large amount of SQL queries to improve their efficiency, and we improved the PHP core to remove the detected bottlenecks.
 
@@ -158,27 +158,27 @@ The single-threaded and multi-threaded benchmarks results are the average of 5 �
 
 First, the single-threaded performances:
 
-![Prestashop 1.6.1.0: single-threaded performances](/assets/images/2015/06/single-threaded-performances2.jpg)
+![Prestashop 1.6.1.0: single-threaded performances](/assets/images/2015/06/perfs/single-threaded-performances2.jpg)
 
 It looks promising: up to **10x improvement** when Memcached is On!
 
 Let’s take a look at how the new 1.6.1.0 scales:
 
-![Prestashop 1.6.1.0 : Multi-threaded performances with Query Cache and Memcached disabled](/assets/images/2015/06/multi-threaded-performances1.jpg)
+![Prestashop 1.6.1.0 : Multi-threaded performances with Query Cache and Memcached disabled](/assets/images/2015/06/perfs/multi-threaded-performances1.jpg)
 
 Even without any cache, 1.6.1.0 scales much better than 1.6.0.14, and is **up to 65% faster with 15 concurrent connections**.
 
-![Prestashop 1.6.1.0: Multi-threaded performances with Query Cache enabled and Memcached disabled](/assets/images/2015/06/multi-threaded-performances-qc-on-memcached-off1.png)
+![Prestashop 1.6.1.0: Multi-threaded performances with Query Cache enabled and Memcached disabled](/assets/images/2015/06/perfs/multi-threaded-performances-qc-on-memcached-off1.png)
 
 If we enable the query cache, the 1.6.1.0 is still **up to 50% faster with 10 concurrent connections**.
 
-![CC0 Logo](/assets/images/2015/06/multi-threaded-performances-qc-on-memcached-on3.png)
+![CC0 Logo](/assets/images/2015/06/perfs/multi-threaded-performances-qc-on-memcached-on3.png)
 
 Well, we definitely fixed the PrestaShop cache issue. We reach almost a **10x improvement with 10 concurrent connections**!
 
 Here are the performances side by side, at 10 concurrent connections:
 
-![CC0 Logo](/assets/images/2015/06/multi-threaded-performances1.jpg)
+![CC0 Logo](/assets/images/2015/06/perfs/multi-threaded-performances1.jpg)
 
 
 #### Back office performances
@@ -187,13 +187,13 @@ Here are a few results from the back office.
 
 **Full search reindexing:**
 
-![CC0 Logo](/assets/images/2015/06/search-index-time3.png)
+![CC0 Logo](/assets/images/2015/06/perfs/search-index-time3.png)
 
 On the performance side, when Memcached is enabled, 1.6.0.14 times out after 900s, and eats more than 128 MB of memory. When Memcached is disabled, **1.6.1.0 is 2.3x faster than 1.6.0.14, eats 1.7x less memory**, and fixes a bug with multi attributes. Not bad!
 
 **Import speed:**
 
-![CC0 Logo](/assets/images/2015/06/import-time1.png)
+![CC0 Logo](/assets/images/2015/06/perfs/import-time1.png)
 
 Although those results were not computed on the same machine, I decided to include them as well to show you the potential speed you could expect with the import in 1.6.1.0 (here **almost a 5x speed up**).
 
@@ -203,13 +203,13 @@ Now let’s measure the time to load some back office pages.
 
 **Product edit:**
 
-![CC0 Logo](/assets/images/2015/06/edit-product3.png)
+![CC0 Logo](/assets/images/2015/06/perfs/edit-product3.png)
 
 In our case, with 1,827 categories, **1.6.1.0 is 1.7x faster**.
 
 **Cart rules:**
 
-![CC0 Logo](/assets/images/2015/06/edit-cart-rules1.png)
+![CC0 Logo](/assets/images/2015/06/perfs/edit-cart-rules1.png)
 
 With 10843 cart rules, once again **1.6.1.0 is 1.7x faster**.
 

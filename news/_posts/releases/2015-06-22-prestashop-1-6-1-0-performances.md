@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PrestaShop 1.6.1.0 : a new level of performances"
+title:  "PrestaShop 1.6.1.0: a new level of performances"
 subtitle: "Where version 1.6.1.0's performances shine"
 date:   2015-06-22 18:29:47
 author: jocelynfournier
@@ -221,4 +221,4 @@ To achieve those results we have worked really closely with Jocelyn Fournier, op
 
 Final note: Whereas in 1.6.0.14 we recommend to not enable the PrestaShop cache, in 1.6.1.0 we recommend you to enable it, with a local Memcached server (APC should be OK as well).
 
-Note: This article was first published by Jocelyn on his blog at Sotfizy. [Read the original here](https://www.softizy.com/blog/prestashop-1-6-1-0-performances/).
+_Note: This article was first published by Jocelyn on his blog at Sotfizy. [Read the original here](https://www.softizy.com/blog/prestashop-1-6-1-0-performances/)._

@@ -20,6 +20,8 @@ We have done a lot of work to improve the overall performances of PrestaShop, an
 
 Let’s now dig into the optimizations we have put in place, and do some benchmarks.
 
+_Note: This article was first published by Jocelyn on his blog at Softizy. [Read the original here](https://www.softizy.com/blog/prestashop-1-6-1-0-performances/)._
+
 ## Which parts of PrestaShop are faster?
 
 ### Faster single-threaded performances
@@ -45,9 +47,9 @@ Beside the huge work on the query performances, we have worked a lot on the SQL 
 
 PrestaShop is using Smarty to handle the templates. If you are using several front servers, the out of the box Smarty implementation forces you to centralize its cache on a shared filesystem (NFS).
 
-To remove this limitation, we added a custom Smarty module which makes it work perfectly with a local Smarty cache (no more NFS needed!). Moreover our implementation speeded up a lot the cases where the cache had to be invalidated: instead of flushing all the files at once, each template is flushed asynchronously.
+To remove this limitation, we added a custom Smarty module which makes it work perfectly with a local Smarty cache (no more NFS needed!). Moreover, our implementation sped up a lot the cases where the cache had to be invalidated: instead of flushing all the files at once, each template is flushed asynchronously.
 
-This speeded up a lot all the back-office operations!
+This sped up a lot all the back-office operations!
 
 ### Better back office performances
 
@@ -217,8 +219,6 @@ With 10843 cart rules, once again **1.6.1.0 is 1.7x faster**.
 
 1.6.1.0 is a major release in terms of performances, with up to 10x speed up in some cases.
 
-To achieve those results we have worked really closely with Jocelyn Fournier, optimization expert, modifying about 6600 lines of code in a few months. We hope you’ll be happy with this version. Do not hesitate to report any performance issues on [the Forge](http://forge.prestashop.com)!
+To achieve those results we have worked really closely with the PrestaShop team, modifying about 6600 lines of code in a few months. We hope you’ll be happy with this version, and don’t hesitate to report any performance issues on [the Forge](http://forge.prestashop.com)!
 
-Final note: Whereas in 1.6.0.14 we recommend to not enable the PrestaShop cache, in 1.6.1.0 we recommend you to enable it, with a local Memcached server (APC should be OK as well).
-
-_Note: This article was first published by Jocelyn on his blog at Sotfizy. [Read the original here](https://www.softizy.com/blog/prestashop-1-6-1-0-performances/)._
+Final note: Whereas in 1.6.0.14 we recommended to not enable the PrestaShop cache, in 1.6.1.0 we recommend you to enable it, with a local Memcached server (APC should be OK as well).

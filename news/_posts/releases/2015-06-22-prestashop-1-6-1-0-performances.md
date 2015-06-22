@@ -26,9 +26,9 @@ _Note: This article was first published by Jocelyn on his blog at Softizy. [Read
 
 ### Faster single-threaded performances
 
-Thanks to our internal tools (to be publicly released soon!), we quickly identified the bottlenecks of PrestaShop which were impacting directly the generation time of the pages, and hence the SEO and the user satisfaction.
+Thanks to our internal tools (to be publicly released soon!), we quickly identified the bottlenecks of PrestaShop which were directly impacting the generation time of some pages, and hence the SEO and user satisfaction.
 
-At the PHP level, without the cache activated, after launching a crawl on a real shop, we collected all the data we needed in a few minutes:
+At the PHP level, with the cache deactivated and after launching a crawl on a real shop, we collected all the data we needed in a few minutes:
 
 ![PHP bottleneck](/assets/images/2015/06/perfs/php_bottleneck.jpg)
 
@@ -40,7 +40,7 @@ Thanks to these findings, we have rewritten a large amount of SQL queries to imp
 
 ### Faster multi-threaded performances
 
-Beside the huge work on the query performances, we have worked a lot on the SQL queries to make sure to efficiently use the MySQL query cache, and we fixed a few nasty issues in the PrestaShop cache. Actually most of the time, the use of the PrestaShop cache was decreasing the performance. This is not the case anymore!
+Beside the huge work on the query performances, we have worked a lot on the SQL queries to make sure the MySQL query cache is used efficiently. We also fixed a few nasty issues in the PrestaShop cache. Actually, most of the time the use of the PrestaShop cache was decreasing the performance. This is no longer the case!
 
 
 ### Specific optimizations for multi-front / cloud environment
@@ -49,7 +49,7 @@ PrestaShop is using Smarty to handle the templates. If you are using several fro
 
 To remove this limitation, we added a custom Smarty module which makes it work perfectly with a local Smarty cache (no more NFS needed!). Moreover, our implementation sped up a lot the cases where the cache had to be invalidated: instead of flushing all the files at once, each template is flushed asynchronously.
 
-This sped up a lot all the back-office operations!
+This quickened a lot all the back office operations!
 
 ### Better back office performances
 

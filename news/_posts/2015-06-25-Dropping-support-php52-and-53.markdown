@@ -26,7 +26,7 @@ Thus, we remain true to our quest: make it possible for everyone to have their o
 up-to-date host, then PrestaShop will keep evolving for you. If you cannot afford a good host, then PrestaShop will
 host your store for you, with the PrestaShop Cloud service.
 
-Hence, if your hosting plan only supports an old version of PHP, you are welcome to ditch it and open a
+Hence, if your hosting plan only supports an old version of PHP, you are welcome to drop it and open a
 [free account on PrestaShop Cloud][2].
 
 Now, as you understand it, PrestaShop Cloud frees us from having to be stuck with PHP 5.2, and allows us to move to
@@ -59,16 +59,16 @@ to seriously like it.
 ### Closures and lambda functions
 
 If you are using JavaScript you are already familiar with lambda functions (aka anonymous functions) and closures.
-They exist in PHP as well but they’ve been introduced in PHP 5.3. They will be used to simplified the code base.
+They exist in PHP as well but they’ve been introduced in PHP 5.3. They will be used to simplify the code base.
 For example maybe you need a simple function to pass as an argument of `array_map()`. We will then avoid polluting the
 global scope with code we don’t reuse.
 
 I recommend [this article from Fabien Potiencier](http://fabien.potencier.org/article/17/on-php-5-3-lambda-functions-and-closures)
 if you want to learn more about it.
 
-### Shortlands
+### Shorthands
 
-I know it's much smaller improvements but few shortlands have been introduced in PHP 5.3 and PHP 5.4 and they usually
+I know it's much smaller improvements but few shorthands have been introduced in PHP 5.3 and PHP 5.4 and they usually
 make life way easier.
 
 {% highlight php startinline=true %}
@@ -96,7 +96,7 @@ make life way easier.
 
 ## When to expect these changes
 
-Since [we moved to a more sementic versionning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/),
+Since [we moved to a more semantic versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/),
 this change is to expect for the next major release: **PrestaShop 1.7**.
 
 There is no release date yet but we are very excited about it and we can’t wait to tell you more!

@@ -5,7 +5,7 @@ subtitle: "One last series of tests before we go live!"
 date:   2015-06-26 15:29:47
 author: alexeven
 icon: fa-leaf
-disqus_url: http://build.prestashop.com/news/prestashop-1.6.0.1-rc5/
+disqus_url: http://build.prestashop.com/news/prestashop-1.6.1.0-rc5/
 tags:
  - 1.6.1.x
  - version
@@ -21,14 +21,14 @@ We heard your feeback and we've been hard at work fixing bugs and improving thin
 
 ## Release Candidate 5
 
-You were waiting for it, here is the latest Release Candidate version! It's time to [download and test PrestaShop 1.6.0.1 RC5](https://www.prestashop.com/download/old/prestashop_1.6.1.0-rc5.zip).
+You were waiting for it, here is the latest Release Candidate version! It's time to [download and test PrestaShop 1.6.1.0 RC5](https://www.prestashop.com/download/old/prestashop_1.6.1.0-rc5.zip).
 
 As you understood, this version is mostly about the bugs you've reported. If you did report some bugs on the RC4, please test this new version and let us know how it behaves (smoothly, I'm sure).
 You can [see all the new commits here].
 
 For new comers, you'll find more about the previous versions and their novelties in our past articles: [PrestaShop 1.6.1.0 RC3](http://build.prestashop.com/news/prestashop-1-6-1-0-rc3/) and [PrestaShop 1.6.1.0 RC4](http://build.prestashop.com/news/prestashop-1.6.1.0-rc4/).
 
-With PrestaShop 1.6.0.1, the focus is chiefly on:
+With PrestaShop 1.6.1.0, the focus is chiefly on:
 
 * **Performance** (on which you can read more here)
 * **PDF templates** for invoices.

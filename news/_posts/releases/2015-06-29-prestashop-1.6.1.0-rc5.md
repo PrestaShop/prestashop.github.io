@@ -30,7 +30,7 @@ For new comers, you'll find more about the previous versions and their novelties
 
 With PrestaShop 1.6.1.0, the focus is chiefly on:
 
-* **Performance** (on which you can read more here)
+* **Performance** [on which you can read more here](http://build.prestashop.com/news/prestashop-1-6-1-0-performances/)
 * **PDF templates** for invoices.
 * **Back office orders**.
 * **Price and tax calculations**.

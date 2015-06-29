@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop 1.6.1.0: RC5 and release date"
 subtitle: "One last series of tests before we go live!"
 date:   2015-06-26 15:29:47
-author: alex-even
+author: alexeven
 icon: fa-leaf
 disqus_url: http://build.prestashop.com/news/prestashop-1.6.0.1-rc5/
 tags:

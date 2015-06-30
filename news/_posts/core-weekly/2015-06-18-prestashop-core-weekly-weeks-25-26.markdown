@@ -14,9 +14,9 @@ This edition of the Core Weekly report highlights changes in PrestaShop core cod
 
 ## Milestones
 
-The Core team putting the final touch on version 1.6.1.0, and the fifth Release Candidate version needs you to test it one last time! [Read all about it here](http://build.prestashop.com/news/prestashop-1.6.1.0-rc5/)! Also, we have a release date: **PrestaShop 1.6.1.0 will be released on July 2nd**. Yes, that's **this Thursday**.
+The Core team is putting the final touch on version 1.6.1.0, and the fifth Release Candidate version needs you to test it one last time! [Read all about it here](http://build.prestashop.com/news/prestashop-1.6.1.0-rc5/)! Also, we have a release date: **PrestaShop 1.6.1.0 will be released on July 2nd**. Yes, that's **this Thursday**.
 
-We've also announced that [we plan on dropping support for version 5.2 and 5.3 of PHP](http://build.prestashop.com/news/Dropping-support-php52-and-53/) in the next major version (PrestaShop 1.7), since PrestaShop Cloud new exists for those who do not have a quality host!
+We've also announced that [we plan on dropping support for version 5.2 and 5.3 of PHP](http://build.prestashop.com/news/Dropping-support-php52-and-53/) in the next major version (PrestaShop 1.7), since PrestaShop Cloud now exists for those who do not have a quality host!
 
 Take a dive in the [improved performances of version 1.6.1.0](http://build.prestashop.com/news/prestashop-1-6-1-0-performances/), as well as the [first monthly report about the translation of PrestaShop](http://build.prestashop.com/news/do-you-speak-prestashop-may-2015-edition/)!
 
@@ -24,9 +24,9 @@ As a reminder, we recently chose to [change our Coding Standards to PSR-2](http:
 
 Of note among the merged PRs during these last two weeks:
 
- * In PR 3190, Lead Developer Jérôme Nadaud change de position of the demo product option.
+ * In PR 3190, Lead Developer Jérôme Nadaud changed the position of the demo product option.
  * In PR 3178, contributor Jonathan Danse made it possible to use the success, warning and error notification messages in HelperForm calls.
- * In PR 3234, performance specialist Jocelyn Fournier dove into the code for the Cart and made it much faster: first tests indicate that with 75 unique products, loading time is down from 5 seconds to 1.4 second! Thanks also to [kpodemski](https://github.com/kpodemski) for helping Jocelyn reach that goal!
+ * In PR 3234, performance specialist Jocelyn Fournier dove into the code for the Cart and made it much faster: first tests indicate that with 75 unique products, loading time is down from 5 seconds to 1.4 seconds! Thanks also to [kpodemski](https://github.com/kpodemski) for helping Jocelyn reach that goal!
  * In PR 3086, Jocelyn implemented a Memcached cache based on the PHP::Memcached API. The code was based on initial works by contributor Raphaël Droz: thanks!
  * In PR 3279, Jérôme added a new option for Retina images in the image generator.
 

@@ -43,7 +43,7 @@ From version 1.6.1.0 onward, we are moving towards SemVer.
 [SemVer](http://semver.org/), short for Semantic Versioning, is a specification by Gravatar co-founder and GitHub ex-CEO Tom Preston-Werner. In its latest incarnation (v2.0.0), it describes its proposed versioning scheme as follows:
 
 > Given a version number MAJOR.MINOR.PATCH, increment the:
-> 
+>
 > - MAJOR version when you make incompatible API changes,
 > - MINOR version when you add functionality in a backwards-compatible manner, and
 > - PATCH version when you make backwards-compatible bug fixes.
@@ -62,6 +62,8 @@ In the SemVer description, change “incompatible API changes” to “backwards
 The thing is, PrestaShop has long had version numbers that span four numerals, whereas SemVer requires projects to use 3 numerals. For instance, the current version is 1.6.0.14, and the coming version is 1.6.1.0. That is why we chose to move *towards* SemVer, modifying it slightly instead of adopting it as-is. We will need to adapt SemVer to our historical way of versioning keeping the four numerals.
 
 This means that version numbers will be based on 1.MAJOR.MINOR.PATCH. And we keep the possibility to switch to 2.0.0.0 on the day something rrrrrreally extra major happens :)
+
+![](/assets/images/2015/06/major-minor-patch.png)
 
 
 ### So, when will the numerals change?

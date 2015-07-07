@@ -42,7 +42,7 @@ Before getting into more details we want to insist on the fact that the architec
 
 You're of course welcome to experiment with the new classes and services, but please be warned there will likely be short notice breaking changes in the coming months.
 
-If in doubt, do not directly depend on code in the `Core` of `Adapter` folders.
+If in doubt, do not directly depend on code in the `Core` or `Adapter` folders.
 
 ## New Directories in the Source Tree
 

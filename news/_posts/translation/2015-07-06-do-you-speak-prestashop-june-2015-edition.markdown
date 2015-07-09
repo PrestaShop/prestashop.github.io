@@ -13,14 +13,14 @@ published: false
 
 Here is the new report to inform you of what has been going on [PrestaShop translation project on Crowdin](https://crowdin.com/project/prestashop-official) this June 2015.
 
-All the figures and statistics for are still based on the 1.6.0.14 project, which was the last stable version released in June.
+All the figures and statistics are still based on the 1.6.0.14 project, which was the last stable version released in June. The next edition will be all about the new 1.6.1.0, so if your language hasn't made it to this edition of the Translation Report, then it's your time to shine, get that percentage up!
 
 
 ## Top contributors
 
-A lot of you are working everyday on Crowdin to have PrestaShop available in many languages. Here are the **most active translators and proofreaders** for the month of June.
+A lot of you are working everyday on Crowdin to have PrestaShop available in many languages, and we can't thank you enough for your dedication! Here are the **most active translators and proofreaders** for the month of June.
 
-#### Top 10 translators:
+#### Top 10 translators in June:
 
 | |Translator | Language | # Words
 |-|---------- | -------- | ----------------
@@ -36,7 +36,7 @@ A lot of you are working everyday on Crowdin to have PrestaShop available in man
 10. | Lucian Ilie (lucianilie) | Romanian |1172
 
 
-#### Top 10 proofreaders:
+#### Top 10 proofreaders in June:
 
 | | Translator | Language | # Words
 |-| ---------- | -------- | ----------------
@@ -51,7 +51,7 @@ A lot of you are working everyday on Crowdin to have PrestaShop available in man
  9. | Tomáš Hink (tomas254) | Czech |646
 10. | Filip Filipović (filipfilipovic) | Croatian |617
 
-**A big applause to them!** And welcome to our new top contributors.
+**A big applause to them!** And welcome to our new top contributors!
 
 
 ## Fully translated languages
@@ -73,7 +73,7 @@ At the end of June, PrestaShop 1.6.0.14 was fully available (= 100% translated a
 
 ## 99% translated languages
 
-… and almost fully translated (and validated) in the following 7 languages:
+…and almost fully translated (and validated) in the following 7 languages:
 
 * German
 * Persian
@@ -96,12 +96,12 @@ In comparison with the previous month, these languages had the best progress in 
 
 Congratulations to all our contributors for the hard work!!
 
-We also have new active languages, thanks to translators who joined us to translate in Bulgarian and Tamil: welcome to the team!
+We also have new active languages: thanks to translators who joined us to translate in Bulgarian and Tamil, and welcome to the team!
 
 
 ## Languages that need (more) proofreaders
 
-As you might know, a translated string will not be available in PrestaShop as long as it is not validated. For this reason, it’s important we should keep a good level of validated strings vs translated string, to make sure everyone benefit from the latest translations!
+As you might know, a translated string will not be available in PrestaShop as long as it is not validated. For this reason, it’s important we should keep a good level of validated strings vs. translated string, to make sure everyone benefits from the latest translations!
 
 These languages (still) need you as proofreaders as well:
 
@@ -122,14 +122,14 @@ If you wish to help proofreading what has been translated, please [contact me on
 Here is an update on the latest initiatives from members of the translation community.
 
 #### Luxembourgish
-We've added this new language at the request of **NicoLux**, based on the available German translation. The more, the merrier: If you want to help translating PrestaShop in Luxembourgish, join the project and don't hesitate to get in touch with NicoLux! The focus is on the shop's, PDF and emails content mainly.
+We've added this new language at the request of **NicoLux**. It is based on the available German translation. The more, the merrier: If you want to help [translating PrestaShop in Luxembourgish](https://crowdin.com/project/prestashop-official/de-LU), join the project and don't hesitate to get in touch with NicoLux! The focus is on the shop's, PDF and emails content mainly.
 
 ### Tatar
-Another language added to the project (what a month!). Thanks to **Rinat Mirgazov** and **Gulnaz Valeeva** who provided the translations!
-Tatars of the world, join your our project to keep PrestaShop it up-to-date in your language!
+Another language added to the project (what a month!). Thanks to **Rinat Mirgazov** and **Gulnaz Valeeva** who provided the translations: thanks to them, [it is already at 25% of completion](https://crowdin.com/project/prestashop-official/tt-RU)!
+Tatars of the world, join your our project to keep PrestaShop up-to-date in your language!
 
 #### Polish
-**Koral** has raised the flag regarding proofreading for the Polish project. It's almost fully translated, we would just need the strings to be validated to have it fully available in the software. There's not much to be validated, but it has to be done at some point. Speak up if you want to help!
+**Koral** has raised the flag regarding proofreading for [the Polish translation project](https://crowdin.com/project/prestashop-official/pl). It's almost fully translated, we would just need the strings to be validated to have it fully available in the software. There's not much to be validated, but it has to be done at some point. Speak up if you want to help!
 
 
 ## Miscellaneous
@@ -137,11 +137,12 @@ Tatars of the world, join your our project to keep PrestaShop it up-to-date in y
 72 members (including PrestaShop employees) were active on the project this month (+20%).
 A total of **51,058 words have been translated** (that's about 80% more than the previous month - wow!) and 28,131 validated, in 34 different languages - this is huge!
 
-We can’t thank you enough!
+Again, we can’t thank you enough!
 
-If you haven’t joined us on Crowdin yet, [it’s still time](https://crowdin.com/project/prestashop-official)!
-If you want to gather your fellow translators to work towards a better harmonization (let’s dream a bit), do let us know, we’ll include a word in the next monthly report.
-A question, a remark? Don’t hesitate to leave a comment.
+If you haven’t joined us on Crowdin yet, [it's never too late](https://crowdin.com/project/prestashop-official)!
+
+If you want to gather your fellow translators to work towards a better harmonization (let’s dream a bit), do let us know, we’ll include a word about it in the next monthly report.
+
+Do you have a question, a remark? Don’t hesitate to leave a comment.
 
 See you next month!
-

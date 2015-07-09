@@ -6,8 +6,6 @@ date:   2015-07-09 10:29:47
 author: alexeven
 icon: fa-globe
 tags: [translation, i18n, l10n]
-published: false
-
 ---
 
 
@@ -92,7 +90,7 @@ In comparison with the previous month, these languages had the best progress in 
 * Chinese (Trad.) (+10% to reach 65% translated)
 * Bulgarian (+4% to reach 97% translated)
 
-![June 2015 best translation progress](/assets/images/2015/06/Build_Crowdin_progress_june15.png)
+![June 2015 best translation progress](/assets/images/2015/07/Build_Crowdin_progress_june15.png)
 
 Congratulations to all our contributors for the hard work!!
 
@@ -111,7 +109,7 @@ These languages (still) need you as proofreaders as well:
 * Vietnamese (42% vs 16%)
 * Hungarian (96% vs 80%)
 
-![June 2015 best translation progress](/assets/images/2015/06/Build_Crowdin_proofreading_june15.png)
+![June 2015 best translation progress](/assets/images/2015/07/Build_Crowdin_proofreading_june15.png)
 
 If you wish to help proofreading what has been translated, please [contact me on Crowdin](https://crowdin.com/profile/alex-even) with the language you’d like to proofread.
 

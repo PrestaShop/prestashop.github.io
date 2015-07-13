@@ -100,7 +100,7 @@ As always, click on the PR's number to open its page on GitHub.
 
 
 
-See all the PRs merged into the codebase since June the 29th [here](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-06-29+is%3Aclosed+sort%3Aupdated&utf8=%E2%9C%93.
+See all the PRs merged into the codebase since June the 29th [here](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-06-29+is%3Aclosed+sort%3Aupdated&utf8=%E2%9C%93).
 
 Thank you to our contributors whose Pull Requests were merged since the last Core Weekly Report: [Nobodaddy](https://github.com/Nobodaddy) and [panploenes](https://github.com/panploenes) Also, thank you to the contributors who's PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
 

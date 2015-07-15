@@ -1,89 +1,93 @@
 ---
 layout: post
-title:  "Set up your local environment for contributing"
-subtitle: "Set up your git and code editor to follow standards"
+title:  "Set up your Git for contributing"
+subtitle: "Tweak your git configuration to work better"
 date:   2015-07-09 11:21:00
 author: julienbourdeau
 icon: fa-laptop
-tags: [git, psr-2, env, Sublime Text]
+tags: [git, env, github]
 ---
 
-There are few rules to follow if you want to contribute to any open source project. Usually the guidelines
-are described in a [CONTRIBUTING.md](https://github.com/PrestaShop/PrestaShop/blob/develop/CONTRIBUTING.md) file
-inside the project root directory.
+Any open source project comes with its own set of rules to harmonize everybody's contributions.
+Usually the guidelines are described in a [CONTRIBUTING.md](https://github.com/PrestaShop/PrestaShop/blob/develop/CONTRIBUTING.md)
+file inside the project root directory.
 
-This walkthrough is meant to help you set up your development environment in order to get your contribution
-validated quickly and without further modifications.
+Find here all you need to know to set up your development environment! This will help your contribution
+to get validated more quickly and without further modifications.
 
 We'll be talking about PrestaShop but what you'll read here applies for most PHP open srouce projects.
 
-# Git configuration
+## The Git configuration
 
 PrestaShop is version with Git and hosted in GitHub. If you intend to make a Pull Request you should make sure your
 git configuration is well set so you don't run into issue (like having commits that are not yours in your PR).
 
 
-We recommend you to use the settings below for your `~/.gitconfig` file.
+Below are the recommended settings for your `~/.gitconfig` file.
+It's widely inspired by [this great git config](https://gist.github.com/tdd/470582) by Christophe Porteneuve.
 
 {% gist julienbourdeau/be21f43006244234675e %}
 
 Like I said, this configuration will also be useful if you contribute to other open source projects.
 
-This config is widely inspired by [this one](https://gist.github.com/tdd/470582).
+
+## Some details
+
+### Aliases
+
+All git alias will add a new command (like bash aliases), so you can type `git br` to see all branches instead of
+`git branch -avv`.
+
+The few aliases we added are pretty standard but it's up to you to add it or not.
+
+### Fetch
+
+When you fetch data from the remote repository git will also fetch every submodules. With `recurseSubmodules=on-demand` git
+will only fetch submodule data if the parent project have a commit that update its reference.
+
+Considering PrestaShop has 50+ submodules, you will save a lot of time when you use `git pull`.
+
+### Merge
+
+When Git runs into a conflict because one of your teammate change the same bit of code both versions are displayed in the file
+and they are separated with makers like `<<<<<<<`. With `conflictStyle = diff3` you will see your version, their version
+and the common ancestors.
+
+I recommend to read [this short part of the documentation](http://git-scm.com/docs/git-merge#_how_conflicts_are_presented)
+for further information.
+
+### Pull
+
+This one is the most important. When you pull the remote branch your modifications we'll be moved on top so you don't have
+any merge commits. If you are the only one working on your branch, you'll be fine but as soon as you work on someone else's
+branch, this will keep your history cleaner.
+
+If you want more details about **the difference between _Pull_ and _Rebase_** you should
+[read this tutorial from Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
+
+The following schema explain the difference between merge and rebase
+(Credit: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/workflow-walkthrough)).
+
+![](/assets/images/2015/07/git-pull-merge-vs-rebase.svg)
+
+### Push
+
+Before Git 2.0, when the command `git push` would push every branch with a matching name to the remote. Now the default
+settings will only push the current branche to the remote branche with the matching name.
+
+We recommand using `default = upstream` so you will have to set the remote branch explicitly the first time you push.
+
+### Status
+
+| Setting | Description |
+|:-------:|-------------|
+| submoduleSummary=true | PrestaShop uses a lot of submodules, this setting will show you more details about changes in submodules. |
+| showUntrackedFiles=all | By default if you add a folder with subfolders and files your git status will only show the root folder as untracked. With `all` you will see each new files. |
 
 
+## That's it !
 
-# Your code
+If you have any questions or remarks, please let us know in the comments.
 
-## Code editor
-
-PrestaShop recently moved [from its own coding standards to PSR-2](http://build.prestashop.com/news/prestashop-moves-to-psr-2/)
-so you shoud tell your editor to do some work for you. **Even so, you must have a look at the
-[PSR-2 requirements](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) before you start coding.**
-
-Below, the few PSR-2 rules related to files and lines that your editor has to take care of.
-Have a look at your editor's settings, there must be an option for each of them.
-
-- **Code MUST use 4 spaces for indenting, not tabs.**
-- PHP code MUST use only UTF-8 without BOM.
-- All PHP files MUST use the Unix LF (linefeed) line ending.
-- All PHP files MUST end with a single blank line.
-- There MUST NOT be trailing whitespace at the end of non-blank lines.
-- There MUST NOT be a hard limit on line length; the soft limit MUST be 120
-  characters; lines SHOULD be 80 characters or less.
-
-
-### Config pour Sublime Text
-
-If you are a Sublime Text user you can use the following configuration file.
-
-{% gist julienbourdeau/db791f7424b59532363e %}
-
-An even more better version is available [here](https://gist.github.com/julienbourdeau/47cbd09d1a73bd6c4546).
-
-
-## PHP CodeSniffer
-
-Once it's done you might want to take a look at [_Php CodeSniffer_](https://github.com/squizlabs/PHP_CodeSniffer) and a plugin for your IDE.
-It will highlight your code if it does follow PSR-2 requirements. Personnaly, I'm not a big fan but it's probably worth the try.
-
-I prefer the _fixer approach_. Php CodeSniffer will identify the code that does follow the standards and
-[php-cs-fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) will fix it for you, so you don't have to edit your file by hand.
-
-We convert the whole code base with this tool (have a look at [this commit](https://github.com/PrestaShop/PrestaShop/commit/f0b3faebeb4e713b13dc7fda88d6d9acb28230fd)
-or [this one](https://github.com/PrestaShop/PrestaShop/commit/c98a9bbc38fbcb186e0a3339f7ae494fa2a06c32)).
-
-{% alert important %}
-When you fix it, please make sure you commit only fixes related to your code.
-{% endalert %}
-
-The best way will be to fix each file one by one with the following command line:
-
-{% highlight bash %}
-php php-cs-fixer.phar fix /path/to/modified/file --level=psr2
-{% endhighlight %}
-
-
-That's it ! Once you read [this](http://doc.prestashop.com/display/PS16/How+to+write+a+commit+message) and [this](http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop),
-you are now ready to contribute to PrestaShop.
-
+Also, the [official Git documentation](http://git-scm.com/doc) is very detailled and well written, you will always
+find the answer to your question there. _Just sayin'._

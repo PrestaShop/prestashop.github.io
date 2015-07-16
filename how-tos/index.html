@@ -18,7 +18,7 @@ layout: default
         <ul class="howtos-list">
         {% for post in site.categories[topic] %}
 
-          {% if post.published %}
+          {% unless post.published == false %}
           <li>
             <a href="{{ post.url }}">
 
@@ -29,7 +29,7 @@ layout: default
               {% endif %}
             </a>
           </li>
-          {% endif %}
+          {% endunless %}
 
         {% endfor %}
         </ul>

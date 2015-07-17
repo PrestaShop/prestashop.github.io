@@ -13,17 +13,17 @@ tags:
  - releases
  - development
 ---
- 
+
 We've had a lot of great feedback since the release of version 1.6.1.0 of PrestaShop. We are very happy to see that issues seem to be few, non-critical and fixable.
- 
+
 That being said, there are still issues here and there, and while the team is already at work on the next major version, we do not want to keep you waiting for fixes that might be important to you. Hence, we have decided to work on a patch version for PrestaShop 1.6.1.0 (as per [our new SemVer-like versioning scheme](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)).
- 
+
 Note: since this will be a patch version, it will only feature backwards-compatible bug fixes: no new feature, either major or minor, and most importantly no changes that are incompatible with the current API. Therefore, **version 1.6.1.1 will be a very safe and easy upgrade**.
- 
+
 #### What will it fix?
- 
+
 Here are some of the issues which are considered for inclusion in version 1.6.1.1. Some are already fixed, other still have to be worked on.
- 
+
 These fixes are merged or ready to be merged:
 
 * [3385](https://github.com/PrestaShop/PrestaShop/pull/3385): [-] BO : Fix #PSCSX-6087 "Maintenance Mode" disappears in Modules page
@@ -41,7 +41,7 @@ These fixes are merged or ready to be merged:
 * [3410](https://github.com/PrestaShop/PrestaShop/pull/3410): [*] BO : Fix #PSCSX-6134, redirect_after on adminCustomers
 * [3417](https://github.com/PrestaShop/PrestaShop/pull/3417): [-] Project: getBrightness() with a short $hex (e.g.: #FFF)
 * [3430](https://github.com/PrestaShop/PrestaShop/pull/3430): [-] BO : Fix #PSCSX-5844, #PSCSX-6138, CustomerMessage->message length && CustomerMessage->message is not valid
-* [3357](https://github.com/PrestaShop/PrestaShop/pull/3357): [-] FO : Fix wrong statement close in /product.tpl 
+* [3357](https://github.com/PrestaShop/PrestaShop/pull/3357): [-] FO : Fix wrong statement close in /product.tpl
 * [3432](https://github.com/PrestaShop/PrestaShop/pull/3432): [-] BO : Fix #PSCSX-6234, could not update category position to first position
 * [3403](https://github.com/PrestaShop/PrestaShop/pull/3403): [-] BO : Fix bug #PSCSX-6154 - Customer filter in orders
 * [3431](https://github.com/PrestaShop/PrestaShop/pull/3431): [-] CORE : Fix bug #PSCSX-6142 - wrong default cover id in webservice
@@ -57,13 +57,13 @@ These will be worked on, among others:
 * [PSCSX-6246](http://forge.prestashop.com/browse/PSCSX-6246), [3435](https://github.com/PrestaShop/PrestaShop/pull/3435): Cannot filter Carts on id_order: Unknown column 'status' in 'where clause'
 
 Tell us what you think! Do you feel those fixes are the best way to go? Do you want to tackle a fix yourself and help improve PrestaShop for the whole community? Let us know!
- 
+
 #### When will it be released?
- 
+
 We are well aware that summer is a tough time for merchants to make an upgrade, what with holidays and such.
- 
+
 Since there are no critical issue in the feedback we received, we decided to leave you some time before having to upgrade again: **version 1.6.1.1 is therefore slated for a late August release**. This will give us some time to work on it, maybe adding more fixes, and most importantly to get your feedback about it!
- 
+
 So please, do help us test the fixes to the issues which concern you! We need your feedback, in order to make this version stronger than ever!
- 
+
 Thank you!

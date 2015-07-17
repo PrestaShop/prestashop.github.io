@@ -6,7 +6,6 @@ date: 2015-07-17 18:29:47
 author: alexeven
 icon: fa-globe
 tags: [translation, i18n, l10n]
-published: false
 ---
 
 
@@ -18,11 +17,13 @@ Let’s welcome **sagorretax** to the team!
 ![Yep, that’s 2,000 members!](/assets/images/2015/07/Crowdin_2000.png)
 
 PrestaShop has been using Crowdin for over a year now, here are a few statistic to show how far we’ve gone thanks to YOU!
+
 * 68 active languages
 * 919 active translators
 * 10,286,373 words translated
 
 Languages with the more translators:
+
 * Russian - 60 translators
 * Spanish - 44 translators
 * Persian - 42 translators

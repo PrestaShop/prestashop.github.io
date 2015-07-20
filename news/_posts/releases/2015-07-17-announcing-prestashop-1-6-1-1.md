@@ -20,7 +20,8 @@ That being said, there are still issues here and there, and while the team is al
 
 Note: since this will be a patch version, it will only feature backwards-compatible bug fixes: no new feature, either major or minor, and most importantly no changes that are incompatible with the current API. Therefore, **version 1.6.1.1 will be a very safe and easy upgrade from version 1.6.1.0** -- we do advise you to upgrade to 1.6.1.0 (major version) in the meantime, in order to easily upgrade to 1.6.1.1 (patch version) once it is released.
 
-{% alert note Quick summary of this post %}
+{% alert note 0 %}
+#### Quick summary of this post
 PrestaShop 1.6.1.0 is a very strong release, but there are a few bugs that we want to fix before the next version.
 
 The release date is **late August** for now. There will be a testing phase (beta/RC), so that the PrestaShop Community can help us make sure everything is correctly fixed.

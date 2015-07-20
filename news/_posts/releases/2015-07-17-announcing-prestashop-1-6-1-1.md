@@ -18,7 +18,13 @@ We've had a lot of great feedback since the release of version 1.6.1.0 of Presta
 
 That being said, there are still issues here and there, and while the team is already at work on the next major version, we do not want to keep you waiting for fixes that might be important to you. Hence, we have decided to work on a patch version for PrestaShop 1.6.1.0 (as per [our new SemVer-like versioning scheme](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)).
 
-Note: since this will be a patch version, it will only feature backwards-compatible bug fixes: no new feature, either major or minor, and most importantly no changes that are incompatible with the current API. Therefore, **version 1.6.1.1 will be a very safe and easy upgrade**.
+Note: since this will be a patch version, it will only feature backwards-compatible bug fixes: no new feature, either major or minor, and most importantly no changes that are incompatible with the current API. Therefore, **version 1.6.1.1 will be a very safe and easy upgrade from version 1.6.1.1** -- we do advise you to upgrade to 1.6.1.0 (major version) in the meantime, in order to easily upgrade to 1.6.1.1 (patch version) once it is released.
+
+{% alert Quick summary %}
+PrestaShop 1.6.1.0 is a very strong release, but there are a few bugs that we want to fix before the next version.
+
+The release date is **late August** for now. There will be a testing phase (beta/RC), so that the PrestaShop Community can help us make sure everything is correctly fixed.
+{% endalert %}
 
 #### What will it fix?
 
@@ -62,7 +68,7 @@ Tell us what you think! Do you feel those fixes are the best way to go? Do you w
 
 We are well aware that summer is a tough time for merchants to make an upgrade, what with holidays and such.
 
-Since there are no critical issue in the feedback we received, we decided to leave you some time before having to upgrade again: **version 1.6.1.1 is therefore slated for a late August release**. This will give us some time to work on it, maybe adding more fixes, and most importantly to get your feedback about it!
+Since there are no critical issue in the feedback we received, we decided to leave you some time before having to upgrade again: **version 1.6.1.1 is therefore slated for a late August release**. This will give us some time to work on it, maybe adding more fixes, and most importantly to get your feedback about it: we will make sure to plan for a couple of weeks for the testing phase, where you can help us make sure everything works fine!
 
 So please, do help us test the fixes to the issues which concern you! We need your feedback, in order to make this version stronger than ever!
 

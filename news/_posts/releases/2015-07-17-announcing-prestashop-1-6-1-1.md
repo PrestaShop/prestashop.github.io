@@ -18,7 +18,7 @@ We've had a lot of great feedback since the release of version 1.6.1.0 of Presta
 
 That being said, there are still issues here and there, and while the team is already at work on the next major version, we do not want to keep you waiting for fixes that might be important to you. Hence, we have decided to work on a patch version for PrestaShop 1.6.1.0 (as per [our new SemVer-like versioning scheme](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)).
 
-Note: since this will be a patch version, it will only feature backwards-compatible bug fixes: no new feature, either major or minor, and most importantly no changes that are incompatible with the current API. Therefore, **version 1.6.1.1 will be a very safe and easy upgrade from version 1.6.1.1** -- we do advise you to upgrade to 1.6.1.0 (major version) in the meantime, in order to easily upgrade to 1.6.1.1 (patch version) once it is released.
+Note: since this will be a patch version, it will only feature backwards-compatible bug fixes: no new feature, either major or minor, and most importantly no changes that are incompatible with the current API. Therefore, **version 1.6.1.1 will be a very safe and easy upgrade from version 1.6.1.0** -- we do advise you to upgrade to 1.6.1.0 (major version) in the meantime, in order to easily upgrade to 1.6.1.1 (patch version) once it is released.
 
 {% alert Quick summary %}
 PrestaShop 1.6.1.0 is a very strong release, but there are a few bugs that we want to fix before the next version.

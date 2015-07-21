@@ -1,11 +1,32 @@
 ---
-layout: page
-title: Tools
+layout: default
 permalink: /tools/
 ---
 
-We're building some tools to help you in your daily life as a user of PrestaShop
+<div class="">
 
-{% for tool in site.categories.tools %}
-    {{ tool.layout }}
-{% endfor %}
+  <h1 class="page-heading">Tools</h1>
+
+  <p class="page-subtitle">Some tools we developed to make your life easier.</p>
+
+
+  <ul class="howtos-list">
+    {% for tool in site.categories.tools %}
+
+      {% unless tool.published == false %}
+      <li>
+        <a href="{{ tool.url }}">
+
+          <h4>&rarr; {{ tool.title }}</h4>
+
+          {% if tool.subtitle %}
+            <pan class="subtitle">{{ tool.subtitle }}</span>
+          {% endif %}
+        </a>
+      </li>
+      {% endunless %}
+
+    {% endfor %}
+  </ul>
+
+</div>

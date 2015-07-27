@@ -9,7 +9,7 @@ icon: fa-lock
 
 Even if your back office is already secured by PrestaShop's login, you might want to add another layer of security from your webserver itself. This is done using the `htaccess.txt` and `htpasswd.txt` files. After you've uploaded them  at the root of the folder to secure (in our case, your back office folder), the server will ask you for a username and a password before you can even access your PrestaShop back office login page.
 
-1. Find out what's your website root path. Ask you host if necessary.
+1. Find out what's your website root path. Ask your host if necessary.
 1. Generate your htaccess file with the tool on this page.
 1. Rename it from `htaccess.txt` to `.htaccess`.
 1. Generate your htpasswd file with the tool on this page.

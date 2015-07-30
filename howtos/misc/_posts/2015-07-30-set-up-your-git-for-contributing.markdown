@@ -2,7 +2,7 @@
 layout: post
 title:  "Set up your Git for contributing"
 subtitle: "Tweak your git configuration to work better"
-date:   2015-07-09 11:21:00
+date:   2015-07-30 11:21:00
 author: julienbourdeau
 icon: fa-laptop
 tags: [git, env, github]
@@ -25,7 +25,7 @@ git configuration is well set, so you don't run into issues (like having commits
 
 
 Below are the recommended settings for your `~/.gitconfig` file.
-It's widely inspired by [this great git config](https://gist.github.com/tdd/470582) by Christophe Porteneuve.
+It's widely inspired by [this great git config](https://gist.github.com/tdd/470582) by [Christophe Porteneuve](https://twitter.com/porteneuve).
 
 {% gist julienbourdeau/be21f43006244234675e %}
 
@@ -50,7 +50,7 @@ Considering PrestaShop has 50+ submodules, you will save a lot of time when you 
 
 ### Merge
 
-When Git runs into a conflict because one of your teammate changed the same bit of code, both versions are displayed in the file and they are separated with makers like `<<<<<<<`. 
+When Git runs into a conflict because one of your teammate changed the same bit of code, both versions are displayed in the file and they are separated with makers like `<<<<<<<`.
 With `conflictStyle = diff3` you will see your version, their version, and the common ancestors.
 
 I recommend to read [this short part of the documentation](http://git-scm.com/docs/git-merge#_how_conflicts_are_presented)
@@ -58,7 +58,10 @@ for further information.
 
 ### Pull
 
-This one is the most important part. When you pull the remote branch, your modifications we'll be moved on top so you don't have any merge commits. If you are the only one working on your branch, you'll be fine but as soon as you work on someone else's branch, this will keep your history cleaner.
+This one is the most important part. There is two ways to pull, you can either **_rebase_** or **_merge_**. As soon as you work with someone else on one branch,
+we perfer the rebase stategy, it will keep your history cleaner (one straight line).
+
+When you pull the remote branch, your changes we'll be moved on top so you don't have any merge commits.
 
 If you want more details about **the difference between _Pull_ and _Rebase_** you should
 [read this tutorial from Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
@@ -66,14 +69,14 @@ If you want more details about **the difference between _Pull_ and _Rebase_** yo
 The following schema explains the difference between merge and rebase
 (Credit: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/workflow-walkthrough)).
 
-![](/assets/images/2015/07/git-pull-merge-vs-rebase.svg)
+![](/assets/images/2015/07/git-pull-merge-vs-rebase.png)
 
 ### Push
 
 Before Git 2.0, the command `git push` would push every branch with a matching name to the remote. Now the default
 settings will only push the current branch to the remote branch with the matching name.
 
-We recommand using `default = upstream` so you will have to set the remote branch explicitly the first time you push.
+We recommend using `default = upstream` so you will have to set the remote branch explicitly the first time you push.
 
 ### Status
 

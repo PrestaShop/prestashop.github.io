@@ -20,7 +20,7 @@ We'll be talking about working with the PrestaShop project, but what you'll read
 
 ## The Git configuration
 
-PrestaShop is versionned with Git and hosted in GitHub. If you intend to make a Pull Request, you should make sure your Git configuration is well set, so you don't run into issues (like having commits that are not yours in your PR).
+PrestaShop is versioned with Git and hosted in GitHub. If you intend to make a Pull Request, you should make sure your Git configuration is well set, so you don't run into issues (like having commits that are not yours in your PR).
 
 Below are the recommended settings for your `~/.gitconfig` file.
 It's widely inspired by [this great git config](https://gist.github.com/tdd/470582) by [Christophe Porteneuve](https://twitter.com/porteneuve).
@@ -56,7 +56,7 @@ for further information.
 ### Pull
 
 This one is the most important part. There are two ways to pull: you can either **_rebase_** or **_merge_**. As soon as you work with someone else on one branch,
-we prefer that you use the rebase stategy, as it will keep your history cleaner (showing one straight line).
+we prefer that you use the rebase strategy, as it will keep your history cleaner (showing one straight line).
 
 When you pull the remote branch, your changes will be moved on top so that you don't have any merge commits.
 
@@ -87,5 +87,5 @@ We recommend using the `default=upstream` setting, which makes that you have to 
 
 If you have any questions or remarks, please let us know in the comments.
 
-Also, the [official Git documentation](http://git-scm.com/doc) is very detailled and well written, you will always
+Also, the [official Git documentation](http://git-scm.com/doc) is very detailed and well written, you will always
 find the answer to your question there. _Just sayin'._

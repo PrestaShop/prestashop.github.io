@@ -43,4 +43,14 @@ $(document).ready(function() {
     download('.htpasswd', getHtpasswdContent());
   })
 
+
+  if (typeof SimpleJekyllSearch != 'undefined') {
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json',
+      searchResultTemplate: '<a class="list-group-item" href="{url}">{title}</a>',
+    })
+  }
+
 });

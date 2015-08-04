@@ -19,9 +19,10 @@ We are now ready to start the testing phase with our Community! We want to give 
 
 We need you to make sure that this release is as bug free as possible. We need everyone to participate: merchants, developers, designers, translators, ... even customers! Test your modules, test your themes, make a test-upgrade on a copy of a real shop, etc.
 
-Remember that 1.6.1.1 RC1 is a test version, and is therefore not yet deemed suited for production use. Hence, do not upgrade your store just yet! Install the RC1 on your server (on as many server configurations as possible), or upgrade from a clone of your real store. 
+Remember that 1.6.1.1 RC1 is a test version, and is therefore not yet deemed suited for production use. Hence, do not upgrade your store just yet! Install the RC1 on your server (on as many server configurations as possible), or upgrade from a clone of your real store.
 
-[Download and test PrestaShop 1.6.1.1 RC1 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}{: .text-center}
+[Download and test PrestaShop 1.6.1.1 RC1 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
+{: .text-center}
 
 Remember: if you have any feedback to give, [create a ticket on the Forge](http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop)!
 
@@ -32,7 +33,6 @@ Here is the full list of [the 145 pull requests that were merged into version 1.
  * [3383](https://github.com/PrestaShop/PrestaShop/pull/3383): [-] CORE: Fix translation issue with html entities
  * [3384](https://github.com/PrestaShop/PrestaShop/pull/3384): [-] CORE: Fix PHP 5.2 issue on FileSystem Core class
  * [3385](https://github.com/PrestaShop/PrestaShop/pull/3385): [-] BO : Fix #PSCSX-6087 "Maintenance Mode" disappears in Modules page
- * [3387](https://github.com/PrestaShop/PrestaShop/pull/3387): [-] BO : Media::addJsDefL should be called in admin controllers with addslashes and no htmlentities
  * [3388](https://github.com/PrestaShop/PrestaShop/pull/3388): [-] BO : Fix bug #NM-513 - JavaScript error on modules using AdminTab
  * [3389](https://github.com/PrestaShop/PrestaShop/pull/3389): // Fix module installation
  * [3390](https://github.com/PrestaShop/PrestaShop/pull/3390): [-] BO : Fix #PSCSX-6086, wrong version in header
@@ -47,7 +47,7 @@ Here is the full list of [the 145 pull requests that were merged into version 1.
  * [3401](https://github.com/PrestaShop/PrestaShop/pull/3401): // small change #PSCSX-5765
  * [3402](https://github.com/PrestaShop/PrestaShop/pull/3402): [*] FO Add if condition to displayBanner hook
  * [3403](https://github.com/PrestaShop/PrestaShop/pull/3403): [-] BO : Fix bug #PSCSX-6154 - Customer filter in orders
- * [3404](https://github.com/PrestaShop/PrestaShop/pull/3404): [-] BO : FIX #PSCSX-6158, notice in modules list 
+ * [3404](https://github.com/PrestaShop/PrestaShop/pull/3404): [-] BO : FIX #PSCSX-6158, notice in modules list
  * [3405](https://github.com/PrestaShop/PrestaShop/pull/3405): [*] MO Edit comment for better understanding
  * [3407](https://github.com/PrestaShop/PrestaShop/pull/3407): [-] FO : fixed wrong Canadian postcode regexp validation
  * [3408](https://github.com/PrestaShop/PrestaShop/pull/3408): [*] BO : fix #PSCSX-6096 untranslate string in orders pdf
@@ -174,9 +174,9 @@ Here is the full list of [the 145 pull requests that were merged into version 1.
  * [3603](https://github.com/PrestaShop/PrestaShop/pull/3603): // [-]: Pscsx 4759 : fix Unit test PHP array() syntax
  * [3601](https://github.com/PrestaShop/PrestaShop/pull/3601): Hotfix readme
  * [3603](https://github.com/PrestaShop/PrestaShop/pull/3603): [-] CORE: Warning on getAvailableCarrierList
- 
+
 The [PrestaShop 1.6.1.1 RC1 changelog](https://www.prestashop.com/en/developers-versions/changelog/1.6.1.1-rc1) is also available.
- 
+
 This release was made possible by the hard work of the PrestaShop Core Team, with the essential help of the following contributors: Alphacom IT Solutions, Bruno Desprez, Conner Burnett, David-Julian BUCH, Eric  Rouvier, Gytis Škema, joseantgv, Julie Vernois, kermes, Kijam Lopez, manuelbcd Mikael Blotin, oleacorner, Pan Ploenes, PrestaEdit, prestamodule, and Quentin MONTANT. Thank gals and guys!
 
 Now, go forth and test! Thank you!

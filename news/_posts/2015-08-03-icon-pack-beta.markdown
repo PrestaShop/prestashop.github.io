@@ -11,7 +11,9 @@ tags: [news]
 
 As part of PrestaShop's product redesign, we decided to replace Font Awesome and start using our own icon pack. We're sharing here the very first version of this new icon set, and we'll keep you updated when it evolves.
 
+<br/>
 ![Icon Pack Beta](/assets/images/2015/08/icon_beta_blog.png)
+<br/>
 
 ### Why these icons?
 We're busy improving the global design experience in PrestaShop. It means giving a new identity to the software, and it starts with our own and unique icon set.
@@ -19,7 +21,7 @@ Besides, we felt the world needed a Daft-Punk icon...
 
 ### How does it work?
 
-+We embed this pack in a webfont so you can use it on your PrestaShop themes, modules and even your own website.
+We embed this pack in a webfont so you can use it on your PrestaShop themes, modules and even your own website.
 
 As an open-source project, we believe in improving product design together. This PrestaShop icon-set is a little contribution to make things look better.
 

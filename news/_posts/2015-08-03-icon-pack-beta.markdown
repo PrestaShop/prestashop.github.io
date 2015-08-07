@@ -42,3 +42,5 @@ This icon pack is in Beta version. We're still busy improving it.
 We'll add more icons to it, as well as change some names or shapes: it's a work in progress!
 
 So don't hesitate to give your feedback on the git repository (or here, for that matter). We'd love to hear what you think about it!
+
+![Preston Icon](/assets/images/2015/08/preston.png)

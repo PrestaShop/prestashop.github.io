@@ -25,7 +25,7 @@ We embed this pack in a webfont so you can use it on your PrestaShop themes, mod
 
 As an open-source project, we believe in improving product design together. This PrestaShop icon-set is a little contribution to make things look better.
 
-We're releasing it set under the [CC BY-NC 4.0 license](http://creativecommons.org/licenses/by-nc/4.0/). You can do pretty much what you want with it, except reselling it!
+We're releasing this set under the [CC BY-NC 4.0 license](http://creativecommons.org/licenses/by-nc/4.0/). You can do pretty much what you want with it, except reselling it!
 
 So feel free to use this set, play with it, customize it. Show us what you did with it!
 We'd be also really pleased to be credited in your about page, or wherever you use the pack. Thanks in advance! :)

@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop Official Icon Pack - Beta"
 subtitle: "We're cooking some fresh icons for you!"
-date:   2015-08-03 11:12:00
+date:   2015-08-07 15:12:00
 author: agriveau
 icon: fa-star
 tags: [news]
@@ -34,7 +34,7 @@ We'd be also really pleased to be credited in your about page, or wherever you u
 
 The PrestaShop icon pack is available in its own [git repository](https://github.com/PrestaShop/icon-pack).
 
-You can also view it here: http://build.prestashop.com/icon-pack/
+You can also view it here: [http://build.prestashop.com/icon-pack/](http://build.prestashop.com/icon-pack/)
 
 ### What if I'd love to see an Ewok icon there?
 

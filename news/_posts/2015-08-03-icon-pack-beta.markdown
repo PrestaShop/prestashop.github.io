@@ -34,7 +34,17 @@ We'd be also really pleased to be credited in your about page, or wherever you u
 
 The PrestaShop icon pack is available in its own [git repository](https://github.com/PrestaShop/icon-pack).
 
-You can also view it here: http://build.prestashop.com/icon-pack/
+You can also view it here with the full documentation : [http://build.prestashop.com/icon-pack/](http://build.prestashop.com/icon-pack/)
+
+#### How to use it
+
+Since the icon pack is a font, you only need to include the our CSS file and the `fonts/` folder.
+
+1. [Download](https://github.com/PrestaShop/icon-pack/archive/master.zip) the fonts
+1. Copy the entire directory content into your project.
+1. In the <head> of your html, reference the location to ps-icon-pack.css.
+`<link rel="stylesheet" href="path/to/project/ps-icon-pack.min.css">`
+1. Check out our [documentation](http://build.prestashop.com/icon-pack/documentation.html) to find the right icon!
 
 ### What if I'd love to see an Ewok icon there?
 

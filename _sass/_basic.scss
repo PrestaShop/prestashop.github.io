@@ -12,11 +12,11 @@ a:not(.btn):active,
 a:not(.btn):focus {
     color: $brand-color-3;
     text-decoration: none !important;
-
-    &:hover {
-        color: $brand-color-3;
-        text-decoration: none !important;
-    }
 }
 
- 
+a:not(.btn):hover {
+    color: $brand-color-3 !important;
+    text-decoration: none !important;
+}
+
+

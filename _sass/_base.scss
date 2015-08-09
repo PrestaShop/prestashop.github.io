@@ -68,6 +68,10 @@ body {
 .text-center {
     text-align: center;
 }
+.hint {
+    color: $grey-color;
+    font-style: italic;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -371,7 +375,10 @@ li code {
  */
 
 .site-header {
-	padding: 110px 0 100px 0 !important;
+	padding: 110px 0 100px 0;
+    &.has-search-form {
+        padding-bottom: 0;
+    }
 
     a, a:visited {
         color: $text-color;
@@ -390,6 +397,13 @@ li code {
         border: none;
         padding: 0;
 
+    }
+}
+
+#search-container {
+    margin: 50px 0;
+    #results-container {
+        margin-bottom: 8px;
     }
 }
 

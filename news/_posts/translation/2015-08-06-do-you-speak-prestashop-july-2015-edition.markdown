@@ -21,14 +21,14 @@ We previously had two files on Crowdin, with the last stable version released (e
 
 From now on, we still have two files, but the way it works is a bit different:
 
-* The 'main' file will be called '**next-version**'.
+* The 'main' file will be called '**next-version**'.<br/>
 It includes the latest strings on which we've been working. **This is where strings must be translated**.
 
-* The 'release' file
+* The '**release**' file, called after the latest release.<br/>
 When we're getting close to releasing a new version, we will create a new file (ex 1.6.1.1), which will inherit translations from the 'next-version' file. The purpose of this 'release' file is mainly to allow fixes on strings once a version is released.
 Any translation done or edited in this file should be reported in the 'next-version' file, otherwise it would be lost for future versions (as it stays in this file and is not shared with the 'next-version' file).
 
-Today we have the '1.6.1.0' file, as it's the latest release. Remember, anything translated there will not be propagated to the main project, which is 'next-version'.
+Today we have the '1.6.1.0' file, as it's the latest release. Remember, anything translated there will not be propagated to the main project, which is 'next-version'.<br/>
 Should you have any question regarding this, please don't hesitate to comment or contact me.
 
 Now, let's get back to the congratulations for your contributions in July:
@@ -146,10 +146,10 @@ As you might have heard, we're launching an [Ambassadors program](http://ambassa
 
 Here are the PrestaShop Ambassadors you can find on Crowdin:
 
-Spanish, Argentina: shacker (Lucas Vitale) and ariels3 (Ariel Spampinato)
-Spanish, Colombia: jorgevrgs (Jorge Vargas)
-Spanish, Peu: carlosloyola14 (Carlos Loyola)
-French, Belgium: PrestaEdit (Jonathan Danse)
+* Spanish, Argentina: **shacker** (Lucas Vitale) and **ariels3** (Ariel Spampinato)
+* Spanish, Colombia: **jorgevrgs** (Jorge Vargas)
+* Spanish, Peru: **carlosloyola14** (Carlos Loyola)
+* French, Belgium: **PrestaEdit** (Jonathan Danse)
 
 You can see other ambassadors for your country [there](http://ambassadors.prestashop.com/ambassadors?page=2).
 

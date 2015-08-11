@@ -11,7 +11,7 @@ tags: [translation, i18n, l10n]
 
 Here is the new report to inform you of what has been going on [PrestaShop translation project on Crowdin](https://crowdin.com/project/prestashop-official) this July 2015.
 
-All the figures and statistics are now based on the *1.6.1.0 project*, released early June, which is the last stable version of PrestaShop. Even thought previous reports were still about the 1.6.0.14 version, the figures for this month are a comparison with the state of 1.6.1.0 in June (as the project was already available in Crowdin).
+All the figures and statistics are now based on the **1.6.1.0 project**, released early June, which is the last stable version of PrestaShop. Even thought previous reports were still about the 1.6.0.14 version, the figures for this month are a comparison with the state of 1.6.1.0 in June (as the project was already available in Crowdin).
 
 ## New Crowdin workflow
 
@@ -19,12 +19,16 @@ Before anything, you must be aware we've changing the workflow on Crowdin, to re
 
 We previously had two files on Crowdin, with the last stable version released (ex 1.6.0.14), and the next one to come (1.6.1.0). Translations were propagated from the oldest version to the newest (1.6.0.14 > 1.6.1.0).
 
-From now on, we still have two files, but the way it works is a bit different. The 'main' file will be called '*next-version*' and it will include the latest strings on which we've been working. *This is where strings must be translated in the first place*.
+From now on, we still have two files, but the way it works is a bit different:
 
-When we're getting close to releasing a new version, we will create a new file (ex 1.6.1.1), which will inherit translations from the 'next-version' file. Any translation done or edited in this file should be reported in the 'next-version' file, otherwise it would be lost for future versions (as it stays in this file and is not shared with the 'next-version' file). The purpose of this 'release' file is mainly to allow fixes on strings once a version is released.
-Today we have the '1.6.1.0' file, as it's the latest release. Remember, anything translated there will not be propagated to the main project, which is 'next-version'
+* The 'main' file will be called '**next-version**'.
+It includes the latest strings on which we've been working. **This is where strings must be translated**.
 
-It is thus important everyday translation should be done on the 'next-vesion' file. Thanks for your understanding!
+* The 'release' file
+When we're getting close to releasing a new version, we will create a new file (ex 1.6.1.1), which will inherit translations from the 'next-version' file. The purpose of this 'release' file is mainly to allow fixes on strings once a version is released.
+Any translation done or edited in this file should be reported in the 'next-version' file, otherwise it would be lost for future versions (as it stays in this file and is not shared with the 'next-version' file).
+
+Today we have the '1.6.1.0' file, as it's the latest release. Remember, anything translated there will not be propagated to the main project, which is 'next-version'.
 Should you have any question regarding this, please don't hesitate to comment or contact me.
 
 Now, let's get back to the congratulations for your contributions in July:
@@ -111,16 +115,16 @@ In comparison with the previous month, these languages had the best progress in 
 
 Congratulations to all our contributors for the hard work!!
 
-We've imported some translations from external contributions. Georgian has now translations for the front-office kindly sent by XXX. Thank you!
+We've imported some translations from external contributions. Georgian has now translations for the front-office kindly sent by Levan Beruchashvili. Thank you!
 
 We also have new active languages: thanks to translators who joined us to translate to Estonian, Azerbaïjani, Macedonian, Arabic. Welcome to the team!
 
 
 ## Languages that need (more) proofreaders
 
-As you might know, a translated string will not be available in PrestaShop as long as it is not validated. For this reason, it’s important we should keep a good level of validated strings vs. translated string, to make sure everyone benefits from the latest translations!
+As you probably know, a translated string will not be available in PrestaShop as long as it is not validated. For this reason, it’s important we should keep a good level of validated strings vs. translated strings, to make sure everyone benefits from the latest translations!
 
-There's been a lot of proofreading going on in July, it's great! Unfortunately some languages are still a bit behind:
+There's been a lot of proofreading going on in July (+49% compare to June), it's great! Unfortunately some languages are still a bit behind:
 
 * Turkish (93% translated vs 0% validated)
 * Slovak (77% vs 24%)

@@ -2,7 +2,7 @@
 layout: post
 title:  "Do you speak PrestaShop? – July 2015 edition"
 subtitle: "The awesome work of our multilingual community"
-date:   2015-08-10 18:29:47
+date:   2015-08-11 11:03:47
 author: alexeven
 icon: fa-globe
 tags: [translation, i18n, l10n]
@@ -111,7 +111,7 @@ In comparison with the previous month, these languages had the best progress in 
 * Thai (+7% to reach 32% translated)
 * Slovak (+6% to reach 77% translated)
 
-![July 2015 best translation progress](/assets/images/2015/07/Build_Crowdin_progress_july15.png)
+![July 2015 best translation progress](/assets/images/2015/08/Build_Crowdin_progress_july15.png)
 
 Congratulations to all our contributors for the hard work!!
 
@@ -133,7 +133,7 @@ There's been a lot of proofreading going on in July (+49% compare to June), it's
 * Vietnamese (41% vs 16%)
 * Hungarian (91% vs 76%)
 
-![July 2015 best translation progress](/assets/images/2015/07/Build_Crowdin_proofreading_july15.png)
+![July 2015 best translation progress](/assets/images/2015/08/Build_Crowdin_proofreading_july15.png)
 
 Turkish, Ukrainian and Hungarian have a high level of completion. We need your help so that these languages can be available to PrestaShop merchants! As long as it is not proofread, it won't be available in PrestaShop. Let's do something about it!
 

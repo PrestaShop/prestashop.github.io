@@ -17,7 +17,7 @@ All the figures and statistics are now based on the **1.6.1.0 project**, release
 
 Before anything, you must be aware we've changing the workflow on Crowdin, to reflect our new semantic versioning scheme, and branch organization.
 
-We previously had two files on Crowdin, with the last stable version released (ex 1.6.0.14), and the next one to come (1.6.1.0). Translations were propagated from the oldest version to the newest (1.6.0.14 > 1.6.1.0).
+We previously had two files on Crowdin, with the last stable version released (1.6.0.14), and the next one to come (1.6.1.0). Translations were propagated from the oldest version to the newest (1.6.0.14 > 1.6.1.0).
 
 From now on, we still have two files, but the way it works is a bit different:
 
@@ -25,7 +25,7 @@ From now on, we still have two files, but the way it works is a bit different:
 It includes the latest strings on which we've been working. **This is where strings must be translated**.
 
 * The '**release**' file, called after the latest release.<br/>
-When we're getting close to releasing a new version, we will create a new file (ex 1.6.1.1), which will inherit translations from the 'next-version' file. The purpose of this 'release' file is mainly to allow fixes on strings once a version is released.
+When we're getting close to releasing a new version, we will create a new file (e.g. 1.6.1.1), which will inherit translations from the 'next-version' file. The purpose of this 'release' file is mainly to allow fixes on strings once a version is released.
 Any translation done or edited in this file should be reported in the 'next-version' file, otherwise it would be lost for future versions (as it stays in this file and is not shared with the 'next-version' file).
 
 Today we have the '1.6.1.0' file, as it's the latest release. Remember, anything translated there will not be propagated to the main project, which is 'next-version'.<br/>

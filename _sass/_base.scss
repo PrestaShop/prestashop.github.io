@@ -68,6 +68,10 @@ body {
 .text-center {
     text-align: center;
 }
+.hint {
+    color: $grey-color;
+    font-style: italic;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -158,6 +162,9 @@ li {
             font-size: 0.9em;
         }
     }
+}
+a.list-group-item {
+    display: block !important;
 }
 
 ul.post-list {
@@ -371,25 +378,34 @@ li code {
  */
 
 .site-header {
-	padding: 110px 0 100px 0 !important;
-
+    padding: 110px 0 100px 0;
+    &.has-search-form {
+        padding-bottom: 0;
+    }
     a, a:visited {
         color: $text-color;
         font-size: 0.8em;
         font-weight: 600;
         display: inline-block;
-		border: 1px solid #ddd;
-		padding: 5px 14px !important;
-		margin-right: 5px;
+        border: 1px solid #ddd;
+        padding: 5px 14px !important;
+        margin-right: 5px;
     }
     img {
-	    margin-top: -30px;
+        margin-top: -30px;
     }
     .site-title {
         font-size: 1.6em;
         border: none;
         padding: 0;
 
+    }
+}
+
+#search-container {
+    margin: 50px 0;
+    #results-container {
+        margin-bottom: 8px;
     }
 }
 

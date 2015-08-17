@@ -1,4 +1,4 @@
-<header class="site-header">
+<header class="site-header {% if page.show_search %}has-search-form{% endif %}">
 
   <div class="container">
     <div class="row">
@@ -24,6 +24,22 @@
       </div>
 
     </div>
+
+    {% if page.show_search %}
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-md-offset-3">
+        <div id="search-container">
+          <input type="text" id="search-input" class="form-control" placeholder="search...">
+          <div id="results-container" class="list-group">
+          </div>
+          <small class="hint" style="display: none;">Use the tab key to nagivate in the results.</small>
+        </div>
+      </div>
+
+    </div>
+    {% endif %}
+
   </div>
 
 </header>

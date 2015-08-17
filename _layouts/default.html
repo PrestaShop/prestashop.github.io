@@ -32,6 +32,9 @@
 
     <script type="text/javascript" src="{{ '/js/vendors/jquery-2.1.4.min.js' | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ '/js/vendors/md5.js' | prepend: site.baseurl }}"></script>
+    {% if page.show_search %}
+    <script type="text/javascript" src="{{ '/js/vendors/jekyll-search.js' | prepend: site.baseurl }}"></script>
+    {% endif %}
     <script type="text/javascript" src="{{ '/js/app.js' | prepend: site.baseurl }}"></script>
 
   </body>

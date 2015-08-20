@@ -2,7 +2,7 @@
 layout: post
 title:  "Release of PrestaShop 1.6.1.1 "
 subtitle: "Maintenance version of the 1.6.1.x branch"
-date:   2015-08-11 15:45:41
+date:   2015-08-20 12:00:41
 author: xavierborderie
 icon: fa-leaf
 tags:
@@ -51,10 +51,10 @@ This release had 32 contributors, both from PrestaShop and from the Community at
      2	David-Julian Buch
      5	Éric Rouvier
     22	François Gaillard
-		82	Grégory Roussac
+    82	Grégory Roussac
      5	Gytis Škema
      6	Jocelyn Fournier
-		20	Julien Bourdeau
+    20	Julien Bourdeau
     12	Julien Martin
    174	Jérôme Nadaud
     14	Jonathan Danse
@@ -74,10 +74,10 @@ This release had 32 contributors, both from PrestaShop and from the Community at
     30	Thibaud Chauviere
      2	Thomas Nabord
      8	Vincent Hadjedj
-		33	Xavier Gouley
+    33	Xavier Gouley
 {% endhighlight %}
 
 Let's go, [upgrade your store(s)](http://doc.prestashop.com/display/PS16/Updating+PrestaShop)! Upgrading from 1.6.1.0 is completely safe, upgrades from a vanilla 1.6.0.x version should work just as well, and those upgrading from version 1.5, 1.4 or even 1.3 should take their time and pay attention to their modules, their theme and their custom modifications!
 
-[Download 1.6.1.1 now!]https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download 1.6.1.1 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}

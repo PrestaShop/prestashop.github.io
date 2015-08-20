@@ -33,7 +33,7 @@ Here are a few highlights:
 * YandexBot was added to the default list of webspiders.
 * ...and many more!
 
-The [PrestaShop 1.6.1.1 changelog](https://www.prestashop.com/en/developers-versions/changelog/1.6.1.1-stable) is available, as well as its release notes (coming soon!) (based on the 1.6.1.0 ones).
+The [PrestaShop 1.6.1.1 changelog](https://www.prestashop.com/en/developers-versions/changelog/1.6.1.1-stable) is available, as well as [its release notes](https://www.prestashop.com/en/release-notes-1.6.1.1-stable) (based on the 1.6.1.0 ones).
 
 Since version 1.6.1.1 is a "patch" update to version 1.6.1.0, upgrading from that version will be as smooth as silk for everyone: features will work better, and modules & themes which worked fine on 1.6.1.0 will work just as well with 1.6.1.1.
 

@@ -110,7 +110,7 @@ If you want to introduce a BC break, you better wait for the development of the 
 
 At some point there will be many release branches simultaneously. For exemple 1.6.1.x next to 1.6.3.x, next to 1.6.3.x.
 
-We don't intend to maintained multiple version at the same time but at least, if a major bug apprears, we can easily and quickly make a new patch release for many minor versions.
+We don't intend to maintained multiple version at the same time but at least, if a major bug apprears, we can easily and quickly make a new patch release for many minor versions. This will definitely improve our process for [security patches](https://www.prestashop.com/blog/en/prestashop-security-release/).
 
 
 ## FAQ
@@ -132,7 +132,7 @@ We still have a lot of pull requests open on 1.6 branch and GitHub will close al
 
 #### I want to change wording, is it a bug fix ?
 
-Fait ce que ce tu veux personne comprend... :troll:
+TODO
 
 
 #### What about the modules ?
@@ -151,7 +151,5 @@ As of today we merge the latest stable release into master. Some of our internal
 It you want to go further with branching model you must read the legendary article from nvie.com: [a-successful-git-branching-model](http://nvie.com/posts/a-successful-git-branching-model/). The schemes
 
 Also I particularily enjoyed Symfony's versioning strategy and branching model. Fabien Potencier (Founder of Symfony) [speaks about it in a keynote](https://youtu.be/pAFdmBxmt5Y?t=10m30s), unfortunately it's in French. You can find similar information in english [in this video](https://www.youtube.com/watch?v=pAFdmBxmt5Y&feature=youtu.be&t=10m30s).
-
-
 
 

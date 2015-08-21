@@ -18,6 +18,8 @@ PrestaShop has recently moved towards a [more semantic versioning scheme](http:/
 If you want to submit a pull request, as a contributor, will have to decide which branch to fork and set has a destination of your pull request.
 The schema above should help you with that.
 
+**Remember to not use _1.6_ or _master_ branches.** Ever.
+
 ![Choose your branch]({{ '/assets/images/2015/08/prestashop-choose-branch.png' | prepend: site.baseurl }})
 
 
@@ -32,13 +34,17 @@ We looked around to understand how many open source projects manage their code w
 
 
 {% alert info %}
-I chose to write this article as PrestaShop 1.6.1.1 just came out. All version numbers and branch names are based on the current situation, they might have changed as you're reading this article.
+I'm writing this article as PrestaShop 1.6.1.1 just came out. All version numbers and branch names are based on the current situation, they might have changed as you're reading this article.
 {% endalert %}
 
 
 ### 2 branches to understand
 
-2 main branches will now live side by side.
+2 main branches will now live side by side: _develop_ and the current _release_ branch.
+
+The _develop_ branch is always the next release. According to the roadmap, it can be the next minor version or the next major version.
+
+When contributing, you have to choose which branch to fork according to what you want to do. The following table shows what you can do in each branch.
 
 
 <table>
@@ -90,17 +96,21 @@ I heard _a picture is worth a thousand words_, I hope they didn't lie to me.
 
 ![PrestaShop Branching Model]({{ '/assets/images/2015/08/prestashop-branching-model.png' | prepend: site.baseurl }})
 
+**NB:** No one commit directly develop and release branches, everything goes through pull requests. This is not shown on the scheme for simplicity sake.
 
-## Next release matter
 
-Develop will receive commits for the next release, so if you want to break the backward compatibility we will only merge your PR if the next release is a major one. This may result in a long live branch and all the releated problems: merge conflicts, your contribution became useless, the API has changed and so on.
+### Next release matter
+
+The _develop_ branch will receive commits for the next release, so if you want to break the backward compatibility we will only merge your PR if the next release is a major one. This may result in a long live branch and all the releated problems: merge conflicts, your contribution became useless, the API has changed and so on.
 
 If you want to introduce a BC break, you better wait for the development of the next major release to start. Or if you want to you can also rebase your branch often.
 
 
-## Maintaining multiple minor versions
+### Maintaining multiple minor versions
 
-parler du probleme de secu et ocmment maintennt on pourra faire une nouvell version 1.6.1, 1.6.2, 1.7.0 !
+At some point there will be many release branches simultaneously. For exemple 1.6.1.x next to 1.6.3.x, next to 1.6.3.x.
+
+We don't intend to maintained multiple version at the same time but at least, if a major bug apprears, we can easily and quickly make a new patch release for many minor versions.
 
 
 ## FAQ
@@ -115,12 +125,33 @@ Then, you have to take into account the risk like if this bug fix on `PaymentMod
 
 #### Why `1.6` branch is still out there ?
 
-We still have a lot of pull requests open on 1.6 branch and GitHub will close all PR if we delete this branch. Unfortunalty we cannot change the target branch of an open pull request. We are manully porting each PR onto _develop_ branch.
+We still have a lot of pull requests open on 1.6 branch and GitHub will close all PR if we delete this branch. Unfortunalty we cannot change the target branch of an open pull request. We are manually porting each PR onto _develop_ branch.
 
 **Please do not use 1.6 branch**
 
-#### How can I can easily setup my git ?
 
-Good question ! I'm glad you asked. I recently wrote a little how-to about configuring your git, you may want to give it a look. LINK
+#### I want to change wording, is it a bug fix ?
+
+Fait ce que ce tu veux personne comprend... :troll:
+
+
+#### What about the modules ?
+
+We'll keep the current way to work with modules. We use only 2 branches _master_ for stable release and _dev_ for work in progress.
+
+If you want to **contribute to a module, make your pr on dev branch.** Also, you should not update the version number in your PR.
+
+
+#### What's the point of _master_ branch ?
+
+As of today we merge the latest stable release into master. Some of our internal tools still rely on this branch. Its future is unsure though, I wouldn't recommend to use it.
+
+## To go further
+
+It you want to go further with branching model you must read the legendary article from nvie.com: [a-successful-git-branching-model](http://nvie.com/posts/a-successful-git-branching-model/). The schemes
+
+Also I particularily enjoyed Symfony's versioning strategy and branching model. Fabien Potencier (Founder of Symfony) [speaks about it in a keynote](https://youtu.be/pAFdmBxmt5Y?t=10m30s), unfortunately it's in French. You can find similar information in english [in this video](https://www.youtube.com/watch?v=pAFdmBxmt5Y&feature=youtu.be&t=10m30s).
+
+
 
 

@@ -10,160 +10,206 @@ tags:
  - contributing
 ---
 
-PrestaShop has recently moved towards a [more semantic versioning scheme](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/), which is impacting the way we relase new version, and how we work on our GitHub repositories. Basically, patch releases include bug fixes only (1.6.1.1, 1.6.1.2, 1.6.1.3 and so on), minor releases introduce new features (1.6.1.0, 1.6.2.0, etc) and major version break backward compatibility (1.7, 1.8, etc). We had to adapt our workflow to match these requirements and it impacts the way you interact with PrestaShop too.
+PrestaShop has recently moved towards a [more semantic versioning scheme](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/), which is impacting the way we release new version, and how we work on our GitHub repositories. If you want to contribute code, here's a full explanation on how you should do it from now on.
+
+Basically, we follow the [SemVer 2.0.0 specification](http://semver.org/), which means that, as of version 1.6.1.0:
+
+* 'patch' releases include bug fixes only. This means version 1.6.1.1 ([already released](http://build.prestashop.com/news/1611-maintenance-release/)), and potentially, versions 1.6.1.2, 1.6.1.3 and so on. 
+* 'minor' releases introduce retrocompatible new features, along with bug fixes. This means that we could potentially have version 1.6.2.0, 1.6.3.0, and so on.
+* 'major' releases introduce new features that can break backward compatibility, along with retrocompatible new features and bug fixes. The means that we could potentially have versions 1.7.0.0, 1.8.0.0, and so on. 
+
+Thanks to this new way of managing our version numbers, we had to adapt our workflow to match these requirements. Please make sure you following our recommendations in this article, in order to make your pull requests on the correct branch! 
+
+If you, as a contributor, want to submit a pull request, you have to choose the branch against which you will work with wisely, since it will determine the branch you will fork and set as a destination of your pull request.
 
 
 ## TL;DR
 
-If you want to submit a pull request, as a contributor, you will have to decide which branch to fork and set has a destination of your pull request.
-The schema below should help you with that.
+Long story short:
 
-Long story made short:
-* Small bug fix > patch branch (1.6.1.x)
-* New feature > next minor branch (develop)
-* Break the backward compatibility > next major version branch (develop)
+* Bug fix > next 'patch' branch (currently: the '1.6.1.x' branch).
+* Backward compatible new feature > next 'minor' branch (always: the 'develop' branch).
+* Backward **incompatible** new feature > next 'major' branch (always: the 'develop' branch).
 
-**Remember not to use _1.6_ or _master_ branches.** Ever.
+To make it simple: the 'develop' branch results in a minor or a major version depending on the compatibility of its new features.
+
+Other branches might exist. They are used by the PrestaShop Core team, and you should not use them unless asked by the team. 
+**Remember not to use '1.6' branch anymore**, nor the 'master' branch.
+
+The diagram below should help you choose the correct branch for your pull request:
 
 ![Choose your branch]({{ '/assets/images/2015/08/prestashop-choose-branch.png' | prepend: site.baseurl }})
 
 
+## PrestaShop's new branching model
 
+### A bit of history
 
-## PrestaShop new branching model
+Before we adopted the [current SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/), we used to have only one branch, '1.6', and developers would commit whatever they had to do on it. We would then make a release out of it, including all of its change (new feature, bug fixes, etc.) in the new version. 
 
-Before that, we used to have only one branch (1.6) and each developer would commit whatever they had to do on it.
-Then we would make a release out of it, including everything (new feature, bug fixes...). This was simply the legacy of SVN, which we had been using for years. It turned out confusing and not very stable.
+This was simply the legacy of our days when we used the Subversion system, which we had been using for years. It turned out to be confusing and not very stable, resulting in inconsistent version numbers.
 
-We looked around to understand how many open-source projects manage their code with Git and we came up with the following model.
-
+We looked around to understand how other open-source projects manage their code with Git, and we came up with the following model.
 
 {% alert info %}
-I'm writing this article as PrestaShop 1.6.1.1 just came out. All version numbers and branch names are based on the current situation, they might have changed as you're reading this article.
+I'm writing this article in August 2015, as PrestaShop 1.6.1.1 just came out. All version numbers and branch names are based on the current situation. They might have changed as you're reading this article, so be sure to check what the current situation is.
 {% endalert %}
 
 
-### 2 branches to understand
+### Two branches to understand
 
-Two main branches will now live side by side: _develop_ and the current _release_ branch.
+Two main branches will now live side by side: 'develop' for the next minor/major release, and the latest minor release's branch (currently: '1.6.1.x'.
 
-The _develop_ branch is always the next release. According to the roadmap, it can be the next minor version or the next major version. If you don't know where to commit, it's always safer to commit to this branch.
+The 'develop' branch is always the next release. Depending on the PrestaShop roadmap, it can be the next minor version or the next major version. If you don't know where to commit, it's always safer to commit to this branch.
 
-The _release_ branch is the last version released. Currently it's 1.6.1.x and it should be used to apply bug fixes for future patch versions. 
+The '1.6.1.x' branch is the last version released (as of August 2015). It should be used to apply bug fixes for future 'patch' versions. 
 
 When contributing, you have to choose which branch to fork according to what you want to do. The following table shows what you can do in each branch.
 
-
 <table>
   <tr>
-    <th>Branch name</th>
-    <th>Type of release</th>
-    <th>What you're allowed to do</th>
+    <th rowspan="2">What can be done<br></th>
+    <th>patch</th>
+    <th>minor</th>
+    <th>major</th>
   </tr>
   <tr>
-    <td rowspan="2" class="text-center">develop</td>
-    <td class="text-center">Major</td>
-    <td>
-        <ul>
-            <li>Add new feature breaking backward compatibility</li>
-            <li>Add new feature fully backward compatible</li>
-            <li>Add bug fixes</li>
-            <li>Remove feature</li>
-            <li>Remove anything deprecated</li>
-            <li>Change wording</li>
-        </ul>
-    </td>
+    <td>1.6.1.x</td>
+    <td colspan="2">develop<br></td>
   </tr>
   <tr>
-    <td class="text-center">Minor</td>
-    <td>
-        <ul>
-            <li>Add new feature fully backward compatible</li>
-            <li>Add bug fixes</li>
-            <li>Change wording</li>
-        </ul>
-    </td>
+    <td>Fix bugs</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+    <tr>
+    <td>Fix security issues</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
   </tr>
   <tr>
-    <td class="text-center">1.6.1.x</td>
-    <td class="text-center">Patch</td>
-    <td>
-        <ul>
-            <li>Bug fixes only !</li>
-            <li>WORDING ?</li>
-        </ul>
-    </td>
+    <td>Fix wording issues</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Add backward compatible new features</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Add new database tables/rows</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Mark anything as 'deprecated'</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Add backward **incompatible** new features</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Remove existing feature(s)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Remove anything marked as 'deprecated'</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Change/remove existing database tables/rows</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>x</td>
   </tr>
 </table>
+
+Note that the Core team uses the same decision table for its own pull requests.
 
 
 ### The model
 
-I heard _a picture is worth a thousand words_, I hope they didn't lie to me:
+I heard that _a picture is worth a thousand words_, I hope they didn't lie to me:
 
 ![PrestaShop Branching Model]({{ '/assets/images/2015/08/prestashop-branching-model.png' | prepend: site.baseurl }})
 
-**NB:** No one should commit directly on PrestaShop develop and release branches, but submit pull requests. This is not shown on the graph for simplicity's sake.
+**N.B.:** No one should commit directly on PrestaShop's 'develop' and release branches. Instead, you should submit pull requests based on your own fork of these forks. This is not shown on the graph for simplicity's sake.
 
 
-### Next release matter
+### About the next release
 
-The _develop_ branch will receive commits for the next release. 
-If your PR breaks backward compatibility (BC), we can only merge it if the next release is a major one. Your branch can then become a long live branch and at some point it will bring some issues: merge conflicts, outdated contribution, etc.
-Before merging such a PR, check the version.php file to see what kind of version is the next version (if it's a major one, go ahead!), and make sure you rebase your branch often.
+The next release of PrestaShop is being worked on in the 'develop' branch. Depending on whether it contains changes which are backward compatible or not, it may result in a minor **or** a major release.
 
-// Parler de version.php et comment rebaser ?
+If your pull request breaks backward compatibility, the Core Team can only merge your changes if the next release is a major one. There is therefore a risk that your branch may become a long-running branch, and at some point it might bring some issues: merge conflicts, outdated contribution, already-fixed issue, target branch has changed from '1.6.1.x' to '1.6.2.x', etc.
+
+Before making such a ground-breaking pull request, check the planned version number for the next release from the 'develop' branch. You can use the [install_version.php file](https://github.com/PrestaShop/PrestaShop/blob/develop/install-dev/install_version.php#L27) to see what kind of version is the next version (if it's a major one, go ahead!) -- it is updated according to PrestaShop's roadmap. Make sure you [rebase your branch](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) often in order to keep it up to date!
+
 
 ### Maintaining multiple minor versions
 
-At some point there will be many release branches simultaneously. For example 1.6.1.x next to 1.6.2.x, next to 1.6.3.x.
+At some point there will be many simultaneous release branches. For example, 1.6.1.x next to 1.6.2.x, next to 1.6.3.x.
 
-We don't intend to maintained multiple versions at the same time but at least, if a major bug appears, we can easily and quickly make a new patch release for many minor versions. This will definitely improve our process for [security patches](https://www.prestashop.com/blog/en/prestashop-security-release/).
+We don't intend to maintain multiple versions of PrestaShop at the same time, but by keep those branches, if a major bug or security issue appears, we can easily and quickly make a new 'patch' release for many minor versions. This will definitely improve our process for [security patches](https://www.prestashop.com/blog/en/prestashop-security-release/).
 
 
 ## FAQ
 
 
-#### I want to fix a bug. It can be merged into all the branches, how do I choose?
+#### I want to fix a bug. It can be merged into all the branches, which branch should I use?
 
-This isn't an easy question, you'll have to make the call.
+This isn't an easy question, you'll have to make the call, as it depends on what kind of bug you are fixing. 
 
-It depends what kind of bug your are fixing. If it's a small bug, it probably can be easily integrated in the next patch version. So that would be the 1.6.1.x branch.
-If it's a massive bug, like on `PaymentModule.php`for instance, you might want to play it safe and include it in the next minor version, as it will probably require more testing. This goes to the develop branch. 
+If it's a small bug, it can probably be easily integrated in the next 'patch' version. So, currently, that would be the '1.6.1.x' branch (check for yourself which is the latest stable version.
+
+If it's a massive bug, like on `PaymentModule.php`for instance, you might want to play it safe and include it in the next minor version, as it will probably require more testing. This goes to the 'develop' branch. 
 
 
 #### I want to change some wording, is it a bug fix?
 
-If the change you want to make is really improving the user experience, and it cannot wait a next major or minor release, then go ahead and do it on the release branch. We'll consider it as a bug fix.
+If the change you want to make is really improving the user experience, and it cannot wait for a next major or minor release, then go ahead and do it on the current release's branch. We'll consider it as a bug fix.
 
-However, to make sure your wording is included in the translation project on Crowdin, and for the sake of our workflow, it is better to submit it on the develop branch.
+However, to make sure your wording is included in the [translation project on Crowdin](http://crowdin.net/project/prestashop-official), and for the sake of our workflow (and our sanity), it is better to submit it on the 'develop' branch.
 
 
 #### What about the modules?
 
-We'll keep the current way of working with modules. We use only 2 branches _master_ for stable release and _dev_ for work in progress.
+We'll keep the current way of working with modules. We use only 2 branches: 'master' for stable release, and 'dev' for the work in progress.
 
-If you want to **contribute to a module, make your PR on the dev branch.** When doing so, please do not update the version number in your PR.
-
-
-#### Why is `1.6` branch still out there?
-
-The 1.6 is no longer active. **Please do not open a pull-request on 1.6 branch.**
-
-We still have a lot of open pull requests on 1.6 branch which we need to forward to active branches. 
-Deleting this branch means losing all these PRs. As we cannot automatically change the target branch of an open pull request, we are manually porting each PR onto _develop_ branch. As long it as we are not done with this, the 1.6 branch will still be open.
+If you want to **contribute to a module, make your pull request on the 'dev' branch.** When doing so, please do not update the version number in your pull request.
 
 
-#### What's the point of _master_ branch?
+#### Why is the '1.6' branch still out there?
 
-As of today we merge the latest stable release into master.This is a kind of safeguard, and some of our internal tools still rely on this branch. Its future is unsure though. Please do not use PrestaShop master branch either.
+The '1.6' branch is no longer active. **Please do not open a pull request on this branch.**
 
-## To go further
+The reason for its existence is pragmatic. We still have a lot of open pull requests on '1.6' branch which we need to rework in order to move them to our active branches. 
 
-It you want to go further with branching model you must read this legendary article from nvie.com: [a-successful-git-branching-model](http://nvie.com/posts/a-successful-git-branching-model/).
+Deleting this branch would mean losing all these pull requests -- GitHub doesn't make it possible to change the target branch of a PR ([voice your opinion here](https://github.com/isaacs/github/issues/18)!). Because of this, we must manually port each PR onto the 'develop' branch. As long as we are not done with this, the '1.6' branch will still be open. Eventually, it will disappear.
 
-Also I particularily enjoyed Symfony's versioning strategy and branching model. Fabien Potencier (Founder of Symfony) [speaks about it in a keynote](https://youtu.be/pAFdmBxmt5Y?t=10m30s), unfortunately it's in French. You can find similar information in english [in this video](https://www.youtube.com/watch?v=pAFdmBxmt5Y&feature=youtu.be&t=10m30s).
+#### What's the point of the 'master' branch?
+
+As of today, we merge the latest stable release into 'master'. This is a kind of safeguard, and some of our internal tools still rely on this branch. Its future is unsure though. Therefore, just like the '1.6' branch, please do not use the 'master' branch either.
+
+
+## Going further
+
+It you want to go further with branching models, you must read this legendary article from nvie.com: [a-successful-git-branching-model](http://nvie.com/posts/a-successful-git-branching-model/).
+
+Also, I particularly enjoyed Symfony's versioning strategy and branching model. Fabien Potencier (Founder of Symfony) [speaks about it in a keynote](https://youtu.be/pAFdmBxmt5Y?t=10m30s) -- unfortunately it's in French. You can find similar information in English [in this video](https://www.youtube.com/watch?v=pAFdmBxmt5Y&feature=youtu.be&t=10m30s).
 
 We'll update you whenever a change occurs in our branching model. In the meantime, if you have any question, don't hesitate!
-
-

@@ -29,7 +29,6 @@ exclude: ["bower.json", "bower_components", "Gemfile", "Gemfile.lock"]
 sass:
     load_paths:
         - _sass
-        - bower_components
     style: compressed
 
 # Page collection are used for how-tos pages

@@ -34,7 +34,7 @@ Long story short:
 To make it simple: the 'develop' branch results in a minor or a major version depending on the compatibility of its new features.
 
 Other branches might exist. They are used by the PrestaShop Core team, and you should not use them unless asked by the team. 
-**Remember not to use '1.6' branch anymore**, or the 'master' branch.
+**Remember not to use '1.6' branch anymore**, nor the 'master' branch.
 
 The diagram below should help you choose the correct branch for your pull request:
 

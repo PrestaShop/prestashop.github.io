@@ -102,7 +102,7 @@ When contributing, you have to choose which branch to fork according to what you
     <td>x</td>
   </tr>
   <tr>
-    <td>Add new database tables/rows</td>
+    <td>Database structure changes</td>
     <td>&nbsp;</td>
     <td>x</td>
     <td>x</td>

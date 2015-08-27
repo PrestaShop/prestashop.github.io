@@ -4,7 +4,7 @@ title:  "Introducing a new branching model for PrestaShop"
 subtitle: "Do the right thing!"
 date:   2015-08-27 18:13:37
 author: julienbourdeau
-icon: fa-fork
+icon: fa-code-fork
 tags:
  - releases
  - contributing

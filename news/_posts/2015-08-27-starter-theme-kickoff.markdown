@@ -19,9 +19,23 @@ Our goal is to deliver the Starter Theme with PrestaShop 1.7.0.0. We will also s
 >
 >Antoine de Saint Exupéry
 
+### A Tool for Designers to Work Efficiently
+
 We call Starter Theme a minimal PrestaShop theme: it is feature-complete but has no styling, nothing to take away.
 
 But wait... no styling?! It might not be perfect for a customer, sure, but it should be perfect for a designer as turning the Starter Theme into a real, production-ready theme will be very easy.
+
+### An Easy to Follow, Documented Standard that We all Agree On
+
+It is sometimes hard to know whether a particular extension or feature will work correctly with a particular theme. There are so many themes out there! How can I, as a developer, know that my module will work correctly?
+
+In principle if an extension or feature is designed to work with the Starter Theme it will always work with any theme that is based on the starter theme.
+
+For the Starter Theme to play this role it will need a **comprehensive documentation**, including:
+
+- the list of mandatory templates
+- the description of all variables available to each template
+- the list of all hooks found in a given template 
 
 ## What Will PrestaShop's Starter Theme look like?
 

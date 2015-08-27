@@ -10,17 +10,17 @@ tags:
  - contributing
 ---
 
-PrestaShop has recently moved towards a [more semantic versioning scheme](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/), which is impacting the way we release new version, and how we work on our GitHub repositories. If you want to contribute code, here's a full explanation on how you should do it from now on.
+PrestaShop has recently moved towards a [more semantic versioning scheme](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/), which is impacting the way we release new versions, and how we work on our GitHub repositories. If you want to contribute code, here's a full explanation on how you should do it from now on.
 
 Basically, we follow the [SemVer 2.0.0 specification](http://semver.org/), which means that, as of version 1.6.1.0:
 
 * 'patch' releases include bug fixes only. This means version 1.6.1.1 ([already released](http://build.prestashop.com/news/1611-maintenance-release/)), and potentially, versions 1.6.1.2, 1.6.1.3 and so on. 
-* 'minor' releases introduce retrocompatible new features, along with bug fixes. This means that we could potentially have version 1.6.2.0, 1.6.3.0, and so on.
-* 'major' releases introduce new features that can break backward compatibility, along with retrocompatible new features and bug fixes. The means that we could potentially have versions 1.7.0.0, 1.8.0.0, and so on. 
+* 'minor' releases introduce retrocompatible, new features, along with bug fixes. This means that we could potentially have version 1.6.2.0, 1.6.3.0, and so on.
+* 'major' releases introduce new features that can break backward compatibility, along with retrocompatible, new features and bug fixes. The means that we could potentially have versions 1.7.0.0, 1.8.0.0, and so on. 
 
-Thanks to this new way of managing our version numbers, we had to adapt our workflow to match these requirements. Please make sure you following our recommendations in this article, in order to make your pull requests on the correct branch! 
+Because we changed the way we manage our version numbers, we had to adapt our workflow to match these requirements. Please make sure you follow our recommendations in this article, in order to place your pull requests on the correct branch! 
 
-If you, as a contributor, want to submit a pull request, you have to choose the branch against which you will work with wisely, since it will determine the branch you will fork and set as a destination of your pull request.
+If you, as a contributor, want to submit a pull request, you have to choose the branch you will work with wisely, since it will determine the branch you will fork and set as a destination of your pull request.
 
 
 ## TL;DR
@@ -34,7 +34,7 @@ Long story short:
 To make it simple: the 'develop' branch results in a minor or a major version depending on the compatibility of its new features.
 
 Other branches might exist. They are used by the PrestaShop Core team, and you should not use them unless asked by the team. 
-**Remember not to use '1.6' branch anymore**, nor the 'master' branch.
+**Remember not to use '1.6' branch anymore**, or the 'master' branch.
 
 The diagram below should help you choose the correct branch for your pull request:
 
@@ -45,9 +45,9 @@ The diagram below should help you choose the correct branch for your pull reques
 
 ### A bit of history
 
-Before we adopted the [current SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/), we used to have only one branch, '1.6', and developers would commit whatever they had to do on it. We would then make a release out of it, including all of its change (new feature, bug fixes, etc.) in the new version. 
+Before we adopted the [current SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/), we used to have only one branch, '1.6', and developers would commit whatever they had to do on it. We would then make a release out of it, including all of its changes (new feature, bug fixes, etc.) in the new version. 
 
-This was simply the legacy of our days when we used the Subversion system, which we had been using for years. It turned out to be confusing and not very stable, resulting in inconsistent version numbers.
+This was simply the legacy of our days when we used the Subversion system, which we had been using for years. It turned out confusing and not very stable, resulting in inconsistent version numbers.
 
 We looked around to understand how other open-source projects manage their code with Git, and we came up with the following model.
 
@@ -58,11 +58,11 @@ I'm writing this article in August 2015, as PrestaShop 1.6.1.1 just came out. Al
 
 ### Two branches to understand
 
-Two main branches will now live side by side: 'develop' for the next minor/major release, and the latest minor release's branch (currently: '1.6.1.x'.
+Two main branches will now live side by side: 'develop' for the next minor/major release, and the latest minor release's branch (currently: '1.6.1.x').
 
 The 'develop' branch is always the next release. Depending on the PrestaShop roadmap, it can be the next minor version or the next major version. If you don't know where to commit, it's always safer to commit to this branch.
 
-The '1.6.1.x' branch is the last version released (as of August 2015). It should be used to apply bug fixes for future 'patch' versions. 
+The '1.6.1.x' branch is the latest version released (as of August 2015). It should be used to apply bug fixes for future 'patch' versions. 
 
 When contributing, you have to choose which branch to fork according to what you want to do. The following table shows what you can do in each branch.
 
@@ -102,7 +102,7 @@ When contributing, you have to choose which branch to fork according to what you
     <td>x</td>
   </tr>
   <tr>
-    <td>Database structure changes</td>
+    <td>Add new database tables/rows</td>
     <td>&nbsp;</td>
     <td>x</td>
     <td>x</td>

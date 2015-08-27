@@ -14,13 +14,14 @@ Since version 1.6.0.11 of PrestaShop, there is a new feature that allows develop
 
 Since PrestaShop uses lots of modules for both core and custom features, module overrides are a welcome addition to an already great override system in PrestaShop. Let's take a look on how to use it.
 
-{% alert note %}
+<div class="alert alert-note" role="alert">
+<h4><i class='fa fa-file-text-o'></i> Note</h4>
 Remember that overrides in PrestaShop are exclusive. This means that if your module overrides one of PrestaShop's behaviors, another module will not be able to use that behavior properly, or override it in an predictable way.
 
 Therefore, overrides should only be used for your own local modules, when you have a specific need that cannot be applied without it.
 
 It is not recommended to use an override in a module that you intend to distribute (for instance through the PrestaShop Addons marketplace), and they are forbidden in partner modules.
-{% endalert %}
+</div>
 
 ## Override a module's instance class by extending it
 

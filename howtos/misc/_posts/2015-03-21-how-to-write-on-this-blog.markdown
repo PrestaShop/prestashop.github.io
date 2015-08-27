@@ -27,11 +27,12 @@ best option out there -- and **you can actually make a *Pull Request* on GitHub 
 
 ## TL;DR
 
-{% alert note %}
+<div class="alert alert-note" role="alert">
+<h4><i class='fa fa-file-text-o'></i> Note</h4>
 First: tell us what you want to write about! We won't accept just about any submission :)
 
 Write to us with your idea (we can be reached at build@prestashop.com), with a rough idea or the whole thing ready, and let's talk about it. Once we agree on the subject, then you are good to go!
-{% endalert %}
+</div>
 
 You don’t have to read all the details below: if you want to write an article right away, you can simply follow those steps:
 
@@ -84,9 +85,10 @@ bower install
 bundle exec jekyll build --watch
 {% endhighlight %}
 
-{% alert note %}
+<div class="alert alert-note" role="alert">
+<h4><i class='fa fa-file-text-o'></i> Note</h4>
 When you're using the `--watch` option, it only watches content and styles. So if you are changing any plugin or any line in your `_config.yml`, you'll have to quit (`ctrl+C`) and rebuild.
-{% endalert %}
+</div>
 
 
 ## Creating your article
@@ -106,13 +108,14 @@ With Jekyll, the location of your files matter. On this blog, we have two kinds 
 * **How-Tos**: They live in the `howtos` folder and are sorted by topic. These posts are displayed on the home page as well as the How-Tos
 page which is sorted by topic.
 
-{% alert note %}
+<div class="alert alert-note" role="alert">
+<h4><i class='fa fa-file-text-o'></i> Note</h4>
 If you need to create a new topic, create a subfolder in `howtos` and edit the `howtos` configuration in `_config.yml`.
 
 The topics are displayed in the same order as shown in the `_config.yml` file.
 
 Please ask us before creating a brand new topic!
-{% endalert %}
+</div>
 
 
 ### File name
@@ -145,9 +148,10 @@ published: false
 
 I assume you will understand what you are supposed to change. *Icon* can be [any icon from FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/).
 
-{% alert important %}
+<div class="alert alert-important" role="alert">
+<h4><i class='fa fa-exclamation-triangle'></i> Important</h4>
 Articles must be submitted with the 'published' setting set to false. We will only publish it after review.
-{% endalert %}
+</div>
 
 
 ## Making sure you're an author
@@ -277,7 +281,7 @@ If you want to highlight some content (hint, note, tip, alert, etc.), we have fe
 {% raw %}
 {% alert TYPE  SHOW_TITLE %}
 You content goes here. **Markdown** _is_ `supported`.
-{% endalert %}
+</div>
 {% endraw %}
 {% endhighlight %}
 

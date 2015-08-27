@@ -24,12 +24,12 @@ spotify_username: prestacrew
 markdown: kramdown
 highlighter: pygments
 
-exclude: ["bower.json", "Gemfile", "Gemfile.lock"]
+exclude: ["bower.json", "bower_components", "Gemfile", "Gemfile.lock"]
 
 sass:
     load_paths:
         - _sass
-        - _bower_components
+        - bower_components
     style: compressed
 
 # Page collection are used for how-tos pages

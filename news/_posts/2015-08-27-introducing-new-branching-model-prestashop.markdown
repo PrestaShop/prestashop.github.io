@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Introducing a new branching model for PrestaShop"
-subtitle: "eeee"
-date:   2015-07-16 10:13:37
+subtitle: "Do the right thing!"
+date:   2015-08-27 18:13:37
 author: julienbourdeau
 icon: fa-fork
 tags:
@@ -14,11 +14,11 @@ PrestaShop has recently moved towards a [more semantic versioning scheme](http:/
 
 Basically, we follow the [SemVer 2.0.0 specification](http://semver.org/), which means that, as of version 1.6.1.0:
 
-* 'patch' releases include bug fixes only. This means version 1.6.1.1 ([already released](http://build.prestashop.com/news/1611-maintenance-release/)), and potentially, versions 1.6.1.2, 1.6.1.3 and so on. 
+* 'patch' releases include bug fixes only. This means version 1.6.1.1 ([already released](http://build.prestashop.com/news/1611-maintenance-release/)), and potentially, versions 1.6.1.2, 1.6.1.3 and so on.
 * 'minor' releases introduce retrocompatible, new features, along with bug fixes. This means that we could potentially have version 1.6.2.0, 1.6.3.0, and so on.
-* 'major' releases introduce new features that can break backward compatibility, along with retrocompatible, new features and bug fixes. The means that we could potentially have versions 1.7.0.0, 1.8.0.0, and so on. 
+* 'major' releases introduce new features that can break backward compatibility, along with retrocompatible, new features and bug fixes. The means that we could potentially have versions 1.7.0.0, 1.8.0.0, and so on.
 
-Because we changed the way we manage our version numbers, we had to adapt our workflow to match these requirements. Please make sure you follow our recommendations in this article, in order to place your pull requests on the correct branch! 
+Because we changed the way we manage our version numbers, we had to adapt our workflow to match these requirements. Please make sure you follow our recommendations in this article, in order to place your pull requests on the correct branch!
 
 If you, as a contributor, want to submit a pull request, you have to choose the branch you will work with wisely, since it will determine the branch you will fork and set as a destination of your pull request.
 
@@ -33,7 +33,7 @@ Long story short:
 
 To make it simple: the 'develop' branch results in a minor or a major version depending on the compatibility of its new features.
 
-Other branches might exist. They are used by the PrestaShop Core team, and you should not use them unless asked by the team. 
+Other branches might exist. They are used by the PrestaShop Core team, and you should not use them unless asked by the team.
 **Remember not to use '1.6' branch anymore**, nor the 'master' branch.
 
 The diagram below should help you choose the correct branch for your pull request:
@@ -45,7 +45,7 @@ The diagram below should help you choose the correct branch for your pull reques
 
 ### A bit of history
 
-Before we adopted the [current SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/), we used to have only one branch, '1.6', and developers would commit whatever they had to do on it. We would then make a release out of it, including all of its changes (new feature, bug fixes, etc.) in the new version. 
+Before we adopted the [current SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/), we used to have only one branch, '1.6', and developers would commit whatever they had to do on it. We would then make a release out of it, including all of its changes (new feature, bug fixes, etc.) in the new version.
 
 This was simply the legacy of our days when we used the Subversion system, which we had been using for years. It turned out confusing and not very stable, resulting in inconsistent version numbers.
 
@@ -62,7 +62,7 @@ Two main branches will now live side by side: 'develop' for the next minor/major
 
 The 'develop' branch is always the next release. Depending on the PrestaShop roadmap, it can be the next minor version or the next major version. If you don't know where to commit, it's always safer to commit to this branch.
 
-The '1.6.1.x' branch is the latest version released (as of August 2015). It should be used to apply bug fixes for future 'patch' versions. 
+The '1.6.1.x' branch is the latest version released (as of August 2015). It should be used to apply bug fixes for future 'patch' versions.
 
 When contributing, you have to choose which branch to fork according to what you want to do. The following table shows what you can do in each branch.
 
@@ -172,11 +172,11 @@ We don't intend to maintain multiple versions of PrestaShop at the same time, bu
 
 #### I want to fix a bug. It can be merged into all the branches, which branch should I use?
 
-This isn't an easy question, you'll have to make the call, as it depends on what kind of bug you are fixing. 
+This isn't an easy question, you'll have to make the call, as it depends on what kind of bug you are fixing.
 
 If it's a small bug, it can probably be easily integrated in the next 'patch' version. So, currently, that would be the '1.6.1.x' branch (check for yourself which is the latest stable version.
 
-If it's a massive bug, like on `PaymentModule.php`for instance, you might want to play it safe and include it in the next minor version, as it will probably require more testing. This goes to the 'develop' branch. 
+If it's a massive bug, like on `PaymentModule.php`for instance, you might want to play it safe and include it in the next minor version, as it will probably require more testing. This goes to the 'develop' branch.
 
 
 #### I want to change some wording, is it a bug fix?
@@ -197,7 +197,7 @@ If you want to **contribute to a module, make your pull request on the 'dev' bra
 
 The '1.6' branch is no longer active. **Please do not open a pull request on this branch.**
 
-The reason for its existence is pragmatic. We still have a lot of open pull requests on '1.6' branch which we need to rework in order to move them to our active branches. 
+The reason for its existence is pragmatic. We still have a lot of open pull requests on '1.6' branch which we need to rework in order to move them to our active branches.
 
 Deleting this branch would mean losing all these pull requests -- GitHub doesn't make it possible to change the target branch of a PR ([voice your opinion here](https://github.com/isaacs/github/issues/18)!). Because of this, we must manually port each PR onto the 'develop' branch. As long as we are not done with this, the '1.6' branch will still be open. Eventually, it will disappear.
 

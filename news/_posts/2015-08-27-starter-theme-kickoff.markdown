@@ -11,9 +11,9 @@ If you've ever tried to create a PrestaShop theme from scratch you might have no
 
 With the Starter Theme project we are starting today we want to re-think the way our themes work so that *anybody with only HTML and CSS skills can create a really cool, feature-complete PrestaShop theme from scratch in just a few days*.
 
-Our goal is to deliver the Starter Theme with PrestaShop 1.7.0.0. We will also say goodbye to dear old default-bootstrap. It will be replaced with a new theme based on the Starter Theme.
+Our goal is to deliver the Starter Theme with PrestaShop 1.7.0.0. We will also say goodbye to old default-bootstrap. It will be replaced with a new theme based on the Starter Theme.
 
-## So what's a Starter Theme?
+## So What's a Starter Theme?
 
 > "It seems that perfection is attained, not when there is nothing more to add, but when there is nothing more to take away."
 >
@@ -23,7 +23,7 @@ We call Starter Theme a minimal PrestaShop theme: it is feature-complete but has
 
 But wait... no styling?! It might not be perfect for a customer, sure, but it should be perfect for a designer as turning the Starter Theme into a real, production-ready theme will be very easy.
 
-## What will PrestaShop's Starter Theme look like?
+## What Will PrestaShop's Starter Theme look like?
 
 *Well it will look like \*\*\*\*, that's the point.*
 
@@ -31,9 +31,9 @@ Jokes aside, here are the main design principles we have in mind. As usual we're
 
 ### Logic Belongs to Controllers
 
-Over the years, lots of logic has crept into the templates (contrary to MCV principles). None of this in the Starter Theme!
+Over the years lots of logic has crept into the templates (contrary to MCV principles). None of this in the Starter Theme!
 
-This rule will be very strongly enforced. To help us keep on track while building the Starter Theme we're considering limiting the depth of control structures in templates to 2.
+This rule will be very strongly enforced. To help us keep on track while building the Starter Theme we're considering limiting the depth of control structures in templates to 2 (we'll relax this if it turns out to be too impractical, but you get the idea).
 
 If you're nesting 3 `if`s inside a template then your controller is probably not doing its job right.
 
@@ -51,7 +51,7 @@ No more opening the `<body>` tag in `header.tpl` and closing it in `footer.tpl`.
 
 Tired of writing `|escape:'html':'UTF-8'` all over the place?
 
-We too. We'll adopt the generally accepted best-practice that everything is escaped by default and you need to do extra work when you don't want to escape (which is rare).
+We too. We'll adopt the generally accepted best-practice that everything is escaped by default and you need to do extra work when you don't want to escape text (which is rare).
 
 ### As Few Classes As Possible
 
@@ -70,9 +70,9 @@ Javascript may only rely on:
 - `id`s
 - `data-*` attributes
 - named inputs
-- as a last resort, if none of the above makes sense, on classes, but prefixed with `js-`
+- as a last resort, if none of the above makes sense, on classes, but prefixed by `js-`
 
-And probably other things too, but never HTML classes.
+And probably other things too, but almost never HTML classes and when using classes, always prefixed by `js-`.
 
 The goal of this convention is to:
 
@@ -85,22 +85,26 @@ This was a tough one.
 
 You can do a lot with CSS but some layouts cannot be implemented with only CSS and you need to add some markup, for instance wrap your columns in a `<div class="row">`.
 
-But since in the Starter Theme we wanted to make no assumption about which technologies designers will use, we decided to implement no layout at all. You will get columns that are displayed one after another vertically.
+But since in the Starter Theme we wanted to make no assumption about which technologies designers will use we decided to implement no layout at all. You will get columns that are displayed one after another vertically.
 
-Want your columns to look like real columns ? Then it's your job to add the necessary classes and/or markup. If you think your customers have recent browsers, you may just use flexbox and be done with it - we're not imposing anything, so no bootstrap.
+Want your columns to look like real columns ? Then it's your job to add the necessary classes and/or markup. If you think your customers have recent browsers you may just use flexbox and be done with it - we're not imposing anything, so no bootstrap.
 
 ## How Are We Going to Do It? Want to get involved?
 
 We believe that starting from scratch will give the best results to achieve the cleanest possible theme structure.
 
-We're going to create a dedicated repository on GitHub and issues will be tracked there (not on forge.prestashop.com). We will also create a PrestaShop branch called `starter-theme` where all necessary changes to the PrestaShop core will happen.
+We've created a <a href="https://github.com/PrestaShop/StarterTheme" target="_blank">dedicated repository on GitHub</a> and issues will be tracked there (not on forge.prestashop.com). We will also create a PrestaShop branch called `starter-theme` where all necessary changes to the PrestaShop core will happen.
 
-We know many people are interested in this project and wish to contribute. Contributions are very welcome as there will be enough work for everyone :) As usual you can send us pull requests but if you want to work more closely with us, just write to us and we'll work something out.
+We know many people are interested in this project and wish to contribute. Contributions are very welcome as there will be more than enough work for everyone :)
+
+As usual you can send us pull requests but if you want to work more closely with us, just write to us and we'll work something out.
 
 ## But Aren't You Going to Break Everything?
 
 To be honest, it is likely. But it's a necessary evil.
 
-We're not sure at this point if 1.6 themes will be compatible with 1.7.0.0. We have huge plans for the Starter Theme and we do not want to sacrifice good software design in favor of retro-compatibility.
+We're not sure at this point if 1.6 themes will be compatible with 1.7.0.0. We have huge plans related to the Starter Theme and we do not want to sacrifice good software design in favor of retro-compatibility.
 
 Existing modules will probably require adjustments too, but they should be minimal.
+
+If we break things you'll be the first to know and we'll give you time to adjust.

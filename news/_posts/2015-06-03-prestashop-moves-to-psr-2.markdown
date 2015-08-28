@@ -65,11 +65,12 @@ For your future modules, please follow the PSR-2 coding standards: this will ben
 
 Now it is time to see where the PrestaShop Coding Standards and PSR-2 differ.
 
-{% alert important %}
+<div class="alert alert-important" role="alert">
+<h4><i class='fa fa-exclamation-triangle'></i> Important</h4>
 At the time of writing, namespaces and closures are not allowed, because we first need to announce the switch to PHP 5.4 as the minimum version supported by PrestaShop.
 
 This will be announced very soon, and applied in the coming year.
-{% endalert %}
+</div>
 
 #### 1. Lines
 

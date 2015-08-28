@@ -52,7 +52,7 @@ We recently [updated it](https://github.com/github/gitignore/pull/1479), as a re
 
 If you don't want to version the core files, PrestaShop contributor Adonis Karavokyros (also known as [prestarocket](https://github.com/prestarocket)) wrote this file instead:
 
-{% gist prestarocket/1070872 %}
+<script src="https://gist.github.com/prestarocket/1070872.js"></script>
 
 ### Generate your own `.gitignore` file with gitignore.io
 

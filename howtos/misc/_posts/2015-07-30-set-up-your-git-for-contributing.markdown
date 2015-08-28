@@ -25,7 +25,7 @@ PrestaShop is versioned with Git and hosted in GitHub. If you intend to make a P
 Below are the recommended settings for your `~/.gitconfig` file.
 It's widely inspired by [this great git config](https://gist.github.com/tdd/470582) by [Christophe Porteneuve](https://twitter.com/porteneuve).
 
-{% gist julienbourdeau/be21f43006244234675e %}
+<script src="https://gist.github.com/julienbourdeau/be21f43006244234675e.js"></script>
 
 Like I said, this configuration will also be useful if you contribute to other open source projects.
 

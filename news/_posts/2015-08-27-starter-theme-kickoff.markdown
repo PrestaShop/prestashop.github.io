@@ -119,7 +119,7 @@ To make discussing the project between all involved easier we've created a <a hr
 
 To be honest, it is likely. But it's a necessary evil.
 
-We're not sure at this point if 1.6 themes will be compatible with 1.7.0.0. We have huge plans related to the Starter Theme and we do not want to sacrifice good software design in favor of retro-compatibility.
+We're not sure at this point if 1.6 themes will be compatible with 1.7.0.0. We have huge plans related to the Starter Theme and we do not want to sacrifice good software design in favor of retro-compatibility. So for now we're not holding back.
 
 Existing modules will probably require adjustments too, but they should be minimal.
 

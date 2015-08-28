@@ -7,11 +7,11 @@ author: djfm
 icon: fa-code
 ---
 
-If you've ever tried to create a PrestaShop theme from scratch you might have noticed it requires quite a large skillset: not only must you know HTML, CSS and Smarty, but you also need to be very familiar with the inner workings of PrestaShop itself: there is a lot of business logic going on in the templates, it is hard to tell apart classes that are used for styling from classes that are used by javascript-powered features, etc.
+If you've ever tried to create a PrestaShop theme from scratch, you might have noticed it requires quite a large skillset: not only must you know HTML, CSS and Smarty, but you also need to be very familiar with the inner workings of PrestaShop itself. There is a lot of business logic going on in the templates, it is hard to tell apart classes that are used for styling from classes that are used by javascript-powered features, etc.
 
-With the Starter Theme project we are starting today we want to re-think the way our themes work so that *anybody with only HTML and CSS skills can create a really cool, feature-complete PrestaShop theme from scratch in just a few days*.
+With the Starter Theme project we are starting today, we want to re-think the way our themes work so that *anybody with only HTML and CSS skills can create a really cool, feature-complete PrestaShop theme from scratch in just a few days*.
 
-Our goal is to deliver the Starter Theme with PrestaShop 1.7.0.0. We will also say goodbye to old default-bootstrap. It will be replaced with a new theme based on the Starter Theme.
+Our goal is to deliver the Starter Theme with PrestaShop 1.7.0.0. We will also say goodbye to our old default-bootstrap theme. It will be replaced with a new theme based on the Starter Theme.
 
 ## So What's a Starter Theme?
 
@@ -25,7 +25,7 @@ We call Starter Theme a minimal PrestaShop theme: it is feature-complete but has
 
 But wait... no styling?! It might not be perfect for a customer, sure, but it should be perfect for a designer as turning the Starter Theme into a real, production-ready theme will be very easy.
 
-### An Easy to Follow, Documented Standard that We all Agree On
+### An Easy to Follow, Documented Standard that We All Agree On
 
 It is sometimes hard to know whether a particular extension or feature will work correctly with a particular theme. There are so many themes out there! How can I, as a developer, know that my module will work correctly?
 
@@ -47,15 +47,15 @@ Jokes aside, here are the main design principles we have in mind. As usual we're
 
 Over the years lots of logic has crept into the templates (contrary to MCV principles). None of this in the Starter Theme!
 
-This rule will be very strongly enforced. To help us keep on track while building the Starter Theme we're considering limiting the depth of control structures in templates to 2 (we'll relax this if it turns out to be too impractical, but you get the idea).
+This rule will be very strongly enforced. To help us keep on track while building the Starter Theme, we're considering limiting the depth of control structures in templates to 2 (we'll relax this if it turns out to be too impractical, but you get the idea).
 
 If you're nesting 3 `if`s inside a template then your controller is probably not doing its job right.
 
-### Controllers pass Arrays to Templates, not Objects
+### Controllers Pass Arrays to Templates, not Objects
 
 Today some controllers pass lists of `Product`s to templates, while some other controllers pass lists of arrays representing `Product`s. This is true for other types of entities too.
 
-We need to standardize this one way or the other. We've opted for arrays because of the additional safety guarantees it offers: separation of concerns mandates that the view layer just manages the view. Passing a `Product` object to a template allows the view layer to do things like deleting the product from the database.
+We need to standardize this, one way or the other. We've opted for arrays because of the additional safety guarantees it offers: separation of concerns mandates that the view layer just manages the view. Passing a `Product` object to a template allows the view layer to do things like deleting the product from the database.
 
 ### A Real Layout
 
@@ -67,13 +67,13 @@ Tired of writing `|escape:'html':'UTF-8'` all over the place?
 
 We too. We'll adopt the generally accepted best-practice that everything is escaped by default and you need to do extra work when you don't want to escape text (which is rare).
 
-### As Few Classes As Possible
+### As Few Classes as Possible
 
 In our templates today, almost every HTML tag has at least one class. This feels like a bit much.
 
 We're going to put a few classes in the Starter Theme markup, but as few as possible. Just the really important ones.
 
-### Classes are For Styling, Not for Javascript (mostly)
+### Classes are for Styling, Not for Javascript (mostly)
 
 In the Starter Theme we will try to remove all HTML classes that are not used for styling.
 
@@ -90,8 +90,8 @@ And probably other things too, but almost never HTML classes and when using clas
 
 The goal of this convention is to:
 
-- avoid bloating the HTML markup with things designers are not interested in: a designer expects a class to be used for styling and knows they can remove any class they wish without breaking functionality
-- make it easy to keep the Javascript working with different themes: we'll keep our selectors simple in the Starter Theme, adding `data-*` attributes or `id`s where needed so that when you move things around everything keeps working smoothly
+- avoid bloating the HTML markup with things designers are not interested in – a designer expects a class to be used for styling and knows they can remove any class they wish without breaking functionality.
+- make it easy to keep the Javascript working with different themes – we'll keep our selectors simple in the Starter Theme, adding `data-*` attributes or `id`s where needed so that when you move things around everything keeps working smoothly.
 
 ### No Bootstrap
 
@@ -99,9 +99,9 @@ This was a tough one.
 
 You can do a lot with CSS but some layouts cannot be implemented with only CSS and you need to add some markup, for instance wrap your columns in a `<div class="row">`.
 
-But since in the Starter Theme we wanted to make no assumption about which technologies designers will use we decided to implement no layout at all. You will get columns that are displayed one after another vertically.
+But since in the Starter Theme we wanted to make no assumption about which technologies designers will use, we decided to implement no layout at all. You will get columns that are displayed one after another vertically.
 
-Want your columns to look like real columns ? Then it's your job to add the necessary classes and/or markup. If you think your customers have recent browsers you may just use flexbox and be done with it - we're not imposing anything, so no bootstrap.
+Want your columns to look like real columns? Then it's your job to add the necessary classes and/or markup. If you think your customers have recent browsers you may just use flexbox and be done with it - we're not imposing anything, so no bootstrap.
 
 ### Ongoing Reflection About Hooks
 
@@ -111,7 +111,7 @@ In the future we'd also like to implement a system of widgets that you could add
 
 We don't know the details yet, but if you have ideas how we can make hooks better let us know!
 
-## How Are We Going to Do It? Want to get involved?
+## How Are We Going to Do It? Want to Get Involved?
 
 We believe that starting from scratch will give the best results to achieve the cleanest possible theme structure.
 
@@ -127,7 +127,7 @@ To make discussing the project between all involved easier we've created a <a hr
 
 To be honest, it is likely. But it's a necessary evil.
 
-We're not sure at this point if 1.6 themes will be compatible with 1.7.0.0. We have huge plans related to the Starter Theme and we do not want to sacrifice good software design in favor of retro-compatibility. So for now we're not holding back.
+We're not sure at this point if 1.6 themes will be compatible with 1.7.0.0. We have huge plans related to the Starter Theme and we do not want to sacrifice good software design in favor of backward compatibility. So for now we're not holding back.
 
 Existing modules will probably require adjustments too, but they should be minimal.
 

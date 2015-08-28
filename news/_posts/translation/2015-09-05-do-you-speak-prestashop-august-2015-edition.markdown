@@ -9,11 +9,11 @@ tags: [translation, i18n, l10n]
 ---
 
 
-Here is the new report to inform you of what has been going on [PrestaShop translation project on Crowdin](https://crowdin.com/project/prestashop-official) this Auguest 2015.
+Here is the new report to inform you of what has been going on [PrestaShop translation project on Crowdin](https://crowdin.com/project/prestashop-official) this August 2015.
 
 All the figures and statistics are (still) based on the 1.6.1.0 project. Figures were extracted on the 27th of August, so it's not the full month, but the main trends are here.
 
-As a reminder, we've recently changed the workflow on Crowdin, so you should now translate in the "next-version" file in priority. [Read all about it](http://build.prestashop.com/news/do-you-speak-prestashop-july-2015-edition/).
+As a reminder, we've recently changed the workflow on Crowdin, so **you should now translate in the "next-version" file in priority**. [Read all about it here](http://build.prestashop.com/news/do-you-speak-prestashop-july-2015-edition/).
 
 
 ## Top contributors
@@ -92,7 +92,7 @@ In comparison with the previous month, these languages had the best progress in 
 
 * Galician (+61% to reach 21% translated)
 * Arabic (+9% to reach 37% translated)
-* Azerbiajaini (+6% to reach 17% translated)
+* Azerbaijaini (+6% to reach 17% translated)
 * Basque (+6% to reach 19% translated)
 * Czech (+5% to reach 98% translated)
 
@@ -118,7 +118,7 @@ These languages (still) need you as proofreaders as well:
 
 ![August 2015 best translation progress](/assets/images/2015/09/Build_Crowdin_proofreading_august.png)
 
-If you wish to help proofreading what has been translated, please [contact me on Crowdin](https://crowdin.com/profile/alex-even) with the language you’d like to proofread.
+If you wish to help proofreading what has been translated, please [contact me on Crowdin](https://crowdin.com/profile/alex-even) with the language you’d like to proofread. We need *your* help!
 
 
 
@@ -127,14 +127,14 @@ If you wish to help proofreading what has been translated, please [contact me on
 Here is an update on the latest initiatives from members of the translation community.
 
 #### Austrian German
-We've been asked to add this new language as, for example, legal terminology in Austrian German can differ from the German. It is based on the available German translation.
-The more, the merrier: if you want to help [translating PrestaShop in Austrian German](https://crowdin.com/project/prestashop-official/de-AT), join us!
+We've been asked to add this new language as, for example, legal terminology in Austrian German can differ from the German. It is based on the available German translation, so that only strings whose translation is different from the German one should be translated.
+If you want to help [translating PrestaShop in Austrian German](https://crowdin.com/project/prestashop-official/de-AT), join us!
 
 
 ## Miscellaneous
-**79 contributors** joined the project this month, for a **total of 2,130 members** at the end of August. Welcome to them!
-160 members (including PrestaShop employees) were active on the project this month (+76%). This is getting big!
-A total of **55,037 words have been translated** and 34,167 validated, in 46 different languages. It means less words translated and validated than the previous month (hey, we've all been enjoying the summer break!), but more active languages than the previous months! The community is growing, and this is great. :)
+* **79 contributors** joined the project this month, for a **total of 2,130 members** at the end of August. Welcome to them!
+* **160 members** (including PrestaShop employees) were active on the project this month (+76%). This is getting big!
+* A total of **55,037 words have been translated** and 34,167 validated, in **46 different languages**. It means less words translated and validated than the previous month (hey, we've all been enjoying the summer break!), but more active languages than the previous months! The community is growing, and this is great. :)
 
 Again, we can’t thank you enough!
 

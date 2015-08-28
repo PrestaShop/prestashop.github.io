@@ -2,7 +2,7 @@
 layout: post
 title:  "We're building a Starter Theme for PrestaShop 1.7.0.0"
 subtitle: "What we have in mind and how you can contribute"
-date:   2015-08-27 18:00:00
+date:   2015-08-28 12:00:00
 author: djfm
 icon: fa-code
 ---

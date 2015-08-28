@@ -123,6 +123,8 @@ As usual you can send us pull requests but if you want to work more closely with
 
 To make discussing the project between all involved easier we've created a <a href="https://gitter.im/PrestaShop/StarterTheme" target="_blank">gitter channel</a> so come talk with us!
 
+[![Join the chat at https://gitter.im/PrestaShop/StarterTheme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PrestaShop/StarterTheme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## But Aren't You Going to Break Everything?
 
 To be honest, it is likely. But it's a necessary evil.

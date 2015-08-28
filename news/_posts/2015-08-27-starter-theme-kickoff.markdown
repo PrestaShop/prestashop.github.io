@@ -37,7 +37,7 @@ For the Starter Theme to play this role it will need a **comprehensive documenta
 - the description of all variables available to each template
 - the list of all hooks found in a given template
 
-## What Will PrestaShop's Starter Theme look like?
+## What Will PrestaShop's Starter Theme Look Like?
 
 *Well it will look like \*\*\*\*, that's the point.*
 

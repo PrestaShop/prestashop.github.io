@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop Core Weekly - Weeks 32 & 33 & 34"
 subtitle: "An inside look at PrestaShop's codebase"
-date:   2015-08-28 16:37:41
+date:   2015-08-28 11:00:41
 author: xavierborderie
 icon: fa-calendar
 tags:
@@ -31,7 +31,7 @@ Of note among the merged PRs since the last Core Weekly Report:
  * In PR 3719, Core developer gaillafr deprecated Tools::jsonEncode/jsonDecode in favor of [PHP's native JSON functions](http://php.net/manual/en/ref.json.php).
  * In PR 3704, Core developer gaillafr some functions that were deprecatd since PrestaShop 1.5. [Check them out](https://github.com/PrestaShop/PrestaShop/pull/3704/files)!
  * In PR 3727, contributor Eolia made it possible to have a default value in Configuration::get().
- 
+
 
 
 ## Code changes
@@ -85,7 +85,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [3771](https://github.com/PrestaShop/PrestaShop/pull/3771): Search alias for words containing hyphens fail, by gRoussac.
  * [3774](https://github.com/PrestaShop/PrestaShop/pull/3774): 404 on images on small screens, by gRoussac.
 
- 
+
 
 #### Back office
 
@@ -133,7 +133,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [3709](https://github.com/PrestaShop/PrestaShop/pull/3709): Hightlight default combination into Product Quantities tab. Thank you prestamodule!
  * [3762](https://github.com/PrestaShop/PrestaShop/pull/3762): Fix notice, by gRoussac.
  * [3756](https://github.com/PrestaShop/PrestaShop/pull/3756): Fix product import dates. Thank you gskema!
- 
+
 
 #### Core
 
@@ -178,7 +178,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [3755](https://github.com/PrestaShop/PrestaShop/pull/3755): Fix issue with cover image, by jocel1.
 
 
- 
+
 #### Webservice
 
  * [3688](https://github.com/PrestaShop/PrestaShop/pull/3688): Fix current_state not filterable on Orders, by xGouley.
@@ -197,14 +197,14 @@ As always, click on the PR's number to open its page on GitHub.
 
  * [3744](https://github.com/PrestaShop/PrestaShop/pull/3744): no h2 in blockcart, by gRoussac.
  * [3746](https://github.com/PrestaShop/PrestaShop/pull/3746): undefined var in blocklayered, by gRoussac.
- 
+
 
 #### Importer/Exporter
 
  * [3621](https://github.com/PrestaShop/PrestaShop/pull/3621): fix default category update with first one, by xGouley.
  * [3728](https://github.com/PrestaShop/PrestaShop/pull/3728): use CSV native PHP function to export data, not Smarty!, by xGouley.
- 
- 
+
+
 #### Installer
 
  * [3608](https://github.com/PrestaShop/PrestaShop/pull/3608): Remove buggy script for upgrade process, by xGouley.
@@ -216,7 +216,7 @@ As always, click on the PR's number to open its page on GitHub.
 
  * [3623](https://github.com/PrestaShop/PrestaShop/pull/3623): Clear hook_alias cache, by jeromenadaud.
  * [3757](https://github.com/PrestaShop/PrestaShop/pull/3757): Remove PHP 5.3 from travis unit tests, by jeromenadaud.
- 
+
 #### Localization
 
  * [3627](https://github.com/PrestaShop/PrestaShop/pull/3627): add tabs translations in several languages, by AlexEven.

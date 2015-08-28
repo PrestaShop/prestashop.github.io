@@ -103,6 +103,14 @@ But since in the Starter Theme we wanted to make no assumption about which techn
 
 Want your columns to look like real columns ? Then it's your job to add the necessary classes and/or markup. If you think your customers have recent browsers you may just use flexbox and be done with it - we're not imposing anything, so no bootstrap.
 
+### Ongoing Reflection About Hooks
+
+We're keeping the existing hooks and we're probably going to add a few.
+
+In the future we'd also like to implement a system of widgets that you could add to any zone of your theme, thus generalizing a little bit what hooks are capable of.
+
+We don't know the details yet, but if you have ideas how we can make hooks better let us know!
+
 ## How Are We Going to Do It? Want to get involved?
 
 We believe that starting from scratch will give the best results to achieve the cleanest possible theme structure.

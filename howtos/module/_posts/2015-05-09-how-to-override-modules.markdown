@@ -27,7 +27,7 @@ It is not recommended to use an override in a module that you intend to distribu
 
 To override a module's instance class, you have to extend it, giving the extended class the same name and adding `Override` suffix:
 
-{% gist gskema/51aa05a814fa510a2202 %}
+<script src="https://gist.github.com/gskema/51aa05a814fa510a2202.js"></script>
 
 This file should be put in `/override/modules/blockuserinfo/blockuserinfo.php`.
  
@@ -41,7 +41,7 @@ Some modules (mainly core modules) have methods that can't be extended (at the m
 
 For example:
 
-{% gist gskema/04af5a98b56ee59f01e1 %}
+<script src="https://gist.github.com/gskema/04af5a98b56ee59f01e1.js"></script>
 
 As you can see, this class has a variety of properties and methods. Some methods are `public`, some are `protected` and others are `private`.
 
@@ -55,7 +55,7 @@ If you come across a core module method that is private, the best thing to do is
 
 Overrides are great, but do they keep up with the updates? We are talking about a situation where the whole function is copied to an override and one minor modification is made:
 
-{% gist gskema/751e2791b35008beb71f %}
+<script src="https://gist.github.com/gskema/751e2791b35008beb71f.js"></script>
 
 We added the line `'company_name' => ($this->context->customer->logged ? $this->context->customer->company : false),`, which adds a `company_name` Smarty variable that we want to use in our template.
 
@@ -63,7 +63,7 @@ The problem is that we essentially "snapshotted" the method code that we took fr
 
 When the code structure and logic allows it, you should always aim to execute the whole unmodified parent method **and then** (before or after) add that one little modification. The way you can do this is by using `parent` keyword, which calls the method from the parent class:
 
-{% gist gskema/0adf2da86ff78750d161 %}
+<script src="https://gist.github.com/gskema/0adf2da86ff78750d161.js"></script>
 
 In the example above, we add our Smarty variable, and then return the parent method, which will call the unmodified and possibly updated `hookDisplayTop` method. There is no need to copy the whole method.
 

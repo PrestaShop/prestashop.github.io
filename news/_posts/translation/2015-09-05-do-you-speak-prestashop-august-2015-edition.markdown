@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Do you speak PrestaShop? – Auguest 2015 edition"
+title:  "Do you speak PrestaShop? – August 2015 edition"
 subtitle: "The awesome work of our multilingual community"
 date:   2015-09-05 10:29:47
 author: alexeven

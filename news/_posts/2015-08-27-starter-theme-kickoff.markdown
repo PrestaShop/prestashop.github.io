@@ -35,7 +35,7 @@ For the Starter Theme to play this role it will need a **comprehensive documenta
 
 - the list of mandatory templates
 - the description of all variables available to each template
-- the list of all hooks found in a given template 
+- the list of all hooks found in a given template
 
 ## What Will PrestaShop's Starter Theme look like?
 
@@ -73,13 +73,13 @@ In our templates today, almost every HTML tag has at least one class. This feels
 
 We're going to put a few classes in the Starter Theme markup, but as few as possible. Just the really important ones.
 
-### Classes are For Styling, Not for Javascript
+### Classes are For Styling, Not for Javascript (mostly)
 
-In the Starter Theme, HTML classes that are not used for styling will be removed.
+In the Starter Theme we will try to remove all HTML classes that are not used for styling.
 
-Javascript (from modules, the theme or the core) should not rely on classes to bind on events or perform other actions on the DOM.
+Javascript (from modules, the theme or the core) should not rely on classes to bind on events or perform other operations on the DOM.
 
-Javascript may only rely on:
+Javascript should only rely on:
 
 - `id`s
 - `data-*` attributes
@@ -90,7 +90,7 @@ And probably other things too, but almost never HTML classes and when using clas
 
 The goal of this convention is to:
 
-- avoid bloating the HTML markup with things designers are not interested in: a designer expects a class to be used for styling and knows that they can remove any class they wish without breaking functionality
+- avoid bloating the HTML markup with things designers are not interested in: a designer expects a class to be used for styling and knows they can remove any class they wish without breaking functionality
 - make it easy to keep the Javascript working with different themes: we'll keep our selectors simple in the Starter Theme, adding `data-*` attributes or `id`s where needed so that when you move things around everything keeps working smoothly
 
 ### No Bootstrap
@@ -112,6 +112,8 @@ We've created a <a href="https://github.com/PrestaShop/StarterTheme" target="_bl
 We know many people are interested in this project and wish to contribute. Contributions are very welcome as there will be more than enough work for everyone :)
 
 As usual you can send us pull requests but if you want to work more closely with us, just write to us and we'll work something out.
+
+To make discussing the project between all involved easier we've created a <a href="https://gitter.im/PrestaShop/StarterTheme" target="_blank">gitter channel</a> so come talk with us!
 
 ## But Aren't You Going to Break Everything?
 

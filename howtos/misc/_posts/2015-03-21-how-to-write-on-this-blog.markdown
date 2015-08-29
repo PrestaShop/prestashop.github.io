@@ -36,7 +36,7 @@ Write to us with your idea (we can be reached at build@prestashop.com), with a r
 
 You don’t have to read all the details below: if you want to write an article right away, you can simply follow those steps:
 
-1. Fork [the repo](https://github.com/PrestaShop/build.prestashop.com) (see [GitHub doc](https://help.github.com/articles/fork-a-repo/))
+1. Fork [the repo](https://github.com/PrestaShop/prestashop.github.io) (see [GitHub doc](https://help.github.com/articles/fork-a-repo/))
 1. Download [this sample file](https://gist.githubusercontent.com/julienbourdeau/98a944e00c3ceb5dff5e/raw/a7d6c292ca501c66cb24e34ff805630f1289c306/2015-12-31-demo-post.markdown){: download="2015-12-31-demo-post.markdown"}.
 1. Rename it according to the date and your topic **(NOTE: the date in the file name is mandatory)**.
 1. Move it to the right folder: `news/_posts` for a blog post, `howtos/CATEGORY` for a tutorial.
@@ -63,25 +63,22 @@ In order to get the blog working locally, you will need a few (command line) too
 on their respective websites, according to your OS.
 
 * [Ruby](https://www.ruby-lang.org/en/documentation/installation/) (I use Ruby 2.0.0)
-* [NPM](https://www.npmjs.com/)
-* [Bower](http://bower.io/)
 * [Bundler](http://bundler.io/)
 
-Download them, install them, then come back here for more! Of course you can also read their doc and get acquainted about the awesome NPM, Bower and Bundler tools -- they might be of great use for your other web projects!
+Download them, install them, then come back here for more! Of course you can also read their doc and get acquainted about the awesome Bundler tools -- they might be of great use for your other web projects!
 
 
 ### Forking and cloning
 
-Next, [fork](https://help.github.com/articles/fork-a-repo/) [the build.prestashop.com repo](https://github.com/PrestaShop/build.prestashop.com) into your GitHub account, then [clone it](https://help.github.com/articles/fetching-a-remote/) on your local machine.
+Next, [fork](https://help.github.com/articles/fork-a-repo/) [the prestashop.github.io repo](https://github.com/PrestaShop/prestashop.github.io) into your GitHub account, then [clone it](https://help.github.com/articles/fetching-a-remote/) on your local machine.
 
 
 ### Installing dependencies and building Jekyll
 
-*Bundler* will install Jekyll and all the Ruby dependencies. Then *Bower* will install all the front-end required libraries, such as 'bootstrap-sass' and 'fontawesome'. Finally, we use Bundler to build Jekyll and _watch_ any file change.
+*Bundler* will install Jekyll and all the Ruby dependencies. We'll also use it to build Jekyll and _watch_ any file change.
 
 {% highlight bash %}
 bundle install
-bower install
 bundle exec jekyll build --watch
 {% endhighlight %}
 
@@ -251,12 +248,10 @@ class IndexControllerCore extends FrontController
 
 #### Embed a GitHub gist
 
-If your code will or may be updated, you can easily embed a a [GitHub gist](https://gist.github.com/) using the Liquid's `gist` tag.
+If your code will or may be updated, you can easily embed a a [GitHub gist](https://gist.github.com/) using the embeded HTML code.
 
-{% highlight liquid %}
-{% raw %}
-{% gist YOUR_GIST_USER_ID/YOUR_GIST_ID %}
-{% endraw %}
+{% highlight html %}
+<script src="https://gist.github.com/your-username/your-gist-id.js"></script>
 {% endhighlight %}
 
 
@@ -265,27 +260,19 @@ If your code will or may be updated, you can easily embed a a [GitHub gist](http
 
 We use a simple FontAwesome plugin that lets you display any icon using the following syntax:
 
-{% highlight liquid %}
-{% raw %}
-{% icon ICON_NAME OPTIONS %}
-{% icon fa-coffee fa-2x %}
-{% endraw %}
+{% highlight html %}
+<i class="fa fa-coffee fa-2x"></i>
 {% endhighlight %}
 
 
 ### Alerts
 
-If you want to highlight some content (hint, note, tip, alert, etc.), we have few types of highlighting available. They are similar to [alerts from Bootstrap](http://getbootstrap.com/components/#alerts).
+If you want to highlight some content (hint, note, tip, alert, etc.), we have few types of highlighting available. They are based on [alerts from Bootstrap](http://getbootstrap.com/components/#alerts).
 
-{% highlight liquid %}
-{% raw %}
-{% alert TYPE  SHOW_TITLE %}
+{% highlight html %}
+<div class="alert alert-note" role="alert">
 You content goes here. **Markdown** _is_ `supported`.
 </div>
-{% endraw %}
 {% endhighlight %}
 
-| Parameter | Description |
-|-----------|-------------|
-| `TYPE` | **Mandatory**. Define the type of hint: note/info/important/tip. |
-| `SHOW_TITLE` | **Optional**. Hide title like "note" or "tip" with icon. Default: true |
+You can use: `alert-note`, `alert-info`, `alert-important`, `alert-tips`.

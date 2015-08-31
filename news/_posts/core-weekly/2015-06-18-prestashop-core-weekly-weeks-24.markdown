@@ -14,11 +14,11 @@ This edition of the Core Weekly report highlights changes in PrestaShop core cod
 
 ## Milestones
 
-The Core team is working on version 1.6.1.0, and the fourth Release Candidate version still needs some testing! [Read all about it here](http://build.prestashop.com/news/prestashop-1-6-1-0-rc4/)!
+The Core team is working on version 1.6.1.0, and the fourth Release Candidate version still needs some testing! [Read all about it here](/news/prestashop-1.6.1.0-rc4/)!
 
 It was a short week, since last Thursday we organized the PrestaShop Day in Paris ([see the official report here](https://www.prestashop.com/blog/en/prestashopday-recapping-amazing-event/)), and the whole team was attending and even presenting workshops for potential contributors and partners. We hope you learnt a lot! We will try to publish the slides of our workshops very soon right here on the Build PrestaShop devblog.
 
-As a reminder, we recently chose to [change our Coding Standards to PSR-2](http://build.prestashop.com/news/prestashop-moves-to-psr-2/), and to [adopt a SemVer-like versioning scheme](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/).
+As a reminder, we recently chose to [change our Coding Standards to PSR-2](/news/prestashop-moves-to-psr-2/), and to [adopt a SemVer-like versioning scheme](/news/a-more-semantic-versioning-scheme/).
 
 Of note among the merged PRs last week:
 
@@ -31,18 +31,18 @@ Of note among the merged PRs last week:
 Let's review the merged pull-requests from the previous two weeks!
 
 As always, click on the PR's number to open its page on GitHub.
- 
+
 #### Front office
 
  * [3162](https://github.com/PrestaShop/PrestaShop/pull/3162): Advanced EU Compliance fixes, by tchauviere.
  * [3077](https://github.com/PrestaShop/PrestaShop/pull/3077): Fix bug triggered when adding customizable product twice in cart, by kelu95.
  * [3050](https://github.com/PrestaShop/PrestaShop/pull/3050): Fix bug triggered when adding new customized product into new order, by kelu95.
- 
+
 #### Back office
 
  * [3155](https://github.com/PrestaShop/PrestaShop/pull/3155): Add the possibility to re-send the order emails, by maximebiloe.
  * [3138](https://github.com/PrestaShop/PrestaShop/pull/3138): Filter SAV by shop, by maximebiloe.
- 
+
 #### Core
 
  * [3160](https://github.com/PrestaShop/PrestaShop/pull/3160): Better way to handle DB prefixes, by tchauviere.

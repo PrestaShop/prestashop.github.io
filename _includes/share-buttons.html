@@ -4,7 +4,7 @@
 <ul class="list-group">
 
   <li>
-    <a class="list-group-item" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+    <a class="list-group-item" href="https://twitter.com/intent/tweet?text={{ page.title | escape }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{ site.twitter_username }}&amp;related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
       <i class="fa fa-twitter-square"></i> Twitter
     </a>
   </li>

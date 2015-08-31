@@ -24,7 +24,7 @@ spotify_username: prestacrew
 markdown: kramdown
 highlighter: pygments
 
-exclude: ["bower.json", "bower_components", "Gemfile", "Gemfile.lock", ".travis.yml"]
+exclude: ["bower.json", "bower_components", "Gemfile", "Gemfile.lock", ".travis.yml", "vendor"]
 
 sass:
     load_paths:

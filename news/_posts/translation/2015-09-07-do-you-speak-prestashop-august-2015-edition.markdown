@@ -96,7 +96,7 @@ In comparison with the previous month, these languages had the best progress in 
 * Basque (+6% to reach 19% translated)
 * Czech (+5% to reach 98% translated)
 
-![August 2015 best translation progress](/assets/images/2015/09/Build_Crowdin_progress_august15.png)
+![August 2015 best translation progress](/assets/images/2015/09/Build_Crowdin_progess_august15.png)
 
 Congratulations to all our contributors for the hard work!!
 
@@ -116,7 +116,7 @@ These languages (still) need you as proofreaders as well:
 * Vietnamese (42% vs 16%)
 
 
-![August 2015 best translation progress](/assets/images/2015/09/Build_Crowdin_proofreading_august.png)
+![August 2015 best translation progress](/assets/images/2015/09/Build_Crowdin_proofreading_august15.png)
 
 If you wish to help proofreading what has been translated, please [contact me on Crowdin](https://crowdin.com/profile/alex-even) with the language you’d like to proofread. We need *your* help!
 

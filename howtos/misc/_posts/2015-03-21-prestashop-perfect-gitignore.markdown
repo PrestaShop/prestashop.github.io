@@ -4,7 +4,7 @@ title:  "Create the perfect .gitignore file for your PrestaShop projects"
 subtitle: "Commit only the right files"
 date:   2015-04-20 11:21:00
 disqus_url: "http://build.prestashop.com/misc/prestashop-perfect-gitignore/"
-author: julienbourdeau
+author:  [ julienbourdeau ]
 icon: fa-code-fork
 tags: [git, gitignore]
 published: true

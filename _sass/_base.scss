@@ -157,9 +157,16 @@ li {
                 color: $grey-color;
                 font-size: 0.8em;
             }
+            span.multiple {
+                display: inline;
+            }
         }
         p {
             font-size: 0.9em;
+        }
+        .author-item {
+            border-bottom: 1px solid $grey-color-light;
+            padding: 10px 0;
         }
     }
 }
@@ -444,7 +451,12 @@ li code {
 }
 .author-avatar {
     margin-bottom: 0.5*$spacing-unit;
-    max-width: 40%;
+    img {
+        float: left;
+        max-width: 40%;
+        margin-right: 8%;
+        margin-bottom: 8%;
+    }
 }
 .author-name {
 	font-size: 0.9em;

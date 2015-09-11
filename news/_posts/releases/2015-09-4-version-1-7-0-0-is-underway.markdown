@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop 1.7.0.0 is Underway"
 subtitle: "Our plans for the next major version of PrestaShop"
 date:   2015-09-04 17:00:00
-author: sLevaillant
+author:  [ sLevaillant ]
 icon: fa-leaf
 ---
 

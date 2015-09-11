@@ -1,10 +1,12 @@
-{% assign author=site.data.authors[page.author] %}
-
-<div class="author-avatar">
-  <img class="img-circle" src="{{ author.avatar }}" alt="{{ author.display_name }}'s photo">
+<div class="author-avatar clearfix">
+  {% for a in page.author %}
+    <img class="img-circle" src="{{ site.data.authors[a]["avatar"] }}" alt="{{ site.data.authors[a]["display_name"] }}'s photo">
+  {% endfor %}
 </div>
 
 <div class="aside-meta">Written by</div>
 <p class="author-name">
-  {{ author.display_name }}
+  {% for a in page.author %}
+    {{ site.data.authors[a]["display_name"] }} <br />
+  {% endfor %}
 </p>

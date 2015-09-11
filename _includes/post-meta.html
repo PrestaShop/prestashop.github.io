@@ -26,39 +26,87 @@
 
           <div class="row">
             <div class="col-md-11 col-md-offset-1">
-              <h5>About the author</h5>
 
-              <h4>
-                {{ author.display_name }}
-                <span>{{ author.role }}</span>
-              </h4>
-              <p>{{ author.description }}</p>
+              {% if page.author.size > 1 %}
 
-              {% if author.github %}
-                <a class="btn btn-default btn-sm" href="https://github.com/{{ author.github }}">
-                  <i class="fa fa-github"></i> GitHub
-                </a>
+                <h5>About the authors</h5>
+
+                {% for a in page.author %}
+                <div class="author-item">
+
+                  <h4>
+                    {{ site.data.authors[a]["display_name"] }}
+                    <span class="multiple">{{ site.data.authors[a]["role"] }}</span>
+                  </h4>
+
+                  {% if site.data.authors[a]["github"] %}
+                    <a class="btn btn-default btn-sm" href="https://github.com/{{ site.data.authors[a]["github"] }}">
+                      <i class="fa fa-github"></i> GitHub
+                    </a>
+                  {% endif %}
+                  {% if site.data.authors[a]["forum"] %}
+                    <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/{{ site.data.authors[a]["forum"] }}">
+                      <i class="fa fa-comments"></i> Forum
+                    </a>
+                  {% endif %}
+                  {% if site.data.authors[a]["crowdin"] %}
+                    <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/{{ site.data.authors[a]["crowdin"] }}">
+                      <i class="fa fa-language"></i> Crowdin
+                    </a>
+                  {% endif %}
+                  {% if site.data.authors[a]["twitter"] %}
+                    <a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.data.authors[a]["twitter"] }}">
+                      <i class="fa fa-twitter"></i> Twitter
+                    </a>
+                  {% endif %}
+                  {% if site.data.authors[a]["website"] %}
+                    <a class="btn btn-default btn-sm" href="{{ site.data.authors[a]["website"] }}">
+                      <i class="fa fa-home"></i> Website
+                    </a>
+                  {% endif %}
+
+                </div>
+                {% endfor %}
+
+              {% else %}
+                {% assign author=site.data.authors[page.author.first] %}
+
+                <h5>About the author</h5>
+
+                <h4>
+                  {{ author.display_name }}
+                  <span>{{ author.role }}</span>
+                </h4>
+                <p>{{ author.description }}</p>
+
+                {% if author.github %}
+                  <a class="btn btn-default btn-sm" href="https://github.com/{{ author.github }}">
+                    <i class="fa fa-github"></i> GitHub
+                  </a>
+                {% endif %}
+                {% if author.forum %}
+                  <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/{{ author.forum }}">
+                    <i class="fa fa-comments"></i> Forum
+                  </a>
+                {% endif %}
+                {% if author.crowdin %}
+                  <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/{{ author.crowdin }}">
+                    <i class="fa fa-language"></i> Crowdin
+                  </a>
+                {% endif %}
+                {% if author.twitter %}
+                  <a class="btn btn-default btn-sm" href="https://twitter.com/{{ author.twitter }}">
+                    <i class="fa fa-twitter"></i> Twitter
+                  </a>
+                {% endif %}
+                {% if author.website %}
+                  <a class="btn btn-default btn-sm" href="{{ author.website }}">
+                    <i class="fa fa-home"></i> Website
+                  </a>
+                {% endif %}
+
               {% endif %}
-              {% if author.forum %}
-                <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/{{ author.forum }}">
-                  <i class="fa fa-comments"></i> Forum
-                </a>
-              {% endif %}
-              {% if author.crowdin %}
-                <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/{{ author.crowdin }}">
-                  <i class="fa fa-language"></i> Crowdin
-                </a>
-              {% endif %}
-              {% if author.twitter %}
-                <a class="btn btn-default btn-sm" href="https://twitter.com/{{ author.twitter }}">
-                  <i class="fa fa-twitter"></i> Twitter
-                </a>
-              {% endif %}
-              {% if author.website %}
-                <a class="btn btn-default btn-sm" href="{{ author.website }}">
-                  <i class="fa fa-home"></i> Website
-                </a>
-              {% endif %}
+
             </div>
 
           </div>

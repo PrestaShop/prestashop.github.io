@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop Official Icon Pack - Beta"
 subtitle: "We're cooking some fresh icons for you!"
 date:   2015-08-07 15:12:00
-author: agriveau
+author:  [ agriveau ]
 icon: fa-star
 tags: [news]
 ---

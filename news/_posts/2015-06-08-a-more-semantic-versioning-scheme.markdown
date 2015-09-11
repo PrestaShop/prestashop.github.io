@@ -3,7 +3,7 @@ layout: post
 title:  "A more semantic versioning scheme"
 subtitle: "Moving towards SemVer"
 date:   2015-06-08 17:56:00
-author: xavierborderie
+author:  [ xavierborderie ]
 icon: fa-code-fork
 tags:
  - version

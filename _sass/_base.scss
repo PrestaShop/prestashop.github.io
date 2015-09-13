@@ -145,6 +145,11 @@ li {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        li i {
+            display: block;
+            float: left;
+            padding: 5px;
+        }
     }
     .author-details {
         h5 {
@@ -189,8 +194,8 @@ ul.post-list {
             i {
                 width: 32px;
                 text-align: center;
-                font-size: 55%;
-                margin: 10px 0 0 -40px;
+                font-size: 70%;
+                margin: 6px 0 0 -40px;
                 position: absolute;
                 color: $grey-color;
             }
@@ -505,8 +510,9 @@ footer.site-footer {
         color: $grey-color;
 
     }
-    .fa {
-        margin: 0 6px;
+    [class^="icon-"] {
+        margin: 0 $spacing-unit/3;
+        font-size: 140%;
     }
     a {
         color: $grey-color !important;
@@ -515,7 +521,7 @@ footer.site-footer {
         }
     }
     .separator {
-        font-size: 1em;
+        font-size: 2em;
         color: $grey-color;
 
     }

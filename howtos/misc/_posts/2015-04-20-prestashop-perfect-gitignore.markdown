@@ -46,7 +46,7 @@ If you host your project on GitHub, you can choose to initialize your project wi
 
 We recently [updated it](https://github.com/github/gitignore/pull/1479), as a result you'll get the file below ([direct link](https://github.com/github/gitignore/blob/master/Prestashop.gitignore)):
 
-{% gist julienbourdeau/0f7d629cb7f9bc6995fc %}
+<script src="https://gist.github.com/julienbourdeau/0f7d629cb7f9bc6995fc.js"></script>
 
 ## Without core files
 

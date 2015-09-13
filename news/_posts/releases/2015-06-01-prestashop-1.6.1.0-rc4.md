@@ -4,7 +4,7 @@ title:  "Test PrestaShop 1.6.1.0 RC4!"
 subtitle: "Let's make it unbreakable!"
 date:   2015-06-09 19:29:47
 author: xavierborderie
-icon: fa-leaf
+icon: icon-leaf
 disqus_url: http://build.prestashop.com/news/prestashop-1.6.0.1-rc4/
 tags:
  - 1.6.1.x

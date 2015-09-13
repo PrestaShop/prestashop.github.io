@@ -4,7 +4,7 @@ title:  "PrestaShop Core Weekly - Week 10"
 subtitle: "An inside look at PrestaShop"
 date:   2015-03-12 14:14:47
 author:  [ xavierborderie ]
-icon: fa-calendar
+icon: icon-calendar
 tags:
  - core-weekly
 ---

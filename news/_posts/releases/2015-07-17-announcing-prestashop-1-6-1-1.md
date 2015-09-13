@@ -4,7 +4,7 @@ title:  "Announcing PrestaShop 1.6.1.1"
 subtitle: "Fixing the non-critical issues"
 date:   2015-07-17 18:54:47
 author: xavierborderie
-icon: fa-check-square-o
+icon: icon-checked
 tags:
  - 1.6.1.x
  - 1.6.1.1

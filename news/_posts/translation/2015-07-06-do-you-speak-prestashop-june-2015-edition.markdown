@@ -4,7 +4,7 @@ title:  "Do you speak PrestaShop? – June 2015 edition"
 subtitle: "The awesome work of our multilingual community"
 date:   2015-07-09 10:29:47
 author:  [ alexeven ]
-icon: fa-globe
+icon: icon-globe
 tags: [translation, i18n, l10n]
 ---
 

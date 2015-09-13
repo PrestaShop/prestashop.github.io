@@ -4,7 +4,7 @@ title:  "PrestaShop && the PSR-2 coding style guide"
 subtitle: "Adopting a common coding standard"
 date:   2015-06-03 18:54:00
 author:  [ jeromenadaud ]
-icon: fa-code
+icon: icon-code
 tags: [PSR-2, Norm, PHP-FIG, Coding Standards]
 published: true
 ---
@@ -66,7 +66,7 @@ For your future modules, please follow the PSR-2 coding standards: this will ben
 Now it is time to see where the PrestaShop Coding Standards and PSR-2 differ.
 
 <div class="alert alert-important" role="alert">
-<h4><i class='fa fa-exclamation-triangle'></i> Important</h4>
+<h4><i class='icon-fire'></i> Important</h4>
 At the time of writing, namespaces and closures are not allowed, because we first need to announce the switch to PHP 5.4 as the minimum version supported by PrestaShop.
 
 This will be announced very soon, and applied in the coming year.

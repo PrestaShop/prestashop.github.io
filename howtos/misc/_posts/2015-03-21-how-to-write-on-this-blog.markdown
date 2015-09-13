@@ -5,7 +5,7 @@ subtitle: "or: How we tried to ensure that only developers could write on the de
 date:   2015-03-04 15:12:00
 disqus_url: "http://build.prestashop.com/misc/how-to-write-on-this-blog/"
 author:  [ julienbourdeau ]
-icon: fa-pencil
+icon: icon-pen
 tags: [help]
 published: true
 ---
@@ -28,7 +28,7 @@ best option out there -- and **you can actually make a *Pull Request* on GitHub 
 ## TL;DR
 
 <div class="alert alert-note" role="alert">
-<h4><i class='fa fa-file-text-o'></i> Note</h4>
+<h4><i class='icon-file'></i> Note</h4>
 First: tell us what you want to write about! We won't accept just about any submission :)
 
 Write to us with your idea (we can be reached at build@prestashop.com), with a rough idea or the whole thing ready, and let's talk about it. Once we agree on the subject, then you are good to go!
@@ -83,7 +83,7 @@ bundle exec jekyll build --watch
 {% endhighlight %}
 
 <div class="alert alert-note" role="alert">
-<h4><i class='fa fa-file-text-o'></i> Note</h4>
+<h4><i class='icon-file'></i> Note</h4>
 When you're using the `--watch` option, it only watches content and styles. So if you are changing any plugin or any line in your `_config.yml`, you'll have to quit (`ctrl+C`) and rebuild.
 </div>
 
@@ -106,7 +106,7 @@ With Jekyll, the location of your files matter. On this blog, we have two kinds 
 page which is sorted by topic.
 
 <div class="alert alert-note" role="alert">
-<h4><i class='fa fa-file-text-o'></i> Note</h4>
+<h4><i class='icon-file'></i> Note</h4>
 If you need to create a new topic, create a subfolder in `howtos` and edit the `howtos` configuration in `_config.yml`.
 
 The topics are displayed in the same order as shown in the `_config.yml` file.
@@ -137,7 +137,7 @@ title:  "Here goes the title of your article"
 subtitle: "This text will be displayed below your title"
 date:   2015-03-04 15:12:00
 author:  [ julienbourdeau ]
-icon: fa-pencil
+icon: icon-pen
 tags: [sample, tags, example]
 published: false
 ---
@@ -146,7 +146,7 @@ published: false
 I assume you will understand what you are supposed to change. *Icon* can be [any icon from FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/).
 
 <div class="alert alert-important" role="alert">
-<h4><i class='fa fa-exclamation-triangle'></i> Important</h4>
+<h4><i class='icon-fire'></i> Important</h4>
 Articles must be submitted with the 'published' setting set to false. We will only publish it after review.
 </div>
 
@@ -261,7 +261,7 @@ If your code will or may be updated, you can easily embed a a [GitHub gist](http
 We use a simple FontAwesome plugin that lets you display any icon using the following syntax:
 
 {% highlight html %}
-<i class="fa fa-coffee fa-2x"></i>
+<i class="icon-store"></i>
 {% endhighlight %}
 
 

@@ -39,12 +39,12 @@ gems:
 # Page collection are used for how-tos pages
 howtos:
 - theme:
-    icon: fa-text-width
+    icon: fa-crop
 - module:
-    icon: fa-plug
+    icon: fa-lightning
 - pdf:
-    icon: fa-file-pdf-o
+    icon: fa-file
 - misc:
     icon: fa-random
 - upgrade:
-    icon: fa-refresh
+    icon: fa-retweet-1

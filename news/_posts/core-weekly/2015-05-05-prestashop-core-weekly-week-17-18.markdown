@@ -4,7 +4,7 @@ title:  "PrestaShop Core Weekly - Week 17 & 18"
 subtitle: "An inside look at PrestaShop's codebase"
 date:   2015-05-05 18:29:47
 author:  [ xavierborderie ]
-icon: fa-calendar
+icon: icon-calendar
 tags:
  - core-weekly
 ---

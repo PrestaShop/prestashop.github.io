@@ -4,7 +4,7 @@ title:  "A more semantic versioning scheme"
 subtitle: "Moving towards SemVer"
 date:   2015-06-08 17:56:00
 author:  [ xavierborderie ]
-icon: fa-code-fork
+icon: icon-branch
 tags:
  - version
  - versioning

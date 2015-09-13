@@ -4,7 +4,7 @@ title:  "Architecture Improvements in 1.6.1.0"
 subtitle: "Cool new toys for PrestaShop developers"
 date:   2015-05-21 19:13:37
 author: djfm
-icon: fa-code
+icon: icon-code
 tags:
  - releases
  - architecture

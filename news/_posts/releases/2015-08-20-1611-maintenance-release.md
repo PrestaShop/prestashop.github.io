@@ -4,7 +4,7 @@ title:  "Release of PrestaShop 1.6.1.1 "
 subtitle: "Maintenance version of the 1.6.1.x branch"
 date:   2015-08-20 12:00:41
 author: xavierborderie
-icon: fa-leaf
+icon: icon-leaf
 tags:
  - version
  - maintenance

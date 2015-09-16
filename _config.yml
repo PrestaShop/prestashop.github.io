@@ -31,6 +31,9 @@ sass:
         - _sass
     style: compressed
 
+gems:
+    - jemoji
+
 # Page collection are used for how-tos pages
 howtos:
 - theme:

@@ -55,7 +55,7 @@ You can even get GitHub to do most of the work for you: see the video below.
 
 You only need this section if you intend to set everything up locally. You don’t have to do that, but let’s be honest, when you write your article, you want to preview how it will render, before sending it over to us :)
 
-Still, this is pretty much developer-targetted, so beware: technical stuffs ahead!
+Still, this is pretty much developer-targetted, so beware: technical stuffs ahead! :trollface:
 
 ### Installing the required software
 

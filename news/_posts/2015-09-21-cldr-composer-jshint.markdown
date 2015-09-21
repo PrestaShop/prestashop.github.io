@@ -77,4 +77,4 @@ Regular users are therefore not able to install PS 1.7 easily in its current sta
 
 #### One last thing
 
-These are just the first part of big changes when are coming in PrestaShop 1.7. Come back soon on the Build devblog to learn how we plan on using [Symfony2 components](http://symfony.com/components), the [Twig template engine](http://twig.sensiolabs.org/) and more. Let’s keep in touch!
+These are just the first part of big changes which are coming in PrestaShop 1.7. Come back soon on the Build devblog to learn how we plan on using [Symfony2 components](http://symfony.com/components), the [Twig template engine](http://twig.sensiolabs.org/) and more. Let’s keep in touch!

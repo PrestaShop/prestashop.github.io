@@ -21,7 +21,7 @@ A month after the release of 1.6.1.1 and more than 2 months after the release of
 
 As this is a [patch version](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/), 1.6.1.2 will only fix issues -- patch version are not meant to add features, only to make them work better! Therefore, it will be a very easy upgrade from 1.6.1.0 and 1.6.1.1.
 
-Of particular interest is the fact that **this version fixes a long-standing issue of slowness in the back-office**. We really, really, really need your feedback on this one! Is it really fixed in all situations? Does your slowness issue remain the same? Let us know [on this Forge ticket](http://forge.prestashop.com/browse/PSCSX-6601)!
+Of particular interest is the fact that **this version fixes a long-standing issue of slowness in the back-office**. We really, really, really need your feedback on this one! Is it really fixed in all situations? Does your slowness issue remain the same? Let us know!
 
 Remember! This is the first release candidate for 1.6.1.2, NOT the final, production-ready code! <b>This is a test version</b>, and is therefore not yet deemed suitable for production use. Hence, do not upgrade your store just yet! Install the RC1 on your server (on as many server configurations as possible), or upgrade from a clone of your real store.
 

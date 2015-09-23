@@ -13,7 +13,7 @@ tags:
  - 1.6.1.x
 ---
 
-As mentionned in the [previous Core Weekly report](http://build.prestashop.com/news/coreweekly-35-36/), the team is working on a second patch version of 1.6.1.0 (meaning: on version 1.6.1.2).
+As mentionned in the [previous Core Weekly report](http://build.prestashop.com/news/coreweekly-35-36/), the team is working on version 1.6.1.2, which after v1.6.1.1 is the second patch version of 1.6.1.0.
 
 Like we did for v1.6.1.1, we want to give v1.6.1.2 a solid testing phase: we are planning two weeks for feedback on the issues that were fixed. This testing phase starts today, with the availability of the first Release Candidate version, or RC1 for short.
 
@@ -21,16 +21,16 @@ A month after the release of 1.6.1.1 and more than 2 months after the release of
 
 As this is a [patch version](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/), 1.6.1.2 will only fix issues -- patch version are not meant to add features, only to make them work better! Therefore, it will be a very easy upgrade from 1.6.1.0 and 1.6.1.1.
 
-Of particular interest is the fact that this version fixes a long-standing issue of slowness in the back-office. We really, really, really need your feedback on this one! Is it really fixed in all situations? Does your slowness issue remain the same? Let us know [on this Forge ticket](http://forge.prestashop.com/browse/PSCSX-6601)!
+Of particular interest is the fact that **this version fixes a long-standing issue of slowness in the back-office**. We really, really, really need your feedback on this one! Is it really fixed in all situations? Does your slowness issue remain the same? Let us know [on this Forge ticket](http://forge.prestashop.com/browse/PSCSX-6601)!
 
-Remember! This is the first release candidate for 1.6.1.2, NOT the final, production-ready code! This is a test version, and is therefore not yet deemed suitable for production use. Hence, do not upgrade your store just yet! Install the RC1 on your server (on as many server configurations as possible), or upgrade from a clone of your real store.
+Remember! This is the first release candidate for 1.6.1.2, NOT the final, production-ready code! <b>This is a test version</b>, and is therefore not yet deemed suitable for production use. Hence, do not upgrade your store just yet! Install the RC1 on your server (on as many server configurations as possible), or upgrade from a clone of your real store.
 
 [Download and test PrestaShop 1.6.1.2 RC1 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
-You can also use the 1-Click Upgrade module, on the RC channel :)
+You can also use the 1-Click Upgrade module, on the Release Candidate channel -- from a test shop, of course :)
 
-Remember: if you have any feedback to give, [create a ticket on the Forge](http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop)!
+Remember: if you have any feedback to give or issue to raise, [create a ticket on the Forge](http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop)!
 
 Here is the [list of pull-requests that the team has merged into 1.6.1.2](https://github.com/PrestaShop/PrestaShop/pulls?page=1&q=is%3Apr+base%3A1.6.1.x+is%3Aclosed+merged%3A%3E2015-08-17&utf8=%E2%9C%93) so far:
 

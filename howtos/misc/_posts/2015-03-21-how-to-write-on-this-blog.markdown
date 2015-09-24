@@ -73,18 +73,23 @@ Download them, install them, then come back here for more! Of course you can als
 Next, [fork](https://help.github.com/articles/fork-a-repo/) [the prestashop.github.io repo](https://github.com/PrestaShop/prestashop.github.io) into your GitHub account, then [clone it](https://help.github.com/articles/fetching-a-remote/) on your local machine.
 
 
-### Installing dependencies and building Jekyll
+### Installing dependencies and running Jekyll
 
-*Bundler* will install Jekyll and all the Ruby dependencies. We'll also use it to build Jekyll and _watch_ any file change.
+*Bundler* will install Jekyll and all the Ruby dependencies. We'll also use it to run the blog on a local server.
 
 {% highlight bash %}
-bundle install
-bundle exec jekyll build --watch
+$ bundle install
+$ bundle exec jekyll serve
+---
+Server address: http://0.0.0.0:4000/
+Server running... press ctrl-c to stop.
 {% endhighlight %}
+
+Open a browser window, and go to `http://0.0.0.0:4000/`, and you should see the blog running.
 
 <div class="alert alert-note" role="alert">
 <h4><i class='icon-file'></i> Note</h4>
-When you're using the `--watch` option, it only watches content and styles. So if you are changing any plugin or any line in your `_config.yml`, you'll have to quit (`ctrl+C`) and rebuild.
+The `jekyll serve` command only watches content and styles. So if you are changing any plugin or any line in your `_config.yml`, you'll have to quit (`ctrl+C`) and rebuild.
 </div>
 
 

@@ -4,7 +4,7 @@ title:  "Introducing a new branching model for PrestaShop"
 subtitle: "Do the right thing!"
 date:   2015-08-27 18:13:37
 author: [ julienbourdeau, alexeven, xavierborderie ]
-icon: fa-code-fork
+icon: icon-branch
 tags:
  - releases
  - contributing
@@ -52,7 +52,7 @@ This was simply the legacy of our days when we used the Subversion system, which
 We looked around to understand how other open-source projects manage their code with Git, and we came up with the following model.
 
 <div class="alert alert-info" role="alert">
-<h4><i class='fa fa-info-circle'></i> Info</h4>
+<h4><i class='icon-pin'></i> Info</h4>
 I'm writing this article in August 2015, as PrestaShop 1.6.1.1 just came out. All version numbers and branch names are based on the current situation. They might have changed as you're reading this article, so be sure to check what the current situation is.
 </div>
 

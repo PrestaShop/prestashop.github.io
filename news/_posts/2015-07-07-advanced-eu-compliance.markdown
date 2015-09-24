@@ -4,7 +4,7 @@ title:  "Presenting the Advanced EU Compliance module"
 subtitle: "Helping merchants make their shops more compliant with the recent EU regulations."
 date:   2015-07-07 14:00:00
 author:  [ tchauviere ]
-icon: fa-gavel
+icon: icon-coffee-hot
 tags:
  - 1.6.1.x
  - legal

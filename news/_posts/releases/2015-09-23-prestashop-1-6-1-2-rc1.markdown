@@ -4,7 +4,7 @@ title:  "Test PrestaShop 1.6.1.2 RC1"
 subtitle: "Check, one two, one two, check check"
 date:   2015-09-23 18:00:41
 author: xavierborderie
-icon: fa-microphone
+icon: icon-mic
 tags:
  - version
  - rc
@@ -40,7 +40,7 @@ Here is the [list of pull-requests that the team has merged into 1.6.1.2](https:
  * [3718](https://github.com/PrestaShop/PrestaShop/pull/3718): [*] BO : New module categories "Customer Reviews", "Social & Community".
  * [3725](https://github.com/PrestaShop/PrestaShop/pull/3725): [-] CORE : Fix notices
  * [3731](https://github.com/PrestaShop/PrestaShop/pull/3731): [*] BO: wording for gross margin KPIs
- * [3736](https://github.com/PrestaShop/PrestaShop/pull/3736): [-] PDF: Order slip Tax detail computation fix. 
+ * [3736](https://github.com/PrestaShop/PrestaShop/pull/3736): [-] PDF: Order slip Tax detail computation fix.
  * [3741](https://github.com/PrestaShop/PrestaShop/pull/3741): [-] BO : Fix issue with multiple trees loaded on the same page
  * [3742](https://github.com/PrestaShop/PrestaShop/pull/3742): [-] BO : Fix memcached test
  * [3744](https://github.com/PrestaShop/PrestaShop/pull/3744): [*] MO : Fix no h2 in blockcart

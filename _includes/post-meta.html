@@ -9,7 +9,7 @@
 
           {% unless page.tags == empty %}
             <li>
-              <i class="fa fa-tags"></i>
+              <i class="icon-tag"></i>
 
               {% for cat in page.tags %}
                 <span class="label label-primary">{{ cat }}</span>
@@ -41,27 +41,27 @@
 
                   {% if site.data.authors[a]["github"] %}
                     <a class="btn btn-default btn-sm" href="https://github.com/{{ site.data.authors[a]["github"] }}">
-                      <i class="fa fa-github"></i> GitHub
+                      <i class="icon-github"></i> GitHub
                     </a>
                   {% endif %}
                   {% if site.data.authors[a]["forum"] %}
                     <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/{{ site.data.authors[a]["forum"] }}">
-                      <i class="fa fa-comments"></i> Forum
+                      <i class="icon-chat-alt"></i> Forum
                     </a>
                   {% endif %}
                   {% if site.data.authors[a]["crowdin"] %}
                     <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/{{ site.data.authors[a]["crowdin"] }}">
-                      <i class="fa fa-language"></i> Crowdin
+                      <i class="icon-globe"></i> Crowdin
                     </a>
                   {% endif %}
                   {% if site.data.authors[a]["twitter"] %}
                     <a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.data.authors[a]["twitter"] }}">
-                      <i class="fa fa-twitter"></i> Twitter
+                      <i class="icon-twitter"></i> Twitter
                     </a>
                   {% endif %}
                   {% if site.data.authors[a]["website"] %}
                     <a class="btn btn-default btn-sm" href="{{ site.data.authors[a]["website"] }}">
-                      <i class="fa fa-home"></i> Website
+                      <i class="icon-home"></i> Website
                     </a>
                   {% endif %}
 
@@ -81,27 +81,27 @@
 
                 {% if author.github %}
                   <a class="btn btn-default btn-sm" href="https://github.com/{{ author.github }}">
-                    <i class="fa fa-github"></i> GitHub
+                    <i class="icon-github"></i> GitHub
                   </a>
                 {% endif %}
                 {% if author.forum %}
                   <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/{{ author.forum }}">
-                    <i class="fa fa-comments"></i> Forum
+                    <i class="icon-chat-alt"></i> Forum
                   </a>
                 {% endif %}
                 {% if author.crowdin %}
                   <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/{{ author.crowdin }}">
-                    <i class="fa fa-language"></i> Crowdin
+                    <i class="icon-globe"></i> Crowdin
                   </a>
                 {% endif %}
                 {% if author.twitter %}
                   <a class="btn btn-default btn-sm" href="https://twitter.com/{{ author.twitter }}">
-                    <i class="fa fa-twitter"></i> Twitter
+                    <i class="icon-twitter"></i> Twitter
                   </a>
                 {% endif %}
                 {% if author.website %}
                   <a class="btn btn-default btn-sm" href="{{ author.website }}">
-                    <i class="fa fa-home"></i> Website
+                    <i class="icon-home"></i> Website
                   </a>
                 {% endif %}
 

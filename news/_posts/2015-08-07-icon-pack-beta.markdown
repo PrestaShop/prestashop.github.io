@@ -4,7 +4,7 @@ title:  "PrestaShop Official Icon Pack - Beta"
 subtitle: "We're cooking some fresh icons for you!"
 date:   2015-08-07 15:12:00
 author:  [ agriveau ]
-icon: fa-star
+icon: icon-bonnet
 tags: [news]
 ---
 

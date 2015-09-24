@@ -34,7 +34,7 @@ $grey-color-dark:  #555555;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         // fonts
-        "fontawesome/font-awesome",
+        "prestashop-icon-font/prestashop-icon-font.scss",
         "open-sans-fontface/open-sans.scss",
 
         // Core variables and mixins

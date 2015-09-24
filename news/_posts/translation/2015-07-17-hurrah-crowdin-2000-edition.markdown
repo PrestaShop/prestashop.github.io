@@ -4,7 +4,7 @@ title:  "Hurrah for the 2000th member of our translation project!"
 subtitle: "Now, who's gonna be number 3000?"
 date: 2015-07-17 18:29:47
 author:  [ alexeven ]
-icon: fa-globe
+icon: icon-world
 tags: [translation, i18n, l10n]
 ---
 

@@ -4,19 +4,19 @@ title:  "Do you speak PrestaShop? – May 2015 edition"
 subtitle: "The awesome work of our multilingual community"
 date:   2015-06-18 10:29:47
 author:  [ alexeven ]
-icon: fa-globe
+icon: icon-world
 tags: [translation, i18n, l10n]
 published: true
 
 ---
 
 
-With the launch of the build.prestashop.com blog, we’ve been planning for a while to highlight the dedicated work of the community on the [PrestaShop translation project on Crowdin](https://crowdin.com/project/prestashop-official). 
+With the launch of the build.prestashop.com blog, we’ve been planning for a while to highlight the dedicated work of the community on the [PrestaShop translation project on Crowdin](https://crowdin.com/project/prestashop-official).
 
 So, better late than never, here is the report for May 2015, which is a snapshot of the project at the end of May.
 The idea is to give you a quick summary of what has been going on over there, what languages are the most active and other information about our translating community.
 
-All the figures and statistics are based on the 1.6.0.14 project, which is the last stable version released to date. 
+All the figures and statistics are based on the 1.6.0.14 project, which is the last stable version released to date.
 
 ## Top contributors
 
@@ -132,13 +132,13 @@ Some members are trying to gather the translating community to harmonize the tra
 ## Miscellaneous
 **80 contributors** joined the project this month, for a **total of 1,869 members** at the end of May.
 60 members (including PrestaShop employees) were active on the project this month.
-A total of **28,470 words have been translated** and 21,925 validated, in 36 different languages - this is huge! 
+A total of **28,470 words have been translated** and 21,925 validated, in 36 different languages - this is huge!
 
 We can’t thank you enough!
 
 If you haven’t joined us on Crowdin yet, [it’s still time](https://crowdin.com/project/prestashop-official)!
 If you want to gather your fellow translators to work towards a better harmonization (let’s dream a bit), do let us know, we’ll include a word in the next monthly report.
-A question, a remark? Don’t hesitate to leave a comment. 
+A question, a remark? Don’t hesitate to leave a comment.
 
 See you next month!
 

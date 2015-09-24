@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "CLDR, Composer, NPM, Jshint, oh my!"
+title:  "CLDR, Composer, NPM, JSHint, oh my!"
 subtitle: "PrestaShop development getting real"
 date:   2015-09-24 18:00:41
 author: xavierborderie
-icon: fa-calendar
+icon: fa-puzzle-piece
 tags:
  - 1.7.0.0
  - cldr
@@ -13,7 +13,7 @@ tags:
  - jshint
 ---
 
-As those of you who regulary look at the commits being merged in the 'develop' branch, the forthcoming 1.7.0.0 version of PrestaShop now includes a few notable improvements.
+As those of you who regularly look at the [commits being merged in the 'develop' branch](https://github.com/PrestaShop/PrestaShop/commits/develop) know, the [forthcoming 1.7.0.0 version of PrestaShop](http://build.prestashop.com/news/version-1-7-0-0-is-underway/) now includes a few notable improvements.
 
 These are all part of our plan to modernize the codebase, and provide you with a professional e-commerce tool!
 

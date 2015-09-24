@@ -2,7 +2,7 @@
 layout: post
 title:  "CLDR, Composer, NPM, Jshint, oh my!"
 subtitle: "PrestaShop development getting real"
-date:   2015-09-21 18:00:41
+date:   2015-09-24 18:00:41
 author: xavierborderie
 icon: fa-calendar
 tags:
@@ -53,7 +53,7 @@ It also installs a [Git pre-commit hook](http://git-scm.com/docs/githooks) for [
 
 We are introducing the usage of [Grunt](http://gruntjs.com/)/[Jasmine](http://jasmine.github.io/)+[JSHint](http://jshint.com/) in order to continually check the syntax of our JS code, and make sure they pass our unit tests.
 
-It's use is tied to [npm](https://www.npmjs.com/), so if you want to launch our test suite, type this in your command line:
+Its use is tied to [npm](https://www.npmjs.com/), so if you want to launch our test suite, type this in your command line:
 
 {% highlight text %}
 > npm test

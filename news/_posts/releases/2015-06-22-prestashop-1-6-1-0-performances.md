@@ -191,7 +191,7 @@ Here are a few results from the back office.
 
 ![CC0 Logo](/assets/images/2015/06/perfs/search-index-time3.png)
 
-On the performance side, when Memcached is enabled, 1.6.0.14 times out after 900s, and eats more than 128 MB of memory. When Memcached is disabled, **1.6.1.0 is 2.3x faster than 1.6.0.14, eats 1.7x less memory**, and fixes a bug with multi attributes. Not bad!
+On the performance side, when Memcached is enabled, 1.6.0.14 times out after 900s, and eats more than 128 MB of memory. When Memcached is disabled, **1.6.1.0 is 2.3x faster than 1.6.0.14, eats 1.7x less memory**, and fixes a bug with multi attributes. Not bad!
 
 **Import speed:**
 

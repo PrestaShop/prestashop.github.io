@@ -6,47 +6,52 @@
 
 @media only screen and (max-width : 989px) {
     #post-sidebar {
-	    display: none;
+        display: none;
     }
     .author-details {
-	    padding-top: 20px;
+        padding-top: 20px;
     }
    .site-header {
-   text-align: center;
-       img {
-	    margin-top: -30px;
-	    width: 60% !important;
-	    height: 60% !important;
+        text-align: center;
+        img {
+            margin-top: -20px;
+            width: 60% !important;
+            height: 60% !important;
+        }
+        .nav-pills {
+            float: none !important;
+        }
+        .nav{
+            margin: $spacing-unit 0;
+            display: inline-block !important;
+        }
+        #search-container {
+            float: none;
+            margin: auto;
+        }
     }
-	.nav-pills {
-		float: none !important;
-	}
-	.nav{
-		display: inline-block !important;
-	}
-}
 }
 
 @media only screen and (max-width : 480px) {
     #post-sidebar {
-	    display: none;
+        display: none;
     }
     .author-details {
-	    padding-top: 20px;
+        padding-top: 20px;
     }
-   .site-header {
-   text-align: center;
-       img {
-	    margin-top: -100px !important;
-	    width: 100% !important;
-	    height: 100% !important;
-    }
-	.nav-pills {
-		float: none !important;
-	}
-	.nav{
-		display: inline-block !important;
-	}
+    .site-header {
+        text-align: center;
+        img {
+            margin-top: -100px !important;
+            width: 100% !important;
+            height: 100% !important;
+        }
+        .nav-pills {
+            float: none !important;
+        }
+        .nav{
+            display: inline-block !important;
+        }
 }
 }
 
@@ -250,12 +255,12 @@ ul.post-list {
 }
 
 .page-heading{
-	 text-transform: capitalize;
+     text-transform: capitalize;
      font-weight: 700;
 }
 
 .page-subtitle{
-	  color: $brand-color-2;
+      color: $brand-color-2;
       font-size: 75%;
       text-transform: uppercase;
       font-weight: 600;
@@ -408,7 +413,7 @@ li code {
         margin-right: 5px;
     }
     img {
-        margin-top: -30px;
+        margin-top: -20px;
     }
     .site-title {
         font-size: 1.6em;
@@ -416,13 +421,30 @@ li code {
         padding: 0;
 
     }
+    .page-link {
+        padding-top: 3px;
+        margin-left: 12px;
+    }
 }
 
 #search-container {
-    margin: 50px 0;
-    #results-container {
-        margin-bottom: 8px;
+    float: left;
+    width: 345px;
+    input {
+        border-radius: 55px;
+        color: $text-color;
+        font-size: 0.8em;
+        font-weight: 600;
+        display: inline-block;
+        border: 1px solid #ddd;
+        padding: 5px 14px !important;
+        margin-right: 5px;
     }
+}
+#results-container {
+    clear: both;
+    padding: $spacing-unit/3;
+    margin-bottom: $spacing-unit/3;
 }
 
 /**
@@ -456,7 +478,7 @@ li code {
  * Author
  */
 .author {
-	border-right: solid 1px $grey-color-light;
+    border-right: solid 1px $grey-color-light;
 }
 .author-avatar {
     margin-bottom: 0.5*$spacing-unit;
@@ -468,7 +490,7 @@ li code {
     }
 }
 .author-name {
-	font-size: 0.9em;
+    font-size: 0.9em;
     text-align: left;
 }
 
@@ -485,7 +507,7 @@ aside.share-buttons {
         }
         li {
             margin-bottom: 6px;
-			font-size: 0.8em;
+            font-size: 0.8em;
         }
     }
 }
@@ -542,42 +564,42 @@ footer.site-footer {
  * Font awesome size
  */
 .fa-2x{
-	font-size: 1em !important;
+    font-size: 1em !important;
 }
 
 .label-primary {
-	background-color: #a2e2ef;
+    background-color: #a2e2ef;
 }
 
 .label {
-	line-height: 2;
+    line-height: 2;
 }
 
 .btn-default {
-	border-color: $grey-color-light;
-	border-radius: 55px !important;
+    border-color: $grey-color-light;
+    border-radius: 55px !important;
 }
 
 .read-more {
-	font-size: 0.7em;
-	text-align: right;
-	display: block;
+    font-size: 0.7em;
+    text-align: right;
+    display: block;
 }
 
 .pager {
-	font-size: 0.8em;
-	font-weight: 600;
+    font-size: 0.8em;
+    font-weight: 600;
 }
 
 .nav-pills li a {
-	border-radius: 55px;
+    border-radius: 55px;
 }
 
 .list-group-item{
-	padding: 10px 15px 0 0;
-	border: none;
+    padding: 10px 15px 0 0;
+    border: none;
 }
 
 .list-group-item:hover{
-	background-color: white !important;
+    background-color: white !important;
 }

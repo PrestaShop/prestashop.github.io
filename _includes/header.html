@@ -1,43 +1,38 @@
 <header class="site-header {% if page.show_search %}has-search-form{% endif %}">
 
-  <div class="container">
-    <div class="row">
+    <div class="container">
+        <div class="row">
 
-      <div class="col-sm-12 col-md-6">
-        <a class="site-title" href="{{ site.baseurl }}/"><img src="{{ '/' | prepend: site.baseurl }}buildheader@2x.png" alt="PrestaShop Build logo" width="80%" height="80%"></a>
-      </div>
+            <div class="col-sm-12 col-md-4" style="padding:0;">
+                <a class="site-title" href="{{ site.baseurl }}/"><img src="{{ '/' | prepend: site.baseurl }}buildheader@2x.png" alt="PrestaShop Build logo"></a>
+            </div>
 
-      <div class="col-sm-12 col-md-6">
-        <nav class="site-nav">
-          <ul class="nav nav-pills pull-right">
+            <div class="col-sm-12 col-md-8">
 
-            <li><a class="page-link" href="{{ '/how-tos' | prepend: site.baseurl }}">How-Tos</a></li>
+                <nav class="site-nav">
+                    <ul class="nav nav-pills pull-right">
 
-            <li><a class="page-link" href="{{ '/tools' | prepend: site.baseurl }}">Tools</a></li>
+                        <li><a class="page-link" href="{{ '/how-tos' | prepend: site.baseurl }}">How-Tos</a></li>
 
-            <li><a class="page-link" href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+                        <li><a class="page-link" href="{{ '/tools' | prepend: site.baseurl }}">Tools</a></li>
 
-          </ul>
-        </nav>
-      </div>
+                        <li><a class="page-link" href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
 
-    </div>
+                    </ul>
+                </nav>
 
-    {% if page.show_search %}
-    <div class="row">
+                {% unless page.show_search == false %}
+                    <div id="search-container">
+                        <input type="text" id="search-input" class="form-control" placeholder="search...">
+                    </div>
+                    <div id="results-container" class="list-group"> </div>
+                    <small class="hint" style="display: none;">Use the tab key to nagivate in the results.</small>
+                {% endunless %}
 
-      <div class="col-sm-12 col-md-6 col-md-offset-3">
-        <div id="search-container">
-          <input type="text" id="search-input" class="form-control" placeholder="search...">
-          <div id="results-container" class="list-group">
-          </div>
-          <small class="hint" style="display: none;">Use the tab key to nagivate in the results.</small>
+            </div>
+
         </div>
-      </div>
 
     </div>
-    {% endif %}
-
-  </div>
 
 </header>

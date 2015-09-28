@@ -9,7 +9,7 @@ tags:
  - core-weekly
 ---
 
-This edition of the Core Weekly report highlights changes in PrestaShop core codebase during the last three weeks, from Monday 7th of September to Sunday 20th.
+This edition of the Core Weekly report highlights changes in PrestaShop core codebase during the last two weeks, from Monday 7th of September to Sunday 20th.
 
 
 ## Milestones
@@ -22,11 +22,11 @@ Meanwhile, the team is hard at work on version 1.7.0.0, and we published some in
  * [Starter Theme collaborative project](http://build.prestashop.com/news/starter-theme-kickoff/).
  * [Recent technological changes in 1.7.0.0 codebase](http://build.prestashop.com/news/cldr-composer-jshint/): CLDR, Composer, JSHint, etc.
  
-More information are coming soon, among which explanation of where you aim to take the [new architecture that was introduced in v1.6.1.0](http://build.prestashop.com/news/new-architecture-1-6-1-0/), and details about some forthcoming design changes.
+More information is coming soon, among which explanation of where we aim to take the [new architecture that was introduced in v1.6.1.0](http://build.prestashop.com/news/new-architecture-1-6-1-0/), and details about some forthcoming design changes.
 
 Do you want to contribute your code skills to the PrestaShop project? [Make sure your Git setup is correctly configured](http://build.prestashop.com/howtos/misc/set-up-your-git-for-contributing/), and that you follow our [new branching model](http://build.prestashop.com/news/introducing-new-branching-model-prestashop/)! Then, [read these documentation pages](http://doc.prestashop.com/display/PS16/Contributing+to+PrestaShop).
 
-The Core Weekly will now have separate section for major branches. You can see the work being done on the following branches: 1.6.1.x, develop, and feat/starter-theme.
+The Core Weekly will now have separate sections for major branches. You can see the work being done on the following branches: 1.6.1.x, develop, and feat/starter-theme.
 
 Of note among the merged PRs since the last Core Weekly Report:
 

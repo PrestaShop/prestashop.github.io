@@ -14,7 +14,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop core cod
 
 ## Milestones
 
-The current stable version of PrestaShop is [version 1.6.1.1 of PrestaShop](http://build.prestashop.com/news/1611-maintenance-release/), and this week we released the Release Candidate for the second [patch version](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/) of branch 1.6.1.x: [we need you to test that v1.6.1.2 RC1](http://build.prestashop.com/news/prestashop-1-6-1-2-rc1/) is ready for production and does indeed fixes the closed issues!
+The current stable version of PrestaShop is [version 1.6.1.1 of PrestaShop](http://build.prestashop.com/news/1611-maintenance-release/), and this week we released the Release Candidate for the second [patch version](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/) of branch 1.6.1.x: [we need you to test that v1.6.1.2 RC1](http://build.prestashop.com/news/prestashop-1-6-1-2-rc1/) is ready for production and does indeed fix the closed issues!
 
 Meanwhile, the team is hard at work on version 1.7.0.0, and we published some information on this blog already:
 

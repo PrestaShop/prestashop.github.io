@@ -193,7 +193,7 @@ Currently, entity repositories support the following methods:
 - `findOneByXYZ($XYZFieldValue)` : finds zero or one entity
 - `findByXYZ($XYZFieldValue)` : finds zero or more entities
 - `findOneBy(array $conditions)` : finds zero or one entity that matches all of the passed conditions
-- `findOneBy(array $conditions)` : finds zero or more entities that match all of the passed conditions
+- `findBy(array $conditions)` : finds zero or more entities that match all of the passed conditions
 
 *It remains to be decided how to fit the more complex parts of our ORM into this abstraction: language fields, multishop fields. Ideas?*
 

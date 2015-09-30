@@ -155,9 +155,16 @@ Then, you can use it in your theme:
 
 ### Deprecations
 
-// TODO
+As for any major release, some features are planned for deprecation.
 
-- The mobile theme has been deprecated for the moment.
-- The live edit has been deprecated. 
-- Scenes feature. 
+#### Mobile theme
 
+The Starter Theme will be considered responsive by default, so the mobile theme feature has been <a href="https://github.com/PrestaShop/PrestaShop/pull/3931">deprecated</a>.
+
+#### Live edit
+
+As the new Starter Theme will be more frontend developer oriented, the Live Edit feature will be dropped.
+
+#### Scenes
+
+Scenes will be now fully deprecated in the next major version.

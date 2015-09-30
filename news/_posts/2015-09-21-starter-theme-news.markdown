@@ -9,9 +9,9 @@ icon: fa-code
 
 It's been a month since PrestaShop announced a <a href="http://build.prestashop.com/news/starter-theme-kickoff/" target="_blank">new Starter Theme project</a>.
 
-It's an important project, both because it touches on something that's been tricking for many years, namely being able to quickly build a quality and standard-respecting theme from scratch, and because it's truly a project built for and with the community, with [a dedicated branch](https://github.com/PrestaShop/PrestaShop/tree/feat/starter-theme), its [own Gitter channel](https://gitter.im/PrestaShop/StarterTheme) for discussions, and its even [its own Trello board](https://trello.com/b/FPwYidfj/prestashop-startertheme) (yes, outside of the Forge!).
+It's an important project, both because it touches on something that's been tricky for many years, namely being able to quickly build a quality and standard-respecting theme from scratch, and because it's truly a project built for and with the community, with [a dedicated branch](https://github.com/PrestaShop/PrestaShop/tree/feat/starter-theme), its [own Gitter channel](https://gitter.im/PrestaShop/StarterTheme) for discussions, and even [its own Trello board](https://trello.com/b/FPwYidfj/prestashop-startertheme) (yes, outside of the Forge!).
 
-Hence, the project is indeed led by a handful of PrestaShop's Core developers, in parallel of PS 1.7's development, but they are trying new ways to reach the Community and make us participate -- among which this article, which is not written by a PrestaShop staff member but a Community member. Come participate!
+Hence, the project is indeed led by a handful of PrestaShop's Core developers, in parallel of PS 1.7's development, but they are trying new ways to reach the Community and make us participate -- like with this article, which is not written by a PrestaShop staff member but a Community member. Come participate!
 
 Now, with that in mind, here are some news about the work in progress: what is being discussed, what has been implemented, what's next...
 
@@ -22,7 +22,7 @@ This is the most important change since the 1.6 Theme API: starting from version
 
 Template inheritance is a common concept shared among all major template engines ([among which Smarty](http://www.smarty.net/inheritance)), so it should make no difference when PrestaShop starts supporting other template engines, like [Twig](http://twig.sensiolabs.org/) (see [Twig's documentation](http://twig.sensiolabs.org/doc/templates.html#template-inheritance)).  
 
-Rendering is now performed in a single step, and the `header.tpl` & `footer.tpl` files are not mandatory anymore. 
+Rendering is now performed in a single step, and the `header.tpl` & `footer.tpl` files are no longer mandatory. 
 
 It means it is now the template rendered by the controller which chooses the layout. 
 
@@ -70,7 +70,7 @@ Templates will be resolved starting from the current theme root directory.
 
 ### New directory structure
 
-Templates have been reorganized into subfolders.
+Templates have been reorganized into functional (and more logical) subfolders:
 
 <pre>
 └── templates
@@ -128,13 +128,17 @@ Really handy when you need to prototype a theme quickly without knowing anything
 {/widget_block}
 {% endhighlight %}
 
+If you want to have a further look, these two modules have been widgetized:
+* blocklanguage: https://github.com/PrestaShop/blocklanguages/tree/feat/starter-theme
+* blocktopmenu: https://github.com/PrestaShop/blocktopmenu/tree/feat/starter-theme
+
 ### Custom Smarty plugins
 
 You can now embed your own custom [Smarty plugins](http://www.smarty.net/docs/en/plugins) in a theme. 
 
 Just add files following the <a href="http://www.smarty.net/docs/en/plugins.naming.conventions.tpl" target="_blank">naming conventions</a> in the `plugins` folder of your theme. 
 
-For example, to add a modifier that adds stars to a string, create a file named `plugins/modifier.stars.php`
+For example, to have a modifier that adds stars to a string, create a file named `plugins/modifier.stars.php`
 
 {% highlight php startinline=true linenos %}
 function smarty_modifier_stars($string)

@@ -129,8 +129,9 @@ Really handy when you need to prototype a theme quickly without knowing anything
 {% endhighlight %}
 
 If you want to have a further look, these two modules have been widgetized:
-* blocklanguages: https://github.com/PrestaShop/blocklanguages/tree/feat/starter-theme
-* blocktopmenu: https://github.com/PrestaShop/blocktopmenu/tree/feat/starter-theme
+
+* [blocklanguages](https://github.com/PrestaShop/blocklanguages/tree/feat/starter-theme)
+* [blocktopmenu](https://github.com/PrestaShop/blocktopmenu/tree/feat/starter-theme)
 
 ### Custom Smarty plugins
 

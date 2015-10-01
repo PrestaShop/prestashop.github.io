@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Starter Theme news"
+title:  "Starter Theme: fresh news from the front"
 subtitle: "What's up about Starter Theme"
-date:   2015-09-21 12:00:00
+date:   2015-10-01 18:00:00
 author:  [ alexsegura ]
-icon: fa-code
+icon: icon-lego
 ---
 
 It's been a month since PrestaShop announced a <a href="http://build.prestashop.com/news/starter-theme-kickoff/" target="_blank">new Starter Theme project</a>.
@@ -18,13 +18,13 @@ Now, with that in mind, here are some news about the work in progress: what is b
 
 ### Template inheritance
 
-This is the most important change since the 1.6 Theme API: starting from version 1.7.x, PrestaShop themes need to be written using **template inheritance**. 
+This is the most important change since the 1.6 Theme API: starting from version 1.7.x, PrestaShop themes need to be written using **template inheritance**.
 
-Template inheritance is a common concept shared among all major template engines ([among which Smarty](http://www.smarty.net/inheritance)), so it should make no difference when PrestaShop starts supporting other template engines, like [Twig](http://twig.sensiolabs.org/) (see [Twig's documentation](http://twig.sensiolabs.org/doc/templates.html#template-inheritance)).  
+Template inheritance is a common concept shared among all major template engines ([among which Smarty](http://www.smarty.net/inheritance)), so it should make no difference when PrestaShop starts supporting other template engines, like [Twig](http://twig.sensiolabs.org/) (see [Twig's documentation](http://twig.sensiolabs.org/doc/templates.html#template-inheritance)).
 
-Rendering is now performed in a single step, and the `header.tpl` & `footer.tpl` files are no longer mandatory. 
+Rendering is now performed in a single step, and the `header.tpl` & `footer.tpl` files are no longer mandatory.
 
-It means it is now the template rendered by the controller which chooses the layout. 
+It means it is now the template rendered by the controller which chooses the layout.
 
 {% highlight smarty startinline=true linenos %}
 {extends "{$layout}"}
@@ -34,7 +34,7 @@ It means it is now the template rendered by the controller which chooses the lay
 {/block}
 {% endhighlight %}
 
-In the layout file, template blocks are used to define the content areas. 
+In the layout file, template blocks are used to define the content areas.
 
 {% highlight smarty startinline=true linenos %}
 <!DOCTYPE html>
@@ -48,7 +48,7 @@ In the layout file, template blocks are used to define the content areas.
 </html>
 {% endhighlight %}
 
-The `$layout` variable will always be available, but you can always change the layout if you want. 
+The `$layout` variable will always be available, but you can always change the layout if you want.
 
 {% highlight smarty startinline=true linenos %}
 {extends "path/to/crazy_layout.tpl"}
@@ -60,9 +60,9 @@ The `$layout` variable will always be available, but you can always change the l
 
 ### Relative template path
 
-You can now include a template without using the `$tpl_dir` variable. 
+You can now include a template without using the `$tpl_dir` variable.
 
-Templates will be resolved starting from the current theme root directory. 
+Templates will be resolved starting from the current theme root directory.
 
 {% highlight smarty startinline=true linenos %}
 {include "_partials/head.tpl"}
@@ -103,9 +103,9 @@ Templates have been reorganized into functional (and more logical) subfolders:
 
 ### Widgetizable modules
 
-The `WidgetInterface` has been introduced: any module implementing this interface can be rendered **anywhere**, even outside of the hooks it was designed to work with. 
+The `WidgetInterface` has been introduced: any module implementing this interface can be rendered **anywhere**, even outside of the hooks it was designed to work with.
 
-Right now, only a few modules implement this interface, but more and more modules will be "widgetized". 
+Right now, only a few modules implement this interface, but more and more modules will be "widgetized".
 
 {% highlight php startinline=true linenos %}
 interface WidgetInterface {
@@ -114,8 +114,8 @@ interface WidgetInterface {
 }
 {% endhighlight %}
 
-The `{widget_block}` block function allows to customize the HTML code even more. 
-Really handy when you need to prototype a theme quickly without knowing anything about the hooks for a module! 
+The `{widget_block}` block function allows to customize the HTML code even more.
+Really handy when you need to prototype a theme quickly without knowing anything about the hooks for a module!
 
 {% highlight smarty startinline=true linenos %}
 {widget_block name="blocklanguages"}
@@ -134,9 +134,9 @@ If you want to have a further look, these two modules have been widgetized:
 
 ### Custom Smarty plugins
 
-You can now embed your own custom [Smarty plugins](http://www.smarty.net/docs/en/plugins) in a theme. 
+You can now embed your own custom [Smarty plugins](http://www.smarty.net/docs/en/plugins) in a theme.
 
-Just add files following the <a href="http://www.smarty.net/docs/en/plugins.naming.conventions.tpl" target="_blank">naming conventions</a> in the `plugins` folder of your theme. 
+Just add files following the <a href="http://www.smarty.net/docs/en/plugins.naming.conventions.tpl" target="_blank">naming conventions</a> in the `plugins` folder of your theme.
 
 For example, to have a modifier that adds stars to a string, create a file named `plugins/modifier.stars.php`
 
@@ -155,16 +155,24 @@ Then, you can use it in your theme:
 
 ### Deprecations
 
-As for any major release, some features are planned for deprecation.
+As expected with major releases, some features will no longer be supported or available in 1.7
 
 #### Mobile theme
 
-The Starter Theme will be considered responsive by default, so the mobile theme feature has been <a href="https://github.com/PrestaShop/PrestaShop/pull/3931">deprecated</a>.
+The Starter Theme will be considered responsive by default, so the mobile theme feature has been <a href="https://github.com/PrestaShop/PrestaShop/pull/3931">removed</a>.
 
 #### Live edit
 
-As the new Starter Theme will be more frontend developer oriented, the Live Edit feature will be dropped.
+As the new Starter Theme will be more frontend developer oriented, the _Live Edit_ feature will be dropped. Plus, the PrestaShop product team is currently working
+on a brand new theme builder!
 
 #### Scenes
 
-Scenes will be now fully deprecated in the next major version.
+Scenes will be removed in the next major version.
+
+
+Some more features may be added to this list as the project evolves. Keep an eye on Build :)
+
+And remember, it's still time to get involved and contribute. Join the party on the [Trello board](https://trello.com/b/FPwYidfj/prestashop-startertheme) and [Gitter](https://gitter.im/PrestaShop/StarterTheme)!
+
+

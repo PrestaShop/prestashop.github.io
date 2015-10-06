@@ -2,7 +2,7 @@
 layout: post
 title:  "Test PrestaShop 1.6.1.2 RC2"
 subtitle: "Check, one two, one two, check check"
-date:   2015-09-23 18:00:41
+date:   2015-10-06 14:00:41
 author: xavierborderie
 icon: icon-mic
 tags:
@@ -13,14 +13,14 @@ tags:
  - 1.6.1.x
 ---
 
-We received quite a few feedback reports and pull-requests since we released v1.6.1.2 RC1 two weeks ago, so here's RC2, which fixes some more issues, and 
+We received quite a few feedback reports and pull-requests since we released v1.6.1.2 RC1 two weeks ago, so here's the RC3, which fixes some more issues, and polishes a few more lines of code.
 
-Remember! This is the second release candidate for 1.6.1.2, NOT the final, production-ready code! <b>This is a test version</b>, and is therefore not yet deemed suitable for production use. Hence, do not upgrade your store just yet! Install the RC2 on your server (on as many server configurations as possible, please!), or upgrade from a clone of your real store.
+<b>NOTE</b>: The RC2 was first uploaded yesterday (Monday 5th) with a [slight parenthesis issue](https://github.com/PrestaShop/PrestaShop/pull/4172/files) which broke many pages. It was fixed by our Core team and repackaged at around 3 PM (Paris time), and [two more](https://github.com/PrestaShop/PrestaShop/commit/cf2901d3a3c2e7ff3ffe23092ea99cb5fa753192) [small corrections](https://github.com/PrestaShop/PrestaShop/commit/6b2d200ea0148f12932b9796986e3ec155397b72) since then have proven essential, hence the RC3. If you downloaded the RC2, please download the RC3 now!
 
-[Download and test PrestaShop 1.6.1.2 RC2 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
+Remember! This is the third release candidate for 1.6.1.2, NOT the final, production-ready code! <b>This is a test version</b>, and is therefore not yet deemed suitable for production use. Hence, do not upgrade your store just yet! Install the RC2 on your server (on as many server configurations as possible, please!), or upgrade from a clone of your real store.
+
+[Download and test PrestaShop 1.6.1.2 RC3 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
 {: .text-center}
-
-<b>NOTE</b>: The RC2 was first uploaded today (Monday 5th) with a [slight parenthesis issue](https://github.com/PrestaShop/PrestaShop/pull/4172/files) which broke many pages. It was fixed by our Core team at around 3 PM (Paris time). If you downloaded the RC2 before that time, please download it again!
 
 Remember: if you have any feedback to give or issue to raise, [create a ticket on the Forge](http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop)!
 
@@ -72,7 +72,7 @@ Here is the [list of pull-requests that the team has merged into 1.6.1.2](https:
  * [4172](https://github.com/PrestaShop/PrestaShop/pull/4172): // missing parenthesis
  
 
-The [PrestaShop 1.6.1.2 RC2 changelog](https://www.prestashop.com/en/developers-versions/changelog/1.6.1.2-rc2) is also available.
+The [PrestaShop 1.6.1.2 RC3 changelog](https://www.prestashop.com/en/developers-versions/changelog/1.6.1.2-rc3) is also available.
 
 This release was made possible by the hard work of the PrestaShop Core Team, with the essential help of the following contributors: @brouillon, @Eolia, @mcdado, and @PrestaEdit. Thank you all!
 

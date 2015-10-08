@@ -23,7 +23,7 @@ The PrestaShop community is at the heart of this program, with two main goals:
 A few weeks after the launch of the Integration Fund, **40+ modules** are in the making, soon allowing shops in **20+ countries** to be more adapted than ever to their customers and local markets.
 You can see below in which countries modules are being developed, or already released and being sold on PrestaShop Addons Marketplace:
 
-![Integration Fund modules per countries](/assets/images/2015/10/Build_Integration_Fund_pipe.png)
+![Integration Fund modules per countries](/assets/images/2015/10/Build_Integration_Fund.png)
 
 Is your country missing from this list? Maybe it’s time to join the program!
 

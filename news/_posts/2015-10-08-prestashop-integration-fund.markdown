@@ -49,7 +49,7 @@ Here’s how it works:
 5.  Sell on Addons
 
 
-[Learn more about the Integration Fund](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
+[Learn more about the Integration Fund](https://addons.prestashop.com/en/integration-fund){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 It is time to bring your ideas to life! Apply to the Integration Fund now <i class="icon-girl-big-smile"></i>

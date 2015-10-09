@@ -49,7 +49,7 @@ Here are the merged pull-requests on the [1.6.1.x branch](https://github.com/Pre
  * [4133](https://github.com/PrestaShop/PrestaShop/pull/4133): Property CustomerMessage->message is empty, by @gRoussac.
  * [4122](https://github.com/PrestaShop/PrestaShop/pull/4122): Fix bad utm_campaign, notice: Undefined index: lang_iso, by @gRoussac.
  * [4115](https://github.com/PrestaShop/PrestaShop/pull/4115): Fix wrong redirect after editing customer, by @gRoussac.
- * [4074](https://github.com/PrestaShop/PrestaShop/pull/4074): emove back button message of expired POST data, by @gRoussac.
+ * [4074](https://github.com/PrestaShop/PrestaShop/pull/4074): Remove back button message of expired POST data, by @gRoussac.
  * [4082](https://github.com/PrestaShop/PrestaShop/pull/4082): Fixed checking if module is trusted. Thank you @brouillon!
 
  
@@ -115,7 +115,7 @@ Finally, these are the merged pull-requests on the 'feat/starter-theme' branch s
  
 See all the PRs merged into the codebase since September 21st [here](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-09-07+is%3Aclosed+sort%3Aupdated&utf8=%E2%9C%93).
 
-Thank you to our contributors whose Pull Requests were merged since the last Core Weekly Report: [brouillon](https://github.com/brouillon) and @Eolia. Also, thank you to the contributors who's PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
+Thank you to our contributors whose Pull Requests were merged since the last Core Weekly Report: [brouillon](https://github.com/brouillon) and @Eolia. Also, thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
 
 If you want to contribute to PrestaShop with code, read those:
 

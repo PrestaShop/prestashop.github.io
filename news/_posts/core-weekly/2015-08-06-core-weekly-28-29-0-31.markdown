@@ -67,7 +67,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [3482](https://github.com/PrestaShop/PrestaShop/pull/3482): Fixed bug showing errors in manufacturer list. Thank you  Alfakom-MK!
  * [3505](https://github.com/PrestaShop/PrestaShop/pull/3505): #PSCSX-6227 ajax search add hook for stats search, by kelu95.
  * [3509](https://github.com/PrestaShop/PrestaShop/pull/3509): theme retro-compatibility regarding the CGV. Thank you oleacorner!
- 
+
 
 #### Back office
 
@@ -121,7 +121,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [3510](https://github.com/PrestaShop/PrestaShop/pull/3510): Fix bought module that can't be installed because of the "must have" type. Thank you prestamodule!
  * [3552](https://github.com/PrestaShop/PrestaShop/pull/3552): Prevent default theme to be removed on Cloud, by jeromenadaud.
  * [3557](https://github.com/PrestaShop/PrestaShop/pull/3557): Dashboard stats know display true item sales instead of item sales+services #PSCSX-6244, by tchauviere.
- 
+
 
 #### Core
 
@@ -151,7 +151,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [3532](https://github.com/PrestaShop/PrestaShop/pull/3532): that line is needed sorry, by sfroment42.
  * [3545](https://github.com/PrestaShop/PrestaShop/pull/3545): Fix missing backquotes on Employee. Thank you prestamodule!
 
- 
+
 #### Modules
 
  * [3361](https://github.com/PrestaShop/PrestaShop/pull/3361): Fix/advanced eu compliance update, by tchauviere.
@@ -169,18 +169,18 @@ As always, click on the PR's number to open its page on GitHub.
 #### Multishop
 
  * [3481](https://github.com/PrestaShop/PrestaShop/pull/3481): shop address in order_invoices as of #PSCSX-6169, by xGouley.
- 
- 
+
+
 #### Stocks
 
  * [3541](https://github.com/PrestaShop/PrestaShop/pull/3541): fix bug when creating order directly in shipped status, by xGouley.
- 
+
 
 #### Importer
 
  * [3381](https://github.com/PrestaShop/PrestaShop/pull/3381): Invalid date_upd in import, by jeromenadaud.
- 
- 
+
+
 #### Installer
 
  * [3391](https://github.com/PrestaShop/PrestaShop/pull/3391): Property TaxRulesGroup->date_add is not valid, by gRoussac.
@@ -188,7 +188,7 @@ As always, click on the PR's number to open its page on GitHub.
 #### Tests
 
  * [3478](https://github.com/PrestaShop/PrestaShop/pull/3478): Add unit tests for PrestaShop#2867 minifyCSS() && Replace ByAbsoluteURL(), by gRoussac.
- 
+
 #### Localization
 
  * [3472](https://github.com/PrestaShop/PrestaShop/pull/3472): Add Indonesian states, required by PayPal. Thank you tucoinfo!
@@ -199,7 +199,7 @@ See all the PRs merged into the codebase since July the 6th [here](https://githu
 
 Thank you to our contributors whose Pull Requests were merged since the last Core Weekly Report: [Alfakom-MK](https://github.com/Alfakom-MK), [BrunoJunior](https://github.com/BrunoJunior), [djbuch](https://github.com/djbuch), [eric-rouvier](https://github.com/eric-rouvier), [gskema](https://github.com/gskema), [iNem0o](https://github.com/iNem0o), [joseantgv](https://github.com/joseantgv), [julvernois](https://github.com/julvernois), [kermes](https://github.com/kermes), [kijamve](https://github.com/kijamve), [kpodemski](https://github.com/kpodemski), [manuelbcd](https://github.com/manuelbcd), [mcdado](https://github.com/mcdado), [monsty](https://github.com/monsty), [oleacorner](https://github.com/oleacorner), [panploenes](https://github.com/panploenes), [PhpMadman](https://github.com/PhpMadman), [PrestaEdit](https://github.com/PrestaEdit), [prestamodule](https://github.com/prestamodule), [remiq](https://github.com/remiq), [studiokiwik](https://github.com/studiokiwik), [tucoinfo](https://github.com/tucoinfo), and [ZiZuu-store](https://github.com/ZiZuu-store). I am very happy to see so many first-time contributors this month!
 
-Also, thank you to the contributors who's PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
+Also, thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
 
 If you want to contribute to PrestaShop with code, read those:
 

@@ -21,7 +21,7 @@ Meanwhile, the team is hard at work on version 1.7.0.0, and we published some in
  * [Initial launch of 1.7.0.0 project](http://build.prestashop.com/news/version-1-7-0-0-is-underway/).
  * [Starter Theme collaborative project](http://build.prestashop.com/news/starter-theme-kickoff/).
  * [Recent technological changes in 1.7.0.0 codebase](http://build.prestashop.com/news/cldr-composer-jshint/): CLDR, Composer, JSHint, etc.
- 
+
 More information is coming soon, among which explanation of where we aim to take the [new architecture that was introduced in v1.6.1.0](http://build.prestashop.com/news/new-architecture-1-6-1-0/), and details about some forthcoming design changes.
 
 Do you want to contribute your code skills to the PrestaShop project? [Make sure your Git setup is correctly configured](http://build.prestashop.com/howtos/misc/set-up-your-git-for-contributing/), and that you follow our [new branching model](http://build.prestashop.com/news/introducing-new-branching-model-prestashop/)! Then, [read these documentation pages](http://doc.prestashop.com/display/PS16/Contributing+to+PrestaShop).
@@ -34,7 +34,7 @@ Of note among the merged PRs since the last Core Weekly Report:
  * In PR [3931](https://github.com/PrestaShop/PrestaShop/pull/3931), Core developer @julienbourdeau removed the Mobile Theme feature.
  * In PR [3952](https://github.com/PrestaShop/PrestaShop/pull/3952), Core developer @julienbourdeau introduced widgets!
  * In Pr [3969](https://github.com/PrestaShop/PrestaShop/pull/3969), Core developer @julienbourdeau introduced Validate::isDateOrNull
- 
+
 
 
 ## Code changes in 1.6.1.x
@@ -62,7 +62,7 @@ Let's review the merged pull-requests on the 1.6.1.x branch since the last Core 
  * [3908](https://github.com/PrestaShop/PrestaShop/pull/3908): Possible error Cannot read property 'iso_code' of undefined, by @gRoussac.
  * [4034](https://github.com/PrestaShop/PrestaShop/pull/4034): Use floor() instead of round() to show correct amount of loyalty points. Thank you @sambrista!
  * [3968](https://github.com/PrestaShop/PrestaShop/pull/3968): Top menu not always active on mobile. Thank you @eric-rouvier!
- 
+
 
 #### Back office
 
@@ -142,7 +142,7 @@ Note that the Start Theme repo (see next section) is entirely part of the Presta
 
  * [4023](https://github.com/PrestaShop/PrestaShop/pull/4023): Import registration date for customer, by @maximebiloe.
  * [4043](https://github.com/PrestaShop/PrestaShop/pull/4043): Enable product pack and product dematerialized for accessories. Thank you @quadrateam!
- 
+
 
 #### Core
 
@@ -152,7 +152,7 @@ Note that the Start Theme repo (see next section) is entirely part of the Presta
  * [3916](https://github.com/PrestaShop/PrestaShop/pull/3916): Remove _includeVars ; never more used. Thank you @prestamodule!
 
 
- 
+
 ## Code changes in Starter Theme
 
 Let's review the merged pull-requests on the 'feat/starter-theme' branch since the last Core Weekly Report!
@@ -184,10 +184,10 @@ Let's review the merged pull-requests on the 'feat/starter-theme' branch since t
  * [4033](https://github.com/PrestaShop/PrestaShop/pull/4033): Add id_product_attribute to product URLs, by @djfm.
 
 
- 
+
 See all the PRs merged into the codebase since September 7th [here](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-09-07+is%3Aclosed+sort%3Aupdated&utf8=%E2%9C%93).
 
-Thank you to our contributors whose Pull Requests were merged since the last Core Weekly Report: [alexsegura](https://github.com/alexsegura), [cgordenne](https://github.com/cgordenne), [DogSports](https://github.com/DogSports), [eric-rouvier](https://github.com/eric-rouvier), [gskema](https://github.com/gskema), [hiousi](https://github.com/hiousi), [prestamodule](https://github.com/prestamodule), [PrestanceDesign](https://github.com/PrestanceDesign), [prestarocket](https://github.com/prestarocket), [quadrateam](https://github.com/quadrateam), [sambrista](https://github.com/sambrista), and [sfroment42](https://github.com/sfroment42). Also, thank you to the contributors who's PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
+Thank you to our contributors whose Pull Requests were merged since the last Core Weekly Report: [alexsegura](https://github.com/alexsegura), [cgordenne](https://github.com/cgordenne), [DogSports](https://github.com/DogSports), [eric-rouvier](https://github.com/eric-rouvier), [gskema](https://github.com/gskema), [hiousi](https://github.com/hiousi), [prestamodule](https://github.com/prestamodule), [PrestanceDesign](https://github.com/PrestanceDesign), [prestarocket](https://github.com/prestarocket), [quadrateam](https://github.com/quadrateam), [sambrista](https://github.com/sambrista), and [sfroment42](https://github.com/sfroment42). Also, thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
 
 If you want to contribute to PrestaShop with code, read those:
 

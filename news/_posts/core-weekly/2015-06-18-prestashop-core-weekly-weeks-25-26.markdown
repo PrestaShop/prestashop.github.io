@@ -36,7 +36,7 @@ Of note among the merged PRs during these last two weeks:
 Let's review the merged pull-requests from the previous two weeks!
 
 As always, click on the PR's number to open its page on GitHub.
- 
+
 #### Text changes
 
  * [3206](https://github.com/PrestaShop/PrestaShop/pull/3206): Fix #PSCSX-5811 #PSCSX-5812 Wording, by [gRoussac](https://github.com/gRoussac).
@@ -44,7 +44,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [3248](https://github.com/PrestaShop/PrestaShop/pull/3248): Rewording the Refunded and COD statuses, by [xBorderie](https://github.com/xBorderie).
  * [3233](https://github.com/PrestaShop/PrestaShop/pull/3233): Supplier wording - PSCSX-5263, by [jeromenadaud](https://github.com/jeromenadaud).
  * [3276](https://github.com/PrestaShop/PrestaShop/pull/3276): updated wording, ES install.php, by [AlexEven](https://github.com/AlexEven).
- 
+
 #### Front office
 
  * [3026](https://github.com/PrestaShop/PrestaShop/pull/3026): call autoAddToCart when removing a voucher. Thank you [oleacorner](https://github.com/oleacorner)!
@@ -59,7 +59,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [3253](https://github.com/PrestaShop/PrestaShop/pull/3253): Fix closing tag in smarty. Thank you [gskema](https://github.com/gskema)!
  * [3254](https://github.com/PrestaShop/PrestaShop/pull/3254): Fix closing tag in smarty. Thank you [gskema](https://github.com/gskema)!
  * [3249](https://github.com/PrestaShop/PrestaShop/pull/3249): Fix input labels in registration form. Thank you [gskema](https://github.com/gskema)!
- 
+
 #### Back office
 
  * [3190](https://github.com/PrestaShop/PrestaShop/pull/3190): Change demo button position, by [jeromenadaud](https://github.com/jeromenadaud).
@@ -84,7 +84,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [3289](https://github.com/PrestaShop/PrestaShop/pull/3289): fix issue with image resize when original is smaller than target, by [jocel1](https://github.com/jocel1).
  * [3277](https://github.com/PrestaShop/PrestaShop/pull/3277): unused if statement. Thank you [PrestaEdit](https://github.com/PrestaEdit)!
  * [3290](https://github.com/PrestaShop/PrestaShop/pull/3290): fix issue with cat creation (PSCSX-5899), by [jocel1](https://github.com/jocel1).
- 
+
 #### Core
 
  * [3021](https://github.com/PrestaShop/PrestaShop/pull/3021): Cleaning cache of method getCartRules() must also clean the cache of getOrderedCartRulesIds(). Thank you [oleacorner](https://github.com/oleacorner)!
@@ -103,7 +103,7 @@ As always, click on the PR's number to open its page on GitHub.
  * [3281](https://github.com/PrestaShop/PrestaShop/pull/3281): Fix bug PSCSX-5952 - HTMLPurifier_Config not loaded, by [jeromenadaud](https://github.com/jeromenadaud).
  * [3250](https://github.com/PrestaShop/PrestaShop/pull/3250): Smarty syntax formatting. Thank you [gskema](https://github.com/gskema)!
  * [3282](https://github.com/PrestaShop/PrestaShop/pull/3282): Fix patterns design sample, by [jeromenadaud](https://github.com/jeromenadaud).
- 
+
 #### CSS
 
  * [3192](https://github.com/PrestaShop/PrestaShop/pull/3192): Add pointer class to common sass, by [jeromenadaud](https://github.com/jeromenadaud).
@@ -111,7 +111,7 @@ As always, click on the PR's number to open its page on GitHub.
 #### PDF
 
  * [3209](https://github.com/PrestaShop/PrestaShop/pull/3209): fix bug when generating Pdf delivery slip, by [kelu95](https://github.com/kelu95).
- 
+
 #### Performances
 
  * [3234](https://github.com/PrestaShop/PrestaShop/pull/3234): Try to improve cart performances (PSCSX-5943), by [jocel1](https://github.com/jocel1).
@@ -123,21 +123,21 @@ As always, click on the PR's number to open its page on GitHub.
  * [3213](https://github.com/PrestaShop/PrestaShop/pull/3213): Fix install script for the media servers, by [Shudrum](https://github.com/Shudrum).
  * [3214](https://github.com/PrestaShop/PrestaShop/pull/3214): fix #PSCSX-5676 Small css fix, by [gRoussac](https://github.com/gRoussac).
  * [3231](https://github.com/PrestaShop/PrestaShop/pull/3231): Fix upgrade 1.6.1.0.sql crashes, by [Shudrum](https://github.com/Shudrum).
- 
+
 #### Web Service
 
  * [2381](https://github.com/PrestaShop/PrestaShop/pull/2381): Avoid blank page on webservice authentification fail. Thank you [arnolem](https://github.com/arnolem)!
  * [3025](https://github.com/PrestaShop/PrestaShop/pull/3025): Fixing #PSCSX-5799 => I18n field output when no language is specified in URL. Thank you [gleseur](https://github.com/gleseur)!
- 
+
 #### Localization
 
  * [3218](https://github.com/PrestaShop/PrestaShop/pull/3218): Fix states node, import failure. Thank you [tucoinfo](https://github.com/tucoinfo)!
- 
- 
+
+
 
 See all the PRs merged into the codebase since June the 15th [here](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-06-15+is%3Aclosed+sort%3Aupdated&utf8=%E2%9C%93).
 
-Thank you to our contributors whose Pull Requests were merged these two weeks: [arnolem](https://github.com/arnolem), [drzraf](https://github.com/drzraf), [gleseur](https://github.com/gleseur), [gskema](https://github.com/gskema), [Ladel](https://github.com/Ladel), [oleacorner](https://github.com/oleacorner), [panploenes](https://github.com/panploenes), [PhpMadman](https://github.com/PhpMadman), [PrestaEdit](https://github.com/PrestaEdit), and [tucoinfo](https://github.com/tucoinfo). Also, thank you to the contributors who's PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
+Thank you to our contributors whose Pull Requests were merged these two weeks: [arnolem](https://github.com/arnolem), [drzraf](https://github.com/drzraf), [gleseur](https://github.com/gleseur), [gskema](https://github.com/gskema), [Ladel](https://github.com/Ladel), [oleacorner](https://github.com/oleacorner), [panploenes](https://github.com/panploenes), [PhpMadman](https://github.com/PhpMadman), [PrestaEdit](https://github.com/PrestaEdit), and [tucoinfo](https://github.com/tucoinfo). Also, thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
 
 If you want to contribute to PrestaShop with code, read those:
 

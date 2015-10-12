@@ -32,9 +32,9 @@ We'd be also really pleased to be credited in your about page, or wherever you u
 
 ### So, where can I find it?
 
-The PrestaShop icon pack is available in its own [git repository](https://github.com/PrestaShop/icon-pack).
+The PrestaShop icon pack is available in its own [git repository](https://github.com/PrestaShop/prestashop-icon-font).
 
-You can also view it here: [http://build.prestashop.com/icon-pack/](http://build.prestashop.com/icon-pack/)
+You can also view it here: [http://build.prestashop.com/prestashop-icon-font/](http://build.prestashop.com/prestashop-icon-font/)
 
 ### What if I'd love to see an Ewok icon there?
 

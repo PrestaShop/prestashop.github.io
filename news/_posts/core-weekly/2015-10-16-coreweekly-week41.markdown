@@ -16,8 +16,8 @@ This edition of the Core Weekly report highlights changes in PrestaShop core cod
 
  * In [4113](https://github.com/PrestaShop/PrestaShop/pull/4113), Core developer @gRoussac made it so that there is no confusion anymore between internal-team messages and messages sent to the customer.
  * In [6837](https://github.com/PrestaShop/PrestaShop/pull/6837), @gRoussac corrected a wrong behavior with product image thumbnail during import.
- * In [4164](https://github.com/PrestaShop/PrestaShop/pull/4164), Core contributor @prestamodule to multiple exclusion filter values in the web service (eg. filter[id]=![10|14|15]).
- * In [4176](https://github.com/PrestaShop/PrestaShop/pull/4176), Starter Theme developer @djfm made it so that Smarty automatically escapes HTML. Bye bye {$var|escape:'html':'UTF-8'}!
+ * In [4164](https://github.com/PrestaShop/PrestaShop/pull/4164), Core contributor @prestamodule to multiple exclusion filter values in the web service (eg. `filter[id]=![10|14|15]`).
+ * In [4176](https://github.com/PrestaShop/PrestaShop/pull/4176), Starter Theme developer @djfm made it so that Smarty automatically escapes HTML. Bye bye `{$var|escape:'html':'UTF-8'}`!
  * In [4181](https://github.com/PrestaShop/PrestaShop/pull/4181), @djfm added app-level events to keep the UI in sync.
 
 

@@ -7,25 +7,24 @@ author:  julienbourdeau
 icon: icon-lego
 ---
 
-We already have more exiting news about the StarterTheme.
+We already have more exciting news about the StarterTheme.
 
-Last week @djfm came up with a photo to summurize what we aim to do with the StarterTheme.
+Last week, @djfm came up with a photo to summarize what we aim to do with the StarterTheme:
 
 ![PrestaShop StarterTheme Test Suite](/assets/images/2015/10/default-bootstrap-vs-starter-theme.gif)
 
 
-
 ## The StarterTheme is now part of [PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/tree/feat/starter-theme/themes/StarterTheme)
 
-When we started this project we wanted to start from scratch so bad that we
-even wanted to have a standalone git repository. After few days we realised it wasn't so
-easy because we constantly needed to have the core repo always in sync with the StarterTheme repo.
+When we started this project, we wanted to start from scratch so bad that we
+even wanted to have a standalone Git repository. After few days, we realized it wasn't so
+easy, because we constantly needed to have the Core repository in sync with the StarterTheme repo.
 
-So we merged the StarterTheme repo into the PrestaShop repo. The best part is that @djfm worked out a
+So we merged the StarterTheme repo into the PrestaShop-develop (1.7) repo. The best part is that @djfm worked out a
 way to keep the whole commit history.
 
 Basically, we had to move the StarterTheme repo into a subdirectory, then we merged it
-into the PrestaShop repo. Enjoy the command used:
+into the PrestaShop repo. For those looking to do the same in their own project, enjoy the command we used:
 
 {% highlight bash %}
 git filter-branch --tree-filter 'mkdir -p themes/StarterTheme; for f in *; do if ! [ $f = themes ]; then mv $f themes/StarterTheme; fi; done;' HEAD
@@ -33,27 +32,28 @@ git filter-branch --tree-filter 'mkdir -p themes/StarterTheme; for f in *; do if
 
 
 
-## Minimal css for dev
+## Minimal CSS for developers
 
-We decided from the very beginning that the StarterTheme will ship with no CSS at all.
+We decided from that the StarterTheme will ship with no CSS at all.
 
-As we were developing the theme we needed some styles, at least to understand what we're looking when testing.
-It also helps us improving the markup.
+As we were developing various section of the theme, we needed some styles, at least to understand what we were looking at when testing.
+It also helps us improve the markup.
 
-All styles are inside a `_dev` folder, this folder will be removed from the *"release package"*.
-
+Those styles are only here to help developers get a better view of their work-in-progress. They are are inside the `_dev` folder, which will be removed from the *"release package"*.
 
 
 ## The product page
 
-The product page has been fully reworked. It's now split into multiple _partials_ and all the logic in the templates
-have been removed!
+The product page has been fully reworked. It's now split into multiple _partials_ (bits of code that can be reused), and all the logic in the templates
+has been removed!
 
-We introduced a ProductPresenter that prepare a `$product` array for the template. The product will be consistent throought
-all the pages (product page, home page, category page, etc). Do you remember all the issues with product page like
+We introduced a ProductPresenter object that prepares a `$product` array for the template. The product will be consistent through
+all the pages (product page, home page, category page, etc.). 
+
+Do you remember all the issues with the product page we used to have, such as
 [this](http://forge.prestashop.com/browse/PSCSX-2359) or [this](http://forge.prestashop.com/browse/PSCSX-3607)? **It's all over**.
 
-Here is an nice example for you.
+Here is a nice example for you.
 
 ### Before
 
@@ -118,6 +118,7 @@ Here is an nice example for you.
 {% endhighlight %}
 
 ### After
+
 {% highlight smarty %}
 {block name="product_prices"}
   {if $product.show_price}
@@ -182,18 +183,18 @@ Here is an nice example for you.
 {/block}
 {% endhighlight %}
 
-Soon we'll start using ajax and rivetsjs to improve this page.
+Soon we'll start using Ajax and [Rivets.js](http://rivetsjs.com/) to improve this page.
 
 
 
 ## Notifications
 
-If you ever worked with PrestaShop, you know `$this->errors`, this array where we
-store all error messages accross the whole software. We now have introduced the
+If you ever worked with PrestaShop, surely you know `$this->errors`, the array where we
+store all error messages across the whole software. We now have introduced the
 same thing for `success`, `info`, `warning`.
 This may look like a small improvement but it's actually a big step forward.
 
-If you look at many templates in `default-bootstrap` you'll find a lot of piece of code like this:
+If you look at many templates in `default-bootstrap`, you'll find a lot of pieces of code like this:
 
 {% highlight smarty  %}
 {if $category->id AND $category->active}
@@ -205,23 +206,22 @@ If you look at many templates in `default-bootstrap` you'll find a lot of piece 
 
 Hence the new notification arrays will help remove A LOT of logic from the templates.
 
-Plus, now that messages are set in the controllers, they won't change so they can be translated easily.
+Plus, now that messages are set in the controllers, they won't change, which means that they can be translated easily.
 
 
 
 ## Smarty
 
-You may have noticed that **Twig** appreared in the backoffice. @xgouley and @kelu95 worked
-out a  way to have both twig and smarty working side by side.
+You may have noticed that **Twig** appeared in the back office. @xgouley and @kelu95 worked
+out a way to have both Twig and Smarty working side by side.
 
-As of today, we don't plan to use Twig for the front office, **every templates will be written in Smarty**.
-No worries.
+As of today, we don't plan on using Twig for the front office, which means that **all 1.7 frontend templates will be written in Smarty**. No worries, your 1.6 theme will be adaptable to 1.7.
 
 
 ### Secure by default
 
-We told you from the beggining we want to escape all smarty vars in PrestaShop 1.7.0.0. [It's done](https://github.com/PrestaShop/PrestaShop/commit/2a4118947e2a9b1d0cf3d039d5c28a63ddfe7a69)!
-If you want NOT to escape your smarty vars you'll have to use `nofilter`.
+We told you [from the begining](http://build.prestashop.com/news/starter-theme-kickoff/) that we wanted to escape all Smarty variables in PrestaShop 1.7.0.0. [It's done](https://github.com/PrestaShop/PrestaShop/commit/2a4118947e2a9b1d0cf3d039d5c28a63ddfe7a69)!
+If you want NOT to escape your Smarty vars, you'll have to use `nofilter`.
 
 {% highlight smarty  %}
 <section id="content" class="page-content page-cms page-cms-{$cms.id}">
@@ -232,21 +232,22 @@ If you want NOT to escape your smarty vars you'll have to use `nofilter`.
 
 ### New functions and modifiers
 
-We recently introduced few smarty helpers. They will be described in the upcoming theme documentation
-(_yeah I swear they will be one!_).
+We recently introduced a few Smarty helpers. They will be described in the upcoming theme documentation
+(_yeah I swear there will be one!_).
 
-Here is a little preview.
+In the meantime, here is a little preview.
 
-#### `{url}` function
 
-`{url}` will help you generate any url you need.
+### `{url}` function
+
+`{url}` will help you generate any URL you need.
 
 {% highlight smarty %}
 {url entity=cms id=2}
 {url entity=category id=3}
 {url entity=address id=1 params=['delete' => true]}
 
-will generate, respectively
+...will generate, respectively:
 
 http://prestashop.ps/en/content/2-legal-notice
 http://prestashop.ps/en/3-women
@@ -256,9 +257,9 @@ http://prestashop.ps/en/address?id_address=1&delete=1
 
 
 
-#### `classname` and `classnames` modifiers
+### `classname` and `classnames` modifiers
 
-The `classname` modifier will sanitise any string into a nice CSS class or id name.
+The `classname` modifier will sanitize any string into a nice CSS class or id.
 
 The `classnames` modifier will transform an array into class names (see example below).
 
@@ -273,7 +274,7 @@ $classes = [
 // Smarty
 class="{$classes|classnames}"
 
-will generate
+...will generate:
 
 class="class1 nice-layout"
 
@@ -281,7 +282,7 @@ class="class1 nice-layout"
 
 
 
-## Integration tests
+### Integration tests
 
 We are writing tests for the StarterTheme! You'll be able to use them for your theme to ensure full-compatibilty.
 
@@ -290,3 +291,5 @@ Tests are written in JavaScript on top of [Selenium](http://www.seleniumhq.org/)
 If you want to launch the test suite or even write some new ones, you should [read the existing documentation](https://github.com/PrestaShop/PrestaShop/blob/feat/starter-theme/tests/StarterTheme/README.md).
 
 ![PrestaShop StarterTheme Test Suite](/assets/images/2015/10/starter-theme-test-suite.png)
+
+See you soon for more on the growth of the StarterTheme!

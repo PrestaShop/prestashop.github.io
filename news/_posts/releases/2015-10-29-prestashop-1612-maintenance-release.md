@@ -24,17 +24,17 @@ More importantly to many merchants, we do believe this release fixes the long-st
 
 A bit of history is necessary in order to understand where that slowness came from.
 
-For last few months, we have received feedback about the Product page's Save & Stay button, which would keep spinning and remain unavailable for overly long, depending on the server configuration.
+For the last few months, we have received feedback about the Product page's "Save & Stay" button, which would keep spinning and remain unavailable for overly long, depending on the server configuration.
 
 The reason why that button got slow a few months ago was a mix of several concomitant items:
 
 * The Product page has several tabs.
-* Clicking the Save button saves the whole product, therefore all the tabs.
+* Clicking the "Save" button saves the whole product, therefore all the tabs.
 * If not all tabs are loaded at the moment the button is clicked (typically: load product page, quickly change one detail, save), there is an error. See [PSCSX-1257](http://forge.prestashop.com/browse/PSCSX-1257).
 * The solution? Prevent form submission until all tabs are loaded, and thus, disable the button while the tabs are loading. Here goes: [PSCFV-12359](http://forge.prestashop.com/browse/PSCFV-12359).
-* The consequence? On some server configurations (the cheap ones, mostly), clicking on the Save button triggers several synchronous Ajax calls to the server, effectively preventing the button from releasing as soon as it is clicked.
+* The consequence? On some server configurations (the entry-level ones, mostly), clicking on the "Save" button triggers several synchronous Ajax calls to the server, effectively preventing the button from releasing as soon as it is clicked.
 
-In short, to solve an issue (write error when clicking on Save), we had to slow the availability of the Save button, thus creating frustration, and also creating issues for slow servers (HTTP 500 errors, etc.).
+In short, to solve an issue (write error when clicking on "Save"), we had to slow the availability of the Save button, thus creating frustration, and also creating issues for slow servers (HTTP 500 errors, etc.).
 
 This got somehow worse in 1.6.1.0, with users reporting waiting time from 30s to several minutes. And we think the (seemingly simple) fact of [switching from synchronous to asynchronous tab loading](https://github.com/PrestaShop/PrestaShop/pull/4330) fixed the issues -- at least, all the feedback we are receiving point in this direction.
 
@@ -45,24 +45,30 @@ For a full list of changes, [see the list of pull requests merged into the 1.6.1
 
 Here are a few highlights for 1.6.1.2:
 
+#### Front office
+
+* A new demo address is now in place. Sorry to our friends at Citroën!
+* Product comparison now takes the chosen interval into account.
+* Fixed a situation where customer could not see available vouchers.
+* Products are now sortied by name in the invoice. Easier picking!
+* The top menu was not always active on mobile, now it is!
+* Updates to the Swedish translation for the installer.
+* Czech translation added for the installer.
+* ...and many more!
+
+#### Back office
+
 * Product page tabs now load asynchronously (see section above). Wow, that feels better!
 * Several performance improvements.
 * Several fixes in multishop, warehouses and import tools.
-* A new demo address is now in place. Sorry to our friends at Citroën!
-* Product comparison now takes the chosen interval into account.
 * Pagination is fixed in POST requests.
 * Carrier were not editable in certain situations, now they are again.
 * Fixed a case where third-party modules could not be disabled.
-* Fixed a situation where customer could not see available vouchers.
 * No more confusion between private and public messages in Customer Service.
 * Meta title and description now use textarea.
 * Fixed repetitive queries in specific prices.
 * You can now reset your invoice numbers ("Reset Invoice progressive number at beginning of the year" option), and add the year to it.
 * The invoice template function computeLayout() can now be overriden.
-* Products are now sortied by name in the invoice. Easier picking!
-* The top menu was not always active on mobile, now it is!
-* Update to the Swedish installation for the installer.
-* Czech translation added for the installer.
 * ...and many more!
 
 The [PrestaShop 1.6.1.2 changelog](https://www.prestashop.com/en/developers-versions/changelog/1.6.1.2-stable) is available, as well as [its release notes](https://www.prestashop.com/en/release-notes-1.6.1.2-stable) (based on the 1.6.1.0 ones).

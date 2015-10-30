@@ -17,7 +17,7 @@ PrestaShop 1.6.1.2 is now available. This maintenance release [closes 247 issues
 
 As readers of the Build devblog know quite well, this patch release has benefited from 4 RC versions before it was deemed stable enough to release.
 
-More importantly to many merchants, we do believe this release fixes the long-standing issue of the slowness of the Product page. 
+More importantly to many merchants, we do believe this release fixes the long-standing issue of the slowness of the Product page.
 
 
 ### About the slow Product page
@@ -79,42 +79,42 @@ This release had 36 contributors, both from PrestaShop and from the Community at
 
 {% highlight text %}
 (adapted from the following Git command: git shortlog --summary --since="2015-08-20" --until="2015-10-30")
-	 9	Alexandra Even
-	 1	Alfonso Jiménez
-	 1	Amazzing
-	 1	BMS-fenaille
-	 4	brouillon
-	 1	cgordenne
-	 1	David Eschmeyer
-	 1	David Gasperoni
-	 1	David-Julian BUCH
-	 2	DogSports
-	 4	Eolia
-	 4	Eric Rouvier
-	 3	firstred
-	 1	Francois Gaillard
- 168	Gregory Roussac
-	 4	Gytis
-	 1	hiousi
-	 9	joce
-	18	Julien Bourdeau
-	 4	Julien Martin
-	95	Jérôme Nadaud
-	 4	Krystian Podemski
-	 2	Luc Vandesype
-	 1	MacRoy
-	 2	Marius
-	29	Maxime Biloé
-	 1	Mehdi BOUZIDI
-	 4	Michael Dekker
-	 1	PhpMadman
-	10	Presta Module
-	 9	PrestaEdit
-	 2	quadrateam
-	 1	Rémi Gaillard
-	33	Thibaud Chauviere
-	 2	Thomas N
-	 5	Xavier Gouley
+	   9	Alexandra Even
+	   1	Alfonso Jiménez
+	   1	Amazzing
+	   1	BMS-fenaille
+	   4	brouillon
+	   1	cgordenne
+	   1	David Eschmeyer
+	   1	David Gasperoni
+	   1	David-Julian BUCH
+	   2	DogSports
+	   4	Eolia
+	   4	Eric Rouvier
+	   3	firstred
+	   1	Francois Gaillard
+	 168	Gregory Roussac
+	   4	Gytis
+	   1	hiousi
+	   9	joce
+	  18	Julien Bourdeau
+	   4	Julien Martin
+	  95	Jérôme Nadaud
+	   4	Krystian Podemski
+	   2	Luc Vandesype
+	   1	MacRoy
+	   2	Marius
+	  29	Maxime Biloé
+	   1	Mehdi BOUZIDI
+	   4	Michael Dekker
+	   1	PhpMadman
+	  10	Presta Module
+	   9	PrestaEdit
+	   2	quadrateam
+	   1	Rémi Gaillard
+	  33	Thibaud Chauviere
+	   2	Thomas N
+	   5	Xavier Gouley
 {% endhighlight %}
 
 ...and let's not forget the whole Product/Tech team here at PrestaShop, who double-checked the code before it was merged, and applied our QA tests!

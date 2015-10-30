@@ -93,7 +93,7 @@ This release had 36 contributors, both from PrestaShop and from the Community at
 	 4	Eric Rouvier
 	 3	firstred
 	 1	Francois Gaillard
- 168	Gregory Roussac
+ 	168	Gregory Roussac
 	 4	Gytis
 	 1	hiousi
 	 9	joce

@@ -21,7 +21,7 @@ The PrestaShop team has three main ways to get feedback from the Community:
 * The [GitHub repository](https://github.com/PrestaShop/), where developers can submit code changes to the team through pull requests (hereafter "PR"). The repo contains the code for the Core of PrestaShop, as well as individual projects for each module.
 * The comments on the Build devblog. Hey, that's here!
 
-As anyone lurking on our GitHub repository knows, PRs have gotten from a trickle to a more steady flow of code suggestions, currently reaching more than 360 PR just for the main project. Modules also have their share of PRs waiting.
+As anyone lurking on our GitHub repository knows, PRs have gotten from a trickle to a more steady flow of code suggestions, currently reaching more than 360 PRs just for the main project. Modules also have their share of PRs waiting.
 
 While we are more than happy to see the Community involved, the current plans for version 1.7 of PrestaShop made it that until now, the devteam had little time to dive into all these PRs and separate the wheat from the chaff.
 

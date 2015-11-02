@@ -2,9 +2,9 @@
 layout: post
 title:  "Let's review pull requests!"
 subtitle: "Making sure that your code makes it to Core"
-date:   2015-10-30 12:00:41
+date:   2015-11-02 12:00:41
 author: xavierborderie
-icon: icon-leaf
+icon: icon-bug
 tags:
  - github
  - pullrequests
@@ -63,7 +63,7 @@ If a rewrite of your patch is needed, either because you can think of a better s
 
 In any case, please leave a comment aknowledging that you aware of the PR's situation, and willing to starting working with us to have it possibly merged!
 
-If you aim at fixing version 1.5 or below, please port your code the `1.6.x` or `develop` branch. PrestaShop's versions below 1.6 will not receive updates anymore, except for security issues.
+If you aim at fixing version 1.5 or below, please port your code to the `1.6.x` or `develop` branch. PrestaShop's versions below 1.6 will not receive updates anymore, except for security issues.
 
 By following these simple suggestions, you can help us go through the open tickets quicker, spot the real gems faster, and thus make PrestaShop a better e-commerce solution!
 

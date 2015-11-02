@@ -12,6 +12,8 @@ tags:
  - gardening
 ---
 
+Have you submitted code to PrestaShop's Core codebase or any of its native module through a pull request on GitHub? Then read on!
+
 The PrestaShop team has three main ways to get feedback from the Community:
 
 * The [Support Forums](http://www.prestashop.com/forums/), where we try to answer the most pressing matters (and there's never enough hours in the day).

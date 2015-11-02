@@ -21,7 +21,7 @@ The PrestaShop team has three main ways to get feedback from the Community:
 
 As anyone lurking on our GitHub repository knows, PRs have gotten from a trickle to a more steady flow of code suggestions, currently reaching more than 360 PR just for the main project. Modules also have their share of PRs waiting.
 
-While we are more than happy to see the Community, the current plans for version 1.7 of PrestaShop made it that until now, the devteam had little time to dive into all these PRs and separate the wheat from the chaff.
+While we are more than happy to see the Community involved, the current plans for version 1.7 of PrestaShop made it that until now, the devteam had little time to dive into all these PRs and separate the wheat from the chaff.
 
 That's where you, dear reader who contributed one or more PRs, can easily help us! 
 

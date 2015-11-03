@@ -51,6 +51,10 @@ Now, please look at your code, and ask yourself:
   * `1.6.1.x` for a bug fix for version 1.6.1.x (currently 1.6.1.2). PrestaShop 1.6 will not receive any new feature.
   * `dev` for a PR made on a module.
 
+Write a comment to tell us your answer for these questions, or any other information you feel is essential for us to test and merge your change!
+
+Note: if your patch needs to be updated, don't go update it right away! Let us know first, and we will let you know if it fits our 1.6.1.x plans or not. Thank you!
+
 ### Essential links
 
 Here is a link to all the currently open pull requests in all of PrestaShop's branches: [https://github.com/PrestaShop/PrestaShop/pulls](https://github.com/PrestaShop/PrestaShop/pulls)

@@ -12,7 +12,17 @@ tags:
  - 1.6
 ---
 
-With the adoption of [SemVer](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)-like versioning, we know that patch version will only feature non-breaking changes, making it far safer to update to PrestaShop than ever before... and thus safer for us to release patch version more regularly.
+With the adoption of [SemVer](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)-like versioning, we know that a patch version will only feature non-breaking changes, making it far safer to update to PrestaShop than ever before... and thus safer for us to release patch version more regularly.
+
+As a reminder, this is how [SemVer](http://semver.org/) works:
+
+> Given a version number MAJOR.MINOR.PATCH, increment the:
+>
+> - MAJOR version when you make incompatible API changes,
+> - MINOR version when you add functionality in a backwards-compatible manner, and
+> - PATCH version when you make backwards-compatible bug fixes.
+>
+> Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
 We plan on adopting a new release process in order to give merchants and developers more predictable releases, with a higher level of transparency.
 

@@ -49,11 +49,15 @@ Now, please look at your code, and ask yourself:
 * Is the PR made on the correct branch?<br/>It should be:
   * `develop` for an improvement or a bug fix targeted at the forthcoming 1.7.
   * `1.6.1.x` for a bug fix for version 1.6.1.x (currently 1.6.1.2). PrestaShop 1.6 will not receive any new feature.
-  * `dev` for a PR made on a module.
 
-Write a comment to tell us your answer for these questions, or any other information you feel is essential for us to test and merge your change!
 
-Note: if your patch needs to be updated, don't go update it right away! Let us know first, and we will let you know if it fits our 1.6.1.x plans or not. Thank you!
+Note: If your PR was made on a module's repository (ergo, NOT the [/PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop) one, but for instance the [/PrestaShop/dashtrends](https://github.com/PrestaShop/dashtrends) one), please use the `dev` branch.
+
+Write a comment to tell us your answer for these questions, or any other information you feel is essential for us to test and merge your change! If possible, you can even [create a Forge ticket](http://forge.prestashop.com/) for your PR, in order to have the conversation featured in our daily planning!
+
+Note: if your patch needs to be updated or to be moved to another branch, don't go make the change right away! Let us know first, and we will let you know if it fits our plans for PrestaShop 1.6.1.x/1.7 or not. 
+
+Thank you so much for your help!
 
 ### Essential links
 

@@ -45,4 +45,6 @@ All this means that we want to stop waiting to have 200 code changes before we r
 
 Since patch versions are built to be a safe upgrade for the current major or minor version, we think we owe it to you to release fixes more often -- probably every 2-3 weeks, with 10-15 issues.
 
+Note that this plan is only for patch versions (1.6.1.3, 1.6.1.4, etc.), NOT for minor versions (1.6.2.0, 1.6.3.0, etc.) nor for major versions (1.7.0.0, 1.8.0.0, etc.).
+
 We are confident this system of safe patch versions will increase your trust in upgrading PrestaShop.

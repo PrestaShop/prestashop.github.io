@@ -64,10 +64,11 @@ Thank you so much for your help!
 Here is a link to all the currently open pull requests in all of PrestaShop's branches: [https://github.com/PrestaShop/PrestaShop/pulls](https://github.com/PrestaShop/PrestaShop/pulls)
 Remember that each module also has its own set of PRs!
 
-Here's how you can display all your pull requests submitted to the PrestaShop project:
+Here's how you can display all your open pull requests submitted to the PrestaShop project:
 
-1. Display all your currently open pull requests: https://github.com/pulls.
+1. Display all [your currently open pull requests](https://github.com/pulls).
 2. Open the "Organization" filter and choose "PrestaShop".
+3. From there, please gives us an update/opinion on each open PR.
 
 ### A few tips
 
@@ -75,8 +76,8 @@ If a rewrite of your patch is needed, either because you can think of a better s
 
 If you aim at fixing version 1.5 or below, please port your code to the `1.6.1.x` or `develop` branch. PrestaShop's versions below 1.6 will not receive updates anymore, except for security issues.
 
-By following these simple suggestions, you can help us go through the open PRs quicker, spot the real gems faster, and thus make PrestaShop a better e-commerce solution!
-
 In any case, please leave a comment acknowledging that you aware of the PR's situation, and willing to start working with us to have it possibly merged!
+
+By following these simple suggestions, you can help us go through the open PRs quicker, spot the real gems faster, and thus make PrestaShop a better e-commerce solution!
 
 Thank you for giving us an update on every one of your open pull requests!

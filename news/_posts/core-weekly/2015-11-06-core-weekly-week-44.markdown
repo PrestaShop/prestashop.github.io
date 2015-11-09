@@ -75,7 +75,7 @@ Finally, these are the merged pull-requests on the 'feat/starter-theme' branch s
 
  * [4235](https://github.com/PrestaShop/PrestaShop/pull/4235): Manufacturers and suppliers display, by @maximebiloe.
  * [4308](https://github.com/PrestaShop/PrestaShop/pull/4308): My account features, by @maximebiloe.
- * [4144](https://github.com/PrestaShop/PrestaShop/pull/4144): Load only theme.(js|css) and custom.(js|css) & remove all other assets, by @julienbourdeau.
+ * [4144](https://github.com/PrestaShop/PrestaShop/pull/4144): Load only theme.(js/css) and custom.(js/css) & remove all other assets, by @julienbourdeau.
  * [4354](https://github.com/PrestaShop/PrestaShop/pull/4354): Introduce single checkout option, by @julienbourdeau.
  * [4341](https://github.com/PrestaShop/PrestaShop/pull/4341): Add Vouchers in My Account, by @maximebiloe.
  * [4357](https://github.com/PrestaShop/PrestaShop/pull/4357): Create a customer/page tpl, by @maximebiloe.

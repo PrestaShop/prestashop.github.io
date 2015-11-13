@@ -21,7 +21,7 @@ We're working on patch version 1.6.1.3, and [you can download the RC1 right now]
 
 Now let's review the merged pull-requests on the ['develop' branch](https://github.com/PrestaShop/PrestaShop/tree/develop) since the last Core Weekly Report!
 
-Note that the Start Theme repo (see next section) is entirely part of the PrestaShop 1.7.0.0 project.
+Note that the Starter Theme repo (see next section) is entirely part of the PrestaShop 1.7.0.0 project.
 
  
 #### Back office

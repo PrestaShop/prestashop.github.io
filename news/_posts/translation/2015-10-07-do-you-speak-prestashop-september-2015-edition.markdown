@@ -54,7 +54,7 @@ A lot of you are working everyday on Crowdin to have PrestaShop available in man
  7. | eleazar | German |335
  8. | dzuman | Vietnamese |246
  9. | lolypop000 | Slovenian |227
-10. | Filip Filipović (filipfilipovic) | Czech |219
+10. | Filip Filipović (filipfilipovic) | Croatian |219
 
 **A big applause to them!** And welcome to our new top contributors!
 

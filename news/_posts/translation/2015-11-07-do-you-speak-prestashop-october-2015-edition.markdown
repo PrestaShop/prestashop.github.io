@@ -20,7 +20,7 @@ Some languages like German or Spanish are used in several countries (or regions)
 When you look at the translation progress, you'll often see some lower completion (far from 100% completed) for such languages. It doesn't mean the project won't be fully translated in these languages in the end!
 
 Indeed, when depending on another language, these local projects inherit from the existing translation of the main project.
-If you look at the "German, Austria", currently 1% translated, it means 1% of the strings have been adapted to the Austrian market. If you install the Austrian language in your shop, the remaining 99% will be translated in German: it is automatically fetched from the primary German project. Convenient!
+If you look at the "German, Austria" project, currently 1% translated, it means 1% of the strings have been adapted to the Austrian market. If you install the Austrian language in your shop, the remaining 99% will be translated in German: it is automatically fetched from the primary German project. Convenient!
 
 Today, the following languages work this way:
 
@@ -86,7 +86,7 @@ A lot of you are working everyday on Crowdin to have PrestaShop available in man
 
 #### Fully translated languages
 
-At the end of October, PrestaShop 1.6.0.1 was fully available (= 100% translated and validated) in 6 languages:
+At the end of October, PrestaShop 1.6.1.0 was fully available (= 100% translated and validated) in 6 languages:
 
 * Bulgarian
 * Dutch
@@ -112,7 +112,7 @@ At the end of October, PrestaShop 1.6.0.1 was fully available (= 100% translated
 * Spanish
 * Swedish
 
-The translators being very reactive (yes, thanks again) these languages should be soon 100% translated (if not already).
+The translators being very reactive (yes, thanks again!), these languages should be soon 100% translated (if not already by the time you read this).
 
 
 ## Languages with the best evolution
@@ -135,7 +135,7 @@ You can now translate PrestaShop in:
 * [Filipino](https://crowdin.com/project/prestashop-official/fil)
 * [Mongolian](https://crowdin.com/project/prestashop-official/mn)
 
-So don't hesitate to join!
+So don't hesitate to join these!
 
 ## Languages that need (more) proofreaders
 
@@ -161,7 +161,7 @@ If you wish to help proofreading what has been translated, please [contact me on
 Here is an update on the latest initiatives from members of the translation community.
 
 ### Spanish
-Translator Jesús Ruiz García ([jruiz](https://crowdin.com/profile/jruiz) - who's also helping us with the documentation, thank you!) has started a **Spanish dictionary**, to make sure everybody uses the same terms for translation. It's gathered under an online document here: [Spanish glossary](https://docs.google.com/document/d/1Ndjk_bt0wXul1bQwz5KJ_PpM8BcwZhTBo4sfbtVoBwg/edit?usp=sharing).
+Translator Jesús Ruiz García ([jruiz](https://crowdin.com/profile/jruiz) - who's also helping us with the [Spanish documentation of PrestaShop](http://doc.prestashop.com/pages/viewpage.action?pageId=26148899), thank you Jesús!) has started a **Spanish glossary**, to make sure everybody uses the same terms for translation. It's gathered under an online document here: [Spanish glossary](https://docs.google.com/document/d/1Ndjk_bt0wXul1bQwz5KJ_PpM8BcwZhTBo4sfbtVoBwg/edit?usp=sharing).
 
 More information about it on Crowdin, with [this discussion](https://crowdin.com/project/prestashop-official/discussions/248).
 If you want to help, get in touch with Jesús on Crowdin!

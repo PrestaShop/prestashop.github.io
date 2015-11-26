@@ -23,7 +23,7 @@ Version 1.6.1.3 benefitted from a RC period, which explains why it took so much 
 
 Of note: MySQL 5.7 does not play well with PrestaShop 1.6 at the moment. A fix is planned for PrestaShop 1.7: [see pull-request #4507](https://github.com/PrestaShop/PrestaShop/pull/4507), and once it is in place, it will be also fixed in version 1.6.1.4 so that PrestaShop 1.6 and MySQL 5.7 may finally work well together.
 
-A word of caution for our American merchants: even if the upgrade is safe from 1.6.1.0-1.6.1.2, we recommend you to wait next Tuesday before upgrading your store – we don't want you to miss Black Friday and Cyber Monday!
+As usual, we do not recommend doing any upgrade and technical change to your store when you are running promotions leading to high traffic on your website. This counts double for our American merchants: you might want to until Black Friday and Cyber Monday are over before upgrading :)
 
 We hope you enjoy this patch release!
 

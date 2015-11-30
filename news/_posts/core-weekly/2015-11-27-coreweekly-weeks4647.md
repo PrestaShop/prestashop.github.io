@@ -43,13 +43,13 @@ Here are the merged pull-requests on the [1.6.1.x branch](https://github.com/Pre
  
 #### Localization
 
- *[4302](https://github.com/PrestaShop/PrestaShop/pull/4302): Fix Intra-EU VAT. Thank you @firstred!
- *[4385](https://github.com/PrestaShop/PrestaShop/pull/4385): Replaced Swiss German with Germany German, by @djfm.
+ * [4302](https://github.com/PrestaShop/PrestaShop/pull/4302): Fix Intra-EU VAT. Thank you @firstred!
+ * [4385](https://github.com/PrestaShop/PrestaShop/pull/4385): Replaced Swiss German with Germany German, by @djfm.
 
  
 #### Mails
  
- *[4369](https://github.com/PrestaShop/PrestaShop/pull/4369): Fixed bug in download_product.txt. Thank you @Nobodaddy!
+ * [4369](https://github.com/PrestaShop/PrestaShop/pull/4369): Fixed bug in download_product.txt. Thank you @Nobodaddy!
 
 
 

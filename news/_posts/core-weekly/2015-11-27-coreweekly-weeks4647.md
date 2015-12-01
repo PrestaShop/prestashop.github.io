@@ -27,7 +27,7 @@ Here are the merged pull-requests on the [1.6.1.x branch](https://github.com/Pre
 
 #### Front office
 
- * [4414](https://github.com/PrestaShop/PrestaShop/pull/4414): Add id_order to order_details link to work without JS, by @maximebiloe.
+ * [4414](https://github.com/PrestaShop/PrestaShop/pull/4414): Add id_order to order_details link to work without JS. Thank you @drzraf!
 
 
 #### Back office
@@ -113,7 +113,7 @@ Finally, these are the merged pull-requests on the 'feat/starter-theme' branch s
  
 See all the PRs merged into the codebase since the last Core Weekly [here](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr+merged%3A%3E2015-11-09+is%3Aclosed+).
 
-Thank you to the contributors whose pull requests were merged since the last Core Weekly Report: @christianverardi, @Nobodaddy, @PrestaEdit, and @prestamodule! Also, thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
+Thank you to the contributors whose pull requests were merged since the last Core Weekly Report: @christianverardi, @drzraf,  @Nobodaddy, @PrestaEdit, and @prestamodule! Also, thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
 
 If you want to contribute to PrestaShop with code, read those:
 

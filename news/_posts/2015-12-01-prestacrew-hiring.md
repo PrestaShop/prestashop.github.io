@@ -26,15 +26,14 @@ Mostly. The Core and Addons teams are way more than that!
 ## What's in there for you
 
 * [An awesome team spirit](https://www.instagram.com/prestacrew/)
-* Some real technical challenges (if you're here you've probably read what we're technically up to)
+* Some real technical challenges (if you're here, you've probably read what we're technically up to)
+* The tools of your choice: PhpStorm? Great! vim? Awesome! Atom? Sublime? Go ahead! Windows/Linux? We got ya covered!
 * [Great offices at the heart of Paris' tech scene](http://www.officelovin.com/2015/07/27/an-exclusive-tour-of-prestashops-hip-paris-headquarters/)
 * A fluffy mascot named [Puff](https://twitter.com/puff_life)
 * Frequent team buildings and informal activities (music, sports, meetups)
 * A tasty welcome each morning (fruits, pastries)
 
-Sometimes an image is worth thousands words.
-
-Joining PrestaShop, it's this:
+Sometimes an image is worth thousands words. Joining PrestaShop, it's this:
 
 ![Yep, the PrestaCrew likes to have some fun](/assets/images/2015/12/prestacrew_hiring.png)
 

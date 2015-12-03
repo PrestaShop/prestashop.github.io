@@ -106,7 +106,7 @@ For the Product page in particular, we intend to have a switch button that will 
 
 PrestaShop 1.7 introduces a rethinking of the way themes work. This is not tied to new architecture nor to Symfony, but to [the new Starter Theme](http://build.prestashop.com/news/starter-theme-kickoff/) and the best practices it follows.
 
-Consequently, 1.6 themes will not work on 1.7: logic code is taken out of templates, controllers are now passing arrays instead of objects, the theme is secure by default, CSS classes are only for styling, no use of Bootstrap anymore
+Consequently, 1.6 themes will not work on 1.7: logic code is taken out of templates, controllers are now passing arrays instead of objects, the theme is secure by default, CSS classes are only for styling, no use of Bootstrap anymore, etc. The new way to build themes in 1.7, with a sturdy Starter Theme from which all theme developers will be able to build solid themes from the get-go, will allow the Community to create modern and durable themes.
 
 
 ### What about...?

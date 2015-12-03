@@ -18,7 +18,7 @@ A lot of things have changed since the release of 1.6.1.0. Let's try to address 
 **Summary**
 
 * PrestaShop 1.7 will introduce a brand new architecture, based on the Symfony Framework.
-* It will only apply to two pages of the back office for 1.7: the Produt page and the Modules page.
+* It will only apply to two pages of the back office for 1.7 at first: the Product page and the Modules page.
 * The rest of the back office will still use the legacy architecture from 1.5-1.6. 
 * The two architectures will coexist while we switch more back office pages to the new architecture, in forthcoming versions.
 * Only modules that target the Product and Modules pages will need to be adapted.

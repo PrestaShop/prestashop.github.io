@@ -15,7 +15,6 @@ Remember, back in May 2015, when we announced that we were building [a new archi
 
 A lot of things have changed since the release of 1.6.1.0. Let's try to address the different aspects of it.
 
-<div class="alert alert-info" role="alert">
 **Summary**
 
 * PrestaShop 1.7 will introduce a brand new architecture, based on the Symfony Framework, along with its Twig templating engine.
@@ -25,7 +24,6 @@ A lot of things have changed since the release of 1.6.1.0. Let's try to address 
 * Only modules that target the Product and Modules pages will need to see their templating code adapted.
  
 Read on for more details!
-</div>
 
 
 #### Why does PrestaShop need a new architecture?

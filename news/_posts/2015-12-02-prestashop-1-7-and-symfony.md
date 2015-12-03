@@ -2,11 +2,12 @@
 layout: post
 title:  "An update on the 1.7 architecture"
 subtitle: "What's happening in NewArchi land?"
-date:   2015-11-05 14:00:00
+date:   2015-12-03 12:00:00
 author: xavierborderie
 icon: icon-road
 tags:
  - architecture
+ - symfony
  - 1.7
 ---
 
@@ -17,11 +18,13 @@ A lot of things have changed since the release of 1.6.1.0. Let's try to address 
 <div class="alert alert-info" role="alert">
 **Summary**
 
-* PrestaShop 1.7 will introduce a brand new architecture, based on the Symfony Framework.
-* It will only apply to two pages of the back office for 1.7 at first: the Product page and the Modules page.
-* The rest of the back office will still use the legacy architecture from 1.5-1.6. 
-* The two architectures will coexist while we switch more back office pages to the new architecture, in forthcoming versions.
-* Only modules that target the Product and Modules pages will need to be adapted.
+* PrestaShop 1.7 will introduce a brand new architecture, based on the Symfony Framework, along with its Twig templating engine.
+* The new architecture will only be used in the back office for now, and at first (1.7) only for two pages of the back office: the Product page and the Modules page.
+* The rest of the back office will still use the legacy architecture from 1.5-1.6 -- but they will be switched to the new architecture in later versions of PrestaShop
+* The two architectures will coexist while we switch more back office pages to the new architecture, in a transition phase that will take a few versions of PrestaShop.
+* Only modules that target the Product and Modules pages will need to see their templating code adapted.
+ 
+Read on for more details!
 </div>
 
 
@@ -35,9 +38,11 @@ PrestaShop 1.6, released in March 2014, kept most of the 1.5 architecture intact
 
 All was fine and dandy, but even with the 1.5 rewrite, many parts of the code showed that they could use a more modern approach. Sure, it still did work as expected in 1.6, but already showed weaknesses here and there.
 
-In 2015, while working on improving version 1.6 (which lead us to v1.6.1.0), we took the decision to improve the situation: PrestaShop's code needs to be more robust, more modular, and fully testable. As it was, this wasn't easily possible in the 1.5-1.6 codebase. This led to a new architecture in v1.6.1.0, then once the 1.7 development was fully started, we made a few more tests and proofs-of-concepts.
+In 2015, while working on improving version 1.6 (which led us to v1.6.1.0), we took the decision to improve the situation: PrestaShop's code needs to be more robust, more modular, and fully testable. As it was, this wasn't easily possible in the 1.5-1.6 codebase. This led to a new architecture in v1.6.1.0, then once the 1.7 development was fully started, we made a few more tests and proofs-of-concepts.
 
 We made our choice: **PrestaShop 1.7 will introduce Symfony2 in its Core codebase**. This major release will also be a great turn on the technical side of the application, but this change will be negotiated smoothly and over the long term: not everything will change with 1.7.
+
+Since [SymfonyCon Paris](http://pariscon2015.symfony.com/) opens today, and the project is both celebrating [its tenth anniversary](http://blog.sensiolabs.com/fr/2015/06/25/sensiolabs_celebre_les_10_ans_de_symfony/) and [the release of Symfony 3.0](https://symfony.com/blog/symfony-3-0-0-released), this is a good time to finally publish this article :)
 
 
 #### Why did we choose to use a framework rather than upgrading our code?
@@ -83,20 +88,29 @@ Our aim is to rework the navigation menu in order to make it clearer, ease the c
 There is no deeper integration of the framework for now: the object model and tools (notably those used by the modules) are still here. Only hooks called for the pages that have been switched (Products and Modules in 1.7, some others in later versions) will have to be adapted, because the interface will have changed, and the hooks' parameters will have evolved a bit.
 
 
-### Will you switch from Smarty to Twig?
+### Will we switch from Smarty to Twig?
 
-Twig is Symfony's templating language. It will be used for all pages that are rewritten to use Symfony (Product page and Modules page), but NOT for the global interface (menu, header, etc.) nor the non-rewritten pages, which will still use Smarty.
+[Twig](http://twig.sensiolabs.org/) is Symfony's templating language. In version 1.7, it will be used for all pages that are rewritten to use Symfony (Product page and Modules page), but NOT for the global interface (menu, header, etc.) nor the non-rewritten pages, which will still use Smarty. The two templating engines will be available, side by side, during the transition phase.
+
+Later versions of PrestaShop will have more back office pages rewritten to use Symfony, and thus using Twig. Eventually, the whole back office is expected to be use Twig.
 
 
-### Will my modules still work?
+### Will the 1.6 modules still work?
 
 In PrestaShop 1.7, Symfony will only be used for back office-specific features. Consequently, the only impacts on the 1.7, for contributors and developers, will be limited to an adaptation of hooks on the Products and Modules page. Modules targeting the other pages should not need to be adapted.
 
-Module developers won't need to develop in Symfony for now: the module API remains mostly the same, and Smarty is still used in non-switched pages.
+Module developers won't need to develop in Symfony for now: the module API remains mostly the same, and Smarty is still used in non-rewritten pages. It _will_ be necessary to use Symfony's Twig templating engine for modules that target the rewritten pages, but the core code of the module should remain the same.
+
+For the Product page in particular, we intend to have a switch button that will allow merchants to switch between the Legacy/Smarty version and the Symfony/Twig version. This is still being worked out, but it would allow the 1.6 modules which target that page to still work in 1.7, Smarty and all. That would give more time to developers to adapt their 1.6 modules.
 
 
-### Will my themes still work?
+### Will the 1.6 themes still work?
 
-PrestaShop 1.7 introduces a rethinking of the way themes work. This is not tied to new architecture nor Symfony but to [the new Starter Theme](http://build.prestashop.com/news/starter-theme-kickoff/) and the best practices it follows.
+PrestaShop 1.7 introduces a rethinking of the way themes work. This is not tied to new architecture nor to Symfony, but to [the new Starter Theme](http://build.prestashop.com/news/starter-theme-kickoff/) and the best practices it follows.
 
 Consequently, there's a high chance 1.6 themes will NOT work on 1.7.
+
+
+### What about...?
+
+Have more questions about the new architecture or anything related to PrestaShop 1.7? We have created [a dedicated forum for that](https://www.prestashop.com/forums/forum/273-170x-in-development/). See you there!

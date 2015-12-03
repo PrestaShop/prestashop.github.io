@@ -163,7 +163,7 @@ Here is an update on the latest initiatives from members of the translation comm
 ### Spanish
 Translator Jesús Ruiz García ([jruiz](https://crowdin.com/profile/jruiz) - who's also helping us with the [Spanish documentation of PrestaShop](http://doc.prestashop.com/pages/viewpage.action?pageId=26148899), thank you Jesús!) has started a **Spanish glossary**, to make sure everybody uses the same terms for translation. It's gathered under an online document here: [Spanish glossary](https://docs.google.com/document/d/1Ndjk_bt0wXul1bQwz5KJ_PpM8BcwZhTBo4sfbtVoBwg/edit?usp=sharing).
 
-More information about it on Crowdin, with [this discussion](https://crowdin.com/project/prestashop-official/discussions/248).
+More information about it on Crowdin, with [this discussion](https://crowdin.com/project/prestashop-official/discussions/253).
 If you want to help, get in touch with Jesús on Crowdin!
 
 ### Turkish

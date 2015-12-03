@@ -58,7 +58,7 @@ But we also took a look at other options:
 
 * Lumen/Laravel:
   * It [uses Symfony components](http://symfony.com/projects/laravel), so it's one more layer over Symfony;
-  * It brings a lot of services that are not really useful to us for now).
+  * It brings a lot of services that are not really useful to us for now.
 * Silex:
   * This is a minimalist framework, and then not really adapted to our needs.
   * No efficient route descriptor.
@@ -90,7 +90,7 @@ There is no deeper integration of the framework for now: the object model and to
 
 [Twig](http://twig.sensiolabs.org/) is Symfony's templating language. In version 1.7, it will be used for all pages that are rewritten to use Symfony (Product page and Modules page), but NOT for the global interface (menu, header, etc.) nor the non-rewritten pages, which will still use Smarty. The two templating engines will be available, side by side, during the transition phase.
 
-Later versions of PrestaShop will have more back office pages rewritten to use Symfony, and thus using Twig. Eventually, the whole back office is expected to be use Twig.
+Later versions of PrestaShop will have more back office pages rewritten to use Symfony, and thus using Twig. Eventually, the whole back office is expected to be using Twig.
 
 
 ### Will the 1.6 modules still work?
@@ -106,7 +106,7 @@ For the Product page in particular, we intend to have a switch button that will 
 
 PrestaShop 1.7 introduces a rethinking of the way themes work. This is not tied to new architecture nor to Symfony, but to [the new Starter Theme](http://build.prestashop.com/news/starter-theme-kickoff/) and the best practices it follows.
 
-Consequently, there's a high chance 1.6 themes will NOT work on 1.7.
+Consequently, 1.6 themes will not work on 1.7: logic code is taken out of templates, controllers are now passing arrays instead of objects, the theme is secure by default, CSS classes are only for styling, no use of Bootstrap anymore
 
 
 ### What about...?

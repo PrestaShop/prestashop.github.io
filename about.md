@@ -37,3 +37,8 @@ If you want to see some feature added to PrestaShop, please open an 'Improvement
 **Bug report**
 
 If you find a bug or something that doesn't work as expected, please open a 'Bug' ticket on [the Forge](http://forge.prestashop.com).
+
+
+## Contributors
+
+{% include authors.html %}

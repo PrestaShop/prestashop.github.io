@@ -30,6 +30,10 @@
             margin: auto;
         }
     }
+    .thumbnail.contributor > img {
+      width: 120px !important;
+      height: 120px !important;
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -109,6 +113,14 @@ img {
 
 img.emoji {
     display: inline;
+}
+
+.thumbnail.contributor {
+  border: none;
+  > img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 

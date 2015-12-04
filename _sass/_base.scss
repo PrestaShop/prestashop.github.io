@@ -111,6 +111,14 @@ img.emoji {
     display: inline;
 }
 
+.thumbnail.contributor {
+  border: none;
+  > img {
+    width: 320px;
+    height: 320px;
+  }
+}
+
 
 /**
  * Figures

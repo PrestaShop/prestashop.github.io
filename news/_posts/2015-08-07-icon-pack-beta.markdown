@@ -2,6 +2,7 @@
 layout: post
 title:  "PrestaShop Official Icon Pack - Beta"
 subtitle: "We're cooking some fresh icons for you!"
+redirect_from: /icon-pack/
 date:   2015-08-07 15:12:00
 author:  [ agriveau ]
 icon: icon-bonnet

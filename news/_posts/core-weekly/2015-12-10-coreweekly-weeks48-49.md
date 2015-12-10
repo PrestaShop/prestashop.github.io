@@ -29,14 +29,14 @@ Here are the merged pull-requests on the [1.6.1.x branch](https://github.com/Pre
  
 #### Core
  
- * #4523: Fix/revert php7, by @julienbourdeau.
+ * [4523](https://github.com/PrestaShop/PrestaShop/pull/4523): Fix/revert php7, by @julienbourdeau.
  
 #### Localization
 
- * #4256: Swedish, translate country.xml. Thank you @MacRoy!
- * #4258: Swedish - Update meta.xml. Thank you @MacRoy!
- * #4278: Update Dutch tabs. Fix spelling errors. Thank you @MacRoy!
- * #4299: Swedish - Update cms.xml. Thank you @MacRoy!
+ * [4256](https://github.com/PrestaShop/PrestaShop/pull/4256): Swedish, translate country.xml. Thank you @MacRoy!
+ * [4258](https://github.com/PrestaShop/PrestaShop/pull/4258): Swedish - Update meta.xml. Thank you @MacRoy!
+ * [4278](https://github.com/PrestaShop/PrestaShop/pull/4278): Update Dutch tabs. Fix spelling errors. Thank you @MacRoy!
+ * [4299](https://github.com/PrestaShop/PrestaShop/pull/4299): Swedish - Update cms.xml. Thank you @MacRoy!
 
 
 ## Code changes in 1.7.0.0-develop
@@ -48,26 +48,26 @@ Note that the Starter Theme repo (see next section) is entirely part of the Pres
 
 #### Text
  
- * #4508: Don't display host names in README.md, by @xBorderie. Thank you @inetbiz!
+ * [4508](https://github.com/PrestaShop/PrestaShop/pull/4508): Don't display host names in README.md, by @xBorderie. Thank you @inetbiz!
  
  
 #### Back office
 
- * #4509: manage product pack items, by @kelu95.
- * #4514: Add php sf2 trans/transchoice parser for admin translation, by @kelu95.
- * #4522: manage multishop fields on product form, by @kelu95.
- * #4525: Advanced product management - product quantities support on new Product page, by @xGouley.
- * #4532: better display for displayAdminProductsExtra hook, by @xGouley.
- * #4533: Admin Product page: empty catalog page with new design, by @xGouley.
- * #4535: refacto product form DI, add some form fix, by @kelu95.
- * #4536: Fix Quty field disabled when ASM is disabled, by @xGouley.
- * #4538: refresh sf2 cache on clear cache from performance page, by @kelu95.
+ * [4509](https://github.com/PrestaShop/PrestaShop/pull/4509): manage product pack items, by @kelu95.
+ * [4514](https://github.com/PrestaShop/PrestaShop/pull/4514): Add php sf2 trans/transchoice parser for admin translation, by @kelu95.
+ * [4522](https://github.com/PrestaShop/PrestaShop/pull/4522): manage multishop fields on product form, by @kelu95.
+ * [4525](https://github.com/PrestaShop/PrestaShop/pull/4525): Advanced product management - product quantities support on new Product page, by @xGouley.
+ * [4532](https://github.com/PrestaShop/PrestaShop/pull/4532): better display for displayAdminProductsExtra hook, by @xGouley.
+ * [4533](https://github.com/PrestaShop/PrestaShop/pull/4533): Admin Product page: empty catalog page with new design, by @xGouley.
+ * [4535](https://github.com/PrestaShop/PrestaShop/pull/4535): refacto product form DI, add some form fix, by @kelu95.
+ * [4536](https://github.com/PrestaShop/PrestaShop/pull/4536): Fix Quty field disabled when ASM is disabled, by @xGouley.
+ * [4538](https://github.com/PrestaShop/PrestaShop/pull/4538): refresh sf2 cache on clear cache from performance page, by @kelu95.
 
 
 #### Core
 
- * #4511: refacto product core class call to avoid overrides, by @kelu95.
- * #4521: fix twig error with trans method, by @kelu95.
+ * [4511](https://github.com/PrestaShop/PrestaShop/pull/4511): refacto product core class call to avoid overrides, by @kelu95.
+ * [4521](https://github.com/PrestaShop/PrestaShop/pull/4521): fix twig error with trans method, by @kelu95.
  
 See all the PRs merged into the codebase since the last Core Weekly [here](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr+merged%3A2015-11-23..2015-12-06+is%3Aclosed+).
 

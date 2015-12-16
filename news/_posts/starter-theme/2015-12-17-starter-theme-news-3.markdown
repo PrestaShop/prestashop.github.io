@@ -12,7 +12,7 @@ It's been a while since we gave you any news  about the StarterTheme. So, let's 
 
 ## Page layout
 
-We don't want to impose a 3 columns layout for template developers anymore. We want to make something more flexible. With the Starter Theme, template developers will be able to implements as many layouts as they want. PrestaShop users will be able to select the wanted layout directly in the back office, among those supported by the template.
+We don't want to impose a 3 columns layout for template developers anymore. We want to make something more flexible. As a theme developer, you will be able to ship your theme with as many layouts as you want. For example you can have a full width layout, 2 columns split in 2 halves or one third/two third. Better yet, you can add hooks inside template so you can have specific sidebars. PrestaShop users will be able to select the wanted layout directly in the back office, among those supported by the theme.
 
 ## Checkout process
 

@@ -8,7 +8,7 @@ icon: icon-lego
 published: false
 ---
 
-It's been a while since we gave you any news  about the StarterTheme. So, let's sum up what happened since [Starter Theme: Fresh News From The Front #2](http://build.prestashop.com/news/starter-theme-news-2/).
+It's been a while since we gave you any news about the StarterTheme. So, let's sum up what happened since [Starter Theme: Fresh News From The Front #2](http://build.prestashop.com/news/starter-theme-news-2/).
 
 ## Page layout
 
@@ -20,7 +20,7 @@ We have removed the 5-steps checkout process. From now on, there will be the **O
 
 Another big change regarding the checkout process is that it will be displayed with a **simplified and minimalistic layout**, without any website decoration, in order to prevent the customers from being distracted during the checkout process.
 
-By default, **guest checkout will be enabled**, so the password will be facultative. Customers will be re-invited to register, at the end of the process. This way, we expect the purchase process to be much quicker and more effective.
+By default, **guest checkout will be enabled**, so the password will be facultative. Customers will be re-invited to register at the end of the process. This way, we expect the purchase process to be much quicker and more effective.
 
 The Starter Theme also displays a cart summary, without any actions possible, on the right. It allows the customer to always know what he is buying, how much it will cost him, etc.
 
@@ -36,13 +36,13 @@ For example, the Terms & Conditions checkbox is now displayed with the payment o
 
 That way, we have more control of the layout of payment options.
 
-To help you to create or adapt your payment modules, we have reworked bankwire and developed paymentexample. This module is an example of what you can do and implements 4 types of payment modules working :
+To help you to create or adapt your payment modules, we have reworked bankwire and developed **paymentexample**. This module is an example of what you can do. It implements 4 types of payment modules, working:
 
-* offline : call a simple URL, like bankwire or cheque
+* offline: call a simple URL, like bankwire or cheque
 
-* externally : call a simple URL but a third part webserver process the payment, like PayPal
+* externally: call a simple URL but a third-party webserver processes the payment, like PayPal
 
-* embedded : write the credit card infos on the website directly in a form, like Stripe
+* embedded: write the credit card details on the website directly in a form, like Stripe
 
 * in iframe: payment form displayed inside an iframe, like Paypal Integral Evolution
 
@@ -77,7 +77,7 @@ public function hookPaymentOptions($params)
 
 ## Faceted/layered navigation, pagination and search
 
-In order to simplify the `.tpl` and `.js` files for all the faceted navigation, pagination and search and to remove all the calculation from the front office (which is one of the main purpose of the StarterTheme) we have fully rewritten the whole thing. @djfm was responsible for that part. It would be too complicated to easily explain or transcript the work here, so don't hesitate to look at it on [GitHub](https://github.com/PrestaShop/PrestaShop/pull/4548/files).
+In order to simplify the `.tpl` and `.js` files for all the faceted navigation, pagination and search, and to remove all the calculation from the front office (which is one of the main purpose of the StarterTheme) we have fully rewritten the whole thing. @djfm was responsible for that part. It would be too complicated to easily explain or transcript the work here, so don't hesitate to look at it on [GitHub](https://github.com/PrestaShop/PrestaShop/pull/4548/files).
 
 Accordind to standards, we have chosen to call “Filter” a value which helps us to find the corresponding products (like red, XL or a price range) and to call “Facet” a collection of filters (like color, size or price). From now on we'll also refer to “Faceted navigation” when in previous version we were mentioning layered navigation.
 
@@ -91,12 +91,12 @@ We have transformed the contact form system into a widgetized module: Contact Fo
 
 Some features will no longer be supported in PrestaShop 1.7:
 
-* We will ship 1.7 without the Live Edit. We will write a newer and better Theme Builder (its new name) later. That's why we introduced the widget system.
+* We will ship 1.7 without the **Live Edit**. We will write a newer and better Theme Builder (its new name) later. That's why we introduced the widget system.
 
-* We also removed the ThemeConfigurator which couldn't be supported by another template than default-bootstrap. We would like to provide a module to configure all the template settings in one place. It will be reusable by every other template developers.
+* We also removed the **ThemeConfigurator** which couldn't be supported by another template than default-bootstrap. We would like to provide a module to configure all the template settings in one place. It will be reusable by every other template developers.
 
 -----------------
 
 Next step: we need to merge the [`feat/starter-theme`](https://github.com/PrestaShop/PrestaShop/tree/feat/starter-theme) branch into the develop branch, and start using the StarterTheme to build the new default theme for 1.7.
 
-We're still hearing what you have to say about this project, so don't hesitate to get involved and contribute. Join the party on the [Trello board](https://trello.com/b/FPwYidfj/prestashop-startertheme) and [Gitter](https://gitter.im/PrestaShop/StarterTheme)!
+We're still listening to what you have to say about this project, so don't hesitate to get involved and contribute. Join the party on the [Trello board](https://trello.com/b/FPwYidfj/prestashop-startertheme) and [Gitter](https://gitter.im/PrestaShop/StarterTheme)!

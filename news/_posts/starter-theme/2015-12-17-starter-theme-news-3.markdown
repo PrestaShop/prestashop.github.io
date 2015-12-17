@@ -5,7 +5,7 @@ subtitle: "What's up about Starter Theme"
 date:   2015-12-17 15:00:00
 author:  maximebiloe
 icon: icon-lego
-published: false
+published: true
 ---
 
 It's been a while since we gave you any news about the StarterTheme. So, let's sum up what happened since [Starter Theme: Fresh News From The Front #2](http://build.prestashop.com/news/starter-theme-news-2/).

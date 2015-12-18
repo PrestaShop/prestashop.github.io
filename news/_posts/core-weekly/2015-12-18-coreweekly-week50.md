@@ -74,7 +74,7 @@ Note that the Starter Theme repo (see next section) is entirely part of the Pres
 #### Core
 
  * [4549](https://github.com/PrestaShop/PrestaShop/pull/4549): PrestashopAutoload need alias.php - also generate bug when activation profiling, by @kelu95.
- * [4550](https://github.com/PrestaShop/PrestaShop/pull/4550): MySQL 5.7 Compatibility. Thank you @ ianfunghk!
+ * [4550](https://github.com/PrestaShop/PrestaShop/pull/4550): MySQL 5.7 Compatibility. Thank you @ianfunghk!
  * [4556](https://github.com/PrestaShop/PrestaShop/pull/4556): fix product model adapter when no customization defined, by @kelu95.
  * [4569](https://github.com/PrestaShop/PrestaShop/pull/4569): Add limit/orderBy/sortOrder in persistence, by @xGouley.
  

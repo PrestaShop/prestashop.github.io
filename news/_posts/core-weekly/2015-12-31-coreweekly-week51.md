@@ -9,7 +9,7 @@ tags:
  - core-weekly
 ---
 
-This edition of the Core Weekly report highlights changes in PrestaShop core codebase during last two weeks, from Monday 21st to Sunday 28th of December.
+This edition of the Core Weekly report highlights changes in PrestaShop core codebase during the last two weeks, from Monday 21st to Sunday 28th of December.
 
 
 ## Milestones
@@ -55,7 +55,7 @@ Note that the Starter Theme repo (see next section) is entirely part of the Pres
 
  * [4503](https://github.com/PrestaShop/PrestaShop/pull/4503): Improve PHP 7 compatibility. Thank you @firstred for the PR, and @therampagerado for testing!
  * [4507](https://github.com/PrestaShop/PrestaShop/pull/4507): MySQL 5.7 Compatibility, by @julienbourdeau.
- * [4578](https://github.com/PrestaShop/PrestaShop/pull/4578): fix js cldr error : var full_cldr_language_code not defined, by @xGouley.
+ * [4578](https://github.com/PrestaShop/PrestaShop/pull/4578): fix js cldr error: var full_cldr_language_code not defined, by @xGouley.
  * [4609](https://github.com/PrestaShop/PrestaShop/pull/4609): Remove static prefix from bcrypt. Thank you @spaze!
  * [4617](https://github.com/PrestaShop/PrestaShop/pull/4617): Fix product duplication new name 'copy of', by @xGouley.
 

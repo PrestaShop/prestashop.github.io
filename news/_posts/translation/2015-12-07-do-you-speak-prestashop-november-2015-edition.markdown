@@ -27,7 +27,7 @@ Now, back to business, here are the figures for our translation project in Novem
 
 ## Top contributors
 
-A lot of you are working everyday on Crowdin to have PrestaShop available in many languages, and we can't thank you enough for your dedication! Here are the **most active translators and proofreaders** for the month of October.
+A lot of you are working everyday on Crowdin to have PrestaShop available in many languages, and we can't thank you enough for your dedication! Here are the **most active translators and proofreaders** for the month of November.
 
 #### Top 10 translators in November:
 

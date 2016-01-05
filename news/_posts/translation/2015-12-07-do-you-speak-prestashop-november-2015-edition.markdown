@@ -55,7 +55,7 @@ A lot of you are working everyday on Crowdin to have PrestaShop available in man
  4. | DaoKakao | Russian | 2,184
  5. | Stanislav Yordanov (StanProg) | Bulgarian |2,067
  6. | Koral | Polish | 1,744
- 7. | Filip Filipović (filipfilipovic) | 1,717
+ 7. | Filip Filipović (filipfilipovic) | Croatian | 1,717
  8. | Patrik Lindblom (extendus) | Swedish |782
  9. | Enzo Ferrara (ferribbotte) | Italian |1,308
 10. | Vahur Suvi (spottraining) | Estonian |1,287

@@ -27,7 +27,7 @@ This (almost) year of Build can be summarized in a few figures:
 including
 
 * lots of new resolutions (PSR2, branching model, semantic versioning, etc.)
-* ~one~ no controversy
+* <p style="margin-bottom:0;"><strike>one</strike> no controversy</p>
 * an undefined amount of beer pints
 
 but also

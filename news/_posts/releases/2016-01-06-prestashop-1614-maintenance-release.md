@@ -31,22 +31,22 @@ Here are the changes that 1.6.1.4 brings:
 
 * PHP 7 & MySQL 5.7 is now supported
 * Invoice numbers are now fixed on multishop
-* The Addon modal now take the right translation
-* The result bloc now hide when you uncheck the free gift on the cart rules page
-* On the order page in the backoffice, the price without taxe is now displayed on the products list
-* The prices of combinations on a shop with multiples currencies are fixed
+* The Addon modal now takes the right translation
+* The result bloc now hides when you uncheck the free gift on the cart rules page
+* On the order page in the backoffice, the price without tax is now displayed on the products list
+* The prices of combinations on a shop with multiple currencies are fixed
 * The robot.txt rules are now fixed for multilingual shop
-* The uploader now check extension case insensitively (A revoir)
-* Fix an error when an adress is deleted but still used on a cart
-* Disount is now correctly refreshed when the quantity is changed on the product page
+* The uploader now check extension case insensitively
+* Fix an error when an address is deleted but still used on a cart
+* The discount is now correctly refreshed when the quantity is changed on the product page
 * The shipping cost calculation is now better rounded
 * And some minor fixes…
 
 And some translations:
 
-* CMS content now translated in Swedish
-* The metas are now translated in Swedish
-* The countries are now translated in Swedish
+* CMS content now translated into Swedish
+* The metas are now translated into Swedish
+* The countries are now translated into Swedish
 
 As a maintenance release, there are few changes to ensure a stable update.
 

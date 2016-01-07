@@ -3,7 +3,7 @@ layout: post
 title:  "Release of PrestaShop 1.6.1.4"
 subtitle: "Maintenance version of the 1.6.1.x branch"
 date:   2016-01-07
-author: xavierborderie
+author: julienmartin
 icon: icon-leaf
 tags:
  - version
@@ -13,13 +13,13 @@ tags:
  - 1.6.1.x
 ---
 
-PrestaShop 1.6.1.4 is now available. This maintenance release [closes 19 issues](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr+base%3A1.6.1.x+is%3Aclosed+merged%3A%3E2015-11-27+) since version 1.6.1.3 (released on November 26).
+PrestaShop 1.6.1.4 is now available. This maintenance release [closes 19 issues](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr+base%3A1.6.1.x+is%3Aclosed+merged%3A%3E2015-11-27+) since version 1.6.1.3 (released on November 26th, 2015).
 
 As the version number indicates (as per [our SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)), this is the fourth patch release for PrestaShop 1.6.1.0.
 
-Our main motivation for releasing this version is to add the MySQL 5.7 and PHP 7 compatibility.
+Our main motivation for releasing this version was to fix the MySQL 5.7 and PHP 7 compatibility.
 
-As usual, we do not recommend doing any upgrade and technical change to your store when you are running promotions leading to high traffic on your website. This counts double for our French merchants: you might want the sales are over before upgrading!
+As usual, we do not recommend upgrading your store when you are running promotions leading to a high traffic on your website. For those of you in the midst of winter sales: you might want to wait for the end of the Sales period before upgrading!
 
 We hope you enjoy this patch release!
 
@@ -29,26 +29,21 @@ For a full list of changes, [see the list of pull requests merged into the 1.6.1
 
 Here are the changes that 1.6.1.4 brings:
 
-* PHP 7 & MySQL 5.7 is now supported
-* Invoice numbers are now fixed on multishop
-* The Addon modal now takes the right translation
-* The result bloc now hides when you uncheck the free gift on the cart rules page
-* On the order page in the backoffice, the price without tax is now displayed on the products list
-* The prices of combinations on a shop with multiple currencies are fixed
-* The robot.txt rules are now fixed for multilingual shop
-* The uploader now check extension case insensitively
-* Fix an error when an address is deleted but still used on a cart
-* The discount is now correctly refreshed when the quantity is changed on the product page
-* The shipping cost calculation is now better rounded
-* And some minor fixes…
+* PHP 7 & MySQL 5.7 are now fully supported
+* Order page: Tax excluded price is now displayed on the product list in the back office
+* Product page: Discounts are correctly refreshed when quantity is changed
+* Cart rules page: the product input field hides when free gift is disabled
+* Fix invoice numbers in multishop mode
+* Addons modal dialog supports translation
+* Fix combinations prices for shops with multiple currencies
+* Fix robot.txt rules for multilingual shops
+* Uploader is no longer case-sensitive for extensions
+* Fix error when address is deleted but still used by a cart
+* Shipping cost calculation is now better rounded
+* CMS content, metas and countries translated into Swedish
+* And other minor fixes
 
-And some translations:
-
-* CMS content now translated into Swedish
-* The metas are now translated into Swedish
-* The countries are now translated into Swedish
-
-As a maintenance release, there are few changes to ensure a stable update.
+As a maintenance release, this patch contains few changes to ensure a stable update.
 
 The [PrestaShop 1.6.1.4]() changelog is available, as well as its [release notes]() 
 

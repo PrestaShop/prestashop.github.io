@@ -45,7 +45,7 @@ Here are the changes that 1.6.1.4 brings:
 
 As a maintenance release, this patch contains few changes to ensure a stable update.
 
-The [PrestaShop 1.6.1.4]() changelog is available, as well as its [release notes]() 
+The [PrestaShop 1.6.1.4](https://www.prestashop.com/en/developers-versions/changelog/1.6.1.4-stable) changelog is available.
 
 Since version 1.6.1.4 is a "patch" update to version 1.6.1.0, upgrading from that version will be as smooth as silk for everyone: features will work better, and modules & themes which worked fine on 1.6.1.0 will work just as well with 1.6.1.4.
 

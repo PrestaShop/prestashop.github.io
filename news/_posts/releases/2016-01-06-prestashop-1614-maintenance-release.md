@@ -29,7 +29,8 @@ For a full list of changes, [see the list of pull requests merged into the 1.6.1
 
 Here are the changes that 1.6.1.4 brings:
 
-* PHP 7 & MySQL 5.7 are now fully supported
+* PHP 7 is now fully supported
+* MySQL 5.7 is almost fully supported (you will still encounter some glitches)
 * Order page: Tax excluded price is now displayed on the product list in the back office
 * Product page: Discounts are correctly refreshed when quantity is changed
 * Cart rules page: the product input field hides when free gift is disabled

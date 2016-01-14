@@ -19,24 +19,24 @@ And of course, for in-depth information, read on the many articles we wrote -and
 
 ### Meet Seb, Director of Product Management leading the various PrestaShop 1.7 projects
 
-<iframe width="796" height="448" src="https://www.youtube.com/embed/AuthkLchyqM&rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="796" height="448" src="https://www.youtube.com/embed/AuthkLchyqM?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
 ### Meet FM, Product Manager in charge of creating a brand new starter theme
 
-<iframe width="796" height="448" src="https://www.youtube.com/embed/srpXHSlKf-w&rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="796" height="448" src="https://www.youtube.com/embed/srpXHSlKf-w?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
 ### Meet Xavier, Software Architect currently implementing Symfony 2 into PrestaShop
 
-<iframe width="796" height="448" src="https://www.youtube.com/embed/1q3JW1eRoE4&rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="796" height="448" src="https://www.youtube.com/embed/1q3JW1eRoE4?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
 ### Meet Guillaume, Product Manager now building a better module section
 
-<iframe width="796" height="448" src="https://www.youtube.com/embed/cWwE3Eb0QsM&rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="796" height="448" src="https://www.youtube.com/embed/cWwE3Eb0QsM?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
 ### Meet Vincent, Product Manager working on improving the back office interface
 
-<iframe width="796" height="448" src="https://www.youtube.com/embed/vBXjHMss5KQ&rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="796" height="448" src="https://www.youtube.com/embed/vBXjHMss5KQ?rel=0" frameborder="0" allowfullscreen></iframe>

@@ -96,7 +96,7 @@ Of course, we’re also taking advantage of the Sf2 architecture that is introdu
 ## Conclusion
 
 We’re working hard to release a beta version very soon. Until then, some other news will follow this post. This article was focused on UX and the next posts will be the opportunity to dive into the technical side of the new module page.
-If you wish to share your questions, feedback and ideas, you’re welcome to do it on our gitter channel. Looking forward hearing from you !
+If you wish to share your questions, feedback and ideas, you’re welcome to do it on our [gitter channel](https://gitter.im/PrestaShop/ModulePage?utm_source=share-link&utm_medium=link&utm_campaign=share-link). Looking forward hearing from you !
 
 *May the Force be with you* :)
 

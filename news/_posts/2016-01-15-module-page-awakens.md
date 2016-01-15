@@ -19,14 +19,11 @@ Needless to say, it is an important subject for PrestaShop’s business, but mos
 
 #### And what are the problems we want to solve?
 
-* **A difficult onboarding for beginners**
-Many of our new users struggle with the concept of modules when they discover the software. They often don’t understand what modules are for, don’t know when a module is fitted to their needs or when it’s adapted to their business maturity. We believe the module page is an important step in learning how you can leverage the power of modules and how you can take advantage of our official marketplace ([PrestaShop Addons](http://addons.prestashop.com/)) when you’re looking to improve the features of your store.
-
-* **A complex user experience**
-In addition to this, the current UX is too complicated and misleading: users get confused by the mix of installed and non-installed modules, surprised by the number of pre-installed modules at shop creation, and puzzled by the bare minimum description of modules. And I could also add the low performance and repeated page refresh every time you use the filters.
+* **A difficult onboarding for beginners**<br/>Many of our new users struggle with the concept of modules when they discover the software. They often don’t understand what modules are for, don’t know when a module is fitted to their needs or when it’s adapted to their business maturity. We believe the module page is an important step in learning how you can leverage the power of modules and how you can take advantage of our official marketplace ([PrestaShop Addons](http://addons.prestashop.com/)) when you’re looking to improve the features of your store.
+* **A complex user experience**<br/>In addition to this, the current UX is too complicated and misleading: users get confused by the mix of installed and non-installed modules, surprised by the number of pre-installed modules at shop creation, and puzzled by the bare minimum description of modules. And I could also add the low performance and repeated page refresh every time you use the filters.
 As a consequence, the module page was limiting the productivity of our users.
 
-## What do we really really want? (a.k.a. [the Spice Girls question](https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwimqqnZhN7JAhWHcBoKHfoNAP4QyCkIIjAA&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DgJLIiF15wjQ&usg=AFQjCNHP36D_RNdOjOPAaqtlpEhPXgimhQ&sig2=MGFUYwCQddO8WO2mZsh2pQ))
+## What do we really really want? (a.k.a. [the Spice Girls question](https://www.youtube.com/watch?v=gJLIiF15wjQ))
 
 Our ambition is simple: we want to create an “app store” that is as simple and clear as any app store on a smartphone.
 Redesigning the module page in PrestaShop version 1.7.0 is a first but important step towards this objective. For merchants building their store, it means the new module page will help them easily find the modules that fit their needs and manage their installed modules.
@@ -38,6 +35,7 @@ Of course this project is part of a bigger picture: shape a new user experience 
 #### What’s the role of the module page anyway?
 
 We identified 3 use cases, depending on the user profile:
+
 * **discover and install new modules** to improve your store, when you’re beginning or growing with PrestaShop,
 * **manage your installed modules**, when you have an active shop and need to make it evolve on a daily or weekly basis,
 * **maintain your modules**, when you need to take action (updates or configuration) to guarantee the good functioning of your modules
@@ -84,6 +82,7 @@ Finally, in the “Notification” tab, you’ll find all the modules to configu
 ![1.7 Module page, Notifications tab](/assets/images/2016/01/Build_module_page_notification.png)
 
 Our goal here is to provide you with an overview of all the actions to take, and save you from the cluttered interface of 1.6 that had a pile of notifications.
+
 What we’ve added:
 
 * A **configuration key**: modules will be able to say if they’re correctly configured. More on that soon in the a forthcoming post on the Build devblog.
@@ -91,6 +90,7 @@ What we’ve added:
 * A **list of your purchased modules**, if you’ve connected your store to your PrestaShop Addons account.
 
 #### Symfony2 architecture and debugging
+
 Of course, we’re also taking advantage of the Sf2 architecture that is introduced in version 1.7 to refactor the controller and several methods. We’re also improving stability to prevent crashes and simplify debugging. This implies refactoring the ObjectModel class and creating a new class that will handle the functions that don’t belong to Module instances. We’ll talk more about this in a forthcoming post focused on the technical changes.
 
 ## Conclusion

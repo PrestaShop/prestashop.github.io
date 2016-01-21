@@ -29,6 +29,7 @@ $grey-color:       #939393;
 $grey-color-light: #e8e8e8;
 $grey-color-dark:  #555555;
 
+$flag-icon-css-path: '../assets/images/theme/flags';
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -91,5 +92,11 @@ $grey-color-dark:  #555555;
         "bootstrap/responsive-utilities",
 
         "base",
-        "syntax-highlighting"
+        "syntax-highlighting",
+
+        "flag-icon-css/variables",
+        "flag-icon-css/flag-icon-base",
+        "flag-icon-css/flag-icon-list",
+        "flag-icon-css/flag-icon-more"
+
 ;

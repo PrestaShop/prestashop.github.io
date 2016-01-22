@@ -15,6 +15,8 @@ We’ve been working on this project for a while now, and it is about time we te
 Since September, our team (Thibaud, Thomas, Melvin, Guilhem, Léa and myself) has been busy redesigning the outdated module page of version 1.6.
 Needless to say, it is an important subject for PrestaShop’s business, but most importantly a key step in merchants’ journey to a successful online store.
 
+*This article has been updated on January the 22nd, to answer some comments, [see at the end of the article](http://build.prestashop.com/news/module-page-awakens/#update-on-module-actions-2201).*
+
 ## Why now?
 
 #### And what are the problems we want to solve?
@@ -101,5 +103,29 @@ If you wish to share your questions, feedback and ideas, you’re welcome to do 
 *May the Force be with you* :)
 
 Guillaume <3
+
+
+
+### *Update on module actions (22/01)*
+
+I’m following up about module actions:
+
+1. Providing both a “delete” and “uninstall” option is redundant and confusing for users and as you know our goal with 1.7 is to simplify these kind of interfaces. However deleting the module folder when uninstalling a module would indeed create too much problems if the module contains some custom data.
+**So we’ll keep “uninstall” available and remove the “delete” option**. Deleting the folder can still be done in the FTP.
+
+2. About disable on mobile/tablet/computer:
+Four days ago I’ve asked PrestaShop’s [User Club](http://www.prestashop.com/club/) to answer a short survey about how merchants and developers use the module display options.
+
+Here’s a summary of the results.
+
+We’ve had many answers: 106, mostly from dev/designers and merchants.
+Fairly half of our respondents use the option to disable on mobile/tablet/computer. In the vast majority, only a few modules are concerned (less than 5 in 77% cases), and almost systematically for disabling on mobile (98%). Disabling on other devices like tablet or computer is much less used (33% and 28% cases).
+
+What are the modules typically disabled on mobile? Almost only front-office features, starting with sliders, and then others like top menu, banner, footer and a few blocks (contact, tags, CMS…). The main reason invoked for disabling on mobile is performance: for instance avoid loading HD images in a slider on a mobile with a poor 3G.
+
+And here are our choices:
+
+* **Remove “disable on tablet/computer”**. If a module is specifically made for mobile, it shouldn’t be up to the user to disable it on other devices. Contributors should adapt their mobile modules accordingly.
+* **Keep “disable on mobile”**. It would be better to limit this option to front-office modules but we don't have an easy way to do it *right now*. Given the small number of concerned modules, it doesn’t make sense to make this option available for all modules. By limiting it to front-office modules, we would gain clarity and keep flexibility for customizing the shop appearance on mobile.
 
 

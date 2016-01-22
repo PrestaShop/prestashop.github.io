@@ -33,6 +33,7 @@ The readers of this devblog know most of these, but since this is the new year, 
  
 That last item has just started taking life! **The development of the new default theme has begun!** Right now, it is named Classic and its development is going strong. You too can contribute ideas and code: development happens on the [feat/classic branch](https://github.com/PrestaShop/PrestaShop/tree/feat/classic) This theme will follow changes on the [feat/starter-theme](https://github.com/PrestaShop/PrestaShop/tree/feat/starter-theme) branch. If you want to know the technological choices: Bootstrap 4 Sass version, Bourbon, ES6, all built with webpack. You can discuss it [on the dedicated Gitter channel](https://github.com/PrestaShop/StarterTheme): come work with us to make it a reality!
 
+Do you want to enccourage us? **[Give us a star us on GitHub](https://github.com/PrestaShop/PrestaShop)**! :)
 
 
 ## Code changes in 1.6.1.x

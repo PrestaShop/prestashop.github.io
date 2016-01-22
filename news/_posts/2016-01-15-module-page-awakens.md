@@ -133,4 +133,4 @@ And here are our decisions:
 * **Remove the “disable on tablet/computer” option**. If a module is specifically made for mobile, it shouldn’t be up to the user to disable it on other devices. Developers should adapt their mobile modules accordingly.
 * **Keep the “disable on mobile” option**. It would be better to limit this option to front office modules, but we don't have an easy way to do it *right now*. Given the small number of concerned modules, it doesn’t make sense to make this option available for all modules. By limiting it to front office modules, we would gain clarity and keep flexibility for customizing the shop appearance on mobile.
 
-Thank to our community members for their insightful feedback:
+Thank to our community members for their insightful feedback!

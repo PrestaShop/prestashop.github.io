@@ -1,0 +1,35 @@
+{% if page.translations %}
+
+<div id="translation-links" class="panel panel-default">
+
+  <div class="panel-heading">
+    <div class="panel-title">Translations by the community</div>
+  </div>
+
+  <div class="panel-body">
+
+    <ul class="list-unstyled">
+
+      {% for link in page.translations %}
+        <li>
+          <a href="{{ link[1] }}" target="_blank">
+            <span class="flag-icon flag-icon-{{ link[0] }}"></span>
+            {% include translations-link-text.html lang=link %}
+          </a>
+        </li>
+      {% endfor %}
+
+    </ul>
+
+    <p>
+      <small>
+        If you want to translate this article,
+        please <a href="mailto:build@prestashop.com">send us the link by email</a>.
+      </small>
+    </p>
+
+  </div>
+
+</div>
+
+{% endif %}

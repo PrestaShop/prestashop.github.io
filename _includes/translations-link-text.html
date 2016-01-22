@@ -1,0 +1,8 @@
+{% case include.lang[0] %}
+	{% when 'fr' %}
+		Cet article est aussi disponible en français
+	{% when 'ru' %}
+		Эта статья также доступна в русской
+	{% else %}
+		This article is also in available in {{ include.lang[0] | upcase }}
+{% endcase %}

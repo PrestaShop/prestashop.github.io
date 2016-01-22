@@ -6,9 +6,9 @@ date:   2016-01-15 15:30:00
 author: guillaumebruere
 icon: icon-blaster
 tags:
- - PrestaShop 1.7
+ - 1.7
  - modules
- -
+ - ux
 ---
 
 We’ve been working on this project for a while now, and it is about time we tell you about the new module page we are planning for PrestaShop 1.7.0!
@@ -56,7 +56,7 @@ A quick sum-up:
 
 * Modules are displayed in a new **card design** that is more suited for product discovery,
 * Categories are now consistent with the categories in our official marketplace,
-* An **improved search bar**: we now provide a JavaScript-powered per-keyword search, without any page refresh. We released the code of the [pstagger jQuery plugin](https://github.com/PrestaShop/pstagger) under an open source licence, so that anybody can reuse it -- and improve upon it (it’s still a beta version)!
+* An **improved search bar**: we now provide a JavaScript-powered per-keyword search, without any page refresh. We released the code of the [PSTagger jQuery plugin](https://github.com/PrestaShop/pstagger) under an open source license, so that anybody can reuse it -- and improve upon it (it’s still a beta version)!
 
 
 
@@ -87,8 +87,8 @@ Our goal here is to provide you with an overview of all the actions to take, and
 
 What we’ve added:
 
-* A **configuration key**: modules will be able to say if they’re correctly configured. More on that soon in the a forthcoming post on the Build devblog.
-* A **changelog**: now you can see what is introduced in a new version (when the changelog is available). You won’t have to blindly trust the update and cross your fingers!
+* A **configuration key**: modules will be able to say if they’re correctly configured. More on that soon in a forthcoming post on the Build devblog.
+* A **changelog**: now you can see what is introduced in a new version (when the changelog is available). You won’t have to blindly trust the update and cross your fingers anymore!
 * A **list of your purchased modules**, if you’ve connected your store to your PrestaShop Addons account.
 
 #### Symfony2 architecture and debugging
@@ -97,8 +97,9 @@ Of course, we’re also taking advantage of the Sf2 architecture that is introdu
 
 ## Conclusion
 
-We’re working hard to release a beta version very soon. Until then, some other news will follow this post. This article was focused on UX and the next posts will be the opportunity to dive into the technical side of the new module page.
-If you wish to share your questions, feedback and ideas, you’re welcome to do it on our [gitter channel](https://gitter.im/PrestaShop/ModulePage?utm_source=share-link&utm_medium=link&utm_campaign=share-link). Looking forward hearing from you !
+We’re working hard to release a beta version very soon. Until then, some other news will follow this post. This article was focused on UX and the next posts will be the opportunity to dive into the technical side of the new modules page.
+
+If you wish to share your questions, feedback and ideas, you’re welcome to do it on our [Gitter channel](https://gitter.im/PrestaShop/ModulePage?utm_source=share-link&utm_medium=link&utm_campaign=share-link). Looking forward to hearing from you!
 
 *May the Force be with you* :)
 
@@ -110,22 +111,26 @@ Guillaume <3
 
 I’m following up about module actions:
 
-1. Providing both a “delete” and “uninstall” option is redundant and confusing for users and as you know our goal with 1.7 is to simplify these kind of interfaces. However deleting the module folder when uninstalling a module would indeed create too much problems if the module contains some custom data.
-**So we’ll keep “uninstall” available and remove the “delete” option**. Deleting the folder can still be done in the FTP.
+#### 1. About keeping both the “delete” and the “uninstall” options
 
-2. About disable on mobile/tablet/computer:
-Four days ago I’ve asked PrestaShop’s [User Club](http://www.prestashop.com/club/) to answer a short survey about how merchants and developers use the module display options.
+Providing both is redundant and confusing for users, and as you know, our goal with 1.7 is to simplify these kinds of interaction. However, deleting the module folder when uninstalling a module would indeed create too much problems if the module contains some custom data.
+**So, thanks to your feedback, we decided to keep the “uninstall” option available, and to remove the “delete” option**. Deleting the folder can still be done using your favorite FTP software.
+
+#### 2. About keeping the "disable on mobile/tablet/computer" option: 
+
+After receiving your feedback, I asked PrestaShop’s [User Club](http://www.prestashop.com/club/) members to answer a short survey about how merchants and developers use the module display options.
 
 Here’s a summary of the results.
 
 We’ve had many answers: 106, mostly from dev/designers and merchants.
-Fairly half of our respondents use the option to disable on mobile/tablet/computer. In the vast majority, only a few modules are concerned (less than 5 in 77% cases), and almost systematically for disabling on mobile (98%). Disabling on other devices like tablet or computer is much less used (33% and 28% cases).
 
-What are the modules typically disabled on mobile? Almost only front-office features, starting with sliders, and then others like top menu, banner, footer and a few blocks (contact, tags, CMS…). The main reason invoked for disabling on mobile is performance: for instance avoid loading HD images in a slider on a mobile with a poor 3G.
+Roughly half of our respondents use the option to disable on mobile/tablet/computer. In the vast majority, only a few modules are concerned (less than 5 in 77% of cases), and almost systematically for disabling on mobile (98%). Disabling on other devices, like tablet or computer, is much less used (33% and 28% cases respectively).
 
-And here are our choices:
+What are the modules typically disabled on mobile? Almost only front office features, starting with sliders, and then some others, such as top menu, banner, footer and a few content blocks (contact, tags, CMS, etc.). The main reason invoked for disabling on mobile is performance: for instance, to avoid loading HD images in a slider on a mobile with a poor 3G.
 
-* **Remove “disable on tablet/computer”**. If a module is specifically made for mobile, it shouldn’t be up to the user to disable it on other devices. Contributors should adapt their mobile modules accordingly.
-* **Keep “disable on mobile”**. It would be better to limit this option to front-office modules but we don't have an easy way to do it *right now*. Given the small number of concerned modules, it doesn’t make sense to make this option available for all modules. By limiting it to front-office modules, we would gain clarity and keep flexibility for customizing the shop appearance on mobile.
+And here are our decisions:
 
+* **Remove the “disable on tablet/computer” option**. If a module is specifically made for mobile, it shouldn’t be up to the user to disable it on other devices. Developers should adapt their mobile modules accordingly.
+* **Keep the “disable on mobile” option**. It would be better to limit this option to front office modules, but we don't have an easy way to do it *right now*. Given the small number of concerned modules, it doesn’t make sense to make this option available for all modules. By limiting it to front office modules, we would gain clarity and keep flexibility for customizing the shop appearance on mobile.
 
+Thank to our community members for their insightful feedback!

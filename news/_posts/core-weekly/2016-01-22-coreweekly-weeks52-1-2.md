@@ -153,7 +153,7 @@ See all the PRs merged into the codebase since the last Core Weekly [here](https
 
 Thank you to the contributors whose pull requests were merged since the last Core Weekly Report: @firstred, @@prestamodule, and @Nobodaddy! Also, thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
 
-_Please note that finishing our projects for 1.7 and delivering a quality beta version soon is at the moment the top priority for our developers. Merging community pull requests has therefore slowed down until then, but will be back with a vengeance once we have a first beta to release to you! So please keep testing, and keep send patches our way: it's the _raison d'être_ of this community project!_
+_Please note that finishing our projects for 1.7 and delivering a quality beta version soon is at the moment the top priority for our developers. Merging community pull requests has therefore slowed down until then, but will be back with a vengeance once we have a first beta to release to you! So please keep testing, and keep send patches our way: it's the_ raison d'être _of this community project!_
 
 If you want to contribute to PrestaShop with code, please read these pages first:
 

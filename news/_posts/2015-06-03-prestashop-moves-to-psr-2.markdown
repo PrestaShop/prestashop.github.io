@@ -5,7 +5,7 @@ subtitle: "Adopting a common coding standard"
 date:   2015-06-03 18:54:00
 author:  [ jeromenadaud ]
 icon: icon-code
-tags: [PSR-2, Norm, PHP-FIG, Coding Standards]
+tags: [coding-standards]
 published: true
 ---
 

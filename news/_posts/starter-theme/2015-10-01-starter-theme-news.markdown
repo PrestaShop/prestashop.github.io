@@ -5,6 +5,7 @@ subtitle: "What's up about Starter Theme"
 date:   2015-10-01 18:00:00
 author:  [ alexsegura ]
 icon: icon-lego
+tags: [starter-theme]
 ---
 
 It's been a month since PrestaShop announced a <a href="http://build.prestashop.com/news/starter-theme-kickoff/" target="_blank">new Starter Theme project</a>.
@@ -175,5 +176,3 @@ Scenes will be removed in the next major version.
 Some more features may be added to this list as the project evolves. Keep an eye on Build :)
 
 And remember, it's still time to get involved and contribute. Join the party on the [Trello board](https://trello.com/b/FPwYidfj/prestashop-startertheme) and [Gitter](https://gitter.im/PrestaShop/StarterTheme)!
-
-

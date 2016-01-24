@@ -5,6 +5,7 @@ subtitle: "What we have in mind and how you can contribute"
 date:   2015-08-28 12:00:00
 author:  [ djfm ]
 icon: icon-lego
+tags: [starter-theme]
 ---
 
 If you've ever tried to create a PrestaShop theme from scratch, you might have noticed it requires quite a large skillset: not only must you know HTML, CSS and Smarty, but you also need to be very familiar with the inner workings of PrestaShop itself. There is a lot of business logic going on in the templates, it is hard to tell apart classes that are used for styling from classes that are used by JavaScript-powered features, etc.

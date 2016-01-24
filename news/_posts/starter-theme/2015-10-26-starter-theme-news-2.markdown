@@ -5,6 +5,7 @@ subtitle: "What's up about Starter Theme"
 date:   2015-10-26 15:00:00
 author:  julienbourdeau
 icon: icon-lego
+tags: [starter-theme]
 ---
 
 We already have more exciting news about the StarterTheme.
@@ -48,7 +49,7 @@ The product page has been fully reworked. It's now split into multiple _partials
 has been removed!
 
 We introduced a ProductPresenter object that prepares a `$product` array for the template. The product will be consistent through
-all the pages (product page, home page, category page, etc.). 
+all the pages (product page, home page, category page, etc.).
 
 Do you remember all the issues with the product page we used to have, such as
 [this](http://forge.prestashop.com/browse/PSCSX-2359) or [this](http://forge.prestashop.com/browse/PSCSX-3607)? **It's all over**.

@@ -9,6 +9,8 @@ tags:
  - architecture
  - symfony
  - 1.7
+translations:
+  ru: prestaweb.ru/stati-po-prestashop/
 ---
 
 Remember, back in May 2015, when we announced that we were building [a new architecture for PrestaShop](http://build.prestashop.com/news/new-architecture-1-6-1-0/), with the first bits of code landing in version 1.6.1.0 ([released in early July 2015](http://build.prestashop.com/news/1-6-1-0-released/))? Yeah, that was fun. But now that 1.7 is steaming ahead, it's time to let you know about our _updated_ plans about the new architecture...
@@ -112,6 +114,3 @@ Consequently, 1.6 themes will not work on 1.7: logic code is taken out of templa
 ### What about...?
 
 Have more questions about the new architecture or anything related to PrestaShop 1.7? We have created [a dedicated forum for that](https://www.prestashop.com/forums/forum/273-170x-in-development/). See you there!
-
-translations:
-  ru: prestaweb.ru/stati-po-prestashop/

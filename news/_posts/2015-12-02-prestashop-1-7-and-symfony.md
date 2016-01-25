@@ -10,7 +10,7 @@ tags:
  - symfony
  - 1.7
 translations:
-  ru: http://prestaweb.ru/stati-po-prestashop/
+  ru: http://prestaweb.ru/prestashop-news/prestashop-1-7-izmeneniya-v-arxitekture.html
 ---
 
 Remember, back in May 2015, when we announced that we were building [a new architecture for PrestaShop](http://build.prestashop.com/news/new-architecture-1-6-1-0/), with the first bits of code landing in version 1.6.1.0 ([released in early July 2015](http://build.prestashop.com/news/1-6-1-0-released/))? Yeah, that was fun. But now that 1.7 is steaming ahead, it's time to let you know about our _updated_ plans about the new architecture...

@@ -112,3 +112,6 @@ Consequently, 1.6 themes will not work on 1.7: logic code is taken out of templa
 ### What about...?
 
 Have more questions about the new architecture or anything related to PrestaShop 1.7? We have created [a dedicated forum for that](https://www.prestashop.com/forums/forum/273-170x-in-development/). See you there!
+
+translations:
+  ru: prestaweb.ru/stati-po-prestashop/

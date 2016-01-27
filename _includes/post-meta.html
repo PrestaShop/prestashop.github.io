@@ -11,9 +11,7 @@
             <li>
               <i class="icon-tag"></i>
 
-              {% for cat in page.tags %}
-                <span class="label label-primary">{{ cat }}</span>
-              {% endfor %}
+              {{ tags_content }}
 
             </li>
           {% endunless %}

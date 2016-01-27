@@ -1,6 +1,26 @@
 ---
 layout: default
 ---
+
+{% assign post = page %}
+{% if post.tags.size > 0 %}
+    {% for post_tag in post.tags %}
+        {% for data_tag in site.data.tags %}
+            {% if data_tag.slug == post_tag %}
+                {% assign tag = data_tag %}
+                {% capture tags_content_temp %}{{ tags_content }} <a class="label label-primary" href="/tag/{{ tag.slug }}/">{{ tag.slug }}</a>{% endcapture %}
+            {% endif %}
+        {% endfor %}
+        {% if tag.slug != post_tag %}
+          {{ data_tag |json }}
+          {% capture tags_content_temp %}{{ tags_content }} <span class="label label-primary">{{ post_tag }}</span>{% endcapture %}
+        {% endif %}
+        {% assign tags_content = tags_content_temp %}
+    {% endfor %}
+{% else %}
+    {% assign tags_content = '' %}
+{% endif %}
+
 <div class="post">
 
   <div class="row">

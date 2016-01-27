@@ -1,0 +1,98 @@
+---
+layout: default
+---
+
+{% if page.type == 'home' %}
+	{% assign posts = paginator.posts %}
+{% elsif page.type == 'tag' %}
+	{% assign posts = site.tags[page.tag] %}
+{% endif %}
+
+<div class="home">
+
+  <div class="row">
+    <div class="col-md-12">
+
+			{% if page.type == 'tag' %}
+				{% for tag in site.data.tags %}
+					{% if page.tag == tag.slug %}
+						{% assign tagname = tag.name %}
+					{% endif %}
+				{% endfor %}
+				<h1>Articles by tag : {{ tagname }}</h1>
+			{% endif %}
+
+      <ul class="post-list">
+        {% for post in posts %}
+
+          {% unless forloop.first %}
+            <li>
+              <div class="post-divider"></div>
+            </li>
+          {% endunless %}
+
+          <li>
+
+            <div class="list-post-meta">
+              <span class="post-date">
+                {{ post.date | date: "%b %-d, %Y" }}
+              </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="{% if post.disqus_url %}{{ post.disqus_url }}{% else %}{{ post.url | prepend: site.url }}{% endif %}"></span>
+            </div>
+
+            <h2>
+                {% if post.icon %}
+                  <i class="fa {{ post.icon }}"></i>
+                {% else %}
+                  <i class="icon-anchor"></i>
+                {% endif %}
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+
+            {% if post.subtitle %}
+              <h4>{{ post.subtitle }}</h4>
+            {% endif %}
+
+            <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+			<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Continue reading &rarr;</a>
+          </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+
+
+	{% if page.type == 'home' %}
+
+	<!-- Pagination links -->
+  <div class="row">
+    <div class="col-md-12">
+
+      <nav>
+        <ul class="pager">
+
+          <li class="previous {% unless paginator.previous_page_path %}disabled{% endunless%}">
+            <a href="{{ paginator.previous_page_path  || "#" }}">
+              <span aria-hidden="true">&larr;</span> Newer
+            </a>
+          </li>
+          <li>
+            <span class="page_number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+          </li>
+          <li class="next {% unless paginator.next_page_path %}disabled{% endunless%}">
+            <a href="{{ paginator.next_page_path || "#" }}">
+              Older <span aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+
+	{% endif %}
+
+</div>

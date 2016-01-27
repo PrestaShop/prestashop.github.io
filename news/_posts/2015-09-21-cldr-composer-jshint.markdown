@@ -6,7 +6,7 @@ date:   2015-09-24 18:00:41
 author: xavierborderie
 icon: icon-puzzle
 tags:
- - 1.7.0.0
+ - 1.7
  - cldr
  - composer
  - npm

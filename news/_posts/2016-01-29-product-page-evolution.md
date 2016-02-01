@@ -2,7 +2,7 @@
 layout: post
 title:  "The Product Page - Evolution Revolution"
 subtitle: When User Experience is back in business
-date:   2016-01-29 16:30:00
+date:   2016-02-01 14:30:00
 author: vincentbz
 icon: icon-music
 tags:
@@ -12,15 +12,15 @@ tags:
 ---
 
 
-A long time ago, in a galaxy not so far away, we packed PrestaShop with much needed functionalities in its core. The aim was to propose the best e-commerce solution, with the biggest functional scope, answering to almost all of the merchants’ needs -- all that while still being free.
+A long time ago, in a galaxy not so far away, we packed PrestaShop with much needed functionalities in its core. The aim was to propose the best ecommerce solution, with the biggest functional scope, answering to almost all of the merchants’ needs — all that while still being free.
 
 And we can say it's been a success! Features are one of the reasons why merchants choose PrestaShop when they want to create their online shop.
 
 ## Born to be wild
 
-It’s all about soul-searching. PrestaShop had all these great features, but we thought we could improve something equally important too: the **user experience**, or UX -- making sure that the software’s features are agreeable to use, so to speak.
+It’s all about soul-searching. PrestaShop had all these great features, but we thought we could improve something equally important too: the **user experience**, or UX — making sure that the software’s features are agreeable to use, so to speak.
  
-With [the development of PrestaShop 1.7](http://build.prestashop.com/tag/1.7/), things have changed. We targeted the dissatisfaction points. That’s the beginning of our new story. Some actions in the back office are not as easy to complete as they should, the user doesn’t always know how to achieve something, and features can have settings spread in several screens -- which are not always logically tied.
+With [the development of PrestaShop 1.7](http://build.prestashop.com/tag/1.7/), things have changed. We targeted the dissatisfaction points. That’s the beginning of our new story. Some actions in the back office are not as easy to complete as they should, the user doesn’t always know how to achieve something, and features can have settings spread in several screens — which are not always logically tied.
  
 I'm probably not telling anything new here, but don't worry, we're committed to the cause now :)
 
@@ -67,7 +67,7 @@ At first sight, there is one noticeable change from the 1.6 Product page: the pr
 
 ![1.7 Product page, overall view](/assets/images/2016/01/Build_product_page_productname.png)
 
-At the bottom of the page, a persistent bar is displayed to allow merchants to manage the product without having to scroll down. It presents the common actions (Preview, Save, etc.), as well as some new ones you should like -- at least I hope so. I’ll tell you more about them at [the end of this article](http://build.prestashop.com/news/product-page-evolution/#introducting-shortcuts).
+At the bottom of the page, a persistent bar is displayed to allow merchants to manage the product without having to scroll down. It presents the common actions (Preview, Save, etc.), as well as some new ones you should like — at least I hope so. I’ll tell you more about them at [the end of this article](http://build.prestashop.com/news/product-page-evolution/#introducting-shortcuts).
 
 ![1.7 Product page, overall view](/assets/images/2016/01/Build_product_page_footer.png)
 
@@ -100,9 +100,9 @@ Of course, if you insert a price or a quantity, it will update the fields in the
 
 ### Combinations
 
-I think you will agree with me about this one: creating and managing combinations has never been the easiest thing to do in PrestaShop. But once you unlock this achievement, you can face almost everything else in the world of e-commerce :)
+I think you will agree with me about this one: creating and managing combinations has never been the easiest thing to do in PrestaShop. But once you unlock this achievement, you can face almost everything else in the world of ecommerce :)
 
-Now, in 1.7, as soon as you configure your product to use combinations, the product page’s tabs and content adapts to this new behavior. For instance, the "Quantities" tab becomes "Combinations", and this is where you will manage all of them in details -- including their quantity.
+Now, in 1.7, as soon as you configure your product to use combinations, the product page’s tabs and content adapts to this new behavior. For instance, the "Quantities" tab becomes "Combinations", and this is where you will manage all of them in details — including their quantity.
 
 It is now easier to create combinations, and the whole process fits in a single field, as you can see in the screenshot below. You just have to enter the attributes you need for the product, with their values (for example: *color: red, color: blue, size: S, size: M*), click a button, and PrestaShop takes care of generating the combinations.
 If you have to create combinations for all the available colors and sizes, just write *color: all, size: all* and it’s all good.

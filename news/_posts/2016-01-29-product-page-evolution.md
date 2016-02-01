@@ -138,7 +138,7 @@ Still with the intent to help you manage products and catalog efficiently, we re
 
 When you need to edit products one after another, the whole process can be boring: edit, go back to the catalog page, click on the next product, edit, go back, click, and so on and so forth.
 
-As it was a huge request from our community, we tried to make this process easier by displaying a pop-up catalog browser inside the product page, as you can  see in the animation below. By clicking on a product of the list, you are redirected to this product page.
+As it was a huge request from our community, we tried to make this process easier by displaying a pop-up catalog browser inside the product page, as you can see in the animation below. By clicking on a product of the list, you are redirected to this product page.
 Of course, this list is not always displayed: just click on the “Product list” icon to display it:
 
 

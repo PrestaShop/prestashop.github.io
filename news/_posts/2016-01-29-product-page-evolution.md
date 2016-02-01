@@ -147,11 +147,11 @@ Of course, this list is not always displayed: just click on the “Product list�
 ### Recommended modules
 
 The way recommended modules are displayed has been changed too. In version 1.6, you had to click on a button to open a list of recommended module for the current context.
-From now on, on the advanced tabs, the recommended modules are displayed within the page.
+From now on, in the advanced tabs, the recommended modules are displayed within the page.
 
 These recommended modules will be relevant to each specific topic on the page.
 Each tab will have its own recommended modules. For example, the shipping tab will display recommended carriers in your region or market.
-The design is not fully over but it won’t be blindingly flashy, and will blend gracefully into the current design.
+The design is not entirely done but it won’t be blindingly flashy, and will blend gracefully into the current design.
 
 ## Come as you are
 

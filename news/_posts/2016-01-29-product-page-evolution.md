@@ -18,11 +18,11 @@ And we can say it's been a success! Features are one of the reasons why merchant
 
 ## Born to be wild
 
-It’s all about soul-searching. PrestaShop had all these great features, but we thought we could as well improve something else as important: the **user experience**, or UX -- making sure that the software’s features are agreeable to use, so to speak.
+It’s all about soul-searching. PrestaShop had all these great features, but we thought we could improve something equally important too: the **user experience**, or UX -- making sure that the software’s features are agreeable to use, so to speak.
  
 With [the development of PrestaShop 1.7](http://build.prestashop.com/tag/1.7/), things have changed. We targeted the dissatisfaction points. That’s the beginning of our new story. Some actions in the back office are not as easy to complete as they should, the user doesn’t always know how to achieve something, and features can have settings spread in several screens -- which are not always logically tied.
  
-I'm maybe not telling you anything new, but don't worry, we're committed to the cause now :)
+I'm probably not telling anything new here, but don't worry, we're committed to the cause now :)
 
 ## Rehab
 

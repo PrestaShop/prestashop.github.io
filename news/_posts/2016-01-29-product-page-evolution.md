@@ -12,17 +12,17 @@ tags:
 ---
 
 
-A long time ago, in a galaxy not so far away, PrestaShop added more and more functionalities in its core. The aim was to propose the best ecommerce solution, with the biggest functional scope, answering to almost all of the merchants’ needs -- all that while still being free.
+A long time ago, in a galaxy not so far away, we packed PrestaShop with much needed functionalities in its core. The aim was to propose the best e-commerce solution, with the biggest functional scope, answering to almost all of the merchants’ needs -- all that while still being free.
 
 And we can say it's been a success! Features are one of the reasons why merchants choose PrestaShop when they want to create their online shop.
 
 ## Born to be wild
 
-It’s all about soul-searching. PrestaShop had all these great features, but something was a bit forgotten along the way: the **user experience**, or UX -- making sure that the software’s features are agreeable to use, so to speak.
-
-With [the development of PrestaShop 1.7](http://build.prestashop.com/tag/1.7/), things have changed. We targeted the dissatisfaction points. That’s the beginning of our new story. Some actions in the back office are painful to complete, the user doesn’t always know how to achieve something, and features can have settings spread in several screens -- which are not always logically tied.
-
-But I think I’m not telling you anything new :)
+It’s all about soul-searching. PrestaShop had all these great features, but we thought we could as well improve something else as important: the **user experience**, or UX -- making sure that the software’s features are agreeable to use, so to speak.
+ 
+With [the development of PrestaShop 1.7](http://build.prestashop.com/tag/1.7/), things have changed. We targeted the dissatisfaction points. That’s the beginning of our new story. Some actions in the back office are not as easy to complete as they should, the user doesn’t always know how to achieve something, and features can have settings spread in several screens -- which are not always logically tied.
+ 
+I'm maybe not telling you anything new, but don't worry, we're committed to the cause now :)
 
 ## Rehab
 

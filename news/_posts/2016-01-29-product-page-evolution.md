@@ -30,7 +30,7 @@ The PrestaShop team has grown since the 1.6 days. With a structured and dedicate
 
 Of course, it's not as easy as I write it. The first step, which will be available to all in the next major version (v1.7) is focusing on the merchants’ first impression of the back office, and finding ways to guide them in. More precisely, our projects are :
 
-* **creation of a merchant onboarding**. When the user connects to the back office in order to create a product for the first time, we want her to easily learn about the most interesting parts of that process. And show her that it can be much easier than imagine.
+* **creation of a merchant onboarding**. When the user connects to the back office in order to create a product for the first time, we want her to easily learn about the most interesting parts of that process. And show her that it can be much easier than imagined.
 * **reworking of the Product page**. Not only are we going to update the design, but we are aiming at a true revamping, both technical and functional, in order to make the product creation easier, faster and more logical.
 * **Reorganization of the left menu**. Links are reordered in a more logical and business-oriented way, gathered into 3 main groups.
 * [Revamping of the Module page](http://build.prestashop.com/news/module-page-awakens/) to more easily onboard people into the module world; with a page as simple as some of the famous app stores.

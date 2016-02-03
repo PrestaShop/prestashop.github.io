@@ -8,21 +8,21 @@ icon: icon-wand
 tags: [1.7]
 ---
 
-The first beta version is approaching quickly, so we have started to work on the new 1.7 default theme, currently named "He who must be named". It is based on the [StarterTheme](http://build.prestashop.com/news/starter-theme-news-3) that we've been telling you about here on Build -- what best way to test what we've worked on for a while?
+The first beta version for PrestaShop 1.7 is approaching quickly, so we have started to work on the new 1.7 default theme, currently named "He who must be named". It is based on the [StarterTheme](http://build.prestashop.com/tag/starter-theme/) that we've been telling you about here on Build -- what best way to test what we've worked on for a while?
 
-As a reminder, the StarterTheme is a minimal theme for PrestaShop with all the features but without any style and the minimal JavaScript. If you want to know more about it, have a look here.
+As a reminder, the StarterTheme is a minimal theme for PrestaShop with all the features but without any style and the minimal JavaScript. If you want to know more about it, keep reading!
 
 ## Working methods
 
 We have decided to work on a [dedicated branch](https://github.com/PrestaShop/PrestaShop/tree/feat/classic) on the main PrestaShop GitHub repository. This branch is frequently rebased on the `feat/starter-theme` branch, which is then itself rebased on the `develop` branch -- where all the 1.7 fun happens. This way, we get all the evolutions without disturbing the other projects.
 
-Don't hesitate to get involved and contribute ! We're available on [Gitter](https://gitter.im/PrestaShop/StarterTheme) and can follow the work on [Trello](https://trello.com/b/FPwYidfj/prestashop-startertheme).
+Don't hesitate to get involved and contribute! We're available on [Gitter](https://gitter.im/PrestaShop/StarterTheme) and can follow the work on [Trello](https://trello.com/b/FPwYidfj/prestashop-startertheme).
 
 The project team is composed of [Léa](https://www.behance.net/leamendes) (UI/UX), [Jessica](https://www.behance.net/jessicagantier) (UI/UX), [Nicolas](https://github.com/nihco2) (Front-End Developer), [Ivan](https://github.com/ishcherbakov) (Front-End Developer), [François-Marie](https://github.com/djfm) (Project Manager) and [myself](https://github.com/maximebiloe) (coordinating with the StarterTheme team).
 
 ## Let's talk about technic
 
-In the new Prestashop 1.7 default theme, we will minify all the media files by compiling them into one single file per media type: `theme.css` and `theme.js`
+In the new Prestashop 1.7 default theme, we will minify all the media files by compiling them into one single file per media type: `theme.css` and `theme.js`.
 In order to do that, we are using [webpack](https://webpack.github.io), a module bundler, working with Node.js.
 It prevents us from making too many HTTP(S) requests to the webserver to load all the assets when you access to the website.
 
@@ -71,11 +71,11 @@ Of course, we will support all the modern browsers and we will be IE9+ compliant
 
 ## What about UI/UX?
 
-The main guideline we wanted to follow when we designed the theme is that it must be able to adapt itself easily to any kind of products sold on the website. So, we chose to make something visually lighter than usual, so the real stars of the shop will be the products!
+The main guideline we wanted to follow when we designed the theme is that it must be able easily adapted to any kind of products sold on the website. We chose to make something visually lighter than usual, so the real stars of the shop will be the products!
 
 To help our front-ends developers, our designers have made a style guide. It allows us to ensure a graphical consistency in the new default theme.
 
-Here is a preview of the style guide for the new default theme
+Here is a preview of the **style guide** for the new default theme:
 
 [![PrestaShop Style Guide New Default Theme](/assets/images/2016/02/style-guide-new-default-theme-mini.png)](/assets/images/2016/02/style-guide-new-default-theme.png)
 
@@ -86,4 +86,4 @@ Now, I'm sure you want to see what this new default theme looks like :wink: Here
 
 ## What's next?
 
-The new default theme will be released in beta in the same time that PrestaShop 1.7 beta version. All your comments and feedbacks will be welcome and we will be glad to hear them.
+The new default theme is still work in progress. It will be released in beta at the same time that PrestaShop 1.7 beta version. All your comments and feedbacks are welcome and we will be glad to hear them.

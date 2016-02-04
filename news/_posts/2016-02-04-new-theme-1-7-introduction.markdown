@@ -10,7 +10,7 @@ tags: [1.7]
 
 The first beta version for PrestaShop 1.7 is approaching quickly, so we have started to work on the new 1.7 default theme, currently named "He who must *be* named" — tentatively named "classic" for now, for lack of a better name :) It is based on the [StarterTheme](http://build.prestashop.com/tag/starter-theme/) that we've been telling you about here on Build — what best way to test what we've been working on for a while?
 
-As a reminder, the StarterTheme is a minimal theme for PrestaShop with all the necessary features for a proper ecommerce theme, but without any style and as little JavaScript as possible, so that theme designer can build their theme upon a strong foundation. If you want to know more about it, keep reading!
+As a reminder, the StarterTheme is a minimal theme for PrestaShop with all the necessary features for a proper ecommerce theme, but without any style and as little JavaScript as possible, so that theme designers can build their theme upon a strong foundation. If you want to know more about it, keep reading!
 
 ## Working methods
 

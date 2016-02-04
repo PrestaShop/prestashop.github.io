@@ -94,7 +94,7 @@ Now, I'm sure you want to see what this new default theme looks like :wink: Here
 
 The new default theme is still work in progress — and the Starter Theme is being fine-tuned throughout its development. Both will be released in beta at the same time that PrestaShop 1.7 beta version. Soon, then!
 
-We want this to be a community effort! All your comments and feedbacks are welcome, and we will be glad to hear them. Come talk to use on the Gitter channel, and if you have a good idea for [the Starter Theme](https://github.com/PrestaShop/PrestaShop/tree/feat/starter-theme) or [the default theme](https://github.com/PrestaShop/PrestaShop/tree/feat/classic), don't hesitate to make a PR on their respective GitHub repository!
+We want this to be a community effort! All your comments and feedbacks are welcome, and we will be glad to hear them. Come talk to use on the [Gitter channel](https://gitter.im/PrestaShop/StarterTheme), and if you have a good idea for [the Starter Theme](https://github.com/PrestaShop/PrestaShop/tree/feat/starter-theme) or [the default theme](https://github.com/PrestaShop/PrestaShop/tree/feat/classic), don't hesitate to make a PR on their respective GitHub repository!
 
 <div class="alert alert-note" role="alert">
 Currently, the two themes are in their own branches, which is not ideal for contributors who work from the main `develop` branch. We're doing our best to get everything merged into the `develop` as soon as possible. It should happen over the coming days. 

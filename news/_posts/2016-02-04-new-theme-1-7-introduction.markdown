@@ -54,7 +54,7 @@ section {
 }
 {% endhighlight %}
 
-Also, we have decided to structure our CSS-naming according to the rscss guidelines.
+Also, we have decided to structure our CSS-naming according to the [rscss](http://rscss.io/) guidelines.
 Here are some of its recommandations:
 
 * The CSS content should be thought in components: each piece of UI is an individual CSS component.

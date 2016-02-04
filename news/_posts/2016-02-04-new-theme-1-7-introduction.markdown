@@ -18,7 +18,7 @@ We have decided to work on a [dedicated branch](https://github.com/PrestaShop/Pr
 
 Don't hesitate to get involved and contribute to the Starter Theme! We have a [dedicated Gitter discussion channel](https://gitter.im/PrestaShop/StarterTheme), and you can follow the planned work on [our Trello board](https://trello.com/b/FPwYidfj/prestashop-startertheme).
 
-The project team is composed of [Léa](https://www.behance.net/leamendes) (UI/UX), [Jessica](https://www.behance.net/jessicagantier) (UI/UX), [Nicolas](https://github.com/nihco2) (Front-End Developer), [Ivan](https://github.com/ishcherbakov) (Front-End Developer), [François-Marie](https://github.com/djfm) (Project Manager) and [myself](https://github.com/maximebiloe) (coordinating with the StarterTheme team).
+The project team is composed of [Léa](https://www.behance.net/leamendes) (UI/UX), [Jessica](https://www.behance.net/jessicagantier) (UI/UX), [Nicolas](https://github.com/nihco2) (Front-End Developer), [Ivan](https://github.com/ishcherbakov) (Front-End Developer), [François-Marie](https://github.com/djfm) (Product Manager) and [myself](https://github.com/maximebiloe) (coordinating with the StarterTheme team).
 
 ## Let's talk about technic
 

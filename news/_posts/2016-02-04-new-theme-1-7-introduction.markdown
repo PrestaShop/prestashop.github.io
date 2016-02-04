@@ -60,7 +60,7 @@ Here are some of its recommandations:
 * The CSS content should be thought in components: each piece of UI is an individual CSS component.
 * Components will be named with at least two words, separated by a dash (`.default-input`, `.radio-field`...)
 * Prefer to use the > child selector whenever possible (`dropup > .btn > .caret`, `.table-active > th`)
-* Helpers must be prefixed by an underscore (`.\_relative`, `.\_margin-left-small`, `.\_shadow`...)
+* Helpers must be prefixed by an underscore (`._relative`, `._margin-left-small`, `._shadow`...)
 
 Those are just a few examples, we invite you to read more [here](http://rscss.io).
 

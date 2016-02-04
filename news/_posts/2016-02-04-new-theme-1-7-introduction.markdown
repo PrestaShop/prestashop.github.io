@@ -10,13 +10,13 @@ tags: [1.7]
 
 The first beta version for PrestaShop 1.7 is approaching quickly, so we have started to work on the new 1.7 default theme, currently named "He who must *be* named" -- tentatively named "classic" for now, for lack of a better name :) It is based on the [StarterTheme](http://build.prestashop.com/tag/starter-theme/) that we've been telling you about here on Build -- what best way to test what we've been working on for a while?
 
-As a reminder, the StarterTheme is a minimal theme for PrestaShop with all the necessary features for a proper e-commerce theme, but without any style and as little JavaScript as possible, so that theme designer can build their team upon a strong foundation. If you want to know more about it, keep reading!
+As a reminder, the StarterTheme is a minimal theme for PrestaShop with all the necessary features for a proper e-commerce theme, but without any style and as little JavaScript as possible, so that theme designer can build their theme upon a strong foundation. If you want to know more about it, keep reading!
 
 ## Working methods
 
 We have decided to work on a [dedicated branch](https://github.com/PrestaShop/PrestaShop/tree/feat/classic) on the main PrestaShop GitHub repository. This branch is frequently rebased (or 'updated', if you will) on the [`feat/starter-theme` branch](https://github.com/PrestaShop/PrestaShop/tree/feat/starter-theme), which is then itself rebased on the main `develop` branch -- where all the 1.7 fun happens. This way, we get all the evolutions without disturbing the other projects.
 
-Don't hesitate to get involved and contribute! We have a [dedicated Gitter discussion channel](https://gitter.im/PrestaShop/StarterTheme), you and can follow the planned work on [our Trello board](https://trello.com/b/FPwYidfj/prestashop-startertheme).
+Don't hesitate to get involved and contribute to the Starter Theme! We have a [dedicated Gitter discussion channel](https://gitter.im/PrestaShop/StarterTheme), you and can follow the planned work on [our Trello board](https://trello.com/b/FPwYidfj/prestashop-startertheme).
 
 The project team is composed of [Léa](https://www.behance.net/leamendes) (UI/UX), [Jessica](https://www.behance.net/jessicagantier) (UI/UX), [Nicolas](https://github.com/nihco2) (Front-End Developer), [Ivan](https://github.com/ishcherbakov) (Front-End Developer), [François-Marie](https://github.com/djfm) (Project Manager) and [myself](https://github.com/maximebiloe) (coordinating with the StarterTheme team).
 

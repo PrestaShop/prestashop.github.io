@@ -16,9 +16,9 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 
 The team is hard at work on PrestaShop 1.7, the next major version of the most complete e-commerce software solution there is. The previous Core Weekly report made a good summary of what's to come, and you can find an up-to-date thread about it [in the forum](https://www.prestashop.com/forums/topic/480580-want-to-know-more-about-17/). More content coming soon!
 
-_Please note that finishing the [planned projects for 1.7](http://build.prestashop.com/news/meet-prestashop-team-prestashop-1-7/) and delivering a quality beta version soon is at the moment the top priority for the PrestaShop Core developers. Merging community pull requests has therefore slowed down until then, but will be back _with a vengeance_ once we have a first beta to release to you! So please keep testing, and keep sending patches our way: it's the_ raison d'être _of this community project!_
+_Please note that finishing the [planned projects for 1.7](http://build.prestashop.com/news/meet-prestashop-team-prestashop-1-7/) and delivering a quality beta version soon is at the moment the top priority for the PrestaShop Core developers. Merging community pull requests has therefore slowed down until then, but will be back_ with a vengeance _once we have a first beta to release to you! So please keep testing, and keep sending patches our way: it's the_ raison d'être _of this community project!_
 
-Do you want to enccourage us? **[Give us a star on GitHub](https://github.com/PrestaShop/PrestaShop)**! :)
+Do you want to encourage us? **[Give us a star on GitHub](https://github.com/PrestaShop/PrestaShop)**! :)
 
 
 ## Code changes in 1.7.0.0-develop
@@ -68,7 +68,7 @@ Note that the Starter Theme repo (see next section) is entirely part of the Pres
  * [4737](https://github.com/PrestaShop/PrestaShop/pull/4737): Add a quick access to quick access management page, by @mickaelandrieu.
  * [4752](https://github.com/PrestaShop/PrestaShop/pull/4752): added quick access to SEO&URL category from SEO part of Product, by @mickaelandrieu.
  * [4757](https://github.com/PrestaShop/PrestaShop/pull/4757): Add HTML Ids for Onboarding, by @xGouley.
- * [4781](https://github.com/PrestaShop/PrestaShop/pull/4781): make Localisation category more consistant / bulk actions, by @mickaelandrieu.
+ * [4781](https://github.com/PrestaShop/PrestaShop/pull/4781): make Localisation category more consistent / bulk actions, by @mickaelandrieu.
  * [4791](https://github.com/PrestaShop/PrestaShop/pull/4791): updated new product link on quick accesses section, by @mickaelandrieu.
  * [4800](https://github.com/PrestaShop/PrestaShop/pull/4800): product image : improve better sortable feeling, by @kelu95.
  * [4806](https://github.com/PrestaShop/PrestaShop/pull/4806): Pipes in product names in autocomplete. Thank you @axometeam!

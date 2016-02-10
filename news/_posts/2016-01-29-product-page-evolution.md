@@ -160,41 +160,49 @@ Ever since we started this project, we’ve encouraged people to work with us vi
 The version we are working on is on Github, on the [develop branch](https://github.com/PrestaShop/PrestaShop/tree/develop).
 
 
-### New Hook
+## Developers, beware!
+
 If you created modules which target the Product Page, you may be impacted by these changes and will need to adapt your code, if you want them to still work as expected in this new Product page.
 
-In the 1.6 version, it is allowed to have a dedicated tab per module on the Product page. In the 1.7 version, we changed this and added a dedicated tab for all the Product page’s modules, via a new hook called **hookDisplayAdminProductsExtra**.
+In the 1.6 version, it is allowed to have a dedicated tab per module on the Product page. In the 1.7 version, we changed this and added a dedicated tab for all the Product page’s modules, via a new hook called `hookDisplayAdminProductsExtra`.
 If you coded your modules by following the best-practices of both PHP and PrestaShop  1.5-1.6, it should not take you too much time to update your code.
 
 Here are the main information that you will need to update your module:
 
-#### Parameters
-Parameters cannot be obtained from query string anymore. From now on, an array of parameters is directly passed onto the hookDisplayAdminProductsExtra method.
+### Hook Parameters
+
+Parameters cannot be obtained from a query string anymore. From now on, an array of parameters is directly passed onto the `hookDisplayAdminProductsExtra` method.
 
 See this sample hook:
-{% highlight php startinline=true linenos %}
+{% highlight php startinline=true %}
 public function hookDisplayAdminProductsExtra($params)
 {% endhighlight %}
 
 With `$params` taking these values:
-{% highlight php startinline=true linenos %}
+{% highlight php startinline=true %}
 $params [
-	"_ps_version"
-	"id_product"
-	"cookie"
-	"cart"
-	"altern"
+  "_ps_version"
+  "id_product"
+  "cookie"
+  "cart"
+  "altern"
 ]
 {% endhighlight %}
 
+
 #### Assets
-Assets’ URLs must be absolute (meaning, they must start with http:// or https://).
+
+Assets’ URLs must be absolute (meaning, they must start with `http://` or `https://`).
+
 
 #### Form fields
-The form field names must be created in an array hook of this format: [MODULE_NAME][INPUT_NAME]
+
+The form field names must be created in an array hook of this format: `[MODULE_NAME][INPUT_NAME]`.
+
 
 #### DOM
-The ID of the module’s container has been modified. Here is its new format: **module_MODULE_NAME**.
+
+The format of the ID for the module’s container has been modified. Here is its new format: `module_MODULE_NAME`.
 
 
 ## These boots are made for walking

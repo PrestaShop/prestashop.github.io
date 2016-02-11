@@ -13,9 +13,9 @@ The development team is hard at work on PrestaShop 1.7, making sure the first be
 <div class="alert alert-note" role="alert">
 Note that this article aims to compile the latest news about 1.7, and will therefore be updated as new information is confirmed.
 
-Current version: 1.0.
+Current version of this FAQ: 1.0.
 
-Changelog:
+Changelog for this FAQ:
 
 * 1.0: First release.
 </div>
@@ -32,17 +32,17 @@ The release of the beta version will start a period of heavy testing and debuggi
 
 ### What will be in PS 1.7?
 
-Version 1.7.0.0 is a major release which aims at simplifying the creation of a shop and the path to your first sale. It consists of three main projects:
+Version 1.7.0.0 is a major release which aims at simplifying the creation of a shop and the path to your first sale. It consists of four main projects:
 
-* Introduced a new architecture based on the Symfony2 framework.
-* Simplified creation and maintenance of a theme:
-  * New starter theme to help designers create a kick-ass theme in a week
-  * New default theme (classy and efficient)
-* Improved key user journeys in the back office:
-  * Create a new onboarding for beginners
-  * Simplify the product creation workflow 
-  * Easily find installed and non-installed modules
-* Improved administration interface menu structure focused on getting the most common tasks done faster
+* A new architecture, based on the [Symfony2 framework](https://symfony.com/),
+* A better way to create and maintain a theme:
+  * New starter theme to help designers create a kick-ass theme in a week,
+  * New default theme (classy and efficient).
+* An improved key user journeys in the back office:
+  * Create a new onboarding for beginners,
+  * Simplify the product creation workflow, 
+  * Easily find installed and non-installed modules.
+* An improved administration interface menu structure, focused on getting the most common tasks done faster.
 
 
 ### Should I wait for PrestaShop 1.7 to create my store, or create it now with version 1.6?
@@ -54,7 +54,7 @@ Version 1.6 is currently your only stable choice. It will be maintained and supp
 
 In short: **no**, it won't. You can upgrade, but be prepared to have to adapt or replace many of your addons (theme, modules).
 
-Now the longer answer. PrestaShop 1.7.0.0 is a major version not because it packs a lot of sweet changes, but also in the [SemVer](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/) sense of the term: it breaks some of the backward compatibility. If it didn’t, we probably would have called it 1.6.2.0.
+Now for the longer answer. PrestaShop 1.7.0.0 is a major version not because it packs a lot of sweet changes, but also in the [SemVer](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/) sense of the term: it breaks some of the backward compatibility. If it didn’t, we probably would have called it 1.6.2.0.
 
 For starters, no 1.6 theme will work on 1.7. That’s a definite. We rewrote the way themes are made, and theme designer will be delighted to find in the new Starter Theme a solid foundation for their own themes. With this foundation, new themes can be created in half the time it took you to create a 1.6 theme.
 
@@ -70,6 +70,8 @@ What this means for any upgrade is that in order for a PS 1.6 to migrate to PS 1
 * Adapt the Product page modules.
 * Adapt the Modules page modules.
 * Test all the other modules.
+ 
+In any case, we advise you to make sure that your module does work in PrestaShop 1.7.
 
 _We are currently thinking up ways to ease the upgrade path -- for instance, a tool to take the 1.6 store, import all of its data and images into 1.7, and end up with a default store (default 1.7 theme, default 1.7 native modules) with the 1.6 data and settings. This is still a project more than actual working source code, but you get the idea._
 

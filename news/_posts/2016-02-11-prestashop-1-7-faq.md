@@ -11,13 +11,15 @@ tags: [1.7]
 The development team is hard at work on PrestaShop 1.7, making sure the first beta contains everything they want it to be. We’re approaching the day when we can release this beta version, and it is therefore high time that we’d answer the questions that we received about this new major version.
 
 <div class="alert alert-note" role="alert">
-Note that this article aims to compile the latest news about 1.7, and will therefore be updated as new information is confirmed.
+<p>Note that this article aims to compile the latest news about 1.7, and will therefore be updated as new information is confirmed.</p>
 
-Current version of this FAQ: 1.0.
+<p>Current version of this FAQ: 1.0.</p>
 
-Changelog for this FAQ:
+<p>Changelog for this FAQ:</p>
 
-* 1.0: First release.
+<ul>
+  <li>1.0: First release.</li>
+</ul>
 </div>
 
 

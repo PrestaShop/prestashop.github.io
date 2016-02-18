@@ -22,7 +22,9 @@ spotify_username: prestacrew
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 exclude: ["bower.json", "bower_components", "Gemfile", "Gemfile.lock", ".travis.yml", "vendor"]
 
@@ -37,6 +39,7 @@ gems:
     - jekyll-sitemap
     - jekyll-feed
     - jekyll-redirect-from
+    - jekyll-paginate
 
 # Page collection are used for how-tos pages
 howtos:

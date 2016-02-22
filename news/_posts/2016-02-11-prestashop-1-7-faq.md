@@ -178,7 +178,7 @@ But wait… no styling?! It might not be perfect for a customer, sure, but it sh
 ### Should I use Bootstrap for my theme?
 
 In depends on the context. <br/>
-If you're building a store with custom-made theme and modules, then you can use whatver fits your needs.<br/>
+If you're building a store with custom-made theme and modules, then you can use whatever fits your needs.<br/>
 If you're creating a theme in order to sell it on the PrestaShop Addons marketplace, then you should use Bootstrap.
 
 We are very aware that the PrestaShop ecosystem is used to relying on the Bootstrap framework for both its themes and modules, and we do not want to break this expectation with the release of PS 1.7. We want to make sure that users who buy themes or modules from the community can always rely on their compatibility: we do not want to have merchants be confused over whether the module they chose for their shop works with their theme or not. 

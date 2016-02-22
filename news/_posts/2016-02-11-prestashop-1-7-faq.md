@@ -204,6 +204,10 @@ PrestaShop used to send many files to the browser, for every page: `global.js`, 
 
 With 1.7, we just concatenate these files into a single minified `theme.js` file. Then, modules are free to add their own files, after a single core JS file instead of 30. From there on, the browser's cache does its job.
 
+Finally, both the default theme's theme.css and theme.js file are MUCH smaller than their 1.6 counterparts (even minified).
+
+So the new theme's JS/CSS files are both fewer (less HTTP queries!) AND smaller. Yay!
+
 
 ### What will be the impact of 1.7 on the 1.6 themes?
 

@@ -31,7 +31,7 @@ But adapt to your languages requirements when needed.
 
 
 5. **Pay attention to special characters and variables**
-Preserve meaning and location, e.g. "There are %d errors." -- the %s should be where your language requires it to be.
+Preserve meaning and location, e.g. "There are %d errors." -- the %d should be where your language requires it to be.
 
 
 6. **Harmonize**

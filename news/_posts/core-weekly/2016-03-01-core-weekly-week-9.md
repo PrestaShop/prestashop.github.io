@@ -43,7 +43,7 @@ Let's review the merged pull-requests on the ['develop' branch](https://github.c
  * [5071](https://github.com/PrestaShop/PrestaShop/pull/5071): product page improvements, by @nihco2.
  * [5085](https://github.com/PrestaShop/PrestaShop/pull/5085): Delete address from checkout, by @maximebiloe.
  * [5101](https://github.com/PrestaShop/PrestaShop/pull/5101): Remove module placeholders, by @julienbourdeau.
- * [5103](https://github.com/PrestaShop/PrestaShop/pull/5103): OrderPresenter now use products from order to preserve prices consistency, by @michaelandrieu.
+ * [5103](https://github.com/PrestaShop/PrestaShop/pull/5103): OrderPresenter now use products from order to preserve prices consistency, by @mickaelandrieu.
  * [5105](https://github.com/PrestaShop/PrestaShop/pull/5105): Introducing Smarty for dev, by @julienbourdeau.
  * [5107](https://github.com/PrestaShop/PrestaShop/pull/5107): Missing variables in core js. Thank you @fojtcz!
  * [5113](https://github.com/PrestaShop/PrestaShop/pull/5113): order confirmation redesign, by @nihco2.
@@ -71,12 +71,12 @@ Let's review the merged pull-requests on the ['develop' branch](https://github.c
  
 ## Installer
  
- * [5127](https://github.com/PrestaShop/PrestaShop/pull/5127): delete cache files on reinstallation, by @michaelandrieu.
+ * [5127](https://github.com/PrestaShop/PrestaShop/pull/5127): delete cache files on reinstallation, by @mickaelandrieu.
  
  
 ### Test
  
- * [5094](https://github.com/PrestaShop/PrestaShop/pull/5094): added tests for theme validator, by @michaelandrieu.
+ * [5094](https://github.com/PrestaShop/PrestaShop/pull/5094): added tests for theme validator, by @mickaelandrieu.
  
 
 See all the PRs merged into the codebase since the last Core Weekly [here](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Amerged+merged%3A2016-02-29..2016-03-06+).

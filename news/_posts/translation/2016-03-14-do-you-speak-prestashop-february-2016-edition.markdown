@@ -2,7 +2,7 @@
 layout: post
 title:  "Do you speak PrestaShop? – February 2016 edition"
 subtitle: "PrestaShop translations are flourishing thanks to our international community <3"
-date:   2016-03-14 16:09:47
+date:   2016-03-14 06:09:47
 author: alexeven
 icon: icon-world
 tags: [translation, i18n, l10n]

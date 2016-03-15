@@ -50,7 +50,7 @@ Let's review the merged pull-requests on the ['develop' branch](https://github.c
  * [5159](https://github.com/PrestaShop/PrestaShop/pull/5159): Checkout & Shopping-Cart when empty cart, by @maximebiloe.
  * [5160](https://github.com/PrestaShop/PrestaShop/pull/5160): Fix some checkout errors, by @julienbourdeau.
  * [5162](https://github.com/PrestaShop/PrestaShop/pull/5162): Fix price display, by @nihco2.
- * [5163](https://github.com/PrestaShop/PrestaShop/pull/5163): Move some logical JS into _core, by @maximebiloe.
+ * [5163](https://github.com/PrestaShop/PrestaShop/pull/5163): Move some logical JS into core, by @maximebiloe.
  * [5173](https://github.com/PrestaShop/PrestaShop/pull/5173): Fix modal display for tablets, by @nihco2.
  * [5176](https://github.com/PrestaShop/PrestaShop/pull/5176): Update logo and theme preview, by @maximebiloe.
  * [5178](https://github.com/PrestaShop/PrestaShop/pull/5178): delete block cms and linklist redesign, by @nihco2.

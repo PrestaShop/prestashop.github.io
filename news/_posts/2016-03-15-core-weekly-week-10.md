@@ -61,7 +61,7 @@ Let's review the merged pull-requests on the ['develop' branch](https://github.c
 
  * [5140](https://github.com/PrestaShop/PrestaShop/pull/5140): pack/virtual product shouldn't be selected if variations exists, by @mickaelandrieu.
  * [5141](https://github.com/PrestaShop/PrestaShop/pull/5141): Batch of improvements for new module page, by @tchauviere.
- * #:5144 fix $module_name not defined in import module. Thank you @prestamodule!
+ * [5144](https://github.com/PrestaShop/PrestaShop/pull/5144): fix $module_name not defined in import module. Thank you @prestamodule!
  * [5149](https://github.com/PrestaShop/PrestaShop/pull/5149): Added tax block on Basic settings tab, by @mickaelandrieu.
 
 

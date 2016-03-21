@@ -12,32 +12,13 @@ The development team is hard at work on PrestaShop 1.7, making sure the first be
 
 <div class="alert alert-note" role="alert">
 <p>Note that this article aims to compile the latest news about 1.7, and will therefore be updated as new information is confirmed.</p>
+</div>
 
-<p>PrestaShop 1.7 a work in progress! This FAQ gives you the current state of 1.7, not the final one, and we're still not in beta :)</p>
+<div class="alert alert-important" role="alert">
+<p>PrestaShop 1.7 a work in progress, and is currently still under development!</p> 
 
-<p>Current version of this FAQ: 1.1.</p>
-
-<p>Changelog for this FAQ:</p>
-
-<ul>
-  <li>1.0 (2016-02-11): 
-    <ul>
-      <li>First release.</li>
-    </ul>
-  </li>
-  <li>1.1 (2016-02-22):
-    <ul>
-      <li>Added a sentence to the "Where will Symfony be introduced?" question.</li>
-      <li>Rephrased bits of the "Will it be easy to upgrade from previous versions of PrestaShop to v1.7?" question.</li>
-      <li>Expanded the "Will the Starter Theme or the default theme use Bootstrap?" question.</li>
-      <li>Added new question: "Should I use Bootstrap for my theme?"</li>
-      <li>Added new question: "Why are you switching to one theme.js and one theme.css file for the whole site?"</li>
-      <li>Added new question: "Will my 1.6 module still work with PrestaShop 1.7?"</li>
-      <li>Added new question: "Is PrestaShop 1.7 switching from Smarty to Twig?"</li>
-      <li>Added new question: "Can we still use overrides in 1.7?"</li>
-    </ul>
-  </li>
-</ul>
+<p>This FAQ gives you the current state of 1.7, not the final one, and we're still not in beta :)<br />
+Current version of this FAQ: 1.1. The changelog is at the bottom of the FAQ.</p>
 </div>
 
 
@@ -65,7 +46,7 @@ Version 1.7.0.0 is a major release which aims at simplifying the creation of a s
 * An improved administration interface menu structure, focused on getting the most common tasks done faster.
 
 
-### Should I wait for PrestaShop 1.7 to create my store, or create it now with version 1.6?
+### Should merchants wait for PrestaShop 1.7.0.0 to create their stores, or create it now with version 1.6?
 
 Version 1.6 is currently your only stable choice. It will be maintained and supported for several months once the stable version of PrestaShop 1.7 is released, so that should give you enough time to work your way from version 1.6 to version 1.7 -- once you think you are ready to upgrade.
 
@@ -129,7 +110,7 @@ The bulk of the 1.7 work is being done on [the ‘develop’ branch of the Prest
 You can download it and test it right now!
 
 
-### How do I install the development version available on GitHub?
+### Can anyone install the development version, available on GitHub?
 
 Read the [“Installation” section of the README.md file](https://github.com/PrestaShop/PrestaShop/blob/develop/README.md#installation).<br/>
 In short: you will need to install and use Composer, npm and Grunt in order to compile the project into a single installable instance.
@@ -175,7 +156,7 @@ We call Starter Theme a minimal PrestaShop theme: it is feature-complete but has
 But wait… no styling?! It might not be perfect for a customer, sure, but it should be perfect for a designer as turning the Starter Theme into a real, production-ready theme will be very easy.
 
 
-### Should I use Bootstrap for my theme?
+### Should 1.7 theme be built with Bootstrap?
 
 In depends on the context. <br/>
 If you're building a store with custom-made theme and modules, then you can use whatever fits your needs.<br/>
@@ -198,7 +179,7 @@ The Starter Theme is built for developer, agencies, all those who build a Presta
 The default theme is built first and foremost for merchants, and must work within our existing community, which relies a lot on Bootstrap. The PrestaShop Addons marketplace has heaps of Bootstrap-based modules (because they were built to work well with the 1.6 default theme, based on Bootstrap already), and therefore it is in the best interest of the community that we should make sure modules and themes are consistent in their choice of CSS framework. Therefore, on Addons, Bootstrap it is.
 
 
-### Why are you switching to one `theme.js` and one `theme.css` file for the whole site?
+### Why is the 1.7 default theme switching to one `theme.js` and one `theme.css` file for the whole site?
 
 PrestaShop used to send many files to the browser, for every page: `global.js`, `jquery.js`, `jquery-plugin-foobar.js`, etc. Then, each page had its own set of specific JavaScript files: `product.js`, `cms.js`, `category.js`, etc. Finally, modules added their own JS. It was a useless mess: something like 30 core JS files and one file per module.
 
@@ -247,7 +228,7 @@ There will be some impacts for modules which target the Product and Module pages
 Modules which target the theme will also need to be adapted to the new way themes work in 1.7. 
 
 
-### Will my 1.6 module still work with PrestaShop 1.7?
+### Will 1.6 module still work with PrestaShop 1.7?
 
 Modules built for PrestaShop 1.6 will still work with 1.7. Their presentation code will just have to be reworked (to different extents depending on the module) in order to look good.
 
@@ -288,7 +269,7 @@ Also, overrides are currently forbidden in the Symfony-based pages (namely, the 
 Overrides are a nice system to have, but the issue with it is that it is an uncontrolled extension system. We are working on a carefully planned process that will allow developers to extend the PrestaShop code in a much cleaner way. We will soon write about it on this blog, but the gist of it could be that the developer team would integrate your needs for overrides in the next version of PrestaShop -- kind of what polyfills do for HTML5 features :) In short, you tell us what you need, and while we include it in the next version, you can use an override.
 
 
-### Can we still use overrides in 1.7?
+### Can developers still use overrides in 1.7?
 
 Yes, overrides will work as usual on all classes that have no namespace (so you can still override Product, Address, etc.).
 
@@ -320,3 +301,27 @@ We will soon publish a guide on what to look for when updating your module.
 
 The Developer documentation is being worked on, and the main topics should have their pages up during the beta phase. We hope to have it land in GitHub, so that the community can participate in its improvement.<br />
 In the meantime, we advise you to dive into the code of this 1.7-specific module: [https://github.com/PrestaShop/paymentexample](https://github.com/PrestaShop/paymentexample ).
+
+<div class="alert alert-note" role="alert">
+<p><b>Changelog for this FAQ:</b></p>
+
+<ul>
+  <li>1.0 (2016-02-11): 
+    <ul>
+      <li>First release.</li>
+    </ul>
+  </li>
+  <li>1.1 (2016-02-22):
+    <ul>
+      <li>Added a sentence to the "Where will Symfony be introduced?" question.</li>
+      <li>Rephrased bits of the "Will it be easy to upgrade from previous versions of PrestaShop to v1.7?" question.</li>
+      <li>Expanded the "Will the Starter Theme or the default theme use Bootstrap?" question.</li>
+      <li>Added new question: "Should I use Bootstrap for my theme?"</li>
+      <li>Added new question: "Why are you switching to one theme.js and one theme.css file for the whole site?"</li>
+      <li>Added new question: "Will my 1.6 module still work with PrestaShop 1.7?"</li>
+      <li>Added new question: "Is PrestaShop 1.7 switching from Smarty to Twig?"</li>
+      <li>Added new question: "Can we still use overrides in 1.7?"</li>
+    </ul>
+  </li>
+</ul>
+</div>

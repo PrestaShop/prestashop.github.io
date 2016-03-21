@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "PrestaShop Core Weekly - Week 10"
-subtitle: "An inside look at PrestaShop's codebase"
+title:  "Calling for user-testing volunteers (Paris, France)"
+subtitle: "Come tell us what you think!"
 date:   2016-03-21 17:37:41
 author: xavierborderie
 icon: icon-mic

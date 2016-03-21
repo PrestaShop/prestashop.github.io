@@ -47,6 +47,6 @@ Are you scared to be lost with the new interface? See what Clément, from renown
 
 <iframe width="796" height="448" src="https://www.youtube.com/embed/WvVAUCCKMXw" frameborder="0" allowfullscreen></iframe>
 
-Do you feel up to that (easy) challenge? [Give us your details in this form](https://docs.google.com/a/prestashop.com/forms/d/1EAxGo97M2zDSk4DO49873I6eCVWxLU5i76ZKuuvEbyE/prefill), and you might be part of the next testing session!
+Do you feel up to that (easy) challenge? [Give us your details in this form](https://docs.google.com/forms/d/1EAxGo97M2zDSk4DO49873I6eCVWxLU5i76ZKuuvEbyE/viewform), and you might be part of the next testing session!
 
 Thank you for contributing!

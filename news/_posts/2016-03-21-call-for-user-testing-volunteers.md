@@ -35,7 +35,7 @@ And you can be a part of it! We are looking for people (ideally from the Paris r
 Ideally, you should:
 
 * Be at ease with managing an online store on a daily basis, 
-* Be used to navigating the PrestaShop 1.6 back office (or earlier version), 
+* Be used to navigating the PrestaShop 1.6 back office (or earlier version), or the back office of any other e-commerce software, 
 * Have not yet tested PrestaShop 1.7 -- in order for your reaction to be genuine.
 
 Also, you must speak either French or English, and be able to read English :)

@@ -47,6 +47,8 @@ Are you scared to be lost with the new interface? See what Clément, from renown
 
 <iframe width="796" height="448" src="https://www.youtube.com/embed/WvVAUCCKMXw" frameborder="0" allowfullscreen></iframe>
 
-Do you feel up to that (easy) challenge? [Give us your details in this form](https://docs.google.com/forms/d/1EAxGo97M2zDSk4DO49873I6eCVWxLU5i76ZKuuvEbyE/viewform), and you might be part of the next testing session!
+Do you feel up to that (easy) challenge? Give us your details in this form, and you might be part of the next testing session!
+
+<iframe src="https://docs.google.com/forms/d/1EAxGo97M2zDSk4DO49873I6eCVWxLU5i76ZKuuvEbyE/viewform?embedded=true#responses" width="760" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading in progress...</iframe>
 
 Thank you for contributing!

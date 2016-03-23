@@ -29,7 +29,7 @@ Do you want to encourage us? **[Give us a star on GitHub](https://github.com/Pre
 
 Let's review the merged pull-requests on the ['develop' branch](https://github.com/PrestaShop/PrestaShop/tree/develop) since the last Core Weekly Report!
 
-### Product page
+### Text changes
 
  * [5164](https://github.com/PrestaShop/PrestaShop/pull/5164): Update wording configuration.xml. Thank you @Nobodaddy!
  * [5165](https://github.com/PrestaShop/PrestaShop/pull/5165): Update wording order_return_state.xml. Thank you @Nobodaddy!

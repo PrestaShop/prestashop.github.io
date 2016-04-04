@@ -40,7 +40,7 @@ You SHOULD however install this alpha version as a test store, either on your ma
 
 The release date for the stable version is not yet set, so you have a few weeks and beta/RC versions ahead of you!
 
-[Test PrestaShop 1.7.0.0 alpha 3](https://www.prestashop.com/fr/versions-developpeurs){: .btn .btn-lg .btn-success}
+[Test PrestaShop 1.7.0.0 alpha 3](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 
@@ -119,7 +119,7 @@ We tried to gather the most important ones, so you have a clear idea of what sti
 
 So cheers for the first public glance at the brand new 1.7, made with <3 by our team and our wonderful Community. It’s not fully baked yet, but we’re very proud of the work done.
 
-[Test PrestaShop 1.7.0.0 alpha 3](https://www.prestashop.com/fr/versions-developpeurs){: .btn .btn-lg .btn-success}
+[Test PrestaShop 1.7.0.0 alpha 3](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 We’ll closely monitor your feedback and are eager to hear from you!

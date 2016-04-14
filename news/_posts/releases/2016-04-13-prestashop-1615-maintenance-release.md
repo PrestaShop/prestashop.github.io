@@ -24,7 +24,7 @@ We hope you enjoy this new patch release!
 
 ### The changes
 
-For a full list of changes, [see the list of pull requests merged into the 1.6.1.x branch since version 1.6.1.4](ttps://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr+base%3A1.6.1.x+is%3Aclosed+merged%3A%3E2016-01-07).
+For a full list of changes, [see the list of pull requests merged into the 1.6.1.x branch since version 1.6.1.4](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr+base%3A1.6.1.x+is%3Aclosed+merged%3A%3E2016-01-07).
 
 Here are some of the most notable changes that this version brings:
 

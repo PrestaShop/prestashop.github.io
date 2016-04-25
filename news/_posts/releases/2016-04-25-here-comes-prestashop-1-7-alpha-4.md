@@ -86,7 +86,7 @@ Here are the main improvements this new alpha version brings:
 
 
 ### Core
-- PHP 7 support ([#5439](https://github.com/PrestaShop/PrestaShop/pull/5439)). Thank you @firstred!
+- Added PHP 7 tests on Travis CI [#5439](https://github.com/PrestaShop/PrestaShop/pull/5439). Thank you @firstred!
 - Introduced a new `dump` function from Symfony VarDumper component [#5381](https://github.com/PrestaShop/PrestaShop/pull/5381) by @Shine-neko
 - Disallow indexing of admin pages [#5357](https://github.com/PrestaShop/PrestaShop/pull/5357). Thank you @firstred!
 - Updated SwiftMailer to the latest version [#5233](https://github.com/PrestaShop/PrestaShop/pull/5233). Thank you @firstred!

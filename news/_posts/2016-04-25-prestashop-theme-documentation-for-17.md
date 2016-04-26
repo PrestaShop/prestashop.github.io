@@ -32,7 +32,7 @@ As of today, the documentation is a collection of text files, without any render
 
 It includes [JSON files](https://github.com/PrestaShop/docs/tree/master/themes/templates/datasets/side-wide), which hold an example of the data passed to the templates like: `$customer`, `$page`, `$breadcrumb`, `$cart`... These data will be irrevocable when PrestaShop 1.7 final is released, and they will be maintained during the whole 1.7 life cycle. **Trust these datasets**.
 
-<img style="border: 1px solid #CCC; padding: 10px;" src="/assets/images/2016/04/doc-sphynx-screenshot.png">
+<img style="border: 1px solid #CCC; padding: 10px;" src="/assets/images/2016/04/docs-repo.png">
 
 
 ## Adopting Sphynx and reStructuredText
@@ -42,7 +42,7 @@ We decided to move from _Atlassian Confluence_ to _Sphynx_ (at least for the dev
 > reStructuredText is a lightweight markup language designed to be both (a) processable by documentation-processing software such as Docutils, and (b) easily readable by human programmers.
 > -- [Wikipedia](https://en.wikipedia.org/wiki/ReStructuredText))
 
-We now have a bunch of nice reStructuredText files, so we can enjoy the power of Git for our documentation: compared to the Confluence system, it's much more flexible. 
+We now have a bunch of nice reStructuredText files, so we can enjoy the power of Git for our documentation: compared to the Confluence system, it's much more flexible.
 
 > Sphinx converts reStructuredText files into HTML websites and other formats including PDF, EPub and man.
 >

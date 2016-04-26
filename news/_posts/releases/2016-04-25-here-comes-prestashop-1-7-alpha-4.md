@@ -50,11 +50,11 @@ Here are the main improvements this new alpha version brings:
 
 ### Front office
 - Fix invoice address not being asked in checkout [#5305](https://github.com/PrestaShop/PrestaShop/pull/5305) by @jtabet
-- Checkout - displays voucher value in the shopping cart [#5312](https://github.com/PrestaShop/PrestaShop/pull/5312) by @Shine-neko
-- Fix warnings in the quick-view  [#5317](https://github.com/PrestaShop/PrestaShop/pull/5317) by @Shine-neko
+- Checkout - displays voucher value in the shopping cart [#5312](https://github.com/PrestaShop/PrestaShop/pull/5312) by @shine-neko
+- Fix warnings in the quick-view  [#5317](https://github.com/PrestaShop/PrestaShop/pull/5317) by @shine-neko
 - Fix Prices drop, Best sales & New products display [#5351](https://github.com/PrestaShop/PrestaShop/pull/5351) by @maximebiloe
 - Display tax in shopping cart by default [#5353](https://github.com/PrestaShop/PrestaShop/pull/5353) by @maximebiloe
-- Display product image in confirmation order [#5361](https://github.com/PrestaShop/PrestaShop/pull/5361) by @Shine-neko
+- Display product image in confirmation order [#5361](https://github.com/PrestaShop/PrestaShop/pull/5361) by @shine-neko
 - Fix checkout behavior when simplified URLs are disabled [#5376](https://github.com/PrestaShop/PrestaShop/pull/5376) by @maximebiloe
 - Form error messages are now displayed in the website language (only English for now), instead of browser language  [#5399](https://github.com/PrestaShop/PrestaShop/pull/5399) by @maximebiloe
 - Improved the legal compliancy [#5394](https://github.com/PrestaShop/PrestaShop/pull/5394), [#5445](https://github.com/PrestaShop/PrestaShop/pull/5445). Thank you @paeddl!
@@ -76,22 +76,22 @@ Here are the main improvements this new alpha version brings:
 
 ### Modules page
 
-- The "enable/disable on mobile" action is back! [#5319](https://github.com/PrestaShop/PrestaShop/pull/5319) by @Quetzacoalt91
-- Improve the loading time of the module catalog [#5368](https://github.com/PrestaShop/PrestaShop/pull/5368) by @Quetzacoalt91
-- Modules to be configured are now displaying [#5395](https://github.com/PrestaShop/PrestaShop/pull/5395) by @Quetzacoalt91
-- Improved Module class to handle more potential issues [#5397](https://github.com/PrestaShop/PrestaShop/pull/5397) by @Quetzacoalt91
+- The "enable/disable on mobile" action is back! [#5319](https://github.com/PrestaShop/PrestaShop/pull/5319) by @quetzacoalt91
+- Improve the loading time of the module catalog [#5368](https://github.com/PrestaShop/PrestaShop/pull/5368) by @quetzacoalt91
+- Modules to be configured are now displaying [#5395](https://github.com/PrestaShop/PrestaShop/pull/5395) by @quetzacoalt91
+- Improved Module class to handle more potential issues [#5397](https://github.com/PrestaShop/PrestaShop/pull/5397) by @quetzacoalt91
 - Fix zip module installation for complex modules [#5380](https://github.com/PrestaShop/PrestaShop/pull/5380) by @mickaelandrieu
-- Improved list display [#5371](https://github.com/PrestaShop/PrestaShop/pull/5371). Thank you @ShepherdV8!
-- Modules scoring is now displayed [#5405](https://github.com/PrestaShop/PrestaShop/pull/5405) by @Quetzacoalt91
+- Improved list display [#5371](https://github.com/PrestaShop/PrestaShop/pull/5371). Thank you @shepherdv8!
+- Modules scoring is now displayed [#5405](https://github.com/PrestaShop/PrestaShop/pull/5405) by @quetzacoalt91
 
 
 ### Core
 - Added PHP 7 tests on Travis CI [#5439](https://github.com/PrestaShop/PrestaShop/pull/5439). Thank you @firstred!
-- Introduced a new `dump` function from Symfony VarDumper component [#5381](https://github.com/PrestaShop/PrestaShop/pull/5381) by @Shine-neko
+- Introduced a new `dump` function from Symfony VarDumper component [#5381](https://github.com/PrestaShop/PrestaShop/pull/5381) by @shine-neko
 - Disallow indexing of admin pages [#5357](https://github.com/PrestaShop/PrestaShop/pull/5357). Thank you @firstred!
 - Updated SwiftMailer to the latest version [#5233](https://github.com/PrestaShop/PrestaShop/pull/5233). Thank you @firstred!
 
-This alpha 4 version was made possible by the hard work of the PrestaShop Core Team, with additional commits by the following contributors: @firstred (responsible for no less than 8 contributions already accepted the last 3 weeks, thank you!), @paeddl and @ShepherdV8. Thank you!
+This alpha 4 version was made possible by the hard work of the PrestaShop Core Team, with additional commits by the following contributors: @firstred (responsible for no less than 8 contributions already accepted the last 3 weeks, thank you!), @paeddl and @shepherdv8. Thank you!
 
 
 

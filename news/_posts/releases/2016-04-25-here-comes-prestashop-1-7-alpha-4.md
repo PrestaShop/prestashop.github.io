@@ -20,7 +20,7 @@ Three weeks ago [we released PrestaShop 1.7.0.0 alpha 3](http://build.prestashop
 
 
 <div class="alert alert-important" role="alert">
-While this alpha version is not ready for production stores, it is a great base for us to get your feedbacks.
+While this alpha version is not ready for production stores, it is a great basis for us to get your feedbacks.
 
 We’re are still working on some features and know some parts are broken. <a href="http://build.prestashop.com/news/prestashop-1-7-alpha-3-is-here/#whats-in-progress">Check out the list in this article</a>.
 </div>
@@ -64,7 +64,7 @@ Here are the main improvements this new alpha version brings:
 ### Back office
 
 - TinyMCE improvements on style and loading perfs [#5420](https://github.com/PrestaShop/PrestaShop/pull/5420) by @tchauviere
-- Added a features to be able to remove birthdate in subscription form [#5343](https://github.com/PrestaShop/PrestaShop/pull/5343). Thank you @firstred!
+- Added a feature to be able to remove birthdate in subscription form [#5343](https://github.com/PrestaShop/PrestaShop/pull/5343). Thank you @firstred!
 
 
 ### Product page
@@ -76,7 +76,7 @@ Here are the main improvements this new alpha version brings:
 
 ### Modules page
 
-- The 'enable/disable on mobile' action is back! [#5319](https://github.com/PrestaShop/PrestaShop/pull/5319) by @Quetzacoalt91
+- The "enable/disable on mobile" action is back! [#5319](https://github.com/PrestaShop/PrestaShop/pull/5319) by @Quetzacoalt91
 - Improve the loading time of the module catalog [#5368](https://github.com/PrestaShop/PrestaShop/pull/5368) by @Quetzacoalt91
 - Modules to be configured are now displaying [#5395](https://github.com/PrestaShop/PrestaShop/pull/5395) by @Quetzacoalt91
 - Improved Module class to handle more potential issues [#5397](https://github.com/PrestaShop/PrestaShop/pull/5397) by @Quetzacoalt91
@@ -119,7 +119,7 @@ We tried to gather the most important ones, so you have a clear idea of what sti
 ### Back office
 
 * Some images are broken for now, some buttons and tab could behave in a weird way, and you might stumble on other weird artefacts. We know about this, and they will all be fixed in time.
-* We’re still working on the responsiveness of the back-office, and 13” inches screens could particularly be affected.
+* We’re still working on the responsiveness of the back-office, and 13” screens could particularly be affected.
 
 
 ### Modules page

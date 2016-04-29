@@ -43,7 +43,7 @@ So we conducted a card-sorting experience with the help of the User Club members
 
 From there, we tried to rearrange the sidebar to reflect both what merchants would use the most, while injecting some logic in all this. For instance, to manage your contact information, you previously had to go on both the "Store Contacts" and the "Contacts" page. Hence, two different sections for a single action. Now it’s together in one place!
 
-So hopefully you’ll see what we tried to do here: make it easier to find what you want to do. And when I say we, the whole team took part in this debate (for yes, there were debates!): UX designers, contentn and product managers too.
+So hopefully you’ll see what we tried to do here: make it easier to find what you want to do. And when I say we, the whole team took part in this debate (for yes, there were debates!): UX designers, content and product managers too.
 
 
 ## Introducing a new wording

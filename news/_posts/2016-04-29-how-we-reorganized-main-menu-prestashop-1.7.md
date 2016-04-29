@@ -19,7 +19,7 @@ In short:
 
 * New sections were created
 * A new wording has been introduced
-* The location of some pages were changed
+* The location of some pages was changed
 * Other pages were gathered as tabs of a main page
 
 
@@ -59,7 +59,7 @@ In addition to actually reorganizing the menu, we thought some menus deserved a 
 | Attachments | Files | Attachments aren’t always well understood. With a renaming and proper indications within the software, we hope this is now clearer (= adding files to your product page).
 | Price Rules | Discounts | We’re not really getting rid of price "Rules" as you’ll still find “Catalog Price Rules” and “Cart Rules”, but we wanted to give it a name easier to grasp for first-time users.
 | Themes | Theme & Logo  | It’s not much, but the way to change the logo wasn’t easy to find, and it’s something merchants want to do as soon as they start their shop. Now it should be even quicker to customize it!
-| CMS | Pages | Well... We’re not exactly WordPress, or Drupal — and we don’t plan to be. What this feature allows you to do is to create pages for your static content (About,T&C, etc.). So here you go, that’s where you can create and manage your pages.
+| CMS | Pages | Well... We’re not exactly WordPress, or Drupal — and we don’t plan to be. What this feature allows you to do is to create pages for your static content (About, T&C, etc.). So here you go, that’s where you can create and manage your pages.
 | Employees | Team | If you work with employees, then you’re a team :) A little renaming to give it a friendlier touch.
 | CSV Import | Import | Good news! In version 1.7 you can import more formats - no need to be CSV-specific anymore!
 

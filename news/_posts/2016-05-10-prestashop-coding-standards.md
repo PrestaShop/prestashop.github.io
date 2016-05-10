@@ -40,6 +40,8 @@ Some noteworthy rules:
 * Add a comma after each array item in a multi-line array, even after the last one.
 
 ```php
+<?php
+
 $defaultOptions = array(
     'some_default' => 'values',
     'another_default' => 'more values',

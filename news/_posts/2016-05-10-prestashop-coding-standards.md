@@ -31,7 +31,7 @@ At the same time, to make it easier for you to contribute, we also updated our c
 
 ### PHP
 
-As you already know if you have read [this article](http://build.prestashop.com/news/prestashop-1-7-and-symfony/), we chose to integrate the Symfony framework into PrestaShop. So, what's more natural than to follow their coding standards? It comes as a complement of the PSR standards ([PSR-0](http://www.php-fig.org/psr/psr-0/), [PSR-1](http://www.php-fig.org/psr/psr-1/), [PSR-2](http://www.php-fig.org/psr/psr-2/) and [PSR-4](http://www.php-fig.org/psr/psr-4/)).
+As you already know if you have read [this article](http://build.prestashop.com/news/prestashop-1-7-and-symfony/), we chose to integrate the Symfony framework into PrestaShop. So, what's more natural than to follow [their coding standards](http://symfony.com/doc/current/contributing/code/standards.html)? It comes as a complement of the PSR standards ([PSR-0](http://www.php-fig.org/psr/psr-0/), [PSR-1](http://www.php-fig.org/psr/psr-1/), [PSR-2](http://www.php-fig.org/psr/psr-2/) and [PSR-4](http://www.php-fig.org/psr/psr-4/)).
 
 Some noteworthy rules:
 

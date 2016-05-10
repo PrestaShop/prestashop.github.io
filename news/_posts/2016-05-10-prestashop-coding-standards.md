@@ -39,7 +39,7 @@ Some noteworthy rules:
 * <img src="/assets/images/2016/05/yoda.gif" style="display:inline;width:24px;vertical-align:top;"> [Yoda conditions](https://en.wikipedia.org/wiki/Yoda_conditions) you should use.
 * Add a comma after each array item in a multi-line array, even after the last one.
 
-{% highlight php startinline=true %}
+```php
 $defaultOptions = array(
     'some_default' => 'values',
     'another_default' => 'more values',
@@ -48,7 +48,7 @@ $defaultOptions = array(
 if (true === isset($defaultOptions['some_default'])) {
     return;
 }
-{% endhighlight %}
+```
 
 More details and a complete example can be found on [Symfony documentation](http://symfony.com/doc/current/contributing/code/standards.html).
 

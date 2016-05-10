@@ -17,7 +17,7 @@ For long, we used our own coding standards. We then switched to PSR-2 last year.
 
 Because we want to have an always better codebase, clearer, easier to read and to maintain, we have decided to follow some more established standards for the languages used in PrestaShop.
 
-This means that we are updating our current standards requirements for languages that already have one, or selecting a standard for the languages which did not have one in use yet.
+This means that we are updating our current standards requirements for languages that already have some, or selecting a standard for the languages which did not have any in use yet.
 This means that we now have clear standards and norms for PHP, JavaScript, HTML, CSS, pull requests and commits.
 
 We already see your face, don't panic :smile: These standards are pretty common and natural.
@@ -119,7 +119,7 @@ input[type="text"] {
 
 ### Smarty / Twig
 
-PrestaShop 1.7 uses both the Smarty and Twig template engine. Because they are mostly used to generate HTML, we ask that Smarty/Twig code be written following the HTML standards above -- as well as the one used by SensioLabs for Twig.
+PrestaShop 1.7 uses both the Smarty and Twig template engine. Since those are mostly used to generate HTML, we expect the Smarty/Twig code to comply with the HTML standards above -- as well as the one used by SensioLabs for Twig.
 
 Some noteworthy rules:
 
@@ -158,7 +158,7 @@ To make the commits context easier to read and hassle-free, we have chosen to pr
 | BO | if the changes impact the back office |
 | IN | if the changes impact the installer |
 | WS | if the changes impact the web service |
-| CO | if the changes impact the core | 
+| CO | if the changes impact the core |
 | TE | if the changes impact the tests |
 
 Examples:
@@ -184,7 +184,7 @@ Find more information and all the details on [our documentation](http://doc.pres
 
 You can (and should :wink:) already use these standards. We will not reject your contributions for now if you do not respect them, there will be a transitional phase. We will ask you to respect these standards from 1st July, 2016 onward.
 
-Don't be worry, during that transition phase, we will gladly help you and indicate you what you could improve for the next time.
+Don't worry, during that transition phase, we will gladly help you and indicate you what you could improve for the next time.
 
 ### In which cases do I have to use those standards?
 

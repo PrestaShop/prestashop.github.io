@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PrestaShop Coding Standards"
-subtitle: "How to best contribute code to PrestaShop project"
+subtitle: "How to best contribute code to the PrestaShop project"
 date:   2016-05-10 03:00:00
 author: [ maximebiloe ]
 icon: icon-code

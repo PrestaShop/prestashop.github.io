@@ -33,7 +33,7 @@ At the same time, to make it easier for you to contribute, we also updated our c
 
 As you already know if you have read [this article](http://build.prestashop.com/news/prestashop-1-7-and-symfony/), we chose to integrate the Symfony framework into PrestaShop. So, what's more natural than to follow their coding standards? It comes as a complement of the PSR standards ([PSR-0](http://www.php-fig.org/psr/psr-0/), [PSR-1](http://www.php-fig.org/psr/psr-1/), [PSR-2](http://www.php-fig.org/psr/psr-2/) and [PSR-4](http://www.php-fig.org/psr/psr-4/)).
 
-Some significant points:
+Some noteworthy rules:
 
 * Use camelCase, not_underscores, for variable names, function names, method names, and arguments names.
 * <img src="/assets/images/2016/05/yoda.gif" style="display:inline;width:24px;vertical-align:top;"> [Yoda conditions](https://en.wikipedia.org/wiki/Yoda_conditions) you should use.
@@ -54,9 +54,9 @@ More details and a complete example can be found on [Symfony documentation](http
 
 ### JavaScript
 
-For our JavaScript code, we chose to follow the well-detailed and documented [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript). It respects the ECMAScript 6 style, and Babel will transpile it into understandable scripts for the browsers.
+For our JavaScript code, we chose to follow the well-detailed and documented [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript). Code should be written in ECMAScript 6 and Babel will transpile it into ECMAScript 5 for a wider browser compatibility.
 
-Some significant points:
+Some noteworthy rules:
 
 * Always use semicolons at the end of an instruction.
 * Use soft tabulations with two spaces to indent.
@@ -90,7 +90,7 @@ When you are writing HTML code, if your line is longer than 120 characters, we h
 >
 {% endhighlight %}
 
-Some significant points:
+Some noteworthy rules:
 
 * HTML
   * Use soft tabulations with two spaces to indent.
@@ -121,7 +121,7 @@ input[type="text"] {
 
 PrestaShop 1.7 uses both the Smarty and Twig template engine. Because they are mostly used to generate HTML, we ask that Smarty/Twig code be written following the HTML standards above -- as well as the one used by SensioLabs for Twig.
 
-Some significant points:
+Some noteworthy rules:
 
 * Use soft tabulations with two spaces to indent.
 * Use single quotes to surround strings.
@@ -142,7 +142,7 @@ Some significant points:
 
 In the past, we used to have only one commit by pull request. This was a bad habit. We now require contributors to make **atomic commits**, so you will surely have more than one commit in a single pull request. This will be helpful to review, cherry-pick or revert (we hope to never have to do that :wink: ) the changes.
 
-**What is an atomic commit?**
+**What's an atomic commit?**
 It means that the commit's purpose is **one, and only one, complete fix or change**. Typically, ask yourself if what you are doing is one or several tasks. Do not hesitate to use "git add -p ..." (details [here](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging)) if you have made several changes in the same file but not all those changes are meant to be in the current commit.
 
 When you are modifying CSS and/or JavaScript files, we invite you to make a separate commit for the compiled files. If you want to know more about compiling assets, you can look at [our documentation](https://github.com/PrestaShop/docs/blob/master/themes/assets/assets.rst).
@@ -152,12 +152,14 @@ The commit name should be as unique and recognizable as your commit itself.
 
 To make the commits context easier to read and hassle-free, we have chosen to prefix them with two letters depending on the modification scope:
 
-* "FO" if the change is in the front-office
-* "BO" if the change is in the back-office
-* "IN" if the change is in the installer
-* "WS" if the change is in web service
-* "CO" if the change impacts the core
-* "TE" if the change impacts the tests
+| Code | Scope |
+|:----:|:------|
+| FO | if the changes impact the front office |
+| BO | if the changes impact the back office |
+| IN | if the changes impact the installer |
+| WS | if the changes impact the web service |
+| CO | if the changes impact the core | 
+| TE | if the changes impact the tests |
 
 Examples:
 

@@ -52,7 +52,13 @@ if (true === isset($defaultOptions['some_default'])) {
 }
 ```
 
-More details and a complete example can be found on [Symfony documentation](http://symfony.com/doc/current/contributing/code/standards.html).
+More details and a complete example can be found in the [Symfony documentation](http://symfony.com/doc/current/contributing/code/standards.html).
+
+<div class="alert alert-note" role="alert">
+Yes, we are aware that Yoda conditions can feel awkward at first -- even though big open source projects such as <a href="http://symfony.com/doc/current/contributing/code/standards.html#structure">Symfony</a> or  <a href="https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/#yoda-conditions">WordPress</a> have been using it successfuly for years.
+
+So why are we using it? Instead of debating for hours about everyone's preferences, we chose to use the Symfony Coding Standards as-is, and Yoda conditions part of it. Thank you for using them from now one.
+</div>
 
 ### JavaScript
 
@@ -169,7 +175,7 @@ Examples:
 * CO: Retrieve all required data for notifications
 * BO: JS for notifications in new BO theme
 * FO: Fix voucher layout in cart
-* TE: PHP 7 is no longer an option
+* TE: PHP 7 is now mandatory
 
 ### Pull Requests
 
@@ -187,10 +193,20 @@ Find more information and all the details on [our documentation](http://doc.pres
 
 You can (and should :wink:) already use these standards. We will not reject your contributions for now if you do not respect them, there will be a transitional phase. We will ask you to respect these standards from 1st July, 2016 onward.
 
-Don't worry, during that transition phase, we will gladly help you and indicate you what you could improve for the next time.
+You don't have to rewrite all your code! We simply ask you to respect these standards for your next contributions.
+
+Don't worry, during that transition phase, we will gladly help you and indicate you what you could be improved next time you contribute.
 
 ### In which cases do I have to use those standards?
 
 All the new files and new contributions will have to respect them. You will not have to change the entire file to the new standards, but you must not submit new contributions with old standards.
 
 You are now ready to contribute and to help us to improve PrestaShop. If you have any questions about a pull request you want to make, or need help to contribute, do not hesitate to contact us on our [dedicated Gitter channel](https://gitter.im/PrestaShop/GitHub-Git-PullRequest).
+
+### How can I use these in my IDE of choice?
+
+We created an [EditorConfig](http://editorconfig.org/) file to help you! It is located at the root of the PrestaShop repository: [you can download it here](https://github.com/PrestaShop/PrestaShop/blob/develop/.editorconfig).
+
+It's particularly useful when having to handle different tab sizes depending on the file type.
+
+Several IDEs (WebStorm, BBEdit, etc.) have native support for EditorConfig files. Most other IDEs (Eclipse, Atom, SublimeText, PhpStorm, etc.) can support EditorConfig files through a free plugin. [See here for more information](http://editorconfig.org/#download).

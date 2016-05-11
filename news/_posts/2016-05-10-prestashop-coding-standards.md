@@ -81,7 +81,8 @@ Regarding the CSS and HTML codebase, because we have integrated Bootstrap 4 both
 When you are writing HTML code, if your line is longer than 120 characters, we have chosen to do a line break after each attributes with an indentation. For example, it will look like this:
 
 {% highlight html startinline=true %}
-<img class="test"
+<img
+  class="test"
   id="..."
   name="..."
   data="..."

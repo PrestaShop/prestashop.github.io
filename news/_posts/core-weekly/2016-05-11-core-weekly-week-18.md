@@ -14,13 +14,13 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 
 ## Milestones
 
-The work being done on version 1.7.0.0 is still going strong (even though last week a short week in France, due to Ascension Day on Thursday). 
+The work being done on version 1.7.0.0 is still going strong (even though last week was a short one in France, due to Ascension Day on Thursday). 
 
 Want to help things go faster? There are several ways: 
 
  * [Test the latest alpha version](http://build.prestashop.com/news/here-comes-prestashop-1-7-alpha-4/) (or better, test [the current development version, straight from GitHub](https://github.com/PrestaShop/PrestaShop));
  * [Report issues on the Forge](http://forge.prestashop.com/secure/CreateIssue!default.jspa?selectedProjectId=11322&issuetype=1) (or [confirm issues that are already listed](http://forge.prestashop.com/browse/BOOM-738?jql=project%20%3D%20BOOM%20AND%20created%3E%3D-1w%20ORDER%20BY%20created%20DESC) - use the search engine!); 
- * Fix issues by [submitting a pull request](https://github.com/PrestaShop/PrestaShop/pulls) (or confirm that an submitted pull request does indeed fix the presented issue); 
+ * Fix issues by [submitting a pull request](https://github.com/PrestaShop/PrestaShop/pulls) (or confirm that a submitted pull request does indeed fix the presented issue); 
  * Help improve the [1.7 Theme Development doc](https://github.com/PrestaShop/docs) (yes, it is very sparse at the moment).
 
 You can find an up-to-date thread about the 1.7 development [in the forum](https://www.prestashop.com/forums/topic/480580-want-to-know-more-about-17/).<br/>

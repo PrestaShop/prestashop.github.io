@@ -20,9 +20,10 @@ The development team is hard at work on PrestaShop 1.7, making sure the first be
 You can <a href="https://www.prestashop.com/en/developers-versions">download and test PrestaShop 1.7.0.0 alpha 4 right now</a>!
 </p> 
 
-<p>This FAQ gives you the current state of 1.7, not the final one, and we're still not in beta :)
+<p>This FAQ gives you the current state of 1.7, not the final one, and we're still not in beta :)</p>
 
-Current version of this FAQ: 1.3. The changelog is at the bottom of the FAQ.</p>
+<p>Current version of this FAQ: 1.3. <br/>
+The changelog is at the bottom of the FAQ.</p>
 </div>
 
 * TOC

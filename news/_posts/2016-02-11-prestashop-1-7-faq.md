@@ -25,8 +25,7 @@ You can <a href="https://www.prestashop.com/en/developers-versions">download and
 Current version of this FAQ: 1.3. The changelog is at the bottom of the FAQ.</p>
 </div>
 
-**Table of Content**
-
+* TOC
 {:toc}
 
 

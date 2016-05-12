@@ -371,7 +371,7 @@ In the meantime, we advise you to dive into the code of this 1.7-specific module
   <li>1.2 (2016-04-04): 
     <ul>
       <li>Typos here and there.</li>
-      <li>Alpha 3 publicly released! [Test it now](http://build.prestashop.com/news/prestashop-1-7-alpha-3-is-here/)!</li>
+      <li>Alpha 3 publicly released! <a href="http://build.prestashop.com/news/prestashop-1-7-alpha-3-is-here/">Test it now</a>!</li>
       <li>Added reference/links to alpha 3 here and there.</li>
       <li>Added "What are the benefits of 1.7 for developers?" question.</li>
       <li>Added "Why is not named PrestaShop 2.0?" question.</li>
@@ -386,8 +386,8 @@ In the meantime, we advise you to dive into the code of this 1.7-specific module
   </li>
   <li>1.3 (2016-05-12): 
     <ul>
-      <li>Alpha 4 publicly released! [Test it now](http://build.prestashop.com/news/here-comes-prestashop-1-7-alpha-4/)!</li>
-      <li>Added link to current draft of [Designer documentation](https://github.com/PrestaShop/docs).</a>
+      <li>Alpha 4 publicly released! <a href="(http://build.prestashop.com/news/here-comes-prestashop-1-7-alpha-4/">Test it now</a>!</li>
+      <li>Added link to current draft of <a href="https://github.com/PrestaShop/docs">Designer documentation</a>.
       <li>Added an automatic Table of Contents, at last!</li>
       <li>Made a bit of rewording, details and typo corrections here and there.</li>
     </ul>

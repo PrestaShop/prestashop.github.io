@@ -36,7 +36,7 @@ For example, the Terms & Conditions checkbox is now displayed with the payment o
 
 That way, we have more control of the layout of payment options.
 
-To help you to create or adapt your payment modules, we have reworked bankwire and developed **[paymentexample](https://github.com/PrestaShop/paymentexample)**. This module is an example of what you can do. It implements 4 types of payment modules, working:
+To help you to create or adapt your payment modules, we have reworked the [bankwire](https://github.com/PrestaShop/bankwire/tree/feat/starter-theme) and developed the **[paymentexample](https://github.com/PrestaShop/paymentexample)** module. This new module is an example of what you can do. It implements 4 types of payment:
 
 * offline: call a simple URL, like bankwire or cheque
 

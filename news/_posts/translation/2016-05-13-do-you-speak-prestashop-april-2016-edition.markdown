@@ -15,8 +15,8 @@ Here is the latest report to inform you of what has been going on [PrestaShop tr
 
 ### Updated translations: it happened!
 
-Good news! Last week we updated the language packs, so they now include the newest translations from Crowdin.
-It means when you update the languages in your shop, you can now benefit from some recent translations from Crowdin. That's big news for Estonian, Greek, Slovak, and Vietnamese for instance, as they made some huge progress recently.
+Good news! Last week we updated the 1.6 language packs, so they now include the newest translations from Crowdin.
+This means that when you update the languages in your shop, you can now benefit from some recent translations from Crowdin. That's big news for Estonian, Greek, Slovak, and Vietnamese for instance, as they made some huge progress recently.
 
 The not-so-good news is that the automatic update process is still not working... For now we'll update the language packs manually, so the updates won't be regular for a while.
 We're fully aware that this NOT ideal, but our resources are dedicated to the development of a whole new system, working for both PrestaShop 1.6 and 1.7 versions. It should be implemented once the 1.7 strings are imported to Crowdin, so expect more news about this in the coming months.
@@ -28,7 +28,7 @@ For this reason, the 1.6.1.4 folder is no longer. You can keep on working as usu
 
 ### Translator guide
 
-We're currently working on a translator guide to:
+We're currently working on a translator guide so that we can:
 
 * better welcome new translators to the project
 * answer any question you may have when translating PrestaShop

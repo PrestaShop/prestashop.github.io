@@ -10,7 +10,7 @@ tags:
 - event
 ---
 
-The yearly [PrestaShop Day](http://www.prestashopday.com/) event is coming to Paris, France on Thursday June 2nd, and contributors are invited to join in on the fun with two events: a Contributor Night in the PrestaShop office on the day before, and a Community Barcamp within the event's wall. Let's meet and exchange!
+The yearly [PrestaShop Day](http://www.prestashopday.com/) event is coming to Paris, France on Thursday June 2nd, and contributors are invited to join in on the fun with two events: a **Contributor Night** in the PrestaShop office on the day before, and a **Community Barcamp** within the event's walls. Let's meet and exchange!
 
 _Because the PrestaShop Day event happens in France and is primarily in French, this article is written in both French and English. The English version can be found after the French one._
 
@@ -28,14 +28,14 @@ La veille du PrestaShop Day (soit le mercredi 1er juin 2016), l'équipe de Prest
 Rejoignez-nous pour une soirée où vous pourrez apprendre à contribuer à la documentation, au code ou la traduction, par le biais de contributions open source !<br/>
 Une partie de l'équipe PrestaShop sera présente pour vous accompagner en tant que mentor, avec encouragements et bons conseils.
 
-Tout le monde peut participer à la documentation ou à la traduction !<br/>
+Tout le monde peut participer à la documentation ou à la traduction -- tant que vous savez écrire correctement ;)<br/>
 Côté code, il faudra bien sûr déjà s'y connaître en PrestaShop 1.7 (et donc en PHP/MySQL et autres technologies), et idéalement avoir déjà contribué au code, mais chaque contribution compte, même la plus petite !
 
 Les mentors de PrestaShop seront présents pour vous accompagner :
 
  * Correction de bugs ;
  * Vérification de pull requests / tickets Forge ;
- * Écriture / correction de la documentation utilisateur/module/theme ;
+ * Écriture/correction de la documentation utilisateur/module/theme ;
  * Traduction du logiciel ou de la documentation.
  
 [Inscrivez-vous à cette première soirée de contribution](https://docs.google.com/a/prestashop.com/forms/d/1O60GhRFICbnt3TxZ3Hrne-TcHIoeEDLATcVD7XXNeYg/viewform) !

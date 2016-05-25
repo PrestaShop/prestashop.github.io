@@ -17,8 +17,8 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 Come and meet us in Paris on June 1st & 2nd!<br/>
 We're organizing [two events](http://build.prestashop.com/news/contributor-night-barcamp-prestashop-day/) along the PrestaShop Day:
 
- * June 1st: a *contributor night* in our Paris office. Want to contribute or learn how to contribute? [Register here](https://docs.google.com/a/prestashop.com/forms/d/1O60GhRFICbnt3TxZ3Hrne-TcHIoeEDLATcVD7XXNeYg/viewform)!
- * June 2nd: a *community barcamp* within the walls of the PSDay. Have something to share about PrestaShop or e-commerce? [Let us know here](https://docs.google.com/a/prestashop.com/forms/d/12hOjfnGaFuzdlD_BIpm3bU_2Qf6aBYbdUgYNN4SBEvI/viewform)!
+ * June 1st: a **contributor night** in our Paris office. Want to contribute or learn how to contribute? [Register here](https://docs.google.com/a/prestashop.com/forms/d/1O60GhRFICbnt3TxZ3Hrne-TcHIoeEDLATcVD7XXNeYg/viewform)!
+ * June 2nd: a **community barcamp** within the walls of the PSDay. Have something to share about PrestaShop or e-commerce? [Let us know here](https://docs.google.com/a/prestashop.com/forms/d/12hOjfnGaFuzdlD_BIpm3bU_2Qf6aBYbdUgYNN4SBEvI/viewform)!
 
 See you there!
 

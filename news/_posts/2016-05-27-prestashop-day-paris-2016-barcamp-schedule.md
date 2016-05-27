@@ -29,6 +29,8 @@ Quelques jours seulement après avoir lancé un appel à suggestions, voici le p
 
 Vous voulez participer à ces sessions de discussions ouvertes et de partage de connaissances ? Il est encore de prendre votre [billet pour la PrestaShop Day Paris](http://www.eventbrite.com/e/billets-prestashop-day-paris-24083434200?aff=Build) !
 
+Consultez également le [programme très complet de cette journée dédiée à l'e-commerce](http://www.prestashopday.com/) ([ici au format PDF](http://www.prestashopday.com/wp-content/uploads/pdf/Plan_programme_2016.pdf)).
+
 Et souvenez-vous que vous pouvez toujours vous inscrire pour la [soirée de contribution](http://build.prestashop.com/news/contributor-night-barcamp-prestashop-day/) chez PrestaShop à Paris, la veille de la PrestaShop Day Paris !
 
 À la semaine prochaine !

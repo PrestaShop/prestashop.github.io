@@ -15,7 +15,7 @@ We'd like to thank for the numerous suggestions we received: we were able to bui
 
 <i>(Because the PrestaShop Day Paris event (and thus the barcamp) will be entirely in French, so will the rest of this article. Thank you for your understanding.)</i>
 
-Quelques jours seulement après avoir lancé un appel à suggestions, voici le programme des discussions du barcamp lors de la PrestaShop Day Paris 2016 :
+Quelques jours seulement après avoir lancé un appel à suggestions, voici le programme des discussions du barcamp lors de le PrestaShop Day Paris 2016 :
 
 |         Heure |                            Sujet                            |                                    Discussion menée par                                   |
 |--------------:|:-----------------------------------------------------------:|:-----------------------------------------------------------------------------------------:|
@@ -27,10 +27,10 @@ Quelques jours seulement après avoir lancé un appel à suggestions, voici le p
 | 16h00 - 16h30 |         How to get more people to use PrestaShop<br/>(discussion en anglais)            |                  Konstantinos A. Kogkalidis<br/>ambassadeur PrestaShop en Grèce              |
 | 17h00 - 17h30 |               Comment contribuer à PrestaShop               | Xavier Borderie & Mickaël Andrieu, <br/>Open Source Advocate & évangéliste technique<br/>chez PrestaShop |
 
-Vous voulez participer à ces sessions de discussions ouvertes et de partage de connaissances ? Il est encore de prendre votre [billet pour la PrestaShop Day Paris](http://www.eventbrite.com/e/billets-prestashop-day-paris-24083434200?aff=Build) !
+Vous voulez participer à ces sessions de discussions ouvertes et de partage de connaissances ? Il est encore de prendre votre [billet pour le PrestaShop Day Paris](http://www.eventbrite.com/e/billets-prestashop-day-paris-24083434200?aff=Build) !
 
 Consultez également le [programme très complet de cette journée dédiée à l'e-commerce](http://www.prestashopday.com/) ([ici au format PDF](http://www.prestashopday.com/wp-content/uploads/pdf/Plan_programme_2016.pdf)).
 
-Et souvenez-vous que vous pouvez toujours vous inscrire pour la [soirée de contribution](http://build.prestashop.com/news/contributor-night-barcamp-prestashop-day/) chez PrestaShop à Paris, la veille de la PrestaShop Day Paris !
+Et souvenez-vous que vous pouvez toujours vous inscrire pour la [soirée de contribution](http://build.prestashop.com/news/contributor-night-barcamp-prestashop-day/) chez PrestaShop à Paris, la veille de le PrestaShop Day Paris !
 
 À la semaine prochaine !

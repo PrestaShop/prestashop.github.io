@@ -15,7 +15,7 @@ We'd like to thank for the numerous suggestions we received: we were able to bui
 
 <i>(Because the PrestaShop Day Paris event (and thus the barcamp) will be entirely in French, so will the rest of this article. Thank you for your understanding.)</i>
 
-Quelques jours seulement après avoir lancé un appel à suggestions, voici le programme des discussions du barcamp lors de le PrestaShop Day Paris 2016 :
+Quelques jours seulement après avoir lancé un appel à suggestions, voici le programme des discussions du barcamp lors du PrestaShop Day Paris 2016 :
 
 |         Heure |                            Sujet                            |                                    Discussion menée par                                   |
 |--------------:|:-----------------------------------------------------------:|:-----------------------------------------------------------------------------------------:|

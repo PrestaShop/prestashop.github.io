@@ -23,7 +23,7 @@ We are happy to announce that the development branch of version 1.7 has reached 
 
 <br/>
 
-<iframe width="796" height="448" src="https://www.youtube.com/watch?v=nl2-de2Q4cA?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="796" height="448" src="https://www.youtube.com/embed/nl2-de2Q4cA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 **PrestaShop 1.7.0.0 is still in development**, which means that this Beta release is a great opportunity for you to start working with it before we release a stable version!<br/>
 Go download and install this Beta version as a test store, either on your machine or your web hosting, then play with it – and [give us your feedback](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)!

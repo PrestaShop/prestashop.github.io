@@ -16,7 +16,7 @@ tags:
 
 The first Beta version for PrestaShop 1.7.0.0 is now ready for you to test!
 
-We are happy to announce that the development branch of version 1.7 has reached the Beta state, and we can’t wait to receive your feedback as a merchant, a service provider, a module developer or a theme designer.
+We are happy to announce that the development branch of [version 1.7 has reached the Beta state](https://www.prestashop.com/en/1.7), and we can’t wait to receive your feedback as a merchant, a service provider, a module developer or a theme designer.
 
 [Test PrestaShop 1.7.0.0 Beta 1 now!](https://www.prestashop.com/en/developers-versions ){: .btn .btn-lg .btn-success}
 {: .text-center}

@@ -8,8 +8,14 @@
   name: Overriding PrestaShop
 - slug: module
   name: Modules
+- slug: version
+  name: PrestaShop versions
 - slug: 1.6.1.x
   name: 1.6.1.x Releases
+- slug: alpha
+  name: Alpha releases
+- slug: beta
+  name: Beta releases
 - slug: rc
   name: Release Candidate
 - slug: releases
@@ -37,6 +43,8 @@
 - slug: github
   name: GitHub
 - slug: 1.7
+  name: PrestaShop 1.7
+- slug: 1.7.0.0
   name: PrestaShop 1.7
 - slug: npm
   name: npm

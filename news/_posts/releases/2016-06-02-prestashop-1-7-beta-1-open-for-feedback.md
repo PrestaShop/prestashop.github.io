@@ -30,7 +30,7 @@ Go download and install this Beta version as a test store, either on your machin
 
 <iframe width="796" height="448" src="https://www.youtube.com/embed/1z_AVPxu0uU?rel=0" frameborder="0" allowfullscreen></iframe>
 
-The release of this first Beta version starts a period of intensive testing and debugging for the PrestaShop developers, with the help of the whole community: we need YOU to test this new version of PrestaShop.
+The release of this first Beta version starts a period of intensive testing and debugging for the PrestaShop developers, with the help of the whole community: we need YOU to test this new version of PrestaShop.<br/>
 Change the settings, browse the default theme, check if the modules that you created still work as-is (or with tiny design adaptations), etc. And most importantly, let us know about your findings!
 
 [Test PrestaShop 1.7.0.0 Beta 1 now!](https://www.prestashop.com/en/developers-versions ){: .btn .btn-lg .btn-success}

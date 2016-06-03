@@ -8,7 +8,8 @@ icon: icon-chat-alt
 tags: [1.7]
 ---
 
-The development team is hard at work on PrestaShop 1.7, making sure the first beta contains everything they want it to be. We’re approaching the day when we can release this beta version, and it is therefore high time that we’d answer the questions that we received about this new major version.
+The development team is hard at work on PrestaShop 1.7, making sure the first beta contains everything they want it to be. We’re approaching the day when we can release this beta version, and it is therefore high time that we’d answer the questions that we received about this new major version.<br/>
+<i>Update: [Beta 1 was released on June 2nd, 2016](http://build.prestashop.com/news/prestashop-1-7-beta-1-open-for-feedback/)! [Test is now](https://www.prestashop.com/en/developers-versions)!</i>
 
 <div class="alert alert-note" role="alert">
 <p>Note that this article aims to compile the latest news about 1.7, and will therefore be updated as new information is confirmed.</p>
@@ -17,12 +18,12 @@ The development team is hard at work on PrestaShop 1.7, making sure the first be
 <div class="alert alert-important" role="alert">
 <p>PrestaShop 1.7 is a work in progress, and is currently still under development!
 
-You can <a href="https://www.prestashop.com/en/developers-versions">download and test PrestaShop 1.7.0.0 alpha 4 right now</a>!
+You can <a href="https://www.prestashop.com/en/developers-versions">download and test PrestaShop 1.7.0.0 Beta 1 right now</a>!
 </p> 
 
-<p>This FAQ gives you the current state of 1.7, not the final one, and we're still not in beta :)</p>
+<p>This FAQ gives you the current state of 1.7, not the final one, and we're only in beta :)</p>
 
-<p>Current version of this FAQ: 1.3. <br/>
+<p>Current version of this FAQ: 1.4. <br/>
 The changelog is at the bottom of the FAQ.</p>
 </div>
 
@@ -34,24 +35,24 @@ The changelog is at the bottom of the FAQ.</p>
 
 ### When is version 1.7.0.0 going to be released?
 
-We are aiming to deliver a first beta of 1.7.0.0 in the coming weeks. There is no set date, yet, other than “when it’s ready”.
+The first Beta version was released on June 2nd, 2016. There is no set date for the stable release, yet, other than “when it’s ready”.
 
-The release of the beta version will start a period of heavy testing and debugging phase for the whole community: we will NEED you to test this new version of PrestaShop, to check if your modules still work as-is… and to possibly rewrite your theme using the new, improved theme system.
+The release of the first Beta version starts a period of intensive testing and debugging for the PrestaShop developers, with the help of the whole community: we need YOU to test this new version of PrestaShop. Change the settings, browse the default theme, check if the modules that you created still work as-is (or with tiny design adaptations), etc. And most importantly, let us know about your findings!
 
 
 ### What will be in PS 1.7?
 
-Version 1.7.0.0 is a major release which aims at simplifying the creation of a shop and the path to your first sale. It consists of four main projects:
+Version 1.7.0.0 is the next major release of PrestaShop, following version 1.6.1.0. This major version aims at simplifying the creation of a shop and product, and to facilitate the path to your first sale. It consists of four main projects:
 
-* A new architecture, based on the [Symfony2 framework](https://symfony.com/),
-* A better way to create and maintain a theme:
-  * New starter theme to help designers create a kick-ass theme in a week,
-  * New default theme (classy and efficient).
-* An improved key user journeys in the back office:
-  * Create a new onboarding for beginners,
-  * Simplify the product creation workflow, 
-  * Easily find installed and non-installed modules.
-* An improved administration interface menu structure, focused on getting the most common tasks done faster.
+ * A better way to create and maintain a theme:
+   * A new default theme (classy and efficient).
+   * A starter theme to help designers create a kick-ass theme in half the time it took with PrestaShop 1.6.
+ * Improved key user journeys in the back office:
+   * A new onboarding for beginners.
+   * A simplified product-creation workflow.
+   * Easily find installed and non-installed modules.
+ * An improved administration interface menu structure, focused on getting the most common tasks done faster.
+ * A new architecture, based on the Symfony2 framework.
 
 
 ### Should merchants wait for PrestaShop 1.7.0.0 to create their stores, or create it now with version 1.6?
@@ -63,7 +64,7 @@ Version 1.6 is currently your only stable choice. It will be maintained and supp
 
 In short: **no**, it won't. You _can_ upgrade, but be prepared to have to adapt or replace many of your addons (theme, modules).
 
-Now for the longer answer. PrestaShop 1.7.0.0 is a major version not because it packs a lot of sweet changes, but it is also major in the [SemVer](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/) sense of the term: it breaks some of the backward compatibility. If it didn’t, we probably would have called it 1.6.2.0.
+Now for the longer answer. PrestaShop 1.7.0.0 is a major version not only because it packs a lot of sweet changes, but it is also major in the [SemVer](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/) sense of the term: it breaks some of the backward compatibility. If it didn’t, we probably would have called it 1.6.2.0.
 
 For starters, 1.6 themes will not work on 1.7. That’s a definite. We rewrote the way themes are made, and theme designers will be delighted to find in the new Starter Theme a solid foundation for their own themes. With this foundation, new themes can be created in half the time it took you to create a 1.6 theme.
 
@@ -343,7 +344,7 @@ We will soon publish a guide on what to look for when updating your module.
 
 ### Where is the 1.7 Developer documentation?
 
-The Developer documentation is being worked on, and the main topics should have their pages up during the beta phase. We hope to have it land in GitHub, so that the community can participate in its improvement.
+The Developer documentation is being worked on. [The current draft is available on GitHub](https://github.com/PrestaShop/docs), and you can contribute!
 
 In the meantime, we advise you to dive into the code of this 1.7-specific module: [https://github.com/PrestaShop/paymentexample](https://github.com/PrestaShop/paymentexample ).
 
@@ -390,6 +391,14 @@ In the meantime, we advise you to dive into the code of this 1.7-specific module
       <li>Added link to current draft of <a href="https://github.com/PrestaShop/docs">Designer documentation</a>.
       <li>Added an automatic Table of Contents, at last!</li>
       <li>Made a bit of rewording, details and typo corrections here and there.</li>
+    </ul>
+  </li>
+  <li>1.4 (2016-06-03): 
+    <ul>
+      <li>Beta 1 has been released! <a href="http://build.prestashop.com/news/prestashop-1-7-beta-1-open-for-feedback/">Test it now</a>!</li>
+      <li>Updated "When is version 1.7.0.0 going to be released?" question.</li>
+      <li>Reworded/reorganized the "What will be in PS 1.7?" question a bit.</li>
+      <li>Added link in the "Where is the 1.7 Developer documentation?" questions.</li>
     </ul>
   </li>
 </ul>

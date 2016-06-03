@@ -67,6 +67,50 @@ Have you found a bug? A curious behavior? An unexpected reaction? Let us know! [
 Please note that we are not looking for feedback on the overall technical or design choices: Symfony2, the new theming system, the back office design and other global aspects of 1.7 are pretty much set in stone. However, do let us know about bugs or possible improvements!
 
 
+## What’s (still) in progress
+
+Remember that this is the first Beta release of version 1.7.0.0: a lot of things are not ready yet, or are ready but not yet available. We are aware of it, and we are working on it right now.
+
+We tried to gather the most important ones below, so that you have a clear idea of what still needs to be done. All of this will eventually be fixed for the stable version – and you can help with pull-requests on GitHub, and feedback of your own tests!
+
+### Core
+
+ * If your web hosting uses PHP-FPM, some links (and images) will not work.
+ * Multistore & Advanced Stock Management aren’t yet connected to the Create a Product Page.
+ * The header and navigation can vary (slightly) between pages.
+ * Employees permissions are not yet suited for the new navigation in place
+ * If a problem occurs while uploading a theme, we may not be able to tell you why currently :) In effect, errors and warnings are not fully set yet. And in any case, your 1.5-1.6 theme will NOT work with the new theme system (see the FAQ).
+
+### Front office
+
+ * The Classic theme needs to be made responsive.
+ 
+### Back office
+
+ * Some images are broken for now, some buttons and tab could behave in a weird way, and you might stumble on other weird artifacts. We know about this, and they will all be fixed in time for the stable release.
+ * We’re still working on the responsiveness of the back office, and 13” screens could particularly be affected.
+ * CSV Export can take up a lot of memory, and thus not work on some shared hosting.
+
+### Product page
+
+ * Entry-level shared hosting can get performance issues, sometimes culminating to a blank page. We are working on it, and are committed to address the issue.
+
+### Modules page
+
+ * We’re improving the modules discovery page: better sorting, more information, reworked categories, etc.
+
+### Content
+
+ * Interface copywriting is not final yet. Some parts need to be written, others are waiting for a rewrite and others are in proofreading.
+ * Default products are still the ones used in version 1.6. Version 1.7 should have a brand new set of products.
+ * Translations are on hold for now while we’re working on improving the system: the interface is only in English for now.
+
+### Documentation
+
+ * Contextual help still displays 1.6 documentation as we’re updating it to 1.7. Expect it to be final during our RC period -- once the 1.7 User Guide will be online!.
+ * Technical documentation for modules & themes should follow the same timeline.
+
+
 ## Updates since alpha 4
 
 Here are the main changes since [the last public alpha version](http://build.prestashop.com/news/here-comes-prestashop-1-7-alpha-4/):
@@ -113,50 +157,6 @@ Here are the main changes since [the last public alpha version](http://build.pre
 ### Webservice
 
  * [3745](https://github.com/PrestaShop/PrestaShop/pull/3745): Added Order Messages to the API. Thank you @gleseur!
-
-
-## What’s (still) in progress
-
-Remember that this is the first Beta release of version 1.7.0.0: a lot of things are not ready yet, or are ready but not yet available. We are aware of it, and we are working on it right now.
-
-We tried to gather the most important ones below, so that you have a clear idea of what still needs to be done. All of this will eventually be fixed for the stable version – and you can help with pull-requests on GitHub, and feedback of your own tests!
-
-### Core
-
- * If your web hosting uses PHP-FPM, some links (and images) will not work.
- * Multistore & Advanced Stock Management aren’t yet connected to the Create a Product Page.
- * The header and navigation can vary (slightly) between pages.
- * Employees permissions are not yet suited for the new navigation in place
- * If a problem occurs while uploading a theme, we may not be able to tell you why currently :) In effect, errors and warnings are not fully set yet. And in any case, your 1.5-1.6 theme will NOT work with the new theme system (see the FAQ).
-
-### Front office
-
- * The Classic theme needs to be made responsive.
- 
-### Back office
-
- * Some images are broken for now, some buttons and tab could behave in a weird way, and you might stumble on other weird artifacts. We know about this, and they will all be fixed in time for the stable release.
- * We’re still working on the responsiveness of the back office, and 13” screens could particularly be affected.
- * CSV Export can take up a lot of memory, and thus not work on some shared hosting.
-
-### Product page
-
- * Entry-level shared hosting can get performance issues, sometimes culminating to a blank page. We are working on it, and are committed to address the issue.
-
-### Modules page
-
- * We’re improving the modules discovery page: better sorting, more information, reworked categories, etc.
-
-### Content
-
- * Interface copywriting is not final yet. Some parts need to be written, others are waiting for a rewrite and others are in proofreading.
- * Default products are still the ones used in version 1.6. Version 1.7 should have a brand new set of products.
- * Translations are on hold for now while we’re working on improving the system: the interface is only in English for now.
-
-### Documentation
-
- * Contextual help still displays 1.6 documentation as we’re updating it to 1.7. Expect it to be final during our RC period -- once the 1.7 User Guide will be online!.
- * Technical documentation for modules & themes should follow the same timeline.
 
 
 ## Final note!

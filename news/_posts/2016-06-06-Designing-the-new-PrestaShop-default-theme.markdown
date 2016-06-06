@@ -17,8 +17,8 @@ This basic theme is essential for the merchants to have a clear insight of what 
 
 With around 600 free native features, PrestaShop is the ideal software for anyone wishing to get started with e-commerce. But the task is not an easy one when you’re not familiar with all the standards of e-commerce nor a web professional.
 
-* The major aim of the default theme is to **allow any merchant to meet the Web and e-commerce best practises**.
-* The second aim is to **be entirely adjustable and customizable**, to allow every online shop to be singular. Do you have any specific requirement? The modules from the Addons marketplace are here to allow you to improve your website using as much features as you like.
+* The major aim of the default theme is to **allow any merchant to meet the Web and e-commerce best practices**.
+* The second aim is to **be entirely adjustable and customizable**, to allow every online shop to be singular. Do you have any specific requirement? The modules from the Addons marketplace are here to allow you to improve your website using as many features as you like.
 
 ## Design challenges
 
@@ -69,7 +69,7 @@ So the main goal of the purchase funnel for the Classic theme is **to propose th
 * Convert as efficiently as possible.
 * Present steps identifiable at a glance.
 * Have a speedy buying process.
-* Put the best practises of online shopping at the merchant’s disposal.
+* Put the best practices of online shopping at the merchant’s disposal.
 * Better integrate the necessary modules (payment, delivery, etc.).
 * Be compatible with foreign languages.
 * Be easy to maintain and debug.

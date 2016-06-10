@@ -4,7 +4,7 @@ title:  "Designing the new PrestaShop default theme"
 subtitle: "How we rebuilt the front office to suit any merchant"
 date:   2016-06-06 06:09:47
 author: leamendes
-icon: icon-world
+icon: icon-pizza
 tags: [theme, 1.7, design, process]
 ---
 

@@ -33,7 +33,7 @@ Here are some of the most notable changes that this version brings:
 * FO: Cart Rules have an improved customer display, with much more useful information.
 * BO: All carriers are now displayed in the Dashboard.
 * Core: Fixed "Uncaught exception 'PrestaShopException' with message 'Property StockAvailable->id_product_attribute is empty".
-* WS: Compatibility fox for PHP 5.2, 5.3 adnd 7.0.
+* WS: Compatibility fox for PHP 5.2, 5.3 and 7.0.
 * PDF: Pagination is now implemented for all PDF types.
 * Tests: Fix for PHP7.
 * Several smaller fixes.

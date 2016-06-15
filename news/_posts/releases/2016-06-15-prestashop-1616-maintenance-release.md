@@ -15,7 +15,7 @@ tags:
 
 PrestaShop 1.6.1.6 is now available. This maintenance release [has seen 20 changes](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Aclosed+milestone%3A1.6.1.6) since version 1.6.1.5 ([released on April 13th](http://build.prestashop.com/news/prestashop-1615-maintenance-release/)).
 
-Yes indeed, we have mentionning v1.6.1.6 [since May](http://build.prestashop.com/news/core-weekly-week-19/) but, y'know, with the lifting work necessary to get [PrestaShop 1.7 Beta 1](http://build.prestashop.com/news/prestashop-1-7-beta-1-open-for-feedback/) off the ground, the 1.6.1.6 release had to be delayed a bit. Here it is at last!
+Yes indeed, we have been mentionning v1.6.1.6 [since May](http://build.prestashop.com/news/core-weekly-week-19/) but, y'know, with the lifting work necessary to get [PrestaShop 1.7 Beta 1](http://build.prestashop.com/news/prestashop-1-7-beta-1-open-for-feedback/) off the ground, the 1.6.1.6 release had to be delayed a bit. Here it is at last!
 
 As the version number indicates (as per [our SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)), this is the 6th patch release for PrestaShop 1.6.1.0.<br/>
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Release of PrestaShop 1.6.1.6"
 subtitle: "Maintenance version of the 1.6.1.x branch"
-date:   2016-06-13 14:30:41
+date:   2016-06-15 09:30:41
 author: xavierborderie
 icon: icon-leaf
 tags:

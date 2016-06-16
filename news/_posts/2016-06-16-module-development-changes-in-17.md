@@ -65,8 +65,8 @@ The Product page and the Modules page are the only two pages that have been rewr
 
 The whole PrestaShop 1.7 back office has its design based on the UI Kit. This UI Kit was built so that designers and developers can create interfaces which are consistent in style with the administration interface.
 
-Check its reference documentation here: http://build.prestashop.com/prestashop-ui-kit/<br/>
-Check its code here: https://github.com/PrestaShop/prestashop-ui-kit
+Check its reference documentation here: [http://build.prestashop.com/prestashop-ui-kit/](http://build.prestashop.com/prestashop-ui-kit/)<br/>
+Check its code here: [https://github.com/PrestaShop/prestashop-ui-kit](https://github.com/PrestaShop/prestashop-ui-kit)
 
 Note that it is still a work in progress, and should not be considered stable until 1.7 is released.
 
@@ -186,9 +186,9 @@ The Designer Guide is currently being entirely rewritten to focus on the 1.7 The
 In the meantime, we invite you to dive into the source code:
 
  * The Starter Theme, which you can use as a skeleton template for your 1.7 theme: <br/>
-   https://github.com/PrestaShop/StarterTheme/tree/master
+   [https://github.com/PrestaShop/StarterTheme/tree/master](https://github.com/PrestaShop/StarterTheme/tree/master)
  * The 1.7 default theme, called "Classic", which can you can learn from: <br/>
-   https://github.com/PrestaShop/PrestaShop/tree/develop/themes/classic
+   [https://github.com/PrestaShop/PrestaShop/tree/develop/themes/classic](https://github.com/PrestaShop/PrestaShop/tree/develop/themes/classic)
 
 
 ### Widgets

@@ -11,7 +11,7 @@ tags:
  - documentation
 ---
 
-Existing modules should mostly work as-is with version 1.7. In this article, we dive into that “mostly” -- with Addons statistics!
+Existing modules should mostly work as-is with version 1.7. In this article, we dive into that “mostly”!
 
 As you certainly know, all well-written 1.6 modules should work with little to no changes in version 1.7, except:
 

@@ -56,7 +56,7 @@ This release had 13 contributors, both from PrestaShop and from the Community at
 * @okom3pm
 * @raphael-homann
 * @rgaillard
-* @xbordere
+* @xborderie
 
 A huge "thank you!" to each of the 7 outside contributors, who gave their time and knowledge for the benefit of the whole PrestaShop community! [You too can contribute to the next version](http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop)!
 

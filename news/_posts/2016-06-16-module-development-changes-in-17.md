@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Module development changes in PrestaShop 1.7.0.0"
-subtitle: "Prepare your 1.6 module to ensure maximum 1.7 compatibility"
+subtitle: "Prepare your 1.6 modules to ensure maximum 1.7 compatibility"
 date: 2016-06-18 09:10:11
 author: xavierborderie
 icon: icon-book
@@ -45,7 +45,7 @@ Now, let’s dive into the details.
 * Make sure you use the new way of calling templates: `fetch(module:modulename/views/template.tpl)`.
 * Make sure you do not add your assets with a hardcoded path in the `displayHeader` hook.
   * Nothing new from v1.6 here, but it's a bad practice.
-* Only rely documented variables!
+* Only rely on documented variables!
 
 
 ## Overrides and namespaces
@@ -54,7 +54,7 @@ PrestaShop 1.7 introduces the use of [namespaces](http://php.net/manual/en/langu
 The legacy architecture can still be overridden, though. But in general, we advise against overriding code. It is better to extend it.<br />
 Also, overrides are _currently_ forbidden in the Symfony-based pages (namely, the Product page and the Modules page).
 
-Overrides are a nice system to have, but the issue with it is that it is an uncontrolled extension system. We are working on a carefully planned process that will allow developers to extend the PrestaShop code in a much cleaner way. We will soon write about it on this blog, but the gist of it would be that the developer team would integrate your needs for overrides in the next version of PrestaShop -- kind of what [polyfills do for HTML5 features](https://en.wikipedia.org/wiki/Polyfill) :) In short, you tell us what you need, and while we include it in the next version, you can use an override.
+Overrides are a nice system to have, but the issue with it is that it is an uncontrolled extension system. We are working on a carefully planned process that will allow developers to extend the PrestaShop code in a much cleaner way. The gist of it would be that the developer team would integrate your needs for overrides in the next version of PrestaShop -- kind of what [polyfills do for HTML5 features](https://en.wikipedia.org/wiki/Polyfill) :) In short, you tell us what you need, and while we include it in the next version, you can use an override.
 
 Again: **the override system is not going away**, you will still be able to easily extend PrestaShop. We're just changing the way we want this to happen: instead of each developer having a separate set of overrides, we want developers who need an override to let us know about it, so that the next version of PrestaShop includes it directly.
 
@@ -63,7 +63,7 @@ Again: **the override system is not going away**, you will still be able to easi
 
 The Product page and the Modules page are the only two pages that have been rewritten using Symfony, and they still work fine with pre-1.7 modules -- albeit with a necessary design adaptation, as happened in all major version of PrestaShop before, only this time we provide a UI Kit to help developers easily have a consistent style for their module screens.
 
-The whole PrestaShop 1.7 back office has its designed based on the UI Kit. This UI Kit was built so that designers and developers can create interfaces which are consistent in style with the administration interface.
+The whole PrestaShop 1.7 back office has its design based on the UI Kit. This UI Kit was built so that designers and developers can create interfaces which are consistent in style with the administration interface.
 
 Check its reference documentation here: http://build.prestashop.com/prestashop-ui-kit/<br/>
 Check its code here: https://github.com/PrestaShop/prestashop-ui-kit
@@ -119,9 +119,9 @@ We advise you to dive into the [Payment Example sample module](https://github.co
 
 ## Changes for modules targeting the Product page
 
-The Product page has entirely rewritten for PrestaShop 1.7 in order to make the product creation easier, faster, and more logical. 6 default instead of the previous 12, with the main tab containing much more information; a greatly improved Combination generator/manager; new shortcuts; an in-page catalog browser; and other niceties...
+The Product page has been entirely rewritten for PrestaShop 1.7 in order to make the product creation easier, faster, and more logical. 6 default tabs instead of the previous 12, with the main tab containing much more information; a greatly improved Combination generator/manager; new shortcuts; an in-page catalog browser; and other niceties...
 
-If you created modules which target the Product Page, you may be impacted by these changes. To make them work as expected in the new Product page, will need to adapt your code.
+If you created modules which target the Product Page, you may be impacted by these changes. To make them work as expected in the new Product page, you will need to adapt your code.
 
 Here are the main information that you will need to update your modules.
 
@@ -130,7 +130,7 @@ Here are the main information that you will need to update your modules.
 
 In PrestaShop 1.6, it is allowed to have a dedicated tab per module on the Product page. In version 1.7, we changed this and added a dedicated tab for all the Product page’s modules, via a new hook called `hookDisplayAdminProductsExtra`. 
 
-If you coded your modules by following the best practices of both PHP and PrestaShop 1.5-1.6, it should not take you too much time to update your code.
+If you coded your modules by following the best-practices of both PHP and PrestaShop 1.5-1.6, it should not take you too much time to update your code.
 
 
 ### Back office hook Parameters
@@ -2684,4 +2684,4 @@ These hooks are only available in 1.7.
 
 More information is coming soon!
 
-If you have specific question about module development that are not answered in this article, let us know in the comments: it will help us build a better Developer Guide!
+If you have specific questions about module development that are not answered in this article, let us know in the comments: it will help us build a better Developer Guide!

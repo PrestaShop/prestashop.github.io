@@ -130,7 +130,7 @@ Here are the main information that you will need to update your modules.
 
 In PrestaShop 1.6, it is allowed to have a dedicated tab per module on the Product page. In version 1.7, we changed this and added a dedicated tab for all the Product page’s modules, via a new hook called `hookDisplayAdminProductsExtra`. 
 
-If you coded your modules by following the best-practices of both PHP and PrestaShop 1.5-1.6, it should not take you too much time to update your code.
+If you coded your modules by following the best practices of both PHP and PrestaShop 1.5-1.6, it should not take you too much time to update your code.
 
 
 ### Back office hook Parameters

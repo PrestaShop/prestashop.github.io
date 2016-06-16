@@ -2179,7 +2179,7 @@ These hooks are common to PrestaShop 1.6 and 1.7, but their file location has ch
 
 #### 1.6 hooks there were removed from 1.7
 
-These hooks were only available in 1.6. They are removed from 1.7.</h1>
+These hooks were only available in 1.6. They are removed from 1.7.
 
 <table>
     <thead>

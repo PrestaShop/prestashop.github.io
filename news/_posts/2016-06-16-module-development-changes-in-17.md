@@ -108,10 +108,10 @@ The updated payment API changes the parameters passed to these two hooks:
 
 Everything can be retrieved from `order`. For instance.
 
-{% highlight php startinline=true linenos %}
+```php
 $currency = new Currency($params['order']->id_currency);
 $total_to_pay = $params['order']->getOrdersTotalPaid();
-{% endhighlight %}
+```
 
 We advise you to dive into the [Payment Example sample module](https://github.com/PrestaShop/paymentexample), or to explore the [native Bankwire module](https://github.com/PrestaShop/bankwire) -- most notably [the commit that updated this module for 1.7](https://github.com/PrestaShop/bankwire/pull/18/files?diff=unified).
 
@@ -139,14 +139,14 @@ Parameters cannot be obtained from a query string anymore. From now on, an array
 
 See this sample hook:
 
-{% highlight php startinline=true linenos %}
+```php
 public function hookDisplayAdminProductsExtra($params)
-{% endhighlight %}
+```
 
 
 With `$params` taking these values:
 
-{% highlight php startinline=true linenos %}
+```php
 $params [
   "_ps_version",
   "id_product",
@@ -154,7 +154,7 @@ $params [
   "cart",
   "altern"
 ]
-{% endhighlight %}
+```
 
 
 ### Assets

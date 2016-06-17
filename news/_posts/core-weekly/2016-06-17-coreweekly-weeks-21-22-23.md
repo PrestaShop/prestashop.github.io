@@ -23,7 +23,7 @@ The days are just PACKED! :)
 
 Want to help things go faster? There are several ways: 
 
- * [Test the latest alpha version](http://build.prestashop.com/news/here-comes-prestashop-1-7-alpha-4/) (or better, test [the current development version, straight from GitHub](https://github.com/PrestaShop/PrestaShop));
+ * [Test the Beta version](http://build.prestashop.com/news/prestashop-1-7-beta-1-open-for-feedback/) (or better, test [the current development version, straight from GitHub](https://github.com/PrestaShop/PrestaShop/tree/develop));
  * [Report issues on the Forge](http://forge.prestashop.com/secure/CreateIssue!default.jspa?selectedProjectId=11322&issuetype=1) (or [confirm issues that are already listed](http://forge.prestashop.com/browse/BOOM-738?jql=project%20%3D%20BOOM%20AND%20created%3E%3D-1w%20ORDER%20BY%20created%20DESC) - use the search engine!); 
  * Fix issues by [submitting a pull request](https://github.com/PrestaShop/PrestaShop/pulls) (or confirm that a submitted pull request does indeed fix the presented issue); 
  * Help improve the [1.7 Theme Development doc](https://github.com/PrestaShop/docs) (yes, it is very sparse at the moment).

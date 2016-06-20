@@ -140,7 +140,7 @@ At the end of May, 7 languages would highly benefit from more proofreading:
 
 * Turkish (100% translated vs 2% validated)
 * Greek (100% translated vs 81% validated)
-* Romanain (100% vs 84%)
+* Romanian (100% vs 84%)
 * Ukrainian (100% vs 53%)
 * Hungarian (92% vs 72%)
 * Arabic (54% vs 28%)

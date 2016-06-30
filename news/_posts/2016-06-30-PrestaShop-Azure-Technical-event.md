@@ -34,12 +34,12 @@ Our guest speakers will be:
 This event will be technical and is mainly targeting developers, CTOs, web agencies and sysadmins.
 If you can physically attend the event in Paris on Thursday 7th July, please subscribe on [Eventbrite](https://www.eventbrite.fr/e/inscription-meetup-prestashop-azure-26305887618) (in French).
 
-**Where**: PrestaShop HQ, 12 rue d’Amsterdam, 75009 Paris, France
-**When**: Thursday 7th July from 18:00 to 21:00.
+**Where**: PrestaShop HQ, 12 rue d’Amsterdam, 75009 Paris, France<br />
+**When**: Thursday 7th July from 18:00 to 21:00.<br />
 **What**: PrestaShop + Azure, but also pizzas - and you’re welcome to stay watch the UEFA 2016 semi-final with us (we have beer too!).
 
 If you can’t make it, we’ll be broadcasting the event online and you’ll be able to follow if by registering [here](https://attendee.gotowebinar.com/register/3861300494381147649).
 
 See you there!
 
-Please note that this event will be in French, as is it our first one on this topic. If you wish to see an English webinar, please contact me at guillaume.bruere@prestashop and I’ll organize it!
+Please note that this event will be in French, as is it our first one on this topic. If you wish to see an English webinar, please contact me at guillaume.bruere@prestashop.com and I’ll organize it!

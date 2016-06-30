@@ -38,7 +38,7 @@ If you can physically attend the event in Paris on Thursday 7th July, please sub
 **When**: Thursday 7th July from 18:00 to 21:00.<br />
 **What**: PrestaShop + Azure, but also pizzas - and you’re welcome to stay watch the UEFA 2016 semi-final with us (we have beer too!).
 
-If you can’t make it, we’ll be broadcasting the event online and you’ll be able to follow if by registering [here](https://attendee.gotowebinar.com/register/3861300494381147649).
+If you can’t make it, we’ll be broadcasting the event online and you’ll be able to follow it by registering [here](https://attendee.gotowebinar.com/register/3861300494381147649).
 
 See you there!
 

@@ -196,7 +196,7 @@ Each of this domain can be further divided to provide even more context.
 
 4. As for the **Form** sections, you’ll have
   * the form labels,
-  * its corresponding errors (distinct from the theme errors, this one are specific to the form and will display inline),
+  * its corresponding errors (distinct from the theme errors, these one are specific to the form and will display inline),
   * and what we’ve called “help” - mainly the hints to help you fill in the form (special characters, etc.).
 
 ![Front office domains on Crowdin](/assets/images/2016/07/domains_front.png)

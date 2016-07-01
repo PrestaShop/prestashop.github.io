@@ -143,7 +143,7 @@ Some explanations on how we organized domains and what they contain in details:
 ### Install
 That’s the easiest one, there’s only one domain: Install. It’s the content from the installation wizard.
 
-<img style="border: 1px solid #CCC; padding: 10px;" width="400" src="/assets/images/2016/06/domains_install.png">
+<img style="border: 1px solid #CCC; padding: 10px;" width="400" src="/assets/images/2016/07/domains_install.png">
 
 There's nothing new here, it corresponds to the former “install” file we had in 1.6 project in Crowdin.
 
@@ -159,7 +159,7 @@ Not all modules have a third level: Some modules only have strings for the back 
 
 In Crowdin, you will then have a mix of files and folders, like this:
 
-<img style="border: 1px solid #CCC; padding: 10px;" width="350" src="/assets/images/2016/06/modules_domains_crowdin.png">
+<img style="border: 1px solid #CCC; padding: 10px;" width="350" src="/assets/images/2016/07/modules_domains_crowdin.png">
 
 
 Some strings might be rather generic (like “Search” or “Settings updated”) and can be shared with other modules or pages. In that case, we’ll use the *Admin*. or *Shop*. domains to avoid unnecessary duplicates. It means that in some modules folder you will see some *Admin.Actions* or *Shop.Theme* domains.
@@ -237,7 +237,7 @@ For example, here’s what it will give for a specific page from the back office
 
 With the following domains being used:
 
-<img style="border: 1px solid #CCC; padding: 10px;" width="250" src="/assets/images/2016/06/domains_example3.png">
+<img style="border: 1px solid #CCC; padding: 10px;" width="250" src="/assets/images/2016/07/domains_example3.png">
 
 
 

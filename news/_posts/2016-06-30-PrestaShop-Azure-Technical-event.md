@@ -28,7 +28,7 @@ Our guest speakers will be:
 * Jean-François Gomez, Business Development Manager @ Microsoft Azure
 * Thomas Conté, Cloud Architect @ Microsoft Azure
 
-[Subscribe to the event](https://www.eventbrite.fr/e/inscription-meetup-prestashop-azure-26305887618){: .btn .btn-lg .btn-success}
+[Register to the event](https://www.eventbrite.fr/e/inscription-meetup-prestashop-azure-26305887618){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 This event will be technical and is mainly targeting developers, CTOs, web agencies and sysadmins.

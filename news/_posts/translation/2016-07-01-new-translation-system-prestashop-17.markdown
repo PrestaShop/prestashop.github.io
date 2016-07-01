@@ -209,7 +209,7 @@ Now, let’s see how things are organized for the strings from the back office.
 | ---------- | -------- |
 | Global | Anything which doesn’t fall in the below categories, but is still related to the back office, that can be found in a lot of occurrences (“Max”, “Settings”, “Enabled”, etc.) AND in different parts of the software too. <br/>If a string is specific to a given page, then it shouldn’t be in the global domain. |
 | Actions | All the call-to-actions, buttons or links that you find on the back office, and that are quite generic (“Save”, “Add”, “Delete”, etc.). Again, if it applies to one page and one functional domain only, then this is not the domain to use. |
-| Notifications | All the warning, error or success messages that can appear in the back office.They must be general notifications applying to any part of the software (e.g. “Settings updated.”).<br/> In case you have a specific notification (“Friendly URLs are currently disabled”), then it should fall under the notification subdomain for its functional domain (here *Admin.Catalog.Notification*). |
+| Notifications | All the warning, error or success messages that can appear in the back office.They must be general notifications applying to any part of the software (e.g. “Settings updated”).<br/> In case you have a specific notification (“Friendly URLs are currently disabled”), then it should fall under the notification subdomain for its functional domain (here *Admin.Catalog.Notification*). |
 | Navigation | The structure shared by all pages of the back office. |
 | Orders & Customers | Strings for the “Orders”, “Customers” and “Customer Service” sections from the back office. |
 | Catalog | Strings from the “Catalog” section. |

@@ -244,8 +244,6 @@ With the following domains being used:
 ## Limitations
 While we wanted to have a great system, there are nevertheless a few drawbacks.
 
-Where we used to have a string with a feature, and the following string the help text attached to it; they will now be in two different files.
-
 * Help texts are now separated from the features. When translating 1.6, the feature string and its attached help text were place one after the other in the Crowdin interface. With the changes in 1.7, these two strings will be in two different files. But we ignored this limitation since separating features and help texts:
   * Allows a better prioritization (= you’d want to translate the features first, which is the core of the software, then the help, which can be seen as a plus)
   * Allows a differentiation in tone (features are often using infinitives and are more neutral, while help is more personal and talks directly to the merchant)

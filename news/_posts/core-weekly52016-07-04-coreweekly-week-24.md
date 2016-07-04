@@ -17,7 +17,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 Onward with 1.7! The team is still cranking code, and we're happy to see more and more people contributing to the codebase!
 
 Have you tested [Beta 1 of PrestaShop 1.7](https://www.prestashop.com/en/1.7)?<br/>
-Have you [tried one of your module in 1.7](http://build.prestashop.com/news/module-development-changes-in-17/)? Have you tried to create a 1.7 theme? How did it go?<br/>
+Have you [tried one of your modules in 1.7](http://build.prestashop.com/news/module-development-changes-in-17/)? Have you tried to create a 1.7 theme? How did it go?<br/>
 [Give us your feedback](http://build.prestashop.com/news/prestashop-1-7-beta-1-open-for-feedback/)!
 
 Want to help things go faster? There are several ways: 
@@ -40,7 +40,7 @@ Let's review the merged pull-requests on the ['develop' branch](https://github.c
  
 ### Front office (including the default theme, named "Classic", based upon the [Starter Theme](https://github.com/PrestaShop/PrestaShop/tree/develop/themes/classic))
 
- * [5774](https://github.com/PrestaShop/PrestaShop/pull/5774): Improve classic theme integrationn, by @nihco2.
+ * [5774](https://github.com/PrestaShop/PrestaShop/pull/5774): Improve classic theme integration, by @nihco2.
  * [5796](https://github.com/PrestaShop/PrestaShop/pull/5796): Removed shop name from meta title. Thank you @dh42!
  * [5799](https://github.com/PrestaShop/PrestaShop/pull/5799): Fix slider legends : alt and title attributes should be populated in classic theme, by @mickaelandrieu.
  * [5802](https://github.com/PrestaShop/PrestaShop/pull/5802): Let the modules handle the newsletter subscription, by @maximebiloe.
@@ -50,7 +50,7 @@ Let's review the merged pull-requests on the ['develop' branch](https://github.c
 
 ### Back office
 
- * [5136](https://github.com/PrestaShop/PrestaShop/pull/5136): Fixed parsing of files *.twig for translations. Thank you @true0r!
+ * [5136](https://github.com/PrestaShop/PrestaShop/pull/5136): Fixed parsing of files \*.twig for translations. Thank you @true0r!
  * [5337](https://github.com/PrestaShop/PrestaShop/pull/5337): Fix CMS pages permissions. Thank you @fojtcz!
  * [5794](https://github.com/PrestaShop/PrestaShop/pull/5794): Display all combinations to make a product pack, by @maximebiloe.
  * [5795](https://github.com/PrestaShop/PrestaShop/pull/5795): You can exclude already discounted products from voucher. Thank you @kpodemski!

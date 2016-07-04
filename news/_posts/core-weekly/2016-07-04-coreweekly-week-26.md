@@ -92,7 +92,7 @@ Let's review the merged pull-requests on the ['develop' branch](https://github.c
 
  
 
-See all the PRs merged into the codebase since the last Core Weekly [here](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr%20is%3Aclosed%20merged%3A2016-06-20..2016-06-26%20base%3Adevelop%20).
+See all the PRs merged into the codebase since the last Core Weekly [here](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr%20merged%3A2016-06-27..2016-07-03%20is%3Aclosed%20sort%3Acreated-asc%20base%3Adevelop%20).
 
 Thank you to the contributors whose pull requests were merged since the last Core Weekly Report: @antho-girard, @dh42, @fojtcz, @kermes, @kpodemski, @prestamodule, and @true0r! Also, thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!
 

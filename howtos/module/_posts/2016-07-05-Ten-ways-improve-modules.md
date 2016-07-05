@@ -6,7 +6,7 @@ date: 2016-07-05 8:07:11
 author: [ mdekker ]
 icon: icon-puzzle
 tags: [ howto, tutorial, modules ]
-published: false
+published: true
 ---
 
 PrestaShop has numerous features in the API, both hidden in its code as well as in the developer documentation and there are many tools that allow you to create your own module in no time!

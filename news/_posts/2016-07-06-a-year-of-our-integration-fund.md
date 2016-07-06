@@ -30,9 +30,9 @@ You can also contact us thanks to the integration fund application form here: [h
 
 Daniel comes from Romania, and has developed several modules through the Integration Fund. Thanks to him, Romanian merchants can benefit of useful functionalities in their own language, such as the [eMag Marketplace module](http://addons.prestashop.com/en/22885-emag-marketplace.html?no_cache=1). This is what he told us:
 
-<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="180" src="/assets/images/2016/07/fund_daniel-patilea.jpg"> <i>The PrestaShop Integration Fund is an excellent project. It gathers developers, merchants, sellers and enthusiasts to help this awesome CMS grow even more. And the fact that everyone wins is truly awesome.
+<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="180" src="/assets/images/2016/07/fund_daniel-patilea.jpg"> <i>The PrestaShop Integration Fund is an excellent project. It gathers developers, merchants, sellers and enthusiasts to help this awesome CMS grow even more. And the fact that everyone wins is truly awesome.</i>
 
-Personally, when I first saw this project I said to myself: "Wow! I gotta be part of this!". I started making some researches, then identified the needs and developed the modules. And now, here I am, witnessing and contributing to the ascension of PrestaShop.<br/>
+<i>Personally, when I first saw this project I said to myself: "Wow! I gotta be part of this!". I started making some researches, then identified the needs and developed the modules. And now, here I am, witnessing and contributing to the ascension of PrestaShop.<br/>
 I am proud to be a member of this huge community, I am one in a million more exactly :) </i>
 
 ## Be a part of it, apply now!

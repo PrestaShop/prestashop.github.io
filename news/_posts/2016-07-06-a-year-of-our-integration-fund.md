@@ -10,7 +10,7 @@ tags: [modules, development, addons]
 
 [Last year PrestaShop launched its 1$ Million Integration Fund](https://www.prestashop.com/blog/en/prestashop-launches-1000000-integration-fund-community/), conceived as a way to support a selection of developers by granting them funds to develop local modules. At the Paris PrestaShop Day 2016, we celebrated the first anniversary of the program. 
 
-![Birthday tweet by Margaux](/assets/images/2016/07/fund_birthday_tweet.png)
+[![Birthday tweet by Margaux](/assets/images/2016/07/fund_birthday_tweet.png)](https://twitter.com/margchop/status/738293100079124480)
 
 Here are the figures that we achieved together with contributors from all over the world: $200,000 were granted to fund 130 modules that improve PrestaShop stores in more than 100 countries. 
 

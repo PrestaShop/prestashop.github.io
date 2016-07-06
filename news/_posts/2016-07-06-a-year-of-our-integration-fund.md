@@ -8,7 +8,7 @@ icon: icon-dollars
 tags: [modules, development, addons]
 ---
 
-[Last year PrestaShop launched our 1$ Million Integration Fund](https://www.prestashop.com/blog/en/prestashop-launches-1000000-integration-fund-community/), conceived as a way to support a selection of developers by granting them funds to develop local modules. At the Paris PrestaShop Day 2016, we celebrated the first anniversary of the program. 
+[Last year PrestaShop launched its 1$ Million Integration Fund](https://www.prestashop.com/blog/en/prestashop-launches-1000000-integration-fund-community/), conceived as a way to support a selection of developers by granting them funds to develop local modules. At the Paris PrestaShop Day 2016, we celebrated the first anniversary of the program. 
 
 ![Birthday tweet by Margaux](/assets/images/2016/07/fund_birthday_tweet.png)
 
@@ -28,7 +28,7 @@ You can also contact us thanks to the integration fund application form here: [h
 
 ## Meet a contributor 
 
-Daniel comes from Romania, he has developed several modules through the Integration Fund. Thanks to him, Romanian merchants can benefit of useful functionalities their own language such as eMag Marketplace module. This is what he told us:
+Daniel comes from Romania, he has developed several modules through the Integration Fund. Thanks to him, Romanian merchants can benefit of useful functionalities in their own language such as eMag Marketplace module. This is what he told us:
 
 <img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="180" src="/assets/images/2016/07/fund_daniel-patilea.jpg"> <i>The PrestaShop Integration Fund is an excellent project. It gathers developers, merchants, sellers and enthusiasts to help this awesome CMS grow even more. And the fact that everyone wins is truly awesome.
 

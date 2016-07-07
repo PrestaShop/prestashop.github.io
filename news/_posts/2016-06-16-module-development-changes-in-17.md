@@ -32,6 +32,9 @@ In any case, we advise you to make sure that your module does work in PrestaShop
 
 Now, let’s dive into the details.
 
+* TOC
+{:toc}
+
 
 ## General information
 
@@ -79,7 +82,7 @@ To provide the best user experience possible for customers, and to guarantee tha
 For example, the Terms & Conditions checkbox is now displayed with the payment options, and there is only one button to click in order to pay.<br/>
 That way, theme designers have more control of the layout of payment options.
 
-### Hook changes
+## Hook changes
 
 The updated payment API changes the parameters passed to these two hooks:
 
@@ -87,7 +90,7 @@ The updated payment API changes the parameters passed to these two hooks:
  * hookDisplayOrderConfirmation
  
 
-#### Before 
+### Before 
 
 | Key            | Value                                         |
 |:--------------:|:---------------------------------------------:|
@@ -97,7 +100,7 @@ The updated payment API changes the parameters passed to these two hooks:
 | `objOrder`     | The current order object (Order class).       |
 
 
-#### After
+### After
 
 | Key     | Value                                     |
 |:-------:|:-----------------------------------------:|

@@ -41,7 +41,7 @@ Please read [this full article](http://build.prestashop.com/news/new-translation
 
 We've taken advantage of Crowdin’s translation memory system to make sure we don't lose any translation. If a string is the same in 1.6 and 1.7, and it is already translated, it will show as translated in 1.7. No need to do the same work twice!
 
-For the languages which are already 100% translated for 1.6, it means that only the new 1.7-specific strings will need to be translated. That’s mostly the new theme, the new Modules page and the new Product page: only 14% of the current project (**about 5,400 words to translate**, to be exact!).
+For the languages which are already 100% translated for 1.6, it means that only the new 1.7-specific strings will need to be translated. That’s mostly the new theme, the new Modules page and the new Product page: only 20% of the current project (**about 7,700 words to translate**, to be exact!).
 
 
 ## 3. Everything isn't there yet...

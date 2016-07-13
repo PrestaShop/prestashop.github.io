@@ -72,6 +72,7 @@ This is also something we're working on. As we've introduced a new translation s
 Of course we'll keep you updated and let you know as soon as something new comes up. We'll update the project as it goes so that you always benefit from the latest changes.
 
 Now is the time to translate PrestaShop 1.7 :D
+
 Thank you for your contribution to the PrestaShop project!
 
 [Translate PrestaShop 1.7](https://crowdin.com/project/prestashop-official){: .btn .btn-lg .btn-info}

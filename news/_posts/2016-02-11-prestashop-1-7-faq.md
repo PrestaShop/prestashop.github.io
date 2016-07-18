@@ -8,7 +8,7 @@ icon: icon-chat-alt
 tags: [1.7]
 ---
 
-The development team is hard at work on PrestaShop 1.7, making sure the first beta contains everything they want it to be. We’re approaching the day when we can release this beta version, and it is therefore high time that we’d answer the questions that we received about this new major version.<br/>
+The development team is hard at work on PrestaShop 1.7, making sure the first beta contains everything they want it to be. We’re approaching the day when we can release this beta version, and it is therefore high time that we’d answer the questions that we received about this new major version.<br/><br/>
 <i>Update: [Beta 1 was released on June 2nd, 2016](http://build.prestashop.com/news/prestashop-1-7-beta-1-open-for-feedback/)! [Test is now](https://www.prestashop.com/en/developers-versions)!</i>
 
 <div class="alert alert-note" role="alert">
@@ -402,4 +402,5 @@ In the meantime, we advise you to dive into the code of this 1.7-specific module
     </ul>
   </li>
 </ul>
+
 </div>

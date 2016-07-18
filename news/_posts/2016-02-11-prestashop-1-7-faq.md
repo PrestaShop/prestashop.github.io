@@ -8,8 +8,9 @@ icon: icon-chat-alt
 tags: [1.7]
 ---
 
-The development team is hard at work on PrestaShop 1.7, making sure the first beta contains everything they want it to be. We’re approaching the day when we can release this beta version, and it is therefore high time that we’d answer the questions that we received about this new major version.<br/><br/>
-<i>Update: [Beta 1 was released on June 2nd, 2016](http://build.prestashop.com/news/prestashop-1-7-beta-1-open-for-feedback/)! [Test is now](https://www.prestashop.com/en/developers-versions)!</i>
+The development team is hard at work on PrestaShop 1.7, making sure the first beta contains everything they want it to be. We’re approaching the day when we can release this beta version, and it is therefore high time that we’d answer the questions that we received about this new major version.<br/>
+<br/>
+<i>Update: [Beta 2 was released on July 18th, 2016](http://build.prestashop.com/news/prestashop-17-beta2/)! [Test is now](https://www.prestashop.com/en/developers-versions)!</i>
 
 <div class="alert alert-note" role="alert">
 <p>Note that this article aims to compile the latest news about 1.7, and will therefore be updated as new information is confirmed.</p>
@@ -18,12 +19,12 @@ The development team is hard at work on PrestaShop 1.7, making sure the first be
 <div class="alert alert-important" role="alert">
 <p>PrestaShop 1.7 is a work in progress, and is currently still under development!
 
-You can <a href="https://www.prestashop.com/en/developers-versions">download and test PrestaShop 1.7.0.0 Beta 1 right now</a>!
+You can <a href="https://www.prestashop.com/en/developers-versions">download and test PrestaShop 1.7.0.0 Beta 2 right now</a>!
 </p> 
 
 <p>This FAQ gives you the current state of 1.7, not the final one, and we're only in beta :)</p>
 
-<p>Current version of this FAQ: 1.4. <br/>
+<p>Current version of this FAQ: 1.5. <br/>
 The changelog is at the bottom of the FAQ.</p>
 </div>
 
@@ -35,9 +36,12 @@ The changelog is at the bottom of the FAQ.</p>
 
 ### When is version 1.7.0.0 going to be released?
 
-The first Beta version was released on June 2nd, 2016. There is no set date for the stable release, yet, other than “when it’s ready”.
+The first Beta version was released on June 2nd, 2016; the second one on July 18th. There is currently no set date for the stable release, yet, other than “when it’s ready”.
 
-The release of the first Beta version starts a period of intensive testing and debugging for the PrestaShop developers, with the help of the whole community: we need YOU to test this new version of PrestaShop. Change the settings, browse the default theme, check if the modules that you created still work as-is (or with tiny design adaptations), etc. And most importantly, let us know about your findings!
+The release of this second Beta version is another important milestone in the current period of intensive testing and debugging by the PrestaShop developers.<br/>
+While all hands are on deck, we couldn't do it without the help of the whole community: we need YOU to test this new version of PrestaShop.<br/>
+Change the settings, browse the default theme, check if the modules that you created still work as-is (or with tiny design adaptations), etc. And most importantly, let us know about your findings!<br/>
+[Update your module's code if needs be](http://build.prestashop.com/news/module-development-changes-in-17/), and check out the [current theme documentation](https://github.com/PrestaShop/docs/blob/master/TABLE%20OF%20CONTENT.md) (still in Beta too - [let us know if something is amiss](https://github.com/PrestaShop/docs/issues)!)
 
 
 ### What will be in PS 1.7?
@@ -125,7 +129,7 @@ As for server capability, well, let's just say "the more the better" for now, bu
 ### Where is the development source code for PS 1.7?
 
 The bulk of the 1.7 work is being done on [the ‘develop’ branch of the PrestaShop GitHub repository](https://github.com/PrestaShop/PrestaShop/tree/develop).<br/>
-You can download it and test it right now -- and give us feedback!
+You can download it and test it right now -- and [give us feedback](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)!
 
 
 ### Can anyone install the development version, available on GitHub?
@@ -170,7 +174,7 @@ The two architectures will coexist while we switch more back office pages to the
 
 ### Why Symfony 2 and not 3?
 
-In effect, PrestaShop 1.7 should be able to work with Symfony 3, but for now we're targeting the current LTS of Symfony 2, version 2.8.6. We may target version 3 in a later version of PrestaShop.
+Symfony started as the 2.8 version, without the backward-compatibility code. Therefore, PrestaShop 1.7 should be able to work with Symfony 3 once it is released, but for now we're targeting the current LTS of Symfony 2, version 2.8.6. We may target version 3 in a later version of PrestaShop.
 
 
 ## Theming changes
@@ -182,7 +186,7 @@ To be honest, yes. It’s a necessary evil. We have specific plans related to th
 
 ### What’s a Starter Theme?
 
-We call Starter Theme our minimal PrestaShop theme: it is feature-complete but has no styling, and thus nothing to take away.<br/>
+We call [Starter Theme](https://github.com/PrestaShop/StarterTheme/) our minimal PrestaShop 1.7 theme: it is feature-complete but has no styling, and thus nothing to take away.<br/>
 But wait… no styling?! It is not to be used as-is, for sure, but it should be perfect for a designer: turning the Starter Theme into a real, production-ready theme will be very easy, and much faster than before.
 
 
@@ -201,9 +205,10 @@ This is why the PrestaShop Addons marketplace will only accept 1.7 themes that u
 
 ### Will the Starter Theme or the default theme use Bootstrap?
 
-We’re not imposing anything in the Starter Theme, so Bootstrap is not needed. Feel free!
+We’re not imposing anything in the Starter Theme, so Bootstrap is not needed. Feel free!<br/>
+That being said, the Addons marketplace will ony accept theme which rely on Bootstrap, so if you intend to sell your creation on Addons, you'd better use it.
 
-On the other hand, the default theme, built upon the Starter Theme foundations, will make use of Bootstrap 4.
+The default theme, built upon the Starter Theme foundations, will make use of Bootstrap 4.
 
 You might wonder why the Starter Theme is not simply using Bootstrap by default. That's because the two themes have different purposes.<br/>
 The Starter Theme is built for developer, agencies, and all those who build a PrestaShop store from scratch. They can choose the framework they want, and should not feel constrained by our choices. They can add Bootstrap to the Starter Theme, but that's their choice when tailoring a theme for a client. The audience of the Starter Theme is therefore much wider than that of Addons contributors.<br/>
@@ -233,7 +238,7 @@ The Starter Theme and the default 1.7 theme use Smarty -- but contrary to the 1.
 Most of the work on the new default theme and the 1.7 theme system has been in extracting all the business logic from the templates and a lot of business logic from controllers too. It makes it a much better foundation than the 1.6 system for further improvements. 
 
 
-### What’s the story about a UI KIt?
+### What’s the story about a UI Kit?
 
 Oh, you heard about the 1.7 UI Kit? Great!<br/>
 We built a whole UI Kit for the back office PrestaShop 1.7, and are making it publicly available so that designers and developers can build interfaces which are consistent in style with the administration interface.
@@ -241,7 +246,7 @@ We built a whole UI Kit for the back office PrestaShop 1.7, and are making it pu
 Check its reference documentation here: [http://build.prestashop.com/prestashop-ui-kit/](http://build.prestashop.com/prestashop-ui-kit/)<br />
 Check its code here: [https://github.com/PrestaShop/prestashop-ui-kit](https://github.com/PrestaShop/prestashop-ui-kit)
 
-Note that it is still a work in progress, and should not be considered stable until 1.7 is released.
+Note that it is still a work in progress, and should not be considered stable until 1.7 is released. It currently only works in the new back office pages: the Product page and the Modules page.
 
 
 ### Where is the 1.7 Designer documentation?
@@ -267,6 +272,8 @@ Modules which target the theme will also need to be adapted to the new way theme
 Modules built for PrestaShop 1.6 will mostly still work with 1.7 (apart from payment modules, which have seen an small API change -- see two sections below). Their presentation code will probably have to be reworked (to different extents depending on the module) in order to look good.
 
 You can think of this side effect in the same way as if we only refactored the Product page to a new design/CSS in a regular major version: the modules’ JavaScript and CSS code would have to be adapted in the same way.
+
+While the Developer Doc is being updated to 1.7, you can read [this article about module development changes in PS 1.7.0.0](http://build.prestashop.com/news/module-development-changes-in-17/).
 
 
 ### Is PrestaShop 1.7 switching from Smarty to Twig?
@@ -399,6 +406,17 @@ In the meantime, we advise you to dive into the code of this 1.7-specific module
       <li>Updated "When is version 1.7.0.0 going to be released?" question.</li>
       <li>Reworded/reorganized the "What will be in PS 1.7?" question a bit.</li>
       <li>Added link in the "Where is the 1.7 Developer documentation?" questions.</li>
+    </ul>
+  </li>
+  <li>1.5 (2016-07-18): 
+    <ul>
+      <li>Beta 2 has been released! <a href="http://build.prestashop.com/news/prestashop-17-beta2/">Test it now</a>!</li>
+      <li>Updated the "When is version 1.7.0.0 going to be released?" question.</li>
+      <li>Added a proper Forge link in the "Where is the development source code for PS 1.7?" question.</li>
+      <li>Added more details to the "Why Symfony 2 and not 3?" question.</li>
+      <li>Added more details to the "Will the Starter Theme or the default theme use Bootstrap?" question.</li>
+      <li>Added more details to the "What’s the story about a UI Kit?" question.</li>
+      <li>Added link to Build article in "Will 1.6 module still work with PrestaShop 1.7?" questions.
     </ul>
   </li>
 </ul>

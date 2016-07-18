@@ -14,7 +14,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 
 ## General messages
 
-We're getting real close to a Beta 2 release? Are you ready? :)
+We're getting real close to a Beta 2 release! Are you ready? :)
 
 Have you [tried one of your modules in 1.7](http://build.prestashop.com/news/module-development-changes-in-17/)? Have you tried to create a 1.7 theme? How did it go?<br/>
 [Give us your feedback](http://build.prestashop.com/news/prestashop-1-7-beta-1-open-for-feedback/)!

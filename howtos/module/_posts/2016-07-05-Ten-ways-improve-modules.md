@@ -15,6 +15,10 @@ Hopefully, these tips will increase your development speed and save you lots and
 
 Here is a list of very very useful tools and features. Prepare for some technical stuff as we're going to cover some of them in depth.
 
+* TOC
+{:toc}
+
+
 ### 1. Use an Integrated Development Environment
 Using an integrated development environment such as PhpStorm or NetBeans is a great way to improve your productivity.
 Tools such as these come with dozens of nifty features out-of-the-box to develop quicker... a lot quicker!

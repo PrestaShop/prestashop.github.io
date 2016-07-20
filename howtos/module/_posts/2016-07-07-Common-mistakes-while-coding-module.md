@@ -6,7 +6,7 @@ date: 2016-07-07 8:07:11
 author: [ kpodemski ]
 icon: icon-bug
 tags: [ howto, tutorial, modules ]
-published: true
+published: false
 ---
 
 PrestaShop has been around for a many years, thousands of modules were made, thousands of developers was able to create modules or themes, yet we still see a lot of many simple mistakes made by developers which can be easily avoided.

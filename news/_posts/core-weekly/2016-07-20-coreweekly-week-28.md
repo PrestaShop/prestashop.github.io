@@ -24,7 +24,7 @@ Have you [tried one of your modules in 1.7](http://build.prestashop.com/news/mod
 
 Want to help things go faster? There are several ways: 
 
- * [Test the Beta version](http://build.prestashop.com/news/prestashop-1-7-beta-1-open-for-feedback/) (or better, test [the current development version, straight from GitHub](https://github.com/PrestaShop/PrestaShop/tree/develop));
+ * [Test the Beta version](http://build.prestashop.com/news/prestashop-17-beta2/) (or better, test [the current development version, straight from GitHub](https://github.com/PrestaShop/PrestaShop/tree/develop));
  * [Report issues on the Forge](http://forge.prestashop.com/secure/CreateIssue!default.jspa?selectedProjectId=11322&issuetype=1) (or [confirm issues that are already listed](http://forge.prestashop.com/browse/BOOM-738?jql=project%20%3D%20BOOM%20AND%20created%3E%3D-1w%20ORDER%20BY%20created%20DESC) - use the search engine!); 
  * Fix issues by [submitting a pull request](https://github.com/PrestaShop/PrestaShop/pulls) (or confirm that a submitted pull request does indeed fix the presented issue); 
  * Help improve the [1.7 tech documentation](https://github.com/PrestaShop/docs) (both for themes and modules), with issues and pull requests.
@@ -37,7 +37,7 @@ The 1.7 Project FAQ is always available here: [http://build.prestashop.com/news/
 
 Let's review the merged pull-requests on the ['develop' branch](https://github.com/PrestaShop/PrestaShop/tree/develop) since the last Core Weekly Report!
 
-_Note that between Beta 1 and the Bastille Day, it was a slow week :)_
+_Note that between Beta 2 and the Bastille Day, it was a slow week :)_
  
  
 ### Front office (including the default theme, named "Classic", based upon the [Starter Theme](https://github.com/PrestaShop/PrestaShop/tree/develop/themes/classic))
@@ -52,7 +52,7 @@ _Note that between Beta 1 and the Bastille Day, it was a slow week :)_
  * [5853](https://github.com/PrestaShop/PrestaShop/pull/5853): Add translation domains to controllers, by @alexeven.
  * [5858](https://github.com/PrestaShop/PrestaShop/pull/5858): Update module cards button design, by @nihco2.
  * [5864](https://github.com/PrestaShop/PrestaShop/pull/5864): Fix undefined trans method, by @maximebiloe.
- * [5873](https://github.com/PrestaShop/PrestaShop/pull/5873): Fix NaN on product price and image settings position, by @alexeven.
+ * [5873](https://github.com/PrestaShop/PrestaShop/pull/5873): Fix NaN on product price and image settings position, by @maximebiloe.
 
 
 ### Installer

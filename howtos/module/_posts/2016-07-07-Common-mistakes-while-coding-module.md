@@ -9,7 +9,7 @@ tags: [ howto, tutorial, modules ]
 published: false
 ---
 
-PrestaShop has been around for many years, during which thousands of modules were made by thousands of developers, yet we still see the same simple mistakes being made, even thought they could easily be avoided.
+PrestaShop has been around for many years, during which thousands of modules were made by thousands of developers, yet we still see the same simple mistakes being made, even though they could easily be avoided.
 
 Here is a list of 10+ common mistakes when coding a PrestaShop module, with a short information on how to avoid them.
 
@@ -31,7 +31,7 @@ How to avoid this? Always use PrestaShop's `_DB_PREFIX_` constant, which is the 
 
 ### 2. Making sure your module can be translated
 
-PrestaShop 1.6 has an amazing translations system. Users can easily translate themes and modules from their back office, but not all themes/modules are available there, why so? Some module developers still forget to make their creation translatable, or make mistakes by using not the proper code for a translations.
+PrestaShop 1.6 has an amazing translations system. Users can easily translate themes and modules from their back office, but not all themes/modules are available there, why so? Some module developers still forget to make their creation translatable, or make mistakes by using not the proper code for a translation.
 
 Remember:
 
@@ -48,7 +48,7 @@ Remember:
 `Mail::l('Translatable text')`
 
 - Translations inside PDF files:
-`PDF:l('Translatable text')`
+`PDF::l('Translatable text')`
 
 Remember to use English as your default language in translations! Indeed, it is always easier to find people to translate from English than other languages.
 
@@ -57,15 +57,15 @@ Note that PrestaShop 1.7 completely [updates the way translation is defined](htt
 
 ### 3. Data validation - do not trust your users or yourself!
 
-Recent events show that even the most popular modules or themes can be affected security flow and exploited by hackers. There are a few simple steps which will help you keep your modules secure:
+Recent events show that even the most popular modules or themes can be affected by security flaws and exploited by hackers. There are a few simple steps which will help you keep your modules secure:
 
 - Always check the input data: use `Tools::getValue('var')` instead of `$_POST['var']`, `$_GET['var']`.
-- [Type hinting](http://php.net/manual/en/language.oop5.typehinting.php) makes sure the value has the correct type: use `(int)`, `(bool)`, `(float)` properly, check the public methods available in the [`classes/Validate.php`](https://github.com/PrestaShop/PrestaShop/blob/develop/classes/Validate.php), such as  [`isUnsignedInt()`](https://github.com/PrestaShop/PrestaShop/blob/develop/classes/Validate.php#L686-L695).
+- [Type hinting](http://php.net/manual/en/language.oop5.typehinting.php) makes sure the value has the correct type: use `(int)`, `(bool)`, `(float)` properly, check the public methods available in the [`classes/Validate.php`](https://github.com/PrestaShop/PrestaShop/blob/develop/classes/Validate.php) file, such as  [`isUnsignedInt()`](https://github.com/PrestaShop/PrestaShop/blob/develop/classes/Validate.php#L686-L695).
 - The PrestaShop token is your friend: always check the token when doing action for logged in customers. Need an example?
 
 {% gist kpodemski/13a33eba6b43e9b6db7d29e491104ae1 %}
 
-  You can also check the token for guests users: I suggested [these two methods](https://github.com/PrestaShop/PrestaShop/pull/5863/files).
+  You can also check the token for guest users: I suggested [these two methods](https://github.com/PrestaShop/PrestaShop/pull/5863/files).
 
 - Secure your files: files outside your module's base file (such as `ajax.php`, `upload.php`, etc.) should have a check at their very beginning in order to make sure they cannot be triggered directly. Here is example:
 
@@ -93,7 +93,7 @@ This code will not allow to install the module in countries other than France an
 
 If you are using the `displayHeader` hook to add features to the Product Page (for instance), do not use this code if you're not on page where you have a single product.
 
-You can easily contextualize your code by using simple `if` statements:
+You can easily contextualize your code by simply using `if` statements:
 
 {% highlight php %}
 public function hookDisplayHeader($params)
@@ -108,18 +108,18 @@ public function hookDisplayHeader($params)
 {% endhighlight %}
 
 Quick tip: it's worth noting that if you want to get some information from the Product object, you can do this with this code:
-`$product = $this->context->controller->getProduct()`.<br/>
+`$product = $this->context->controller->getProduct()`.  
 There is no need to do `new Product(...)`. This code will work on a single-product page.
 
 
-### 6. Too much going on in your __constructor
+### 6. Too much going on in your \_\_constructor
 
 Yes, this can be tricky. Very often I see modules where developers try to do some stuff in the `__construct` method of their module. It is Not Good. Definitely. Why? Because this code will therefore be triggered on the front office, the back office Modules page, and a few other pages. Be responsible, place your code in hooks, or target a specific page like it was described in point #5.
 
 
 ### 7. Conflicts, conflicts everywhere!
 
-So you've created an amazing carousel with products selected from back office, proudly using [owlCarousel](http://www.owlgraphic.com/owlcarousel/), [slick.js](http://kenwheeler.github.io/slick/) or any other popular library. Great!<br/>
+So you've created an amazing carousel with products selected from back office, proudly using [owlCarousel](http://www.owlgraphic.com/owlcarousel/), [slick.js](http://kenwheeler.github.io/slick/) or any other popular library. Great!  
 Now a customer bought another carousel module, one with product reviews, and it turns out that this module is using the same library: now nothing is really working.
 
 What can we do to avoid this problem? Well, there's no 100%-safe solution for this problem, but you, as a Good Developer, can be nice to other developers (or theme authors), and allow your customers to disable loading of libraries from your module. Take the time to add a section in your Settings called "Troubleshooting" for example, and create a settings where your user can select which libraries can by turned off from your module.

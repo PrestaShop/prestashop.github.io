@@ -17,7 +17,7 @@ Here is the latest report to inform you of what has been going on [PrestaShop tr
 ### Translations for PrestaShop 1.7
 
 One big news is that we recently uploaded translation for [PrestaShop 1.7](), so there's more translation to do! [Read all about it here](http://build.prestashop.com/news/translations-prestashop-17/).
-The other information is that we're using a **new translation system**, so the project organization is different (and hopefully more convenient for translatorts). You'll find all you need to know in [this article](http://build.prestashop.com/news/new-translation-system-prestashop-17/).
+The other information is that we're using a **new translation system**, so the project organization is different (and hopefully more convenient for translators). You'll find all you need to know in [this article](http://build.prestashop.com/news/new-translation-system-prestashop-17/).
 
 ### Updated 1.6 translations
 

@@ -2,11 +2,11 @@
 layout: post
 title:  "10+ common mistakes while coding a PrestaShop module"
 subtitle: "Do you commit these mistakes? Do not make them further."
-date: 2016-07-20 17:10:00
+date: 2016-07-25 09:10:00
 author: [ kpodemski ]
 icon: icon-bug
 tags: [ howto, tutorial, modules ]
-published: false
+published: true
 ---
 
 PrestaShop has been around for many years, during which thousands of modules were made by thousands of developers, yet we still see the same simple mistakes being made, even though they could easily be avoided.

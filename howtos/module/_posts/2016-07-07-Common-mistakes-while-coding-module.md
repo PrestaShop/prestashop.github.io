@@ -15,7 +15,7 @@ Here is a list of 10+ common mistakes when coding a PrestaShop module, with a sh
 
 <div class="alert alert-note" role="alert">
 <h4><i class='icon-file'></i> Note</h4>
-Several tips only apply to PrestaShop 1.5-1.6 module development. [PrestaShop 1.7 changes a few things](http://build.prestashop.com/news/module-development-changes-in-17/)!
+Several tips only apply to PrestaShop 1.5-1.6 module development. <a href="http://build.prestashop.com/news/module-development-changes-in-17/">PrestaShop 1.7 changes a few things</a>!
 </div>
 
 * TOC
@@ -169,7 +169,7 @@ Even if you don't agree with some of its rules, you shouldn't ignore the Validat
 
 ### 12. Inventing the wheel again
 
-You'd like to do ajaxed autocomplete? Or maybe create a settings form for your module? Check how it's done with native modules, be familiar with `[HelperForm](http://doc.prestashop.com/display/PS16/Using+the+HelperForm+class)`, `[HelperOptions](http://doc.prestashop.com/display/PS16/Using+the+HelperOptions+class)`, and read code! Read the [code of the Core](https://github.com/PrestaShop/PrestaShop/tree/1.6.1.x), analyze [native modules](https://github.com/PrestaShop/PrestaShop/tree/1.6.1.x/modules), analyze open-source modules. 
+You'd like to do ajaxed autocomplete? Or maybe create a settings form for your module? Check how it's done with native modules, be familiar with [`HelperForm`](http://doc.prestashop.com/display/PS16/Using+the+HelperForm+class), [`HelperOptions`](http://doc.prestashop.com/display/PS16/Using+the+HelperOptions+class), and read code! Read the [code of the Core](https://github.com/PrestaShop/PrestaShop/tree/1.6.1.x), analyze [native modules](https://github.com/PrestaShop/PrestaShop/tree/1.6.1.x/modules), analyze open-source modules. 
 
 Developers often don't know how something is constructed, and they are willing to sit for 2-3 hours more in order create something by themselves, without reading how it's already done in different modules or places of the back office. If you want to be a better developer of PrestaShop's modules, look how many features and tools PrestaShop's API already provides you with.
 

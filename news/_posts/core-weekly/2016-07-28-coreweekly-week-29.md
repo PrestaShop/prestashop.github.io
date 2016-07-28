@@ -14,7 +14,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 
 ## General messages
 
-[We released Beta 2 of PrestaShop 1.7](http://build.prestashop.com/news/prestashop-17-beta2/)! last week. Did you take the time to have a look at it?
+[We released Beta 2 of PrestaShop 1.7](http://build.prestashop.com/news/prestashop-17-beta2/) last week! Did you take the time to have a look at it?
 
 Want to help things go faster? There are several ways: 
 

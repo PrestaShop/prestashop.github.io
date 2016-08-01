@@ -25,10 +25,10 @@ The release of this Beta 3 is another step in the current period of intensive te
 
 <br/>
 
-**PrestaShop 1.7.0.0 is still in development**! This new Beta is a way for us to give you an update package to test before we enter the RC phase. Go for it!<br/>
+**PrestaShop 1.7.0.0 is still in development**! This new Beta is a way for us to give you an updated package to test before we enter the RC phase. Go for it!<br/>
 Install the Beta 3 version as a test store, then play with it – and [give us your feedback](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)!
 
-We know there are plenty of issues that must be lying around, and many "quick wins", meaning things that can be solved with a simple PR. And this is where YOU can play an important part!
+We know there are plenty of issues that must be lying around, and many "quick wins", meaning things that can be solved with a simple PR and which have a positive impact for the user. And this is where YOU can play an important part!
 We welcome big fixes with pleasure and cookies :) Go forth and [make that PR](https://github.com/PrestaShop/PrestaShop/tree/develop)!
 
 Change the settings, browse the default theme, check if the modules that you created still work as-is (or with tiny design adaptations), etc. And most importantly, let us know about your findings!<br/>

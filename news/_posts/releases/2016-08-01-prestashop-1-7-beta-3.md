@@ -46,16 +46,16 @@ Please note that we are not looking for feedback on the overall technical or des
 
 Here are the most notable changes since [the second Beta version](http://build.prestashop.com/news/prestashop-17-beta2/):
 
- * #5865: Multiple integration bugfixes.
- * #5868: Asynchronous loading of product combinations.
- * #5870: Add taxes to modal and a link to product detail in summary.
- * #5882: Design optimizations in cart and checkout.
- * #5886: Rename 'opt-in' into 'Partner offers'.
- * #5889: Remove password variable from emails.
- * #5893: Indicate carrier delay on order confirmation.
- * #5909: Upgrade an uploaded module when already installed.
- * #5911: Do not display new products in the BO listing until they are saved.
- * #5920: Disable bulk action while combinations are loading.
+ * [5865](https://github.com/PrestaShop/PrestaShop/pull/5865): Multiple integration bugfixes.
+ * [5868](https://github.com/PrestaShop/PrestaShop/pull/5868): Asynchronous loading of product combinations.
+ * [5870](https://github.com/PrestaShop/PrestaShop/pull/5870): Add taxes to modal and a link to product detail in summary.
+ * [5882](https://github.com/PrestaShop/PrestaShop/pull/5882): Design optimizations in cart and checkout.
+ * [5886](https://github.com/PrestaShop/PrestaShop/pull/5886): Rename 'opt-in' into 'Partner offers'.
+ * [5889](https://github.com/PrestaShop/PrestaShop/pull/5889): Remove password variable from emails.
+ * [5893](https://github.com/PrestaShop/PrestaShop/pull/5893): Indicate carrier delay on order confirmation.
+ * [5909](https://github.com/PrestaShop/PrestaShop/pull/5909): Upgrade an uploaded module when already installed.
+ * [5911](https://github.com/PrestaShop/PrestaShop/pull/5911): Do not display new products in the BO listing until they are saved.
+ * [5920](https://github.com/PrestaShop/PrestaShop/pull/5920): Disable bulk action while combinations are loading.
 
 
 See the [complete list of merged PRs since building Beta 2 (built on July 13th) here](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr%20is%3Aclosed%20base%3Adevelop%20merged%3A2016-07-13..2016-07-28%20sort%3Acreated-asc%20).

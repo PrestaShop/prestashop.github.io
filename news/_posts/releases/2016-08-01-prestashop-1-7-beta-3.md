@@ -14,7 +14,7 @@ tags:
 - development
 ---
 
-Hot on the heels of Beta 2, here's [PrestaShop 1.7.0.0](https://www.prestashop.com/en/1.7) Beta 3, read for you to test and give feedback about!
+Hot on the heels of Beta 2, here's [PrestaShop 1.7.0.0](https://www.prestashop.com/en/1.7) Beta 3, ready for you to test and give feedback about!
 
 As always during this period of testing and fixing, we need feedback from any merchant, service provider, module developer or theme designer who is reading this.
 

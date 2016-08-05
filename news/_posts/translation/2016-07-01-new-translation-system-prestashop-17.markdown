@@ -67,7 +67,10 @@ PrestaShop 1.7 having introduced the use of Symfony framework, we’re adapting 
 
 
 ### What’s changing from now on
-* Any string should call **Symfony’s translator**.
+
+* We are ditching our `l()` PHP method in favor of [**Symfony’s Translator component method `trans()`**](http://symfony.com/doc/current/components/translation/usage.html).
+  * Smarty files will still be able to use `{l}`, but we're ditching its `mod=` modifier and will use the new `d=` one, for domains.
+* Each string will have a compulsory context, in the form of a domain. See below for an explanation of the domain structure.
 * We’re adding a **compulsory array() parameter for variables**, whether there are variables in the string or not. It should be here in all cases, in .php files.
 * **Variables should be named clearly** after what they depict (i.e.%productname%), and no longer be a mere %s or %1$s.
 * **All strings should have a domain**, for instance ‘Shop.Notifications.Error’.
@@ -75,7 +78,7 @@ PrestaShop 1.7 having introduced the use of Symfony framework, we’re adapting 
 The translation files structure and format in PrestaShop will also change:
 
 * There will be folders, matching the domain architecture.
-* Files will be in [.xlf](https://en.wikipedia.org/wiki/XLIFF) format, instead of .php. They will contain the source strings too (a big big improvement!).
+* Translation files will be in [.xlf](https://en.wikipedia.org/wiki/XLIFF) format, instead of .php. They will contain the source strings too (a big big improvement!).
 * Files will be named like “Domains.Locale.xlf”, e.g. “Error.es-ES.xlf” for the *Shop.Notifications.Error* domain, and included in the relevant folders (“Shop > Notification” in this example)
 
 #### Calling Symfony’s translator
@@ -97,10 +100,10 @@ That way, translators will have much more context from the source string than be
 
 Please refer to the following pull-requests to see how we worked on the adaptation:
 
-#[5722](https://github.com/PrestaShop/PrestaShop/pull/5722/files) - Remove PrestaShop Translator Adapter and use Symfony default one
-#[5754](https://github.com/PrestaShop/PrestaShop/pull/5754) - Adapting the module page
-#[5707](https://github.com/PrestaShop/PrestaShop/pull/5707/files) - Adapting the Classic theme
-#[5](https://github.com/PrestaShop/ps_imageslider/pull/5/files)  - Adapting ImageSlider module
+* #[5722](https://github.com/PrestaShop/PrestaShop/pull/5722/files) - Remove PrestaShop Translator Adapter and use Symfony default one
+* #[5754](https://github.com/PrestaShop/PrestaShop/pull/5754) - Adapting the module page
+* #[5707](https://github.com/PrestaShop/PrestaShop/pull/5707/files) - Adapting the Classic theme
+* ps\_imageslider's #[5](https://github.com/PrestaShop/ps_imageslider/pull/5/files)  - Adapting ImageSlider module
 
 ### What it means for you
 

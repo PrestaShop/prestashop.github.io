@@ -70,10 +70,9 @@ PrestaShop 1.7 having introduced the use of Symfony framework, we’re adapting 
 
 * We are ditching our `l()` PHP method in favor of [**Symfony’s Translator component method `trans()`**](http://symfony.com/doc/current/components/translation/usage.html).
   * Smarty files will still be able to use `{l}`, but we're ditching its `mod=` modifier and will use the new `d=` one, for domains.
-* Each string will have a compulsory context, in the form of a domain. See below for an explanation of the domain structure.
+* * **All strings should have a domain**, for instance ‘Shop.Notifications.Error’. See below for an explanation of the domain structure.
 * We’re adding a **compulsory array() parameter for variables**, whether there are variables in the string or not. It should be here in all cases, in .php files.
 * **Variables should be named clearly** after what they depict (i.e.%productname%), and no longer be a mere %s or %1$s.
-* **All strings should have a domain**, for instance ‘Shop.Notifications.Error’.
 
 The translation files structure and format in PrestaShop will also change:
 

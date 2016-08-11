@@ -57,7 +57,7 @@ Let's review the merged pull-requests on the ['develop' branch](https://github.c
 ### Back office
 
  * [5134](https://github.com/PrestaShop/PrestaShop/pull/5134): Delete unused old images. Thank you @martinfojtik!
- * [5841](https://github.com/PrestaShop/PrestaShop/pull/5841): Allow accessories having | in the name. Thank you @masoko!
+ * [5841](https://github.com/PrestaShop/PrestaShop/pull/5841): Allow accessories having \| in the name. Thank you @masoko!
  * [5865](https://github.com/PrestaShop/PrestaShop/pull/5865): Multiple integration bugfixes, by @nihco2.
  * [5868](https://github.com/PrestaShop/PrestaShop/pull/5868): Asynchronous loading of product combinations, by @maximebiloe.
  * [5881](https://github.com/PrestaShop/PrestaShop/pull/5881): Improved design on module page, by @quetzacoalt91.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Do you speak PrestaShop? – July 2016 edition"
-subtitle: "Even better: do you speak PrestaShop 1.7?"
+subtitle: "Thanks to our community for this crazy month!"
 date:   2016-08-12 06:09:47
 author: alexeven
 icon: icon-world

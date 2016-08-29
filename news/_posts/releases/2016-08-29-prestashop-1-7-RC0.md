@@ -71,7 +71,7 @@ The main points are:
 See at the bottom of this article for the full list.
 
 
-### What is not in RC0?
+## What is not in RC0?
 
 Again, for the sake of transparency, here’s what we still intend to implement after RC0 and before we go stable:
 
@@ -81,7 +81,7 @@ Back office translation update.
 Mobile-ready front office.
 
 
-### So, what's next?
+## So, what's next?
 
 We’re still hard at work on version 1.7.0.0, making sure it is a great release for the community.
 

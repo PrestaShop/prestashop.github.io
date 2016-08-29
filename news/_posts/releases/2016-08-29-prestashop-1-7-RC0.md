@@ -71,14 +71,14 @@ The main points are:
 See at the bottom of this article for the full list.
 
 
-## What is not in RC0?
+## What's not in RC0?
 
 Again, for the sake of transparency, here’s what we still intend to implement after RC0 and before we go stable:
 
-Catalog mode.
-Front office B2B features.
-Back office translation update.
-Mobile-ready front office.
+* Catalog mode.
+* Front office B2B features.
+* Back office translation update.
+* Mobile-ready front office.
 
 
 ## So, what's next?

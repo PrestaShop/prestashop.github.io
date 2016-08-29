@@ -34,7 +34,7 @@ We have therefore decided to release RC0. Now is the time to work with us toward
 {:toc}
 
  
-## Why an RC0 and not and RC1?
+## Why an RC0 and not an RC1?
 
 Let's be transparent here: as the intro to this post shows, the community (you, dear reader!) has given us less and less feedback to work with. This can only mean that development of 1.7.0.0 is nearly perfect and ready for production, right? Or could it be that the community has exhausted all its feedback power? :)
 

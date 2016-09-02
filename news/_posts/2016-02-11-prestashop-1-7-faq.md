@@ -10,7 +10,7 @@ tags: [1.7]
 
 The development team is hard at work on PrestaShop 1.7, making sure the first beta contains everything they want it to be. We’re approaching the day when we can release this beta version, and it is therefore high time that we’d answer the questions that we received about this new major version.<br/>
 <br/>
-<i>Update: [Beta 2 was released on July 18th, 2016](http://build.prestashop.com/news/prestashop-17-beta2/)! [Test is now](https://www.prestashop.com/en/developers-versions)!</i>
+<i>Update: [RC0 was released on August 29th, 2016](http://build.prestashop.com/news/prestashop-17-beta2/)! [Test is now](https://www.prestashop.com/en/developers-versions)!</i>
 
 <div class="alert alert-note" role="alert">
 <p>Note that this article aims to compile the latest news about 1.7, and will therefore be updated as new information is confirmed.</p>
@@ -19,12 +19,12 @@ The development team is hard at work on PrestaShop 1.7, making sure the first be
 <div class="alert alert-important" role="alert">
 <p>PrestaShop 1.7 is a work in progress, and is currently still under development!
 
-You can <a href="https://www.prestashop.com/en/developers-versions">download and test PrestaShop 1.7.0.0 Beta 2 right now</a>!
+You can <a href="https://www.prestashop.com/en/developers-versions">download and test PrestaShop 1.7.0.0 RC0 right now</a>!
 </p> 
 
 <p>This FAQ gives you the current state of 1.7, not the final one, and we're only in beta :)</p>
 
-<p>Current version of this FAQ: 1.5. <br/>
+<p>Current version of this FAQ: 1.6. <br/>
 The changelog is at the bottom of the FAQ.</p>
 </div>
 
@@ -36,9 +36,9 @@ The changelog is at the bottom of the FAQ.</p>
 
 ### When is version 1.7.0.0 going to be released?
 
-The first Beta version was released on June 2nd, 2016; the second one on July 18th. There is currently no set date for the stable release, yet, other than “when it’s ready”.
+There is currently no set date for the stable release, yet, other than “when it’s ready”.
 
-The release of this second Beta version is another important milestone in the current period of intensive testing and debugging by the PrestaShop developers.<br/>
+The current alpha/Beta/RC phases are important milestones with intensive testing and debugging by the PrestaShop developers.<br/>
 While all hands are on deck, we couldn't do it without the help of the whole community: we need YOU to test this new version of PrestaShop.<br/>
 Change the settings, browse the default theme, check if the modules that you created still work as-is (or with tiny design adaptations), etc. And most importantly, let us know about your findings!<br/>
 [Update your module's code if needs be](http://build.prestashop.com/news/module-development-changes-in-17/), and check out the [current theme documentation](https://github.com/PrestaShop/docs/blob/master/TABLE%20OF%20CONTENT.md) (still in Beta too - [let us know if something is amiss](https://github.com/PrestaShop/docs/issues)!)
@@ -417,6 +417,12 @@ In the meantime, we advise you to dive into the code of this 1.7-specific module
       <li>Added more details to the "Will the Starter Theme or the default theme use Bootstrap?" question.</li>
       <li>Added more details to the "What’s the story about a UI Kit?" question.</li>
       <li>Added link to Build article in "Will 1.6 module still work with PrestaShop 1.7?" questions.
+    </ul>
+  </li>
+  <li>1.5 (2016-09-02): 
+    <ul>
+      <li>Beta 3 then RC0 were released! <a href="http://build.prestashop.com/news/prestashop-1-7-RC0/">Test it now</a>!</li>
+      <li>Updated the "When is version 1.7.0.0 going to be released?" question.</li>
     </ul>
   </li>
 </ul>

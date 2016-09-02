@@ -22,7 +22,7 @@ We know how the Open Source community at large works with new major versions: pa
 When a major versions is being developed, a few dedicated users do their best to report issue and provide fixes and improvements to be merged by the Core developers as time and (wo)manpower allows. Those users are a tremendous help, and what any Core team needs is for more professional users to give their feedback according to their own needs, BEFORE the 1.0.0 release.
 All Open Source project have to live through this.
 
-And this goes double for the PrestaShop community, indeed: while we have published 2 public alpha versions and 3 beta versions of PrestaShop 1.7.0.0, we received less and less feedback over time. Beta 3 saw a trickle of comments. At this point, a fourth beta seems pointless: we need to kickstart the RC phase. We need more people to get involved in testing 1.7.0.0 before it gets the stabel label.
+And this goes double for the PrestaShop community, indeed: while we have published 2 public alpha versions and 3 beta versions of PrestaShop 1.7.0.0, we received less and less feedback over time. Beta 3 saw a trickle of comments. At this point, a fourth beta seems pointless: we need to kickstart the RC phase. We need more people to get involved in testing 1.7.0.0 before it gets the stable label.
 
 We have therefore decided to release RC0. Now is the time to work with us towards a stable version. Thank you for contributing, with tests, feedback, patches and translations!
 

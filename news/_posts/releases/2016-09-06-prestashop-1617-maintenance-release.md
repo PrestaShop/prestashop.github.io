@@ -54,7 +54,7 @@ This release had 14 contributors, both from PrestaShop and from the Community at
 * @firstred
 * @jd440
 * @julienbourdeau
-* @kpodemsi
+* @kpodemski
 * @matthieume
 * @maximebiloe
 * @mcdado

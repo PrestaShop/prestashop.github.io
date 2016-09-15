@@ -218,7 +218,7 @@ Now, let’s see how things are organized for the strings from the back office.
 | Modules | Strings from the Modules page. |
 | Design | Strings from the “Design” section. |
 | Shipping | Strings from the “Shipping” section. |
-| Payment (megashopba) | Strings from the “Payment” section. |
+| Payment | Strings from the “Payment” section. |
 | International | Strings form the “International” section. |
 | Parameters | Content from the “Shop Parameters” and “Advanced Settings” sections. |
 

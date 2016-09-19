@@ -16,7 +16,7 @@ tags:
 
 Have you been waiting for a "stable enough" version of PrestaShop 1.7 in order to start truly testing this new major release? Well, consider yourself in luck, because today we are releasing the RC0 of PrestaShop -- not quite a first RC, but close enough for you to start testing and provide us with the necessary feedback to make 1.7 a good fit for your needs!
 
-![PrestaShop 1.7 Alpha 3 Release](/assets/images/2016/04/Badge1.7-Color.png)
+![PrestaShop 1.7 RC0 Release](/assets/images/2016/04/Badge1.7-Color.png)
 
 We know how the Open Source community at large works with new major versions: pay attention only once 1.0.0 is released, and wait for 1.0.1 for production use -- because, obviously, it fixes the most important issues.
 When a major versions is being developed, a few dedicated users do their best to report issue and provide fixes and improvements to be merged by the Core developers as time and (wo)manpower allows. Those users are a tremendous help, and what any Core team needs is for more professional users to give their feedback according to their own needs, BEFORE the 1.0.0 release.

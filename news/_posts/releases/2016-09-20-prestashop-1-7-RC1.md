@@ -58,12 +58,14 @@ Our answer remains the same: we want to release a quality 1.7. We cannot give yo
 The team is working on fixing those issues, and we need you to start testing it in order to make sure it is stable enough for everyone. We want the whole community to be proud of 1.7, and to be able to sincerely promote it to the whole community.
 
 But let's talk figures. Since RC0:
+
  * 96 Forge tickets were closed as "fixed":
    * 8 were blocking tickets.
    * 7 were critical tickets.
    * 75 were major tickets.
  
 What's left to be done, so far:
+
  * 71 Forge tickets, among which:
    * 3 blocking tickets.
    * 2 critical tickets.

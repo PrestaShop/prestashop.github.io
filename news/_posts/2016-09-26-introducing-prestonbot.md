@@ -21,15 +21,15 @@ We are continuously improving the way we work with GitHub, for instance we recen
 
 This is a summary of all the details asked to the contributor and why we may need it as maintainers:
 
-Questions | Why do we need it?
-Branch    | A simple check to ensure the contribution really concerns the branch it was submitted on.
-Description | The most important question: WHY should we accept this contribution, what is the problem encountered?
-Type | Is it a bug fix, an improvement or a new feature? Bug fixes are often privileged, and new features are refused in the `1.6.x` branch.
-Category | In case of a regression, prefixing commit names helps us figure out which code change is responsible for the issue. Also, this will help us to generate changelogs.
-BC Break | We accept [Backward Compatible](https://en.wikipedia.org/wiki/Backward_compatibility#Bugwards_compatible) breaks **only** for security purposes.
-Deprecations | Deprecations may be accepted if features are improved or removed.
-Fixed ticket | If you are fixing a [Forge issue]((http://forge.prestashop.com/), don't forget to tell it. We can then notify the reporter that the issue will be fixed thanks to you.
-How to test | Probably the *most important topic*: indicate how to best verify that this PR is correct. Contributions without testing instructions are mostly *never* checked.
+| Questions | Why do we need it?
+|----------|-------------
+| Description | The most important question: WHY should we accept this contribution, what is the problem encountered?
+| Type | Is it a bug fix, an improvement or a new feature? Bug fixes are often privileged, and new features are refused in the `1.6.x` branch.
+| Category | In case of a regression, prefixing commit names helps us figure out which code change is responsible for the issue. Also, this will help us to generate changelogs.
+| BC Break | We accept [Backward Compatible](https://en.wikipedia.org/wiki/Backward_compatibility#Bugwards_compatible) breaks **only** for security purposes.
+| Deprecations | Deprecations may be accepted if features are improved or removed.
+| Fixed ticket | If you are fixing a [Forge issue](http://forge.prestashop.com/), don't forget to tell it. We can then notify the reporter that the issue will be fixed thanks to you.
+| How to test | Probably the *most important topic*: indicate how to best verify that this PR is correct. Contributions without testing instructions are mostly *never* checked.
 
 Of course, this template can be improved, so don't hesitate to give us feedbacks about it.
 
@@ -56,7 +56,7 @@ Our own - "non developer" - team members are already enjoying the new GitHub sys
 ## What we hope to do with PrestonBot
 
 
-We'd like to improve again the validation system provided by PrestonBot, to help us manage more and more pull requests. 
+We'd like to improve again the validation system provided by PrestonBot, to help us manage more and more pull requests.
 
 For instance, we are aware that our [commit message conventions](http://doc.prestashop.com/display/PS16/How+to+write+a+commit+message) is not understood and
 we want PrestonBot to give you the right information to get your work accepted.
@@ -64,8 +64,8 @@ we want PrestonBot to give you the right information to get your work accepted.
 Then, PrestonBot can be able to add more labels regarding the pull request description: we will automatize the triage of contributions as most as possible,
 and focus our energy on review and merge.
 
-Finaly, we have some ideas to make the interaction between you and us (the core team) more enjoyable, introducing some mecanisms of gamification in the contribution process.
+Finally, we have some ideas to make the interaction between you and us (the core team) more enjoyable, introducing some mecanisms of gamification in the contribution process.
 
-We have listed on the Forge the ongoing issue related to this [topic](http://forge.prestashop.com/browse/BOOM-1363?jql=status%20%3D%20Open%20AND%20labels%20%3D%20Community), don’t hesitate to create new ones (using the « Community » label) to share your ideas on how we can work better together! And let us know what you think about PrestonBot. 
+We have listed on the Forge the ongoing issue related to this [topic](http://forge.prestashop.com/browse/BOOM-1363?jql=status%20%3D%20Open%20AND%20labels%20%3D%20Community), don’t hesitate to create new ones (using the « Community » label) to share your ideas on how we can work better together! And let us know what you think about PrestonBot.
 
 See you on [GitHub](https://github.com/PrestaShop/PrestaShop)!

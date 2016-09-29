@@ -8,7 +8,7 @@ icon: icon-penknife
 tags: [1.7, documentation]
 ---
 
-PrestaShop 1.7 is a major release: a lot of code has been refactored, new features have been added, and a new of building themes has been introduced. So, very early in the development release cycle, we decided to write more doc in order to support the designer and developers intending to switch to 1.7. 
+PrestaShop 1.7 is a major release: a lot of code has been refactored, new features have been added, and a new way of building themes has been introduced. So, very early in the development release cycle, we decided to write more doc in order to support the designers and developers intending to switch to 1.7. 
 
 The documentation's very first draft is now online: [http://developers.prestashop.com/](http://developers.prestashop.com/)
 

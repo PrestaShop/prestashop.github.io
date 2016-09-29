@@ -12,7 +12,7 @@ PrestaShop 1.7 is a major release, a lot of code has been refactored, new featur
 
 ## New website
 
-Historically, PrestaShop hosted itsdocumentation on [http://doc.prestashop.com](http://doc.prestashop.com), powered by Atlassian Confluence.  We thought it was no longer developer friendly  - you can't contribute easily, the design is outdated, it's too many clicks - so we decided to move to another software.
+Historically, PrestaShop hosted its documentation on [http://doc.prestashop.com](http://doc.prestashop.com), powered by Atlassian Confluence.  We thought it was no longer developer friendly  - you can't contribute easily, the design is outdated, it's too many clicks - so we decided to move to another software.
 
 As of today, the former website is still online and basically, we split the developer and end-users documentation.
 
@@ -33,7 +33,7 @@ Documentation has to be written in restructuredText.
 
 Since it's plain text files, it's versioned with Git and hosted on GitHub. Is there an easier way for you, as developers, to contribute?!
 
-Please open a pull request to fix or add anything. You canopen an issue if you want to request documentation about anything specific. For example: _"how to use the new product page hooks"_, or _"how to use the theme template in a module"_.
+Please open a pull request to fix or add anything. You can open an issue if you want to request documentation about anything specific. For example: _"how to use the new product page hooks"_, or _"how to use the theme template in a module"_.
 
 ### State of the documentation
 

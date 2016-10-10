@@ -46,7 +46,7 @@ Here’s what we still intend to implement before we go stable:
 
 * Fully mobile-ready front office -- still a handful of pages to be done.
 
-NOTE: The RC2 was built a few days ago in order to be tested, and a last-minute test on hosts showed that a recent PR from a contributor updated our usage of OpenSSL, making it nearly impossible to install RC2 on hosts which do not support a version of Open SSL lower than 1.0. This will be fixed in time for RC3.
+NOTE: The RC2 was built a few days ago in order to be tested, and a last-minute test on hosts showed that a recent PR from a contributor updated our usage of OpenSSL, making it nearly impossible to install RC2 on hosts which do not support a version of Open SSL lower than 1.0.1. This will be fixed in time for RC3.
 
 
 ## How far are we from a stable 1.7 release?

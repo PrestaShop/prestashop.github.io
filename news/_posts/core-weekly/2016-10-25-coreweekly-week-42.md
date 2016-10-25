@@ -75,7 +75,7 @@ Let's review the merged pull-requests on the ['develop' branch](https://github.c
  * [6688](https://github.com/PrestaShop/PrestaShop/pull/6688): Enable cache on guzzle requests, by @quetzacoalt91.
  * [6692](https://github.com/PrestaShop/PrestaShop/pull/6692): Clear 1.7.0.0.sql. Thank you @martinfojtik!
  * [6701](https://github.com/PrestaShop/PrestaShop/pull/6701): Let developer export themes easily, by @julienbourdeau.
- * [6709](https://github.com/PrestaShop/PrestaShop/pull/6709): Use _PARENT_THEME_NAME_ constant for consistency. Thank you @hubiktomas!
+ * [6709](https://github.com/PrestaShop/PrestaShop/pull/6709): Use \_PARENT\_THEME\_NAME\_ constant for consistency. Thank you @hubiktomas!
  * [6718](https://github.com/PrestaShop/PrestaShop/pull/6718): Add two new hooks actionAttributeCombinationSave/Delete, by @quetzacoalt91.
  * [6720](https://github.com/PrestaShop/PrestaShop/pull/6720): Add or update language with the new packs, by @maximebiloe.
  * [6726](https://github.com/PrestaShop/PrestaShop/pull/6726): Cleared cache when enable a theme, by @aleeks.

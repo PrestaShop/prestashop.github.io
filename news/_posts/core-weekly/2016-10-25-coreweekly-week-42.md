@@ -42,7 +42,7 @@ Let's review the merged pull-requests on the ['develop' branch](https://github.c
 
 ### Back office
 
- * [3915](https://github.com/PrestaShop/PrestaShop/pull/3915): Removed _includeContainer ; never more used. Thank you @prestamodule!
+ * [3915](https://github.com/PrestaShop/PrestaShop/pull/3915): Removed \_includeContainer ; never more used. Thank you @prestamodule!
  * 4452#: Fix advanced stock manager that prevented admin from removing stock quantity. Thank you @michaelhjulskov!
  * [6668](https://github.com/PrestaShop/PrestaShop/pull/6668): Fixed security problem on translation interface, by @aleeks.
  * [6677](https://github.com/PrestaShop/PrestaShop/pull/6677): Fix links to legacy module page, by @julienbourdeau.

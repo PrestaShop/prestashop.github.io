@@ -20,7 +20,8 @@ Continuing on our promise to support 1.6 with patch releases, we are happy to de
 [Download 1.6.1.8 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
 
-<div class="alert alert-important" role="alert">
+### Current issue when creating/editing a product in PS 1.5 and 1.6
+
 While we were packing version 1.6.1.8 for QA testing two weeks ago, <a href="https://developers.google.com/web/updates/2016/10/nic54">version 54 of the Google Chrome browser was released</a>. This is a significant update of this major browser, because <strong>it removes the ability to make synchronous XMLHttpRequest calls</strong> -- a method which is used in PrestaShop 1.5 & 1.6's Product Creation page.<br/>
 <br/>
 In effect, <strong>this makes it impossible to create or edit a product in all versions of PrestaShop 1.5 and 1.6</strong>. While this problematic behavior is not a bug from PrestaShop but <a href="https://xhr.spec.whatwg.org/#the-open()-method">a design decision from the W3C/WHATWG standards bodies</a> (applied by browser vendors after time of deprecation), all PrestaShop merchants might witness issues once the Chrome browser auto-updates to its latest version. <br/>
@@ -32,7 +33,9 @@ Also, <strong>make sure that your modules and themes DO NOT make use of synchron
 PrestaShop 1.6.1.8 does not contain the fix. We are planning for a quick v1.6.1.9 with this fix in place -- this way we can focus our QA testing for this version to just this issue. That forthcoming release will also explain how to patch previous versions of PrestaShop.<br/>
 <br/>
 While we are working on the issue, you should be able to have your Product Creation page work again by <a href="http://www.slimjet.com/chrome/google-chrome-old-version.php">installing Chrome 53</a> and <a href="https://www.chromium.org/administrators/turning-off-auto-updates">setting to not make automatic upgrades</a>.
-</div>
+
+
+### The usual
 
 As the version number indicates (as per [our SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)), this is the 8th patch release for PrestaShop 1.6.1.0.<br/>
 

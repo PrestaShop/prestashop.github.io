@@ -32,7 +32,7 @@ Also, <strong>make sure that your modules and themes DO NOT make use of synchron
 <br/>
 PrestaShop 1.6.1.8 does not contain the fix. We are planning for a quick v1.6.1.9 with this fix in place -- this way we can focus our QA testing for this version to just this issue. That forthcoming release will also explain how to patch previous versions of PrestaShop.<br/>
 <br/>
-While we are working on the issue, you should be able to have your Product Creation page work again by <a href="http://www.slimjet.com/chrome/google-chrome-old-version.php">installing Chrome 53</a> and <a href="https://www.chromium.org/administrators/turning-off-auto-updates">setting to not make automatic upgrades</a>.
+While we are working on the issue, you should be able to have your Product Creation page work again by <a href="http://www.slimjet.com/chrome/google-chrome-old-version.php">installing Chrome 53</a> and <a href="https://www.chromium.org/administrators/turning-off-auto-updates">setting it to not make automatic upgrades</a>.
 
 
 ### The usual

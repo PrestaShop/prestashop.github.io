@@ -10,7 +10,7 @@ tags: [1.7]
 
 The development team is hard at work on PrestaShop 1.7, making sure the first beta contains everything they want it to be. We’re approaching the day when we can release this beta version, and it is therefore high time that we’d answer the questions that we received about this new major version.<br/>
 <br/>
-<i>Update: [RC0 was released on August 29th, 2016](http://build.prestashop.com/news/prestashop-1-7-RC0/)! [Test is now](https://www.prestashop.com/en/developers-versions)!</i>
+<i>Update: [RC3 was released on October 27th, 2016](http://build.prestashop.com/news/prestashop-1-7-RC3/)! [Test is now](https://www.prestashop.com/en/developers-versions)!</i>
 
 <div class="alert alert-note" role="alert">
 <p>Note that this article aims to compile the latest news about 1.7, and will therefore be updated as new information is confirmed.</p>
@@ -19,12 +19,12 @@ The development team is hard at work on PrestaShop 1.7, making sure the first be
 <div class="alert alert-important" role="alert">
 <p>PrestaShop 1.7 is a work in progress, and is currently still under development!
 
-You can <a href="https://www.prestashop.com/en/developers-versions">download and test PrestaShop 1.7.0.0 RC0 right now</a>!
+You can <a href="https://www.prestashop.com/en/developers-versions">download and test PrestaShop 1.7.0.0 RC3 right now</a>!
 </p> 
 
 <p>This FAQ gives you the current state of 1.7, not the final one, and we're only in beta :)</p>
 
-<p>Current version of this FAQ: 1.6. <br/>
+<p>Current version of this FAQ: 1.7. <br/>
 The changelog is at the bottom of the FAQ.</p>
 </div>
 
@@ -36,12 +36,12 @@ The changelog is at the bottom of the FAQ.</p>
 
 ### When is version 1.7.0.0 going to be released?
 
-There is currently no set date for the stable release, yet, other than “when it’s ready”.
+There is currently no set date for the stable release yet, other than “when it’s ready”.
 
 The current alpha/Beta/RC phases are important milestones with intensive testing and debugging by the PrestaShop developers.<br/>
 While all hands are on deck, we couldn't do it without the help of the whole community: we need YOU to test this new version of PrestaShop.<br/>
 Change the settings, browse the default theme, check if the modules that you created still work as-is (or with tiny design adaptations), etc. And most importantly, let us know about your findings!<br/>
-[Update your module's code if needs be](http://build.prestashop.com/news/module-development-changes-in-17/), and check out the [current theme documentation](https://github.com/PrestaShop/docs/blob/master/TABLE%20OF%20CONTENT.md) (still in Beta too - [let us know if something is amiss](https://github.com/PrestaShop/docs/issues)!)
+[Update your module's code if needs be](http://build.prestashop.com/news/module-development-changes-in-17/), and check out the [developer & designer documentation](http://developers.prestashop.com/) (still in Beta too - [let us know if something is amiss](https://github.com/PrestaShop/docs/issues)!)
 
 
 ### What will be in PS 1.7?
@@ -251,7 +251,7 @@ Note that it is still a work in progress, and should not be considered stable un
 
 ### Where is the 1.7 Designer documentation?
 
-The Designer documentation is being worked on. Since the way themes work is still being worked on until we reach beta phase, it will not be released before the API is fully stabilized. [The current draft is available on GitHub](https://github.com/PrestaShop/docs), and you can contribute!
+The Designer documentation is being worked on. Since the way themes work is still being worked on until we reach beta phase, it will not be released before the API is fully stabilized. [The site is online](http://developers.prestashop.com/), and [you can contribute](https://github.com/PrestaShop/docs)!
 
 In the meantime, we advise you to dive into the code of [the new default theme](https://github.com/PrestaShop/PrestaShop/tree/develop/themes/classic) (currently named “Classic”).
 
@@ -267,13 +267,13 @@ There will be some impacts for modules which target the Product and Modules page
 Modules which target the theme will also need to be adapted to the new way themes work in 1.7. 
 
 
-### Will 1.6 module still work with PrestaShop 1.7?
+### Will 1.6 modules still work with PrestaShop 1.7?
 
 Modules built for PrestaShop 1.6 will mostly still work with 1.7 (apart from payment modules, which have seen an small API change -- see two sections below). Their presentation code will probably have to be reworked (to different extents depending on the module) in order to look good.
 
 You can think of this side effect in the same way as if we only refactored the Product page to a new design/CSS in a regular major version: the modules’ JavaScript and CSS code would have to be adapted in the same way.
 
-While the Developer Doc is being updated to 1.7, you can read [this article about module development changes in PS 1.7.0.0](http://build.prestashop.com/news/module-development-changes-in-17/).
+[The doc site is online](http://developers.prestashop.com/), and [you can contribute](https://github.com/PrestaShop/docs)!
 
 
 ### Is PrestaShop 1.7 switching from Smarty to Twig?
@@ -351,7 +351,7 @@ We will soon publish a guide on what to look for when updating your module.
 
 ### Where is the 1.7 Developer documentation?
 
-The Developer documentation is being worked on. [The current draft is available on GitHub](https://github.com/PrestaShop/docs), and you can contribute!
+The Developer documentation is being worked on. [The doc site is online](http://developers.prestashop.com/), and [you can contribute](https://github.com/PrestaShop/docs)! A lot is summed up in the "[Module development changes in PrestaShop 1.7.0.0](http://build.prestashop.com/news/module-development-changes-in-17/)" article on Build!
 
 In the meantime, we advise you to dive into the code of this 1.7-specific module: [https://github.com/PrestaShop/paymentexample](https://github.com/PrestaShop/paymentexample ).
 
@@ -423,6 +423,13 @@ In the meantime, we advise you to dive into the code of this 1.7-specific module
     <ul>
       <li>Beta 3 then RC0 were released! <a href="http://build.prestashop.com/news/prestashop-1-7-RC0/">Test it now</a>!</li>
       <li>Updated the "When is version 1.7.0.0 going to be released?" question.</li>
+    </ul>
+  </li>
+  <li>1.6 (2016-09-28): 
+    <ul>
+      <li>Updated most version references to RC3. Yup, forgot to update the FAQ for RC1 and RC2, sorry! :/</li>
+      <li>Updated the "When is version 1.7.0.0 going to be released?" question with URL to [developer & designer documentation](http://developers.prestashop.com/).</li>
+      <li>Updated the "Where is the 1.7 Designer documentation?", "Will 1.6 modules still work with PrestaShop 1.7?" and "Where is the 1.7 Developer documentation?" questions likewise.</li>
     </ul>
   </li>
 </ul>

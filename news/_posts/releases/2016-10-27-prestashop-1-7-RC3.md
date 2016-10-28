@@ -57,7 +57,7 @@ This wouldn't be a community project without pull-requests from our contributors
 This doesn't take into account all those who are active even without code changes: comments on PR, tickets on the Forge, translations on Crowdin, etc. PrestaShop is better thanks to you all!
 
 
-## Full list of changes between RC1 and RC2
+## Full list of changes between RC2 and RC3
 
 Here is the whole deal:
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 1.7.0.0 released!"
 subtitle: "The beginning of a beautiful frienship"
-date:   20156-11-07 09:10:11
+date:   2016-11-07 09:10:11
 author:  [ xavierborderie ]
 icon: icon-checked
 tags:
@@ -16,7 +16,7 @@ tags:
 
 Here it is! All singin' all dancin': Prestashop 1.7.0.0 is ready for you to explore!
 
-![Prestashop 1.7.0.0](/assets/images/2016/11/prestashop-17-release.jpg)
+![Prestashop 1.7.0.0](/assets/images/2016/10/prestashop-17-release.jpg)
 
 It's been 495 days since the release of 1.6.1.0, the last major version of PrestaShop. And boy have we kept ourselves busy since then!
 

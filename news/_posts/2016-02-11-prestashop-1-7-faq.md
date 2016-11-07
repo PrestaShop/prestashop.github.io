@@ -10,21 +10,15 @@ tags: [1.7]
 
 The development team is hard at work on PrestaShop 1.7, making sure the first beta contains everything they want it to be. We’re approaching the day when we can release this beta version, and it is therefore high time that we’d answer the questions that we received about this new major version.<br/>
 <br/>
-<i>Update: [RC3 was released on October 27th, 2016](http://build.prestashop.com/news/prestashop-1-7-RC3/)! [Test is now](https://www.prestashop.com/en/developers-versions)!</i>
+<i><b>Update: [PrestaShop 1.7.0.0 was released on November 7th, 2016](http://build.prestashop.com/news/prestashop-1-7-0-0-released/)!</b> [Download it now](https://www.prestashop.com/en/download)!</i>
 
 <div class="alert alert-note" role="alert">
 <p>Note that this article aims to compile the latest news about 1.7, and will therefore be updated as new information is confirmed.</p>
 </div>
 
-<div class="alert alert-important" role="alert">
-<p>PrestaShop 1.7 is a work in progress, and is currently still under development!
+<p>This FAQ gives you the current state of 1.7</p>
 
-You can <a href="https://www.prestashop.com/en/developers-versions">download and test PrestaShop 1.7.0.0 RC3 right now</a>!
-</p> 
-
-<p>This FAQ gives you the current state of 1.7, not the final one, and we're only in beta :)</p>
-
-<p>Current version of this FAQ: 1.7. <br/>
+<p>Current version of this FAQ: 1.8. <br/>
 The changelog is at the bottom of the FAQ.</p>
 </div>
 
@@ -35,6 +29,8 @@ The changelog is at the bottom of the FAQ.</p>
 ## General questions
 
 ### When is version 1.7.0.0 going to be released?
+
+<b>UPDATE: PrestaShop 1.7.0.0 was released on Monday 7th of November 2016.</b>
 
 There is currently no set date for the stable release yet, other than “when it’s ready”.
 
@@ -86,8 +82,6 @@ What this means for any upgrade is that in order for a PS 1.6 to migrate to PS 1
 * Test all the other modules -- as you would for any new release.
  
 In any case, we advise you to make sure that your module does work in PrestaShop 1.7.
-
-_We are currently thinking up ways to ease the upgrade path -- for instance, a tool to take the 1.6 store, import all of its data and images into 1.7, and end up with a default store (default 1.7 theme, default 1.7 native modules) with the 1.6 data and settings. This is still a project more than actual working source code, but you get the idea._
 
 
 ### Should PrestaShop 1.6 owners invest time and money into upgrading her shop to 1.7?
@@ -430,6 +424,11 @@ In the meantime, we advise you to dive into the code of this 1.7-specific module
       <li>Updated most version references to RC3. Yup, forgot to update the FAQ for RC1 and RC2, sorry! :/</li>
       <li>Updated the "When is version 1.7.0.0 going to be released?" question with URL to [developer & designer documentation](http://developers.prestashop.com/).</li>
       <li>Updated the "Where is the 1.7 Designer documentation?", "Will 1.6 modules still work with PrestaShop 1.7?" and "Where is the 1.7 Developer documentation?" questions likewise.</li>
+    </ul>
+  </li>
+  <li>1.8 (2016-11-07): 
+    <ul>
+      <li>Version 1.7.0.0 has been released!</li>
     </ul>
   </li>
 </ul>

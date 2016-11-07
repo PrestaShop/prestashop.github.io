@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PrestaShop 1.7.0.0 released!"
-subtitle: "The beginning of a beautiful frienship"
+subtitle: "The beginning of a beautiful friendship"
 date:   2016-11-07 09:10:11
 author:  [ xavierborderie ]
 icon: icon-checked

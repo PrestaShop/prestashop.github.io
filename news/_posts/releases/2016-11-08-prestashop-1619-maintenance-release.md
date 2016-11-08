@@ -68,6 +68,9 @@ Is it fixed? Great! If not, you can get back to the original state:
 
 If all fails, we advise you to upgrade to 1.6.1.9.
 
+If currently using 1.5, we will soon have more information for you. Until then, you should be able to have your Product Creation page work again by [installing Chrome 53](http://www.slimjet.com/chrome/google-chrome-old-version.php) and [setting it to not make automatic upgrades](https://www.chromium.org/administrators/turning-off-auto-updates).<br/>
+Please understand that v1.5 is not supported anymore, and that, while we will do our best to help you, we do advise you to upgrade to at least 1.6.
+
 
 ### The usual
 

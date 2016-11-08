@@ -26,10 +26,13 @@ This maintenance release is focused on a single issue: the fact that recent or f
 
 While this problematic behavior is not a bug from PrestaShop but <a href="https://xhr.spec.whatwg.org/#the-open()-method">a design decision from the W3C/WHATWG standards bodies</a> (applied by browser vendors after time of deprecation), all PrestaShop merchants might witness issues once their browser auto-updates to a version that removes this feature.
 
+This version fixes this issue.
+
 
 ### Working together
 
-to The PrestaShop Core team has been working publicly on this issue: <a href="http://forge.prestashop.com/browse/PSCSX-8524">here is the Forge ticket</a>, and <a href="https://github.com/PrestaShop/PrestaShop/pull/6749">here is the pull request</a>. Thanks the help and feedback of several community members, we can finally release this version with the certainty that it fixes the issue.
+The PrestaShop Core team has been working publicly on this issue: <a href="http://forge.prestashop.com/browse/PSCSX-8524">here is the Forge ticket</a>, and <a href="https://github.com/PrestaShop/PrestaShop/pull/6749">here is the pull request</a>. Thanks the help and feedback of several community members, we can finally release this version with the certainty that it fixes the issue.<br/>
+A big "thank you" to Mickaël Decker (@firstred) who follows our changes, tests them, and helped us until very late in the evenings to fix the issue.
 
 Addons contributors, <strong>make sure that your modules and themes DO NOT make use of synchronous XHR calls</strong>! <a href="https://developers.google.com/web/updates/2012/01/Getting-Rid-of-Synchronous-XHRs">Learn how here</a>!<br/>
 

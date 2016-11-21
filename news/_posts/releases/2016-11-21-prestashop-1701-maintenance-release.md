@@ -57,5 +57,3 @@ Here are the changes:
 The [PrestaShop 1.7.0.1 changelog](https://www.prestashop.com/en/developers-versions/changelog/1.7.0.1-stable) is available.
 
 Since version 1.7.0.1 is a "patch" update to version 1.7.0.0, upgrading from that version will be easy: features will work better, and modules & themes which worked fine on 1.7.0.0 will work just as well with 1.7.0.1.
-
-As for those wanting to upgrade from earlier versions (1.6, 1.5, 1.4, etc.), please be aware that while your data will work fine, you will have to rewrite your theme and thoroughly check your modules. Upgrading to 1.7 is a project, and you should make sure that you have the time and resources for it.

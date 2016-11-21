@@ -17,7 +17,7 @@ PrestaShop 1.7.0.1 is now available. This maintenance release closes 15 of the m
 
 We know that some of you may have been waiting for the .1 version of 1.7 to try this new major version of PrestaShop. We are therefore happy to deliver the first "patch" release of PrestaShop 1.7.0.0 (as per [our SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)). The initial release PrestaShop 1.7 was well received, with thousands of downloads and already well over a hundred production stores!
 
-Version 1.7 is such a fondamental change to the PrestaShop codebase that our beloved community found issues that weren't spotted by our QA team. Thank you for contributing with eyeballs and pull requests!  
+Version 1.7 is such a fundamental change to the PrestaShop codebase that our beloved community found issues that weren't spotted by our QA team. Thank you for contributing with eyeballs and pull requests!  
 We aim at fixing critical and blocking issues in 1.7 with regular releases, packing a few specific fixes (in order to limit regression potential). Prepare yourself to see more patch releases in the coming weeks while we review the feedback from the community.
 
 [Download 1.7.0.1 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}

@@ -24,7 +24,7 @@ We aim at fixing critical and blocking issues in 1.7 with regular releases, pack
 {: .text-center}
 
 <div class="alert alert-important" role="alert">
-Want to upgrade using the 1-Click Upgrade module? Make sure to upgrade the module first! This way you will have access to a new, 1.7-specific channel, which makes upgrading safer for merchants. Upgrading from 1.7.0.0 to 1.7.0.1 should be smooth as silk, by do a backup anyway :)
+Want to upgrade using the 1-Click Upgrade module? Make sure to upgrade the module first! This way you will have access to a new, 1.7-specific channel, which makes upgrading safer for merchants. Upgrading from 1.7.0.0 to 1.7.0.1 should be smooth as silk -- but do a safety backup anyway :)
 </div>
 
 Here are the changes:
@@ -56,6 +56,6 @@ Here are the changes:
 
 The [PrestaShop 1.7.0.1 changelog](https://www.prestashop.com/en/developers-versions/changelog/1.7.0.1-stable) is available.
 
-Since version 1.7.0.1 is a "patch" update to version 1.7.0.0, upgrading from that version will be as smooth as silk for everyone: features will work better, and modules & themes which worked fine on 1.7.0.0 will work just as well with 1.7.0.1.
+Since version 1.7.0.1 is a "patch" update to version 1.7.0.0, upgrading from that version will be easy: features will work better, and modules & themes which worked fine on 1.7.0.0 will work just as well with 1.7.0.1.
 
 As for those wanting to upgrade from earlier versions (1.6, 1.5, 1.4, etc.), please be aware that while your data will work fine, you will have to rewrite your theme and thoroughly check your modules. Upgrading to 1.7 is a project, and you should make sure that you have the time and resources for it.

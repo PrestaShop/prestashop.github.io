@@ -53,6 +53,10 @@ Here are the changes:
      - [6989](https://github.com/PrestaShop/PrestaShop/pull/6989): Fix fatal if payment module return a non array result
      - [6973](https://github.com/PrestaShop/PrestaShop/pull/6973): Create temporary file in cache directory
      - [6969](https://github.com/PrestaShop/PrestaShop/pull/6969): Prevent password reset on user check by email
+     
+ - Installer:
+   - Bug fix:
+     - [6964](https://github.com/PrestaShop/PrestaShop/pull/6964): Caught broken environment exception
 
 The [PrestaShop 1.7.0.1 changelog](https://www.prestashop.com/en/developers-versions/changelog/1.7.0.1-stable) is available.
 

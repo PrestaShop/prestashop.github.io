@@ -13,9 +13,9 @@ tags:
  - 1.7.0.x
 ---
 
-PrestaShop 1.7.0.5 is now available. This maintenance release closes 13 of the most pressing issues reported since v1.7.0.0
+PrestaShop 1.7.0.2 is now available. This maintenance release closes 13 of the most pressing issues reported since v1.7.
 
-More than a year ago, we announced that we wanted to [release more regular and focused patch versions](http://build.prestashop.com/news/more-focused-patch-versions/) for 1.6 (and eventually 1.7), and that's exactly what we are currently doing: packing a few specific fixes (in order to limit regression potential) in regular releases. All this is done thanks in no small part to [our SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/) and the 1-Click Upgrade module (update it!).
+More than a year ago, we announced that we wanted to [release more regular and focused patch versions](http://build.prestashop.com/news/more-focused-patch-versions/) for 1.6 (and eventually 1.7), and that's exactly what we are currently doing: packing a few specific fixes (in order to limit regression potential) in regular releases. All this is done thanks in no small part to [our SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/) and the 1-Click Upgrade module (update it if you haven't already done it for 1.7.0.1!).
 
 We are therefore happy to deliver the second "patch" release of PrestaShop 1.7.0.0. Version 1.7 of PrestaShop continues to be explored by the community, and we keep working at fixing critical and blocking issues in 1.7 with regular releases. Prepare yourself to see more patch releases in the coming weeks while we review the feedback from the community!
 

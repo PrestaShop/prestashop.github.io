@@ -79,7 +79,7 @@ PrestonBot is able to analyze the contribution, and to add the **Waiting for wor
 Usually, people are really afraid of contribute, because of the well-known "[Impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome)".
 
 We - as a community - need to be friendly and kind, regarding the quality we expect from every contribution.
-We want a better environment to empower and encourage people to make their first contributor, because this is the most difficult one.
+We want a better environment to empower and encourage people to make their first contribution, because this is the most difficult one.
 
 This is why we have started to welcome community members in the core team, because we think everyone that want to be involved in this project is precious, and should be helped and thanked.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PrestonBot reach stable version"
+title:  "PrestonBot has reached stable version"
 subtitle: "Your PrestaShop community best friend"
 date:   2016-11-28 11:00:00
 author: [ mandrieu ]
@@ -24,10 +24,14 @@ At PrestaShop, we also have [commits naming convention](http://doc.prestashop.co
 ### Ease the commit label conventions
 
 We know that this convention is a pain for every contributor - core team included - and some months ago we have simplified it:
+
 ```
 before:
+
 [-] BO : fixed naming conventions
+
 after:
+
 BO: fixed naming conventions
 ```
 

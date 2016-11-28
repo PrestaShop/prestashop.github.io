@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestonBot has reached stable version"
 subtitle: "Your PrestaShop community best friend"
-date:   2016-11-28 11:00:00
+date:   2016-11-28 08:09:10
 author: [ mandrieu ]
 icon: icon-daft-punk
 tags:

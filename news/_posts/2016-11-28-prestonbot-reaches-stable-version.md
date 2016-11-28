@@ -41,7 +41,7 @@ Since PrestonBot 1.0, there is a little bit more to help anyone with this (still
 
 ![Commit label validator](http://i.imgur.com/qaYrTnL.png)
 
-Regardless there is one or more invalid commits, PrestonBot will list them and remember you an exemple of valid commit. When your commits are finally valid, the help message disappear like the one for the pull request description validation.
+Regardless there is one or more invalid commits, PrestonBot will list them and provide you with an example of valid commit. When your commits are finally valid, the help message disappears like the one for the pull request description validation.
 
 If you have some ideas to improve the contribution workflow, don't forget that [PrestonBot](https://github.com/PrestaShop/prestonbot) is open source and available in the PrestaShop organization.
 

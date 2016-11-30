@@ -2,7 +2,7 @@
 layout: post
 title:  "User tests are not enough"
 subtitle: "We created Lean Feedback, a collaborative workshop to help you deal with user tests results"
-date: 2016-11-28
+date: 2016-11-30
 author: [guillaumebruere, leamendes]
 icon: icon-world
 tags: [design,product]

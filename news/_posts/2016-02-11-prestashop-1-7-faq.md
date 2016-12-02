@@ -52,8 +52,8 @@ Version 1.7.0.0 is the new major release of PrestaShop, following version 1.6.1.
 
 ### Is PrestaShop 1.7 ready for production stores, or should v1.6 still be used for now?
 
-PrestaShop 1.7 is considered stable, and hundreds of online stores have already been created with v1.7.0.0 and its updates. This is the recommended choice for new stores.<br/>
-The community has already ported [many modules to 1.7](http://addons.prestashop.com/fr/2-modules-prestashop), and [brand new 1.7 themes](http://addons.prestashop.com/fr/3-themes-prestashop) are being submitted every week.
+PrestaShop 1.7 is considered stable, and hundreds of online stores have already been created with v1.7.0.0 and its updates.<br/>
+The community has already ported [hundreds of modules to 1.7](http://addons.prestashop.com/fr/2-modules-prestashop), and [brand new 1.7 themes](http://addons.prestashop.com/fr/3-themes-prestashop) are being submitted every week.
 
 Version 1.6 remains available for existing merchants. It will be maintained by PrestaShop until October 2018, so that should give you enough time to work your way from version 1.6 to version 1.7 -- once you think you are ready to upgrade.
 

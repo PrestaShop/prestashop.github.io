@@ -295,7 +295,7 @@ You can find a sample payment module here: [https://github.com/PrestaShop/paymen
 
 ### Will PrestaShop 1.7 remove deprecated code, hook_alias, etc.?
 
-A lot of deprecated code have been removed, yes. Until more detail are public, you can [join the conversation on Gitter](https://gitter.im/PrestaShop/General)!
+A lot of deprecated code has been removed, yes. Until more detail are public, you can [join the conversation on Gitter](https://gitter.im/PrestaShop/General)!
 
 You can an idea of what has been done [in this article](http://build.prestashop.com/news/product-page-evolution/#developers-beware).
 

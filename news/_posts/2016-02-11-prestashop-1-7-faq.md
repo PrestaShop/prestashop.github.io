@@ -418,7 +418,7 @@ For a taste of real-life usage, we advise you to dive into the code of this 1.7-
   </li>
   <li>1.9 (2016-12-02): 
     <ul>
-      <li>Many ansers have been updated now that 1.7 is released!</li>
+      <li>Many answers have been updated now that 1.7 is released!</li>
     </ul>
   </li>
 </ul>

@@ -13,7 +13,7 @@ The people behind PrestaShop translations deserve a real tribute. When you think
 
 ## Highlighting the translators' involvement
 
-Until now, with the monthly reports, we publish a top 10 of the most active translators each month. We think it's be better to give you the big picture.
+Until now, with the monthly reports, we publish a top 10 of the most active translators each month. We think it's better to give you the big picture.
 We started tracking the number of words translated, to see how it evolved. Translators are contributing continuously, word by word, string by string, to PrestaShop.
 
 So here it is, you can view the ranking of top translators, and see how much they contributed to PrestaShop! Let's thank them for their dedication!

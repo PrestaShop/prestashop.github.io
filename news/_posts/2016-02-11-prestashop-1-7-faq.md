@@ -127,7 +127,7 @@ Read the [“Installation” section of the README.md file](https://github.com/P
 
 In short: you will need to install and use [Composer](https://getcomposer.org/) (and possibly [npm](https://nodejs.org/en/) and [Grunt](http://gruntjs.com/)) in order to compile the project into a single installable instance. [Webpack](https://webpack.github.io/) is another tool used for the development of v1.7.
 
-This is only for the development version. All [publicly-released development version](https://www.prestashop.com/en/developers-versions) is packaged in such a way that any user is able to just upload and install the software, just like you did with previous versions.
+This is only for the development version. All [publicly-released development versions](https://www.prestashop.com/en/developers-versions) are packaged in such a way that any user is able to just upload and install the software, just like you did with previous versions.
 
 
 ### Why is it not named PrestaShop 2.0, since you are rewriting everything?

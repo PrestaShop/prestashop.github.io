@@ -8,7 +8,7 @@ icon: icon-chat-alt
 tags: [1.7]
 ---
 
-PrestaShop 1.7 is a major new version, and an important milestone for PrestaShop as a whole. This version is a great step forward for PrestaShop, both for developers with the inclusion of the Symfony framework and the revamping of the theme system, and for merchants with a clear focus on easing the first sale.<br/>
+PrestaShop 1.7 is a major new version, and an important milestone for PrestaShop as a whole. This version is a great step forward for PrestaShop, both for developers with the inclusion of the Symfony framework and the revamping of the theme system, and for merchants with a focus on easing the first sale.<br/>
 PS 1.7 has a clear motto: "Sell faster. Code Better. Create easier". [See the 1.7 presentation page](https://www.prestashop.com/en/1.7)!
 
 <i>[PrestaShop 1.7.0.0 was released on November 7th, 2016](http://build.prestashop.com/news/prestashop-1-7-0-0-released/)!</i><br/> Since then, further updates have been released. [Download the latest version now](https://www.prestashop.com/en/download)!

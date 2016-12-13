@@ -22,9 +22,9 @@ Public releases:
 * On September 20th 2016, [we released 1.7.0.0 RC1](http://build.prestashop.com/news/prestashop-1-7-RC1/).
 * On October 10th 2016, [we released 1.7.0.0 RC2](http://build.prestashop.com/news/prestashop-1-7-RC2/).
 * On October 27th 2016, [we released 1.7.0.0 RC3](http://build.prestashop.com/news/prestashop-1-7-RC3/).
-* Version 1.7.0.0 was released on November 7th 2016! Read the [official announcement](https://www.prestashop.com/blog/en/prestashop-1-7-now-available-discover-new-functions/), and the [Build article](http://build.prestashop.com/news/prestashop-1-7-0-0-released/).
+* **Version 1.7.0.0 was released on November 7th 2016!** Read the [official announcement](https://www.prestashop.com/blog/en/prestashop-1-7-now-available-discover-new-functions/), and the [Build article](http://build.prestashop.com/news/prestashop-1-7-0-0-released/).
 
-In general, you really should pay a visit to the Build devblog on a regular basis: http://build.prestashop.com/
+In general, you really should pay a visit to the Build devblog on a regular basis.
 This is where we update the Community on the latest news from the Dev team!
 
 Quick selection of articles about v1.7:

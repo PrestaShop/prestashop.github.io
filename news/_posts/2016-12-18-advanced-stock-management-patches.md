@@ -62,6 +62,15 @@ This PR fixes a lot of Forge issues, some of them:
 - ASM supply orders didn't update the inventory (completely receive): [PSCSX-6628](http://forge.prestashop.com/browse/PSCSX-6628), [PSCSX-6894](http://forge.prestashop.com/browse/PSCSX-6894), [PSCSX-7549](http://forge.prestashop.com/browse/PSCSX-7549)
 
 
+## Remember
+These patches focus on improving the display and edition of stocks. So they don't solve every other problem with advanced stock management.
+
+Ideally, you should enable advanced stock management only on new products, or a product which doesn't have an order in progress. Otherwise, a problem of consistency between the product page (available quantity) and the stock page (real quantity) is known to happen.
+To solve this consistency problem, you'll have to process all open customer orders that were created before you activated ASM.
+
+1. To do so, it is important you use (or create) an order status that considers the products as shipped or delivered, then switch the current orders to this new status.
+2. This will remove the reservation of the products but won't decrease the physical stock since no warehouse was attached to the order at that time. So you might then have to adjust your physical quantity.
+
 ## How to help us
 You can test this release, **only in a test environment** and tell us what works and what doesn't.
 You can open a [Forge issue](http://forge.prestashop.com) and flag your problem with `advanced_stock_management` label, also, you can  give us your impression by reacting to this post.

@@ -2,11 +2,12 @@
 layout: post
 title:  "Advanced Stock Management patches"
 subtitle: "Coming with PrestaShop 1.6.1.11"
-date:   2016-12-21 10:00:00
+date:   2016-12-21 17:00:00
 author: [ aleeks, thierrymarianne ]
 icon: icon-lab
 tags:
  - advanced-stock-management
+ - patch
 ---
 
 It has been in the pipeline for a while, it's now official, PrestaShop 1.6.1.11 will ship some patches concerning the advanced stock management.
@@ -76,3 +77,6 @@ You can test this release, **only in a test environment** and tell us what works
 You can open a [Forge issue](http://forge.prestashop.com) and flag your problem with `advanced_stock_management` label, also, you can  give us your impression by reacting to this post.
 
 **We hope you'll like these fixes!**
+
+[Try 1.6.1.11 beta now!](https://download.prestashop.com/download/old/prestashop_1.6.1.11-beta.zip){: .btn .btn-lg .btn-success}
+{: .text-center}

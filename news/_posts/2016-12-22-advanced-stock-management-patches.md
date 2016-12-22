@@ -2,7 +2,7 @@
 layout: post
 title:  "Advanced Stock Management patches"
 subtitle: "Coming with PrestaShop 1.6.1.11"
-date:   2016-12-21 17:00:00
+date:   2016-12-22 10:00:00
 author: [ aleeks, thierrymarianne ]
 icon: icon-lab
 tags:

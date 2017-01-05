@@ -43,7 +43,7 @@ As usual, 1.7 translations are updated each Monday, and 1.6 translations every t
 
 Last updates:
 
-1.6 - Tuesday, January the 3rd
+1.6 - Tuesday, January the 3rd</br>
 1.7 - Monday, January the 2nd
 
 ### New language : Spanish, El Salvador

@@ -39,7 +39,7 @@ Here are the changes:
      - [7271](https://github.com/PrestaShop/PrestaShop/pull/7271) Fix import theme for windows & special name
      - [7267](https://github.com/PrestaShop/PrestaShop/pull/7267) Fix preview button action
 
- - Front office:
+- Front office:
    - Bug fixes:
      - [7286](https://github.com/PrestaShop/PrestaShop/pull/7286) Use the right wording when guest is disabled
      - [7195](https://github.com/PrestaShop/PrestaShop/pull/7195) Fix wrong displayed discount when it's higher than price
@@ -52,7 +52,7 @@ Here are the changes:
      - [7248](https://github.com/PrestaShop/PrestaShop/pull/7248) Fix multishop popup design
      - [7297](https://github.com/PrestaShop/PrestaShop/pull/7297) Fix clean filter event handler
 
- - Core:
+- Core:
    - Bug fixes:
      - [7310](https://github.com/PrestaShop/PrestaShop/pull/7310) Protect translated strings from XSS
      - [7114](https://github.com/PrestaShop/PrestaShop/pull/7114) Set curl as main solution and fopen as fallback
@@ -62,7 +62,7 @@ Here are the changes:
      - [7194](https://github.com/PrestaShop/PrestaShop/pull/7194) Fix issue on translations without params
 
 - Installer:
-  - Bug fixes:
+   - Bug fixes:
      - [7307](https://github.com/PrestaShop/PrestaShop/pull/7307) Fix croatian install adding quick_access
      - [7296](https://github.com/PrestaShop/PrestaShop/pull/7296) Adding missing tabs in IT + VN + SR, and other tab updates
      - [7274](https://github.com/PrestaShop/PrestaShop/pull/7274) Fix installer in Canadian and catalog cache

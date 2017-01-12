@@ -11,7 +11,7 @@ tags: [translation, i18n, l10n, 1.7]
 
 With the [introduction of Symfony in PrestaShop 1.7](), we had to rethink how our system of translation worked, to make sure new pages were translatable too. Instead of merely adapting our current system to Symfony, we took this opportunity to rethink how it works, to optimize it a bit.
 
-*This article has been updated on January, the 9th, 2017, as [this new system doesn't work for third-party modules](/news/new-translation-system-prestashop-17/#as-a-module-contributor).*
+*This article has been updated on January the 9th, 2017 as [this new system doesn't work for third-party modules](/news/new-translation-system-prestashop-17/#as-a-module-contributor).*
 
 In short:
 
@@ -118,7 +118,7 @@ On the other hand, if you're developing 1.7-specific modules, we encourage you t
 <p>We’ve been too optimistic when we said the new translation system would be available for contributors’ modules built specifically for PrestaShop 1.7.<br>
 This is not working. I repeat, this is not working. You should <b>keep using the legacy translation system</b> and it will work just like before. Otherwise you won’t be able to translate your modules, which we want to avoid.</p>
 
-<p>We’re still trying to find a workaround so that new modules can benefit from the new translation system, but that is not going to happen in a near future, unfortunately.<</p>
+<p>We’re still trying to find a workaround so that new modules can benefit from the new translation system, but that is not going to happen in a near future, unfortunately.</p>
 
 <p>These comments do not apply to theme development, for the whole theme structure has been redesigned in 1.7. 1.7-specific themes should use the new translation system. Just not modules :(</p>
 

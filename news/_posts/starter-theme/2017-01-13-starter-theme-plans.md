@@ -40,7 +40,7 @@ The basic styling will remain very minimalistic: just a couple of compiled style
 
 Bootstrap was not included in the Starter Theme because we wanted agencies and freelancers to be free to use whichever CSS framework they preferred.
 
-Most theme and module developers in our community are used to have Bootstrap since v1.6. In order to keep the ecosystem consistent, we will add Bootstrap 4 to the Starter Theme.
+Most theme and module developers in our community are used to have Bootstrap since v1.6. In order to keep the ecosystem consistent, **we will add Bootstrap 4 to the Starter Theme**.
 
 It will be included in a minimalistic way. All the template files will be updated in order to have the necessary markup to have a functional rendering -- we are not aiming for pretty, only functional.
 
@@ -57,7 +57,7 @@ Bootstrap 4 will soon reach Beta stage, which makes that a truly stable version 
 
 <p>The project will upgrade its use of Bootstrap as soon as new versions are released, and so should theme and module designers.</p>
 
-<p><b>The recommended version of Bootstrap 4 for PrestaShop 1.7 is therefore Bootstrap 4 alpha 6 as of this writing (January 13th, 2016), and will be Bootstrap 4 beta 1 once it is available.</b></p>
+<p><b>The recommended version of Bootstrap 4 for PrestaShop 1.7 is therefore Bootstrap 4 alpha 6 as of this writing (January 13th, 2017), and will be Bootstrap 4 beta 1 once it is available.</b></p>
 </div>
 
 

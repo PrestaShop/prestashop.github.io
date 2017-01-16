@@ -50,7 +50,7 @@ Theme creators will therefore be able to work using a much more functional and r
 <p><b>Which version of Bootstrap should you use?</b></p>
 
 <p>The Core team decided to use Bootstrap 4 from the start of the project. Because it seemed stable enough.<br/>
-Since then, the Bootstrap team has released two more beta versions; the latest of which, <a href="http://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/">beta 6</a>, entirely rewrites its grid system in order to use Flexbox -- currently a <a href="https://www.w3.org/TR/css-flexbox-1/">W3C Candidate Recommendation</a>. <br/>
+Since then, the Bootstrap team has released two more alpha versions; the latest of which, <a href="http://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/">alpha 6</a>, entirely rewrites its grid system in order to use Flexbox -- currently a <a href="https://www.w3.org/TR/css-flexbox-1/">W3C Candidate Recommendation</a>. <br/>
 Bootstrap 4 will soon reach Beta stage, which makes that a truly stable version is still months away (according to their current release frequency).</p>
 
 <p>There have been talks within the team and with the community about how to best approach this. We decided it was better for the whole community (and ourselves) to just keep to the latest version. We think the changes in alpha 5 and 6 are excellent additions, and that it should be easy for designers to update their creation from the previous alphas. We will make sure to document the best way to have compatible modules, and compatibility can even be achieved by simply adding both Bootstrap 4 classes.</p>

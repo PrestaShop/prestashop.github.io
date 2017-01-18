@@ -37,17 +37,19 @@ Go make sure you read them all, then come back here for more -- I'll wait :)
 Done? Great! Now let's dive into the details!
 
 
-## Code changes in 'develop' branch (for version 1.7.0.0)
+## Code changes in 'develop' branch (for version 1.7.1.0)
 
 Let's review the merged pull-requests on the ['develop' branch](https://github.com/PrestaShop/PrestaShop/tree/develop) since the last Core Weekly Report!
 
+Note that 1.7 patch versions are being built in the '1.7.0.x' branch. All of the PRs from that branch are ported in the 'develop' branch.
 
-### Front office (including the default theme, named "Classic", based upon the [Starter Theme](https://github.com/PrestaShop/PrestaShop/tree/develop/themes/classic))
+
+### Front office (including the default theme, named "Classic", based upon the [Starter Theme](https://github.com/PrestaShop/StarterTheme))
 
 * [#7104](https://github.com/PrestaShop/PrestaShop/pull/7104): FO: Add missing translation keys in home slider. Thank you @shakaran!
 * [#7166](https://github.com/PrestaShop/PrestaShop/pull/7166): Fix total products label. Thank you @Amazzing!
-* [#7170](https://github.com/PrestaShop/PrestaShop/pull/7170): Fix classic's override of ps_imageslider, by @antoin-m.
-* [#7182](https://github.com/PrestaShop/PrestaShop/pull/7182): Remove useless vars display_column_*, by @antoin-m.
+* [#7170](https://github.com/PrestaShop/PrestaShop/pull/7170): Fix classic's override of ps\_imageslider, by @antoin-m.
+* [#7182](https://github.com/PrestaShop/PrestaShop/pull/7182): Remove useless vars display\_column\_*, by @antoin-m.
 * [#7199](https://github.com/PrestaShop/PrestaShop/pull/7199): Fix "There is 0 product." label. Thank you @Amazzing!
 * [#7202](https://github.com/PrestaShop/PrestaShop/pull/7202): Fix order return format in OrderReturnPresenter, by @antoin-m.
 * [#7243](https://github.com/PrestaShop/PrestaShop/pull/7243): Add "quick_view" block to classic theme. Thank you @prestamodule!
@@ -175,7 +177,7 @@ And now, the merged pull-requests on the ['1.6.1.x' branch](https://github.com/P
 ### Back office
 
 * [#5333](https://github.com/PrestaShop/PrestaShop/pull/5333): Fix admin email translations. Thank you @gskema!
-* [#5723](https://github.com/PrestaShop/PrestaShop/pull/5723): Don't trim() the $_POST values if it's an array. Thank you @axometeam!
+* [#5723](https://github.com/PrestaShop/PrestaShop/pull/5723): Don't trim() the $\_POST values if it's an array. Thank you @axometeam!
 * [#6073](https://github.com/PrestaShop/PrestaShop/pull/6073): Fixed bug when prestashop xml md5 is not valid. Thank you @tonyyb!
 * [#6749](https://github.com/PrestaShop/PrestaShop/pull/6749): Fix synchronous loaded scripts, by @Shudrum.
 * [#6827](https://github.com/PrestaShop/PrestaShop/pull/6827): Orders amount currency fixed. Thank you @Casper-O!
@@ -192,7 +194,7 @@ And now, the merged pull-requests on the ['1.6.1.x' branch](https://github.com/P
 ### Core
 
 * [#5511](https://github.com/PrestaShop/PrestaShop/pull/5511): Performance opt on scandir() usage. Thank you @ZiZuu-store!
-* [#5560](https://github.com/PrestaShop/PrestaShop/pull/5560): Cast id_cart to int to keep it in the SQL query. Thank you @roja45!
+* [#5560](https://github.com/PrestaShop/PrestaShop/pull/5560): Cast id\_cart to int to keep it in the SQL query. Thank you @roja45!
 * [#6128](https://github.com/PrestaShop/PrestaShop/pull/6128): Fix misuse of getimagesize returned informations. Thank you @olivier-monaco!
 * [#6207](https://github.com/PrestaShop/PrestaShop/pull/6207): Can't get original picture link if watermark is enable. Thank you @Shagshag!
 * [#6819](https://github.com/PrestaShop/PrestaShop/pull/6819): Fixed method Order::isVirtual. Thank you @debuss!
@@ -201,9 +203,9 @@ And now, the merged pull-requests on the ['1.6.1.x' branch](https://github.com/P
 * [#7036](https://github.com/PrestaShop/PrestaShop/pull/7036): Fix pack price calc when using non-default attributes. Thank you @firstred!
 * [#7092](https://github.com/PrestaShop/PrestaShop/pull/7092): Update Mail::Send() doc comment. Thank you @mcdado!
 * [#7117](https://github.com/PrestaShop/PrestaShop/pull/7117): Fixed some ASM problems, by @aleeks.
-* [#7155](https://github.com/PrestaShop/PrestaShop/pull/7155): Uploader helper multiple files undefined _max_files. Thank you @gabdara!
+* [#7155](https://github.com/PrestaShop/PrestaShop/pull/7155): Uploader helper multiple files undefined \_max\_files. Thank you @gabdara!
 * [#7167](https://github.com/PrestaShop/PrestaShop/pull/7167): Fix detection of APCu on Performance page, by @maximebiloe.
-* [#7219](https://github.com/PrestaShop/PrestaShop/pull/7219): Fix multiple configuration entry for PERCENT_PRODUCT_OUT_OF_STOCK_EXPIRE, by @julienbourdeau.
+* [#7219](https://github.com/PrestaShop/PrestaShop/pull/7219): Fix multiple configuration entry for PERCENT\_PRODUCT\_OUT\_OF\_STOCK\_EXPIRE, by @julienbourdeau.
 * [#7232](https://github.com/PrestaShop/PrestaShop/pull/7232): PHP 7.1 Fatal error: operator not supported in DbQuery.php. Thank you @remotehelp!
 
 

@@ -53,7 +53,7 @@ The medians over 12 months are:
 * 64 PRs created by the community per month.
 * 29 community-created PRs merged per month.
 
-Again, thank you for your contribution to the PrestaShop project! We are definitely committed to improve both 1.7 and 1.6 with the feedback from the community and with your contribution. PrestaShop’s code, translations, documentation, Addons and its whole ecosystem gets better every day with your involvement!
+Again, thank you for your contribution to the PrestaShop project! We are definitely committed to improve both 1.7 and 1.6 with the feedback from the community and with your contribution. PrestaShop’s code, translations, documentation, Addons and its whole ecosystem get better every day with your involvement!
 
 Let’s have a bigger and better year in 2017!
 

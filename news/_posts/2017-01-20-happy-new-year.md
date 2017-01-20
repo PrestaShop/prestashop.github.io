@@ -49,6 +49,7 @@ While we are on the subject of PRs created and merged, we need to celebrate Sept
   * June and December share that distinction :)
  
 The medians over 12 months are:
+
 * 64 PRs created by the community per month.
 * 29 community-created PRs merged per month.
 

@@ -18,9 +18,8 @@ Thank you all for your involvement :)
 
 A couple more stats didn't make in time for the infographic:
 
-* There were 2301 tickets created on the 1.7 Project.
-* 785 of those were from the community.
-* 178 are still to be addressed -- of which only 23 are blocking/critical/major tickets.
+* In 2016, the community created 785 tickets on the 1.7 Project.
+* 178 of those community-created tickets are still to be addressed -- of which only 23 are blocking/critical/major tickets.
 
 We keep working on handled PRs and Forge tickets better. Expect good things from 2017!
 

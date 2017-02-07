@@ -89,9 +89,9 @@ We have a pretty clear idea of what we want them to be. Here is a bird's eye vie
     * Improved translation scope.
 * 1.7.2.0:
   * Should be released in June 2017.
-    * Main projects:
-      * Reworked Advanced Stock Management feature.
-      * More to come!
+  * Main projects:
+    * Reworked Advanced Stock Management feature.
+    * More to come!
 * 1.7.3.0:
   * Should be released in September 2017.
   * Main projects to be determined.

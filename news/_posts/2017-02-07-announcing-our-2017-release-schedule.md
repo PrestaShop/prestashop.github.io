@@ -61,7 +61,7 @@ Now you see where we stand. With these metrics, we were able to establish a rele
 
 A few notes:
 
-* All these dates are estimates. There are not set in stone, and may change depending on ongoing developments. 
+* All these dates are estimates. There are not set in stone, and may change depending on ongoing developments.
 * There can be more than 2 patch releases for each 1.7 minor release. Indeed, should a pressing issue arise (such as an urgent issue or a security fix), we would of course build another patch version, released as soon as the fix is in place.
 * While there is no mention of a possible v1.6.2.0, keep in mind that we are still open to a minor 1.6 version, should excellent (and 1.7-ported) community features justify it.
 
@@ -87,18 +87,21 @@ We have a pretty clear idea of what we want them to be. Here is a bird's eye vie
     * General stability and feature improvement.
     * 1.6-to-1.7 upgrader.
     * Improved translation scope.
+
 * 1.7.2.0:
   * Should be released in June 2017.
   * Main projects:
     * Reworked Advanced Stock Management feature.
     * More to come!
+
 * 1.7.3.0:
   * Should be released in September 2017.
   * Main projects to be determined.
+
 * 1.7.4.0:
   * Should be released in December 2017.
   * Main projects to be determined.
- 
+
 Do you want to help on a specific topic? Let us know!
 
 <div class="alert alert-info" role="alert">

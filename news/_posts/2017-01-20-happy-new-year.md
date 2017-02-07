@@ -11,7 +11,7 @@ tags:
 
 Is January 20th too late for New Year's wishes? Oh well, as we say in French, "it's never too late to do the right thing" :) So, here goes...
 
-![Prestashop 1.7.0.0](/assets/images/2017/01/PrestaShop-Happy2017.jpg)
+![Happy 2017](/assets/images/2017/01/PrestaShop-Happy2017.jpg)
 
 Happy new year from everyone at PrestaShop! 2016 has been a busy year, and 2017 looks to be even busier.
 

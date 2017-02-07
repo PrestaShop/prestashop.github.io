@@ -49,7 +49,7 @@ As for when to expect minor releases (1.7.1.0, 1.7.2.0, etc.), here's how we are
 <div class="alert alert-info" role="alert">
 <b>How we came up with 20 weeks</b>
 
-<p>It takes two sprints to [build the work backlog](http://www.scrum-institute.org/The_Scrum_Product_Backlog.php) for a minor release, roughly six sprints to have those tasks developed and tested, and we are planning on two sprints after code freeze in order to have a proper QA process. One final sprint is dedicated to the release itself (packaging, final checks, Addons updates, etc.).</p>
+<p>It takes two sprints to <a href="http://www.scrum-institute.org/The_Scrum_Product_Backlog.php">build the work backlog</a> for a minor release, roughly six sprints to have those tasks developed and tested, and we are planning on two sprints after code freeze in order to have a proper QA process. One final sprint is dedicated to the release itself (packaging, final checks, Addons updates, etc.).</p>
 
 <p>Count it up: that's 10 sprints from building the backlog to the end of QA.<br/>
 Take your TI-81 out: that’s 20 weeks to have a minor version of PrestaShop, from planning to general release.</p>
@@ -78,7 +78,7 @@ In the end, our aim is to keep on improving the codebase, making it stronger and
 <div class="alert alert-info" role="alert">
 <b>About SemVer</b>
 
-As a reminder, PrestaShop follows a SemVer-like numbering system for its version since July 2015. SemVer's summary is:
+As a reminder, PrestaShop follows a SemVer-like numbering system for its version since July 2015. <a href="http://semver.org/">SemVer</a>'s summary is:
 
 <blockquote>
 Given a version number MAJOR.MINOR.PATCH, increment the:
@@ -93,7 +93,7 @@ manner, and</li>
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 </blockquote>
 
-Because of our own history, [we chose to follow a SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/): 1.MAJOR.MINOR.PATCH. This means that, as of today (with 1.7.0.4):
+Because of our own history, <a hef="http://build.prestashop.com/news/a-more-semantic-versioning-scheme/">we chose to follow a SemVer-like versioning</a>: 1.MAJOR.MINOR.PATCH. This means that, as of today (with 1.7.0.4):
 
 <ol>
   <li>The next patch version is 1.7.0.5</li>

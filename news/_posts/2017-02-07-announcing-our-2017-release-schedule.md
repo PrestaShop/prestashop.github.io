@@ -93,7 +93,7 @@ manner, and</li>
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 </blockquote>
 
-Because of our own history, <a hef="http://build.prestashop.com/news/a-more-semantic-versioning-scheme/">we chose to follow a SemVer-like versioning</a>: 1.MAJOR.MINOR.PATCH. This means that, as of today (with 1.7.0.4):
+Because of our own history, <a href="http://build.prestashop.com/news/a-more-semantic-versioning-scheme/">we chose to follow a SemVer-like versioning</a>: 1.MAJOR.MINOR.PATCH. This means that, as of today (with 1.7.0.4):
 
 <ol>
   <li>The next patch version is 1.7.0.5</li>

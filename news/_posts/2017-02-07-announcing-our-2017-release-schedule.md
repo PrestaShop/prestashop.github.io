@@ -33,7 +33,7 @@ Keen readers of the Build devblog are aware that the last few releases have been
 * PrestaShop 1.6 is in maintenance mode, and 5 patch versions have been released since September -- with 1.6.1.12 coming soon too!
 
 Hence, we've been roughly having 1 patch release per month for each supported version of PrestaShop. Because those releases are light, they make for easy upgrades, and thus safer merchants.  
-Regularity is key: we want our community to know that they can expect monthly improvement to their chosen version -- with the exceptional additional patch release in case of a blocking issue or a security fix, of course.
+Regularity is key: we want our community to know that they can expect monthly improvements to their chosen version -- with the exceptional additional patch release in case of a blocking issue or a security fix, of course.
 
 
 ## Our plan for 2017
@@ -49,7 +49,7 @@ As for when to expect minor releases (1.7.1.0, 1.7.2.0, etc.), here's how we are
 <div class="alert alert-info" role="alert">
 <b>How we came up with 20 weeks</b>
 
-<p>It takes two sprints to [build the work backlog](http://www.scrum-institute.org/The_Scrum_Product_Backlog.php) for a minor release, roughly six sprints to have those tasks developed and tested, and we are planning on two sprints after code freeze in order to properly have a QA process. One final sprint is dedicated to the release itself (packaging, final checks, Addons updates, etc.).</p>
+<p>It takes two sprints to [build the work backlog](http://www.scrum-institute.org/The_Scrum_Product_Backlog.php) for a minor release, roughly six sprints to have those tasks developed and tested, and we are planning on two sprints after code freeze in order to have a proper QA process. One final sprint is dedicated to the release itself (packaging, final checks, Addons updates, etc.).</p>
 
 <p>Count it up: that's 10 sprints from building the backlog to the end of QA.<br/>
 Take your TI-81 out: that’s 20 weeks to have a minor version of PrestaShop, from planning to general release.</p>
@@ -63,7 +63,7 @@ A few notes:
 
 * All these dates are estimates. There are not set in stone, and may change depending on ongoing developments. 
 * There can be more than 2 patch releases for each 1.7 minor release. Indeed, should a pressing issue arise (such as an urgent issue or a security fix), we would of course build another patch version, released as soon as the fix is in place.
-* While there is no mention of a possible v1.6.2.0, keep in mind that we are still open to a minor 1.6 version, should excellent (and 1.7-compatible) community contributions justify it.
+* While there is no mention of a possible v1.6.2.0, keep in mind that we are still open to a minor 1.6 version, should excellent (and 1.7-ported) community features justify it.
 
 
 ## Organization
@@ -96,8 +96,12 @@ Additional labels for pre-release and build metadata are available as extensions
 Because of our own history, [we chose to follow a SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/): 1.MAJOR.MINOR.PATCH. This means that, as of today (with 1.7.0.4):
 
 <ol>
-  <li>The next patch version is 1.7.0.5 (soon!)</li>
-  <li>The next minor version is 1.7.1.0 (working on it! this spring! see above!)</li>
-  <li>The next major version would be 1.8.0.0 (maybe in a couple of years?)</li>
+  <li>The next patch version is 1.7.0.5</li>
+  <li>The next minor version is 1.7.1.0</li>
+  <li>The next major version would be 1.8.0.0</li>
 </ol>
 </div>
+
+There you go! The table will be updated as we go.
+
+Tell us what you think!

@@ -75,6 +75,32 @@ The Core and Product team comprises more than 20 people dedicated to improving b
 In the end, our aim is to keep on improving the codebase, making it stronger and more stable, while adding much-requested features all year long.
 
 
+## What's it gonna be?
+
+So, two new minor versions before summer, and 2 other by year's end, great!
+
+We have a pretty clear idea of what we want them to be. Here is a bird's eye view:
+
+* 1.7.1.0:
+ * Should be released in March 2017.
+ * Main projects:
+  * General stability and feature improvement.
+  * 1.6-to-1.7 upgrader.
+  * Improved translation scope.
+* 1.7.2.0:
+ * Should be released in June 2017.
+  * Main projects:
+   * Reworked Advanced Stock Management feature.
+   * More to come!
+* 1.7.3.0:
+ * Should be released in September 2017.
+ * Main projects to be determined.
+* 1.7.4.0:
+ * Should be released in December 2017.
+ * Main projects to be determined.
+ 
+Do you want to help on a specific topic? Let us know!
+
 <div class="alert alert-info" role="alert">
 <b>About SemVer</b>
 

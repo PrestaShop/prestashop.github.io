@@ -43,7 +43,7 @@ As written above, we've been releasing patch releases for both supported version
 As for when to expect minor releases (1.7.1.0, 1.7.2.0, etc.), here's how we are planning to work things out:
 
 * We want to have regular minor releases for 1.7.
-* The Core team has been following the [Scrum](https://www.scrumalliance.org/why-scrum) ["Sprint" methodoloy](https://en.wikipedia.org/wiki/Scrum_(software_development)#Workflow) for several months now, with each sprint lasting two weeks. If you don't know what Scrum or a sprint are, read up! :)
+* The Core team has been following the [Scrum](https://www.scrumalliance.org/why-scrum) ["Sprint" methodology](https://en.wikipedia.org/wiki/Scrum_(software_development)#Workflow) for several months now, with each sprint lasting two weeks. If you don't know what Scrum or a sprint are, read up! :)
 * Our experience shows that it takes roughly 20 weeks from building the backlog to delivering QA results.
 
 <div class="alert alert-info" role="alert">

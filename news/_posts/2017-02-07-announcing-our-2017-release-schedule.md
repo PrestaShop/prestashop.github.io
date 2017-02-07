@@ -82,22 +82,22 @@ So, two new minor versions before summer, and 2 other by year's end, great!
 We have a pretty clear idea of what we want them to be. Here is a bird's eye view:
 
 * 1.7.1.0:
- * Should be released in March 2017.
- * Main projects:
-  * General stability and feature improvement.
-  * 1.6-to-1.7 upgrader.
-  * Improved translation scope.
-* 1.7.2.0:
- * Should be released in June 2017.
+  * Should be released in March 2017.
   * Main projects:
-   * Reworked Advanced Stock Management feature.
-   * More to come!
+    * General stability and feature improvement.
+    * 1.6-to-1.7 upgrader.
+    * Improved translation scope.
+* 1.7.2.0:
+  * Should be released in June 2017.
+    * Main projects:
+      * Reworked Advanced Stock Management feature.
+      * More to come!
 * 1.7.3.0:
- * Should be released in September 2017.
- * Main projects to be determined.
+  * Should be released in September 2017.
+  * Main projects to be determined.
 * 1.7.4.0:
- * Should be released in December 2017.
- * Main projects to be determined.
+  * Should be released in December 2017.
+  * Main projects to be determined.
  
 Do you want to help on a specific topic? Let us know!
 

@@ -16,7 +16,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 
 If you haven't seen it yet, check out our [Release Schedule for 2017](http://build.prestashop.com/news/announcing-our-2017-release-schedule/): we are doing our best to regularly deliver new 1.7 and 1.6 versions all year long. The ultimate aim is to have, by year's end, 4 minor versions for v1.7, as well as monthly patch versions for both v1.7 and v1.6.
 
-While we are mentioning patch versions for v1.7: where wants 1.7.0.5 released? I know I do, and [those 29 merged PRs](https://github.com/PrestaShop/PrestaShop/milestone/18?closed=1) might convince you too :) See you soon!
+While we are mentioning patch versions for v1.7: who here wants 1.7.0.5 released? I know I do, and [those 29 merged PRs](https://github.com/PrestaShop/PrestaShop/milestone/18?closed=1) might whet your appetite :) See you soon!
 
 Notable PRs merged last week are:
 

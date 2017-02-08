@@ -85,10 +85,6 @@ See all the PRs merged into the 'develop' codebase since the last Core Weekly [h
 And now, the merged pull-requests on the ['1.7.0.x' branch](https://github.com/PrestaShop/PrestaShop/tree/1.7.0.x) since the last Core Weekly Report!
 
 
-### Front office
-
-
-
 ### Back office
 
 * [#7379](https://github.com/PrestaShop/PrestaShop/pull/7379): Fix image icon, by @aleeks.

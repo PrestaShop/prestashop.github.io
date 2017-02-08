@@ -27,7 +27,7 @@ Notable PRs merged last week are:
 * It's the little things that count: shared stock quantity are now displayed correctly, thanks to @amazzing!
 * Goodbye for good, smartyDump()! Cheers @prestamodule :)
 
-Found an issue in PrestaShop 1.7? [Create a Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)! Every day at around 11:30 (Paris time), part of the team gathers in order to review the recent Forge tickets and assess their priorities and urgency. I'll post a photo if you want :) Thank you for your contribution! (and thank you for read this text instead of directly going to the code changes ;) )
+Found an issue in PrestaShop 1.7? [Create a Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)! Every day at around 11:30 (Paris time), part of the team gathers in order to review the recent Forge tickets and assess their priorities and urgency. I'll post a photo if you want :) Thank you for your contribution! (and thank you for reading this text instead of directly going to the code changes ;) )
 
 
 

@@ -15,12 +15,12 @@ You've probably been anxiously wondering what happened with the [PrestaShop tran
 
 ### 1.7.1 is on its way
 
-We're getting close to the upload of new strings for 1.7.1 version. We'll publish a short article here when it's done, to let you know what's new!
+New strings will soon be uploaded for 1.7.1 version. We'll publish a short article here when it's done, to let you know what's new!
 
 
 ### Translations update
 
-As usual, 1.7 translations are updated each Monday, and 1.6 translations every two weeks (or so ^^).
+As usual, 1.7 translations are updated every Monday, and 1.6 translations every two weeks (or so ^^).
 
 Last updates:
 
@@ -139,12 +139,12 @@ At the end of January 2017, some languages would still benefit from some proofre
 
 ![Languages that need proofreading](/assets/images/2017/02/Build_Crowdin_proofreading_Jan17.png)
 
-Again, these figures are for 1.7, but 1.6 also need some proofreading too :)
+Again, these figures are for 1.7, but 1.6 needs some proofreading too :)
 
-If you wish to help to proofread what has been translated, please [contact me on Crowdin](https://crowdin.com/profile/alex-even) with the language you’d like to proofread. We need your help!
+If you wish to help to proofread what has been translated, please [contact me on Crowdin](https://crowdin.com/profile/alex-even) with the language you'd like to proofread. We need your help!
 
 If you haven’t joined us on Crowdin yet, [it's never too late](https://crowdin.com/project/prestashop-official)!
 
-If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let us know: we’ll include a word about it in the next monthly report.
+If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let us know: we'll include a word about it in the next monthly report.
 
-Do you have a question, a remark? Don’t hesitate to leave a comment. See you next month!
+Do you have a question, a remark? Don't hesitate to leave a comment. See you next month!

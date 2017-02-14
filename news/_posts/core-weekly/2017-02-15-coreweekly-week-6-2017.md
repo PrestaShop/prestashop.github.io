@@ -16,9 +16,11 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 
 A healthy reminder, folks: check out our [Release Schedule for 2017](http://build.prestashop.com/news/announcing-our-2017-release-schedule/). The [recently-released 1.7.0.5](http://build.prestashop.com/news/prestashop-1-7-0-5-maintenance-release/) is just one step in this calendar, and we intend to keep releasing monthly versions.
 
-Notable happenstance since last week is that the team really went all out on handling dusty pull requests. Dozens of PRs were reviewed, tested and either merged or closed. This is great news for the community, for two reasons.<br/>
-First, because many contributors who submitted a PR and felt it was forgotten now received feedback from the Core team, either a positive one or one that should help them improve their future contributions. <br/>
-Second, because by processing more than a hundred PRs, the team has cleared the view on the remaining PRs. We now have a better understanding of what our next moves can be, and we hope to process more PRs soon, in order to be more responsive to community feedback. <br/>
+Notable happenstance since last week is that the team really went all out on handling dusty pull requests. Dozens of PRs were reviewed, tested and either merged or closed. This is great news for the community, for two reasons:<br/>
+
+* First, because many contributors who submitted a PR and felt it was forgotten now received feedback from the Core team, either a positive one or one that should help them improve their future contributions.
+* Second, because by processing more than a hundred PRs, the team has cleared the view on the remaining PRs. We now have a better understanding of what our next moves can be, and we hope to process more PRs soon, in order to be more responsive to community feedback.
+
 As of this writing, [we have 110 open PRs](https://github.com/PrestaShop/PrestaShop/pulls) (for all branches) -- discounting those which are already milestoned, [we are below 90 PRs left to be processed](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr%20is%3Aopen%20no%3Amilestone)! This is thrilling!
 
 Found an issue in PrestaShop 1.7? [Create a Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1) -- or create a PR! Thank you for your contribution to the PrestaShop project!

@@ -74,17 +74,25 @@ layout: default
         <ul class="pager">
 
           <li class="previous {% unless paginator.previous_page_path %}disabled{% endunless%}">
-            <a href="{{ paginator.previous_page_path  || "#" }}">
+            {% if paginator.previous_page_path %}
+              <a href="{{ paginator.previous_page_path }}">
+                <span aria-hidden="true">&larr;</span> Newer
+              </a>
+            {% else %}
               <span aria-hidden="true">&larr;</span> Newer
-            </a>
+            {% endif %}
           </li>
           <li>
             <span class="page_number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
           </li>
-          <li class="next {% unless paginator.next_page_path %}disabled{% endunless%}">
-            <a href="{{ paginator.next_page_path || "#" }}">
-              Older <span aria-hidden="true">&rarr;</span>
-            </a>
+          <li class="next {% unless paginator.next_page_path %}disabled{% endunless%}">>
+						{% if paginator.next_page_path %}
+							<a href="{{ paginator.next_page_path }}">
+								Older <span aria-hidden="true">&rarr;</span>
+							</a>
+						{% else %}
+							Older <span aria-hidden="true">&rarr;</span>
+						{% endif %}
           </li>
 
         </ul>

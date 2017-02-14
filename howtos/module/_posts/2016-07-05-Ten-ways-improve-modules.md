@@ -11,7 +11,7 @@ published: true
 
 PrestaShop has numerous features in the API, both hidden in its code as well as in the developer documentation and there are many tools that allow you to create your own module in no time!
 Unfortunately I have noticed that many developers do not use these features and tools to their advantage, so I think it's time to change all that :)
-Hopefully, these tips will increase your development speed and save you lots and lots of time. And if not satisfied, you'll get your money back! (Oh, wait...)  
+Hopefully, these tips will increase your development speed and save you lots and lots of time. And if not satisfied, you'll get your money back! (Oh, wait...)
 
 Here is a list of very very useful tools and features. Prepare for some technical stuff as we're going to cover some of them in depth.
 
@@ -23,23 +23,23 @@ Here is a list of very very useful tools and features. Prepare for some technica
 Using an integrated development environment such as PhpStorm or NetBeans is a great way to improve your productivity.
 Tools such as these come with dozens of nifty features out-of-the-box to develop quicker... a lot quicker!
 
-As the name implies, they intend to integrate as many features as possible, allowing you for example to automatically upload your changes over FTP. It is also possible to make a direct connection with the MySQL database and browse it from your IDE (not recommended for production environments!) to see what was actually written to the database by your module.  
+As the name implies, they intend to integrate as many features as possible, allowing you for example to automatically upload your changes over FTP. It is also possible to make a direct connection with the MySQL database and browse it from your IDE (not recommended for production environments!) to see what was actually written to the database by your module.
 An IDE is aware of your code, guiding you while you write your code, wherever and whenever you need it. Cool tip for PhpStorm users: navigate to *Help > Productivity guide*. It will show you how many keystrokes it has saved you, as well as amount of bugs prevented and hours saved. The numbers will add up quickly after using it for a while!
 These IDEs were designed to never take your hands off the keyboard while performing basic programming tasks. Feel free to configure the keyboard shortcuts in a way you're comfortable with and don't disable the "Tip of the day" messages. They can make the "steep" learning curve of using an IDE a little bit less steep.
 
 ### 2. Stick to coding standards
-PrestaShop has changed their coding standards a few times in the past and as of May this year, another coding standard has gone into effect. Why does PrestaShop change its [coding standards]({% post_url 2016-05-10-prestashop-coding-standards %})?  
+PrestaShop has changed their coding standards a few times in the past and as of May this year, another coding standard has gone into effect. Why does PrestaShop change its [coding standards](/news/prestashop-coding-standards/)?
 It is mostly because PrestaShop is an open source projects and needs several standards to abide to, because otherwise the whole codebase would become an unreadable mess and the GitHub repository would become a place full of (small) conflicts --  no time to actually focus on the software itself.
-("What color is [the bikeshed](http://bikeshed.com/)?", "I think it should be [PrestaShop purple](http://251B5B.bikeshed.com/)!" -- just to name a few examples!)  
+("What color is [the bikeshed](http://bikeshed.com/)?", "I think it should be [PrestaShop purple](http://251B5B.bikeshed.com/)!" -- just to name a few examples!)
 
 The latest standards used by PrestaShop are based on the Symfony standards. By adopting these common standards, it makes it easier to rely on solid and proven guidelines you can use on other projects.
 Even though these standards are very specific to open source, you can incorporate them into your own workflow as well, in order to increase productivity.
 There are probably numerous times where a co-worker might have to look at your work and need to adjust your code. Having someone else take a look at your code may apply even if you're a one man army coder.
-Using standards makes it much easier to cooperate. Don't forget that these standards were also designed to make the code somewhat "predictable" and allows for less mistakes, thus making the code you write less error-prone. Isn't that cool?  
+Using standards makes it much easier to cooperate. Don't forget that these standards were also designed to make the code somewhat "predictable" and allows for less mistakes, thus making the code you write less error-prone. Isn't that cool?
 If you use these standards and rules that have (originally) been designed for open source projects to your advantage, you'll definitely save yourself some time!
 
 ### 3. Generate the module's configuration page
-When working with PrestaShop modules you might have seen the fancied configuration pages. Notice how many of them are different? Some include wizard pages or popups, others have millions of tabs to separate the different configuration types.  
+When working with PrestaShop modules you might have seen the fancied configuration pages. Notice how many of them are different? Some include wizard pages or popups, others have millions of tabs to separate the different configuration types.
 At first sight, some of them might look cool and you might get tempted to copy these as well, but don't forget that this will cost you some maintainability. This is particularly true when having to support multiple versions of PrestaShop. The `HelperForm` and `HelperOptions` classes were designed to help you with this.
 Did you know that it is possible to extend these templates and that you can define your own configuration elements? Here's a code snippet that will allow you to use PrestaShop 1.6's switch element on an older version of PrestaShop:
 
@@ -91,7 +91,7 @@ You can define the constants as follows:
 class IndexControllerCore extends FrontController
 {
 	const ACCEPT_PAYMENTS = 'MYMODULE_ACCEPT_PAYMENTS';
-	
+
 	public function __construct()
 	{
 		// CONSTRUCTOR
@@ -110,21 +110,21 @@ Here's an example of a Gruntfile:
 {% gist firstred/1f6a589625ac65b2d10e07628587e9fb %}
 
 ### 9. Use the validator
-This is a very simple one. You can use the validator at [https://validator.prestashop.com/](https://validator.prestashop.com/). It will show you if your module could use some improvements. 
+This is a very simple one. You can use the validator at [https://validator.prestashop.com/](https://validator.prestashop.com/). It will show you if your module could use some improvements.
 It doesn't cover all cases and might miss some problems you might have in your module, but it will give you a basic understanding of the improvements you will need. Not everything is equally important. Focusing on security has (of course) a higher priority than having enough spaces before a single opening bracket. Use your best judgement!
- 
+
 ### 10. Go for automated testing
 A human can only test so much. If you have a lot of repeating tasks that can be easily handled by a continuous integration server such as Jenkins, use it!
 It's not going to be covered in detail in this blog post, but here are a few steps to get started with automatically testing PrestaShop modules:
 
    - Install Jenkins
-   - Configure it in such a way that it 
+   - Configure it in such a way that it
        - clones PrestaShop's repository
        - clones your module into the `modules` directory
        - [automatically](http://doc.prestashop.com/display/PS16/Installing+PrestaShop+using+the+command-line+script) installs PrestaShop
        - uses a testing framework such as [Codeception](http://codeception.com/) in order to unit, functional and acceptance test your module
        - is used together with Selenium in order to see the actual steps
-   
+
 By beginning with a simple acceptance test that installs your module, you will immediately get feedback on the installation process of your module and bugs in that area will be visible immediately.
 Another advantage of using a continuous integration server is that you can define massive build matrices that will allow you to test on e.g. PHP 5.5, 5.6 & 7.0 + PrestaShop 1.5.0.17 - 1.6.1.6 simultaneously.
 No more need to manually test the installation process on all these versions. You can now spend this time on further improving your module instead.

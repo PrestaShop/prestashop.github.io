@@ -7,13 +7,11 @@ url: "http://build.prestashop.com" # the base hostname & protocol for your site
 
 permalink: /:categories/:title/
 
-paginate: 7
+paginate: 10
 paginate_path: "/page:num/"
 
 google_analytics: "UA-2753771-31"
 disqus_shortname: prestashopbuild
-
-status_page_url: http://status.prestashop.com/
 
 twitter_username: PrestaShop
 github_username:  PrestaShop
@@ -29,30 +27,30 @@ kramdown:
 exclude: ["bower.json", "bower_components", "Gemfile", "Gemfile.lock", ".travis.yml", "vendor"]
 
 sass:
-    load_paths:
-        - _sass
-    style: compressed
+  load_paths:
+    - _sass
+  style: compressed
 
 gems:
-    - jemoji
-    - jekyll-mentions
-    - jekyll-sitemap
-    - jekyll-feed
-    - jekyll-redirect-from
-    - jekyll-paginate
-    - jekyll-gist
+  - jemoji
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-gist
 
 # Page collection are used for how-tos pages
 howtos:
 - theme:
-    icon: fa-crop
+  icon: fa-crop
 - module:
-    icon: fa-lightning
+  icon: fa-lightning
 - pdf:
-    icon: fa-file
+  icon: fa-file
 - misc:
-    icon: fa-random
+  icon: fa-random
 - upgrade:
-    icon: fa-retweet-1
+  icon: fa-retweet-1
 - translation:
-    icon: fa-globe
+  icon: fa-globe

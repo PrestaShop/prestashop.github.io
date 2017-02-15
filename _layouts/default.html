@@ -35,7 +35,7 @@
     {% unless page.show_search == false %}
     <script type="text/javascript" src="{{ '/js/vendors/jekyll-search.js' | prepend: site.baseurl }}"></script>
     {% endunless %}
-    <script type="text/javascript" src="{{ '/js/app.js' | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ '/js/app.js' | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}"></script>
 
   </body>
 

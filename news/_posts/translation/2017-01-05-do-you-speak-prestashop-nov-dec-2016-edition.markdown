@@ -3,7 +3,7 @@ layout: post
 title:  "Do you speak PrestaShop? – November & December 2016 edition"
 subtitle: "With some news about translations that you should read!"
 date:   2017-01-05 06:09:47
-author: alexeven
+authors: [ alexeven ]
 icon: icon-world
 tags: [translation, i18n, l10n]
 ---

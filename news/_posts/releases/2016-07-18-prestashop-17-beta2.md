@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop 1.7.0.0 reaches Beta 2 stage"
 subtitle: "Making progress!"
 date:   2016-07-18 09:00:01
-author: [ xavierborderie ]
+authors: [ xavierborderie ]
 icon: icon-gift
 tags:
 - 1.7

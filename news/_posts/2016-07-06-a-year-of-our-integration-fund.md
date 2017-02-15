@@ -3,7 +3,7 @@ layout: post
 title:  "A year of our $1M Fund: Already $200,000 granted, and you too can be a part of it!"
 subtitle: "Build modules your nearby merchants need "
 date:   2016-07-06 09:10:11
-author: margauxchoplin
+authors: [ margauxchoplin ]
 icon: icon-dollars
 tags: [modules, development, addons]
 ---

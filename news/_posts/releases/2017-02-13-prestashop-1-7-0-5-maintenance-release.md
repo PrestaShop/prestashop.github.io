@@ -3,7 +3,7 @@ layout: post
 title:  "Release of PrestaShop 1.7.0.5"
 subtitle: "Maintenance version of the 1.7.0.x branch"
 date:   2017-02-13 09:10:11
-author: xavierborderie
+authors: [ xavierborderie ]
 icon: icon-leaf
 tags:
  - version

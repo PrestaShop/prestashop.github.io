@@ -3,7 +3,7 @@ layout: post
 title:  "Introducing PrestonBot"
 subtitle: "The PrestaShop community best friend"
 date:   2016-09-26 11:00:00
-author: [ mandrieu ]
+authors: [ mandrieu ]
 icon: icon-daft-punk
 tags:
  - contributing

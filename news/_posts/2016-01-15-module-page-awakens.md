@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop episode 1.7: the module page awakens"
 subtitle: Why we’re making a new module page, and what’s in it
 date:   2016-01-15 15:30:00
-author: guillaumebruere
+authors: [ guillaumebruere ]
 icon: icon-blaster
 tags:
  - 1.7

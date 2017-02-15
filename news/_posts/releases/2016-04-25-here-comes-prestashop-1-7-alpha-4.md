@@ -3,7 +3,7 @@ layout: post
 title:  "Here comes PrestaShop 1.7.0.0 alpha 4!"
 subtitle: "Less bugs, more fun: test it now!"
 date:   2016-04-25 02:30:00
-author: [ mandrieu, maximebiloe, xavierborderie, alexeven ]
+authors: [ mandrieu, maximebiloe, xavierborderie, alexeven ]
 icon: icon-gift
 tags:
 - 1.7

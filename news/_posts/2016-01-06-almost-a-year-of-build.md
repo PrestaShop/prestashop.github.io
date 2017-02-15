@@ -3,7 +3,7 @@ layout: post
 title:  "(Almost) A Year of Build"
 subtitle: "Indulge us while we bathe in our yearly self-celebratory post"
 date:   2016-01-06 19:00:00
-author: [ xavierborderie , alexeven ]
+authors: [ xavierborderie , alexeven ]
 icon: icon-cocktail
 tags:
  - news

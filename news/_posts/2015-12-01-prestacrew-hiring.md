@@ -3,7 +3,7 @@ layout: post
 title:  "The PrestaCrew is hiring more sailors"
 subtitle: "Join the fun!"
 date:   2015-12-01 12:00:41
-author: alexeven
+authors: [ alexeven ]
 icon: icon-daft-punk
 tags:
  - team

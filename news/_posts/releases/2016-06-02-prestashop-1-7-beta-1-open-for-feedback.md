@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop 1.7.0.0 Beta 1 is open for feedback!"
 subtitle: "Dear community, this is your time to shine!"
 date:   2016-06-02 00:00:01
-author: [ xavierborderie ]
+authors: [ xavierborderie ]
 icon: icon-gift
 tags:
 - 1.7

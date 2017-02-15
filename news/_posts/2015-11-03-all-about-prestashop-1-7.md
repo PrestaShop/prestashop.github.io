@@ -3,7 +3,7 @@ layout: post
 title:  "All about PrestaShop 1.7"
 subtitle: "All the 1.7-related articles published on Build, Curated just for you"
 date:   2015-11-03 09:10:11
-author: xavierborderie
+authors: [ xavierborderie ]
 icon: icon-penknife
 tags: [1.7]
 ---

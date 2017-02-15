@@ -3,7 +3,7 @@ layout: post
 title:  "New default theme for PrestaShop 1.7"
 subtitle: "What will the new PrestaShop look like?"
 date:   2016-02-04 09:00:00
-author:  maximebiloe
+authors:  maximebiloe
 icon: icon-wand
 tags: [1.7]
 ---

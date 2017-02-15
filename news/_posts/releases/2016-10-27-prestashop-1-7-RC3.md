@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop 1.7.0.0 RC3: Getting there!"
 subtitle: "Another RC for you to like :)"
 date:   2016-10-27 09:10:11
-author: xavierborderie
+authors: [ xavierborderie ]
 icon: icon-leaf
 tags:
  - 1.7

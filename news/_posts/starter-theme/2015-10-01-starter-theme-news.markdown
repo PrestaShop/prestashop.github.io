@@ -3,7 +3,7 @@ layout: post
 title:  "Starter Theme: fresh news from the front"
 subtitle: "What's up about Starter Theme"
 date:   2015-10-01 18:00:00
-author:  [ alexsegura ]
+authors:  [ alexsegura ]
 icon: icon-lego
 tags: [starter-theme]
 ---

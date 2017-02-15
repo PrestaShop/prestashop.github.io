@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop Core Weekly - Week 9"
 subtitle: "An inside look at PrestaShop's codebase"
 date:   2016-03-07 14:37:41
-author: xavierborderie
+authors: [ xavierborderie ]
 icon: icon-calendar
 tags:
  - core-weekly

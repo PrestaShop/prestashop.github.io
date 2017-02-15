@@ -3,7 +3,7 @@ layout: post
 title:  "Do you speak PrestaShop? - August 2016 Edition"
 subtitle: "Who said August would be a quiet month?"
 date:   2016-09-22 06:09:47
-author: llandry
+authors: [ llandry ]
 icon: icon-world
 tags: [translation, i18n, l10n]
 ---

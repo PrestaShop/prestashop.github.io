@@ -3,7 +3,7 @@ layout: post
 title:  "Do you speak PrestaShop? – January 2016 edition"
 subtitle: "Our international community is still awesome in 2016"
 date:   2016-02-17 19:09:47
-author: alexeven
+authors: [ alexeven ]
 icon: icon-world
 tags: [translation, i18n, l10n]
 ---

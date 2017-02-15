@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop Core Weekly - Week 12 & 13"
 subtitle: "An inside look at PrestaShop"
 date:   2015-04-02 03:45:00
-author:  [ xavierborderie ]
+authors:  [ xavierborderie ]
 icon: icon-calendar
 tags:
  - core-weekly

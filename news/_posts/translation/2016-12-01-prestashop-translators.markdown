@@ -3,7 +3,7 @@ layout: post
 title:  "Paying tribute to our community of translators"
 subtitle: "Let's thank them for making PrestaShop available worldwide"
 date: 2016-12-02
-author: alexeven
+authors: [ alexeven ]
 icon: icon-world
 tags: [translation, i18n, l10n, contribute]
 ---

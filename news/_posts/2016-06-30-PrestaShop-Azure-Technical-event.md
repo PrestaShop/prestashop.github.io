@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop + Azure: meet the team behind it all!"
 subtitle: "Virtual machines, Microsoft devs and pizzas just for you on Thursday, 7th of July"
 date: 2016-06-30 09:10:11
-author: [guillaumebruere, quentinau]
+authors: [guillaumebruere, quentinau]
 icon: icon-megaphone
 tags:
  - azure

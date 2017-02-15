@@ -29,7 +29,7 @@
 
                 <h5>About the authors</h5>
 
-                {% for a in page.author %}
+                {% for a in page.authors %}
                 <div class="author-item">
 
                   <h4>
@@ -67,7 +67,7 @@
                 {% endfor %}
 
               {% else %}
-                {% assign author=site.data.authors[page.author.first] %}
+                {% assign author=site.data.authors[page.authors.first] %}
 
                 <h5>About the author</h5>
 

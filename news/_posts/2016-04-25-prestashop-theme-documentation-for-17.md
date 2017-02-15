@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop theme documentation first draft is out"
 subtitle: "Read it and tell us what else you want to know"
 date:   2016-04-25 09:00:00
-author: julienbourdeau
+authors: [ julienbourdeau ]
 icon: icon-book
 ---
 

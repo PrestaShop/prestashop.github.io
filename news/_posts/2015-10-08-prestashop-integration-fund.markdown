@@ -3,7 +3,7 @@ layout: post
 title:  "Benefit from the $1M Integration Fund to build your own PrestaShop modules"
 subtitle: "What it’s all about and how to get involved"
 date:   2015-10-08 14:29:47
-author: margauxchoplin
+authors: [ margauxchoplin ]
 icon: icon-dollars
 tags: [modules, development, addons]
 ---

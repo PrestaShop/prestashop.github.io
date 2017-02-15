@@ -3,7 +3,7 @@ layout: post
 title:  "A look back on the PrestaShop project in 2016"
 subtitle: "A few stats to celebrate our community!"
 date:   2017-01-27 09:10:11
-author: [xavierborderie, tristanlehot]
+authors: [xavierborderie, tristanlehot]
 icon: icon-calendar
 tags: [community, contribution, forge]
 ---

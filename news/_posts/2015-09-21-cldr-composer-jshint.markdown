@@ -3,7 +3,7 @@ layout: post
 title:  "CLDR, Composer, NPM, JSHint, oh my!"
 subtitle: "PrestaShop development getting real"
 date:   2015-09-24 18:00:41
-author: xavierborderie
+authors: [ xavierborderie ]
 icon: icon-puzzle
 tags:
  - 1.7

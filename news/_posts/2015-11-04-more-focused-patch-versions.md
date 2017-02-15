@@ -3,7 +3,7 @@ layout: post
 title:  "Our plan for more regular & focused patch versions"
 subtitle: "Fixing more issues in due time!"
 date:   2015-11-04 14:00:00
-author: [jeromenadaud, xavierborderie]
+authors: [jeromenadaud, xavierborderie]
 icon: icon-random
 tags:
  - patch

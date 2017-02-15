@@ -3,7 +3,7 @@ layout: post
 title:  "Introducing PrestaShop's Community Framework"
 subtitle: "Listing best practices and responsibility in order to involve the community more."
 date:   2016-10-12 09:10:11
-author: xavierborderie
+authors: [ xavierborderie ]
 icon: icon-leaf
 tags:
  - development

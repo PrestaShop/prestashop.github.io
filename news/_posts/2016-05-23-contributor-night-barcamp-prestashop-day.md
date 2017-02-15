@@ -3,7 +3,7 @@ layout: post
 title:  "Contributor Night & barcamp: Community Events around the PrestaShop Day"
 subtitle: "Come and contribute live with us in Paris!"
 date:   2016-05-23 09:00:00
-author: [ xavierborderie ]
+authors: [ xavierborderie ]
 icon: icon-laptop
 tags:
 - contribution

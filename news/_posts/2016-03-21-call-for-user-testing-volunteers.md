@@ -3,7 +3,7 @@ layout: post
 title:  "Calling for user-testing volunteers (Paris, France)"
 subtitle: "Come tell us what you think!"
 date:   2016-03-21 17:37:41
-author: xavierborderie
+authors: [ xavierborderie ]
 icon: icon-mic
 tags:
  - 1.7

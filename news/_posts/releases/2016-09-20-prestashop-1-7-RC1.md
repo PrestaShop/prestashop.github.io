@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop 1.7.0.0 RC1: The Real Deal"
 subtitle: "Delivering a quality 1.7, one RC at a time!"
 date:   2016-09-20 09:10:11
-author: xavierborderie
+authors: [ xavierborderie ]
 icon: icon-leaf
 tags:
  - 1.7

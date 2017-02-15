@@ -3,7 +3,7 @@ layout: post
 title:  "An update on the 1.7 architecture"
 subtitle: "What's happening in NewArchi land?"
 date:   2015-12-03 12:00:00
-author: xavierborderie
+authors: [ xavierborderie ]
 icon: icon-road
 tags:
  - architecture

@@ -3,7 +3,7 @@ layout: post
 title:  "Recommended for testing: PrestaShop 1.7.0.0 RC0"
 subtitle: "Now's the time to roll up your sleeves, community!"
 date:   2016-08-29 09:10:11
-author: xavierborderie
+authors: [ xavierborderie ]
 icon: icon-leaf
 tags:
  - 1.7

@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop 1.7 & performances"
 subtitle: "Hey! Not so fast!"
 date:   2016-10-28 11:00:00
-author: maximebiloe
+authors: [ maximebiloe ]
 icon: icon-lightning
 tags: [1.7]
 ---

@@ -3,7 +3,7 @@ layout: post
 title:  "Everything you need to know about PrestaShop 1.7.0.0"
 subtitle: "...but were afraid to ask -- a.k.a. the 1.7 FAQ"
 date:   2016-02-11 17:00:00
-author:  xavierborderie
+authors:  xavierborderie
 icon: icon-chat-alt
 tags: [1.7]
 ---

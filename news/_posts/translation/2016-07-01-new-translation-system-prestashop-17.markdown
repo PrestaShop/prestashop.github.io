@@ -3,7 +3,7 @@ layout: post
 title:  "Coming Soon: A New Translation System for PrestaShop 1.7"
 subtitle: "Or how it should be easier to translate PrestaShop from now on"
 date:   2016-07-01 06:09:47
-author: alexeven
+authors: [ alexeven ]
 icon: icon-flag
 tags: [translation, i18n, l10n, 1.7]
 ---

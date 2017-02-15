@@ -3,7 +3,7 @@ layout: post
 title:  "Starter Theme: fresh news from the front #2"
 subtitle: "What's up about Starter Theme"
 date:   2015-10-26 15:00:00
-author:  julienbourdeau
+authors:  julienbourdeau
 icon: icon-lego
 tags: [starter-theme]
 ---

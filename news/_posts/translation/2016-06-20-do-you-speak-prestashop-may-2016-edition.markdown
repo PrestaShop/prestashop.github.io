@@ -3,7 +3,7 @@ layout: post
 title:  "Do you speak PrestaShop? – May 2016 edition"
 subtitle: "The latest news about PrestaShop translation project (yep, including 1.7 translations)"
 date:   2016-06-20 06:09:47
-author: alexeven
+authors: [ alexeven ]
 icon: icon-world
 tags: [translation, i18n, l10n]
 ---

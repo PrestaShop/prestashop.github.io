@@ -3,7 +3,7 @@ layout: post
 title:  "Do you speak PrestaShop? – April 2016 edition"
 subtitle: "Did you know that PrestaShop is soon to be fully translated in Greek?"
 date:   2016-05-13 06:09:47
-author: alexeven
+authors: [ alexeven ]
 icon: icon-world
 tags: [translation, i18n, l10n]
 ---

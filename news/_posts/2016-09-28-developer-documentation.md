@@ -3,7 +3,7 @@ layout: post
 title:  "New developer documentation for PrestaShop 1.7"
 subtitle: "It's online and focusing on differences between 1.6 and 1.7"
 date:   2016-09-28 10:00:00
-author:  julienbourdeau
+authors:  julienbourdeau
 icon: icon-penknife
 tags: [1.7, documentation]
 ---

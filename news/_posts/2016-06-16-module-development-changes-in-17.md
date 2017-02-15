@@ -3,7 +3,7 @@ layout: post
 title:  "Module development changes in PrestaShop 1.7.0.0"
 subtitle: "Prepare your 1.6 modules to ensure maximum 1.7 compatibility"
 date: 2016-06-16 09:10:11
-author: xavierborderie
+authors: [ xavierborderie ]
 icon: icon-book
 tags:
  - 1.7

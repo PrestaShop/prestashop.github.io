@@ -3,7 +3,7 @@ layout: post
 title:  "Evolution of the PrestaShop Coding Standards"
 subtitle: "How to best contribute code to the PrestaShop project"
 date:   2016-05-10 03:00:00
-author: [ maximebiloe ]
+authors: [ maximebiloe ]
 icon: icon-code
 tags:
 - coding-standards

@@ -3,7 +3,7 @@ layout: post
 title:  "Do you speak PrestaShop? – October 2016 edition"
 subtitle: "PrestaShop 1.7 is here with 25 languages already translated, hurrah!"
 date:   2016-11-18 06:09:47
-author: alexeven
+authors: [ alexeven ]
 icon: icon-world
 tags: [translation, i18n, l10n]
 ---

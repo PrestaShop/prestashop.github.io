@@ -3,7 +3,7 @@ layout: post
 title:  "How to contribute to the User Guide and help translate it"
 subtitle: "A quick guide to writing PrestaShop Documentation on Confluence"
 date:   2017-01-12 06:09:47
-author: alexeven
+authors: [ alexeven ]
 icon: icon-book-tag
 tags: [contribute, documentation]
 ---

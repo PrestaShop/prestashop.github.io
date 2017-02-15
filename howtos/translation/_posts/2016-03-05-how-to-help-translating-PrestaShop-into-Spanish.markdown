@@ -4,7 +4,7 @@ title:  "Videos: How to help translating PrestaShop into Spanish (ES)"
 subtitle: "¿Cómo ayudar a traducir el software de PrestaShop en español?"
 date:   2016-03-07 10:15:00
 disqus_url: "http://build.prestashop.com/module/how-to-help-translating-prestashop-spanish/"
-author:  [ jesusruizgarcia ]
+authors:  [ jesusruizgarcia ]
 icon: icon-globe
 tags: [translation, i18n, l10n, spanish]
 published: true

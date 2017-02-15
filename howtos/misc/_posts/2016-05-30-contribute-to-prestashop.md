@@ -3,7 +3,7 @@ layout: post
 title:  "How to contribute to PrestaShop"
 subtitle: "You don't need to be a coder!"
 date:   2016-05-30 10:12:00
-author:  [ xavierborderie ]
+authors:  [ xavierborderie ]
 icon: icon-fried-egg
 tags: [contribute]
 published: true

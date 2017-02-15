@@ -3,7 +3,7 @@ layout: post
 title:  "10+ common mistakes while coding a PrestaShop module"
 subtitle: "Do you commit these mistakes? Do not make them further."
 date: 2016-07-25 09:10:00
-author: [ kpodemski ]
+authors: [ kpodemski ]
 icon: icon-bug
 tags: [ howto, tutorial, modules ]
 published: true

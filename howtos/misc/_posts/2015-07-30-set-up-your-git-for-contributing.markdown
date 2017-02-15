@@ -3,7 +3,7 @@ layout: post
 title:  "Set up your Git for contributing"
 subtitle: "Tweak your git configuration to work better"
 date:   2015-07-30 11:21:00
-author:  [ julienbourdeau ]
+authors:  [ julienbourdeau ]
 icon: icon-laptop
 tags: [git, env, github]
 ---

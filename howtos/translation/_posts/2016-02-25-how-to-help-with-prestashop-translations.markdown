@@ -4,7 +4,7 @@ title:  "10 rules to follow when translating PrestaShop"
 subtitle: "Or how to rock at translations"
 date:   2016-02-25 17:15:00
 disqus_url: "http://build.prestashop.com/module/how-to-help-with-prestashop-translation/"
-author:  [ alexeven ]
+authors:  [ alexeven ]
 icon: icon-globe
 tags: [translation, i18n, l10n]
 published: true

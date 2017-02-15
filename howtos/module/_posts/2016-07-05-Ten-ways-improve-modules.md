@@ -3,7 +3,7 @@ layout: post
 title:  "Ten ways to improve your PrestaShop modules!"
 subtitle: "Stop the bugs, get back to innovating!"
 date: 2016-07-05 8:07:11
-author: [ mdekker ]
+authors: [ mdekker ]
 icon: icon-puzzle
 tags: [ howto, tutorial, modules ]
 published: true

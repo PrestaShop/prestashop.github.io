@@ -4,7 +4,7 @@ title:  "How to override modules in PrestaShop"
 subtitle: "Override module methods in PrestaShop 1.6.0.11 and above"
 date:   2015-05-10 12:15:00
 disqus_url: "http://build.prestashop.com/module/how-to-override-modules/"
-author:  [ gskema ]
+authors:  [ gskema ]
 icon: icon-code
 tags: [override, module]
 published: true

@@ -3,7 +3,7 @@ layout: post
 title:  "New Translator Guide Available Now!"
 subtitle: "Translating for PrestaShop has never been so easy ^o^"
 date:   2016-06-13 06:09:47
-author: llandry
+authors: [ llandry ]
 icon: icon-flag-scout
 tags: [contribute, translation]
 ---

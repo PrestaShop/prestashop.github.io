@@ -4,7 +4,7 @@ title:  "How to write on this blog"
 subtitle: "or: How we tried to ensure that only developers could write on the devblog :)"
 date:   2015-03-04 15:12:00
 disqus_url: "http://build.prestashop.com/misc/how-to-write-on-this-blog/"
-author:  [ julienbourdeau ]
+authors:  [ julienbourdeau ]
 icon: icon-pen
 tags: [help]
 published: true
@@ -141,7 +141,7 @@ layout: post
 title:  "Here goes the title of your article"
 subtitle: "This text will be displayed below your title"
 date:   2015-03-04 15:12:00
-author:  [ julienbourdeau ]
+authors:  [ julienbourdeau ]
 icon: icon-pen
 tags: [sample, tags, example]
 published: false

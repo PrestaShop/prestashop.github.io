@@ -12,23 +12,7 @@
         padding-top: 20px;
     }
    .site-header {
-        text-align: center;
-        img {
-            margin-top: -20px;
-            width: 60% !important;
-            height: 60% !important;
-        }
-        .nav-pills {
-            float: none !important;
-        }
-        .nav{
-            margin: $spacing-unit 0;
-            display: inline-block !important;
-        }
-        #search-container {
-            float: none;
-            margin: auto;
-        }
+     // here
     }
     .thumbnail.contributor > img {
       width: 120px !important;
@@ -44,19 +28,8 @@
         padding-top: 20px;
     }
     .site-header {
-        text-align: center;
-        img {
-            margin-top: -100px !important;
-            width: 100% !important;
-            height: 100% !important;
-        }
-        .nav-pills {
-            float: none !important;
-        }
-        .nav{
-            display: inline-block !important;
-        }
-}
+        // here
+    }
 }
 
 
@@ -413,33 +386,10 @@ li code {
  * Header
  */
 
-.site-header {
-    padding: 110px 0 100px 0;
-    &.has-search-form {
-        padding-bottom: 0;
-    }
-    a, a:visited {
-        color: $text-color;
-        font-size: 0.8em;
-        font-weight: 600;
-        display: inline-block;
-        border: 1px solid #ddd;
-        padding: 5px 14px !important;
-        margin-right: 5px;
-    }
-    img {
-        margin-top: -20px;
-    }
-    .site-title {
-        font-size: 1.6em;
-        border: none;
-        padding: 0;
 
-    }
-    .page-link {
-        padding-top: 3px;
-        margin-left: 12px;
-    }
+
+.site-header {
+    // here
 }
 
 #search-container {

@@ -16,7 +16,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 
 A healthy reminder, folks: check out our [Release Schedule for 2017](http://build.prestashop.com/news/announcing-our-2017-release-schedule/). The [recently-released 1.7.0.5](http://build.prestashop.com/news/prestashop-1-7-0-5-maintenance-release/) is just one step in this calendar, and we intend to keep releasing monthly versions.
 
-Notable happenstance since last week is that the team really went all out on handling dusty pull requests. Dozens of PRs were reviewed, tested and either merged or closed. This is great news for the community, for two reasons:<br/>
+One notable event since last week is that the team really went all out on handling dusty pull requests. Numerous PRs were reviewed, tested and either merged or closed. This is great news for the community, for two reasons:<br/>
 
 * First, because many contributors who submitted a PR and felt it was forgotten now received feedback from the Core team, either a positive one or one that should help them improve their future contributions.
 * Second, because by processing more than a hundred PRs, the team has cleared the view on the remaining PRs. We now have a better understanding of what our next moves can be, and we hope to process more PRs soon, in order to be more responsive to community feedback.

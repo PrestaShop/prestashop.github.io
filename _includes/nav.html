@@ -5,9 +5,9 @@
         News <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="#">Releases</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Community reports</a></li>
+        <li><a href="{{ '/tag/releases/' | prepend: site.baseurl }}">Releases</a></li>
+        <li><a href="{{ '/tag/events/' | prepend: site.baseurl }}">Events</a></li>
+        <li><a href="{{ '/tag/core-weekly/' | prepend: site.baseurl }}">Community reports</a></li>
       </ul>
     </li>
     <li class="dropdown">
@@ -15,8 +15,8 @@
         Product <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="#">1.7 Project</a></li>
-        <li><a href="#">1.7 FAQ</a></li>
+        <li><a href="{{ '/tag/1.7/' | prepend: site.baseurl }}">1.7 Project</a></li>
+        <li><a href="{{ '/news/prestashop-1-7-faq/' | prepend: site.baseurl }}">1.7 FAQ</a></li>
       </ul>
     </li>
     <li class="dropdown">
@@ -24,10 +24,10 @@
         Contribute <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="#">Contributor's guide</a></li>
-        <li><a href="#">Contributor's page</a></li>
-        <li><a href="#">Translators' page</a></li>
-        <li><a href="#">Contribute to this blog</a></li>
+        <li><a href="{{ '/howtos/misc/contribute-to-prestashop/' | prepend: site.baseurl }}">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+        <li><a href="{{ '/about/#contribute' | prepend: site.baseurl }}">Contribute to this blog</a></li>
       </ul>
     </li>
     <li class="dropdown">
@@ -35,13 +35,13 @@
         Learn <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="#">How-tos</a></li>
-        <li><a href="#">Tools</a></li>
-        <li><a href="#">Community reports</a></li>
+        <li><a href="{{ '/how-tos/' | prepend: site.baseurl }}">How-tos</a></li>
+        <li><a href="{{ '/tools/' | prepend: site.baseurl }}">Tools</a></li>
+        <li><a href="{{ '/tag/core-weekly/' | prepend: site.baseurl }}">Community reports</a></li>
       </ul>
     </li>
     <li class="">
-      <a href="#">About</a>
+      <a href="{{ '/about/' | prepend: site.baseurl }}">About</a>
     </li>
   </ul>
 </nav>

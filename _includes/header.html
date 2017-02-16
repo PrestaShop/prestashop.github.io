@@ -1,19 +1,19 @@
 <header class="site-header {% if page.show_search %}has-search-form{% endif %}">
 
   <div class="container">
-    <div class="row">
+    <div class="row clearfix">
 
-      <div id="logo" class="">
+      <div id="logo" class="pull-left">
           <img src="{{ "/assets/images/theme/new-logo.png" | prepend: site.baseurl }}" alt="">
       </div>
 
-      <div id="navigation">
+      <div id="navigation" class="pull-left">
 
         {% include nav.html %}
 
       </div>
 
-      <div id="searchbar" class="">
+      <div id="searchbar" class="pull-right">
           search
       </div>
 

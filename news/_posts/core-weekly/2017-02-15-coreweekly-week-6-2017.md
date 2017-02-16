@@ -112,7 +112,7 @@ Note that 1.7 patch versions are being built in the '1.7.0.x' branch. All of the
 See all the PRs merged into the 'develop' codebase since the last Core Weekly [here](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr%20merged%3A2017-02-06.2017-02-12%20is%3Aclosed%20base%3Adevelop).
 
 
-## Code changes in '1.7.0.x' branch (for the next patch version, v1.7.0.5) 
+## Code changes in '1.7.0.x' branch (for v1.7.0.5) 
 
 And now, the merged pull-requests on the ['1.7.0.x' branch](https://github.com/PrestaShop/PrestaShop/tree/1.7.0.x) since the last Core Weekly Report!
 

@@ -414,6 +414,9 @@ li code {
         li {
           border-bottom: solid 1px #909090;
         }
+        li:last-child {
+          border-bottom: 0;
+        }
         li > a {
           font-size: 13px;
           padding: 6px 10px;
@@ -428,24 +431,84 @@ li code {
     }
 }
 
-#search-container {
-    float: left;
-    width: 345px;
-    input {
-        border-radius: 55px;
-        color: $text-color;
-        font-size: 0.8em;
-        font-weight: 600;
-        display: inline-block;
-        border: 1px solid #ddd;
-        padding: 5px 14px !important;
-        margin-right: 5px;
-    }
+$autocomplete-width: 600px;
+#algolia-container {
+  margin-top: 10px;
+  #aa-search-input {
+    width: 210px;
+    border-radius: 55px;
+    color: $text-color;
+    font-size: 0.8em;
+    font-weight: 600;
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 5px 14px !important;
+    margin-right: 5px;
+  }
 }
 #results-container {
     clear: both;
     padding: $spacing-unit/3;
     margin-bottom: $spacing-unit/3;
+}
+.aa-hint {
+  color: #e4e4e4; }
+
+.hit-title, .hit-icon {
+  font-size: 14px;
+}
+.hit-title {
+  color: $text-color;
+  text-transform: capitalize;
+
+}
+
+.aa-dropdown-menu {
+  background-color: #fff;
+  border: 1px solid $border-color;
+  width: $autocomplete-width;
+  margin-top: 10px;
+  box-shadow: 4px 4px 0 rgba(241, 241, 241, 0.35);
+  font-size: 13px;
+  border-radius: 3px;
+  position: absolute;
+  left: auto !important;
+  right: 0 !important;
+  box-sizing: border-box; }
+
+.aa-suggestion {
+  padding: 6px 10px;
+  border-top: 1px solid $border-color;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+        }
+  .aa-suggestion:hover, .aa-suggestion.aa-cursor {
+    background-color: rgba(241, 241, 241, 0.35); }
+.aa-suggestion:first-child {
+  border-top: 0;
+}
+
+.aa-suggestion > span:first-child em, .aa-suggestion > span:last-child em {
+  font-weight: 700;
+  font-style: normal;
+  background-color: rgba(58, 150, 207, 0.1);
+  padding: 2px 0 2px 2px; }
+
+.algolia__result-highlight {
+  background-color: #ffffe4;
+}
+.empty-result {
+  padding: 6px 10px;
+}
+.algolia-credits {
+  border-top: 1px solid $border-color;
+  padding: 10px;
+  margin: 0;
+  text-align: right;
+  img {
+    height: 16px;
+  }
 }
 
 /**

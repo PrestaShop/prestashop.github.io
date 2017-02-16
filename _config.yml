@@ -40,6 +40,11 @@ gems:
   - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-gist
+  - algoliasearch-jekyll
+
+algolia:
+  application_id: 'EZTIUVNCHF'
+  index_name: 'jekyll'
 
 # Page collection are used for how-tos pages
 howtos:

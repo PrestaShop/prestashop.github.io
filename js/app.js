@@ -42,19 +42,4 @@ $(document).ready(function() {
     e.preventDefault();
     download('.htpasswd', getHtpasswdContent());
   })
-
-
-  if (typeof SimpleJekyllSearch != 'undefined') {
-    SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
-      json: '/search.json',
-      searchResultTemplate: '<a class="list-group-item" href="{url}">{title}</a>',
-      noResultsText: '<a class="list-group-item" >No result found</a>'
-    })
-  }
-
-  $('#search-input').keypress(function(e){
-    $('#search-container .hint').show();
-  });
 });

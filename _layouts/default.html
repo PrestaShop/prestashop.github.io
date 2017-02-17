@@ -31,11 +31,49 @@
     {% endif %}
 
     <script type="text/javascript" src="{{ '/js/vendors/jquery-2.1.4.min.js' | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ '/js/vendors/bootstrap.min.js' | prepend: site.baseurl }}"></script>
+
     <script type="text/javascript" src="{{ '/js/vendors/md5.js' | prepend: site.baseurl }}"></script>
-    {% unless page.show_search == false %}
-    <script type="text/javascript" src="{{ '/js/vendors/jekyll-search.js' | prepend: site.baseurl }}"></script>
-    {% endunless %}
+
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+
     <script type="text/javascript" src="{{ '/js/app.js' | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}"></script>
+
+    <script type="text/javascript">
+
+      var client = algoliasearch("{{ site.algolia.application_id }}", "c043efa26b689d9acc1e2dfce733f2bc");
+      var index = client.initIndex('{{ site.algolia.index_name }}');
+
+      //initialize autocomplete on search input (ID selector must match)
+      autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+          source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+          //value to be displayed in input control after user's suggestion selection
+          displayKey: 'name',
+          //hash of templates used when rendering dataset
+          templates: {
+            //'suggestion' templating function used to render a single suggestion
+            suggestion: function(hit) {
+              var str =
+                '<a href="' + hit.url + '">' +
+                  '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+                '</a>'
+              ;
+
+              return str;
+            },
+            // 'empty' : If no result found
+            empty: function() {
+              return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+            },
+            footer: function() {
+              return '<p class="algolia-credits">Powered by <img src="{{ "/assets/images/theme/algolia.jpg" | prepend: site.baseurl }}"></p>';
+            }
+          }
+      });
+    </script>
+
 
   </body>
 

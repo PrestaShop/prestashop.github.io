@@ -24,12 +24,15 @@ $brand-color:      #2a7ae2;
 $brand-color-2:    #df0067;
 $brand-color-3:    #1da6c2;
 $code-bg-color:    #fafaff;
+$border-color: #000000;
 
 $grey-color:       #939393;
 $grey-color-light: #e8e8e8;
 $grey-color-dark:  #555555;
 
 $flag-icon-css-path: '../assets/images/theme/flags';
+
+$navbar-collapse-max-height: 989px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -60,7 +63,7 @@ $flag-icon-css-path: '../assets/images/theme/flags';
 
         // Components
         "bootstrap/component-animations",
-        //"bootstrap/dropdowns",
+        "bootstrap/dropdowns",
         "bootstrap/button-groups",
         "bootstrap/input-groups",
         "bootstrap/navs",

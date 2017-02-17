@@ -90,7 +90,7 @@ PrestaShop 1.7 is a major evolution from version 1.6, and includes many changes 
 
 In consequence, we do our best to work on different environments and avoid potential compatibilities with the “obsolete” and current versions. On the following diagram is a representation of the running containers, showing two different Apache for the same PrestaShop. Each of them has its own PHP version, which are the latest stable version and the pre-release of the next version. They execute exactly the same code and work with the same database, which make the error detection easier.
 
-![Prestashop and Docker](/assets/images/2017/01/prestashop-docker.jpg)
+![Prestashop and Docker](/assets/images/2017/02/prestashop-docker.jpg)
 
 This infrastructure is made thanks to `docker-compose.yml`, which is a file explaining all the services to deploy and how to link them.
 

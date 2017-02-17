@@ -139,13 +139,13 @@ Once all the components are ready, the container proceeds to the installation of
 
 But if it is the fastest and most convenient way to get your shop running, it also requires you to set all your environment variables properly. I recommend that you check the default value of all these parameters to see if they fit in your case:
 
-* *DB_SERVER*: If set, the external MySQL database will be used instead of the volatile internal one _(default value: localhost)_
-* *DB_USER*: Override default MySQL user _(default value: root)_
-* *DB_PASSWD*: Override default MySQL password _(default value: admin)_
-* *DB_NAME*: Override default database name _(default value: prestashop)_
-* *ADMIN_MAIL*: Override default admin email _(default value: demo@prestashop.com)_
-* *ADMIN_PASSWD*: Override default admin password _(default value: prestashop_demo)_
-* *PS_DOMAIN*: Override the domain used to reach PrestaShop.
+* **DB_SERVER**: If set, the external MySQL database will be used instead of the volatile internal one _(default value: localhost)_
+* **DB_USER**: Override default MySQL user _(default value: root)_
+* **DB_PASSWD**: Override default MySQL password _(default value: admin)_
+* **DB_NAME**: Override default database name _(default value: prestashop)_
+* **ADMIN_MAIL**: Override default admin email _(default value: demo@prestashop.com)_
+* **ADMIN_PASSWD**: Override default admin password _(default value: prestashop_demo)_
+* **PS_DOMAIN**: Override the domain used to reach PrestaShop.
 
 When you are ready, launch the long `docker run` command you will have.
 

@@ -3,7 +3,7 @@ layout: post
 title:  "Docker and PrestaShop - A Beautiful Image"
 subtitle: "How we use Docker to improve PrestaShop development"
 date:   2017-02-17 09:10:11
-authors: [ xavierborderie, thomasn ]
+authors: [ thomasn ]
 icon: icon-penknife
 tags:
  - development

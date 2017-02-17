@@ -9,11 +9,11 @@ tags:
  - development
 ---
 
-## How a revolution began for our processes
-
 You’ve most probably heard about Docker and how great it is for development (and even maybe for production). Good news: we’ve cooked some things to help you develop on PrestaShop, thanks to Docker!
 
 Quick reminder for those of you not familiar with Docker. No, it’s not about Khaki pants (raise your hand if you’ve spotted a private joke). Docker helps you run and create images with containers, without having to install a virtual machine on your own. And once you’ve downloaded an image, you can deploy it in as many containers as needed - crazy and extremely convenient!
+
+## How a revolution began for our processes
 
 During summer 2015, we integrated our software among the existing images of [Docker Hub](https://hub.docker.com/r/prestashop/prestashop/).
 

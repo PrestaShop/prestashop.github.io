@@ -1,15 +1,18 @@
-<header class="site-header {% if page.show_search %}has-search-form{% endif %}">
+<header class="site-header{% if page.show_search %} has-search-form{% endif %}">
 
   <div class="container">
     <div class="row clearfix">
 
-      <div id="logo" class="pull-left">
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
         <a href="{{ site.url }}{{ site.baseurl }}">
           <img src="{{ "/assets/images/theme/new-logo.png" | prepend: site.baseurl }}" alt="">
         </a>
       </div>
 
-      <div id="navigation" class="pull-left">
+      <div id="navigation" class="">
 
         {% include nav.html %}
 

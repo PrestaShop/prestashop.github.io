@@ -33,6 +33,19 @@ function download(filename, text) {
 
 $(document).ready(function() {
 
+  $('.site-header .menu-button').click(function() {
+    $('#search').hide();
+    $('#navigation').toggle();
+  });
+  $('.site-header .search-button').click(function() {
+    $('#navigation').hide();
+    $('#algolia-container').toggle();
+  });
+
+
+
+  // Tools
+
   $('#generate-htaccess').click(function(e){
     e.preventDefault();
     download('.htaccess', getHtaccessContent());

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PrestaShop Core Weekly - Week 24"
+title:  "PrestaShop Core Weekly - Week 24 of 2015"
 subtitle: "An inside look at PrestaShop's codebase"
 date:   2015-06-19 12:29:47
 authors:  [ xavierborderie ]

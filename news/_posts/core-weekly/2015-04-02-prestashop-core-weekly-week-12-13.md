@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PrestaShop Core Weekly - Week 12 & 13"
+title:  "PrestaShop Core Weekly - Week 12 & 13 of 2015"
 subtitle: "An inside look at PrestaShop"
 date:   2015-04-02 03:45:00
 authors:  [ xavierborderie ]

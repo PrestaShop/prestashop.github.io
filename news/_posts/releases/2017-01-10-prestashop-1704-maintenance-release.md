@@ -11,6 +11,7 @@ tags:
  - patch
  - releases
  - 1.7.0.x
+ - 1.7
 ---
 
 PrestaShop 1.7.0.4 is now available. This maintenance release closes [29 of the most pressing issues](https://github.com/PrestaShop/PrestaShop/milestone/16?closed=1) reported since v1.7.0.0 was released.

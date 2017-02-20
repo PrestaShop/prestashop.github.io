@@ -8,6 +8,8 @@ icon: icon-lab
 tags:
  - advanced-stock-management
  - patch
+ - 1.6
+ - 1.6.1.x
 ---
 
 It has been in the pipeline for a while, it's now official, PrestaShop 1.6.1.11 will ship soon, most notably with some patches concerning the advanced stock management.

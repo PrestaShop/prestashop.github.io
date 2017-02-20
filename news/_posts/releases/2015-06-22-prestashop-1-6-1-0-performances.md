@@ -6,7 +6,9 @@ date:   2015-06-22 18:29:47
 authors: [ jocelynfournier ]
 icon: icon-row-setting
 tags:
- - core-weekly
+ - 1.6
+ - 1.6.1.x
+ - performance
 ---
 
 A lot of things have been improved on PrestaShop 1.6.1.0:

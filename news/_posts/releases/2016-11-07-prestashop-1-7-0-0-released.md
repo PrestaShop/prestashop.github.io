@@ -6,8 +6,7 @@ date:   2016-11-07 09:10:11
 authors:  [ xavierborderie ]
 icon: icon-checked
 tags:
- - 1.6.1.x
- - 1.6.1.0
+ - 1.7
  - version
  - major
  - releases

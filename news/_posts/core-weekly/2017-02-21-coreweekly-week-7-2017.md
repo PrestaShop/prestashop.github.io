@@ -23,8 +23,7 @@ Have you seen the new menu for this Build? Now that Build hosts so much content,
 
 We'll tweak the menu and content this week: let us know if you feel something is missing!
 
-Found an issue in PrestaShop 1.7? [Create a Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1) -- or create a PR! Thank you for your contribution!
-
+Remembe our [Release Schedule](http://build.prestashop.com/news/announcing-our-2017-release-schedule/)? We intend to release 1.7.1.0 in March... so, expect a beta soon! :)
 
 
 ## Code changes in 'develop' branch (for the next minor version, v1.7.1.0)
@@ -66,7 +65,7 @@ See all the PRs merged into the 'develop' codebase since the last Core Weekly [h
 
 Thank you to @kpodemski, who had a pull request merged since the last Core Weekly Report :)
 
-Also, thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets and comments [on the Forge](http://forge.prestashop.com/browse/BOOM/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel)!
+Also, thank you to the contributors whose PRs haven't been merged yet! And of course, a big thank you to all those who contribute with tickets and comments [on the Forge](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)!
 
 If you want to contribute to PrestaShop with code, please read these pages first:
 

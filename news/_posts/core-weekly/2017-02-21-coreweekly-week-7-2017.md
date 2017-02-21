@@ -23,7 +23,7 @@ Have you seen the new menu for this Build? Now that Build hosts so much content,
 
 We'll tweak the menu and content this week: let us know if you feel something is missing!
 
-Remembe our [Release Schedule](http://build.prestashop.com/news/announcing-our-2017-release-schedule/)? We intend to release 1.7.1.0 in March... so, expect a beta soon! :)
+Remember our [Release Schedule](http://build.prestashop.com/news/announcing-our-2017-release-schedule/)? We intend to release 1.7.1.0 in March... so, expect a beta soon! :)
 
 
 ## Code changes in 'develop' branch (for the next minor version, v1.7.1.0)

@@ -28,7 +28,7 @@ Let’s go back to the origin of this revolution.
 
 The image pushed on Docker Hub is dedicated to any developer or agency who would like to open a shop and make changes on it, without losing time on its deployment. The image you download comes with everything you need to install an actual release of PrestaShop.
 We use the official PHP image from Docker Hub as a base, which contains PHP 5.6 running with Apache.
-We chose stability against performance with Apache, which works better natively with PrestaShop. Also, the image already provides own its internal MySQL server if needed.
+We chose stability against performance with Apache, which works better natively with PrestaShop. Also, the image already provides its own internal MySQL server if needed.
 
 You do not have to look for missing components, everything is already ready-to-use! The only thing you have to do is to personalize your own installation with the different options provided.
 Just execute your new container and let it initialize itself. After a minute it’s all there, already installed.
@@ -124,8 +124,8 @@ You can find all the available options in the full description of our image: htt
 
 
 #### Development mode
-For 
-example, the main parameter you would like to change is the development mode flag (`PS_DEV_MODE`). Set it to 1 to enable the error reporting and the development mode in PrestaShop:
+
+For example, the main parameter you would like to change is the development mode flag (`PS_DEV_MODE`). Set it to 1 to enable the error reporting and the development mode in PrestaShop:
 
 ```
 docker run -ti --name some-prestashop -p 8080:80 -d -e PS_DEV_MODE=1 prestashop/prestashop

@@ -27,12 +27,12 @@ How about writing a guest post here? Maybe you've been working with PrestaShop f
 
 Before you start writing, please send us a short proposal at [{{ site.email }}](mailto:{{ site.email }}). Once we have agreed with you on the topic, you can submit your article [using a simple pull request](https://github.com/PrestaShop/prestashop.github.io).
 
-Also, if we merge one of your cool pull request on [the PrestaShop project](http://gihub.com/PrestaShop/PrestaShop), we may invite you to tell us more about it here.
+Also, if we merge one of your cool pull requests on [the PrestaShop project](http://gihub.com/PrestaShop/PrestaShop), we may invite you to tell us more about it here.
 
 <div class="alert alert-info" role="alert">
-All content on the Build.PrestaShop.com site is licensed under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/) -- meaning that it is in the Public Domain. Use it however you want!
+All content on the Build.PrestaShop.com site is licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 license</a> -- meaning that it is in the Public Domain. Use it however you want!
 
-![CC0 Logo](/assets/images/2015/06/cc-zero.png)
+<img src="/assets/images/2015/06/cc-zero.png" style="margin-right:auto;margin-left:auto;display:block;" />
 </div>
 
 ## Guidelines

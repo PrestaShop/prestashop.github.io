@@ -3,7 +3,7 @@ layout: post
 title:  "1.7.1 is ready for translation"
 subtitle: "... and that means new strings to translate!"
 date:   2017-02-23 06:09:47
-author: [ alexeven ]
+authors: [ alexeven ]
 icon: icon-world
 tags: [translation, i18n, l10n, 1.7]
 ---

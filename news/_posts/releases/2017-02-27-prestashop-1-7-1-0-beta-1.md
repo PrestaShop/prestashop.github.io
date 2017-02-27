@@ -21,7 +21,7 @@ We are happy to announce that we are close to releasing 1.7.1.0. This minor vers
 [Test PrestaShop 1.7.1.0 Beta 1 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
-**PrestaShop 1.7.1.0 is still in the works**, which means that this Beta release is a great opportunity for you to start working with it before we release a stable version!<br/>
+This Beta release is a great opportunity for you to start working with it before we release a stable version!<br/>
 Go download and install this Beta version as a test store, either on your machine or your web hosting, then play with it – and [give us your feedback](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)!
 We need YOU to test this new version of PrestaShop.<br/>
 

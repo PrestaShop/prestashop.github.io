@@ -50,7 +50,7 @@ It also brings the following:
 * CO: Improved performances on Windows/NFS filesystem.
 * CO: Improve global performances.
 
-...and many more! [Check the full changelog here]().
+...and many more! [Check the full changelog here](https://www.prestashop.com/fr/versions-developpeurs/changelog/1.7.1.0-beta1).
 
 
 ## How to give feedback about Beta 1

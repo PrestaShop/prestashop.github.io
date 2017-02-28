@@ -28,7 +28,7 @@ We need YOU to test this new version of PrestaShop.<br/>
 
 ## What you need to know about PrestaShop 1.7.1.0
 
-This versions of course includes all the fixes that were part of the 5 patch versions since the release of v1.7.0.0 in November 2016.
+This version of course includes all the fixes that were part of the 5 patch versions since the release of v1.7.0.0 in November 2016.
 
 It also brings the following:
 

@@ -19,7 +19,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 If you can't find any issue (yay!) or if you don't know how to fix issues, you can still contribute by [helping with the translation for 1.7.1.0](http://build.prestashop.com/news/171-Translations-update/) :)
 
 
-## Code changes in 'develop' branch (for the next minor version, v1.7.1.0)
+## Code changes in 'develop' branch (for the next minor version, v1.7.2.0)
 
 Now let's review the merged pull-requests on the ['develop' branch](https://github.com/PrestaShop/PrestaShop/tree/develop) since the last Core Weekly Report!
 
@@ -32,7 +32,7 @@ Note that 1.7 patch versions are being built in the '1.7.0.x' branch. All of the
 See all the PRs merged into the 'develop' codebase since the last Core Weekly [here](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr%20merged%3A2017-02-20..2017-002-26%20is%3Aclosed%20base%3Adevelop).
 
 
-## Code changes in '1.7.0.x' branch (for v1.7.0.5) 
+## Code changes in '1.7.0.x' branch (for v1.7.0.x patch versions) 
 
 Then, the merged pull-requests on the ['1.7.0.x' branch](https://github.com/PrestaShop/PrestaShop/tree/1.7.0.x) since the last Core Weekly Report!
 
@@ -75,7 +75,7 @@ And now, the merged pull-requests on the ['1.6.1.x' branch](https://github.com/P
 * [#7541](https://github.com/PrestaShop/PrestaShop/pull/7541): Update Doc import files, by @fatmabouchekoua and @aleeks.
 
 
-### Locatization
+### Localization
 
 * [#7355](https://github.com/PrestaShop/PrestaShop/pull/7355): Update Israel VAT to 17%, by @alexeven.
 

@@ -21,13 +21,13 @@ While this is not your regular, 15/20-pull-requests monthly patch release, 1.7.0
 
 ### Fixing a security issue
 
-Last week, our security team encountered a security issue in PrestaShop allowing a person with a user access to the back office to upload modules. This issue mainly concerns Addons contributors with back-office demos. Thank you Tomer Grassiany for your responsible disclosure of the issue, and your help with its resolution!
+Last week, our security team encountered a security issue in PrestaShop allowing a person with access to the back office to upload modules. This issue mainly concerns Addons contributors with back-office demos. Thank you Tomer Grassiany for your responsible disclosure of the issue, and your help with its resolution!
 
 Our team acted swiftly, deleting back-office demos from PrestaShop Addons as a first security measure. We felt it was important to protect our community while we worked out a fix.
 
 Version 1.7.0.6 contains the needed fixes to secure our Addons contributors.
 
-The importance of this fix explains why this release took longer than expected -- and why a 1.7 maintenance version wasn’t released in February, as expect.
+The importance of this fix explains why this release took longer than expected -- and why a 1.7 maintenance version wasn’t released in February, as expected.
 
 <div class="alert alert-note" role="alert">
 <p>PrestaShop 1.6 will also benefit from this fix. Versions 1.6.1.12 contains the fix and is currently being reviewed. It will be released shortly.</p>

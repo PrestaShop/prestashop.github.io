@@ -27,7 +27,7 @@ Our team acted swiftly, deleting back-office demos from PrestaShop Addons as a f
 
 Version 1.7.0.6 contains the needed fixes to secure our Addons contributors.
 
-The importance of this fix explains why this release took longer than expected -- and why a 1.7 maintenance version wasn’t released in February, as expected.
+The importance of this fix explains why this release has so few changes otherwise.
 
 <div class="alert alert-note" role="alert">
 <p>PrestaShop 1.6 will also benefit from this fix. Versions 1.6.1.12 contains the fix and is currently being reviewed. It will be released shortly.</p>

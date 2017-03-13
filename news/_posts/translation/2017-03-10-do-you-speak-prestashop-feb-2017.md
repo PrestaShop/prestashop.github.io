@@ -8,7 +8,7 @@ icon: icon-world
 tags: [translation, i18n, l10n]
 ---
 
-With 1.7.1 version soon to be released, there has been some movements on the [PrestaShop translation project](https://crowdin.com/project/prestashop-official) last month. And that comes with some good news for translators too!
+With 1.7.1 version soon to be released, there has been some activity on the [PrestaShop translation project](https://crowdin.com/project/prestashop-official) last month. And that comes with good news for translators too!
 
 ## Project news
 
@@ -22,7 +22,7 @@ We now have a 1.7.1 project, with fresh new strings to translate!
 
 ### Daily language packs update
 
-Good news! You've been waiting for it, since the 1st of March, both *1.6 and 1.7 translation packs are be updated every day*, automatically.
+Good news! You've been waiting for it, since the 1st of March, both *1.6 and 1.7 translation packs are updated every day*, automatically.
 
 When installing or updating a language, merchants will have the latest translations from the community. And day to day, you can fetch the new translations (that have been validated). At last!
 

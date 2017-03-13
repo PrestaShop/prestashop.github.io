@@ -112,7 +112,7 @@ In comparison with January 2017, the following languages had the best progress t
 * **Norwegian** (+2% to reach 94% translated in 1.7)
 * **Galician** (+2% to reach 76% translated in 1.6)
 
-![Best translation progress for February 2017](/assets/images/2017/02/Build_Crowdin_progress_Feb17.png)
+![Best translation progress for February 2017](/assets/images/2017/03/Build_Crowdin_progress_Feb17.png)
 
 Thanks to all the contributors!
 
@@ -131,7 +131,7 @@ At the end of February 2017, some languages would still benefit from some proofr
 * **Japanese** (49% translated vs 31% validated in 1.7)
 * **Catalan** (94% vs 80% in 1.7)
 
-![Languages that need proofreading](/assets/images/2017/02/Build_Crowdin_proofreading_Feb17.png)
+![Languages that need proofreading](/assets/images/2017/03/Build_Crowdin_proofreading_Feb17.png)
 
 Again, these figures are mostly for 1.7, but 1.6 needs some proofreading too :)
 

@@ -619,9 +619,9 @@ These hooks were only available in 1.6. They are removed from 1.7.
 </table>
 
 
-#### Hooks that were added in 1.7
+#### Hooks that were added in 1.7.0.x
 
-These hooks are only available in 1.7.
+These hooks are only available in the 1.7.0.x branch
 
 <table class="table table-bordered">
   <thead>
@@ -778,7 +778,6 @@ These hooks are only available in 1.7.
     <td>displayAfterBodyOpeningTag</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/layouts/layout-both-columns.tpl</li>
         <li>/themes/classic/templates/checkout/checkout.tpl</li>
         <li>/themes/classic/templates/layouts/layout-both-columns.tpl</li>
       </ul>
@@ -796,7 +795,6 @@ These hooks are only available in 1.7.
     <td>displayBeforeBodyClosingTag</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/layouts/layout-both-columns.tpl</li>
         <li>/themes/classic/templates/checkout/checkout.tpl</li>
         <li>/themes/classic/templates/layouts/layout-both-columns.tpl</li>
       </ul>
@@ -806,7 +804,6 @@ These hooks are only available in 1.7.
     <td>displayCMSDisputeInformation</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/cms/page.tpl</li>
         <li>/themes/classic/templates/cms/page.tpl</li>
       </ul>
     </td>
@@ -815,7 +812,6 @@ These hooks are only available in 1.7.
     <td>displayCMSPrintButton</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/cms/page.tpl</li>
         <li>/themes/classic/templates/cms/page.tpl</li>
       </ul>
     </td>
@@ -832,7 +828,6 @@ These hooks are only available in 1.7.
     <td>displayCheckoutSubtotalDetails</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/checkout/_partials/cart-detailed-totals.tpl</li>
         <li>/themes/classic/templates/checkout/_partials/cart-detailed-totals.tpl</li>
       </ul>
     </td>
@@ -841,7 +836,6 @@ These hooks are only available in 1.7.
     <td>displayCheckoutSummaryTop</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/checkout/_partials/cart-summary.tpl</li>
         <li>/themes/classic/templates/checkout/_partials/cart-summary.tpl</li>
       </ul>
     </td>
@@ -850,7 +844,6 @@ These hooks are only available in 1.7.
     <td>displayCrossSellingShoppingCart</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/checkout/cart-empty.tpl</li>
         <li>/themes/classic/templates/checkout/cart-empty.tpl</li>
       </ul>
     </td>
@@ -859,7 +852,6 @@ These hooks are only available in 1.7.
     <td>displayCustomerLoginFormAfter</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/customer/authentication.tpl</li>
         <li>/themes/classic/templates/customer/authentication.tpl</li>
       </ul>
     </td>
@@ -876,7 +868,6 @@ These hooks are only available in 1.7.
     <td>displayExpressCheckout</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/checkout/cart.tpl</li>
         <li>/themes/classic/templates/checkout/_partials/cart-detailed-actions.tpl</li>
       </ul>
     </td>
@@ -885,7 +876,6 @@ These hooks are only available in 1.7.
     <td>displayFooterAfter</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/_partials/footer.tpl</li>
         <li>/themes/classic/templates/_partials/footer.tpl</li>
       </ul>
     </td>
@@ -920,7 +910,6 @@ These hooks are only available in 1.7.
     <td>displayNavFullWidth</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/_partials/header.tpl</li>
         <li>/themes/classic/templates/_partials/header.tpl</li>
       </ul>
     </td>
@@ -929,7 +918,6 @@ These hooks are only available in 1.7.
     <td>displayNotFound</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/errors/not-found.tpl</li>
         <li>/themes/classic/templates/errors/not-found.tpl</li>
       </ul>
     </td>
@@ -938,7 +926,6 @@ These hooks are only available in 1.7.
     <td>displayOrderConfirmation1</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/checkout/order-confirmation.tpl</li>
         <li>/themes/classic/templates/checkout/order-confirmation.tpl</li>
       </ul>
     </td>
@@ -947,7 +934,6 @@ These hooks are only available in 1.7.
     <td>displayOrderConfirmation2</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/checkout/order-confirmation.tpl</li>
         <li>/themes/classic/templates/checkout/order-confirmation.tpl</li>
       </ul>
     </td>
@@ -964,7 +950,6 @@ These hooks are only available in 1.7.
     <td>displayReassurance</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/checkout/cart.tpl</li>
         <li>/themes/classic/templates/catalog/product.tpl</li>
         <li>/themes/classic/templates/checkout/cart.tpl</li>
         <li>/themes/classic/templates/checkout/checkout.tpl</li>
@@ -975,7 +960,6 @@ These hooks are only available in 1.7.
     <td>displaySearch</td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/errors/not-found.tpl</li>
         <li>/themes/classic/templates/errors/not-found.tpl</li>
       </ul>
     </td>
@@ -1006,6 +990,7 @@ These hooks are only available in 1.7.
     </td>
   </tr>
 </table>
+
 
 #### Common hooks
 

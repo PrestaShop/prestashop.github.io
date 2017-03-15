@@ -1000,8 +1000,8 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
   <thead>
     <tr>
       <th>Hook name</th>
-      <th>Hook location in 1.6</th>
-      <th>Hook location in 1.7</th>
+      <th>File(s) in 1.6</th>
+      <th>File(s) in 1.7.0</th>
     </tr>
   </thead>
   <tr>
@@ -1935,8 +1935,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/catalog/_partials/product-details.tpl</li>
-        <li>/themes/StarterTheme/templates/catalog/product.tpl</li>
         <li>/themes/classic/templates/catalog/_partials/product-details.tpl</li>
       </ul>
     </td>
@@ -2197,19 +2195,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
   </tr>
   <tr>
-    <td>displayBanner</td>
-    <td>
-      <ul>
-        <li>/themes/default-bootstrap/header.tpl</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>/themes/StarterTheme/templates/_partials/header.tpl</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
     <td>displayBeforeCarrier</td>
     <td>
       <ul>
@@ -2245,7 +2230,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/checkout/_partials/cart-detailed-product-line.tpl</li>
         <li>/themes/classic/templates/checkout/_partials/cart-detailed-product-line.tpl</li>
       </ul>
     </td>
@@ -2259,7 +2243,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/customer/my-account.tpl</li>
         <li>/themes/classic/templates/customer/my-account.tpl</li>
       </ul>
     </td>
@@ -2327,7 +2310,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/_partials/footer.tpl</li>
         <li>/themes/classic/templates/_partials/footer.tpl</li>
       </ul>
     </td>
@@ -2341,7 +2323,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/catalog/product.tpl</li>
         <li>/themes/classic/templates/catalog/product.tpl</li>
       </ul>
     </td>
@@ -2394,7 +2375,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/layouts/layout-both-columns.tpl</li>
         <li>/themes/classic/templates/layouts/layout-both-columns.tpl</li>
       </ul>
     </td>
@@ -2408,7 +2388,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/layouts/layout-both-columns.tpl</li>
         <li>/themes/classic/templates/layouts/layout-both-columns.tpl</li>
       </ul>
     </td>
@@ -2423,19 +2402,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     <td>
       <ul>
         <li>/classes/controller/FrontController.php</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>displayNav</td>
-    <td>
-      <ul>
-        <li>/themes/default-bootstrap/header.tpl</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>/themes/StarterTheme/templates/_partials/header.tpl</li>
       </ul>
     </td>
   </tr>
@@ -2503,35 +2469,8 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/catalog/_partials/product-add-to-cart.tpl</li>
         <li>/themes/classic/templates/catalog/_partials/quickview.tpl</li>
         <li>/themes/classic/templates/catalog/product.tpl</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>displayProductListFunctionalButtons</td>
-    <td>
-      <ul>
-        <li>/themes/default-bootstrap/product-list.tpl</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>/themes/StarterTheme/templates/catalog/_partials/miniatures/product.tpl</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>displayProductListReviews</td>
-    <td>
-      <ul>
-        <li>/themes/default-bootstrap/product-list.tpl</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>/themes/StarterTheme/templates/catalog/_partials/miniatures/product.tpl</li>
       </ul>
     </td>
   </tr>
@@ -2546,10 +2485,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/catalog/_partials/miniatures/product.tpl</li>
-        <li>/themes/StarterTheme/templates/catalog/_partials/product-prices.tpl</li>
-        <li>/themes/StarterTheme/templates/checkout/_partials/cart-summary-product-line.tpl</li>
-        <li>/themes/StarterTheme/templates/checkout/_partials/order-confirmation-table.tpl</li>
         <li>/themes/classic/templates/catalog/_partials/miniatures/product.tpl</li>
         <li>/themes/classic/templates/catalog/_partials/product-prices.tpl</li>
         <li>/themes/classic/templates/checkout/_partials/cart-summary-product-line.tpl</li>
@@ -2566,7 +2501,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/layouts/layout-both-columns.tpl</li>
         <li>/themes/classic/templates/layouts/layout-both-columns.tpl</li>
       </ul>
     </td>
@@ -2580,7 +2514,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/layouts/layout-both-columns.tpl</li>
         <li>/themes/classic/templates/layouts/layout-both-columns.tpl</li>
       </ul>
     </td>
@@ -2595,7 +2528,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/checkout/cart.tpl</li>
         <li>/themes/classic/templates/checkout/cart.tpl</li>
       </ul>
     </td>
@@ -2610,7 +2542,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/checkout/cart.tpl</li>
         <li>/themes/classic/templates/checkout/cart.tpl</li>
       </ul>
     </td>
@@ -2624,7 +2555,6 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
     <td>
       <ul>
-        <li>/themes/StarterTheme/templates/_partials/header.tpl</li>
         <li>/themes/classic/templates/_partials/header.tpl</li>
         <li>/themes/classic/templates/checkout/_partials/header.tpl</li>
       </ul>
@@ -2660,6 +2590,7 @@ These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location 
     </td>
   </tr>
 </table>
+
 
 ## That's it for now!
 

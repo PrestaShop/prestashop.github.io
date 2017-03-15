@@ -361,6 +361,14 @@ These hooks were only available in 1.6. They are removed from 1.7.
     </td>
   </tr>
   <tr>
+    <td>displayBanner</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/header.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
     <td>displayBeforePayment</td>
     <td>
       <ul>
@@ -427,6 +435,14 @@ These hooks were only available in 1.6. They are removed from 1.7.
     </td>
   </tr>
   <tr>
+    <td>displayNav</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/header.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
     <td>displayPayment</td>
     <td>
       <ul>
@@ -460,6 +476,22 @@ These hooks were only available in 1.6. They are removed from 1.7.
         <li>/themes/default-bootstrap/product.tpl</li>
         <li>/themes/default-bootstrap/products-comparison.tpl</li>
         <li>/themes/default-bootstrap/shopping-cart-product-line.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayProductListFunctionalButtons</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/product-list.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayProductListReviews</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/product-list.tpl</li>
       </ul>
     </td>
   </tr>

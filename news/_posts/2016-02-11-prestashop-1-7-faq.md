@@ -29,7 +29,6 @@ The changelog is at the bottom of the FAQ.</p>
 </div>
 
 * TOC
-
 {:toc}
 
 

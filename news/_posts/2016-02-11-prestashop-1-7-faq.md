@@ -11,9 +11,11 @@ tags: [1.7]
 PrestaShop 1.7 is a major new version, and an important milestone for PrestaShop as a whole. This version is a great step forward for PrestaShop, both for developers with the inclusion of the Symfony framework and the revamping of the theme system, and for merchants with a focus on easing the first sale.<br/>
 PS 1.7 has a clear motto: "Sell faster. Code Better. Create easier". [See the 1.7 presentation page](https://www.prestashop.com/en/1.7)!
 
-<i>[PrestaShop 1.7.0.0 was released on November 7th, 2016](http://build.prestashop.com/news/prestashop-1-7-0-0-released/)!</i><br/> Since then, further updates have been released. [Download the latest version now](https://www.prestashop.com/en/download)!
+<div class="alert alert-important" role="alert">
+[PrestaShop 1.7.0.0 was released on November 7th, 2016](http://build.prestashop.com/news/prestashop-1-7-0-0-released/)!<br/> Since then, further updates have been released. [Download the latest version now](https://www.prestashop.com/en/download)!
+</div>
 
-This article serves as a FAQ for PrestaShop 1.7. It started while the 1.7 project was unveiled, and was updated along the way until the release of version 1.7.0.0. Further 1.7 releases are documented on dedicated articles on this Build devblog.
+This article serves as a FAQ for PrestaShop 1.7. It started while the 1.7 project was unveiled, and was updated along the way until the release of version 1.7.0.0. Further 1.7 releases are documented on [dedicated articles](http://build.prestashop.com/tag/1.7/) on this Build devblog.
 
 <div class="alert alert-note" role="alert">
 <p>Note that this article aims to compile the latest news about 1.7, and will therefore be updated as new information is confirmed.</p>

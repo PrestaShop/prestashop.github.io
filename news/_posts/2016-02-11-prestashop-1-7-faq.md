@@ -12,7 +12,7 @@ PrestaShop 1.7 is a major new version, and an important milestone for PrestaShop
 PS 1.7 has a clear motto: "Sell faster. Code Better. Create easier". [See the 1.7 presentation page](https://www.prestashop.com/en/1.7)!
 
 <div class="alert alert-important" role="alert">
-<a hrefe="http://build.prestashop.com/news/prestashop-1-7-0-0-released/">PrestaShop 1.7.0.0 was released on November 7th, 2016</a>!<br/>
+<a href="http://build.prestashop.com/news/prestashop-1-7-0-0-released/">PrestaShop 1.7.0.0 was released on November 7th, 2016</a>!<br/>
 Since then, further updates have been released. <a href="https://www.prestashop.com/en/download">Download the latest version now</a>!
 </div>
 

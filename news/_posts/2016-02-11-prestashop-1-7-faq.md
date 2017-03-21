@@ -19,6 +19,7 @@ This article serves as a FAQ for PrestaShop 1.7. It started while the 1.7 projec
 <p>Note that this article aims to compile the latest news about 1.7, and will therefore be updated as new information is confirmed.</p>
 </div>
 
+<div class="alert alert-note" role="alert">
 <p>This FAQ gives you the current state of 1.7 up to its stable release</p>
 
 <p>Current version of this FAQ: 1.9. <br/>
@@ -26,6 +27,7 @@ The changelog is at the bottom of the FAQ.</p>
 </div>
 
 * TOC
+
 {:toc}
 
 

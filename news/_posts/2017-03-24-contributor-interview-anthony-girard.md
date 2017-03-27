@@ -15,9 +15,9 @@ An Open Source community is more than just PR made by faceless strangers. In ord
 
 **Hi Anthony! First, could you tell us a bit about yourself?**
 
-<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="180" src="/assets/images/2017/03/anthony-girard.jpg"> Hi there! I am a software developer, and I have been working with PrestaShop on a daily for the past 5 years.<br/>
+<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="180" src="/assets/images/2017/03/anthony-girard.jpg"> Hi there! I am a software developer, and I have been working with PrestaShop on a daily basis for the past 5 years.<br/>
 I work at [Evolutive Group](http://www.evolutive-group.com/), a PrestaShop Platinum Partner agency, with offices in Lyon and Paris.<br/>
-Last year I made the switch to my company's "module" division
+Last year I made the switch to my company's "module" division.
 
 **Your company gave your contribution time in order to dedicate yourself to the PrestaShop project for several months in 2016. Could you tell us how that decision was made on your side?**
 

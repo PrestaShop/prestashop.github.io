@@ -11,7 +11,7 @@ tags:
  - autoupgrade
 ---
 
-After much work and hair-pulling, we finally did it: the 1-Click Upgrade module supports upgrading to 1.7.1.0. Are you ready to test it before the release?
+After much work and hair-pulling, we finally did it: the 1-Click Upgrade module supports upgrading from 1.6 to 1.7.1.0. Are you ready to test it before the release?
 
 ![We heard you like upgrading!](/assets/images/2017/03/upgrade-module00-yo-we-heard-you-like-upgrading.png)
 
@@ -31,13 +31,13 @@ In order to prepare for the release of 1.7.1.0 and its patch versions, a lot of 
 
 A lot of work was therefore done in order to upgrade between versions of PrestaShop 1.7, but nothing so far to upgrade from 1.6 to 1.7 in one click.
 
-For there remained a fact: PrestaShop 1.7 is a major version, and thus upgrading is not easy. 
+For there remained a fact: PrestaShop 1.7 is a major version, and thus upgrading from 1.6 is not easy. 
 The theme has been completely rewritten or changed, modules have to be checked for compatibility (or replaced by equivalent modules), and a couple of major features have been pushed back for later release (such as the Stock Management feature, [currently expected for 1.7.2.0, in June](http://build.prestashop.com/news/announcing-our-2017-release-schedule/)).
 
 All this cannot be magically checked and fixed by the module. While we wanted to ensure that those wanting to move from 1.5/1.6 to 1.7 could do so, we couldn’t make it appear like a simple click on a button would solve all of the merchant’s issue.
 
 <div class="alert alert-note" role="alert">
-The update 1-Click Upgrade module can only upgrade your store to v1.7.1.0 of PrestaShop. Versions 1.7.0.0 to 1.7.0.6 are skipped altogether, ensuring that you only get the best and latest 1.7 version.
+The update 1-Click Upgrade module can only upgrade your store from 1.6 to v1.7.1.0 of PrestaShop. Versions 1.7.0.0 to 1.7.0.6 are skipped altogether, ensuring that you only get the best and latest 1.7 version.
 </div>
 
 
@@ -90,13 +90,13 @@ This is your time to grab a cup of coffee/tea :)
 
 #### Success!
 
-After a few minutes, the upgrader will indicate whether everything has gone according to plan (green lines galore!), or if there was an issue (to be found somewhere in the upgrade log).
+After a few minutes, the upgrader will indicate whether everything has gone according to plan (green lines galore!), or if there was an issue (the upgrade log is here to help!).
 
 ![Everything's A-OK.](/assets/images/2017/03/upgrade-module05-finished.png)
 
 We wish you a good many green lines! If not, that’s when the module’s “Revert” button shows its usefulness. At worst, you will have to use the backups for your files and your database...
 
-Let’s assume the upgrade went as expected. Leave the module by clicking on the “Dashboard” link in the navigation menu. After logging in again, PrestaShop brings up the new 1.7 back office interface -- with a few kinks, because of usual CSS caching issues. Just press Ctrl-Shift-R to reload the page with fresh CSS files, and you should be good to go.
+Let’s assume the upgrade went as expected. Leave the module by clicking on the “Dashboard” link in PrestaShop's navigation menu. After logging in again, PrestaShop brings up the new 1.7 back office interface -- with a few kinks, because of usual CSS caching issues. Just press Ctrl-Shift-R to reload the page with fresh CSS files, and you should be good to go.
 
 ![Hello, good lookin’!](/assets/images/2017/03/upgrade-module06-dashboard.png)
 

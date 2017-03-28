@@ -60,7 +60,7 @@ Graphically, the changes are minor as long as you remain in default (minor) mode
 
 ![The interface for a minor upgrade](/assets/images/2017/03/upgrade-module01-minor.png)
 
-Next, in the Expert Mode section, change to the “Major release” channel and click the "Save" button: now the real changes happen.
+Next, in the Expert Mode section, change the "Channel" setting to “Major release”, and click the "Save" button: now the real changes happen.
 
 ![The interface for a major upgrade](/assets/images/2017/03/upgrade-module02-majorNext.png)
 

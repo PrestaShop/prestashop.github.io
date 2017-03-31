@@ -238,7 +238,7 @@ Finally, PrestaShop can support you if you’re developing needed local modules.
 
 #### To the Build devblog
 
-“Build” is a blog written by the Core team, that has news and helpful information for people who contribute to the PrestaShop project.
+“Build” is a blog written by the Core team, which presents news and helpful information for people who contribute to the PrestaShop project.
 
 While most of the articles are written by our team, we welcome contributions! [Read the guide here](http://build.prestashop.com/about/#contribute).  
 

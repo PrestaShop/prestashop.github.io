@@ -132,7 +132,7 @@ Let us know the difference!
 A lot of improvement was brought to PrestaShop translation system:
 
 * Translation files are updated daily, to make sure merchants benefit from the latest translations.
-* Installation strings are now stored in XML files generated from Crowdin. Translation of the most important strings no longer happen in GitHub!
+* Strings are now stored in the database, taken from Crowdin. Translation of the most important strings no longer happen in GitHub!
 * Country names are now automatically translated in any language.
 * The Translation page in the back office has seen a design update to improve integration and navigation.
 
@@ -151,11 +151,11 @@ There are a few things that only a human (you!) can do:
 
 * Convert your 1.6 theme for use in 1.7. Your store will switch to Classic, the 1.7 default theme.
 * Check your 1.6 modules for 1.7 compatibility. You will have to do this yourself.
-* Update your customization (translation, emails, and menu). It is up to you to update them for 1.7.
+* Update your customization (translation, emails, and menu).
 
-Also, remember that 1.7 does not currently have the Stock Management feature. It is planned for 1.7.2.0 (which we expect to release in June).
+Also, remember that 1.7 does not currently have the Stock Management feature. It is planned for version 1.7.2.0 (which we expect to release in June).
 
-Note that the module is still in Beta phase. It should be fully stabilized in the coming days.
+Note that the new 1-Click Upgrade module is still in Beta phase. It should be fully stabilized in the coming days.
 
 
 #### PayPal
@@ -181,7 +181,7 @@ This new version of PrestaShop would not be the same without the support and con
 * 53 pull requests from the community (485 PRs overall).
 * 123 commits from the community (1412 commits overall).
 * 69 contributors.
-* 67 translators, with 13 languages already at 100% (you too can help!)
+* 67 translators, with 10 languages already 100% translated (you too can help!)
 
 Thanks to 123monsite-regis, Alexander Galaydyuk, Alexander Simonchik, Alexandre Alouit, Amazzing, Axome, Code Utopia, David Gasperoni, David-Julian BUCH, Davide, Debusschere Alexandre, Dheeraj Sharma, Emiliano 'AlberT' Gabrielli, Eric Rouvier, Etienne Samson, Florian Lemaitre, Flowster, Gabriel Arama, Gerdus van Zyl, Guillaume P, Gustavo, Gytis Škėma, Jerome Herry, Karel Faille, Krystian Podemski, M03G, Madef, Mark Wienk, MarkC, Maxime - Vaisonet, Michael Dekker, Michael Salihi, Nicolas Lœuillet, Peter Schaeffer, PhpMadman, Pierre Avizou, Pliciweb - Nicolas, Presta Module, PrestaEdit, Renaud Sanchez, Ricki Hirner, Roman Gusev, Roy, Sullivan SENECHAL, Ted Sanders, Tomáš Líška, Tuni-Soft, Turtle, Vincent HADJEDJ, bbsimon, cedricfontaine, dariusakafest, de saint leger, eleazar, florervd, gskema, idnovate, kermes, lozal2244, martinfojtik, mauglee, pilothuy, psandmore, seynaeve, themella, unlocomqx, webmake, Ángel Guzmán Maeso, and Šarūnas Jonušas for your contribution to the 1.7.1.0 codebase!
 

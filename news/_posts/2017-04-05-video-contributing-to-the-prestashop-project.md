@@ -16,7 +16,7 @@ Not everyone knows that you can contribute in many ways to the PrestaShop projec
 So a couple of weeks ago, we made this video, hoping that you could learn more about PrestaShop and its many parts.
 
 
-<iframe width="796" height="448" src="https://www.youtube.com/watch?v=aD2IQIqr6CU" frameborder="0" allowfullscreen></iframe>
+<iframe width="796" height="448" src="https://www.youtube.com/embed/aD2IQIqr6CU?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
 Here are the links from the video:

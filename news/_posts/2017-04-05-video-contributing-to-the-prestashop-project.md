@@ -13,7 +13,7 @@ PrestaShop 1.7.1.0 was released last Monday ([have you noticed?](http://build.pr
 
 Not everyone knows that you can contribute in many ways to the PrestaShop project, or even what Open Source means.
 
-So a couple of weeks, we made this video, hoping that you could learn more about PrestaShop and its many parts.
+So a couple of weeks ago, we made this video, hoping that you could learn more about PrestaShop and its many parts.
 
 
 <iframe width="796" height="448" src="https://www.youtube.com/watch?v=aD2IQIqr6CU" frameborder="0" allowfullscreen></iframe>

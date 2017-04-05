@@ -21,11 +21,11 @@ So a couple of weeks ago, we made this video, hoping that you could learn more a
 
 Here are the links from the video:
 
-* Our GitHub repository: https://github.com/PrestaShop/PrestaShop
-* Some doc on contributing to the codebase: http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop
-* The Forge, where issues are to be reported: http://forge.prestashop.com/
-* A specific doc on how to make better bug reports: http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop
-* The main documentation site: http://doc.prestashop.com/
+* Our GitHub repository: [https://github.com/PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop)
+* Some doc on contributing to the codebase: [http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop](http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop)
+* The Forge, where issues are to be reported: [http://forge.prestashop.com/](http://forge.prestashop.com/)
+* A specific doc on how to make better bug reports: [http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop](http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop)
+* The main documentation site: [http://doc.prestashop.com/](http://doc.prestashop.com/)
 
 Thank you for enduring my English accent ;)
 

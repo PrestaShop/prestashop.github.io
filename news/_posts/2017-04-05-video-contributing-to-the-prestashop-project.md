@@ -3,7 +3,7 @@ layout: post
 title:  "Video: Contributing to the PrestaShop project"
 subtitle: "♫ There are many shades of black ♪ ... and many ways to contribute "
 date:   2017-04-05 09:10:11
-author: [xavierborderie]
+authors: [xavierborderie]
 icon: icon-trophy
 tags:
  - video

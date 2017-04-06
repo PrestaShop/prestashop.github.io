@@ -3,7 +3,7 @@ layout: post
 title:  "New and updated hooks in PrestaShop 1.7.1.0"
 subtitle: "Get up to speed with the next version!"
 date:   2017-03-17 09:10:11
-author: [xavierborderie]
+authors: [xavierborderie]
 icon: icon-calendar
 tags:
  - core-pdiddy

@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop 1.7.1.0 is available!"
 subtitle: "Performance, stabilization, features, modules... Read it all here!"
 date:   2017-04-03 09:10:11
-author: [xavierborderie, alexeven]
+authors: [xavierborderie, alexeven]
 icon: icon-checked
 tags:
  - 1.7

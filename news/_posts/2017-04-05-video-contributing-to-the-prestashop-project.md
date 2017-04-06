@@ -6,7 +6,9 @@ date:   2017-04-05 09:10:11
 author: [xavierborderie]
 icon: icon-trophy
 tags:
- - core-weekly
+ - video
+ - contribution
+ - community
 ---
 
 PrestaShop 1.7.1.0 was released last Monday ([have you noticed?](http://build.prestashop.com/news/prestashop-1-7-1-0-available/)), and the improvements and fixes keep coming in, thanks to community members like you!

@@ -3,7 +3,7 @@ layout: post
 title:  "Test the updated 1-Click Upgrade module!"
 subtitle: "We heard you like upgrades, so we upgraded your upgrades"
 date:   2017-03-27 09:10:11
-author: [xavierborderie]
+authors: [xavierborderie]
 icon: icon-upload
 tags:
  - 1.7

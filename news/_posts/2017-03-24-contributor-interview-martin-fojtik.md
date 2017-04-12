@@ -26,7 +26,9 @@ The other reason is that I like programming. I think creating a pull request or 
 
 **What contribution are the most proud of so far?**
 
-I would not say that I am somehow proud of my contributions. But for example, the PR which improves the accessibility of frontend can be helpful to people with disabilities, and I like that.
+I would not say that I am somehow proud of my contributions. But for example, [the PR which improves the accessibility of frontend](https://github.com/PrestaShop/PrestaShop/pull/7020) can be helpful to people with disabilities, and I like that.
+
+_Note from PS: we're planning on improving default a11y this year, and this PR will be part of it!_
 
 **Do you have any advice for first-time PrestaShop contributors?**
 

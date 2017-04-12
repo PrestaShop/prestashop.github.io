@@ -13,7 +13,7 @@ tags:
 An Open Source community is more than just PR made by faceless strangers. In order to better understand the people who contribute time and skills to the PrestaShop project, we're launching a series of interviews with contributors of all ranges. This week, meet Martin Fojtik!
 
 
-**Hi Anthony! How did you get involved in PrestaShop development?**
+**Hi Martin! How did you get involved in PrestaShop development?**
 
 <img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="180" src="https://avatars1.githubusercontent.com/u/7465851"> I’ve been working as [a freelancer](http://martin-fojtik.cz/) for the past 6 years. <br/>
 My first paid project was an e-shop for a friend, which I created using PrestaShop. I knew very little about CSS and HTML at that time. I still remember that feeling I had when I first saw the [product.tpl file in PrestaShop 1.4](https://github.com/PrestaShop/PrestaShop-1.4/blob/master/themes/prestashop/product.tpl)! It was difficult to work with the default template at the time, but I managed to create a very good e-shop.

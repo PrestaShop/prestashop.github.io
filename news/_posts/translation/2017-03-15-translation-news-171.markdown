@@ -20,7 +20,7 @@ Previously translation packs were updated manually on our side, and at this freq
 
 This wasn't convenient for translators who wanted to quickly see their contribution into production.
 
-Thus, we completely changed the way the translation packs are generated and uploaded, and automated the whole process. Since the 1st of March, both 1.6 and 1.7 translation packs are updated every day, automatically.
+Thus, we completely changed the way the translation packs are generated and uploaded, and automated the whole process. Since the 1st of March, **both 1.6 and 1.7 translation packs are updated every day, automatically**.
 
 That is, when installing or updating a language, merchants will have the latest translations from the community. And day to day, you can fetch the new translations (that have been validated). At last!
 
@@ -30,7 +30,7 @@ In the Translation page, the "Import" section is no longer available. You might 
 
 With the 1.7 version and the new translation system, you can't simply import translation files to see your shop fully translated. The files need to be processed and adapted to PrestaShop, particularly the email files. So we simply removed the option to avoid false hopes and confusion.
 
-You're next question will probably be "why keeping the export section then?" Well, the export section is still useful for theme builders who will want to export the custom translations they made for their themes.
+You're next question will probably be "why keeping the export section then?". Well, the export section is still useful for theme builders who will want to export the custom translations they made for their themes.
 
 
 ## No more XML translations!
@@ -43,14 +43,15 @@ Some content in PrestaShop was exceptionally available through large and cumbers
 All this made it hard to provide a fully localized experience to our merchants. This was particularly impacting the translation of the navigation menu. Order states, default category names or meta titles are also among the content which wasn't easily translated.
 
 With PrestaShop 1.7.1.0, we've reworked the way this data works, and made it available in Crowdin (thank you @aleeks for the hard work on this!).
-From now on, you can simply translate this content in Crowdin, and it will be available the next day in PrestaShop. That easy :)
+**From now on, you can simply translate this content in Crowdin**, and it will be available the next day in PrestaShop. That easy :)
+
 And when adding a new language in your interface, more content will be available in your language.
 
 Another benefit of this improvement: it makes it much easier to add new languages to the installer, so expect a more localized PrestaShop in the future!
 
 ### How it works:
 
-We've kept the English version of the XML files, for reference. :
+We've kept the English version of the XML files, for reference. From there:
 
 1. When you install PrestaShop, a database is created, based on these English XML files.
 2. If you install PrestaShop in another language than English, the pack for this language will be downloaded and installed.
@@ -88,7 +89,8 @@ CLDR stands for "Common Locale Data Repository" and provides resources for softw
 ###  How we're using it
 
 Just like for the XML data, at the installation, we will import all the country names in English first, stored in the database.
-When adding a new language, we will call the CLDR and retrieve the corresponding translations for country names. This way, *country names will automatically be translated, and provided in all languages*.
+When adding a new language, we will call the CLDR and retrieve the corresponding translations for country names. This way, **country names will automatically be translated, and provided in all languages**.
+
 In case you'd want to modify one translation, you'll still be able to do it directly in your back office, in the International > Location > Countries page.
 
 ![PrestaShop country translation](/assets/images/2017/03/Build_171_country_translation.png)
@@ -102,9 +104,9 @@ You've probably seen that we introduced a new translation page in 1.7.0.0. We fu
 
 ### What's new with this page?
 
-* It uses *domains* to provide more context to text strings,
-* It has a *search bar* to help you easily find the sentence you need to edit,
-* It saves your edits in a *new database*. You won't lose your translations if you update your language to retrieve the latest translation available.
+* It uses **domains** to provide more context to text strings,
+* It has a **search bar** to help you easily find the sentence you need to edit,
+* It saves your edits in a **new database**. You won't lose your translations if you update your language to retrieve the latest translation available.
 
 And like in version 1.6, it highlights where translations are missing.
 
@@ -112,8 +114,8 @@ And like in version 1.6, it highlights where translations are missing.
 
 ### And what remains to be done
 
-* Batch-saving translations. Today you need to save each modification independently, string by string. There is no global "Save" button. This is something we'd like to change.
-* Pushing untranslated strings to the top. When you have a language that is not fully completed, you have to browse the various pages of a domain to find the untranslated strings. This is not the most convenient, so we're thinking of improving this behavior.
+* **Batch-saving translations**. Today you need to save each modification independently, string by string. There is no global "Save" button. This is something we'd like to change.
+* **Pushing untranslated strings to the top**. When you have a language that is not fully completed, you have to browse the various pages of a domain to find the untranslated strings. This is not the most convenient, so we're thinking of improving this behavior.
 
 If you've been using the 1.7 translation page and have add issues with it, please don't hesitate to [open a Forge ticket](http://forge.prestashop.com/) or leave a comment, so that we'll know what we can further improve! Thanks!
 
@@ -121,6 +123,7 @@ If you've been using the 1.7 translation page and have add issues with it, pleas
 ## Live translation module
 
 To help with the translation of 1.7.1.x, we brought back to life the in-context translation module. It connects PrestaShop to the [translation project on Crowdin](https://crowdin.com/project/prestashop-official).
+
 The [Live translation module](https://github.com/PrestaShop/ps_livetranslation) (formerly known as [TranslaTools](https://github.com/PrestaShop/translatools), for those who knew it) makes it possible to translate PrestaShop right from your back office and front office. You can translate each string by clicking on it, it will send the translation directly to the Crowdin project.
 
 ![PrestaShop Live translation module](/assets/images/2017/04/Live_translation.png)

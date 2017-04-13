@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What's new regarding translations in PrestaShop 1.7.1.O"
+title:  "What's new regarding translations in PrestaShop 1.7.1.0"
 subtitle: "How we tweaked a few things to improve your experience"
 date:   2017-04-13 06:09:47
 author: [ alexeven ]

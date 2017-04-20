@@ -31,7 +31,7 @@ Here are the changes:
 
 - Back Office:
    - Bug fix:
-     - [#7690](https://github.com/PrestaShop/PrestaShop/pull/7690): Incorrect translation on Symfony page (problems with TinyMCE)
+     - [#7690](https://github.com/PrestaShop/PrestaShop/pull/7690): Incorrect translation on Symfony page
      - [#7723](https://github.com/PrestaShop/PrestaShop/pull/7723): Fix catalog ASC sorting
      - [#7724](https://github.com/PrestaShop/PrestaShop/pull/7724): Fix translations theme export on Windows
      - [#7730](https://github.com/PrestaShop/PrestaShop/pull/7730): Alphabetically sort features on product page

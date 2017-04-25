@@ -18,7 +18,7 @@ PrestaShop 1.6.1.13 is now available. This maintenance release [has seen 19 pull
 
 Continuing on our promise to support 1.6 with patch releases, we are happy to deliver this new version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
 
-[Download 1.6.1.13 now!](https://www.prestashop.com/en/developers-versions#previous-version){: .btn .btn-lg .btn-success}
+[Download 1.6.1.13 now!](https://www.prestashop.com/en/previous-versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 As the version number indicates (as per [our SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)), this is the 13th patch release for PrestaShop 1.6.1.0.<br/>
@@ -43,7 +43,7 @@ Here are some of the most notable changes that this version brings:
 * ...and several other fixes.
 
 
-The [PrestaShop 1.6.1.13 changelog](https://www.prestashop.com/en/developers-versions/changelog/1.6.1.13-stable) is available.
+The [PrestaShop 1.6.1.13 changelog](https://www.prestashop.com/en/previous-versions) is available.
 
 Since version 1.6.1.13 is a "patch" update to version 1.6.1.0, upgrading from that version will be as smooth as silk for everyone: features will work better, and modules & themes which worked fine on 1.6.1.0 will work just as well with 1.6.1.13.
 

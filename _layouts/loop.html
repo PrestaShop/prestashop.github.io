@@ -85,7 +85,7 @@ layout: default
           <li>
             <span class="page_number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
           </li>
-          <li class="next {% unless paginator.next_page_path %}disabled{% endunless%}">>
+          <li class="next {% unless paginator.next_page_path %}disabled{% endunless%}">
 						{% if paginator.next_page_path %}
 							<a href="{{ paginator.next_page_path }}">
 								Older <span aria-hidden="true">&rarr;</span>

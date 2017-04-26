@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Announcing our 2017 release schedule"
+title:  "PrestaShop 2017 release schedule"
 subtitle: "What to expect, and when to expect it"
 date: 2017-02-07 09:10:11
 authors: [ xavierborderie ]

@@ -3,7 +3,7 @@ layout: post
 title:  "Starter Theme: fresh news from the front #3"
 subtitle: "What's up about Starter Theme"
 date:   2015-12-17 15:00:00
-authors:  maximebiloe
+authors: [ maximebiloe ]
 icon: icon-lego
 tags: [starter-theme]
 ---

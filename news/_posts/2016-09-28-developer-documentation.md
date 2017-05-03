@@ -3,12 +3,12 @@ layout: post
 title:  "New developer documentation for PrestaShop 1.7"
 subtitle: "It's online and focusing on differences between 1.6 and 1.7"
 date:   2016-09-28 10:00:00
-authors:  julienbourdeau
+authors: [ julienbourdeau ]
 icon: icon-penknife
 tags: [1.7, documentation]
 ---
 
-PrestaShop 1.7 is a major release: a lot of code has been refactored, new features have been added, and a new way of building themes has been introduced. So, very early in the development release cycle, we decided to write more doc in order to support the designers and developers intending to switch to 1.7. 
+PrestaShop 1.7 is a major release: a lot of code has been refactored, new features have been added, and a new way of building themes has been introduced. So, very early in the development release cycle, we decided to write more doc in order to support the designers and developers intending to switch to 1.7.
 
 The documentation's very first draft is now online: [http://developers.prestashop.com/](http://developers.prestashop.com/)
 
@@ -64,7 +64,7 @@ Much more will follow, and even more if you create GitHub Issues!
 
 ## Final words: Ask before hacking
 
-Sometimes when you develop with PrestaShop, you want to override something or change some behavior and you don't know how to do it. There is a pretty good chance that you're not the only one trying to do this. 
+Sometimes when you develop with PrestaShop, you want to override something or change some behavior and you don't know how to do it. There is a pretty good chance that you're not the only one trying to do this.
 
 Even if you find a hack to do it and it works for you, please open a GitHub issue so we can either document a nice way to do it (if possible) or maybe think about [turning it into a Core pull request](https://github.com/PrestaShop/PrestaShop/pulls) for a next release of PrestaShop, so that the whole community can benefit from it!
 

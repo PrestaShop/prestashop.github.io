@@ -3,7 +3,7 @@ layout: post
 title:  "What's new regarding translations in PrestaShop 1.7.1.0"
 subtitle: "How we tweaked a few things to improve your experience"
 date:   2017-04-13 06:09:47
-author: [ alexeven ]
+authors: [ alexeven ]
 icon: icon-world
 tags: [translation, i18n, l10n, 1.7, 1.7.1.x]
 ---
@@ -136,5 +136,3 @@ What you should know:
 * The experience is better if you are already logged in to your Crowdin account (if you don't have any, [join us](https://crowdin.net/project/prestashop-official)!)
 
 Last but not least, some of you requested more information about the translation for themes. We have an how-to article to guide you with the translation of your theme coming up soon! Stay tuned!
-
-

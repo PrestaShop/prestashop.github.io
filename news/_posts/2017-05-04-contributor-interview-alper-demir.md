@@ -17,7 +17,7 @@ An Open Source community is more than just PR made by faceless strangers. In ord
 
 <img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="180" src="https://www.gravatar.com/avatar/155283423312fb422acc72b8ef875c38?s=180&d=https%3A%2F%2Fcrowdin.com%2Fimages%2Fuser-picture.png">Hi! I am a 36-year-old Industrial Engineer from Turkey, and my hobbies are DIY projects, Software Developing, Coding, and Project Improvements. I discovered PrestaShop while looking for a E-commerce solution that would best fit my working company's needs.
 
-**How and when did you find out about the need for participatory translating?**
+**How and when did you find out about the need for contributive translating?**
 
 When I install and started to use PrestaShop I see that current Turkish translations are mostly done by Machine translation services and I started to re-translate my installation, but every time I lost my translations after update or server faults. So finally, I decided to join to translation team in May 2016. Since then I do not know how many words I translated, but I think too much :) I spend approximately half of my spare time translating.
 

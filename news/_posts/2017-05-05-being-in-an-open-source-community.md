@@ -25,11 +25,11 @@ An Open Source community comprises all the trusted people who are actively worki
 - translators
 - participant to the communication channels.
 
-The community initially forms because the project it supports has been released under an Open Source license -- which means that its creator/editor allows anyone to use, study, modify and distribute the project, for any purpose, within the constraints of the chosen license.
-In that, there is a difference between the Open Source movement and the Free Software movement: if the two are generally speaking of the same approach to software distribution, they do not share the same spirit nor the same licenses. One is more open to commercialization, while the other is all about freedom (hence the saying "Think free as in free speech, not free beer"); some licenses are too restrictive to one party, to open to the other. This is all a never-ending philosophical debate, and we won't dive much into that difference here.
+The community initially forms because the project it supports has been released under an Open Source license -- which means that its creator/editor allows anyone to use, study, modify and distribute the project, for any purpose, within the constraints of the chosen license.<br/>
+In that, there is a difference between the Open Source movement and the Free Software movement: if the two are generally speaking of the same approach to software distribution, they do not share the same spirit nor the same licenses. One is more open to commercialization, while the other is all about freedom (hence the saying "[Think free as in free speech, not free beer](https://en.wikipedia.org/wiki/Gratis_versus_libre)"); [some licenses are too restrictive to one party](https://www.whitesourcesoftware.com/whitesource-blog/open-source-free-software/), [too open to the other](https://www.gnu.org/philosophy/open-source-misses-the-point.en.html) (yes, I am being over-simplistic here). This is all a never-ending philosophical debate, and we won't dive much into that difference here.
    
-What matters to us is that the license, by its sole existence, allows the community to exist. For one of the main interests of having an Open Source license tied to a project is to allow users to improve the project, by spotting bugs, reporting issues and suggesting code changes. Here we can restate Linus' Law: "given enough eyeballs, all bugs are shallow". Having a community is therefore the very essence of an Open Source project, starting with contributing developers and "power users" (those technical enough to know how to write a useful bug report, for instance).
-By definition, "close" projects (the ones without an Open Source license) cannot enjoy such a community: all users depend on the decision of the editor, which can sometimes be arbitrary, without asking for user feedback.
+What matters to us is that the license, by its sole existence, allows the community to exist. For one of the main interests of having an Open Source license tied to a project is to allow users to improve the project, by spotting bugs, reporting issues and suggesting code changes. Here we can restate [Linus's Law](https://en.wikipedia.org/wiki/Linus%27s_Law): "given enough eyeballs, all bugs are shallow". Having a community is therefore the very essence of an Open Source project, starting with contributing developers and "power users" (those technical enough to know how to write a useful bug report, for instance).<br/>
+By definition, "closed" projects (the ones without an Open Source license) cannot enjoy such a community: all users depend on the decision of the editor, which can sometimes be arbitrary, without asking for user feedback.
 
 To allow all this to exist, an Open Source project must provide its source code to all, and a couple of basic communication channels: first and foremost, a place here the community can interact with the creator/editor with ideas and issues; and at best, a place where the community can easily and directly change/fix the code -- or at the very least, suggest such modifications, which are then either accepted or rejected by the trusted developers). This means the availability of a set of tools (blog, forum, mailing-list, versioning system, etc.), which can even by installed and managed by the community as and when needed.
 
@@ -55,17 +55,17 @@ I see 5 tools to reach the goal of a healthy community: communication, "do-o-cra
 
 ## Communication
 
-An Open Soure project implies openness and honesty. A software editor can chose to open its codebase, and accompany it with explicit intentions: a general roadmap, open bug and feature tracking, frequent communications, etc. This includes the community in the growth of the project, and shares ownership of it. 
+An Open Soure project implies openness and honesty. A software editor can chose to open its codebase, and accompany it with explicit intentions: [a general roadmap](http://build.prestashop.com/howtos/misc/2017-release-schedule/), [open bug and feature tracking](http://forge.prestashop.com/secure/Dashboard.jspa), [frequent communications](http://build.prestashop.com/), etc. This includes the community in the growth of the project, and [shares ownership of it](http://build.prestashop.com/howtos/misc/contribute-to-prestashop/). 
 
 The editor would give access to tools and permissions for third parties to have an impact on the code
 
 
 ## "Do-o-cracy"
 
-The project is managed by its founder and team (either volunteers or employees), all the while being open from third-party contributions. Trusted contributed can be "promoted" in the project's decision ladder by their professionalism, their temperament, their attitude and the respect they breed.
+The project is managed by its founder and team (either volunteers or employees), all the while being open from third-party contributions. Trusted contributors can be "promoted" in the project's [decision ladder](http://build.prestashop.com/news/prestashop-community-framework/) by their professionalism, their temperament, their attitude and the respect they breed.
 
 To that, you could add the lack of personal interest (contributing for the greater good, not just one's own), and the ability to sort things out between one's opinion, the way the project is managed, and the viewpoint of other users and developers.
-Constantly bringing constructive feedback, showing a willingness to work with others and an ability to give (and accept) opinions in a respectful way are very important.
+Constantly bringing constructive feedback, showing a willingness to work with others and an ability to give (and accept) opinions in a respectful way -- all of these are very important.
 
 
 ## Interaction
@@ -88,10 +88,10 @@ If a project keeps on using obsolete technologies or methods, there is a risk to
   
 One new contribution does not automatically means having one more contributor. Sometimes contributors just drop one idea, and are never seen again.
 
-To make contributors come back, the project should be fun to contribute to! 
-This means being proactive, with quick decision, quick comments, quick code reviews, and quick thank-yous!
-This also means being human: a community should do its best to de-anonymize contribution. Having an online presence, writing blogpost, doing webcast/videos, etc.
-Contributors should be "onboarded": they should now that can take more ownership on the project, should they want to.
+To make contributors come back, the project should be fun to contribute to! <br/>
+This means being proactive, with quick decision, quick comments, quick code reviews, and quick thank-yous!<br/>
+This also means being human: a community should do its best to de-anonymize contribution. Having an online presence, writing blogpost, doing webcast/videos, etc.<br/>
+Contributors should be "onboarded": they should now that can take more ownership on the project, should they want to.<br/>
 Finally, talks should not always be about the project and only the project: being humans also means being able to talk of something else, to joke, to post silly pictures, etc. Don't take it too seriously! :)
 
 

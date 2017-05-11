@@ -48,7 +48,7 @@ The firsts times using `git rebase` are not so easy! You have to understand the 
 
 If you look at your local history, you should see something like this:
 
-[A messy history](/assets/images/2017/04/git-rebase-1.png)
+![A messy history](/assets/images/2017/04/git-rebase-1.png)
 
 
 As you can see, the branch has 3 commits from the contributor, with various levels of respect for the naming convention. The oldest one respects the convention; the second one certainly does not; the most recent one is better but still superfluous.
@@ -69,14 +69,14 @@ Let’s break this down:
 
 After typing this, your editor starts and you can see a file like this:
 
-[Pick and choose](/assets/images/2017/04/git-rebase-2.png)
+![Pick and choose](/assets/images/2017/04/git-rebase-2.png)
 
 
 Your recent commits are listed at the top of the file, with a verb, the hash, and the commit name. By default, all three commits are picked as-is -- meaning that the commits are kept unchanged.
 
 If you read the comments, you can see the different options you have instead of just picking the commits. In our case, you need to squash the commits into the first one, so just edit this file like this:
 
-[Pick and squash](/assets/images/2017/04/git-rebase-3.png)
+![Pick and squash](/assets/images/2017/04/git-rebase-3.png)
 
 
 With this, the second commit will fuse with the first one, and then the third one will do the same.
@@ -85,7 +85,7 @@ Save and close the file. If you system has you use Vim (command line editor), yo
 
 Another file will automatically open:
 
-[Naming things](/assets/images/2017/04/git-rebase-4.png)
+![Naming things](/assets/images/2017/04/git-rebase-4.png)
 
 
 On the third line, you can edit the commit names. If it’s fine as it is, keep it that way. It might be a good time to ensure that your commit follow [PrestaShop’s commit naming convention](http://docs.prestashop.com/display/PS16/How+to+write+a+commit+message).
@@ -95,7 +95,7 @@ Edit the main commit name as you like, then save and close (Esc+:wq).
 
 If you look again at your history, you should now see:
 
-[A clean history!](/assets/images/2017/04/git-rebase-5.png)
+![A clean history!](/assets/images/2017/04/git-rebase-5.png)
 
 
 TADA! Just one clean commit! Now comes the last step: type `git push -f`. This will force Git to update your remote reference even if it isn’t an ancestor of the local reference used to overwrite it. Once pushed, your branch is rebased -- and your PR is updated accordingly. 

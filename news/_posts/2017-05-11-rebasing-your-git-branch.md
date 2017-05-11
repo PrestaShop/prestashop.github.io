@@ -3,7 +3,7 @@ layout: post
 title:  "How to rebase your Git branch"
 subtitle: "git rebase can be tricky, but remains your friend!"
 date:   2017-05-11 09:10:11
-author: [xavierborderie, julienmartin]
+author: [ xavierborderie ]
 icon: icon-branch
 tags:
  - tutorial

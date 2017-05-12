@@ -21,9 +21,11 @@ You can only rebase a pull request when its commits were pushed to GitHub using 
 
 We therefore advise you to <a href="https://try.github.io/">learn the basics of Git</a> before contributing code. It will be a very valuable addition to your development toolbox. It will also let Core developers know that
 
-* you know what you are doing,
-* you can work with them in improving your code in the PR,
-* your changes have been tested on your local install (= less likely to contain a typo).
+<ul>
+ <li>you know what you are doing,</li>
+ <li>you can work with them in improving your code in the PR,</li>
+ <li>your changes have been tested on your local install (= less likely to contain a typo).</li>
+</ul>
 
 Go Git!
 </div>
@@ -81,7 +83,7 @@ If you read the comments, you can see the different options you have instead of 
 
 With this, the second commit will fuse with the first one, and then the third one will do the same.
 
-Save and close the file. If you system has you use Vim (command line editor), you can save and quit by hitting the `Esc`key (Vim goes into command mode) and typing `:wq` (for “write and quit”).
+Save and close the file. If your system has you use Vim (command line editor), you can save and quit by hitting the `Esc`key (Vim goes into command mode) and typing `:wq` (for “write and quit”).
 
 Another file will automatically open:
 
@@ -90,7 +92,7 @@ Another file will automatically open:
 
 On the third line, you can edit the commit names. If it’s fine as it is, keep it that way. It might be a good time to ensure that your commit follow [PrestaShop’s commit naming convention](http://docs.prestashop.com/display/PS16/How+to+write+a+commit+message).
 
-The other lines describe the two others commit names, set as comments. You can safely remove these and the other lines if you wish.<br/>
+The other lines describe the two others commit names, set as comments. You can safely remove these and the followin comment lines if you wish.<br/>
 Edit the main commit name as you like, then save and close (Esc+:wq).
 
 If you look again at your history, you should now see:

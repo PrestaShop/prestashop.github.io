@@ -3,7 +3,7 @@ layout: post
 title:  "How to rebase your Git branch"
 subtitle: "git rebase can be tricky, but remains your friend!"
 date:   2017-05-11 09:10:11
-author: [ xavierborderie ]
+authors: [ xavierborderie, julienmartin ]
 icon: icon-branch
 tags:
  - tutorial
@@ -58,7 +58,7 @@ In this example, `git lg` is a shortcode to an improvement over the standard `gi
 </note>
 
 You can see that the latest commit has the `9a7b798` identifier (short for the `9b9b47e9fe591e2f4b1f9bb2dd18c4fa5e715b55` sha1 hash, but the seven first characters are unique enough for identification in this context).
- 
+
 If you have not updated your local repository, the `develop` branch should be at the same location. To correctly rebase the branch, you can use `git rebase -i 9a7b798`.
 
 Let’s break this down:
@@ -98,7 +98,7 @@ If you look again at your history, you should now see:
 ![A clean history!](/assets/images/2017/04/git-rebase-5.png)
 
 
-TADA! Just one clean commit! Now comes the last step: type `git push -f`. This will force Git to update your remote reference even if it isn’t an ancestor of the local reference used to overwrite it. Once pushed, your branch is rebased -- and your PR is updated accordingly. 
+TADA! Just one clean commit! Now comes the last step: type `git push -f`. This will force Git to update your remote reference even if it isn’t an ancestor of the local reference used to overwrite it. Once pushed, your branch is rebased -- and your PR is updated accordingly.
 
 Yay!
 

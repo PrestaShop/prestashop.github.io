@@ -16,7 +16,7 @@ Files often change an Open Source project. Between the time you fix an issue and
 
 <i>This article was initially [a comment by @shudrum on a PR by @kpodemski](https://github.com/PrestaShop/PrestaShop/pull/5583#issuecomment-221409795). Thanks for the inspiration, people!</i>
 
-<note class="alert alert-note" role="alert">
+<div class="alert alert-note" role="alert">
 You can only rebase a pull request when its commits were pushed to GitHub using Git's command-line tool. It is NOT possible to rebase code that has been submitted through GitHub's online edition form.
 
 We therefore advise you to <a href="https://try.github.io/">learn the basics of Git</a> before contributing code. It will be a very valuable addition to your development toolbox. It will also let Core developers know that
@@ -26,7 +26,7 @@ We therefore advise you to <a href="https://try.github.io/">learn the basics of 
 * your changes have been tested on your local install (= less likely to contain a typo).
 
 Go Git!
-</note>
+</div>
 
 ## What is rebasing?
 
@@ -53,9 +53,9 @@ If you look at your local history, you should see something like this:
 
 As you can see, the branch has 3 commits from the contributor, with various levels of respect for the naming convention. The oldest one respects the convention; the second one certainly does not; the most recent one is better but still superfluous.
 
-<note class="alert alert-note" role="alert">
+<div class="alert alert-note" role="alert">
 In this example, `git lg` is a shortcode to an improvement over the standard `git log`. <a href="https://coderwall.com/p/euwpig/a-better-git-log">See how you can enjoy the same improvement</a>!
-</note>
+</div>
 
 You can see that the latest commit has the `9a7b798` identifier (short for the `9b9b47e9fe591e2f4b1f9bb2dd18c4fa5e715b55` sha1 hash, but the seven first characters are unique enough for identification in this context).
 
@@ -106,17 +106,17 @@ Yay!
 
 ### First timer
 
-* GitHub's Try Git: [https://try.github.io/]
-* The official Getting Started: [https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control]
-* Git - The simple guide: [http://rogerdudler.github.io/git-guide/]
+* GitHub's Try Git: [https://try.github.io](https://try.github.io)
+* The official Getting Started: [https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+* Git - The simple guide: [http://rogerdudler.github.io/git-guide](http://rogerdudler.github.io/git-guide)
 
 ### "I know how to push, what's next?"
 
-* Codeschool: [https://www.codeschool.com/courses/git-real]
-* Udacity: [https://www.udacity.com/course/how-to-use-git-and-github--ud775]
-* Git Tower Learn: [https://www.git-tower.com/learn/]
+* Codeschool: [https://www.codeschool.com/courses/git-real](https://www.codeschool.com/courses/git-real)
+* Udacity: [https://www.udacity.com/course/how-to-use-git-and-github--ud775](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
+* Git Tower Learn: [https://www.git-tower.com/learn](https://www.git-tower.com/learn)
 
 ### Advanced
 
-* Learn Git branching: [http://learngitbranching.js.org/]
-* Atlassian's tutorials: [https://www.atlassian.com/git/tutorials/advanced-overview]
+* Learn Git branching: [http://learngitbranching.js.org](http://learngitbranching.js.org)
+* Atlassian's tutorials: [https://www.atlassian.com/git/tutorials/advanced-overview](https://www.atlassian.com/git/tutorials/advanced-overview)

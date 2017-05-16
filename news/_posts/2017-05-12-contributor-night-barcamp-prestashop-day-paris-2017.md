@@ -81,7 +81,7 @@ Venez à la rencontre de la communauté PrestaShop !
 
 <hr/>
 
-PrestaShop Day is THE for e-commerce professionals, with numerous [conferences, workshops and masterclasses](http://www.prestashopday.com/fr/program/), allowing visitors to get a better knowledge of online sales.
+PrestaShop Day is THE event for e-commerce professionals, with numerous [conferences, workshops and masterclasses](http://www.prestashopday.com/fr/program/), allowing visitors to get a better knowledge of online sales.
 
 We have decided to take advantage of this great event and the presence of many community members in Paris: we are organizing two events destined to meet, discuss, and improve the project.
 

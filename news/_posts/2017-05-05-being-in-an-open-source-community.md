@@ -23,7 +23,7 @@ An Open Source community comprises all the trusted people who are actively worki
 - users
 - distributors : editors, agencies, freelancers, etc.
 - translators
-- participant to the communication channels.
+- participants to the communication channels.
 
 The community initially forms because the project it supports has been released under an Open Source license -- which means that its creator/editor allows anyone to use, study, modify and distribute the project, for any purpose, within the constraints of the chosen license.<br/>
 In that, there is a difference between the Open Source movement and the Free Software movement: if the two are generally speaking of the same approach to software distribution, they do not share the same spirit nor the same licenses. One is more open to commercialization, while the other is all about freedom (hence the saying "[Think free as in free speech, not free beer](https://en.wikipedia.org/wiki/Gratis_versus_libre)"); [some licenses are too restrictive to one party](https://www.whitesourcesoftware.com/whitesource-blog/open-source-free-software/), [too open to the other](https://www.gnu.org/philosophy/open-source-misses-the-point.en.html) (yes, I am being over-simplistic here). This is all a never-ending philosophical debate, and we won't dive much into that difference here.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to create the best bug report"
+title:  "How to create the best bug reports"
 subtitle: "Three rules: up-to-date, reproducible, and detailed."
 date:   2017-05-18 09:10:11
 authors: [ xavierborderie ]
@@ -12,9 +12,7 @@ tags:
 
 Every morning, the Product and QA team gather around a big screen, and review the new Forge tickets that were created since the day before. At the end of the meeting, all new tickets must be asserted, and if need be, placed into the hand of a team member.
 
-Reviewing Forge ticket can be very brain-consuming: there are times when we get only a quick sentence; other times when the report just gives the whole set of errors displayed by the browser; or sometimes all we get is a demand to fix something as soon as possible, with a phone number. It's not always easy to assert and respond quickly to such reports.
-
-On the other hand, we sometimes get tickets that are a pleasure to work with. Here are their most common denominators.
+Reviewing Forge ticket can be very brain-consuming: sometimes, report incompleteness can make for a need to ask for more info, thus slowing down. On the other hand, we sometimes get tickets that are a pleasure to work with. Here are their most common denominators.
 
 <div class="alert alert-note" role="alert">
 Quick summary:

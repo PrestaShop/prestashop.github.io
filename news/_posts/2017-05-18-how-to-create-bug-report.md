@@ -2,7 +2,7 @@
 layout: post
 title:  "How to create the best bug reports"
 subtitle: "Three rules: up-to-date, reproducible, and detailed."
-date:   2017-05-18 09:10:11
+date:   2017-05-22 09:10:11
 authors: [ xavierborderie ]
 icon: icon-bug
 tags:

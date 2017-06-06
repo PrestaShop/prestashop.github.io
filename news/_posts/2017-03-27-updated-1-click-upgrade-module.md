@@ -17,7 +17,7 @@ After much work and hair-pulling, we finally did it: the 1-Click Upgrade module 
 
 This is your chance to try your hand at the updated 1-Click Upgrade module! We’ve tested it in many configurations, but there’s nothing like community feedback!
 
-[Download the update 1-Click upgrade module now!](http://www.prestashop.com/download/private/autoupgrade.zip){: .btn .btn-lg .btn-success}
+[Download the update 1-Click upgrade module now!](https://github.com/PrestaShop/autoupgrade/releases/download/16-to-17-beta-1/autoupgrade.zip){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 ### The story so far

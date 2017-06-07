@@ -72,7 +72,7 @@ Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/
   - Bug fix:
     - #7732: Change variable from string to array for php 7
      
-The [PrestaShop 1.7.1.2 changelog](https://assets.prestashop2.com/fr/system/files/ps_releases/changelog_1.7.1.2.txt) is available.
+The [PrestaShop 1.7.1.2 changelog](https://download.prestashop.com/download/releases/changelog_1.7.1.2.txt) is available.
 
 Contributors to this patch version, from both the Core team and the community at large: @aleeks, @quetzacoalt91, @vincentbz, @fatmabouchekoua, @kompilorb, @iqit-commerce, @maximebiloe, @transkontrol, @nihco2, @prestamodule, and @joelsanchez. Thank you!
  

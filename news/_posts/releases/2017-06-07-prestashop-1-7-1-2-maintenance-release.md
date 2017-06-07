@@ -18,7 +18,7 @@ PrestaShop 1.7.1.2 is now available. This maintenance release fixes 28 issues re
  
 Version 1.7.1.1, [released in April](http://build.prestashop.com/news/prestashop-1-7-1-1-maintenance-release/), brought a lot of needed updates to v1.7.1.0, two weeks after the release of that new minor version. As a patch version, 1.7.1.2 brings further  goodness and stability to the 1.7.1 branch.
  
-Some of the most nostable fixes are:
+Some of the most notable fixes are:
 
 * Add a scrollbar for editor
 * Fix for CMS tree on sitemap

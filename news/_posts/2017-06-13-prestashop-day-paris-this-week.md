@@ -19,8 +19,8 @@ Many are coming to Paris especially for this event (as well as the [WordCamp Eur
 
 As you know, two community events are being prepared:
 
-* the Contributor Night, on the day before, right in PrestaShop's Paris office.
-* the barcamp, during the PS Day, in its own location within the walls of the global event.
+* the **Contributor Night**, on the day before, right in PrestaShop's Paris office.
+* the **barcamp**, during the PS Day, in its own location within the walls of the global event.
 
 Join us for community fun! You can [add yourself to the Contributor Night](https://www.meetup.com/fr-FR/PrestaShop-Paris-Ecommerce-Meetup/events/240083244/) on Meetup.com, and [suggest barcamp topics right now](https://docs.google.com/forms/d/e/1FAIpQLSfap99ZfFmiEK94P79lsBUcfpyGfc8lrY9LO-yt4_lWp6vH8Q/viewform?usp=sf_link) -- you can also suggest topics on the day of the event, if there are time slots available.
 

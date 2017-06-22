@@ -105,7 +105,7 @@ More interestingly, the survey allowed to rank the features merchants look for a
 4. Estimate stock coverage.
 5. Multi-warehouse.
 
-If we also consider the corresponding comments which described their use:
+If we also consider the corresponding comments which described...:
 
 * The interfaces to increment/decrement stock as too clunky, 
 * The quantities displayed in different parts of the back-office as inconsistent,
@@ -238,4 +238,4 @@ It is thanks to this precious user feedback that we could iterate upon several p
 
 Of course your participation is optional but we would be really happy if you accept to take part in the tests. The more people participate, the more we can improve PrestaShop. If you accept, depending on your profile, you’ll receive an invitation in the coming weeks for a test session. Tests are done remotely (on Skype or Google Hangouts) and usually last 30 minutes. It can be done in English or French.
 
-See you at the next session!
+See you in the third an final article about stock management in 1.7 -- or at the next test session!

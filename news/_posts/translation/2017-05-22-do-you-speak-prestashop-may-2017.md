@@ -24,7 +24,7 @@ Here's a quick overview of the evolution of the most active languages over the p
 
 ### Deactivating Swiss-German in PrestaShop
 
-It's been a while that the German for Switzerland is avalaible for Switzerland merchants. However, this language does not bring any value to merchants at the moment: Indeed, it is similar to the German language, and hasn't been localized to answer the needs of the Swiss market. Confusing.</br>
+It's been a while that the German for Switzerland is avalaible for Switzerland merchants. However, this language does not bring any value to merchants at the moment: Indeed, it is similar to the German language, and hasn't been localized to answer the needs of the Swiss market. Confusing.<br>
 Thus, from 1.7.2.O onwards, the Swiss localization package will load the German language only.
 
 The German, Switzerland translation project has also been removed from the Crowdin translation project. It has never really been maintained and it remained inactive for too long.

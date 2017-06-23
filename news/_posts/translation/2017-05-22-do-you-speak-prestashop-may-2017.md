@@ -2,7 +2,7 @@
 layout: post
 title:  "Do you speak PrestaShop? – May 2017 edition"
 subtitle: "The latest news from our translation project"
-date:   2017-06-22 06:09:47
+date:   2017-06-23 06:09:47
 authors: [ alexeven ]
 icon: icon-world
 tags: [translation, i18n, l10n]

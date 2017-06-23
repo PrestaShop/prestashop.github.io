@@ -116,7 +116,7 @@ Remember, you can see who's been contributing to our translation project thanks 
 
 #### Fully translated languages
 
-At the end of May 2017, PrestaShop 1.6.1 was fully available (= 100% translated and validated) in **14 languages**:
+At the end of May 2017, PrestaShop 1.6.1 was fully available (= 100% translated and validated) in **15 languages**:
 
 | **Bulgarian** | English | French | French, Canada |
 | French, Canada | German | Greek | Italian |

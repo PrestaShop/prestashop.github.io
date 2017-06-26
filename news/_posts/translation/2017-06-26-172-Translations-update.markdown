@@ -47,5 +47,5 @@ For maintenance purpose, we're only keeping the latest minor version active on C
 The 1.7.1 language packs will be updated one last time when closing the 1.7.1 project and will no longer be updated. New translations will be available with 1.7.2 (on its way!).
 
 
-So, well, what's the conclusion? We're calling for translators to help [translate PrestaShop 1.7.1](https://crowdin.com/project/prestashop-official)!
+So, well, what's the conclusion? We're calling for translators to help [translate PrestaShop 1.7.2](https://crowdin.com/project/prestashop-official)!
 

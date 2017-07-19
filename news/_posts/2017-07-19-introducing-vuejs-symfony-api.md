@@ -60,7 +60,7 @@ Contrary to the webservices, the API is private; meaning that you have to be aut
 
 ### Components
 
-To build the templates for these new pages, we work with Vue.js components. It means that we extend standard HTML elements to encapsulate reusable code. For example, we’ve created an element named "PSButton" that you can use simply by using the "<PSButton>" tag.
+To build the templates for these new pages, we work with Vue.js components. It means that we extend standard HTML elements to encapsulate reusable code. For example, we’ve created an element named "PSButton" that you can use simply by using the `<PSButton>` tag.
 
 Here is the Vue code for the `<PSButton>` component:
 

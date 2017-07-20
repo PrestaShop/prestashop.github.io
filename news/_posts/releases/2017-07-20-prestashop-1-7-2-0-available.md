@@ -14,7 +14,7 @@ tags:
  - development
 ---
 
-Dear community. You've all been waiting for it. So have we. PrestaShop 1.7.2.0.
+Dear community. You've all been waiting for it. So have we. PrestaShop 1.7.2.0 is here.
 
 We know you expected a lot from the next minor version, and we didn't want to let you down. It closes almost twice as many pull requests as 1.7.1.0, 1.7.1.1 and 1.7.1.2 _combined_ (126 vs. 203), and we took a month more of testing and improving it.
 

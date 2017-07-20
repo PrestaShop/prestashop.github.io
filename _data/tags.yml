@@ -1,76 +1,110 @@
-- slug: core-weekly
-  name: Weekly news from the core team
-- slug: news
-  name: News
-- slug: git
-  name: Git
-- slug: override
-  name: Overriding PrestaShop
-- slug: module
-  name: Modules
-- slug: version
-  name: PrestaShop versions
-- slug: 1.6.1.x
-  name: 1.6.1.x Releases
 - slug: alpha
   name: Alpha releases
 - slug: beta
   name: Beta releases
 - slug: rc
-  name: Release Candidate
+  name: Release Candidates
 - slug: releases
   name: PrestaShop releases
-- slug: development
-  name: PrestaShop development
-- slug: architecture
-  name: Architecture
-- slug: coding-standards
-  name: Coding Standards
-- slug: semver
-  name: Sementic Versioning
-- slug: translation
-  name: PrestaShop Translation
-- slug: i18n
-  name: Internationalization
-- slug: localization
-  name: Localization
-- slug: composer
-  name: Composer (dependency manager)
-- slug: legal
-  name: PrestaShop Legal Aspects
+- slug: minor
+  name: PrestaShop minor releases
 - slug: patch
   name: PrestaShop patches and patch releases
-- slug: github
-  name: GitHub
+- slug: 1.6
+  name: PrestaShop 1.6
+- slug: 1.6.1.x
+  name: 1.6.1.x Releases
 - slug: 1.7
   name: PrestaShop 1.7
 - slug: 1.7.0.0
-  name: PrestaShop 1.7
+  name: PrestaShop 1.7.0.0
+- slug: 1.7.1.x
+  name: PrestaShop 1.7.1.x
+- slug: 1.7.1.0
+  name: PrestaShop 1.7.1.0
+- slug: 1.7.2.x
+  name: PrestaShop 1.7.2.x
+- slug: 1.7.2.0
+  name: PrestaShop 1.7.2.0
+- slug: architecture
+  name: Architecture
+- slug: autoupgrade
+  name: Autoupgrade module
+- slug: barcamp
+  name: Barcamp
+- slug: coding-standards
+  name: Coding Standards
+- slug: community
+  name: Community
+- slug: composer
+  name: Composer (dependency manager)
+- slug: contact
+  name: Contact
+- slug: contribute
+  name: Contribute
+- slug: contribution
+  name: Contribution
+- slug: core-weekly
+  name: Weekly news from the core team
+- slug: design
+  name: Design
+- slug: development
+  name: PrestaShop development
+- slug: event
+  name: Events
+- slug: feature
+  name: New feature
+- slug: forge
+  name: Forge
+- slug: git
+  name: Git
+- slug: github
+  name: GitHub-specific articles
+- slug: i18n
+  name: Internationalization
+- slug: i10n
+  name: Localization
+- slug: legal
+  name: PrestaShop Legal Aspects
+- slug: localization
+  name: Localization
+- slug: maintenance
+  name: Maintenance
+- slug: module
+  name: Modules
+- slug: news
+  name: News
 - slug: npm
   name: npm
+- slug: override
+  name: Overriding PrestaShop
 - slug: pr
   name: Pull-Requests
-- slug: 1.6
-  name: PrestaShop 1.6
-- slug: team
-  name: PrestaShop Team
+- slug: process
+  name: Process
+- slug: product
+  name: Product
+- slug: psday
+  name: PrestaShop Day
+- slug: semver
+  name: Semantic Versioning
 - slug: starter-theme
   name: Starter Theme
 - slug: symfony
   name: Symfony
-- slug: ux
-  name: User Experience
-- slug: product
-  name: Product
-- slug: wording
-  name: wording
+- slug: team
+  name: PrestaShop Team
 - slug: theme
   name: Theme
-- slug: design
-  name: Design
-- slug: process
-  name: Process
-- slug: Contribute
-  name: contribute
-- slug: Maintenance
-  name: maintenance
+- slug: translation
+  name: PrestaShop Translation
+- slug: tutorial
+  name: Tutorial
+- slug: ux
+  name: User Experience
+- slug: versions
+  name: PrestaShop versions
+- slug: video
+  name: Videos
+- slug: wording
+  name: Wording

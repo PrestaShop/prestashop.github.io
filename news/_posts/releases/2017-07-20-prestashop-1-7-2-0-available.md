@@ -16,7 +16,7 @@ tags:
 
 Dear community. You've all been waiting for it. So have we. PrestaShop 1.7.2.0.
 
-We know you expected a lot from the next minor version, and we didn't to let you down. It closes almost twice as many pull requests as 1.7.1.0, 1.7.1.1 and 1.7.1.2 _combined (126 vs. 203), and we took a month more of testing and improving it.
+We know you expected a lot from the next minor version, and we didn't want to let you down. It closes almost twice as many pull requests as 1.7.1.0, 1.7.1.1 and 1.7.1.2 _combined_ (126 vs. 203), and we took a month more of testing and improving it.
 
 [Download PrestaShop 1.7.2.0 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
@@ -31,7 +31,7 @@ So you might be wondering, what do we have in store for you this time? Keep read
 Here what you can expect from this new minor version of PrestaShop:
 
 * **New Stock Management interface, with essential management of your inventory.**
-* **New Translation page, with improved code and interface.**
+* **Updated Translation page, with improved code and interface.**
 * **New hooks on both the Product page and the Classic theme.**
 * Improved Classic theme readability on low quality screens.
 * Product page text areas now have a character counter.
@@ -57,11 +57,17 @@ It's also a solid foundation for further improvement!
 Of note, [we started using the Vue.js framework](http://build.prestashop.com/news/introducing-vuejs-symfony-api/) in order to improve the UX in an iterative way.
 
 
-#### New Translation page
+#### Updated Translation page
 
 The new Translation page in 1.7.0.0 kinda worked, but it was a performance hog, and not quite usable. So we decided to rework it using the same technology as the new Stock Management page: Vue.js.
 
 ![New Translation page](/assets/images/2017/07/ps1720-translation.png)
+
+Also, this version contains modifications that could impact your themes: if you are using the Classic strings and translations for your own theme, we've made some changes in 1.7.2.0 that you should report on your theme if you still want to benefit from the PrestaShop translations.
+
+* Translation domain "Shop.Theme" is now "Shop.Theme.Global"
+* Harmonization of domains for customer form: https://github.com/PrestaShop/PrestaShop/pull/8120/files?w=1#diff-a2cd912578d421dc72b8143048ad6b16
+* Correction of "Brands list" to "Brand list": https://github.com/PrestaShop/PrestaShop/pull/8120/files?w=1#diff-78e1e3c6e9dc564ccd16b9f633b61f7f
 
 
 #### New hooks
@@ -91,9 +97,9 @@ Rarely has a version of PrestaShop so much contribution from the community! Of t
 
 A huge "thank you!" to these 36 fine people, then: @0kph, @123monsite-regis, @aaymeric, @addisnetwork, @agnessymediane, @alendit, @alexdee2007, @dariusakafest, @djbuch, @gasparfm, @howardnoz, @ish6614, @jestemradek, @jorgevrgs, @kpodemski, @madef, @martinfojtik, @mortred974, @neoteknic, @nobodaddy, @pnicolass, @prestaedit, @prestamodule, @psandmore, @rubenmartins, @sebbareyre, @slamdunk, @soullivaneuh, @studiokiwik, @tiledcode, @tonyyb, @transkontrol, @true0r, @unlocomqx, @willowcreation, and @yannicka!
 
-Thank you for helping improve the life of more than 260 000 online merchants with ideas, improvements and fixes!
+Thank you for helping improve the life of more than 260,000 online merchants with ideas, improvements and fixes!
 
-Special thanks to @martinfojtik and @prestamodule, who are each responsible for 5 pull requestss \o/
+Special thanks to @martinfojtik and @prestamodule, who are each responsible for 5 pull requests \o/
 
 Now go ahead and tell us what you think!
 

@@ -68,4 +68,4 @@ Because many of these numbers are nice, we figured an infographic would offer a 
 
 ## Parting words
 
-See you in January for the next edition :)
+See you in January 2018 for the next edition :)

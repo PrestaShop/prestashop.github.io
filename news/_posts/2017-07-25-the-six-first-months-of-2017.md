@@ -22,7 +22,7 @@ July is almost over and more than 6 months have come and gone since the beginnin
 Between January 1st and June 31st of 2017, we've released 13 updates to PrestaShop:
 
 * 1 minor release for 1.7: 1.7.1.0.
-  * The next one is coming soon! [Test it today](http://build.prestashop.com/news/prestashop-1-7-2-0-rc-1/)!
+  * Version 1.7.2.0 was released in July! [Download it today](https://www.prestashop.com/en/download)!
 * 5 patch releases for 1.7: from 1.7.0.4, 1.5.0.5, 1.7.0.6, 1.7.1.1, and 1.7.1.2.
 * 5 patch releases for 1.6: from 1.6.1.11 to 1.6.1.15.
 * 2 test releases: 1.7.1.0 Beta, and 1.7.2.0 RC.

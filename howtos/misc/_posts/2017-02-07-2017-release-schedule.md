@@ -15,43 +15,56 @@ published: true
 Our release calendar for the next versions of PrestaShop 1.7 and 1.6.
 
 
-## TL;DR
+## Summary
 
-In short: **we intend to release 4 minor versions of PrestaShop 1.7 in 2017, and monthly patch versions of both 1.7 and 1.6**.
+In short: **we intend to release 4 minor versions of PrestaShop 1.7 every 3 to 4 months, and monthly patch versions for both 1.7 and 1.6**.
 
 When, you ask? Here’s a handy table:
 
-![Prestashop 2017 release schedule](/assets/images/2017/04/2017-release-schedule-aprilUpdate.jpg)
+![Prestashop 2017 release schedule](/assets/images/2017/07/2017-release-schedule-julyUpdate.jpg)
 
-This table was updated on April 26th, 2017.
+This table was updated on July 26th, 2017.<br/>
+Please note, all dates are estimates and are subject to change.
 
 For more information (and the initial plan), please read [the initial announcement  post](http://build.prestashop.com/news/announcing-our-2017-release-schedule/).
 
 
-## Version roadmap
+## Version 1.7 roadmap
 
 Here is a bird's eye view of what we want to next minor versions to be:
 
 * 1.7.1.0:
   * Was to be released in March 2017.
-    * Was effectively released on April 3rd, 2017.
-  * Main projects:
+    * Was effectively **released on April 3rd, 2017**.
+  * Main changes:
     * General stability and feature improvement.
     * 1.6-to-1.7 upgrader.
     * Improved translation scope.
 
 * 1.7.2.0:
-  * Should be released in June 2017.
-  * Main projects:
+  * Was to be released in June 2017.
+    * Was effectively **released on July 20th, 2017**.
+  * Main changes:
     * Reworked Stock Management feature.
-    * More to come!
+    * Updated Translation page, with improved code and interface.
+    * New hooks on both the Product page and the Classic theme.
 
 * 1.7.3.0:
-  * Should be released in September 2017.
-  * Main projects:
+  * Should be released in <strike>September</strike> October 2017.
+  * Main changes:
     * Focus on internationalization.
     * More to come!
 
 * 1.7.4.0:
-  * Should be released in December 2017.
-  * Main projects to be determined.
+  * Should be released in <strike>December 2017</strike> January 2018.
+  * Main changes still to be determined.
+  
+PrestaShop 1.7 will also receive monthly "patch" (bugfix) releases in-between minor releases.
+
+  
+## Version 1.6 roadmap
+
+PrestaShop has entered maintenance mode since the release of PrestaShop 1.7, in November 2016.
+
+We plan on keeping supporting it for two years, until October 2018.<br/>
+We want to release monthly "patch" (bugfix) releases until then.

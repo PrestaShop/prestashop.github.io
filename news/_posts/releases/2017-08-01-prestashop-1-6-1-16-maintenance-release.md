@@ -40,7 +40,7 @@ Here are some of the most notable changes that this version brings:
 * Fix tax problems in shopping cart
 * Fix unit price of the product with combinations
 * Remove download limit (SQL manager CSV export)
-* Add correctly the free_shipping cart_rule to an order from BO
+* Add correctly the free\_shipping cart\_rule to an order from BO
 * Add impact on price to the product price
 * ...and several other fixes.
 

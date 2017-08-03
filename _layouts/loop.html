@@ -3,9 +3,9 @@ layout: default
 ---
 
 {% if page.type == 'home' %}
-	{% assign posts = paginator.posts %}
+  {% assign posts = paginator.posts %}
 {% elsif page.type == 'tag' %}
-	{% assign posts = site.tags[page.tag] %}
+  {% assign posts = site.tags[page.tag] %}
 {% endif %}
 
 <div class="home">
@@ -13,14 +13,14 @@ layout: default
   <div class="row">
     <div class="col-md-12">
 
-			{% if page.type == 'tag' %}
-				{% for tag in site.data.tags %}
-					{% if page.tag == tag.slug %}
-						{% assign tagname = tag.name %}
-					{% endif %}
-				{% endfor %}
-				<h1>Articles by tag : {{ tagname }}</h1>
-			{% endif %}
+      {% if page.type == 'tag' %}
+        {% for tag in site.data.tags %}
+          {% if page.tag == tag.slug %}
+            {% assign tagname = tag.name %}
+          {% endif %}
+        {% endfor %}
+        <h1>Articles by tag : {{ tagname }}</h1>
+      {% endif %}
 
       <ul class="post-list">
         {% for post in posts %}
@@ -55,18 +55,20 @@ layout: default
             {% endif %}
 
             <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-			<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Continue reading &rarr;</a>
+            <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Continue reading &rarr;</a>
           </li>
+
         {% endfor %}
+
       </ul>
 
     </div>
   </div>
 
 
-	{% if page.type == 'home' %}
+  {% if page.type == 'home' %}
 
-	<!-- Pagination links -->
+  <!-- Pagination links -->
   <div class="row">
     <div class="col-md-12">
 
@@ -86,13 +88,13 @@ layout: default
             <span class="page_number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
           </li>
           <li class="next {% unless paginator.next_page_path %}disabled{% endunless%}">
-						{% if paginator.next_page_path %}
-							<a href="{{ paginator.next_page_path }}">
-								Older <span aria-hidden="true">&rarr;</span>
-							</a>
-						{% else %}
-							Older <span aria-hidden="true">&rarr;</span>
-						{% endif %}
+            {% if paginator.next_page_path %}
+              <a href="{{ paginator.next_page_path }}">
+                Older <span aria-hidden="true">&rarr;</span>
+              </a>
+            {% else %}
+              Older <span aria-hidden="true">&rarr;</span>
+            {% endif %}
           </li>
 
         </ul>
@@ -101,6 +103,6 @@ layout: default
     </div>
   </div>
 
-	{% endif %}
+  {% endif %}
 
 </div>

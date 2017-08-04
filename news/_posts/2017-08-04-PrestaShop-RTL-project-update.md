@@ -71,6 +71,7 @@ Another method would be to manually create SCSS files for RTL. That implies heav
 ### Script method
 
 The last method is to use a PHP script to adapt the final CSS files to RTL. The related library will be included in the PrestaShop Core dependencies to be always available. We will use it everytime we install or enable a RTL language to generate the RTL CSS files.
+
 **This is the chosen method for PrestaShop 1.7.**
 
 <table style="width:100%">
@@ -94,7 +95,8 @@ The last method is to use a PHP script to adapt the final CSS files to RTL. The 
   </tr>
 </table>
 
-For instance, we'll have a theme.css file and a theme_rtl.css file. When theme_rtl.css is loaded, the theme.css will not be loaded. Right now as we suggested in past, PrestaShop will load any file which has _rtl.css instead of the original one.
+For instance, we'll have a *theme.css* file and a *theme_rtl.css* file. When *theme_rtl.css* is loaded, the *theme.css* will not be loaded. Right now as we suggested in past, PrestaShop will load any file which has *_rtl.css* instead of the original one.
+
 
 
 <img width="500" src="/assets/images/2017/08/BO-prestashop-RTL.png">

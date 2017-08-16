@@ -20,11 +20,11 @@ Version 1.7.2.0, [released in July](http://build.prestashop.com/news/prestashop-
 
 Some of the most notable fixes are:
 
-* Add a scrollbar for editor
-* Fix for CMS tree on sitemap
-* Refresh product line on quantity change in cart & Show discount to cart summary
-* Use composer cacert file by default
-* Upgrade theme modules & disabling them in the same time that the theme
+* Enhanced search performance on front office (and back office)
+* Improved performance and search bar for stock management
+* Better display of back office main menu and submenus
+* Updated design for the modules page and other layouts improvements
+* Improved translation page (yes, again ^^)
 
 [Download PrestaShop 1.7.2.1 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}

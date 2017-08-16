@@ -14,7 +14,7 @@ tags:
  - 1.7
 ---
 
-PrestaShop 1.7.2.1 is now available. This maintenance release fixes 28 issues reported on version 1.7.2.
+PrestaShop 1.7.2.1 is now available. This maintenance release fixes 25 issues reported on version 1.7.2.
 
 Version 1.7.2.0, [released in July](http://build.prestashop.com/news/prestashop-1-7-2-0-available/), brought a lot of goodies, none the less being the new Stock Management feature. That new minor version was well received, and this patch version simply fixes a few kinks that were discovered, bringing further goodness and stability to the 1.7.2 branch.
 
@@ -35,6 +35,7 @@ Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/
    - Improvement:
      - #8140: Update modules page design
    - Bug fix:
+     - #8236: Fix module modal layout
      - #8046: Fix legacy submenu laptop
      - #8141: Fix the module "translate" button with the new link of translation page
      - #8173: Fix the search error with white spaces in stock page
@@ -61,6 +62,7 @@ Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/
    - Improvement:
      - #8201: Speed up search queries (17)
    - Bug fix:
+     - #8228: Optimise synchronization stock sql
      - #8215: Add translations in database when importing theme
      - #8165: Use MessageCatalog function to get all message
      - #8186: Improve stock sql performance

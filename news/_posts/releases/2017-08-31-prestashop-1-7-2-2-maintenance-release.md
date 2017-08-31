@@ -14,7 +14,7 @@ tags:
  - 1.7
 ---
 
-PrestaShop 1.7.2.2 is now available. This maintenance release fixes 9 issues reported on version 1.7.2.
+PrestaShop 1.7.2.2 is now available. This maintenance release fixes 8 issues reported on version 1.7.2.
 
 Some of the most notable fixes are:
 
@@ -31,7 +31,6 @@ Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/
   - Bug fix:
     - [#8266](https://github.com/PrestaShop/PrestaShop/pull/#8266) Fix error while reaching AdminModules
     - [#8238](https://github.com/PrestaShop/PrestaShop/pull/#8238) Fix wrong final combination price if BC Math is not available
-    - [#8163](https://github.com/PrestaShop/PrestaShop/pull/#8163) Fix encoded back URL
     - [#8063](https://github.com/PrestaShop/PrestaShop/pull/#8063) Display texture image in combination form
     - [#8057](https://github.com/PrestaShop/PrestaShop/pull/#8057) Save before generate combinations
 

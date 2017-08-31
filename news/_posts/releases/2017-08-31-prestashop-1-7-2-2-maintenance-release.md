@@ -19,7 +19,7 @@ PrestaShop 1.7.2.2 is now available. This maintenance release fixes 8 issues rep
 Some of the most notable fixes are:
 
 * Price and VAT fixes.
-* Price computing performance improvement.
+* Price computing performance improvement: 1.7 front-end should now be [faster than 1.6](http://www.jobs.net/jobs/prestashop/fr/)'s for popular stores!
 * Fix error while reaching AdminModules
 
 [Download PrestaShop 1.7.2.2 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
@@ -29,21 +29,21 @@ Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/
 
 - Back Office:
   - Bug fix:
-    - [#8266](https://github.com/PrestaShop/PrestaShop/pull/#8266) Fix error while reaching AdminModules
-    - [#8238](https://github.com/PrestaShop/PrestaShop/pull/#8238) Fix wrong final combination price if BC Math is not available
-    - [#8063](https://github.com/PrestaShop/PrestaShop/pull/#8063) Display texture image in combination form
-    - [#8057](https://github.com/PrestaShop/PrestaShop/pull/#8057) Save before generate combinations
+    - [#8266](https://github.com/PrestaShop/PrestaShop/pull/8266) Fix error while reaching AdminModules
+    - [#8238](https://github.com/PrestaShop/PrestaShop/pull/8238) Fix wrong final combination price if BC Math is not available
+    - [#8063](https://github.com/PrestaShop/PrestaShop/pull/8063) Display texture image in combination form
+    - [#8057](https://github.com/PrestaShop/PrestaShop/pull/8057) Save before generate combinations
 
 - Front Office:
   - Improvement:
-    - [#8082](https://github.com/PrestaShop/PrestaShop/pull/#8082) Scroll top to product list when paginate
+    - [#8082](https://github.com/PrestaShop/PrestaShop/pull/8082) Scroll top to product list when paginate
 
 - Core:
   - Improvement:
-    - [#8212](https://github.com/PrestaShop/PrestaShop/pull/#8212) Optimize specific price computing by executing the query only when needed
+    - [#8212](https://github.com/PrestaShop/PrestaShop/pull/8212) Optimize specific price computing by executing the query only when needed
   - Bug fix:
-    - [#8210](https://github.com/PrestaShop/PrestaShop/pull/#8210) Fix missing product limit/offset when ordering by price on Sale page
-    - [#8138](https://github.com/PrestaShop/PrestaShop/pull/#8138) Fix tax calculation when vat number is used
+    - [#8210](https://github.com/PrestaShop/PrestaShop/pull/8210) Fix missing product limit/offset when ordering by price on Sale page
+    - [#8138](https://github.com/PrestaShop/PrestaShop/pull/8138) Fix tax calculation when vat number is used
 
 The [PrestaShop 1.7.2.2 changelog](https://download.prestashop.com/download/releases/changelog_1.7.2.2.txt) is available.
 

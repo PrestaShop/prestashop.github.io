@@ -2,7 +2,7 @@
 layout: post
 title:  "Contributor interview: idnovate"
 subtitle: "Discover the faces behind the commits"
-date:   2017-08-88 09:10:11
+date:   2017-09-01 09:10:11
 authors: [ xavierborderie ]
 icon: icon-leaf
 tags:

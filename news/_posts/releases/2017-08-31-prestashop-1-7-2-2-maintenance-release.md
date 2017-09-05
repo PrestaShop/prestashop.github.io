@@ -19,7 +19,7 @@ PrestaShop 1.7.2.2 is now available. This maintenance release fixes 8 issues rep
 Some of the most notable fixes are:
 
 * Price and VAT fixes.
-* Price computing performance improvement: 1.7 front-end should now be [faster than 1.6](http://www.jobs.net/jobs/prestashop/fr/)'s for popular stores!
+* Price computing performance improvement: 1.7 front-end should now be [faster than 1.6](https://github.com/PrestaShop/PrestaShop/pull/8212#issuecomment-319479574)'s for popular stores!
 * Fix error while reaching AdminModules
 
 [Download PrestaShop 1.7.2.2 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}

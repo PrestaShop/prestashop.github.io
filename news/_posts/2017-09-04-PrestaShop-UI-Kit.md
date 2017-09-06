@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Contribute to the UI kit of the 1.7 back office"
-subtitle: "Yes, yes, we have an UI kit :)"
+subtitle: "Yes, yes, we have a UI kit :)"
 date:   2017-09-06 09:10:11
-authors: [ alexeven ]
+authors: [ leamendes, maximebiloe ]
 icon: icon-align-right
 tags:
  - design

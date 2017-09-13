@@ -59,11 +59,13 @@ At this point, you can activate the Live Translation module and start translatin
 
 #### If your shop is all about “crwdns” keys
 
-You must reset the language to English (or your first language):
+You must reset the language to English (or your first language). For this, go to your profile page like this:
 
-![PrestaShop Live translation module](/assets/images/2017/09/PrestaShop_LiveTranslation_Troubleshooting1.png)
+<img width="500" src="/assets/images/2017/09/PrestaShop_LiveTranslation_Troubleshooting1.png">
 
-![PrestaShop Live translation module](/assets/images/2017/09/PrestaShop_LiveTranslation_Troubleshooting2.png)
+Then change the language and save:
+
+<img width="500" src="/assets/images/2017/09/PrestaShop_LiveTranslation_Troubleshooting2.png">
 
 
 Make sure you select "Keep me logged in" when you access your back office.

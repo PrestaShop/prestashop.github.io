@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The PrestaCrew is always hiring!"
-subtitle: "Come change e-commerce for +260.000 merchants"
+subtitle: "Come change e-commerce for +270.000 merchants"
 date:   2017-09-21 09:10:11
 authors: [ xavierborderie ]
 icon: icon-daft-punk

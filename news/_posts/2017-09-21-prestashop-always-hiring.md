@@ -14,7 +14,7 @@ Looking to have an impact on +270.000 users all at once? Look no further! Presta
 
 ### Always hiring?!
 
-First and foremost: we are always looking to add members to the team, most particularly PHP developers -- but not limited to that!
+First and foremost: we are always looking to add members to the team, **most particularly PHP developers** -- but not limited to that!
 
 So if you find yourself wandering around aimlessly in Paris, come visit us! We'll be sure to offer you fresh croissant (if your early enough), and handful of cat hair (Puff! Get off my desk!), and friendly talk with our HR team. Bring a CV!
 
@@ -30,7 +30,7 @@ Note that there are other roles open. We'll only list the technical ones here, b
 The Core team is in charge of improving the e-commerce software used by hundreds of thousands of online stores.<br/>
 This team is always on the look for new talent to bring onboard. All year round!
 
-If you are a senior PHP developer, knowledgeable in both Symfony and Composer, with a hint of frontend experience (we use Vue.js, jQuery+vanilla JS, Bootstrap4 and Webpack), then you should join in on the fun! We currently have [one offer online](http://www.jobs.net/jobs/prestashop/en-gb/job/France/D-veloppeur-C-ur-PHP-Javascript-H-F/J3F1W670DKTN456GP87/), but in truth we are looking for 4-5 more Core developers in order to boost our various projects! 
+If you are a **senior PHP developer**, knowledgeable in both **Symfony** and **Composer**, with a hint of frontend experience (we use Vue.js, jQuery+vanilla JS, Bootstrap4 and Webpack), then you should join in on the fun! We currently have [one offer online](http://www.jobs.net/jobs/prestashop/en-gb/job/France/D-veloppeur-C-ur-PHP-Javascript-H-F/J3F1W670DKTN456GP87/), but in truth we are looking for 4-5 more Core developers in order to boost our various projects! 
 
 
 #### Product team
@@ -74,4 +74,4 @@ Sometimes an image is worth thousands words. Joining the PrestaShop means become
 If this all sounds good to you, you can directly contact **Charlotte**, our amazing HR Manager, to let her know you want to join the team!
 
 **Charlotte Clément**
-<br><a href="charlotte.clement@prestashop.com">charlotte.clement@prestashop.com</a>
+<br><a href="mailto:charlotte.clement@prestashop.com">charlotte.clement@prestashop.com</a>

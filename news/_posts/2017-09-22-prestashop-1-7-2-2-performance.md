@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "About the 1.7.2.2 performance improvement"
-subtitle: ""
-date:   2015-06-22 18:29:47
+subtitle: "Straight from the horse's mouth"
+date:   2017-09-22 01:10:11
 authors: [ jocelynfournier ]
 icon: icon-row-setting
 tags:
- - 1.6
- - 1.6.1.x
+ - 1.7
+ - 1.7.2.x
  - performance
 ---
 

@@ -11,7 +11,7 @@ tags:
  - performance
 ---
 
-A small line might have gone unnoticed in the [PrestaShop 1.7.2.2 release announcemnet](http://build.prestashop.com/news/prestashop-1-7-2-2-maintenance-release/): "1.7 front-end should now be faster than 1.6’s for popular stores". What does it apply to, and how did we test for such performances? Here's how.
+A small line might have gone unnoticed in the [PrestaShop 1.7.2.2 release announcement](http://build.prestashop.com/news/prestashop-1-7-2-2-maintenance-release/): "1.7 front-end should now be faster than 1.6’s for popular stores". What does it apply to, and how did we test for such performances? Here's how.
 
 With the release of PrestaShop 1.7.2.2, we have tried to remove a few point of contention which were affecting badly overall PrestaShop performance:
 
@@ -147,4 +147,4 @@ The 1.7.2.2 performance improvement is really interesting at high concurrency, a
 
 To check if you have global specific price rules, just search in your database if you have any results with `id_product=0` in the `specific_price` table!
 
-
+(this article was originally [published on Softizy](https://www.softizy.com/blog/prestashop-1-7-performance/), website of Jocelyn, the author of this performance improvement)

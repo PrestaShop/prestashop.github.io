@@ -25,7 +25,7 @@ Let's check the specific price improvement!
 
 According to our internal software, `specificPrice()` computation was particularly slow, AND present across a lot of pages.
 
-Basically our software crawls a website, profiles each page it finds, then generates a global report. `specificPrice()` was listed in the top 5 most resource and time consuming operation, overall.`
+Basically our software crawls a website, profiles each page it finds, then generates a global report. `specificPrice()` was listed in the top 5 most resource and time consuming operation, overall.
 
 
 ### When can I expect improvements?
@@ -134,7 +134,7 @@ The benchmarks results are the average of 5 "`siege -i -b -t 20S`" (20 s benchma
 
 #### The result
 
-![Performance benchmark](/assets/images/2019/09/ps1722-performance.png)
+![Performance benchmark](/assets/images/2017/09/ps1722-performance.png)
 
 With this shop with few specific prices in the database, the gain is interesting. Even at low concurrency, the improved local cache reduces the number of SQL queries, and allows 1.7 to have the same level of performances than 1.6.1.
 

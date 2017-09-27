@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Do you speak PrestaShop? – August 2017 edition"
-subtitle: "BLABLABLA"
+subtitle: "Where you'll learn that 1.7 is fully translated in 17 languages"
 date:   2017-09-27 06:09:47
 authors: [ alexeven ]
 icon: icon-world
@@ -16,13 +16,14 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 
 ### Get ready for version 1.7.3.0
+
 We're currently working on version 1.7.3, which is planned for October. That means an update of the content source on Crowdin, and possibly new strings to be translated in October. We'll let you know when it's ready for you to translate!
 
 ### 1.6 Validation
+
 There are some translations for version 1.6 awaiting validation. While we don't have enough proofreaders to validate all this content, we've decided to automatically validate what's left in 1.6. That way all the translations for 1.6 will be available in the software.
 If there are mistakes in this content, making it available in the software will probably help bring more translators and proofreaders to the project - at least that's what we hope ;)
-And if you're interested in proofreading PrestaShop translations, <a href="mailto:translation@prestashop.com?subject=Proofreading%PrestaShop%Translations">do get in touch with us</a>!
-
+And if you're interested in proofreading PrestaShop translations, <a href="mailto:translation@prestashop.com?subject=Proofreading%20PrestaShop%20Translations">do get in touch with us</a>!
 
 
 ## A few stats
@@ -123,13 +124,9 @@ At the end of August 2017, some languages would still benefit from some proofrea
 * **Spanish, Mexico** (52% vs 32% in 1.7).
 * **Galician** (66% vs 47% in 1.7).
 
-
-
 ![Languages that need proofreading](/assets/images/2017/08/Build_Crowdin_proofreading_August17.png)
 
-Again, these figures are mostly for 1.7, but 1.6 needs some proofreading too :)
-
-If you wish to help to proofread what has been translated, please <a href="mailto:translation@prestashop.com?subject=Proofreading%PrestaShop%Translations">contact us</a> with the language you'd like to proofread. We need your help!
+If you wish to help to proofread what has been translated, please <a href="mailto:translation@prestashop.com?subject=Proofreading20PrestaShop20Translations">contact us</a> with the language you'd like to proofread. We need your help!
 
 If you haven't joined us on Crowdin yet, [it's never too late](https://crowdin.com/project/prestashop-official)!
 

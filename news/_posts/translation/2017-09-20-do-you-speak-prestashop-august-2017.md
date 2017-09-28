@@ -104,7 +104,7 @@ In comparison with July 2017, the following languages had the best progress than
 * **Spanish, Mexico** (+3% to reach 52% translated in 1.7)
 * **Lithuanian** (+3% to reach 100% translated in 1.7)
 
-![Best translation progress for August 2017](/assets/images/2017/08/Build_Crowdin_progress_August17.png)
+![Best translation progress for August 2017](/assets/images/2017/09/Build_Crowdin_progress_Aug17.png)
 
 Thanks to all the contributors!
 
@@ -124,7 +124,7 @@ At the end of August 2017, some languages would still benefit from some proofrea
 * **Spanish, Mexico** (52% vs 32% in 1.7).
 * **Galician** (66% vs 47% in 1.7).
 
-![Languages that need proofreading](/assets/images/2017/08/Build_Crowdin_proofreading_August17.png)
+![Languages that need proofreading](/assets/images/2017/09/Build_Crowdin_proofreading_Aug17.png)
 
 If you wish to help to proofread what has been translated, please <a href="mailto:translation@prestashop.com?subject=Proofreading20PrestaShop20Translations">contact us</a> with the language you'd like to proofread. We need your help!
 

@@ -17,7 +17,7 @@ Our release calendar for the next versions of PrestaShop 1.7 and 1.6.
 
 ## Summary
 
-In short: **we intend to release 4 minor versions of PrestaShop 1.7 every 3 to 4 months, and monthly [patch versions](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/#semwhat) for both 1.7 and 1.6**.
+In short: **we intend to release minor versions of PrestaShop 1.7 every 3 to 4 months, and monthly [patch versions](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/#semwhat) for both 1.7 and 1.6**.
 
 When, you ask? Here’s a handy table:
 

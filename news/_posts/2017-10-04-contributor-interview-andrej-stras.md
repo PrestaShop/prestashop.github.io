@@ -2,7 +2,7 @@
 layout: post
 title:  "Contributor interview: Andrej Staš"
 subtitle: "Discover the faces behind the commits"
-date:   2017-09-15 09:10:11
+date:   2017-10-04 09:10:11
 authors: [ xavierborderie ]
 icon: icon-leaf
 tags:

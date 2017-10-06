@@ -16,7 +16,7 @@ An Open Source community is more than just PR made by faceless strangers. In ord
 **Hi Andrej! First, could you tell us a bit about yourself?**
 
 <img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="240" height="342" 
-src="/assets/images/2017/10/andrej-stras.png">Hi Xavier! I'm an IT freelancer working on several projects, and one of them is also Presta-theme-maker.com which has been running since 2012.
+src="/assets/images/2017/10/andrej-stras.png">Hi Xavier! I'm an IT freelancer working on several projects, and one of them is also PrestaBuilder.com which has been running since 2012.
 I also enjoy traveling, reading books, studying new languages and building a location independent business.
 
 

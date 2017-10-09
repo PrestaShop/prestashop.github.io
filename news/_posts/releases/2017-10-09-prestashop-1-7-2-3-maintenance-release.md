@@ -32,34 +32,34 @@ Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/
 
 - Back Office:
   - Improvement:
-    - [#7810](https://github.com/PrestaShop/PrestaShop/pull/#7810): Add a loading spinner into product page
+    - [#7810](https://github.com/PrestaShop/PrestaShop/pull/7810): Add a loading spinner into product page
   - Bug fix:
-    - [#7938](https://github.com/PrestaShop/PrestaShop/pull/#7938): Update bulk action combinations number after delete or add combination
-    - [#8232](https://github.com/PrestaShop/PrestaShop/pull/#8232): Fixed bug in AdminCartRulesController when limiting the validity …
-    - [#8287](https://github.com/PrestaShop/PrestaShop/pull/#8287): Fix the category search in the product page
-    - [#8288](https://github.com/PrestaShop/PrestaShop/pull/#8288): Fix displaying empty zip code of tax rule
-    - [#8346](https://github.com/PrestaShop/PrestaShop/pull/#8346): Fix the currency display in supply order
-    - [#8366](https://github.com/PrestaShop/PrestaShop/pull/#8366): Use default country instead of translator locale for marketplace API
+    - [#7938](https://github.com/PrestaShop/PrestaShop/pull/7938): Update bulk action combinations number after delete or add combination
+    - [#8232](https://github.com/PrestaShop/PrestaShop/pull/8232): Fixed bug in AdminCartRulesController when limiting the validity …
+    - [#8287](https://github.com/PrestaShop/PrestaShop/pull/8287): Fix the category search in the product page
+    - [#8288](https://github.com/PrestaShop/PrestaShop/pull/8288): Fix displaying empty zip code of tax rule
+    - [#8346](https://github.com/PrestaShop/PrestaShop/pull/8346): Fix the currency display in supply order
+    - [#8366](https://github.com/PrestaShop/PrestaShop/pull/8366): Use default country instead of translator locale for marketplace API
 
 - Front Office:
   - Bug fix:
-    - [#7781](https://github.com/PrestaShop/PrestaShop/pull/#7781): Add error message when updating quantity wanted input
-    - [#7848](https://github.com/PrestaShop/PrestaShop/pull/#7848): Fix switching combination when the product is offline
-    - [#8283](https://github.com/PrestaShop/PrestaShop/pull/#8283): Currency exchange fixes on product page
+    - [#7781](https://github.com/PrestaShop/PrestaShop/pull/7781): Add error message when updating quantity wanted input
+    - [#7848](https://github.com/PrestaShop/PrestaShop/pull/7848): Fix switching combination when the product is offline
+    - [#8283](https://github.com/PrestaShop/PrestaShop/pull/8283): Currency exchange fixes on product page
 
 - Core:
   - Improvement:
-    - [#8360](https://github.com/PrestaShop/PrestaShop/pull/#8360): Fixing the version for core modules ps_legalcompliance ps_linklist ps_customtext ps_customeraccountlinks
+    - [#8360](https://github.com/PrestaShop/PrestaShop/pull/8360): Fixing the version for core modules ps_legalcompliance ps_linklist ps_customtext ps_customeraccountlinks
   - Bug fix:
-    - [#8213](https://github.com/PrestaShop/PrestaShop/pull/#8213): Voucher issue fix
-    - [#8298](https://github.com/PrestaShop/PrestaShop/pull/#8298): Add context mocker for front controller tests 
-    - [#8320](https://github.com/PrestaShop/PrestaShop/pull/#8320): Fix again issue on Travis with window maximization (1.7.2.x)
-    - [#8361](https://github.com/PrestaShop/PrestaShop/pull/#8361): Fix conflict between two cart rules and a single product cart
-    - [#8380](https://github.com/PrestaShop/PrestaShop/pull/#8380): Fix Context::getTranslator() cache
+    - [#8213](https://github.com/PrestaShop/PrestaShop/pull/8213): Voucher issue fix
+    - [#8298](https://github.com/PrestaShop/PrestaShop/pull/8298): Add context mocker for front controller tests 
+    - [#8320](https://github.com/PrestaShop/PrestaShop/pull/8320): Fix again issue on Travis with window maximization (1.7.2.x)
+    - [#8361](https://github.com/PrestaShop/PrestaShop/pull/8361): Fix conflict between two cart rules and a single product cart
+    - [#8380](https://github.com/PrestaShop/PrestaShop/pull/8380): Fix Context::getTranslator() cache
 
 - Web Services:
   - Bug fix:
-    - [#8275](https://github.com/PrestaShop/PrestaShop/pull/#8275): Fix update product with WS
+    - [#8275](https://github.com/PrestaShop/PrestaShop/pull/8275): Fix update product with WS
 
 Contributors to this patch version, from both the Core team and the community at large: @aleeks, @christianverardi, @eternoendless, @fatmabouchekoua, @hibatallahaouadni, @prestaworks, @quetzacoalt91, @rgaillard, @tomlev, and @toutantic! Thank you!
 

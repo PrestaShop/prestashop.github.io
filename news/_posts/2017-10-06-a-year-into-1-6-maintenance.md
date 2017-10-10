@@ -12,13 +12,13 @@ tags:
  - gardening
 ---
 
-A year ago, we released PrestaShop 1.7.0.0, and put version 1.6 in maintenance mode. The plan is to maintain it for two years, with regular patch releases. Approaching the one-year mark, time to for a review!
+A year ago, we released PrestaShop 1.7.0.0, and put version 1.6 in maintenance mode. The plan is to maintain it for two years, with regular patch releases. Approaching the one-year mark, time for a review!
 
-So, first things first: we are of course as committed as ever to support version 1.6 until October 2018. As you know, we have kept our promise: A dedicated team of developers has been assigned to process 1.6 tickets one by one: testing, fixing, releasing. Thanks to this effort and the contribution of community members, **we've been able to release 9 patch versions in 11 months**.
+So, first things first: we are of course as committed as ever to support version 1.6 until October 2018. As you know, we are keeping our promise: A dedicated team of developers has been assigned to process 1.6 tickets one by one: testing, fixing, releasing. Thanks to this effort and the contribution of community members, **we've been able to release 9 patch versions in 11 months**.
 
-Since November 7th, 2016, the PrestaShop 1.6 team has handled around 1,400 Forge tickets and more than 210 GitHub pull requests, and we want to keep this pace: reproducing issues, fixing them and testing those fixes for the tens of thousands of store which still use this version.
+Since November 7th, 2016, the PrestaShop 1.6 team has handled around 1,400 Forge tickets and more than 210 GitHub pull requests, and we want to keep this pace: reproducing issues, fixing them and testing those fixes for the tens of thousands of stores which use this version.
 
-October 2017 marks the middle of the official maintenance period: a time to reflect on what has been done so far, and to set up processes the coming year. The idea is to understand what can be done in the timeframe, and together, to prepare for the end of maintenance of version 1.6.
+October 2017 marks the middle of the official maintenance period: a time to reflect on what has been done so far, and to set up processes for the coming year. The idea is to understand what can be done in the timeframe, and together, to prepare for the end of maintenance of version 1.6.
 
 
 ### Our plan for the remaining 1.6 Forge tickets
@@ -31,12 +31,12 @@ In order to focus our maintenance effort on bugs that are still relevant, we are
 
 We’ve been doing a ton of digging through the Forge over the past months, and we're confident that a lot of tickets can be retired as obsolete or non-reproducible. 
 
-Of course, the best person to act on your old tickets is you! Read on!
+Of course, the best person to act on your tickets is you! Read on!
 
 
 ### You can help!
 
-This is where you enter the story. As you know, PrestaShop is Open Source, and enjoy it when the community contributes to its success. This can happen through many channels, starting with Forge tickets and GitHub pull requests.
+This is where you enter the story. As you know, PrestaShop is Open Source, and succeeds thanks to the community. You can contribute through many channels, starting with Forge tickets and GitHub pull requests.
 
 
 #### Update your tickets!

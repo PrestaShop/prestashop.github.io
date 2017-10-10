@@ -63,5 +63,5 @@ Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/
 
 Contributors to this patch version, from both the Core team and the community at large: @aleeks, @christianverardi, @eternoendless, @fatmabouchekoua, @hibatallahaouadni, @prestaworks, @quetzacoalt91, @rgaillard, @tomlev, and @toutantic! Thank you!
 
-Since version 1.7.2.3 is a "patch" update to version 1.7.2.2, upgrading from any 1.7.2 version will be easy: features will work better, and modules & themes which worked fine on 1.7.2.0 will work just as well with 1.7.2.1.<br/>
+Since version 1.7.2.3 is a "patch" update to version 1.7.2.2, upgrading from any 1.7.2 version will be easy: features will work better, and modules & themes which worked fine on 1.7.2.0 will work just as well with 1.7.2.3.<br/>
 Upgrades from a standard 1.7.x version should work just as well, and those upgrading from older versions (1.6, 1.5, 1.4 or even older) should take their time and pay attention to their modules, their theme and their custom modifications!

@@ -18,13 +18,14 @@ PrestaShop 1.7.2.4 is now available. This is <b>security release</b> for all pre
 
 It was [recently reported](http://forge.prestashop.com/browse/BOOM-3953) to the Core team that the PrestaShop front office leaked some sensible cart product details, among which wholesale and supplier.
 
-The issue was introduced by a PR merged in February 2017. Therefore, the issue impacts versions 1.7.1.0 to 1.7.2.3 of PrestaShop.<br/>
-If you are currently using PrestaShop 1.7, we strongly advise you to upgrade to v1.7.2.4 immediately!
+The issue was introduced by a PR merged in February 2017. Therefore, the issue impacts versions 1.7.1.0 to 1.7.2.3 of PrestaShop.
+
+If you are currently using PrestaShop 1.7, <b>we strongly advise you to upgrade to v1.7.2.4 immediately</b>!
 
 [Download PrestaShop 1.7.2.4 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
 
-Thank you [the Befox.fr team](http://befox.fr/) for reporting the issue, and to Core members @eternoendless and @kompilorb for tracing it and fixing it.
+Thank you [the Befox.fr team](http://befox.fr/) and @paeddl for reporting the issue and suggesting wordarounds, and to Core members @eternoendless and @kompilorb for tracing down the issue and fixing it.
 
 
 ### A reminder on responsible disclosure

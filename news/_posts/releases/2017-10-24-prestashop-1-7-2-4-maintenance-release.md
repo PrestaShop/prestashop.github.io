@@ -20,7 +20,7 @@ It was recently reported to the Core team that the PrestaShop front office leake
 
 The issue was introduced by a PR merged in February 2017. Therefore, the issue impacts versions 1.7.1.0 to 1.7.2.3 of PrestaShop.
 
-The fixing changes can be found in Pr [#8433](https://github.com/PrestaShop/PrestaShop/pull/8433).
+The fixing changes can be found in PR [#8433](https://github.com/PrestaShop/PrestaShop/pull/8433).
 
 If you are currently using PrestaShop 1.7, <b>we strongly advise you to upgrade to v1.7.2.4 immediately</b>!
 

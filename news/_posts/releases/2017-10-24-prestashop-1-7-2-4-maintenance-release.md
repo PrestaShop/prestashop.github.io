@@ -14,7 +14,7 @@ tags:
  - 1.7
 ---
 
-PrestaShop 1.7.2.4 is now available. This is <b>security release</b> for all previous versions of PrestaShop 1.7.
+PrestaShop 1.7.2.4 is now available. This is a <b>security release</b> for all previous versions of PrestaShop 1.7.
 
 It was recently reported to the Core team that the PrestaShop front office leaked some sensitive cart product details, among which wholesale and supplier.
 

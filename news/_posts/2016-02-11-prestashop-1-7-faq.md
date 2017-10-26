@@ -411,7 +411,7 @@ For a taste of real-life usage, we advise you to dive into the code of this 1.7-
   <li>1.6 (2016-09-28):
     <ul>
       <li>Updated most version references to RC3. Yup, forgot to update the FAQ for RC1 and RC2, sorry! :/</li>
-      <li>Updated the "When is version 1.7.0.0 going to be released?" question with URL to [developer & designer documentation](http://developers.prestashop.com/).</li>
+      <li>Updated the "When is version 1.7.0.0 going to be released?" question with URL to <a href="http://developers.prestashop.com/">developer & designer documentation</a>.</li>
       <li>Updated the "Where is the 1.7 Designer documentation?", "Will 1.6 modules still work with PrestaShop 1.7?" and "Where is the 1.7 Developer documentation?" questions likewise.</li>
     </ul>
   </li>
@@ -426,5 +426,4 @@ For a taste of real-life usage, we advise you to dive into the code of this 1.7-
     </ul>
   </li>
 </ul>
-
 </div>

@@ -378,7 +378,7 @@ For a taste of real-life usage, we advise you to dive into the code of this 1.7-
   <li>1.3 (2016-05-12):
     <ul>
       <li>Alpha 4 publicly released! <a href="(http://build.prestashop.com/news/here-comes-prestashop-1-7-alpha-4/">Test it now</a>!</li>
-      <li>Added link to current draft of <a href="https://github.com/PrestaShop/docs">Designer documentation</a>.
+      <li>Added link to current draft of <a href="https://github.com/PrestaShop/docs">Designer documentation</a>.</li>
       <li>Added an automatic Table of Contents, at last!</li>
       <li>Made a bit of rewording, details and typo corrections here and there.</li>
     </ul>

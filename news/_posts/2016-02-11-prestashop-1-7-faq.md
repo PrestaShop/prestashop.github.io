@@ -399,7 +399,7 @@ For a taste of real-life usage, we advise you to dive into the code of this 1.7-
       <li>Added more details to the "Why Symfony 2 and not 3?" question.</li>
       <li>Added more details to the "Will the Starter Theme or the default theme use Bootstrap?" question.</li>
       <li>Added more details to the "What’s the story about a UI Kit?" question.</li>
-      <li>Added link to Build article in "Will 1.6 module still work with PrestaShop 1.7?" questions.
+      <li>Added link to Build article in "Will 1.6 module still work with PrestaShop 1.7?" questions.</li>
     </ul>
   </li>
   <li>1.5 (2016-09-02):

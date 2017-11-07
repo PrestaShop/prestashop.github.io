@@ -105,7 +105,7 @@ In comparison with August 2017, the following languages had the best progress th
 * **Korean** (+4% to reach 42% translated in 1.7)
 * **Japanese** (+3% to reach 92% translated in 1.7)
 
-![Best translation progress for September 2017](/assets/images/2017/09/Build_Crowdin_progress_September17.png)
+![Best translation progress for September 2017](/assets/images/2017/10/Build_Crowdin_progress_September17.png)
 
 Thanks to all the contributors!
 
@@ -125,7 +125,7 @@ At the end of September 2017, some languages would still benefit from some proof
 * **Spanish, Mexico** (52% vs 38% in 1.7).
 * **Catalan** (93% vs 80% in 1.7).
 
-![Languages that need proofreading](/assets/images/2017/09/Build_Crowdin_proofreading_September17.png)
+![Languages that need proofreading](/assets/images/2017/10/Build_Crowdin_proofreading_September17.png)
 
 If you wish to help to proofread what has been translated, please <a href="mailto:translation@prestashop.com?subject=Proofreading20PrestaShop20Translations">contact us</a> with the language you'd like to proofread. We need your help!
 

@@ -21,7 +21,7 @@ As some already know, Alexandra has left PrestaShop at the beginning of October.
 
 ### 1.7.3 is out for translation
 
-It has arrived, finally! We are now entering code and string freeze in order to pave the ground for a solid and reliable new minor version. It should be release in a month or so - we will let you know! Regarding the translation projects, it means new that strings cannot be added but also that the [1.7.3](https://crowdin.com/project/prestashop-official) has appeared, containing fresh strings ready to be translated and then approved by you all! A more detailed blog post will be published very soon, meanwhile you can start working on the 1.7.3 version. Yippie yeah! 
+It has arrived! We are now entering code and string freeze in order to pave the ground for a solid and reliable new minor version. It should be release in a month or so - we will let you know! Regarding the translation projects in Crowdin, it means that new strings cannot be added anymore, but also that the [1.7.3](https://crowdin.com/project/prestashop-official) has appeared, containing fresh strings ready to be translated and then approved by you all! A more detailed blog post will be published very soon, meanwhile you can start working on the 1.7.3 version. Yippie yeah! 
 
 
 ## A few stats

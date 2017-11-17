@@ -14,7 +14,7 @@ tags:
 Remember I told you about weird blue elephpants two weeks ago? You got it, it was our dream team of developers that attended the AFUP’s annual conference in Paris! As agreed, they came back with a lot to share on Build. Here, @tomlev will told you about Jean-François Lépine and the lecture he gave at the PHP Forum:
 
 
-## Faut-il faire du travail de qualité ?
+## Is it necessary to make quality work?
 
 “It was particularly stimulating because he put into words some intuitions you have when you've been doing web development for years.
 

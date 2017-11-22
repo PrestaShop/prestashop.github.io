@@ -9,10 +9,12 @@ tags:
  - team
 ---
 
-Dear readers, followers, developers, translators, PrestaShopers from all sides, it is time to lean over what will be next for Build! Launched in March 2015, we are now sprinting towards a third year of activity. As we write for you, through our communication on upcoming code updates, ongoing projects and developments, we would like to hear from you to keep the devblog alive altogether.
+Dear readers, followers, developers, translators, PrestaShopers from all sides, it is time to lean over what will be next for Build!
 
 
 ## Chatting about Build’s future
+
+Launched in March 2015, we are now sprinting towards a third year of activity. As we write for you, through our communication on upcoming code updates, ongoing projects and developments, we would like to hear from you to keep the devblog alive altogether.
 
 That's why we have prepared a survey in order to have a more accurate idea of what we could turn Build into. What should we focus on, improve, create or forget about? It is quick and clear, so take 5 minutes to answer 10 questions, help us to better know your needs and make Build the more convenient place to keep in touch!
 

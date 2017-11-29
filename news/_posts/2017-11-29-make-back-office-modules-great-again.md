@@ -36,7 +36,7 @@ The first new feature we would like to acquaint you with is the hooks debugger. 
 
 ![PrestaShop Hooks Debugger section](/assets/images/2017/11/hooks_debugger_section.png)
 
-At first look, in every modern page you can know which and how many times hooks have been called. If you access the section panel, you have access to many additional information:
+At first glance, in every modern page you can know which and how many times hooks have been called. If you access the section panel, you have access to many additional information:
 
 * modules and hooks arguments
 * called and uncalled (but available) hooks
@@ -59,7 +59,7 @@ One more feature in PrestaShop 1.7.3: we have introduced a system called **"modu
 
 PrestaShop 1.7.4 will use Symfony 3, therefore PHP 5.6 (or above) is required. Indeed, for security reason, we have decided to stop keeping up unmaintained PHP versions, so it is time to upgrade it - ideally to the latest version which is 7.1 at the moment.
 
-Moreover, there will be no broken compatibility in the PrestaShop (source?) code between version 1.7.3 and future 1.7.4. And Symfony 3 allows all the developers to work with a PHP framework maintained until at least 2022.
+Moreover, there will be no broken compatibility in the PrestaShop source code between version 1.7.3 and future 1.7.4. And Symfony 3 allows all the developers to work with a PHP framework maintained until at least 2022.
 
 We will keep on the back office migration to Symfony as we want to finish the Advanced Parameters section and improve our UI Kit. All the more since Bootstrap 4 is close to its stable release. We will also carry on with the amelioration of the module developer experience. For instance, we are already able to [display more information](https://github.com/PrestaShop/PrestaShop/pull/8557) about modules and hooks or in [our current templates](https://github.com/PrestaShop/PrestaShop/pull/8489) to simplify overriding.
 

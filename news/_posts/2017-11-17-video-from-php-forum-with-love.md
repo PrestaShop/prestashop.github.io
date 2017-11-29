@@ -3,7 +3,7 @@ layout: post
 title:  "Video: From PHP Forum with love"
 subtitle: "Because elephpants is not the only thing we brought back"
 date:   2017-11-17 09:00:00
-authors: [ LouiseBonnard ]
+authors: [ ThomasLeviandier, LouiseBonnard ]
 icon: icon-laptop
 tags:
  - development

@@ -3,7 +3,7 @@ layout: post
 title:  "Make modules on Back Office great again!"
 subtitle: "What is coming on 1.7.3 for module developers"
 date:   2017-11-29 09:10:11
-authors: [ mickaelandrieu ]
+authors: [ mandrieu ]
 icon: icon-blaster
 tags:
  - 1.7

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Make modules on Back Office great again!"
+title:  "Make modules on the back office great again!"
 subtitle: "What is coming on 1.7.3 for module developers"
 date:   2017-11-29 09:10:11
 authors: [ mandrieu ]
@@ -18,11 +18,12 @@ We have also started the migration of the back office with the framework Symfony
 
 But that is not all, the main reason is to allow the PrestaShop developers to use the Symfony ecosystem to make better, more powerful and maintainable modules while being able to evolve with the last features of PHP.
 
+
 ### Current situation of Back Office modules (pre 1.7.3)
 
 In the modern pages (migrated to Symfony 2) of the back office, PrestaShop developers can go on using hooks as usual. But the difference is that they are not allowed to override templates, forms or data returned by the controllers.
 
-In Product page, a specific hook called `hookDisplayAdminProductsExtra` can display all modules into a specific tab and we have added some hooks at bottom, middle and top positions of each tab. However, it's not easy to hook at a specific position into the forms to add or re-order fields, buttons or blocks of information.
+In the Product pages, the hook called `hookDisplayAdminProductsExtra` can display all modules into a specific tab. We have added some hooks at bottom, middle and top positions of each tab. However, it is not easy to hook at a specific position into the forms to add or re-order fields, buttons or blocks of information.
 
 Reviewing the actual hooks made us realize that they are not located at the right place (considering the new UX of this page) and that some of them are missing if we want to make basic additions. Like adding buttons to the menu.
 
@@ -30,17 +31,19 @@ Reviewing the actual hooks made us realize that they are not located at the righ
 
 Finally, and like in 1.6, it's still really difficult to know when, where and if a hook has been called, how many times and what are the modules hooked.
 
+
 ### PrestaShop 1.7.3, the module experience re-invented
 
 The first new feature we would like to acquaint you with is the hooks debugger. Migrated pages of the back office all grant access to the PrestaShop debug toolbar, now enriched with a "Hooks" section.
 
 ![PrestaShop Hooks Debugger section](/assets/images/2017/11/hooks_debugger_section.png)
 
-At first glance, in every modern page you can know which and how many times hooks have been called. If you access the section panel, you have access to many additional information:
+At first glance, you can spot in every modern page which hooks and how many times they have been called. If you access the section panel, you have access to many additional information:
 
 * modules and hooks arguments
 * called and uncalled (but available) hooks
 * which modules react to hooks (the order is respected)
+
 
 ![PrestaShop Hooks Debugger](/assets/images/2017/11/hooks_debugger.png)
 
@@ -51,9 +54,11 @@ So we have introduced two hooks in the Product Catalog page in order to ease con
 * `displayDashboardToolbarTopMenu` to add a new action to the top menu
 * `displayDashboardToolbarIcons` to add new icons to the Dashboard block (will be available in every Dashboard modern pages)
 
+
 ![New Hooks](/assets/images/2017/11/new_hooks.png)
 
 One more feature in PrestaShop 1.7.3: we have introduced a system called **"modules as bundle"** which lets the overrides of templates, services (classes), commands, forms, etc. used in the modern pages in your modules. We are still documenting this new system now but we can already tell you it will work the same way as it does with the front office theme templates.
+
 
 ### PrestaShop 1.7.4 and beyond?
 
@@ -65,4 +70,4 @@ We will keep on the back office migration to Symfony as we want to finish the Ad
 
 We are also working on new [form helpers](https://github.com/PrestaShop/PrestaShop/pull/8368) so that developers can use better the forms available in the modern pages. Like they were able to do in PrestaShop 1.6.
 
-And many, many others new features, stay tuned!
+And many, many other features are coming. Stay tuned!

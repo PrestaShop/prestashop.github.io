@@ -7,7 +7,7 @@ authors: [ mickaelandrieu ]
 icon: icon-blaster
 tags:
  - 1.7
- - 1.7.2.x
+ - 1.7.3.x
 ---
 
 Since the release of 1.7.0, we are working hard on improving the way the PrestaShop developers can customize and improve shops for their customers.
@@ -20,11 +20,13 @@ But it was not the main reason. The main reason is allowing every PrestaShop dev
 
 ### Current situation of Back Office modules (pre 1.7.3)
 
-In Back Office, for the modern pages (migrated to Symfony 2), PrestaShop developers can still use Hooks like in the old ways. But they are not allowed to override templates, forms or data returned by the controllers. This is forbidden by design, because we are removing the old `override` system.
+In Back Office, for the modern pages (migrated to Symfony 2), PrestaShop developers can still use Hooks like in the old ways. But they are not allowed to override templates, forms or data returned by the controllers.
 
-In Product page, we have introduced a specific a specific hook called `hookDisplayAdminProductsExtra` to display modules in a specific tab, but it's really painful to hook into the forms to add new fields, new buttons or new blocks of information.
+In Product page, a specific hook called `hookDisplayAdminProductsExtra` can display all modules into a specific tab and we have added some hooks at bottom, middle and top positions of each tab. However, it's not easy to hook at a specific position into the forms to add or re-order fields, buttons or blocks of information.
 
 Reviewing the actual hooks, they are not located wisely regarding the new UX of this page and some hooks are missing to make basic additions (like adding new buttons to menus for instance).
+
+![PrestaShop Hooks on Product Page](/assets/images/2017/11/product_page_hooks.png)
 
 Finally, and like in 1.6, it's still really difficult to know when, where and if a hook has been called, how many times and what are the modules hooked.
 
@@ -55,7 +57,7 @@ One more think with PrestaShop 1.7.3, the introduction of **"modules as bundle" 
 
 ### PrestaShop 1.7.4 and beyond?
 
-PrestaShop 1.7.4 will use Symfony 3 and will require PHP 5.6, we have decided to stop the maintenance of unmaintained PHP versions for security reason: it's time to upgrade PHP, ideally to the latest version (7.1 at this moment).
+PrestaShop 1.7.4 will use Symfony 3 and will require PHP 5.6 or above. We have decided to stop the support of unmaintained PHP versions for security reason: it's time to upgrade PHP, ideally to the latest version (7.1 at this moment).
 
 There is not broken compatibility in PrestaShop code between PrestaShop 1.7.3 and 1.7.4, and Symfony 3 will allow every developer to work with a PHP framework maintained until 2022.
 

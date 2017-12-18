@@ -18,7 +18,7 @@ The first beta version for PrestaShop 1.7.3.0 is now ready for you to test and g
 
 We said it earlier, many times. Now it is the right time to announce proudly that we are close to releasing 1.7.3.0. Features and improvements have found their way to the 1.7 codebase, we are thrilled to let you have a look at it and play with it before everyone else!
 
-However, note that it is a beta version, not a release candidate. Despite all the efforts we’ve been putting into this version these last months, it is not fully ready to be released. We are still debugging, improving, stabilizing it. And 4 tickets remain on the Forge :
+However, note that it is a beta version, not a release candidate. Despite all the efforts we’ve been putting into this version these last months, it is not fully ready to be released. **Mostly on issues related to the RTL, hence the fact it is not a release candidate. So don't panic if the RTL feature does not work properly. We are still debugging, improving, stabilizing it.** And 4 tickets remain on the Forge :
 
 [BOOM-4110](http://forge.prestashop.com/browse/BOOM-4110): Visual regressions on catalogue module page<br>[BOOM-4319](http://forge.prestashop.com/browse/BOOM-4319): RTL regressions<br>[BOOM-4480](http://forge.prestashop.com/browse/BOOM-4480): 1click upgrade from 1724 to 1730<br>[BOOM-4448](http://forge.prestashop.com/browse/BOOM-4448): BO - Page figée à la désinstallation d'un module
 

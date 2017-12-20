@@ -9,7 +9,9 @@ tags:
  - team
 ---
 
-Dear readers, followers, developers, translators, PrestaShopers from all sides, we call for your opinion about the devblog, you answered, thank you so much! We must admit that we were quite eager for the results, as we know Build needs to evolved and be improved. Since we are convinced this change must come with you, as you are all the first involved in it, it seems important to us to ask for your opinion about it. Let's turn Build into a more custom-made devblog!
+Dear readers, followers, developers, translators, PrestaShopers from all sides, we call for your opinion about the devblog, you answered, thank you so much!
+
+We must admit that we were quite eager for the results, as we know Build needs to evolved and be improved. Since we are convinced this change must come with you, as you are all the first involved in it, it seems important to us to ask for your opinion about it. Let's turn Build into a more custom-made devblog!
 
 
 ## About you

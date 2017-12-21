@@ -34,10 +34,12 @@ What for? First thing to know: there is 57% chance you read this because you wan
 
 As for the future of Build, here are two clouds representing what kind of articles we need to keep and start, following the most used key words. First, the conclusion to draw is that we need to continue posting news about PRs merged, features we want to integrate in future releases. Roadmap is also one thing to maintain, and perhaps get clearer but we will see that later. In other words: what is the upcoming development for PrestaShop.
 
+Blog posts to keep on Build:
 ![Build Keep](/assets/images/2017/12/Word_Cloud_Build_Keep.png)
 
 Originally, the point was also to let the community express itself. Build was a way, accessible to anyone interested, to write about PrestaShop and how to develop the software. But this possibility slowly disappears and it happens that today, when the question was asked whether you would like to write on the devblog, answer was no, up to 72%! But this does not mean you do not have expectations...
 
+Blog posts to develop on Build:
 ![Build Start](/assets/images/2017/12/Word_Cloud_Build_Start.png)
 
 Among all the topics raised, the ones to focus on are **development, features, modules, translation, documentation, practices and roadmap**. In general, you look for precise and technical, sometimes shorter, information about the way you can use and develop PrestaShop. And about how our dev team is working, which is a very interesting subject we can easily emphasize.

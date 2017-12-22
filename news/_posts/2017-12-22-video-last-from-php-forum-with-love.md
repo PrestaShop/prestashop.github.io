@@ -16,7 +16,7 @@ Remember I told you about weird blue elephpants? You got it, it was our dream t
 
 ## Quality processes: the Symfony case
 
-"You may have heard about Nicolas Grekas, a core team member of the Symfony project and CTO of Blackfire. We had the chance to see him last October in Paris where he presented the quality process in Symfony. He talked about several subjects, all around the maintainability of this huge project.
+"You may have heard about Nicolas Grekas, a core team member of the Symfony project and CTO of [Blackfire](https://blackfire.io). We had the chance to see him last October in Paris where he presented the quality process in Symfony. He talked about several subjects, all around the maintainability of this huge project.
 
 We have already borrowed some good ideas from them, and this is why you have to fill a table when you submit a pull-request on the PrestaShop project. Without it, we could still receive new pull-requests “without description”, sometimes even with a non-explicit title. Quite hard to guess what the contributor wants to fix in this case, right?
 

@@ -11,7 +11,7 @@ tags:
  - video
 ---
 
-Remember I told you about weird blue elephpants? You got it, it was our dream team of developers that attended the AFUP’s annual conference in Paris! As agreed, they came back with a lot to share on Build. Here, @Quetzacoalt91 will told you about Nicolas Grekas and the lecture he gave at the PHP Forum:
+Remember I told you about weird blue elephants? You got it, it was our dream team of developers that attended the AFUP’s annual conference in Paris! As agreed, they came back with a lot to share on Build. Here, @Quetzacoalt91 will told you about Nicolas Grekas and the lecture he gave at the PHP Forum:
 
 
 ## Quality processes: the Symfony case

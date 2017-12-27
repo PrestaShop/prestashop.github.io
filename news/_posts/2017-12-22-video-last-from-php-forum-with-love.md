@@ -26,7 +26,7 @@ Anyway, several of the topics covered in this presentation were familiar to us. 
 
 Nicolas explained how they manage their dependencies (contributions & releases) in the main project. And that was really interesting! We learnt that we could keep an eye on the global activity using a single repository and then manage releases of each dependency using subtrees and read-only repositories.
 
-We have to admit that sometimes we miss the PRs you submit on the native modules, there always contains good ideas to reproduce somewhere else when it works. So if one day you see some improvement to bring in our module management, you will know this presentation was one of the reasons. :)
+We have to admit that sometimes we miss the PRs you submit on the native modules, but this dependency management introduction gave us some ideas to improve ours. So, if one day you see changes in the way we handle modules, you will know this presentation was our source of inspiration. :)
 
 
 ### Want to go further?

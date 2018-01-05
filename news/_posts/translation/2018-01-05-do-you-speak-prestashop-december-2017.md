@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Do you speak PrestaShop? – December 2017 edition"
-subtitle: "Where you'll learn that 77 languages are now available"
+subtitle: "Where you'll learn that 1.7 is fully translated in 19 languages"
 date:   2018-01-05 09:10:11
 authors: [ LouiseBonnard ]
 icon: icon-world

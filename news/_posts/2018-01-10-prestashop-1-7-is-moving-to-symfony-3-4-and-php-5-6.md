@@ -38,6 +38,6 @@ You also wonder why we did not jump directly to Symfony 4.0? Here are our answer
 
 ## What does it change?
 
-Of course, we recommend that you run your PrestaShop install on the latest version of PHP - 7.2 when writing this post.
+Of course, we recommend that you run your PrestaShop install on the latest version of PHP. PrestaShop 1.7.0 to 1.7.3 is compatible with PHP 7.1 and PrestaShop 1.7.4 [will be compatible with PHP 7.2](https://github.com/PrestaShop/PrestaShop/pull/8246).
 
 And for PrestaShop developers, Symfony 3.4 and PHP 5.6 means that now you can use all the new features from PHP 5.5 and 5.6: [generators](http://php.net/manual/en/language.generators.overview.php), [finally](http://php.net/manual/en/language.exceptions.php#language.exceptions.finally) in try catch block or [::class for class name resolution](http://php.net/manual/en/language.oop5.basic.php#language.oop5.basic.class.class) and more.

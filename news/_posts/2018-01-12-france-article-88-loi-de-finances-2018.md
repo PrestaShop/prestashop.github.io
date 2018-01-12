@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "[FR] Loi n°2017-1837 du 30 décembre 2017 de finances pour 2018"
+title:  "[FR] Loi n°2017-1837 du 30/12/2017 de finances pour 2018"
 subtitle: "Les nouvelles obligations en matière de logiciel et système de caisse"
 date:   2018-01-12 09:10:11
 authors: [ LouiseBonnard ]
 icon: icon-check
 ---
 
-Oui, l’e-commerce est concerné !
+Oui, l’e-commerce est concerné ! Dernier tour d'horizon de ce qui change pour les marchands :
 
 
 **NE SONT PAS CONCERNÉS :**

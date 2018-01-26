@@ -6,7 +6,7 @@ date:   2017-12-01 09:10:11
 authors: [ LouiseBonnard ]
 icon: icon-leaf
 tags:
- - development
+ - translation
  - community
 ---
 

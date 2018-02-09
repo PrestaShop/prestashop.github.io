@@ -21,8 +21,10 @@ Now, some of you may be wondering: “Integration Fund? Never heard of it!”. S
 
 <img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="400" height="1000" src="/assets/images/2018/02/Build_Integration_Fund_Infographic.png" />
 
-
-Feeling lazy? Don't want to go through those old articles? We've got you covered, here's a little reminder of what it is all about:
+<br>
+<br>
+<br>
+<br>Feeling lazy? Don't want to go through those old articles? We've got you covered, here's a little reminder of what it is all about:
 
 
 <br>The Integration Fund is your chance to make your local ecommerce community flourish and to do something meaningful for your local emerchants while earning money.
@@ -44,9 +46,6 @@ Feeling lazy? Don't want to go through those old articles? We've got you covered
 
 
 <br>And your local PrestaShop community still needs you!
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>

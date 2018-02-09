@@ -54,15 +54,17 @@ Here is a bird's eye view of what we want the next minor versions to be:
   * Patch versions:
     * [1.7.2.1 on August 16th](http://build.prestashop.com/news/prestashop-1-7-2-1-maintenance-release/).
     * [1.7.2.2 on August 31st](http://build.prestashop.com/news/prestashop-1-7-2-2-maintenance-release/).
+    * [1.7.2.3 on October 9th](http://build.prestashop.com/news/prestashop-1-7-2-3-maintenance-release/).
+    * [1.7.2.4 on October 24th](http://build.prestashop.com/news/prestashop-1-7-2-4-maintenance-release/).
 
 * 1.7.3.0:
-  * Should be released in <strike>September</strike> October 2017.
+  * Should be released in <strike>September 2017</strike> February 2018.
   * Main changes:
     * Focus on internationalization.
     * More to come!
 
 * 1.7.4.0:
-  * Should be released in <strike>December 2017</strike> January 2018.
+  * Should be released in <strike>December 2017</strike> May 2018.
   * Main changes still to be determined.
   
 PrestaShop 1.7 will also receive monthly "patch" (bugfix) releases in-between minor releases.

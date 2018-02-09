@@ -44,11 +44,11 @@ Feeling lazy? Don't want to go through those old articles? We've got you covered
 
 
 <br>And your local PrestaShop community still needs you!
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>There still are a lot of countries without the local modules available for the merchants to develop their stores.
 
 In our TOP 40 of countries per number of stores for example, 18 of them are missing the local Shipping, Marketplace integration and Payment modules.

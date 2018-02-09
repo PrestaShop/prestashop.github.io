@@ -23,7 +23,6 @@ Now, some of you may be wondering: “Integration Fund? Never heard of it!”. S
 
 <br>
 <br>
-<br>
 <br>Feeling lazy? Don't want to go through those old articles? We've got you covered, here's a little reminder of what it is all about:
 
 

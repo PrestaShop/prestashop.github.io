@@ -49,6 +49,7 @@ Feeling lazy? Don't want to go through those old articles? We've got you covered
 <br>
 <br>
 <br>
+<br>
 <br>There still are a lot of countries without the local modules available for the merchants to develop their stores.
 
 In our TOP 40 of countries per number of stores for example, 18 of them are missing the local Shipping, Marketplace integration and Payment modules.
@@ -64,7 +65,6 @@ And think about the other countries too! Here are in orange all the countries mi
 **So what are you waiting for? You have an idea of module for your country?**
 Whether you have already worked with the Fund or not doesn't matter.
 **Start an application to the [Integration Fund](https://addons.prestashop.com/en/integration-fund) now!**
-
 
 **And there’s more:**
 In order for you to know all the best tips and information regarding ecommerce and what's to come, we are launching **a new column** here in the devblog.

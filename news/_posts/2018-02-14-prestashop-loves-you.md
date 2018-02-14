@@ -10,8 +10,6 @@ tags:
  - contribution
 ---
 
-PrestaShop loves you! <3
-
 
 Obviously. We met in 2007, united by two passions: e-commerce and open source. We got to know each other, shared some laughs, often dreamt together—with some groans thrown in—while continuing to love each other. Together, we created with the goal of meeting the e-commerce needs of each country.
 
@@ -32,7 +30,7 @@ Let us continue together to make PrestaShop successful and prosperous by contrib
 - … and <span style="color:pink">**check out our interactive graphics**</span> by listening to the [**Valentine’s Day special playlist**](https://play.soundsgood.co/playlist/love-and-happiness-from-prestashop) we’ve concocted for you with the Ambassadors to tell you how much we love you!
 
 
-![PrestaShop Loves You](/assets/images/2018/02/Infographic_Saint_Valentine_Day_EN.jpg)
-
-
 The entire PrestaShop Team
+
+
+![PrestaShop Loves You](/assets/images/2018/02/Infographic_Saint_Valentine_Day_EN.jpg)

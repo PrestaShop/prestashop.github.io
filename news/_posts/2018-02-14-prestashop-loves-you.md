@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PrestaShop Loves You! <3"
-subtitle: "Happy Saint Valentine's Day To The Best Community"
+subtitle: "Happy Valentine's Day To The Best Community"
 date:   2018-02-14 09:10:11
 authors: [ PrestaShop ]
 icon: icon-hearts-card
@@ -9,7 +9,6 @@ tags:
  - community
  - contribution
 ---
-
 
 Obviously. We met in 2007, united by two passions: e-commerce and open source. We got to know each other, shared some laughs, often dreamt together—with some groans thrown in—while continuing to love each other. Together, we created with the goal of meeting the e-commerce needs of each country.
 

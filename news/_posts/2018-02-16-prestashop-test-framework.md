@@ -18,8 +18,6 @@ Today we are proud to present you our new feature, the PrestaShop Test Framework
 
 This project is based on the famous feature-rich JavaScript test framework [Mocha](https://mochajs.org) running on [Node.js](https://nodejs.org/en) and making asynchronous testing. This new feature has been initially used by (and recently included in) Prestashop in order to improve the quality of regular implementations. And after some interesting modifications, we are proud to present the details below!
 
-For more technical information, have a look at the [documentation](---).
-
 
 ## Introduction to PrestaShop Testing Framework
 

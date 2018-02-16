@@ -10,9 +10,9 @@ tags:
  - development
 ---
 
-Last time our beloved Product Content Manager announced a new suite of functional tests to ensure our software quality.
+Last time we announced a new suite of functional tests to ensure our software quality, today we are proud to present you our new feature, the PrestaShop Test Framework!
 
-Today we are proud to present you our new feature, the PrestaShop Test Framework, a cool toolkit like a Swiss knife which will help to save a lot of time by running at least 50 automated functional tests on your browser... and this is only the beginning! It makes easier to create basic acceptance testing when adding Addons, submitting pull requests or making some customizations on your Prestashop.
+It is a cool toolkit like a Swiss knife which will help to save a lot of time by running at least 50 automated functional tests on your browser... and this is only the beginning! It makes easier to create basic acceptance testing when adding Addons, submitting pull requests or making some customizations on your Prestashop.
 
 *"So many ways... the only limit is your imagination"*
 

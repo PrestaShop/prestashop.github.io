@@ -70,8 +70,7 @@ If you want to run test only on specific parts (for example products), you have 
 
 ➜  `path=high/02_product npm run specific-test -- --URL=FrontOfficeURL`
 
-![PS Test Framework 1](/assets/images/2018/02/PS_Test_Framework_1.png)
-![PS Test Framework 2](/assets/images/2018/02/PS_Test_Framework_2.png)
+![PS Test Framework Examples](/assets/images/2018/02/PS_Test_Framework_Examples.png)
 
 
 ## Create a test

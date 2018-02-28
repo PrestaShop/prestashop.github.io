@@ -67,10 +67,9 @@ You can now make PrestaShop send you alerts when a product is low on stock. You 
 
 ### Import / Export in the Stock Overview page and low stock alerts
 
-![173 Stock Overview](/assets/images/2018/02/173_Stock_Import.png)
-
 Your shop, your data! Merchants are now able to import or export the information displayed in the Stock Overview page in a CSV file. Why? So that you can work on it with your computer, connect to your own stock managment system... you name it! You just need to click on the blue cloud icons on the right hand side of the screen and you'll be on your way to the import / export system.
 
+![173 Stock Overview](/assets/images/2018/02/173_Stock_Import.png)
 
 ### Bulk edition in stocks
  
@@ -108,7 +107,7 @@ A lot has been done to make this "minor" PrestaShop version a reality. Here's 1.
 * 203 pull requests
 * 56 committers
 
-PrestaShop 1.7.3 is above all community project. From the 56 committers that contributed to PrestaShop 1.7.3, 37 were community members – that's 2 out of 3 commiters!
+PrestaShop 1.7.3 is above all community project. From the 56 committers that contributed to this release, 37 were community members – that's 2 out of 3 commiters!
 
 A huge "thank you!" to these 37 fine people: Adonis Karavokyros, Alexandr Simonchik, Alexandre Alouit, AliShareei, Antonio Intagliata, Aymeric Auberton, Christian Kubitza, Code Utopia, comxd, Cristiano Verardi, Daniel, Danoosh, dariusakafest, David, Dickriven Chellemboyee, FrancMunoz, Gabriel Arama, hadrich-hatem, iqit-commerce, Krystian Podemski, Mahdi Shad, Manfredi Petruso, Marcin Sągol, Marek Hanuš, MattLoyeD, maxime aknin, MDWeb, mehrshadz, Molka DJEMAL, nache, Presta Module, Šarūnas Jonušas, Shagshag, Tony BOTALLA, venditdevs, Yolandavdvegt and Yuri Blanc!
  

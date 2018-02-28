@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PrestaShop 1.7.3.0 is available!"
-subtitle: "Innovation is coming, with PrestaTrust and many more”
+subtitle: "Innovation is coming, with PrestaTrust and much more”
 date:   2018-02-28 09:10:11
 authors: [ PabloBorowicz, emmanuelfages, LouiseBonnard ]
 icon: icon-checked

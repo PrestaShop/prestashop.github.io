@@ -46,7 +46,7 @@ Here are the meain features of this (long-awaited) new minor version of PrestaSh
  
 ### Addons Connect + tips
 
-In this new version, the Addons Connect module now installed by default. It is a very important tool because keeping you Addons account connceted helps keeping all your shop's modules up-to-date. In addition, this module displays a weekly tip at the top left side of your back office dashboard. Your business is constantly evolving, and PrestaShop evolves alongside you!
+In this new version, the Addons Connect module now installed by default. It is a very important tool because keeping you Addons account connected helps keeping all your shop's modules up-to-date. In addition, this module displays a weekly tip at the top left side of your back office dashboard. Your business is constantly evolving, and PrestaShop evolves alongside you!
 
 ![173 Tips & Updates](/assets/images/2018/02/173_Tips_Updates.png)
 

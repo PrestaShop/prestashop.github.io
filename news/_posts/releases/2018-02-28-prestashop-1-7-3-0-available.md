@@ -73,7 +73,7 @@ Your shop, your data! Merchants are now able to import or export the information
 
 ### Bulk edition in stocks
  
-Another ncie new feature in PrestaShop 1.7.3 is that product stock information can now be updated in bulk instead of one by one. And it is very easy, all you have to do is check (in the left column) all the products you want to edit, enter the quantity to add or substract to the already available stock and confirm!
+Another new feature in PrestaShop 1.7.3 is that product stock information can now be updated in bulk instead of one by one. And it is very easy, all you have to do is check (in the left column) all the products you want to edit, enter the quantity to add or substract to the already available stock and confirm!
 
 
 ### Multiple features of the same type

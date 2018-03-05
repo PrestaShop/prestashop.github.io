@@ -17,14 +17,14 @@ Our release calendar for the next versions of PrestaShop 1.7 and 1.6.
 
 ## Summary
 
-In short: **we intend to release minor versions of PrestaShop 1.7 every 3 to 4 months, and every two months [patch versions](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/#semwhat) for both 1.7 and 1.6**.
+In short: **we intend to release minor versions of PrestaShop 1.7 every 3 to 4 months, and [patch versions](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/#semwhat) for both 1.7 and 1.6 as regularly as possible in-between minor releases**.
 
 When? When? When? Here’s a handy table to guide you:
 
 ![Prestashop 2018 release schedule](/assets/images/2018/03/Roadmap_2018.jpg)
 
 This table was updated on February 26th, 2018.<br/>
-Please note that all dates are estimated and hence subject to change.
+Please note that all dates are estimated, not fixed, and hence subject to change.
 
 For more information, stay connected, the more detailed announcement will be posted on the devblog next week.
 
@@ -56,8 +56,6 @@ Here is a bird's eye view of what we want the next minor versions to be:
   * Main changes:
     * Channel manager.
     * More to come!
-  
-PrestaShop 1.7 will also receive monthly "patch" (bugfix) releases in-between minor releases.
 
 
 ## Version 1.6 roadmap
@@ -66,4 +64,4 @@ PrestaShop 1.6 has entered maintenance mode since the release of PrestaShop 1.7,
 
 We plan on keeping supporting version 1.6 until October 2018 - two years after the release of version 1.7.0.0.
 
-We want to release "patch" releases every two months until then, to fix the bugs reported by the community.
+We want to release "patch" releases regularly until then, to fix the bugs reported by the community.

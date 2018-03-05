@@ -62,8 +62,8 @@ PrestaShop 1.7 will also receive monthly "patch" (bugfix) releases in-between mi
 
 ## Version 1.6 roadmap
 
-PrestaShop has entered maintenance mode since the release of PrestaShop 1.7, in November 2016. This means that no new feature will be added, nor any behavior change. Only bugfixes will happen.
+PrestaShop 1.6 has entered maintenance mode since the release of PrestaShop 1.7, in November 2016. This means that no new feature will be added, nor any behavior change. Only bugfixes will happen.
 
 We plan on keeping supporting version 1.6 until October 2018 - two years after the release of version 1.7.0.0.
 
-We want to release monthly "patch" releases until then, to fix the bugs reported by the community.
+We want to release "patch" releases every two months until then, to fix the bugs reported by the community.

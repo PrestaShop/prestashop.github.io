@@ -23,7 +23,7 @@ Regarding PrestaShop, we are quite strict on that status. A lot of messages were
 
 It is not about the amount of work, but its quality. A candidate is expected to write and translate correctly, pay attention to special characters, respect the project history, the ecommerce and marketing context, the harmonization, etc. If the translation work is huge, please be aware that proofreading is another big part, and different. 
 
-So the final word is: you’re more than welcome to help us having our ecommerce solution translated if/as long as you’re willing to have PrestaShop head to the right direction. ;-)
+So the final word is: you’re more than welcome to help us having an ecommerce solution translated as long as you’re willing to make PrestaShop go to the right direction. ;-)
 
 
 ## A few stats

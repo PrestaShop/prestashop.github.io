@@ -17,7 +17,7 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ### Utopian and the proofreading rights
 
-Utopian is a rewarding platform that allows contributors to open source projects to monetize their involvement. In short, to benefit from the rated quality of their dedication. And rules require now for the Crowdin translators to be proofreaders in order to have their contribution rewarded.
+[Utopian](https://utopian.io) is a rewarding platform that allows open source contributors to monetize their involvement. In short, to benefit from the rated quality of their dedication. And rules require now for the Crowdin translators to be proofreaders in order to have their contribution rewarded.
 
 Regarding PrestaShop, we are quite strict on that status. A lot of messages were sent to us to get this right but I'm afraid we cannot turn one candidate into a proofreader if he has not proved himself before as a great translator. Why? Because we are a professional company that hosts 270,000 stores around the world and, for that, we need an extremely serious and accurate translation.
 

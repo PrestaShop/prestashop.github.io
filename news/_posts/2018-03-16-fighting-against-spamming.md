@@ -6,23 +6,22 @@ date:   2018-03-16 09:10:11
 authors: [ LouiseBonnard ]
 icon: icon-shield
 tags:
- - translation
- - community
+ - news
 ---
- 
+
 Remember some Rocky fight scenes where Sylvester Stallone is beating the living daylights out of his opponents? Well, this is pretty close to the situation we are experiencing now, fighting against spammers.
- 
+
 We do hope you have not noticed because it would mean that this spamming wave spares you, how lucky! For the others, know that it happens because a stream of spammers is currently exploiting PrestaShop, among other platforms, to flood people under a mass of undesired emails.
- 
+
 In our case, the attacks take different ways to reach merchants. Here is the situation for both 1.6 and 1.7 versions.
- 
- 
+
+
 ## About the 1.6 version
- 
+
 ### How?
- 
+
 For merchants based on the 1.6 version, spammers are exploiting the native module “Send to a Friend” which allows customers to send a product link to a friend. They are also abusing the contact form, which sends a copy of the contact message to a user-entered email address.
- 
+
 ### Our answer
  
 First, we have decided to retire the “Send to a friend” module. This module has not been made available for 1.7, nor has it received updates in a long time. We believe the effort needed to protect this module from spammers far surpasses the value it provides for merchants.

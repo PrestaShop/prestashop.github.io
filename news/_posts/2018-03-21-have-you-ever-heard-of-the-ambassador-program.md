@@ -39,7 +39,7 @@ In return, **Ambassadors receive exclusive perks** including:
 
 - Gifts & materials: We’ll send you an Ambassador kit complete with marketing materials, templates and goodies that will make reaching out to your local Community easy and fun.
 
-- Privileged relationship with the PrestaShop Team: As a PrestaShop Ambassador, your submissions on the Forge & Github will receive priority review. You’ll also have access to the private Ambassador subforum.
+- Privileged relationship with the PrestaShop Team: As a PrestaShop Ambassador, your submissions on the Forge & GitHub will receive priority review. You’ll also have access to the private Ambassador subforum.
 
 We are always looking for motivated people who want to be part of the adventure with us, and, as an Ambassador, gather and strengthen our community.
 
@@ -47,7 +47,7 @@ We are always looking for motivated people who want to be part of the adventure 
 
 You can take part in a number of exciting and rewarding activities to develop your ecommerce skills and make an impact on your Community. Here are a few ideas:
 
-Inspire conversation and moderate your local Forum on PrestaShop.com
+Inspire conversation and moderate your local Forum on PrestaShop's website
 <br>Actively participate in discussions about PrestaShop and advocate for us on Social Networks or local websites such as StackOverflow, Quora, etc.
 <br>Provide local input on the software and its features
 <br>Run local tests on upcoming releases

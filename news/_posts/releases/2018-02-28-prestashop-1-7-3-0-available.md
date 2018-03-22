@@ -23,7 +23,7 @@ After six months of blood, sweat, and tears (okay, we’re just kidding), here i
 [Download PrestaShop 1.7.3.0 now!](https://download.prestashop.com/download/releases/prestashop_1.7.3.0.zip){: .btn .btn-lg .btn-success}
 {: .text-center}
 
-Innovation is a central feature of this release, with an exciting new project that places a new generation of security and technology at the center of PrestaShop: **PrestaTrust**, which will help in providing a more secure environment for module developers as well as merchants.
+Innovation is a central feature of this release, with an exciting new project that places a new generation of security and technology at the center of PrestaShop: [**PrestaTrust**](https://www.prestashop.com/en/prestatrust), which will help in providing a more secure environment for module developers as well as merchants.
 
 Another important feature is **RTL support**. PrestaShop is now friendly with languages written from right-to-left – which it is the case for a lot of shops! We are also moving forward with the Symfony migration with some exciting new features for module developers!
 
@@ -34,7 +34,7 @@ And we are only scratching the surface...
  
 Here are the meain features of this (long-awaited) new minor version of PrestaShop:
  
-- PrestaTrust, of which we talked about in [this post](http://build.prestashop.com/news/everything-you-always-wanted-to-know-about-prestatrust). This new feature authenticates the code of PrestaTrust-enabled modules and safely keeps track of license information in the blockchain.
+- [PrestaTrust](https://www.prestashop.com/en/prestatrust), of which we talked about in [this post](http://build.prestashop.com/news/everything-you-always-wanted-to-know-about-prestatrust). This new feature authenticates the code of PrestaTrust-enabled modules and safely keeps track of license information in the blockchain.
 
 - Right-To-Left (RTL) language support. Not only the back office and the Classic theme are now fully RTL compatible, but we are also introducing RTL stylesheet generation for front office themes. This means that any front office theme can now be automagically converted to be RTL-compatbile. This is extremely important for selling in countries who speak in RTL languages like Arabic, Hebrew or Persian.
 

@@ -38,7 +38,7 @@ Here is a bird's eye view of what we want the next minor versions to be:
     * Was effectively **[released on February 28th, 2018](http://build.prestashop.com/news/prestashop-1-7-3-0-available/)**.
   * Main changes:
     * RTL.
-    * PrestaTrust.
+    * [PrestaTrust](https://www.prestashop.com/en/prestatrust).
     * UI Kit.
     * New demo products.
 

@@ -88,11 +88,19 @@ public function hookActionFrontControllerAfterInit()
     // get list of all filters applied to client-side data
     $filters = $filterManager->getFilters();
     
-    // get list of filters applied to the cart object
+    // get list of all filters applied to the cart object
     $cartFilters = $filters['cart']->getFilters();
     
-    // add puffin_product_url to the product whitelist (remember to pass an array)
-    $cartFilters['products']->whitelist(['puffin_product_url']);
+    // get list of filters applied to each product inside the cart object
+    $productFilterQueue = $cartFilters['products']->getQueue();
+    
+    foreach ($productFilterQueue as $filter) {
+        // add puffin_product_url to the product whitelist
+        // note: whitelist() needs an array regardless of the number of elements to whitelist
+        if ($filter instanceof PrestaShop\PrestaShop\Core\Filter\FrontEndObject\ProductFilter) {
+            $filter->whitelist(array('puffin_product_url'));
+        }
+    }
 }
 ```
 
@@ -110,11 +118,18 @@ public function hookActionFrontControllerAfterInit()
     // get list of all filters applied to client-side data
     $filters = $filterManager->getFilters();
     
-    // get list of filters applied to the cart object
+    // get list of all filters applied to the cart object
     $cartFilters = $filters['cart']->getFilters();
     
-    // remove "price" from the product whitelist
-    $cartFilters['products']->removeFromWhitelist('price');
+    // get list of filters applied to each product inside the cart object
+    $productFilterQueue = $cartFilters['products']->getQueue();
+    
+    foreach ($productFilterQueue as $filter) {
+        // remove "price" from the product whitelist
+        if ($filter instanceof PrestaShop\PrestaShop\Core\Filter\FrontEndObject\ProductFilter) {
+            $filter->removeFromWhitelist('price');
+        }
+    }
 }
 ```
 
@@ -127,7 +142,7 @@ Just hook into `actionBuildFrontEndObject` and add `my_custom_data` to `$params`
 ```php
 public function hookActionBuildFrontEndObject(&$params) {
     // contains all the data in the prestashop object
-    $prestashopObject = $params['obj'];
+    $prestashopObject =& $params['obj'];
     
     // add custom data like this
     $prestashopObject['my_custom_data'] = 'foobar';

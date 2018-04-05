@@ -2,7 +2,7 @@
 layout: post
 title:  "Exposing data with confidence in PrestaShop 1.7"
 subtitle: "We are improving how data is exposed in the front office"
-date:   2018-04-04 09:10:11
+date:   2018-04-05 09:10:11
 authors: [ PabloBorowicz ]
 icon: icon-filter
 tags:

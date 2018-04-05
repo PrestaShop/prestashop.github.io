@@ -118,7 +118,7 @@ public function hookActionFrontControllerAfterInit()
 }
 ```
 
-##### Bonus: adding arbitrary data to the prestashop object
+##### Bonus: make new information available in the Front Office
 
 Let's say you want to add an element named `my_custom_data` to the `prestashop` object. It's super easy!
 

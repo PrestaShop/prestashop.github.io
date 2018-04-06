@@ -2,7 +2,7 @@
 layout: post
 title:  "Exposing data with confidence in PrestaShop 1.7"
 subtitle: "We are improving how data is exposed in the front office"
-date:   2018-04-05 09:10:11
+date:   2018-04-06 09:10:11
 authors: [ PabloBorowicz ]
 icon: icon-filter
 tags:
@@ -12,7 +12,7 @@ tags:
 
 During the last few months, we have received a lot of feedback from the community pointing out issues with how PrestaShop 1.7 makes shop data available in the front office.
 
-In this article, we'll see how PrestaShop 1.7.3.1 addresses this problem.
+In this article, we'll see how the upcoming PrestaShop 1.7.3.1 will address this problem.
 
 **TL;DR:** We have changed the way PrestaShop filters data going to the browser. If you didn't change your Models, this shouldn't impact you :)
 

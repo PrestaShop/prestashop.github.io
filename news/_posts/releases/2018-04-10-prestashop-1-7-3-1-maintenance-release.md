@@ -18,12 +18,10 @@ PrestaShop 1.7.3.1 is now available. This maintenance release fixes 17 issues re
 
 Some of the most notable fixes are:
 
-* Data sent to the front end are now filtered ([learn more](http://build.prestashop.com/news/exposing-data-with-confidence/))
-* General speed of the Back Office has been improved [#8780](https://github.com/PrestaShop/PrestaShop/pull/8780)
-* High numbers of product combinations can now be saved [BOOM-2950](http://forge.prestashop.com/browse/BOOM-2950)
-* Spam [BOOM-4288](http://forge.prestashop.com/browse/BOOM-4288)
-* Pack management [BOOM-4361](http://forge.prestashop.com/browse/BOOM-4361)
-
+* Data sent to the front end is now filtered ([learn more](http://build.prestashop.com/news/exposing-data-with-confidence/))
+* General speed of the Back Office has been greatly improved (up to 3x faster!) [#8780](https://github.com/PrestaShop/PrestaShop/pull/8780)
+* Improved Product page performance when there's a high number of product combinations [BOOM-2950](http://forge.prestashop.com/browse/BOOM-2950)
+* The stock quantity for packs is now correctly calculated [BOOM-4361](http://forge.prestashop.com/browse/BOOM-4361)
 
 [Download PrestaShop 1.7.3.1 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}

@@ -90,6 +90,24 @@ Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/
     - [#8891](https://github.com/PrestaShop/PrestaShop/pull/8891): Fix dezipper redirect
     - [#8858](https://github.com/PrestaShop/PrestaShop/pull/8858): Include docs when creating zip build
 
+- Tests:
+  - New feature:
+    - [#8812](https://github.com/PrestaShop/PrestaShop/pull/8812): Delete product
+    - [#8829](https://github.com/PrestaShop/PrestaShop/pull/8829): Add script for screenshot display on Travis
+  - Improvement:
+    - [#8881](https://github.com/PrestaShop/PrestaShop/pull/8881): Check the pagination of product in the Front Office
+    - [#8898](https://github.com/PrestaShop/PrestaShop/pull/8898): Check generated combinations table
+    - [#8903](https://github.com/PrestaShop/PrestaShop/pull/8903): Add some fixes to the script
+    - [#8813](https://github.com/PrestaShop/PrestaShop/pull/8813): Check the product discount in the Front Office
+    - [#8805](https://github.com/PrestaShop/PrestaShop/pull/8805): Reset module Welcome if the RESUME button does not exist
+    - [#8878](https://github.com/PrestaShop/PrestaShop/pull/8878): Check the appearance of tinymce field on the product page
+    - [#8854](https://github.com/PrestaShop/PrestaShop/pull/8854): Check the change of the default combination from the edition page
+    - [#8819](https://github.com/PrestaShop/PrestaShop/pull/8819): Fix sort product script
+    - [#8810](https://github.com/PrestaShop/PrestaShop/pull/8810): Check the total price in the shopping cart
+    - [#8815](https://github.com/PrestaShop/PrestaShop/pull/8815): Re-enable functional tests
+  - Bug fix:
+    - [#8842](https://github.com/PrestaShop/PrestaShop/pull/8842): Fixed Travis build (update Chrome browser version)
+    - [#8746](https://github.com/PrestaShop/PrestaShop/pull/8746): Make file copy on ModuleSelfConfiguration mockable
 
 Contributors to this patch version, from both the Core team and the community at large: @aleeks, @christianverardi, @eternoendless, @fatmabouchekoua, @hibatallahaouadni, @prestaworks, @quetzacoalt91, @rgaillard, @tomlev, and @toutantic! Thank you!
 

@@ -21,7 +21,6 @@ Some of the most notable fixes are:
 * Data sent to the front end are now filtered ([learn more](http://build.prestashop.com/news/exposing-data-with-confidence/))
 * General speed of the Back Office has been improved [#8780](https://github.com/PrestaShop/PrestaShop/pull/8780)
 * High numbers of product combinations can now be saved [BOOM-2950](http://forge.prestashop.com/browse/BOOM-2950)
-* Translations [BOOM-3712](http://forge.prestashop.com/browse/BOOM-3712) & [BOOM-4365](http://forge.prestashop.com/browse/BOOM-4365)
 * Spam [BOOM-4288](http://forge.prestashop.com/browse/BOOM-4288)
 * Pack management [BOOM-4361](http://forge.prestashop.com/browse/BOOM-4361)
 

@@ -62,7 +62,7 @@ Since June 2017, we are focusing on addressing long-standing, complicated issues
  
 In addition, we are now much more cautious about what we release. If we aren’t happy about the quality of a feature or fix, we just won’t release it until we are. Let’s say we are acting on the following logic: long-term vision, developing, testing and slowly moving from quantity to quality.
  
-With the product and the core teams reunited, we are about 20 people working on both 1.7 and 1.6 versions. Well, we’re aware that 20 people is obviously not enough but be sure we are fully dedicated to getting a clear and stable codebase while adding real improvements for all PrestaShop users. Also, [we are hiring](https://www.jobs.net/jobs/prestashop/en-gb/)!
+With the product and the core teams reunited, we are about 20 people working on both 1.7 and 1.6 versions. Well, we’re aware that 20 people is obviously not enough but be sure we are fully dedicated to getting a clear and stable codebase while adding real improvements for all PrestaShop users, with the help of the community. Also, [we are hiring](https://www.jobs.net/jobs/prestashop/en-gb/)!
 
 
 ## What's it gonna be?

@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop & GDPR"
 subtitle: "PrestaShop actions to help you comply with GDPR"
 date: 2018-04-16 16:00:00
-authors: [ AntoineThomas ]
+authors: [ ColineGinestet, AntoineThomas ]
 icon: icon-world
 tags:
  - release
@@ -11,9 +11,7 @@ tags:
  - 1.6
  - 1.7
 ---
- 
 
-## Introduction
 
 As you are probably already aware, in a few weeks (May 25th of this year) the new european law on personal data protection will come into effect.
 

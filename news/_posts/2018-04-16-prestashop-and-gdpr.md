@@ -43,7 +43,7 @@ The main requirements of this law include:
  </ul></li>
 </ul>
 
-For more information, you can read [our GDPR white paper here](https://www.prestashop.com/en/guides/gdpr-whitepaper).
+For more information, you can read our GDPR white paper [in english](https://www.prestashop.com/en/system/files/filedepot/9/gdpr_whitepaper_prestashop_en.pdf) or [in french](https://www.prestashop.com/en/system/files/filedepot/9/rgpd_whitepaper_prestashop.pdf).
 
 
 ## Who is concerned?

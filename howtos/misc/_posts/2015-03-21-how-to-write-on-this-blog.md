@@ -148,7 +148,7 @@ published: false
 ---
 {% endhighlight %}
 
-I assume you will understand what you are supposed to change. *Icon* can be [any icon from FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/).
+I assume you will understand what you are supposed to change. *Icon* can be [any icon from FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/). You can also find available icons on the [PrestaShop Icon Font Documentation](http://build.prestashop.com/prestashop-icon-font/documentation.html) page.
 
 <div class="alert alert-important" role="alert">
 <h4><i class='icon-fire'></i> Important</h4>
@@ -268,6 +268,8 @@ We use a simple FontAwesome plugin that lets you display any icon using the foll
 {% highlight html %}
 <i class="icon-store"></i>
 {% endhighlight %}
+
+You can find available icons on the [PrestaShop Icon Font Documentation](http://build.prestashop.com/prestashop-icon-font/documentation.html) page.
 
 
 ### Alerts

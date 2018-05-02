@@ -104,9 +104,9 @@ In comparison with January 2018, the following languages had the best progress t
 
 * **Latvian** (+58% to reach 81% approved in 1.7)
 * **Spanish, Venezuela** (+27% to reach 31% approved in 1.7)
-* **Finnish** (+23% to reach 23% approved in 1.7)
+* **Filipino** (+23% to reach 23% approved in 1.7)
 
-![Best translation progress for February 2018](/assets/images/2018/03/Build_Crowdin_progress_February18.png)
+![Best translation progress for February 2018](/assets/images/2018/05/Build_Crowdin_progress_February18.png)
 
 Thanks to all the contributors!
 
@@ -119,13 +119,13 @@ A translated string will not be available in PrestaShop as long as it is not val
 
 At the end of February 2018, some languages would still benefit from some proofreading:
 
-* **Finnish** (87% translated vs 23% validated in 1.7).
+* **Filipino** (87% translated vs 23% validated in 1.7).
 * **Chinese Simplified** (98% vs 47% in 1.7).
 * **Macedonian** (99% vs 61% in 1.7).
 * **Korean** (47% vs 22% in 1.7).
 * **Galician** (85% vs 61% in 1.7).
 
-![Languages that need proofreading](/assets/images/2018/03/Build_Crowdin_proofreading_February18.png)
+![Languages that need proofreading](/assets/images/2018/05/Build_Crowdin_proofreading_February18.png)
 
 If you wish to help to proofread what has been translated, please <a href="mailto:translation@prestashop.com?subject=Proofreading20PrestaShop20Translations">contact us</a> with the language you'd like to proofread. We need your help!
 

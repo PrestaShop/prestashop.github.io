@@ -97,11 +97,11 @@ For its part, PrestaShop 1.7.3 was fully available in **22 languages**!
 
 In comparison with December 2017, the following languages had the best progress thanks to the translation community:
 
-* **Finnish** (+72% to reach 74% translated in 1.7)
+* **Filipino** (+72% to reach 74% translated in 1.7)
 * **Latvian** (+43% to reach 69% translated in 1.7)
 * **Macedonian** (+38% to reach 99% translated in 1.7)
 
-![Best translation progress for January 2018](/assets/images/2018/02/Build_Crowdin_progress_January18.png)
+![Best translation progress for January 2018](/assets/images/2018/05/Build_Crowdin_progress_January18.png)
 
 Thanks to all the contributors!
 
@@ -115,13 +115,13 @@ The list has quite evolved over the last few months, meaning that a lot of proof
 
 At the end of January 2018, some languages would still benefit from some proofreading:
 
-* **Finnish** (65% translated vs 0% validated in 1.7).
+* **Filipino** (65% translated vs 0% validated in 1.7).
 * **Chinese Simplified** (98% vs 46% in 1.7).
 * **Latvian** (66% vs 24% in 1.7).
 * **Macedonian** (100% vs 61% in 1.7).
 * **Portuguese, Brazil** (100% vs 78% in 1.7).
 
-![Languages that need proofreading](/assets/images/2018/02/Build_Crowdin_proofreading_January18.png)
+![Languages that need proofreading](/assets/images/2018/05/Build_Crowdin_proofreading_January18.png)
 
 If you wish to help to proofread what has been translated, please <a href="mailto:translation@prestashop.com?subject=Proofreading20PrestaShop20Translations">contact us</a> with the language you'd like to proofread. We need your help!
 

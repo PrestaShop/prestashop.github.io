@@ -116,13 +116,13 @@ A translated string will not be available in PrestaShop as long as it is not val
 
 At the end of March 2018, some languages would still benefit from some proofreading:
 
-* **Finnish** (80% translated vs 27% validated in 1.7).
+* **Filipino** (80% translated vs 27% validated in 1.7).
 * **Chinese Simplified** (98% vs 47% in 1.7).
 * **Spanish, Venezuela** (62% vs 32% in 1.7).
 * **Korean** (54% vs 24% in 1.7).
 * **Galician** (86% vs 61% in 1.7).
 
-![Languages that need proofreading](/assets/images/2018/04/Build_Crowdin_proofreading_March18.png)
+![Languages that need proofreading](/assets/images/2018/05/Build_Crowdin_proofreading_March18.png)
 
 If you wish to help to proofread what has been translated, please <a href="mailto:translation@prestashop.com?subject=Proofreading20PrestaShop20Translations">contact us</a> with the language you'd like to proofread. We need your help!
 

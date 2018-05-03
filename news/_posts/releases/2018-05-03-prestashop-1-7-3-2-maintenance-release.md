@@ -26,7 +26,7 @@ Some of the most notable fixes are:
 [Download PrestaShop 1.7.3.2 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
 
-Here is the [complete list of changes]https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.7.3.2+is%3Amerged+):
+Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/milestone/39?closed=1):
 
 [#8849](https://github.com/PrestaShop/PrestaShop/pull/8849)
 

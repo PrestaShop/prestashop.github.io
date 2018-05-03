@@ -21,14 +21,13 @@ Some of the most notable fixes are:
 * Updating combinations wasn’t working with PHP < 7.1
 * Installing a Theme with PrestaTrust modules was failing
 * Various issues with product stock availability
+* The "Install_prestashop.html" file was not visible on some systems
 
 
 [Download PrestaShop 1.7.3.2 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/milestone/39?closed=1):
-
-[#8849](https://github.com/PrestaShop/PrestaShop/pull/8849)
 
 - Back Office:
   - Improvement:

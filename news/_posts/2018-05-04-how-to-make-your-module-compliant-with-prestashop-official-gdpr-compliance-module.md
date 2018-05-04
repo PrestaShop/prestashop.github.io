@@ -4,7 +4,7 @@ title:  "How to make your module compliant with PrestaShop’s Official GDPR Com
 subtitle: "Discover our module and get prepared!"
 date: 2018-05-04 12:30:00
 authors: [ PrestaShop ]
-icon: check
+icon: icon-check
 tags:
  - team
  - legal

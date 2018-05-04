@@ -4,7 +4,7 @@ title:  "PrestaShop is hiring"
 subtitle: "We have open positions for front-end and back-end developers"
 date: 2018-04-26 12:00:00
 authors: [ ChloeAllard ]
-icon: people-team
+icon: organisation
 tags:
  - team
 ---

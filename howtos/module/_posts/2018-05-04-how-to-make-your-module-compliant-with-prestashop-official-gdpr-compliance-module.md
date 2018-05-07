@@ -39,7 +39,7 @@ public function install()
     // register hook used by the module
     if (parent::install()
         && $this->registerHook('registerGDPRConsent')
-        && $this->registerHook('actionDeleteGDPRCustomer’)
+        && $this->registerHook('actionDeleteGDPRCustomer')
         && $this->registerHook('actionExportGDPRData')
 )
  {
@@ -139,7 +139,7 @@ Good thing is, if the checkbox is not checked, the form cannot be submitted!
 ```$customer``` could be either an array equivalent to the Customer Object or simply an email. Why? Some modules can save personal data that aren’t coming from a regular PrestaShop Customer. In such cases, we provide the user’s email so you can still delete the data.
 
 Once you have submitted your module and declared it is compliant with the law, our validation team:
-* Checks the presence of hooks necessary to plug your module to the official GRPD module;
+* Checks the presence of hooks necessary to plug your module to the official GDPR module;
 * Checks the hooks integrity, meaning checks that your code does not imply any PrestaShop data, but only data collected by your module.
 
 

@@ -14,6 +14,7 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
  
 ## Project news
 
+
 ### Almost 30
 
 We are slowly approaching the 30 fully completed projects. What an amazing job doing so far, be proud because you deserve it! Indeed, this daily joint effort allows us to make the community wider and closer to each need. We definitely passed the 25 available languages, for both 1.6 and 1.7 versions, so next step is naturally to reach 30. We are already the most international solution, compared to other softwares, and will stay as - business everywhere, without language barrier!

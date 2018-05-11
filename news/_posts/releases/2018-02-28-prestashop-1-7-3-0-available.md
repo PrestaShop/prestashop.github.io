@@ -32,13 +32,13 @@ And we are only scratching the surface...
 
 ## What's new?
  
-Here are the meain features of this (long-awaited) new minor version of PrestaShop:
+Here are the main features of this (long-awaited) new minor version of PrestaShop:
  
 - [PrestaTrust](https://www.prestashop.com/en/prestatrust), of which we talked about in [this post](http://build.prestashop.com/news/everything-you-always-wanted-to-know-about-prestatrust). This new feature authenticates the code of PrestaTrust-enabled modules and safely keeps track of license information in the blockchain.
 
-- Right-To-Left (RTL) language support. Not only the back office and the Classic theme are now fully RTL compatible, but we are also introducing RTL stylesheet generation for front office themes. This means that any front office theme can now be automagically converted to be RTL-compatbile. This is extremely important for selling in countries who speak in RTL languages like Arabic, Hebrew or Persian.
+- Right-To-Left (RTL) language support. Not only the back office and the Classic theme are now fully RTL compatible, but we are also introducing RTL stylesheet generation for front office themes. This means that any front office theme can now be automatically converted to be RTL-compatible. This is extremely important for selling in countries who speak in RTL languages like Arabic, Hebrew or Persian.
 
-- A new set of Demo products. A whole new set of demo products that give PrestaShop a modern face while being friendlier to people from more conservative cultures, and highlight lesser known features like product customization.
+- A new set of Demo products. A whole new set of demo products that give PrestaShop a modern face while being friendlier to people from more conservative cultures, and highlight lesser-known features like product customization.
 
 - UI Kit (available in Symfony pages), which was presented a while back in [this post](http://build.prestashop.com/news/PrestaShop-UI-Kit). A new graphic identity for the core... and modules, too! The UI kit brings a coherent set of reusable components that work the same across the back office, as well as Bootstrap 4 and jQuery 3.
 
@@ -46,19 +46,19 @@ Here are the meain features of this (long-awaited) new minor version of PrestaSh
  
 ### Addons Connect + tips
 
-In this new version, the Addons Connect module now installed by default. It is a very important tool because keeping you Addons account connected helps keeping all your shop's modules up-to-date. In addition, this module displays a weekly tip at the top left side of your back office dashboard. Your business is constantly evolving, and PrestaShop evolves alongside you!
+In this new version, the Addons Connect module now installed by default. It is a very important tool because keeping you Addons account connected helps to keep all your shop's modules up-to-date. In addition, this module displays a weekly tip at the top left side of your back office dashboard. Your business is constantly evolving, and PrestaShop evolves alongside you!
 
 ![173 Tips & Updates](/assets/images/2018/02/173_Tips_Updates.png)
 
 
 ### Shipping delivery times
  
-In order to be compliant with European laws, merchants now need to display the estimated delivery date of an item in the Product page. You  can either configure a default value for all products your shop, or a separate value for each product. In addition, you can specify a different estimated delivery time when a product is in stock and when it's out-of-stock with allowed backorders, as well as a custom availability label.
+In order to be compliant with European laws, merchants now need to display the estimated delivery date of an item on the Product page. You can either configure a default value for all products your shop, or a separate value for each product. In addition, you can specify a different estimated delivery time when a product is in stock and when it's out-of-stock with allowed backorders, as well as a custom availability label.
 
  
 ### Low stock alerts
  
-You can now make PrestaShop send you alerts when a product is low on stock. You can configure the low stock threshold as well as toggling the notification either globally in the Product Settings section or per product.
+You can now make PrestaShop send you alerts when a product is low in stock. You can configure the low stock threshold as well as toggling the notification either globally in the Product Settings section or per product.
 
 … which brings us to the next step! In the Stock Overview page, products with a quantity under the low stock level are now highlighted. A new quick filter has been added too, which allows you to quickly see products that low on stock by placing them at the top of the list.
 
@@ -67,13 +67,13 @@ You can now make PrestaShop send you alerts when a product is low on stock. You 
 
 ### Import / Export in the Stock Overview page and low stock alerts
 
-Your shop, your data! Merchants are now able to import or export the information displayed in the Stock Overview page in a CSV file. Why? So that you can work on it with your computer, connect to your own stock managment system... you name it! You just need to click on the blue cloud icons on the right hand side of the screen and you'll be on your way to the import / export system.
+Your shop, your data! Merchants are now able to import or export the information displayed in the Stock Overview page in a CSV file. Why? So that you can work on it with your computer, connect to your own stock management system... you name it! You just need to click on the blue cloud icons on the right-hand side of the screen and you'll be on your way to the import/export system.
 
 ![173 Stock Overview](/assets/images/2018/02/173_Stock_Import.png)
 
 ### Bulk edition in stocks
  
-Another new feature in PrestaShop 1.7.3 is that product stock information can now be updated in bulk instead of one by one. And it is very easy, all you have to do is check (in the left column) all the products you want to edit, enter the quantity to add or substract to the already available stock and confirm!
+Another new feature in PrestaShop 1.7.3 is that product stock information can now be updated in bulk instead of one by one. And it is very easy, all you have to do is check (in the left column) all the products you want to edit, enter the quantity to add or subtract to the already available stock and confirm!
 
 
 ### Multiple features of the same type
@@ -107,11 +107,11 @@ A lot has been done to make this "minor" PrestaShop version a reality. Here's 1.
 * 203 pull requests
 * 56 committers
 
-PrestaShop 1.7.3 is above all community project. From the 56 committers that contributed to this release, 37 were community members – that's 2 out of 3 commiters!
+PrestaShop 1.7.3 is above all community project. From the 56 committers that contributed to this release, 37 were community members – that's 2 out of 3 committers!
 
 A huge "thank you!" to these 37 fine people: Adonis Karavokyros, Alexandr Simonchik, Alexandre Alouit, AliShareei, Antonio Intagliata, Aymeric Auberton, Christian Kubitza, Code Utopia, comxd, Cristiano Verardi, Daniel, Danoosh, dariusakafest, David, Dickriven Chellemboyee, FrancMunoz, Gabriel Arama, hadrich-hatem, iqit-commerce, Krystian Podemski, Mahdi Shad, Manfredi Petruso, Marcin Sągol, Marek Hanuš, MattLoyeD, maxime aknin, MDWeb, mehrshadz, Molka DJEMAL, nache, Presta Module, Šarūnas Jonušas, Shagshag, Tony BOTALLA, venditdevs, Yolandavdvegt and Yuri Blanc!
  
-Thank you again for helping improve the life of more than 270,000 online merchants with ideas, improvements and fixes!
+Thank you again for helping improve the life of more than 270,000 online merchants with ideas, improvements, and fixes!
  
 Now go ahead and tell us what you think!
 

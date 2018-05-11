@@ -7,11 +7,11 @@ authors: [ LouiseBonnard ]
 icon: icon-world
 tags: [translation, i18n, l10n]
 ---
- 
+
 Contributing to PrestaShop is not only about the code, it's also about taking part in the [PrestaShop translation project](https://crowdin.com/project/prestashop-official)! This report tells you how the translations of the software evolved in April.
- 
+
 ![Crowdin Monthly banner](/assets/images/2017/04/DYSpeakPS.jpg)
- 
+
 ## Project news
 
 

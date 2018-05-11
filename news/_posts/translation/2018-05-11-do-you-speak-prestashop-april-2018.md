@@ -123,7 +123,7 @@ At the end of April 2018, some languages would still benefit from some proofread
  
 ![Languages that need proofreading](/assets/images/2018/05/Build_Crowdin_proofreading_April18.png)
  
-If you wish to help to proofread what has been translated, please <a href="mailto:translation@prestashop.com?subject=Proofreading20PrestaShop20Translations">contact us</a> with the language you'd like to proofread. We need your help!
+If you wish to help to proofread what has been translated, please contact us with the language you'd like to proofread: just send an email to translation@prestashop.com. We need your help! 
  
 If you haven't joined us on Crowdin yet, [it's never too late](https://crowdin.com/project/prestashop-official)!
  

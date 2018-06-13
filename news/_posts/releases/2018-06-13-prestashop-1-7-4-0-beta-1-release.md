@@ -82,7 +82,9 @@ PrestaShop 1.7.4 is available for download. Please read important informations a
 ### Download
 
 You can download PrestaShop 1.7.4-beta1 on GitHub:  
-https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.4.0-beta.1
+
+[Download PrestaShop 1.7.4.0 beta 1 now!](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.4.0-beta.1){: .btn .btn-lg .btn-success}
+{: .text-center}
 
 ### How to help us to finish the 1.7.4
 

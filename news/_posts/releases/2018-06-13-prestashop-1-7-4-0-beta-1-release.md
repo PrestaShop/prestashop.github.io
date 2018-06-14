@@ -70,7 +70,7 @@ PrestaShop 1.7.4 is available for download. Please read important informations a
  - [When B2B mode is enable, the “Outstanding” menu is not displayed](http://forge.prestashop.com/browse/BOOM-5700)
 
 **Updated dependencies:**
- - Symfony 2.8 ->  3.4
+ - Symfony 2.8 -> 3.4
  - PHP 5.4 -> 5.6
  - (BO) Bootstrap 4 beta 2 -> Bootstrap 4 final
  - [PrestaShop UI Kit](https://github.com/PrestaShop/prestashop-ui-kit) 1.0
@@ -79,35 +79,3 @@ PrestaShop 1.7.4 is available for download. Please read important informations a
  - [List of merged PRs](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Amerged+milestone%3A1.7.4.0+merged%3A%3C2018-06-08)
  - [List of Issues](http://forge.prestashop.com/issues/?filter=12811)
 
-### Download
-
-You can download PrestaShop 1.7.4-beta1 on GitHub:  
-
-[Download PrestaShop 1.7.4.0 beta 1 now!](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.4.0-beta.1){: .btn .btn-lg .btn-success}
-{: .text-center}
-
-### How to help us to finish the 1.7.4
-
-Your help will be very appreciated to finish the work on PrestaShop 1.7.4. Even if you are not a developer, your feedback has a lot of value.
-
-You can:
- - Install it and test it
- - [Report bugs on the forge](http://forge.prestashop.com)
- - To submit a bug fix, create a [pull request](https://github.com/PrestaShop/PrestaShop/compare)
- - If everything is working well, comment this article to tell us, and share on social networks, we also need this feedback ;-)
-
-### 1-click upgrade module 4.0 beta
-
-We have completely refactored the 1-click upgrade module. It’s better than ever, with automated tests, capability to upgrade your shop from previous versions, and gives out more detailed information in case of failure so we can keep improving it!
-
-In addition, we have published a detailed documentation on how to migrate an existing shop to the latest version of PrestaShop.
-
-The documentation:  
-http://devdocs.prestashop.com/1.7/basics/keeping_up-to-date/
-
-Improvements to the documentation are welcome! [Learn how to contribute](http://devdocs.prestashop.com/1.7/documentation/how/).
-
-The plugin:
- - [Download the beta on GitHub](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.0.0-beta.1)
-PRs are welcome on the [GitHub repository](https://github.com/PrestaShop/autoupgrade/)
- - [Report issues on the forge](http://forge.prestashop.com)

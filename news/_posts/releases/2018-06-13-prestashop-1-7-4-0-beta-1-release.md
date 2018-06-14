@@ -108,6 +108,7 @@ The documentation:
 Improvements to the documentation are welcome! [Learn how to contribute](https://devdocs.prestashop.com/1.7/documentation/how/).
 
 The plugin:
- - [Download the beta on GitHub](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.0.0-beta.1)
+ - Download the beta on GitHub: [https://github.com/PrestaShop/autoupgrade/releases/tag/v4.0.0-beta.1](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.0.0-beta.1)
+ 
 PRs are welcome on the [GitHub repository](https://github.com/PrestaShop/autoupgrade/)
  - [Report issues on the forge](http://forge.prestashop.com)

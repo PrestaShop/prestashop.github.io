@@ -36,24 +36,24 @@ PrestaShop 1.7.4 is available for download. Please read important informations a
     - Shop Parameters > Customer Settings
  - Added support for PHP 7.2
  - SEO improvements
-    - Add hreflang links for multilang pages #8652
+    - Add hreflang links for multilang pages [#8652](https://github.com/PrestaShop/PrestaShop/pull/8652)
     - Improved header tags in classic theme
  - New functional tests (end to end)
- - New switch component in symfony pages #8705
- - Refactored cart calculation, including automated tests #8411
+ - New switch component in symfony pages [#8705](https://github.com/PrestaShop/PrestaShop/pull/8705)
+ - Refactored cart calculation, including automated tests [#8411](https://github.com/PrestaShop/PrestaShop/pull/8411)
     - Improvements for developers
-    - Improved hook profiler (shows more data about hooks) #8557 and #8910
-    - Improved template structure for the BO Product page (easier to override) #8489
-    - ObjectModel structure can now be modified by modules #8853
-    - Modules can now add tabs in the menu of an existing page #8814
-    - Services exposed by modules can now be autoloaded using composer #8909
-    - New authorization system for symfony pages #9028
+    - Improved hook profiler (shows more data about hooks) [#8557](https://github.com/PrestaShop/PrestaShop/pull/8557) and [#8910](https://github.com/PrestaShop/PrestaShop/pull/8910)
+    - Improved template structure for the BO Product page (easier to override) [#8489](https://github.com/PrestaShop/PrestaShop/pull/8489)
+    - ObjectModel structure can now be modified by modules [#8853](https://github.com/PrestaShop/PrestaShop/pull/8853)
+    - Modules can now add tabs in the menu of an existing page [#8814](https://github.com/PrestaShop/PrestaShop/pull/8814)
+    - Services exposed by modules can now be autoloaded using composer [#8909](https://github.com/PrestaShop/PrestaShop/pull/8909)
+    - New authorization system for symfony pages [#9028](https://github.com/PrestaShop/PrestaShop/pull/9028)
  - New hooks
-    - displayDahboardToolbarTopMenu #8947
-    - displayAdminEndContent #8947
- - Greatly improved performance in BO and FO when a lot of categories are used #8896
+    - displayDahboardToolbarTopMenu [#8947](https://github.com/PrestaShop/PrestaShop/pull/8947)
+    - displayAdminEndContent [#8947](https://github.com/PrestaShop/PrestaShop/pull/8947)
+ - Greatly improved performance in BO and FO when a lot of categories are used [#8896](https://github.com/PrestaShop/PrestaShop/pull/8896)
  - New font for Farsi language
- - Fixed broken install in Greek #9052
+ - Fixed broken install in Greek [#9052](https://github.com/PrestaShop/PrestaShop/pull/9052)
 
 **Todo:**
  - Check possible regression with RTL in BO
@@ -70,7 +70,7 @@ PrestaShop 1.7.4 is available for download. Please read important informations a
  - [When B2B mode is enable, the “Outstanding” menu is not displayed](http://forge.prestashop.com/browse/BOOM-5700)
 
 **Updated dependencies:**
- - Symfony 2.8 ->  3.4
+ - Symfony 2.8 -> 3.4
  - PHP 5.4 -> 5.6
  - (BO) Bootstrap 4 beta 2 -> Bootstrap 4 final
  - [PrestaShop UI Kit](https://github.com/PrestaShop/prestashop-ui-kit) 1.0
@@ -102,12 +102,13 @@ We have completely refactored the 1-click upgrade module. It’s better than eve
 
 In addition, we have published a detailed documentation on how to migrate an existing shop to the latest version of PrestaShop.
 
-The documentation:  
-http://devdocs.prestashop.com/1.7/basics/keeping_up-to-date/
+The documentation: 
+[https://devdocs.prestashop.com/1.7/basics/keeping_up-to-date/](https://devdocs.prestashop.com/1.7/basics/keeping_up-to-date/)
 
-Improvements to the documentation are welcome! [Learn how to contribute](http://devdocs.prestashop.com/1.7/documentation/how/).
+Improvements to the documentation are welcome! [Learn how to contribute](https://devdocs.prestashop.com/1.7/documentation/how/).
 
 The plugin:
- - [Download the beta on GitHub](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.0.0-beta.1)
+ - Download the beta on GitHub: [https://github.com/PrestaShop/autoupgrade/releases/tag/v4.0.0-beta.1](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.0.0-beta.1)
+ 
 PRs are welcome on the [GitHub repository](https://github.com/PrestaShop/autoupgrade/)
  - [Report issues on the forge](http://forge.prestashop.com)

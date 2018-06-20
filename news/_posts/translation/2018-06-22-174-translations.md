@@ -19,7 +19,7 @@ Okay, we are a bit late compared to [what we announced first](http://build.prest
 
 Until then, our usage consisted in adding a new branch, corresponding to the new minor version, and this new branch should contain all the strings from the previous branch (the previous version, you got it right) plus the new ones (relating to the new version, you got it right twice, you smarties).
 
-However, we lately realized that keeping only the latest minor version of PrestaShop active on Crowdin was not so good an idea. Indeed, --- we decided not to close the previous branches anymore in order to avoid ---
+However, we later realized that keeping only the latest minor version of PrestaShop active on Crowdin was not so good an idea. Indeed, --- we decided not to close the previous branches anymore in order to avoid ---
 
 
 ### About the multiple generations of the 1.7.4 catalog
@@ -31,7 +31,7 @@ And that know, let’s explain why we had to regenerate the 1.7.4 catalog many t
 
 Improving PrestaShop naturally leads to new wording. As a consequence, the 1.7.4 branch contains more strings than the 1.7.3. So all the languages that were fully translated and validated will fall under 100%. No need to panic, it is just logic. Once these few new strings translated and approved, rates of completion will get back to normal.
 
-Of course, as the context is not fully available because PrestaSop 1.7.4 is not out for now (but will soon be), some of these strings may appear a bit unclear. But ask if you need explanations, we will do our best to answer your comments and issues - and do not forget the coming soon release will allow you to check the results and make them match a more faithful translation.
+Of course, as the context is not fully available because PrestaShop 1.7.4 is not out for now (but will soon be), some of these strings may appear a bit unclear. But ask if you need explanations, we will do our best to answer your comments and issues - and do not forget the coming soon release will allow you to check the results and make them match a more faithful translation.
 
 
 ### Go for it!

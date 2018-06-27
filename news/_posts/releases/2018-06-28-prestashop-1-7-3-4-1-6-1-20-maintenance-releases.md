@@ -2,7 +2,7 @@
 layout: post
 title:  "Release of PrestaShop 1.7.3.4 and 1.6.1.20"
 subtitle: "Maintenance version of the 1.7.3.x and 1.6.1.x branch"
-date:   2018-06-28 14:0:00
+date:   2018-06-27 14:0:00
 authors: [ AntoineThomas, PabloBorowicz ]
 icon: icon-leaf
 tags:
@@ -16,16 +16,18 @@ tags:
  - 1.6
 ---
 
-PrestaShop 1.7.3.4 and 1.6.1.20 are now available. Cette release corrige principalement des problèmes de sécurité et de compatibilité avec PHP.
+PrestaShop 1.7.3.4 and 1.6.1.20 are now available. These versions fix security and PHP compatiblity issues.
 
-The most notable fixe for 1.7.3.x is:
+Since these versions fix security problems, we **strongly** encourage you to upgrade your shop as soon as possible.
+
+The most notable fix for 1.7.3.x is:
 
 * Improve cookies encryption
 
 Some of the most notable fixes for 1.6.1.x are:
 
 * Improve cookies encryption
-* Improve compatibility with PHP 7.2
+* Improve compatibility with PHP 7.1 and 7.2
 
 
 [Download PrestaShop now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
@@ -55,9 +57,9 @@ Here is the [complete list of changes for 1.6.1.20](https://github.com/PrestaSho
 
 Contributors to this patch versions, from both the Core team and the community at large: Pierre RAMBAUD, Pablo Borowicz, Axome, Jáchym Toušek, okom3pom, Thomas N. Thank you! Two of you contributed for the very first time, warm welcome :-)
 
-A very special thank to Charles Fol from Ambionics for the security reports!
+A very special thank to Charles Fol from Ambionics for the security report!
 
 Since version 1.7.3.4 is a "patch" update to version 1.7.3.3, upgrading from any 1.7.3 version will be easy: features will work better, and modules & themes which worked fine on 1.7.3.x will work just as well with 1.7.3.3.<br/>
 Upgrades from a standard 1.7.x version should work just as well.
 
-This the same for 1.6.1.20 regarding 1.6.1 version.
+This the same for 1.6.1.20 regarding 1.6.1.x versions.

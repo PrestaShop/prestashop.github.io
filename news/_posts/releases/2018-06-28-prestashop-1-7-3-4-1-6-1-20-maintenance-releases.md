@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "Release of PrestaShop 1.7.3.4 and 1.6.1.20"
+subtitle: "Maintenance version of the 1.7.3.x and 1.6.1.x branch"
+date:   2018-06-28 14:0:00
+authors: [ AntoineThomas, PabloBorowicz ]
+icon: icon-leaf
+tags:
+ - version
+ - maintenance
+ - patch
+ - releases
+ - 1.7.3.x
+ - 1.7
+ - 1.6.1.x
+ - 1.6
+---
+
+PrestaShop 1.7.3.4 and 1.6.1.20 are now available. Cette release corrige principalement des problèmes de sécurité et de compatibilité avec PHP.
+
+The most notable fixe for 1.7.3.x is:
+
+* Improve cookies encryption
+
+Some of the most notable fixes for 1.6.1.x are:
+
+* Improve cookies encryption
+* Improve compatibility with PHP 7.2
+
+
+[Download PrestaShop now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+{: .text-center}
+
+Here is the [complete list of changes for 1.7.3.4](https://github.com/PrestaShop/PrestaShop/milestone/43)
+
+- Core:
+  - Improvement:
+    - #9222: Improve cookie encryption
+
+Here is the [complete list of changes for 1.6.1.20](https://github.com/PrestaShop/PrestaShop/milestone/43)
+
+- Back Office:
+  - Bug fix:
+    - #8724: PHP 7.2 compat - Fix fatal error
+- Front Office:
+  - Bug fix:
+    - #9126: Control if customer is the owner of the selected order in contact form
+- Core:
+  - Improvement:
+    - #9141: Use https no http employee class
+    - #9218: Improve cookie encryption
+- Web Services:
+  - Bug fix:
+    - #8821: FIX PHP 7.1 compat in WebserviceOutputBuilder
+
+Contributors to this patch versions, from both the Core team and the community at large: Pierre RAMBAUD, Pablo Borowicz, Axome, Jáchym Toušek, okom3pom, Thomas N. Thank you! Two of you contributed for the very first time, warm welcome :-)
+
+A very special thank to Charles Fol from Ambionics for the security reports!
+
+Since version 1.7.3.4 is a "patch" update to version 1.7.3.3, upgrading from any 1.7.3 version will be easy: features will work better, and modules & themes which worked fine on 1.7.3.x will work just as well with 1.7.3.3.<br/>
+Upgrades from a standard 1.7.x version should work just as well.
+
+This the same for 1.6.1.20 regarding 1.6.1 version.

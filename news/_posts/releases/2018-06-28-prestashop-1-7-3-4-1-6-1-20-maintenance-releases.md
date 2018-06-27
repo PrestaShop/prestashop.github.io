@@ -33,13 +33,13 @@ Some of the most notable fixes for 1.6.1.x are:
 [Download PrestaShop now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
 
-Here is the [complete list of changes for 1.7.3.4](https://github.com/PrestaShop/PrestaShop/milestone/43)
+Here is the [complete list of changes for 1.7.3.4](https://github.com/PrestaShop/PrestaShop/milestone/45?closed=1)
 
 - Core:
   - Improvement:
     - #9222: Improve cookie encryption
 
-Here is the [complete list of changes for 1.6.1.20](https://github.com/PrestaShop/PrestaShop/milestone/43)
+Here is the [complete list of changes for 1.6.1.20](https://github.com/PrestaShop/PrestaShop/milestone/43?closed=1)
 
 - Back Office:
   - Bug fix:

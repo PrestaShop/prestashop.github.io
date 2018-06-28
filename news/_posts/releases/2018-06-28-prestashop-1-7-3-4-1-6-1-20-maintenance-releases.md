@@ -59,7 +59,7 @@ Contributors to this patch versions, from both the Core team and the community a
 
 A very special thank to Charles Fol from Ambionics for the security report!
 
-Since version 1.7.3.4 is a "patch" update to version 1.7.3.3, upgrading from any 1.7.3 version will be easy: features will work better, and modules & themes which worked fine on 1.7.3.x will work just as well with 1.7.3.3.<br/>
+Since version 1.7.3.4 is a "patch" update to version 1.7.3.3, upgrading from any 1.7.3 version will be easy: features will work better, and modules & themes which worked fine on 1.7.3.x will work just as well with 1.7.3.4.<br/>
 Upgrades from a standard 1.7.x version should work just as well.
 
 This the same for 1.6.1.20 regarding 1.6.1.x versions.

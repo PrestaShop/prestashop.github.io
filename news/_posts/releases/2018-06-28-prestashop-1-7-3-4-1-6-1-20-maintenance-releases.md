@@ -43,23 +43,23 @@ Here is the [complete list of changes for 1.6.1.20](https://github.com/PrestaSho
 
 - Back Office:
   - Bug fix:
-    - #8724: PHP 7.2 compat - Fix fatal error
+    - [#8724](https://github.com/PrestaShop/PrestaShop/pull/8724): PHP 7.2 compat - Fix fatal error
 - Front Office:
   - Bug fix:
-    - #9126: Control if customer is the owner of the selected order in contact form
+    - [#9126](https://github.com/PrestaShop/PrestaShop/pull/9126): Control if customer is the owner of the selected order in contact form
 - Core:
   - Improvement:
-    - #9141: Use https no http employee class
-    - #9218: Improve cookie encryption
+    - [#9141](https://github.com/PrestaShop/PrestaShop/pull/9141): Use https no http employee class
+    - [#9218](https://github.com/PrestaShop/PrestaShop/pull/9218): Improve cookie encryption
 - Web Services:
   - Bug fix:
-    - #8821: FIX PHP 7.1 compat in WebserviceOutputBuilder
+    - [#8821](https://github.com/PrestaShop/PrestaShop/pull/8821): FIX PHP 7.1 compat in WebserviceOutputBuilder
 
-Contributors to this patch versions, from both the Core team and the community at large: Pierre RAMBAUD, Pablo Borowicz, Axome, Jáchym Toušek, okom3pom, Thomas N. Thank you! Two of you contributed for the very first time, warm welcome :-)
+Contributors to this patch versions, from both the Core team and the community at large: [Pierre RAMBAUD](https://github.com/PierreRambaud), [Pablo Borowicz](https://github.com/eternoendless), [Axome](https://github.com/axometeam), [Jáchym Toušek](https://github.com/enumag), [okom3pom](https://github.com/okom3pom), [Thomas N](https://github.com/Quetzacoalt91). Thank you! Two of you contributed for the very first time, warm welcome :-)
 
 A very special thank to Charles Fol from Ambionics for the security report!
 
-Since version 1.7.3.4 is a "patch" update to version 1.7.3.3, upgrading from any 1.7.3 version will be easy: features will work better, and modules & themes which worked fine on 1.7.3.x will work just as well with 1.7.3.4.<br/>
+Since version 1.7.3.4 is a "patch" update to version 1.7.3.3, upgrading from any 1.7.3 version will be easy: features will work better, and modules & themes which worked fine on 1.7.3.x will work just as well with 1.7.3.3.<br/>
 Upgrades from a standard 1.7.x version should work just as well.
 
 This the same for 1.6.1.20 regarding 1.6.1.x versions.

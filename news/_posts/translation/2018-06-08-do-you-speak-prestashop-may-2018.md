@@ -96,7 +96,7 @@ For its part, PrestaShop 1.7.3 was fully available in **25 languages**!
  
 ## Languages with the best evolution
  
-In comparison with March 2018, the following languages had the best progress thanks to the translation community:
+In comparison with April 2018, the following languages had the best progress thanks to the translation community:
  
 * **Chinese Simplified** (+15% to reach 58% approved in 1.7)
 * **Korean** (+8% to reach 70% translated in 1.7)

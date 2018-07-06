@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop 1.7.4.0 is available!"
 subtitle: "New features for merchants and technical improvements for developers"
 date:   2018-07-04 17:10:00
-authors: [ AntoineThomas, PrestaShop, LouiseBonnard ]
+authors: [ AntoineThomas, PrestaShop ]
 icon: icon-checked
 tags:
  - 1.7

@@ -24,7 +24,7 @@ Dear community, after a little bit more than four months, the new minor version 
 
 
 <div class="alert alert-warning" role="alert">
-<h4><i class='icon-warning'></i>Be careful!</h4>
+<h4><i class='icon-warning'> </i>Be careful!</h4>
 <p>If you plan to upgrade, we recommend you to use the version 4.0 of the 1-click upgrade, currently <a href="https://github.com/PrestaShop/autoupgrade/releases/download/v4.0.0-beta.3/autoupgrade-v4.0.0-beta.3.zip">available as a beta on GitHub</a>, instead of the version 3.0 available on the marketplace.</p>
 </div>
 

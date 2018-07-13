@@ -22,7 +22,7 @@ Please welcome the Uzbek translation project! It is our latest addition to Crowd
 
 ### Our translation page is under construction
 
-We all know it, the [translation page]( https://www.prestashop.com/en/translations) needs to be reworked. We are testing a new design on its French version to keep things clearer and better for the merchants to understand. Let’s hope it will soon be online. At least with the right content! We also realized we could improve this page with more valuable information, so you can expect a beautiful brand new page in the next few months. ;-)
+We all know it, the [translation page]( https://www.prestashop.com/en/translations) needs to be reworked. We are testing a new design on its French version to keep things clearer and better for the merchants to understand. Let’s hope it will soon be online. At least with the right content! We also realized we could improve this page with more valuable information, so you can expect a beautiful brand new page in the next few months!
 
 
 ### Utopian is back in the game

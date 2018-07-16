@@ -19,12 +19,12 @@ PrestaShop 1.7.4.1 is now available. This maintenance release fixes 16 issues re
 Some of the most notable fixes are:
 
 * Installer fixes.
-* Fix displaying issues on some modules.
+* Fix display issues on some modules.
 
 [Download PrestaShop 1.7.4.1 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
 
-Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr%20milestone%3A1.7.4.1):
+Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/milestone/40?closed=1):
     
 - Back Office:
   - Improvement:

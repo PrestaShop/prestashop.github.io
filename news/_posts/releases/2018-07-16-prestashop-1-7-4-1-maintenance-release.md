@@ -21,8 +21,10 @@ Some of the most notable fixes are:
 * Installer fixes.
 * Fix display issues on some modules.
 
+
 [Download PrestaShop 1.7.4.1 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
+
 
 Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/milestone/40?closed=1):
     
@@ -58,6 +60,8 @@ Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/
 
 The [PrestaShop 1.7.4.1 changelog](https://download.prestashop.com/download/releases/changelog_1.7.4.1.txt) is available.
 
-Contributors to this patch version, from both the Core team and the community at large: @jocel1, @kpodemski, @lucasRolff, @marionf, @mickaelandrieu, @PierreRambaud, @prestamodule, @Quetzacoalt91, @rGaillard, @tomlev and @toutantic! Thank you!
+Contributors to this patch version, from both the Core team and the community at large: @jocel1, @kpodemski, @lucasRolff, @marionf, @mickaelandrieu, @PierreRambaud, @prestamodule, @Quetzacoalt91, @rGaillard, @tomlev, and @toutantic! Thank you!
 
-Since version 1.7.4.1 is a "patch" update to version 1.7.4.0, upgrading from the 1.7.4.0 version will be easy: features will work better, and modules & themes which worked fine on 1.7.4.0 will work just as well with 1.7.4.1. Note that *we strongly recommend you to use the version 4.0 of the 1-click upgrade*, currently available as a beta on GitHub, instead of the version 3.0 available on the marketplace.
+Since version 1.7.4.1 is a "patch" update to version 1.7.4.0, upgrading from the 1.7.4.0 version will be easy: features will work better, and modules & themes which worked fine on 1.7.4.0 will work just as well with 1.7.4.1.
+
+Note that **we strongly recommend you to use the version 4.0 of the 1-click upgrade**, currently available as a beta on GitHub, instead of the version 3.0 available on the marketplace.

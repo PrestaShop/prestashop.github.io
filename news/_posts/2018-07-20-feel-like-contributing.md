@@ -15,7 +15,7 @@ Summer is here (for most of you) and you have finally the spare time you need to
 Remember the former contributor’s guide? Well, we reworked it in order to have it up-to-date; new parts have been added, mostly regarding our process, and all the information now null and void has been deleted. It means that you can now refer to this guide and be sure not to get lost.
 
 
-[Download the PDF guide](https://www.prestashop.com/en/system/files/filedepot/9/prestashop-how_to_contribute.pdf){: .btn .btn-success} {: .text-center}
+[Download the PDF guide](https://www.prestashop.com/en/system/files/filedepot/9/prestashop-how_to_contribute.pdf){: .btn .btn-success}{: .text-center}
 
 
 Among many useful contributing tools, here is a quick introduction to the User Club and the User Voice we reboosted this winter:

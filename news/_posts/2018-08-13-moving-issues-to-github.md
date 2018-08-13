@@ -2,7 +2,7 @@
 layout: post
 title:  "We are moving Issues to GitHub"
 subtitle: "A big move from the good old Forge in order to have everything in one place for everyone."
-date:   2018-07-20 09:10:11
+date:   2018-08-13 11:15:00
 authors: [ AntoineThomas, PrestaShop ]
 icon: icon-code
 tags:

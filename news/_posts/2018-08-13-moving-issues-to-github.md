@@ -13,7 +13,7 @@ tags:
 
 Next week, we will enable issues on [PrestaShop project’s GitHub repository](https://github.com/PrestaShop/PrestaShop). This is going to be the new way to report bugs and to open feature requests. This way, the roadmap, issues, pull requests and source code will all be in the same platform.
 
-### Introducing issues
+## Introducing issues
 
 There will be two templates for creating issues: one for bug reports, and one for feature requests. Of course, please search if your issue has already been reported, before opening a new one.
 

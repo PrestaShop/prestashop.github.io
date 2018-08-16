@@ -151,7 +151,7 @@ No software is perfect, and PrestaShop is no exception. Our team spends its whol
 
 We'd love to have you on the team! Join the ranks of users who help to improve PrestaShop: provide us with detailed report of any reproducible issue you stumble upon, and we'll do our best to get it fixed!
 
-Please use [this reference guide](http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop) to better understand what makes a great Forge ticket. 
+Please use [this reference guide](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/ to better understand what makes a great Forge ticket. 
 
 Then, create your report for the right context. The Core team will review your report and answer back with any questions and /or ideas.
 
@@ -211,14 +211,13 @@ Core contributors are expected to know the PrestaShop technologies and tools in 
 
 * PHP 5, MySQL 5, Smarty 3, etc.
 * Git and GitHub
-* Our [coding standards](http://doc.prestashop.com/display/PS16/Coding+Standards)
-* Our [commit convention](http://doc.prestashop.com/display/PS16/How+to+write+a+commit+message)
+* Our [coding standards](https://devdocs.prestashop.com/1.7/development/coding-standards/)
+* Our [commit convention](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/)
 
 Got everything set up? Find the branch you want to work with:
 
 * [Current development branch](https://github.com/PrestaShop/PrestaShop/tree/develop) (for the next 1.7 minor version). 
-* [Current 1.7.1 branch](https://github.com/PrestaShop/PrestaShop/tree/1.7.1.x) (for the next 1.7.1 patch version).
-* [Current 1.6 branch](https://github.com/PrestaShop/PrestaShop/tree/1.6.1.x).
+* [Current 1.6.1.x branch](https://github.com/PrestaShop/PrestaShop/tree/1.6.1.x).
 
 
 #### To the Addons catalog

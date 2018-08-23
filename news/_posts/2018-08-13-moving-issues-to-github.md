@@ -42,7 +42,7 @@ Of course, the current Forge, based on Jira, will not be closed right away. Belo
 * Check all issues and feature requests in the current Forge and close the ones that are no longer valid (done)
  *On GitHub, create [Labels](https://github.com/PrestaShop/PrestaShop/labels) so it is possible to keep all the sorting information and fields from Jira (done)
 * Prepare a migration script to import the open tickets from the Forge to GitHub issues, with cross links and comment history (done)
-* When GitHub issues are open, freeze the Forge and import the history **(work in progress)** (BOOM done)
+* When GitHub issues are open, freeze the Forge and import the history **(work in progress)** (BOOM, FF, BOGOSS done)
 * Update links on documentations and websites or provide redirections **(work in progress)**
 * The Forge will become a read-only resource and it will stay available until its content becomes useless (done)
 

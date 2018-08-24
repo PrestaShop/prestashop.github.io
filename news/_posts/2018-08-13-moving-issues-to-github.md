@@ -42,13 +42,13 @@ Of course, the current Forge, based on Jira, will not be closed right away. Belo
 * Check all issues and feature requests in the current Forge and close the ones that are no longer valid (done)
  *On GitHub, create [Labels](https://github.com/PrestaShop/PrestaShop/labels) so it is possible to keep all the sorting information and fields from Jira (done)
 * Prepare a migration script to import the open tickets from the Forge to GitHub issues, with cross links and comment history (done)
-* When GitHub issues are open, freeze the Forge and import the history **(work in progress)** (BOOM, FF, BOGOSS done)
+* When GitHub issues are open, freeze the Forge and import the history (BOOM, FF, BOGOSS done)
 * Update links on documentations and websites or provide redirections **(work in progress)**
 * The Forge will become a read-only resource and it will stay available until its content becomes useless (done)
 
 Once done, all new issues must be open on GitHub. The aim is to finish this work before the end of the summer.
 
-Last update: 2018-08-23 10:50
+Last update: 2018-08-24 10:15
 
 
 ## Please, be patient
@@ -59,3 +59,6 @@ However, it seems that some people are a bit hasty. Recently, we saw some off-to
 
 In order to keep everyone up to date with this migration, this article will be updated as the migration moves forward.
 
+## PrestaShop 1.6.x
+
+Tickets open on the Forge for v1.6.x will not be migrated to GitHub. Of course, like the other projects, they will still be available as a read-only resource. If you discover a new bug, please open a new bug report directly on GitHub.

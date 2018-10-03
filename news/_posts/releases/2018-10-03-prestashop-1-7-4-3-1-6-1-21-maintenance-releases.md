@@ -64,7 +64,7 @@ Here is the [complete list of changes for 1.6.1.21](https://github.com/PrestaSho
 
 Contributors to this patch versions, from both the Core team and the community at large: [Axome](https://github.com/axometeam), [gfilippakis](https://github.com/gfilippakis), [Hibatallah Aouadni](https://github.com/hibatallahAouadni), [Jonathan Lelievre](https://github.com/jolelievre), [Pablo Borowicz](https://github.com/eternoendless), [Pierre Joube](https://github.com/PierreJoube), [Rémi Gaillard](https://github.com/rGaillard), [Thomas LEVIANDIER](https://github.com/tomlev). Thank you! Three of you contributed for the very first time, warm welcome :-)
 
-A very special thank to Panatan from the forum to Robin Peraglie for the security reports!
+A very special thank to Panatan from the forum and to Robin Peraglie for the security reports!
 
 Since version 1.7.4.3 is a "patch" update to version 1.7.4.2, upgrading from any 1.7.4 version will be easy: features will work better, and modules & themes which worked fine on 1.7.4.x will work just as well with 1.7.4.3.<br/>
 Upgrades from a standard 1.7.x version should work just as well.

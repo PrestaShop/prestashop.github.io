@@ -30,7 +30,7 @@ Some of the most notable fixes for 1.6.1.21 are:
 - Fixed a bug where sensitive configuration information could be disclosed when an fatal error occurred.
 - Fixed an issue where spammers would exploit the contact form to send messages to third parties.
 - Fixed a crash when trying to send an email to an address containing unsupported characters.
-- Fixed a privilege-escalation issue where a logged user in the Back Office where a logged user could potentially execute arbitrary code in the system.
+- Fixed a privilege-escalation issue in the Back Office where a logged user could potentially execute arbitrary code in the system.
 
 
 [Download PrestaShop now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}

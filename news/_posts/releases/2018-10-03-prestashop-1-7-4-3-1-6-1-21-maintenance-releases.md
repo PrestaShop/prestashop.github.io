@@ -16,15 +16,15 @@ tags:
  - 1.6
 ---
 
-PrestaShop 1.7.4.3 and 1.6.1.21 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. Some important issues are also fixes for 1.6.1.x. For the details, please read below.
+PrestaShop 1.7.4.3 and 1.6.1.21 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. Some important issues are also fixed for 1.6.1.x. For the details, please read below.
 
 Since these versions fix security problems, we **strongly** encourage you to upgrade your shop as soon as possible.
 
-The most notable fix for 1.7.3.x is:
+The most notable fix for 1.7.4.3 is:
 
 - Fixed a bug where sensitive configuration information could be disclosed when an fatal error occurred.
 
-Some of the most notable fixes for 1.6.1.x are:
+Some of the most notable fixes for 1.6.1.21 are:
 
 - Fixed a long-standing issue where the core was unable to access remote resources in some circumstances.
 - Fixed a bug where sensitive configuration information could be disclosed when an fatal error occurred.
@@ -42,7 +42,7 @@ Here is the [complete list of changes for 1.7.4.3](https://github.com/PrestaShop
   - Bug fix:
     - #10829: Hide arguments in debug trace page
 
-Here is the [complete list of changes for 1.6.1.20](https://github.com/PrestaShop/PrestaShop/releases/tag/1.6.1.21)
+Here is the [complete list of changes for 1.6.1.21](https://github.com/PrestaShop/PrestaShop/releases/tag/1.6.1.21)
 
 - Back Office:
   - Bug fix:

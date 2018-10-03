@@ -30,7 +30,7 @@ Some of the most notable fixes for 1.6.1.21 are:
 - Fixed a bug where sensitive configuration information could be disclosed when an fatal error occurred.
 - Fixed an issue where spammers would exploit the contact form to send messages to third parties.
 - Fixed a crash when trying to send an email to an address containing unsupported characters.
-- Fixed a privilege-escalation issue where a logged user in the Back Office where a logged user could potentially execute arbitrary code in the system (Thank you Robin Peraglie).
+- Fixed a privilege-escalation issue where a logged user in the Back Office where a logged user could potentially execute arbitrary code in the system.
 
 
 [Download PrestaShop now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
@@ -62,9 +62,9 @@ Here is the [complete list of changes for 1.6.1.21](https://github.com/PrestaSho
     - #8763: Catch all Swift exceptions in Mail::Send()
 
 
-Contributors to this patch versions, from both the Core team and the community at large: [Axome]hibatallahAouadni (https://github.com/axometeam), [gfilippakis](https://github.com/gfilippakis), [Hibatallah Aouadni](https://github.com/hibatallahAouadni), [Jonathan Lelievre](https://github.com/jolelievre), [Pablo Borowicz](https://github.com/eternoendless), [Pierre Joube](https://github.com/PierreJoube), [Rémi Gaillard](https://github.com/rGaillard), [Thomas LEVIANDIER](https://github.com/tomlev). Thank you! Three of you contributed for the very first time, warm welcome :-)
+Contributors to this patch versions, from both the Core team and the community at large: [Axome](https://github.com/axometeam), [gfilippakis](https://github.com/gfilippakis), [Hibatallah Aouadni](https://github.com/hibatallahAouadni), [Jonathan Lelievre](https://github.com/jolelievre), [Pablo Borowicz](https://github.com/eternoendless), [Pierre Joube](https://github.com/PierreJoube), [Rémi Gaillard](https://github.com/rGaillard), [Thomas LEVIANDIER](https://github.com/tomlev). Thank you! Three of you contributed for the very first time, warm welcome :-)
 
-A very special thank to Panatan from the forum for the security report!
+A very special thank to Panatan from the forum to Robin Peraglie for the security reports!
 
 Since version 1.7.4.3 is a "patch" update to version 1.7.4.2, upgrading from any 1.7.4 version will be easy: features will work better, and modules & themes which worked fine on 1.7.4.x will work just as well with 1.7.4.3.<br/>
 Upgrades from a standard 1.7.x version should work just as well.

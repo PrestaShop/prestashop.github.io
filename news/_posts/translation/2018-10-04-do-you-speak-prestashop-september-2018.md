@@ -2,7 +2,7 @@
 layout: post
 title:  "Do you speak PrestaShop? – September 2018 edition"
 subtitle: "Where you'll learn that 1.7.5 is out for translation soon"
-date:  2018-10-03 09:10:11
+date:  2018-10-04 09:10:11
 authors: [LouiseBonnard]
 icon: icon-world
 tags: [translation, i18n, l10n]

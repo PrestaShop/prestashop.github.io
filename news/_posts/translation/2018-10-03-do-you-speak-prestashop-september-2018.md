@@ -17,7 +17,14 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ### 1.7.5 catalog soon available
 
-Hi folks, I know you all know it. Yes, we did, we entered code freeze on September 20th. Few fixes left and PrestaShop 1.7.5 will be released. Yeah! So keep an eye on [Crowdin](https://crowdin.com/project/prestashop-official), the 1.7.5 catalog should be out quite soon. With fresh strings that will then be waiting for your great translation, correction, and validation… in short, the big adventure of a new minor release! 
+Hi folks, I know you all know it. Yes, we did, we entered code freeze on September 20th. Few fixes left and PrestaShop 1.7.5 will be released. Yeah! So keep an eye on [Crowdin](https://crowdin.com/project/prestashop-official), the 1.7.5 catalog should be out quite soon. With fresh strings that will then be waiting for your great translation, correction, and validation… in short, the big adventure of a new minor release!
+
+
+### About variables for RTL languages
+
+Some of you asked me about how they should translate pieces of codes and variables when they appear in specific wordings, in the context of right-to-left languages. It is a nice question! Indeed, it is quite tricky because if the text should be translated in right-to-left, elements of code should stay written in left-to-right. In short, when there are variables, translations for the Arabic, Hebrew and Persian projects should contain both writings. And today, there is a known issue in Crowdin to display both LTR and RTL characters combinations in the one suggestion text area.
+
+So here is a solution to help you people bypass this difficulty: to be sure that the translations for RTL languages are properly displayed on export, Crowdin recommends to use the Copy Source button (located under the source text) and then modify only the text parts. This way, variables, tags, etc. should stay untouched - even if they look wrong in the browser. You can read the [Crowdin documentation]( https://support.crowdin.com/online-editor/#translating-rtl-languages) about it to get further information.
 
 
 ## A few stats

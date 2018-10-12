@@ -71,3 +71,6 @@ Thousands of stores have already chosen v1.7, either as a first store or as a st
 So go ahead, get ready to make the jump to 1.7!
 
 And if you notice new issues, we always welcome new Forge tickets or new GitHub pull requests (even better!) from the PrestaShop community. Make your voice heard!
+
+Edit:  
+[PrestaShop 1.6.1.x end of life is now in June 2019](https://www.prestashop.com/en/blog/Maintenance-extension-PrestaShop-1-6)

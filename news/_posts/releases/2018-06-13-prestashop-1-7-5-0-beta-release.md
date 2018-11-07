@@ -109,7 +109,7 @@ The developer documentation includes a [description of hooks](https://devdocs.pr
 - Fixed a bug in robots.txt which blocked CSS and JS files, potentially preventing Google to form index pages properly.
 - Multistore : fix in order and product pages in all shop context (PHP errors) and in the domain name (PR 9145 and 9450)
 
-The complete [list of bugs fixed for 1.7.5.0](https://github.com/PrestaShop/PrestaShop/issues?utf8=%E2%9C%93&q=is%3Aissue+milestone%3A1.7.5.0+label%3Afixed) is avalaible on GitHub.
+The complete [list of bugs fixed for 1.7.5.0](https://github.com/PrestaShop/PrestaShop/issues?utf8=%E2%9C%93&q=is%3Aissue+milestone%3A1.7.5.0+label%3Afixed) is availaible on GitHub.
 
 ### Known issues
 

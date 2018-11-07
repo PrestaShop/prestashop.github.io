@@ -71,10 +71,8 @@ New pages:
 - International -> Translations (Page ½)
 - Shop Parameters -> Order Settings -> Order Settings
 - Shop parameters > Traffic & SEO > SEO & URLs
-- Advanced Parameters -> Database -> SQL Manager
-- Advanced Parameters -> Database -> SQL Manager -> Add new SQL query
 - Advanced Parameters -> Database -> DB Backup
-- Advanced Parameters > Webservice
+- Advanced Parameters > Webservice (hidden)
 - Advanced Parameters -> Logs
 - Advanced parameters -> Email
 

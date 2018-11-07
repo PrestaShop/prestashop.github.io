@@ -38,7 +38,7 @@ PrestaShop 1.7.5 beta is available for download. Please read important informati
 
 ### New & fixed modules
 
-- The gsitemap module is now available for PrestaShop 1.7.
+- The google sitemap module is now available for PrestaShop 1.7.
 - Favicon notifications in Back Office (native module)
 - Buy Button Lite (native module)
 - Cross selling module (native)

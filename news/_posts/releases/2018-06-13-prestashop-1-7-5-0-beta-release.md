@@ -72,7 +72,7 @@ New pages:
 - Shop Parameters -> Order Settings -> Order Settings
 - Shop parameters > Traffic & SEO > SEO & URLs
 - Advanced Parameters -> Database -> DB Backup
-- Advanced Parameters > Webservice (hidden)
+- Advanced Parameters > Webservice (hidden, because the page "Advanced Parameters > Webservice -> Add key" has not been migrated and it does not make sense for the UX to have only one of them)
 - Advanced Parameters -> Logs
 - Advanced parameters -> Email
 

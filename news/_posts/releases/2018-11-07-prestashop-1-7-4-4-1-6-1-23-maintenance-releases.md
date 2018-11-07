@@ -22,7 +22,7 @@ These two security updates fix some issues on the filemanager integrated in Tiny
 
 Since these versions fix security problems, we **strongly** encourage you to upgrade your shop as soon as possible.
 
-Changes for 1.7.4.4 and 1.6.1.23 are:
+Changes for 1.7.4.4:
 
 - Core:
   - Bug fix:
@@ -30,10 +30,24 @@ Changes for 1.7.4.4 and 1.6.1.23 are:
     - Check mime type when uploading files
     - Fixed arbitrary image write/overwrite in Windows installation
     - Prevent image directory deletion
-
+- Back Office:
+  - Bug fix:
+    - #11228: Avoid warning in WebServiceRequest
+    - #11285: Fix filemanager security breaches
+    
 [Complete list of changes for 1.7.4.4](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.4.4)
 
+    
+Changes for 1.6.1.23:
+- Core:
+  - Bug fix:
+    - Remove filemanager action image_size
+    - Check mime type when uploading files
+    - Fixed arbitrary image write/overwrite in Windows installation
+    - Prevent image directory deletion
+
 [Complete list of changes for 1.6.1.23](https://github.com/PrestaShop/PrestaShop/releases/tag/1.6.1.23)
+
 
 [Download PrestaShop now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}

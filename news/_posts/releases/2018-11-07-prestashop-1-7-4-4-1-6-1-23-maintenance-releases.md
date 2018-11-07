@@ -18,18 +18,12 @@ tags:
 
 PrestaShop 1.7.4.4 and 1.6.1.23 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. For the details, please read below:
 
-These two security updates fix some issues on the filemanager integrated in TinyMCE in the back office. The use of three security issues allowed, for a user with BO access, to upload some malicious hidden Phar files that would then allow to execute some code on server side and get back the result.
+These two security updates fix issues on the file manager integrated in the text editor component in the Back Office. By exploiting a combination of security vunerabilities, an authenticated user in the Back Office could upload a malicious file that would then allow him or her to execute arbitrary code on the server.
 
 Since these versions fix security problems, we **strongly** encourage you to upgrade your shop as soon as possible.
 
 Changes for 1.7.4.4:
 
-- Core:
-  - Bug fix:
-    - Remove filemanager action image_size
-    - Check mime type when uploading files
-    - Fixed arbitrary image write/overwrite in Windows installation
-    - Prevent image directory deletion
 - Back Office:
   - Bug fix:
     - #11228: Avoid warning in WebServiceRequest
@@ -39,12 +33,10 @@ Changes for 1.7.4.4:
 
     
 Changes for 1.6.1.23:
-- Core:
+
+- Back Office:
   - Bug fix:
-    - Remove filemanager action image_size
-    - Check mime type when uploading files
-    - Fixed arbitrary image write/overwrite in Windows installation
-    - Prevent image directory deletion
+    - #11286: Fix filemanager security breaches
 
 [Complete list of changes for 1.6.1.23](https://github.com/PrestaShop/PrestaShop/releases/tag/1.6.1.23)
 

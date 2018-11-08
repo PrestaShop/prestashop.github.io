@@ -21,7 +21,7 @@ PrestaShop 1.7.5 beta is available for download. Please read important informati
 
 - SEO improvements in category page :
   - Change in pagination
-  - Category blocked not displayed after page 1
+  - Category block not displayed after page 1
   - SEO improvement in brands & suppliers urls : _name is replaced by /brand/x-name and /supplier/x-name 
 - Product page :
   - Specific prices can now be edited
@@ -84,7 +84,7 @@ Controllers:
 - New Grid component
 - Compatibility with Twig 2
 - Compatibility with PHP 7.2
-- The core theme is now build using Webpack 4 and includes jQuery 2.2.4
+- The core theme is now built using Webpack 4 and includes jQuery 2.2.4
 - Modules can now declare modern (symfony-based) Back Office controllers and use the UI kit
 - Modules can now declare and use Symfony commands
 - Possible module regressions : https://github.com/PrestaShop/docs/pull/146

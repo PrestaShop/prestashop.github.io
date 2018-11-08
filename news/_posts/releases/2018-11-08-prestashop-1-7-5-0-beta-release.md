@@ -2,13 +2,13 @@
 layout: post
 title:  "PrestaShop 1.7.5.0 beta is open for feedback!"
 subtitle: "You can download it and test it"
-date:   2018-11-06 17:45:00
+date:   2018-11-08 10:45:00
 authors: [ PrestaShop ]
 icon: icon-leaf
 tags:
  - version
  - beta
- - patch
+ - minor
  - releases
  - 1.7.5
 ---
@@ -19,26 +19,27 @@ PrestaShop 1.7.5 beta is available for download. Please read important informati
 
 ### Features
 
-- SEO improvements in category page :
-  - Change in pagination
-  - Category block not displayed after page 1
-  - SEO improvement in brands & suppliers urls : _name is replaced by /brand/x-name and /supplier/x-name 
-- Product page :
+- SEO improvements in category page:
+  - The first page no longer has a duplicate URL with `&page=1`
+  - The category block is no longer displayed after the first page
+  - Improved default URLs for brands & suppliers (now are `/brand/123-somebrand` and `/supplier/123-mysupplier` instead of `/123_somebrand` and `/123__mysupplier`)
+- Product page:
   - Specific prices can now be edited
   - The SEO section now displays a preview so that you can see how your page would be shown in Google results
   - When a product is taken offline, by default visitors will be redirected to the product’s main category, instead of a “Not found” page.
-  - Stock location field now available
+  - A "stock location" field has been added
 - New module manager page with new categorization (Addons categories) and ability to manage modules by last use
+- Improved style for migrated forms
 
 
 ### UX
 
-- UX improvement on Module pages
+- UX improvements on Module pages
 - Helper card in SEO & URL page
 
 ### New & fixed modules
 
-- The google sitemap module is now available for PrestaShop 1.7.
+- The google sitemap module is now available for PrestaShop 1.7
 - Favicon notifications in Back Office (native module)
 - Buy Button Lite (native module)
 - Cross selling module (native)
@@ -47,18 +48,18 @@ PrestaShop 1.7.5 beta is available for download. Please read important informati
 
 ### Installer
 
-- During install, if there is a more recent stable version of PrestaShop available, it is possible to download and install the latest instead
+- During install, if there is a more recent stable version of PrestaShop available, it will suggest and allow downloading and installing the latest instead
 - New languages in installer:
   - Hindi
   - Bosnian
-  - Spanish Mexico
+  - Mexican Spanish
  
 
 ## The technical side
 
 ### Symfony migration
 
-New pages:
+Newly migrated pages:
 - Orders -> Delivery slips
 - Orders -> Invoices
 - Design -> Theme Catalog
@@ -68,26 +69,26 @@ New pages:
 - Payment -> Preferences
 - International -> Localization -> Localization
 - International -> Localization -> Geolocation
-- International -> Translations (Page ½)
+- International -> Translations (Page 1 out of 2)
 - Shop Parameters -> Order Settings -> Order Settings
 - Shop parameters > Traffic & SEO > SEO & URLs
 - Advanced Parameters -> Database -> DB Backup
-- Advanced Parameters > Webservice (hidden, because the page "Advanced Parameters > Webservice -> Add key" has not been migrated and it does not make sense for the UX to have only one of them)
+- Advanced Parameters > Webservice (hidden, because the page "Advanced Parameters > Webservice -> Add key" has not been migrated and it does not make UX sense to have only one of them)
 - Advanced Parameters -> Logs
 - Advanced parameters -> Email
 
 Controllers:
-- You can now link migrated controllers to legacy one to avoid breaking links thanks to the _legacy_link routing property (c.f: More about the _legacy_link property)
+- You can now link migrated controllers to legacy one to avoid breaking links thanks to the [`_legacy_link` routing property](https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/controller-routing/#more-about-the-legacy-link-property)
 
 ### Components and dependencies
 
-- New Grid component
+- New [Grid component](https://devdocs.prestashop.com/1.7/development/components/grid/)
 - Compatibility with Twig 2
-- Compatibility with PHP 7.2
+- Improved compatibility with PHP 7.2
 - The core theme is now built using Webpack 4 and includes jQuery 2.2.4
-- Modules can now declare modern (symfony-based) Back Office controllers and use the UI kit
-- Modules can now declare and use Symfony commands
-- Possible module regressions : https://github.com/PrestaShop/docs/pull/146
+- Modules can now [declare modern (symfony-based) Back Office controllers](https://devdocs.prestashop.com/1.7/modules/concepts/controllers/admin-controllers/) and use the UI kit
+- Modules can now [declare and use Symfony commands](https://devdocs.prestashop.com/1.7/modules/concepts/commands/)
+- [Read about possible module regressions](https://devdocs.prestashop.com/1.7/modules/core_updates/1.7.5/)
 
 
 ### New hooks
@@ -105,9 +106,8 @@ The developer documentation includes a [description of hooks](https://devdocs.pr
 
 ### Notable bug fixes
 
-- Improved style for migrated forms.
 - Fixed a bug in robots.txt which blocked CSS and JS files, potentially preventing Google to form index pages properly.
-- Multistore : fix in order and product pages in all shop context (PHP errors) and in the domain name (PR 9145 and 9450)
+- Multistore: fix in order and product pages in all shop contexts (PHP errors) and in the domain name ([#9145](https://github.com/PrestaShop/PrestaShop/pull/9145) and [#9450](https://github.com/PrestaShop/PrestaShop/pull/9450))
 
 The complete [list of bugs fixed for 1.7.5.0](https://github.com/PrestaShop/PrestaShop/issues?utf8=%E2%9C%93&q=is%3Aissue+milestone%3A1.7.5.0+label%3Afixed) is availaible on GitHub.
 

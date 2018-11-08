@@ -13,9 +13,16 @@ tags:
  - 1.7.5
 ---
 
-PrestaShop 1.7.5 beta is available for download. Please read important informations about it.
+The first Beta version for PrestaShop 1.7.5.0 is now ready for you to test!
 
-## New & improvements
+We are happy to announce that we are close to releasing 1.7.5.0. This minor version (in the SemVer meaning of the term) brings important new features and improvements to the 1.7 codebase, and we can’t wait to receive your feedback!
+
+This Beta release is a great opportunity for you to start working with it before we release a stable version.
+Go download and install this Beta version as a test store, either on your machine or your web hosting, then play with it – and [give us your feedback](https://github.com/PrestaShop/PrestaShop/issues/new/choose)! We need YOU to test this new version of PrestaShop.
+
+**Remember, this beta version is pre release software. Do not use it on your production shop!**
+
+## News & improvements
 
 ### Features
 
@@ -128,19 +135,20 @@ The complete [list of bugs fixed for 1.7.5.0](https://github.com/PrestaShop/Pres
 
 ## Download
 
-You can download PrestaShop 1.7.5 beta on GitHub:  
+You can download PrestaShop 1.7.5 beta here:  
 
-[Download PrestaShop 1.7.5.0 beta now!](https://github.com/PrestaShop/PrestaShop/releases){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.5.0 beta now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
-## How to help us to finish the 1.7.5
+## How to help finish the 1.7.5
 
 Your help will be very appreciated to finish the work on PrestaShop 1.7.5. Even if you are not a developer, your feedback has a lot of value.
 
 You can:
  - Install it and test it
+ - If you develop modules or themes, test them on this version
  - Test the auto-upgrade plugin
- - [Report bugs on GitHub](https://github.com/PrestaShop/PrestaShop/issues)
- - To submit a bug fix, create a [pull request](https://github.com/PrestaShop/PrestaShop/compare)
+ - [Report bugs on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read [how to report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
+ - Submit a bug fix by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
  
  If everything is working well, comment this article to tell us, and share on social networks, we also need this feedback ;-)

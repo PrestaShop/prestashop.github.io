@@ -60,6 +60,9 @@ Go download and install this Beta version as a test store, either on your machin
   - Hindi
   - Bosnian
   - Mexican Spanish
+  - Latvian
+  - Galician
+  - Arabic
  
 
 ## The technical side

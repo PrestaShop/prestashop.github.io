@@ -24,7 +24,7 @@ We are now launching this project with you, not only bringing modules back but a
 So, on the PrestaShop’s Product Management team, we have chosen the most important native modules based on community feedbacks on [github](https://github.com/PrestaShop/PrestaShop), on [uservoice](http://feedback.prestashop.com/forums/387864-prestashop-1-7-x) and on real-life [events](https://www.prestashop.com/en/events), and we defined their features based on needs, trends and legislations.
 We also want to rework some of current native modules of Prestashop 1.7.
  
-For the next releases, we aim to bring back Wishlist, Product review and Legal compliance modules and rework Reassurance block and VAT number module. We try to include in every release some of your ideas and request.For example, stock location, not in a module but in the core, will be back soon in 1.7.5.0.
+For the next releases, we aim to bring back Wishlist, Product review, Legal compliance modules and rework Reassurance block, VAT number module. We try to include in every release some of your ideas and request.For example, stock location, not in a module but in the core, will be back soon in 1.7.5.0.
 
 
 ## Smart menu

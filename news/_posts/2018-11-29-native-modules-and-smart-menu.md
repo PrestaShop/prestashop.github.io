@@ -29,7 +29,7 @@ For the next releases, we aim to bring back Wishlist, Product review and Legal c
 
 ## Smart menu
 
-For one of the first project the focus is on one of the most important PrestaShop modules, the Main menu module, which displays the Front Office menu. Many merchants use the current version, but they are not fully satisfied it can be improved and UX configuration is quite difficult for some users.
+For the first project the focus is on one of the most important PrestaShop modules, the Main menu module, which displays the Front Office menu. Many merchants use the current version, but they are not fully satisfied it can be improved.
 SEOPresta, a french web agency, has developed a new menu module, now called Smart menu (this module is open-source) and suggested to include it on the software. Prestasafe from SEOPresta has worked on it and now we need some help on in it in order to improve this menu module and make it the best as possible for merchants and customers.
 
 You’ll find the repository of the module on GitHub, don’t hesitate to test it, give your feedback, contribute code and improve it : [https://github.com/PrestaShop/seoprestamenu](https://github.com/PrestaShop/seoprestamenu)

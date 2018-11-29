@@ -19,7 +19,7 @@ It is the strength of this community that renders each version of the software m
 
 ## A bit of historical background
 
-We all know it, when PrestaShop 1.7 was first released in 2016 it included less native modules than 1.6. At that point in time, some had been considered obsolete and they needed improvements. Which turned out to be wrong. Many merchants claimed there was a real need for some of the removed modules regarding their business. Therefore, it appears important to bring some the most important modules back in the software… and here we are!
+We all know it, when PrestaShop 1.7 was first released in 2016 it included less native modules than 1.6. At that point in time, some had been considered obsolete, they had some issues and they needed improvements. Many merchants claimed there was a real need for some of the removed modules regarding their business. Therefore, it appears important to rework and bring some of the most important modules back in the software… and here we are!
 We are now launching this project with you, not only bringing modules back but also aiming at improving user experience and fixing most bugs. 
 So, on the PrestaShop’s Product Management team, we have chosen the most important native modules based on community feedbacks on [github](https://github.com/PrestaShop/PrestaShop), on [uservoice](http://feedback.prestashop.com/forums/387864-prestashop-1-7-x) and on real-life [events](https://www.prestashop.com/en/events), and we defined their features based on needs, trends and legislations.
 We also want to rework some of current native modules of Prestashop 1.7.

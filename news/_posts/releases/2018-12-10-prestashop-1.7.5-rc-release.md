@@ -31,11 +31,11 @@ PrestaShop now clears the symfony cache when an action is performed on a module 
 This is necessary because modules can now use Symfony routing and services, so we need to clear the cache if we want
 these services/routing to be updated.
 
-### Changelog beta / release candidate
+### Changelog
 
-44 pull requests from 14 developers have been merge since the beta release:
+44 pull requests from 14 developers have been merge since the beta release. Read the [Changelog](https://assets.prestashop2.com/en/system/files/ps_releases/changelog_1.7.5.0-rc.1.txt) for details.
 
-- [Changelog](https://assets.prestashop2.com/en/system/files/ps_releases/changelog_1.7.5.0-rc.1.txt)
+A total of [130 issues have been fixed for the 1.7.5.0 milestone](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3AFixed+milestone%3A1.7.5.0+is%3Aclosed).
 
 
 ## News & improvements already announced in the beta release

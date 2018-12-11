@@ -15,7 +15,7 @@ tags:
 
 A few weeks after the beta, the first release candidate for PrestaShop 1.7.5.0 is now ready for you to test!
 
-This is the last step before releasing the final 1.7.5.0. The aim of this version is to verify that all regressions found during the beta have been fixed, and that no new ones are reported by the community users. If nothing is reported by December 10, then the final version of 1.7.5.0 will be made available.
+This is the last step before releasing the final 1.7.5.0. The aim of this version is to verify that all regressions found during the beta have been fixed, and that no new ones are reported by the community users. If nothing is reported by December 17, then the final version of 1.7.5.0 will be made available.
 
 Please note that it is not currently possible to perform an automatic upgrade from the Beta to the Release Candidate. And, it will not be possible either to upgrade from this Release Candidate to the final release.
 

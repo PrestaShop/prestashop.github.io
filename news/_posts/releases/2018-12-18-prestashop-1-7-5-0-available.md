@@ -14,7 +14,7 @@ tags:
  - development
 ---
 
-After a Beta and a Release Candidate, the long awaited PrestaShop 1.7.5.0 is released and is available for download.
+After a Beta and a Release Candidate, the long awaited PrestaShop 1.7.5.0 has been released and is available for download.
 As usual, you can upgrade with the Auto upgrade module. However, considering that the current period is usually critical for merchants sales, for sure, some might prefer to wait for a more appropriate time :-)
 
 ![1.7.5.0 Available](/assets/images/2018/12/1.7.5.jpg)
@@ -34,9 +34,9 @@ A lot has been done to make this “minor” PrestaShop version a reality. Here�
 
 ### SEO improvements in category page:
 
-- The first page no longer has a duplicate URL with &page=1
+- The first page no longer has a duplicate URL with `&page=1`
 - The category block is no longer displayed after the first page
-- Improved default URLs for brands & suppliers (now are /brand/123-somebrand and /supplier/123-mysupplier instead of /123_somebrand and /123__mysupplier)
+- Improved default URLs for brands & suppliers (now are `/brand/123-somebrand` and `/supplier/123-mysupplier` instead of `/123_somebrand` and `/123__mysupplier`)
 - Helper card in SEO & URL page
 
 
@@ -120,7 +120,7 @@ Newly migrated pages:
 
 Controllers:
 
-- You can now link migrated controllers to legacy one to avoid breaking links thanks to the [_legacy_link routing property](https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/controller-routing/#more-about-the-legacy-link-property).
+- You can now link migrated controllers to legacy one to avoid breaking links thanks to the [_legacy_link routing property](https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/controller-routing/#the-legacy-link-property).
 
 The style of the migrated forms has been improved.
 
@@ -157,7 +157,7 @@ PrestaShop now clears the symfony cache when an action is performed on a module 
 
 PrestaShop 1.7.5 is above all a community project: from the 75 committers who contributed to this release, **4 are new contributors** and over two thirds were community members.
 
-A huge “thank you!” to these 75 number fine people: Amazzing, Anas Mammeri, Andy Pieters, anegoda1995, Ansar Mallouli, Antoine THOMAS, Aurélien Pelletier, Axome, azisyus, Ben Wallis, can, Code Utopia, Cristiano Verardi, Dhavalkumar Prajapati, Dheeraj Sharma, fatmaBouchekoua, fouratachour, FranckRIBEIRO, Fransuisse, Guillaume Durand, hadrich-hatem, idnovate, iqit-commerce (Marcin Sz), Ishiki, jf-viguier, Jocelyn Fournier, Johannes Schramm, Jonathan Lelievre, JuanjoSCu, Jérôme H, khouloud.belguith, Lathanao, Leandro F. L, Louise Bonnard, lozal2244, Lucas Rolff, mahdi, Marion François, Mathias Reker, Mathieu Ferment, Matt75, Matthieu Mota, Mehdi, mehdi-ghezal, Michael Käfer, Mickaël Andrieu, okom3pom, Oskar Andersson, Pablo Borowicz, Patrick Weinstein, Pedro Câmara, Pedro Rendeiro, Peter Schaeffer, Pierre RAMBAUD, Presta Module, rdy4ever, Rokas Zygmantas, Rudra Sarkar, Rémi Gaillard, sadlyblue, sallemiines, seleda, Sergey P, Simone, Sébastien Bareyre, Sébastien LE, RUCHEC, Thomas Leviandier, Thomas Nabord, tolispy, Tomas Ilginis, Tony Botalla, unlocomqx, Web Premiere, yosra.akrout, Šarūnas Jonušas!
+A huge “thank you!” to these 75 fine people: Amazzing, Anas Mammeri, Andy Pieters, anegoda1995, Ansar Mallouli, Antoine THOMAS, Aurélien Pelletier, Axome, azisyus, Ben Wallis, can, Code Utopia, Cristiano Verardi, Dhavalkumar Prajapati, Dheeraj Sharma, fatmaBouchekoua, fouratachour, FranckRIBEIRO, Fransuisse, Guillaume Durand, hadrich-hatem, idnovate, iqit-commerce (Marcin Sz), Ishiki, jf-viguier, Jocelyn Fournier, Johannes Schramm, Jonathan Lelievre, JuanjoSCu, Jérôme H, khouloud.belguith, Lathanao, Leandro F. L, Louise Bonnard, lozal2244, Lucas Rolff, mahdi, Marion François, Mathias Reker, Mathieu Ferment, Matt75, Matthieu Mota, Mehdi, mehdi-ghezal, Michael Käfer, Mickaël Andrieu, okom3pom, Oskar Andersson, Pablo Borowicz, Patrick Weinstein, Pedro Câmara, Pedro Rendeiro, Peter Schaeffer, Pierre RAMBAUD, Presta Module, rdy4ever, Rokas Zygmantas, Rudra Sarkar, Rémi Gaillard, sadlyblue, sallemiines, seleda, Sergey P, Simone, Sébastien Bareyre, Sébastien LE, RUCHEC, Thomas Leviandier, Thomas Nabord, tolispy, Tomas Ilginis, Tony Botalla, unlocomqx, Web Premiere, yosra.akrout, Šarūnas Jonušas!
 
 Thank you again for helping improve the life of more than 270,000 online merchants with ideas, improvements, and fixes!
 

@@ -152,6 +152,10 @@ The developer documentation includes a [description of hooks](https://devdocs.pr
 
 PrestaShop now clears the symfony cache when an action is performed on a module (install, uninstall, enable, …). This is necessary because modules can now use Symfony routing and services, so we need to clear the cache if we want these services/routing to be updated.
 
+### Performance improvements
+
+Lazy loading of the variables returned by the Cart / Order / Product presenters: if some informations are not used in your templates, they are not computed anymore.
+
 
 ## PrestaShop ❤ Community
 

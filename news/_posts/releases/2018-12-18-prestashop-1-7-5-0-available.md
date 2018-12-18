@@ -19,6 +19,17 @@ As usual, you can upgrade with the Auto upgrade module. However, considering tha
 
 ![1.7.5.0 Available](/assets/images/2018/12/1.7.5.jpg)
 
+## Changes
+
+A lot has been done to make this “minor” PrestaShop version a reality. Here’s 1.7.5 in numbers:
+
+- 448 merged Pull Requests (vs 210 in 1.7.3 and 260 in 1.7.4)
+- 2903 files changed (164812 insertions, 129497 deletions)
+- 2079 commits merged
+- 114 issues fixed
+- 75 people contributed!
+
+
 ## What’s new
 
 ### SEO improvements in category page:
@@ -139,19 +150,7 @@ The developer documentation includes a [description of hooks](https://devdocs.pr
 
 ### Clear cache on module action
 
-PrestaShop now clears the symfony cache when an action is performed on a module (install, uninstall, enable, …) This is necessary because modules can now use Symfony routing and services, so we need to clear the cache if we want these services/routing to be updated.
-
-
-### Changes
-
-A lot has been done to make this “minor” PrestaShop version a reality. Here’s 1.7.5 in numbers:
-
-- 448 merged Pull Requests (vs 210 in 1.7.3 and 260 in 1.7.4)
-- files changed (164812 insertions, 129497 deletions)
-- 2903 files changed
-- 2079 commits merged
-- 114 issues fixed
-- 75 people contributed!
+PrestaShop now clears the symfony cache when an action is performed on a module (install, uninstall, enable, …). This is necessary because modules can now use Symfony routing and services, so we need to clear the cache if we want these services/routing to be updated.
 
 
 ## PrestaShop ❤ Community

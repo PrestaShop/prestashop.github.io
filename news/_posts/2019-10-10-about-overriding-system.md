@@ -51,7 +51,7 @@ Doing that allow this class to be used as a replacement of the original class in
 
 Also, he'd like to use the translator directly from the customer.
 
-His request was reasonnable, but we won't be able to accept it.
+ His request was reasonable, but we won't be able to accept this kind of changes anymore.
 
 ### The end of the overriding system
 

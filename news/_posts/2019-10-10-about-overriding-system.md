@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "the future of the overriding system of PrestaShop"
+ title:  "The future of PrestaShop's overrides system"
 subtitle: "From 2010 to 2019, what we have learned"
 date:   2019-10-10 10:30:00
 authors: [ mickaelandrieu ]

@@ -2,7 +2,7 @@
 layout: post
  title:  "The future of PrestaShop's overrides system"
 subtitle: "From 2010 to 2019, what we have learned"
-date:   2019-10-10 10:30:00
+ date:   2019-12-27 10:30:00
 authors: [ mickaelandrieu ]
 icon: icon-calendar
 tags:

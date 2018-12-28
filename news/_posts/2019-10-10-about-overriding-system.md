@@ -117,7 +117,7 @@ More importantly, since this service container is available in the modules, you 
 
 ### So, the overrides system is back... but in another way?
 
-Not... exactly, because as core team members we need to decide which service/class can be overriden or not: this means finally working on the right extension points. 
+Not... exactly, because as core team members we need to decide which service/class can be overridden or not: this means finally working on the right extension points. 
 
 > This is why we need you to tell us your needs!
 

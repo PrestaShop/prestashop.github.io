@@ -12,7 +12,7 @@ tags:
 
 # About the future of the overriding system of PrestaShop
 
-TLDR; the system is deprecated and not usable anymore in the back office and deprecated/discouraged in the front office. It will be removed in the next major version of PrestaShop in its original form.
+TLDR; the overrides system is deprecated in 1.7. It's not fully usable in the back office, and using it the front office is discouraged. It will be removed in the next major version of PrestaShop.
 
 
 ## What are the overrides?

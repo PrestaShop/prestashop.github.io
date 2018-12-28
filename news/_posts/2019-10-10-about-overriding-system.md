@@ -111,7 +111,7 @@ In PrestaShop 1.6, most of the interesting functions were in classes like Tools,
 
 In PrestaShop 1.7, and for a big part in the ``Core`` folder we are working on uncoupling our domain (Product management, Cart management, Grid management...) from our framework (Forms, Validation, Pages, Security).
 This work allows us to complete our test suite and to start to follow some best practices of developpement like SOLID.
-For instance, since PrestaShop 1.7 you have a Service Container in charge of the construction of the objects and to make them available everywhere you need them: no more `new XX(XX, YY, ..)` in your code.
+For instance, since PrestaShop 1.7 you have a Service Container in charge of constructing objects and to making them available everywhere you need them: no more `new XX(XX, YY, ..)` in your code.
 
 More, because this service container is available in the modules you can reuse the core services or ... "override" them with your own!
 

@@ -55,7 +55,7 @@ Also, he'd like to use the translator directly from the customer.
 
 ### The end of the overrides system
 
-Overrides are here since 9 years, and we now have a lot of feedbacks about it. Because developers are allowed to alter behavior of Core from their modules and because we are unable to ensure that Core update won't break updates from their modules, we didn't have fixed the "upgrade terrible mistake" issue, we only have taken the responsibility of it.
+The overrides system has been here for 9 years now, and we have had a lot of feedback about it. Since developers are allowed to alter the Core's behavior from their modules, and since it's impossible for us to make sure that Core upgrades won't break those changes, we have been unable to fix the so-called "upgrading was terrible mistake" issue (as frequently seen in the forums). We have only have taken the responsibility of it.
 
 The truth is that the only person able to ensure that its override won't break when the core will be upgraded is the person in charge of the override. In nine years, upgrading a shop is still a terrible experience and most of the times people don't upgrade their shop and keep their business outdated (technical point of view). We have worked hard on the upgraded module, describing more and more information about what could go wrong during the upgrade: databases migrations, non existing/deprecated classes functions/cache issues and so on.
 

@@ -26,7 +26,7 @@ With overrides, the modified files were located in a specific folder, both at th
 
 A community member [recently requested](https://github.com/PrestaShop/PrestaShop/pull/11910) some classes to be changed in order to allow module developers to alter both the Customer Form and Customer Form Formatter.
 
-We provide native (or Core) classes in PrestaShop, named *CustomerForm* and *FormFormatter* but our implementation doesn't fits his client needs. So his strategy was to override the 2 classes and use their own, extending the core class to not have to rewrite everything.
+PrestaShop provides two native (or Core) classes for this, *CustomerForm* and *FormFormatter*, but their implementation didn't fit his client's needs. So his strategy was to override the two classes with his own, extending the core classes to avoid having to rewrite the common parts.
 
 We didn't discuss details that much the developers needs, but we can imagine he wants to be able to override this function in charge of defining the Customer form:
 

@@ -115,7 +115,7 @@ For instance, since PrestaShop 1.7 you have a Service Container in charge of con
 
 More importantly, since this service container is available in the modules, you can reuse the core services or even... "override" them with your own!
 
-### So, the override system is back but using another form?
+### So, the overrides system is back... but in another way?
 
 Not... exactly, because as core team members we need to decide which service/class can be overriden or not: this means finally working on the right extension points. 
 

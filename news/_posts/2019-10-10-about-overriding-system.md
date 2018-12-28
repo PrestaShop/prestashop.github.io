@@ -22,7 +22,7 @@ Introduced in PrestaShop 1.4.x almost 9 years ago (in 2010 for the first alphas!
 At the time, the goal was to provide a better solution for developers who needed to alter the default behavior of PrestaShop for their needs, and who used to modify the source files directly. Changing files made it harder to keep PrestaShop updated, as changes to files were lost after the upgrade.
 With overrides, the modified files were located in a specific folder, both at the Shop or Module level. This way, upgrading the shops was easier: no need to care about these modified files anymore, PrestaShop was able to deal with them on its own.
 
-### Please, show me an exemple!
+ ### Please, show me an example!
 
 A [recent request](https://github.com/PrestaShop/PrestaShop/pull/11910) from a community member was to update some classes to allow module developers to alter both the Customer form and Customer Form formatter.
 

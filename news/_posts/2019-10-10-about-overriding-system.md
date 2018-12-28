@@ -1,8 +1,8 @@
 ---
 layout: post
- title:  "The future of PrestaShop's overrides system"
+title:  "The future of PrestaShop's overrides system"
 subtitle: "From 2010 to 2019, what we have learned"
- date:   2019-12-27 10:30:00
+date:   2019-12-27 10:30:00
 authors: [ mickaelandrieu ]
 icon: icon-calendar
 tags:
@@ -10,7 +10,7 @@ tags:
  - hooks
 ---
 
- # The future of PrestaShop's overrides system
+# The future of PrestaShop's overrides system
 
 TLDR; the overrides system is deprecated in 1.7. It's not fully usable in the back office, and using it the front office is discouraged. It will be removed in the next major version of PrestaShop.
 
@@ -22,7 +22,7 @@ Introduced in PrestaShop 1.4.x almost 9 years ago (in 2010 for the first alphas!
 At the time, the goal was to provide a better solution for developers who needed to alter the default behavior of PrestaShop for their needs, and who used to modify the source files directly. Changing files made it harder to keep PrestaShop updated, as changes to files were lost after the upgrade.
 With overrides, the modified files were located in a specific folder, both at the Shop or Module level. This way, upgrading the shops was easier: no need to care about these modified files anymore, PrestaShop was able to deal with them on its own.
 
- ### Please, show me an example!
+### Please, show me an example!
 
 A community member [recently requested](https://github.com/PrestaShop/PrestaShop/pull/11910) some classes to be changed in order to allow module developers to alter both the Customer Form and Customer Form Formatter.
 
@@ -72,7 +72,7 @@ The overrides system is deprecated in PrestaShop Front Office (and on the Custom
 
 The documentation will be updated and we will remove every mention of overrides.
 
- ### Overrides system in the next major release
+### Overrides system in the next major release
 
 The roadmap for the next major version is far from ready, but one of the main features we are aiming for is the complete migration of the Front Office using Symfony Framework and Twig. This will allow developers to have the same experience in both the Front Office and the Back Office.
 Overrides won't work and the override folder will be ignored.
@@ -99,7 +99,7 @@ The main advantage of hooks compared to the overrides is that they are not exclu
 In the next major, the class names linked to the Hook may change, but the system, the idea, the principles are the heart of PrestaShop and will stay and be improved.
 Since we will continue adding more and more hooks to the Core, most of the time developers won't need to use overrides.
 
- ### And we are improving the way business logic is organized
+### And we are improving the way business logic is organized
 
 If you compare legacy files on the `classes` folder to `src` folder, where most of the new 1.7 code lives, you will probably notice  that classes and templates are smaller, more meaningful and organized by domain.
 

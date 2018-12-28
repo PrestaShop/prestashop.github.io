@@ -28,7 +28,7 @@ A community member [recently requested](https://github.com/PrestaShop/PrestaShop
 
 PrestaShop provides two native (or Core) classes for this, *CustomerForm* and *FormFormatter*, but their implementation didn't fit his client's needs. So his strategy was to override the two classes with his own, extending the core classes to avoid having to rewrite the common parts.
 
-We didn't discuss details that much the developers needs, but we can imagine he wants to be able to override this function in charge of defining the Customer form:
+We didn't discuss details about the developer's needs, but we can imagine he wants to be able to override this function in charge of defining the Customer form:
 
 ```php
 <?php

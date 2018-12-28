@@ -59,7 +59,7 @@ The overrides system has been here for 9 years now, and we have had a lot of fee
 
 The truth is that the only person able to ensure that its override won't break when the core will be upgraded is the person in charge of that override. After nine years, upgrading a shop is still a terrible experience for some, which are (rightfully so) very vocal about it. This in turn scares many people away from upgrading, because they would prefer letting their shop get outdated (from technical point of view) rather than risking breaking it. We have worked hard on the upgrade module, which now is much better at identifying what could go wrong during the upgrade: database migrations, non existing/deprecated classes, functions/cache issues and so on. It's a very complex process, and it's better than it has ever been, even if there will always be edge cases.
 
-> We can say that undoubtely, Overriding system was a bad idea and we
+ > We can say that undoubtely, the overrides system was a bad idea and we
 > are deprecating it.
 
 ### Overriding system deprecation in 1.7.x releases

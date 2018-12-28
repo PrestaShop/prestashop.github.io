@@ -47,7 +47,7 @@ class CustomerFormatter extends NativeCustomerFormatter
 
 Doing that allow this class to be used as a replacement of the original class in the Core.
 
-But... the core implementation is not "extensible" enough: this is a bug! Most of its properties are private and a function named `addConstraints` (in charge of  the Form validation) is private!
+ But... the core implementation is not "extensible" enough: this is a problem! Most of its properties are private and a function named `addConstraints` (in charge of  the Form validation) is private!
 
 Also, he'd like to use the translator directly from the customer.
 

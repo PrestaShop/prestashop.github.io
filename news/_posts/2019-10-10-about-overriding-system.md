@@ -10,7 +10,7 @@ tags:
  - hooks
 ---
 
-# About the future of the overriding system of PrestaShop
+ # The future of PrestaShop's overrides system
 
 TLDR; the overrides system is deprecated in 1.7. It's not fully usable in the back office, and using it the front office is discouraged. It will be removed in the next major version of PrestaShop.
 

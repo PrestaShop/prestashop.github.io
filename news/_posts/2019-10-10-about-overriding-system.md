@@ -53,7 +53,7 @@ Also, he'd like to use the translator directly from the customer.
 
  His request was reasonable, but we won't be able to accept this kind of changes anymore.
 
-### The end of the overriding system
+### The end of the overrides system
 
 Overrides are here since 9 years, and we now have a lot of feedbacks about it. Because developers are allowed to alter behavior of Core from their modules and because we are unable to ensure that Core update won't break updates from their modules, we didn't have fixed the "upgrade terrible mistake" issue, we only have taken the responsibility of it.
 

@@ -89,7 +89,7 @@ At the end of December 2018, PrestaShop 1.6.1 was fully available (= 100% transl
 | Dutch | English | Estonian | French |
 | French, Canada | German | Greek | Italian |
 | Latvian | Lithuanian | Macedonian | Norwegian |
-| Persian | Polish | Portuguese | ** Portuguese, Brazil** |
+| Persian | Polish | Portuguese | **Portuguese, Brazil** |
 | Romanian | Russian | Slovak | Slovene |
 | Spanish | Swedish | Turkish | Ukrainian |
 | Vietnamese |

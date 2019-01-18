@@ -13,7 +13,7 @@ Using an extensible e-commerce platform like PrestaShop is awesome for both deve
 
 But, no matter how well designed is your project and how many tests you have, at some point your website can become unavailable.
 
-This can be because of your database, or calls to third party services (payment methods API, PrestaShop REST API to retrieve modules information) are unavailable.
+This can be because of your database, or calls to third party services are unavailable (e.g: payment methods API, PrestaShop REST API to retrieve modules information, synchronization with an ERP, automatisation of warehouse & logistic, ...)
 
 Instead of thinking everything will be ok, we need - as developers - to manage the failures of our systems.
 

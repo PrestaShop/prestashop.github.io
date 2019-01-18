@@ -19,10 +19,9 @@ Instead of thinking everything will be ok, we need - as developers - to manage t
 
 We need to create resilient systems, to create websites able to recover quickly from network disasters.
 
-## The risks of depending to external services
+## The risks of depending on external services
 
-Assuming all external services will works fine is risky because you don't think
-about what should happens in case of unavailability:
+Assuming all external services will works fine is risky because you don't think about what should happens in case of unavailability:
 
 * if the payment APIs are not reachable, instead of freezing your shop you could suggest your customer to contact them back once the system is ok and provide them a little discount;
 
@@ -35,7 +34,7 @@ at least in english;
 
 Another issue with this kind of naive assumptions is that your system will try to contact again and again the third party service. This is slowing your system and make the user experience terrible when you could manage to provide an alternative response.
 
-> There is no good reason to provide terrible user experience! period.
+> There is no good reason to provide such a terrible user experience! period.
 
 ## Introducing the PrestaShop Circuit Breaker library
 

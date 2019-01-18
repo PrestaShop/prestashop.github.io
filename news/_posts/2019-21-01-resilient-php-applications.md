@@ -50,7 +50,7 @@ The basic idea behind the circuit breaker is very simple:
 
 This is also a big change of mindset for both the e-merchants and the developers, because for each process they need to think about what should be done in case of unavailability of a service.
 
-While the web developers try to handle the old web browsers constraints when they design a website, it's possible to think from the beginning about a "degraded experience" when some third party services are not available.
+Like web developers do to handle old web browers when they design a website, it's possible to think from the beginning about a "degraded experience" when some third party services are not available, using a "circuit breaker".
 
 ### How works the PrestaShop Circuit Breaker?
 

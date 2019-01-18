@@ -2,7 +2,7 @@
 layout: post
 title:  "Resilient PHP applications"
 subtitle: "Introducing the PrestaShop Circuit Breaker library"
-date:   2019-01-10 10:00:00
+date:   2019-01-21 10:00:00
 authors: [ mandrieu ]
 icon: icon-blaster
 tags:
@@ -52,7 +52,7 @@ The basic idea behind the circuit breaker is very simple:
 
 This is also a big change of mindset for both the e-merchants and the developers, because for each process they need to think about what should be done in case of unavailability of a service.
 
-Like we already do in some old web browsers for the design of our websites, we should think about degraded experience when some third party services we use are not availables.
+While the web developers try to handle the old web browsers constraints when they design a website, it's possible to think from the beginning about a "degraded experience" when some third party services are not available.
 
 ### How works the PrestaShop Circuit Breaker?
 
@@ -104,4 +104,4 @@ $circuitBreaker->call('https://api.domain.com', $fallbackResponse);
 We will start to use it on the "so well-known" _gamification_ module soon,
 and the library will be available in PrestaShop in the next minor release (1.7.6). Step by step, we will make PrestaShop Core and native modules resilient to networks failures.
 
-As most of our work, we have released the circuit breaker under MIT license and on our main PrestaShop organization. You are very welcome to contribute the library and to fill issues if you have specific needs.
+The Circuit Breaker library is developed and distributed under the MIT license, like many other librairies and dependencies included in the PrestaShop project (example: Symfony). This way, it is possible for anyone to use it with any other project. Your feedback and your contribution are welcome: feel free to open pull requests and issues about your needs.

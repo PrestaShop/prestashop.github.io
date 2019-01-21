@@ -41,7 +41,7 @@ The idea behind the circuit breaker is very simple:
 * Once we reach a defined numbers of failures (means the service is unreachable), the Circuit Breaker is "Open": an alternative response is provided and no calls to the service are done;
 * After a defined amount of time (sometimes called "reset timeout"), the Circuit Breaker tries to access the service: if the service is available it will be used again, otherwise it provides an alternative response.
 
-![https://martinfowler.com/bliki/images/circuitBreaker/sketch.png](https://martinfowler.com/bliki/images/circuitBreaker/sketch.png)
+![https://martinfowler.com/bliki/CircuitBreaker.html](https://martinfowler.com/bliki/images/circuitBreaker/sketch.png)
 
 > Schema from Martin Fowler's blog.
 

@@ -58,7 +58,8 @@ We were not satisfied with the quality and the constraints of the existing libra
 * We want something that doesn't require uncommon PHP extensions (like *pcntl*);
 * And ... we stil need to provide PHP 5.6+ compatibility.
 
-This is why we have worked on our own implementation of the design pattern, making adapters that relies on the popular HTTP Client [Guzzle](http://docs.guzzlephp.org/en/stable/index.html) to make calls and on the [Symfony Cache](https://symfony.com/doc/3.4/components/cache.html#simple-caching-psr-16) component for the storage/logging of the calls.
+
+This is why we have worked on our own implementation of the design pattern, that relies on the popular HTTP Client [Guzzle](http://docs.guzzlephp.org/en/stable/index.html) to make third service calls, and on the [Symfony Cache](https://symfony.com/doc/3.4/components/cache.html#simple-caching-psr-16) component to store and log every call.
 
 Let's see how it will be used in PrestaShop modules controllers starting from PrestaShop 1.7.6:
 

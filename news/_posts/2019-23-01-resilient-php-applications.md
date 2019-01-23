@@ -2,7 +2,7 @@
 layout: post
 title:  "Resilient PHP applications"
 subtitle: "Introducing the PrestaShop Circuit Breaker library"
-date:   2019-01-21 10:00:00
+date:   2019-01-23 11:10:00
 authors: [ mandrieu ]
 icon: icon-blaster
 tags:
@@ -25,7 +25,7 @@ Assuming that all external services will work just fine is risky because you don
 * You ought to be able to install PrestaShop even if translations APIs are not reachable, at least in English;
 * You ought to be able to access your back office, no matter how many external APIs respond.
 
-**The collapse of a third party service should never impact your shop.**
+**The collapse of a third-party service should never impact your shop.**
 
 Another issue with this kind of naive assumptions is that your system will try to contact again and again the third-party service. As a consequence, it slows down your system and makes the user experience terrible when you could instead find out an alternative response.
 
@@ -33,7 +33,7 @@ Another issue with this kind of naive assumptions is that your system will try t
 
 ## Introducing the PrestaShop Circuit Breaker library
 
-The [Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html) design pattern provides strategies and functions to manage the unavailability of the third party services.
+The [Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html) design pattern provides strategies and functions to manage the unavailability of the third-party services.
 
 The idea behind the circuit breaker is very simple:
 
@@ -59,7 +59,7 @@ We were not satisfied with the quality and the constraints of the existing libra
 * And ... we stil need to provide PHP 5.6+ compatibility.
 
 
-This is why we have worked on our own implementation of the design pattern, that relies on the popular HTTP Client [Guzzle](http://docs.guzzlephp.org/en/stable/index.html) to make third service calls, and on the [Symfony Cache](https://symfony.com/doc/3.4/components/cache.html#simple-caching-psr-16) component to store and log every call.
+This is why we have worked on our own implementation of the design pattern, that relies on the popular HTTP Client [Guzzle](http://docs.guzzlephp.org/en/stable/index.html) to make third-party service calls, and on the [Symfony Cache](https://symfony.com/doc/3.4/components/cache.html#simple-caching-psr-16) component to store and log every call.
 
 Let's see how it will be used in PrestaShop modules controllers starting from PrestaShop 1.7.6:
 

@@ -17,7 +17,7 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ### 1.7.5 catalog ready for translation
 
-No surprise, the 1.7.5 catalog has finally been exported and pushed in Crowdin. It is the end of a long way to leads to the soon-released PrestaShop 1.7.5 beta phase. Keep reading this devblog to be informed! And because you are the best translators’ community, most of you have already started to translate the new strings, bringing remarks to add context or correct it… thank you so much for that! How pleasant it is to be part of this wide collective work that helps everybody get each time a better translation and a much accurate wording. We are all going in the right direction, thanks to your seriousness and dedication; you can be proud. ;-)
+No surprise, the 1.7.5 catalog has finally been exported and pushed in Crowdin. It is the end of a long way that leads to the soon-released PrestaShop 1.7.5 beta phase. Keep reading this devblog to be informed! And because you are the best translators’ community, most of you have already started to translate the new strings, bringing remarks to add context or correct it… thank you so much for that! How pleasant it is to be part of this wide collective work that helps everybody get each time a better translation and a much accurate wording. We are all going in the right direction, thanks to your seriousness and dedication; you can be proud. ;-)
 
 
 ## A few stats

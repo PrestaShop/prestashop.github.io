@@ -30,7 +30,7 @@ Before you start writing, please send us a short proposal at [{{ site.email }}](
 Also, if we merge one of your cool pull requests on [the PrestaShop project](http://gihub.com/PrestaShop/PrestaShop), we may invite you to tell us more about it here.
 
 <div class="alert alert-info" role="alert">
-All content on the Build.PrestaShop.com site is licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 license</a> -- meaning that it is in the Public Domain. Use it however you want!
+Unless specified otherwise on the article, all content on the Build.PrestaShop.com site is licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 license</a> -- meaning that it is in the Public Domain. Use it however you want!
 
 <img src="/assets/images/2015/06/cc-zero.png" style="margin-right:auto;margin-left:auto;display:block;" />
 </div>

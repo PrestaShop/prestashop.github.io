@@ -2,9 +2,16 @@
 language: ruby
 rvm:
   - 2.1
-script:
-  - bundle exec jekyll build
-  - bundle exec jekyll algolia push
+
+jobs:
+  include:
+    - stage: build
+      script:
+        - bundle exec jekyll build
+    - stage: deploy algolia
+      if: (NOT type IN (pull_request)) AND (branch = master)
+      script:
+        - bundle exec jekyll algolia push
 
 env:
   global:

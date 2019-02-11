@@ -142,7 +142,7 @@ As a side note, you may have noticed that all stacks contain Hooks as extension 
 
 PrestaShop is based on the [MVC pattern][MVC], where Controllers are in charge of handling requests and returning responses, ideally delegating the hard work on dedicated services.
 
-Controllers are divided int two big families: those that handle FO requests, and those that handle BO requests.
+Controllers are divided in two big families: those that handle FO requests, and those that handle BO requests.
 
 ![Figure 3: Core controllers][figure-3]
 _(Figure 3: Core controllers)_

@@ -23,8 +23,8 @@ _(Figure 1: Overview of PrestaShop 1.7's architecture, early 2019)_
 
 PrestaShop's architecture can be separated in two main logical sections:
 
-- The **Front Office** (or BO) – the public-facing site of a shop,
-- The **Back Office** (or FO) – where merchants manage their shop.
+- The **Front Office** (or FO) – the public-facing site of a shop,
+- The **Back Office** (or BO) – where merchants manage their shop.
 
 > In Figure 1, this is represented by two big, blue(ish) columns.
 

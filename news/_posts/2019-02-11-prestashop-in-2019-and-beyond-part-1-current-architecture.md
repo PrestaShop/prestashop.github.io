@@ -76,14 +76,14 @@ Now that we have a general idea of how things work, let's dive a little deeper i
 
 While controllers will be different in BO and FO, pretty much all of PrestaShop's PHP code is shared between those two environments. This code is split in four logical subsystems:
 
-- Legacy code – located in `/classes`
+- Legacy code – located in `/classes` and `/controllers`
 - Adapter code – located in `/src/Adapter`
 - Core code – located in `/src/Core`
 - Symfony code (or "PrestaShop Bundle") – located in `/src/PrestaShopBundle`
 
 To explain this structure, let's look back a little. 
 
-Up until 1.6.0, all code lived in the `classes` directory. One of the main problems with the legacy architecture is that classes are both static and too big. Since refactoring all legacy classes would take a very long time, during the development of 1.6.1 it was decided to [separate legacy code from new, loosely coupled code][architecture-1610].
+Up until 1.6.0, all shared code lived in the `classes` directory. One of the main problems with the legacy architecture is that classes are both static and too big. Since refactoring all legacy classes would take a very long time, during the development of 1.6.1 it was decided to [separate legacy code from new, loosely coupled code][architecture-1610].
 
 This decision aimed at gradually producing a cleaner codebase without introducing breaking changes, thus giving module developers time to adapt their modules. 
 

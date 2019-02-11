@@ -43,7 +43,7 @@ If we analyze how the back-end is structured, we can find some common elements t
 - Core Business
 - Modules
 
-Like most web applications of this kind, PrestaShop is heavily **Database**-driven. That's where the Single Source of Truth is found. This means that all data is stored there, regardless of if it's used in the BO or FO.
+Like most web applications of this kind, PrestaShop is heavily **Database**-driven. That's where the Single Source of Truth is found. This means that all data is stored there, regardless of whether it's used in the BO or FO.
 
 > In Figure 1, the database is placed a little outside the diagram to point out to the fact that it's a system of its own that could be on a separate server, in a cluster, etc.
 

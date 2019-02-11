@@ -10,7 +10,7 @@ tags: [1.7, architecture]
 
 This is the first in a series of articles we [introduced last week][introduction], that aims at describing where we are, where we are going, and some ideas on how we'll get there.
 
-As pointed out in the introduction article, the first step to be able to map a path into the future is understand where you stand currently. In this article, we'll try and describe the current architecture of PrestaShop.
+As pointed out in the introduction article, the first step to be able to map a path into the future is to understand where you stand currently. In this article, we'll try and describe the current architecture of PrestaShop.
 
 # The Current Architecture
 _(or "Point A – Where We Are")_

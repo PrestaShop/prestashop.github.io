@@ -175,7 +175,7 @@ There are two kinds of themes in PrestaShop:
 - FO themes – of which you can have as many as you want, and are [downloadable from the Addons Marketplace][addons-themes]
 - BO themes – which are not replaceable
 
-Since FO themes work on top of legacy controllers, they are based on Smarty. They all integrate a shared core javascript library which is called "core.js", which has with jQuery 2.x bundled in.
+Since FO themes work on top of legacy controllers, they are based on Smarty. They all integrate a shared core javascript library which is called "core.js", which has jQuery 2.x bundled in.
 
 In 1.7, PrestaShop introduced the [parent-child theme feature][child-themes], which allows themes to extend other themes. This feature makes it much easier to build custom themes.
 

@@ -2,13 +2,13 @@
 layout: post
 title:  "PrestaShop in 2019 and beyond, part 1: The current architecture"
 subtitle: "aka point A – Where we are"
-date:   2019-02-11 09:30:00
+date:   2019-02-18 09:30:00
 authors: [ PabloBorowicz ]
 icon: icon-compass
 tags: [1.7, architecture]
 ---
 
-This is the first in a series of articles we [introduced last week][introduction], that aims at describing where we are, where we are going, and some ideas on how we'll get there.
+This is the first in a series of articles we [introduced a couple days ago][introduction], that aims at describing where we are, where we are going, and some ideas on how we'll get there.
 
 As pointed out in the introduction article, the first step to be able to map a path into the future is to understand where you stand currently. In this article, we'll try and describe the current architecture of PrestaShop.
 

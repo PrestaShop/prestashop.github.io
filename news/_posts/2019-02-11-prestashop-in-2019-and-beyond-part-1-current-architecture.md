@@ -17,8 +17,8 @@ _(or "Point A – Where We Are")_
 
 Here's an overview of what PrestaShop 1.7 looks like as of early 2019.
 
-![Figure 1: Overview of PrestaShop 1.7's architecture, early 2019][figure-1]
-_(Figure 1: Overview of PrestaShop 1.7's architecture, early 2019)_
+![Figure 1: Basic overview of PrestaShop 1.7's architecture, early 2019][figure-1]
+_(Figure 1: Basic overview of PrestaShop 1.7's architecture, early 2019)_
 {: .text-center }
 
 PrestaShop's architecture can be separated in two main logical sections:
@@ -234,14 +234,18 @@ As you can see, the module system has many features, making modules very powerfu
 
 ## And more...
 
-If you got here, now you know PrestaShop is much more complex than it can seem to be. But that's not all, there are actually many more other subsystems, too many to cover them all in detail here. Just to name a few more:
+If you got here, now you know PrestaShop is much more complex than it can seem to be. Remember the overview at the top of the article? Take a look at this more detailed version of it now:
+
+![Comprehensive overview][comprehensive-overview]
+ 
+There are actually many more other subsystems than the ones we described, too many to cover them all in detail here. Just to name a few more:
 
 - Translation and localization – PrestaShop can be translated and localized to any language and country: currencies, taxes, shipping locations, and more.
 - Update – PrestaShop supports downloading and updating modules, and it can also update itself using the [Autoupgrade module][autoupgrade].
 - Export/Import – Merchants can migrate their data from/to PrestaShop.
 - Emails – All emails sent by PrestaShop are customizable and themeable.
 
-That's all for today! In the next part, we'll analyze what are the main pain points of the current state.
+That's all for today! In the next part, we'll analyze what are the main pain points of this architecture.
 
 ---
 
@@ -255,9 +259,10 @@ In case you forgot, here are the topics that will be covered during this series:
 4. Connecting the dots (or _"Some ideas on how we'll get there"_)
 
 
-[figure-1]: ../../assets/images/2019/02/architecture-overview-current.jpg
-[figure-2]: ../../assets/images/2019/02/architecture-core-stack.jpg
-[figure-3]: ../../assets/images/2019/02/architecture-controllers.jpg
+[figure-1]: /assets/images/2019/02/architecture-conceptual-overview-current.jpg
+[figure-2]: /assets/images/2019/02/architecture-core-stack.jpg
+[figure-3]: /assets/images/2019/02/architecture-controllers.jpg
+[comprehensive-overview]: /assets/images/2019/02/architecture-comprehensive-overview-current.jpg
 [introduction]: http://build.prestashop.com/news/prestashop-in-2019-and-beyond-introduction/
 [architecture-1610]: http://build.prestashop.com/news/new-architecture-1-6-1-0/
 [introducing-symfony]: http://build.prestashop.com/news/prestashop-1-7-and-symfony/

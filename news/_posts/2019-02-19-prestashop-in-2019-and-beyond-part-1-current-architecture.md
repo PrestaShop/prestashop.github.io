@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop in 2019 and beyond, part 1: The current architecture"
 subtitle: "aka point A – Where we are"
-date:   2019-02-18 09:30:00
+date:   2019-02-19 10:30:00
 authors: [ PabloBorowicz ]
 icon: icon-compass
 tags: [1.7, architecture]

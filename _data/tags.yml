@@ -26,6 +26,8 @@
   name: PrestaShop 1.7.2.x
 - slug: 1.7.2.0
   name: PrestaShop 1.7.2.0
+- slug: 1.7.3.X
+  name: PrestaShop 1.7.3.x
 - slug: 1.7.3.0
   name: PrestaShop 1.7.3.0
 - slug: 1.7.3.1
@@ -42,8 +44,14 @@
   name: PrestaShop 1.7.4.2
 - slug: 1.7.4.3
   name: PrestaShop 1.7.4.3
+- slug: 1.7.4.4
+  name: PrestaShop 1.7.4.4
 - slug: 1.7.5.x
   name: PrestaShop 1.7.5.x
+- slug: 1.7.5.0
+  name: PrestaShop 1.7.5.0
+- slug: 1.7.5.1
+  name: PrestaShop 1.7.5.1
 - slug: architecture
   name: Architecture
 - slug: autoupgrade
@@ -104,6 +112,8 @@
   name: Product
 - slug: psday
   name: PrestaShop Day
+- slug: security
+  name: Security
 - slug: semver
   name: Semantic Versioning
 - slug: starter-theme

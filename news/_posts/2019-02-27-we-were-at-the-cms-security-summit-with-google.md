@@ -18,7 +18,7 @@ As a member of the Open Source community, a few weeks ago PrestaShop went to the
 
 You’re all asking: “But what can we do on January in Chicago except eating Deep Dish pizza and drinking India Pale Ale? 
 
-![CMS Security Summit dinner](/assets/images/2019/02/security-summit-2.png)
+![CMS Security Summit dinner](/assets/images/2019/02/security-summit-2.jpg)
 
 (Yes, it is pretty tasty!)
 

@@ -84,7 +84,9 @@ The best way to have a secure system is to stay up-to-date. Many people don’t 
  
 Seeing things exclusively through an economic prism can be misleading: yes, upgrading may cost you money now. But think about what could be lost if an intruder comes, injects an XSS and steals your clients’ information, or adds a script that shuts shop off or deletes everything you had!
 
-Well, how to update a CMS when a lot of modules or a custom theme are already installed? How to avoid breaking something? How to be sure that users and developers are following the best practices?
+But, how to update a CMS when a lot of modules or a custom theme are already installed? How to avoid breaking something that we are not aware of? How to be sure that users and developers are following the best practices?
+
+These are very difficult questions to which we still don't have the answer. But we are working on it. If you encounter problems during upgrading your shop, send us your feedback!
 
 Should we add an option or a command for automatic update and would you be brave enough to enable it? Would you help us to test it and debug it?
 

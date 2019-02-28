@@ -88,7 +88,9 @@ But, how to update a CMS when a lot of modules or a custom theme are already ins
 
 These are very difficult questions to which we still don't have the answer. But we are working on it. If you encounter problems during upgrading your shop, send us your feedback!
 
-Should we add an option or a command for automatic update and would you be brave enough to enable it? Would you help us to test it and debug it?
+Some CMSs already feature automatic self-updates that happen without any user interaction. At the summit, host providers called for all CMS to implement this feature as well.
+
+What do you think? Should we add it? And would you be brave enough to enable it? Would you help us test it and debug it?
 
 
 ## Tools and platform innovations

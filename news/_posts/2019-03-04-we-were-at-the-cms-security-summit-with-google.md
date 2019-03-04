@@ -2,7 +2,7 @@
 layout: post
 title:  "We were at the CMS Security Summit with Google"
 subtitle: "Security is very important for PrestaShop"
-date:   2019-02-27 15:45:00
+date:   2019-03-04 10:00:00
 authors: [ PierreRambaud ]
 icon: icon-padlock
 tags: [security]

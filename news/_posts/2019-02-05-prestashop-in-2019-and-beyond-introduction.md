@@ -24,7 +24,7 @@ During the last year, you may have seen me at PrestaShop events describing (alth
 
 Since this analysis is quite long and very information-dense, we decided to split it in four parts, that we'll publish during the following weeks:
 
-1. The Current Architecture (or _"Point A – Where we are"_)
+1. [The Current Architecture (or _"Point A – Where we are"_)](/news/prestashop-in-2019-and-beyond-part-1-current-architecture/)
 2. Pain Points (or _"What needs to be improved"_)
 3. The Future Architecture (or _"Point B – Where we are going"_)
 4. Connecting the dots (or _"Some ideas on how we'll get there"_)

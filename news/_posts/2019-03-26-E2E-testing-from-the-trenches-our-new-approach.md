@@ -36,7 +36,7 @@ If you want to run the tests or have an overview of the current stack, this is e
 
 Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the [DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/). Puppeteer runs everything in a [headless](https://developers.google.com/web/updates/2017/04/headless-chrome) (by default) Chrome instance, so you know you’ll be rendering things the same way you do in the Chrome browser, it is possible also to run it headfull. You can do anything that the tools can, and more, because now you have access to the objects that operate under the hood. 
 
-![Puppeteer schema](/assets/images/2019/03/image2.png)
+![Puppeteer schema](/assets/images/2019/03/image4.png)
 
 
 ## How Puppeteer tests look like ?
@@ -83,7 +83,7 @@ Puppeteer is really interesting for:
 
 - Catching (non visual) JS errors and not only the presence of elements in a page while running a scenario
 
-![Errors screenshot](/assets/images/2019/03/image3.png)
+![Errors screenshot](/assets/images/2019/03/image2.png)
 
 - Natively take screenshots and or create pdf document.
 - Less NPM dependencies
@@ -130,7 +130,7 @@ With a quick look, you can identify if tests have been done on a successful buil
 
 ## Puppeteer + Mocha in our E2E stack architecture
 
-![Stack schema](/assets/images/2019/03/image4.png)
+![Stack schema](/assets/images/2019/03/image3.png)
 
 E2E testing is traditionally not easy to maintain, but beginning to use Chrome headless made our tests more reliable, faster and simpler here @Prestashop. It is a real pleasure to test with Puppeteer and I recommend you to try it out on your Prestashop.
 

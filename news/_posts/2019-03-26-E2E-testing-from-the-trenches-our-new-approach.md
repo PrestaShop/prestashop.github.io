@@ -3,9 +3,9 @@ layout: post
 title:  "E2E testing from the trenches: Our new approach"
 subtitle: "Testing the last version of Prestashop before using it … a long story"
 date:   2019-03-04 10:00:00
-authors: [ PierreRambaud ]
-icon: icon-padlock
-tags: [security]
+authors: [ MehdiBadrani ]
+icon: icon-checked
+tags: [tests]
 ---
 
 This article is intended to catch you up with the most important changes in our testing framework. Terms, architecture, tools, and approaches to E2E testing in Prestashop in 2019.

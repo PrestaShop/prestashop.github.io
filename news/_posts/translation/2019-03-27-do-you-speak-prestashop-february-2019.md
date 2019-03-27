@@ -49,7 +49,7 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
 10. | Gabriel Tenita (ggedamed) | Romanian | 30
  
  
-#### Top 5 proofreaders in February:
+#### Top 10 proofreaders in February:
  
 | | Proofreader | Language | # Words
 |-| ---------- | -------- | ----------------

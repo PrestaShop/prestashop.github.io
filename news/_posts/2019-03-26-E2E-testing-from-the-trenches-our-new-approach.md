@@ -2,7 +2,7 @@
 layout: post
 title:  "E2E testing from the trenches: Our new approach"
 subtitle: "Testing the last version of Prestashop before using it … a long story"
-date:   2019-03-04 10:00:00
+date:   2019-04-03 11:00:00
 authors: [ MehdiBadrani ]
 icon: icon-checked
 tags: [tests]

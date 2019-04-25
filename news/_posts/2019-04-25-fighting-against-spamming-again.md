@@ -39,7 +39,7 @@ Well, the solution is the same for both 1.6 and 1.7 versions.
 
 Because this attack is caused by massive account creations containing untrustworthy links, we took the decision to prevent people from writing anything that looks like a URL within the customer account creation form. And therefore it will be impossible to create a customer with an URL as the first name and/or the last name.
 
-A patch is thus going to be released for versions 1.7.5.x and 1.6.1.x in order to mitigate the attack vector. Shops based on 1.6 will be able to retrieve this patch in the next 1.6.1.24 release (PR to come). As for PrestaShop 1.7, it will be included in the forthcoming 1.7.5.2 version. Have a look at the pull request here while waiting for the releases to upgrade your store.
+A patch is thus going to be released for versions 1.7.5.x and 1.6.1.x in order to mitigate the attack vector. Shops based on 1.6 will be able to retrieve this patch in the next 1.6.1.24 release - PR to come. As for PrestaShop 1.7, it will be included in the forthcoming 1.7.5.2 version. Have a look at the pull request [here](https://github.com/PrestaShop/PrestaShop/pull/13549) while waiting for the releases to upgrade your store.
 
 
 ## What to do next?

@@ -26,7 +26,7 @@ This update mitigates the problem by preventing attackers to use URLs as names. 
 
 Once this update has been applied, customers won't be able to register if their name contains a dot followed by a letter. For example, "John R.Hammond" won't work, but "John R. Hammond" will.
 
-There may already be customers on your shop with names like that. If that's the case, consider updating their names manually either by removing dots, adding a space after any dot, or replacing all dots by spaces.
+There may already be customers on your shop with names like that. If that's the case, next time they update their personal information, the form will require that they update their names manually either by removing dots, adding a space after any dot, or replacing all dots by spaces.
 
 
 ## Additional information

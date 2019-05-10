@@ -245,4 +245,3 @@ You can:
 
  
 If everything is working well, comment this article to tell us, and share on social networks, we also need this feedback.
-share on social networks, we also need this feedback.

@@ -228,6 +228,7 @@ Issues
 -   Vertically align the pagination system components [\#12392](https://github.com/PrestaShop/PrestaShop/issues/12392)
 -   Help isn't displayed on add customer page [\#13449](https://github.com/PrestaShop/PrestaShop/issues/13449)
 -   An exception is displayed when we try to upload in the logo section with an image which has a not recognized format [\#13729](https://github.com/PrestaShop/PrestaShop/issues/13729)
+- Tax excl column in catalog page doesn't take into account specific prices [\#13731](https://github.com/PrestaShop/PrestaShop/issues/13731)
 
 
 ## Download

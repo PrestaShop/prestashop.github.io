@@ -27,22 +27,26 @@ If you find regressions compared to previous versions, please create an issue on
 
 Remember, this beta version is pre-release software. Do not use it on your production shop!
 
+
 ## News & improvements
 
 ### New features & improvements
-
 
 -   SEO optimization for combination products: all combinations now have the parent product’s URL as their canonical, accessing it no longer issues a redirection, displays the default combination [\#13009](https://github.com/PrestaShop/PrestaShop/pull/13009)
 -   A “Price tax included” column has been added to the products list [\#11484](https://github.com/PrestaShop/PrestaShop/pull/11484)
 -   A new “modern” template design & wording for transactional emails and a
     new email template generation system[\#13004](https://github.com/PrestaShop/PrestaShop/pull/13004)
+
 ![New emails template](/assets/images/2019/05/1.7.6_beta_email_template_EN.jpg)
+
 -   Improved Catalog mode: it is now possible to choose to display#11688](https://github.com/PrestaShop/PrestaShop/pull/11688)
 -   Price & taxes project 
     - Bug fixes
     - Front-office improvements: cart price details, add to cart pop up,
       order confirmation [\#13047](https://github.com/PrestaShop/PrestaShop/pull/13047)
+
 ![Improved Prices and Taxes display](/assets/images/2019/05/1.7.6_beta_popup_cart_EN.png)
+
 -   New Theme & logo page design
 -   Improved mobile responsive in the Back-office [\#13049](https://github.com/PrestaShop/PrestaShop/pull/13049)
 -   Improved employee profile menu in the Back-office [\#12707](https://github.com/PrestaShop/PrestaShop/pull/12707)
@@ -51,7 +55,9 @@ Remember, this beta version is pre-release software. Do not use it on your produ
     -   New contextual welcome messages
     -   An avatar image is now displayed
 - More Helpers cards and Empty states added to the BO
+
 ![More Helpers Cards in the BO](/assets/images/2019/05/1.7.6_beta_popup_cart_EN.png)
+
 -   We have fixed many Back-office / Front-office design bugs and made some integration improvements:
     -   Fix bug on contact when mail is too long [\#12893](https://github.com/PrestaShop/PrestaShop/pull/12893)
     -   Fix labels display computing [\#13407](https://github.com/PrestaShop/PrestaShop/pull/13407)
@@ -60,6 +66,7 @@ Remember, this beta version is pre-release software. Do not use it on your produ
     -   Fix image dimensions in Product Card view [\#10297](https://github.com/PrestaShop/PrestaShop/pull/10297)
     -   Limit carrier image size on checkout page [\#12892](https://github.com/PrestaShop/PrestaShop/pull/12892)
     -   Add modal-dialog-centered class to classic theme [\#10253](https://github.com/PrestaShop/PrestaShop/pull/10253)
+
 
 ### New & improved core modules 
 
@@ -71,9 +78,7 @@ Remember, this beta version is pre-release software. Do not use it on your produ
 
 ## The technical side
 
-
 ### Technical improvements 
-
 
 -   Support of legacy translations of modules in Translations Manager of
     BO [\#11321](https://github.com/PrestaShop/PrestaShop/pull/11321)
@@ -87,14 +92,13 @@ Remember, this beta version is pre-release software. Do not use it on your produ
     -   Improve employee authorization process
     -   Cache introduced when loading modules
 -   Support of multiple grids on the same page
--   New [CLDR standard](http://cldr.unicode.org) implementation: improved localization of prices and amounts, will allow creating custom currencies in future versions
+-   New1.7.6_beta_banner_May19.jpg [CLDR standard](http://cldr.unicode.org) implementation: improved localization of prices and amounts, will allow creating custom currencies in future versions
 -   Web services:
     -   Product customization is now reachable [\#11938](https://github.com/PrestaShop/PrestaShop/pull/11938)
     -   Product combination information in Pack content is now available [\#12329](https://github.com/PrestaShop/PrestaShop/pull/12329)
 
 
 ### Notable fixes
-
 
 -   Fixed minimum order in the second currency [\#9665](https://github.com/PrestaShop/PrestaShop/issues/9665)
 -   Dni field is required if the associated country needs it [\#9891](https://github.com/PrestaShop/PrestaShop/issues/9891)
@@ -109,6 +113,7 @@ Remember, this beta version is pre-release software. Do not use it on your produ
 -   Checkout doesn’t proceed automatically from carrier selection to payment selection [\#12456](https://github.com/PrestaShop/PrestaShop/issues/12456)
 
 The complete [list of bugs fixed for 1.7.6.0](https://github.com/PrestaShop/PrestaShop/issues?utf8%3D%25E2%259C%2593%26q%3Dis%253Aissue%2Bmilestone%253A1.7.6.0%2Blabel%253Afixed%2B) is available on Github.
+
 
 ### Hooks
 
@@ -126,10 +131,12 @@ The complete [list of bugs fixed for 1.7.6.0](https://github.com/PrestaShop/Pres
     -   actionBuildLayoutVariables
     -   actionGetMailLayoutTransformations
 
+
 #### Improved hooks
 
 -   actionProductAdd now receives id\_product\_old when duplicating a
     product
+
 
 ### Symfony Migration - new pages 
 

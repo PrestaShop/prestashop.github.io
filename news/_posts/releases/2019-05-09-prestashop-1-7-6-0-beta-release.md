@@ -22,10 +22,6 @@ We are really happy to announce that we are close to releasing 1.7.6.0.
 This minor version (in the SemVer meaning of the term) brings important new features and improvements to the 1.7 codebase, and we can’t wait to receive your feedback!
 
 This Beta release is a great opportunity for you to start working with it before we release a stable version. Go download and install this Beta version as a test store, either on your machine or your web hosting, then play with it – and give us your feedback! We need YOU to test this new version of PrestaShop.
-it before we release a stable version. Go download and install this Beta
-version as a test store, either on your machine or your web hosting,
-then play with it – and give us your feedback! We need YOU to test this
-new version of PrestaShop.
 
 If you find regressions compared to previous versions, please create an
 issue on [Github](https://github.com/PrestaShop/PrestaShop/issues/new?template%3Dbug_report.md) to

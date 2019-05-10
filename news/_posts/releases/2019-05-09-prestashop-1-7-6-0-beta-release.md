@@ -233,9 +233,7 @@ You can download PrestaShop 1.7.6 beta here:  
 
 ## How to help finish the 1.7.6
 
-Your help will be very appreciated to finish the work on PrestaShop
-1.7.6. Even if you are not a developer, your feedback has a lot of
-value.
+Your help will be very appreciated to finish the work on PrestaShop 1.7.6. Even if you are not a developer, your feedback has a lot of value.
 
 You can:
  - Install it and test it

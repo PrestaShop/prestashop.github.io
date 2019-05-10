@@ -244,5 +244,5 @@ You can:
  - Submit a bug fix by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
 
  
-If everything is working well, comment this article to tell us, and
+If everything is working well, comment this article to tell us, and share on social networks, we also need this feedback.
 share on social networks, we also need this feedback.

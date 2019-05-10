@@ -123,9 +123,9 @@ The complete [list of bugs fixed for 1.7.6.0](https://github.com/PrestaShop/Pres
 -   displayPersonalInformationTop (Checkout funnel, before the customer login form, [\#13103](https://github.com/PrestaShop/PrestaShop/pull/13103))
 -   additionalCustomerAddressFields (In CustomerAddressFormatter, [\#9132](https://github.com/PrestaShop/PrestaShop/pull/9132))
 -   actionProductFlagsModifier (Allows to customize product flags, [\#11614](https://github.com/PrestaShop/PrestaShop/pull/11614))
--   [TBC] Form hooks
--   [TBC] Kpi hooks [\#12706](https://github.com/PrestaShop/PrestaShop/pull/12706)
--   [TBC] Mail generator hooks (will be defined with Doc as well)
+-   Form hooks
+-   Kpi hooks [\#12706](https://github.com/PrestaShop/PrestaShop/pull/12706)
+-   Mail generator hooks (will be defined with Doc as well)
     -   actionListMailThemes
     -   actionGetMailThemeFolder
     -   actionBuildLayoutVariables

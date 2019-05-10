@@ -14,7 +14,7 @@ tags:
 ---
 
 
-![Prestashop 1.7.6.0 BETA Release](assets/images/2019/05/1.7.6_beta_banner_May19.jpg)
+![Prestashop 1.7.6.0 BETA Release](/assets/images/2019/05/1.7.6_beta_banner_May19.jpg)
 
 The first Beta version for PrestaShop 1.7.6.0 is now ready for you to test!
 
@@ -36,23 +36,23 @@ Remember, this beta version is pre-release software. Do not use it on your produ
 -   A “Price tax included” column has been added to the products list [\#11484](https://github.com/PrestaShop/PrestaShop/pull/11484)
 -   A new “modern” template design & wording for transactional emails and a
     new email template generation system[\#13004](https://github.com/PrestaShop/PrestaShop/pull/13004)
-[VISUEL A METTRE]
+![New emails template](/assets/images/2019/05/1.7.6_beta_email_template_EN.jpg)
 -   Improved Catalog mode: it is now possible to choose to display#11688](https://github.com/PrestaShop/PrestaShop/pull/11688)
 -   Price & taxes project 
     - Bug fixes
     - Front-office improvements: cart price details, add to cart pop up,
       order confirmation [\#13047](https://github.com/PrestaShop/PrestaShop/pull/13047)
+![Improved Prices and Taxes display](/assets/images/2019/05/1.7.6_beta_popup_cart_EN.png)
 -   New Theme & logo page design
 -   Improved mobile responsive in the Back-office [\#13049](https://github.com/PrestaShop/PrestaShop/pull/13049)
-[VISUEL A METTRE]
 -   Improved employee profile menu in the Back-office [\#12707](https://github.com/PrestaShop/PrestaShop/pull/12707)
     -   Four new tabs added: Resources, Training, Find an expert and
       PrestaShop Marketplace
     -   New contextual welcome messages
     -   An avatar image is now displayed
-[VISUEL A METTRE]
--   We have fixed many Back-office / Front-office design bugs  and made
-    some integration improvements:
+- More Helpers cards and Empty states added to the BO
+![More Helpers Cards in the BO](/assets/images/2019/05/1.7.6_beta_popup_cart_EN.png)
+-   We have fixed many Back-office / Front-office design bugs and made some integration improvements:
     -   Fix bug on contact when mail is too long [\#12893](https://github.com/PrestaShop/PrestaShop/pull/12893)
     -   Fix labels display computing [\#13407](https://github.com/PrestaShop/PrestaShop/pull/13407)
     -   Fix label "Web only" [\#12872](https://github.com/PrestaShop/PrestaShop/pull/12872)

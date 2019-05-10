@@ -109,7 +109,6 @@ Remember, this beta version is pre-release software. Do not use it on your produ
 -   Checkout doesn’t proceed automatically from carrier selection to payment selection [\#12456](https://github.com/PrestaShop/PrestaShop/issues/12456)
 
 The complete [list of bugs fixed for 1.7.6.0](https://github.com/PrestaShop/PrestaShop/issues?utf8%3D%25E2%259C%2593%26q%3Dis%253Aissue%2Bmilestone%253A1.7.6.0%2Blabel%253Afixed%2B) is available on Github.
-1.7.6.0](https://github.com/PrestaShop/PrestaShop/issues?utf8%3D%25E2%259C%2593%26q%3Dis%253Aissue%2Bmilestone%253A1.7.6.0%2Blabel%253Afixed%2B) is available on Github.
 
 ### Hooks
 

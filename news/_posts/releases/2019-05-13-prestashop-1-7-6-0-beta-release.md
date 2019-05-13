@@ -37,7 +37,7 @@ This Beta release is a great opportunity for you to start working with it before
 
 If you find regressions compared to previous versions, please create an issue on [Github](https://github.com/PrestaShop/PrestaShop/issues/new?template%3Dbug_report.md) to help us to make it stable more quickly.
 
-Remember, this beta version is pre-release software. Do not use it on your production shop!
+**Remember, this beta version is pre-release software. Do not use it on your production shop!**
 
 
 ## News & improvements

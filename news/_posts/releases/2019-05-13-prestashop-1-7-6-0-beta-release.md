@@ -39,7 +39,7 @@ Remember, this beta version is pre-release software. Do not use it on your produ
 
 ![New emails template](/assets/images/2019/05/1.7.6_beta_email_template_EN.jpg)
 
--   Improved Catalog mode: it is now possible to choose to display [\#11688](https://github.com/PrestaShop/PrestaShop/pull/11688)
+-   Improved Catalog mode: it is now possible to choose to display or hide the prices [\#11688](https://github.com/PrestaShop/PrestaShop/pull/11688)
 -   Price & taxes project 
     - Bug fixes
     - Front-office improvements: cart price details, add to cart pop up,

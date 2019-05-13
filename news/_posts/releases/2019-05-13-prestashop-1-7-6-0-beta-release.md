@@ -73,7 +73,6 @@ Remember, this beta version is pre-release software. Do not use it on your produ
 
 -   Faceted search: The module has been massively refactored and new features have been added [\#52](https://github.com/PrestaShop/ps_facetedsearch/pull/52)
 -   Customer reviews with rich snippets: new module available for 1.7.6
--   Reassurance module: we made a major update of the module
 -   Image Slider module: fixed [\#10341](https://github.com/PrestaShop/PrestaShop/pull/10341)
 
 

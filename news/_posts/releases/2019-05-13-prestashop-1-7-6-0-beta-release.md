@@ -10,7 +10,7 @@ tags:
  - beta
  - minor
  - releases
- - 1.7.6
+ - 1.7.6.x
 ---
 
 

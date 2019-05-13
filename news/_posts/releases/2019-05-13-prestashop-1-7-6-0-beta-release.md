@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 1.7.6.0 beta is open for feedback!"
 subtitle: "You can download it and test it"
-date:   2019-05-10 12:00:00
+date:   2019-05-13 12:15:00
 authors: [ PrestaShop ]
 icon: icon-leaf
 tags:
@@ -14,9 +14,9 @@ tags:
 ---
 
 
-![Prestashop 1.7.6.0 BETA Release](/assets/images/2019/05/1.7.6_beta_banner_May19.jpg)
-
 The first Beta version for PrestaShop 1.7.6.0 is now ready for you to test!
+
+![Prestashop 1.7.6.0 BETA Release](/assets/images/2019/05/1.7.6_beta_banner_May19.jpg)
 
 We are really happy to announce that we are close to releasing 1.7.6.0.
 This minor version (in the SemVer meaning of the term) brings important new features and improvements to the 1.7 codebase, and we can’t wait to receive your feedback!

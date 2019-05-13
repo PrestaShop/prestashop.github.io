@@ -19,9 +19,19 @@ The first Beta version for PrestaShop 1.7.6.0 is now ready for you to test!
 ![Prestashop 1.7.6.0 BETA Release](/assets/images/2019/05/1.7.6_beta_banner_May19.jpg)
 
 We are really happy to announce that we are close to releasing 1.7.6.0.
-This minor version (in the SemVer meaning of the term) brings important new features and improvements to the 1.7 codebase, and we can’t wait to receive your feedback!
 
-This Beta release is a great opportunity for you to start working with it before we release a stable version. Go download and install this Beta version as a test store, either on your machine or your web hosting, then play with it – and give us your feedback! We need YOU to test this new version of PrestaShop.
+Over 6 months in the making, PrestaShop 1.7.6.0 will be a huge release, our biggest one yet, with over 600 merged Pull Requests at the time of writing.
+
+As they say, an image is worth a thousand words, so here's a graph to show how this beta compares with previous final releases in terms of number of contributions:
+
+![Merged PRs by versions](/assets/images/2019/05/Merged_PRs_by_PrestaShop_Version.png)
+
+As you can see, this beta release is about 25% bigger than 1.7.5 right now and roughly 3x as big as 1.7.3... and we are still one month away from final! 
+The community has also been very present for 1.7.6. A whopping 110 people (from the PS team and the community at large) contributed code to create this version, including 60 new contributors.
+
+
+
+This Beta release is a great opportunity for you to start working with it before we release a stable version. Go download and install this Beta version as a test store, either on your machine or your web hosting, then play with it – and give us your feedback! We need you to test this new version of PrestaShop.
 
 If you find regressions compared to previous versions, please create an issue on [Github](https://github.com/PrestaShop/PrestaShop/issues/new?template%3Dbug_report.md) to help us to make it stable more quickly.
 

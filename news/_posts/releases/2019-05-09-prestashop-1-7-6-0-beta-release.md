@@ -56,7 +56,8 @@ Remember, this beta version is pre-release software. Do not use it on your produ
     -   An avatar image is now displayed
 - More Helpers cards and Empty states added to the BO
 
-![More Helpers Cards in the BO](/assets/images/2019/05/1.7.6_beta_popup_cart_EN.png)
+![More Helpers Cards in the BO](/assets/images/2019/05/1.7.6_beta_empty_states.jpg)
+
 
 -   We have fixed many Back-office / Front-office design bugs and made some integration improvements:
     -   Fix bug on contact when mail is too long [\#12893](https://github.com/PrestaShop/PrestaShop/pull/12893)

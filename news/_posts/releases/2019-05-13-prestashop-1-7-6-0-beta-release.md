@@ -93,7 +93,7 @@ Remember, this beta version is pre-release software. Do not use it on your produ
     -   Improve employee authorization process
     -   Cache introduced when loading modules
 -   Support of multiple grids on the same page
--   New1.7.6_beta_banner_May19.jpg [CLDR standard](http://cldr.unicode.org) implementation: improved localization of prices and amounts, will allow creating custom currencies in future versions
+-   New [CLDR standard](http://cldr.unicode.org) implementation: improved localization of prices and amounts, will allow creating custom currencies in future versions
 -   Web services:
     -   Product customization is now reachable [\#11938](https://github.com/PrestaShop/PrestaShop/pull/11938)
     -   Product combination information in Pack content is now available [\#12329](https://github.com/PrestaShop/PrestaShop/pull/12329)
@@ -126,7 +126,7 @@ The complete [list of bugs fixed for 1.7.6.0](https://github.com/PrestaShop/Pres
 -   actionProductFlagsModifier (Allows to customize product flags, [\#11614](https://github.com/PrestaShop/PrestaShop/pull/11614))
 -   Form hooks
 -   Kpi hooks [\#12706](https://github.com/PrestaShop/PrestaShop/pull/12706)
--   Mail generator hooks (will be defined with Doc as well)
+-   Mail generator hooks
     -   actionListMailThemes
     -   actionGetMailThemeFolder
     -   actionBuildLayoutVariables

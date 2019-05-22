@@ -55,6 +55,9 @@ SEO optimization for combination products:
 - Price & taxes project [#9703](https://github.com/PrestaShop/PrestaShop/issues/9703) for a better and clearer display of the order price details (product, shipping, taxes, etc.) on all steps of the checkout : 
   - Bug fixes for B2B, specific customer groups and no tax configurations
   - Front office improvements on add to cart pop up, cart price details, order confirmation [#13047](https://github.com/PrestaShop/PrestaShop/pull/13047)
+  
+![IPop up cart improvements](/assets/images/2019/05/1.7.6_beta_popup_cart_EN.png)
+  
 - Many front office design bugs have been fixed and some integration improvements have been made:
   - Footer : fix bug on contact email when it is too long
   - Products :
@@ -66,11 +69,11 @@ SEO optimization for combination products:
 
 - In order to gather all prices in the same place, a "**Price (tax incl.)**" column has been added to your products list. In one glance, you can now get both tax included and excluded prices for each of your products
 
-![Improved Prices and Taxes display](/assets/images/2019/05/1.7.6_beta_popup_cart_EN.png)
+![Improved Prices and Taxes display](/assets/images/2019/05/1.7.6_price_tax.png)
 
 -The **Design section of your back office** has been redesigned. Now you are able to have an overview of all design features (RTL, logos, favicon and theme) and manage them the way you want.
 
-![More Helpers Cards in the BO](/assets/images/2019/05/1.7.6_beta_empty_states.jpg)
+[IDesign section redesigned](/assets/images/2019/05/1.7.6_design-section.png)
 
 - Improved employee profile menu in the back office
   - Five new tabs added: Resources, Training, Find an expert, PrestaShop Marketplace and Help center
@@ -79,6 +82,8 @@ SEO optimization for combination products:
   - Fix quantity placeholder issue in the Stock management listing
   - Improved mobile display in the back office
 - Several helper cards have been added on specific pages of the back office to help new merchants get a quicker onboarding on PrestaShop
+
+![More Helpers Cards in the BO](/assets/images/2019/05/1.7.6_beta_empty_states.jpg)
 
 
 ### Other improvements 

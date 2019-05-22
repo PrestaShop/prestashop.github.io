@@ -42,50 +42,54 @@ If you find regressions compared to previous versions, please create an issue on
 
 ## News & improvements
 
-### New features & improvements
+### SEO Optimization
 
--   SEO optimization for combination products: all combinations now have the parent product’s URL as their canonical, accessing it no longer issues a redirection, displays the default combination [\#13009](https://github.com/PrestaShop/PrestaShop/pull/13009)
--   A “Price tax included” column has been added to the products list [\#11484](https://github.com/PrestaShop/PrestaShop/pull/11484)
--   A new “modern” template design & wording for transactional emails and a
-    new email template generation system[\#13004](https://github.com/PrestaShop/PrestaShop/pull/13004)
+SEO optimization for combination products:
+- All combinations now have the parent product’s URL as canonical,
+- Going the the parent product’s URL displays the default combination, there no redirection anymore
+ [#13009](https://github.com/PrestaShop/PrestaShop/pull/13009)
 
-![New emails template](/assets/images/2019/05/1.7.6_beta_email_template_EN.jpg)
 
--   Improved Catalog mode: it is now possible to choose to display or hide the prices [\#11688](https://github.com/PrestaShop/PrestaShop/pull/11688)
--   Price & taxes project 
-    - Bug fixes
-    - Front-office improvements: cart price details, add to cart pop up,
-      order confirmation [\#13047](https://github.com/PrestaShop/PrestaShop/pull/13047)
+### Front Office improvements
+
+- Improved Catalog mode: for showcase websites, you can now choose to display or to hide product prices on the website
+- Price & taxes project [#9703](https://github.com/PrestaShop/PrestaShop/issues/9703) for a better and clearer display of the order price details (product, shipping, taxes, etc.) on all steps of the checkout : 
+  - Bug fixes for B2B, specific customer groups and no tax configurations
+  - Front office improvements on add to cart pop up, cart price details, order confirmation [#13047](https://github.com/PrestaShop/PrestaShop/pull/13047)
+- Many front office design bugs have been fixed and some integration improvements have been made:
+  - Footer : fix bug on contact email when it is too long
+  - Products :
+     - Improve “web only” label display
+     - Fix image dimensions in Product Card view
+  - Checkout : Limit carrier image size on all steps of the checkout for a better display
+
+### Back office new features and optimizations
+
+- In order to gather all prices in the same place, a "**Price (tax incl.)**" column has been added to your products list. In one glance, you can now get both tax included and excluded prices for each of your products
 
 ![Improved Prices and Taxes display](/assets/images/2019/05/1.7.6_beta_popup_cart_EN.png)
 
--   New Theme & logo page design
--   Improved mobile responsive in the Back-office [\#13049](https://github.com/PrestaShop/PrestaShop/pull/13049)
--   Improved employee profile menu in the Back-office [\#12707](https://github.com/PrestaShop/PrestaShop/pull/12707)
-    -   Four new tabs added: Resources, Training, Find an expert and
-      PrestaShop Marketplace
-    -   New contextual welcome messages
-    -   An avatar image is now displayed
-- More Helpers cards and Empty states added to the BO
+-The **Design section of your back office** has been redesigned. Now you are able to have an overview of all design features (RTL, logos, favicon and theme) and manage them the way you want.
 
 ![More Helpers Cards in the BO](/assets/images/2019/05/1.7.6_beta_empty_states.jpg)
 
+- Improved employee profile menu in the back office
+  - Five new tabs added: Resources, Training, Find an expert, PrestaShop Marketplace and Help center
+  - Your avatar image is now displayed
+- Several back office design bugs have been fixed and made some integration improvements:
+  - Fix quantity placeholder issue in the Stock management listing
+  - Improved mobile display in the back office
+- Several helper cards have been added on specific pages of the back office to help new merchants get a quicker onboarding on PrestaShop
 
--   We have fixed many Back-office / Front-office design bugs and made some integration improvements:
-    -   Fix bug on contact when mail is too long [\#12893](https://github.com/PrestaShop/PrestaShop/pull/12893)
-    -   Fix labels display computing [\#13407](https://github.com/PrestaShop/PrestaShop/pull/13407)
-    -   Fix label "Web only" [\#12872](https://github.com/PrestaShop/PrestaShop/pull/12872)
-    -   Fix quantity placeholder issue in the Stock management page [\#10199](https://github.com/PrestaShop/PrestaShop/pull/10199)
-    -   Fix image dimensions in Product Card view [\#10297](https://github.com/PrestaShop/PrestaShop/pull/10297)
-    -   Limit carrier image size on checkout page [\#12892](https://github.com/PrestaShop/PrestaShop/pull/12892)
-    -   Add modal-dialog-centered class to classic theme [\#10253](https://github.com/PrestaShop/PrestaShop/pull/10253)
 
+### Other improvements 
+
+- New “modern” template design and  wording  for all transactional emails along with a  new email template generation system and a new back office page dedicated to email management (in Design > Email theme)
 
 ### New & improved core modules 
-
--   Faceted search: The module has been massively refactored and new features have been added [\#52](https://github.com/PrestaShop/ps_facetedsearch/pull/52)
--   Customer reviews with rich snippets: new module available for 1.7.6
--   Image Slider module: fixed [\#10341](https://github.com/PrestaShop/PrestaShop/pull/10341)
+- Faceted search: The module has been massively refactored and new features have been added, including the awaited price slider on the website (available after the beta)
+- Customer reviews with rich snippets: new module available for 1.7.6 (available after the beta)
+- Image Slider module improved for a better display on all devices
 
 
 ## The technical side

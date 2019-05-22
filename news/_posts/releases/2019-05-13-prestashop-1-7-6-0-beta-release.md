@@ -45,7 +45,7 @@ If you find regressions compared to previous versions, please create an issue on
 
 SEO optimization for combination products:
 - All combinations now have the parent product’s URL as canonical,
-- Going the the parent product’s URL displays the default combination, there is no redirection anymore
+- Going to the parent product’s URL displays the default combination, there is no redirection anymore
  [#13009](https://github.com/PrestaShop/PrestaShop/pull/13009)
 
 

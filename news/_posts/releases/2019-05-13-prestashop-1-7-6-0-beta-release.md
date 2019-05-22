@@ -78,7 +78,7 @@ SEO optimization for combination products:
 - Improved employee profile menu in the back office
   - Five new tabs added: Resources, Training, Find an expert, PrestaShop Marketplace and Help center
   - Your avatar image is now displayed
-- Several back office design bugs have been fixed and made some integration improvements:
+- Several back office design issues have been fixed or improved:
   - Fix quantity placeholder issue in the Stock management listing
   - Improved mobile display in the back office
 - Several helper cards have been added on specific pages of the back office to help new merchants get a quicker onboarding on PrestaShop

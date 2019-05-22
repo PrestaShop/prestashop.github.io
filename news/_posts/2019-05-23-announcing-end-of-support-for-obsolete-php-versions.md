@@ -2,7 +2,7 @@
 layout: post
 title: "Announcing end of support for obsolete PHP versions"
 subtitle: "It's time to move forward"
-date:   2019-05-23 09:10:11
+date:   2019-05-22 09:10:11
 authors: [ PabloBorowicz ]
 icon: icon-compass
 tags:
@@ -45,18 +45,45 @@ Even though Symfony is the exception, the PHP dependency problem is becoming an 
 
 The upcoming PrestaShop 1.7.6.0 compatibility will stay unchanged. Starting from 1.7.7.0, and for every new minor or major version of PrestaShop, the PHP compatibility range will be decided as follows:
 
-*   **Lower bound:** the lowest version supported by our main dependencies, or the last version whose end-of-life date is no older than one year at the time of final release (whichever is highest).
-*   **Upper bound:** the latest stable version of PHP available at the time of that version's feature freeze, or the highest version supported by our main dependencies (whichever is the lowest).
+**Lower bound** – Defined by the most recent version among:  
+
+  - The oldest PHP version supported by our main dependencies,
+  - The oldest PHP version whose official support is not over, or has not been over for more than a year at the time of final release of the PrestaShop version.
+
+**Upper bound** – Defined by the oldest version among:
+
+  - The latest stable PHP version available at the time of the PrestaShop version's feature freeze,
+  - The latest PHP version supported by our main dependencies (whichever is the lowest).
 
 These rules will be applied in a “best effort” philosophy.
 
-For example, if the feature freeze date for 1.7.7 were to be set in December 2019, and the release in January 2020, then:
+### Example
 
-**Lower bound:** PHP <= 7.0 would have been end-of-life for over a year, so those versions wouldn't be supported. PHP 7.1 would be end-of-life as well, but for less than a year, so it would qualify to become the lower bound — as long as our main dependencies support it.
+Let's say the feature freeze date for 1.7.7 was set to be in December 2019, with a final release in January 2020.
 
-**Upper bound:** PHP 7.4 is due for release in December 2019, probably after our feature freeze date, so it is possible that not everything will be ready for it. In that case, the upper bound will be PHP 7.3.
+#### Oldest compatible PHP version 
 
-This would mean that PrestaShop 1.7.7 will most likely be compatible from PHP 7.1 to PHP 7.3.
+According to the chart above, the official support for PHP 7.0 ended in December 2018. Our first rule is that the oldest supported PHP version must be officially supported at the time of PrestaShop's version feature freeze, or if it's support has ended, it must not have been over a year ago. If the feature freeze is in December 2019, then official support for PHP versions equal or lower to 7.0 would have been over for more than a year, so they don't conform to this rule.
+ 
+Support for PHP 7.1 will be over by late 2019, but since it would have been for less than a year counting back from December, it would qualify to become the lower bound — but only as long as our main dependencies support it.
+
+#### Latest compatible PHP version 
+
+PHP 7.4 is due for release in December 2019, probably after PrestaShop 1.7.7 feature freeze date, so it's possible that not everything will be ready for it.
+
+In that case, the upper bound will be PHP 7.3, which is the most recent PHP version supported by our dependencies.
+
+**This would mean that PrestaShop 1.7.7 will most likely be compatible from PHP 7.1 to PHP 7.3.**
 
 In conclusion, keeping up with newer PHP versions will not only allow developers to benefit from all the nice new language features, but it will also allow us to use newer, more recent libraries to make PrestaShop better and safer.
 
+## Next steps / How can you help
+
+As stated previously, PrestaShop 1.7.7.0 will [add support for PHP 7.3](https://github.com/PrestaShop/PrestaShop/issues/12461). A [Pull Request dropping support for older PHP versions](https://github.com/PrestaShop/PrestaShop/pull/13761) has already been created on GitHub. 
+
+Here are some things you can do to help:
+
+- Join us on [GitHub](https://github.com/PrestaShop/PrestaShop/) and [Gitter](https://gitter.im/PrestaShop/General) to discuss this project
+- Test the [development branch of PrestaShop](https://github.com/PrestaShop/PrestaShop/tree/develop) with PHP 7.3 (once the Pull Request above has been merged)
+- If you are a module developer, start testing your modules with PHP 7.3
+- Help us make sure that our [Open Source Modules](https://github.com/PrestaShop/PrestaShop-modules) are working well with PHP 7.3 

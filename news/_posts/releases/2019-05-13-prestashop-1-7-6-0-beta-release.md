@@ -32,7 +32,6 @@ The community has also been very present for 1.7.6. A whopping 110 people (from 
 ![Merged PRs by versions](/assets/images/2019/05/Contributors_by_PrestaShop_Version.png)
 
 
-
 This Beta release is a great opportunity for you to start working with it before we release a stable version. Go download and install this Beta version as a test store, either on your machine or your web hosting, then play with it – and give us your feedback! We need you to test this new version of PrestaShop.
 
 If you find regressions compared to previous versions, please create an issue on [Github](https://github.com/PrestaShop/PrestaShop/issues/new?template%3Dbug_report.md) to help us to make it stable more quickly.
@@ -46,7 +45,7 @@ If you find regressions compared to previous versions, please create an issue on
 
 SEO optimization for combination products:
 - All combinations now have the parent product’s URL as canonical,
-- Going the the parent product’s URL displays the default combination, there no redirection anymore
+- Going the the parent product’s URL displays the default combination, there is no redirection anymore
  [#13009](https://github.com/PrestaShop/PrestaShop/pull/13009)
 
 
@@ -84,7 +83,7 @@ SEO optimization for combination products:
 
 ### Other improvements 
 
-- New “modern” template design and  wording  for all transactional emails along with a  new email template generation system and a new back office page dedicated to email management (in Design > Email theme)
+- New “modern” template design and  wording  for all transactional emails along with a new email template generation system and a new back office page dedicated to email management (in Design > Email theme)
 
 ### New & improved core modules 
 - Faceted search: The module has been massively refactored and new features have been added, including the awaited price slider on the website (available after the beta)

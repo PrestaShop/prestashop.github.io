@@ -73,7 +73,7 @@ SEO optimization for combination products:
 
 - The **Design section of your back office** has been redesigned. Now you are able to have an overview of all design features (RTL, logos, favicon and theme) and manage them the way you want.
 
-[Design section redesigned](/assets/images/2019/05/1.7.6_design-section.png)
+![Design section redesigned](/assets/images/2019/05/1.7.6_design-section.png)
 
 - Improved employee profile menu in the back office
   - Five new tabs added: Resources, Training, Find an expert, PrestaShop Marketplace and Help center

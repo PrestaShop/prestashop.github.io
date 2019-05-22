@@ -41,7 +41,7 @@ _Symfony version support roadmap. ([Source](https://symfony.com/roadmap#maintain
 Even though Symfony is the exception, the PHP dependency problem is becoming an increasingly complex problem, and we had to make a choice. Many other PHP-based CMS are facing the same problems: [Drupal dropped compatibility with PHP 5 back in March](https://www.drupal.org/node/2938726), while Wordpress, who has traditionally supported very old PHP versions, is now [requiring at least 5.6 and will soon drop it as well](https://wordpress.org/news/2019/04/minimum-php-version-update/).
 
 
-## Here is what we decided
+## Here is what has been decided
 
 The upcoming PrestaShop 1.7.6.0 compatibility will stay unchanged. Starting from 1.7.7.0, and for every new minor or major version of PrestaShop, the PHP compatibility range will be decided as follows:
 

@@ -90,7 +90,7 @@ Assessing severity helps to prioritize issues but it is not the only criterion a
 
 At PrestaShop, prioritization is done by representatives of the Development team, the Product Management team, and the Quality Assurance team. Together, during regular meetings, we look at the new confirmed issues and we sort them.
 
-One of the things we value a lot is making sure that a given bug does not besmirch PrestaShop’s image nor it affects the confidence merchants can have in PrestaShop. This factor is really important as it can durably damage the adoption of the project and its long-term survival. 
+One of the things we value a lot is making sure that a given bug does not damage PrestaShop’s image nor it affects the confidence merchants can have in PrestaShop. This factor is really important as it can durably damage the adoption of the project and its long-term survival. 
 
 We take special care and strive to make every version of PrestaShop better than the one before. Since no one wants to introduce new bugs while fixing other bugs, regressions are usually prioritized higher than older bugs. By doing this, we can assure that the overall software stability is ever increasing. 
 

@@ -70,7 +70,7 @@ Examples:
 - An error message displayed in your back-office that can be dismissed
 - The product doesn't get added to cart after deleting product customisation
 - Cloning a product doesn't copy all of it's data
-- Statistics graph not working or showing wrong data 
+- Inaccurate statistics
 
 
 ### Trivial

@@ -46,7 +46,7 @@ A critical issue should result in a patch version that should be released as soo
 
 The bug affects major functionality or major data and there is a workaround (a temporary method for dealing with an issue until a more permanent solution is found), but it is not obvious or can be difficult to put in practice.
 
-A major issue affects a large percentage of users (> 30% and < 60%) and matches at least one of the following:
+A major issue affects a large percentage of users (> 30%) and matches at least one of the following:
 
 - It impacts law compliance
 - It has a strong impact on the usability of the front-office / back-office or blocks another project

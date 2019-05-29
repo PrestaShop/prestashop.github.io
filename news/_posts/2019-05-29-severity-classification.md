@@ -39,7 +39,7 @@ Examples:
 - Difficulty to globally manage categories, products or customers
 - Difficulty to globally place and manage orders
 
-A critical issue should result in a patch version that should be released as soon as possible. Our recent [spam attack](http://build.prestashop.com/news/fighting-against-spamming-again/) is a good example: it was a critical security issue as our users were flooded with fake customers’ accounts. As a consequence, a patch version has been released that resolve it on 1.6 and 1.7, a good example of a community work.
+A critical issue should result in a patch version that should be released as soon as possible. [PrestaShop 1.7.2.5](http://build.prestashop.com/news/prestashop-1-7-2-5-maintenance-release/) is a good example: this patch release fixes two vulnerabilities affecting the Back Office.
 
 
 ### Major

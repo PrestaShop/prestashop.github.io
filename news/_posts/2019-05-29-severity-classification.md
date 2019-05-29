@@ -44,7 +44,7 @@ A critical issue should result in a patch version that should be released as soo
 
 ### Major
 
-The bug affects major functionality or major data and there is a workaround (a temporary method for dealing with an issue until a more permanent solution is found), but it is not obvious or can be difficult to put in practice.
+The bug affects major functionality or major data and there is a workaround, but it is not obvious or can be difficult to put in practice.
 
 A major issue affects a large percentage of users (> 30%) and matches at least one of the following:
 

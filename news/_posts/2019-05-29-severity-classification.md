@@ -96,7 +96,7 @@ We take special care and strive to make every version of PrestaShop better than 
 
 In addition, we also study the technical complexity that is, whether the bug is easy or more complex to solve. In some cases we will choose to prioritize a smaller bug over a bigger one, not because we are lazy, but because a complex bug may require big technical changes which are not suitable until a later version. Because it requires backwards-incompatible changes (which are bad for module developers), or because it can be better addressed as a part of a bigger project – for example. There is no use fixing a bug if the whole feature is due to be revamped in the near future. Speaking of which, sometimes we will prioritize some bugs just because of the “opportunity cost” of fixing them together, as it’s usually easier to fix several bugs within the same component. For example, during the migration of a page to Symfony, the bugs of this page are prioritized in order to fix them.
 
-Finally, we pay attention to the business impact. Since we care a lot about PrestaShop merchants, we are eager to find a solution when it affects their sales proceeds. Or ours. After all, we need to eat as well, and we use PrestaShop too.
+Finally, we pay attention to the business impact. Since we care a lot about PrestaShop users (merchants, agencies, developers ...), we are eager to find a solution when it affects their sales proceeds. Or ours. After all, we need to eat as well, and we use PrestaShop too.
 
 In the end, handling bugs require two points of view: micro and macro. Severity analyzes the issue on its own, while Priority analyzes the issue in the context of the whole project.
 

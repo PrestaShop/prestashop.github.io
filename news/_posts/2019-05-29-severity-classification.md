@@ -67,7 +67,7 @@ Examples:
 
 - A tolerable slowdown
 - A display problem that prevents you to do something (you can’t click on an element)
-- An alert message displayed in your back-office that it is possible to close
+- An error message displayed in your back-office that can be dismissed
 - The product doesn't get added to cart after deleting product customisation
 - When cloning a product, carriers information is not copied
 - Statistics graph not working or showing wrong data 

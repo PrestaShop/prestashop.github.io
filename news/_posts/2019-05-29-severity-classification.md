@@ -68,7 +68,6 @@ Examples:
 - A tolerable slowdown
 - A display problem that prevents users from doing something non-critical (eg: can’t click on an element that can be accessible in another way)
 - An error message displayed in your back-office that can be dismissed
-- The product doesn't get added to cart after deleting product customisation
 - Cloning a product doesn't copy all of it's data
 - Inaccurate statistics
 

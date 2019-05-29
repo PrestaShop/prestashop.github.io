@@ -98,6 +98,6 @@ In addition, we also study the issue's technical complexity, that is, whether th
 
 Finally, we pay attention to the business impact. Since we care a lot about PrestaShop users (merchants, agencies, developers ...), we are eager to find a solution when it affects their sales proceeds. Or ours. After all, we need to eat as well, and we use PrestaShop too.
 
-In the end, handling bugs require two points of view: micro and macro. Severity analyzes the issue on its own, while Priority analyzes the issue in the context of the whole project.
+In the end, handling bugs requires two points of view: micro and macro. Severity analyzes the issue on its own, while Priority analyzes the issue in the context of the whole project.
 
 If you encounter an issue, please [create a bug report](https://github.com/PrestaShop/PrestaShop/issues/new?template=bug_report.md). And if you have a solution, do not be shy and submit a pull request with your fix. This way, issues have better chances to be solved quickly, for everyone!

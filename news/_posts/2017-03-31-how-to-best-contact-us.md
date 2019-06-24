@@ -151,7 +151,7 @@ No software is perfect, and PrestaShop is no exception. Our team spends its whol
 
 We'd love to have you on the team! Join the ranks of users who help to improve PrestaShop: provide us with detailed report of any reproducible issue you stumble upon, and we'll do our best to get it fixed!
 
-Please use [this reference guide](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/ to better understand what makes a great Forge ticket. 
+Please use [this reference guide](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/) to better understand what makes a great Forge ticket. 
 
 Then, create your report for the right context. The Core team will review your report and answer back with any questions and /or ideas.
 

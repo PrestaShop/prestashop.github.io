@@ -47,7 +47,7 @@ If you want to see some feature added to PrestaShop, please open a ['Feature req
 
 **Bug report**
 
-If you find a bug or something that doesn't work as expected, please open a ['Bug report' on [GitHub](https://github.com/PrestaShop/PrestaShop/issues/new?template=bug_report.md).
+If you find a bug or something that doesn't work as expected, please open a ['Bug report' on GitHub](https://github.com/PrestaShop/PrestaShop/issues/new?template=bug_report.md).
 
 
 ## Contributors

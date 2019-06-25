@@ -60,11 +60,11 @@ Your help will be very appreciated to finish the work on PrestaShop 1.7.6. Even 
 
 You can:
 
-Install it and test that there is no regression compared to the 1.7.5.2 version
-If possible, test with data imported from a real shop
-If you develop modules or themes, test them on this version
-Test the auto-upgrade plugin
+- Install it and test that there is no regression compared to the 1.7.5.2 version
+- If possible, test with data imported from a real shop
+- If you develop modules or themes, test them on this version
+- Test the auto-upgrade plugin
 [Report bugs on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read how to [report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
-Submit a bug fix by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
+- Submit a bug fix by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
 
 If everything is working well, feel free to comment on this article to tell us, and share on social networks, we also need this kind of feedback! ;-)

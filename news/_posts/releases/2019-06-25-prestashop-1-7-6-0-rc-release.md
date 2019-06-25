@@ -14,7 +14,7 @@ tags:
 ---
 
 
-This is the last step before releasing the final 1.7.6.0. It aims at making sure that all regressions found during the beta have been fixed, and that no new ones appeared. If no new regression is reported by June 27, we will make the final version of 1.7.6.0 available.
+This is the last step before releasing the final 1.7.6.0. It aims at making sure that all regressions found during the beta have been fixed, and that no new ones appeared. If no new regression is reported by July 1st, we will make the final version of 1.7.6.0 available.
 
 Please note that it is not currently possible to perform an automatic upgrade from the Beta to the Release Candidate. Furthermore, it will not be possible to upgrade from this Release Candidate to the final release. If you perform an update of your test store to the RC version, you will need to rollback to your current version before being able to upgrade to the final 1.7.6.0.
 
@@ -40,7 +40,7 @@ Go download and install this RC version as a test store, either on your machine 
   
 ## Changelog
 
-100+ pull requests have been merged since the beta release and 50+ regressions have been fixed. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases) for details. A huge thanks to everyone involved in testing and fixing issues during the beta phase, and especially 202 ecommerce, OneDotIT, MartinF who helped us a lot during this period !
+100+ pull requests have been merged since the beta release and 50+ regressions have been fixed. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases) for details. A huge thanks to everyone involved in testing and fixing issues during the beta phase, and especially 202 ecommerce, OneDotIT and MartinF who helped us a lot during this period !
 
 This brings us to more than 700 merged pull requests for the 1.7.6.0 milestone, it is definitely our biggest yet.
 

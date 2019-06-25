@@ -33,7 +33,8 @@ Go download and install this RC version as a test store, either on your machine 
 
 **Core:**
   - [Module Faceted search version has been bumped to 3.0.5](https://github.com/PrestaShop/PrestaShop/pull/14284) which contains interesting bug fixes
-  - Watermark and Product comments modules have been integrated and can now be installed from the Module Catalog page in the back office ;
+  - Watermark and Product comments modules have been integrated and can now be installed from the Module Catalog page in the back office
+  - Tips and Updates module (psaddonsconnect) has been updated to the 2.0.0 version
   - [We have replaced PHPExcel by PHPSpreadsheet](https://github.com/PrestaShop/PrestaShop/pull/14316) in order to better handle XLS or XLSX files import
   
   

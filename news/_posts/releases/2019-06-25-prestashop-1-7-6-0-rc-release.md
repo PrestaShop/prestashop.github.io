@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Release note Release Candidate 1.7.6"
+title:  "Release note 1.7.6 RC1"
 subtitle: "A few weeks after the beta, here it is: the first release candidate for PrestaShop 1.7.6.0 is now ready for you to test!"
 date:   2019-06-25 17:30:00
 authors: [ PrestaShop ]

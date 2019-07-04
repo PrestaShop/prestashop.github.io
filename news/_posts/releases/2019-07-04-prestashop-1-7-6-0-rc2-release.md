@@ -13,7 +13,7 @@ tags:
  - 1.7.6.x
 ---
 
-Once again the PrestaShop community actively participated in the tests of the PrestaShop 1.7.6 Release Candidate.
+Once again the PrestaShop community actively participated in the testing of the PrestaShop 1.7.6 Release Candidate.
 Thanks to your involvement, 3 regressions were identified and fixed.
 
 Our team is glad to announce PrestaShop 1.7.6.0 Release Candidate 2.

@@ -27,7 +27,7 @@ If no new regression is reported by the end of the week (27), we will make the f
 
 **Back Office:**
 - [Grid display error on the Add/Edit Customer page](https://github.com/PrestaShop/PrestaShop/pull/14401) introduced by a previous PR to allow this page to extend in width.
-- [We changed annotation driver settings](https://github.com/PrestaShop/PrestaShop/pull/14460) so that it ignores index.php files present in the Doctrine entities folder (the file contains an exit which stopped all doctrine commands execution). Not a regression but a possible error case introduced by one of the technical improvements we made.
+- [Annotation driver settings improvement](https://github.com/PrestaShop/PrestaShop/pull/14460) to ignore index.php files in Doctrine entities folder. Not a regression but a possible error case for modules using Doctrine
 
 **Security:**
 - There was an issue in the checkout process that could be used to select any delivery address existing in the db when placing an order, not only the ones owned by the customer. [The fix](https://github.com/PrestaShop/PrestaShop/pull/14444) makes sure a customer can only use the addresses he owns and also prevents the address selection for an order to be done outside of the "confirm address" step.

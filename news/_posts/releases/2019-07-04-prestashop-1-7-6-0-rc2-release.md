@@ -2,7 +2,7 @@
 layout: post
 title:  "Release note 1.7.6 RC2"
 subtitle: "This second release candidate for the 1.7.6 fixes the regressions identified in the RC1."
-date:   2019-07-04 16:30:00
+date:   2019-07-05 16:00:00
 authors: [ PrestaShop ]
 icon: icon-leaf
 tags:

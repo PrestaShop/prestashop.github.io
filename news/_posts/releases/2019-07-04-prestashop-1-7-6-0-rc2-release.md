@@ -17,7 +17,7 @@ Once again the PrestaShop community actively participated in the testing of the 
 Thanks to your involvement, 3 regressions were identified and fixed.
 
 Our team is glad to announce PrestaShop 1.7.6.0 Release Candidate 2.
-If no new regression is reported by the end of the week (27), we will make the final version of 1.7.6.0 available next week (28).
+If no new regression is reported in the next days, we will make the final version of 1.7.6.0 available by the end of next week (28).
 
 
 ## Fixed in this Release Candidate 2

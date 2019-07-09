@@ -13,7 +13,7 @@ tags:
 An Open Source community is more than just PR made by faceless strangers. In order to better understand the people who contribute time and skills to the PrestaShop project, we're launching a series of interviews with contributors of all ranges. This week, meet [Šarūnas Jonušas](https://github.com/sarjon)!
 
 
-<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="240" height="240" src="/assets/images/2018/03/Šarūnas_Jonušas.png">
+<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="240" height="240" src="/assets/images/2019/07/Sarunas-Jonusas.png">
 
 
 **Hi Šarūnas! First, could you tell us a bit about yourself?**

@@ -35,12 +35,12 @@ In this version we focused on improving and bringing back important 1.6 features
 
 ## Changes
 
-This minor version is our biggest since 1.7.1. Here’s 1.7.6 in numbers:
+This minor version is our biggest since 1.7.1. Here is 1.7.6 in numbers:
 
-748 merged Pull Requests (vs 210 in 1.7.3, 260 in 1.7.4 and 448 in 1.7.5)
-7349 files changed (294661 insertions, 107638 deletions)
-4431 commits merged
-249 issues fixed
+748 merged Pull Requests (vs 210 in 1.7.3, 260 in 1.7.4 and 448 in 1.7.5)<br>
+7349 files changed (294661 insertions, 107638 deletions)<br>
+4431 commits merged<br>
+249 issues fixed<br>
 108 people contributed, including 60 new contributors!
 
 

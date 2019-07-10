@@ -150,7 +150,7 @@ See all hooks in the [DevDocs](https://devdocs.prestashop.com/1.7/modules/concep
   - The namespace “PrestaShop\PrestaShop\Core\Cldr” has been removed
   - The CLDR files in the “/translations” directory have been removed
 - Import:
-  - You no longer can just add categories to current categories with import to a force ID. You will have to set them all and the first will become the default_category.)
+  - You no longer can just add categories to current categories list with import to a forced ID. You will have to set them all and the first will become the default_category.
 - Replaced library:
   - PhpExcel (no longer supported) has been replaced by PHPSpreadsheet)
 - Version comparison:

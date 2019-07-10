@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 1.7.6.0 is available!"
 subtitle: "You waited for it, here it is!"
-date:   2019-07-10 18:00:00
+date:   2019-07-10 17:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2019/07/176_available_banner.jpg
 icon: icon-checked
@@ -37,11 +37,11 @@ In this version we focused on improving and bringing back important 1.6 features
 
 This minor version is our biggest since 1.7.1. Here is 1.7.6 in numbers:
 
-748 merged Pull Requests (vs 210 in 1.7.3, 260 in 1.7.4 and 448 in 1.7.5)<br>
-7349 files changed (294661 insertions, 107638 deletions)<br>
-4431 commits merged<br>
-249 issues fixed<br>
-108 people contributed, including 60 new contributors!
+- **748** merged Pull Requests (vs 210 in 1.7.3, 260 in 1.7.4 and 448 in 1.7.5)
+- **7349** files changed (294661 insertions, 107638 deletions)
+- **4431** commits merged
+- **249** issues fixed
+- **108** people contributed, including 60 new contributors!
 
 
 ## New features
@@ -102,10 +102,10 @@ This minor version is our biggest since 1.7.1. Here is 1.7.6 in numbers:
 
 ### Technical improvements
 
-- Nightly builds and nightly board is now available at https://nightly.prestashop.com/
+- Nightly builds and nightly board are [now available](https://nightly.prestashop.com/).
 - Translation Manager of Back Office can now manage legacy translations of modules as well as symfony modules
 - Added support for Doctrine Entities in modules (both Front and Back-office)
-- Price computation are now covered by Integration tests powered by Behat (human-readable tests)
+- Price computation is now covered by Integration tests powered by Behat (human-readable tests)
 - New mail template system based on Twig, along with a new generation system which avoids downloading all the mail templates; will allow easier customization in the future versions
 - New CLDR standard implementation: improved localization of prices and amounts, will allow creating custom currencies in future versions
 - Support for multiple grids on the same page
@@ -131,6 +131,8 @@ This minor version is our biggest since 1.7.1. Here is 1.7.6 in numbers:
   - actionGetMailThemeFolder
   - actionBuildLayoutVariables
   - actionGetMailLayoutTransformations
+  
+See all hooks in the [DevDocs](https://devdocs.prestashop.com/1.7/modules/concepts/hooks/list-of-hooks/)
 
 
 ### Improved hooks
@@ -154,7 +156,7 @@ This minor version is our biggest since 1.7.1. Here is 1.7.6 in numbers:
 - Version comparison:
   - AppKernel::MAJOR_VERSION is now “7” instead of “17”
   - “1.2.4” is no longer greater than “1.2.3.4” (the latter is now interpreted as “2.3.4”)
-- Endpoints other than index.php have been deprecated):
+- Endpoints other than index.php have been deprecated:
   - All BO endpoints now require a token
   - AdminModelAdapter.php now requires the Router in its constructor
 - The following currencies are no longer available:
@@ -166,7 +168,7 @@ This minor version is our biggest since 1.7.1. Here is 1.7.6 in numbers:
   - src/Core/Addon/Module/ModuleManager.php::_construct() receives an instance of CacheClearerInterface instead of CacheClearer
   - Permissions for files created by PrestaShop are no longer set to 0777. Permissions are now set to 0755 for directories and 0644 for files
   - To prevent having jQuery included twice, It is no longer possible to add jQuery in BO controllers based on the new theme using addJquery()
-  - Error messages are no longer html escaped
+  - Error messages are no longer html escaped automatically
 
 
 ## PrestaShop ❤ Community

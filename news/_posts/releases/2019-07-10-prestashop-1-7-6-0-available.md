@@ -4,7 +4,7 @@ title:  "PrestaShop 1.7.6.0 is available!"
 subtitle: "You waited for it, here it is!"
 date:   2019-07-10 18:00:00
 authors: [ PrestaShop ]
-image: 
+image: /assets/images/2019/07/176_available_banner.jpg
 icon: icon-checked
 tags:
  - 1.7
@@ -19,7 +19,7 @@ We are happy to announce PrestaShop 1.7.6.0 is officially available!
 
 It has been quite a journey to deliver this huge release, our biggest yet since 1.7.1.0. Six months of development, a six week-long Beta, two Release Candidates... Was it worth it? We absolutely think so, and hope that you will enjoy using it.
 
-![image]
+![1.7.6.0 available!](/assets/images/2019/07/176_available_banner.jpg)
 
 In this version we focused on improving and bringing back important 1.6 features to merchants, and kept working on code quality and performance improvements. We have made important progress on the Symfony migration as well.
 
@@ -49,17 +49,17 @@ This minor version is our biggest since 1.7.1. Here’s 1.7.6 in numbers:
 **Front office**
 - New design for transactional emails (optimized for mobile display), which strengthen the customer relationship and improve the shopping experience.
 
-[image emails temp]
+![New transactional emails template](/assets/images/2019/07/176_available_emails_templates.png)
 
 - Improved display of the price details (product price, shipping, taxes, etc.) at all key stages of the purchasing process to improve customer reassurance and conversions.
 - New profile menu with direct access to resources (documentation, training, agencies, help center...).
 - Updated version of the Product Comments module, with rich snippets. Available on 1.7.6+ versions.
 
-[image product comments]
+![Updated Product Comments module](/assets/images/2019/07/176_available_product_reviews.png)
 
 - Fully refactored faceted search (for sorts and filters) on the categories and listings pages with the addition of a price slider. The new version is available for all 1.7.1+ versions.
 
-[image faceted]
+![Refactored faceted Search module](/assets/images/2019/07/176_available_faceted_search.png)
 
 - Improved Catalog mode: for showcase websites, you can now choose to display or to hide product prices.
 - Improved currency management subsystem. This is the basis to allow more customization in the next versions, adding custom currencies for example.
@@ -71,17 +71,17 @@ This minor version is our biggest since 1.7.1. Here’s 1.7.6 in numbers:
 - New helper cards have been added on important pages to improve the software onboarding: Categories, Customers, Pages, Employees.
 - Dynamic preview of search engine results have been added to more pages: Product page, Categories, CMS.
 
-[gif seo]
+![SEO preview added to more pages](/assets/images/2019/07/176_seo_preview.gif)
 
 - The watermark module has been updated to 1.7 - thanks to the [community](http://build.prestashop.com/news/contributor-interview-rodrigo-laurindo). The module is available in the Module Catalog.
 - Improved translation system for multilingual modules.
 - The Design section of the back office has been reworked. Now you are able to have an overview of all design features (RTL, logos, favicon and theme) and manage them the way you want.
 
-[image design page]
+![The Design page after rework](/assets/images/2019/07/176_available_design_page.png)
 
 - Optimized back office administration on mobile devices.
 
-[image responsive]
+![Improved BO mobile responsive](/assets/images/2019/07/176_available_improved_responsive.png)
 
 
 ## Major Bug Fixes
@@ -139,7 +139,7 @@ This minor version is our biggest since 1.7.1. Here’s 1.7.6 in numbers:
 
 
 
-## Breaking or risky changes
+### Breaking or risky changes
 
 - The new CLDR implementation replaces the old one. Some breaking changes were needed:
   - The Currency ObjectModel is now multilingual

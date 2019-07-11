@@ -127,7 +127,6 @@ This minor version is our biggest since 1.7.1. Here is 1.7.6 in numbers:
 - Kpi hooks
 - Mail generator hooks:
   - actionListMailThemes
-  - actionGetMailThemeFolder
   - actionBuildLayoutVariables
   - actionGetMailLayoutTransformations
   

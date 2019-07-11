@@ -69,7 +69,7 @@ This minor version is our biggest since 1.7.1. Here is 1.7.6 in numbers:
 - Manage and preview your transactional emails directly from a new back-office page: Email Theme.
 - In order to gather all prices in the same place, a “Price (tax incl.)” column has been added to the product listing. In one glance, it is now possible to get both tax included and excluded prices for each product.
 - New helper cards have been added on important pages to improve the software onboarding: Categories, Customers, Pages, Employees.
-- Dynamic preview of search engine results have been added to more pages: Product page, Categories, CMS.
+- Dynamic preview of search engine results has been added to more pages: Product page, Categories, CMS.
 
 ![SEO preview added to more pages](/assets/images/2019/07/176_seo_preview.gif)
 
@@ -118,7 +118,6 @@ This minor version is our biggest since 1.7.1. Here is 1.7.6 in numbers:
   - Product combination information in Pack content is now available
 
 
-
 ### New hooks
 - displayProductActions (Product page, close to the “Add to cart” button)
 - displayPersonalInformationTop (Checkout funnel, before the customer login form)
@@ -140,7 +139,6 @@ See all hooks in the [DevDocs](https://devdocs.prestashop.com/1.7/modules/concep
 - actionProductAdd now receives id_product_old when duplicating a product
 
 
-
 ### Breaking or risky changes
 
 - The new CLDR implementation replaces the old one. Some breaking changes were needed:
@@ -150,9 +148,9 @@ See all hooks in the [DevDocs](https://devdocs.prestashop.com/1.7/modules/concep
   - The namespace “PrestaShop\PrestaShop\Core\Cldr” has been removed
   - The CLDR files in the “/translations” directory have been removed
 - Import:
-  - You no longer can just add categories to current categories with import to a force ID. You will have to set them all and the first will become the default_category.)
+  - You can no longer just add categories to current categories with import to a force ID. (You will have to set them all and the first will become the default_category)
 - Replaced library:
-  - PhpExcel (no longer supported) has been replaced by PHPSpreadsheet)
+  - PhpExcel (no longer supported) has been replaced by PHPSpreadsheet
 - Version comparison:
   - AppKernel::MAJOR_VERSION is now “7” instead of “17”
   - “1.2.4” is no longer greater than “1.2.3.4” (the latter is now interpreted as “2.3.4”)

@@ -19,11 +19,6 @@ PrestaShop 1.7.6.1 is now available. This maintenance release fixes 26 issues re
 
 We suggest upgrading your shop quickly in order to benefit from this fixes. Of course, don't forget to backup before.
 
-[Download PrestaShop 1.7.6.1 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
-{: .text-center}
-
-Since version 1.7.6.1 is a “patch” update to version 1.7.6.0, upgrading from any 1.7.6 version will be easy: features will work better, and modules & themes which worked fine on 1.7.6.0 will work just as well with 1.7.6.1. Upgrades from a standard 1.7.x version should work just as well.
-
 ## Main fixes
 
 * In some circumstances prices would appear with 6 decimal digits ([#14640](https://github.com/PrestaShop/PrestaShop/issues/14640))
@@ -52,7 +47,9 @@ Following [#15139](https://github.com/PrestaShop/PrestaShop/pull/15139), module 
 
 ## Acknowledgements
 
-Contributors to this patch version, from both the Core team and the community at large: 
+Contributors to this patch version, from both the Core team and the community at large: Dheeraj Sharma, Franck Lefèvre, Jonathan Lelievre, Mathieu Ferment, Matthieu Rolland, Nesrine Abdmouleh, Pablo Borowicz, Pierre Rambaud, Priyank Desai, Roja45, Thomas Nabord and Šarūnas Jonušas. Thank you!
 
-Dheeraj Sharma, Franck Lefèvre, Jonathan Lelievre, Mathieu Ferment, Matthieu Rolland, Nesrine Abdmouleh, Pablo Borowicz, Pierre Rambaud, Priyank Desai, Roja45, Thomas Nabord and Šarūnas Jonušas. Thank you!
+[Download PrestaShop 1.7.6.1 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+{: .text-center}
 
+Since version 1.7.6.1 is a “patch” update to version 1.7.6.0, upgrading from any 1.7.6 version will be easy: features will work better, and modules & themes which worked fine on 1.7.6.0 will work just as well with 1.7.6.1. Upgrades from a standard 1.7.x version should work just as well.

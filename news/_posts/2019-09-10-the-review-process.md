@@ -42,7 +42,7 @@ In addition, we have also recently activated the new [Github Actions](https://gi
 
 ### Prestonbot
 
-[Prestonbot](https://github.com/PrestaShop/prestonbot) is a custom bot we have built that looks at all Pull Requests and try to help us manage the project by detecting mistakes in the pull request description and adding some labels to help us classify the pull requests. He also welcomes new contributors to the project :D .
+[Prestonbot](https://github.com/PrestaShop/prestonbot) is a custom bot we have built that looks at all Pull Requests and try to help us manage the project. He does a lot of things ! For example he detects mistakes in the pull request description and add some labels to help us classify the pull requests and he also welcomes new contributors to the project :D . [Read his story to learn more about him.](http://build.prestashop.com/news/prestonbot-reaches-stable-version/)
 
 If something is wrong, Prestonbot will write a comment in the pull request to tell you what to fix.
 
@@ -50,7 +50,7 @@ If something is wrong, Prestonbot will write a comment in the pull request to te
 
 Now that all the bots have done their job, humans finally come on the stage! Your Pull Request will be reviewed by a Core maintainer.
 
-### What do we check in a code review?
+### What do we check in code review?
 
 When a Core maintainer sees a pull request, they will review it and decide whether it should be accepted, if it needs changes, or if it cannot be accepted.
 
@@ -63,7 +63,7 @@ The review process is quite thorough in order to make sure that PrestaShop codeb
 - PrestaShop follows [SemVer](https://semver.org/). This means that we strive not to introduce breaking compatibility changes when releasing minor and patch versions. Therefore, we make sure the Pull Request does not introduce such changes, as some developers submit pull requests without being aware of this constraint.
 - We also have a vision of what PrestaShop should evolve to in order to follow the new trends in the software world. Although a big codebase like PrestaShop evolves slowly, we keep the future architecture   and features we want to include in mind, and we check whether the Pull Request is following this direction. For example today PrestaShop relies heavily on jQuery for its frontend features, and we started introducing Vue.js. So if tomorrow we see a Pull Request that is using React.js we might refuse it in order to keep a consistency in the technology stack used for the project.
 
-So as you can see, in a Pull Request we review a lot of things! To do all of these checks, we do not only look at the code on Github. We sometimes pull the branch on our own computer to test and navigate the code in order to make sure all of these requirements are met. We discuss with team members about parts we are not sure. We can even sometimes run benchmarks or audits for critical pieces of code.
+So as you can see, in a Pull Request we review a lot of things! To do all of these checks, we do not only look at the code on Github. We sometimes pull the branch on our own computer to test and navigate the code in order to make sure all of these requirements are met. We discuss with other maintainers about parts we are not sure. We can even sometimes run benchmarks or audits for critical pieces of code.
 
 Some Pull Requests are very easy to review because they are related to a part of the code we know very well, other instead are very hard to review because they are related to a complex topic, a complex area of the code or have a huge global impact on the software that is very hard to estimate and assess. Reviews can take hours or days as we try our very best to make sure every contribution merged in the project meets the level of quality we want for it.
 
@@ -77,7 +77,7 @@ Also, for some Pull Requests, we might look for help and ask people of the Prest
 - We ask the Product team to review changes that introduce a significant behavior modification (either an existing feature or a new feature)
 - We ask the Content team to review Pull Requests that introduce wording changes (labels, titles, error and information messages)
 
-Once the Pull Request has been validated by all of the relevant people, it's finally verified by the QA team. The QA team will then make sure that the behavior of the proposed change is correct and that it does not produce any regressions (new errors).
+Once the Pull Request has been validated by all of the relevant people, it is finally verified by the QA team. The QA team will then make sure that the behavior of the proposed change is correct and that it does not produce any regressions (new errors).
 
 After the Pull Request has finally passed the QA validation, it is merged in the project and the author becomes (if they weren't already) a contributor to this great open source project :) .
 
@@ -87,6 +87,7 @@ After the Pull Request has finally passed the QA validation, it is merged in the
 
 As you can see, the process between the submission of Pull Request and its merge is a long journey. This journey is not meaningless: the goal is to make sure we build a consistent and reliable software in the end, and when you consider the size of this project, it actually does not look too much!
 
-A downside of this long journey and the level of commitment it requires from both the reviewers and the authors is that the hardest Pull Requests require a very long time to be reviewed, because we are actually not a big team. Today, September of 2019, we are 6 Core Team members: to review more than 400 Pull Requests, it is a bit short ... this is why the PrestaShop company is currently hiring!
+A downside of this long journey and the level of commitment it requires from both the reviewers and the authors is that some Pull Requests require a very long time to be reviewed. Also, we are actually not a big team. As of September of 2019, there are only 6 Core maintainers available to review more than 400 Pull Requests... this is why PrestaShop is currently hiring!
 
 We also are working on other ideas to bring more people in the maintainer team and to be able to review/merge everything, so we hope to get better in the following months.
+

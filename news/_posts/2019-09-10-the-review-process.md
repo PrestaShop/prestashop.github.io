@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What happens to pull requests after they are submitted"
-subtitle: "Discover what happens behind the scene during code review"
+subtitle: "Discover what happens behind scenes during code review"
 date:   2019-09-10 10:30:00
 authors: [ MathieuFerment ]
 icon: icon-code
@@ -16,13 +16,13 @@ The PrestaShop project currently has 389 pull requests open and new Pull Request
 
 All of these pull requests go through a thorough process which aims to provide a stable, consistent and reliable software that we all know under the name PrestaShop. Here is this process in details.
 
-## What happens when you open a Pull Request
+## Automatic tasks when you open a Pull Request
 
 When you submit a new Pull Request to the project repository https://github.com/PrestaShop/PrestaShop, a long journey starts.
 
 ### Continuous Integration
 
-We have setup on the project 2 great tools that help us check the quality of contributions.
+We have set up two great tools on the project that help us verify the quality of contributions.
 
 The first tool is [PrettyCI](https://prettyci.com/). This tool will look at your Pull Request and check whether the code-style is correct. If not, it will block the PR from being merged and tell you what is wrong.
 
@@ -34,9 +34,9 @@ The second tool is [Travis](http://travis-ci.org/). Travis is a Continous Integr
 
 If Travis states that your pull request has issues, you need to fix the issues by looking at Travis output to understand what needs to be fixed.
 
-These 2 tools are being run for every Pull Request, so we know that every contribution has been checked. This is a great asset to help us ensure the quality of the project.
+These tools are executed automatically for every Pull Request, so we know that every contribution has been checked. This is a great asset to help us ensure the quality of the project.
 
-Note: we have also recently activated on the `develop` branch the new [Github Actions](https://github.com/features/actions) and benefit from an additional php7.2-compliancy check.
+In addition, we have also recently activated the new [Github Actions](https://github.com/features/actions) on the `develop` branch, which now benefits from an additional php 7.2 syntax compliancy check.
 
 ![CI tools on github](/assets/images/2019/09/CI-github-tools.png)
 
@@ -46,44 +46,47 @@ Note: we have also recently activated on the `develop` branch the new [Github Ac
 
 If something is wrong, Prestonbot will write a comment in the pull request to tell you what to fix.
 
-### Code review
+## The code review, a human task
 
-Now that all the bots have done their job, humans finally come on the stage ! Your Pull Request will be reviewed by a member of the Core Team.
+Now that all the bots have done their job, humans finally come on the stage! Your Pull Request will be reviewed by a Core maintainer.
 
-#### What do we check in a code review?
+### What do we check in a code review?
 
-When a Core Team member opens a pull request, he will review it and decide whether it should be accepted, or it needs changes, or it cannot be accepted.
+When a Core maintainer sees a pull request, they will review it and decide whether it should be accepted, if it needs changes, or if it cannot be accepted.
 
-The review process is quite complete in order to make sure that PrestaShop codebase gets better with each contribution. Here is all the things we look for in a Pull Request, when reviewing it:
+The review process is quite thorough in order to make sure that PrestaShop codebase gets better with each contribution. Here is all the things we look for in a Pull Request, when reviewing it:
 
-- Of course we start by checking that the code is correct. This means both from a behavior point of view than from a technical point of view. This is simply an assessment of the quality of the Pull Request code, just like it happens in a lot of software teams. We check the code is correct, we check the code uses the right functions, we check the code handles expectable edge-cases, we check the code has no vulnerability, we check the code scales well ... We also keep in mind that PrestaShop is a CMS and consequently must be extensible to allow developers to easily customize the behavior, so we make sure to provide relevant extension points.
-- We also assess the readability of the code. There is a statement that says 'when a code file is opened by a developer, 9 times out of 10 it will only to be read, not to be modified'. Because PrestaShop is a huge and complex codebase and because it has so many people reading through it, it is very important that we make the code as readable as possible. This is obtained by adding comments, choosing carefully function and variable names and building an architecture that makes sense so it is easy to grasp and navigate for people who have never worked on it before.
-- We also check that best practices are implemented into the Pull Request, be it standard conventions or practices like [PSR](https://www.php-fig.org/psr/) or best security recommandations like the [OWASP](https://www.owasp.org/) recommandations. When people use PrestaShop to build a custom website, it is likely that they will follow the practices they see implemented in the Core so we try to think of the code we merge as an example that people will use.
-- PrestaShop has grown huge over the years, both as a codebase and as a software. There are hundred of features built in the software, but it is not often that people use them all. That is why some contributions sometimes need to be improved because they are not compatible with one of the existing features of the software. Common examples are the multi-store mode or the RTL (Right-To-Left) mode, two feature that a lot of developers do not use (because it adresses specific merchant or countries needs) and consequently when they submit a Pull Request, they do not check whether the modification they submit is compatible with these modes.
-- We follow [SemVer](https://semver.org/). This means that, as much as possible, when we release minor and patch versions, we do not introduce breaking compatibility changes. We make sure the Pull Request does not introduce such changes as some developers submit pull requests without being aware of this constraint.
-- We also have a vision of what PrestaShop should evolve to in order to follow the new trends in the software world. Although a big codebase like PrestaShop is very slow to move, we keep in mind the future architecture and features we want to bring and we check whether the Pull Request is following this direction. For example today PrestaShop relies heavily on jQuery for its frontend features, and we started to introduce Vue.js . So if tomorrow we see a Pull Request that is using React.js we might refuse it in order to keep a consistency in the technology stack used for the project.
+- Of course we start by checking that the code is correct. This means both from a behavior point of view as well as from a technical point of view. This is simply an assessment of the quality of the Pull Request code, just like it happens in a lot of software teams. We check the code works as intended, it uses the right functions, it handles expectable edge-cases, has no obvious vulnerabilities, scales well, etc. We also keep in mind that PrestaShop is a CMS and consequently must provide all the necessary extension points to allow developers to customize or extend its behavior.
+- We also assess the readability of the code. There is a statement that says "when a code file is opened by a developer, 9 times out of 10 it will only to be read, not to be modified". Because PrestaShop is a huge and complex codebase and because it has so many people reading through it, it is very important that its code is made as readable as possible. This is obtained by adding comments, carefully choosing function and variable names, and building an architecture that makes sense so it is easy to grasp and navigate for people who have never worked on it before.
+- We also check that best practices are implemented into the Pull Request, be it standard conventions or practices like [PSR](https://www.php-fig.org/psr/) or best security recommandations like the ones from [OWASP](https://www.owasp.org/). When people use PrestaShop to build a shop, it is likely that they will follow the practices they see implemented in the Core, so we try to think of the code we merge as an example that people will use.
+- PrestaShop has grown huge over the years, both as a codebase and as a software. There are hundreds of features built in the software, and some are more commonly used than others. Some contributions sometimes need to be reworked because they did not take into account one of the less popular features of the software, or are not compatible with them. Common examples are the multi-store mode or the RTL (Right-To-Left) mode, two features that adresses very specific needs and that many developers are not aware of.
+- PrestaShop follows [SemVer](https://semver.org/). This means that we strive not to introduce breaking compatibility changes when releasing minor and patch versions. Therefore, we make sure the Pull Request does not introduce such changes, as some developers submit pull requests without being aware of this constraint.
+- We also have a vision of what PrestaShop should evolve to in order to follow the new trends in the software world. Although a big codebase like PrestaShop evolves slowly, we keep the future architecture   and features we want to include in mind, and we check whether the Pull Request is following this direction. For example today PrestaShop relies heavily on jQuery for its frontend features, and we started introducing Vue.js. So if tomorrow we see a Pull Request that is using React.js we might refuse it in order to keep a consistency in the technology stack used for the project.
 
-So as you can see, in a Pull Request we review a lot of things ! To do all of these checks, we do not only look at the code on github. We sometimes pull the branch on our own computer to test and navigate the code in order to make sure all of these requirements are met. We discuss with team members about parts we are not sure. We can even sometimes run benchmarks or audits for critical pieces of code.
+So as you can see, in a Pull Request we review a lot of things! To do all of these checks, we do not only look at the code on Github. We sometimes pull the branch on our own computer to test and navigate the code in order to make sure all of these requirements are met. We discuss with team members about parts we are not sure. We can even sometimes run benchmarks or audits for critical pieces of code.
 
-Some Pull Requests are very easy to review because they are related to a part of the code we know very well, other instead are very hard to review because they are related to a complex topic, a complex area of the code or have a huge global impact on the software that is very hard to estimate and assess. These last reviews can take hours or days as we try our very best to make sure every contribution merged in the project meets the level of quality we want for it.
+Some Pull Requests are very easy to review because they are related to a part of the code we know very well, other instead are very hard to review because they are related to a complex topic, a complex area of the code or have a huge global impact on the software that is very hard to estimate and assess. Reviews can take hours or days as we try our very best to make sure every contribution merged in the project meets the level of quality we want for it.
 
-Most of the time, if an issue is found during the review, the Core Team member will provide feedback about the issue and requests the author to modify the parts of the Pull Request that cannot be accepted like it. After the author of the Pull Request have implemented the requested changes, then the Pull Request can be approved and move forward to the next step.
+Most of the time, if an issue is found during the review, the Core maintainer will provide feedback about the issue and requests the author to modify the parts of the Pull Request that cannot be accepted as they are. After the author of the Pull Request has implemented the requested changes, then the Pull Request can be approved and move forward to the next step.
 
-### It is not only technical
+### It is not only about code
 
 Also, for some Pull Requests, we might look for help and ask people of the PrestaShop Product Team:
-- for Pull Requests that have a huge impact of the UX, we ask the UX design team to review it
-- for Pull Requests that introduce a big change in the behavior (either an existing feature or a new feature), we ask the Product team to review it
-- for Pull Requests that introduce new wordings (labels, titles, error and information messages), we ask the Content team to review it
 
-When the Pull Request has been validated by all of these people, it finally is checked by the QA team. The QA team will check that the Pull Request behavior is correct and also that existing features and behaviors are not modified/broken by the Pull Request.
+- We ask the UX design team to review changes that have a significant UX impact 
+- We ask the Product team to review changes that introduce a significant behavior modification (either an existing feature or a new feature)
+- We ask the Content team to review Pull Requests that introduce wording changes (labels, titles, error and information messages)
 
-When the Pull Request has finally passed the QA validation, it is finally merged in the project and the author becomes (if he was not before) an opensource contributor to this great project :) .
+Once the Pull Request has been validated by all of the relevant people, it's finally verified by the QA team. The QA team will then make sure that the behavior of the proposed change is correct and that it does not produce any regressions (new errors).
+
+After the Pull Request has finally passed the QA validation, it is merged in the project and the author becomes (if they weren't already) a contributor to this great open source project :) .
 
 ![Merge button on github](/assets/images/2019/09/Merge-Button.png)
 
 ## Conclusion
 
-As you can see, the process between the submission of Pull Request and its merge is a long journey. This journey is not meaningless: the goal is to make sure we build a consistent and reliable software in the end, and when you consider the size of the software, it actually does not look too much !
+As you can see, the process between the submission of Pull Request and its merge is a long journey. This journey is not meaningless: the goal is to make sure we build a consistent and reliable software in the end, and when you consider the size of this project, it actually does not look too much!
 
-A downside of this long journey and the level of commitment it requires from both the reviewers and the authors is that the hardest Pull Requests require a very long time to be reviewed, because we are actually not a huge number . Today, September of 2019, we are 6 Core Team members: to review more than 400 Pull Requests, it is a bit short ... this is why we are currently hiring ! We also have other ideas to bring more people in the team and be able to review/merge everything, so we hope to get better in the following months.
+A downside of this long journey and the level of commitment it requires from both the reviewers and the authors is that the hardest Pull Requests require a very long time to be reviewed, because we are actually not a big team. Today, September of 2019, we are 6 Core Team members: to review more than 400 Pull Requests, it is a bit short ... this is why the PrestaShop company is currently hiring!
+
+We also are working on other ideas to bring more people in the maintainer team and to be able to review/merge everything, so we hope to get better in the following months.

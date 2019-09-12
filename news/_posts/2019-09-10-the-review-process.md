@@ -18,7 +18,7 @@ All of these pull requests go through a thorough process which aims to provide a
 
 ## Automatic tasks when you open a Pull Request
 
-When you submit a new Pull Request to the project repository https://github.com/PrestaShop/PrestaShop, a long journey starts.
+When you submit a new Pull Request to the project repository [https://github.com/PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop), a long journey starts.
 
 ### Continuous Integration
 
@@ -26,7 +26,7 @@ We have set up two great tools on the project that help us verify the quality of
 
 The first tool is [PrettyCI](https://prettyci.com/). This tool will look at your Pull Request and check whether the code-style is correct. If not, it will block the PR from being merged and tell you what is wrong.
 
-It might appear trivial, but having a unified code-style on the project actually helps a lot. It is a lot easier to work on a big codebase like PrestaShop if all code is written following the same conventions: snake_case or camelCase, how to write the phpDoc, when to use white spaces ... it makes the code look like if it was written by a single developer. Just like reading a book with two different styles in it, having a codebase with different styles is making it harder to navigate. A unified code-style also makes the pull requests easier to review !
+It might appear trivial, but having a unified code-style on the project actually helps a lot. It is a lot easier to work on a big codebase like PrestaShop if all code is written following the same conventions: snake_case or camelCase, how to write the phpDoc, when to use white spaces ... it makes the code look like if it was written by a single developer. Just like reading a book with two different styles in it, having a codebase with different styles is making it harder to navigate. A unified code-style also makes the pull requests easier to review!
 
 If PrettyCI states that your pull request has issues, you need to fix the issues by looking at PrettyCI output to understand what needs to be fixed.
 
@@ -42,7 +42,7 @@ In addition, we have also recently activated the new [Github Actions](https://gi
 
 ### Prestonbot
 
-[Prestonbot](https://github.com/PrestaShop/prestonbot) is a custom bot we have built that looks at all Pull Requests and try to help us manage the project. He does a lot of things ! For example he detects mistakes in the pull request description and add some labels to help us classify the pull requests and he also welcomes new contributors to the project :D . [Read his story to learn more about him.](http://build.prestashop.com/news/prestonbot-reaches-stable-version/)
+[Prestonbot](https://github.com/PrestaShop/prestonbot) is a custom bot we have built that looks at all Pull Requests and try to help us manage the project. He does a lot of things! For example he detects mistakes in the pull request description and add some labels to help us classify the pull requests and he also welcomes new contributors to the project :D . [Read his story to learn more about him.](http://build.prestashop.com/news/prestonbot-reaches-stable-version/)
 
 If something is wrong, Prestonbot will write a comment in the pull request to tell you what to fix.
 

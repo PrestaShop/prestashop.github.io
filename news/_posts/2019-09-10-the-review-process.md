@@ -2,7 +2,7 @@
 layout: post
 title: "What happens to pull requests after they are submitted"
 subtitle: "Discover what happens behind scenes during code review"
-date:   2019-09-10 10:30:00
+date:   2019-09-12 11:00:00
 authors: [ MathieuFerment ]
 icon: icon-code
 tags:

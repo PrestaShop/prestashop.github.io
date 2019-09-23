@@ -307,12 +307,12 @@ If you are interested in this topic, [join the discussion on GitHub][legacy-layo
 
 ### Translation system
 
-PrestaShop 1.7 introduced the Symfony translator, which is used for all Core and Native modules (the ones bundled with PrestaShop). While the translator itself is better than the system it replaced, its implementation has some side effects:
+PrestaShop 1.7 introduced the Symfony translator, which is used for all Core and Native modules (the ones bundled with PrestaShop). While the Symfony translator itself is better than the system it replaced, its integration into PrestaShop has some rough edges that need to be worked out:
 
-1. The translation catalogue is bundled with PrestaShop and frozen at the time of release, meaning that any new wordings cannot be added until the following release.
-2. Native modules's wordings are tied to a given PrestaShop version, because contrary to third party modules (who are stuck with the legacy translation system), their wordings are bundled with PrestaShop itself. This means that a module update containing new wordings will be impossible to translate until the shop is updated to the next PrestaShop version.
+1. The default translation catalogue (a collection of files containing all translatable wordings) is bundled with PrestaShop and frozen at the time of release. This means that even though existing wordings can receive new translations as needed, new wordings cannot be added until the following release is out. Once new wordings are added to the catalogue, existing PrestaShop shops must be updated to be able to use the newly added wordings.
+2. Native modules's wordings are tied to a given PrestaShop version, because contrary to third party modules (who are stuck with the legacy translation system), their default catalogues are bundled with PrestaShop itself. This means that a module update containing new wordings will be impossible to translate until the shop is updated to the next PrestaShop version.
 
-We have already started improving this in PrestaShop 1.7.6, but there is still some way to go. Having two translation systems working in parallel (the legacy one and the Symfony one) is very confusing.
+We have already started improving this in PrestaShop 1.7.6, but there is still some way to go. In addition, having two translation systems working in parallel (the legacy one and the Symfony one) is very confusing for newcomers.
 
 ## Testing is very hard
 

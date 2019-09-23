@@ -347,7 +347,7 @@ We have been struggling with automated tests failing unexpectedly, not because t
 - Some tests were producing side-effects that made other tests fail because of unexpected/inconsistent state (usually due to hidden data caching in legacy code).
 - E2E tests fail randomly because of timeouts and/or issues with our task runner (Travis).
 
-We believe that bugs are a natural side-effect of changing things, and that automated tests are the only way to be able to consistently move forward without breaking stuff... but for that, we need good-quality tests.
+We believe that bugs are a natural side-effect of changing things, and that automated tests are the only way to be able to consistently move forward without breaking stuff... but for that, we need good-quality tests. Because of PrestaShop legacy architecture, these tests are really hard to write.
 
 ## Other problems
 

@@ -239,7 +239,7 @@ This is because the initial idea was that VueJS frontend and API backend was sup
 
 Because of _customization_.
 
-PrestaShop owes its success mainly to its ability to be extended and customized. For this, developers rely on extension points that allow them to add behavior in specific points, as well as conventions that allow them to replace certain bits of the software by their own.
+PrestaShop owes its success mainly to its ability to be [extended][extension-concepts] and customized. For this, developers rely on extension points that allow them to add behavior in specific points, as well as conventions that allow them to replace certain bits of the software by their own.
 
 We think that this aspect wasn't thoroughly accounted for when designing the VueJS stack, as current extension methods do not work with VueJS pages. And of course they don't, because they behave in a drastically different way. This means that **there's no defined way to customize a VueJS page in PrestaShop right now**.
 
@@ -459,6 +459,7 @@ In case you forgot, here are the topics that will be covered during this series:
 [legacy-controllers]: https://devdocs.prestashop.com/1.7/development/architecture/legacy/legacy-controllers/
 [bad-example]: https://github.com/PrestaShop/PrestaShop/blob/95683248751795b1e927445d57abaf45708fea09/src/Adapter/Attribute/AttributeDataProvider.php
 [vuejs]: /news/introducing-vuejs-symfony-api/
+[extension-concepts]: https://devdocs.prestashop.com/1.7/modules/concepts/
 [serp]: /prestashop-1-7-5-0-available/#product-page
 [team-chose-bs4]: /news/new-theme-1-7-introduction/
 [bs4-alpha]: https://blog.getbootstrap.com/2015/12/08/bootstrap-4-alpha-2/

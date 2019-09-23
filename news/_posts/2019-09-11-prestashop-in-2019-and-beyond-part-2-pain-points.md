@@ -278,7 +278,7 @@ Looking at the code, we can see that many hastily made Adapters have been design
 
 **4. Hard dependencies**
 
-To make matters worse, most Adapters do not even implement an interface, which makes it impossible to replace them with Core reimplementations without modifying the dependent classes.
+To make matters worse, most Adapters do not even implement an [interface](https://www.php.net/manual/en/language.oop5.interfaces.php), which makes it impossible to replace them with Core reimplementations without modifying the dependent classes.
 
 **The problem:** Most adapters are hard dependencies and cannot be replaced without changing the dependent code. 
 

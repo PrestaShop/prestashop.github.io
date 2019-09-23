@@ -344,7 +344,7 @@ We have been struggling with automated tests failing unexpectedly, not because t
 
 - Some unit tests aren't really unit (usually because they tested several classes at once).
 - Many unit tests that aren't unit were also extremely hard to understand and maintain, because of all the boilerplate code needed to put the shop in the state we needed for testing.
-- Some tests were producing side-effects that made other tests fail because of unexpected/inconsistent state (usually due to hidden cache in legacy code).
+- Some tests were producing side-effects that made other tests fail because of unexpected/inconsistent state (usually due to hidden data caching in legacy code).
 - E2E tests fail randomly because of timeouts and/or issues with our task runner (Travis).
 
 We believe that bugs are a natural side-effect of changing things, and that automated tests are the only way to be able to consistently move forward without breaking stuff... but for that, we need good-quality tests.

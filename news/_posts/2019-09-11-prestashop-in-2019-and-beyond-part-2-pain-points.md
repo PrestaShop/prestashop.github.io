@@ -303,6 +303,8 @@ Why? Because the main page layout (top menu & sidebar) hasn't been migrated yet 
 
 Having it done this way instead of the other way around (wrapping legacy controllers inside Symfony) means that as the migration progresses, complexity increases.
 
+If you are interested in this topic, [join the discussion on GitHub][legacy-layout-issue].
+
 ### Translation system
 
 PrestaShop 1.7 introduced the Symfony translator, which is used for all Core and Native modules (the ones bundled with PrestaShop). While the translator itself is better than the system it replaced, its implementation has some side effects:
@@ -446,6 +448,7 @@ In case you forgot, here are the topics that will be covered during this series:
 [part-1]: /news/prestashop-in-2019-and-beyond-part-1-current-architecture/
 [addons]: https://addons.prestashop.com
 [legacy-layout]: https://github.com/PrestaShop/PrestaShop/blob/1.7.6.0/controllers/admin/AdminLegacyLayoutController.php
+[legacy-layout-issue]: https://github.com/PrestaShop/PrestaShop/issues/12925
 [testing-is-doubting]: /assets/images/2019/09/tester-cest-douter.jpg
 [behat]: https://github.com/PrestaShop/PrestaShop/pull/12090
 [puppeteer]: https://developers.google.com/web/tools/puppeteer/

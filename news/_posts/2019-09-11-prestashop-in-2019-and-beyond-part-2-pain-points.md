@@ -54,7 +54,7 @@ It is well-known that, in time, [software rots](https://en.wikipedia.org/wiki/So
 
 However, refactoring can only get you so far until it starts to require introducing breaking changes. And once you hit that brick wall, you're stuck: either you let that part of the code rot or you introduce breaking changes that will undermine the adoption of your platform. Or worse, you introduce an _new_ subsystem that does the same thing as the old one, and keep the previous one for compatibility, consequently increasing the overall software complexity.
 
-That's one of the top reasons PrestaShop's architecture has become so complex. The constant need to provide as much backwards compatibility as possible, even when doing so was detrimental to the platform's overall technical quality, has substantially undermined the project's capacity to move forward.
+That's one of the top reasons PrestaShop's architecture has become so complex. It was pushed too far. By constantly trying our best to maintain backwards compatibility, even when doing so was detrimental to the platform's overall technical quality, we have substantially undermined its capacity to move forward.
 
 That said, let's find out what other problems are hiding under the hood...
 

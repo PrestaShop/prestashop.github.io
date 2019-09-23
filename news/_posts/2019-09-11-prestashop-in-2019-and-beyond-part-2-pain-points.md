@@ -173,7 +173,7 @@ Big indeed. As we can see, the level of dependencies is _massive_. That means th
 
 Of course, this level of access is fantastic for customizations. _Everything_ is right there, available for use and modification. But at what cost?
 
-Having everything open up for use and modification severely limits PrestaShop's leeway to implement changes in the Core (be it features, bug fixes or refactoring) without introducing backwards incompatible changes.
+Having everything open up for use and modification severely limits PrestaShop's freedom to implement changes in the Core (be it features, bug fixes or refactoring) without introducing backwards incompatible changes.
 
 How severely does this affect us? Here are some examples of things that _shouldn't_ be done until the next major version of PrestaShop:
 

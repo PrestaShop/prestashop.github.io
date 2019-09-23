@@ -254,7 +254,7 @@ In the meantime, we will continue adding VueJS in the Back Office, but only as s
 
 Many of the new systems in PrestaShop 1.7 don't replace the previous ones, but feature a new, semi-independent way of doing the same thing that coexists with the previous way—which is kept for backwards compatibility. 
 
-Having more than one way of doing a given thing is bad for many reasons. First, it introduces cognitive friction, because as a developer you have to think about in when you should use one or the other. Second, because a business or dependency change in one must be replicated in the other. And third, if they don't produce the same output or side-effects for some reason, then it might produce systemwide inconsistencies.
+Having more than one way of doing a given thing is bad for many reasons. First, it introduces cognitive friction, because as a developer you have to think about in when you should use one or the other. Second, because a business logic or dependency change in one must be replicated in the other. And third, if they don't produce the same output or side-effects for some reason, then it might produce systemwide inconsistencies.
 
 There are several examples of this in PrestaShop 1.7. One of them is the "Core–Adapter–Legacy" architecture. Let's explore four problems tied to this example:
 

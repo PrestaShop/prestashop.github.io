@@ -146,7 +146,7 @@ If we look at the lines going in and out of them, we can see the relationships b
 	- Module templates (if they "skin" those modules)
 	- Data structures provided to templates
 	- Core javascript library (jQuery)
-- **Modules**	 depend on...
+- **Modules** depend on...
 	- Smarty and/or Twig
 	- Base module features provided by the Core
 	- Hooks

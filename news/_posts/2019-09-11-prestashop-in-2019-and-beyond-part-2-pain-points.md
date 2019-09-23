@@ -450,7 +450,7 @@ In case you forgot, here are the topics that will be covered during this series:
 [legacy-layout]: https://github.com/PrestaShop/PrestaShop/blob/1.7.6.0/controllers/admin/AdminLegacyLayoutController.php
 [legacy-layout-issue]: https://github.com/PrestaShop/PrestaShop/issues/12925
 [testing-is-doubting]: /assets/images/2019/09/tester-cest-douter.jpg
-[behat]: https://github.com/PrestaShop/PrestaShop/pull/12090
+[behat]: https://github.com/PrestaShop/PrestaShop/pull/12634
 [puppeteer]: https://developers.google.com/web/tools/puppeteer/
 [semver-article]: /news/a-more-semantic-versioning-scheme/
 [comprehensive-overview]: /assets/images/2019/02/architecture-comprehensive-overview-current.jpg

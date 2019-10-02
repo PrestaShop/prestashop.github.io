@@ -28,7 +28,7 @@ First of all, I believe there is an all-too-common misunderstanding about the ve
 
 When I meet people and tell them what I do for a living, I usually describe PrestaShop as an _open-source platform for developing e-commerce websites_. This is in my view, a more accurate description of what this project is about.
 
-Yes, I have met people who download it and use it as-is, but I think they belong to a declining minority. To my best understanding, most people who are choosing to use the PrestaShop project in 2019 (and who succeed in doing so) do it to kickstart their own development. They are usually agencies or experts, and often they are also part of our rich community of module and theme developers who sell on the [Addons Marketplace][addons].
+Yes, I have met people who download it and use it as-is, but I think they belong to a declining minority. To my best understanding, most people who are choosing to use the PrestaShop project in 2019  and succeed in doing so, do it to kickstart their own development—that is, a _product_ based on the PrestaShop _project_ (remember [not to confuse projects and products](https://opensource.com/business/15/8/open-source-products-four-rules)). They are usually agencies or experts, and often they are also part of our rich community of module and theme developers who sell on the [Addons Marketplace][addons].
 
 This means that we, the people who work on PrestaShop's Core code, have to keep tree kinds of "users" into account:
 

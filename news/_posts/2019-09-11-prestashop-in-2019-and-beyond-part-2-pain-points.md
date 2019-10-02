@@ -129,7 +129,7 @@ Right now there's no article documenting it out anywhere. If there was, we would
 
 So, if it's not clearly defined anywhere... then what is this unwritten contract made up from? Let's find out.
 
-First, we must first identify **who** are our technical stakeholders. Then, we have to establish **what** are the technical resources they need to interact with, and finally define **how** those interactions will take place. Sounds familiar? We have already depicted that in the [previous article][part-1] (see [figure][comprehensive-overview]).
+First, we must first identify **who** are our technical [stakeholders](https://en.wikipedia.org/wiki/Stakeholder_management). Then, we have to establish **what** are the technical resources they need to interact with, and finally define **how** those interactions will take place. Sounds familiar? We have already depicted that in the [previous article][part-1] (see [figure][comprehensive-overview]).
 
 By looking at the architecture overview, we can easily pinpoint PrestaShop's four main technical stakeholders:
 

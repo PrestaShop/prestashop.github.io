@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop in 2019 and beyond, part 2: The Pain Points"
 subtitle: "aka What needs to be improved"
-date:   2019-09-11 09:30:00
+date:   2019-10-07 08:00:00
 authors: [ PabloBorowicz ]
 icon: icon-compass
 tags: [1.7, architecture]

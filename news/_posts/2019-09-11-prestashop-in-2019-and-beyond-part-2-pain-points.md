@@ -460,7 +460,7 @@ In case you forgot, here are the topics that will be covered during this series:
 [bad-example]: https://github.com/PrestaShop/PrestaShop/blob/95683248751795b1e927445d57abaf45708fea09/src/Adapter/Attribute/AttributeDataProvider.php
 [vuejs]: /news/introducing-vuejs-symfony-api/
 [extension-concepts]: https://devdocs.prestashop.com/1.7/modules/concepts/
-[serp]: /prestashop-1-7-5-0-available/#product-page
+[serp]: /news/prestashop-1-7-5-0-available/#product-page
 [team-chose-bs4]: /news/new-theme-1-7-introduction/
 [bs4-alpha]: https://blog.getbootstrap.com/2015/12/08/bootstrap-4-alpha-2/
 [bs4-layout-changes]: https://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/

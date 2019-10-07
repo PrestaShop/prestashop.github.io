@@ -30,7 +30,7 @@ When I meet people and tell them what I do for a living, I usually describe Pres
 
 Yes, I have met people who download it and use it as-is, but I think they belong to a declining minority. To my best understanding, most people who are choosing to use the PrestaShop project in 2019  and succeed in doing so, do it to kickstart their own development—that is, a _product_ based on the PrestaShop _project_ (remember [not to confuse projects and products](https://opensource.com/business/15/8/open-source-products-four-rules)). They are usually agencies or experts, and often they are also part of our rich community of module and theme developers who sell on the [Addons Marketplace][addons].
 
-This means that we, the people who work on PrestaShop's Core code, have to keep tree kinds of "users" into account:
+This means that we, the people who work on PrestaShop's Core code, have to keep three kinds of "users" into account:
 
 1. The shoppers that buy things on PrestaShop shops,
 2. ... the merchants that run PrestaShop shops (and ultimately, pay for),
@@ -203,7 +203,7 @@ Having no clearly-defined contracts means we can't change anything without intro
 
 ## 1.7 was released too soon
 
-PrestaShop 1.7.0 was a very ambitious release. It featured a [new architecture](/news/new-architecture-1-6-1-0/), a [new framework (Symfony)](/news/prestashop-1-7-and-symfony/), a new Back Office theme (later based on our [UI kit](/news/PrestaShop-UI-Kit/)), a [new default Front Office theme](/news/new-theme-1-7-introduction/) and [Starter Theme](/starter-theme-kickoff/), a [new Product page experience](/news/product-page-evolution/), a [new Modules page experience](/module-page-awakens/), a [new translation system](/news/new-translation-system-prestashop-17/) and [use of CLDR](/cldr-composer-jshint/), among many other features. 
+PrestaShop 1.7.0 was a very ambitious release. It featured a [new architecture](/news/new-architecture-1-6-1-0/), a [new framework (Symfony)](/news/prestashop-1-7-and-symfony/), a new Back Office theme (later based on our [UI kit](/news/PrestaShop-UI-Kit/)), a [new default Front Office theme](/news/new-theme-1-7-introduction/) and [Starter Theme](/news/starter-theme-kickoff/), a [new Product page experience](/news/product-page-evolution/), a [new Modules page experience](/news/module-page-awakens/), a [new translation system](/news/new-translation-system-prestashop-17/) and [use of CLDR](/news/cldr-composer-jshint/), among many other features. 
 
 That's an impressive list. Unfortunately, that objective was proven to be too ambitious, and the result was an underwhelming initial release.
 

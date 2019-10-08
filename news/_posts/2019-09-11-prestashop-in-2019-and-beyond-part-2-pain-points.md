@@ -95,8 +95,7 @@ In PrestaShop, this problem is exacerbated by widespread data micromanagement, w
 
 Currently, there's no unique structure in the core that guarantees this vital system-wide coherence.
 
-#### 
-state
+#### Global State
 
 PrestaShop's legacy code is mainly made out of static classes which are heavily dependent on global or semi-global states, like `Context` and `Db`. 
 

@@ -5,6 +5,7 @@ subtitle: "Where you'll learn that it is time to focus on the 1.7 only"
 date:  2019-10-09 09:10:11
 authors: [LouiseBonnard]
 icon: icon-world
+image: /assets/images/2019/01/Build-Crowdin-banner.jpg
 tags: [translation, i18n, l10n]
 ---
 

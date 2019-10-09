@@ -411,7 +411,7 @@ Some people insist that written specifications are not needed, because "the code
 
 Because once a bug appears, and specially when it's a consequence of two contradicting pieces of code, things get uncomfortable—if code _is_ the specification, which part is right and which part is a bug?
 
-In a project as complex as PrestaShop, it's vital that all expected behaviors are well-documented. Otherwise, inconsistencies will keep creeping up again and again.
+In a project as complex as PrestaShop, it's vital that all expected behavior is well-documented. Otherwise, inconsistencies will keep creeping up again and again.
 
 This is why this year we started the [PrestaShop Specs Project][prestashop-specs], which aims at documenting the expected behavior of PrestaShop, so that whenever anyone is in doubt regarding how a specific part is _supposed_ to work, it will be written down somewhere. This is a huge project and most of the work is to be done, so the Product team is currently focusing on recording important decisions, tricky or unintuitive behavior, and new features first.
 

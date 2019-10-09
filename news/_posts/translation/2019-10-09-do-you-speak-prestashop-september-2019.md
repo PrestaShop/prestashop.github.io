@@ -17,7 +17,7 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ### :muscle: Go full 1.7! 
 
-Since version is not maintained by PrestaShop anymore (read [this post](http://build.prestashop.com/news/1.6.1.x-what-s-next) to learn more about it if you missed the information), we feel that it will be more relevant to only mention the 1.7 in those reports from now on. So let’s all head to our latest version and be proud of it, there is so much to do!
+Since version 1.6 is not maintained by PrestaShop anymore (read [this post](http://build.prestashop.com/news/1.6.1.x-what-s-next) to learn more about it if you missed the information), we feel that it will be more relevant to only mention the 1.7 in those reports from now on. So let’s all head to our latest version and be proud of it, there is so much to do!
 
 
 ### :two_hearts: Special thanks to newcomers

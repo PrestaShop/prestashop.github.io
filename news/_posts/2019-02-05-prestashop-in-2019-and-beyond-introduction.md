@@ -12,7 +12,7 @@ When working in a project as big and complex as PrestaShop, it's easy to get too
 
 But what's the vision for PrestaShop's future architecture? When I arrived at PrestaShop about a year and half ago, the migration to Symfony had been ongoing for a while, but there was no clearly defined goal in mind — or at least, none that was written down somewhere I could find.
 
-So a little more than a year ago, we started working on this subject. Until now, we had never managed to go beyond a couple of diagrams and word-of-mouth discussion, and actually write it down so that it could be shared with everyone. 
+So a little more than a year ago, we started working on this subject. Until now, we had never managed to go beyond a couple of diagrams and word-of-mouth discussion, and actually write it down so that it could be shared with everyone.
 
 It started with an in-depth analysis of the state of things in PrestaShop 1.7. What are the main components? How do they interact? Where are the main pain points?
 
@@ -25,7 +25,7 @@ During the last year, you may have seen me at PrestaShop events describing (alth
 Since this analysis is quite long and very information-dense, we decided to split it in four parts, that we'll publish during the following weeks:
 
 1. [The Current Architecture (or _"Point A – Where we are"_)](/news/prestashop-in-2019-and-beyond-part-1-current-architecture/)
-2. Pain Points (or _"What needs to be improved"_)
+2. [Pain Points (or _"What needs to be improved"_)](/news/prestashop-in-2019-and-beyond-part-2-pain-points/)
 3. The Future Architecture (or _"Point B – Where we are going"_)
 4. Connecting the dots (or _"Some ideas on how we'll get there"_)
 

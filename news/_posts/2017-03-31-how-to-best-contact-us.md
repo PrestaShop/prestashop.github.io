@@ -151,12 +151,10 @@ No software is perfect, and PrestaShop is no exception. Our team spends its whol
 
 We'd love to have you on the team! Join the ranks of users who help to improve PrestaShop: provide us with detailed report of any reproducible issue you stumble upon, and we'll do our best to get it fixed!
 
-Please use [this reference guide](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/) to better understand what makes a great Forge ticket.
+Please use [this reference guide](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/) to better understand what makes a great Github issue.
 
 Then, create your report for the right context. The Core team will review your report and answer back with any questions and /or ideas.
 
-* [PrestaShop 1.7](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)
-* [PrestaShop 1.6](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=10110&issuetype=1)
 * [PrestaShop 1.7 and modules](https://github.com/PrestaShop/PrestaShop/issues)
 * [PrestaShop 1.6 (now end of life)](https://github.com/PrestaShop/PrestaShop-1.6/issues)
 
@@ -183,7 +181,7 @@ If you found a text string that is simply not translatable, you can create a For
 
 #### Contributing to the User documentation
 
-The PrestaShop documentation has dozens of chapters and hundreds of pages of content. Most likely we have some typos here and there. We might need some updates as well. Have you seen such an issue? If so, [let us know](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11021&issuetype=1).
+The PrestaShop documentation has dozens of chapters and hundreds of pages of content. Most likely we have some typos here and there. We might need some updates as well. Have you seen such an issue? If so, let us know, send us an email at documentation@prestashop.com
 
 The documentation site is also a wiki, so you can fix an issue directly!
 

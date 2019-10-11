@@ -218,7 +218,7 @@ Core contributors are expected to know the PrestaShop technologies and tools in 
 Got everything set up? Find the branch you want to work with:
 
 * [Current development branch](https://github.com/PrestaShop/PrestaShop/tree/develop) (for the next 1.7 minor version).
-* [Current 1.6.1.x branch](https://github.com/PrestaShop/PrestaShop/tree/1.6.1.x).
+* [Current 1.6.1.x branch](https://github.com/PrestaShop/PrestaShop-1.6).
 
 
 #### To the Addons catalog

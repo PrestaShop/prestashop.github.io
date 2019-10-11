@@ -157,7 +157,8 @@ Then, create your report for the right context. The Core team will review your r
 
 * [PrestaShop 1.7](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)
 * [PrestaShop 1.6](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=10110&issuetype=1)
-* [Partner or Native Modules](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=10080&issuetype=1)
+* [PrestaShop 1.7 and modules](https://github.com/PrestaShop/PrestaShop/issues)
+* [PrestaShop 1.6 (now end of life)](https://github.com/PrestaShop/PrestaShop-1.6/issues)
 
 Thank you for your contribution and support to the PrestaShop community!
 

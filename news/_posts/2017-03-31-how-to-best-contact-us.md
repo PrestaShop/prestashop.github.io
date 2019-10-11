@@ -72,7 +72,7 @@ Without further ado, this is how we can work together!
         <p>Report bugs</p>
       </td>
       <td colspan="1" rowspan="1">
-        <p><a href="https://github.com/PrestaShop/PrestaShop#reporting-issues">Forge</a></p>
+        <p><a href="https://github.com/PrestaShop/PrestaShop#reporting-issues">Github</a></p>
       </td>
     </tr>
     <tr>

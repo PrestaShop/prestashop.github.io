@@ -44,7 +44,7 @@ This new module, which was available for 1.6 has been completely reworked and of
 - Rich snippets integration
 
 
-### Faceted Search module (current version: 3.3.0)
+### Faceted Search module (current version: [3.3.0](https://github.com/PrestaShop/ps_facetedsearch/releases/tag/v3.3.0))
 
 A huge refactoring has been made for version 3 and a lot of unit tests have been added to prevent future regressions. Many improvements have been added:  
 

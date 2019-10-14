@@ -15,7 +15,7 @@ The PrestaShop software is usually seen as a single “brick” and users tend t
 
 ## What is a built-in module? 
 
-This is a module developed by the PrestaShop company and community contributors and available by default (either directly in the zip or pushed through our API) on stores. The most important ones are already installed and available in Module Manager, while others can be found in the Module Catalog list and installed in just one click. Some of them do not need any single configuration, but most of them can be configured and edited according to your needs.
+This is a module developed by the PrestaShop company and community contributors and available by default (either directly in the zip file or pushed through our API) on stores. The most important ones are already installed and available in Module Manager, while others can be found in the Module Catalog list and installed in just one click. Some of them do not need any single configuration, but most of them can be configured and edited according to your needs.
 
 These modules are included by default as they are considered necessary features, but of course, if needed, they can be disabled or uninstalled like any other modules.
 

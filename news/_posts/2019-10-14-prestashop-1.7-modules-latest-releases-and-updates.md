@@ -27,7 +27,7 @@ Bilal already told you about this continuous work last year ([read here](http://
 As you may already know (I hope so!), the [new PrestaShop 1.7.6 version](http://build.prestashop.com/news/prestashop-1-7-6-0-available/) has brought some new and improved important modules: 
 
 
-### Product Comments (current version : 4.0.0)
+### Product Comments (current version : [4.0.0]( https://github.com/PrestaShop/productcomments/releases/tag/v4.0.0))
 
 This new module, which was available for 1.6 has been completely reworked and offers new features for 1.7.6+ stores, including:
 

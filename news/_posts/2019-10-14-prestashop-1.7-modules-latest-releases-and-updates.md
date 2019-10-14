@@ -63,7 +63,7 @@ A lot of bugs have been solved, including:
 - You can choose in which order the filters appear (#9880)
 - “Filter by” blocks are not displayed if no filters are available ([#9732](https://github.com/PrestaShop/PrestaShop/issues/9732) & [#9736](https://github.com/PrestaShop/PrestaShop/issues/9736))
 
-### Customer reassurance module (current version: 4.1.1)
+### Customer reassurance module (current version: [4.1.1](https://github.com/PrestaShop/blockreassurance/releases/tag/v4.1.1))
 
 A major update on the module has been released last week bringing new features and design both on front office and back office. With this new version, merchants will be able to: 
 

@@ -82,7 +82,7 @@ A major update on the module has been released last week bringing new features a
 - Email subscription module ([2.5.0](https://github.com/PrestaShop/ps_emailsubscription/releases/tag/v2.5.0)) - Fix on email registration issue ([#15425](https://github.com/PrestaShop/PrestaShop/issues/15425))
 - Contact form ([4.1.1](https://github.com/PrestaShop/contactform/releases/tag/v4.1.1)) - Add a check to verify if the customer is the order’s owner
 - Shopping cart module ([2.0.2](https://github.com/PrestaShop/ps_shoppingcart/releases/tag/v2.0.2)) - Fix related to add to cart from quickview issue ([#11631](https://github.com/PrestaShop/PrestaShop/issues/11631))
-- Legal compliance (v3.0.2) - Fix on label translation issue ([#9766](https://github.com/PrestaShop/PrestaShop/issues/9766))
+- Legal compliance ([3.0.2](https://github.com/PrestaShop/ps_legalcompliance/releases/tag/v3.0.2)) - Fix on label translation issue ([#9766](https://github.com/PrestaShop/PrestaShop/issues/9766))
 - Dashtrends (v2.0.2) - Fix related to incorrect calculation of sales and profit ([#9983](https://github.com/PrestaShop/PrestaShop/issues/9983))
 - Main menu (v 2.1.1) - Fix on sub menu hiding menu ([#9938](https://github.com/PrestaShop/PrestaShop/issues/9938))
 

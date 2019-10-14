@@ -24,7 +24,7 @@ Bilal already told you about this continuous work last year ([read here](http://
 
 ## So what’s new with PrestaShop modules? 
 
-As you may already know (I hope so!), the new PrestaShop 1.7.6 version has brought some new and improved important modules: 
+As you may already know (I hope so!), the [new PrestaShop 1.7.6 version](http://build.prestashop.com/news/prestashop-1-7-6-0-available/) has brought some new and improved important modules: 
 
 
 ### Product Comments (current version : 4.0.0)

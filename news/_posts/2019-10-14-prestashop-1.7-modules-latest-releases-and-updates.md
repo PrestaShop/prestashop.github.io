@@ -80,7 +80,7 @@ A major update on the module has been released last week bringing new features a
 ### Other bug fixes on modules 
 
 - Email subscription module (v2.5.0) - Fix on email registration issue ([#15425](https://github.com/PrestaShop/PrestaShop/issues/15425))
-- Contact form (v4.1.1) - Add a check to verify if the customer is the order’s owner
+- Contact form ([4.1.1](https://github.com/PrestaShop/contactform/releases/tag/v4.1.1)) - Add a check to verify if the customer is the order’s owner
 - Shopping cart module (v2.0.2) - Fix related to add to cart from quickview issue ([#11631](https://github.com/PrestaShop/PrestaShop/issues/11631))
 - Legal compliance (v3.0.2) - Fix on label translation issue ([#9766](https://github.com/PrestaShop/PrestaShop/issues/9766))
 - Dashtrends (v2.0.2) - Fix related to incorrect calculation of sales and profit ([#9983](https://github.com/PrestaShop/PrestaShop/issues/9983))

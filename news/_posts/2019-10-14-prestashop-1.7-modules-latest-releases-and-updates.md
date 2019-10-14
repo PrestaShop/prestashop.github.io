@@ -34,7 +34,7 @@ This new module, which was available for 1.6 has been completely reworked and of
 - Let customers give reviews based on criteria that were defined by the merchant  
 ![Customer review](/assets/images/2019/10/module-news-image4.png){style="margin: 5rem auto"}
 
-Give users access to all other customer reviews on product pages  
+- Give users access to all other customer reviews on product pages  
 ![List of reviews](/assets/images/2019/10/module-news-image5.png){style="margin: 5rem auto"}
 
 - Let users upvote or downvote a review or report an abuse if a comment is not appropriate

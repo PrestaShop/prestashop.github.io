@@ -26,19 +26,20 @@ Bilal already told you about this continuous work last year ([read here](http://
 
 As you may already know (I hope so!), the new PrestaShop 1.7.6 version has brought some new and improved important modules: 
 
+
 ### Product Comments (current version : 4.0.0)
 
 This new module, which was available for 1.6 has been completely reworked and offers new features for 1.7.6+ stores, including:
 
 - Let customers give reviews based on criteria that were defined by the merchant  
-img
+![Customer review](/assets/images/2019/10/module-news-image4.png){style="margin: 5rem auto"}
 
 Give users access to all other customer reviews on product pages  
-img
+![List of reviews](/assets/images/2019/10/module-news-image5.png){style="margin: 5rem auto"}
 
 - Let users upvote or downvote a review or report an abuse if a comment is not appropriate
 - Let merchants moderate reviews they receive on their products  
-img
+![Moderation of reviews](/assets/images/2019/10/module-news-image2.png){style="margin: 5rem auto"}
 
 - Rich snippets integration
 
@@ -67,13 +68,14 @@ A lot of bugs have been solved, including:
 A major update on the module has been released last week bringing new features and design both on front office and back office. With this new version, merchants will be able to: 
 
 - Display their elements as desired on their homepage, either on the header or footer, but also on product and checkout pages  
-img
+![Reassurance block](/assets/images/2019/10/module-news-image6.png){style="margin: 5rem auto"}
 
 - Create as many elements as desired, with the ability to add available or custom icons, title and description and choose colors  
-img
+![Customization of reassurance block](/assets/images/2019/10/module-news-image3.png){style="margin: 5rem auto"}
 
 - Enable or disable any of them and easily reorder them through drag and drop feature  
-img
+![Customer review](/assets/images/2019/10/module-news-image1.png){style="margin: 5rem auto"}
+
 
 ### Other bug fixes on modules 
 
@@ -83,6 +85,7 @@ img
 - Legal compliance (v3.0.2) - Fix on label translation issue ([#9766](https://github.com/PrestaShop/PrestaShop/issues/9766))
 - Dashtrends (v2.0.2) - Fix related to incorrect calculation of sales and profit ([#9983](https://github.com/PrestaShop/PrestaShop/issues/9983))
 - Main menu (v 2.1.1) - Fix on sub menu hiding menu ([#9938](https://github.com/PrestaShop/PrestaShop/issues/9938))
+
 
 ## And even more to come!
 

@@ -1,7 +1,7 @@
-# prestashop.github.io
+# PrestaShop Build
 Official blog for PrestaShop development straight from the product and core dev team.
 
-http://build.prestashop.com
+https://build.prestashop.com
 
 This devblog is where the PrestaCrew communicates directly with the community. It's especially targeted at those who contribute (Core, translations, documentation, modules/themes, etc.)
 

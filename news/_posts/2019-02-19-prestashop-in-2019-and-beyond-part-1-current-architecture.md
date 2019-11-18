@@ -81,11 +81,11 @@ While controllers will be different in BO and FO, pretty much all of PrestaShop'
 - Core code – located in `/src/Core`
 - Symfony code (or "PrestaShop Bundle") – located in `/src/PrestaShopBundle`
 
-To explain this structure, let's look back a little. 
+To explain this structure, let's look back a little.
 
 Up until 1.6.0, all shared code lived in the `classes` directory. One of the main problems with the legacy architecture is that classes are both static and too big. Since refactoring all legacy classes would take a very long time, during the development of 1.6.1 it was decided to [separate legacy code from new, loosely coupled code][architecture-1610].
 
-This decision aimed at gradually producing a cleaner codebase without introducing breaking changes, thus giving module developers time to adapt their modules. 
+This decision aimed at gradually producing a cleaner codebase without introducing breaking changes, thus giving module developers time to adapt their modules.
 
 ---
 
@@ -119,19 +119,19 @@ _(Figure 2: The core business stack)_
 
 In Figure 2, we can appreciate the four subsystems described above.
 
-If you're thinking that this separation is excessively complex, you are right! But this transition phase is necessary to allow us to move forward progressively. Here's how. 
+If you're thinking that this separation is excessively complex, you are right! But this transition phase is necessary to allow us to move forward progressively. Here's how.
 
 Notice the dotted yellow zone labeled _temporary code_? Code within that yellow zone is, you guessed it, _temporary_. This means that that code will sooner or later be moved to the Core or PrestaShop Bundle stack, and once that zone it's empty, it will be deleted. Of course, such a change won't be done in a minor version, so you can expect these four stacks to be present for the whole lifetime of 1.7.
 
 If you look closely at the relationships between each stack, you'll see that code outside the _temporary code zone_ does not interact directly with legacy classes. As explained before, the Adapter layer sits between the Legacy and the "new" code to ease up the transition of code from the Legacy stack to the Core stack.
 
-**How does that work?** 
+**How does that work?**
 
-Whenever a Core (or PrestaShopBundle) class needs something provided by a Legacy class, instead of using the Legacy class directly, it delegates that task to an Adapter, which itself uses the Legacy class (see [Adapter pattern][adapter-pattern]). 
+Whenever a Core (or PrestaShopBundle) class needs something provided by a Legacy class, instead of using the Legacy class directly, it delegates that task to an Adapter, which itself uses the Legacy class (see [Adapter pattern][adapter-pattern]).
 
 Here's where it gets interesting. Generally, these Adapters implement an interface declared in Core (even though it hasn't always been the case, new classes do). Making consumers of that Adapter depend on the _interface_ instead of the Adapter class itself (see [Dependency Inversion principle][dependency-inversion]) will allow to reimplement Adapter classes in Core progressively, without having to change the existing code that depends on them.
 
-**Why not use the Legacy class directly?** 
+**Why not use the Legacy class directly?**
 
 For starters, most legacy classes are static, and since by definition they cannot be injected, it would result in coupled, untestable code. In addition, the ones that are not static generally still have too many responsibilities (see [Single responsibility principle][SRP]) and/or too many public methods or properties (see [Open/closed principle][OCP]), so they cannot be made to implement a proper interface.
 
@@ -166,7 +166,7 @@ There are no controllers for Web services, since this system is mainly configura
 
 All legacy controllers are located in the — you guessed it — _legacy_ stack, and use Smarty for templating. Symfony controllers, on the other hand, are located in the `PrestaShopBundle` and use Twig.
 
-As the migration to Symfony progresses, legacy BO controllers are being migrated from the legacy stack to the PrestaShop Bundle stack. Once the BO migration is complete, there will no longer be any legacy controller in the BO. 
+As the migration to Symfony progresses, legacy BO controllers are being migrated from the legacy stack to the PrestaShop Bundle stack. Once the BO migration is complete, there will no longer be any legacy controller in the BO.
 
 ## Themes
 
@@ -181,13 +181,13 @@ In 1.7, PrestaShop introduced the [parent-child theme feature][child-themes], wh
 
 PrestaShop comes bundled with a default FO theme, called "Classic". Since the Classic evolves with PrestaShop, a great deal of community 1.7 themes are "children" of Classic, which allows them to inherit all the improvements that are added to Classic in every version, with minimal or no work required for their authors. Keep this detail in mind, we'll discuss a major side effect of this in the next article.
 
-Regarding BO themes, there are a couple subtleties to be aware of. 
+Regarding BO themes, there are a couple subtleties to be aware of.
 
-First, as explained before, BO themes are not interchangeable, but there are two of them nonetheless: **default** and **new theme**. 
+First, as explained before, BO themes are not interchangeable, but there are two of them nonetheless: **default** and **new theme**.
 
 So why are there two? Well, legacy controllers are Smarty-based, while Symfony controllers are Twig-based. As a result, there's a theme for each one: legacy controllers use the **default** theme, while Symfony ones use the **new theme**. As controllers are progressively being migrated to Symfony, templates are transformed from Smarty to Twig and moved from the **default** to the **new theme**.
 
-In order to make things more interesting, the **default** theme is based on Bootstrap 3 and integrates jQuery 1.x, while the **new theme** is based on [PrestaShop's UI kit][uikit] (available on [GitHub][github]), which itself is based on Bootstrap 4 and jQuery 3.x. 
+In order to make things more interesting, the **default** theme is based on Bootstrap 3 and integrates jQuery 1.x, while the **new theme** is based on [PrestaShop's UI kit][uikit] (available on [GitHub][github]), which itself is based on Bootstrap 4 and jQuery 3.x.
 
 But there's more.
 
@@ -208,7 +208,7 @@ The **Modules** system provides a plug-in approach to added functionality. As ex
 
 If you look at the Modules block at the center of Figure 1, you'll notice that there are lots of arrows coming and going from it. Let's explore these relationships.
 
-Like we said, the main path for Module integration is Hooks, which are placed throughout the system. Modules can attach to them in order to provide or alter features. 
+Like we said, the main path for Module integration is Hooks, which are placed throughout the system. Modules can attach to them in order to provide or alter features.
 
 There are two types of hooks:
 
@@ -237,7 +237,7 @@ As you can see, the module system has many features, making modules very powerfu
 If you got here, now you know PrestaShop is much more complex than it can seem to be. Remember the overview at the top of the article? Take a look at this more detailed version of it now:
 
 ![Comprehensive overview][comprehensive-overview]
- 
+
 There are actually many more other subsystems than the ones we described, too many to cover them all in detail here. Just to name a few more:
 
 - Translation and localization – PrestaShop can be translated and localized to any language and country: currencies, taxes, shipping locations, and more.
@@ -254,7 +254,7 @@ That's all for today! In the next part, we'll analyze what are the main pain poi
 In case you forgot, here are the topics that will be covered during this series:
 
 1. The Current Architecture (or _"Point A – Where we are"_)
-2. Pain Points (or _"What needs to be improved"_)
+2. [Pain Points (or _"What needs to be improved"_)](/news/prestashop-in-2019-and-beyond-part-2-pain-points/)
 3. The Future Architecture (or _"Point B – Where we are going"_)
 4. Connecting the dots (or _"Some ideas on how we'll get there"_)
 

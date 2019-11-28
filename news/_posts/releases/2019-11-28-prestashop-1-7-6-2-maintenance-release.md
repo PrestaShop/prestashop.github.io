@@ -5,6 +5,7 @@ subtitle: "Maintenance version of the 1.7.6.x branch"
 date:   2019-11-28 16:15:00
 authors: [ PrestaShop ]
 icon: icon-leaf
+image: /assets/images/2019/11/meta-1762.png
 tags:
  - version
  - maintenance

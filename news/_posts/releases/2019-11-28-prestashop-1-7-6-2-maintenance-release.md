@@ -5,7 +5,7 @@ subtitle: "Maintenance version of the 1.7.6.x branch"
 date:   2019-11-28 16:15:00
 authors: [ PrestaShop ]
 icon: icon-leaf
-image: /assets/images/2019/11/meta-1762.png
+image: /assets/images/2019/11/meta-1762.jpg
 tags:
  - version
  - maintenance
@@ -16,7 +16,7 @@ tags:
 ---
 
 
-After a few months dedicated to fixing all regressions found on the previous 1.7.6 versions, PrestaShop 1.7.6.2 is finally available! 
+After a few months dedicated to fixing all regressions found on the previous 1.7.6 versions, PrestaShop 1.7.6.2 is finally available!
 
 ![1.7.6.2 is available!](/assets/images/2019/11/1.7.6.2_banner.jpg)
 
@@ -33,7 +33,7 @@ Below are listed some of the main regression issues we fixed in this version :
 - Three bugs related to the CLDR implementation in the 1.7.6.0 which were provoking errors in both suppliers and orders pages after deleting a currency ([#15376](https://github.com/PrestaShop/PrestaShop/issues/15376)), ([#15486](https://github.com/PrestaShop/PrestaShop/issues/15486)) and ([#15956](https://github.com/PrestaShop/PrestaShop/issues/15956))
 - A few regressions related to the migration of the Customer page:
  - Customer creation with SIRET field ([#16167](https://github.com/PrestaShop/PrestaShop/issues/16167))
-- Customer listing page bugs on links, filters and export features ([#15831](https://github.com/PrestaShop/PrestaShop/issues/15831)), ([#10293](https://github.com/PrestaShop/PrestaShop/issues/10293)) and ([#15875](https://github.com/PrestaShop/PrestaShop/issues/15875)) 
+- Customer listing page bugs on links, filters and export features ([#15831](https://github.com/PrestaShop/PrestaShop/issues/15831)), ([#10293](https://github.com/PrestaShop/PrestaShop/issues/10293)) and ([#15875](https://github.com/PrestaShop/PrestaShop/issues/15875))
 - Customers in a multi-store environment ([#16043](https://github.com/PrestaShop/PrestaShop/issues/16043))
 - Error on creating new Brand Address when VAT identification number is mandatory ([#16121](https://github.com/PrestaShop/PrestaShop/issues/16121))
 - Quantity discounts not shown for default variant ([#16417](https://github.com/PrestaShop/PrestaShop/issues/#16417))
@@ -51,7 +51,7 @@ We had to revert the fix we made for the `object_lang` table issue in 1.7.6.0 re
 
 ## Acknowledgments
 
-Contributors to this patch version, from both the Core team and the community at large: 
+Contributors to this patch version, from both the Core team and the community at large:
 Aurélien Pelletier, Jean-François Viguier, Jonathan Lelievre, Khouloud Belguith, Mathieu Ferment, Matthieu Rolland, Pablo Borowicz, Pierre Rambaud, Franck Lefevre, Thomas Baccelli.
 Thank you!
 

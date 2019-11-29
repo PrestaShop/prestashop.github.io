@@ -51,8 +51,8 @@ We had to revert the fix we made for the `object_lang` table issue in 1.7.6.0 re
 
 ## Acknowledgments
 
-Contributors to this patch version, from both the Core team and the community at large:
-Aurélien Pelletier, Jean-François Viguier, Jonathan Lelievre, Khouloud Belguith, Mathieu Ferment, Matthieu Rolland, Pablo Borowicz, Pierre Rambaud, Franck Lefevre, Thomas Baccelli.
+Contributors to this patch version, from both the Core team and the community at large: 
+202-ecommerce, Aurélien Pelletier, David-Julian Buch, Jean-François Viguier, Jonathan Lelievre, Khouloud Belguith, Mathieu Ferment, Matthieu Rolland, Pablo Borowicz, Pierre Rambaud, Franck Lefevre, Thomas Baccelli, Vincent Hadjedj.
 Thank you!
 
 

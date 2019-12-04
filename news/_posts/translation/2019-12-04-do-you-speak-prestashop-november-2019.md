@@ -20,7 +20,7 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 Since we want to keep PrestaShop as a growing international software, a rework has been driven this summer on all 1.7 localization packs; first to gather all the information they contain and then to optimize it. In short, regarding the translation, new supported languages will be added to the software (Khmer, Malagasy, Tagalog, and Uzbek) and the installer will benefit from a couple of extra translations (Albanian and Korean).
 
-If this topic interests you, or want to make things progress, you definitely should have a look at the dedicated EPIC [here](https://github.com/PrestaShop/PrestaShop/issues/15829) on GitHub and contribute if you feel we have missed something or if you can push solutions on your side.
+If this topic interests you, or want to make things progress, you definitely should have a look at the dedicated EPIC [here](https://github.com/PrestaShop/PrestaShop/issues/15829) on GitHub and contribute if you feel we have missed something or if you can push solutions on your side. And thanks a million to those who already participate, you are the best!
 
 
 ### :hatching_chick: Khmer and Uzbek to grow bigger

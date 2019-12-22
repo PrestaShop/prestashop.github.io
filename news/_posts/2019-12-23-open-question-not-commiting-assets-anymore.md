@@ -1,0 +1,81 @@
+---
+layout: post
+title:  "Open Question: What about not committing generated files anymore?"
+subtitle: "Let’s talk assets, we want your opinion!"
+date:   2019-12-23 08:00:00
+authors: [ PierreRambaud ]
+icon: icon-chat
+tags: [1.7, development, community]
+---
+
+<div class="alert alert-info" role="alert">
+<h4><i class='icon-chat'> </i>Open question</h4>
+This post is the first of a new kind.
+We decided to open up more with you about technical questioning and decisions for the PrestaShop project.
+In these posts, we will introduce modifications or changes we want to make, in order to **discuss it with you** and make sure we make the right decision.
+
+This one is about generated files.
+Please, give us your opinion about it in the comments at the end of the post.
+</div>
+
+## Generated files?
+
+In a library context, generated files would be what users will have in the final application.
+Files in the script tags for example.
+
+These files are the concatenated, compiled and minified versions of our library files.
+These files are called “Generated files” or “assets”.
+
+In the PrestaShop context, using a tool like Webpack to compile our files and make sure we distribute the fewest files as possible would be great. This would make the installation as fast as it could be.
+But **we can’t use this kind of tools** for the following reasons :
+- Some browsers are not supporting ES6 yet
+- Our dependencies
+- The huge lines of code
+
+So we have to do it the old way.
+
+
+## Problem
+
+There are two kinds of problems we have every time someone is working on these files.
+
+1. Git diff:
+
+![What we see everytime in the git diff](/assets/images/2019/12/open-question-assets-git-diff.png)
+
+It is impossible to review, and it's dangerous, we can’t be sure no one adds malicious code.
+
+
+2. Git rebase:
+
+![These nice conflicting files...](/assets/images/2019/12/open-question-assets-git-rebase.png)
+
+Every time someone merges a pull request with a compiled file, we must do a  “git rebase”.
+
+The more contributors we have, the more rebase we will have to do.
+
+
+## Our proposition
+
+Because GitHub is a tool to centralize our “sources” files and allow anybody to compile and install our dependencies, and finally run PrestaShop, we would remove generated files and add simple command lines to help our contributors.
+
+Currently, we already have everything to compiled our dependencies, it is even mandatory with Composer (for PHP). So the idea is to do the same thing for NodeJS now.
+
+To make it easy for contributors, we would add a “make install” command, making everything works fine.
+
+
+
+## Benefits
+
+Removing these files would:
+- Reduce back and forths between the Core team and the QA team
+- Reduce our review time
+- And reduce our merge time
+
+
+
+Let us know what you think about it!
+Do you agree? did we miss something? Do you have questions ? Let’s talk about it in the comments!
+
+
+We are also looking for a name for this kind of post, we went with "Open question", but if you have other ideas feel free to share them!

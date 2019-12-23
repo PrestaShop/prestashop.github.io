@@ -184,7 +184,7 @@ I believe that software quality can be measured in 4 key dimensions:
 - **Reliability:** How stable it is, how prone it is to behave unexpectedly or perform below expectations
 - **Features:** How powerful it is, how many things it can do
 
-An ideal software should be good in all four. But let's be honest: in the real world, it's not possible to be excel in everything at once. In order really perform at a high level, some trade-offs need to be made, and it usually means focusing on a smaller number of things.
+An ideal software should be good in all four. But let's be honest: in the real world, it's not possible to excel in everything at once. In order to really perform at a high level, some trade-offs need to be made, and it usually means focusing on a smaller number of things.
 
 Much the same as the ["Fast-Good-Cheap, pick two" problem](https://fastgood.cheap/), in my opinion, software can only be realistically optimized for three of these quality axes at a time, and one must always be sacrificed in the interest of the others. Here's a graphical representation:
 

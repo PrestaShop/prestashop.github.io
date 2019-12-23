@@ -23,13 +23,15 @@ As discussed in the previous articles, one of my first tasks when I arrived at P
 
 What really struck me was the amount of inconsistencies I found: coding style, duplicate subsystems, prices being calculated with tax then re-calculated to remove tax, character set conversions that no one was able to explain—even legacy controllers, which look like they were designed to execute a single action, had been subverted into incongruence in order to handle multiple actions. It really looked its age: layer over layer of changes made by a thousand hands shuffling things around over the course of a decade, without really understanding _why_ things worked that way nor what the original intent was. Some subsystems had even been replaced by new ones without anyone being able to explain why or how they were supposed to work. Madness!
 
-But as a code archeologist, I can't say I was surprised. After all, where was the master plan, the big picture, any _guidance_ to return strayed developers back to the right path? I was unable to find any trace of such thing.
+As a code archeologist, I can't say I was surprised. After all, where was the master plan, the big picture, any _guidance_ to return strayed developers back to the right path? I was unable to find any trace of such thing.
 
 Software engineering can be easily assimilated to traditional engineering. Imagine a house being built with no plan, without a precise idea of what you want it to look like in the end or how many rooms it's supposed to have. Now, picture an architect leading a construction site and going like this: "Okay guys, just pile up some bricks here and add some columns there and we'll see where it takes us." It sounds ludicrous, right? So why would it be acceptable to lead a development as complex as PrestaShop like that?
 
-**If you want to get somewhere, _anywhere_, the first thing you have to do is decide where you want to go.** It's only _after that_ that you can start thinking on how you'll get there. 
+Of course, that's how the software world works: move fast, break things. If it is perfect when you release it, you probably released it too late. We know PrestaShop isn't perfect, but id did meet user's needs, and you don't reach the success PrestaShop has if you don't answer real business needs.
 
-So we started working on that.
+However, **if you want to get somewhere, _anywhere_, the first thing you have to do is decide where you want to go.** It's only _after that_ that you can start thinking on how you'll get there. 
+
+So we started working on _that_.
 
 When I first started talking about a new architecture during my first presentation before agencies at PrestaShop's Paris HQ back in 2017, attendants were rolling their eyes. "_Seriously?_", they said, "Are you seriously changing everything again? We're already struggling with 1.7 and now we'll have to spend money rebuilding our themes and modules _again_?". 
 

@@ -441,7 +441,7 @@ In case you forgot, here are the topics that will be covered during this series:
 
 1. [The Current Architecture][part-1] (or _"Point A – Where we are"_)
 2. Pain Points (or _"What needs to be improved"_)
-3. The Future Architecture (or _"Point B – Where we are going"_)
+3. [The Future Architecture (or _"Point B – Where we are going"_)](/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/)
 4. Connecting the dots (or _"Some ideas on how we'll get there"_)
 
 [introduction]: /news/prestashop-in-2019-and-beyond-introduction/

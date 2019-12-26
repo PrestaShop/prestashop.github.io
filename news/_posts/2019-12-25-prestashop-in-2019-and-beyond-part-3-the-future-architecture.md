@@ -27,7 +27,7 @@ As a code archeologist, I can't say I was surprised. After all, where was the ma
 
 Software engineering can be easily assimilated to traditional engineering. Imagine a house being built with no plan, without a precise idea of what you want it to look like in the end or how many rooms it's supposed to have. Now, picture an architect leading a construction site and going like this: "Okay guys, just pile up some bricks here and add some columns there and we'll see where it takes us." It sounds ludicrous, right? So why would it be acceptable to lead a development as complex as PrestaShop like that?
 
-Of course, that's how the software world works: move fast, break things. If it is perfect when you release it, you probably released it too late. We know PrestaShop isn't perfect, but id did meet user's needs, and you don't reach the success PrestaShop has if you don't answer real business needs.
+Of course, that's how the software world works: move fast, break things. If it is perfect when you release it, you probably released it too late. We know PrestaShop isn't perfect, but it did meet user's needs, and you don't reach the success PrestaShop has if you don't answer real business needs.
 
 However, **if you want to get somewhere, _anywhere_, the first thing you have to do is decide where you want to go.** It's only _after that_ that you can start thinking on how you'll get there. 
 

@@ -175,7 +175,7 @@ In order to enforce systemwide coherence, the Core should be at the center of al
 
 The server-side Core interface needs to become fully independent from its clients, whether it is the front-end user interface or extensions, both in the Front Office and in the Back Office. 
 
-PrestaShop is complex all on its own, but it's also a development platform. In order to be flexible, it has to be made out a large number of small, independent components, instead of the other way around. 
+PrestaShop is complex all on its own, but it's also a development platform. In order to be flexible, it has to be made out of a large number of small, independent components, instead of the other way around. 
 
 #### It cannot be everything at once
 

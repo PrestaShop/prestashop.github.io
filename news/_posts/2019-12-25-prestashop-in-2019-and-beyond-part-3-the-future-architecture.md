@@ -159,7 +159,7 @@ Designing a new architecture is not just about solving problems. It also has to 
 
 #### It has to be coherent
 
-Coherence should be of utmost importance in a new architecture. Not only there should be one and only one way of performed a given task, but it should also be intuitive both in its implementation as well as its discoverability (i.e. avoid the classic question of _"Where's the class that handles that feature again?"_).
+Coherence should be of utmost importance in a new architecture. Not only there should be one and only one way to perform a given task, but it should also be intuitive both in its implementation as well as its discoverability (i.e. avoid the classic question of _"Where's the class that handles that feature again?"_).
 
 In addition, a well-designed architecture should be _internally_ coherent and resilient to errors. The Core should therefore enforce coherency in its internal state and reject any possibility of incoherent input, by design. This means, among other things, strict typing and typed exceptions.
 

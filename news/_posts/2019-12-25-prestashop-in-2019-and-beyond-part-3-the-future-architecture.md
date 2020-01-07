@@ -61,7 +61,7 @@ The _wait-for-reload-between-interactions_ problem has been basically fixed for 
 
 ![Asynchronous user interaction][user-interaction-async]
 
-Meanwhile, on the server side, information is served and received through an API (Rest or GraphQL, for example) in a format designed for data transport, like XML or JSON. Outputting data in a structured format further enhances responsiveness, thanks to a reduced volume of data traveling between between browser and server. In addition, by separating data from presentation, both the presentation and the data themselves can be processed more easily and efficiently. 
+Meanwhile, on the server side, information is served and received through an API (Rest or GraphQL, for example) in a format designed for data transport, like XML or JSON. Outputting data in a structured format further enhances responsiveness, thanks to a reduced volume of data traveling between browser and server. In addition, by separating data from presentation, both the presentation and the data themselves can be processed more easily and efficiently. 
 
 #### Data-centric design
 

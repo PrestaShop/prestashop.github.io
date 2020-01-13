@@ -14,14 +14,14 @@ This post is the first of a new kind.
 We decided to open up more with you about technical questioning and decisions for the PrestaShop project.
 In these posts, we will introduce modifications or changes we want to make, in order to **discuss it with you** and make sure we make the right decision.
 
-This one is about generated files.
+This one is about generated asset files.
 Please, give us your opinion about it in the comments at the end of the post.
 </div>
 
 ## Generated files?
 
 In a library context, generated files would be what users will have in the final application.
-Files in the script tags for example.
+Files in the script tags or css for example.
 
 These files are the concatenated, compiled and minified versions of our library files.
 These files are called “Generated files” or “assets”.
@@ -59,7 +59,7 @@ The more contributors we have, the more rebase we will have to do.
 
 Because GitHub is a tool to centralize our “sources” files and allow anybody to compile and install our dependencies, and finally run PrestaShop, we would remove generated files and add simple command lines to help our contributors.
 
-Currently, we already have everything to compiled our dependencies, it is even mandatory with Composer (for PHP). So the idea is to do the same thing for NodeJS now.
+Currently, we already have everything to compile our dependencies, it is even mandatory with Composer (for PHP). So the idea is to do the same thing for NodeJS now.
 
 To make it easy for contributors, we would add a “make install” command, making everything works fine.
 
@@ -72,8 +72,13 @@ Removing these files would:
 - Reduce our review time
 - And reduce our merge time
 
+## Drawbacks
 
+- assets won't be present any more when you clone the repository
+- node needs to be installed and available on your development machine
+## The release process
 
+This would not change the way release archives are built, the assets will be built during the release creation so it changes nothing for people who want an out of the box PrestaShop archive. But at least we will be 100% sure that the assets in the release are the most recent ones since they will be built along with PHP dependencies, and not fetched from an old PR.
 Let us know what you think about it!
 Do you agree? did we miss something? Do you have questions ? Let’s talk about it in the comments!
 

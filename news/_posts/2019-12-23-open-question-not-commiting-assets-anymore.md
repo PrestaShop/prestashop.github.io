@@ -18,6 +18,7 @@ This one is about generated asset files.
 Please, give us your opinion about it in the comments at the end of the post.
 </div>
 
+
 ## Generated files?
 
 In a library context, generated files would be what users will have in the final application.
@@ -64,7 +65,6 @@ Currently, we already have everything to compile our dependencies, it is even ma
 To make it easy for contributors, we would add a “make install” command, making everything works fine.
 
 
-
 ## Benefits
 
 Removing these files would:
@@ -77,11 +77,18 @@ Removing these files would:
 
 - assets won't be present any more when you clone the repository
 - node needs to be installed and available on your development machine
+
+
 ## The release process
 
 This would not change the way release archives are built, the assets will be built during the release creation so it changes nothing for people who want an out of the box PrestaShop archive. But at least we will be 100% sure that the assets in the release are the most recent ones since they will be built along with PHP dependencies, and not fetched from an old PR.
 Let us know what you think about it!
 Do you agree? did we miss something? Do you have questions ? Let’s talk about it in the comments!
 
-
-We are also looking for a name for this kind of post, we went with "Open question", but if you have other ideas feel free to share them!
+<br>
+<div class="alert alert-info" role="alert">
+<h4><i class='icon-chat'> </i>Let's talk</h4>
+  As said earlier, the goal of this kind of article, "Open Question" is to discuss those topics with you.
+  <br>So please, let us know what you think and ask questions in the comments below :)
+  <br><br>Oh, and we are also looking for a name for this kind of post, we went with “Open question”, but if you have other ideas feel free to share them!
+</div>

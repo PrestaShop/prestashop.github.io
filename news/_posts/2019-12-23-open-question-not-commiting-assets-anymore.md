@@ -34,7 +34,6 @@ In the PrestaShop context, using a tool like Webpack to compile our files and ma
 - The huge lines of code
 
 
-
 ## Problem
 
 There are two kinds of problems we have every time someone is working on these files.

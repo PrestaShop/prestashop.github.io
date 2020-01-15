@@ -1,7 +1,7 @@
 # check travis-ci.org
 language: ruby
 rvm:
-  - 2.1
+  - 2.5
 
 jobs:
   include:

@@ -86,7 +86,7 @@ Do you agree? Did we miss something? Do you have questions? Let’s talk about i
 <br>
 <div class="alert alert-info" role="alert">
 <h4><i class='icon-chat'> </i>Let's talk</h4>
-  As said earlier, the goal of this kind of article, "Open Question" is to discuss those topics with you.
-  <br>So please, let us know what you think and ask questions in the comments below :)
+  As said earlier, the goal of this kind of article, "Open question", is to discuss technical topics with you.
+  <br>So please, let us know what you think and feel free to ask questions in the comments below.
   <br><br>Oh, and we are also looking for a name for this kind of post, we went with “Open question”, but if you have other ideas feel free to share them!
 </div>

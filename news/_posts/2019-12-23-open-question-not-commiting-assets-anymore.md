@@ -27,13 +27,12 @@ Files in the script tags or css for example.
 These files are the concatenated, compiled and minified versions of our library files.
 These files are called “Generated files” or “assets”.
 
-In the PrestaShop context, using a tool like Webpack to compile our files and make sure we distribute the fewest files as possible would be great. This would make the installation as fast as it could be.
-But **we can’t use this kind of tools** for the following reasons :
+In the PrestaShop context, using a tool like Webpack to compile our files and make sure we distribute the fewest files as possible is mandatory. It makes the installation as fast as it could be.
+**We must use this kind of tools** for the following reasons :
 - Some browsers are not supporting ES6 yet
 - Our dependencies
 - The huge lines of code
 
-So we have to do it the old way.
 
 
 ## Problem

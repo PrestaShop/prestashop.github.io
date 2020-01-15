@@ -31,7 +31,7 @@ sass:
     - _sass
   style: compressed
 
-gems:
+plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-mentions
@@ -40,7 +40,7 @@ gems:
   - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-gist
-  - algoliasearch-jekyll
+  - jekyll-algolia
 
 algolia:
   application_id: '17LZR6CZEL'

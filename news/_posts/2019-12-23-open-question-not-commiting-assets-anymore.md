@@ -80,8 +80,9 @@ Removing these files would:
 ## The release process
 
 This would not change the way release archives are built, the assets will be built during the release creation so it changes nothing for people who want an out of the box PrestaShop archive. But at least we will be 100% sure that the assets in the release are the most recent ones since they will be built along with PHP dependencies, and not fetched from an old PR.
-Let us know what you think about it!
+
 Do you agree? Did we miss something? Do you have questions? Let’s talk about it in the comments!
+Let us know what you think about it!
 
 <br>
 <div class="alert alert-info" role="alert">

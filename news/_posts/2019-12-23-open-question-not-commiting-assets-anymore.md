@@ -60,7 +60,7 @@ Because GitHub is a tool to centralize our “sources” files and allow anybody
 
 Currently, we already have everything to compile our dependencies, it is even mandatory with Composer (for PHP). So the idea is to do the same thing for NodeJS now.
 
-To make it easy for contributors, we would add a “make install” command, making everything works fine.
+To make it easy for contributors, we would add a `make install` command, making everything works fine.
 
 
 ## Benefits

@@ -2,9 +2,10 @@
 layout: post
 title:  "Open Question: What about not committing generated files anymore?"
 subtitle: "Let’s talk assets, we want your opinion!"
-date:   2019-12-23 08:00:00
+date:   2020-01-17 08:00:00
 authors: [ PierreRambaud, PrestaShop ]
 icon: icon-chat
+image: /assets/images/theme/meta-logo-build.png
 tags: [1.7, development, community]
 ---
 

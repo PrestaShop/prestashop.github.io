@@ -39,14 +39,14 @@ In the PrestaShop context, using a tool like Webpack to compile our files and ma
 
 There are two kinds of problems we have every time someone is working on these files.
 
-1. Git diff:
+### 1. Git diff:
 
 ![What we see everytime in the git diff](/assets/images/2019/12/open-question-assets-git-diff.png)
 
 It is impossible to review, and it's dangerous, we can’t be sure no one adds malicious code.
 
 
-2. Git rebase:
+### 2. Git rebase:
 
 ![These nice conflicting files...](/assets/images/2019/12/open-question-assets-git-rebase.png)
 

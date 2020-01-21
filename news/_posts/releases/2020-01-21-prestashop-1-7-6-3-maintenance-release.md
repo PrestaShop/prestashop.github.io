@@ -60,7 +60,7 @@ Below are security changes we added in this version:
 Contributors to this patch version, from both the core team and the community at large, are Thomas Baccelli, Pablo Borowicz, Mathieu Ferment, Maxim Krizhanovsky, Franck Lefèvre, Jonathan Lelievre, Pierre Rambaud, Matthieu Rolland, Valentin Szczupak, and Michael Voříšek. Thank you very much!
 
 
-[Download PrestaShop 1.7.6.1 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.6.3 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 

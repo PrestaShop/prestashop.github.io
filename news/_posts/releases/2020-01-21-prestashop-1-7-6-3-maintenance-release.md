@@ -27,7 +27,7 @@ Reminder: the 1-Click Upgrade module’s latest version is v4.10.1 ([read here](
 
 ## Regression fixes
 
-Below are listed all the regression issues we fixed in this version:
+Below are listed all the regression issues fixed in this version:
 
 * Unclear error notifications about the number of characters allowed on both following pages:
   * Advanced Parameters > Team > Profiles ([#16725](https://github.com/PrestaShop/PrestaShop/issues/16725))

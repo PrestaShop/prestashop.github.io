@@ -49,11 +49,10 @@ Read the full changelog [here](https://github.com/PrestaShop/PrestaShop/releases
 
 ## Important changes
 
-Below are listed all issues we improve in this version:
+Below are security changes we added in this version:
 
 * Quick access error when having a wrong url ([#17050](https://github.com/PrestaShop/PrestaShop/pull/17050))
 * Protect modules vendor folder on install/upgrade/enable ([#17036](https://github.com/PrestaShop/PrestaShop/pull/17036)) 
-* Email Theme permissions settings are not saved when trying to enable them ([#16337](https://github.com/PrestaShop/PrestaShop/issues/16337))
 
 
 ## Acknowledgments

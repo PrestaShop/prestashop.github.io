@@ -20,7 +20,7 @@ After a few months dedicated to fixing all regressions found on the previous 1.7
 
 This maintenance release fixes *16 issues* reported on versions 1.7.6.0, 1.7.6.1, and 1.7.6.2.
 
-Obviously, we suggest upgrading your shop quickly in order to benefit from those fixes - and do not forget to backup before. ;-)
+Obviously, you should upgrade your shop quickly in order to benefit from those fixes - and do not forget to backup before. ;-)
 
 Reminder: the 1-Click Upgrade module’s latest version is v4.10.1 ([read here](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.10.1)), do not forget to upgrade it as well.
 

@@ -133,6 +133,7 @@ Do not forget the Levenshtein algorithm is a matrix computation: the server stre
 <div class="alert alert-info" role="alert">
 <h4><i class='icon-mic'></i> NOTE</h4>
 <p>Here, this configuration influences the server stress.</p>
+</div>
 
 It is no special feature included in the fuzzy search but a mere parameter, set to 3 by default. In other words, this configuration does not read words whose length is less than three characters. If you need deeply precise results, like with ‘Samsung S9’, you should decrease the minimum allowed to 2 because ‘S9’ only has two characters.
 

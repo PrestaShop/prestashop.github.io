@@ -2,7 +2,7 @@
 layout: post
 title:  "Introduction to the fuzzy search"
 subtitle: "When the community implements the Levenshtein algorithm"
-date:  2020-01-XX 09:10:11
+date:  2020-01-23 09:10:11
 authors: [TanguySalmon, LouiseBonnard]
 icon: icon-full-screen
 image: /assets/images/2020/01/23

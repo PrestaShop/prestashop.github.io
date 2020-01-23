@@ -75,8 +75,8 @@ In rare cases, no relevant word is returned. In those cases, the default search 
 ### Setting up the distance
 
 <div class="alert alert-info" role="alert">
-<h4><i class='icon-mic'></i> Note</h4>
-<p>*Here, this configuration has no influence on the server stress, the setup being active right after computation.*</p>
+<h4><i class='icon-mic'></i> NOTE</h4>
+<p>Here, this configuration has no influence on the server stress, the setup being active right after computation.</p>
 </div>
 
 You must be in the code to configure it - it is not available in the back office -, search for `PS_DISTANCE_MAX` in the classes/Search.php file. By default, the value is set to 8 which is typically the maximum distance to get a relevant result. Every fuzzy search returns a word with a distance under 8. It means the fuzzy search will try to bring words that are close to the query.
@@ -105,8 +105,8 @@ You can still try to increase this limit for languages whose words are especiall
 ### Setting up the maximum approximate strings allowed
 
 <div class="alert alert-info" role="alert">
-<h4><i class='icon-mic'></i> Note</h4>
-<p>*Here, this configuration influences the server stress in case of big queries including many words.*</p>
+<h4><i class='icon-mic'></i> NOTE</h4>
+<p>Here, this configuration influences the server stress in case of big queries including many words.</p>
 </div>
 
 Configuring it allows you to define the number of words a query can be processed in a fuzzy search. By default, the value is set to 4. It means that in a search like ‘Samsung Galaxi walle cherger multyplug’, only the ‘Samsung’, ‘Galaxi’, ‘walle’, and ‘cherger’ words will be taken into account. ‘Multyplug’ will not be computed.
@@ -117,8 +117,8 @@ Why this limitation? It is to avoid offensive behaviors (from users or others) o
 ### Setting up the maximum word length allowed
 
 <div class="alert alert-info" role="alert">
-<h4><i class='icon-mic'></i> Note</h4>
-<p>*Here, this configuration influences the server stress in case of long words queries.*</p>
+<h4><i class='icon-mic'></i> NOTE</h4>
+<p>Here, this configuration influences the server stress in case of long words queries.</p>
 </div>
 
 So this option defines how many characters you allow to execute a fuzzy search query. You can configure it only when the fuzzy search is enabled. When the feature is disabled, the default parameter is set to 30, particularly to solve this issue [cf. #12407](https://github.com/PrestaShop/PrestaShop/issues/12407). You can set this value directly in the back office while the default value is a constant defined in the code, in the search class, just like the maximum distance allowed.
@@ -130,13 +130,11 @@ Do not forget the Levenshtein algorithm is a matrix computation: the server stre
 
 ### Setting up the minimum word length allowed
 
-> [!NOTE]
-> Note that this configuration influences the server stress.
+<div class="alert alert-info" role="alert">
+<h4><i class='icon-mic'></i> NOTE</h4>
+<p>Here, this configuration influences the server stress.</p>
 
 It is no special feature included in the fuzzy search but a mere parameter, set to 3 by default. In other words, this configuration does not read words whose length is less than three characters. If you need deeply precise results, like with ‘Samsung S9’, you should decrease the minimum allowed to 2 because ‘S9’ only has two characters.
-
-
-![Fuzzy search weight](/assets/images/2020/01/Fuzzy-Search-weight.png)
 
 
 ## :mailbox_with_no_mail: Conclusion
@@ -144,6 +142,10 @@ It is no special feature included in the fuzzy search but a mere parameter, set 
 Time is now. And now, more than half of the customers find online stores on a mobile device ([read](https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices)). And those people will look for the product they want by using your search feature.
 
 More info? Be aware that half of the queries contain misspelling errors - just look at the Stats > Shop search section of the PrestaShop back office. So there is a huge need to improve the effectiveness of your search results by getting more quality, especially when you know that queries are typed on devices where misspellings are easy to make ([read](https://www.grammarly.com/blog/mobile-communication-study)).
+
+
+![Fuzzy search weight](/assets/images/2020/01/Fuzzy-Search-weight.png)
+
 
 In short, a problem that is common to million shop owners and developers. Sadly. But the good thing is that we can improve that! Indeed, the IT market has seen new kinds of products like Algolia or ElasticSearch modules popping up. A quick look at how they work is enough to conclude that they combine three main characteristics: they search fast, they offer qualitative results and they are misspellings compliant. From a PrestaShop point of view, this new Levenshtein feature helps you get the same benefits: 
 

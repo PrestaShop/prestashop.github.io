@@ -5,7 +5,7 @@ subtitle: "When the community implements the Levenshtein algorithm"
 date:  2020-01-23 09:10:11
 authors: [TanguySalmon, LouiseBonnard]
 icon: icon-full-screen
-image: /assets/images/2020/01/23
+image: /assets/images/theme/meta-logo-build.png
 tags: [1.7.7.x, contribution, feature, community]
 ---
 

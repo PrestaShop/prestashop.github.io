@@ -64,7 +64,7 @@ The third point was about the campaign itself. We wanted to redirect the campaig
 - An integration tests campaign
 - An end-to-end tests campaign
 
-Each of these campaigns had its perks.
+Each of these campaigns has its perks.
 
 The **sanity campaign** is here to make sure devs don’t break some core functionalities of PrestaShop. Ran for every PR, it checks all the critical features of the app: the frontend catalog, the cart, the checkout process; but also the backend with the product section and the order section. It’s a fast campaign (about 8 min) and it must pass for the PR to be reviewed: a fail in this section means being back to the coding board for the incriminated dev, with all the shame it brings (not really, but we QA engineers like to think it does).
 

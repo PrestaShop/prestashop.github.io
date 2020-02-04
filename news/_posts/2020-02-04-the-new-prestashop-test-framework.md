@@ -76,7 +76,7 @@ The **end-to-end campaign** will cover what’s left: it is used to test real us
 There is one last campaign: we want to make sure old issues stay fixed and don’t come back after a while. There will be a regression campaign for this sole purpose after (or at least get up to a comfortable coverage) the main campaign is finished. It will target critical and major issues for the last few minor versions.
 
 
-## That’s nice, but where can I see all the action ?
+## That’s nice, but where can I see all the action?
 
 Our [nightly board is public](https://nightly.prestashop.com/)! You can check it and open every report. The current version was quickly engineered to let us gather the data and present it in an acceptable way, but it’s being redone (thanks to the UX team and our front-end developer!) in a few weeks (hopefully), using the UI Kit developed for PrestaShop. Keep an eye on it!
 

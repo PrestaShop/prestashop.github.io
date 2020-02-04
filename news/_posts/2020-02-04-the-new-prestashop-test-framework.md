@@ -6,7 +6,7 @@ date:  2020-02-05 12:00:00
 authors: [SimonGarny]
 icon: icon-checked
 image: /assets/images/theme/meta-logo-build.png
-tags: [1.7.7.x, contribution, feature, community]
+tags: [QA, tests, community]
 ---
 
 For a few months, quality has been a priority for PrestaShop: the QA team and I are proud to announce that we’re making great steps in improving the overall quality of the core project. Automatizing tests is a big part of this process: let’s see what we’re doing, why, and how !

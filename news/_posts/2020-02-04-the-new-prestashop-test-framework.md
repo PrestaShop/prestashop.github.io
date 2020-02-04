@@ -90,6 +90,6 @@ Addendum: the team behind Puppeteer recently revealed their new project: [PlayWr
 ## TL;DR
 
 The PrestaShop QA team is dropping Selenium and redoing the whole Core test campaign using another tool called Puppeteer, with another design pattern (Page Object Model).
-We aim for better coverage, faster answers for the devs, less time lost in maintaining and fixing the tests, and overall a real change in the quality of the open source project we love !
+We aim for better coverage, faster answers for the devs, less time lost in maintaining and fixing the tests, and overall a real change in the quality of the open source project we love!
 
 As always, at PrestaShop we’re impatient to hear your comments and suggestions.

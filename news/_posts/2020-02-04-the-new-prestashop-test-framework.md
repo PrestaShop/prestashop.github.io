@@ -39,7 +39,7 @@ The QA team decided to work on three points.
 
 ### Automation tool
 
-It was already decided to drop Selenium, but what would be a good replacement ? There are a lot of options there, including SaaS solutions (Cypress, QAWolf, etc). After reviewing a few possibilities, the best choice was to go for [Puppeteer](https://github.com/puppeteer/puppeteer).
+It was already decided to drop Selenium, but what would be a good replacement? There are a lot of options there, including SaaS solutions (Cypress, QAWolf, etc). After reviewing a few possibilities, the best choice was to go for [Puppeteer](https://github.com/puppeteer/puppeteer).
 
 Puppeteer is a Node library which provides a nice API to control Chrome. It can pretty much do everything you can do manually. It’s maintained by Google, which is always a good sign.
 It’s also more robust and more stable in headless (which was a killer feature for us) since it was designed with headless in mind.

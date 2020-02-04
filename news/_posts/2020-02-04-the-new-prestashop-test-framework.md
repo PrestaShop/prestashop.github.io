@@ -13,7 +13,7 @@ For a few months, quality has been a priority for PrestaShop: the QA team and I 
 Note: this article is focused on the Core only, but that’s just a small part of what the QA team is working on. More to come in a future article!
 
 
-## What was before
+## What was there before
 
 Historically, the PrestaShop Core continuous integration had a big end-to-end test campaign which purpose was to test the whole application as thoroughly as possible. This campaign was using Selenium as the automation tool, and we were running it in two places:
 

@@ -10,7 +10,7 @@ tags: [QA, tests, community]
 ---
 
 For a few months, quality has been a priority for PrestaShop: the QA team and I are proud to announce that we’re making great steps in improving the overall quality of the core project. Automatizing tests is a big part of this process: let’s see what we’re doing, why, and how!
-Note: this article is focused on the Core only, but that’s just a small part of what the QA team is working on. More to come in a future article !
+Note: this article is focused on the Core only, but that’s just a small part of what the QA team is working on. More to come in a future article!
 
 
 ## What was before

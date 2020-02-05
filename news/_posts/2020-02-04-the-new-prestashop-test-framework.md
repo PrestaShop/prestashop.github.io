@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The (new) PrestaShop Test Framework"
-subtitle: "And how we’re continually improving the quality of the PrestaShop project"
+subtitle: "And how we're continually improving the quality of the PrestaShop project"
 date:  2020-02-05 12:00:00
 authors: [SimonGarny]
 icon: icon-checked
@@ -9,8 +9,8 @@ image: /assets/images/theme/meta-logo-build.png
 tags: [QA, tests, community]
 ---
 
-For a few months, quality has been a priority for PrestaShop: the QA team and I are proud to announce that we’re making great steps in improving the overall quality of the core project. Automatizing tests is a big part of this process: let’s see what we’re doing, why, and how!
-Note: this article is focused on the Core only, but that’s just a small part of what the QA team is working on. More to come in a future article!
+For a few months, quality has been a priority for PrestaShop: the QA team and I are proud to announce that we're making great steps in improving the overall quality of the core project. Automatizing tests is a big part of this process: let’s see what we’re doing, why, and how!
+Note: this article is focused on the Core only, but that is just a small part of what the QA team is working on. More to come in a future article!
 
 
 ## Taking a look back

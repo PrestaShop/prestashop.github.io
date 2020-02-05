@@ -90,6 +90,6 @@ All the tests I present in this article are also available in the [develop](http
 
 Don’t forget that you can help us by [writing tests or Page Objects through Pull Requests](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#creating-a-web-acceptance-test)!
 
-Addendum: the team behind Puppeteer recently revealed their new project: [PlayWright](https://github.com/microsoft/playwright). Based on their work on Puppeteer, it’s also a Node library but able to communicate with Chromium, Firefox, and Edge. As soon as they release a stable version, the team will look seriously into it, as testing all major browsers would be a nice addition.
+Addendum: the team behind Puppeteer recently revealed their new project: [PlayWright](https://github.com/microsoft/playwright). Based on their work on Puppeteer, it’s also a Node library but able to communicate with Chromium, Firefox, and Edge. As soon as they release a stable version, the QA team will look seriously into it, as testing all major browsers would be a nice addition.
 
 As always, at PrestaShop we’re impatient to hear your comments and suggestions.

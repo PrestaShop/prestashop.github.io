@@ -48,7 +48,7 @@ It was already decided to drop Selenium, but what would be a good replacement? T
 Puppeteer is a Node library which provides a nice API to control Chrome. It can automate pretty much everything you do manually. It is maintained by Google, which is considered a good indicator of the quality of a project.
 
 
-But more importantly, it’s more stable in headless (which was a killer feature for us !) since it was designed with headless in mind.
+But more importantly, it’s more stable in headless (which was a killer feature for us!) since it was designed with headless in mind.
 
 
 ### New framework and architecture

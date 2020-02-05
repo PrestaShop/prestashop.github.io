@@ -78,7 +78,7 @@ There is one last campaign: we want to make sure old issues stay fixed and don�
 
 ## That’s nice, but where can I see all the action?
 
-Our [nightly board is public](https://nightly.prestashop.com/)! You can check it and open every report. The current version was quickly engineered to let us gather the data and present it in an acceptable way, but it’s being redone (thanks to the UX team and our front-end developer!) in a few weeks (hopefully), using the UI Kit developed for PrestaShop. Keep an eye on it!
+The [nightly board is public](https://nightly.prestashop.com/)! You can check it and open every report. The current version was quickly engineered to let us gather the data and present it in an acceptable way, but it’s being redesigned using the UI Kit developed for PrestaShop (thanks to the UX team and our front-end developer!) and should be way easier to read in a few weeks (hopefully). Keep an eye on it!
 
 All the tests I present in this article are also available in the [develop](https://github.com/PrestaShop/PrestaShop/tree/develop/tests/puppeteer) and [1.7.7.x](https://github.com/PrestaShop/PrestaShop/tree/1.7.7.x/tests/puppeteer) branches in the GitHub repository. Feel free to explore and execute them.
 

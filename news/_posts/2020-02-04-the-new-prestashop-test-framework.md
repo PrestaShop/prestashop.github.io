@@ -22,7 +22,7 @@ Historically, the PrestaShop Core continuous integration had a big end-to-end te
 
 At the beginning of 2019, the QA team decided to drop this campaign and start over. In September 2019, we started the new version.
 
-Why? There were mainly 3 reasons:
+There are multiple reasons behind this choice, here are the three main ones:
 
 - Tests are run in headless mode (mandatory on Travis) and sadly, Selenium is kind of picky in headless. There were a lot of problems with it, and as you can imagine it’s way more complicated to debug a failing test when there’s no GUI! Screenshots have been tried, logs, everything possible but ultimately the failing tests had to be disabled as it was impossible to find a good solution.
 - Selenium itself is not very stable: the test campaign could be run 3 or 4 times in a row on Travis and have different results, with different tests failing. Sometimes it couldn’t find a selector, or timed out when waiting for something… it was very difficult and time-consuming to make the tests more robust.

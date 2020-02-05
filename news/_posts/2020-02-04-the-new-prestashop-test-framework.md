@@ -13,7 +13,7 @@ For a few months, quality has been a priority for PrestaShop: the QA team and I 
 Note: this article is focused on the Core only, but that’s just a small part of what the QA team is working on. More to come in a future article!
 
 
-## What was there before
+## Taking a look back
 
 Historically, the PrestaShop Core continuous integration had a big end-to-end test campaign which purpose was to test the whole application as thoroughly as possible. This campaign was using Selenium as the automation tool, and we were running it in two places:
 
@@ -26,7 +26,7 @@ Why? There were mainly 3 reasons:
 
 - Tests are run in headless mode (mandatory on Travis) and sadly, Selenium is kind of picky in headless. There were a lot of problems with it, and as you can imagine it’s way more complicated to debug a failing test when there’s no GUI! Screenshots have been tried, logs, everything possible but ultimately the failing tests had to be disabled as it was impossible to find a good solution.
 - Selenium itself is not very stable: the test campaign could be run 3 or 4 times in a row on Travis and have different results, with different tests failing. Sometimes it couldn’t find a selector, or timed out when waiting for something… it was very difficult and time-consuming to make the tests more robust.
-- The campaign was too complex: it was trying to test everything at once. The campaign would test all the functionalities in a page, but also doing some [functional testing](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#functional-tests) (verifying some functionalities work well together) and some [end-to-end testing](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#end-to-end-tests-soon) (running through the application like a real user and testing a bunch of functionalities at once). The result was a very complex test suite, very brittle (end-to-end tests are by design really fragile) and a nightmare to maintain and fix.
+- The campaign was too complex: it was trying to test everything at once. The campaign would test all the functionalities in a page, but also doing some [functional testing](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#functional-tests) (verifying some functionalities work well together) and some [end-to-end testing](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#end-to-end-tests-soon) (running through the application like a real user and testing a bunch of functionalities at once). The result was a very complex test suite, very brittle (end-to-end tests are really fragile by design) and a nightmare to maintain and fix.
 
 There were some concerns with the code too: although it was working, there was no real framework behind it. No separation of concerns, no proper use of inheritance, no distinction between the test logic and the page logic. It was very complicated to find the source of a problem sometimes, and with more than 8000 test cases it frequently was not possible to fix it.
 
@@ -35,13 +35,13 @@ All these reasons made it clear that it was time to drop the whole thing and sta
 
 ## What is coming
 
-The QA team decided to work on three points.
+The QA team decided to work on the three following points.
 
 ### Automation tool
 
 It was already decided to drop Selenium, but what would be a good replacement? There are a lot of options there, including SaaS solutions (Cypress, QAWolf, etc). After reviewing a few possibilities, the best choice was to go for [Puppeteer](https://github.com/puppeteer/puppeteer).
 
-Puppeteer is a Node library which provides a nice API to control Chrome. It can pretty much do everything you can do manually. It’s maintained by Google, which is always a good sign.
+Puppeteer is a Node library which provides a nice API to control Chrome. It can automate pretty much everything you do manually. It’s maintained by Google, which is always a good sign.
 It’s also more robust and more stable in headless (which was a killer feature for us) since it was designed with headless in mind.
 
 
@@ -84,7 +84,7 @@ All the tests I present in this article are also available in the [develop](http
 
 Don’t forget that you can help us by [writing tests or Page Objects through Pull Requests](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#creating-a-web-acceptance-test)!
 
-Addendum: the team behind Puppeteer recently revealed their new project: [PlayWright](https://github.com/microsoft/playwright). Based on their work on Puppeteer, it’s also a Node library but able to communicate with Chromium, Firefox, and Edge. As soon as they release a stable version, we’ll look seriously into it, since testing all major browsers would be a nice addition.
+Addendum: the team behind Puppeteer recently revealed their new project: [PlayWright](https://github.com/microsoft/playwright). Based on their work on Puppeteer, it’s also a Node library but able to communicate with Chromium, Firefox, and Edge. As soon as they release a stable version, we’ll look seriously into it, as testing all major browsers would be a nice addition.
 
 
 ## TL;DR

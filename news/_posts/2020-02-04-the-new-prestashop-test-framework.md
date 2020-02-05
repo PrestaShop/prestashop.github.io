@@ -73,7 +73,7 @@ This campaign is the biggest so far, and my team and I are proud to say that it 
 
 The **end-to-end campaign** will cover what’s left: it is used to test real user journeys. The goal is to make sure all the actions a merchant can do are covered by tests, so that the Tech team can be confident about the level of quality of the application. The Product team (and the QA team) already have a good idea of these user journeys (gathered through the interviews with merchants) and we will try to implement journeys that are the most relevant to a merchant daily and weekly recurring actions.
 
-There is one last campaign: we want to make sure old issues stay fixed and don’t come back after a while. There will be a regression campaign for this sole purpose after (or at least get up to a comfortable coverage) the main campaign is finished. It will target critical and major issues for the last few minor versions.
+There is one last campaign: we want to make sure old issues stay fixed and don’t come back after a while. A regression campaign aims for that (or at least to get up to a comfortable coverage). It is run after the main campaign is finished. It targets critical and major issues fixed in the last few minor versions.
 
 
 ## That’s nice, but where can I see all the action?

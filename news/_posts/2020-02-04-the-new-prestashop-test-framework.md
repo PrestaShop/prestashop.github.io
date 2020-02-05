@@ -58,7 +58,7 @@ This is a good illustration of the separation of concerns: when a page is update
 
 ### Re-focus the test effort
 
-The third point was about the campaign itself. We wanted to redirect the campaign to be more effective, faster (the full Selenium campaign could last for up to 20 hours !) and easier to maintain. That would mean a shift in the focus of the campaign: instead of making a “do-it-all” campaign, we would split up the effort in 3 campaigns: 
+The third point was about the campaign itself. We wanted to redirect the campaign to be more effective, faster (the full Selenium campaign could last for up to 20 hours!) and easier to maintain. That would mean a shift in the focus of the campaign: instead of making a “do-it-all” campaign, we split up the effort in 3 campaigns: 
 
 - A sanity tests campaign
 - An integration tests campaign

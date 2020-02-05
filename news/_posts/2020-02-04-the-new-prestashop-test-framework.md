@@ -29,10 +29,10 @@ In March 2019, the QA team decided to stop improving the Selenium campaign (doin
 There are multiple reasons behind this choice, here are the three main ones:
 
 - Tests were run in [headless mode](https://en.wikipedia.org/wiki/Headless_software) (mandatory on Travis). Unfortunately, Selenium is [quite](https://stackoverflow.com/questions/54984306/problem-with-chromedriver-in-headless-mode) [picky](https://github.com/SeleniumHQ/selenium/issues/4685) [when](https://github.com/SeleniumHQ/selenium/issues/4477) used in headless mode. This created multiple issues when tests would fail although the code was bug free. Alas, debugging a failing test without a GUI is very tedious. We used multiple workarounds (screenshots of failing screens, logging every event, ...) but ultimately we were forced to disable the failing tests as it was not possible to make them run in a reliable manner.
-- Selenium itself is not very stable: the test campaign could be run 3 or 4 times in a row on Travis and have different results, with different tests failing. Sometimes it couldn’t find a selector, or timed out when waiting for something… it was very difficult and time-consuming to make the tests more robust.
+- Selenium itself is not very stable: the test campaign could be run 3 or 4 times in a row on Travis and have different results, with different tests failing. Sometimes it could not find a selector, or [timed out](https://github.com/PrestaShop/PrestaShop/issues/14384) when waiting for something… it was very difficult and time-consuming to make the tests more robust.
 - The campaign was too complex: it was trying to test everything at once. The campaign would test all the functionalities in a page, but also doing some [integration testing](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#functional-tests) (verifying some functionalities work well together) and some [end-to-end testing](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#end-to-end-tests-soon) (running through the application like a real user and testing a bunch of functionalities at once). The result was a very complex test suite, very brittle (end-to-end tests are really fragile by design) and a nightmare to maintain and fix.
 
-There were some concerns with the code too: although it was working, there was no real framework behind it. No separation of concerns, no proper use of inheritance, no distinction between the test logic and the page logic. It was very complicated to find the source of a problem sometimes, and with more than 8000 test cases it frequently was not possible to fix it.
+There were some concerns with the structure of the code of this campaign too. Although it did the job, there was no clear architecture behind it. No separation of concerns, no proper use of inheritance, no distinction between the test logic and the page logic. The lack of structure made it very complicated to find the source of a problem sometimes, and with more than 8000 test cases this was a considerable waste of time.
 
 All these reasons made it clear that it was time to drop the whole thing and start over.
 
@@ -50,15 +50,15 @@ Puppeteer is a Node library which provides a nice API to control Chrome. It can 
 But more importantly, it’s more stable in headless (which was a killer feature for us !) since it was designed with headless in mind.
 
 
-### New framework
+### New framework and architecture
 
-The aim was also to create a more robust way to create and maintain tests to avoid the problems we had with the last implementation. Since Puppeteer is “just” a library, the QA team would have to create a whole framework around it, and that was a good opportunity to take a look at the [Page Object Pattern](https://martinfowler.com/bliki/PageObject.html). This pattern makes you separate the test logic from the page logic.
+As mentioned, we wanted to use this opportunity to create a more robust way to create and maintain tests and avoid the issues encountered with the Selenium implementation. Since Puppeteer is just a component, QA team will create a complete framework around it, and we also introduced the use of [Page Object Pattern](https://martinfowler.com/bliki/PageObject.html). This pattern ensures you separate the test logic from the page logic.
 
-On one hand, you create separate objects for every page you’ll need to automate things on. Each object will then hold its own logic, from selectors to basic methods to use on the page (for example, fill a form, sort a table, choose an option from a dropdown, etc).
+On one hand, you create separate objects for every page you need to automate things on. Each object will then hold its own logic, from selectors to basic methods to use on the page (for example, fill a form, sort a table, choose an option from a dropdown, etc).
 
 On the other hand, you create your test logic by using these objects. The goal is to have really small test steps which then use the methods from the objects. This way, your tests don’t know what’s happening behind the scenes. They only call methods which act as an abstraction layer.
 
-This is a good illustration of the separation of concerns: when a page is updated, you only change the corresponding object in its separate file so that selectors and methods still work the same. When your test needs an update, you only change the logic in the steps.
+This is a good illustration of [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns): when a page is updated, you only change the corresponding object in its separate file so that selectors and methods still work the same. When your test needs an update, you only change the logic in the steps.
 
 
 ### Re-focus the test effort
@@ -71,7 +71,7 @@ The third point was about the campaign itself. We wanted to redirect the campaig
 
 Each of these campaigns has its perks.
 
-The **sanity campaign** is here to make sure devs don’t break some core functionalities of PrestaShop. Ran for every PR, it checks all the critical features of the app: the frontend catalog, the cart, the checkout process; but also the backend with the product section and the order section. It’s a fast campaign (about 8 min) and it must pass for the PR to be reviewed: a fail in this section means being back to the coding board for the incriminated dev, with all the shame it brings (not really, but we QA engineers like to think it does).
+The **sanity campaign** is here to make sure developers do not break some core functionalities of PrestaShop when introducing changes. To be run for every Pull Request, it checks all the critical features of the application: the frontend catalog, the cart, the checkout process; but also the backend with the product section and the order section. It is a fast campaign (about 8 minutes) and it must pass for the PR to be reviewed: a fail in this section means being back to the coding board for the incriminated developer, with all the shame it brings (not really, but we QA engineers like to think it does).
 
 The **integration campaign** is the big pièce de résistance: every feature of every page is tested one by one (with of course a few exceptions when it’s too complicated to automate). The goal here is to verify that all features (taken individually) still work as expected. That means testing tables, filters, and CRUD functionalities (Create, Read, Update, Delete).
 This campaign is the biggest so far, and my team and I are proud to say that it works wonderfully. There are still some errors sometimes but we hope to iron things out with time. It already proved itself useful by finding bugs! It’s also very consistent: when it fails it’s always in the same spot and for the same reason.

@@ -72,7 +72,7 @@ The third point was about the campaign itself. The goal was to redirect the camp
 
 Each of these campaigns has its perks.
 
-The **sanity campaign** is here to make sure developers do not break some core functionalities of PrestaShop when introducing changes. To be run for every Pull Request, it checks all the critical features of the application: the frontend catalog, the cart, the checkout process; but also the backend with the product section and the order section. It is a fast campaign (about 8 minutes) and it must pass for the PR to be reviewed.
+The **sanity campaign** is here to make sure developers do not break some core features of PrestaShop when introducing changes. To be run for every Pull Request, it checks all the critical features of the application: the frontend catalog, the cart, the checkout process; but also the backend with the product section and the order section. It is a fast campaign (about 8 minutes) and it must pass for the PR to be reviewed.
 
 The **integration campaign** is the biggest one: every feature of every page is tested one by one (with of course a few exceptions when it’s too complicated to automate). The goal here is to verify that all features (taken individually) still work as expected. That means testing tables, filters, and CRUD functionalities (Create, Read, Update, Delete).
 This campaign is the biggest so far, and my team and I are proud to say that it works wonderfully. There are still some errors sometimes but things wil be ironed out with time. It already proved itself useful by finding bugs! It’s also very consistent: when it fails it’s always in the same spot and for the same reason.

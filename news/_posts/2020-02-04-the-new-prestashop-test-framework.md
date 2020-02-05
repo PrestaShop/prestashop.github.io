@@ -12,37 +12,42 @@ tags: [QA, tests, community]
 For a few months, quality has been a priority for PrestaShop: the QA team and I are proud to announce that we're making great steps in improving the overall quality of the core project. Automatizing tests is a big part of this process: let’s see what we’re doing, why, and how!
 Note: this article is focused on the Core only, but that is just a small part of what the QA team is working on. More to come in a future article!
 
+## TL;DR
+
+The PrestaShop QA team is dropping Selenium and redoing the whole Core test campaign using another tool called Puppeteer, with another design pattern (Page Object Model).
+We aim for better coverage, faster answers for the devs, less time lost in maintaining and fixing the tests, and overall a real change in the quality of the open source project we love!
 
 ## Taking a look back
 
-Historically, the PrestaShop Core continuous integration had a big end-to-end test campaign which purpose was to test the whole application as thoroughly as possible. This campaign was using Selenium as the automation tool, and we were running it in two places:
+Historically, the PrestaShop Core continuous integration had a big end-to-end test campaign which purpose was to test the whole application as thoroughly as possible. [This campaign](https://build.prestashop.com/news/prestashop-test-framework/) was using Selenium as the automation tool, and we were running it in two places:
 
 - The whole campaign was running on every nightly build and for every release
 - A small subset of the campaign was running for every Pull Request on GitHub through Travis CI
 
-At the beginning of 2019, the QA team decided to drop this campaign and start over. In September 2019, we started the new version.
+In March 2019, the QA team decided to stop improving the Selenium campaign (doing only some maintenance) and create a new campaign using Puppeteer. It took quite some time to have a good POC and our engineers started working on it in September. Mid-September there was a sanity campaign up on Travis, and in January 2020 the nightly Selenium campaign was finally dropped and replaced with our growing Puppeteer one.
 
 There are multiple reasons behind this choice, here are the three main ones:
 
-- Tests are run in headless mode (mandatory on Travis) and sadly, Selenium is kind of picky in headless. There were a lot of problems with it, and as you can imagine it’s way more complicated to debug a failing test when there’s no GUI! Screenshots have been tried, logs, everything possible but ultimately the failing tests had to be disabled as it was impossible to find a good solution.
+- Tests were run in [headless mode](https://en.wikipedia.org/wiki/Headless_software) (mandatory on Travis). Unfortunately, Selenium is [quite](https://stackoverflow.com/questions/54984306/problem-with-chromedriver-in-headless-mode) [picky](https://github.com/SeleniumHQ/selenium/issues/4685) [when](https://github.com/SeleniumHQ/selenium/issues/4477) used in headless mode. This created multiple issues when tests would fail although the code was bug free. Alas, debugging a failing test without a GUI is very tedious. We used multiple workarounds (screenshots of failing screens, logging every event, ...) but ultimately we were forced to disable the failing tests as it was not possible to make them run in a reliable manner.
 - Selenium itself is not very stable: the test campaign could be run 3 or 4 times in a row on Travis and have different results, with different tests failing. Sometimes it couldn’t find a selector, or timed out when waiting for something… it was very difficult and time-consuming to make the tests more robust.
-- The campaign was too complex: it was trying to test everything at once. The campaign would test all the functionalities in a page, but also doing some [functional testing](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#functional-tests) (verifying some functionalities work well together) and some [end-to-end testing](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#end-to-end-tests-soon) (running through the application like a real user and testing a bunch of functionalities at once). The result was a very complex test suite, very brittle (end-to-end tests are really fragile by design) and a nightmare to maintain and fix.
+- The campaign was too complex: it was trying to test everything at once. The campaign would test all the functionalities in a page, but also doing some [integration testing](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#functional-tests) (verifying some functionalities work well together) and some [end-to-end testing](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#end-to-end-tests-soon) (running through the application like a real user and testing a bunch of functionalities at once). The result was a very complex test suite, very brittle (end-to-end tests are really fragile by design) and a nightmare to maintain and fix.
 
 There were some concerns with the code too: although it was working, there was no real framework behind it. No separation of concerns, no proper use of inheritance, no distinction between the test logic and the page logic. It was very complicated to find the source of a problem sometimes, and with more than 8000 test cases it frequently was not possible to fix it.
 
 All these reasons made it clear that it was time to drop the whole thing and start over.
 
 
-## What is coming
+## What we are building now
 
 The QA team decided to work on the three following points.
 
 ### Automation tool
 
-It was already decided to drop Selenium, but what would be a good replacement? There are a lot of options there, including SaaS solutions (Cypress, QAWolf, etc). After reviewing a few possibilities, the best choice was to go for [Puppeteer](https://github.com/puppeteer/puppeteer).
+It was already decided to drop Selenium, but what would be a good replacement? There are a lot of options there, including SaaS solutions ([Cypress](https://www.cypress.io/), [QAWolf](https://docs.qawolf.com/), etc). After reviewing a few possibilities, the best choice was to go for [Puppeteer](https://github.com/puppeteer/puppeteer).
 
-Puppeteer is a Node library which provides a nice API to control Chrome. It can automate pretty much everything you do manually. It’s maintained by Google, which is always a good sign.
-It’s also more robust and more stable in headless (which was a killer feature for us) since it was designed with headless in mind.
+Puppeteer is a Node library which provides a nice API to control Chrome. It can automate pretty much everything you do manually. It’s also maintained by Google !
+
+But more importantly, it’s more stable in headless (which was a killer feature for us !) since it was designed with headless in mind.
 
 
 ### New framework
@@ -85,11 +90,5 @@ All the tests I present in this article are also available in the [develop](http
 Don’t forget that you can help us by [writing tests or Page Objects through Pull Requests](https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#creating-a-web-acceptance-test)!
 
 Addendum: the team behind Puppeteer recently revealed their new project: [PlayWright](https://github.com/microsoft/playwright). Based on their work on Puppeteer, it’s also a Node library but able to communicate with Chromium, Firefox, and Edge. As soon as they release a stable version, we’ll look seriously into it, as testing all major browsers would be a nice addition.
-
-
-## TL;DR
-
-The PrestaShop QA team is dropping Selenium and redoing the whole Core test campaign using another tool called Puppeteer, with another design pattern (Page Object Model).
-We aim for better coverage, faster answers for the devs, less time lost in maintaining and fixing the tests, and overall a real change in the quality of the open source project we love!
 
 As always, at PrestaShop we’re impatient to hear your comments and suggestions.

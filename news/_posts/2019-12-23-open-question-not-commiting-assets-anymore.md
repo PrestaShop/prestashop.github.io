@@ -15,7 +15,7 @@ We decided to open up more with you about technical questioning and decisions fo
 This one is about generated asset files.
 
 **[EDIT] February 7th 2020:**
-Following the positive feedback we received after publishing the article, we decided to remove the generated files and to add the `make assets` command. Learn more in the [devdoc](https://devdocs.prestashop.com/1.7/development/compile-assets/#build-all-assets-at-once).
+Considered the positive feedback we received after publishing the article, we decided to remove the generated files and to add the `make assets` command. Learn more in the [devdoc](https://devdocs.prestashop.com/1.7/development/compile-assets/#build-all-assets-at-once).
 
 Details of the feedback:
 27 "Upvote" and 1 "Sad" reactions in Disqus.

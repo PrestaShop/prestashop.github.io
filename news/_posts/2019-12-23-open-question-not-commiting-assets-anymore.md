@@ -9,15 +9,10 @@ image: /assets/images/theme/meta-logo-build.png
 tags: [1.7, development, community]
 ---
 
-<div class="alert alert-info" role="alert">
-<h4><i class='icon-chat'> </i>Open question</h4>
+
 This post is the first of a new kind.
 We decided to open up more with you about technical questioning and decisions for the PrestaShop project.
-In these posts, we will introduce modifications or changes we want to make, in order to <b>discuss it with you</b> and make sure we make the right decision.
-
 This one is about generated asset files.
-Please, give us your opinion about it in the comments at the end of the post.
-</div>
 
 
 ## Generated files?

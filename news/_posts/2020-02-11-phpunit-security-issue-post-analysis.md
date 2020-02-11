@@ -19,13 +19,13 @@ This was a code error, fixed after a short time, but the bad archives were alrea
 
 Moreover, when the PrestaShop software upgrades a module, it only overrides already-existing files, so files that were inserted once were not removed, even if a more recent version of dependency was provided. 
 
-This means that if a module was installed once with unprotected files, these files would remain there until someone removes or updates them.This problem also applies to themes.
+This means that if a module was installed once with unprotected files, these files would remain there until someone removes or updates them. This problem also applies to themes.
 
 ## Communication
 
 The security team reached out to other major CMS teams in order to inform them about the issue so they could check whether the issue affected modules or plugins on their side.
  
-Since last year's Google CMS Security summit, we have been part of a Slack channel that gathers many people from the CMS ecosystem (Wordpress, Joomla, host providers, etc.) to share security issues. This allowed us to share frequent information with other CMS people.
+Since last year's [Google CMS Security summit](https://build.prestashop.com/news/we-were-at-the-cms-security-summit-with-google/), we have been part of a Slack channel that gathers many people from the CMS ecosystem (Wordpress, Joomla, host providers, etc.) to share security issues. This allowed us to share frequent information with other CMS people.
 
 Once the full scope of the vulnerability was confirmed and that, by upgrading to the latest PrestaShop softwares, users would be protected against the vulnerability, we communicated through multiple channels to inform our users and the PrestaShop community at large about the incident.
 
@@ -48,4 +48,4 @@ Internal processes and tools are also being improved to make sure similar issues
 
 If you need more information about what is a Bug Bounty program, have a look at [https://en.wikipedia.org/wiki/Bug_bounty_program](https://en.wikipedia.org/wiki/Bug_bounty_program)
 
-If you just discover this article, please refer to [https://build.prestashop.com/news/critical-security-vulnerability-in-prestashop-modules/ ](https://build.prestashop.com/news/critical-security-vulnerability-in-prestashop-modules/) to make sure you’re not impacted or if you are, help you to remove and protect your shop. 
+If you just discovered this article, please refer to [https://build.prestashop.com/news/critical-security-vulnerability-in-prestashop-modules/ ](https://build.prestashop.com/news/critical-security-vulnerability-in-prestashop-modules/) to make sure you are not impacted by the vulnerability or if you are impacted, help you to remove the vulnerable files and protect your shop. 

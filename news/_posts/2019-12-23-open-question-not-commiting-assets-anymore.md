@@ -9,15 +9,17 @@ image: /assets/images/theme/meta-logo-build.png
 tags: [1.7, development, community]
 ---
 
-<div class="alert alert-info" role="alert">
-<h4><i class='icon-chat'> </i>Open question</h4>
+
 This post is the first of a new kind.
 We decided to open up more with you about technical questioning and decisions for the PrestaShop project.
-In these posts, we will introduce modifications or changes we want to make, in order to <b>discuss it with you</b> and make sure we make the right decision.
-
 This one is about generated asset files.
-Please, give us your opinion about it in the comments at the end of the post.
-</div>
+
+**[EDIT] February 7th 2020:**
+Considered the positive feedback we received after publishing the article, we decided to remove the generated files and to add the `make assets` command. Learn more in the [devdoc](https://devdocs.prestashop.com/1.7/development/compile-assets/).
+
+Details of the feedback:
+27 "Upvote" and 1 "Sad" reactions in Disqus.
+1 positive comment, upvoted five times.
 
 
 ## Generated files?
@@ -88,7 +90,7 @@ Let us know what you think about it!
 <br>
 <div class="alert alert-info" role="alert">
 <h4><i class='icon-chat'> </i>Let's talk</h4>
-  As said earlier, the goal of this kind of article, "Open question", is to discuss technical topics with you.
+  The goal of this kind of article, "Open question", is to discuss technical topics with you.
   <br>So please, let us know what you think and feel free to ask questions in the comments below.
   <br><br>Oh, and we are also looking for a name for this kind of post, we went with “Open question”, but if you have other ideas feel free to share them!
 </div>

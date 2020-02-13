@@ -82,9 +82,9 @@ Need to read an in-situ example? Have a look at the [Azerbaijan localization pac
 <h4>IMPORTANT</h4>
 <p><b>A short notice about the expected ISO codes:</b><br>
 <br>
-country code = <a href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-2</a> = e.g. _AZ_, for Azerbaijan<br>
- currency code = <a href="https://www.iso.org/iso-4217-currency-codes.html">ISO 4217</a> = e.g. _AZN_, for the Azerbaijani manat<br>
-language code = <a href="https://www.iso.org/iso-639-language-codes.html">ISO 639-1</a> = e.g. _az_, for the Azeri<br></p>
+<i>country code</i> = <a href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-2</a> = e.g. <i>AZ</i>, for Azerbaijan<br>
+<i>currency code</i> = <a href="https://www.iso.org/iso-4217-currency-codes.html">ISO 4217</a> = e.g. <i>AZN</i>, for the Azerbaijani manat<br>
+<i>language code</i> = <a href="https://www.iso.org/iso-639-language-codes.html">ISO 639-1</a> = e.g. <i>az</i>, for the Azeri<br></p>
 </div>
 
 

@@ -80,19 +80,19 @@ Need to read an in-situ example? Have a look at the [Azerbaijan localization pac
 
 <div class="alert alert-info" role="alert">
 <h4>IMPORTANT</h4>
-<p>A short notice about the expected ISO codes:<br>
+<p><b>A short notice about the expected ISO codes:</b><br>
 <br>
-country code = [ISO 3166-1 alpha-2](https://www.iso.org/iso-3166-country-codes.html) = e.g. _AZ_, for Azerbaijan<br>
-currency code = [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) = e.g. _AZN_, for the Azerbaijani manat<br>
-language code = [ISO 639-1](https://www.iso.org/iso-639-language-codes.html) = e.g. _az_, for the Azeri<br></p>
+country code = <a href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-2</a> = e.g. _AZ_, for Azerbaijan<br>
+ currency code = <a href="https://www.iso.org/iso-4217-currency-codes.html">ISO 4217</a> = e.g. _AZN_, for the Azerbaijani manat<br>
+language code = <a href="https://www.iso.org/iso-639-language-codes.html">ISO 639-1</a> = e.g. _az_, for the Azeri<br></p>
 </div>
 
 
 <div class="alert alert-info" role="alert">
 <h4>NOTE</h4>
-<p>How CLDR is used here for currencies:<br>
+<p><b>How CLDR is used here for currencies:</b><br>
 <br>
-When entering information about the currency in a localization pack, note the CLDR handles most of it. Such as the format, decimals or blank fields. However, this information is still read ([here](https://github.com/PrestaShop/PrestaShop/blob/1.7.0.x/classes/LocalizationPack.php#L304-L312)) so it has to be filled.</p>
+When entering information about the currency in a localization pack, note the CLDR handles most of it. Such as the format, decimals or blank fields. However, this information is still read (<a href="https://github.com/PrestaShop/PrestaShop/blob/1.7.0.x/classes/LocalizationPack.php#L304-L312">here</a>) so it has to be filled.</p>
 </div>
 
 

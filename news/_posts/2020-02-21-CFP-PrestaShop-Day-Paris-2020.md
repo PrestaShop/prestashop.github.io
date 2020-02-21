@@ -19,7 +19,7 @@ The event will take place in Paris, at "Palais Brongniart", June the 4th of 2020
 
 Below is a list of themes for the [call of papers](https://en.wikipedia.org/wiki/Academic_conference#Organizing_an_academic_conference) that would be very appreciated this year.
 
-**Technique:**
+**Development:**
 
 - Front Office or Back Office integration
 - Headless, PWA, API / web-services

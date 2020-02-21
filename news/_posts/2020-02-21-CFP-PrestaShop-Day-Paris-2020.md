@@ -21,7 +21,7 @@ Below is a list of themes for the [call of papers](https://en.wikipedia.org/wiki
 
 **Technique:**
 
-- FO or BO integration
+- Front Office or Back Office integration
 - Headless, PWA, API / web-services
 - Information systems
 - Migration to PrestaShop

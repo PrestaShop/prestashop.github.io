@@ -13,7 +13,7 @@ tags: [contribute, events, community]
 Last year, a developer space was available at the PrestaShop Day Paris. This year, this space grows and will include an area for conferences and workshops dedicated to active contributors to the open source project.
 
 The event will take place in Paris, at "Palais Brongniart", June the 4th of 2020. More informations:  
-https://events.prestashop.com/prestashop-day-paris-2020/fr/
+(https://events.prestashop.com/prestashop-day-paris-2020/fr/)[https://events.prestashop.com/prestashop-day-paris-2020/fr/]
 
 ## Themes
 

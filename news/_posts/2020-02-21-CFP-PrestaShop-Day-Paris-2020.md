@@ -15,7 +15,7 @@ Last year, a developer space was available at the PrestaShop Day Paris. This yea
 The event will take place in Paris, at "Palais Brongniart", June the 4th of 2020. More informations:  
 https://events.prestashop.com/prestashop-day-paris-2020/fr/
 
-## Thèmes
+## Themes
 
 Below is a list of themes for the call of papers that would be very appreciated this year.
 
@@ -71,4 +71,3 @@ Click on the button below to complete the form right now and submit your paper.
 
 [Go the CFP form](https://docs.google.com/forms/d/e/1FAIpQLSdsIcc9mvX3r7nQkDyTcw-V4m_1jCv8TRXXs69ybtC1DCyCyA/viewform?usp=sf_link){: .btn .btn-lg .btn-success}
 {: .text-center}
-

@@ -45,7 +45,7 @@ Three conference formats are proposed in 2020:
 - 30min talk
 - 5min lightning talk
 
-In order to respect the program, the speakers and the attendees at the show, no additional time will be allocated. Therefore, talks must be very well prepared.
+By respect for the program, the speakers and the attendees at the show, no additional time will be allocated. Therefore, talks must be very well prepared.
 
 ## Language
 

@@ -17,7 +17,7 @@ https://events.prestashop.com/prestashop-day-paris-2020/fr/
 
 ## Themes
 
-Below is a list of themes for the call of papers that would be very appreciated this year.
+Below is a list of themes for the [call of papers](https://en.wikipedia.org/wiki/Academic_conference#Organizing_an_academic_conference) that would be very appreciated this year.
 
 **Technique:**
 

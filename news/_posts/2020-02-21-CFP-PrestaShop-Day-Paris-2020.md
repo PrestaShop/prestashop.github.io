@@ -63,7 +63,7 @@ Consequently, all workshops, talks and slides must be in French -- "et sans faut
 10/04: Closing of the CFP and the form  
 20/04: Announcement of the complete program
 
-A first selection of submissions will be done on March 13th of 2020. And a first communication should done around March the 16th of 2020 to announce the first speakers. If you want to be selectionned, don't be late.
+A first selection of submissions will be done on March 13th of 2020. And a first communication should be done around March the 16th of 2020 to announce the first speakers. If you want to be selected, don't be late.
 
 ## Are you ready?
 

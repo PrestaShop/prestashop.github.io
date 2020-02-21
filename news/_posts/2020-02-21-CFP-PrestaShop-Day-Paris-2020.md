@@ -22,7 +22,7 @@ Below is a list of themes for the [call of papers](https://en.wikipedia.org/wiki
 **Technique:**
 
 - FO or BO integration
-- Headless, PWA, API /. web-services
+- Headless, PWA, API / web-services
 - Information systems
 - Migration to PrestaShop
 - Performance, tests and quality

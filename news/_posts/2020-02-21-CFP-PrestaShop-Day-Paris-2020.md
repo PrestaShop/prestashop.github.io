@@ -35,7 +35,7 @@ Below is a list of themes for the [call of papers](https://en.wikipedia.org/wiki
 
 Do not hesitate to submit a topic around the PrestaShop project. All submissions will be examined.
 
-The target is to share and exchange knowledge, best practices and know how.
+The objective is to share and exchange knowledge, best practices and know how.
 
 ## Formats
 

@@ -33,7 +33,7 @@ Below is a list of themes for the [call of papers](https://en.wikipedia.org/wiki
 - Use of GitHub
 - Open source culture
 
-Do not hesitate to propose a topic around the PrestaShop project. All submissions will be studied.
+Do not hesitate to submit a topic around the PrestaShop project. All submissions will be examined.
 
 The target is to share and exchange knowledge, best practices and know how.
 

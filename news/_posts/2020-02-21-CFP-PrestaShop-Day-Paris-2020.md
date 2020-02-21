@@ -69,5 +69,5 @@ A first selection of submissions will be done on March 13th of 2020. And a first
 
 Click on the button below to complete the form right now and submit your paper.
 
-[Go the CFP form](https://docs.google.com/forms/d/e/1FAIpQLSdsIcc9mvX3r7nQkDyTcw-V4m_1jCv8TRXXs69ybtC1DCyCyA/viewform?usp=sf_link){: .btn .btn-lg .btn-success}
+[Go to the CFP form](https://docs.google.com/forms/d/e/1FAIpQLSdsIcc9mvX3r7nQkDyTcw-V4m_1jCv8TRXXs69ybtC1DCyCyA/viewform?usp=sf_link){: .btn .btn-lg .btn-success}
 {: .text-center}

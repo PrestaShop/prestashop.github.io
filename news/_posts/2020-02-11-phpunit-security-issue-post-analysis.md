@@ -2,7 +2,7 @@
 layout: post
 title:  "Security issue with PHPUnit, post-incident analysis"
 subtitle: "The mysterious development dependencies!"
-date:   2020-02-18 14:00:00
+date:   2020-02-28 10:00:00
 authors: [ PierreRambaud, PrestaShop ]
 icon: icon-chat
 image: /assets/images/theme/meta-logo-build.png

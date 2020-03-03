@@ -42,7 +42,7 @@ Thank you for your involvement!
 
 ## Top contributors
  
-A lot of you are working every day on Crowdin to have PrestaShop available in many languages, and we can't thank you enough for your dedication! Here are the **most active translators and proofreaders** for January 2019.
+A lot of you are working every day on Crowdin to have PrestaShop available in many languages, and we can't thank you enough for your dedication! Here are the **most active translators and proofreaders** for January 2020.
 
 #### Top 10 translators in January:
  
@@ -84,7 +84,7 @@ Remember, you can see who's been contributing to our translation project thanks 
  
 #### Fully translated languages
  
-At the end of January 2019, PrestaShop 1.7.6 was fully available (= 100% translated and validated) in **17 languages**:
+At the end of January 2020, PrestaShop 1.7.6 was fully available (= 100% translated and validated) in **17 languages**:
  
 | Czech | Dutch | English | Estonian |
 | Greek | French | Italian | **Latvian** |

@@ -9,8 +9,8 @@ image: /assets/images/theme/meta-logo-build.png
 tags: [bug, bounty, program, maintenance]
 ---
 
-Protecting the privacy of PrestaShop's users is one of our top priority. We build the software with this goal in mind.
-That's why we decided to welcome help from the outisde through a bounty program to put our security to the test!
+Protecting the business, data and privacy of PrestaShop's users is one of our top priority. We build the software with this goal in mind.
+That's why we decided to welcome help from the outside through a bounty program to put our security to the test!
 
 # Why this program
 

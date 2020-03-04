@@ -19,7 +19,7 @@ After a few months dedicated to fixing a security issue and all regressions foun
 ![1.7.6.4 is available!](/assets/images/2020/03/1.7.6.4_banner.jpg)
 
 This maintenance release fixes 9 issues reported on the versions between 1.7.6.0 to the 1.7.6.3.
-Since these versions fix security problems, we **strongly** encourage you to upgrade your shop as soon as possible.
+Since this version fixes a security problem, we **strongly** encourage you to upgrade your shop as soon as possible.
 We suggest upgrading your shop quickly to benefit from these fixes. Of course, don’t forget to backup before.
 
 The security update fixes protect your shop for attackers to change your customer's personal information.

@@ -16,6 +16,11 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 ## Project news
 
 
+### :calendar: PrestaShop Day Madrid is postponed
+
+In the current context related to the coronavirus Covid-19 outbreak and its spread in Europe, we have decided to postpone the PrestaShop Day Madrid to a later date. This decision is a preventive measure aimed at preserving the health of all participants and all those involved in the organization of the event. We will keep you posted as soon as a new date is set for the event, thank you for your patience and understanding. 
+
+
 ### :wave: 1.7.7 catalog is ready for translation
 
 Hey guys, guess what: a new translation catalog is now available! And not any kind of catalog, the 1.7.7 catalog indeed! Imported from the PrestaShop code last week, it works the same as usual: please add as many comments to spot grammar mistakes, require elements of context or ask questions as you need. It will be corrected on our end so that the wordings can be modified within the code, then gathered and pushed on Crowdin one more time, generating a catalog perfectly adjusted by you all.

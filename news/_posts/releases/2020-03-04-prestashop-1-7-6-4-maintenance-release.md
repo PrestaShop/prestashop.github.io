@@ -41,6 +41,8 @@ Below are listed some of the main regression issues we fixed in this version :
 ([#16491](https://github.com/PrestaShop/PrestaShop/issues/16491))
 
 Read the [full changelog here](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.4).
+
+
 ## Important changes 
 Below are security changes we added in this version:
 [CVE + advisory]

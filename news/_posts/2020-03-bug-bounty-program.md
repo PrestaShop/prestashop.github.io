@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Let the hunt begin"
+title:  "Announcing our first Bug Bounty program"
 subtitle: "It's time to make PrestaShop better and safer that it already is!"
 date:   2020-03-11 08:00:00
 authors: [ PierreRambaud, PrestaShop ]
@@ -35,3 +35,5 @@ We are particularity interested in Remote Code Execution, SQL Injections, Authen
 Also, we consider non-qualitfying vulnerabilities for any [CVSS3](https://www.first.org/cvss/calculator/3.0) score lower than 4.0, unless it can be combined with other vulnerabilities to achieve a higher score.
 
 Find more information about qualifying and non-qualifying vulnerabilities and of course everything about vulnerability disclosure on [PrestaShop's YesWeHack Public Program](https://yeswehack.com/programs/prestashop)!
+
+Let the hunt begin!

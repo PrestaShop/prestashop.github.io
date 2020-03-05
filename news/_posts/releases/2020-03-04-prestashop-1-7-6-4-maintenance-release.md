@@ -4,7 +4,7 @@ title:  "Release Of PrestaShop 1.7.6.4"
 subtitle: "MAINTENANCE VERSION OF THE 1.7.6.X BRANCH"
 date:   2020-03-05 12:00:00
 authors: [ PrestaShop ]
-image: /assets/images/2020/03/meta-1764.jpg
+image: /assets/images/2020/03/meta-1.7.6.4.jpg
 icon: icon-checked
 tags:
  - 1.7

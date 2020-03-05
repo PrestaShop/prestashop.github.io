@@ -30,13 +30,13 @@ Reminder:  the 1-Click Upgrade module’s latest version is v[VERSION], don’t 
 Below are listed some of the main regression issues we fixed in this version :
 
 * An error case on the customer email validation ([#17809](https://github.com/PrestaShop/PrestaShop/issues/17809))
-* Failed to product_page.css and files ([#17584](https://github.com/PrestaShop/PrestaShop/issues/17584))
+* Failed load the product_page.css and translations.css files ([#17584](https://github.com/PrestaShop/PrestaShop/issues/17584))
 * Display issues on the SEO live previews on Safari desktop ([#17525](https://github.com/PrestaShop/PrestaShop/issues/17525))
 * A combination color wasn’t displayed when it was selected ([#17437](https://github.com/PrestaShop/PrestaShop/issues/17437))
 * Couldn’t view a category if all subcategories were disabled ([#17379](https://github.com/PrestaShop/PrestaShop/issues/17379))
-* Some products combination wasn’t displayed when depending on the stock and the product configuration([#17345](https://github.com/PrestaShop/PrestaShop/issues/17345)) 
+* Some products combination wasn’t displayed depending on the stock and the product configuration ([#17345](https://github.com/PrestaShop/PrestaShop/issues/17345)) 
 * Support link was not displayed properly in the order confirmation in Arabic ([#17242](https://github.com/PrestaShop/PrestaShop/issues/17242))
-* Email’s subject can have special character again  ([#16847](https://github.com/PrestaShop/PrestaShop/issues/16847))
+* Email’s subject can have special character again ([#16847](https://github.com/PrestaShop/PrestaShop/issues/16847))
 * A reduction error occurred on the invoice when applying specific cart rule to an order 
 ([#16491](https://github.com/PrestaShop/PrestaShop/issues/16491))
 
@@ -44,8 +44,10 @@ Read the [full changelog here](https://github.com/PrestaShop/PrestaShop/releases
 
 
 ## Important changes 
-Below are security changes we added in this version:
-[CVE + advisory]
+Below are security information we added in this version:
+
+- CVE reference:
+- 
 
 ## Acknowledgments
 

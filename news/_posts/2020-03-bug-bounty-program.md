@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Let the hunt begin"
-subtitle: "It's time to make PrestaShop better that it already is!"
+subtitle: "It's time to make PrestaShop better and safer that it already is!"
 date:   2020-03-11 08:00:00
 authors: [ PierreRambaud, PrestaShop ]
 icon: icon-chat
@@ -21,15 +21,14 @@ leverage the external community to help keep users safe.
 Cyber criminals from around the world are continuously finding new ways of breaking websites or stealing
 personal information and more if they are related to ecommerce.
 
-By creating this program, and even if it may appear as digging our own grave, it is more about prevention.
-It invites White Hat Hacker to play with us and report issues before a "bad guy" messes up.
+It invites White Hat Hacker to play with us and report issues before a "bad guy" messes up the PrestaShop open source project.
 
 # What's in scope
 
 First of all, keep in mind this bounty programm does not concern regular bugs, but only security flaws.
 If you have problems and wish to report a bug, feel free to open an issue on our GitHub repository [PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/new/choose)
 
-Then, this bounty program covers code from our GitHub repository [PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop).
+Then, this bounty program covers code from our GitHub repository [PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop) plus all PrestaShop modules defined in the composer.json file.
 
 We are particularity interested in Remote Code Execution, SQL Injections, Authentication bypass, and obviously XSS with demonstrable business impact.
 

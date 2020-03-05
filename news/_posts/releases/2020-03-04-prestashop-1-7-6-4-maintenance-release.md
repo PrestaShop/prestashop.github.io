@@ -24,7 +24,7 @@ We suggest upgrading your shop quickly to benefit from these fixes. Of course, d
 
 The security patch protects your shop against attacks aimed at modifying your customers' personal information.
 
-Reminder:  the 1-Click Upgrade module’s latest version is v[VERSION], don’t forget to upgrade it.
+Reminder:  the 1-Click Upgrade module’s latest version is v4.10.1, don’t forget to upgrade it.
 
 ## Main fixes
 Below are listed some of the main regression issues we fixed in this version :
@@ -46,7 +46,7 @@ Read the [full changelog here](https://github.com/PrestaShop/PrestaShop/releases
 ## Important changes 
 Below are the security information we added in this version:
 
-- CVE reference:
+- CVE reference: [CVE-2020-5250](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5250)
 - GitHub Security Advisory:
 
 ## Acknowledgments

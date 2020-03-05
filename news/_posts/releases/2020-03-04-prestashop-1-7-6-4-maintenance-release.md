@@ -44,7 +44,7 @@ Read the [full changelog here](https://github.com/PrestaShop/PrestaShop/releases
 
 
 ## Important changes 
-Below are security information we added in this version:
+Below are the security information we added in this version:
 
 - CVE reference:
 - GitHub Security Advisory:

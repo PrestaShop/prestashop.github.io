@@ -4,7 +4,7 @@ title:  "Release Of PrestaShop 1.7.6.4"
 subtitle: "MAINTENANCE VERSION OF THE 1.7.6.X BRANCH"
 date:   2020-03-04 10:00:00
 authors: [ PrestaShop ]
-image: /assets/images/2019/11/meta-1762.png
+image: /assets/images/2020/03/meta-1764.png
 icon: icon-checked
 tags:
  - 1.7
@@ -22,7 +22,7 @@ This maintenance release fixes 9 issues reported on the versions between 1.7.6.0
 Since this version fixes a security problem, we **strongly** encourage you to upgrade your shop as soon as possible.
 We suggest upgrading your shop quickly to benefit from these fixes. Of course, don’t forget to backup before.
 
-The security update fixes protect your shop for attackers to change your customer's personal information.
+The security patch protects your shop against attacks aimed at modifying your customers' personal information.
 
 Reminder:  the 1-Click Upgrade module’s latest version is v[VERSION], don’t forget to upgrade it.
 

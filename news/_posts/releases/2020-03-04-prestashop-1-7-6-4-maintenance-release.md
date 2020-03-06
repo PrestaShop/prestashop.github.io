@@ -14,7 +14,7 @@ tags:
  - releases
 ---
 
-After a few weeks dedicated to fixing a security issue and all regressions found on the previous 1.7.6 versions, PrestaShop 1.7.6.4 is finally available! 
+PrestaShop 1.7.6.4 is finally available! A critical security issue and regressions found on the previous 1.7.6 versions has been fixed. Upgrading your shop is highly recommended.
 
 ![1.7.6.4 is available!](/assets/images/2020/03/1.7.6.4_banner.jpg)
 

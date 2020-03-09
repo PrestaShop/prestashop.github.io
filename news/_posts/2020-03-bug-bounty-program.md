@@ -21,18 +21,18 @@ leverage the external community to help keep users safe.
 Cyber criminals from around the world are continuously finding new ways of breaking websites or stealing
 personal information, even more so when they are related to e-commerce.
 
-It invites White Hat Hacker to play with us and report issues before a "bad guy" messes up the PrestaShop open source project.
+Bug bounty programs are all about prevention. They are an invitation for [White Hat hackers](https://en.wikipedia.org/wiki/White_hat_(computer_security)) to thoroughly scrutinize our software and report any hidden issues they find. This will allow us to discover and patch hidden vulnerabilities before any "bad guys" exploit them in production sites.
 
 # What's in scope
 
 First of all, keep in mind this bounty programm does not concern regular bugs, but only security flaws.
 If you encounter any bug in PrestaShop not related to security, feel free to [create an issue in our public bug tracker](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
 
-Then, this bounty program covers code from our GitHub repository [PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop) plus all PrestaShop modules defined in the composer.json file.
+Second, this bounty program covers code from our GitHub repository [PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop) plus all PrestaShop modules defined in the composer.json file.
 
 We are particularity interested in Remote Code Execution, SQL Injections, Authentication bypass, and obviously XSS with demonstrable business impact.
 
-Also, we consider non-qualitfying vulnerabilities for any [CVSS3](https://www.first.org/cvss/calculator/3.0) score lower than 4.0, unless it can be combined with other vulnerabilities to achieve a higher score.
+Also, we consider that vulnerabilities with a [CVSS3](https://www.first.org/cvss/calculator/3.0) score lower than 4.0 are non-qualifying, unless it can be combined with other vulnerabilities to achieve a higher score.
 
 Find more information about qualifying and non-qualifying vulnerabilities and of course everything about vulnerability disclosure on [PrestaShop's YesWeHack Public Program](https://yeswehack.com/programs/prestashop)!
 

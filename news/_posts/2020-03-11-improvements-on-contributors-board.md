@@ -68,7 +68,7 @@ There are still a few questions that need some work, as the target is to create 
 - Is it interesting to introduce contribution sponsors, like Drupal is doing, and if yes, how? (e.g: a merchant "sponsors" a bug fix by paying a developer to fix it and submit a pull request)
 - Should we introduce some gamification in the contribution board? (badges, achievements, ...)
 - Once the contributor profile is ready, what other useful information could be displayed? (participation to PrestaShop events, issues solved, ...)
-- How to integrate to the board other kind of contributions, like translations on Crowdin, number of code reviews done by maintainers, opened issues, and everything that takes a lof ot time and makes the PrestaShop software so great?
+- How to integrate other kinds of contributions to the board, like translations on Crowdin, number of code reviews done by maintainers, issues opened, and everything that takes a lot of time and makes the PrestaShop software so great?
 
 If you have good ideas to share, or just want to discuss about this article, pleases leave a comment or get it touch with me through other channels.
 

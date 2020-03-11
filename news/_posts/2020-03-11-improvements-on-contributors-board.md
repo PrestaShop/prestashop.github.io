@@ -14,7 +14,7 @@ After all those years without any modification nor improvements, it is really ti
 
 ## But, why?
 
-In 2020, a lot of work is going to be done around the PrestaShop open source project to make it more attractive for contributors. It must of course take in account that nobody really contributes voluntarily, because at the end of the month, everybody has to pay their bills. So, like with other famous open source projects, people and companies who takes time to contribute must be able to show it: being a visible expert in the community has a lot of value to attract customers, it proves that they know what they are doing with their PrestaShop business.
+In 2020, a lot of work is going to be done around the PrestaShop open source project to make it more attractive for contributors. It must of course take into account that most people don't really contribute out of generosity, because at the end of the month, everybody has to pay their bills. So, like with other well-known open source projects, people and companies who take time to contribute to PrestaShop must be able to show off: being visible in the community as an expert is valuable to attract customers, it provides proof that they know what they are doing with their PrestaShop business.
 
 There are many ideas that are currently being tested, or will be soon:
 

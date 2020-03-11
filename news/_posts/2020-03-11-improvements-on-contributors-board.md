@@ -19,7 +19,7 @@ In 2020, a lot of work is going to be done around the PrestaShop open source pro
 There are many ideas that are currently being tested, or will be soon:
 
 - [Call for papers at PrestaShop events](https://build.prestashop.com/news/CFP-PrestaShop-Day-Paris-2020/), giving a place for community speakers
-- Opening the maintainer role on a GitHub repository with selected developers, in order to idenfiy problems and document how to do it well
+- Opening the maintainer role on a GitHub repository with selected developers, in order to identify problems and document how to do it well;
 - Opening a chat platform for contributors (due date on Q1)
 - ... and this is just the tip of the iceberg
 
@@ -73,4 +73,3 @@ There are still a few questions that need some work, as the target is to create 
 If you have good ideas to share, or just want to discuss about this article, pleases leave a comment or get it touch with me through other channels.
 
 Let's build a better community together.
-

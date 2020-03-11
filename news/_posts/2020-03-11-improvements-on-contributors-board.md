@@ -46,7 +46,7 @@ In the weeks to come, a few improvements will be in production:
 2. Instead of just counting commits on the core repository, it is time to count commits on all the repositories; this is easier now that the PrestaShop GitHub's organisation is focused only on the open source project
 3. The page will be modified a bit to be fully scrollable, without hidden parts, with the aim to make it easy to find someone 
 
-This will be the first improvements, and the development work has been started already. The result is subject to a evolve a bit at the beginning, depending on how data will be aggregated, and also because the cleanup of the GitHub organization is not yet complete (e.g: there are still some old partners modules that needs to be archived). However, the new board should quickly give a comprehensive view of the entire contributors team over years.
+These will be the first improvements, and the development work has been started already. The result is subject to evolve a bit at the beginning, depending on how data will be aggregated, and also because the cleanup of the GitHub organization is not yet complete (e.g: there are still some old partner modules that need to be archived). However, the new board should quickly give a comprehensive view of the entire contributor team over years.
 
 ### Second step: new features and look'n feel
 

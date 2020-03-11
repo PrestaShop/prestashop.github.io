@@ -65,7 +65,7 @@ Also, please note that a few mockups have been done in 2019 to see how to make t
 There are still a few questions that need some work, as the target is to create a good way to show the work of contributors:
 
 - How to manage contributors that have worked for many companies over time, in order to count company contributions?
-- Is this interesting to introduce the sponsor of a contribution, like Drupal is doing, and if yes, how? (e.g: a merchant pays an agency to fix a bug and submit a pull request)
+- Is it interesting to introduce contribution sponsors, like Drupal is doing, and if yes, how? (e.g: a merchant "sponsors" a bug fix by paying a developer to fix it and submit a pull request)
 - Should we introduce some gamification in the contribution board? (badges, achievements, ...)
 - Once the contributor profile is ready, what other useful information could be displayed? (participation to PrestaShop events, issues solved, ...)
 - How to integrate to the board other kind of contributions, like translations on Crowdin, number of code reviews done by maintainers, opened issues, and everything that takes a lof ot time and makes the PrestaShop software so great?

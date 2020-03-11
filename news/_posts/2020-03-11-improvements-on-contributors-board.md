@@ -25,7 +25,7 @@ There are many ideas that are currently being tested, or will be soon:
 
 But, at the end, the question remains: how can a contributor show their knowledge, their expertise, and their investment in the project to their customers.
 
-This is why it is time to improve the Contributors board. Let's see what is on the schedule already.
+This is why it is time to improve the Contributors' board. Let's see what is on the schedule already.
 
 
 ## The current plan

@@ -10,7 +10,7 @@ tags: [contribute, community]
 ---
 
 
-After all those years without any modification nor improvements, it is really time to think about the future of the "[Top contribution achievements](http://contributors.prestashop.com/)" board. While discussing with many people from the community on how to open the governance of the open source project, and how to involve more contributors, new needs have been identified. This article is about quick wins, upcoming developments, and about the general spirit behind this work.
+After all those years without any modification nor improvement, it is time to think about the future of the "[Top contribution achievements](http://contributors.prestashop.com/)" board. While discussing with many people from the community on how to open the governance of the open source project, and how to involve more contributors, new needs have been identified. This article is about quick wins, upcoming developments, and about the general spirit behind this work.
 
 ## But, why?
 

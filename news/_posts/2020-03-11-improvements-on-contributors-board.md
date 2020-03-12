@@ -23,7 +23,7 @@ There are many ideas that are currently being tested, or will be soon:
 - Opening a chat platform for contributors (due date on Q1)
 - ... and this is just the tip of the iceberg
 
-But, at the end, the question remains: how can a contributor show their knowledge, their expertise, and their investment in the project to their customers.
+But, in the end, the question remains: how can contributors show their knowledge, their expertise, and their investment in the project to their customers?
 
 This is why it is time to improve the Contributors' board. Let's see what is on the schedule already.
 

@@ -36,7 +36,7 @@ If you go on [contributors.prestashop.com](http://contributors.prestashop.com/),
 
 - Some contributors like PrestaShop employees are not listed, although they do a huge job on the open source project since the very beginning, and this work is currently hidden
 - It is not possible to see the entire list of contributors, without clicking on "see more", or on page numbers
-- The board lists only contributions to the core; but the PrestaShop software is also made of modules, and of course, there are other very important contributions like specifications, documentation, blog articles, and many more. 
+- The board lists only contributions to the core; but the PrestaShop software is also made of modules and of other valuable contributions such as specifications, documentation, blog posts, and many more. 
 
 So, it became obvious that the first step must be to show the work of everyone involved in the making of the PrestaShop open source software project.
 

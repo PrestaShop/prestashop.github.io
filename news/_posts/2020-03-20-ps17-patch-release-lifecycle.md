@@ -19,11 +19,11 @@ This blog post explains:
 - The decision process for patch releases
 - The Maintainance scope
 
-# Patch release lifecycle
+## Patch release lifecycle
 
 Patch releases are "maintainance" releases: they provide bug fixes and security patches, but do not provide enhancements or new features. They are part of a necessary maintenance process.
 
-## Scope of maintainance
+### Scope of maintainance
 
 When a minor version is released, such as PrestaShop 1.7.7.0, the related branch becomes the latest and maintained branch.
 This means that, when PrestaShop 1.7.7.0 is out :
@@ -33,7 +33,7 @@ This means that, when PrestaShop 1.7.7.0 is out :
 At the moment PrestaShop 1.7.7.0 is out, PrestaShop 1.7.6 reaches its [End Of Life](https://en.wikipedia.org/wiki/End-of-life_(product)), just like all previous minor versions.
 
 
-## When do we decide to release a patch ?
+### When do we decide to release a patch ?
 
 A patch release is scheduled when we are being reported a "trigger bug":
 - A major bug in maintained branch
@@ -47,7 +47,7 @@ If minor or trivial regressions are reported for PrestaShop 1.7.6, they are sche
 
 From the moment a "trigger bug" is reported, we start a 6 weeks long timer. We consider that a patch release must be delivered within these 6 weeks.
 
-## What happens in six weeks
+### What happens in six weeks
 
 From the moment the "trigger bug" is reported, we register into the dedicated Kanban (today it means the [1.7.6. Kanban board](https://github.com/PrestaShop/PrestaShop/projects/4)) the bugs to be fixed in the patch release, whether they are trivial, minor or major.
 
@@ -70,7 +70,7 @@ However this rule is actually dictated by the availability of our resources. Ver
 
 If one day our team grows, we might be able to provide patch releases on more versions, like two or three of them, or provide [Long Term Support](https://en.wikipedia.org/wiki/Long-term_support) releases. Until then we will keep the current rule.
 
-## Six weeks is a long time: if a major bug is reported, merchants need to wait up to six weeks before being provided a patched version
+### Six weeks is a long time: if a major bug is reported, merchants need to wait up to six weeks before being provided a patched version
 
 Just like previous answer, six weeks is a timeslot that was dictated by the availability of our resources  to deliver quality software regularly rather than a choice.
 

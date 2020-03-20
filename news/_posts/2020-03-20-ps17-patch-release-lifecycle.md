@@ -41,7 +41,7 @@ A patch release is scheduled when we are being reported a "trigger bug":
 
 As of today, since PrestaShop 1.7.7.0 is still not released, the maintained branch is `1.7.6.x`. Latest patch release is PrestaShop 1.7.6.4.
 
-This means that **we will start working on a 1.7.6.5 release if a community contributor or the QA team reports a major regression in PrestaShop 1.7.6.4 or a security issue[2].
+This means that **we will start working on a 1.7.6.5 release if a community contributor or the QA team reports a major regression in PrestaShop 1.7.6.4 or a security issue[2].**
 
 If minor or trivial regressions are reported for PrestaShop 1.7.6, they are scheduled to be fixed in next minor version. We consider that a minor or trivial bug is not important enough to trigger a patch release process which is, as explained below, a costly process for both the PrestaShop company and the PrestaShop community.
 
@@ -62,7 +62,7 @@ If the campaign reports that no bugs are found, we deliver the new patch release
 ## Why maintain only the latest minor version ?
 
 As explained above, we maintain only one minor version.
-When PrestaShop 1.7.7.0 is out, PrestaShop 1.7.6 will be considered [End Of Life](https://en.wikipedia.org/wiki/End-of-life_(product) and not maintained anymore. No more bug fixes for this version, no more patch releases, not even security releases[2].
+When PrestaShop 1.7.7.0 is out, PrestaShop 1.7.6 will be considered [End Of Life](https://en.wikipedia.org/wiki/End-of-life_(product)) and not maintained anymore. No more bug fixes for this version, no more patch releases, not even security releases[2].
 
 This project management rule might be seen as harsh, because it means that if you do not upgrade to PrestaShop 1.7.7.0, you shop will use an outdated and unmaintained version and become possibly vulnerable to newly found security issues.
 
@@ -82,7 +82,9 @@ Each PrestaShop patch release is a costly operation. It involves:
 
 Some other PrestaShop teams also dedicate some time to communicate about the release (marketing team, partnership team ...).
 
-What about releasing a new build ? From the outside it might look "just delivering the ZIP".
+### What is the cost of delivering a patch release ?
+
+From the outside it might look "just delivering the ZIP".
 
 **Actually the release process is a lot more complex than just delivering the ZIP archive to the community.**
 
@@ -103,6 +105,15 @@ Also, **releasing a new version is consuming community time**.
 We have some time thought about delivering patch releases more often (2 weeks ? 4 weeks ?). But increasing the release frequency of PrestaShop would pressure the community as it would require more of their time (accordingly for more quality).
 
 This is why six weeks looks like a good balance between time-to-market and community / company resources cost.
+
+## Further topics
+
+After having read this article, you may be asking yourself multiple questions:
+
+- What about next major release? When will it happen?
+- What exactly involves this release process which is so costly ?
+
+As this blog post is already long, we will cover these questions in another post soon. If you have questions you would like to add to this list, please write a comment, and we will do our best to answer it in this next post!
 
 [1]: If a massive vulnerability is found, we might outlaw this rule and deliver patch releases for previous versions, but this would be only done for critical vulnerabilities.
 [2]: In case of 'regular' security vulnerabilities we will follow this process. However if a critical vulnerability was found on older, unmaintained versions, we might break this rule and patch these older versions as we also care about the community still using these old versions.

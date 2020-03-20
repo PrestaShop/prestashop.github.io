@@ -12,114 +12,116 @@ tags:
 ---
 
 
-The journey of the release of PrestaShop 1.7.7.0 release has started. This moment is a nice opportunity to explain fully the PrestaShop minor releases lifecycle.
+The journey of the release of PrestaShop 1.7.7.0 has started. This moment is a nice opportunity to explain PrestaShop's minor release lifecycle.
 
-# The journey begins: Kanban and scope
+## The journey begins: Kanban and scope
 
-Each minor version is defined by a feature scope, and this scope is defined as a number of github issues that we put into a [Kanban](https://help.github.com/en/github/managing-your-work-on-github/about-project-boards) (see [1.7.7 Kanban](https://github.com/PrestaShop/PrestaShop/projects/7)). How these issues are picked or sorted is the responsibility of the Product Team which spends a lot of time gathering feedback about all PrestaShop users to make sure the next minor version addresses the most important matters and needs.
+Each minor version is defined by a feature scope, which is defined by a number of GitHub issues that we put in a version [Kanban](https://help.github.com/en/github/managing-your-work-on-github/about-project-boards) (see [1.7.7 Kanban](https://github.com/PrestaShop/PrestaShop/projects/7)). How these issues are picked or sorted is the responsibility of the Product Team, which spends a lot of time gathering feedback from the PrestaShop community to make sure the next minor version addresses the most important needs.
 
 For example 1.7.7.0 scope contained, but not only:
+
 - Compatibility with php 7.3
 - Migration and rework of Back-office Order pages
 - Advanced currencies management
 
 Although it is very hard to estimate the size of this scope, we try to size it in order for the development phase to last 4 months[2].
 
-When this scope is completed - i.e all github issues have reached the "Done" column of the Kanban - we trigger the [Feature Freeze](https://en.wikipedia.org/wiki/Freeze_(software_engineering)).
+Once this scope has been is completed – i.e all issues have reached the "Done" column of the Kanban – the project reaches the [Feature Freeze](https://en.wikipedia.org/wiki/Freeze_(software_engineering)) stage.
 
-We however accept that some issues remain in the Kanban, outside of "Done" column, only if they are bugs, no features. This is a Feature Freeze, not a Bug Freeze.
+During this phase, no new items can be added to the version's scope, unless they are bugs related to code changes performed during the development of this version – called _regressions_. However, this is a _Feature Freeze_, not a _Code Freeze_, so some older bugs may be added to the scope if it is considered opportune to fix them quickly before the release is out (e.g. security fixes).
 
-# Feature Freeze
+## Feature Freeze
 
-Feature freeze means that we freeze the development of the version and enter a phase of stabilization, which aim is naturally the release some time later.
+Feature freeze means that all features of this version have been done and no new ones may be accepted in its scope. The project enters a phase of _stabilization_ whose aim is to identify and fix all bugs related to changes in the code during the development of this version (called _regressions_) before it's released.
 
-We create a git branch from `develop` branch which will carry the work to be done until the release (for 1.7.7.0, the branch name is `1.7.7.x`). From this moment, only bug fixes can be merged into this branch.
+Once this phase is started, Core maintainers create a git branch from `develop` branch which will carry the work to be done until the release (for 1.7.7.0, the branch name is `1.7.7.x`). From this moment on, only bug fixes can be merged into this branch. Incidentally, this is also the branch where all future patch versions from this minor version will be developed on (hence the `.x` at the end).
 
 Maintainers create an Alpha Build from the `1.7.7.x` branch codebase and deliver it to QA team which starts a huge test campaign. The goal of this campaign is to find and register all regressions[1] of this build.
 
-When the test campaign ends, we populate the Kanban with all found bugs.
-We fix all important regressions as fast as possible because when this point is reached, we can launch the [Beta phase](https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta). Although it depends heavily on the number of found regressions, the team tries to size this phase to last one month.
+As the QA team verifies the build, they will populate the Kanban with all the bugs they find.
+All important regressions must be fixed quickly. Although it depends heavily on the number of regressions found, this phase should last about one month. Once all major bugs have been fixed, the [Beta phase](https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta) can be launched.
 
 For PrestaShop 1.7.7.0, QA team is currently finishing the test campaign.
 
-# Beta period
+## Public Beta period
 
-When the branch reaches a point of maturity, which means only minor or trivial issues remain to be fixed, developers team create a Beta Build using the `1.7.7.x` branch codebase.
+When the branch reaches a point of maturity, which means only minor or trivial issues remain to be fixed, maintainers can create a Beta build using the `1.7.7.x` branch codebase.
 
-This Beta build is provided to anyone and we open a one-month long Beta period where you should test the beta and give your feedbacks, as this is crucial for your business.
+This Beta build is released publicly. During the month following this release, the community is **very strongly encouraged to test it** and give their feedback quickly: the sooner a problem is identified, the sooner it will be fixed. Remember that experts agree that the cost of fixing a bug grows exponentially with time – it is much cheaper to spend time now to ensure everything works well before the final release is out than to discover a bug in production later and lose business while a patch is prepared.
 
 During this one month, we continue testing and fixing the 1.7.7.x (following the stabilization goal) but we know that we can only test and imagine a limited amount of usecases. The community however knows better than us all the possible ways to use PrestaShop to build a business.
 
-So **you can help us** making this release a better and more stable release by testing this Beta build.
+So **you can help** make this release better and more stable by testing it during the Beta phase.
 
-What does it mean, "to test a Beta build" ? We do not expect you to go in all pages and click on all buttons !
-What we are interested in is your standard usage of the shop.
+What does it mean to test a Beta build? We don't expect you to go in all pages and click on all buttons!
+Instead, explore _your own_ use cases:
 
-- If you use PrestaShop webservices for system integration, please run your integration on this beta build
-- If you build 1.7 modules or themes, please test them on this beta build
-- If you know very well some of the modified/improved/reworked Back-office pages, please give the new behaviors a try
-- If you customize some parts of the Shop, please test how your customizations behave on this new version
-- If you are hosting shops or providing maintenance services to merchants, you could import the data of one or two typical shops on a pre-production server and check the performance and the behavior of the beta build; you can also check that the update process is working as expected, depending on your favorite method
+- If you use PrestaShop web services API for integration with other systems, make sure they work as expected
+- If you build 1.7 modules or themes, test them on the new version
+- If you know very well some of the modified/improved/reworked Back-office pages, please give them a try
+- If you customized some parts of the shop, make sure they work well in the new version
+- If you are hosting shops or providing maintenance services to merchants, import the data of one or two typical shops on a pre-production server and check the performance and the behavior of this version; you can also check that the update process is working as expected, depending on your favorite method
 
-For example if you are a payment module developer, just installing your module on this Beta software, processing one payment and telling us that everything is running as expected is already a great feedback !
+For example, if you are a payment module developer, just installing your module on this Beta software, processing one payment and telling us that everything is running as expected is already a great feedback!
 
-If however you find suspicious behaviors, you can
+If however you find a problem, you can
  - [Report this as a bug on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read [how to report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
  - Submit a bug fix by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
 
-# Release Candidate
+## Release Candidate
 
-When Beta period ends, we consider that all known regressions for this release are now registered into the Kanban. So the aim is clear: fix it all and we can ship.
+When Beta period ends, we consider that all the remaining regressions for this release are registered in the Kanban. So the aim is clear: fix them all, then ship.
 
-We fix the remaining regressions (or merge the fixes submitted by the community) and maintainers deliver a Release Candidate Build using the `1.7.7.x` branch codebase. This will be the Release Candidate 1 also known as RC1.
+Once all regressions have been fixed, maintainers deliver a Release Candidate Build using the `1.7.7.x` branch codebase. This will be the Release Candidate 1 (also known as RC1).
 
-This Build is provided to everyone, and we then start the **timer**. We wait for one week. During this week we continue testing and exploring the Build, trying to find anything that would not have been detected earlier and the community should do the same.
+This Build is extensively re-tested by the QA, then provided to everyone. Once released, the timer starts. We wait for one week. During this week we continue testing and exploring the Build, trying to find anything that would not have been detected earlier, and the community should do the same.
 
-By the end of this week, if no new regression has been reported, the RC1 becomes the final Release and **PrestaShop 1.7.7.0 is out !**
+By the end of the week, if no new regression has been reported, the RC1 is rebranded and becomes the final release. **PrestaShop 1.7.7.0 is out!**
 
-... However, I dont think it ever happened than RC1 was flawless.
-
-Most of the time, some more regressions will be reported. When a new regression is reported, we fix it and we reset the timer. So there is a RC2, and if more regressions are reported, there is a RC3... until no new regressions are reported.
+Most of the time, a couple final regressions will be reported. In that case, the bugs are fixed, an RC2 build is published, and the timer is reset. This cycle repeats until no new regressions are reported within the the defined timeframe.
 
 Finally the latest built Release Candidate becomes the stable PrestaShop 1.7.7.0 software release.
 
-# Summary
+## Summary
 
-- The cycle begins when we start working on a minor version scope. When we complete the scope of this version, we trigger the Feature Freeze.
+- The cycle begins when development starts within the scope of a minor version release. When the scope of this version is finished, Feature Freeze is triggered.
 
 Expected duration: 4 months
 
-- Following Feature Freeze an Alpha build is delivered and tested by QA team. QA team will then report all known defects and we will be able to plan then deliver a Beta build.
+- Following Feature Freeze, a nightly build is picked up and tested extensively by QA team, who will then report all known defects. This will allow to plan, then deliver a Beta release.
 
 Expected duration: 1 month
 
-- The Beta Build is open to everybody and we host a one-month long period for both maintainers and community to test the build.
+- The Beta Build is made available to all. Maintainers host a one-month long beta period to allow the community to test the build and submit feedback.
 
 Expected duration: 1 month
 
-- At the end of the Beta period, we fix all the bugs that have been found and maintainers deliver a Release Candidate 1 build.
-After a week, if no bugs have been reported in RC1 build, we deliver the stable release. However if bugs a reported, we fix them and deliver a RC2, and so on until we build a version with no reported issues. This last Release Candidate becomes the stable release.
+- At the end of the Beta period, all regressions are fixed and maintainers deliver a Release Candidate 1 build.
+If bugs are reported, they are fixed in an RC2 build, and so on until a build has no issues reported within the following week. The last Release Candidate becomes the stable release.
 
 Expected duration: from 1 week (if RC1 is flawless) to 1 month, possibly 2 months
 
 ### Calendar
 
-If you sum all expected phases duration, you reach 6 months. This is why we expect to deliver 2 minor releases by year. 2 phases of development, 2 phases of feature freeze and 2 beta periods.
+The global duration for all the process is about 6 months. This is why we expect to deliver at most 2 minor releases per year.
 
-# Some more details
+## Some more details
 
-This lifecycle has been adopted by PrestaShop team in 2018 following issues we had in the release process of PrestaShop 1.7.3 and 1.7.4. It seems to have proven its qualities as PrestaShop 1.7.5 and 1.7.6 releases were a lot more robust. However this comes with a cost: all of this process requires a huge investment from the maintainers, the QA team, the Product team ... and the community ! Also the stable release involves a lot of people of the PrestaShop crew: marketing, partnerships, training, everybody participates in the launch, be it marketing material or communication. Launching a minor version is a huge work for all the PrestaShop company and community, which is why we cannot do it too often.
+This lifecycle has been adopted by the PrestaShop team since 2018, following issues we had in the release process of PrestaShop 1.7.3 and 1.7.4. It seems to have proven its qualities as PrestaShop 1.7.5 and 1.7.6 releases were a lot more robust. However this comes with a cost: all of this process requires a huge investment from the whole ecosystem. Maintainers, the QA team and the Product team on the front line... but also a lot of people across the PrestaShop Company crew: marketing, partnerships, training, everybody participates in the launch, be it marketing material or communication. The community as well: submitting issues and pull requests, testing... but also upgrading their shops, modules and themes. Launching a minor version represents a huge amount work for everyone, which is why it cannot be done too often.
 
-Another sidenote: we are very often asked "when will next minor version be out ?"
-As you can understand from this process, there is no such date. The answer is "Version 1.7.X will be out when we deliver a Release Candidate that nobody reports bug for". This can take one week or three months.
+Another side note: people often ask "when will next minor version be out?"
+As you can understand from this process, there is cannot be a defined date. The answer is "Version 1.7.X will be out when a Release Candidate is delivered with no known regressions". This can take one week or three months.
 
-# Further topics
+However, the teams have been exploring ways of providing better visibility to the community regarding the project's development.
 
-It is possible than, reading this post, you ask yourself multiple questions:
-- What about patch releases ? What is their software lifecycle ?
-- What about next major release ? When will it happen ?
+## Further topics
 
-As this blog post is already long, we will cover these questions in another post soon. If you have questions you would like to add to this list, please write a comment, and we will do our best to answer it in this next post !
+After having read this article, you may be asking yourself multiple questions:
+
+- What about patch releases? What is their software lifecycle?
+- What about next major release? When will it happen?
+
+As this blog post is already long, we will cover these questions in another post soon. If you have questions you would like to add to this list, please write a comment, and we will do our best to answer it in this next post!
 
 
 [1]: A regression is a bug that has been introduced by the latest code changes. For PrestaShop 1.7.7.0, this means a bug whose behavior is observable for 1.7.7.0 but was not observable in previous versions.

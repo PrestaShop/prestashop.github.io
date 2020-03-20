@@ -36,6 +36,8 @@ Feature freeze means that all features of this version have been done and no new
 
 Once this phase is started, Core maintainers create a git branch from `develop` branch which will carry the work to be done until the release (for 1.7.7.0, the branch name is `1.7.7.x`). From this moment on, only bug fixes can be merged into this branch. Incidentally, this is also the branch where all future patch versions from this minor version will be developed on (hence the `.x` at the end).
 
+Also when feature freeze is reached for `1.7.7.x` branch, it means than the next minor release (1.7.8) development phase starts on `develop` branch ! A minor version development actually starts (albeit slowly) precisely when the previous version enters feature freeze.
+
 Maintainers create an Alpha Build from the `1.7.7.x` branch codebase and deliver it to QA team which starts a huge test campaign. The goal of this campaign is to find and register all regressions[2] of this build.
 
 As the QA team verifies the build, they will populate the Kanban with all the bugs they find.

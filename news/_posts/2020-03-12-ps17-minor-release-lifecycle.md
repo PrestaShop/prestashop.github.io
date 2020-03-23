@@ -67,6 +67,7 @@ Instead, explore _your own_ use cases:
 For example, if you are a payment module developer, just installing your module on this Beta software, processing one payment and telling us that everything is running as expected is already a great feedback!
 
 If however you find a problem, you can
+
  - [Report this as a bug on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read [how to report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
  - Submit a bug fix by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
 

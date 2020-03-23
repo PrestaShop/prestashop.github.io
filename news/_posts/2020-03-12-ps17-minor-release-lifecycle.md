@@ -16,7 +16,7 @@ The journey of the release of PrestaShop 1.7.7.0 has started. This moment is a n
 
 ## The journey begins: Kanban and scope
 
-Each minor version is defined by a feature scope, which is defined by a number of GitHub issues that we put in a version [Kanban](https://help.github.com/en/github/managing-your-work-on-github/about-project-boards) (see [1.7.7 Kanban](https://github.com/PrestaShop/PrestaShop/projects/7)). How these issues are picked or sorted is the responsibility of the Product Team, which spends a lot of time gathering feedback from the PrestaShop community to make sure the next minor version addresses the most important needs.
+Each minor version is defined by a feature scope, that is, a number of GitHub issues that we put in a version [Kanban](https://help.github.com/en/github/managing-your-work-on-github/about-project-boards) (see [1.7.7 Kanban](https://github.com/PrestaShop/PrestaShop/projects/7)). How these issues are picked or sorted is the responsibility of the Product Team, who spends a lot of time gathering feedback from the PrestaShop community to make sure the next minor version addresses the most important needs.
 
 For example 1.7.7.0 scope contained, but not only:
 
@@ -32,13 +32,13 @@ During this phase, no new items can be added to the version's scope, unless they
 
 ## Feature Freeze
 
-Feature freeze means that all features of this version have been done and no new ones may be accepted in its scope. The project enters a phase of _stabilization_ whose aim is to identify and fix all bugs related to changes in the code during the development of this version (called _regressions_) before it's released.
+Feature freeze means that all features of this version have been done and no new ones may be accepted in its scope. The project enters a phase of _stabilization_ whose aim is to identify and fix all regressions before it's released.
 
-Once this phase is started, Core maintainers create a git branch from `develop` branch which will carry the work to be done until the release (for 1.7.7.0, the branch name is `1.7.7.x`). From this moment on, only bug fixes can be merged into this branch. Incidentally, this is also the branch where all future patch versions from this minor version will be developed on (hence the `.x` at the end).
+Once this phase is started, Core maintainers create a git branch from `develop` branch which will carry the work to be done until the release (for 1.7.7.0, the branch name is `1.7.7.x`). From this moment on, only bug fixes can be merged into this branch. Incidentally, this is also the branch where all future patch versions for this minor version will be developed on (hence the `.x` at the end).
 
-Also when feature freeze is reached for `1.7.7.x` branch, it means than the next minor release (1.7.8) development phase starts on `develop` branch ! A minor version development actually starts (albeit slowly) precisely when the previous version enters feature freeze.
+Also, since stabilization is performed in a separate branch (`1.7.7.x` in our example), development for the next minor release (1.7.8) can start on the `develop` branch! This means that the development of any given minor version development actually starts (albeit slowly) precisely the moment the previous version enters feature freeze.
 
-Maintainers create an Alpha Build from the `1.7.7.x` branch codebase and deliver it to QA team which starts a huge test campaign. The goal of this campaign is to find and register all regressions[2] of this build.
+The QA team picks up the latest [nightly build](https://nightly.prestashop.com/) and starts a huge test campaign. The goal of this campaign is to find and register all regressions of this build.
 
 As the QA team verifies the build, they will populate the Kanban with all the bugs they find.
 All important regressions must be fixed quickly. Although it depends heavily on the number of regressions found, this phase should last about one month. Once all major bugs have been fixed, the [Beta phase](https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta) can be launched.
@@ -112,7 +112,7 @@ The global duration for all the process is about 6 months. This is why we expect
 This lifecycle has been adopted by the PrestaShop team since 2018, following issues we had in the release process of PrestaShop 1.7.3 and 1.7.4. It seems to have proven its qualities as PrestaShop 1.7.5 and 1.7.6 releases were a lot more robust. However this comes with a cost: all of this process requires a huge investment from the whole ecosystem. Maintainers, the QA team and the Product team on the front line... but also a lot of people across the PrestaShop Company crew: marketing, partnerships, training, everybody participates in the launch, be it marketing material or communication. The community as well: submitting issues and pull requests, testing... but also upgrading their shops, modules and themes. Launching a minor version represents a huge amount work for everyone, which is why it cannot be done too often.
 
 Another side note: people often ask "when will next minor version be out?"
-As you can understand from this process, there is cannot be a defined date. The answer is "Version 1.7.X will be out when a Release Candidate is delivered with no known regressions". This can take one week or three months.
+As you can understand from this process, there cannot be a defined date. The answer is "Version 1.7.X will be out when a Release Candidate is delivered with no known regressions". This can take one week or three months.
 
 However, the teams have been exploring ways of providing better visibility to the community regarding the project's development.
 
@@ -125,5 +125,5 @@ After having read this article, you may be asking yourself multiple questions:
 
 As this blog post is already long, we will cover these questions in another post soon. If you have questions you would like to add to this list, please write a comment, and we will do our best to answer it in this next post!
 
-[1]: For 1.7.7 development phase, we unfortunately failed to stick to the schedule and we are multiple months late.
+[1]: For 1.7.7 development phase, we unfortunately failed to stick to the schedule and we are several months late.
 [2]: A regression is a bug that has been introduced by the latest code changes. For PrestaShop 1.7.7.0, this means a bug whose behavior is observable for 1.7.7.0 but was not observable in previous versions.

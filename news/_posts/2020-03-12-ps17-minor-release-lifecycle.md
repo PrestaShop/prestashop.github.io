@@ -110,12 +110,17 @@ The global duration for all the process is about 6 months. This is why we expect
 
 ## Some more details
 
-This lifecycle has been adopted by the PrestaShop team since 2018, following issues we had in the release process of PrestaShop 1.7.3 and 1.7.4. It seems to have proven its qualities as PrestaShop 1.7.5 and 1.7.6 releases were a lot more robust. However this comes with a cost: all of this process requires a huge investment from the whole ecosystem. Maintainers, the QA team and the Product team on the front line... but also a lot of people across the PrestaShop Company crew: marketing, partnerships, training, everybody participates in the launch, be it marketing material or communication. The community as well: submitting issues and pull requests, testing... but also upgrading their shops, modules and themes. Launching a minor version represents a huge amount work for everyone, which is why it cannot be done too often.
+This lifecycle has been adopted by the PrestaShop team since 2018, following issues we had in the release process of PrestaShop 1.7.3 and 1.7.4. It seems to have proven its qualities as PrestaShop 1.7.5 and 1.7.6 releases were a lot more robust. However this comes with a cost: all of this process requires a huge investment from the whole ecosystem.
+
+Maintainers, the QA team and the Product team are of course on the front line... but also a lot of people across the PrestaShop Company crew participate: marketing, partnerships, training, everybody participates in the launch, be it marketing material or communication.
+
+The community participates as well: submitting issues and pull requests, testing... but also upgrading their shops, modules and themes. Launching a minor version represents a huge amount work for everyone, which is why it cannot be done too often.
 
 Another side note: people often ask "when will next minor version be out?"
+
 As you can understand from this process, there cannot be a defined date. The answer is "Version 1.7.X will be out when a Release Candidate is delivered with no known regressions". This can take one week or three months.
 
-However, the teams have been exploring ways of providing better visibility to the community regarding the project's development.
+However, to improve this topic, the teams have been exploring ways of providing better visibility to the community regarding the project's development.
 
 ## Further topics
 
@@ -124,7 +129,7 @@ After having read this article, you may be asking yourself multiple questions:
 - What about patch releases? What is their software lifecycle?
 - What about next major release? When will it happen?
 
-As this blog post is already long, we will cover these questions in another post soon. If you have questions you would like to add to this list, please write a comment, and we will do our best to answer it in this next post!
+As this blog post is already long, we will cover these questions in another post soon. If you have questions you would like to add to this list, please write a comment, and we will do our best to answer it in another post!
 
 [1]: For 1.7.7 development phase, we unfortunately failed to stick to the schedule and we are several months late.
 [2]: A regression is a bug that has been introduced by the latest code changes. For PrestaShop 1.7.7.0, this means a bug whose behavior is observable for 1.7.7.0 but was not observable in previous versions.

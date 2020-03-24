@@ -24,15 +24,15 @@ For example 1.7.7.0 scope contained, but not only:
 - Migration and rework of Back-office Order pages
 - Advanced currencies management
 
-Although it is very hard to estimate the size of this scope, we try to size it in order for the development phase to last 4 months[1].
+Although it is very hard to estimate the size of this scope, we try to size it in order for the development phase to last 4 months([1](#glossary)).
 
 Once this scope has been is completed – i.e all issues have reached the "Done" column of the Kanban – the project reaches the [Feature Freeze](https://en.wikipedia.org/wiki/Freeze_(software_engineering)) stage.
 
-During this phase, no new items can be added to the version's scope, unless they are bugs related to code changes performed during the development of this version – called _regressions_. However, this is a _Feature Freeze_, not a _Code Freeze_, so some older bugs may be added to the scope if it is considered opportune to fix them quickly before the release is out (e.g. security fixes).
+During this phase, no new items can be added to the version's scope, unless they are bugs related to code changes performed during the development of this version – called _regressions_([2](#glossary)). However, this is a _Feature Freeze_, not a _Code Freeze_, so some older bugs may be added to the scope if it is considered opportune to fix them quickly before the release is out (e.g. security fixes).
 
 ## Feature Freeze
 
-Feature freeze means that all features of this version have been done and no new ones may be accepted in its scope. The project enters a phase of _stabilization_ whose aim is to identify and fix all regressions[2] before it's released.
+Feature freeze means that all features of this version have been done and no new ones may be accepted in its scope. The project enters a phase of _stabilization_ whose aim is to identify and fix all regressions([2](#glossary)) before it's released.
 
 Once this phase is started, Core maintainers create a git branch from `develop` branch which will carry the work to be done until the release (for 1.7.7.0, the branch name is `1.7.7.x`). From this moment on, only bug fixes can be merged into this branch. Incidentally, this is also the branch where all future patch versions for this minor version will be developed on (hence the `.x` at the end).
 
@@ -131,5 +131,9 @@ After having read this article, you may be asking yourself multiple questions:
 
 As this blog post is already long, we will cover these questions in another post soon. If you have questions you would like to add to this list, please write a comment, and we will do our best to answer it in another post!
 
-[1]: For 1.7.7 development phase, we unfortunately failed to stick to the schedule and we are several months late.
-[2]: A regression is a bug that has been introduced by the latest code changes. For PrestaShop 1.7.7.0, this means a bug whose behavior is observable for 1.7.7.0 but was not observable in previous versions.
+
+#### Glossary
+
+1: For 1.7.7 development phase, we unfortunately failed to stick to the schedule and we are several months late.
+
+2: A regression is a bug that has been introduced by the latest code changes. For PrestaShop 1.7.7.0, this means a bug whose behavior is observable for 1.7.7.0 but was not observable in previous versions.

@@ -165,7 +165,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 * [#7](https://github.com/PrestaShop/ps_crossselling/pull/7): Cross selling products not displayed on displayShoppingCartFooter hook. Thank you [@Nukium](https://github.com/Nukium)
 
 
-### statslive
+### Visitors online
 * [#8](https://github.com/PrestaShop/statslive/pull/8): Release 2.1.0, by [@PierreRambaud](https://github.com/PierreRambaud)
 
 

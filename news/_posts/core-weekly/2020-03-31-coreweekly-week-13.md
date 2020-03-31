@@ -115,7 +115,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 
 
 ### Changes in developer documentation
-* [#495](https://github.com/PrestaShop/docs/pull/495): Change node version as we no support 12.x LTS, by [@NeOMakinG](https://github.com/NeOMakinG)
+* [#495](https://github.com/PrestaShop/docs/pull/495): Change node version as we now support 12.x LTS, by [@NeOMakinG](https://github.com/NeOMakinG)
 * [#494](https://github.com/PrestaShop/docs/pull/494): Fix typo mistake. Thank you [@gadnis](https://github.com/gadnis)
 
 

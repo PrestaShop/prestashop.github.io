@@ -169,7 +169,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 * [#8](https://github.com/PrestaShop/statslive/pull/8): Release 2.1.0, by [@PierreRambaud](https://github.com/PierreRambaud)
 
 
-### psgdpr
+### PSGDPR
 * [#76](https://github.com/PrestaShop/psgdpr/pull/76): Use customerpersonaldata in translations only. Thank you [@pablopolyte](https://github.com/pablopolyte)
 * [#71](https://github.com/PrestaShop/psgdpr/pull/71): Fix long2ip() parameter type. Thank you [@davidglezz](https://github.com/davidglezz)
 

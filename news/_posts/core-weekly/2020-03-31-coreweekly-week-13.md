@@ -161,7 +161,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 * [#79](https://github.com/PrestaShop/prestashop-ui-kit/pull/79): Refactor yes/no toggle component, by [@NeOMakinG](https://github.com/NeOMakinG)
 
 
-### ps_crossselling
+### Cross-selling
 * [#7](https://github.com/PrestaShop/ps_crossselling/pull/7): Cross selling products not displayed on displayShoppingCartFooter hook. Thank you [@Nukium](https://github.com/Nukium)
 
 

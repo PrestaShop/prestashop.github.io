@@ -119,7 +119,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 * [#494](https://github.com/PrestaShop/docs/pull/494): Fix typo mistake. Thank you [@gadnis](https://github.com/gadnis)
 
 
-### open-source
+### The PrestaShop open source project
 * [#30](https://github.com/PrestaShop/open-source/pull/30): Update channels.md, by [@ttoine](https://github.com/ttoine)
 
 

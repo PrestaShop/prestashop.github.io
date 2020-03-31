@@ -131,7 +131,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 * [#154](https://github.com/PrestaShop/ps_facetedsearch/pull/154): Sort products: InStock, available with qty 0, OutOfStock. Thank you [@gadnis](https://github.com/gadnis)
 
 
-### ps_livetranslation
+### Live translation
 * [#5](https://github.com/PrestaShop/ps_livetranslation/pull/5): Remove trailing space in wording, by [@matthieu-rolland](https://github.com/matthieu-rolland)
 
 

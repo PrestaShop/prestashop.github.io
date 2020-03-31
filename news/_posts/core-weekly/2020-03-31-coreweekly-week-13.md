@@ -147,7 +147,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 * [#51](https://github.com/PrestaShop/ps_emailsubscription/pull/51): Do not send voucher when customer signs up if he did not register for newsletter , by [@matthieu-rolland](https://github.com/matthieu-rolland)
 
 
-### ps_themecusto
+### Theme customization
 * [#23](https://github.com/PrestaShop/ps_themecusto/pull/23): Bump version 1.1.1, by [@jolelievre](https://github.com/jolelievre)
 * [#22](https://github.com/PrestaShop/ps_themecusto/pull/22): Update references of strings in translations, by [@Quetzacoalt91](https://github.com/Quetzacoalt91)
 

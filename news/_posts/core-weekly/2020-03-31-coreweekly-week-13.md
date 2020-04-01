@@ -49,7 +49,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 * [#18244](https://github.com/PrestaShop/PrestaShop/pull/18244): Merge 1.7.7.x into develop - 20/03/2020, by [@matks](https://github.com/matks)
 
 
-## Code changes in the '1.7.7.x' branch
+## Code changes in the '1.7.7.x' branch (for v1.7.7.0)
 
 
 ### Core

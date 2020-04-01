@@ -13,7 +13,9 @@ tags:
 This edition of the Core Weekly report highlights changes in PrestaShop's core codebase from Monday 23rd to Sunday 29th of March 2020.
 
 ![Core Weekly banner](/assets/images/2018/12/banner-core-weekly.jpg)
+## General Messages
 
+Last week, new versions of Faceted Search, Contact Info and Stats Live have been released. Don't forget to update them!
 
 ## A quick update about PrestaShop's GitHub issues and pull requests:
 

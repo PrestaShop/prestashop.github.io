@@ -95,7 +95,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 * [#17965](https://github.com/PrestaShop/PrestaShop/pull/17965): Add HTML IDs and classes to View Customer BO page, by [@matks](https://github.com/matks)
 
 
-## Code changes in the '1.7.6.x' branch
+## Code changes in the '1.7.6.x' branch (for v1.7.6.5)
 
 
 ### Back office

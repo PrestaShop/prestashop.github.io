@@ -95,3 +95,5 @@ We also are working on other ideas to bring more people in the maintainer team a
 
 [1]: At the time of publication of this article, there was only two: PrettyCI and TravisCI.
 [2]: This used to be done by a 3rd party service known as PrettyCI but it has [shut down](https://prettyci.com/goodbye).
+
+Note: the original article has been edited on Friday 3rd of April 2020 to remove PrettyCI and replace it in the content by new solutions.

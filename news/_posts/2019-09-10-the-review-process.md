@@ -20,9 +20,9 @@ When you submit a new Pull Request to the project repository [https://github.com
 
 ### Continuous Integration
 
-We have set up three[1] great tools on the project that help us verify the quality of contributions.
+We have set up three[(1)](#glossary) great tools on the project that help us verify the quality of contributions.
 
-The first tool is a [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) [GitHub Action](https://github.com/features/actions). This tool[2] will look at your Pull Request and check whether the php syntax and code-style is correct. If not, it will block the PR from being merged and tell you what is wrong.
+The first tool is a [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) [GitHub Action](https://github.com/features/actions). This tool[(2)](#glossary) will look at your Pull Request and check whether the php syntax and code-style is correct. If not, it will block the PR from being merged and tell you what is wrong.
 
 It might appear trivial, but having a unified code-style on the project actually helps a lot. It is a lot easier to work on a big codebase like PrestaShop if all code is written following the same conventions: snake_case or camelCase, how to write the phpDoc, when to use white spaces ... it makes the code look like if it was written by a single developer. Just like reading a book with two different styles in it, having a codebase with different styles is making it harder to navigate. A unified code-style also makes the pull requests easier to review!
 
@@ -93,7 +93,10 @@ A downside of this long journey and the level of commitment it requires from bot
 
 We also are working on other ideas to bring more people in the maintainer team and to be able to review/merge everything, so we hope to get better in the following months.
 
-[1]: At the time of publication of this article, there was only two: PrettyCI and TravisCI.
-[2]: This used to be done by a 3rd party service known as PrettyCI but it has [shut down](https://prettyci.com/goodbye).
+#### Glossary
+
+1: At the time of publication of this article, there was only two: PrettyCI and TravisCI.
+
+2: This used to be done by a 3rd party service known as PrettyCI but it has [shut down](https://prettyci.com/goodbye).
 
 Note: the original article has been edited on Friday 3rd of April 2020 to remove PrettyCI and replace it in the content by new solutions.

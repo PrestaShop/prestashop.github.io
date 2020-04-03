@@ -20,23 +20,23 @@ When you submit a new Pull Request to the project repository [https://github.com
 
 ### Continuous Integration
 
-We have set up two great tools on the project that help us verify the quality of contributions.
+We have set up three[(1)](#glossary) great tools on the project that help us verify the quality of contributions.
 
-The first tool is [PrettyCI](https://prettyci.com/). This tool will look at your Pull Request and check whether the code-style is correct. If not, it will block the PR from being merged and tell you what is wrong.
+The first tool is a [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) [GitHub Action](https://github.com/features/actions). This tool[(2)](#glossary) will look at your Pull Request and check whether the php syntax and code-style is correct. If not, it will block the PR from being merged and tell you what is wrong.
 
 It might appear trivial, but having a unified code-style on the project actually helps a lot. It is a lot easier to work on a big codebase like PrestaShop if all code is written following the same conventions: snake_case or camelCase, how to write the phpDoc, when to use white spaces ... it makes the code look like if it was written by a single developer. Just like reading a book with two different styles in it, having a codebase with different styles is making it harder to navigate. A unified code-style also makes the pull requests easier to review!
 
-If PrettyCI states that your pull request has issues, you need to fix the issues by looking at PrettyCI output to understand what needs to be fixed.
+If the Github Action states that your pull request has issues, you need to fix the issues by looking at the Github Action output to understand what needs to be fixed.
 
-The second tool is [Travis](http://travis-ci.org/). Travis is a Continous Integration system that will look at the Pull Request and run several checks, be it code-style checkers, format checkers or automated tests, and provide us the result in the Pull Request. If something is wrong it will block the PR from being merged. This is a standard approach to ensure that new contributions in a codebase do not break existing features and behaviors.
+The second tool is a [ESLint](https://eslint.org/) [GitHub Action](https://github.com/features/actions). This one checks whether the Javascript syntax and code-style is correct. Likewise, it will block the PR from being merged if there is a syntax or code-style issue.
+
+The third tool is [Travis](http://travis-ci.org/). Travis is a Continous Integration system that will look at the Pull Request and run several checks, be it code-style checkers, format checkers or automated tests, and provide us the result in the Pull Request. If something is wrong it will block the PR from being merged. This is a standard approach to ensure that new contributions in a codebase do not break existing features and behaviors.
 
 If Travis states that your pull request has issues, you need to fix the issues by looking at Travis output to understand what needs to be fixed.
 
 These tools are executed automatically for every Pull Request, so we know that every contribution has been checked. This is a great asset to help us ensure the quality of the project.
 
-In addition, we have also recently activated the new [Github Actions](https://github.com/features/actions) on the `develop` branch, which now benefits from an additional php 7.2 syntax compliancy check.
-
-![CI tools on github](/assets/images/2019/09/CI-github-tools.png)
+![CI tools on github](/assets/images/2019/09/CI-github-tools-2.png)
 
 ### Prestonbot
 
@@ -92,3 +92,11 @@ As you can see, the process between the submission of Pull Request and its merge
 A downside of this long journey and the level of commitment it requires from both the reviewers and the authors is that some Pull Requests require a very long time to be reviewed. Also, we are actually not a big team. As of September of 2019, there are only 6 Core maintainers available to review more than 400 Pull Requests... this is why PrestaShop is currently hiring!
 
 We also are working on other ideas to bring more people in the maintainer team and to be able to review/merge everything, so we hope to get better in the following months.
+
+#### Glossary
+
+1: At the time of publication of this article, there was only two: PrettyCI and TravisCI.
+
+2: This used to be done by a 3rd party service known as PrettyCI but it has [shut down](https://prettyci.com/goodbye).
+
+Note: the original article has been edited on Friday 3rd of April 2020 to remove PrettyCI and replace it in the content by new solutions.

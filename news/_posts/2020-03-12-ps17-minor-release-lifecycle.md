@@ -6,7 +6,6 @@ date:   2020-03-24 14:00:00
 authors: [ MathieuFerment ]
 icon: icon-code
 tags:
- - releases
  - 1.7
  - beta
 ---

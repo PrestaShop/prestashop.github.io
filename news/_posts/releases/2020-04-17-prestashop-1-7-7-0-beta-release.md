@@ -1,0 +1,133 @@
+---
+layout: post
+title:  "PrestaShop 1.7.7.0 Beta Is Ready To Be Tested!"
+subtitle: "You really should download it and test it"
+date:   2020-04-17 12:00:00
+authors: [ PrestaShop ]
+image: /assets/images/2020/04/1.7.7_beta_banner.jpg
+icon: icon-leaf
+tags:
+ - 1.7.7.x
+ - version
+ - beta
+ - minor
+ - releases
+---
+
+Go test the first Beta version of PrestaShop 1.7.7.0!
+
+![Prestashop 1.7.7.0 BETA Release](/assets/images/2020/04/1.7.7_beta_banner.jpg)
+
+After more than one year in the making, we are really thrilled to announce that we are releasing the 1.7.7.0 beta. This version is bigger than the 1.7.6.0 with XX merged pull requests, against XX for the 1.7.6.0, and we are still a month away from the final version. 
+
+The community was really engaged with more than 110 external contributors.
+This version includes new features, improvements, bug fixes and cleaner interfaces. We covered essential topics such as order management. By the way, you will enjoy more efficiency in daily tasks with the [full redesign and new features of order pages](). And also more stability with the upgraded compatibility to PHP 7.3 and more flexibility with new hooks.
+ 
+This beta release is essential for you to start testing the upcoming next PrestaShop version before the release of the stable version in more or less a month. We strongly recommend checking that all your modules and themes are still working, otherwise you need to update them or open an issue. You must download, install and test this new version of PrestaShop and give your feedback quickly. Remember [the article about minor release lifecycle](https://build.prestashop.com/news/ps17-minor-release-lifecycle/): the sooner a problem is identified, the sooner it will be fixed. 
+ 
+If you find regressions compared to the 1.7.6, please create an issue on [Github](https://github.com/PrestaShop/PrestaShop/issues/new?template=bug_report.md) to make it stable more quickly.
+ 
+**Remember, this beta version is pre-release software. Do not use it in your production shop!**
+
+
+## What’s new ?
+
+### New features & improvements
+
+- The orders pages have been migrated to symfony, redesigned and new features have been added to avoid back and forth between orders and improve efficiency.
+For more details, read [the article]() about all the new features of the order pages.
+
+-  Fuzzy search: Improve search mechanism, allow mistakes in search word. Developed by a community member, the great [Lathanao](https://github.com/Lathanao), with the help of the core team, the fuzzy search feature implements the Levenshtein algorithm to improve the PrestaShop’s native search functionality by taking into account misspelling or error inputs. Read more [here](https://build.prestashop.com/news/introduction-to-the-fuzzy-search) ! 
+
+- Currency management: Add new official and non official currencies to your store and customize their display per language as desired 
+
+![Customize currencies symbol and format](/assets/images/2020/04/Currencies-customize_symbol_and_format.png)
+
+![Currencies format by language](/assets/images/2020/04/Currencies-format_by_language.png)
+
+- The field Manufacturer Part Number is now available for product management. It's used to identify a specific product of a given manufacturer. It will improve indexing and searching, and also have a positive effect on SEO.
+
+- An option has been added In Shop parameters > General to choose to enable or disable suppliers in front-office, regardless of brands. There used to be only one generic option, which could be problematic for merchants. They are now separated, to suit all merchants’ needs.
+
+- Error page in the Back office: If an unexpected error occurs in the back office when running in production mode, you are now presented with a useful error page instead of a blank page, this way you have more information to understand what is happening.
+
+- It is now possible to translate email contents in the Back Office, when using the new Email theme feature introduced in 1.7.6 and available in Design > Email theme 
+
+- A lot of [international improvements](https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) have been made. New languages have been added to PrestaShop and its installer, localization packs have been updated to keep PrestaShop up-to-date to offer accurate international data for all businesses.
+
+
+### Improved core modules
+
+Some modules have been improved with bug fixes for more robustness and new features for more productivity :
+
+- Theme customization: Now available for product & category pages (in addition to the home page), you can easily configure and customize your product and categories’ pages theme and main native modules.
+
+- Block reassurance: Now available on all pages (above or below the header and / or the footer) in addition to product pages and during the checkout. You can customize the color of the icon, add a description and a link. With this module you build the confidence of your visitors and thus improve your conversion rate.
+
+
+### Notable fixes
+
+More than [160 bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aclosed+label%3Abug+milestone%3A1.7.7.0+-label%3ARegression+) have been fixed for the 1.7.7 (vs 110 for the 1.7.6.0), including [10 highly expected bug fixes](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aclosed+label%3ATopwatchers+label%3Afixed+milestone%3A1.7.7.0), [5 front-office notable fixes](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3AFO+label%3Amust-have+label%3Afixed+milestone%3A1.7.7.0+-label%3Atopwatchers+) and [5 back-office notable fixes](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3ABO+label%3Amust-have+label%3Afixed+milestone%3A1.7.7.0+-label%3Atopwatchers+-label%3Aregression)
+
+
+### Notable technical improvements
+
+- **Updated PHP support.** Following [our announcement last year](https://build.prestashop.com/news/announcing-end-of-support-for-obsolete-php-versions/), PrestaShop 1.7.7 introduces support for PHP  7.3 while dropping support for PHP versions earlier than 7.1.3.
+
+- **Support for emojis.** All database tables are now encoded in utf8bm4 by default, enabling support for emojis everywhere 
+
+- **Updated jQuery to 3.4.1 everywhere.** Thanks to [jquery migrate](https://github.com/jquery/jquery-migrate), we have been able to upgrade jQuery to the latest version in Back Office as well as Classic & Core theme, without introducing backwards incompatible changes.
+- **Automatic form rendering.** Thanks to the newly updated Twig form theme, back office forms are now much easier to render. This allows extensions to [add form fields anywhere in the form](https://devdocs.prestashop.com/1.7/modules/sample_modules/grid-and-identifiable-object-form-hooks-usage/#adding-new-form-field-to-customer-form) without need to override the form’s template. (Note: this is being implemented progressively, not all forms support it at the time of writing)
+
+- **New CQRS Debugger in the Symfony debug bar.** With this new feature you can find out which commands and queries have been used to build the page you’re seeing. If you need to customize its behavior, you can [decorate or override it](https://devdocs.prestashop.com/1.7/modules/concepts/services/#override-an-existing-symfony-service) from a module.
+
+- **Improved tab management.** Tabs now support symfony routes (no longer need a fake legacy controller), automatic detection in modules, enable/disable
+
+
+### Symfony migration
+
+13 new pages migrated to Symfony including the order pages, resulting in reaching almost 55% of the Back office migration
+- Orders > Orders: Listing, view & edit, add
+- Orders > Credit Slips 
+- Orders > Shopping Carts: View 
+- Catalog > Monitoring
+- Catalog > Brand & Suppliers: Listing, view, add & edit
+- Catalog > Files: Listing, add & edit
+- Customer Service > Order Messages > Listing, add & edit 
+- Customers > Addresses > Listing, add & edit
+
+
+### Core changes
+
+[Notable changes in 1.7.7](https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.7/) have been noted in this documentation page. Please, read it carefully, especially if you develop modules for PrestaShop 1.7.
+
+
+## Download
+
+You can download PrestaShop 1.7.7.0 beta here:  
+
+[Download PrestaShop 1.7.7.0 beta now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
+{: .text-center}
+
+
+## How to help test 1.7.7
+
+Your feedback on this beta is essential, the regressions you find right now are as many bugs less on the final version and less patches versions. It’s also fewer problems on your (or your customer’s) online store. 
+
+You must:
+
+- Install it and test that there is no regression compared to the 1.7.6 version
+- If you develop modules or themes, test them on this version
+- Test the auto-upgrade plugin
+- [Report regressions on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read how to [report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
+- Fix regressions by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
+
+
+## Known issues 
+
+- []() 
+
+
+If everything is working well, feel free to comment on this article and share on social networks, we also need this kind of feedback! ;-)
+
+

@@ -33,42 +33,42 @@ This means that, when PrestaShop 1.7.7.0 is out :
 At the moment PrestaShop 1.7.7.0 is out, PrestaShop 1.7.6 reaches its [End Of Life](https://en.wikipedia.org/wiki/End-of-life_(product)), just like all previous minor versions.
 
 
-### When do we decide to release a patch ?
+### When is it decided to release a patch ?
 
-A patch release is scheduled when we are being reported a "trigger bug":
+A patch release is scheduled when "trigger bug" is reported:
 - A major bug in maintained branch
 - A security issue in maintained branch
 
 As of today, since PrestaShop 1.7.7.0 is still not released, the maintained branch is `1.7.6.x`. Latest patch release is PrestaShop 1.7.6.4.
 
-This means that **we will start working on a 1.7.6.5 release if a community contributor or the QA team reports a major regression in PrestaShop 1.7.6.4 or a security issue[2].**
+This means that **work on 1.7.6.5 release will start if a community contributor or the QA team reports a major regression in PrestaShop 1.7.6.4 or a security issue[2].**
 
-If minor or trivial regressions are reported for PrestaShop 1.7.6, they are scheduled to be fixed in next minor version. We consider that a minor or trivial bug is not important enough to trigger a patch release process which is, as explained below, a costly process for both the PrestaShop company and the PrestaShop community.
+If minor or trivial regressions are reported for PrestaShop 1.7.6, they are scheduled to be fixed in next minor version. Minor or trivial bugs are considered not important enough to trigger a patch release process which is, as explained below, a costly process for both the PrestaShop company and the PrestaShop community.
 
-From the moment a "trigger bug" is reported, we start a 6 weeks long timer. We consider that a patch release must be delivered within these 6 weeks.
+From the moment a "trigger bug" is reported, there start a 6 weeks long timer. Our process states that a patch release must be delivered within these 6 weeks.
 
 ### What happens in six weeks
 
-From the moment the "trigger bug" is reported, we register into the dedicated Kanban (today it means the [1.7.6. Kanban board](https://github.com/PrestaShop/PrestaShop/projects/4)) the bugs to be fixed in the patch release, whether they are trivial, minor or major.
+From the moment the "trigger bug" is reported, Product Team register into the dedicated Kanban (today it means the [1.7.6. Kanban board](https://github.com/PrestaShop/PrestaShop/projects/4)) the bugs to be fixed in the patch release, whether they are trivial, minor or major.
 
-Then we start working on fixing them (or merging the bug fixes submitted by the community).
+Then maintainers start working on fixing them (or merging the bug fixes submitted by the community).
 
-Obviously, security issues are not processed the same way: when a vulnerability is reported, we explore it and fix it in a hidden manner in order to make sure hackers unaware of the vulnerability do not hear about it. We use [GitHub Security Advisories](https://help.github.com/en/github/managing-security-vulnerabilities/about-github-security-advisories) and temporary private forks to collaborate on the fix. We only publish the advisory and the fix on the day of the release[2], following [responsible disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure) principle.
+Obviously, security issues are not processed the same way: when a vulnerability is reported, it is being explored and it is being fixed in a hidden manner in order to make sure hackers unaware of the vulnerability do not hear about it. We use [GitHub Security Advisories](https://help.github.com/en/github/managing-security-vulnerabilities/about-github-security-advisories) and temporary private forks to collaborate on the fix. Maintainers only publish the advisory and the fix on the day of the release[2], following [responsible disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure) principle.
 
-When all of the bug fixes for the target patch version are merged, and we pressure ourselves to make it happen before the end of the 6 weeks, maintainers deliver a Release Candidate to QA team for the standard patch release test campaign. This campaign aims to find whether this patch introduces new bugs.
+When all of the bug fixes for the target patch version are merged, and all teams pressure themselves to make it happen before the end of the 6 weeks, maintainers deliver a Release Candidate to QA team for the standard patch release test campaign. This campaign aims to find whether this patch introduces new bugs.
 
-If the campaign reports that no bugs are found, we deliver the new patch release.
+If the campaign reports that no bugs are found, the new patch release is delivered.
 
 ## Why maintain only the latest minor version ?
 
-As explained above, we maintain only one minor version.
+As explained above, PrestaShop only maintains one minor version.
 When PrestaShop 1.7.7.0 is out, PrestaShop 1.7.6 will be considered [End Of Life](https://en.wikipedia.org/wiki/End-of-life_(product)) and not maintained anymore. No more bug fixes for this version, no more patch releases, not even security releases[2].
 
 This project management rule might be seen as harsh, because it means that if you do not upgrade to PrestaShop 1.7.7.0, you shop will use an outdated and unmaintained version and become possibly vulnerable to newly found security issues.
 
-However this rule is actually dictated by the availability of our resources. Very often, we are working both on a patch release and the next minor release. For example 2 weeks ago we were working both on 1.7.6.4 patch release development and 1.7.7.0 Feature Freeze. The scope of PrestaShop project is very wide and outlengths current team resources, so we need to focus our efforts on the most important components.
+However this rule is actually dictated by the availability of our resources. Very often, maintainers are working both on a patch release and the next minor release. For example 2 weeks ago work was happening on both 1.7.6.4 patch release development and 1.7.7.0 Feature Freeze. The scope of PrestaShop project is very wide and outlengths current team resources, so maintainers need to focus their efforts on the most important components.
 
-If one day our team grows, we might be able to provide patch releases on more versions, like two or three of them, or provide [Long Term Support](https://en.wikipedia.org/wiki/Long-term_support) releases. Until then we will keep the current rule.
+If one day our team grows, we might be able to provide patch releases on more versions, like two or three of them, or provide [Long Term Support](https://en.wikipedia.org/wiki/Long-term_support) releases. Until then the current rule will be applied.
 
 ### Six weeks is a long time: if a major bug is reported, merchants need to wait up to six weeks before being provided a patched version
 
@@ -94,7 +94,7 @@ Multiple systems in PrestaShop rely on external services needing proper configur
 - Localization packs must be updated for new version
 - Autoupgrade module and process must be updated for new version
 - A release note and a Changelog must be generated, reviewed and published
-- We also provide [docker images](https://github.com/PrestaShop/docker) for PrestaShop which need to be updated for new version
+- maintainers also provide [docker images](https://github.com/PrestaShop/docker) for PrestaShop which need to be updated for new version
 
 Also, **releasing a new version is consuming community time**.
 
@@ -102,7 +102,7 @@ Also, **releasing a new version is consuming community time**.
 - Module and theme developers need to check that their modules is compatible with latest version
 - Host providers and SaaS providers using PrestaShop must update their offers and configurations
 
-We have some time thought about delivering patch releases more often (2 weeks ? 4 weeks ?). But increasing the release frequency of PrestaShop would pressure the community as it would require more of their time (accordingly for more quality).
+Delivering patch releases more often is an idea regularly being discussed in all teams (2 weeks ? 4 weeks ?). But increasing the release frequency of PrestaShop would pressure the community as it would require more of their time (accordingly for more quality).
 
 This is why six weeks looks like a good balance between time-to-market and community / company resources cost.
 
@@ -113,7 +113,7 @@ After having read this article, you may be asking yourself multiple questions:
 - What about next major release? When will it happen?
 - What exactly involves this release process which is so costly ?
 
-As this blog post is already long, we will cover these questions in another post soon. If you have questions you would like to add to this list, please write a comment, and we will do our best to answer it in this next post!
+As this blog post is already long, these questions might be covered in another post soon. If you have questions you would like to add to this list, please write a comment, and we will do our best to answer it in this next post!
 
-[1]: If a massive vulnerability is found, we might outlaw this rule and deliver patch releases for previous versions, but this would be only done for critical vulnerabilities.
-[2]: In case of 'regular' security vulnerabilities we will follow this process. However if a critical vulnerability was found on older, unmaintained versions, we might break this rule and patch these older versions as we also care about the community still using these old versions.
+[1]: If a massive vulnerability is found, this rule might be bypassed and a patch releases delivered for previous versions, but this would be only done for critical vulnerabilities.
+[2]: In case of 'regular' security vulnerabilities this process will be applied. However if a critical vulnerability was found on older, unmaintained versions, maintainersmight break this rule and patch these older versions as we also care about the community still using these old versions.

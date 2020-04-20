@@ -66,13 +66,18 @@ When PrestaShop 1.7.7.0 is out, PrestaShop 1.7.6 will be considered [End Of Life
 
 This project management rule might be seen as harsh, because it means that if you do not upgrade to PrestaShop 1.7.7.0, you shop will use an outdated and unmaintained version and become possibly vulnerable to newly found security issues.
 
-However this rule is actually dictated by the availability of our resources. Very often, maintainers are working both on a patch release and the next minor release. For example 2 weeks ago work was happening on both 1.7.6.4 patch release development and 1.7.7.0 Feature Freeze. The scope of PrestaShop project is very wide and outlengths current team resources, so maintainers need to focus their efforts on the most important components.
+However this rule is actually dictated by the current very wide scope of the PrestaShop project. Very often, maintainers are working both on a patch release and the next minor release. For example 2 weeks ago work was happening on both 1.7.6.4 patch release development and 1.7.7.0 Feature Freeze. The scope of PrestaShop project is very wide which is why maintainers need to focus their efforts on the most important components.
 
-If one day our team grows, we might be able to provide patch releases on more versions, like two or three of them, or provide [Long Term Support](https://en.wikipedia.org/wiki/Long-term_support) releases. Until then the current rule will be applied.
+We are working to make the maintainers team grow (and be ablet to handle a wider scope) with not only new PrestaShop employees, [but also with external people](https://github.com/PrestaShop/open-source/issues/11).
+When the team grows, it could be able to provide patch releases on more versions, like two or three of them, or provide [Long Term Support](https://en.wikipedia.org/wiki/Long-term_support) releases.
 
 ### Six weeks is a long time: if a major bug is reported, merchants need to wait up to six weeks before being provided a patched version
 
-Just like previous answer, six weeks is a timeslot that was dictated by the availability of our resources  to deliver quality software regularly rather than a choice.
+This six weeks timeslot is actually a balanced answer to a complex issue : the benefits of releasing often versus the cost of a release.
+
+**There are 3 sets of costs to a release.**
+
+The first is the cost of building it.
 
 Each PrestaShop patch release is a costly operation. It involves:
 - Maintainers time to create, validate and merge the bug fixes
@@ -82,9 +87,9 @@ Each PrestaShop patch release is a costly operation. It involves:
 
 Some other PrestaShop teams also dedicate some time to communicate about the release (marketing team, partnership team ...).
 
-### What is the cost of delivering a patch release ?
+The second set of costs is the cost of delivering it.
 
-From the outside it might look "just delivering the ZIP".
+From the outside it might look "just delivering the ZIP archive".
 
 **Actually the release process is a lot more complex than just delivering the ZIP archive to the community.**
 
@@ -96,7 +101,7 @@ Multiple systems in PrestaShop rely on external services needing proper configur
 - A release note and a Changelog must be generated, reviewed and published
 - maintainers also provide [docker images](https://github.com/PrestaShop/docker) for PrestaShop which need to be updated for new version
 
-Also, **releasing a new version is consuming community time**.
+Finally, **releasing a new version is consuming community time**.
 
 - Developers, webmasters, agencies must update the shops they host and maintain
 - Module and theme developers need to check that their modules is compatible with latest version
@@ -104,7 +109,7 @@ Also, **releasing a new version is consuming community time**.
 
 Delivering patch releases more often is an idea regularly being discussed in all teams (2 weeks ? 4 weeks ?). But increasing the release frequency of PrestaShop would pressure the community as it would require more of their time (accordingly for more quality).
 
-This is why six weeks looks like a good balance between time-to-market and community / company resources cost.
+This is why six weeks looks like a good balance between time-to-market, users needs and community / project resources cost.
 
 ## Further topics
 

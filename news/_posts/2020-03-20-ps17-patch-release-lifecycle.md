@@ -12,7 +12,7 @@ tags:
 ---
 
 
-Following previous post, here is more explanations about software lifecycle at PrestaShop, focusing on patch releases and the release process.
+Following previous post about [Minor Release Lifecycle](https://build.prestashop.com/news/ps17-minor-release-lifecycle/), here is more explanations about software lifecycle at PrestaShop, focusing on patch releases and the release process.
 
 This blog post explains:
 - The detailed lifecycle for PrestaShop patch releases
@@ -30,7 +30,7 @@ This means that, when PrestaShop 1.7.7.0 is out :
 - There will be no more PrestaShop 1.7.6 patch releases, for either bug or security issues[1]
 - There might be, if necessary, patch releases for PrestaShop 1.7.7. (which means: 1.7.7.1, 1.7.7.2 and so on ...) until next minor release is delivered (PrestaShop 1.7.8)
 
-At the moment PrestaShop 1.7.7.0 is out, PrestaShop 1.7.6 reaches its [End Of Life](https://en.wikipedia.org/wiki/End-of-life_(product)), just like all previous minor versions.
+When PrestaShop 1.7.7.0 will be released, PrestaShop 1.7.6 will reach its [End Of Life](https://en.wikipedia.org/wiki/End-of-life_(product)), just like all previous minor versions.
 
 
 ### When is it decided to release a patch ?
@@ -49,7 +49,7 @@ From the moment a "trigger bug" is reported, there start a 6 weeks long timer. O
 
 ### What happens in six weeks
 
-From the moment the "trigger bug" is reported, Product Team register into the dedicated Kanban (today it means the [1.7.6. Kanban board](https://github.com/PrestaShop/PrestaShop/projects/4)) the bugs to be fixed in the patch release, whether they are trivial, minor or major.
+From the moment the 6 weeks timer is started, Product Team register into the dedicated Kanban (today it means the [1.7.6. Kanban board](https://github.com/PrestaShop/PrestaShop/projects/4)) the bugs to be fixed in the patch release, whether they are trivial, minor or major.
 
 Then maintainers start working on fixing them (or merging the bug fixes submitted by the community).
 

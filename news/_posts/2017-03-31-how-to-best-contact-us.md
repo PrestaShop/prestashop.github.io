@@ -160,7 +160,7 @@ Then, create your report for the right context. The Core team will review your r
 
 Thank you for your contribution and support to the PrestaShop community!
 
-We also have [a Gitter channel](https://gitter.im/PrestaShop/General) for you to join, where you can chat with other contributors, and where the team sometimes hangs out :)
+We also have [a Slack chat](https://github.com/PrestaShop/open-source/blob/master/slack/readme.md) for you to join, where you can chat with other contributors, and where the team sometimes hangs out :)
 
 
 #### Talking to the Addons team about bought modules/themes

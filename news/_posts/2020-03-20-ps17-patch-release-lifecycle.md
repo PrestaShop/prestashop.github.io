@@ -70,7 +70,7 @@ However this rule is actually dictated by the current very wide scope of the Pre
 We are working to make the maintainers team grow (and be able to handle a wider scope) with not only new PrestaShop employees, [but also with external people](https://github.com/PrestaShop/open-source/issues/11).
 When the team grows, it could be able to provide patch releases on more versions, like two or three of them, or provide [Long Term Support](https://en.wikipedia.org/wiki/Long-term_support) releases.
 
-### Six weeks is a long time: if a major bug is reported, merchants need to wait up to six weeks before being provided a patched version
+### Why six weeks, and not eight or two ?
 
 This six weeks timeslot is actually a balanced answer to a complex issue : the benefits of releasing often versus the cost of a release.
 

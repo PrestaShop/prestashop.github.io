@@ -2,7 +2,7 @@
 layout: post
 title: "PrestaShop 1.7 patch release lifecycle"
 subtitle: "The journey of a patch release of PS 1.7, step by step"
-date:   2020-03-20 16:00:00
+date:   2020-04-28 10:00:00
 authors: [ MathieuFerment ]
 icon: icon-code
 tags:

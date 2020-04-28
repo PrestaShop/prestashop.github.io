@@ -54,7 +54,7 @@ Then maintainers start working on fixing them (or merging the bug fixes submitte
 
 Obviously, security issues are not processed the same way: when a vulnerability is reported, it is being explored and it is being fixed in a hidden manner in order to make sure hackers unaware of the vulnerability do not hear about it. We use [GitHub Security Advisories](https://help.github.com/en/github/managing-security-vulnerabilities/about-github-security-advisories) and temporary private forks to collaborate on the fix. Maintainers only publish the advisory and the fix on the day of the release[(2)](#glossary), following [responsible disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure) principle.
 
-When all of the bug fixes for the target patch version are merged, and all teams pressure themselves to make it happen before the end of the 6 weeks, maintainers deliver a Release Candidate to QA team for the standard patch release test campaign. This campaign aims to find whether this patch introduces new bugs.
+When all bug fixes for the target patch version are merged, and all teams pressure themselves to make it happen before the end of the 6 weeks, maintainers deliver a Release Candidate to QA team for the standard patch release test campaign. This campaign aims to find whether this patch introduces new bugs.
 
 If the campaign reports that no bugs are found, the new patch release is delivered!
 
@@ -121,6 +121,6 @@ As this blog post is already long, these questions might be covered in another p
 
 #### Glossary
 
-1: If a massive vulnerability is found, this rule might be bypassed and a patch releases delivered for previous versions, but this would be only done for critical vulnerabilities.
+1: If a massive vulnerability is found, this rule might be bypassed and patch releases delivered for previous versions, but this would be only done for critical vulnerabilities.
 
-2: In case of 'regular' security vulnerabilities this process will be applied. However if a critical vulnerability was found on older, unmaintained versions, maintainersmight break this rule and patch these older versions as we also care about the community still using these old versions.
+2: In case of 'regular' security vulnerabilities this process will be applied. However if a critical vulnerability was found on older, unmaintained versions, maintainers might break this rule and patch these older versions as we also care about the community still using these old versions.

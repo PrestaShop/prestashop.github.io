@@ -33,7 +33,7 @@ When PrestaShop 1.7.7.0 will be released, PrestaShop 1.7.6 will reach its [End O
 
 ### When is it decided to release a patch ?
 
-A patch release is scheduled when "trigger bug" is reported:
+A patch release is scheduled when a "trigger bug" is reported:
 - A major bug in maintained branch
 - A security issue in maintained branch
 
@@ -51,11 +51,11 @@ From the moment the 6 weeks timer is started, Product Team register into the ded
 
 Then maintainers start working on fixing them (or merging the bug fixes submitted by the community).
 
-Obviously, security issues are not processed the same way: when a vulnerability is reported, it is being explored and it is being fixed in a hidden manner in order to make sure hackers unaware of the vulnerability do not hear about it. We use [GitHub Security Advisories](https://help.github.com/en/github/managing-security-vulnerabilities/about-github-security-advisories) and temporary private forks to collaborate on the fix. Maintainers only publish the advisory and the fix on the day of the release[(2)](#glossary), following [responsible disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure) principle.
+Obviously, security issues are not processed the same way: when a vulnerability is reported, it is being explored and it is being fixed in a hidden manner in order to make sure hackers unaware of the vulnerability do not hear about it. We use [GitHub Security Advisories](https://help.github.com/en/github/managing-security-vulnerabilities/about-github-security-advisories) and temporary private forks to collaborate on the fix. Maintainers only publish the advisory and the fix on the day of the release, following [responsible disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure) principle.
 
-When all bug fixes for the target patch version are merged, and all teams pressure themselves to make it happen before the end of the 6 weeks, maintainers deliver a Release Candidate to QA team for the standard patch release test campaign. This campaign aims to find whether this patch introduces new bugs.
+When all bug fixes for the target patch version are merged, and all teams pressure themselves to make it happen before the end of the 6 weeks, maintainers deliver a Release Candidate to QA team for the **standard patch release test campaign**. This test campaign aims to find whether this patch introduces new bugs.
 
-If the campaign reports that no bugs are found, the new patch release is delivered!
+If the campaign reports that no bugs are found, the new patch release is validated by QA team and can be delivered!
 
 ## Why maintain only the latest minor version ?
 
@@ -80,7 +80,7 @@ The first is the cost of building it.
 Each PrestaShop patch release is a costly operation. It involves:
 - Maintainers time to create, validate and merge the bug fixes
 - QA team time to validate bug fixes
-- Maintainers time to deliver the builds and trigger the release process (see below)
+- Maintainers time to deliver the build and carry out the release process (see below)
 - QA team time to run the patch test campaign
 
 Some other PrestaShop teams also dedicate some time to communicate about the release (marketing team, partnership team ...).
@@ -97,7 +97,7 @@ Multiple systems in PrestaShop rely on external services needing proper configur
 - Localization packs must be updated for new version
 - Autoupgrade module and process must be updated for new version
 - A release note and a Changelog must be generated, reviewed and published
-- maintainers also provide [docker images](https://github.com/PrestaShop/docker) for PrestaShop which need to be updated for new version
+- Maintainers also provide [docker images](https://github.com/PrestaShop/docker) for PrestaShop which need to be updated for new version
 
 Finally, **releasing a new version is consuming community time**.
 

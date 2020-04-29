@@ -7,7 +7,7 @@ authors: [ MathieuFerment ]
 icon: icon-code
 tags:
  - 1.7
- - beta
+ - patch
 ---
 
 

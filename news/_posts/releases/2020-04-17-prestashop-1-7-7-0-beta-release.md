@@ -82,7 +82,7 @@ More than [160 bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissu
 
 - **New CQRS Debugger in the Symfony debug bar.** With this new feature you can find out which commands and queries have been used to build the page you’re seeing. If you need to customize its behavior, you can [decorate or override it](https://devdocs.prestashop.com/1.7/modules/concepts/services/#override-an-existing-symfony-service) from a module.
 
-- **Improved tab management.** Tabs now support symfony routes (no longer need a fake legacy controller), automatic detection in modules, enable/disable
+- **Improved tab management.** Tabs now support symfony routes (no longer need a fake legacy controller), automatic detection in modules, enable/disable. When a module is disabled the Tab is now hidden (and when it is re-enabled it is visible again)
 
 
 ### Symfony migration

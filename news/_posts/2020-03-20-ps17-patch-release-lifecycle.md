@@ -62,7 +62,7 @@ If the campaign reports that no bugs are found, the new patch release is validat
 As explained above, PrestaShop only maintains one minor version.
 When PrestaShop 1.7.7.0 is out, PrestaShop 1.7.6 will be considered [End Of Life](https://en.wikipedia.org/wiki/End-of-life_(product)) and not maintained anymore. No more bug fixes for this version, no more patch releases, not even security releases[(2)](#glossary).
 
-This project management rule might be seen as harsh, because it means that if you do not upgrade to PrestaShop 1.7.7.0, you shop will use an outdated and unmaintained version and become possibly vulnerable to newly found security issues.
+This project management rule might be seen as harsh, because it means that if you do not upgrade to PrestaShop 1.7.7.0, your shop will use an outdated and unmaintained version and become possibly vulnerable to newly found security issues.
 
 However this rule is actually dictated by the current very wide scope of the PrestaShop project. Very often, maintainers are working both on a patch release and the next minor release. For example one week ago work was happening on both 1.7.6.5 patch release development and 1.7.7.0 Feature Freeze. The scope of PrestaShop project is very wide which is why maintainers need to focus their efforts on the most important components, so the scope ony contains these two versions.
 

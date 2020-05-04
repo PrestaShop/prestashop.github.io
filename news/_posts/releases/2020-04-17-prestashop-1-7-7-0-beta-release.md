@@ -140,6 +140,7 @@ You must:
 - [BO - Order page - The total is incorrect in the "Add new cart rule" block after editing a product price if you don't refresh the page](https://github.com/PrestaShop/PrestaShop/issues/18844)
 - [BO - Strange behavior in the add new Product page when the employee language is different from the default language](https://github.com/PrestaShop/PrestaShop/issues/18447)
 - [BO - Strange behavior in the add new Product page when the employee language is different from the default language](https://github.com/PrestaShop/PrestaShop/issues/18447)
+- [BO - View order pagination does not display right number of products](https://github.com/PrestaShop/PrestaShop/issues/18959)
 - [FO - The promo value is not correct in the cart summary & checkout summary](https://github.com/PrestaShop/PrestaShop/issues/16842)
 - [FO - checkout - The Shipping cost is incorrect in the cart detail when using a cart rule "Free shipping"](https://github.com/PrestaShop/PrestaShop/issues/18533)
 - [FO - Detail discount is not good in multicurrency context](https://github.com/PrestaShop/PrestaShop/issues/18900)

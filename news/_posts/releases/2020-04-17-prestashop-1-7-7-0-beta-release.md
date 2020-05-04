@@ -137,6 +137,7 @@ You must:
 - [BO - When creating an order, the status selected in the drop-down is canceled instead of payment accepted](https://github.com/PrestaShop/PrestaShop/issues/18831)
 - [FO - The promo value is not correct in the cart summary & checkout summary](https://github.com/PrestaShop/PrestaShop/issues/16842)
 - [FO - checkout - The Shipping cost is incorrect in the cart detail when using a cart rule "Free shipping"](https://github.com/PrestaShop/PrestaShop/issues/18533)
+- [FO - Detail discount is not good in multicurrency context](https://github.com/PrestaShop/PrestaShop/issues/18900)
 
 
 If everything is working well, feel free to comment on this article and share on social networks, we also need this kind of feedback! ;-)

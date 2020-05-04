@@ -126,7 +126,17 @@ You must:
 
 ## Known issues 
 
-- []() 
+- [BO - Customer View page - there is no green alert after editing a voucher](https://github.com/PrestaShop/PrestaShop/issues/18842)
+- [BO - Error when viewing an order with custom product made on secondary shop](https://github.com/PrestaShop/PrestaShop/issues/18913)
+- [BO - Wrong total in order detail page when adding a product with modified price](https://github.com/PrestaShop/PrestaShop/issues/18433)
+- [BO - Wrong total when changing currency after placing the order and adding a product](https://github.com/PrestaShop/PrestaShop/issues/18443)
+- [BO - Can't remove discount added from a cart rule on product selection after adding a product in order](https://github.com/PrestaShop/PrestaShop/issues/18379)
+- [BO - Exception when deleting discount in order view](https://github.com/PrestaShop/PrestaShop/issues/18498)
+- [BO - When creating a category, the simplified URL is not filled automatically when using multilang](https://github.com/PrestaShop/PrestaShop/issues/18763)
+- [BO - Order page - An exception is displayed when adding a product to an old order](https://github.com/PrestaShop/PrestaShop/issues/18568)
+- [BO - When creating an order, the status selected in the drop-down is canceled instead of payment accepted](https://github.com/PrestaShop/PrestaShop/issues/18831)
+- [FO - The promo value is not correct in the cart summary & checkout summary](https://github.com/PrestaShop/PrestaShop/issues/16842)
+- [FO - checkout - The Shipping cost is incorrect in the cart detail when using a cart rule "Free shipping"](https://github.com/PrestaShop/PrestaShop/issues/18533)
 
 
 If everything is working well, feel free to comment on this article and share on social networks, we also need this kind of feedback! ;-)

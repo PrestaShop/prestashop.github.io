@@ -21,10 +21,10 @@ Productboard made two things possible for the team:
 - Having a team interface to centralize all feedback, organize them, define features, prioritize them, and follow their development.
 - Having a public space, where the team is able to publicly present these features and to collect feedback about them. **And that is what this article is about.**
 
-So the team has created this space called [**PrestaShop Feedback**](https://feedback.prestashop.com) where anyone can comment, and vote for the next features in the roadmap, whether you are a merchant, a developer, an agency, a seller on the[Addons Marketplace](http://addons.prestashop.com/),...
+So the team has created this space called [**PrestaShop Feedback**](https://feedback.prestashop.com) where anyone can comment, and vote for the next features in the roadmap, whether you are a merchant, a developer, an agency, a seller on the [Addons Marketplace](http://addons.prestashop.com/),...
 This space is accessible at [feedback.prestashop.com](https://feedback.prestashop.com).
 
-Before explaining how to use the PrestaShop Feedback website in the [second part](#how-to-use-prestashop-feedback), here is some context and information about how product development is done at PrestaShop. We’ll try to keep it short here, feel free to ask the team if you want to learn more about it.
+Before explaining how to use the **PrestaShop Feedback** website in the [second part](#how-to-use-prestashop-feedback), here is some context and information about how product development is done at PrestaShop. We’ll try to keep it short here, feel free to ask the team if you want to learn more about it.
 
 If you just want to learn how to use PrestaShop Feedback, [click here](#how-to-use-prestashop-feedback)
 

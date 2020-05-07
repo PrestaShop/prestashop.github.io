@@ -37,7 +37,7 @@ Its mission is to make sure the software is stable, usable, delivers value to it
 All this requires several people and several skills. Today the Core team is composed of developers, QA engineers, designers and product managers.
 Editing and maintaining a software like PrestaShop means fixing bugs but also adding improvements and new features.
 
-While bug fixing is most of the time handled directly by developers (from the Core team and the community 😉), features design and development are much more complex. Why? Because the goal of any feature is to help users achieve something, behind every feature there should be a user need.
+While bug fixing is most of the time handled directly by developers (from the Core team and the community 😉), features design and development are much more complex. Why? Because the goal of any feature is to help users achieve something, **behind every feature there should be a user need**.
 
 As a team working on a software, when you add a feature you are making the software more complex- more complex to use and more complex to maintain. So, on one hand, you can’t afford to add any useless feature and, on the other hand, you have to make sure what you add is usable.
 And that’s where product managers and designers are needed.
@@ -57,7 +57,7 @@ Currently the Core team counts 9 developers, 5 QA engineers, 2 designers and 5 p
 Everything starts with feedback. Without feedback, without talking with your users, you are blind, lost in the fog.
 
 PrestaShop being an open source project, the team can rely on its tremendous community to gather feedback, identify pain points and discuss many topics.
-Right now, collecting feedback is not difficult, Github is probably the main source, but there are also events such as [ambassadors' meetups](http://ambassadors.prestashop.com/ambassadors) and [PSD](https://events.prestashop.com/), user interviews regularly conducted by the product team and the community [Slack](https://github.com/PrestaShop/open-source/blob/master/slack/readme.md).
+Right now, collecting feedback is not difficult, Github is probably the main source, but there are also events such as [ambassadors' meetups](http://ambassadors.prestashop.com/ambassadors) and [PSD](https://events.prestashop.com/), user interviews regularly conducted by the product team and the [community Slack](https://github.com/PrestaShop/open-source/blob/master/slack/readme.md).
 The team also keeps an eye on what’s happening around in the e-commerce and CMS industries to make sure the software goes in the right direction regarding the market's evolutions and expectations.
 
 Collecting feedback is easy. What is more difficult is to centralize and analyze it in order to identify the users’ needs lying behind.

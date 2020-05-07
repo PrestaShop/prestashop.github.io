@@ -15,7 +15,7 @@ tags:
  - product
 ---
 
-In March 2020, the product team at PrestaShop, in charge of building and prioritizing new features, decided to work with a new tool: [Productboard](https://www.productboard.com/). It helps product managers to create relevant roadmaps by evaluating features and tracking their development.
+In March 2020, the product team at PrestaShop, in charge of building and prioritizing new features, decided to work with a new tool: [Productboard](https://www.productboard.com/gi). It helps product managers to create relevant roadmaps by evaluating features and tracking their development.
 
 Productboard made two things possible for the team:
 - Having a team interface to centralize all feedback, organize them, define features, prioritize them, and follow their development.
@@ -152,7 +152,7 @@ Lists all the features already developed and accessible on the latest branch on 
 #### Launched
 Lists all previously released features.
 
-![PrestaShop Feedback home](assets/images/2020/05/productboard-home.png)
+![PrestaShop Feedback home](/assets/images/2020/05/productboard-home.png)
 
 ### Comment and vote for existing ideas
 When clicking on a card you can see 2 fields at its bottom. One to comment, and one to vote on the feature impact **on you**.
@@ -160,7 +160,7 @@ When clicking on a card you can see 2 fields at its bottom. One to comment, and 
 Voting for ideas is really important to help the team.
 Here is what happens behind the scenes:
 
-![PrestaShop Productboard user score](assets/images/2020/05/productboard-user-score.png)
+![PrestaShop Productboard user score](/assets/images/2020/05/productboard-user-score.png)
 
 When rating the impact of a feature, Productboard adds your vote to a “user score” that the team takes directly into account when evaluating features through its prioritization score.
 The more an idea is voted, the better rank it gets, and the more probability it has to integrate the software.
@@ -180,7 +180,7 @@ In addition to seeing all the features ideas, commenting and voting, you can sub
 
 A “Submit an idea” button is located in the Portal’s top-right corner. Click on it and follow the steps.
 
-![How to sumbit a new idea on PrestaShop Feedback](assets/images/2020/05/productboard-new-idea.gif)
+![How to sumbit a new idea on PrestaShop Feedback](/assets/images/2020/05/productboard-new-idea.gif)
 
 Here again you can indicate the importance of this insight for you.
 

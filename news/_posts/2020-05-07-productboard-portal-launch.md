@@ -197,4 +197,4 @@ Having all this feedback in the same place will make it easier to have a better 
 The team is looking forward to using it with you! Hope you’ll like it!
 
 
-**As always, let the team know what you think about it in the comments section!**
+**As always, let the team knows what you think about it in the comments section!**

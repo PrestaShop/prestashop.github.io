@@ -139,6 +139,8 @@ There are several tabs, each tab corresponding to a step in the development.
 - Ready for the next release
 - Launched
 
+![PrestaShop Feedback home](/assets/images/2020/05/productboard-home.png)
+
 #### Under consideration
 Lists all expressions of needs and some features that are already well structured. At this step rating a card and telling the team why it is important  will help the team prioritize it.
 
@@ -151,7 +153,6 @@ Lists all the features already developed and accessible on the latest branch on 
 #### Launched
 Lists all previously released features.
 
-![PrestaShop Feedback home](/assets/images/2020/05/productboard-home.png)
 
 ### Comment and vote for existing ideas
 When clicking on a card you can see 2 fields at its bottom. One to comment, and one to vote on the feature impact **on you**.

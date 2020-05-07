@@ -155,7 +155,7 @@ Lists all previously released features.
 
 
 ### Comment and vote for existing ideas
-When clicking on a card you can see 2 fields at its bottom. One to comment, and one to vote on the feature impact **on you**.
+When clicking on a card you can see 2 fields at its bottom. One to comment, and one to vote on the feature's impact **on you**.
 
 Voting for ideas is really important to help the team.
 Here is what happens behind the scenes:

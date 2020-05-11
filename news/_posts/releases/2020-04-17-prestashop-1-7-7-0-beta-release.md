@@ -16,7 +16,7 @@ tags:
 
 The first Beta version for PrestaShop 1.7.7.0 is now ready for you to test!
 
-![Prestashop 1.7.7.0 BETA Release](/assets/images/2020/04/1.7.7_beta_banner.jpg)
+![Prestashop 1.7.7.0 BETA Release](/assets/images/2020/05/1.7.7_beta_banner.jpg)
 
 After more than one year in the making, we are really thrilled to announce that we are releasing the 1.7.7.0 beta. This version is even bigger than the previous one with 957 merged pull requests, compared to 600 for 1.7.6.0 (our previous record) – and we are still at least a month away from the final version. 
 
@@ -41,9 +41,9 @@ To get all details and know more about the new features, read our [article]() de
 
 - In order to allow merchants to have all the currencies (local or custom currencies) they need to meet the expectations of every customer, they can now add new official and non official currencies to their store and customize their display per language as desired.
 
-![Customize currencies symbol and format](/assets/images/2020/04/Currencies-customize_symbol_and_format.png)
+![Customize currencies symbol and format](/assets/images/2020/05/Currencies-customize_symbol_and_format.png)
 
-![Currencies format by language](/assets/images/2020/04/Currencies-format_by_language.png)
+![Currencies format by language](/assets/images/2020/05/Currencies-format_by_language.png)
 
 - The field Manufacturer Part Number is now available for product management. It's used to identify a specific product of a given manufacturer. It will improve indexing and searching, and also have a positive effect on SEO.
 

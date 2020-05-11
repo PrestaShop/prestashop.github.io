@@ -14,7 +14,7 @@ tags:
  - releases
 ---
 
-Go test the first Beta version of PrestaShop 1.7.7.0!
+The first Beta version for PrestaShop 1.7.7.0 is now ready for you to test!
 
 ![Prestashop 1.7.7.0 BETA Release](/assets/images/2020/04/1.7.7_beta_banner.jpg)
 
@@ -148,4 +148,3 @@ You must:
 
 
 If everything is working well, feel free to comment on this article and share on social networks, we also need this kind of feedback! ;-)
-

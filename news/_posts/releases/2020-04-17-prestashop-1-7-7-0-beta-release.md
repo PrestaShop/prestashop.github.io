@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PrestaShop 1.7.7.0 Beta Is Ready To Be Tested!"
-subtitle: "You really should download it and test it"
+subtitle: "You can download it and test it"
 date:   2020-04-17 12:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2020/04/1.7.7_beta_banner.jpg

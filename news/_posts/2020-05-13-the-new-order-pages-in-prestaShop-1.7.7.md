@@ -1,9 +1,7 @@
-**Article Projet Rework Order Page**
-
 ---
 layout: post
-title: &quot;The new order pages in PrestaShop 1.7.7&quot;
-subtitle: &quot;Introducing the revamp of order pages&quot;
+title: "The new order pages in PrestaShop 1.7.7"
+subtitle: "Introducing the revamp of order pages"
 date: 2020-05-12 12:00:00
 authors: [PrestaShop]
 icon: icon-leaf
@@ -18,11 +16,11 @@ With the release of the new version 1.7.7, this article has the ambition to deta
 
 We are thrilled to introduce to you the new feature around the order process. But before jumping on the features that await the merchant in the new version, we&#39;d like to share our thinking process.
 
-_First, why rethinking this page in particular?_
+***First, why rethinking this page in particular?***
 
 The page was beginning to be particularly unpleasant to use because of its old visual appearance and its hierarchy of information that led to inefficiency and misunderstanding for our merchants.
 
-_A long process to ensure the full success of the revamp._
+***A long process to ensure the full success of the revamp.***
 
 To have a better understanding of the merchants&#39; pain points, we have interviewed merchants with different sales volume, country and business activity as well as agencies of different sizes. The pain points encountered have then been addressed by the features added in the order list page and order detail page.
 
@@ -36,9 +34,13 @@ To have a better understanding of the merchants&#39; pain points, we have interv
 
 ADD GIF
 
-What is the goal:Allows the merchant to check, prepare and track his order without having to open it. So the merchant won&#39;t have to open the order to check essential information that doesn&#39;t require actions.
+***What is the goal***:
 
-_How it works_: When the user clicks on the icon, it displays the order&#39;s preview below the line selected. The order preview lists the following information: the invoice address, the shipping address, the customer details, the carrier details (and the tracking ID when available) and the products&#39; list. ![](RackMultipart20200512-4-1tjtyoa_html_a1644e9702a7fb4f.png)
+Allows the merchant to check, prepare and track his order without having to open it. So the merchant won&#39;t have to open the order to check essential information that doesn&#39;t require actions.
+
+***How it works***: 
+
+When the user clicks on the icon, it displays the order&#39;s preview below the line selected. The order preview lists the following information: the invoice address, the shipping address, the customer details, the carrier details (and the tracking ID when available) and the products&#39; list. ![](RackMultipart20200512-4-1tjtyoa_html_a1644e9702a7fb4f.png)
 
 The products&#39; list displays on each line the product name, reference, stock location (if available), quantity, tax price and total price for the products. The total price follows the customer group configuration. If the customer group sets the prices with or without tax, it impacts the displayed amount in the total column and adds the related label &quot;tax excluded&quot; or &quot;tax included&quot;.
 
@@ -54,17 +56,23 @@ It allows modules to add new elements on the preview. For more specific needs, t
 
 ADD GIF
 
-_What is the goal:_ It allows the merchant fast management of the order fulfilment.
+***What is the goal***:
 
-_How it works_: When the user clicks then on the status label, it displays a drop-down list with all of the available statuses. By selecting one of the items on the list, the user can update the order status.
+It allows the merchant fast management of the order fulfilment.
+
+***How it works***: 
+
+When the user clicks then on the status label, it displays a drop-down list with all of the available statuses. By selecting one of the items on the list, the user can update the order status.
 
 ![](RackMultipart20200512-4-1tjtyoa_html_a49b921e2c77a3df.png)
 
-- **Statuses&#39; colour**** :** Color according to the order status
+- **Statuses&#39; colour**: Color according to the order status
 
 ADD GIF
 
-_What is the goal_: The colours used by default to contextualize the status is based on a wide range of colours without following any real logic. To bring a structure and meaning to the statuses colours, the statuses are grouped in 4 colours categories:
+***What is the goal***: 
+
+The colours used by default to contextualize the status is based on a wide range of colours without following any real logic. To bring a structure and meaning to the statuses colours, the statuses are grouped in 4 colours categories:
 
 - orders waiting for a customer action as in waiting for a bank check in dark blue
 - orders waiting for a merchant action following an accepted payment in light blue
@@ -73,41 +81,55 @@ _What is the goal_: The colours used by default to contextualize the status is b
 
 The merchants have a concise view of the work remaining to be done.
 
-_How it works_: The statuses colour is set by default. They are still configurable in the Order Setting page.
+***How it works***: 
+
+The statuses colour is set by default. They are still configurable in the Order Setting page.
 
 ![](RackMultipart20200512-4-1tjtyoa_html_de02e45ff887d647.png)
 
 _Order statuses by category_
 
-- **Link to the customer&#39;s profile:** Creates easy access to the customer&#39;s profile by clicking on its name.
+- **Link to the customer's profile**: Creates easy access to the customer&#39;s profile by clicking on its name.
 
-_What is the goal_: Before the merchant used to have to open the order to get access to the customer page. Now, the merchant can do it from the orders listing.
+***What is the goal***: 
 
-_How it works:_ clicking on the customer name opens the customer page in a new tab.
+Before the merchant used to have to open the order to get access to the customer page. Now, the merchant can do it from the orders listing.
+
+***How it works***:
+
+Clicking on the customer name opens the customer page in a new tab.
 
 ADD SCREENSHOT
 
 - **Bulk action redesign**** :** The bulk actions&#39; design and its position were updated to make it more visible and quicker to use.
 
-_What is the goal_: To help the merchants to process multiple orders in 3 clicks.
+***What is the goal***: 
 
-_How it works_: Select several orders, choose the new order status in the pop-in then validate it to update the status on the orders.
+To help the merchants to process multiple orders in 3 clicks.
+
+***How it works***: 
+
+Select several orders, choose the new order status in the pop-in then validate it to update the status on the orders.
 
 ![](RackMultipart20200512-4-1tjtyoa_html_bd7ba585d406209b.png)
 
 _Updates the last 4 orders into payment accepted_
 
-- **Open in new tabs**** :** Open commands in new tabs by mass action to process them as the merchant proceeds.
+- **Open in new tabs**: Open commands in new tabs by mass action to process them as the merchant proceeds.
 
-_What is the goal_: It helps the merchants to open multiple orders in 3 clicks.
+***What is the goal***: 
 
-_How it works_: Choose several orders, select _open in new tabs option_ on bulk action&#39;s option to open them in new tabs.
+It helps the merchants to open multiple orders in 3 clicks.
+
+***How it works***: 
+
+Choose several orders, select _open in new tabs option_ on bulk action&#39;s option to open them in new tabs.
 
 ![](RackMultipart20200512-4-1tjtyoa_html_1c19d10b7b1305f4.png)
 
 _Opens the last 4 orders in new tabs_
 
-1. **For the order details, we have added the following features :**
+### II. **For the order details, we have added the following features :**
 
 **Even if we keep the objective of saving time and productivity, the improvements and features are focused on readability and the position of the information. Indeed, some important information did not have the display corresponding to its importance. For example, the list of products that were at the bottom of the page is now at the top of the page as the first information to be consulted.**
 
@@ -117,23 +139,31 @@ _Opens the last 4 orders in new tabs_
 
 ADD GIF
 
-_What is the goal:_Avoid an endless and unreadable list of products. Pagination provides structure in the products&#39; navigation. Also, the list has been moved to the top of the page to avoid the merchant from scrolling to the bottom of the page to see the products ordered.
+***What is the goal***:
 
-_How it works:_ The pagination of the list starts when there are more than 8 products in the cart. The stock location column is displayed when one of the products has a stock location. Also, It is only displayed at the corresponding pagination.
+Avoid an endless and unreadable list of products. Pagination provides structure in the products&#39; navigation. Also, the list has been moved to the top of the page to avoid the merchant from scrolling to the bottom of the page to see the products ordered.
 
-- **Pack &amp; customized products:** Display the customization of the product on the list and access to the pack content through a pop-in
+***How it works***:
+
+The pagination of the list starts when there are more than 8 products in the cart. The stock location column is displayed when one of the products has a stock location. Also, It is only displayed at the corresponding pagination.
+
+- **Pack & customized products:** Display the customization of the product on the list and access to the pack content through a pop-in
 
 ADD GIF
 
-_What is the goal_: The display of these products are optimized for daily use.
+***What is the goal***: 
 
-_How it works:_ Customized products -Customization files or texts are displayed below the customized product. The files are added in columns on the same line. And the texts are displayed one below the other.
+The display of these products are optimized for daily use.
+
+***How it works***:
+
+Customized products -Customization files or texts are displayed below the customized product. The files are added in columns on the same line. And the texts are displayed one below the other.
 
 ![](RackMultipart20200512-4-1tjtyoa_html_afd3db062cd239da.png)
 
 _Customized on the products list_
 
-Pack of products **-** The &#39;View pack content&quot; link displays the products with the ordered quantity and the available product stock. ![](RackMultipart20200512-4-1tjtyoa_html_651f8ba7fc123d55.png)
+Pack of products - The view pack content link displays the products with the ordered quantity and the available product stock. ![](RackMultipart20200512-4-1tjtyoa_html_651f8ba7fc123d55.png)
 
 _Products of the pack_
 
@@ -141,15 +171,23 @@ _Products of the pack_
 
 ADD GIF
 
-_What is the goal:_The interface follows the standard interface of the messages of our daily devices. The differentiation between private messages only visible by the merchant and sent messages to the customer is now more distinct. This allows a better reading and avoids misunderstandings.
+***What is the goal***:
 
-_How it works:_ At the 5th message between the customer and the merchant a link is displayed for the pop-in. It displays the entire conversation of the order.
+The interface follows the standard interface of the messages of our daily devices. The differentiation between private messages only visible by the merchant and sent messages to the customer is now more distinct. This allows a better reading and avoids misunderstandings.
 
-- **Hook:** The redesign of this page reviews the hierarchy of information and refreshes the user interface with an important impact on the position of the hooks.
+***How it works***: 
 
-_What is the goal:_ The hooks are repositioned in more strategic locations on the page and provide a better user experience.
+At the 5th message between the customer and the merchant a link is displayed for the pop-in. It displays the entire conversation of the order.
 
-_How it works:_ Find [here](https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.7/) the documentation on the hook&#39;s mapping. A new hook grouping the actions of the top of the order page has also been added to replace displayBackOfficeOrderActions which will no longer have the same layout.
+- **Hook**: The redesign of this page reviews the hierarchy of information and refreshes the user interface with an important impact on the position of the hooks.
+
+***What is the goal***: 
+
+The hooks are repositioned in more strategic locations on the page and provide a better user experience.
+
+***How it works***: 
+
+Find [here](https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.7/) the documentation on the hook&#39;s mapping. A new hook grouping the actions of the top of the order page has also been added to replace displayBackOfficeOrderActions which will no longer have the same layout.
 
 ![](RackMultipart20200512-4-1tjtyoa_html_8f1175142829cdb3.jpg)
 

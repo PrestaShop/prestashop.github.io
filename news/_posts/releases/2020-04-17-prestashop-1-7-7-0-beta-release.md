@@ -80,7 +80,7 @@ More than [160 bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissu
 
 - **Automatic form rendering.** Thanks to the newly updated Twig form theme, back office forms are now much easier to render. This allows extensions to [add form fields anywhere in the form](https://devdocs.prestashop.com/1.7/modules/sample_modules/grid-and-identifiable-object-form-hooks-usage/#adding-new-form-field-to-customer-form) without need to override the form’s template. (Note: this is being implemented progressively, not all forms support it at the time of writing)
 
-- **New CQRS Debugger in the Symfony debug bar.** With this new feature you can find out which commands and queries have been used to build the page you’re seeing. If you need to customize its behavior, you can [decorate or override it](https://devdocs.prestashop.com/1.7/modules/concepts/services/#override-an-existing-symfony-service) from a module.
+- **New CQRS Debugger in the Symfony debug bar.** With this [new feature](https://devdocs.prestashop.com/1.7/development/architecture/domain/cqrs/#cqrs-in-debug-toolbar) you can find out which commands and queries have been used to build the page you’re seeing. If you need to customize its behavior, you can [decorate or override it](https://devdocs.prestashop.com/1.7/modules/concepts/services/#override-an-existing-symfony-service) from a module.
 
 - **Improved tab management.** Tabs now support symfony routes (no longer need a fake legacy controller), automatic detection in modules, enable/disable. When a module is disabled the Tab is now hidden (and when it is re-enabled it is visible again)
 

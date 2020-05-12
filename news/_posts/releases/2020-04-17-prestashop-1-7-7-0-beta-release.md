@@ -55,6 +55,8 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 
 - A lot of [international improvements](https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) have been made. New languages have been added to PrestaShop and its installer, localization packs have been updated to keep PrestaShop up-to-date to offer accurate international data for all businesses.
 
+- Support for emojis: All database tables are now encoded in utf8bm4 by default, enabling support for emojis both on front and back-office fields. 
+
 
 ### Improved core modules
 
@@ -73,8 +75,6 @@ More than [160 bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissu
 ### Notable technical improvements
 
 - **Updated PHP support.** Following [our announcement last year](https://build.prestashop.com/news/announcing-end-of-support-for-obsolete-php-versions/), PrestaShop 1.7.7.0 introduces support for PHP 7.3 while dropping support for PHP versions earlier than 7.1.3 for more stability.
-
-- **Support for emojis.** All database tables are now encoded in utf8bm4 by default, enabling support for emojis both on front and back-office. 
 
 - **Updated jQuery to 3.4.1 everywhere.** Thanks to [jquery migrate](https://github.com/jquery/jquery-migrate), we have been able to upgrade jQuery to the latest version in Back Office as well as Classic & Core theme.
 

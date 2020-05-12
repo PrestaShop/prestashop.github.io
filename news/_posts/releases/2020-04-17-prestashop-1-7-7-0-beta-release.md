@@ -62,7 +62,7 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 
 Some modules have been improved with bug fixes for increased robustness and new features for better productivity:
 
-- Theme customization: Now available for product & category pages (in addition to the home page), you can easily configure and customize your product and categories’ pages theme and main native modules.
+- Theme customization: The feature is now available for product & category pages (in addition to the home page). You can easily find, configure and customize your product and categories’ pages theme and main native modules.
 
 - Block reassurance: Now available on all pages (above or below the header and / or the footer) in addition to product pages and during the checkout. You can customize the color of the icon, add a description and a link. With this module you build the confidence of your visitors and thus improve your conversion rate.
 

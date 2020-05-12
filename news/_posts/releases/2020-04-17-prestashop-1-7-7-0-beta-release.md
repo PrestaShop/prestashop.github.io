@@ -58,7 +58,7 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 
 ### Improved core modules
 
-Some modules have been improved with bug fixes for more robustness and new features for more productivity :
+Some modules have been improved with bug fixes for increased robustness and new features for better productivity:
 
 - Theme customization: Now available for product & category pages (in addition to the home page), you can easily configure and customize your product and categories’ pages theme and main native modules.
 

@@ -4,7 +4,7 @@ title:  "PrestaShop 1.7.7.0 Beta Is Ready To Be Tested!"
 subtitle: "You can download it and test it"
 date:   2020-05-13 10:00:00
 authors: [ PrestaShop ]
-image: /assets/images/2020/04/1.7.7_beta_banner.jpg
+image: /assets/images/2020/05/1.7.7_beta_banner.jpg
 icon: icon-leaf
 tags:
  - 1.7.7

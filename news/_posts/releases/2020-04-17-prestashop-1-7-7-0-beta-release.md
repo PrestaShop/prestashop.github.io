@@ -64,7 +64,7 @@ Some modules have been improved with bug fixes for increased robustness and new 
 
 - Theme customization: The feature is now available for product & category pages (in addition to the home page). You can easily find, configure and customize your product and categories’ pages theme and main native modules.
 
-- Block reassurance: Now available on all pages (above or below the header and / or the footer) in addition to product pages and during the checkout. You can customize the color of the icon, add a description and a link. With this module you build the confidence of your visitors and thus improve your conversion rate.
+- Customer reassurance (blockreassurance): Now available on all pages (above or below the header and / or the footer) in addition to product pages and during the checkout. You can customize the color of the icons, add a description and a link. With this module you build the confidence of your visitors and thus improve your conversion rate.
 
 
 ### Notable fixes

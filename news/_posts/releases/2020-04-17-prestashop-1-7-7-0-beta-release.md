@@ -39,7 +39,7 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 
 -  To improve conversion and help our merchants' growth, we've been working on adding an improved search mechanism in front office called "Fuzzy search". Developed by community member [Lathanao](https://github.com/Lathanao) with the help of the core team, this feature implements the Levenshtein algorithm to improve PrestaShop’s native search in front-office by taking into account misspelling or typos. Read more [here](https://build.prestashop.com/news/introduction-to-the-fuzzy-search)! 
 
-- In order to allow merchants to have all the currencies (local or custom currencies) they need to meet the expectations of every customer, they can now add new official and non official currencies to their store and customize their display per language as desired.
+- In order to allow merchants to have all the currencies they need to meet the expectations of every customer, they can now add new official and non official currencies (e.g. local or custom) to their store and customize their display per language as desired.
 
 ![Customize currencies symbol and format](/assets/images/2020/05/Currencies-customize_symbol_and_format.png)
 

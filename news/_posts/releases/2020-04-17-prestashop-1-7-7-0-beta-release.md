@@ -51,7 +51,7 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 
 - Error page in the Back office: If an unexpected error occurs in the back office when running in production mode, you are now presented with a useful error page instead of a blank page, this way you have more information to understand what is happening.
 
-- It is now possible to translate email contents in the Back Office, when using the new Email theme feature introduced in 1.7.6 and available in Design > Email theme. 
+- It is now possible to translate email contents in the Back Office when using the new Email theme feature introduced in 1.7.6 and available in Design > Email theme.
 
 - A lot of [international improvements](https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) have been made. New languages have been added to PrestaShop and its installer, localization packs have been updated to keep PrestaShop up-to-date to offer accurate international data for all businesses.
 

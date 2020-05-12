@@ -35,7 +35,7 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 ### New features & improvements
 
 - The order pages have been redesigned and migrated to Symfony, including several new features to improve efficiency and avoid having to go back and forth between orders.
-To get all details and know more about the new features, read our [article]() dedicated to the order management system full rework.
+  To get all details and know more about the new features, read our [article]() dedicated to the full rework or the order management system.
 
 -  To improve conversion and help our merchants' growth, we've been working on adding an improved search mechanism, allowing mistakes in front-office search words, called "Fuzzy search". Developed by a community member, the great [Lathanao](https://github.com/Lathanao), with the help of the core team, the fuzzy search feature implements the Levenshtein algorithm to improve the PrestaShop’s native search functionality in front-office by taking into account misspelling or error inputs. Read more [here](https://build.prestashop.com/news/introduction-to-the-fuzzy-search) ! 
 

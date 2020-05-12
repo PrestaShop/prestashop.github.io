@@ -30,7 +30,7 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 **Remember, this beta version is pre-release software. Do not use it in your production shop!**
 
 
-## What’s new ?
+## What’s new?
 
 ### New features & improvements
 

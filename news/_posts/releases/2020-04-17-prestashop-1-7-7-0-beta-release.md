@@ -88,6 +88,7 @@ More than [160 bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissu
 ### Symfony migration
 
 15 new pages migrated to Symfony including the order pages, resulting in reaching almost 55% of the Back office migration
+
 - Orders > Orders: Listing, view & edit, add
 - Orders > Credit Slips 
 - Orders > Shopping Carts: View 

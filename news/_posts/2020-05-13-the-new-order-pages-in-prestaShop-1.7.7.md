@@ -108,8 +108,6 @@ Clicking on the customer name opens the customer page in a new tab.
 
 ![Change_order's statuses](/assets/images/2020/05/choose_an_order.png "Change_order's statuses")
 
-_Updates the last 4 orders into payment accepted_
-
 ***What is the goal***: 
 
 To help the merchants to process multiple orders in 3 clicks.
@@ -124,8 +122,6 @@ Select several orders, choose the new order status in the pop-in then validate i
 - **Open in new tabs**: Open commands in new tabs by mass action to process them as the merchant proceeds.
 
 ![Open in new tabs](/assets/images/2020/05/open_in_new_tabs.png "Open in new tabs")
-
-_Opens the last 4 orders in new tabs_
 
 ***What is the goal***: 
 
@@ -196,6 +192,8 @@ At the 5th message between the customer and the merchant a link is displayed for
 
 - **Hook**: The redesign of this page reviews the hierarchy of information and refreshes the user interface with an important impact on the position of the hooks.
 
+![Order hooks mapping](/assets/images/2020/05/order_details_hooks.jpg "Order hooks mapping")
+
 ***What is the goal***: 
 
 The hooks are repositioned in more strategic locations on the page and provide a better user experience.
@@ -203,8 +201,6 @@ The hooks are repositioned in more strategic locations on the page and provide a
 ***How it works***: 
 
 Find [here](https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.7/) the documentation on the hook&#39;s mapping. A new hook grouping the actions of the top of the order page has also been added to replace displayBackOfficeOrderActions which will no longer have the same layout.
-
-![Order hooks mapping](/assets/images/2020/05/order_details_hooks.jpg "Order hooks mapping")
 
 The detailed changes can be found on the following pull requests on github [16144](https://github.com/PrestaShop/PrestaShop/pull/16144) and [17734](https://github.com/PrestaShop/PrestaShop/pull/17734).
 

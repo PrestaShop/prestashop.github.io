@@ -19,7 +19,7 @@ We are thrilled to introduce to you the new features around the order process. B
 
 ### First, why rethinking this page in particular?
 
-The page was beginning to be particularly unpleasant to use because of its old visual appearance and its hierarchy of information that led to inefficiency and misunderstanding for our merchants.
+The pages were becoming particularly unpleasant to use because of its old visual appearance and its hierarchy of information that led to inefficiency and misunderstanding for our merchants.
 
 ### A long process to ensure the full success of the revamp.
 

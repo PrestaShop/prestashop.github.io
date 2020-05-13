@@ -151,7 +151,7 @@ The pagination of the list starts when there are more than 8 products in the car
 
 
 &nbsp;
-- **Pack & customized products:** Display the customization of the product on the list and access to the pack content through a pop-in.
+- **Pack & customized products:** Display the product's customization on the list and gives access to a pack content through a pop-in.
 
 
 ***What is the goal***: 

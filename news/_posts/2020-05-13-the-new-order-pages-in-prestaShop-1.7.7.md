@@ -25,7 +25,7 @@ The pages were becoming particularly unpleasant to use because of its old visual
 
 To have a better understanding of the merchants' pain points, we have interviewed merchants with different sales volume, country and business activity as well as agencies of different sizes. The pain points encountered have then been addressed by the features added in the order list page (I) and order detail page (II).
 
-### Now, let's present these changes.
+**Now, let's present these changes.**
 
 ## I.  Concerning the page listing the orders, we have added the following features
 

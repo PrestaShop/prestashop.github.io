@@ -61,7 +61,7 @@ It allows modules to add new elements on the preview. For more specific needs, t
 
 ***What is the goal***:
 
-Making the order fulfillment less time consuming for the merchants ```
+Making the order fulfillment less time consuming for the merchants
 
 ***How it works***: 
 
@@ -69,20 +69,20 @@ When the user clicks then on the status label, it displays a drop-down list with
 
 
 &nbsp;
-- **Statuses' colour**: Color according to the order status
+- **Statuses' color**: Color according to the order status
 
 ![Order statuses by category](/assets/images/2020/05/order_status_labelsx2.png "Order statuses by category")
 
 ***What is the goal***: 
 
-The colours used by default to contextualize the status is based on a wide range of colours without following any real logic. To bring a structure and meaning to the statuses colours, the statuses are grouped in 4 colours categories:
+The colors used by default to contextualize the status is based on a wide range of colors without following any real logic. To bring a structure and meaning to the statuses colors, the statuses are grouped in 4 colors categories:
 
 - Dark blue: orders waiting for a customer action ( i.e. waiting for a bank check-in)
 - Light blue: orders waiting for a merchant action following an accepted payment 
 - Green: no action needed from the merchant (i.e. when the product is delivered)
 - Red or black: special status (i.e. payment error)
 
-The merchants have a concise view of the work remaining to be done.
+The merchants have a concise view of the work remaining to be done between the order to be prepared and the delivered order.
 
 ***How it works***: 
 
@@ -132,7 +132,7 @@ Choose several orders, select _open in new tabs option_ on bulk action's option 
 
 ## II. For the order details, we have added the following features:
 
-**Even if we keep the objective of saving time and productivity, the improvements and features are focused on readability and the position of the information. Indeed, some important information did not have the display corresponding to its importance. For example, the list of products that were at the bottom of the page is now at the top of the page as it is the first information to be consulted.**
+Even if we keep the objective of saving time and productivity, the improvements and features are focused on readability and the position of the information. Indeed, some important information did not have the display corresponding to its importance. For example, the list of products that were at the bottom of the page is now at the top of the page as it is the first information to be consulted.
 
 **Thus with better readability, we allow the merchant to be more efficient in his work.**
 
@@ -156,7 +156,7 @@ The pagination of the list starts when there are more than 8 products in the car
 
 ***What is the goal***: 
 
-Easy check and verification directly from the list```
+Easy check and verification directly from the list.
 
 ***How it works***:
 
@@ -166,7 +166,7 @@ For customized products - files or texts are displayed below the product. The fi
 
 
 
-Pack of products - The view pack content link displays the products with the ordered quantity and the available product stock. 
+Pack of products - A link bellow the products' pack displays the related products with the ordered quantity and the available product stock. 
 
 ![Pack of products](/assets/images/2020/05/pack-product.png)
 

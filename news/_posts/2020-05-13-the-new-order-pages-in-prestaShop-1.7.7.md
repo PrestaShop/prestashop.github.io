@@ -30,19 +30,21 @@ To have a better understanding of the merchants&#39; pain points, we have interv
 
 **The objective of the new features of the listing order page is to help merchants save time and increase their productivity.**
 
-- **Order's preview**: Opens a panel just below the line of the order to preview the order&#39;s essential information.
+- **Order's preview**: Opens a panel just below the line of the order to preview the order's essential information.
 
 ADD GIF
 
 ***What is the goal***:
 
-Allows the merchant to check, prepare and track his order without having to open it. So the merchant won&#39;t have to open the order to check essential information that doesn&#39;t require actions.
+Allows the merchant to check, prepare and track his order without having to open it. So the merchant won't have to open the order to check essential information that doesn&#39;t require actions.
 
 ***How it works***: 
 
-When the user clicks on the icon, it displays the order&#39;s preview below the line selected. The order preview lists the following information: the invoice address, the shipping address, the customer details, the carrier details (and the tracking ID when available) and the products&#39; list. ![](RackMultipart20200512-4-1tjtyoa_html_a1644e9702a7fb4f.png)
+When the user clicks on the icon, it displays the order&#39;s preview below the line selected. The order preview lists the following information: the invoice address, the shipping address, the customer details, the carrier details (and the tracking ID when available) and the products' list. 
 
-The products&#39; list displays on each line the product name, reference, stock location (if available), quantity, tax price and total price for the products. The total price follows the customer group configuration. If the customer group sets the prices with or without tax, it impacts the displayed amount in the total column and adds the related label &quot;tax excluded&quot; or &quot;tax included&quot;.
+![](RackMultipart20200512-4-1tjtyoa_html_a1644e9702a7fb4f.png)
+
+The products' list displays on each line the product name, reference, stock location (if available), quantity, tax price and total price for the products. The total price follows the customer group configuration. If the customer group sets the prices with or without tax, it impacts the displayed amount in the total column and adds the related label "tax excluded" or "tax included".
 
 The list displays the 10 firsts products. The remaining products can be seen by expanding the list.
 
@@ -50,7 +52,7 @@ There is a new hook called displayOrderPreview on the bottom of the preview.
 
 ADD img
 
-It allows modules to add new elements on the preview. For more specific needs, the preview can be changed by overriding template, find (here)[[https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/](https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/)] more information.
+It allows modules to add new elements on the preview. For more specific needs, the preview can be changed by overriding template, find (here)(https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/)] more information.
 
 - **Editable order status labels:** Allows to change the order status directly from the listing.
  
@@ -163,7 +165,9 @@ Customized products -Customization files or texts are displayed below the custom
 
 _Customized on the products list_
 
-Pack of products - The view pack content link displays the products with the ordered quantity and the available product stock. ![](RackMultipart20200512-4-1tjtyoa_html_651f8ba7fc123d55.png)
+Pack of products - The view pack content link displays the products with the ordered quantity and the available product stock. 
+
+![](RackMultipart20200512-4-1tjtyoa_html_651f8ba7fc123d55.png)
 
 _Products of the pack_
 
@@ -207,6 +211,6 @@ A summary of the hooks impacted:
 
 Over the last few months, PrestaShop has been working hard to deliver its new features and fix bugs on the page. 30 bugs, including 8 majors, 16 minors and 3 trivials, have been fixed from the previous 1.7 and 1.6 versions. For more information, you can find [the way we classified the severity of the bug](https://build.prestashop.com/news/severity-classification/) and [the list of the fixed bug](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3AOrder+milestone%3A1.7.7.0+label%3ABug+-label%3ARegression+sort%3Acreated-asc+is%3Aclosed)s. Overall, the order project has ensured more stability by correcting ⅔ of the major bugs of the order page.
 
-We encourage you to try out the features on the beta version and share any feedback (here)[https://github.com/PrestaShop/PrestaShop/issues/new/choose](https://github.com/PrestaShop/PrestaShop/issues/new/choose)]. Your opinion is important to us. We are counting on you to share your feedback and new ideas with us so that we can continue to develop the Prestashop that you need.
+We encourage you to try out the features on the beta version and share any feedback (here)[https://github.com/PrestaShop/PrestaShop/issues/new/choose]. Your opinion is important to us. We are counting on you to share your feedback and new ideas with us so that we can continue to develop the Prestashop that you need.
 
 We would like to thank WebXY, YATEO, Ecomiz and VAISONET and all the merchants interviewed for taking the time to exchange with us.

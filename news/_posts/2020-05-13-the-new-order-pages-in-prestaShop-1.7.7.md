@@ -143,7 +143,7 @@ Choose several orders, select _open in new tabs option_ on bulk action's option 
 
 ***What is the goal***:
 
-Avoid an endless and unreadable list of products. Pagination provides structure in the products&#39; navigation. Also, the list has been moved to the top of the page to avoid the merchant from scrolling to the bottom of the page to see the products ordered.
+Avoid an endless and unreadable list of products. Pagination provides structure in the products' navigation. Also, the list has been moved to the top of the page to avoid the merchant from scrolling to the bottom of the page to see the products ordered.
 
 ***How it works***:
 

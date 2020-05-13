@@ -21,7 +21,7 @@ The first Beta version for PrestaShop 1.7.7.0 is now ready for you to test!
 After more than one year in the making, we are really thrilled to announce that we are releasing the 1.7.7.0 beta. This version is even bigger than the previous one with 957 merged pull requests, compared to 748 for 1.7.6.0 (our previous record) – and we are still at least a month away from the final version. 
 
 This huge work has been possible thanks to the engagement of our great community, with more than 110 external contributors participating in the development of this version, fixing bugs, adding improvement to existing features or even developing new features for our merchants!
-In this version we covered essential topics such as order management. By the way, you will enjoy more efficiency in daily tasks with the [full redesign and new features of order pages](https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1.7.7/). And also more stability with the upgraded compatibility to PHP 7.3 and more flexibility with new hooks.
+In this version we covered essential topics such as order management. By the way, you will enjoy more efficiency in daily tasks with the [full redesign and new features of order pages](https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1-7-7/). And also more stability with the upgraded compatibility to PHP 7.3 and more flexibility with new hooks.
  
 It is essential that you to start testing this beta version before the release of the stable version in about a month. During this beta period, we strongly recommend checking that all your modules and themes are working properly, especially if you develop them yourself. Please download, install and test this new version of PrestaShop and give us your feedback as early as possible. Remember [our article about minor release lifecycle](https://build.prestashop.com/news/ps17-minor-release-lifecycle/): the sooner a problem is identified, the sooner it can be fixed. 
  
@@ -35,7 +35,7 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 ### New features & improvements
 
 - The order pages have been redesigned and migrated to Symfony, including several new features to improve efficiency and avoid having to go back and forth between orders.
-  To get all details and know more about the new features, read our [article](https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1.7.7/) dedicated to the full rework or the order management system.
+  To get all details and know more about the new features, read our [article](https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1-7-7/) dedicated to the full rework or the order management system.
 
 -  To improve conversion and help our merchants' growth, we've been working on adding an improved search mechanism in front office called "Fuzzy search". Developed by community member [Lathanao](https://github.com/Lathanao) with the help of the core team, this feature implements the Levenshtein algorithm to improve PrestaShop’s native search in front-office by taking into account misspelling or typos. Read more [here](https://build.prestashop.com/news/introduction-to-the-fuzzy-search)! 
 

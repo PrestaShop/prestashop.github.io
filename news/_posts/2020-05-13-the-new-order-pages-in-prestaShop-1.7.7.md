@@ -182,7 +182,8 @@ The interface follows the standard interface of the messages of our daily device
 
 ***How it works***: 
 
-At the 5th message between the customer and the merchant a link is displayed for the pop-in. It displays the entire conversation of the order.
+The differentiation between private messages has been reinforced. It is only visible to the merchant. This allows for better readability and reduces misunderstandings.
+At the 5th message between a customer and the merchant, a link is displayed to open the pop-in which displays the entire conversation.
 
 
 &nbsp;

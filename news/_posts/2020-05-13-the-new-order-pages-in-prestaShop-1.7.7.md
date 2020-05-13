@@ -3,13 +3,14 @@ layout: post
 title: "The new order pages in PrestaShop 1.7.7"
 subtitle: "Introducing the revamp of order pages"
 date: 2020-05-12 12:00:00
-authors: [PrestaShop]
+authors: [MateusShirlaw]
 icon: icon-leaf
 tags:
 - 1.7.7
 - version
 - minor
-- releases
+- product
+- ux
 ---
 
 With the release of the new version 1.7.7, this article has the ambition to detail one of the major features of the version. Our work was focused on one of the most used pages by our merchants: the order page.
@@ -54,6 +55,7 @@ ADD img
 
 It allows modules to add new elements on the preview. For more specific needs, the preview can be changed by overriding template, find (here)(https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/)] more information.
 
+
 - **Editable order status labels:** Allows to change the order status directly from the listing.
  
 ![Edit a status](/assets/images/2020/05/editable_order_statuses_labels.png "Edit a status")
@@ -65,6 +67,7 @@ It allows the merchant fast management of the order fulfilment.
 ***How it works***: 
 
 When the user clicks then on the status label, it displays a drop-down list with all of the available statuses. By selecting one of the items on the list, the user can update the order status.
+
 
 - **Statuses' colour**: Color according to the order status
 
@@ -85,6 +88,7 @@ The merchants have a concise view of the work remaining to be done.
 
 The statuses colour is set by default. They are still configurable in the Order Setting page.
 
+
 - **Link to the customer's profile**: Creates easy access to the customer&#39;s profile by clicking on its name.
 
 ***What is the goal***: 
@@ -95,7 +99,6 @@ Before the merchant used to have to open the order to get access to the customer
 
 Clicking on the customer name opens the customer page in a new tab.
 
-ADD SCREENSHOT
 
 - **Bulk action redesign** : The bulk actions' design and its position were updated to make it more visible and quicker to use.
 
@@ -110,6 +113,7 @@ To help the merchants to process multiple orders in 3 clicks.
 ***How it works***: 
 
 Select several orders, choose the new order status in the pop-in then validate it to update the status on the orders.
+
 
 - **Open in new tabs**: Open commands in new tabs by mass action to process them as the merchant proceeds.
 
@@ -131,6 +135,7 @@ Choose several orders, select _open in new tabs option_ on bulk action&#39;s opt
 
 **Thus with better readability, we allow the merchant to be more efficient in his work.**
 
+
 - **Pagination on the product list:** Allows to navigate in the order product list through the pagination.
 
 ![Order's_pagination](/assets/images/2020/05/order_pagination.png "Order's pagination")
@@ -142,6 +147,7 @@ Avoid an endless and unreadable list of products. Pagination provides structure 
 ***How it works***:
 
 The pagination of the list starts when there are more than 8 products in the cart. The stock location column is displayed when one of the products has a stock location. Also, It is only displayed at the corresponding pagination.
+
 
 - **Pack & customized products:** Display the customization of the product on the list and access to the pack content through a pop-in
 
@@ -164,6 +170,7 @@ Pack of products - The view pack content link displays the products with the ord
 ![](RackMultipart20200512-4-1tjtyoa_html_651f8ba7fc123d55.png)
 
 _Products of the pack_
+
 
 - **Message interface:** Display 4 last messages and allows the merchant to see the whole conservation in a pop-in.
 

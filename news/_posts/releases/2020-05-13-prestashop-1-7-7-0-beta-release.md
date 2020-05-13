@@ -149,6 +149,6 @@ You must:
 - [FO - checkout - The Shipping cost is incorrect in the cart detail when using a cart rule "Free shipping"](https://github.com/PrestaShop/PrestaShop/issues/18533)
 - [FO - Detail discount is not good in multicurrency context](https://github.com/PrestaShop/PrestaShop/issues/18900)
 - [Cumulative cart Rules with %age discount don't display the correct discount amount](https://github.com/PrestaShop/PrestaShop/issues/18810)
-
+- [WS - Fatal error when trying to update an order through WS](https://github.com/PrestaShop/PrestaShop/issues/18789)
 
 If everything is working well, feel free to comment on this article and share on social networks, we also need this kind of feedback! ;-)

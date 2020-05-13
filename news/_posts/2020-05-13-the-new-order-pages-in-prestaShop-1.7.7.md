@@ -96,7 +96,7 @@ The statuses color is set by default. They are still configurable in the Order S
 
 ***What is the goal***: 
 
-Before the merchant used to have to open the order to get access to the customer page. Now, the merchant can do it from the orders listing.
+Merchants used to have to open the order to get access to the customer page. It is now accessible from the orders listing.
 
 ***How it works***:
 

@@ -57,7 +57,7 @@ It allows modules to add new elements on the preview. For more specific needs, t
 &nbsp;
 - **Editable order status labels:** Allows to change the order status directly from the listing.
  
-![Edit a status](/assets/images/2020/05/editable_order_statuses_labels.png "Edit a status")
+![Order page - Edit a status](/assets/images/2020/05/editable_order_statuses_labels.png "Edit a status")
 
 ***What is the goal***:
 

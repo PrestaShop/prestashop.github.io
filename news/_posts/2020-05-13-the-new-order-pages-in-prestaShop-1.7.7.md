@@ -17,11 +17,11 @@ With the release of the new version 1.7.7, this article has the ambition to deta
 
 We are thrilled to introduce to you the new features around the order process. But before jumping into the features awaiting the merchants in the new version, we would like to share our thinking process.
 
-### First, why rethinking this page in particular?
+**First, why rethinking this page in particular?**
 
 The pages were becoming particularly unpleasant to use because of its old visual appearance and its hierarchy of information that led to inefficiency and misunderstanding for our merchants.
 
-### A long process to ensure the full success of the revamp.
+**A long process to ensure the full success of the revamp.**
 
 To have a better understanding of the merchants' pain points, we have interviewed merchants with different sales volume, country and business activity as well as agencies of different sizes. The pain points encountered have then been addressed by the features added in the order list page (I) and order detail page (II).
 

@@ -124,7 +124,7 @@ Select several orders, choose the new order status in the pop-in then validate i
 
 ***What is the goal***: 
 
-It helps the merchants to open multiple orders in 3 clicks.
+If the merchant has a poor internet connection, he can now open orders in advance to them to load in the background. 
 
 ***How it works***: 
 

@@ -47,7 +47,7 @@ Once you know where to focus and what you are trying to solve, you have to desig
 <!-- Should we keep or remove the folowwing paragraph? -->
 <!-- Product designers do much more than just creating user interfaces. They have to make sure a feature integrates perfectly with existing users' workflows, that the wording makes sense, that the user who needs this feature will be able to use it. -->
 
-While the product manager’s job is to identify what’s the problem to solve, the designer’s is to design the best solution. And then the whole team altogether can start building the feature.
+While the product manager’s job is to identify the problem to solve, the designer's job is to design the best solution, of course, this is done in collaboration, as a duo. And then the whole team altogether can start building the feature.
 
 
 Currently the Core team counts 9 developers, 5 QA engineers, 2 designers and 5 product managers.

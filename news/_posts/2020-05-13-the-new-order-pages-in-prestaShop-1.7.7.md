@@ -78,9 +78,9 @@ When the user clicks then on the status label, it displays a drop-down list with
 The colours used by default to contextualize the status is based on a wide range of colours without following any real logic. To bring a structure and meaning to the statuses colours, the statuses are grouped in 4 colours categories:
 
 - orders waiting for a customer action as in waiting for a bank check in dark blue
-- orders waiting for a merchant action following an accepted payment in light blue
-- when no action is needed from the merchant as when the product is delivered in green
-- special status as payment error order in red or black
+- Light blue: orders waiting for a merchant action following an accepted payment 
+- Green: no action needed from the merchant (i.e. when the product is delivered)
+- Red or black: special status (i.e. payment error)
 
 The merchants have a concise view of the work remaining to be done.
 

@@ -130,7 +130,7 @@ Here is the second part, where you’ll learn more about the PrestaShop Feedback
 
 ### See all features and expressions of needs, follow their development
 
-Each feature or expression of needs is represented by a card. With a title, a description, and sometimes an image.
+Each feature or expression of needs is represented by a card that includes a title and a description, sometimes an image.
 Click on a card to learn more about it.
 
 There are several tabs, each tab corresponding to a step in the development.

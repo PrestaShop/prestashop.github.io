@@ -101,10 +101,6 @@ All the product development process at PrestaShop is summarized in the following
 Designing a feature means defining what is the best solution to a problem, a need.
 There are many ways to solve a problem. But design is not about solving a problem, it is about solving a problem the best way possible and with elegance.
 
-<!-- Should we keep or remove the folowwing paragraph? -->
-<!-- The product team has many constraints to take into account when working on features. Some are quite obvious, such as technical feasibility, but when maintaining an open source software used in many countries, on hundreds of thousands of online stores, the coherence and the flexibility are key. Building a feature for PrestaShop means building a software for people with different culture (Right to left languages for example), different types of businesses (online retails versus subscriptions), different types of catalog (someone selling screws doesn’t have the same catalog management problematic as someone selling clothes), and so on.
-As said earlier, adding a feature to a software means making it more complex to use and to maintain. And the team has to limit this complexity. That is not an easy task, and collaboration, discussions with users are key to succeed here. That is the **User Research** phase. -->
-
 The usual process to design and build a feature is the following:
 - User Research
 - Prototyping

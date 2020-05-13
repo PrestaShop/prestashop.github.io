@@ -206,7 +206,7 @@ A summary of the hooks impacted:
   - displayBackOfficeOrderActions
   - displayAdminOrderSide (replace displayAdminRight)
   - displayAdminOrderMain (replace displayAdminLeft)
-  - displayAdminOrderTabLink (remplace displayAdminOrderTabOrder et displayAdminOrderTabShip)
+  - displayAdminOrderTabLink (replace displayAdminOrderTabOrder et displayAdminOrderTabShip)
   - displayAdminOrderTabContent (replace displayAdminOrderContentOrder and displayAdminOrderContentShip)
   - actionGetAdminOrderButtons
 

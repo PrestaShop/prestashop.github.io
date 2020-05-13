@@ -148,7 +148,7 @@ Lists all cards that are already specified. At this point, rating it and let the
 Lists all the features in progress. The tab is divided into several sections: User Research, Prototyping, Specifications, Development, QA testing.
 
 #### Ready for the next version
-Lists all the features already developed and accessible on the latest branch on Github. These features will be accessible with the next minor release (1.7.7, 1.7.8, …).
+Lists all features that are already developed and thus available on GitHub's latest branch. In short, it means those features will be accessible in the next minor release: 1.7.7, 1.7.8, etc.
 
 #### Launched
 Lists all previously released features.

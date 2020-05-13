@@ -165,7 +165,7 @@ Here is what happens behind the scenes:
 When rating the impact of a feature, Productboard adds your vote to a “user score” that the team takes directly into account when evaluating features through its prioritization score.
 The more an idea is voted, the better rank it gets, and the more probability it has to integrate the software.
 
-This “user score” is not the only indicator that the team takes into account when evaluating a feature,, but it is key. Complexity, innovation, business impact for the merchants, legal aspects, are some of the criteria used as well.
+This “user score” is not the only indicator that the team takes into account when evaluating a feature but it is key. Complexity, innovation, business impact for the merchants, legal aspects, are some of the criteria studied as well.
 
 Of course, the goal is not to vote “Critical” on every feature idea. This would cancel the benefits of the open votes.
 

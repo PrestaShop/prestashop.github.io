@@ -2,7 +2,7 @@
 layout: post
 title: "The new order pages in PrestaShop 1.7.7"
 subtitle: "Introducing the revamp of order pages"
-date: 2020-05-12 9:00:00
+date: 2020-05-13 9:00:00
 authors: [MateusShirlaw]
 icon: icon-lightning
 tags:

@@ -45,7 +45,7 @@ When the user clicks on the icon, it displays the order's preview below the line
 
 The products' list displays on each line the product name, reference, stock location (if available), quantity, tax price and total price for the products. The total price follows the customer group configuration. If the customer group sets the prices with or without tax, it impacts the displayed amount in the total column and adds the related label "tax excluded" or "tax included".
 
-The list displays the 10 firsts products. The remaining products can be seen by expanding the list.
+The list displays the 10 first products. The remaining products can be seen by expanding the list.
 
 There is a new hook called displayOrderPreview on the bottom of the preview.
 

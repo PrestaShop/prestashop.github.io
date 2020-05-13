@@ -132,7 +132,7 @@ Choose several orders, select _open in new tabs option_ on bulk action's option 
 
 ## II. For the order details, we have added the following features:
 
-**Even if we keep the objective of saving time and productivity, the improvements and features are focused on readability and the position of the information. Indeed, some important information did not have the display corresponding to its importance. For example, the list of products that were at the bottom of the page is now at the top of the page as the first information to be consulted.**
+**Even if we keep the objective of saving time and productivity, the improvements and features are focused on readability and the position of the information. Indeed, some important information did not have the display corresponding to its importance. For example, the list of products that were at the bottom of the page is now at the top of the page as it is the first information to be consulted.**
 
 **Thus with better readability, we allow the merchant to be more efficient in his work.**
 

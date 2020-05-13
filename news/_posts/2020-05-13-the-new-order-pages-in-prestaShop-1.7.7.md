@@ -16,23 +16,23 @@ With the release of the new version 1.7.7, this article has the ambition to deta
 
 We are thrilled to introduce to you the new feature around the order process. But before jumping on the features that await the merchant in the new version, we&#39;d like to share our thinking process.
 
-***First, why rethinking this page in particular?***
+### ***First, why rethinking this page in particular?***
 
 The page was beginning to be particularly unpleasant to use because of its old visual appearance and its hierarchy of information that led to inefficiency and misunderstanding for our merchants.
 
-***A long process to ensure the full success of the revamp.***
+### ***A long process to ensure the full success of the revamp.***
 
 To have a better understanding of the merchants&#39; pain points, we have interviewed merchants with different sales volume, country and business activity as well as agencies of different sizes. The pain points encountered have then been addressed by the features added in the order list page (I) and order detail page (II).
 
-**Now, let's present those changes.**
+### **Now, let's present those changes.**
 
-### **I.  Concerning the page listing the orders, we have added the following features**
+## **I.  Concerning the page listing the orders, we have added the following features**
 
 **The objective of the new features of the listing order page is to help merchants save time and increase their productivity.**
 
 - **Order's preview**: Opens a panel just below the line of the order to preview the order's essential information.
 
-ADD GIF
+![Order preview](/assets/images/2020/05/order_preview.gif "Order preview")
 
 ***What is the goal***:
 
@@ -56,7 +56,7 @@ It allows modules to add new elements on the preview. For more specific needs, t
 
 - **Editable order status labels:** Allows to change the order status directly from the listing.
  
-ADD GIF
+![Edit a status](/assets/images/2020/05/editable_order_statuses_labels.png "Edit a status")
 
 ***What is the goal***:
 
@@ -66,11 +66,9 @@ It allows the merchant fast management of the order fulfilment.
 
 When the user clicks then on the status label, it displays a drop-down list with all of the available statuses. By selecting one of the items on the list, the user can update the order status.
 
-![](RackMultipart20200512-4-1tjtyoa_html_a49b921e2c77a3df.png)
-
 - **Statuses' colour**: Color according to the order status
 
-ADD GIF
+![Order statuses by category](/assets/images/2020/05/order_status_labelsx2.png "Order statuses by category")
 
 ***What is the goal***: 
 
@@ -87,10 +85,6 @@ The merchants have a concise view of the work remaining to be done.
 
 The statuses colour is set by default. They are still configurable in the Order Setting page.
 
-![](RackMultipart20200512-4-1tjtyoa_html_de02e45ff887d647.png)
-
-_Order statuses by category_
-
 - **Link to the customer's profile**: Creates easy access to the customer&#39;s profile by clicking on its name.
 
 ***What is the goal***: 
@@ -103,7 +97,11 @@ Clicking on the customer name opens the customer page in a new tab.
 
 ADD SCREENSHOT
 
-- **Bulk action redesign**** :** The bulk actions&#39; design and its position were updated to make it more visible and quicker to use.
+- **Bulk action redesign** : The bulk actions' design and its position were updated to make it more visible and quicker to use.
+
+![Change_order's statuses](/assets/images/2020/05/choose_an_order.png "Change_order's statuses")
+
+_Updates the last 4 orders into payment accepted_
 
 ***What is the goal***: 
 
@@ -113,11 +111,11 @@ To help the merchants to process multiple orders in 3 clicks.
 
 Select several orders, choose the new order status in the pop-in then validate it to update the status on the orders.
 
-![](RackMultipart20200512-4-1tjtyoa_html_bd7ba585d406209b.png)
-
-_Updates the last 4 orders into payment accepted_
-
 - **Open in new tabs**: Open commands in new tabs by mass action to process them as the merchant proceeds.
+
+![Open in new tabs](/assets/images/2020/05/open_in_new_tabs.png "Open in new tabs")
+
+_Opens the last 4 orders in new tabs_
 
 ***What is the goal***: 
 
@@ -127,11 +125,7 @@ It helps the merchants to open multiple orders in 3 clicks.
 
 Choose several orders, select _open in new tabs option_ on bulk action&#39;s option to open them in new tabs.
 
-![](RackMultipart20200512-4-1tjtyoa_html_1c19d10b7b1305f4.png)
-
-_Opens the last 4 orders in new tabs_
-
-### II. **For the order details, we have added the following features :**
+## II. **For the order details, we have added the following features :**
 
 **Even if we keep the objective of saving time and productivity, the improvements and features are focused on readability and the position of the information. Indeed, some important information did not have the display corresponding to its importance. For example, the list of products that were at the bottom of the page is now at the top of the page as the first information to be consulted.**
 
@@ -139,7 +133,7 @@ _Opens the last 4 orders in new tabs_
 
 - **Pagination on the product list:** Allows to navigate in the order product list through the pagination.
 
-ADD GIF
+![Order's_pagination](/assets/images/2020/05/order_pagination.png "Order's pagination")
 
 ***What is the goal***:
 
@@ -197,7 +191,7 @@ Find [here](https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.7/) the 
 
 _Hook new mapping_
 
-The detailed changes can be found on the following pull requests on github [[16144](https://github.com/PrestaShop/PrestaShop/pull/16144)](https://github.com/PrestaShop/PrestaShop/pull/16144) and [17734]([https://github.com/PrestaShop/PrestaShop/pull/17734](https://github.com/PrestaShop/PrestaShop/pull/17734)).
+The detailed changes can be found on the following pull requests on github [16144](https://github.com/PrestaShop/PrestaShop/pull/16144) and [17734](https://github.com/PrestaShop/PrestaShop/pull/17734).
 
 A summary of the hooks impacted:
 
@@ -211,6 +205,6 @@ A summary of the hooks impacted:
 
 Over the last few months, PrestaShop has been working hard to deliver its new features and fix bugs on the page. 30 bugs, including 8 majors, 16 minors and 3 trivials, have been fixed from the previous 1.7 and 1.6 versions. For more information, you can find [the way we classified the severity of the bug](https://build.prestashop.com/news/severity-classification/) and [the list of the fixed bug](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3AOrder+milestone%3A1.7.7.0+label%3ABug+-label%3ARegression+sort%3Acreated-asc+is%3Aclosed)s. Overall, the order project has ensured more stability by correcting ⅔ of the major bugs of the order page.
 
-We encourage you to try out the features on the beta version and share any feedback (here)[https://github.com/PrestaShop/PrestaShop/issues/new/choose]. Your opinion is important to us. We are counting on you to share your feedback and new ideas with us so that we can continue to develop the Prestashop that you need.
+We encourage you to try out the features on the beta version and share any feedback [here](https://github.com/PrestaShop/PrestaShop/issues/new/choose). Your opinion is important to us. We are counting on you to share your feedback and new ideas with us so that we can continue to develop the Prestashop that you need.
 
 We would like to thank WebXY, YATEO, Ecomiz and VAISONET and all the merchants interviewed for taking the time to exchange with us.

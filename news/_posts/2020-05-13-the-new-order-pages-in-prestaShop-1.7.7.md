@@ -130,7 +130,7 @@ It helps the merchants to open multiple orders in 3 clicks.
 
 Choose several orders, select _open in new tabs option_ on bulk action's option to open them in new tabs.
 
-## II. **For the order details, we have added the following features :**
+## II. For the order details, we have added the following features:
 
 **Even if we keep the objective of saving time and productivity, the improvements and features are focused on readability and the position of the information. Indeed, some important information did not have the display corresponding to its importance. For example, the list of products that were at the bottom of the page is now at the top of the page as the first information to be consulted.**
 

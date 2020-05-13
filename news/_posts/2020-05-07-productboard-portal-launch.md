@@ -116,7 +116,7 @@ The usual process to design and build a feature is the following:
 And sometimes there are several iterations in between to reach a complete feature.
 
 Well, that is also something that the Core product team will be able to share publicly from now on thanks to Productboard. You’ll be able to see the features “In progress”, and at which step they are in the process.
-Of course, here again you’ll have the possibility to comment and share your feedback on what’s being built. Even to manifest yourself if you want to participate in prototype testing and/or  development.
+Once again, you will have the possibility to comment and share your opinion on what is being built. You can even reach us out if you want to take part in any prototype testing and/or development. We will appreciate it a lot!
 
 
 

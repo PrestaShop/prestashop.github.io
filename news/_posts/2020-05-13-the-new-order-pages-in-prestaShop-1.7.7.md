@@ -192,7 +192,7 @@ At the 5th message between the customer and the merchant a link is displayed for
 
 ***What is the goal***: 
 
-The hooks are repositioned in more strategic locations on the page and provide a better user experience.
+The hooks have been relocated to more strategic positions to match the layout redesign and thus provide a better user experience.
 
 ***How it works***: 
 

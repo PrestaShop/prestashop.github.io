@@ -54,8 +54,7 @@ There is a new hook called displayOrderPreview on the bottom of the preview.
 It allows modules to add new elements on the preview. For more specific needs, the preview can be changed by overriding template, [find here](https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/) more information.
 
 
-
-
+&nbsp;
 - **Editable order status labels:** Allows to change the order status directly from the listing.
  
 ![Edit a status](/assets/images/2020/05/editable_order_statuses_labels.png "Edit a status")
@@ -69,6 +68,7 @@ It allows the merchant fast management of the order fulfilment.
 When the user clicks then on the status label, it displays a drop-down list with all of the available statuses. By selecting one of the items on the list, the user can update the order status.
 
 
+&nbsp;
 - **Statuses' colour**: Color according to the order status
 
 ![Order statuses by category](/assets/images/2020/05/order_status_labelsx2.png "Order statuses by category")
@@ -89,6 +89,7 @@ The merchants have a concise view of the work remaining to be done.
 The statuses colour is set by default. They are still configurable in the Order Setting page.
 
 
+&nbsp;
 - **Link to the customer's profile**: Creates easy access to the customer's profile by clicking on its name.
 
 ![Right click on the customer's link](/assets/images/2020/05/link-customer.png "Right click on the customer's link")
@@ -102,8 +103,7 @@ Before the merchant used to have to open the order to get access to the customer
 Clicking on the customer name opens the customer page in a new tab.
 
 
-
-
+&nbsp;
 - **Bulk action redesign** : The bulk actions' design and its position were updated to make it more visible and quicker to use.
 
 ![Change_order's statuses](/assets/images/2020/05/choose_an_order.png "Change_order's statuses")
@@ -117,8 +117,7 @@ To help the merchants to process multiple orders in 3 clicks.
 Select several orders, choose the new order status in the pop-in then validate it to update the status on the orders.
 
 
-
-
+&nbsp;
 - **Open in new tabs**: Open commands in new tabs by mass action to process them as the merchant proceeds.
 
 ![Open in new tabs](/assets/images/2020/05/open_in_new_tabs.png "Open in new tabs")
@@ -151,7 +150,7 @@ Avoid an endless and unreadable list of products. Pagination provides structure 
 The pagination of the list starts when there are more than 8 products in the cart. The stock location column is displayed when one of the products has a stock location. Also, It is only displayed at the corresponding pagination.
 
 
-
+&nbsp;
 - **Pack & customized products:** Display the customization of the product on the list and access to the pack content through a pop-in.
 
 
@@ -172,9 +171,7 @@ Pack of products - The view pack content link displays the products with the ord
 ![Pack of products](/assets/images/2020/05/pack-product.png)
 
 
-
-
-
+&nbsp;
 - **Message interface:** Display 4 last messages and allows the merchant to see the whole conservation in a pop-in.
 
 ![Order's messages](/assets/images/2020/05/messages-order.png)
@@ -188,8 +185,7 @@ The interface follows the standard interface of the messages of our daily device
 At the 5th message between the customer and the merchant a link is displayed for the pop-in. It displays the entire conversation of the order.
 
 
-
-
+&nbsp;
 - **Hook**: The redesign of this page reviews the hierarchy of information and refreshes the user interface with an important impact on the position of the hooks.
 
 ![Order hooks mapping](/assets/images/2020/05/order_details_hooks.jpg "Order hooks mapping")

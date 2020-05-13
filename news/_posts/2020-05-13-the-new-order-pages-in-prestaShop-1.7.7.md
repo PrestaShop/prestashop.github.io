@@ -22,11 +22,11 @@ The page was beginning to be particularly unpleasant to use because of its old v
 
 ***A long process to ensure the full success of the revamp.***
 
-To have a better understanding of the merchants&#39; pain points, we have interviewed merchants with different sales volume, country and business activity as well as agencies of different sizes. The pain points encountered have then been addressed by the features added in the order list page and order detail page.
+To have a better understanding of the merchants&#39; pain points, we have interviewed merchants with different sales volume, country and business activity as well as agencies of different sizes. The pain points encountered have then been addressed by the features added in the order list page (I) and order detail page (II).
 
 **Now, let's present those changes.**
 
-### I. **Concerning the page listing the orders, we have added the following features :**
+### **I.  Concerning the page listing the orders, we have added the following features**
 
 **The objective of the new features of the listing order page is to help merchants save time and increase their productivity.**
 
@@ -53,7 +53,7 @@ ADD img
 It allows modules to add new elements on the preview. For more specific needs, the preview can be changed by overriding template, find (here)[[https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/](https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/)] more information.
 
 - **Editable order status labels:** Allows to change the order status directly from the listing.
-
+ 
 ADD GIF
 
 ***What is the goal***:
@@ -66,7 +66,7 @@ When the user clicks then on the status label, it displays a drop-down list with
 
 ![](RackMultipart20200512-4-1tjtyoa_html_a49b921e2c77a3df.png)
 
-- **Statuses&#39; colour**: Color according to the order status
+- **Statuses' colour**: Color according to the order status
 
 ADD GIF
 
@@ -207,6 +207,6 @@ A summary of the hooks impacted:
 
 Over the last few months, PrestaShop has been working hard to deliver its new features and fix bugs on the page. 30 bugs, including 8 majors, 16 minors and 3 trivials, have been fixed from the previous 1.7 and 1.6 versions. For more information, you can find [the way we classified the severity of the bug](https://build.prestashop.com/news/severity-classification/) and [the list of the fixed bug](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3AOrder+milestone%3A1.7.7.0+label%3ABug+-label%3ARegression+sort%3Acreated-asc+is%3Aclosed)s. Overall, the order project has ensured more stability by correcting ⅔ of the major bugs of the order page.
 
-We encourage you to try out the features on the beta version and share any feedback (here)[[https://github.com/PrestaShop/PrestaShop/issues/new/choose](https://github.com/PrestaShop/PrestaShop/issues/new/choose)]. Your opinion is important to us. We are counting on you to share your feedback and new ideas with us so that we can continue to develop the Prestashop that you need.
+We encourage you to try out the features on the beta version and share any feedback (here)[https://github.com/PrestaShop/PrestaShop/issues/new/choose](https://github.com/PrestaShop/PrestaShop/issues/new/choose)]. Your opinion is important to us. We are counting on you to share your feedback and new ideas with us so that we can continue to develop the Prestashop that you need.
 
 We would like to thank WebXY, YATEO, Ecomiz and VAISONET and all the merchants interviewed for taking the time to exchange with us.

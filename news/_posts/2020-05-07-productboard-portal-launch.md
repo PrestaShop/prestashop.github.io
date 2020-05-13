@@ -151,7 +151,7 @@ Lists all features in progress and distributes them among five sections: User Re
 Lists all features that are already developed and thus available on GitHub's latest branch. In short, it means those features will be accessible in the next minor release: 1.7.7, 1.7.8, etc.
 
 #### Launched
-Lists all previously released features.
+Lists all released features.
 
 
 ### Comment and vote for existing ideas

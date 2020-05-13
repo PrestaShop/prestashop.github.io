@@ -112,7 +112,7 @@ Clicking on the customer name opens the customer page in a new tab.
 
 To help the merchants to process multiple orders in 3 clicks.
 
-***How it works***: 
+***How it works:*** 
 
 Select several orders, choose the new order status in the pop-in then validate it to update the status on the orders.
 

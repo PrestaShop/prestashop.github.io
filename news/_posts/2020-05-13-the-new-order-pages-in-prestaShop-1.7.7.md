@@ -23,7 +23,7 @@ The page was beginning to be particularly unpleasant to use because of its old v
 
 ### ***A long process to ensure the full success of the revamp.***
 
-To have a better understanding of the merchants&#39; pain points, we have interviewed merchants with different sales volume, country and business activity as well as agencies of different sizes. The pain points encountered have then been addressed by the features added in the order list page (I) and order detail page (II).
+To have a better understanding of the merchants' pain points, we have interviewed merchants with different sales volume, country and business activity as well as agencies of different sizes. The pain points encountered have then been addressed by the features added in the order list page (I) and order detail page (II).
 
 ### **Now, let's present those changes.**
 

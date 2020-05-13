@@ -156,7 +156,7 @@ The pagination of the list starts when there are more than 8 products in the car
 
 ***What is the goal***: 
 
-The display of these products are optimized for daily use.
+Easy check and verification directly from the list```
 
 ***How it works***:
 

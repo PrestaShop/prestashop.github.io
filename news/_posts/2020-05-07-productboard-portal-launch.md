@@ -142,7 +142,7 @@ All cards fall into several tabs, each corresponding to a specific step in the d
 ![PrestaShop Feedback home](/assets/images/2020/05/productboard-home.png)
 
 #### Under consideration
-Lists all expressions of needs and some features that are already well structured. At this step rating a card and telling the team why it is important  will help the team prioritize it.
+Lists all cards that are already specified. At this point, rating it and let the team know why this feature is important helps us prioritize it.
 
 #### In progress
 Lists all the features in progress. The tab is divided into several sections: User Research, Prototyping, Specifications, Development, QA testing.

@@ -2,9 +2,9 @@
 layout: post
 title: "The new order pages in PrestaShop 1.7.7"
 subtitle: "Introducing the revamp of order pages"
-date: 2020-05-12 12:00:00
+date: 2020-05-12 9:00:00
 authors: [MateusShirlaw]
-icon: icon-leaf
+icon: icon-lightning
 tags:
 - 1.7.7
 - version
@@ -17,15 +17,15 @@ With the release of the new version 1.7.7, this article has the ambition to deta
 
 We are thrilled to introduce to you the new feature around the order process. But before jumping into the features awaiting the merchants in the new version, we would like to share our thinking process.
 
-### ***First, why rethinking this page in particular?***
+### First, why rethinking this page in particular?
 
 The page was beginning to be particularly unpleasant to use because of its old visual appearance and its hierarchy of information that led to inefficiency and misunderstanding for our merchants.
 
-### ***A long process to ensure the full success of the revamp.***
+### A long process to ensure the full success of the revamp.
 
 To have a better understanding of the merchants' pain points, we have interviewed merchants with different sales volume, country and business activity as well as agencies of different sizes. The pain points encountered have then been addressed by the features added in the order list page (I) and order detail page (II).
 
-### **Now, let's present those changes.**
+### Now, let's present these changes.
 
 ## **I.  Concerning the page listing the orders, we have added the following features**
 
@@ -37,13 +37,11 @@ To have a better understanding of the merchants' pain points, we have interviewe
 
 ***What is the goal***:
 
-Allows the merchant to check, prepare and track his order without having to open it. So the merchant won't have to open the order to check essential information that doesn&#39;t require actions.
+Allows the merchant to check, prepare and track his order without having to open it. So the merchant won't have to open the order to check essential information that doesn't require actions.
 
 ***How it works***: 
 
 When the user clicks on the icon, it displays the order's preview below the line selected. The order preview lists the following information: the invoice address, the shipping address, the customer details, the carrier details (and the tracking ID when available) and the products' list. 
-
-![](RackMultipart20200512-4-1tjtyoa_html_a1644e9702a7fb4f.png)
 
 The products' list displays on each line the product name, reference, stock location (if available), quantity, tax price and total price for the products. The total price follows the customer group configuration. If the customer group sets the prices with or without tax, it impacts the displayed amount in the total column and adds the related label "tax excluded" or "tax included".
 
@@ -51,9 +49,11 @@ The list displays the 10 firsts products. The remaining products can be seen by 
 
 There is a new hook called displayOrderPreview on the bottom of the preview.
 
-ADD img
+![Order preview's hook](/assets/images/2020/05/hook-preview.png "Order preview's hook")
 
-It allows modules to add new elements on the preview. For more specific needs, the preview can be changed by overriding template, find (here)(https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/)] more information.
+It allows modules to add new elements on the preview. For more specific needs, the preview can be changed by overriding template, find (here)[https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/] more information.
+
+
 
 
 - **Editable order status labels:** Allows to change the order status directly from the listing.
@@ -89,7 +89,9 @@ The merchants have a concise view of the work remaining to be done.
 The statuses colour is set by default. They are still configurable in the Order Setting page.
 
 
-- **Link to the customer's profile**: Creates easy access to the customer&#39;s profile by clicking on its name.
+- **Link to the customer's profile**: Creates easy access to the customer's profile by clicking on its name.
+
+![Right click on the customer's link](/assets/images/2020/05/link-customer.png "Right click on the customer's link")
 
 ***What is the goal***: 
 
@@ -98,6 +100,8 @@ Before the merchant used to have to open the order to get access to the customer
 ***How it works***:
 
 Clicking on the customer name opens the customer page in a new tab.
+
+
 
 
 - **Bulk action redesign** : The bulk actions' design and its position were updated to make it more visible and quicker to use.
@@ -115,6 +119,8 @@ To help the merchants to process multiple orders in 3 clicks.
 Select several orders, choose the new order status in the pop-in then validate it to update the status on the orders.
 
 
+
+
 - **Open in new tabs**: Open commands in new tabs by mass action to process them as the merchant proceeds.
 
 ![Open in new tabs](/assets/images/2020/05/open_in_new_tabs.png "Open in new tabs")
@@ -127,7 +133,7 @@ It helps the merchants to open multiple orders in 3 clicks.
 
 ***How it works***: 
 
-Choose several orders, select _open in new tabs option_ on bulk action&#39;s option to open them in new tabs.
+Choose several orders, select _open in new tabs option_ on bulk action's option to open them in new tabs.
 
 ## II. **For the order details, we have added the following features :**
 
@@ -136,7 +142,7 @@ Choose several orders, select _open in new tabs option_ on bulk action&#39;s opt
 **Thus with better readability, we allow the merchant to be more efficient in his work.**
 
 
-- **Pagination on the product list:** Allows to navigate in the order product list through the pagination.
+- **Pagination on the product list**: Allows to navigate in the order product list through the pagination.
 
 ![Order's_pagination](/assets/images/2020/05/order_pagination.png "Order's pagination")
 
@@ -147,6 +153,7 @@ Avoid an endless and unreadable list of products. Pagination provides structure 
 ***How it works***:
 
 The pagination of the list starts when there are more than 8 products in the cart. The stock location column is displayed when one of the products has a stock location. Also, It is only displayed at the corresponding pagination.
+
 
 
 - **Pack & customized products:** Display the customization of the product on the list and access to the pack content through a pop-in
@@ -161,20 +168,21 @@ The display of these products are optimized for daily use.
 
 Customized products -Customization files or texts are displayed below the customized product. The files are added in columns on the same line. And the texts are displayed one below the other.
 
-![](RackMultipart20200512-4-1tjtyoa_html_afd3db062cd239da.png)
+![Customized products](/assets/images/2020/05/custom-product.png)
 
-_Customized on the products list_
+
 
 Pack of products - The view pack content link displays the products with the ordered quantity and the available product stock. 
 
-![](RackMultipart20200512-4-1tjtyoa_html_651f8ba7fc123d55.png)
+![Pack of products](/assets/images/2020/05/pack-product.png)
 
-_Products of the pack_
+
+
 
 
 - **Message interface:** Display 4 last messages and allows the merchant to see the whole conservation in a pop-in.
 
-ADD GIF
+![Order's messages](/assets/images/2020/05/messages-order.png)
 
 ***What is the goal***:
 
@@ -183,6 +191,9 @@ The interface follows the standard interface of the messages of our daily device
 ***How it works***: 
 
 At the 5th message between the customer and the merchant a link is displayed for the pop-in. It displays the entire conversation of the order.
+
+
+
 
 - **Hook**: The redesign of this page reviews the hierarchy of information and refreshes the user interface with an important impact on the position of the hooks.
 

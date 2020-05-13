@@ -27,7 +27,7 @@ To have a better understanding of the merchants' pain points, we have interviewe
 
 ### Now, let's present these changes.
 
-## **I.  Concerning the page listing the orders, we have added the following features**
+## I.  Concerning the page listing the orders, we have added the following features
 
 **The listing order page's new features aim at helping merchants save time and increase their productivity.**
 

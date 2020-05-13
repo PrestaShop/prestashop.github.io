@@ -139,7 +139,7 @@ Choose several orders, select _open in new tabs option_ on bulk action's option 
 
 - **Pagination on the product list**: Allows to navigate in the order product list through the pagination.
 
-![Order's_pagination](/assets/images/2020/05/order_pagination.png "Order's pagination")
+![Order's_pagination](/assets/images/2020/05/order_pagination.png)
 
 ***What is the goal***:
 

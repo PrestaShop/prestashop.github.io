@@ -186,7 +186,7 @@ At the 5th message between the customer and the merchant a link is displayed for
 
 
 &nbsp;
-- **Hook**: The redesign of this page reviews the hierarchy of information and refreshes the user interface with an important impact on the position of the hooks.
+- **Hooks**: New hooks positions.
 
 ![Order hooks mapping](/assets/images/2020/05/order_details_hooks.jpg "Order hooks mapping")
 

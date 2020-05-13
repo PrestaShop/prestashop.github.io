@@ -160,7 +160,7 @@ Easy check and verification directly from the list```
 
 ***How it works***:
 
-Customized products -Customization files or texts are displayed below the customized product. The files are added in columns on the same line. And the texts are displayed one below the other.
+For customized products - files or texts are displayed below the product. The files are added in a new column on the same line. The texts are displayed below each other.
 
 ![Customized products](/assets/images/2020/05/custom-product.png)
 

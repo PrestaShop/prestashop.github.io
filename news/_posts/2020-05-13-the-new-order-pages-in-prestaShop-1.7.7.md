@@ -51,7 +51,7 @@ There is a new hook called displayOrderPreview on the bottom of the preview.
 
 ![Order preview's hook](/assets/images/2020/05/hook-preview.png "Order preview's hook")
 
-It allows modules to add new elements on the preview. For more specific needs, the preview can be changed by overriding template, find (here)[https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/] more information.
+It allows modules to add new elements on the preview. For more specific needs, the preview can be changed by overriding template, [find here](https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/) more information.
 
 
 

@@ -86,7 +86,7 @@ The merchants have a concise view of the work remaining to be done.
 
 ***How it works***: 
 
-The statuses colour is set by default. They are still configurable in the Order Setting page.
+The statuses color is set by default. They are still configurable in the Order Setting page.
 
 
 &nbsp;

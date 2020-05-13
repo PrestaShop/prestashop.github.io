@@ -172,7 +172,7 @@ Pack of products - The view pack content link displays the products with the ord
 
 
 &nbsp;
-- **Message interface:** Display 4 last messages and allows the merchant to see the whole conservation in a pop-in.
+- **Message interface:** Display the 4 latest messages and allows the merchant to see the whole conservation in a pop-in.
 
 ![Order's messages](/assets/images/2020/05/messages-order.png)
 

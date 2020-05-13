@@ -15,7 +15,7 @@ tags:
 
 With the release of the new version 1.7.7, this article has the ambition to detail one of the major features of the version. Our work was focused on one of the most used pages by our merchants: the orders' management page.
 
-We are thrilled to introduce to you the new feature around the order process. But before jumping on the features that await the merchant in the new version, we&#39;d like to share our thinking process.
+We are thrilled to introduce to you the new feature around the order process. But before jumping into the features awaiting the merchants in the new version, we would like to share our thinking process.
 
 ### ***First, why rethinking this page in particular?***
 

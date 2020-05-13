@@ -41,7 +41,7 @@ Allows the merchant to check, prepare and track his order without having to open
 
 ***How it works***: 
 
-When the user clicks on the icon, it displays the order&#39;s preview below the line selected. The order preview lists the following information: the invoice address, the shipping address, the customer details, the carrier details (and the tracking ID when available) and the products' list. 
+When the user clicks on the icon, it displays the order's preview below the line selected. The order preview lists the following information: the invoice address, the shipping address, the customer details, the carrier details (and the tracking ID when available) and the products' list. 
 
 ![](RackMultipart20200512-4-1tjtyoa_html_a1644e9702a7fb4f.png)
 

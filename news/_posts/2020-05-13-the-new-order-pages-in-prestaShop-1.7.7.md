@@ -114,7 +114,7 @@ To help the merchants to process multiple orders in 3 clicks.
 
 ***How it works:*** 
 
-Select several orders, choose the new order status in the pop-in then validate it to update the status on the orders.
+Select several orders, choose the new order status in the pop-in then validate it to update the orders' status.
 
 
 &nbsp;

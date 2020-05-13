@@ -207,7 +207,7 @@ A summary of the hooks impacted:
   - displayAdminOrderSide (replace displayAdminRight)
   - displayAdminOrderMain (replace displayAdminLeft)
   - displayAdminOrderTabLink (remplace displayAdminOrderTabOrder et displayAdminOrderTabShip)
-  - displayAdminOrderTabContent (remplace displayAdminOrderContentOrder and displayAdminOrderContentShip)
+  - displayAdminOrderTabContent (replace displayAdminOrderContentOrder and displayAdminOrderContentShip)
   - actionGetAdminOrderButtons
 
 Over the last few months, PrestaShop has been working hard to deliver its new features and fix bugs on the page. 31 bugs, including 8 majors, 16 minors and 3 trivials, have been fixed from the previous 1.7 and 1.6 versions. For more information, you can find [the way we classified the severity of the bug](https://build.prestashop.com/news/severity-classification/) and [the list of the fixed bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3AOrder+milestone%3A1.7.7.0+label%3ABug+-label%3ARegression+sort%3Acreated-asc+is%3Aclosed). Overall, the order project has ensured more stability by correcting ⅔ of the major bugs of the order page.

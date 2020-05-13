@@ -120,7 +120,7 @@ Select several orders, choose the new order status in the pop-in then validate i
 &nbsp;
 - **Open in new tabs**: Open commands in new tabs by mass action to process them as the merchant proceeds.
 
-![Open in new tabs](/assets/images/2020/05/open_in_new_tabs.png "Open in new tabs")
+![Open in new tabs](/assets/images/2020/05/open_in_new_tabs.png)
 
 ***What is the goal***: 
 

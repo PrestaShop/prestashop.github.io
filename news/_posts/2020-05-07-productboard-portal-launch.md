@@ -43,7 +43,7 @@ As a team working on a software, when you add a feature you are making the softw
 And that’s where product managers and designers are needed.
 Product managers are responsible for making sure the software delivers value to its users. And the first steps to do so are to know which features to improve or to create, and more importantly to know which users’ needs you have to solve.
 
-Once you know where to focus and what you are trying to solve, you have to design this feature, to make it tangible, usable and coherent with the existing software. That is the designers’ responsibility.
+Once you know where to focus and what you are trying to solve, you have to design this feature, to make it tangible, usable and coherent with the existing software. That is the designers’ and the product content manager's responsibility.
 <!-- Should we keep or remove the folowwing paragraph? -->
 <!-- Product designers do much more than just creating user interfaces. They have to make sure a feature integrates perfectly with existing users' workflows, that the wording makes sense, that the user who needs this feature will be able to use it. -->
 

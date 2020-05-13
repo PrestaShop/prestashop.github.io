@@ -178,7 +178,7 @@ Pack of products - The view pack content link displays the products with the ord
 
 ***What is the goal***:
 
-The interface follows the standard interface of the messages of our daily devices. The differentiation between private messages only visible by the merchant and sent messages to the customer is now more distinct. This allows a better reading and avoids misunderstandings.
+To ease the discussion readability through a modern interface, inspired by the current messaging apps. 
 
 ***How it works***: 
 

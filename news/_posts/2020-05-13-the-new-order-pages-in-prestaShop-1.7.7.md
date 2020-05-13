@@ -29,7 +29,7 @@ To have a better understanding of the merchants' pain points, we have interviewe
 
 ## **I.  Concerning the page listing the orders, we have added the following features**
 
-**The objective of the new features of the listing order page is to help merchants save time and increase their productivity.**
+**The listing order page's new features aim at helping merchants save time and increase their productivity.**
 
 - **Order's preview**: Opens a panel just below the line of the order to preview the order's essential information.
 

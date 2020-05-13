@@ -196,7 +196,7 @@ The hooks are repositioned in more strategic locations on the page and provide a
 
 ***How it works***: 
 
-Find [here](https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.7/) the documentation on the hook&#39;s mapping. A new hook grouping the actions of the top of the order page has also been added to replace displayBackOfficeOrderActions which will no longer have the same layout.
+Find [here](https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.7/) the documentation on the hooks' mapping. A new hook grouping the actions of the top of the order page has also been added to replace displayBackOfficeOrderActions which will no longer have the same layout.
 
 The detailed changes can be found on the following pull requests on github [#16144](https://github.com/PrestaShop/PrestaShop/pull/16144) and [#17734](https://github.com/PrestaShop/PrestaShop/pull/17734).
 

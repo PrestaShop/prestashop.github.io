@@ -61,7 +61,7 @@ It allows modules to add new elements on the preview. For more specific needs, t
 
 ***What is the goal***:
 
-It allows the merchant fast management of the order fulfilment.
+Making the order fulfillment less time consuming for the merchants ```
 
 ***How it works***: 
 

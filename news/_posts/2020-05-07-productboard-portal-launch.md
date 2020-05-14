@@ -76,10 +76,10 @@ There are hundreds of needs out there, waiting to be solved. So how does the tea
 
 The Core product team uses several criteria to evaluate the importance of a need. There is no scientific, or magical, formula. It is a list of aspects that the team reviews in light of the research and analysis previously run. Among these aspects are:
 
+- legal requirements,
 - the impact on the merchants’ businesses,
 - the impact on merchant productivity,
 - the impact on the developer experience,
-- legal requirements,
 - and many more...
 
 As you can see, it is important for the team to take into account all the impacts of solving a need, and building features.

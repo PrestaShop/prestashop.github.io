@@ -65,7 +65,7 @@ The team calls these feedback **insights**. On Productboard, product managers ca
 
 What’s in it for the community? Well Productboard also makes it possible to share that externally.
 This is great to inform the community about what the team has identified, and also to keep collecting more information about it to improve the team’s understanding on this problem.
-**You are now able to see these expressions of needs on the PrestaShop Feedback website**
+**You are now able to see these expressions of needs on the PrestaShop Feedback website.**
 
 ### How to go from a need to a feature?
 Centralizing and analyzing insights is difficult.

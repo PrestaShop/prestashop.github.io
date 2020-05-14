@@ -18,7 +18,7 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
  
 ### First news, new content manager :tada:
  
-I would like to take this opportunity to present myself to all of you! My name is June, I joined the PrestaCrew as a Content manager last week, and I will be in charge of the Crowdin PrestaShop translation projects in the next several months. I am very excited about discovering this tool and am delighted to see that many of you from across the globe dedicate their time to these projects. I want to say thank you for your hard work, your contributions do not only help us but to anyone who is using or will be using PrestaShop ;) I look forward to communicating with you guys, if you have any questions do not hesitate to contact me anytime, I would be more than happy to answer you :smiley:
+I would like to take this opportunity to present myself to all of you! My name is June, I joined the PrestaCrew as a Content manager last week, and I will be in charge of the Crowdin PrestaShop translation projects in the next several months. I am very excited about discovering this tool and am delighted to see that many of you from across the globe dedicate their time to these projects. I want to say thank you for your hard work, your contributions help anyone who is using or will be using PrestaShop ;) I look forward to communicating with you guys, if you have any questions do not hesitate to contact me anytime, I would be more than happy to answer you :smiley:
  
 ### :two_hearts: Special thanks to newcomers
  

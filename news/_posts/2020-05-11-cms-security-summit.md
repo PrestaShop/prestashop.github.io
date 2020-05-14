@@ -48,7 +48,7 @@ By doing so, we will detect security issues easier, faster and provide a securit
 ## Automatic updates
 
 As everyone already know, the principal risk for a software is its age, keeping it updated is mandatory and considerably reduce the risk of having security issues.
-Even if you think at a T time there are no problems, nobody and nothing can not predict the future, a 0 day on PHP, Apache, Nginx ...
+Even if you think at a T time there are no problems, nobody and nothing can predict the future, a 0 day on PHP, Apache, Nginx ...
 By updating the software you're sure it's compatible with latest system softwares versions.
 
 However, updating a CMS is more risky when you have custom theme, uncompatible modules, modules not following good practices or if [BC Breaks](bc-breaks) are introduced due to security reasons or performance gain.

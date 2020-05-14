@@ -127,7 +127,7 @@ Here is the second part, where you’ll learn more about the PrestaShop Feedback
 Each feature or expression of needs is represented by a card that includes a title and a description, sometimes an image.
 Click on a card to learn more about it.
 
-All cards fall into several tabs, each corresponding to a specific step in the development of a feature:```
+All cards fall into several tabs, each corresponding to a specific step in the development of a feature:
 - Under consideration
 - In progress
 - Ready for the next release

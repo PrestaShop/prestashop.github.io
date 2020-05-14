@@ -22,7 +22,7 @@ I would like to take this opportunity to present myself to all of you! My name i
  
 ### :two_hearts: Special thanks to newcomers
  
-Many people subscribe to the project(s) of their choice each month, but not so many start translating straightaway. For that reason, we would like to thank the ones who rushed into the effort immediately! So lots of love to the dedicated: M. Mirena (mmirena), Carlos Prince (CarlosPrince), A. JELLALI (abdelazizjellali), ymk0577, Schuster Lorenz (lorenzschuster), Goedkoopsteverf, Pedro Loureiro (pedrogrou82), Vitalie Ciobanu (VitCiobanu), Nietnagel, guarco, hismi, Micael Ferreira (micaelsf), Matas Šileikis (matassileikis), Goldylocks Portugal (goldylocks.portugal), ricardoalves, CuneytOral and Mickeycss (rockyluo). See you soon on Crowdin… and in PrestaShop :stuck_out_tongue_winking_eye:
+Many people subscribe to the project(s) of their choice each month, but not so many start translating straightaway. For that reason, we would like to thank the ones who rushed into the effort immediately! So lots of love to the dedicated: A. JELLALI (abdelazizjellali), Carlos Prince (CarlosPrince), CuneytOral, Goedkoopsteverf, Goldylocks Portugal (goldylocks.portugal), hismi, Matas Šileikis (matassileikis), Micael Ferreira (micaelsf), Mickeycss (rockyluo), Nietnagel, Pedro Loureiro, (pedrogrou82), ricardoalves, Schuster Lorenz (lorenzschuster), Vitalie Ciobanu (VitCiobanu), and ymk0577. See you soon on Crowdin… and in PrestaShop. :stuck_out_tongue_winking_eye:
  
  
 ## A few stats

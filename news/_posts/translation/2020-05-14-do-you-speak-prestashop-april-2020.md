@@ -28,7 +28,7 @@ Many people subscribe to the project(s) of their choice each month, but not so m
 ## A few stats
  
 * **52 members** were active on the project this month.
-* A total of **34,696 words have been translated** and **23,790 validated**.
+* A total of **57,110 words have been translated** and **23,778 validated**.
 * All this in **35 different languages**.
  
 Thank you for your involvement!

@@ -15,7 +15,7 @@ tags:
  - product
 ---
 
-In March 2020, the product team at PrestaShop, in charge of building and prioritizing new features, decided to work with a new tool: [Productboard](https://www.productboard.com/gi). It helps product managers to create relevant roadmaps by evaluating features and tracking their development.
+In March 2020, the product team at PrestaShop, in charge of building and prioritizing new features, decided to work with a new tool: [Productboard](https://www.productboard.com). It helps product managers to create relevant roadmaps by evaluating features and tracking their development.
 
 Productboard made two things possible for the team:
 - Having a team interface to centralize all feedback, organize them, define features, prioritize them, and follow their development.

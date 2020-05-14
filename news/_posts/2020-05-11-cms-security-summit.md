@@ -62,7 +62,7 @@ We spent a lot of time during the summit talking about the self upgrade process,
 
 We paid the price at the beginning of the year, during weeks we sent and re sent emails to [cve.mitre.org](https://cve.mitre.org/) hoping they will update the [CVE-2017-9841](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9841) about the PHPUnit issue in order to add the CGI/FastCGI context. We are still waiting...
 
-PSR-9 and PSR-10 are awlays on the side, this is the reason why the open source project decided to use and follow [GitHub Advisories](https://help.github.com/en/github/managing-security-vulnerabilities/about-github-security-advisories), and after weeks of usage, people look happy to see we are more transparent about security issues.
+PSR-9 and PSR-10 are always on the side, this is the reason why the open source project decided to use and follow [GitHub Advisories](https://help.github.com/en/github/managing-security-vulnerabilities/about-github-security-advisories), and after weeks of usage, people look happy to see we are more transparent about security issues.
 
 But keep in mind we will never disclose how to reproduce security issues, you will never find any scripts in advisories or in CVE declared by PrestaShop, for your own goods.
 
@@ -89,7 +89,7 @@ Unfortunately, we don't have time to spend on all breakout sessions but we also 
 # Thanks 
 
 We would like to say thanks to Google for organizing the event and to all participants for being active and passionate about improving security.
-Spending times with security folks has been very interesting, people know they need each other to go further.
+Spending time with security folks has been very interesting, people know they need each other to go further.
 
 
 [bc-breaks]: https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/#bc-breaks

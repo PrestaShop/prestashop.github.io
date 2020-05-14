@@ -2,7 +2,7 @@
 layout: post
 title:  "Do you speak PrestaShop? – April 2020 edition"
 subtitle: "Where you'll learn that PrestaShop is fully available in Danish"
-date:  2020-05-14 09:10:11
+date:  2020-05-20 10:00:00
 authors: [JuneByun]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

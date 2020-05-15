@@ -4,6 +4,7 @@ title:  "CMS Security Summit with Google"
 subtitle: "Security is very important for PrestaShop"
 date:   2020-05-14 17:00:00
 authors: [ PierreRambaud ]
+image: /assets/images/theme/meta-logo-build.png
 icon: icon-padlock
 tags: [security]
 ---

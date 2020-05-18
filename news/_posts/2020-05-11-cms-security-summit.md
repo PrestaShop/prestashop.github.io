@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CMS Security Summit 2019 with Google"
+title:  "CMS Security Summit 2020 with Google"
 subtitle: "PrestaShop and CMS work together with Google for a safer web"
 date:   2020-05-14 17:00:00
 authors: [ PierreRambaud ]

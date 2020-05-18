@@ -9,7 +9,7 @@ icon: icon-padlock
 tags: [security]
 ---
 
-[Once again](https://build.prestashop.com/news/we-were-at-the-cms-security-summit-with-google/), open source CMSs Security leads shared knowledge together at an event organized by Google in 2019 in Munich.
+[Once again](https://build.prestashop.com/news/we-were-at-the-cms-security-summit-with-google/), open source CMSs Security leads shared knowledge together at an event organized by Google in 2020 in Munich.
 
 
 # Lightning talks & Security technologies

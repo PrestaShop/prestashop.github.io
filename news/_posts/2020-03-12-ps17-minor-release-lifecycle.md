@@ -4,6 +4,7 @@ title: "PrestaShop 1.7 minor release lifecycle"
 subtitle: "The journey of a minor release of PS 1.7, step by step"
 date:   2020-03-24 14:00:00
 authors: [ MathieuFerment ]
+image: /assets/images/theme/meta-logo-build.png
 icon: icon-code
 tags:
  - 1.7

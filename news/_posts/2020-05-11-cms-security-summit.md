@@ -14,9 +14,9 @@ tags: [security]
 
 # Lightning talks & Security technologies
 
-After spending the first evening with stakeholders and meeting the newcomers over a few beers, we spent two days at Google Munich office and [Information Security Hub (ISH)](https://www.ish-muc.com/) to speak about what we did since last year and talk about what's coming.
+After spending the first evening with stakeholders and meeting the newcomers over a few beers, we spent two days at Google's Munich office and [Information Security Hub (ISH)](https://www.ish-muc.com/) to talk about what we have achieved since last year and about what's coming.
 
-And of course we learnt a lot about each other.
+And of course we learned a lot about each other.
 
 We had lightning talks as well as conferences about multiple technologies focusing on security and data privacy.
 

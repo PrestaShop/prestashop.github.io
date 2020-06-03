@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A definition of the ‘good first issue’ label"
+title:  "A definition of the 'good first issue' label"
 subtitle: "A new way to onboard contributors on the PrestaShop project"
 date:  2020-06-03 09:10:11
 authors: [LouiseBonnard]

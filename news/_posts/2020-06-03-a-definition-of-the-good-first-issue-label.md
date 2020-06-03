@@ -9,7 +9,7 @@ image: /assets/images/2020/06/good-first-issue.png
 tags: [community, contribution, github, contribute]
 ---
 
-Earlier this year, the PrestaShop product team decided to use new leverage to help new contributors participate in the PrestaShop project on [GitHub](https://github.com/PrestaShop/PrestaShop): the ‘good first issue’ label. 
+Earlier this year, the PrestaShop product team decided to use new leverage to help new contributors participate in the PrestaShop project on [GitHub](https://github.com/PrestaShop/PrestaShop): the 'good first issue' label. 
 
 But what is it exactly? And how does it work? Below are some questions raised to give it a proper definition and specify its use:
 
@@ -18,7 +18,7 @@ But what is it exactly? And how does it work? Below are some questions raised to
 
 People participating in the PrestaShop project do not have the same purpose, they also do not share the same skills. And because all profiles should be able to contribute, the goal is to offer many ways of getting involved.
 
-Among other [contribution](https://devdocs.prestashop.com/1.7/contribute) possibilities, the ‘[good first issue](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)’ label allows a smooth onboarding to the PrestaShop open source project on GitHub. Indeed it gets the list of all bugs or improvements estimated with low complexity that do not have any pull request linked to yet. Anyone can pick one and start working on it!
+Among other [contribution](https://devdocs.prestashop.com/1.7/contribute) possibilities, the '[good first issue](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)' label allows a smooth onboarding to the PrestaShop open source project on GitHub. Indeed it gets the list of all bugs or improvements estimated with low complexity that do not have any pull request linked to yet. Anyone can pick one and start working on it!
 
 Of course, it won’t avoid unexpected complexity to pop up - PrestaShop’s code hidden talent - but we try our best to sort the most transparent issues out with this label. And you can always ask questions and get help.
 
@@ -38,9 +38,9 @@ Go to the issues tab on the GitHub project [here](https://github.com/PrestaShop/
 ![Good First Issues banner](/assets/images/2020/06/good-first-issue.png)
 
 
-## :clipboard: What makes a ‘good first issue’?
+## :clipboard: What makes a 'good first issue'?
 
-Here is the touchy part: how to define a good first issue when all situations are different and when its solution might bring up extra complications. A few elements are studied to decide whether or not an issue is good for first-timers.
+Here is the touchy part: how to define a first issue when all situations are different and when its solution might bring up extra complications. A few elements are studied to decide whether or not an issue is good for first-timers.
 
 
 **Severity of the bug**

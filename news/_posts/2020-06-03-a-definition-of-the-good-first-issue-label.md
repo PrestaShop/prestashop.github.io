@@ -2,7 +2,7 @@
 layout: post
 title:  "A definition of the 'good first issue' label"
 subtitle: "A new way to onboard contributors on the PrestaShop project"
-date:  2020-06-03 09:10:11
+date:  2020-06-03 16:15:00
 authors: [LouiseBonnard]
 icon: icon-github-alt
 image: /assets/images/2020/06/good-first-issue.png

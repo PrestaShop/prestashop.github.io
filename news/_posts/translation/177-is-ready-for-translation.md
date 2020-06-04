@@ -24,7 +24,7 @@ It is important to translate those files as much as possible because it will all
 
 Also, it is a useful time to notice mistranslations, discover the new minor version and thus work on more precise translation. Let’s all accomplish this mission! New strings are already looking forward to meeting you, pillar translators from across the globe, on the Crowdin projects. :blush:
 
-And of course, you are all encouraged to [test it](https://build.prestashop.com/news/prestashop-1-7-7-0-beta-release/) and give us your feedback!
+And of course, everybody in the community is encouraged to [test it](https://build.prestashop.com/news/prestashop-1-7-7-0-beta-release/) and give feedback!
 
 
 ## What is new in 1.7.7? :sparkles:

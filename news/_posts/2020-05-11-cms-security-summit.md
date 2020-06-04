@@ -63,7 +63,7 @@ At the beginning of the year, we experienced a [major security incident](https:/
 
 For example, we wanted to report the incident as an official [CVE](https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures). The root cause was similar to [CVE-2017-9841](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9841) but with a slightly different context (involving CGI/FastCGI). We tried to reach out to [CVE authority](https://cve.mitre.org/) in order to either update the entry or create a new one. However, as of June 2020, we have not received an answer yet.
 
-PSR-9 and PSR-10 are not yet enforced, so PrestaShop maintainers decided to use one of the latest GitHub features: [GitHub Advisories](https://help.github.com/en/github/managing-security-vulnerabilities/about-github-security-advisories). After many weeks, we got positive feedbacks from the community about us being more transparent on security issues, thanks to this community!
+Since PSR-9 and PSR-10 are not yet enforced, PrestaShop maintainers decided to start using one of the latest GitHub features: [GitHub Advisories](https://help.github.com/en/github/managing-security-vulnerabilities/about-github-security-advisories). After many weeks of use, the maintainer team has been receiving positive feedback from the community about us being more transparent on security issues. A big up to the community!
 
 That said, the Core team will never go as far as disclosing how to reproduce (and exploit) security issues. You will never find any scripts in advisories or in CVE declared by PrestaShop. This is to avoid making hackers' work easier.
 

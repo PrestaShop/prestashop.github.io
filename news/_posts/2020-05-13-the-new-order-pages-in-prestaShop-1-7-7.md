@@ -18,7 +18,7 @@ With the release of the new version 1.7.7, this article has the ambition to deta
 
 We are thrilled to introduce to you the new features around the order process. But before jumping into the features awaiting the merchants in the new version, we would like to share our thinking process.
 
-**First, why rethinking this page in particular?**
+**Firstly, why rethinking this page in particular?**
 
 The pages were becoming particularly unpleasant to use because of its old visual appearance and its hierarchy of information that led to inefficiency and misunderstanding for our merchants.
 
@@ -56,7 +56,7 @@ It allows modules to add new elements on the preview. For more specific needs, t
 
 
 &nbsp;
-- **Editable order status labels:** Allows to change the order status directly from the listing.
+- **Editable order status labels:** Allows changing the order status directly from the listing.
  
 ![Order page - Edit a status](/assets/images/2020/05/editable_order_statuses_labels.png "Edit a status")
 
@@ -93,7 +93,7 @@ The statuses color is set by default. They are still configurable in the Order S
 &nbsp;
 - **Link to the customer's profile**: Creates easy access to the customer's profile by clicking on its name.
 
-![Right click on the customer's link](/assets/images/2020/05/link-customer.png "Right click on the customer's link")
+![Right-click on the customer's link](/assets/images/2020/05/link-customer.png "Right click on the customer's link")
 
 ***What is the goal***: 
 
@@ -105,7 +105,7 @@ Clicking on the customer name opens the customer page in a new tab.
 
 
 &nbsp;
-- **Bulk action redesign** : The bulk actions' design and its position were updated to make it more visible and quicker to use.
+- **Bulk action redesign**: The bulk actions' design and its position were updated to make it more visible and quicker to use.
 
 ![Change_order's statuses](/assets/images/2020/05/choose_an_order.png "Change_order's statuses")
 
@@ -161,7 +161,7 @@ Easy check and verification directly from the list.
 
 ***How it works***:
 
-For customized products - files or texts are displayed below the product. The files are added in a new column on the same line. The texts are displayed below each other.
+For customized products - files or texts are displayed below the product. The files are added to a new column on the same line. The texts are displayed below each other.
 
 ![Customized products](/assets/images/2020/05/custom-product.png)
 
@@ -200,7 +200,7 @@ The hooks have been relocated to more strategic positions to match the layout re
 
 Find [here](https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.7/) the documentation on the hooks' mapping. A new hook grouping the actions of the top of the order page has also been added to replace displayBackOfficeOrderActions which will no longer have the same layout.
 
-The detailed changes can be found on the following pull requests on github [#16144](https://github.com/PrestaShop/PrestaShop/pull/16144) and [#17734](https://github.com/PrestaShop/PrestaShop/pull/17734).
+The detailed changes can be found on the following pull requests on GitHub [#16144](https://github.com/PrestaShop/PrestaShop/pull/16144) and [#17734](https://github.com/PrestaShop/PrestaShop/pull/17734).
 
 A summary of the hooks impacted:
 
@@ -212,7 +212,7 @@ A summary of the hooks impacted:
   - displayAdminOrderTabContent (replace displayAdminOrderContentOrder and displayAdminOrderContentShip)
   - actionGetAdminOrderButtons
 
-Over the last few months, PrestaShop has been working hard to deliver these new features and many bugs fixes on these pages. 31 bugs, including 8 majors, 16 minors and 3 trivials, have been fixed from the previous 1.7 and 1.6 versions. For more information, you can find [the way we classified the severity of the bug](https://build.prestashop.com/news/severity-classification/) and [the list of the fixed bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3AOrder+milestone%3A1.7.7.0+label%3ABug+-label%3ARegression+sort%3Acreated-asc+is%3Aclosed). Overall, the order project has ensured more stability by correcting ⅔ of the major bugs of the order page.
+Over the last few months, PrestaShop has been working hard to deliver these new features and many bugs fix on these pages. 31 bugs, including 8 majors, 16 minors and 3 trivials, have been fixed from the previous 1.7 and 1.6 versions. For more information, you can find [the way we classified the severity of the bug](https://build.prestashop.com/news/severity-classification/) and [the list of the fixed bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3AOrder+milestone%3A1.7.7.0+label%3ABug+-label%3ARegression+sort%3Acreated-asc+is%3Aclosed). Overall, the order project has ensured more stability by correcting ⅔ of the major bugs of the order page.
 
 We encourage you to try out the features on the beta version and share any feedback [here](https://github.com/PrestaShop/PrestaShop/issues/new/choose). Your opinion is important to us. We are counting on you to share your feedback and new ideas with us so that we can continue to develop the PrestaShop that you need.
 

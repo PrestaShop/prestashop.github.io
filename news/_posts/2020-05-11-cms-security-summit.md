@@ -2,7 +2,7 @@
 layout: post
 title:  "CMS Security Summit 2020 with Google"
 subtitle: "PrestaShop and CMS work together with Google for a safer web"
-date:   2020-06-02 17:00:00
+date:   2020-06-04 17:00:00
 authors: [ PierreRambaud ]
 image: /assets/images/theme/meta-logo-build.png
 icon: icon-padlock

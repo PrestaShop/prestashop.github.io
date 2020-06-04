@@ -20,7 +20,7 @@ Everybody is invited to translate, spot mistakes, and validate to get an accurat
 
 A few weeks ago, the beta version of PrestaShop 1.7.7.0 was launched. Our PrestaShop team is very excited about it and hope that you will be delighted as well because new features and big improvements have been made!
 
-It is important to translate those files as much as possible because it will allow you, as translators, to get an in-context environment of translation. As a consequence, you will have more time to find the most accurate translation for the official release, when  it will be available to worldwide users.
+It is important to translate those files as much as possible because it will allow you, as translators, to get an in-context environment of translation. As a consequence, you will have more time to find the most accurate translation for the official release, when it will be available to worldwide users.
 
 Also, it is a useful time to notice mistranslations, discover the new minor version and thus work on more precise translation. Let’s all accomplish this mission! New strings are already looking forward to meeting you, pillar translators from across the globe, on the Crowdin projects. :blush:
 

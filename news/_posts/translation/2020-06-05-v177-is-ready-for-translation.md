@@ -29,7 +29,7 @@ And of course, everybody in the community is encouraged to [test it](https://bui
 
 ## What is new in 1.7.7? :sparkles:
 
-A new interesting feature introduced in the 1.7.7 version is the fuzzy search. Its role is to improve PrestaShop's native search functionality by taking into account misspelling or error inputs. For instance, if you want to write “bird” but write a typo, like “beard”, the fuzzy search feature will automatically recognize the word and change it to “bird”. Cool right? :wink:
+A new interesting feature introduced in the 1.7.7 version is the fuzzy search. Its role is to improve PrestaShop's native search functionality by finding words that are similar to the one entered. For instance, if you want to write “bird” but write a typo, like “brid”, the fuzzy search feature will look into your whole catalog, and find articles that have a title or a description containing words that resemble the one you typed. If you have articles with the word “bird” in it, the fuzzy search will calculate that “brid” is close to “bird”. It will thus show you a list of articles including the word “bird”, in which you can choose. Cool right? :wink:
 
 In this minor version, several main features can be pinpointed such as the order management system rework, which has been improved for merchants to save time. As it will be smoother, you won’t have to go back and forth in each customer’s order.
 

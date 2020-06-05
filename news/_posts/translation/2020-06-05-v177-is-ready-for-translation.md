@@ -13,7 +13,7 @@ PrestaShop 1.7.7 is now freshly baked and ready for translation and validation! 
 
 Everybody is invited to translate, spot mistakes, and validate to get an accurate translation catalog for the release.
 
-![PrestaShop 1.7.7 Translation](assets/images/2020/06/help-us-translate-177-dark.png)
+![PrestaShop 1.7.7 Translation](/assets/images/2020/06//help-us-translate-177-dark.png)
 
 
 ## The beta 1.7.7 is released :rocket:

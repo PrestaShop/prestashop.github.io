@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "1.7.7 is ready for translation"
-subtitle: "On your marks, set, translate :fire:"
+subtitle: "On your marks, set, translate"
 date:   2020-06-05 11:00:00
 authors: [ JuneByun ]
 image: assets/images/2020/06/help-us-translate-177-dark.png

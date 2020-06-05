@@ -216,4 +216,4 @@ Over the last few months, PrestaShop has been working hard to deliver these new 
 
 We encourage you to try out the features on the beta version and share any feedback [here](https://github.com/PrestaShop/PrestaShop/issues/new/choose). Your opinion is important to us. We are counting on you to share your feedback and new ideas with us so that we can continue to develop the PrestaShop that you need.
 
-We would like to thank WebXY, YATEO, Ecomiz and VAISONET and all the merchants interviewed for taking the time to exchange with us.
+We would like to thank [WebXY](https://www.webxy.com/), [YATEO](https://www.yateo.com/), [Ecomiz](https://www.ecomiz.com/) and [VAISONET](https://www.vaisonet.com/fr) and all the merchants interviewed for taking the time to exchange with us.

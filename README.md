@@ -2,6 +2,7 @@
 Official blog for PrestaShop development straight from the product and core dev team.
 
 test
+test2
 
 https://build.prestashop.com
 

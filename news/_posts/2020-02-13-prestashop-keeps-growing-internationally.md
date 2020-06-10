@@ -37,7 +37,7 @@ _**What is next?**_
 
 _**Want to contribute?**_
  
-Gather all official data (languages, units, taxes, etc.) and create a pull request on GitHub to add a new file in [localization](https://github.com/PrestaShop/PrestaShop/tree/develop/localization), then read the following instructions...
+Gather all official data (languages, units, taxes, etc.) and create a pull request on GitHub to add a new file in [localization](https://github.com/PrestaShop/LocalizationFiles), then read the following instructions...
 
 
 ### :nerd_face: And how to do so?
@@ -75,7 +75,7 @@ Here is an example of how a localization pack file should look like:
 </localizationPack>
 ````
 
-Need to read an in-situ example? Have a look at the [Azerbaijan localization pack](https://github.com/PrestaShop/PrestaShop/blob/develop/localization/az.xml) to help you contribute!
+Need to read an in-situ example? Have a look at the [Azerbaijan localization pack](https://github.com/PrestaShop/LocalizationFiles/blob/master/az.xml) to help you contribute!
 
 
 <div class="alert alert-info" role="alert">

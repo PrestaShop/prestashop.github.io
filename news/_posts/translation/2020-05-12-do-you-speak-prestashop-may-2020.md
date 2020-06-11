@@ -124,7 +124,7 @@ At the end of May 2020, some languages would still benefit from some proofreadin
  
 If you wish to help to proofread what has been translated, please contact PrestaShop with the language you'd like to proofread: just send an email to translation@prestashop.com. Your help is needed!
  
-If you haven't joined us on Crowdin yet, [it's never too late](https://crowdin.com/project/prestashop-official) :wink:
+If you haven't joined us on Crowdin yet, [it's never too late](https://crowdin.com/project/prestashop-official)! :wink:
  
 If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let me know: I'll include a word about it in the next monthly report.
  

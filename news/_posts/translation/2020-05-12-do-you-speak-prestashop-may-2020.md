@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Do you speak PrestaShop? – May 2020 edition"
-subtitle: "Where you'll learn that PrestaShop is fully available in 11 languages"
+subtitle: "Where you'll learn that the Swahili translation project is waiting for you"
 date:  2020-06-12 09:10:11
 authors: [ JuneByun ]
 icon: icon-world

@@ -110,7 +110,7 @@ Of course, this is highlighting the languages that made some progress with new t
  
 ## Languages that need (more) proofreaders
  
-A translated string will not be available in PrestaShop as long as it is not validated. For this reason, it’s important to keep a high level of validated strings vs. translated strings, to make sure everyone benefits from the latest translations :fire:
+A translated string will not be available in PrestaShop as long as it is not validated. For this reason, it’s important to keep a high level of validated strings vs. translated strings, to make sure everyone benefits from the latest translations! :fire:
  
 At the end of May 2020, some languages would still benefit from some proofreading:
  

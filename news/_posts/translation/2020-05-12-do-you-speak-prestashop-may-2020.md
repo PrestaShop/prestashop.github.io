@@ -32,7 +32,7 @@ It might be inconvenient for now but PrestaShop's developers team have in the ba
 
 ### :two_hearts: Special thanks to newcomers
 
-Many people subscribe to the project(s) of their choice each month, but not so many start translating straightaway. For that reason, the PrestaShop team would like to thank the ones who rushed into the effort immediately! So lots of love to the dedicated: choefer, Çocuk Saatleri (cocuksaatleri), nenowasaleh, Pacho Gonzalez (Pachogzz), Puunaama1 and Stella Georgakopoulou (Stella_Geo). See you soon on Crowdin… and in PrestaShop :stuck_out_tongue_winking_eye:
+Many people subscribe to the project(s) of their choice each month, but not so many start translating straightaway. For that reason, the PrestaShop team would like to thank the ones who rushed into the effort immediately! So lots of love to the dedicated: choefer, Çocuk Saatleri (cocuksaatleri), nenowasaleh, Pacho Gonzalez (Pachogzz), Puunaama1, and Stella Georgakopoulou (Stella_Geo). See you soon on Crowdin… and in PrestaShop. :stuck_out_tongue_winking_eye:
 
 
 ## A few stats

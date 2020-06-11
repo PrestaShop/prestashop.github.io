@@ -95,7 +95,7 @@ At the end of May 2020, PrestaShop 1.7.7 was fully available (= 100% translated 
  
 ## Languages with the best evolution
  
-In comparison with April 2020, the following languages had the best progress thanks to the translation community :sparkles:
+In comparison with April 2020, the following languages had the best progress thanks to the translation community:
  
 * **Bosnian** (+27% to reach 58% approved)
 * **Esperanto** (+16% to reach 25% translated)

@@ -2,7 +2,7 @@
 layout: post
 title:  "Do you speak PrestaShop? – May 2020 edition"
 subtitle: "Where you'll learn that the Swahili translation project is waiting for you"
-date:  2020-06-12 09:10:11
+date:  2020-06-12 14:30:11
 authors: [ JuneByun ]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg
@@ -16,7 +16,7 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 ## Project news
 
 
-### First news, Swahili will be available in PrestaShop 1.7.8 :tada:
+### First news, Swahili will be available in PrestaShop 1.7.8! :tada:
 
 I have the pleasure to announce that PrestaShop will finally be available in Swahili in the 1.7.8 version! I thus encourage you to translate, suggest, and proofread the PrestaShop Swahili 1.7.7 translation project. Currently, there aren’t many Swahili translators on PrestaShop’s Crowdin community, so if you know any Swahili natives, spread the word and do not hesitate to invite them to participate in the [PrestaShop Swahili translations project](https://crowdin.com/project/prestashop-official/sw#), they will be more than welcome! :heart_eyes:
 
@@ -103,7 +103,7 @@ In comparison with April 2020, the following languages had the best progress tha
 * **Esperanto** (+16% to reach 25% translated)
 * **Catalan** (+9% to reach 100% translated)
 
-![Best translation progress for May 2020](/assets/images/2020/06/Build-Crowdin-progress-May20.png)
+![Best translation progress for May 2020](/assets/images/2020/06/build-crowdin-progress-may20.jpg)
 
 A huge thank you to all the contributors!
 
@@ -122,7 +122,7 @@ At the end of May 2020, some languages would still benefit from some proofreadin
 * **Esperanto** (25% vs 0%).
 * **Tagalog** (48% vs 24%).
 
-![Languages that need proofreading](/assets/images/2020/06/Build-Crowdin-proofreading-May20.png)
+![Languages that need proofreading](/assets/images/2020/06/build-crowdin-proofreading-may20.png)
 
 If you wish to help to proofread what has been translated, please contact PrestaShop with the language you'd like to proofread: just send an email to translation@prestashop.com. Your help is needed!
 

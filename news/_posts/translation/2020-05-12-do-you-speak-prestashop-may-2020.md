@@ -68,7 +68,7 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
 
 | | Proofreader | Language | # Words
 |-| ---------- | -------- | ----------------
-1. | Rijad Osmanovic (rijado) | Bosnian | 40,220
+ 1. | Rijad Osmanovic (rijado) | Bosnian | 40,220
  2. | AmirRzd | Persian | 954
  3. | SeongHyeon Cho (jaymz9634) | Korean | 832
  4. | Gerardas (gerardas) | Lithuanian | 635

@@ -24,10 +24,10 @@ I have the pleasure to announce that PrestaShop will finally be available in Swa
 
 I would like to take this opportunity to explain to you how translation packs are updated in PrestaShop now, after you translate and approve strings.
 
-Translations are updated everyday with a 24 hours delay. Every morning our developers send an export request to Crowdin, but since the exporting process takes some time, they download the export made the day before and send the files to [Github](https://github.com/PrestaShop/TranslationFiles). When the repository is updated, a robot will gather the translation files and make them available to download. 
+Translations are updated everyday with a 24 hours delay. Every morning an export request is sent to Crowdin, but since the exporting process takes some time, the export made the day before is downloaded and the files are sent to [Github](https://github.com/PrestaShop/TranslationFiles). When the repository is updated, a robot will gather the translation files and make them available to download. 
 But one detail to take into account is that only translations of the last version, the 1.7.7, are updated. 
 
-Since PrestaShop 1.7.7 hasn’t been officially released yet, what you can do is to translate and approve strings of the 1.7.7 version, retrieve these strings from translationfiles and upload them on: app/Resources/Translations/{localeCode}. 
+Since PrestaShop 1.7.7 hasn’t been officially released yet, what you can do is to translate and approve strings of the 1.7.7 version, retrieve these strings from translationfiles and upload them on: app/Resources/Translations/{localeCode}. (Reminder: {localeCode} has to be changed by the code of the concerned language, for instance, by en-us if it's English).
 It might be inconvenient for now but PrestaShop's developers team have in the backlog projects to make all new translations available for all shops from the 1.7.5 version and on, so let’s keep a positive mind! :sparkles:
 
 ### :two_hearts: Special thanks to newcomers

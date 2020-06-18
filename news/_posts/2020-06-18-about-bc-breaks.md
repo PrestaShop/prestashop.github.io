@@ -1,0 +1,292 @@
+---
+layout: post
+title: "A deeper look at Backward Compatibility Breaks"
+subtitle: "What exactly is a BC break and how do they relate to PrestaShop"
+date:   2020-06-18
+authors: [ MathieuFerment ]
+image: /assets/images/theme/meta-logo-build.png
+icon: icon-code
+tags:
+---
+
+## A deeper look at Backward Compatibility Breaks
+
+This article explains what exactly are Backward Compatibility Breaks also known as Breaking Changes or BC breaks and how it influences how an open source project like PrestaShop is built. It explains the different types of BC breaks, why they are needed sometimes and how PrestaShop maintainers manage them.
+
+
+### What does BC break man
+
+If you look at issues or Pull Requests on PrestaShop GitHub repository, you might notice answers like "Sorry, we cannot do that because it would introduce a BC break" or "Cannot be done without a BC break" for some suggested changes.
+
+_You might be familiar with the concept, however if you are not, here is a short explanation:_
+
+PrestaShop is a Open Source Project that is being built with the idea that people will use it as a foundation to build their own project. Some will use it as a CMS and extend it with modules and themes. Some will use it as a shop system and customize parts of the e-commerce process. Some will even use it for either its Front-Office or Back-Office but handle the other part in another system, like an ERP or a headless CMS, and manage the communication between the two systems through API calls.
+
+All of these people will use code and logic that is written inside the software. However, as time passes, new versions of the software are released and this code and logic are changed to be improved, upgraded, made faster or more secure. When, from one version to another, the code changes in a way that breaks the external code that has been built to use it, this is a Breaking Change.
+
+Here is a very simple example:
+
+```php
+public function transferPrices($product)
+```
+becoming
+```php
+public function transferPrices($product, $prices)
+```
+
+If you have some php code using the function `transferPrices()`, when the function changes, the code that was working previously will now crash with following error message:
+```php
+PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transferPrices(), 1 passed and exactly 2 expected
+```
+
+So this is what a Breaking Change is: a change in the code that, when introduced into the software, might break some tools, modules, themes, whatever that is using PrestaShop Core code. What happens when a BC break is introduced is that bug reports like "my code, that was working with previous version, is broken when I run it with the new version !" start piling up in GitHub!
+
+## SemVer
+
+The concept of BC Break is not specific to PrestaShop. This is actually a very common issue for all code that is being used as a foundation for other software to use: operating systems like Linux, libraries like Guzzle, tools like cURL, frameworks like Symfony ... and CMS like PrestaShop.
+
+In order to make it easier for the people using these codebases as foundations to handle these changes, [Tom Preston Werner](http://tom.preston-werner.com/) has invented a convention: [SemVer](https://semver.org/). [SemVer](https://semver.org/) aims to help people understand immediately, when seeing a new version of software, what is contained inside it.
+
+SemVer requires a version number to be constituted of 3 parts: MAJOR.MINOR.PATCH (example: 3.5.27) .
+
+### SemVer summary
+
+```
+Given a version number MAJOR.MINOR.PATCH, increment the:
+MAJOR version when you make incompatible API changes,
+MINOR version when you add functionality in a backwards compatible manner, and
+PATCH version when you make backwards compatible bug fixes.
+```
+
+When you release a new version of your software, if the new version only contains bug fixes, it is a patch version and you increase the z.
+
+> Example: 3.5.28
+
+When you release a new version of your software, if the new version only contains bug fixes and new features, but everything that was working before still works, it is a minor version and you increase the y and reset the z.
+
+> Example: 3.6.0
+
+When you release a new version of your software, if the new version number contains code changes that might break other software relying on it, it is a major version and you increase the x and reset the y and the x.
+
+> Example: 4.0.0
+
+<hr>
+
+As a developer who builds software relying on this project, when you see the new version, you know that:
+
+- If it's a patch version, upgrading to use the new version will bring no change in behavior, it will only bug fixes
+- If it's a minor version, upgrading to use the new version might bring new behaviors you can use but all behaviors you are using are still working
+- If it's a major version, you need to check what has been changed to see whether you need to adjust your code
+
+### Why do projects do BC breaks ?
+
+When reading this, you might wonder why people release new major versions of a software. If everybody would only release minor versions following SemVer, nobody would ever be afraid of upgrading its software because of BC breaks!
+
+Unfortunately BC breaks are necessary for software to evolve. Not all software changes can be done while maintaining backward compatibility, and BC breaks are a necessary step for a project to evolve which is necessary to ensure it continues to fit the needs of its user community, who evolve in time.
+
+## Hard BC breaks and soft BC breaks
+
+We could define two categories of BC breaks: hard BC breaks and soft BC breaks.
+
+Hard BC breaks are changes that will make your code crash because it cannot be run anymore.
+
+Example of a hard code BC break: (same as above)
+```php
+public function transferPrices($product, $prices) => public function transferPrices($product, $prices)
+```
+
+On the contrary, soft BC breaks are changes that, syntaxically, do not break your code but will nevertheless modify how the main project behaves and might require you to adjust your code accordingly. These changes are harder to handle because less obvious to spot.
+
+Example of a soft BC break:
+```php
+public function transferPrices($product)
+{
+	return array(1 => '1', 2 => '2');
+}
+```
+becomes
+```php
+public function transferPrices($product)
+{
+	return array(1 => 1, 2 => 2);
+}
+```
+In this last snippet of code, the returning value is is an array. Before the change, this is an array of strings while after the change it has become an array of integers. This small change might not throw an error in external code however it might affect their behavior and introduce bugs in a vicious manner.
+
+<hr>
+
+*Now let's have a look at different BC types of BC breaks*
+
+
+
+## Code BC breaks
+
+Code BC breaks are the most common BC breaks, and so far we have only been talking about them.
+
+The two examples used above, in "Hard BC breaks and soft BC breaks", are code BC breaks.
+
+### Deprecations
+
+There is a standard mechanism to deal with code BC breaks: [](https://en.wikipedia.org/wiki/Deprecation). The idea of deprecation is to put inside the code a log message, that should be read by developers, to tell them what parts of the code will be removed in the next major version. This way, developers can be informed early of the parts of the code they should not rely on in the future and adapt accordingly. This mechanism is widely used in the software world and has proven its effectiveness.
+
+### How PrestaShop maintainers handle this type of BC break
+
+We use the deprecations standard.
+
+## HTML Markup BC break
+
+Since PrestaShop is a web project, we have hundreds of HTML templates inside the codebase that evolve in time. These templates have a structure and markers such as IDs and classes, that evolve too. These evolutions can introduce a BC break.
+
+For example a lot of JavaScript code, such as jQuery, relies on HTML IDs and classes to select DOM elements to modify. This means that modifying these markers or removing them... break the JavaScript behavior relying on them !
+
+In order to follow SemVer at PrestaShop, we also make sure we keep HTML markup backward compatible.
+
+**Hard markup BC break example:**
+```html
+<div id="my-id"><a id="link" href="#anchor">Link</a></div>
+```
+becomes simply
+```html
+<div id="my-id"><a id="anchor" href="#anchor">Link</a></div>
+```
+In the above example, the ID "link" has been renamed to "anchor". Any external code that relied on this selector will now fail.
+
+**Soft BC break example:**
+```html
+<div id="my-id"><a id="link" href="#anchor">Link</a></div>
+```
+becomes
+```html
+<div id="link"><a href="#anchor">Link</a></div>
+```
+In the above example, the ID "link" was moved from the `<a>` to the `<div>`. Any external code that relied on this selector might fail because of this structural change.
+
+### How PrestaShop maintainers handle this type of BC break
+
+We try not to introduce such changes as there is no such thing as deprecation for markups. If however we are forced to do so, we try to inform users of the change into the Release Note.
+
+## Dependency BC break
+
+As most big projects, PrestaShop "is built on the shoulders of giants" and use a set of PHP and JavaScript dependencies. These dependencies provide great software assets that are being used to implement all of PrestaShop behaviors and are are shipped with PrestaShop codebase inside the final ZIP archive.
+
+This means that any software built on top of PrestaShop, such as modules, can use these dependencies too ! And consequently removing or modifying these dependencies can introduce a BC break too.
+
+This type of BC break is especially hard to deal with because we have no control on these packages. Sometimes, in order to avoid introduce a dependency BC break, we decided to maintain a package ourselves rather than using the latest version because of the hard BC break it would introduce.
+
+**Hard BC break example:**
+```html
+<link href="/js/jquery/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+```
+If the snippet above, which is responsible for loading the `fancybox` jQuery plugin, is removed, any external JavaScript code that runs and uses it will fail.
+
+**Soft BC break example:**
+
+Just like PrestaShop, dependencies too have release lifecycles. In order to fix known bugs, benefit from the new features being implemented and sometimes to patch security issues, we regularly upgrade our dependencies. 
+Upgrading to a new version might break existing code that rely on specific behaviors of a version.
+
+### How PrestaShop maintainers handle this type of BC break
+
+We never remove dependencies except the case where it contains a security issue.
+
+When we need to upgrade a dependency, we try to upgrade it to a version offering backward compatibility, following SemVer guidelines. We read the Changelog to find possible BC breaks.
+
+If the dependency requires an update (example: if there is a known vulnerability embedded) and the upgrade introduces BC breaks, we sometimes decide to maintain ourselves the dependency in order to provide the security _and_ the backward compatibility. But this is a huge maintenance cost.
+
+## Templating BC break
+
+Since PrestaShop is a web project, we use PHP templating engines Smarty and Twig to render our templates and provide modules and themes developers the ability to extend our Smarty and Twig templates.
+
+However Twig templates use a set of available variables and functions that are loaded into templates. For example:
+```php
+$tpl = $this->context->smarty->createTemplate(_PS_THEME_DIR_ . 'product-list-colors.tpl');
+$tpl->assign(['id_product' => (int) $product['id_product']]);
+```
+
+Modifying these variables and functions become a BC break too. This means variable being injected in our templates become part of the PrestaShop API that is being directed by SemVer.
+
+**Hard BC break example:**
+```php
+$tpl->assign(['id_product' => (int) $product['id_product']]);
+```
+becomes simply
+```php
+$tpl->assign(['product_id' => (int) $product['id_product']]);
+```
+Any Smarty template using the variable `id_product` will now crash with error message `Notice: Undefined index: id_product`
+
+**Soft BC break example:**
+```php
+$tpl->assign(['id_product' => (int) $product['id_product']]);
+```
+becomes
+```php
+$tpl->assign(['id_product' => (string) $product['id_product']]);
+```
+In the snippet of code above, the variable type was changed from integer to string. This might break Smarty template using this variable although thanks to PHP [Type juggling](https://www.php.net/manual/en/language.types.type-juggling.php) it might also continue to work.
+
+### How PrestaShop maintainers handle this type of BC break
+
+We try not to introduce such changes as there is no such thing as deprecation for Smarty/Twig variables and structure. If however we are forced to do so, we try to inform users of the change into the Release Note.
+
+## Database BC break
+
+PrestaShop modules can do pretty much anything once installed in PrestaShop, including querying the MySQL database. To do so they can either use the PrestaShop ORM or write custom SQL queries. If they use SQL queries, they will consequently write table and column names. If we decide to modify PrestaShop SQL schema and modify table and column names, we break the code of these modules.
+
+This means that in PrestaShop we consider that the SQL schema is part of the PrestaShop API that is being directed by SemVer, and any change of this schema into a minor or patch version must be done in a backward compatible way.
+
+**Hard BC break example:**
+```SQL
+SELECT ps_customer.lastname FROM ps_customer WHERE ps_customer.id_customer = 1
+```
+If `customers` SQL table is renamed to `end-users`, the SQL query above will fail with error message `Table 'ps_customers' doesn't exist`
+
+**Soft BC break example:**
+```SQL
+SELECT ps_customer.lastname FROM ps_customer WHERE ps_customer.id_customer = 1
+```
+If we decide to stop storing first names and last names separately, we might put the full name inside `lastname` column. The SQL query above will return a valid result, but the returned data will be different from before.
+
+### How PrestaShop maintainers handle this type of BC break
+
+We try not to introduce such changes as there is no such thing as deprecation for database schema.
+If however we are forced to modify the schema in a backward incompatible manner, we usually provide clear steps and help for developers to upgrade (example: keeping an old column to help migrating the data although it is not used anymore).
+
+## Folders and files BC break
+
+This is the last type of BC break we monitor in PrestaShop.
+
+PrestaShop is a complex software and many of its features require the usage of a specific structure of folders: storing PDF files, storing images, importing CSV files, or installing modules.
+
+This folder structure is standard and documented, and modules developers can use it to implement behaviors related to these features. Which means that if we decide to modify this folder structure, we break the modules relying on them. And here is our last type of BC break.
+
+So we cannot rename a folder - or even a file - without introducing a BC break.
+
+**Hard BC break example:**
+
+Deleting or removing a folder make it impossible to use for external code.
+
+**Soft BC break example:**
+
+Modifying how files are stored inside this structure, consequently possibly affecting the use of this folder by external code.
+
+### How PrestaShop maintainers handle this type of BC break
+
+We try not to introduce such changes as there is no such thing as deprecation for folders or files.
+If however we are forced to modify it in a backward incompatible manner, we usually provide clear steps and help for developers to upgrade (example: keeping an old folder to help migrating the data although it is not used anymore).
+
+On the server side, using [symbolic links](https://en.wikipedia.org/wiki/Symbolic_link) might mitigate the issue.
+
+## BC breaks can be done for security
+
+PrestaShop 1.7 is a major version and is currently evolving through minor versions (PS 1.7.6, PS 1.7.7) which means that maintainers are not supposed to introduce BC breaks according to SemVer.
+
+The PrestaShop team tries its very best to achieve this goal however there is one situation where backward compatibility is not a priority anymore: security. If we find that a specific set of code inside PrestaShop codebase (or in its dependencies) is a threat to the software and its community of users, we will take the necessary measures to eliminate it, and sometimes this requires introducing BC breaks.
+
+So we value the security of PrestaShop users more than backward compatibility.
+
+## Conclusion
+
+Working with the constraint of SemVer is a big challenge for everybody working on the PrestaShop project ! Not only does this mean to always keep in mind the different constraints presented above but also it means sometimes having to provide an extra layer of compatibility to not only introduce a new change but also keep previous behavior working !
+
+However if for the people working on PrestaShop, SemVer is a (sometimes painful) constraint, we know that this contract is what allows shop, module and theme developers to work confidently.
+

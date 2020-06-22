@@ -16,13 +16,13 @@ This article explains what exactly are Backward Compatibility Breaks also known 
 
 ### What does BC break mean
 
-If you look at issues or Pull Requests on PrestaShop GitHub repository, you might notice answers like "Sorry, we cannot do that because it would introduce a BC break" or "Cannot be done without a BC break" for some suggested changes.
+If you look at issues or Pull Requests on PrestaShop GitHub repository, you might notice statements like "Sorry, we cannot do that because it would introduce a BC break" or "Cannot be done without a BC break" when discussing code changes.
 
 _You might be familiar with the concept, however if you are not, here is a short explanation:_
 
-PrestaShop is a Open Source Project that is being built with the idea that people will use it as a foundation to build their own project. Some will use it as a CMS and extend it with modules and themes. Some will use it as a shop system and customize parts of the e-commerce process. Some will even use it for either its Front-Office or Back-Office but handle the other part in another system, like an ERP or a headless CMS, and manage the communication between the two systems through API calls.
+PrestaShop is a Open Source Project that is being built with the idea that people will use it as a foundation to build their own project. Some will use it as a CMS and extend it with modules and themes. Some will use it as a shop system and customize parts of the e-commerce process. Some will even use it for either its Front-Office or Back-Office but handle the other part in another system, like an ERP or a headless CMS, and manage the communication between the two systems through API calls. So we have "external code" that uses PrestaShop "internal code" (the Core).
 
-All of these people will use code and logic that is written inside the software. However, as time passes, new versions of the software are released and this code and logic are changed to be improved, upgraded, made faster or more secure. When, from one version to another, the code changes in a way that breaks the external code that has been built to use it, this is a Breaking Change.
+All of these people will use code and logic that is written inside the software. However, as time passes, new versions of the software are released and this code and logic are changed to be improved, upgraded, made faster or more secure. When, from one version to another, the code changes in a way that breaks the "external code" that has been built around it, this is a Breaking Change.
 
 Here is a very simple example:
 
@@ -34,16 +34,18 @@ becoming
 public function transferPrices($product, $prices)
 ```
 
-If you have some php code using the function `transferPrices()`, when the function changes, the code that was working previously will now crash with following error message:
+If you have some php code using the function `transferPrices()`, when the function changes, any code that was working previously will now crash with following error message:
 ```php
 PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transferPrices(), 1 passed and exactly 2 expected
 ```
 
-So this is what a Breaking Change is: a change in the code that, when introduced into the software, might break some tools, modules, themes, whatever that is using PrestaShop Core code. What happens when a BC break is introduced is that bug reports like "my code, that was working with previous version, is broken when I run it with the new version !" start piling up in GitHub!
+So this is what a Breaking Change is: a change in the code that, when introduced into the software, might break some tools, modules, themes, whatever that is running PrestaShop Core code.
+
+So when a BC break is introduced, what happens quick is that we get angry bug reports like "my code, that was working with previous version, is broken when I run it with the new version !" start piling up in GitHub!
 
 ## SemVer
 
-The concept of BC Break is not specific to PrestaShop. This is actually a very common issue for all code that is being used as a foundation for other software to use: operating systems like Linux, libraries like Guzzle, tools like cURL, frameworks like Symfony ... and CMS like PrestaShop.
+The concept of BC Break is not specific to PrestaShop. This is actually a very common issue for all code that is being used as a foundation for other software to use: operating systems like Linux, libraries like Guzzle, tools like cURL, frameworks like Symfony ... and CMS like Drupal or PrestaShop.
 
 In order to make it easier for the people using these codebases as foundations to handle these changes, [Tom Preston Werner](http://tom.preston-werner.com/) has invented a convention: [SemVer](https://semver.org/). [SemVer](https://semver.org/) aims to help people understand immediately, when seeing a new version of software, what is contained inside it.
 
@@ -58,40 +60,41 @@ MINOR version when you add functionality in a backwards compatible manner, and
 PATCH version when you make backwards compatible bug fixes.
 ```
 
-When you release a new version of your software, if the new version only contains bug fixes, it is a patch version and you increase the z.
+When you release a new version of your software, if the new version only contains bug fixes, it is a patch version and you increase the PATCH number.
 
 > Example: 3.5.28
 
-When you release a new version of your software, if the new version only contains bug fixes and new features, but everything that was working before still works, it is a minor version and you increase the y and reset the z.
+When you release a new version of your software, if the new version only contains bug fixes and new features, but everything that was working before still works, it is a minor version and you increase the MINOR number and reset the PATCH.
 
 > Example: 3.6.0
 
-When you release a new version of your software, if the new version number contains code changes that might break other software relying on it, it is a major version and you increase the x and reset the y and the x.
+When you release a new version of your software, if the new version number contains code changes that might break other software relying on it, it is a major version and you increase the MAJOR number and reset the MINOR and the PATCH numbers.
 
 > Example: 4.0.0
 
 <hr>
 
-As a developer who builds software relying on this project, when you see a new version number, you know that:
+As a developer who builds software relying on this project, when you see a new version number, you can see whether this is a patch, a minor or a major version. And consequently you know that:
 
 - If it's a patch version, upgrading to use the new version will bring no change in behavior, it will only bug fixes
 - If it's a minor version, upgrading to use the new version might bring new behaviors you can use but all behaviors you are using are still working
 - If it's a major version, you need to check what has been changed to see whether you need to adjust your code
 
-This is very useful for developers. Being able, from just the version number, to understand the impact it can have on the software that you are building is priceless.
+This is very useful for developers. Being able, from just the version number, to understand the impact this change can have on the very software that you are building is critical!
 
-### Why do projects do BC breaks ?
+### Why do projects introduce BC breaks ?
 
-When reading this, you might wonder why people release new major versions of a software. If everybody would only release minor versions following SemVer, nobody would ever be afraid of upgrading its software because of BC breaks!
+When reading this, you might wonder why people release new major versions of a software. If everybody would only release minor versions following SemVer, nobody would ever be afraid of upgrading its software because of BC breaks! Would'nt it be amazing, a software world without BC breaks and the fear of them?
 
 Moreover PrestaShop is a CMS, which means it is customizable and extensible. Extension often comes from installing modules and a theme.
-These modules and themes are built by developers that want to sell it to an audience as large as possible. A BC break that impacts some code they are using is a nightmare for them ! It means for example they have to provide a different version of their product for PrestaShop 1.7.5 and 1.7.6 because of a change in PrestaShop 1.7.6. BC breaks hinder the capability of modules to provide a huge compatibility range.
 
-Unfortunately BC breaks are necessary for software to evolve. Not all software changes can be done while maintaining backward compatibility, and BC breaks are a necessary step for a project to evolve which is necessary to ensure it continues to fit the needs of its user community, who evolve in time.
+These modules and themes are built by developers that want to sell it to an audience as large as possible. A BC break that impacts some code they are using is a nightmare for them! It means for example they have to provide a different version of their product for PrestaShop 1.7.5 and 1.7.6 because of a change in PrestaShop 1.7.6. BC breaks hinder the capability of modules to provide a huge compatibility range.
+
+Unfortunately BC breaks are necessary for software to evolve. Not all software changes can be done while maintaining backward compatibility, and BC breaks are a necessary step for a project to evolve in time. And [evolution is necessary](https://build.prestashop.com/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/) to ensure it continues to fit the needs of its user community, who evolve in time. A software that does not evolve is bound to disappear, replaced by better contributors.
 
 ## Hard BC breaks and soft BC breaks
 
-We could define two categories of BC breaks: hard BC breaks and soft BC breaks.
+It is possible to define two categories of BC breaks: hard BC breaks and soft BC breaks.
 
 Hard BC breaks are changes that will make your code crash because it cannot be run anymore.
 
@@ -120,19 +123,27 @@ In this last snippet of code, the returning value is is an array. Before the cha
 
 <hr>
 
-*Now let's have a look at different BC types of BC breaks*
+*Now let's have a look at different types of BC breaks*
 
 
 
 ## Code BC breaks
 
-Code BC breaks are the most common BC breaks, and so far we have only been talking about them.
+Code BC breaks are the most common and known BC breaks, and so far we have only been talking about them.
 
-The two examples used above, in "Hard BC breaks and soft BC breaks", are code BC breaks.
+The two examples used above, are code BC breaks.
 
 ### Deprecations
 
-There is a standard mechanism to deal with code BC breaks: [](https://en.wikipedia.org/wiki/Deprecation). The idea of deprecation is to put inside the code a log message, that should be read by developers, to tell them what parts of the code will be removed in the next major version. This way, developers can be informed early of the parts of the code they should not rely on in the future and adapt accordingly. This mechanism is widely used in the software world and has proven its effectiveness.
+There is a standard mechanism to handle code BC breaks: [deprecations](https://en.wikipedia.org/wiki/Deprecation). The idea of deprecation is to put inside the code a log message, that should be read by developers, to tell them what parts of the code will be removed soon, in the next major version. This way, developers can be informed early of the parts of the code they should not rely on in the future and adapt accordingly. This mechanism is widely used in the software world and has proven its effectiveness.
+
+So the full process goes like this:
+
+- developers decide to deprecate part of code A
+- developers put a deprecation message inside code A, warning users that "code A is deprecated and you should stop using it because it will soon be removed" however they keep it working for now
+- when next major version is released, code A is gone
+
+You can see a very recent example in [Pull Request 19657](https://github.com/PrestaShop/PrestaShop/pull/19657/files#diff-f31f293b83e5d491f378ab486297a67bR196).
 
 ### How PrestaShop maintainers handle this type of BC break
 

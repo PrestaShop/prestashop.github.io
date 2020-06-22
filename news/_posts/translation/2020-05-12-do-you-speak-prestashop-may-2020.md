@@ -18,7 +18,7 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ### First news, Swahili will be available in PrestaShop 1.7.8! :tada:
 
-I have the pleasure to announce that PrestaShop will finally be available in Swahili in the 1.7.8 version! I thus encourage you to translate, suggest, and proofread the PrestaShop Swahili 1.7.7 translation project. Currently, there aren’t many Swahili translators on PrestaShop’s Crowdin community, so if you know any Swahili natives, spread the word and do not hesitate to invite them to participate in the [PrestaShop Swahili translations project](https://crowdin.com/project/prestashop-official/sw#), they will be more than welcome! :heart_eyes:
+I have the pleasure to announce that PrestaShop will finally be available in Swahili in the 1.7.8 version! I thus encourage you to translate, suggest, and proofread the PrestaShop Swahili project. Currently, there aren’t many Swahili translators on PrestaShop’s Crowdin community, so if you know any Swahili natives, spread the word and do not hesitate to invite them to participate in the [PrestaShop Swahili translations project](https://crowdin.com/project/prestashop-official/sw#), they will be more than welcome! :heart_eyes:
 
 ### Daily language packs updates
 

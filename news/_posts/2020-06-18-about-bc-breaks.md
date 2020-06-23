@@ -92,6 +92,20 @@ These modules and themes are built by developers that want to sell it to an audi
 
 Unfortunately BC breaks are necessary for software to evolve. Not all software changes can be done while maintaining backward compatibility, and BC breaks are a necessary step for a project to evolve in time. And [evolution is necessary](https://build.prestashop.com/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/) to ensure it continues to fit the needs of its user community, who evolve in time. A software that does not evolve is bound to disappear, replaced by better contributors.
 
+**Here is a classic example: a BC break for a constructor.**
+```php
+class MyManager {
+public function __construct(ServiceA $a, ServiceB $b)
+```
+If `MyManager` class must evolve to address a new feature, and this new feature requires the use of `ServiceC $c` a new service, then it might be necessary to introduce a BC break on the constructor to inject the new service:
+```php
+class MyManager {
+public function __construct(ServiceA $a, ServiceB $b, ServiceC $c)
+```
+Most of the time, this can be avoided by deprecating (see below) `MyManager` and creating a new service `MyNewManager`. This new service will be the one used from now on, however the code of `MyManager` will remain in the codebase to make sure external tools using it do not break.
+
+That is possible only if it is possible to replace `MyManager` by `MyNewManager`. Sometimes the code relying on `MyManager` cannot be changed and then `MyManager` constructor must be modified, introducing the BC break.
+
 ## Hard BC breaks and soft BC breaks
 
 It is possible to define two categories of BC breaks: hard BC breaks and soft BC breaks.
@@ -132,6 +146,8 @@ In this last snippet of code, the returning value is is an array. Before the cha
 Code BC breaks are the most common and known BC breaks, and so far we have only been talking about them.
 
 The two examples used above, are code BC breaks.
+
+One thing worth mentioning is that a BC break code can happen in various (and subtle) ways. For example if `MyManager` extends a class `MyAbstractManager`, then a change in `MyAbstractManager` can create a BC break in `MyManager` by inheritance!
 
 ### Deprecations
 

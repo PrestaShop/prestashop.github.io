@@ -2,7 +2,7 @@
 layout: post
 title:  "Do you speak PrestaShop? – May 2020 edition"
 subtitle: "Where you'll learn that the Swahili translation project is waiting for you"
-date:  2020-06-12 14:30:11
+date:  2020-06-24 14:30:11
 authors: [ JuneByun ]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

@@ -11,7 +11,7 @@ tags:
 
 ## A deeper look at Backward Compatibility Breaks
 
-This article explains what exactly are Backward Compatibility Breaks also known as Breaking Changes or BC breaks and how it influences how an open source project like PrestaShop is built. It explains the different types of BC breaks, why they are needed sometimes and how PrestaShop maintainers manage them.
+This article explains what exactly are [Backward Compatibility](https://en.wikipedia.org/wiki/Backward_compatibility) Breaks also known as Breaking Changes or BC breaks and how it influences how an open source project like PrestaShop is built. It explains the different types of BC breaks, why they are needed sometimes and how PrestaShop maintainers manage them.
 
 
 ### What does BC break mean
@@ -90,7 +90,7 @@ When reading this, you might wonder why people release new major versions of a s
 
 Moreover PrestaShop is a CMS, which means it is customizable and extensible. Extension often comes from installing modules and a theme.
 
-These modules and themes are built by developers that want to sell it to an audience as large as possible. A BC break that impacts some code they are using is a bother to them.
+These modules and themes are built by developers that want to sell it to an audience as large as possible. A BC break that impacts some code they are using is [a bother to them](https://www.snoyman.com/blog/2018/04/stop-breaking-compatibility).
 It means for example they have to provide a different version of their product for PrestaShop 1.7.5 and 1.7.6 because of a change in PrestaShop 1.7.6.
 
 BC breaks hinder the capability of modules to provide a huge compatibility range.
@@ -162,7 +162,7 @@ Another subtle way of introducing a BC break is to update an existing PHP [inter
 
 ### Deprecations
 
-There is a standard mechanism to handle code BC breaks: [deprecations](https://en.wikipedia.org/wiki/Deprecation). The idea of deprecation is to put inside the code a log message, that should be read by developers, to tell them what parts of the code will be removed soon, in the next major version. This way, developers can be informed early of the parts of the code they should not rely on in the future and adapt accordingly. This mechanism is widely used in the software world and has proven its effectiveness.
+There is a standard mechanism to handle code BC breaks: [deprecations](https://en.wikipedia.org/wiki/Deprecation). The idea of deprecation is to put inside the code a log message, that should be read by developers, to tell them what parts of the code will be removed soon, in the next major version. This way, developers can be informed early of the parts of the code they should not rely on in the future and adapt accordingly. This mechanism is [widely used in the software world](https://symfony.com/doc/current/contributing/code/bc.html) and has proven its effectiveness.
 
 So the full process goes like this:
 

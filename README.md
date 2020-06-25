@@ -22,7 +22,7 @@ This devblog also hosts How-Tos on certain features, before they find their way 
 
 How about writing a guest post here? Maybe you've been working with PrestaShop for a while and you want to write about how you use it? Or you feel a cool feature could use a highlight with sample code? Go ahead, [suggest a new article](http://build.prestashop.com/howtos/misc/how-to-write-on-this-blog/) — that might even inspire other people in the community to write too!
 
-Before you start writing, please send us a short proposal at [{{ site.email }}](mailto:{{ site.email }}). Once we have agreed with you on the topic, you can submit your article [using a simple pull request](https://github.com/PrestaShop/prestashop.github.io).
+Before you start writing, please send us a short proposal by opening a GitHub issue. Once we have agreed with you on the topic, you can submit your article [using a simple pull request](https://github.com/PrestaShop/prestashop.github.io).
 
 Also, if we merge one of your cool pull requests on [the PrestaShop project](http://gihub.com/PrestaShop/PrestaShop), we may invite you to tell us more about it here.
 

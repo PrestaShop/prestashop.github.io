@@ -37,7 +37,7 @@ But each added feature makes the software more complex again - more complex to m
 
 Our product managers are responsible for delivering value to all PrestaShop users. And the first step to do so is to decide which features must be improved or built. How? By getting insights on the users’ needs and issues to solve.
 
-Once you know where to focus and what you are trying to solve, you have to design this feature, to make it tangible, usable and coherent with the existing software. That is the designers’ and the product content manager's responsibility.
+Once we know what problem to address, it is time to design the feature. It will allow us to create a tangible and usable solution, coherent with the software. That is the designers’ and the product content manager's responsibility.
 
 While the product manager’s job is to identify the problem to solve, the designer's job is to design the best solution. Of course, this is done in collaboration with everyone. And then the whole team can start building the feature.
 

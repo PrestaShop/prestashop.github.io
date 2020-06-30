@@ -73,7 +73,7 @@ The Core product team uses several criteria to evaluate the importance of a need
 - the impact on the developer experience,
 - and many more...
 
-As you can see, it is important for the team to take into account all the impacts of solving a need, and building features.
+As you can see, it is important for the team to take into account all the impacts of solving a need and building features. It is also crucial for us to keep in touch with the users at all steps, especially while doing some research and during the conception phase, so that we can never lose sight of the initial need.
 And that is something that Productboard makes easier too.
 
 In the PrestaShop Feedback space, as a visitor, it is possible not only to add comments but also to rate the impact of an expression of needs or a feature on oneself. Three values exist: Nice-to-have, Important, and Critical.

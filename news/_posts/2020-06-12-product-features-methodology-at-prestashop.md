@@ -60,8 +60,7 @@ How interesting is it for the community? Well, Productboard allows us to share t
 
 ### How to go from a need to a feature?
 
-Centralizing and analyzing insights is difficult.
-Well, the next step in product development is even more difficult: prioritizing the users' needs.
+Centralizing and analyzing insights is difficult. But the next step of our product development is even more difficult: prioritizing the users' needs.
 
 PrestaShop is used on 300k+ online stores around the world, and its community gathers more than 1 million people.
 There are hundreds of needs out there, waiting to be solved. So how does the team decide what to build next?

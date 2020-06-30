@@ -52,8 +52,7 @@ PrestaShop being an open source project, the team can rely on its tremendous com
 
 Collecting feedback is easy. What is more difficult is to centralize and analyze it in order to identify the users’ needs lying behind.
 
-Productboard will help the team here. By making it easier and automatic to centralize feedback directly in the same place. Wherever it comes from.
-The team calls these feedback **insights**. On Productboard, product managers can create topics to group **insights** together, this step helps form a first **expression of needs**. Sometimes the expression of needs already gives the best solution, sometimes it is still a bit early to know how it could be solved.
+Productboard will help the team here. By making it easier and automatic to centralize feedback directly in the same place. Wherever it comes from. We call these feedback **insights**. On Productboard, product managers can create topics to group **insights** together, this step helps form a first **expression of needs**. Sometimes the expression of needs already gives the best solution, sometimes it is still a bit early to know how it could be solved.
 
 What’s in it for the community? Well Productboard also makes it possible to share that externally.
 This is great to inform the community about what the team has identified, and also to keep collecting more information about it to improve the team’s understanding on this problem.

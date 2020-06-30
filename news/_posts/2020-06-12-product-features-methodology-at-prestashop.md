@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Product development at PrestaShop"
-subtitle: "What happens in the team when working on new features."
+subtitle: "What happens in the team when working on new features"
 date: 2020-06-12 9:00:00
 authors: [SamuelPires]
 image: /assets/images/theme/meta-logo-build.png
@@ -104,6 +104,5 @@ And sometimes there are several iterations in between to reach a complete featur
 
 
 As always, let the team know what you think about it in the comments section!
-
 
 

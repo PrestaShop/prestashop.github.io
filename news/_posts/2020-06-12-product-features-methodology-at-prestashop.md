@@ -101,5 +101,12 @@ The usual process to design and build a feature is the following:
 
 And sometimes there are several iterations in between to reach a complete feature.
 
+Once the prototyping and design phases approved, we create an EPIC on [GitHub](https://github.com/PrestaShop/PrestaShop/labels/Epic) including the feature description and all of the related user stories (each US being a specific issue) that need to be addressed. It can also contain a few bugs to fix in the meantime. 
+
+In parallel, we write down functional specifications and add it to the dedicated [repository](https://github.com/PrestaShop/prestashop-specs) with all prototypes screenshots and links to the mockups.
+
+If all the stakeholders of the feature (PM, CM, designer, developer, and QA engineer) agree on it, the development phase starts. Step by step, the user stories reach the [version kanban](https://github.com/PrestaShop/PrestaShop/projects). When all issues are developed and their pull requests merged, we close the EPIC.
+
+This process stays the same, whether the development is done internally or with the help of the community. We do so to ensure alignment before the development phase.
 
 As always, let the team know what you think about it in the comments section!

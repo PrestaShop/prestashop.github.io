@@ -41,7 +41,7 @@ Once you know where to focus and what you are trying to solve, you have to desig
 
 While the product manager’s job is to identify the problem to solve, the designer's job is to design the best solution. Of course, this is done in collaboration with everyone. And then the whole team can start building the feature.
 
-Currently the Core team counts 9 developers, 5 QA engineers, 2 designers and 4 product managers.
+Currently, the Core team counts 9 developers, 5 QA engineers, 2 designers, 1 content manager, and 4 product managers.
 
 
 ### How to know what to focus on?

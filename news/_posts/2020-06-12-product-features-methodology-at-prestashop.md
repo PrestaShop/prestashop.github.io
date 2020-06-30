@@ -48,9 +48,7 @@ Currently, the Core team counts 9 developers, 5 QA engineers, 2 designers, 1 con
 
 Everything starts with feedback. Without feedback, without talking with users, we are blind, lost in the fog.
 
-PrestaShop being an open source project, the team can rely on its tremendous community to gather feedback, identify pain points and discuss many topics.
-Right now, collecting feedback is not difficult, Github is probably the main source, but there are also events such as [ambassadors' meetups](http://ambassadors.prestashop.com/ambassadors) and [PSD](https://events.prestashop.com/), user interviews regularly conducted by the product team, and the [community Slack](https://github.com/PrestaShop/open-source/blob/master/slack/readme.md).
-The team also keeps an eye on what’s happening around in the e-commerce and CMS industries to make sure the software goes in the right direction regarding the market's evolutions and expectations.
+PrestaShop being an open source project, the team can rely on its tremendous community to gather feedback, identify pain points, and discuss many topics. So collecting feedback is not that difficult, GitHub is probably the main source, but there are also events such as [ambassadors' meetups](http://ambassadors.prestashop.com/ambassadors), [PrestaShop events](https://events.prestashop.com/), user interviews regularly conducted by the product team, and the [community Slack](https://github.com/PrestaShop/open-source/blob/master/slack/readme.md). We also keep an eye on what happens around in the e-commerce and CMS industries to make sure the software goes in the right direction regarding the market's evolutions and expectations.
 
 Collecting feedback is easy. What is more difficult is to centralize and analyze it in order to identify the users’ needs lying behind.
 

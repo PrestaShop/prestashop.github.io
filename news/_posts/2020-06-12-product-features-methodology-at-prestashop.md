@@ -39,7 +39,7 @@ Our product managers are responsible for delivering value to all PrestaShop user
 
 Once you know where to focus and what you are trying to solve, you have to design this feature, to make it tangible, usable and coherent with the existing software. That is the designers’ and the product content manager's responsibility.
 
-While the product manager’s job is to identify the problem to solve, the designer's job is to design the best solution, of course, this is done in collaboration with everyone. And then the whole team altogether can start building the feature.
+While the product manager’s job is to identify the problem to solve, the designer's job is to design the best solution. Of course, this is done in collaboration with everyone. And then the whole team can start building the feature.
 
 Currently the Core team counts 9 developers, 5 QA engineers, 2 designers and 4 product managers.
 

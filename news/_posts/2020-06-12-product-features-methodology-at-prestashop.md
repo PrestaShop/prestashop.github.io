@@ -54,8 +54,8 @@ Collecting feedback is easy. What is more difficult is to centralize and analyze
 
 Productboard will help the team here. By making it easier and automatic to centralize feedback directly in the same place. Wherever it comes from. We call these feedback **insights**. On Productboard, product managers can create topics to group **insights** together, this step helps form a first **expression of needs**. Sometimes the expression of needs already gives the best solution, sometimes it is still a bit early to know how it could be solved.
 
-What’s in it for the community? Well Productboard also makes it possible to share that externally.
-This is great to inform the community about what the team has identified, and also to keep collecting more information about it to improve the team’s understanding on this problem.
+How interesting is it for the community? Well, Productboard allows us to share this work externally! This is great to inform the community about the problems the team has identified and to keep collecting more information about them. It is crucial to help us understand all the possible use cases of a problem.
+
 **You are now able to see these expressions of needs on the PrestaShop Feedback website.**
 
 ### How to go from a need to a feature?

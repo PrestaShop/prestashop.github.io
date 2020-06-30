@@ -25,7 +25,7 @@ The team thought it was the right occasion to talk more about the product develo
 ### Core product team
 
 In the PrestaShop company, a cross-functional team is dedicated to maintaining the PrestaShop open source project: the Core team.
-Its mission is to make sure the software is stable, usable, delivers value to its users and follows the industry standards.
+Its mission is to make sure the software is stable, usable, and valuable to all of its users while following the industry standards.
 All this requires several people and several skills. Today the Core team is composed of developers, QA engineers, designers and product managers.
 Editing and maintaining a software like PrestaShop means fixing bugs but also adding improvements and new features.
 

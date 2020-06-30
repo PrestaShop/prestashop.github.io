@@ -33,9 +33,9 @@ Fixing a bug does not require the same skills that defining a new feature. Most 
 
 Why so? Because **the goal of any feature is to solve a problem**. So we need to answer the following questions get a better definition of the issue: what exactly is the problem? how many users encounter it? how painful is it? is there any workaround?
 
-As a team working on a software, when you add a feature you are making the software more complex- more complex to maintain and sometimes more complex to use. So, on one hand, you can’t afford to add any useless feature and, on the other hand, you have to make sure what you add is usable.
-And that’s where product managers and designers are needed.
-Product managers are responsible for making sure the software delivers value to its users. And the first steps to do so are to know which features to improve or to create, and more importantly to know which users’ needs you have to solve.
+But each added feature makes the software more complex again - more complex to maintain and in some cases more complex to use... So, on one hand, we cannot afford to add useless features and, on the other hand, we must make sure that any added feature will be usable. And that’s where our product team is needed!
+
+Our product managers are responsible for delivering value to all PrestaShop users. And the first step to do so is to decide which features must be improved or built. How? By getting insights on the users’ needs and issues to solve.
 
 Once you know where to focus and what you are trying to solve, you have to design this feature, to make it tangible, usable and coherent with the existing software. That is the designers’ and the product content manager's responsibility.
 

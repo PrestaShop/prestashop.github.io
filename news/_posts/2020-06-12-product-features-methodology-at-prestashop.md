@@ -29,7 +29,9 @@ Its mission is to make sure the software is stable, usable, and valuable to all 
 All this requires several people and several skills. Today the Core team is composed of developers, QA engineers, designers and product managers.
 Editing and maintaining a software like PrestaShop means fixing bugs but also adding improvements and new features.
 
-While bug fixing is most of the time handled directly by developers (from the Core team and the community 😉), features design and development are much more complex. Why? Because the goal of any feature is to help users achieve something, **behind every feature there should be a user need**.
+Fixing a bug does not require the same skills that defining a new feature. Most of the time, the functional scope of a bug is obvious: the 'save' button does not work, let's fix it so that it can save. Adding a feature is a bit more complex: in-depth search must be done to specify the functional scope.
+
+Why so? Because **the goal of any feature is to solve a problem**. So we need to answer the following questions get a better definition of the issue: what exactly is the problem? how many users encounter it? how painful is it? is there any workaround?
 
 As a team working on a software, when you add a feature you are making the software more complex- more complex to maintain and sometimes more complex to use. So, on one hand, you can’t afford to add any useless feature and, on the other hand, you have to make sure what you add is usable.
 And that’s where product managers and designers are needed.

@@ -25,8 +25,8 @@ The team thought it was the right occasion to talk more about the product develo
 ### Core product team
 
 In the PrestaShop company, a cross-functional team is dedicated to maintaining the PrestaShop open source project: the Core team.
-Its mission is to make sure the software is stable, usable, and valuable to all of its users while following the industry standards.
-All this requires many people and several different skills. Currently, the Core team counts 9 developers, 5 QA engineers, 2 designers, 1 content manager, and 4 product managers.
+
+Its mission is to make sure the software is stable, usable, and valuable to all of its users while following the industry standards. All this requires many people and several different skills. Currently, the Core team counts 9 developers, 5 QA engineers, 2 designers, 1 content manager, and 4 product managers.
 
 Editing and maintaining a software like PrestaShop means fixing bugs but also adding improvements and new features.
 
@@ -42,8 +42,6 @@ Once we know what problem to address, it is time to design the feature. It will 
 
 While the product manager’s job is to identify the problem to solve, the designer's job is to design the best solution. Of course, this is done in collaboration with everyone. And then the whole team can start building the feature.
 
-Currently, the Core team counts 9 developers, 5 QA engineers, 2 designers, 1 content manager, and 4 product managers.
-
 
 ### How to know what to focus on?
 
@@ -57,7 +55,8 @@ Productboard will help the team here. By making it easier and automatic to centr
 
 How interesting is it for the community? Well, Productboard allows us to share this work externally! This is great to inform the community about the problems the team has identified and to keep collecting more information about them. It is crucial to help us understand all the possible use cases of a problem.
 
-**You are now able to see these expressions of needs on the PrestaShop Feedback website.**
+**You will soon be able to see these expressions of needs on the PrestaShop Feedback website.**
+
 
 ### How to go from a need to a feature?
 
@@ -75,10 +74,6 @@ The Core product team uses several criteria to evaluate the importance of a need
 - and many more...
 
 As you can see, it is important for the team to take into account all the impacts of solving a need and building features. It is also crucial for us to keep in touch with the users at all steps, especially while doing some research and during the conception phase, so that we can never lose sight of the initial need.
-And that is something that Productboard makes easier too.
-
-In the PrestaShop Feedback space, as a visitor, it is possible not only to add comments but also to rate the impact of an expression of needs or a feature on oneself. Three values exist: Nice-to-have, Important, and Critical.
-This rating is directly taken into account in Productboard and gives a **user score**. More about it in the second part.
 
 
 ### Designing a feature

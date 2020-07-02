@@ -28,8 +28,8 @@ As this patch fixes several security issues, we highly recommend to upgrade your
 
 Reminder: the 1-Click Upgrade module's latest version is [v4.10.1](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.10.1), don't forget to upgrade it.
 
-
 ## Main fixes
+
 Below are listed the 6 regressions that were found and fixed in this version:
 
 Front-office regression:

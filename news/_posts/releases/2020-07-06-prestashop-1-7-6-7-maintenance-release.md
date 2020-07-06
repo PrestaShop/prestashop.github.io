@@ -22,7 +22,7 @@ PrestaShop 1.7.6.7 is now available. It fixes an important regression introduced
 In 1.7.6.6, one of the Front Office JavaScript file [was modified](https://github.com/PrestaShop/PrestaShop/commit/7dc8180bd3179820bb4706d37827949d2d863941#diff-a1d15e7a995aaa0459241b4974f0e4fe) through the usage of a [linter](https://en.wikipedia.org/wiki/Lint_(software)).
 The modification inadvertently introduced a regression resulting in a script error in the Product page.
 
-The main consequence of this regression is that some events usually fired on product page are not executed. This may produce a malfunction in Front Office modules which expect the `updateProduct` event being dispatched on this page.
+The main consequence of this regression is that some events usually fired on product page are not executed. This may produce a malfunction in Front Office modules which expect the `updateProduct` event to be dispatched on this page.
 
 In 1.7.6.7 the changes wrongly introduced in 1.7.6.6 have been reverted.
 

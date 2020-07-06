@@ -34,7 +34,7 @@ Reminder: the 1-Click Upgrade module’s latest version is [v4.10.1](https://git
 
 Front-office regression:
 
-JS crash on FO product page in 1.7.6.6, preventing updateProduct event to be received #20044
+- JS crash on FO product page in 1.7.6.6, preventing updateProduct event to be received [#20044](https://github.com/PrestaShop/PrestaShop/issues/20044)
 
 ## Acknowledgments
 

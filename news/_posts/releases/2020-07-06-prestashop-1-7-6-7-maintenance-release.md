@@ -19,7 +19,7 @@ PrestaShop 1.7.6.7 is now available. It fixes an important regression introduced
 
 ![1.7.6.7 is available!](/assets/images/2020/07/1767_banner.jpg)
 
-In 1.7.6.6, one of the Front Office JavaScript file [was modified](https://github.com/PrestaShop/PrestaShop/commit/7dc8180bd3179820bb4706d37827949d2d863941#diff-a1d15e7a995aaa0459241b4974f0e4fe) through the usage of a [linter](https://en.wikipedia.org/wiki/Lint_(software)).
+In 1.7.6.6, one of the Front Office JavaScript files [was modified](https://github.com/PrestaShop/PrestaShop/commit/7dc8180bd3179820bb4706d37827949d2d863941#diff-a1d15e7a995aaa0459241b4974f0e4fe) through the usage of a [linter](https://en.wikipedia.org/wiki/Lint_(software)).
 The modification inadvertently introduced a regression resulting in a script error in the Product page.
 
 The main consequence of this regression is that some events usually fired on product page are not executed. This may produce a malfunction in Front Office modules which expect the `updateProduct` event to be dispatched on this page.
@@ -34,7 +34,7 @@ Reminder: the 1-Click Upgrade module’s latest version is [v4.10.1](https://git
 
 Front-office regression:
 
-- JS crash on FO product page in 1.7.6.6, preventing updateProduct event to be received [#20044](https://github.com/PrestaShop/PrestaShop/issues/20044)
+- JS crashes on FO product page in 1.7.6.6, preventing updateProduct event to be received [#20044](https://github.com/PrestaShop/PrestaShop/issues/20044)
 
 ## Acknowledgments
 

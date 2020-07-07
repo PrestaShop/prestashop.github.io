@@ -96,7 +96,7 @@ In comparison with May 2020, the following languages had the best progress thank
 * **Finnish** (+6% to reach 92% approved)
 * **Spanish, Mexico** (+5% to reach 63% translated)
 
-![Best translation progress for June 2020](/assets/images/2020/07/build-crowdin-progress-june20.jpg)
+![Best translation progress for June 2020](/assets/images/2020/07/build-crowdin-progress-june20.png)
 
 A huge thank you to all the contributors!
 

@@ -47,7 +47,7 @@ Please remember that if your issue is closed because of these new rules, it is N
 
 - **Clearly incomplete**: you forgot to include some mandatory information like the PrestaShop version, the exact problem you encountered, or even the steps to reproduce!
 - **Wrong use of Github**: the team created a few templates to help you provide the information that’s typically needed to reproduce an issue. If you delete the whole template, we most likely won’t have this information and will lose time by asking and waiting for an answer. Same thing if you don’t write your issue in English, or just paste a 200 lines long log message with zero details.
-- **Request for support**: Bug reports should only be used to report issues which are caused by an error in the software. If the problem you report lies in your own configuration, or environment, or a module/theme that doesn’t belong to the project, the team will not be able to help you. You can use our [dedicated support](https://www.prestashop.com/fr/support) for this kind of issue!
+- **Request for support**: Bug reports should only be used to report issues which are caused by an error in the software. If the problem you report lies in your own configuration, or environment, or a module/theme that doesn’t belong to the project, the team will not be able to help you. You can use our [dedicated support](https://www.prestashop.com/fr/support), or reach out in our [public Slack server](https://github.com/PrestaShop/open-source/tree/master/slack) for this kind of issue!
 
 ## :+1: Good bug reports
 

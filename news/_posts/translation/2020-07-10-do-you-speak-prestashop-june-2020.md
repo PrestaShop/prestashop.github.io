@@ -96,7 +96,7 @@ In comparison with May 2020, the following languages had the best progress thank
 * **Finnish** (+6% to reach 92% approved)
 * **Spanish, Mexico** (+5% to reach 63% translated)
 
-![Best translation progress for June 2020](/assets/images/2020/06/build-crowdin-progress-june20.jpg)
+![Best translation progress for June 2020](/assets/images/2020/07/build-crowdin-progress-june20.jpg)
 
 A huge thank you to all the contributors!
 
@@ -115,7 +115,7 @@ At the end of June 2020, some languages would still benefit from some proofreadi
 * **Esperanto** (34% vs 0%).
 * **Tagalog** (48% vs 24%).
 
-![Languages that need proofreading](/assets/images/2020/06/build-crowdin-proofreading-june20.png)
+![Languages that need proofreading](/assets/images/2020/07/build-crowdin-proofreading-june20.png)
 
 If you wish to help to proofread what has been translated, please contact PrestaShop with the language you'd like to proofread: just send an email to translation@prestashop.com. Your help is needed!
 

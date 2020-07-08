@@ -26,7 +26,7 @@ Many of you dedicate their time to contribute to the PrestaShop projects on Crow
 
 In the [last monthly report](https://build.prestashop.com/news/do-you-speak-prestashop-may-2020/), I explained how the translation packs are updated in PrestaShop now. What has to be kept in mind is that only translations of the 1.7.7 PrestaShop version translation projects can be updated and that it has to be manually exported and uploaded to one’s PrestaShop. 
 
-But the good news is that an issue has been created to solve this inconvenience and to make all translations available for PrestaShops, regardless of their version. :sparkles: You can follow the progress of this issue [here](https://github.com/PrestaShop/PrestaShop/issues/20011).
+But the good news is that an issue has been created to start finding a solution to this inconvenience. You can follow the progress, or even involve if you feel like it - it would be a great contribution -, just [here](https://github.com/PrestaShop/PrestaShop/issues/20011).
 
 ### :two_hearts: Special thanks to newcomers
 

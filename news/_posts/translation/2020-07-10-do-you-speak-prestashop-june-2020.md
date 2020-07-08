@@ -18,9 +18,13 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ### First news, Esperanto is on the rise :fire:
 
-I am thrilled to let you know that Esperanto has been on the rise since the last past months. From the beginning of May to the end of June, the Esperanto translation project went from 9% to 34% words translated, that is to say a 25% evolution. I wish to take this opportunity to thank [mirmal](https://crowdin.com/profile/mirmal) and [Milan Kolka](https://crowdin.com/profile/milankolka) for your work! :heart_eyes: 
+I am thrilled to let you know that Esperanto has been on the rise since the last past months. From the beginning of May to the end of June, the Esperanto translation project went from 9% to 34% words translated, that is to say a 25% evolution. I would like to take this opportunity to thank [mirmal](https://crowdin.com/profile/mirmal) and [Milan Kolka](https://crowdin.com/profile/milankolka) for your work! :heart_eyes:
 
-Some of you, such as [Elvis Crnić](https://crowdin.com/profile/elvissaba) or [Goedkoopsteverf](https://crowdin.com/profile/Goedkoopsteverf), respectively first and second in the top 10 translators in April, dedicate their time to contribute to the PrestaShop projects on Crowdin but cannot validate translations because you don’t have the rights. I thus wanted to tell you that you can [ask me](https://crowdin.com/profile/june.byun) if you wish to become a proofreader. If you are hardworking, have contributed a lot and have the approval of proofreaders of the related translation project, you will be allowed to gain the status of a proofreader, to suggest and approve the strings you and others translate.
+### Interested in becoming a proofreader?
+
+Some of you dedicate their time to contribute to the PrestaShop projects on Crowdin but cannot validate translations because you don’t have the rights. This is the case, for instance, of [Elvis Crnić](https://crowdin.com/profile/elvissaba) and [Goedkoopsteverf](https://crowdin.com/profile/Goedkoopsteverf), who were respectively first and second in the top 10 translators in April. 
+
+I thus wanted to tell you that you can ask me if you wish to become a proofreader. If you are already an active translator and wish to be more involved in the translation project by vouching for the translation consistency and approving strings, you can [reach out to me](https://crowdin.com/profile/june.byun)!
 
 ### Daily language packs updates
 

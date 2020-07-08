@@ -2,7 +2,7 @@
 layout: post
 title:  "How bug reports are handled"
 subtitle: "And how we want to improve the quality of the process"
-date:  2020-07-08 15:30:00
+date:  2020-07-08 10:45:00
 authors: [SimonGarny]
 icon: icon-github-alt
 image: /assets/images/theme/meta-logo-build.png

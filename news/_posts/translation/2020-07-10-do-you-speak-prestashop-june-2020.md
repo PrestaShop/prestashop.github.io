@@ -30,7 +30,7 @@ But the good news is that an issue has been created to start finding a solution 
 
 ### :two_hearts: Special thanks to newcomers
 
-Many people subscribe to the project(s) of their choice each month, but not so many start translating straightaway. For that reason, the PrestaShop team would like to thank the ones who rushed into the effort immediately! So lots of love to the dedicated: corona2019ncov, Daniel Hlavacek (Hlavtox), Gabi Manea (gabimaneaonline), Maureen Mwende (MsKendi), Pharit Chotkhakkhanan (pharit), Semih Tekin (semihtekin) and Waleed Butt (waleedbutt112). See you soon on Crowdin… and in PrestaShop :stuck_out_tongue_winking_eye:
+Many people subscribe to the project(s) of their choice each month, but not so many start translating straightaway. For that reason, the PrestaShop team would like to thank the ones who rushed into the effort immediately! So lots of love to the dedicated: corona2019ncov, Daniel Hlavacek (Hlavtox), Gabi Manea (gabimaneaonline), Maureen Mwende (MsKendi), Pharit Chotkhakkhanan (pharit), Semih Tekin (semihtekin) and Waleed Butt (waleedbutt112). See you soon on Crowdin… and in PrestaShop!
 
 ## A few stats
 

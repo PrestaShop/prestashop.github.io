@@ -18,7 +18,7 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ### First news, Esperanto is on the rise :fire:
 
-I am thrilled to let you know that Esperanto has been on the rise since the past month. From the beginning of May to the end of June, the Esperanto translation project went from 25% to 34% words translated, that is to say a 9% evolution. I wish to take this opportunity to thank mirmal and Milan Kolka (milankolka) for your work! :heart_eyes: 
+I am thrilled to let you know that Esperanto has been on the rise since the last past months. From the beginning of May to the end of June, the Esperanto translation project went from 25% to 34% words translated, that is to say a 9% evolution. I wish to take this opportunity to thank [mirmal](https://crowdin.com/profile/mirmal) and [Milan Kolka](https://crowdin.com/profile/milankolka) for your work! :heart_eyes: 
 
 Many of you dedicate their time to contribute to the PrestaShop projects on Crowdin but cannot validate translations because you don’t have the rights. I thus wanted to tell you to not hesitate in [asking me](https://crowdin.com/profile/june.byun) if you wish to become a proofreader. It would allow you to suggest and approve the strings you and others translate.
 

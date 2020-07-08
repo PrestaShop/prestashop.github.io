@@ -43,7 +43,7 @@ Thank you for your involvement!
 
 ## Top contributors
 
-A lot of you are working every day on Crowdin to have PrestaShop available in many languages, and we can't thank you enough for your dedication! Here are the **most active translators and proofreaders** for May 2020.
+A lot of you are working every day on Crowdin to have PrestaShop available in many languages, and we can't thank you enough for your dedication! Here are the **most active translators and proofreaders** for June 2020.
 
 #### Top 10 translators in June:
 

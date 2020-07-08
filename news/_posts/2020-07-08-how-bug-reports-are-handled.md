@@ -27,7 +27,8 @@ Given this situation, project maintainers then cannot guarantee a homogenous tre
 
 More annoyingly, a small subset of issues are low quality: questions in the template are not answered (reproduction steps missing, no PrestaShop version…) and this slows down the whole workflow.
 
-# Stricter rules
+
+## Stricter rules
 
 A bug report must add value to the project: **the goal of an issue is to improve the project for everyone**, not solve someone’s particular problem. An issue must only be reported when it’s not originated by one’s specific server configuration or environment (if it doesn’t meet PrestaShop system requirements, for example), but a reproducible problem caused by a defect in the software. A good issue report should allow maintainers to pinpoint a problem that needs to be fixed in the Core or native modules.
 
@@ -41,15 +42,18 @@ This is a good thing: by filtering out all the low quality issues, we ensure tha
 
 Please remember that if your issue is closed because of these new rules, it is NOT because the team doesn’t care or doesn’t want PrestaShop to improve: it’s about optimizing resources. We will be happy to review your issue if you open a new one with all the information we need to reproduce.
 
-# Some examples
 
-## :scream: Bad bug reports
+## Some examples
+
+
+### :scream: Bad bug reports
 
 - **Clearly incomplete**: you forgot to include some mandatory information like the PrestaShop version, the exact problem you encountered, or even the steps to reproduce!
 - **Wrong use of Github**: the team created a few templates to help you provide the information that’s typically needed to reproduce an issue. If you delete the whole template, we most likely won’t have this information and will lose time by asking and waiting for an answer. Same thing if you don’t write your issue in English, or just paste a 200 lines long log message with zero details.
 - **Request for support**: Bug reports should only be used to report issues which are caused by an error in the software. If the problem you report lies in your own configuration, or environment, or a module/theme that doesn’t belong to the project, the team will not be able to help you. You can use our [dedicated support](https://www.prestashop.com/fr/support), or reach out in our [public Slack server](https://github.com/PrestaShop/open-source/tree/master/slack) for this kind of issue!
 
-## :+1: Good bug reports
+
+### :+1: Good bug reports
 
 - **Can be reproduced**: It contains all the elements needed to know exactly what your problem is, reproduce it and investigate it! That means all the versions (PHP, PrestaShop, module if necessary…) and all the reproduction steps. [Here is a good example](https://github.com/PrestaShop/PrestaShop/issues/19815).
 - **Is helpful**: It contains an in-depth description of the problem, some ideas to try to tackle it, or even a Pull Request to fix it (thanks!). [Check this issue for example](https://github.com/PrestaShop/PrestaShop/issues/19822).

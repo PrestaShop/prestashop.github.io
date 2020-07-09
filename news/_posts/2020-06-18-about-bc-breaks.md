@@ -20,7 +20,7 @@ If you look at issues or Pull Requests on PrestaShop GitHub repository, you migh
 
 _You might be familiar with the concept, however if you are not, here is a short explanation:_
 
-PrestaShop is a Open Source Project that is being built with the idea that people will use it as a foundation to build their own project. Some will use it as a CMS and extend it with modules and themes. Some will use it as a shop system and customize parts of the e-commerce process. Some will even use it for either its Front-Office or Back-Office but handle the other part in another system, like an ERP or a headless CMS, and manage the communication between the two systems through API calls. So we have "external code" that uses PrestaShop "internal code" (the Core).
+PrestaShop is a Open Source Project that is being built with the idea that people will use it as a foundation to build their own project. Some will use it as a CMS and extend it with modules and themes. Some will use it as a shop system and customize parts of the e-commerce process. Some will even use it for either its Front-Office or Back-Office but handle the other part in another system, like an ERP or a headless CMS, and manage the communication between the two systems through API calls. So there are "external code" that uses PrestaShop "internal code" (the Core).
 
 All of these people will use code and logic that is written inside the software. For exammple, very often modules build URLs using function `Link::getModuleLink()`.
 
@@ -149,7 +149,6 @@ In this last snippet of code, the returning value is an array. Before the change
 *Now let's have a look at different types of BC breaks*
 
 
-
 ## Code BC breaks
 
 Code BC breaks are the most common and known BC breaks, and so far we have only been talking about them.
@@ -172,7 +171,7 @@ So the full process goes like this:
 
 You can see a very recent example in [Pull Request 19657](https://github.com/PrestaShop/PrestaShop/pull/19657/files#diff-f31f293b83e5d491f378ab486297a67bR196).
 
-### How PrestaShop maintainers handle this type of BC break
+### How PrestaShop open source project maintainers handle this type of BC break
 
 We use the deprecations system to warn people as much as possible about incoming BC breaks.
 
@@ -206,7 +205,7 @@ In the above example, the ID "link" was moved from the `<a>` to the `<div>`. Any
 
 Example of such BC break: recently we had to modify some CSS code in order to fix a bug for mobile display, and this could not be done [without introducing a breaking change into the style in PR 17438](https://github.com/PrestaShop/PrestaShop/pull/17438).
 
-### How PrestaShop maintainers handle this type of BC break
+### How PrestaShop open source project maintainers handle this type of BC break
 
 We try not to introduce such changes as there is no such thing as deprecation for markup. If however we are forced to do so, we try to inform users of the change into the Release Note.
 
@@ -231,7 +230,7 @@ Upgrading to a new version might break existing code that rely on specific behav
 
 Basically, BC breaks introduced into the dependencies we rely on are passed to PrestaShop project when we upgrade our dependencies versions.
 
-### How PrestaShop maintainers handle this type of BC break
+### How PrestaShop open source project maintainers handle this type of BC break
 
 We almost never remove dependencies except the case where it contains a security vulnerability.
 
@@ -397,4 +396,3 @@ Working with the constraint of SemVer is a big challenge for everybody working o
 However, even if for the people working on PrestaShop, SemVer is a (sometimes painful) constraint, we know that this contract is what allows shop, module and theme developers to work confidently.
 
 Dealing with Breaking Changes is a permanent constraint we have to enforce in the code we write for PrestaShop and in the Pull Requests submitted to the project that we are reviewing. So if one day you are being told that your Pull Request cannot be merged (and must be updated) because of a BC break, you should now know exactly what this is about!
-

@@ -151,7 +151,7 @@ In this last snippet of code, the returning value is an array. Before the change
 
 ## Code BC breaks
 
-Code BC breaks are the most common and known BC breaks, and so far we have only been talking about them.
+Code BC breaks are the most common and known BC breaks, and so far this article has only been talking about them.
 
 The two examples used above, are code BC breaks.
 

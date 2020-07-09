@@ -22,7 +22,7 @@ I am thrilled to let you know that Esperanto has been on the rise since the last
 
 ### Interested in becoming a proofreader?
 
-A lot of translators dedicate their time to contribute to  the PrestaShop projects on Crowdin but some strings cannot reach the software because they remain unvalidated. This is for instance the case of the Esperanto project which, as mentioned above, had an increase of translated words but no progress in approving these strings.
+A lot of translators dedicate their time to contribute to the PrestaShop's translation projects on Crowdin but some strings cannot reach the software because they remain unvalidated. This is for instance the case of the Esperanto project which, as mentioned above, had an increase of translated words but no progress in approving these strings.
 
 I thus wanted to tell you that you can ask me if you wish to become a proofreader. If you are already an active translator and wish to be more involved in the translation project by vouching for the translation consistency and approving strings, you can [reach out to me](https://crowdin.com/profile/june.byun)! :wink:
 

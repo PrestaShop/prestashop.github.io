@@ -2,7 +2,7 @@
 layout: post
 title: "Product development at PrestaShop"
 subtitle: "What happens in the team when working on new features"
-date: 2020-06-12 9:00:00
+date: 2020-07-09 9:00:00
 authors: [SamuelPires]
 image: /assets/images/theme/meta-logo-build.png
 icon: icon-lab

@@ -78,12 +78,7 @@ As you can see, it is important for the team to take into account all the impact
 
 Lastly, once you know what to focus on, and what you should work on next, it is actually time to design the feature, to define what to build.
 
-All the product development process at PrestaShop is summarized in the following chart.
-
-![Product development steps at PrestaShop](/assets/images/2020/05/product-development-steps.png)
-
-Designing a feature means defining what is the best solution to a problem, a need.
-There are many ways to solve a problem. But design is not about solving a problem, it is about solving a problem the best way possible and with elegance.
+Designing a feature means defining what is the best solution to a problem, a need. There are many ways to solve a problem. But design is not about solving a problem, it is about solving a problem the best way possible and with elegance.
 
 The usual process to design and build a feature is the following:
 - User Research

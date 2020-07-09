@@ -103,4 +103,4 @@ If all the stakeholders of the feature (PM, CM, designer, developer, and QA engi
 
 This process stays the same, whether the development is done internally or with the help of the community. We do so to ensure alignment before the development phase.
 
-As always, let the team know what you think about it in the comments section!
+Here is how feature development goes at the Core product team, dealing with feedback and skills from both the external and the internal contributors! Product development on such a huge project is quite challenging, that is why the team makes a point of keeping this workflow clear and available for all. As usual, feel free to comment and let us know what you think about it. Even better, tell us about how do you prioritize, organize your own development process... we would love to have your feedback!

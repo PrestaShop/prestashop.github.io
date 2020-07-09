@@ -22,15 +22,15 @@ I am thrilled to let you know that Esperanto has been on the rise since the last
 
 ### Interested in becoming a proofreader?
 
-Some of you dedicate their time to contribute to the PrestaShop projects on Crowdin but cannot validate translations because you don’t have the rights. This is the case, for instance, of [Elvis Crnić](https://crowdin.com/profile/elvissaba) and [Goedkoopsteverf](https://crowdin.com/profile/Goedkoopsteverf), who were respectively first and second in the top 10 translators in April. 
+A lot of translators dedicate their time to contribute to  the PrestaShop projects on Crowdin but some strings cannot reach the software because they remain unvalidated. This is for instance the case of the Esperanto project which, as mentioned above, had an increase of translated words but no progress in approving these strings.
 
-I thus wanted to tell you that you can ask me if you wish to become a proofreader. If you are already an active translator and wish to be more involved in the translation project by vouching for the translation consistency and approving strings, you can [reach out to me](https://crowdin.com/profile/june.byun)!
+I thus wanted to tell you that you can ask me if you wish to become a proofreader. If you are already an active translator and wish to be more involved in the translation project by vouching for the translation consistency and approving strings, you can [reach out to me](https://crowdin.com/profile/june.byun)! :wink:
 
 ### Daily language packs updates
 
 In the [last monthly report](https://build.prestashop.com/news/do-you-speak-prestashop-may-2020/), I explained how the translation packs are updated in PrestaShop now. What has to be kept in mind is that only translations of the 1.7.7 PrestaShop version translation projects can be updated and that it has to be manually exported and uploaded to one’s PrestaShop. 
 
-But the good news is that an issue has been created to start finding a solution to this inconvenience. You can follow the progress, or even involve if you feel like it - it would be a great contribution -, just [here](https://github.com/PrestaShop/PrestaShop/issues/20011).
+But the good news is that an issue has been created to start finding a solution to this inconvenience. You can follow the progress, or even involve if you feel like it - it would be a great contribution -, just [here](https://github.com/PrestaShop/PrestaShop/issues/20011). :sparkles:
 
 ### :two_hearts: Special thanks to newcomers
 

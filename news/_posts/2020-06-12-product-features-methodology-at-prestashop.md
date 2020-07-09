@@ -15,8 +15,6 @@ tags:
 
 In March 2020, the Core product team at PrestaShop, in charge of building and prioritizing new features, decided to work with a new tool: Productboard.
 
-You can learn more in this dedicated article about [how to use Productboard to share feedback on features the team is considering working on]().
-
 The team thought it was the right occasion to talk more about the product development at PrestaShop, the steps, the roles and responsibilities and what happens behind the scenes before a new feature is added to PrestaShop.
 
 

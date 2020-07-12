@@ -12,6 +12,14 @@
 
     {% feed_meta %}
 
+    {% if page.twitter_image %}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@PrestaShop">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:description" content="{{ page.subtitle }}">
+        <meta name="twitter:image" content="{{ page.twitter_image | prepend: site.baseurl }}">
+    {% endif %}
+
     {% include analytics.html %}
 
 </head>

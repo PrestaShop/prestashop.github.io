@@ -1,18 +1,10 @@
 
-<p class="aside-meta">Share this</p>
+<div class="aside-meta">Share this</div>
 
-<ul class="list-group">
+<a href="https://twitter.com/intent/tweet?text={{ page.title | escape }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{ site.twitter_username }}&amp;related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
 
-  <li>
-    <a class="list-group-item" href="https://twitter.com/intent/tweet?text={{ page.title | escape }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{ site.twitter_username }}&amp;related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
-      <i class="icon-twitter-alt"></i> Twitter
-    </a>
-  </li>
-
-  <li>
-    <a class="list-group-item" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
-      <i class="icon-facebook-alt"></i> Facebook
-    </a>
-  </li>
-
-</ul>
+<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>

@@ -9,22 +9,21 @@ icon: icon-code
 tags:
 ---
 
-## A deeper look at Backward Compatibility Breaks
 
-This article explains what exactly are [Backward Compatibility](https://en.wikipedia.org/wiki/Backward_compatibility) Breaks also known as Breaking Changes or BC breaks and how it influences how an open source project like PrestaShop is built. It explains the different types of BC breaks, why they are needed sometimes and how PrestaShop maintainers manage them.
+This article explains what exactly are [Backward Compatibility](https://en.wikipedia.org/wiki/Backward_compatibility) Breaks (also known as Breaking Changes or BC) breaks and how it influences the development of an open source project like PrestaShop. It explains the different types of BC breaks, why they are sometimes needed, and how they are managed by PrestaShop maintainers.
 
 
-### What does BC break mean
+## What does BC break mean
 
-If you look at issues or Pull Requests on PrestaShop GitHub repository, you might notice statements like "Sorry, we cannot do that because it would introduce a BC break" or "Cannot be done without a BC break" when discussing code changes.
+Browsing issues or Pull Requests on PrestaShop's GitHub repository, you may notice maintainers commenting "Sorry, we cannot do that because it would introduce a BC break" or "This cannot be done without a BC break" when discussing code changes.
 
-_You might be familiar with the concept, however if you are not, here is a short explanation:_
+You might already be familiar with this concept. However, if you are not, here is a short explanation:
 
-PrestaShop is a Open Source Project that is being built with the idea that people will use it as a foundation to build their own project. Some will use it as a CMS and extend it with modules and themes. Some will use it as a shop system and customize parts of the e-commerce process. Some will even use it for either its Front-Office or Back-Office but handle the other part in another system, like an ERP or a headless CMS, and manage the communication between the two systems through API calls. So there are "external code" that uses PrestaShop "internal code" (the Core).
+PrestaShop is a Open Source Project that is being built with the idea that people will use it as a foundation to build their own project. Some will use it as a CMS and extend it with modules and themes. Some will use it as a shop system and customize parts of the e-commerce process. Some will even use it for either its Front-Office or Back-Office but handle the other part in another system, like an ERP or a headless CMS, and manage the communication between the two systems through API calls. So there is "external code" that depends on PrestaShop's "internal code" (the Core).
 
-All of these people will use code and logic that is written inside the software. For exammple, very often modules build URLs using function `Link::getModuleLink()`.
+All of these people will use code and logic that is written inside the software. For example, very often modules build URLs using function `Link::getModuleLink()` which belongs to the Core.
 
-However, as time passes, new versions of the software are released and this code and logic are changed to be improved, upgraded, made faster or more secure. When, from one version to another, the code changes in a way that breaks the "external code" that has been built around it, this is a Breaking Change.
+However, as time passes, new versions of the software are released and this code and logic are changed to be improved, upgraded, made faster or more secure. When, from one version to another, the code changes in such a way that breaks the "external code" that has been built around it, this is a Breaking Change.
 
 Here is a very simple example:
 
@@ -36,20 +35,20 @@ becoming
 public function transferPrices($product, $prices)
 ```
 
-If a module uses the function `transferPrices()`, when the function changes, the module that was working previously will now crash with following error message:
+If a module uses the function `transferPrices()`, when the function's signature changes, the module that was working previously will now crash with following error message:
 ```php
 PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function transferPrices(), 1 passed and exactly 2 expected
 ```
 
 So this is what a Breaking Change is: a change in the code that, when introduced into the software, might break some tools, modules, themes, whatever that is running PrestaShop Core code.
 
-So when a BC break is introduced, what happens quick is that we get lot of angry bug reports like "my code, that was working with previous version, is broken when I run it with the new version !" in GitHub!
+As soon as BC break is introduced, we start getting lot of angry bug reports on GitHub from people saying "my code was working fine with previous version, and is now broken after I upgraded my shop to the new version!"
 
 ## SemVer
 
-The concept of BC Break is not specific to PrestaShop. This is actually a very common issue for all code that is being used as a foundation for other software to use: operating systems like Linux, libraries like Guzzle, tools like cURL, frameworks like Symfony ... and CMS like Drupal or PrestaShop.
+The concept of BC Break is not specific to PrestaShop. This is actually a very common issue for all code that is being used by other software: operating systems like Linux, libraries like Guzzle, tools like cURL, frameworks like Symfony... and Content Management Systems (CMSs) like Drupal or PrestaShop.
 
-In order to make it easier for the people using these codebases as foundations to handle these changes, [Tom Preston Werner](http://tom.preston-werner.com/) has invented a convention: [SemVer](https://semver.org/). [SemVer](https://semver.org/) aims to help people understand immediately, when seeing a new version of software, what is contained inside it.
+In order to make it easier for the people using these codebases as foundations to handle these changes, [Tom Preston Werner](http://tom.preston-werner.com/) has invented a convention: [SemVer](https://semver.org/). [SemVer](https://semver.org/) aims to help people immediately understand, when seeing a new software version, what to expect regarding its compatibility with current software.
 
 SemVer requires a version number to be constituted of 3 parts: MAJOR.MINOR.PATCH (example: 3.5.27) .
 
@@ -95,7 +94,7 @@ It means for example they have to provide a different version of their product f
 
 BC breaks hinder the capability of modules to provide a huge compatibility range.
 
-Unfortunately... BC breaks are necessary for software to evolve. Not all software changes can be done while maintaining backward compatibility, and BC breaks are a necessary step for a project to evolve in time. And [evolution is necessary](https://build.prestashop.com/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/) to ensure it continues to fit the needs of its user community, who evolve in time. A software that does not evolve is bound to disappear, replaced by better contributors.
+Unfortunately... BC breaks are necessary for software to evolve. Not all software changes can be done while maintaining backward compatibility, and BC breaks are a necessary step for a project to evolve in time. And [evolution is necessary](https://build.prestashop.com/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/) to ensure it continues to fit the needs of its user community, who evolve in time. Software that does not evolve is bound to disappear, replaced by better contributors.
 
 **Here is an exemple of necessary BC break**
 ```php
@@ -215,7 +214,7 @@ Similarly to other projects of its size, PrestaShop "is built on the shoulders o
 For example PrestaShop uses the popular [PHP HTTP client Guzzle](http://docs.guzzlephp.org/en/stable/). This means that module developers can rely on it too in their implementations.
 And consequently removing or modifying these dependencies can introduce a BC break too.
 
-This type of BC break is especially hard to deal with because we have no control on these packages. Sometimes, in order to avoid introduce a dependency BC break, [we decided to maintain a package ourselves](https://github.com/PrestaShop/CsaGuzzleBundle) rather than using the latest version because of the hard BC break it would introduce.
+This type of BC break is especially hard to deal with because we have no control on these packages. Sometimes, in order to avoid introducing a dependency BC break, [we decided to maintain a package ourselves](https://github.com/PrestaShop/CsaGuzzleBundle) rather than using the latest version because of the hard BC break it would introduce.
 
 **Hard BC break example:**
 ```html

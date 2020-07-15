@@ -5,8 +5,13 @@
 </div>
 
 <div class="aside-meta">Written by</div>
-<p class="author-name">
+<div class="author-name">
   {% for a in page.authors %}
-    {{ site.data.authors[a]["display_name"] }} <br />
+      <div class="author-item">
+          <div class="author-display-name">{{ site.data.authors[a]["display_name"] }}</div>
+      {% unless site.data.authors[a]["role"] == '' %}
+          <div class="author-display-role">{{ site.data.authors[a]["role"] }}</div>
+      {% endunless %}
+      </div>
   {% endfor %}
-</p>
+</div>

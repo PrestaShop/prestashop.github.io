@@ -563,17 +563,20 @@ $autocomplete-width: 600px;
  * Content
  */
 #post-sidebar aside {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit/2;
     margin-left: $spacing-unit/2;
     &:not(:first-child) {
-        padding-top: $spacing-unit;
+        padding-top: $spacing-unit/2;
+    }
+
+    .publish-date {
+        font-size: .8em;
     }
 }
 
 .aside-meta {
     font-size: 0.7em;
     color: $grey-color;
-
 }
 
 .alert-note {
@@ -590,10 +593,12 @@ $autocomplete-width: 600px;
  * Author
  */
 .author {
+    margin-right: -$grid-gutter-width*2/3;
     border-right: solid 1px $grey-color-light;
+    padding-right: 5px;
 }
 .author-avatar {
-    margin-bottom: 0.5*$spacing-unit;
+    margin-bottom: $spacing-unit/2;
     img {
         float: left;
         max-width: 40%;
@@ -604,23 +609,36 @@ $autocomplete-width: 600px;
 .author-name {
     font-size: 0.9em;
     text-align: left;
+    .author-item {
+      line-height: 1.2;
+      & + .author-item {
+          margin-top: .8em;
+      }
+    }
+    .author-display-name {
+        font-weight: 600;
+        margin-top: .2em;
+    }
+    .author-display-role {
+        font-size: .9em;
+        margin-top: .2em;
+    }
 }
 
 /**
  * Share buttons
  */
 aside.share-buttons {
-    ul {
-        margin: 0 !important;
-        list-style-type: none;
-        a {
-            color: $text-color;
-            font-size: 1em;
-        }
-        li {
-            margin-bottom: 6px;
-            font-size: 0.8em;
-        }
+    .aside-meta {
+        margin-bottom: 5px;
+    }
+    a {
+        color: $text-color;
+        font-size: 2.2rem;
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
     }
 }
 

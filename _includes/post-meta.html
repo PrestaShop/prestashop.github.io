@@ -4,8 +4,7 @@
 
       <div class="col-md-4">
         <ul class="details">
-
-          <li>{{ page.date | date: "%b %-d, %Y" }}</li>
+          <li class="hidden-md hidden-lg">{{ page.date | date: "%b %-d, %Y" }}</li>
 
           {% unless page.tags == empty %}
             <li>

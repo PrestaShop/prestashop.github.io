@@ -29,7 +29,7 @@ The portal, available in the 'PrestaShop Core' tab, is divided into several sect
 
 ## How to use PrestaShop Feedback
 
-### See all features and expressions of needs, follow their development
+### See the selected features, express some needs, check their design
 
 Each feature or expression of needs is represented by a card that includes a title and a description, sometimes an image.
 Click on a card to learn more about it.

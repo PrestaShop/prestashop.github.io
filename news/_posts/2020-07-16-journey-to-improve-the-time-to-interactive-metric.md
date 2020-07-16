@@ -14,27 +14,29 @@ tags:
 
 The project [Core Web Vitals](https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html) from Google has announced that loading time and performance will have an impact on the website ranking in search results. In advices offered by Google, they talked about lazy loading.
 
-## What is the lazy loading ?
+## What is lazy loading ?
 
-Lazy loading is a technique that defers loading of non-critical resources at page load time. Instead, these non-critical resources are loaded only when needed. For example, images which are at the bottom of the page are less critical than images at the top of the page.
+Lazy loading is a technique that defers loading of non-critical resources at page load time. Instead, these non-critical resources are loaded only when needed. For example, images which are at the bottom of the page are less critical than images at the top of the page and should consequently be loaded later.
 
-## How can I implement use the native lazy loading ?
+This feature used to be provided by third party plugins or modules but is now supported natively in all modern browsers.
 
-The loading attribute on the `<img>` tag is used to defer loading of images that are off-screen until the user scrolls near them. So on all you frontend `<img>` tags, you have to add an attribute `loading` with the value `lazy` and it's done.
+## How can I enable native lazy loading on my theme ?
 
-### And the support ?
+Browsers use the `loading` attribute on the `<img>` tag to defer loading of images that are off-screen until the user scrolls near them. Consequently on all your `<img>` tags, you must set a `loading` attribute with value `lazy`. And it's done.
 
-Thanks to the website [Can I Use](https://caniuse.com/#feat=loading-lazy-attr) for data.
+### What browsers support this feature ?
+
+This information can be found on multiple sources, such as "[Can I Use](https://caniuse.com/#feat=loading-lazy-attr)".
 
 ![Lazy Loading Support](/assets/images/2020/07/lazy-loading-support.png)
 
-The feature works on 68% of all browsers from the market. And if the feature is not active on the browser, images will load like if the feature is not enabled.
+In 2020, native lazy loading is enabled on 68% of used browsers. And if the feature is not active on the browser, images will be loaded as usual.
 
-## What is the win for PrestaShop ?
+## PrestaShop Classic Theme performance analysis
 
-In a first time, I wanted to use [Lighthouse](https://developers.google.com/web/tools/lighthouse)  which is an open-source, automated tool for improving the quality of web pages. But our test and a discussion have target an [issue](https://github.com/GoogleChrome/lighthouse/issues/11071) in Lighthouse. The detection of lazy loading images are really detected in very long pages ([min 5000px](https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/renderer/core/frame/settings.json5;drc=e8f3cf0bbe085fee0d1b468e84395aad3ebb2cad;l=971-1003?originalUrl=https:%2F%2Fcs.chromium.org%2Fchromium%2Fsrc%2Fthird_party%2Fblink%2Frenderer%2Fcore%2Fframe%2Fsettings.json5)).
+At first, we considered using [Lighthouse](https://developers.google.com/web/tools/lighthouse) which is an open-source, automated tool for improving the quality of web pages. But after a few attempts, we encountered an [issue](https://github.com/GoogleChrome/lighthouse/issues/11071) in Lighthouse that prevented us to do so. It turns out the detection of lazy loading images are only performed in heavy pages ([min 5000px](https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/renderer/core/frame/settings.json5;drc=e8f3cf0bbe085fee0d1b468e84395aad3ebb2cad;l=971-1003?originalUrl=https:%2F%2Fcs.chromium.org%2Fchromium%2Fsrc%2Fthird_party%2Fblink%2Frenderer%2Fcore%2Fframe%2Fsettings.json5)).
 
-I choose the Google Chrome console and its Network tab for showing you difference before and after lazy loading use.
+[Progi1984](https://github.com/Progi1984) choose the Google Chrome console and its Network tab for showing you the performances evolution before and after lazy loading usage.
 
 My test is based the New Products page with 50 products (and so 50 images minimum) per page. 
 

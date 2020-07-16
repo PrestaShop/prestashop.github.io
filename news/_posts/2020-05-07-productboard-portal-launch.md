@@ -68,7 +68,7 @@ Of course, the goal is not to vote “Critical” on every feature idea. This wo
 
 Now you might also wonder what happens when you add a comment.
 Well, the comment is automatically associated with the card in the team interface.
-It helps the product team, the designers and the developers precisely identify the users’ needs, and thus design the feature the best way possible to answer these needs.
+It helps the product team, the designers, and the developers to precisely **identify** the users’ needs, and thus **build** the feature the best way possible to answer these needs.
 
 In the end, it is all about delivering as much value as possible to the users, with all kinds of users in mind.
 

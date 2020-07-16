@@ -90,8 +90,9 @@ The team might use it to contact you about your idea as well.
 
 Once the problem exposed, the solution defined and the design approved, the feature enters its development phase. For the Core product team, the next steps are writing specifications on the [dedicated repository](https://github.com/PrestaShop/prestashop-specs) and creating all related issues so that the Core dev team or the community can have all the necessary elements to develop them. All those steps are lead on GitHub, Productboard is just the tool that allows the Core product team to collect feedback and prioritize features.
 
-One of the main problems the team had was to centralize all the feedback coming from several types of users, from different sources.
-Having all this feedback in the same place will make it easier to have a better understanding of our users.
+You already read it on our previous blog post about the [product development methodology](https://build.prestashop.com/news/product-features-methodology-at-prestashop), one of the main problems the team had was to centralize all feedback coming from several types of users and different sources. Having all this information in the same place will definitely make it easier for the team to understand the PrestaShop users.
+
+Also, this is just the beginning, the Core product team will need some time to get used to the tool and to adapt it to its product development methodology.
 
 The team is looking forward to using it with you! Hope you’ll like it!
 

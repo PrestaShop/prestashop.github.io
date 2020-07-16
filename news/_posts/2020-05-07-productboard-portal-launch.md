@@ -34,7 +34,8 @@ The portal, available in the 'PrestaShop Core' tab, is divided into several sect
 Each feature or expression of needs is represented by a card that includes a title and a description, sometimes an image.
 Click on a card to learn more about it.
 
-All cards fall into several tabs, each corresponding to a specific step in the product development:
+All cards fall into three sections, each corresponding to a specific step in the product development:
+
 - Under consideration
 - User research
 - Design

@@ -15,7 +15,7 @@ tags:
  - product
 ---
 
-In March 2020, the product team at PrestaShop, in charge of building and prioritizing new features, decided to work with a new tool: [Productboard](https://www.productboard.com). It helps product managers to gather feedback and prioritize features.
+As announced [here](https://build.prestashop.com/news/product-features-methodology-at-prestashop), the Core product team recently adopted a new working tool to gather feedback and prioritize features: [Productboard](https://www.productboard.com). No more teasing, it is now time to have a look at how it will look and how we will all be able to handle it!
 
 Productboard made two things possible for the team:
 - Having a team interface to centralize all feedback, organize them, define features, and prioritize them.

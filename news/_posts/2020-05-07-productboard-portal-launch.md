@@ -52,11 +52,9 @@ Lists the features the team decided to work on. When we start working on a featu
 Once the problem and the solutions identified, the design phase is here to build the feature. In this section, you will be able to find all the features that are going under design. Getting feedback allows the team to know how useful is the solution and to possibly recruit voluntary testers. When the design is approved, the development phase goes back to [GitHub](https://github.com/PrestaShop/PrestaShop).
 
 
-### Comment and vote for existing ideas
-When clicking on a card you can see 2 fields at its bottom. One to comment, and one to vote on the feature's impact **on you**.
+### Comment and vote for the cards
 
-Voting for ideas is really important to help the team.
-Here is what happens behind the scenes:
+When clicking on a card, you can see two fields at its bottom: one to comment and another one to vote. It is really important to the team as it helps us evaluate how the feature impacts **you**. Here is what happens behind the scenes:
 
 ![PrestaShop Productboard user score](/assets/images/2020/05/productboard-user-score.png)
 

@@ -12,8 +12,6 @@ tags:
 - theme
 ---
 
-# A journey to improve the Time To Interactive metric in PrestaShop thanks to the lazy loading
-
 The project [Core Web Vitals](https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html) from Google has announced that loading time and performance will have an impact on the website ranking in search results. In advices offered by Google, they talked about lazy loading.
 
 ## What is the lazy loading ?

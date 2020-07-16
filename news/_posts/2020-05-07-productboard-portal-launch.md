@@ -17,9 +17,10 @@ tags:
 
 As announced [here](https://build.prestashop.com/news/product-features-methodology-at-prestashop), the Core product team recently adopted a new working tool to gather feedback and prioritize features: [Productboard](https://www.productboard.com). No more teasing, it is now time to have a look at how it will look and how we will all be able to handle it!
 
-Productboard made two things possible for the team:
-- Having a team interface to centralize all feedback, organize them, define features, and prioritize them.
-- Having a public space, where the team is able to publicly present these features and to collect feedback about them. **And that is what this article is about.**
+Productboard makes two things possible for the team:
+
+- On the one hand, having _a dedicated internal interface_ to centralize all feedback, group them into topics, define features, and prioritize them.
+- On the other hand, having _an open public portal_ to explicitly present those features and collect feedback about them. **And that is what this article is about.**
 
 So the team has created this space called [**PrestaShop Feedback**](https://feedback.prestashop.com) where anyone can comment, and vote for the next features the team is working on, whether you are a merchant, a developer, an agency, a seller on the [Addons Marketplace](http://addons.prestashop.com/),...
 This space is accessible at [feedback.prestashop.com](https://feedback.prestashop.com).

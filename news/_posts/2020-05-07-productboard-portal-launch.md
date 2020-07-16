@@ -47,7 +47,6 @@ Lists the topics and features that have already been identified and structured b
 
 ### User research
 Lists the features the team decided to work on. When we start working on a feature, the first step is always to drive some user research to understand which types of users it may concern, what are the use cases around it, and its purpose. As the goal of user research is to identify the problem or need to solve, the purpose at this point is to get feedback to consider which problems are related to which cases.
-The goal of the user research is to identify the problem or need, to solve.
 
 #### Design
 Once the problem is identified, the designers start working on the best solution to solve it.

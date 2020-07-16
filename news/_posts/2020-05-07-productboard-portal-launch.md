@@ -43,7 +43,7 @@ All cards fall into three sections, each corresponding to a specific step in the
 ![PrestaShop Feedback home](/assets/images/2020/05/productboard-home.png)
 
 #### Under consideration
-Lists all topics and some features that are already well structured and identified. At this step rating a card and telling the team why it is important will help the team prioritize it.
+Lists the topics and features that have already been identified and structured by the team. At this step, we need feedback to consider as many use cases as possible. It will allow us to draw the most useful feature. Also, rating a card to let the team know how important it is to you will help us prioritize it.
 
 ### User research
 Lists all the features the product team has decided to work on at the moment. When the team starts working on a feature, the first step is always to conduct some user research to understand which types of users need this feature, what are the use cases around it, and what’s its purpose.

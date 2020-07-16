@@ -22,8 +22,7 @@ Productboard makes two things possible for the team:
 - On the one hand, having _a dedicated internal interface_ to centralize all feedback, group them into topics, define features, and prioritize them.
 - On the other hand, having _an open public portal_ to explicitly present those features and collect feedback about them. **And that is what this article is about.**
 
-So the team has created this space called [**PrestaShop Feedback**](https://feedback.prestashop.com) where anyone can comment, and vote for the next features the team is working on, whether you are a merchant, a developer, an agency, a seller on the [Addons Marketplace](http://addons.prestashop.com/),...
-This space is accessible at [feedback.prestashop.com](https://feedback.prestashop.com).
+So the team has created this portal called **PrestaShop Feedback** so that anyone can comment and vote for the features on which feedback is needed. Whether you are a merchant, a developer, an agency, a seller on the [Addons Marketplace](http://addons.prestashop.com/), etc. your opinions and suggestions are expected on the [feedback.prestashop.com](https://feedback.prestashop.com) page.
 
 The goal of this article is to explain how to use the PrestaShop Feedback interface to share your feedback on upcoming features.
 

@@ -76,7 +76,7 @@ In the end, it is all about delivering as much value as possible to the users, w
 
 In addition to having an overview of the selected features, commenting and voting, you can submit new ideas.
 
-A “Submit an idea” button is located in the Portal’s top-right corner. Click on it and follow the steps.
+A “Submit an idea” button is located in the portal’s top-right corner. Click on it and follow the steps.
 
 ![How to sumbit a new idea on PrestaShop Feedback](/assets/images/2020/05/productboard-new-idea.gif)
 

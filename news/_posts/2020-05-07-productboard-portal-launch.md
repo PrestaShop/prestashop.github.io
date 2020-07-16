@@ -45,7 +45,7 @@ All cards fall into three sections, each corresponding to a specific step in the
 #### Under consideration
 Lists the topics and features that have already been identified and structured by the team. At this step, we need feedback to consider as many use cases as possible. It will allow us to draw the most useful feature. Also, rating a card to let the team know how important it is to you will help us prioritize it.
 
-### User research
+#### User research
 Lists the features the team decided to work on. When we start working on a feature, the first step is always to drive some user research to understand which types of users it may concern, what are the use cases around it, and its purpose. As the goal of user research is to identify the problem or need to solve, the purpose at this point is to get feedback to consider which problems are related to which cases.
 
 #### Design

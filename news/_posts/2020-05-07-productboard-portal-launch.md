@@ -73,7 +73,8 @@ It helps the product team, the designers, and the developers to precisely **iden
 In the end, it is all about delivering as much value as possible to the users, with all kinds of users in mind.
 
 ### Submit a new idea
-In addition to seeing all the features ideas, commenting and voting, you can submit new ones.
+
+In addition to having an overview of the selected features, commenting and voting, you can submit new ideas.
 
 A “Submit an idea” button is located in the Portal’s top-right corner. Click on it and follow the steps.
 

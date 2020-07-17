@@ -10,9 +10,10 @@ tags:
 - development
 - ux
 - theme
+- 1.7.8
 ---
 
-The project [Core Web Vitals](https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html) from Google has announced that loading time and performance will have an impact on the website ranking in search results. In advices offered by Google, they talked about lazy loading.
+The project [Core Web Vitals](https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html) from Google has announced that loading time and performance will have an impact on the website ranking in search results. In advices offered by Google, they talked about lazy loading. The lazy loading should be available on Classic Theme in version 1.7.8 thanks to [Progi1984](https://github.com/Progi1984) and it will definitely improve both the user experience and the loading time on your site!
 
 ## What is lazy loading ?
 

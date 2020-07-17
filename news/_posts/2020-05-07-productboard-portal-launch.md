@@ -31,7 +31,7 @@ The portal, available in the 'PrestaShop Core' tab, is divided into several sect
 
 ### See the selected features, express some needs, check their design
 
-Each feature or expression of needs is represented by a card that includes a title and a description, sometimes an image.
+All selected feature or expression of needs exposed in this portal is represented by a card that includes a title and a description, sometimes an image.
 Click on a card to learn more about it.
 
 All cards fall into three sections, each corresponding to a specific step in the product development:

@@ -54,7 +54,7 @@ Once the problem and the solutions identified, the design phase is here to conce
 
 ### Comment and vote for the cards
 
-When clicking on a card, you can see two fields at its bottom: one to comment and another one to vote. It is really important to the team as it helps us evaluate how the feature impacts **you**. Here is what happens behind the scenes:
+When clicking on a card, you can see two fields at its bottom: one to comment and another one to vote. It is really important to the team as it helps us evaluate how the feature impacts **you or your clients (if you are an agency or a developer, for instance)**. Here is what happens behind the scenes:
 
 ![PrestaShop Productboard user score](/assets/images/2020/05/productboard-user-score.png)
 

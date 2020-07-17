@@ -49,7 +49,7 @@ This section lists the topics and features that have already been identified and
 Lists the features the team decided to work on. When we start working on a feature, the first step is always to drive some user research to understand which types of users it may concern, what are the use cases around it, and its purpose. As the goal of user research is to identify the problem or need to solve, the purpose at this point is to get feedback to consider which problems are related to which cases.
 
 #### Design
-Once the problem and the solutions identified, the design phase is here to build the feature. In this section, you will be able to find all the features that are going under design. Getting feedback allows the team to know how useful is the solution and to possibly recruit voluntary testers. When the design is approved, the development phase goes back to [GitHub](https://github.com/PrestaShop/PrestaShop).
+Once the problem and the solutions identified, the design phase is here to conceive the feature. In this section, you will be able to find all the features that are going under design. Getting feedback allows the team to know how useful is the solution and to possibly recruit voluntary testers.
 
 
 ### Comment and vote for the cards

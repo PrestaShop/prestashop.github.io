@@ -24,7 +24,7 @@ Productboard makes two things possible for the team:
 
 So the team has created this portal called **PrestaShop Feedback** so that anyone can comment and vote for the features on which feedback is needed. Whether you are a merchant, a developer, an agency, a seller on the [Addons Marketplace](http://addons.prestashop.com/), etc. your opinions and suggestions are expected on the [feedback.prestashop.com](https://feedback.prestashop.com) page.
 
-The portal, available in the 'PrestaShop Core' tab, is divided into several sections. The goal of this article is to explain how to use this interface to share your feedback on upcoming features.
+The portal, available in the 'PrestaShop Core' tab, is divided into several sections. The goal of this article is to explain how to use this interface to share your feedback on the selected features.
 
 
 ## How to use PrestaShop Feedback

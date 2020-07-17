@@ -92,7 +92,6 @@ Once the problem exposed, the solution defined and the design approved, the feat
 
 You already read it on our previous blog post about the [product development methodology](https://build.prestashop.com/news/product-features-methodology-at-prestashop), one of the main problems the team had was to centralize all feedback coming from several types of users and different sources. Having all this information in the same place will definitely make it easier for the team to understand the PrestaShop users.
 
-Also, this is just the beginning, the Core product team will need some time to get used to the tool and to adapt it to its product development methodology.
 
 The team is looking forward to using it with you! Hope you’ll like it!
 

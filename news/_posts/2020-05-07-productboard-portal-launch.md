@@ -59,7 +59,7 @@ When clicking on a card, you can see two fields at its bottom: one to comment an
 ![PrestaShop Productboard user score](/assets/images/2020/05/productboard-user-score.png)
 
 When rating the impact of a feature, Productboard adds your vote to a “user score” that the team takes directly into account when evaluating features through its prioritization score.
-The more an idea is voted, the better rank it gets, and the more probability it has to integrate the software.
+The more an idea is voted, the better ranking it gets, and the more probability it has to be developed, either by our teams or by community developers.
 
 This “user score” is not the only indicator that the team takes into account when evaluating a feature but it is key. Complexity, innovation, business impact for the merchants, legal aspects, are some of the criteria studied as well.
 

@@ -39,7 +39,7 @@ At first, we considered using [Lighthouse](https://developers.google.com/web/too
 
 Core developer [Progi1984](https://github.com/Progi1984) chose to use the Google Chrome console and its Network tab in order to show you the performances evolution before and after lazy loading usage.
 
-This test is based the New Products page with 50 products (and so 50 images minimum) per page.
+This test is based on the New Products page with 50 products (and so 50 images minimum) per page.
 
 The benchmark is performed on `develop` and `lazyloading` branches.
 

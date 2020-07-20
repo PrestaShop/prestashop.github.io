@@ -13,7 +13,7 @@ tags:
 - 1.7.8
 ---
 
-The project [Core Web Vitals](https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html) from Google has announced that loading time and performance will have an impact on the website ranking in search results. In advices offered by Google, they talked about lazy loading. The lazy loading should be available on Classic Theme in version 1.7.8 thanks to [Progi1984](https://github.com/Progi1984) and it will definitely improve both the user experience and the loading time on your site!
+The project [Core Web Vitals](https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html) from Google has announced that loading time and performance will have an impact on the website ranking in search results. Google mentions lazy loading in their suggestions. Lazy loading will be available on Classic Theme in version 1.7.8 thanks to [Progi1984](https://github.com/Progi1984) and it will definitely improve both user experience and loading time on your site!
 
 ## What is lazy loading ?
 
@@ -35,17 +35,17 @@ In 2020, native lazy loading is enabled on 68% of used browsers. And if the feat
 
 ## PrestaShop Classic Theme performance analysis
 
-At first, we considered using [Lighthouse](https://developers.google.com/web/tools/lighthouse) which is an open-source, automated tool for improving the quality of web pages. But after a few attempts, we encountered an [issue](https://github.com/GoogleChrome/lighthouse/issues/11071) in Lighthouse that prevented us to do so. It turns out the detection of lazy loading images are only performed in heavy pages ([min 5000px](https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/renderer/core/frame/settings.json5;drc=e8f3cf0bbe085fee0d1b468e84395aad3ebb2cad;l=971-1003?originalUrl=https:%2F%2Fcs.chromium.org%2Fchromium%2Fsrc%2Fthird_party%2Fblink%2Frenderer%2Fcore%2Fframe%2Fsettings.json5)).
+At first, we considered using [Lighthouse](https://developers.google.com/web/tools/lighthouse) which is an open-source, automated tool for improving the quality of web pages. But after a few attempts, we encountered an [issue](https://github.com/GoogleChrome/lighthouse/issues/11071) in Lighthouse that prevented us to do so. It turns out the detection of lazy loading images is only performed in heavy pages ([min 5000px](https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/renderer/core/frame/settings.json5;drc=e8f3cf0bbe085fee0d1b468e84395aad3ebb2cad;l=971-1003?originalUrl=https:%2F%2Fcs.chromium.org%2Fchromium%2Fsrc%2Fthird_party%2Fblink%2Frenderer%2Fcore%2Fframe%2Fsettings.json5)).
 
-[Progi1984](https://github.com/Progi1984) choose the Google Chrome console and its Network tab for showing you the performances evolution before and after lazy loading usage.
+Core developer [Progi1984](https://github.com/Progi1984) chose to use the Google Chrome console and its Network tab in order to show you the performances evolution before and after lazy loading usage.
 
-My test is based the New Products page with 50 products (and so 50 images minimum) per page. 
+This test is based the New Products page with 50 products (and so 50 images minimum) per page.
 
-I make the test on `develop` branch and the `lazyloading` branch.
+The benchmark is performed on `develop` and `lazyloading` branches.
 
-In the first scenario, I work on the `develop` branch. 
+First scenario is performed against `develop` branch. 
 
-I made two tests :  
+Two measures are performed:
 
 - the first on desktop mode with no throlling
 
@@ -55,9 +55,9 @@ I made two tests :
 
 ![Test without Lazy Loading on emulated device "iPad Pro" mode with Fast 3G throlling](/assets/images/2020/07/lazy-loading-test-before-mobile-3G-throlling.png)
 
-In the second scenario, I work on the `lazyloading` branch.
+Second scenario happens on `lazyloading` branch.
 
-I made two tests :  
+Two measures are performed again:
 
 - the first on desktop mode with no throlling
 
@@ -67,10 +67,10 @@ I made two tests :
 
 ![Test with Lazy Loading on emulated device "iPad Pro" mode with Fast 3G throlling](/assets/images/2020/07/lazy-loading-test-after-mobile-3G-throlling.png)
 
-You can see between 21% and 28% win with lazyloading  between our two tests.
+A gain of 21% to 28% can be observed with lazyloading.
 
-Imagine the win for users who browse your websites every in the world, with different connections types.
+You are left to imagine the possible gains for users who browse your websites all around the world, with different connections profiles.
 
 ## Conclusion
 
-As a developer or theme provider, you should implement this feature considering the time it take to implement it and the win.
+As a developer or theme provider, implementing this feature is a very good investment. The implementation is easy and the gain is huge is all we have to say.

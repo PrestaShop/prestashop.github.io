@@ -2,7 +2,7 @@
 layout: post
 title: "A journey to improve the Time To Interactive metric in Classic Theme"
 subtitle: "When the lazy loading allow us to improve the LightHouse Score"
-date: 2020-07-16 9:00:00
+date: 2020-07-21 9:00:00
 authors: [Progi1984]
 image: /assets/images/theme/meta-logo-build.png
 icon: icon-lab

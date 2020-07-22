@@ -5,7 +5,8 @@ subtitle: "It's time to make PrestaShop better and safer that it already is!"
 date:   2020-03-11 08:00:00
 authors: [ PierreRambaud, PrestaShop ]
 icon: icon-chat
-image: /assets/images/theme/meta-logo-build.png
+image: /assets/images/2020/07/ywhbanner.jpg
+twitter_image: /assets/images/2020/07/twitter_card_bug_bounty.png
 tags: [bug, bounty, program, maintenance]
 ---
 

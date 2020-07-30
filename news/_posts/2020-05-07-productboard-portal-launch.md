@@ -40,7 +40,7 @@ All cards fall into three sections, each corresponding to a specific step in the
 - User research
 - Design
 
-![PrestaShop Feedback home](/assets/images/2020/05/productboard-home.png)
+![PrestaShop Feedback home](/assets/images/2020/07/productboard-portal.png)
 
 #### Under consideration
 This section lists the topics and features that have already been identified and structured by the team. At this step, we need feedback to consider as many use cases as possible. It will allow us to draw the most valuable feature for the need that was prioritized. Also, rating a card to let the team know how important it is to you will help us prioritize it.

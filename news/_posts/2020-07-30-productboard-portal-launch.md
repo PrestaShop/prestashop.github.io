@@ -2,7 +2,7 @@
 layout: post
 title:  "A new place to contribute to the PrestaShop project and share your feedback on the next features"
 subtitle: "Discover PrestaShop's new tool to collect feedback and better prioritize what to build next!"
-date:   2020-05-07 10:00:00
+date:   2020-07-30 16:30:00
 authors: [ SamuelPires ]
 image:   /assets/images/theme/meta-logo-build.png
 icon: icon-lab

@@ -82,7 +82,7 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
  6. | ftugrul | Turkish | 60
  7. | David Gonzalez (davidglezz) | Spanish | 21
 
-Congrats, and welcome to our new top contributors :clap:
+Congrats, and welcome to our new top contributors! :clap:
 
 Remember, you can see who's been contributing to our translation project thanks to the [Translators page](http://translators.prestashop.com/).
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Do you speak PrestaShop? – July 2020 edition"
-subtitle: "Where you'll learn that that there is a way to boost translations"
+subtitle: "Where you'll learn that there is a way to boost translations"
 date:  2020-08-07 10:00:00
 authors: [JuneByun]
 icon: icon-world
@@ -18,23 +18,16 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ### First news, a way to boost translations :fire:
 
-As I mentioned in the [previous Crowdin Monthly](https://build.prestashop.com/news/do-you-speak-prestashop-june-2020/), many PrestaShop translation projects, such as Esperanto, are reaching higher translation rates thanks to dedicated contributors. To help and encourage them, I did some tests by translating strings with Crowdin’s Pre-translation via Translation Memory (TM) tool. What is this tool and how does it work? 
+As I mentioned in the [previous Crowdin Monthly](https://build.prestashop.com/news/do-you-speak-prestashop-june-2020/), many PrestaShop translation projects, such as Esperanto, are reaching higher translation rates thanks to dedicated contributors. To help and encourage them, I did some tests by translating strings with Crowdin’s Pre-translation via Translation Memory (TM) tool. Simply put, this tool allows you to retrieve translations of a project and apply them to newly added strings. :sparkles:
 
-The Project Translation Memory (TM) is the vault of the source strings and their translations into different languages. Every translation made in a project is automatically added to the Project Translation Memory. By using the Pre-translation via the TM tool, translations of the same or similar strings in a project can be applied to untranslated strings. As strings of older versions are propagated to new versions, the more the older versions are translated, the less you will have to translate for new versions. :sparkles:
+This test was done for the Spanish, Mexico and Spanish, Colombia project and the translation rate went respectively from 70% to 96% and 65% to 76%. :tada: To conclude this test, proofreaders of these projects are needed to vouch for the translation consistency and approve these strings. I thus invite any latin american spanish native who wishes to help! :wink:
 
-
-### Interested in testing the TM tool? 
-
-This test was done for the Spanish, Mexico and Spanish, Colombia project and the translation rate went respectively from 70% to 96% and 65% to 76%. :tada: To conclude this test, proofreaders of these projects are needed to vouch for the translation consistency and approve these strings. Any latin american spanish native who wishes to help and become more involved in projects by becoming proofreaders are more than welcome. 
-
-I also want to let contributors know that if you are interested in testing the TM tool to translate more strings of the language project you are working on, you can [reach out to me](https://crowdin.com/profile/june.byun)! If translations done by the TM tool are proved to be accurate, this method could be replicated and make your work easier and make translations available for merchants - and you as well. :wink:
-
+One detail to take into account is that these tests were successful thanks to translators of these projects who had contributed accurate and consistent translations. As the TM tool relies on translations of projects, the more translations are stored, the more it will be efficient. 
 
 ### A way to communicate with fellow translators?
 
 Not long ago, the suggestion to have a communication channel for translators of the same project popped. This is a good initiative as it would allow translators to ask questions related to the project they are working on or feedback on suggested translations. Also, this could motivate and keep the community active. 
 For now, considered options would be to either create a Slack channel per language or discussion groups in Crowdin (in which new onboarded translators will be added). Would that be something you are interested in? Let me know your thoughts! :blush:
-
 
 ### :two_hearts: Special thanks to newcomers
 
@@ -91,7 +84,7 @@ Remember, you can see who's been contributing to our translation project thanks 
 
 #### Fully translated languages
 
-At the end of July 2020, PrestaShop 1.7.7 was fully available (= 100% translated and validated) in **4 languages**:
+At the end of July 2020, PrestaShop 1.7.7 was fully available (= 100% translated and validated) in **10 languages**:
 
 | Chinese Traditional | Danish | Dutch | French | Italian |
 | Portuguese, Brazil | Slovak | Slovene | Spanish | Swedish | 
@@ -114,7 +107,7 @@ Of course, this is highlighting the languages that made some progress with new t
 
 ## Languages that need (more) proofreaders
 
-A translated string will not be available in PrestaShop as long as it is not validated. For this reason, it’s important PrestaShop should keep a high level of validated strings vs. translated strings, to make sure everyone benefits from the latest translations! :fire:
+A translated string will not be available in PrestaShop as long as it is not validated. For this reason, it’s important to keep a high level of validated strings vs. translated strings, to make sure everyone benefits from the latest translations! :fire:
 
 At the end of July 2020, some languages would still benefit from some proofreading:
 
@@ -126,10 +119,10 @@ At the end of July 2020, some languages would still benefit from some proofreadi
 
 ![Languages that need proofreading](/assets/images/2020/07/build-crowdin-proofreading-july20.png)
 
-If you wish to help to proofread what has been translated, please contact us with the language you'd like to proofread: just send an email to translation@prestashop.com. The PrestaShop project needs your help!
+If you wish to help to proofread what has been translated, please contact PrestaShop with the language you'd like to proofread: just send an email to translation@prestashop.com. Your help is needed!
 
 If you haven't joined us on Crowdin yet, [it's never too late](https://crowdin.com/project/prestashop-official)! :wink:
 
-If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let us know: the PrestaShop team will include a word about it in the next monthly report.
+If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let me know: I'll include a word about it in the next monthly report.
 
 Do you have a question, a remark? Don't hesitate to leave a comment. See you next month! :raising_hand:

@@ -128,7 +128,7 @@ At the end of July 2020, some languages would still benefit from some proofreadi
 
 If you wish to help to proofread what has been translated, please contact us with the language you'd like to proofread: just send an email to translation@prestashop.com. We need your help!
 
-If you haven't joined us on Crowdin yet, [it's never too late](https://crowdin.com/project/prestashop-official) :wink:
+If you haven't joined us on Crowdin yet, [it's never too late](https://crowdin.com/project/prestashop-official)! :wink:
 
 If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let us know: we'll include a word about it in the next monthly report.
 

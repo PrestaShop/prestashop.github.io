@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Do you speak PrestaShop? – July 2020 edition"
-subtitle: "Where you'll learn that there is a way to boost translations"
+subtitle: "Where you'll learn that Thai is back on track"
 date:  2020-08-07 10:00:00
 authors: [JuneByun]
 icon: icon-world

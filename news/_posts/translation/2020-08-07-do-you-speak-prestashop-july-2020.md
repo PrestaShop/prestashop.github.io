@@ -18,11 +18,11 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ### First news, a way to boost translations :fire:
 
-As I mentioned in the [previous Crowdin Monthly](https://build.prestashop.com/news/do-you-speak-prestashop-june-2020/), many PrestaShop translation projects, such as Esperanto, are reaching higher translation rates thanks to dedicated contributors. To help and encourage them, I did some tests by translating strings with Crowdin’s Pre-translation via Translation Memory (TM) tool. Simply put, this tool allows you to retrieve translations of a project and apply them to newly added strings. :sparkles:
+As I mentioned in the [previous Crowdin Monthly](https://build.prestashop.com/news/do-you-speak-prestashop-june-2020/), many PrestaShop translation projects, such as Esperanto, are reaching higher translation rates thanks to dedicated contributors. To help and encourage them, I did some tests by translating strings with Crowdin’s Pre-translation via Translation Memory (TM) tool. Simply put, this tool retrieves translations of a project and apply them to newly added strings. :sparkles:
 
-This test was done for the Spanish, Mexico and Spanish, Colombia project and the translation rate went respectively from 70% to 96% and 65% to 76%. :tada: To conclude this test, proofreaders of these projects are needed to vouch for the translation consistency and approve these strings. I thus invite any latin american spanish native who wishes to help! :wink:
+This test was done for the Spanish, Mexico and Spanish, Colombia project and the translation rate went respectively from 70% to 96% and 65% to 76%. :tada: To conclude this test, proofreaders of these projects are needed to vouch for the translation consistency and approve these strings. I thus invite any Latin American native who wishes to help! :wink:
 
-One detail to take into account is that these tests were successful thanks to translators of these projects who had contributed accurate and consistent translations. As the TM tool relies on translations of projects, the more translations are stored, the more it will be efficient. 
+More importantly, these tests were successful thanks to translators of these projects who had contributed accurate and consistent translations. As the TM tool relies on translations of projects, the more translations are stored, the more it will be efficient. 
 
 ### A way to communicate with fellow translators?
 

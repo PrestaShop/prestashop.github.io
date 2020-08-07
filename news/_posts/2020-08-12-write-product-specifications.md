@@ -67,7 +67,7 @@ Whether it is an edition or addition, a pull request (PR) will have to be create
 
 ![PrestaShop Product Specifications Management](/assets/images/2020/08/prestashop-specs-management.jpg)
 
-Once your specifications have been submitted, the pull request is reviewed by the core team and validated by the product team. If you specify a new feature, the process is slightly different: specifications will have to be validated by the core team and merged before starting the development and will be merged when the development is done. If any behavior is redefined during the development phase, the specifications must be updated accordingly following the same workflow: PR > validation > merge > development.
+Once your specifications have been submitted, the pull request is reviewed by the core team and validated by the product team. If you specify a new feature, the process is slightly different: specifications will have to be validated by the core team (product, dev, and QA if need be) and merged before starting the development and will be merged when the development is done. If any behavior is redefined during the development phase, the specifications must be updated accordingly following the same workflow: PR > validation > merge > development.
 
 
 ## Anatomy of the product specifications

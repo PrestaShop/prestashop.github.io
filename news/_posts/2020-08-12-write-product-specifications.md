@@ -46,7 +46,7 @@ You can either improve existing specifications, add missing specifications, or e
 
 ### Improve existing specifications
 
-Did you notice missing elements when reading a specification page? Well, I guess it is time to complete it! It might be minor fixes such as fixing typos, improving an unclear syntax, adding screenshots, etc. If it concerns any missing behavior, you should read the next paragraph. ;-)
+Did you notice missing elements when reading a specification page? Well, I guess it is time to complete it! It might be minor fixes such as fixing typos, improving an unclear syntax, adding screenshots, etc. If it concerns any missing behavior, you should read the next paragraph. 😉
 
 
 ### Add missing specifications

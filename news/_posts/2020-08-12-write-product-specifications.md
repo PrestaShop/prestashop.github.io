@@ -51,7 +51,7 @@ Did you notice missing elements when reading a specification page? Well, I guess
 
 ### Add missing specifications
 
-Many existing features have not been formally specified yet so there is still a lot to do. Adding missing specifications about the current behaviors will help to provide the PrestaShop ecosystem with a precise view of the software’s functional scope.
+Many existing features have not been formally specified yet so there is still a lot to do. Adding missing specifications about the current behavior will help to provide the PrestaShop ecosystem with a precise view of the software’s functional scope.
 
 
 ### Specify new features

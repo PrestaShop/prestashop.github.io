@@ -27,10 +27,10 @@ So if you, as a passionate PrestaShop user, would like to share your expertise o
 
 Several directories are to be found in the repository, among which the following four main folders:
 
-- the **back office** directory, where any Back Office (BO) page should be specified, e.g. the product page ;<br>
-- the **broader topics** directory, where widely impacted features should be specified, e.g. the SEO behaviors activated throughout the software ;<br>
-- the **front office** directory, where any Front Office (FO) page should be specified, e.g. the product images ;<br>
-- and the **modules** directory, where all built-in (“native”) modules should be specified, e.g. the Faceted Search module.<br>
+- the **back office** directory, where any Back Office (BO) page should be specified, e.g. the product page ;
+- the **broader topics** directory, where widely impacted features should be specified, e.g. the SEO strategy throughout the software ;
+- the **front office** directory, where any Front Office (FO) page should be specified, e.g. the product images ;
+- and the **modules** directory, where all built-in (“native”) modules should be specified, e.g. the Faceted Search module.
 
 One page of the back office equals one page of specifications. Being exhaustive is key because every behavior that does not work as described in the specifications is considered as a bug! Writing down specifications is essential to describe how features are expected to work on the latest available stable version of PrestaShop.
 

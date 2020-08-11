@@ -72,7 +72,7 @@ Once your specifications have been submitted, the pull request is reviewed by th
 
 ## Anatomy of the product specifications
 
-Writing product specifications requires using Git and GitHub, it works pretty much the same as a code contribution. You can read the detailed steps in the `CONTRIBUTING.md` file right [here](https://github.com/PrestaShop/prestashop-specs/blob/master/CONTRIBUTING.md). You can refer to the template below to structure your contribution, and obviously you are greatly encouraged to have a look at the already written product specifications. ;-)
+Writing product specifications requires using Git and GitHub, it works pretty much the same as a code contribution. You can read the detailed steps in the `CONTRIBUTING.md` file right [here](https://github.com/PrestaShop/prestashop-specs/blob/master/CONTRIBUTING.md). You can refer to the template below to structure your contribution, and obviously you are greatly encouraged to have a look at the already written product specifications. 😉
 
 ![PrestaShop Product Specifications Template](/assets/images/2020/08/prestashop-specs-template.jpg)
 

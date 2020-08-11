@@ -13,7 +13,7 @@ Contribution is not only about code. As an open source project, we make a point 
 
 Hosted on a [dedicated GitHub repository](https://github.com/PrestaShop/prestashop-specs), product specifications are meant to formally describe how features should work on a given page. Different from the technical specifications (that aim to describe the internal implementation of the features), product specifications express the functional scope of PrestaShop’s pages.
 
-For instance, product specifications can describe what action is performed when this button is clicked, what characters are considered invalid for this field, what notification pops in this case, etc. See the example below, related to the product page.
+For instance, product specifications can describe what action is performed when this button is clicked, what characters are considered invalid for this field, what notification pops up in this case, etc. See the example below, related to the product page.
 
 ![PrestaShop Product Page Specifications](/assets/images/2020/08/prestashop-specs-product-page.png)
 

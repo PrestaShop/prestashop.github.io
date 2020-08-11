@@ -63,7 +63,7 @@ When a new feature is suggested or planned, it is essential to define its scope 
 
 Now let us focus on the practical side! For starters, you have two choices: either the page already exists in the specifications repository and you just have to edit it to complete it, or it does not exist yet and then you will have to create it to suggest your specifications.
 
-Whether it is an edition or addition, a pull request (PR) will have to be created - just like for any development! You will learn more about the detailed steps in the `CONTRIBUTING.md` file [here](https://github.com/PrestaShop/prestashop-specs/blob/master/CONTRIBUTING.md#process-to-follow) and the suggested template to use in the next section of this post.
+Whether it is an edition or addition, a pull request (PR) will have to be created – just like for any development! You will learn more about the detailed steps in the `CONTRIBUTING.md` file [here](https://github.com/PrestaShop/prestashop-specs/blob/master/CONTRIBUTING.md#process-to-follow) and the suggested template to use in the next section of this post.
 
 ![PrestaShop Product Specifications Management](/assets/images/2020/08/prestashop-specs-management.jpg)
 

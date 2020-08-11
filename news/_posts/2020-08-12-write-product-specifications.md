@@ -39,7 +39,7 @@ Right now, many features have not been formally specified but, better late than 
 
 ## Workflow
 
-As written just above, specifications are key to development as it describes all the behaviors related to a feature. So when developers work on the PrestaShop code, in fact, they translate those functional specifications to code. Each development made must be linked to the corresponding specifications.
+As written just above, specifications are key to development as they describe the expected system behavior for any given feature. So when developers work on the PrestaShop code, in fact, they translate those functional specifications to code. Each development made must be linked to the corresponding specification.
 
 You can either improve existing specifications, add missing specifications, or even specify new features.
 

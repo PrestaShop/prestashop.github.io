@@ -32,7 +32,7 @@ Several directories are to be found in the repository, among which the following
 - the **front office** directory, where any Front Office (FO) page should be specified, e.g. the product images ;
 - and the **modules** directory, where all built-in (“native”) modules should be specified, e.g. the Faceted Search module.
 
-One page of the back office equals one page of specifications. Being exhaustive is key because every behavior that does not work as described in the specifications is considered as a bug! Writing down specifications is essential to describe how features are expected to work on the latest available stable version of PrestaShop.
+One page of the back office equals one page of specifications. Being exhaustive is key: any feature that does not work as described in the specifications is considered as a bug! Writing down specifications is essential to making sure features work as expected on the latest available stable version of PrestaShop.
 
 Right now, most features have not been formally specified but, better late than never, we make a point to specify any new feature or change before the system is modified. It helps get relevant developments but also limits the software functional debt by keeping a history of the decisions made so far.
 

@@ -76,4 +76,4 @@ Writing product specifications requires using Git and GitHub, it works pretty mu
 
 ![PrestaShop Product Specifications Template](/assets/images/2020/08/prestashop-specs-template.jpg)
 
-And that’s it! Product specifications are a nice way to contribute to PrestaShop and writing it is accessible to everyone: developers who need the functional scope of a feature to start working on it, merchants who use the software every day and have a deep understanding of how pages work, all kinds of contributors who want to get familiar with the PrestaShop open source project and reinforce the knowledge (and the business) around the software. 
+And that’s it! Product specifications are a nice way to contribute to PrestaShop and writing it is accessible to everyone who has a deep knowledge of PrestaShop: developers who need the functional scope of a feature to start working on it, merchants who use the software every day and have a deep understanding of how pages work, all kinds of contributors who want to get familiar with the PrestaShop open source project and reinforce the knowledge (and the business) around the software. 

@@ -58,9 +58,9 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
  5. | Gloriana Cocozza (gcocozza) | Spanish, Colombia | 588
  6. | Gerardas (gerardas) | Lithuanian | 217
  7. | Waleed Butt (waleedbutt112) | Urdu (Pakistan) | 173
- 8. | Milan Kolka (milankolka) | Bulgarian | 171
- 9. | Stanislav Yordanov (StanProg) | Polish | 97
-10. | Szymon Tondowski (stdeykun) | Turkish | 84
+ 8. | Milan Kolka (milankolka) | Esperanto | 171
+ 9. | Stanislav Yordanov (StanProg) | Bulgarian | 97
+10. | Szymon Tondowski (stdeykun) | Polish | 84
 
 
 #### Top 7 proofreaders in July:

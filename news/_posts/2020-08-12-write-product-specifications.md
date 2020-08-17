@@ -9,7 +9,7 @@ image: /assets/images/2020/08/prestashop-specs-product-page.png
 tags: [community, contribution, github, contribute]
 ---
 
-Contribution is not only about code. As an open source project, everyone is encouraged to participate in the construction of PrestaShop: you can [translate the software](https://crowdin.com/project/prestashop-official) in your native language, [suggest a new feature](https://github.com/PrestaShop/PrestaShop/issues/new/choose), [sign up to the User Club](https://www.prestashop.com/en/club) and share your experience with the product teams, [become an ambassador](http://ambassadors.prestashop.com)... and also write specifications!
+Contribution is not only about code. As an open source project, everyone is encouraged to participate in the construction of PrestaShop: you can [translate the software](https://crowdin.com/project/prestashop-official) in your native language, [suggest a new feature](https://github.com/PrestaShop/PrestaShop/issues/new/choose), [sign up to the User Club](https://www.prestashop.com/en/club) and share your experience with the product teams, [become an ambassador](https://ambassadors.prestashop.com)... and also write specifications!
 
 Hosted on a [dedicated GitHub repository](https://github.com/PrestaShop/prestashop-specs), product specifications are meant to formally describe how features should work on a given page. Different from the technical specifications (that aim to describe the internal implementation of the features), product specifications express the functional scope of PrestaShop’s pages.
 

@@ -146,7 +146,7 @@ Here’s how:
 - [Install it](http://doc.prestashop.com/display/PS17/Installing+PrestaShop) and test that there is no regression compared to the 1.7.6 version
 - If you develop modules or themes, test them on this version
 - Test the migrated back-office order pages: the add order page and the order detail page
-- Test the auto-upgrade plugin
+- Test the auto-upgrade plugin (you can manually provide the Beta 2 zip file to the auto upgrade, in order to test it)
 - [Report regressions on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read how to [report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
 - Fix regressions by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
 If everything is working well, feel free to comment on this article to tell us, and share on social networks, we also need this kind of feedback! ;-)

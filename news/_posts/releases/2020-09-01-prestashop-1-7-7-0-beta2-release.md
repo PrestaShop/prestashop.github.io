@@ -50,8 +50,6 @@ If no new critical or major regression is reported by September 21st, then the f
 - [Fixed the invoice total after editing a product](https://github.com/PrestaShop/PrestaShop/issues/20467)
 - [Fixed an exception when we try to remove a diiscount](https://github.com/PrestaShop/PrestaShop/issues/20534)
 - [Refactor DeleteProductFromOrderHandler](https://github.com/PrestaShop/PrestaShop/issues/18432)
-
-
 - [Fixed the impossibility to add a pack product when "Decrement products in pack only." option is selected](https://github.com/PrestaShop/PrestaShop/issues/20568)
 
 

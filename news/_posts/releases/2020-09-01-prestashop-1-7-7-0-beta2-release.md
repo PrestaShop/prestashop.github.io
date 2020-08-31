@@ -14,7 +14,7 @@ tags:
  - releases
 ---
 
-![Prestashop 1.7.7.0 BETA Release](/assets/images/2020/09/build_beta_2.jpg)
+![Prestashop 1.7.7.0 BETA Release](/assets/images/2020/09/build_beta_2.png)
 
 Over 130 Pull Requests have been merged since [the first Beta of 1.7.7.0 was released](https://build.prestashop.com/news/prestashop-1-7-7-0-beta-release/) about three months ago. A great number of regressions have been detected and fixed thanks to extensive testing by the community and the PrestaShop team, mainly in the [new order pages](https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1-7-7/). However, as new regressions keep being reported, the maintainer team has decided to issue a **second Beta release** before a Release Candidate is built. This will provide the community with a more up-to-date version to continue testing while the final bugs are being fixed. We hope this will yield a more stable and robust final version.
 
@@ -47,7 +47,7 @@ If no new critical or major regression is reported by September 21st, then the f
 - [Fixed the impossibility to remove a cart rule associated to a product, or a generic shop cart](https://github.com/PrestaShop/PrestaShop/issues/20246)
 - [Fixed the taxes details in PDF invoice when there are multiple invoices](https://github.com/PrestaShop/PrestaShop/issues/20393)
 - [Fixed the rounding of the cart rule](https://github.com/PrestaShop/PrestaShop/issues/20462)
-- [Fixed the invoice total after editing a product] (https://github.com/PrestaShop/PrestaShop/issues/20467)
+- [Fixed the invoice total after editing a product](https://github.com/PrestaShop/PrestaShop/issues/20467)
 - [Fixed an exception when we try to remove a diiscount](https://github.com/PrestaShop/PrestaShop/issues/20534)
 - [Refactor DeleteProductFromOrderHandler](https://github.com/PrestaShop/PrestaShop/issues/18432)
 
@@ -58,8 +58,8 @@ If no new critical or major regression is reported by September 21st, then the f
 **View order back-office**
 - [Add a drop-down allowing to choose the number of products per page in the order detail](https://github.com/PrestaShop/PrestaShop/issues/19486)
 - [Add the forgotten block “Linked orders” inside migrated order page](https://github.com/PrestaShop/PrestaShop/issues/18967)
--[Fixed the impossibility to view the pack content when displaying the order detail](https://github.com/PrestaShop/PrestaShop/issues/20444)
-- [Forgotten block inside migrated Order page : Sources]https://github.com/PrestaShop/PrestaShop/issues/18966
+- [Fixed the impossibility to view the pack content when displaying the order detail](https://github.com/PrestaShop/PrestaShop/issues/20444)
+- [Forgotten block inside migrated Order page : Sources](https://github.com/PrestaShop/PrestaShop/issues/18966)
 
 **Listing order back-office**
 - [Add an empty state for order list page](https://github.com/PrestaShop/PrestaShop/issues/18526)
@@ -76,36 +76,37 @@ when it’s generated from the order listing](https://github.com/PrestaShop/Pres
 - [Update the German tax rates](https://github.com/PrestaShop/PrestaShop/issues/19628)
 - [Fixed the filters that are not working when searching in employees page](https://github.com/PrestaShop/PrestaShop/issues/19812)
 - [Fixed the wrong payload sent when saving import configuration](https://github.com/PrestaShop/PrestaShop/issues/19746) reported by [joemugen](https://github.com/joemugen)
--[Fixed an error 500 when opening the voucher]https://github.com/PrestaShop/PrestaShop/issues/20520
--[Category root displayed after filter]https://github.com/PrestaShop/PrestaShop/issues/20067
-- [Order of js loaded from module has been modified]https://github.com/PrestaShop/PrestaShop/issues/19244
--[No access to employee's profile when not an admin]https://github.com/PrestaShop/PrestaShop/issues/19077
-- [In BO Product page, ecotax tax excl is used instead of ecotax tax incl]https://github.com/PrestaShop/PrestaShop/issues/10026
+- [Fixed an error 500 when opening the voucher](https://github.com/PrestaShop/PrestaShop/issues/20520)
+- [Category root displayed after filter](https://github.com/PrestaShop/PrestaShop/issues/20067)
+- [Order of js loaded from module has been modified](https://github.com/PrestaShop/PrestaShop/issues/19244)
+- [No access to employee's profile when not an admin](https://github.com/PrestaShop/PrestaShop/issues/19077)
+- [In BO Product page, ecotax tax excl is used instead of ecotax tax incl](https://github.com/PrestaShop/PrestaShop/issues/10026)
 
 
 **Front Office:**
 - [Add the possibility to override the image used as cover](https://github.com/PrestaShop/PrestaShop/issues/19029) reported by [prestamodule](https://github.com/prestamodule), read the [documentation](https://devdocs.prestashop.com/1.7/faq/product/#product-cover)
 - [Fixed a bug where the voucher was not displayed if linked to a customer](https://github.com/PrestaShop/PrestaShop/issues/19442) reported by [clotaire202](https://github.com/clotaire202)
 - [Fixed the impossibility to select the language from the FO after importing a localization pack](https://github.com/PrestaShop/PrestaShop/issues/19893)
-- [Detail discount is not good in multicurrency context]https://github.com/PrestaShop/PrestaShop/issues/18900
+- [Detail discount is not good in multicurrency context](https://github.com/PrestaShop/PrestaShop/issues/18900)
 
 **Core:**
 - [Fixed Doctrine Entities from Core that are inaccessible in front office](https://github.com/PrestaShop/PrestaShop/issues/19015)
 - [AdminModules : Call to a member function isUsingNewTranslationSystem](https://github.com/PrestaShop/PrestaShop/issues/19447)
 - [Fixed a syntax error in a SQL query](https://github.com/PrestaShop/PrestaShop/issues/19273)
 - [Fixed a hook missing/misspelt in DB: actionAuthenticationBefore](https://github.com/PrestaShop/PrestaShop/issues/18945)
--[Fixed Cache Problem in Language & Currency]https://github.com/PrestaShop/PrestaShop/pull/20398
--[Computing precision: set minimum computing precision value to zero]https://github.com/PrestaShop/PrestaShop/pull/20137
-- [Auto create symfony roles on tab register]https://github.com/PrestaShop/PrestaShop/issues/19857
-- [Add trace information to Command/Query debugger]https://github.com/PrestaShop/PrestaShop/pull/19854
-- [Allow modules to disable routing prefix with specific parameter]https://github.com/PrestaShop/PrestaShop/pull/19782
-- [Update decimal library]https://github.com/PrestaShop/PrestaShop/pull/19748
-- [Update modules (contactform/ps_imageslider/ps_sharebuttons/statspersonalinfos)]https://github.com/PrestaShop/PrestaShop/pull/19556
-- [Introduce CompilerPass to perform ControllerAwareTrait injection]https://github.com/PrestaShop/PrestaShop/pull/18811
-- [Add tag controller.service_arguments to PrestaShop controllers]https://github.com/PrestaShop/PrestaShop/pull/18845
+- [Fixed Cache Problem in Language & Currency](https://github.com/PrestaShop/PrestaShop/pull/20398)
+- [Computing precision: set minimum computing precision value to zero](https://github.com/PrestaShop/PrestaShop/pull/20137)
+- [Auto create symfony roles on tab register](https://github.com/PrestaShop/PrestaShop/issues/19857)
+- [Add trace information to Command/Query debugger](https://github.com/PrestaShop/PrestaShop/pull/19854)
+- [Allow modules to disable routing prefix with specific parameter](https://github.com/PrestaShop/PrestaShop/pull/19782)
+- [Update decimal library](https://github.com/PrestaShop/PrestaShop/pull/19748)
+- [Update modules (contactform/ps_imageslider/ps_sharebuttons/statspersonalinfos)](https://github.com/PrestaShop/PrestaShop/pull/19556)
+- [Introduce CompilerPass to perform ControllerAwareTrait injection](https://github.com/PrestaShop/PrestaShop/pull/18811)
+- [Add tag controller.service_arguments to PrestaShop controllers](https://github.com/PrestaShop/PrestaShop/pull/18845)
 
 **Installation:**
--[Fix session tables charset]https://github.com/PrestaShop/PrestaShop/pull/20122
+- [Fix session tables charset](https://github.com/PrestaShop/PrestaShop/pull/20122)
+- [Error when installing without debug mode disabled](https://github.com/PrestaShop/PrestaShop/issues/19754)
 
 **Circuit breaker:**
 The [Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html) design pattern provides strategies and functions to manage the unavailability of the third-party services, read more about it [here](https://build.prestashop.com/news/resilient-php-applications/)
@@ -113,21 +114,18 @@ The [Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html) design
 - [CB - Page Login - List modules call API for Recommended Modules](https://github.com/PrestaShop/PrestaShop/issues/12833)
 - [CB - Page Login - call native.xml in Admin controller](https://github.com/PrestaShop/PrestaShop/issues/12825)
 - [CB - Page Login - call native_all.xml in AdminController](https://github.com/PrestaShop/PrestaShop/issues/12826) 
-**Install:**
-- [Error when installing without debug mode disabled](https://github.com/PrestaShop/PrestaShop/issues/19754)
-
 
 ## Deprecations
-- [Deprecate hookcount and add missing hook in hook.xml]https://github.com/PrestaShop/PrestaShop/pull/19657
-- [Order hooks deprecated]https://github.com/PrestaShop/PrestaShop/pull/20311
-- [Product::supplier_reference deprecated] https://github.com/PrestaShop/PrestaShop/pull/20198
--[Addons related calls have no more effect]https://github.com/PrestaShop/PrestaShop/pull/19461
+- [Deprecate hookcount and add missing hook in hook.xml](https://github.com/PrestaShop/PrestaShop/pull/19657)
+- [Order hooks deprecated](https://github.com/PrestaShop/PrestaShop/pull/20311)
+- [Product::supplier_reference deprecated](https://github.com/PrestaShop/PrestaShop/pull/20198)
+- [Addons related calls have no more effect](https://github.com/PrestaShop/PrestaShop/pull/19461)
 
 ## BC breaks:
--[Increase precision for DECIMAL fields in database]https://github.com/PrestaShop/PrestaShop/pull/18532
--[Calculator::calculateFees argument ignored]https://github.com/PrestaShop/PrestaShop/pull/20482
--[ModuleTabRegister constructor has a new parameter]https://github.com/PrestaShop/PrestaShop/pull/19903
-- [Old order page files removed]https://github.com/PrestaShop/PrestaShop/pull/18984
+- [Increase precision for DECIMAL fields in database](https://github.com/PrestaShop/PrestaShop/pull/18532)
+- [Calculator::calculateFees argument ignored](https://github.com/PrestaShop/PrestaShop/pull/20482)
+- [ModuleTabRegister constructor has a new parameter](https://github.com/PrestaShop/PrestaShop/pull/19903)
+- [Old order page files removed](https://github.com/PrestaShop/PrestaShop/pull/18984)
 
 ## Changelog
 
@@ -178,7 +176,7 @@ If everything is working well, feel free to comment on this article to tell us, 
 - [Increment/decrement button doesn't work when we try to add a product out of stock (allow order)](https://github.com/PrestaShop/PrestaShop/issues/20670)
 - [An exception is displayed when we try to add a customized product](https://github.com/PrestaShop/PrestaShop/issues/20671)
 - [actionProductCancel hook not triggered on standard refund](https://github.com/PrestaShop/PrestaShop/issues/20712)
-- Impossibility to create an order when the address is considered as soft deleted](https://github.com/PrestaShop/PrestaShop/issues/20666)
+- [Impossibility to create an order when the address is considered as soft deleted](https://github.com/PrestaShop/PrestaShop/issues/20666)
 - [Order Message is not saved after creating a new order from BO](https://github.com/PrestaShop/PrestaShop/issues/20686)
 - [Errors in the console while creating an order](https://github.com/PrestaShop/PrestaShop/issues/20651)
 - ["Send an email to the customer with the link to process the payment." doesn't work](https://github.com/PrestaShop/PrestaShop/issues/20687)

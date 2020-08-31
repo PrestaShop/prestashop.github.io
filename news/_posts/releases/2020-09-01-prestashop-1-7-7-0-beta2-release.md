@@ -119,7 +119,7 @@ The [Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html) design
 - [Product::supplier_reference deprecated](https://github.com/PrestaShop/PrestaShop/pull/20198)
 - [Addons related calls have no more effect](https://github.com/PrestaShop/PrestaShop/pull/19461)
 
-## BC breaks:
+## BC breaks
 - [Increase precision for DECIMAL fields in database](https://github.com/PrestaShop/PrestaShop/pull/18532)
 - [Calculator::calculateFees argument ignored](https://github.com/PrestaShop/PrestaShop/pull/20482)
 - [ModuleTabRegister constructor has a new parameter](https://github.com/PrestaShop/PrestaShop/pull/19903)

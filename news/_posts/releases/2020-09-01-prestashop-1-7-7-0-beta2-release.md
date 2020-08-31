@@ -151,7 +151,7 @@ Here’s how:
 - Fix regressions by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
 If everything is working well, feel free to comment on this article to tell us, and share on social networks, we also need this kind of feedback! ;-)
 
-## Known issues
+## Remaining known issues (target: must-have fixed in Release Candidate)
 
 **Order back-office**
 

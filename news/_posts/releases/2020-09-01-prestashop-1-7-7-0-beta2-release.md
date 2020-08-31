@@ -127,7 +127,7 @@ The [Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html) design
 
 ## Changelog
 
-130+ pull requests have been merged since the first beta release and XX+ issues have been fixed. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases) for details. 
+130+ pull requests have been merged since the first beta release and 100+ issues have been fixed. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases) for details. 
 
 If you are looking for more details about all changes and new features expected in 1.7.7, the [1.7.7 beta version release note](https://build.prestashop.com/news/prestashop-1-7-7-0-beta-release/) is the perfect article for you to read!
 

@@ -65,8 +65,7 @@ when it’s generated from the order listing](https://github.com/PrestaShop/Pres
 
 **Back Office:**
 - [Fixed a bug where the modules tab doesn't appear in the product page](https://github.com/PrestaShop/PrestaShop/issues/19246) reported by
-- [Use placeholders in strings to improve the translation consistency
-](https://github.com/PrestaShop/PrestaShop/issues/18809)
+- [Use placeholders in strings to improve the translation consistency](https://github.com/PrestaShop/PrestaShop/issues/18809)
 - [Fixed a fatal error on Design > Theme & logo > Page configuration](https://github.com/PrestaShop/PrestaShop/issues/19446)
 - [Fixed the "Delete catalog" option that is not working in PrestaShop Cleaner module](https://github.com/PrestaShop/PrestaShop/issues/19444) reported by [k0lv](https://github.com/k0lv)
 - [Fixed the impossibility to access to the stock page for a user which is not super-admin](https://github.com/PrestaShop/PrestaShop/issues/19713)

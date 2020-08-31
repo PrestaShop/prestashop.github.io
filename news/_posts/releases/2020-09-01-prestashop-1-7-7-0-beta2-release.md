@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 1.7.7.0 Beta2 Is Ready To Be Tested!"
 subtitle: "The second beta for PrestaShop 1.7.7.0 is now ready for you to test!"
-date:   2020-08-28 16:00:00
+date:   2020-09-01 11:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2020/09/build_beta_2.png
 icon: icon-leaf

@@ -37,7 +37,6 @@ If no new critical or major regression is reported by September 21st, then the f
 - [Fixed an exception when adding a product to an old order](https://github.com/PrestaShop/PrestaShop/issues/18568)
 - [Fixed the impossibility to remove a discount added from a cart rule on product selection after adding a product in order](https://github.com/PrestaShop/PrestaShop/issues/18379)
 - [Fixed an exception when deleting discount in order view](https://github.com/PrestaShop/PrestaShop/issues/18498)
-](https://github.com/PrestaShop/PrestaShop/issues/18498)
 - [Fixed address form to open it in a modal](https://github.com/PrestaShop/PrestaShop/issues/19499)
 - [Fixed the update of the cart list when adding a second product in the order](https://github.com/PrestaShop/PrestaShop/issues/19591)
 - [Fixed the update of the discount when updating product's quantity in the order](https://github.com/PrestaShop/PrestaShop/issues/19592)

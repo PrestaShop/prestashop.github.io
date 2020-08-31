@@ -60,7 +60,7 @@ If no new critical or major regression is reported by September 21st, then the f
 
 **Listing order back-office**
 - [Add an empty state for order list page](https://github.com/PrestaShop/PrestaShop/issues/18526)
-- [Fixed the product taxes detail that is not displayed on the invoice when it’s generated from the order listing (https://github.com/PrestaShop/PrestaShop/issues/20452)
+- [Fixed the product taxes detail that is not displayed on the invoice when it’s generated from the order listing](https://github.com/PrestaShop/PrestaShop/issues/20452)
 
 **Back Office:**
 - [Fixed a bug where the modules tab doesn't appear in the product page](https://github.com/PrestaShop/PrestaShop/issues/19246) reported by

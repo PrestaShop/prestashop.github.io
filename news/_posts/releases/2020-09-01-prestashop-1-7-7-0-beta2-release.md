@@ -105,10 +105,10 @@ If no new critical or major regression is reported by September 21st, then the f
 
 **Circuit breaker:**
 Some service API calls have been removed from the Core. This should improve the speed and reliability of the Back Office:
-- [CB - Page Login - must_have.xml API call in AdminController](https://github.com/PrestaShop/PrestaShop/issues/12831)
-- [CB - Page Login - List modules call API for Recommended Modules](https://github.com/PrestaShop/PrestaShop/issues/12833)
-- [CB - Page Login - call native.xml in Admin controller](https://github.com/PrestaShop/PrestaShop/issues/12825)
-- [CB - Page Login - call native_all.xml in AdminController](https://github.com/PrestaShop/PrestaShop/issues/12826) 
+- [Remove must_have.xml API call in AdminController](https://github.com/PrestaShop/PrestaShop/issues/12831)
+- [Remove API call for Recommended Modules](https://github.com/PrestaShop/PrestaShop/issues/12833)
+- [Remove API call native.xml in Admin controller](https://github.com/PrestaShop/PrestaShop/issues/12825)
+- [Remove API call native_all.xml in AdminController](https://github.com/PrestaShop/PrestaShop/issues/12826) 
 
 ## Deprecations
 - [Deprecate hookcount and add missing hook in hook.xml](https://github.com/PrestaShop/PrestaShop/pull/19657)

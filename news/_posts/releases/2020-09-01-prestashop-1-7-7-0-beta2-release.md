@@ -104,7 +104,7 @@ If no new critical or major regression is reported by September 21st, then the f
 - [Error when installing without debug mode disabled](https://github.com/PrestaShop/PrestaShop/issues/19754)
 
 **Circuit breaker:**
-The [Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html) design pattern provides strategies and functions to manage the unavailability of the third-party services, read more about it [here](https://build.prestashop.com/news/resilient-php-applications/)
+Some service API calls have been removed from the Core. This should improve the speed and reliability of the Back Office:
 - [CB - Page Login - must_have.xml API call in AdminController](https://github.com/PrestaShop/PrestaShop/issues/12831)
 - [CB - Page Login - List modules call API for Recommended Modules](https://github.com/PrestaShop/PrestaShop/issues/12833)
 - [CB - Page Login - call native.xml in Admin controller](https://github.com/PrestaShop/PrestaShop/issues/12825)

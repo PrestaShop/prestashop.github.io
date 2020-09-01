@@ -155,7 +155,7 @@ If everything is working well, feel free to comment on this article to tell us, 
 
 **Order back-office**
 
-- [The total products price is not correctly calculated in specifics conditions](https://github.com/PrestaShop/PrestaShop/issues/20542)
+- [The total products price is not correctly calculated in specific conditions](https://github.com/PrestaShop/PrestaShop/issues/20542)
 - [The product price is wrong after adding a cart rule](https://github.com/PrestaShop/PrestaShop/issues/20533)
 - [Wrong price displayed while adding a product on an order](https://github.com/PrestaShop/PrestaShop/issues/19490)
 - [Wrong rounded product price displayed while editing product price](https://github.com/PrestaShop/PrestaShop/issues/20573)

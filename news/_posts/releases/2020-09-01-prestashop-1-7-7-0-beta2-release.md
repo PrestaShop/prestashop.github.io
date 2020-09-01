@@ -137,7 +137,7 @@ You can download PrestaShop 1.7.7.0 beta 2 here:
 {: .text-center}
 
 
-## How to help finish the 1.7.7
+## How to help finish 1.7.7
 
 Your feedback on this beta 2 is essential, the regressions you find right now are as many bugs less on the final version and less patches versions. It’s also fewer problems on your (or your customer’s) online store. 
 

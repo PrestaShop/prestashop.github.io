@@ -14,6 +14,8 @@ tags:
  - releases
 ---
 
+The second Beta version for PrestaShop 1.7.7.0 is now ready for you to test!
+
 ![Prestashop 1.7.7.0 BETA 2 Release](/assets/images/2020/09/build_beta_2.png)
 
 Over 130 Pull Requests have been merged since [the first Beta of 1.7.7.0 was released](https://build.prestashop.com/news/prestashop-1-7-7-0-beta-release/) about three months ago. A great number of regressions have been detected and fixed thanks to extensive testing by the community and the PrestaShop team, mainly in the [new order pages](https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1-7-7/). However, as new regressions keep being reported, the maintainer team has decided to issue a **second Beta release** before a Release Candidate is built. This will provide the community with a more up-to-date version to continue testing while the final bugs are being fixed. We hope this will yield a more stable and robust final version.

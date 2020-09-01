@@ -160,7 +160,7 @@ If everything is working well, feel free to comment on this article to tell us, 
 - [Wrong price displayed while adding a product on an order](https://github.com/PrestaShop/PrestaShop/issues/19490)
 - [Wrong rounded product price displayed while editing product price](https://github.com/PrestaShop/PrestaShop/issues/20573)
 - [When adding the same product several times in an order, it creates a new line instead of updating the quantity of the product](https://github.com/PrestaShop/PrestaShop/issues/18237)
-- [Add information messages when an existing product is added in the order's](https://github.com/PrestaShop/PrestaShop/issues/20010)
+- [Add information messages when an existing product is added in the order](https://github.com/PrestaShop/PrestaShop/issues/20010)
 - [Wrong shipping costs and wrong total when there are several invoices in an order](https://github.com/PrestaShop/PrestaShop/issues/20409)
 - [Impossible to reassign a product to another invoice](https://github.com/PrestaShop/PrestaShop/issues/18721)
 - [While creating order on BO, if there is a free shipping voucher, its value is not modified when the carrier is changed](https://github.com/PrestaShop/PrestaShop/issues/20557)

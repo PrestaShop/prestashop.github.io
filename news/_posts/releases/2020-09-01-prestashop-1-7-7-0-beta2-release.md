@@ -40,7 +40,7 @@ If no new critical or major regression is reported by September 21st, then the f
 - [Fixed address form to open it in a modal](https://github.com/PrestaShop/PrestaShop/issues/19499)
 - [Fixed the update of the cart list when adding a second product in the order](https://github.com/PrestaShop/PrestaShop/issues/19591)
 - [Fixed the update of the discount when updating product's quantity in the order](https://github.com/PrestaShop/PrestaShop/issues/19592)
-- [Fixed th order total when cancelling a product on an order having cart rules](https://github.com/PrestaShop/PrestaShop/issues/19717)
+- [Fixed the order total when cancelling a product on an order having cart rules](https://github.com/PrestaShop/PrestaShop/issues/19717)
 - [Fixed the update of the the discount when updating product's price in the order](https://github.com/PrestaShop/PrestaShop/issues/19890)
 - [Fixed the deletion of the discount when deleting another discount](https://github.com/PrestaShop/PrestaShop/issues/19949)
 - [Fixed the impossibility to remove a cart rule associated to a product, or a generic shop cart](https://github.com/PrestaShop/PrestaShop/issues/20246)
@@ -86,7 +86,7 @@ If no new critical or major regression is reported by September 21st, then the f
 
 **Core:**
 - [Fixed Doctrine Entities from Core that are inaccessible in front office](https://github.com/PrestaShop/PrestaShop/issues/19015)
-- [AdminModules : Call to a member function isUsingNewTranslationSystem](https://github.com/PrestaShop/PrestaShop/issues/19447)
+- [AdminModules: Call to a member function isUsingNewTranslationSystem](https://github.com/PrestaShop/PrestaShop/issues/19447)
 - [Fixed a syntax error in a SQL query](https://github.com/PrestaShop/PrestaShop/issues/19273)
 - [Fixed a hook missing/misspelt in DB: actionAuthenticationBefore](https://github.com/PrestaShop/PrestaShop/issues/18945)
 - [Fixed Cache Problem in Language & Currency](https://github.com/PrestaShop/PrestaShop/pull/20398)
@@ -103,7 +103,7 @@ If no new critical or major regression is reported by September 21st, then the f
 - [Fix session tables charset](https://github.com/PrestaShop/PrestaShop/pull/20122)
 - [Error when installing without debug mode disabled](https://github.com/PrestaShop/PrestaShop/issues/19754)
 
-**Circuit breaker:**
+**Reliability:**
 Some service API calls have been removed from the Core. This should improve the speed and reliability of the Back Office:
 - [Remove must_have.xml API call in AdminController](https://github.com/PrestaShop/PrestaShop/issues/12831)
 - [Remove API call for Recommended Modules](https://github.com/PrestaShop/PrestaShop/issues/12833)
@@ -116,7 +116,7 @@ Some service API calls have been removed from the Core. This should improve the 
 - [Product::supplier_reference deprecated](https://github.com/PrestaShop/PrestaShop/pull/20198)
 - [Addons related calls have no more effect](https://github.com/PrestaShop/PrestaShop/pull/19461)
 
-## BC breaks
+## Backwards incompatible changes
 - [Increase precision for DECIMAL fields in database](https://github.com/PrestaShop/PrestaShop/pull/18532)
 - [Calculator::calculateFees argument ignored](https://github.com/PrestaShop/PrestaShop/pull/20482)
 - [ModuleTabRegister constructor has a new parameter](https://github.com/PrestaShop/PrestaShop/pull/19903)
@@ -146,10 +146,11 @@ Here’s how you can help:
 - [Install this beta version](http://doc.prestashop.com/display/PS17/Installing+PrestaShop), optionally as an upgrade to a copy of your current shop, and test that everything works well compared to the previous version, 1.7.6
 - If you develop modules or themes, test them on this version
 - Test the migrated back-office order pages: the add order page and the order detail page
-- Test the auto-upgrade plugin (you can manually provide the Beta 2 zip file to the auto upgrade, in order to test it)
-- [Report regressions on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read how to [report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
-- Fix regressions by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
-If everything is working well, feel free to comment on this article to tell us, and share on social networks, we also need this kind of feedback! ;-)
+- Test the auto-upgrade module (use the "expert mode" and choose "local archive" to manually provide the Beta 2 zip file to the upgrade module; note that it's not possible to upgrade from the previous Beta version)
+- [Report any regressions on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read [how to report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
+- Fix regressions by creating a pull request (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
+
+If everything is working well, feel free to tell the world! Comment on this article, share on social networks... we also need this kind of feedback! 😉
 
 ## Remaining known issues (target: must-have fixed in Release Candidate)
 

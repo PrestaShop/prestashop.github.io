@@ -141,7 +141,7 @@ You can download PrestaShop 1.7.7.0 beta 2 here:
 
 Your feedback on this beta 2 is essential: the regressions you report right now are as many less bugs on the final version, fewer problems on your (or your customer’s) online store, and and less time waiting for patch versions.
 
-Here’s how:
+Here’s how you can help:
 
 - [Install it](http://doc.prestashop.com/display/PS17/Installing+PrestaShop) and test that there is no regression compared to the 1.7.6 version
 - If you develop modules or themes, test them on this version

@@ -32,7 +32,7 @@ I would like to thank gcocozza, jmcoget and jbonello who offered to open and hel
 
 The PrestaShop Day for Italy will take place next 24th September as an online event!
 35 live sessions in Italian are planned with entrepreneurs, partners, tech experts and more. Don’t forget to mark this event on your calendar! :calendar:
-To discover more about this event and to register, I invite you to [check this link](https://bit.ly/2CSQlc2)
+To discover more about this event and to register, I invite you to [check this link](https://bit.ly/2CSQlc2).
 
 
 ### :two_hearts: Special thanks to newcomers

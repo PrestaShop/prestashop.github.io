@@ -15,7 +15,7 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ## Project news
 
-### New manager of the translation projects 
+### New manager of the translation project 
 
 My name is Julie. I joined PrestaShop on September 1st as the new Product Content Manager. I am very happy to start this new adventure and I am looking forward to working together on this translation project! :fire:
  

@@ -37,7 +37,7 @@ To discover more about this event and to register, I invite you to [check this l
 
 ### :two_hearts: Special thanks to newcomers
  
-Many people subscribe to the project(s) of their choice each month, but not so many start translating straightaway. For that reason, we would like to thank the ones who rushed into the effort immediately! So lots of love to the dedicated: PrestaServicePro, jbonello, Mohammad H. Bahrololoum  (mohdbahrololoum), Benny Lahmish (bennylh), Dzung Do (dzungdo), Dennis (icemansparks), Abdullah Alsheraidah (aalsheraidah) and partum. See you soon on Crowdin… and in PrestaShop. :stuck_out_tongue_winking_eye:
+Many people subscribe to the project(s) of their choice each month, but not so many start translating straightaway. For that reason, we would like to thank the ones who rushed into the effort immediately! So lots of love to the dedicated: PrestaServicePro, jbonello, Mohammad H. Bahrololoum  (mohdbahrololoum), Benny Lahmish (bennylh), Dzung Do (dzungdo), Dennis (icemansparks), Abdullah Alsheraidah (aalsheraidah) and partum.   See you soon on Crowdin… and in PrestaShop. :stuck_out_tongue_winking_eye:
  
  
 ## A few stats
@@ -51,7 +51,7 @@ Thank you for your involvement!
  
 ## Top contributors
  
-A lot of you are working every day on Crowdin to have PrestaShop available in many languages, and PrestaShop can't thank you enough for your dedication! Here are the 10 most active translators and proofreaders** for August 2020.
+A lot of you are working every day on Crowdin to have PrestaShop available in many languages, and PrestaShop can't thank you enough for your dedication! Here are the 10 most active translators and proofreaders for August 2020.
  
 #### Top 10 translators in August:
  

@@ -22,7 +22,7 @@ My name is Julie. I joined PrestaShop on September 1st as the new Product Conten
 
 ### New projects have been opened!
 
-Would you like to try a new challenge? If you are fluent in one of the languages below, don’t hesitate to contribute. Here are the new projects that have been opened in August:
+Would you like to try a new challenge? If you are fluent in one of the languages below, don’t hesitate to contribute. Here are the new projects that have been opened in August:  
 Spanish (Costa Rica), French (Belgium), and Maltese.
 
 I would like to thank gcocozza, jmcoget and jbonello who offered to open and help on the three projects. If you would like to start to translate a new language that is not yet available on PrestaShop, feel free to send me an email at translation@prestashop.com. :wink:

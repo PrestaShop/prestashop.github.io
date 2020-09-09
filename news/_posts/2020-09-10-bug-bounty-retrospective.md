@@ -16,7 +16,9 @@ During months, we experimented a Bug Bounty Program with the [YesWeHack](https:/
 
 We never really know the security of our software before it has been tested by a lot of hunters.
 
-PrestaShop is full of dependencies, with hundred of thousands lines of code, and for most of them exist since the first version. Using a public program directly would have been a too big risk for us, causing a huge charge of duplicated reports and creating frustration among hunters.
+PrestaShop is full of dependencies, with hundred of thousands lines of code, and for most of them exist since the first version. 
+
+Using a public program directly would have been a too big risk for us, causing a huge charge of duplicated reports and creating frustration among hunters.
 
 The benefit of the private program is to limit the number of hunters and manage the reporting flow. Because on each security issue, you need to take in consideration the time to understand, reproduce, fix, test by the QA Team, etc. 
 
@@ -25,7 +27,9 @@ It is a process which can seems long and painful but necessary to leave no room 
 
 ## Public program
 
-After a few months of tests and an increasingly low number of reports, we put the program in public the July 23 and to our great surprise, hunters who participated to the private program helped us to fix a large majority of security issues. At the time of writing this article, only one report was valid.
+After a few months of tests and an increasingly low number of reports, we put the program in public the July 23 and to our great surprise, hunters who participated to the private program helped us to fix a large majority of security issues. 
+
+At the time of writing this article, only one report was valid.
 
 The big aim of having a Bug Bounty Programm in public is to show to everyone and particulary our community that we trust our software, we know it is secured because it has been tested by a lof of hunters and will be continusly tested by new hunters.
 
@@ -61,4 +65,5 @@ List of main vulnerabilities.
 ## What's next
 
 We have nothing to do except waiting for reports, we are really happy to use YesWeHack and the interface is really smooth, elegant and make the security reports easier to manage than the old security mailing list.
+
 For next release, hunters will be notified automatically, so, we are waiting for you hunters!

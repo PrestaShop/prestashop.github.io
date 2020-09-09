@@ -91,11 +91,11 @@ Remember, you can see who's been contributing to our translation project thanks 
  
 #### Fully translated languages
  
-At the end of August 2020, PrestaShop 1.7.7 was fully available (= 100% translated and validated) in **10 languages**:
+At the end of August 2020, PrestaShop 1.7.7 was fully available (= 100% translated and validated) in **12 languages**:
  
 | Chinese Traditional | Danish | Dutch | French |
-| Italian  | Lithuanian | Portuguese, Brazil | Romanian |
-| Slovak | Spanish | Swedish |
+| Italian  | **Lithuanian** | Portuguese, Brazil | **Romanian** |
+| Slovak | Slovene | Spanish | Swedish |
  
  
 ## Languages with the best evolution

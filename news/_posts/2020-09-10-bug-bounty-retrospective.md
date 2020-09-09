@@ -9,29 +9,31 @@ image: /assets/images/2020/09/ywhbanner.jpg
 tags: [bug, bounty, program, maintenance]
 ---
 
-During months, we experimented a Bug Bounty Program with the [YesWeHack](https://yeswehack.com) interface. Here's the retrospective about why we did this, and what happened during this period.
+For several months, we experimented a Bug Bounty Program with the [YesWeHack](https://yeswehack.com) platform. Here is a retrospective, explaining why we did it, and what happened during this period.
 
 
 ## Private program
 
-We never really know the security of our software before it has been tested by a lot of hunters.
+The security of software cannot be assessed unless it is tested by a lot of hunters.
 
-PrestaShop is full of dependencies, with hundred of thousands lines of code, and for most of them exist since the first version. 
+PrestaShop relies on a lot of dependencies, with hundred of thousands lines of code, and this has been true since the very first versions. 
 
-Using a public program directly would have been a too big risk for us, causing a huge charge of duplicated reports and creating frustration among hunters.
+We considered that publishing a public program, available for all, in the first place was risky as it could bring a huge volume of duplicated reports and create frustration among hunters. That is why we chose a private program first.
 
-The benefit of the private program is to limit the number of hunters and manage the reporting flow. Because on each security issue, you need to take in consideration the time to understand, reproduce, fix, test by the QA Team, etc. 
+The benefit of the private program is to limit the number of hunters and manage the reporting flow. For each reported security issue, resources must be dedicated to understand it, reproduce it, build a patch, test the patch by the QA Team, etc. This can be quite expensive, so it is important to be able to adjust how many issues are reported, thanks to the private program settings.
 
-It is a process which can seems long and painful but necessary to leave no room for doubt.
+The process can appear quite slow and boring but it is nevertheless necessary to leave no room for doubt.
 
 
 ## Public program
 
-After a few months of tests and an increasingly low number of reports, we put the program in public the July 23 and to our great surprise, hunters who participated to the private program helped us to fix a large majority of security issues. 
+After a few months running the private program, we noticed the number of reports was decreased significantly. We then decided to open the program to public the 23th of July 2020.
 
-At the time of writing this article, only one report was valid.
+We expected that the public opening would bring in a huge volume of new reports, but this did not happen to our great surprise. It seems the hunters who participated to the private program helped us fix a large majority of security issues.
 
-The big aim of having a Bug Bounty Programm in public is to show to everyone and particulary our community that we trust our software, we know it is secured because it has been tested by a lof of hunters and will be continusly tested by new hunters.
+At the time of writing this article, only one report submitted after the opening of the program as public has been validated.
+
+The big aim of having a Bug Bounty Program in public is to show to everyone, and particularly our community, that our software can be trusted. We know it is secured because it has been tested by dozen of hunters and will be continuously tested by new hunters.
 
 
 ## Some statistics
@@ -47,10 +49,10 @@ Since, we received a total of **98** reports
  - Valid: **43**
  - CVSS Score average: **5.59**
 
-These graphs are taking the whole period and the reason why we put on the program in public.
-It takes in consideration only valid reports.
+The following graphs cover the full period and highlight the reason why we decided to open the program to public.
+Only valid reports are considered.
 
-The graph below is a represation of the number of reports we received during the period.
+The graph below is a representation of the number of reports we received during the period.
 
 [![Valid reports](/assets/images/2020/09/bug-bounty-all-valid-reports.png)](/assets/images/2020/09/bug-bounty-all-valid-reports.pn)g
 
@@ -64,6 +66,6 @@ List of main vulnerabilities.
 
 ## What's next
 
-We have nothing to do except waiting for reports, we are really happy to use YesWeHack and the interface is really smooth, elegant and make the security reports easier to manage than the old security mailing list.
+We do not plan to modify the program in the short term. For now, the Security team of PrestaShop continue to examine incoming bug reports with dedication. We are quite happy to use YesWeHack and the platform is really smooth, elegant and make the security reports easier to manage than our old security mailing list.
 
 For next release, hunters will be notified automatically, so, we are waiting for you hunters!

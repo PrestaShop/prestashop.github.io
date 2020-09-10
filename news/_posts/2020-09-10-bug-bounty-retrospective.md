@@ -31,9 +31,9 @@ After a few months running this private program, we noticed the number of report
 
 We thought that the public opening would bring in a huge volume of new reports, but this did not happen to our great surprise. It seems the hunters who participated to the private program helped us fix a large majority of security issues.
 
-At the time of writing this article, only one report submitted after the opening of the program to the public has been validated.
+At the time we write this article, only one report submitted after the opening of the program to the public has been validated.
 
-The big aim of having a Bug Bounty Program in public is to show everyone, and particularly our community, that our software can be trusted. We know it is secured because it has been tested by dozen of hunters and will be continuously tested by new hunters.
+The big aim of having a Bug Bounty Program in public is to show everyone, and particularly our community, that our software can be trusted. We know it is secured because it has been tested by dozens of hunters and will be continuously tested by new hunters.
 
 
 ## Some statistics
@@ -69,4 +69,4 @@ List of main vulnerabilities.
 
 There is no plan to modify the program in the short term. For now, the Security team of PrestaShop continue to examine incoming bug reports with dedication. We are quite happy to use YesWeHack and the platform is really smooth, elegant and make the security reports easier to manage than our old security mailing list.
 
-For next release, hunters will be notified automatically, so, we are waiting for you hunters on [YesWeHack platform](https://yeswehack.com/programs/prestashop)!
+For next release, hunters will be notified automatically, so we are waiting for you hunters on [YesWeHack platform](https://yeswehack.com/programs/prestashop)!

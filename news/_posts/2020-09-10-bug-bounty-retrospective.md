@@ -64,7 +64,7 @@ List of main vulnerabilities.
 [![Common vulnerabilities](/assets/images/2020/09/bug-bounty-all-valid-types.png)](/assets/images/2020/09/bug-bounty-all-valid-types.png)
 
 
-## What's next
+## What's next?
 
 We do not plan to modify the program in the short term. For now, the Security team of PrestaShop continue to examine incoming bug reports with dedication. We are quite happy to use YesWeHack and the platform is really smooth, elegant and make the security reports easier to manage than our old security mailing list.
 

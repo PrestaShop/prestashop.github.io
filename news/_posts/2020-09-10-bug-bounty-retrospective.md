@@ -27,20 +27,20 @@ The process can appear quite slow and boring but it is nevertheless necessary to
 
 ## Public program
 
-After a few months running the private program, we noticed the number of reports was decreased significantly. We then decided to open the program to public the 23th of July 2020.
+After a few months running this private program, we noticed the number of reports had decreased significantly. We finally released the program to the public on the 23rd of July 2020.
 
 We expected that the public opening would bring in a huge volume of new reports, but this did not happen to our great surprise. It seems the hunters who participated to the private program helped us fix a large majority of security issues.
 
-At the time of writing this article, only one report submitted after the opening of the program as public has been validated.
+At the time of writing this article, only one report submitted after the opening of the program to the public has been validated.
 
-The big aim of having a Bug Bounty Program in public is to show to everyone, and particularly our community, that our software can be trusted. We know it is secured because it has been tested by dozen of hunters and will be continuously tested by new hunters.
+The big aim of having a Bug Bounty Program in public is to show everyone, and particularly our community, that our software can be trusted. We know it is secured because it has been tested by dozen of hunters and will be continuously tested by new hunters.
 
 
 ## Some statistics
 
-Opened in March, more than **70** hunters have been invited to the program.
+At the opening in March, more than **70** hunters were invited to the program.
 
-Since, we received a total of **98** reports
+Since then, we received a total of **98** reports
  - Invalid: **4**
  - Out of Scope: **6**
  - Informative: **26**
@@ -49,7 +49,7 @@ Since, we received a total of **98** reports
  - Valid: **43**
  - CVSS Score average: **5.59**
 
-The following graphs cover the full period and highlight the reason why we decided to open the program to public.
+The following graphs cover the full period and highlight the reason why we decided to open the program to the public.
 Only valid reports are considered.
 
 The graph below is a representation of the number of reports we received during the period.

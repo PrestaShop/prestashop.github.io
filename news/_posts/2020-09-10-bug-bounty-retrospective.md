@@ -61,6 +61,7 @@ Here is the represation of the CVSS3 Score results.
 [![CVSS3 Score](/assets/images/2020/09/bug-bounty-all-valid-cvss.png)](/assets/images/2020/09/bug-bounty-all-valid-cvss.png)
 
 List of main vulnerabilities.
+
 [![Common vulnerabilities](/assets/images/2020/09/bug-bounty-all-valid-types.png)](/assets/images/2020/09/bug-bounty-all-valid-types.png)
 
 

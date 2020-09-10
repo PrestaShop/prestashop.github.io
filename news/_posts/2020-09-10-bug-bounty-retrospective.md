@@ -29,7 +29,7 @@ The process can appear quite slow and boring but it is nevertheless necessary to
 
 After a few months running this private program, we noticed the number of reports had decreased significantly. We finally released the program to the public on the 23rd of July 2020.
 
-We expected that the public opening would bring in a huge volume of new reports, but this did not happen to our great surprise. It seems the hunters who participated to the private program helped us fix a large majority of security issues.
+We thought that the public opening would bring in a huge volume of new reports, but this did not happen to our great surprise. It seems the hunters who participated to the private program helped us fix a large majority of security issues.
 
 At the time of writing this article, only one report submitted after the opening of the program to the public has been validated.
 

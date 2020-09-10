@@ -7,8 +7,11 @@
       <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
 
       <div id="logo" class="">
+        {% if page.type == "home" %}
+          <h1 class="sr-only">Prestashop Developer's Blog</h1>
+        {% endif %}
         <a href="{{ site.url }}{{ site.baseurl }}">
-          <img src="{{ "/assets/images/theme/new-logo.png" | prepend: site.baseurl }}" alt="">
+          <img src="{{ "/assets/images/theme/new-logo.png" | prepend: site.baseurl }}" alt="Prestashop Developer's Blog Logo">
         </a>
       </div>
 

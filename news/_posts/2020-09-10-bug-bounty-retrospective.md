@@ -68,4 +68,4 @@ List of main vulnerabilities.
 
 We do not plan to modify the program in the short term. For now, the Security team of PrestaShop continue to examine incoming bug reports with dedication. We are quite happy to use YesWeHack and the platform is really smooth, elegant and make the security reports easier to manage than our old security mailing list.
 
-For next release, hunters will be notified automatically, so, we are waiting for you hunters!
+For next release, hunters will be notified automatically, so, we are waiting for you hunters on [YesWeHack platform](https://yeswehack.com/programs/prestashop)!

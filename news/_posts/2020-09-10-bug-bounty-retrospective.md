@@ -20,7 +20,7 @@ PrestaShop relies on a lot of dependencies, with hundred of thousands lines of c
 
 We considered that publishing a public program, available for all, in the first place was risky as it could bring a huge volume of duplicated reports and create frustration among hunters. That is why we chose a private program first.
 
-The benefit of the private program is to limit the number of hunters and manage the reporting flow. For each reported security issue, resources must be dedicated to understand it, reproduce it, build a patch, test the patch by the QA Team, etc. This can be quite expensive, so it is important to be able to adjust how many issues are reported, thanks to the private program settings.
+The benefit of the private program is to limit the number of hunters and manage the reporting flow. For each reported security issue, resources must be dedicated to understand it, reproduce it, build a patch, test the patch by the QA Team, etc. This can be quite expensive, so it is important to be able to adjust how many issues are reported thanks to the private program settings.
 
 The process can appear quite slow and boring but it is nevertheless necessary to leave no room for doubt.
 

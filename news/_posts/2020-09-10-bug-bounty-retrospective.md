@@ -2,7 +2,7 @@
 layout: post
 title:  "Bug Bounty Program, the retrospective"
 subtitle: "When hunters make your business safer!"
-date:   2020-09-10 09:00:00
+date:   2020-09-11 09:00:00
 authors: [ PierreRambaud, PrestaShop ]
 icon: icon-chat
 image: /assets/images/2020/09/ywhbanner.jpg

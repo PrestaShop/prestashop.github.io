@@ -54,7 +54,7 @@ Only valid reports are considered.
 
 The graph below is a representation of the number of reports we received during the period.
 
-[![Valid reports](/assets/images/2020/09/bug-bounty-all-valid-reports.png)](/assets/images/2020/09/bug-bounty-all-valid-reports.pn)g
+[![Valid reports](/assets/images/2020/09/bug-bounty-all-valid-reports.png)](/assets/images/2020/09/bug-bounty-all-valid-reports.png)
 
 Here is the representation of the CVSS3 Score results.
 

@@ -16,7 +16,7 @@ For several months, we experimented a Bug Bounty Program with the [YesWeHack](ht
 
 The security of software cannot be assessed unless it is tested by a lot of hunters.
 
-PrestaShop relies on a lot of dependencies, with hundred of thousands lines of code, and this has been true since the very first versions. 
+PrestaShop relies on a lot of dependencies, with hundreds of thousands lines of code, and this has been true since the very first versions.
 
 We considered that publishing a public program, available for all, in the first place was risky as it could bring a huge volume of duplicated reports and create frustration among hunters. That is why we chose a private program first.
 
@@ -29,7 +29,7 @@ The process can appear quite slow and boring but it is nevertheless necessary to
 
 After a few months running this private program, we noticed the number of reports had decreased significantly. We finally released the program to the public on the 23rd of July 2020.
 
-We thought that the public opening would bring in a huge volume of new reports, but this did not happen to our great surprise. It seems the hunters who participated to the private program helped us fix a large majority of security issues.
+We thought that the public opening would bring in a huge volume of new reports, but this did not happen to our great surprise. It seems the hunters who participated in the private program helped us fix a large majority of security issues.
 
 At the time we write this article, only one report submitted after the opening of the program to the public has been validated.
 
@@ -67,6 +67,6 @@ List of main vulnerabilities.
 
 ## What's next?
 
-There is no plan to modify the program in the short term. For now, the Security team of PrestaShop continue to examine incoming bug reports with dedication. We are quite happy to use YesWeHack and the platform is really smooth, elegant and make the security reports easier to manage than our old security mailing list.
+There is no plan to modify the program in the short term. For now, the Security team of PrestaShop continues to examine incoming bug reports with dedication. We are quite happy to use YesWeHack and the platform is really smooth, elegant and make the security reports easier to manage than our old security mailing list.
 
 For next release, hunters will be notified automatically, so we are waiting for you hunters on [YesWeHack platform](https://yeswehack.com/programs/prestashop)!

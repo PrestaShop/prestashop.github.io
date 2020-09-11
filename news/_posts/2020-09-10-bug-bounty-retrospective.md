@@ -56,7 +56,7 @@ The graph below is a representation of the number of reports we received during 
 
 [![Valid reports](/assets/images/2020/09/bug-bounty-all-valid-reports.png)](/assets/images/2020/09/bug-bounty-all-valid-reports.pn)g
 
-Here is the represation of the CVSS3 Score results.
+Here is the representation of the CVSS3 Score results.
 
 [![CVSS3 Score](/assets/images/2020/09/bug-bounty-all-valid-cvss.png)](/assets/images/2020/09/bug-bounty-all-valid-cvss.png)
 

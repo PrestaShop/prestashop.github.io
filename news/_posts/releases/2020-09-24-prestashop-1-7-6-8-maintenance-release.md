@@ -5,7 +5,6 @@ subtitle: "Maintenance version of the 1.7.6.x branch"
 date:   2020-09-24
 authors: [ PrestaShop ]
 icon: icon-checked
-image: /assets/images/2020/06/1.7.6...jpg
 tags:
  - 1.7
  - 1.7.6.x
@@ -17,7 +16,10 @@ tags:
 
 The ongoing work on security for PrestaShop software continues. We have identified and fixed new minor security issues, it has been decided to deliver a new maintenance release for 1.7.6.X branch.
 
-Reminder: the 1-Click Upgrade module’s latest version is v4.10.1, don’t forget to upgrade it.
+![1.7.6.8 is available!](/assets/images/2020/09/1768banner.png)
+
+
+Reminder: the 1-Click Upgrade module’s latest version is [v4.10.1](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.10.1), don’t forget to upgrade it.
 
 ## Security fixes
 

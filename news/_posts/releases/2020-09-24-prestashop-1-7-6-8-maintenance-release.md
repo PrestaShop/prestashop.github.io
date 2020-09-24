@@ -45,4 +45,4 @@ Because of mail sending issues, two methods have been removed from the `Mail::se
 [Download PrestaShop 1.7.6.8 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
 
-Since version 1.7.6.8 is a "patch" update to version 1.7.6.7, upgrading from any 1.7.6 version will be easy: features will work better, and modules & themes which worked fine on 1.7.6.x will work just as well with 1.7.6.7. Upgrades from a standard 1.7.x version should work just as well.
+Since version 1.7.6.8 is a "patch" update to version 1.7.6.7, upgrading from any 1.7.6 version will be easy: features will work better, and modules & themes which worked fine on 1.7.6.x will work the same with 1.7.6.8. Upgrades from a standard 1.7.x version should work just as well.

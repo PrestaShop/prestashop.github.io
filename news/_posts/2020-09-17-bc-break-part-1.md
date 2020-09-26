@@ -9,15 +9,15 @@ icon: icon-code
 tags: [contribution, opensource, development]
 ---
 
-In 2011, Marc Andreessen famously "Software is eating the world".
+In 2011, Marc Andreessen famously wrote "Software is eating the world".
 We can all see nowadays that this prophecy turned out very true: software has definitely eaten this world in this entirety. However software has also evolved in how it is being built.
 
-It becomes harder every day to find an application that does not have dependencies. By dependency we refer to a software component (a package, a library, an application...) that require some specific other software packages to function. For example the package [Doctrine ORM](https://github.com/doctrine/orm) requires the [Symfony Console](https://github.com/symfony/console) package.
+It becomes harder every day to find an application that does not have dependencies. By dependency we refer to a software component (a package, a library, an application...) that require some specific other software packages to function. For example the package [Doctrine ORM](https://github.com/doctrine/orm) that requires the [Symfony Console](https://github.com/symfony/console) package.
 
 Most of the time, using a dependency is a practical mean to avoid reinventing the wheel. Why would you re-implement a PHP HTTP Client when the famous [Guzzle](http://docs.guzzlephp.org/en/stable/) is available, why would you re-build a Logger when the widely used [Monolog](https://github.com/Seldaek/monolog) can be used instead ? The right dependencies allow developers to build faster and focus on the core of their business rather than reinventing components that already exist. This is a great example of the concept of ["dwarfs standing on the shoulders of giants"](Standing on the shoulders of giants) being implemented.
 
 Dependencies can come in many shapes and forms:
-- A SDK that depend on a web API definition, such as GitHub
+- A SDK that depends on a web API definition, such as GitHub
 - A library that depends on a software package
 - A Java application that needs to be run into the Java Virtual Machine
 
@@ -76,7 +76,7 @@ class ExtendedMoney extends Money
 }
 ```
 
-This is possible because the class is not [final](https://www.php.net/manual/en/language.oop5.final.php) so it is open for inheritance. It can be then considered that this class, and all of its protected and public properties and methods, are part of the API interface of this project. This means than any non-backwards compatible change to this class is a Breaking Change.
+This is possible because the class is not [final](https://www.php.net/manual/en/language.oop5.final.php) so it is open for inheritance. It can be then considered that this class, and all of its protected and public properties and methods, are part of the API interface of this project. This means that any non-backwards compatible change to this class is a Breaking Change.
 
 So this is a Breaking Change:
 ```php
@@ -89,7 +89,7 @@ class Money
 
 	public function __construct(float $amount, Currency $currency, bool $aNewVariable)
 ```
-Changing the signature of the `__construct()` is going to break how the project A uses this library. Because when instantiated, the `ExtendedClass` with the following error message:
+Changing the signature of the `__construct()` is going to break how the project A uses this library. Because when instantiating the `ExtendedClass` the following error message will be thrown:
 
 ```
 PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function __construct(), 2 passed and exactly 3 expected

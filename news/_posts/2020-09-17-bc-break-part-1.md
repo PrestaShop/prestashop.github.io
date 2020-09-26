@@ -14,7 +14,7 @@ We can all see nowadays that this prophecy turned out very true: software has de
 
 It becomes harder every day to find an application that does not have dependencies. By dependency we refer to a software component (a package, a library, an application...) that require some specific other software packages to function. For example the package [Doctrine ORM](https://github.com/doctrine/orm) that requires the [Symfony Console](https://github.com/symfony/console) package.
 
-Most of the time, using a dependency is a practical mean to avoid reinventing the wheel. Why would you re-implement a PHP HTTP Client when the famous [Guzzle](http://docs.guzzlephp.org/en/stable/) is available, why would you re-build a Logger when the widely used [Monolog](https://github.com/Seldaek/monolog) can be used instead ? The right dependencies allow developers to build faster and focus on the core of their business rather than reinventing components that already exist. This is a great example of the concept of ["dwarfs standing on the shoulders of giants"](Standing on the shoulders of giants) being implemented.
+Most of the time, using a dependency is a practical mean to avoid reinventing the wheel. Why would you re-implement a PHP HTTP Client when the famous [Guzzle](http://docs.guzzlephp.org/en/stable/) is available, why would you re-build a Logger when the widely used [Monolog](https://github.com/Seldaek/monolog) can be used instead ? The right dependencies allow developers to build faster and focus on the core of their business rather than reinventing components that already exist. This is a great example of the concept of ["dwarfs standing on the shoulders of giants"](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants) being implemented.
 
 Dependencies can come in many shapes and forms:
 - A SDK that depends on a web API definition, such as GitHub
@@ -27,23 +27,22 @@ For now, let's focus on PrestaShop usecase: a project that rely on library depen
 
 ## Backward Compatibility and Backward Compatibility Breaks
 
-From this relationship between a project and its dependency, comes the concept of _Backward Compatibility and Backward Compatibility Breaking Changes_.
+From the moment a project starts relying on dependencies, a relationship emerges. And also comes the concept of _Backward Compatibility and Backward Compatibility Breaking Changes_.
 
 According to Wikipedia, [Backward compatibility is a property of a system, product, or technology that allows for interoperability with an older legacy system](https://en.wikipedia.org/wiki/Backward_compatibility).
 
 Let us consider a project A using library B as a dependency and project A is built using version 3.4 of library B.
 
-If a new version 4.0 of library B is released and project A is still fully functional when using version 4.0 instead of version 3.4, we can say this version 4.0 is _backward compatible_ and that is a relief for the developers of project A.
+If a new version 4.0 of library B is released and project A is still fully functional when using version 4.0 instead of version 3.4, we can say this version 4.0 is _backward compatible_ (and that is a relief for the developers of project A).
+
+If however some changes have been introduced in version 4.0 of library B in a way that is not compatible anymore with how the project A was using the library B, it means this version 4.0 has introduced _Backward Compatibility Breaks_ ... and developers of project A need to find what exactly these changes are, in order to update their project to run with the version 4.0 of library B.
 
 There is no standard definition of a Breaking Change, but I’ll borrow [the one from Brian Ambielli](https://bambielli.com/til/2018-01-12-what-is-a-breaking-change/) to define that breaking changes are _non-backwards compatible changes to the contracts of methods you expose to your consumers through your API interfaces_.
 
-Back to our project A, this means that if some changes have been introduced in version 4.0 of library B in a way that is not compatible anymore with how the project A was using the library B, it means this version 4.0 has introduced Backward Compatibility Breaks ... and developers A need to find what exactly these changes are, in order to update their project to run with this new version.
 
-## API interfaces for dependencies
+## The contract and API interfaces for dependencies
 
-The definition we used for Breaking Change is "non-backwards compatible change to the contracts of methods you expose to your consumers through your API interfaces."
-
-What does API interface exactly mean ?
+What does "API interface" or "contract" exactly mean in the definition "non-backwards compatible change to the contracts of methods you expose to your consumers through your API interfaces" ?
 
 The API interface of a dependency is, by default, the public and/or available interfaces that allow another project to use/interact with it.
 
@@ -52,69 +51,71 @@ For example if we consider the following class from [this library](https://githu
 ```php
 class Money
 {
-	/** @var float */
-	private $amount;
-	/** @var Currency */
-	private $currency;
+    /** @var float */
+    private $amount;
+    /** @var Currency */
+    private $currency;
 
-	public function __construct(float $amount, Currency $currency)
-	{
-		$this->amount = $amount;
-		$this->currency = $currency;
-	}
+    public function __construct(float $amount, Currency $currency)
+    {
+        $this->amount = $amount;
+        $this->currency = $currency;
+    }
 ```
 
 If a project integrates this library as a dependency and wishes to extend this behavior, a very standard way to do so is to use [inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)).
 
-For example maybe project A needs a Money object with an identifier ? So it could do:
+For example maybe project A needs a Money object with an identifier ? So it could create its own child class:
 
 ```php
 class ExtendedMoney extends Money
 {
-	/** string */
+    /** string */
     public $identifier;
 }
 ```
 
-This is possible because the class is not [final](https://www.php.net/manual/en/language.oop5.final.php) so it is open for inheritance. It can be then considered that this class, and all of its protected and public properties and methods, are part of the API interface of this project. This means that any non-backwards compatible change to this class is a Breaking Change.
+This is possible because the class is not [final](https://www.php.net/manual/en/language.oop5.final.php) so it is open for inheritance. It can be then considered that this class, and all of its protected and public properties and methods, are part of the API interface of this project. And the _contract_ of this library is the current definition of this interface: the method name, the parameters, the return type... This means that any non-backwards compatible change to this contract is a Breaking Change.
 
 So this is a Breaking Change:
 ```php
 class Money
 {
-	/** @var float */
-	private $amount;
-	/** @var Currency */
-	private $currency;
+    /** @var float */
+    private $amount;
+    /** @var Currency */
+    private $currency;
 
-	public function __construct(float $amount, Currency $currency, bool $aNewVariable)
+    public function __construct(float $amount, Currency $currency, bool $aNewVariable)
 ```
-Changing the signature of the `__construct()` is going to break how the project A uses this library. Because when instantiating the `ExtendedClass` the following error message will be thrown:
+Adding a parameter to the `__construct()` is a change of the class contract. This is going to break how the project A uses this library. Because when instantiating the `ExtendedClass` the following error message will be thrown:
 
 ```
 PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function __construct(), 2 passed and exactly 3 expected
 ```
 
-But this is not a Breaking Change:
+However this is not a Breaking Change:
 ```php
 class Money
 {
-	/** @var float */
-	private $amount;
-	/** @var Currency */
-	private $currency;
+    /** @var float */
+    private $amount;
+    /** @var Currency */
+    private $currency;
 
-	public function __construct(float $amount, Currency $currency, bool $aNewVariable = null)
+    public function __construct(float $amount, Currency $currency, ?bool $aNewVariable = null)
 ```
-By providing a default value for the new argument, previous constructions of the class Money using only two arguments will continue functioning.
+Providing a default value for the new argument preserves constructions of the class Money using only two arguments. This is a change in the contract of this class, but it is backward compatible.
 
 ## SemVer
 
-In order to make it easier for these developers to predict whether a new version introduces Backward Compatibility Breaks, [Tom Preston Werner](http://tom.preston-werner.com/) has invented a convention: [SemVer](https://semver.org/). [SemVer](https://semver.org/) aims to help people immediately understand, when seeing a new software version, what to expect regarding its compatibility with current software.
+In order to make it easier for developers to predict whether a new version of a dependency introduces Backward Compatibility Breaks, [Tom Preston Werner](http://tom.preston-werner.com/) invented a convention: [SemVer](https://semver.org/). [SemVer](https://semver.org/) aims to help people immediately understand, when seeing a new software version, what to expect regarding its compatibility with current software.
 
-SemVer requires a version number to be constituted of 3 parts: MAJOR.MINOR.PATCH (example: 3.5.27) .
+SemVer requires the version number of a project to be constituted of 3 parts: MAJOR.MINOR.PATCH. For example 3.5.27 is a valid SemVer version number while 2.3 is not.
 
 ### SemVer summary
+
+This is the definition of SemVer:
 
 ```
 Given a version number MAJOR.MINOR.PATCH, increment the:
@@ -123,24 +124,30 @@ MINOR version when you add functionality in a backwards compatible manner, and
 PATCH version when you make backwards compatible bug fixes.
 ```
 
-When you release a new version of your software, if the new version only contains bug fixes, it is a patch version and you increase the PATCH number. Theoretically no BC Breaks are to be found in this version.
+This can be translated as follow:
 
-> Example: 3.5.27 => 3.5.28
-When you release a new version of your software, if the new version only contains bug fixes and new features, but it is backward compatible, it is a minor version and you increase the MINOR number and reset the PATCH. Theoretically no BC Breaks are to be found in this version.
+When a new version of a project is released, if the new version contains bug fixes introduced in a backward compatible manner, it is a new _patch version_ and then the PATCH number is increased.
 
-> Example: 3.5.27 => 3.6.0
-When you release a new version of your software, if the new version number contains BC Breaks, it is a major version and you increase the MAJOR number and reset the MINOR and the PATCH numbers.
+> Example: upgrading from 3.5.27 to 3.5.28 is a patch version upgrade
 
-> Example: 3.5.27 => 4.0.0
+When a new version of a project is released, if the new version contains bug fixes and new features, all of them having been introduced into the project in a backward compatible manner, it is a new _minor version_ and then the MINOR number is increased while the PATCH number is reset.
+
+> Example: upgrading from 3.5.27 to 3.6.0 is a minor version upgrade
+
+When a new version of a project is released, if the new version contains changes to the project API interfaces that are not backward compatible, it is a new _major version_ and then the MAJOR number is increased while the PATCH number and MINOR number are reset.
+
+> Example: upgrading from 3.5.27 to 4.0.0 is a major version upgrade
+
 <hr>
 
-As a developer who builds software relying on this library, when you see a new version number, you can see whether this is a patch, a minor or a major version. And consequently you know that:
+A developer who uses a dependency that follows SemVer can consequently easily find whether a new version introduces Backward Compatibility Breaking Changes, or BC breaks.
 
-- If it's a patch version, upgrading to use the new version will bring no change in behavior, it will only bring bug fixes
-- If it's a minor version, upgrading to use the new version might bring new behaviors you can use but all behaviors you are using are still usable, this version is backward compatible
-- If it's a major version, you need to check what has been changed to see whether you need to adjust your code
+Looking at the new version number, you can see whether this is a patch, a minor or a major version. And consequently you know that:
 
-This is very useful for developers. Being able, from the version number, to understand the impact this change can have on your software is very useful!
+- If it is a patch version, upgrading to use the new version will bring no change in behavior, it will only bring backward compatible bug fixes
+- If it is a minor version, upgrading to use the new version might bring new functionalities you can use but all behaviors you are using are still usable, this version is backward compatible
+- If it is a major version, you need to check what has been changed to see whether you need to adjust your usage
+
 
 ## Why do projects introduce BC breaks ?
 

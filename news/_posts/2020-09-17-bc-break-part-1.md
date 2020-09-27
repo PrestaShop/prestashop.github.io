@@ -149,16 +149,36 @@ Looking at the new version number, you can see whether this is a patch, a minor 
 - If it is a major version, you need to check what has been changed to see whether you need to adjust your usage
 
 
+## Defining an API interface
+
+When a library is built to be used as a dependency, it must define its contract. This is the contract that is under the scope of SemVer, the contract that the library developers bound themselves to maintain.
+
+Developers can choose to exclude from this contract some part of the libraries.
+
+There are two ways to define this contract: explicitely or implicitely.
+
+Projects that have an explicit contract simply provide a description of the API interface it covers. It can be a PHP class, it can be a Web API endpoint, it can be a markup language used to interact with the dependency.
+
+However very few projects do define this contract. Most projects, as far as I know, rather choose a implicit contract.
+
+An implicit contract could be summarized by "everything that is open for extension is in the contract". For a PHP library, this means all classnames, all public and protected methods, all public properties, all interfaces. Basically "if you can use it from outside, it's in the contract". A private property is, by definition, not usable from external classes so it is not bound by the contract.
+
+
 ## Why do projects introduce BC breaks ?
 
-When reading this, you might wonder why people release new major versions of a software. If everybody would only release minor versions following SemVer, nobody would ever be afraid of upgrading its software because of BC breaks! Would'nt it be amazing, a software world without BC breaks and the fear of them?
+BC breaks are a [hindrance](https://www.snoyman.com/blog/2018/04/stop-breaking-compatibility). for the users of a dependency as they require an upgrade of the code relying on it. So why do they actually exist ? A world without BC breaks would be a marvelous thing.
 
-Moreover PrestaShop is a CMS, which means it is customizable and extensible. Extension often comes from installing modules and a theme.
+Unfortunately BC breaks are necessary for software to evolve. Maintaining backward compatibility strongly limits the options of the dependency maintainers and can stand in the way of necessary evolutions. This is why they are needed.
 
-These modules and themes are built by developers that want to sell it to an audience as large as possible. A BC break that impacts some code they are using is [a bother to them](https://www.snoyman.com/blog/2018/04/stop-breaking-compatibility).
+However it is also important for maintainers to inform users of the BC breaks introduced in new versions.
+
+### BC breaks for PrestaShop
+
+PrestaShop is a [CMS](https://en.wikipedia.org/wiki/Content_management_system), which means it is customizable and extensible. Extension often comes from installing modules and a theme.
+
+These modules and themes are built by developers that want to sell it to an audience as large as possible. A BC break that impacts an API interface they are using is a bother to them.
 It means for example they have to provide a different version of their product for PrestaShop 1.7.5 and 1.7.6 because of a change in PrestaShop 1.7.6.
 
-BC breaks hinder the capability of modules to provide a huge compatibility range.
+BC breaks limit the capability of modules to provide a huge compatibility range.
 
-Unfortunately... BC breaks are necessary for software to evolve. Not all software changes can be done while maintaining backward compatibility, and BC breaks are a necessary step for a project to evolve in time. And [evolution is necessary](https://build.prestashop.com/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/) to ensure it continues to fit the needs of its user community, who evolve in time. Software that does not evolve is bound to disappear, replaced by better contributors.
-
+But BC breaks are a necessary step for PrestaShop to evolve in time. And [evolution is necessary](https://build.prestashop.com/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/) to ensure it continues to fit the needs of its user community, who evolve in time. Software that does not evolve is bound to disappear, replaced by better contributors.

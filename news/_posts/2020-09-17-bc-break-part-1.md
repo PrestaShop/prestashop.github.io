@@ -61,6 +61,11 @@ class Money
         $this->amount = $amount;
         $this->currency = $currency;
     }
+
+    public function print()
+    {
+        return sprintf('%s %s', $this->amount, $this->currency);
+    }
 ```
 
 If a project integrates this library as a dependency and wishes to extend this behavior, a very standard way to do so is to use [inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)).
@@ -148,25 +153,47 @@ Looking at the new version number, you can see whether this is a patch, a minor 
 - If it is a minor version, upgrading to use the new version might bring new functionalities you can use but all behaviors you are using are still usable, this version is backward compatible
 - If it is a major version, you need to check what has been changed to see whether you need to adjust your usage
 
-
 ## Defining an API interface
 
-When a library is built to be used as a dependency, it must define its contract. This is the contract that is under the scope of SemVer, the contract that the library developers bound themselves to maintain.
-
-Developers can choose to exclude from this contract some part of the libraries.
+When a library is built to be used as a dependency, it must define its contract. This is the contract that follows SemVer rules, the contract that the library developers bound themselves to maintain.
 
 There are two ways to define this contract: explicitely or implicitely.
 
-Projects that have an explicit contract simply provide a description of the API interface it covers. It can be a PHP class, it can be a Web API endpoint, it can be a markup language used to interact with the dependency.
+Projects that have an explicit contract simply provide a description of the API interface it covers. It can be a list of PHP classes, it can be a list of reachable Web API endpoints, it can be a markup language used to interact with the dependency... the shape is free. What is important is that these projects clearly define the API interface, so the rest of the project does not need to comply with SemVer rules, and can evolve with a lot more freedom.
 
 However very few projects do define this contract. Most projects, as far as I know, rather choose a implicit contract.
 
-An implicit contract could be summarized by "everything that is open for extension is in the contract". For a PHP library, this means all classnames, all public and protected methods, all public properties, all interfaces. Basically "if you can use it from outside, it's in the contract". A private property is, by definition, not usable from external classes so it is not bound by the contract.
+An implicit contract could be summarized by "everything that is open for extension is in the contract". For a PHP library, this means all classnames, all public and protected methods, all public properties, all interfaces. Basically "if you can use it from outside, it is in the contract". 
 
+For this class example:
+```php
+class Money
+{
+    /** @var float */
+    private $amount;
+    /** @var Currency */
+    private $currency;
+
+    public function __construct(float $amount, Currency $currency)
+
+    public function print()
+```
+If no contract is explicitely defined, then the implicit contract is:
+- the classname : changing it is a BC break
+- the constructor and its argument types: changing it is a BC break
+- the function print and its return type: changing it is a BC break
+- also since the class has not been marked `final` it is implicitely supporting inheritance 
+- the private properties, however, are not usable from external classes so they are not part of the contract
+
+### Major version zero
+
+One interesting situation is _major version zero_: some projects, that are in an early phase of their life, will keep releasing 0.x releases until they consider they have reached a level of maturity to be able to define an API interface. Once they reach this stage, they release a first major version 1.0.0 and from this moment start following SemVer rules about backward compatibility.
+
+[React](https://en.wikipedia.org/wiki/React_(web_framework)) is a famous example for having performed a huge leap by releasing a version 15.0.0 following their latest version zero 0.14.0 . [PHPStan](https://github.com/phpstan/phpstan/) is still in this phase with its latest release being 0.12.47.
 
 ## Why do projects introduce BC breaks ?
 
-BC breaks are a [hindrance](https://www.snoyman.com/blog/2018/04/stop-breaking-compatibility). for the users of a dependency as they require an upgrade of the code relying on it. So why do they actually exist ? A world without BC breaks would be a marvelous thing.
+BC breaks are a [hindrance](https://www.snoyman.com/blog/2018/04/stop-breaking-compatibility) for the users of a dependency as they require an upgrade of the code relying on it. So it seems getting rid of them, never introducing BC breaks would be a great idea ? A world without BC breaks would be a marvelous thing.
 
 Unfortunately BC breaks are necessary for software to evolve. Maintaining backward compatibility strongly limits the options of the dependency maintainers and can stand in the way of necessary evolutions. This is why they are needed.
 
@@ -182,3 +209,5 @@ It means for example they have to provide a different version of their product f
 BC breaks limit the capability of modules to provide a huge compatibility range.
 
 But BC breaks are a necessary step for PrestaShop to evolve in time. And [evolution is necessary](https://build.prestashop.com/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/) to ensure it continues to fit the needs of its user community, who evolve in time. Software that does not evolve is bound to disappear, replaced by better contributors.
+
+## Conclusion

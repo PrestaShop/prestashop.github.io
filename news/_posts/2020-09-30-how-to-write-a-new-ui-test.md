@@ -19,7 +19,7 @@ Before we start, you should definitely read about our stack and architecture in 
 
 ## I. Writing the scenario
 
-Writing your scenario begins by knowing what exactly you need to test and limiting the scope. For this example : **we will be checking that the customer link in the Orders page in the backoffice redirects to the view customer page**.
+Writing your scenario begins by knowing what exactly you need to test and limiting the scope. For this example: **we will be checking that the customer link in the Orders page in the backoffice redirects to the view customer page**.
 The second step involves a manual check of this very scenario to be sure it's working, and to write (on a piece of paper) all the steps needed, from start to finish.
 
 Now that you have the scenario, you can create a new javascript file and write your scenario using Mocha (see example below).
@@ -42,9 +42,9 @@ describe('View customer form orders page', async function(){
 });
 ```
 
-Note 1: The directory in which you create your file should be chosen wisely (which campaign ? BO or FO ? Which page in BO ? ...). This file organization is very important since Mocha lets you run test by folders (recursively or not), so grouping your tests by features or meta-features (pages) is a very good idea.
+Note 1: The directory in which you create your file should be chosen wisely (which campaign? BO or FO? Which page in BO? ...). This file organization is very important since Mocha lets you run test by folders (recursively or not), so grouping your tests by features or meta-features (pages) is a very good idea.
 
-Note 2: You can create nested describes (scenarios inside scenarios) in the same file, if you need to regroup some tasks in a more readable way. Keep in mind that the generated report will follow your hierarchy !
+Note 2: You can create nested describes (scenarios inside scenarios) in the same file, if you need to regroup some tasks in a more readable way. Keep in mind that the generated report will follow your hierarchy!
 
 Note 3: We recommend adding more information about the scenario as a comment before your describe (so anyone opening the file can see what the test exactly do).
 
@@ -61,7 +61,7 @@ Check that 'View customer' page is displayed
 
 For each and every UI test, you need a browser. The framework the QA team developed includes a set of helpers function to abstract all of this: open a browser, create a new browser context and/or a new tab.
 
-The helper file is located in the `utils` directory and you can require it using the module-alias library as below :
+The helper file is located in the `utils` directory and you can require it using the module-alias library as below:
 
 ```js
 require('module-alias/register');
@@ -103,19 +103,19 @@ describe('View customer form orders page', async function(){
 });
 ```
 
-Note : In the before function, we only open the browser context and the page (= browser tab) through the `createBrowserContext()` method. We don't worry about opening the browser itself because it's handled by the [setup file](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#setup), which is a file executed by mocha before each run.
+Note: In the before function, we only open the browser context and the page (= browser tab) through the `createBrowserContext()` method. We don't worry about opening the browser itself because it's handled by the [setup file](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#setup), which is a file executed by mocha before each run.
 
 ## III. Using common tests
 
 Some steps are used repeatedly in a lot of scenarios, so the QA team decided to store them in a folder called `commonTests`.
 
-First we need to require the file containing the steps we're interessed in, still using the require module like before:
+First we need to require the file containing the steps we're interested in, still using the require module like before:
 
 ```js
 // Require common test login
 const loginCommon = require('@commonTests/loginBO');
 ```
-`Login BO` (with the default admin account) is a part of these common tests, and you can use in your new test like this :
+`Login BO` (with the default admin account) is a part of these common tests, and you can use it in your new test like this:
 
 ```js
 it('should login in BO', async function () {
@@ -132,7 +132,7 @@ it('should login in BO', async function () {
 
 ## IV. Requiring needed pages
 
-Each test has its needs! After writing the scenario, you know which pages are needed (for this example, we need the following backoffice pages : dashboard, orders, and view customer).
+Each test has its needs! After writing the scenario, you know which pages are needed (for this example, we need the following backoffice pages: dashboard, orders, and view customer).
 
 ```js
 // Import pages
@@ -147,7 +147,7 @@ Note 2: If a page doesn’t exist yet, you need to create it (in the right folde
 
 
 
-## V. Filling the steps
+## V. Filling out the steps
 
 Each step of the scenario is made of two parts: **actions** and **expected results** (through data reporting). These are functions in your pages.
 
@@ -163,8 +163,8 @@ it('should go to orders page', async function () {
   // Open Menu and go to orders page
   await dashboardPage.goToSubMenu(
     page, // Browser tab
-    dashboardPage.ordersParentLink, // Parent menu item : Sell -> orders
-    dashboardPage.ordersLink, // Child menu item : Sell -> orders -> orders
+    dashboardPage.ordersParentLink, // Parent menu item: Sell -> orders
+    dashboardPage.ordersLink, // Child menu item: Sell -> orders -> orders
   );
 });
 
@@ -198,7 +198,7 @@ it('should check customer link', async function () {
 ```
 Here we use differents **actions** methods, like `goToSubMenu()` in the dashboard page, or `resetAndGetNumberOfLines()` in the orders page.
 
-Note: For filter orders, we used the FO default account which is part of demo data stored in *data* directory. For this scenario, you need to require this file:
+Note: To filter orders, we used the FO default account which is part of demo data stored in *data* directory. For this scenario, you need to require this file:
 
 ```js
 // Import customer 'J. DOE'
@@ -304,11 +304,11 @@ But there's a chance that a method you need is not implemented yet. Here it's th
  
 ```js
 /**
-* Click on customer link to open view page in a new tab
-* @param page
-* @param row
-* @return {Promise<*>}, new browser tab to work with
-*/
+ * Click on customer link to open view page in a new tab
+ * @param page
+ * @param row
+ * @return {Promise<*>}, new browser tab to work with
+ */
 viewCustomer(page, row) {
   return this.openLinkWithTargetBlank(
     page,
@@ -320,7 +320,7 @@ viewCustomer(page, row) {
 
 ## VI. Running your scenario
 
-After finishing writing your scenario, implementing missing functions... it's time to test your test ! 
+After you have finished writing your scenario, implementing missing functions... it's time to test your test! 
 
 ```shell script
 TEST_PATH="functional/BO/02_orders/01_orders/08_viewCustomer" URL_FO=shopUrl/ npm run specific-test
@@ -336,11 +336,11 @@ TEST_PATH="functional/BO/02_orders/01_orders/08_viewCustomer" URL_FO=shopUrl/ np
 
 ## VII. Adding steps Identifiers
 
-Steps identifiers help us track failing steps between different runs thanks to the [nightly](https://nightly.prestashop.com/) algorithm.
+Steps identifiers help track failing steps between different runs thanks to the [nightly](https://nightly.prestashop.com/) algorithm.
 
-Each step should have its own ! You can found more information [here](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#test-identifier).
+Each step should have its own! You can found more information [here](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#test-identifier).
 
-After adding this identifier, each step should look like this :
+After adding this identifier, each step should look like this:
 
 ```js
 it('should check customer link', async function () {
@@ -356,7 +356,7 @@ it('should check customer link', async function () {
 });
 ```
 
-Note : No need to add a step identifier to common steps, they already have it.
+Note: No need to add a step identifier to common steps, they already have one.
 
 ## VIII. Running eslint
 
@@ -371,6 +371,6 @@ npm run lint
 
 ## IX. Creating your pull request
 
-Now that your test is ready, you want to add it to the PrestaShop tests campaign ! You can create a pull request by following the [contribution guidelines](https://github.com/PrestaShop/PrestaShop#contributing). As usual, thanks a lot for helping this Open Source project.
+Now that your test is ready, you want to add it to the PrestaShop tests campaign! You can create a pull request by following the [contribution guidelines](https://github.com/PrestaShop/PrestaShop#contributing). As usual, thanks a lot for helping this Open Source project.
 
-Link to the PR used for this example : [#20280](https://github.com/PrestaShop/PrestaShop/pull/20280).
+Link to the PR used for this example: [#20280](https://github.com/PrestaShop/PrestaShop/pull/20280).

@@ -19,8 +19,8 @@ Before we start, you should definitely read about our stack and architecture in 
 
 ## I. Writing the scenario
 
-Writing your scenario begins by knowing what exactly you need to test and limiting the scope. For this example: **we will be checking that the customer link in the Orders page in the backoffice redirects to the view customer page**.
-The second step involves a manual check of this very scenario to be sure it's working, and to write (on a piece of paper) all the steps needed, from start to finish.
+The first step to writing your scenario is to identify exactly what you want to test, and limit the test's scope to that. For this example **we will be checking that the customer link in the Back Office "Orders" page redirects to the "view customer" page**.
+The second step involves a manual check of this very scenario to be sure it's working, and to write down all the steps needed, from start to finish:
 
 Now that you have the scenario, you can create a new javascript file and write your scenario using Mocha (see example below).
 
@@ -59,7 +59,7 @@ Check that 'View customer' page is displayed
 
 ## II. Opening the browser tab
 
-For each and every UI test, you need a browser. The framework the QA team developed includes a set of helpers function to abstract all of this: open a browser, create a new browser context and/or a new tab.
+For each and every UI test, you need a browser. The framework the QA team developed includes a set of helper function to abstract all of this: open a browser, create a new browser context and/or a new tab, etc.
 
 The helper file is located in the `utils` directory and you can require it using the module-alias library as below:
 
@@ -103,7 +103,7 @@ describe('View customer form orders page', async function(){
 });
 ```
 
-Note: In the before function, we only open the browser context and the page (= browser tab) through the `createBrowserContext()` method. We don't worry about opening the browser itself because it's handled by the [setup file](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#setup), which is a file executed by mocha before each run.
+Note: In the `before` function, we only need to open the browser context and the page (the browser tab) through the `createBrowserContext()` method. We don't need to worry about opening the browser itself because it's handled by the [setup file](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#setup), which is a file executed by mocha before each run.
 
 ## III. Using common tests
 
@@ -132,7 +132,7 @@ it('should login in BO', async function () {
 
 ## IV. Requiring needed pages
 
-Each test has its needs! After writing the scenario, you know which pages are needed (for this example, we need the following backoffice pages: dashboard, orders, and view customer).
+Each test has its own needs! After writing the scenario, you will know which pages are needed. for this example, we need the following Back Office pages: "dashboard", "orders", and "view customer".
 
 ```js
 // Import pages
@@ -155,7 +155,7 @@ Before adding them, you should check for existing ones and their parameters.
 
 ### Actions
 
-Actions are replicating what an user would do in the page (clicking on an item, filling an input, etc).
+Actions replicate what a user would do in the page (click on an item, fill out text field, etc).
 
 ```js
 it('should go to orders page', async function () {
@@ -358,19 +358,19 @@ it('should check customer link', async function () {
 
 Note: No need to add a step identifier to common steps, they already have one.
 
-## VIII. Running eslint
+## VIII. Running ESLINT
 
-Eslint is a linter tool used to identify and report on patterns in JavaScript. It's currently used by the QA team. To run it, use the command *npm run lint*. you may have to fix errors.
+ESLint is a tool currently used by the QA team that helps enforce code style rules in JavaScript files. To run it, use the command *npm run lint*. You may have to fix errors reported by this tool before submitting your UI test.
 
 ```shell script
 npm run lint
 
-> eslint  --fix --ignore-path .gitignore .
+> ESLINT  --fix --ignore-path .gitignore .
 
 ```
 
 ## IX. Creating your pull request
 
-Now that your test is ready, you want to add it to the PrestaShop tests campaign! You can create a pull request by following the [contribution guidelines](https://github.com/PrestaShop/PrestaShop#contributing). As usual, thanks a lot for helping this Open Source project.
+Now that your test is ready, you will want to add it to the PrestaShop tests campaign! You can create a pull request by following the [contribution guidelines](https://github.com/PrestaShop/PrestaShop#contributing).
 
 Link to the PR used for this example: [#20280](https://github.com/PrestaShop/PrestaShop/pull/20280).

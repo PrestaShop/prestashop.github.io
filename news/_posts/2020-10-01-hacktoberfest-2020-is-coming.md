@@ -5,7 +5,7 @@ subtitle: "Bring the lights on open source projects"
 date:  2020-10-01 09:10:11
 authors: [LouiseBonnard]
 icon: icon-github-alt
-image: /assets/images/2020/09/Hacktoberfest-2020.png
+image: /assets/images/2020/09/Hacktoberfest-2020-banner.png
 tags: [community, contribution, github, contribute]
 ---
 

@@ -56,4 +56,4 @@ In any case, we will gladly accept contributions, now and in the future. Here ar
 
 Want a small tip? Pick one of the [good first issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) to get all beginner-friendly improvements and bugs to fix. Read more about this label on [Build](https://build.prestashop.com/news/a-definition-of-the-good-first-issue-label).
 
-Need to meet your open source mates? Go to prestashop.slack.com to join a worldwide community of open source lovers and PrestaShop developers!
+Need to meet your open source mates? Go to [prestashop.slack.com](https://github.com/PrestaShop/open-source/tree/master/slack) to join a worldwide community of open source lovers and PrestaShop developers!

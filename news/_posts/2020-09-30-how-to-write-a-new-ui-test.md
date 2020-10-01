@@ -22,7 +22,9 @@ Before we start, you should definitely read about our stack and architecture in 
 The first step to writing your scenario is to identify exactly what you want to test, and limit the test's scope to that. For this example **we will be checking that the customer link in the Back Office "Orders" page redirects to the "view customer" page**.
 The second step involves a manual check of this very scenario to be sure it's working, and to write down all the steps needed, from start to finish.
 
-Now that you have the scenario, you can create a new javascript file and write your scenario using Mocha (see example below).
+Now that we have the scenario, we can create a new javascript file and write our scenario using Mocha (see example below).
+
+The directory in which we create our file should be chosen wisely (which campaign? BO or FO? Which page in BO? ...). This file organization is very important since Mocha lets you run test by folders (recursively or not), so grouping your tests by features or meta-features (pages) is a very good idea.
 
 ```js
 // 'describe' = scenario
@@ -42,7 +44,7 @@ describe('View customer form orders page', async function(){
 });
 ```
 
-Note 1: The directory in which you create your file should be chosen wisely (which campaign? BO or FO? Which page in BO? ...). This file organization is very important since Mocha lets you run test by folders (recursively or not), so grouping your tests by features or meta-features (pages) is a very good idea.
+Note 1: 
 
 Note 2: You can create nested `describes` (scenarios inside scenarios) in the same file, if you need to regroup some tasks in a more readable way. Keep in mind that the generated report will follow your hierarchy!
 
@@ -322,7 +324,7 @@ viewCustomer(page, row) {
 
 ## VI. Running your scenario
 
-After you have finished writing your scenario, implementing missing functions... it's time to test your test! 
+Now that we finished writing our scenario, implementing missing functions... it's time to run our test! 
 
 ```shell script
 TEST_PATH="functional/BO/02_orders/01_orders/08_viewCustomer" URL_FO=shopUrl/ npm run specific-test

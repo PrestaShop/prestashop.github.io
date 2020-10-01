@@ -9,7 +9,7 @@ image: /assets/images/theme/meta-logo-build.png
 tags: [community, contribution, tests, automation]
 ---
 
-One year ago, the QA team started to develop a new test framework, based on [Puppeteer](https://github.com/puppeteer/puppeteer), [Mocha](https://mochajs.org/), and [Chai](https://www.chaijs.com/).
+One year ago, the QA team started to develop a new test framework, based on [Puppeteer](https://github.com/puppeteer/puppeteer), [Mocha](https://mochajs.org/), and [Chai](https://www.chaijs.com/). You can read more about the framework in a previous [article](https://build.prestashop.com/news/the-new-prestashop-test-framework/).
 Since then, the tests coverage has been continually increasing and we recently improved our framework by switching to [Playwright](https://playwright.dev/).
 
 In this article, we will explain how to create a new UI (User Interface) test for the [PrestaShop core project](https://github.com/PrestaShop/PrestaShop).

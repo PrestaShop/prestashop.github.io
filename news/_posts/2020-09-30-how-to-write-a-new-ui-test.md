@@ -59,9 +59,9 @@ Check that 'View customer' page is displayed
 
 ## II. Opening the browser tab
 
-For each and every UI test, you need a browser. The framework the QA team developed includes a set of helper function to abstract all of this: open a browser, create a new browser context and/or a new tab, etc.
+For each and every UI test, we need a browser. This framework includes a set of helper functions to abstract all of this: open a browser, create a new browser context and/or a new tab, etc.
 
-The helper file is located in the `utils` directory and you can require it using the module-alias library as below:
+The helper file is located in the `utils` directory and we can require it using the module-alias library as below:
 
 ```js
 require('module-alias/register');
@@ -69,7 +69,9 @@ require('module-alias/register');
 const helper = require('@utils/helpers');
 ```
 
-Once you included the helper, you are able to create the [`before`](https://mochajs.org/#hooks) function inside your describe.
+Note: To find all the shortcuts you can use with module-alias, check the package.json file.
+
+Once we included the helper, we are able to create the [`before`](https://mochajs.org/#hooks) function inside our `describe`.
 
 ```js
 const helper = require('@utils/helpers');
@@ -115,7 +117,7 @@ First we need to require the file containing the steps we're interested in, stil
 // Require common test login
 const loginCommon = require('@commonTests/loginBO');
 ```
-`Login BO` (with the default admin account) is a part of these common tests, and you can use it in your new test like this:
+`Login BO` (with the default admin account) is a part of these common tests, and we can use it in our new test like this:
 
 ```js
 it('should login in BO', async function () {
@@ -132,7 +134,7 @@ it('should login in BO', async function () {
 
 ## IV. Requiring needed pages
 
-Each test has its own needs! After writing the scenario, you will know which pages are needed. for this example, we need the following Back Office pages: "dashboard", "orders", and "view customer".
+Each test has its own needs! After writing the scenario, we now know which pages are needed. For this example, we need the following Back Office pages: "dashboard", "orders", and "view customer".
 
 ```js
 // Import pages
@@ -141,7 +143,7 @@ const ordersPage = require('@pages/BO/orders');
 const viweCustomerPage = require('@pages/BO/customers/view');
 ```
 
-Note 1: To found the exact locations of the pages to require, check this [link](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#pages) on our docs, or explore the `pages` folder.
+Note 1: To find the exact locations of the pages to require, read [How to contribute and create UI tests](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#pages), or explore the `pages` folder.
 
 Note 2: If a page doesn’t exist yet, you need to create it (in the right folder).
 
@@ -356,7 +358,13 @@ it('should check customer link', async function () {
 });
 ```
 
-Note: No need to add a step identifier to common steps, they already have one.
+Note1: The `baseContext` parameter should be declared in the beginning of the test. It's must be unique, and for that we used the test's file path.
+
+```js
+const baseContext = 'functional_BO_orders_orders_viewCustomer';
+```
+
+Note2: No need to add a step identifier to common steps, they already have one.
 
 ## VIII. Running ESLINT
 

@@ -22,7 +22,7 @@ As a result, it is probably the best place to start involving in the projects yo
 
 ## Get acquainted with the Hacktoberfest challenge
 
-Every contributor achieving this goal of 4 contributions merged will be sent a pack of nice goodies including a tee-shirt and many wonderful stickers. It is the perfect occasion to start a collection! Looking for a more sustainable gift? An environment-friendly option, the ‘pick trees, not tees’ option, will plant a tree instead of delivering you goodies. ;-)
+Every contributor achieving this goal of 4 contributions will be sent a pack of nice goodies including a tee-shirt and many wonderful stickers. It is the perfect occasion to start a collection! Looking for a more sustainable gift? An environment-friendly option, the ‘pick trees, not tees’ option, will plant a tree instead of delivering you goodies. ;-)
 
 Everyone is welcome, especially beginners, just find the open source projects you want to involve in and do your bit! It is just a four-step process:
 

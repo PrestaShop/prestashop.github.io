@@ -20,7 +20,7 @@ Before we start, you should definitely read about our stack and architecture in 
 ## I. Writing the scenario
 
 The first step to writing your scenario is to identify exactly what you want to test, and limit the test's scope to that. For this example **we will be checking that the customer link in the Back Office "Orders" page redirects to the "view customer" page**.
-The second step involves a manual check of this very scenario to be sure it's working, and to write down all the steps needed, from start to finish:
+The second step involves a manual check of this very scenario to be sure it's working, and to write down all the steps needed, from start to finish.
 
 Now that you have the scenario, you can create a new javascript file and write your scenario using Mocha (see example below).
 
@@ -44,9 +44,9 @@ describe('View customer form orders page', async function(){
 
 Note 1: The directory in which you create your file should be chosen wisely (which campaign? BO or FO? Which page in BO? ...). This file organization is very important since Mocha lets you run test by folders (recursively or not), so grouping your tests by features or meta-features (pages) is a very good idea.
 
-Note 2: You can create nested describes (scenarios inside scenarios) in the same file, if you need to regroup some tasks in a more readable way. Keep in mind that the generated report will follow your hierarchy!
+Note 2: You can create nested `describes` (scenarios inside scenarios) in the same file, if you need to regroup some tasks in a more readable way. Keep in mind that the generated report will follow your hierarchy!
 
-Note 3: We recommend adding more information about the scenario as a comment before your describe (so anyone opening the file can see what the test exactly do).
+Note 3: It's a good practice to add more information about the scenario as a comment before the main `describe`, so anyone opening the file can see what the test exactly do.
 
 ```js
 /*
@@ -149,7 +149,7 @@ Note 2: If a page doesn’t exist yet, you need to create it (in the right folde
 
 ## V. Filling out the steps
 
-Each step of the scenario is made of two parts: **actions** and **expected results** (through data reporting). These are functions in your pages.
+Each step of the scenario is made of two parts: **actions** and **expected results** (through data reporting). Actions are functions in the pages.
 
 Before adding them, you should check for existing ones and their parameters.
 
@@ -170,7 +170,7 @@ it('should go to orders page', async function () {
 
 it('should reset all filters', async function () {
   // Action
-  // Reset filter in orders list and get bumber of element
+  // Reset filter in orders list and get number of element
   await ordersPage.resetAndGetNumberOfLines(
     page, // Browser tab
   );
@@ -198,7 +198,7 @@ it('should check customer link', async function () {
 ```
 Here we use differents **actions** methods, like `goToSubMenu()` in the dashboard page, or `resetAndGetNumberOfLines()` in the orders page.
 
-Note: To filter orders, we used the FO default account which is part of demo data stored in *data* directory. For this scenario, you need to require this file:
+Note: To filter orders, the method uses the FO default account which is part of demo data stored in *data* directory. For this scenario, you need to require this file:
 
 ```js
 // Import customer 'J. DOE'
@@ -209,7 +209,7 @@ const {DefaultAccount} = require('@data/demo/customer');
 
 Data reporting (or "expected results") is done by checking elements in the page and returning a value (number of lines in a table, content of a modal, value of an input, etc).
 
-We use the *expect* element from the [Chai library](https://www.chaijs.com/) and you need to require it:
+This framework uses the *expect* element from the [Chai library](https://www.chaijs.com/), so we need to require it:
 
 ```js
 // Import expect from chai
@@ -371,6 +371,6 @@ npm run lint-fix
 
 ## IX. Creating your pull request
 
-Now that your test is ready, you will want to add it to the PrestaShop tests campaign! You can create a pull request by following the [contribution guidelines](https://github.com/PrestaShop/PrestaShop#contributing).
+Now that the test is ready, it needs to be added to the PrestaShop tests campaign! You can do so by creating a pull request, following the [contribution guidelines](https://github.com/PrestaShop/PrestaShop#contributing).
 
 Link to the PR used for this example: [#20280](https://github.com/PrestaShop/PrestaShop/pull/20280).

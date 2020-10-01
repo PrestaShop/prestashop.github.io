@@ -363,7 +363,7 @@ Note: No need to add a step identifier to common steps, they already have one.
 ESLint is a tool currently used by the QA team that helps enforce code style rules in JavaScript files. To run it, use the command *npm run lint*. You may have to fix errors reported by this tool before submitting your UI test.
 
 ```shell script
-npm run lint
+npm run lint-fix
 
 > ESLINT  --fix --ignore-path .gitignore .
 

@@ -50,4 +50,4 @@ You are not alone! PrestaShop has a rather large community and, likely, other us
 
 I was not alone and there are many ways to look at it!
 
-**Thank you Pululu, we hope to see you more from you as PrestaShop evolves! :)**
+**Thank you Pululu, we hope to see more from you as PrestaShop evolves! :)**

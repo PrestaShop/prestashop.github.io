@@ -2,7 +2,7 @@
 layout: post
 title:  "Do you speak PrestaShop? – September 2020 edition"
 subtitle: "Where you'll learn how to be part of our privileged user panel"
-date:  2020-10-08 12:00:00
+date:  2020-10-09 12:00:00
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

@@ -70,7 +70,7 @@ Check 'View customer' page is displayed
 
 For each and every UI test, we need a browser. This framework includes a set of helper functions to abstract all of this: open a browser, create a new browser context and/or a new tab, etc.
 
-The helper file is located in the `utils` directory and we can require it using the module-alias library as below:
+The helper file is located in the `utils` directory, and we can require it using the module-alias library as below:
 
 ```js
 require('module-alias/register');
@@ -143,7 +143,11 @@ it('should login in BO', async function () {
 
 ## IV. Requiring needed pages
 
-Each test has its own needs! After writing the scenario, we now know which pages are needed. For this example, we need the following Back Office pages: "dashboard", "orders", and "view customer".
+Each scenario has its own needs! All pages that the browser interacts with (BO, FO and others), the data needed to create or import (a product, cart rule, customer ...), a specific option to open the new tab in the browser...
+
+After writing the scenario, we now know which pages are needed. For this example, we need the following Back Office pages: "dashboard", "orders", and "view customer".
+
+To find the exact locations of the pages to require, read [How to contribute and create UI tests](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#pages), or explore the `pages` folder.
 
 ```js
 // Import pages
@@ -152,9 +156,7 @@ const ordersPage = require('@pages/BO/orders');
 const viweCustomerPage = require('@pages/BO/customers/view');
 ```
 
-Note 1: To find the exact locations of the pages to require, read [How to contribute and create UI tests](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#pages), or explore the `pages` folder.
-
-Note 2: If a page doesn’t exist yet, you need to create it (in the right folder).
+Note: If a page doesn't exist yet, you need to create it (in the right folder).
 
 
 

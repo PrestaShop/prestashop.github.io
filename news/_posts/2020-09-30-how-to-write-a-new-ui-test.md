@@ -376,7 +376,7 @@ const baseContext = 'functional_BO_orders_orders_viewCustomer';
 
 Note2: No need to add a step identifier to common steps, they already have one.
 
-## VIII. Running ESLINT
+## VIII. Running ESLint
 
 ESLint is a tool currently used by the QA team that helps enforce code style rules in JavaScript files. To run it, use the command *npm run lint*. You may have to fix errors reported by this tool before submitting your UI test.
 

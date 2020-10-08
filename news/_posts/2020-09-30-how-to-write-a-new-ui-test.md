@@ -51,11 +51,9 @@ describe('View customer form orders page', async function(){
 });
 ```
 
-Note 1: 
+Note 1: You can create nested `describes` (scenarios inside scenarios) in the same file, if you need to regroup some tasks in a more readable way. Keep in mind that the generated report will follow your hierarchy!
 
-Note 2: You can create nested `describes` (scenarios inside scenarios) in the same file, if you need to regroup some tasks in a more readable way. Keep in mind that the generated report will follow your hierarchy!
-
-Note 3: It's a good practice to add more information about the scenario as a comment before the main `describe`, so anyone opening the file can see what the test exactly do.
+Note 2: It's a good practice to add more information about the scenario as a comment before the main `describe`, so anyone opening the file can see what the test exactly do.
 
 ```js
 /*

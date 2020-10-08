@@ -91,7 +91,7 @@ let page;
 
 /*
 Go to orders page
-Filter Bu cutomer name 'J. DOE'
+Filter by customer name 'J. DOE'
 Click on customer link on grid
 Check that 'View customer' page is displayed 
  */

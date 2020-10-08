@@ -20,9 +20,17 @@ Before we start, you should definitely read about our stack and architecture in 
 ## I. Writing the scenario
 
 The first step to writing your scenario is to identify exactly what you want to test, and limit the test's scope to that. For this example **we will be checking that the customer link in the Back Office "Orders" page redirects to the "view customer" page**.
-The second step involves a manual check of this very scenario to be sure it's working, and to write down all the steps needed, from start to finish.
 
-Now that we have the scenario, we can create a new javascript file and write our scenario using Mocha (see example below).
+The second step involves a manual check of this very scenario to be sure it's working, and to write down all the steps needed, from start to finish:
+
+- Log in to the Back Office
+- Go to the "Orders" page
+- Reset all filters
+- Filter orders by customer name
+- Click on customer link on grid
+- Check 'View customer' page is displayed
+ 
+Now, we have the scenario, we can create a new javascript file and write our scenario using Mocha (see example below).
 
 The directory in which we create our file should be chosen wisely (which campaign? BO or FO? Which page in BO? ...). This file organization is very important since Mocha lets you run test by folders (recursively or not), so grouping your tests by features or meta-features (pages) is a very good idea.
 
@@ -55,7 +63,7 @@ Note 3: It's a good practice to add more information about the scenario as a com
 Go to orders page
 Filter by customer name 'J. DOE'
 Click on customer link on grid
-Check that 'View customer' page is displayed 
+Check 'View customer' page is displayed 
  */
 ```
 

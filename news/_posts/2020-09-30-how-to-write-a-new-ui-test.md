@@ -31,7 +31,6 @@ The second step involves a manual check of this very scenario to be sure it's wo
 - Check 'View customer' page is displayed
  
 Now, we have the scenario, we can create a new javascript file and write our scenario using Mocha (see example below).
-
 The directory in which we create our file should be chosen wisely (which campaign? BO or FO? Which page in BO? ...). This file organization is very important since Mocha lets you run test by folders (recursively or not), so grouping your tests by features or meta-features (pages) is a very good idea.
 
 ```js

@@ -374,13 +374,13 @@ it('should check customer link', async function () {
 });
 ```
 
-Note1: The `baseContext` parameter should be declared in the beginning of the test. It's must be unique, and for that we used the test's file path.
+Note 1: The `baseContext` parameter should be declared in the beginning of the test. It's must be unique, and for that we used the test's file path.
 
 ```js
 const baseContext = 'functional_BO_orders_orders_viewCustomer';
 ```
 
-Note2: No need to add a step identifier to common steps, they already have one.
+Note 2: No need to add a step identifier to common steps, they already have one.
 
 ## VIII. Running ESLint
 

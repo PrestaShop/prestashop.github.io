@@ -318,7 +318,7 @@ But there's a chance that a method you need is not implemented yet. Here it's th
  * Click on customer link to open view page in a new tab
  * @param page
  * @param row
- * @return {Promise<*>}, new browser tab to work with
+ * @return {Promise<Page>}, The browser tab opened after the click
  */
 viewCustomer(page, row) {
   /**
@@ -326,7 +326,7 @@ viewCustomer(page, row) {
    * @param page, actual tab opened
    * @param selector, Element where to click
    * @param selectorToCheck, Element to wait for in the page
-   * @return {page}, new browser tab to work with
+   * @return {Promise<Page>}, The browser tab opened after the click
    */
   return this.openLinkWithTargetBlank(
     page,

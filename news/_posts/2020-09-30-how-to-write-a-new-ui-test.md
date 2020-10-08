@@ -311,7 +311,7 @@ For this scenario, we used mostly existing functions like *filterOrders()*. You 
   }
 ```
 
-But there's a chance that a method you need is not implemented yet. Here it's the case for the *viewCustomer()* function.
+But there's a chance that some methods you need is not implemented yet. Here it's the case for the *viewCustomer()* function.
  
 ```js
 /**

@@ -321,6 +321,13 @@ But there's a chance that a method you need is not implemented yet. Here it's th
  * @return {Promise<*>}, new browser tab to work with
  */
 viewCustomer(page, row) {
+  /**
+   * openLinkWithTargetBlank : function that open a link in a new tab
+   * @param page, actual tab opened
+   * @param selector, Element where to click
+   * @param selectorToCheck, Element to wait for in the page
+   * @return {page}, new browser tab to work with
+   */
   return this.openLinkWithTargetBlank(
     page,
     `${this.tableColumn(row, 'customer')} a`,

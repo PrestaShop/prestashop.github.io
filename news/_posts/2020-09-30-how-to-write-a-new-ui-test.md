@@ -330,9 +330,9 @@ viewCustomer(page, row) {
 }
 ```
 
-## VI. Running your scenario
+## VI. Testing the scenario
 
-Now that we finished writing our scenario, implementing missing functions... it's time to run our test! 
+Now, we finished writing the scenario and implementing missing functions... it's time to test it! 
 
 ```shell script
 TEST_PATH="functional/BO/02_orders/01_orders/08_viewCustomer" URL_FO=shopUrl/ npm run specific-test

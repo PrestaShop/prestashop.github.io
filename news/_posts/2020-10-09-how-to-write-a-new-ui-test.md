@@ -381,7 +381,7 @@ it('should check customer link', async function () {
 });
 ```
 
-Note 1: The `baseContext` parameter should be declared in the beginning of the test. It's must be unique, and for that we used the test's file path.
+Note 1: The `baseContext` parameter should be declared in the beginning of the test. It must be unique, and for that we used the test's file path.
 
 ```js
 const baseContext = 'functional_BO_orders_orders_viewCustomer';

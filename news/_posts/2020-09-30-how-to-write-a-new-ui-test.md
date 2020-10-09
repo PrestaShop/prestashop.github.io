@@ -24,7 +24,7 @@ The first step to writing your scenario is to identify exactly what you want to 
 The second step involves a manual check of this very scenario to be sure it's working, and to write down all the steps needed, from start to finish:
 
 - Log in to the Back Office
-- Go to the "Orders" page
+- Go to the 'Orders' page
 - Reset all filters
 - Filter orders by customer name
 - Click on customer link on grid
@@ -64,7 +64,7 @@ Check 'View customer' page is displayed
  */
 ```
 
-## II. Opening the browser tab
+## II. Opening/Closing the browser tab
 
 For each and every UI test, we need a browser. This framework includes a set of helper functions to abstract all of this: open a browser, create a new browser context and/or a new tab, etc.
 
@@ -78,7 +78,9 @@ const helper = require('@utils/helpers');
 
 Note: To find all the shortcuts you can use with module-alias, check the package.json file.
 
-Once we included the helper, we are able to create the [`before`](https://mochajs.org/#hooks) function inside our `describe`.
+Once we included the helper, we are able to create the [`Mocha hooks`](https://mochajs.org/#hooks) functions inside our `describe`.
+
+In the `before` and `after` functions, we only need to open/close the browser context, and the page (the browser tab) through the helper methods. We don't need to worry about opening the browser itself because it's handled by the [setup file](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#setup), which is a file executed by mocha before each run.
 
 ```js
 const helper = require('@utils/helpers');
@@ -99,6 +101,10 @@ describe('View customer form orders page', async function(){
     page = await helper.newTab(browserContext);
   });
 
+  after(async function () {
+    await helper.closeBrowserContext(browserContext);
+  });
+
   it('should login in BO');
 
   it('should go to orders page');
@@ -111,8 +117,6 @@ describe('View customer form orders page', async function(){
 
 });
 ```
-
-Note: In the `before` function, we only need to open the browser context and the page (the browser tab) through the `createBrowserContext()` method. We don't need to worry about opening the browser itself because it's handled by the [setup file](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#setup), which is a file executed by mocha before each run.
 
 ## III. Using common tests
 

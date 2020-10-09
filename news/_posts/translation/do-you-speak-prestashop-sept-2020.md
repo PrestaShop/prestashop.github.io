@@ -47,16 +47,16 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
  
 | |Translator | Language | # Words
 |-|---------- | -------- | ----------------
- 1. | Girdman.com (anargaragezov) | Azerbaijani | 12,291
- 2. | Daniele1970 | Esperanto & Italian | 10,266
- 3. | mirmal | Esperanto | 2,622
- 4. | A. L (roynsdx) | Arabic | 1,869
- 5. | jbonello | Maltese | 1,007
- 6. | PrestaServicePro | Azerbaijani | 467
- 7. | AmirRzd | Persian | 373
- 8. | Angela Anna (Annajeronima) | Mongolian | 201
- 9. | Tantely R. (rabtaray) | Malagasy | 191
-10. | WEB.Com.Az | Azerbaijani | 145
+| 1. | Girdman.com (anargaragezov) | Azerbaijani | 12,291
+| 2. | Daniele1970 | Esperanto & Italian | 10,266
+| 3. | mirmal | Esperanto | 2,622
+| 4. | A. L (roynsdx) | Arabic | 1,869
+| 5. | jbonello | Maltese | 1,007
+| 6. | PrestaServicePro | Azerbaijani | 467
+| 7. | AmirRzd | Persian | 373
+| 8. | Angela Anna (Annajeronima) | Mongolian | 201
+| 9. | Tantely R. (rabtaray) | Malagasy | 191
+| 10. | WEB.Com.Az | Azerbaijani | 145
  
  
 #### Top 10 proofreaders in September:
@@ -127,4 +127,3 @@ If you haven't joined us on Crowdin yet, [it's never too late](https://crowdin.c
 If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let me know: I'll include a word about it in the next monthly report.
  
 Do you have a question, a remark? Don't hesitate to leave a comment. See you next month! :raising_hand:
-

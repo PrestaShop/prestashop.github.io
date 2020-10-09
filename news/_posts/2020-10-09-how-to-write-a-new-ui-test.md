@@ -14,7 +14,7 @@ Since then, the tests coverage has been continually increasing, and we recently 
 
 In this article, we will explain how to create a new UI (User Interface) test for the [PrestaShop core project](https://github.com/PrestaShop/PrestaShop).
 
-Before we start, you should definitely read about the stack, and the architecture chosen for this project in the [PrestaShop devdoc](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/). 
+Before we start, you should definitely read about the stack, and the architecture chosen for this project in the [PrestaShop devdocs](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/). 
 
 
 ## I. Writing the scenario
@@ -30,8 +30,8 @@ The second step involves a manual check of this very scenario to be sure it's wo
 - Click on customer link on grid
 - Check 'View customer' page is displayed
  
-Now, we have the scenario, we can create a new javascript file and write our scenario using Mocha (see example below).
-The directory in which we create our file should be chosen wisely (which campaign? BO or FO? Which page in BO? ...). This file organization is very important since Mocha lets you run test by folders (recursively or not), so grouping your tests by features or meta-features (pages) is a very good idea.
+Now that we have the scenario, we can create a new javascript file and write our scenario using Mocha (see example below).
+The directory in which we create our file should be chosen wisely (Which campaign? BO or FO? Which page in BO? ...). This file organization is very important since Mocha lets you run test by folders (recursively or not), so grouping your tests by features or meta-features (pages) is a very good idea.
 
 ```js
 // 'describe' = scenario

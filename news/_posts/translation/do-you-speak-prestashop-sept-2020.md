@@ -63,16 +63,16 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
  
 | | Proofreader | Language | # Words
 |-| ---------- | -------- | ----------------
- 1. | Girdman.com (anargaragezov) | Azerbaijani | 14,654
- 2. | Daniele1970 | Esperanto & Italian | 6,661
- 3. | AmirRzd | Persian | 1,505
- 4. | Laimonas Mituzas (laimonas) | Lithuanian | 314
- 5. | webdvl (megashopba) | Czech, Slovak | 53
- 6. | Ronny (rbuelund) | Dannish | 49
- 7. | Rauno Riikman (weaver) | Finnish | 47
- 8. | Anouar Talidi (Anouar_Talidi) | Arabic | 43
- 9. | Marcin Orzechowski (Martinovy) | Polish | 6
- 10. | Stamatis (breezer) | Greek | 5
+| 1. | Girdman.com (anargaragezov) | Azerbaijani | 14,654
+| 2. | Daniele1970 | Esperanto & Italian | 6,661
+| 3. | AmirRzd | Persian | 1,505
+| 4. | Laimonas Mituzas (laimonas) | Lithuanian | 314
+| 5. | webdvl (megashopba) | Czech, Slovak | 53
+| 6. | Ronny (rbuelund) | Dannish | 49
+| 7. | Rauno Riikman (weaver) | Finnish | 47
+| 8. | Anouar Talidi (Anouar_Talidi) | Arabic | 43
+| 9. | Marcin Orzechowski (Martinovy) | Polish | 6
+| 10. | Stamatis (breezer) | Greek | 5
  
 Congrats, and welcome to our new top contributors! :clap:
  

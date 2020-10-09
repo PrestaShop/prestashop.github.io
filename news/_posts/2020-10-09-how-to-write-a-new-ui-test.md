@@ -76,7 +76,7 @@ require('module-alias/register');
 const helper = require('@utils/helpers');
 ```
 
-Note: To find all the shortcuts you can use with module-alias, check the package.json file.
+Note: To find all shortcuts you can use with module-alias, check the package.json file.
 
 Once we included the helper, we are able to create the [`Mocha hooks`](https://mochajs.org/#hooks) functions inside our `describe`.
 

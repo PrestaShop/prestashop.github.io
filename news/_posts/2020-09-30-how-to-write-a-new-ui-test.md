@@ -9,17 +9,17 @@ image: /assets/images/theme/meta-logo-build.png
 tags: [community, contribution, tests, automation]
 ---
 
-One year ago, the QA team started to develop a new test framework, based on [Puppeteer](https://github.com/puppeteer/puppeteer), [Mocha](https://mochajs.org/), and [Chai](https://www.chaijs.com/). You can read more about the framework in a previous [article](https://build.prestashop.com/news/the-new-prestashop-test-framework/).
-Since then, the tests coverage has been continually increasing and we recently improved our framework by switching to [Playwright](https://playwright.dev/).
+One year ago, the QA team started to develop a new test framework, based on [Puppeteer](https://github.com/puppeteer/puppeteer), [Mocha](https://mochajs.org/), and [Chai](https://www.chaijs.com/). You can read more about the framework in this previous article [The (new) PrestaShop Test Framework](https://build.prestashop.com/news/the-new-prestashop-test-framework/).
+Since then, the tests coverage has been continually increasing, and we recently improved our framework by switching to [Playwright](https://playwright.dev/).
 
 In this article, we will explain how to create a new UI (User Interface) test for the [PrestaShop core project](https://github.com/PrestaShop/PrestaShop).
 
-Before we start, you should definitely read about our stack and architecture in the [PrestaShop devdoc](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/). 
+Before we start, you should definitely read about the stack, and the architecture chosen for this project in the [PrestaShop devdoc](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/). 
 
 
 ## I. Writing the scenario
 
-The first step to writing your scenario is to identify exactly what you want to test, and limit the test's scope to that. For this example **we will be checking that the customer link in the Back Office "Orders" page redirects to the "view customer" page**.
+The first step to writing your scenario is to identify exactly what you want to test, and limit the test's scope to that. For this example **we will be checking that the customer link on "Orders" page (on the Back Office) redirects to the "view customer" page**.
 
 The second step involves a manual check of this very scenario to be sure it's working, and to write down all the steps needed, from start to finish:
 
@@ -53,7 +53,7 @@ describe('View customer form orders page', async function(){
 
 Note 1: You can create nested `describes` (scenarios inside scenarios) in the same file, if you need to regroup some tasks in a more readable way. Keep in mind that the generated report will follow your hierarchy!
 
-Note 2: It's a good practice to add more information about the scenario as a comment before the main `describe`, so anyone opening the file can see what the test exactly do.
+Note 2: It's a good practice to add more information about the scenario as a comment before the main `describe`, so anyone opening the file can see what the test exactly do (without reading all the file).
 
 ```js
 /*
@@ -128,6 +128,7 @@ First we need to require the file containing the steps we're interested in, stil
 // Require common test login
 const loginCommon = require('@commonTests/loginBO');
 ```
+
 `Login BO` (with the default admin account) is a part of these common tests, and we can use it in our new test like this:
 
 ```js
@@ -135,7 +136,7 @@ it('should login in BO', async function () {
   await loginCommon.loginBO(this, page);
 });
 ```
-Note: You can specify another user and password.
+Note: We can specify the user and password we log in with.
 
 ```js
 it('should login in BO', async function () {
@@ -211,7 +212,7 @@ it('should check customer link', async function () {
   );
 });
 ```
-Here we use differents **actions** methods, like `goToSubMenu()` in the dashboard page, or `resetAndGetNumberOfLines()` in the orders page.
+Here we use different **actions** methods, like `goToSubMenu()` in the dashboard page, or `resetAndGetNumberOfLines()` in the orders page.
 
 Note: To filter orders, the method uses the FO default account which is part of demo data stored in *data* directory. For this scenario, you need to require this file:
 
@@ -315,7 +316,7 @@ For this scenario, we used mostly existing functions like *filterOrders()*. You 
   }
 ```
 
-But there's a chance that some methods you need is not implemented yet. Here it's the case for the *viewCustomer()* function.
+But there's a chance that some functions you need is not implemented yet. It's the case here for the *viewCustomer()* function.
  
 ```js
 /**

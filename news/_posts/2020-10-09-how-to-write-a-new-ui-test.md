@@ -156,7 +156,7 @@ To find the exact locations of the pages to require, read [How to contribute and
 // Import pages
 const dashboardPage = require('@pages/BO/dashboard');
 const ordersPage = require('@pages/BO/orders');
-const viweCustomerPage = require('@pages/BO/customers/view');
+const viewCustomerPage = require('@pages/BO/customers/view');
 ```
 
 Note: If a page doesn't exist yet, you need to create it (in the right folder).
@@ -279,9 +279,9 @@ it('should check customer link', async function () {
 
   // Expected result
   // Verify that the current page is "view customer" by checking the title 'View information about J. DOE'
-  const pageTitle = await viweCustomerPage.getPageTitle(page);
+  const pageTitle = await viewCustomerPage.getPageTitle(page);
   await expect(pageTitle).to
-    .contains(`${viweCustomerPage.pageTitle} ${DefaultAccount.firstName[0]}. ${DefaultAccount.lastName}`);
+    .contains(`${viewCustomerPage.pageTitle} ${DefaultAccount.firstName[0]}. ${DefaultAccount.lastName}`);
 });
 ```
 
@@ -316,7 +316,7 @@ For this scenario, we used mostly existing functions like *filterOrders()*. You 
   }
 ```
 
-But there's a chance that some functions you need is not implemented yet. It's the case here for the *viewCustomer()* function.
+But there's a chance that some functions you need are not implemented yet. It's the case here for the *viewCustomer()* function.
  
 ```js
 /**
@@ -375,9 +375,9 @@ it('should check customer link', async function () {
   page = await ordersPage.viewCustomer(page, 1);
 
   // Verify that the current page is view customer by checking the title
-  const pageTitle = await viweCustomerPage.getPageTitle(page);
+  const pageTitle = await viewCustomerPage.getPageTitle(page);
   await expect(pageTitle).to
-    .contains(`${viweCustomerPage.pageTitle} ${DefaultAccount.firstName[0]}. ${DefaultAccount.lastName}`);
+    .contains(`${viewCustomerPage.pageTitle} ${DefaultAccount.firstName[0]}. ${DefaultAccount.lastName}`);
 });
 ```
 

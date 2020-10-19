@@ -52,8 +52,7 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 - [Following migration, $_GET identifier parameters are missing on "View {..} Page](https://github.com/PrestaShop/PrestaShop/issues/20934)
 - [Features page - an exception is displayed](https://github.com/PrestaShop/PrestaShop/issues/20777)
 - [Stats page - No module has been installed](https://github.com/PrestaShop/PrestaShop/issues/21186)
-- [An error is displayed when disabling or enabling maintenance
-](https://github.com/PrestaShop/PrestaShop/issues/21430)
+- [An error is displayed when disabling or enabling maintenance](https://github.com/PrestaShop/PrestaShop/issues/21430)
 - [Hook displayBackOfficeTop not being called on Login BO Page](https://github.com/PrestaShop/PrestaShop/issues/21379)
 
 

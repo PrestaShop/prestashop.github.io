@@ -20,10 +20,14 @@ We are really happy to announce that we are close to releasing 1.7.7.0, the rele
 
 This release candidate aims at making sure that all major regressions found during the beta have been fixed, and that no new ones have been spotted. If no new critical or major regression is reported by November 6th, we will make the final version of 1.7.7.0 available.
 
-Please note that it is not currently possible to perform an automatic upgrade from the Beta to the Release Candidate. Furthermore, it will not be possible to upgrade from this Release Candidate to the final release. If you perform an update of your test store to the RC version, you will need to rollback to your current version before being able to upgrade to the final 1.7.7.0.
+Please note that it is not currently possible to perform an automatic upgrade from the Beta to the Release Candidate. 
+
+Furthermore, it will not be possible to upgrade from this Release Candidate to the final release. If you perform an update of your test store to the RC version, you will need to rollback to your current version before being able to upgrade to the final 1.7.7.0.
 
 Please download, install and test this new version of PrestaShop and give us your feedback as early as possible. The later a problem is identified, the later it can be fixed and this delays the final output.
+
 If you find regressions compared to the 1.7.6 version, please open an issue and describe it on [Github](https://github.com/PrestaShop/PrestaShop/issues/new?template=1_bug_report.md) so that it can be reproduced and fixed as soon as possible.
+
 **Remember, this release candidate version is pre release software. Do not use it on your production shop!**
 
 

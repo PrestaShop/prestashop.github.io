@@ -2,7 +2,7 @@
 layout: post
 title:  "Automated UI tests tutorial"
 subtitle: "Step by step - Adding a new PrestaShop UI test"
-date:  2020-10-09 12:00:00
+date:  2020-10-21 12:00:00
 authors: [boubkerbribri]
 icon: icon-github-alt
 image: /assets/images/theme/meta-logo-build.png

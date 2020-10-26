@@ -46,6 +46,7 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 - [Missing gift wrapping and recycled paper options in create order page](https://github.com/PrestaShop/PrestaShop/issues/21300)
 - [In order detail page, when adding a discount amount with a different currency than the default one, an incorrect value is displayed and an incorrect amount is calculated](https://github.com/PrestaShop/PrestaShop/issues/21323)
 - [An exception is displayed when removing a discount with free gift from an order](https://github.com/PrestaShop/PrestaShop/issues/21438)
+- [Incorrect Product's total when adding a product with a discount gift or changing the Shipping](https://github.com/PrestaShop/PrestaShop/issues/21566)
 
 **Back Office:**
 - [Ranges are asked while they shouldn't during carrier edition](https://github.com/PrestaShop/PrestaShop/issues/20993)

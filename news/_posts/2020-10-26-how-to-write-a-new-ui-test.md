@@ -9,7 +9,7 @@ image: /assets/images/theme/meta-logo-build.png
 tags: [community, contribution, tests, automation]
 ---
 
-One year ago, the QA team started to develop a new test framework, based on [Puppeteer](https://github.com/puppeteer/puppeteer), [Mocha](https://mochajs.org/), and [Chai](https://www.chaijs.com/). You can read more about the framework in this previous article [The (new) PrestaShop Test Framework](https://build.prestashop.com/news/the-new-prestashop-test-framework/).
+One year ago, the QA team started to develop a new test framework, based on [Puppeteer](https://github.com/puppeteer/puppeteer), [Mocha](https://mochajs.org/), and [Chai](https://www.chaijs.com/). You can read more about the framework in this previous article: [The (new) PrestaShop Test Framework](https://build.prestashop.com/news/the-new-prestashop-test-framework/).
 Since then, the tests coverage has been continually increasing, and we recently improved our framework by switching to [Playwright](https://playwright.dev/).
 
 In this article, we will explain how to create a new UI (User Interface) test for the [PrestaShop core project](https://github.com/PrestaShop/PrestaShop).
@@ -24,11 +24,11 @@ The first step to writing your scenario is to identify exactly what you want to 
 The second step involves a manual check of this very scenario to be sure it's working, and to write down all the steps needed, from start to finish:
 
 - Log in to the Back Office
-- Go to the 'Orders' page
+- Go to the "Orders" page
 - Reset all filters
 - Filter orders by customer name
 - Click on customer link on grid
-- Check 'View customer' page is displayed
+- Check "View customer" page is displayed
  
 Now that we have the scenario, we can create a new javascript file and write our scenario using Mocha (see example below).
 The directory in which we create our file should be chosen wisely (Which campaign? BO or FO? Which page in BO? ...). This file organization is very important since Mocha lets you run test by folders (recursively or not), so grouping your tests by features or meta-features (pages) is a very good idea.
@@ -58,9 +58,9 @@ Note 2: It's a good practice to add more information about the scenario as a com
 ```js
 /*
 Go to orders page
-Filter by customer name 'J. DOE'
+Filter by customer name "J. DOE"
 Click on customer link on grid
-Check 'View customer' page is displayed 
+Check "View customer" page is displayed 
  */
 ```
 
@@ -90,9 +90,9 @@ let page;
 
 /*
 Go to orders page
-Filter by customer name 'J. DOE'
+Filter by customer name "J. DOE"
 Click on customer link on grid
-Check that 'View customer' page is displayed 
+Check that "View customer" page is displayed 
  */
 describe('View customer form orders page', async function(){
 
@@ -194,12 +194,12 @@ it('should reset all filters', async function () {
 
 it('should filter order by customer name', async function () {
   // Action
-  // Filter order by filling 'customer' input with 'DOE' (lastname of FO default account) 
+  // Filter order by filling "customer" input with "DOE" (lastname of FO default account) 
   await ordersPage.filterOrders(
     page, // Browser tab
     'input', // Filter type (input or select)
     'customer', // Filter column
-    DefaultAccount.lastName, // Filter value 'DOE'
+    DefaultAccount.lastName, // Filter value "DOE"
   );
 });
 
@@ -217,7 +217,7 @@ Here we use different **actions** methods, like `goToSubMenu()` in the dashboard
 Note: To filter orders, the method uses the FO default account which is part of demo data stored in *data* directory. For this scenario, you need to require this file:
 
 ```js
-// Import customer 'J. DOE'
+// Import customer "J. DOE"
 const {DefaultAccount} = require('@data/demo/customer');
 ```
 
@@ -246,7 +246,7 @@ it('should go to orders page', async function () {
   // Expected result
   // Verify that the current page is orders by checking the title
   const pageTitle = await ordersPage.getPageTitle(page);
-  await expect(pageTitle).to.contains(ordersPage.pageTitle); //we compare with the value stored in the page object
+  await expect(pageTitle).to.contains(ordersPage.pageTitle); // We compare with the value stored in the page object
 });
 
 it('should reset all filters', async function () {
@@ -287,7 +287,7 @@ it('should check customer link', async function () {
 
 ### Implementing a missing method
 
-For this scenario, we used mostly existing functions like *filterOrders()*. You can check for existing functions in the `pages` directory. 
+For this scenario, we used mostly existing functions like `filterOrders()`. You can check for existing functions in the `pages` directory. 
 
 ```js
   /**
@@ -311,12 +311,12 @@ For this scenario, we used mostly existing functions like *filterOrders()*. You 
       default:
       throw new Error(`${filterBy} was not found as a column filter.`);
     }
-    // click on search
+    // Click on search
     await this.clickAndWaitForNavigation(page, this.filterSearchButton);
   }
 ```
 
-But there's a chance that some functions you need are not implemented yet. It's the case here for the *viewCustomer()* function.
+But there's a chance that some functions you need are not implemented yet. It's the case here for the `viewCustomer()` function.
  
 ```js
 /**
@@ -391,7 +391,7 @@ Note 2: No need to add a step identifier to common steps, they already have one.
 
 ## VIII. Running ESLint
 
-ESLint is a tool currently used by the QA team that helps enforce code style rules in JavaScript files. To run it, use the command *npm run lint*. You may have to fix errors reported by this tool before submitting your UI test.
+ESLint is a tool currently used by the QA team that helps enforce code style rules in JavaScript files. To run it, use the command `npm run lint`. You may have to fix errors reported by this tool before submitting your UI test.
 
 ```shell script
 npm run lint-fix

@@ -341,7 +341,7 @@ viewCustomer(page, row) {
 }
 ```
 
-Note: The `openLinkWithTargetBlank` function is a generic function that can be used in all pages. You can found more generic functions on `pages/commonPage` file.
+Note: The `openLinkWithTargetBlank` function is a generic function that can be used in all pages. You can find more generic functions on `pages/commonPage` file.
 
 ## VI. Testing the scenario
 

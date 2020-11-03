@@ -57,7 +57,6 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 - [An error is displayed when disabling or enabling maintenance](https://github.com/PrestaShop/PrestaShop/issues/21430)
 - [Hook displayBackOfficeTop not being called on Login BO Page](https://github.com/PrestaShop/PrestaShop/issues/21379)
 
-
 **Front Office:**
 - [Wrong cart rules discount when using alternative currency](https://github.com/PrestaShop/PrestaShop/issues/20594)
 - [Incorrect total with Free gift + Percent discount cart rule](https://github.com/PrestaShop/PrestaShop/issues/20690)
@@ -73,6 +72,30 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 This brings us to more than 1300 merged pull requests for the 1.7.7.0 milestone, it is definitely our biggest yet.
 
 If you are looking for more details about all changes and new features expected in 1.7.7, the [1.7.7 beta version release note](https://build.prestashop.com/news/prestashop-1-7-7-0-beta-release/) is the perfect article for you to read!
+
+
+## Known issues
+
+**Order back-office**
+- [Incorrect Total's product line when Round type = "Round on each item"](https://github.com/PrestaShop/PrestaShop/issues/21708)
+- [An exception is displayed when changing the invoice address in the second time - Round mode = Round on each item](https://github.com/PrestaShop/PrestaShop/issues/21717)
+- [When we update a product quantity, the gift product is not added to the order](https://github.com/PrestaShop/PrestaShop/issues/21501)
+- [Updating a product with a specific discount (gift)](https://github.com/PrestaShop/PrestaShop/issues/21506)
+- [The gifted product quantity is not updated](https://github.com/PrestaShop/PrestaShop/issues/21592)
+- [Incorrect quantity added to product when it is added to the same order as a gift also](https://github.com/PrestaShop/PrestaShop/issues/21531)
+- [Recalculate shipping costs option enabled - the Shipping price not instantly updated](https://github.com/PrestaShop/PrestaShop/issues/21267)
+- [Payment block not refreshed after adding product](https://github.com/PrestaShop/PrestaShop/issues/21293)
+- [Ajax issue - The gift Product is not removed when removing a product ordered](https://github.com/PrestaShop/PrestaShop/issues/21500)
+- [Edit quantity and deletion in order in BO in Multishop context : Totals are not updated](https://github.com/PrestaShop/PrestaShop/issues/21706)
+- [Increment/decrement button doesn't work when we try to add a product out of stock < 0 (with allow order)](https://github.com/PrestaShop/PrestaShop/issues/21529)
+- [Voucher line is not added when a cart rule "Discount for a country selection" is applied](https://github.com/PrestaShop/PrestaShop/issues/21548)
+- [The Voucher "Free shipping " value is not updated when changing an address](https://github.com/PrestaShop/PrestaShop/issues/21549)
+
+**Back Office**
+- [Bad URL for module catalog page after disabling MBO](https://github.com/PrestaShop/PrestaShop/issues/21588)
+
+**Front Office**
+- [Exception in FO when trying to pay an order with 2 products from 2 differents shops](https://github.com/PrestaShop/PrestaShop/issues/21714)
 
 
 ## Download

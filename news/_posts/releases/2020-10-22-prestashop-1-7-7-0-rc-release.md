@@ -24,7 +24,7 @@ Please note that it is not currently possible to perform an automatic upgrade fr
 
 Furthermore, it will not be possible to upgrade from this Release Candidate to the final release. If you perform an update of your test store to the RC version, you will need to rollback to your current version before being able to upgrade to the final 1.7.7.0.
 
-Please download, install and test this new version of PrestaShop and give us your feedback as early as possible. The later a problem is identified, the later it can be fixed and this delays the final output.
+Please download, install and test this new version of PrestaShop and give us your feedback as early as possible. The later a problem is identified, the more time it takes to be fixed, and this delays the final release.
 
 If you find regressions compared to the 1.7.6 version, please open an issue and describe it on [Github](https://github.com/PrestaShop/PrestaShop/issues/new?template=1_bug_report.md) so that it can be reproduced and fixed as soon as possible.
 

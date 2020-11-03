@@ -4,7 +4,7 @@ title:  "PrestaShop 1.7.7.0 RC1 Is Ready To Be Tested!"
 subtitle: "A month after the beta, here it is: the first release candidate for PrestaShop 1.7.7.0 is now ready for you to test!"
 date:   2020-11-03 15:00:00
 authors: [ PrestaShop ]
-image: /assets/images/2020/10/build-177RC1.png
+image: /assets/images/2020/11/build-177RC1.png
 icon: icon-leaf
 tags:
  - 1.7.7
@@ -16,7 +16,7 @@ tags:
 
 We are really happy to announce that we are close to releasing 1.7.7.0, the release candidate is the last step before releasing the final version. 
 
-![1.7.7.0 RC1 is available!](/assets/images/2020/10/build-177RC1.png)
+![1.7.7.0 RC1 is available!](/assets/images/2020/11/build-177RC1.png)
 
 This release candidate aims at making sure that all major regressions found during the beta have been fixed, and that no new ones have been spotted. If no new critical or major regression is reported by November 17th, we will make the final version of 1.7.7.0 available.
 
@@ -73,6 +73,20 @@ This brings us to more than 1400 merged pull requests for the 1.7.7.0 milestone,
 
 If you are looking for more details about all changes and new features expected in 1.7.7, the [1.7.7 beta version release note](https://build.prestashop.com/news/prestashop-1-7-7-0-beta-release/) is the perfect article for you to read!
 
+## Automated Tests
+
+The 1.7.7 version is by far the most tested version ever released by PrestaShop, this ensures its stability and prevents future regressions that could be created by future developments.
+Here are a bit of numbers about the PrestaShop tests (and the difference with previous version 1.7.6):
+
+- UI Puppeteer (sanity + functional): 4307 (whole new campaigns)
+- Integration:
+  - PHPUnit 55 tests (+3)
+  - Behat 518 scenarios, 8838 steps (+297 scenarios, +6133 steps)
+- Unit: 1998 tests (+31)
+
+The UI tests, especially, have been completely redesigned. If you want more information about this please read these two articles:
+- [The (New) PrestaShop Test Framework](https://build.prestashop.com/news/the-new-prestashop-test-framework/)
+- [Automated UI Tests Tutorial](https://build.prestashop.com/news/how-to-write-a-new-ui-test/)
 
 ## Known issues
 

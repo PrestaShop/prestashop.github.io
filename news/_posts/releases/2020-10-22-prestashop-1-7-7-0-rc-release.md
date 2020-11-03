@@ -31,7 +31,7 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 **Remember, this release candidate version is pre release software. Do not use it on your production shop!**
 
 
-## Notable changes
+## Notable changes since the Beta 2 release
 
 **Order back-office**
 - [Fixed the impossibility to create an order when customer’s cart/order history is empty](https://github.com/PrestaShop/PrestaShop/issues/20643)

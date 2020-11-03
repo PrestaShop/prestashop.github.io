@@ -14,7 +14,7 @@ tags:
  - releases
 ---
 
-We are really happy to announce that we are close to release 1.7.7.0, the release candidate is the last step before releasing the final version. 
+We are really happy to announce that we are very close to finishing the 1.7.7.0 release, the release candidate is the last step before the final version is out. 
 
 ![1.7.7.0 RC1 is available!](/assets/images/2020/11/build-177RC1.png)
 

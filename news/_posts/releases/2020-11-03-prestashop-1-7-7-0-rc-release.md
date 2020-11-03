@@ -14,7 +14,7 @@ tags:
  - releases
 ---
 
-We are really happy to announce that we are close to releasing 1.7.7.0, the release candidate is the last step before releasing the final version. 
+We are really happy to announce that we are close to release 1.7.7.0, the release candidate is the last step before releasing the final version. 
 
 ![1.7.7.0 RC1 is available!](/assets/images/2020/11/build-177RC1.png)
 
@@ -76,12 +76,11 @@ If you are looking for more details about all changes and new features expected 
 ## Automated Tests
 
 The 1.7.7 version is by far the most tested version ever released by PrestaShop, this ensures its stability and prevents future regressions that could be created by future developments.
-Here are a bit of numbers about the PrestaShop tests (and the difference with previous version 1.7.6):
+Here are some numbers about PrestaShop's automatic tests (and the difference with our previous minor release, 1.7.6):
 
-- UI Puppeteer (sanity + functional): 4307 (whole new campaigns)
-- Integration:
-  - PHPUnit 55 tests (+3)
-  - Behat 518 scenarios, 8838 steps (+297 scenarios, +6133 steps)
+- UI tests (sanity + functional): 4307 (whole new campaigns)
+- Integration: 55 tests (+3)
+- Behavior: 518 scenarios, 8838 steps (+297 scenarios, +6133 steps)
 - Unit: 1998 tests (+31)
 
 The UI tests, especially, have been completely redesigned. If you want more information about this please read these two articles:
@@ -89,6 +88,8 @@ The UI tests, especially, have been completely redesigned. If you want more info
 - [Automated UI Tests Tutorial](https://build.prestashop.com/news/how-to-write-a-new-ui-test/)
 
 ## Known issues
+
+The following issues are not considered edge cases and won't block the release of a stable version. They will be fixed in the next patch version.
 
 **Order back-office**
 - [Incorrect Total's product line when Round type = "Round on each item"](https://github.com/PrestaShop/PrestaShop/issues/21708)

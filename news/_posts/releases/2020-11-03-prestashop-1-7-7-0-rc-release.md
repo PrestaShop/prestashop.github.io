@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PrestaShop 1.7.7.0 RC1 Is Ready To Be Tested!"
-subtitle: "A month after the beta, here it is: the first release candidate for PrestaShop 1.7.7.0 is now ready for you to test!"
+subtitle: "Two months after the beta, here it is: the first release candidate for PrestaShop 1.7.7.0 is now ready for you to test!"
 date:   2020-11-03 15:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2020/11/build-177RC1.png

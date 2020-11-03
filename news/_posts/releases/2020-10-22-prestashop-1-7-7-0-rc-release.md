@@ -63,6 +63,10 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 - [Incorrect total with Free gift + Percent discount cart rule](https://github.com/PrestaShop/PrestaShop/issues/20690)
 - [When we have two currencies enabled - the Currency block and the language block are not working anymore](https://github.com/PrestaShop/PrestaShop/issues/20950)
 
+**For developers**
+- [Make PrestaShop compatible with composer 2.0](https://github.com/PrestaShop/PrestaShop/pull/21609)
+- [Update behat and gerkhin to allow debugging in PHPStorm](https://github.com/PrestaShop/PrestaShop/pull/21532)
+
 ## Changelog
 
 151 pull requests have been merged since the beta 2 release and 40+ issues have been fixed. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases) for details. 

@@ -69,7 +69,7 @@ If you find regressions compared to the 1.7.6 version, please open an issue and 
 ## Changelog
 
 151 pull requests have been merged since the beta 2 release and 30+ issues have been fixed. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases) for details. 
-This brings us to more than 1300 merged pull requests for the 1.7.7.0 milestone, it is definitely our biggest yet.
+This brings us to more than 1400 merged pull requests for the 1.7.7.0 milestone, it is definitely our biggest yet.
 
 If you are looking for more details about all changes and new features expected in 1.7.7, the [1.7.7 beta version release note](https://build.prestashop.com/news/prestashop-1-7-7-0-beta-release/) is the perfect article for you to read!
 

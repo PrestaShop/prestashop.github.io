@@ -18,7 +18,7 @@ We are really happy to announce that we are close to releasing 1.7.7.0, the rele
 
 ![1.7.7.0 RC1 is available!](/assets/images/2020/10/build-177RC1.png)
 
-This release candidate aims at making sure that all major regressions found during the beta have been fixed, and that no new ones have been spotted. If no new critical or major regression is reported by November 6th, we will make the final version of 1.7.7.0 available.
+This release candidate aims at making sure that all major regressions found during the beta have been fixed, and that no new ones have been spotted. If no new critical or major regression is reported by November 17th, we will make the final version of 1.7.7.0 available.
 
 Please note that it is not currently possible to perform an automatic upgrade from the Beta to the Release Candidate. 
 

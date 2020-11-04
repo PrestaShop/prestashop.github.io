@@ -10,7 +10,7 @@ tags: [translation, i18n, l10n]
 ---
 
 Contributing to PrestaShop is not only about the code, it's also about taking part in the [PrestaShop translation project](https://crowdin.com/project/prestashop-official)! 
-This report will tell you how the translations of the software evolved in October!
+This report will tell you how the translations of the software evolved in October.
 
 [Crowdin Monthly banner](/assets/images/2019/01/Build-Crowdin-banner.jpg)
 
@@ -133,4 +133,3 @@ If you haven't joined us on Crowdin yet, [it's never too late](https://crowdin.c
 If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let me know: I'll include a word about it in the next monthly report.
  
 Do you have a question, a remark? Don't hesitate to leave a comment. See you next month! :raising_hand:
-

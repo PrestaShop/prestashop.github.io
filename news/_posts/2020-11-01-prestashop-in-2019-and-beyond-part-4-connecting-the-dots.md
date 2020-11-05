@@ -37,7 +37,7 @@ PrestaShop is a very complex system. As such, it needs to enforce a very high nu
 
 For example, when an order's carrier is updated, an email should be sent to the customer informing them that the order is on its way. This is done automatically when the action is performed using the appropriate service. However, if the order's carrier is modified manually through ObjectModel, for example by a module developer not aware of this rule, then the required email is not sent.
 
-This problem of thick service layers manipulating thin models devoid of domain logic was identified over 15 years ago by Martin Fowler, who described it the [Anemic Domain Model][anemic-domain-model] anti-pattern. His answer was simple: domain logic should be put in the entities.
+This problem of thick service layers manipulating thin models devoid of domain logic was identified over 15 years ago by Martin Fowler, who described it the [Anemic Domain Model][anemic-domain-model] anti-pattern. His answer was simple: domain logic should be put in the [entities][ddd-entities].
 
 This means that **there should be one single, obvious way to perform any given system action**. If there is only one possible way to update an order's carrier, and if this is done in an intuitive way through the Order entity, then we can ensure that all business rules are being enforced regardless of where this task is initiated.
 
@@ -165,6 +165,7 @@ As you can see in the schema above, this architecture is made out of four main l
 [part-3]: /news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/
 [things-you-should-never-do]: https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
 [anemic-domain-model]: https://www.martinfowler.com/bliki/AnemicDomainModel.html
+[ddd-entities]: https://martinfowler.com/bliki/EvansClassification.html
 [double-bind-dilemma]: https://en.wikipedia.org/wiki/Double_bind
 [solid]: https://en.wikipedia.org/wiki/SOLID
 [dependency-inversion-principle]: https://en.wikipedia.org/wiki/Dependency_inversion_principle

@@ -60,3 +60,8 @@ howtos:
   icon: fa-retweet-1
 - translation:
   icon: fa-globe
+
+# Required to use local jekyll server with Chrome
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"

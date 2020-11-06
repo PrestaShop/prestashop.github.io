@@ -95,7 +95,7 @@ This is less than in September, but this is not surprising as new translations h
  
 ## Languages with the best evolution
  
-In comparison with October 2020, the following languages had the best progress thanks to the translation community:
+In comparison with September 2020, the following languages had the best progress thanks to the translation community:
  
 * **Azerbaijani** (+9% to reach 37% translated)
 * **French, Belgium** (+8% to reach 8% translated)

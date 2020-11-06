@@ -2,7 +2,7 @@
 layout: post
 title:  "Do you speak PrestaShop? – October 2020 edition"
 subtitle: "Where you'll learn that the last 1.7.7 translations are available"
-date:  2020-11-06 12:00:00
+date:  2020-11-06 15:00:00
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

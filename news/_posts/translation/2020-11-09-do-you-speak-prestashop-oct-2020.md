@@ -88,7 +88,7 @@ Remember, you can see who's been contributing to our translation project thanks 
  
 At the end of October 2020, PrestaShop 1.7.7 was fully available (= 100% translated and validated) in **6 languages**:
  
-| Czech | English | Spanish | Portuguese, Brazil |
+| **Czech** | **English** | Spanish | Portuguese, Brazil |
 | Slovak | Swedish | 
 
 This is less than in September, but this is not surprising as new translations have been added this month.

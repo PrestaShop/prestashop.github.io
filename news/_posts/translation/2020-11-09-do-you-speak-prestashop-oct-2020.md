@@ -99,7 +99,7 @@ In comparison with October 2020, the following languages had the best progress t
  
 * **Azerbaijani** (+9% to reach 37% translated)
 * **French, Belgium** (+8% to reach 8% translated)
-* **English** (+5% to reach 100% translated)
+* **Esperanto** (+2% to reach 59% translated)
  
 ![Best translation progress for October 2020](/assets/images/2020/11/build-crowdin-progress-oct20.png)
 

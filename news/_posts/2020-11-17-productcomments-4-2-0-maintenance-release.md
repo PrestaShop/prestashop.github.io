@@ -4,7 +4,6 @@ title:  "Release Of Module ProductComments 4.2.0"
 subtitle: "Maintenance version of the ProductComments module"
 date:   2020-11-17
 authors: [ PrestaShop ]
-image: /assets/images/2020/11/1769_meta.jpg
 icon: icon-checked
 
 tags:

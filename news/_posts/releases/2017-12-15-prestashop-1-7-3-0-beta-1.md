@@ -7,7 +7,7 @@ authors: [ LouiseBonnard ]
 icon: icon-gift
 tags:
 - 1.7
-- 1.7.3.0
+- 1.7.3.x
 - version
 - beta
 - releases

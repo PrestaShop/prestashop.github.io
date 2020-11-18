@@ -7,7 +7,7 @@ authors: [ PrestaShop ]
 image: /assets/images/2020/05/1.7.7_beta_banner.jpg
 icon: icon-leaf
 tags:
- - 1.7.7
+ - 1.7.7.x
  - version
  - beta
  - minor

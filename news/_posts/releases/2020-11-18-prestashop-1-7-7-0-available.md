@@ -32,7 +32,7 @@ The redesign of the user interface allows merchants to find the right informatio
 
 PrestaShop is an international solution and we aim at providing highly global features for worldwide users. 
 
-The **[international improvements]**(https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) remove barriers to going international and help to reach more customers.
+The **[international improvements]**(https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) remove barriers to go international and help merchants reach more customers.
 
 **[The fuzzy search]**(https://build.prestashop.com/news/introduction-to-the-fuzzy-search/) improve both the user experience and the conversion rate with a new
  search mechanism that takes misspelling or error inputs into account.

@@ -36,6 +36,8 @@ The **[international improvements]**(https://build.prestashop.com/news/prestasho
 
 **[The fuzzy search]**(https://build.prestashop.com/news/introduction-to-the-fuzzy-search/) improve both the user experience and the conversion rate with a new search algorithm that takes misspellings or error inputs into account.
 
+In order to allow merchants to have all the currencies they need to meet the expectations of every customer, they can now **add new official and non official currencies** (e.g. local or custom) to their store and customize their display per language as desired.
+
 ### Robustness
 
 We kept improving internal architecture and technology with the Symfony migration. 15 new pages have been migrated (including the order pages), completing almost 55% of the back office migration.

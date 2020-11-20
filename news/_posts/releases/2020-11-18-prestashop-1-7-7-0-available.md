@@ -26,7 +26,7 @@ This release is our biggest yet since 1.7.1.0. More than one year of development
 
 The **[full redesign and the new features of order pages]**(https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1-7-7/) help merchants to make a better use of their time and to stay focus on their online business. 
 
-The redesign of the user interface allow merchants to find the right information quickly. While the new features allow a better efficiency on daily tasks and avoid back and forth between pages. 
+The redesign of the user interface allows merchants to find the right information quickly while the new features allow a better efficiency on daily tasks and avoid back and forth between pages. 
 
 ### Growth and flexibility
 
@@ -119,4 +119,3 @@ These regressions should be fixed in the next patch versions
 PrestaShop is above all a community project: from the XX committers who contributed to this release, XX are new contributors. The vast majority of PrestaShop contributors are not directly affiliated with the PrestaShop company.
 A huge thanks to everyone involved in this version!
 Thank you again for helping improve the lives of more than 300,000 online merchants with ideas, improvements, and fixes!
-

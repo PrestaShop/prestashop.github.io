@@ -38,7 +38,7 @@ The **[international improvements]**(https://build.prestashop.com/news/prestasho
 
 ### Robustness
 
-We kept improving internal architecture and technology with the symfony migration. 15 new pages has been migrated to Symfony (including the order pages), resulting in reaching almost 55% of the Back office migration.
+We kept improving internal architecture and technology with the Symfony migration. 15 new pages have been migrated (including the order pages), completing almost 55% of the back office migration.
 
 More than 160 bugs have been fixed for the 1.7.7.0 (vs 110 for the 1.7.6.0), including 11 highly expected bug fixes, 5 front-office notable fixes and 5 back-office notable fixes.
 

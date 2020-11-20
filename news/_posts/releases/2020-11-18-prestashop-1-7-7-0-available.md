@@ -20,23 +20,28 @@ We are happy to announce PrestaShop 1.7.7.0 is officially available!
 
 This release is our biggest yet since 1.7.1.0. More than one year of development, two betas, one release candidate Was it worth it? We absolutely think so, and hope that you will enjoy using it.
 
-## New features & improvements in 1.7.7.0
+## News in the 1.7.7.0
 
-### The new order pages
+### Productivity
 
-In this version we focused on improving productivity with the [full redesign and new features of order pages](https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1-7-7/)
+The **[full redesign and the new features of order pages]**(https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1-7-7/) help merchants to make a better use of their time and to stay focus on their online business. 
 
-### International improvements
+The redesign of the user interface allow merchants to find the right information quickly. While the new features allow a better efficiency on daily tasks and avoid back and forth between pages. 
 
-PrestaShop is an international solution. We aim at providing highly global features for worldwide users, this is why growth and flexibility were improved with some [international improvements](https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) 
+### Growth and flexibility
 
-### Fuzzy Search
+PrestaShop is an international solution and we aim at providing highly global features for worldwide users. 
 
-[The fuzzy search](https://build.prestashop.com/news/introduction-to-the-fuzzy-search/) improve both the user experience and the conversion rate on your site
+The **[international improvements]**(https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) remove barriers to going international and help to reach more customers.
+
+**[The fuzzy search]**(https://build.prestashop.com/news/introduction-to-the-fuzzy-search/) improve both the user experience and the conversion rate with a new
+ search mechanism that takes misspelling or error inputs into account.
 
 ### Robustness
 
-We kept working on robustness with the symfony migration and bug fixes as well.
+We kept improving internal architecture and technology with the symfony migration. 15 new pages has been migrated to Symfony (including the order pages), resulting in reaching almost 55% of the Back office migration.
+
+More than 160 bugs have been fixed for the 1.7.7.0 (vs 110 for the 1.7.6.0), including 11 highly expected bug fixes, 5 front-office notable fixes and 5 back-office notable fixes.
 
 ## Download
 

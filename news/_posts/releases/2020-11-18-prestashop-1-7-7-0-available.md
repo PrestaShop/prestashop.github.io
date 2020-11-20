@@ -24,6 +24,15 @@ This release is our biggest yet since 1.7.1.0. More than one year of development
 
 In this version we focused on improving productivity with the [full redesign and new features of order pages](https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1-7-7/), improving growth and flexibility with [the international improvements](https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) and [the fuzzy search](https://build.prestashop.com/news/introduction-to-the-fuzzy-search/) and kept working on robustness with the symfony migration and bug fixes as well.
 
+## Download
+
+You can download PrestaShop 1.7.7.0 here:
+
+[Download PrestaShop 1.7.7.0 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
+{: .text-center}
+ 
+PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module. 
+
 
 ## Notable changes since the RC1
 
@@ -84,15 +93,6 @@ These regressions should be fixed in the next patch versions
 **Back-office**
 - [Adding incorrect language causes exception in Edit Currency page](https://github.com/PrestaShop/PrestaShop/issues/21891)
 - [Bad URL for module catalog page after disabling MBO](https://github.com/PrestaShop/PrestaShop/issues/21588)
-
-## Download
-
-You can download PrestaShop 1.7.7.0 here:
-
-[Download PrestaShop 1.7.7.0 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
-{: .text-center}
- 
-PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module. 
 
 
 ## Acknowledgments

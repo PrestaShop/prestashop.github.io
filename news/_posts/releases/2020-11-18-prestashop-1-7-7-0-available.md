@@ -52,7 +52,7 @@ If you are looking for more details about all changes and new features expected 
 
 ## Known issues
 
-These regressions should be fixed in 1.7.7.1
+These regressions should be fixed in the next patch versions
 
 **Order back-office**
 - [An exception is displayed when changing the invoice address a  second time - Round mode = Round on each item](https://github.com/PrestaShop/PrestaShop/issues/21717)
@@ -66,7 +66,6 @@ These regressions should be fixed in 1.7.7.1
 - [While creating an order, all languages are displayed in the drop-down instead of only languages associated to the shop selected](https://github.com/PrestaShop/PrestaShop/issues/21817)
 - [When adding a product with an associated gift, the gifted product quantity is not updated](https://github.com/PrestaShop/PrestaShop/issues/21592)
 - [The gifted product is not removed when removing a product ordered](https://github.com/PrestaShop/PrestaShop/issues/21500)
-- [Edit quantity and deletion in order in BO in Multishop context : Totals are not updated](https://github.com/PrestaShop/PrestaShop/issues/21706)
 - [The Voucher "Free shipping " value is not updated when changing an address](https://github.com/PrestaShop/PrestaShop/issues/21549)
 - [Vouchers block - Voucher line is not added when a cart rule "Discount for a country selection" is applied](https://github.com/PrestaShop/PrestaShop/issues/21548)
 - [Product quantity no updated if a discount with free gift is applied](https://github.com/PrestaShop/PrestaShop/issues/21506)
@@ -74,6 +73,8 @@ These regressions should be fixed in 1.7.7.1
 - [Payment block not refreshed after adding product](https://github.com/PrestaShop/PrestaShop/issues/21293)
 - [Incorrect quantity added to product when it is added to the same order as a gift also](https://github.com/PrestaShop/PrestaShop/issues/21531)
 - [Incorrect Total's product line when Round type = "Round on each item"](https://github.com/PrestaShop/PrestaShop/issues/21708)
+- [When we try to return products in all shops context, an exception is displayed](https://github.com/PrestaShop/PrestaShop/issues/21990)
+- [An alert "Error! There are not enough products in stock." is displayed when updating the product quantity in "all shops" context](https://github.com/PrestaShop/PrestaShop/issues/21987)
 
 **Front-office**
 - [Pack of products - Incorrect image displayed for products with combinations](https://github.com/PrestaShop/PrestaShop/issues/21875)
@@ -81,9 +82,6 @@ These regressions should be fixed in 1.7.7.1
 **Back-office**
 - [Adding incorrect language causes exception in Edit Currency page](https://github.com/PrestaShop/PrestaShop/issues/21891)
 - [Bad URL for module catalog page after disabling MBO](https://github.com/PrestaShop/PrestaShop/issues/21588)
-
-**Core**
-- [Mail translation change the product table location in html template](https://github.com/PrestaShop/PrestaShop/issues/21630)
 
 ## Download
 

@@ -33,6 +33,8 @@ In this version we focused on improving productivity with the [full redesign and
 - [When all the products in an order are deleted, the status is changed to canceled.](https://github.com/PrestaShop/PrestaShop/issues/22010)
 - [When deleting all products - the total invoice is wrong](https://github.com/PrestaShop/PrestaShop/issues/21991)
 - [When we have a product added to the order as a gift (a voucher applied) and as a product ordered, the quantity added to the same product is wrong](https://github.com/PrestaShop/PrestaShop/issues/21531)
+- [When product is added in an empty order, the tax block in the invoice is wrong: It only contains the Shipping tax and not the Product tax](https://github.com/PrestaShop/PrestaShop/issues/22008)
+- [An error is displayed when decreasing the gifted product quantity "Could not find the product in cart, meaning Order and Cart are out of sync"](https://github.com/PrestaShop/PrestaShop/issues/22004)
 
 **Front-office**
 - [Logo, favicon and stores icons are not displayed](https://github.com/PrestaShop/PrestaShop/issues/21979)

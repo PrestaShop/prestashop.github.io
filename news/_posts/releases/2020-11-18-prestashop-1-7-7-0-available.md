@@ -87,7 +87,6 @@ These regressions should be fixed in the next patch versions
 **Order back-office**
 - [An exception is displayed when changing the invoice address a  second time - Round mode = Round on each item](https://github.com/PrestaShop/PrestaShop/issues/21717)
 - [When stock management is disabled, the available quantity in order detail is displayed](https://github.com/PrestaShop/PrestaShop/issues/21767)
-- [The canceled status is repeated twice](https://github.com/PrestaShop/PrestaShop/issues/21902)
 - [While creating an order, the minimum quantity of a combination is not correct](https://github.com/PrestaShop/PrestaShop/issues/21873)
 - [Special characters not correctly displayed in private note](https://github.com/PrestaShop/PrestaShop/issues/21829)
 - [When updating the quantity of a product using the "up/down arrow" with consecutive hits on the same input, it's not acknowledged correctly](https://github.com/PrestaShop/PrestaShop/issues/21734)

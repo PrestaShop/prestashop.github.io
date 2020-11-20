@@ -22,7 +22,21 @@ This release is our biggest yet since 1.7.1.0. More than one year of development
 
 ## New features & improvements in 1.7.7.0
 
-In this version we focused on improving productivity with the [full redesign and new features of order pages](https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1-7-7/), improving growth and flexibility with [the international improvements](https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) and [the fuzzy search](https://build.prestashop.com/news/introduction-to-the-fuzzy-search/) and kept working on robustness with the symfony migration and bug fixes as well.
+### The new order pages
+
+In this version we focused on improving productivity with the [full redesign and new features of order pages](https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1-7-7/)
+
+### International improvements
+
+PrestaShop is an international solution. We aim at providing highly global features for worldwide users, this is why growth and flexibility were improved with some [international improvements](https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) 
+
+### Fuzzy Search
+
+[The fuzzy search](https://build.prestashop.com/news/introduction-to-the-fuzzy-search/) improve both the user experience and the conversion rate on your site
+
+### Robustness
+
+We kept working on robustness with the symfony migration and bug fixes as well.
 
 ## Download
 

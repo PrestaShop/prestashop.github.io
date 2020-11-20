@@ -64,6 +64,7 @@ PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module.
 - [When we have a product added to the order as a gift (a voucher applied) and as a product ordered, the quantity added to the same product is wrong](https://github.com/PrestaShop/PrestaShop/issues/21531)
 - [When product is added in an empty order, the tax block in the invoice is wrong: It only contains the Shipping tax and not the Product tax](https://github.com/PrestaShop/PrestaShop/issues/22008)
 - [An error is displayed when decreasing the gifted product quantity "Could not find the product in cart, meaning Order and Cart are out of sync"](https://github.com/PrestaShop/PrestaShop/issues/22004)
+- [When adding a product which has an ecotax to an old order, the base price is NOK](https://github.com/PrestaShop/PrestaShop/issues/22029)
 
 **Front-office**
 - [Logo, favicon and stores icons are not displayed](https://github.com/PrestaShop/PrestaShop/issues/21979)

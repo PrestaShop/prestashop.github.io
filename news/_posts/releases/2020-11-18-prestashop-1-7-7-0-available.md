@@ -18,7 +18,7 @@ We are happy to announce PrestaShop 1.7.7.0 is officially available!
 
 ![1.7.7.0 is available!](/assets/images/2020/11/build_and_mail_final.jpg)
 
-This release is our biggest yet since 1.7.1.0. More than one year of development, two betas, one release candidate Was it worth it? We absolutely think so, and hope that you will enjoy using it.
+This release is our biggest yet since 1.7.1.0. More than one year of development, two betas, one release candidate. Was it worth it? We absolutely think so and hope that you will enjoy using it.
 
 ## News in the 1.7.7.0
 

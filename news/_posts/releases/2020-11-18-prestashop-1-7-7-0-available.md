@@ -24,6 +24,8 @@ This release is our biggest yet since 1.7.1.0. More than one year of development
 
 ### Productivity
 
+![order pages](/assets/images/2020/11/order.jpg)
+
 The **[full redesign and the new features of order pages]**(https://build.prestashop.com/news/the-new-order-pages-in-prestaShop-1-7-7/) help merchants to make a better use of their time and to stay focus on their online business. 
 
 The redesign of the user interface allows merchants to find the right information quickly while the new features allow a better efficiency on daily tasks and avoid back and forth between pages. 
@@ -34,11 +36,17 @@ PrestaShop is an international solution and we aim at providing highly global fe
 
 The **[international improvements]**(https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) remove barriers to go international and help merchants reach more customers.
 
+![fuzzy search](/assets/images/2020/11/fuzzy_search.jpg)
+
 **[The fuzzy search]**(https://build.prestashop.com/news/introduction-to-the-fuzzy-search/) improve both the user experience and the conversion rate with a new search algorithm that takes misspellings or error inputs into account.
+
+![currencies](/assets/images/2020/11/currencies.png)
 
 In order to allow merchants to have all the currencies they need to meet the expectations of every customer, they can now **add new official and non official currencies** (e.g. local or custom) to their store and customize their display per language as desired.
 
 ### Robustness
+
+![migration](/assets/images/2020/11/migration.png)
 
 We kept improving internal architecture and technology with the Symfony migration. 15 new pages have been migrated (including the order pages), completing almost 55% of the back office migration.
 

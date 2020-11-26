@@ -248,7 +248,7 @@ Once the Front-end SDK has been designed, it will be possible to move the Back O
 
 ## Final notes
 
-We don't yet know the exact order in which these ideas will be implemented, or for that matter, if all of them will be done precisely as I envision them today, or done at all. However, the intent of this series of articles isn't just to communicate "this is what we are going to do", and be done with it. These articles are a way put our analysis and our vision into words and share them with the community. They are meant to trigger a discussion so that we can find the best possible path to a common objective, a desirable future that we can look forward to building together: **making PrestaShop the best open source e-commerce platform there is.**
+We don't yet know the exact order in which these ideas will be implemented, or for that matter, if all of them will be done precisely as I envision them today, or done at all. However, the intent of this series of articles isn't just to communicate "this is what we are going to do", and be done with it. These articles are a way put our analysis and our vision into words and share them with the community. They are meant to trigger a discussion so that we can find the best possible path to a common objective, a desirable future that we can look forward to building together: **making PrestaShop the best open source e-commerce platform there is**.
 
 In this article, I have shared some ideas on how we can move PrestaShop towards the Future Architecture, a very long path that will take a tremendous amount of hard work. In my view, if we want it to see it through in a realistic timeframe, the best way is through **smaller, more frequent releases**.
 

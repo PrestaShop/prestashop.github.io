@@ -75,7 +75,7 @@ The answer is to **progressively isolate the Core, then refactor it**.
 
 ## Isolate the Core behind the Core API
 
-The Core API acts as an [anti-corruption layer][anti-corruption-layer], or bridge, between the application code (Controllers, Services, Extensions...) and Core components. Whenever an application level component needs something from the Core, it access it through the Core API. 
+The Core API acts as an [anti-corruption layer][anti-corruption-layer], or bridge, between the application code (Controllers, Services, Extensions...) and Core components. Whenever an application level component needs something from the Core, it accesses it through the Core API. 
 
 Thanks to this, application components will no longer depend on Core components directly. Therefore, if for example a Core component should need to be removed and replaced with another, it would be completely transparent from the application point of view, as all changes would happen "behind the scenes".
 
@@ -89,7 +89,7 @@ Of course, this doesn't mean developers _will not_ be allowed use Core component
 
 To implement this internal API, we have chosen the [CQRS][cqrs] pattern. At its heart, CQRS (Command Query Responsibility Segregation) is about separating the Write model from the Read model. But once we couple it with the Command & Query Buses, things get more interesting. 
 
-The Core API performs two type of operations:
+The Core API performs two types of operations:
 
 - **Commands** – mutations, or changes in the system state
 - **Queries** – information retrieval, based on the current system state
@@ -118,7 +118,7 @@ This pattern is being progressively implemented since PrestaShop 1.7.5, in paral
 
 PrestaShop is a development platform, and as such it requires a balance between extensibility and predictability. In an ecosystem as rich as PrestaShop's, it is impossible to foresee the needs of each individual project in advance; the Core API must then be **open for extension** so that new features can be added as needed. At the same time, extension needs the system to behave in a predictable way; in consequence the API must also be **closed to modification**. As you might have guessed, I'm talking about the O in SOLID: the [Open/Closed principle][open-closed-principle].
 
-This principle essentially states that objects should be made in such a way that you can add new functionality without modifying the existing code. In the engineering literature, Bertrand Meyers originally suggested to achieve this through subclassing, while Robert C. Martin encourages doing it through interface reimplementation. The Core API leverages CQRS and Command & Query buses in the spirit of this.
+This principle essentially states that objects should be made in such a way that you can add new functionality without modifying the existing code. In the engineering literature, Bertrand Meyers originally suggested achieving this through subclassing, while Robert C. Martin encourages doing it through interface reimplementation. The Core API leverages CQRS and Command & Query buses in the spirit of this.
 
 The API's "interface" is composed of **Commands** that describe an action that can be performed by the system, **Queries** that define a data retrieval operation, and **Query Result Types** (also commonly described as Data Transfer Objects or DTOs), which specify the structure for the data returned by a given Query operation. Since these objects (in particular Commands and Queries) are hardwired throughout the project, they can be considered closed to modification.
 
@@ -306,4 +306,3 @@ These are the topics that have been covered during this series:
 [decoupled-dependencies]: /assets/images/2020/11/architecture-decoupled-dependencies.png
 [cqrs-in-ps]: /assets/images/2020/11/architecture-cqrs.png
 [how-it-fits-together]: /assets/images/2020/11/architecture-fit-together.png
-

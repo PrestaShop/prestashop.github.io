@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "From legacy to future architecture: Connecting the dots"
-subtitle: "Or, some ideas on how we'll get from Point A to Point B"
-date:   2020-11-01 09:30:00
+subtitle: "Some ideas on how we'll get from Point A to Point B"
+date:   2020-11-30 09:00:00
 authors: [ PabloBorowicz ]
 icon: icon-compass
 tags: [1.7, architecture]

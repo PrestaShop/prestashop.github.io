@@ -65,7 +65,7 @@ This has been slowing down PrestaShop's progress for quite a while. But luckily,
 Let's revisit the D in [SOLID][solid] for a minute. The [Dependency Inversion Principle][dependency-inversion-principle] states the following:
 
 > 1. High level modules should not depend on low level modules. Both must depend on abstractions.
-> 2. Abstractions should not depend on details. The details must depend on the abstractions.
+> 2. Abstractions should not depend on details. Details must depend on abstractions.
 
 The solution to this dilemma should actually be quite simple: by **making extensions rely on an API** (abstraction) rather than directly upon the Core, the Core will become free to evolve without introducing breaking changes for extensions. 
 
@@ -81,9 +81,9 @@ Thanks to this, application components will no longer depend on Core components 
 
 [![Decoupled dependencies][decoupled-dependencies]][decoupled-dependencies]
 
-To allow this, all code behind this API must become "private", or internal. This means that **once the API is complete, the [SemVer][semver] compatibility engagement will be limited to API components only.** 
+To allow this, all code behind this API must become "private", or internal. This means that **once the API is complete, the [SemVer][semver] compatibility engagement will be limited to API components only**. 
 
-Of course, this doesn't mean developers _will not_ be allowed use Core components directly. PrestaShop being an open system, developers will always be free to shape it in any way they want. However, as this API is put in place, the official compatibility engagement will become limited to the API alone, and while an effort will be made to avoid performing breaking changes, they might happen from time to time.
+Of course, this doesn't mean developers _will not_ be allowed to use Core components directly. PrestaShop being an open system, developers will always be free to shape it in any way they want. However, as this API is put in place, the official compatibility engagement will become limited to the API alone, and while an effort will be made to avoid performing breaking changes, they might happen from time to time.
 
 ### An intuitive API
 

@@ -122,7 +122,7 @@ This principle essentially states that objects should be made in such a way that
 
 The API's "interface" is composed of **Commands** that describe an action that can be performed by the system, **Queries** that define a data retrieval operation, and **Query Result Types** (also commonly described as Data Transfer Objects or DTOs), which specify the structure for the data returned by a given Query operation. Since these objects (in particular Commands and Queries) are hardwired throughout the project, they can be considered closed to modification.
 
-The _implementation_, on the other hand, is performed by Handler services which _subscribe_ to a given Command or Query. These services can be easily rewired through [symfony service decoration][sf-service-decoration], so any extension can redefine the behavior of any given use case by decorating the original handler or reimplementing its interface. Additionally, in some cases, multiple extensions can decorate the same service through a _decoration chain_, where each services "hooks" into the input or output of the previous decorator.
+The _implementation_, on the other hand, is performed by Handler services which _subscribe_ to a given Command or Query. These services can be easily rewired through [Symfony service decoration][sf-service-decoration], so any extension can redefine the behavior of any given use case by decorating the original handler or reimplementing its interface. Additionally, in some cases, multiple extensions can decorate the same service through a _decoration chain_, where each service "hooks" into the input or output of the previous decorator.
 
 The Core API is the better replacement for the obsolete [legacy class override system][class-override], which will progressively be phased out as legacy classes are removed from the root namespace.
 
@@ -137,7 +137,7 @@ Consider the following application use cases:
 
 Each one of these is a unique and complete user interaction with the system. Whenever a request is issued to the backend, it can usually be matched with exactly one use case. 
 
-The Core API is built around these use cases. This means that all its operations are  based on the things the software does from a user standpoint, rather than what its _underlying components_ are able to do. This is a subtle, yet very important difference.
+The Core API is built around these use cases. This means that all its operations are based on the things the software does from a user standpoint, rather than what its _underlying components_ are able to do. This is a subtle, yet very important difference.
 
 Some would argue that Core API operations should be optimized for reuse and composition. This is normal: as developers, we are used to constantly search for abstractions and generalizations so that we can build reusable components. We don't like duplication because it's inefficient and prone to inconsistencies. 
 
@@ -178,7 +178,7 @@ With the Core API in place, PrestaShop's backend architecture consists of four m
 
 ## Homogenize the FO & BO architecture
 
-In 1.7 the Back Office is being migrated to Symfony and Twig. It's only natural that the next step should be migrating the Front Office to Symfony as well. In terms of raw lines of code, the Front Office is much simpler than the Back Office, so it should take less time to migrate, even taking into account that we'd need to implement the Core API in FO as well.
+In 1.7, the Back Office is being migrated to Symfony and Twig. It's only natural that the next step should be migrating the Front Office to Symfony as well. In terms of raw lines of code, the Front Office is much simpler than the Back Office, so it should take less time to migrate, even taking into account that we'd need to implement the Core API in FO as well.
 
 Homogenizing the FO and the BO will not only enhance developer experience and ease up the learning curve for newcomers, but it will also allow us to get rid of all the ancient legacy-based components like `Dispatcher`, `Tools`, `Helper`, legacy controllers... as well as the `Adapter` namespace.
 

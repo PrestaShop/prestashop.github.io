@@ -442,7 +442,7 @@ In case you forgot, here are the topics that will be covered during this series:
 1. [The Current Architecture][part-1] (or _"Point A – Where we are"_)
 2. Pain Points (or _"What needs to be improved"_)
 3. [The Future Architecture (or _"Point B – Where we are going"_)](/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/)
-4. Connecting the dots (or _"Some ideas on how we'll get there"_)
+4. [Connecting the dots][part-4] (or _"Some ideas on how we'll get there"_)
 
 [introduction]: /news/prestashop-in-2019-and-beyond-introduction/
 [part-1]: /news/prestashop-in-2019-and-beyond-part-1-current-architecture/
@@ -473,3 +473,4 @@ In case you forgot, here are the topics that will be covered during this series:
 [devdocs-gh]: https://github.com/PrestaShop/docs/
 [devdocs-issues]: https://github.com/PrestaShop/docs/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
 [circuit-breaker]: /news/resilient-php-applications/
+[part-4]: /news/from-legacy-to-future-architecture-connecting-the-dots/

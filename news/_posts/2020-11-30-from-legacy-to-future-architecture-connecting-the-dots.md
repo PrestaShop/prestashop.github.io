@@ -259,7 +259,16 @@ In that scenario, we would release one major version every year, focusing on ref
 
 What do you think? Tell us in the comments, or [find us on Slack][slack].
 
+---
 
+### About the series
+
+These are the topics that have been covered during this series:
+
+1. [The Current Architecture][part-1] (or _"Point A – Where we are"_)
+2. [Pain Points][part-2] (or _"What needs to be improved"_)
+3. [The Future Architecture][part-3] (or _"Point B – Where we are going"_)
+4. Connecting the dots (or _"Some ideas on how we'll get there"_)
 
 
 [introduction]: /news/prestashop-in-2019-and-beyond-introduction/

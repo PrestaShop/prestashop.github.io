@@ -9,7 +9,7 @@ image: /assets/images/theme/meta-logo-build.png
 tags: [contribute, events, community]
 ---
 
-This year, for the first time, a Call for Paper has been organised for a PrestaShop event. The target was to give a voice to the community and learn from its active members. Let's make a quick tour of the results.
+This year, for the first time, a Call for Papers was organised for a PrestaShop event. The objective was to give a voice to the community and learn from its active members. Let's make a quick tour of the results.
 
 
 ## Because it's 2020

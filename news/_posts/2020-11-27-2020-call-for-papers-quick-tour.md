@@ -2,7 +2,7 @@
 layout: post
 title:  "2020 Call for Papers: that was great!"
 subtitle: "A quick tour of the result"
-date:  2020-02-21 16:30:00
+date:  2020-11-27 16:00:00
 authors: [AntoineThomas]
 icon: icon-video-camera
 image: /assets/images/theme/meta-logo-build.png

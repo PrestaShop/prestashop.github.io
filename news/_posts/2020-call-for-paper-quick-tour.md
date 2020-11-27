@@ -23,7 +23,7 @@ The result was great: 4 speakers from the community participated and their talks
 
 ## The talks
 
-For this firt edition, all talks were in French only, as they were targeted for PSDay Paris. Below is the list of the talks, and the recordings, available on Youtube.
+For this first edition, all talks were in French only, as they were targeted for PSDay Paris. Below is the list of the talks, and the recordings, available on Youtube.
 
 Vincent Millet, Store Commander: "C'est le jour du contrôle technique de votre boutique"
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mH8VygWTQh8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

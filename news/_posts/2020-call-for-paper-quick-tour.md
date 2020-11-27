@@ -16,7 +16,7 @@ This year, for the first time, a Call for Papers was organised for a PrestaShop 
 
 Launched during Spring with a Google Form, the Call for Papers was originally targeted for PrestaShop Day Paris 2020, scheduled to take place last June. Unfortunately, due to the health crisis, this event was canceled, like all other in-person events. However, many people had submitted talk proposals, so, there was many questions left. The most obvious one was to know if a French event, "IRL" or virtual, would be organised during the second semester.
 
-Once it has been dediced to make a virtual event in October, it was possible to think about using the talk proposals. And, with the PrestaShop company's Events team, the work started to find a way to include talks from the CFP in the schedule.
+Once it was decided to hold a virtual event in October, it was possible to think about using the talk proposals. And, with the PrestaShop company's Events team, the work started to find a way to include talks from the CFP in the schedule.
 
 The result is great: 4 speakers from the community have participed and their talk have been recorded.
 

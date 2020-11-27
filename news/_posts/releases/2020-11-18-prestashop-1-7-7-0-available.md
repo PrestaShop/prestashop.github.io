@@ -76,6 +76,9 @@ PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module.
 - [An error is displayed when decreasing the gifted product quantity "Could not find the product in cart, meaning Order and Cart are out of sync"](https://github.com/PrestaShop/PrestaShop/issues/22004)
 - [When adding a product which has an ecotax to an old order, the base price is NOK](https://github.com/PrestaShop/PrestaShop/issues/22029)
 
+**Back-office**
+- [If we login to the addons marketplace the list of recommended modules doesn't contains all items](https://github.com/PrestaShop/PrestaShop/issues/22125)
+
 **Front-office**
 - [Logo, favicon and stores icons are not displayed](https://github.com/PrestaShop/PrestaShop/issues/21979)
 
@@ -114,9 +117,17 @@ These regressions should be fixed in the next patch versions
 - [Incorrect Total's product line when Round type = "Round on each item"](https://github.com/PrestaShop/PrestaShop/issues/21708)
 - [When we try to return products in all shops context, an exception is displayed](https://github.com/PrestaShop/PrestaShop/issues/21990)
 - [An alert "Error! There are not enough products in stock." is displayed when updating the product quantity in "all shops" context](https://github.com/PrestaShop/PrestaShop/issues/21987)
+- [The characters limit is wrongly calculated when choosing a predefined message](https://github.com/PrestaShop/PrestaShop/issues/22086)
+- [In the info block - The shipping is not refreshed after adding a product](https://github.com/PrestaShop/PrestaShop/issues/22071)
+- [While creating an order, after adding a product, if you click quickly, the focus change between the "up" arrow and the "down" arrow](https://github.com/PrestaShop/PrestaShop/issues/22026)
+- [With a different currency than the default one, if there is a  discount on a category for a customer group, when we update a product the price is wrong](https://github.com/PrestaShop/PrestaShop/issues/22096)
+- [Details modal for carts - the Refresh button is not working](https://github.com/PrestaShop/PrestaShop/issues/22105)
+- [An unexpected error occurred when adding to the cart a product with customization in a multistore context](https://github.com/PrestaShop/PrestaShop/issues/22110)
+- [The shipping block is not instantly updated when updating the Address](https://github.com/PrestaShop/PrestaShop/issues/22124)
 
 **Front-office**
 - [Pack of products - Incorrect image displayed for products with combinations](https://github.com/PrestaShop/PrestaShop/issues/21875)
+- [displayAfterProductThumbs hook content is duplicated after adding a product in the cart](https://github.com/PrestaShop/PrestaShop/issues/22113)
 
 **Back-office**
 - [Adding incorrect language causes exception in Edit Currency page](https://github.com/PrestaShop/PrestaShop/issues/21891)

@@ -54,4 +54,4 @@ In parallel, the tech team at PrestaShop organised "Stream your tech", targeted 
 
 ## Conclusion
 
-The Call For Paper was quite new to organise, and difficult to maintain it in 2020, but overall, it was great to make it happen. And I really hope it will be possible to organise a new one next year. Please, share in the comments what you liked most this year, what could be improved, and what you would like to see in 2022.
+The Call For Papers was quite new to organise, and difficult to keep in 2020, but overall, it was great to make it happen. And I really hope it will be possible to organise a new one next year. Please, share in the comments what you liked the most this year, what could be improved, and what you would like to see in 2021.

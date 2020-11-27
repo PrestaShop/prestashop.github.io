@@ -18,7 +18,7 @@ Launched during Spring with a Google Form, the Call for Papers was originally ta
 
 Once it was decided to hold a virtual event in October, it was possible to think about using the talk proposals. And, with the PrestaShop company's Events team, the work started to find a way to include talks from the CFP in the schedule.
 
-The result is great: 4 speakers from the community have participed and their talk have been recorded.
+The result was great: 4 speakers from the community participated and their talks have been recorded.
 
 
 ## The talks

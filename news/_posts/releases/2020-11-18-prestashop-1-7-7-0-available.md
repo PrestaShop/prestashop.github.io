@@ -80,7 +80,7 @@ PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module.
 - [After logging in to the Addons marketplace, the list of recommended modules doesn't contain all items](https://github.com/PrestaShop/PrestaShop/issues/22125)
 
 **Front-office**
-- [Logo, favicon and stores icons are not displayed](https://github.com/PrestaShop/PrestaShop/issues/21979)
+- [Logo, favicon and store's icons are not displayed](https://github.com/PrestaShop/PrestaShop/issues/21979)
 
 **Upgrade**
 - [Error "Column count doesn't match value count" during the upgrade](https://github.com/PrestaShop/PrestaShop/issues/21949)

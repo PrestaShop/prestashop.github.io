@@ -62,7 +62,7 @@ You can download PrestaShop 1.7.7.0 here:
 PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module. 
 
 
-## Notable changes since the RC1
+## Notable fixes since RC1
 
 **Order back-office**
 - [An error 500 is displayed when adding a product with a min quantity](https://github.com/PrestaShop/PrestaShop/issues/21525)

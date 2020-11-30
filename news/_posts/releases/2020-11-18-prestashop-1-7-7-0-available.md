@@ -20,7 +20,7 @@ We are happy to announce PrestaShop 1.7.7.0 is officially available!
 
 This release is our biggest yet. more than 1500 merged Pull Requests in 600 days, over 120 contributors, two betas, one release candidate. Was it worth it? We absolutely think so and hope that you will enjoy using it.
 
-## News in the 1.7.7.0
+## New in 1.7.7.0
 
 ### Productivity
 

@@ -77,7 +77,7 @@ PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module.
 - [When adding a product which has an ecotax to an old order, the base price is NOK](https://github.com/PrestaShop/PrestaShop/issues/22029)
 
 **Back-office**
-- [If we login to the addons marketplace the list of recommended modules doesn't contains all items](https://github.com/PrestaShop/PrestaShop/issues/22125)
+- [After logging in to the Addons marketplace, the list of recommended modules doesn't contain all items](https://github.com/PrestaShop/PrestaShop/issues/22125)
 
 **Front-office**
 - [Logo, favicon and stores icons are not displayed](https://github.com/PrestaShop/PrestaShop/issues/21979)

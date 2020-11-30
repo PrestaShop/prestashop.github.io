@@ -85,6 +85,7 @@ PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module.
 **Upgrade**
 - [Error "Column count doesn't match value count" during the upgrade](https://github.com/PrestaShop/PrestaShop/issues/21949)
 - [Problem with ALTER table during the upgrade](https://github.com/PrestaShop/PrestaShop/issues/21948)
+- [Error when upgrading from 1.7.4.x and previous to 1.7.7.0](https://github.com/PrestaShop/PrestaShop/issues/22141)
 
 ## Changelog
 

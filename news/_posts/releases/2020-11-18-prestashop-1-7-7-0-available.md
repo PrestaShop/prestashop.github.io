@@ -32,7 +32,7 @@ The redesign of the user interface allows merchants to find the right informatio
 
 ### Growth and flexibility
 
-PrestaShop is an international solution and we aim at providing highly global features for worldwide users. 
+PrestaShop is an international solution and we aim to provide global features for worldwide users. 
 
 The [**international improvements**](https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) remove barriers to go international and help merchants reach more customers.
 

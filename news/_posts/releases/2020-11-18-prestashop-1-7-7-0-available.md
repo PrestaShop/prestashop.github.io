@@ -137,5 +137,6 @@ The following known regressions will be fixed in upcoming patch versions.
 ## Acknowledgments
 
 PrestaShop is above all a community project: from the XX committers who contributed to this release, XX are new contributors. The vast majority of PrestaShop contributors are not directly affiliated with the PrestaShop company.
+
 A huge thanks to everyone involved in this version!
 Thank you again for helping improve the lives of more than 300,000 online merchants with ideas, improvements, and fixes!

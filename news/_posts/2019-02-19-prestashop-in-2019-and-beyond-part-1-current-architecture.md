@@ -256,7 +256,7 @@ In case you forgot, here are the topics that will be covered during this series:
 1. The Current Architecture (or _"Point A – Where we are"_)
 2. [Pain Points (or _"What needs to be improved"_)](/news/prestashop-in-2019-and-beyond-part-2-pain-points/)
 3. [The Future Architecture (or _"Point B – Where we are going"_)](/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/)
-4. Connecting the dots (or _"Some ideas on how we'll get there"_)
+4. [Connecting the dots][part-4] (or _"Some ideas on how we'll get there"_)
 
 
 [figure-1]: /assets/images/2019/02/architecture-conceptual-overview-current.jpg
@@ -279,3 +279,4 @@ In case you forgot, here are the topics that will be covered during this series:
 [github]: https://github.com/PrestaShop/prestashop-ui-kit/
 [addons-marketplace]: https://addons.prestashop.com/
 [autoupgrade]: https://github.com/PrestaShop/autoupgrade/
+[part-4]: /news/from-legacy-to-future-architecture-connecting-the-dots/

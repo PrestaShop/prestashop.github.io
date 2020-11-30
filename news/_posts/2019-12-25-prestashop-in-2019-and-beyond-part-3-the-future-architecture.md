@@ -258,12 +258,13 @@ In case you forgot, here are the topics that will be covered during this series:
 1. [The Current Architecture][part-1] (or _"Point A – Where we are"_)
 2. [Pain Points][part-2] (or _"What needs to be improved"_)
 3. The Future Architecture (or _"Point B – Where we are going"_)
-4. Connecting the dots (or _"Some ideas on how we'll get there"_)
+4. [Connecting the dots][part-4] (or _"Some ideas on how we'll get there"_)
 
 [introduction]: /news/prestashop-in-2019-and-beyond-introduction/
 [introducing-symfony]: /news/prestashop-1-7-and-symfony/
 [part-1]: /news/prestashop-in-2019-and-beyond-part-1-current-architecture/
 [part-2]: /news/prestashop-in-2019-and-beyond-part-2-pain-points/
+[part-4]: /news/from-legacy-to-future-architecture-connecting-the-dots/
 [user-interaction-sync]: /assets/images/2019/12/architecture-user-interaction-sync.jpg
 [user-interaction-async]: /assets/images/2019/12/architecture-user-interaction-async.jpg
 [future-architecture-overview]: /assets/images/2019/12/architecture-overview-future.jpg

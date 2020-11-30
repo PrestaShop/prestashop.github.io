@@ -95,7 +95,7 @@ If you are looking for more details about all changes and new features expected 
 
 ## Known issues
 
-These regressions should be fixed in the next patch versions
+The following known regressions will be fixed in upcoming patch versions.
 
 **Order back-office**
 - [An exception is displayed when changing the invoice address a  second time - Round mode = Round on each item](https://github.com/PrestaShop/PrestaShop/issues/21717)

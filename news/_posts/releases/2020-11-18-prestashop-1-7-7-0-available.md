@@ -70,7 +70,7 @@ PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module.
 - [An exception is displayed when canceling a product and if an invoice is generated](https://github.com/PrestaShop/PrestaShop/issues/21850)
 - [An exception is displayed when ordering a product with a file customization’s name containing a space](https://github.com/PrestaShop/PrestaShop/issues/21815)
 - [When all the products in an order are deleted, the status is changed to canceled.](https://github.com/PrestaShop/PrestaShop/issues/22010)
-- [When deleting all products - the total invoice is wrong](https://github.com/PrestaShop/PrestaShop/issues/21991)
+- [When deleting all products the invoice's total is wrong](https://github.com/PrestaShop/PrestaShop/issues/21991)
 - [When we have a product added to the order as a gift (a voucher applied) and as a product ordered, the quantity added to the same product is wrong](https://github.com/PrestaShop/PrestaShop/issues/21531)
 - [When product is added in an empty order, the tax block in the invoice is wrong: It only contains the Shipping tax and not the Product tax](https://github.com/PrestaShop/PrestaShop/issues/22008)
 - [An error is displayed when decreasing the gifted product quantity "Could not find the product in cart, meaning Order and Cart are out of sync"](https://github.com/PrestaShop/PrestaShop/issues/22004)

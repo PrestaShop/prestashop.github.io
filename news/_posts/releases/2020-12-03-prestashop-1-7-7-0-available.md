@@ -2,9 +2,9 @@
 layout: post
 title:  "PrestaShop 1.7.7.0 is available"
 subtitle: "You waited for it, here it is!"
-date:   2020-12-01 15:00:00
+date:   2020-12-03 15:00:00
 authors: [ PrestaShop ]
-image: /assets/images/2020/11/build_and_mail_final.jpg
+image: /assets/images/2020/12/build_and_mail_final.jpg
 icon: icon-leaf
 tags:
  - version
@@ -16,7 +16,7 @@ tags:
 
 We are happy to announce PrestaShop 1.7.7.0 is officially available!
 
-![1.7.7.0 is available!](/assets/images/2020/11/build_and_mail_final.jpg)
+![1.7.7.0 is available!](/assets/images/2020/12/build_and_mail_final.jpg)
 
 This release is our biggest yet. More than 1300 merged Pull Requests in 600 days, almost 120 contributors, two betas, one release candidate. Was it worth it? We absolutely think so and hope that you will enjoy using it. By the way, we know this release was expected in early 2020, there will be a build article explaining what happened this year.
 
@@ -28,7 +28,7 @@ The [**full redesign and the new features of order pages**](https://build.presta
 
 The redesign of the user interface allows merchants to find the right information quickly while the new features allow a better efficiency on daily tasks and avoid back and forth between pages. 
 
-![order pages](/assets/images/2020/11/order.jpg)
+![order pages](/assets/images/2020/12/order.jpg)
 
 ### Growth and flexibility
 
@@ -38,17 +38,17 @@ The [**international improvements**](https://build.prestashop.com/news/prestasho
 
 [**The fuzzy search**](https://build.prestashop.com/news/introduction-to-the-fuzzy-search/) improve both the user experience and the conversion rate with a new search algorithm that takes misspellings or error inputs into account.
 
-![fuzzy search](/assets/images/2020/11/fuzzy_search.jpg)
+![fuzzy search](/assets/images/2020/12/fuzzy_search.jpg)
 
 In order to allow merchants to have all the currencies they need to meet the expectations of every customer, they can now **add new official and non official currencies** (e.g. local or custom) to their store and customize their display per language as desired.
 
-![currencies](/assets/images/2020/11/currencies.png)
+![currencies](/assets/images/2020/12/currencies.png)
 
 ### Robustness
 
 We kept improving internal architecture and technology with the Symfony migration. 15 new pages have been migrated (including the order pages), completing almost 55% of the back office migration.
 
-![migration](/assets/images/2020/11/migration.png)
+![migration](/assets/images/2020/12/migration.png)
 
 More than 160 bugs have been fixed for the 1.7.7.0 (vs 110 for the 1.7.6.0), including [11 highly expected bug fixes](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aclosed+label%3ATopwatchers+label%3Afixed+milestone%3A1.7.7.0), [5 front office notable fixes](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3AFO+label%3Amust-have+label%3Afixed+milestone%3A1.7.7.0+-label%3Atopwatchers+-label%3Aregression), and [5 back office notable fixes](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3ABO+label%3Amust-have+label%3Afixed+milestone%3A1.7.7.0+-label%3Atopwatchers+-label%3Aregression).
 

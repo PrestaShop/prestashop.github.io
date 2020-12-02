@@ -83,11 +83,13 @@ PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module.
 
 **Front-office**
 - [Logo, favicon and store's icons are not displayed](https://github.com/PrestaShop/PrestaShop/issues/21979)
+- [Add to cart Popup not displayed after an upgrade](https://github.com/PrestaShop/PrestaShop/issues/22173)
 
 **Upgrade**
 - [Error "Column count doesn't match value count" during the upgrade](https://github.com/PrestaShop/PrestaShop/issues/21949)
 - [Problem with ALTER table during the upgrade](https://github.com/PrestaShop/PrestaShop/issues/21948)
 - [Error when upgrading from 1.7.4.x and previous to 1.7.7.0](https://github.com/PrestaShop/PrestaShop/issues/22141)
+- [After an upgrade the precision of each currency installed is set to 6](https://github.com/PrestaShop/PrestaShop/issues/22177)
 
 ## Changelog
 

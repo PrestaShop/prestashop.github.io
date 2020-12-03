@@ -146,68 +146,8 @@ The following known regressions will be fixed in upcoming patch versions.
 
 PrestaShop is above all a community project: from the 119 committers who contributed to this release, 57 are new contributors. The vast majority of PrestaShop contributors are not directly affiliated with the PrestaShop company.
 
-@formarion
 All contributors:
 123monsite-regis, 202 ecommerce, Abdullah, Adib Aroui, Aitbella Mohamed, Alexis Haumaitre, Amazzing, andromaque, Antoine Damiron, Antoine Thomas, Ashish Sharawat, Aude, Aurélien Pelletier, Benjamin, Benjamin Dussouillez, Boubker Bribri, Christian Kubitza, Christophe Zarebski, cirykpopeye, Clotaire Renaud, Codencode, ComonSoft, Damian Dominella, Daniel Hlavacek, Daniel Ziegenberg, Darius Aleksiunas, David Gonzalez, Dheeraj Sharma, Dinesh Badrukhiya, Dmitry, Florentin Garnier, Florian Bergeron, Florian Le Gars, Florian Lemaitre, Franck Lefèvre, François Peyret, Gavin Kalikapersaud, hacchus, Harlock, Horia Rudan, Ibrahima Sow, idnovate, JBWModules, Jean-François Viguier, Jevgenij Visockij, Jocelyn Fournier, Jonas Erixon, Jonathan François, Jonathan Lelievre, Jonathan Vollebregt, Julian Eberius, Julien Gissinger, Julius Žukauskas, Justinas Urbanavicius, Karel Faille, Khouloud Belguith, Klemart3D, Krystian Podemski, ks129, Laurynas Sedys, Louise Bonnard, Luc Vandesype, Manfredi Petruso, Marek Hanuš, Marion François, Marvin Sauraye, Mateusz Furga, Mathias Reker, Mathieu Ferment, Matthias Raigne, Matthieu Rolland, Maxim Krizhanovsky, Mehdi Badrani, Michael Voříšek, Mickaël Andrieu, mushroot, Nesrine Abdmouleh, okom3pom, Pablo Borowicz, Paulo Baptista, Peeyush Agrawal, Pierre Rambaud, pojebunny, Presta Module, Prestashark.eu, Prestaworks, PrestaworksNiklas, PululuK, Puma, Raimondas Sapola, Raúl Jiménez, Rinku Kazeno, Rodrigo Laurindo, Rokas Zygmantas, Rolige eCommerce Solutions, Roman Ondráček, seleda, Sergio Quiñonez, Simon Garny, Simone, Stephane Decisy, Sylvestre Nicky, Sébastien Bareyre, Tadas Davidsonas, Tanguy Salmon, Thomas Baccelli, Thomas L'huillier, Thomas Leviandier, Thomas Nabord, Tomas Ilginis, Tuni-Soft, Valentin Szczupak, venditdevs, Vincent Hadjedj, Vladimir, Web Premiere, webmak, Yannick Armand, Šarūnas Jonušas
-
-New contributors:
-Abdullah	39679397+OneDotIT@users.noreply.github.com	users.noreply.github.com
-Adib Aroui	aroui.adib@gmail.com	gmail.com
-Aitbella Mohamed	modfayz@gmail.com	gmail.com
-Alexis Haumaitre	alexis.haumaitre@prestashop.com	prestashop.com
-Antoine Damiron	damironantoine@gmail.com	gmail.com
-Ashish Sharawat	ashishsharawat8@gmail.com	gmail.com
-Aude	aude@bm-services.com	bm-services.com
-Benjamin	blopes@webxy.com	webxy.com
-Benjamin Dussouillez	bdussouillez@202-ecommerce.com	202-ecommerce.com
-Christophe Zarebski	kzarebski@digitalgarden.fr	digitalgarden.fr
-cirykpopeye	ciryk@hotmail.be	hotmail.be
-Clotaire Renaud	52157233+clotaire202@users.noreply.github.com	users.noreply.github.com
-Codencode	info@codencode.it	codencode.it
-ComonSoft	13507563+ComonSoft@users.noreply.github.com	users.noreply.github.com
-Damian Dominella	damiandominella@gmail.com	gmail.com
-Daniel Hlavacek	daniel.hlavacek@hotmail.cz	hotmail.cz
-Daniel Ziegenberg	daniel@ziegenberg.at	ziegenberg.at
-Darius Aleksiunas	darius.aleksiunas@invertus.eu	invertus.eu
-David Gonzalez	davidgg666@gmail.com	gmail.com
-Dmitry	dariusakafest@mail.ru	mail.ru
-Florentin Garnier	florentin@digital404.fr	digital404.fr
-Florian Bergeron	florian.bergeron@prestashop.com	prestashop.com
-Florian Le Gars	flegars@202-ecommerce.com	202-ecommerce.com
-François Peyret	fpeyret@axome.com	axome.com
-Gavin Kalikapersaud	gkalikapersaud@sonnysdirect.com	sonnysdirect.com
-hacchus	hacchus@users.noreply.github.com	users.noreply.github.com
-Harlock	fillantoxa@gmail.com	gmail.com
-JBWModules	47666330+JBWModules@users.noreply.github.com	users.noreply.github.com
-Jonas Erixon	jonas.erixon@prestaworks.se	prestaworks.se
-Jonathan François	jonathan.francois@prestashop.com	prestashop.com
-Jonathan Vollebregt	jnvsor@gmail.com	gmail.com
-Julian Eberius	julian@eberius-mail.de	eberius-mail.de
-Julius Žukauskas	julius.zukauskas@invertus.eu	invertus.eu
-Justinas Urbanavicius	justinas.urbanavicius@internations.org	internations.org
-ks129	45097959+ks129@users.noreply.github.com	users.noreply.github.com
-Laurynas Sedys	laurynas.sedys@invertus.eu	invertus.eu
-Mateusz Furga	matfurga@gmail.com	gmail.com
-mushroot	3608366+mushroot@users.noreply.github.com	users.noreply.github.com
-Paulo Baptista	paulofbaptista@gmail.com	gmail.com
-pojebunny	smithinger44@gmail.com	gmail.com
-Prestaworks	daniel@prestaworks.se	prestaworks.se
-PrestaworksNiklas	32831052+PrestaworksNiklas@users.noreply.github.com	users.noreply.github.com
-Puma	puma_work@hotmail.com	hotmail.com
-Raimondas Sapola	raimondas.sapola@invertus.eu	invertus.eu
-Raúl Jiménez	raul@soy.es	soy.es
-Rinku Kazeno	development@kazeno.co	kazeno.co
-Rodrigo Laurindo	rblaurin@gmail.com	gmail.com
-Rolige eCommerce Solutions	info@rolige.com	rolige.com
-Roman Ondráček	ondracek.roman@centrum.cz	centrum.cz
-Sergio Quiñonez	sergio_quinonez@rolige.com	rolige.com
-Stephane Decisy	stephane.decisy@prestashop.com	prestashop.com
-Sylvestre Nicky	sylvestrenicky@gmail.com	gmail.com
-Tadas Davidsonas	tadas.davidsonas@invertus.eu	invertus.eu
-Tanguy Salmon	tanguy.salmon@gmail.com	gmail.com
-Thomas L'huillier	lhuillier.tom@gmail.com	gmail.com
-Vladimir	levyn@mail.ru	mail.ru
-webmak	webmak10@gmail.com	gmail.com
 
 A huge thanks to everyone involved in this version!
 Thank you again for helping improve the lives of more than 300,000 online merchants with ideas, improvements, and fixes!

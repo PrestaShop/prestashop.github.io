@@ -54,16 +54,6 @@ More than 160 bugs have been fixed for the 1.7.7.0 (vs 110 for the 1.7.6.0), inc
 
 This new version brings more stability with php7.3 support !
 
-## Download
-
-You can download PrestaShop 1.7.7.0 here:
-
-[Download PrestaShop 1.7.7.0 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
-{: .text-center}
- 
-PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module. 
-
-
 ## Notable fixes since RC1
 
 **Order back-office**
@@ -91,15 +81,23 @@ PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module.
 - [Error when upgrading from 1.7.4.x and previous to 1.7.7.0](https://github.com/PrestaShop/PrestaShop/issues/22141)
 - [After an upgrade the precision of each currency installed is set to 6](https://github.com/PrestaShop/PrestaShop/issues/22177)
 
+**IMPORTANT NOTE** if you plan on upgrading your shop to 1.7.7 and your current version is **below 1.7.6** you need to use the latest version (4.11.0) of our [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade). Of course it's always recommended to use the latest version when upgrading but even more so in this case since a bug related to upgrading from these older versions has been fixed in the module.
+
 ## Changelog
 
 24 pull requests have been merged since the RC1 and 22 issues have been fixed. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases) for details. This brings us to more than 1300 merged pull requests for the 1.7.7.0 milestone, it is definitely our biggest yet.
 
 If you are looking for more details about all changes and new features expected in 1.7.7, the [1.7.7 beta version release note](https://build.prestashop.com/news/prestashop-1-7-7-0-beta-release/) is the perfect article for you to read!
 
-## Auto upgrade
 
-**IMPORTANT NOTE** if you plan on upgrading your shop to 1.7.7 and you current version is **below 1.7.6** you need to use the latest version (4.11.0) of our [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade). Of course it's always recommended to use the latest version when upgrading but even more so in this case since a bug related to upgrading from these older versions has been fixed in the module.
+## Download
+
+You can download PrestaShop 1.7.7.0 here:
+
+[Download PrestaShop 1.7.7.0 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
+{: .text-center}
+ 
+PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module. 
 
 ## Known issues
 

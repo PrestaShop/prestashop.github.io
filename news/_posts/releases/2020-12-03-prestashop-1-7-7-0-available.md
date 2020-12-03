@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 1.7.7.0 is available"
 subtitle: "You waited for it, here it is!"
-date:   2020-12-03 15:00:00
+date:   2020-12-03 9:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2020/12/build_and_mail_final.jpg
 icon: icon-leaf

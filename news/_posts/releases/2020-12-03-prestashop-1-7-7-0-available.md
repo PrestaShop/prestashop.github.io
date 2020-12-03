@@ -46,7 +46,7 @@ In order to allow merchants to have all the currencies they need to meet the exp
 
 ### Robustness
 
-We kept improving internal architecture and technology with the Symfony migration. 15 new pages have been migrated (including the order pages), completing almost 55% of the back office migration.
+We keep improving PrestaShop's architecture and technology with the Symfony migration. 15 new pages have been migrated (including the order pages), completing almost 55% of the back office migration.
 
 ![migration](/assets/images/2020/12/migration.png)
 

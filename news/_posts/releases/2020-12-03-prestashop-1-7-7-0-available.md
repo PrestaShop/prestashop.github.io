@@ -56,7 +56,7 @@ This new version also brings support for PHP 7.3!
 
 ## Notable fixes since RC1
 
-**Order back-office**
+**Order page (Back-office)**
 - [An error 500 is displayed when adding a product with a min quantity](https://github.com/PrestaShop/PrestaShop/issues/21525)
 - [An exception is displayed in the console when adding an out of stock product](https://github.com/PrestaShop/PrestaShop/issues/21794)
 - [An exception is displayed when canceling a product and if an invoice is generated](https://github.com/PrestaShop/PrestaShop/issues/21850)

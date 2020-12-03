@@ -36,7 +36,7 @@ PrestaShop is an international solution and we aim to provide localized features
 
 The [**international improvements**](https://build.prestashop.com/news/prestashop-keeps-growing-internationally/) remove barriers to go international and help merchants reach more customers.
 
-[**The fuzzy search**](https://build.prestashop.com/news/introduction-to-the-fuzzy-search/) improve both the user experience and the conversion rate with a new search algorithm that takes misspellings or error inputs into account.
+[**The fuzzy search**](https://build.prestashop.com/news/introduction-to-the-fuzzy-search/) improves both the user experience and the conversion rate with a new search algorithm that takes misspellings or error inputs into account.
 
 ![fuzzy search](/assets/images/2020/12/fuzzy_search.jpg)
 

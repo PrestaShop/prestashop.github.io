@@ -103,7 +103,7 @@ PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module.
 
 The following known regressions will be fixed in upcoming patch versions.
 
-**Order back-office**
+**Orders page (Back-office)**
 - [An exception is displayed when changing the invoice address a  second time - Round mode = Round on each item](https://github.com/PrestaShop/PrestaShop/issues/21717)
 - [When stock management is disabled, the available quantity in order detail is displayed](https://github.com/PrestaShop/PrestaShop/issues/21767)
 - [While creating an order, the minimum quantity of a combination is not correct](https://github.com/PrestaShop/PrestaShop/issues/21873)

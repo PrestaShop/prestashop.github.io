@@ -12,7 +12,7 @@ tags:
 
 Let's start discussing performance and tuning with PrestaShop! 
 
-# Performance & PrestaShop
+# Performance (& PrestaShop)
 
 You may have heard of it, but we'll soon release a White Paper, which is all about PrestaShop's performance, how to benchmark it and how it behaves under loads. And what to do to keep it responding under 300ms.
 

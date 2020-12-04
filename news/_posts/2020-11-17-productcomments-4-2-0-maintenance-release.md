@@ -3,6 +3,7 @@ layout: post
 title:  "Release Of Module ProductComments 4.2.0"
 subtitle: "Maintenance version of the ProductComments module"
 date:   2020-11-17
+twitter_image: /assets/images/theme/banner-security.jpg
 authors: [ PrestaShop ]
 icon: icon-checked
 

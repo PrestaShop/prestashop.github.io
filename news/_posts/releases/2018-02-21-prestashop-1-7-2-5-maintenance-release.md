@@ -10,6 +10,7 @@ tags:
  - releases
  - 1.7.2.x
  - 1.7
+ - security
 ---
 
 PrestaShop 1.7.2.5 is now available. This is a <b>security release</b> for all previous versions of PrestaShop 1.7.

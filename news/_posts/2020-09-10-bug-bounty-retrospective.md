@@ -6,7 +6,7 @@ date:   2020-09-11 09:00:00
 authors: [ PierreRambaud, PrestaShop ]
 icon: icon-chat
 image: /assets/images/2020/09/ywhbanner.jpg
-tags: [bug, bounty, program, maintenance]
+tags: [bug, bounty, program, maintenance, security]
 ---
 
 For several months, we experimented a Bug Bounty Program with the [YesWeHack](https://yeswehack.com) platform. Here is a retrospective, explaining why we did it, and what happened during this period.

@@ -12,6 +12,7 @@ tags:
  - version
  - patch
  - releases
+ - security
 redirect_from:
  - /news/release-note-1765/
 ---

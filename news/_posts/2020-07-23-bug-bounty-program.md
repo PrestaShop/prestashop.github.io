@@ -7,7 +7,7 @@ authors: [ PierreRambaud, PrestaShop ]
 icon: icon-chat
 image: /assets/images/2020/07/ywhbanner.jpg
 twitter_image: /assets/images/2020/07/twitter_card_bug_bounty.png
-tags: [bug, bounty, program, maintenance]
+tags: [bug, bounty, program, maintenance, security]
 ---
 
 Protecting the business, data and privacy of PrestaShop's users is one of our top priorities. We build our software with this goal in mind.

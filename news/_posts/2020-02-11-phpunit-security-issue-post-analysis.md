@@ -6,7 +6,7 @@ date:   2020-02-28 10:00:00
 authors: [ PierreRambaud, PrestaShop ]
 icon: icon-chat
 image: /assets/images/theme/meta-logo-build.png
-tags: [maintenance, patch, modules]
+tags: [maintenance, patch, modules, security]
 ---
 
 Early January, we encountered a [security issue with PHPUnit](https://build.prestashop.com/news/critical-security-vulnerability-in-prestashop-modules/) in some modules that allowed attackers to perform arbitrary code execution without authorization through the PHPUnit dependency. This vulnerability was discovered through a merchant whose shops were compromised. 

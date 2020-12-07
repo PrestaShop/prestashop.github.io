@@ -14,6 +14,7 @@ tags:
  - 1.7
  - 1.6.1.x
  - 1.6
+ - security
 ---
 
 PrestaShop 1.7.3.4 and 1.6.1.20 are now available. These versions fix security and PHP compatiblity issues.

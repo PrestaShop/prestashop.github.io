@@ -13,6 +13,7 @@ tags:
  - version
  - patch
  - releases
+ - security
 ---
 
 

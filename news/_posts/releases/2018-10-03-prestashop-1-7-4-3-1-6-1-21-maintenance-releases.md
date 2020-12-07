@@ -14,6 +14,7 @@ tags:
  - 1.7
  - 1.6.1.x
  - 1.6
+ - security
 ---
 
 PrestaShop 1.7.4.3 and 1.6.1.21 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. Some important issues are also fixed for 1.6.1.x. For the details, please read below.

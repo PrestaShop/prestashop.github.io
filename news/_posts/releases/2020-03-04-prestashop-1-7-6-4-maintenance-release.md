@@ -12,6 +12,7 @@ tags:
  - version
  - patch
  - releases
+ - security
 ---
 
 PrestaShop 1.7.6.4 is finally available! A critical security issue and regressions found on the previous 1.7.6 versions have been fixed. Upgrading your shop is highly recommended.

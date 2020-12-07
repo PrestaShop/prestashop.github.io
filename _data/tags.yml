@@ -26,7 +26,7 @@
   name: PrestaShop 1.7.2.x
 - slug: 1.7.2.0
   name: PrestaShop 1.7.2.0
-- slug: 1.7.3.X
+- slug: 1.7.3.x
   name: PrestaShop 1.7.3.x
 - slug: 1.7.3.0
   name: PrestaShop 1.7.3.0
@@ -58,8 +58,14 @@
   name: PrestaShop 1.7.6.x
 - slug: 1.7.6.0
   name: PrestaShop 1.7.6.0
+- slug: 1.7.7.x
+  name: PrestaShop 1.7.7.x
 - slug: 1.7.7
   name: PrestaShop 1.7.7
+- slug: 1.7.7.0
+  name: PrestaShop 1.7.7.0
+- slug: 1.7.8.x
+  name: PrestaShop 1.7.8.x
 - slug: 1.7.8
   name: PrestaShop 1.7.8
 - slug: architecture
@@ -108,12 +114,16 @@
   name: Maintenance
 - slug: module
   name: Modules
+- slug: module-releases
+  name: Modules releases
 - slug: news
   name: News
 - slug: npm
   name: npm
 - slug: override
   name: Overriding PrestaShop
+- slug: patch
+  name: Patch
 - slug: pr
   name: Pull-Requests
 - slug: process
@@ -146,7 +156,7 @@
   name: Tutorial
 - slug: ux
   name: User Experience
-- slug: versions
+- slug: version
   name: PrestaShop versions
 - slug: video
   name: Videos

@@ -42,7 +42,7 @@ Still, 300ms is not telling us *anything* specific about performance. It's neith
 
 And sticking to it, of course.
 
-At the end of the day, the suitable performance is the one that fulfills your consummers' expectation.
+At the end of the day, the suitable performance is the one that fulfills your consumers' expectation.
 
 ## There's not "one performance problem"
 

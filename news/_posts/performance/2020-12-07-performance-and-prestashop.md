@@ -36,7 +36,7 @@ Is it high? Or is it low? But compared to what? In which context?
 
 Same thing, if I'm told that in a [GCP](https://cloud.google.com/gcp/) environment, the maximum write sustained IOPS per GB for a regional SSD drive is 30: does it mean it performs? Is it good or...? 
 
-But let's be even more precise: during our White Paper, we assumed a web page should load *under* 300ms to be deemed acceptable for our users. Hence, we based our benchmarks on this value - and results above this response time where discarded as unacceptable.
+But let's be even more precise: in our White Paper scope, we assumed a web page should load *under* 300ms to be deemed acceptable for our users. Hence, we based our benchmarks on this value - and results above this response time where discarded as unacceptable.
 
 Still, 300ms is not telling us *anything* specific about performance. It's neither good, nor bad. It's all a matter of interpretation, analysis and finding what is *felt* acceptable by our users. 
 

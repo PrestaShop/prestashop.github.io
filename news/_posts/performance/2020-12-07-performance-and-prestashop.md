@@ -67,7 +67,7 @@ You get the drill: a performance issue is "the currently visible bottleneck".
 
 As said, performance tuning is about removing bottlenecks, one after the other. Which means at least two things:
 
- * You should only work on one bottleneck at a time in order to evaluate yours changes' impacts
+ * You should only work on one bottleneck at a time in order to evaluate your changes' impacts
  * There will always be a remaining bottleneck
 
 Added to that, either your application or system will evolve over time (data will increase, files will accumulate and network consumption will grow with load), you will need to adjust your tuning, work on different levers as new requirements will appear.

@@ -46,7 +46,7 @@ At the end of the day, the suitable performance is the one that fulfills your co
 
 ## There's not "one performance problem"
 
-When you're dealing with a performance issue, you're in fact dealing with "*the currently visible bottleneck*". And as soon as you've managed it, another bottleneck will taking its place. Always.
+When you're dealing with a performance issue, you're in fact dealing with "*the currently visible bottleneck*". And as soon as you've managed it, another bottleneck will take its place. Always.
 
 ![Botlleneck](https://www.techconsumerguide.com/wp-content/uploads/2019/10/cpu-gpu-bottleneck.jpg)
 

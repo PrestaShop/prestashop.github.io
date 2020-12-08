@@ -10,7 +10,7 @@ tags:
  - whitepaper
 ---
 
-Let's start discussing performance and tuning with PrestaShop! 
+Introducing a new series of article to talk about performance, benchmarking and PrestaShop!
 
 # Performance (& PrestaShop)
 

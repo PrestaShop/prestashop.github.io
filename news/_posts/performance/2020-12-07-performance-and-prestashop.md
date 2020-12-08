@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Performance and PrestaShop"
+title:  "Performance (& PrestaShop)"
 subtitle: "Sorry, Goose, but it's time to buzz the tower."
 date:   2020-12-04 9:00:00
 authors: [ Claude-ArnaudPerrot ]
@@ -16,8 +16,13 @@ Let's start discussing performance and tuning with PrestaShop!
 
 You may have heard of it, but we'll soon release a White Paper, which is all about PrestaShop's performance, how to benchmark it and how it behaves under loads. And what to do to keep it responding under 300ms.
 
-Still, there are a number of matters that won't be covered in this White Paper - hopefully the first in a series, fingers crossed - that we'd love to shine a light on.
+Still, there are a number of matters that can't be covered in a White Paper - hopefully the first in a series, fingers crossed.
+Or that can't be given the space we think they deserve.
+Or that we'd just love to shine a light on.
 
+So, we are starting a series of articles to do just that.
+
+But let's start we performance itself.
 Because, funny thing is, we often talk about performance as something we all understand and it is mostly true: we share the same expectations. 
 
 Though, we're not always on line with its implications.

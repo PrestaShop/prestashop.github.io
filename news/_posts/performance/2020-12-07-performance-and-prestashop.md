@@ -39,19 +39,19 @@ Just to illustrate, let's take this well-known number:
 
 Is it high? Or is it low? But compared to what? In which context?
 
-Same thing, if I'm told that in a GCP environment, the maximum write sustained IOPS per GB for a regional SSD drive is 30: does it mean it performs? Is it good or...? 
+Same thing, if I'm told that in a [GCP](https://cloud.google.com/gcp/) environment, the maximum write sustained IOPS per GB for a regional SSD drive is 30: does it mean it performs? Is it good or...? 
 
-But let's be even more precise: during our White Paper, we assumed a web page should load *under* 300ms to be deemed acceptable for our users. Hence, we based our benchmarks on this value - and results above this response time where discarded as unacceptable.
+But let's be even more precise: in our White Paper scope, we assumed a web page should load *under* 300ms to be deemed acceptable for our users. Hence, we based our benchmarks on this value - and results above this response time where discarded as unacceptable.
 
 Still, 300ms is not telling us *anything* specific about performance. It's neither good, nor bad. It's all a matter of interpretation, analysis and finding what is *felt* acceptable by our users. 
 
 And sticking to it, of course.
 
-At the end of the day, the suitable performance is the one that fulfills your consummers' expectation.
+At the end of the day, the suitable performance is the one that fulfills your consumers' expectation.
 
 ## There's not "one performance problem"
 
-When you're dealing with a performance issue, you're in fact dealing with "*the currently visible bottleneck*". And as soon as you've managed it, another bottleneck will taking its place. Always.
+When you're dealing with a performance issue, you're in fact dealing with "*the currently visible bottleneck*". And as soon as you've managed it, another bottleneck will take its place. Always.
 
 ![Botlleneck](https://www.techconsumerguide.com/wp-content/uploads/2019/10/cpu-gpu-bottleneck.jpg)
 
@@ -72,7 +72,7 @@ You get the drill: a performance issue is "the currently visible bottleneck".
 
 As said, performance tuning is about removing bottlenecks, one after the other. Which means at least two things:
 
- * You should only work on one bottleneck at a time in order to evaluate yours changes' impacts
+ * You should only work on one bottleneck at a time in order to evaluate your changes' impacts
  * There will always be a remaining bottleneck
 
 Added to that, either your application or system will evolve over time (data will increase, files will accumulate and network consumption will grow with load), you will need to adjust your tuning, work on different levers as new requirements will appear.

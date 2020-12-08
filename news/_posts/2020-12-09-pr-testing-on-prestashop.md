@@ -63,7 +63,8 @@ First of all, the PR template must be followed, and all questions should be answ
 Of course, you’re welcome to fix issues submitted by another contributor (as long as the issue is linked to the PR) : This is the magic of open source !
 - The “How to test” field must be filled. It must contain the steps to check the bug is indeed fixed. If possible, it should also contain some information about the possible side-effects of the PR, in order to help check if the PR does not introduce regressions. Without a clear “how to test”, it’s impossible for us to know what to check on the PR.
 The most important thing about this part is that it must be a functional “How to test” :  PR are tested by functional manual testers, not technical ones. If your PR needs to make some technical changes in order to be tested (use a certain hook in the code for example): either make a test module allowing us to test it, or your PR will be tested by the dev team.
-[Screenshot How to test]
+
+![alt text](https://github.com/PrestaShop/prestashop.github.io/tree/Robin-Fischer-PS-patch-1/assets/images/2020/12/clear_howtotest.png "Clear How to Test !")
 
 Other important things :
 - The PR needs to have been reviewed by the maintainers team, and without requested changes.
@@ -100,6 +101,9 @@ Then a comment is posted on the PR with all this information, and the labels are
 ## 2.6 - And if everything is OK ?
 
 If we did not find any bug during our test, then we change the label to “QA Approved”. This allows the dev team to finally merge the PR in the branch, and the PR will be available on Prestashop in the next build of the branch !
+
+![alt text](https://github.com/PrestaShop/prestashop.github.io/tree/Robin-Fischer-PS-patch-1/assets/images/2020/12/qa_approved.png "QA Approved !")
+
 Note that everything we test is tracked on an internal tool : it allows us, for example, to resume a test started by another member of the QA team, or to have the detail of what we checked on a specific PR.
 
 # 3 - Improvement PR

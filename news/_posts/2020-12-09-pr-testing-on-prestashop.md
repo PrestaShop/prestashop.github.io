@@ -40,7 +40,7 @@ And sometimes, the PrestaShop developers Team might ask us to test a PR as it is
 
 It highly depends on the complexity of the PR ! A small fix, with a clear issue and a clear “How to Test” can take only fifteen minutes to test, while a huge Migration PR can take several days.
 
-If a PR is really complex, or if the feature being implemented is large, there might be a second or even a third test by another QA analyst to validate it fully.
+If a PR is really complex, or if the feature being implemented is large, there might be a second or even a third test by another QA specialist to validate it fully.
 
 ### Why does my Pull Request have both the “Waiting for author” and “Waiting for QA” labels  ?
 
@@ -106,7 +106,7 @@ If we did not find any bug during our test, then we change the label to “QA Ap
 
 ![alt text](https://github.com/PrestaShop/prestashop.github.io/assets/images/2020/12/qa_approved.png "QA Approved !")
 
-Note that everything we test is tracked on an internal tool : it allows us, for example, to resume a test started by another member of the QA team, or to have the detail of what we checked on a specific PR.
+Note that everything the QA specialists test is tracked on an internal tool (we use Testrail) : it allows us, for example, to resume a test started by another member of the QA team, or to have the detail of what was checked on a specific PR.
 
 # III. Improvement Pull Request
 

@@ -27,7 +27,7 @@ First question that might come to your mind : Why is there QA on each PR ? Why n
 
 This is a legitimate question that pops regularly. It might be frustrating for a contributor to see his PR blocked in “Waiting for QA” for weeks, while other PR are validated and merged the same day they are created.
 
-There are some rules to rank  PRs. The QA team uses the following criterias (in order of importance) :
+There are some rules to sort PRs. The QA team uses the following criteria (in order of importance) :
 
 1. The branch on which PR is based : the oldest branch has the highest priority. We will test 1.7.6.x PR before 1.7.7.x PR, and 1.7.7.x PR before Develop PR. Modules’s PR usually have the lowest priority.
 2. The priority of the issue linked to the PR : A “must-have” issue should be tested before a “nice-to-have”, and before an issue without any priority (remember that the priority is displayed with a label in Github).

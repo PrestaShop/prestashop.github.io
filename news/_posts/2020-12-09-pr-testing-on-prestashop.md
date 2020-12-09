@@ -136,7 +136,7 @@ To do so, he generally compares two installs, one on the branch and one with the
 ### What happens next ?
 
 As for bug fix, if the tester finds any bug, he will comment the PR with all useful indicators to help the author to fix the bug.
-If he notices a missing behavior not specified (for example, a case where, in his opinion, an error should be displayed) he will ping the Product and Dev Team to discuss this particular point.
+If he/she notices a missing behavior not specified (for example, a case where, in his opinion, an error should be displayed) he/she will ping the Product team and / or the maintainers to discuss this particular point.
 
 And if everything is fine, he changes the label to “QA Approved”, the PR is merged in the branch and will be available on PrestaShop in the next build of the branch !
 

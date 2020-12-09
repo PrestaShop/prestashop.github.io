@@ -71,7 +71,7 @@ Other important things :
 - All automatic checks must have passed
 - The PR is made on the good branch
 
-If there is some information missing, the author and/or the dev team is pinged and the tester waits for this information to test the PR.
+If there is some information missing, the author, the maintainers or the product team is pinged and the tester waits for this information to test the PR.
 
 ### Reproduce the bug
 

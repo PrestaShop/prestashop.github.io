@@ -5,8 +5,7 @@ subtitle: "How does the QA team handle the PR testing ?"
 date:   2020-12-08 16:00:00
 authors: [ RobinFischer ]
 icon: icon-airplane
-tags:
- - 
+tags: [tests, community, contribute]
 ---
 
 PrestaShop SA created a Quality Assurance team 4 years ago, in order to improve the quality of the open-source project, but also of the PrestaShop's products and services

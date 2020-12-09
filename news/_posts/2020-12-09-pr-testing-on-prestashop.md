@@ -158,7 +158,7 @@ The other requirements are the same.
 
 ### Test of a Migration PR
 
-The test of a Migration PR is quite long : The tester must compare the Legacy page and Migrated page, and verify that there are no errors or missing information, missing link, missing button... on the Migrated page, with every configuration he thinks of (multi-currencies, multi-languages, multishop, with different parameters).
+The test of a Migration PR is quite long : The tester must compare the Legacy page and Migrated page, and verify that there are no errors or missing information, missing link, missing button... on the Migrated page, with every configuration he thinks of (multi-currencies, multi-languages, multistore, with different parameters).
 
 If there is a specification, he will follow every point and check it’s working fine. If there is not, he must find every detail by himself.
 

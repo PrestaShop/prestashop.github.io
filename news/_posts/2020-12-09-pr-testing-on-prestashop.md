@@ -40,7 +40,7 @@ And sometimes, the PrestaShop developers Team might ask us to test a PR as it is
 
 It highly depends on the complexity of the PR ! A small fix, with a clear issue and a clear “How to Test” can take only fifteen minutes to test, while a huge Migration PR can take several days.
 
-If a PR is really complex, or on a very sensible feature, there might be a second or even a third test to confirm everything is OK.
+If a PR is really complex, or if the feature being implemented is large, there might be a second or even a third test by another QA analyst to validate it fully.
 
 ### Why does my PR have both the “Waiting for author” and “Waiting for QA” labels  ?
 

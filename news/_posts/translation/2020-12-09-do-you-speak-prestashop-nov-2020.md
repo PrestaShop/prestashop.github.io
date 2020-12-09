@@ -18,7 +18,7 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 
 ### The Hebrew project is progressing!
 
-In just a month, the Hebrew project went from 63% to 83% translated and validated, an increase of 20%! What a great evolution! :scream: Congratulations! Special thanks to  [danielshapiro9](https://crowdin.com/profile/danielshapiro9) who has joined us just about a month ago and who has already translated 26,091 words. Thank you for your involvement! And of course, thank you to the other translators of the Hebrew project!
+In just a month, the Hebrew project went from 63% to 83% translated and validated, an increase of 20%! What a great evolution! :scream: Congratulations! Special thanks to [danielshapiro9](https://crowdin.com/profile/danielshapiro9) who has joined us just about a month ago and who has already translated 26,091 words. Thank you for your involvement! And of course, thank you to the other translators of the Hebrew project!
 
 ### :two_hearts: Special thanks to nanosim2
  

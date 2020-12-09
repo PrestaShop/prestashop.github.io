@@ -102,7 +102,7 @@ Then a comment is posted on the PR with all this information, and the labels are
 
 ### And if everything is OK ?
 
-If we did not find any bug during our test, then we change the label to “QA Approved”. This allows the dev team to finally merge the PR in the branch, and the PR will be available on Prestashop in the next build of the branch !
+If we did not find any bug during our test, then we change the label to “QA Approved”. This allows the maintainers to finally merge the PR in the branch, and the PR will be available on PrestaShop in the next build of the branch !
 
 ![alt text](https://github.com/PrestaShop/prestashop.github.io/assets/images/2020/12/qa_approved.png "QA Approved !")
 

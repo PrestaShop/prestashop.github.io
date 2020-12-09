@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – November 2020 edition"
 subtitle: "Where you'll learn that the Hebrew project is progressing"
-date:  2020-12-08 17:00:00
+date:  2020-12-09 17:00:00
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

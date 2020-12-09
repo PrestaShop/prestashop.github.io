@@ -10,7 +10,7 @@ tags:
 ---
 
 Prestashop created a Quality Assurance team 4 years ago, in order to improve the quality of the solution.
-For more than a year now, the team has grown quickly, allowing it to take quality to the next level ! The field of action is widening (test of new services like Prestashop Checkout, specification test and review…), but the core of the manual testers activity remains the same; testing the Pull Requests (“PR”) on Github, and testing every release.
+For more than a year now, the team has grown quickly, allowing it to take quality to the next level ! The field of action is widening (test of new services like [Prestashop Checkout](https://www.prestashop.com/en/prestashop-checkout), specification test and review…), but the core of the manual testers activity remains the same; testing the Pull Requests (“PR”) on Github, and testing every release.
 
 
 # I. Some questions you may have in mind

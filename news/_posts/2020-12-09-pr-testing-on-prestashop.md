@@ -33,7 +33,7 @@ There are some rules to sort PRs. The QA team uses the following criteria (in or
 2. The priority of the issue linked to the PR : A “must-have” issue should be tested before a “nice-to-have”, and before an issue without any priority (remember that the priority is displayed with a label in Github).
 3. The oldest PR should be tested before the newest.
 
-These are the theoretical rules to rank PRs. However, sometimes the context forces the QA team to bypass it.. For example, if there are a lot of Modules’ PR, we might test some of the oldest Modules’ PR even if there are 1.7.7.x PR to test as well.
+These are the theoretical rules to rank PRs. However, sometimes the context forces the QA team to bypass it... For example, we test not only the Core Pull Requests, but also the Pull Requests for PrestaShop open source modules. If the quantity of Modules Pull Requests waiting for us is too high, we might test some of the oldest Modules Pull Requests even if there are 1.7.7.x PR to test as well.
 And sometimes, the PrestaShop developers Team might ask us to test a PR as it is required for other topics.
 
 ### How long does it take to test a PR ?

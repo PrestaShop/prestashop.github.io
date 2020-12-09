@@ -34,7 +34,7 @@ There are some rules to rank  PRs. The QA team uses the following criterias (in 
 3. The oldest PR should be tested before the newest.
 
 These are the theoretical rules to rank PRs. However, sometimes the context forces the QA team to bypass it.. For example, if there are a lot of Modules’ PR, we might test some of the oldest Modules’ PR even if there are 1.7.7.x PR to test as well.
-And sometimes, the PrestaShop dev Team might ask us to test a PR which is blocking others.
+And sometimes, the PrestaShop developers Team might ask us to test a PR as it is required for other topics.
 
 ### How long does it take to test a PR ?
 

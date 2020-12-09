@@ -20,7 +20,7 @@ For more than a year now, the team has grown quickly, allowing it to take qualit
 First question that might come to your mind : Why is there QA on each PR ? Why not testing only during build release ?
 
 - The earlier a bug is detected in the process, the easier it is to fix it
-- Test on each PR allows us to make more detailed tests, and to improve the overall quality of the PrestaShop solution
+- Test each PR allows us to make more detailed tests, and to improve the overall quality of the PrestaShop solution
 - There can be several months between the merge of a PR and the first test of the release, enough time for the author of the PR to have “forgotten” what he did exactly.
 
 ### How do you choose which PR should be tested first ?

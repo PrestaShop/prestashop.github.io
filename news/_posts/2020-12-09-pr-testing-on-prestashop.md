@@ -114,7 +114,7 @@ The process for testing PR that adds an improvement to the solution is quite sim
 
 ### Requirements
 
-The requirements are almost the same for a bug fix. The main difference is that the issue should be validated by our Product or Dev Team : we do not accept every improvement, so it is rather important to have it validated by PrestaShop before submitting a PR.
+The requirements are almost the same for a bug fix. The main difference is that the issue should be specified and  validated by our Product or Developer Team : we do not accept every improvement, so it is rather important to have it validated by PrestaShop before submitting a PR.
 
 The “How to test” field should describe the new behavior, the nominal test cases, possible errors and how they should be handled, etc…
 If there are specifications written for the improvement, these should be linked to the PR too.

@@ -54,7 +54,7 @@ At the end of the day, the suitable performance is the one that fulfills your co
 
 When you're dealing with a performance issue, you're in fact dealing with "*the currently visible bottleneck*". And as soon as you've managed it, another bottleneck will take its place. Always.
 
-![Botlleneck][Bottleneck]
+![Bottleneck][Bottleneck]
 _From Wikipedia with love, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)_
 {: .text-center }
 

@@ -5,12 +5,11 @@ subtitle: "Sorry, Goose, but it's time to buzz the tower."
 date:   2020-12-04 9:00:00
 authors: [ Claude-ArnaudPerrot ]
 icon: icon-airplane
-tags:
- - performance
- - whitepaper
+tags: [performance, whitepaper]
 ---
 
 Introducing a new series of article to talk about performance, benchmarking and PrestaShop!
+
 
 # Performance (& PrestaShop)
 
@@ -33,9 +32,11 @@ So, here we go!
 
 It may seem counter-intuitive coming from a technical environment, either from web development or any other domain, but still performance is all about capabilities.
 
-Just to illustrate, let's take this well-known number:
+Just to illustrate, let's have a look at this Gatling graph and the active users:
 
-![NotANumber](https://upload.wikimedia.org/wikipedia/commons/5/56/Answer_to_Life.png)
+![NotANumber][NotANumber]
+_So many numbers with [Gatling](https://gatling.io/)_
+{: .text-center }
 
 Is it high? Or is it low? But compared to what? In which context?
 
@@ -53,7 +54,9 @@ At the end of the day, the suitable performance is the one that fulfills your co
 
 When you're dealing with a performance issue, you're in fact dealing with "*the currently visible bottleneck*". And as soon as you've managed it, another bottleneck will take its place. Always.
 
-![Botlleneck](https://www.techconsumerguide.com/wp-content/uploads/2019/10/cpu-gpu-bottleneck.jpg)
+![Botlleneck][Bottleneck]
+_From Wikipedia with love, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)_
+{: .text-center }
 
 Let's say my application is slow, so I'm analysing it and find out that my crappy hard drive is failing. So I replace it with a newer and faster one. 
 My application is then less slow, for sure, but still not fast enough: I've just removed the first visible bottleneck.
@@ -68,7 +71,9 @@ You get the drill: a performance issue is "the currently visible bottleneck".
 
 ## Performance is a continuous thing
 
-![UpUpAndAway](https://www.uncommonlogic.com/wp-content/uploads/2018/08/uncommon-logic-ongoing-optimization-e1533934894476.png)
+![UpUpAndAway][UpUpAndAway]
+_The processor can perform when it is not slowed down by other parts_
+{: .text-center }
 
 As said, performance tuning is about removing bottlenecks, one after the other. Which means at least two things:
 
@@ -78,3 +83,7 @@ As said, performance tuning is about removing bottlenecks, one after the other. 
 Added to that, either your application or system will evolve over time (data will increase, files will accumulate and network consumption will grow with load), you will need to adjust your tuning, work on different levers as new requirements will appear.
 
 Every enhancement won't have the same effect (or any) over your system's life cycle.
+
+[NotANumber]: /assets/images/2020/12/ResponseTimePercentile.png
+[Bottleneck]: /assets/images/2020/12/Von_Neumann_Architecture.png
+[UpUpAndAway]: /assets/images/2020/12/cpuusage.png

@@ -17,7 +17,7 @@ For more than a year now, the team has grown quickly, allowing it to take qualit
 
 ### Why do you test every PR ?
 
-First question that might come to your mind : Why is there QA on each PR ? Why not test only during build release ?
+First question that might come to your mind : Why is there QA on each PR ? Why not testing only during build release ?
 
 - The earlier a bug is detected in the process, the easier it is to fix it
 - Test on each PR allows us to make more detailed tests, and to improve the overall quality of the PrestaShop solution
@@ -78,7 +78,7 @@ If there is some information missing, the author and/or the dev team is pinged a
 The first step of PR testing is reproducing the bug (on the branch, without the PR) : This allows the tester to make sure that the “How to test” is clear and also helps to see what are the possible regressions introduced by the PR. 
 This is why a complete issue is necessary : the more information it contains, the easier it is to reproduce it, and to test it.
 
-### Check the PR fixes the bug in the issue
+### Check if the PR fixes the bug in the issue
 
 This is the most logical part of PR Testing : after reproducing the bug on the branch, the tester installs the PR and checks if the bug is indeed fixed, following the “How to test”.
 
@@ -169,3 +169,5 @@ That’s why a test on a Migration PR takes more time than a “classic” one (
 
 QA's work on PR can be really time consuming, but it allows PrestaShop to maintain and even improve the quality of the solution.
 You can help us by submitting Pull Requests and issues as complete as possible, it will facilitate and speed up the processing of your PR !
+
+Thanks for your contributions :)

@@ -67,7 +67,7 @@ The most important thing about this part is that it must be a functional “How 
 ![alt text](https://github.com/PrestaShop/prestashop.github.io/assets/images/2020/12/clear_howtotest.png "Clear How to Test in a PR")
 
 Other important things :
-- The PR needs to have been reviewed by the maintainers team, and without requested changes.
+- The PR needs to have been reviewed and approved by at least two maintainers.
 - All automatic checks must have passed
 - The PR is made on the good branch
 

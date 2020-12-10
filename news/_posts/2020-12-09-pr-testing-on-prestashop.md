@@ -81,7 +81,7 @@ This is why a complete issue is necessary : the more information it contains, th
 
 ### Check if the Pull Request fixes the bug in the issue
 
-This is the most logical part of PR Testing : after reproducing the bug on the branch, the tester installs the PR and checks if the bug is indeed fixed, following the “How to test”.
+This is the most logical part of PR Testing: after reproducing the bug on the branch, the QA analyst checks out the PR locally and verifies if the bug is indeed fixed, following the instructions in “How to test”.
 
 If the feature is a bit complex, or if the “How to test” is not complete enough, the tester will also test some edge cases in order to make sure that the PR fixes the issue completely.
 

@@ -150,7 +150,7 @@ As for bug fix, these tests are tracked on an internal tool. The tester might al
 
 # IV. Migration Pull Request
 
-Migration Pull Request are quite different to other ones : the purpose of these PR is to move from a Legacy framework to a Symfony framework, while keeping the same functionalities (and some minor improvements).
+Migration Pull Requests are quite different to other ones: the purpose of these PR is to move a page from the Legacy framework to the Symfony framework, while keeping the same features (and optionally adding some minor improvements).
 
 This makes the QA's work on these Pull Requests quite longer and harder compared to other PRs.
 

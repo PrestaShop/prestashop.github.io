@@ -159,7 +159,7 @@ The other requirements are the same.
 
 ### Test of a Migration Pull Request
 
-The test of a Migration PR is quite long : The tester must compare the Legacy page and Migrated page, and verify that there are no errors or missing information, missing link, missing button... on the Migrated page, with every configuration he thinks of (multi-currencies, multi-languages, multistore, with different parameters).
+The test of a Migration PR is quite long: The QA analyst must compare the Legacy page and Migrated page, and verify that there are no errors and nothing is lost (information, links, buttons, etc.), using every configuration they can think of (multi-currencies, multi-languages, multi-store, using different parameters...).
 
 If there is a specification, the QA analyst will follow every point and check that it’s working fine. If there is not, they must find every detail by themselves.
 

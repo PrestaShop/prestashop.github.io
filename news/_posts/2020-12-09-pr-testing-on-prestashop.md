@@ -116,7 +116,7 @@ Note that everything the QA specialists test is tracked on an internal tool (we 
 
 # III. Improvement Pull Request
 
-The process for testing Pull Request that adds an improvement to the solution is quite similar to that of bug fixing Pull Request.
+The process for testing a Pull Request that adds an improvement to the solution is quite similar to that of a bug fix Pull Request.
 
 ### Requirements
 

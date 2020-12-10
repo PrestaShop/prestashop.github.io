@@ -135,7 +135,7 @@ This step is simple: using the information in the issue, the "How to test" instr
 
 ### Regression testing
 
-For improvement, the regression test part is even more important than for bug fix : the tester must make sure everything in the feature on which the improvement is added is still working fine.
+For improvements, the regression test part is even more important than for bug fixes: the QA analyst must make sure that the original features the PR improves are still working as expected.
 
 To do so, he generally compares two installs, one on the branch and one with the PR, performs the same actions on each one and checks that the result is strictly identical. He can also use some parts of the test campaign usually used to test build releases
 

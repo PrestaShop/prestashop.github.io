@@ -25,7 +25,7 @@ The first question that might come to your mind: Why is there a QA verification 
 
 This is a legitimate question that pops up regularly. It might be frustrating for a contributor to see their Pull Request blocked in “Waiting for QA” for weeks, while other PRs are validated and merged the same day they are created.
 
-There are some rules to sort Pull Requests. The QA team uses the following criteria (in order of importance) :
+The QA team uses the following criteria to sort Pull Requests (in order of importance):
 
 1. The branch on which Pull Request is based : the oldest [supported branch](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/supported-branches/) has the highest priority. We will test 1.7.6.x PR before 1.7.7.x PR, and 1.7.7.x PR before Develop PR. Modules’s PR usually have the lowest priority.
 2. The priority of the issue linked to the PR : A “must-have” issue should be tested before a “nice-to-have”, and before an issue without any priority (remember that the priority is displayed with a label in Github).

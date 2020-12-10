@@ -32,7 +32,8 @@ There are some rules to sort Pull Requests. The QA team uses the following crite
 3. The oldest Pull Request should be tested before the newest.
 
 These are the theoretical rules to rank Pull Requests. However, sometimes the context forces the QA team to bypass it... For example, we test not only the Core Pull Requests, but also the Pull Requests for PrestaShop open source modules. If the quantity of Modules Pull Requests waiting for us is too high, we might test some of the oldest Modules Pull Requests even if there are 1.7.7.x PR to test as well.
-And sometimes, the PrestaShop developers Team might ask us to test a PR as it is required for other topics.
+
+And sometimes, the maintainers might ask us to test a PR that is required to unblock other tasks.
 
 ### How long does it take to test a Pull Request ?
 

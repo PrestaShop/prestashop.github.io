@@ -97,7 +97,8 @@ With the PR, the issue, and the information we can get by looking at the code (f
 
 ### What happens if we find some bugs ?
 
-If, during the test phase, we find some bugs, we try to give as much information as possible to the author, in order to help him/her reproduce the bug, and find what causes it :
+If we find a bug during the test phase, we will try to provide as much information as possible to the author so that they can reproduce it and fix it:
+
 - Reproduction steps
 - Screenshots or screen records
 Then a comment is posted on the PR with all this information, and the labels are changed. If we have a question on the PR (a behavior or a display we’re not sure of, for example) we can ping the maintainers, the product or the UX team as well.

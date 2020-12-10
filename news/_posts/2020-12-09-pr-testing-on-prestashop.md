@@ -160,7 +160,7 @@ The test of a Migration PR is quite long : The tester must compare the Legacy pa
 
 If there is a specification, he will follow every point and check it’s working fine. If there is not, he must find every detail by himself.
 
-During this run the tester might use the test campaign created for build releases, and also update these same tests if necessary.
+During this run the QA analyst might use the test campaign created for build releases, and also update these same tests if necessary.
 That’s why a test on a Migration PR takes longer than a “classic” one (sometimes several days).
 
 # Conclusion

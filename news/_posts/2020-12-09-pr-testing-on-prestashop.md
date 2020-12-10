@@ -17,7 +17,7 @@ The PrestaShop Company created a Quality Assurance team 4 years ago, in 2016, to
 
 The first question that might come to your mind: Why is there a QA verification on each Pull Request? Why not test the release build only?
 
-- The earlier a bug is detected in the process, the easier it is to fix it
+- The earlier a bug is detected in the process, the easier it is to find the source of the problem and fix it
 - Testing each Pull Request allows the QA analysts to perform more detailed tests, improving the overall software quality
 - There can be several months between the moment a PR is merged and the time the build is first tested, enough for the author of the PR to have “forgotten” what they did exactly.
 
@@ -43,7 +43,9 @@ If a PR is really complex, or if the feature being implemented is complex, there
 
 ### Why does my Pull Request have both the “Waiting for author” and “Waiting for QA” labels?
 
-If the QA analyst in charge asks a question on your PR (for example requiring more details on “How to test”), they will add the “Waiting for author” label, but without removing the “Waiting for QA” one. The latter is kept in order to be able to easily search for the PRs waiting for a response from its author. So if you see this label, it means more information is needed – check the last comments on the PR!
+If the QA analyst in charge asks a question on your PR (for example requiring more details on “How to test”), they will add the “Waiting for author” label, but without removing the “Waiting for QA” one. The latter is kept in order to be able to easily search for the PRs waiting for a response from its author.
+
+So if you see this label, it means more information is needed – check the last comments on the PR!
 
 # II. Test of a bug fix Pull Request
 
@@ -53,7 +55,7 @@ PRs can be classified into 3 main categories (with a few special cases):
 - Improvement
 - Migration
 
-I will first focus on the bug fix Pull Request, since it’s the most common type there is, then detail the difference for improvement and migration PR.
+I will first focus on the bug fix Pull Request, since it’s the most common type there is, then detail the difference between a bug fix, an improvement and a migration PR.
 
 ### Requirements
 
@@ -70,7 +72,7 @@ The most important thing about this part is that it must be a functional “How 
 
 Other important things:
 
-- The PR needs to have been reviewed and approved by at least two maintainers.
+- The Pull Request needs to have been reviewed and approved by at least two maintainers (for a PR on the Core, only one approval for a PR on a module).
 - All [automated checks](https://build.prestashop.com/news/the-review-process/#automatic-tasks-when-you-open-a-pull-request) must have passed
 - The PR targets the right branch
 

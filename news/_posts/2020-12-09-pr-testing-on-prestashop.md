@@ -39,7 +39,7 @@ And sometimes, the maintainers might ask us to test a PR that is required to unb
 
 It highly depends on the complexity of the PR! A small fix, with a clear issue and a clear “How to Test” description can take as little as fifteen minutes to test, while a huge migration PR can require several days.
 
-If a PR is really complex, or if the feature being implemented is large, there might be a second or even a third test by another QA specialist to validate it fully.
+If a PR is really complex, or if the feature being implemented is complex, there might be a second or even a third test by another QA specialist to validate it fully.
 
 ### Why does my Pull Request have both the “Waiting for author” and “Waiting for QA” labels  ?
 

@@ -35,7 +35,7 @@ These are the theoretical rules to rank Pull Requests. However, sometimes the co
 
 And sometimes, the maintainers might ask us to test a PR that is required to unblock other tasks.
 
-### How long does it take to test a Pull Request ?
+### How long does it take to test a Pull Request?
 
 It highly depends on the complexity of the PR ! A small fix, with a clear issue and a clear “How to Test” can take only fifteen minutes to test, while a huge Migration PR can take several days.
 

@@ -74,7 +74,7 @@ Other important things:
 - All [automated checks](https://build.prestashop.com/news/the-review-process/#automatic-tasks-when-you-open-a-pull-request) must have passed
 - The PR targets the right branch
 
-If there is some information missing, the author, the maintainers or the product team is pinged and the tester waits for this information to test the PR.
+If there is some information missing, the author, the maintainers or the product team is pinged and the QA analyst waits for this information to start testing the PR.
 
 ### Reproduce the bug
 

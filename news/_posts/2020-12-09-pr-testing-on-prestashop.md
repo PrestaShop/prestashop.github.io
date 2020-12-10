@@ -58,6 +58,7 @@ I will first focus on the bug fix Pull Request, since it’s the most common typ
 ### Requirements
 
 Several things are required in order to have a PR being tested on our Github repository.
+
 First of all, the PR template must be followed, and all questions should be answered:
 - An issue should be linked to the PR. Each bug has to be [reproduced and qualified](https://build.prestashop.com/news/how-bug-reports-are-handled/) before being fixed. This helps the team to answer several questions : Is this really a bug ? What is the severity (see [Severity Classification](https://build.prestashop.com/news/severity-classification/)) ? What behavior is expected ? On which branch should it be fixed ?
 Of course, you’re welcome to fix issues submitted by another contributor (as long as the issue is linked to the PR) : This is the magic of open source !

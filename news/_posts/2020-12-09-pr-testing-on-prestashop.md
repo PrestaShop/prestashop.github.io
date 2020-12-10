@@ -110,7 +110,7 @@ The QA analyst will post a comment on the PR with the above information, and cha
 
 If we don't find any bug during our test, then we change the label to “QA Approved”. This allows the maintainers to finally merge the PR in the branch. The change will be available on PrestaShop in the next build of the branch!
 
-![alt text](https://github.com/PrestaShop/prestashop.github.io/assets/images/2020/12/qa_approved.png "QA Approved !")
+![QA approved!](/assets/images/2020/12/qa_approved.png)
 
 Note that everything the QA specialists test is tracked on an internal tool (we use Testrail) : it allows us, for example, to resume a test started by another member of the QA team, or to have the detail of what was checked on a specific PR.
 

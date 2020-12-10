@@ -101,7 +101,8 @@ If we find a bug during the test phase, we will try to provide as much informati
 
 - Reproduction steps
 - Screenshots or screen records
-Then a comment is posted on the PR with all this information, and the labels are changed. If we have a question on the PR (a behavior or a display we’re not sure of, for example) we can ping the maintainers, the product or the UX team as well.
+
+The QA analyst will post a comment on the PR with the above information, and change the PR labels. If we have a question on the PR (a behavior or a display we’re not sure of, for example) we may ping the maintainers, the product or the UX team as well.
 
 ![A comment about a bug on a PR](/assets/images/2020/12/qa_return_pr.png)
 

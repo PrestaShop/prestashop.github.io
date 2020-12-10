@@ -148,7 +148,7 @@ And if everything is fine, he changes the label to “QA Approved”, the PR is 
 
 As for bug fix, these tests are tracked on an internal tool. The tester might also update some of the test campaigns to add or modify test cases related to this improvement.
 
-# IV. Migration Pull Request
+# IV. Migration Pull Requests
 
 Migration Pull Requests are quite different to other ones: the purpose of these PR is to move a page from the Legacy framework to the Symfony framework, while keeping the same features (and optionally adding some minor improvements).
 

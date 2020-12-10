@@ -21,7 +21,7 @@ The first question that might come to your mind: Why is there a QA verification 
 - Test each Pull Request allows us to make more detailed tests, and to improve the overall quality of the PrestaShop solution
 - There can be several months between the moment a PR is merged and the time the build is first tested, enough for the author of the PR to have “forgotten” what they did exactly.
 
-### How do you choose which Pull Request should be tested first ?
+### How do you choose which Pull Request should be tested first?
 
 This is a legitimate question that pops regularly. It might be frustrating for a contributor to see his Pull Request blocked in “Waiting for QA” for weeks, while other PR are validated and merged the same day they are created.
 

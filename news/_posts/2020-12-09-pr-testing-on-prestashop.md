@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Testing Pull Requests on PrestaShop"
-subtitle: "How does the QA team handle the testing of Pull Requests ?"
+subtitle: "How does the QA team handle the testing of Pull Requests?"
 date:   2020-12-08 16:00:00
 authors: [ RobinFischer ]
 icon: icon-airplane

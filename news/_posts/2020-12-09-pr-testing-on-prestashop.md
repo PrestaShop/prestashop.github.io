@@ -72,7 +72,7 @@ Other important things:
 
 - The PR needs to have been reviewed and approved by at least two maintainers.
 - All [automated checks](https://build.prestashop.com/news/the-review-process/#automatic-tasks-when-you-open-a-pull-request) must have passed
-- The PR is made on the good branch
+- The PR targets the right branch
 
 If there is some information missing, the author, the maintainers or the product team is pinged and the tester waits for this information to test the PR.
 

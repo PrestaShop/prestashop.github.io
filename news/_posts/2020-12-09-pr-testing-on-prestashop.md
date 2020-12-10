@@ -19,7 +19,7 @@ First question that might come to your mind : Why is there QA on each Pull Reque
 
 - The earlier a bug is detected in the process, the easier it is to fix it
 - Test each Pull Request allows us to make more detailed tests, and to improve the overall quality of the PrestaShop solution
-- There can be several months between the merge of a PR and the first test of the release, enough time for the author of the PR to have “forgotten” what he did exactly.
+- There can be several months between the moment a PR is merged and the time the build is first tested, enough for the author of the PR to have “forgotten” what they did exactly.
 
 ### How do you choose which Pull Request should be tested first ?
 

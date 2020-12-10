@@ -84,6 +84,8 @@ Added to that, either your application or system will evolve over time (data wil
 
 Every enhancement won't have the same effect (or any) over your system's life cycle.
 
+Now that we're all on the same page about the concepts of performance, we are ready to dive into more crunchy details! Prepare yourselves for the next articles in this series, hopefully in the coming weeks!
+
 [NotANumber]: /assets/images/2020/12/ResponseTimePercentile.png
 [Bottleneck]: /assets/images/2020/12/Von_Neumann_Architecture.png
 [UpUpAndAway]: /assets/images/2020/12/cpuusage.png

@@ -68,7 +68,8 @@ The most important thing about this part is that it must be a functional “How 
 
 ![Example of a clear "How to Test" in a PR](/assets/images/2020/12/clear_howtotest.png)
 
-Other important things :
+Other important things:
+
 - The PR needs to have been reviewed and approved by at least two maintainers.
 - All automatic checks must have passed
 - The PR is made on the good branch

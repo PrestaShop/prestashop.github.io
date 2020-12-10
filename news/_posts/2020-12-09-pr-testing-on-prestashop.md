@@ -158,7 +158,7 @@ This makes the QA work on these Pull Request quite longer and harder than on oth
 
 The main difference here is that the issue linked to the PR might be just an Epic listing all the items that should be migrated.
 
-For the “How to Test”, it’s sometimes only “Everything should work as in Legacy”. If there is a specification linked to this page, it should be added to the “How to Test”, to help the tester check everything. If the migrated page is “hidden”, the “How to Test” must also contain the URL to access it.
+For the “How to Test”, it’s sometimes only “Everything should work as in Legacy”. If there is a specification linked to this page, it should be added to the “How to Test”, to help the QA analyst make sure to check everything. If the migrated page is “hidden” (i.e. not accessible through the menu), the “How to Test” must also contain the URL to access it.
 
 The other requirements are the same.
 

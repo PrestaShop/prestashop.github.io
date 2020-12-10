@@ -146,7 +146,7 @@ If he/she notices a missing behavior not specified (for example, a case where, i
 
 And if everything is fine, he changes the label to “QA Approved”, the PR is merged in the branch and will be available on PrestaShop in the next build of the branch !
 
-As for bug fix, these tests are tracked on an internal tool. The tester might also update some of the test campaigns to add or modify test cases related to this improvement.
+Same as for bug fixes, these tests are tracked on an internal tool. The QA analyst might also update some of the test campaigns to add or modify test cases related to this improvement.
 
 # IV. Migration Pull Requests
 

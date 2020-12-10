@@ -43,7 +43,7 @@ If a PR is really complex, or if the feature being implemented is large, there m
 
 ### Why does my Pull Request have both the “Waiting for author” and “Waiting for QA” labels  ?
 
-If the tester in charge has a question on your PR (for example ask for a more explicit “How to test”), he will add the “Waiting for author” label, but without removing the “Waiting for QA” ones (in order to be able to check easily what are the PR waiting for a response from the author). So this means more information is needed, check the last comments on the PR !
+If the QA analyst in charge asks a question on your PR (for example requiring more details on “How to test”), they will add the “Waiting for author” label, but without removing the “Waiting for QA” one. The latter is kept in order to be able to easily search for the PRs waiting for a response from its author. So if you see this label, it means more information is needed – check the last comments on the PR!
 
 # II. Test of bug fix Pull Request
 

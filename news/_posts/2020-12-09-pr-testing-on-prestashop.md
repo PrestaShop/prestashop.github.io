@@ -106,7 +106,7 @@ The QA analyst will post a comment on the PR with the above information, and cha
 
 ![A comment about a bug on a PR](/assets/images/2020/12/qa_return_pr.png)
 
-### And if everything is OK ?
+### And if everything is OK?
 
 If we did not find any bug during our test, then we change the label to “QA Approved”. This allows the maintainers to finally merge the PR in the branch, and the PR will be available on PrestaShop in the next build of the branch !
 

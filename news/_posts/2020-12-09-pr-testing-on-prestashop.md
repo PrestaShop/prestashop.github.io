@@ -46,7 +46,8 @@ If the tester in charge has a question on your PR (for example ask for a more ex
 
 # II. Test of bug fix Pull Request
 
-PR can be classified into 3 main categories (with a few special cases) :
+PRs can be classified into 3 main categories (with a few special cases):
+
 - Bug fix
 - Improvement
 - Migration

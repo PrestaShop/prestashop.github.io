@@ -139,7 +139,7 @@ This step is simple: using the information in the issue, the "How to test" instr
 
 For improvements, the regression test part is even more important than for bug fixes: the QA analyst must make sure that the original features the PR improves are still working as expected.
 
-To do so, we generally compare two installs (one on the branch with the PR and and one without), then perform the same actions on each install, and verify that the result is strictly identical. We can also carry out parts of the test campaign usually performed to verify build releases.
+To do so, we generally compare two installs (one on the branch with the PR and one without), then perform the same actions on each install, and verify that the result is strictly identical. We can also carry out parts of the test campaign usually performed to verify build releases.
 
 ### What happens next?
 

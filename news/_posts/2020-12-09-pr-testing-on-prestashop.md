@@ -28,7 +28,7 @@ This is a legitimate question that pops up regularly. It might be frustrating fo
 The QA team uses the following criteria to sort Pull Requests (in order of importance):
 
 1. The branch on which Pull Request is based: the oldest [supported branch](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/supported-branches/) has the highest priority. We will test `1.7.6.x` PRs before `1.7.7.x` PRs, and `1.7.7.x` PRs before `develop` PRs. PRs submitted to modules usually have the lowest priority.
-2. The priority of the issue linked to the PR : A “must-have” issue should be tested before a “nice-to-have”, and before an issue without any priority (remember that the priority is displayed with a label in Github).
+2. The priority of the issue the PR is linked to: A PR solving a “must-have” issue should be tested before a “nice-to-have”, and before an issue without any priority (remember that the priority is displayed with a label in Github).
 3. Pull Requests should be tested by submit date, from oldest to most recent.
 
 These are the theoretical rules to rank Pull Requests. However, sometimes the context forces the QA team to bypass it... For example, we test not only the Core Pull Requests, but also the Pull Requests for PrestaShop open source modules. If the quantity of Modules Pull Requests waiting for us is too high, we might test some of the oldest Modules Pull Requests even if there are 1.7.7.x PR to test as well.

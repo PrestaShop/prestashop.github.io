@@ -45,7 +45,7 @@ If a PR is really complex, or if the feature being implemented is complex, there
 
 If the QA analyst in charge asks a question on your PR (for example requiring more details on “How to test”), they will add the “Waiting for author” label, but without removing the “Waiting for QA” one. The latter is kept in order to be able to easily search for the PRs waiting for a response from its author. So if you see this label, it means more information is needed – check the last comments on the PR!
 
-# II. Test of bug fix Pull Request
+# II. Test of a bug fix Pull Request
 
 PRs can be classified into 3 main categories (with a few special cases):
 

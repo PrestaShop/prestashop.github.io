@@ -86,7 +86,7 @@ This is why a complete issue is necessary : the more information it contains, th
 
 This is the most logical part of PR Testing: after reproducing the bug on the branch, the QA analyst checks out the PR locally and verifies if the bug is indeed fixed, following the instructions in “How to test”.
 
-If the feature is a bit complex, or if the “How to test” is not complete enough, the tester will also test some edge cases in order to make sure that the PR fixes the issue completely.
+If the feature is complex enough, or if the “How to test” is not exhaustive, the QA analyst will also test some edge cases in order to make sure that the PR fixes the issue completely.
 
 ### Regression testing
 

@@ -122,7 +122,7 @@ If there are specifications written for the improvement, these should be linked 
 
 All other information is the same.
 
-If there is some information missing, the tester pings the author, the product team and/or the maintainers and waits for this information to test the PR.
+If some information is missing, the QA analyst will ping the author, the product team and/or the maintainers and wait for this information to be completed before starting to work on the PR.
 
 ### Check that the improvement works accordingly to the issue and specification
 

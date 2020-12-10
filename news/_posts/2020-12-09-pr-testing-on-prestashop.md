@@ -23,7 +23,7 @@ The first question that might come to your mind: Why is there a QA verification 
 
 ### How do you choose which Pull Request should be tested first?
 
-This is a legitimate question that pops regularly. It might be frustrating for a contributor to see his Pull Request blocked in “Waiting for QA” for weeks, while other PR are validated and merged the same day they are created.
+This is a legitimate question that pops up regularly. It might be frustrating for a contributor to see their Pull Request blocked in “Waiting for QA” for weeks, while other PRs are validated and merged the same day they are created.
 
 There are some rules to sort Pull Requests. The QA team uses the following criteria (in order of importance) :
 

@@ -158,7 +158,7 @@ The other requirements are the same.
 
 The test of a Migration PR is quite long : The tester must compare the Legacy page and Migrated page, and verify that there are no errors or missing information, missing link, missing button... on the Migrated page, with every configuration he thinks of (multi-currencies, multi-languages, multistore, with different parameters).
 
-If there is a specification, he will follow every point and check it’s working fine. If there is not, he must find every detail by himself.
+If there is a specification, the QA analyst will follow every point and check that it’s working fine. If there is not, they must find every detail by themselves.
 
 During this run the QA analyst might use the test campaign created for build releases, and also update these same tests if necessary.
 That’s why a test on a Migration PR takes longer than a “classic” one (sometimes several days).

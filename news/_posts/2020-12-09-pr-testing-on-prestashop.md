@@ -123,7 +123,7 @@ The process for testing a Pull Request that adds an improvement to the solution 
 The requirements are almost the same for a bug fix. The main difference is that the new feature should be adequately [specified in writing](https://github.com/PrestaShop/prestashop-specs/) and greenlighted by the Product team or the maintainers: not all improvements are necessarily accepted, so it is important to discuss them with the team in an issue before submitting a PR.
 
 The “How to test” field should describe the new behavior, the nominal test cases, possible errors and how they should be handled, etc... unless formal acceptance tests have been included in the specification.
-If there are specifications written for the improvement, these should be linked to the PR too.
+Written specifications should be linked in the PR as well.
 
 All other information is the same.
 

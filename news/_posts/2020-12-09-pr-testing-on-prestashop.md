@@ -18,6 +18,7 @@ The PrestaShop Company created a Quality Assurance team 4 years ago, in 2016, to
 The first question that might come to your mind: Why is there a QA verification on each Pull Request? Why not test the release build only?
 
 - The earlier a bug is detected in the process, the easier it is to find the source of the problem and fix it
+![The cost of fixing a bug rises over time](/assets/images/2020/12/cost_bug_time.jpg)
 - Testing each Pull Request allows the QA analysts to perform more detailed tests, improving the overall software quality
 - There can be several months between the moment a PR is merged and the time the build is first tested, enough for the author of the PR to have “forgotten” what they did exactly.
 
@@ -168,7 +169,7 @@ The other requirements are the same.
 
 The test of a Migration PR is quite long: The QA analyst must compare the Legacy page and Migrated page, and verify that there are no errors and nothing is lost (information, links, buttons, etc.), using every configuration they can think of (multi-currencies, multi-languages, multi-store, using different parameters...).
 
-If there is a specification, the QA analyst will follow every point and check that it’s working fine. If there is not, they must find every detail by themselves.
+If there is a specification, the QA analyst will follow every point and check that it’s working fine (an example of a migration specification : ["Product listing" BO page](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/products/catalog-products-listing.md)). If there is not, they must find every detail by themselves.
 
 During this run the QA analyst might use the test campaign created for build releases, and also update these same tests if necessary.
 That’s why a test on a Migration PR takes longer than a “classic” one (sometimes several days).

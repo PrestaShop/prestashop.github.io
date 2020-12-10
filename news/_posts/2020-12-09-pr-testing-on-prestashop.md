@@ -144,7 +144,7 @@ To do so, we generally compare two installs (one on the branch with the PR and a
 Like with bug fixes, if the QA analyst finds any bug, they will comment the PR with all useful tips to help the author fix the bug.
 If he/she notices a missing behavior not specified (for example, a case where, in his opinion, an error should be displayed) he/she will ping the Product team and / or the maintainers to discuss this particular point.
 
-And if everything is fine, he changes the label to “QA Approved”, the PR is merged in the branch and will be available on PrestaShop in the next build of the branch !
+If everything is fine, the QA analyst changes the label to “QA Approved” and the PR is merged by a maintainer, making it available on PrestaShop in the next build of the branch!
 
 Same as for bug fixes, these tests are tracked on an internal tool. The QA analyst might also update some of the test campaigns to add or modify test cases related to this improvement.
 

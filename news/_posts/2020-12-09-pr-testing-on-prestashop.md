@@ -152,7 +152,7 @@ Same as for bug fixes, these tests are tracked on an internal tool. The QA analy
 
 # IV. Migration Pull Requests
 
-Migration Pull Requests are quite different to other ones: the purpose of these PR is to move a page from the Legacy framework to the Symfony framework, while keeping the same features (and optionally adding some minor improvements).
+Migration Pull Requests are quite different to other ones: the purpose of these PRs is to move a page from the Legacy framework to the Symfony framework, while keeping the same features (and optionally adding some minor improvements).
 
 This makes the QA's work on these Pull Requests quite longer and harder compared to other PRs.
 

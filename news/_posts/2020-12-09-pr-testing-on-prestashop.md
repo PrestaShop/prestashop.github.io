@@ -73,7 +73,7 @@ The most important thing about this part is that it must be a functional “How 
 
 Other important things:
 
-- The Pull Request needs to have been reviewed and approved by at least two maintainers (for a PR on the Core, only one approval for a PR on a module).
+- The Pull Request needs to have been reviewed and approved by at least two maintainers (for a PR on the Core, only one approval for a PR on a module)
 - All [automated checks](https://build.prestashop.com/news/the-review-process/#automatic-tasks-when-you-open-a-pull-request) must have passed
 - The PR targets the right branch
 

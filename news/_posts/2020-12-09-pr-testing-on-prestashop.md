@@ -32,7 +32,7 @@ The QA team uses the following criteria to sort Pull Requests (in order of impor
 2. The priority of the issue the PR is linked to: A PR solving a “must-have” issue should be tested before a “nice-to-have”, and before an issue without any priority (remember that the priority is displayed with a label in Github).
 3. Pull Requests should be tested by submit date, from oldest to most recent.
 
-These are the theoretical rules to rank Pull Requests. However, sometimes the context forces the QA team to bypass it... For example, in addition to Pull Requests submitted to the Core, we also test Pull Requests submitted to PrestaShop's open source modules. If the number of Module Pull Requests waiting for QA is too high, we might test some of the oldest Modules Pull Requests even if there are 1.7.7.x PRs to test as well.
+These are the theoretical rules to rank Pull Requests. However, sometimes the context forces the QA team to bypass it... For example, in addition to Pull Requests submitted to the Core, we also test Pull Requests submitted to PrestaShop's open source modules. If the number of Module Pull Requests waiting for QA is too high, we might test some of the oldest Modules Pull Requests in priority.
 
 And sometimes, the maintainers might ask us to test a PR that is required to unblock other tasks.
 

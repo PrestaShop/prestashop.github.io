@@ -66,7 +66,7 @@ First of all, the PR template must be followed, and all questions should be answ
 
 - A PR should be linked to an issue, so it can be [reproduced and qualified](https://build.prestashop.com/news/how-bug-reports-are-handled/) before being fixed. This helps the team to answer several questions: is this really a bug? What is its [severity](https://build.prestashop.com/news/severity-classification/)? What is the expected behavior?
 Of course, you’re welcome to fix issues submitted by another contributor (as long as the issue is linked to the PR): this is the magic of open source!
-- The “How to test” field must be filled. It must contain the steps needed to verify the bug is indeed fixed. If possible, it should also contain some information about the possible side-effects of the PR, in order to help check if the PR does not introduce regressions. Without a clear “how to test”, it’s impossible for us to know what to check on the PR.
+- The “How to test” field must be filled. It must contain the steps needed to verify the bug is indeed fixed. If possible, it should also contain some information about the possible side-effects of the PR, to help check if there are regressions. Without a clear “how to test”, it’s impossible for us to know what to check on the PR.
 The most important thing about this part is that it must be a functional “How to test”:  PRs are tested by functional QA analysts, not by developers. If your PR requires making technical changes in order to be tested (use a certain hook in the code for example), either attach a test module allowing us to test it, or your PR will need to be tested by the maintainers team.
 
 ![Example of a clear "How to Test" in a PR](/assets/images/2020/12/clear_howtotest.png)

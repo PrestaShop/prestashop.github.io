@@ -128,8 +128,6 @@ The requirements are almost the same for a bug fix. The main difference is that 
 The “How to test” field should describe the new behavior, the nominal test cases, possible errors and how they should be handled, etc... unless formal acceptance tests have been included in the specification.
 Written specifications should be linked in the PR as well.
 
-All other information is the same.
-
 If some information is missing, the QA analyst will ping the author, the product team and/or the maintainers and wait for this information to be completed before starting to work on the PR.
 
 ### Check that the improvement works accordingly to the issue and specification
@@ -162,8 +160,6 @@ This makes the QA's work on these Pull Requests quite longer and harder compared
 The main difference here is that the issue linked to the PR might be just an Epic listing all the items that should be migrated.
 
 For the “How to Test”, it’s sometimes only “Everything should work as in Legacy”. If there is a specification linked to this page, it should be added to the “How to Test”, to help the QA analyst make sure to check everything. If the migrated page is “hidden” (i.e. not accessible through the menu), the “How to Test” must also contain the URL to access it.
-
-The other requirements are the same.
 
 ### Test of a Migration Pull Request
 

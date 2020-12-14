@@ -65,3 +65,10 @@ howtos:
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"
+
+defaults:
+  -
+    scope:
+      path: "news"
+    values:
+      image: "/assets/images/theme/meta-logo-build.png"

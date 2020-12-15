@@ -58,7 +58,7 @@ PRs can be classified into 3 main categories (with a few special cases):
 
 I will first focus on the bug fix Pull Request, since it’s the most common type there is, then detail the differences between a bug fix, an improvement and a migration PR.
 
-### Requirements
+## Requirements
 
 Several things are required in order to have a PR being tested on our Github repository.
 

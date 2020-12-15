@@ -162,7 +162,7 @@ The main difference here is that the issue linked to the PR might be just an Epi
 
 For the “How to Test”, it’s sometimes only “Everything should work as in Legacy”. If there is a specification linked to this page, it should be added to the “How to Test”, to help the QA analyst make sure to check everything.
 
-### Test of a Migration Pull Request
+## Test of a Migration Pull Request
 
 The test of a Migration PR is quite long: The QA analyst must compare the Legacy page and Migrated page, and verify that there are no errors and nothing is lost (information, links, buttons, etc.), using every configuration they can think of (multi-currencies, multi-languages, multi-store, using different parameters...).
 

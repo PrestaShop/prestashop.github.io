@@ -13,7 +13,7 @@ The PrestaShop company created a Quality Assurance team 4 years ago, in 2016, to
 
 # I. Some questions you may have in mind
 
-### Why do you test every Pull Request?
+## Why test every Pull Request?
 
 The first question that might come to your mind: why is there a QA verification on each Pull Request? Why not test the release build only?
 

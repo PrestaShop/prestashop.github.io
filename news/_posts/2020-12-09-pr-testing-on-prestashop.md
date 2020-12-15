@@ -92,7 +92,7 @@ This is the most logical part of PR Testing: after reproducing the bug on the br
 
 If the feature is complex enough, or if the “How to test” is not exhaustive, the QA analyst will also test some edge cases in order to make sure that the PR fixes the issue completely.
 
-### Regression testing
+## Regression testing
 
 This is the most important part of our work: usually, the nominal test is OK, and has already been tested by the author.
 But the PR might have introduced some regressions somewhere else in PrestaShop. This is where our functional knowledge of the solution is really important.

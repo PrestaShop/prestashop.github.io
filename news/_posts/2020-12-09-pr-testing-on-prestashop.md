@@ -84,7 +84,7 @@ If there is some information missing, the author, the maintainers or the product
 
 The first step of PR testing is reproducing the original bug (on the branch, without the PR): this allows the QA analyst to make sure that the “How to test” is clear and also helps to see what are the possible regressions introduced by the PR.
 
-This is why a complete issue is necessary: the more information it contains, the easier it is to reproduce it, and to test it.
+This is why a complete issue is necessary: the more information it contains, the easier it is to reproduce and test it.
 
 ## Check if the Pull Request fixes the bug in the issue
 

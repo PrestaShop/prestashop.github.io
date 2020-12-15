@@ -131,7 +131,7 @@ Written specifications should be linked in the PR as well.
 
 If some information is missing, the QA analyst will ping the author, the product team and/or the maintainers and wait for this information to be completed before starting to work on the PR.
 
-### Check that the improvement works accordingly to the issue and specification
+## Check that the improvement works accordingly to the issue and specifications
 
 This step is simple: using the information in the issue, the "How to test" instructions, and the specification (if there is one), then QA analyst proceeds to check out the PR and try out each new behavior to make sure it works as expected and described.
 

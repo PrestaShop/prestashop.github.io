@@ -86,7 +86,7 @@ The first step of PR testing is reproducing the original bug (on the branch, wit
 
 This is why a complete issue is necessary: the more information it contains, the easier it is to reproduce it, and to test it.
 
-### Check if the Pull Request fixes the bug in the issue
+## Check if the Pull Request fixes the bug in the issue
 
 This is the most logical part of PR Testing: after reproducing the bug on the branch, the QA analyst checks out the PR locally and verifies if the bug is indeed fixed, following the instructions in “How to test”.
 

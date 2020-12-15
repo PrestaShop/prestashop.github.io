@@ -99,7 +99,7 @@ But the PR might have introduced some regressions somewhere else in PrestaShop. 
 
 With the PR, the issue, and the information we can get by looking at the code (for the QA analysts who have a technical background and know how to “read” code), we must be able to identify possible side effects of the PR, and test them all – or at least, the most important of them (since we cannot spend hours and hours on each PR).
 
-### What happens if you find some bugs?
+## What happens if you find some bugs?
 
 If we find a bug during the test phase, we will try to provide as much information as possible to the author so that they can reproduce it and fix it:
 

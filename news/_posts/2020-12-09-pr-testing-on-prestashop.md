@@ -80,7 +80,7 @@ Other important things:
 
 If there is some information missing, the author, the maintainers or the product team is pinged and the QA analyst waits for this information to start testing the PR.
 
-### Reproduce the bug
+## Reproduce the bug
 
 The first step of PR testing is reproducing the original bug (on the branch, without the PR): this allows the QA analyst to make sure that the “How to test” is clear and also helps to see what are the possible regressions introduced by the PR.
 

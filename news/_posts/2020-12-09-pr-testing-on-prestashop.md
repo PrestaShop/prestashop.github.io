@@ -141,7 +141,7 @@ For improvements, the regression test part is even more important than for bug f
 
 To do so, we generally compare two installs (one on the branch with the PR and one without), then perform the same actions on each install, and verify that the result is strictly identical. We can also carry out parts of the test campaign usually performed to verify build releases.
 
-### What happens next?
+## What happens next?
 
 Like with bug fixes, if the QA analyst finds any bug, they will comment the PR with all useful tips to help the author fix the bug.
 If the QA analyst notices an unspecified behavior (if the expected behavior is unclear, or for example, if it could be argued that an error should be displayed in a given scenario) they will ping the Product team and/or the maintainers to discuss this particular issue.

@@ -95,7 +95,7 @@ If the feature is complex enough, or if the “How to test” is not exhaustive,
 ## Regression testing
 
 This is the most important part of our work: usually, the nominal test is OK, and has already been tested by the author.
-But the PR might have introduced some regressions somewhere else in PrestaShop. This is where our functional knowledge of the solution is really important.
+But the PR might have introduced some regressions somewhere else in PrestaShop. This is where the functional knowledge of the solution makes a difference.
 
 With the PR, the issue, and the information we can get by looking at the code (for the QA analysts who have a technical background and know how to “read” code), we must be able to identify possible side effects of the PR, and test them all – or at least, the most important of them (since we cannot spend hours and hours on each PR).
 

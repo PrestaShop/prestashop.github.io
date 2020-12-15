@@ -18,9 +18,9 @@ The PrestaShop company created a Quality Assurance team 4 years ago, in 2016, to
 The first question that might come to your mind: why is there a QA verification on each Pull Request? Why not test the release build only?
 
 - The earlier a bug is detected in the process, the easier it is to find the source of the problem and fix it
-![The cost of fixing a bug rises over time](/assets/images/2020/12/cost_bug_time.jpg)
 - Testing each Pull Request allows the QA analysts to perform more detailed tests, improving the overall software quality
 - There can be several months between the moment a PR is merged and the time the build is first tested, enough for the author of the PR to have “forgotten” what they did exactly.
+![The cost of fixing a bug rises over time](/assets/images/2020/12/cost_bug_time.jpg)
 
 ## How do you choose which Pull Request should be tested first?
 

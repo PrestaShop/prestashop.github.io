@@ -156,7 +156,7 @@ Migration Pull Requests are quite different to other ones: the purpose of these 
 
 This makes the QA's work on these Pull Requests quite longer and harder compared to other PRs.
 
-### Requirements
+## Requirements
 
 The main difference here is that the issue linked to the PR might be just an Epic listing all the items that should be migrated.
 

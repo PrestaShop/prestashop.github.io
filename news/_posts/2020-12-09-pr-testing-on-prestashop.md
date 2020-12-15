@@ -20,11 +20,12 @@ The first question that might come to your mind: why is there a QA verification 
 - The earlier a bug is detected in the process, the easier it is to find the source of the problem and fix it
 - Testing each Pull Request allows the QA analysts to perform more detailed tests, improving the overall software quality
 - There can be several months between the moment a PR is merged and the time the build is first tested, enough for the author of the PR to have “forgotten” what they did exactly.
+
 ![The cost of fixing a bug rises over time](/assets/images/2020/12/cost_bug_time.jpg)
 
 ## How do you choose which Pull Request should be tested first?
 
-This is a legitimate question that pops up regularly. It might be frustrating for a contributor to see its Pull Request  waiting for weeks on GitHub with the “Waiting for QA” label, while other PRs are validated and merged the same day they are created.
+This is a legitimate question that pops up regularly. It might be frustrating for a contributor to see its Pull Request waiting for weeks on GitHub with the “Waiting for QA” label, while other PRs are validated and merged the same day they are created.
 
 The QA team uses the following criteria to sort Pull Requests (in order of importance):
 
@@ -41,7 +42,7 @@ And sometimes, the maintainers might ask us to test a PR that is required to unb
 
 ## How long does it take to test a Pull Request?
 
-It highly depends on the complexity of the Pull Request! A small fix, related to a a straightforward issue and a detailed “How to Test” description can take as little as fifteen minutes to test, while a large migration PR can require several days.
+It highly depends on the complexity of the Pull Request! A small fix, related to a straightforward issue and a detailed “How to Test” description can take as little as fifteen minutes to test, while a large migration PR can require several days.
 
 If a PR is really complex, or if the feature being implemented is complex, there might be a second or even a third test by another QA specialist to validate it fully.
 
@@ -130,7 +131,7 @@ Testing an improvement Pull Request is quite similar to the bug fix Pull Request
 
 The requirements are almost the same for a bug fix. The main difference is that the new feature should be adequately [specified in writing](https://github.com/PrestaShop/prestashop-specs/) and greenlighted by the product team or the maintainers: not all improvements are necessarily accepted, so it is important to discuss them with the team in an issue before submitting a Pull Request.
 
-The “How to test” field should describe the new behavior, nominal test cases, possible errors, and how they should be handled, etc. unless formal acceptance tests have been included in the specifications.
+The “How to test” field should describe the new behavior, nominal test cases, possible errors, and how they should be handled, etc. Unless formal acceptance tests have been included in the specifications.
 Written specifications should be linked in the PR as well.
 
 If some information is missing, the QA analyst will ping the author, the product team and/or the maintainers and wait for this information to be completed before starting to work on the PR.
@@ -170,7 +171,7 @@ For the “How to Test”, it’s sometimes only “Everything in this page shou
 
 The test of a Migration Pull Request is quite long: the QA analyst must compare the Legacy page and Migrated page and verify that there are no errors nor missing components (information, links, buttons, etc.), using every configuration they can think of (multi-currencies, multi-languages, multi-store, using different parameters...).
 
-If there is a specification, the QA analyst will follow every point and check that it’s working fine (an example of a migration specification : ["Product listing" BO page](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/products/catalog-products-listing.md)). If there is not, they must find every detail by themselves.
+If there is a specification, the QA analyst will follow every point and check that it’s working fine (an example of a migration specification: ["Product listing" BO page](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/products/catalog-products-listing.md)). If there is not, they must find every detail by themselves.
 
 During this run the QA analyst might use the test campaign created for build releases, and also update these same tests if necessary.
 That’s why a test on a Migration PR takes longer than a “classic” one (sometimes several days).

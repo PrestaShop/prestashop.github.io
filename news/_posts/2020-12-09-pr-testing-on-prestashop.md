@@ -164,7 +164,7 @@ For the “How to Test”, it’s sometimes only “Everything should work as in
 
 ## Test of a Migration Pull Request
 
-The test of a Migration PR is quite long: The QA analyst must compare the Legacy page and Migrated page, and verify that there are no errors and nothing is lost (information, links, buttons, etc.), using every configuration they can think of (multi-currencies, multi-languages, multi-store, using different parameters...).
+The test of a Migration PR is quite long: the QA analyst must compare the Legacy page and Migrated page and verify that there are no errors nor missing components (information, links, buttons, etc.), using every configuration they can think of (multi-currencies, multi-languages, multi-store, using different parameters...).
 
 If there is a specification, the QA analyst will follow every point and check that it’s working fine (an example of a migration specification : ["Product listing" BO page](https://github.com/PrestaShop/prestashop-specs/blob/master/back-office/catalog/products/catalog-products-listing.md)). If there is not, they must find every detail by themselves.
 

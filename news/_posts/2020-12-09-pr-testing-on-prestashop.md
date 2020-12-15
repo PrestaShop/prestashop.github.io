@@ -8,7 +8,7 @@ icon: icon-bug
 tags: [tests, community, contribute]
 ---
 
-The PrestaShop Company created a Quality Assurance team 4 years ago, in 2016, to improve the quality of the open source project – but also of its products and services. During the last year, the team has grown quickly, allowing it to take quality to the next level! Its field of action is widening (test of new services like [Prestashop Checkout](https://www.prestashop.com/en/prestashop-checkout), specification review, and more), but the core of the manual testers' activity remains the same: verifying Pull Requests (“PRs”) on GitHub, and testing every release.
+The PrestaShop company created a Quality Assurance team 4 years ago, in 2016, to improve the quality of the open source project – but also of its products and services. Over the last year, the team has grown quickly, taking quality to the next level! Its field of action has been widening (tests of new services like [Prestashop Checkout](https://www.prestashop.com/en/prestashop-checkout), specifications reviews, etc.) but the core of the manual testers' activity remains the same: verifying Pull Requests (“PRs”) on GitHub, and testing every release.
 
 
 # I. Some questions you may have in mind

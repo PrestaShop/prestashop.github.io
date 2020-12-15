@@ -22,7 +22,7 @@ The first question that might come to your mind: why is there a QA verification 
 - Testing each Pull Request allows the QA analysts to perform more detailed tests, improving the overall software quality
 - There can be several months between the moment a PR is merged and the time the build is first tested, enough for the author of the PR to have “forgotten” what they did exactly.
 
-### How do you choose which Pull Request should be tested first?
+## How do you choose which Pull Request should be tested first?
 
 This is a legitimate question that pops up regularly. It might be frustrating for a contributor to see their Pull Request blocked in “Waiting for QA” for weeks, while other PRs are validated and merged the same day they are created.
 

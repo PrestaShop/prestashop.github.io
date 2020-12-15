@@ -158,7 +158,7 @@ This makes the QA's work on these Pull Requests quite longer and harder compared
 
 ## Requirements
 
-The main difference here is that the issue linked to the PR might be just an Epic listing all the items that should be migrated.
+The main difference here is that the issue linked to the PR might be just an [EPIC](https://github.com/PrestaShop/PrestaShop/labels/Epic) listing all the items that should be migrated.
 
 For the “How to Test”, it’s sometimes only “Everything should work as in Legacy”. If there is a specification linked to this page, it should be added to the “How to Test”, to help the QA analyst make sure to check everything.
 

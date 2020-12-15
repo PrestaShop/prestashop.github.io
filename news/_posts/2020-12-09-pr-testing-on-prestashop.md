@@ -176,4 +176,4 @@ That’s why a test on a Migration PR takes longer than a “classic” one (som
 Quality Assurance work on Pull Requests can be really time-consuming, but it is critical to ensure the quality of PrestaShop software keeps on increasing.
 Make sure that the Pull Requests and issues you submit are thoroughly described, it will help to process them quickly and seamlessly!
 
-Thanks for your contributions :)
+Thanks for your contributions :smile:

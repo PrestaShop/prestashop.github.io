@@ -135,7 +135,7 @@ If some information is missing, the QA analyst will ping the author, the product
 
 This step is simple: using the information in the issue, the "How to test" instructions, and the specification (if there is one), then QA analyst proceeds to check out the PR and try out each new behavior to make sure it works as expected and described.
 
-### Regression testing
+## Regression testing
 
 For improvements, the regression test part is even more important than for bug fixes: the QA analyst must make sure that the original features the PR improves are still working as expected.
 

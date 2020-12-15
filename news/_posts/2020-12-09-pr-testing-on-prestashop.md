@@ -122,7 +122,7 @@ Note that everything the QA specialists test is tracked on an internal tool (we 
 
 The process for testing a Pull Request that adds an improvement to the solution is quite similar to that of a bug fix Pull Request.
 
-### Requirements
+## Requirements
 
 The requirements are almost the same for a bug fix. The main difference is that the new feature should be adequately [specified in writing](https://github.com/PrestaShop/prestashop-specs/) and greenlighted by the Product team or the maintainers: not all improvements are necessarily accepted, so it is important to discuss them with the team in an issue before submitting a PR.
 

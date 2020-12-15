@@ -56,7 +56,7 @@ PRs can be classified into 3 main categories (with a few special cases):
 - Improvement
 - Migration
 
-I will first focus on the bug fix Pull Request, since it’s the most common type there is, then detail the differences between a bug fix, an improvement and a migration PR.
+I will first focus on the bug fix Pull Request since it’s the most common type, then detail the differences between a bug fix, an improvement, and a migration PR.
 
 ## Requirements
 

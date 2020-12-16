@@ -10,39 +10,40 @@ tags: [contribution, opensource, development]
 ---
 
 In 2011, Marc Andreessen famously wrote "Software is eating the world".
-We can all see nowadays that this prophecy turned out very true: software has definitely eaten this world in this entirety. However software has also evolved in how it is being built.
+We can all see nowadays that this prophecy turned out to be very true: software has definitely eaten this world in this entirety. However software has also evolved in how it is being built.
 
-It becomes harder every day to find an application that does not have dependencies. By dependency we refer to a software component (a package, a library, an application...) that require some specific other software packages to function. For example the package [Doctrine ORM](https://github.com/doctrine/orm) that requires the [Symfony Console](https://github.com/symfony/console) package.
+Every day it becomes harder to find an application that does not have dependencies. By dependency we refer to a software component (a package, a library, an application...) that requires some other specific software package to function. For example the package [Doctrine ORM](https://github.com/doctrine/orm) requires the [Symfony Console](https://github.com/symfony/console) package.
 
-Most of the time, using a dependency is a practical mean to avoid reinventing the wheel. Why would you re-implement a PHP HTTP Client when the famous [Guzzle](http://docs.guzzlephp.org/en/stable/) is available, why would you re-build a Logger when the widely used [Monolog](https://github.com/Seldaek/monolog) can be used instead ? The right dependencies allow developers to build faster and focus on the core of their business rather than reinventing components that already exist. This is a great example of the concept of ["dwarfs standing on the shoulders of giants"](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants) being implemented.
+Most of the time, using a dependency is a practical mean to avoid reinventing the wheel. Why would you reimplement a PHP HTTP Client when the famous [Guzzle](http://docs.guzzlephp.org/en/stable/) is available, why would you rebuild a Logger when the widely used [Monolog](https://github.com/Seldaek/monolog) can be used instead? The right dependencies allow developers to build faster and focus on the core of their business rather than reinventing components that already exist. This is a great example of the concept of ["dwarfs standing on the shoulders of giants"](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants) in practice.
 
 Dependencies can come in many shapes and forms:
-- A SDK that depends on a web API definition, such as GitHub
+
+- An SDK that depends on a web API definition, such as GitHub
 - A library that depends on a software package
-- A Java application that needs to be run into the Java Virtual Machine
+- A Java application that needs to be run in the Java Virtual Machine
 
 However **depending on an external software package also means you tie somehow your project fate to this component**. This package is likely to evolve through new versions and your project will be affected by what changes these new versions bring.
 
-For now, let's focus on PrestaShop usecase: a project that rely on library dependencies such as [Symfony](https://symfony.com/) or Guzzle.
+Now, let's focus on PrestaShop's use case: a project that relies on library dependencies such as [Symfony](https://symfony.com/) or Guzzle.
 
 ## Backward Compatibility and Backward Compatibility Breaks
 
-From the moment a project starts relying on dependencies, a relationship emerges. And also comes the concept of _Backward Compatibility and Backward Compatibility Breaking Changes_.
+From the moment a project starts relying on dependencies, a relationship emerges. And also come the concepts of _Backward Compatibility_ and _Breaking Changes_.
 
-According to Wikipedia, [Backward compatibility is a property of a system, product, or technology that allows for interoperability with an older legacy system](https://en.wikipedia.org/wiki/Backward_compatibility).
+According to Wikipedia, "[Backward compatibility](https://en.wikipedia.org/wiki/Backward_compatibility) is a property of a system, product, or technology that allows for interoperability with an older legacy system."
 
-Let us consider a project A using library B as a dependency and project A is built using version 3.4 of library B.
+Let us consider an example. Project A is using library B as a dependency, and the current version of project A is built using version 1.0 of library B.
 
-If a new version 4.0 of library B is released and project A is still fully functional when using version 4.0 instead of version 3.4, we can say this version 4.0 is _backward compatible_ (and that is a relief for the developers of project A).
+After a while, a new of library B is released, v2.0. If project A is able to use it and still be fully functional without needing to adapt any of its existing code, then we can say the version 2.0 of library B is **backward compatible** (to the relief of project A's developers).
 
-If however some changes have been introduced in version 4.0 of library B in a way that is not compatible anymore with how the project A was using the library B, it means this version 4.0 has broken the backward compatibility. Consequently we can say version 4.0 of library B introduced _Backward Compatibility Breaks_ ... and developers of project A need to find what exactly these changes are, in order to update their project to run with the new version 4.0 of library B.
+However, if library B v2.0 introduces changes in such a way that project A needs to adapt its code to continue working properly using the new version, it means that library B v2.0 has introduced **breaking changes**. Consequently, we can say that library B v2.0 is _not_ backwards compatible. In this scenario, developers of project A will need to find exactly what has changed, in order to update their project to run with the new library version.
 
-There is no standard definition of a Breaking Change, but I’ll borrow [the one from Brian Ambielli](https://bambielli.com/til/2018-01-12-what-is-a-breaking-change/) to define that breaking changes are _non-backwards compatible changes to the contracts of methods you expose to your consumers through your API interfaces_.
+There is no standard definition of a Breaking Change, but I’ll borrow [the one from Brian Ambielli](https://bambielli.com/til/2018-01-12-what-is-a-breaking-change/): _"breaking changes are non-backwards compatible changes to the contracts of methods you expose to your consumers through your API interfaces."_
 
 
 ## The contract and API interfaces for dependencies
 
-What does "API interface" or "contract" exactly mean in the definition "non-backwards compatible change to the contracts of methods you expose to your consumers through your API interfaces" ?
+What does "API interface" or "contract" exactly mean in the definition above?
 
 The API interface of a dependency is, by default, the public and/or available interfaces that allow another project to use/interact with it.
 
@@ -62,12 +63,12 @@ class Money
         $this->currency = $currency;
     }
 
-    public function print()
+    public function print(): string
     {
-        return sprintf('%s %s', $this->amount, $this->currency);
+        return sprintf('%s %s', $this->amount, $this->currency->getSymbol());
     }
 
-    public function getCurrency()
+    public function getCurrency(): Currency
     {
         return $this->currency;
     }

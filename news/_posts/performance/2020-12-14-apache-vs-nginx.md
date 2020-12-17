@@ -36,7 +36,7 @@ Here's a quick reminder of our test parameters:
 
 * We used PrestaShop version 1.7.6.3 (latest version available at the time) with the same php 7.2 configuration, in a docker environment
 * Both hosted on a not too shabby [GCP instance](https://console.cloud.google.com) with 4vCPU, 15GB RAM and SSD disks 
-* Shops are both configured with 1000 products, 10 suppliers, 2 languages, 5 categories, 1000 commands and a database around 140Mb
+* Shops are both configured with 1000 products, 10 suppliers, 2 languages, 5 categories, 1000 orders and a database around 140Mb
 * We ran the same [gatling](https://gatling.io) [crawling scenario](https://github.com/PrestaShop/performance-project), each visitor opening 15 pages per session 
 * The target is to get the most visitors while remaining under 300ms (95th percentile)
 

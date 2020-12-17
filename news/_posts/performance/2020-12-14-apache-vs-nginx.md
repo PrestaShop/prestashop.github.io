@@ -138,7 +138,7 @@ Still, we do believe this test is relevant and could help understand which confi
 
 But don't trust us blindly on this, we have provided you with [the tools](https://github.com/PrestaShop/performance-project) to perform your own benchmarks and even the capacity to enhance those tools to reach your own expectactions in different scenarios. Jut have a look and see what you can do with it.
 
-Also worth mentionning is that, using the CPU up to 98% or 99% can be fine for a benchmark but it's something you should never allow on a production server. Any additional load would slow down significantly the server and drastically increase the reponse time to a non acceptable threshold.
+Also worth mentioning is that, using the CPU up to 98% or 99% can be fine for a benchmark but it's something you should never allow on a production server. Any additional load would slow down significantly the server and drastically increase the reponse time to a non acceptable threshold.
 
 It is recommended to **not go up to 40% a server usage** (either cpu usage or load average) in order to deal with peaks and activity surges.
 

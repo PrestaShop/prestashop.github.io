@@ -74,7 +74,7 @@ _NGINX active users are just below 100, around 94._
 _Apache active users are above 100, around 110._
 {: .text-center }
 
-Nothing suprising about the active users, given the result we already had. 
+Nothing surprising about the active users, given the result we already had. 
 
 Also, looking at the servers metrics, we see that, for both of them, we have pleny of available memory:
 

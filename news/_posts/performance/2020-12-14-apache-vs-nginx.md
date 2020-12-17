@@ -89,7 +89,7 @@ _Nothing impressive here, especially for SSD disks - excerpt from GCP monitoring
 {: .text-center }
 
 ![NetworkTraffic][NetworkTraffic]
-_Network traffric, nothing specific, excerpt from GCP monitoring_
+_Network traffic, nothing specific, excerpt from GCP monitoring_
 {: .text-center }
 
 More interesting is the CPU, that is almost completely used for both instances:

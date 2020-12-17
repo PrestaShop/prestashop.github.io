@@ -76,7 +76,7 @@ _Apache active users are above 100, around 110._
 
 Nothing surprising about the active users, given the result we already had. 
 
-Also, looking at the servers metrics, we see that, for both of them, we have pleny of available memory:
+Also, looking at the servers metrics, we see that, for both of them, we have plenty of available memory:
 
 ![MemoryUsage][MemoryUsage]
 _Memory usage, not even 10% consumed, we should be fine - excerpt from GCP monitoring_

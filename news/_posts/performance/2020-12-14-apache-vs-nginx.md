@@ -102,7 +102,7 @@ If you remember our previous talk about performance, you may recall that perform
 
 Also meaning that the CPU can do its part properly.
 
-In our case, we can conclude there is not much constraint on the system preventing it from serving the application as expected - or at least that the constraint are similar enough.
+In our case, we can conclude there is not much constraint on the system preventing it from serving the application as expected - or at least that the constraints are similar enough.
 
 Also, remember that our task here is to use as much ressources as possible and CPU time means it is not waiting for IOs (disk or network), or managing RAM (neither swapping, as it should be seen on disk), and so on.
 

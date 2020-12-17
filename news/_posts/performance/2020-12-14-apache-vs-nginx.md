@@ -118,7 +118,7 @@ This latency, at least partially, is induced by the events management - it takes
 
 Where apache reduces latency to a minimum with its synchronous design.
 
-It's also worth mentionning that the induced latency is higher for dynamic contents (such as PHP) and very low for static contents (such as JPG, PNG, JS, CSS and so on).
+It's also worth mentioning that the induced latency is higher for dynamic contents (such as PHP) and very low for static contents (such as JPG, PNG, JS, CSS and so on).
 
 So, even if apache can not handle as much requests as NGINX, it can (not _always_ true, but it does happen) process them faster.
 

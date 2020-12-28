@@ -113,7 +113,7 @@ So, now that we've seen that our system is all up to work at the CPU level, let'
 
 As mentioned earlier, Apache and NGINX designs are very different, Apache using threads/processes for each request and NGINX using an asynchronous system (through an event loop) to manage requests.
 
-Though NGINX's asynchronous design lets it handle enormous charges and loads that Apache can't, it has a tiny little drawback: latency.
+Though NGINX's asynchronous design lets it handle enormous charges and loads that Apache cannot, it has a tiny little drawback: latency.
 This latency, at least partially, is induced by the events management - it takes time to oversee several events at the "same time", to check the different buffers statuses, and so on. Just like any other system, context switching and status management of its different parts does use resources. And more concurrent connections means more latency.
 
 Where apache reduces latency to a minimum with its synchronous design.

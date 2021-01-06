@@ -21,8 +21,9 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 
 We wish you a happy and healthy new year! Thank you for your involvement in the PrestaShop translation projects this past year, you have been wonderful! Let’s continue the great teamwork in 2021! :muscle:
 
-### The Bosnian language is now fully available
-After an incredible rise, from 58% to 100% in just a month, the Bosnian language is now fully available for the 1.7. version! A big thank you to [Rijad Osmanovic](https://crowdin.com/profile/rijado), who is also the top translator AND proofreader of the month. Congratulations ! :fire:
+### Bosnian language is now fully available
+
+After an incredible rise, from 58% to 100% in just a month, the Bosnian language is now fully available for the 1.7.7 version! A big thank you to [Rijad Osmanovic](https://crowdin.com/profile/rijado), who is also the top translator AND proofreader of the month. Congratulations! :fire:
 
 ### :two_hearts: Special thanks to newcomers 
  

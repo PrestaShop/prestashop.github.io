@@ -74,7 +74,7 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
  
 Congrats, and welcome to our new top contributors! :clap:
  
-Remember, you can see who's been contributing to our translation project thanks to the [Translators page](http://translators.prestashop.com/).
+Remember, you can see who's been contributing to our translation project thanks to the [Translators page](https://translators.prestashop.com/).
 
  
 ## Complete translations

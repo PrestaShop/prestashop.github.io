@@ -16,6 +16,7 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 ## Project news
 
 ### Happy new year 2021!
+
 ![Happy New Year](https://lvpfn.stripocdn.email/content/guids/CABINET_309f2cc69b90f44bbc912e3ddf46c57f/images/47601608718667750.gif)
 
 We wish you a happy and healthy new year! Thank you for your involvement in the PrestaShop translation project this year, you have been wonderful ! Let’s continue the great team work in 2021! :muscle:

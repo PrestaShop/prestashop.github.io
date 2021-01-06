@@ -93,7 +93,7 @@ Also, the following languages had the best progress thanks to the translation co
 * **Hebrew** (+4% to reach 87% translated and validated)
 * **Finnish** (+4% to reach 94% translated)
  
-![Best translation progress for December 2020](/assets/images/2021/01/build-crowdin-proofreading-dec20.png)
+![Best translation progress for December 2020](/assets/images/2021/01/build-crowdin-progress-dec20.png)
 
 A huge thank you to all the contributors!
  

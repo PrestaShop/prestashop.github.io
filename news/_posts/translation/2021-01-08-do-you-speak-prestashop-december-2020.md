@@ -89,7 +89,7 @@ At the end of December, PrestaShop 1.7.7 was fully available (= 100% translated 
 
 Also, the following languages had the best progress thanks to the translation community:
  
-* **Bosnian** (+43% to reach 100% translated and validated, congratulations ! :muscle:) 
+* **Bosnian** (+43% to reach 100% translated and validated, congratulations! :muscle:) 
 * **Hebrew** (+4% to reach 87% translated and validated)
 * **Finnish** (+4% to reach 94% translated)
  

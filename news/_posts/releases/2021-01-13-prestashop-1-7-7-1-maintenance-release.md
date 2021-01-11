@@ -16,7 +16,7 @@ tags:
 ---
 
 
-PrestaShop 1.7.7.1 is now available. This maintenance release fixes 41 issues reported on version 1.7.7.0.
+PrestaShop 1.7.7.1 is now available. This maintenance release fixes 41 regressions reported on version 1.7.7.0.
 
 ![1.7.7.1 is available!](/assets/images/2021/01/build_1.7.7.1.png)
 
@@ -81,10 +81,6 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 - [Module is not registered in "aliases" hooks](https://github.com/PrestaShop/PrestaShop/issues/22527)
 
 Read the [full changelog here](https://download.prestashop.com/download/releases/changelog_1.7.7.1.txt).
-
-## Important changes
-
-
 
 ## Acknowledgements
 

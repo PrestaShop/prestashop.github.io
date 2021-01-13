@@ -24,7 +24,7 @@ There was a time where it was difficult to find the list of all built-in modules
 
 Dear PrestaShop users, those days are over! 
 
-Our core product team took some time to test all modules, screenshot them, accurately categorize them, write explicit and complete product information, translate it into eight languages, create special Addons pages for them and gather it all in a dedicated brochure available  [here](https://www.prestashop.com/fr/ressources).
+The PrestaShop company's core product team took some time to test all modules, screenshot them, accurately categorize them, write explicit and complete product information, translate it into eight languages, create special Addons pages for them and gather it all in a dedicated brochure available  [here](https://www.prestashop.com/fr/ressources).
 
 This brochure, available in no less than 8 languages, will give you a complete overview of the natively available features that will help you empower your business!
 

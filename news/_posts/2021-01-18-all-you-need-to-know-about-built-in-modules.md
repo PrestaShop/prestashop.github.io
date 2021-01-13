@@ -10,7 +10,7 @@ icon: icon-world
 
 Do you know that PrestaShop 1.7.7 comes with 88 built-in modules? That is 88 ways for merchants to start their online store and empower their business, directly from their back office! :fire:
 
-In this article, we will try to answer all your questions about this subject. So let’s get started!
+In this article, we will try to answer all your questions about this topic. So let’s get started!
 
 ## What is a built-in module exactly?
 

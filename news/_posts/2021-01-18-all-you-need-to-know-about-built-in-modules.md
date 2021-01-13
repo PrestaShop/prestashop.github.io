@@ -12,13 +12,13 @@ Do you know that PrestaShop 1.7.7 comes with 88 built-in modules? That is 88 way
 
 In this article, we will try to answer all your questions about this subject. So let’s get started!
 
-### What is a built-in module exactly?
+## What is a built-in module exactly?
 
 A built-in module is a module that was developed by PrestaShop and that is available in your back office either in the Module Manager or in the Module Catalog. 
 
 We are not talking about "native modules" here, as the definition of a native module is a bit more complicated. Indeed, some native modules are present in the installation zip, some are pre-installed and some others are not. So, to make it easier, we have chosen to talk about built-in modules in this article.
 
-### Where can I find the list of all built-in modules?
+## Where can I find the list of all built-in modules?
 
 There was a time where it was difficult to find the list of all built-in modules. You could have a part of it directly in the back office but half of the information was missing and most of it has not been updated (or worse, inherited from the 1.6 version). In the end, it was not helpful at all.
 
@@ -30,7 +30,7 @@ This brochure, available in no less than 8 languages, will give you a complete o
 
 Spoiler alert: It will soon be possible to click directly on the brochure to access its page on the PrestaShop Addons marketplace! A Russian version of the brochure will also be released soon.
 
-### The current logos look a bit outdated, are you going to update them?
+## The current logos look a bit outdated, are you going to update them?
 
 ![Tristan’s quote](/assets/images/2021/01/build-article-modules-tristan-january21.png)
 
@@ -42,7 +42,7 @@ These logos will be available in the back office during the first semester of 20
 
 You can also have a look at the [GitHub issue](https://github.com/PrestaShop/PrestaShop/issues/15858).
 
-### What if I want to know more about a module in particular?
+## What if I want to know more about a module in particular?
 
 To know more about a specific module (whether it is a built-in module or not) you should visit the [PrestaShop Official Addons Marketplace](https://addons.prestashop.com/en/).
 

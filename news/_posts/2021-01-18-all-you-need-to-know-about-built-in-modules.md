@@ -18,18 +18,6 @@ A built-in module is a module that was developed by PrestaShop and that is avail
 
 We are not talking about "native modules" here, as the definition of a native module is a bit more complicated. Indeed, some native modules are present in the installation zip, some are pre-installed and some others are not. So, to make it easier, we have chosen to talk about built-in modules in this article.
 
-## Where can I find the list of all built-in modules?
-
-There was a time where it was difficult to find the list of all built-in modules. You could have a part of it directly in the back office but half of the information was missing and most of it has not been updated (or worse, inherited from the 1.6 version). In the end, it was not helpful at all.
-
-Dear PrestaShop users, those days are over! 
-
-The PrestaShop company's core product team took some time to test all modules, screenshot them, accurately categorize them, write explicit and complete product information, translate it into eight languages, create special Addons pages for them and gather it all in a dedicated brochure available  [here](https://www.prestashop.com/fr/ressources).
-
-This brochure, available in no less than 8 languages, will give you a complete overview of the natively available features that will help you empower your business!
-
-Spoiler alert: It will soon be possible to click directly on the brochure to access its page on the PrestaShop Addons marketplace! A Russian version of the brochure will also be released soon.
-
 ## What are these modules made for? 
 
 The built-in modules will help you empower your business. The Product team have organized them into 6 main categories:
@@ -45,6 +33,18 @@ The built-in modules will help you empower your business. The Product team have 
 **Design & Navigation:** Customize the design of your store and improve your site navigation to make it unique, engaging, and adapted to your business as well as your customer needs.
 
 **Administration:** Simplify the daily management of your store. 
+
+## Where can I find the list of all built-in modules?
+
+There was a time where it was difficult to find the list of all built-in modules. You could have a part of it directly in the back office but half of the information was missing and most of it has not been updated (or worse, inherited from the 1.6 version). In the end, it was not helpful at all.
+
+Dear PrestaShop users, those days are over! 
+
+The PrestaShop company's core product team took some time to test all modules, screenshot them, accurately categorize them, write explicit and complete product information, translate it into eight languages, create special Addons pages for them and gather it all in a dedicated brochure available  [here](https://www.prestashop.com/fr/ressources).
+
+This brochure, available in no less than 8 languages, will give you a complete overview of the natively available features that will help you empower your business!
+
+Spoiler alert: It will soon be possible to click directly on the brochure to access its page on the PrestaShop Addons marketplace! A Russian version of the brochure will also be released soon.
 
 ## The current logos look a bit outdated, are you going to update them?
 

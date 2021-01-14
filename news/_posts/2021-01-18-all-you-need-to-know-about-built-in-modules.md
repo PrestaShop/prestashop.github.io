@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "All you need to know about built-in modules"
-subtitle: "This article will answer all your questions about built-in modules"
+subtitle: "This article will update you on the recent work the PrestaShop company's teams have done on built-in modules."
 date: 2020-01-18 
 authors: [JulieVarisellaz]
 icon: icon-world
@@ -30,15 +30,44 @@ This brochure, available in no less than 8 languages, will give you a complete o
 
 Spoiler alert: It will soon be possible to click directly on the brochure to access its page on the PrestaShop Addons marketplace! A Russian version of the brochure will also be released soon.
 
+## What are these modules made for? 
+
+The built-in modules will help you empower your business. The Product team have organized them into 6 main categories:
+
+**Traffic & Marketplace:** Increase your store awareness, traffic, and conversions.
+
+**Promotions & Marketing:** Boost your sales and promote your catalog.
+
+**Payment:** Use a payment module to make it easy for customers to purchase on your store.
+
+**Facebook & Social network:** Easily build a community around your store.
+
+**Design & Navigation:** Customize the design of your store and improve your site navigation to make it unique, engaging, and adapted to your business as well as your customer needs.
+
+**Administration:** Simplify the daily management of your store. 
+
 ## The current logos look a bit outdated, are you going to update them?
 
-![Tristan’s quote](/assets/images/2021/01/build-article-modules-tristan-january21.png)
+![Tristan’s quote](/assets/images/2021/01/build-article-modules-tristan-january21.png) _“We made this new set of icons so the user can easily identify PrestaShop’s native features when scrolling the module list in their back office. This redesign is part of our will to harmonize the overall experience on the software. We hope you will like it, don’t hesitate to share your feedback!”_
 
 It was time for a new look! Our Design team did a great job at modernizing and freshening the logos. Icons are pretty much the same but their colors fit better with the PrestaShop identity, the user experience will be more consistent. 
 
-These logos will be available in the back office during the first semester of 2021 (We have to wait for the QA to validate the pull requests, and for the releases to be done… Please just hold a little longer, you will soon be able to see it in your back office. To help you wait here's a little preview:
+These logos will be available in the back office during the first semester of 2021 (We have to wait for the QA to validate the pull requests, and for the releases to be done… Please just hold a little longer, you will soon be able to see it in your back office. To help you wait here is a little preview:
 
-![New logos](/assets/images/2021/01/build-article-modules-logos-january21.png)
+![New logos](/assets/images/2021/01/build-article-modules-logos-best-customers-january21.png)
+
+Best customers:
+Enrich your stats, add a list of the best customers to the dashboard
+
+![New logos](/assets/images/2021/01/build-article-modules-logos-customer-follow-up-january21.png)
+
+Customer follow-up: 
+Offer your customers a quick follow-up with daily customized e-mails to send
+
+![New logos](/assets/images/2021/01/build-article-modules-logos-customer-official-gdpr-january21.png)
+
+Official GDPR Compliance:
+Make your store comply with the General Data Protection Regulation 
 
 You can also have a look at the [GitHub issue](https://github.com/PrestaShop/PrestaShop/issues/15858).
 
@@ -54,4 +83,4 @@ These modules pages on Addons are available in 9 languages. Check out these page
 
 You can also access these module pages directly from the back office, by clicking on a module.
 
-![Louise’s quote](/assets/images/2021/01/build-article-modules-louise-january21.png)
+![Louise’s quote](/assets/images/2021/01/build-article-modules-louise-january21.png) _“It was important for us to offer those modules the visibility they deserve, that is why we wrote down all the basic information users need and could not get so far: how does it work? What are the benefits for the merchants, the customers? So we created module pages in 9 languages, to gather all this information and make it available - like for any other module sold on the Addons marketplace!”_

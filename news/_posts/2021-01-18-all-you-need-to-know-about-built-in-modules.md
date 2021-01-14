@@ -48,7 +48,7 @@ The built-in modules will help you empower your business. The Product team have 
 
 ## The current logos look a bit outdated, are you going to update them?
 
-![Tristan’s quote](/assets/images/2021/01/build-article-modules-tristan-january21.png) _“We made this new set of icons so the user can easily identify PrestaShop’s native features when scrolling the module list in their back office. This redesign is part of our will to harmonize the overall experience on the software. We hope you will like it, don’t hesitate to share your feedback!”_
+<img src= "/assets/images/2021/01/build-article-modules-tristan-january21.png" width="260" height="190"> _“We made this new set of icons so the user can easily identify PrestaShop’s native features when scrolling the module list in their back office. This redesign is part of our will to harmonize the overall experience on the software. We hope you will like it, don’t hesitate to share your feedback!”_
 
 It was time for a new look! Our Design team did a great job at modernizing and freshening the logos. Icons are pretty much the same but their colors fit better with the PrestaShop identity, the user experience will be more consistent. 
 
@@ -83,4 +83,4 @@ These modules pages on Addons are available in 9 languages. Check out these page
 
 You can also access these module pages directly from the back office, by clicking on a module.
 
-![Louise’s quote](/assets/images/2021/01/build-article-modules-louise-january21.png) _“It was important for us to offer those modules the visibility they deserve, that is why we wrote down all the basic information users need and could not get so far: how does it work? What are the benefits for the merchants, the customers? So we created module pages in 9 languages, to gather all this information and make it available - like for any other module sold on the Addons marketplace!”_
+<img src="/assets/images/2021/01/build-article-modules-louise-january21.png" width="260" height="200"> _“It was important for us to offer those modules the visibility they deserve, that is why we wrote down all the basic information users need and could not get so far: how does it work? What are the benefits for the merchants, the customers? So we created module pages in 9 languages, to gather all this information and make it available - like for any other module sold on the Addons marketplace!”_

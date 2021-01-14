@@ -64,7 +64,7 @@ Enrich your stats, add a list of the best customers to the dashboard
 Customer follow-up: 
 Offer your customers a quick follow-up with daily customized e-mails to send
 
-![New logos](/assets/images/2021/01/build-article-modules-logos-customer-official-gdpr-january21.png)
+![New logos](/assets/images/2021/01/build-article-modules-logos-official-gdpr-january21.png)
 
 Official GDPR Compliance:
 Make your store comply with the General Data Protection Regulation 

@@ -2,7 +2,7 @@
 layout: post
 title: "All you need to know about built-in modules"
 subtitle: "This article will update you on the recent work the PrestaShop company's teams have done on built-in modules."
-date: 2020-01-18 
+date: 2020-01-18 12:00:00
 authors: [JulieVarisellaz]
 icon: icon-world
 

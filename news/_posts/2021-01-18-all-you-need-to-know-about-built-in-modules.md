@@ -97,4 +97,4 @@ These modules pages on Addons are available in 9 languages. Check out these page
 <img style=“border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;” width=“240" height=“240” src=“/assets/images/2021/01/build-article-modules-louise-january21.png”>
    
    
-“It was important for us to offer those modules the visibility they deserve, that is why we wrote down all the basic information users need and could not get so far: how does it work? What are the benefits for the merchants, the customers? So we created module pages in 9 languages, to gather all this information and make it available - like for any other module sold on the Addons marketplace!”_
+_“It was important for us to offer those modules the visibility they deserve, that is why we wrote down all the basic information users need and could not get so far: how does it work? What are the benefits for the merchants, the customers? So we created module pages in 9 languages, to gather all this information and make it available - like for any other module sold on the Addons marketplace!”_

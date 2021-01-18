@@ -18,6 +18,8 @@ A built-in module is a module that was developed by PrestaShop and that is avail
 
 We are not talking about "native modules" here, as the definition of a native module is a bit more complicated. Indeed, some native modules are present in the installation zip, some are pre-installed and some others are not. So, to make it easier, we have chosen to talk about built-in modules in this article.
 
+To know more about native modules, you can check the [documentation](https://devdocs.prestashop.com/1.7/development/native-modules/). 
+
 ## What are these modules made for? 
 
 All these modules aim at providing basic optional features to help your store go to the next level. Following the PrestaShop's back office categorization, they are organized into 6 main categories:
@@ -75,12 +77,13 @@ You can also have a look at the [GitHub issue](https://github.com/PrestaShop/Pre
 
 To know more about a specific module (whether it is a built-in module or not) you should visit the [PrestaShop Official Addons Marketplace](https://addons.prestashop.com/en/).
 
+You can also access the built-in module pages directly from the back office, by clicking on a module.
+
 Our product managers have redesigned the built-in module pages on the marketplace to make them clearer and more understandable. 
 
-Please note that you cannot download built-in modules on the Addons marketplace, as they are already available in both Modules sections of your back office. However, if you really need to download them, you can do it from the module repositories, available [here](https://github.com/PrestaShop). 
+These pages have also been adapted and are therefore a bit different from the other modules pages. The first thing to note is that you cannot download built-in modules on the Addons marketplace, as they are already available in both Modules sections of your back office. However, if you really need to download them, you can do it from the module repositories, available [here](https://github.com/PrestaShop). 
+Other elements have been removed: you won't be able to contact the developer, nor leave a comment or contact the support.
 
 These modules pages on Addons are available in 9 languages. Check out these pages if you want to know what a module can do for you and how you can use it. 
-
-You can also access these module pages directly from the back office, by clicking on a module.
 
 <img src="/assets/images/2021/01/build-article-modules-louise-january21.png" width="260" height="200"> _“It was important for us to offer those modules the visibility they deserve, that is why we wrote down all the basic information users need and could not get so far: how does it work? What are the benefits for the merchants, the customers? So we created module pages in 9 languages, to gather all this information and make it available - like for any other module sold on the Addons marketplace!”_

@@ -20,7 +20,7 @@ We are not talking about "native modules" here, as the definition of a native mo
 
 ## What are these modules made for? 
 
-The built-in modules will help you empower your business. The Product team have organized them into 6 main categories:
+All these modules aim at providing basic optional features to help your store go to the next level. Following the PrestaShop's back office categorization, they are organized into 6 main categories:
 
 **Traffic & Marketplace:** Increase your store awareness, traffic, and conversions.
 

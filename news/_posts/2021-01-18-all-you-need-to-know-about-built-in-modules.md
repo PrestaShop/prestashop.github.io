@@ -57,17 +57,17 @@ These logos will be available in the back office during the first semester of 20
 ![New logos](/assets/images/2021/01/build-article-modules-logos-best-customers-january21.png)
 
 Best customers:
-Enrich your stats, add a list of the best customers to the dashboard
+Enrich your stats, add a list of the best customers to the dashboard.
 
 ![New logos](/assets/images/2021/01/build-article-modules-logos-customer-follow-up-january21.png)
 
 Customer follow-up: 
-Offer your customers a quick follow-up with daily customized e-mails to send
+Offer your customers a quick follow-up with daily customized e-mails to send.
 
 ![New logos](/assets/images/2021/01/build-article-modules-logos-official-gdpr-january21.png)
 
 Official GDPR Compliance:
-Make your store comply with the General Data Protection Regulation 
+Make your store comply with the General Data Protection Regulation.
 
 You can also have a look at the [GitHub issue](https://github.com/PrestaShop/PrestaShop/issues/15858).
 

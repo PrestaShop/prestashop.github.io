@@ -77,7 +77,7 @@ To know more about a specific module (whether it is a built-in module or not) yo
 
 Our product managers have redesigned the built-in module pages on the marketplace to make them clearer and more understandable. 
 
-Please note that you cannot download built-in modules on the Addons marketplace, as they are already available in both Modules sections of your back office. 
+Please note that you cannot download built-in modules on the Addons marketplace, as they are already available in both Modules sections of your back office. However, if you really need to download them, you can do it from the module repositories, available [here](https://github.com/PrestaShop). 
 
 These modules pages on Addons are available in 9 languages. Check out these pages if you want to know what a module can do for you and how you can use it. 
 

@@ -50,7 +50,11 @@ Spoiler alert: It will soon be possible to click directly on the brochure to acc
 
 ## The current logos look a bit outdated, are you going to update them?
 
-<img src= "/assets/images/2021/01/build-article-modules-tristan-january21.png" width="260" height="190"> _“We made this new set of icons so the user can easily identify PrestaShop’s native features when scrolling the module list in their back office. This redesign is part of our will to harmonize the overall experience on the software. We hope you will like it, don’t hesitate to share your feedback!”_
+
+<img style=“border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;” width=“240" height=“240” src=“/assets/images/2021/01/build-article-modules-tristan-january21.png”>
+     
+     
+_“We made this new set of icons so the user can easily identify PrestaShop’s native features when scrolling the module list in their back office. This redesign is part of our will to harmonize the overall experience on the software. We hope you will like it, don’t hesitate to share your feedback!”_
 
 It was time for a new look! Our Design team did a great job at modernizing and freshening the logos. Icons are pretty much the same but their colors fit better with the PrestaShop identity, the user experience will be more consistent. 
 
@@ -61,16 +65,19 @@ To help you wait here is a little preview:
 ![New logos](/assets/images/2021/01/build-article-modules-logos-best-customers-january21.png)
 
 Best customers:
+
 Enrich your stats, add a list of the best customers to the dashboard.
 
 ![New logos](/assets/images/2021/01/build-article-modules-logos-customer-follow-up-january21.png)
 
 Customer follow-up: 
+
 Offer your customers a quick follow-up with daily customized e-mails to send.
 
 ![New logos](/assets/images/2021/01/build-article-modules-logos-official-gdpr-january21.png)
 
 Official GDPR Compliance:
+
 Make your store comply with the General Data Protection Regulation.
 
 ## What if I want to know more about a module in particular?
@@ -86,4 +93,8 @@ Other elements have been removed: you won't be able to contact the developer, no
 
 These modules pages on Addons are available in 9 languages. Check out these pages if you want to know what a module can do for you and how you can use it. 
 
-<img src="/assets/images/2021/01/build-article-modules-louise-january21.png" width="260" height="200"> _“It was important for us to offer those modules the visibility they deserve, that is why we wrote down all the basic information users need and could not get so far: how does it work? What are the benefits for the merchants, the customers? So we created module pages in 9 languages, to gather all this information and make it available - like for any other module sold on the Addons marketplace!”_
+
+<img style=“border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;” width=“240" height=“240” src=“/assets/images/2021/01/build-article-modules-louise-january21.png”>
+   
+   
+“It was important for us to offer those modules the visibility they deserve, that is why we wrote down all the basic information users need and could not get so far: how does it work? What are the benefits for the merchants, the customers? So we created module pages in 9 languages, to gather all this information and make it available - like for any other module sold on the Addons marketplace!”_

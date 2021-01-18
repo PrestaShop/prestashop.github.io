@@ -54,7 +54,9 @@ Spoiler alert: It will soon be possible to click directly on the brochure to acc
 
 It was time for a new look! Our Design team did a great job at modernizing and freshening the logos. Icons are pretty much the same but their colors fit better with the PrestaShop identity, the user experience will be more consistent. 
 
-These logos will be available in the back office during the first semester of 2021 (We have to wait for the QA to validate the pull requests, and for the releases to be done… Please just hold a little longer, you will soon be able to see it in your back office. To help you wait here is a little preview:
+These logos will be available in the back office during the first semester of 2021. As Product Content Manager, I opened pull requests for all of the 88 modules, to update both the logos and the short descriptions. These pull requests have been approved, but we now have to wait for the QA to validate it, and for the releases to be done… Please just hold a little longer, you will soon be able to see the changes in your back office. You can have a look at [the issue on GitHub](https://github.com/PrestaShop/PrestaShop/issues/15858). 
+
+To help you wait here is a little preview:
 
 ![New logos](/assets/images/2021/01/build-article-modules-logos-best-customers-january21.png)
 
@@ -70,8 +72,6 @@ Offer your customers a quick follow-up with daily customized e-mails to send.
 
 Official GDPR Compliance:
 Make your store comply with the General Data Protection Regulation.
-
-You can also have a look at the [GitHub issue](https://github.com/PrestaShop/PrestaShop/issues/15858).
 
 ## What if I want to know more about a module in particular?
 

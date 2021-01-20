@@ -42,7 +42,14 @@ There was a time when it was difficult to find such a list. You could have a par
 
 Dear PrestaShop users, those days are over! 
 
-The PrestaShop company's core product team took some time to test all modules, screenshot them, accurately categorize them, write explicit and complete product information, translate it into eight languages, create special Addons pages for them and gather it all in a dedicated brochure available [here](https://www.prestashop.com/fr/ressources).
+Our Product Team took some time to:
+
+* Test all modules
+* Categorize them with precision (see the six categories above)
+* Write explicit and complete information (description, advantages, features, etc.)
+* Create dedicated pages on the Addons marketplace to make the information available to merchants
+* Adapt the code to make the modules available in the back office
+* Gather everything in a brand new brochure available [here](https://www.prestashop.com/fr/ressources)
 
 This brochure, available in no less than 8 languages, will give you a complete overview of the natively available features that will help you empower your business!
 

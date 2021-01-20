@@ -2,7 +2,7 @@
 layout: post
 title:  "Apache vs. NGINX: Match of the Millennium"
 subtitle: "Dream match never ends"
-date:   2021-01-20 12:00:00
+date:   2021-01-20 16:30:00
 authors: [ Claude-ArnaudPerrot ]
 icon: icon-lightning
 tags: [performance, whitepaper]

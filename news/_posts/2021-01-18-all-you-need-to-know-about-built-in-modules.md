@@ -24,17 +24,17 @@ To know more about native modules, you can check the [documentation](https://dev
 
 All these modules aim at providing basic optional features to help your store go to the next level. Following the PrestaShop's back office categorization, they are organized into 6 main categories:
 
-**Traffic & Marketplace:** Increase your store awareness, traffic, and conversions.
+[**Traffic & Marketplace**](https://addons.prestashop.com/488-trafic-marketplaces?): Increase your store awareness, traffic, and conversions.
 
-**Promotions & Marketing:** Boost your sales and promote your catalog.
+[**Promotions & Marketing**](https://addons.prestashop.com/496-promotions-marketing?): Boost your sales and promote your catalog.
 
-**Payment:** Use a payment module to make it easy for customers to purchase on your store.
+[**Payment**](https://addons.prestashop.com/481-paiement?): Use a payment module to make it easy for customers to purchase on your store.
 
-**Facebook & Social network:** Easily build a community around your store.
+[**Facebook & Social network**](https://addons.prestashop.com/455-facebook-reseaux-sociaux?): Easily build a community around your store.
 
-**Design & Navigation:** Customize the design of your store and improve your site navigation to make it unique, engaging, and adapted to your business as well as your customer needs.
+[**Design & Navigation**](https://addons.prestashop.com/507-design-navigation?): Customize the design of your store and improve your site navigation to make it unique, engaging, and adapted to your business as well as your customer needs.
 
-**Administration:** Simplify the daily management of your store. 
+[**Administration**](https://addons.prestashop.com/440-administration?): Simplify the daily management of your store. 
 
 ## Where can I find the list of all built-in modules?
 

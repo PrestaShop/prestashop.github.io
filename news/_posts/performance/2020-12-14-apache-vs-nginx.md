@@ -1,22 +1,26 @@
 ---
 layout: post
-title:  "Apache vs. NGINX : Match of the Millennium"
+title:  "Apache vs. NGINX: Match of the Millennium"
 subtitle: "Dream match never ends"
-date:   2020-12-14 12:00:00
+date:   2021-01-20 12:00:00
 authors: [ Claude-ArnaudPerrot ]
 icon: icon-lightning
 tags: [performance, whitepaper]
 ---
 
-Here is the second article in the performance series, dealing with the old feud between Apache and NGINX.
+Here is the second article in the [performance series we started last year][performance-article1], dealing with the old feud between Apache and NGINX.
 
-You may have heard of it, but we will soon publish a White Paper about PrestaShop's performances, how to tune your shop, enhance its response time, and so on.
+As you may have heard of, we will soon publish a White Paper about PrestaShop's performances, how to tune your shop, enhance its response time, and so on.
 
-During these benchmarks, we did compare performances between Apache & NGINX, the usual contenders, with similar setups.
+During these benchmarks, we did compare performances between Apache & NGINX, the usual contenders, with identical setups.
 
-This article probably won't end the long debate between those two, but let's hope it will help you find some clarity on the matter and find out which one is best suited for _your_ configuration.
+Though this article probably won't end the long debate between those two, let's hope it will help you find some clarity on the matter and find out which one is best suited for _your_ configuration. If not both.
 
 Ready to rumble?
+
+> As you'll see, this article will be illustrated by screenshots from the 2D fighting game Garou Mark of the Wolves, belonging to SNK Corporation, as it features a fight between 2 popular webservers.
+Of course, there is no real fight there, as hinted by our article's conclusion.
+Also, this is an hommage to the fighting games genre, at its height in the 90s, to Garou Mark of the Wolves specifically, one of the best ever released and the work of a company at the height of its savoir-faire.
 
 ## Player Select
 
@@ -106,8 +110,7 @@ In our case, we can conclude there is not much constraint on the system preventi
 
 Also, remember that our task here is to use as much ressources as possible and CPU time means it is not waiting for IOs (disk or network), or managing RAM (neither swapping, as it should be seen on disk), and so on.
 
-
-## Finish him!
+## K.O.!
 
 So, now that we've seen that our system is all up to work at the CPU level, let's try to understand what the Visitors result could mean to all the PrestaShops around the world.
 
@@ -148,6 +151,16 @@ Let us know in the comments if you found anything interesting in this article, i
 
 See you soon for the next article in the series.
 
+## About the series
+
+These are the topics that have currently been covered during this series:
+
+1. [Performance (& PrestaShop)][performance-article1]
+2. [Apache Vs. NGINX : Match Of The Millennium][performance-article2]
+
+
+[performance-article1]: /news/performance-and-prestashop/
+[performance-article2]: /news/apache-vs-nginx/
 [PlayerSelect]: /assets/images/2020/12/MarkoftheWolvesPlayerSelect.jpg
 [TestingArchitecture]: /assets/images/2020/12/TestingArchitecture.png
 [FIGHT]: /assets/images/2020/12/banner-garoumarkofthewolves.jpg

@@ -57,7 +57,7 @@ Spoiler alert: It will soon be possible to click directly on the brochure to acc
 
 ## The current logos look a bit outdated, are you going to update them?
 
-![Tristan's quote](/assets/images/2021/01/build-article-modules-tristan-january21.png)
+> _“We made this new set of icons so the user can easily identify PrestaShop’s native features when scrolling the module list in their back office. This redesign is part of our will to harmonize the overall experience on the software. We hope you will like it, don’t hesitate to share your feedback!”_ Tristan, Product Designer
 
 It was time for a new look! Our Design team did a great job at modernizing and freshening the logos. Icons are pretty much the same but their colors fit better with the PrestaShop identity, the user experience will be more consistent. 
 
@@ -96,4 +96,4 @@ Other elements have been removed: you won't be able to contact the developer, no
 
 These modules pages on Addons are available in 9 languages. Check out these pages if you want to know what a module can do for you and how you can use it. 
 
-![Louise's quote](/assets/images/2021/01/build-article-modules-louise-january21.png)
+> _“It was important for us to offer those modules the visibility they deserve, that is why we wrote down all the basic information users need and could not get so far: how does it work? What are the benefits for the merchants, the customers? So we created module pages in 9 languages, to gather all this information and make it available - like for any other module sold on the Addons marketplace!”_ Louise, Product Manager

@@ -38,7 +38,7 @@ All these modules aim at providing basic optional features to help your store go
 
 ## Where can I find the list of all built-in modules?
 
-There was a time when it was difficult to find such a list. You could have a part of it directly in the back office but half of the information was missing and most of it has not been updated (or worse, inherited from the 1.6 version). In the end, it was not helpful at all.
+There was a time when it was difficult to find such a list. You could have a part of it directly in the back office but half of the information was missing and most of it had not been updated (or worse, inherited from the 1.6 version). In the end, it was not helpful at all.
 
 Dear PrestaShop users, those days are over! 
 

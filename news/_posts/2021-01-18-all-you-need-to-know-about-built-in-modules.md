@@ -18,7 +18,11 @@ A built-in module is a module that was developed by PrestaShop and that is avail
 
 We are not talking about "native modules" here, as the definition of a native module is a bit more complicated. Indeed, some native modules are present in the installation zip, some are pre-installed and some others are not. So, to make it easier, we have chosen to talk about built-in modules in this article.
 
-To know more about native modules, you can check the [documentation](https://devdocs.prestashop.com/1.7/development/native-modules/). 
+To know more about native modules, you can check the [documentation](https://devdocs.prestashop.com/1.7/development/native-modules/).
+
+### New native modules distribution
+
+Following an opinion poll carried out through the [User Club](https://www.prestashop.com/en/club) and the usage studied along with the project's maintainers, we made the decision to redefine the current native modules distribution. Some have not been updated for years, some did not work with PrestaShop 1.7, and others could be merged into a single module, this is why a small number of modules have just been archived. It means that they are still available on GitHub (although they have been removed from the organization) but the Core team no longer maintains them. You still can fork it if you need it for your shop.
 
 ## What are these modules made for? 
 

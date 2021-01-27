@@ -50,7 +50,7 @@ Our Product Team took some time to:
 
 Here is an example with the “Best Customers” module:
 
-![Best Customers product page](build-article-modules-fiche-produit-january21.png)
+![Best Customers product page](/assets/images/2021/01/build-article-modules-fiche-produit-january21.png)
 
 All this work led to the creation of a [brochure](https://app.hubspot.com/documents/4323170/view/76452587?accessId=514827), available in 9 languages. This document will give you a complete overview of the natively available features that will help you empower your business!
 

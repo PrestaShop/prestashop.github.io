@@ -22,7 +22,7 @@ To know more about native modules, you can check the [documentation](https://dev
 
 ### New native modules distribution
 
-Following an opinion poll carried out through the [User Club](https://www.prestashop.com/en/club) and the usage studied along with the project's maintainers, we made the decision to redefine the current native modules distribution. Some have not been updated for years, some did not work with PrestaShop 1.7, and others could be merged into a single module, this is why a small number of modules have just been archived. It means that they are still available on GitHub (although they have been removed from the organization) but the Core team no longer maintains them. You still can fork it if you need it for your shop.
+Following an opinion poll carried out through the [User Club](https://www.prestashop.com/en/club) and the usage studied along with the project's maintainers, we made the decision to redefine the current native modules distribution. Some have not been updated for years, some did not work with PrestaShop 1.7, and others could be merged into a single module, this is why a small number of modules have just been archived. It means that they are still available on GitHub (although they have been removed from the organization) but the Core team no longer maintains them. You still can fork them if you need them for your shop.
 
 ## What are these modules made for? 
 

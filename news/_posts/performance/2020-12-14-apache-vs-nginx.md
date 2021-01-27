@@ -10,7 +10,7 @@ tags: [performance, whitepaper]
 
 Here is the second article in the [performance series we started last year][performance-article1], dealing with the old feud between Apache and NGINX.
 
-As you may have heard of, we will soon publish a White Paper about PrestaShop's performances, how to tune your shop, enhance its response time, and so on.
+As you may have heard of, we will soon publish a [White Paper about PrestaShop's performances](https://content.prestashop.com/hubfs/WhitePaper/PrestaShop_System_Performance.pdf), how to tune your shop, enhance its response time, and so on.
 
 During these benchmarks, we did compare performances between Apache & NGINX, the usual contenders, with identical setups.
 
@@ -157,10 +157,11 @@ These are the topics that have currently been covered during this series:
 
 1. [Performance (& PrestaShop)][performance-article1]
 2. [Apache Vs. NGINX : Match Of The Millennium][performance-article2]
-
+3. [PHP, scalability & filesystems][performance-article3]
 
 [performance-article1]: /news/performance-and-prestashop/
 [performance-article2]: /news/apache-vs-nginx/
+[performance-article3]: /news/PHP-scalability-and-filesystem/
 [PlayerSelect]: /assets/images/2020/12/MarkoftheWolvesPlayerSelect.jpg
 [TestingArchitecture]: /assets/images/2020/12/TestingArchitecture.png
 [FIGHT]: /assets/images/2020/12/banner-garoumarkofthewolves.jpg

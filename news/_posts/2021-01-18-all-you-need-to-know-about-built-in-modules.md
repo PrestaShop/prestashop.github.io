@@ -43,15 +43,16 @@ There was a time when it was difficult to find such a list. You could have a par
 Dear PrestaShop users, those days are over! 
 
 Our Product Team took some time to:
-
-* Test all modules
-* Categorize them with precision (see the six categories above)
-* Write explicit and complete information (description, advantages, features, etc.)
-* Create dedicated pages on the Addons marketplace to make the information available to merchants
+* Categorize the modules with precision (see the six categories above)
 * Adapt the code to make the modules available in the back office
-* Gather everything in a brand new brochure available [here](https://www.prestashop.com/fr/ressources)
+* Write explicit and complete information (description, advantages, features, etc.)
+* Create dedicated product pages on the Addons marketplace to make the information available to merchants
 
-This brochure, available in no less than 8 languages, will give you a complete overview of the natively available features that will help you empower your business!
+Here is an example with the “Best Customers” module:
+
+![Best Customers product page](build-article-modules-fiche-produit-january21.png)
+
+All this work led to the creation of a [brochure](https://app.hubspot.com/documents/4323170/view/76452587?accessId=514827), available in 9 languages. This document will give you a complete overview of the natively available features that will help you empower your business!
 
 Spoiler alert: It will soon be possible to click directly on the brochure to access its page on the PrestaShop Addons marketplace! A Russian version of the brochure will also be released soon.
 

@@ -57,7 +57,7 @@ As you may have guessed, horizontal scaling is all about adding more _instances_
 _Just keep swimming, just keep swimming!_
 {: .text-center }
 
-Still, depending on your ecosystem, it may require some more work, at least a way to load balance traffic between the instances.
+Still, depending on your ecosystem, it may require some more work, at least a way to [load balance](https://en.wikipedia.org/wiki/Load_balancing_(computing)) traffic between the instances.
 
 And probably a way to distribute the application's files, especially for application like PrestaShop.
 

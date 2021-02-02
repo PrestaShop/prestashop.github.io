@@ -97,7 +97,7 @@ It does this by calling `stat`, which is a bit heavy on the system, not only bec
 
 PHP not being a compiled language, it does use several files.
 
-Even more today, with Composer enabling package management, adding plenty of modules and files.
+Even more today, with [Composer](https://getcomposer.org/) enabling package management, adding plenty of modules and files.
 
 Just a quick example here, a standard PrestaShop installation, just the modules directory contains around 10k files:
 

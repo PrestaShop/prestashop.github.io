@@ -144,7 +144,7 @@ Don't forget that the real path cache directives are incompatible with the `open
 
 Our best advice would be to work on both sides by:
 
-* Either with containers (at PHP or kernel level), or VMs or whichever technology you're the most confortable with, working on security by minimizing the directories and contents the application can access to
+* Either with containers (at PHP or kernel level), or Virtual Machines or whichever technology you're the most confortable with, working on security by minimizing the directories and contents the application can access to
 * Enabling the realpath cache directive in order to improve the application's or system's performances
 
 As always, we're aware our advice can not take several parameters into account - such as the security requirements of your application or system, your access to different platform architectures types or the resources at your disposal.

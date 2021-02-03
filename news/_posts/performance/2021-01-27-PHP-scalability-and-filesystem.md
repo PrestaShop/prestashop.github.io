@@ -32,7 +32,7 @@ Let's review together the two main levers to enable scalability - and keep in mi
 The simpliest and most efficient way to add some resources to your system if often to add some RAM, or CPU, or storage, or all of those at the same time.
 
 ![VerticalScaling][VerticalScaling]
-_Not enough mana!_
+_We require more minerals_
 {: .text-center }
 
 In a modern world made of cloud computing instances, vertical scaling can be done in a few mouse clicks by upgrading the instance type and releasing new resources. It can be a bit more tricky if you manage the hardware yourself, but it's still feasible.

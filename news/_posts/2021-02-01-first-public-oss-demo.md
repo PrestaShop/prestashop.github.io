@@ -8,9 +8,7 @@ icon: icon-video-camera
 tags: [contribute, events, community]
 ---
 
-Last week, the maintainers team held a special event for the open source project: a public demonstrations session.
-
-To explain better the nature of this event, some context is needed.
+Last week, the maintainers team held a special event for the open source project: a public demonstrations session. To explain better the nature of this event, some context is needed.
 
 ## Demonstrations at PrestaShop
 
@@ -61,5 +59,4 @@ We will now start to prepare the next session of "public PrestaShop open source 
 The agenda, the streaming setup, the participants... all of this is being worked on to make sure the next session, which will be the first fully public, will be a success.
 
 As soon as we are ready, we will communicate about the date and how to join so be sure to stay tuned!
-
 

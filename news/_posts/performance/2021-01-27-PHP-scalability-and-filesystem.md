@@ -31,7 +31,7 @@ Let's review together the two main levers to enable scalability - and keep in mi
 
 The simpliest and most efficient way to add some resources to your system if often to add some RAM, or CPU, or storage, or all of those at the same time.
 
-![VerticalScaling][VerticalScaling]
+![Vertical Scaling][VerticalScaling]
 _We require more minerals_
 {: .text-center }
 
@@ -53,7 +53,7 @@ Last but not least, vertical scaling usually requires no configuration change (e
 
 As you may have guessed, horizontal scaling is all about adding more _instances_ of your system or application, whichever infrastructure you are using (either some docker, virtual machines or physical servers, the concept is similar):
 
-![HorizontalScaling][HorizontalScaling]
+![Horizontal Scaling][HorizontalScaling]
 _Just keep swimming, just keep swimming!_
 {: .text-center }
 
@@ -63,7 +63,7 @@ And probably a way to distribute the application's files, especially for applica
 
 Hence, the most simple architecture schema you will come with looks a lot like this (either load balancing with your kubernetes service through an ingress or just setting up your F5 BigIP appliance):
 
-![HorizontalScalingExpanded][HorizontalScalingExpanded]
+![Horizontal Scaling Expanded][HorizontalScalingExpanded]
 _I've a feeling we're not in Kansas anymore._
 {: .text-center }
 
@@ -188,7 +188,7 @@ So, what can you expect from a bit of caching, when trying to minimize the files
 
 Well, we're glad you ask!
 
-![TuningUsersCount][TuningUsersCount]
+![Users per hour count graph][TuningUsersCount]
 _As usual, the more the merrier_
 {: .text-center }
 
@@ -198,13 +198,13 @@ Something that you will be able to reproduce, whatever your environment and setu
 
 Just in case you were wondering about the filesystem and disks impact, here is another test with SSD disks on the same instance type:
 
-![TuningUsersCountSSD][TuningUsersCountSSD]
+![User per hour count with SSD graph][TuningUsersCountSSD]
 _Again, the more the merrier_
 {: .text-center }
 
 Let's have a quick look at the CPU usage before wrapping up:
 
-![TuningCPUUsage][TuningCPUUsage]
+![CPU Usages graph][TuningCPUUsage]
 _More CPU usage means less bottlenecks_
 {: .text-center }
 

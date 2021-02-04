@@ -12,7 +12,7 @@ Introducing a new series of article to talk about performance, benchmarking and 
 
 
 
-You may have heard of it, but we'll soon release a White Paper, which is all about PrestaShop's performance, how to benchmark it and how it behaves under loads. And what to do to keep it responding under 300ms.
+You may have heard of it, but we'll soon release a [White Paper](https://content.prestashop.com/hubfs/WhitePaper/PrestaShop_System_Performance.pdf), which is all about PrestaShop's performance, how to benchmark it and how it behaves under loads. And what to do to keep it responding under 300ms.
 
 Still, there are a number of matters that can't be covered in a White Paper - hopefully the first in a series, fingers crossed.
 Or that can't be given the space we think they deserve.
@@ -85,6 +85,17 @@ Every enhancement won't have the same effect (or any) over your system's life cy
 
 Now that we're all on the same page about the concepts of performance, we are ready to dive into more crunchy details! Prepare yourselves for the next articles in this series, hopefully in the coming weeks!
 
+## About the series
+
+These are the topics that have currently been covered during this series:
+
+1. [Performance (& PrestaShop)][performance-article1]
+2. [Apache Vs. NGINX : Match Of The Millennium][performance-article2]
+3. [PHP, scalability & filesystems][performance-article3]
+
+[performance-article1]: /news/performance-and-prestashop/
+[performance-article2]: /news/apache-vs-nginx/
+[performance-article3]: /news/PHP-scalability-and-filesystem/
 [NotANumber]: /assets/images/2020/12/ResponseTimePercentile.png
 [Bottleneck]: /assets/images/2020/12/Von_Neumann_Architecture.png
 [UpUpAndAway]: /assets/images/2020/12/cpuusage.png

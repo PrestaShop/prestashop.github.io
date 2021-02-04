@@ -2,7 +2,7 @@
 layout: post
 title:  "Announcing the public demonstrations for the project"
 subtitle: "We held a first session of Public open source demonstrations for the project"
-date:   2021-02-01
+date:   2021-02-04 16:30:00
 authors: [ MathieuFerment ]
 icon: icon-video-camera
 tags: [contribute, events, community]

@@ -31,6 +31,8 @@ Let's review together the two main levers to enable scalability - and keep in mi
 
 The simpliest and most efficient way to add some resources to your system if often to add some RAM, or CPU, or storage, or all of those at the same time.
 
+Here with a simple stack with a webserver (let's use Apache2), your favorite PHP application and a database (here MySQL):
+
 ![Vertical Scaling][VerticalScaling]
 _We require more minerals_
 {: .text-center }
@@ -61,7 +63,7 @@ Still, depending on your ecosystem, it may require some more work, at least a wa
 
 And probably a way to distribute the application's files, especially for application like PrestaShop.
 
-Hence, the most simple architecture schema you will come with looks a lot like this (either load balancing with your kubernetes service through an ingress or just setting up your F5 BigIP appliance):
+Hence, the most simple architecture schema you will come with looks a lot like this (either load balancing with your kubernetes service through an [ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) or just setting up your F5 [BigIP](https://devcentral.f5.com/s/articles/what-is-big-ip-24596) appliance):
 
 ![Horizontal Scaling Expanded][HorizontalScalingExpanded]
 _I've a feeling we're not in Kansas anymore._

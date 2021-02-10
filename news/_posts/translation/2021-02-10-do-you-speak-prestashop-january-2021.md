@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – January 2021 edition"
 subtitle: "Where you'll learn that Romanian and Spanish reached 100%"
-date: 2021-02-09 17:00:00
+date: 2021-02-10 17:00:00
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

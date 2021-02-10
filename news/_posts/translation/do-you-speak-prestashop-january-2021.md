@@ -16,6 +16,7 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 ## Project news
 
 ### :two_hearts: Special thanks to newcomers  
+
 Many people subscribe to the project(s) of their choice each month, but not so many start translating straight away. For that reason, we would like to thank the ones who rushed into the effort immediately! So lots of love to the dedicated [Laimonas Matukas](https://crowdin.com/profile/lmatukas), [Jussi Lahtinen](https://crowdin.com/profile/j-lahtinen), [Arman Hosseini](https://crowdin.com/profile/Arman-Hosseini), [Zafer ÖZTÜRK](https://crowdin.com/profile/PrestaTurk), [jordipagano](https://crowdin.com/profile/jordipagano), [8i11y](https://crowdin.com/profile/8i11y), and [Armand](https://crowdin.com/profile/rubujeto/activity). 
 
 ## A few stats
@@ -112,5 +113,4 @@ If you have not joined us on Crowdin yet, [it is never too late](https://crowdin
 If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let me know: I will include a word about it in the next monthly report.
  
 Do you have a question, a remark? Do not hesitate to leave a comment. See you next month! :raising_hand:
-
 

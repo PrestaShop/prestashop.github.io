@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Do you speak PrestaShop? – January 2021 edition"
-subtitle: "Where you'll learn that two more languages reached 100%"
+subtitle: "Where you'll learn that Romanian and Spanish reached 100%"
 date: 2021-02-09 17:00:00
 authors: [JulieVarisellaz]
 icon: icon-world
@@ -113,4 +113,3 @@ If you have not joined us on Crowdin yet, [it is never too late](https://crowdin
 If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let me know: I will include a word about it in the next monthly report.
  
 Do you have a question, a remark? Do not hesitate to leave a comment. See you next month! :raising_hand:
-

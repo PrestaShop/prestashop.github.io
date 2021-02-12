@@ -8,6 +8,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Set variable WEEK_NUM
+      run: echo '::set-output name=WEEK_NUM::${date +"%U"}'
+    - name: Set variable YEAR
+      run: echo '::set-output name=YEAR::${date +"%Y"}'
     - name: Checkout Build
       uses: actions/checkout@v2
     - name: Checkout Core Weekly Generator
@@ -26,13 +30,13 @@ jobs:
     - name: Generate Core Weekly for the current week
       run: |
         cd ./core-weekly-generator
-        python core-weekly.py --week ${date +"%U"} > ../prestashop.github.io/news/_posts/core-weekly/${date +"%Y-%m-%d-coreweekly-%U-%Y.md"}
+        python core-weekly.py --week ${{ steps.build.outputs.WEEK_NUM }} > ../prestashop.github.io/news/_posts/core-weekly/${date +"%Y-%m-%d-coreweekly-%U-%Y.md"}
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
-        commit-message: Added Core Weekly
+        commit-message: Added Core Weekly ${{ steps.build.outputs.WEEK_NUM }} of ${{ steps.build.outputs.YEAR }}
         delete-branch: true
-        title: 'Added Core Weekly'
+        title: 'Added Core Weekly ${{ steps.build.outputs.WEEK_NUM }} of ${{ steps.build.outputs.YEAR }}'
         body: |
-            Added Core Weekly
+            Added Core Weekly ${{ steps.build.outputs.WEEK_NUM }} of ${{ steps.build.outputs.YEAR }}
         team-reviewers: prestashop-core-developers

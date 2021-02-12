@@ -3,9 +3,6 @@ name: Core Weekly
 on:
   schedule:
     - cron:  '0 7 * * 1'
-#  push:
-#    branches:
-#      - master
 
 jobs:
   build:
@@ -26,7 +23,7 @@ jobs:
       run: |
         cd ./core-weekly-generator
         pip install -r requirements.txt
-    - name: Generate Core Weekly for week 2
+    - name: Generate Core Weekly for the current week
       run: |
         cd ./core-weekly-generator
         python core-weekly.py --week ${date +"%U"} > ../prestashop.github.io/news/_posts/core-weekly/${date +"%Y-%m-%d-coreweekly-%U-%Y.md"}

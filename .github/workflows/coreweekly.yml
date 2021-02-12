@@ -1,0 +1,41 @@
+name: Core Weekly
+
+on:
+  schedule:
+    - cron:  '0 7 * * 1'
+#  push:
+#    branches:
+#      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Build
+      uses: actions/checkout@v2
+    - name: Checkout Core Weekly Generator
+      uses: actions/checkout@master
+      with:
+        repository: PrestaShop/core-weekly-generator
+        path: ./core-weekly-generator
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        cd ./core-weekly-generator
+        pip install -r requirements.txt
+    - name: Generate Core Weekly for week 2
+      run: |
+        cd ./core-weekly-generator
+        python core-weekly.py --week ${date +"%U"} > ../prestashop.github.io/news/_posts/core-weekly/${date +"%Y-%m-%d-coreweekly-%U-%Y.md"}
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        commit-message: Added Core Weekly
+        delete-branch: true
+        title: 'Added Core Weekly'
+        body: |
+            Added Core Weekly
+        team-reviewers: prestashop-maintainers

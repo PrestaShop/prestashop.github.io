@@ -29,7 +29,7 @@ Reminder:  the 1-Click Upgrade module’s latest version is v4.10.0, don’t for
 
 ## Main fixes
 
-Below are listed some main regressions we fixed in this version :
+Below are listed some main regressions we fixed in this version:
 
 **Upgrade**
 

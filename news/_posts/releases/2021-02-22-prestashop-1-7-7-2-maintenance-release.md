@@ -4,7 +4,7 @@ title:  "Release of PrestaShop 1.7.7.2"
 subtitle: "Maintenance version of the 1.7.7.x branch"
 date:   2021-02-22 18:00:00
 authors: [ PrestaShop ]
-image: /assets/images/2021/02/meta-1772.png
+image: /assets/images/2021/02/1.7.7.2_meta.png
 icon: icon-leaf
 tags:
  - version
@@ -17,7 +17,7 @@ tags:
 
 After a few months dedicated to fixing upgrades problems, regressions and security issues found on the previous 1.7.7 versions, PrestaShop 1.7.7.2 is finally available! 
 
-![1.7.7.2 is available!](/assets/images/2021/02/1.7.7.2_banner.jpg)
+![1.7.7.2 is available!](/assets/images/2021/02/1.7.7.2_banner.png)
 
 This maintenance release fixes 21 bugs reported on version 1.7.7.0 and 1.7.7.1 and 2 security issues.
 

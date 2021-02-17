@@ -35,43 +35,43 @@ Below are listed some main regressions we fixed in this version :
 
 
 
-*   [Upgrade 1.6.1.24 => 1.7.7.1 error in FO - 1.6 modules remain although 1.7 equivalent have been downloaded, this makes FO crash · Issue #22668 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22668)
-*   [1.7.6.9 -> 1.7.7.1: Some DB Columns are missed · Issue #22881 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22881)
+*   [When upgrading from 1.6.1.24 to 1.7.7.1, modules crashes the FO](https://github.com/PrestaShop/PrestaShop/issues/22668)
+*   [When upgrading from 1.7.6.9 to 1.7.7.1 some DB's columns are missing](https://github.com/PrestaShop/PrestaShop/issues/22881)
 
 **SEO**
 
 
 
-*   [ItemList is wrong for products blocks of carousels and product list · Issue #22636 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22636)
-*   [[FO] Make a search with Alias composed with two words doesn't show any results · Issue #22444 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22444)
+*   [ItemList is incorrect for products blocks of carousels and product list](https://github.com/PrestaShop/PrestaShop/issues/22636)
+*   [A search with Alias composed with two words doesn't show any results](https://github.com/PrestaShop/PrestaShop/issues/22444)
 
 **Order page**
 
 
 
-*   [BO - Orders page - Cannot delete a product when debug mode is enabled · Issue #22625 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22625)
-*   [Discount - Incorrect display on FO with free gift + percentage cart rule · Issue #22615 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22615)
-*   [BO - Order page - Recalculate shipping costs option enabled - the Shipping price not instantly updated · Issue #21267 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/21267)
-*   [Missing VAT number in OrderPreview 1.7.7.1 · Issue #22830 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22830)
-*   [Multistore - BO - Add new Order page - Cannot search a product when a shop from different Group is selected · Issue #22460 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22460)
-*   [Symfony ContextErrorException : unserialize Error at offset (DataCollector) - Error 500 when debug enabled · Issue #22231 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22231)
-*   [BO - Order page - Details modal for carts - the Refresh button is not working · Issue #22105 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22105)
-*   [BO - Add new Order page - The gift block is not updated when changing the Address - A cart rule "Discount for a country selection" is applied · Issue #22243 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22243)
+*   [I cannot delete a product when debug mode is enabled](https://github.com/PrestaShop/PrestaShop/issues/22625)
+*   [The display of the cart rule on FO with free gift + percentage cart rule is incorrect](https://github.com/PrestaShop/PrestaShop/issues/22615)
+*   [The Shipping price not instantly updated on the Order page](https://github.com/PrestaShop/PrestaShop/issues/21267)
+*   [The VAT number is missing in order page](https://github.com/PrestaShop/PrestaShop/issues/22830)
+*   [I cannot search a product when a shop from different Group is selected on create a the Add new order page](https://github.com/PrestaShop/PrestaShop/issues/22460)
+*   [Symfony ContextErrorException Error 500 when debug enabled](https://github.com/PrestaShop/PrestaShop/issues/22231)
+*   [The refresh button is not working on details modal of carts on the customer page](https://github.com/PrestaShop/PrestaShop/issues/22105)
+*   [The gift block is not updated when changing the Address for a discount on the countrie on the Add new Order page](https://github.com/PrestaShop/PrestaShop/issues/22243)
 *   [BO - Orders page - an error is displayed in the console when adding a voucher · Issue #22590 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22590)
 
 **Shopping Cart**
 
 
 
-*   [Reference number of product is wrong in Shopping Carts · Issue #22854 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22854)
-*   [1.7.7.1 Back office Shopping Cart browsing causes "Type error: Return value of CartCore::getCartPriceFromCatalog()" · Issue #22812 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22812)
+*   [Reference number of product is incorrect in Shopping Carts](https://github.com/PrestaShop/PrestaShop/issues/22854)
+*   [Searching and viewing shopping carts in the back office produces an "unexpected error" screen](https://github.com/PrestaShop/PrestaShop/issues/22812)
 
 **Others**
 
 
 
-*   [Installation Error in Persian (Farsi) Language. · Issue #22657 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22657)
-*   [Customer Group Discounts are not showned since migration to 1.7.7.0 · Issue #22397 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22397)
+*   [Installation Error in Persian (Farsi) Language](https://github.com/PrestaShop/PrestaShop/issues/22657)
+*   [Customer Group Discounts are not showned on Your voucher page in the front-office](https://github.com/PrestaShop/PrestaShop/issues/22397)
 
 Read the [full changelog here](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.7.2)]
 

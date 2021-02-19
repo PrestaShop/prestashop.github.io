@@ -54,4 +54,4 @@ You can use the timestamps to jump directly to the parts you want to watch.
 
 ## Next step, second session on the 25th of February
 
-The next session of "public PrestaShop open source demonstrations" is scheduled for **the 25th of February at 2pm CET** – that's next Thursday!
+The next session of "public PrestaShop open source demonstrations" is scheduled for **the 25th of February at 2pm CET** – that's next Thursday! If you want to learn more about the PrestaShop project... see you there!

@@ -16,7 +16,7 @@ Historically, the maintainers team of the PrestaShop open source project was onl
 
 Scrum's _demo_ is a regularly held event that takes place at the end of each development cycle (called _sprint_), where the team demonstrates what has been built. This helps stakeholders, inside and outside the team, to witness the outcome, what has been delivered, and provide feedback. For years, this event happened regularly, but only employees of the PrestaShop company were invited.
 
-Since 2020, the PrestaShop project is becoming increasingly independent from the PrestaShop company. One of the major milestone of his evolution has been the [introduction of community maintainers](https://build.prestashop.com/news/coreweekly-43-2020/) [@kpodemski](https://github.com/kpodemski) and [@pululuk](https://github.com/pululuk).
+Since 2020, the PrestaShop project is becoming increasingly independent from the PrestaShop company. One of the major milestone of this evolution has been the [introduction of community maintainers](https://build.prestashop.com/news/coreweekly-43-2020/) [@kpodemski](https://github.com/kpodemski) and [@pululuk](https://github.com/pululuk).
 
 As the project becomes more open, transparency is key. During 2020, we published the [Maintainer's Guide](https://devdocs.prestashop.com/1.7/project/maintainers-guide/). Next step: making the demo meetings public, and streamed live!
 

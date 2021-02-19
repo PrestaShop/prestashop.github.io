@@ -2,13 +2,13 @@
 layout: post
 title:  "Announcing the public demonstrations for the project"
 subtitle: "We held a first session of Public open source demonstrations for the project"
-date:   2021-02-04 16:30:00
+date:   2021-02-19 16:30:00
 authors: [ MathieuFerment ]
 icon: icon-video-camera
 tags: [contribute, events, community]
 ---
 
-Last week, the maintainers team held a special event for the open source project: a public demonstrations session. To explain better the nature of this event, some context is needed.
+Last month, the maintainers team held a special event for the open source project: a public demonstrations session. To explain better the nature of this event, some context is needed.
 
 ## Demonstrations at PrestaShop
 
@@ -24,39 +24,42 @@ Also we hope that this event can become a meeting place for the maintainers and 
 
 ## The first Public open source demonstrations
 
-So last week on the 28th of January, we held the first online session of what we call, for now, "Public PrestaShop open source demonstrations".
+So last month on the 28th of January, we held the first online session of what we call, for now, "Public PrestaShop open source demonstrations".
 
 This event was open for maintainers but not for community as this was our very first attempt to this sort of meeting. As we were not confident in the result, we wanted to keep restrict the audience to avoid disappointment. This first session aimed to give the concept a shot before going fully public. We have already identified multiple areas for improvement to make it better.
 
-**Next session, however, will be open for anybody to attend.** Everyone wishing to watch the next sessions (and the ones coming after) will be able to! We are still working to improve the format, so details will come later.
+**Next session, however, will be open for anybody to attend.** Everyone wishing to watch the next sessions (and the ones coming after) will be able to, as they will be streamed on the [YouTube channel](https://www.youtube.com/channel/UCchgBHHhl5Vu7HgjrzpvVQQ) created for the PrestaShop project.
 
-Also each session will be recorded and the record will be shared to make sure someone who could not attend can nevertheless watch the replay.
+Also each session will be recorded and the record will be shared on YouTube as well to make sure someone who could not attend can nevertheless watch the replay.
 
 ## This first session agenda
 
 The first session agenda was as follows:
 
 00:00 Introduction
+
 02:23 Presentation of the agenda
+
 03:06 Event rules
+
 04:20 Project announcements
+
 06:04 First demonstration - Multishop support for Symfony BO pages by [@matthieu-rolland](http://github.com/matthieu-rolland)
+
 18:40 Second demonstration - Enhanced module capacities to customize Symfony thanks to form simplification by [@matks](http://github.com/matks)
+
 29:51 Questions & Answers
+
 38:30 Closure
 
 You can use the timestamps to jump directly to the parts you want to watch.
 
-[Download the replay from GoogleDrive](https://drive.google.com/file/d/1OYa9txWYnPu5jU5rP5JXJFiaBzvJG4VS/view?usp=sharing){: .btn .btn-lg .btn-info}
+[Watch the replay on YouTube](https://www.youtube.com/watch?v=pski9AHrAp0){: .btn .btn-lg .btn-info}
 {: .text-center}
 
-The replay is currently being hosted on GoogleDrive, but we will find a more suitable solution for future sessions.
+## Next step, second session on the 25th of February
 
-## Next step
+We are preparing the next session of "public PrestaShop open source demonstrations" that is scheduled to happen on **the 25th of February at 2pm, next Thursday!**
 
-We will now start to prepare the next session of "public PrestaShop open source demonstrations".
-
-The agenda, the streaming setup, the participants... all of this is being worked on to make sure the next session, which will be the first fully public, will be a success.
-
-As soon as we are ready, we will communicate about the date and how to join so be sure to stay tuned!
+Once again, do not worry if you cannot attend the event at this day and hour as the record will be uploaded immediately after the session.
 

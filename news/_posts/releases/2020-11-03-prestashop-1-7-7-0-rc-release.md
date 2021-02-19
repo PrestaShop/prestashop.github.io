@@ -4,7 +4,7 @@ title:  "PrestaShop 1.7.7.0 RC1 Is Ready To Be Tested!"
 subtitle: "Two months after the beta, here it is: the first release candidate for PrestaShop 1.7.7.0 is now ready for you to test!"
 date:   2020-11-03 15:00:00
 authors: [ PrestaShop ]
-image: /assets/images/2020/11/build-177RC1.png
+image: /assets/images/2020/12/build-177RC1.png
 icon: icon-leaf
 tags:
  - 1.7.7.x
@@ -16,7 +16,7 @@ tags:
 
 We are really happy to announce that we are very close to finishing the 1.7.7.0 release, the release candidate is the last step before the final version is out. 
 
-![1.7.7.0 RC1 is available!](/assets/images/2020/11/build-177RC1.png)
+![1.7.7.0 RC1 is available!](/assets/images/2020/12/build-177RC1.png)
 
 This release candidate aims at making sure that all major regressions found during the beta have been fixed, and that no new ones have been spotted. If no new critical or major regression is reported by November 17th, we will make the final version of 1.7.7.0 available.
 

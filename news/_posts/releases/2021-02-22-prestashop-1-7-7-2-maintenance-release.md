@@ -57,7 +57,7 @@ Below are listed some main regressions we fixed in this version:
 *   [Symfony ContextErrorException Error 500 when debug enabled](https://github.com/PrestaShop/PrestaShop/issues/22231)
 *   [The refresh button is not working on details modal of carts on the customer page](https://github.com/PrestaShop/PrestaShop/issues/22105)
 *   [The gift block is not updated when changing the Address for a discount on the countrie on the Add new Order page](https://github.com/PrestaShop/PrestaShop/issues/22243)
-*   [BO - Orders page - an error is displayed in the console when adding a voucher · Issue #22590 · PrestaShop/PrestaShop](https://github.com/PrestaShop/PrestaShop/issues/22590)
+*   An error is displayed in the console when adding a voucher(https://github.com/PrestaShop/PrestaShop/issues/22590)
 
 **Shopping Cart**
 

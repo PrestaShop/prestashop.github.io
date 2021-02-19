@@ -73,7 +73,7 @@ Below are listed some main regressions we fixed in this version:
 *   [Installation Error in Persian (Farsi) Language](https://github.com/PrestaShop/PrestaShop/issues/22657)
 *   [Customer Group Discounts are not showned on Your voucher page in the front-office](https://github.com/PrestaShop/PrestaShop/issues/22397)
 
-Read the [full changelog here](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.7.2)]
+Read the [full changelog here](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.7.2)
 
 ## Security fixes
 

@@ -12,15 +12,20 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.5
-        bundler-cache: true
+
+    - name: Install packages
+      run: sudo apt-get install libxslt-dev
 
     - name: Checkout Build
       uses: actions/checkout@v2
 
+    - name: Install dependencies
+      run: bundle install
+
     - name: Build
-      if: ${{ github.event_name == 'pull_request' && github.ref != 'refs/heads/master' }}
+      if: github.ref != 'refs/heads/master'
       run: bundle exec jekyll build
 
     - name: Build & Algolia
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+      if: github.ref == 'refs/heads/master'
       run: bundle exec jekyll algolia push

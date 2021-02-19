@@ -91,12 +91,12 @@ Contributors to this patch version, from both the Core team and the community at
 
 Ali Shareei, Boubker Bribri, Franck Lefèvre, Ibrahima Sow, Krystian Podemski, Mathieu Ferment, Nesrine Abdmouleh, Pierre Rambaud, Simon Garny, Thomas Baccelli and Valentin Szczupak
 
+We would like to send a special thank to Pululu Kinanga (@Pululuk), our external maintainer of the open-source solution and also thank the [Agence123](https://www.lagence123.com/) for this second release. They helped us to deliver this patch version. This is a new step towards the independence of the open-source project.
+
 Thank you!
 
 [Download PrestaShop 1.7.7.2 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
-
-We would like to send a special thank to Pululu Kinanga (@Pululuk), our external maintainer of the open-source solution and also thank the [Agence123](https://www.lagence123.com/) for this second release. They helped us to deliver this patch version. This is a new step towards the independence of the open-source project.
 
 For any upgrades problems or PrestaShop’s bugs, please create a new issue [here](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
 

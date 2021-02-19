@@ -23,7 +23,7 @@ This maintenance release fixes 21 bugs reported on version 1.7.7.0 and 1.7.7.1 a
 
 We suggest upgrading your shop quickly in order to benefit from these changes. Of course, don’t forget to make a backup before.
 
-Reminder:  the 1-Click Upgrade module’s latest version is v4.10.0, don’t forget to upgrade it before using it.
+Reminder:  the 1-Click Upgrade module’s latest version is v4.12.0, don’t forget to upgrade it before using it.
 
 
 

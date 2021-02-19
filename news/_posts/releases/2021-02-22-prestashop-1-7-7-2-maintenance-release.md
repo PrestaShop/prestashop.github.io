@@ -15,7 +15,7 @@ tags:
  - 1.7
 ---
 
-After a few months dedicated to fixing upgrades problems, regressions and security issues found on the previous 1.7.7 versions, PrestaShop 1.7.7.2 is finally available! 
+After a few weeks dedicated to fixing upgrades problems, regressions and security issues found on the previous 1.7.7 versions, PrestaShop 1.7.7.2 is finally available! 
 
 ![1.7.7.2 is available!](/assets/images/2021/02/1.7.7.2_banner.png)
 

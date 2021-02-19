@@ -19,7 +19,7 @@ After a few weeks dedicated to fixing upgrades problems, regressions and securit
 
 ![1.7.7.2 is available!](/assets/images/2021/02/1.7.7.2_banner.png)
 
-This maintenance release fixes 21 bugs reported on version 1.7.7.0 and 1.7.7.1 and 2 security issues.
+This patch release fixes 21 regressions reported on version 1.7.7.0 and 1.7.7.1 and 2 security issues.
 
 We suggest upgrading your shop quickly in order to benefit from these changes. Of course, don’t forget to make a backup before.
 

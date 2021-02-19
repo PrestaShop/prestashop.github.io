@@ -1,0 +1,26 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+    steps:
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.5
+        bundler-cache: true
+
+    - name: Checkout Build
+      uses: actions/checkout@v2
+
+    - name: Build
+      if: ${{ github.event_name == 'pull_request' && github.ref != 'refs/heads/master' }}
+      run: bundle exec jekyll build
+
+    - name: Build & Algolia
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+      run: bundle exec jekyll algolia push

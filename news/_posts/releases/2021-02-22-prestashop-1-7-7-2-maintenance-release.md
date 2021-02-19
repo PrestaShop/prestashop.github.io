@@ -91,7 +91,7 @@ Contributors to this patch version, from both the Core team and the community at
 
 Ali Shareei, Boubker Bribri, Franck Lefèvre, Ibrahima Sow, Krystian Podemski, Mathieu Ferment, Nesrine Abdmouleh, Pierre Rambaud, Simon Garny, Thomas Baccelli and Valentin Szczupak
 
-We would like to send a special thank to Pululu Kinanga (@Pululuk), our external maintainer of the open-source solution and also thank the [Agence123](https://www.lagence123.com/) for this second release. They helped us to deliver this patch version. This is a new step towards the independence of the open-source project.
+A special version co-released with Pululu Kinanga (@Pululuk), our  maintainer of the open-source solution from [Agence123](https://www.lagence123.com/) for this second release. They helped us to deliver this patch version. This is a new step towards the independence of the open-source project.
 
 Thank you!
 

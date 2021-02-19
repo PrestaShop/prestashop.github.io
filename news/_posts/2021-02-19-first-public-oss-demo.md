@@ -30,6 +30,8 @@ Since this was our very first attempt to this type of meeting, in English, and i
 
 **Next session, however, will be public and streamed live** on the PrestaShop project's new [YouTube channel](https://www.youtube.com/channel/UCchgBHHhl5Vu7HgjrzpvVQQ).
 
+Attendees will be able to ask questions in the chat that will be read and answered live.
+
 Each session will be kept in record on YouTube, so that even if you can't attend to the live stream, you will still be able to catch up later.
 
 ## This first session agenda

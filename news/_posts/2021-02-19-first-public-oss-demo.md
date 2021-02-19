@@ -1,56 +1,49 @@
 ---
 layout: post
-title:  "Announcing the public demonstrations for the project"
-subtitle: "We held a first session of Public open source demonstrations for the project"
+title:  "Announcing public demos from the maintainers team"
+subtitle: "We held the first session of the open source project's public demo"
 date:   2021-02-19 16:30:00
-authors: [ MathieuFerment ]
+authors: [ MathieuFerment, PabloBorowicz ]
 icon: icon-video-camera
 tags: [contribute, events, community]
 ---
 
-Last month, the maintainers team held a special event for the open source project: a public demonstrations session. To explain better the nature of this event, some context is needed.
+Last month, the maintainers team held a special event for the open source project: a public demonstrations session. To better understand what this is about, let's provide some context.
 
 ## Demonstrations at PrestaShop
 
-Until 2019, the maintainers team of the PrestaShop open source project was only composed of PrestaShop company employees, developers assigned by the company to work on the project. This team used many forms of organizations over years, the most recent being a mix of [SCRUM](https://www.scrum.org/) rituals and [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)) method. The SCRUM rituals being followed by the team have a [demonstration](https://manifesto.co.uk/scrum-practice-sprint-demo/) ritual.
+Historically, the maintainers team of the PrestaShop open source project was only composed of employees from the PrestaShop company, developers assigned by the company to work on the project. This team used many forms of organizations over years, the most recent being a mix of [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) rituals and [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)) method. One of the Scrum rituals being followed by the team is the [demo session](https://manifesto.co.uk/scrum-practice-sprint-demo/).
 
-The _demonstration_ in SCRUM is an event where, at the end of a _sprint_, what has been built is demonstrated to every team members. This helps everybody, inside and outside the developers team, to witness the outcome, what has been delivered. For years, this event happened regularly but only PrestaShop company employees could attend.
+Scrum's _demo_ is a regularly held event that takes place at the end of each development cycle (called _sprint_), where the team demonstrates what has been built. This helps stakeholders, inside and outside the team, to witness the outcome, what has been delivered, and provide feedback. For years, this event happened regularly, but only employees of the PrestaShop company were invited.
 
-In 2020, the split between the PrestaShop project and the PrestaShop company has grown wider. One of the major milestone of his evolution was the [welcome of external maintainers](https://build.prestashop.com/news/coreweekly-43-2020/) [@kpodemski](https://github.com/kpodemski) and [@pululuk](https://github.com/pululuk) who are not PrestaShop employees.
+Since 2020, the PrestaShop project is becoming increasingly independent from the PrestaShop company. One of the major milestone of his evolution has been the [introduction of community maintainers](https://build.prestashop.com/news/coreweekly-43-2020/) [@kpodemski](https://github.com/kpodemski) and [@pululuk](https://github.com/pululuk).
 
-Now that the maintainers team of PrestaShop has members who are not employees, the processes of the team must become more open too. That is why we wanted to turn this company-only event into a public event for the project!
+As the project becomes more open, transparency is key. During 2020, we published the [Maintainer's Guide](https://devdocs.prestashop.com/1.7/project/maintainers-guide/). Next step: making the demo meetings public, and streamed live!
 
-Also we hope that this event can become a meeting place for the maintainers and the community of PrestaShop, where ideas, feedbacks and smiles can be exchanged.
+We hope that this event will become a regular rendez-vous for the maintainers and the PrestaShop community to share information, feedback, and ideas.
 
 ## The first Public open source demonstrations
 
-So last month on the 28th of January, we held the first online session of what we call, for now, "Public PrestaShop open source demonstrations".
+The first online session of what we call for now "Public PrestaShop open source demonstrations" was held last month on the 28th of January.
 
-This event was open for maintainers but not for community as this was our very first attempt to this sort of meeting. As we were not confident in the result, we wanted to keep restrict the audience to avoid disappointment. This first session aimed to give the concept a shot before going fully public. We have already identified multiple areas for improvement to make it better.
+Since this was our very first attempt to this type of meeting, in English, and including people from outside the PrestaShop company, this first session was open for maintainers but not for community. The objective was to give the concept a shot before going fully public. We have already identified multiple areas for improvement, but we were globally satisfied with the result.
 
-**Next session, however, will be open for anybody to attend.** Everyone wishing to watch the next sessions (and the ones coming after) will be able to, as they will be streamed on the [YouTube channel](https://www.youtube.com/channel/UCchgBHHhl5Vu7HgjrzpvVQQ) created for the PrestaShop project.
+**Next session, however, will be public and streamed live** on the PrestaShop project's new [YouTube channel](https://www.youtube.com/channel/UCchgBHHhl5Vu7HgjrzpvVQQ).
 
-Also each session will be recorded and the record will be shared on YouTube as well to make sure someone who could not attend can nevertheless watch the replay.
+Each session will be kept in record on YouTube, so that even if you can't attend to the live stream, you will still be able to catch up later.
 
 ## This first session agenda
 
 The first session agenda was as follows:
 
-00:00 Introduction
-
-02:23 Presentation of the agenda
-
-03:06 Event rules
-
-04:20 Project announcements
-
-06:04 First demonstration - Multishop support for Symfony BO pages by [@matthieu-rolland](http://github.com/matthieu-rolland)
-
-18:40 Second demonstration - Enhanced module capacities to customize Symfony thanks to form simplification by [@matks](http://github.com/matks)
-
-29:51 Questions & Answers
-
-38:30 Closure
+- 00:00 Introduction
+- 02:23 Presentation of the agenda
+- 03:06 Event rules
+- 04:20 Project announcements
+- 06:04 First demonstration - Multishop support for Symfony BO pages by [@matthieu-rolland](http://github.com/matthieu-rolland)
+- 18:40 Second demonstration - Enhanced module capacities to customize Symfony thanks to form simplification by [@matks](http://github.com/matks)
+- 29:51 Questions & Answers
+- 38:30 Closure
 
 You can use the timestamps to jump directly to the parts you want to watch.
 
@@ -59,7 +52,4 @@ You can use the timestamps to jump directly to the parts you want to watch.
 
 ## Next step, second session on the 25th of February
 
-We are preparing the next session of "public PrestaShop open source demonstrations" that is scheduled to happen on **the 25th of February at 2pm, next Thursday!**
-
-Once again, do not worry if you cannot attend the event at this day and hour as the record will be uploaded immediately after the session.
-
+The next session of "public PrestaShop open source demonstrations" is scheduled for **the 25th of February at 2pm CET** – that's next Thursday!

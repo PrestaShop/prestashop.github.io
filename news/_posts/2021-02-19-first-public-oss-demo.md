@@ -2,7 +2,7 @@
 layout: post
 title:  "Announcing public demos from the maintainers team"
 subtitle: "We held the first session of the open source project's public demo"
-date:   2021-02-19 16:30:00
+date:   2021-02-19 16:00:00
 authors: [ MathieuFerment, PabloBorowicz ]
 icon: icon-video-camera
 tags: [contribute, events, community]

@@ -30,7 +30,7 @@ jobs:
     - name: Generate Core Weekly for the current week
       run: |
         cd ./core-weekly-generator
-        python core-weekly.py --week ${{ steps.build.outputs.WEEK_NUM }} > ../prestashop.github.io/news/_posts/core-weekly/${date +"%Y-%m-%d-coreweekly-%U-%Y.md"}
+        python core-weekly.py --week ${{ steps.build.outputs.WEEK_NUM }} > ../prestashop.github.io/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-%U-%Y.md")
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:

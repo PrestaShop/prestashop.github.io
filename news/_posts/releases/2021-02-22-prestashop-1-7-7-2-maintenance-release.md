@@ -93,7 +93,7 @@ Ali Shareei, Boubker Bribri, Franck Lefèvre, Ibrahima Sow, Krystian Podemski, M
 
 Thank you!
 
-A special version co-released by our maintainer Pululu Kinanga ([@Pululuk](https://github.com/Pululuk)) from [Agence123](https://www.lagence123.com/) and the PrestaShop team. They helped us to deliver this patch version. This is a new step towards the independence of the open-source project.
+A special version co-released by our maintainer Pululu Kinanga ([@Pululuk](https://github.com/Pululuk)) from [l'Agence123](https://www.lagence123.com/) and the PrestaShop team. They helped us to deliver this patch version. This is a new step towards the independence of the open-source project.
 
 [Download PrestaShop 1.7.7.2 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}

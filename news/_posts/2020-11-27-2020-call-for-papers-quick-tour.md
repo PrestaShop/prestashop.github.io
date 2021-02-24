@@ -6,7 +6,7 @@ date:  2020-11-27 16:00:00
 authors: [AntoineThomas]
 icon: icon-video-camera
 image: /assets/images/theme/meta-logo-build.png
-tags: [contribute, events, community]
+tags: [contribute, event, community]
 ---
 
 This year, for the first time, a Call for Papers was organised for a PrestaShop event. The objective was to give a voice to the community and learn from its active members. Let's make a quick tour of the results.

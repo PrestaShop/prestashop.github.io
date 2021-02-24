@@ -5,7 +5,7 @@ subtitle: "We held the first session of the open source project's public demo"
 date:   2021-02-19 16:00:00
 authors: [ MathieuFerment, PabloBorowicz ]
 icon: icon-video-camera
-tags: [contribute, events, community]
+tags: [contribute, event, community]
 ---
 
 Last month, the maintainers team held a special event for the open source project: a public demonstrations session. To better understand what this is about, let's provide some context.

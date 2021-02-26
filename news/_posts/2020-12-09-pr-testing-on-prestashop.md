@@ -121,7 +121,7 @@ If we don't find any issue during our test, then we change the label to “QA Ap
 
 ![QA approved!](/assets/images/2020/12/qa_approved.png)
 
-Note that everything the QA specialists test is tracked on an internal tool (we use [Testrail](https://www.gurock.com/testrail/)): it allows us, for example, to resume a test started by another member of the QA team, or to have the detail of what was checked on a specific PR.
+Note that everything the QA specialists test is tracked on an internal tool (we use [TestRail](https://www.gurock.com/testrail/)): it allows us, for example, to resume a test started by another member of the QA team, or to have the detail of what was checked on a specific PR.
 
 ## III. Improvement Pull Request
 

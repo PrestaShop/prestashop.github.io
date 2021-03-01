@@ -16,7 +16,7 @@ Following this survey, the product team and the developer team decided to mainta
 
 The maintainers team resources are limited, and there are too many free and open source modules on the PrestaShop GitHub organization to be able to maintain them all. Because of this maintenance burden, some of these modules have not been given a new release for years.
 
-This is why the following set of modules, reported in the survey among the least used have been archived: statslive, ps_advertising, ps_feeder, ps_legalcompliance, ps_productinfo, ps_rssfeed, pscleaner, trackingfront, watermark, dateofdelivery, newsletter, prestafraud, vatnumber, ps_carriercomparison, referralprogram, ps_healthcheck, loyalty, gapi
+This is why the following set of modules, reported in the survey among the least used have been archived: statslive, ps_advertising, ps_feeder, ps_legalcompliance, ps_productinfo, ps_rssfeed, pscleaner, trackingfront, watermark, dateofdelivery, newsletter, prestafraud, vatnumber, ps_carriercomparison, referralprogram, ps_healthcheck, loyalty, gapi.
 
 
 These modules have not been deleted, the code is still on GitHub, and you can still fork and use them on your store.

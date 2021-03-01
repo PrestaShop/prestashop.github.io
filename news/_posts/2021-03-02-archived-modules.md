@@ -10,7 +10,7 @@ tags:
  - news
 ---
 
-The product team recently did a survey of 600 PrestaShop users to find out which modules were essential and which they used the least.
+The product team recently did a survey of 600 PrestaShop users to find out which modules were essential for their business and which ones they used the least.
 
 Following this survey, the product team and the developer team decided to maintain a smaller set of modules that are really important for the users, rather than attempting to keep all modules afloat which results in a poor maintenance of each and a constant struggle to update everything.
 

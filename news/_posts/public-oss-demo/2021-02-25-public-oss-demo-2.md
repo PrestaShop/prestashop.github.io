@@ -32,7 +32,7 @@ The session agenda was as follows:
 - [07:19](https://youtu.be/JBvJgoo-rLg?t=439) First demonstration - Product Page BO architecture by [@jolelievre](http://github.com/jolelievre)
 - [33:39](https://youtu.be/JBvJgoo-rLg?t=2019) Second demonstration - Multiple fixes for upgrade from PS 1.6 to PS 1.7.7 by [@atomiix](http://github.com/atomiix)
 - [45:40](https://youtu.be/JBvJgoo-rLg?t=2740) Questions & Answers
-- 54:08 Closure
+- [54:08](https://youtu.be/JBvJgoo-rLg?t=3248) Closure
 
 You can use the timestamps to jump directly to the parts you want to watch.
 

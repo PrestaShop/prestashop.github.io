@@ -26,7 +26,7 @@ The session agenda was as follows:
 
 - [00:00](https://youtu.be/JBvJgoo-rLg) Waiting for everybody to join
 - [02:34](https://youtu.be/JBvJgoo-rLg?t=154) Beginning of the session, introduction
-- 04:48 Presentation of the agenda
+- [04:48](https://youtu.be/JBvJgoo-rLg?t=288) Presentation of the agenda
 - 05:23 Event rules
 - 06:12 Project announcements
 - 07:19 First demonstration - Product Page BO architecture by [@jolelievre](http://github.com/jolelievre)

@@ -20,7 +20,7 @@ This is why the following set of modules, reported in the survey among the least
 
 
 The repositories of these modules have been archived. This means that it will not be deleted and they will remain available on GitHub, but no further work will happen on these GitHub repositories. Developers can still fork them and use them.
-It's not because the PrestaShop project stops maintaining something that it's gone. What the project cannot do by itself, the community can do it. 
+But here's the upside: PrestaShop is an open source, community project. If the PrestaShop project stops maintaining a repository, it does not mean this project is gone. What the project cannot do by itself, the community can do it. We might see contributors fork these modules and build a newer, better version that will surpass the current module.
 Of course, you can also take a look at the marketplace where you could find similar modules to the archived ones.
 
 On the other hand, we continue to maintain and provide for free the modules identified as essential by users in the survey, for example: ps_facetedsearch, ps_newproducts, ps_emailalerts, ...

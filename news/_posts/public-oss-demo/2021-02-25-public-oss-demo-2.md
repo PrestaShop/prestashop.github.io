@@ -25,7 +25,7 @@ Attendees were able to ask questions in the chat that could be read and answered
 The session agenda was as follows:
 
 - [00:00](https://youtu.be/JBvJgoo-rLg) Waiting for everybody to join
-- 02:34 Beginning of the session, introduction
+- [02:34](https://youtu.be/JBvJgoo-rLg?t=154) Beginning of the session, introduction
 - 04:48 Presentation of the agenda
 - 05:23 Event rules
 - 06:12 Project announcements

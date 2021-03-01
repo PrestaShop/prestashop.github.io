@@ -19,7 +19,7 @@ The maintainers team resources are limited, and there are too many free and open
 This is why the following set of modules, reported in the survey among the least used have been archived: statslive, ps_advertising, ps_feeder, ps_legalcompliance, ps_productinfo, ps_rssfeed, pscleaner, trackingfront, watermark, dateofdelivery, newsletter, prestafraud, vatnumber, ps_carriercomparison, referralprogram, ps_healthcheck, loyalty, gapi.
 
 
-These modules have not been deleted, the code is still on GitHub, and you can still fork and use them on your store.
+The repositories of these modules have been archived. This means that it will not be deleted and they will remain available on GitHub, but no further work will happen on these GitHub repositories. Developers can still fork them and use them.
 It's not because the PrestaShop project stops maintaining something that it's gone. What the project cannot do by itself, the community can do it. 
 Of course, you can also take a look at the marketplace where you could find similar modules to the archived ones.
 

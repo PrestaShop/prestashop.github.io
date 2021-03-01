@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true
-      ALGOLIA_API_KEY: ${secrets.ALGOLIA_API_KEY}
     steps:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
@@ -29,4 +28,6 @@ jobs:
 
     - name: Build & Algolia
       if: github.ref == 'refs/heads/master'
+      env: 
+        ALGOLIA_API_KEY: ${secrets.ALGOLIA_API_KEY}
       run: bundle exec jekyll algolia push

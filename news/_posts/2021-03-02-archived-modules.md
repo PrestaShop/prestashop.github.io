@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Focusing on essentials modules"
+title:  "Focusing on essential modules"
 subtitle: "Get some details about the archived modules"
 date:   2021-03-02 14:00:00
 authors:  [ MarionFrancois ]

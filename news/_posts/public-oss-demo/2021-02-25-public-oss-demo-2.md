@@ -29,7 +29,7 @@ The session agenda was as follows:
 - [04:48](https://youtu.be/JBvJgoo-rLg?t=288) Presentation of the agenda
 - [05:23](https://youtu.be/JBvJgoo-rLg?t=323) Event rules
 - [06:12](https://youtu.be/JBvJgoo-rLg?t=372) Project announcements
-- 07:19 First demonstration - Product Page BO architecture by [@jolelievre](http://github.com/jolelievre)
+- [07:19](https://youtu.be/JBvJgoo-rLg?t=439) First demonstration - Product Page BO architecture by [@jolelievre](http://github.com/jolelievre)
 - 33:39 Second demonstration - Multiple fixes for upgrade from PS 1.6 to PS 1.7.7 by [@atomiix](http://github.com/atomiix)
 - 45:40 Questions & Answers
 - 54:08 Closure

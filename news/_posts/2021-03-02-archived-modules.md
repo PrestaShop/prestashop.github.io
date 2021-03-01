@@ -2,7 +2,7 @@
 layout: post
 title:  "Latest news about modules"
 subtitle: "Get some details about the archived modules"
-date:   2021-03-02 11:12:00
+date:   2021-03-02 14:00:00
 authors:  [ MarionFrancois ]
 icon: icon-puzzle
 tags: 

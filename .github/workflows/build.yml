@@ -28,6 +28,6 @@ jobs:
 
     - name: Build & Algolia
       if: github.ref == 'refs/heads/master'
-      env: 
-        ALGOLIA_API_KEY: ${secrets.ALGOLIA_API_KEY}
+      env:
+        ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
       run: bundle exec jekyll algolia push

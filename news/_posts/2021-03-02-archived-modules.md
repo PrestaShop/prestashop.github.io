@@ -26,6 +26,6 @@ But here's the upside: PrestaShop is an open source, community project. If the P
 
 Of course, you can also take a look at the marketplace where you could find similar modules to the archived ones.
 
-On the other hand, we continue to maintain and provide for free the modules identified as essential by users in the survey, for example: ps_facetedsearch, ps_newproducts, ps_emailalerts, ...
+On the other hand, we continue to maintain and provide for free the modules identified as essential by users in the survey, for example: [ps_facetedsearch](https://github.com/PrestaShop/ps_facetedsearch), [ps_newproducts](https://github.com/PrestaShop/ps_newproducts), [ps_emailalerts](https://github.com/PrestaShop/ps_emailalerts), ...
 
 This list is regularly analyzed to make it up-to-date with the user's needs.

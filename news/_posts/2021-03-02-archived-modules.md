@@ -49,4 +49,5 @@ Of course, you can also take a look at the [Addons Marketplace](https://addons.p
 That said, the PrestaShop Project will continue to maintain and freely provide the modules identified as essential by users in the survey, including [ps_facetedsearch](https://github.com/PrestaShop/ps_facetedsearch), [ps_newproducts](https://github.com/PrestaShop/ps_newproducts), [ps_emailalerts](https://github.com/PrestaShop/ps_emailalerts), and many more.
 
 If you think an important feature is missing from the project, please create a [feature request](https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&labels=&template=2_feature_request.md).
-This list of modules is regularly analyzed to make it up-to-date with the user's needs.
+
+The list of project modules will be regularly analyzed to make it up-to-date with the what users need the most.

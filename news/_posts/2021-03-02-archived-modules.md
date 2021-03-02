@@ -16,7 +16,19 @@ For this reason, the product team recently did a survey of almost 600 PrestaShop
 
 As a result of this survey, the teams have decided to focus their efforts where it really matters. Rather than keeping hundreds of sparsely updated modules, starting this year, the PrestaShop Project will only commit to maintaining a smaller set of them – the ones that are really important for users.
 
-This is why the following set of modules, reported in the survey among the least used have been archived: [statslive](https://github.com/PrestaShop/statslive), [ps_advertising](https://github.com/PrestaShop/ps_advertising), [ps_feeder](https://github.com/PrestaShop/ps_feeder), [ps_legalcompliance](https://github.com/PrestaShop/ps_legalcompliance), [ps_productinfo](https://github.com/PrestaShop/ps_productinfo), [ps_rssfeed](https://github.com/PrestaShop/ps_rssfeed), [pscleaner](https://github.com/PrestaShop/pscleaner), [trackingfront](https://github.com/PrestaShop/trackingfront), [watermark](https://github.com/PrestaShop/watermark), [prestafraud](https://github.com/PrestaShop/prestafraud), [gapi](https://github.com/PrestaShop/gapi).
+This is why the following set of modules, reported in the survey amongst the least often used, have been abandoned and their repositories archived: 
+
+- [Visitors online](https://github.com/PrestaShop/statslive) 
+- [Advertising block](https://github.com/PrestaShop/ps_advertising)
+- [RSS products feed](https://github.com/PrestaShop/ps_feeder)
+- [Legal compliance](https://github.com/PrestaShop/ps_legalcompliance)
+- [Product Notification](https://github.com/PrestaShop/ps_productinfo)
+- [RSS feed block](https://github.com/PrestaShop/ps_rssfeed)
+- [PrestaShop Cleaner](https://github.com/PrestaShop/pscleaner)
+- [Tracking - Front office](https://github.com/PrestaShop/trackingfront)
+- [Watermark](https://github.com/PrestaShop/watermark)
+- [PrestaShop Security](https://github.com/PrestaShop/prestafraud)
+- [Google Analytics API](https://github.com/PrestaShop/gapi)
 
 The following modules have also been archived but were already not available for the 1.7 stores because they are incompatible: [dateofdelivery](https://github.com/PrestaShop/dateofdelivery), [newsletter](https://github.com/PrestaShop/newsletter), [vatnumber](https://github.com/PrestaShop/vatnumber), [ps_carriercomparison](https://github.com/PrestaShop/ps_carriercomparison), [referralprogram](https://github.com/PrestaShop/referralprogram), [ps_healthcheck](https://github.com/PrestaShop/ps_healthcheck), [loyalty](https://github.com/PrestaShop/loyalty).
 

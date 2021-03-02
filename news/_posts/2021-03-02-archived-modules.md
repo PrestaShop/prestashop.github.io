@@ -14,7 +14,7 @@ Over the years, the PrestaShop project became host and maintainer for a very lar
 
 For this reason, the product team recently did a survey of almost 600 PrestaShop users to find out which modules were essential for their business and which ones they used the least.
 
-Following this survey, the product team and the developer team decided to maintain a smaller set of modules that are really important for the users, rather than attempting to keep all modules afloat which results in a poor maintenance of each and a constant struggle to update everything.
+As a result of this survey, the teams have decided to focus their efforts where it really matters. Rather than keeping hundreds of sparsely updated modules, starting this year, the PrestaShop Project will only commit to maintaining a smaller set of them – the ones that are really important for users.
 
 This is why the following set of modules, reported in the survey among the least used have been archived: [statslive](https://github.com/PrestaShop/statslive), [ps_advertising](https://github.com/PrestaShop/ps_advertising), [ps_feeder](https://github.com/PrestaShop/ps_feeder), [ps_legalcompliance](https://github.com/PrestaShop/ps_legalcompliance), [ps_productinfo](https://github.com/PrestaShop/ps_productinfo), [ps_rssfeed](https://github.com/PrestaShop/ps_rssfeed), [pscleaner](https://github.com/PrestaShop/pscleaner), [trackingfront](https://github.com/PrestaShop/trackingfront), [watermark](https://github.com/PrestaShop/watermark), [prestafraud](https://github.com/PrestaShop/prestafraud), [gapi](https://github.com/PrestaShop/gapi).
 

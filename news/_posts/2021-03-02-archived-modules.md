@@ -29,6 +29,7 @@ This is why the following set of modules, reported in the survey amongst the lea
 - [Watermark](https://github.com/PrestaShop/watermark)
 - [PrestaShop Security](https://github.com/PrestaShop/prestafraud)
 - [Google Analytics API](https://github.com/PrestaShop/gapi)
+- [Healthcheck](https://github.com/PrestaShop/ps_healthcheck)
 
 The following modules have also been abandoned and archived because they were still not compatible with 1.7 stores: 
 
@@ -37,7 +38,6 @@ The following modules have also been abandoned and archived because they were st
 - [European VAT number](https://github.com/PrestaShop/vatnumber)
 - [Shipping Estimate](https://github.com/PrestaShop/ps_carriercomparison)
 - [Customer referral program](https://github.com/PrestaShop/referralprogram)
-- [Healthcheck](https://github.com/PrestaShop/ps_healthcheck)
 - [Customer loyalty and rewards](https://github.com/PrestaShop/loyalty)
 
 Abandoning these projects and archiving their repositories means that they will no longer be available in back-offices, but they will still available on GitHub. These modules will no longer receive any updates, nor accept contributions. Developers, however, can and will still be able to use them, fork them, improve them and redistribute them as derivative projects, following the [AFL 3.0 license](https://opensource.org/licenses/AFL-3.0).

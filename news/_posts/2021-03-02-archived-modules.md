@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Focusing on essential modules"
-subtitle: "Get some details about the archived modules"
+subtitle: "Announcing end of official support for less popular modules"
 date:   2021-03-02 14:00:00
 authors:  [ MarionFrancois ]
 icon: icon-puzzle

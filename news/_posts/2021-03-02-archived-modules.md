@@ -42,7 +42,7 @@ The following modules have also been abandoned and archived because they were st
 
 Abandoning these projects and archiving their repositories means that they will no longer be available in back-offices, but they will still available on GitHub. These modules will no longer receive any updates, nor accept contributions. Developers, however, can and will still be able to use them, fork them, improve them and redistribute them as derivative projects, following the [AFL 3.0 license](https://opensource.org/licenses/AFL-3.0).
 
-PrestaShop is an open source and community project. If the PrestaShop project stops maintaining a repository, it does not mean this project is gone. What the project cannot do by itself, the community can do it. We might see contributors fork these modules and build a newer, better version that will surpass the current module.
+PrestaShop is an open source, community project. If the PrestaShop Project stops maintaining a repository, it does not mean this project is gone. What the project cannot do by itself, the community can do it, as long as people are willing to continue working on it. We hope to see contributors fork these modules and build newer, better versions of them.
 
 Of course, you can also take a look at the marketplace where you could find similar modules to the archived ones.
 

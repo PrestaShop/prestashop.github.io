@@ -30,7 +30,15 @@ This is why the following set of modules, reported in the survey amongst the lea
 - [PrestaShop Security](https://github.com/PrestaShop/prestafraud)
 - [Google Analytics API](https://github.com/PrestaShop/gapi)
 
-The following modules have also been archived but were already not available for the 1.7 stores because they are incompatible: [dateofdelivery](https://github.com/PrestaShop/dateofdelivery), [newsletter](https://github.com/PrestaShop/newsletter), [vatnumber](https://github.com/PrestaShop/vatnumber), [ps_carriercomparison](https://github.com/PrestaShop/ps_carriercomparison), [referralprogram](https://github.com/PrestaShop/referralprogram), [ps_healthcheck](https://github.com/PrestaShop/ps_healthcheck), [loyalty](https://github.com/PrestaShop/loyalty).
+The following modules have also been abandoned and archived because they were still not compatible with 1.7 stores: 
+
+- [Date of delivery](https://github.com/PrestaShop/dateofdelivery)
+- [Newsletter](https://github.com/PrestaShop/newsletter)
+- [European VAT number](https://github.com/PrestaShop/vatnumber)
+- [Shipping Estimate](https://github.com/PrestaShop/ps_carriercomparison)
+- [Customer referral program](https://github.com/PrestaShop/referralprogram)
+- [Healthcheck](https://github.com/PrestaShop/ps_healthcheck)
+- [Customer loyalty and rewards](https://github.com/PrestaShop/loyalty)
 
 
 The repositories of these modules have been archived. This means that they will not be available in back-offices, but they are still available on GitHub. No further work will happen on these GitHub repositories, but developers can still fork them and use them.

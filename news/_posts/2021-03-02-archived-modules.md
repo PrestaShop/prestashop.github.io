@@ -46,7 +46,7 @@ PrestaShop is an open source, community project. If the PrestaShop Project stops
 
 Of course, you can also take a look at the [Addons Marketplace](https://addons.prestashop.com/), where you can find modules with similar features to the archived ones.
 
-On the other hand, we continue to maintain and provide for free the modules identified as essential by users in the survey, for example: [ps_facetedsearch](https://github.com/PrestaShop/ps_facetedsearch), [ps_newproducts](https://github.com/PrestaShop/ps_newproducts), [ps_emailalerts](https://github.com/PrestaShop/ps_emailalerts), ...
+That said, the PrestaShop Project will continue to maintain and freely provide the modules identified as essential by users in the survey, including [ps_facetedsearch](https://github.com/PrestaShop/ps_facetedsearch), [ps_newproducts](https://github.com/PrestaShop/ps_newproducts), [ps_emailalerts](https://github.com/PrestaShop/ps_emailalerts), and many more.
 
 If you have a feature need, please create a [feature request](https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&labels=&template=2_feature_request.md) on Github.
 This list of modules is regularly analyzed to make it up-to-date with the user's needs.

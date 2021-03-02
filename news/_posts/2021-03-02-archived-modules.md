@@ -29,4 +29,5 @@ Of course, you can also take a look at the marketplace where you could find simi
 
 On the other hand, we continue to maintain and provide for free the modules identified as essential by users in the survey, for example: [ps_facetedsearch](https://github.com/PrestaShop/ps_facetedsearch), [ps_newproducts](https://github.com/PrestaShop/ps_newproducts), [ps_emailalerts](https://github.com/PrestaShop/ps_emailalerts), ...
 
-This list is regularly analyzed to make it up-to-date with the user's needs.
+If you have a feature need, please create a [feature request](https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&labels=&template=2_feature_request.md) on Github.
+This list of modules is regularly analyzed to make it up-to-date with the user's needs.

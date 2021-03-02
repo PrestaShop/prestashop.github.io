@@ -40,8 +40,7 @@ The following modules have also been abandoned and archived because they were st
 - [Healthcheck](https://github.com/PrestaShop/ps_healthcheck)
 - [Customer loyalty and rewards](https://github.com/PrestaShop/loyalty)
 
-
-The repositories of these modules have been archived. This means that they will not be available in back-offices, but they are still available on GitHub. No further work will happen on these GitHub repositories, but developers can still fork them and use them.
+Abandoning these projects and archiving their repositories means that they will no longer be available in back-offices, but they will still available on GitHub. These modules will no longer receive any updates, nor accept contributions. Developers, however, can and will still be able to use them, fork them, improve them and redistribute them as derivative projects, following the [AFL 3.0 license](https://opensource.org/licenses/AFL-3.0).
 
 PrestaShop is an open source and community project. If the PrestaShop project stops maintaining a repository, it does not mean this project is gone. What the project cannot do by itself, the community can do it. We might see contributors fork these modules and build a newer, better version that will surpass the current module.
 

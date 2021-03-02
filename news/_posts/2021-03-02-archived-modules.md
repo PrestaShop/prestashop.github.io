@@ -44,7 +44,7 @@ Abandoning these projects and archiving their repositories means that they will 
 
 PrestaShop is an open source, community project. If the PrestaShop Project stops maintaining a repository, it does not mean this project is gone. What the project cannot do by itself, the community can do it, as long as people are willing to continue working on it. We hope to see contributors fork these modules and build newer, better versions of them.
 
-Of course, you can also take a look at the marketplace where you could find similar modules to the archived ones.
+Of course, you can also take a look at the [Addons Marketplace](https://addons.prestashop.com/), where you can find modules with similar features to the archived ones.
 
 On the other hand, we continue to maintain and provide for free the modules identified as essential by users in the survey, for example: [ps_facetedsearch](https://github.com/PrestaShop/ps_facetedsearch), [ps_newproducts](https://github.com/PrestaShop/ps_newproducts), [ps_emailalerts](https://github.com/PrestaShop/ps_emailalerts), ...
 

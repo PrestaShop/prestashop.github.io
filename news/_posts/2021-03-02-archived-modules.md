@@ -10,7 +10,7 @@ tags:
  - news
 ---
 
-The maintainers team resources are limited, and there are too many free and open source modules on the PrestaShop GitHub organization to be able to maintain them all. Because of this maintenance burden, some of these modules have not been given a new release for years.
+Over the years, the PrestaShop project became host and maintainer for a very large number of open source modules. Last year, over 160 of them were present in our GitHub organization. As you probably know already, maintaining them requires a lot of work, and the maintainer team's resources are limited. Proof of this is that some of these modules have not been updated in years.
 
 For this reason, the product team recently did a survey of almost 600 PrestaShop users to find out which modules were essential for their business and which ones they used the least.
 

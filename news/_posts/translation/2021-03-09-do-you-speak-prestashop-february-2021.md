@@ -17,7 +17,7 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 
 ### Esperanto is finally available in the back office :tada:
 
-A few weeks ago, Esperanto was not available in PrestaShop. I’m glad to announce that this issue has been solved! In your back office, go to International > Translations > Add/Update a language and select ‘Esperanto’ in the dropdown list. 
+A few weeks ago, Esperanto was not available in PrestaShop's back office. I’m glad to announce that this issue has been solved! In your back office, go to International > Translations > Add/Update a language and select ‘Esperanto’ in the dropdown list. 
 
 Please note that not all translated strings have been validated yet. Therefore, these strings won’t be available in the back office. If you would like to help with proofreading, do not hesitate to [contact me](https://crowdin.com/profile/julievrz). 
 

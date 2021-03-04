@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – February 2021 edition"
 subtitle: "Where you'll learn that Esperanto is now available in the back office"
-date: 2021-03-09 17:00:00
+date: 2021-03-03 17:00:00
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

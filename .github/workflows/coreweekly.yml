@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@master
       with:
         repository: PrestaShop/core-weekly-generator
-        path: ../core-weekly-generator
+        path: core-weekly-generator
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
@@ -30,7 +30,10 @@ jobs:
     - name: Generate Core Weekly for the current week
       run: |
         cd ./core-weekly-generator
-        python core-weekly.py --week ${{ steps.build.outputs.WEEK_NUM }} > ../prestashop.github.io/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-%U-%Y.md")
+        python core-weekly.py --week ${{ steps.build.outputs.WEEK_NUM }} > ../news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-%U-%Y.md")
+    - name: Remove core-weekly-generator directory
+      run: |
+        rm ./core-weekly-generator -rf
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:

@@ -10,36 +10,34 @@ jobs:
     steps:
     - name: Set variable WEEK_NUM
       run: echo '::set-output name=WEEK_NUM::${date +"%U"}'
+
     - name: Set variable YEAR
       run: echo '::set-output name=YEAR::${date +"%Y"}'
+
     - name: Checkout Build
       uses: actions/checkout@v2
-    - name: Checkout Core Weekly Generator
-      uses: actions/checkout@master
-      with:
-        repository: PrestaShop/core-weekly-generator
-        path: core-weekly-generator
+
+    - name: Fetch Core Weekly Generator
+      run: git clone https://github.com/PrestaShop/core-weekly-generator.git ~/core-weekly-generator
+
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
+
     - name: Install dependencies
-      run: |
-        cd ./core-weekly-generator
-        pip install -r requirements.txt
+      run: pip install -r requirements.txt
+      working-directory: ~/core-weekly-generator
+ 
     - name: Generate Core Weekly for the current week
-      run: |
-        cd ./core-weekly-generator
-        python core-weekly.py --week ${{ steps.build.outputs.WEEK_NUM }} > ../news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-%U-%Y.md")
-    - name: Remove core-weekly-generator directory
-      run: |
-        rm ./core-weekly-generator -rf
+      run: python core-weekly.py --week ${{ steps.build.outputs.WEEK_NUM }} > ${{ GITHUB_WORKSPACE }}/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-%U-%Y.md")
+      working-directory: ~/core-weekly-generator
+
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
         commit-message: Added Core Weekly ${{ steps.build.outputs.WEEK_NUM }} of ${{ steps.build.outputs.YEAR }}
         delete-branch: true
         title: 'Added Core Weekly ${{ steps.build.outputs.WEEK_NUM }} of ${{ steps.build.outputs.YEAR }}'
-        body: |
-            Added Core Weekly ${{ steps.build.outputs.WEEK_NUM }} of ${{ steps.build.outputs.YEAR }}
+        body: Added Core Weekly ${{ steps.build.outputs.WEEK_NUM }} of ${{ steps.build.outputs.YEAR }}
         team-reviewers: prestashop-core-developers

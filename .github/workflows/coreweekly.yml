@@ -30,7 +30,7 @@ jobs:
       working-directory: ~/core-weekly-generator
  
     - name: Generate Core Weekly for the current week
-      run: python core-weekly.py --week ${{ steps.build.outputs.WEEK_NUM }} > ${{ GITHUB_WORKSPACE }}/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-%U-%Y.md")
+      run: python core-weekly.py --week ${{ steps.build.outputs.WEEK_NUM }} > $GITHUB_WORKSPACE/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-%U-%Y.md")
       working-directory: ~/core-weekly-generator
 
     - name: Create Pull Request

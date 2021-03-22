@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop Public OSS Demo - Choosing the pace"
 subtitle: "We aim to host open source project's public demo every month"
-date:   2021-03-16 10:00:00
+date:   2021-03-22 10:00:00
 authors: [ MathieuFerment ]
 icon: icon-video-camera
 tags: [contribute, event, community]

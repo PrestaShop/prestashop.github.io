@@ -10,8 +10,6 @@ tags: [contribute, event, community]
 
 The project's third monthly public demo session was held and [streamed live](https://youtu.be/UJ_XQs8trs4) on March 31, 2021.
 
-## The third Public open source demonstrations agenda
-
 The session's agenda was as follows:
 
 - [00:00](https://youtu.be/UJ_XQs8trs4) Waiting for everybody to join

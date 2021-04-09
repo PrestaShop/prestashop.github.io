@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop Public OSS Demo - March 2021 session"
 subtitle: "We held the third session of the open source project's public demo"
-date:   2021-04-08 16:00:00
+date:   2021-04-09 12:00:00
 authors: [ MathieuFerment ]
 icon: icon-video-camera
 tags: [contribute, event, community]

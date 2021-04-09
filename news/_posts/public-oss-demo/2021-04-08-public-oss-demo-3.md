@@ -8,11 +8,11 @@ icon: icon-video-camera
 tags: [contribute, event, community]
 ---
 
-On the 31st of March, the maintainers team held again a video conferencing for the project public demonstrations session, streamed live on [YouTube](https://youtu.be/UJ_XQs8trs4).
+The project's third monthly public demo session was held and [streamed live](https://youtu.be/UJ_XQs8trs4) on March 31, 2021.
 
 ## The third Public open source demonstrations agenda
 
-The session agenda was as follows:
+The session's agenda was as follows:
 
 - [00:00](https://youtu.be/UJ_XQs8trs4) Waiting for everybody to join
 - [01:30](https://youtu.be/UJ_XQs8trs4?t=90) Beginning of the session, introduction
@@ -31,6 +31,6 @@ You can use the timestamps to jump directly to the parts you want to watch.
 
 ## Next session in April
 
-The next session of public PrestaShop open source demonstrations will be streamed on [**Wednesday 28st of April 2021, 2pm CET**](https://www.youtube.com/watch?v=VKb39T_6WHU).
+The next session will be streamed live on [**Wednesday, April 28, 2021 at 2pm CEST**](https://www.youtube.com/watch?v=VKb39T_6WHU).
 
-We expect this session to be spectacular as the Feature Freeze of PrestaShop 1.7.8 should be done by this time, meaning many projects will be complete.
+We expect this session to be particularly interesting as PrestaShop 1.7.8 should have entered Feature Freeze by this time, meaning many projects will be complete.

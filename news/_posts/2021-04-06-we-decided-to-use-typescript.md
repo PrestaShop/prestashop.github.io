@@ -13,14 +13,14 @@ Recently, the PrestaShop core team decided to use TypeScript (TS) on the project
 
 # Why did we do this?
 
-PrestaShop recently increased his code quality by adding a lot of tools :
+PrestaShop recently increased his code quality by adding a lot of tools:
 - ESLint is used to lint the whole JavaScript codebase.
 - Stylelint is used to lint our SCSS files, including the UIKit files.
 - PHPStan, CSFixer...
 
 PHP recent works are also strictly typed. This is mainly why we want to strictly type the JavaScript side! 
 
-## What's the benefits ?
+## What's the benefits?
 
 We've already seen some benefits about strictly typing PHP, it provides a robust codebase and avoids a lot of bugs by spotting these really early. This will provide us a safe development way and increase our confidence about what we're still building.
 

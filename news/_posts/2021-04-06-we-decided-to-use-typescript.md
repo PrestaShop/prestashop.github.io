@@ -18,11 +18,11 @@ PrestaShop recently increased his code quality by adding a lot of tools :
 - Stylelint is used to lint our SCSS files, including the UIKit files.
 - PHPStan, CSFixer...
 
-PHP recent works are also strictly typed. This is mainly why we wants to strictly type the JavaScript side! 
+PHP recent works are also strictly typed. This is mainly why we want to strictly type the JavaScript side! 
 
 ## What's the benefits ?
 
-We already seen some benefits about strictly typing PHP, it provide a robust codebase and avoid a lot of bugs by spotting these really early. This will provide us a safe development way and increase our confidence about what we're still building.
+We've already seen some benefits about strictly typing PHP, it provides a robust codebase and avoids a lot of bugs by spotting these really early. This will provide us a safe development way and increase our confidence about what we're still building.
 
 It also make the code way more self-expressive, which means that our codebase will be more friendly to new developers and contributors.
 
@@ -30,9 +30,9 @@ As our codebase is mainly using OOP, TypeScript will provide a lot of concepts t
 
 ## Why TypeScript and not another typing library such as Flow?
 
-On good reason is that every big JavaScript projects switched their codebase from Flow to TypeScript recently (Vue 3, Jest for example), this means that a lot of external developers are building projects using this library, this way we ensure that JavaScript contributors won't be lost by reading our work.
+One good reason is that every big JavaScript projects switched their codebase from Flow to TypeScript recently (Vue 3, Jest for example), this means that a lot of external developers are building projects using this library, this way we ensure that JavaScript contributors won't be lost when reading our work.
 
-There are a lot of more reasons:
+There are a lot more reasons:
 - TypeScript has better performance
 - It has a larger community (TypeScript is listed on [state of JS](https://2020.stateofjs.com/en-US/technologies/))
 - It's open source and powered by a big company (Microsoft)

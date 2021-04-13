@@ -7,7 +7,7 @@ authors: [MarionFrancois]
 icon: icon-world
 ---
 
-The core product team is currently carrying out a survey for the community and oriented around the open-source project.
+The core product team is currently carrying out a survey oriented around the open-source project for the community.
 
 You are many to express yourself on Slack, on the forum, or on Github about your pains and your wishes about the open-source project.
 

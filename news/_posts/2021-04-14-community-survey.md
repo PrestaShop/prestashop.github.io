@@ -21,4 +21,4 @@ We encourage everyone to express themselves, not only one person by agency or co
 
 We look forward to your responses, before April 23, in order to be able to establish the roadmap.
 
-We will publish the results of this survey and keep you informed of the roadmap for version 1.7.9.0
+We will publish the results of this survey and keep you informed of the roadmap for version 1.7.9.0.

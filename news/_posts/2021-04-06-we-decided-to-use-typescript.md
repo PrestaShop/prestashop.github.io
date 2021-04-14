@@ -9,11 +9,11 @@ image: /assets/images/2019/01/Build-Crowdin-banner.jpg
 tags: [news, core]
 ---
 
-Recently, the PrestaShop core team decided to use TypeScript (TS) on the project. [We recently submited an Architecture Decision Records (ADR)](https://github.com/PrestaShop/ADR/pull/19) and a [Proof of Concept (POC)](https://github.com/PrestaShop/PrestaShop/pull/23221) in order to use TypeScript on every development we do.
+Recently, the PrestaShop core team decided to use TypeScript (TS) on the project. [We recently submitted an Architecture Decision Records (ADR)](https://github.com/PrestaShop/ADR/pull/19) and a [Proof of Concept (POC)](https://github.com/PrestaShop/PrestaShop/pull/23221) in order to use TypeScript on every development we do.
 
 # Why did we do this?
 
-PrestaShop recently increased his code quality by adding a lot of tools:
+PrestaShop recently increased its code quality by adding a lot of tools:
 - ESLint is used to lint the whole JavaScript codebase.
 - Stylelint is used to lint our SCSS files, including the UIKit files.
 - PHPStan, CSFixer...
@@ -33,14 +33,14 @@ As our codebase is mainly using OOP, TypeScript will provide a lot of concepts t
 One good reason is that every big JavaScript projects switched their codebase from Flow to TypeScript recently (Vue 3, Jest for example), this means that a lot of external developers are building projects using this library, this way we ensure that JavaScript contributors won't be lost when reading our work.
 
 There are a lot more reasons:
-- TypeScript has better performance
-- It has a larger community (TypeScript is listed on [state of JS](https://2020.stateofjs.com/en-US/technologies/))
-- It's open source and powered by a big company (Microsoft)
+- TypeScript has better performance.
+- It has a larger community (TypeScript is listed on [state of JS](https://2020.stateofjs.com/en-US/technologies/)).
+- It's open source and powered by a big company (Microsoft).
 
 ## What's the future?
 
-For the moment, every new JS files will be written using TypeScript, with strongly typed components. We also need to refacto every sensible components such as grids and important pages scripts, in order to be able to catch as much bugs as we can and provide a maintainable codebase.
+For the moment, every new JS files will be written using TypeScript, with strongly typed components. We also need to refactor every sensible components such as grids and important pages scripts, in order to be able to catch as much bugs as we can and provide a maintainable codebase.
 
-We're focusing the Back-Office, Classic theme won't be refacto using TS for the moment, because it will lead to a lot of breaking changes, meaning that every themes using Classic may be broken. This is not something we wants.
+We're focusing the Back-Office, Classic theme won't be refactor using TS for the moment, because it will lead to a lot of breaking changes, meaning that every themes using Classic may be broken. This is not something we wants.
 
 

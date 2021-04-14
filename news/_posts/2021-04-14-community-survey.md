@@ -15,7 +15,7 @@ A lot of issues and suggestions are reported to the project every week. The main
 
 We want to understand more about your wishes and pains in order to prioritize them.
 
-If you have already contributed to the open-source project, in any way (pull request, bug report, suggestion of new features, participation in translations) then this survey is for you: https://forms-prestashop.typeform.com/to/rHr7tHII
+If you have already contributed to the open-source project, in any way (pull request, bug report, suggestion of new features, participation in translations) then this survey is for you: [https://forms-prestashop.typeform.com/to/rHr7tHII](https://forms-prestashop.typeform.com/to/rHr7tHII)
 
 We encourage everyone to express themselves, not only one person by agency or company.
 

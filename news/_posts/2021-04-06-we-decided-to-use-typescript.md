@@ -22,7 +22,7 @@ PHP recent works are also strictly typed. This is mainly why we want to strictly
 
 ## What are the benefits?
 
-We've already seen some benefits about strictly typing PHP, it provides a robust codebase and avoids a lot of bugs by spotting these really early. This will provide us a safe development way and increase our confidence about what we're still building.
+We've already seen some benefits about strictly typing PHP, it provides a robust codebase and avoids a lot of bugs by spotting these really early while coding. This will provide us a safe development way and increase our confidence about what we're still building.
 
 It also makes the code way more self-expressive, which means that our codebase will be more friendly to new developers and contributors.
 
@@ -36,6 +36,7 @@ There are a lot more reasons:
 - TypeScript has better performance.
 - It has a larger community (TypeScript is listed on [state of JS](https://2020.stateofjs.com/en-US/technologies/)).
 - It's open-source and powered by a big company (Microsoft).
+- It's natively compatible with most editors making the autocomplete powerfull and bug discovery way easier.
 
 ## What's the future?
 

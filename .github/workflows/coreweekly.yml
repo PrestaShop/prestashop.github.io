@@ -3,7 +3,6 @@ name: Core Weekly
 on:
   schedule:
     - cron:  '0 7 * * 1'
-  pull_request:
 
 jobs:
   build:

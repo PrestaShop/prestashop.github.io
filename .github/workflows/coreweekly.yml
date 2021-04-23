@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Set variable WEEK_NUM
-      run: echo '::set-output name=WEEK_NUM::${date +"%U"}'
+      run: echo "WEEK_NUM=`date +"%U"`" >> $GITHUB_ENV
 
     - name: Set variable YEAR
-      run: echo '::set-output name=YEAR::${date +"%Y"}'
+      run: echo "YEAR=`date +"%Y"`" >> $GITHUB_ENV
 
     - name: Checkout Build
       uses: actions/checkout@v2
@@ -26,18 +26,20 @@ jobs:
         python-version: 3.8
 
     - name: Install dependencies
-      run: pip install -r requirements.txt
-      working-directory: ~/core-weekly-generator
+      run: cd ~/core-weekly-generator && pip install -r requirements.txt
  
     - name: Generate Core Weekly for the current week
-      run: python core-weekly.py --week ${{ steps.build.outputs.WEEK_NUM }} > $GITHUB_WORKSPACE/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-%U-%Y.md")
-      working-directory: ~/core-weekly-generator
+      run: cd ~/core-weekly-generator && python core-weekly.py --week ${{ env.WEEK_NUM }} > $GITHUB_WORKSPACE/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-%U-%Y.md")
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
-        commit-message: Added Core Weekly ${{ steps.build.outputs.WEEK_NUM }} of ${{ steps.build.outputs.YEAR }}
-        delete-branch: true
-        title: 'Added Core Weekly ${{ steps.build.outputs.WEEK_NUM }} of ${{ steps.build.outputs.YEAR }}'
-        body: Added Core Weekly ${{ steps.build.outputs.WEEK_NUM }} of ${{ steps.build.outputs.YEAR }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: Added Core Weekly ${{ env.WEEK_NUM }} of ${{ env.YEAR }}
+        committer: PrestonBot <noreply@github.com>
+        author: prestonBot <prestonBot@users.noreply.github.com>
+        title: 'Added Core Weekly ${{ env.WEEK_NUM }} of ${{ env.YEAR }}'
+        body: Added Core Weekly ${{ env.WEEK_NUM }} of ${{ env.YEAR }}
         team-reviewers: prestashop-core-developers
+        base: 'master'
+        delete-branch: true

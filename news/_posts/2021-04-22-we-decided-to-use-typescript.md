@@ -8,7 +8,7 @@ icon: icon-lightning
 tags: [news, development]
 ---
 
-Following a recent [Architecture Decision Records (ADR) submission](https://github.com/PrestaShop/ADR/pull/19) and a [Proof of Concept (POC)](https://github.com/PrestaShop/PrestaShop/pull/23221), the Core Maintainers team have decided to introduce [TypeScript](https://www.typescriptlang.org/) (TS) on the project.
+Following a recent [Architecture Decision Records (ADR) submission](https://github.com/PrestaShop/ADR/pull/19) and a [Proof of Concept (POC)](https://github.com/PrestaShop/PrestaShop/pull/23221), the Core Maintainers team has decided to introduce [TypeScript](https://www.typescriptlang.org/) (TS) on the project.
 
 # Why TypeScript?
 

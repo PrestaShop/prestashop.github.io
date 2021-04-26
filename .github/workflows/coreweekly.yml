@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Set variable WEEK_NUM
-      run: echo "WEEK_NUM=`date +"%U"`" >> $GITHUB_ENV
+      run: echo "WEEK_NUM=`date -d 'last week' +"%U"`" >> $GITHUB_ENV
 
     - name: Set variable YEAR
-      run: echo "YEAR=`date +"%Y"`" >> $GITHUB_ENV
+      run: echo "YEAR=`date -d 'last week' +"%Y"`" >> $GITHUB_ENV
 
     - name: Checkout Build
       uses: actions/checkout@v2
@@ -40,6 +40,5 @@ jobs:
         author: prestonBot <prestonBot@users.noreply.github.com>
         title: 'Added Core Weekly ${{ env.WEEK_NUM }} of ${{ env.YEAR }}'
         body: Added Core Weekly ${{ env.WEEK_NUM }} of ${{ env.YEAR }}
-        team-reviewers: prestashop-core-developers
         base: 'master'
         delete-branch: true

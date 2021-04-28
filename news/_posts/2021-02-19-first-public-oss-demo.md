@@ -42,8 +42,8 @@ The first session agenda was as follows:
 - 02:23 Presentation of the agenda
 - 03:06 Event rules
 - 04:20 Project announcements
-- 06:04 First demonstration - Multishop support for Symfony BO pages by [@matthieu-rolland](http://github.com/matthieu-rolland)
-- 18:40 Second demonstration - Enhanced module capacities to customize Symfony forms thanks to form simplification by [@matks](http://github.com/matks)
+- 06:04 First demonstration - Multishop support for Symfony BO pages by [@matthieu-rolland](https://github.com/matthieu-rolland)
+- 18:40 Second demonstration - Enhanced module capacities to customize Symfony forms thanks to form simplification by [@matks](https://github.com/matks)
 - 29:51 Questions & Answers
 - 38:30 Closure
 

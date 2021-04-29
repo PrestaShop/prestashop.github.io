@@ -17,8 +17,8 @@ The session's agenda was as follows:
 - [02:05](https://youtu.be/UJ_XQs8trs4?t=125) Presentation of the agenda
 - [03:18](https://youtu.be/UJ_XQs8trs4?t=198) Event rules
 - [04:33](https://youtu.be/UJ_XQs8trs4?t=273) Project announcements
-- [05:12](https://youtu.be/UJ_XQs8trs4?t=312) First demonstration - 1.7.8 Feature Flags by [@matks](http://github.com/matks)
-- [10:00](https://youtu.be/UJ_XQs8trs4?t=600) Second demonstration - Backlog cleaning by [@hibatallahAouadni](http://github.com/hibatallahAouadni)
+- [05:12](https://youtu.be/UJ_XQs8trs4?t=312) First demonstration - 1.7.8 Feature Flags by [@matks](https://github.com/matks)
+- [10:00](https://youtu.be/UJ_XQs8trs4?t=600) Second demonstration - Backlog cleaning by [@hibatallahAouadni](https://github.com/hibatallahAouadni)
 - [24:15](https://youtu.be/UJ_XQs8trs4?t=1455) Questions & Answers
 - [01:02:30](https://youtu.be/UJ_XQs8trs4?t=3750) Closure
 

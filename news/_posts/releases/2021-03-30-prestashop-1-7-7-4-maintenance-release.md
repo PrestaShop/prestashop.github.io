@@ -15,7 +15,7 @@ tags:
  - 1.7
 ---
 
-PrestaShop 1.7.7.4 is now available. This maintenance release fixes XX issues reported since the 1.7.7.0.
+PrestaShop 1.7.7.4 is now available. This maintenance release fixes 13 issues reported since the 1.7.7.0.
 
 ![1.7.7.4 is available!](/assets/images/2021/05/build_1.7.7.4.png)
 
@@ -27,17 +27,14 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 - [Product customization file can’t be downloaded if the customization label field contains a dot](https://github.com/PrestaShop/PrestaShop/issues/24036)
 - [The gift block in the add order page is not updated when changing the carrier](https://github.com/PrestaShop/PrestaShop/issues/23751)
 - [When filtering products by category, the chosen category is not selected](https://github.com/PrestaShop/PrestaShop/issues/23847)
-- [An error is displayed when deleting an order status with French language
-](https://github.com/PrestaShop/PrestaShop/issues/23379)
+- [An error is displayed when deleting an order status with French language](https://github.com/PrestaShop/PrestaShop/issues/23379)
 - [Tracking number is not a link on the Order List page](https://github.com/PrestaShop/PrestaShop/issues/23401)
 - [Notification of new orders are not displayed](https://github.com/PrestaShop/PrestaShop/issues/23573)
-- [An alert is displayed when updating the product quantity in the order page with multistore
-](https://github.com/PrestaShop/PrestaShop/issues/21987)
+- [An alert is displayed when updating the product quantity in the order page with multistore](https://github.com/PrestaShop/PrestaShop/issues/21987)
 
 **Front-office**
 - [Incorrect discount amount displayed when using a cart rule with free gift and percentage](https://github.com/PrestaShop/PrestaShop/issues/22946)
-- [An exception is displayed when selecting a language with incorrect data - ps_linklist
-](https://github.com/PrestaShop/PrestaShop/issues/23506)
+- [An exception is displayed when selecting a language with incorrect data - ps_linklist](https://github.com/PrestaShop/PrestaShop/issues/23506)
 - [When clicking on the "Quick View" button, a warning is displayed in the console](https://github.com/PrestaShop/PrestaShop/issues/21228)
 
 **Core**

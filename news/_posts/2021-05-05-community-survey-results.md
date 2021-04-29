@@ -33,7 +33,7 @@ If you are not a developer, you can consider hiring a specialist to help you. If
 
 ### When do you contribute to the open-source project?
 
-54,5% of the respondents contribute during their working time, while 45,5% contribute in their free time.
+54.5% of the respondents contribute during their working time, while 45.5% contribute in their free time.
 
 ![When do you contribute to the open-source project?](/assets/images/2021/05/when-do-you-contribute.png)
 

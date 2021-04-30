@@ -22,9 +22,9 @@ We received 98 responses, which makes a completion rate of 28,6%, and wanted to 
 
 The answers to the first question show that the majority of contributors report bugs and suggest improvements or new features for the open-source project. 
 
-The code contribution with pull requests comes in 3rd position with 35,7%.
+The code contribution with pull requests comes in 3rd position with 35.7%.
 
-And 21,4% of respondents do not contribute to the project.
+And 21.4% of respondents do not contribute to the project.
 
 ![How do you contribute to the open-source project?](/assets/images/2021/05/how-do-you-contribute.png)
 

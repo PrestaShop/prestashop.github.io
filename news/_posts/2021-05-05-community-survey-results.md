@@ -49,7 +49,7 @@ Then comes the update of the [Symfony](https://symfony.com/) [LTS](https://en.wi
 
 The first topic that emerged from this question is the fix of major known bugs.
 
-Then comes the simplification of integrating development in the back-office and extending PrestaShop.
+Then comes the easibility of customizing the back-office and extending PrestaShop.
 
 It's followed by the Symfony migration of the back office.
 

@@ -41,7 +41,7 @@ If you are not a developer, you can consider hiring a specialist to help you. If
 
 The two most important needs identified are the major issues related to prices, taxes, and cart rules.
 
-Then comes the update of the Symfony LTS version and the support of PHP 8.0
+Then comes the update of the [Symfony](https://symfony.com/) [LTS](https://en.wikipedia.org/wiki/Long-term_support) version and the support of PHP 8
 
 ![Sort the opportunities for the open-source project in order of importance](/assets/images/2021/05/opportunities-os-project.png)
 

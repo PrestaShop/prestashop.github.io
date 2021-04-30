@@ -37,7 +37,7 @@ If you are not a developer, you can consider hiring a specialist to help you. If
 
 ![When do you contribute to the open-source project?](/assets/images/2021/05/when-do-you-contribute.png)
 
-### Sort the opportunities for the open-source project in order of importance 
+### Sort the opportunities for the open source project in order of importance 
 
 The 2 most important opportunities identified are the fix of the major prices, taxes, and cart rule issues.
 

@@ -8,7 +8,7 @@ icon: icon-world
 image: /assets/images/2021/05/build-survey-banner.png
 ---
 
-The core product team carried out a survey in April, oriented around the open-source project and for the community. The goal of this survey was to better know and understand the pains and the wishes of the community about the open-source project.
+The core product team carried out a survey in April, concerning the open source project and for the community. The goal of this survey was to better know and understand the pains and the wishes of the community about the open source project.
 
 ![Build survey banner](/assets/images/2021/05/build-survey-banner.png)
 

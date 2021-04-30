@@ -47,7 +47,7 @@ Then comes the update of the [Symfony](https://symfony.com/) [LTS](https://en.wi
 
 ### Sort the technical subjects in order of importance
 
-The first subject that goes back to this question is the fix of major bugs.
+The first topic that emerged from this question is the fix of major known bugs.
 
 Then comes the simplification of integrating development in the back-office and extending PrestaShop.
 

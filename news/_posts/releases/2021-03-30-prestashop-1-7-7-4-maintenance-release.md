@@ -21,6 +21,8 @@ PrestaShop 1.7.7.4 is now available. This maintenance release fixes 13 issues re
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don't forget to backup before.
 
+## Main fixes
+
 **Back-office**
 - ["Expand all" button of ps_facetedsearch not working](https://github.com/PrestaShop/PrestaShop/issues/23558)
 - [When a cart rule with a free gift and percentage discount is added to the cart, the discount amount displayed is incorrect](https://github.com/PrestaShop/PrestaShop/issues/22948)

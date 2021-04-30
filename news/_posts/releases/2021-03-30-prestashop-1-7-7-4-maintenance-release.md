@@ -26,7 +26,7 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 **Back-office**
 - ["Expand all" button of ps_facetedsearch not working](https://github.com/PrestaShop/PrestaShop/issues/23558)
 - [When a cart rule with a free gift and percentage discount is added to the cart, the discount amount displayed is incorrect](https://github.com/PrestaShop/PrestaShop/issues/22948)
-- [Product customization file can’t be downloaded if the customization label field contains a dot](https://github.com/PrestaShop/PrestaShop/issues/24036)
+- [Product customization file cannot be downloaded if the customization label field contains a dot](https://github.com/PrestaShop/PrestaShop/issues/24036)
 - [The gift block in the add order page is not updated when changing the carrier](https://github.com/PrestaShop/PrestaShop/issues/23751)
 - [When filtering products by category, the chosen category is not selected](https://github.com/PrestaShop/PrestaShop/issues/23847)
 - [An error is displayed when deleting an order status with French language](https://github.com/PrestaShop/PrestaShop/issues/23379)

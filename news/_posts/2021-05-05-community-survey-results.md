@@ -31,7 +31,7 @@ And 21.4% of respondents do not contribute to the project.
 Remember that the best way to contribute to the open-source project is to open an issue when you are facing a problem and to fix it with a pull request if you have the technical skills. 
 If you are not a developer, you can consider hiring a specialist to help you. If you manage to get the problem fixed, then contribute the fix back to the project as a Pull Request. Remember that the more people contribute, the better PrestaShop becomes for everyone :muscle:
 
-### When do you contribute to the open-source project?
+### When do you contribute to the open source project?
 
 54.5% of the respondents contribute during their working time, while 45.5% contribute in their free time.
 

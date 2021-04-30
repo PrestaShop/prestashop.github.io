@@ -12,7 +12,7 @@ The core product team carried out a survey in April, concerning the open source 
 
 ![Build survey banner](/assets/images/2021/05/build-survey-banner.png)
 
-## :two_hearts: Special thanks to the participants
+## :two_hearts: Special thanks to the respondents
 
 We received 98 responses, which makes a completion rate of 28,6%, and wanted to thank everyone who participated in this survey. Your opinions are very important for us and we care a lot about your satisfaction!
 

@@ -39,7 +39,7 @@ If you are not a developer, you can consider hiring a specialist to help you. If
 
 ### Sort the opportunities for the open source project in order of importance 
 
-The 2 most important opportunities identified are the fix of the major prices, taxes, and cart rule issues.
+The two most important needs identified are the major issues related to prices, taxes, and cart rules.
 
 Then comes the update of the Symfony LTS version and the support of PHP 8.0
 

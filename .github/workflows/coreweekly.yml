@@ -29,7 +29,7 @@ jobs:
       run: cd ~/core-weekly-generator && pip install -r requirements.txt
  
     - name: Generate Core Weekly for the current week
-      run: cd ~/core-weekly-generator && python core-weekly.py --week ${{ env.WEEK_NUM }} > $GITHUB_WORKSPACE/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-%U-%Y.md")
+      run: cd ~/core-weekly-generator && python core-weekly.py --week ${{ env.WEEK_NUM }} > $GITHUB_WORKSPACE/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-${{ env.WEEK_NUM }}-%Y.md")
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3

@@ -89,7 +89,7 @@ The following languages had the best progress thanks to the translation communit
 
 Congratulations! :muscle:
  
-![Best translation progress for April 2021](/assets/images/2021/04/build-crowdin-progress-april21.png)
+![Best translation progress for April 2021](/assets/images/2021/05/build-crowdin-progress-april21.png)
 
 A huge thank you to all the contributors!
  
@@ -98,4 +98,3 @@ Of course, this is highlighting the languages that made some progress with new t
 If you have not joined us on Crowdin yet, [it is never too late](https://crowdin.com/project/prestashop-official)! :wink:
  
 If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let me know: I will include a word about it in the next monthly report.
-

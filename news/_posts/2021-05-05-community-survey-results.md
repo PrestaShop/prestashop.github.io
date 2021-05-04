@@ -2,7 +2,7 @@
 layout: post
 title: "Results of community survey – April 2021"
 subtitle: "Thank you for your feedback about the open source project and the contributions"
-date: 2021-05-05 12:00:00
+date: 2021-05-04 12:00:00
 authors: [MarionFrancois]
 icon: icon-world
 image: /assets/images/2021/05/build-survey-banner.png

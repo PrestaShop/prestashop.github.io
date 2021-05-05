@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – April 2021 edition"
 subtitle: "Where you'll learn that Hebrew is now fully available"
-date: 2021-05-04 17:00:00
+date: 2021-05-05 10:00:00
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

@@ -7,7 +7,6 @@ authors:  [ PrestaShop ]
 icon: icon-branch
 tags:
 - news
-- composer
 - development
 ---
 

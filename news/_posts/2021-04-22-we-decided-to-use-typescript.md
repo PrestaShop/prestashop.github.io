@@ -12,7 +12,7 @@ Following a recent [Architecture Decision Records (ADR) submission](https://gith
 
 # Why TypeScript?
 
-During the last few years, the PrestaShop Project has been increasinlgy raising the code quality bar. To help maintainers ensure that quality keeps increasing, a number of automatic quality verification tools have been added to the CI pipeline:
+During the last few years, the PrestaShop Project has been increasingly raising the code quality bar. To help maintainers ensure that quality keeps increasing, a number of automatic quality verification tools have been added to the CI pipeline:
 - ESLint analyzes the whole JavaScript codebase to ensure it follows our code style and find problems.
 - Stylelint verifies SCSS files, including the UIKit files.
 - PHPStan finds errors and prevents introducing risky behavior in PHP files.
@@ -28,7 +28,7 @@ TypeScript also allows more expressive code, which will help new developers and 
 
 In addition to strict types, TypeScript also provides a lot of useful language features that JavaScript doesn't, such as private methods, interfaces, generics, and more.
 
-## Why TypeScript and not another typing library such as Flow?
+## Why TypeScript and not another strict type library such as Flow?
 
 One good reason is that many big JavaScript projects like Vue and Jest have recently switched their codebases from Flow to TypeScript – This means that a lot of developers are building their projects using TypeScript. Hence, we think that using TypeScript will maximize the chances that developers won't be lost when reading PrestaShop's code.
 

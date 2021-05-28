@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing TypeScript"
 subtitle: "Moving our Javascript code to the next level"
-date: 2021-04-22
+date: 2021-05-28
 authors: [NeOMakinG]
 icon: icon-lightning
 tags: [news, development]

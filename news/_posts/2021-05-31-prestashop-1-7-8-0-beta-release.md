@@ -20,6 +20,8 @@ This version includes many features and debug fixes, we count on you to test it 
 
 In the new features: we have the redesign of the translation system that will facilitate the export and the translation of your modules and themes, a new custom header for multistore fans and many other improvements.
 
+//Focus on the contribution (stats)
+
 We need the help of all the community to test this version. It integrates more than 1,372 Pull Request merged and 241 bug fixed including 18 major bugs and 4 Topwatchers bugs (issue that are followed by more than 5 people). 
 
 **Remember, this beta version is pre release software. Do not use it on your production shop!**

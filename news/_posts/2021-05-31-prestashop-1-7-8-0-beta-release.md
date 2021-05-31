@@ -44,9 +44,24 @@ PRs : [#17253](https://github.com/PrestaShop/PrestaShop/pull/17253) [#22736](htt
 See also : [Adjustement of alert colors, fontsize and buttons contrasts](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
 #### Feature flags
 
-### Notable fixes
+*  [Fix classic theme images width, accessibilty and some lighthouse improvements](https://github.com/PrestaShop/PrestaShop/issues/23352)
+*  [Add TinyMCE mobile theme in the BO](https://github.com/PrestaShop/PrestaShop/issues/23225)
+*  [Implement Native Lazy Loading on theme classic](https://github.com/PrestaShop/PrestaShop/issues/19549)
+*  [A lot of responsive improvements in the Backoffice](https://github.com/PrestaShop/PrestaShop/issues/22358) 
+*  [Some classic theme improvements (styling and more)](https://github.com/PrestaShop/PrestaShop/pull/20775)
+*  [Display ‘Out of Stock’ on Catalog pages](https://github.com/PrestaShop/PrestaShop/issues/21105)
+*  [Ability to enable and disable Hooks](https://github.com/PrestaShop/PrestaShop/issues/20848)
+*  [Hook for modifying TinyMce](https://github.com/PrestaShop/PrestaShop/issues/19408)
+*  [Display the overrides list in the Informations tab](https://github.com/PrestaShop/PrestaShop/issues/21368)
+*  [Product page images should be able to swipe on mobile for classic theme](https://github.com/PrestaShop/PrestaShop/issues/20431)
 
-- [New hooks into Presenters, allowing to enrich the data built by these services](https://github.com/PrestaShop/PrestaShop/issues/11125)
+- [Display subcategories in FO categories pages](https://github.com/PrestaShop/PrestaShop/issues/10407)
+- [Add order internal notes](https://github.com/PrestaShop/PrestaShop/issues/14753)
+- [Allow users to better handle avatars](https://github.com/PrestaShop/PrestaShop/issues/18653)
+- [Replace Tools::redirect('index.php?controller=404') by Tools::redirect('pagenotfound')](https://github.com/PrestaShop/PrestaShop/pull/20410)
+
+
+### Notable fixes
 
 ### **Topwatchers:**
 
@@ -81,6 +96,28 @@ See also : [Adjustement of alert colors, fontsize and buttons contrasts](https:/
 - [.docker folder is present in release zip](https://github.com/PrestaShop/PrestaShop/issues/22233)
 
 ### Notable technical improvements
+
+- [New hooks into Presenters, allowing to enrich the data built by these services](https://github.com/PrestaShop/PrestaShop/issues/11125)
+- [Remove microdata in html flow and replace by JSON-LD for classic theme](https://github.com/PrestaShop/PrestaShop/issues/22867)
+- [Automatize some of our rules with PHPStan : Introduce phpstan extension](https://github.com/PrestaShop/PrestaShop/issues/22728)
+- [Problem with sessions cookies for SameSite issue](https://github.com/PrestaShop/PrestaShop/issues/22711)
+- [Two service containers coexist in back office](https://github.com/PrestaShop/PrestaShop/issues/14995)
+- [Add hooks to cart modal - crosseling and promotion](https://github.com/PrestaShop/PrestaShop/issues/17709)
+- [Use static analyser to improve code quality](https://github.com/PrestaShop/PrestaShop/issues/16471)
+- [No High DPI support in ImageRetriever](https://github.com/PrestaShop/PrestaShop/issues/19798)
+- [Allow override of checkoutProcess construction #19848](https://github.com/PrestaShop/PrestaShop/issues/19848)
+- [BO Menu translation](https://github.com/PrestaShop/PrestaShop/issues/9762) 
+- [Added the ability to manage and download Attachments via Webservice](https://github.com/PrestaShop/PrestaShop/pull/12728)
+- [CSS classes / element attributes called by core.js are marked with js prefixed selectors](https://github.com/PrestaShop/PrestaShop/issues/14346)
+- [Import source files of the UIKit instead of dist files to use prestakit variables](https://github.com/PrestaShop/PrestaShop/pull/18396)
+- [Default theme is the only folder not having ESLint installed and configured](https://github.com/PrestaShop/PrestaShop/issues/22998)
+- [Default theme has no specific SCSS rules](https://github.com/PrestaShop/PrestaShop/issues/22885)
+- [Add selectors mapping so themes can override it](https://github.com/PrestaShop/PrestaShop/pull/20002)
+- [Add eslint to themes and classic folders](https://github.com/PrestaShop/PrestaShop/pull/20080)
+- [Update BO theme style in legacy pages to match the UI kit](https://github.com/PrestaShop/PrestaShop/issues/22435)
+- [Update jQuery on classic, FO core and default BO theme](https://github.com/PrestaShop/PrestaShop/pull/23122)
+- [Introduce Javascript component loading through window.prestashop (part1)](https://github.com/PrestaShop/PrestaShop/pull/20591)
+
 
 #### Dependencies and Software compatibility
 

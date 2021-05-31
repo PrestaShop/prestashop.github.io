@@ -67,7 +67,7 @@ PR : [#20370](https://github.com/PrestaShop/PrestaShop/pull/20370)
 
 You can download PrestaShop 1.7.8.0 beta here:  
 
-[Download PrestaShop 1.7.7.0 beta now!](https://download.prestashop.com/download/releases/prestashop_1.7.8.0-beta.1.zip){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.8.0 beta now!](https://download.prestashop.com/download/releases/prestashop_1.7.8.0-beta.1.zip){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 

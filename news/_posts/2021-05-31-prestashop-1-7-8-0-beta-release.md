@@ -32,7 +32,7 @@ We need the help of all the community to test this version. It integrates more t
 
 #### Improvements for UI Kit
 
-PrestaShop back office UI Kit must be improved in order to have a Solid Design System
+PrestaShop back office UI Kit has been improved in order to have a Solid Design System
 
 See all issues listed in [https://github.com/PrestaShop/PrestaShop/issues/16587](https://github.com/PrestaShop/PrestaShop/issues/16587)
 
@@ -46,7 +46,7 @@ See also : [Adjustement of alert colors, fontsize and buttons contrasts](https:/
 
 ### Symfony migration
 
-New pages handled for the long term migration on Symfony framework
+New pages handled for the long term migration on Symfony framework. We are now about 65% of the Back-Office pages migrated
 
 - ["Catalog > Attributes & Features > Attributes" listing page](https://github.com/PrestaShop/PrestaShop/issues/10511)
 PR : [#19838](https://github.com/PrestaShop/PrestaShop/pull/19838)
@@ -85,3 +85,26 @@ You must:
 
 ## Known issues 
 
+- [When the catalog is exported the metadata is missing](https://github.com/PrestaShop/PrestaShop/issues/24716) 
+- [When reducing the screen in the order page, the icon of error, confirmation, warning messages is broken](https://github.com/PrestaShop/PrestaShop/issues/24695) 
+- [An error is displayed in the console when adding a discount on the Add New Order Page](https://github.com/PrestaShop/PrestaShop/issues/24556) 
+- [On the Add new Order page when I change the product quantity, the page freezes](https://github.com/PrestaShop/PrestaShop/issues/24554) 
+- [When we add an order note with invalid data, an update successful alert is displayed](https://github.com/PrestaShop/PrestaShop/issues/24534) 
+- [When adding a product into a new invoice in the Order Page, the block product new invoice info is not displayed](https://github.com/PrestaShop/PrestaShop/issues/24533) 
+- [The Invoice details on the Order Preview is missing the address mail of the customer](https://github.com/PrestaShop/PrestaShop/issues/24482) 
+- [When Adding a new theme, an error 404 is displayed in the console](https://github.com/PrestaShop/PrestaShop/issues/24468) 
+- [When the client uses another address for the invoice as a guest, we are redirected to the Information step instead of the Shipping method step](https://github.com/PrestaShop/PrestaShop/issues/24465) 
+- [When an account is created, an exception is displayed when the first name and/or last name fields contain invalid characters.](https://github.com/PrestaShop/PrestaShop/issues/24464) 
+ [https://github.com/PrestaShop/PrestaShop/issues/24370](https://github.com/PrestaShop/PrestaShop/issues/24370) 
+- [When accessing to a disabled category, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/24333) 
+- [The scrollbar is missing in the new multistore dropdown](https://github.com/PrestaShop/PrestaShop/issues/24142) 
+- [The warning message is empty when we try to remove a customer from a specific price](https://github.com/PrestaShop/PrestaShop/issues/24131) 
+- [The summary & the description of the Product Page allows more characters than the defined limit](https://github.com/PrestaShop/PrestaShop/issues/24023) 
+- [When running a CLI command prestashop:update:sql-upgrade-file-hooks-listing and prestashop:update:configuration-file-hooks-listing, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/23937) 
+- [Multistore header not displayed on Product Add / Edit page](https://github.com/PrestaShop/PrestaShop/issues/23878) 
+- [When modifying a translation of Email Body, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/23876) 
+- [When searching for the translation, the « leaves » of the tree that does not include the searched term is not disabled](https://github.com/PrestaShop/PrestaShop/issues/23365) 
+ - [An error displayed in the console when creating a category](https://github.com/PrestaShop/PrestaShop/issues/22545) 
+ - [Cannot add an official currency to a non-official language from the CLDR](https://github.com/PrestaShop/PrestaShop/issues/21961) 
+ - [The block to promote the discounts is removed after adding a cart rule](https://github.com/PrestaShop/PrestaShop/issues/21107) 
+ - [Menu Page is still displayed in the Back-Office](https://github.com/PrestaShop/PrestaShop/issues/21107) 

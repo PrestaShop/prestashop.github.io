@@ -30,7 +30,10 @@ We need the help of all the community to test this version. It integrates more t
 
 ### New features & improvements
 
+#### Translations
+#### Multistore
 #### Improvements for UI Kit
+#### Product page
 
 PrestaShop back office UI Kit has been improved in order to have a Solid Design System
 
@@ -39,27 +42,29 @@ See all issues listed in [https://github.com/PrestaShop/PrestaShop/issues/16587]
 - [UI Kit] Improvements and corrections [#17177](https://github.com/PrestaShop/PrestaShop/issues/17177) [#21832](https://github.com/PrestaShop/PrestaShop/issues/21832)
 PRs : [#17253](https://github.com/PrestaShop/PrestaShop/pull/17253) [#22736](https://github.com/PrestaShop/PrestaShop/pull/22736)
 See also : [Adjustement of alert colors, fontsize and buttons contrasts](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
+#### Feature flags
 
 ### Notable fixes
 
 ### Notable technical improvements
 
+#### Dependencies and Software compatibility
+
+- [Add blockwishlist as native module & Remove archived modules](https://github.com/PrestaShop/PrestaShop/pull/23617)
+- [Update CLDR to latest version 38 (2020-10-28)](https://github.com/PrestaShop/PrestaShop/issues/21678)
+- [Composer 2.0 to be compliant with PSR-4](https://github.com/PrestaShop/PrestaShop/issues/20986)
+- [Compatibility to PHP 7.4](https://github.com/PrestaShop/PrestaShop/issues/16477)
+
 ### Symfony migration
 
-New pages handled for the long term migration on Symfony framework. We are now about 65% of the Back-Office pages migrated
+See the new pages migrated in Symfony, we are now about 65% of the Back-Office pages migrated.
 
-- ["Catalog > Attributes & Features > Attributes" listing page](https://github.com/PrestaShop/PrestaShop/issues/10511)
-PR : [#19838](https://github.com/PrestaShop/PrestaShop/pull/19838)
-- [“Shop parameters > Order settings > Statuses > Add new / edit order status” page](https://github.com/PrestaShop/PrestaShop/issues/10621)
-PR : [#17215](https://github.com/PrestaShop/PrestaShop/pull/17215)
-- ["Shop parameters > Order settings > Statuses" page](https://github.com/PrestaShop/PrestaShop/issues/10619)
-PR : [#17215](https://github.com/PrestaShop/PrestaShop/pull/17215)
-- ["Shop parameters > Order settings > Statuses > Add new / edit order return status"](https://github.com/PrestaShop/PrestaShop/issues/10620)
-PR : [#17215](https://github.com/PrestaShop/PrestaShop/pull/17215)
-- [Migrate "International > Locations > Zones" page](https://github.com/PrestaShop/PrestaShop/issues/10608)
-PR : [#20370](https://github.com/PrestaShop/PrestaShop/pull/20370)
-- [Migrate "International > Locations > Add new / edit zone" page](https://github.com/PrestaShop/PrestaShop/issues/10603)
-PR : [#20370](https://github.com/PrestaShop/PrestaShop/pull/20370)
+- Catalog > Attributes & Features > Attributes listing 
+- Shop parameters > Order settings > Statuses > Add new / edit order status 
+- Shop parameters > Order settings > Statuses
+- Shop parameters > Order settings > Statuses > Add new / edit order return status
+- International > Locations > Zones
+- International > Locations > Add new / edit zone
 
 ### Core changes
 

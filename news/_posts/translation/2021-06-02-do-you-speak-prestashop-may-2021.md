@@ -26,7 +26,7 @@ In 2020, because of the sanitary crisis, our headquarters were closed and we wer
 
 [Jiří VALT](https://crowdin.com/profile/gvg) already received his package, and sent us a picture of the gift with a nice message! Thank you again for your involvement in the Czech project Jirka!
 
-!(/assets/images/2021/05/build-crowdin-goodies-jirka-may21.png)
+![Jirka's goodies reward program](/assets/images/2021/05/build-crowdin-goodies-jirka-may21.png)
 
 ### :two_hearts: Special thanks to newcomers
 

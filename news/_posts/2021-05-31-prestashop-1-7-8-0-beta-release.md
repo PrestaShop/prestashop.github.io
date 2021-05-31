@@ -46,6 +46,8 @@ See also : [Adjustement of alert colors, fontsize and buttons contrasts](https:/
 
 ### Notable fixes
 
+- [New hooks into Presenters, allowing to enrich the data built by these services](https://github.com/PrestaShop/PrestaShop/issues/11125)
+
 ### **Topwatchers:**
 
 - [When a product has a specific price applied and has a discounted by unit, the discount displayed on the product page is false](https://github.com/PrestaShop/PrestaShop/issues/16163) (Major)

@@ -46,6 +46,38 @@ See also : [Adjustement of alert colors, fontsize and buttons contrasts](https:/
 
 ### Notable fixes
 
+### **Topwatchers:**
+
+- [When a product has a specific price applied and has a discounted by unit, the discount displayed on the product page is false](https://github.com/PrestaShop/PrestaShop/issues/16163) (Major)
+- [When the cache is cleared, an error 500 is displayed](https://github.com/PrestaShop/PrestaShop/issues/11105)
+- [Profiler was not compatible with hooks and module](https://github.com/PrestaShop/PrestaShop/issues/9659)
+- [Double click on "Add to cart" on the product page FO freezes the page](https://github.com/PrestaShop/PrestaShop/issues/9634)
+
+### Major bugs:
+
+* **Front-Office**
+
+- [Guess Order Tracking redirects to shop Homepage when the Friendly URLs are disabled](https://github.com/PrestaShop/PrestaShop/issues/20194)
+- [An error is error is displayed on the checkout if Legal compliance module is installed](https://github.com/PrestaShop/PrestaShop/issues/12509)
+- [Checkout slowdown when many orders are made with Guest account](https://github.com/PrestaShop/PrestaShop/issues/16584)
+- [Ecotax is displayed tax excl instead of tax incl in FO](https://github.com/PrestaShop/PrestaShop/issues/18835)
+- [Confirmation button on Checkout should be disabled if Terms and conditions are not approved](https://github.com/PrestaShop/PrestaShop/issues/19161)
+
+* **Back-Office**
+
+- [An exception is thrown when adding invalid parameter to Language form and "No picture" image](https://github.com/PrestaShop/PrestaShop/issues/22500)
+- [In Back-Office, some of the js parts rely on form field's ids and attributes that are modified since 1.7.8](https://github.com/PrestaShop/PrestaShop/issues/21819)
+- [The number of characters is only checked by the Front-End](https://github.com/PrestaShop/PrestaShop/issues/19505)
+- [Possibility to create catalog price rule with a percentage value greater than 100%](https://github.com/PrestaShop/PrestaShop/issues/19013)
+- [JS issue when editing an image in TinyMCE](https://github.com/PrestaShop/PrestaShop/issues/11011)
+- [Unit price reset to 0 if you activate/deactivate or duplicate products from the Product List](https://github.com/PrestaShop/PrestaShop/issues/10792)
+- [Issues when installing PrestaShop with SSL](https://github.com/PrestaShop/PrestaShop/issues/10482)
+
+* **WebServices**
+- [The id_group_shop is shared instead of id_shop_group in webservice parameter](https://github.com/PrestaShop/PrestaShop/issues/19566)
+* **CO**
+- [.docker folder is present in release zip](https://github.com/PrestaShop/PrestaShop/issues/22233)
+
 ### Notable technical improvements
 
 #### Dependencies and Software compatibility

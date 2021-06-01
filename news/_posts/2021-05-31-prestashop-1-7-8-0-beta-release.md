@@ -237,4 +237,4 @@ You must:
 - [An error displayed in the console when creating a category](https://github.com/PrestaShop/PrestaShop/issues/23365) 
 - [Cannot add an official currency to a non-official language from the CLDR](https://github.com/PrestaShop/PrestaShop/issues/22545) 
 - [The block to promote the discounts is removed after adding a cart rule](https://github.com/PrestaShop/PrestaShop/issues/21961) 
-- [Menu Page is still displayed in the Back-Office](https://github.com/PrestaShop/PrestaShop/issues/21107) 
+- [The Menu Page should be disabled in the Back-Office](https://github.com/PrestaShop/PrestaShop/issues/21107) 

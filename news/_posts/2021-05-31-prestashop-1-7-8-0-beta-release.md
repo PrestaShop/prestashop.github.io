@@ -124,7 +124,7 @@ It will help the user to find the right combination quickly.
 
 **Front-Office**
 
-- Guess Order Tracking redirects to shop Homepage when the Friendly URLs are disabled [#20194](https://github.com/PrestaShop/PrestaShop/issues/20194)
+- Guest Order Tracking redirected to shop Homepage when Friendly URLs were disabled [#20194](https://github.com/PrestaShop/PrestaShop/issues/20194)
 - An error is displayed on the checkout if the Legal compliance module is installed [#12509](https://github.com/PrestaShop/PrestaShop/issues/12509)
 - Checkout slowdown when many orders are made with a Guest account [#16584](https://github.com/PrestaShop/PrestaShop/issues/16584)
 - Ecotax is displayed tax excl instead of tax incl in FO [#18835](https://github.com/PrestaShop/PrestaShop/issues/18835)

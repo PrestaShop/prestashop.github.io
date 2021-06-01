@@ -57,7 +57,6 @@ For now, it has been implemented only on the Maintenance page of the back office
 
 ![The new multistore specific setting drop down](/assets/images/2021/Specific_settings_drop_down_multistore.png)
 
-It allows merchants to know at a glance which settings are applied in all shops and which ones have been customized to understand the different behaviors of theirs shops.
 ##### Checkboxes
 
 Checkboxes are displayed in a specific shop context and a group context.

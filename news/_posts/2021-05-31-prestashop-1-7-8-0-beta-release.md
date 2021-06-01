@@ -62,7 +62,13 @@ The version 1.7.8 is introducing the Experimental features so that complex new f
 
 #### Back Office Product page
 
-The new features brought to the page are made available only through the Experimental feature page to let the community test this page only in test environments to give us maximum feedback. This page, being one of the main pages of PrestaShop, has been delivered into a feature flag to assure its stability before replacing the old page.
+New features and improvements have been shipped for the product page. However, as the product page is a key piece of the Back Office, we are delivering them with extra caution:
+- In 1.7.8, the changes are added in an Experimental product page behind a feature flag: Back Office user must enable the Experimental page before using it. This should allow the community to try out this improved page in test environments and give us a lot of feedback.
+- In the version after 1.7.8, the new and improved product page will replace the current page.
+
+This 2-step delivery aims to ensure the stability of the changes before they are made definitive.
+
+This means that in 1.7.8, the default Product page
 
 The new page includes:
 - **A bulk suppression in the image manager**

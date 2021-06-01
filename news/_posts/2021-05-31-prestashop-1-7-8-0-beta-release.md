@@ -24,6 +24,10 @@ With more than 1,372 merged Pull Requests and 241 bug fixes, including 17 major 
 
 Also, a big thank you to our 163 contributors with whom we would not have had this beautiful version. And a warm welcome to the 93 new contributors for their first contribution.
 
+This Beta release is a great opportunity for you to start working with it before we release a stable version. Go download and install this Beta version as a test store, either on your machine or your web hosting, then play with it – and give us your feedback! We need you to test this new version of PrestaShop.
+
+If you find regressions compared to previous versions, please create an [issue on Github](https://github.com/PrestaShop/PrestaShop/issues/new/choose) to help us to make it stable more quickly.
+
 **Remember, this beta version is pre-release software and is expected to have bugs. Do not use it in your production shop!**
 
 ## New features & improvements

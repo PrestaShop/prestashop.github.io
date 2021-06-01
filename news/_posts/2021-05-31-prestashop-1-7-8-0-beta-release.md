@@ -117,7 +117,7 @@ It will help the user to find the right combination quickly.
 - When a product had a specific price applied and was discounted by unit, the discount displayed on the product page was false [#16163](https://github.com/PrestaShop/PrestaShop/issues/16163) (Major)
 - When Clear cache button was clicked twice, the user would see an error page [#11105](https://github.com/PrestaShop/PrestaShop/issues/11105) (Major)
 - Profiler was not compatible with hooks and module [#9659](https://github.com/PrestaShop/PrestaShop/issues/9659)
-- Double click on "Add to cart" on the product page FO freezes the page [#9634](https://github.com/PrestaShop/PrestaShop/issues/9634) (Major)
+- Double click on "Add to cart" on the product page FO was freezing the page [#9634](https://github.com/PrestaShop/PrestaShop/issues/9634) (Major)
 
 ### Major bugs:
 

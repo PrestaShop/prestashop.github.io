@@ -24,7 +24,7 @@ The latest features: we have the redesign of the translation system that facilit
 
 With more than 1,372 merged Pull Requests and 241 bug fixes, including 17 major and 4 Topwatcher (issues that are followed by more than 5 people), this is one of our biggest releases yet! We need the help of all the community to test this version.
 
-**Remember, this beta version is pre-release software. Do not use it in your production shop!**
+**Remember, this beta version is pre-release software and is expected to have bugs. Do not use it in your production shop!**
 
 ## What’s new?
 

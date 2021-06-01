@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 1.7.8.0 beta is open for feedback!"
 subtitle: "You can download it and test it"
-date: 2021-05-31
+date: 2021-06-01
 authors: [ PrestaShop ]
 icon: icon-leaf
 tags:
@@ -18,15 +18,15 @@ The first Beta version of PrestaShop 1.7.8.0 is now ready for you to test!
 We are very happy to announce today the release of the beta version of 1.7.8.
 This version includes many features and bug fixes, we count on you to test the Beta and report any bugs you encounter.
 
-The latest main new features are: the redesign of the translation system that facilitates the export and the translation of your modules and themes, a new header for the multistore allowing to configure the different stores more easily and quickly, and many other improvements.
+Main new features are: the redesign of the translation system that facilitates the export and the translation of your modules and themes, a new header for multistore allowing to configure the different stores more easily and quickly, and many other improvements.
 
-With more than 1,372 merged Pull Requests and 241 bug fixes, including 17 major and 4 Topwatcher (issues that are followed by more than 5 people), this is one of our biggest releases yet! We need the help of all the community to test this version.
+With more than 1,372 merged Pull Requests and 241 bug fixes, including 17 major and 4 Topwatcher (issues that are followed by more than 5 people), this is one of our biggest releases yet!
 
-Also, a big thank you to our 163 contributors with whom we would not have had this beautiful version. And a warm welcome to the 93 new contributors for their first contribution.
+Also, a big thank you to our 163 contributors without whom we would not have had this beautiful version. And a warm welcome to the 93 new contributors for their first contribution.
 
 This Beta release is a great opportunity for you to start working with it before we release a stable version. Go download and install this Beta version as a test store, either on your machine or your web hosting, then play with it – and give us your feedback! We need you to test this new version of PrestaShop.
 
-If you find regressions compared to previous versions, please create an [issue on Github](https://github.com/PrestaShop/PrestaShop/issues/new/choose) to help us to make it stable more quickly.
+If you find regressions compared to previous versions, please create an [issue on Github](https://github.com/PrestaShop/PrestaShop/issues/new/choose) to help us make it stable more quickly.
 
 **Remember, this beta version is pre-release software and is expected to have bugs. Do not use it in your production shop!**
 

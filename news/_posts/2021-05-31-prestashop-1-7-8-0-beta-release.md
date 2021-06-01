@@ -67,8 +67,6 @@ New features and improvements have been shipped for the product page. However, a
 
 This 2-step delivery aims to ensure the stability of the changes before they are made definitive.
 
-This means that in 1.7.8, the default Product page
-
 The new page includes:
 - **A bulk suppression in the image manager**
 

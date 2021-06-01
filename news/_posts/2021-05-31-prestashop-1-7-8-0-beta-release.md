@@ -42,22 +42,38 @@ If you find regressions compared to previous versions, please create an [issue o
 - Modules using the [new translation system](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/) introduced in 1.7.6 can now distribute their own translation files in the XLF format.
 You can use the export tool to migrate from legacy PHP catalogue to XLF catalogue
 
-One of the main difficulties for the merchants using the multistore was to know which store they were configuring in the back-office and this was bringing a lot of configuration errors.
 ### Multistore
 
-- Shops running on Multistore now feature a new Back Office header that makes it easy for merchants to tell which context they are on. Its background color can be customized for each shop or shop group in the Multistore parameters. 
+#### New Multistore header
+One of the main difficulties for the merchants using the multistore was to know which store they were configuring in the back-office and this was bringing a lot of configuration errors.
+
+This is why a new back-office header has been added. Its color can be customized for each shop or group of shop(s) in the multistore parameters. It makes it easy for the merchants to know which shop or group they are configuring and therefore avoid configuration mistakes.
 
 ![The new multistore header](/assets/images/2021/multistore_header.png)
 
-- Only on the maintenance page for now, a drop-down list allows the merchant to view the shops list and find out if the page has inherited the group setting or has been customized.
+#### New specific settings drop-down
+
+This drop-down is displayed in the “all shops” context and group contexts. It allows you to see which settings have been customized in one or several specific shops. And therefore, the settings that will not be overridden following a change made in “all shops” or in a group context.
+
+For now, it has been implemented only on the Maintenance page of the back office.
 
 ![The new multistore specific setting drop down](/assets/images/2021/Specific_settings_drop_down_multistore.png)
 
-It allows merchants to know at a glance which settings are applied in all shops and which ones have been customized to understand the different behaviors of theirs shops.
+#### Checkboxes
 
+Checkboxes are displayed in a specific shop context and a group context.
+They are displayed before each field/toggle/parameter and allow merchants to apply specific settings to a store or a group of shops. Merchants just need to select the parameter to modify, bring their modifications, and then save.
+
+For now, they have been implemented only on the Maintenance page of the back office.
+
+#### Linklist module
+
+Many users complained about the [linklist module](https://github.com/PrestaShop/ps_linklist) wasn’t [compatible with the multistore](https://github.com/PrestaShop/PrestaShop/issues/9795), as it was quite annoying for their activity, not being able to have different links in their footer depending of the store.
+
+This is why it has been decided to make a new version (v.5.0.0) of this module to make it [compatible with the multistore](https://github.com/PrestaShop/ps_linklist/pull/114) and this was made possible thanks to the great work of [Krystian Podemski](https://github.com/kpodemski) :pray:
 ### Experimental features
 
-The version 1.7.8 is introducing the Experimental features so that complex new features can be disabled or hidden by default until considered stable. Experimental features, also known as feature flags, allow developers to deliver small incremental chunks without compromising the system stability, which is a common practice in the software world. So on Advanced Parameters > Experimental Features, knowing the risks involved, the developers can enable or disable an experimental feature.
+The version 1.7.8 is introducing the Experimental features. With that, complex new features can be disabled or hidden by default until they are considered stable. Experimental features also called "feature flags", allow developers to deliver small incremental chunks without compromising the system stability, which is a common practice in the software world. The developers can enable or disable an experimental feature in Advanced Parameters > Experimental Features, knowing the risks involved.
 
 ![The new Experimental features page](/assets/images/2021/experimental-features.png)
 
@@ -65,7 +81,7 @@ The version 1.7.8 is introducing the Experimental features so that complex new f
 
 New features and improvements have been shipped for the product page. However, as the product page is a key piece of the Back Office, we are delivering them with extra caution:
 - In 1.7.8, the changes are added in an Experimental product page behind a feature flag: Back Office user must enable the Experimental page before using it. This should allow the community to try out this improved page in test environments and give us a lot of feedback.
-- In the version after 1.7.8, the new and improved product page will replace the current page.
+- In the version following the 1.7.8, the new and improved product page will replace the current page.
 
 This 2-step delivery aims to ensure the stability of the changes before they are made definitive.
 
@@ -95,7 +111,7 @@ It will help the user to find the right combination quickly.
 
 ### Front-Office improvements
 
-- Improvements of classic theme images width, accessibility and some [lighthouse](https://developers.google.com/web/tools/lighthouse) KPI [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352)[#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
+- Improvements of classic theme images width, accessibility and some [lighthouse](https://developers.google.com/web/tools/lighthouse) KPI [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352) [#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
 - The implementation of Native Lazy Loading on theme Classic ([see the complete detail of the feature](https://build.prestashop.com/news/journey-to-improve-the-time-to-interactive-metric/)) [#19549](https://github.com/PrestaShop/PrestaShop/issues/19549)
 - The label ‘Out of Stock’ is displayed on Catalog pages [#21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
 - The images on the Product Page can now be swiped on mobile for Classic theme [#20431](https://github.com/PrestaShop/PrestaShop/issues/20431)
@@ -117,7 +133,8 @@ It will help the user to find the right combination quickly.
 - When Clear cache button was clicked twice, the user would see an error page [#11105](https://github.com/PrestaShop/PrestaShop/issues/11105) (Major)
 - Profiler was not compatible with hooks and module [#9659](https://github.com/PrestaShop/PrestaShop/issues/9659)
 - Double click on "Add to cart" on the product page FO was freezing the page [#9634](https://github.com/PrestaShop/PrestaShop/issues/9634) (Major)
-
+- By default, select the payment method if only one available [#11435](https://github.com/PrestaShop/PrestaShop/issues/11435)
+- Bad translation of back-office menu tabs [#9816](https://github.com/PrestaShop/PrestaShop/issues/9816)
 ### Major bugs:
 
 **Front-Office**

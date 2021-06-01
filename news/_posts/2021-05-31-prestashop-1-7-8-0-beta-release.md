@@ -97,7 +97,7 @@ It will help the user to find the right combination quickly.
 #### Front-Office improvements
 
 - Improvements of classic theme images width, accessibility and some lighthouse KPI [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352)[#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
-- The implementation of Native Lazy Loading on theme classic ([see the complete detail of the feature](https://build.prestashop.com/news/journey-to-improve-the-time-to-interactive-metric/))[#19549](https://github.com/PrestaShop/PrestaShop/issues/19549)
+- The implementation of Native Lazy Loading on theme Classic ([see the complete detail of the feature](https://build.prestashop.com/news/journey-to-improve-the-time-to-interactive-metric/))[#19549](https://github.com/PrestaShop/PrestaShop/issues/19549)
 - The label ‘Out of Stock’ is displayed on Catalog pages [#21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
 - The images on the Product Page can now be swiped on mobile for Classic theme [#20431](https://github.com/PrestaShop/PrestaShop/issues/20431)
 - The subcategories are displayed on Categories pages [#10407](https://github.com/PrestaShop/PrestaShop/issues/10407)

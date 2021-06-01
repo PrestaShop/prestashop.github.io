@@ -83,7 +83,7 @@ It allows the user to avoid having to remove then add then re-assign an image.
 
 It avoid the page to load all the combinations therefore it has a huge performance improvement.
 
-- **A filter system to find the right combination. The user can filter the combinations by attributes**
+- **A filter system to help user find combinations. Back Office user can filter the combinations by attributes**
  
 It will help the user to find the right combination quickly.
 

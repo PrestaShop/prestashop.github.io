@@ -54,6 +54,13 @@ It will limit the errors via a colored header and therefore avoid setting up a s
 
 It allows merchants to know at a glance which settings are applied in all shops and which ones have been customized to understand the different behaviors of theirs shops.
 
+#### Experimental features
+
+The version 1.7.8 is introducing the Experimental features so that complex new features can be disabled or hidden by default until considered stable. the Experimental features works as a Feature Flags that can allow developers to deliver small incremental chunks without compromising system stability, which is a common practice in the software world. So on Advanced Parameters > Experimental Features, knowing the risks involved, the developers can enable or disable a feature.
+
+![the new Experimental features page](/assets/images/2021/experimental-features.png)
+
+
 #### Improvements for UI Kit
 #### Product page
 
@@ -64,7 +71,6 @@ See all issues listed in [https://github.com/PrestaShop/PrestaShop/issues/16587]
 - [UI Kit] Improvements and corrections [#17177](https://github.com/PrestaShop/PrestaShop/issues/17177) [#21832](https://github.com/PrestaShop/PrestaShop/issues/21832)
 PRs : [#17253](https://github.com/PrestaShop/PrestaShop/pull/17253) [#22736](https://github.com/PrestaShop/PrestaShop/pull/22736)
 See also : [Adjustement of alert colors, fontsize and buttons contrasts](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
-#### Feature flags
 
 *  [Fix classic theme images width, accessibilty and some lighthouse improvements](https://github.com/PrestaShop/PrestaShop/issues/23352)
 *  [Add TinyMCE mobile theme in the BO](https://github.com/PrestaShop/PrestaShop/issues/23225)

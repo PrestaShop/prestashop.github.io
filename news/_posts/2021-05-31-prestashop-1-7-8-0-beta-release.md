@@ -22,7 +22,7 @@ In the new features: we have the redesign of the translation system that facilit
 
 //Focus on the contribution (stats)
 
-We need the help of all the community to test this version. It integrates more than 1,372 Pull Request merged and 241 bug fixed including 18 major bugs and 4 Topwatchers bugs (issue that are followed by more than 5 people). 
+We need the help of all the community to test this version. It integrates more than 1,372 Pull Request merged and 241 bug fixed including 17 major bugs and 4 Topwatchers bugs (issue that are followed by more than 5 people). 
 
 **Remember, this beta version is pre release software. Do not use it on your production shop!**
 
@@ -94,9 +94,9 @@ See also : Adjustement of alert colors, fontsize and buttons contrasts [#104](ht
 ### **Topwatchers:**
 
 - When a product has a specific price applied and has a discounted by unit, the discount displayed on the product page is false [#16163](https://github.com/PrestaShop/PrestaShop/issues/16163) (Major)
-- When the cache is cleared, an error 500 is displayed [#11105](https://github.com/PrestaShop/PrestaShop/issues/11105)
+- When the cache is cleared, an error 500 is displayed [#11105](https://github.com/PrestaShop/PrestaShop/issues/11105) (Major)
 - Profiler was not compatible with hooks and module [#9659](https://github.com/PrestaShop/PrestaShop/issues/9659)
-- Double click on "Add to cart" on the product page FO freezes the page [#9634](https://github.com/PrestaShop/PrestaShop/issues/9634)
+- Double click on "Add to cart" on the product page FO freezes the page [#9634](https://github.com/PrestaShop/PrestaShop/issues/9634) (Major)
 
 ### Major bugs:
 

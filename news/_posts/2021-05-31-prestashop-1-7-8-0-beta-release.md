@@ -41,15 +41,17 @@ If you find regressions compared to previous versions, please create an [issue o
 
 - Modules using the [new translation system](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/) introduced in 1.7.6 can now distribute their own translation files in the XLF format.
 You can use the export tool to migrate from legacy PHP catalogue to XLF catalogue
-##### New Multistore header
-One of the main difficulties for the merchants using the multistore was to know which store they were configuring in the back-office and this was bringing a lot of configuration errors.
+
 ### Multistore
+
+#### New Multistore header
+One of the main difficulties for the merchants using the multistore was to know which store they were configuring in the back-office and this was bringing a lot of configuration errors.
 
 - Shops running on Multistore now feature a new Back Office header that makes it easy for merchants to tell which context they are on. Its background color can be customized for each shop or shop group in the Multistore parameters. 
 
 ![The new multistore header](/assets/images/2021/multistore_header.png)
 
-##### New specific settings drop-down
+#### New specific settings drop-down
 
 This drop-down is displayed in the “all shops” context and group contexts. It allows you to see which settings have been customized in one or several specific shops. And therefore, the settings that will not be overridden following a change made in “all shops” or in a group context.
 
@@ -57,14 +59,14 @@ For now, it has been implemented only on the Maintenance page of the back office
 
 ![The new multistore specific setting drop down](/assets/images/2021/Specific_settings_drop_down_multistore.png)
 
-##### Checkboxes
+#### Checkboxes
 
 Checkboxes are displayed in a specific shop context and a group context.
 They are displayed before each field/toggle/parameter and allow merchants to apply specific settings to a store or a group of shops. Merchants just need to select the parameter to modify, bring their modifications, and then save.
 
 For now, they have been implemented only on the Maintenance page of the back office.
 
-##### Linklist module
+#### Linklist module
 
 Many users complained about the [linklist module](https://github.com/PrestaShop/ps_linklist) wasn’t [compatible with the multistore](https://github.com/PrestaShop/PrestaShop/issues/9795), as it was quite annoying for their activity, not being able to have different links in their footer depending of the store.
 
@@ -109,7 +111,7 @@ It will help the user to find the right combination quickly.
 
 ### Front-Office improvements
 
-- Improvements of classic theme images width, accessibility and some [lighthouse](https://developers.google.com/web/tools/lighthouse) KPI [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352)[#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
+- Improvements of classic theme images width, accessibility and some [lighthouse](https://developers.google.com/web/tools/lighthouse) KPI [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352) [#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
 - The implementation of Native Lazy Loading on theme Classic ([see the complete detail of the feature](https://build.prestashop.com/news/journey-to-improve-the-time-to-interactive-metric/)) [#19549](https://github.com/PrestaShop/PrestaShop/issues/19549)
 - The label ‘Out of Stock’ is displayed on Catalog pages [#21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
 - The images on the Product Page can now be swiped on mobile for Classic theme [#20431](https://github.com/PrestaShop/PrestaShop/issues/20431)

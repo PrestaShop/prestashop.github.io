@@ -34,7 +34,7 @@ If you find regressions compared to previous versions, please create an [issue o
 
 ### Translations
 
-- The translation feature has been revamped, adding the possibility to export back office, front office, email, themes, and module translations.
+- The translation feature has been revamped, adding the possibility to export back-office, front-office, email, themes, and module translations.
 
 ![The new translation export](/assets/images/2021/06/translation-export.png)
 
@@ -66,7 +66,7 @@ Checkboxes are displayed in a specific shop context and a group context.
 
 They are displayed before each field/toggle/parameter and allow merchants to apply specific settings to a store or a group of shops. Merchants just need to select the parameter to modify, bring their modifications, and then save.
 
-For now, they have been implemented only in the Maintenance page of the back office.
+For now, they have been implemented only in the Maintenance page of the back-office.
 
 #### Linklist module
 
@@ -82,7 +82,7 @@ The version 1.7.8 introduces Experimental features. With that, complex new featu
 
 ### Back-office Product page
 
-New features and improvements have been shipped for the product page. However, as the product page is a key piece of the Back Office, we are delivering them with extra caution:
+New features and improvements have been shipped for the product page. However, as the product page is a key piece of the back-office, we are delivering them with extra caution:
 - In 1.7.8, the changes are added in an Experimental product page behind a feature flag: back-office user must enable the Experimental page before using it. This should allow the community to try out this improved page in test environments and give us a lot of feedback.
 - In the version after 1.7.8, the new and improved product page will replace the current page.
 
@@ -124,10 +124,10 @@ It will help the user to find the right combination quickly.
 
 ### Back-Office improvements
 
-- TinyMCE mobile theme is enabled in the Back-Office [#23225](https://github.com/PrestaShop/PrestaShop/issues/23225)
+- TinyMCE mobile theme is enabled in the back-office [#23225](https://github.com/PrestaShop/PrestaShop/issues/23225)
 - The overrides active in a shop are displayed in the Informations tab [#21368](https://github.com/PrestaShop/PrestaShop/issues/21368)
 - A new order internal note is available in the Order View Page [#14753](https://github.com/PrestaShop/PrestaShop/issues/14753)
-- Back Office users can upload custom avatars [#18653](https://github.com/PrestaShop/PrestaShop/issues/18653)
+- Back-office users can upload custom avatars [#18653](https://github.com/PrestaShop/PrestaShop/issues/18653)
 
 ## Notable fixes
 
@@ -182,8 +182,8 @@ It will help the user to find the right combination quickly.
 - Apply [PHPStan](https://phpstan.org/) level 4 [#16471](https://github.com/PrestaShop/PrestaShop/issues/16471)
 - Use a custom PHPStan extension for PrestaShop [#22728](https://github.com/PrestaShop/PrestaShop/issues/22728)
 - Apply ESLint to themes and Classic Theme folders [#20080](https://github.com/PrestaShop/PrestaShop/pull/20080)
-- Apply ESLint to default Back Office Theme [#22998](https://github.com/PrestaShop/PrestaShop/issues/22998)
-- Apply StyleLint to default Back Office Theme [#22885](https://github.com/PrestaShop/PrestaShop/issues/22885)
+- Apply ESLint to default back-office Theme [#22998](https://github.com/PrestaShop/PrestaShop/issues/22998)
+- Apply StyleLint to default back-office Theme [#22885](https://github.com/PrestaShop/PrestaShop/issues/22885)
 
 **Theme**
 - Remove microdata in HTML flow and replace by JSON-LD for Classic theme [#22867](https://github.com/PrestaShop/PrestaShop/issues/22867)
@@ -194,8 +194,8 @@ It will help the user to find the right combination quickly.
 **Other**
 - Fix sessions cookies SameSite bug [#22711](https://github.com/PrestaShop/PrestaShop/issues/22711)
 - Enabled High DPI support in ImageRetriever [#19798](https://github.com/PrestaShop/PrestaShop/issues/19798)
-- Make the Back Office menu translatable through the translation interface and fix many translation problems when installing other languages [#9762](https://github.com/PrestaShop/PrestaShop/issues/9762)
-- There is no more legacy Back Office service container, the Symfony container is now available everywhere: [#14995](https://github.com/PrestaShop/PrestaShop/issues/14995)
+- Make the back-office menu translatable through the translation interface and fix many translation problems when installing other languages [#9762](https://github.com/PrestaShop/PrestaShop/issues/9762)
+- There is no more legacy back-office service container, the Symfony container is now available everywhere: [#14995](https://github.com/PrestaShop/PrestaShop/issues/14995)
 - New Webservices endpoint to manage and download Attachments [#12728](https://github.com/PrestaShop/PrestaShop/pull/12728)
 - The UI Kit source files are now imported [#18396](https://github.com/PrestaShop/PrestaShop/pull/18396)
 - Update jQuery from 3.4.1 to 3.5.1 on default BO theme [#23122](https://github.com/PrestaShop/PrestaShop/pull/23122)
@@ -246,25 +246,25 @@ If you have any questions about the version and its features, feel free to share
 
 ## Known issues 
 
-- [When the catalog is exported the metadata is missing](https://github.com/PrestaShop/PrestaShop/issues/24716) 
-- [When reducing the screen in the order page, the icon of error, confirmation, warning messages is broken](https://github.com/PrestaShop/PrestaShop/issues/24695) 
-- [An error is displayed in the console when adding a discount on the Add New Order Page](https://github.com/PrestaShop/PrestaShop/issues/24556) 
-- [On the Add new Order page when I change the product quantity, the page freezes](https://github.com/PrestaShop/PrestaShop/issues/24554) 
-- [When we add an order note with invalid data, an update successful alert is displayed](https://github.com/PrestaShop/PrestaShop/issues/24534) 
-- [When adding a product into a new invoice in the Order Page, the block product new invoice info is not displayed](https://github.com/PrestaShop/PrestaShop/issues/24533) 
+- [When the catalog is exported the metadata is missing](https://github.com/PrestaShop/PrestaShop/issues/24716)
+- [When reducing the screen in the order page, the icon of error, confirmation, warning messages is broken](https://github.com/PrestaShop/PrestaShop/issues/24695)
+- [An error is displayed in the console when adding a discount on the Add New Order Page](https://github.com/PrestaShop/PrestaShop/issues/24556)
+- [On the Add new Order page when I change the product quantity, the page freezes](https://github.com/PrestaShop/PrestaShop/issues/24554)
+- [When we add an order note with invalid data, an update successful alert is displayed](https://github.com/PrestaShop/PrestaShop/issues/24534)
+- [When adding a product into a new invoice in the Order Page, the block product new invoice info is not displayed](https://github.com/PrestaShop/PrestaShop/issues/24533)
 - [The Invoice details on the Order Preview is missing the address mail of the customer](https://github.com/PrestaShop/PrestaShop/issues/24482) 
 - [When Adding a new theme, an error 404 is displayed in the console](https://github.com/PrestaShop/PrestaShop/issues/24468) 
-- [When the client uses another address for the invoice as a guest, we are redirected to the Information step instead of the Shipping method step](https://github.com/PrestaShop/PrestaShop/issues/24465) 
-- [When an account is created, an exception is displayed when the first name and/or last name fields contain invalid characters](https://github.com/PrestaShop/PrestaShop/issues/24464) 
-- [When browsing a disabled category, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/24370) 
-- [The scrollbar is missing in the new multistore dropdown](https://github.com/PrestaShop/PrestaShop/issues/24333) 
-- [The warning message is empty when we try to remove a customer from a specific price](https://github.com/PrestaShop/PrestaShop/issues/24142) 
-- [The summary and description fields of the Product Page form allow more characters than the defined limit](https://github.com/PrestaShop/PrestaShop/issues/24131) 
-- [When running a CLI command prestashop:update:sql-upgrade-file-hooks-listing and prestashop:update:configuration-file-hooks-listing, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/24023) 
-- [The new Multistore header is not displayed on Product Add / Edit page](https://github.com/PrestaShop/PrestaShop/issues/23937) 
-- [When modifying a translation of Email Body, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/23878) 
-- [When searching for a translation through the interface, the « leaves » of the tree that do not include the searched term are not disabled](https://github.com/PrestaShop/PrestaShop/issues/23876) 
-- [An error is displayed in the browser console when creating a category](https://github.com/PrestaShop/PrestaShop/issues/23365) 
-- [Cannot add an official currency to a non-official language from the CLDR](https://github.com/PrestaShop/PrestaShop/issues/22545) 
-- [The block to promote the discounts is removed after adding a cart rule on Checkout](https://github.com/PrestaShop/PrestaShop/issues/21961) 
-- [The Menu Page should be disabled in the Back-Office](https://github.com/PrestaShop/PrestaShop/issues/21107) 
+- [When the client uses another address for the invoice as a guest, we are redirected to the Information step instead of the Shipping method step](https://github.com/PrestaShop/PrestaShop/issues/24465)
+- [When an account is created, an exception is displayed when the first name and/or last name fields contain invalid characters](https://github.com/PrestaShop/PrestaShop/issues/24464)
+- [When browsing a disabled category, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/24370)
+- [The scrollbar is missing in the new multistore dropdown](https://github.com/PrestaShop/PrestaShop/issues/24333)
+- [The warning message is empty when we try to remove a customer from a specific price](https://github.com/PrestaShop/PrestaShop/issues/24142)
+- [The summary and description fields of the Product Page form allow more characters than the defined limit](https://github.com/PrestaShop/PrestaShop/issues/24131)
+- [When running a CLI command prestashop:update:sql-upgrade-file-hooks-listing and prestashop:update:configuration-file-hooks-listing, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/24023)
+- [The new Multistore header is not displayed on Product Add / Edit page](https://github.com/PrestaShop/PrestaShop/issues/23937)
+- [When modifying a translation of Email Body, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/23878)
+- [When searching for a translation through the interface, the « leaves » of the tree that do not include the searched term are not disabled](https://github.com/PrestaShop/PrestaShop/issues/23876)
+- [An error is displayed in the browser console when creating a category](https://github.com/PrestaShop/PrestaShop/issues/23365)
+- [Cannot add an official currency to a non-official language from the CLDR](https://github.com/PrestaShop/PrestaShop/issues/22545)
+- [The block to promote the discounts is removed after adding a cart rule on Checkout](https://github.com/PrestaShop/PrestaShop/issues/21961)
+- [The Menu Page should be disabled in the Back-Office](https://github.com/PrestaShop/PrestaShop/issues/21107)

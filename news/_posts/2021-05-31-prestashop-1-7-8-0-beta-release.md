@@ -79,7 +79,7 @@ The version 1.7.8 is introducing the Experimental features. With that, complex n
 
 New features and improvements have been shipped for the product page. However, as the product page is a key piece of the Back Office, we are delivering them with extra caution:
 - In 1.7.8, the changes are added in an Experimental product page behind a feature flag: Back Office user must enable the Experimental page before using it. This should allow the community to try out this improved page in test environments and give us a lot of feedback.
-- In the version after 1.7.8, the new and improved product page will replace the current page.
+- In the version following the 1.7.8, the new and improved product page will replace the current page.
 
 This 2-step delivery aims to ensure the stability of the changes before they are made definitive.
 

@@ -146,37 +146,45 @@ It will help the user to find the right combination quickly.
 
 - `.docker` folder should not be inside release zip [#22233](https://github.com/PrestaShop/PrestaShop/issues/22233)
 
+
 ### Notable technical improvements
 
 **Hooks**
 - New hooks into Presenters, allowing to enrich the data built by these services [#11125](https://github.com/PrestaShop/PrestaShop/issues/11125)
-- Ability to enable and disable Hooks [#20848](https://github.com/PrestaShop/PrestaShop/issues/20848)
-- Hook for modifying TinyMCE [#19408](https://github.com/PrestaShop/PrestaShop/issues/19408)
-
-- Remove microdata in HTML flow and replace by JSON-LD for Classic theme [#22867](https://github.com/PrestaShop/PrestaShop/issues/22867)
-- Introduce phpstan extension for PrestaShop [#22728](https://github.com/PrestaShop/PrestaShop/issues/22728)
--  Fix sessions cookies SameSite bug [#22711](https://github.com/PrestaShop/PrestaShop/issues/22711)
-- There is no more legacy Back Office service container, the Symfony container is now available everywhere: [#14995](https://github.com/PrestaShop/PrestaShop/issues/14995)
+- New hook to control TinyMCE configuration [#19408](https://github.com/PrestaShop/PrestaShop/issues/19408)
 - New hooks for cart modal - crosseling and promotion [#17709](https://github.com/PrestaShop/PrestaShop/issues/17709)
-- Introduce PHPStan level 4 [#16471](https://github.com/PrestaShop/PrestaShop/issues/16471)
-- Enabled High DPI support in ImageRetriever [#19798](https://github.com/PrestaShop/PrestaShop/issues/19798)
+- Ability to enable and disable Hooks [#20848](https://github.com/PrestaShop/PrestaShop/issues/20848)
 - Allow override of checkoutProcess construction [#19848](https://github.com/PrestaShop/PrestaShop/issues/19848)
-- Make the Back Office menu translatable through the translation interface and fix many translation problems when installing other languages [#9762](https://github.com/PrestaShop/PrestaShop/issues/9762)
-- New Webservices endpoint to manage and download Attachments [#12728](https://github.com/PrestaShop/PrestaShop/pull/12728)
-- CSS classes / element attributes selectors now prefixed by `js-` [#14346](https://github.com/PrestaShop/PrestaShop/issues/14346)
-- The UI Kit source files are now imported [#18396](https://github.com/PrestaShop/PrestaShop/pull/18396)
+
+**Tooling**
+- Introduce phpstan extension for PrestaShop [#22728](https://github.com/PrestaShop/PrestaShop/issues/22728)
+- Introduce PHPStan level 4 [#16471](https://github.com/PrestaShop/PrestaShop/issues/16471)
+- Apply ESLint to themes and Classic Theme folders [#20080](https://github.com/PrestaShop/PrestaShop/pull/20080)
 - Apply ESLint to default Back Office Theme [#22998](https://github.com/PrestaShop/PrestaShop/issues/22998)
 - Apply StyleLint to default Back Office Theme [#22885](https://github.com/PrestaShop/PrestaShop/issues/22885)
+
+**Theme**
+- Remove microdata in HTML flow and replace by JSON-LD for Classic theme [#22867](https://github.com/PrestaShop/PrestaShop/issues/22867)
+- CSS classes / element attributes selectors now prefixed by `js-` [#14346](https://github.com/PrestaShop/PrestaShop/issues/14346)
 - Add selectors mapping so themes can override it [#20002](https://github.com/PrestaShop/PrestaShop/pull/20002)
-- Add ESLint to themes and Classic Theme folders [#20080](https://github.com/PrestaShop/PrestaShop/pull/20080)
+- Update jQuery from 3.4.1 to 3.5.1 [#23122](https://github.com/PrestaShop/PrestaShop/pull/23122)
+
+**Other**
+- Fix sessions cookies SameSite bug [#22711](https://github.com/PrestaShop/PrestaShop/issues/22711)
+- Enabled High DPI support in ImageRetriever [#19798](https://github.com/PrestaShop/PrestaShop/issues/19798)
+- Make the Back Office menu translatable through the translation interface and fix many translation problems when installing other languages [#9762](https://github.com/PrestaShop/PrestaShop/issues/9762)
+- There is no more legacy Back Office service container, the Symfony container is now available everywhere: [#14995](https://github.com/PrestaShop/PrestaShop/issues/14995)
+- New Webservices endpoint to manage and download Attachments [#12728](https://github.com/PrestaShop/PrestaShop/pull/12728)
+- The UI Kit source files are now imported [#18396](https://github.com/PrestaShop/PrestaShop/pull/18396)
+- Update jQuery from 3.4.1 to 3.5.1 on default BO theme [#23122](https://github.com/PrestaShop/PrestaShop/pull/23122)
 - Update BO theme style in legacy pages to match the UI kit [#22435](https://github.com/PrestaShop/PrestaShop/issues/22435)
-- Update jQuery from 3.4.1 to 3.5.1 on Classic, FO core and default BO theme [#23122](https://github.com/PrestaShop/PrestaShop/pull/23122)
 - Introduce Javascript component loading through window.prestashop [#20591](https://github.com/PrestaShop/PrestaShop/pull/20591)
 
 
 #### Dependencies and Software compatibility
 
-- Add blockwishlist as native module & Remove archived modules [#23617](https://github.com/PrestaShop/PrestaShop/pull/23617)
+- Add blockwishlist v2.0.0 as native module [#23617](https://github.com/PrestaShop/PrestaShop/pull/23617)
+- Remove archived modules from the ZIP [#23617](https://github.com/PrestaShop/PrestaShop/pull/23617)
 - Update CLDR to latest version 38 (2020-10-28) [#21678](https://github.com/PrestaShop/PrestaShop/issues/21678)
 - Enable use of Composer 2.0 [#20986](https://github.com/PrestaShop/PrestaShop/issues/20986)
 - Enable compatibility for PHP 7.4 [#16477](https://github.com/PrestaShop/PrestaShop/issues/16477)
@@ -206,10 +214,10 @@ Your feedback on this beta is essential. The more regressions you find right now
 
 You must:
 
-- Install this version and explore it, to verify there is no unknown regression compared to the 1.7.7 version
-- If you develop modules or themes, try them out with this version
+- Install it and test that there is no regression compared to the 1.7.7 version
+- If you develop modules or themes, test them on this version
 - Test the auto-upgrade plugin
-- [Report found regressions on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read how to [report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
+- [Report regressions on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read how to [report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
 - Fix regressions by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
 
 ## Known issues 
@@ -236,3 +244,4 @@ You must:
 - [Cannot add an official currency to a non-official language from the CLDR](https://github.com/PrestaShop/PrestaShop/issues/22545) 
 - [The block to promote the discounts is removed after adding a cart rule on Checkout](https://github.com/PrestaShop/PrestaShop/issues/21961) 
 - [The Menu Page should be disabled in the Back-Office](https://github.com/PrestaShop/PrestaShop/issues/21107) 
+

@@ -60,7 +60,7 @@ The version 1.7.8 is introducing the Experimental features so that complex new f
 
 ![the new Experimental features page](/assets/images/2021/experimental-features.png)
 
-#### Product page
+#### Back Office Product page
 
 The new features brought to the page are made available only through the Experimental feature page to let the community test this page only in test environments to give us maximum feedback. This page, being one of the main pages of PrestaShop, has been delivered into a feature flag to assure its stability before replacing the old page.
 

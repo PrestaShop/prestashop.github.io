@@ -40,36 +40,56 @@ If you find regressions compared to previous versions, please create an [issue o
 
 
 - Modules using the [new translation system](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/) introduced in 1.7.6 can now distribute their own translation files in the XLF format.
-You can use the export tool to migrate from legacy PHP catalogue to XLF catalogue
+Users can use the export tool to migrate from legacy PHP catalogue to XLF catalogue
 
-One of the main difficulties for the merchants using the multistore was to know which store they were configuring in the back-office and this was bringing a lot of configuration errors.
 ### Multistore
 
-- Shops running on Multistore now feature a new Back Office header that makes it easy for merchants to tell which context they are on. Its background color can be customized for each shop or shop group in the Multistore parameters. 
+#### New Multistore header
+
+One of the main difficulties for the merchants using the multistore was to know which store they were configuring in the back-office and this was bringing a lot of configuration errors.
+
+This is why a new back-office header has been added. Its color can be customized for each shop or group of shop(s) in the multistore parameters. It makes it easier for the merchants to know which shop or group they are configuring and therefore avoid configuration mistakes.
 
 ![The new multistore header](/assets/images/2021/06/multistore_header.png)
 
-- Only on the maintenance page for now, a drop-down list allows the merchant to view the shops list and find out if the page has inherited the group setting or has been customized.
+#### New specific settings drop-down
+
+This drop-down is displayed in the "all shops" context and group contexts. It allows the user to see which settings have been customized in one or several specific shops. Therefore the settings that will not be overridden following a change made in "all shops" or in a group context are easier to spot.
+
+For now, it has been implemented only in the Maintenance page of the back-office.
 
 ![The new multistore specific setting drop down](/assets/images/2021/06/Specific_settings_drop_down_multistore.png)
 
-It allows merchants to know at a glance which settings are applied in all shops and which ones have been customized to understand the different behaviors of theirs shops.
+#### Checkboxes
+
+Checkboxes are displayed in a specific shop context and a group context.
+
+They are displayed before each field/toggle/parameter and allow merchants to apply specific settings to a store or a group of shops. Merchants just need to select the parameter to modify, bring their modifications, and then save.
+
+For now, they have been implemented only in the Maintenance page of the back office.
+
+#### Linklist module
+
+Many users reported that the [linklist module](https://github.com/PrestaShop/ps_linklist) was not [compliant with multistore](https://github.com/PrestaShop/PrestaShop/issues/9795), as it was quite important for their activity to be able to feature different links in the footer depending on the shop.
+
+This is why it was decided to make a new version (v5.0.0) of this module to make it [compatible with multistore](https://github.com/PrestaShop/ps_linklist/pull/114) and it was achieved thanks to the great work of [Krystian Podemski](https://github.com/kpodemski) :pray:
 
 ### Experimental features
 
-The version 1.7.8 is introducing the Experimental features so that complex new features can be disabled or hidden by default until considered stable. Experimental features, also known as feature flags, allow developers to deliver small incremental chunks without compromising the system stability, which is a common practice in the software world. So on Advanced Parameters > Experimental Features, knowing the risks involved, the developers can enable or disable an experimental feature.
+The version 1.7.8 introduces Experimental features. With that, complex new features can be disabled or hidden by default until they are considered stable. Experimental features also called "feature flags", allow developers to deliver small incremental improvements without compromising the system stability, which is a common practice in the software world. Developers or experienced users can enable or disable an experimental feature in Advanced Parameters > Experimental Features, knowing the risks involved.
 
 ![The new Experimental features page](/assets/images/2021/06/experimental-features.png)
 
-### Back Office Product page
+### Back-office Product page
 
 New features and improvements have been shipped for the product page. However, as the product page is a key piece of the Back Office, we are delivering them with extra caution:
-- In 1.7.8, the changes are added in an Experimental product page behind a feature flag: Back Office user must enable the Experimental page before using it. This should allow the community to try out this improved page in test environments and give us a lot of feedback.
+- In 1.7.8, the changes are added in an Experimental product page behind a feature flag: back-office user must enable the Experimental page before using it. This should allow the community to try out this improved page in test environments and give us a lot of feedback.
 - In the version after 1.7.8, the new and improved product page will replace the current page.
 
 This 2-step delivery aims to ensure the stability of the changes before they are made definitive.
 
 The new experimental product page includes:
+
 - **A bulk suppression in the image manager**
 
 It allows the user to remove images from the product easily (especially useful when the product features a large number of images). 
@@ -80,9 +100,9 @@ It allows the user to avoid having to remove then add then re-assign an image.
 
 - **A new pagination on the list of combinations**
 
-The current product page loads every combination of the product, even if there are hundreds of them, which can make the page very slow. The new pagination allows loading only a relevant number of combinations therefore it has a huge performance improvement.
+The current product page loads every combination of the product, even if there are hundreds of them, which can make the page very slow. The new pagination allows loading only a relevant number of combinations providing a nice performance improvement.
 
-- **A filter system to help user find combinations. Back Office user can filter the combinations by attributes**
+- **A filter system to help user find combinations. Back-office user can filter the combinations by attributes**
  
 It will help the user to find the right combination quickly.
 

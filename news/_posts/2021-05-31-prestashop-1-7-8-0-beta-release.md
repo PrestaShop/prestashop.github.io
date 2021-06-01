@@ -20,7 +20,7 @@ This version includes many features and bug fixes, we count on you to test the B
 
 Main new features are: the redesign of the translation system that facilitates the export and the translation of your modules and themes, a new header for multistore allowing to configure the different stores more easily and quickly, and many other improvements.
 
-With more than 1,372 merged Pull Requests and 241 bug fixes, including 17 major and 4 Topwatcher (issues that are followed by more than 5 people), this is one of our biggest releases yet!
+With more than 1,340 merged Pull Requests and 242 bug fixes, including 15 major and 5 Topwatcher (issues that are followed by more than 5 people), this is one of our biggest releases yet!
 
 Also, a big thank you to our 163 contributors without whom we would not have had this beautiful version. And a warm welcome to the 93 new contributors for their first contribution.
 

@@ -32,7 +32,7 @@ With more than 1,372 merged Pull Requests and 241 bug fixes, including 17 major 
 
 - The translation feature has been revamped, adding the possibility to export back office, front office, email, themes, and module translations.
 
-![the new translation export](/assets/images/2021/translation-export.png)
+![The new translation export](/assets/images/2021/translation-export.png)
 
 
 - Modules using the [new translation system](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/) introduced in 1.7.6 can now distribute their own translation files in the XLF format.

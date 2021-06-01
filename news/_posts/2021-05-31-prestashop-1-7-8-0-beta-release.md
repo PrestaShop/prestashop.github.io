@@ -16,15 +16,15 @@ tags:
 The first Beta version for PrestaShop 1.7.8.0 is now ready for you to test!
 
 We are very happy to announce today the release of the beta version of 1.7.8.
-This version includes many features and bug fixes, we count on you to test its every nook and cranny and report any bugs you encounter.
+This version includes many features and bug fixes, we count on you to test every nook and cranny and report any bugs you encounter.
 
 In the new features: we have the redesign of the translation system that facilitates export and translation of your modules and themes, a new custom header for multistore fans and many other improvements.
 
 //Focus on the contribution (stats)
 
-We need the help of all the community to test this version. It integrates more than 1,372 Pull Request merged and 241 bug fixed including 17 major bugs and 4 Topwatchers bugs (issue that are followed by more than 5 people). 
+We need the help of all the community to test this version. It integrates more than 1,372 Pull Request merged and 241 bugs fixed including 17 major bugs and 4 Topwatchers bugs (an issue that are followed by more than 5 people). 
 
-**Remember, this beta version is pre release software. Do not use it on your production shop!**
+**Remember, this beta version is pre-release software. Do not use it in your production shop!**
 
 ## What’s new?
 
@@ -48,7 +48,7 @@ We need the help of all the community to test this version. It integrates more t
 
 It will limit the errors via a colored header and therefore avoid setting up a store thinking it is on another one.
 
-- Only on the maintenance page for now, a drop-down list allows the merchant to view the list of shop and see if the page has inherited the group setting or has been customized.
+- Only on the maintenance page for now, a drop-down list allows the merchant to view the list of the shop and see if the page has inherited the group setting or has been customized.
 
 ![the new multistore specific setting drop down](/assets/images/2021/Specific_settings_drop_down_multistore.png)
 
@@ -56,18 +56,18 @@ It allows merchants to know at a glance which settings are applied in all shops 
 
 #### Experimental features
 
-The version 1.7.8 is introducing the Experimental features so that complex new features can be disabled or hidden by default until considered stable. the Experimental features works as a Feature Flags that can allow developers to deliver small incremental chunks without compromising system stability, which is a common practice in the software world. So on Advanced Parameters > Experimental Features, knowing the risks involved, the developers can enable or disable a feature.
+The version 1.7.8 is introducing the Experimental features so that complex new features can be disabled or hidden by default until considered stable. The Experimental features works as a Feature Flags that can allow developers to deliver small incremental chunks without compromising system stability, which is a common practice in the software world. So on Advanced Parameters > Experimental Features, knowing the risks involved, the developers can enable or disable a feature.
 
 ![the new Experimental features page](/assets/images/2021/experimental-features.png)
 
 #### Product page
 
-The new features brought to the page are made available only through the Experimental feature page to let the community test this page only in test environments to give us maximum feedback. This page, being one of the main page of PrestaShop, has been delivered into a feature flag to assure its stability before replacing the old page.
+The new features brought to the page are made available only through the Experimental feature page to let the community test this page only in test environments to give us maximum feedback. This page, being one of the main pages of PrestaShop, has been delivered into a feature flag to assure its stability before replacing the old page.
 
 The new page includes:
 - **A bulk suppression in the image manager**
 
-It allows the user to remove images from product easily specially when the product contains a lot of images. 
+It allows the user to remove images from the product easily especially when the product contains a lot of images. 
 
 - **The possibility to replace an image**
 
@@ -77,38 +77,38 @@ It avoids the user to remove and add an image then assign the image to the produ
 
 It avoid the page to load all the combinations therefore it has a huge performance improvement.
 
-- **A filter system to find the right combination. The user can filter the combinations by attributs**
+- **A filter system to find the right combination. The user can filter the combinations by attributes**
  
-It will helps the user to find the right combination quickly.
+It will help the user to find the right combination quickly.
 
 #### Improvements of the UI Kit
 
-- PrestaShop back office UI Kit has been improved in order to have a Solid Design System with  ajustement of alert colors, fontsize, buttons contrasts and a enhancement of the responsive. [#16587](https://github.com/PrestaShop/PrestaShop/issues/16587) [#22358](https://github.com/PrestaShop/PrestaShop/issues/22358) [#104](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
+- PrestaShop back-office UI Kit has been improved to have a Solid Design System with adjustment of alert colors, font size, buttons contrasts and an enhancement of the responsive. [#16587](https://github.com/PrestaShop/PrestaShop/issues/16587) [#22358](https://github.com/PrestaShop/PrestaShop/issues/22358) [#104](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
 
 ![the new mobile improvements](/assets/images/2021/mobile-improvements.png)
 
 
 #### Front-Office improvements
 
-- Improvements of classic theme images width, accessibilty and some lighthouse KPI [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352)[#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
-- The implementaton of Native Lazy Loading on theme classic ([see the complete detail of the feature](https://build.prestashop.com/news/journey-to-improve-the-time-to-interactive-metric/))[#19549](https://github.com/PrestaShop/PrestaShop/issues/19549)
+- Improvements of classic theme images width, accessibility and some lighthouse KPI [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352)[#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
+- The implementation of Native Lazy Loading on theme classic ([see the complete detail of the feature](https://build.prestashop.com/news/journey-to-improve-the-time-to-interactive-metric/))[#19549](https://github.com/PrestaShop/PrestaShop/issues/19549)
 - The label ‘Out of Stock’ is displayed on Catalog pages [#21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
-- Product page images can now swipable on mobile for classic theme [#20431](https://github.com/PrestaShop/PrestaShop/issues/20431)
+- The images on the Product Page can now swipe on mobile for classic theme [#20431](https://github.com/PrestaShop/PrestaShop/issues/20431)
 - The subcategories are displayed on Categories pages [#10407](https://github.com/PrestaShop/PrestaShop/issues/10407)
 
 #### Back-Office improvements
 
 - TinyMCE mobile theme is compatible in the Back-Office [#23225](https://github.com/PrestaShop/PrestaShop/issues/23225)
 - The overrides done in the shop are displayed in the Informations tab [#21368](https://github.com/PrestaShop/PrestaShop/issues/21368)
-- A new order internal notes is available in the Order View Page [#14753](https://github.com/PrestaShop/PrestaShop/issues/14753)
-- Allow users have their own avatars [#18653](https://github.com/PrestaShop/PrestaShop/issues/18653)
+- A new order internal note is available in the Order View Page [#14753](https://github.com/PrestaShop/PrestaShop/issues/14753)
+- Allow users have their avatars [#18653](https://github.com/PrestaShop/PrestaShop/issues/18653)
 - Redirection to Not Found Page for 404 pages  [#20410](https://github.com/PrestaShop/PrestaShop/pull/20410)
 
 ### Notable fixes
 
 ### **Topwatchers:**
 
-- When a product has a specific price applied and has a discounted by unit, the discount displayed on the product page is false [#16163](https://github.com/PrestaShop/PrestaShop/issues/16163) (Major)
+- When a product has a specific price applied and has discounted by unit, the discount displayed on the product page is false [#16163](https://github.com/PrestaShop/PrestaShop/issues/16163) (Major)
 - When the cache is cleared, an error 500 is displayed [#11105](https://github.com/PrestaShop/PrestaShop/issues/11105) (Major)
 - Profiler was not compatible with hooks and module [#9659](https://github.com/PrestaShop/PrestaShop/issues/9659)
 - Double click on "Add to cart" on the product page FO freezes the page [#9634](https://github.com/PrestaShop/PrestaShop/issues/9634) (Major)
@@ -118,14 +118,14 @@ It will helps the user to find the right combination quickly.
 **Front-Office**
 
 - Guess Order Tracking redirects to shop Homepage when the Friendly URLs are disabled [#20194](https://github.com/PrestaShop/PrestaShop/issues/20194)
-- An error is error is displayed on the checkout if Legal compliance module is installed [#12509](https://github.com/PrestaShop/PrestaShop/issues/12509)
-- Checkout slowdown when many orders are made with Guest account [#16584](https://github.com/PrestaShop/PrestaShop/issues/16584)
+- An error is displayed on the checkout if the Legal compliance module is installed [#12509](https://github.com/PrestaShop/PrestaShop/issues/12509)
+- Checkout slowdown when many orders are made with a Guest account [#16584](https://github.com/PrestaShop/PrestaShop/issues/16584)
 - Ecotax is displayed tax excl instead of tax incl in FO [#18835](https://github.com/PrestaShop/PrestaShop/issues/18835)
 - Confirmation button on Checkout should be disabled if Terms and conditions are not approved [#19161](https://github.com/PrestaShop/PrestaShop/issues/19161)
 
 **Back-Office**
 
-- An exception is thrown when adding invalid parameter to Language form and "No picture" image [#22500](https://github.com/PrestaShop/PrestaShop/issues/22500)
+- An exception is thrown when adding an invalid parameter to the Language form and "No picture" image [#22500](https://github.com/PrestaShop/PrestaShop/issues/22500)
 - In Back-Office, some of the js parts rely on form field's ids and attributes that are modified since 1.7.8 [#21819](https://github.com/PrestaShop/PrestaShop/issues/21819)
 - The number of characters is only checked by the Front-End [#19505](https://github.com/PrestaShop/PrestaShop/issues/19505)
 - Possibility to create catalog price rule with a percentage value greater than 100% [#19013](https://github.com/PrestaShop/PrestaShop/issues/19013)
@@ -148,12 +148,12 @@ It will helps the user to find the right combination quickly.
 - Ability to enable and disable Hooks [#20848](https://github.com/PrestaShop/PrestaShop/issues/20848)
 - Hook for modifying TinyMce [#19408](https://github.com/PrestaShop/PrestaShop/issues/19408)
 
-- Remove microdata in html flow and replace by JSON-LD for classic theme [#22867](https://github.com/PrestaShop/PrestaShop/issues/22867)
-- Automatize some of our rules with PHPStan : Introduce phpstan extension [#22728](https://github.com/PrestaShop/PrestaShop/issues/22728)
+- Remove microdata in HTML flow and replace by JSON-LD for classic theme [#22867](https://github.com/PrestaShop/PrestaShop/issues/22867)
+- Automatize some of our rules with PHPStan: Introduce phpstan extension [#22728](https://github.com/PrestaShop/PrestaShop/issues/22728)
 - Problem with sessions cookies for SameSite issue [#22711](https://github.com/PrestaShop/PrestaShop/issues/22711)
-- Two service containers coexist in back office [#14995](https://github.com/PrestaShop/PrestaShop/issues/14995)
+- Two service containers coexist in the back-office [#14995](https://github.com/PrestaShop/PrestaShop/issues/14995)
 - Add hooks to cart modal - crosseling and promotion [#17709](https://github.com/PrestaShop/PrestaShop/issues/17709)
-- Use static analyser to improve code quality [#16471](https://github.com/PrestaShop/PrestaShop/issues/16471)
+- Use static analyzer to improve code quality [#16471](https://github.com/PrestaShop/PrestaShop/issues/16471)
 - No High DPI support in ImageRetriever [#19798](https://github.com/PrestaShop/PrestaShop/issues/19798)
 - Allow override of checkoutProcess construction #19848 [#19848](https://github.com/PrestaShop/PrestaShop/issues/19848)
 - BO Menu translation [#9762](https://github.com/PrestaShop/PrestaShop/issues/9762) 

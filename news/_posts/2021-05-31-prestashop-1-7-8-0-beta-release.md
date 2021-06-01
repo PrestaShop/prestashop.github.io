@@ -36,7 +36,7 @@ If you find regressions compared to previous versions, please create an [issue o
 
 - The translation feature has been revamped, adding the possibility to export back office, front office, email, themes, and module translations.
 
-![The new translation export](/assets/images/2021/translation-export.png)
+![The new translation export](/assets/images/2021/06/translation-export.png)
 
 
 - Modules using the [new translation system](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/) introduced in 1.7.6 can now distribute their own translation files in the XLF format.
@@ -47,11 +47,11 @@ One of the main difficulties for the merchants using the multistore was to know 
 
 - Shops running on Multistore now feature a new Back Office header that makes it easy for merchants to tell which context they are on. Its background color can be customized for each shop or shop group in the Multistore parameters. 
 
-![The new multistore header](/assets/images/2021/multistore_header.png)
+![The new multistore header](/assets/images/2021/06/multistore_header.png)
 
 - Only on the maintenance page for now, a drop-down list allows the merchant to view the shops list and find out if the page has inherited the group setting or has been customized.
 
-![The new multistore specific setting drop down](/assets/images/2021/Specific_settings_drop_down_multistore.png)
+![The new multistore specific setting drop down](/assets/images/2021/06/Specific_settings_drop_down_multistore.png)
 
 It allows merchants to know at a glance which settings are applied in all shops and which ones have been customized to understand the different behaviors of theirs shops.
 
@@ -59,7 +59,7 @@ It allows merchants to know at a glance which settings are applied in all shops 
 
 The version 1.7.8 is introducing the Experimental features so that complex new features can be disabled or hidden by default until considered stable. Experimental features, also known as feature flags, allow developers to deliver small incremental chunks without compromising the system stability, which is a common practice in the software world. So on Advanced Parameters > Experimental Features, knowing the risks involved, the developers can enable or disable an experimental feature.
 
-![The new Experimental features page](/assets/images/2021/experimental-features.png)
+![The new Experimental features page](/assets/images/2021/06/experimental-features.png)
 
 ### Back Office Product page
 
@@ -90,7 +90,7 @@ It will help the user to find the right combination quickly.
 
 - PrestaShop back-office UI Kit has been improved to have a solid Design System with adjustment of alert colors, font size, buttons contrasts, and an enhancement of the responsiveness. [#16587](https://github.com/PrestaShop/PrestaShop/issues/16587) [#22358](https://github.com/PrestaShop/PrestaShop/issues/22358) [#104](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
 
-![the new mobile improvements](/assets/images/2021/mobile-improvements.png)
+![the new mobile improvements](/assets/images/2021/06/mobile-improvements.png)
 
 
 ### Front-Office improvements

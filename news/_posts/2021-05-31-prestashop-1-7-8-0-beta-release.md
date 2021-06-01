@@ -62,32 +62,26 @@ The version 1.7.8 is introducing the Experimental features so that complex new f
 
 #### Product page
 
-#### Improvements for UI Kit
+#### Improvements of the UI Kit
 
-PrestaShop back office UI Kit has been improved in order to have a Solid Design System
+PrestaShop back office UI Kit has been improved in order to have a Solid Design System with  ajustement of alert colors, fontsize, buttons contrasts and a enhancement of the responsive. [#16587](https://github.com/PrestaShop/PrestaShop/issues/16587) [#22358](https://github.com/PrestaShop/PrestaShop/issues/22358) [#104](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
 
-See all issues listed in https://github.com/PrestaShop/PrestaShop/issues/16587 [#16587](https://github.com/PrestaShop/PrestaShop/issues/16587)
+#### Front-Office improvements
 
-- [UI Kit] Improvements and corrections [#17177](https://github.com/PrestaShop/PrestaShop/issues/17177) [#21832](https://github.com/PrestaShop/PrestaShop/issues/21832)
-PRs : [#17253](https://github.com/PrestaShop/PrestaShop/pull/17253) [#22736](https://github.com/PrestaShop/PrestaShop/pull/22736)
-See also : Adjustement of alert colors, fontsize and buttons contrasts [#104](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
-
-*  Fix classic theme images width, accessibilty and some lighthouse improvements [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352)
-*  Add TinyMCE mobile theme in the BO [#23225](https://github.com/PrestaShop/PrestaShop/issues/23225)
-*  Implement Native Lazy Loading on theme classic [#19549](https://github.com/PrestaShop/PrestaShop/issues/19549)
-*  A lot of responsive improvements in the Backoffice [#22358](https://github.com/PrestaShop/PrestaShop/issues/22358) 
-*  Some classic theme improvements (styling and more) [#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
-*  Display ‘Out of Stock’ on Catalog pages [#21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
-*  Ability to enable and disable Hooks [#20848](https://github.com/PrestaShop/PrestaShop/issues/20848)
-*  Hook for modifying TinyMce [#19408](https://github.com/PrestaShop/PrestaShop/issues/19408)
-*  Display the overrides list in the Informations tab [#21368](https://github.com/PrestaShop/PrestaShop/issues/21368)
-*  Product page images should be able to swipe on mobile for classic theme [#20431](https://github.com/PrestaShop/PrestaShop/issues/20431)
-
+- Fix classic theme images width, accessibilty and some lighthouse improvements [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352)
+- The implementaton of Native Lazy Loading on theme classic ([see the benchmark]())[#19549](https://github.com/PrestaShop/PrestaShop/issues/19549)
+- Display ‘Out of Stock’ on Catalog pages [#21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
+- Product page images should be able to swipe on mobile for classic theme [#20431](https://github.com/PrestaShop/PrestaShop/issues/20431)
 - Display subcategories in FO categories pages [#10407](https://github.com/PrestaShop/PrestaShop/issues/10407)
+
+#### Back-Office improvements
+
+- Add TinyMCE mobile theme in the BO [#23225](https://github.com/PrestaShop/PrestaShop/issues/23225)
+- Some classic theme improvements (styling and more) [#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
+- Display the overrides list in the Informations tab [#21368](https://github.com/PrestaShop/PrestaShop/issues/21368)
 - Add order internal notes [#14753](https://github.com/PrestaShop/PrestaShop/issues/14753)
 - Allow users to better handle avatars [#18653](https://github.com/PrestaShop/PrestaShop/issues/18653)
-- Replace Tools::redirect('index.php?controller=404') by Tools::redirect(‘pagenotfound') [#20410](https://github.com/PrestaShop/PrestaShop/pull/20410)
-
+- Redirection to Not Found Page for 404 pages  [#20410](https://github.com/PrestaShop/PrestaShop/pull/20410)
 
 ### Notable fixes
 
@@ -128,7 +122,11 @@ See also : Adjustement of alert colors, fontsize and buttons contrasts [#104](ht
 
 ### Notable technical improvements
 
+**Hooks**
 - New hooks into Presenters, allowing to enrich the data built by these services [#11125](https://github.com/PrestaShop/PrestaShop/issues/11125)
+- Ability to enable and disable Hooks [#20848](https://github.com/PrestaShop/PrestaShop/issues/20848)
+- Hook for modifying TinyMce [#19408](https://github.com/PrestaShop/PrestaShop/issues/19408)
+
 - Remove microdata in html flow and replace by JSON-LD for classic theme [#22867](https://github.com/PrestaShop/PrestaShop/issues/22867)
 - Automatize some of our rules with PHPStan : Introduce phpstan extension [#22728](https://github.com/PrestaShop/PrestaShop/issues/22728)
 - Problem with sessions cookies for SameSite issue [#22711](https://github.com/PrestaShop/PrestaShop/issues/22711)

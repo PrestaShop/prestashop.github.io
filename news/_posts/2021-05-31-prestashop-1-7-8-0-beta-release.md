@@ -32,7 +32,7 @@ We need the help of all the community to test this version. It integrates more t
 
 #### Translations
 
-- The translation has been revamped, adding the possibility to export Back-Office, Front-Office, eMail and Modules translations.
+- The translation has been revamped, adding the possibility to export back office, front office, email, and module translations.
 
 ![the new translation export](/assets/images/2021/translation-export.png)
 

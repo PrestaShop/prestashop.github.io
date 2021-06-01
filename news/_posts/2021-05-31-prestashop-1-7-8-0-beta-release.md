@@ -47,8 +47,6 @@ You can use the export tool to migrate from legacy PHP catalogue to XLF catalogu
 
 ![the new multistore header](/assets/images/2021/multistore_header.png)
 
-It will limit the errors via a colored header and therefore avoid setting up a store thinking it is on another one.
-
 - Only on the maintenance page for now, a drop-down list allows the merchant to view the shops list and find out if the page has inherited the group setting or has been customized.
 
 ![the new multistore specific setting drop down](/assets/images/2021/Specific_settings_drop_down_multistore.png)

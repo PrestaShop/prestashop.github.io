@@ -16,13 +16,13 @@ tags:
 The first Beta version of PrestaShop 1.7.8.0 is now ready for you to test!
 
 We are very happy to announce today the release of the beta version of 1.7.8.
-This version includes many features and bug fixes, we count on you to test every nook and cranny and report any bugs you encounter.
+This version includes many features and bug fixes, we count on you to test the Beta and report any bugs you encounter.
 
 The latest features: we have the redesign of the translation system that facilitates export and translation of your modules and themes, a new custom header for multistore fans and many other improvements.
 
-//Focus on the contribution (stats)
-
 With more than 1,372 merged Pull Requests and 241 bug fixes, including 17 major and 4 Topwatcher (issues that are followed by more than 5 people), this is one of our biggest releases yet! We need the help of all the community to test this version.
+
+Also, a big thank you to our 163 contributors with whom we would not have had this beautiful version. And a warm welcome to the 93 new contributors for their first contribution.
 
 **Remember, this beta version is pre-release software and is expected to have bugs. Do not use it in your production shop!**
 
@@ -215,6 +215,8 @@ You must:
 - Test the auto-upgrade plugin
 - [Report regressions on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read how to [report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
 - Fix regressions by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
+
+If you have any questions about the version and its features, feel free to share them on [the PrestaShop open source project's Slack](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg).
 
 ## Known issues 
 

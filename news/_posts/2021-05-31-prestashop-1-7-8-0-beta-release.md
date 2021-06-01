@@ -187,8 +187,6 @@ See the new pages migrated in Symfony, we are now about 65% of the Back-Office p
 - International > Locations > Zones
 - International > Locations > Add new / edit zone
 
-### Core changes
-
 ## Download
 
 You can download PrestaShop 1.7.8.0 beta here:  

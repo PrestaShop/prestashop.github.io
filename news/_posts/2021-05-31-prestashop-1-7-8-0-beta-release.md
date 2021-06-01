@@ -81,7 +81,7 @@ It allows the user to avoid having to remove then add then re-assign an image.
 
 - **A new pagination on the list of combinations**
 
-It avoid the page to load all the combinations therefore it has a huge performance improvement.
+Current pages loads every combinations of the product, even if there are hundred of them, which can make the page very slow. Pagination only loads a relevant number of combinations therefore it has a huge performance improvement.
 
 - **A filter system to help user find combinations. Back Office user can filter the combinations by attributes**
  

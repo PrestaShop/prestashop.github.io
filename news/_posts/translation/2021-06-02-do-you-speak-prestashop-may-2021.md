@@ -15,7 +15,7 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 
 ## Project news
 
-### New 1.7.8 translations are available for translation
+### New 1.7.8 strings are available for translation
 
 The catalog of 1.7.8 translations has recently been added to Crowdin. This means that the completion rate for all projects has slightly decreased. Some projects that used to be 100% translated and validated are no longer complete.
 Translators, proofreaders… your project needs you! Feel free to take a look at the new translations and help your language reach 100%!
@@ -92,7 +92,7 @@ Thank you all for your contribution!
 Korean, Polish, and Czech are 99% translated. Almost there! :muscle: 
 If you would like to contribute to these projects, do not hesitate to [join us on Crowdin](https://crowdin.com/project/prestashop-official). 
 
-Note that Turkish, that appeared in this category last month, is now 100% translated. That’s great, thank you to all the Turkish translators!
+Note that Turkish, that appeared in this category last month, is now 100% translated. That is great, thank you to all the Turkish translators!
 
 ## Languages with the best evolution
 

@@ -101,6 +101,7 @@ It will help the user to find the right combination quickly.
 - The label ‘Out of Stock’ is displayed on Catalog pages [#21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
 - The images on the Product Page can now be swiped on mobile for Classic theme [#20431](https://github.com/PrestaShop/PrestaShop/issues/20431)
 - The subcategories are displayed on Categories pages [#10407](https://github.com/PrestaShop/PrestaShop/issues/10407)
+- Return a 404 response when user visits product page for a product that does not exist [#21330](https://github.com/PrestaShop/PrestaShop/pull/21330/)
 
 #### Back-Office improvements
 
@@ -108,7 +109,6 @@ It will help the user to find the right combination quickly.
 - The overrides done in the shop are displayed in the Informations tab [#21368](https://github.com/PrestaShop/PrestaShop/issues/21368)
 - A new order internal note is available in the Order View Page [#14753](https://github.com/PrestaShop/PrestaShop/issues/14753)
 - Back Office users can upload custom avatars [#18653](https://github.com/PrestaShop/PrestaShop/issues/18653)
-- Return a 404 response when user visits product page for a product that does not exist [#21330](https://github.com/PrestaShop/PrestaShop/pull/21330/)
 
 ### Notable fixes
 

@@ -197,7 +197,7 @@ You can download PrestaShop 1.7.8.0 beta here:
 
 ## How to help test 1.7.8
 
-Your feedback on this beta is essential, the regressions you find right now are as many bugs less on the final version and less patches versions. It also means fewer problems on your (or your customer’s) online store. 
+Your feedback on this beta is essential. The more regressions you find right now, the fewer bugs they will be on the final release, which means fewer patch versions and fewer problems on your (or your customer's) online store. 
 
 You must:
 

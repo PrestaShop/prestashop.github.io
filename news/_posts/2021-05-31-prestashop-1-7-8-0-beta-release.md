@@ -22,7 +22,7 @@ The latest features: we have the redesign of the translation system that facilit
 
 //Focus on the contribution (stats)
 
-We need the help of all the community to test this version. It integrates more than 1,372 Pull Request and 241 bugs fixed including 17 major bugs and 4 Topwatchers bugs (issues that are followed by more than 5 people). 
+With more than 1,372 merged Pull Requests and 241 bug fixes, including 17 major and 4 Topwatcher (issues that are followed by more than 5 people), this is one of our biggest releases yet! We need the help of all the community to test this version.
 
 **Remember, this beta version is pre-release software. Do not use it in your production shop!**
 

@@ -108,7 +108,7 @@ It will help the user to find the right combination quickly.
 - The overrides done in the shop are displayed in the Informations tab [#21368](https://github.com/PrestaShop/PrestaShop/issues/21368)
 - A new order internal note is available in the Order View Page [#14753](https://github.com/PrestaShop/PrestaShop/issues/14753)
 - Back Office users can upload custom avatars [#18653](https://github.com/PrestaShop/PrestaShop/issues/18653)
-- Redirection to Not Found Page for 404 pages  [#20410](https://github.com/PrestaShop/PrestaShop/pull/20410)
+- Return a 404 response when user visits product page for a product that does not exist [#21330](https://github.com/PrestaShop/PrestaShop/pull/21330/)
 
 ### Notable fixes
 

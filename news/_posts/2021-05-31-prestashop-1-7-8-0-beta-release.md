@@ -69,7 +69,7 @@ New features and improvements have been shipped for the product page. However, a
 
 This 2-step delivery aims to ensure the stability of the changes before they are made definitive.
 
-The new page includes:
+The new experimental product page includes:
 - **A bulk suppression in the image manager**
 
 It allows the user to remove images from the product easily (especially useful when the product features a large number of images). 

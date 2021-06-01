@@ -171,7 +171,7 @@ It will help the user to find the right combination quickly.
 - Add ESLint to themes and Classic Theme folders [#20080](https://github.com/PrestaShop/PrestaShop/pull/20080)
 - Update BO theme style in legacy pages to match the UI kit [#22435](https://github.com/PrestaShop/PrestaShop/issues/22435)
 - Update jQuery from 3.4.1 to 3.5.1 on Classic, FO core and default BO theme [#23122](https://github.com/PrestaShop/PrestaShop/pull/23122)
-- Introduce Javascript component loading through window.prestashop (part1) [#20591](https://github.com/PrestaShop/PrestaShop/pull/20591)
+- Introduce Javascript component loading through window.prestashop [#20591](https://github.com/PrestaShop/PrestaShop/pull/20591)
 
 
 #### Dependencies and Software compatibility

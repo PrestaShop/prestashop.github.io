@@ -56,15 +56,37 @@ It allows merchants to know at a glance which settings are applied in all shops 
 
 #### Experimental features
 
-The version 1.7.8 is introducing the Experimental features so that complex new features can be disabled or hidden by default until considered stable. the Experimental features works as a Feature Flags that can allow developers to deliver small incremental chunks without compromising system stability, which is a common practice in the software world. So on Advanced Parameters > Experimental Features, knowing the risks involved, the developers can enable or disable a feature.
+- The version 1.7.8 is introducing the Experimental features so that complex new features can be disabled or hidden by default until considered stable. the Experimental features works as a Feature Flags that can allow developers to deliver small incremental chunks without compromising system stability, which is a common practice in the software world. So on Advanced Parameters > Experimental Features, knowing the risks involved, the developers can enable or disable a feature.
 
 ![the new Experimental features page](/assets/images/2021/experimental-features.png)
 
 #### Product page
 
+- The new features brought to the page are made available only through the Experimental feature page to let the community test this page only in test environments to give us maximum feedback. This page, being one of the main page of PrestaShop, has been delivered into a feature flag to assure its stability before replacing the old page.
+
+The new page includes:
+- Bulk suppression in image manager
+
+It allows the user to remove images from product easily specially when the product contains a lot of images. 
+
+- Replace a image
+
+It avoids the user to remove and add an image then assign the image to the product.
+
+- A new pagination on the  list of combinations
+
+It avoid the page to load all the combinations therefore it has a huge performance improvement.
+
+- A filter system to find the right combination. The user can filter the combinations by attributs
+ 
+It will helps the user to find the right combination quickly.
+
 #### Improvements of the UI Kit
 
-PrestaShop back office UI Kit has been improved in order to have a Solid Design System with  ajustement of alert colors, fontsize, buttons contrasts and a enhancement of the responsive. [#16587](https://github.com/PrestaShop/PrestaShop/issues/16587) [#22358](https://github.com/PrestaShop/PrestaShop/issues/22358) [#104](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
+- PrestaShop back office UI Kit has been improved in order to have a Solid Design System with  ajustement of alert colors, fontsize, buttons contrasts and a enhancement of the responsive. [#16587](https://github.com/PrestaShop/PrestaShop/issues/16587) [#22358](https://github.com/PrestaShop/PrestaShop/issues/22358) [#104](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
+
+![the new mobile improvements](/assets/images/2021/mobile-improvements.png)
+
 
 #### Front-Office improvements
 

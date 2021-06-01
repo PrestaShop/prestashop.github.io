@@ -13,7 +13,7 @@ tags:
  - 1.7.8
 ---
 
-The first Beta version for PrestaShop 1.7.8.0 is now ready for you to test!
+The first Beta version of PrestaShop 1.7.8.0 is now ready for you to test!
 
 We are very happy to announce today the release of the beta version of 1.7.8.
 This version includes many features and bug fixes, we count on you to test every nook and cranny and report any bugs you encounter.

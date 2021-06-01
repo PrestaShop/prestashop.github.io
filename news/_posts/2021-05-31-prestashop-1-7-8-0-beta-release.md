@@ -18,7 +18,7 @@ The first Beta version of PrestaShop 1.7.8.0 is now ready for you to test!
 We are very happy to announce today the release of the beta version of 1.7.8.
 This version includes many features and bug fixes, we count on you to test the Beta and report any bugs you encounter.
 
-The latest features: we have the redesign of the translation system that facilitates export and translation of your modules and themes, a new custom header for multistore fans and many other improvements.
+The latest main new features are: the redesign of the translation system that facilitates the export and the translation of your modules and themes, a new header for the multistore allowing to configure the different stores more easily and quickly, and many other improvements.
 
 With more than 1,372 merged Pull Requests and 241 bug fixes, including 17 major and 4 Topwatcher (issues that are followed by more than 5 people), this is one of our biggest releases yet! We need the help of all the community to test this version.
 

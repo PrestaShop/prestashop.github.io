@@ -31,7 +31,23 @@ We need the help of all the community to test this version. It integrates more t
 ### New features & improvements
 
 #### Translations
+
+
+
 #### Multistore
+
+- The MultiStore feature embeds a new header. The color of the header can be now customizable for a shop or a group shop in the MultiStore parameters. 
+
+![the new multistore header](/assets/images/2021/multistore_header.png)
+
+It will limit the errors via a colored header and therefore avoid setting up a store thinking it is on another one.
+
+- Only on the maintenance page for now, you have the possibility to see if the page has inherited the group setting or has been customized.
+
+![the new multistore specific setting drop down](/assets/images/2021/Specific_settings_drop_down_multistore.png)
+
+It allows merchants to know at a glance which settings are applied in all stores and which ones have been customized.
+
 #### Improvements for UI Kit
 #### Product page
 

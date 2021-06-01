@@ -117,7 +117,8 @@ It will help the user to find the right combination quickly.
 - When Clear cache button was clicked twice, the user would see an error page [#11105](https://github.com/PrestaShop/PrestaShop/issues/11105) (Major)
 - Profiler was not compatible with hooks and module [#9659](https://github.com/PrestaShop/PrestaShop/issues/9659)
 - Double click on "Add to cart" on the product page FO was freezing the page [#9634](https://github.com/PrestaShop/PrestaShop/issues/9634) (Major)
-
+- By default, select the payment method if only one available [#11435](https://github.com/PrestaShop/PrestaShop/issues/11435)
+- Bad translation of back-office menu tabs [#9816](https://github.com/PrestaShop/PrestaShop/issues/9816)
 ### Major bugs:
 
 **Front-Office**

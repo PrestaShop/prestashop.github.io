@@ -125,54 +125,54 @@ It will help the user to find the right combination quickly.
 **Front-Office**
 
 - Guest Order Tracking redirected to shop Homepage when Friendly URLs were disabled [#20194](https://github.com/PrestaShop/PrestaShop/issues/20194)
-- An error is displayed on the checkout if the Legal compliance module is installed [#12509](https://github.com/PrestaShop/PrestaShop/issues/12509)
-- Checkout slowdown when many orders are made with a Guest account [#16584](https://github.com/PrestaShop/PrestaShop/issues/16584)
-- Ecotax is displayed tax excl instead of tax incl in FO [#18835](https://github.com/PrestaShop/PrestaShop/issues/18835)
+- An error was displayed on checkout when Legal compliance module was installed [#12509](https://github.com/PrestaShop/PrestaShop/issues/12509)
+- Checkout slowdown when many orders were made with a Guest account [#16584](https://github.com/PrestaShop/PrestaShop/issues/16584)
+- Ecotax was displayed tax excl. instead of tax incl. [#18835](https://github.com/PrestaShop/PrestaShop/issues/18835)
 - Confirmation button on Checkout should be disabled if Terms and conditions are not approved [#19161](https://github.com/PrestaShop/PrestaShop/issues/19161)
 
 **Back-Office**
 
-- An exception is thrown when adding an invalid parameter to the Language form and "No picture" image [#22500](https://github.com/PrestaShop/PrestaShop/issues/22500)
-- In Back-Office, some of the js parts rely on form field's ids and attributes that are modified since 1.7.8 [#21819](https://github.com/PrestaShop/PrestaShop/issues/21819)
-- The number of characters is only checked by the Front-End [#19505](https://github.com/PrestaShop/PrestaShop/issues/19505)
-- Possibility to create catalog price rule with a percentage value greater than 100% [#19013](https://github.com/PrestaShop/PrestaShop/issues/19013)
-- JS issue when editing an image in TinyMCE [#11011](https://github.com/PrestaShop/PrestaShop/issues/11011)
-- Unit price reset to 0 if you activate/deactivate or duplicate products from the Product List [#10792](https://github.com/PrestaShop/PrestaShop/issues/10792)
-- Issues when installing PrestaShop with SSL [#10482](https://github.com/PrestaShop/PrestaShop/issues/10482)
+- An exception was thrown when adding an invalid parameter to the Language form and "No picture" image [#22500](https://github.com/PrestaShop/PrestaShop/issues/22500)
+- In Back-Office, some of the JavaScript code relied on form field's ids and attributes that were modified in 1.7.8 [#21819](https://github.com/PrestaShop/PrestaShop/issues/21819)
+- When creating a customer account, the number of characters was only checked browser-side [#19505](https://github.com/PrestaShop/PrestaShop/issues/19505)
+- It was possible to create a catalog price rule with percentage value greater than 100% [#19013](https://github.com/PrestaShop/PrestaShop/issues/19013)
+- A bug in TinyMCE Update 4.0.16 was creating errors, fixed by upgrading TinyMCE to 4.9.8 [#11011](https://github.com/PrestaShop/PrestaShop/issues/11011)
+- Unit price was reset to 0 upon activating/disabling or duplicating products from the Product List [#10792](https://github.com/PrestaShop/PrestaShop/issues/10792)
+- Installing PrestaShop with SSL was complex because some settings were not acknowledged [#10482](https://github.com/PrestaShop/PrestaShop/issues/10482)
 
 **WebServices**
 
-- The id_group_shop is shared instead of id_shop_group in webservice parameter [#19566](https://github.com/PrestaShop/PrestaShop/issues/19566)
+- The id_group_shop was shared instead of id_shop_group in webservice parameter [#19566](https://github.com/PrestaShop/PrestaShop/issues/19566)
 
 **CO**
 
--.docker folder is present in release zip [#22233](https://github.com/PrestaShop/PrestaShop/issues/22233)
+- `.docker` folder should not be inside release zip [#22233](https://github.com/PrestaShop/PrestaShop/issues/22233)
 
 ### Notable technical improvements
 
 **Hooks**
 - New hooks into Presenters, allowing to enrich the data built by these services [#11125](https://github.com/PrestaShop/PrestaShop/issues/11125)
 - Ability to enable and disable Hooks [#20848](https://github.com/PrestaShop/PrestaShop/issues/20848)
-- Hook for modifying TinyMce [#19408](https://github.com/PrestaShop/PrestaShop/issues/19408)
+- Hook for modifying TinyMCE [#19408](https://github.com/PrestaShop/PrestaShop/issues/19408)
 
-- Remove microdata in HTML flow and replace by JSON-LD for classic theme [#22867](https://github.com/PrestaShop/PrestaShop/issues/22867)
-- Automatize some of our rules with PHPStan: Introduce phpstan extension [#22728](https://github.com/PrestaShop/PrestaShop/issues/22728)
-- Problem with sessions cookies for SameSite issue [#22711](https://github.com/PrestaShop/PrestaShop/issues/22711)
-- Two service containers coexist in the back-office [#14995](https://github.com/PrestaShop/PrestaShop/issues/14995)
-- Add hooks to cart modal - crosseling and promotion [#17709](https://github.com/PrestaShop/PrestaShop/issues/17709)
-- Use static analyzer to improve code quality [#16471](https://github.com/PrestaShop/PrestaShop/issues/16471)
-- No High DPI support in ImageRetriever [#19798](https://github.com/PrestaShop/PrestaShop/issues/19798)
-- Allow override of checkoutProcess construction #19848 [#19848](https://github.com/PrestaShop/PrestaShop/issues/19848)
-- BO Menu translation [#9762](https://github.com/PrestaShop/PrestaShop/issues/9762) 
-- Added the ability to manage and download Attachments via Webservice [#12728](https://github.com/PrestaShop/PrestaShop/pull/12728)
-- CSS classes / element attributes called by core.js are marked with js prefixed selectors [#14346](https://github.com/PrestaShop/PrestaShop/issues/14346)
-- Import source files of the UIKit instead of dist files to use prestakit variables [#18396](https://github.com/PrestaShop/PrestaShop/pull/18396)
-- Default theme is the only folder not having ESLint installed and configured [#22998](https://github.com/PrestaShop/PrestaShop/issues/22998)
-- Default theme has no specific SCSS rules [#22885](https://github.com/PrestaShop/PrestaShop/issues/22885)
+- Remove microdata in HTML flow and replace by JSON-LD for Classic theme [#22867](https://github.com/PrestaShop/PrestaShop/issues/22867)
+- Introduce phpstan extension for PrestaShop [#22728](https://github.com/PrestaShop/PrestaShop/issues/22728)
+-  Fix sessions cookies SameSite bug [#22711](https://github.com/PrestaShop/PrestaShop/issues/22711)
+- There is no more legacy Back Office service container, the Symfony container is now available everywhere: [#14995](https://github.com/PrestaShop/PrestaShop/issues/14995)
+- New hooks for cart modal - crosseling and promotion [#17709](https://github.com/PrestaShop/PrestaShop/issues/17709)
+- Introduce PHPStan level 4 [#16471](https://github.com/PrestaShop/PrestaShop/issues/16471)
+- Enabled High DPI support in ImageRetriever [#19798](https://github.com/PrestaShop/PrestaShop/issues/19798)
+- Allow override of checkoutProcess construction [#19848](https://github.com/PrestaShop/PrestaShop/issues/19848)
+- Make the Back Office menu translatable through the translation interface and fix many translation problems when installing other languages [#9762](https://github.com/PrestaShop/PrestaShop/issues/9762)
+- New Webservices endpoint to manage and download Attachments [#12728](https://github.com/PrestaShop/PrestaShop/pull/12728)
+- CSS classes / element attributes selectors now prefixed by `js-` [#14346](https://github.com/PrestaShop/PrestaShop/issues/14346)
+- The UI Kit source files are now imported [#18396](https://github.com/PrestaShop/PrestaShop/pull/18396)
+- Apply ESLint to default Back Office Theme [#22998](https://github.com/PrestaShop/PrestaShop/issues/22998)
+- Apply StyleLint to default Back Office Theme [#22885](https://github.com/PrestaShop/PrestaShop/issues/22885)
 - Add selectors mapping so themes can override it [#20002](https://github.com/PrestaShop/PrestaShop/pull/20002)
-- Add eslint to themes and classic folders [#20080](https://github.com/PrestaShop/PrestaShop/pull/20080)
+- Add ESLint to themes and Classic Theme folders [#20080](https://github.com/PrestaShop/PrestaShop/pull/20080)
 - Update BO theme style in legacy pages to match the UI kit [#22435](https://github.com/PrestaShop/PrestaShop/issues/22435)
-- Update jQuery on classic, FO core and default BO theme [#23122](https://github.com/PrestaShop/PrestaShop/pull/23122)
+- Update jQuery from 3.4.1 to 3.5.1 on Classic, FO core and default BO theme [#23122](https://github.com/PrestaShop/PrestaShop/pull/23122)
 - Introduce Javascript component loading through window.prestashop (part1) [#20591](https://github.com/PrestaShop/PrestaShop/pull/20591)
 
 
@@ -180,8 +180,8 @@ It will help the user to find the right combination quickly.
 
 - Add blockwishlist as native module & Remove archived modules [#23617](https://github.com/PrestaShop/PrestaShop/pull/23617)
 - Update CLDR to latest version 38 (2020-10-28) [#21678](https://github.com/PrestaShop/PrestaShop/issues/21678)
-- Composer 2.0 to be compliant with PSR-4 [#20986](https://github.com/PrestaShop/PrestaShop/issues/20986)
-- Compatibility to PHP 7.4 [#16477](https://github.com/PrestaShop/PrestaShop/issues/16477)
+- Enable use of Composer 2.0 [#20986](https://github.com/PrestaShop/PrestaShop/issues/20986)
+- Enable compatibility for PHP 7.4 [#16477](https://github.com/PrestaShop/PrestaShop/issues/16477)
 
 ### Symfony migration
 
@@ -204,7 +204,7 @@ You can download PrestaShop 1.7.8.0 beta here:
 
 ## How to help test 1.7.8
 
-Your feedback on this beta is essential. The more regressions you find right now, the fewer bugs they will be on the final release, which means fewer patch versions and fewer problems on your (or your customer's) online store. 
+Your feedback on this beta is essential. The more regressions you find right now, the fewer bugs there will be on the final release, which means fewer patch versions and fewer problems on your (or your customer's) online store. 
 
 You must:
 
@@ -225,16 +225,16 @@ You must:
 - [The Invoice details on the Order Preview is missing the address mail of the customer](https://github.com/PrestaShop/PrestaShop/issues/24482) 
 - [When Adding a new theme, an error 404 is displayed in the console](https://github.com/PrestaShop/PrestaShop/issues/24468) 
 - [When the client uses another address for the invoice as a guest, we are redirected to the Information step instead of the Shipping method step](https://github.com/PrestaShop/PrestaShop/issues/24465) 
-- [When an account is created, an exception is displayed when the first name and/or last name fields contain invalid characters.](https://github.com/PrestaShop/PrestaShop/issues/24464) 
-- [When accessing to a disabled category, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/24370) 
+- [When an account is created, an exception is displayed when the first name and/or last name fields contain invalid characters](https://github.com/PrestaShop/PrestaShop/issues/24464) 
+- [When browsing a disabled category, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/24370) 
 - [The scrollbar is missing in the new multistore dropdown](https://github.com/PrestaShop/PrestaShop/issues/24333) 
 - [The warning message is empty when we try to remove a customer from a specific price](https://github.com/PrestaShop/PrestaShop/issues/24142) 
-- [The summary & the description of the Product Page allows more characters than the defined limit](https://github.com/PrestaShop/PrestaShop/issues/24131) 
+- [The summary and description fields of the Product Page form allow more characters than the defined limit](https://github.com/PrestaShop/PrestaShop/issues/24131) 
 - [When running a CLI command prestashop:update:sql-upgrade-file-hooks-listing and prestashop:update:configuration-file-hooks-listing, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/24023) 
-- [Multistore header not displayed on Product Add / Edit page](https://github.com/PrestaShop/PrestaShop/issues/23937) 
+- [The new Multistore header is not displayed on Product Add / Edit page](https://github.com/PrestaShop/PrestaShop/issues/23937) 
 - [When modifying a translation of Email Body, an error is displayed](https://github.com/PrestaShop/PrestaShop/issues/23878) 
-- [When searching for the translation, the « leaves » of the tree that does not include the searched term is not disabled](https://github.com/PrestaShop/PrestaShop/issues/23876) 
-- [An error displayed in the console when creating a category](https://github.com/PrestaShop/PrestaShop/issues/23365) 
+- [When searching for a translation through the interface, the « leaves » of the tree that do not include the searched term are not disabled](https://github.com/PrestaShop/PrestaShop/issues/23876) 
+- [An error is displayed in the browser console when creating a category](https://github.com/PrestaShop/PrestaShop/issues/23365) 
 - [Cannot add an official currency to a non-official language from the CLDR](https://github.com/PrestaShop/PrestaShop/issues/22545) 
-- [The block to promote the discounts is removed after adding a cart rule](https://github.com/PrestaShop/PrestaShop/issues/21961) 
+- [The block to promote the discounts is removed after adding a cart rule on Checkout](https://github.com/PrestaShop/PrestaShop/issues/21961) 
 - [The Menu Page should be disabled in the Back-Office](https://github.com/PrestaShop/PrestaShop/issues/21107) 

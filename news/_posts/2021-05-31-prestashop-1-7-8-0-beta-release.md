@@ -83,7 +83,7 @@ It will help the user to find the right combination quickly.
 
 #### Improvements of the UI Kit
 
-- PrestaShop back-office UI Kit has been improved to have a Solid Design System with adjustment of alert colors, font size, buttons contrasts and an enhancement of the responsive. [#16587](https://github.com/PrestaShop/PrestaShop/issues/16587) [#22358](https://github.com/PrestaShop/PrestaShop/issues/22358) [#104](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
+- PrestaShop back-office UI Kit has been improved to have a solid Design System with adjustment of alert colors, font size, buttons contrasts, and an enhancement of the responsiveness. [#16587](https://github.com/PrestaShop/PrestaShop/issues/16587) [#22358](https://github.com/PrestaShop/PrestaShop/issues/22358) [#104](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
 
 ![the new mobile improvements](/assets/images/2021/mobile-improvements.png)
 

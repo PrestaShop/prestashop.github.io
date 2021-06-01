@@ -49,7 +49,7 @@ You can use the export tool to migrate from legacy PHP catalogue to XLF catalogu
 
 - Only on the maintenance page for now, a drop-down list allows the merchant to view the shops list and find out if the page has inherited the group setting or has been customized.
 
-![the new multistore specific setting drop down](/assets/images/2021/Specific_settings_drop_down_multistore.png)
+![The new multistore specific setting drop down](/assets/images/2021/Specific_settings_drop_down_multistore.png)
 
 It allows merchants to know at a glance which settings are applied in all shops and which ones have been customized to understand the different behaviors of theirs shops.
 

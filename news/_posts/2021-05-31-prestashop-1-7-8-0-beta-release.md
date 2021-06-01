@@ -47,7 +47,7 @@ You can use the export tool to migrate from legacy PHP catalogue to XLF catalogu
 #### New Multistore header
 One of the main difficulties for the merchants using the multistore was to know which store they were configuring in the back-office and this was bringing a lot of configuration errors.
 
-- Shops running on Multistore now feature a new Back Office header that makes it easy for merchants to tell which context they are on. Its background color can be customized for each shop or shop group in the Multistore parameters. 
+This is why a new back-office header has been added. Its color can be customized for each shop or group of shop(s) in the multistore parameters. It makes it easy for the merchants to know which shop or group they are configuring and therefore avoid configuration mistakes.
 
 ![The new multistore header](/assets/images/2021/multistore_header.png)
 

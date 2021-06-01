@@ -79,7 +79,7 @@ It allows the user to remove images from the product easily (especially useful w
 
 It allows the user to avoid having to remove then add then re-assign an image.
 
-- **A new pagination on the  list of combinations**
+- **A new pagination on the list of combinations**
 
 It avoid the page to load all the combinations therefore it has a huge performance improvement.
 

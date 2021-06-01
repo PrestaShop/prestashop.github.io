@@ -68,19 +68,18 @@ PrestaShop back office UI Kit has been improved in order to have a Solid Design 
 
 #### Front-Office improvements
 
-- Fix classic theme images width, accessibilty and some lighthouse improvements [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352)
-- The implementaton of Native Lazy Loading on theme classic ([see the benchmark]())[#19549](https://github.com/PrestaShop/PrestaShop/issues/19549)
-- Display ‘Out of Stock’ on Catalog pages [#21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
-- Product page images should be able to swipe on mobile for classic theme [#20431](https://github.com/PrestaShop/PrestaShop/issues/20431)
-- Display subcategories in FO categories pages [#10407](https://github.com/PrestaShop/PrestaShop/issues/10407)
+- Improvements of classic theme images width, accessibilty and some lighthouse KPI [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352)[#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
+- The implementaton of Native Lazy Loading on theme classic ([see the complete detail of the feature](https://build.prestashop.com/news/journey-to-improve-the-time-to-interactive-metric/))[#19549](https://github.com/PrestaShop/PrestaShop/issues/19549)
+- The label ‘Out of Stock’ is displayed on Catalog pages [#21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
+- Product page images can now swipable on mobile for classic theme [#20431](https://github.com/PrestaShop/PrestaShop/issues/20431)
+- The subcategories are displayed on Categories pages [#10407](https://github.com/PrestaShop/PrestaShop/issues/10407)
 
 #### Back-Office improvements
 
-- Add TinyMCE mobile theme in the BO [#23225](https://github.com/PrestaShop/PrestaShop/issues/23225)
-- Some classic theme improvements (styling and more) [#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
-- Display the overrides list in the Informations tab [#21368](https://github.com/PrestaShop/PrestaShop/issues/21368)
-- Add order internal notes [#14753](https://github.com/PrestaShop/PrestaShop/issues/14753)
-- Allow users to better handle avatars [#18653](https://github.com/PrestaShop/PrestaShop/issues/18653)
+- TinyMCE mobile theme is compatible in the Back-Office [#23225](https://github.com/PrestaShop/PrestaShop/issues/23225)
+- The overrides done in the shop are displayed in the Informations tab [#21368](https://github.com/PrestaShop/PrestaShop/issues/21368)
+- A new order internal notes is available in the Order View Page [#14753](https://github.com/PrestaShop/PrestaShop/issues/14753)
+- Allow users have their own avatars [#18653](https://github.com/PrestaShop/PrestaShop/issues/18653)
 - Redirection to Not Found Page for 404 pages  [#20410](https://github.com/PrestaShop/PrestaShop/pull/20410)
 
 ### Notable fixes

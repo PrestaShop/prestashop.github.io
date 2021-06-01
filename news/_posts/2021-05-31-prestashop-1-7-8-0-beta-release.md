@@ -37,7 +37,8 @@ We need the help of all the community to test this version. It integrates more t
 ![the new translation export](/assets/images/2021/translation-export.png)
 
 
-- The Modules can now use the translation system and all their translation can be found on the Translation Page ([read the documentation](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/))
+- The Modules can now use the new translation system with XLF files and all their translation can be found on the Translation Page ([read the documentation](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/)).
+You can use the export tool to migrate from legacy PHP catalogue to XLF catalogue
 
 
 #### Multistore

@@ -138,7 +138,7 @@ It will help the user to find the right combination quickly.
 
 - The id_group_shop was shared instead of id_shop_group in webservice parameter [#19566](https://github.com/PrestaShop/PrestaShop/issues/19566)
 
-**CO**
+**Distribution**
 
 - `.docker` folder should not be inside release zip [#22233](https://github.com/PrestaShop/PrestaShop/issues/22233)
 
@@ -240,4 +240,3 @@ You must:
 - [Cannot add an official currency to a non-official language from the CLDR](https://github.com/PrestaShop/PrestaShop/issues/22545) 
 - [The block to promote the discounts is removed after adding a cart rule on Checkout](https://github.com/PrestaShop/PrestaShop/issues/21961) 
 - [The Menu Page should be disabled in the Back-Office](https://github.com/PrestaShop/PrestaShop/issues/21107) 
-

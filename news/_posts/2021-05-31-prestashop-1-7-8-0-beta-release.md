@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 1.7.8.0 beta is open for feedback!"
 subtitle: "You can download it and test it"
-date:   2020-05-31 17:00:00
+date: 2020-05-31
 authors: [ PrestaShop ]
 icon: icon-leaf
 tags:

@@ -42,7 +42,7 @@ If you find regressions compared to previous versions, please create an [issue o
 - Modules using the [new translation system](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/) introduced in 1.7.6 can now distribute their own translation files in the XLF format.
 You can use the export tool to migrate from legacy PHP catalogue to XLF catalogue
 
-
+One of the main difficulties for the merchants using the multistore was to know which store they were configuring in the back-office and this was bringing a lot of configuration errors.
 ### Multistore
 
 - Shops running on Multistore now feature a new Back Office header that makes it easy for merchants to tell which context they are on. Its background color can be customized for each shop or shop group in the Multistore parameters. 

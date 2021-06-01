@@ -26,11 +26,9 @@ With more than 1,372 merged Pull Requests and 241 bug fixes, including 17 major 
 
 **Remember, this beta version is pre-release software and is expected to have bugs. Do not use it in your production shop!**
 
-## What’s new?
+## New features & improvements
 
-### New features & improvements
-
-#### Translations
+### Translations
 
 - The translation feature has been revamped, adding the possibility to export back office, front office, email, themes, and module translations.
 
@@ -41,7 +39,7 @@ With more than 1,372 merged Pull Requests and 241 bug fixes, including 17 major 
 You can use the export tool to migrate from legacy PHP catalogue to XLF catalogue
 
 
-#### Multistore
+### Multistore
 
 - Shops running on Multistore now feature a new Back Office header that makes it easy for merchants to tell which context they are on. Its background color can be customized for each shop or shop group in the Multistore parameters. 
 
@@ -53,13 +51,13 @@ You can use the export tool to migrate from legacy PHP catalogue to XLF catalogu
 
 It allows merchants to know at a glance which settings are applied in all shops and which ones have been customized to understand the different behaviors of theirs shops.
 
-#### Experimental features
+### Experimental features
 
 The version 1.7.8 is introducing the Experimental features so that complex new features can be disabled or hidden by default until considered stable. Experimental features, also known as feature flags, allow developers to deliver small incremental chunks without compromising the system stability, which is a common practice in the software world. So on Advanced Parameters > Experimental Features, knowing the risks involved, the developers can enable or disable an experimental feature.
 
 ![The new Experimental features page](/assets/images/2021/experimental-features.png)
 
-#### Back Office Product page
+### Back Office Product page
 
 New features and improvements have been shipped for the product page. However, as the product page is a key piece of the Back Office, we are delivering them with extra caution:
 - In 1.7.8, the changes are added in an Experimental product page behind a feature flag: Back Office user must enable the Experimental page before using it. This should allow the community to try out this improved page in test environments and give us a lot of feedback.
@@ -84,14 +82,14 @@ Current pages loads every combinations of the product, even if there are hundred
  
 It will help the user to find the right combination quickly.
 
-#### Improvements of the UI Kit
+### Improvements of the UI Kit
 
 - PrestaShop back-office UI Kit has been improved to have a solid Design System with adjustment of alert colors, font size, buttons contrasts, and an enhancement of the responsiveness. [#16587](https://github.com/PrestaShop/PrestaShop/issues/16587) [#22358](https://github.com/PrestaShop/PrestaShop/issues/22358) [#104](https://github.com/PrestaShop/prestashop-ui-kit/pull/104)
 
 ![the new mobile improvements](/assets/images/2021/mobile-improvements.png)
 
 
-#### Front-Office improvements
+### Front-Office improvements
 
 - Improvements of classic theme images width, accessibility and some [lighthouse](https://developers.google.com/web/tools/lighthouse) KPI [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352)[#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
 - The implementation of Native Lazy Loading on theme Classic ([see the complete detail of the feature](https://build.prestashop.com/news/journey-to-improve-the-time-to-interactive-metric/))[#19549](https://github.com/PrestaShop/PrestaShop/issues/19549)
@@ -100,14 +98,14 @@ It will help the user to find the right combination quickly.
 - The subcategories are displayed on Categories pages [#10407](https://github.com/PrestaShop/PrestaShop/issues/10407)
 - Return a 404 response when user visits product page for a product that does not exist [#21330](https://github.com/PrestaShop/PrestaShop/pull/21330/)
 
-#### Back-Office improvements
+### Back-Office improvements
 
 - TinyMCE mobile theme is enabled in the Back-Office [#23225](https://github.com/PrestaShop/PrestaShop/issues/23225)
 - The overrides done in the shop are displayed in the Informations tab [#21368](https://github.com/PrestaShop/PrestaShop/issues/21368)
 - A new order internal note is available in the Order View Page [#14753](https://github.com/PrestaShop/PrestaShop/issues/14753)
 - Back Office users can upload custom avatars [#18653](https://github.com/PrestaShop/PrestaShop/issues/18653)
 
-### Notable fixes
+## Notable fixes
 
 ### **Topwatchers:**
 
@@ -145,7 +143,7 @@ It will help the user to find the right combination quickly.
 - `.docker` folder should not be inside release zip [#22233](https://github.com/PrestaShop/PrestaShop/issues/22233)
 
 
-### Notable technical improvements
+## Notable technical improvements
 
 **Hooks**
 - New hooks into Presenters, allowing to enrich the data built by these services [#11125](https://github.com/PrestaShop/PrestaShop/issues/11125)
@@ -179,7 +177,7 @@ It will help the user to find the right combination quickly.
 - Introduce Javascript component loading through window.prestashop [#20591](https://github.com/PrestaShop/PrestaShop/pull/20591)
 
 
-#### Dependencies and Software compatibility
+## Dependencies and Software compatibility
 
 - Add blockwishlist v2.0.0 as native module [#23617](https://github.com/PrestaShop/PrestaShop/pull/23617)
 - Remove archived modules from the ZIP [#23617](https://github.com/PrestaShop/PrestaShop/pull/23617)
@@ -187,7 +185,7 @@ It will help the user to find the right combination quickly.
 - Enable use of Composer 2.0 [#20986](https://github.com/PrestaShop/PrestaShop/issues/20986)
 - Enable compatibility for PHP 7.4 [#16477](https://github.com/PrestaShop/PrestaShop/issues/16477)
 
-### Symfony migration
+## Symfony migration
 
 See the new pages migrated in Symfony, we are now about 65% of the Back-Office pages migrated.
 

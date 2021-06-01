@@ -77,7 +77,7 @@ It allows the user to remove images from the product easily (especially useful w
 
 - **The possibility to replace an image**
 
-It avoids the user to remove and add an image then assign the image to the product.
+It allows the user to avoid having to remove then add then re-assign an image.
 
 - **A new pagination on the  list of combinations**
 

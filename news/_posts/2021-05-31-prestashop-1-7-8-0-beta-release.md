@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 1.7.8.0 beta is open for feedback!"
 subtitle: "You can download it and test it"
-date: 2020-05-31
+date: 2021-05-31
 authors: [ PrestaShop ]
 icon: icon-leaf
 tags:
@@ -57,7 +57,7 @@ It allows merchants to know at a glance which settings are applied in all shops 
 
 The version 1.7.8 is introducing the Experimental features so that complex new features can be disabled or hidden by default until considered stable. Experimental features, also known as feature flags, allow developers to deliver small incremental chunks without compromising the system stability, which is a common practice in the software world. So on Advanced Parameters > Experimental Features, knowing the risks involved, the developers can enable or disable an experimental feature.
 
-![the new Experimental features page](/assets/images/2021/experimental-features.png)
+![The new Experimental features page](/assets/images/2021/experimental-features.png)
 
 #### Back Office Product page
 

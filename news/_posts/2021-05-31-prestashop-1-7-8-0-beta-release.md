@@ -49,7 +49,11 @@ One of the main difficulties for the merchants using the multistore was to know 
 
 ![The new multistore header](/assets/images/2021/multistore_header.png)
 
-- Only on the maintenance page for now, a drop-down list allows the merchant to view the shops list and find out if the page has inherited the group setting or has been customized.
+##### New specific settings drop-down
+
+This drop-down is displayed in the “all shops” context and group contexts. It allows you to see which settings have been customized in one or several specific shops. And therefore, the settings that will not be overridden following a change made in “all shops” or in a group context.
+
+For now, it has been implemented only on the Maintenance page of the back office.
 
 ![The new multistore specific setting drop down](/assets/images/2021/Specific_settings_drop_down_multistore.png)
 

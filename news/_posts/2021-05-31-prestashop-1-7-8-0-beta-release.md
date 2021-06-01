@@ -58,7 +58,18 @@ For now, it has been implemented only on the Maintenance page of the back office
 ![The new multistore specific setting drop down](/assets/images/2021/Specific_settings_drop_down_multistore.png)
 
 It allows merchants to know at a glance which settings are applied in all shops and which ones have been customized to understand the different behaviors of theirs shops.
+##### Checkboxes
 
+Checkboxes are displayed in a specific shop context and a group context.
+They are displayed before each field/toggle/parameter and allow merchants to apply specific settings to a store or a group of shops. Merchants just need to select the parameter to modify, bring their modifications, and then save.
+
+For now, they have been implemented only on the Maintenance page of the back office.
+
+##### Linklist module
+
+Many users complained about the [linklist module](https://github.com/PrestaShop/ps_linklist) wasn’t [compatible with the multistore](https://github.com/PrestaShop/PrestaShop/issues/9795), as it was quite annoying for their activity, not being able to have different links in their footer depending of the store.
+
+This is why it has been decided to make a new version (v.5.0.0) of this module to make it [compatible with the multistore](https://github.com/PrestaShop/ps_linklist/pull/114) and this was made possible thanks to the great work of [Krystian Podemski](https://github.com/kpodemski) :pray:
 ### Experimental features
 
 The version 1.7.8 is introducing the Experimental features so that complex new features can be disabled or hidden by default until considered stable. Experimental features, also known as feature flags, allow developers to deliver small incremental chunks without compromising the system stability, which is a common practice in the software world. So on Advanced Parameters > Experimental Features, knowing the risks involved, the developers can enable or disable an experimental feature.

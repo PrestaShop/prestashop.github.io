@@ -37,7 +37,7 @@ We need the help of all the community to test this version. It integrates more t
 ![the new translation export](/assets/images/2021/translation-export.png)
 
 
-- The Modules can now use the translation system and all their translation can be found on the Translation Page ([link the documentation](link))
+- The Modules can now use the translation system and all their translation can be found on the Translation Page ([read the documentation](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/))
 
 
 #### Multistore

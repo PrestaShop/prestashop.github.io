@@ -101,12 +101,15 @@ See also : Adjustement of alert colors, fontsize and buttons contrasts [#104](ht
 ### Major bugs:
 
 **Front-Office**
+
 - Guess Order Tracking redirects to shop Homepage when the Friendly URLs are disabled [#20194](https://github.com/PrestaShop/PrestaShop/issues/20194)
 - An error is error is displayed on the checkout if Legal compliance module is installed [#12509](https://github.com/PrestaShop/PrestaShop/issues/12509)
 - Checkout slowdown when many orders are made with Guest account [#16584](https://github.com/PrestaShop/PrestaShop/issues/16584)
 - Ecotax is displayed tax excl instead of tax incl in FO [#18835](https://github.com/PrestaShop/PrestaShop/issues/18835)
 - Confirmation button on Checkout should be disabled if Terms and conditions are not approved [#19161](https://github.com/PrestaShop/PrestaShop/issues/19161)
+
 **Back-Office**
+
 - An exception is thrown when adding invalid parameter to Language form and "No picture" image [#22500](https://github.com/PrestaShop/PrestaShop/issues/22500)
 - In Back-Office, some of the js parts rely on form field's ids and attributes that are modified since 1.7.8 [#21819](https://github.com/PrestaShop/PrestaShop/issues/21819)
 - The number of characters is only checked by the Front-End [#19505](https://github.com/PrestaShop/PrestaShop/issues/19505)
@@ -114,9 +117,13 @@ See also : Adjustement of alert colors, fontsize and buttons contrasts [#104](ht
 - JS issue when editing an image in TinyMCE [#11011](https://github.com/PrestaShop/PrestaShop/issues/11011)
 - Unit price reset to 0 if you activate/deactivate or duplicate products from the Product List [#10792](https://github.com/PrestaShop/PrestaShop/issues/10792)
 - Issues when installing PrestaShop with SSL [#10482](https://github.com/PrestaShop/PrestaShop/issues/10482)
+
 **WebServices**
+
 - The id_group_shop is shared instead of id_shop_group in webservice parameter [#19566](https://github.com/PrestaShop/PrestaShop/issues/19566)
+
 **CO**
+
 -.docker folder is present in release zip [#22233](https://github.com/PrestaShop/PrestaShop/issues/22233)
 
 ### Notable technical improvements

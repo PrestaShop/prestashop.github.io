@@ -207,7 +207,7 @@ Your feedback on this beta is essential. The more regressions you find right now
 You must:
 
 - Install this version and explore it, to verify there is no unknown regression compared to the 1.7.7 version
-- If you develop modules or themes, test them on this version
+- If you develop modules or themes, try them out with this version
 - Test the auto-upgrade plugin
 - [Report regressions on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read how to [report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
 - Fix regressions by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))

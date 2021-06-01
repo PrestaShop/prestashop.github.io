@@ -73,7 +73,7 @@ This means that in 1.7.8, the default Product page
 The new page includes:
 - **A bulk suppression in the image manager**
 
-It allows the user to remove images from the product easily especially when the product contains a lot of images. 
+It allows the user to remove images from the product easily (especially useful when the product features a large number of images). 
 
 - **The possibility to replace an image**
 

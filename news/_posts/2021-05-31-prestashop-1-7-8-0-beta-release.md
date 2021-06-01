@@ -42,7 +42,7 @@ We need the help of all the community to test this version. It integrates more t
 
 #### Multistore
 
-- The MultiStore feature embeds a new header. The color of the header can be now customizable for a shop or a group shop in the MultiStore parameters. 
+- The Multistore feature embeds a new header. The color of the header can be now customizable for a shop or a group shop in the MultiStore parameters. 
 
 ![the new multistore header](/assets/images/2021/multistore_header.png)
 

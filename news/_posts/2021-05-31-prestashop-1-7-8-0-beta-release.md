@@ -48,7 +48,7 @@ We need the help of all the community to test this version. It integrates more t
 
 It will limit the errors via a colored header and therefore avoid setting up a store thinking it is on another one.
 
-- Only on the maintenance page for now, a drop-down list allows the merchant to view the list of the shop and see if the page has inherited the group setting or has been customized.
+- Only on the maintenance page for now, a drop-down list allows the merchant to view the shops list and find out if the page has inherited the group setting or has been customized.
 
 ![the new multistore specific setting drop down](/assets/images/2021/Specific_settings_drop_down_multistore.png)
 

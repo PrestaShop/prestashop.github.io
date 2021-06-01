@@ -115,7 +115,7 @@ It will help the user to find the right combination quickly.
 
 ### Front-Office improvements
 
-- Improvements of classic theme images width, accessibility and some [lighthouse](https://developers.google.com/web/tools/lighthouse) KPI [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352)[#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
+- Improvements of classic theme images width, accessibility and some [lighthouse](https://developers.google.com/web/tools/lighthouse) KPI [#23352](https://github.com/PrestaShop/PrestaShop/issues/23352) [#20775](https://github.com/PrestaShop/PrestaShop/pull/20775)
 - The implementation of Native Lazy Loading on theme Classic ([see the complete detail of the feature](https://build.prestashop.com/news/journey-to-improve-the-time-to-interactive-metric/)) [#19549](https://github.com/PrestaShop/PrestaShop/issues/19549)
 - The label ‘Out of Stock’ is displayed on Catalog pages [#21105](https://github.com/PrestaShop/PrestaShop/issues/21105)
 - The images on the Product Page can now be swiped on mobile for Classic theme [#20431](https://github.com/PrestaShop/PrestaShop/issues/20431)
@@ -125,7 +125,7 @@ It will help the user to find the right combination quickly.
 ### Back-Office improvements
 
 - TinyMCE mobile theme is enabled in the Back-Office [#23225](https://github.com/PrestaShop/PrestaShop/issues/23225)
-- The overrides done in the shop are displayed in the Informations tab [#21368](https://github.com/PrestaShop/PrestaShop/issues/21368)
+- The overrides active in a shop are displayed in the Informations tab [#21368](https://github.com/PrestaShop/PrestaShop/issues/21368)
 - A new order internal note is available in the Order View Page [#14753](https://github.com/PrestaShop/PrestaShop/issues/14753)
 - Back Office users can upload custom avatars [#18653](https://github.com/PrestaShop/PrestaShop/issues/18653)
 
@@ -133,15 +133,17 @@ It will help the user to find the right combination quickly.
 
 ### **Topwatchers:**
 
-- When a product had a specific price applied and was discounted by unit, the discount displayed on the product page was false [#16163](https://github.com/PrestaShop/PrestaShop/issues/16163) (Major)
 - When Clear cache button was clicked twice, the user would see an error page [#11105](https://github.com/PrestaShop/PrestaShop/issues/11105) (Major)
 - Profiler was not compatible with hooks and module [#9659](https://github.com/PrestaShop/PrestaShop/issues/9659)
 - Double click on "Add to cart" on the product page FO was freezing the page [#9634](https://github.com/PrestaShop/PrestaShop/issues/9634) (Major)
+- Select the payment method if only one available by default [#11435](https://github.com/PrestaShop/PrestaShop/issues/11435)
+- Wrong translations of back-office menu tabs [#9816](https://github.com/PrestaShop/PrestaShop/issues/9816)
 
 ### Major bugs:
 
 **Front-Office**
 
+- When a product had a specific price applied and was discounted by unit, the discount displayed on the product page was false [#16163](https://github.com/PrestaShop/PrestaShop/issues/16163)
 - Guest Order Tracking redirected to shop Homepage when Friendly URLs were disabled [#20194](https://github.com/PrestaShop/PrestaShop/issues/20194)
 - An error was displayed on checkout when Legal compliance module was installed [#12509](https://github.com/PrestaShop/PrestaShop/issues/12509)
 - Checkout slowdown when many orders were made with a Guest account [#16584](https://github.com/PrestaShop/PrestaShop/issues/16584)
@@ -154,7 +156,7 @@ It will help the user to find the right combination quickly.
 - In Back-Office, some of the JavaScript code relied on form field's ids and attributes that were modified in 1.7.8 [#21819](https://github.com/PrestaShop/PrestaShop/issues/21819)
 - When creating a customer account, the number of characters was only checked browser-side [#19505](https://github.com/PrestaShop/PrestaShop/issues/19505)
 - It was possible to create a catalog price rule with percentage value greater than 100% [#19013](https://github.com/PrestaShop/PrestaShop/issues/19013)
-- A bug in TinyMCE Update 4.0.16 was creating errors, fixed by upgrading TinyMCE to 4.9.8 [#11011](https://github.com/PrestaShop/PrestaShop/issues/11011)
+- A bug in TinyMCE 4.0.16 was creating errors, fixed by upgrading TinyMCE to 4.9.8 [#11011](https://github.com/PrestaShop/PrestaShop/issues/11011)
 - Unit price was reset to 0 upon activating/disabling or duplicating products from the Product List [#10792](https://github.com/PrestaShop/PrestaShop/issues/10792)
 - Installing PrestaShop with SSL was complex because some settings were not acknowledged [#10482](https://github.com/PrestaShop/PrestaShop/issues/10482)
 
@@ -171,14 +173,14 @@ It will help the user to find the right combination quickly.
 
 **Hooks**
 - New hooks into Presenters, allowing to enrich the data built by these services [#11125](https://github.com/PrestaShop/PrestaShop/issues/11125)
-- New hook to control TinyMCE configuration [#19408](https://github.com/PrestaShop/PrestaShop/issues/19408)
+- New mechanism to extend TinyMCE configuration [#19408](https://github.com/PrestaShop/PrestaShop/issues/19408)
 - New hooks for cart modal - crosseling and promotion [#17709](https://github.com/PrestaShop/PrestaShop/issues/17709)
 - Ability to enable and disable Hooks [#20848](https://github.com/PrestaShop/PrestaShop/issues/20848)
 - Allow override of checkoutProcess construction [#19848](https://github.com/PrestaShop/PrestaShop/issues/19848)
 
 **Tooling**
-- Introduce phpstan extension for PrestaShop [#22728](https://github.com/PrestaShop/PrestaShop/issues/22728)
-- Introduce PHPStan level 4 [#16471](https://github.com/PrestaShop/PrestaShop/issues/16471)
+- Apply [PHPStan](https://phpstan.org/) level 4 [#16471](https://github.com/PrestaShop/PrestaShop/issues/16471)
+- Use a custom PHPStan extension for PrestaShop [#22728](https://github.com/PrestaShop/PrestaShop/issues/22728)
 - Apply ESLint to themes and Classic Theme folders [#20080](https://github.com/PrestaShop/PrestaShop/pull/20080)
 - Apply ESLint to default Back Office Theme [#22998](https://github.com/PrestaShop/PrestaShop/issues/22998)
 - Apply StyleLint to default Back Office Theme [#22885](https://github.com/PrestaShop/PrestaShop/issues/22885)
@@ -236,7 +238,7 @@ You must:
 
 - Install it and test that there is no regression compared to the 1.7.7 version
 - If you develop modules or themes, test them on this version
-- Test the auto-upgrade module through the local archive channel. You just have to upload the zip in admin/autoupgrade/download
+- Test the auto-upgrade module through the [local archive channel](https://devdocs.prestashop.com/1.7/development/upgrade-module/channels/#archive). You just have to upload the zip into `admin/autoupgrade/download`
 - [Report regressions on GitHub](https://github.com/PrestaShop/PrestaShop/issues) (read how to [report issues](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/))
 - Fix regressions by creating a [pull request](https://github.com/PrestaShop/PrestaShop/compare) (read the [contribution guidelines](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/))
 

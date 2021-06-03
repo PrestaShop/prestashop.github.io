@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – May 2021 edition"
 subtitle: "Where you'll learn that 1.7.8 strings are available for translation!"
-date: 2021-06-03 17:00:00
+date: 2021-06-03
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

@@ -92,7 +92,7 @@ Thank you all for your contribution!
 Korean, Polish, and Czech are 99% translated. Almost there! :muscle: 
 If you would like to contribute to these projects, do not hesitate to [join us on Crowdin](https://crowdin.com/project/prestashop-official). 
 
-Note that Turkish, that appeared in this category last month, is now 100% translated. That is great, thank you to all the Turkish translators!
+Note that Turkish, that appeared in this category last month, was 100% translated at the end of May. That is great, thank you to all the Turkish translators!
 
 ## Languages with the best evolution
 

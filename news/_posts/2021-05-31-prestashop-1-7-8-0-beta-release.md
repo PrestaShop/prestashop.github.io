@@ -11,6 +11,7 @@ tags:
  - minor
  - releases
  - 1.7.8
+ - 1.7
 ---
 
 The first Beta version of PrestaShop 1.7.8.0 is now ready for you to test!
@@ -213,10 +214,6 @@ It is no longer necessary to remove, add, then re-assign an image.
 
 See the new pages migrated in Symfony, we are now about 65% of the Back-Office pages migrated.
 
-- Catalog > Attributes & Features > Attributes listing 
-- Shop parameters > Order settings > Statuses > Add new / edit order status 
-- Shop parameters > Order settings > Statuses
-- Shop parameters > Order settings > Statuses > Add new / edit order return status
 - International > Locations > Zones
 - International > Locations > Add new / edit zone
 

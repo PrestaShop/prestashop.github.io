@@ -76,35 +76,33 @@ This is why it was decided to make a new version (v5.0.0) of this module to make
 
 ### Experimental features
 
-The version 1.7.8 introduces Experimental features. With that, complex new features can be disabled or hidden by default until they are considered stable. Experimental features also called "feature flags", allow developers to deliver small incremental improvements without compromising the system stability, which is a common practice in the software world. Developers or experienced users can enable or disable an experimental feature in Advanced Parameters > Experimental Features, knowing the risks involved.
+PrestaShop 1.7.8 introduces Experimental features (also known as "Feature flags"). This technique, widely used in the sofware world, provides curious or adventurous users the option to test out new features that aren't stable enough for general use yet. This allows developers to experiment, get feedback, and iterate more quickly – without ever altering the user's experience nor the system's stability. You can enable and disable experimental features in Advanced Parameters > Experimental Features.
 
 ![The new Experimental features page](/assets/images/2021/06/experimental-features.png)
 
 ### Back-office Product page
 
-New features and improvements have been shipped for the product page. However, as the product page is a key piece of the back-office, we are delivering them with extra caution:
-- In 1.7.8, the changes are added in an Experimental product page behind a feature flag: back-office user must enable the Experimental page before using it. This should allow the community to try out this improved page in test environments and give us a lot of feedback.
-- In the version after 1.7.8, the new and improved product page will replace the current page.
+The product page has undergone a major rehaul, but it is unfortunately still not ready for prime time. However, thanks to the Experimental Features introduced in 1.7.8, power users can now test its exciting new features right now! Once activated, merchants can manage their products using both the regular and the Experimental product page, and compare them side by side.
 
-This 2-step delivery aims to ensure the stability of the changes before they are made definitive.
+The experimental product page is due to replace the current one in the next PrestaShop version. Please do test it out and give us your feedback!
 
-The new experimental product page includes:
+Here are the features that you can test now:
 
-- **A bulk suppression in the image manager**
+- **Significantly speedier combination management**
 
-It allows the user to remove images from the product easily (especially useful when the product features a large number of images). 
+The list of combinations is now paginated, providing a significant performance improvement for products with lots of combinations.
 
-- **The possibility to replace an image**
-
-It allows the user to avoid having to remove then add then re-assign an image.
-
-- **A new pagination on the list of combinations**
-
-The current product page loads every combination of the product, even if there are hundreds of them, which can make the page very slow. The new pagination allows loading only a relevant number of combinations providing a nice performance improvement.
-
-- **A filter system to help user find combinations. Back-office user can filter the combinations by attributes**
+- **Find combination by attributes**
  
-It will help the user to find the right combination quickly.
+This can help merchants to find the right combination quickly, especially when there are lots of them.
+
+- **Bulk suppression in the image manager**
+
+Merchants can remove images from the product easily (which is especially useful when the product features a large number of images). 
+
+- **Replace an image**
+
+It is no longer necessary to remove, add, then re-assign an image.
 
 ### Improvements of the UI Kit
 

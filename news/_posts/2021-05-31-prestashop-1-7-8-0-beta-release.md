@@ -215,10 +215,6 @@ It will help the user to find the right combination quickly.
 
 See the new pages migrated in Symfony, we are now about 65% of the Back-Office pages migrated.
 
-- Catalog > Attributes & Features > Attributes listing 
-- Shop parameters > Order settings > Statuses > Add new / edit order status 
-- Shop parameters > Order settings > Statuses
-- Shop parameters > Order settings > Statuses > Add new / edit order return status
 - International > Locations > Zones
 - International > Locations > Add new / edit zone
 

@@ -52,9 +52,9 @@ Indeed, in English, for example, we would say 0 items, 1 item, some items:
 
 `items|item|%NbItems% items`
 
-## Let’s keep in touch! :email:
+## Let’s keep in touch on Slack! :email:
 
-Until now, to exchange with the community, we used the "Discussions" tab on Crowdin. But this option seemed a bit limited as it is not possible to share images, and there is little interaction. That's why we decided to open a Slack channel dedicated to the PrestaShop translators. On this channel, I will share information about the translation project. You will also be informed about the publication of the [Crowdin monthly report](https://build.prestashop.com/news/do-you-speak-prestashop-may-2021/). Of course, you will also be able to ask questions, suggest ideas, or get in touch with other translators. 
+Until now, to exchange with the community, we used the "Discussions" tab on Crowdin. But this option seemed a bit limited as it is not possible to share images, and there is little interaction. That's why we decided to open a **Slack channel dedicated to the PrestaShop translators**. On this channel, I will share information about the translation project. You will also be informed about the publication of the [Crowdin monthly report](https://build.prestashop.com/news/do-you-speak-prestashop-may-2021/). Of course, you will also be able to ask questions, suggest ideas, or get in touch with other translators. 
 
 I think the publication of the new 1.7.8 strings is the perfect time to start a discussion, so don’t hesitate to [join us]() on the PrestaShop Open Source Slack #translation channel!
 

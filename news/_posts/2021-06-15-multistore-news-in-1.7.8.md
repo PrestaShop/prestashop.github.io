@@ -138,7 +138,7 @@ The second thing was to indicate for each module their compatibility or not with
 
 For native modules’, we have indicated the multistore compatibility in the  [readme.md](https://github.com/PrestaShop/ps_emailalerts/pull/44/files) of each module.
 
-Modules developers can now indicate the multistore compatibility in the source code of their module, by declaring a `multistoreCompatibility` attribute, and give it one of the following constant as a value: `MULTISTORE_COMPATIBILITY_YES`, `MULTISTORE_COMPATIBILITY_PARTIAL`, `MULTISTORE_COMPATIBILITY_NO`, or `MULTISTORE_COMPATIBILITY_NOT_CONCERNED` 
+Modules developers can now indicate the multistore compatibility in the source code of their module, by declaring a `multistoreCompatibility` attribute, and give it one of the following constants as a value: `MULTISTORE_COMPATIBILITY_YES`, `MULTISTORE_COMPATIBILITY_PARTIAL`, `MULTISTORE_COMPATIBILITY_NO`, or `MULTISTORE_COMPATIBILITY_NOT_CONCERNED` 
 Example: `public $multistoreCompatibility = self:: MULTISTORE_COMPATIBILITY_YES`
 
 This way, the multistore compatibility is indicated for merchants in their back-office for the installed modules. This information is displayed when clicking on the “read more” link of installed modules in the Module Manager section. 

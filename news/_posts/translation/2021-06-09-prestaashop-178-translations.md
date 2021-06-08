@@ -10,7 +10,7 @@ tags: [translation, i18n, l10n, 1.7]
 
 ## 1.7.8 strings are available for translation
 
-As you probably noticed with the announcement of the beta release a few days ago, PrestaShop 1.7.8 is on its way! And new features also mean new strings. A file containing the new 1.7.8 strings has been added on Crowdin, and is ready for translation! 
+As you probably noticed with the announcement of the beta release a few days ago, PrestaShop 1.7.8 is on its way! And new features also mean new strings. A file containing the new 1.7.8 strings has been added to Crowdin, and is ready for translation! 
 
 Translators, proofreaders… your project needs you! Feel free to take a look at those new translations and help your language reach 100%. :muscle:
 
@@ -24,7 +24,7 @@ If you visited Crowdin in the last few days, you probably noticed that the compl
 
 ### Mistakes in the source strings
 
-Even though we always review the wording, some mistakes could have been missed. So, don’t hesitate to let us know if you notice something wrong so that we can correct it. Note that, despite the string freeze, we will wait about 2 or 3 more weeks before adding the corrections on Crowdin. After that, we won’t be able to add any new wording. If you spot a mistake, please tag me (@Julievrz) in the “Comments” section of the string, or [contact me](https://crowdin.com/profile/julievrz) directly!
+Even though we always review the wording, some mistakes could have been missed. So, don’t hesitate to let us know if you notice something wrong so that we can correct it. Note that, despite the string freeze, we will wait about 2 or 3 more weeks before adding the corrections to Crowdin. After that, we won’t be able to add any new wording. If you spot a mistake, please tag me (@Julievrz) in the “Comments” section of the string, or [contact me](https://crowdin.com/profile/julievrz) directly!
 
 ### Context
 
@@ -34,9 +34,11 @@ As the 1.7.8 version has not been released yet, some strings may appear a bit un
 
 On PrestaShop, we used to add **(s)** at the end of a word to indicate that it could be both singular and plural. For example: ‘There are %NbItems% item(s) in your cart.’
 But we realized this was not the best option, as some languages have more than one plural form.
-In the 1.7.8 catalog, we tried to improve the way plural is handled on PrestaShop. You will see strings that contain both the singular and the plural form, separated by a vertical line. The appropriate string will be selected depending on the number of items. For example:
+In the 1.7.8 catalog, we tried to improve the way plural is handled on PrestaShop. 
 
-‘Are you sure you want to delete the selected image?|Are you sure you want to delete the %filesNb% selected images?’
+You will see strings that contain both the singular and the plural form, separated by a vertical line. The appropriate string will be selected depending on the number of items, for example:
+
+`Are you sure you want to delete the selected image?|Are you sure you want to delete the %filesNb% selected images?`
 
 When translating these strings, you should always start with the singular form and then the plural form, separated by a vertical line, without space, just like this:
    

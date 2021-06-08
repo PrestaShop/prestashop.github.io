@@ -94,6 +94,8 @@ This drop-down is displayed in the “all shops” context and group contexts. I
 For now, it has been implemented only on the Maintenance page of the back office. It will be implemented on the pages not yet migrated during the Symfony migration. For the pages already migrated in Symfony, we are looking for developers to implement it, so if you are willing to do this, please let us know :)
 
 **Search bar** 
+
+
 In the specific settings drop-down, there is a search bar with auto-completion allowing you to search and select a shop or a group quickly. If the user chooses one of the listed results, it is automatically selected as context.
 
 In the specific settings drop-down there are:

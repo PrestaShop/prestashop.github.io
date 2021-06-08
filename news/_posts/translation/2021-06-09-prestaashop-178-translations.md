@@ -42,7 +42,7 @@ When translating these strings, you should always start with the singular form a
    
 `singular|plural`
 
-Sometimes, it can also looks like this:
+Sometimes, it can also look like this:
 
 `0|singular|plural`
 

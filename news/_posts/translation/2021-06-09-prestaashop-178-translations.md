@@ -16,7 +16,7 @@ Translators, proofreaders… your project needs you! Feel free to take a look at
 
 In this article, I will address the key elements of the translation process of this new catalog. 
  
-![Help us translate PrestaShop 1.7.8](/assets/images/2021/06/build-help-translate-178.png")
+![Help us translate PrestaShop 1.7.8](/assets/images/2021/06/build-help-translate-178.png)
 
 ### New strings & completion rates 
 

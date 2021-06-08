@@ -20,6 +20,7 @@ The multistore allows merchants to manage several front offices through a single
 We are thrilled to introduce to you the new features and changes around the multistore. But before jumping into the features awaiting our users in this new version, we would like to share our research and conception process.
 
 **Firstly, why rethinking this feature?**
+
 The multistore was introduced in PrestaShop 1.5 and had not been reworked in many years. 
 Also besides, some features of the multistore having disappeared with the Symfony migration. This feature was becoming particularly unattractive and hard to use in the back-office also because of its old interface that led to misunderstanding and configuration errors for our users.
 
@@ -28,6 +29,7 @@ In late 2019, the PrestaShop product team decided to revamp the multistore featu
 This decision opened an opportunity to revamp the multistore feature which would be more understandable and easier to use.
 
 **A long process to ensure the full success of the revamp.**
+
 First, to have a better understanding of our users' pain points, we have interviewed merchants with a different number of shops and different business activities such as B2B / B2C, selling in different countries. We also interviewed web agencies of different sizes. 
 
 Secondly, we studied what was done by our competitors to identify opportunities and threats.
@@ -37,6 +39,7 @@ Then, once the pain points were well understood and with a good knowledge of the
 Finally, pain points encountered have been addressed with a new user interface, new features, and more information messages.
  
 **Now, let’s present these changes.**
+
 ## I.  The new colors system and multistore header
 One of the main difficulties for the merchants was to know which store they were configuring in the back-office and this was bringing a lot of configuration errors.
 
@@ -59,6 +62,7 @@ Please note, the “all shops” context is blue by default and this color can�
 ![Multistore all shops context](/assets/images/2021/06/multistore_allshops_context.png)
 
 **The new header**
+
 The new multistore header is displayed on the Symfony pages and is more visible than the old shop context selector, still present on legacy pages. Merchants can find in this header everything related to the multistore and can perform several actions:
 
 - Changing context through the drop-down: Select “all stores” context to apply a change to all stores, select a group of shops to apply changes for all shops of this group, or select a specific shop.
@@ -130,8 +134,8 @@ The second thing was to indicate for each module their compatibility or not with
 
 For native modules’, we have indicated the multistore compatibility in the  [readme.md](https://github.com/PrestaShop/ps_emailalerts/pull/44/files) of each module.
 
-Modules developers can now indicate the multistore compatibility in the source code of their module, by calling the setMultistoreCompatibility method with one of the following constant values: MULTISTORE_COMPATIBILITY_YES, MULTISTORE_COMPATIBILITY_PARTIAL, MULTISTORE_COMPATIBILITY_NO, or MULTISTORE_COMPATIBILITY_NOT_CONCERNED 
-Example: $this->setMultistoreCompatibility(self::MULTISTORE_COMPATIBILITY_NOT_CONCERNED);
+Modules developers can now indicate the multistore compatibility in the source code of their module, by calling the `setMultistoreCompatibility` method with one of the following constant values: `MULTISTORE_COMPATIBILITY_YES`, `MULTISTORE_COMPATIBILITY_PARTIAL`, `MULTISTORE_COMPATIBILITY_NO`, or `MULTISTORE_COMPATIBILITY_NOT_CONCERNED` 
+Example: `$this->setMultistoreCompatibility(self::MULTISTORE_COMPATIBILITY_NOT_CONCERNED);`
 
 This way, the multistore compatibility is indicated for merchants in their back-office when clicking on the “read more” link of modules in the Modules Catalog and Module Manager sections. 
 
@@ -142,7 +146,7 @@ The third thing was to help contributors to develop & make their modules compati
 ## VI.  Linklist module
 The [linklist module](https://github.com/PrestaShop/ps_linklist) allows displaying links such as Terms & conditions, new products, contact, sitemap … in the footer.
 
-Many users complained about the linklist module wasn’t compatible with the multistore](https://github.com/PrestaShop/PrestaShop/issues/9795), as it was quite annoying for their activity, not being able to have different links in their footer.
+Many users complained about [the linklist module wasn’t compatible with the multistore](https://github.com/PrestaShop/PrestaShop/issues/9795), as it was quite annoying for their activity, not being able to have different links in their footer.
 
 This is why we decided to make this module [compatible with the multistore](https://github.com/PrestaShop/ps_linklist/pull/114) and this was made possible thanks to the great work of [Krystian Podemski](https://github.com/kpodemski) :pray:
 

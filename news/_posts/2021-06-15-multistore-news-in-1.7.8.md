@@ -86,12 +86,12 @@ Checkboxes allow:
 
 ![Multistore checkboxes](/assets/images/2021/06/multistore_checkboxes.png)
  
-For now, they have been implemented only on the Maintenance page of the back office. It will be implemented on the pages not yet migrated during the Symfony migration. For the pages already migrated in Symfony, we are looking for developers to implement it, so if you are willing to do this, please let us know :)
+For now, they have been implemented **only on the Maintenance page of the back office**. It will be implemented on the pages not yet migrated during the Symfony migration. For the pages already migrated in Symfony, we are looking for developers to implement it, so if you are willing to do this, please let us know :)
  
 ## III.  Specific settings drop-down
 This drop-down is displayed in the “all shops” context and group contexts. It allows you to see which settings have been customized in one or several specific shops. And therefore, the settings that will not be overridden following a change made in “all shops” or in a group context.
 
-For now, it has been implemented only on the Maintenance page of the back office. It will be implemented on the pages not yet migrated during the Symfony migration. For the pages already migrated in Symfony, we are looking for developers to implement it, so if you are willing to do this, please let us know :)
+For now, it has been implemented **only on the Maintenance page of the back office**. It will be implemented on the pages not yet migrated during the Symfony migration. For the pages already migrated in Symfony, we are looking for developers to implement it, so if you are willing to do this, please let us know :)
 
 **Search bar** 
 

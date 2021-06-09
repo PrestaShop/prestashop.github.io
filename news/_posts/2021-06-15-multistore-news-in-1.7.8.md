@@ -22,7 +22,7 @@ We are thrilled to introduce you to the new features and changes around the mult
 **Firstly, why rethinking this feature?**
 
 
-The multistore was introduced in PrestaShop 1.5 and had not been reworked in many years. 
+The multistore feature was introduced in PrestaShop 1.5 and had not been reworked for many years. 
 Also besides, some features of the multistore having disappeared with the Symfony migration. This feature was becoming particularly unattractive and hard to use in the back-office also because of its old interface that led to misunderstanding and configuration errors for our users.
 
 In late 2019, the PrestaShop product team decided to revamp the multistore feature in the back-office. At the origins of this project was a thorough investigation to understand the main pain points.

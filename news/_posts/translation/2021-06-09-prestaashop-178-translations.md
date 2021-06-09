@@ -10,7 +10,7 @@ tags: [translation, i18n, l10n, 1.7]
 
 ## 1.7.8 strings are available for translation
 
-As you probably noticed with the announcement of the beta release a few days ago, PrestaShop 1.7.8 is on its way! And new features also mean new strings. A file containing the new 1.7.8 strings has been added to Crowdin, and is ready for translation! 
+As you probably noticed with the announcement of the beta release a few days ago, PrestaShop 1.7.8 is on its way! And new features also mean new strings. A file containing the new 1.7.8 strings has been added to [Crowdin](https://crowdin.com/project/prestashop-official), and is ready for translation! 
 
 Translators, proofreaders… your project needs you! Feel free to take a look at those new translations and help your language reach 100%. :muscle:
 

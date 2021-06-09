@@ -127,7 +127,7 @@ A module is considered compatible with the multistore feature when it can be eit
 - configured quickly in the same way on all stores thanks to the “All shops" context or the group of shops;
 - or even activated for one store and deactivated for another.
 
-A partially compatible module means that some of its options might not be available or working in a multistore context.
+A partially compatible module means that some of its options may not be available or may not work in a multistore context.
 
 An incompatible module means that its configuration applies to all stores.
 

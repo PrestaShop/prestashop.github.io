@@ -163,7 +163,7 @@ The new multistore header has also been added to the linklist module.
 The linklist module [version 5.0.0](https://github.com/PrestaShop/ps_linklist/releases/tag/v5.0.0) is now 100% compatible with the multistore feature and can be used for shops using PrestaShop 1.7.8 version and above.
  
 ## Closing notes
-Over the last few months, PrestaShop has been working hard to deliver these new features and changes. Overall, the multistore revamp ensures a better usage and understanding, and a better global user experience by addressing the main pain points.
+Over the last few months, PrestaShop has been working hard to deliver these new features and changes. Overall, the multistore feature revamp ensures a better usage and understanding, and a better global user experience by addressing the main pain points.
 
 As you may know, big technical changes are not possible in a minor version because we must avoid backward compatibility breaks. We had to make choices, to bring value to users of this feature while maintaining backward compatibility.
 

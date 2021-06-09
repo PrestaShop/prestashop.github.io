@@ -150,7 +150,7 @@ The third thing was to help contributors to develop & make their modules compati
 ## VI.  Linklist module
 The [linklist module](https://github.com/PrestaShop/ps_linklist) allows displaying links such as Terms & conditions, new products, contact, sitemap … in the footer.
 
-Many users complained about [the linklist module wasn’t compatible with the multistore](https://github.com/PrestaShop/PrestaShop/issues/9795), as it was quite annoying for their activity, not being able to have different links in their footer.
+Many users complained about the fact that [the linklist module wasn't compatible with the multistore feature](https://github.com/PrestaShop/PrestaShop/issues/9795), as it was quite annoying for their activity, not being able to have different links in their footer.
 
 This is why we decided to make this module [compatible with the multistore](https://github.com/PrestaShop/ps_linklist/pull/114) and this was made possible thanks to the great work of [Krystian Podemski](https://github.com/kpodemski) :pray:
 

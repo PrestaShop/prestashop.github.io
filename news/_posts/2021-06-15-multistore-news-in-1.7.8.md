@@ -65,7 +65,7 @@ Please note, the “all shops” context is blue by default and this color can�
 
 **The new header**
 
-The new multistore header is displayed on the Symfony pages and is more visible than the old shop context selector, still present on legacy pages. Merchants can find in this header everything related to the multistore and can perform several actions:
+The new multistore header is displayed on Symfony pages and is more visible than the old shop context selector, still present on legacy pages. Merchants can find in this header everything related to the multistore and can perform several actions:
 
 - Changing context through the drop-down: Select “all stores” context to apply a change to all stores, select a group of shops to apply changes for all shops of this group, or select a specific shop.
 - Changing context through the search bar with autocompletion: allows you to search and select a shop or a group quickly, this is particularly helpful if you have a lot of shops.

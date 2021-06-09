@@ -69,7 +69,7 @@ The new multistore header is displayed on Symfony pages and is more visible than
 
 - Changing context through the drop-down: Select “all stores” context to apply a change to all stores, select a group of shops to apply changes for all shops of this group, or select a specific shop.
 - Changing context through the search bar with autocompletion: allows you to search and select a shop or a group quickly, this is particularly helpful if you have a lot of shops.
-- Configure URL: This link is displayed if no URL has been configured, it redirects to the shop URL edition page and allows to add the URL of the shop
+- Configure URL: This link is displayed if no URL has been configured, it redirects to the shop URL edition page and allows to add the URL of the shop.
 - View my shop: This link is displayed if an URL has been configured and opens the shop front-office to quickly have access to your store.
  
 ## II.  Checkboxes 

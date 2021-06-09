@@ -17,7 +17,7 @@ With the release of the new version 1.7.8 which is in progress, this article det
 
 The multistore feature allows merchants to manage several front offices through a single back office. It’s frequently used by merchants who sell in different countries and therefore have different languages and/or currencies. It is also used by merchants who do both B2B and B2C. And it is more rarely used by merchants who have several brands.
 
-We are thrilled to introduce to you the new features and changes around the multistore. But before jumping into the features awaiting our users in this new version, we would like to share our research and conception process.
+We are thrilled to introduce you to the new features and changes around the multistore feature. But before jumping into the features awaiting our users in this new version, we would like to share our research and conception process.
 
 **Firstly, why rethinking this feature?**
 

@@ -45,7 +45,7 @@ Finally, pain points encountered have been addressed with a new user interface, 
 ## I.  The new colors system and multistore header
 One of the main difficulties for the merchants was to know which store they were configuring in the back-office and this was bringing a lot of configuration errors.
 
-To solve this problem, a color picker has been added to choose a color for each group and shop. The color can be configured while creating or editing the group or the shop (in the back-office > Advanced parameters > Multistore)
+To solve this problem, a color picker has been added to choose a color for each group and shop. The color can be configured while creating or editing the group or the shop (in the back-office > Advanced parameters > Multistore).
 
 ![The new multistore colorpicker](/assets/images/2021/06/multistore_colorpicker.png)
 

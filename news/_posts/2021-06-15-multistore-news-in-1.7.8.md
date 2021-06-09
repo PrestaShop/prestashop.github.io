@@ -124,7 +124,7 @@ To solve this problem the first thing to do was to define the notion of compatib
 
 A module is considered compatible with the multistore feature when it can be either:
 - configured differently from one store to another;
-- configured quickly in the same way on all stores thanks to the “all shops context” or the group of shops;
+- configured quickly in the same way on all stores thanks to the “All shops" context or the group of shops;
 - or even activated for one store and deactivated for another.
 
 A partially compatible module means that some of its options might not be available or working in a multistore context.

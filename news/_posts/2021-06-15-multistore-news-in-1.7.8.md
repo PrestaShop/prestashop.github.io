@@ -145,7 +145,7 @@ This way, the multistore compatibility is indicated for merchants in their back-
 
 ![Multistore module compatibility](/assets/images/2021/06/multistore_module_compatibility.png)
 
-The third thing was to help contributors to develop & make their modules compatible with multistore. For this, an [example module](https://github.com/PrestaShop/example-modules/pull/64) has been developed and the [multistore dev doc](https://devdocs.prestashop.com/1.7/development/multistore/configuration-forms/) has been updated.
+The third thing was to help contributors to develop & make their modules compatible with multistore. For this, an [example module](https://github.com/PrestaShop/example-modules/pull/64) has been developed and the [multistore developer documentation](https://devdocs.prestashop.com/1.7/development/multistore/configuration-forms/) has been updated.
  
 ## VI.  Linklist module
 The [linklist module](https://github.com/PrestaShop/ps_linklist) allows displaying links such as Terms & conditions, new products, contact, sitemap … in the footer.

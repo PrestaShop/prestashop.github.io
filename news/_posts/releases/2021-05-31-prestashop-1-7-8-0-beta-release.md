@@ -4,6 +4,7 @@ title:  "PrestaShop 1.7.8.0 beta is open for feedback!"
 subtitle: "You can download it and test it"
 date: 2021-06-01
 authors: [ PrestaShop ]
+image: /assets/images/2021/06/banner-178-beta.png 
 icon: icon-leaf
 tags:
  - version
@@ -15,6 +16,8 @@ tags:
 ---
 
 The first Beta version of PrestaShop 1.7.8.0 is now ready for you to test!
+
+![1.7.8.0 Beta is available!](/assets/images/2021/06/banner-178-beta.png )
 
 We are very happy to announce today the release of the beta version of 1.7.8.
 This version includes many features and bug fixes, we count on you to test the Beta and report any bugs you encounter.

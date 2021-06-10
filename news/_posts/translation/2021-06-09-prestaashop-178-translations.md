@@ -46,7 +46,7 @@ Sometimes, it can also look like this:
 
 `0|singular|plural`
 
-Indeed, in English, for example, we would say 0 items, 1 item, some items:
+For instance, in English we would say 0 items, 1 item, some items:
 
 `items|item|%NbItems% items`
 

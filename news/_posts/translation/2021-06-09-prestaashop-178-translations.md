@@ -10,7 +10,7 @@ tags: [translation, i18n, l10n, 1.7]
 
 ## 1.7.8 strings are available for translation
 
-As you probably noticed with the announcement of the beta release a few days ago, PrestaShop 1.7.8 is on its way! And new features also mean new strings. A file containing the new 1.7.8 strings has been added to [Crowdin](https://crowdin.com/project/prestashop-official), and is ready for translation! 
+As you probably noticed with the announcement of the beta release a few days ago, PrestaShop 1.7.8 is on its way! While it brings new features, this new version also means new strings. A file containing all 1.7.8 strings has been pushed to [Crowdin](https://crowdin.com/project/prestashop-official), and is ready for translation! 
 
 Translators, proofreaders… your project needs you! Feel free to take a look at those new translations and help your language reach 100%. :muscle:
 
@@ -57,5 +57,4 @@ Indeed, in English, for example, we would say 0 items, 1 item, some items:
 Until now, to exchange with the community, we used the "Discussions" tab on Crowdin. But this option seemed a bit limited as it is not possible to share images, and there is little interaction. That's why we decided to open a **Slack channel dedicated to the PrestaShop translators**. On this channel, I will share information about the translation project. You will also be informed about the publication of the [Crowdin monthly report](https://build.prestashop.com/news/do-you-speak-prestashop-may-2021/). Of course, you will also be able to ask questions, suggest ideas, or get in touch with other translators. 
 
 I think the publication of the new 1.7.8 strings is the perfect time to start a discussion, so don’t hesitate to [join us](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg) on the PrestaShop Open Source Slack! When you're in, you will be able to join the #translation channel. 
-
 

@@ -32,9 +32,7 @@ As the 1.7.8 version has not been released yet, some strings may appear a bit un
 
 ### A note on plural form
 
-On PrestaShop, we used to add **(s)** at the end of a word to indicate that it could be both singular and plural. For example: ‘There are %NbItems% item(s) in your cart.’
-But we realized this was not the best option, as some languages have more than one plural form.
-In the 1.7.8 catalog, we tried to improve the way plural is handled on PrestaShop. 
+In the software copywriting, **(s)** used to be added at the end of a word to indicate that it could be both singular and plural. For example: "There are %NbItems% item(s) in your cart". We realized this was not the best option, as some languages have more than one plural form and therefore complicates the translation work. For the 1.7.8 catalog, we decided to improve the way plural is handled on PrestaShop. 
 
 You will see strings that contain both the singular and the plural form, separated by a vertical line. The appropriate string will be selected depending on the number of items, for example:
 

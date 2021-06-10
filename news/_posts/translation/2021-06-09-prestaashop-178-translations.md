@@ -20,11 +20,11 @@ In this article, I will address the key elements of the translation process of t
 
 ### New strings & completion rates 
 
-If you visited Crowdin in the last few days, you probably noticed that the completion rates for all projects have slightly decreased and that the projects that used to be 100% translated and validated are no longer complete. Don’t worry, that’s completely normal as new untranslated and unapproved strings were added to the 1.7.8 file. In order to reach a 100% completion rate, all the new strings should be translated and validated. 
+If you visited Crowdin in the last few days, you probably noticed that the completion rates for all projects have slightly decreased and that the projects that used to be 100% translated and validated are no longer complete. Don’t worry, that’s completely normal as new untranslated and unapproved strings were added to the project. In order to get back to a 100% completion rate, all the new strings should be translated and validated.
 
 ### Mistakes in the source strings
 
-Even though we always review the wording, some mistakes could have been missed. So, don’t hesitate to let us know if you notice something wrong so that we can correct it. Note that, despite the string freeze, we will wait about 2 or 3 more weeks before adding the corrections to Crowdin. After that, we won’t be able to add any new wording. If you spot a mistake, please tag me (@Julievrz) in the “Comments” section of the string, or [contact me](https://crowdin.com/profile/julievrz) directly!
+Even though the wording is always reviewed when a pull request is submitted, some mistakes could have been missed. So, don’t hesitate to let us know if you notice something wrong so that we can correct it. Note that, despite the string freeze, we will wait about 2 or 3 more weeks before adding the corrections to Crowdin. After that, we won’t be able to add any new wording. If you spot a mistake, please tag me (@Julievrz) in the “Comments” section of the string, or [contact me](https://crowdin.com/profile/julievrz) directly!
 
 ### Context
 

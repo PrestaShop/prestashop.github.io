@@ -2,7 +2,7 @@
 layout: post
 title: "1.7.8 is ready for translation"
 subtitle: "New features equal new strings"
-date: 2021-06-09 12:00:00
+date: 2021-06-10 19:00:00
 authors: [JulieVarisellaz]
 icon: icon-world
 tags: [translation, i18n, l10n, 1.7]

@@ -8,9 +8,9 @@ icon: icon-world
 tags: [translation, i18n, l10n, 1.7]
 ---
 
-## 1.7.8 strings are available for translation
-
 As you probably noticed with the announcement of the [beta release]( https://build.prestashop.com/news/prestashop-1-7-8-0-beta-release/) a few days ago, PrestaShop 1.7.8 is on its way! While it brings new features, this new version also means new strings. A file containing all 1.7.8 strings has been pushed to [Crowdin](https://crowdin.com/project/prestashop-official), and is ready for translation! 
+
+## 1.7.8 strings are available for translation
 
 Translators, proofreaders… your project needs you! Feel free to take a look at those new strings and help your language reach 100% translation. :muscle:
 

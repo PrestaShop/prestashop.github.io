@@ -2,7 +2,7 @@
 layout: post
 title:  "Multistore feature in PrestaShop 1.7.8: What's new?"
 subtitle: "Introducing the revamp of the multistore"
-date:   2021-06-15 16:00:00
+date:   2021-06-15 09:00:00
 authors: [MarionFrancois]
 icon: icon-lightning
 tags:

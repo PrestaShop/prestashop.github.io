@@ -81,7 +81,7 @@ When checkboxes are not selected, the fields or toggles are disabled.
 Checkboxes allow:
 - to select one or many fields/toggles
 - to enable selected fields/toggles
-- to apply a different configuration for the selected shop or group
+- to apply a different configuration for the selected store or group
 - the merchant to see which parameters have a different value for the selected store or group
 
 ![Multistore checkboxes](/assets/images/2021/06/multistore_checkboxes.png)

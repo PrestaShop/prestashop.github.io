@@ -38,7 +38,7 @@ Secondly, we made a competitive analysis to identify opportunities and threats.
 
 Then, once the pain points were well understood and with better knowledge of the market, the Product team and Product designers organized mockup tests to present different solutions to users.
 
-Finally, pain points encountered have been addressed with a new user interface, new features, and more information messages.
+Finally, pain points encountered were addressed with a new user interface, new features, and more information messages.
  
 **Now, let’s present these changes.**
 

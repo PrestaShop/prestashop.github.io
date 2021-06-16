@@ -49,7 +49,7 @@ To solve this problem, a color picker has been added to choose a color for each 
 
 ![The new multistore colorpicker](/assets/images/2021/06/multistore_colorpicker.png)
 
-Once configured, the color is displayed in the new multistore header, when a group or a shop is selected, making it easy to know what's the current shop straight away.
+Once configured, the color is displayed in the new multistore header, when a group or a shop is selected, making it easy for the user to know what shop he/she is working on.
 
 ![The new multistore header](/assets/images/2021/06/multistore_header_maintenance.png)
 

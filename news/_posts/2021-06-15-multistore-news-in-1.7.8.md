@@ -45,7 +45,7 @@ Finally, pain points encountered were addressed with a new user interface, new f
 ## I.  The new color system and multistore header
 One of the main difficulties for the merchants was to know which store they were configuring in the back office and this was bringing a lot of configuration errors.
 
-To solve this problem, a color picker has been added to choose a color for each group and shop. The color can be configured while creating or editing the group or the shop (in the back-office > Advanced parameters > Multistore).
+To solve this problem, a color picker was added to choose a color for each group and shop. The color can be configured while creating or editing the group or the shop (in the back-office > Advanced parameters > Multistore).
 
 ![The new multistore colorpicker](/assets/images/2021/06/multistore_colorpicker.png)
 
@@ -65,7 +65,7 @@ Please note, the “all shops” context is blue by default and this color can�
 
 **The new header**
 
-The new multistore header is displayed on Symfony pages and is more visible than the old shop context selector, still present on legacy pages. Merchants can find in this header everything related to the multistore and can perform several actions:
+The new multistore header is displayed on Symfony pages and is more visible than the old shop context selector, still present on legacy pages. Merchants can find in this header everything related to the multistore feature and can perform several actions:
 
 - Changing context through the drop-down: Select “All shops” context to apply a change to all stores, select a group of shops to apply changes to all the stores of this group, or select a specific store.
 - Changing context through the search bar with autocompletion: allows you to search and select a shop or a group quickly, this is particularly helpful if you have a lot of shops.
@@ -86,12 +86,12 @@ Checkboxes allow:
 
 ![Multistore checkboxes](/assets/images/2021/06/multistore_checkboxes.png)
  
-For now, they have been implemented **only on the Maintenance page of the back office**. It will be implemented on the pages not yet migrated during the Symfony migration. For the pages already migrated in Symfony, we are looking for developers to implement it, so if you are willing to do this, please let us know :)
+For now, they have been implemented **only on the Maintenance page of the back office**. It will be implemented on the pages not yet migrated during the Symfony migration. For the pages already migrated in Symfony, we are looking for developers to implement it, so if you are willing to do this, please let us know in a comment :)
  
 ## III.  Specific settings drop-down
 This drop-down is displayed in the “all shops” context and group contexts. It allows you to see which settings have been customized in one or several specific shops. And therefore, the settings that will not be overridden following a change made in “all shops” or in a group context.
 
-For now, it has been implemented **only on the Maintenance page of the back office**. It will be implemented on the pages not yet migrated during the Symfony migration. For the pages already migrated in Symfony, we are looking for developers to implement it, so if you are willing to do this, please let us know :)
+For now, it has been implemented **only on the Maintenance page of the back office**. It will be implemented on the pages not yet migrated during the Symfony migration. For the pages already migrated in Symfony, we are looking for developers to implement it, so if you are willing to do this, please let us know in a comment :)
 
 **Search bar** 
 

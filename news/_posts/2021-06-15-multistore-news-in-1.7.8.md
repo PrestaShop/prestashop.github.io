@@ -36,7 +36,7 @@ First, to have a better understanding of our users' pain points, we interviewed 
 
 Secondly, we made a competitive analysis to identify opportunities and threats.
 
-Then, once the pain points were well understood and with a good knowledge of the market, the product team and product designer thought about different solutions that we confronted with our users during mockup tests.
+Then, once the pain points were well understood and with better knowledge of the market, the Product team and Product designers organized mockup tests to present different solutions to users.
 
 Finally, pain points encountered have been addressed with a new user interface, new features, and more information messages.
  

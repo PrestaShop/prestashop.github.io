@@ -34,7 +34,7 @@ This decision opened an opportunity to revamp the multistore feature which would
 
 First, to have a better understanding of our users' pain points, we interviewed merchants with a different number of shops and different business activities such as B2B / B2C, selling in different countries. We also interviewed web agencies of different sizes. 
 
-Secondly, we studied what was done by our competitors to identify opportunities and threats.
+Secondly, we made a competitive analysis to identify opportunities and threats.
 
 Then, once the pain points were well understood and with a good knowledge of the market, the product team and product designer thought about different solutions that we confronted with our users during mockup tests.
 

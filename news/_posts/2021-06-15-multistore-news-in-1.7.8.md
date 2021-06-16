@@ -32,7 +32,7 @@ This decision opened an opportunity to revamp the multistore feature which would
 **A long process to ensure the full success of the revamp.**
 
 
-First, to have a better understanding of our users' pain points, we have interviewed merchants with a different number of shops and different business activities such as B2B / B2C, selling in different countries. We also interviewed web agencies of different sizes. 
+First, to have a better understanding of our users' pain points, we interviewed merchants with a different number of shops and different business activities such as B2B / B2C, selling in different countries. We also interviewed web agencies of different sizes. 
 
 Secondly, we studied what was done by our competitors to identify opportunities and threats.
 

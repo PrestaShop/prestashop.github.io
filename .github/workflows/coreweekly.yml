@@ -8,8 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Set variable LAST_WEEK_NUM
+      run: echo "LAST_WEEK_NUM=`date -d 'last week' +"%U"`" >> $GITHUB_ENV
+
     - name: Set variable WEEK_NUM
-      run: echo "WEEK_NUM=`date -d 'last week' +"%U"`" >> $GITHUB_ENV
+      run: echo "WEEK_NUM=`date +"%U"`" >> $GITHUB_ENV
 
     - name: Set variable YEAR
       run: echo "YEAR=`date -d 'last week' +"%Y"`" >> $GITHUB_ENV
@@ -29,16 +32,16 @@ jobs:
       run: cd ~/core-weekly-generator && pip install -r requirements.txt
  
     - name: Generate Core Weekly for the current week
-      run: cd ~/core-weekly-generator && python core-weekly.py --week ${{ env.WEEK_NUM }} > $GITHUB_WORKSPACE/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-${{ env.WEEK_NUM }}-%Y.md")
+      run: cd ~/core-weekly-generator && python core-weekly.py --week ${{ env.WEEK_NUM }} > $GITHUB_WORKSPACE/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-${{ env.LAST_WEEK_NUM }}-%Y.md")
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: Added Core Weekly ${{ env.WEEK_NUM }} of ${{ env.YEAR }}
+        commit-message: Added Core Weekly ${{ env.LAST_WEEK_NUM }} of ${{ env.YEAR }}
         committer: PrestonBot <noreply@github.com>
         author: prestonBot <prestonBot@users.noreply.github.com>
-        title: 'Added Core Weekly ${{ env.WEEK_NUM }} of ${{ env.YEAR }}'
-        body: Added Core Weekly ${{ env.WEEK_NUM }} of ${{ env.YEAR }}
+        title: 'Added Core Weekly ${{ env.LAST_WEEK_NUM }} of ${{ env.YEAR }}'
+        body: Added Core Weekly ${{ env.LAST_WEEK_NUM }} of ${{ env.YEAR }}
         base: 'master'
         delete-branch: true

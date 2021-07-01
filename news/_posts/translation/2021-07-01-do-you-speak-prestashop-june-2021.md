@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – June 2021 edition"
 subtitle: "Where you'll learn that you can join the translator community on Slack! "
-date: 2021-07-01
+date: 2021-07-01 16:00:00
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg
@@ -24,7 +24,10 @@ The new 1.7.8 strings were added to Crowdin for the first time at the end of May
 Until now, to exchange with the community, we used the “Discussions” tab on Crowdin. But this option seemed a bit limited as it is not possible to share images, and there is little interaction. That’s why we decided to open a **Slack channel dedicated to the PrestaShop translators**. 
 On this channel, I will share information about the translation project. You will also be informed about the publication of the Crowdin monthly report. Of course, you will also be able to ask questions, suggest ideas, or get in touch with other translators.
 
-[Join us](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg) on the PrestaShop Open Source Slack! When you’re in, you will be able to join the #translation channel.
+[Join us on Slack](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg){: .btn .btn-lg .btn-success}
+{: .text-center}
+
+Join us on the PrestaShop Open Source Slack! When you’re in, you will be able to join the #translation channel.
 
 ### Share your thoughts on a wording issue
 It was suggested in the issue [#24954](https://github.com/PrestaShop/PrestaShop/issues/24954) to replace "product combination" with "product variation" in the back office. As this wording has been used for some time in the back office, we wouldn't want to create confusion. So, in order to get merchants' thoughts on this topic, we created a [quick survey](https://forms-prestashop.typeform.com/to/lgX5aZea).
@@ -113,9 +116,8 @@ Congratulations! And a special thanks to [Zoran Tejic](https://crowdin.com/profi
 
 A huge thank you to all the contributors!
  
-Of course, this is highlighting the languages that made some progress with new translations; but it does not mean that the languages that are not mentioned here are not active. Indeed, some editing and rewriting could be going on, but the percentage of translation would not be modified (since it is working on strings that are already translated). So let's not forget about the work of other contributors! Thanks to you too!
+Of course, this is highlighting the languages that made some progress with new translations; but it does not mean that the languages that are not mentioned here are not active. Indeed, some editing and rewriting could be going on, but the percentage of translation would not be modified (since the work happens on strings that are already translated). So let's not forget about the work of other contributors! Thanks to you too!
 
 If you have not joined us on Crowdin yet, [it is never too late](https://crowdin.com/project/prestashop-official)! :wink:
  
 If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let me know: I will include a word about it in the next monthly report.
-

@@ -17,7 +17,7 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 
 ### New 1.7.8 strings are available for translation
 
-The new 1.7.8 strings were added to Crowdin for the first time at the end of May. Since then, some of you reported a few mistakes in the source strings, that we were able to correct and add on Crowdin, on June 24. Thank you very much for your help! That was the last push, so no new strings should be added to the 1.7.8 catalog from now on. In order to get back to a 100% completion rate, all the new strings should be translated and validated... Your project needs you! :muscle: 
+The new 1.7.8 strings were added to Crowdin for the first time at the end of May. Since then, some of you have reported a few mistakes in the source strings, that we were able to correct and add on Crowdin, on June 24. Thank you very much for your help! That was the last push, so no new strings should be added to the 1.7.8 catalog from now on. In order to get back to a 100% completion rate, all the new strings should be translated and validated... Your project needs you! :muscle: 
 
 ### Let’s keep in touch on Slack
 

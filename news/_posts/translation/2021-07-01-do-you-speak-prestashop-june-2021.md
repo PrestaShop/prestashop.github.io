@@ -25,6 +25,7 @@ Until now, to exchange with the community, we used the “Discussions” tab on 
 On this channel, I will share information about the translation project. You will also be informed about the publication of the Crowdin monthly report. Of course, you will also be able to ask questions, suggest ideas, or get in touch with other translators.
 
 [Join us](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg) on the PrestaShop Open Source Slack! When you’re in, you will be able to join the #translation channel.
+
 ### Share your thoughts on a wording issue
 It was suggested in the issue [#24954](https://github.com/PrestaShop/PrestaShop/issues/24954) to replace "product combination" with "product variation" in the back office. As this wording has been used for some time in the back office, we wouldn't want to create confusion. So, in order to get merchants' thoughts on this topic, we created a [quick survey](https://forms-prestashop.typeform.com/to/lgX5aZea).
 So, if you are reading this and you are a merchant using PrestaShop, feel free to complete this survey and share it with merchants in your network. :pray:
@@ -104,7 +105,7 @@ The following languages had the best progress thanks to the translation communit
  
 * **Serbian (Latin)** (+36% to reach 97% translated and validated) 
 * **Czech** (+5% to reach 99% translated)
-* **Greek** (+5% to reach 100% translated and validated :tada: )
+* **Greek** (+5% to reach 100% translated and validated)
 
 Congratulations! And a special thanks to [Zoran Tejic](https://crowdin.com/profile/zotamal) who worked a lot on the Serbian project lately. Only 3% left before the language is fully available, almost there! Feel free to [contact me](https://crowdin.com/profile/julievrz) if you want to help the Serbian translators reach 100%.
  

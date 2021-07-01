@@ -110,7 +110,7 @@ The following languages had the best progress thanks to the translation communit
 * **Czech** (+5% to reach 99% translated)
 * **Greek** (+5% to reach 100% translated and validated)
 
-Congratulations! And a special thanks to [Zoran Tejic](https://crowdin.com/profile/zotamal) who worked a lot on the Serbian project lately. Only 3% left before the language is fully available, almost there! Feel free to [contact me](https://crowdin.com/profile/julievrz) if you want to help the Serbian translators reach 100%.
+Congratulations! And special thanks to [Zoran Tejic](https://crowdin.com/profile/zotamal) who worked a lot on the Serbian project lately. Only 3% left before the language is fully available, almost there! Feel free to [contact me](https://crowdin.com/profile/julievrz) if you want to help the Serbian translators reach 100%.
  
 ![Best translation progress in June 2021](/assets/images/2021/07/build-crowdin-progress-june21.png)
 

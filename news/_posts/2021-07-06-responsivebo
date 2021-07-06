@@ -1,0 +1,134 @@
+--- 
+layout: post
+title:  "Multistore feature in PrestaShop 1.7.8: What's new?"
+subtitle: "Introducing the revamp of the multistore"
+date:   2021-07-06 09:00:00
+authors: [ScottCosio]
+icon: icon-lightning
+tags:
+ - 1.7.8
+ - version
+ - minor
+ - product
+ - ux
+---
+
+# Towards a more mobile-friendly back office
+
+## Why work on responsive design?
+
+Until now, PrestaShop has always relied on a desktop-first responsive design strategy. Indeed, there are few uses cases on mobile. But you can't prevent users from checking their store's back office on their mobile!
+
+Today, there are some issues that affect the user experience on mobile device:
+
+- Difficulties in accessing important store informations
+- Hidden contents because of components overlaying others
+- Text readability issues
+- Bugs and lack of consistency on display
+
+All of these issues cause a bad reputation for the PrestaShop open source project.
+
+## First steps: quick wins 💪🏻
+
+Valentin (front-end developer), and I, Scott (product designer), didn't have much time to work on this project. So, to avoid breaking changes, we updated the back office mobile version thanks to "quick wins".
+
+> A quick win is a small change, that is quick and easy to implement but that has a big and visible impact for the user.
+
+### Process
+
+The Core team first explored PrestaShop issues about responsive design on GitHub and centralized them by creating a [single Epic.](https://github.com/PrestaShop/PrestaShop/issues/22358)
+
+In parallel, we explored all back office pages on mobile version and discussed a lot about software responsiveness. For each problem, a specific issue was created and added to the Epic. 
+
+The Epic was organized in 3 different categories:
+
+- Remove components - components that aren't important or used in mobile version
+- Improvements - optimizing navigation, optimizing space, etc
+- Bugs - display adjustments, broken pages, etc
+
+### What has changed?
+
+**Removing components**
+
+Some components are available on mobile version but aren't necessarily useful and become easily annoying for the user experience.
+
+- The "Recommended Modules and Services" button has been removed because of the PrestaShop open source projects' split. It's not available anymore.
+- The "Import" and "Export" buttons have been removed for tables because importing or exporting .csv files is better on larger screens and wasn't something usually handled on mobile version.
+- Breadcrumbs have been removed because it's not really necessary since there is barely more than 2 depth levels.
+- In the header, "View my shop" text has been removed to shorten the button and save space in the header/top bar. The Core team decided to only keep the icon.
+- "Merchant Expertise" button has been removed because mobile users are firstly looking for order updates from their shop. Keeping this button affected the header/top bar and made it  condensed so the Core team chose to keep the essentials.
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7d09dade-8a05-47fb-86aa-4da2fd4c023a/image_2_(1).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7d09dade-8a05-47fb-86aa-4da2fd4c023a/image_2_(1).png)
+
+Before: with "View my shop" text
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/daccb56a-cc6e-49ce-95fc-c53cadad510e/image_1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/daccb56a-cc6e-49ce-95fc-c53cadad510e/image_1.png)
+
+After: "View my shop" text and "Merchant Expertise" button removed
+
+**Display optimization**
+
+- Some components were glued to the edges of the mobile screen, and some weren't. In order to keep consistency, there is a minimum of 16 px padding left and right on the mobile version.
+- Font size used for the navigation drawer was too big (20 px), it was changed for a 16 px font size. Now that users have less scroll to do, they can access the other back office pages more easily.
+- The header and KPIs containers on the mobile version took up half of the screen space, hiding essential cards. For that reason, the Design team redesigned the KPIs containers and make sure to optimize the space. Users can now access other KPIs pans by simply horizontally scrolling on their screen.
+
+**Feature**
+
+- According to Google Material Design's definition: "A floating action button (FAB) represents the primary action of a screen". The Core team created this component exclusively on mobile version to make primary buttons easier to reach by placing it on the bottom right corner of the screen, and also to save space.
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f37025c1-4ca0-47b7-b629-bc338c9bd5e5/image_11_(1).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f37025c1-4ca0-47b7-b629-bc338c9bd5e5/image_11_(1).png)
+
+Before: less reachability for buttons and header was quite big
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50e9820b-e3a5-4c93-ac52-b48db3c32f3d/image_10.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50e9820b-e3a5-4c93-ac52-b48db3c32f3d/image_10.png)
+
+After: primary and secondary actions in the FAB
+
+**Navigation optimization**
+
+The accessibility and reachability issues have been solved on the mobile version.
+
+- When users clicked on the hamburger menu to access the navigation drawer, the header was sticky and was overlaying it. Users couldn't access the Dashboard page and could barely tap on the Orders tab. The problem is now fixed, as the header isn't sticky anymore.
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/73a8db6a-41e0-438d-be6c-f19a4c035214/image_3_(1).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/73a8db6a-41e0-438d-be6c-f19a4c035214/image_3_(1).png)
+
+Before: the header is overlaying the navigation drawer
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/299a5506-ac0f-4204-a945-24b5f46e27d0/image_4.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/299a5506-ac0f-4204-a945-24b5f46e27d0/image_4.png)
+
+After: the header isn't sticky anymore
+
+- Notifications and profile weren't accessible and it was difficult to quit the pop-in once clicked. The Design team redesigned the pop-in and placed it just under the selected icon to easily understand which icon the pop-in is related to. Also, an indicator was added under the selected icon so it's more identifiable. You can notice a change on the icon used for the "Your profile" button in the profile pop-in, it represents more the feature of editing. A sign out icon was added next to the "Sign out" text and put both in red so the text button is more visible.
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00170721-6046-4642-8fb5-0ec6e43f233f/image_7.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00170721-6046-4642-8fb5-0ec6e43f233f/image_7.png)
+
+Before: difficult to quit the pop-in
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0ef69072-8005-48d8-8fc0-b4c2bec574e1/Group_1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0ef69072-8005-48d8-8fc0-b4c2bec574e1/Group_1.png)
+
+After: easy to quit the notificaitons pop-in
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ebea9a2-9731-43ca-8bc7-f2ab191517a8/image_6.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ebea9a2-9731-43ca-8bc7-f2ab191517a8/image_6.png)
+
+After: easy to quit the profile pop-in
+
+**Broken pages examples**
+
+A lot of pages were not displayed properly: texts overlapped, making the content unreadable. Because of the lack of structure, it was also difficult to understand to which group was associated each button.
+In UX, this law is called the ["Law of Common Region"](https://lawsofux.com/law-of-common-region/) which stipulates that "Elements tend to be perceived into groups if they are sharing an area with a clearly defined boundary". 
+
+- The stock management page was considered as a broken page and it was redesigned by applying the previous rules (removing import/export buttons, removing the help button, maintaining a minimum of 16 px padding left and right).
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d0313e9f-6111-4103-83f6-2cd161de3666/image_9.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d0313e9f-6111-4103-83f6-2cd161de3666/image_9.png)
+
+Before: stock management page completely broken
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a4464cd8-ee32-4429-ad2e-f68abbb7c989/Group_2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a4464cd8-ee32-4429-ad2e-f68abbb7c989/Group_2.png)
+
+After: display fixes
+
+### What's next? 🚀
+
+After the quick wins, it's time for bigger changes! The Core team will work on more complex issues, such as tables, that involve breaking changes.
+
+Now that the Core team have worked on quick wins in the back office, specific topics that are more complex and that involve breaking changes such as tables can be started. Usability tests will be performed in order to make sure that the back office is now completely usable.

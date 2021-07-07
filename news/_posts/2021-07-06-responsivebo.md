@@ -4,7 +4,7 @@ title:  "Towards a more mobile-friendly back office"
 subtitle: "Quick wins of the responsive back office"
 date:   2021-07-06 09:00:00
 authors: [ScottCosio]
-icon: icon-lightning
+icon: icon-mobile
 tags:
  - 1.7.8
  - version

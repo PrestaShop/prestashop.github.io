@@ -13,11 +13,9 @@ tags:
  - ux
 ---
 
-# Towards a more mobile-friendly back office
+Until now, PrestaShop has always relied on a desktop-first responsive design strategy. Indeed, there are few uses cases on mobile. But you can't prevent users from checking their store's back office on their mobile!
 
 ## Why work on responsive design?
-
-Until now, PrestaShop has always relied on a desktop-first responsive design strategy. Indeed, there are few uses cases on mobile. But you can't prevent users from checking their store's back office on their mobile!
 
 Today, there are some issues that affect the user experience on mobile device:
 

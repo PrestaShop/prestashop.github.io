@@ -58,13 +58,9 @@ Some components are available on mobile version but aren't necessarily useful an
 - In the header, "View my shop" text has been removed to shorten the button and save space in the header/top bar. The Core team decided to only keep the icon.
 - "Merchant Expertise" button has been removed because mobile users are firstly looking for order updates from their shop. Keeping this button affected the header/top bar and made it  condensed so the Core team chose to keep the essentials.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7d09dade-8a05-47fb-86aa-4da2fd4c023a/image_2_(1).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7d09dade-8a05-47fb-86aa-4da2fd4c023a/image_2_(1).png)
+![Before: with "View my shop" text](/assets/images/2021/07/01-header-before.png)
 
-Before: with "View my shop" text
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/daccb56a-cc6e-49ce-95fc-c53cadad510e/image_1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/daccb56a-cc6e-49ce-95fc-c53cadad510e/image_1.png)
-
-After: "View my shop" text and "Merchant Expertise" button removed
+![After: "View my shop" text and "Merchant Expertise" button removed](/assets/images/2021/07/01-header-after.png)
 
 **Display optimization**
 
@@ -76,13 +72,9 @@ After: "View my shop" text and "Merchant Expertise" button removed
 
 - According to Google Material Design's definition: "A floating action button (FAB) represents the primary action of a screen". The Core team created this component exclusively on mobile version to make primary buttons easier to reach by placing it on the bottom right corner of the screen, and also to save space.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f37025c1-4ca0-47b7-b629-bc338c9bd5e5/image_11_(1).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f37025c1-4ca0-47b7-b629-bc338c9bd5e5/image_11_(1).png)
+![Before: less reachability for buttons and header was quite big](/assets/images/2021/07/02-reachability-before.png)
 
-Before: less reachability for buttons and header was quite big
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50e9820b-e3a5-4c93-ac52-b48db3c32f3d/image_10.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50e9820b-e3a5-4c93-ac52-b48db3c32f3d/image_10.png)
-
-After: primary and secondary actions in the FAB
+![After: primary and secondary actions in the FAB](/assets/images/2021/07/02-reachability-after.png)
 
 **Navigation optimization**
 
@@ -90,27 +82,17 @@ The accessibility and reachability issues have been solved on the mobile version
 
 - When users clicked on the hamburger menu to access the navigation drawer, the header was sticky and was overlaying it. Users couldn't access the Dashboard page and could barely tap on the Orders tab. The problem is now fixed, as the header isn't sticky anymore.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/73a8db6a-41e0-438d-be6c-f19a4c035214/image_3_(1).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/73a8db6a-41e0-438d-be6c-f19a4c035214/image_3_(1).png)
+![Before: the header is overlaying the navigation drawer](/assets/images/2021/07/03-navigation-drawer-before.png)
 
-Before: the header is overlaying the navigation drawer
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/299a5506-ac0f-4204-a945-24b5f46e27d0/image_4.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/299a5506-ac0f-4204-a945-24b5f46e27d0/image_4.png)
-
-After: the header isn't sticky anymore
+![After: the header isn't sticky anymore](/assets/images/2021/07/03-navigation-drawer-before.png)
 
 - Notifications and profile weren't accessible and it was difficult to quit the pop-in once clicked. The Design team redesigned the pop-in and placed it just under the selected icon to easily understand which icon the pop-in is related to. Also, an indicator was added under the selected icon so it's more identifiable. You can notice a change on the icon used for the "Your profile" button in the profile pop-in, it represents more the feature of editing. A sign out icon was added next to the "Sign out" text and put both in red so the text button is more visible.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00170721-6046-4642-8fb5-0ec6e43f233f/image_7.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00170721-6046-4642-8fb5-0ec6e43f233f/image_7.png)
+![Before: difficult to quit the pop-in](/assets/images/2021/07/04-popin-before.png)
 
-Before: difficult to quit the pop-in
+![After: easy to quit the notificaitons pop-in](/assets/images/2021/07/04-popin-notifications-after.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0ef69072-8005-48d8-8fc0-b4c2bec574e1/Group_1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0ef69072-8005-48d8-8fc0-b4c2bec574e1/Group_1.png)
-
-After: easy to quit the notificaitons pop-in
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ebea9a2-9731-43ca-8bc7-f2ab191517a8/image_6.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ebea9a2-9731-43ca-8bc7-f2ab191517a8/image_6.png)
-
-After: easy to quit the profile pop-in
+![After: easy to quit the profile pop-in](/assets/images/2021/07/04-popin-profile-after.png)
 
 **Broken pages examples**
 
@@ -119,13 +101,9 @@ In UX, this law is called the ["Law of Common Region"](https://lawsofux.com/law-
 
 - The stock management page was considered as a broken page and it was redesigned by applying the previous rules (removing import/export buttons, removing the help button, maintaining a minimum of 16 px padding left and right).
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d0313e9f-6111-4103-83f6-2cd161de3666/image_9.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d0313e9f-6111-4103-83f6-2cd161de3666/image_9.png)
+![Before: stock management page completely broken](/assets/images/2021/07/05-broken-page-before.png)
 
-Before: stock management page completely broken
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a4464cd8-ee32-4429-ad2e-f68abbb7c989/Group_2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a4464cd8-ee32-4429-ad2e-f68abbb7c989/Group_2.png)
-
-After: display fixes
+![After: display fixes](/assets/images/2021/07/05-broken-page-after.png)
 
 ### What's next? 🚀
 

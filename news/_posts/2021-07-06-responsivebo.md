@@ -58,7 +58,11 @@ Some components are available on mobile version but aren't necessarily useful an
 - In the header, "View my shop" text has been removed to shorten the button and save space in the header/top bar. The Core team decided to only keep the icon.
 - "Merchant Expertise" button has been removed because mobile users are firstly looking for order updates from their shop. Keeping this button affected the header/top bar and made it  condensed so the Core team chose to keep the essentials.
 
+**Before: with "View my shop" text**
+
 ![Before: with "View my shop" text](/assets/images/2021/07/01-header-before.png)
+
+**After: "View my shop" text and "Merchant Expertise" button removed**
 
 ![After: "View my shop" text and "Merchant Expertise" button removed](/assets/images/2021/07/01-header-after.png)
 
@@ -72,7 +76,11 @@ Some components are available on mobile version but aren't necessarily useful an
 
 - According to Google Material Design's definition: "A floating action button (FAB) represents the primary action of a screen". The Core team created this component exclusively on mobile version to make primary buttons easier to reach by placing it on the bottom right corner of the screen, and also to save space.
 
+**Before: less reachability for buttons and header was quite big**
+
 ![Before: less reachability for buttons and header was quite big](/assets/images/2021/07/02-reachability-before.png)
+
+**After: primary and secondary actions in the FAB**
 
 ![After: primary and secondary actions in the FAB](/assets/images/2021/07/02-reachability-after.png)
 
@@ -82,15 +90,25 @@ The accessibility and reachability issues have been solved on the mobile version
 
 - When users clicked on the hamburger menu to access the navigation drawer, the header was sticky and was overlaying it. Users couldn't access the Dashboard page and could barely tap on the Orders tab. The problem is now fixed, as the header isn't sticky anymore.
 
+**Before: the header is overlaying the navigation drawer**
+
 ![Before: the header is overlaying the navigation drawer](/assets/images/2021/07/03-navigation-drawer-before.png)
+
+**After: the header isn't sticky anymore**
 
 ![After: the header isn't sticky anymore](/assets/images/2021/07/03-navigation-drawer-before.png)
 
 - Notifications and profile weren't accessible and it was difficult to quit the pop-in once clicked. The Design team redesigned the pop-in and placed it just under the selected icon to easily understand which icon the pop-in is related to. Also, an indicator was added under the selected icon so it's more identifiable. You can notice a change on the icon used for the "Your profile" button in the profile pop-in, it represents more the feature of editing. A sign out icon was added next to the "Sign out" text and put both in red so the text button is more visible.
 
+**Before: difficult to quit the pop-in**
+
 ![Before: difficult to quit the pop-in](/assets/images/2021/07/04-popin-before.png)
 
-![After: easy to quit the notificaitons pop-in](/assets/images/2021/07/04-popin-notifications-after.png)
+**After: easy to quit the notifications pop-in**
+
+![After: easy to quit the notifications pop-in](/assets/images/2021/07/04-popin-notifications-after.png)
+
+**After: easy to quit the profile pop-in**
 
 ![After: easy to quit the profile pop-in](/assets/images/2021/07/04-popin-profile-after.png)
 
@@ -101,7 +119,11 @@ In UX, this law is called the ["Law of Common Region"](https://lawsofux.com/law-
 
 - The stock management page was considered as a broken page and it was redesigned by applying the previous rules (removing import/export buttons, removing the help button, maintaining a minimum of 16 px padding left and right).
 
+**Before: stock management page completely broken**
+
 ![Before: stock management page completely broken](/assets/images/2021/07/05-broken-page-before.png)
+
+**After: display fixes**
 
 ![After: display fixes](/assets/images/2021/07/05-broken-page-after.png)
 

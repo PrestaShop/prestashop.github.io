@@ -1,8 +1,8 @@
 --- 
 layout: post
-title:  "Towards a more mobile-friendly back office"
+title: "Towards a more mobile-friendly back office"
 subtitle: "Quick wins for a responsive back office"
-date:   2021-07-15 10:00:00
+date: 2021-07-15 10:00:00
 authors: [ScottCosio]
 icon: icon-mobile
 tags:
@@ -50,7 +50,7 @@ The Epic was organized in 3 different categories:
 
 Some components are available on mobile version but aren't necessarily useful and become easily annoying for the user experience.
 
-- The "Recommended Modules and Services" button has been removed because of the PrestaShop open source projects' split. It's not available anymore.
+- The "Recommended Modules and Services" button has been removed thanks of the work being done on the PrestaShop open source project. It's not available anymore.
 - The "Import" and "Export" buttons have been removed for tables because importing or exporting .csv files is better on larger screens and wasn't usually handled on mobile versions.
 - Breadcrumbs have been removed because it's not really necessary since there is barely more than 2 depth levels.
 - In the header, "View my shop" text has been removed to shorten the button and save space in the header/top bar. Only the icon was kept.

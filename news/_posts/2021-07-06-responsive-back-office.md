@@ -13,18 +13,18 @@ tags:
  - ux
 ---
 
-Until now, PrestaShop has always relied on a desktop-first responsive design strategy. Indeed, there are few uses cases on mobile. But you can't prevent users from checking their store's back office on their mobile!
+Until now, PrestaShop has always relied on a desktop-first responsive design strategy. Indeed, there are few use cases on mobile. But you can't prevent users from checking their store's back office on their mobile!
 
 ## Why work on responsive design?
 
-Today, there are some issues that affect the user experience on mobile device:
+Until now, they were some issues that affected the user experience on mobile:
 
-- Difficulties in accessing important store informations
+- Difficulties in accessing important store information
 - Hidden contents because of components overlaying others
 - Text readability issues
 - Bugs and lack of consistency on display
 
-All of these issues cause a bad reputation for the PrestaShop open source project.
+All of these issues caused a bad reputation for the PrestaShop open source project.
 
 ## First steps: quick wins 💪🏻
 
@@ -51,10 +51,10 @@ The Epic was organized in 3 different categories:
 Some components are available on mobile version but aren't necessarily useful and become easily annoying for the user experience.
 
 - The "Recommended Modules and Services" button has been removed because of the PrestaShop open source projects' split. It's not available anymore.
-- The "Import" and "Export" buttons have been removed for tables because importing or exporting .csv files is better on larger screens and wasn't something usually handled on mobile version.
+- The "Import" and "Export" buttons have been removed for tables because importing or exporting .csv files is better on larger screens and wasn't usually handled on mobile versions.
 - Breadcrumbs have been removed because it's not really necessary since there is barely more than 2 depth levels.
-- In the header, "View my shop" text has been removed to shorten the button and save space in the header/top bar. The Core team decided to only keep the icon.
-- "Merchant Expertise" button has been removed because mobile users are firstly looking for order updates from their shop. Keeping this button affected the header/top bar and made it  condensed so the Core team chose to keep the essentials.
+- In the header, "View my shop" text has been removed to shorten the button and save space in the header/top bar. Only the icon was kept.
+- The "Merchant Expertise" button has been removed because mobile users are firstly looking for order updates from their shop. Keeping this button affected the header/top bar and made it condensed so the Core team chose to keep the essentials.
 
 **Before: with "View my shop" text**
 
@@ -128,5 +128,4 @@ In UX, this law is called the ["Law of Common Region"](https://lawsofux.com/law-
 ### What's next? 🚀
 
 After the quick wins, it's time for bigger changes! The Core team will work on more complex issues, such as tables, that involve breaking changes.
-
-Now that the Core team have worked on quick wins in the back office, specific topics that are more complex and that involve breaking changes such as tables can be started. Usability tests will be performed in order to make sure that the back office is now completely usable.
+Usability tests will be performed in order to make sure that the back office will be completely usable.

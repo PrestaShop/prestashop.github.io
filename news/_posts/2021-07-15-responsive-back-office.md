@@ -2,7 +2,7 @@
 layout: post
 title:  "Towards a more mobile-friendly back office"
 subtitle: "Quick wins for a responsive back office"
-date:   2021-07-06 09:00:00
+date:   2021-07-15 10:00:00
 authors: [ScottCosio]
 icon: icon-mobile
 tags:

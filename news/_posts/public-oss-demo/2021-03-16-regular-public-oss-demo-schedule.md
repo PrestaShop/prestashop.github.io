@@ -14,6 +14,8 @@ Following [the February session](https://build.prestashop.com/news/public-oss-de
 
 We aim to host open source project's public demos the last Wednesday of each month at 2pm CET.
 
+_In July 2021 we have chosen to move the demo to the first Wednesday of each month at 4pm CET to better accommodate PrestaShop community worldwide schedule._
+
 That means that the March session will happen on [**Wednesday 31st of March 2021, 2pm CET**](https://www.youtube.com/watch?v=UJ_XQs8trs4).
 
 The session will be kept in record on YouTube, so it can be watched later if this timeslot is not suitable for you.
@@ -31,3 +33,5 @@ By the way, the Q&A session does not need to be about the demonstrations content
 
 **If you have suggestions or feedbacks about previous demo sessions or upcoming sessions, feel free to tell us in the comment section**
 
+
+_Note: the original article has been edited on Tuesday 13th of July 2021 to update the next session date and time._

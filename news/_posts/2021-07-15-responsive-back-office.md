@@ -28,7 +28,7 @@ All of these issues make it difficult for users to use PrestaShop on mobile devi
 
 ## First steps: quick wins 💪🏻
 
-[Valentin](https://www.linkedin.com/in/%F0%9F%9A%80-valentin-szczupak-0280aba1/) (front-end developer), and I, [Scott](https://www.linkedin.com/in/scottcosio/ (product designer), had a limited bandwidth to work on this project due to others features to work on. In order to avoid breaking changes, we only scoped small fixes on the mobile version of the backoffice a.k.a. quick wins.
+[Valentin](https://www.linkedin.com/in/%F0%9F%9A%80-valentin-szczupak-0280aba1/) (front-end developer), and I, [Scott](https://www.linkedin.com/in/scottcosio/) (product designer), had a limited bandwidth to work on this project due to others features to work on. In order to avoid breaking changes, we only scoped small fixes on the mobile version of the backoffice a.k.a. quick wins.
 
 > A quick win is a small change, that is quick and easy to implement but that has a big and visible impact for the user.
 

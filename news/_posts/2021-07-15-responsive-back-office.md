@@ -56,13 +56,16 @@ Some components are available on mobile version but aren't necessarily useful du
 - In the header, "View my shop" text has been removed to shorten the button and save space in the header/top bar. Only the icon was kept.
 - The "Merchant Expertise" button has been removed because mobile users are firstly looking for order updates from their shop. We gained some space on the top bar for more important features.
 
-**Before: with "View my shop" text**
-
-![Before: with "View my shop" text](/assets/images/2021/07/01-header-before.png)
-
-**After: "View my shop" text and "Merchant Expertise" button removed**
-
-![After: "View my shop" text and "Merchant Expertise" button removed](/assets/images/2021/07/01-header-after.png)
+<div class="row">
+    <div class="col-md-6">
+      <p>"View my shop” text</p>
+      <img src="/assets/images/2021/07/01-header-before.png" alt="View my shop text">
+    </div>
+    <div class="col-md-6">
+      <p>"View my shop" text and "Merchant Expertise" button removed</p>
+      <img src="/assets/images/2021/07/01-header-after.png" alt="View my shop and Merchant Expertise">
+    </div>
+</div>
 
 **Display optimization**
 

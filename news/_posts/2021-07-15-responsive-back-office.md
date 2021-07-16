@@ -58,12 +58,12 @@ Some components are available on mobile version but aren't necessarily useful du
 
 <div class="row">
     <div class="col-md-6">
-      <p>"View my shop” text</p>
-      <img src="/prestashop.github.io/assets/images/2021/07/01-header-before.png" alt="View my shop text">
+      <p>Before: "View my shop” text</p>
+      <img src="/prestashop.github.io/assets/images/2021/07/01-header-before.png" alt="header-before">
     </div>
     <div class="col-md-6">
-      <p>"View my shop" text and "Merchant Expertise" button removed</p>
-      <img src="/prestashop.github.io/assets/images/2021/07/01-header-after.png" alt="View my shop and Merchant Expertise">
+      <p>After: "View my shop" text and "Merchant Expertise" button removed</p>
+      <img src="/prestashop.github.io/assets/images/2021/07/01-header-after.png" alt="header-after">
     </div>
 </div>
 
@@ -77,41 +77,51 @@ Some components are available on mobile version but aren't necessarily useful du
 
 - According to Google Material Design's definition: "A floating action button (FAB) represents the primary action of a screen". The Core team created this component exclusively on mobile version to make primary buttons easier to reach by placing it on the bottom right corner of the screen, and also to save space.
 
-**Before: less reachability for buttons and header was quite big**
-
-![Before: less reachability for buttons and header was quite big](/assets/images/2021/07/02-reachability-before.png)
-
-**After: primary and secondary actions in the FAB**
-
-![After: primary and secondary actions in the FAB](/assets/images/2021/07/02-reachability-after.png)
-
+<div class="row">
+    <div class="col-md-6">
+      <p>Before: less reachability for buttons and header was quite big</p>
+      <img src="/prestashop.github.io/assets/images/2021/07/02-reachability-before.png" alt="reachability-before">
+    </div>
+    <div class="col-md-6">
+      <p>After: primary and secondary actions in the FAB</p>
+      <img src="/prestashop.github.io/assets/images/2021/07/02-reachability-after.png" alt="reachability-after">
+    </div>
+</div> 
+                                                                                                         
 **Navigation optimization**
 
 The accessibility and reachability issues of the navigation drawer and the header's content have been solved on the mobile version.
 
 - When users clicked on the hamburger menu to access the navigation drawer, the header was sticky and prevented users from viewing the first items. Users couldn't access the Dashboard page and could barely tap on the Orders tab. The header stickiness was removed to make the menu accessible again.
 
-**Before: the header is overlaying the navigation drawer**
-
-![Before: the header is overlaying the navigation drawer](/assets/images/2021/07/03-navigation-drawer-before.png)
-
-**After: the header isn't sticky anymore**
-
-![After: the header isn't sticky anymore](/assets/images/2021/07/03-navigation-drawer-before.png)
+<div class="row">
+    <div class="col-md-6">
+      <p>Before: the header is overylaying the navigation drawer</p>
+      <img src="/prestashop.github.io/assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-before">
+    </div>
+    <div class="col-md-6">
+      <p>After: the header isn't sticky anymore</p>
+      <img src="/prestashop.github.io/assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-after">
+    </div>
+</div>
 
 - Notifications and profile weren't accessible and it was difficult to quit the pop-in once clicked because it was almost in full page and the space to exit the pop-up was too small. The Design team redesigned the pop-in and placed it just under the selected icon to easily understand which icon the pop-in is related to. Also, an highlight was added to the selected icon to ease up identification of the selected tab. You can notice that the icon used for the profile editing button has been replaced by a more representative icon. An icon was added to the sign out link for a faster identification and the use of the red color makes it stand out from the rest.
 
-**Before: difficult to quit the pop-in**
 
-![Before: difficult to quit the pop-in](/assets/images/2021/07/04-popin-before.png)
-
-**After: easy to quit the notifications pop-in**
-
-![After: easy to quit the notifications pop-in](/assets/images/2021/07/04-popin-notifications-after.png)
-
-**After: easy to quit the profile pop-in**
-
-![After: easy to quit the profile pop-in](/assets/images/2021/07/04-popin-profile-after.png)
+<div class="row">
+    <div class="col-md-4">
+      <p>Before: difficult to quit the pop-in</p>
+      <img src="/prestashop.github.io/assets/images/2021/07/04-popin-before.png" alt="popin-before">
+    </div>
+    <div class="col-md-4">
+      <p>After: easy to quit the notifications pop-in</p>
+      <img src="/prestashop.github.io/assets/images/2021/07/04-popin-notifications-after.png" alt="popin-notifications-after">
+    </div>
+    <div class="col-md-4">
+      <p>After: easy to quit the profile pop-in</p>
+      <img src="/prestashop.github.io/assets/images/2021/07/04-popin-profile-after.png" alt="popin-profile-after">
+    </div>
+</div>
 
 **Broken pages examples**
 
@@ -120,13 +130,16 @@ In UX, this law is called the ["Law of Common Region"](https://lawsofux.com/law-
 
 - The stock management page was considered as a broken page and it was redesigned by applying the previous rules (removing import/export buttons, removing the help button, maintaining a minimum of 16 px padding left and right).
 
-**Before: stock management page completely broken**
-
-![Before: stock management page completely broken](/assets/images/2021/07/05-broken-page-before.png)
-
-**After: display fixes**
-
-![After: display fixes](/assets/images/2021/07/05-broken-page-after.png)
+<div class="row">
+    <div class="col-md-6">
+      <p>Before: stock management page completely broken</p>
+      <img src="/prestashop.github.io/assets/images/2021/07/05-broken-page-before.png" alt="broken-page-before">
+    </div>
+    <div class="col-md-6">
+      <p>After: display fixes</p>
+      <img src="/prestashop.github.io/assets/images/2021/07/05-broken-page-after.png" alt="broken-page-after">
+    </div>
+</div>
 
 ### What's next? 🚀
 

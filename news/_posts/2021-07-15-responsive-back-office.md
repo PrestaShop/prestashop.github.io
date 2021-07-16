@@ -59,11 +59,11 @@ Some components are available on mobile version but aren't necessarily useful du
 <div class="row">
     <div class="col-md-6">
       <p>"View my shop” text</p>
-      <img src="/assets/images/2021/07/01-header-before.png" alt="View my shop text">
+      <img src="/prestashop.github.io/assets/images/2021/07/01-header-before.png" alt="View my shop text">
     </div>
     <div class="col-md-6">
       <p>"View my shop" text and "Merchant Expertise" button removed</p>
-      <img src="/assets/images/2021/07/01-header-after.png" alt="View my shop and Merchant Expertise">
+      <img src="/prestashop.github.io/assets/images/2021/07/01-header-after.png" alt="View my shop and Merchant Expertise">
     </div>
 </div>
 

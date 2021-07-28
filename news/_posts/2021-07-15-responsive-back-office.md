@@ -75,7 +75,7 @@ Some components are available on mobile version but aren't necessarily useful du
 
 **Feature**
 
-- According to Google Material Design's definition: "A floating action button (FAB) represents the primary action of a screen". The Core team created this component exclusively on mobile version to make primary buttons easier to reach by placing it on the bottom right corner of the screen, and also to save space.
+- According to [Google Material Design's](https://material.io/design) definition: "A floating action button (FAB) represents the primary action of a screen". Maintainers created this component exclusively on mobile version to make primary buttons easier to reach by placing it on the bottom right corner of the screen, and also to save space.
 
 <div class="row">
     <div class="col-md-6">

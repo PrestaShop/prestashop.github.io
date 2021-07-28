@@ -143,5 +143,5 @@ In UX, this law is called the ["Law of Common Region"](https://lawsofux.com/law-
 
 ### What's next? 🚀
 
-After the quick wins, it's time for bigger changes! The Core team will work on more complex issues involving breaking changes such as tables.
+After the quick wins, it's time for bigger changes! Maintainers will work on more complex issues involving breaking changes such as tables.
 Usability tests will be performed in order to make sure that the back office will be completely usable.

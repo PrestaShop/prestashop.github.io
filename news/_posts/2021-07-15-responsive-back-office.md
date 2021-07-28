@@ -97,11 +97,11 @@ The accessibility and reachability issues of the navigation drawer and the heade
 <div class="row">
     <div class="col-md-6">
       <p>Before: the header is overylaying the navigation drawer</p>
-      <img src="assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-before">
+      <img src="/prestashop.github.io/assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-before">
     </div>
     <div class="col-md-6">
       <p>After: the header isn't sticky anymore</p>
-      <img src="assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-after">
+      <img src="/prestashop.github.io/assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-after">
     </div>
 </div>
 
@@ -111,15 +111,15 @@ The accessibility and reachability issues of the navigation drawer and the heade
 <div class="row">
     <div class="col-md-4">
       <p>Before: difficult to quit the pop-in</p>
-      <img src="assets/images/2021/07/04-popin-before.png" alt="popin-before">
+      <img src="/prestashop.github.io/assets/images/2021/07/04-popin-before.png" alt="popin-before">
     </div>
     <div class="col-md-4">
       <p>After: easy to quit the notifications pop-in</p>
-      <img src="assets/images/2021/07/04-popin-notifications-after.png" alt="popin-notifications-after">
+      <img src="/prestashop.github.io/assets/images/2021/07/04-popin-notifications-after.png" alt="popin-notifications-after">
     </div>
     <div class="col-md-4">
       <p>After: easy to quit the profile pop-in</p>
-      <img src="assets/images/2021/07/04-popin-profile-after.png" alt="popin-profile-after">
+      <img src="/prestashop.github.io/assets/images/2021/07/04-popin-profile-after.png" alt="popin-profile-after">
     </div>
 </div>
 
@@ -133,11 +133,11 @@ In UX, this law is called the ["Law of Common Region"](https://lawsofux.com/law-
 <div class="row">
     <div class="col-md-6">
       <p>Before: stock management page completely broken</p>
-      <img src="assets/images/2021/07/05-broken-page-before.png" alt="broken-page-before">
+      <img src="/prestashop.github.io/assets/images/2021/07/05-broken-page-before.png" alt="broken-page-before">
     </div>
     <div class="col-md-6">
       <p>After: display fixes</p>
-      <img src="assets/images/2021/07/05-broken-page-after.png" alt="broken-page-after">
+      <img src="/prestashop.github.io/assets/images/2021/07/05-broken-page-after.png" alt="broken-page-after">
     </div>
 </div>
 

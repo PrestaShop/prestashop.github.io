@@ -2,7 +2,7 @@
 layout: post
 title: "Towards a more mobile-friendly back office"
 subtitle: "Quick wins for a responsive back office"
-date: 2021-07-15 10:00:00
+date: 2021-08-28 18:00:00
 authors: [ScottCosio]
 icon: icon-mobile
 tags:
@@ -17,10 +17,10 @@ Until now, PrestaShop always relied on a desktop-first responsive design strateg
 
 ## Why work on responsive design?
 
-Until now, they were some issues that affected the user experience on mobile:
+They were some issues that affected the user experience on mobile:
 
 - Difficulties in accessing important store information
-- Hidden content because of components overlaying others
+- Hidden content because of overlapping components
 - Text readability issues
 - Bugs and lack of consistency on display (e.g. not the same padding)
 
@@ -97,35 +97,35 @@ The accessibility and reachability issues of the navigation drawer and the heade
 <div class="row">
     <div class="col-md-6">
       <p>Before: the header is overylaying the navigation drawer</p>
-      <img src="/prestashop.github.io/assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-before">
+      <img src="assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-before">
     </div>
     <div class="col-md-6">
       <p>After: the header isn't sticky anymore</p>
-      <img src="/prestashop.github.io/assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-after">
+      <img src="assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-after">
     </div>
 </div>
 
-- Notifications and profile weren't accessible and it was difficult to quit the pop-in once clicked because it was almost in full page and the space to exit the pop-up was too small. The Design team redesigned the pop-in and placed it just under the selected icon to easily understand which icon the pop-in is related to. Also, an highlight was added to the selected icon to ease up identification of the selected tab. You can notice that the icon used for the profile editing button has been replaced by a more representative icon. An icon was added to the sign out link for a faster identification and the use of the red color makes it stand out from the rest.
+- Notifications and profile weren't accessible and it was difficult to quit the pop-in once clicked because it was almost in full page and the space to exit the pop-up was too small. The Design team redesigned the pop-in and placed it just under the selected icon to easily understand which icon the pop-in is related to. Also, a highlight was added to the selected icon to ease up identification of the selected tab. You can notice that the icon used for the profile editing button has been replaced by a more representative icon. An icon was added to the sign out link for faster identification and the use of the red color makes it stand out from the rest.
 
 
 <div class="row">
     <div class="col-md-4">
       <p>Before: difficult to quit the pop-in</p>
-      <img src="/prestashop.github.io/assets/images/2021/07/04-popin-before.png" alt="popin-before">
+      <img src="assets/images/2021/07/04-popin-before.png" alt="popin-before">
     </div>
     <div class="col-md-4">
       <p>After: easy to quit the notifications pop-in</p>
-      <img src="/prestashop.github.io/assets/images/2021/07/04-popin-notifications-after.png" alt="popin-notifications-after">
+      <img src="assets/images/2021/07/04-popin-notifications-after.png" alt="popin-notifications-after">
     </div>
     <div class="col-md-4">
       <p>After: easy to quit the profile pop-in</p>
-      <img src="/prestashop.github.io/assets/images/2021/07/04-popin-profile-after.png" alt="popin-profile-after">
+      <img src="assets/images/2021/07/04-popin-profile-after.png" alt="popin-profile-after">
     </div>
 </div>
 
 **Broken pages examples**
 
-A lot of pages were not displayed properly: text overlapping, making the content unreadable. Because of the lack of structure, it was also difficult to understand which group was associated each button.
+A lot of pages were not displayed properly: text overlapping, making the content unreadable. Because of the lack of structure, it was also difficult to understand which group was associated with each button.
 In UX, this law is called the ["Law of Common Region"](https://lawsofux.com/law-of-common-region/) which stipulates that "Elements tend to be perceived into groups if they are sharing an area with a clearly defined boundary". 
 
 - The stock management page was considered as a broken page and it was redesigned by applying the previous rules (removing import/export buttons, removing the help button, maintaining a minimum of 16 px padding left and right).
@@ -133,11 +133,11 @@ In UX, this law is called the ["Law of Common Region"](https://lawsofux.com/law-
 <div class="row">
     <div class="col-md-6">
       <p>Before: stock management page completely broken</p>
-      <img src="/prestashop.github.io/assets/images/2021/07/05-broken-page-before.png" alt="broken-page-before">
+      <img src="assets/images/2021/07/05-broken-page-before.png" alt="broken-page-before">
     </div>
     <div class="col-md-6">
       <p>After: display fixes</p>
-      <img src="/prestashop.github.io/assets/images/2021/07/05-broken-page-after.png" alt="broken-page-after">
+      <img src="assets/images/2021/07/05-broken-page-after.png" alt="broken-page-after">
     </div>
 </div>
 

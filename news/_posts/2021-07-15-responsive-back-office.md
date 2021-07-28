@@ -34,7 +34,7 @@ All of these issues make it difficult for users to use PrestaShop on mobile devi
 
 ### Process
 
-The Core team first explored PrestaShop [issues about responsive design](https://github.com/PrestaShop/PrestaShop/labels/Responsive) on GitHub and centralized them by creating a [single Epic](https://github.com/PrestaShop/PrestaShop/issues/22358).
+Maintainers first explored PrestaShop [issues about responsive design](https://github.com/PrestaShop/PrestaShop/labels/Responsive) on GitHub and centralized them by creating a [single Epic](https://github.com/PrestaShop/PrestaShop/issues/22358).
 
 In parallel, we analyzed all back office pages on mobile version and discussed responsive strategies to mitigate problems. For each problem, a specific issue was created and added to the Epic. 
 

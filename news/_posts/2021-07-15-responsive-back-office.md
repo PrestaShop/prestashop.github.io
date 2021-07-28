@@ -58,11 +58,11 @@ Some components are available on mobile version but aren't necessarily useful du
 
 <div class="row">
     <div class="col-md-6">
-      <p>Before: "View my shop” text</p>
+     <p><b>Before: "View my shop” text</b></p>
       <img src="/prestashop.github.io/assets/images/2021/07/01-header-before.png" alt="header-before">
     </div>
     <div class="col-md-6">
-      <p>After: "View my shop" text and "Merchant Expertise" button removed</p>
+      <p><b>After: "View my shop" text and "Merchant Expertise" button removed</b></p>
       <img src="/prestashop.github.io/assets/images/2021/07/01-header-after.png" alt="header-after">
     </div>
 </div>
@@ -79,11 +79,11 @@ Some components are available on mobile version but aren't necessarily useful du
 
 <div class="row">
     <div class="col-md-6">
-      <p>Before: less reachability for buttons and header was quite big</p>
+      <p><b>Before: less reachability for buttons and header was quite big</b></p>
       <img src="/prestashop.github.io/assets/images/2021/07/02-reachability-before.png" alt="reachability-before">
     </div>
     <div class="col-md-6">
-      <p>After: primary and secondary actions in the FAB</p>
+      <p><b>After: primary and secondary actions in the FAB</b></p>
       <img src="/prestashop.github.io/assets/images/2021/07/02-reachability-after.png" alt="reachability-after">
     </div>
 </div> 
@@ -96,11 +96,11 @@ The accessibility and reachability issues of the navigation drawer and the heade
 
 <div class="row">
     <div class="col-md-6">
-      <p>Before: the header is overylaying the navigation drawer</p>
+      <p><b>Before: the header is overylaying the navigation drawer</b></p>
       <img src="/prestashop.github.io/assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-before">
     </div>
     <div class="col-md-6">
-      <p>After: the header isn't sticky anymore</p>
+      <p><b>After: the header isn't sticky anymore</b></p>
       <img src="/prestashop.github.io/assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-after">
     </div>
 </div>
@@ -110,15 +110,15 @@ The accessibility and reachability issues of the navigation drawer and the heade
 
 <div class="row">
     <div class="col-md-4">
-      <p>Before: difficult to quit the pop-in</p>
+      <p><b>Before: difficult to quit the pop-in</b></p>
       <img src="/prestashop.github.io/assets/images/2021/07/04-popin-before.png" alt="popin-before">
     </div>
     <div class="col-md-4">
-      <p>After: easy to quit the notifications pop-in</p>
+      <p><b>After: easy to quit the notifications pop-in</b></p>
       <img src="/prestashop.github.io/assets/images/2021/07/04-popin-notifications-after.png" alt="popin-notifications-after">
     </div>
     <div class="col-md-4">
-      <p>After: easy to quit the profile pop-in</p>
+      <p><b>After: easy to quit the profile pop-in</b></p>
       <img src="/prestashop.github.io/assets/images/2021/07/04-popin-profile-after.png" alt="popin-profile-after">
     </div>
 </div>
@@ -132,11 +132,11 @@ In UX, this law is called the ["Law of Common Region"](https://lawsofux.com/law-
 
 <div class="row">
     <div class="col-md-6">
-      <p>Before: stock management page completely broken</p>
+      <p><b>Before: stock management page completely broken</b></p>
       <img src="/prestashop.github.io/assets/images/2021/07/05-broken-page-before.png" alt="broken-page-before">
     </div>
     <div class="col-md-6">
-      <p>After: display fixes</p>
+      <p><b>After: display fixes</b></p>
       <img src="/prestashop.github.io/assets/images/2021/07/05-broken-page-after.png" alt="broken-page-after">
     </div>
 </div>

@@ -21,6 +21,17 @@ PrestaShop 1.7.7.6 is now available. This maintenance release fixes 27 regressio
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don't forget to backup before.
 
+## Critical fixes
+
+The bug affects critical functionality or critical data and there is no workaround to avoid it. A critical issue affects a very large percentage of users (> 60%) and matches at least one of the following:
+- It can lead to data loss, introduce a security vulnerability or break the automatic end to end tests
+- It prevents the essential shop operations or puts your business at great risk
+
+Two critical bugs have been fixed in 1.7.7.6:
+
+- [Orders page - an exception is displayed when deleting a customer or a guest](https://github.com/PrestaShop/PrestaShop/issues/25319)
+- [Smarty template isCached function bug](https://github.com/PrestaShop/PrestaShop/issues/24235)
+
 ## Main fixes
 
 **Back-office**
@@ -33,7 +44,6 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 - [View Order - An exception is displayed when changing the order status to payment accepted](https://github.com/PrestaShop/PrestaShop/issues/25195)
 - [Migrated Order page does not contain order reference](https://github.com/PrestaShop/PrestaShop/issues/25078)
 - [Adding payment with comma does not work](https://github.com/PrestaShop/PrestaShop/issues/24103)
-- [Orders page - an exception is displayed when deleting a customer or a guest](https://github.com/PrestaShop/PrestaShop/issues/25319) - CRITICAL
 - [Order message not in order language](https://github.com/PrestaShop/PrestaShop/issues/25362)
 - [View an order - Search endpoint returns HTTP 500](https://github.com/PrestaShop/PrestaShop/issues/25360)
 - [Orders - Problems on product price changing in database](https://github.com/PrestaShop/PrestaShop/issues/24529)
@@ -51,7 +61,6 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 **Front-office**
 - [Brands are shown wrongly in the FO](https://github.com/PrestaShop/PrestaShop/issues/25214)
 - ['Total available for each user' in cart rule not considered if the customer is signed in from the checkout page](https://github.com/PrestaShop/PrestaShop/issues/25203)
-- [Smarty template isCached function bug](https://github.com/PrestaShop/PrestaShop/issues/24235) - CRITICAL
 - [Ecotax on combinations not displayed in FO](https://github.com/PrestaShop/PrestaShop/issues/9967)
 - [X number of decimals are only displayed if the product price has X decimals](https://github.com/PrestaShop/PrestaShop/issues/23868)
 - [The discount detail is NOK](https://github.com/PrestaShop/PrestaShop/issues/24635)

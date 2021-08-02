@@ -86,7 +86,7 @@ The following languages had the best progress in July thanks to the translation 
 
 Congratulations! And special thanks to [Enrique García Cruz](https://crowdin.com/profile/quiquegarcia) who worked a lot on the Spanish, Mexico project lately. The language is now completely translated and validated! :muscle:
  
-![Best translation progress in July 2021](/assets/images/2021/07/build-crowdin-progress-july21.png)
+![Best translation progress in July 2021](/assets/images/2021/08/build-crowdin-progress-july21.png)
 
 A huge thank you to all the contributors!
  

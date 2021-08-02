@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – July 2021 edition"
 subtitle: "Where you'll learn that 1.7.8 is already available in 9 languages! "
-date: 2021-08-02 17:00:00
+date: 2021-08-03 17:00:00
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

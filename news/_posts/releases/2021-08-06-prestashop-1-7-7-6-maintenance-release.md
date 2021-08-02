@@ -30,7 +30,7 @@ The bug affects critical functionality or critical data and there is no workarou
 Two critical bugs have been fixed in 1.7.7.6:
 
 - [Orders page - an exception is displayed when deleting a customer or a guest](https://github.com/PrestaShop/PrestaShop/issues/25319)
-- [Smarty template isCached function bug](https://github.com/PrestaShop/PrestaShop/issues/24235)
+- [Smarty template caching Module::isCached() faulty causes performance loss](https://github.com/PrestaShop/PrestaShop/issues/24235)
 
 ## Main fixes
 

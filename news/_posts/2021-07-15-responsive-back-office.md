@@ -101,7 +101,7 @@ The accessibility and reachability issues of the navigation drawer and the heade
     </div>
     <div class="col-md-6">
       <p><b>After: the header isn't sticky anymore</b></p>
-      <img src="/prestashop.github.io/assets/images/2021/07/03-navigation-drawer-before.png" alt="navigation-drawer-after">
+      <img src="/prestashop.github.io/assets/images/2021/07/03-navigation-drawer-after.png" alt="navigation-drawer-after">
     </div>
 </div>
 
@@ -133,11 +133,11 @@ In UX, this law is called the ["Law of Common Region"](https://lawsofux.com/law-
 <div class="row">
     <div class="col-md-6">
       <p><b>Before: stock management page completely broken</b></p>
-      <img src="/prestashop.github.io/assets/images/2021/07/05-broken-page-before.png" alt="broken-page-before">
+      <img src="/prestashop.github.io/assets/images/2021/07/05-broken-page-before-modify.png" alt="broken-page-before">
     </div>
     <div class="col-md-6">
       <p><b>After: display fixes</b></p>
-      <img src="/prestashop.github.io/assets/images/2021/07/05-broken-page-after.png" alt="broken-page-after">
+      <img src="/prestashop.github.io/assets/images/2021/07/05-broken-page-after-modify.png" alt="broken-page-after">
     </div>
 </div>
 

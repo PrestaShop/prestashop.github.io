@@ -53,7 +53,7 @@ Two critical bugs have been fixed in 1.7.7.6:
 - [Orders page - Cannot add free shipping discount when Total products = 0](https://github.com/PrestaShop/PrestaShop/issues/24753)
 - [Add new Order page - An exception is displayed when we add a pack](https://github.com/PrestaShop/PrestaShop/issues/24553)
 - [Add new Order - An exception is displayed when ordering a product with text customization - the label contains special expression](https://github.com/PrestaShop/PrestaShop/issues/25194)
-
+- [Order View page - Product Block - when we try to add a product, the total displayed is tax exlcluded and not included](https://github.com/PrestaShop/PrestaShop/issues/25479)
 
 **Install**
 - [Cannot create an alternative currency after an upgrade](https://github.com/PrestaShop/PrestaShop/issues/24871)
@@ -65,6 +65,7 @@ Two critical bugs have been fixed in 1.7.7.6:
 - [X number of decimals are only displayed if the product price has X decimals](https://github.com/PrestaShop/PrestaShop/issues/23868)
 - [The discount detail is NOK](https://github.com/PrestaShop/PrestaShop/issues/24635)
 - [The discount detail is NOK when we the product selected has an ecotax](https://github.com/PrestaShop/PrestaShop/issues/24788)
+- [An exception is displayed when we click on sign out two times](https://github.com/PrestaShop/PrestaShop/issues/25483)
 
 
 ## Acknowledgements

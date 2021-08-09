@@ -2,7 +2,7 @@
 layout: post
 title:  "Release of PrestaShop 1.7.7.6"
 subtitle: "Maintenance version of the 1.7.7.x branch"
-date:   2021-08-06 12:00:00
+date:   2021-08-09
 authors: [ PrestaShop ]
 image: /assets/images/2021/08/build_1.7.7.6.png
 icon: icon-leaf

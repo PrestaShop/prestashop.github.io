@@ -32,8 +32,8 @@ Two critical bugs have been fixed in 1.7.7.6:
 
 **Back-office**
 
-    - [Fixed selector for fetching if the tax is included](https://github.com/PrestaShop/PrestaShop/pull/25489)
-    - [An exception is displayed when we click on sign out two times](https://github.com/PrestaShop/PrestaShop/pull/25495)
+- [Fixed selector for fetching if the tax is included](https://github.com/PrestaShop/PrestaShop/pull/25489)
+- [An exception is displayed when we click on sign out two times](https://github.com/PrestaShop/PrestaShop/pull/25495)
 - [Preview order - Invoice details is missing the address mail of the customer](https://github.com/PrestaShop/PrestaShop/issues/24482)
 - [It is not possible to create a BYN currency](https://github.com/PrestaShop/PrestaShop/issues/24692)
 - [Product deleteFeatures doesn't delete custom features](https://github.com/PrestaShop/PrestaShop/issues/25163)

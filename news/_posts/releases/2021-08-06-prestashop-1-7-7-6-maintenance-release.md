@@ -23,10 +23,6 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 
 ## Critical fixes
 
-The bug affects critical functionality or critical data and there is no workaround to avoid it. A critical issue affects a very large percentage of users (> 60%) and matches at least one of the following:
-- It can lead to data loss, introduce a security vulnerability or break the automatic end to end tests
-- It prevents the essential shop operations or puts your business at great risk
-
 Two critical bugs have been fixed in 1.7.7.6:
 
 - [Orders page - an exception is displayed when deleting a customer or a guest](https://github.com/PrestaShop/PrestaShop/issues/25319)

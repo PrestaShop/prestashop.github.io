@@ -28,7 +28,7 @@ Two critical bugs have been fixed in 1.7.7.6:
 - [Orders page - an exception is displayed when deleting a customer or a guest](https://github.com/PrestaShop/PrestaShop/issues/25319)
 - [Smarty template caching Module::isCached() faulty causes performance loss](https://github.com/PrestaShop/PrestaShop/issues/24235)
 
-## Main fixes
+## Other bug fixes
 
 **Back-office**
 - [Preview order - Invoice details is missing the address mail of the customer](https://github.com/PrestaShop/PrestaShop/issues/24482)

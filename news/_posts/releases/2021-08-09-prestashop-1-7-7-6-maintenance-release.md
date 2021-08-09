@@ -15,7 +15,7 @@ tags:
  - 1.7
 ---
 
-PrestaShop 1.7.7.6 is now available. This maintenance release fixes 27 regressions reported since the 1.7.7.0, including 2 critical regressions.
+PrestaShop 1.7.7.6 is now available. This maintenance release fixes 31 regressions reported since the 1.7.7.0, including 2 critical regressions.
 
 ![1.7.7.6 is available!](/assets/images/2021/08/build_1.7.7.6.png)
 

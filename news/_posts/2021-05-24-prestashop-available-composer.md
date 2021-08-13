@@ -11,6 +11,13 @@ tags:
 - development
 ---
 
+
+<div class="alert alert-note" role="alert">
+<h4><i class='icon-file'></i> Note</h4>
+We strongly recommend not to use in production.
+</div>
+
+
 Released almost 10 years ago, [Composer](https://getcomposer.org/) is the most popular package manager for the PHP ecosystem. PrestaShop has been using it since 1.7.0 to manage its dependencies, including [all the native modules](https://devdocs.prestashop.com/1.7/development/native-modules/).
 
 Today we are announcing the general availability of PrestaShop itself through Composer. Thanks to this, it is now possible to easily create a new PrestaShop project from the command line, like this:

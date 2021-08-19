@@ -29,7 +29,7 @@ Once critical bug has been fixed in 1.7.7.7:
 
 ## Acknowledgements
 
-Many thanks to [@idnovate](https://github.com/idnovate) for reporting the bug and making the correction!
+Many thanks to [@idnovate](https://github.com/idnovate) for reporting the bug and providing a patch!
 
 [Download PrestaShop 1.7.7.7 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}

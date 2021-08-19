@@ -39,4 +39,4 @@ For any upgrades problems or PrestaShop’s bugs, please create a new issue [her
 
 If you have questions or need help, do not hesitate to take a look at [our community platforms or support plans.](https://devdocs.prestashop.com/1.7/faq/i-need-help/)
 
-Since version 1.7.7.6 is a “patch” update to version 1.7.7, upgrading from any 1.7.7 version will be easy: features will work better, and modules & themes which worked fine on 1.7.7.x will work just as well with 1.7.7.6. Upgrades from a standard 1.7.x version should work just as well.
+Since version 1.7.7.7 is a “patch” update to version 1.7.7, upgrading from any 1.7.7 version will be easy: features will work better, and modules & themes which worked fine on 1.7.7.x will work just as well with 1.7.7.7. Upgrades from a standard 1.7.x version should work just as well.

@@ -4,7 +4,7 @@ title:  "Release of PrestaShop 1.7.7.7"
 subtitle: "Maintenance version of the 1.7.7.x branch"
 date:   2021-08-19
 authors: [ PrestaShop ]
-image: /assets/images/2021/08/build_1.7.7.7.png
+image: /assets/images/2021/08/1.7.7.7_build.png
 icon: icon-leaf
 tags:
  - version
@@ -15,17 +15,21 @@ tags:
  - 1.7
 ---
 
-PrestaShop 1.7.7.7 is now available. This maintenance release fixes 1 critical regression.
+PrestaShop 1.7.7.7 is now available. This maintenance release fixes 1 critical regression and 1 minor regression.
 
 ![1.7.7.7 is available!](/assets/images/2021/08/build_1.7.7.7.png)
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don't forget to backup before.
 
-## Critical fixes
+## Critical fixe
 
 Once critical bug has been fixed in 1.7.7.7:
 
-- [FO - Using a limited cart rule crashes checkout at shipping step if the database prefix is not ps_ #25617](https://github.com/PrestaShop/PrestaShop/issues/25617)
+- [The checkout at shipping step crashes when a cart rule was used if the database prefix is not ps_ #25617](https://github.com/PrestaShop/PrestaShop/issues/25617)
+
+## Order page issue
+
+- [Merchant couldn't download the file from a customized product in the order page if the product wasn't translated to the employee's language of the back office #25631](https://github.com/PrestaShop/PrestaShop/issues/25631)
 
 ## Acknowledgements
 

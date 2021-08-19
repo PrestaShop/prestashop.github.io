@@ -23,7 +23,7 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 
 ## Critical fixes
 
-Two critical bugs have been fixed in 1.7.7.7:
+Once critical bug has been fixed in 1.7.7.7:
 
 - [FO - Using a limited cart rule crashes checkout at shipping step if the database prefix is not ps_ #25617](https://github.com/PrestaShop/PrestaShop/issues/25617)
 

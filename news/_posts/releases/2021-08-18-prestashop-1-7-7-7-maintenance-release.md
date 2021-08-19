@@ -21,7 +21,7 @@ PrestaShop 1.7.7.7 is now available. This maintenance release fixes 1 critical r
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don't forget to backup before.
 
-## Critical fixe
+## Critical fixes
 
 Once critical bug has been fixed in 1.7.7.7:
 

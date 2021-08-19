@@ -17,7 +17,7 @@ tags:
 
 PrestaShop 1.7.7.7 is now available. This maintenance release fixes 1 critical regression and 1 minor regression.
 
-![1.7.7.7 is available!](/assets/images/2021/08/build_1.7.7.7.png)
+![1.7.7.7 is available!](/assets/images/2021/08/build_1.7.7.7.jpg)
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don't forget to backup before.
 

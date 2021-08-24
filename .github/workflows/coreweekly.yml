@@ -11,9 +11,6 @@ jobs:
     - name: Set variable LAST_WEEK_NUM
       run: echo "LAST_WEEK_NUM=`date -d 'last week' +"%U"`" >> $GITHUB_ENV
 
-    - name: Set variable WEEK_NUM
-      run: echo "WEEK_NUM=`date +"%U"`" >> $GITHUB_ENV
-
     - name: Set variable YEAR
       run: echo "YEAR=`date -d 'last week' +"%Y"`" >> $GITHUB_ENV
 
@@ -30,9 +27,9 @@ jobs:
 
     - name: Install dependencies
       run: cd ~/core-weekly-generator && pip install -r requirements.txt
- 
+
     - name: Generate Core Weekly for the current week
-      run: cd ~/core-weekly-generator && python core-weekly.py --week ${{ env.WEEK_NUM }} > $GITHUB_WORKSPACE/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-${{ env.LAST_WEEK_NUM }}-%Y.md")
+      run: cd ~/core-weekly-generator && python core-weekly.py --week ${{ env.LAST_WEEK_NUM }} > $GITHUB_WORKSPACE/news/_posts/core-weekly/$(date +"%Y-%m-%d-coreweekly-${{ env.LAST_WEEK_NUM }}-%Y.md")
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3

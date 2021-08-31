@@ -24,7 +24,7 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 
 ## Major issue on the product page
 
-This regression appeared following the implementation of the new numeric data formatter for the fields of type Number
+This issue appeared due to the implementation of the new numeric data formatter for number fields in patch 1.7.7.6. This regression causes users to be unable to edit the impact of a combination [#25718](https://github.com/PrestaShop/PrestaShop/issues/25718)
 
 ## Acknowledgements
 

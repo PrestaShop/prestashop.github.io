@@ -4,7 +4,7 @@ title:  "Release of PrestaShop 1.7.7.8"
 subtitle: "Maintenance version of the 1.7.7.x branch"
 date:   2021-08-19
 authors: [ PrestaShop ]
-image: /assets/images/2021/08/1.7.7.8_build.jpg
+image: /assets/images/2021/08/1.7.7.8_build.png
 icon: icon-leaf
 tags:
  - version
@@ -18,7 +18,7 @@ tags:
 
 PrestaShop 1.7.7.8 is now available. This maintenance release fixes 1 major regression.
 
-![1.7.7.8 is available!](/assets/images/2021/08/1.7.7.8_build.jpg)
+![1.7.7.8 is available!](/assets/images/2021/08/1.7.7.8_build.png)
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 

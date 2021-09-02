@@ -21,9 +21,9 @@ PrestaShop 1.7.8 will be released in the coming weeks. As you know, a new versio
 
 ### :two_hearts: Special thanks to newcomers
 
-Many people subscribe to the project(s) of their choice each month, but not so many start translating straight away. For that reason, we would like to thank the ones who rushed into the effort immediately! So lots of love to the dedicated [Tughrul Alp](https://crowdin.com/profile/Tughrul_Alp), [Mahmoud Parvazi](https://crowdin.com/profile/m.parvazi), [Hant](https://crowdin.com/profile/haunt), and [garethvjones1976](https://crowdin.com/profile/garethvjones1976).
+Many people subscribe to the project(s) of their choice each month, but not so many start translating straight away. For that reason, we would like to thank the ones who rushed into the effort immediately! So lots of love to the dedicated [Tughrul Alp](https://crowdin.com/profile/Tughrul_Alp), [Mahmoud Parvazi](https://crowdin.com/profile/m.parvazi), [Doan Tran Anh Tu](https://crowdin.com/profile/haunt), and [garethvjones1976](https://crowdin.com/profile/garethvjones1976).
 
-Special congratulations to Mahmoud and Hant who already appear in the top translator list, after only 1 month!
+Special congratulations to Mahmoud and Doan Tran Anh Tu who already appear in the top translator list, after only 1 month!
 
 ## A few stats
  

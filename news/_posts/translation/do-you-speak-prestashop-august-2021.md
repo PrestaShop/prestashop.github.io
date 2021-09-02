@@ -86,7 +86,7 @@ Thank you all for your contribution! And remember, in order to get back to a 100
 
 #### Almost there!
 
-Italian (100 translated and 99% validated) and Korean (99% translated and validated) are almost fully available. There isn’t much work left, so, feel free to [join the project](https://crowdin.com/project/prestashop-official)!
+Italian (100% translated and 99% validated) and Korean (99% translated and validated) are almost fully available. There isn’t much work left, so, feel free to [join the project](https://crowdin.com/project/prestashop-official) if you feel like contributing!
 
 ## Languages with the best evolution
 
@@ -102,7 +102,7 @@ Congratulations!
 
 A huge thank you to all the contributors!
  
-Of course, this is highlighting the languages that made some progress with new translations; but it does not mean that the languages that are not mentioned here are not active. Indeed, some editing and rewriting could be going on, but the percentage of translation would not be modified (since the work happens on strings that are already translated). So let's not forget about the work of other contributors! Thanks to you too!
+Of course, this is highlighting the languages that made some progress with new translations; but it doesn't mean that the languages that are not mentioned here are not active. Indeed, some editing and rewriting could be going on, but the percentage of translation would not be modified (since the work happens on strings that are already translated). So let's not forget about the work of other contributors! Thanks to you too!
 
 ## Let’s keep in touch!
 

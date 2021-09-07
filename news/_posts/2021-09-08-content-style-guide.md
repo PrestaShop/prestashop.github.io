@@ -33,9 +33,6 @@ The content style guide is expected to have many benefits:
 
 It's a win-win!
 
-      <img src="/prestashop.github.io/assets/images/2021/09/build-thumb-up.png" alt="header-before">
-</div>
-
 ![Thumb up](assets/images/2021/09/build-thumb-up.png)
 
 ### Next steps 
@@ -46,7 +43,7 @@ Regarding existing strings, they'll have to be modified too. That's a lot of wor
 
 Also, any suggestions for improvement are welcomed! Nothing is cast in stone. If you think a component is missing, or if you cannot find the answer to your question in the guide, you can also open an issue.
 
-![Puffin writing](assets/images/2021/09/build-puffin-writing.png)
+![Puffin writing](assets/images/2021/09/build-puffin-writing.PNG)
 
 ### Share your opinion
 

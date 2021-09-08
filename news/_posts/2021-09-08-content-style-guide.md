@@ -8,7 +8,7 @@ icon: icon-mobile
 image: /assets/images/2021/09/build-content-style-guide-banner.png
 tags: [wording, ux]
 ---
-It all started with an observation: contributors brought many new wordings to the PrestaShop open source project but couldn't access clear content guidelines. This led to a lot of inconsistencies. Copy is such a powerful element of a good user experience, it was time for a change.
+It all started with an observation: contributors brought many new wordings to the PrestaShop open source project but couldn't access clear content guidelines. This led to a lot of inconsistencies. Copy is such an essential element of a good user experience, it was time for a change.
 
 ![Content style guide banner](/assets/images/2021/09/build-content-style-guide-banner.png)
 

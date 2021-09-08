@@ -45,7 +45,7 @@ Regarding existing strings, they'll have to be modified too. That's a lot of wor
 
 Also, any suggestions for improvement are welcomed! Nothing is cast in stone. If you think a component is missing, or if you cannot find the answer to your question in the guide, you can also open an issue.
 
-![Puffin writing](/assets/images/2021/09/build-puffin-writing.PNG)
+![Puffin writing](/assets/images/2021/09/build-puffin-writing.png)
 
 ### Share your opinion
 

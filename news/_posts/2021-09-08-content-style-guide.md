@@ -21,7 +21,7 @@ This reference document sets out principles and guidelines for the writing and f
 
 This guide also contains a glossary that will help you understand the vocabulary used in the PrestaShop project.
 
-[Read Content style guide](https://zeroheight.com/80a6c5a61/v/latest/p/2971bf-content-style-guide){: .btn .btn-lg .btn-success}
+[Read Content style guide](https://zeroheight.com/80a6c5a61/v/latest/p/2971bf-content-style-guide){: .btn .btn-lg .btn-info}
 {: .text-center}
 
 ### A big challenge but many benefits

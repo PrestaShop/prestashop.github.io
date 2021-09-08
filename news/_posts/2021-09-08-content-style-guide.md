@@ -8,7 +8,7 @@ icon: icon-mobile
 ---
 It all started with an observation: contributors brought many new wordings to the PrestaShop open source project but couldn't access clear content guidelines. This led to a lot of inconsistencies. Copy is such a powerful element of a good user experience, it was time for a change.
 
-![Content style guide banner](assets/images/2021/09/build-content-style-guide-banner.png)
+![Content style guide banner](/assets/images/2021/09/build-content-style-guide-banner.png)
 
 ### A reference document for writing content
 
@@ -33,7 +33,7 @@ The content style guide is expected to have many benefits:
 
 It's a win-win!
 
-![Thumb up](assets/images/2021/09/build-thumb-up.png)
+![Thumb up](/assets/images/2021/09/build-thumb-up.png)
 
 ### Next steps 
 
@@ -43,10 +43,10 @@ Regarding existing strings, they'll have to be modified too. That's a lot of wor
 
 Also, any suggestions for improvement are welcomed! Nothing is cast in stone. If you think a component is missing, or if you cannot find the answer to your question in the guide, you can also open an issue.
 
-![Puffin writing](assets/images/2021/09/build-puffin-writing.PNG)
+![Puffin writing](/assets/images/2021/09/build-puffin-writing.PNG)
 
 ### Share your opinion
 
 Your opinion is valuable! To make sure the content style guide is useful to contributors, please fill in this [single-question survey](https://forms-prestashop.typeform.com/to/J5AF10LE).
 
-![Touch screen](assets/images/2021/09/build-touch-screen.png)
+![Touch screen](/assets/images/2021/09/build-touch-screen.png)

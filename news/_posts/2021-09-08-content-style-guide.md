@@ -9,13 +9,13 @@ image: /assets/images/2021/09/build-content-style-guide-banner.png
 tags: [wording, ux]
 ---
 
-It all started with an observation: contributors brought many new wordings to the PrestaShop open source project but couldn't access clear content guidelines. This led to a lot of inconsistencies. Copy is such an essential element of a good user experience, it was time for a change.
+It all started with an observation: contributors brought many new wordings to the PrestaShop open source project but couldn't access clear content guidelines. This led to a lot of inconsistencies. Wording is such an essential element of a good user experience, it was time for a change.
 
 ![Content style guide banner](/assets/images/2021/09/build-content-style-guide-banner.png)
 
 ### A reference document for writing content
 
-When designing a new feature, contributors to the PrestaShop project have to think about the copy: feature labels, help texts, error messages, etc. Because there are many contributors to the project, multiple writers take action on the content by adding new [strings](https://zeroheight.com/80a6c5a61/v/latest/p/36889f-glossary/b/34bc6f). Moreover, the community is very diverse, and every writer has his/her own writing style. To ensure consistency, it was important to provide a document that anyone writing for the project could refer to. 
+When designing a new feature, contributors to the PrestaShop project have to think about the wording: feature labels, help texts, error messages, etc. Because there are many contributors to the project, multiple writers take action on the content by adding new strings (see our glossary on [ZeroHeight](https://zeroheight.com/80a6c5a61/v/latest/p/36889f-glossary/b/34bc6f)). Moreover, the community is very diverse, and every writer has his/her own writing style. To ensure consistency, it was important to provide a document that anyone writing for the project could refer to. 
 
 This reference document sets out principles and guidelines for the writing and formatting of text on PrestaShop software. So, for example, if you are designing a modal, a button, or writing an error message, you'll find what you are looking for in the Content style guide!
 

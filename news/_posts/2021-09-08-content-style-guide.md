@@ -46,7 +46,7 @@ Regarding existing strings, they'll have to be modified too. That's a lot of wor
 
 Also, any suggestions for improvement are welcomed! Nothing is cast in stone. If you think a component is missing, or if you can't find the answer to your question in the guide, you can also open an issue.
 
-The Content style guide is hosted on ZeroHeight, a tool for building design systems. It will be regularly updated on this platform by the owners of the project: [Julie Varisellaz](https://github.com/Julievrz), Product Content Manager, and [Scott Cosio](https://github.com/prestascott), Product Designer.
+The Content style guide is hosted on ZeroHeight, a tool for creating design systems. It will be regularly updated on this platform by the owners of the project: [Julie Varisellaz](https://github.com/Julievrz), Product Content Manager, and [Scott Cosio](https://github.com/prestascott), Product Designer.
 
 ![Puffin writing](/assets/images/2021/09/build-puffin-writing.png)
 

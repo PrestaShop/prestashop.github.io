@@ -2,7 +2,7 @@
 layout: post
 title: "Content style guide: a reference for better harmonization"
 subtitle: "A reference document for writing content" 
-date: 2021-09-08 17:00:00
+date: 2021-09-08 15:00:00
 authors: [JulieVarisellaz]
 icon: icon-mobile
 image: /assets/images/2021/09/build-content-style-guide-banner.png

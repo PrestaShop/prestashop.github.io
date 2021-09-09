@@ -22,9 +22,11 @@ PrestaShop 1.7.7.8 is now available. This maintenance release fixes 1 major regr
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 
-## Major issue on the product page
+## Major issues on the product page
 
-This issue appeared due to the implementation of the new numeric data format for number fields on the 1.7.7.6 patch version. This regression causes users to be unable to edit the impact of a combination. [#25718](https://github.com/PrestaShop/PrestaShop/issues/25718)
+- The issue [#25718](https://github.com/PrestaShop/PrestaShop/issues/25718) and the issue [#25753](https://github.com/PrestaShop/PrestaShop/issues/25753) appeared due to the implementation of the new numeric data format for number fields on the 1.7.7.6 patch version. This regression causes users to be unable to edit the impact of a combination and rounding problems on the impact calculation. 
+
+- An exception is displayed when combination feature is disabled on the performance page [#25782](https://github.com/PrestaShop/PrestaShop/issues/25782)
 
 ## Acknowledgements
 

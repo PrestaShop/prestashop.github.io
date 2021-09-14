@@ -32,7 +32,7 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 
 Contributors to this patch version, from both the Core team and the community at large:
 
-[@sowbiba](https://github.com/sowbiba), [@PierreRambaud](https://github.com/sowbiba), [@kpodemski](https://github.com/sowbiba), [@Progi1984](https://github.com/sowbiba), [@eternoendless](https://github.com/sowbiba) and [@matks](https://github.com/sowbiba)
+[@sowbiba](https://github.com/sowbiba), [@PierreRambaud](https://github.com/PierreRambaud), [@kpodemski](https://github.com/kpodemski), [@Progi1984](https://github.com/Progi1984), [@eternoendless](https://github.com/eternoendless) and [@matks](https://github.com/matks)
 
 [Download PrestaShop 1.7.7.8 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}

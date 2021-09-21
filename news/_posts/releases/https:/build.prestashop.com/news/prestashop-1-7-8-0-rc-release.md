@@ -44,7 +44,7 @@ If you are looking for more details about all changes and new features expected 
 
 ## Download
 
-You can download PrestaShop 1.7.8 RC here:
+You can download PrestaShop 1.7.8 RC1 here:
 
 [Download PrestaShop 1.7.8 RC1 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
 {: .text-center}

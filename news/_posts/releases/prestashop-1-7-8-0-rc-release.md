@@ -51,7 +51,7 @@ You can download PrestaShop 1.7.8 RC1 here:
 
 Your feedback on this RC is essential, the regressions you find right now are as many bugs less on the final version and fewer patch versions. It also means fewer problems on your (or your customer’s) online store.
 
-You must:
+Here's what you can do:
 
 - Install it and test that there is no regression compared to the 1.7.7 version
 - If you develop modules or themes, test them on this version

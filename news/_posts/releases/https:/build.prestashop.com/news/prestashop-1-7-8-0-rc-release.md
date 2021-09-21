@@ -3,7 +3,7 @@
 layout: post
 title:  "PrestaShop 1.7.8.0 RC1 Is Ready To Be Tested!"
 subtitle: "A few months after the beta, here it is: the first release candidate for PrestaShop 1.7.8.0 is now ready for you to test!"
-date:   2021-07-04
+date:   2021-09-21
 authors: [ PrestaShop ]
 image: /assets/images/2021/09/178RC-banner_800_418_en.jpg
 icon: icon-leaf

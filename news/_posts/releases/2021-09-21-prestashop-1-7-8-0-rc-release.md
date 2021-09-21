@@ -15,9 +15,9 @@ tags:
  - 1.7
 ---
 
-![1.7.8 RC1 is available!](/assets/images/2021/09/178RC-banner_1200_628_en.jpg)
-
 A few months after the beta, the first release candidate for PrestaShop 1.7.8.0 is now ready for you to test!
+
+![1.7.8 RC1 is available!](/assets/images/2021/09/178RC-banner_1200_628_en.jpg)
 
 This is the last step before releasing the final 1.7.8.0. This version aims to verify that all regressions found during the beta have been fixed and that the software is ready for production. If no major or critical regression is reported by October 5, then the final version of 1.7.8.0 will be made available.
 

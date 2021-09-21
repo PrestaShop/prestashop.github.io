@@ -36,7 +36,7 @@ A lot of work has been put into fixing bugs in the product page, upgrade from ve
 
 Check out the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0-RC.1) to see all the changes in detail. 
 
-All the major bugs have been treated, [the other minor](https://github.com/PrestaShop/PrestaShop/issues?q=+is%3Aissue+milestone%3A1.7.8.1+) will be fixed in the 1.7.8.1 release patch which will arrive soon.
+All the major bugs have been fixed, and [the remaining minor ones](https://github.com/PrestaShop/PrestaShop/issues?q=+is%3Aissue+milestone%3A1.7.8.1+) will be fixed in the upcoming 1.7.8.1 patch release.
 
 If you are looking for more details about all changes and new features expected in 1.7.8, the [1.7.8 beta version release note](https://build.prestashop.com/news/prestashop-1-7-8-0-beta-release/) is the perfect article for you to read!
 

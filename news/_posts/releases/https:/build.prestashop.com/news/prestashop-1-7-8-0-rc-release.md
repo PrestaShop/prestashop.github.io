@@ -27,6 +27,7 @@ Please note that it is not currently possible to perform an automatic upgrade fr
 
 Go download and install this RC version as a test store, either on your machine or your web hosting, then play with it – and give us your feedback! We need YOU to test this new version of PrestaShop.
 
+If you find regressions compared to the 1.7.7 version, please open an issue and describe it on [Github](https://github.com/PrestaShop/PrestaShop/issues/new?template=1_bug_report.md) so that it can be reproduced and fixed as soon as possible.
 Remember, this release candidate version is pre-release software. Do not use it on your production shop!
 
 ## Notable changes since the RC release

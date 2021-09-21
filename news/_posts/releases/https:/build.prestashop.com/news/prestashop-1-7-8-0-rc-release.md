@@ -25,7 +25,7 @@ This is the last step before releasing the final 1.7.8.0. This version aims to v
 
 Please note that it is not currently possible to perform an automatic upgrade from the Beta to the Release Candidate. It will also not be possible to upgrade from this Release Candidate to the final release.
 
-Go download and install this RC version as a test store, either on your machine or your web hosting, then play with it – and give us your feedback! We need YOU to test this new version of PrestaShop. The later a problem is identified, the more time it takes to be fixed, and this delays the final release.
+Now is the best time to download and install this RC version as a test store, either on your machine or your web hosting, then play with it – and give us your feedback! We need YOU to test this new version of PrestaShop. The later a problem is identified, the more time it takes to be fixed, and this delays the final release.
 
 If you find regressions compared to the 1.7.7 version, please open an issue and describe it on [Github](https://github.com/PrestaShop/PrestaShop/issues/new?template=1_bug_report.md) so that it can be reproduced and fixed as soon as possible.
 Remember, this release candidate version is pre-release software. Do not use it on your production shop!

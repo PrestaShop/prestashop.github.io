@@ -21,21 +21,21 @@ tags:
 
 A few months after the beta, the first release candidate for PrestaShop 1.7.8.0 is now ready for you to test!
 
-This is the last step before releasing the final 1.7.8.0. The aim of this version is to verify that all regressions found during the beta have been fixed, and that no new ones are reported by the community users. If nothing is reported by October 5, then the final version of 1.7.8.0 will be made available.
+This is the last step before releasing the final 1.7.8.0. This version aims to verify that all regressions found during the beta have been fixed and that the software is ready for production. If any major or critical bug is reported by October 5, then the final version of 1.7.8.0 will be made available.
 
 Please note that it is not currently possible to perform an automatic upgrade from the Beta to the Release Candidate. And, it will not be possible either to upgrade from this Release Candidate to the final release.
 
 Go download and install this RC version as a test store, either on your machine or your web hosting, then play with it – and give us your feedback! We need YOU to test this new version of PrestaShop.
 
-Remember, this release candidate version is pre release software. Do not use it on your production shop!
+Remember, this release candidate version is pre-release software. Do not use it on your production shop!
 
 ## Notable changes since the RC release
 
 This RC fixes 60 bugs including 13 major ones that were detected between the beta and the RC.
 
-A deep work has been done around the correction of bugs in the product page, the upgrade from version 1.6.1.24 to version 1.7.8.0 and the multistore.
+Deep work has been done around the correction of bugs in the product page, the upgrade from version 1.6.1.24 to version 1.7.8.0, and the multistore.
 
-Checkout the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0-RC.1) to see in details all the changes. 
+Check out the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0-RC.1) to see in detail all the changes. 
 
 All the major bugs have been treated, [the other minor](https://github.com/PrestaShop/PrestaShop/issues?q=+is%3Aissue+milestone%3A1.7.8.1+) will be fixed in the 1.7.8.1 release patch which will arrive soon.
 
@@ -50,7 +50,7 @@ You can download PrestaShop 1.7.8 RC here:
 
 ## How to help finish the 1.7.8
 
-Your feedback on this RC is essential, the regressions you find right now are as many bugs less on the final version and less patch versions. It also means fewer problems on your (or your customer’s) online store.
+Your feedback on this RC is essential, the regressions you find right now are as many bugs less on the final version and fewer patch versions. It also means fewer problems on your (or your customer’s) online store.
 
 You must:
 
@@ -64,7 +64,7 @@ If everything is working well, feel free to comment on this article to tell us, 
 
 ## Acknowledgments
 
-A huge thanks to everyone who got involved by reporting, testing and fixing regressions during the first beta phase.
+A huge thanks to everyone who got involved by reporting, testing, and fixing regressions during the first beta phase.
 Internal and external contributors who submitted pull requests and participated to build this release candidate: 
 
 Boubker Bribri, Franck Lefèvre, Ibrahima Sow, idnovate, Jonathan Lelievre, Julius Žukauskas, juraj1000, Krystian Podemski, Lukas Laurinaitis, Mathieu Ferment, Matthieu Rolland, Mickaël Fernandez, Nesrine Abdmouleh, okom3pom, Olivier Le Corre, Pablo Borowicz, Pierre Rambaud, PululuK, Sam, Stéphane Decisy, Sébastien Alfaiate, Thomas Baccelli, Valentin Szczupak

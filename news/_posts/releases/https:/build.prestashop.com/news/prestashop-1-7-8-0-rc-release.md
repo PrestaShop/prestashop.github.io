@@ -8,7 +8,6 @@ authors: [ PrestaShop ]
 image: /assets/images/2021/09/178RC-banner_800_418_en.jpg
 icon: icon-leaf
 tags:
-
 * 1.7.8.x
 * version
 * rc

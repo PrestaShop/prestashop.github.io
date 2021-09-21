@@ -32,7 +32,7 @@ Remember, this release candidate version is pre-release software. Do not use it 
 
 This RC fixes 60 bugs including 13 major ones that were detected between the beta and the RC.
 
-Deep work has been done around the correction of bugs in the product page, the upgrade from version 1.6.1.24 to version 1.7.8.0, and the multistore.
+A lot of work has been put into fixing bugs in the product page, upgrade from version 1.6.1.24 to version 1.7.8.0, and multistore features.
 
 Check out the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0-RC.1) to see all the changes in detail. 
 

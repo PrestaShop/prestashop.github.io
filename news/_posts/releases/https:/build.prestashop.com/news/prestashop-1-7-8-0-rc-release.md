@@ -29,6 +29,11 @@ Remember, this release candidate version is pre release software. Do not use it 
 
 ## Notable changes since the RC release
 
+This RC fixes 60 bugs including 13 major ones that were detected between the beta and the RC.
+
+A deep work has been done around the correction of bugs in the product page, the upgrade from version 1.6.1.24 to version 1.7.8.0 and the multistore.
+
+All the major bugs have been treated, all the other minor will be fixed in the 1.7.8.1 release patch which will arrive soon.
 
 ## Changelog
 

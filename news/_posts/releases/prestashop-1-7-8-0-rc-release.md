@@ -34,7 +34,7 @@ This RC fixes 60 bugs including 13 major ones that were detected between the bet
 
 Deep work has been done around the correction of bugs in the product page, the upgrade from version 1.6.1.24 to version 1.7.8.0, and the multistore.
 
-Check out the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0-RC.1) to see in detail all the changes. 
+Check out the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0-RC.1) to see all the changes in detail. 
 
 All the major bugs have been treated, [the other minor](https://github.com/PrestaShop/PrestaShop/issues?q=+is%3Aissue+milestone%3A1.7.8.1+) will be fixed in the 1.7.8.1 release patch which will arrive soon.
 

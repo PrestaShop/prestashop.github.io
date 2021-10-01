@@ -9,7 +9,7 @@ icon: icon-github-alt
 tags: [community, contribution, github, contribute]
 ---
 
-Hacktoberfest is a month-long celebration of open-source software that happens online every October, sponsored the American cloud hosting company [DigitalOcean](https://www.digitalocean.com). People are encouraged to engage and create at least 4 pull requests for open-source projects on GitHub.
+Hacktoberfest is a month-long celebration of open-source software that happens online every October, sponsored by the American cloud hosting company [DigitalOcean](https://www.digitalocean.com). People are encouraged to engage and create at least 4 pull requests for open-source projects on GitHub.
 
 If you want to contribute to open-source projects but don’t know where to start, Hacktoberfest might be the perfect opportunity for you.
 

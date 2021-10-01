@@ -9,7 +9,7 @@ icon: icon-github-alt
 tags: [community, contribution, github, contribute]
 ---
 
-Hacktoberfest is a month-long celebration of open-source software that happens online every October, sponsored by Digital Ocean, the American cloud hosting company [DigitalOcean](https://www.digitalocean.com). People are encouraged to engage and create at least 4 pull requests for open-source projects on GitHub.
+Hacktoberfest is a month-long celebration of open-source software that happens online every October, sponsored by the American cloud hosting company [DigitalOcean](https://www.digitalocean.com). People are encouraged to engage and create at least 4 pull requests for open-source projects on GitHub.
 
 If you want to contribute to open-source projects but don’t know where to start, Hacktoberfest might be the perfect opportunity for you.
 
@@ -25,11 +25,11 @@ Everyone is welcome, especially beginners. Just find the open-source projects yo
 
 :wave: Register for Hacktoberfest first. It is [right here](https://hacktoberfest.digitalocean.com/register).
 
-:computer: Create pull requests to involve in your favorite projects - it must have a public GitHub repository.
+:computer: Create pull requests to get involved in your favorite projects - they must have a public GitHub repository.
 
-:white_check_mark: Make sure your pull requests match the [quality standards](https://hacktoberfest.digitalocean.com/resources/qualitystandards) from Hacktoberfest
+:white_check_mark: Make sure your pull requests match Hacktoberfest's [quality standards](https://hacktoberfest.digitalocean.com/resources/qualitystandards).
 
-:bulb: Remember to let us know that you're participating in the event. You can put information in the description.
+:bulb: Remember to let us know that you're participating in the event. You can put information in your Pull Request's description.
 
 :busts_in_silhouette: Wait for the project maintainers to review your contributions.
 
@@ -38,10 +38,10 @@ Everyone is welcome, especially beginners. Just find the open-source projects yo
 
 ## Contribute to the PrestaShop project
 
-As an open-source project, [PrestaShop](https://github.com/PrestaShop) is thrilled to take part in this challenge.
+As an open-source project, [PrestaShop](https://github.com/PrestaShop) is thrilled to take part in this challenge, as we have done for the last few years.
 
 We hope that you will help us with your contributions now, and in the future. We have a dedicated page in our documentation that should help you start. You can find it [here](https://devdocs.prestashop.com/1.7/contribute/).
 
-Want a small tip? Pick one of the [good first issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) to get all beginner-friendly improvements and bugs to fix. Read more about this label on [Build](https://build.prestashop.com/news/a-definition-of-the-good-first-issue-label).
+Want a small tip? Pick one of the [good first issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) to get all beginner-friendly improvements and bugs to fix. Read more about this label [in this article](https://build.prestashop.com/news/a-definition-of-the-good-first-issue-label).
 
-Want to meet your open-source mates? Go to [prestashop.slack.com](https://www.prestashop-project.org/slack/) to join a worldwide community of open-source lovers and PrestaShop developers!
+Want to meet your open-source mates? Go to [PrestaShop's Slack](https://www.prestashop-project.org/slack/) to join a worldwide community of open-source lovers and PrestaShop developers!

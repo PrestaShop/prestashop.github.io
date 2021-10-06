@@ -97,7 +97,7 @@ You can download PrestaShop 1.7.8.0 here:
 PrestaShop 1.7.8.0 is also available through the 1-Click Upgrade module. 
 
 ## Upgrade 
-If you plan on upgrading your shop to 1.7.8 and your current version is **below 1.7.6** you need to use the latest version (4.12.0) of our [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade). Of course, it’s always recommended to use the latest version when upgrading, but even more in this case, since a bug related to upgrading from these older versions has been fixed in the module.
+Of course, we always recommended using the latest available version of the [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade) when upgrading. However, if you are upgrading your shop to 1.7.8 from a version prior to **1.7.6**, make sure the module is updated to version 4.12.0 or later.
 
 ## Known issues
 

@@ -25,7 +25,8 @@ We are happy to announce PrestaShop 1.7.8.0 is officially available!
 NB: PHP 7.3 no longer provides support (only security fixes until January 2022).
 
 ## New translations features
-[illustration translation](/assets/images/2021/10/illustration_translation.png)
+
+![illustration translation](/assets/images/2021/10/illustration_translation.png)
 
 * It is now possible to export back-office, front-office, email, themes, and module translations.
 * Modules using the  [new translation system](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/)  introduced in 1.7.6 can now distribute their own translation files in the XLF format. Users can use the export tool to migrate from legacy PHP catalogue to XLF catalogue
@@ -33,17 +34,21 @@ Developers have better translation system to manage the translations of their mo
 
 ##  New multistore header
 
-[illustration multistore](/assets/images/2021/10/illustration_multistore.png)
+![illustration multistore](/assets/images/2021/10/illustration_multistore.png)
  
 You can search search shop and personalized on the multistore header. The new header offers a brand new multistore experience for the merchants.
 [Here to see the detail of the feature](https://build.prestashop.com/news/multistore-news-in-1.7.8/) 
 
 ## The implementation of Native Lazy Loading on theme Classic
-[illustration lazy loading](/assets/images/2021/10/illustration_lazy_loading.png)
+
+![illustration lazy loading](/assets/images/2021/10/illustration_lazy_loading.png)
+
 Lazy loading is a technique that defers the loading of non-critical resources to the page load. We recommend all theme developers to this technology to enhance their themes to improve the merchant’s store performances.
 
 ## Improvement of the UI
-[illustration ui kit](/assets/images/2021/10/illustration_ui_kit.png)
+
+![illustration ui kit](/assets/images/2021/10/illustration_ui_kit.png)
+
 PrestaShop back-office UI Kit has been improved to have a solid Design System with adjustment of alert colors, font size, buttons contrasts, and an enhancement of the responsiveness.
 
 **IMPORTANT NOTE** if you plan on upgrading your shop to 1.7.8 and your current version is **below 1.7.6** you need to use the latest version (4.11.0) of our [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade). Of course, it’s always recommended using the latest version when upgrading, but even more so in this case since a bug related to upgrading from these older versions has been fixed in the module.
@@ -59,7 +64,7 @@ This major bug [#25982](https://github.com/PrestaShop/PrestaShop/issues/25959) b
 
 1 492 pull requests have been merged since the beginning of the version development. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0) for details. 
 
-// add comparison date between releases
+// add data between releases
 
 ## Download
 

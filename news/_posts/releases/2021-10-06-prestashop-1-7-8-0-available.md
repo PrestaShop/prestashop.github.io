@@ -48,7 +48,7 @@ You can search shop and customize the multistore header with a specific color fo
 
 ![illustration lazy loading](/assets/images/2021/10/illustration_lazy_loading.png)
 
-Lazy loading is a technique that defers the loading of non-critical resources to the page load. We recommend all theme developers to this technology to enhance their themes to improve the merchant’s store performances.
+Lazy loading is a technique that defers the loading of non-critical resources until the page load. We recommend all theme developers to use this technology to enhance their themes and to improve the merchant’s store performances.
 
 ## Improvement of the UI
 

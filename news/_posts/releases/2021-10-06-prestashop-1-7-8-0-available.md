@@ -79,7 +79,7 @@ If you are looking for more details about all changes and new features introduce
 The Release Candiate allowed a community member to detect a bug when installing a shop on the CLI.
 
 ## Changelog
-1 492 pull requests have been merged since the beginning of the version development. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0) for details. 
+1,492 pull requests have been merged since the beginning of the version development. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0) for more details. 
 
 ## Download
 You can download PrestaShop 1.7.8.0 here:

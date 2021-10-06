@@ -4,7 +4,7 @@ title:  «PrestaShop 1.7.8.0 is available»
 subtitle: «You waited for it, here it is!»
 date:  2021-10-05
 authors: [PrestaShop]
-image: 
+image: /assets/images/2021/10/1780_banner_1200_628.jpg
 icon: icon-leaf
 tags:
  - version
@@ -16,7 +16,7 @@ tags:
 
 We are happy to announce PrestaShop 1.7.8.0 is officially available!
 
-![1.7.8.0 is available!](/assets/images/2021/10/)
+![1.7.8.0 is available!](/assets/images/2021/10/1780_banner_1200_628.jpg)
 
 Each version of PrestaShop are getting bigger and bigger with more and more regular contributors, we are very proud to have such a strong community following us on a daily basis. 
 

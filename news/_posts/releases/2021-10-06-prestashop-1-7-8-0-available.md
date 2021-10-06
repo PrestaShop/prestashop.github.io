@@ -101,7 +101,7 @@ Of course, we always recommended using the latest available version of the [1-Cl
 
 ## Known issues
 
-All the major bugs have been fixed, and [the remaining minor ones](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+milestone%3A1.7.8.1+is%3Aopen) will be fixed in the upcoming 1.7.8.1 patch release.
+All the major regressions have been fixed, and [the remaining minor ones](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+milestone%3A1.7.8.1+is%3Aopen) are expected to be fixed in the upcoming 1.7.8.1 patch release.
 
 ## Acknowledgments
 

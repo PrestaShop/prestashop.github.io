@@ -76,7 +76,7 @@ PrestaShop's Back office has been updated to harmonize the look of all pages. Th
 If you are looking for more details about all changes and new features introduced in 1.7.8, the [1.7.8 beta version release note](https://build.prestashop.com/news/prestashop-1-7-8-0-beta-release/) is the perfect article for you to read!
 
 ### Notable fixes since RC1
-The Release Candiate allowed a community member to detect a bug when installing a shop on the CLI.
+The Release Candidate allowed a community member to detect [a bug](https://github.com/PrestaShop/PrestaShop/issues/25959) that blocked the install process when running it from the CLI. This has been fixed for this final release.
 
 ## Changelog
 1,492 pull requests have been merged since the beginning of the version development. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0) for more details. 

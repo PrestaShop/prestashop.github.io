@@ -23,22 +23,23 @@ Each version of PrestaShop is getting bigger and bigger, with more and more regu
 This new version brings many features that should please both merchants and developers. 
 
 # New in 1.7.8.0
-## Support PHP 7.4
 
-This version is compatible with PHP 7.4. it is allows the software to have access to the latest bug fixes and security vulnerabilities from PHP. 
-NB: PHP 7.3 no longer provides support except for security fixes until January 2022. Find more information [here](https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/).
+## Support for PHP 7.4
+
+PrestaShop 1.7.8 introduces compatibility with PHP 7.4, which allows you to benefit from bug fixes and security patches from PHP until December 2023. 
+
+Please be aware that PHP versions prior to 7.3 have reached end of life, and PHP 7.3 will only receive security fixes for one additional month, so we encourage you to update as soon as possible to stay safe. Find more information about PHP support [here](https://www.php.net/supported-versions.php) and about PrestaShop compatibility [here](https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/).
 
 ## New translations features
 
-![illustration translation](/assets/images/2021/10/illustration_translation.png)
+![Translation illustration](/assets/images/2021/10/illustration_translation.png)
 
 * It is now possible to export back-office, front-office, email, themes, and module translations.
-* Modules using the  [new translation system](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/)  introduced in 1.7.6 can now distribute their own translation files in the XLF format. Users can use the export tool to migrate from legacy PHP catalogue to XLF catalogue
-Developers have better translation system to manage the translations of their modules or themes.
+* Modules using the [new translation system](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/) introduced in 1.7.6 can now distribute translations for their modules using the XLIFF format.
 
 ##  New multistore header
 
-![illustration multistore](/assets/images/2021/10/illustration_multistore.png)
+![Multistore illustration](/assets/images/2021/10/illustration_multistore.png)
  
 You can search search shop and personalized on the multistore header. The new header offers a brand new multistore experience for the merchants.
 [Here to see the detail of the feature](https://build.prestashop.com/news/multistore-news-in-1.7.8/) 

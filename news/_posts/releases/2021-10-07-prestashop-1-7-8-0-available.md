@@ -2,7 +2,7 @@
 layout: post
 title: PrestaShop 1.7.8.0 is available
 subtitle: You waited for it, here it is!
-date:  2021-10-05
+date:  2021-10-07
 authors: [PrestaShop]
 image: /assets/images/2021/10/1780_banner_1200_628.jpg
 icon: icon-leaf
@@ -43,12 +43,12 @@ Please be aware that PHP versions prior to 7.3 have reached end of life, and PHP
 
 ###  New multistore header
 <div style="display: flex; align-items: center; flex-wrap: wrap;">
-  <div class="col-md-4" style="">
-    <img src="/assets/images/2021/10/illustration_multistore.png" alt="Multistore illustration">
-  </div>
   <div class="col-md-8">
 You can search shop and customize the multistore header with a specific color for each shop or group of shop. The new header offers a better multistore user experience for the merchants.
 <a class="vglnk" href="https://build.prestashop.com/news/multistore-news-in-1.7.8/" rel="nofollow">Here to see the detail of the feature</a> 
+  </div>
+   <div class="col-md-4" style="">
+    <img src="/assets/images/2021/10/illustration_multistore.png" alt="Multistore illustration">
   </div>
 </div>
 
@@ -64,12 +64,12 @@ Lazy loading is a technique that defers the loading of non-critical resources un
 
 ### UI Improvements
 <div style="display: flex; align-items: center; flex-wrap: wrap;">
-  <div class="col-md-4" style="">
-    <img src="/assets/images/2021/10/illustration_ui_kit.png" alt="Ui Kit illustration">
-  </div>
-  <div class="col-md-8">
+    <div class="col-md-8">
 PrestaShop's Back office has been updated to harmonize the look of all pages. The UI Kit has been updated as well, with many subtle improvements to alert colors, font sizes, color contrast, and overall responsiveness.
   </div>
+ <div class="col-md-4" style="">
+    <img src="/assets/images/2021/10/illustration_ui_kit.png" alt="Ui Kit illustration">
+ </div>
 </div>
 
 ### And many more features and improvements

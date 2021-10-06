@@ -22,9 +22,9 @@ Each version of PrestaShop is getting bigger and bigger, with more and more regu
 
 This new version brings [many features](https://build.prestashop.com/news/prestashop-1-7-8-0-beta-release/) that should please both merchants and developers. 
 
-# New in 1.7.8.0
+## New in 1.7.8.0
 
-## Support for PHP 7.4
+### Support for PHP 7.4
 
 PrestaShop 1.7.8 introduces compatibility with PHP 7.4, which allows you to benefit from bug fixes and security patches from PHP until December 2023. 
 
@@ -42,7 +42,7 @@ Please be aware that PHP versions prior to 7.3 have reached end of life, and PHP
   </div>
 </div>
 
-##  New multistore header
+###  New multistore header
  
 <div style="display: flex; align-items: center; flex-wrap: wrap;">
   <div class="col-md-4" style="">
@@ -54,7 +54,7 @@ You can search shop and customize the multistore header with a specific color fo
   </div>
 </div>
 
-## Native Lazy Loading for images on Classic theme
+### Native Lazy Loading for images on Classic theme
 
 <div style="display: flex; align-items: center; flex-wrap: wrap;">
   <div class="col-md-4" style="">
@@ -65,7 +65,7 @@ Lazy loading is a technique that defers the loading of non-critical resources un
   </div>
 </div>
 
-## UI Improvements
+### UI Improvements
 
 <div style="display: flex; align-items: center; flex-wrap: wrap;">
   <div class="col-md-4" style="">
@@ -76,18 +76,19 @@ PrestaShop back office UI Kit has been improved to have a solid Design System wi
   </div>
 </div>
 
-## And many more features and improvements
+### And many more features and improvements
+
 If you are looking for more details about all changes and new features introduced in 1.7.8, the [1.7.8 beta version release note](https://build.prestashop.com/news/prestashop-1-7-8-0-beta-release/) is the perfect article for you to read!
 
-## Notable fixes since RC1
+### Notable fixes since RC1
 The Release Candiate allowed a community member to detect a bug when installing a shop on the CLI.
 This major bug [#25982](https://github.com/PrestaShop/PrestaShop/issues/25959) blocked the installation of a PrestaShop from the CLI. 
 
-# Changelog
+## Changelog
 
 1 492 pull requests have been merged since the beginning of the version development. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0) for details. 
 
-# Download
+## Download
 
 You can download PrestaShop 1.7.8.0 here:
 
@@ -96,14 +97,14 @@ You can download PrestaShop 1.7.8.0 here:
  
 PrestaShop 1.7.8.0 is also available through the 1-Click Upgrade module. 
 
-# Upgrade 
+## Upgrade 
 If you plan on upgrading your shop to 1.7.8 and your current version is **below 1.7.6** you need to use the latest version (4.12.0) of our [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade). Of course, it’s always recommended to use the latest version when upgrading, but even more in this case, since a bug related to upgrading from these older versions has been fixed in the module.
 
-# Known issues
+## Known issues
 
 All the major bugs have been fixed, and [the remaining minor ones](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+milestone%3A1.7.8.1+is%3Aopen) will be fixed in the upcoming 1.7.8.1 patch release.
 
-# Acknowledgments
+## Acknowledgments
 
 PrestaShop is above all a community project: from the 162 committers who contributed to this release, the vast majority are not directly affiliated with the PrestaShop company. Also, 88 people contributed for their first time to PrestaShop in this version!
 

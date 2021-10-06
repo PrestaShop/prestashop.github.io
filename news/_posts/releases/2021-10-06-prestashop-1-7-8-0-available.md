@@ -76,9 +76,6 @@ PrestaShop back office UI Kit has been improved to have a solid Design System wi
   </div>
 </div>
 
-# Upgrade 
-If you plan on upgrading your shop to 1.7.8 and your current version is **below 1.7.6** you need to use the latest version (4.12.0) of our [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade). Of course, it’s always recommended to use the latest version when upgrading, but even more in this case, since a bug related to upgrading from these older versions has been fixed in the module.
-
 ## And many more features and improvements
 If you are looking for more details about all changes and new features expected in 1.7.8, the [1.7.8 beta version release note](https://build.prestashop.com/news/prestashop-1-7-8-0-beta-release/) is the perfect article for you to read!
 
@@ -100,6 +97,9 @@ You can download PrestaShop 1.7.8.0 here:
 {: .text-center}
  
 PrestaShop 1.7.8.0 is also available through the 1-Click Upgrade module. 
+
+# Upgrade 
+If you plan on upgrading your shop to 1.7.8 and your current version is **below 1.7.6** you need to use the latest version (4.12.0) of our [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade). Of course, it’s always recommended to use the latest version when upgrading, but even more in this case, since a bug related to upgrading from these older versions has been fixed in the module.
 
 # Known issues
 

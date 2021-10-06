@@ -25,7 +25,7 @@ This new version brings many features that should please all type of merchants a
 # New in 1.7.8.0
 ## Support PHP 7.4
 
-* Compatibility with PHP 7.4: access the latest bug fixes and security vulnerabilities in PHP. 
+This version is compatible with PHP 7.4. it is allows the software to have access to the latest bug fixes and security vulnerabilities from PHP. 
 NB: PHP 7.3 no longer provides support except for security fixes until January 2022. Find more information [here](https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/).
 
 ## New translations features

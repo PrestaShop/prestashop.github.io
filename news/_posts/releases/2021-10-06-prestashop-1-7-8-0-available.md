@@ -82,7 +82,7 @@ PrestaShop 1.7.8.0 is also available through the 1-Click Upgrade module.
 
 ## Known issues
 
-All the major bugs have been fixed, and [the remaining minor ones](https://github.com/PrestaShop/PrestaShop/issues?q=+is%3Aissue+milestone%3A1.7.8.1+) will be fixed in the upcoming 1.7.8.1 patch release.
+All the major bugs have been fixed, and [the remaining minor ones](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+milestone%3A1.7.8.1+is%3Aopen) will be fixed in the upcoming 1.7.8.1 patch release.
 
 ## Acknowledgments
 

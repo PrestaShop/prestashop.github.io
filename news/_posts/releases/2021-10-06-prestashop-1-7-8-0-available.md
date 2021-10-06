@@ -18,9 +18,13 @@ We are happy to announce PrestaShop 1.7.8.0 is officially available!
 
 ![1.7.8.0 is available!](/assets/images/2021/10/)
 
+Each version of PrestaShop are getting bigger and bigger with more and more regular contributors, we are very proud to have such a strong community following us on a daily basis. 
+
+This new version brings many features that should please all type of merchants and developers. 
 
 # New in 1.7.8.0
 ## Support PHP 7.4
+
 * Compatibility with PHP 7.4: access the latest bug fixes and security vulnerabilities in PHP. 
 NB: PHP 7.3 no longer provides support except for security fixes until January 2022. Find more information [here](https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/).
 

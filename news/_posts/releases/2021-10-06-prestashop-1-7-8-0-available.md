@@ -41,7 +41,7 @@ Please be aware that PHP versions prior to 7.3 have reached end of life, and PHP
 
 ![Multistore illustration](/assets/images/2021/10/illustration_multistore.png)
  
-You can search search shop and personalized on the multistore header. The new header offers a brand new multistore experience for the merchants.
+You can search shop and customize the multistore header with a specific color for each shop or group of shop. The new header offers a better multistore user experience for the merchants.
 [Here to see the detail of the feature](https://build.prestashop.com/news/multistore-news-in-1.7.8/) 
 
 ## The implementation of Native Lazy Loading on theme Classic

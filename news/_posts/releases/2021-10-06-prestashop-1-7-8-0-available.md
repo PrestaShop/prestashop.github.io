@@ -54,7 +54,7 @@ Lazy loading is a technique that defers the loading of non-critical resources un
 
 ![illustration ui kit](/assets/images/2021/10/illustration_ui_kit.png)
 
-PrestaShop back-office UI Kit has been improved to have a solid Design System with adjustment of alert colors, font size, buttons contrasts, and an enhancement of the responsiveness.
+PrestaShop back office UI Kit has been improved to have a solid Design System with adjustment of alert colors, font size, buttons contrasts, and an enhancement of the responsiveness.
 
 **IMPORTANT NOTE** if you plan on upgrading your shop to 1.7.8 and your current version is **below 1.7.6** you need to use the latest version (4.12.0) of our [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade). Of course, it’s always recommended to use the latest version when upgrading, but even more in this case, since a bug related to upgrading from these older versions has been fixed in the module.
 

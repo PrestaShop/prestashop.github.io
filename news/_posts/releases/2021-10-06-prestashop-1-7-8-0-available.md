@@ -32,29 +32,49 @@ Please be aware that PHP versions prior to 7.3 have reached end of life, and PHP
 
 ## New translations features
 
-![Translation illustration](/assets/images/2021/10/illustration_translation.png)
-
-* It is now possible to export back-office, front-office, email, themes, and module translations.
-* Modules using the [new translation system](https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/) introduced in 1.7.6 can now distribute translations for their modules using the XLIFF format.
+<div style="display: flex; align-items: center; flex-wrap: wrap;">
+  <div class="col-md-4" style="">
+    <img src="/assets/images/2021/10/illustration_translation.png" alt="Translation illustration">
+  </div>
+  <div class="col-md-8">
+    * It is now possible to export back-office, front-office, email, themes, and module translations.
+    * Modules using <a class="vglnk" href="https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/" rel="nofollow">the new translation system</a> introduced in 1.7.6 can now distribute translations for their modules using the XLIFF format.
+  </div>
+</div>
 
 ##  New multistore header
-
-![Multistore illustration](/assets/images/2021/10/illustration_multistore.png)
  
+<div style="display: flex; align-items: center; flex-wrap: wrap;">
+  <div class="col-md-4" style="">
+    <img src="/assets/images/2021/10/illustration_multistore.png" alt="Multistore illustration">
+  </div>
+  <div class="col-md-8">
 You can search shop and customize the multistore header with a specific color for each shop or group of shop. The new header offers a better multistore user experience for the merchants.
-[Here to see the detail of the feature](https://build.prestashop.com/news/multistore-news-in-1.7.8/) 
+<a class="vglnk" href="https://build.prestashop.com/news/multistore-news-in-1.7.8/" rel="nofollow">Here to see the detail of the feature</a> 
+  </div>
+</div>
 
 ## The implementation of Native Lazy Loading on theme Classic
 
-![illustration lazy loading](/assets/images/2021/10/illustration_lazy_loading.png)
-
+<div style="display: flex; align-items: center; flex-wrap: wrap;">
+  <div class="col-md-4" style="">
+    <img src="/assets/images/2021/10/illustration_lazy_loading.png" alt="Lazy loading illustration">
+  </div>
+  <div class="col-md-8">
 Lazy loading is a technique that defers the loading of non-critical resources until the page load. We recommend all theme developers to use this technology to enhance their themes and to improve the merchant’s store performances.
+  </div>
+</div>
 
 ## Improvement of the UI
 
-![illustration ui kit](/assets/images/2021/10/illustration_ui_kit.png)
-
+<div style="display: flex; align-items: center; flex-wrap: wrap;">
+  <div class="col-md-4" style="">
+    <img src="/assets/images/2021/10/illustration_ui_kit.png" alt="Ui Kit illustration">
+  </div>
+  <div class="col-md-8">
 PrestaShop back office UI Kit has been improved to have a solid Design System with adjustment of alert colors, font size, buttons contrasts, and an enhancement of the responsiveness.
+  </div>
+</div>
 
 # Upgrade 
 If you plan on upgrading your shop to 1.7.8 and your current version is **below 1.7.6** you need to use the latest version (4.12.0) of our [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade). Of course, it’s always recommended to use the latest version when upgrading, but even more in this case, since a bug related to upgrading from these older versions has been fixed in the module.

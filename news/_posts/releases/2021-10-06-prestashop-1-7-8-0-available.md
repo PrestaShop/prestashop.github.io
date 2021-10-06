@@ -56,7 +56,8 @@ Lazy loading is a technique that defers the loading of non-critical resources un
 
 PrestaShop back office UI Kit has been improved to have a solid Design System with adjustment of alert colors, font size, buttons contrasts, and an enhancement of the responsiveness.
 
-**IMPORTANT NOTE** if you plan on upgrading your shop to 1.7.8 and your current version is **below 1.7.6** you need to use the latest version (4.12.0) of our [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade). Of course, it’s always recommended to use the latest version when upgrading, but even more in this case, since a bug related to upgrading from these older versions has been fixed in the module.
+# Upgrade 
+If you plan on upgrading your shop to 1.7.8 and your current version is **below 1.7.6** you need to use the latest version (4.12.0) of our [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade). Of course, it’s always recommended to use the latest version when upgrading, but even more in this case, since a bug related to upgrading from these older versions has been fixed in the module.
 
 ## And many more features and improvements
 If you are looking for more details about all changes and new features expected in 1.7.8, the [1.7.8 beta version release note](https://build.prestashop.com/news/prestashop-1-7-8-0-beta-release/) is the perfect article for you to read!
@@ -65,13 +66,13 @@ If you are looking for more details about all changes and new features expected 
 The RC allowed a community member to detect a bug on the CLI. 
 This major bug [#25982](https://github.com/PrestaShop/PrestaShop/issues/25959) blocked the installation of a PrestaShop from the CLI. 
 
-## Changelog
+# Changelog
 
 1 492 pull requests have been merged since the beginning of the version development. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0) for details. 
 
 // add data between releases
 
-## Download
+# Download
 
 You can download PrestaShop 1.7.8.0 here:
 
@@ -84,7 +85,7 @@ PrestaShop 1.7.8.0 is also available through the 1-Click Upgrade module.
 
 All the major bugs have been fixed, and [the remaining minor ones](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+milestone%3A1.7.8.1+is%3Aopen) will be fixed in the upcoming 1.7.8.1 patch release.
 
-## Acknowledgments
+# Acknowledgments
 
 PrestaShop is above all a community project: from the 119 committers who contributed to this release, the vast majority are not directly affiliated with the PrestaShop company. Also, 57 people contributed for their first time to PrestaShop in this version!
 

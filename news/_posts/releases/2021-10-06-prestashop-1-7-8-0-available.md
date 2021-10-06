@@ -80,7 +80,7 @@ PrestaShop back office UI Kit has been improved to have a solid Design System wi
 If you are looking for more details about all changes and new features expected in 1.7.8, the [1.7.8 beta version release note](https://build.prestashop.com/news/prestashop-1-7-8-0-beta-release/) is the perfect article for you to read!
 
 ## Notable fixes since RC1
-The RC allowed a community member to detect a bug on the CLI. 
+The Release Candiate allowed a community member to detect a bug when installing a shop on the CLI.
 This major bug [#25982](https://github.com/PrestaShop/PrestaShop/issues/25959) blocked the installation of a PrestaShop from the CLI. 
 
 # Changelog

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  «PrestaShop 1.7.8.0 is available»
-subtitle: «You waited for it, here it is!»
+title: PrestaShop 1.7.8.0 is available
+subtitle: You waited for it, here it is!
 date:  2021-10-05
 authors: [PrestaShop]
 image: /assets/images/2021/10/1780_banner_1200_628.jpg
@@ -18,9 +18,9 @@ We are happy to announce PrestaShop 1.7.8.0 is officially available!
 
 ![1.7.8.0 is available!](/assets/images/2021/10/1780_banner_1200_628.jpg)
 
-Each version of PrestaShop are getting bigger and bigger with more and more regular contributors, we are very proud to have such a strong community following us on a daily basis. 
+Each version of PrestaShop is getting bigger and bigger, with more and more regular contributors. We are very proud of having such a strong community working with us on a daily basis.
 
-This new version brings many features that should please all type of merchants and developers. 
+This new version brings many features that should please both merchants and developers. 
 
 # New in 1.7.8.0
 ## Support PHP 7.4

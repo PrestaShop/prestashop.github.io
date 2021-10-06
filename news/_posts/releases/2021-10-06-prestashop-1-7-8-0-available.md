@@ -65,7 +65,7 @@ Lazy loading is a technique that defers the loading of non-critical resources un
   </div>
 </div>
 
-## Improvement of the UI
+## UI Improvements
 
 <div style="display: flex; align-items: center; flex-wrap: wrap;">
   <div class="col-md-4" style="">

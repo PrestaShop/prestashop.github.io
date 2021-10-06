@@ -37,7 +37,7 @@ Please be aware that PHP versions prior to 7.3 have reached end of life, and PHP
   </div>
   <div class="col-md-8">
     - It is now possible to export back-office, front-office, email, themes, and module translations.<br>
-    - Modules using <a class="vglnk" href="https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/" rel="nofollow">the new translation system</a> introduced in 1.7.6 can now distribute translations for their modules using the XLIFF format.<br>
+    - Modules using <a class="vglnk" href="https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/" rel="nofollow">the new translation system</a> introduced in 1.7.6 can now distribute translations for their modules using the XLIFF format.
   </div>
 </div>
 
@@ -47,7 +47,7 @@ Please be aware that PHP versions prior to 7.3 have reached end of life, and PHP
     <img src="/assets/images/2021/10/illustration_multistore.png" alt="Multistore illustration">
   </div>
   <div class="col-md-8">
-You can search shop and customize the multistore header with a specific color for each shop or group of shop. The new header offers a better multistore user experience for the merchants.<br>
+You can search shop and customize the multistore header with a specific color for each shop or group of shop. The new header offers a better multistore user experience for the merchants.
 <a class="vglnk" href="https://build.prestashop.com/news/multistore-news-in-1.7.8/" rel="nofollow">Here to see the detail of the feature</a> 
   </div>
 </div>
@@ -58,7 +58,7 @@ You can search shop and customize the multistore header with a specific color fo
     <img src="/assets/images/2021/10/illustration_lazy_loading.png" alt="Lazy loading illustration">
   </div>
   <div class="col-md-8">
-Lazy loading is a technique that defers the loading of non-critical resources until the page load. We recommend all theme developers to use this technology to enhance their themes and to improve the merchant’s store performances.<br>
+Lazy loading is a technique that defers the loading of non-critical resources until the page load. We recommend all theme developers to use this technology to enhance their themes and to improve the merchant’s store performances.
   </div>
 </div>
 
@@ -68,7 +68,7 @@ Lazy loading is a technique that defers the loading of non-critical resources un
     <img src="/assets/images/2021/10/illustration_ui_kit.png" alt="Ui Kit illustration">
   </div>
   <div class="col-md-8">
-PrestaShop back office UI Kit has been improved to have a solid Design System with adjustment of alert colors, font size, buttons contrasts, and an enhancement of the responsiveness.<br>
+PrestaShop's Back office has been updated to harmonize the look of all pages. The UI Kit has been updated as well, with many subtle improvements to alert colors, font sizes, color contrast, and overall responsiveness.
   </div>
 </div>
 

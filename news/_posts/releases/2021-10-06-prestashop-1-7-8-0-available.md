@@ -54,7 +54,7 @@ You can search shop and customize the multistore header with a specific color fo
   </div>
 </div>
 
-## The implementation of Native Lazy Loading on theme Classic
+## Native Lazy Loading for images on Classic theme
 
 <div style="display: flex; align-items: center; flex-wrap: wrap;">
   <div class="col-md-4" style="">

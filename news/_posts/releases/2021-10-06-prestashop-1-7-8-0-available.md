@@ -87,8 +87,6 @@ This major bug [#25982](https://github.com/PrestaShop/PrestaShop/issues/25959) b
 
 1 492 pull requests have been merged since the beginning of the version development. Read the [Changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.0) for details. 
 
-// add data between releases
-
 # Download
 
 You can download PrestaShop 1.7.8.0 here:

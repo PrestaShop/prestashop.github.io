@@ -20,7 +20,7 @@ We are happy to announce PrestaShop 1.7.8.0 is officially available!
 
 Each version of PrestaShop is getting bigger and bigger, with more and more regular contributors. We are very proud of having such a strong community working with us on a daily basis.
 
-This new version brings many features that should please both merchants and developers. 
+This new version brings [many features](https://build.prestashop.com/news/prestashop-1-7-8-0-beta-release/) that should please both merchants and developers. 
 
 # New in 1.7.8.0
 

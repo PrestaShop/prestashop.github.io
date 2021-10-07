@@ -106,7 +106,7 @@ The following languages had the best progress in September thanks to the transla
 
 Congratulations! 
  
-![Best translation progress in September 2021](/assets/images/2021/08/build-crowdin-progress-sept21.png)
+![Best translation progress in September 2021](/assets/images/2021/10/build-crowdin-progress-sept21.png)
 
 A huge thank you to all the contributors!
  

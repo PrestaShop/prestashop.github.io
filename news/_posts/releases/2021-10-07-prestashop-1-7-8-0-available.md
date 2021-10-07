@@ -2,7 +2,7 @@
 layout: post
 title: PrestaShop 1.7.8.0 is available
 subtitle: You waited for it, here it is!
-date:  2021-10-07
+date:  2021-10-07 10:00:00
 authors: [PrestaShop]
 image: /assets/images/2021/10/1780_banner_1200_628.jpg
 icon: icon-leaf

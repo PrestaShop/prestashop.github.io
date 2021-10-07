@@ -84,7 +84,7 @@ The Release Candidate allowed a community member to detect [a bug](https://githu
 ## Download
 You can download PrestaShop 1.7.8.0 here:
 
-[Download PrestaShop 1.7.8.0 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.8.0 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
  
 PrestaShop 1.7.8.0 is also available through the 1-Click Upgrade module. 

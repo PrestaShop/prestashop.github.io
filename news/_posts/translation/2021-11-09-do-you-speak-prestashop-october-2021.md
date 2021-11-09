@@ -58,7 +58,7 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
 | 9. | Rúben Martins (RubenMartins) | Portuguese | 334
 | 10. | Store (HelaBasa) | Sinhala | 287
  
-#### Top 8 proofreaders in Octoberr:
+#### Top 8 proofreaders in October:
  
 | | Proofreader | Language | # Words
 |-| ---------- | -------- | ----------------
@@ -91,7 +91,7 @@ Thank you all for your contribution! And remember, in order to get back to a 100
 
 #### Almost there!
 
-Korean and Czech are almost fully available. There are less than 5% of strings to proofread. 
+Korean and Czech are almost fully available. There is less than 5% of strings to proofread. 
 There isn’t much work left, so if you wish to help to proofread what has been translated, please send an email to translation@prestashop.com or write me (Julie Varisellaz) on [Slack](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg). Your help is needed!
 
 ## Languages with the best evolution

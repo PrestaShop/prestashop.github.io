@@ -17,7 +17,7 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 
 ### 📹 PrestaShop Day France 2021: watch the replay!
 
-The PrestaShopDay France took place on October 19th in Paris. If you missed it, don’t worry, you can still access the replay of the event, [here](https://events.prestashop.com/prestashop-day-2021/en/content/replay?searchtext=&page=1&%24pagegroup=franais).
+The PrestaShop Day France took place on October 19th in Paris. If you missed it, don’t worry, you can still access the replay of the event, [here](https://events.prestashop.com/prestashop-day-2021/en/content/replay?searchtext=&page=1&%24pagegroup=franais).
 
 ### 📸 Your pictures of the reward program
 

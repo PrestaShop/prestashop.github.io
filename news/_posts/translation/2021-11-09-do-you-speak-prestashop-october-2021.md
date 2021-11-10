@@ -108,7 +108,7 @@ Congratulations!
 
 A huge thank you to all the contributors!
  
-Of course, this is highlighting the languages that made some progress with new translations; but it does not mean that the languages that are not mentioned here are not active. Indeed, some editing and rewriting could be going on, but the percentage of translation would not be modified (since the work happens on strings that are already translated). So let's not forget about the work of other contributors! Thanks to you too!
+Of course, this is highlighting the languages that made some progress with new translations; but it does not mean that the languages that are not mentioned here are not active. Indeed, some editing and rewriting may be going on, but the percentage of translation would not be modified (since the work happens on strings that are already translated). So let's not forget about the work of other contributors! Thanks to you too!
 
 ## Let’s keep in touch!
 

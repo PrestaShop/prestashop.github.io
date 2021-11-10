@@ -21,7 +21,7 @@ The PrestaShop Day France took place on October 19th in Paris. If you missed it,
 
 ### 📸 Your pictures of the reward program
 
-Norbert (aka [SNor42](https://crowdin.com/profile/SNor42)) has received his package a few days ago and sent us a picture of the gift with a nice message. Thank you again for your contribution to the Hungarian project, Norbert! 
+Norbert (aka [SNor42](https://crowdin.com/profile/SNor42)) has received our package a few days ago and sent us a picture of his gift with a nice message. Thank you again for your contribution to the Hungarian project, Norbert! 
 
 ![Norbert’s picture](/assets/images/2021/11/build-norbert-gift.jpg)
 

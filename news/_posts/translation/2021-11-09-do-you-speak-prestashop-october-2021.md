@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – October 2021 edition"
 subtitle: "Where you'll learn that PrestaShop 1.7.8 is now fully available in Serbian"
-date: 2021-11-09 12:00:00 
+date: 2021-11-10
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

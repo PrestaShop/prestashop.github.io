@@ -57,7 +57,7 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 - [Buttons are not well displayed - part 1](https://github.com/PrestaShop/PrestaShop/issues/25740)
 - [Buttons are not well displayed - part 2](https://github.com/PrestaShop/PrestaShop/issues/25980)
 - [Buttons are not well displayed - part 3](https://github.com/PrestaShop/PrestaShop/issues/26040)
-- [Floating button over some elements on migrated pages and prevent to save form](https://github.com/PrestaShop/PrestaShop/issues/25423)
+- [Floating button over some elements on migrated pages preventing to save form](https://github.com/PrestaShop/PrestaShop/issues/25423)
 
 
 ## Front office regressions

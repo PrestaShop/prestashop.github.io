@@ -67,18 +67,16 @@ You could compare a Symfony Form Theme to a PrestaShop theme: a PrestaShop theme
 
 Diving deeper in details, in the Symfony Bootstrap Form Theme, file inputs are for example being rendered following this macro:
 ```html
-{% block file_widget -%}
-    <{{ element|default('div') }} class="custom-file">
-        {%- set type = type|default('file') -%}
-        {{- block('form_widget_simple') -}}
-        {%- set label_attr = label_attr|merge({ class: (label_attr.class|default('') ~ ' custom-file-label')|trim })|filter((value, key) => key != 'id') -%}
-        <label for="{{ form.vars.id }}" {% with { attr: label_attr } %}{{ block('attributes') }}{% endwith %}>
-            {%- if attr.placeholder is defined and attr.placeholder is not none -%}
-                {{- translation_domain is same as(false) ? attr.placeholder : attr.placeholder|trans({}, translation_domain) -}}
-            {%- endif -%}
-        </label>
-    </{{ element|default('div') }}>
-{% endblock %}
+<{{ element|default('div') }} class="custom-file">
+    {%- set type = type|default('file') -%}
+    {{- block('form_widget_simple') -}}
+    {%- set label_attr = label_attr|merge({ class: (label_attr.class|default('') ~ ' custom-file-label')|trim })|filter((value, key) => key != 'id') -%}
+    <label for="{{ form.vars.id }}" {% with { attr: label_attr } %}{{ block('attributes') }}{% endwith %}>
+        {%- if attr.placeholder is defined and attr.placeholder is not none -%}
+            {{- translation_domain is same as(false) ? attr.placeholder : attr.placeholder|trans({}, translation_domain) -}}
+        {%- endif -%}
+    </label>
+</{{ element|default('div') }}>
 ```
 
 The main benefit of this system is that, since 'what is my form structure' and 'how is my form rendered' are completely separated, you can choose to modify one or the other without altering the other one.

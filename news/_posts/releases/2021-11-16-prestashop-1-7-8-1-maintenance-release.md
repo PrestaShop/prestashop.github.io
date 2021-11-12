@@ -32,7 +32,7 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 - [SQL Manager page - SQL query return exception](https://github.com/PrestaShop/PrestaShop/issues/25684)
 - [Invoices page - Longer buttons overflow their container on lower resolutions](https://github.com/PrestaShop/PrestaShop/issues/25422)
 - [Localization Page - There is no confirmation modal when changing the default currency](https://github.com/PrestaShop/PrestaShop/issues/25264)
-- [View supplier page - Unexpexted error](https://github.com/PrestaShop/PrestaShop/issues/25593)
+- [View supplier page - Unexpected error](https://github.com/PrestaShop/PrestaShop/issues/25593)
 - [View customer page - Incorrect display of the address block](https://github.com/PrestaShop/PrestaShop/issues/25174)
 - [Add/edit tax rule page - The state and the postal code fields are not aligned](https://github.com/PrestaShop/PrestaShop/issues/26491) 
 - [Add/edit category page - The browser is unable to show the error message on an hidden element](https://github.com/PrestaShop/PrestaShop/issues/23365)

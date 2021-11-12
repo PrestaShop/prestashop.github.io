@@ -66,7 +66,7 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 - [After upgrade, theme must be updated to be able to pay into the final step](https://github.com/PrestaShop/PrestaShop/issues/26274)
 - [Simple anchors don't work on CMS page](https://github.com/PrestaShop/PrestaShop/issues/26326)
 - [The add to cart button is not working when clicking on the cart icon](https://github.com/PrestaShop/PrestaShop/issues/26433)
-- [Product disabled - an exception is displayed when changing combination or increasing / decreasing a quantity](https://github.com/PrestaShop/PrestaShop/issues/25891)
+- [Product disabled - An exception is displayed when changing combination or increasing/decreasing a quantity](https://github.com/PrestaShop/PrestaShop/issues/25891)
 - [Product comment structured data AggregateRating isn't working](https://github.com/PrestaShop/PrestaShop/issues/25372)
 - [Shopping cart page - An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations](https://github.com/PrestaShop/PrestaShop/issues/25942)
 - [Product structured data json-ld problem when price is not displayed](https://github.com/PrestaShop/PrestaShop/issues/25371)

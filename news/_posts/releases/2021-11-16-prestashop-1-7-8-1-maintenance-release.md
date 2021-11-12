@@ -95,7 +95,7 @@ Thank you !
 [Download PrestaShop 1.7.8.1 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
 {: .text-center}
 
-For any upgrades problems or PrestaShop’s bugs, please create a new issue [here](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
+To report upgrade problems or bugs in PrestaShop, please create a new issue [here](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
 
 If you have questions or need help, do not hesitate to take a look at [our community platforms or support plans.](https://devdocs.prestashop.com/1.7/faq/i-need-help/)
 

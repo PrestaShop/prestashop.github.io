@@ -47,7 +47,7 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 ### Orders regressions
 
 - [Order details page - While adding a discount, the modal is not well displayed](https://github.com/PrestaShop/PrestaShop/issues/22315) 
-- [Order details page - an exception is displayed when status of the "merchandise return" is deleted](https://github.com/PrestaShop/PrestaShop/issues/25510)
+- [Order details page - An exception is displayed when the status of the "merchandise return" is deleted](https://github.com/PrestaShop/PrestaShop/issues/25510)
 - [Order details page - The errors while deleting a product are not displayed](https://github.com/PrestaShop/PrestaShop/issues/25298)
 - [Order details page - Debug mode enabled - an exception is displayed when ordering a deleted product with a file customization](https://github.com/PrestaShop/PrestaShop/issues/25644)
 - [Orders - impossible to extend order grid query from module](https://github.com/PrestaShop/PrestaShop/issues/24911)

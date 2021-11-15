@@ -90,6 +90,8 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 
 Contributors to this patch version, from both the Core team and the community at large:
 
+Alexandre BRU, Boubker Bribri, Daniel Hlavacek, Franck Lefèvre, Hibatallah Aouadni, Ibrahima Sow, Igor Stępień, Jonathan Lelievre, Khouloud BELGUITH, Krystian Podemski, M. Parvazi, Marwa Chelly, Matthieu Rolland, Nesrine Abdmouleh, Pierre Rambaud, PululuK, Sébastien Alfaiate, Simone, Stéphane Decisy, Thomas Baccelli, Valentin Szczupak, Yohann Tilotti
+
 Thank you !
 
 [Download PrestaShop 1.7.8.1 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}

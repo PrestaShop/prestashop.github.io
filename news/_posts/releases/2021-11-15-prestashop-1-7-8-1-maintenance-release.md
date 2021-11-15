@@ -24,10 +24,10 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 
 ## Back office regressions
 
-- [Stock page - If a product attribute containd a comma, it is not displayed](https://github.com/PrestaShop/PrestaShop/issues/26429)
+- [Stock page - If a product attribute contains a comma, it is not displayed](https://github.com/PrestaShop/PrestaShop/issues/26429)
 - [Dashboard page - Selecting a date range doesn't work and causes a jquery error](https://github.com/PrestaShop/PrestaShop/issues/25966)
 - [Modules page - Cannot install any module when the employee language is spanish](https://github.com/PrestaShop/PrestaShop/issues/26028)
-- [Perofrmance page - Cannot change the settings in a single store context](https://github.com/PrestaShop/PrestaShop/issues/26058)
+- [Performance page - Cannot change the settings in a single store context](https://github.com/PrestaShop/PrestaShop/issues/26058)
 - [Customer view page - The pagination of the voucher block is not working](https://github.com/PrestaShop/PrestaShop/issues/25588)
 - [SQL Manager page - SQL query return exception](https://github.com/PrestaShop/PrestaShop/issues/25684)
 - [Invoices page - Longer buttons overflow their container on lower resolutions](https://github.com/PrestaShop/PrestaShop/issues/25422)
@@ -69,7 +69,7 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 - [Product disabled - An exception is displayed when changing combination or increasing/decreasing a quantity](https://github.com/PrestaShop/PrestaShop/issues/25891)
 - [Product comment structured data AggregateRating isn't working](https://github.com/PrestaShop/PrestaShop/issues/25372)
 - [Shopping cart page - An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations](https://github.com/PrestaShop/PrestaShop/issues/25942)
-- [Product structured data json-ld problem when price is not displayed](https://github.com/PrestaShop/PrestaShop/issues/25371)
+- [Product structured data JSON-LD problem when price is not displayed](https://github.com/PrestaShop/PrestaShop/issues/25371)
 - [Search with semicolon gives no result. Search differs from earlier versions of find()](https://github.com/PrestaShop/PrestaShop/issues/25394)
 - [An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations](https://github.com/PrestaShop/PrestaShop/issues/25942)
 

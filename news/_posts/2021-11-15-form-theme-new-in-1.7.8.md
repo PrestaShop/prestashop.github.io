@@ -65,18 +65,22 @@ The Form Theme is a set of macros that describes how each form item is rendered 
 You could compare a Symfony Form Theme to a PrestaShop theme: a PrestaShop theme 'skins' the Front office but does not hold its logic. It defines how the Front office looks but does not dictate how it behaves. The same principle can be followed for the Form Theme: it defines how a form looks but does not dictate its features.
 
 Diving deeper in details, in the Symfony Bootstrap Form Theme, file inputs are for example being rendered following this macro:
+{% raw %}
 ```html
-<{{ element|default('div') }} class="custom-file">
-    {%- set type = type|default('file') -%}
-    {{- block('form_widget_simple') -}}
-    {%- set label_attr = label_attr|merge({ class: (label_attr.class|default('') ~ ' custom-file-label')|trim })|filter((value, key) => key != 'id') -%}
-    <label for="{{ form.vars.id }}" {% with { attr: label_attr } %}{{ block('attributes') }}{% endwith %}>
-        {%- if attr.placeholder is defined and attr.placeholder is not none -%}
-            {{- translation_domain is same as(false) ? attr.placeholder : attr.placeholder|trans({}, translation_domain) -}}
-        {%- endif -%}
-    </label>
-</{{ element|default('div') }}>
+{% block file_widget -%}
+    <{{ element|default('div') }} class="custom-file">
+        {%- set type = type|default('file') -%}
+        {{- block('form_widget_simple') -}}
+        {%- set label_attr = label_attr|merge({ class: (label_attr.class|default('') ~ ' custom-file-label')|trim })|filter((value, key) => key != 'id') -%}
+        <label for="{{ form.vars.id }}" {% with { attr: label_attr } %}{{ block('attributes') }}{% endwith %}>
+            {%- if attr.placeholder is defined and attr.placeholder is not none -%}
+                {{- translation_domain is same as(false) ? attr.placeholder : attr.placeholder|trans({}, translation_domain) -}}
+            {%- endif -%}
+        </label>
+    </{{ element|default('div') }}>
+{% endblock %}
 ```
+{% endraw %}
 
 The main benefit of this system is that, since 'what is my form structure' and 'how is my form rendered' are completely separated, you can modify one without altering the other.
 

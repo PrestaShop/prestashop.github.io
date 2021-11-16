@@ -38,7 +38,7 @@ Server-side layers and client-side ones actually have different needs. While the
 
 Since templates live in the server, it's not a problem allowing them access to sensitive data. However, data being sent to the client is a whole different story, and should be handled carefully. For example, you don't want everyone to know the wholesale price for a product, so it shouldn't be included in data being sent to the client.
 
-### 3. Extensibiliy
+### 3. Extensibility
 
 PrestaShop is an extensible platform, but with extensibility comes uncertainty: it's impossible to know in advance what data will be added to the models by modules or customizations. This means that PrestaShop needs to be **open to customization** while keeping data **safe by default**.
 

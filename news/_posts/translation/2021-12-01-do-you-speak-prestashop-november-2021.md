@@ -107,7 +107,7 @@ The following languages had the best progress in November thanks to the translat
 
 Congratulations! 
  
-![Best translation progress in November 2021](/assets/images/2021/11/build-crowdin-progress-nov21.png)
+![Best translation progress in November 2021](/assets/images/2021/12/build-crowdin-progress-nov21.png)
 
 A huge thank you to all the contributors!
  

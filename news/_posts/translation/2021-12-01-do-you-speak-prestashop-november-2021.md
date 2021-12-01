@@ -32,7 +32,7 @@ If you have received your gift too, don’t forget to send a picture to translat
 
 ### 💕 Many thanks to newcomers
 
-Many people subscribe to the project(s) of their choice each month, but not so many start translating straight away, let alone become top translators! For that reason, we would like to thank the ones who rushed into the efforts immediately! So lots of love to the dedicated [Leventé Kóré](https://crowdin.com/profile/KoreLewi), [Ersoy Yılmaz](https://crowdin.com/profile/eryilmaz), [Maurizio_Giambanco](https://crowdin.com/profile/Maurizio_Giambanco), [Serkan Subasi](https://crowdin.com/profile/serkans), and [Rick Gzz](https://crowdin.com/profile/rickygzz85). 
+Many people subscribe to the project(s) of their choice each month, but not so many start translating straight away. For that reason, we would like to thank the ones who rushed into the efforts immediately! So lots of love to the dedicated [Leventé Kóré](https://crowdin.com/profile/KoreLewi), [Ersoy Yılmaz](https://crowdin.com/profile/eryilmaz), [Maurizio_Giambanco](https://crowdin.com/profile/Maurizio_Giambanco), [Serkan Subasi](https://crowdin.com/profile/serkans), and [Rick Gzz](https://crowdin.com/profile/rickygzz85). 
 
 ## A few stats
  

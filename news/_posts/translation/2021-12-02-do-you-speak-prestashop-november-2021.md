@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – November 2021 edition"
 subtitle: "Where you'll learn that PrestaShop 1.7.8 is now fully available in Chinese Simplified"
-date: 2021-12-01
+date: 2021-12-02
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

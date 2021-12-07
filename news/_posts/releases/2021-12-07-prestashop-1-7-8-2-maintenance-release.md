@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Release Of PrestaShop 1.7.8.2"
-subtitle: "MAINTENANCE VERSION OF THE 1.7.8.X BRANCH"
-date:   2021-12-07 14:00:00
+title:  "Release of PrestaShop 1.7.8.2"
+subtitle: "Maintenance version of the 1.7.8.x branch"
+date:   2021-12-07 14:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2021/12/1.7.8.2_banner.jpg
 icon: icon-checked
 tags:
-- 1.7
-- 1.7.8.x
-- version
-- patch
-- releases
+ - version
+ - patch
+ - releases
+ - 1.7.8.x
+ - 1.7
 
 ---
 

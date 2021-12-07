@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PrestaShop 1.7.8 and the search bar issue"
+title:  "How to solve the search bar issue after upgrading to PrestaShop 1.7.8"
 subtitle: "Everything you need to know to fix the issue"
 date:   2021-12-06 00:00:00
 authors:  [ kpodemski ]
@@ -22,7 +22,9 @@ This problem might also have affected you, even if you decided to skip updates t
 
 In November 2020, version 2.1.0 of the search bar module (ps_searchbar) was released, with a [new design](https://github.com/PrestaShop/PrestaShop/pull/22032). Up until this release, the layout of the search bar had been overridden by the PrestaShop's default theme, using this file: `/themes/classic/modules/ps_searchbar/ps_searchbar.tpl`. However, with the new design, the override was no longer needed, so it was removed from the default theme in 1.7.8.0.
 
-When updating the theme, to avoid major problems, we do not delete its files. We decided to do this because we know that some of the users modify it and it may cause more trouble than benefits. Thus, we came to a situation where one of the files that remained in the default theme was causing the search bar to not display properly.We noticed this problem, and we developed a proper solution for it, but too late.
+To avoid unintended loss of data when performing the upgrade, the update module will not delete old or "extra" files if they are placed within a subfolder called `modules`. Most of the time, any files left over from previous installs don't cause any negative effect on the upgraded shop. However, in some cases, they do.
+
+In this case, the remaining override in the default theme was causing the search bar to not display properly. This is why the bug only appears when updating from a previous PrestaShop version, and not with a clean shop.
 
 ## How to fix it
 

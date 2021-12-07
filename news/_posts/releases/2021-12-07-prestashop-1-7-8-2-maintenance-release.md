@@ -43,7 +43,7 @@ Below is the one regression issue we fixed in this version :
 
 Read the ([full changelog here](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.2)).
 
-## ## Security fix (change content)
+## Security fix
 
 One security fix have been included in this patch version:
 

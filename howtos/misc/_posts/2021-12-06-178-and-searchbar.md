@@ -2,13 +2,13 @@
 layout: post
 title:  "How to solve the search bar issue after upgrading to PrestaShop 1.7.8"
 subtitle: "Everything you need to know to fix the issue"
-date:   2021-12-06 00:00:00
+date:   2021-12-07
 authors:  [ kpodemski ]
 icon: icon-laptop
 tags: [module, issue, searchbar, upgrade, theme]
 ---
 
-We have recently been informed that many of you have encountered a display problem with the search bar in Front office, right after upgrading to PrestaShop 1.7.8. This problem also affected installations that were using the built-in "classic" theme.
+We have recently been informed that many of you have encountered a display problem with the search bar in Front office, right after upgrading to PrestaShop 1.7.8. This problem also affected shops using the built-in "classic" theme.
 
 ## What is the problem?
 
@@ -20,7 +20,7 @@ This problem might also have affected you, even if you decided to skip updates t
 
 ## Why did this happen?
 
-In November 2020, version 2.1.0 of the search bar module (ps_searchbar) was released, with a [new design](https://github.com/PrestaShop/PrestaShop/pull/22032). Up until this release, the layout of the search bar had been overridden by the PrestaShop's default theme, using this file: `/themes/classic/modules/ps_searchbar/ps_searchbar.tpl`. However, with the new design, the override was no longer needed, so it was removed from the default theme in 1.7.8.0.
+In November 2020, version 2.1.0 of the search bar module (ps_searchbar) was released, featuring a [new design](https://github.com/PrestaShop/PrestaShop/pull/22032). Up until this release, the layout of the search bar had been overridden by the PrestaShop's default theme, using this file: `/themes/classic/modules/ps_searchbar/ps_searchbar.tpl`. However, with the new design, the override was no longer needed, so it was removed from the default theme for the 1.7.8.0 release.
 
 To avoid unintended loss of data when performing the upgrade, the update module will not delete old or "extra" files if they are placed within a subfolder called `modules`. Most of the time, any files left over from previous installs don't cause any negative effect on the upgraded shop. However, in some cases, they do.
 

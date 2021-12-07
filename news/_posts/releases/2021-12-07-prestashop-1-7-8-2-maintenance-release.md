@@ -1,7 +1,5 @@
-- --
-
+---
 layout: post
-
 title:  "Release Of PrestaShop 1.7.8.2"
 subtitle: "MAINTENANCE VERSION OF THE 1.7.8.X BRANCH"
 date:   2021-12-07 14:00:00
@@ -15,10 +13,6 @@ tags:
 - patch
 - releases
 
-- --
-
-*Intro*
-
 ---
 
 The ongoing work on security for PrestaShop software continues. We have identified and fixed a new security issue, it has been decided to deliver a new maintenance release for 1.7.8.X branch.
@@ -31,17 +25,15 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 
 Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forget to upgrade it.
 
-*Content*
 
----
-
-## ## Main fixes (change content)
+## Main fixes
 
 Below is the one regression issue we fixed in this version :
 
 - Fix wishlist button disappearance on the category page while using any filter in faceted search.([#26327](https://github.com/PrestaShop/PrestaShop/issues/26327))
 
 Read the ([full changelog here](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.2)).
+
 
 ## Security fix
 

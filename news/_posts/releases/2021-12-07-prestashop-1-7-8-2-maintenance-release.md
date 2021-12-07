@@ -41,7 +41,7 @@ Below is the one regression issue we fixed in this version :
 
 - Fix wishlist button disappearance on the category page while using any filter in faceted search.([#26327](https://github.com/PrestaShop/PrestaShop/issues/26327))
 
-Read the [[full changelog here](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.2)](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.2).
+Read the ([full changelog here](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.2)).
 
 ## ## Security fix (change content)
 

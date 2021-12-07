@@ -37,7 +37,7 @@ Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forg
 
 ## ## Main fixes (change content)
 
-Below are listed some of the one regression issue we fixed in this version :
+Below is the one regression issue we fixed in this version :
 
 - Fix wishlist button disappearance on the category page while using any filter in faceted search.([[#](https://github.com/PrestaShop/PrestaShop/issues/15834)[26327](https://github.com/PrestaShop/PrestaShop/issues/26327)]([https://github.com/PrestaShop/PrestaShop/issues/26327](https://github.com/PrestaShop/PrestaShop/issues/26327)))
 

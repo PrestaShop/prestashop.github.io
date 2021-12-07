@@ -19,33 +19,33 @@ The ongoing work on security for PrestaShop software continues. We have identifi
 
 *![1.7.8.2 is available!](/assets/images/2021/12/1.7.8.2_banner.jpg)*
 
-This  release also fixes 1 regression reported on version 1.7.8.X.
+This release also fixes 1 regression reported on version 1.7.8.X.
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 
 Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forget to upgrade it.
 
 
-## Main fixes
+## Main fix
 
 Below is the one regression issue we fixed in this version :
 
-- Fix wishlist button disappearance on the category page while using any filter in faceted search.([#26327](https://github.com/PrestaShop/PrestaShop/issues/26327))
+- Fix wishlist button disappearance on the category page while using any filter in faceted search ([#26327](https://github.com/PrestaShop/PrestaShop/issues/26327))
 
-Read the ([full changelog here](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.2)).
+Read the [full changelog here](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.2).
 
 
 ## Security fix
 
 One security fix have been included in this patch version:
 
-- Blind SQLi using Search filters ([security advisory]([https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-6xxj-gcjq-wgf4](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-6xxj-gcjq-wgf4)))
+- Blind SQLi using Search filters ([security advisory](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-6xxj-gcjq-wgf4))
 
 More information about why it is important to update:
 
 - [SQL Injection (CWE-89)](https://cwe.mitre.org/data/definitions/89.html)
 
-## ## Acknowledgments
+## Acknowledgments
 
 Contributors to this patch version, from both the Core team and the community at large:
 

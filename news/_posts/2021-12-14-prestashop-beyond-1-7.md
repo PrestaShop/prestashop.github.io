@@ -28,9 +28,9 @@ This requires a delicate balance: change too slowly, and project becomes obsolet
 
 The new release roadmap will adhere more closely to the SemVer definition: a version is considered "major" when it introduces breaking changes, while minor versions only add features in a retrocompatible way. By following these principles strictly, upgrading from a major version to the minor version following it should be as easy as upgrading to a patch version, as everything is expected to work the same way. In this sense, it also means that a major version doesn't necessarily mean _big_ changes, just _some_ changes.
 
-Starting on our next release, PrestaShop will begin alternating between major versions, focusing on refactoring and technology advancements, and minor versions, emphasizing on new or improved features. This means that **the next PrestaShop release will be a major version**, which will be followed by a minor version, then a major version, then a minor version, and so on.
+Starting with the next release, PrestaShop will begin alternating between major versions, focusing on refactoring and technology advancements, and minor versions, emphasizing on new or improved features. This means that **the next PrestaShop release will be a major version**, which will be followed by a minor version, then a major version, then a minor version, and so on.
 
-Our target is to be able to publish a release every 6–9 months. Since every other release will be a major version, the community will be able to expect a new major version every 12 to 18 months.
+The target is to be able to publish a release every 6–9 months. Since every other release will be a major version, the community will be able to expect a new major version every 12 to 18 months.
 
 Now let's talk about support. Currently, patch versions are released at most 6 weeks counting from the moment the maintainers decided that a given bug justifies a patch release. Since patches are only published for the latest version, this effectively means that support of a given PrestaShop minor version generally ends the moment the following minor version is published (e.g. support for 1.7.7.x version ended when 1.7.8.0 was released). This will continue to be true with the new release roadmap.
 
@@ -49,7 +49,7 @@ To recap:
 
 ## Say hello to PrestaShop 8
 
-Our next release, **PrestaShop 8**, will mark the simplification of the project's version numbering scheme. The "1" that preceded previous versions, a heritage that didn't carry any semantic meaning, will no longer be included in future releases.
+The next release, **PrestaShop 8**, will mark the simplification of the project's version numbering scheme. The "1" that preceded previous versions, a heritage that didn't carry any semantic meaning, will no longer be included in future releases.
 
 ![New version scheme](/assets/images/2021/12/v8-scheme.png)
 

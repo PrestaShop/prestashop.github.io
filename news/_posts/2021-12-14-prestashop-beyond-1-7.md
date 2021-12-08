@@ -91,7 +91,7 @@ PrestaShop 1.7.8 will follow the same support path described in the release road
 - Bug fixes until PrestaShop 8 is released
 - Critical and security fixes, if needed, for up to one year afterward.
 
-Upgrading from 1.7.8 to 8.0 should be significantly easier than upgrading from 1.6 to 1.7. Existing themes for 1.7 should remain fully compatible with this new version. While most modules that work with 1.7.8 should also work with PrestaShop 8 without any changes, some of them might need to be updated, in particular those affected by updated core libraries or PHP 8 compatibility.
+Upgrading from 1.7.8 to 8.0 should be significantly easier than upgrading from 1.6 to 1.7. Existing themes for 1.7 should remain fully compatible with this new version. While many modules that work with 1.7.8 should also work with PrestaShop 8 without any changes, some of them might need to be updated, in particular those affected by updated core libraries or PHP 8 compatibility.
 
 ## Final words
 

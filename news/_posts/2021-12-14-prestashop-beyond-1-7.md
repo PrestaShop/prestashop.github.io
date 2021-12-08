@@ -8,11 +8,11 @@ icon: icon-compass
 tags: [news, version, 8.0]
 ---
 
-Five years ago, PrestaShop 1.7 was released to the world, introducing Symfony, the Classic theme and child theme features, interface improvements, and so much more. With each one of the eight minor versions that followed, 1.7 kept on growing both in features and stability. Its maturity is recognized by its success: with over with over 170,000 live shops detected at the time of writing, it’s the most popular PrestaShop version used in production shops on the web.
+Five years ago, PrestaShop 1.7 was released to the world, introducing Symfony, the Classic theme and child theme features, interface improvements, and so much more. With each one of the eight minor versions that followed, 1.7 kept on growing both in features and stability. Its maturity is recognized by its success: with over 170,000 live shops detected at the time of writing, it’s the most popular PrestaShop version used in production shops on the web.
 
 PrestaShop 1.7 also kickstarted an ambitious technical transformation towards what we call [The Future Architecture](https://build.prestashop.com/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/). Last year, we discussed [some concrete ideas](https://build.prestashop.com/news/from-legacy-to-future-architecture-connecting-the-dots/) to help make the project advance in that direction, some of which we had already started implementing in 1.7. As we explained in that article, the transformation PrestaShop envisions cannot be made in a single shot — there's a lot of work ahead of us, and it will take time.
 
-In 2018, we said we intended the migration of PrestaShop's Back office to Symfony to be completed within the lifetime of 1.7, so that we could start the next major version with a clean base. However, as we moved forward, we discovered that the migration was significantly more complex that we had originally imagined. And although enormous progress has been made during in the last five years, a lot is still to be done until we can call the project as finished.
+In 2018, we said we intended the migration of PrestaShop's Back office to Symfony to be completed within the lifetime of 1.7, so that we could start the next major version with a clean base. However, as we moved forward, we discovered that the migration was significantly more complex than we had originally imagined. And although enormous progress has been made in the last five years, a lot is still to be done until we can call the project finished.
 
 Although migration moves forward steadily, many refactoring projects (some of which are required to fix longstanding issues) keep getting pushed farther and farther into the future, waiting for the next major version. Does it make sense to block those projects for another five years until the migration is done?
 
@@ -26,7 +26,7 @@ The [Semantic Versioning convention](https://build.prestashop.com/news/a-more-se
 
 This requires a delicate balance: change too slowly, and project becomes obsolete; change too quickly, and it becomes too expensive for the community to keep up. With that in mind, here is our proposal.
 
-Our new release roadmap will adhere more closely to the SemVer definition: a version is considered "major" when it introduces breaking changes, while minor versions only add features in a retrocompatible way. By following this principles strictly, upgrading from a major version to the minor version following it should be as easy as upgrading to a patch version, as everything is expected to work the same way. In this sense, it also means that a major version doesn't necessarily mean _big_ changes, just _some_ changes.
+Our new release roadmap will adhere more closely to the SemVer definition: a version is considered "major" when it introduces breaking changes, while minor versions only add features in a retrocompatible way. By following these principles strictly, upgrading from a major version to the minor version following it should be as easy as upgrading to a patch version, as everything is expected to work the same way. In this sense, it also means that a major version doesn't necessarily mean _big_ changes, just _some_ changes.
 
 In order to accelerate our delivery cadence, starting on our next release, will begin alternating between major versions, focusing on refactoring and technology advancements, and minor versions, emphasizing on new or improved features.
 
@@ -72,11 +72,11 @@ In addition to updated libraries (including Guzzle 7) and an upgraded **Symfony 
 
 ##### 2. Renewed product page
 
-The all-new Back office product page that was introduced as experimental in 1.7.8.0 will be fully integrated in PrestaShop 8. This new page will provide merchants with an enhanced user experience and increased performance, especially when dealing with a large number of combinations. Developers will also benefit from a fully Symfony-based page, with extendable forms and reusable Commands and Queries.
+The all-new Back office product page that was introduced as experimental in 1.7.8.0 will be fully integrated into PrestaShop 8. This new page will provide merchants with an enhanced user experience and increased performance, especially when dealing with a large number of combinations. Developers will also benefit from a fully Symfony-based page, with extendable forms and reusable Commands and Queries.
 
 ### A company neutral project
 
-PrestaShop is a community open source project, giving anyone the freedom to download it, use it, and modify to their needs. During the last few years, we have been working hard to clarify how an open source project like ours is different from "freemium product".
+PrestaShop is a community open source project, giving anyone the freedom to download it, use it, and modify it to their needs. During the last few years, we have been working hard to clarify how an open source project like ours is different from a "freemium product".
 
 We are committed to strengthening the community-built nature of the project. Last year, we welcomed our first two maintainers not affiliated with PrestaShop SA. In 2021, to better distinguish the project from the company who originally created it, we launched an independent website for the project: [prestashop-project.org](https://www.prestashop-project.org/).
 
@@ -99,7 +99,7 @@ Upgrading from 1.7.8 to 8.0 should be significantly easier than upgrading from 1
 
 ## Final words
 
-The current target for PrestaShop 8's feature freeze in April 2022, with a final release expected by mid-2022. You can follow our updates on [this GitHub issue](https://github.com/PrestaShop/PrestaShop/issues/26427).
+The current target for PrestaShop 8's feature freeze is April 2022, with a final release expected by mid-2022. You can follow our updates on [this GitHub issue](https://github.com/PrestaShop/PrestaShop/issues/26427).
 
 We are really excited about building the future of PrestaShop with you! Tell us what you think in the comments, or [chat with us on Slack](https://www.prestashop-project.org/slack/).
 

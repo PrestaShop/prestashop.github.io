@@ -66,7 +66,7 @@ This new version will focus on two main initiatives:
 
 ##### 1. Technology update & cleanup
 
-In addition to updated libraries (including Guzzle 7) and an upgraded **Symfony 4.4** framework, PrestaShop 8 will introduce **compatibility with the newest PHP 8** version. We will also take the opportunity to remove old, deprecated code that had been replaced by newer components in 1.7.
+In addition to updated libraries (including [Guzzle 7](https://github.com/guzzle/guzzle/blob/7.0.0/UPGRADING.md)) and an upgraded **Symfony 4.4** framework, PrestaShop 8 will introduce **compatibility with the newest PHP 8** version. We will also take the opportunity to remove old, deprecated code that had been replaced by newer components in 1.7.
 
 ##### 2. Renewed product page
 

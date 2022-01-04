@@ -17,6 +17,8 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 
 ### :sparkles: Happy new year!
 
+![Happy new year](/assets/images/2022/01/happynewyear.jpg)
+
 Happy new year! As we walk into another new year, we want to thank you again for your contribution to the PrestaShop translation project. 
 You have been so great this year. And the figures speak for themselves:
 

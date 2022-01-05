@@ -85,7 +85,7 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
 | | Proofreader | Language | # Words
 |-| ---------- | -------- | ----------------
 | 1. | SNor42 | Hungarian | 8,212
-| 2. | (danielshapiro9) דניאל שפירא‬  | Hebrew | 1000
+| 2. | (danielshapiro9) דניאל שפירא‬ | Hebrew | 1000
 | 3. | AmirRzd | Persian | 345
 | 4. | M. Mirena (mmirena) | Albanian | 306
 | 5. | Zoran Tejic (zotamal) | Serbian (Latin) | 217

@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – December 2021 edition"
 subtitle: "Where you'll learn that new strings were added to Crowdin"
-date: 2022-01-04 
+date: 2022-01-05 
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

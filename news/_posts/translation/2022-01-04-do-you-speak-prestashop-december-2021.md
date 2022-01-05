@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Do you speak PrestaShop? – December 2021 edition"
-subtitle: "Where you'll learn that 291,053 words were translated this year"
+subtitle: "Where you'll learn that new strings were added to Crowdin"
 date: 2022-01-04 
 authors: [JulieVarisellaz]
 icon: icon-world

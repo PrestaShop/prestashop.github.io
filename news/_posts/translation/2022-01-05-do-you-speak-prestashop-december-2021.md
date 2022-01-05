@@ -22,7 +22,7 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 Happy new year! As we walk into another new year, we want to thank you again for your contribution to the PrestaShop translation project. 
 You have been so great this year. And the figures speak for themselves:
 
-**2022 in numbers:**
+**2021 in numbers:**
 
 * **291,053** words were translated
 * **215,617** words were validated

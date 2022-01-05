@@ -68,12 +68,12 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
  
 | |Translator | Language | # Words
 |-|---------- | -------- | ----------------
-| 1. |‫‬ Ramon J. Batlle (rjbatllet) | Catalan | 11,750
+| 1. | Ramon J. Batlle (rjbatllet) | Catalan | 11,750
 | 2. | Rick Gzz (rickygzz85) | Spanish, Mexico | 6,511
 | 3. | SNor42 | Hungarian | 6,124
 | 4. | jacob_v_dam | Dutch | 1,045
 | 5. | HIỀN VŨ (hienvuneu) | Vietnamese | 901
-| 6. | (danielshapiro9) דניאל שפירא‬ | Hebrew | 894
+| 6. | (danielshapiro9) דניאל שפירא | Hebrew | 894
 | 7. | Mahmoud Parvazi (m.parvazi) | Persian | 535
 | 8. | M. Mirena (mmirena) | Albanian | 315
 | 9. | AmirRzd | Persian | 210
@@ -85,7 +85,7 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
 | | Proofreader | Language | # Words
 |-| ---------- | -------- | ----------------
 | 1. | SNor42 | Hungarian | 8,212
-| 2. | (danielshapiro9) דניאל שפירא‬ | Hebrew | 1000
+| 2. | (danielshapiro9) דניאל שפירא | Hebrew | 1000
 | 3. | AmirRzd | Persian | 345
 | 4. | M. Mirena (mmirena) | Albanian | 306
 | 5. | Zoran Tejic (zotamal) | Serbian (Latin) | 217

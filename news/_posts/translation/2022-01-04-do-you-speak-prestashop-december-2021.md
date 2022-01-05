@@ -29,6 +29,13 @@ You have been so great this year. And the figures speak for themselves:
 * **176** new members joined the project
 * **149** members were active
 
+### :heavy_plus_sign: New strings were added to Crowdin to fix a bug
+
+As you may have noticed, 5 new strings were added to Crowdin on January 5. It is usually not possible to add new strings outside the release of a minor or major version of PrestaShop. However, we made an exception this time in order to fix [a bug](https://github.com/PrestaShop/PrestaShop/issues/27026#issuecomment-1004666063) that prevented users from accessing or modifying the translations of the Mail alerts module.
+
+To go back to a 100% completion rate, those 5 strings will need to be translated and validated. They are located in the Modules > Emailalerts file. The good news is, as the strings are not really new, you should be able to use the TM and MT suggestions to save time.
+
+Some of you had already done that, just a few minutes after the strings were added. You are so fast! :scream:
 
 ### 📸 Your pictures of the reward program
 

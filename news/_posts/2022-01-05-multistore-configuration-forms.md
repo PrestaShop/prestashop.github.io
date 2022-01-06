@@ -20,6 +20,8 @@ In a configuration form, a merchant can set different values for different shop 
 - Group shop context
 - SIngle shop context
 
+![Shop contexts](/assets/images/2022/01/shopcontexts.png)
+
 When a value is not set for a context, it inherits the value of the parent context. Consequently, the "All Shops" context values can be considered a default values. 
 
 Unfortunately, before Prestashop 1.7.8, this mechanism was not obvious on the forms in question, and it was not easy to see at a glance which form fields were modified or not for the current context.

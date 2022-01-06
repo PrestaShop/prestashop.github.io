@@ -5,7 +5,7 @@ subtitle: "Discover the faces behind the commits"
 date:   2022-01-18 
 authors: [JulieVarisellaz]
 icon: icon-world
-image: /assets/images/2021/01/krystian-podemski.jpg
+image: /assets/images/202/01/krystian-podemski.jpg
 tags:
  - contribute
  - community

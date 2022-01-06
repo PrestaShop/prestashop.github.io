@@ -36,7 +36,7 @@ About my hobbies, I like F1, Netflix, and I’m a big fan of La Liga.
 I think it was in 2008, about 14 years ago. I started by getting involved in the Polish PrestaShop community. I contributed to the translation of the software into Polish and shared some tutorials on how to use PrestaShop. I was also a very active member of the Polish forum that was created at the time.
 After that, I started contributing on SVN, until PrestaShop migrated to GitHub, which made contributing much easier!
 
-What motivated you to contribute?**
+**What motivated you to contribute?**
 
 Everyone has their own reasons for contributing to an open source project. In my case, I had just migrated a store to PrestaShop, and I found that the Polish translations needed to be improved. So, I contributed to the translations because, well, I had to! I wanted these translations to be available in the Core, so I did it.
 

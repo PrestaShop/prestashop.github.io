@@ -49,7 +49,7 @@ IMAGE => capture ecran multistore
 As you can see, a checkbox appears before multistore compatible fields, when it's not checked and the field is greyed out, it means that the value is inherited from a prent context. When it's checked, the value is overridden. 
 A dropdown is displayed next to each field and informs whether the value is overridden or not for each context.
 
-### The technical implementation
+### Looking at the technical implementation
 
 On the technical side, these visual elements had to be reusable and easily implementable, without having to copy HTML or rethink the logic in the backend. 
 

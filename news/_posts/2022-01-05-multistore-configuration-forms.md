@@ -10,7 +10,7 @@ tags: [multistore, contribute]
 
 Did you know that PrestaShop has a cool feature called "multistore", which is the ability to manage multiple shops from the same back office ?
 
-One of the back-office aspects of this feature is that many configuration forms can have different values for different shops, which is dealt with using shop contexts.
+Multishop affects a lof ot PrestaShop behaviors and components. One aspect of this feature is that user can use configuration forms to set different values for different shops, which is dealt with using shop contexts.
 
 ## How it works and what was less than stellar about it
 

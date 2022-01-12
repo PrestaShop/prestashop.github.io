@@ -30,7 +30,7 @@ We wanted to build something new to make this feature easier to use.
 
 ## Our target
 
-Our multistore implementation had to meet 2 main criterias:
+We set ourselves two main criteria:
 
 - Improve existing UX for better understanding
 

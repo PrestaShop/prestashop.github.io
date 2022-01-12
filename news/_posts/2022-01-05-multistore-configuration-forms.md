@@ -36,7 +36,7 @@ We set ourselves two main criteria:
 
 - Make the technical implementation as easily reusable as possible on existing and future configuration forms, so external contributors and module developers can easily reuse our implementation in configuration forms.
 
-## How we did it
+## Building multistore configuration forms
 
 ### User interface
 

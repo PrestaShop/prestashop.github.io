@@ -28,7 +28,7 @@ We listened to merchants feedback and were told this mechanism was not obvious, 
 
 We wanted to build something new to make this feature easier to use.
 
-## Objectives
+## Our target
 
 Our multistore implementation had to meet 2 main criterias:
 

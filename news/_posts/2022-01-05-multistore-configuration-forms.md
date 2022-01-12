@@ -60,7 +60,7 @@ For this purpose we decided to take advantage of Symfony form extensions, so tha
 
 Then we added multistore helper methods for Configuration classes, to make saving data for the right context depending on which checkboxes are checked a breeze. 
 
-Finally, we created a new multistore javascript component, which only needs to be instantiated in order to make the multistore form reactive.
+Finally, we created a new multistore javascript component, which only needs to be instantiated in order to make the multistore form reactive. You can see it in action in [the multistore example module](https://github.com/PrestaShop/example-modules/blob/master/demomultistoreform/views/js/form.js).
 
 ### Going further
 

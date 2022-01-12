@@ -8,7 +8,7 @@ icon: icon-puzzle
 tags: [multistore, contribute]
 ---
 
-Did you know that PrestaShop has a cool feature called "multistore", which is the ability to manage multiple shops from the same back office ?
+With the release of PrestaShop 1.7.8, we expanded PrestaShop multistore capabilities to Symfony forms in order to build a reusable form component to make pages multistore-compatible.
 
 Multishop affects a lof ot PrestaShop behaviors and components. One aspect of this feature is that user can use configuration forms to set different values for different shops, which is dealt with using shop contexts.
 
@@ -62,6 +62,7 @@ Then we added multistore helper methods for Configuration classes, to make savin
 
 Finally, we created a new multistore javascript component, which only needs to be instantiated in order to make the multistore form reactive.
 
+### Going further
 
 
 

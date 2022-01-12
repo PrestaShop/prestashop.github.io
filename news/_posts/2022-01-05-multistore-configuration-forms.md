@@ -8,7 +8,7 @@ icon: icon-puzzle
 tags: [multistore, contribute]
 ---
 
-With the release of PrestaShop 1.7.8, we expanded PrestaShop multistore capabilities to Symfony forms in order to build a reusable form component to make pages multistore-compatible.
+With the release of PrestaShop 1.7.8, we expanded PrestaShop multistore capabilities to Symfony forms in order to build a reusable form component to make configuration forms multishop-compatible.
 
 Multishop affects a lof ot PrestaShop behaviors and components. One aspect of this feature is that user can use configuration forms to set different values for different shops, which is dealt with using shop contexts.
 
@@ -61,6 +61,8 @@ Here we're looking at the dropdown for the field "Maintenance IP", in all shop c
 - the shop called "Awesome store" has an overriden value for this field, that is to say a customized value
 - the shop called "Shop 2" inherits the value from this context (127.0.0.1)
 
+As you see, we did not fully reinvent the feature, we kept the concept of checkboxes, but we tried to make clearer what it does with the dropdowns and by graying fields when they are inherited their value from the parent context.
+
 ### Looking at the technical implementation
 
 On the technical side, these visual elements had to be reusable and easily implementable, without having to copy HTML or rethink the logic in the backend. 
@@ -73,7 +75,11 @@ Then we added multistore helper methods for Configuration classes, to make savin
 
 Finally, we created a new multistore javascript component, which only needs to be instantiated in order to make the multistore form reactive. You can see it in action in [the multistore example module](https://github.com/PrestaShop/example-modules/blob/master/demomultistoreform/views/js/form.js).
 
-As you see, we did not fully reinvent the feature, we kept the concept of checkboxes, but we tried to make clearer what it does with the dropdowns and by graying fields when they are inherited their value from the parent context.
+## Friendly reminder :)
+
+As most of you may know, PrestaShop is open source, which means you are more than welcome to contribute ! Multistore's technical documentation [can be found here](https://devdocs.prestashop.com/1.7/development/multistore/), there's also [a module example](https://github.com/PrestaShop/example-modules/tree/master/demomultistoreform) showing you how you can make your configuration forms multistore compatible in your own modules.
+
+Feedback is always appreciated, so don't hesitate to contact us on [one of our Slack channels](https://www.prestashop-project.org/slack/channels/), see you soon !
 
 
 

@@ -80,8 +80,3 @@ Finally, we created a new multistore javascript component, which only needs to b
 As most of you may know, PrestaShop is open source, which means you are more than welcome to contribute ! Multistore's technical documentation [can be found here](https://devdocs.prestashop.com/1.7/development/multistore/), there's also [a module example](https://github.com/PrestaShop/example-modules/tree/master/demomultistoreform) showing you how you can make your configuration forms multistore compatible in your own modules.
 
 Feedback is always appreciated, so don't hesitate to contact us on [one of our Slack channels](https://www.prestashop-project.org/slack/channels/), see you soon !
-
-
-
-
-

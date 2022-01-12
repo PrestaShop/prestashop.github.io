@@ -38,7 +38,7 @@ We set ourselves two main criteria:
 
 ## How we did it
 
-### The UX
+### User interface
 
 After numerous merchant interviews, our UX team created mock-ups, then our product team wrote functional specifications in accordance with merchant feedback. 
 

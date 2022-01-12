@@ -47,7 +47,7 @@ Here is how a multistore compatible configuration form looks like since Prestash
 IMAGE => capture ecran multistore
 
 As you can see, a checkbox appears before multistore compatible fields, when it's not checked and the field is greyed out, it means that the value is inherited from a prent context. When it's checked, the value is overridden. 
-On the right of the field, a dropdown tells you if the value is overridden or not for each context.
+A dropdown is displayed next to each field and informs whether the value is overridden or not for each context.
 
 ### The technical implementation
 

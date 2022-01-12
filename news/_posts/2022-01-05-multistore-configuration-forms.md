@@ -12,7 +12,7 @@ Did you know that PrestaShop has a cool feature called "multistore", which is th
 
 Multishop affects a lof ot PrestaShop behaviors and components. One aspect of this feature is that user can use configuration forms to set different values for different shops, which is dealt with using shop contexts.
 
-## How it works and what was less than stellar about it
+## What does this mean
 
 In a configuration form, a merchant can set different values for different shop contexts, of which there are three, in this order of inheritence:
 

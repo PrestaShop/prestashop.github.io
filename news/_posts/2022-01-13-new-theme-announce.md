@@ -32,6 +32,16 @@ We received a lot of feedback from the community, with suggestions like:
 
 It was pretty impossible to fix all these issues on the classic theme without breaking the whole ecosystem of modules and community themes. We decided that it was time for a change and a new theme. We can't change everything, but we can significantly improve the default PrestaShop theme.
 
+## How can I try it?
+
+Clone it from the theme repository, run `npm install`, `npm run build`, activate the theme and off you go!
+
+## Good base for theme developers
+
+In the new theme, we separated the CSS to two packs. First one is the functionality part, the second is purely for styling.
+
+Simply commenting out `@import "custom/_custom";` in theme.scss file will get you basically a pure Boostrap 5 theme base. You can get working immediately and not waste time by cleaning things you don't need.
+
 ## When will it be released?
 
 Because of the complexity of this task, we decided to avoid writing about the release date. This means that depending on the time every people involved can work on it, the first version of the theme can be released in PrestaShop v8, v9, or later.
@@ -55,5 +65,7 @@ The above means that we continue the maintenance of the Classic theme until it g
 ## Your feedback is a gift
 
 We need your feedback on this project, don't hesitate to [join us on slack](https://www.prestashop-project.org/slack/) to discuss with us. We're actively asking a lot of things to the community to make sure the new theme will be something that meets your expectations and needs.
+
+Are there some places in the shop where you need to display your content and there is no hook provided, or is hard to use? Let us know through [Github](https://github.com/PrestaShop/PrestaShop/issues) or on Slack.
 
 You can also comment in this [thread](https://github.com/PrestaShop/theme-refacto/issues/2) if you want to tell us about any problems, challenges that you encountered using and developing with the classic theme.

@@ -1,7 +1,7 @@
-- --
+---
 layout: post
-title:  "Release Of PrestaShop 1.7.8.3"
-subtitle: "MAINTENANCE VERSION OF THE 1.7.8.X BRANCH"
+title:  "Release of PrestaShop 1.7.8.3"
+subtitle: "Maintenance version of the 1.7.8.x branch"
 date:   2022-01-26 14:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2022/01/1.7.8.3_banner.jpg
@@ -10,13 +10,15 @@ tags:
 - version
 - patch
 - releases
+- 1.7.8.x
+- 1.7
 
 ---
 
 PrestaShop 1.7.8.3 is now available. This maintenance release fixes 25 bugs and 1 security issue since the 1.7.8.2 release.
 Note : two of these fixes are not fully backward compatible ( [#26933](https://github.com/PrestaShop/PrestaShop/issues/26933) and [#26643](https://github.com/PrestaShop/PrestaShop/issues/26643) ) 
 
-*![1.7.8.3 is available!](/assets/images/2022/01/1.7.8.3_banner.jpg)*
+![1.7.8.3 is available!](/assets/images/2022/01/1.7.8.3_banner.jpg)
 
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
@@ -68,7 +70,7 @@ One security fix have been included in this patch version:
 
 ## Acknowledgments
 
-Contributors to this patch version, from both the Core team and the community at large:
+Contributors to this patch version:
 
 Boubker Bribri, Daniel Hlavacek, Franck Lefèvre, Hibatallah Aouadni, Ibrahima Sow, Igor Stępień, Jonathan Lelievre, Louis Authie, M. Parvazi, Marcin Sz, Mathieu Ferment, Matthieu Rolland, okom3pom, Pablo Borowicz, Pierre Rambaud, Sharak, Thomas Baccelli, Valentin Szczupak, Web Helpers Pau
 

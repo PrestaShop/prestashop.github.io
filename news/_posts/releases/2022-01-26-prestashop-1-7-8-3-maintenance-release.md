@@ -65,7 +65,6 @@ One security fix have been included in this patch version:
 
 - Server Side Twig Template Injection [security advisory](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-mrq4-7ch7-2465)
 
-More information about why it is important to update:
 
 ## Acknowledgments
 

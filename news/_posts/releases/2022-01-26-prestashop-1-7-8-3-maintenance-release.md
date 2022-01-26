@@ -29,7 +29,7 @@ Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forg
 
 ## ## Bug fixes 
 
-- [Adds responsivness to manufacturer logo on product page](https://github.com/PrestaShop/PrestaShop/issues/26373)
+- [Adds responsiveness to manufacturer logo on product page](https://github.com/PrestaShop/PrestaShop/issues/26373)
 - [Fix recalculate shipping when the carrier of an order is changed](https://github.com/PrestaShop/PrestaShop/issues/25565)
 - [Fix the header search box oversized height for RTL languages](https://github.com/PrestaShop/PrestaShop/issues/26635)
 - [Using display hooks in order view produces error](https://github.com/PrestaShop/PrestaShop/issues/26471)

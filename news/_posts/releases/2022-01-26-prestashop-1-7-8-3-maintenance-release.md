@@ -59,7 +59,7 @@ Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don't for
 - [Error with dynamical form rendering in 1.7.8.1](https://github.com/PrestaShop/PrestaShop/issues/26786)
 - [Fix product width on featured products](https://github.com/PrestaShop/PrestaShop/issues/26705)
 
-Read the [full changelog here](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.3).
+Read the [full changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.3).
 
 ## Security fix 
 

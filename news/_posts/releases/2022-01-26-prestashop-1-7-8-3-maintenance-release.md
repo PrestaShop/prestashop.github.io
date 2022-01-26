@@ -16,7 +16,7 @@ tags:
 ---
 
 PrestaShop 1.7.8.3 is now available. This maintenance release fixes 25 bugs and 1 security issue since the 1.7.8.2 release.
-Note : two of these fixes are not fully backward compatible ( [#26933](https://github.com/PrestaShop/PrestaShop/issues/26933) and [#26643](https://github.com/PrestaShop/PrestaShop/issues/26643) ) 
+Note: two of these fixes are not fully backward compatible ([#26933](https://github.com/PrestaShop/PrestaShop/issues/26933) and [#26643](https://github.com/PrestaShop/PrestaShop/issues/26643)) 
 
 ![1.7.8.3 is available!](/assets/images/2022/01/1.7.8.3_banner.jpg)
 

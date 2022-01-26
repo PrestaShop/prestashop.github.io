@@ -21,7 +21,7 @@ Note: two of these fixes are not fully backward compatible ([#26933](https://git
 ![1.7.8.3 is available!](/assets/images/2022/01/1.7.8.3_banner.jpg)
 
 
-We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
+We suggest upgrading your store quickly to benefit from these corrections. Make sure to perform a full manual backup before. It will be essential to roll back to the previous database and files if needed.
 
 Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don't forget to upgrade it.
 

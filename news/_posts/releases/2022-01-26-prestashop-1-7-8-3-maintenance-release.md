@@ -23,8 +23,6 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
 
 Reminder: the 1-Click Upgrade module’s latest version is v4.14.0, don’t forget to upgrade it.
 
-*Content*
-
 ---
 
 ## Bug fixes 

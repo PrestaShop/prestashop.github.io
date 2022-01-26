@@ -52,7 +52,7 @@ Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forg
 - [Add an option to regenerate RTL file during the upgrade](https://github.com/PrestaShop/PrestaShop/issues/27307)
 
 
-## ## Modules 
+## Modules 
 
 - [Excludes vendor, lib, tests directories when scanning modules' directories to extract translation catalogue](https://github.com/PrestaShop/PrestaShop/issues/24987)
 - [Fix color picker bug when multiple colorpickers are present](https://github.com/PrestaShop/PrestaShop/issues/25013)

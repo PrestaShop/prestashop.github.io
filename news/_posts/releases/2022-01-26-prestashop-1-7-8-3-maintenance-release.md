@@ -61,7 +61,7 @@ Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forg
 
 Read the [full changelog here](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.3).
 
-## ## Security fix 
+## Security fix 
 
 One security fix have been included in this patch version:
 

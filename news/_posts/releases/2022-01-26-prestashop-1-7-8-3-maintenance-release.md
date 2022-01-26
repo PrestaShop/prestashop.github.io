@@ -2,7 +2,7 @@
 layout: post
 title:  "Release Of PrestaShop 1.7.8.3"
 subtitle: "MAINTENANCE VERSION OF THE 1.7.8.X BRANCH"
-date:   2022-01-24 14:00:00
+date:   2022-01-26 14:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2021/12/1.7.8.3_banner.jpg
 icon: icon-checked

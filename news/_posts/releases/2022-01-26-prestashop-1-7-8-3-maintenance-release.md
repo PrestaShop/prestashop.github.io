@@ -23,7 +23,7 @@ Note : two of these fixes are not fully backward compatible ( [#26933](https://g
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 
-Reminder: the 1-Click Upgrade module’s latest version is v4.14.0, don’t forget to upgrade it.
+Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don't forget to upgrade it.
 
 ---
 
@@ -63,7 +63,7 @@ Read the [full changelog here](https://github.com/PrestaShop/PrestaShop/releases
 
 ## Security fix 
 
-One security fix have been included in this patch version:
+One security fix has been included in this patch version:
 
 - Server Side Twig Template Injection [security advisory](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-mrq4-7ch7-2465)
 

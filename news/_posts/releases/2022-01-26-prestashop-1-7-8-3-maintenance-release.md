@@ -44,7 +44,7 @@ Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forg
 - [Fix the newsletter block overlap on customer reassurance  block](https://github.com/PrestaShop/PrestaShop/issues/26846)
 - [CI is broken on autoupgrade - PHPStan with 1.6.1.18](https://github.com/PrestaShop/PrestaShop/issues/26861)
 - [Remove duplication of cache folders in letting Symfony handle kernel reboot for tests](https://github.com/PrestaShop/PrestaShop/issues/26924)
-- [Fix untranslatable Tabs for shops upgraded to 1.7.8.0 ( BC Break)](https://github.com/PrestaShop/PrestaShop/issues/26933)
+- [Fix untranslatable Tabs for shops upgraded to 1.7.8.0 (BC Break)](https://github.com/PrestaShop/PrestaShop/issues/26933)
 - [Fix menu and searchbar on tablet on classic (BC Break)](https://github.com/PrestaShop/PrestaShop/issues/26643)
 - [Allow vertical scroll on product images](https://github.com/PrestaShop/PrestaShop/issues/26597)
 - [Fix product width on featuredproducts](https://github.com/PrestaShop/PrestaShop/issues/26992)

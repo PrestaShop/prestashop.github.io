@@ -21,7 +21,7 @@ Note : two of these fixes are not fully backward compatible ( [#26933](https://g
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 
-Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forget to upgrade it.
+Reminder: the 1-Click Upgrade module’s latest version is v4.14.0, don’t forget to upgrade it.
 
 *Content*
 

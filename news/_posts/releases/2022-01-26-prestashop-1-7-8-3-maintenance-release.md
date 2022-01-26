@@ -69,7 +69,7 @@ One security fix have been included in this patch version:
 
 More information about why it is important to update:
 
-## ## Acknowledgments
+## Acknowledgments
 
 Contributors to this patch version, from both the Core team and the community at large:
 

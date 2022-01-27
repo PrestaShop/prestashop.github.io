@@ -7,11 +7,11 @@ authors: [ PrestaShop ]
 image: /assets/images/2022/01/1.7.8.3_banner.jpg
 icon: icon-checked
 tags:
-- version
-- patch
-- releases
-- 1.7.8.x
-- 1.7
+ - version
+ - patch
+ - releases
+ - 1.7.8.x
+ - 1.7
 
 ---
 

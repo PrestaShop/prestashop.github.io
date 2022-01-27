@@ -40,7 +40,7 @@ We set ourselves two main criteria:
 
 ### User interface
 
-After numerous merchant interviews, UX designers team created mock-ups, then Product owners wrote functional specifications in accordance with merchant feedback. 
+After numerous merchant interviews, UX designers team created mock-ups, then Product owners worked out how it should behave and wrote it down as specifications in accordance with users feedback. 
 
 Here is how a multistore compatible configuration form looks like since Prestashop 1.7.8:
 

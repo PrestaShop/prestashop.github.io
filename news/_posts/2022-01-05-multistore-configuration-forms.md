@@ -22,7 +22,7 @@ In a configuration form, a merchant can set different values for different shop 
 
 ![Shop contexts](/assets/images/2022/01/shopcontexts.png)
 
-When a value is not set for a context, it inherits the value of the parent context. Consequently, the "All Shops" context values can be considered a default values.
+When a value is not set for a context, it inherits the value of the parent context. Consequently, the "All Shops" context values can be considered default values.
 
 We listened to merchants feedback and were told this mechanism was not obvious, and it was not easy to see at a glance which form fields were modified or not for the current context.
 

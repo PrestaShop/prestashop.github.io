@@ -28,8 +28,6 @@ We suggest upgrading your store quickly to benefit from these bug fixes. Make su
 
 Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don't forget to upgrade it.
 
----
-
 ## Bug fixes 
 
 - [Adds responsiveness to manufacturer logo on product page](https://github.com/PrestaShop/PrestaShop/issues/26373)

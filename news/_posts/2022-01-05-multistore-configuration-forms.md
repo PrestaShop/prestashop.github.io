@@ -32,7 +32,7 @@ We wanted to build something new to make this feature easier to use.
 
 We set ourselves two main criteria:
 
-- Improve existing UX for better understanding
+- Improve existing User Experience for better understanding
 
 - Make the technical implementation as easily reusable as possible on existing and future configuration forms, so external contributors and module developers can easily reuse our implementation in configuration forms.
 

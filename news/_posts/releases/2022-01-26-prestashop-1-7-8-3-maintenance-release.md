@@ -16,7 +16,10 @@ tags:
 ---
 
 PrestaShop 1.7.8.3 is now available. This maintenance release fixes 25 bugs and 1 security issue since the 1.7.8.2 release.
-Note: two of these fixes are not fully backward compatible ([#26933](https://github.com/PrestaShop/PrestaShop/issues/26933) and [#26643](https://github.com/PrestaShop/PrestaShop/issues/26643)) 
+
+Note that this version introduces two backward-incompatible changes:
+- The signature of  `PrestaShop\PrestaShop\Core\Translation\Storage\Extractor\LegacyModuleExtractor::__construct()` has been modified to allow excluding directories from the scan (see [the related Pull Request](https://github.com/PrestaShop/PrestaShop/pull/26839) for details). This component is used by the Back Office's translation interface.
+- Themes based on Classic might need to be adapted following [this change](https://github.com/PrestaShop/PrestaShop/pull/26706) to fix the layout of the menu and search bar on tablet devices.
 
 ![1.7.8.3 is available!](/assets/images/2022/01/1.7.8.3_banner.jpg)
 

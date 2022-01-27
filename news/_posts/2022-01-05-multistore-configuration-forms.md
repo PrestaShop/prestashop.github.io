@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Multistore configuration forms"
+title: "Introduction to Symfony multistore configuration forms"
 subtitle: "How multistore configuration forms got better with PrestaShop 1.7.8"
 date: 2022-01-05 
 authors: [matthieu-rolland]

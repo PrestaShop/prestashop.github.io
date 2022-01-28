@@ -71,7 +71,7 @@ All the work of knowing if the value of a field is inherited or not, and saving 
 
 For this purpose we decided to take advantage of Symfony form extensions, so that to add the new checkboxes and multistore dropdowns on a configuration form, a developer only needs to extend our our multistore extension. 
 
-Then we added multistore helper methods for Configuration classes, to make saving data for the right context depending on which checkboxes are checked a breeze. See how the new `updateConfigurationValue` method is used [here](https://github.com/PrestaShop/example-modules/blob/master/demomultistoreform/src/Form/ContentBlockDataConfiguration.php).
+Then we added multistore helper methods for Configuration classes, to make saving data for the right context a breeze (depending on which checkboxes are checked). See how the new `updateConfigurationValue` method is used [here](https://github.com/PrestaShop/example-modules/blob/master/demomultistoreform/src/Form/ContentBlockDataConfiguration.php).
 
 Finally, we created a new multistore Javascript component, which only needs to be instantiated in order to make the multistore form reactive. You can see it in action in [the multistore example module](https://github.com/PrestaShop/example-modules/blob/master/demomultistoreform/views/js/form.js).
 

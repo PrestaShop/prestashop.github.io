@@ -52,7 +52,7 @@ As you can see, a checkbox appears before multistore compatible fields. When it'
 - The field "Maintenance IP" is greyed out, checkbox unchecked: its value is inherited from parent context (all shop context in this case)
 - The field "Custom maintenance text" is not greyed out, and its checkbox is checked: it means its value is overriding the parent context, this value is specifically defined for this context (single shop context in this case)
 
-In all shop and group context, if a child context has a field that is overriden, a dropdown is displayed next to it and informs whether the value is overridden or not for each context:
+In "All shops" and group context, if a child context has a field that is overridden, a dropdown is displayed next to it and informs whether the value is overridden or not for each context:
 
 ![Shop contexts](/assets/images/2022/01/dropdown.png)
 

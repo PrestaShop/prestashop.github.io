@@ -46,7 +46,7 @@ Here is how a multistore compatible configuration form looks like since Prestash
 
 ![Shop contexts](/assets/images/2022/01/checkbox.png)
 
-As you can see, a checkbox appears before multistore compatible fields, when it's not checked and the field is greyed out, it means that the value is inherited from a parent context. When it's checked, the value is overridden, in this case:
+As you can see, a checkbox appears before multistore compatible fields. When it's not checked and the field is greyed out, it means that the value is inherited from a parent context. When it's checked, the value is overridden. In our screenshot example we can see that:
 
 - The field "Enable store" is greyed out, checkbox unchecked: its value is inherited from parent context (all shop context in this case)
 - The field "Maintenance IP" is greyed out, checkbox unchecked: its value is inherited from parent context (all shop context in this case)

@@ -56,7 +56,7 @@ In "All shops" and group context, if a child context has a field that is overrid
 
 ![Shop contexts](/assets/images/2022/01/dropdown.png)
 
-Here we're looking at the dropdown for the field "Maintenance IP", in all shop context, and we are given these informations:
+Here, we are looking at the dropdown for the field "Maintenance IP", in "All shops" context, and we are given these pieces of information:
 
 - the shop called "Awesome store" has an overriden value for this field, that is to say a customized value
 - the shop called "Shop 2" inherits the value from this context (127.0.0.1)

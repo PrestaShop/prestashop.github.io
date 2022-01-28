@@ -16,7 +16,7 @@ Multishop affects a lof ot PrestaShop behaviors and components. One aspect of th
 
 In a configuration form, a merchant can set different values for three different shop contexts, in this order of inheritance:
 
-- All shop context
+- All shops context
 - Group shop context
 - Single shop context
 

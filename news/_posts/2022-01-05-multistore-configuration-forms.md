@@ -69,7 +69,7 @@ On the technical side, these visual elements had to be reusable and easily imple
 
 All the work of knowing if the value of a field is inherited or not, and saving the submitted value only for the right context should be done only once, and easily reused by external contributors.
 
-For this purpose we decided to take advantage of Symfony form extensions, so that to add the new checkboxes and multistore dropdowns on a configuration form, a developer only needs to extend our our multistore extension. 
+For this purpose, we decided to take advantage of Symfony form extensions. To add the new checkboxes and multistore dropdowns on a configuration form, a developer simply needs to extend our multistore extension and configure each multishop field with its related configuration name.
 
 Then we added multistore helper methods for Configuration classes, to make saving data for the right context a breeze (depending on which checkboxes are checked). See how the new `updateConfigurationValue` method is used [here](https://github.com/PrestaShop/example-modules/blob/master/demomultistoreform/src/Form/ContentBlockDataConfiguration.php).
 

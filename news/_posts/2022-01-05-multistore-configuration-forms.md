@@ -61,7 +61,7 @@ Here, we are looking at the dropdown for the field "Maintenance IP", in "All sho
 - the shop called "Awesome store" has an overriden value for this field, that is to say a customized value
 - the shop called "Shop 2" inherits the value from this context (127.0.0.1)
 
-As you see, we did not fully reinvent the feature, we kept the concept of checkboxes, but we tried to make clearer what it does with the dropdowns and by graying fields when they are inherited their value from the parent context.
+As you see, we did not fully reinvent the feature, we kept the concept of checkboxes, but we tried to make clearer what it does with the dropdowns and by graying fields when they inherit their value from the parent context.
 
 ### Looking at the technical implementation
 

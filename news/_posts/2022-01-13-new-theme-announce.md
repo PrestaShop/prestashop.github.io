@@ -25,7 +25,7 @@ The PrestaShop community provided a [lot of feedback](https://github.com/PrestaS
 -   Add as many hooks as possible to extend the base theme.
 -   Separate the PrestaShop styling from the Bootstrap raw styling.
 -   Reduce the number of dependencies.
--   - Do not rely on jQuery, we will use the official JavaScript API provided by any browser. Note that jQuery will still be available as a lot of modules use it anyway.
+- Do not rely on jQuery, we will use the official JavaScript API provided by any browser. Note that jQuery will still be available as a lot of modules use it anyway.
 - Some of the front office pages would refresh large parts of a page even though only a small part needed to be updated.
 - Emit as many events as possible in JavaScript in order to allow modules and themes to use them.
 -   Use as many Bootstrap components as possible.

@@ -13,7 +13,7 @@ tags:
 ---
 Have you ever wondered who was hiding behind a GitHub username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project. This month, meet [Lorenz Meyer](https://github.com/lmeyer1).
 
-<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="240" src="/assets/images/2022/02/lorenz-meyer.jng">
+<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="240" src="/assets/images/2022/02/lorenz-meyer.jpg">
 
 Lorenz answered my questions from Romanel-sur-Lausanne, Switzerland. With 46 contributions, he ranks 119th in the [top contributor](https://contributors.prestashop.com/#lmeyer1) list. In addition to participating in his personal enrichment, his contribution to the open source project is also encouraged and supported by his employer. Why is this? What are the benefits? In this article, Lorenz explains everything and shares his experience.
 

@@ -11,7 +11,7 @@ tags:
  - community
  - contribution
 ---
-Have you ever wondered who was hiding behind a GitHub username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project. This month, meet [Lorenz Meyer](https://github.com/lmeyer1).
+Have you ever wondered who was hiding behind a GitHub username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project. This month, meet Lorenz Meyer aka [@lmeyer1](https://github.com/lmeyer1).
 
 <img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="240" src="/assets/images/2022/02/lorenz-meyer.jpg">
 

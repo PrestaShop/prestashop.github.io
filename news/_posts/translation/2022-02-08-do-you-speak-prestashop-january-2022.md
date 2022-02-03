@@ -96,7 +96,7 @@ The following languages had the best progress in January thanks to the translati
 * **Catalan** (+8% to reach 90% validated)
 * **Finnish** (+6% to reach 74% translated and validated)
 
-Congratulations! And special thanks to [Rijad Osmanovic](https://crowdin.com/profile/rijado), who worked a lot on the <Bosnian project lately. Progress of 50%, alone, and in just one month, that’s incredible! The language is now completely translated and validated. :muscle:
+Congratulations! And special thanks to [Rijad Osmanovic](https://crowdin.com/profile/rijado), who worked a lot on the Bosnian project lately. Progress of 50%, alone, and in just one month, that’s incredible! The language is now completely translated and validated. :muscle:
 
 ![Best translation progress in January 2022](/assets/images/2022/02/build-crowdin-progress-jan22.png)
 

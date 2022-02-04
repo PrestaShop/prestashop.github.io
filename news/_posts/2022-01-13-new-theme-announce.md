@@ -48,7 +48,7 @@ Because of the complexity of this task, we decided not to announce a release dat
 
 We hope to release an Alpha version of the new theme at the same time as the v8 release, but it could be after, even inside a minor version.
 
-This release date is not only dependent on the maintainers, but also on the many contributors who work hard to make this project happen. So we would like to thank all the contributors mentioned [here] (https://github.com/PrestaShop/theme-refacto/graphs/contributors) and those who participate in the issues and reviews on GitHub! Keep up the good work. This theme is also your theme, feel free to contribute and join the adventure. :-)
+This release date is not only dependent on the maintainers, but also on the many contributors who work hard to make this project happen. So we would like to thank all the contributors mentioned [here](https://github.com/PrestaShop/theme-refacto/graphs/contributors) and those who participate in the issues and reviews on GitHub! Keep up the good work. This theme is also your theme, feel free to contribute and join the adventure. :-)
 
 ## How does the new theme look?
 

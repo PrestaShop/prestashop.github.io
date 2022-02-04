@@ -56,7 +56,7 @@ Have a look at the [mockups](https://www.figma.com/file/LfVl5leeSKcVUhSaYwhbtM/N
 
 ## What about the Classic theme?
 
-As this new theme is getting bigger and more complete, we must consider what will happen for the Classic Theme when this new theme is ready?
+As this new theme is getting bigger and more complete, we must consider what will happen for the Classic Theme when this new theme is ready.
 
 We do not plan to maintain both themes simultaneously, so when the new theme rises, it will be necessary to decide how to stop the support of the Classic Theme. Today we have not yet decided how this will happen.
 

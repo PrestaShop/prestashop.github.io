@@ -56,11 +56,11 @@ Have a look at the [mockups](https://www.figma.com/file/LfVl5leeSKcVUhSaYwhbtM/N
 
 ## What about the Classic theme?
 
-Because a new theme means more work from maintainers, we decided that the Classic theme won't be supported in the future. We haven't determined a date yet because the new theme release date is unknown.
+As this new theme is getting bigger and more complete, we must consider what will happen for the Classic Theme when this new theme is ready?
 
-Of course, we'll keep you posted about our plan to release a new theme and when we decide to deprecate the Classic theme.
+We do not plan to maintain both themes simultaneously, so when the new theme rises, it will be necessary to decide how to stop the support of the Classic Theme. Today we have not yet decided how this will happen.
 
-The above means that we continue the maintenance of the Classic theme until it gets out of support.
+Rest assured we will make sure that the end-of-life of Classic theme and the transition to this new theme will be made very smooth.
 
 ## Your feedback is a gift
 

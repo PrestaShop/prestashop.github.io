@@ -2,7 +2,7 @@
 layout: post
 title: It's 2022, we are working on a new front office theme.
 subtitle: Here are some more details about it
-date: 2022-01-13
+date: 2022-02-04
 authors: [NeOMakinG]
 icon: icon-laptop
 tags: [news, theme, 8.x]

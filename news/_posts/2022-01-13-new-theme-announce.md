@@ -32,31 +32,31 @@ The PrestaShop community provided a [lot of feedback](https://github.com/PrestaS
 
 It was pretty impossible to fix all these issues on the classic theme without breaking the whole ecosystem of modules and community themes. We decided that it was time for a change and a new theme. This is not a complete rework because we did not want to change everything, but we were able to significantly improve the default PrestaShop theme. This new theme can be considered a Classic Theme rebuilt, different yet similar.
 
-## I would like to try it
+## How to try the new theme? 
 
 Clone it from the [theme repository](https://github.com/PrestaShop/theme-refacto), run `npm install`, `npm run build`, enable it from the back office and off you go!
 
 ## Good base for theme developers
 
-This new theme features two different CSS packs. First one is dedicated to the functional part, second one is only for styling.
+This new theme features two different CSS packs. The first one is dedicated to the functional part, the second one is only for styling.
 
 Commenting out `@import "custom/_custom";` in theme.scss file will get you basically a pure Boostrap 5 theme base. You can get working immediately and not waste time by cleaning things you don't need.
 
 ## When will it be released?
 
-Because of the complexity of this task, we decided to avoid writing about the release date. This means that depending on the time involved people can spend on it, the first version of the theme could be released in either PrestaShop v8, v9, or later.
+Because of the complexity of this task, we decided not to announce a release date. This means that, depending on how much time people can spare, the first version of the theme could be released in PrestaShop v8, v9, or later.
 
 We hope to release an Alpha version of the new theme at the same time as the v8 release, but it could be after, even inside a minor version.
 
-This release date doesn't only depend on maintainers, but it also depends on many contributors working hard to make this happen, so we would like to thank every contributor you can find [here](https://github.com/PrestaShop/theme-refacto/graphs/contributors) and those involved in any GitHub issues and reviews! Keep the great work. It's crucial for us. This theme is also your theme, don't hesitate to contribute and join the adventure :-)
+This release date is not only dependent on the maintainers, but also on the many contributors who work hard to make this project happen. So we would like to thank all the contributors mentioned [here] (https://github.com/PrestaShop/theme-refacto/graphs/contributors) and those who participate in the issues and reviews on GitHub! Keep up the good work. This theme is also your theme, feel free to contribute and join the adventure. :-)
 
 ## How does the new theme look?
 
-You can find the mockups of the theme [here](https://www.figma.com/file/LfVl5leeSKcVUhSaYwhbtM/New-Theme), and [the list of every issue](https://github.com/PrestaShop/theme-refacto/issues) opened.
+Have a look at the [mockups](https://www.figma.com/file/LfVl5leeSKcVUhSaYwhbtM/New-Theme), and [the list of open issues](https://github.com/PrestaShop/theme-refacto/issues).
 
 ## What about the Classic theme?
 
-Because a new theme means more maintainer works, we decided that the Classic theme will be out of support in the future. We didn't determine the date because the new theme release date is unknown.
+Because a new theme means more work from maintainers, we decided that the Classic theme won't be supported in the future. We haven't determined a date yet because the new theme release date is unknown.
 
 Of course, we'll keep you posted about our plan to release a new theme and when we decide to deprecate the Classic theme.
 

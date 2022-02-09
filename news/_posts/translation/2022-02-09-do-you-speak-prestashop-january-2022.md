@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – January 2022 edition"
 subtitle: "Where you'll learn that 4 new languages are fully available"
-date: 2022-02-08 
+date: 2022-02-09 
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

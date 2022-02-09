@@ -19,7 +19,7 @@ Lorenz answered my questions from Romanel-sur-Lausanne, Switzerland. With 46 con
 
 Dear readers, meet Lorenz!
 
-**Hi, Lorenz! First, could you tell us more about yourself?**
+**Hi, Lorenz! First, can you tell us more about yourself?**
 
 My name is Lorenz Meyer. I live in Switzerland. I’m married and a young grandfather of five cute boys and girls.
 I have been working in IT for twenty years at Geneva Bible Society, a publisher of Christian books and Bibles. We have about a dozen bookstores in France and Switzerland and we are offering IT support for another twenty independent bookstores. As a Christian, I'm glad that my job allows me to contribute to sharing the message of the Christian faith in today's society.

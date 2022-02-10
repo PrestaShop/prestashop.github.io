@@ -2,7 +2,7 @@
 layout: post
 title:  "Lorenz Meyer: a dedicated contributor supported by his employer"
 subtitle: "Discover the faces behind the commits"
-date:   2022-02-09
+date:   2022-02-10
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2022/02/lorenz-meyer.jpg

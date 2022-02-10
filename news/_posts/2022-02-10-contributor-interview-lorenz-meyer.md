@@ -17,6 +17,8 @@ Have you ever wondered who was hiding behind a GitHub username? It’s time to f
 
 Lorenz answered my questions from Romanel-sur-Lausanne, Switzerland. With 46 contributions, he ranks 119th in the [top contributor](https://contributors.prestashop.com/#lmeyer1) list. In addition to participating in his personal enrichment, his contribution to the open source project is also encouraged and supported by his employer. Why is this? What are the benefits? In this article, Lorenz explains everything and shares his experience.
 
+<div style="clear:both"></div>
+
 Dear readers, meet Lorenz!
 
 **Hi, Lorenz! First, can you tell us more about yourself?**

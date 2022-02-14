@@ -2,7 +2,7 @@
 layout: post
 title: It's 2022, we are working on a new front office theme.
 subtitle: Here are some more details about it
-date: 2022-02-04
+date: 2022-02-14
 authors: [NeOMakinG]
 icon: icon-laptop
 tags: [news, theme, 8.x]
@@ -64,8 +64,12 @@ Rest assured we will make sure that the end-of-life of Classic theme and the tra
 
 ## Your feedback is a gift
 
+You can vote to choose the name of this new theme [here](https://framaforms.org/vote-for-the-new-theme-name-1644576025).
+
 We need your feedback on this project, don't hesitate to [join us on slack](https://www.prestashop-project.org/slack/) to discuss with us. We're actively asking a lot of things to the community to make sure the new theme will be something that meets your expectations and needs.
 
 Are there some places in the shop where you need to display your content and there is no hook provided, or is hard to use? Let us know through [Github](https://github.com/PrestaShop/PrestaShop/issues) or on Slack.
 
 You can also comment in this [thread](https://github.com/PrestaShop/theme-refacto/issues/2) if you want to tell us about any problems, challenges that you encountered using and developing with the classic theme.
+
+If you want to learn more things about it, there is a [demo](https://build.prestashop.com/news/public-oss-demo-1-2022/) and a [replay](https://youtu.be/MrLdVbTtxjE?t=192).

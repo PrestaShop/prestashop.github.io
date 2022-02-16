@@ -46,7 +46,7 @@ Commenting out `@import "custom/_custom";` in theme.scss file will get you basic
 
 Because of the complexity of this task, we decided not to announce a release date. This means that, depending on how much time people can spare, the first version of the theme could be released in PrestaShop v8, v9, or later.
 
-We hope to release an Alpha version of the new theme at the same time as the v8 release, but it could be after, even inside a minor version.
+We hope to release an Alpha version of the new theme at the same time as the v8 release, but it could be after, alongside a minor version.
 
 This release date is not only dependent on the maintainers, but also on the many contributors who work hard to make this project happen. So we would like to thank all the contributors mentioned [here](https://github.com/PrestaShop/theme-refacto/graphs/contributors) and those who participate in the issues and reviews on GitHub! Keep up the good work. This theme is also your theme, feel free to contribute and join the adventure. :-)
 

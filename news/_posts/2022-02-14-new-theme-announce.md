@@ -64,7 +64,7 @@ Rest assured we will make sure that the end-of-life of Classic theme and the tra
 
 ## Your feedback is a gift
 
-You can vote to choose the name of this new theme [here](https://framaforms.org/vote-for-the-new-theme-name-1644576025).
+You can vote until February 18, 2022, to choose the name of this new theme [here](https://framaforms.org/vote-for-the-new-theme-name-1644576025).
 
 We need your feedback on this project, don't hesitate to [join the discussion on slack](https://www.prestashop-project.org/slack/). The community is being regularly consulted there to make sure the new theme will meet the expectations and needs of everyone.
 

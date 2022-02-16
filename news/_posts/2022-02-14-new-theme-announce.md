@@ -10,7 +10,7 @@ tags: [news, theme, 8.x]
 
 ## A new front-office theme is being built 
 
-For a long time, many community members pushed for a rework of the Classic front-office theme. The maintainer team is happy to announce that a new front-office theme is being built, and you can find it [here](https://github.com/PrestaShop/theme-refacto).
+For a long time, many community members have been pushing for a rework of the Classic front-office theme. The maintainer team is happy to announce that a new front-office theme is being built, and you can [find it here](https://github.com/PrestaShop/theme-refacto).
 
 ## Why such a decision?
 

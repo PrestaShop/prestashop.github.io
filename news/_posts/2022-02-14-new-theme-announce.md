@@ -16,19 +16,19 @@ For a long time, many community members have been pushing for a rework of the Cl
 
 The PrestaShop community provided a [lot of feedback](https://github.com/PrestaShop/PrestaShop/issues/14533) and ideas, with suggestions like:
 
--   Upgrade Bootstrap to version 5, the latest LTS
--   Rework the structure inside  `src`  directory, which was  `_dev`  before.
--   Remove the `core.js` file that theme developers could not modify or even remove
--   Use [lazy loading](https://en.wikipedia.org/wiki/Lazy_loading).
--   Choose, and use some CSS class naming strategy consistently, for example [BEM](https://github.com/getbem/getbem.com/). This is more maintainable and easier to read.
--   Use [JSON-LD](https://en.wikipedia.org/wiki/JSON-LD) instead of microdata attributes.
--   Add as many hooks as possible to extend the base theme.
--   Separate the PrestaShop styling from the Bootstrap raw styling.
--   Reduce the number of dependencies.
-- Do not rely on jQuery, we will use the official JavaScript API provided by any browser. Note that jQuery will still be available as a lot of modules use it anyway.
-- Some of the front office pages would refresh large parts of a page even though only a small part needed to be updated.
+- Upgrade Bootstrap to version 5, the latest LTS
+- Rework the structure inside  `src`  directory, which was `_dev` before.
+- Remove the `core.js` file that theme developers could not modify or even remove
+- Use [lazy loading](https://en.wikipedia.org/wiki/Lazy_loading).
+- Choose, and use a consistent CSS class naming strategy, for example [BEM](https://github.com/getbem/getbem.com/). This is more maintainable and easier to read.
+- Use [JSON-LD](https://en.wikipedia.org/wiki/JSON-LD) instead of microdata attributes.
+- Add as many hooks as possible to extend the base theme.
+- Separate the PrestaShop styling from the Bootstrap raw styling.
+- Reduce the number of dependencies.
+- Do not rely on jQuery, the theme will use standard JavaScript APIs. Note that jQuery will still be available because a lot of modules need it.
+- Some of the Front office pages would refresh large parts of a page even though only a small part needed to be updated.
 - Emit as many events as possible in JavaScript in order to allow modules and themes to use them.
--   Use as many Bootstrap components as possible.
+- Reuse as many Bootstrap components as possible.
 
 It was pretty impossible to fix all these issues on the classic theme without breaking the whole ecosystem of modules and community themes. We decided that it was time for a change and a new theme. This is not a complete rework because we did not want to change everything, but we were able to significantly improve the default PrestaShop theme. This new theme can be considered a Classic Theme rebuilt, different yet similar.
 

@@ -60,7 +60,7 @@ As this new theme is getting bigger and more complete, we must consider what wil
 
 It is not planned to maintain both themes simultaneously, so once the new theme has graduated to become the default theme for new releases, the support of the Classic Theme will be over.
 
-Rest assured we will make sure that the end-of-life of Classic theme and the transition to this new theme will be made very smooth.
+Rest assured we will make sure that the end-of-life of Classic theme and the transition to this new theme will be made in the smoothest possible way.
 
 ## Your feedback is a gift
 

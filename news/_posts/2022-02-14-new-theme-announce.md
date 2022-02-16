@@ -34,7 +34,7 @@ It was impossible to fix all these issues on the Classic theme without breaking 
 
 ## How to try the new theme? 
 
-Clone it from the [theme repository](https://github.com/PrestaShop/theme-refacto), run `npm install`, `npm run build`, enable it from the back office and off you go!
+Clone the [theme repository](https://github.com/PrestaShop/theme-refacto) into your `themes` directory, run `npm install && npm run build`, enable it from the back office, and off you go!
 
 ## Good base for theme developers
 

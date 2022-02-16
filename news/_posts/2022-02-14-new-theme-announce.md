@@ -56,11 +56,11 @@ Have a look at the [mockups](https://www.figma.com/file/LfVl5leeSKcVUhSaYwhbtM/N
 
 As this new theme is getting bigger and more complete, we must consider what will happen for the Classic Theme when this new theme is ready.
 
-The classic theme has a [dedicated repository](https://github.com/PrestaShop/classic-theme) and should be compatible with 1.7 and 8 versions.
+The classic theme has been moved into a [dedicated repository](https://github.com/PrestaShop/classic-theme) and should be compatible with PrestaShop 1.7 and the upcoming PrestaShop 8.
 
 It is not planned to maintain both themes simultaneously, so once the new theme has graduated to become the default theme for new releases, the support of the Classic Theme will be over.
 
-Rest assured we will make sure that the end-of-life of Classic theme and the transition to this new theme will be made in the smoothest possible way.
+Rest assured, we will make sure that the end-of-life of Classic and the transition to this new theme will be made in the smoothest possible way.
 
 ## Your feedback is a gift
 

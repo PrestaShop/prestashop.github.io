@@ -70,6 +70,6 @@ We need your feedback on this project, don't hesitate to [join the discussion on
 
 Is there anywhere in the shop where you need to display content and there is no hook available, or is it hard to use? [Report it on Github](https://github.com/PrestaShop/PrestaShop/issues) or on Slack.
 
-You can also comment in this [thread](https://github.com/PrestaShop/theme-refacto/issues/2) if you want to tell us about any problems, challenges that you encountered using and developing with the classic theme.
+You can also [comment in this thread](https://github.com/PrestaShop/theme-refacto/issues/2) if you want to discuss any problems or challenges that you encountered while using or developing with the classic theme.
 
 If you want to learn more things about it, there is a [demo](https://build.prestashop.com/news/public-oss-demo-1-2022/) and a [replay](https://youtu.be/MrLdVbTtxjE?t=192).

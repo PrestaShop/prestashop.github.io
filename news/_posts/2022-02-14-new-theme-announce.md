@@ -8,7 +8,6 @@ icon: icon-laptop
 tags: [news, theme, 8.x]
 ---
 
-## A new front-office theme is being built 
 
 A new front-office theme is being built, for a long time, many community members have been pushing for a rework of the Classic front-office theme. The maintainer team is happy to announce that a new front-office theme is being built, and you can [find it here](https://github.com/PrestaShop/theme-refacto).
 

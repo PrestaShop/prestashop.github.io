@@ -30,7 +30,7 @@ The PrestaShop community provided a [lot of feedback](https://github.com/PrestaS
 - Emit as many events as possible in JavaScript in order to allow modules and themes to use them.
 - Reuse as many Bootstrap components as possible.
 
-It was pretty impossible to fix all these issues on the classic theme without breaking the whole ecosystem of modules and community themes. We decided that it was time for a change and a new theme. This is not a complete rework because we did not want to change everything, but we were able to significantly improve the default PrestaShop theme. This new theme can be considered a Classic Theme rebuilt, different yet similar.
+It was impossible to fix all these issues on the Classic theme without breaking the whole ecosystem of modules and community themes. We decided that it was time for a change and a new theme. This is not a complete rework because we did not want to change everything, but we were able to significantly improve the default PrestaShop theme. This new theme can be considered a rebuilt Classic Theme, different, yet similar.
 
 ## How to try the new theme? 
 

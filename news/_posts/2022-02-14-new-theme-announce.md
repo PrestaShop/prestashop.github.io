@@ -68,7 +68,7 @@ You can vote to choose the name of this new theme [here](https://framaforms.org/
 
 We need your feedback on this project, don't hesitate to [join the discussion on slack](https://www.prestashop-project.org/slack/). The community is being regularly consulted there to make sure the new theme will meet the expectations and needs of everyone.
 
-Are there some places in the shop where you need to display your content and there is no hook provided, or is hard to use? Let us know through [Github](https://github.com/PrestaShop/PrestaShop/issues) or on Slack.
+Is there anywhere in the shop where you need to display content and there is no hook available, or is it hard to use? [Report it on Github](https://github.com/PrestaShop/PrestaShop/issues) or on Slack.
 
 You can also comment in this [thread](https://github.com/PrestaShop/theme-refacto/issues/2) if you want to tell us about any problems, challenges that you encountered using and developing with the classic theme.
 

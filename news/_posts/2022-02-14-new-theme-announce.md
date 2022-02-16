@@ -72,4 +72,4 @@ Is there anywhere in the shop where you need to display content and there is no 
 
 You can also [comment in this thread](https://github.com/PrestaShop/theme-refacto/issues/2) if you want to discuss any problems or challenges that you encountered while using or developing with the classic theme.
 
-If you want to learn more things about it, there is a [demo](https://build.prestashop.com/news/public-oss-demo-1-2022/) and a [replay](https://youtu.be/MrLdVbTtxjE?t=192).
+If you want to learn more about this project, [watch this video](https://youtu.be/MrLdVbTtxjE?t=192).

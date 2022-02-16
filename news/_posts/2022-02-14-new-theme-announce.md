@@ -22,7 +22,7 @@ The PrestaShop community provided a [lot of feedback](https://github.com/PrestaS
 - Use [lazy loading](https://en.wikipedia.org/wiki/Lazy_loading).
 - Choose, and use a consistent CSS class naming strategy, for example [BEM](https://github.com/getbem/getbem.com/). This is more maintainable and easier to read.
 - Use [JSON-LD](https://en.wikipedia.org/wiki/JSON-LD) instead of microdata attributes.
-- Add as many hooks as possible to extend the base theme.
+- Add new hooks to help extend the base theme.
 - Separate the PrestaShop styling from the Bootstrap raw styling.
 - Reduce the number of dependencies.
 - Do not rely on jQuery, the theme will use standard JavaScript APIs. Note that jQuery will still be available because a lot of modules need it.

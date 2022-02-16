@@ -66,7 +66,7 @@ Rest assured we will make sure that the end-of-life of Classic theme and the tra
 
 You can vote to choose the name of this new theme [here](https://framaforms.org/vote-for-the-new-theme-name-1644576025).
 
-We need your feedback on this project, don't hesitate to [join us on slack](https://www.prestashop-project.org/slack/) to discuss with us. We're actively asking a lot of things to the community to make sure the new theme will be something that meets your expectations and needs.
+We need your feedback on this project, don't hesitate to [join the discussion on slack](https://www.prestashop-project.org/slack/). The community is being regularly consulted there to make sure the new theme will meet the expectations and needs of everyone.
 
 Are there some places in the shop where you need to display your content and there is no hook provided, or is hard to use? Let us know through [Github](https://github.com/PrestaShop/PrestaShop/issues) or on Slack.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: It's 2022, we are working on a new front office theme.
+title: Hello 2022, meet our new Front office theme
 subtitle: Here are some more details about it
 date: 2022-02-14
 authors: [NeOMakinG]

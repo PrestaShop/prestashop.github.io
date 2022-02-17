@@ -50,11 +50,12 @@ This upcoming release is not only dependent on the maintainers, but also on the 
 
 ## How does the new theme look?
 
-<div class="text-center">
-  <img src="/assets/images/2022/02/new-theme-mockup.png" alt="New theme mockup" style="margin: 1rem auto">
-</div>
+This is how the current mockups look like:
 
-Have a look at the [mockups](https://www.figma.com/file/LfVl5leeSKcVUhSaYwhbtM/New-Theme), and [the list of open issues](https://github.com/PrestaShop/theme-refacto/issues).
+![New theme mockup](/assets/images/2022/02/new-theme-mockup.png)
+{: .text-center }
+
+To see more, have a look at [all the mockups](https://www.figma.com/file/LfVl5leeSKcVUhSaYwhbtM/New-Theme), and [the list of open issues](https://github.com/PrestaShop/theme-refacto/issues).
 
 ## What about the Classic theme?
 

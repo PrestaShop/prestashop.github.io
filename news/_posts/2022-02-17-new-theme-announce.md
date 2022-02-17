@@ -51,7 +51,7 @@ This upcoming release is not only dependent on the maintainers, but also on the 
 ## How does the new theme look?
 
 <div class="text-center">
-  <img src="/prestashop.github.io/assets/images/2022/02/new-theme-mockup.png" alt="New theme mockup" style="margin: 1rem auto">
+  <img src="/assets/images/2022/02/new-theme-mockup.png" alt="New theme mockup" style="margin: 1rem auto">
 </div>
 
 Have a look at the [mockups](https://www.figma.com/file/LfVl5leeSKcVUhSaYwhbtM/New-Theme), and [the list of open issues](https://github.com/PrestaShop/theme-refacto/issues).

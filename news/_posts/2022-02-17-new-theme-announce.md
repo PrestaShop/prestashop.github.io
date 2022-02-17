@@ -2,7 +2,7 @@
 layout: post
 title: Hello 2022, meet our new Front office theme
 subtitle: Here are some more details about it
-date: 2022-02-14
+date: 2022-02-17
 authors: [NeOMakinG]
 icon: icon-laptop
 tags: [news, theme, 8.x]
@@ -49,6 +49,10 @@ We hope to release an Alpha version of the new theme at the same time as the v8 
 This upcoming release is not only dependent on the maintainers, but also on the many contributors who are working hard to make this project happen. So we would like to thank [all the contributors](https://github.com/PrestaShop/theme-refacto/graphs/contributors) as well as everyone who has been participating in the issues and reviews on GitHub. Keep up the good work! This theme is also your theme, feel free to contribute and join the adventure. :-)
 
 ## How does the new theme look?
+
+<div class="text-center">
+  <img src="/prestashop.github.io/assets/images/2021/07/02-reachability-before.png" alt="reachability-before" style="margin: 1rem auto">
+</div>
 
 Have a look at the [mockups](https://www.figma.com/file/LfVl5leeSKcVUhSaYwhbtM/New-Theme), and [the list of open issues](https://github.com/PrestaShop/theme-refacto/issues).
 

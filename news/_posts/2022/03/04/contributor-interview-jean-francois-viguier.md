@@ -14,7 +14,7 @@ tags:
 
 Have you ever wondered who was hiding behind a GitHub username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project. This month, meet Jean-François Viguier, aka [jf-viguier](https://github.com/jf-viguier).
 
-<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="240" src="/assets/images/2022/03/jf-viguier.jpg">
+<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="269" src="/assets/images/2022/03/jf-viguier.jpg">
 
 Co-founder of an ecommerce and coding agency in Toulouse, Jean-François is also the vice-president of [Friends of Presta](https://friendsofpresta.org/en), an association that gathers a community of developers and integrators around the open source ecommerce solution PrestaShop. 
 

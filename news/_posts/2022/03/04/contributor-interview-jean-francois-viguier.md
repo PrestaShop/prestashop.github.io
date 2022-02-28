@@ -1,6 +1,6 @@
 ---
 layout: post
-title:"Jean-François Viguier: a top contributor and a friend of PrestaShop"
+title: "Jean-François Viguier: a top contributor and a friend of PrestaShop"
 subtitle: "Discover the faces behind the commits"
 date: 2022-03-04
 authors: [JulieVarisellaz]

@@ -98,7 +98,7 @@ The following languages had the best progress in February thanks to the translat
 
 Congratulations! 
 
-![Best translation progress in February 2022](/assets/images/2022/03/build-crowdin-progress-feb22.png)
+![Best translation progress in February 2022](/assets/images/2022/03/build-crowdin-progress-fev22.png)
 
 A huge thank you to all the contributors!
  

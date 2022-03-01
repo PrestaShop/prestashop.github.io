@@ -81,7 +81,7 @@ Yes! We often hear that the 1.6 is better than the 1.7. This is an urban legend!
 
 Now that I've had my little rant (:innocent:), I’d like to thank some people.
 
-The first person I’d like to thank is Valentin Szczupak. He and the community have done a lot of work on the new theme. I really hope it will be available in the next version. 
+The first person I’d like to thank is [NeOMakinG](https://github.com/NeOMakinG). He and the community have done a lot of work on the new theme. I really hope it will be available in the next version. 
 
 I’d also like to thank Franck Lefèvre: he is very kind, helpful and open-minded.
 

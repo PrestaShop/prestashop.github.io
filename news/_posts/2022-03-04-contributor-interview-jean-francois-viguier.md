@@ -81,11 +81,11 @@ Yes! We often hear that the 1.6 is better than the 1.7. This is an urban legend!
 
 Now that I've had my little rant (:innocent:), I’d like to thank some people.
 
-The first person I’d like to thank is [NeOMakinG](https://github.com/NeOMakinG). He and the community have done a lot of work on the new theme. I really hope it will be available in the next version. 
+The first person I’d like to thank is Valentin ([NeOMakinG](https://github.com/NeOMakinG)). He and the community have done a lot of work on the new theme. I really hope it will be available in the next version. 
 
-I’d also like to thank Franck Lefèvre: he is very kind, helpful and open-minded.
+I’d also like to thank Franck Lefèvre ([Progui1984](https://github.com/Progi1984)): he is very kind, helpful and open-minded.
 
-Let’s not forget Antoine Thomas. His work on the differentiation between the company and the open source project will benefit everyone. Plus, he’s always open to discussion.
+Let’s not forget Antoine Thomas ([ttoine](https://github.com/ttoine)). His work on the differentiation between the company and the open source project will benefit everyone. Plus, he’s always open to discussion.
 
 Finally, many thanks to Alexandre Eruimy, the PrestaShop company’s CEO. In recent years, there has been a major communication effort on the part of decision-makers: on TV, in the press, etc. Alexandre spends a lot of energy to make PrestaShop known and to highlight the open source project.
 

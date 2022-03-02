@@ -83,7 +83,7 @@ Now that I've had my little rant (:innocent:), I’d like to thank some people.
 
 The first person I’d like to thank is Valentin ([NeOMakinG](https://github.com/NeOMakinG)). He and the community have done a lot of work on the new theme. I really hope it will be available in the next version. 
 
-I’d also like to thank Franck Lefèvre ([Progui1984](https://github.com/Progi1984)): he is very kind, helpful and open-minded.
+I’d also like to thank Franck Lefèvre ([Progi1984](https://github.com/Progi1984)): he is very kind, helpful and open-minded.
 
 Let’s not forget Antoine Thomas ([ttoine](https://github.com/ttoine)). His work on the differentiation between the company and the open source project will benefit everyone. Plus, he’s always open to discussion.
 

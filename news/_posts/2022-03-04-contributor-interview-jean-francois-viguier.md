@@ -16,9 +16,9 @@ Have you ever wondered who was hiding behind a GitHub username? It’s time to f
 
 <img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="180" height="269" src="/assets/images/2022/03/jf-viguier.jpg">
 
-Co-founder of an ecommerce and coding agency in Toulouse (France), Jean-François is also the vice-president of [Friends of Presta](https://friendsofpresta.org/en), an association that gathers a community of developers and integrators around the open source ecommerce solution PrestaShop. 
+Co-founder of an ecommerce and coding agency in Toulouse (France), Jean-François is also the vice-president of [Friends of Presta](https://friendsofpresta.org/en), an association that gathers a community of developers and integrators around the open-source ecommerce solution PrestaShop. 
 
-On top of that, he is a very active contributor to the open source project, with more than [200 contributions](https://contributors.prestashop.com/#jf-viguier). 
+On top of that, he is a very active contributor to the open-source project, with more than [200 contributions](https://contributors.prestashop.com/#jf-viguier). 
 
 <div style="clear:both"></div>
 

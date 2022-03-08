@@ -17,7 +17,7 @@ tags:
 
 PrestaShop 1.7.8.4 is now available. This maintenance release fixes 23 bugs and feature request.
 
-![1.7.8.4 is available!](/assets/images/2022/01/1.7.8.4_banner.jpg)
+![1.7.8.4 is available!](/assets/images/2022/03/1.7.8.4_banner.jpg)
 
 
 We suggest upgrading your store quickly to benefit from these bug fixes. Make sure to perform a full manual backup before, so you can roll back the upgrade if something goes wrong.

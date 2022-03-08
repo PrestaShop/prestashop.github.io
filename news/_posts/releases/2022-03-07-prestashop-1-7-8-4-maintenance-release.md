@@ -35,7 +35,7 @@ Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don't for
 - [Removed double escape for Tree Node template  to fix an error in some  BO legacy pages](https://github.com/PrestaShop/PrestaShop/issues/27616)
 - [Fix the product grade not displayed in the list page](https://github.com/PrestaShop/PrestaShop/issues/27252)
 - [Fix an error while adding product to cart in quantity check](https://github.com/PrestaShop/PrestaShop/issues/27505)
-- [Remove duplicate shoppiongcards and  make sure carts are linked](https://github.com/PrestaShop/PrestaShop/issues/27450)
+- [Remove duplicate shopping carts and  make sure carts are linked](https://github.com/PrestaShop/PrestaShop/issues/27450)
 - [Fix Entities Mapping error on debug mode](https://github.com/PrestaShop/PrestaShop/issues/27218)
 - [Fix the padding left of the header of the stock page](https://github.com/PrestaShop/PrestaShop/issues/27356)
 - [Fix an unclear alert with an invalid address on FO](https://github.com/PrestaShop/PrestaShop/issues/26833)

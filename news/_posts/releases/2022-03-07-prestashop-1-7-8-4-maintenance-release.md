@@ -27,7 +27,7 @@ Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don't for
 ## Bug fixes and improvements
 
 - [Reverts the integration of Symfony kernel in the webservice dispatcher](https://github.com/PrestaShop/PrestaShop/issues/27411)
-- [Update links to docs : docs.prestashop-project.org instead of doc.prestashop.com](https://github.com/PrestaShop/PrestaShop/issues/27493)](https://github.com/PrestaShop/PrestaShop/issues/27509)
+- [Update links to docs : docs.prestashop-project.org instead of doc.prestashop.com](https://github.com/PrestaShop/PrestaShop/issues/27493)
 - [Fix translations installation broken by prefix](https://github.com/PrestaShop/PrestaShop/issues/27029)
 - [Fix the category dropdown on the module catalog page](https://github.com/PrestaShop/PrestaShop/issues/27747)
 - [Align checkboxes of multistore widget](https://github.com/PrestaShop/PrestaShop/issues/26904)

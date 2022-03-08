@@ -46,10 +46,9 @@ Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don't for
 - [Add class on light display layout and remove padding top](https://github.com/PrestaShop/PrestaShop/issues/27266)
 - [Fix default value for jQuery colorpicker](https://github.com/PrestaShop/PrestaShop/issues/27249)
 - [Reduce the number of queries on one by page by 50 - 150](https://github.com/PrestaShop/PrestaShop/issues/26747)
-- [Fix display of download button on credit slip page (BO)](https://github.com/PrestaShop/PrestaShop/issues/26779)
+- [Fix display of download button on credit slip page](https://github.com/PrestaShop/PrestaShop/issues/26779)
 - [Improve CMS edit page footer](https://github.com/PrestaShop/PrestaShop/issues/26633)
 - [Fix login when debug mode is activated and severity of logs is 2](https://github.com/PrestaShop/PrestaShop/issues/26680)
-
 
 
 ## Acknowledgments

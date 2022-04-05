@@ -34,7 +34,7 @@ Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don't for
 
 ## Bug fixes
 
-- [Fix the SEO  item list index position for the product list](Fix the SEO  item list index position for the product list)
+- [Fix the SEO  item list index position for the product list](https://github.com/PrestaShop/PrestaShop/issues/27725)
 - [Fix buggy floats on “stay logged in” and ”lost password” on the latest chrome version](https://github.com/PrestaShop/PrestaShop/issues/27835)
 - [Fix bug for the empty state in stock delta component. It should be displayed as zero when value is empty](https://github.com/PrestaShop/PrestaShop/issues/27736)
 - [Add help field when integer type is used to a form . The help field was not displayed when integer was used to a form](https://github.com/PrestaShop/PrestaShop/issues/27761)

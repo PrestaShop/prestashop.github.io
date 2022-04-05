@@ -41,7 +41,7 @@ I also developed our complete custom ERP system that allows us to manage all our
 
 We launched our first PrestaShop store in 2014 on the 1.6 version. Back then, I only reported some bugs on Forge[^1] .
 
-In 2018, PrestaShop [moved issues to Github[(https://build.prestashop.com/news/moving-issues-to-github/), and around that time, we migrated to the 1.7 version. During the migration to 1.7, I encountered many bugs, so I reported them on Github. When I realized that the PrestaShop team couldn’t fix them all, I motivated myself and decided to contribute. So, I stopped complaining and took action.
+In 2018, PrestaShop [moved issues to Github](https://build.prestashop.com/news/moving-issues-to-github/), and around that time, we migrated to the 1.7 version. During the migration to 1.7, I encountered many bugs, so I reported them on Github. When I realized that the PrestaShop team couldn’t fix them all, I motivated myself and decided to contribute. So, I stopped complaining and took action.
 
 [^1]: <em> Former web-based collaborative software platform based on Jira. </em>
 

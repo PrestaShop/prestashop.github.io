@@ -31,7 +31,7 @@ Hi, I’m Daniel. I’m 28. I live in Pardubice, Czech Republic.
 
 My family has been selling kitchen appliances online since 2006. Our main website is [Trendo.cz](https://www.trendo.cz/). My role in the family business is to take care of our stores, product catalog, network, hardware, and everything related.
 
-I have always loved computers: building and repairing laptops, making websites, setting up networks, etc. My ecommerce journey started in 2008. I was about 15 years old when I started working for my family business - managing products and content on our website. Gradually, I took on more and more responsibilities.
+I have always loved computers: building them, repairing laptops, making websites, setting up networks, etc. My ecommerce journey started in 2008. I was about 15 years old when I started working for my family business - managing products and content on our website. Gradually, I took on more and more responsibilities.
 
 Around 2014, we switched from an external provider to PrestaShop. We wanted to be in control and customize our stores to better suit our needs. At the time, a developer friend of mine was in charge of modifications. Gradually, I improved my skills and became more comfortable with PrestaShop software and PHP to some extent. We have not needed outside help for several years.
 

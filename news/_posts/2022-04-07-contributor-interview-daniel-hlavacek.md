@@ -45,7 +45,7 @@ In 2018, PrestaShop [moved issues to Github](https://build.prestashop.com/news/m
 
 [^1]: <em> Former web-based collaborative software platform based on Jira. </em>
 
-**As a freelancer, why do you contribute to the open-source project?**
+**As a freelancer, why do you contribute to the open source project?**
 
 Honestly? So I have less work when upgrading my stores. The more things I fix, the less work will everybody have when upgrading. I also like the feeling of doing something good: new merchants who create a PrestaShop store will get much better software than the one I started with.
 

@@ -49,7 +49,7 @@ In 2018, PrestaShop [moved issues to Github](https://build.prestashop.com/news/m
 
 Honestly? So I have less work when upgrading my stores. The more things I fix, the less work will everybody have when upgrading. I also like the feeling of doing something good: new merchants who create a PrestaShop store will get much better software than the one I started with.
 
-Also, if something is implemented in the core, all modules will count on it and automatically include it in their data. For example, the MPN field: I added it to my PrestaShop build, but all other modules needed to be modified: XML export to Google, marketing modules, etc.
+Also, if something is implemented in the core, all modules will count on it and automatically include it in their data. For example, the MPN field: I added it to my PrestaShop build. But all other modules needed to be modified: XML export to Google, marketing modules, etc.
 
 I learned so much by contributing to the open-source project. I was a beginner in PHP back then. I could write some basic things and mostly submitted one-line pull requests. After 5 years, I think I can do almost anything and make complex pull requests on stuff I was afraid to touch, such as the faceted search and others.
 

@@ -17,7 +17,7 @@ Have you ever wondered who was hiding behind a GitHub username? It’s time to f
 
 Daniel spends most of his time managing his family business’ online stores. The rest of the time, he works as a freelance developer for 10 clients, whose stores are all based on PrestaShop.
 
-Despite his busy schedule, Daniel also takes time to contribute to the PrestaShop open-source project, with more than [300 contributions](https://contributors.prestashop.com/). 
+Despite his busy schedule, Daniel also takes time to contribute to the PrestaShop open source project, with more than [300 contributions](https://contributors.prestashop.com/). 
 
 <div style="clear:both"></div>
 

@@ -68,7 +68,7 @@ Remember, you can see who has been contributing to our translation project thank
  
 #### Fully available languages
  
-At the end of February, PrestaShop 1.7.8 was fully available (= 100% translated and validated) in **19 languages**. That’s great! Thank you for your involvement. :tada:
+At the end of March, PrestaShop 1.7.8 was fully available (= 100% translated and validated) in **19 languages**. That’s great! Thank you for your involvement. :tada:
  
 | Bosnian | Catalan | **Chinese simplified** | Chinese traditional | 
 | Czech | Danish | English | Estonian | 
@@ -85,7 +85,7 @@ There isn’t much work left, so if you wish to help to proofread what has been 
 
 ## Languages with the best evolution
 
-The following languages had the best progress in February thanks to the translation community:
+The following languages had the best progress in March thanks to the translation community:
  
 * **Hungarian** (+3% to reach 100% translated and validated) 
 * **Albanian** (+3% to reach 37% translated)

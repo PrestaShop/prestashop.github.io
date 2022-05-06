@@ -89,7 +89,7 @@ The following languages had the best progress in April thanks to the translation
 
 Congratulations! 
 
-![Best translation progress in April 2022](/assets/images/2022/04/build-crowdin-progress-april22.png)
+![Best translation progress in April 2022](/assets/images/2022/05/build-crowdin-progress-april22.png)
 
 A huge thank you to all the contributors!
  

@@ -18,7 +18,7 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 ### ➕ New strings were added to Crowdin to fix a bug 
 
 As you may have noticed, 42 new strings were added to Crowdin on May 6. It is usually not possible to add new strings outside the release of a minor or major version of PrestaShop. But we had to do it to fix [a bug](https://github.com/PrestaShop/ps_emailalerts/pull/57) that prevented users from accessing or modifying the translations of the Mail alerts module.
-To go back to a 100% completion rate, those strings will need to be translated and validated. 
+To go back to a 100% completion rate, those strings will need to be translated and validated. Your project needs you! 
 
 ### 💕 Many thanks to newcomers
 

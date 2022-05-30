@@ -14,7 +14,7 @@ tags:
 
 Have you ever wondered who was hiding behind a GitHub username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project. This month, meet Jonathan Danse, aka [PrestaEdit](https://github.com/prestaedit).
 
-<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="379" height="568" src="/assets/images/2022/06/jonathandanse.jpg">
+<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="525" height="693" src="/assets/images/2022/06/jonathandanse.jpg">
 
 Jonathan is a module developer. He’s also one of the first contributors to the PrestaShop project. It all started, somewhat by chance, during a job interview 12 years ago. 
 In this article, Jonathan talks about his experience with PrestaShop, his work as a module developer, and his dedication to the open source project. And psst, Jonathan has some great news to share at the end…

@@ -35,7 +35,7 @@ In this section, we wanted to highlight the most important features of this vers
 - Better image management (replacing images, bulk edition)
 - Performances improvement (categories and combinations)
 
-Thank you to all the contributors that have helped with PrestaShop version 8.0: the community, our users and developers are what made this version possible. Looking forward to the final release of version 8.0!
+Thank you to all the contributors that have helped with PrestaShop version 8.0: the community, our users and developers are what made this version possible. Looking forward to the final release of version 8.0! 
 
 
 

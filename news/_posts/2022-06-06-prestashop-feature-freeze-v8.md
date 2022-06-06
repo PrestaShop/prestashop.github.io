@@ -17,7 +17,7 @@ We are very pleased to be announcing the feature freeze of PrestaShop version 8.
 
 ### Feature freeze is now effective
 
-Therefore, as of today, the feature freeze is now effective and no new features will be added to version 8.0, so we can work on implementing new features and working on their quality.
+Therefore, as of today, the feature freeze is now effective and no new features will be added to version 8.0, so we can work on polishing the 8.0 features and working on their quality.
 
 In the next few months, we will still be welcoming new features. We will be creating the 8.0.x branch to stabilize the code of the next 8.0 and new features will be added on “develop”.
 

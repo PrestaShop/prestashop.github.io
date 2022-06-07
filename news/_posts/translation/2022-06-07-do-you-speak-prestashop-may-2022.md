@@ -13,6 +13,7 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 
 ![Crowdin Monthly banner](/assets/images/2019/01/Build-Crowdin-banner.jpg)
 
+
 ## Project news
 
 ### 💕 Many thanks to newcomers

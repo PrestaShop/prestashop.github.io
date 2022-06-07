@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – May 2022 edition"
 subtitle: "Where you'll learn that PrestaShop 1.7.8 is now fully available in Portuguese BR"
-date: 2022-06-07 09:00:00
+date: 2022-06-07 08:00:00
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

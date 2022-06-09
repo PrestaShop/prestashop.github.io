@@ -32,6 +32,7 @@ In this section, we wanted to highlight the most important features of this vers
 - Reorganization of all the input information
 - Better image management (replacing images, bulk edition)
 - Performances improvement (categories and combinations)
+5. And a new password policy making PrestaShop more secure and safe.
 
 Thank you to all the contributors that have helped with PrestaShop version 8.0: the community, our users and developers are what made this version possible. Looking forward to the final release of version 8.0! 
 

@@ -26,7 +26,7 @@ In the next few months, we will still be welcoming new features. We will be crea
 In this section, we wanted to highlight the most important features of this version 8.0 feature freeze, visible below:
 1. Update to [Symfony 4.4](https://symfony.com/releases/4.4) (LTS version, support until November 23)
 2. Compatibility with [PHP 8.1](https://www.php.net/)
-3. Many different items regarding the [open source project separation](https://www.youtube.com/watch?t=128&v=jwOy3gx-MNs&feature=youtu.be), removing all dependencies to the company to make the project as neutral as possible
+3. Many different items regarding the open source project separation ([video with more details visible here](https://www.youtube.com/watch?t=128&v=jwOy3gx-MNs&feature=youtu.be)), removing all dependencies to the company to make the project as neutral as possible
 4. An experimental feature, the redesign of the product page:
 - Bulk edition enhanced for the product combinations
 - Reorganization of all the input information

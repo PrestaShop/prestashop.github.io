@@ -27,7 +27,7 @@ In this section, we wanted to highlight the most important features of this vers
 1. Update to [Symfony 4.4](https://symfony.com/releases/4.4) (LTS version, support until November 23)
 2. Compatibility with [PHP 8.1](https://www.php.net/)
 3. Many different items regarding the open source project separation, removing all dependencies to the company to make the project as neutral as possible
-4. A redesign of the product page:
+4. An experimental feature, the redesign of the product page:
 - Bulk edition enhanced for the product combinations
 - Reorganization of all the input information
 - Better image management (replacing images, bulk edition)

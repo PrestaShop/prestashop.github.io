@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop Version 8.0 Feature Freeze: Important Features"
 subtitle: "Feature Freeze: an Inside Look at Most Important Features"
-date:   2022-06-06 09:10:11
+date:   2022-06-09 12:00:00
 authors: [ PrestaShop ]
 icon: icon-compass
 tags:

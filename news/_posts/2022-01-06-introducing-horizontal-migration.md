@@ -1,86 +1,76 @@
 ---
 layout: post
-title: Introducing horizontal migration
-subtitle: Announcing a new step in the migration to Symfony
+title: An update on the Symfony migration
+subtitle: What's next?
 date: 2022-01-06
-authors: [MathieuFerment]
+authors: [MathieuFerment, PabloBorowicz]
 icon: icon-road
 tags: [news, symfony, migration]
 ---
 
-Looking back at the work carried out on the Symfony migration over the last years, we are now considering another approach.
+In December 2015, a groundbreaking change in PrestaShop was announced: the [introduction of the Symfony framework](/news/prestashop-1-7-and-symfony/) into the CMS. The objective was to gradually replace PrestaShop’s own custom framework with Symfony, and switch its templating system from Smarty to Twig. This project was known as “The Symfony migration”. Looking back, we realize that referring to this project as a "migration" wasn't really accurate at all.
 
-## Symfony migration, years 2016 to 2021
+Currently, _migrating_ one page to Symfony involves several steps:
 
-If you remember well, in 2015, the maintainer team [decided to bring a massive change into PrestaShop](https://build.prestashop.com/news/prestashop-1-7-and-symfony/): the introduction of the Symfony framework into the CMS. The project was titled “The Symfony migration” and its objective was to eventually replace PrestaShop’s in-house web framework with Symfony.
+- Analyze the page's features and its business logic, then specify any unclear or ambiguous behavior
+- Create a new Symfony controller, identify the different "actions" and set them up (routing, access control...)
+- Reimplement the page's original behavior using modern components (Grid, Symfony forms, Twig, [CQRS](https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/strategy/#phase-3-cqrscqrs)...)
+- Implement any feature required in order to reproduce the original behavior using the new components (Twig layouts, form theme, js...)
+- Implement adapters for any legacy component used in the original controller (as required by the [architecture rules](/releases/new-architecture-1-6-1-0/) established in 2015)
+- Fix old bugs discovered while reimplementing the old features, or reimagine the existing features to improve them
+- Add automated tests
+- Remove the old controller and rerouting it to the new controller
 
-Calling this project a migration would not be totally accurate though. This is because until 1.6, PrestaShop had been built using a custom framework, and most of the application’s business logic was very tightly coupled with the framework itself. In order to migrate the framework layer to Symfony, it became necessary to also rewrite the code coupled to it. As a consequence, migrating a back-office page from PrestaShop legacy framework to Symfony is actually a two-steps process:
-- Migrating the framework layer for this page: routing, security...
-- Refactoring the business logic to fit with the new architecture: rebuilding forms using Symfony form component, rebuilding views with Twig...
+That's quite a lot of steps, right? 
 
-If we have a deeper look at the above, we can actually split the work into these milestones:
+To us, this shows that the _migration_ process isn't really just about changing the underlying framework or a couple components. It's much more than that: **it's a full-on refactoring.**
 
-- Analyze back-office page in order to write down all of its behavior and logic
-- Create a new Symfony page and configure it (routing, security...)
-- Implement the behaviors using modern components: Grid component, Symfony forms, Twig, the modern layout, [CQRS](https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/strategy/#phase-3-cqrscqrs)...
-- Then come an exploration of QA analysts that aim to validate the new Symfony page can replace the legacy page
-- Finally we plug a few bridge component that redirect and preserve other components of the software connected to legacy page to the new page
-- Following previous step, the legacy page has been successfully replaced by its Symfony heir.
+At the time of writing, over 90 Back office pages have been _refactored_ using the process above. It's a good, through process, and we are proud of how it has contributed to increasing PrestaShop's overall software quality during the recent years. However, it has its downsides.
 
-You can read more about it on the [developer documentation](https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/strategy/).
+Migrating a page this way is slow and requires a considerable effort. It basically amounts to building the page again – a _better_ version of it. With several dozen modified files, refactoring a typical page takes several weeks of development, and months of review and refinement. There are still 50 pages left to migrate in the Back office. That's _years'_ worth of work! 
 
-The above process has been applied to 90 back-office pages, page after page. We picked a back-office page, we migrated it to Symfony, we also used this opportunity to bring many improvements such as bug fixes, enhancements, we also added automated tests and documented it. Then we moved on to the next page. And we repeated.
+In the meantime, PrestaShop's architecture has become heterogeneous. Although the pages that have been migrated to Symfony benefit from all the modern concepts that have been built over the years, a third of the Back office pages remain largely identical to how they were in PrestaShop 1.6 – not to mention the whole Front office and the Webservice API. 
 
-At the time of writing, 90 back-office pages have been migrated. 50 pages remain powered by the legacy framework. These numbers though do not represent accurately the amount of work needed to complete the project because back-office pages are not equally complex.
+This means that developers have to deal with some parts of the software working in a certain way and others in a completely different one. As we have mentioned in previous articles, this is bad because having more than one way of doing the same thing carries a higher risk of bugs, lower performance, more maintenance work, and a steeper learning curve for people who are new to the platform.
 
-## A two-faces back-office, between past and future
+Moreover, every bit of the legacy framework must be preserved until the migration has been fully completed. Even if in a few years only a single page that few people use was left to migrate, everything it relies on, Dispatcher, ObjectModel, Smarty, Helpers... the full legacy stack must remain in place, alive and maintained.
 
-While we are proud of the work we achieved, we do acknowledge the situation is far from ideal.
+Of course, in time, the migration will be finished, we will be able to remove any remaining legacy components, and reduce the platform's complexity. But as the saying goes, "in the long-term, we will all be dead". PrestaShop's attractiveness as a platform is at risk if we don't manage to accelerate the migration.
 
-While the 90 pages migrated to Symfony benefit from all the modern concepts we have built over the years, the 50 pages not migrated yet remain fully untouched. The code of these legacy back-office pages is almost identical between PrestaShop 1.7 and PrestaShop 1.6 .
+Our current migration strategy is all about taking a page and rebuilding all of its layers at once, using modern components like Symfony controllers, Twig, Grid, Symfony forms, CQRS, and so on; then delivering it in monster-sized Pull Requests which take forever to complete.
 
-So we have a split back-office, stuck between a far past and the future.
+**We need a better strategy.** How can we accelerate the transition to Symfony, increase the platform's homogeneity, and phase out legacy components faster?
 
-A split back-office means an heterogeneous architecture, and this is never a good thing. It means more work for the maintainer team, it means more concepts to master for module developers, it means multiple ways of doing things - for example we do have Twig and Smarty, two rendering engines, used in the software although they hold the same role.
+## Thinking outside the box
 
-Moreover until every back-office page has been migrated to Symfony, we have to preserve every bit of the legacy framework as some back-office pages still rely on them. Maybe in 2024 there will be only 5 back-office pages left to be migrated while the other hundred will be Symfony back-office pages, and yet, since these 5 pages will rely on ObjectModel, and Smarty, and the legacy framework, we will have to keep the full legacy stack on the back-office, alive and maintained.
+Let's analyze our current strategy. Migrating a page takes a list of known steps. Currently, we perform all those steps on a single page, then move on to the next page, and so on. 
 
-That situation will end eventually, once the back-office is completely migrated. Unfortunately after all these years, what we also learnt is how gigantic this project is. Following our current rhythm, and given that some of the most complex back-office pages are still to be migrated, we can expect the Symfony migration to continue for a few years before we can look at a fully migrated PrestaShop back-office. And don’t forget the end goal is for PrestaShop to become a full Symfony application! This means the Front-office and the Webservice have to be migrated too.
+What if we focused on delivering a single step at a time, progressively across all pages? 
 
-We now look for a new way to migrate the back-office that would allow us to bring improvements and modernisation to all of the back-office together, rather than page per page, resulting in a more homogenous architecture.
+Take the controller part, for example. At its root, a Symfony controller takes a Request and provides a Response, that's all. How the request is processed in order to build that response has no impact on the nature of the controller. Who says Symfony controller must use Twig? Or Grid? Or Symfony forms, even? This means that, theoretically speaking, it should be possible to take the content of legacy controller, and paste it into a Symfony controller. As long as the original code is rearranged into actions and in the end we get response, it doesn't matter if the output is built using Smarty helpers: HTML is HTML.
 
-## Introducing the horizontal migration
+Following that logic, we could say that the first step to migrating a controller is "transforming" it into a Symfony controller. Formally speaking, this requires minimal changes to the original code. It might not be pretty, but it provides all the benefits of a full-fledged Symfony controller (routing, kernel events, debug features, translator, container, etc) – for a low, low price.
 
-Instead of choosing one back-office page and applying the full migration process, switching the view from Smarty to twig, switching listings from HelperList to Grid, switching forms from HelperForm to Symfony forms… we could rather apply one of these changes globally, at once, in all back-office pages.
+Migrating a page using this "shortcut" should take a lot less modifications than doing it the traditional way. This means less developer effort (making it easier to contributors to participate), less effort to review and, hopefully, less effort to verify. If we did this to all remaining controllers, we could have 100% of the Back office running on Symfony controllers much sooner than if we performed all the refactoring steps to each one of them like we do now. This would allow us to phase out Dispatcher, Link, AdminController, and other legacy components much faster.
 
-For example tomorrow we could decide to replace all back-office Smarty views by Twig views, while leaving untouched the rest of the code.
-Or we could decide to replace all back-office HelperForms by Grids, while leaving intact all of the code around.
+Now, rest assured, this wouldn't mean abandoning Twig, Grid, Symfony forms, and CQRS – quite the opposite. Once we had all controllers running on Symfony, we could start the second step: removing Smarty in favor of Twig. If we managed to make HelperList and HelperForm work using Twig, we could easily phase out Smarty. This would simply require refactoring the helpers (in which case we wouldn't need to change any of the controllers), or creating new components that follow the same signature as the old helpers (which would require minimal changes to the controllers). Again, this could be applied everywhere, allowing us to phase out Smarty, the legacy Back office theme, and the legacy layout that envelops Symfony Twig pages.
 
-This approach, which is to replace a legacy component by a modern component at once, globally in the software, has two clear benefits:
-- Just after it’s done we can sunset the legacy component, decreasing the maintenance burden of having to keep it running
-- We have a single component that addresses a need, instead of having two which coexist, one modern and one legacy
+After that, we could go on to phase out HelperLists in favor of Grids, then HelperForms in favor of Symfony forms and CQRS. And then, we would get a complete migration of the Back office.
 
-We have titled this approach “the horizontal migration” while the previous process we have followed for years has been titled “vertical migration”.
+We call this approach “horizontal migration”, because it focuses on replacing one layer of legacy components with its modern equivalent across all the pages before moving on to the next layer. In opposition, we call our current approach "vertical migration" because it focuses on migrating all the layers of a page at once. The end result is the same: full migration to Symfony. It’s the path to get there that changes.
 
-## The horizontal migration scope and plan
+## What's next?
 
-This is a quite recent idea and we are still in the process of exploring the obstacles, the challenges and the consequences of this approach.
+We think the horizontal approach provides two clear benefits compared to our current approach:
+- A quicker reduction of the system's overall complexity, because legacy components can be sunset as soon as they are no longer needed, instead of having to wait until the end of the migration to do so.
+- A more gentle learning curve for PrestaShop developers not used to Symfony, who will be able to use HelperList and HelperForm in Symfony controllers.
 
-But we can already tell you what we hope will happen.
+The main downside of the horizontal approach is that lists and forms need to be migrated twice: once with helpers, then again using the newer components. However, we think its benefits are worth the effort.
 
-Given that we successfully find a reliable way to perform this approach globally, we aim to perform 2 first steps of horizontal migration:
+The horizontal approach has been [recently approved](https://github.com/PrestaShop/ADR/pull/26) by maintainers, as well as the [first example of a list page migrated using HelperList](https://github.com/PrestaShop/PrestaShop/pull/27246). This means that this should be the main approach to migration from now on.
 
-1. We want to replace all back-office controllers by Symfony controllers. In other words, we want the admin/controller/AdminController not used anymore by the Core.
+The vertical approach is not dead though: it might still be used in pages where the horizontal one would not make tactical sense, either because they are too simple to benefit from the advantages of horizontal migration, or because they require extensive refactoring (e.g. the product page).
 
-If every back-office controller is a Symfony controller, this allows module developers to benefit from Symfony built-in features everywhere in the back-office and to be able to plug themselves on a single modern stack.
+## Tell us what you think!
 
-2. Following this step, we could deprecate the admin/controller/AdminController class, leave it there to allow module developers to stop relying on it and leave it behind in a future major version. 
-We want to replace all back-office Smarty views by Twig views.
-
-This would give the back-office view layer homogeneity, and if we are to be honest, Twig has surpassed Smarty from a long time as a templating engine.
-
-Similarly to admin/controller/AdminController, Smarty would remain deprecated but available in the back-office for a little longer in order to allow module developers to release new versions of their applications that do not depend on Smarty, allowing smoother upgrades.
-
-## What do you think?
-
-The horizontal migration is an idea we are actively exploring, but our understanding of its impact is limited by our knowledge of the PrestaShop ecosystem. We would be happy to hear your ideas, worries, suggestions or warnings about this direction in the comment or [on Slack](https://www.prestashop-project.org/slack/).
+The horizontal migration is an idea we are actively experimenting with, but our understanding of its impact is limited by our knowledge of PrestaShop's ecosystem. If you have any questions, ideas or suggestions about this subject, please share them in the comments below, or come [chat with us on Slack](https://www.prestashop-project.org/slack/).

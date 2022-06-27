@@ -25,7 +25,7 @@ That's quite a lot of steps, right?
 
 To us, this shows that the _migration_ process isn't really just about changing the underlying framework or a couple components. It's much more than that: **it's a full-on refactoring.**
 
-At the time of writing, over 90 Back office pages have been _refactored_ using the process above. It's a good, through process, and we are proud of how it has contributed to increasing PrestaShop's overall software quality during the recent years. However, it has its downsides.
+At the time of writing, over 90 Back office pages have been _refactored_ using the process above. It's a good, thorough process, and we are proud of how it has contributed to increasing PrestaShop's overall software quality during recent years. However, it has its downsides.
 
 Migrating a page this way is slow and requires a considerable effort. It basically amounts to building the page again – a _better_ version of it. With several dozen modified files, refactoring a typical page takes several weeks of development, and months of review and refinement. There are still 50 pages left to migrate in the Back office. That's _years'_ worth of work! 
 
@@ -37,7 +37,6 @@ Moreover, every bit of the legacy framework must be preserved until the migratio
 
 Of course, in time, the migration will be finished, we will be able to remove any remaining legacy components, and reduce the platform's complexity. But as the saying goes, "in the long-term, we will all be dead". PrestaShop's attractiveness as a platform is at risk if we don't manage to accelerate the migration.
 
-Our current migration strategy is all about taking a page and rebuilding all of its layers at once, using modern components like Symfony controllers, Twig, Grid, Symfony forms, CQRS, and so on; then delivering it in monster-sized Pull Requests which take forever to complete.
 
 **We need a better strategy.** How can we accelerate the transition to Symfony, increase the platform's homogeneity, and phase out legacy components faster?
 

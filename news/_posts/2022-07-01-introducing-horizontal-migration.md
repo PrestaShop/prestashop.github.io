@@ -37,7 +37,6 @@ Moreover, every bit of the legacy framework must be preserved until the migratio
 
 Of course, in time, the migration will be finished, we will be able to remove any remaining legacy components, and reduce the platform's complexity. But as the saying goes, "in the long-term, we will all be dead". PrestaShop's attractiveness as a platform is at risk if we don't manage to accelerate the migration.
 
-
 **We need a better strategy.** How can we accelerate the transition to Symfony, increase the platform's homogeneity, and phase out legacy components faster?
 
 ## Thinking outside the box

@@ -8,7 +8,7 @@ icon: icon-road
 tags: [news, symfony, migration]
 ---
 
-In December 2015, a groundbreaking change in PrestaShop was announced: the [introduction of the Symfony framework](/news/prestashop-1-7-and-symfony/) into the CMS. The objective was to gradually replace PrestaShop’s own custom framework with Symfony, and switch its templating system from Smarty to Twig. This project was known as “The Symfony migration”. Looking back, we realize that referring to this project as a "migration" wasn't really accurate at all.
+In December 2015, a groundbreaking change in PrestaShop was announced: the [introduction of the Symfony framework](/news/prestashop-1-7-and-symfony/) into the CMS. The goal was to gradually replace PrestaShop’s custom framework with Symfony, and switch its templating system from Smarty to Twig. This project was known as “The Symfony migration”. Looking back, we realize that referring to this project as a "migration" wasn't really accurate at all.
 
 Currently, _migrating_ one page to Symfony involves several steps:
 
@@ -21,15 +21,15 @@ Currently, _migrating_ one page to Symfony involves several steps:
 - Add automated tests
 - Remove the old controller and rerouting it to the new controller
 
-That's quite a lot of steps, right? 
+That's a lot of steps, right? 
 
-To us, this shows that the _migration_ process isn't really just about changing the underlying framework or a couple components. It's much more than that: **it's a full-on refactoring.**
+To us, this shows that the _migration_ process isn't really just about changing the underlying framework or a few components. It's much more than that: **it's a full-on refactoring.**
 
-At the time of writing, over 90 Back office pages have been _refactored_ using the process above. It's a good, thorough process, and we are proud of how it has contributed to increasing PrestaShop's overall software quality during recent years. However, it has its downsides.
+At the time of writing, over 90 back office pages have been _refactored_ using the process above. It's a thorough process and we are proud of how it has contributed to increasing PrestaShop's overall software quality in the recent years. However, it has its downsides.
 
-Migrating a page this way is slow and requires a considerable effort. It basically amounts to building the page again – a _better_ version of it. With several dozen modified files, refactoring a typical page takes several weeks of development, and months of review and refinement. There are still 50 pages left to migrate in the Back office. That's _years'_ worth of work! 
+Migrating a page this way is slow and requires a major effort. It basically amounts to building the page again – a _better_ version of it. With several dozen modified files, refactoring a typical page takes several weeks of development, and months of review and refinement. There are still 50 pages left to migrate in the back office. That's _years'_ worth of work! 
 
-In the meantime, PrestaShop's architecture has become heterogeneous. Although the pages migrated to Symfony benefit from all the modern concepts built over the years, a third of the Back office pages remain largely identical to how they were in PrestaShop 1.6 – not to mention the whole Front office and the Webservice API. 
+In the meantime, PrestaShop's architecture has become heterogeneous. Although the pages migrated to Symfony benefit from all the modern concepts built over the years, a third of the back office pages remain largely identical to what they were in PrestaShop 1.6 – not to mention the whole front office and the Web service API. 
 
 This means developers have to deal with some parts of the software working in a certain way and others working completely differently. As mentioned in previous articles, this is problematic: having more than one way of performing the same action carries a higher risk of bugs, lower performance, increased maintenance work, and a steeper learning curve for people new to the platform.
 
@@ -55,7 +55,7 @@ Now, rest assured, this wouldn't mean abandoning Twig, Grid, Symfony forms, and 
 
 After that, we could go on to phase out HelperLists in favor of Grids, then HelperForms in favor of Symfony forms and CQRS. And then, we would get a complete migration of the Back office.
 
-We call this approach “horizontal migration”, because it focuses on replacing one layer of legacy components with its modern equivalent across all the pages before moving on to the next layer. In opposition, we call our current approach "vertical migration" because it focuses on migrating all the layers of a page at once. The end result is the same: full migration to Symfony. It’s the path to get there that changes.
+We call this approach “horizontal migration”, because it focuses on replacing one layer of legacy components with its modern equivalent across all pages before moving on to the next layer. In contrast, we call our current approach "vertical migration", because it focuses on migrating all layers of a page at once. The end result is the same: full migration to Symfony. It's the path to get there that changes.
 
 ## What's next?
 

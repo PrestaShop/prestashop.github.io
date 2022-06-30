@@ -31,7 +31,7 @@ Migrating a page this way is slow and requires a considerable effort. It basical
 
 In the meantime, PrestaShop's architecture has become heterogeneous. Although the pages migrated to Symfony benefit from all the modern concepts built over the years, a third of the Back office pages remain largely identical to how they were in PrestaShop 1.6 – not to mention the whole Front office and the Webservice API. 
 
-This means that developers have to deal with some parts of the software working in a certain way and others in a completely different one. As we have mentioned in previous articles, this is bad because having more than one way of doing the same thing carries a higher risk of bugs, lower performance, more maintenance work, and a steeper learning curve for people who are new to the platform.
+This means developers have to deal with some parts of the software working in a certain way and others working completely differently. As mentioned in previous articles, this is problematic: having more than one way of performing the same action carries a higher risk of bugs, lower performance, increased maintenance work, and a steeper learning curve for people new to the platform.
 
 Moreover, every bit of the legacy framework must be preserved until the migration has been fully completed. Even if in a few years only a single page that few people use was left to migrate, everything it relies on, Dispatcher, ObjectModel, Smarty, Helpers... the entire legacy stack must remain in place, alive and maintained.
 

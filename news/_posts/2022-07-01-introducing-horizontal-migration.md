@@ -53,7 +53,7 @@ Migrating a page using this "shortcut" should take fewer modifications compared 
 
 Now, rest assured, this wouldn't mean abandoning Twig, Grid, Symfony forms, and CQRS – quite the opposite. Once we had all controllers running on Symfony, we could start the second step: removing Smarty in favor of Twig. If we managed to make HelperList and HelperForm work using Twig, we could easily phase out Smarty. This would simply require refactoring the helpers (in which case we wouldn't need to change any of the controllers), or creating new components that follow the same signature as the old helpers (which would require minimal changes to the controllers). Again, this could be applied everywhere, allowing us to phase out Smarty, the legacy Back office theme, and the legacy layout that envelops Symfony Twig pages.
 
-After that, we could go on to phase out HelperLists in favor of Grids, then HelperForms in favor of Symfony forms and CQRS. And then, we would get a complete migration of the Back office.
+After that, we could go on to phase out HelperLists in favor of Grids, then HelperForms in favor of Symfony forms and CQRS. And then, the migration of the back office would be complete.
 
 We call this approach “horizontal migration”, because it focuses on replacing one layer of legacy components with its modern equivalent across all pages before moving on to the next layer. In contrast, we call our current approach "vertical migration", because it focuses on migrating all layers of a page at once. The end result is the same: full migration to Symfony. It's the path to get there that changes.
 

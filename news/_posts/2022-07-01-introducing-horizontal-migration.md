@@ -59,7 +59,7 @@ We call this approach “horizontal migration”, because it focuses on replacin
 
 ## What's next?
 
-We think the horizontal approach provides two clear benefits compared to our current approach:
+We think the horizontal approach provides two major benefits compared to our current approach:
 - A quicker reduction of the system's overall complexity, because legacy components can be sunset as soon as they are no longer needed, instead of having to wait until the end of the migration to do so.
 - A more gentle learning curve for PrestaShop developers not used to Symfony, who will be able to use HelperList and HelperForm in Symfony controllers.
 

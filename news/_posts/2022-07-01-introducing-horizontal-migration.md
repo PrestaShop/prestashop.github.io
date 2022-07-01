@@ -45,7 +45,7 @@ Let's analyze our current strategy. Migrating a page takes a list of known steps
 
 What if we focused on delivering a single step at a time, progressively across all pages? 
 
-Take the controller part, for example. At its root, a Symfony controller takes a Request and provides a Response, that's all. How the request is processed in order to build that response has no impact on the nature of the controller. Who says Symfony controller must use Twig? Or Grid? Or Symfony forms, even? Theoretically, it should be possible to take the content of the legacy controller and paste it into a Symfony controller. As long as the original code is rearranged into actions, and we get a response, it doesn't matter if the output is built using Smarty helpers: HTML is HTML.
+Take the controller part, for example. At its root, a Symfony controller takes a `Request` and provides a `Response`, that's all. How the request is processed in order to build that response has no impact on the nature of the controller. Who says a Symfony controller must use Twig? Or Grid? Or Symfony forms, for that matter? Theoretically, it should be possible to take the content of the legacy controller and paste it into a Symfony controller. As long as the original code is rearranged into actions, and we get a response, it doesn't matter if the output is built using Smarty helpers: HTML is HTML.
 
 Following that logic, we could say that the first step to migrating a controller is "transforming" it into a Symfony controller. Strictly speaking, this requires minimal changes to the original code. It might not be pretty, but it provides all the benefits of a full-fledged Symfony controller (routing, kernel events, debug features, translator, container, etc) – for a very low price.
 

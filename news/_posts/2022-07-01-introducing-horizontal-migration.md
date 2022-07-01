@@ -65,7 +65,7 @@ We think the horizontal approach provides two major benefits compared to our cur
 
 The main downside of the horizontal approach is that lists and forms need to be migrated twice: once with helpers, then again using the newer components. However, we think its benefits are worth the effort.
 
-The horizontal approach has been [recently approved](https://github.com/PrestaShop/ADR/pull/26) by maintainers, as well as the [first example of a listing page migrated using HelperList](https://github.com/PrestaShop/PrestaShop/pull/27246). This means that this should be the main approach to migration from now on.
+The horizontal approach has been [recently approved](https://github.com/PrestaShop/ADR/pull/26) by maintainers, and the [first example of a listing page migrated using HelperList](https://github.com/PrestaShop/PrestaShop/pull/27246) has been merged. This means that this should be the main approach to migration from now on.
 
 The vertical approach is not dead though: it might still be used in pages where the horizontal one would not make tactical sense, either because they are too simple to benefit from the advantages of horizontal migration, or because they require extensive refactoring (e.g. the product page).
 

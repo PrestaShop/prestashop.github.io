@@ -2,7 +2,7 @@
 layout: post
 title: An update on the Symfony migration
 subtitle: What's next?
-date: 2022-07-01
+date: 2022-07-04
 authors: [MathieuFerment, PabloBorowicz]
 icon: icon-road
 tags: [news, symfony, migration]

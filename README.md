@@ -48,7 +48,7 @@ How about writing a guest post here? Maybe you've been working with PrestaShop f
 
 Before you start writing, please send us a short proposal by opening a GitHub issue. Once we have agreed with you on the topic, you can submit your article [using a simple pull request](https://github.com/PrestaShop/prestashop.github.io).
 
-Also, if we merge one of your cool pull requests on [the PrestaShop project](http://gihub.com/PrestaShop/PrestaShop), we may invite you to tell us more about it here.
+Also, if we merge one of your cool pull requests on [the PrestaShop project](http://github.com/PrestaShop/PrestaShop), we may invite you to tell us more about it here.
 
 All content on the Build.PrestaShop.com site is licensed under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/) -- meaning that it is in the Public Domain. Use it however you want!
 

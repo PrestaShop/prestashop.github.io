@@ -23,15 +23,17 @@ The maintainer team has been made aware that malicious actors are exploiting a c
 
 While investigating this attack, we found a previously unknown vulnerability chain that has been fixed in this release. At the moment, however, we cannot be sure that it’s the only way for them to perform the attack.
 
-We suggest upgrading your shop quickly in order to benefit from this fix. Please remember to backup before you upgrade.
+We suggest upgrading your shop quickly in order to benefit from this fix. Please remember to back up before you upgrade.
+
+Be aware that upgrading your software **might not be enough to secure your store if it has been hacked already**. Consider contacting a specialist to perform a full audit of your site and make sure that no malicious content has been planted.
 
 Reminder: the latest version of the 1-Click Upgrade is v4.14.2 and has been just released, don’t forget to upgrade it.
 
 ## About the security fix
 
-This security fix strengthens the MySQL Smarty cache storage against code injection attacks. Read the [security advisory here](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-hrgx-p36p-89q4).
+This security fix strengthens the MySQL Smarty cache storage against code injection attacks. Read the [security advisory](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-hrgx-p36p-89q4) for more details.
 
-Note: this legacy feature will be removed from future PrestaShop versions and is maintained for backward compatibility reasons. It is recommended not to enable it due to reduced performance.
+Note: this legacy feature is maintained for backward compatibility reasons and will be removed from future PrestaShop versions. It is recommended not to enable it due to reduced performance.
 
 We would like to take the opportunity to stress once more the importance of keeping your system updated to keep your shop safe from attacks. This means regularly updating both your PrestaShop software and its modules, as well as your server environment.
 

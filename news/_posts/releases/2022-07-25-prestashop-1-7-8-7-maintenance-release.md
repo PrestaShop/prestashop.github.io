@@ -19,13 +19,13 @@ PrestaShop version 1.7.8.7 is now available. This release fixes one important se
 
 ![1.7.8.7 is available!](/assets/images/2022/07/1.7.8.7_banner.jpg)
 
-The maintainer team has been made aware that malicious actors are exploiting a combination of known and unknown security security vulnerabilities to inject malicious code in PrestaShop websites, allowing them to execute arbitrary instructions, and potentially steal customer’s payment information. You can [read our dedicated article](https://build.prestashop.com/news/major-security-vulnerability-on-prestashop-websites/) to find out what’s happening, how the attack works and what to do to keep your shop safe.
+The maintainer team has been made aware that malicious actors are exploiting a combination of known and unknown security vulnerabilities to inject malicious code in PrestaShop websites, allowing them to execute arbitrary instructions, and potentially steal customer’s payment information. You can [read our dedicated article](https://build.prestashop.com/news/major-security-vulnerability-on-prestashop-websites/) to find out what’s happening, how the attack works and what to do to keep your shop safe.
 
 While investigating this attack, we found a previously unknown vulnerability chain that has been fixed in this release. At the moment, however, we cannot be sure that it’s the only way for them to perform the attack.
 
 We suggest upgrading your shop quickly in order to benefit from this fix. Please remember to backup before you upgrade.
 
-Reminder: the latest version of the 1-Click Upgrade is v4.14.2 has been just released, don’t forget to upgrade it.
+Reminder: the latest version of the 1-Click Upgrade is v4.14.2 and has been just released, don’t forget to upgrade it.
 
 ## About the security fix
 
@@ -33,7 +33,7 @@ This security fix strengthens the MySQL Smarty cache storage against code inject
 
 Note: this legacy feature will be removed from future PrestaShop versions and is maintained for backward compatibility reasons. It is recommended not to enable it due to reduced performance.
 
-We would like to take the opportunity to stress out once more the importance of keeping your system updated to keep your shop safe from attacks. This means regularly updating both your PrestaShop software and its modules, as well as your server environment.
+We would like to take the opportunity to stress once more the importance of keeping your system updated to keep your shop safe from attacks. This means regularly updating both your PrestaShop software and its modules, as well as your server environment.
 
 ## Acknowledgements
 

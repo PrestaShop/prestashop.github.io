@@ -25,7 +25,7 @@ This devblog also hosts How-Tos on certain features, before they find their way 
 
 build.prestashop.com is built and hosted by [GitHub Pages](https://github.com/github/pages-gem) which leverages [Jekyll](https://jekyllrb.com/) (a Ruby static site generator) abilities.
 
-We recommend using Ruby 2.5.8
+We recommend using Ruby 3.1
 
 ### Setup
 
@@ -53,7 +53,6 @@ Also, if we merge one of your cool pull requests on [the PrestaShop project](htt
 All content on the Build.PrestaShop.com site is licensed under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/) -- meaning that it is in the Public Domain. Use it however you want!
 
 <img src="/assets/images/2015/06/cc-zero.png" style="margin-right:auto;margin-left:auto;display:block;" />
-</div>
 
 ## Guidelines
 

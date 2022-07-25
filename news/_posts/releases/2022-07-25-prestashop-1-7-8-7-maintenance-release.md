@@ -29,7 +29,7 @@ Reminder: the latest version of the 1-Click Upgrade is v4.14.2 has been just rel
 
 ## About the security fix
 
-This security fix strengthens the MySQL Smarty cache storage against code injection attacks.
+This security fix strengthens the MySQL Smarty cache storage against code injection attacks. Read the [security advisory here](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-hrgx-p36p-89q4).
 
 Note: this legacy feature will be removed from future PrestaShop versions and is maintained for backward compatibility reasons. It is recommended not to enable it due to reduced performance.
 

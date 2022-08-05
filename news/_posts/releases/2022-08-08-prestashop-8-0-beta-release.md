@@ -90,7 +90,10 @@ You can download PrestaShop 8.0 beta here:
 
 ## Known issues
 
-ADD IMPORTANT BUGS
+* [An exception is displayed when creating an address with italian country in the checkout process #29012](https://github.com/PrestaShop/PrestaShop/issues/29012)
+* [An error is displayed when upgrading a too large module using the zip #28924](https://github.com/PrestaShop/PrestaShop/issues/28924)
+* [States field is not displayed in checkout process #28781](https://github.com/PrestaShop/PrestaShop/issues/28781)
+* [The localization pack is not updated and cannot install modules in module manager with Spanish language #29017](https://github.com/PrestaShop/PrestaShop/issues/29017)
 
 The [complete list of known bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.0.x+label%3ABug) is constantly updated on GitHub.
 

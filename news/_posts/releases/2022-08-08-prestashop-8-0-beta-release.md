@@ -75,7 +75,7 @@ A new Security page has been added in the _Advanced parameters_ section. It allo
 
 The PrestaShop project is now free of commercial products and services, so it no longer includes the Addons Marketplace by default: it is now a [separate module](https://github.com/PrestaShopCorp/ps_mbo/releases) that can be installed independently, allowing you to install and update any module that you might have bought there.
 
-The project’s [built-in modules](https://devdocs.prestashop.com/8/development/native-modules/#list-of-native-modules) (also referred to as “native modules”) are now distributed thorugh a dedicated infrastructure, and can now be installed and updated directly from the Module Manager page.
+The project’s [built-in modules](https://devdocs.prestashop.com/8/development/native-modules/) (also referred to as “native modules”) are now distributed thorugh a dedicated infrastructure, and can now be installed and updated directly from the Module Manager page.
 
 PrestaShop 8 includes several additional built-in modules: Top-sellers block, Brand list, Cash on delivery, Products in the same category, Mail alerts, Google analytics, New Products, Specials block, Supplier list, Viewed products block, and Distribution API client. 
 

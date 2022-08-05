@@ -22,7 +22,13 @@ The maintainers team is very happy to announce today the release of the public b
 
 The main new features for this version include an update to [Symfony 4.4](https://symfony.com/releases/4.4), compatibility with [PHP 8 and 8.1](https://www.php.net/), an enhanced experimental product page, and a new security page which allows shop administrators to manage user sessions and configure their password policy.
 
-In addition, this version fixes [over 130 bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aclosed+milestone%3A8.0.0+label%3ABug+-label%3ARegression+-label%3A8.0.x+-label%3Adevelop) found in previous releases, including 13 major issues.
+In addition, this version fixes [over 130 bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aclosed+milestone%3A8.0.0+label%3ABug+-label%3ARegression+-label%3A8.0.x+-label%3Adevelop) found in previous releases, including:
+
+* [In some circumstances, customers could be able to accidentally order an out-of-stock product, even if it was not allowed](https://github.com/PrestaShop/PrestaShop/issues/10762).
+* [An empty cart was being created whenever a customer signed in](https://github.com/PrestaShop/PrestaShop/issues/9589).
+* [Canonical links were missing on several pages](https://github.com/PrestaShop/PrestaShop/issues/9503).
+* [An error message was being logged every time an order was paid, even though there was no error](https://github.com/PrestaShop/PrestaShop/issues/9866).
+* [Visitors having placed an order weren't able to set up a customer account using the form at the bottom of the order confirmation page](https://github.com/PrestaShop/PrestaShop/issues/14414).
 
 PrestaShop 8 is also the project's first company-neutral release, meaning that it no longer includes commercial products and services built-in. You can find out more by reading [Beyond 1.7](/news/prestashop-beyond-1-7/) and watching the project's [public demo from November 2021](https://www.youtube.com/watch?t=128&v=jwOy3gx-MNs&feature=youtu.be).
 

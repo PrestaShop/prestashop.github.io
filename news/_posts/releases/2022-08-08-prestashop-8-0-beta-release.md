@@ -90,13 +90,13 @@ You can download PrestaShop 8.0 beta here:
 
 ## Known issues
 
-* [An exception is displayed when creating an address with italian country in the checkout process #29012](https://github.com/PrestaShop/PrestaShop/issues/29012)
-* [An error is displayed when upgrading a too large module using the zip #28924](https://github.com/PrestaShop/PrestaShop/issues/28924)
-* [States field is not displayed in checkout process #28781](https://github.com/PrestaShop/PrestaShop/issues/28781)
-* [The localization pack is not updated and cannot install modules in module manager with Spanish language #29017](https://github.com/PrestaShop/PrestaShop/issues/29017)
-* [A new product created in all shops is not displayed in the list #27599](https://github.com/PrestaShop/PrestaShop/issues/27599)
-* [Errors are displayed when upgrade from 1.7.8.6 to 8.0.0 #29248](https://github.com/PrestaShop/PrestaShop/issues/29248)
-* [Help documentation in the Back-Office doesn't work](https://github.com/PrestaShop/PrestaShop/issues/29169)
+* [An exception might be displayed in Front office when creating an italian address during the checkout process](https://github.com/PrestaShop/PrestaShop/issues/29012)
+* [An unclear error is displayed when upgrading using zip if the file is too large](https://github.com/PrestaShop/PrestaShop/issues/28924)
+* [The state field is not displayed in the checkout process for country United States](https://github.com/PrestaShop/PrestaShop/issues/28781)
+* [Translations packs are not up-to-date for 8.0](https://github.com/PrestaShop/PrestaShop/issues/29017)
+* [Multistore - A new product created in all shops is not displayed on the products list](https://github.com/PrestaShop/PrestaShop/issues/27599)
+* [Errors are displayed when upgrading from 1.7.8.6 to 8.0.0](https://github.com/PrestaShop/PrestaShop/issues/29248)
+* [Contextual help in the Back office is not fully functional](https://github.com/PrestaShop/PrestaShop/issues/29169)
 
 The [complete list of known bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.0.x+label%3ABug) is constantly updated on GitHub.
 

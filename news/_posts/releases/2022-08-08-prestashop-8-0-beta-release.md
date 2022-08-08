@@ -85,7 +85,7 @@ During the installation process, you can now choose which modules you want to in
 
 You can download PrestaShop 8.0 beta here:
 
-[Download PrestaShop 8.0 beta now!](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.0-beta){: .btn .btn-lg .btn-success}
+[Download PrestaShop 8.0 beta now!](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.0-beta.1){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 ## Known issues

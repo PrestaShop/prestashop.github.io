@@ -44,7 +44,7 @@ The public beta period is an extremely important phase to prepare for the upcomi
 
 Here are some examples of how you can help:
 
-* If you have access to a real shop, set up a copy of it in a separate environment and update it to PrestaShop 8 using the [upgrade module](https://github.com/PrestaShop/autoupgrade/releases). See if you notice any issues on the shop compared to your previous version.
+* If you have access to a real shop, set up a copy of it in a separate environment and update it to PrestaShop 8 using the [upgrade module](https://github.com/PrestaShop/autoupgrade/releases). See if you notice any issues on the shop compared to your previous version. _(Note that there are some known issues during the upgrade process, but they shouldn't be blocking – [read more below](#known-issues))_.
 * If you are a module or theme developer, check if they work well with this new version.
 * If you notice any problem and you think it is caused by the new version, please [report it on GitHub](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
 * Don’t hesitate to [contribute to fixing bugs](https://devdocs.prestashop.com/8/contribute/contribute-pull-requests/) if you can!
@@ -95,18 +95,18 @@ You can download PrestaShop 8.0 beta here:
 * [The state field is not displayed in the checkout process for country United States](https://github.com/PrestaShop/PrestaShop/issues/28781)
 * [Translations packs are not up-to-date for 8.0](https://github.com/PrestaShop/PrestaShop/issues/29017)
 * [Multistore - A new product created in all shops is not displayed on the products list](https://github.com/PrestaShop/PrestaShop/issues/27599)
-* [Errors are displayed when upgrading from 1.7.8.6 to 8.0.0](https://github.com/PrestaShop/PrestaShop/issues/29248)
 * [Contextual help in the Back office is not fully functional](https://github.com/PrestaShop/PrestaShop/issues/29169)
+* [Errors are displayed when upgrading from 1.7.8.6 to 8.0.0](https://github.com/PrestaShop/PrestaShop/issues/29248)
+* Some modules are not yet updated to work with 8.0 and might break your shop. We recommend disabling the following modules before upgrading to this beta:
+  * Onboarding (welcome)
+  * PrestaShop Metrics (ps_metrics)
+  * PrestaShop Facebook (ps_facebook)
+  * Prestashop Checkout (ps_checkout)
+  * Google marketing (psxmarketingwithgoogle)
+  * Marketplace in your Back office (ps_mbo)
 
 The [complete list of known bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.0.x+label%3ABug) is constantly updated on GitHub.
 
-Please note that the following modules are known not to be with 8.0 yet. We recommend disabling them while you test this beta:
-* Onboarding (welcome)
-* PrestaShop Metrics (ps_metrics)
-* PrestaShop Facebook (ps_facebook)
-* Prestashop Checkout (ps_checkout)
-* Google marketing (psxmarketingwithgoogle)
-* Marketplace in your Back office (ps_mbo)
 
 ## Acknowledgements
 

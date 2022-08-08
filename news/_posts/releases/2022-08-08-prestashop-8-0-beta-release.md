@@ -114,6 +114,8 @@ A big thank you to the **114 people** who contributed **more than 1000 Pull Requ
 
 ...and a warm welcome to the 52 of them who contributed for the first time!
 
-Special thanks to:
-- Marion François, Fabien Vallon, Mateus Shirlaw, Eshane Rawat for their product management contribution.
-- Hibatallah Aouadni, Khouloud Belguith, Sarah Cavrot, Marwa Chelly, Sarah Dib, Robin Fischer, Florine Hea, Hana Rebat, Aurélien Rita and Serhii Zavadskyi for their quality assurance work.
+We would also like to thank the people who contributed aside from code:
+- Product management: Eshane Rawat, Fabien Vallon, Marion François and Mateus Shirlaw.
+- Quality assurance: Aurélien Rita, Florine Hea, Hana Rebat, Hibatallah Aouadni, Khouloud Belguith, Marwa Chelly, Robin Fischer, Sarah Cavrot, Sarah Dib and Serhii Zavadskyi.
+- UX design: Scott Cosio and Tristan Lehot.
+- Wording management and proofreading: Julie Varisellaz and Patrick Coffre.

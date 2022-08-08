@@ -100,6 +100,14 @@ You can download PrestaShop 8.0 beta here:
 
 The [complete list of known bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.0.x+label%3ABug) is constantly updated on GitHub.
 
+Please note that the following modules are known not to be with 8.0 yet. We recommend disabling them while you test this beta:
+* Onboarding (welcome)
+* PrestaShop Metrics (ps_metrics)
+* PrestaShop Facebook (ps_facebook)
+* Prestashop Checkout (ps_checkout)
+* Google marketing (psxmarketingwithgoogle)
+* Marketplace in your Back office (ps_mbo)
+
 ## Acknowledgements
 
 A big thank you to the **114 people** who contributed **more than 1000 Pull Requests** included in this version: Adib Aroui, Alexandre Bru, Amaury Hanser, Amazzing, Amit Kumar Tiwari, Andromaque, Arnaud104, Ashley Butcher, Authie louis, Axome, Beattie282, Bertrand Merlier, Boubker Bribri, Brais Pato, Bruno Desprez, Camille V, Christophe Rouille, Clotaire Renaud, Constantin Boulanger, Damien Tupinier, Daniel Hlavacek, David Diverres, David Gonzalez, David Oury, Dominik Ulrich, e-gaulue, Fabien Papet, Franck Lefèvre, gennaris, Georges Cubas, Henri Davigne, Hervé Hennes, Hibatallah Aouadni, Hugues Gobet, Ibrahima Sow, idnovate, Igor Stępień, Jean-François Viguier, Jevgenij Visockij, Jonathan Danse, Jonathan Lelievre, Jory Hogeveen, Julie Varisellaz, Julius Žukauskas, Jérôme Wohlschlegel, Karlis Suvi, Khouloud Belguith, Krystian Podemski, Kyary, Kévin Gleizes, Lionel Massin, Lorenz Meyer, Louis Authie, Luc Vigato, Mahmoud Parvazi, Marco Ingraiti, Marco Salvatore, Marcos, Marek Jedrzejewski, Marion François, Marius Gudauskis, Marwa Chelly, Mathieu Ferment, Matthias Raigne, Matthieu Rolland, Michael Voříšek, Mickaël Fernandez, Moncef Essid, mrAKAR, Nesrine Abdmouleh, Nicolas Sorosac, NoZTurn, okom3pom, Olivier Le Corre, Pablo Borowicz, Pascal Cescon, Pedro Nucci, Peter Schaeffer, Philip Iezzi, Pierre Rambaud, Pierre-Yves Christmann, PrestaAlba, prestaforum, Prestaplugins, Prestaworks, Priyank Desai, Psyray, PululuK, Ricardo González Garza, Robin Fischer, Romain 'Maz' BILLOIR, Romain Couderc, Sam, Sauli Maijala, Sergio Quiñonez, Seth Vargo, Sharak, Simone, Simone Gennari, Sébastien Alfaiate, Tatu Wikman, Thomas Baccelli, Thomas Leguillant, Tom Combet, Tuni-Soft, Valentin Szczupak, venditdevs, Vincent Garcia, Viorel Preoteasa, Vladimir, Web Helpers Pau, Yneet, yo7hli, and Yohann Tilotti.

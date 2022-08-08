@@ -6,6 +6,8 @@
   name: Release Candidates
 - slug: releases
   name: PrestaShop releases
+- slug: major
+  name: PrestaShop major releases
 - slug: minor
   name: PrestaShop minor releases
 - slug: patch
@@ -70,8 +72,8 @@
   name: PrestaShop 1.7.8
 - slug: 8.x
   name: PrestaShop 8.x
-- slug: 8.0.0
-  name: PrestaShop 8.0.0
+- slug: 8.0
+  name: PrestaShop 8.0
 - slug: architecture
   name: Architecture
 - slug: autoupgrade

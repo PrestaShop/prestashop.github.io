@@ -96,6 +96,7 @@ You can download PrestaShop 8.0 beta here:
 * [The localization pack is not updated and cannot install modules in module manager with Spanish language #29017](https://github.com/PrestaShop/PrestaShop/issues/29017)
 * [A new product created in all shops is not displayed in the list #27599](https://github.com/PrestaShop/PrestaShop/issues/27599)
 * [Errors are displayed when upgrade from 1.7.8.6 to 8.0.0 #29248](https://github.com/PrestaShop/PrestaShop/issues/29248)
+* [Help documentation in the Back-Office doesn't work](https://github.com/PrestaShop/PrestaShop/issues/29169)
 
 The [complete list of known bugs](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.0.x+label%3ABug) is constantly updated on GitHub.
 

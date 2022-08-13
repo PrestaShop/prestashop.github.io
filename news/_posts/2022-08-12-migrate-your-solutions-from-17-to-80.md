@@ -17,7 +17,7 @@ In this article, I will focus on things that might affect your work. You will re
 
 It is worth noting that PrestaShop 8 is a new major version. Although it is an evolution rather than a revolution, you will find several software code changes that can significantly impact some of you.
 
-As always, we have done our best to make all important information about changes available in the [developer documentation](https://devdocs.prestashop.com). This article is an introduction and explanation to the content you will find there.
+As always, we have done our best to make all important information about changes available in the [developer documentation](https://devdocs.prestashop.com/8/). This article is an introduction and explanation to the content you will find there.
 
 ## PHP 8.0 and 8.1
 

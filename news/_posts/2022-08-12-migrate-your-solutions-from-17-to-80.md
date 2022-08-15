@@ -2,8 +2,8 @@
 layout: post
 title: "Migrate your solutions from PrestaShop 1.7 to 8.0"
 subtitle: "Summary of notable changes for developers"
-date: 2022-08-12
-authors: [kpodemski, PabloBorowicz]
+date: 2022-08-15
+authors: [kpodemski]
 icon: icon-road
 tags:
 - tutorial
@@ -11,7 +11,7 @@ tags:
 - 8.0
 ---
 
-PrestaShop 8 beta version was released this week. If you are a developer in our ecosystem, create modules or themes, and have clients working with PrestaShop, this is an excellent opportunity to spend some time with this version and test your solutions.
+PrestaShop 8 beta version was [released last week.](https://build.prestashop.com/news/prestashop-8-0-beta-release/) If you are a developer in our ecosystem, create modules or themes, and have clients working with PrestaShop, this is an excellent opportunity to spend some time with this version and test your solutions.
 
 In this article, I will focus on things that might affect your work. You will read here about changes that are not backward compatible, and could require you to make changes in the code of your solutions.
 

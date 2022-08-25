@@ -20,7 +20,7 @@ Version 1.7.1.0, [released two weeks ago](http://build.prestashop.com/news/prest
 
 We received a lot of feedback from the community as soon as PrestaShop 1.7.1.0 was released. The team has been working hard at fixing the most critical issues, and today we are happy to deliver the first "patch" release of PrestaShop 1.7.1.0 (as per [our SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)).
 
-[Download PrestaShop 1.7.1.1 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.1.1 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 <div class="alert alert-important" role="alert">

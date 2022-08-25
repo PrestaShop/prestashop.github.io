@@ -24,7 +24,7 @@ Some of the most notable fixes are:
 * The "Install_prestashop.html" file was not visible on some systems
 
 
-[Download PrestaShop 1.7.3.2 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.3.2 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/milestone/39?closed=1):

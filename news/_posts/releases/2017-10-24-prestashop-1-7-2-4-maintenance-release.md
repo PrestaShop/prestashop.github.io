@@ -25,7 +25,7 @@ The fixing changes can be found in PR [#8433](https://github.com/PrestaShop/Pres
 
 If you are currently using PrestaShop 1.7, <b>we strongly advise you to upgrade to v1.7.2.4 immediately</b>!
 
-[Download PrestaShop 1.7.2.4 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.2.4 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 Thank you [the Befox.fr team](http://befox.fr/) and @paeddl for reporting the issue and suggesting wordarounds, and to Core members @eternoendless and @kompilorb for tracing down the issue and fixing it.

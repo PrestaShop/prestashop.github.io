@@ -24,7 +24,7 @@ The most notable fixes for 1.7.4.2 are:
 * Upgrade 1.6 >> 1.7
 
 
-[Download PrestaShop now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 Here is the [complete list of changes for 1.7.4.2](https://github.com/PrestaShop/PrestaShop/milestone/46)

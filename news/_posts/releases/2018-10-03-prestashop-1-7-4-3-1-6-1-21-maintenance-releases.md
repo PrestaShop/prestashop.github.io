@@ -34,7 +34,7 @@ Some of the most notable fixes for 1.6.1.21 are:
 - Fixed a privilege-escalation issue in the Back Office where a logged user could potentially execute arbitrary code in the system.
 
 
-[Download PrestaShop now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 Here is the [complete list of changes for 1.7.4.3](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.4.3)

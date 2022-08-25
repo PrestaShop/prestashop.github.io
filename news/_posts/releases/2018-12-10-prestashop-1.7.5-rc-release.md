@@ -133,7 +133,7 @@ The developer documentation includes a [description of hooks](https://devdocs.pr
 
 You can download PrestaShop 1.7.5 RC here:  
 
-[Download PrestaShop 1.7.5.0 RC now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.5.0 RC now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 ## How to help finish the 1.7.5

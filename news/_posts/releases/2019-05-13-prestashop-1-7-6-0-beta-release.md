@@ -255,7 +255,7 @@ Issues
 
 You can download PrestaShop 1.7.6 beta here:  
 
-[Download PrestaShop 1.7.6 beta now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.6 beta now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 ## How to help finish the 1.7.6

@@ -50,7 +50,7 @@ crezzur, matthieu-rolland, boubkerbribri, atomiix, PierreRambaud, nesrineabdmoul
 
 Thank you!
 
-[Download PrestaShop 1.7.7.4 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.7.4 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 For any upgrades problems or PrestaShop’s bugs, please create a new issue [here](https://github.com/PrestaShop/PrestaShop/issues/new/choose).

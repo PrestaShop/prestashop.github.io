@@ -18,7 +18,7 @@ PrestaShop 1.6.1.9 is now available. This maintenance release [has seen 1 pull r
 
 Continuing on our promise to support 1.6 with patch releases until October 2018, we are happy to deliver this new version and to continue making sure that 1.6 remains stable and safe for PrestaShop merchants.
 
-[Download 1.6.1.9 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download 1.6.1.9 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 ### Important information about this version

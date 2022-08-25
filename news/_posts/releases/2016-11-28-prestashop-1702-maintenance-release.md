@@ -20,7 +20,7 @@ More than a year ago, we announced that we wanted to [release more regular and f
 
 We are therefore happy to deliver the second "patch" release of PrestaShop 1.7.0.0. Version 1.7 of PrestaShop continues to be explored by the community, and we keep working at fixing critical and major issues that were discovered since the release of v1.7.0.0, making regular fixes to the codebase. Prepare yourself to see more patch releases in the coming weeks while we review the feedback from the community!
 
-[Download 1.7.0.2 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download 1.7.0.2 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 <div class="alert alert-important" role="alert">

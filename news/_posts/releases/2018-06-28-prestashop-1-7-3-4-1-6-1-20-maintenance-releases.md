@@ -31,7 +31,7 @@ Some of the most notable fixes for 1.6.1.x are:
 * Improve compatibility with PHP 7.1 and 7.2
 
 
-[Download PrestaShop now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 Here is the [complete list of changes for 1.7.3.4](https://github.com/PrestaShop/PrestaShop/milestone/45?closed=1)

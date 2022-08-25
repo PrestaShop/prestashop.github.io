@@ -43,7 +43,7 @@ If you are looking for more details about all changes and new features expected 
 ## Download
 You can download PrestaShop 1.7.6 RC2 here: 
 
-[Download PrestaShop 1.7.6 RC2 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.6 RC2 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 ## How to help finish the 1.7.6

@@ -56,7 +56,7 @@ We are happy to deliver this sixth "patch" release of PrestaShop 1.7.0.0.
 
 The Core team keeps working at fixing the issues that are reported to us, making regular improvements to the codebase. Have you found an issue in PrestaShop 1.7? [Create a detailed Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1), so that we can reproduce it and fix it!
 
-[Download 1.7.0.6 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download 1.7.0.6 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 The [PrestaShop 1.7.0.6 changelog](https://www.prestashop.com/en/developers-versions/changelog/1.7.0.6-stable) is available.

@@ -20,7 +20,7 @@ Here it comes: the bug fixin', performance improvin', stabilizin, all singin' al
 
 Released on August 29th, the 1.7 RC0 release was dubbed a "pre-RC1" version, so you knew what was coming. Since then, MANY bugs were fixed and improvements added. We're sure you will like this release even more than RC0! We hope it will be the one you will start working with when building your modules and themes!
 
-[Test PrestaShop 1.7.0.0 RC1 now!](https://www.prestashop.com/en/developers-versions ){: .btn .btn-lg .btn-success}
+[Test PrestaShop 1.7.0.0 RC1 now!](https://www.prestashop.com/versions ){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 Found an issue? [Create a Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)!

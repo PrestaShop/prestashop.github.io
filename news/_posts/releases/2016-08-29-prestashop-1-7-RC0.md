@@ -26,7 +26,7 @@ And this goes double for the PrestaShop community, indeed: while we have publish
 
 We have therefore decided to release RC0. Now is the time to work with us towards a stable version. Thank you for contributing, with tests, feedback, patches and translations!
 
-[Test PrestaShop 1.7.0.0 RC0 now!](https://www.prestashop.com/en/developers-versions ){: .btn .btn-lg .btn-success}
+[Test PrestaShop 1.7.0.0 RC0 now!](https://www.prestashop.com/versions ){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 

@@ -93,7 +93,7 @@ At the end of August, PrestaShop 1.7.8 was fully available (= 100% translated an
 | Bosnian | Catalan | Czech | Chinese (CN) |
 | Chinese (TW) | Danish | English | Estonian | 
 | Finnish | French | Hungarian | Italian |
-| Lithuanian | French | Portuguese, BR | 
+| Lithuanian | Portuguese, BR | **Slovak** | 
 
 Thank you all for your contribution! :muscle: 
 

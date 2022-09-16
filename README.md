@@ -2,7 +2,7 @@
 
 Official blog for PrestaShop development straight from the product and core dev team.
 
-https://build.prestashop.com
+https://build.prestashop-project.org
 
 ## About
 

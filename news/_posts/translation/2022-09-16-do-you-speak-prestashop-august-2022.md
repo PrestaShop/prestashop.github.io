@@ -97,11 +97,6 @@ At the end of August, PrestaShop 1.7.8 was fully available (= 100% translated an
 
 Thank you all for your contribution! :muscle: 
 
-#### Almost there!
-
-Spanish (MX), Korean and Swedish are almost fully available. There is only 1% of strings to proofread! 
-There isn’t much work left, so if you wish to help proofreading what has been translated, please send an email to translation@prestashop.com or message me (Léa Delin) on [Slack](https://join.slack.com/t/prestashop/shared_invite/zt-1aknrecdu-2jS1sCOKDhOVk2UOhpzmfg). Your help is needed!
-
 ## Languages with the best evolution
 
 The following languages had the best progress in August thanks to the translation community:

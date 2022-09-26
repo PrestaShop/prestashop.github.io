@@ -2,7 +2,7 @@
 layout: post
 title:  "Hacktoberfest 2022"
 subtitle: "October is coming, so is Hacktoberfest!"
-date:  2022-09-25 20:00:00
+date:  2022-09-26 19:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2022/09/hacktoberfest2022.png
 icon: icon-github-alt2

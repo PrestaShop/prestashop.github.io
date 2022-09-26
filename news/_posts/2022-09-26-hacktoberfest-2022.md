@@ -18,7 +18,7 @@ If you are not sure how to get involved in open source projects and where to sta
 
 ## Getting involved and contributor prizes
 
-Your goal is to contribute with at least 4 quality pull requests to the open source project you like. Digitalocean will send every contributor achieving this goal prizes, including a t-shirt or a tree planted in your name and a set of unique stickers.
+Your goal is to contribute with at least 4 quality pull requests to the open source project you like. DigitalOcean will send every contributor achieving this goal prizes, including a t-shirt or a tree planted in your name and a set of unique stickers.
 
 Everyone is welcome, especially beginners. New for this year are [low or non code contributions](https://hacktoberfest.com/about/#low-or-non-code), so no matter what your experience, you can participate in Hacktoberfest. Just find the open source projects you want to be involved in and start contributing! It is a simple process:
 

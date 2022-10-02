@@ -23,7 +23,7 @@ This devblog also hosts How-Tos on certain features, before they find their way 
 
 ## Run locally
 
-build.prestashop.com is built and hosted by [GitHub Pages](https://github.com/github/pages-gem) which leverages [Jekyll](https://jekyllrb.com/) (a Ruby static site generator) abilities.
+build.prestashop-project.org is built and hosted by [GitHub Pages](https://github.com/github/pages-gem) which leverages [Jekyll](https://jekyllrb.com/) (a Ruby static site generator) abilities.
 
 We recommend using Ruby 3.1
 
@@ -44,13 +44,13 @@ Blog should be available at [http://127.0.0.1:4000/](http://127.0.0.1:4000/)
 
 ## Contribute
 
-How about writing a guest post here? Maybe you've been working with PrestaShop for a while and you want to write about how you use it? Or you feel a cool feature could use a highlight with sample code? Go ahead, [suggest a new article](http://build.prestashop.com/howtos/misc/how-to-write-on-this-blog/) — that might even inspire other people in the community to write too!
+How about writing a guest post here? Maybe you've been working with PrestaShop for a while and you want to write about how you use it? Or you feel a cool feature could use a highlight with sample code? Go ahead, [suggest a new article](https://build.prestashop-project.org/howtos/misc/how-to-write-on-this-blog/) — that might even inspire other people in the community to write too!
 
 Before you start writing, please send us a short proposal by opening a GitHub issue. Once we have agreed with you on the topic, you can submit your article [using a simple pull request](https://github.com/PrestaShop/prestashop.github.io).
 
 Also, if we merge one of your cool pull requests on [the PrestaShop project](http://github.com/PrestaShop/PrestaShop), we may invite you to tell us more about it here.
 
-All content on the Build.PrestaShop.com site is licensed under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/) -- meaning that it is in the Public Domain. Use it however you want!
+All content on the build.prestashop-project.org site is licensed under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/) -- meaning that it is in the Public Domain. Use it however you want!
 
 <img src="/assets/images/2015/06/cc-zero.png" style="margin-right:auto;margin-left:auto;display:block;" />
 

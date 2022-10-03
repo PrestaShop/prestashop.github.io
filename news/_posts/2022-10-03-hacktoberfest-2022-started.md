@@ -19,6 +19,11 @@ In a few words, participation is very simple: people are encouraged to create at
 If you are wondering how to get started, we are listing in this blog post issues that could be a good starting point for new contributors. Also added to the list are issues needing to be fixed, so you can easily contribute.
 
 List of issues for new contributors:
+
+TODO
+
+List of issues needing to be fixed:
+
 TODO
 
 ## Contribute to the PrestaShop project

@@ -43,7 +43,7 @@ More information about why it is important to update:
 Because of mail sending issues, two methods have been removed from the `Mail::send` method. Functions `htmlentitiesDecodeUTF8` and `stripslashes` are no longer executed before sending the mail.
 
 
-[Download PrestaShop 1.7.6.8 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.6.8 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 Since version 1.7.6.8 is a "patch" update to version 1.7.6.7, upgrading from any 1.7.6 version will be easy: features will work better, and modules & themes which worked fine on 1.7.6.x will work the same with 1.7.6.8. Upgrades from a standard 1.7.x version should work just as well.

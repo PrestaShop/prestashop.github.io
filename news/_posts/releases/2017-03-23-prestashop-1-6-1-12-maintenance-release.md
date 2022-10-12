@@ -21,7 +21,7 @@ Continuing on our promise to support 1.6 with patch releases, we are happy to de
 This version is also important because it fixes a security issue in PrestaShop allowing a person with access to the back office to upload modules. This issue mainly concerns Addons contributors with back-office demos. Thank you Tomer Grassiany for your responsible disclosure of the issue, and your help with its resolution!<br/>
 This is the same issue that pushed us to [release 1.7.0.6](http://build.prestashop.com/news/prestashop-1-7-0-6-maintenance-security-release/) swiftly. Version 1.6.1.12 took more time to release because this version has several more changes, and internal tests took more time. This version was supposed to be released in the last days of February, and because of those QA needs, it is now the March monthly update to PS 1.6. Sorry for the delay!
 
-[Download 1.6.1.12 now!](https://www.prestashop.com/en/developers-versions#previous-version){: .btn .btn-lg .btn-success}
+[Download 1.6.1.12 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 

@@ -297,13 +297,14 @@ GEM
     thread_safe (0.3.6)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
-    tzinfo (1.2.9)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8)
     unicode-display_width (1.8.0)
     verbal_expressions (0.1.5)
+    webrick (1.7.0)
     yell (2.2.2)
     zeitwerk (2.5.4)
 
@@ -316,6 +317,7 @@ DEPENDENCIES
   jekyll-algolia (~> 1.0)
   jekyll-redirect-from
   kramdown (>= 2.3.1)
+  webrick (~> 1.7)
 
 BUNDLED WITH
    2.3.7

@@ -135,7 +135,7 @@ If you are looking for more details about all changes and new features expected 
 
 You can download PrestaShop 1.7.7.0 beta 2 here:  
 
-[Download PrestaShop 1.7.7.0 beta 2 now!](https://www.prestashop.com/en/file/prestashop_1-7-7-0-beta-2-zip/download?token=UbT5nmNu){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.7.0 beta 2 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 

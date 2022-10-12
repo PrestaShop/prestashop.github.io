@@ -60,6 +60,6 @@ Ali Shareei, Amit Kumar Tiwari, Daniel Martin, Franck Lefèvre, Jonathan Lelievr
 
 Thank you!
 
-[Download PrestaShop 1.7.8.6 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}{: .text-center}
+[Download PrestaShop 1.7.8.6 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}{: .text-center}
 
 Since version 1.7.8.6 is a “patch” update to version 1.7.8.5, upgrading from any 1.7.8 version will be easy: features will work better, and modules & themes which worked fine on 1.7.8.x will work just as well with 1.7.8.5. Upgrades from a standard 1.7.x version should work just as well.

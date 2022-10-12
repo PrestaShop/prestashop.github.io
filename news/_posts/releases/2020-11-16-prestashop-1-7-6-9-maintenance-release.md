@@ -34,7 +34,7 @@ More information about why it is important to update:
 
 
 
-[Download PrestaShop 1.7.6.9 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.6.9 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 

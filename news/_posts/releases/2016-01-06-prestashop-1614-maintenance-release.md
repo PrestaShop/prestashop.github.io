@@ -71,6 +71,6 @@ This release had 15 contributors, both from PrestaShop and from the Community at
 
 Let's go, [upgrade your store(s)](http://doc.prestashop.com/display/PS16/Updating+PrestaShop)! Upgrading from 1.6.1.0-1.6.1.3 is completely safe, upgrades from a standard 1.6.0.x version should work just as well, and those upgrading from version 1.5, 1.4 or even 1.3 should take their time and pay attention to their modules, their theme and their custom modifications!
 
-[Download 1.6.1.4 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download 1.6.1.4 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 

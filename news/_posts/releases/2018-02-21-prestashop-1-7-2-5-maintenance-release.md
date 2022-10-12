@@ -40,7 +40,7 @@ The fix for 1.6.x can be found in PR [#8785](https://github.com/PrestaShop/Prest
 
 If you are currently using PrestaShop 1.7, <b>we strongly advise you to upgrade to v1.7.2.5 immediately</b>!
 
-[Download PrestaShop 1.7.2.5 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.2.5 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 Thanks again to Robin Peraglie from [RIPS Technologies](https://www.ripstech.com/), and to Core members @alegout and @tomlev for fixing the issues.

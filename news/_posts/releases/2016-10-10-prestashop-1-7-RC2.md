@@ -18,7 +18,7 @@ Another step in the right direction towards a stable v1.7, this RC2 fixes a lot 
 
 Again in this RC version, a good chunk of issues have been fixed and improved upon. It's getting better every day, thanks to our community! If you've been waiting to create a 1.7 theme or to upgrade your 1.6 modules, this is the right time!
 
-[Test PrestaShop 1.7.0.0 RC2 now!](https://www.prestashop.com/en/developers-versions ){: .btn .btn-lg .btn-success}
+[Test PrestaShop 1.7.0.0 RC2 now!](https://www.prestashop.com/versions ){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 Found an issue? [Create a Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)!

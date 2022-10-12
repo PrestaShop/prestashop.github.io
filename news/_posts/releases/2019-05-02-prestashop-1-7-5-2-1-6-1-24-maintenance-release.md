@@ -47,7 +47,7 @@ Changes for 1.6.1.24:
     - #10859: Fixed keywords disappear from search index
 
 
-[Download PrestaShop now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 Contributors to this patch versions, from both the Core team and the community at large: Casper Olsen, Geoffray Warnants, Mathieu Ferment, Mickaël Andrieu, Nesrine Abdmouleh, Pablo Borowicz, Pierre Rambaud and Thomas N. Thank you!

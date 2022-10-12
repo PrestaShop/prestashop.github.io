@@ -18,7 +18,7 @@ PrestaShop 1.7.0.5 is now available. This maintenance release closes [29 issues]
 
 We are happy to deliver the fifth "patch" release of PrestaShop 1.7.0.0. Version 1.7 of PrestaShop keeps being used by new online stores, and we keep working at fixing the issues that are reported to, making regular improvements to the codebase. Have you found an issue in PrestaShop 1.7? [Create a detailed Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1), so that we can reproduce it and fix it!
 
-[Download 1.7.0.5 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download 1.7.0.5 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 <div class="alert alert-important" role="alert">

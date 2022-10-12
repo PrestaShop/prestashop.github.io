@@ -56,7 +56,7 @@ Contributors to this patch version, from both the Core team and the community at
 Thank you!
 
 
-[Download PrestaShop 1.7.6.2 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.6.2 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 

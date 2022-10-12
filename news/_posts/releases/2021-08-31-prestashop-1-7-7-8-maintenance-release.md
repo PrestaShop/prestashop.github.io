@@ -34,7 +34,7 @@ Contributors to this patch version, from both the Core team and the community at
 
 [@sowbiba](https://github.com/sowbiba), [@PierreRambaud](https://github.com/PierreRambaud), [@kpodemski](https://github.com/kpodemski), [@Progi1984](https://github.com/Progi1984), [@eternoendless](https://github.com/eternoendless) and [@matks](https://github.com/matks)
 
-[Download PrestaShop 1.7.7.8 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
+[Download PrestaShop 1.7.7.8 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 For any upgrades problems or PrestaShop’s bugs, please create a new issue [here](https://github.com/PrestaShop/PrestaShop/issues/new/choose).

@@ -18,7 +18,7 @@ The first Beta version for PrestaShop 1.7.1.0 is now ready for you to test!
 
 We are happy to announce that we are close to releasing 1.7.1.0. This minor version (in the SemVer meaning of the term) brings several new features and improvements to the 1.7 codebase, and we can’t wait to receive your feedback!
 
-[Test PrestaShop 1.7.1.0 Beta 1 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
+[Test PrestaShop 1.7.1.0 Beta 1 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 This Beta release is a great opportunity for you to start working with it before we release a stable version!<br/>
@@ -64,7 +64,7 @@ Have you found a bug? A curious behavior? An unexpected reaction? Please let us 
 
 So have at it! Download it, test it out with your theme/modules, and let us know what you like about it :)
 
-[Test PrestaShop 1.7.1.0 Beta 1 now!](https://www.prestashop.com/en/developers-versions){: .btn .btn-lg .btn-success}
+[Test PrestaShop 1.7.1.0 Beta 1 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 We’ll closely monitor your feedback, and are eager to hear from you!

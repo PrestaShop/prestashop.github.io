@@ -18,7 +18,7 @@ PrestaShop 1.6.1.18 is now available. This maintenance release has seen 25 pull 
 
 Continuing on our promise to support 1.6 with patch releases until October 2018, we are happy to deliver this new maintenance version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
 
-[Download 1.6.1.18 now!](https://www.prestashop.com/en/previous-versions){: .btn .btn-lg .btn-success}
+[Download 1.6.1.18 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
 {: .text-center}
 
 As the version number indicates (as per [our SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme)), this is the 18th patch release for PrestaShop 1.6.1.0.

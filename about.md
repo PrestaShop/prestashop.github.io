@@ -23,14 +23,14 @@ This devblog also hosts How-Tos on certain features, before they find their way 
 
 ## Contribute
 
-How about writing a guest post here? Maybe you've been working with PrestaShop for a while and you want to write about how you use it? Or you feel a cool feature could use a highlight with sample code? Go ahead, [suggest a new article](http://build.prestashop.com/howtos/misc/how-to-write-on-this-blog/) — that might even inspire other people in the community to write too!
+How about writing a guest post here? Maybe you've been working with PrestaShop for a while and you want to write about how you use it? Or you feel a cool feature could use a highlight with sample code? Go ahead, [suggest a new article](https://build.prestashop-project.org/howtos/misc/how-to-write-on-this-blog/) — that might even inspire other people in the community to write too!
 
 Before you start writing, please send us a short proposal at [{{ site.email }}](mailto:{{ site.email }}). Once we have agreed with you on the topic, you can submit your article [using a simple pull request](https://github.com/PrestaShop/prestashop.github.io).
 
-Also, if we merge one of your cool pull requests on [the PrestaShop project](http://gihub.com/PrestaShop/PrestaShop), we may invite you to tell us more about it here.
+Also, if we merge one of your cool pull requests on [the PrestaShop project](http://github.com/PrestaShop/PrestaShop), we may invite you to tell us more about it here.
 
 <div class="alert alert-info" role="alert">
-Unless specified otherwise on the article, all content on the Build.PrestaShop.com site is licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 license</a> -- meaning that it is in the Public Domain. Use it however you want!
+Unless specified otherwise on the article, all content on the build.prestashop-project.org site is licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 license</a> -- meaning that it is in the Public Domain. Use it however you want!
 
 <img src="/assets/images/2015/06/cc-zero.png" style="margin-right:auto;margin-left:auto;display:block;" />
 </div>

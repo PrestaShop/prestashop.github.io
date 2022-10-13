@@ -59,11 +59,11 @@ You can download PrestaShop 8.0 release candidate here:
 
 ## Acknowledgments
 
-A big thank you to the X people who contributed more than X Pull Requests included in this release candidate:
+A big thank you to the 23 people who contributed to this release candidate:
 
-ADD PARTICIPANTS HERE
+Boubker Bribri, Chedly Farhani, Fabien Papet, Franck Lefèvre, Ines Sallemi, Jonathan Danse, Jonathan Lelievre, Julius Žukauskas, Khouloud Belguith, Krystian Podemski, leemyongpakvn, Mathieu Ferment, Matthieu Rolland, Nesrine Abdmouleh, Nicolas Lœuillet, Nicolas Sorosac, okom3pom, Pierre-Yves Christmann, Salim Benouamer, Thomas Baccelli, Thomas Nabord, Valentin Szczupak, Yani Makouf
 
-…and a warm welcome to the X of them who contributed for the first time!
+…and a warm welcome to the 4 of them who contributed for the first time!
 
 We would also like to thank the people who contributed aside from code:
 * Product management: Eshane Rawat, Fabien Vallon and Mateus Shirlaw.

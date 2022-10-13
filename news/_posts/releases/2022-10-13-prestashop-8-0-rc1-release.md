@@ -4,7 +4,7 @@ title:  "PrestaShop 8.0 Release Candidate Is Ready To Be Tested!"
 subtitle: "After the Beta, the first release candidate for PrestaShop 8.0 is now ready for you to test!"
 date: 2022-10-13 14:00
 authors: [ PrestaShop ]
-image: /assets/images/2022/10/banner-8-0-rc1.png
+image: /assets/images/2022/10/bannerPS8_RC1.png
 icon: icon-leaf
 tags:
 - version
@@ -15,6 +15,8 @@ tags:
 ---
 
 The maintainers team is pleased to announce the first release candidate of PrestaShop 8.0.
+
+![PrestaShop 8.0 Release Candidate is available!](/assets/images/2022/10/bannerPS8_RC1.png)
 
 This release candidate fixes **39 bugs, including 20 major ones** that were detected during the public beta period.
 

@@ -46,7 +46,7 @@ And if everything is working well, feel free to comment on this article to tell 
 
 Check out the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.0-rc.1) to see all the changes in detail.
 
-All the major bugs have been fixed, and [the remaining minor ones](https://github.com/PrestaShop/PrestaShop/issues?q=+is%3Aissue+is%3Aopen+milestone%3A8.0.0+) will be fixed in the upcoming 8.0.1 patch release.
+All the major bugs have been fixed, and [the remaining minor ones](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.0.x+label%3ABug+label%3ARegression) will be fixed in the upcoming 8.0.1 patch release.
 
 If you are looking for more details about all changes and new features expected in 8.0, the [8.0 beta version release note](https://build.prestashop-project.org/news/prestashop-8-0-beta-release/) is the perfect article for you to read!
 

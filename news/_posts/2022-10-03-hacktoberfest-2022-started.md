@@ -2,7 +2,7 @@
 layout: post
 title:  "Hacktoberfest and PrestaShop: how you can participate in this 2022 edition"
 subtitle: "October is here: participate in Hacktoberfest, a celebration of open source software!"
-date:  2022-10-03
+date:  2022-10-12
 authors: [ PrestaShop ]
 image: /assets/images/2022/09/hacktoberfest2022.png
 icon: icon-github-alt2
@@ -16,15 +16,22 @@ In a few words, participation is very simple: people are encouraged to create at
 ![Hacktoberfest 2022](/assets/images/2022/09/hacktoberfest2022.png)
 ## How to get started
 
-If you are wondering how to get started, we are listing in this blog post issues that could be a good starting point for new contributors. Also added to the list are issues needing to be fixed, so you can easily contribute.
+If you are wondering how to get started, we are listing in this blog post issues that could be a good starting point for new contributors.
 
-List of issues for new contributors:
+List of example issues for new contributors:
 
-TODO
 
-List of issues needing to be fixed:
+- https://github.com/PrestaShop/PrestaShop/issues/25827
+- https://github.com/PrestaShop/PrestaShop/issues/25796
+- https://github.com/PrestaShop/PrestaShop/issues/25222
+- https://github.com/PrestaShop/PrestaShop/issues/20962
+- https://github.com/PrestaShop/PrestaShop/issues/20838
+- https://github.com/PrestaShop/PrestaShop/issues/20633
+- https://github.com/PrestaShop/PrestaShop/issues/20354
+- https://github.com/PrestaShop/PrestaShop/issues/19576
+- https://github.com/PrestaShop/PrestaShop/issues/10236
 
-TODO
+You can find more of these by [searching by the "Good first issue" label](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+-label%3A%22PR+Available%22+label%3AReady+label%3A%22Good+first+issue%22). If you want to tackle more advanced subjects that many people are interested in, make sure to see the [list of "Topwatchers"](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+-label%3A%22PR+Available%22+label%3AReady+label%3ATopwatchers).
 
 ## Contribute to the PrestaShop project
 

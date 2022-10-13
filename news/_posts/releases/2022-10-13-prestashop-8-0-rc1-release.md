@@ -20,7 +20,7 @@ The maintainers team is pleased to announce the first release candidate of Prest
 
 This release candidate fixes **39 bugs, including 20 major ones** that were detected during the public beta period.
 
-This is the last step before releasing the final 8.0 version. This release candidate is intended to allow the community to verify that all regressions found during the beta have been fixed and that the software is ready for production. If no major or critical regression is reported before **October 21st**, then the final version of 8.0 will be made available.
+This is the last step before releasing the final 8.0 version. This release candidate is intended to allow the community to verify that all regressions found during the beta have been fixed and that the software is ready for production. If no major or critical regression is reported before **October 20th**, then the final version of 8.0 will be made available.
 Remember, this release candidate might still include issues. Do not use it in your production shop!
 
 Please note that it is not currently possible to upgrade from the beta to the release candidate, nor upgrade from this release candidate to the final release using the upgrade module.
@@ -37,7 +37,7 @@ Here are some examples of how you can help:
 
 *Your feedback is essential.* The more issues you report right now, the fewer bugs there will be on the final release, which means fewer patch versions and fewer problems on your (or your customer’s) online store.
 
-*Please submit all your feedback by October 21st, 2022.* If no new critical or major issue remains to be fixed by then, the final release will be made available. This is the final chance to test this new version before the final release is out!
+*Please submit all your feedback by October 20th, 2022.* If no new critical or major issue remains to be fixed by then, the final release will be made available. This is the final chance to test this new version before the final release is out!
 
 If you have any questions about the version and its features, feel free to share them on [the PrestaShop project’s Slack](https://www.prestashop-project.org/slack/).
 
@@ -45,8 +45,6 @@ And if everything is working well, feel free to comment on this article to tell 
 
 
 ## Notable changes since the beta release
-
-A lot of work has been put into fixing bugs in ADD DETAILS ABOUT BUGS FIXED.
 
 Check out the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.0-rc.1) to see all the changes in detail.
 

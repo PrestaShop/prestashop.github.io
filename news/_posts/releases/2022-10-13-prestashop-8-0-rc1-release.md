@@ -18,8 +18,6 @@ The maintainers team is pleased to announce the first release candidate of Prest
 
 ![PrestaShop 8.0 Release Candidate is available!](/assets/images/2022/10/bannerPS8_RC1.png)
 
-This release candidate fixes **39 bugs, including 20 major ones** that were detected during the public beta period.
-
 This is the last step before releasing the final 8.0 version. This release candidate is intended to allow the community to verify that all regressions found during the beta have been fixed and that the software is ready for production. If no major or critical regression is reported before **October 20th**, then the final version of 8.0 will be made available.
 Remember, this release candidate might still include issues. Do not use it in your production shop!
 

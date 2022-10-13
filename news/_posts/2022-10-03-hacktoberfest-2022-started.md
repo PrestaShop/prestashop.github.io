@@ -23,7 +23,7 @@ List of example issues for new contributors:
 
 - [Change all self:: by static:: in internal static method calls](https://github.com/PrestaShop/PrestaShop/issues/25827)
 - [Mail - order summary](https://github.com/PrestaShop/PrestaShop/issues/25796)
-- [product settings "show by position in category" does not work on "brands" page](https://github.com/PrestaShop/PrestaShop/issues/25222)
+- [Product settings "show by position in category" does not work on "brands" page](https://github.com/PrestaShop/PrestaShop/issues/25222)
 - [By default, turn off the 'Erase previous images' button when regenerating thumbnails](https://github.com/PrestaShop/PrestaShop/issues/20962)
 - [Be able to set a value on submit buttons](https://github.com/PrestaShop/PrestaShop/issues/20838)
 - [Currency sign too close from price on invoice](https://github.com/PrestaShop/PrestaShop/issues/20633)

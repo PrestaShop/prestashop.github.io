@@ -65,6 +65,8 @@ Boubker Bribri, Chedly Farhani, Fabien Papet, Franck Lefèvre, Ines Sallemi, Jon
 
 …and a warm welcome to the 4 of them who contributed for the first time!
 
+Chedly Farhani, Ines Sallemi, leemyongpakvn, Yani Makouf
+
 We would also like to thank the people who contributed aside from code:
 * Product management: Eshane Rawat, Fabien Vallon and Mateus Shirlaw.
 * Quality assurance: Aurélien Rita, Faten Mhiri, Florine Hea, Hana Rebat, Hibatallah Aouadni, Ines Sallemi, Khouloud Belguith, Marwa Chelly, Paul-Noël Cholot, Robin Fischer, Sarah Cavrot, Sarah Dib and Serhii Zavadskyi.

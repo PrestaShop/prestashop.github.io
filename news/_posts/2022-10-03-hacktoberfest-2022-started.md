@@ -21,15 +21,14 @@ If you are wondering how to get started, we are listing in this blog post issues
 List of example issues for new contributors:
 
 
-- https://github.com/PrestaShop/PrestaShop/issues/25827
-- https://github.com/PrestaShop/PrestaShop/issues/25796
-- https://github.com/PrestaShop/PrestaShop/issues/25222
-- https://github.com/PrestaShop/PrestaShop/issues/20962
-- https://github.com/PrestaShop/PrestaShop/issues/20838
-- https://github.com/PrestaShop/PrestaShop/issues/20633
-- https://github.com/PrestaShop/PrestaShop/issues/20354
-- https://github.com/PrestaShop/PrestaShop/issues/19576
-- https://github.com/PrestaShop/PrestaShop/issues/10236
+- [Change all self:: by static:: in internal static method calls](https://github.com/PrestaShop/PrestaShop/issues/25827)
+- [Mail - order summary](https://github.com/PrestaShop/PrestaShop/issues/25796)
+- [Product settings "show by position in category" does not work on "brands" page](https://github.com/PrestaShop/PrestaShop/issues/25222)
+- [By default, turn off the 'Erase previous images' button when regenerating thumbnails](https://github.com/PrestaShop/PrestaShop/issues/20962)
+- [Be able to set a value on submit buttons](https://github.com/PrestaShop/PrestaShop/issues/20838)
+- [Currency sign too close from price on invoice](https://github.com/PrestaShop/PrestaShop/issues/20633)
+- [Being able to include SVG File from outside the template for themes](https://github.com/PrestaShop/PrestaShop/issues/20354)
+- [Bad redirection after deleting an element in monitoring page](https://github.com/PrestaShop/PrestaShop/issues/19576)
 
 You can find more of these by [searching by the "Good first issue" label](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+-label%3A%22PR+Available%22+label%3AReady+label%3A%22Good+first+issue%22). If you want to tackle more advanced subjects that many people are interested in, make sure to see the [list of "Topwatchers"](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+is%3Aopen+-label%3A%22PR+Available%22+label%3AReady+label%3ATopwatchers).
 

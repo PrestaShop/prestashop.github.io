@@ -44,6 +44,23 @@ And if everything is working well, feel free to comment on this article to tell 
 
 ## Notable changes since the beta release
 
+- [Improve extendability of the new product page form](https://github.com/PrestaShop/PrestaShop/pull/28752)
+- [Fix prefilling non-default lang product name](https://github.com/PrestaShop/PrestaShop/pull/29503)
+- [Fix ModuleManager exception when ps_distributionapiclient is not installed](https://github.com/PrestaShop/PrestaShop/pull/29660)
+- [Fix decorating controllers from module](https://github.com/PrestaShop/PrestaShop/pull/29322)
+- [Fix product import for Product page v2](https://github.com/PrestaShop/PrestaShop/pull/28923)
+- [Fix broken icon-font on RTL after upgrade](https://github.com/PrestaShop/PrestaShop/pull/29534)
+- [Combination fields list updated for partial update in Product::updateAttribute](https://github.com/PrestaShop/PrestaShop/pull/29523)
+- [Fix product state multishop](https://github.com/PrestaShop/PrestaShop/pull/29195)
+- [Fix delivery time for multishop](https://github.com/PrestaShop/PrestaShop/pull/29417)
+- [Fix customer form validation from module](https://github.com/PrestaShop/PrestaShop/pull/29416)
+- [Remove module_card.js from the product page v1](https://github.com/PrestaShop/PrestaShop/pull/29307)
+- [Fix FO address forms reload when switching address's country](https://github.com/PrestaShop/PrestaShop/pull/29122)
+- [Fix doctrine cache configuration](https://github.com/PrestaShop/PrestaShop/pull/29484)
+- [Do not add theme translation resources if theme is null](https://github.com/PrestaShop/PrestaShop/pull/29502)
+- [Restore install sprintf JS lib integrity](https://github.com/PrestaShop/PrestaShop/pull/29670)
+- [Update class name used by product_option_values ressource](https://github.com/PrestaShop/PrestaShop/pull/29320)
+
 Check out the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.0-rc.1) to see all the changes in detail.
 
 All the major bugs have been fixed, and [the remaining minor ones](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.0.x+label%3ABug+label%3ARegression) will be fixed in the upcoming 8.0.1 patch release.

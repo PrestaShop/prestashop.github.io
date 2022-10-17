@@ -33,9 +33,9 @@ Here are some examples of how you can help:
 * If you notice any problem and you think it is caused by the new version, please [report it on GitHub](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
 * Don’t hesitate to [contribute to fixing bugs](https://devdocs.prestashop-project.org/8/contribute/contribute-pull-requests/) if you can!
 
-*Your feedback is essential.* The more issues you report right now, the fewer bugs there will be on the final release, which means fewer patch versions and fewer problems on your (or your customer’s) online store.
+**Your feedback is essential.** The more issues you report right now, the fewer bugs there will be on the final release, which means fewer patch versions and fewer problems on your (or your customer’s) online store.
 
-*Please submit all your feedback by October 20th, 2022.* If no new critical or major issue remains to be fixed by then, the final release will be made available. This is the final chance to test this new version before the final release is out!
+**Please submit all your feedback by October 20th, 2022.** If no new critical or major issue remains to be fixed by then, the final release will be made available. This is the final chance to test this new version before the final release is out!
 
 If you have any questions about the version and its features, feel free to share them on [the PrestaShop project’s Slack](https://www.prestashop-project.org/slack/).
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – September 2022 edition"
 subtitle: "Where you'll learn that Afrikaans is open to translation"
-date: 2022-10-19 10:00:00
+date: 2022-10-19
 authors: [LéaDelin]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

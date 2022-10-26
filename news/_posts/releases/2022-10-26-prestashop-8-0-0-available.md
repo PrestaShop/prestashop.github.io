@@ -43,9 +43,9 @@ You can find the list of known issues here: [List of known issues on PrestaShop 
 
 ## Acknowledgments
 
-A big thank you to the XX people who contributed to XX Pull Requests included in this version:
+A big thank you to the 120 people who contributed to 1176 Pull Requests included in this version:
 
-LIST HERE
+Adib Aroui, Alexandre Bru, Amaury Hanser, Amazzing, Amit Kumar Tiwari, Andromaque, Arnaud104, Ashley Butcher, Axome, Beattie282, Bertrand Merlier, Boubker Bribri, Brais Pato, Bruno Desprez, Camille V, Chedly Farhani, Christophe Rouille, Clotaire Renaud, Constantin Boulanger, Damien Tupinier, Daniel Hlavacek, David Diverres, David Gonzalez, David Oury, Dominik Ulrich, e-gaulue, Fabien Papet, Franck Lefèvre, gennaris, Georges Cubas, Henri Davigne, Hervé Hennes, Hibatallah Aouadni, Hugues Gobet, Ibrahima Sow, idnovate, Igor Stępień, Ines Sallemi, Jean-François Viguier, Jérôme Wohlschlegel, Jevgenij Visockij, Jonathan Danse, Jonathan Lelievre, Jory Hogeveen, Julie Varisellaz, Julius Žukauskas, Karlis Suvi, Kévin Gleizes, Khouloud Belguith, Krystian Podemski, Kyary, leemyongpakvn, Lionel Massin, Lorenz Meyer, Louis Authie, Luc Vigato, Mahmoud Parvazi, Marco Ingraiti, Marco Salvatore, Marcos, Marek Jedrzejewski, Marion François, Marius Gudauskis, Marwa Chelly, Mathieu Ferment, Matthias Raigne, Matthieu Rolland, Michael Voříšek, Mickaël Fernandez, Moncef Essid, mrAKAR, Nesrine Abdmouleh, Nicolas Lœuillet, Nicolas Sorosac, NoZTurn, okom3pom, Olivier Le Corre, Pablo Borowicz, Pascal Cescon, Pedro Nucci, Peter Schaeffer, Philip Iezzi, Pierre Rambaud, Pierre-Yves Christmann, PrestaAlba, prestaforum, Prestaplugins, Prestaworks, Priyank Desai, Psyray, PululuK, Ricardo González Garza, Robin Fischer, Romain ‘Maz’ BILLOIR, Romain Couderc, Salim Benouamer, Sam, Sauli Maijala, Sébastien Alfaiate, Sergio Quiñonez, Seth Vargo, Sharak, Simone, Simone Gennari, Tatu Wikman, Thomas Baccelli, Thomas Leguillant, Thomas Nabord, Tom Combet, Tuni-Soft, Valentin Szczupak, venditdevs, Vincent Garcia, Viorel Preoteasa, Vladimir, Web Helpers Pau, Yani Makouf, Yneet, yo7hli, and Yohann Tilotti.
 
 PrestaShop is above all a community project: the vast majority of contributors are not directly affiliated with the PrestaShop SA.
 

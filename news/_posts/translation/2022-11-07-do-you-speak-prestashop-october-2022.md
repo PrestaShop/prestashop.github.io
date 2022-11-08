@@ -73,7 +73,7 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
 | 2. | David Gonzalez (davidglezz) | Spanish | 2,206
 | 3. | Stamatis (breezer) | Greek | 1,748
 | 4. | Rostyslav (config123) | Ukranian | 837
-| 5. | ‫דניאל שפירא‬‎ (danielshapiro9) | Hebrew | 797
+| 5. | ‫‬danielshapiro9 | Hebrew | 797
 | 6. | Daniel Hlavacek (Hlavtox)| Czech | 713
 | 7. | Rodrigo Laurindo (rblaurin) | Portuguese, Brazilian | 643
 | 8. | Enzo Ferrara (ferribbotte) | Italian | 560
@@ -113,6 +113,7 @@ The following languages had the best progress in October thanks to the translati
 Congratulations! 
 
 ![Best translation progress in October 2022](/assets/images/2022/10/build-crowdin-progress-october22.png)
+<img width="897" alt="build-crowdin-progress-october22" src="https://user-images.githubusercontent.com/113511191/200544905-2bcc1e63-b830-457b-a8f6-34dec798edc4.png">
 
 A huge thank you to all the contributors!
  

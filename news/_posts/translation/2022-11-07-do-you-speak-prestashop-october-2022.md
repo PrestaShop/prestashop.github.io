@@ -22,14 +22,14 @@ Of course, other languages are still available for translation, and you are more
 
 ### Proofreaders needed
 
-We are looking for proofreaders for the Spanish (Argentina), Galician and Flemish projects! So if you want to help us, reach me on either Crowdin or Slack, I’d be more than happy to guide you 🙌
+Your project needs you! Are you able to proofread for the Spanish (Argentina), Galician or Flemish projects? If so your help is needed: the projects are currently almost fully translated, but not approved. reach me on either Crowdin or Slack, I’d be more than happy to guide you 🙌
 
 If you wish to become a proofreader for any other language, let me know! We are always actively looking for proofreaders 👏
 
 ### A little teaser 
 
 We are working on a Translation Guide for the Crowdin translation project members, aka you, contributors! This should make translation easier for everyone, and includes useful resources and tips.
-If there is any topic you’d like to be explained in this guide, let us know on the Slack channel. ✍️
+If there is any topic you’d like to be explained in this guide, let us know on the [Slack channel](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg) ✍️
 
 ### 💕 Many thanks to newcomers
 

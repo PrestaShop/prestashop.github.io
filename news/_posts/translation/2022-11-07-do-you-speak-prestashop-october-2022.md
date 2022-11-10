@@ -18,18 +18,20 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 ### ➕ PrestaShop 8 is now available to the world 🎉
 
 PrestaShop 8 is here! While it’s been translated into multiple languages already (thank you all for your contributions!), new translation strings are added regularly, so keep an eye out. 
+
 Of course, other languages are still available for translation, and you are more than welcome to help contribute to the different language projects!
 
 ### Proofreaders needed
 
 Your project needs you! Are you able to proofread for the Spanish (Argentina), Galician or Flemish projects? If so your help is needed: the projects are currently almost fully translated, but not approved. Reach me on either Crowdin or Slack, I’d be more than happy to guide you. 🙌
 
-If you wish to become a proofreader for any other language, let me know! We are always actively looking for proofreaders 👏
+Intersted in proofreading for any other language? Let me know! Your help is precious, and proofreaders are always welcome. 👏
 
 ### A little teaser 
 
-We are working on a Translation Guide for the Crowdin translation project members, aka you, contributors! This should make translation easier for everyone, and includes useful resources and tips.
-If there is any topic you’d like to be explained in this guide, let us know on the [Slack channel](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg) ✍️
+A Translation Guide for the Crowdin translation project members, (aka you, contributors!) is on his way. This should make translation easier for everyone, and includes useful resources and tips!
+
+If there is any topic you’d like to be explained in this guide, make your suggestion in the [Slack translation channel](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg). ✍️
 
 ### 💕 Many thanks to newcomers
 

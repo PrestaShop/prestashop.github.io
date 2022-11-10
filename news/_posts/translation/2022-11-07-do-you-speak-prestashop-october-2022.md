@@ -22,7 +22,7 @@ Of course, other languages are still available for translation, and you are more
 
 ### Proofreaders needed
 
-Your project needs you! Are you able to proofread for the Spanish (Argentina), Galician or Flemish projects? If so your help is needed: the projects are currently almost fully translated, but not approved. reach me on either Crowdin or Slack, I’d be more than happy to guide you 🙌
+Your project needs you! Are you able to proofread for the Spanish (Argentina), Galician or Flemish projects? If so your help is needed: the projects are currently almost fully translated, but not approved. Reach me on either Crowdin or Slack, I’d be more than happy to guide you. 🙌
 
 If you wish to become a proofreader for any other language, let me know! We are always actively looking for proofreaders 👏
 

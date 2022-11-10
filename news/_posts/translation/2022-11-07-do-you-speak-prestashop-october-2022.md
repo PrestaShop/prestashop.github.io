@@ -2,7 +2,7 @@
 layout: post
 title: "Do you speak PrestaShop? – October 2022 edition"
 subtitle: "Where you'll learn that PrestaShop 8 is now available"
-date: 2022-11-07
+date: 2022-11-10
 authors: [LéaDelin]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

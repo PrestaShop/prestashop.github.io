@@ -13,7 +13,8 @@ A few weeks ago, we started a new initiative: PrestaShop Project Office Hours.
 The concept is simple: Once a week, project members make themselves available to the community to discuss topics directly related to the PrestaShop open source project.
 
 So far, we have held three meetings which were a chance for us to discuss a number of topics:
-- project structure
+- project structure, processes
+- we helped finish and merge some PRs from the community
 - multi-store features
 - the future of core architecture
 

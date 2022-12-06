@@ -1,0 +1,33 @@
+{{ define "partials/section/page-list" }}
+
+  <ul class="howtos-list">
+      {{- range .Paginator.Pages -}}
+          {{- if not .Draft -}}
+            <li>
+              <a href="{{ .Permalink }}">
+                <h4>&rarr; {{ .Title }}</h4>
+                  {{- if .Params.Subtitle -}}
+                    <span class="subtitle">{{ .Params.Subtitle }}</span>
+                  {{- end -}}
+              </a>
+            </li>
+          {{- end -}}
+      {{- end -}}
+  </ul>
+{{ end }}
+
+{{ define "main" }}
+<div class="">
+  <h1 class="page-heading">{{ .Title }}</h1>
+  <p class="page-subtitle">{{ .Params.Subtitle }}</p>
+
+  {{ if .Sections }}
+    {{- range .Sections -}}
+      <h3 class="topic">{{ .Title }}</h3>
+      {{ partial "partials/section/page-list" . }}
+    {{- end -}}
+  {{ else }}
+    {{ partial "partials/section/page-list" . }}
+  {{ end }}
+</div>
+{{ end }}

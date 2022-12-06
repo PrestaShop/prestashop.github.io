@@ -1,0 +1,8 @@
+{{ range .Params.Tags }}
+  <a class="label label-primary" href="/tag/{{ . | urlize }}/">
+      {{- $tagname := . -}}
+      {{- with (where $.Site.Data.tags "slug" $tagname) -}}
+          {{- with (index . 0) }}{{ $tagname = index . "name"}}{{ end -}}
+      {{- end -}}
+      {{- $tagname }}</a>
+{{ end }}

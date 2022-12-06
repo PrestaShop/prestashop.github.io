@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {{ partial "partials/head.html" . }}
+
+  <body>
+
+  {{ partial "partials/header.html" . }}
+
+    <div class="page-content">
+      <div class="container">
+        {{ block "main" . }}{{ .Content}}{{ end }}
+      </div>
+    </div>
+
+    {{ partial "partials/footer.html" . }}
+
+  </body>
+
+</html>

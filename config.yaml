@@ -1,0 +1,59 @@
+baseURL: https://build.prestashop-project.org
+disablePathToLower: true
+languageCode: en-us
+title: PrestaShop Developers' blog
+timezone: Europe/Paris
+
+theme: "build"
+
+enableEmoji: true
+
+mainSections:
+  - news
+
+cascade:
+  twitter_image: "/assets/images/theme/meta-logo-build.png"
+
+permalinks:
+  news: /news/:slug/
+  tags: /tag/:slug/
+
+googleAnalytics: "UA-2753771-31"
+disqusShortname: prestashopbuild
+
+params:
+  algolia:
+    application_id: '17LZR6CZEL'
+    index_name: 'jekyll'
+
+social:
+  twitter: "PrestaShopOrg"
+  github: "PrestaShop"
+
+rssLimit: 15
+outputFormats:
+  RSS:
+    mediaType: application/rss+xml
+    basename: feed
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: false
+    style: github
+    tabWidth: 4
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+  tableOfContents:
+    endLevel: 4
+    ordered: false
+    startLevel: 1

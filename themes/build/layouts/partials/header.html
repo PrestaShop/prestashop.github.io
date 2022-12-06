@@ -1,0 +1,31 @@
+<header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        {{ if .Page.IsHome }}
+          <h1 class="sr-only">{{ .Site.Title }}</h1>
+        {{ end }}
+        <a href="{{ .Site.BaseURL }}">
+          <img src="/assets/images/theme/new-logo.png" alt="{{ .Site.Title }} Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        {{ partialCached "partials/nav.html" . }}
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>

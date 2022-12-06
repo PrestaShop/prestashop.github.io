@@ -1,0 +1,91 @@
+{{ define "partials/author-data" }}
+  {{- $multiple := (index . "multiple") -}}
+  {{- with (index . "author") }}
+    <h4>
+      {{ index . "display_name" }}
+      <span{{ if $multiple }} class="multiple"{{ end }}>{{ index . "role" }}</span>
+    </h4>
+
+    {{ if index . "github" }}
+      <a class="btn btn-default btn-sm" href="https://github.com/{{ index . "github" }}">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    {{ end }}
+    {{ if index . "forum" }}
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/{{ index . "forum" }}">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    {{ end }}
+    {{ if index . "crowdin" }}
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/{{ index . "crowdin" }}">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    {{ end }}
+    {{ if index . "twitter" }}
+      <a class="btn btn-default btn-sm" href="https://twitter.com/{{ index . "twitter" }}">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    {{ end }}
+    {{ if index . "website" }}
+      <a class="btn btn-default btn-sm" href="{{ index . "website" }}">
+        <i class="icon-home"></i> Website
+      </a>
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">{{ .Date.Format "Jan 2, 2006" }}</li>
+
+          {{ if .Params.tags }}
+            <li>
+              <i class="icon-tag"></i>
+
+              {{ partial "partials/post-tags" . }}
+
+            </li>
+          {{ end }}
+
+        </ul>
+      </div>
+
+      {{ if .Params.Authors }}
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              {{ if gt (len .Params.Authors) 1 }}
+
+                <h5>About the authors</h5>
+
+                {{ range .Params.Authors }}
+                <div class="author-item">
+
+                  {{ partial "partials/author-data" (dict "author" (index $.Site.Data.authors .) "multiple" true) }}
+
+                </div>
+                {{ end }}
+
+              {{ else }}
+
+                <h5>About the author</h5>
+
+                {{ partial "partials/author-data" (dict "author" (index $.Site.Data.authors (index .Params.Authors 0)) "multiple" false) }}
+
+              {{ end }}
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>

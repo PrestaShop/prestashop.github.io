@@ -1,0 +1,7 @@
+{{ if (eq .Lang "fr") }}
+	Cet article est aussi disponible en français
+{{ else if (eq .Lang "ru") }}
+	Эта статья также доступна в русской
+{{ else }}
+	This article is also in available in {{ .Lang }}
+{{ end }}

@@ -1,0 +1,72 @@
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        {{ with .Site.Social.facebook }}
+        <a href="https://www.facebook.com/{{ . }}/" title="Facebook page">
+          <i class="icon-facebook-alt"></i>
+        </a>
+        {{ end }}
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        {{ with .Site.Social.github }}
+        <a href="https://github.com/{{ . }}" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        {{ end }}
+
+        {{ with .Site.Social.twitter }}
+        <a href="https://twitter.com/{{ . }}" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        {{ end }}
+
+        {{ with .Site.Social.instagram }}
+        <a href="https://instagram.com/{{ . }}" title="Instagram account">
+          <i class="icon-camera"></i>
+        </a>
+        {{ end }}
+
+        <a href="{{ "/feed.xml" }}" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+{{ partial "partials/footer-disqus.html" . }}
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+{{ partial "partials/algolia.html" . }}

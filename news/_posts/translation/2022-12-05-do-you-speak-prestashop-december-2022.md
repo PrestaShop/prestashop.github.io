@@ -36,9 +36,9 @@ Note that (as always) you can [contribute to translating the documentation](http
 
 ### Proofreaders still needed!
 
-We are still looking for proofreaders for the Spanish (Argentina), Galician and Flemish projects! So if you want to help us, reach me on either Crowdin or Slack, I’d be more than happy to guide you 🙌
+Your project needs you! Are you able to proofread for the Spanish (Argentina), Galician or Flemish projects? If so your help is needed: the projects are currently almost fully translated, but not approved. Reach me on either Crowdin or Slack, I’d be more than happy to guide you. 🙌
 
-If you wish to become a proofreader for any other language, let me know! We are always actively looking for proofreaders 👏
+Intersted in proofreading for any other language? Let me know! Your help is precious, and proofreaders are always welcome. 👏
 
 ### 💕 Many thanks to newcomers
 
@@ -96,8 +96,7 @@ Thank you all for your contribution! :muscle:
 
 #### Almost there!
 
-Korean, Lithuanian, Chinese (TW), Romanian and Polish are almost fully available. There is only 1% of strings to proofread! 
-There isn’t much work left, so if you wish to help proofread what has been translated, please send an email to translation@prestashop.com or message me (Léa Delin) on [Slack](https://join.slack.com/t/prestashop/shared_invite/zt-1hldl6jw4-AxCca0WGg_6d3rfVTVJtJA). Your help is needed!
+Korean, Lithuanian, Chinese (TW), Romanian and Polish are almost fully available. There is only 1% of strings to proofread! Keep up the great work 🎁
 
 ## Languages with the best evolution
 
@@ -109,7 +108,7 @@ The following languages had the best progress in November thanks to the translat
 
 Congratulations! 
 
-![Best translation progress in November 2022](/assets/images/2022/11/build-crowdin-progress-november22.png)
+![Best translation progress in November 2022](/assets/images/2022/12/build-crowdin-progress-november22.png)
 
 A huge thank you to all the contributors!
  

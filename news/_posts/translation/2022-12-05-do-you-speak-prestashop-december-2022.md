@@ -38,7 +38,7 @@ Note that (as always) you can [contribute to translating the documentation](http
 
 Your project needs you! Are you able to proofread for the Spanish (Argentina), Galician or Flemish projects? If so your help is needed: the projects are currently almost fully translated, but not approved. Reach me on either Crowdin or Slack, I’d be more than happy to guide you. 🙌
 
-Intersted in proofreading for any other language? Let me know! Your help is precious, and proofreaders are always welcome. 👏
+Interested in proofreading for any other language? Let me know! Your help is precious, and proofreaders are always welcome. 👏
 
 ### 💕 Many thanks to newcomers
 

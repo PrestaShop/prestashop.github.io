@@ -53,7 +53,7 @@ Issues involved in the milestone 1.7.8.8
 
 ## Future support of PrestaShop 1.7
 
-PrestaShop 1.7 has entered Extended Support mode since the [release of PrestaShop 8.0]([/news/prestashop-1-7-8-7-maintenance-release/](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.0)), in October 2022. This means that no further development will be done on 1.7, except for critical security fixes.
+PrestaShop 1.7 has entered Extended Support mode since the [release of PrestaShop 8.0](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.0), in October 2022. This means that no further development will be done on 1.7, except for critical security fixes.
 The extended support for PrestaShop 1.7 will continue until PrestaShop 9.0 is released, estimated by end of 2023.
 
 ## Acknowledgments

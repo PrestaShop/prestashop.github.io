@@ -16,7 +16,7 @@ tags:
 
 It has been decided to deliver a new maintenance release for 1.7.8.x branch. Please note that this will be the last regular 1.7.8.x patch version, as the branch now enters security-only maintenance phase. Next regular patches will now target 8.0.x branch.
 
-![1.7.8.8 is available!](https://github.com/PrestaShop/prestashop.github.io/blob/master/assets/images/2022/12/banner1.7.8.8_1534_424.jpg)
+![1.7.8.8 is available!](/assets/images/2022/12/banner1.7.8.8_1534_424.jpg)
 
 This release fixes some bugs and regressions as well as a security fix.
 

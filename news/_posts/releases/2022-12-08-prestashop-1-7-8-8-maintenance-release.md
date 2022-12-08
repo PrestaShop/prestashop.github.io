@@ -41,7 +41,7 @@ Issues involved in the milestone 1.7.8.8
 - [BO - An exception is displayed when editing a currency with a custom lanaguage](https://github.com/PrestaShop/PrestaShop/issues/27921)
 - [Product listed as "New" but without flag](https://github.com/PrestaShop/PrestaShop/issues/27737)
 - [Multistore - wrong BO language](https://github.com/PrestaShop/PrestaShop/issues/27617)
-- [[Multistore] - Product on category page display out of stock flag instead of availlable on order](https://github.com/PrestaShop/PrestaShop/issues/27604)
+- [Multistore - Product on category page display out of stock flag instead of availlable on order](https://github.com/PrestaShop/PrestaShop/issues/27604)
 - [Side menu is in English even if the shop is installed in another language (docker)](https://github.com/PrestaShop/PrestaShop/issues/27029)
 - [FO -  Quick view - The type of the product's cover image is incorrect](https://github.com/PrestaShop/PrestaShop/issues/26557)
 - [Exported translations are not working properly](https://github.com/PrestaShop/PrestaShop/issues/26549)

@@ -26,10 +26,7 @@ Reminder: the 1-Click Upgrade module’s latest version is v4.14.2, don’t forg
 
 ---
 
-## Bug fixes
-
-Issues involved in the milestone 1.7.8.8
-========================================
+## Issues involved in the milestone 1.7.8.8
 
 - [FO Responsive - Zoom on product image stretches the images](https://github.com/PrestaShop/PrestaShop/issues/29865)
 - [Delivery address force as invoice address when use "use different addresses for invoice"](https://github.com/PrestaShop/PrestaShop/issues/29289)
@@ -64,6 +61,7 @@ Contributors to this patch version, from both the Core team and the community at
 
 Thank you!
 
-[Download PrestaShop 1.7.8.8 now!](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.8)
+[Download PrestaShop 1.7.8.8 now!](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.8){: .btn .btn-lg .btn-success}
+{: .text-center}
 
 Since version 1.7.8.8 is a “patch” update to version 1.7.8.7, upgrading from any 1.7.8.x version will be easy: features will work better, modules and themes which worked fine on 1.7.8.7, will work just as well with 1.7.8.8. Upgrades from a standard 1.7.8.x version should work just as well.

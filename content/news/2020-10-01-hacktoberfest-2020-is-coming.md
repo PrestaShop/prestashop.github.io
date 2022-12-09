@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "hacktoberfest-2020-is-coming"
 title:  "Hacktoberfest 2020 is coming"
 subtitle: "Bring the lights on open source projects"
 date:  2020-10-01 09:10:11

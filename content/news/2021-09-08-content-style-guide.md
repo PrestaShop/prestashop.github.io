@@ -1,5 +1,6 @@
 --- 
 layout: post
+slug: "content-style-guide"
 title: "Content style guide: a reference for better harmonization"
 subtitle: "A reference document for writing content" 
 date: 2021-09-08 16:00:00

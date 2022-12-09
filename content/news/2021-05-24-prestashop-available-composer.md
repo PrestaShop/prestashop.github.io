@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-available-composer"
 title:  "PrestaShop is now available on Composer"
 subtitle: "A new way to kickstart your projects"
 date:   2021-05-24

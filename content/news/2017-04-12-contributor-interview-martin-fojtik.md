@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "contributor-interview-martin-fojtik"
 title:  "Contributor interview: Martin Fojtik"
 subtitle: "Discover the faces behind the commits."
 date:   2017-04-12 09:10:11

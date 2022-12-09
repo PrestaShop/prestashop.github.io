@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-and-gdpr"
 title:  "PrestaShop & GDPR"
 subtitle: "PrestaShop actions to help you comply with GDPR"
 date: 2018-04-16 16:00:00

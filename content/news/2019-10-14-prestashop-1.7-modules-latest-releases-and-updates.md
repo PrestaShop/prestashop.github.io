@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1.7-modules-latest-releases-and-updates"
 title:  "PrestaShop 1.7 modules - Latest releases & updates"
 subtitle: "Get some great news about PrestaShop 1.7 modules!"
 date:   2019-10-14 11:00:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "contributor-interview-david-julian-buch"
 title:  "Contributor interview: David-Julian Buch"
 subtitle: "Discover the faces behind the commits"
 date:   2017-11-03 09:10:11

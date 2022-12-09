@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "Ten-ways-improve-modules"
 title:  "Ten ways to improve your PrestaShop modules!"
 subtitle: "Stop the bugs, get back to innovating!"
 date: 2016-07-05 8:07:11

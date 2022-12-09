@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "contributor-interview-rodrigo-laurindo"
 title:  "Contributor interview: Rodrigo Laurindo"
 subtitle: "Discover the faces behind the commits"
 date:   2019-05-15 09:10:11

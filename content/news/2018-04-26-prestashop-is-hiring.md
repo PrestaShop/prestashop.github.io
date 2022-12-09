@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-is-hiring"
 title:  "PrestaShop is hiring"
 subtitle: "We have open positions for front-end and back-end developers"
 date: 2018-04-26 12:00:00

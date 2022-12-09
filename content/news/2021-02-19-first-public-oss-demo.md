@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "first-public-oss-demo"
 title:  "Announcing public demos from the maintainers team"
 subtitle: "We held the first session of the open source project's public demo"
 date:   2021-02-19 16:00:00

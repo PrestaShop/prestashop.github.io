@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "how-to-make-your-module-compliant-with-prestashop-official-gdpr-compliance-module"
 title:  "How to make your module compliant with PrestaShop’s Official GDPR Compliance Module"
 subtitle: "Discover our module and get prepared!"
 date: 2018-05-04 12:30:00

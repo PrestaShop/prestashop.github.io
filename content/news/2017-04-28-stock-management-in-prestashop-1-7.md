@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "stock-management-in-prestashop-1-7"
 title:  "Stock Management in PrestaShop 1.7"
 subtitle: "How we’re rebuilding a feature from the ground up"
 date:   2017-04-28 09:10:11

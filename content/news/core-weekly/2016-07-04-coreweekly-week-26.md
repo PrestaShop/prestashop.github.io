@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "coreweekly-week-26"
 title:  "PrestaShop Core Weekly - Week 26 of 2016"
 subtitle: "An inside look at PrestaShop's codebase"
 date:   2016-07-04 09:10:11

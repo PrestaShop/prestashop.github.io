@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-december-2018"
 title:  "Do you speak PrestaShop? – December 2018 edition"
 subtitle: "Where you'll learn that Brazilian Portuguese is finally completed"
 date:  2019-01-09 09:10:11

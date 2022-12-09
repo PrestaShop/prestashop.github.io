@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-7-3-3-1-6-1-19-maintenance-releases"
 title:  "Release of PrestaShop 1.7.3.3 and 1.6.1.19"
 subtitle: "Maintenance version of the 1.7.3.x and 1.6.1.19 branch"
 date:   2018-05-28 10:30:00

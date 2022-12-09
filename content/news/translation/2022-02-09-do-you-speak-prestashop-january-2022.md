@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-january-2022"
 title: "Do you speak PrestaShop? – January 2022 edition"
 subtitle: "Where you'll learn that 4 new languages are fully available"
 date: 2022-02-09 

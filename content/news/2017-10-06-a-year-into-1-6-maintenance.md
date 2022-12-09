@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "a-year-into-1-6-maintenance"
 title:  "A year into 1.6 maintenance: the way forward"
 subtitle: "Preparing for the next 12 months, together"
 date:   2017-10-06 09:10:11

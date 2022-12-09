@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-january-2018"
 title:  "Do you speak PrestaShop? – January 2018 edition"
 subtitle: "Where you'll learn that 1.7 is fully translated in 22 languages"
 date:   2018-02-02 09:10:11

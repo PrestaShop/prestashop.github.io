@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "france-conformite-article-88"
 title:  "[FR] À propos de l'article 88 de la loi 2015-1785"
 subtitle: "Dispositif de mise en conformité des logiciels de caisse : l’approche de PrestaShop"
 date:   2017-07-11 09:10:11

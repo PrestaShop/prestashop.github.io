@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "native-modules-and-smart-menu"
 title:  "Native modules and smart menu"
 subtitle: "A bit of historical background and the refactoring plan"
 date:   2018-11-29 12:00:00

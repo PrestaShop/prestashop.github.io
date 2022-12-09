@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-december-2021"
 title: "Do you speak PrestaShop? – December 2021 edition"
 subtitle: "Where you'll learn that new strings were added to Crowdin"
 date: 2022-01-05 

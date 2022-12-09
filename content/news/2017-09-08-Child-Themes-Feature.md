@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "Child-Themes-Feature"
 title:  "Parent/Child theme feature in PrestaShop 1.7"
 subtitle: "Luke, I am your father"
 date:   2017-09-08 09:10:11

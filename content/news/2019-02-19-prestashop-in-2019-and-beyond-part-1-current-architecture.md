@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-in-2019-and-beyond-part-1-current-architecture"
 title:  "PrestaShop in 2019 and beyond, part 1: The current architecture"
 subtitle: "aka point A – Where we are"
 date:   2019-02-19 10:30:00

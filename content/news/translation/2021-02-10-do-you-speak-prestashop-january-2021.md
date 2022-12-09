@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-january-2021"
 title: "Do you speak PrestaShop? – January 2021 edition"
 subtitle: "Where you'll learn that Romanian and Spanish reached 100%"
 date: 2021-02-10 17:00:00

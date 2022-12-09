@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "contributor-interview-julius-zukauskas"
 title: "Julius Zukauskas: Partner Agency Employee and Top Contributor"
 subtitle: "Discover the faces behind the commits"
 date: 2022-05-04

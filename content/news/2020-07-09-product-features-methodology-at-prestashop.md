@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "product-features-methodology-at-prestashop"
 title: "Product development at PrestaShop"
 subtitle: "What happens in the team when working on new features"
 date: 2020-07-09 9:00:00

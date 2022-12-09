@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-perfect-gitignore"
 title:  "Create the perfect .gitignore file for your PrestaShop projects"
 subtitle: "Commit only the right files"
 date:   2015-04-20 11:21:00

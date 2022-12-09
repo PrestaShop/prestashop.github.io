@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "contributor-interview-marcin-szperlik-iqit"
 title:  "Contributor interview: Marcin Szperlik"
 subtitle: "Discover the faces behind the commits"
 date:   2017-08-22 09:10:11

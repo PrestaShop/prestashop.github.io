@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "how-to-contribute-and-translate-the-user-documentation"
 title:  "How to contribute to the User Guide and help translate it"
 subtitle: "A quick guide to writing PrestaShop Documentation on Confluence"
 date:   2017-01-12 06:09:47

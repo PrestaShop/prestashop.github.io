@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-june-2020"
 title:  "Do you speak PrestaShop? – June 2020 edition"
 subtitle: "Where you'll learn that Esperanto is on the rise"
 date:  2020-07-10 14:30:11

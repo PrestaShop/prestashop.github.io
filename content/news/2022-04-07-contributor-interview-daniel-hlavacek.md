@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "contributor-interview-daniel-hlavacek"
 title: "Merchant, freelance developer, and top contributor: Daniel Hlaváček’s experience with the PrestaShop project"
 subtitle: "Discover the faces behind the commits"
 date: 2022-04-07

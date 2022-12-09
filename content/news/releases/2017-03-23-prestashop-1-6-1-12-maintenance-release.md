@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-6-1-12-maintenance-release"
 title:  "Release of PrestaShop 1.6.1.12"
 subtitle: "Maintenance version of the 1.6.1.x branch"
 date:   2017-03-23 09:10:11

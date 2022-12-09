@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-feb-2017"
 title:  "Do you speak PrestaShop? – February 2017 edition"
 subtitle: "Translation of 1.7.1 is in full swing!"
 date:   2017-03-13 06:09:47

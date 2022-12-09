@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "hacktoberfest-2022"
 title:  "Hacktoberfest 2022"
 subtitle: "October is coming, so is Hacktoberfest!"
 date:  2022-09-26

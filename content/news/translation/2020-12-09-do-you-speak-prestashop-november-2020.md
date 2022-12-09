@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-november-2020"
 title: "Do you speak PrestaShop? – November 2020 edition"
 subtitle: "Where you'll learn that the Hebrew project is progressing"
 date:  2020-12-09 17:00:00

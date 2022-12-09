@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "performance-and-prestashop"
 title:  "Performance (& PrestaShop)"
 subtitle: "Sorry, Goose, but it's time to buzz the tower."
 date:   2020-12-14 9:00:00

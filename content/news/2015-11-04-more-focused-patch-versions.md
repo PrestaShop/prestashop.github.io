@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "more-focused-patch-versions"
 title:  "Our plan for more regular & focused patch versions"
 subtitle: "Fixing more issues in due time!"
 date:   2015-11-04 14:00:00

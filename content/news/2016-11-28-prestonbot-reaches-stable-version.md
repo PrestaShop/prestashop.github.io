@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestonbot-reaches-stable-version"
 title:  "PrestonBot has reached stable version"
 subtitle: "Your PrestaShop community best friend"
 date:   2016-11-28 08:09:10

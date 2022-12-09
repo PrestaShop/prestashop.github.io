@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "how-to-translate-your-theme"
 title:  "How to translate your theme in PrestaShop 1.7"
 subtitle: "Theme builders: this is for you!"
 date:   2017-04-21 06:09:47

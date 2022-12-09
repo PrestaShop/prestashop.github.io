@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-community-framework"
 title:  "Introducing PrestaShop's Community Framework"
 subtitle: "Listing best practices and responsibility in order to involve the community more."
 date:   2016-10-12 09:10:11

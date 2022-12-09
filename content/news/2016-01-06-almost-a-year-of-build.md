@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "almost-a-year-of-build"
 title:  "(Almost) A Year of Build"
 subtitle: "Indulge us while we bathe in our yearly self-celebratory post"
 date:   2016-01-06 19:00:00

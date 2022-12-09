@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "introducing-horizontal-migration"
 title: An update on the Symfony migration
 subtitle: What's next?
 date: 2022-07-04

@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "2020-call-for-papers-quick-tour"
 title:  "2020 Call for Papers: that was great!"
 subtitle: "A quick tour of the result"
 date:  2020-11-27 16:00:00

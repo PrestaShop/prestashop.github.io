@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-translators"
 title:  "Paying tribute to our community of translators"
 subtitle: "Let's thank them for making PrestaShop available worldwide"
 date: 2016-12-02

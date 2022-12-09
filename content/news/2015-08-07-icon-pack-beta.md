@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "icon-pack-beta"
 title:  "PrestaShop Official Icon Pack - Beta"
 subtitle: "We're cooking some fresh icons for you!"
 redirect_from: /icon-pack/

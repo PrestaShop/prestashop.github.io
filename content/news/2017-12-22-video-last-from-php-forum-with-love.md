@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "video-last-from-php-forum-with-love"
 title:  "Video: Last from PHP Forum with love"
 subtitle: "Because elephpants is not the only thing we brought back"
 date:   2017-12-22 09:10:11

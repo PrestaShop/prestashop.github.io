@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-6-1-0-performances"
 title:  "PrestaShop 1.6.1.0: a new level of performances"
 subtitle: "Where version 1.6.1.0's performances shine"
 date:   2015-06-22 18:29:47

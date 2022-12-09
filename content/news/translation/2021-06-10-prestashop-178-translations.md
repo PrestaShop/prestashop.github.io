@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-178-translations"
 title: "1.7.8 is ready for translation"
 subtitle: "New features equal new strings"
 date: 2021-06-10 19:00:00

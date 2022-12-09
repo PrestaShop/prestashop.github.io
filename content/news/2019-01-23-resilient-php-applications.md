@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "resilient-php-applications"
 title:  "Resilient PHP applications"
 subtitle: "Introducing the PrestaShop Circuit Breaker library"
 date:   2019-01-23 11:10:00

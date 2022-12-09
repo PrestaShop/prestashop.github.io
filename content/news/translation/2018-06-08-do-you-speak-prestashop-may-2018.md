@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-may-2018"
 title:  "Do you speak PrestaShop? – May 2018 edition"
 subtitle: "Where you'll learn that 1.7.4 is out for translation"
 date:   2018-06-08 09:10:11

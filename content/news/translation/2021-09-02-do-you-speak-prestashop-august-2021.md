@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-august-2021"
 title: "Do you speak PrestaShop? – August 2021 edition"
 subtitle: "Where you'll learn that PrestaShop 1.7.8 will be released soon"
 date: 2021-09-02 17:00:00

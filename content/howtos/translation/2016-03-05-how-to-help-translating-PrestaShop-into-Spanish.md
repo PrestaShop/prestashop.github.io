@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "how-to-help-translating-PrestaShop-into-Spanish"
 title:  "Videos: How to help translating PrestaShop into Spanish (ES)"
 subtitle: "¿Cómo ayudar a traducir el software de PrestaShop en español?"
 date:   2016-03-07 10:15:00

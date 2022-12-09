@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "write-product-specifications"
 title:  "Help us write product specifications"
 subtitle: "Contribute without typing a single code line"
 date:  2020-08-12 09:10:11

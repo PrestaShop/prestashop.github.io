@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "PrestaShop-RTL-project"
 title:  "Making PrestaShop RTL-compliant together with you"
 subtitle: "A call to the power of the PrestaShop community!"
 date:   2017-04-07 09:10:11

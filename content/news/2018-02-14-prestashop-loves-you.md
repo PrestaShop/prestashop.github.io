@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-loves-you"
 title:  "PrestaShop Loves You! <3"
 subtitle: "Happy Valentine's Day To The Best Community"
 date:   2018-02-14 09:10:11

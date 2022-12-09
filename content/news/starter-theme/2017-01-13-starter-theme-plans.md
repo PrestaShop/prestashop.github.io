@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "starter-theme-plans"
 title:  "Our plans for the Starter Theme"
 subtitle: "Building on what we learnt since the 1.7.0.0 release"
 date:   2017-01-13 09:10:11

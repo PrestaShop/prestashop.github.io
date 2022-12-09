@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "starter-theme-news"
 title:  "Starter Theme: fresh news from the front"
 subtitle: "What's up about Starter Theme"
 date:   2015-10-01 18:00:00

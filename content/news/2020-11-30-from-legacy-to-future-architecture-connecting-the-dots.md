@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "from-legacy-to-future-architecture-connecting-the-dots"
 title:  "From legacy to future architecture: Connecting the dots"
 subtitle: "Some ideas on how we'll get from Point A to Point B"
 date:   2020-11-30 09:00:00

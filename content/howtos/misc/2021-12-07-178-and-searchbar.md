@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "178-and-searchbar"
 title:  "How to solve the search bar issue after upgrading to PrestaShop 1.7.8"
 subtitle: "Everything you need to know to fix the issue"
 date:   2021-12-07

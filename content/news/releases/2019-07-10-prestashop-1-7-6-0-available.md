@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-7-6-0-available"
 title:  "PrestaShop 1.7.6.0 is available!"
 subtitle: "You waited for it, here it is!"
 date:   2019-07-10 17:00:00

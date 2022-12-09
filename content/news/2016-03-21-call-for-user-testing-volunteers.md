@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "call-for-user-testing-volunteers"
 title:  "Calling for user-testing volunteers (Paris, France)"
 subtitle: "Come tell us what you think!"
 date:   2016-03-21 17:37:41

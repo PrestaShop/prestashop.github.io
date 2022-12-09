@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "migrate-your-solutions-from-17-to-80"
 title: "Migrate your solutions from PrestaShop 1.7 to 8.0"
 subtitle: "Summary of notable changes for developers"
 date: 2022-08-15

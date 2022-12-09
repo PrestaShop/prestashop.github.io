@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "how-to-create-bug-report"
 title:  "How to create the best bug reports"
 subtitle: "Three rules: up-to-date, reproducible, and detailed."
 date:   2017-05-22 09:10:11

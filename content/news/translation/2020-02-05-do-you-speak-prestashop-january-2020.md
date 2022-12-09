@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-january-2020"
 title:  "Do you speak PrestaShop? – January 2020 edition"
 subtitle: "Where you'll learn that Kurdish is available for translation"
 date:  2020-02-05 09:10:11

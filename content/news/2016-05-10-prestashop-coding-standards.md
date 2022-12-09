@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-coding-standards"
 title:  "Evolution of the PrestaShop Coding Standards"
 subtitle: "How to best contribute code to the PrestaShop project"
 date:   2016-05-10 03:00:00

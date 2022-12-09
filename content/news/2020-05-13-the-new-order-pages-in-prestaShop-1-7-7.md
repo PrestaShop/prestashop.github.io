@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "the-new-order-pages-in-prestaShop-1-7-7"
 title: "The new order pages in PrestaShop 1.7.7"
 subtitle: "Introducing the revamp of order pages"
 date: 2020-05-13 9:00:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-beyond-1-7"
 title: PrestaShop beyond 1.7
 subtitle: Here is what we are planning next!
 date: 2021-12-14

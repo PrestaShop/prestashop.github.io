@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-7-6-1-maintenance-release"
 title:  "Release of PrestaShop 1.7.6.1"
 subtitle: "Maintenance version of the 1.7.6.x branch"
 date:   2019-08-26 16:00:00

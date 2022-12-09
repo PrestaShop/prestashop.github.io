@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "new-architecture-1-6-1-0"
 title:  "Architecture Improvements in 1.6.1.0"
 subtitle: "Cool new toys for PrestaShop developers"
 date:   2015-05-21 19:13:37

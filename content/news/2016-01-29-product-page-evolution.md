@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "product-page-evolution"
 title:  "The Product Page - Evolution Revolution"
 subtitle: When User Experience is back in business
 date:   2016-02-01 14:30:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "apache-vs-nginx"
 title:  "Apache vs. NGINX: Match of the Millennium"
 subtitle: "Dream match never ends"
 date:   2021-01-20 16:30:00

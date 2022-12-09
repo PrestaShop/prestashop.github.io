@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "announcing-end-of-support-for-obsolete-php-versions"
 title: "Announcing end of support for obsolete PHP versions"
 subtitle: "It's time to move forward"
 date:   2019-05-22 09:10:11

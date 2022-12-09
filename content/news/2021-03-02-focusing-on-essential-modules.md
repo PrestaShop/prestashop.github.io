@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "focusing-on-essential-modules"
 title:  "Focusing on essential modules"
 subtitle: "Announcing end of official support for less popular modules"
 date:   2021-03-02 14:00:00

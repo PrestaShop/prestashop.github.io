@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1614-maintenance-release"
 title:  "Release of PrestaShop 1.6.1.4"
 subtitle: "Maintenance version of the 1.6.1.x branch"
 date:   2016-01-07

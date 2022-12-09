@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-in-2019-and-beyond-part-2-pain-points"
 title:  "PrestaShop in 2019 and beyond, part 2: The Pain Points"
 subtitle: "aka What needs to be improved"
 date:   2019-10-07 08:00:00

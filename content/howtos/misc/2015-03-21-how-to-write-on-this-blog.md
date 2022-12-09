@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "how-to-write-on-this-blog"
 title:  "How to write on this blog"
 subtitle: "or: How we tried to ensure that only developers could write on the devblog :)"
 date:   2015-03-04 15:12:00

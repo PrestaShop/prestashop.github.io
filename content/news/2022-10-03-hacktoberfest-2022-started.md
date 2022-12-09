@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "hacktoberfest-2022-started"
 title:  "Hacktoberfest and PrestaShop: how you can participate in this 2022 edition"
 subtitle: "October is here: participate in Hacktoberfest, a celebration of open source software!"
 date:  2022-10-12

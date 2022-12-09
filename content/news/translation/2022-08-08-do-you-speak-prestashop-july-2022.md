@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-july-2022"
 title: "Do you speak PrestaShop? – July 2022 edition"
 subtitle: "Where you'll learn that PrestaShop 8 is ready for translation"
 date: 2022-08-08

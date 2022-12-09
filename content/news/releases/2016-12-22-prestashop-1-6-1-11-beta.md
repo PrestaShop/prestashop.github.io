@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-6-1-11-beta"
 title:  "Beta version of PrestaShop 1.6.1.11 - An ASM-focused release"
 subtitle: "Help us test our many fixes for Advanced Stock Management"
 date:   2016-12-22 10:00:00

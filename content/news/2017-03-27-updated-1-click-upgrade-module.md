@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "updated-1-click-upgrade-module"
 title:  "Test the updated 1-Click Upgrade module!"
 subtitle: "We heard you like upgrades, so we upgraded your upgrades"
 date:   2017-03-27 09:10:11

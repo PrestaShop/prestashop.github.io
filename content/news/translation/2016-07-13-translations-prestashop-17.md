@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "translations-prestashop-17"
 title:  "PrestaShop 1.7 is now open for translation"
 subtitle: "Ready... Set... Go!"
 date:   2016-07-13 06:09:47

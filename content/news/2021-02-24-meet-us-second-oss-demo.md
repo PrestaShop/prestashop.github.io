@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "meet-us-second-oss-demo"
 title:  "Second public demo from the maintainers team"
 subtitle: "Meet us for the second session of the open source project's public demo"
 date:   2021-02-24 13:00:00

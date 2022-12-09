@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "the-new-prestashop-test-framework"
 title:  "The (new) PrestaShop Test Framework"
 subtitle: "And how we're continually improving the quality of the PrestaShop project"
 date:  2020-02-05 12:00:00

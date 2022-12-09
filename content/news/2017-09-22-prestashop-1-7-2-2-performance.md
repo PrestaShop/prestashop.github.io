@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-7-2-2-performance"
 title:  "About the 1.7.2.2 performance improvement"
 subtitle: "Straight from the horse's mouth"
 date:   2017-09-22 01:10:11

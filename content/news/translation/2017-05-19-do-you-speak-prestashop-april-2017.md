@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-april-2017"
 title:  "Do you speak PrestaShop? – April 2017 edition"
 subtitle: "Did you know PrestaShop was being translated in Japanese?"
 date:   2017-05-19 06:09:47

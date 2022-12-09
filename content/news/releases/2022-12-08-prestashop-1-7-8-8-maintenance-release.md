@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-7-8-8-maintenance-release"
 title:  PrestaShop 1.7.8.8 Is Available
 subtitle: 
 date: 2022-12-08

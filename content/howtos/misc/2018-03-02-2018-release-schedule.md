@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "2018-release-schedule"
 title:  "PrestaShop 2018 release schedule"
 subtitle: "What to expect, and when to expect it"
 date: 2018-03-02 09:10:11

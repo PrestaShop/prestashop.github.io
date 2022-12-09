@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-july-2021"
 title: "Do you speak PrestaShop? – July 2021 edition"
 subtitle: "Where you'll learn that 1.7.8 is already available in 9 languages! "
 date: 2021-08-03 10:00:00

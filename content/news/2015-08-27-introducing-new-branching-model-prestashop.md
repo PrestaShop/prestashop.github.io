@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "introducing-new-branching-model-prestashop"
 title:  "Introducing a new branching model for PrestaShop"
 subtitle: "Do the right thing!"
 date:   2015-08-27 18:13:37

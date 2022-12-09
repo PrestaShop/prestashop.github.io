@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-7-7-0-beta-release"
 title:  "PrestaShop 1.7.7.0 Beta Is Ready To Be Tested!"
 subtitle: "You can download it and test it"
 date:   2020-05-13 10:00:00

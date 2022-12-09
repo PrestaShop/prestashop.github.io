@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-7-and-symfony"
 title:  "An update on the 1.7 architecture"
 subtitle: "What's happening in NewArchi land?"
 date:   2015-12-03 12:00:00

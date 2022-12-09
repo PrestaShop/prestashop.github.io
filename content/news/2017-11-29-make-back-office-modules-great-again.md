@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "make-back-office-modules-great-again"
 title:  "Make modules on the back office great again!"
 subtitle: "What is coming on 1.7.3 for module developers"
 date:   2017-11-29 09:10:11

@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-november-2018"
 title:  "Do you speak PrestaShop? – November 2018 edition"
 subtitle: "Where you'll learn that Galician is looking for proofreaders"
 date:  2018-12-05 09:10:11

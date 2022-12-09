@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "feel-like-contributing"
 title:  "Feel like contributing?"
 subtitle: "Sit back and relax, we guide you"
 date:   2018-07-20 09:10:11

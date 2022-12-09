@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-7-2-0-available"
 title:  "PrestaShop 1.7.2.0 is available!"
 subtitle: "Stock management is just one of the many aspects you'll love"
 date:   2017-07-20 09:10:11

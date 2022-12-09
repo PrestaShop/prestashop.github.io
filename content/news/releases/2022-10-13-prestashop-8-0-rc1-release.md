@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-8-0-rc1-release"
 title:  "PrestaShop 8.0 Release Candidate Is Ready To Be Tested!"
 subtitle: "After the Beta, the first release candidate for PrestaShop 8.0 is now ready for you to test!"
 date: 2022-10-13 14:00

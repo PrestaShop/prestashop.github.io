@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-august-2019"
 title:  "Do you speak PrestaShop? – August 2019 edition"
 subtitle: "Where you'll learn that the 1.7.6 catalog is now complete"
 date:  2019-09-04 09:10:11

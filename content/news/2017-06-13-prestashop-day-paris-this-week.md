@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-day-paris-this-week"
 title:  "PrestaShop Day Paris is coming this week!"
 subtitle: "Here is what we will talk about at the PrestaShop Day barcamp"
 date:   2017-06-13 09:10:11

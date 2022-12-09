@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-july-2020"
 title:  "Do you speak PrestaShop? – July 2020 edition"
 subtitle: "Where you'll learn that the Thai translation is back on track"
 date:  2020-08-07 10:00:00

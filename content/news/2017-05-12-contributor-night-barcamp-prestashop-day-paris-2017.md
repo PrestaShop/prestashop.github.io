@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "contributor-night-barcamp-prestashop-day-paris-2017"
 title:  "Contributor Night & barcamp: Community Events around the PrestaShop Day 2017"
 subtitle: "Come and contribute live with other community members in Paris!"
 date:   2017-05-12 09:10:11

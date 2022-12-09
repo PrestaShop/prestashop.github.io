@@ -1,5 +1,6 @@
 ---
 layout: page
+slug: "htaccess-generator-protect-your-prestashop-backoffice"
 title:  ".htaccess generator"
 subtitle: "Add another security layer to your back office"
 date:   2015-04-03 11:12:00

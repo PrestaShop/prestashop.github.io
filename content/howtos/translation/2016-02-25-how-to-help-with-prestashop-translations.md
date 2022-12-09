@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "how-to-help-with-prestashop-translations"
 title:  "10 rules to follow when translating PrestaShop"
 subtitle: "Or how to rock at translations"
 date:   2016-02-25 17:15:00

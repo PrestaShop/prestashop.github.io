@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1703-maintenance-release"
 title:  "Release of PrestaShop 1.7.0.3"
 subtitle: "Maintenance version of the 1.7.0.x branch"
 date:   2016-12-21 10:00:00

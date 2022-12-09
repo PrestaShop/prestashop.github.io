@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-day-paris-2016-barcamp-schedule"
 title:  "Barcamp conversations: Symfony, PHP performance, Cloud e-commerce, SEO, Customer Returns and more!"
 subtitle: "What we will talk about at the PrestaShop Day barcamp"
 date:   2016-05-27 09:00:00

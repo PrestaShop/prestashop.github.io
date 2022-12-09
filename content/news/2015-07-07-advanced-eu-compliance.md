@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "advanced-eu-compliance"
 title:  "Presenting the Advanced EU Compliance module"
 subtitle: "Helping merchants make their shops more compliant with the recent EU regulations."
 date:   2015-07-07 14:00:00

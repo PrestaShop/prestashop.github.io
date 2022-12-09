@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-november-2015-edition"
 title:  "Do you speak PrestaShop? – November 2015 edition"
 subtitle: "The ever awesome work of our multilingual community"
 date:   2015-12-15 11:29:47

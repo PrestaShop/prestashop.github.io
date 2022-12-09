@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "exposing-data-with-confidence"
 title:  "Exposing data with confidence in PrestaShop 1.7"
 subtitle: "We are improving how data is exposed in the front office"
 date:   2018-04-06 09:10:11

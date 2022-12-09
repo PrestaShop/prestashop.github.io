@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-december-2019"
 title:  "Do you speak PrestaShop? – December 2019 edition"
 subtitle: "Where you'll learn that PrestaShop was awarded for its international strategy"
 date:  2020-01-09 09:10:11

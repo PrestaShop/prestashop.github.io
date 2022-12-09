@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "contributor-night-barcamp-prestashop-day-3-weeks"
 title:  "Contributor Night & barcamp: PrestaShop Day Paris is in 3 weeks!"
 subtitle: "Come meet and share with the community in Paris!"
 date:   2017-05-25 02:10:11

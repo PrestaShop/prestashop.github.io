@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "contributor-interview-anthony-girard"
 title:  "Contributor interview: Anthony Girard"
 subtitle: "Discover the faces behind the commits."
 date:   2017-03-24 09:10:11

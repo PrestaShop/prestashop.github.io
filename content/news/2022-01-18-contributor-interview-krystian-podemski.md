@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "contributor-interview-krystian-podemski"
 title:  "From contributor to maintainer: Krystian Podemski's experience with the PrestaShop project"
 subtitle: "Discover the faces behind the commits"
 date:   2022-01-18 

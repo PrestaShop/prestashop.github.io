@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "office-hours"
 title:  "Introducing: PrestaShop Project Office Hours"
 subtitle: "Come discuss about the project with its members!"
 date:  2022-11-17

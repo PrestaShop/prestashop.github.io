@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-february-2022"
 title: "Do you speak PrestaShop? – February 2022 edition"
 subtitle: "Where you'll learn that PrestaShop 1.7.8 is fully available in Catalan"
 date: 2022-03-01 

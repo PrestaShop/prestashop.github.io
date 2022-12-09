@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "contributor-interview-andrej-stas"
 title:  "Contributor interview: Andrej Staš"
 subtitle: "Discover the faces behind the commits"
 date:   2017-10-04 09:10:11

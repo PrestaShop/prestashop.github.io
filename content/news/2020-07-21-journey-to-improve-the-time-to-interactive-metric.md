@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "journey-to-improve-the-time-to-interactive-metric"
 title: "A journey to improve the Time To Interactive metric in Classic Theme"
 subtitle: "When the lazy loading allow us to improve the LightHouse Score"
 date: 2020-07-21 9:00:00

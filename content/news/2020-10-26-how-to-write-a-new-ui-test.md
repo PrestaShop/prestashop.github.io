@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "how-to-write-a-new-ui-test"
 title:  "Automated UI tests tutorial"
 subtitle: "Step by step - Adding a new PrestaShop UI test"
 date:  2020-10-26 12:00:00

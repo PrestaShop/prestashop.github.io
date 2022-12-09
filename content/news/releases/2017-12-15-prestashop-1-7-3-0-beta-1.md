@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-7-3-0-beta-1"
 title:  "PrestaShop 1.7.3.0 beta 1 is out!"
 subtitle: "Test-drive before we release it"
 date:   2017-12-15 09:10:11

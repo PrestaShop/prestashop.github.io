@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "ps17-patch-release-lifecycle"
 title: "PrestaShop 1.7 patch release lifecycle"
 subtitle: "The journey of a patch release of PS 1.7, step by step"
 date:   2020-04-28 10:00:00

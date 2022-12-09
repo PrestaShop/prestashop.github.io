@@ -1,5 +1,6 @@
 ---
 layout: page
+slug: "prestashop-design-principles"
 title:  "PrestaShop Design Principles"
 subtitle: "Defining the core User Experience values for PrestaShop"
 date:   2017-08-01 11:12:00

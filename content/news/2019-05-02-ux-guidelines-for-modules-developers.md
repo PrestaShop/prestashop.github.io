@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "ux-guidelines-for-modules-developers"
 title:  "UX Guidelines for modules developers"
 subtitle: "Download the best practices in PDF to create consistent interfaces in the Back Office of PrestaShop"
 date:   2019-05-02 10:00:00

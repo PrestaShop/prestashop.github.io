@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "being-in-an-open-source-community"
 title:  "Being in an Open Source community"
 subtitle: "You might be part of one without even realizing it!"
 date:   2017-05-05 09:10:11

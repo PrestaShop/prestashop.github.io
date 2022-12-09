@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "how-to-best-contact-us"
 title:  "How to best contact us"
 subtitle: "Connect and Collaborate with the PrestaShop Teams"
 date:   2017-03-31 09:10:11

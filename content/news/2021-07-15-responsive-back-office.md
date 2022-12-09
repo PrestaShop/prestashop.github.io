@@ -1,5 +1,6 @@
 --- 
 layout: post
+slug: "responsive-back-office"
 title: "Towards a more mobile-friendly back office"
 subtitle: "Quick wins for a responsive back office"
 date: 2021-07-28 16:25:00

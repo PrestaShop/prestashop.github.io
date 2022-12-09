@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-march-2021"
 title: "Do you speak PrestaShop? – March 2021 edition"
 subtitle: "Where you'll learn that Finnish is now fully available"
 date: 2021-04-02 17:00:00

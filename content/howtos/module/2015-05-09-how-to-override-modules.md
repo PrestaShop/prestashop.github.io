@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "how-to-override-modules"
 title:  "How to override modules in PrestaShop"
 subtitle: "Override module methods in PrestaShop 1.6.0.11 and above"
 date:   2015-05-10 12:15:00

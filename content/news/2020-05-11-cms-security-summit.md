@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "cms-security-summit"
 title:  "We were at Google's CMS Security Summit 2020"
 subtitle: "PrestaShop continues working together with Google and the top CMS vendors for a safer web."
 date:   2020-06-04 17:00:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "new-theme-announce"
 title: Hello 2022, meet our new Front office theme
 subtitle: Here are some more details about it
 date: 2022-02-17

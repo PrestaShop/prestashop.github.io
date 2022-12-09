@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "173-translations"
 title:  "1.7.3 is ready for translation"
 subtitle: "New features equal new strings"
 date:   2017-11-24 09:10:11

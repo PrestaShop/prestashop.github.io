@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-august-2020"
 title:  "Do you speak PrestaShop? – August 2020 edition"
 subtitle: "Where you'll learn that 3 new languages projects have opened"
 date:  2020-09-09 12:00:00

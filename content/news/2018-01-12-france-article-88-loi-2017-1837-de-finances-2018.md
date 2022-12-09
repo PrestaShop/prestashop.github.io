@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "france-article-88-loi-2017-1837-de-finances-2018"
 title:  "[FR] Loi n°2017-1837 du 30/12/2017 de finances pour 2018"
 subtitle: "Les nouvelles obligations en matière de logiciel et système de caisse"
 date:   2018-01-12 09:10:11

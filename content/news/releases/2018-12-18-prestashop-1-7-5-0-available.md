@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "prestashop-1-7-5-0-available"
 title:  "PrestaShop 1.7.5.0 is available!"
 subtitle: "Improvements and bugs fixes under the hood, and exciting new features"
 date:   2018-12-18 10:15:00

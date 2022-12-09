@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "bug-bounty-retrospective"
 title:  "Bug Bounty Program, the retrospective"
 subtitle: "When hunters make your business safer!"
 date:   2020-09-11 09:00:00

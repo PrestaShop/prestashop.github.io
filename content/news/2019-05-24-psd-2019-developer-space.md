@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "psd-2019-developer-space"
 title: "PSD Paris 2019: a space dedicated to developers"
 subtitle: "Come and meet to solve issues and merge pull requests in real life"
 date:   2019-05-24 14:15:00

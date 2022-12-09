@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "fighting-against-spamming-again"
 title:  "Fighting against spamming - again!"
 subtitle: "Don't play spam invaders"
 date:   2019-04-25 09:10:11

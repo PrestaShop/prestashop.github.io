@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "do-you-speak-prestashop-september-2019"
 title:  "Do you speak PrestaShop? – September 2019 edition"
 subtitle: "Where you'll learn that it is time to focus on the 1.7 only"
 date:  2019-10-09 09:10:11

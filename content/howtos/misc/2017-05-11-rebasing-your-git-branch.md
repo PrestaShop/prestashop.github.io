@@ -1,5 +1,6 @@
 ---
 layout: post
+slug: "rebasing-your-git-branch"
 title:  "How to rebase your Git branch"
 subtitle: "git rebase can be tricky, but remains your friend!"
 date:   2017-05-11 09:10:11

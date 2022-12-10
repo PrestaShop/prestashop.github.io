@@ -16,11 +16,12 @@ About a year and a half ago, we announced that PrestaShop 1.7.4.0 would be [drop
 
 By late 2018, as the end-of-life of PHP 5.6 approached, a great deal of shared hosting providers started dropping support for that version on their services and upgrading their clients, forcibly or otherwise, to an officially maintained PHP 7.x version. Our metrics show that during the last year, the number of active shops running PrestaShop 1.7 on a PHP 7 or greater has increased significantly and is now over 75%.
 
-![PHP version support roadmap](/assets/images/2019/05/php-support-roadmap.png){:.text-center}
+![PHP version support roadmap](/assets/images/2019/05/php-support-roadmap.png)
+{.text-center}
 
 _PHP version support roadmap  
 (green background: active support; orange background: security fixes only) - ([Source](https://www.php.net/supported-versions.php))_
-{:.text-center}
+{.text-center}
 
 Fast forward to 2019, the exceptionally long support period that PHP 5.6 benefited from is now over. As of May 2019, PHP is back on a shorter, three-year-long version lifecycle, consisting of a new minor release every year, with two years of active support and one year of security fixes only. As a result, the PHP community has started picking up speed as well, adopting new versions and dropping compatibility with older versions faster than ever.
 
@@ -34,10 +35,11 @@ Doctrine is not the only library to stop supporting older PHP versions. Many oth
 In the case of Symfony, while they dropped support for PHP 5 on Symfony 4, PrestaShop is based on the 3.4 long-term-support (LTS) version, which is unlikely to drop support for PHP 5 in the near future.
 
 
-![Symfony version support roadmap](/assets/images/2019/05/symfony-support-roadmap.png){:.text-center}
+![Symfony version support roadmap](/assets/images/2019/05/symfony-support-roadmap.png)
+{.text-center}
 
 _Symfony version support roadmap. ([Source](https://symfony.com/roadmap#maintained-symfony-branches))_
-{:.text-center}
+{.text-center}
 
 Even though Symfony is the exception, the PHP dependency problem is becoming an increasingly complex problem, and we had to make a choice. Many other PHP-based CMS are facing the same problems: [Drupal dropped compatibility with PHP 5 back in March](https://www.drupal.org/node/2938726), while Wordpress, who has traditionally supported very old PHP versions, is now [requiring at least 5.6 and will soon drop it as well](https://wordpress.org/news/2019/04/minimum-php-version-update/).
 

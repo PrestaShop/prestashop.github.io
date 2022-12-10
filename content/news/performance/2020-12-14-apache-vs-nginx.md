@@ -27,7 +27,7 @@ Also, this is an hommage to the fighting games genre, at its height in the 90s, 
 
 ![Player Select][PlayerSelect]
 _Garou: Mark of the Wolves belongs to SNK Corporation_
-{: .text-center }
+{.text-center }
 
 In the left corner, we have the [Apache webserver](https://httpd.apache.org/), developed by the famous Apache Foundation under the Apache License, and coupled with php-fpm.
 By default, and design, Apache is fully synchronous, locking a thread (or process, depending on your configuration) for each incoming request.
@@ -49,19 +49,19 @@ Hence the following architecture has been used for our tests:
 
 ![TestingArchitecture][TestingArchitecture]
 _The usual suspects_
-{: .text-center }
+{.text-center }
 
 ## FIGHT!
 
 ![FIGHT][FIGHT]
 _Garou: Mark of the Wolves belongs to SNK Corporation_
-{: .text-center }
+{.text-center }
 
 So, we have launched our scenario on each environment and now the results are coming... Let's have a look: 
 
 ![VSUsers][VSUsers]
 _Of course, more users the merrier_
-{: .text-center }
+{.text-center }
 
 Are those the results you were expecting?
 
@@ -73,11 +73,11 @@ First, the response time and the active users graph built with the Gatling scena
 
 ![NGINXRespTime][NGINXRespTime]
 _NGINX active users are just below 100, around 94._
-{: .text-center }
+{.text-center }
 
 ![ApacheRespTime][ApacheRespTime]
 _Apache active users are above 100, around 110._
-{: .text-center }
+{.text-center }
 
 Nothing surprising about the active users, given the result we already had. 
 
@@ -85,17 +85,17 @@ Also, looking at the servers metrics, we see that, for both of them, we have ple
 
 ![MemoryUsage][MemoryUsage]
 _Memory usage, not even 10% consumed, we should be fine - excerpt from GCP monitoring_
-{: .text-center }
+{.text-center }
 
 Same thing for network and disk IO, far from their limits for both instances:
 
 ![DiskIO][DiskIO]
 _Nothing impressive here, especially for SSD disks - excerpt from GCP monitoring_
-{: .text-center }
+{.text-center }
 
 ![NetworkTraffic][NetworkTraffic]
 _Network traffic, nothing specific, excerpt from GCP monitoring_
-{: .text-center }
+{.text-center }
 
 More interesting is the CPU, that is almost completely used for both instances:
 
@@ -134,7 +134,7 @@ Just in case you were wondering, achieving top performance _could_ be done by se
 
 ![Continue][Continue]
 _Garou: Mark of the Wolves belongs to SNK Corporation_
-{: .text-center }
+{.text-center }
 
 Rest assured we are aware this benchmark is not an exhaustive one and plenty of parameters could have tiped the scale one way or the other.
 

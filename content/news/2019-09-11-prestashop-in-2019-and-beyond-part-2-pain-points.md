@@ -15,7 +15,7 @@ This is the second in a [series of articles][introduction] we introduced earlier
 _(or "What needs to be improved")_
 
 ![The only valid measurement of code quality: WTFs/minute](/assets/images/2019/09/wtf-per-minute.png)
-{: .text-center style="margin: 5rem auto"}
+{ .text-center style="margin: 5rem auto"}
 
 In the [previous part][part-1], we described what the current architecture looks like. This article aims to analyze what are the main "pain points", that is, fundamental problems that are dragging the project down.
 
@@ -170,7 +170,7 @@ Well, if the **how** is not clearly defined, then we are left with two choices: 
 Big indeed. As we can see, the level of dependencies is _massive_. That means that essentially, PrestaShop's "API" is made out of every template file, every public member of every PHP class, and every JavaScript object. Oh, and assets, too.
 
 ![Use all the things](/assets/images/2019/09/use-all-the-things.jpg)
-{: .center style="margin: 5rem auto"}
+{.center style="margin: 5rem auto"}
 
 Of course, this level of access is fantastic for customizations. _Everything_ is right there, available for use and modification. But at what cost?
 
@@ -317,9 +317,10 @@ We have already started improving this in PrestaShop 1.7.6, but there is still s
 
 ## Testing is very hard
 
-![Testing is doubting][testing-is-doubting]{: style="height:400px"}
+<img src="/assets/images/2019/09/tester-cest-douter.jpg" alt="Testing is doubting" style="height:400px">
+
 _Testing is doubting, by [CommitStrip](http://www.commitstrip.com/)_
-{: .text-center }
+{.text-center }
 
 This is one of the classic _consequences_ of complex, static, globally-stateful code. Since components are so tightly interweaved and depend on global states, putting the system in a state that allows testing a feature in an isolated and predictable way is really, really hard. In some cases, dependencies and hidden state can become extremely difficult and time-consuming to understand, especially when dealing with static in-memory cache (i.e. variables that maintain their value between calls to the same method on the same thread).
 
@@ -450,7 +451,6 @@ In case you forgot, here are the topics that will be covered during this series:
 [addons]: https://addons.prestashop.com
 [legacy-layout]: https://github.com/PrestaShop/PrestaShop/blob/1.7.6.0/controllers/admin/AdminLegacyLayoutController.php
 [legacy-layout-issue]: https://github.com/PrestaShop/PrestaShop/issues/12925
-[testing-is-doubting]: /assets/images/2019/09/tester-cest-douter.jpg
 [behat]: https://github.com/PrestaShop/PrestaShop/pull/12634
 [puppeteer]: https://developers.google.com/web/tools/puppeteer/
 [semver-article]: /news/a-more-semantic-versioning-scheme/

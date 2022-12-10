@@ -20,7 +20,7 @@ Here's an overview of what PrestaShop 1.7 looks like as of early 2019.
 
 ![Figure 1: Basic overview of PrestaShop 1.7's architecture, early 2019][figure-1]
 _(Figure 1: Basic overview of PrestaShop 1.7's architecture, early 2019)_
-{: .text-center }
+{.text-center }
 
 PrestaShop's architecture can be separated in two main logical sections:
 
@@ -116,7 +116,7 @@ Here's how it stacks out now:
 
 ![Figure 2: The core business stack][figure-2]
 _(Figure 2: The core business stack)_
-{: .text-center }
+{.text-center }
 
 In Figure 2, we can appreciate the four subsystems described above.
 
@@ -147,7 +147,7 @@ Controllers are divided in two big families: those that handle FO requests, and 
 
 ![Figure 3: Core controllers][figure-3]
 _(Figure 3: Core controllers)_
-{: .text-center }
+{.text-center}
 
 As Figure 3 describes, there are currently several kinds of controllers:
 

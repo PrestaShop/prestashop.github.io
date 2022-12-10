@@ -200,7 +200,7 @@ If we are forced to choose between one of these archetypes, which one would we b
 Based on the everything that we stated before, here's what we came up with:
 
 ![Schema of the Future Architecture][future-architecture-overview]
-{: .text-center }
+{.text-center }
 
 The future architecture is based on 5 key elements:
 

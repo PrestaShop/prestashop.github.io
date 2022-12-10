@@ -54,7 +54,7 @@ This upcoming release is not only dependent on the maintainers, but also on the 
 This is how the current mockups look like:
 
 ![New theme mockup](/assets/images/2022/02/new-theme-mockup.png)
-{: .text-center }
+{.text-center }
 
 To see more, have a look at [all the mockups](https://www.figma.com/file/LfVl5leeSKcVUhSaYwhbtM/New-Theme), and [the list of open issues](https://github.com/PrestaShop/theme-refacto/issues).
 

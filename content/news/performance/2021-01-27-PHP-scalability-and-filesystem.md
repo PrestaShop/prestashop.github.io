@@ -36,7 +36,7 @@ Here with a simple stack with a webserver (let's use Apache2), your favorite PHP
 
 ![Vertical Scaling][VerticalScaling]
 _We require more minerals_
-{: .text-center }
+{.text-center }
 
 In a modern world made of cloud computing instances, vertical scaling can be done in a few mouse clicks by upgrading the instance type and releasing new resources. It can be a bit more tricky if you manage the hardware yourself, but it's still feasible.
 
@@ -58,7 +58,7 @@ As you may have guessed, horizontal scaling is all about adding more _instances_
 
 ![Horizontal Scaling][HorizontalScaling]
 _Just keep swimming, just keep swimming!_
-{: .text-center }
+{.text-center }
 
 Still, depending on your ecosystem, it may require some more work, at least a way to [load balance](https://en.wikipedia.org/wiki/Load_balancing_(computing)) traffic between the instances.
 
@@ -68,7 +68,7 @@ Hence, the most simple architecture schema you will come with looks a lot like t
 
 ![Horizontal Scaling Expanded][HorizontalScalingExpanded]
 _I've a feeling we're not in Kansas anymore._
-{: .text-center }
+{.text-center }
 
 And we are not even mentioning the redundancy systems that could be setup for the load balancing and the shared filesystem parts. 
 
@@ -193,7 +193,7 @@ Well, we're glad you ask!
 
 ![Users per hour count graph][TuningUsersCount]
 _As usual, the more the merrier_
-{: .text-center }
+{.text-center }
 
 As you can see, even with a small instance with a single vCPU and standard disks, we see a huge performance improvement.
 
@@ -203,13 +203,13 @@ Just in case you were wondering about the filesystem and disks impact, here is a
 
 ![User per hour count with SSD graph][TuningUsersCountSSD]
 _Again, the more the merrier_
-{: .text-center }
+{.text-center }
 
 Let's have a quick look at the CPU usage before wrapping up:
 
 ![CPU Usages graph][TuningCPUUsage]
 _More CPU usage means less bottlenecks_
-{: .text-center }
+{.text-center }
 
 We do hope this article helped to shine some light on some PHP mechanics,  their intrications with performance and how to alleviate them.
 

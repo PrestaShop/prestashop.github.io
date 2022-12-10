@@ -15,7 +15,8 @@ tags:
 
 That’s official, there will be a dedicated space for developers at the [PSD Paris 2019](https://www.prestashop.com/fr/evenements/prestashop-day-paris). If you are developing themes and modules or contributing to the core, this is the place to be the 4th of June 2019.
 
-![PSD Paris 2019 - Map](/assets/images/2019/05/plan-psd-paris.png){:.text-center}
+![PSD Paris 2019 - Map](/assets/images/2019/05/plan-psd-paris.png)
+{.text-center}
 
 Having such a place was expected by many people in the community. There was no dedicated space last year: that was possible to speak standing, exchange, but not possible to work. But this year, we do!
 
@@ -34,4 +35,5 @@ Information about the [PSD Paris 2019](https://www.prestashop.com/fr/evenements/
 
 [Get your ticket](https://www.weezevent.com/psd-paris?o=build) with a 50% discount, use the code PSDPARISBUILD
 
-[![PSD Paris 2019](/assets/images/2019/05/banner-psd-paris.png){:.text-center}](https://www.prestashop.com/fr/evenements/prestashop-day-paris)
+[![PSD Paris 2019](/assets/images/2019/05/banner-psd-paris.png)](https://www.prestashop.com/fr/evenements/prestashop-day-paris)
+{.text-center}

@@ -36,7 +36,7 @@ Just to illustrate, let's have a look at this Gatling graph and the active users
 
 ![NotANumber][NotANumber]
 _So many numbers with [Gatling](https://gatling.io/)_
-{: .text-center }
+{.text-center }
 
 Is it high? Or is it low? But compared to what? In which context?
 
@@ -56,7 +56,7 @@ When you're dealing with a performance issue, you're in fact dealing with "*the 
 
 ![Bottleneck][Bottleneck]
 _From Wikipedia with love, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)_
-{: .text-center }
+{.text-center }
 
 Let's say my application is slow, so I'm analysing it and find out that my crappy hard drive is failing. So I replace it with a newer and faster one. 
 My application is then less slow, for sure, but still not fast enough: I've just removed the first visible bottleneck.
@@ -73,7 +73,7 @@ You get the drill: a performance issue is "the currently visible bottleneck".
 
 ![UpUpAndAway][UpUpAndAway]
 _The processor can perform when it is not slowed down by other parts_
-{: .text-center }
+{.text-center }
 
 As said, performance tuning is about removing bottlenecks, one after the other. Which means at least two things:
 

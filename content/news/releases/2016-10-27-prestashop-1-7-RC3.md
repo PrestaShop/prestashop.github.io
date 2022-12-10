@@ -24,8 +24,7 @@ A lot has been done to stabilize and enhance most of the details of the future v
 Found an issue? [Create a Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)!
 
 
-* TOC
-{:toc}
+{{< toc >}}
 
  
 ## What's new in RC3?

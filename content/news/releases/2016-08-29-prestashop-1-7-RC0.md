@@ -30,8 +30,7 @@ We have therefore decided to release RC0. Now is the time to work with us toward
 {{< cta "https://www.prestashop.com/versions " >}}Test PrestaShop 1.7.0.0 RC0 now!{{< /cta >}}
 
 
-* TOC
-{:toc}
+{{< toc >}}
 
  
 ## Why an RC0 and not an RC1?

@@ -17,9 +17,7 @@ Since we’re an open source company, there are a number of places where we coll
 
 Without further ado, this is how we can work together!
 
-* Table of contents
-{:toc}
-
+{{< toc >}}
 
 ### The quick links
 

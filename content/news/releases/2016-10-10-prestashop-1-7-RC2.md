@@ -24,8 +24,7 @@ Again in this RC version, a good chunk of issues have been fixed and improved up
 Found an issue? [Create a Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)!
 
 
-* TOC
-{:toc}
+{{< toc >}}
 
  
 ## What's new in RC2?

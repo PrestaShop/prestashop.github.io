@@ -30,8 +30,7 @@ This article serves as a FAQ for PrestaShop 1.7. It started while the 1.7 projec
 The changelog is at the bottom of the FAQ.</p>
 </div>
 
-* TOC
-{:toc}
+{{< toc >}}
 
 
 ## General questions

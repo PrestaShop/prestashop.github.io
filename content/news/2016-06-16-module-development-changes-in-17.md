@@ -33,8 +33,7 @@ In any case, we advise you to make sure that your module does work in PrestaShop
 
 Now, let’s dive into the details.
 
-* TOC
-{:toc}
+{{< toc >}}
 
 
 ## General information

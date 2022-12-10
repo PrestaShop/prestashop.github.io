@@ -26,8 +26,7 @@ Released on August 29th, the 1.7 RC0 release was dubbed a "pre-RC1" version, so 
 Found an issue? [Create a Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)!
 
 
-* TOC
-{:toc}
+{{< toc >}}
 
  
 ## What's new in RC1?

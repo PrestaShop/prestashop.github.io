@@ -7,9 +7,9 @@ date:   2015-07-17 18:54:47
 authors: [ xavierborderie ]
 icon: icon-checked
 tags:
- - 1.6
- - 1.6.1.x
- - 1.6.1.1
+ - "1.6"
+ - "1.6.1.x"
+ - "1.6.1.1"
  - version
  - patch
  - releases

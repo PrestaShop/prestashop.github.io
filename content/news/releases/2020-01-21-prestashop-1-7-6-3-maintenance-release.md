@@ -8,8 +8,8 @@ authors: [ PrestaShop ]
 image: /assets/images/2020/01/1763-image.jpg
 icon: icon-checked
 tags:
- - 1.7
- - 1.7.6.x
+ - "1.7"
+ - "1.7.6.x"
  - version
  - patch
  - releases

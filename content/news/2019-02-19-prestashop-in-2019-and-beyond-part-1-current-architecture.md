@@ -6,7 +6,7 @@ subtitle: "aka point A – Where we are"
 date:   2019-02-19 10:30:00
 authors: [ PabloBorowicz ]
 icon: icon-compass
-tags: [1.7, architecture]
+tags: ["1.7", architecture]
 ---
 
 This is the first in a series of articles we [introduced a couple days ago][introduction], that aims at describing where we are, where we are going, and some ideas on how we'll get there.

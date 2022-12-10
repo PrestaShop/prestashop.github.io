@@ -9,8 +9,8 @@ image: /assets/images/2020/11/1769_meta.jpg
 icon: icon-checked
 
 tags:
- - 1.7
- - 1.7.6.x
+ - "1.7"
+ - "1.7.6.x"
  - version
  - patch
  - releases

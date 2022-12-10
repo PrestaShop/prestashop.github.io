@@ -9,7 +9,7 @@ icon: icon-road
 tags:
  - architecture
  - symfony
- - 1.7
+ - "1.7"
 translations:
   ru: http://prestaweb.ru/prestashop-news/prestashop-1-7-izmeneniya-v-arxitekture.html
 ---

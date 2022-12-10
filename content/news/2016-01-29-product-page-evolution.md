@@ -7,7 +7,7 @@ date:   2016-02-01 14:30:00
 authors: [ vincentbz ]
 icon: icon-music
 tags:
- - 1.7
+ - "1.7"
  - product
  - ux
 ---

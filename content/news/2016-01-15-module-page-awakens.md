@@ -7,7 +7,7 @@ date:   2016-01-15 15:30:00
 authors: [ guillaumebruere ]
 icon: icon-blaster
 tags:
- - 1.7
+ - "1.7"
  - modules
  - ux
 ---

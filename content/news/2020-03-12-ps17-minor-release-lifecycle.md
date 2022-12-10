@@ -8,7 +8,7 @@ authors: [ MathieuFerment ]
 image: /assets/images/theme/meta-logo-build.png
 icon: icon-code
 tags:
- - 1.7
+ - "1.7"
  - beta
 ---
 

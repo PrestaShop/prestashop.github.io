@@ -6,7 +6,7 @@ subtitle: "New strings are winking at you"
 date:   2018-06-22 09:10:11
 authors: [ LouiseBonnard ]
 icon: icon-world
-tags: [translation, i18n, l10n, 1.7]
+tags: [translation, i18n, l10n, "1.7"]
 ---
 
 PrestaShop 1.7.4 is now ready for translation and validation! So it is time for us to translate, spot mistakes, validate and perhaps reorganize domains (if needed) to get an accurate and clean translation catalog for the release.

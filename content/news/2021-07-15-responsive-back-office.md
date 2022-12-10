@@ -7,7 +7,7 @@ date: 2021-07-28 16:25:00
 authors: [ScottCosio]
 icon: icon-mobile
 tags:
- - 1.7.8
+ - "1.7.8"
  - version
  - minor
  - product

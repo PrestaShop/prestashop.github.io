@@ -7,8 +7,8 @@ date: 2018-05-29 19:00:00
 authors: [ ColineGinestet, PrestaShop ]
 icon: icon-store
 tags:
- - 1.7.3.3
- - 1.6.1.19
+ - "1.7.3.3"
+ - "1.6.1.19"
  - theme
 ---
 

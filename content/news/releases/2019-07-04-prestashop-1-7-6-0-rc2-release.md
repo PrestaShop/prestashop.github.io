@@ -11,7 +11,7 @@ tags:
  - rc
  - minor
  - releases
- - 1.7.6.x
+ - "1.7.6.x"
 ---
 
 Once again the PrestaShop community actively participated in the testing of the PrestaShop 1.7.6 Release Candidate.

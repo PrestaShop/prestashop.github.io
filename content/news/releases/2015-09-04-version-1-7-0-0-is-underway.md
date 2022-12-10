@@ -7,7 +7,7 @@ date:   2015-09-04 17:00:00
 authors:  [ sLevaillant ]
 icon: icon-road
 tags:
- - 1.7
+ - "1.7"
 ---
 
 It’s a great time for the whole Product group at PrestaShop and we want to share with you why we are so excited!

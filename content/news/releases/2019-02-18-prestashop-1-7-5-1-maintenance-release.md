@@ -11,8 +11,8 @@ tags:
  - maintenance
  - patch
  - releases
- - 1.7.5.x
- - 1.7
+ - "1.7.5.x"
+ - "1.7"
 ---
 
 

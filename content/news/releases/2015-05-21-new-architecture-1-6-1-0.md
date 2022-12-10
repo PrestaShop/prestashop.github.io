@@ -7,8 +7,8 @@ date:   2015-05-21 19:13:37
 authors: [ djfm ]
 icon: icon-code
 tags:
- - 1.6
- - 1.6.1.x
+ - "1.6"
+ - "1.6.1.x"
  - releases
  - architecture
 ---

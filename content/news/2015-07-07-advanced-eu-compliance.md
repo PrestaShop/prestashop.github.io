@@ -7,7 +7,7 @@ date:   2015-07-07 14:00:00
 authors:  [ tchauviere ]
 icon: icon-coffee-hot
 tags:
- - 1.6.1.x
+ - "1.6.1.x"
  - legal
  - eu
  - europe

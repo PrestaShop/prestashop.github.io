@@ -11,7 +11,7 @@ tags:
  - beta
  - minor
  - releases
- - 1.7.5
+ - "1.7.5"
 ---
 
 A few weeks after the beta, the first release candidate for PrestaShop 1.7.5.0 is now ready for you to test!

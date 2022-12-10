@@ -6,7 +6,7 @@ subtitle: "All the 1.7-related articles published on Build, Curated just for you
 date:   2015-11-03 09:10:11
 authors: [ xavierborderie ]
 icon: icon-penknife
-tags: [1.7]
+tags: ["1.7"]
 ---
 
 For those who want to dive into the new major version of PrestaShop, version 1.7, this page summarizes the available information so far -- mostly published on the Build devblog, which you should read every week [:)]

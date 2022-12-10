@@ -9,7 +9,7 @@ icon: icon-align-right
 tags:
  - design
  - back office
- - 1.7
+ - "1.7"
  - contribute
 ---
 

@@ -11,8 +11,8 @@ tags:
  - maintenance
  - patch
  - releases
- - 1.6.1.x
- - 1.6
+ - "1.6.1.x"
+ - "1.6"
 ---
 
 PrestaShop 1.6.1.17 is now available. This maintenance release has seen 17 pull requests merged since version 1.6.1.16.

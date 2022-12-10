@@ -7,8 +7,8 @@ date:   2018-02-28 09:10:11
 authors: [ PabloBorowicz, emmanuelfages, LouiseBonnard ]
 icon: icon-checked
 tags:
- - 1.7
- - 1.7.3.x
+ - "1.7"
+ - "1.7.3.x"
  - version
  - minor
  - releases

@@ -12,8 +12,8 @@ tags:
  - maintenance
  - patch
  - releases
- - 1.7.7.x
- - 1.7
+ - "1.7.7.x"
+ - "1.7"
 ---
 
 PrestaShop 1.7.7.5 is now available. This maintenance release fixes 19 regressions reported since the 1.7.7.0.

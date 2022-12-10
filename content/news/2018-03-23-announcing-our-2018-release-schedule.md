@@ -8,8 +8,8 @@ authors: [ LouiseBonnard ]
 icon: icon-world
 tags:
  - release
- - 1.6
- - 1.7
+ - "1.6"
+ - "1.7"
 ---
  
 Today we are shining a light on a crucial information, long requested: our release calendar for the next versions of PrestaShop 1.7 and 1.6!

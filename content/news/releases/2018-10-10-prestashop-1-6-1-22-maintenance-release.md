@@ -11,8 +11,8 @@ tags:
  - maintenance
  - patch
  - releases
- - 1.6.1.x
- - 1.6
+ - "1.6.1.x"
+ - "1.6"
 ---
 
 PrestaShop 1.6.1.22 is now available. It fixes an important bug introduced in 1.6.1.21:

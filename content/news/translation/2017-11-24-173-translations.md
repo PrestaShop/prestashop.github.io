@@ -6,7 +6,7 @@ subtitle: "New features equal new strings"
 date:   2017-11-24 09:10:11
 authors: [ LouiseBonnard ]
 icon: icon-world
-tags: [translation, i18n, l10n, 1.7]
+tags: [translation, i18n, l10n, "1.7"]
 ---
 
 Many "When is the next version out?" later, we are glad to tell you [PrestaShop 1.7.3 is on its way](http://build.prestashop.com/news/do-you-speak-prestashop-october-2017), with new strings in it! A new branch (that will replace the 1.7.2) has been added to the [Crowdin projects](https://crowdin.com/project/prestashop-official). In other words: PrestaShop 1.7.3 is now ready for translation and validation!

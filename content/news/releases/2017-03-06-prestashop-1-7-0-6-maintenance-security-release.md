@@ -11,8 +11,8 @@ tags:
  - maintenance
  - patch
  - releases
- - 1.7.0.x
- - 1.7
+ - "1.7.0.x"
+ - "1.7"
 ---
 
 PrestaShop 1.7.0.6 is now available. This maintenance release closes [5 pull requests](https://github.com/PrestaShop/PrestaShop/milestone/20?closed=1), among which a security issue.

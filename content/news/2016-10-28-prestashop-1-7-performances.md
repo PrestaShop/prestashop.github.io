@@ -6,7 +6,7 @@ subtitle: "Hey! Not so fast!"
 date:   2016-10-28 11:00:00
 authors: [ maximebiloe ]
 icon: icon-lightning
-tags: [1.7]
+tags: ["1.7"]
 ---
 
 With PrestaShop 1.7, our main purposes were to improve the user experience on the Product Creation page and the Modules page, and also to make it easier to create a front office theme.

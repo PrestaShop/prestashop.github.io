@@ -6,7 +6,7 @@ subtitle: "Ready... Set... Go!"
 date:   2016-07-13 06:09:47
 authors: [ alexeven ]
 icon: icon-flag
-tags: [translation, i18n, l10n, 1.7]
+tags: [translation, i18n, l10n, "1.7"]
 ---
 
 

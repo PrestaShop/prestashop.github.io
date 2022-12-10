@@ -7,8 +7,8 @@ date:   2017-09-22 01:10:11
 authors: [ jocelynfournier ]
 icon: icon-row-setting
 tags:
- - 1.7
- - 1.7.2.x
+ - "1.7"
+ - "1.7.2.x"
  - performance
 ---
 

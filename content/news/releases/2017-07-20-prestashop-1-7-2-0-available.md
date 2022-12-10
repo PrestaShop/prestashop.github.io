@@ -7,8 +7,8 @@ date:   2017-07-20 09:10:11
 authors: [ xavierborderie ]
 icon: icon-checked
 tags:
- - 1.7
- - 1.7.2.x
+ - "1.7"
+ - "1.7.2.x"
  - version
  - minor
  - releases

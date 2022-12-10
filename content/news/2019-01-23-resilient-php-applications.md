@@ -7,7 +7,7 @@ date:   2019-01-23 11:10:00
 authors: [ mandrieu ]
 icon: icon-blaster
 tags:
- - 1.7
+ - "1.7"
 ---
 
 No matter how well designed is your project and how many tests you have, at some point your website can become inaccessible.

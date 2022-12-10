@@ -7,7 +7,7 @@ date: 2016-06-16 09:10:11
 authors: [ xavierborderie ]
 icon: icon-book
 tags:
- - 1.7
+ - "1.7"
  - module
  - documentation
 ---

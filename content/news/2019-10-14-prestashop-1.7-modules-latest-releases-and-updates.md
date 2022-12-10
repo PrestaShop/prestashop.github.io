@@ -6,7 +6,7 @@ subtitle: "Get some great news about PrestaShop 1.7 modules!"
 date:   2019-10-14 11:00:00
 authors: [ ColineGinestet ]
 icon: icon-compass
-tags: [1.7, architecture]
+tags: ["1.7", architecture]
 ---
 
 All product and core teams have been quite busy over the past 6 months, working hard on delivering PrestaShop 1.7.6, but not only! We have also worked on bringing new features and improving the 1.7 version through our PrestaShop modules. 

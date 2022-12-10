@@ -9,8 +9,8 @@ image: /assets/images/2020/12/build_and_mail_final.jpg
 icon: icon-leaf
 tags:
  - version
- - 1.7
- - 1.7.7.x
+ - "1.7"
+ - "1.7.7.x"
  - minor
  - releases
 ---

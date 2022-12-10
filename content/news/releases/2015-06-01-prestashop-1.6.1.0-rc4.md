@@ -8,8 +8,8 @@ authors: [ xavierborderie ]
 icon: icon-leaf
 disqus_url: http://build.prestashop.com/news/prestashop-1.6.0.1-rc4/
 tags:
- - 1.6
- - 1.6.1.x
+ - "1.6"
+ - "1.6.1.x"
  - version
  - rc
  - releases

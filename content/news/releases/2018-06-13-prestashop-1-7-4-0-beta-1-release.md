@@ -11,7 +11,7 @@ tags:
  - beta
  - patch
  - releases
- - 1.7.4
+ - "1.7.4"
 ---
 
 PrestaShop 1.7.4 is available for download. Please read important informations about it.

@@ -7,8 +7,8 @@ date:   2018-04-06 09:10:11
 authors: [ PabloBorowicz ]
 icon: icon-filter
 tags:
- - 1.7
- - 1.7.3.x
+ - "1.7"
+ - "1.7.3.x"
 ---
 
 During the last few months, we have received a lot of feedback from the community pointing out issues with how PrestaShop 1.7 makes shop data available in the front office.

@@ -11,8 +11,8 @@ tags:
  - maintenance
  - patch
  - releases
- - 1.7.4.x
- - 1.7
+ - "1.7.4.x"
+ - "1.7"
 ---
 
 PrestaShop 1.7.4.2 is now available.

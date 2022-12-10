@@ -7,8 +7,8 @@ date:   2017-03-27 09:10:11
 authors: [xavierborderie]
 icon: icon-upload
 tags:
- - 1.7
- - 1.7.1.x
+ - "1.7"
+ - "1.7.1.x"
  - autoupgrade
 ---
 

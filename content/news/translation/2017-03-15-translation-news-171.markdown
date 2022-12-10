@@ -5,7 +5,7 @@ subtitle: "How we tweaked a few things to improve your experience"
 date:   2017-04-13 06:09:47
 authors: [ alexeven ]
 icon: icon-world
-tags: [translation, i18n, l10n, 1.7, 1.7.1.x]
+tags: [translation, i18n, l10n, "1.7", "1.7.1.x"]
 ---
 
 PrestaShop 1.7.1.0 has been shipped with several new features to improve internationalization and localization. Here is a short tour of what's new and how it makes things better for you, both as a merchant and a translator!

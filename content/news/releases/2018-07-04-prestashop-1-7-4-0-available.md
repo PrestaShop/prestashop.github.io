@@ -7,8 +7,8 @@ date:   2018-07-04 17:10:00
 authors: [ AntoineThomas, PrestaShop ]
 icon: icon-checked
 tags:
- - 1.7
- - 1.7.4.x
+ - "1.7"
+ - "1.7.4.x"
  - version
  - minor
  - releases

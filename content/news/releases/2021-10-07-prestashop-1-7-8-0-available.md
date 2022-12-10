@@ -9,8 +9,8 @@ image: /assets/images/2021/10/1780_banner_1200_628.jpg
 icon: icon-leaf
 tags:
  - version
- - 1.7
- - 1.7.8.x
+ - "1.7"
+ - "1.7.8.x"
  - minor
  - releases
 ---

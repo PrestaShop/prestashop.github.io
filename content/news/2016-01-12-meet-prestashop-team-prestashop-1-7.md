@@ -7,7 +7,7 @@ date:   2016-01-12 16:00:00
 authors: [ quentinau ]
 icon: icon-video-camera
 tags:
- - 1.7
+ - "1.7"
  - Team
  - open source dev
 ---

@@ -11,10 +11,10 @@ tags:
  - maintenance
  - patch
  - releases
- - 1.7.3.x
- - 1.7
- - 1.6.1.x
- - 1.6
+ - "1.7.3.x"
+ - "1.7"
+ - "1.6.1.x"
+ - "1.6"
  - security
 ---
 

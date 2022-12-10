@@ -7,7 +7,7 @@ date:  2020-02-12 09:10:11
 authors: [LouiseBonnard]
 icon: icon-puzzle
 image: /assets/images/2020/01/Localization-Packs-image.jpg
-tags: [1.7, i18n, l10n, contribute]
+tags: ["1.7", i18n, l10n, contribute]
 ---
 
 No need to repeat it: PrestaShop is an international solution. We aim at providing highly global features for worldwide users, and it means providing many useful localization packs containing correct and up-to-date information.

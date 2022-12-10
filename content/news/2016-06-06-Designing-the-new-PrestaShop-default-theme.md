@@ -6,7 +6,7 @@ subtitle: "How we rebuilt the front office to suit any merchant"
 date:   2016-06-06 06:09:47
 authors: [ leamendes ]
 icon: icon-pizza
-tags: [theme, 1.7, design, process]
+tags: [theme, "1.7", design, process]
 ---
 
 When merchants use PrestaShop for the first time, they’re offered a basic shop with demo products and a default theme.

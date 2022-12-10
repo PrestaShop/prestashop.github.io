@@ -8,8 +8,8 @@ authors: [ PrestaShop ]
 image: /assets/images/2019/07/176_available_banner.jpg
 icon: icon-checked
 tags:
- - 1.7
- - 1.7.6.x
+ - "1.7"
+ - "1.7.6.x"
  - version
  - minor
  - releases

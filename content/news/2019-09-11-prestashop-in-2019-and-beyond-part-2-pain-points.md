@@ -6,7 +6,7 @@ subtitle: "aka What needs to be improved"
 date:   2019-10-07 08:00:00
 authors: [ PabloBorowicz ]
 icon: icon-compass
-tags: [1.7, architecture]
+tags: ["1.7", architecture]
 ---
 
 This is the second in a [series of articles][introduction] we introduced earlier this year, which aims to describe where we are, where we are going, and some ideas on how we'll get there.

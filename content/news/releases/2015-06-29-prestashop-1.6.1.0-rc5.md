@@ -8,8 +8,8 @@ authors: [ alexeven ]
 icon: icon-leaf
 disqus_url: http://build.prestashop.com/news/prestashop-1.6.1.0-rc5/
 tags:
- - 1.6
- - 1.6.1.x
+ - "1.6"
+ - "1.6.1.x"
  - version
  - rc
  - releases

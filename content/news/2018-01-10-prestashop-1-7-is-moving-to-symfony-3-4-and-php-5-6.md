@@ -7,7 +7,7 @@ date:   2018-01-10 09:10:11
 authors: [ AurelienPelletier ]
 icon: icon-blaster
 tags:
- - 1.7
+ - "1.7"
 ---
 
 Remember? @mickaelandrieu recently introduced the [Symfony ecosystem](http://build.prestashop.com/news/make-back-office-modules-great-again) and how it will help making more powerful modules. Going on with this idea, @toutantic will tell you more about Symfony 3 and PHP 5.6 that will both work together to improve PrestaShop.

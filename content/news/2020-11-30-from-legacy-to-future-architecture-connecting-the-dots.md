@@ -6,7 +6,7 @@ subtitle: "Some ideas on how we'll get from Point A to Point B"
 date:   2020-11-30 09:00:00
 authors: [ PabloBorowicz ]
 icon: icon-compass
-tags: [1.7, architecture]
+tags: ["1.7", architecture]
 
 ---
 

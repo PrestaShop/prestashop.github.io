@@ -9,7 +9,7 @@ authors: [ PrestaShop ]
 icon: icon-checked
 
 tags:
- - 1.7
+ - "1.7"
  - module
  - module-releases
 ---

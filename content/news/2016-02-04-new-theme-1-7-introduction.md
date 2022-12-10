@@ -6,7 +6,7 @@ subtitle: "What will the new PrestaShop look like?"
 date:   2016-02-04 09:00:00
 authors: [ maximebiloe ]
 icon: icon-wand
-tags: [1.7]
+tags: ["1.7"]
 ---
 
 The first beta version for PrestaShop 1.7 is approaching quickly, so we have started to work on the new 1.7 default theme, currently named "He who must *be* named" — tentatively named "classic" for now, for lack of a better name :) It is based on the [Starter Theme](http://build.prestashop.com/tag/starter-theme/) that we've been telling you about here on Build — what best way to test what we've been working on for a while?

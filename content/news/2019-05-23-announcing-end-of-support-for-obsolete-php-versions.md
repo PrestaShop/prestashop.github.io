@@ -7,7 +7,7 @@ date:   2019-05-22 09:10:11
 authors: [ PabloBorowicz ]
 icon: icon-compass
 tags:
- - 1.7
+ - "1.7"
  - architecture
  - development
 ---

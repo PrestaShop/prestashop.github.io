@@ -6,7 +6,7 @@ subtitle: "It's online and focusing on differences between 1.6 and 1.7"
 date:   2016-09-28 10:00:00
 authors: [ julienbourdeau ]
 icon: icon-penknife
-tags: [1.7, documentation]
+tags: ["1.7", documentation]
 ---
 
 PrestaShop 1.7 is a major release: a lot of code has been refactored, new features have been added, and a new way of building themes has been introduced. So, very early in the development release cycle, we decided to write more doc in order to support the designers and developers intending to switch to 1.7.

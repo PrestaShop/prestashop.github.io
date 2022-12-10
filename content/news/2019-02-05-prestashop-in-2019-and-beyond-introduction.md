@@ -6,7 +6,7 @@ subtitle: "Where we are, where we are going, and how will we get there"
 date:   2019-02-05 09:30:00
 authors: [ PabloBorowicz ]
 icon: icon-compass
-tags: [1.7, architecture]
+tags: ["1.7", architecture]
 ---
 
 When working in a project as big and complex as PrestaShop, it's easy to get too focused on what you are doing right now, and lose sight of the big picture. However, it's very important not to do that, because every decision we take must be coherent with a bigger plan. In fact, I think that the only way to allow a project such as this to be sustainable, coherent and predictable, is to consistently challenge every decision in light of a long-term vision.

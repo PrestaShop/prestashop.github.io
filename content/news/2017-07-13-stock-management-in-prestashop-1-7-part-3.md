@@ -7,8 +7,8 @@ date:   2017-07-13 09:10:11
 authors: [ guillaumebruere ]
 icon: icon-archive
 tags:
- - 1.7
- - 1.7.2.x
+ - "1.7"
+ - "1.7.2.x"
  - feature
 ---
 

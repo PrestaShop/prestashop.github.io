@@ -6,7 +6,7 @@ subtitle: "Theme builders: this is for you!"
 date:   2017-04-21 06:09:47
 authors: [ alexeven ]
 icon: icon-gift
-tags: [translation, theme, 1.7, development, i18n]
+tags: [translation, theme, "1.7", development, i18n]
 ---
 
 By now you’re probably aware that the 1.7 version comes with a new translation system and that the theme you are building can benefit from it. However, we didn’t give much details on how it works yet, so here is what you should know if you want to translate your theme for PrestaShop 1.7.

@@ -7,8 +7,8 @@ date:   2015-06-22 18:29:47
 authors: [ jocelynfournier ]
 icon: icon-row-setting
 tags:
- - 1.6
- - 1.6.1.x
+ - "1.6"
+ - "1.6.1.x"
  - performance
 ---
 

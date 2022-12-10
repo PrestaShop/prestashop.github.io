@@ -7,8 +7,8 @@ date:   2017-07-19 09:12:11
 authors: [ maximebiloe ]
 icon: icon-blaster
 tags:
- - 1.7
- - 1.7.2.x
+ - "1.7"
+ - "1.7.2.x"
  - development
 ---
 

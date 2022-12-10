@@ -7,7 +7,7 @@ date:   2020-06-05 11:00:00
 authors: [ JuneByun ]
 image: assets/images/2020/06/help-us-translate-177-dark.png
 icon: icon-world
-tags: [translation, i18n, l10n, 1.7]
+tags: [translation, i18n, l10n, "1.7"]
 ---
 
 PrestaShop 1.7.7 is now freshly baked and ready for translation and validation! Translation files have already been pushed on [Crowdin projects](https://crowdin.com/project/prestashop-official), so you are all set! :wink:

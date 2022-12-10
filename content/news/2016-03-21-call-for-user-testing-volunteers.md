@@ -7,7 +7,7 @@ date:   2016-03-21 17:37:41
 authors: [ xavierborderie ]
 icon: icon-mic
 tags:
- - 1.7
+ - "1.7"
  - ux
  - default-theme
  - product-page

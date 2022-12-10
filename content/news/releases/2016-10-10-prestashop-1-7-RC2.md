@@ -7,8 +7,8 @@ date:   2016-10-10 09:10:11
 authors: [ xavierborderie ]
 icon: icon-leaf
 tags:
- - 1.7
- - 1.7.0.0
+ - "1.7"
+ - "1.7.0.0"
  - version
  - rc
  - releases

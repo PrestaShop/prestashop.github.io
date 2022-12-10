@@ -8,8 +8,8 @@ authors: [ xavierborderie ]
 icon: icon-world
 tags:
  - release
- - 1.6
- - 1.7
+ - "1.6"
+ - "1.7"
 published: true
 ---
 

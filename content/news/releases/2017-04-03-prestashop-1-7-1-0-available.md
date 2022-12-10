@@ -7,8 +7,8 @@ date:   2017-04-03 09:10:11
 authors: [xavierborderie, alexeven]
 icon: icon-checked
 tags:
- - 1.7
- - 1.7.1.x
+ - "1.7"
+ - "1.7.1.x"
  - version
  - minor
  - releases

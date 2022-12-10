@@ -6,7 +6,7 @@ subtitle: "...but were afraid to ask -- a.k.a. the 1.7 FAQ"
 date:   2016-02-11 17:00:00
 authors: [ xavierborderie ]
 icon: icon-chat-alt
-tags: [1.7]
+tags: ["1.7"]
 ---
 
 PrestaShop 1.7 is a major new version, and an important milestone for PrestaShop as a whole. This version is a great step forward for PrestaShop, both for developers with the inclusion of the Symfony framework and the revamping of the theme system, and for merchants with a focus on easing the first sale.<br/>

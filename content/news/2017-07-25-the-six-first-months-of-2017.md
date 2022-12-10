@@ -7,11 +7,11 @@ date:   2017-07-25 09:10:11
 authors: [ xavierborderie ]
 icon: icon-calendar-grid
 tags:
- - 1.7
- - 1.7.1.x
- - 1.7.2.x
- - 1.6
- - 1.6.1.x
+ - "1.7"
+ - "1.7.1.x"
+ - "1.7.2.x"
+ - "1.6"
+ - "1.6.1.x"
  - contribution
 --- 
 

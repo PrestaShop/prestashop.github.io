@@ -8,8 +8,8 @@ authors: [ PrestaShop ]
 image: /assets/images/2020/03/meta-1.7.6.4.jpg
 icon: icon-checked
 tags:
- - 1.7
- - 1.7.6.x
+ - "1.7"
+ - "1.7.6.x"
  - version
  - patch
  - releases

@@ -11,10 +11,10 @@ tags:
  - maintenance
  - patch
  - releases
- - 1.7.3.x
- - 1.7
- - 1.6.1.x
- - 1.6
+ - "1.7.3.x"
+ - "1.7"
+ - "1.6.1.x"
+ - "1.6"
 ---
 
 PrestaShop 1.7.3.3 and 1.6.1.19 are now available. Those maintenance releases fixes specific issues for the GDPR compliance.

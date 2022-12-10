@@ -8,8 +8,8 @@ authors: [ xavierborderie ]
 icon: icon-hourglass
 tags:
  - forge
- - 1.6
- - 1.6.1.x
+ - "1.6"
+ - "1.6.1.x"
  - gardening
 ---
 

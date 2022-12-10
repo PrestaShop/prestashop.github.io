@@ -11,8 +11,8 @@ tags:
  - version
  - patch
  - releases
- - 1.7.8.x
- - 1.7
+ - "1.7.8.x"
+ - "1.7"
 
 ---
 

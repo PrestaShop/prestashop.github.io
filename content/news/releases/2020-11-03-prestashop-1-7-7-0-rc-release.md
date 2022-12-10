@@ -8,7 +8,7 @@ authors: [ PrestaShop ]
 image: /assets/images/2020/12/build-177RC1.png
 icon: icon-leaf
 tags:
- - 1.7.7.x
+ - "1.7.7.x"
  - version
  - rc
  - minor

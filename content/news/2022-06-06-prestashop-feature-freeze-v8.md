@@ -9,7 +9,7 @@ icon: icon-compass
 tags:
  - news
  - version
- - 8.0
+ - "8.0"
 ---
 
 Dear developers and contributors,

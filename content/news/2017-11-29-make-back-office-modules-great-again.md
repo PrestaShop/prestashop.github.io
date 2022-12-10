@@ -7,8 +7,8 @@ date:   2017-11-29 09:10:11
 authors: [ mandrieu ]
 icon: icon-blaster
 tags:
- - 1.7
- - 1.7.3.x
+ - "1.7"
+ - "1.7.3.x"
 ---
 
 Since the release of 1.7.0, we are working hard on improving the way developers can customize and enhancing the quality of PrestaShop.

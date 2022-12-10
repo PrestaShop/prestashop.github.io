@@ -10,7 +10,7 @@ tags:
  - patch
  - version
  - development
- - 1.6
+ - "1.6"
 ---
 
 With the adoption of [SemVer](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)-like versioning, we know that a patch version will only feature non-breaking changes, making it far safer to update to PrestaShop than ever before... and thus safer for us to release patch version more regularly.

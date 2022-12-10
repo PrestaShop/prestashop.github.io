@@ -8,7 +8,7 @@ authors: [ maximebiloe ]
 icon: icon-organisation
 tags:
  - development
- - 1.7
+ - "1.7"
  - theme
 ---
 

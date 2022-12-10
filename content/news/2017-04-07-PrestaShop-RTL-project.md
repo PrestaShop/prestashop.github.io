@@ -9,7 +9,7 @@ icon: icon-align-right
 tags:
  - i18n
  - localization
- - 1.7
+ - "1.7"
  - contribute
 ---
 

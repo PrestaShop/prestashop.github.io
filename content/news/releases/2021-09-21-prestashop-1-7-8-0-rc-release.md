@@ -8,12 +8,12 @@ authors: [ PrestaShop ]
 image: /assets/images/2021/09/178RC-banner_800_418_en.jpg
 icon: icon-leaf
 tags:
- - 1.7.8.x
+ - "1.7.8.x"
  - version
  - rc
  - minor
  - releases
- - 1.7
+ - "1.7"
 ---
 
 A few months after the beta, the first release candidate for PrestaShop 1.7.8.0 is now ready for you to test!

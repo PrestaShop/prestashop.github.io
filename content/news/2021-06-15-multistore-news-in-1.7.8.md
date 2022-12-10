@@ -7,7 +7,7 @@ date:   2021-06-16 09:00:00
 authors: [MarionFrancois]
 icon: icon-lightning
 tags:
- - 1.7.8
+ - "1.7.8"
  - version
  - minor
  - product

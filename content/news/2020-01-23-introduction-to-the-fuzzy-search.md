@@ -7,7 +7,7 @@ date:  2020-01-23 09:10:11
 authors: [TanguySalmon, LouiseBonnard]
 icon: icon-full-screen
 image: /assets/images/theme/meta-logo-build.png
-tags: [1.7.7.x, contribution, feature, community]
+tags: ["1.7.7.x", contribution, feature, community]
 ---
 
 It is always great to see contributions from our community merged, it reminds the power of working on an open-source project. Especially when there are great features at stake, like the fuzzy search.

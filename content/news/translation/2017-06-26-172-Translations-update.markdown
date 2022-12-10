@@ -5,7 +5,7 @@ subtitle: "... with fresh new content to translate!"
 date:   2017-06-26 06:09:47
 authors: [ alexeven ]
 icon: icon-world
-tags: [translation, i18n, l10n, 1.7]
+tags: [translation, i18n, l10n, "1.7"]
 ---
 
 As you might have guessed, [PrestaShop 1.7.2 is on its way](http://build.prestashop.com/news/announcing-our-2017-release-schedule/), and with it some new strings are coming too. We've just updated the [Crowdin project](https://crowdin.com/project/prestashop-official) to add the strings that appeared since v1.7.1.0: PrestaShop 1.7.2 is now open for translation!

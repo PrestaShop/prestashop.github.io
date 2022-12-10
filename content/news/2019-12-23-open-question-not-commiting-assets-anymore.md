@@ -7,7 +7,7 @@ date:   2020-01-17 08:00:00
 authors: [ PierreRambaud, PrestaShop ]
 icon: icon-chat
 image: /assets/images/theme/meta-logo-build.png
-tags: [1.7, development, community]
+tags: ["1.7", development, community]
 ---
 
 

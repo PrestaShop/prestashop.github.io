@@ -11,8 +11,8 @@ tags:
  - security
  - patch
  - releases
- - 1.7.2.x
- - 1.7
+ - "1.7.2.x"
+ - "1.7"
  - security
 ---
 

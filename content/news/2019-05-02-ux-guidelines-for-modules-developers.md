@@ -26,8 +26,7 @@ This document is a first step in our ambition to provide more resources and help
 
 We wish you a good reading, don’t hesitate to give us your feedback ;) 
 
-[Download the UX guide in PDF](http://build.prestashop.com/assets/docs/UX-Guide-Module-Developers.pdf){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "http://build.prestashop.com/assets/docs/UX-Guide-Module-Developers.pdf" >}}Download the UX guide in PDF{{< /cta >}}
 
 ## More
 

@@ -119,6 +119,5 @@ If you have not joined us on Crowdin yet, [it is never too late](https://crowdin
 
 You can also join the #translation channel of the PrestaShop open source Slack. On this channel, I share information about the translation project. You will also be informed about the publication of the Crowdin monthly report. Of course, you will also be able to ask questions, suggest ideas, or get in touch with other translators.
 
-[Join us on Slack](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg" >}}Join us on Slack{{< /cta >}}
 

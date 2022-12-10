@@ -19,8 +19,7 @@ We are happy to announce that [PrestaShop 1.7.0.0](https://www.prestashop.com/en
 
 The release of this second Beta version is another important milestone in the current period of intensive testing and debugging by the PrestaShop developers.
 
-[Test PrestaShop 1.7.0.0 Beta 2 now!](https://www.prestashop.com/versions ){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions " >}}Test PrestaShop 1.7.0.0 Beta 2 now!{{< /cta >}}
 
 <br/>
 

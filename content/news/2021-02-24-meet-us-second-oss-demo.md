@@ -13,8 +13,7 @@ As announced [previously](https://build.prestashop.com/news/first-public-oss-dem
 
 It will be streamed live on our newly created YouTube channel. Please find the link to join us below:
 
-[Join us on YouTube!](https://youtu.be/JBvJgoo-rLg){: .btn .btn-lg .btn-info}
-{: .text-center}
+{{< cta "https://youtu.be/JBvJgoo-rLg" "info" >}}Join us on YouTube!{{< /cta >}}
 
 The session will be kept in record on YouTube, so that even if you can't attend to the live stream, you will still be able to catch up later.
 

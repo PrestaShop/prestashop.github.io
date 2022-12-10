@@ -20,8 +20,7 @@ PrestaShop 1.6.1.22 is now available. It fixes an important bug introduced in 1.
 - A backported patch from 1.7.x was missing a line of code. This issue is not noticeable right away, but it can block a shop after a short number of days. Shops in 1.6.1.21 must upgrade to 1.6.1.22 as soon as possible.
 
 
-[Download PrestaShop now!](https://download.prestashop.com/download/releases/prestashop_1.6.1.22.zip ){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://download.prestashop.com/download/releases/prestashop_1.6.1.22.zip " >}}Download PrestaShop now!{{< /cta >}}
 
 Here is the [complete list of changes for 1.6.1.22](https://github.com/PrestaShop/PrestaShop/milestone/48?closed=1)
 

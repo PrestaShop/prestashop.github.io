@@ -62,7 +62,6 @@ Contributors to this patch version, from both the Core team and the community at
 
 Thank you!
 
-[Download PrestaShop 1.7.8.8 now!](https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.8){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.8" >}}Download PrestaShop 1.7.8.8 now!{{< /cta >}}
 
 Since version 1.7.8.8 is a “patch” update to version 1.7.8.7, upgrading from any 1.7.8.x version will be easy: features will work better, modules and themes which worked fine on 1.7.8.7, will work just as well with 1.7.8.8. Upgrades from a standard 1.7.8.x version should work just as well.

@@ -61,8 +61,7 @@ Below are security changes we added in this version:
 Contributors to this patch version, from both the core team and the community at large, are Thomas Baccelli, Pablo Borowicz, Mathieu Ferment, Maxim Krizhanovsky, Franck Lefèvre, Jonathan Lelievre, Pierre Rambaud, Matthieu Rolland, Valentin Szczupak, and Michael Voříšek. Thank you very much!
 
 
-[Download PrestaShop 1.7.6.3 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.6.3 now!{{< /cta >}}
 
 
 Since version 1.7.6.3 is a “patch” update to version 1.7.6.2, upgrading from any 1.7.6 version will be easy: features will work better, and modules & themes which worked fine on 1.7.6.x will work just as well with 1.7.6.3. Upgrades from a standard 1.7.x version should work just as well.

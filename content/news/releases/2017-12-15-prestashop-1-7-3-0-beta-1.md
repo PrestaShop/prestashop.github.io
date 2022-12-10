@@ -25,8 +25,7 @@ However, note that it is a beta version, not a release candidate. Despite all th
 
 While we are working hard on it, we can’t wait to receive your feedback about the beta version! As usual, this period of testing and fixing is crucial, and it always goes with the help of any merchant, service provider, module developer or theme designer who can test it and let us know about their experience. An effective testing of the beta will indeed lead towards a proper release candidate.
 
-[Test PrestaShop 1.7.3.0 beta 1 now!](https://www.prestashop.com/en/release-notes-1-7-3-0-beta){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/en/release-notes-1-7-3-0-beta" >}}Test PrestaShop 1.7.3.0 beta 1 now!{{< /cta >}}
 
 This beta release is a great opportunity for you to start working with it before we release a stable version. Go download and install this Beta version as a test store, either on your machine or your web hosting, then play with it – and [give us your feedback](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)!
 
@@ -82,7 +81,6 @@ Have you found a bug? A curious behavior? An unexpected reaction? Please let us 
 
 As you might have guessed, a lot of work went into this beta version, and there is still a lot of work to be done in order to get it ready for release. So help us, download and test it, because you too can help with pull requests for bugs that you noticed!
 
-[Test PrestaShop 1.7.3.0 beta 1 now!](https://www.prestashop.com/en/release-notes-1-7-3-0-beta){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/en/release-notes-1-7-3-0-beta" >}}Test PrestaShop 1.7.3.0 beta 1 now!{{< /cta >}}
 
 Happy testing, and thanks again!

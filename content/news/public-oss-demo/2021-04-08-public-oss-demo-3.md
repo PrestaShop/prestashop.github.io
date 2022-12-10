@@ -25,8 +25,7 @@ The session's agenda was as follows:
 
 You can use the timestamps to jump directly to the parts you want to watch.
 
-[Watch the replay on YouTube](https://youtu.be/UJ_XQs8trs4){: .btn .btn-lg .btn-info}
-{: .text-center}
+{{< cta "https://youtu.be/UJ_XQs8trs4" "info" >}}Watch the replay on YouTube{{< /cta >}}
 
 ## Next session in April
 

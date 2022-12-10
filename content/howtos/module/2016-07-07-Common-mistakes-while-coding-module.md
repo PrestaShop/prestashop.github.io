@@ -19,10 +19,6 @@ Here is a list of 10+ common mistakes when coding a PrestaShop module, with a sh
 Several tips only apply to PrestaShop 1.5-1.6 module development. <a href="http://build.prestashop.com/news/module-development-changes-in-17/">PrestaShop 1.7 changes a few things</a>!
 </div>
 
-* TOC
-{:toc}
-
-
 ### 1. Creating/using a module with hardcoded database prefix
 
 This can be surprising to some but, yes, I saw this a few times: developers using the "ps\_" prefix in their SQL schemas, or SQL queries. 

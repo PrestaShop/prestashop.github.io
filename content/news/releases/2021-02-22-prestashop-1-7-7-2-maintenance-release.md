@@ -96,8 +96,7 @@ Thank you!
 
 A special version co-released by our maintainer Pululu Kinanga ([@Pululuk](https://github.com/Pululuk)) from [l'Agence123](https://www.lagence123.com/) and the PrestaShop team. They helped us to deliver this patch version. This is a new step towards the independence of the open-source project.
 
-[Download PrestaShop 1.7.7.2 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.7.2 now!{{< /cta >}}
 
 For any upgrades problems or PrestaShop’s bugs, please create a new issue [here](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
 

@@ -37,8 +37,7 @@ We're currently working on a translator guide so that we can:
 It will soon be available as a downloadable PDF and a dedicated page on Build.
 In the meantime, if you want to help us in giving you the right information, we need your feedback:
 
-[Answer our translator survey](http://goo.gl/forms/Z89Op32207){: .btn .btn-lg .btn-info}
-{: .text-center}
+{{< cta "http://goo.gl/forms/Z89Op32207" "info" >}}Answer our translator survey{{< /cta >}}
 
 Thank you!
 

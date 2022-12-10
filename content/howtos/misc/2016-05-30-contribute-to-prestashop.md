@@ -18,6 +18,5 @@ As we want to be sure that your contributions don’t get lost and are quickly u
 
 Thank you for your interest in contributing: let’s make PrestaShop the best solution out there all together!
 
-[Download the PDF guide](https://www.prestashop.com/en/system/files/filedepot/9/prestashop-how_to_contribute.pdf){: .btn .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/en/system/files/filedepot/9/prestashop-how_to_contribute.pdf" >}}Download the PDF guide{{< /cta >}}
 

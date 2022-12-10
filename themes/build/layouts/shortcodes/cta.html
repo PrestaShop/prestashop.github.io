@@ -1,0 +1,3 @@
+<p class="text-center">
+  <a href="{{ .Get 0 }}" class="btn btn-lg btn-{{ with .Get 1 }}{{ . }}{{ else }}success{{ end }}">{{ .Inner }}</a>
+</p>

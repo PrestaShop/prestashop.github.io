@@ -15,8 +15,7 @@ tags:
 
 It has been in the pipeline for a while, it's now official, PrestaShop 1.6.1.11 will ship soon, most notably with some patches concerning the advanced stock management.
 
-[Try 1.6.1.11 beta now!](https://download.prestashop.com/download/old/prestashop_1.6.1.11-beta.zip){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://download.prestashop.com/download/old/prestashop_1.6.1.11-beta.zip" >}}Try 1.6.1.11 beta now!{{< /cta >}}
 
 **In beta at first**, it will allow you to judge the stability of this release, and of the important fixes that have been applied to this version. **So your feedback is really important to us!**
 
@@ -99,5 +98,4 @@ You can open a [Forge issue](http://forge.prestashop.com) and flag your problem 
 
 **We hope you'll like these fixes!**
 
-[Try 1.6.1.11 beta now!](https://download.prestashop.com/download/old/prestashop_1.6.1.11-beta.zip){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://download.prestashop.com/download/old/prestashop_1.6.1.11-beta.zip" >}}Try 1.6.1.11 beta now!{{< /cta >}}

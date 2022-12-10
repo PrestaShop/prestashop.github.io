@@ -21,8 +21,7 @@ As always during this period of testing and fixing, we need feedback from any me
 
 The release of this Beta 3 is another step in the current period of intensive testing and debugging by the PrestaShop developers, towards a proper RC and eventual release.
 
-[Test PrestaShop 1.7.0.0 Beta 3 now!](https://www.prestashop.com/versions ){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions " >}}Test PrestaShop 1.7.0.0 Beta 3 now!{{< /cta >}}
 
 <br/>
 

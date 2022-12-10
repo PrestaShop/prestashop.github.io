@@ -19,8 +19,7 @@ Translations for PrestaShop 1.7 are now available on [Crowdin](https://crowdin.c
 
 It means you can start translating PrestaShop 1.7, to make sure it's available in your language when this new major version is released!
 
-[Translate PrestaShop 1.7](https://crowdin.com/project/prestashop-official){: .btn .btn-lg .btn-info}
-{: .text-center}
+{{< cta "https://crowdin.com/project/prestashop-official" "info" >}}Translate PrestaShop 1.7{{< /cta >}}
 
 As a reminder, [PrestaShop 1.7 is still in Beta phase]().
 
@@ -76,5 +75,4 @@ Now is the time to translate PrestaShop 1.7 :D
 
 Thank you for your contribution to the PrestaShop project!
 
-[Translate PrestaShop 1.7](https://crowdin.com/project/prestashop-official){: .btn .btn-lg .btn-info}
-{: .text-center}
+{{< cta "https://crowdin.com/project/prestashop-official" "info" >}}Translate PrestaShop 1.7{{< /cta >}}

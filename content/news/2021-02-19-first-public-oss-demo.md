@@ -50,12 +50,10 @@ The first session agenda was as follows:
 
 You can use the timestamps to jump directly to the parts you want to watch.
 
-[Watch the replay on YouTube](https://www.youtube.com/watch?v=pski9AHrAp0){: .btn .btn-lg .btn-info}
-{: .text-center}
+{{< cta "https://www.youtube.com/watch?v=pski9AHrAp0" "info" >}}Watch the replay on YouTube{{< /cta >}}
 
 ## Next step, second session on the 25th of February
 
 The next session of "public PrestaShop open source demonstrations" is scheduled for **the 25th of February at 2pm CET** – that's next Thursday! If you want to learn more about the PrestaShop project... see you there!
 
-[Join us on YouTube for the second session!](https://youtu.be/JBvJgoo-rLg){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://youtu.be/JBvJgoo-rLg" >}}Join us on YouTube for the second session!{{< /cta >}}

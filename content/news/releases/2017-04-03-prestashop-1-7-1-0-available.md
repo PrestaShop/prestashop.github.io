@@ -21,8 +21,7 @@ The feedback we received from the [beta version of v1.7.1.0](http://build.presta
 
 ![What’s in the box?](/assets/images/2017/03/1710-header.jpg)
 
-[Download 1.7.1.0 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download 1.7.1.0 now!{{< /cta >}}
 
 Let’s dive in, shall we?
 

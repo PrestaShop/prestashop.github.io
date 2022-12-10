@@ -95,8 +95,7 @@ If you are looking for more details about all changes and new features expected 
 
 You can download PrestaShop 1.7.7.0 here:
 
-[Download PrestaShop 1.7.7.0 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.7.0 now!{{< /cta >}}
  
 PrestaShop 1.7.7.0 is also available through the 1-Click Upgrade module. 
 

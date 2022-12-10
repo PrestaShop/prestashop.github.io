@@ -172,7 +172,6 @@ Thank you again for helping improve the life of more than 270,000 online merchan
 You can download PrestaShop 1.7.5.0 here:
 
 
-[Download PrestaShop 1.7.5.0 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.5.0 now!{{< /cta >}}
  
 And don’t forget to [give us your feedback](https://github.com/PrestaShop/PrestaShop/issues/new/choose)! 

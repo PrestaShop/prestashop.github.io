@@ -21,8 +21,7 @@ The event will be held at the [Cité de la Mode et du Design](http://www.citemod
 
 This year, the theme is "**Inspire. Learn. Grow. Share.**" There is much to say about each, and [it shows in the schedule](http://www.prestashopday.com/fr/program/)!
 
-[Book your ticket now!](http://www.prestashopday.com/fr/eventbrite/){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "http://www.prestashopday.com/fr/eventbrite/" >}}Book your ticket now!{{< /cta >}}
 
 And don't forget the two community events tagging along!
 

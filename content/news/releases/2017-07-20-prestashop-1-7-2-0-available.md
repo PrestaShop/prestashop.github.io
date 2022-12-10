@@ -19,8 +19,7 @@ Dear community. You've all been waiting for it. So have we. PrestaShop 1.7.2.0 i
 
 We know you expected a lot from the next minor version, and we didn't want to let you down. It closes almost twice as many pull requests as 1.7.1.0, 1.7.1.1 and 1.7.1.2 _combined_ (126 vs. 203), and we took a month more of testing and improving it.
 
-[Download PrestaShop 1.7.2.0 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.2.0 now!{{< /cta >}}
 
 The previous version, released in early April 2017, brought many of the things that you wanted v1.7.0.0 to have: several native modules were available again (cross-selling, specials/discounts, best-sellers, etc.), the PayPal module made its come back, several improvements were made to the back office (including a unified mobile design)... All the while improving stabilization and performance.
 
@@ -104,5 +103,4 @@ Special thanks to @martinfojtik and @prestamodule, who are each responsible for 
 
 Now go ahead and tell us what you think!
 
-[Download PrestaShop 1.7.2.0 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.2.0 now!{{< /cta >}}

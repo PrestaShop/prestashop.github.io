@@ -25,8 +25,7 @@ The new 1.7.8 strings were added to Crowdin for the first time at the end of May
 Until now, to exchange with the community, we used the “Discussions” tab on Crowdin. But this option seemed a bit limited as it is not possible to share images, and there is little interaction. That’s why we decided to open a **Slack channel dedicated to the PrestaShop translators**. 
 On this channel, I will share information about the translation project. You will also be informed about the publication of the Crowdin monthly report. Of course, you will also be able to ask questions, suggest ideas, or get in touch with other translators.
 
-[Join us on Slack](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg" >}}Join us on Slack{{< /cta >}}
 
 Join us on the PrestaShop Open Source Slack! When you’re in, you will be able to join the #translation channel.
 

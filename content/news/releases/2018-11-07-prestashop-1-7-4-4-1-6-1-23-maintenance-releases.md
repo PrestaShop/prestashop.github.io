@@ -43,8 +43,7 @@ Changes for 1.6.1.23:
 [Complete list of changes for 1.6.1.23](https://github.com/PrestaShop/PrestaShop/releases/tag/1.6.1.23)
 
 
-[Download PrestaShop now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop now!{{< /cta >}}
 
 
 Contributors to this patch versions, from both the Core team and the community at large: 

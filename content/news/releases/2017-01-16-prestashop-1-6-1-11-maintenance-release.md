@@ -21,8 +21,7 @@ Continuing on our promise to support 1.6 with patch releases, we are happy to de
 
 This version is also important because it fixes several long-standing issues with Advanced Stock Management, as explained in [the article presenting the beta of 1.6.1.11](http://build.prestashop.com/news/prestashop-1-6-1-11-beta/). We received no negative feedback about those changes, 
 
-[Download 1.6.1.11 now!](https://www.prestashop.com/versions#previous-version){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions#previous-version" >}}Download 1.6.1.11 now!{{< /cta >}}
 
 As the version number indicates (as per [our SemVer-like versioning](http://build.prestashop.com/news/a-more-semantic-versioning-scheme/)), this is the 11th patch release for PrestaShop 1.6.1.0.<br/>
 

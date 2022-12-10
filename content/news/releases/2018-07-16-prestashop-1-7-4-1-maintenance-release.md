@@ -23,8 +23,7 @@ Some of the most notable fixes are:
 * Fix display issues on some modules.
 
 
-[Download PrestaShop 1.7.4.1 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.4.1 now!{{< /cta >}}
 
 
 Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/milestone/40?closed=1):

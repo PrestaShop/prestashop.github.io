@@ -19,8 +19,7 @@ The first Beta version for PrestaShop 1.7.0.0 is now ready for you to test!
 
 We are happy to announce that the development branch of [version 1.7 has reached the Beta state](https://www.prestashop.com/en/1.7), and we can’t wait to receive your feedback as a merchant, a service provider, a module developer or a theme designer.
 
-[Test PrestaShop 1.7.0.0 Beta 1 now!](https://www.prestashop.com/versions ){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions " >}}Test PrestaShop 1.7.0.0 Beta 1 now!{{< /cta >}}
 
 <br/>
 
@@ -34,8 +33,7 @@ Go download and install this Beta version as a test store, either on your machin
 The release of this first Beta version starts a period of intensive testing and debugging for the PrestaShop developers, with the help of the whole community: we need YOU to test this new version of PrestaShop.<br/>
 Change the settings, browse the default theme, check if the modules that you created still work as-is (or with tiny design adaptations), etc. And most importantly, let us know about your findings!
 
-[Test PrestaShop 1.7.0.0 Beta 1 now!](https://www.prestashop.com/versions ){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions " >}}Test PrestaShop 1.7.0.0 Beta 1 now!{{< /cta >}}
 
 Subsequent beta and RC versions will be released as needed, and we will post on this blog when this happens.
 
@@ -164,8 +162,7 @@ Here are the main changes since [the last public alpha version](http://build.pre
 
 So cheers for this glance at the brand new 1.7, made with <3 by our team and our wonderful Community. It’s not fully baked yet, but we’re very proud of the work done.
 
-[Test PrestaShop 1.7.0.0 Beta 1 now!](https://www.prestashop.com/versions ){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions " >}}Test PrestaShop 1.7.0.0 Beta 1 now!{{< /cta >}}
 
 We’ll closely monitor your feedback, and are eager to hear from you!
 

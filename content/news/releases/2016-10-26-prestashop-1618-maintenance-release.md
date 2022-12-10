@@ -19,8 +19,7 @@ PrestaShop 1.6.1.8 is now available. This maintenance release [has seen 20 pull 
 
 Continuing on our promise to support 1.6 with patch releases, we are happy to deliver this new version and to continue making sure that 1.6 remains stable and safe for PrestaShop merchants. Community member @firstred helped us pick the most interesting/urgent pull-requests to include in this release: thank you Michael!
 
-[Download 1.6.1.8 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download 1.6.1.8 now!{{< /cta >}}
 
 ### Current issue when creating/editing a product in PS 1.5 and 1.6
 

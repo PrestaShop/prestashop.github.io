@@ -30,8 +30,7 @@ We're working on a whole new translation system, to make things easier for trans
 We've also published a new [Translator's Guide](http://build.prestashop.com/howtos/translation/new-translator-guide-available-now/) to help you getting familiar with PrestaShop translation project. If you haven't done it yet, get it now!
 We'd be happy to hear from you, if you think we should add some content or answer more of your concerns.
 
-[Get the Translator Guide](http://build.prestashop.com/assets/ext/PrestaShop_Translator_Guide.pdf){: .btn .btn-info}
-{: .text-center}
+{{< cta "http://build.prestashop.com/assets/ext/PrestaShop_Translator_Guide.pdf" "info" >}}Get the Translator Guide{{< /cta >}}
 
 
 Now let's get back to our Crowdin project, and the full report of its activity in May:

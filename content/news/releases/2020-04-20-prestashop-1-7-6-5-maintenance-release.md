@@ -101,8 +101,7 @@ Franck Lefèvre, Ibrahima Sow, Jonathan Lelievre, Louise Bonnard, Matthieu Rolla
 Thank you!
 
 
-[Download PrestaShop 1.7.6.5 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.6.5 now!{{< /cta >}}
 
 
 

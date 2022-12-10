@@ -20,8 +20,7 @@ We started tracking the number of words translated, to see how it evolved. Trans
 So here it is, you can view the ranking of top translators, and see how much they contributed to PrestaShop! Let's thank them for their dedication!
 
 
-[Visit the translators page](http://translators.prestashop.com/){: .btn .btn-lg .btn-info}
-{: .text-center}
+{{< cta "http://translators.prestashop.com/" "info" >}}Visit the translators page{{< /cta >}}
 
 
 ## What's this all about?
@@ -66,5 +65,4 @@ The translator page is updated **every Monday** so you can see the evolution on 
 
 What do you think? Any feedback or question? Don't hesitate to leave a comment!
 
-[Visit the translators page](http://translators.prestashop.com/){: .btn .btn-lg .btn-info}
-{: .text-center}
+{{< cta "http://translators.prestashop.com/" "info" >}}Visit the translators page{{< /cta >}}

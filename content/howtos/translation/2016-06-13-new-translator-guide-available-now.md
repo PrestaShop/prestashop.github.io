@@ -30,8 +30,7 @@ We’ve also added a FAQ to answer the major hurdles you might have to face.
 
 You can download the Translator’s guide here:
 
-[Download the PDF guide](http://build.prestashop.com/assets/ext/PrestaShop_Translator_Guide.pdf){: .btn .btn-success}
-{: .text-center}
+{{< cta "http://build.prestashop.com/assets/ext/PrestaShop_Translator_Guide.pdf" >}}Download the PDF guide{{< /cta >}}
 
 If you want to contribute in any other way to PrestaShop (for code, documentation, support, or bug reporting), check our [How to contribute guide](http://build.prestashop.com/assets/ext/prestashop-how_to_contribute.pdf).
 

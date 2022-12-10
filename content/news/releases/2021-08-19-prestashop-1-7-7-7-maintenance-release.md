@@ -36,8 +36,7 @@ One critical bug has been fixed in 1.7.7.7:
 
 Many thanks to [@idnovate](https://github.com/idnovate) for reporting the bug and providing a patch!
 
-[Download PrestaShop 1.7.7.7 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.7.7 now!{{< /cta >}}
 
 For any upgrades problems or PrestaShop’s bugs, please create a new issue [here](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
 

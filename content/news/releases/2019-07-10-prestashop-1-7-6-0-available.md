@@ -25,8 +25,7 @@ It has been quite a journey to deliver this huge release, our biggest yet since 
 In this version we focused on improving and bringing back important 1.6 features to merchants, and kept working on code quality and performance improvements. We have made important progress on the Symfony migration as well.
 
 
-[Download PrestaShop 1.7.6.0 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.6.0 now!{{< /cta >}}
 
 <div class="alert alert-warning" role="alert">
 <h4><i class='icon-warning'> </i>Be careful!</h4>
@@ -182,8 +181,7 @@ Thank you again for helping improve the lives of more than 300,000 online mercha
 
 You can download PrestaShop 1.7.6.0 here:
 
-[Download PrestaShop 1.7.6.0 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.6.0 now!{{< /cta >}}
 
 PrestaShop 1.7.6 is also available through the 1-Click Upgrade module.
 Please use the v4.9.0 version of the module to avoid compatibility issues with PS 1.7.6.

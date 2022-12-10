@@ -94,8 +94,7 @@ Alexandre BRU, Boubker Bribri, Daniel Hlavacek, Franck Lefèvre, Hibatallah Aoua
 
 Thank you !
 
-[Download PrestaShop 1.7.8.1 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.8.1 now!{{< /cta >}}
 
 To report upgrade problems or bugs in PrestaShop, please create a new issue [here](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
 

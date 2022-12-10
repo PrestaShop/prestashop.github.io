@@ -234,8 +234,7 @@ The 8 weeks we spent iterating over a new stock management interface were really
 
 It is thanks to this precious user feedback that we could iterate upon several prototype versions. You want to be part of the next test sessions and help us improve PrestaShop’s stock management system? Then register today!
 
-[Register!](https://prestashop-testing.typeform.com/to/OJ0UFi){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://prestashop-testing.typeform.com/to/OJ0UFi" >}}Register!{{< /cta >}}
 
 Of course your participation is optional but we would be really happy if you accept to take part in the tests. The more people participate, the more we can improve PrestaShop. If you accept, depending on your profile, you’ll receive an invitation in the coming weeks for a test session. Tests are done remotely (on Skype or Google Hangouts) and usually last 30 minutes. It can be done in English or French.
 

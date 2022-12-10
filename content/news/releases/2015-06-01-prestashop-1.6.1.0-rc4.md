@@ -59,5 +59,4 @@ If you are a developer and you know how to fix an issue, open a Pull Request on 
 
 Happy testing, and thank you for your help!
 
-[Test PrestaShop 1.6.1.0 RC4](https://www.prestashop.com/download/private/prestashop_1.6.1.0-RC4.zip){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/download/private/prestashop_1.6.1.0-RC4.zip" >}}Test PrestaShop 1.6.1.0 RC4{{< /cta >}}

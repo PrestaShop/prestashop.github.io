@@ -27,8 +27,7 @@ Some of the most notable fixes are:
 * Updated design for the modules page and other layouts improvements
 * Improved translation page (yes, again ^^)
 
-[Download PrestaShop 1.7.2.1 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.2.1 now!{{< /cta >}}
 
 Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr%20milestone%3A1.7.2.1):
 

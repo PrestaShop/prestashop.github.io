@@ -22,8 +22,7 @@ We know that some of you may have been waiting for the .1 version of 1.7 to try 
 Version 1.7 is such a fundamental change to the PrestaShop codebase that our beloved community found issues that weren't spotted by our QA team. Thank you for contributing with eyeballs and pull requests!  
 We aim at fixing critical and blocking issues in 1.7 with regular releases, packing a few specific fixes (in order to limit regression potential). Prepare yourself to see more patch releases in the coming weeks while we review the feedback from the community.
 
-[Download 1.7.0.1 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download 1.7.0.1 now!{{< /cta >}}
 
 <div class="alert alert-important" role="alert">
 Want to upgrade using the 1-Click Upgrade module? Make sure to upgrade the module first! This way you will have access to a new, 1.7-specific channel, which makes upgrading safer for merchants. Upgrading from 1.7.0.0 to 1.7.0.1 should be smooth as silk -- but do a safety backup anyway :)

@@ -20,8 +20,7 @@ Dear community, after a little bit more than four months, the new minor version 
 
 ![174 Available](/assets/images/2018/07/174-release.jpg)
 
-[Download PrestaShop 1.7.4.0 now!](https://download.prestashop.com/download/releases/prestashop_1.7.4.0.zip){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://download.prestashop.com/download/releases/prestashop_1.7.4.0.zip" >}}Download PrestaShop 1.7.4.0 now!{{< /cta >}}
 
 
 <div class="alert alert-warning" role="alert">
@@ -139,5 +138,4 @@ A huge “thank you!” to these 81 fine people: 123monsite-regis, Adam, Adonis 
 
 Thank you again for helping improve the life of more than 270,000 online merchants with ideas, improvements, and fixes!
 
-[Download PrestaShop 1.7.4.0 now!](https://download.prestashop.com/download/releases/prestashop_1.7.4.0.zip){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://download.prestashop.com/download/releases/prestashop_1.7.4.0.zip" >}}Download PrestaShop 1.7.4.0 now!{{< /cta >}}

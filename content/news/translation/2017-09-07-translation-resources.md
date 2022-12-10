@@ -30,8 +30,7 @@ You can contribute to the Crowdin project more easily by using the **Live Transl
 It makes it possible to translate PrestaShop directly from your own shop and administration panel.<br/>
 You’ll see strings in their original context, and you can translate them on the go. It’s much easier!
 
-[Get the Live Translation module](http://build.prestashop.com/assets/ext/ps_livetranslation.zip){: .btn .btn-lg .btn-info}
-{: .text-center}
+{{< cta "http://build.prestashop.com/assets/ext/ps_livetranslation.zip" "info" >}}Get the Live Translation module{{< /cta >}}
 
 ### How to use the module
 

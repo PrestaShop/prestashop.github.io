@@ -118,8 +118,7 @@ The following issues are not considered edge cases and won't block the release o
 
 You can download PrestaShop 1.7.7 RC1 here:
 
-[Download PrestaShop 1.7.7 RC1 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.7 RC1 now!{{< /cta >}}
 
 
 ## How to help finish the 1.7.7

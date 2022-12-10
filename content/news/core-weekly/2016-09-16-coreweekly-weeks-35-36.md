@@ -17,8 +17,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 
 We released version 1.6.1.7 in early September. It's a recommended upgrade for any 1.6 user, and a **must-update** for 1.6.1.6 users, since it fixes a possibly nasty issue with vouchers. Please, 1.6.1.6 users: upgrade now, and help your friends upgrade!
 
-[Download 1.6.1.7 now!](https://www.prestashop.com/en/download){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/en/download" >}}Download 1.6.1.7 now!{{< /cta >}}
 
 As for 1.7, as you can see in the code changes for the develop branch, there has been A LOT of changes to 1.7 since RC0: many fixes, several improvements, and some cool new features as well. For instance, did you see that PrestaShop now features a child-theme system? [Read the early doc](https://github.com/PrestaShop/docs/blob/1e42706321e583623de60db3d6c314052d81415a/themes/smarty/parent-child-feature.rst), and try it out!
 

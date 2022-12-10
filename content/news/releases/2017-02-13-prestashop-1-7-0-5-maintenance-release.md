@@ -19,8 +19,7 @@ PrestaShop 1.7.0.5 is now available. This maintenance release closes [29 issues]
 
 We are happy to deliver the fifth "patch" release of PrestaShop 1.7.0.0. Version 1.7 of PrestaShop keeps being used by new online stores, and we keep working at fixing the issues that are reported to, making regular improvements to the codebase. Have you found an issue in PrestaShop 1.7? [Create a detailed Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1), so that we can reproduce it and fix it!
 
-[Download 1.7.0.5 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download 1.7.0.5 now!{{< /cta >}}
 
 <div class="alert alert-important" role="alert">
 Want to upgrade using the 1-Click Upgrade module? Make sure to upgrade the module itself first! This way you will have access to a new, 1.7-specific channel, which makes upgrading safer for merchants. Upgrading from 1.7.0.0 to 1.7.0.5 should be smooth as silk -- but do a safety backup anyway :)

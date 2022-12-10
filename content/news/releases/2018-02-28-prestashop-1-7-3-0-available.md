@@ -21,8 +21,7 @@ After six months of blood, sweat, and tears (okay, we’re just kidding), here i
 
 ![173 Available](/assets/images/2018/02/173_Release.jpg)
 
-[Download PrestaShop 1.7.3.0 now!](https://download.prestashop.com/download/releases/prestashop_1.7.3.0.zip){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://download.prestashop.com/download/releases/prestashop_1.7.3.0.zip" >}}Download PrestaShop 1.7.3.0 now!{{< /cta >}}
 
 Innovation is a central feature of this release, with an exciting new project that places a new generation of security and technology at the center of PrestaShop: [**PrestaTrust**](https://www.prestashop.com/en/prestatrust), which will help in providing a more secure environment for module developers as well as merchants.
 
@@ -116,5 +115,4 @@ Thank you again for helping improve the life of more than 270,000 online merchan
  
 Now go ahead and tell us what you think!
 
-[Download PrestaShop 1.7.3.0 now!](https://download.prestashop.com/download/releases/prestashop_1.7.3.0.zip){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://download.prestashop.com/download/releases/prestashop_1.7.3.0.zip" >}}Download PrestaShop 1.7.3.0 now!{{< /cta >}}

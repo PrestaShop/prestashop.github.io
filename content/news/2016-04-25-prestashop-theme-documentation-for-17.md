@@ -18,8 +18,7 @@ With the Starter Theme, we introduce many new ways of developing themes, we reor
 Obviously we had to provide documentation since all you already knew about theme development with prestashop might have changed. Don't worry, there is nothing crazy about it, it still relies on Smarty and (pretty much) the same front controller list. **After 15 minutes you will feel at home again**.
 
 
-[Read PrestaShop Theme Documentation](https://github.com/PrestaShop/docs){: .btn .btn-lg .btn-default}
-{: .text-center}
+{{< cta "https://github.com/PrestaShop/docs" "default" >}}Read PrestaShop Theme Documentation{{< /cta >}}
 
 
 

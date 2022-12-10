@@ -66,8 +66,7 @@ If you are a developer and you know how to fix an issue, open a Pull Request on 
 
 Thanks again for your help!
 
-[Test PrestaShop 1.6.1.0 RC5](https://www.prestashop.com/download/old/prestashop_1.6.1.0-rc5.zip){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/download/old/prestashop_1.6.1.0-rc5.zip" >}}Test PrestaShop 1.6.1.0 RC5{{< /cta >}}
 
 ## Release date for PrestaShop 1.6.1.0
 

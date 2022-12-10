@@ -75,8 +75,7 @@ Of course, don't forget to backup before.
     - #11937: Check if intl is installed in installer
 
 
-[Download PrestaShop 1.7.5.1 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.5.1 now!{{< /cta >}}
 
 Contributors to this patch versions, from both the Core team and the community at large: Jonathan Lelievre, Mathieu Ferment, Mickaël Andrieu, Pablo Borowicz, Pierre RAMBAUD, rdy4ever, Thomas Nabord. Thank you!
 

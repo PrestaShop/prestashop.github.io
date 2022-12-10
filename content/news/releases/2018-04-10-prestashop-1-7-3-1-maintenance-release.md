@@ -24,8 +24,7 @@ Some of the most notable fixes are:
 * Improved Product page performance when there's a high number of product combinations [BOOM-2950](http://forge.prestashop.com/browse/BOOM-2950)
 * The stock quantity for packs is now correctly calculated [BOOM-4361](http://forge.prestashop.com/browse/BOOM-4361)
 
-[Download PrestaShop 1.7.3.1 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.3.1 now!{{< /cta >}}
 
 Here is the [complete list of changes](https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.7.3.1+is%3Amerged):
 

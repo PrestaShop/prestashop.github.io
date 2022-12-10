@@ -43,10 +43,8 @@ Sometimes an image is worth thousands words. Joining PrestaShop, it's this:
 
 If this all sounds good to you, you can check out our current job offers here:
 
-[Core developer](https://www.prestashop.com/en/careers#core-developer-mf){: .btn .btn-lg .btn-success}
-{: .text-center}
-[Addons developer](https://prestashop.profilsearch.com/recrute/fo_annonce_voir.php?id=544){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/en/careers#core-developer-mf" >}}Core developer{{< /cta >}}
+{{< cta "https://prestashop.profilsearch.com/recrute/fo_annonce_voir.php?id=544" >}}Addons developer{{< /cta >}}
 
 And you can directly contact **Claire**, our amazing Recruitment Manager, to let her know you want to join the fun!
 

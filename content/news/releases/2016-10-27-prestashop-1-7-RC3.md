@@ -19,8 +19,7 @@ We're getting closer! With this new Release Candidate, we deliver a strong RC, w
 
 A lot has been done to stabilize and enhance most of the details of the future version 1.7.0.0, and we expect you to be able to work with it as if it was a regular release. Are you feeling it? :)
 
-[Test PrestaShop 1.7.0.0 RC3 now!](https://www.prestashop.com/versions ){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions " >}}Test PrestaShop 1.7.0.0 RC3 now!{{< /cta >}}
 
 Found an issue? [Create a Forge ticket](http://forge.prestashop.com/secure/CreateIssue%21default.jspa?selectedProjectId=11322&issuetype=1)!
 

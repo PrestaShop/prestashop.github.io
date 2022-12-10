@@ -56,8 +56,7 @@ Progi1984, boubkerbribri, PierreRambaud, SD1982, dali-rajab, atomiix, IcarusSosi
 
 Thank you!
 
-[Download PrestaShop 1.7.7.5 now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.7.5 now!{{< /cta >}}
 
 For any upgrades problems or PrestaShop’s bugs, please create a new issue [here](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
 

@@ -31,8 +31,7 @@ PrestaShop 8 is a major version in the [SemVer sense of the word](https://semver
 
 PrestaShop 8.0 is available on GitHub:
 
-[Download PrestaShop 8.0 now!](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.0){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.0" >}}Download PrestaShop 8.0 now!{{< /cta >}}
 
 ## Upgrade
 

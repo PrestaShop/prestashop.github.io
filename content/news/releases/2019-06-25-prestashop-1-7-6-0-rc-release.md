@@ -52,8 +52,7 @@ If you are looking for more details about all changes and new features expected 
 
 You can download PrestaShop 1.7.6 RC here:
 
-[Download PrestaShop 1.7.6 RC now!](https://www.prestashop.com/versions){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.6 RC now!{{< /cta >}}
 
 
 ## How to help finish the 1.7.6

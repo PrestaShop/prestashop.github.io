@@ -24,8 +24,7 @@ Many of you have shown interest in this project, so this is why we want to invol
 
 We’ve created a Trello board to share our ideas, intentions and progress with all of you. It is public and anyone can join. If you’re interested in helping us, please join and take part in this project:
 
-[Join PrestaShop’s RTL project](https://trello.com/b/szTruf2c){: .btn .btn-lg .btn-info}
-{: .text-center}
+{{< cta "https://trello.com/b/szTruf2c" "info" >}}Join PrestaShop’s RTL project{{< /cta >}}
 
 To join the board as a member, you’ll find a welcome link in the first list.
 

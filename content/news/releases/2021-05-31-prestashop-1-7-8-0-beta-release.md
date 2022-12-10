@@ -225,8 +225,7 @@ See the new pages migrated in Symfony, we are now about 65% of the Back-Office p
 
 You can download PrestaShop 1.7.8.0 beta here:  
 
-[Download PrestaShop 1.7.8.0 beta now!](https://download.prestashop.com/download/releases/prestashop_1.7.8.0-beta.1.zip){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://download.prestashop.com/download/releases/prestashop_1.7.8.0-beta.1.zip" >}}Download PrestaShop 1.7.8.0 beta now!{{< /cta >}}
 
 
 ## How to help test 1.7.8

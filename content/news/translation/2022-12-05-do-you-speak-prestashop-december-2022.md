@@ -123,5 +123,4 @@ You can also join the #translation channel of the PrestaShop Open Source Slack. 
 
 Merry (early) Christmas! 🎄
 
-[Join us on Slack](https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg){: .btn .btn-lg .btn-success}
-{: .text-center}
+{{< cta "https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg" >}}Join us on Slack{{< /cta >}}

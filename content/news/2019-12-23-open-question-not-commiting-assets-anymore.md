@@ -88,10 +88,9 @@ This would not change the way release archives are built, the assets will be bui
 Do you agree? Did we miss something? Do you have questions? Let’s talk about it in the comments!
 Let us know what you think about it!
 
-<br>
-<div class="alert alert-info" role="alert">
-<h4><i class='icon-chat'> </i>Let's talk</h4>
-  The goal of this kind of article, "Open question", is to discuss technical topics with you.
-  <br>So please, let us know what you think and feel free to ask questions in the comments below.
-  <br><br>Oh, and we are also looking for a name for this kind of post, we went with “Open question”, but if you have other ideas feel free to share them!
-</div>
+{{% notice type="info" title="Let's talk" icon="chat" %}}
+The goal of this kind of article, "Open question", is to discuss technical topics with you.  
+So please, let us know what you think and feel free to ask questions in the comments below.  
+
+Oh, and we are also looking for a name for this kind of post, we went with “Open question”, but if you have other ideas feel free to share them!
+{{% /notice %}}

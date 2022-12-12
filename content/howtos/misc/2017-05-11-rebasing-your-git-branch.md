@@ -17,19 +17,17 @@ Files often change an Open Source project. Between the time you fix an issue and
 
 <i>This article was initially [a comment by @shudrum on a PR by @kpodemski](https://github.com/PrestaShop/PrestaShop/pull/5583#issuecomment-221409795). Thanks for the inspiration, people!</i>
 
-<div class="alert alert-note" role="alert">
+{{% notice type="note"%}}
 You can only rebase a pull request when its commits were pushed to GitHub using Git's command-line tool. It is NOT possible to rebase code that has been submitted through GitHub's online edition form.
 
-We therefore advise you to <a href="https://try.github.io/">learn the basics of Git</a> before contributing code. It will be a very valuable addition to your development toolbox. It will also let Core developers know that
+We therefore advise you to [learn the basics of Git](https://try.github.io/) before contributing code. It will be a very valuable addition to your development toolbox. It will also let Core developers know that
 
-<ul>
- <li>you know what you are doing,</li>
- <li>you can work with them in improving your code in the PR,</li>
- <li>your changes have been tested on your local install (= less likely to contain a typo).</li>
-</ul>
+* you know what you are doing,
+* you can work with them in improving your code in the PR,
+* your changes have been tested on your local install (= less likely to contain a typo).
 
 Go Git!
-</div>
+{{% /notice %}}
 
 ## What is rebasing?
 
@@ -56,9 +54,9 @@ If you look at your local history, you should see something like this:
 
 As you can see, the branch has 3 commits from the contributor, with various levels of respect for the naming convention. The oldest one respects the convention; the second one certainly does not; the most recent one is better but still superfluous.
 
-<div class="alert alert-note" role="alert">
-In this example, `git lg` is a shortcode to an improvement over the standard `git log`. <a href="https://coderwall.com/p/euwpig/a-better-git-log">See how you can enjoy the same improvement</a>!
-</div>
+{{% notice type="note" %}}
+In this example, `git lg` is a shortcode to an improvement over the standard `git log`. [See how you can enjoy the same improvement](https://coderwall.com/p/euwpig/a-better-git-log)!
+{{% /notice %}}
 
 You can see that the latest commit has the `9a7b798` identifier (short for the `9b9b47e9fe591e2f4b1f9bb2dd18c4fa5e715b55` sha1 hash, but the seven first characters are unique enough for identification in this context).
 

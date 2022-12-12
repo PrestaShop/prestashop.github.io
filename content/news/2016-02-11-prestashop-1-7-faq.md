@@ -12,23 +12,23 @@ tags: ["1.7"]
 PrestaShop 1.7 is a major new version, and an important milestone for PrestaShop as a whole. This version is a great step forward for PrestaShop, both for developers with the inclusion of the Symfony framework and the revamping of the theme system, and for merchants with a focus on easing the first sale.<br/>
 PS 1.7 has a clear motto: "Sell faster. Code Better. Create easier". [See the 1.7 presentation page](https://www.prestashop.com/en/1.7)!
 
-<div class="alert alert-important" role="alert">
-<a href="http://build.prestashop.com/news/prestashop-1-7-0-0-released/">PrestaShop 1.7.0.0 was released on November 7th, 2016</a>!<br/>
-Since then, further updates have been released. <a href="https://www.prestashop.com/en/download">Download the latest version now</a>!
-</div>
+{{% notice type="important" %}}
+[PrestaShop 1.7.0.0 was released on November 7th, 2016](/news/prestashop-1-7-0-0-released/)  
+Since then, further updates have been released. [Download the latest version now](https://www.prestashop.com/en/download)!
+{{% /notice %}}
 
 This article serves as a FAQ for PrestaShop 1.7. It started while the 1.7 project was unveiled, and was updated along the way until the release of version 1.7.0.0. Further 1.7 releases are documented on [dedicated articles](http://build.prestashop.com/tag/1.7/) on this Build devblog.
 
-<div class="alert alert-note" role="alert">
+{{% notice type="note" %}}
 <p>Note that this article aims to compile the latest news about 1.7, and will therefore be updated as new information is confirmed.</p>
-</div>
+{{% /notice %}}
 
-<div class="alert alert-note" role="alert">
-<p>This FAQ gives you the current state of 1.7 up to its stable release</p>
+{{% notice type="note" %}}
+This FAQ gives you the current state of 1.7 up to its stable release
 
-<p>Current version of this FAQ: 1.9. <br/>
-The changelog is at the bottom of the FAQ.</p>
-</div>
+Current version of this FAQ: 1.9.  
+The changelog is at the bottom of the FAQ.
+{{% /notice %}}
 
 {{< toc >}}
 
@@ -338,7 +338,7 @@ The Developer documentation is constantly being improved upon. [The techdoc site
 
 For a taste of real-life usage, we advise you to dive into the code of this 1.7-specific module: [https://github.com/PrestaShop/paymentexample](https://github.com/PrestaShop/paymentexample).
 
-<div class="alert alert-note" role="alert">
+{{% notice type="note" %}}
 <p><b>Changelog for this FAQ:</b></p>
 
 <ul>
@@ -426,4 +426,4 @@ For a taste of real-life usage, we advise you to dive into the code of this 1.7-
     </ul>
   </li>
 </ul>
-</div>
+{{% /notice %}}

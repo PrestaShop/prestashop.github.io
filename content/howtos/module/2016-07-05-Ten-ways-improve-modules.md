@@ -128,7 +128,6 @@ No more need to manually test the installation process on all these versions. Yo
 
 Did these tips help you create module faster? Do you still have some questions? Was there a step too hard? Let us know in the comments!
 
-<div class="alert alert-note" role="alert">
-<h4><i class='icon-file'></i> Note</h4>
-This article is a contribution from a member of the PrestaShop community, and not a PrestaShop employee. If you too want to help the community by sharing tips and advice on the Build devblog, <a href="http://build.prestashop.com/about/#contribute">read this</a>!
-</div>
+{{% notice type="note" title="Note" icon="file" %}}
+This article is a contribution from a member of the PrestaShop community, and not a PrestaShop employee. If you too want to help the community by sharing tips and advice on the Build devblog, [read this]({{< relref "/about#contribute" >}})!
+{{% /notice %}}

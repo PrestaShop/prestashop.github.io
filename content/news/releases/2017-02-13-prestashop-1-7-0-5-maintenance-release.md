@@ -21,9 +21,9 @@ We are happy to deliver the fifth "patch" release of PrestaShop 1.7.0.0. Version
 
 {{< cta "https://www.prestashop.com/versions" >}}Download 1.7.0.5 now!{{< /cta >}}
 
-<div class="alert alert-important" role="alert">
+{{% notice type="important" %}}
 Want to upgrade using the 1-Click Upgrade module? Make sure to upgrade the module itself first! This way you will have access to a new, 1.7-specific channel, which makes upgrading safer for merchants. Upgrading from 1.7.0.0 to 1.7.0.5 should be smooth as silk -- but do a safety backup anyway :)
-</div>
+{{% /notice %}}
 
 Here are the changes:
 

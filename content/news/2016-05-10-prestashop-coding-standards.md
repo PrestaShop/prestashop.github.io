@@ -55,11 +55,11 @@ if (true === isset($defaultOptions['some_default'])) {
 
 More details and a complete example can be found in the [Symfony documentation](http://symfony.com/doc/current/contributing/code/standards.html).
 
-<div class="alert alert-note" role="alert">
-Yes, we are aware that Yoda conditions can feel awkward at first -- even though big open source projects such as <a href="http://symfony.com/doc/current/contributing/code/standards.html#structure">Symfony</a> or  <a href="https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/#yoda-conditions">WordPress</a> have been using it successfuly for years.
+{{% notice type="note" %}}
+Yes, we are aware that Yoda conditions can feel awkward at first -- even though big open source projects such as <a href="http://symfony.com/doc/current/contributing/code/standards.html#structure">Symfony</a> or  <a href="https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/#yoda-conditions">WordPress</a> have been using it successfully for years.
 
 So why are we using it? Instead of debating for hours about everyone's preferences, we chose to use the Symfony Coding Standards as-is, and Yoda conditions part of it. Thank you for using them from now on.
-</div>
+{{% /notice %}}
 
 ### JavaScript
 

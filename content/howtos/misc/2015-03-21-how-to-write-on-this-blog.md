@@ -28,12 +28,11 @@ best option out there -- and **you can actually make a *Pull Request* on GitHub 
 
 ## TL;DR
 
-<div class="alert alert-note" role="alert">
-<h4><i class='icon-file'></i> Note</h4>
+{{% notice type=note title="Note" icon=file %}}
 First: tell us what you want to write about! We won't accept just about any submission :)
 
 Write to us with your idea (we can be reached at build@prestashop.com), with a rough idea or the whole thing ready, and let's talk about it. Once we agree on the subject, then you are good to go!
-</div>
+{{% /notice %}}
 
 You don’t have to read all the details below: if you want to write an article right away, you can simply follow those steps:
 
@@ -87,11 +86,9 @@ Server running... press ctrl-c to stop.
 
 Open a browser window, and go to `http://0.0.0.0:4000/`, and you should see the blog running.
 
-<div class="alert alert-note" role="alert">
-<h4><i class='icon-file'></i> Note</h4>
+{{% notice type=note title="Note" icon="file" %}}
 The `jekyll serve` command only watches content and styles. So if you are changing any plugin or any line in your `_config.yml`, you'll have to quit (`ctrl+C`) and rebuild.
-</div>
-
+{{% /notice %}}
 
 ## Creating your article
 
@@ -110,14 +107,13 @@ With Jekyll, the location of your files matter. On this blog, we have two kinds 
 * **How-Tos**: They live in the `howtos` folder and are sorted by topic. These posts are displayed on the home page as well as the How-Tos
 page which is sorted by topic.
 
-<div class="alert alert-note" role="alert">
-<h4><i class='icon-file'></i> Note</h4>
+{{% notice type=note title="Note" icon=file %}}
 If you need to create a new topic, create a subfolder in `howtos` and edit the `howtos` configuration in `_config.yml`.
 
 The topics are displayed in the same order as shown in the `_config.yml` file.
 
 Please ask us before creating a brand new topic!
-</div>
+{{%/ notice %}}
 
 
 ### File name
@@ -150,10 +146,9 @@ published: false
 
 I assume you will understand what you are supposed to change. *Icon* can be [any icon from FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/). You can also find available icons on the [PrestaShop Icon Font Documentation](http://build.prestashop.com/prestashop-icon-font/documentation.html) page.
 
-<div class="alert alert-important" role="alert">
-<h4><i class='icon-fire'></i> Important</h4>
+{{% notice type="important" title="Important" icon="fire" %}}
 Articles must be submitted with the 'published' setting set to false. We will only publish it after review.
-</div>
+{{% /notice %}}
 
 
 ## Making sure you're an author
@@ -275,9 +270,9 @@ You can find available icons on the [PrestaShop Icon Font Documentation](http://
 If you want to highlight some content (hint, note, tip, alert, etc.), we have few types of highlighting available. They are based on [alerts from Bootstrap](http://getbootstrap.com/components/#alerts).
 
 ```html
-<div class="alert alert-note" role="alert">
+{{%/* notice type="note" */%}}
 You content goes here. **Markdown** _is_ `supported`.
-</div>
+{{%/* /notice */%}}
 ```
 
-You can use: `alert-note`, `alert-info`, `alert-important`, `alert-tips`.
+You can use: `note`, `info`, `important`, `tips`.

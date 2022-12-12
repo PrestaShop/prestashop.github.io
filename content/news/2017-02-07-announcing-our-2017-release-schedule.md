@@ -47,14 +47,14 @@ As for when to expect minor releases (1.7.1.0, 1.7.2.0, etc.), here's how we are
 * The Core team has been following the [Scrum](https://www.scrumalliance.org/why-scrum) ["Sprint" methodology](https://en.wikipedia.org/wiki/Scrum_(software_development)#Workflow) for several months now, with each sprint lasting two weeks. If you don't know what Scrum or a sprint are, read up! :)
 * Our experience shows that it takes roughly 20 weeks from building the backlog to delivering QA results.
 
-<div class="alert alert-info" role="alert">
+{{% notice type="info" %}}
 <b>How we came up with 20 weeks</b>
 
 <p>It takes two sprints to <a href="http://www.scrum-institute.org/The_Scrum_Product_Backlog.php">build the work backlog</a> for a minor release, roughly six sprints to have those tasks developed and tested, and we are planning on two sprints after code freeze in order to have a proper QA process. One final sprint is dedicated to the release itself (packaging, final checks, Addons updates, etc.).</p>
 
 <p>Count it up: that's 10 sprints from building the backlog to the end of QA.<br/>
 Take your TI-81 out: that’s 20 weeks to have a minor version of PrestaShop, from planning to general release.</p>
-</div>
+{{% /notice %}}
 
 Thanks to parallel work (backlog for 1.7.3.0 being prepared while 1.7.2.0 is being coded and 1.7.1.0 is going through QA), we think we can have a minor release of v1.7 every 6 sprints -- which means one release every 12 weeks, and therefore 4 minor releases of 1.7 in 2017.
 
@@ -105,32 +105,25 @@ We have a pretty clear idea of what we want them to be. Here is a bird's eye vie
 
 Do you want to help on a specific topic? Let us know!
 
-<div class="alert alert-info" role="alert">
-<b>About SemVer</b>
+{{% notice type="info" %}}
+**About SemVer**
 
-As a reminder, PrestaShop follows a SemVer-like numbering system for its version since July 2015. <a href="http://semver.org/">SemVer</a>'s summary is:
+As a reminder, PrestaShop follows a SemVer-like numbering system for its version since July 2015. [SemVer](http://semver.org/)'s summary is:
 
-<blockquote>
-Given a version number MAJOR.MINOR.PATCH, increment the:
+> Given a version number MAJOR.MINOR.PATCH, increment the:
+> 
+> * MAJOR version when you make incompatible API changes,
+> * MINOR version when you add functionality in a backwards-compatible manner, and
+> * PATCH version when you make backwards-compatible bug fixes.
+> 
+> Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
-<ol>
-  <li>MAJOR version when you make incompatible API changes,</li>
-  <li>MINOR version when you add functionality in a backwards-compatible
-manner, and</li>
-  <li>PATCH version when you make backwards-compatible bug fixes.</li>
-</ol>
+Because of our own history, [we chose to follow a SemVer-like versioning](/news/a-more-semantic-versioning-scheme/): 1.MAJOR.MINOR.PATCH. This means that, as of today (with 1.7.0.4):
 
-Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
-</blockquote>
-
-Because of our own history, <a href="http://build.prestashop.com/news/a-more-semantic-versioning-scheme/">we chose to follow a SemVer-like versioning</a>: 1.MAJOR.MINOR.PATCH. This means that, as of today (with 1.7.0.4):
-
-<ol>
-  <li>The next patch version is 1.7.0.5</li>
-  <li>The next minor version is 1.7.1.0</li>
-  <li>The next major version would be 1.8.0.0</li>
-</ol>
-</div>
+1. The next patch version is 1.7.0.5
+2. The next minor version is 1.7.1.0
+3. The next major version would be 1.8.0.0
+{{% /notice %}}
 
 There you go! The table will be updated as we go.
 

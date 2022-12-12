@@ -114,17 +114,15 @@ If you’re modifying existing strings, inherited from the 1.6 version, you can 
 If you have 1.6 modules compatible with the 1.7 version, don't worry! The new system will be compatible with PrestaShop 1.6 translations, so there is nothing to do. Your current translations will still be working.
 On the other hand, if you're developing 1.7-specific modules, we encourage you to follow the new standards explained above.
 
-<div class="alert alert-important" role="alert">
-<h4><i class='icon-fire'></i> Update - January 2017 </h4>
-<p>We’ve been too optimistic when we said the new translation system would be available for contributors’ modules built specifically for PrestaShop 1.7.<br>
-This is not working. I repeat, this is not working. You should <b>keep using the legacy translation system</b> and it will work just like before. Otherwise you won’t be able to translate your modules, which we want to avoid.</p>
+{{% notice type="important" title="Update - January 2017" icon="fire" %}}
+We’ve been too optimistic when we said the new translation system would be available for contributors’ modules built specifically for PrestaShop 1.7.
 
-<p>We’re still trying to find a workaround so that new modules can benefit from the new translation system, but that is not going to happen in a near future, unfortunately.</p>
+This is not working. I repeat, this is not working. You should <b>keep using the legacy translation system</b> and it will work just like before. Otherwise you won’t be able to translate your modules, which we want to avoid.
 
-<p>These comments do not apply to theme development, for the whole theme structure has been redesigned in 1.7. 1.7-specific themes should use the new translation system. Just not modules :(</p>
+We’re still trying to find a workaround so that new modules can benefit from the new translation system, but that is not going to happen in a near future, unfortunately.
 
-</div>
-
+These comments do not apply to theme development, for the whole theme structure has been redesigned in 1.7. 1.7-specific themes should use the new translation system. Just not modules :(
+{{% /notice %}}
 
 #### As a translator
 Well, it will be much easier to help translating PrestaShop on Crowdin! :)

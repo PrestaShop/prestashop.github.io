@@ -75,10 +75,9 @@ In rare cases, no relevant word is returned. In those cases, the default search 
 
 ### Setting up the distance
 
-<div class="alert alert-info" role="alert">
-<h4><i class='icon-mic'></i> NOTE</h4>
-<p>Here, this configuration has no influence on the server stress, the setup being active right after computation.</p>
-</div>
+{{% notice type="info" title="NOTE" icon="misc" %}}
+Here, this configuration has no influence on the server stress, the setup being active right after computation.
+{{% /notice %}}
 
 You must be in the code to configure it - it is not available in the back office -, search for `PS_DISTANCE_MAX` in the classes/Search.php file. By default, the value is set to 8 which is typically the maximum distance to get a relevant result. Every fuzzy search returns a word with a distance under 8. It means the fuzzy search will try to bring words that are close to the query.
 
@@ -105,10 +104,9 @@ You can still try to increase this limit for languages whose words are especiall
 
 ### Setting up the maximum approximate strings allowed
 
-<div class="alert alert-info" role="alert">
-<h4><i class='icon-mic'></i> NOTE</h4>
-<p>Here, this configuration influences the server stress in case of big queries including many words.</p>
-</div>
+{{% notice type="info" title="NOTE" icon="misc" %}}
+Here, this configuration influences the server stress in case of big queries including many words.
+{{% /notice %}}
 
 Configuring it allows you to define the number of words a query can be processed in a fuzzy search. By default, the value is set to 4. It means that in a search like ‘Samsung Galaxi walle cherger multyplug’, only the ‘Samsung’, ‘Galaxi’, ‘walle’, and ‘cherger’ words will be taken into account. ‘Multyplug’ will not be computed.
 
@@ -117,10 +115,9 @@ Why this limitation? It is to avoid offensive behaviors (from users or others) o
 
 ### Setting up the maximum word length allowed
 
-<div class="alert alert-info" role="alert">
-<h4><i class='icon-mic'></i> NOTE</h4>
-<p>Here, this configuration influences the server stress in case of long words queries.</p>
-</div>
+{{% notice type="info" title="NOTE" icon="misc"%}}
+Here, this configuration influences the server stress in case of long words queries.
+{{% /notice %}}
 
 So this option defines how many characters you allow to execute a fuzzy search query. You can configure it only when the fuzzy search is enabled. When the feature is disabled, the default parameter is set to 30, particularly to solve this issue [cf. #12407](https://github.com/PrestaShop/PrestaShop/issues/12407). You can set this value directly in the back office while the default value is a constant defined in the code, in the search class, just like the maximum distance allowed.
 
@@ -131,10 +128,9 @@ Do not forget the Levenshtein algorithm is a matrix computation: the server stre
 
 ### Setting up the minimum word length allowed
 
-<div class="alert alert-info" role="alert">
-<h4><i class='icon-mic'></i> NOTE</h4>
-<p>Here, this configuration influences the server stress.</p>
-</div>
+{{% notice type="info" title="NOTE" icon="misc" %}}
+Here, this configuration influences the server stress.
+{{% /notice %}}
 
 It is no special feature included in the fuzzy search but a mere parameter, set to 3 by default. In other words, this configuration does not read words whose length is less than three characters. If you need deeply precise results, like with ‘Samsung S9’, you should decrease the minimum allowed to 2 because ‘S9’ only has two characters.
 

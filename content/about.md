@@ -28,11 +28,11 @@ Before you start writing, please send us a short proposal at [{{< param "email" 
 
 Also, if we merge one of your cool pull requests on [the PrestaShop project](http://github.com/PrestaShop/PrestaShop), we may invite you to tell us more about it here.
 
-<div class="alert alert-info" role="alert">
-Unless specified otherwise on the article, all content on the build.prestashop-project.org site is licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 license</a> -- meaning that it is in the Public Domain. Use it however you want!
+{{% notice %}}
+Unless specified otherwise on the article, all content on the build.prestashop-project.org site is licensed under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/) -- meaning that it is in the Public Domain. Use it however you want!
 
 <img src="/assets/images/2015/06/cc-zero.png" style="margin-right:auto;margin-left:auto;display:block;" />
-</div>
+{{% /notice %}}
 
 ## Guidelines
 

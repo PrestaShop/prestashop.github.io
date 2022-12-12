@@ -52,10 +52,9 @@ This was simply the legacy of our days when we used the Subversion system, which
 
 We looked around to understand how other open-source projects manage their code with Git, and we came up with the following model.
 
-<div class="alert alert-info" role="alert">
-<h4><i class='icon-pin'></i> Info</h4>
+{{% notice type="info" title="Info" icon="pin" %}}
 I'm writing this article in August 2015, as PrestaShop 1.6.1.1 just came out. All version numbers and branch names are based on the current situation. They might have changed as you're reading this article, so be sure to check what the current situation is.
-</div>
+{{% /notice %}}
 
 
 ### Two branches to understand

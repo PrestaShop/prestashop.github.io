@@ -15,19 +15,17 @@ Every morning, the Product and QA team gather around a big screen, and review th
 
 Reviewing Forge ticket can be very brain-consuming: sometimes, report incompleteness can make for a need to ask for more info, thus slowing down. On the other hand, we sometimes get tickets that are a pleasure to work with. Here are their most common denominators.
 
-<div class="alert alert-note" role="alert">
+{{% notice type="note" %}}
 Quick summary:
 
-<ul>
-  <li>Always test on the latest version.</li>
-  <li>Always provide step-by-step reproduction instructions.</li>
-  <li>Always give details, such as server configuration</li>
-  <li>Try to add pictures/video.</li>
-  <li>Try to enable the Debug Mode.</li>
-  <li>Try to check if the issue has not already been reported.</li>
-  <li>Try to add log files.</li>
-</ul>
-</div>
+* Always test on the latest version.
+* Always provide step-by-step reproduction instructions.
+* Always give details, such as server configuration
+* Try to add pictures/video.
+* Try to enable the Debug Mode.
+* Try to check if the issue has not already been reported.
+* Try to add log files.
+{{% /notice %}}
 
 
 ### The basics

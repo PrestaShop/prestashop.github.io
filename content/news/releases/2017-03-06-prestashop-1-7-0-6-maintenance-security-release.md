@@ -30,9 +30,9 @@ Version 1.7.0.6 contains the needed fixes to secure our Addons contributors.
 
 The importance of this fix explains why this release has so few changes otherwise.
 
-<div class="alert alert-note" role="alert">
+{{% notice type="note" %}}
 <p>PrestaShop 1.6 will also benefit from this fix. Versions 1.6.1.12 contains the fix and is currently being reviewed. It will be released shortly.</p>
-</div>
+{{% /notice %}}
 
 
 ### What is responsible disclosure?

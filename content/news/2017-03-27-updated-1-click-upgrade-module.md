@@ -36,9 +36,9 @@ The theme has been completely rewritten or changed, modules have to be checked f
 
 All this cannot be magically checked and fixed by the module. While we wanted to ensure that those wanting to move from 1.5/1.6 to 1.7 could do so, we couldn’t make it appear like a simple click on a button would solve all of the merchant’s issue.
 
-<div class="alert alert-note" role="alert">
+{{% notice type="note" %}}
 The update 1-Click Upgrade module can only upgrade your store from 1.6 to v1.7.1.0 of PrestaShop. Versions 1.7.0.0 to 1.7.0.6 are skipped altogether, ensuring that you only get the best and latest 1.7 version.
-</div>
+{{% /notice %}}
 
 
 ### How we chose to update the 1.6 upgrade module

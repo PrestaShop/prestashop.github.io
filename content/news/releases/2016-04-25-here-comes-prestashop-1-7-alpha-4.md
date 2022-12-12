@@ -20,11 +20,11 @@ Three weeks ago [we released PrestaShop 1.7.0.0 alpha 3](http://build.prestashop
 
 
 
-<div class="alert alert-important" role="alert">
+{{% notice type="important" %}}
 While this alpha version is not ready for production stores, it is a great basis for us to get your feedbacks.
 
-We’re are still working on some features and know some parts are broken. <a href="http://build.prestashop.com/news/prestashop-1-7-alpha-3-is-here/#whats-in-progress">Check out the list in this article</a>.
-</div>
+We’re are still working on some features and know some parts are broken. [Check out the list in this article](/news/prestashop-1-7-alpha-3-is-here/#whats-in-progress).
+{{% /notice %}}
 
 Let’s insist on this: this is NOT the stable version of PS 1.7, and IT SHOULD NOT BE USED IN PRODUCTION. Do not create a new store with this alpha version, it is by definition not finished yet.
 

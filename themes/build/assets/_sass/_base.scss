@@ -341,11 +341,20 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: $spacing-unit / 5;
     }
 
-    .alert h4 {
-        margin-top: 0;
-    }
-     .alert p {
+    .alert {
         font-size: 0.9em;
+
+        h4 {
+            margin-top: 0;
+        }
+
+        p + ul, p + ol {
+            margin-top: 5px;
+        }
+
+        ul + p, ol + p {
+            margin-top: 5px;
+        }
     }
 }
 

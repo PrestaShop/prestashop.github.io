@@ -14,10 +14,9 @@ PrestaShop has been around for many years, during which thousands of modules wer
 
 Here is a list of 10+ common mistakes when coding a PrestaShop module, with a short information on how to avoid them.
 
-<div class="alert alert-note" role="alert">
-<h4><i class='icon-file'></i> Note</h4>
-Several tips only apply to PrestaShop 1.5-1.6 module development. <a href="http://build.prestashop.com/news/module-development-changes-in-17/">PrestaShop 1.7 changes a few things</a>!
-</div>
+{{% notice type="note" title="Note" icon="file" %}}
+Several tips only apply to PrestaShop 1.5-1.6 module development. [PrestaShop 1.7 changes a few things]({{< relref "/news/2016-06-16-module-development-changes-in-17" >}})!
+{{% /notice %}}
 
 ### 1. Creating/using a module with hardcoded database prefix
 
@@ -174,7 +173,6 @@ Developers often don't know how something is constructed, and they are willing t
 
 Did these tips help you create better modules? Do you still have some questions? Was there a step too hard? Let us know in the comments!
 
-<div class="alert alert-note" role="alert">
-<h4><i class='icon-file'></i> Note</h4>
-This article is a contribution from a member of the PrestaShop community, and not a PrestaShop employee. If you too want to help the community by sharing tips and advice on the Build devblog, <a href="http://build.prestashop.com/about/#contribute">read this</a>!
-</div>
+{{% notice type="note" title="Note" icon="file" %}}
+This article is a contribution from a member of the PrestaShop community, and not a PrestaShop employee. If you too want to help the community by sharing tips and advice on the Build devblog, [read this]({{< relref "/about#contribute" >}})!
+{{% /notice %}}

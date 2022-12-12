@@ -47,9 +47,9 @@ It will be included in a minimalistic way. All the template files will be update
 
 Theme creators will therefore be able to work using a much more functional and responsive basic theme from the get-go.
 
-<div class="alert alert-info" role="alert">
-<p><b>Which version of Bootstrap should you use?</b></p>
 
+{{% notice type="info" %}}
+<p><b>Which version of Bootstrap should you use?</b></p>
 <p>The Core team decided to use Bootstrap 4 from the start of the project. Because it seemed stable enough.<br/>
 Since then, the Bootstrap team has released two more alpha versions; the latest of which, <a href="http://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/">alpha 6</a>, entirely rewrites its grid system in order to use Flexbox -- currently a <a href="https://www.w3.org/TR/css-flexbox-1/">W3C Candidate Recommendation</a>. <br/>
 Bootstrap 4 will soon reach Beta stage, which makes that a truly stable version is still months away (according to their current release frequency).</p>
@@ -59,7 +59,7 @@ Bootstrap 4 will soon reach Beta stage, which makes that a truly stable version 
 <p>The project will upgrade its use of Bootstrap as soon as new versions are released, and so should theme and module designers.</p>
 
 <p><b>The recommended version of Bootstrap 4 for PrestaShop 1.7 is therefore Bootstrap 4 alpha 6 as of this writing (January 13th, 2017), and will be Bootstrap 4 beta 1 once it is available.</b></p>
-</div>
+{{% /notice %}}
 
 
 ## Differences between Classic theme and Starter Theme

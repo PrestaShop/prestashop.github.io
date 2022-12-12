@@ -27,10 +27,9 @@ In this version we focused on improving and bringing back important 1.6 features
 
 {{< cta "https://www.prestashop.com/versions" >}}Download PrestaShop 1.7.6.0 now!{{< /cta >}}
 
-<div class="alert alert-warning" role="alert">
-<h4><i class='icon-warning'> </i>Be careful!</h4>
+{{% notice type="warning" title="Be careful!" icon="warning" %}}
 <p>If you plan to upgrade, we recommend you to use the version 4.9.0 of the 1-click upgrade module. You can upgrade it from the “Module Manager" tab, or if you don’t have it yet, find it in the “Module Catalog” tab in your BO.</p>
-</div>
+{{% /notice %}}
 
 
 ## Changes

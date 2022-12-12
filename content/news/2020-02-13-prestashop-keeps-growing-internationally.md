@@ -79,22 +79,20 @@ Here is an example of how a localization pack file should look like:
 Need to read an in-situ example? Have a look at the [Azerbaijan localization pack](https://github.com/PrestaShop/LocalizationFiles/blob/master/az.xml) to help you contribute!
 
 
-<div class="alert alert-info" role="alert">
-<h4>IMPORTANT</h4>
+{{% notice type="info" title="IMPORTANT" %}}
 <p><b>A short notice about the expected ISO codes:</b><br>
 <br>
 <i>country code</i> = <a href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-2</a> = e.g. <i>AZ</i>, for Azerbaijan<br>
 <i>currency code</i> = <a href="https://www.iso.org/iso-4217-currency-codes.html">ISO 4217</a> = e.g. <i>AZN</i>, for the Azerbaijani manat<br>
 <i>language code</i> = <a href="https://www.iso.org/iso-639-language-codes.html">ISO 639-1</a> = e.g. <i>az</i>, for the Azeri<br></p>
-</div>
+{{% /notice %}}
 
 
-<div class="alert alert-info" role="alert">
-<h4>NOTE</h4>
+{{% notice type="info" title="NOTE" %}}
 <p><b>How CLDR is used here for currencies:</b><br>
 <br>
 When entering information about the currency in a localization pack, note the CLDR handles most of it. Such as the format, decimals or blank fields. However, this information is still read (<a href="https://github.com/PrestaShop/PrestaShop/blob/1.7.0.x/classes/LocalizationPack.php#L304-L312">here</a>) so it has to be filled.</p>
-</div>
+{{% /notice %}}
 
 
 ### :file_folder: Relocate to better localize

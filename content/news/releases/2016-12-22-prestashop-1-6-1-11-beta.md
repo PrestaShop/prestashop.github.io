@@ -19,10 +19,9 @@ It has been in the pipeline for a while, it's now official, PrestaShop 1.6.1.11 
 
 **In beta at first**, it will allow you to judge the stability of this release, and of the important fixes that have been applied to this version. **So your feedback is really important to us!**
 
-<div class="alert alert-important" role="alert">
-<h4><i class='icon-fire'></i> Important</h4>
+{{% notice type="important" title="Important" icon="fire" %}}
 You should not use this beta version in production.
-</div>
+{{% /notice %}}
 
 ## Reorganization of advanced stock management screen
 

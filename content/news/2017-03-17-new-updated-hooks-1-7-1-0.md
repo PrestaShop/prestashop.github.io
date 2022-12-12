@@ -16,9 +16,9 @@ Since the release of 1.7.0.0 in November 2016, we have released [six](http://bui
 
 In parallel to this bugfixing work, the team has busied itself with improving PrestaShop, preparing for 1.7.1.0 ([which is to be released this month](http://build.prestashop.com/news/announcing-our-2017-release-schedule/)!). [You can test the Beta](http://build.prestashop.com/news/prestashop-1-7-1-0-beta-1/), and this article presents the latest changes hook-wise.
 
-<div class="alert alert-note" role="alert">
+{{% notice type="note" %}}
 To find the hook changes between 1.6 and 1.7.0.0, see <a href="http://build.prestashop.com/news/module-development-changes-in-17/#hook-changes-1">this previous article</a>.
-</div>
+{{% /notice %}}
 
 This article ends with the list of hooks that are common to 1.7.0.x and 1.7.1.x: now you have a single page with all 1.7.1.x hooks! :)
 

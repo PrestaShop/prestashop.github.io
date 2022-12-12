@@ -61,7 +61,6 @@ Esperamos que estos videos os hayan sido de ayuda a todos aquellos que colaboran
 Muchas gracias por vuestra colaboración.<br><br>
 
 
-<div class="alert alert-note" role="alert">
-<h4><i class='icon-file'></i> Note</h4>
-This article is a contribution from a member of the PrestaShop community, and not a PrestaShop employee. If you too want to help the community by sharing tips and advice on the Build devblog, <a href="http://build.prestashop.com/about/#contribute">read this</a>!
-</div>
+{{% notice type="note" title="Note" icon="file" %}}
+This article is a contribution from a member of the PrestaShop community, and not a PrestaShop employee. If you too want to help the community by sharing tips and advice on the Build devblog, [read this]({{< relref "/about#contribute" >}})!
+{{% /notice %}}

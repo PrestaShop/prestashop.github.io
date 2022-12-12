@@ -64,8 +64,9 @@ The more an idea is voted, the better ranking it gets, and the more probability 
 
 This “user score” is not the only indicator that the team takes into account when evaluating a feature but it is key. Complexity, innovation, business impact for the merchants, legal aspects, are some of the criteria studied as well.
 
-<div class="alert alert-note" role="alert">
-Of course, the goal is not to vote “Critical” on every feature idea. This would cancel the benefits of the open votes.</div>
+{{% notice type="note" %}}
+Of course, the goal is not to vote “Critical” on every feature idea. This would cancel the benefits of the open votes.
+{{% /notice %}}
 
 Now you might also wonder what happens when you add a comment.
 Well, the comment is automatically associated with the card in the team interface.

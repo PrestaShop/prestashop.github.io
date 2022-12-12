@@ -1,0 +1,18 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $type := cond .IsNamedParams (.Get "type") (.Get 0 | default "info")}}
+
+<div class="alert alert-{{ $type }}"
+  {{- with .Get "id" -}}
+    id="{{ . }}"
+  {{- end -}}
+>
+  {{- if .Get "title" -}}
+    <h4>
+        {{- with .Get "icon" -}}
+          <i class="icon-{{ . }}"></i>
+        {{ end -}}
+        {{ .Get "title" }}
+    </h4>
+  {{- end -}}
+  {{ .Inner | markdownify }}
+</div>

@@ -27,11 +27,11 @@ In the new Prestashop 1.7 default theme, we will minify all the media files by c
 In order to do that, we are using [webpack](https://webpack.github.io), a module bundler, working with Node.js.
 It prevents us from making too many HTTP(S) requests to the webserver to load all the assets when you access to the website.
 
-<div class="alert alert-note" role="alert">
+{{% notice type="note" %}}
 This section describes our CSS and JavaScript toolchains when creating the default theme.
 
 Note that of all these are used in the default theme only: the Starter Theme has none of those, making it possible for you to use any framework or tool you prefer when building YOUR theme on top of it.
-</div>
+{{% /notice %}}
 
 ### CSS
 
@@ -97,7 +97,7 @@ The new default theme is still a work in progress — and the Starter Theme is b
 
 We want this to be a community effort! All your comments and feedbacks are welcome, and we will be glad to hear them. Come talk to us on the [Gitter channel](https://gitter.im/PrestaShop/StarterTheme), and if you have a good idea for [the Starter Theme](https://github.com/PrestaShop/PrestaShop/tree/feat/starter-theme) or [the default theme](https://github.com/PrestaShop/PrestaShop/tree/feat/classic), don't hesitate to make a PR on their respective GitHub repository!
 
-<div class="alert alert-note" role="alert">
+{{% notice type="note" %}}
 Currently, the two themes are in their own branches, which is not ideal for contributors who work from the main `develop` branch. We're doing our best to get everything merged into the `develop` as soon as possible. It should happen over the coming days.
 If you want to work on the default theme, it is now relatively easy: just install it as if it were the `develop` branch. The default theme will be installed by default (as expected!) and set up with all the modules at the right positions.
-</div>
+{{% /notice %}}

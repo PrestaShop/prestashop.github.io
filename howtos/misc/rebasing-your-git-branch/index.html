@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>How to rebase your Git branch</title>
-    <link href="/style.css?1670877525" rel="stylesheet">
+    <link href="/style.css?1670883255" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -211,16 +211,20 @@
               <p>Contributing code to PrestaShop can be scary for first-timers, because not everyone knows how Git works. By the time you have figured how to properly push your changes to GitHub, the codebase has changed, rendering your suggestions impossible to merge &ndash; leading to frustration on both sides. It&rsquo;s high time you learn about <code>git rebase</code>.</p>
 <p>Files often change an Open Source project. Between the time you fix an issue and create a pull request, and the time a Core developer takes a look at your PR, the target files can have changed a couple times (or more). &ldquo;Could you rebase?&rdquo;, asks the Core developer. Easier said than done, but we&rsquo;ll give you a step-by-step guide on how to do it.</p>
 <p><i>This article was initially <a href="https://github.com/PrestaShop/PrestaShop/pull/5583#issuecomment-221409795">a comment by @shudrum on a PR by @kpodemski</a>. Thanks for the inspiration, people!</i></p>
-<div class="alert alert-note" role="alert">
-You can only rebase a pull request when its commits were pushed to GitHub using Git's command-line tool. It is NOT possible to rebase code that has been submitted through GitHub's online edition form.
+
+
+
+<div class="alert alert-note"><p>You can only rebase a pull request when its commits were pushed to GitHub using Git&rsquo;s command-line tool. It is NOT possible to rebase code that has been submitted through GitHub&rsquo;s online edition form.</p>
 <p>We therefore advise you to <a href="https://try.github.io/">learn the basics of Git</a> before contributing code. It will be a very valuable addition to your development toolbox. It will also let Core developers know that</p>
 <ul>
- <li>you know what you are doing,</li>
- <li>you can work with them in improving your code in the PR,</li>
- <li>your changes have been tested on your local install (= less likely to contain a typo).</li>
+<li>you know what you are doing,</li>
+<li>you can work with them in improving your code in the PR,</li>
+<li>your changes have been tested on your local install (= less likely to contain a typo).</li>
 </ul>
 <p>Go Git!</p>
+
 </div>
+
 <h2 id="what-is-rebasing">What is rebasing?</h2>
 <p>Rebasing updates the history of your local Git repository so that it is synchronized with the history of the official Git repository. Once you have rebased your repo, it contains all the changes that have been merged to Core since you created your code changes. This way, your pull request can be merged safely: it won&rsquo;t break the destination codebase.</p>
 <p>In short, rebasing makes for a cleaner history :)</p>
@@ -233,9 +237,12 @@ You can only rebase a pull request when its commits were pushed to GitHub using 
 <p>If you look at your local history, you should see something like this:</p>
 <p><img src="/assets/images/2017/04/git-rebase-1.png" alt="A messy history"></p>
 <p>As you can see, the branch has 3 commits from the contributor, with various levels of respect for the naming convention. The oldest one respects the convention; the second one certainly does not; the most recent one is better but still superfluous.</p>
-<div class="alert alert-note" role="alert">
-In this example, `git lg` is a shortcode to an improvement over the standard `git log`. <a href="https://coderwall.com/p/euwpig/a-better-git-log">See how you can enjoy the same improvement</a>!
+
+
+
+<div class="alert alert-note">In this example, <code>git lg</code> is a shortcode to an improvement over the standard <code>git log</code>. <a href="https://coderwall.com/p/euwpig/a-better-git-log">See how you can enjoy the same improvement</a>!
 </div>
+
 <p>You can see that the latest commit has the <code>9a7b798</code> identifier (short for the <code>9b9b47e9fe591e2f4b1f9bb2dd18c4fa5e715b55</code> sha1 hash, but the seven first characters are unique enough for identification in this context).</p>
 <p>If you have not updated your local repository, the <code>develop</code> branch should be at the same location. To correctly rebase the branch, you can use <code>git rebase -i 9a7b798</code>.</p>
 <p>Let’s break this down:</p>

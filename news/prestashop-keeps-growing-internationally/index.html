@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>PrestaShop keeps growing internationally</title>
-    <link href="/style.css?1670877525" rel="stylesheet">
+    <link href="/style.css?1670883255" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -240,20 +240,26 @@
 </span></span><span class="line"><span class="cl">        	<span class="nt">&lt;/units&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="nt">&lt;/localizationPack&gt;</span>
 </span></span></code></pre></div><p>Need to read an in-situ example? Have a look at the <a href="https://github.com/PrestaShop/LocalizationFiles/blob/master/az.xml">Azerbaijan localization pack</a> to help you contribute!</p>
-<div class="alert alert-info" role="alert">
-<h4>IMPORTANT</h4>
-<p><b>A short notice about the expected ISO codes:</b><br>
+
+
+
+<div class="alert alert-info"><h4>IMPORTANT
+    </h4><b>A short notice about the expected ISO codes:</b><br>
 <br>
 <i>country code</i> = <a href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-2</a> = e.g. <i>AZ</i>, for Azerbaijan<br>
 <i>currency code</i> = <a href="https://www.iso.org/iso-4217-currency-codes.html">ISO 4217</a> = e.g. <i>AZN</i>, for the Azerbaijani manat<br>
-<i>language code</i> = <a href="https://www.iso.org/iso-639-language-codes.html">ISO 639-1</a> = e.g. <i>az</i>, for the Azeri<br></p>
+<i>language code</i> = <a href="https://www.iso.org/iso-639-language-codes.html">ISO 639-1</a> = e.g. <i>az</i>, for the Azeri<br>
 </div>
-<div class="alert alert-info" role="alert">
-<h4>NOTE</h4>
-<p><b>How CLDR is used here for currencies:</b><br>
+
+
+
+
+<div class="alert alert-info"><h4>NOTE
+    </h4><b>How CLDR is used here for currencies:</b><br>
 <br>
-When entering information about the currency in a localization pack, note the CLDR handles most of it. Such as the format, decimals or blank fields. However, this information is still read (<a href="https://github.com/PrestaShop/PrestaShop/blob/1.7.0.x/classes/LocalizationPack.php#L304-L312">here</a>) so it has to be filled.</p>
+When entering information about the currency in a localization pack, note the CLDR handles most of it. Such as the format, decimals or blank fields. However, this information is still read (<a href="https://github.com/PrestaShop/PrestaShop/blob/1.7.0.x/classes/LocalizationPack.php#L304-L312">here</a>) so it has to be filled.
 </div>
+
 <h3 id="-relocate-to-better-localize">📁 Relocate to better localize</h3>
 <p>In order to better understand how localization works, we need to dive into the Core. Localization files are bundled physically with PrestaShop, they are located in the <code>/localization</code> folder, but they are also distributed through our services via <a href="http://api.prestashop.com/localization/%7BmajorVersion%7D/%7BcountryIsoCode%7D.xml">http://api.prestashop.com/localization/{majorVersion}/{countryIsoCode}.xml</a> (where {majorVersion} is something like &ldquo;17&rdquo; (for 1.7) and {countryIsoCode} is a 2-letter country iso code like &ldquo;fr&rdquo;) so that older PrestaShop versions can benefit from updated localization packs.</p>
 <p>Problem: it is irrelevant to have files that often need to be updated at this place, complicating our ability to quickly deliver up-to-date data.</p>

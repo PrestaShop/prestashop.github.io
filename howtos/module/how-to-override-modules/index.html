@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>How to override modules in PrestaShop</title>
-    <link href="/style.css?1670877525" rel="stylesheet">
+    <link href="/style.css?1670883255" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -198,12 +198,17 @@
 
               <p>Since version 1.6.0.11 of PrestaShop, there is a new feature that allows developers to override a module&rsquo;s instance classes (ie. its main module files, <a href="https://github.com/PrestaShop/PrestaShop/pull/2133">see the PR by @axometeam</a>).</p>
 <p>Since PrestaShop uses lots of modules for both core and custom features, module overrides are a welcome addition to an already great override system in PrestaShop. Let&rsquo;s take a look on how to use it.</p>
-<div class="alert alert-note" role="alert">
-<h4><i class='icon-file'></i> Note</h4>
-Remember that overrides in PrestaShop are exclusive. This means that if your module overrides one of PrestaShop's behaviors, another module will not be able to use that behavior properly, or override it in an predictable way.
+
+
+
+<div class="alert alert-note"><h4><i class="icon-file"></i>
+        Note
+    </h4><p>Remember that overrides in PrestaShop are exclusive. This means that if your module overrides one of PrestaShop&rsquo;s behaviors, another module will not be able to use that behavior properly, or override it in an predictable way.</p>
 <p>Therefore, overrides should only be used for your own local modules, when you have a specific need that cannot be applied without it.</p>
 <p>It is not recommended to use an override in a module that you intend to distribute (for instance through the PrestaShop Addons marketplace), and they are forbidden in partner modules.</p>
+
 </div>
+
 <h2 id="override-a-modules-instance-class-by-extending-it">Override a module&rsquo;s instance class by extending it</h2>
 <p>To override a module&rsquo;s instance class, you have to extend it, giving the extended class the same name and adding <code>Override</code> suffix:</p>
 <script src="https://gist.github.com/gskema/51aa05a814fa510a2202.js"></script>

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>New default theme for PrestaShop 1.7</title>
-    <link href="/style.css?1670877525" rel="stylesheet">
+    <link href="/style.css?1670883255" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -206,10 +206,14 @@
 <p>In the new Prestashop 1.7 default theme, we will minify all the media files by compiling them into one single file per media type: <code>theme.css</code> and <code>theme.js</code>.
 In order to do that, we are using <a href="https://webpack.github.io">webpack</a>, a module bundler, working with Node.js.
 It prevents us from making too many HTTP(S) requests to the webserver to load all the assets when you access to the website.</p>
-<div class="alert alert-note" role="alert">
-This section describes our CSS and JavaScript toolchains when creating the default theme.
+
+
+
+<div class="alert alert-note"><p>This section describes our CSS and JavaScript toolchains when creating the default theme.</p>
 <p>Note that of all these are used in the default theme only: the Starter Theme has none of those, making it possible for you to use any framework or tool you prefer when building YOUR theme on top of it.</p>
+
 </div>
+
 <h3 id="css">CSS</h3>
 <p>The default theme includes the <a href="http://v4-alpha.getbootstrap.com">Bootstrap 4</a> framework, and uses <a href="http://sass-lang.com">Sass</a> in association with <a href="http://bourbon.io">Bourbon</a> to generate all the CSS assets. Bourbon eases the front-end developer&rsquo;s life by providing some helpers to automatically generate all the prefixes needed by the browsers.</p>
 <p>An example is better than a long speech:</p>
@@ -246,10 +250,13 @@ Here are some of its recommandations:</p>
 <h2 id="whats-next">What&rsquo;s next?</h2>
 <p>The new default theme is still a work in progress — and the Starter Theme is being fine-tuned throughout its development. Both will be released in beta at the same time that PrestaShop 1.7 beta version. Soon, then!</p>
 <p>We want this to be a community effort! All your comments and feedbacks are welcome, and we will be glad to hear them. Come talk to us on the <a href="https://gitter.im/PrestaShop/StarterTheme">Gitter channel</a>, and if you have a good idea for <a href="https://github.com/PrestaShop/PrestaShop/tree/feat/starter-theme">the Starter Theme</a> or <a href="https://github.com/PrestaShop/PrestaShop/tree/feat/classic">the default theme</a>, don&rsquo;t hesitate to make a PR on their respective GitHub repository!</p>
-<div class="alert alert-note" role="alert">
-Currently, the two themes are in their own branches, which is not ideal for contributors who work from the main `develop` branch. We're doing our best to get everything merged into the `develop` as soon as possible. It should happen over the coming days.
-If you want to work on the default theme, it is now relatively easy: just install it as if it were the `develop` branch. The default theme will be installed by default (as expected!) and set up with all the modules at the right positions.
+
+
+
+<div class="alert alert-note">Currently, the two themes are in their own branches, which is not ideal for contributors who work from the main <code>develop</code> branch. We&rsquo;re doing our best to get everything merged into the <code>develop</code> as soon as possible. It should happen over the coming days.
+If you want to work on the default theme, it is now relatively easy: just install it as if it were the <code>develop</code> branch. The default theme will be installed by default (as expected!) and set up with all the modules at the right positions.
 </div>
+
 
 
           </article>

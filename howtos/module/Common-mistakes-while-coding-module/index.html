@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Twelve things to watch out for when coding a PrestaShop module</title>
-    <link href="/style.css?1670877525" rel="stylesheet">
+    <link href="/style.css?1670883255" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -198,10 +198,14 @@
 
               <p>PrestaShop has been around for many years, during which thousands of modules were made by thousands of developers, yet we still see the same simple mistakes being made, even though they could easily be avoided.</p>
 <p>Here is a list of 10+ common mistakes when coding a PrestaShop module, with a short information on how to avoid them.</p>
-<div class="alert alert-note" role="alert">
-<h4><i class='icon-file'></i> Note</h4>
-Several tips only apply to PrestaShop 1.5-1.6 module development. <a href="http://build.prestashop.com/news/module-development-changes-in-17/">PrestaShop 1.7 changes a few things</a>!
+
+
+
+<div class="alert alert-note"><h4><i class="icon-file"></i>
+        Note
+    </h4>Several tips only apply to PrestaShop 1.5-1.6 module development. <a href="/news/module-development-changes-in-17/">PrestaShop 1.7 changes a few things</a>!
 </div>
+
 <h3 id="1-creatingusing-a-module-with-hardcoded-database-prefix">1. Creating/using a module with hardcoded database prefix</h3>
 <p>This can be surprising to some but, yes, I saw this a few times: developers using the &ldquo;ps_&rdquo; prefix in their SQL schemas, or SQL queries.</p>
 <p>How to avoid this? Always use PrestaShop&rsquo;s <code>_DB_PREFIX_</code> constant, which is the prefix that is defined by the user during installation.</p>
@@ -304,10 +308,14 @@ Now a customer bought another carousel module, one with product reviews, and it 
 <p>Developers often don&rsquo;t know how something is constructed, and they are willing to sit for 2-3 hours more in order create something by themselves, without reading how it&rsquo;s already done in different modules or places of the back office. If you want to be a better developer of PrestaShop&rsquo;s modules, look how many features and tools PrestaShop&rsquo;s API already provides you with.</p>
 <hr>
 <p>Did these tips help you create better modules? Do you still have some questions? Was there a step too hard? Let us know in the comments!</p>
-<div class="alert alert-note" role="alert">
-<h4><i class='icon-file'></i> Note</h4>
-This article is a contribution from a member of the PrestaShop community, and not a PrestaShop employee. If you too want to help the community by sharing tips and advice on the Build devblog, <a href="http://build.prestashop.com/about/#contribute">read this</a>!
+
+
+
+<div class="alert alert-note"><h4><i class="icon-file"></i>
+        Note
+    </h4>This article is a contribution from a member of the PrestaShop community, and not a PrestaShop employee. If you too want to help the community by sharing tips and advice on the Build devblog, <a href="/about/#contribute">read this</a>!
 </div>
+
 
 
           </article>

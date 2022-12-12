@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Introducing a new branching model for PrestaShop</title>
-    <link href="/style.css?1670877525" rel="stylesheet">
+    <link href="/style.css?1670883255" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -246,10 +246,14 @@
 <p>Before we adopted the <a href="http://build.prestashop.com/news/a-more-semantic-versioning-scheme/">current SemVer-like versioning</a>, we used to have only one branch, &lsquo;1.6&rsquo;, and developers would commit whatever they had to do on it. We would then make a release out of it, including all of its changes (new feature, bug fixes, etc.) in the new version.</p>
 <p>This was simply the legacy of our days when we used the Subversion system, which we had been using for years. It turned out confusing and not very stable, resulting in inconsistent version numbers.</p>
 <p>We looked around to understand how other open-source projects manage their code with Git, and we came up with the following model.</p>
-<div class="alert alert-info" role="alert">
-<h4><i class='icon-pin'></i> Info</h4>
-I'm writing this article in August 2015, as PrestaShop 1.6.1.1 just came out. All version numbers and branch names are based on the current situation. They might have changed as you're reading this article, so be sure to check what the current situation is.
+
+
+
+<div class="alert alert-info"><h4><i class="icon-pin"></i>
+        Info
+    </h4>I&rsquo;m writing this article in August 2015, as PrestaShop 1.6.1.1 just came out. All version numbers and branch names are based on the current situation. They might have changed as you&rsquo;re reading this article, so be sure to check what the current situation is.
 </div>
+
 <h3 id="two-branches-to-understand">Two branches to understand</h3>
 <p>Two main branches will now live side by side: &lsquo;develop&rsquo; for the next minor/major release, and the latest minor release&rsquo;s branch (currently: &lsquo;1.6.1.x&rsquo;).</p>
 <p>The &lsquo;develop&rsquo; branch is always the next release. Depending on the PrestaShop roadmap, it can be the next minor version or the next major version. If you don&rsquo;t know where to commit, it&rsquo;s always safer to commit to this branch.</p>

@@ -21,26 +21,36 @@ We write about everything that happens to the PrestaShop software:
 
 This devblog also hosts How-Tos on certain features, before they find their way in the Developer Guide or the Designer Guide.
 
-## Run locally
-
-build.prestashop-project.org is built and hosted by [GitHub Pages](https://github.com/github/pages-gem) which leverages [Jekyll](https://jekyllrb.com/) (a Ruby static site generator) abilities.
-
-We recommend using Ruby 3.1
+## Rendering the site locally
 
 ### Setup
 
-```bash
-$ gem install bundler
-$ bundle install
-```
+1. [Install Hugo](https://gohugo.io/getting-started/installing). You will need v0.104.3+ (extended binary). 
 
-### Run local server
+2. Clone the repository somewhere on your system
+   ```
+   git clone https://github.com/PrestaShop/prestashop.github.io.git
+   ```
 
-```bash
-$ bundle exec jekyll serve
-```
+### Launching the site
 
-Blog should be available at [http://127.0.0.1:4000/](http://127.0.0.1:4000/)
+1. Make sure you're at the root of the project.
+   ```
+   cd /path/to/repository/
+   ```
+
+2. Launch Hugo server:
+   ``` 
+   hugo server
+   ```
+
+   Note: You may need to change the path to the `hugo` binary depending on where it is on your system
+
+3. Done! You can open up the site on your browser.
+
+   It's usually available at http://localhost:1313
+
+   Any change you perform on your data will be updated almost instantly.
 
 ## Contribute
 

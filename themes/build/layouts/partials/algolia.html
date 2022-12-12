@@ -1,0 +1,37 @@
+{{ with .Site.Params.algolia }}
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("{{ .application_id }}", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('{{ .index_name }}');
+
+    //initialize autocomplete on search input (ID selector must match)
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        //value to be displayed in input control after user's suggestion selection
+        displayKey: 'name',
+        //hash of templates used when rendering dataset
+        templates: {
+          //'suggestion' templating function used to render a single suggestion
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          // 'empty' : If no result found
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+{{ end }}

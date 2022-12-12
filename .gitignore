@@ -1,13 +1,5 @@
 .DS_Store
 _site
-.sass-cache
-bower_components
-_bower_components
-VagrantFile
-puphpet/
-.vagrant
 .idea
-.bundle
-vendor
-
-.jekyll-metadata
+.hugo_build.lock
+/resources

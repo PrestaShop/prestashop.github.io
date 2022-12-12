@@ -1,0 +1,102 @@
+{{ define "main" }}
+<div class="home">
+
+  <div class="row">
+    <div class="col-md-12">
+
+      {{- if (eq .Kind "term") -}}
+          {{- $tagname := .Title -}}
+          {{- with (where $.Site.Data.tags "slug" $tagname) -}}
+              {{- with (index . 0) }}{{ $tagname = index . "name"}}{{ end -}}
+          {{- end -}}
+          <h1>Articles by tag: {{ $tagname }}</h1>
+      {{- else -}}
+         <h1>{{ .Title }}</h1>
+      {{- end -}}
+
+      <ul class="post-list">
+        {{ $pages := cond .IsHome (where .Site.RegularPages "Section" "news") .Pages }}
+        {{ $paginator := .Paginate $pages.ByDate.Reverse }}
+        {{ range $idx, $page := $paginator.Pages }}
+
+          {{ if ne $idx 0 }}
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          {{ end }}
+
+          {{ with $page }}
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  {{ .Date.Format "Jan 2, 2006" }}
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="{{ default .Permalink .Params.Disqus_url }}"></span>
+            </div>
+
+            <h2>
+              {{ if .Params.Icon }}
+              <i class="fa {{ .Params.Icon }}"></i>
+              {{ else }}
+              <i class="icon-anchor"></i>
+              {{ end }}
+              <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+
+            {{ if .Params.Subtitle }}
+            <h4>{{ .Params.Subtitle }}</h4>
+            {{ end }}
+
+            <p>{{ partial "partials/post-summary" . }}</p>
+            <a class="read-more" href="{{ .Permalink }}">Continue reading &rarr;</a>
+          </li>
+
+          {{ end }}
+        {{ end }}
+
+      </ul>
+
+    </div>
+  </div>
+
+  {{ if gt ($paginator.TotalPages) 1 }}
+    <!-- Pagination links -->
+    <div class="row">
+      <div class="col-md-12">
+
+        <nav>
+          <ul class="pager">
+
+            <li class="previous {{ if not $paginator.HasPrev }}disabled{{ end }}">
+              {{ if $paginator.HasPrev }}
+              <a href="{{ $paginator.Prev.URL }}">
+                <span aria-hidden="true">&larr;</span> Newer
+              </a>
+              {{ else }}
+              <span aria-hidden="true">&larr; Newer</span>
+              {{ end }}
+            </li>
+            <li>
+              <span class="page_number">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+            </li>
+            <li class="next {{ if not $paginator.HasNext }}disabled{{ end }}">
+              {{ if $paginator.HasNext }}
+              <a href="{{ $paginator.Next.URL }}">
+                Older <span aria-hidden="true">&rarr;</span>
+              </a>
+              {{ else }}
+              Older <span aria-hidden="true">&rarr;</span>
+              {{ end }}
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  {{ end }}
+
+</div>
+{{ end }}

@@ -1,0 +1,35 @@
+{{ if .Translations }}
+
+<div id="translation-links" class="panel panel-default">
+
+  <div class="panel-heading">
+    <div class="panel-title">Translations by the community</div>
+  </div>
+
+  <div class="panel-body">
+
+    <ul class="list-unstyled">
+
+      {{ range .Translations }}
+        <li>
+          <a href="{{ .Permalink }}" target="_blank">
+            <span class="flag-icon flag-icon-{{ .Lang }}"></span>
+            {{ partial "translations-link-text.html" . }}
+          </a>
+        </li>
+      {{ end }}
+
+    </ul>
+
+    <p>
+      <small>
+        If you want to translate this article,
+        please <a href="mailto:build@prestashop.com">send us the link by email</a>.
+      </small>
+    </p>
+
+  </div>
+
+</div>
+
+{{ end }}

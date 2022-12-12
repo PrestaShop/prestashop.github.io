@@ -1,0 +1,3 @@
+{{ range .Params.Tags }}
+  <a class="label label-primary" href="/tag/{{ . | urlize }}/">{{ . }}</a>
+{{ end }}

@@ -10,7 +10,7 @@
               {{- with (index . 0) }}{{ $tagname = index . "name"}}{{ end -}}
           {{- end -}}
           <h1>Articles by tag: {{ $tagname }}</h1>
-      {{- else -}}
+      {{- else if not .IsHome -}}
          <h1>{{ .Title }}</h1>
       {{- end -}}
 

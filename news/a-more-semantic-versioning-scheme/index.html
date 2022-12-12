@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>A more semantic versioning scheme</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="A more semantic versioning scheme" />
+<meta property="og:description" content="The upcoming version 1.6.1.0 represents an opportunity for us to make a lot of good changes for both the project and the community, as you may have noticed recently." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/a-more-semantic-versioning-scheme/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2015-06-08T17:56:00+02:00" />
+    <meta property="article:modified_time" content="2015-06-08T17:56:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="A more semantic versioning scheme"/>
+<meta name="twitter:description" content="Moving towards SemVer"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">A more semantic versioning scheme</h1>
+              
+                <h3 class="post-subtitle">Moving towards SemVer</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749"
+         alt="Xavier Borderie's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Xavier Borderie</div>
+        
+          <div class="author-display-role">Open Source Advocate</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jun 8, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=A&#43;more&#43;semantic&#43;versioning&#43;scheme&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fa-more-semantic-versioning-scheme%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fa-more-semantic-versioning-scheme%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>The upcoming version 1.6.1.0 represents an opportunity for us to make a lot of good changes for both the project and the community, as you may have noticed recently.</p>
+<p>One thing that’s been bugging us for quite some time (and most probably users, developers, etc.) is the way PrestaShop’s version numbers are handled — in that they are not really handled as much as rarely consistent.</p>
+<p>Let’s see for instance what happened in <a href="https://www.prestashop.com/en/developers-versions/changelog/1.6.0.14">the last few versions of the 1.6.x branch</a>:</p>
+<ul>
+<li>1.6.0.7: Many bugfixes, many improvements, a few new features.</li>
+<li>1.6.0.8: Several bugfixes, a few improvements.</li>
+<li>1.6.0.9: Many bugfixes, many improvements, a few new features.</li>
+<li>1.6.0.10: Internal version, never publicly released.</li>
+<li>1.6.0.11: Many bugfixes, many improvements, several new features.</li>
+<li>1.6.0.12: Many bugfixes, several improvements and some new features.</li>
+<li>1.6.0.13: 2 bugfixes.</li>
+<li>1.6.0.14: 1 bugfix.</li>
+</ul>
+<p>See where I’m going with this? Looking only at the version numbers, you can never tell if a new version contains a few useful corrections, or if it brings many cool features, or if it changes the database schema or the whole system. It’s not easy to know if it is a simple update, or a complex one. It’s not clear if it’s going to be business as usual, or if you’ll have to rework your themes/modules.</p>
+<p>In short, it’s difficult to know, just by looking at the version number, whether it’s a minor or a major version.</p>
+<p>This has been going on for too long, and we’re taking the opportunity of the release of our new major version, v1.6.1.0, to improve the way we number our versions of PrestaShop.</p>
+<p>From version 1.6.1.0 onward, we are moving towards SemVer.</p>
+<h3 id="semwhat">SemWhat?!</h3>
+<p><a href="http://semver.org/">SemVer</a>, short for Semantic Versioning, is a specification by Gravatar co-founder and GitHub ex-CEO Tom Preston-Werner. In its latest incarnation (v2.0.0), it describes its proposed versioning scheme as follows:</p>
+<blockquote>
+<p>Given a version number MAJOR.MINOR.PATCH, increment the:</p>
+<ul>
+<li>MAJOR version when you make incompatible API changes,</li>
+<li>MINOR version when you add functionality in a backwards-compatible manner, and</li>
+<li>PATCH version when you make backwards-compatible bug fixes.</li>
+</ul>
+<p>Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.</p>
+</blockquote>
+<p>The most important point of SemVer is the predictability of potential breakage: looking at the version number, you know from the get-go whether that new version contains bugfixes; or bugfixes and features; or bugfixes, features and potentially impacting changes from the previous major version.</p>
+<p>Version numbers become more coherent, updates become more predictable, and developers know when to check for impacts on their modules, themes or clients&rsquo; stores!</p>
+<h3 id="how-will-it-apply-to-prestashop-version-numbering">How will it apply to PrestaShop version numbering?</h3>
+<p>In the SemVer description, change “incompatible API changes” to “backwards compatible” and you will get the point: changes that have an impact on module/theme development will be limited to major versions only. Developers and designers won’t have to worry about whether or not they need to update their code for minor or patch versions.</p>
+<p>The thing is, PrestaShop has long had version numbers that span four numerals, whereas SemVer requires projects to use 3 numerals. For instance, the current version is 1.6.0.14, and the coming version is 1.6.1.0. That is why we chose to move <em>towards</em> SemVer, modifying it slightly instead of adopting it as-is. We will need to adapt SemVer to our historical way of versioning keeping the four numerals.</p>
+<p>This means that version numbers will be based on 1.MAJOR.MINOR.PATCH. And we keep the possibility to switch to 2.0.0.0 on the day something rrrrrreally extra major happens :)</p>
+<p><img src="/assets/images/2015/06/major-minor-patch.png" alt=""></p>
+<h3 id="so-when-will-the-numerals-change">So, when will the numerals change?</h3>
+<p>1.6.1.0 is the forthcoming major version, which should be released in the coming weeks. It brings a few changes in the way things work internally but it keeps all retrocompatibility intact, so modules and themes that worked with 1.6.0.14 will continue to work with 1.6.1.0.</p>
+<p>Starting with 1.6.1.0, new versions of PrestaShop will use the new SemVer-inspired numbering scheme.</p>
+<p>What this means is:</p>
+<ul>
+<li>The next bugfix-only version (or “patch” version) will be v1.6.1.1, then if we need more, v1.6.1.2, v1.6.1.3, etc.</li>
+<li>The next version which brings retrocompatible changes (or “minor” version) will be 1.6.2.0. It will also contain bugfixes.</li>
+<li>The next version which brings incompatible changes (or “major” version) will be 1.7.0.0. It will also contain retrocompatible changes and bugfixes. Also, the incompatible changes might be few and minor, but SemVer has strict rules&hellip;</li>
+</ul>
+<p>Adopting this SemVer-inspired numbering scheme, version numbers will be much more consistent and coherent, the need for 3rd-party developers to update their code will be more predictable, and the whole community will get a better understanding of what an upgrade might imply.</p>
+<h3 id="what-about-the-coming-new-architecture">What about the coming new architecture?</h3>
+<p>Since you read this blog every day (don&rsquo;t you?), you know that <a href="http://build.prestashop.com/news/new-architecture-1-6-1-0/">we are working on a new architecture for PrestaShop</a>, with the first bits having landed in v1.6.1.0 already. It will take some time and some API changes, but once it’s final, users and developers/designers will benefit from a much more robust codebase, without us having to rewrite everything from scratch :)</p>
+<h3 id="so-does-that-mean-1700-is-coming-soon">So does that mean 1.7.0.0 is coming soon?</h3>
+<p>Yes! Thanks to the new architecture, currently in the works, it might even be coming before winter of 2015! :)</p>
+<p>What about 1.8.0.0? Well, maybe sooner than it took between 1.5 and 1.6!</p>
+<h3 id="so-you-are-planning-to-impact-backward-compatibility-regularly">So you are planning to impact backward-compatibility regularly?</h3>
+<p>Not at all! 2015 is a special year, where a lot of things are getting better, and where we prepare for the future of PrestaShop.</p>
+<p>Also, note that if a major version could potentially impact compatibility under SemVer’s strict wording, it doesn’t mean that the whole ecosystem of themes and modules will effectively break! It simply means that parts of the API have changed, and these changes will be documented long before the major version is released!</p>
+<h3 id="what-about-security-updates">What about security updates?</h3>
+<p>Security updates, if there are any, are fixed in patch versions. Patch versions are released as fast as possible.</p>
+<p>Patch versions fix critical bugs and security issues (which are more or less the same thing). They might also fix some trivial bugs, but the point of a patch version is to fix problematic issues, not to close non-critical Forge tickets.</p>
+<p>Eventually, once we have proven that upgrading to a patch version is seamless for developers and designers, and beneficial for the whole community, we plan on implementing automatic background updates for patch versions: if there’s a critical issue in the software, PrestaShop will be able to update itself as soon as the fix is available on our servers, and you will wake up to an email from your store telling you that it just got better and safer during the night! Of course, a module would be able to disable that feature — but that’s another discussion we will have!</p>
+<h3 id="what-about-the-database">What about the database?</h3>
+<p>SemVer applies mostly to the way the code works. But the database is also a critical part of PrestaShop, and in past years the Core team updated it as needed.</p>
+<p>With our SemVer-like versioning, the database will never be updated in patch versions. Tables and rows might be <em>added</em> to it in minor versions, but <em>none of the existing ones shall be changed</em>. Only a major version might change existing tables, rows and indexes.</p>
+<h3 id="alright-alright-i-get-it-its-better-so-when-is-1610-coming">Alright, alright, I get it, it’s better! So, when is 1.6.1.0 coming?</h3>
+<p><a href="http://build.prestashop.com/news/prestashop-1-6-1-0-rc3/">1.6.1.0-rc3 was released 2 weeks ago</a>, 1.6.0.1-rc4 should be released this week, other RC versions might be released as needed, depending on the feedback from the community.</p>
+<p>We plan on releasing the stable version of PrestaShop 1.6.1.0 by the end of June, or early-July. Until then, please help us make it the most robust version ever released!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jun 8, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/version/">version</a>
+
+  <a class="label label-primary" href="/tag/versioning/">versioning</a>
+
+  <a class="label label-primary" href="/tag/semver/">semver</a>
+
+  <a class="label label-primary" href="/tag/semantic/">semantic</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Xavier Borderie
+      <span>Open Source Advocate</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>How to override modules in PrestaShop</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="How to override modules in PrestaShop" />
+<meta property="og:description" content="Since version 1.6.0.11 of PrestaShop, there is a new feature that allows developers to override a module’s instance classes (ie. its main module files, see the PR by @axometeam)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/howtos/module/how-to-override-modules/" />
+    <meta property="article:section" content="howtos" />
+    <meta property="article:published_time" content="2015-05-10T12:15:00+02:00" />
+    <meta property="article:modified_time" content="2015-05-10T12:15:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="How to override modules in PrestaShop"/>
+<meta name="twitter:description" content="Override module methods in PrestaShop 1.6.0.11 and above"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">How to override modules in PrestaShop</h1>
+              
+                <h3 class="post-subtitle">Override module methods in PrestaShop 1.6.0.11 and above</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/5542423"
+         alt="Gytis Šk.'s photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Gytis Šk.</div>
+        
+          <div class="author-display-role">Community Member &amp; Web Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    May 10, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=How&#43;to&#43;override&#43;modules&#43;in&#43;PrestaShop&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmodule%2Fhow-to-override-modules%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmodule%2Fhow-to-override-modules%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Since version 1.6.0.11 of PrestaShop, there is a new feature that allows developers to override a module&rsquo;s instance classes (ie. its main module files, <a href="https://github.com/PrestaShop/PrestaShop/pull/2133">see the PR by @axometeam</a>).</p>
+<p>Since PrestaShop uses lots of modules for both core and custom features, module overrides are a welcome addition to an already great override system in PrestaShop. Let&rsquo;s take a look on how to use it.</p>
+<div class="alert alert-note" role="alert">
+<h4><i class='icon-file'></i> Note</h4>
+Remember that overrides in PrestaShop are exclusive. This means that if your module overrides one of PrestaShop's behaviors, another module will not be able to use that behavior properly, or override it in an predictable way.
+<p>Therefore, overrides should only be used for your own local modules, when you have a specific need that cannot be applied without it.</p>
+<p>It is not recommended to use an override in a module that you intend to distribute (for instance through the PrestaShop Addons marketplace), and they are forbidden in partner modules.</p>
+</div>
+<h2 id="override-a-modules-instance-class-by-extending-it">Override a module&rsquo;s instance class by extending it</h2>
+<p>To override a module&rsquo;s instance class, you have to extend it, giving the extended class the same name and adding <code>Override</code> suffix:</p>
+<script src="https://gist.github.com/gskema/51aa05a814fa510a2202.js"></script>
+<p>This file should be put in <code>/override/modules/blockuserinfo/blockuserinfo.php</code>.</p>
+<p>When you manually add an override, do not forget to clean the class reference cache by deleting <code>cache/class_index.php</code>. The next time PrestaShop loads, it will regenerate <code>class_index.php</code> and your module override will be active!</p>
+<p>You may even make a module that has overrides for other modules! For example, <code>/modules/mymodule/override/modules/blockuserinfo/blockuserinfo.php</code> will be copied to <code>/override/modules/blockuserinfo/blockuserinfo.php</code> during the installation of the <code>mymodule</code> module. However, this is not recommended, since the exact usage of a module to be overridden is unknown and may be different in a particular shop.</p>
+<h2 id="troubles-overriding-some-modules">Troubles overriding some modules</h2>
+<p>Some modules (mainly core modules) have methods that can&rsquo;t be extended (at the moment).</p>
+<p>For example:</p>
+<script src="https://gist.github.com/gskema/04af5a98b56ee59f01e1.js"></script>
+<p>As you can see, this class has a variety of properties and methods. Some methods are <code>public</code>, some are <code>protected</code> and others are <code>private</code>.</p>
+<p>Sometimes you may need to extend a method that is currently set to be <code>private</code>. Unfortunately, it is not possible to extend private variables or methods in PHP (and most other class-based programming languages).</p>
+<p>This is a design issue. Core modules were written long before the introduction of module overrides. Difference is that <code>private</code> scope &ldquo;locks down&rdquo; class features, while <code>protected</code> scope is less strict and allows overrides by a child class.</p>
+<p>If you come across a core module method that is private, the best thing to do is change it to <code>protected</code> and to make a pull request on GitHub for that module. Everyone will benefit!</p>
+<h2 id="how-to-make-cleaner-method-overrides">How to make cleaner method overrides</h2>
+<p>Overrides are great, but do they keep up with the updates? We are talking about a situation where the whole function is copied to an override and one minor modification is made:</p>
+<script src="https://gist.github.com/gskema/751e2791b35008beb71f.js"></script>
+<p>We added the line <code>'company_name' =&gt; ($this-&gt;context-&gt;customer-&gt;logged ? $this-&gt;context-&gt;customer-&gt;company : false),</code>, which adds a <code>company_name</code> Smarty variable that we want to use in our template.</p>
+<p>The problem is that we essentially &ldquo;snapshotted&rdquo; the method code that we took from the module. The code of this method may and will change in the future version. What if wanted to have the updated code but also add our one little modification?</p>
+<p>When the code structure and logic allows it, you should always aim to execute the whole unmodified parent method <strong>and then</strong> (before or after) add that one little modification. The way you can do this is by using <code>parent</code> keyword, which calls the method from the parent class:</p>
+<script src="https://gist.github.com/gskema/0adf2da86ff78750d161.js"></script>
+<p>In the example above, we add our Smarty variable, and then return the parent method, which will call the unmodified and possibly updated <code>hookDisplayTop</code> method. There is no need to copy the whole method.</p>
+<p><strong>P.S.</strong> There is one small issue in the example, which you may have noticed. In the parent method, there is a  statement, <code>if (!$this-&gt;active)</code>, which should&rsquo;ve been taken into consideration when making the override. We could put it in our overridden method, or for the purpose of this example, we can imagine that it&rsquo;s not there :)</p>
+<h2 id="module-overrides-are-great">Module overrides are great!</h2>
+<p>As we mentioned before, PrestaShop already has a great system for overrides, and module overrides make it even greater. Overrides truly empower developers and saves a lot of time for everyone.</p>
+<p>In the past, overriding module behaviour was a real issue. If using hooks, modifying templates and JavaScript files wasn&rsquo;t enough, you had to write your own module or rename and modify the module you were trying to change. The updates were instantly lost.</p>
+<p>Luckily, now it is possible to override module classes and change the behaviours right at their sources.</p>
+<p>Modules overrides have not been documented very well, so not many of you may know about it. Hopefully this gave you some clearance on how to use them.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">May 10, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/override/">override</a>
+
+  <a class="label label-primary" href="/tag/module/">module</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Gytis Šk.
+      <span>Community Member &amp; Web Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/gskema">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/gytskem">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'http:\/\/build.prestashop.com\/module\/how-to-override-modules\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

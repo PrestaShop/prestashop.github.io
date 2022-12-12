@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Introduction to the fuzzy search</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Introduction to the fuzzy search" />
+<meta property="og:description" content="It is always great to see contributions from our community merged, it reminds the power of working on an open-source project. Especially when there are great features at stake, like the fuzzy search." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/introduction-to-the-fuzzy-search/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2020-01-23T09:10:11+01:00" />
+    <meta property="article:modified_time" content="2020-01-23T09:10:11+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Introduction to the fuzzy search"/>
+<meta name="twitter:description" content="When the community implements the Levenshtein algorithm"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Introduction to the fuzzy search</h1>
+              
+                <h3 class="post-subtitle">When the community implements the Levenshtein algorithm</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/6756795?s=400&amp;v=4"
+         alt="Tanguy Salmon's photo">
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/32565890"
+         alt="Louise Bonnard's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Tanguy Salmon</div>
+        
+          <div class="author-display-role">Community Member</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">Louise Bonnard</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jan 23, 2020
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Introduction&#43;to&#43;the&#43;fuzzy&#43;search&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fintroduction-to-the-fuzzy-search%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fintroduction-to-the-fuzzy-search%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>It is always great to see contributions from our community merged, it reminds the power of working on an open-source project. Especially when there are great features at stake, like the fuzzy search.</p>
+<p>In this case, we are talking about the Levenshtein algorithm. It should be available in version 1.7.7 thanks to <a href="https://github.com/Lathanao">Lathanao</a> and it will definitely improve both the user experience and the conversion rate on your site! Wow, but what is it? It is a component that will improve the PrestaShop search functionality by taking into account misspelling or error inputs.</p>
+<p>Let us say a customer wants to buy the ‘hummingbird printed sweater’ item in the catalog, he is in a rush so he pounces on the search bar and types ‘ummingbird’, hoping to get an instant result. And there is no result because of the lacking ‘h’. Such a situation will not happen with the Levenshtein algorithm since the search controller can find the closest word (‘hummingbird’ in this case) and display all ‘hummingbirds’ items as results.</p>
+<p><img src="/assets/images/2020/01/Fuzzy-Search-front.png" alt="Fuzzy search front"></p>
+<p>Now, let us dive into the development of this feature:</p>
+<h2 id="-about-the-levenshtein-algorithm">📫 About the Levenshtein algorithm</h2>
+<h3 id="from-a-technical-point-of-view">From a technical point of view</h3>
+<p>Putting it simply, the Levenshtein algorithm (used in the case of the fuzzy search) computes very quickly how many differences there are between two strings; this difference is called ‘<a href="https://en.wikipedia.org/wiki/Levenshtein_distance">distance</a>’. In order to give you an idea of how PHP works fast, note that its processing time to calculate 2,000 words is about 0.01 second - depending on your server also, of course.</p>
+<p>For example, this <a href="https://en.wikipedia.org/wiki/Approximate_string_matching">approximate string matching</a> allows you to calculate that between &lsquo;ummingbird&rsquo; and &lsquo;hummingbird&rsquo;, the distance is 1. A search using this algorithm is commonly called a fuzzy search. You can play with PHP’s levenshtein function and try to understand how it works.</p>
+<p>Enough theory, let us return to the Prestashop modification! So here, the goal is to compare the query with words included in the database. All this process is performed with a new static method called <code>findClosestWord()</code>. And since it is static, you can call it wherever you want. ;-)</p>
+<p>While examining this method, you can see we have included an autoscale algorithm. Why so? Because one problem was there were stores with large catalogs that contain more than one million referenced words in their database! In those cases, it takes a lot of computation to compare every word.</p>
+<p>The idea is we probably do not want to compare every word: comparing the long query ‘ummingbird’ with the short word ‘mug’ is indeed not relevant at all. In fact, search should only compare short queries to short words and long queries to long words.</p>
+<h3 id="how-does-it-work">How does it work?</h3>
+<p>So, the first part of the method sorts by length a batch of words in order to keep relevant computed Levenshtein distance and therefore have fewer words to compare. Indeed, fewer words to compare means less server stress and faster search results.</p>
+<p>Once the query string is sent to the search provider, three logic processes compute:</p>
+<p><strong>Phase 1: the search provider retrieves products depending on relevant keywords in ps_search_words.</strong></p>
+<p>Note that <em>ps_search_words</em> stands for the SQL table where indexed words for search are stored. In other words, this is a table in the database.</p>
+<p>Here, if the fuzzy search is not enabled and the query contains misspelling errors, your chance to get relevant products are very weak.</p>
+<p>At this step, a sort by weight is done. Remember that you can increase your search accuracy by setting up word weight in the Shop Parameters &gt; Search &gt; Weight section of the back office.</p>
+<p><strong>Phase 2: the search provider selects products depending on conditions (availability, visibility, etc.).</strong></p>
+<p>If more than one keyword is queried, the search provider merges different relevant products from each word query.</p>
+<p><strong>Phase 3: the search provider reports products with all necessary information (price, name, etc.), then returns results in the front office.</strong></p>
+<p>Here, we can understand that, in the first phase (the one containing a misspelling error), no word will be brought. Consequently, phases 2 and 3 will not be executed. So when no word is reported, the idea is to check if a word in the database is close enough to the query, to continue the search process. In our example, &lsquo;ummingbird&rsquo; is close to &lsquo;hummingbird&rsquo;. Easy!</p>
+<p>Hopefully, this problem is common and PHP includes a library that solves this problem. A library that is called Levenshtein. And the algorithm is called the Levenshtein distance. Rings a bell? ;-)</p>
+<p><img src="/assets/images/2020/01/Fuzzy-Search-feature.png" alt="Fuzzy search feature"></p>
+<h2 id="-inside-the-code">📬 Inside the code</h2>
+<p>In order to deduct what word is the most relevant, we use a common PHP functionality: levenshtein(). This method is already included in PHP by default. Written in C language, the computation is really fast.</p>
+<p>In rare cases, no relevant word is returned. In those cases, the default search behavior is applied, and no search results are returned.</p>
+<h3 id="setting-up-the-distance">Setting up the distance</h3>
+<div class="alert alert-info" role="alert">
+<h4><i class='icon-mic'></i> NOTE</h4>
+<p>Here, this configuration has no influence on the server stress, the setup being active right after computation.</p>
+</div>
+<p>You must be in the code to configure it - it is not available in the back office -, search for <code>PS_DISTANCE_MAX</code> in the classes/Search.php file. By default, the value is set to 8 which is typically the maximum distance to get a relevant result. Every fuzzy search returns a word with a distance under 8. It means the fuzzy search will try to bring words that are close to the query.</p>
+<p>For instance, without this distance limitation, query ‘ummingbird’ could return ‘xxxxx’ if ‘xxxxx’ gets the best distance than all other words in the database. But this is nonsense. Also, getting irrelevant search results will obviously decrease the user experience on the store. Hence this limitation.</p>
+<p>For all these reasons, we concluded that 8 was the right distance both in terms of search results and UX.</p>
+<p>Go play and adjust the distance in the search class following this rule:</p>
+<p><strong>Between 1-4</strong>, the distance allows only too few errors: this setup does not stress the server and can give a better error margin.</p>
+<p><strong>Between 4-7</strong>, the distance is perfect for Latin languages with short words: only light misspelling errors are allowed, but it happens in special cases.</p>
+<p>Let us go a little bit deeper&hellip;</p>
+<p>So <strong>8</strong> is a good distance for English, French or other Latin languages’ words: big spelling mistakes get a result but, in some cases, we can get irrelevant results. Perfect combination!</p>
+<p><strong>Between 9-10</strong> is a good distance to extend the result without getting only totally irrelevant results. Here, user experience starts to decrease.</p>
+<p><strong>Beyond 10</strong>, too many results will be irrelevant and the user experience decreases seriously.</p>
+<p>You can still try to increase this limit for languages whose words are especially long, like the German.</p>
+<h3 id="setting-up-the-maximum-approximate-strings-allowed">Setting up the maximum approximate strings allowed</h3>
+<div class="alert alert-info" role="alert">
+<h4><i class='icon-mic'></i> NOTE</h4>
+<p>Here, this configuration influences the server stress in case of big queries including many words.</p>
+</div>
+<p>Configuring it allows you to define the number of words a query can be processed in a fuzzy search. By default, the value is set to 4. It means that in a search like ‘Samsung Galaxi walle cherger multyplug’, only the ‘Samsung’, ‘Galaxi’, ‘walle’, and ‘cherger’ words will be taken into account. ‘Multyplug’ will not be computed.</p>
+<p>Why this limitation? It is to avoid offensive behaviors (from users or others) on the store that could overstress the server intentionally. We keep the possibility to reduce this number but most stores will not have to do so.</p>
+<h3 id="setting-up-the-maximum-word-length-allowed">Setting up the maximum word length allowed</h3>
+<div class="alert alert-info" role="alert">
+<h4><i class='icon-mic'></i> NOTE</h4>
+<p>Here, this configuration influences the server stress in case of long words queries.</p>
+</div>
+<p>So this option defines how many characters you allow to execute a fuzzy search query. You can configure it only when the fuzzy search is enabled. When the feature is disabled, the default parameter is set to 30, particularly to solve this issue <a href="https://github.com/PrestaShop/PrestaShop/issues/12407">cf. #12407</a>. You can set this value directly in the back office while the default value is a constant defined in the code, in the search class, just like the maximum distance allowed.</p>
+<p>In the case of broad databases, you should decrease the value to 10-14 in order to decrease both server stress and response time. Under 10, the result is likely to be irrelevant. Indeed, the longer the word (in characters), the more stressed the server is. We advise the number of 15 to keep the fuzzy search fast, even when processing long queries.</p>
+<p>Do not forget the Levenshtein algorithm is a matrix computation: the server stress increases exponentially just because it&rsquo;s depending on the square (about) of the query length.</p>
+<h3 id="setting-up-the-minimum-word-length-allowed">Setting up the minimum word length allowed</h3>
+<div class="alert alert-info" role="alert">
+<h4><i class='icon-mic'></i> NOTE</h4>
+<p>Here, this configuration influences the server stress.</p>
+</div>
+<p>It is no special feature included in the fuzzy search but a mere parameter, set to 3 by default. In other words, this configuration does not read words whose length is less than three characters. If you need deeply precise results, like with ‘Samsung S9’, you should decrease the minimum allowed to 2 because ‘S9’ only has two characters.</p>
+<h2 id="-conclusion">📭 Conclusion</h2>
+<p>Time is now. And now, more than half of the customers find online stores on a mobile device (<a href="https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices">read</a>). And those people will look for the product they want by using your search feature.</p>
+<p>More info? Be aware that half of the queries contain misspelling errors - just look at the Stats &gt; Shop search section of the PrestaShop back office. So there is a huge need to improve the effectiveness of your search results by getting more quality, especially when you know that queries are typed on devices where misspellings are easy to make (<a href="https://www.grammarly.com/blog/mobile-communication-study">read</a>).</p>
+<p><img src="/assets/images/2020/01/Fuzzy-Search-weight.png" alt="Fuzzy search weight"></p>
+<p>In short, a problem that is common to million shop owners and developers. Sadly. But the good thing is that we can improve that! Indeed, the IT market has seen new kinds of products like Algolia or ElasticSearch modules popping up. A quick look at how they work is enough to conclude that they combine three main characteristics: they search fast, they offer qualitative results and they are misspellings compliant. From a PrestaShop point of view, this new Levenshtein feature helps you get the same benefits:</p>
+<p><strong>Faster search.</strong> Getting a result with the PrestaShop’s default search provider is fast today. More performance will not improve the UX that much, but it might later.</p>
+<p><strong>Qualitative results.</strong> From the start, PrestaShop and its ecosystem worked to get the most effective search result. Even if the default Prestashop configuration suits all shops, you can now increase again the quality of the results obtained by setting up a coefficient with the weight parameters (see screenshot above). This system is strongly inspired by the most effective search engine document classification methods, and allows you to classify the keywords of your product pages by importance: focus first on the title, the categories, the description, etc.</p>
+<p><strong>Misspellings compliant.</strong> Algolia, ElasticSearch, and even Google are errors compliant. Why not PrestaShop? If, before, the default search provided wasn&rsquo;t misspellings compliant, it is now, it is done, and it works very well.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jan 23, 2020</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7.7.x/">1.7.7.x</a>
+
+  <a class="label label-primary" href="/tag/contribution/">contribution</a>
+
+  <a class="label label-primary" href="/tag/feature/">feature</a>
+
+  <a class="label label-primary" href="/tag/community/">community</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the authors</h5>
+
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Tanguy Salmon
+      <span class="multiple">Community Member</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/Lathanao">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Louise Bonnard
+      <span class="multiple">Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/LouiseBonnard">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/LouiseBonnard">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+                </div>
+                
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

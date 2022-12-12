@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>The new order pages in PrestaShop 1.7.7</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="The new order pages in PrestaShop 1.7.7" />
+<meta property="og:description" content="With the release of the new version 1.7.7, this article has the ambition to detail one of the major features of the version. Our work was focused on one of the most used pages by our merchants: the orders’ management page." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/the-new-order-pages-in-prestaShop-1-7-7/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2020-05-13T09:00:00+02:00" />
+    <meta property="article:modified_time" content="2020-05-13T09:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="The new order pages in PrestaShop 1.7.7"/>
+<meta name="twitter:description" content="Introducing the revamp of order pages"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">The new order pages in PrestaShop 1.7.7</h1>
+              
+                <h3 class="post-subtitle">Introducing the revamp of order pages</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/43613217?5?s=400&amp;v=4"
+         alt="Mateus Shirlaw's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Mateus Shirlaw</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    May 13, 2020
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=The&#43;new&#43;order&#43;pages&#43;in&#43;PrestaShop&#43;1.7.7&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fthe-new-order-pages-in-prestaShop-1-7-7%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fthe-new-order-pages-in-prestaShop-1-7-7%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>With the release of the new version 1.7.7, this article has the ambition to detail one of the major features of the version. Our work was focused on one of the most used pages by our merchants: the orders&rsquo; management page.</p>
+<p>We are thrilled to introduce to you the new features around the order process. But before jumping into the features awaiting the merchants in the new version, we would like to share our thinking process.</p>
+<p><strong>Firstly, why rethinking this page in particular?</strong></p>
+<p>The pages were becoming particularly unpleasant to use because of its old visual appearance and its hierarchy of information that led to inefficiency and misunderstanding for our merchants.</p>
+<p><strong>A long process to ensure the full success of the revamp.</strong></p>
+<p>To have a better understanding of the merchants&rsquo; pain points, we have interviewed merchants with different sales volume, country and business activity as well as agencies of different sizes. The pain points encountered have then been addressed by the features added in the order list page (I) and order detail page (II).</p>
+<p><strong>Now, let&rsquo;s present these changes.</strong></p>
+<h2 id="i--concerning-the-page-listing-the-orders-we-have-added-the-following-features">I.  Concerning the page listing the orders, we have added the following features</h2>
+<p><strong>The listing order page&rsquo;s new features aim at helping merchants save time and increase their productivity.</strong></p>
+<ul>
+<li><strong>Order&rsquo;s preview</strong>: Opens a panel just below the line of the order to preview the order&rsquo;s essential information.</li>
+</ul>
+<p><img src="/assets/images/2020/05/order_preview.gif" alt="Order preview" title="Order preview"></p>
+<p><em><strong>What is the goal</strong></em>:</p>
+<p>Allows the merchant to check, prepare and track his order without having to open it. So the merchant won&rsquo;t have to open the order to check essential information that doesn&rsquo;t require actions.</p>
+<p><em><strong>How it works</strong></em>:</p>
+<p>When the user clicks on the icon, it displays the order&rsquo;s preview below the line selected. The order preview lists the following information: the invoice address, the shipping address, the customer details, the carrier details (and the tracking ID when available) and the products&rsquo; list.</p>
+<p>The products&rsquo; list displays on each line the product name, reference, stock location (if available), quantity, tax price and total price for the products. The total price follows the customer group configuration. If the customer group sets the prices with or without tax, it impacts the displayed amount in the total column and adds the related label &ldquo;tax excluded&rdquo; or &ldquo;tax included&rdquo;.</p>
+<p>The list displays the 10 first products. The remaining products can be seen by expanding the list.</p>
+<p>There is a new hook called displayOrderPreview on the bottom of the preview.</p>
+<p><img src="/assets/images/2020/05/hook-preview.png" alt="Order preview&amp;rsquo;s hook" title="Order preview's hook"></p>
+<p>It allows modules to add new elements on the preview. For more specific needs, the preview can be changed by overriding templates, <a href="https://devdocs.prestashop.com/1.7/modules/concepts/templating/admin-views/">find here</a> more information.</p>
+<p> </p>
+<ul>
+<li><strong>Editable order status labels:</strong> Allows changing the order status directly from the listing.</li>
+</ul>
+<p><img src="/assets/images/2020/05/editable_order_statuses_labels.png" alt="Order page - Edit a status" title="Edit a status"></p>
+<p><em><strong>What is the goal</strong></em>:</p>
+<p>Making the order fulfillment less time consuming for the merchants</p>
+<p><em><strong>How it works</strong></em>:</p>
+<p>When the user clicks then on the status label, it displays a drop-down list with all of the available statuses. By selecting one of the items on the list, the user can update the order status.</p>
+<p> </p>
+<ul>
+<li><strong>Statuses&rsquo; color</strong>: Color according to the order status</li>
+</ul>
+<p><img src="/assets/images/2020/05/order_status_labelsx2.png" alt="Order statuses by category" title="Order statuses by category"></p>
+<p><em><strong>What is the goal</strong></em>:</p>
+<p>The colors used by default to contextualize the status is based on a wide range of colors without following any real logic. To bring a structure and meaning to the statuses colors, the statuses are grouped in 4 colors categories:</p>
+<ul>
+<li>Dark blue: orders waiting for a customer action ( i.e. waiting for a bank check-in)</li>
+<li>Light blue: orders waiting for a merchant action following an accepted payment</li>
+<li>Green: no action needed from the merchant (i.e. when the product is delivered)</li>
+<li>Red or black: special status (i.e. payment error)</li>
+</ul>
+<p>The merchants have a concise view of the work remaining to be done between the order to be prepared and the delivered order.</p>
+<p><em><strong>How it works</strong></em>:</p>
+<p>The statuses color is set by default. They are still configurable in the Order Setting page.</p>
+<p> </p>
+<ul>
+<li><strong>Link to the customer&rsquo;s profile</strong>: Creates easy access to the customer&rsquo;s profile by clicking on its name.</li>
+</ul>
+<p><img src="/assets/images/2020/05/link-customer.png" alt="Right-click on the customer&amp;rsquo;s link" title="Right click on the customer's link"></p>
+<p><em><strong>What is the goal</strong></em>:</p>
+<p>Merchants used to have to open the order to get access to the customer page. It is now accessible from the orders listing.</p>
+<p><em><strong>How it works</strong></em>:</p>
+<p>Clicking on the customer name opens the customer page in a new tab.</p>
+<p> </p>
+<ul>
+<li><strong>Bulk action redesign</strong>: The bulk actions&rsquo; design and its position were updated to make it more visible and quicker to use.</li>
+</ul>
+<p><img src="/assets/images/2020/05/choose_an_order.png" alt="Change_order&amp;rsquo;s statuses" title="Change_order's statuses"></p>
+<p><em><strong>What is the goal</strong></em>:</p>
+<p>To help the merchants to process multiple orders in 3 clicks.</p>
+<p><em><strong>How it works:</strong></em></p>
+<p>Select several orders, choose the new order status in the pop-in then validate it to update the orders&rsquo; status.</p>
+<p> </p>
+<ul>
+<li><strong>Open in new tabs</strong>: Open commands in new tabs by mass action to process them as the merchant proceeds.</li>
+</ul>
+<p><img src="/assets/images/2020/05/open_in_new_tabs.png" alt="Open in new tabs"></p>
+<p><em><strong>What is the goal</strong></em>:</p>
+<p>If the merchant has a poor internet connection, he can now open orders in advance to them to load in the background.</p>
+<p><em><strong>How it works</strong></em>:</p>
+<p>Choose several orders, select <em>open in new tabs option</em> on bulk action&rsquo;s option to open them in new tabs.</p>
+<h2 id="ii-for-the-order-details-we-have-added-the-following-features">II. For the order details, we have added the following features:</h2>
+<p>Even if we keep the objective of saving time and productivity, the improvements and features are focused on readability and the position of the information. Indeed, some important information did not have the display corresponding to its importance. For example, the list of products that were at the bottom of the page is now at the top of the page as it is the first information to be consulted.</p>
+<p><strong>Thus with better readability, we allow the merchant to be more efficient in his work.</strong></p>
+<ul>
+<li><strong>Pagination on the product list</strong>: Allows to navigate in the order product list through the pagination.</li>
+</ul>
+<p><img src="/assets/images/2020/05/order_pagination.png" alt="Order&amp;rsquo;s_pagination"></p>
+<p><em><strong>What is the goal</strong></em>:</p>
+<p>Avoid an endless and unreadable list of products. Pagination provides structure in the products&rsquo; navigation. Also, the list has been moved to the top of the page to avoid the merchant from scrolling to the bottom of the page to see the products ordered.</p>
+<p><em><strong>How it works</strong></em>:</p>
+<p>The pagination of the list starts when there are more than 8 products in the cart. The stock location column is displayed when one of the products has a stock location. Also, It is only displayed at the corresponding pagination.</p>
+<p> </p>
+<ul>
+<li><strong>Pack &amp; customized products:</strong> Display the product&rsquo;s customization on the list and gives access to a pack content through a pop-in.</li>
+</ul>
+<p><em><strong>What is the goal</strong></em>:</p>
+<p>Easy check and verification directly from the list.</p>
+<p><em><strong>How it works</strong></em>:</p>
+<p>For customized products - files or texts are displayed below the product. The files are added to a new column on the same line. The texts are displayed below each other.</p>
+<p><img src="/assets/images/2020/05/custom-product.png" alt="Customized products"></p>
+<p>Pack of products - A link bellow the products&rsquo; pack displays the related products with the ordered quantity and the available product stock.</p>
+<p><img src="/assets/images/2020/05/pack-product.png" alt="Pack of products"></p>
+<p> </p>
+<ul>
+<li><strong>Message interface:</strong> Display the 4 latest messages and allows the merchant to see the whole conservation in a pop-in.</li>
+</ul>
+<p><img src="/assets/images/2020/05/messages-order.png" alt="Order&amp;rsquo;s messages"></p>
+<p><em><strong>What is the goal</strong></em>:</p>
+<p>To ease the discussion readability through a modern interface, inspired by the current messaging apps.</p>
+<p><em><strong>How it works</strong></em>:</p>
+<p>The differentiation between private messages has been reinforced. It is only visible to the merchant. This allows for better readability and reduces misunderstandings.
+At the 5th message between a customer and the merchant, a link is displayed to open the pop-in which displays the entire conversation.</p>
+<p> </p>
+<ul>
+<li><strong>Hooks</strong>: New hooks positions.</li>
+</ul>
+<p><img src="/assets/images/2020/05/order_details_hooks.jpg" alt="Order hooks mapping" title="Order hooks mapping"></p>
+<p><em><strong>What is the goal</strong></em>:</p>
+<p>The hooks have been relocated to more strategic positions to match the layout redesign and thus provide a better user experience.</p>
+<p><em><strong>How it works</strong></em>:</p>
+<p>Find <a href="https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.7/">here</a> the documentation on the hooks&rsquo; mapping. A new hook grouping the actions of the top of the order page has also been added to replace displayBackOfficeOrderActions which will no longer have the same layout.</p>
+<p>The detailed changes can be found on the following pull requests on GitHub <a href="https://github.com/PrestaShop/PrestaShop/pull/16144">#16144</a> and <a href="https://github.com/PrestaShop/PrestaShop/pull/17734">#17734</a>.</p>
+<p>A summary of the hooks impacted:</p>
+<ul>
+<li>displayAdminOrderTop (alias of displayInvoice)</li>
+<li>displayBackOfficeOrderActions</li>
+<li>displayAdminOrderSide (replace displayAdminRight)</li>
+<li>displayAdminOrderMain (replace displayAdminLeft)</li>
+<li>displayAdminOrderTabLink (replace displayAdminOrderTabOrder et displayAdminOrderTabShip)</li>
+<li>displayAdminOrderTabContent (replace displayAdminOrderContentOrder and displayAdminOrderContentShip)</li>
+<li>actionGetAdminOrderButtons</li>
+</ul>
+<p>Over the last few months, PrestaShop has been working hard to deliver these new features and many bugs fix on these pages. 31 bugs, including 8 majors, 16 minors and 3 trivials, have been fixed from the previous 1.7 and 1.6 versions. For more information, you can find <a href="https://build.prestashop.com/news/severity-classification/">the way we classified the severity of the bug</a> and <a href="https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3AOrder+milestone%3A1.7.7.0+label%3ABug+-label%3ARegression+sort%3Acreated-asc+is%3Aclosed">the list of the fixed bugs</a>. Overall, the order project has ensured more stability by correcting ⅔ of the major bugs of the order page.</p>
+<p>We encourage you to try out the features on the beta version and share any feedback <a href="https://github.com/PrestaShop/PrestaShop/issues/new/choose">here</a>. Your opinion is important to us. We are counting on you to share your feedback and new ideas with us so that we can continue to develop the PrestaShop that you need.</p>
+<p>We would like to thank <a href="https://www.webxy.com/">WebXY</a>, <a href="https://www.yateo.com/">YATEO</a>, <a href="https://www.ecomiz.com/">Ecomiz</a> and <a href="https://www.vaisonet.com/fr">VAISONET</a> and all the merchants interviewed for taking the time to exchange with us.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">May 13, 2020</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7.7/">1.7.7</a>
+
+  <a class="label label-primary" href="/tag/version/">version</a>
+
+  <a class="label label-primary" href="/tag/minor/">minor</a>
+
+  <a class="label label-primary" href="/tag/product/">product</a>
+
+  <a class="label label-primary" href="/tag/ux/">ux</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Mateus Shirlaw
+      <span>Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/MatShir">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

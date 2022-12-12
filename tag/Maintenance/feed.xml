@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maintenance on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/Maintenance/</link>
+    <description>Recent content in Maintenance on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/Maintenance/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Release of PrestaShop 1.7.8.1</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-8-1-maintenance-release/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-8-1-maintenance-release/</guid>
+      <description>PrestaShop 1.7.8.1 is now available. This maintenance release fixes 44 regressions reported since the initial 1.7.8.0 release.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
+Back office regressions Stock page - If a product attribute contains a comma, it is not displayed Dashboard page - Selecting a date range doesn&amp;rsquo;t work and causes a jquery error Modules page - Cannot install any module when the employee language is spanish Performance page - Cannot change the settings in a single store context Customer view page - The pagination of the voucher block is not working SQL Manager page - SQL query return exception Invoices page - Longer buttons overflow their container on lower resolutions Localization Page - There is no confirmation modal when changing the default currency View supplier page - Unexpected error View customer page - Incorrect display of the address block Add/edit tax rule page - The state and the postal code fields are not aligned Add/edit category page - The browser is unable to show the error message on an hidden element Add/edit country page - The address format is badly displayed Add/edit customer group page - The &amp;ldquo;Category discount&amp;rdquo; part is misaligned Add/edit attribute and add/edit social title pages - The language dropdown is not well displayed when resizing the window Add/edit product page - When we try to delete all combinations, the warning modal is empty Edit supplier page - Unable to save &amp;ldquo;meta_keywords&amp;rdquo; field If using the multistore and while making a manual upgrade, a new line in ps_configuration is created for PS_VERSION_DB In the Credit slip, the Ecotax is displayed in the Tax details while it shouldn&amp;rsquo;t Orders regressions Order details page - While adding a discount, the modal is not well displayed Order details page - An exception is displayed when the status of the &amp;ldquo;merchandise return&amp;rdquo; is deleted Order details page - The errors while deleting a product are not displayed Order details page - Debug mode enabled - an exception is displayed when ordering a deleted product with a file customization Orders - Cannot extend the order grid query from a module Display regressions Buttons are not well displayed - part 1 Buttons are not well displayed - part 2 Buttons are not well displayed - part 3 Floating button over some elements on migrated pages preventing to save form Front office regressions Problem when adding images with different ratio After upgrade, theme must be updated to be able to pay into the final step Simple anchors don&amp;rsquo;t work on CMS page The add to cart button is not working when clicking on the cart icon Product disabled - An exception is displayed when changing combination or increasing/decreasing a quantity Product comment structured data AggregateRating isn&amp;rsquo;t working Shopping cart page - An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations Product structured data JSON-LD problem when price is not displayed An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations Display regressions The product-flags are displayed in the same row with no space There is an horizontal scrollbar on the homepage under 991px and the carousel overflows the content The search button in the header is not responsive on mobile Featured product not well displayed with responsive Module regressions Bad display in autoupgrade module Ps_banner module fixed width and height value Acknowledgements Contributors to this patch version, from both the Core team and the community at large:</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.8</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-8-maintenance-release/</link>
+      <pubDate>Tue, 14 Sep 2021 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-8-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.8 is now available. This maintenance release fixes 1 major regression.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
+Major issues on the product page The issue #25718 and #25753 appeared due to the implementation of the numeric data format for number fields on the 1.7.7.6 patch version. This regression prevents users to edit the impact of a combination and causes rounding problems on the impact calculation.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.7</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-7-maintenance-release/</link>
+      <pubDate>Thu, 19 Aug 2021 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-7-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.7 is now available. This maintenance release fixes 1 critical regression and 1 minor regression.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
+Critical fix One critical bug has been fixed in 1.7.7.7:
+The checkout at shipping step crashes when a cart rule was used if the database prefix is not ps_ Order page issue Merchants weren&amp;rsquo;t able to download the file from a customized product in the order page if the product wasn&amp;rsquo;t translated in the employee&amp;rsquo;s back office language Acknowledgements Many thanks to @idnovate for reporting the bug and providing a patch!</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.6</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-6-maintenance-release/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-6-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.6 is now available. This maintenance release fixes 31 regressions reported since the 1.7.7.0, including 2 critical regressions.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
+Critical fixes Two critical bugs have been fixed in 1.7.7.6:
+Orders page - an exception is displayed when deleting a customer or a guest Smarty template caching Module::isCached() faulty causes performance loss Other bug fixes Back-office</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.5</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-5-maintenance-release/</link>
+      <pubDate>Mon, 14 Jun 2021 12:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-5-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.5 is now available. This maintenance release fixes 19 regressions reported since the 1.7.7.0.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
+Main fixes Back-office
+Add new order page - Gift message cannot be removed View order page - An exception is displayed when we add a discount with space in the name Missing menu icon on mobile in dashboard page Order message with the same title is not displayed in the &amp;ldquo;order_message&amp;rdquo; list Orders list - The tracking URL is NOK in the preview order Wrong price in the document list for the delivery slip in the admin order page View order page - The order carrier ID is invalid Error when making a delete sql request Wrong escape in ps_1771_update_customer_note() Order page - An error is displayed when changing the addresses for the second time Order page - Ajax issue - The Discount Block is not automatically updated when updating or adding a product In module configuration pages, the &amp;ldquo;Activate module for this shop context&amp;rdquo; checkbox does not work Orders page - missing DNI number in some countries when the DNI is not required Order page - when adding a product which has an ecotax to an old order, the base price is NOK With Safari when creating a catalog price rule the wrong brand is selected View order page - Customized product cannot be added to multi-invoice Front-office</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.4</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-4-maintenance-release/</link>
+      <pubDate>Mon, 03 May 2021 12:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-4-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.4 is now available. This maintenance release fixes 13 issues reported since the 1.7.7.0.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
+Main fixes Back-office
+&amp;ldquo;Expand all&amp;rdquo; button of ps_facetedsearch not working When a cart rule with a free gift and percentage discount is added to the cart, the discount amount displayed is incorrect Product customization file cannot be downloaded if the customization label field contains a dot The gift block in the &amp;lsquo;Add an order&amp;rsquo; page is not updated when changing the carrier When filtering products by category, the chosen category is not selected An error is displayed when deleting an order status with French language Tracking number is not a link on the Order List page Notification of new orders are not displayed An alert is displayed when updating the product quantity in the order page with multistore Front-office</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.3</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-3-maintenance-release/</link>
+      <pubDate>Tue, 30 Mar 2021 14:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-3-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.3 is now available. This maintenance release fixes 10 bugs reported on previous 1.7.7 versions, as well as one security issue.
+We suggest upgrading your shop quickly in order to benefit from these changes. Of course, don’t forget to make a backup before.
+Reminder: the 1-Click Upgrade module’s latest version is v4.12.0, don’t forget to upgrade it before using it.
+Main fixes Below are listed some main regressions we fixed in this version:</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.2</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-2-maintenance-release/</link>
+      <pubDate>Mon, 22 Feb 2021 14:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-2-maintenance-release/</guid>
+      <description>After a few weeks dedicated to fixing upgrades problems, regressions and security issues found on the previous 1.7.7 versions, PrestaShop 1.7.7.2 is finally available!
+This patch release fixes 21 regressions reported on version 1.7.7.0 and 1.7.7.1 and 2 security issues.
+We suggest upgrading your shop quickly in order to benefit from these changes. Of course, don’t forget to make a backup before.
+Reminder: the 1-Click Upgrade module’s latest version is v4.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.1</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-1-maintenance-release/</link>
+      <pubDate>Mon, 11 Jan 2021 18:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-1-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.1 is now available. This maintenance release fixes 41 regressions reported on version 1.7.7.0.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
+Main fixes Order pages (back-office)
+The voucher line is not removed when the order&amp;rsquo;s total is &amp;lt; to the minimum amount for cart rule The characters limit is wrongly calculated when choosing a predefined message When creating an order, the minimum quantity of a combination is not correct Bad display of some special characters in private note An exception is displayed when changing the invoice address in the second time - Round mode = Round on each item When adding or updating a product on an already paid order, the message in payment block is not added/updated immediately Voucher line is not added when a cart rule &amp;ldquo;Discount for a country selection&amp;rdquo; is applied The Voucher &amp;ldquo;Free shipping&amp;rdquo; value is not updated when changing an address The shipping block is not instantly updated when updating the Address An exception is displayed when we try to return products in All shops context In the cart, when updating the quantity of a product using the &amp;ldquo;up/down arrow&amp;rdquo; with consecutive hits on the same input, it&amp;rsquo;s not acknowledged correctly Incorrect Total&amp;rsquo;s product line when Round type = &amp;ldquo;Round on each item&amp;rdquo; When adding a product to an empty order, the Shipping is not updated in the info block When we have a different language for each shop, all languages are displayed in the drop-down language of the add order page instead of just the languages associated to the shop selected When customized products are imported in the second shop without customization, an unexpected error is displayed Wrong update of a cart rule with gift When adding a product to an old order, an incorrect value is displayed and an incorrect amount calculated.</description>
+    </item>
+    
+    <item>
+      <title>Bug Bounty Program, the retrospective</title>
+      <link>https://build.prestashop-project.org/news/bug-bounty-retrospective/</link>
+      <pubDate>Fri, 11 Sep 2020 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/bug-bounty-retrospective/</guid>
+      <description>For several months, we experimented a Bug Bounty Program with the YesWeHack platform. Here is a retrospective, explaining why we did it, and what happened during this period.
+Private program The security of software cannot be assessed unless it is tested by a lot of hunters.
+PrestaShop relies on a lot of dependencies, with hundreds of thousands lines of code, and this has been true since the very first versions.</description>
+    </item>
+    
+    <item>
+      <title>Announcing our first Bug Bounty program</title>
+      <link>https://build.prestashop-project.org/news/bug-bounty-program/</link>
+      <pubDate>Thu, 23 Jul 2020 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/bug-bounty-program/</guid>
+      <description>Protecting the business, data and privacy of PrestaShop&amp;rsquo;s users is one of our top priorities. We build our software with this goal in mind. That&amp;rsquo;s why we decided to put our security to the test. To encourage the security community to help us, today we are announcing our first bug bounty program!
+Why this program Bug bounties are used by many leading companies to improve the security of their products. These programs provide an incentive for researchers to responsibly disclose software bugs and allow security teams to leverage the external community to help keep users safe.</description>
+    </item>
+    
+    <item>
+      <title>Security issue with PHPUnit, post-incident analysis</title>
+      <link>https://build.prestashop-project.org/news/phpunit-security-issue-post-analysis/</link>
+      <pubDate>Fri, 28 Feb 2020 10:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/phpunit-security-issue-post-analysis/</guid>
+      <description>Early January, we encountered a security issue with PHPUnit in some modules that allowed attackers to perform arbitrary code execution without authorization through the PHPUnit dependency. This vulnerability was discovered through a merchant whose shops were compromised.
+Background At PrestaShop, we use an automated system to build packages for native modules and make them available through the Addons Marketplace API. This process uses Composer to install dependencies before creating the zip package.</description>
+    </item>
+    
+    <item>
+      <title>Critical security vulnerability in PrestaShop modules</title>
+      <link>https://build.prestashop-project.org/news/critical-security-vulnerability-in-prestashop-modules/</link>
+      <pubDate>Tue, 07 Jan 2020 14:15:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/critical-security-vulnerability-in-prestashop-modules/</guid>
+      <description>Attackers are using a vulnerability in a popular dependency used by modules to take control of PrestaShop sites. For details, please read the entire article.
+What’s happening It has come to our attention that attackers are exploiting a vulnerability in PHPUnit to perform arbitrary code execution in servers running PrestaShop websites. The issue is fixed in PHPUnit 7.5.19 and 8.5.1. To our knowledge, all previous versions are vulnerable, at least for certain server configurations.</description>
+    </item>
+    
+    <item>
+      <title>Release Of PrestaShop 1.7.6.2</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-2-maintenance-release/</link>
+      <pubDate>Thu, 28 Nov 2019 16:15:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-2-maintenance-release/</guid>
+      <description>After a few months dedicated to fixing all regressions found on the previous 1.7.6 versions, PrestaShop 1.7.6.2 is finally available!
+This maintenance release fixes 31 issues reported on version 1.7.6.0 and 1.7.6.1. We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
+Reminder: the 1-Click Upgrade module’s latest version is v4.10.0, don’t forget to upgrade it.
+Main fixes Below are listed some of the main regression issues we fixed in this version :</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.6.1</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-1-maintenance-release/</link>
+      <pubDate>Mon, 26 Aug 2019 16:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-1-maintenance-release/</guid>
+      <description>PrestaShop 1.7.6.1 is now available. This maintenance release fixes 26 issues reported on version 1.7.6.0.
+We suggest upgrading your shop quickly in order to benefit from this fixes. Of course, don&amp;rsquo;t forget to backup before.
+Main fixes In some circumstances prices would appear with 6 decimal digits (#14640) The “convert a guest into a customer” feature wasn’t working (#14639) It was possible to circumvent the BO token in some circumstances (Thanks Guillaume Lictevout) (#14671) The “erase all” button in the logs page wasn’t working (#14686) Mails weren’t completely translated/translatable (#14633) Links pointing to edit/view customers weren’t working on legacy pages like Quick Search (#14672) Prices in Czech would sometimes be displayed using the wrong formatting (#14657) Applying filters in the logs page would result in an error (#14785) Importing a theme would fail it if contained a translations directory with no files (#14960) The translation interface wasn’t working when using a theme other than classic (#14733 and #15133) Module translations edited through the new back office interface were being ignored by the module (#14932) Disabled categories were not being shown in the parent category tree when editing categories, resulting in an error (#14790) Accessing the suppliers page after an import would result in an error (#14908) Following steps in the checkout process were being disabled even when the theme didn’t include a “continue” button (#14846) Errors would occur when manipulating orders in some circumstances when working on a multishop environment (#14595 and #15144) Read the full changelog here.</description>
+    </item>
+    
+  </channel>
+</rss>

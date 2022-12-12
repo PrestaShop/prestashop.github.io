@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Parent/Child theme feature in PrestaShop 1.7</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Parent/Child theme feature in PrestaShop 1.7" />
+<meta property="og:description" content="There is a feature introduced in PrestaShop 1.7.0 that we would like to dive back in: the child theme feature!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/Child-Themes-Feature/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2017-09-08T09:10:11+02:00" />
+    <meta property="article:modified_time" content="2017-09-08T09:10:11+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Parent/Child theme feature in PrestaShop 1.7"/>
+<meta name="twitter:description" content="Luke, I am your father"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Parent/Child theme feature in PrestaShop 1.7</h1>
+              
+                <h3 class="post-subtitle">Luke, I am your father</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/2203436"
+         alt="Maxime Biloé's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Maxime Biloé</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Sep 8, 2017
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Parent%2FChild&#43;theme&#43;feature&#43;in&#43;PrestaShop&#43;1.7&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2FChild-Themes-Feature%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2FChild-Themes-Feature%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>There is a feature introduced in PrestaShop 1.7.0 that we would like to dive back in: the child theme feature!</p>
+<p>PrestaShop 1.7 introduced a whole new way of working with themes, and with it came the possibility to have parent/child themes. It was a late addition to PrestaShop 1.7 &ndash; kind of a bonus! So, let&rsquo;s talk about this child theme feature and how you can use it to customize themes more easily.</p>
+<h2 id="what-is-it">What is it?</h2>
+<p>If we&rsquo;re talking about child themes, it means that we have a parent one 😉</p>
+<p>The parent theme is a full and independent theme that can work alone, whereas the child theme needs the parent one to work. We can see the child theme as an extension of its parent, meaning that without any modification, the child theme will be the same as its parent.</p>
+<h2 id="whats-the-benefit">What&rsquo;s the benefit?</h2>
+<p>Let&rsquo;s say that you find a theme you like but you want to make some adjustments. Before the 1.7 version, you had to edit the theme files directly, which meant that when you want to update your theme to a new version, you lost your customizations. Of course, you could also apply each change manually on your theme. Which isn&rsquo;t convenient AT ALL.</p>
+<p>Now, if you want to make changes to a theme you bought, you simply need to create a child theme, and apply your changes there.
+That way, the parent theme will remain untouched and you&rsquo;ll be able to update it easily.
+Please, note that you may still encounter some issues if the parent theme&rsquo;s structure has changed in between updates - but fixing them will be much easier than reporting your modifications.</p>
+<p>Using a child theme can also speed up the development time as you&rsquo;ll only include in your files what you&rsquo;re changing or adding, and not the complete code.</p>
+<h2 id="how-to-use-it">How to use it?</h2>
+<h3 id="set-up">Set-up</h3>
+<p>In order to create a child theme, you need to make sure the parent one is in your PrestaShop <code>/themes</code> folder.</p>
+<p>Then, create a new folder with a different name containing only the following files:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">├── config/
+</span></span><span class="line"><span class="cl">│   ├── theme.yml
+</span></span><span class="line"><span class="cl">└── preview.png
+</span></span></code></pre></div><p>Once you have this, you just need to add two entries in your child theme&rsquo;s <code>theme.yml</code>:</p>
+<ul>
+<li>
+<p><strong>parent:</strong> to set the theme that should be used as a parent. The value must be the theme&rsquo;s technical name (i.e.: the theme&rsquo;s folder name).</p>
+</li>
+<li>
+<p><strong>use_parent_assets:</strong> a sub entry to <code>assets</code> to set if you want to use the CSS and JS files from the parent (true) or not (false).</p>
+</li>
+</ul>
+<p>{% highlight yml %}
+parent: classic
+name: childtheme
+display_name: My first child Theme
+version: 1.0.0
+assets:
+use_parent_assets: true
+{% endhighlight %}</p>
+<p>Once this file is in place, you can go ahead and select this theme in your back office: you&rsquo;re all set.</p>
+<h3 id="template-inheritance">Template inheritance</h3>
+<p>In a <a href="http://build.prestashop.com/news/starter-theme-news/#template-inheritance">previous article</a>, we already talked about extending templates within the same theme introduced in 1.7.0.0. But you can also extend template files from another theme.</p>
+<p>With the <code>theme.yml</code> configuration above, your child theme will use every template from the parent theme. There are two ways to enjoy the feature of extending templates from another theme: either by modifying only the blocks you want to edit, or by modifying the whole template structure.</p>
+<p>Here&rsquo;s an example where we modify the category template. First, you should create the category template in your child theme: <code>templates/catalog/listing/category.tpl</code>.</p>
+<h4 id="modifying-some-blocks">Modifying some blocks</h4>
+<p>Extend the template you want to modify in your parent theme and define just the block you need. You need to add the <code>parent:</code> keyword (as you can see in the example below) to indicate that the template comes from the parent theme.</p>
+<p>{% highlight smarty %}
+{extends file=&lsquo;parent:catalog/listing/category.tpl&rsquo;}
+{% endhighlight %}</p>
+<p><img src="/assets/images/2017/09/child-theme-some-blocks.png" alt="Modify blocks"></p>
+<h4 id="modifying-the-whole-template-structure">Modifying the whole template structure</h4>
+<p>At this point you can do anything you want with this template but most likely you&rsquo;ll still want to extend the product-list template. If so, you don&rsquo;t have to copy the product-list template to your child theme, PrestaShop will use the parent file.</p>
+<p>Extend product-list the normal way and override the block you need. Let&rsquo;s say you want to change the <code>product_list_header</code> block:</p>
+<p>{% highlight smarty %}
+{extends file=&lsquo;catalog/listing/product-list.tpl&rsquo;}
+{block name=&lsquo;product_list_header&rsquo;}</p>
+  <div class="title">{$listing.label}</div>
+{/block}
+{% endhighlight %}
+<p><img src="/assets/images/2017/09/child-theme-whole-template.png" alt="Modify whole template"></p>
+<h4 id="going-further">Going further</h4>
+<p>You can also create new template files. Then, follow the previous methods of extension and include your file into one of the block of the file you&rsquo;re extending.</p>
+<h2 id="translations">Translations</h2>
+<p>In your child theme, templates can fall into 3 categories:</p>
+<ol>
+<li>
+<p><strong>You are using strings that exist in the default theme (Classic)</strong><br>
+Just re-use the strings as-is, with the same domain, and it will automatically be translated (when a translation is available in PrestaShop)</p>
+</li>
+<li>
+<p><strong>You are using strings that exist in the parent theme</strong><br>
+Unfortunately, for now, the translations are not shared between parent and child theme (but we&rsquo;re working on it!). You need to translate it again, following method 3 (below).</p>
+</li>
+<li>
+<p><strong>You are creating new strings</strong></p>
+</li>
+</ol>
+<ul>
+<li>Use a custom domain for the new strings</li>
+<li>Export the language from the translation page</li>
+<li>Copy the file into the translation file of your theme</li>
+<li>Translate the new strings using the translation page</li>
+</ul>
+<p>If you need more details on how to translate a theme, don&rsquo;t hesitate to have a look at our <a href="http://build.prestashop.com/howtos/translation/how-to-translate-your-theme/">dedicated article</a>.</p>
+<h2 id="things-to-remember">Things to remember</h2>
+<p>With the parent/child theme feature we wanted to make easier to customize and update the theme.</p>
+<p>It is now quicker to tweak your theme, since you only have the modified templates into the child theme directory.</p>
+<p>And you can now update your parent theme to get the latest fixes, without losing your customizations!
+Have a look and test our little demo of a child theme of Classic here: <a href="https://github.com/PrestaShop/childtheme-example">https://github.com/PrestaShop/childtheme-example</a></p>
+<p>Tell us how you&rsquo;ve been using the child theme feature and/or if you have any comment!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Sep 8, 2017</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/development/">development</a>
+
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/theme/">theme</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Maxime Biloé
+      <span>Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/maximebiloe">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/732692-maxime-bilo%c3%a9">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/maximebiloe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/maximebiloe">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

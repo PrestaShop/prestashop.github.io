@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>How to write on this blog</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="How to write on this blog" />
+<meta property="og:description" content="When we started talking about a dev blog among us, we thought about who could write, what we wanted to talk about, who was going to review the articles…" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/howtos/misc/how-to-write-on-this-blog/" />
+    <meta property="article:section" content="howtos" />
+    <meta property="article:published_time" content="2015-03-04T15:12:00+01:00" />
+    <meta property="article:modified_time" content="2015-03-04T15:12:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="How to write on this blog"/>
+<meta name="twitter:description" content="or: How we tried to ensure that only developers could write on the devblog :)"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">How to write on this blog</h1>
+              
+                <h3 class="post-subtitle">or: How we tried to ensure that only developers could write on the devblog :)</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars1.githubusercontent.com/u/1525636"
+         alt="Julien Bourdeau's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Julien Bourdeau</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Mar 4, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=How&#43;to&#43;write&#43;on&#43;this&#43;blog&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmisc%2Fhow-to-write-on-this-blog%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmisc%2Fhow-to-write-on-this-blog%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>When we started talking about a dev blog among us, we thought about who could write, what we wanted to talk about,
+who was going to review the articles&hellip;</p>
+<p>Technically, WordPress was the first solution we reviewed but after giving it more thought we realized it would be too much of a hassle to maintain: plugin updates, core updates, database backups, security issues, etc.</p>
+<p>We then came up with a better idea: <a href="http://jekyllrb.com/">Jekyll</a>.</p>
+<p><img src="/assets/images/2015/04/jekyll.png" alt="Jekyll Logo"></p>
+<p>Jekyll uses a set of configuration and data files, article files (written in <a href="http://daringfireball.net/projects/markdown/">Markdown</a> or pretty much <a href="http://jekyllrb.com/docs/posts/">any other format</a>), and resources (CSS, images, fonts, etc.) to generate a <strong>fully static website, made only of plain HTML files</strong>.
+Since you can version everything with <em>Git</em> and you don&rsquo;t have to set up any database, it seems like the easiest &lsquo;CMS&rsquo;. So that&rsquo;s what we&rsquo;re reading now: plain HTML generated from Markdown markup through Jekyll!</p>
+<p>This blog is also meant to become the &lsquo;place to be&rsquo; for the PrestaShop tech community, and Jekyll is definitely the
+best option out there &ndash; and <strong>you can actually make a <em>Pull Request</em> on GitHub to edit any content.</strong> Actually, <a href="https://pages.github.com/">GitHub&rsquo;s Pages</a> features is powered by Jekyll too, so we&rsquo;re not really choosing in the blind here :)</p>
+<h2 id="tldr">TL;DR</h2>
+<div class="alert alert-note" role="alert">
+<h4><i class='icon-file'></i> Note</h4>
+First: tell us what you want to write about! We won't accept just about any submission :)
+<p>Write to us with your idea (we can be reached at <a href="mailto:build@prestashop.com">build@prestashop.com</a>), with a rough idea or the whole thing ready, and let&rsquo;s talk about it. Once we agree on the subject, then you are good to go!</p>
+</div>
+<p>You don’t have to read all the details below: if you want to write an article right away, you can simply follow those steps:</p>
+<ol>
+<li>Fork <a href="https://github.com/PrestaShop/prestashop.github.io">the repo</a> (see <a href="https://help.github.com/articles/fork-a-repo/">GitHub doc</a>)</li>
+<li>Download <a href="https://gist.githubusercontent.com/julienbourdeau/98a944e00c3ceb5dff5e/raw/a7d6c292ca501c66cb24e34ff805630f1289c306/2015-12-31-demo-post.markdown">this sample file</a>.</li>
+<li>Rename it according to the date and your topic <strong>(NOTE: the date in the file name is mandatory)</strong>.</li>
+<li>Move it to the right folder: <code>news/_posts</code> for a blog post, <code>howtos/CATEGORY</code> for a tutorial.</li>
+<li>Write it.</li>
+<li>Make a <a href="https://help.github.com/articles/creating-a-pull-request/">Pull-Request</a> on the initial project you forked.</li>
+</ol>
+<p class="text-center">
+  <a href="https://gist.githubusercontent.com/julienbourdeau/98a944e00c3ceb5dff5e/raw/a7d6c292ca501c66cb24e34ff805630f1289c306/2015-12-31-demo-post.markdown" class="btn btn-lg btn-success">Download a demo article</a>
+</p>
+
+<p>You can even get GitHub to do most of the work for you: see the video below.</p>
+<iframe width="797" height="598" src="https://www.youtube.com/embed/vU4pj0-3Odc?rel=0" frameborder="0" allowfullscreen></iframe>
+<h2 id="the-whole-">The whole #!</h2>
+<p>You only need this section if you intend to set everything up locally. You don’t have to do that, but let’s be honest, when you write your article, you want to preview how it will render, before sending it over to us :)</p>
+<p>Still, this is pretty much developer-targetted, so beware: technical stuffs ahead! :trollface:</p>
+<h3 id="installing-the-required-software">Installing the required software</h3>
+<p>In order to get the blog working locally, you will need a few (command line) tools. I&rsquo;ll let you find out how to do so
+on their respective websites, according to your OS.</p>
+<ul>
+<li><a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby</a> (I use Ruby 2.0.0)</li>
+<li><a href="http://bundler.io/">Bundler</a></li>
+</ul>
+<p>Download them, install them, then come back here for more! Of course you can also read their doc and get acquainted about the awesome Bundler tools &ndash; they might be of great use for your other web projects!</p>
+<h3 id="forking-and-cloning">Forking and cloning</h3>
+<p>Next, <a href="https://help.github.com/articles/fork-a-repo/">fork</a> <a href="https://github.com/PrestaShop/prestashop.github.io">the prestashop.github.io repo</a> into your GitHub account, then <a href="https://help.github.com/articles/fetching-a-remote/">clone it</a> on your local machine.</p>
+<h3 id="installing-dependencies-and-running-jekyll">Installing dependencies and running Jekyll</h3>
+<p><em>Bundler</em> will install Jekyll and all the Ruby dependencies. We&rsquo;ll also use it to run the blog on a local server.</p>
+<h2 id="-bundle-exec-jekyll-serve">{% highlight bash %}
+$ bundle install
+$ bundle exec jekyll serve</h2>
+<p>Server address: http://0.0.0.0:4000/
+Server running&hellip; press ctrl-c to stop.
+{% endhighlight %}</p>
+<p>Open a browser window, and go to <code>http://0.0.0.0:4000/</code>, and you should see the blog running.</p>
+<div class="alert alert-note" role="alert">
+<h4><i class='icon-file'></i> Note</h4>
+The `jekyll serve` command only watches content and styles. So if you are changing any plugin or any line in your `_config.yml`, you'll have to quit (`ctrl+C`) and rebuild.
+</div>
+<h2 id="creating-your-article">Creating your article</h2>
+<h3 id="directory-structure">Directory structure</h3>
+<p>As a contributing writer on the Build blog, you are mostly interested in <strong>/assets</strong>, <strong>/howtos</strong> and <strong>/news</strong> folders.</p>
+<p><img src="/assets/images/2015/04/directory_structure.png" alt="Jekyll Logo"></p>
+<h3 id="article-directories">Article directories</h3>
+<p>With Jekyll, the location of your files matter. On this blog, we have two kinds of articles:</p>
+<ul>
+<li><strong>News</strong>: They live in the <code>news/_posts</code> folder and they show up on the home page.</li>
+<li><strong>How-Tos</strong>: They live in the <code>howtos</code> folder and are sorted by topic. These posts are displayed on the home page as well as the How-Tos
+page which is sorted by topic.</li>
+</ul>
+<div class="alert alert-note" role="alert">
+<h4><i class='icon-file'></i> Note</h4>
+If you need to create a new topic, create a subfolder in `howtos` and edit the `howtos` configuration in `_config.yml`.
+<p>The topics are displayed in the same order as shown in the <code>_config.yml</code> file.</p>
+<p>Please ask us before creating a brand new topic!</p>
+</div>
+<h3 id="file-name">File name</h3>
+<p>Any article of any type has to be in a file named using the following the time-based pattern. Make sure to follow that convention: if you do not, Jekyll won&rsquo;t recognize your file.</p>
+<p>{% highlight bash %}
+YYYY-MM-DD-some-hyphen-separated-name.markdown
+{% endhighlight %}</p>
+<h3 id="file-header-yaml-front-matter">File header (<em>YAML Front Matter</em>)</h3>
+<p>Jekyll makes it really easy to set your post meta information. The top of your file has to include some information like &lsquo;author&rsquo; or &rsquo;layout&rsquo;, <a href="http://jekyllrb.com/docs/frontmatter/">in YAML format</a>.</p>
+<p>Copy and paste the following lines at the top of your new file, and customize the relevant values.</p>
+<h2 id="-highlight-yaml-">{% highlight yaml %}</h2>
+<h2 id="published-false">layout: post
+title:  &ldquo;Here goes the title of your article&rdquo;
+subtitle: &ldquo;This text will be displayed below your title&rdquo;
+date:   2015-03-04 15:12:00
+authors:  [ julienbourdeau ]
+icon: icon-pen
+tags: [sample, tags, example]
+published: false</h2>
+<p>{% endhighlight %}</p>
+<p>I assume you will understand what you are supposed to change. <em>Icon</em> can be <a href="http://fortawesome.github.io/Font-Awesome/icons/">any icon from FontAwesome</a>. You can also find available icons on the <a href="http://build.prestashop.com/prestashop-icon-font/documentation.html">PrestaShop Icon Font Documentation</a> page.</p>
+<div class="alert alert-important" role="alert">
+<h4><i class='icon-fire'></i> Important</h4>
+Articles must be submitted with the 'published' setting set to false. We will only publish it after review.
+</div>
+<h2 id="making-sure-youre-an-author">Making sure you&rsquo;re an author</h2>
+<p>If this is your first article, you will have to add yourself to the author list. Open up the <code>_data/authors.yml</code> file and add your personal details. The first line is your ID and that&rsquo;s what you have to use in your article header.</p>
+<p>Now fill up as much info as you can. <code>display_name</code> and <code>avatar</code> are mandatory.</p>
+<p>Exemple:
+{% highlight yaml %}
+julienbourdeau:
+display_name: Julien Bourdeau
+role: Core developer
+avatar: <a href="https://avatars1.githubusercontent.com/u/1525636">https://avatars1.githubusercontent.com/u/1525636</a>
+email: <a href="mailto:julien@prestashop.com">julien@prestashop.com</a>
+twitter: julienbourdeau
+github: julienbourdeau
+forum: 761923-julien-bourdeau
+crowdin: julienbourdeau
+website: <a href="http://www.example.com">http://www.example.com</a>
+description: &gt;
+This is a description of the author with details about what he really does
+and the cool thing is: it&rsquo;s multiline.
+{% endhighlight %}</p>
+<h2 id="writing-your-article">Writing your article</h2>
+<h3 id="markdown--liquid">Markdown &amp; Liquid</h3>
+<p>All article must be written using the Markdown syntax. With Jekyll, we use <a href="http://kramdown.gettalong.org/index.html">Kramdown</a> as a markdown converter, and the <a href="https://github.com/Shopify/liquid">Liquid template engine</a>.</p>
+<p>If you are struggling to get the result you want, you can still use pure HTML.</p>
+<p><strong>References:</strong></p>
+<ul>
+<li><a href="http://kramdown.gettalong.org/quickref.html">Official Kramdown documentation</a></li>
+<li><a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers">Official Liquid documentation</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">A good Markdown CheetSheat</a></li>
+</ul>
+<h2 id="tips-and-tricks">Tips and tricks</h2>
+<p>This part describes some important tricks to write a good article.</p>
+<h3 id="images">Images</h3>
+<p>Images have to be in the <code>assets/images/YYYY/MM</code> folder (with a custom YYYY and MM, of course): find or create the subdirectory according to the date of the article.</p>
+<p>Using Markdown, your image should look like this:</p>
+<p>{% highlight liquid %}
+{% raw %}
+<img src="/assets/images/2015/04/jekyll.png" alt="Jekyll Logo">
+{% endraw %}
+{% endhighlight %}</p>
+<h3 id="code">Code</h3>
+<h4 id="inline-code">Inline code</h4>
+<p>When you need to refer to a <code>CSS property</code>, a <code>specific file</code>, a <code>function name</code> or anything similar, use the following syntax to highlight it in your text:</p>
+<p>{% highlight text %}
+<code>define('_PS_DEV_MODE_')</code> in file  <code>config.inc.php</code> or  <code>Tools::getValue()</code>
+{% endhighlight %}</p>
+<h4 id="block-of-code">Block of code</h4>
+<p>When it comes to serious code blocks, it&rsquo;s always better to use syntax highlighting. With Jekyll, it works a bit differently compared to GitHub (because GitHub uses their own <a href="https://help.github.com/articles/github-flavored-markdown/">GitHub-flavored Markdown</a>): you have to use a <a href="https://github.com/Shopify/liquid">Liquid tag</a>: {% raw %}<code>{% highlight LANG OPT_1 OPT_2 %}</code>{% endraw %}</p>
+<pre><code>{% raw %}{% highlight php startinline=true linenos %}
+class IndexControllerCore extends FrontController
+{
+	// SAMPLE CODE
+	public function initContent()
+	{
+		// SAMPLE CODE
+	}
+}
+{% endhighlight %}
+{% endraw %}</code></pre>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LANG</code></td>
+<td><strong>Mandatory</strong>. Can take almost any language: html, php, ruby, javascript, etc.</td>
+</tr>
+<tr>
+<td><code>startinline=true</code></td>
+<td><strong>Optional</strong>. Only used for PHP, this way you don&rsquo;t have to write <code>&lt;?php</code> and  <code>?&gt;</code>. If you are mixing up PHP and HTML, don&rsquo;t set this parameter.</td>
+</tr>
+<tr>
+<td><code>lineos</code></td>
+<td><strong>Optional</strong>. Display line number. Default: false.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="embed-a-github-gist">Embed a GitHub gist</h4>
+<p>If your code will or may be updated, you can easily embed a a <a href="https://gist.github.com/">GitHub gist</a> using the embeded HTML code.</p>
+<p>{% highlight html %}</p>
+<script src="https://gist.github.com/your-username/your-gist-id.js"></script>
+<p>{% endhighlight %}</p>
+<h3 id="icons">Icons</h3>
+<p>We use a simple FontAwesome plugin that lets you display any icon using the following syntax:</p>
+<p>{% highlight html %}
+<i class="icon-store"></i>
+{% endhighlight %}</p>
+<p>You can find available icons on the <a href="http://build.prestashop.com/prestashop-icon-font/documentation.html">PrestaShop Icon Font Documentation</a> page.</p>
+<h3 id="alerts">Alerts</h3>
+<p>If you want to highlight some content (hint, note, tip, alert, etc.), we have few types of highlighting available. They are based on <a href="http://getbootstrap.com/components/#alerts">alerts from Bootstrap</a>.</p>
+<p>{% highlight html %}</p>
+<div class="alert alert-note" role="alert">
+You content goes here. **Markdown** _is_ `supported`.
+</div>
+{% endhighlight %}
+<p>You can use: <code>alert-note</code>, <code>alert-info</code>, <code>alert-important</code>, <code>alert-tips</code>.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Mar 4, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/help/">help</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Julien Bourdeau
+      <span>Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/julienbourdeau">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/761923-julien-bourdeau">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/julienbourdeau">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/julienbourdeau">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'http:\/\/build.prestashop.com\/misc\/how-to-write-on-this-blog\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

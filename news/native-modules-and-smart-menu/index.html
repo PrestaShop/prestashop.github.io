@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Native modules and smart menu</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Native modules and smart menu" />
+<meta property="og:description" content="As an open source project, PrestaShop is continuously being enriched by the company teams, external contributors, developers, etc. Thanks to all the community, it keeps growing in the right direction. The PrestaShop Team is proud and honored to read everybody’s feedback, ideas, translations and pull requests, it helps improving the PrestaShop project and making it better for everyone!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/native-modules-and-smart-menu/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2018-11-29T12:00:00+01:00" />
+    <meta property="article:modified_time" content="2018-11-29T12:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Native modules and smart menu"/>
+<meta name="twitter:description" content="A bit of historical background and the refactoring plan"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Native modules and smart menu</h1>
+              
+                <h3 class="post-subtitle">A bit of historical background and the refactoring plan</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars1.githubusercontent.com/u/40759259?s=400&amp;u=8e83e7f83f37ff75302ebf8d45955478e1ab4331&amp;v=4"
+         alt="Bilal Driche's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Bilal Driche</div>
+        
+          <div class="author-display-role">Product Owner / Analyst</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Nov 29, 2018
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Native&#43;modules&#43;and&#43;smart&#43;menu&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fnative-modules-and-smart-menu%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fnative-modules-and-smart-menu%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>As an open source project, PrestaShop is continuously being enriched by the company teams, external contributors, developers, etc. Thanks to all the community, it keeps growing in the right direction. The PrestaShop Team is proud and honored to read everybody&rsquo;s feedback, ideas, translations and pull requests, it helps improving the PrestaShop project and making it better for everyone!</p>
+<p>It is the strength of this community that renders each version of the software more powerful, with new features and contributions added. As of November 2018, more than 80 native modules are included in the upcoming PrestaShop 1.7.5 to fit merchants&rsquo; needs, and we need your feedback!</p>
+<h2 id="a-bit-of-historical-background">A bit of historical background</h2>
+<p>We all know it, when PrestaShop 1.7 was first released in 2016 it included less native modules than 1.6. At that point in time, some had been considered obsolete, they had some issues and they needed improvements. Many merchants claimed there was a real need for some of the removed modules regarding their business. Therefore, it appears important to rework and bring some of the most important modules back in the software… and here we are!
+We are now launching this project with you, not only bringing modules back but also aiming at improving user experience and fixing most bugs.
+So, on the PrestaShop’s Product Management team, we have chosen the most important native modules based on community feedbacks on <a href="https://github.com/PrestaShop/PrestaShop">github</a>, on <a href="http://feedback.prestashop.com/forums/387864-prestashop-1-7-x">uservoice</a> and on real-life <a href="https://www.prestashop.com/en/events">events</a>, and we defined their features based on needs, trends and legislations.
+We also want to rework some of current native modules of Prestashop 1.7.</p>
+<p>For the next releases, we aim to bring back Wishlist, Product review, Legal compliance modules and rework Reassurance block, VAT number module. We try to include in every release some of your ideas and request.For example, stock location, not in a module but in the core, will be back soon in 1.7.5.0.</p>
+<h2 id="smart-menu">Smart menu</h2>
+<p>For the first project the focus is on one of the most important PrestaShop modules, the Main menu module, which displays the Front Office menu. Many merchants use the current version, but they are not fully satisfied it can be improved.
+SEOPresta, a french web agency, has developed a new menu module, now called Smart menu (this module is open-source) and suggested to include it on the software. Prestasafe from SEOPresta has worked on it and now we need some help on in it in order to improve this menu module and make it the best as possible for merchants and customers.</p>
+<p>You’ll find the repository of the module on GitHub, don’t hesitate to test it, give your feedback, contribute code and improve it : <a href="https://github.com/PrestaShop/seoprestamenu">https://github.com/PrestaShop/seoprestamenu</a></p>
+<h2 id="refactoring-important-modules">Refactoring important modules</h2>
+<p>As said before, some features of PrestaShop 1.6 that the community was missing in 1.7 will be brought back. And they will be improved in terms of UX and coding standards.
+The Core team is working on those modules in order to provide them as soon as possible for merchants. Simultaneously, as a contributor, you are welcome to bring help and your point of view on those projects. Some of you have already started to submit pull requests and issues, thank you very much!.</p>
+<p>You can have a look at the current status of this work on the Kanban dedicated to <a href="https://github.com/PrestaShop/PrestaShop/projects/5">Native modules integration on GitHub</a>.</p>
+<p>Thank you all for your time, feedback and contributions, and special thanks to Prestasafe who worked hard on the Smart menu module.</p>
+<p>If you have a project, or a module that you want to share and integrate in PrestaShop don’t forget to contact us at: <a href="mailto:feedback@prestashop.com">feedback@prestashop.com</a> and on <a href="http://feedback.prestashop.com/forums/387864-prestashop-1-7-x">uservoice</a>.
+We will review your idea and give you feedback as soon as possible.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Nov 29, 2018</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/community/">community</a>
+
+  <a class="label label-primary" href="/tag/contribution/">contribution</a>
+
+  <a class="label label-primary" href="/tag/forge/">forge</a>
+
+  <a class="label label-primary" href="/tag/modules/">modules</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Bilal Driche
+      <span>Product Owner / Analyst</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/BilalDr">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

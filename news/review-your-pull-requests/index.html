@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Let&#39;s review pull requests!</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Let&#39;s review pull requests!" />
+<meta property="og:description" content="Have you submitted code to PrestaShop’s Core codebase or any of its native module through a pull request on GitHub? Then read on!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/review-your-pull-requests/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2015-11-02T12:00:41+01:00" />
+    <meta property="article:modified_time" content="2015-11-02T12:00:41+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Let&#39;s review pull requests!"/>
+<meta name="twitter:description" content="Making sure that your code makes it to Core"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Let&#39;s review pull requests!</h1>
+              
+                <h3 class="post-subtitle">Making sure that your code makes it to Core</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749"
+         alt="Xavier Borderie's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Xavier Borderie</div>
+        
+          <div class="author-display-role">Open Source Advocate</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Nov 2, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Let%27s&#43;review&#43;pull&#43;requests%21&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Freview-your-pull-requests%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Freview-your-pull-requests%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Have you submitted code to PrestaShop&rsquo;s Core codebase or any of its native module through a pull request on GitHub? Then read on!</p>
+<p>The PrestaShop team has four main ways to get feedback from the Community:</p>
+<ul>
+<li>The <a href="http://www.prestashop.com/forums/">Support Forums</a>, where we try to answer the most pressing matters (and there&rsquo;s never enough hours in the day).</li>
+<li>The <a href="http://forge.prestashop.com/">Forge</a>, our bugtracker, where users (both developers and merchants) report issues or suggest improvements, and the team handles them one by one, according to their complexity and impact.</li>
+<li>The <a href="https://github.com/PrestaShop/">GitHub repository</a>, where developers can submit code changes to the team through pull requests (hereafter &ldquo;PR&rdquo;). The repo contains the code for the Core of PrestaShop, as well as individual projects for each module.</li>
+<li>The comments on the Build devblog. Hey, that&rsquo;s here!</li>
+</ul>
+<p>As anyone lurking on our GitHub repository knows, PRs have gotten from a trickle to a more steady flow of code suggestions, currently reaching more than 360 PRs just for the main project. Modules also have their share of PRs waiting.</p>
+<p>While we are more than happy to see the Community involved, the current plans for version 1.7 of PrestaShop made it that until now, the devteam had little time to dive into all these PRs and separate the wheat from the chaff. I write &ldquo;until now&rdquo;, because we want to dedicate more time to our Community.</p>
+<p>That&rsquo;s where you, dear reader who contributed one or more PRs, can easily help us! If one of your past PR is still open, we want to help you either merge it into Core, or close it. Now&rsquo;s the time to speak up &ndash; and comment :) Please read on!</p>
+<h3 id="how-to-proceed">How to proceed</h3>
+<p>Look at the pull requests that you have created in the past and ask yourself:</p>
+<ul>
+<li>Is this still relevant?</li>
+<li>Does this still need to be fixed?</li>
+<li>Is the suggestion still valid?</li>
+</ul>
+<p>If you answer &ldquo;no&rdquo; to any of the above questions, please leave a comment on GitHub explaining the situation, and close the pull request.</p>
+<p>If you have answered &ldquo;yes&rdquo; to all the above questions, then let&rsquo;s continue!</p>
+<p>Now, please look at your code, and ask yourself:</p>
+<ul>
+<li>Do the code changes you suggested at the time still apply?</li>
+<li>Is there any conflict risk with the current code?<br/>GitHub should indicate this at the bottom of the PR&rsquo;s page.</li>
+<li>Can the solution be improved?</li>
+<li>Does your patch follow the <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">PSR-2 coding style</a>?<br/>We adopted PSR-2 <a href="http://build.prestashop.com/news/prestashop-moves-to-psr-2/">back in June 2015</a>.</li>
+<li>Is the PR made on the correct branch?<br/>It should be:
+<ul>
+<li><code>develop</code> for an improvement or a bug fix targeted at the forthcoming 1.7.</li>
+<li><code>1.6.1.x</code> for a bug fix for version 1.6.1.x (currently 1.6.1.2). PrestaShop 1.6 will not receive any new feature.</li>
+</ul>
+</li>
+</ul>
+<p>Note: If your PR was made on a module&rsquo;s repository (ergo, NOT the <a href="https://github.com/PrestaShop/PrestaShop">/PrestaShop/PrestaShop</a> one, but for instance the <a href="https://github.com/PrestaShop/dashtrends">/PrestaShop/dashtrends</a> one), please use the <code>dev</code> branch.</p>
+<p>Write a comment to tell us your answer for these questions, or any other information you feel is essential for us to test and merge your change! If possible, you can even <a href="http://forge.prestashop.com/">create a Forge ticket</a> for your PR, in order to have the conversation featured in our daily planning!</p>
+<p>Note: if your patch needs to be updated or to be moved to another branch, don&rsquo;t go make the change right away! Let us know first, and we will let you know if it fits our plans for PrestaShop 1.6.1.x/1.7 or not.</p>
+<p>Thank you so much for your help!</p>
+<h3 id="essential-links">Essential links</h3>
+<p>Here is a link to all the currently open pull requests in all of PrestaShop&rsquo;s branches: <a href="https://github.com/PrestaShop/PrestaShop/pulls">https://github.com/PrestaShop/PrestaShop/pulls</a>
+Remember that each module also has its own set of PRs!</p>
+<p>Here&rsquo;s how you can display all your open pull requests submitted to the PrestaShop project:</p>
+<ol>
+<li>Display all <a href="https://github.com/pulls">your currently open pull requests</a>.</li>
+<li>Open the &ldquo;Organization&rdquo; filter and choose &ldquo;PrestaShop&rdquo;.</li>
+<li>From there, please gives us an update/opinion on each open PR.</li>
+</ol>
+<h3 id="a-few-tips">A few tips</h3>
+<p>If a rewrite of your patch is needed, either because you can think of a better solution, or because PrestaShop&rsquo;s codebase has changed since your proposal and thus your patch cannot be applied as-is, please take the time to upgrade your code! It would be of tremendous help to provide an updated patch, one that we can possibly apply more quickly.</p>
+<p>If you aim at fixing version 1.5 or below, please port your code to the <code>1.6.1.x</code> or <code>develop</code> branch. PrestaShop&rsquo;s versions below 1.6 will not receive updates anymore, except for security issues.</p>
+<p>In any case, please leave a comment acknowledging that you aware of the PR&rsquo;s situation, and willing to start working with us to have it possibly merged!</p>
+<p>By following these simple suggestions, you can help us go through the open PRs quicker, spot the real gems faster, and thus make PrestaShop a better e-commerce solution!</p>
+<p>Thank you for giving us an update on every one of your open pull requests!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Nov 2, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/github/">github</a>
+
+  <a class="label label-primary" href="/tag/pullrequests/">pullrequests</a>
+
+  <a class="label label-primary" href="/tag/pr/">pr</a>
+
+  <a class="label label-primary" href="/tag/gardening/">gardening</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Xavier Borderie
+      <span>Open Source Advocate</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

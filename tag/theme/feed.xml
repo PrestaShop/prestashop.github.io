@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>theme on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/theme/</link>
+    <description>Recent content in theme on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Feb 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/theme/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello 2022, meet our new Front office theme</title>
+      <link>https://build.prestashop-project.org/news/new-theme-announce/</link>
+      <pubDate>Thu, 17 Feb 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/new-theme-announce/</guid>
+      <description>For a long time, many community members have been pushing for a rework of the Classic front-office theme. The maintainer team is happy to announce that a new front-office theme is being built, and you can find it here.
+Why such a decision? The PrestaShop community provided a lot of feedback and ideas, with suggestions like:
+Upgrade Bootstrap to version 5, the latest LTS Rework the structure inside src directory, which was _dev before.</description>
+    </item>
+    
+    <item>
+      <title>How to solve the search bar issue after upgrading to PrestaShop 1.7.8</title>
+      <link>https://build.prestashop-project.org/howtos/misc/178-and-searchbar/</link>
+      <pubDate>Tue, 07 Dec 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/178-and-searchbar/</guid>
+      <description>We have recently been informed that many of you have encountered a display problem with the search bar in Front office, right after upgrading to PrestaShop 1.7.8. This problem also affected shops using the built-in &amp;ldquo;classic&amp;rdquo; theme.
+What is the problem? After having updated your shop to 1.7.8, if you are using the default theme or a theme that overrides the default look of the search bar from the &amp;ldquo;ps_searchbar&amp;rdquo; module, you might have seen it displaying like this:</description>
+    </item>
+    
+    <item>
+      <title>A journey to improve the Time To Interactive metric in Classic Theme</title>
+      <link>https://build.prestashop-project.org/news/journey-to-improve-the-time-to-interactive-metric/</link>
+      <pubDate>Tue, 21 Jul 2020 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/journey-to-improve-the-time-to-interactive-metric/</guid>
+      <description>The project Core Web Vitals from Google has announced that loading time and performance will have an impact on the website ranking in search results. Google mentions lazy loading in their suggestions. Lazy loading will be available on Classic Theme in version 1.7.8 thanks to Progi1984 and it will definitely improve both user experience and loading time on your site!
+What is lazy loading ? Lazy loading is a technique that defers loading of non-critical resources at page load time.</description>
+    </item>
+    
+    <item>
+      <title>Update your store for GDPR</title>
+      <link>https://build.prestashop-project.org/news/update-your-prestashop-store/</link>
+      <pubDate>Tue, 29 May 2018 19:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/update-your-prestashop-store/</guid>
+      <description>Almost all of our merchants have to comply with the law. That’s why we have released the GDPR official module by PrestaShop (1.6 and 1.7 live, 1.5 to be released very soon), helping merchants and contributors to comply with the law.
+Do you have a PrestaShop version 1.7 store? The module is already available in your back-office
+Introduction As already explained on our Prestashop.com blog and on build.prestashop.com, the GDPR has and ready to be installed.</description>
+    </item>
+    
+    <item>
+      <title>Parent/Child theme feature in PrestaShop 1.7</title>
+      <link>https://build.prestashop-project.org/news/Child-Themes-Feature/</link>
+      <pubDate>Fri, 08 Sep 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/Child-Themes-Feature/</guid>
+      <description>There is a feature introduced in PrestaShop 1.7.0 that we would like to dive back in: the child theme feature!
+PrestaShop 1.7 introduced a whole new way of working with themes, and with it came the possibility to have parent/child themes. It was a late addition to PrestaShop 1.7 &amp;ndash; kind of a bonus! So, let&amp;rsquo;s talk about this child theme feature and how you can use it to customize themes more easily.</description>
+    </item>
+    
+    <item>
+      <title>How to translate your theme in PrestaShop 1.7</title>
+      <link>https://build.prestashop-project.org/howtos/translation/how-to-translate-your-theme/</link>
+      <pubDate>Fri, 21 Apr 2017 06:09:47 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/translation/how-to-translate-your-theme/</guid>
+      <description>By now you’re probably aware that the 1.7 version comes with a new translation system and that the theme you are building can benefit from it. However, we didn’t give much details on how it works yet, so here is what you should know if you want to translate your theme for PrestaShop 1.7.
+Before anything, you should identify in which case you are:
+Case 1: You are using strings that already exist in the default theme.</description>
+    </item>
+    
+    <item>
+      <title>Designing the new PrestaShop default theme</title>
+      <link>https://build.prestashop-project.org/news/Designing-the-new-PrestaShop-default-theme/</link>
+      <pubDate>Mon, 06 Jun 2016 06:09:47 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/Designing-the-new-PrestaShop-default-theme/</guid>
+      <description>When merchants use PrestaShop for the first time, they’re offered a basic shop with demo products and a default theme. This basic theme is essential for the merchants to have a clear insight of what their new shop will look like. For the 1.7 version of the software, we’ve decided to revamp this default theme which we called “Classic”.
+Main goals of the Classic theme With around 600 free native features, PrestaShop is the ideal software for anyone wishing to get started with e-commerce.</description>
+    </item>
+    
+  </channel>
+</rss>

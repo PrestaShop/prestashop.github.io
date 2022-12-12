@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>upgrade on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/upgrade/</link>
+    <description>Recent content in upgrade on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/upgrade/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to solve the search bar issue after upgrading to PrestaShop 1.7.8</title>
+      <link>https://build.prestashop-project.org/howtos/misc/178-and-searchbar/</link>
+      <pubDate>Tue, 07 Dec 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/178-and-searchbar/</guid>
+      <description>We have recently been informed that many of you have encountered a display problem with the search bar in Front office, right after upgrading to PrestaShop 1.7.8. This problem also affected shops using the built-in &amp;ldquo;classic&amp;rdquo; theme.
+What is the problem? After having updated your shop to 1.7.8, if you are using the default theme or a theme that overrides the default look of the search bar from the &amp;ldquo;ps_searchbar&amp;rdquo; module, you might have seen it displaying like this:</description>
+    </item>
+    
+  </channel>
+</rss>

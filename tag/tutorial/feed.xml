@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutorial on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/tutorial/</link>
+    <description>Recent content in tutorial on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Aug 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/tutorial/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrate your solutions from PrestaShop 1.7 to 8.0</title>
+      <link>https://build.prestashop-project.org/news/migrate-your-solutions-from-17-to-80/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/migrate-your-solutions-from-17-to-80/</guid>
+      <description>PrestaShop 8 beta version was released last week. If you are a developer in our ecosystem, create modules or themes, and have clients working with PrestaShop, this is an excellent opportunity to spend some time with this version and test your solutions.
+In this article, I will focus on things that might affect your work. You will read here about changes that are not backward compatible, and could require you to make changes in the code of your solutions.</description>
+    </item>
+    
+    <item>
+      <title>How to rebase your Git branch</title>
+      <link>https://build.prestashop-project.org/howtos/misc/rebasing-your-git-branch/</link>
+      <pubDate>Thu, 11 May 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/rebasing-your-git-branch/</guid>
+      <description>Contributing code to PrestaShop can be scary for first-timers, because not everyone knows how Git works. By the time you have figured how to properly push your changes to GitHub, the codebase has changed, rendering your suggestions impossible to merge &amp;ndash; leading to frustration on both sides. It&amp;rsquo;s high time you learn about git rebase.
+Files often change an Open Source project. Between the time you fix an issue and create a pull request, and the time a Core developer takes a look at your PR, the target files can have changed a couple times (or more).</description>
+    </item>
+    
+    <item>
+      <title>Twelve things to watch out for when coding a PrestaShop module</title>
+      <link>https://build.prestashop-project.org/howtos/module/Common-mistakes-while-coding-module/</link>
+      <pubDate>Mon, 25 Jul 2016 09:10:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/module/Common-mistakes-while-coding-module/</guid>
+      <description>PrestaShop has been around for many years, during which thousands of modules were made by thousands of developers, yet we still see the same simple mistakes being made, even though they could easily be avoided.
+Here is a list of 10+ common mistakes when coding a PrestaShop module, with a short information on how to avoid them.
+Note Several tips only apply to PrestaShop 1.5-1.6 module development. PrestaShop 1.7 changes a few things!</description>
+    </item>
+    
+    <item>
+      <title>Ten ways to improve your PrestaShop modules!</title>
+      <link>https://build.prestashop-project.org/howtos/module/Ten-ways-improve-modules/</link>
+      <pubDate>Tue, 05 Jul 2016 08:07:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/module/Ten-ways-improve-modules/</guid>
+      <description>PrestaShop has numerous features in the API, both hidden in its code as well as in the developer documentation and there are many tools that allow you to create your own module in no time! Unfortunately I have noticed that many developers do not use these features and tools to their advantage, so I think it&amp;rsquo;s time to change all that :) Hopefully, these tips will increase your development speed and save you lots and lots of time.</description>
+    </item>
+    
+  </channel>
+</rss>

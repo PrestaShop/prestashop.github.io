@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Miscellaneous on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/howtos/misc/</link>
+    <description>Recent content in Miscellaneous on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/howtos/misc/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to solve the search bar issue after upgrading to PrestaShop 1.7.8</title>
+      <link>https://build.prestashop-project.org/howtos/misc/178-and-searchbar/</link>
+      <pubDate>Tue, 07 Dec 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/178-and-searchbar/</guid>
+      <description>We have recently been informed that many of you have encountered a display problem with the search bar in Front office, right after upgrading to PrestaShop 1.7.8. This problem also affected shops using the built-in &amp;ldquo;classic&amp;rdquo; theme.
+What is the problem? After having updated your shop to 1.7.8, if you are using the default theme or a theme that overrides the default look of the search bar from the &amp;ldquo;ps_searchbar&amp;rdquo; module, you might have seen it displaying like this:</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 2018 release schedule</title>
+      <link>https://build.prestashop-project.org/howtos/misc/2018-release-schedule/</link>
+      <pubDate>Fri, 02 Mar 2018 09:10:11 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/2018-release-schedule/</guid>
+      <description>Our release calendar for the next versions of PrestaShop 1.7 and 1.6.
+Summary In short: we intend to release minor versions of PrestaShop 1.7 every 3 to 4 months, and patch versions for both 1.7 and 1.6 as regularly as possible in-between minor releases.
+When? When? When? Here’s a handy table to guide you:
+This table was updated on February 26th, 2018. Please note that all dates are estimated, not fixed, and hence subject to change.</description>
+    </item>
+    
+    <item>
+      <title>How to create the best bug reports</title>
+      <link>https://build.prestashop-project.org/howtos/misc/how-to-create-bug-report/</link>
+      <pubDate>Mon, 22 May 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/how-to-create-bug-report/</guid>
+      <description>Every morning, the Product and QA team gather around a big screen, and review the new Forge tickets that were created since the day before. At the end of the meeting, all new tickets must be asserted, and if need be, placed into the hand of a team member.
+Reviewing Forge ticket can be very brain-consuming: sometimes, report incompleteness can make for a need to ask for more info, thus slowing down.</description>
+    </item>
+    
+    <item>
+      <title>How to rebase your Git branch</title>
+      <link>https://build.prestashop-project.org/howtos/misc/rebasing-your-git-branch/</link>
+      <pubDate>Thu, 11 May 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/rebasing-your-git-branch/</guid>
+      <description>Contributing code to PrestaShop can be scary for first-timers, because not everyone knows how Git works. By the time you have figured how to properly push your changes to GitHub, the codebase has changed, rendering your suggestions impossible to merge &amp;ndash; leading to frustration on both sides. It&amp;rsquo;s high time you learn about git rebase.
+Files often change an Open Source project. Between the time you fix an issue and create a pull request, and the time a Core developer takes a look at your PR, the target files can have changed a couple times (or more).</description>
+    </item>
+    
+    <item>
+      <title>Being in an Open Source community</title>
+      <link>https://build.prestashop-project.org/howtos/misc/being-in-an-open-source-community/</link>
+      <pubDate>Fri, 05 May 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/being-in-an-open-source-community/</guid>
+      <description>PrestaShop is an Open Source project. To most, this mostly means that the software is free of charge: you do not have to pay anyone for the default product. There is much more to this, starting with its community.
+This article aims at being a general description of what makes an Open Source community, all the while describing how we envision PrestaShop&amp;rsquo;s own community. We hope this will lead more people to become Open Source contributor, and why not, contribute to PrestaShop too!</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 2017 release schedule</title>
+      <link>https://build.prestashop-project.org/howtos/misc/2017-release-schedule/</link>
+      <pubDate>Tue, 07 Feb 2017 09:10:11 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/2017-release-schedule/</guid>
+      <description>Our release calendar for the next versions of PrestaShop 1.7 and 1.6.
+Summary In short: we intend to release minor versions of PrestaShop 1.7 every 3 to 4 months, and monthly patch versions for both 1.7 and 1.6.
+When, you ask? Here’s a handy table:
+This table was updated on September 28th, 2017. Please note: all dates are estimates and are subject to change.
+For more information (and the initial plan), please read the initial announcement post.</description>
+    </item>
+    
+    <item>
+      <title>How to contribute to PrestaShop</title>
+      <link>https://build.prestashop-project.org/howtos/misc/contribute-to-prestashop/</link>
+      <pubDate>Mon, 30 May 2016 10:12:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/contribute-to-prestashop/</guid>
+      <description>Hey, welcome! If you landed here, it means that you’re interested in participating, testing, improving or giving your thoughts about PrestaShop.
+We &amp;lt;3 feedback! They are greatly appreciated: they help us improve the software and make the best e-commerce solution for all types of people/businesses.
+As we want to be sure that your contributions don’t get lost and are quickly understood and taken into account by our team, we’ve decided to create this exhaustive guide, with tips and guidelines on how to contribute.</description>
+    </item>
+    
+    <item>
+      <title>Set up your Git for contributing</title>
+      <link>https://build.prestashop-project.org/howtos/misc/set-up-your-git-for-contributing/</link>
+      <pubDate>Thu, 30 Jul 2015 11:21:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/set-up-your-git-for-contributing/</guid>
+      <description>Any open source project comes with its own set of rules to harmonize everybody&amp;rsquo;s contributions. Usually the guidelines are described in a CONTRIBUTING.md file inside the project root directory.
+To follow these guidelines, you often need to adapt your development environment. You will find here all you need to know to set up your development environment! This will help your contribution get validated more quickly and without further modifications.
+We&amp;rsquo;ll be talking about working with the PrestaShop project, but what you&amp;rsquo;ll read here applies to most PHP open source projects.</description>
+    </item>
+    
+    <item>
+      <title>Create the perfect .gitignore file for your PrestaShop projects</title>
+      <link>https://build.prestashop-project.org/howtos/misc/prestashop-perfect-gitignore/</link>
+      <pubDate>Mon, 20 Apr 2015 11:21:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/prestashop-perfect-gitignore/</guid>
+      <description>As a serious developer, you need to use versioning (or &amp;ldquo;revision control&amp;rdquo;) for your projects, in order to track changes to your files&amp;hellip; and be able to travel back in time when a disaster happens. There are many CVS (Concurrent Versions System) available out there today, but Git is by far the most popular in 2015, and one of the most used in the Open Source world, right behind Subversion (svn).</description>
+    </item>
+    
+    <item>
+      <title>How to write on this blog</title>
+      <link>https://build.prestashop-project.org/howtos/misc/how-to-write-on-this-blog/</link>
+      <pubDate>Wed, 04 Mar 2015 15:12:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/how-to-write-on-this-blog/</guid>
+      <description>When we started talking about a dev blog among us, we thought about who could write, what we wanted to talk about, who was going to review the articles&amp;hellip;
+Technically, WordPress was the first solution we reviewed but after giving it more thought we realized it would be too much of a hassle to maintain: plugin updates, core updates, database backups, security issues, etc.
+We then came up with a better idea: Jekyll.</description>
+    </item>
+    
+  </channel>
+</rss>

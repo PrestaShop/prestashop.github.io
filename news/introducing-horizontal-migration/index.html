@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>An update on the Symfony migration</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="An update on the Symfony migration" />
+<meta property="og:description" content="In December 2015, a groundbreaking change in PrestaShop was announced: the introduction of the Symfony framework into the CMS. The goal was to gradually replace PrestaShop’s custom framework with Symfony, and switch its templating system from Smarty to Twig. This project was known as “The Symfony migration”. Looking back, we realize that referring to this project as a “migration” wasn’t really accurate at all." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/introducing-horizontal-migration/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2022-07-04T00:00:00+02:00" />
+    <meta property="article:modified_time" content="2022-07-04T00:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="An update on the Symfony migration"/>
+<meta name="twitter:description" content="What&#39;s next?"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">An update on the Symfony migration</h1>
+              
+                <h3 class="post-subtitle">What&#39;s next?</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/3830050?s=400&amp;v=4"
+         alt="Mathieu Ferment's photo">
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/1009343?s=400&amp;v=4"
+         alt="Pablo Borowicz's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Mathieu Ferment</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">Pablo Borowicz</div>
+        
+          <div class="author-display-role">VP of Core Engineering</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jul 4, 2022
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=An&#43;update&#43;on&#43;the&#43;Symfony&#43;migration&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fintroducing-horizontal-migration%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fintroducing-horizontal-migration%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>In December 2015, a groundbreaking change in PrestaShop was announced: the <a href="/news/prestashop-1-7-and-symfony/">introduction of the Symfony framework</a> into the CMS. The goal was to gradually replace PrestaShop’s custom framework with Symfony, and switch its templating system from Smarty to Twig. This project was known as “The Symfony migration”. Looking back, we realize that referring to this project as a &ldquo;migration&rdquo; wasn&rsquo;t really accurate at all.</p>
+<p>Currently, <em>migrating</em> one page to Symfony involves several steps:</p>
+<ul>
+<li>Analyze the page&rsquo;s features and its business logic, then specify any unclear or ambiguous behavior</li>
+<li>Create a new Symfony controller, identify the different &ldquo;actions&rdquo; and set them up (routing, access control&hellip;)</li>
+<li>Reimplement the page&rsquo;s original behavior using modern components (Grid, Symfony forms, Twig, <a href="https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/strategy/#phase-3-cqrscqrs">CQRS</a>&hellip;)</li>
+<li>Implement any feature required in order to reproduce the original behavior using the new components (Twig layouts, form theme, js&hellip;)</li>
+<li>Implement adapters for any legacy component used in the original controller (as required by the <a href="/releases/new-architecture-1-6-1-0/">architecture rules</a> established in 2015)</li>
+<li>Fix old bugs discovered while reimplementing the old features, or reimagine the existing features to improve them</li>
+<li>Add automated tests</li>
+<li>Remove the old controller and rerouting it to the new controller</li>
+</ul>
+<p>That&rsquo;s a lot of steps, right?</p>
+<p>To us, this shows that the <em>migration</em> process isn&rsquo;t really just about changing the underlying framework or a few components. It&rsquo;s much more than that: <strong>it&rsquo;s a full-on refactoring.</strong></p>
+<p>At the time of writing, over 90 back office pages have been <em>refactored</em> using the process above. It&rsquo;s a thorough process and we are proud of how it has contributed to increasing PrestaShop&rsquo;s overall software quality in the recent years. However, it has its downsides.</p>
+<p>Migrating a page this way is slow and requires a major effort. It basically amounts to building the page again – a <em>better</em> version of it. With several dozen modified files, refactoring a typical page takes several weeks of development, and months of review and refinement. There are still 50 pages left to migrate in the back office. That&rsquo;s <em>years&rsquo;</em> worth of work!</p>
+<p>In the meantime, PrestaShop&rsquo;s architecture has become heterogeneous. Although the pages migrated to Symfony benefit from all the modern concepts built over the years, a third of the back office pages remain largely identical to what they were in PrestaShop 1.6 – not to mention the whole front office and the Web service API.</p>
+<p>This means developers have to deal with some parts of the software working in a certain way and others working completely differently. As mentioned in previous articles, this is problematic: having more than one way of performing the same action carries a higher risk of bugs, lower performance, increased maintenance work, and a steeper learning curve for people new to the platform.</p>
+<p>Moreover, every bit of the legacy framework must be preserved until the migration has been fully completed. Even if in a few years only a single page that few people use was left to migrate, everything it relies on, Dispatcher, ObjectModel, Smarty, Helpers&hellip; the entire legacy stack must remain in place, alive and maintained.</p>
+<p>Of course, in time, the migration will be finished, we will be able to remove any remaining legacy components, and reduce the platform&rsquo;s complexity. But as the saying goes, &ldquo;in the long-term, we will all be dead&rdquo;. PrestaShop&rsquo;s attractiveness as a platform is at risk if we don&rsquo;t accelerate the migration.</p>
+<p><strong>We need a better strategy.</strong> How can we accelerate the transition to Symfony, increase the platform&rsquo;s homogeneity, and phase out legacy components faster?</p>
+<h2 id="thinking-outside-the-box">Thinking outside the box</h2>
+<p>Let&rsquo;s analyze our current strategy. Migrating a page takes a list of known steps. Currently, we perform all those steps on a single page, then move on to the next page, and so on.</p>
+<p>What if we focused on delivering a single step at a time, progressively across all pages?</p>
+<p>Take the controller part, for example. At its root, a Symfony controller takes a <code>Request</code> and provides a <code>Response</code>, that&rsquo;s all. How the request is processed in order to build that response has no impact on the nature of the controller. Who says a Symfony controller must use Twig? Or Grid? Or Symfony forms, for that matter? Theoretically, it should be possible to take the content of the legacy controller and paste it into a Symfony controller. As long as the original code is rearranged into actions, and we get a response, it doesn&rsquo;t matter if the output is built using Smarty helpers: HTML is HTML.</p>
+<p>Following that logic, we could say that the first step to migrating a controller is &ldquo;transforming&rdquo; it into a Symfony controller. Strictly speaking, this requires minimal changes to the original code. It might not be pretty, but it provides all the benefits of a full-fledged Symfony controller (routing, kernel events, debug features, translator, container, etc) – for a very low price.</p>
+<p>Migrating a page using this &ldquo;shortcut&rdquo; should take fewer modifications compared to the traditional way. This means less developer effort (making it easier for contributors to participate), less effort to review and, hopefully, less effort to verify. If we did this to all remaining controllers, we could have 100% of the back office running on Symfony controllers much sooner than if we performed all the refactoring steps to each of them as we do now. This would allow us to phase out Dispatcher, Link, AdminController, and other legacy components much faster.</p>
+<p>Now, rest assured, this wouldn&rsquo;t mean abandoning Twig, Grid, Symfony forms, and CQRS – quite the opposite. Once all controllers had been running on Symfony, we could start the second step: removing Smarty in favor of Twig. If we managed to make HelperList and HelperForm work using Twig, we could easily phase out Smarty. This would simply require refactoring the helpers (in which case we wouldn&rsquo;t need to change any of the controllers), or creating new components that follow the same signature as the old helpers (which would require minimal changes to the controllers). Again, this could be applied everywhere, allowing us to phase out Smarty, the legacy back office theme, and the legacy layout that wraps Symfony Twig pages.</p>
+<p>After that, we could go on to phase out HelperLists in favor of Grids, then HelperForms in favor of Symfony forms and CQRS. And then, the migration of the back office would be complete.</p>
+<p>We call this approach “horizontal migration”, because it focuses on replacing one layer of legacy components with its modern equivalent across all pages before moving on to the next layer. In contrast, we call our current approach &ldquo;vertical migration&rdquo;, because it focuses on migrating all layers of a page at once. The end result is the same: full migration to Symfony. It&rsquo;s the path to get there that changes.</p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>We think the horizontal approach provides two major benefits compared to our current approach:</p>
+<ul>
+<li>A quicker reduction of the system&rsquo;s overall complexity, because legacy components can be sunset as soon as they are no longer needed, instead of having to wait until the whole migration has been completed.</li>
+<li>A gentler learning curve for PrestaShop developers not familiar with Symfony, who will be able to use HelperList and HelperForm in Symfony controllers.</li>
+</ul>
+<p>The main downside of the horizontal approach is that lists and forms need to be migrated twice: once with helpers, then again using the newer components. However, we think its benefits are worth the effort.</p>
+<p>The horizontal approach has been <a href="https://github.com/PrestaShop/ADR/pull/26">recently approved</a> by maintainers, and the <a href="https://github.com/PrestaShop/PrestaShop/pull/27246">first example of a listing page migrated using HelperList</a> has been merged. This means that this should be the main approach to migration from now on.</p>
+<p>The vertical approach is not completely abandoned, though: it might still be used in pages where the horizontal approach would not make tactical sense, either because the page is too simple to benefit from the advantages of horizontal migration, or because it requires extensive refactoring (for example, the product page).</p>
+<h2 id="tell-us-what-you-think">Tell us what you think!</h2>
+<p>The horizontal migration is an idea we are actively experimenting with, but our understanding of its impact is limited by our knowledge of PrestaShop&rsquo;s ecosystem. If you have any questions, ideas or suggestions about this subject, please share them in the comments below, or come <a href="https://www.prestashop-project.org/slack/">chat with us on Slack</a>.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jul 4, 2022</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/news/">news</a>
+
+  <a class="label label-primary" href="/tag/symfony/">symfony</a>
+
+  <a class="label label-primary" href="/tag/migration/">migration</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the authors</h5>
+
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Mathieu Ferment
+      <span class="multiple">Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/matks">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Pablo Borowicz
+      <span class="multiple">VP of Core Engineering</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/eternoendless">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+                </div>
+                
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>How to make your module compliant with PrestaShop’s Official GDPR Compliance Module</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="How to make your module compliant with PrestaShop’s Official GDPR Compliance Module" />
+<meta property="og:description" content="Everybody must already know, there are a few steps to follow in order to make your module compliant with the General Data Protection Regulation (GDPR)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/howtos/module/how-to-make-your-module-compliant-with-prestashop-official-gdpr-compliance-module/" />
+    <meta property="article:section" content="howtos" />
+    <meta property="article:published_time" content="2018-05-04T12:30:00+02:00" />
+    <meta property="article:modified_time" content="2018-05-04T12:30:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="How to make your module compliant with PrestaShop’s Official GDPR Compliance Module"/>
+<meta name="twitter:description" content="Discover our module and get prepared!"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">How to make your module compliant with PrestaShop’s Official GDPR Compliance Module</h1>
+              
+                <h3 class="post-subtitle">Discover our module and get prepared!</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="/assets/images/authors/prestashop-team.png"
+         alt="PrestaShop team's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">PrestaShop team</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    May 4, 2018
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=How&#43;to&#43;make&#43;your&#43;module&#43;compliant&#43;with&#43;PrestaShop%E2%80%99s&#43;Official&#43;GDPR&#43;Compliance&#43;Module&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmodule%2Fhow-to-make-your-module-compliant-with-prestashop-official-gdpr-compliance-module%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmodule%2Fhow-to-make-your-module-compliant-with-prestashop-official-gdpr-compliance-module%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Everybody must already know, there are a few steps to follow in order to make your module compliant with the <strong>General Data Protection Regulation (GDPR)</strong></p>
+<ol>
+<li>Add a consent confirmation checkbox if the module collects personal data</li>
+<li>Allow users to ask for total removal of their personal data</li>
+<li>Allow users to ask for a comprehensive export of their personal data owned by the site</li>
+</ol>
+<p>The Official GDPR Compliance Module by PrestaShop will be available soon, and it provides you with 4 new hooks to help you meet these requirements.</p>
+<h3 id="hook-1-register-your-module-into-the-gdpr-module">Hook 1: Register your module into the GDPR module</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">registerHook</span><span class="p">(</span><span class="s1">&#39;registerGDPRConsent&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>The first step is to register your module into our Official GDPR Compliance Module with the hooks. We recommend to do it during its install process:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="sd">/**
+</span></span></span><span class="line"><span class="cl"><span class="sd"> * Executed at the install of your module
+</span></span></span><span class="line"><span class="cl"><span class="sd"> *
+</span></span></span><span class="line"><span class="cl"><span class="sd"> * @return void
+</span></span></span><span class="line"><span class="cl"><span class="sd"> */</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span> <span class="k">function</span> <span class="nf">install</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// register hook used by the module
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="k">parent</span><span class="o">::</span><span class="na">install</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&amp;&amp;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">registerHook</span><span class="p">(</span><span class="s1">&#39;registerGDPRConsent&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&amp;&amp;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">registerHook</span><span class="p">(</span><span class="s1">&#39;actionDeleteGDPRCustomer&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&amp;&amp;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">registerHook</span><span class="p">(</span><span class="s1">&#39;actionExportGDPRData&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span> <span class="c1">// if something wrong during installation return false
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_errors</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">l</span><span class="p">(</span><span class="s1">&#39;There was an error during the installation. Please contact us through Addons website.&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This operation is very simple but mandatory, so that the Official GDPR Compliance Module registers the list of modules it handles.</p>
+<h3 id="hook-2-delete-customer-personal-data">Hook 2: Delete customer personal data</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">registerHook</span><span class="p">(</span><span class="err">&#39;</span><span class="nx">actionDeleteGDPRCustomer’</span><span class="p">)</span>
+</span></span></code></pre></div><p>When a customer asks for his personal data to be removed from the store, the store owner can either accept or decline the request (for legal obligation requirement for instance). If the store owner accepts the customer’s request, all personal data collected by PrestaShop can be removed (with the “Delete” feature available in the module).</p>
+<p>Furthermore, since nobody else knows your module better than you, we also allow you to hook your module to the data removal process in order to delete the personal data <strong>collected by your module</strong>.</p>
+<p>This hook allows to delete the customer’s data and <strong>return true</strong> if everything went well. Obviously, the hook must return an <strong>array or a string encoded to json</strong> (<code>json_encode</code> function) of errors if not:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"> <span class="k">public</span> <span class="k">function</span> <span class="nf">hookActionDeleteGDPRCustomer</span> <span class="p">(</span><span class="nv">$customer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$customer</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">Validate</span><span class="o">::</span><span class="na">isEmail</span><span class="p">(</span><span class="nv">$customer</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">]))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">           <span class="nv">$sql</span> <span class="o">=</span> <span class="s2">&#34;DELETE FROM &#34;</span><span class="o">.</span><span class="nx">_DB_PREFIX_</span><span class="o">.</span><span class="s2">&#34;popnewsletter_subcribers WHERE email = &#39;&#34;</span><span class="o">.</span><span class="nx">pSQL</span><span class="p">(</span><span class="nv">$customer</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">])</span><span class="o">.</span><span class="s2">&#34;&#39;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">           <span class="k">if</span> <span class="p">(</span><span class="nx">Db</span><span class="o">::</span><span class="na">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">(</span><span class="nv">$sql</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">               <span class="k">return</span> <span class="nx">json_encode</span><span class="p">(</span><span class="k">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">           <span class="p">}</span>
+</span></span><span class="line"><span class="cl">           <span class="k">return</span> <span class="nx">json_encode</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">l</span><span class="p">(</span><span class="s1">&#39;Newsletter Popup : Unable to delete customer using email.&#39;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">       <span class="p">}</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span></code></pre></div><p>The Official GDPR Compliance Module triggers the deletion hook with the customer (array) as parameter.</p>
+<h3 id="hook-3-export-personal-data">HOOK 3: Export personal data</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">registerHook</span><span class="p">(</span><span class="s1">&#39;actionExportGDPRData&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Lastly, if a customer asks for an export of his personal data, this hook allows to select all his data and return them in a csv or pdf format. It works the same way as the deletion hook, but instead of removing data (delete from…) you need to return data to export in json:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">function</span> <span class="nf">hookActionExportGDPRData</span> <span class="p">(</span><span class="nv">$customer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">Tools</span><span class="o">::</span><span class="na">isEmpty</span><span class="p">(</span><span class="nv">$customer</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">Validate</span><span class="o">::</span><span class="na">isEmail</span><span class="p">(</span><span class="nv">$customer</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">]))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">           <span class="nv">$sql</span> <span class="o">=</span> <span class="s2">&#34;SELECT * FROM &#34;</span><span class="o">.</span><span class="nx">_DB_PREFIX_</span><span class="o">.</span><span class="s2">&#34;popnewsletter_subcribers WHERE email = &#39;&#34;</span><span class="o">.</span><span class="nx">pSQL</span><span class="p">(</span><span class="nv">$customer</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">])</span><span class="o">.</span><span class="s2">&#34;&#39;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">           <span class="k">if</span> <span class="p">(</span><span class="nv">$res</span> <span class="o">=</span> <span class="nx">Db</span><span class="o">::</span><span class="na">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">ExecuteS</span><span class="p">(</span><span class="nv">$sql</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">               <span class="k">return</span> <span class="nx">json_encode</span><span class="p">(</span><span class="nv">$res</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">           <span class="p">}</span>
+</span></span><span class="line"><span class="cl">           <span class="k">return</span> <span class="nx">json_encode</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">l</span><span class="p">(</span><span class="s1">&#39;Newsletter Popup : Unable to export customer using email.&#39;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">       <span class="p">}</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span></code></pre></div><p>If any error occurs, it returns the error. As for the hook 3, it must return an array or a string encoded to json (<code>json_encode</code> function) of errors.</p>
+<h3 id="hook-4-display-user-consent-checkboxes">Hook 4: Display user consent checkboxes</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="p">{</span><span class="nx">hook</span> <span class="nx">h</span><span class="o">=</span><span class="s1">&#39;displayGDPRConsent&#39;</span> <span class="nx">mod</span><span class="o">=</span><span class="s1">&#39;psgdpr&#39;</span> <span class="nx">id_module</span><span class="o">=</span><span class="nv">$id_module</span><span class="p">}</span>
+</span></span></code></pre></div><p>The hook must be used inside your module’s template files (.tpls). Calling this hook will simply display a checkbox + a text block. So place it where you need it. However please read the 2 requirements below :</p>
+<ul>
+<li>The hook must be inside a html form (<code>&lt;form&gt;&lt;/form&gt;</code>)</li>
+<li>You must smarty assign the module’s ID:  <code>$this-&gt;context-&gt;smarty-&gt;assign(array('id_module' =&gt; $this-&gt;id));</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">form</span> <span class="nx">action</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">{</span><span class="nv">$urls</span><span class="o">.</span><span class="nx">pages</span><span class="o">.</span><span class="nx">index</span><span class="si">}</span><span class="s2">#footer&#34;</span> <span class="nx">method</span><span class="o">=</span><span class="s2">&#34;post&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">class</span><span class="o">=</span><span class="s2">&#34;row&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">                   <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">class</span><span class="o">=</span><span class="s2">&#34;btn btn-primary float-xs-right hidden-xs-down&#34;</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;submitNewsletter&#34;</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;submit&#34;</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&#34;{l s=&#39;Subscribe&#39; d=&#39;Shop.Theme.Actions&#39;}&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">                   <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">class</span><span class="o">=</span><span class="s2">&#34;input-wrapper&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">                       <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&#34;email&#34;</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text&#34;</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">{</span><span class="nv">$value</span><span class="si">}</span><span class="s2">&#34;</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">&#34;{l s=&#39;Your email address&#39; d=&#39;Shop.Forms.Labels&#39;}&#34;</span> <span class="nx">aria</span><span class="o">-</span><span class="nx">labelledby</span><span class="o">=</span><span class="s2">&#34;block-newsletter-label&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">                   <span class="o">&lt;/</span><span class="nx">div</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="o">&lt;/</span><span class="nx">div</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">{</span><span class="nx">hook</span> <span class="nx">h</span><span class="o">=</span><span class="s1">&#39;displayGDPRConsent&#39;</span> <span class="nx">mod</span><span class="o">=</span><span class="s1">&#39;psgdpr&#39;</span> <span class="nx">id_module</span><span class="o">=</span><span class="nv">$id_module</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">           <span class="o">&lt;/</span><span class="nx">form</span><span class="o">&gt;</span>
+</span></span></code></pre></div><p>The Official GDPR Compliance Module provides an interface listing all the registered modules (using the hook 1). For each checkbox, you can define the text in multiple languages.</p>
+<p><img src="/assets/images/2018/05/gdpr-howto.png" alt="Setting messages for your module"></p>
+<p>Good thing is, if the checkbox is not checked, the form cannot be submitted!</p>
+<h3 id="extra-information">Extra information</h3>
+<p><code>$customer</code> could be either an array equivalent to the Customer Object or simply an email. Why? Some modules can save personal data that aren’t coming from a regular PrestaShop Customer. In such cases, we provide the user’s email so you can still delete the data.</p>
+<p>Once you have submitted your module and declared it is compliant with the law, our validation team:</p>
+<ul>
+<li>Checks the presence of hooks necessary to plug your module to the official GDPR module;</li>
+<li>Checks the hooks integrity, meaning checks that your code does not imply any PrestaShop data, but only data collected by your module.</li>
+</ul>
+<h3 id="support--questions">Support &amp; Questions</h3>
+<p>Do you have any questions?</p>
+<ul>
+<li>Comment this article to let us know</li>
+<li>If your modules are already on Addons, you can also get support via the Help Center.</li>
+<li>If you are developing custom modules that are not available on Addons, you can get support on the Forum.</li>
+</ul>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">May 4, 2018</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/team/">team</a>
+
+  <a class="label label-primary" href="/tag/legal/">legal</a>
+
+  <a class="label label-primary" href="/tag/gdpr/">gdpr</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      PrestaShop team
+      <span></span>
+    </h4>
+
+    
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://prestashop-project.org">
+        <i class="icon-home"></i> Website
+      </a>
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Automated UI tests tutorial</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Automated UI tests tutorial" />
+<meta property="og:description" content="One year ago, the QA team started to develop a new test framework, based on Puppeteer, Mocha, and Chai. You can read more about the framework in this previous article: The (new) PrestaShop Test Framework. Since then, the tests coverage has been continually increasing, and we recently improved our framework by switching to Playwright." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/how-to-write-a-new-ui-test/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2020-10-26T12:00:00+01:00" />
+    <meta property="article:modified_time" content="2020-10-26T12:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Automated UI tests tutorial"/>
+<meta name="twitter:description" content="Step by step - Adding a new PrestaShop UI test"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Automated UI tests tutorial</h1>
+              
+                <h3 class="post-subtitle">Step by step - Adding a new PrestaShop UI test</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/48441421"
+         alt="Boubker Bribri's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Boubker Bribri</div>
+        
+          <div class="author-display-role">Qa Automation Engineer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Oct 26, 2020
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Automated&#43;UI&#43;tests&#43;tutorial&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fhow-to-write-a-new-ui-test%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fhow-to-write-a-new-ui-test%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>One year ago, the QA team started to develop a new test framework, based on <a href="https://github.com/puppeteer/puppeteer">Puppeteer</a>, <a href="https://mochajs.org/">Mocha</a>, and <a href="https://www.chaijs.com/">Chai</a>. You can read more about the framework in this previous article: <a href="https://build.prestashop.com/news/the-new-prestashop-test-framework/">The (new) PrestaShop Test Framework</a>.
+Since then, the tests coverage has been continually increasing, and we recently improved our framework by switching to <a href="https://playwright.dev/">Playwright</a>.</p>
+<p>In this article, we will explain how to create a new UI (User Interface) test for the <a href="https://github.com/PrestaShop/PrestaShop">PrestaShop core project</a>.</p>
+<p>Before we start, you should definitely read about the stack, and the architecture chosen for this project in the <a href="https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/">PrestaShop devdocs</a>.</p>
+<h2 id="i-writing-the-scenario">I. Writing the scenario</h2>
+<p>The first step to writing your scenario is to identify exactly what you want to test, and limit the test&rsquo;s scope to that. For this example <strong>we will be checking that the customer link on &ldquo;Orders&rdquo; page (on the Back Office) redirects to the &ldquo;view customer&rdquo; page</strong>.</p>
+<p>The second step involves a manual check of this very scenario to be sure it&rsquo;s working, and to write down all the steps needed, from start to finish:</p>
+<ul>
+<li>Log in to the Back Office</li>
+<li>Go to the &ldquo;Orders&rdquo; page</li>
+<li>Reset all filters</li>
+<li>Filter orders by customer name</li>
+<li>Click on customer link on grid</li>
+<li>Check &ldquo;View customer&rdquo; page is displayed</li>
+</ul>
+<p>Now that we have the scenario, we can create a new javascript file and write our scenario using Mocha (see example below).
+The directory in which we create our file should be chosen wisely (Which campaign? BO or FO? Which page in BO? &hellip;). This file organization is very important since Mocha lets you run test by folders (recursively or not), so grouping your tests by features or meta-features (pages) is a very good idea.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// &#39;describe&#39; = scenario
+</span></span></span><span class="line"><span class="cl"><span class="c1">// &#39;it&#39; = step
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="nx">describe</span><span class="p">(</span><span class="s1">&#39;View customer form orders page&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should login in BO&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should go to orders page&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should reset all filters&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should filter orders by customer name&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should check customer link&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>Note 1: You can create nested <code>describes</code> (scenarios inside scenarios) in the same file, if you need to regroup some tasks in a more readable way. Keep in mind that the generated report will follow your hierarchy!</p>
+<p>Note 2: It&rsquo;s a good practice to add more information about the scenario as a comment before the main <code>describe</code>, so anyone opening the file can see what the test exactly does (without reading all the file).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">Go to orders page
+</span></span></span><span class="line"><span class="cl"><span class="cm">Filter by customer name &#34;J. DOE&#34;
+</span></span></span><span class="line"><span class="cl"><span class="cm">Click on customer link on grid
+</span></span></span><span class="line"><span class="cl"><span class="cm">Check &#34;View customer&#34; page is displayed 
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span></code></pre></div><h2 id="ii-openingclosing-the-browser-tab">II. Opening/Closing the browser tab</h2>
+<p>For each and every UI test, we need a browser. This framework includes a set of helper functions to abstract all of this: open a browser, create a new browser context and/or a new tab, etc.</p>
+<p>The helper file is located in the <code>utils</code> directory, and we can require it using the module-alias library as below:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;module-alias/register&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">helper</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@utils/helpers&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><p>Note: To find all shortcuts you can use with module-alias, check the package.json file.</p>
+<p>Once we included the helper, we are able to create the <a href="https://mochajs.org/#hooks"><code>Mocha hooks</code></a> functions inside our <code>describe</code>.</p>
+<p>In the <code>before</code> and <code>after</code> functions, we only need to open/close the browser context, and the page (the browser tab) through the helper methods. We don&rsquo;t need to worry about opening the browser itself because it&rsquo;s handled by the <a href="https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#setup">setup file</a>, which is a file executed by mocha before each run.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">helper</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@utils/helpers&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">browserContext</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">page</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">Go to orders page
+</span></span></span><span class="line"><span class="cl"><span class="cm">Filter by customer name &#34;J. DOE&#34;
+</span></span></span><span class="line"><span class="cl"><span class="cm">Click on customer link on grid
+</span></span></span><span class="line"><span class="cl"><span class="cm">Check that &#34;View customer&#34; page is displayed 
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nx">describe</span><span class="p">(</span><span class="s1">&#39;View customer form orders page&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">before</span><span class="p">(</span><span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">browserContext</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">helper</span><span class="p">.</span><span class="nx">createBrowserContext</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">browser</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">page</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">helper</span><span class="p">.</span><span class="nx">newTab</span><span class="p">(</span><span class="nx">browserContext</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">after</span><span class="p">(</span><span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">await</span> <span class="nx">helper</span><span class="p">.</span><span class="nx">closeBrowserContext</span><span class="p">(</span><span class="nx">browserContext</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should login in BO&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should go to orders page&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should reset all filters&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should filter orders by customer name&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should check customer link&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><h2 id="iii-using-common-tests">III. Using common tests</h2>
+<p>Some steps are used repeatedly in a lot of scenarios, so the QA team decided to store them in a folder called <code>commonTests</code>.</p>
+<p>First we need to require the file containing the steps we&rsquo;re interested in, still using the require module like before:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Require common test login
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">loginCommon</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@commonTests/loginBO&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><p><code>Login BO</code> (with the default admin account) is a part of these common tests, and we can use it in our new test like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should login in BO&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">loginCommon</span><span class="p">.</span><span class="nx">loginBO</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">page</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>Note: We can specify the user and password we log in with.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should login in BO&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">loginCommon</span><span class="p">.</span><span class="nx">loginBO</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">page</span><span class="p">,</span> <span class="s1">&#39;yourLogin&#39;</span><span class="p">,</span> <span class="s1">&#39;yourPassword&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><h2 id="iv-requiring-needed-pages">IV. Requiring needed pages</h2>
+<p>Each scenario has its own needs! All pages that the browser interacts with (BO, FO and others), the data needed to create or import (a product, cart rule, customer &hellip;), a specific option to open the new tab in the browser&hellip;</p>
+<p>After writing the scenario, we now know which pages are needed. For this example, we need the following Back Office pages: &ldquo;dashboard&rdquo;, &ldquo;orders&rdquo;, and &ldquo;view customer&rdquo;.</p>
+<p>To find the exact locations of the pages to require, read <a href="https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#pages">How to contribute and create UI tests</a>, or explore the <code>pages</code> folder.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Import pages
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">dashboardPage</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@pages/BO/dashboard&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">ordersPage</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@pages/BO/orders&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">viewCustomerPage</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@pages/BO/customers/view&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><p>Note: If a page doesn&rsquo;t exist yet, you need to create it (in the right folder).</p>
+<h2 id="v-filling-out-the-steps">V. Filling out the steps</h2>
+<p>Each step of the scenario is made of two parts: <strong>actions</strong> and <strong>expected results</strong> (through data reporting). Actions are functions in the pages.</p>
+<p>Before adding them, you should check for existing ones and their parameters.</p>
+<h3 id="actions">Actions</h3>
+<p>Actions replicate what a user would do in the page (click on an item, fill out text field, etc).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should go to orders page&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Action
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Open Menu and go to orders page
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">goToSubMenu</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span> <span class="c1">// Browser tab
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">ordersParentLink</span><span class="p">,</span> <span class="c1">// Parent menu item: Sell -&gt; orders
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">ordersLink</span><span class="p">,</span> <span class="c1">// Child menu item: Sell -&gt; orders -&gt; orders
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should reset all filters&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Action
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Reset filter in orders list and get number of element
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">resetAndGetNumberOfLines</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span> <span class="c1">// Browser tab
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should filter order by customer name&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Action
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Filter order by filling &#34;customer&#34; input with &#34;DOE&#34; (lastname of FO default account) 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">filterOrders</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span> <span class="c1">// Browser tab
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="s1">&#39;input&#39;</span><span class="p">,</span> <span class="c1">// Filter type (input or select)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="s1">&#39;customer&#39;</span><span class="p">,</span> <span class="c1">// Filter column
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">DefaultAccount</span><span class="p">.</span><span class="nx">lastName</span><span class="p">,</span> <span class="c1">// Filter value &#34;DOE&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should check customer link&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Action
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Click on customer link in first row
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">viewCustomer</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span> <span class="c1">// Browser tab
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="mi">1</span><span class="p">,</span> <span class="c1">// First row in list
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>Here we use different <strong>actions</strong> methods, like <code>goToSubMenu()</code> in the dashboard page, or <code>resetAndGetNumberOfLines()</code> in the orders page.</p>
+<p>Note: To filter orders, the method uses the FO default account which is part of demo data stored in <em>data</em> directory. For this scenario, you need to require this file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Import customer &#34;J. DOE&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="p">{</span><span class="nx">DefaultAccount</span><span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@data/demo/customer&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><h3 id="expected-results">Expected results</h3>
+<p>Data reporting (or &ldquo;expected results&rdquo;) is done by checking elements in the page and returning a value (number of lines in a table, content of a modal, value of an input, etc).</p>
+<p>This framework uses the <em>expect</em> element from the <a href="https://www.chaijs.com/">Chai library</a>, so we need to require it:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Import expect from chai
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="p">{</span><span class="nx">expect</span><span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;chai&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><p>You can then add your <code>expect</code> calls in the test logic:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should go to orders page&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Action
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">goToSubMenu</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">ordersParentLink</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">ordersLink</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Expected result
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Verify that the current page is orders by checking the title
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">pageTitle</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">getPageTitle</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">pageTitle</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="nx">ordersPage</span><span class="p">.</span><span class="nx">pageTitle</span><span class="p">);</span> <span class="c1">// We compare with the value stored in the page object
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should reset all filters&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Action
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">numberOfOrders</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">resetAndGetNumberOfLines</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Expected result
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Check that number of orders &gt; 0 (that there&#39;s at least one element in the list) 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">numberOfOrders</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="nx">above</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should filter order by customer name&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Action
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">filterOrders</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;input&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;customer&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">DefaultAccount</span><span class="p">.</span><span class="nx">lastName</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Expected result
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Check that we have at least 1 order for the customer named &#34;J. DOE&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">numberOfOrders</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">getNumberOfElementInGrid</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">numberOfOrders</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="nx">at</span><span class="p">.</span><span class="nx">least</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should check customer link&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Action
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">page</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">viewCustomer</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Expected result
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Verify that the current page is &#34;view customer&#34; by checking the title &#39;View information about J. DOE&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">pageTitle</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">viewCustomerPage</span><span class="p">.</span><span class="nx">getPageTitle</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">pageTitle</span><span class="p">).</span><span class="nx">to</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">viewCustomerPage</span><span class="p">.</span><span class="nx">pageTitle</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">DefaultAccount</span><span class="p">.</span><span class="nx">firstName</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="sb">. </span><span class="si">${</span><span class="nx">DefaultAccount</span><span class="p">.</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><h3 id="implementing-a-missing-method">Implementing a missing method</h3>
+<p>For this scenario, we used mostly existing functions like <code>filterOrders()</code>. You can check for existing functions in the <code>pages</code> directory.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">  <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">   * Filter Orders
+</span></span></span><span class="line"><span class="cl"><span class="cm">   * @param page
+</span></span></span><span class="line"><span class="cl"><span class="cm">   * @param filterType
+</span></span></span><span class="line"><span class="cl"><span class="cm">   * @param filterBy
+</span></span></span><span class="line"><span class="cl"><span class="cm">   * @param value
+</span></span></span><span class="line"><span class="cl"><span class="cm">   * @return {Promise&lt;void&gt;}
+</span></span></span><span class="line"><span class="cl"><span class="cm">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">async</span> <span class="nx">filterOrders</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="nx">filterType</span><span class="p">,</span> <span class="nx">filterBy</span><span class="p">,</span> <span class="nx">value</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">switch</span> <span class="p">(</span><span class="nx">filterType</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">case</span> <span class="s1">&#39;input&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">setValue</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">filterColumn</span><span class="p">(</span><span class="nx">filterBy</span><span class="p">),</span> <span class="nx">value</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="k">case</span> <span class="s1">&#39;select&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">selectByVisibleText</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">filterColumn</span><span class="p">(</span><span class="nx">filterBy</span><span class="p">),</span> <span class="nx">value</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="k">default</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">      <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">filterBy</span><span class="si">}</span><span class="sb"> was not found as a column filter.`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Click on search
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">clickAndWaitForNavigation</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">filterSearchButton</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span></code></pre></div><p>But there&rsquo;s a chance that some functions you need are not implemented yet. It&rsquo;s the case here for the <code>viewCustomer()</code> function.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Click on customer link to open view page in a new tab
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @param page
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @param row
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @return {Promise&lt;Page&gt;}, The browser tab opened after the click
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nx">viewCustomer</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="nx">row</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">   * openLinkWithTargetBlank : function that open a link in a new tab
+</span></span></span><span class="line"><span class="cl"><span class="cm">   * @param page, actual tab opened
+</span></span></span><span class="line"><span class="cl"><span class="cm">   * @param selector, Element where to click
+</span></span></span><span class="line"><span class="cl"><span class="cm">   * @param selectorToCheck, Element to wait for in the page
+</span></span></span><span class="line"><span class="cl"><span class="cm">   * @return {Promise&lt;Page&gt;}, The browser tab opened after the click
+</span></span></span><span class="line"><span class="cl"><span class="cm">   */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">openLinkWithTargetBlank</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">tableColumn</span><span class="p">(</span><span class="nx">row</span><span class="p">,</span> <span class="s1">&#39;customer&#39;</span><span class="p">)</span><span class="si">}</span><span class="sb"> a`</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">userProfileIcon</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Note: The <code>openLinkWithTargetBlank</code> function is a generic function that can be used in all pages. You can find more generic functions on <code>pages/commonPage</code> file.</p>
+<h2 id="vi-testing-the-scenario">VI. Testing the scenario</h2>
+<p>Now, we finished writing the scenario and implementing missing functions&hellip; it&rsquo;s time to test it!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">TEST_PATH=&#34;functional/BO/02_orders/01_orders/08_viewCustomer&#34; URL_FO=shopUrl/ npm run specific-test
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> View customer from orders page
+</span></span><span class="line"><span class="cl">    ✓ should login in BO
+</span></span><span class="line"><span class="cl">    ✓ should go to orders page
+</span></span><span class="line"><span class="cl">    ✓ should reset all filters
+</span></span><span class="line"><span class="cl">    ✓ should filter order by customer name
+</span></span><span class="line"><span class="cl">    ✓ should check customer link
+</span></span><span class="line"><span class="cl"> 5 passing (19s)
+</span></span></code></pre></div><h2 id="vii-adding-steps-identifiers">VII. Adding steps Identifiers</h2>
+<p>Steps identifiers help track failing steps between different runs thanks to the <a href="https://nightly.prestashop.com/">nightly</a> algorithm.</p>
+<p>Each step should have its own! You can found more information <a href="https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#test-identifier">here</a>.</p>
+<p>After adding this identifier, each step should look like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should check customer link&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">testContext</span><span class="p">.</span><span class="nx">addContextItem</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s1">&#39;testIdentifier&#39;</span><span class="p">,</span> <span class="s1">&#39;viewCustomer&#39;</span><span class="p">,</span> <span class="nx">baseContext</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Click on customer link in first row
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">page</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">viewCustomer</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Verify that the current page is view customer by checking the title
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">pageTitle</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">viewCustomerPage</span><span class="p">.</span><span class="nx">getPageTitle</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">pageTitle</span><span class="p">).</span><span class="nx">to</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">viewCustomerPage</span><span class="p">.</span><span class="nx">pageTitle</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">DefaultAccount</span><span class="p">.</span><span class="nx">firstName</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="sb">. </span><span class="si">${</span><span class="nx">DefaultAccount</span><span class="p">.</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>Note 1: The <code>baseContext</code> parameter should be declared in the beginning of the test. It must be unique, and for that we used the test&rsquo;s file path.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">baseContext</span> <span class="o">=</span> <span class="s1">&#39;functional_BO_orders_orders_viewCustomer&#39;</span><span class="p">;</span>
+</span></span></code></pre></div><p>Note 2: No need to add a step identifier to common steps, they already have one.</p>
+<h2 id="viii-running-eslint">VIII. Running ESLint</h2>
+<p>ESLint is a tool currently used by the QA team that helps enforce code style rules in JavaScript files. To run it, use the command <code>npm run lint</code>. You may have to fix errors reported by this tool before submitting your UI test.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm run lint-fix
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&gt; ESLINT  --fix --ignore-path .gitignore .
+</span></span></code></pre></div><h2 id="ix-creating-your-pull-request">IX. Creating your pull request</h2>
+<p>Now that the test is ready, it needs to be added to the PrestaShop tests campaign! You can do so by creating a pull request, following the <a href="https://github.com/PrestaShop/PrestaShop#contributing">contribution guidelines</a>.</p>
+<p>Link to the PR used for this example: <a href="https://github.com/PrestaShop/PrestaShop/pull/20280">#20280</a>.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Oct 26, 2020</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/community/">community</a>
+
+  <a class="label label-primary" href="/tag/contribution/">contribution</a>
+
+  <a class="label label-primary" href="/tag/tests/">tests</a>
+
+  <a class="label label-primary" href="/tag/automation/">automation</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Boubker Bribri
+      <span>Qa Automation Engineer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/boubkerbribri">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

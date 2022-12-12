@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.7.8 on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/1.7.8/</link>
+    <description>Recent content in 1.7.8 on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Jul 2021 16:25:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/1.7.8/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Towards a more mobile-friendly back office</title>
+      <link>https://build.prestashop-project.org/news/responsive-back-office/</link>
+      <pubDate>Wed, 28 Jul 2021 16:25:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/responsive-back-office/</guid>
+      <description>Until now, PrestaShop always relied on a desktop-first responsive design strategy. Indeed, there are few use cases on mobile. But you can&amp;rsquo;t prevent users from checking their store&amp;rsquo;s back office on their mobile!
+Why work on responsive design? They were some issues that affected the user experience on mobile:
+Difficulties in accessing important store information Hidden content because of overlapping components Text readability issues Bugs and lack of consistency on display (e.</description>
+    </item>
+    
+    <item>
+      <title>Multistore feature in PrestaShop 1.7.8: What&#39;s new?</title>
+      <link>https://build.prestashop-project.org/news/multistore-news-in-1.7.8/</link>
+      <pubDate>Wed, 16 Jun 2021 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/multistore-news-in-1.7.8/</guid>
+      <description>With the release of the new version 1.7.8 which is in progress, this article details one of the main features revamps of this version: the multistore.
+The multistore feature allows merchants to manage several front offices through a single back office. It’s frequently used by merchants who sell in different countries and therefore have different languages and/or currencies. It is also used by merchants who do both B2B and B2C. And it is more rarely used by merchants who have several brands.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 1.7.8.0 beta is open for feedback!</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-8-0-beta-release/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-8-0-beta-release/</guid>
+      <description>The first Beta version of PrestaShop 1.7.8.0 is now ready for you to test!
+We are very happy to announce today the release of the beta version of 1.7.8. This version includes many features and bug fixes, we count on you to test the Beta and report any bugs you encounter.
+Main new features are: the redesign of the translation system that facilitates the export and the translation of your modules and themes, a new header for multistore allowing to configure the different stores more easily and quickly, and many other improvements.</description>
+    </item>
+    
+    <item>
+      <title>A journey to improve the Time To Interactive metric in Classic Theme</title>
+      <link>https://build.prestashop-project.org/news/journey-to-improve-the-time-to-interactive-metric/</link>
+      <pubDate>Tue, 21 Jul 2020 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/journey-to-improve-the-time-to-interactive-metric/</guid>
+      <description>The project Core Web Vitals from Google has announced that loading time and performance will have an impact on the website ranking in search results. Google mentions lazy loading in their suggestions. Lazy loading will be available on Classic Theme in version 1.7.8 thanks to Progi1984 and it will definitely improve both user experience and loading time on your site!
+What is lazy loading ? Lazy loading is a technique that defers loading of non-critical resources at page load time.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Create the perfect .gitignore file for your PrestaShop projects</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Create the perfect .gitignore file for your PrestaShop projects" />
+<meta property="og:description" content="As a serious developer, you need to use versioning (or “revision control”) for your projects, in order to track changes to your files… and be able to travel back in time when a disaster happens. There are many CVS (Concurrent Versions System) available out there today, but Git is by far the most popular in 2015, and one of the most used in the Open Source world, right behind Subversion (svn)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/howtos/misc/prestashop-perfect-gitignore/" />
+    <meta property="article:section" content="howtos" />
+    <meta property="article:published_time" content="2015-04-20T11:21:00+02:00" />
+    <meta property="article:modified_time" content="2015-04-20T11:21:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Create the perfect .gitignore file for your PrestaShop projects"/>
+<meta name="twitter:description" content="Commit only the right files"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Create the perfect .gitignore file for your PrestaShop projects</h1>
+              
+                <h3 class="post-subtitle">Commit only the right files</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars1.githubusercontent.com/u/1525636"
+         alt="Julien Bourdeau's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Julien Bourdeau</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Apr 20, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Create&#43;the&#43;perfect&#43;.gitignore&#43;file&#43;for&#43;your&#43;PrestaShop&#43;projects&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmisc%2Fprestashop-perfect-gitignore%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmisc%2Fprestashop-perfect-gitignore%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>As a serious developer, you need to use versioning (or &ldquo;<a href="http://en.wikipedia.org/wiki/Revision_control">revision control</a>&rdquo;) for your projects, in order to track changes to your files&hellip; and be able to travel back in time when a disaster happens. There are many CVS (<a href="http://en.wikipedia.org/wiki/Concurrent_Versions_System"><em>Concurrent Versions System</em></a>) available out there today, but <strong>Git</strong> is by far <a href="http://stackoverflow.com/research/developer-survey-2015#tech-sourcecontrol">the most popular in 2015</a>, and <a href="https://www.openhub.net/repositories/compare">one of the most used in the Open Source world</a>, right behind Subversion (svn).</p>
+<p>PrestaShop moved from Subversion to Git more than 2 years ago, <a href="https://www.prestashop.com/blog/en/prestashop-is-now-on-github/">and made the switch from our own SVN server to GitHub</a>, in order to make contribution easier for everyone. While doing so, we created a PrestaShop-specific <code>.gitignore</code> file. A <a href="http://git-scm.com/docs/gitignore">gitignore file</a> is a must-have for any Git-versioned project, as it specifies intentionally untracked files that Git should ignore.</p>
+<p>We created that file to help you better version your PrestaShop project. Let&rsquo;s dive into that!</p>
+<h3 id="what-to-ignore">What to ignore</h3>
+<p>Generally, you shouldn&rsquo;t version the following types of files:</p>
+<ul>
+<li>Temporary files (such as cache)</li>
+<li>Generated files (such as minified CSS or retrieved XMLs)</li>
+<li>Files with credentials or personal information (such as <code>settings.inc.php</code>)</li>
+</ul>
+<h3 id="versioning-core-files">Versioning core files</h3>
+<p>The first thing you need to decide is whether you want to keep track of the PrestaShop core files changes or not. If you&rsquo;re using PrestaShop correctly, you shouldn&rsquo;t modify core files to suit your needs &ndash; you should <a href="http://doc.prestashop.com/display/PS16/Overriding+default+behaviors">override the core classes in order to modify PrestaShop&rsquo;s behavior</a>.</p>
+<p>If you don&rsquo;t want to version the core files, you have to clone your repo then drop the PrestaShop files (from a stable release) into the folder.</p>
+<p>But in my opinion, <strong>it is better to version core files</strong>.</p>
+<p>Indeed, even if you don&rsquo;t intend to modify the core files, you might have to apply specific patches. It&rsquo;s always <strong>better to make sure that all your environments are exactly the same</strong>. This way, it&rsquo;s much easier to deploy a new environment.</p>
+<p>Even better: if you create a branch which tracks PrestaShop/PrestaShop (1.6 branch), <strong>you will be able to <a href="http://git-scm.com/docs/git-cherry-pick">cherry-pick</a> the patches you need</strong>.</p>
+<h2 id="with-core-files">With core files</h2>
+<p><img src="/assets/images/2015/04/github-new-repo-gitignore.jpg" alt=".gitignore from GitHub"></p>
+<p>If you host your project on GitHub, you can choose to initialize your project with a <code>.gitignore</code> file.</p>
+<p>We recently <a href="https://github.com/github/gitignore/pull/1479">updated it</a>, as a result you&rsquo;ll get the file below (<a href="https://github.com/github/gitignore/blob/master/Prestashop.gitignore">direct link</a>):</p>
+<script src="https://gist.github.com/julienbourdeau/0f7d629cb7f9bc6995fc.js"></script>
+<h2 id="without-core-files">Without core files</h2>
+<p>If you don&rsquo;t want to version the core files, PrestaShop contributor Adonis Karavokyros (also known as <a href="https://github.com/prestarocket">prestarocket</a>) wrote this file instead:</p>
+<script src="https://gist.github.com/prestarocket/1070872.js"></script>
+<h3 id="generate-your-own-gitignore-file-with-gitignoreio">Generate your own <code>.gitignore</code> file with gitignore.io</h3>
+<p><a href="http://gitignore.io">gitignore.io</a> is a great tool, based on the official <a href="https://github.com/github/gitignore">GitHub/gitignore</a> repo. You can generate a perfect <code>.gitignore</code> file simply by listing the technologies you use in your project.</p>
+<p>The website offers an easy-to-use interface, but if (like me) you want to show off, you can use the following Git alias in your configuration:</p>
+<p>{% highlight bash %}
+$ git config &ndash;global alias.ignore &ldquo;!gi() { curl -L -s <a href="https://www.gitignore.io/api/$@">https://www.gitignore.io/api/$@</a> &raquo; .gitignore ;}; gi&rdquo;
+{% endhighlight %}</p>
+<p>Next, the following command will generate a <code>.gitignore</code> file inside the current directory <a href="https://www.gitignore.io/api/prestashop,osx,phpstorm">containing these lines</a>.</p>
+<p>{% highlight bash %}
+$ git ignore prestashop,osx,phpstorm
+{% endhighlight %}</p>
+<p>There you go! All of this should give a cleaner Git repository for your PrestaShop projects.</p>
+<p>Do you have ideas on how to improve this? Do you use alternate files? Tell us your story in the comments!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Apr 20, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/git/">git</a>
+
+  <a class="label label-primary" href="/tag/gitignore/">gitignore</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Julien Bourdeau
+      <span>Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/julienbourdeau">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/761923-julien-bourdeau">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/julienbourdeau">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/julienbourdeau">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'http:\/\/build.prestashop.com\/misc\/prestashop-perfect-gitignore\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

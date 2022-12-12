@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>architecture</title>
+    <link href="/style.css?1670854426" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="alternate" type="application/rss+xml" href="https://build.prestashop-project.org/tag/architecture/feed.xml" title="PrestaShop Developers' blog" />
+    
+<meta property="og:title" content="architecture" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://build.prestashop-project.org/tag/architecture/" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="architecture"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+<div class="home">
+
+  <div class="row">
+    <div class="col-md-12"><h1>Articles by tag: Architecture</h1><ul class="post-list">
+        
+        
+        
+
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Nov 30, 2020
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/from-legacy-to-future-architecture-connecting-the-dots/"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-compass"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/from-legacy-to-future-architecture-connecting-the-dots/">From legacy to future architecture: Connecting the dots</a>
+            </h2>
+
+            
+            <h4>Some ideas on how we&#39;ll get from Point A to Point B</h4>
+            
+
+            <p>This is the fourth and final article in a series we introduced last year, that aims to describe where we are, where we are going, and some ideas on how we’ll get there.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/from-legacy-to-future-architecture-connecting-the-dots/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Dec 26, 2019
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-compass"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/">PrestaShop in 2019 and beyond, part 3: The Future Architecture</a>
+            </h2>
+
+            
+            <h4>aka Point B – Where we are going</h4>
+            
+
+            <p>This is the third in a series of articles we introduced earlier this year, that aims to describe where we are, where we are going, and some ideas on how we’ll get there.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Oct 14, 2019
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/prestashop-1.7-modules-latest-releases-and-updates/"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-compass"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/prestashop-1.7-modules-latest-releases-and-updates/">PrestaShop 1.7 modules - Latest releases &amp; updates</a>
+            </h2>
+
+            
+            <h4>Get some great news about PrestaShop 1.7 modules!</h4>
+            
+
+            <p>All product and core teams have been quite busy over the past 6 months, working hard on delivering PrestaShop 1.7.6, but not only! We have also worked on bringing new features and improving the 1.7 version through our PrestaShop modules.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/prestashop-1.7-modules-latest-releases-and-updates/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Oct 7, 2019
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-2-pain-points/"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-compass"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-2-pain-points/">PrestaShop in 2019 and beyond, part 2: The Pain Points</a>
+            </h2>
+
+            
+            <h4>aka What needs to be improved</h4>
+            
+
+            <p>This is the second in a series of articles we introduced earlier this year, which aims to describe where we are, where we are going, and some ideas on how we’ll get there.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-2-pain-points/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  May 22, 2019
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/announcing-end-of-support-for-obsolete-php-versions/"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-compass"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/announcing-end-of-support-for-obsolete-php-versions/">Announcing end of support for obsolete PHP versions</a>
+            </h2>
+
+            
+            <h4>It&#39;s time to move forward</h4>
+            
+
+            <p>About a year and a half ago, we announced that PrestaShop 1.7.4.0 would be dropping support for PHP 5.4 and 5.5. At that time, this decision was justified by the impending end-of-maintenance for Symfony 2 and its replacement by Symfony 3, which didn’t support PHP versions older than 5.5.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/announcing-end-of-support-for-obsolete-php-versions/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Feb 19, 2019
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-1-current-architecture/"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-compass"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-1-current-architecture/">PrestaShop in 2019 and beyond, part 1: The current architecture</a>
+            </h2>
+
+            
+            <h4>aka point A – Where we are</h4>
+            
+
+            <p>This is the first in a series of articles we introduced a couple days ago, that aims at describing where we are, where we are going, and some ideas on how we’ll get there.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-1-current-architecture/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Feb 5, 2019
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-introduction/"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-compass"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-introduction/">PrestaShop in 2019 and beyond</a>
+            </h2>
+
+            
+            <h4>Where we are, where we are going, and how will we get there</h4>
+            
+
+            <p>When working in a project as big and complex as PrestaShop, it’s easy to get too focused on what you are doing right now, and lose sight of the big picture. However, it’s very important not to do that, because every decision we take must be coherent with a bigger plan. In fact, I think that the only way to allow a project such as this to be sustainable, coherent and predictable, is to consistently challenge every decision in light of a long-term vision.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-introduction/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Dec 3, 2015
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/prestashop-1-7-and-symfony/"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-road"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/prestashop-1-7-and-symfony/">An update on the 1.7 architecture</a>
+            </h2>
+
+            
+            <h4>What&#39;s happening in NewArchi land?</h4>
+            
+
+            <p>Remember, back in May 2015, when we announced that we were building a new architecture for PrestaShop, with the first bits of code landing in version 1.6.1.0 (released in early July 2015)? Yeah, that was fun. But now that 1.7 is steaming ahead, it’s time to let you know about our updated plans about the new architecture…</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/prestashop-1-7-and-symfony/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  May 21, 2015
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/new-architecture-1-6-1-0/"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-code"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/new-architecture-1-6-1-0/">Architecture Improvements in 1.6.1.0</a>
+            </h2>
+
+            
+            <h4>Cool new toys for PrestaShop developers</h4>
+            
+
+            <p>With the release of PrestaShop 1.6.1.0 we are going to introduce exciting new tools in the codebase that are designed to help write more modular, testable code that enforces separation of concerns.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/new-architecture-1-6-1-0/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+      </ul>
+
+    </div>
+  </div>
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

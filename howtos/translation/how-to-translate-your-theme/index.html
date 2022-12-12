@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>How to translate your theme in PrestaShop 1.7</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="How to translate your theme in PrestaShop 1.7" />
+<meta property="og:description" content="By now you’re probably aware that the 1.7 version comes with a new translation system and that the theme you are building can benefit from it. However, we didn’t give much details on how it works yet, so here is what you should know if you want to translate your theme for PrestaShop 1.7." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/howtos/translation/how-to-translate-your-theme/" />
+    <meta property="article:section" content="howtos" />
+    <meta property="article:published_time" content="2017-04-21T06:09:47+02:00" />
+    <meta property="article:modified_time" content="2017-04-21T06:09:47+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="How to translate your theme in PrestaShop 1.7"/>
+<meta name="twitter:description" content="Theme builders: this is for you!"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">How to translate your theme in PrestaShop 1.7</h1>
+              
+                <h3 class="post-subtitle">Theme builders: this is for you!</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/7910738"
+         alt="Alex Even's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Alex Even</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Apr 21, 2017
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=How&#43;to&#43;translate&#43;your&#43;theme&#43;in&#43;PrestaShop&#43;1.7&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Ftranslation%2Fhow-to-translate-your-theme%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Ftranslation%2Fhow-to-translate-your-theme%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>By now you’re probably aware that the 1.7 version comes with a new translation system and that the theme you are building can benefit from it. However, we didn’t give much details on how it works yet, so here is what you should know if you want to translate your theme for PrestaShop 1.7.</p>
+<p>Before anything, you should identify in which case you are:</p>
+<ul>
+<li><a href="/howtos/translation/how-to-translate-your-theme/#case-1:-you-are-using-strings-that-exist-in-the-default-theme">Case 1: You are using strings that already exist in the default theme.</a></li>
+<li><a href="/howtos/translation/how-to-translate-your-theme/#case-2:-you-are-creating-new-strings-in-files-that-already-exist-in-the-default-theme">Case 2: You are creating new strings in files that already exist in the default theme.</a></li>
+<li><a href="/howtos/translation/how-to-translate-your-theme/#case-3:-you-are-creating-new-strings-in-new-files-included-in-the-theme-folder">Case 3: You are creating new strings in new files, included in the theme folder.</a></li>
+<li><a href="/howtos/translation/how-to-translate-your-theme/#case-4:-you-are-creating-new-strings-in-modules-that-depend-on-your-theme-but-arent-included-in-the-modules-folder-of-your-theme">Case 4: You are creating new strings in modules that depend on your theme, but aren’t included in the /modules folder of your theme.</a></li>
+</ul>
+<p>And there are a few things you should know:</p>
+<ul>
+<li>These methods only work if you are working on a theme with a name that is not “classic”. If you’re tweaking the Classic theme and you’ve kept the “/classic” folder, your new strings won’t be detected. PrestaShop is only looking for new strings in theme folders other than “/classic”.</li>
+<li>The system works smoothly from the 1.7.1.1 version. If using  previous versions, you might have to apply some patches.</li>
+<li>That doesn’t apply to email translations - <a href="http://forge.prestashop.com/browse/BOOM-2745">we need to fix a few things first</a>.</li>
+</ul>
+<p>Now, what to do in each case?</p>
+<h2 id="case-1-you-are-using-strings-that-exist-in-the-default-theme">Case 1: You are using strings that exist in the default theme.</h2>
+<p><strong>You should re-use the strings as-is, with the same domain</strong>, and it will automatically be translated.
+PrestaShop will fetch the existing translations from the default translation catalog, translated by the community on <a href="https://crowdin.net/project/prestashop-official">Crowdin</a>.</p>
+<h2 id="case-2-you-are-creating-new-strings-in-files-that-already-exist-in-the-default-theme">Case 2: You are creating new strings in files that already exist in the default theme</h2>
+<p>You should follow these few steps.</p>
+<h3 id="1-use-a-custom-domain-for-the-new-strings">1. Use a custom domain for the new strings</h3>
+<p>Something like “Shop.Mytheme”.</p>
+<p>It must:</p>
+<ul>
+<li>Start by “Shop”.</li>
+<li>Have 2 levels only. For example “Shop.Mytheme.Checkout” won’t work.</li>
+<li>Not be in CamelCase. For example “Shop.MyTheme” won’t work.</li>
+</ul>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2017/04/custom_domain.png">
+<h3 id="2-export-the-language-from-the-translation-page">2. Export the language from the translation page</h3>
+<p>Go to International &gt; Translations &gt; Export a language and select a language.</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2017/04/language_export.png">
+<p>This will generate a file like “ShopMytheme.fr-FR.xlf” if you’ve chosen French, for example.
+If you used several domains, you will have as many files.</p>
+<h3 id="3-copy-the-file-into-the-translation-file-of-your-theme">3. Copy the file into the translation file of your theme</h3>
+<p>If necessary, create a folder for the language.</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2017/04/translation_file.png">
+<p>For example, if you exported the French language, you should add the file in “translations/fr-FR”.</p>
+<h3 id="4-translate-the-new-strings-using-the-translation-page">4. Translate the new strings using the translation page</h3>
+<p>Go to International &gt; Translations &gt; Modify translations.
+Select “Themes translation”, your theme, and the language you want to translate.</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2017/04/modify_translations.png">
+<p>Your domain should appear in the Shop section, with all your strings:</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2017/04/domain_translation.png">
+<p>Translate it, and save it one by one.</p>
+<h3 id="5-export-your-theme-to-create-the-final-zip-file">5. Export your theme to create the final .zip file</h3>
+<p>Once you’re done with all the translations, in all the languages you want to add, export your theme.
+Go to Design &gt; Theme &amp; Logo &gt; Export current theme.</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2017/04/theme_export.png">
+<p>That implies the theme you are working on is activated, of course :)</p>
+<p>There you go, your theme is translated!</p>
+<h2 id="case-3-you-are-creating-new-strings-in-new-files-included-in-the-theme-folder">Case 3: You are creating new strings in new files, included in the theme folder</h2>
+<p>As long as your files are indeed in the theme folder, you should follow the same process as for case 2.</p>
+<h2 id="case-4-you-are-creating-new-strings-in-modules-that-depend-on-your-theme-but-arent-included-in-the-modules-folder-of-your-theme">Case 4: You are creating new strings in modules that depend on your theme, but aren’t included in the /modules folder of your theme</h2>
+<p>Read carefully, this one is a bit tricky.</p>
+<p>The 1.7 translation system works for themes, and anything included in your themes. Unfortunately, it doesn’t work for third-party modules.
+In short: if your strings are in a module from the /modules folder, and not the theme’s folder, then the 1.7 system won’t apply. <strong>For these files, you should use the <a href="http://doc.prestashop.com/display/PS16/Module+translation">legacy system</a></strong>.</p>
+<p>That means:</p>
+<ul>
+<li>Not using the trans() method from strings</li>
+<li>Translating all your strings yourself using the legacy translation page.</li>
+<li>Including the translation files in your module</li>
+</ul>
+<p>When you are in the module configuration page, click Translate in the top bar to be able to translate it.</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2017/04/translate_legacy.png">
+<p><em>Et voilà</em> :)</p>
+<p>Let us know if you have any comments!</p>
+<p>(and thanks @Atchworks for your feedback :)</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Apr 21, 2017</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/translation/">translation</a>
+
+  <a class="label label-primary" href="/tag/theme/">theme</a>
+
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/development/">development</a>
+
+  <a class="label label-primary" href="/tag/i18n/">i18n</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Alex Even
+      <span>Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/AlexEven">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/821016-alex-even">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/alex-even">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/AlexHarryEven">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

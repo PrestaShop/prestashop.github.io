@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cldr on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/cldr/</link>
+    <description>Recent content in cldr on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Sep 2015 18:00:41 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/cldr/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CLDR, Composer, NPM, JSHint, oh my!</title>
+      <link>https://build.prestashop-project.org/news/cldr-composer-jshint/</link>
+      <pubDate>Thu, 24 Sep 2015 18:00:41 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/cldr-composer-jshint/</guid>
+      <description>As those of you who regularly look at the commits being merged in the &amp;lsquo;develop&amp;rsquo; branch know, the forthcoming 1.7.0.0 version of PrestaShop now includes a few notable improvements.
+These are all part of our plan to modernize the codebase, and provide you with a professional e-commerce tool!
+CLDR: managing local numbers the right way PrestaShop 1.7 now implements part of the Unicode Common Locale Data Repository standard in order to better manage currency and price listing.</description>
+    </item>
+    
+  </channel>
+</rss>

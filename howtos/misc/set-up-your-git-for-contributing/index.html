@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Set up your Git for contributing</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Set up your Git for contributing" />
+<meta property="og:description" content="Any open source project comes with its own set of rules to harmonize everybody’s contributions. Usually the guidelines are described in a CONTRIBUTING.md file inside the project root directory." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/howtos/misc/set-up-your-git-for-contributing/" />
+    <meta property="article:section" content="howtos" />
+    <meta property="article:published_time" content="2015-07-30T11:21:00+02:00" />
+    <meta property="article:modified_time" content="2015-07-30T11:21:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Set up your Git for contributing"/>
+<meta name="twitter:description" content="Tweak your git configuration to work better"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Set up your Git for contributing</h1>
+              
+                <h3 class="post-subtitle">Tweak your git configuration to work better</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars1.githubusercontent.com/u/1525636"
+         alt="Julien Bourdeau's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Julien Bourdeau</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jul 30, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Set&#43;up&#43;your&#43;Git&#43;for&#43;contributing&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmisc%2Fset-up-your-git-for-contributing%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmisc%2Fset-up-your-git-for-contributing%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Any open source project comes with its own set of rules to harmonize everybody&rsquo;s contributions.
+Usually the guidelines are described in a <a href="https://github.com/PrestaShop/PrestaShop/blob/develop/CONTRIBUTING.md">CONTRIBUTING.md</a>
+file inside the project root directory.</p>
+<p>To follow these guidelines, you often need to adapt your development environment.
+You will find here all you need to know to set up your development environment! This will help your contribution
+get validated more quickly and without further modifications.</p>
+<p>We&rsquo;ll be talking about working with the PrestaShop project, but what you&rsquo;ll read here applies to most PHP open source projects.</p>
+<h2 id="the-git-configuration">The Git configuration</h2>
+<p>PrestaShop is versioned with Git and hosted in GitHub. If you intend to make a Pull Request, you should make sure your Git configuration is well set, so you don&rsquo;t run into issues (like having commits that are not yours in your PR).</p>
+<p>Below are the recommended settings for your <code>~/.gitconfig</code> file.
+It&rsquo;s widely inspired by <a href="https://gist.github.com/tdd/470582">this great git config</a> by <a href="https://twitter.com/porteneuve">Christophe Porteneuve</a>.</p>
+<script src="https://gist.github.com/julienbourdeau/be21f43006244234675e.js"></script>
+<p>Like I said, this configuration will also be useful if you contribute to other open source projects.</p>
+<h2 id="some-details">Some details</h2>
+<h3 id="aliases">Aliases</h3>
+<p>A Git alias adds a new command (like bash aliases), so that you can type <code>git br</code> to see all branches instead of having to type <code>git branch -avv</code>.</p>
+<p>The few aliases we add are pretty standard, but it&rsquo;s up to you to add them or not.</p>
+<h3 id="fetch">Fetch</h3>
+<p>When you fetch data from the remote repository, Git will also fetch every submodules. With the <code>recurseSubmodules=on-demand</code> setting, Git
+will only fetch submodule data if the parent project has a commit that updates its reference.</p>
+<p>Considering PrestaShop has 50+ submodules, this will save you a lot of time when you use <code>git pull</code>.</p>
+<h3 id="merge">Merge</h3>
+<p>When Git runs into a conflict because one of your teammate changed the same bit of code than you did, both versions are displayed in the file and they are separated with markers like <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>.
+With the <code>conflictStyle=diff3</code> setting, you will see your version, their version, and the common ancestors.</p>
+<p>I recommend to read <a href="http://git-scm.com/docs/git-merge#_how_conflicts_are_presented">this short part of the documentation</a>
+for further information.</p>
+<h3 id="pull">Pull</h3>
+<p>This one is the most important part. There are two ways to pull: you can either <strong><em>rebase</em></strong> or <strong><em>merge</em></strong>. As soon as you work with someone else on one branch,
+we prefer that you use the rebase strategy, as it will keep your history cleaner (showing one straight line).</p>
+<p>When you pull the remote branch, your changes will be moved on top so that you don&rsquo;t have any merge commits.</p>
+<p>If you want more details about <strong>the difference between <em>Pull</em> and <em>Rebase</em></strong> you should
+<a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing">read this tutorial from Atlassian</a>.</p>
+<p>The following schema explains the difference between merge and rebase
+(Credit: <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing/workflow-walkthrough">Atlassian</a>).</p>
+<p><img src="/assets/images/2015/07/git-pull-merge-vs-rebase.png" alt=""></p>
+<h3 id="push">Push</h3>
+<p>Before Git 2.0, the command <code>git push</code> would push <strong>every</strong> branch with a matching name to the remote. Now, the default
+settings will only push the current branch to the remote branch with the matching name.</p>
+<p>We recommend using the <code>default=upstream</code> setting, which makes that you have to set the remote branch explicitly the first time you push.</p>
+<h3 id="status">Status</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>submoduleSummary=true</code></td>
+<td>PrestaShop uses a lot of submodules. This setting will show you more details about changes in submodules.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>showUntrackedFiles=all</code></td>
+<td>By default, if you add a folder with subfolders and files, your <code>git status</code> will only show the root folder as untracked. With <code>all</code>, you will see all the new files.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="thats-it">That&rsquo;s it!</h2>
+<p>If you have any questions or remarks, please let us know in the comments.</p>
+<p>Also, the <a href="http://git-scm.com/doc">official Git documentation</a> is very detailed and well written, you will always
+find the answer to your question there. <em>Just sayin&rsquo;.</em></p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jul 30, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/git/">git</a>
+
+  <a class="label label-primary" href="/tag/env/">env</a>
+
+  <a class="label label-primary" href="/tag/github/">github</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Julien Bourdeau
+      <span>Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/julienbourdeau">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/761923-julien-bourdeau">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/julienbourdeau">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/julienbourdeau">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

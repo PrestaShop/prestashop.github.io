@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop in 2019 and beyond, part 2: The Pain Points</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop in 2019 and beyond, part 2: The Pain Points" />
+<meta property="og:description" content="This is the second in a series of articles we introduced earlier this year, which aims to describe where we are, where we are going, and some ideas on how we’ll get there." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-2-pain-points/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2019-10-07T08:00:00+02:00" />
+    <meta property="article:modified_time" content="2019-10-07T08:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="PrestaShop in 2019 and beyond, part 2: The Pain Points"/>
+<meta name="twitter:description" content="aka What needs to be improved"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop in 2019 and beyond, part 2: The Pain Points</h1>
+              
+                <h3 class="post-subtitle">aka What needs to be improved</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/1009343?s=400&amp;v=4"
+         alt="Pablo Borowicz's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Pablo Borowicz</div>
+        
+          <div class="author-display-role">VP of Core Engineering</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Oct 7, 2019
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;in&#43;2019&#43;and&#43;beyond%2C&#43;part&#43;2%3A&#43;The&#43;Pain&#43;Points&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fprestashop-in-2019-and-beyond-part-2-pain-points%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fprestashop-in-2019-and-beyond-part-2-pain-points%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>This is the second in a <a href="/news/prestashop-in-2019-and-beyond-introduction/">series of articles</a> we introduced earlier this year, which aims to describe where we are, where we are going, and some ideas on how we&rsquo;ll get there.</p>
+<h1 id="the-pain-points">The Pain Points</h1>
+<p><em>(or &ldquo;What needs to be improved&rdquo;)</em></p>
+<p class="text-center" style="margin: 5rem auto"><img src="/assets/images/2019/09/wtf-per-minute.png" alt="The only valid measurement of code quality: WTFs/minute"></p>
+<p>In the <a href="/news/prestashop-in-2019-and-beyond-part-1-current-architecture/">previous part</a>, we described what the current architecture looks like. This article aims to analyze what are the main &ldquo;pain points&rdquo;, that is, fundamental problems that are dragging the project down.</p>
+<p>But before getting to that, let&rsquo;s address the elephant in the room. After reading the previous part in this series, probably the number one thing you thought of was &ldquo;why <em>the hell</em> is this so complicated?&rdquo;.</p>
+<p>There are many reasons for that, but I think there&rsquo;s one that can be found at the root of it. This will be a long article, so please bear with me.</p>
+<h2 id="introduction">Introduction</h2>
+<p>First of all, I believe there is an all-too-common misunderstanding about the very nature of PrestaShop. Many people think of PrestaShop as a product: something that you download and install to build and run your shop from your browser. But it&rsquo;s not. Or at least I don&rsquo;t see it that way.</p>
+<p>When I meet people and tell them what I do for a living, I usually describe PrestaShop as an <em>open-source platform for developing e-commerce websites</em>. This is in my view, a more accurate description of what this project is about.</p>
+<p>Yes, I have met people who download it and use it as-is, but I think they belong to a declining minority. To my best understanding, most people who are choosing to use the PrestaShop project in 2019  and succeed in doing so, do it to kickstart their own development—that is, a <em>product</em> based on the PrestaShop <em>project</em> (remember <a href="https://opensource.com/business/15/8/open-source-products-four-rules">not to confuse projects and products</a>). They are usually agencies or experts, and often they are also part of our rich community of module and theme developers who sell on the <a href="https://addons.prestashop.com">Addons Marketplace</a>.</p>
+<p>This means that we, the people who work on PrestaShop&rsquo;s Core code, have to keep three kinds of &ldquo;users&rdquo; into account:</p>
+<ol>
+<li>The shoppers who buy things on PrestaShop shops,</li>
+<li>&hellip; the merchants who run PrestaShop shops (and ultimately, pay for),</li>
+<li>&hellip; and the <strong>developers</strong> who use PrestaShop to build sites, or develop modules and themes.</li>
+</ol>
+<p>This third &ldquo;user&rdquo;, is very, <em>very</em> important to us. <a href="https://www.youtube.com/watch?v=1VgVJpVx9bc">I mean it like Steve Ballmer</a>.</p>
+<p>It&rsquo;s not just because we <em>love</em> developers (incidentally, we do!). It&rsquo;s because PrestaShop cannot survive without them. As such, we want to encourage them to develop for our platform.</p>
+<p>As platform developers, we face a big challenge that most developers (or at least, web developers) usually don&rsquo;t need to care about: <strong>backward compatibility</strong>.</p>
+<p>Developers who work with PrestaShop (or any platform for that matter) expect things to work in a certain, predictable way. Either because the vendor explicitly described them that way through documentation, or because they spent time figuring out how it works on their own, in many cases through excruciating trial-and-error and reverse engineering of undocumented code. The bottom line is, once they get something working, developers expect it to <em>continue working that way</em>—and it&rsquo;s a natural thing to do.</p>
+<p>This expectation about how two independent pieces of software are supposed to work together is usually based on an <em>interface</em>, a kind of contract or agreement between the two parties, that can be either explicit (i.e. clearly defined) or not. If it&rsquo;s implicit, then it&rsquo;s an <em>understanding</em> of sorts, where one of the parties basically assumes the terms while the other party does neither validate nor challenge them.</p>
+<p>Of course, after having invested time and money in making something work, developers won&rsquo;t appreciate having to update their code regularly every time there&rsquo;s a new platform version—ideally, it should &ldquo;just work&rdquo;. Therefore, it goes without saying that introducing any change that breaks this agreed-upon <em>interface</em> (a &ldquo;breaking change&rdquo;) won&rsquo;t help with keeping developers interested in adopting a new version of said platform. Again, this is true for <em>all</em> platforms.</p>
+<p>As a result, many platform vendors—PrestaShop included—will go out of their way to avoid introducing breaking changes as much as possible. But this is a double-edged sword.</p>
+<p>It is well-known that, in time, <a href="https://en.wikipedia.org/wiki/Software_rot">software rots</a>. Most developers agree that the best medicine for avoiding software decay is applying frequent <a href="https://refactoring.com/">refactoring</a>, because once code rots for good, it becomes unmaintainable and has to be rewritten—and history shows us that <a href="https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/">rewriting from scratch is a terrible idea</a>.</p>
+<p>However, refactoring can only get you so far until it starts to require introducing breaking changes. And once you hit that brick wall, you&rsquo;re stuck: either you let that part of the code rot or you introduce breaking changes that will undermine the adoption of your platform. Or worse, you introduce a <em>new</em> subsystem that does the same thing as the old one, and keep the previous one for compatibility, consequently increasing the overall software complexity.</p>
+<p>That&rsquo;s one of the top reasons PrestaShop&rsquo;s architecture has become so complex. It was pushed too far. By constantly trying our best to maintain backward compatibility, even when doing so was detrimental to the platform&rsquo;s overall technical quality, we have substantially undermined its capacity to move forward.</p>
+<p>That said, let&rsquo;s find out what other problems are hiding under the hood&hellip;</p>
+<h2 id="plan">Plan</h2>
+<ul>
+<li><a href="#an-aging-architecture">An aging architecture</a></li>
+<li><a href="#no-clearly-defined-api">No clearly-defined API</a></li>
+<li><a href="#17-was-released-too-soon">1.7 was released too soon</a></li>
+<li>[Too many dependencies with external services](#too-many-dependencies-with external-services)</li>
+<li><a href="#testing-is-very-hard">Testing is very hard</a></li>
+<li><a href="#other-problems">Other problems</a></li>
+</ul>
+<h2 id="an-aging-architecture">An aging architecture</h2>
+<p>PrestaShop has deeply-rooted design issues that can be explained simply by the age of its architecture.</p>
+<p>Web technologies have evolved massively in the last years, and industry standards are now very different compared to what they were 10 years ago, when the current foundations of PrestaShop were laid out. Back then, web applications were still being built using the classic backend-generated, form-centric approach that became commonplace during the <a href="https://en.wikipedia.org/wiki/Common_Gateway_Interface">CGI-based era</a>, which forged the modern Internet.</p>
+<p>Fast forward to 2019, the web is a very different place. It&rsquo;s a mobile-first world, where experiences provided by <a href="https://developers.google.com/web/progressive-web-apps/">Progressive Web Apps</a> have become so rich that the frontier between a web site and a native phone app is now at its thinnest. A world where interacting with a form while offline, infinite scroll and instant interaction is now normal, and reloading a page is archaic. A world made of rich front-end applications, and simple API-based backends.</p>
+<p>Let&rsquo;s face it, PrestaShop&rsquo;s architecture, as we know it, shows its age. PrestaShop was designed for <a href="https://devdocs.prestashop.com/1.7/development/architecture/legacy/legacy-controllers/">a world of Smarty and jQuery</a>, but we currently live in a world of React (or Vue, or Angular) and GraphQL.</p>
+<h3 id="systemic-problems">Systemic problems</h3>
+<p>PrestaShop was also designed using design patterns that were commonplace in the PHP world 10 years ago but have now become obsolete.</p>
+<h4 id="bottom-up-data-centric-design">Bottom up, data-centric design</h4>
+<p>PrestaShop&rsquo;s architecture was designed in a database-centric, <a href="https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design#Software_development">bottom-up way</a>. This is a classic design pattern where you start building small blocks, then build bigger blocks based on those. Typically, it starts by designing the database schema, then creating your models based on that, then the code that manipulates those models.</p>
+<p>If done right, this kind of design approach can be good for reusability when working in an iterative, exploratory way. But it can be a nightmare for platform maintainers that need to keep interoperability and code longevity in mind. Let me explain.</p>
+<p>In this approach, components are designed and built <em>before</em> they are actually used, meaning their behavior is mainly based on <em>guesses</em> regarding what future needs they will address. Therefore, it&rsquo;s usually not long until an unforeseen use case is found for which the component&rsquo;s design is not well-adapted.</p>
+<p>When working in an iterative fashion this is not a problem, because you can go back to the drawing board, redesign the component and deploy it to production. It&rsquo;s part of the workflow. But when you&rsquo;re building a development platform, where this will most likely happen <em>after</em> it is first released, this means that the maintainer will have to find a way to alter the component so that it addresses this particular behavior, <strong>without introducing breaking changes</strong>. This is how spaghetti code creeps in and it&rsquo;s also one of the most common ways technical debt is created.</p>
+<p>In PrestaShop, this problem is exacerbated by widespread data micromanagement, where state changes are handled through direct model manipulation (e.g. &ldquo;get instance of Product, change property value, save&rdquo;, or worse, an SQL update query) instead of transitions. In theory, models should know little about each other, and controllers should be slim on logic. Who&rsquo;s responsible for ensuring that products inside an order exist and are in stock, for instance? If someone updates a product, who&rsquo;s in charge of updating search indexes?</p>
+<p>Currently, there&rsquo;s no unique structure in the core that guarantees this vital system-wide coherence.</p>
+<h4 id="global-state">Global State</h4>
+<p>PrestaShop&rsquo;s legacy code is mainly made out of static classes which are heavily dependent on global or semi-global states, like <code>Context</code> and <code>Db</code>.</p>
+<p>While this approach could initially have seemed like a good idea (no need to think about dependencies, &ldquo;cleaner&rdquo;, easy-to-use code that &ldquo;just works&rdquo;), it actually brings <a href="https://softwareengineering.stackexchange.com/a/148154">a great deal of classic, well-known problems</a>, including two that are very bad for any project:</p>
+<ul>
+<li>Global state and tightly interweaved dependencies are bug-prone, meaning that bugs are harder to fix and regressions are more likely to creep in.</li>
+<li>It&rsquo;s much harder to create automated tests, which aggravates the risk of undetected regressions.</li>
+</ul>
+<p>The new architecture introduced in PrestaShop 1.7 ultimately aims at removing all static classes and replacing them with components designed following the <a href="https://en.wikipedia.org/wiki/SOLID">SOLID principles</a>. However, due to the enormous amount of work it represents and the number of breaking changes it will introduce, most of the lower-level components are and will still be present for the whole lifetime of 1.7. This means that unfortunately, <code>Context</code>, <code>Db</code>, <code>ObjectModel</code> and the such aren&rsquo;t going away anytime soon—nor are the problems they bring.</p>
+<h4 id="technical-debt">Technical debt</h4>
+<p>Technical debt is a problem for all mature projects, and PrestaShop is not the exception there. As stated before, the best way to avoid software rot is to apply frequent refactoring. But if refactoring is limited by breaking changes, then it cannot be applied properly and technical debt starts piling up.</p>
+<p>Even though continuous efforts are being made to avoid this, having to circle around breaking changes ultimately increases complexity. And indeed, the current architecture has become quite complex, with a legacy part that contains a great number of crisscrossing dependencies, and a new-generation part that still requires following many not-so-obvious rules and many workarounds. In addition, more layers means more code to load in memory, which in some cases can also result in a performance penalty.</p>
+<h2 id="no-clearly-defined-api">No clearly-defined API</h2>
+<p>As we said before, interoperability is a big subject in platform development. Since refactoring is, in the long term, unavoidable, breaking changes are bound to occur sooner or later.</p>
+<p>Remember back in 2015, when <a href="/news/a-more-semantic-versioning-scheme/">PrestaShop started following SemVer</a>? The Semantic Versioning (SemVer) <a href="https://semver.org/">specification</a> defines that only major versions can introduce backward incompatible API changes, while minor and patch versions must ensure backward compatibility.</p>
+<p>This is good for interoperability: it means that as long as integrations respect the software&rsquo;s API, they can be sure they will keep working with the main software, even if that software is upgraded to the next minor or patch version.</p>
+<p>In the case of PrestaShop, merchants want to be able to upgrade their shop seamlessly and benefit from the new features and bug fixes, without having to change their theme, modules and customizations, or fear something will break down. As stated before, SemVer is supposed to ensure this, as long as third parties respect PrestaShop&rsquo;s API. This is true—in theory.</p>
+<p><strong>But&hellip; what <em>exactly</em> constitutes PrestaShop&rsquo;s API?</strong></p>
+<p>Right now there&rsquo;s no article documenting it out anywhere. If there was, we would be able to say: &ldquo;This is PrestaShop&rsquo;s API. It is something that we are committing on. Respect it, and enjoy forward compatibility!&rdquo;.</p>
+<p>So, if it&rsquo;s not clearly defined anywhere&hellip; then what is this unwritten contract made up from? Let&rsquo;s find out.</p>
+<p>First, we must first identify <strong>who</strong> are our technical <a href="https://en.wikipedia.org/wiki/Stakeholder_management">stakeholders</a>. Then, we have to establish <strong>what</strong> are the technical resources they need to interact with, and finally define <strong>how</strong> those interactions will take place. Sounds familiar? We have already depicted that in the <a href="/news/prestashop-in-2019-and-beyond-part-1-current-architecture/">previous article</a> (see <a href="/assets/images/2019/02/architecture-comprehensive-overview-current.jpg">figure</a>).</p>
+<p>By looking at the architecture overview, we can easily pinpoint PrestaShop&rsquo;s four main technical stakeholders:</p>
+<ul>
+<li>Themes</li>
+<li>Modules</li>
+<li>Web service clients</li>
+<li>Customizations (custom code for custom functionality; that is, overrides or rewritten core code)</li>
+</ul>
+<p>If we look at the lines going in and out of them, we can see the relationships between these stakeholders and the rest of the system:</p>
+<ul>
+<li><strong>Themes</strong> depend on&hellip;
+<ul>
+<li>Smarty</li>
+<li>Any parent theme (like Classic, for instance)</li>
+<li>Module templates (if they &ldquo;skin&rdquo; those modules)</li>
+<li>Data structures provided to templates</li>
+<li>Core JavaScript library (jQuery)</li>
+</ul>
+</li>
+<li><strong>Modules</strong> depend on&hellip;
+<ul>
+<li>Smarty and/or Twig</li>
+<li>Base module features provided by the Core</li>
+<li>Hooks</li>
+<li>Overridable templates in the BO</li>
+<li>BO themes, their CSS and JavaScript</li>
+<li>Core classes</li>
+</ul>
+</li>
+<li><strong>Web service clients</strong> depend on&hellip;
+<ul>
+<li>Web service API (which itself is tightly coupled to ObjectModel)</li>
+</ul>
+</li>
+<li><strong>Customizations</strong> depend on&hellip;
+<ul>
+<li>The Override system</li>
+<li>Core services</li>
+<li>Core classes</li>
+</ul>
+</li>
+</ul>
+<p>We have now established <strong>who</strong> are the stakeholders and <strong>what</strong> resources they need. But what about the <strong>how</strong>?</p>
+<p>Well, if the <strong>how</strong> is not clearly defined, then we are left with two choices: either there&rsquo;s <em>no</em> API, or <strong><em>everything</em> used by stakeholders is the API</strong>.</p>
+<p><a href="https://media.giphy.com/media/aZ3LDBs1ExsE8/giphy.gif">Let that sink in for a minute</a>. That&rsquo;s a <em>pretty big</em> API, isn&rsquo;t it?</p>
+<p>Big indeed. As we can see, the level of dependencies is <em>massive</em>. That means that essentially, PrestaShop&rsquo;s &ldquo;API&rdquo; is made out of every template file, every public member of every PHP class, and every JavaScript object. Oh, and assets, too.</p>
+<p class="center" style="margin: 5rem auto"><img src="/assets/images/2019/09/use-all-the-things.jpg" alt="Use all the things"></p>
+<p>Of course, this level of access is fantastic for customizations. <em>Everything</em> is right there, available for use and modification. But at what cost?</p>
+<p>Having everything open up for use and modification severely limits PrestaShop&rsquo;s freedom to implement changes in the Core (be it features, bug fixes, or refactoring) without introducing backward incompatible changes.</p>
+<p>How severely does this affect us? Here are some examples of things that <em>shouldn&rsquo;t</em> be done until the next major version of PrestaShop:</p>
+<ul>
+<li>Change any public method signature in any class (rename, change its return type or structure, remove a parameter, or change its type).</li>
+<li>Change any public property in any class.</li>
+<li>Rename, move, or delete any class or class namespace.</li>
+<li>Add new requirements (like dropping support for old versions of PHP or browsers, requiring new server-side libraries, etc.)</li>
+<li>Replace any subsystem (like updating libraries to new major versions or replacing a library with another).</li>
+</ul>
+<p>Obviously, these requirements are incompatible with the stakes of 1.7, so we have been forced to take <a href="/news/prestashop-1-7-is-moving-to-symfony-3-4-and-php-5-6/">some liberties</a> in order to be able to move forward, even if it&rsquo;s a rule that we try not to break if we can help it. Still, this is a recurrent pain:</p>
+<ul>
+<li><strong>Want to implement a new feature</strong>? <em>Better think of a way to do that in a retrocompatible way</em>.</li>
+<li><strong>Want to replace ObjectModels with Doctrine?</strong> <em>Nope, BC break</em>.</li>
+<li><strong>Want to refactor that class to make it testable?</strong> <em>No can do, that would require changing its signature</em>.</li>
+<li><strong>Want to upgrade that dependency to benefit from cool new features?</strong> <em>Not if it&rsquo;s a major version upgrade</em>.</li>
+<li>:'(</li>
+</ul>
+<h3 id="everything-is-public">Everything is public</h3>
+<p>As if making every class part of our API was not enough of a problem, a lot of legacy core classes suffer from <em>public</em>-itis. It means that classes have lots of public methods and properties that needn&rsquo;t be, just for convenience&rsquo;s sake (violating the <a href="https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)">encapsulation principle</a>).</p>
+<p>This is particularly troublesome in PrestaShop, because once a class member has become public—even if it was a mistake—it becomes part of the public API as soon as it&rsquo;s released&hellip; and therefore cannot be refactored until the next major version!</p>
+<p>It gets <em>even worse</em> because of the <a href="https://devdocs.prestashop.com/1.7/modules/concepts/overrides/">Overrides system</a>, which allows developers to replace any legacy core class with a custom one (violating the <a href="https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle">Open–Closed principle</a>, by the way). Since the Overrides system is based on inheritance, and inheritance grants overrides access to protected class members of the extended class, and any accessible code is considered part of the API&hellip; then <strong>protected members of legacy core classes can be considered part of the public API as well</strong>, because they are accessible.</p>
+<p>Having no clearly-defined contracts means we can&rsquo;t change anything without introducing a breaking change, which severely limits the options for improving PrestaShop.</p>
+<h2 id="17-was-released-too-soon">1.7 was released too soon</h2>
+<p>PrestaShop 1.7.0 was a very ambitious release. It featured a <a href="/news/new-architecture-1-6-1-0/">new architecture</a>, a <a href="/news/prestashop-1-7-and-symfony/">new framework (Symfony)</a>, a new Back Office theme (later based on our <a href="/news/PrestaShop-UI-Kit/">UI kit</a>), a <a href="/news/new-theme-1-7-introduction/">new default Front Office theme</a> and <a href="/news/starter-theme-kickoff/">Starter Theme</a>, a <a href="/news/product-page-evolution/">new Product page experience</a>, a <a href="/news/module-page-awakens/">new Modules page experience</a>, a <a href="/news/new-translation-system-prestashop-17/">new translation system</a>, and <a href="/news/cldr-composer-jshint/">use of CLDR</a>, among many other features.</p>
+<p>That&rsquo;s an impressive list. Unfortunately, that objective was proven to be too ambitious, and the result was an underwhelming initial release.</p>
+<p>Before continuing, it&rsquo;s important to say that following this release and between 2016 and 2018, most of the original team that developed PrestaShop 1.7 left the company or was reassigned. In 2017, a new CTO (Aurélien Pelletier) and I arrived at PrestaShop. We agreed on a new long-term vision that would point the project in the right direction, and started building a new team to make it happen. Early 2018, with the support of the newly appointed PrestaShop CEO, Alexandre Eruimy, the team started growing and the project started picking up speed again.</p>
+<p>Now, even though PrestaShop 1.7 is <a href="https://www.webbax.ch/2019/01/10/unboxing-decouverte-prestashop-1-7-5-0/">getting better and better with every release</a>, we find that some decisions taken during early development of 1.7 were ultimately proven to be bad calls, since they are now making it harder to move the project forward.</p>
+<h3 id="no-clear-vision">No clear vision</h3>
+<p>To me, it looks like PrestaShop 1.7.0 was developed and released without a clear, global vision of what the ultimate objective of this major version was, and how long it would take to do it.</p>
+<p>In addition, a tradition of word-of-mouth knowledge sharing at PrestaShop meant that if there ever was a vision, it was unknown to most and is now forever lost. This is something we are meaning to change, and this series is part of that.</p>
+<h3 id="too-many-new-things">Too many new things</h3>
+<p>Too many technical projects were started in parallel, and were released before being properly finished.</p>
+<p>As I said before, this would have been acceptable in a SaaS software where you can work iteratively and release often, but doesn&rsquo;t work well for a development platform like PrestaShop, where upgrades are costly and infrequent. Unsurprisingly, releasing this way resulted in a giant, arguably well-deserved backlash from the community, who described PrestaShop 1.7 as &ldquo;unfinished software&rdquo;.</p>
+<p>Here&rsquo;s an example. Back in 2017, we announced that we had started <a href="/news/introducing-vuejs-symfony-api/">introducing Vue JS in the Back Office</a>, supported by a BO API, which would be used in the Stocks and Translations pages.</p>
+<p>While I think this is the way of the future (no spoilers!), in hindsight, I believe that it was too early to introduce it in 1.7, and will probably have to be redone.</p>
+<p>Don&rsquo;t start screaming at me just yet! Let me explain why.</p>
+<p>First of all, if you take a glance at the <a href="/assets/images/2019/02/architecture-comprehensive-overview-current.jpg">architecture overview</a>, you&rsquo;ll notice that there are two different stacks in the Back Office: the <em>Legacy stack</em> and the <em>New stack</em>. The former is pretty much unchanged since 1.6, while the latter is essentially made out of Symfony controllers and Symfony forms, rendered with Twig. Two stacks, one that will progressively replace the other. Right?</p>
+<p><strong>Wrong.</strong> If you look closer, you&rsquo;ll see that the <em>New stack</em> actually has not one, but <strong>two</strong> implementations: the Symfony one that I described, and another one, based on VueJS and an API.</p>
+<p>So, we don&rsquo;t have <em>two</em> different ways of doing things, we have <em>three</em>.</p>
+<p>This is because the initial idea was that VueJS frontend and API backend was supposed to be the way the migration to Symfony should have continued starting on 1.7.3.0. But we chose to put that on hold and continue working with Symfony forms and Twig. Why?</p>
+<p>Because of <em>customization</em>.</p>
+<p>PrestaShop owes its success mainly to its ability to be <a href="https://devdocs.prestashop.com/1.7/modules/concepts/">extended</a> and customized. For this, developers rely on extension points that allow them to add behavior in specific points, as well as conventions that allow them to replace certain bits of the software by their own.</p>
+<p>We think that this aspect wasn&rsquo;t thoroughly accounted for when designing the VueJS stack, as current extension methods do not work with VueJS pages. And of course they don&rsquo;t, because they behave in a drastically different way. This means that <strong>there&rsquo;s no defined way to customize a VueJS page in PrestaShop right now</strong>.</p>
+<p>If we want to allow these pages to be customizable, we have to think about how, and provide a stable, clearly-defined way of doing it. That is a very long process that cannot be improvised in the middle of a major migration, so we have to go back to the drawing board and start over. In the meantime, we need to think about making those pages extensible again.</p>
+<p>Consequently, our only option right now to make all three systems converge is to continue down the classic, Twig form-based path before switching to something else. This decision will make more sense once you read the next two articles in this series.</p>
+<p>In the meantime, we will continue adding VueJS in the Back Office, but only as standalone components like the <a href="/news/prestashop-1-7-5-0-available/#product-page">live search engine results preview component</a> that we added in the Product Page in 1.7.5.0.</p>
+<h3 id="duplicate-systems">Duplicate systems</h3>
+<p>Many of the new systems in PrestaShop 1.7 don&rsquo;t replace the previous ones, but feature a new, semi-independent way of doing the same thing that coexists with the previous way—which is kept for backward compatibility.</p>
+<p>Having more than one way of doing a given thing is bad for many reasons. First, it introduces cognitive friction, because as a developer you have to think about in when you should use one or the other. Second, because a business logic or dependency change in one must be replicated in the other. And third, if they don&rsquo;t produce the same output or side-effects for some reason, then it might produce systemwide inconsistencies.</p>
+<p>There are several examples of this in PrestaShop 1.7. One of them is the &ldquo;Core–Adapter–Legacy&rdquo; architecture. Let&rsquo;s explore four problems tied to this example:</p>
+<p><strong>1. Shared responsibility</strong></p>
+<p>As described in the previous article, in order to allow old code to progressively be replaced by new code, the Core namespace conventions prohibit developers from using legacy classes directly in Core classes. When developers need legacy functionality in a Core class, it needs to be wrapped in an Adapter class that can then be injected into the Core class.</p>
+<p><strong>The problem:</strong> Since all the Adapter does is wrap legacy features in a non-static class, we now have two classes that do the same: one in Adapter, one in legacy. Overall complexity has increased.</p>
+<p><strong>2. Different implementations/side effects</strong></p>
+<p>The idea behind Adapters is that they should eventually be replaced by Core code that reimplements the feature, allowing us to delete the legacy class later. However, some developers chose to partially reimplement some legacy features in Adapters, but introducing a <em>slightly</em> different behavior.</p>
+<p><strong>The problem:</strong> Not only do we have two classes that do the same thing, but they do it in a <em>different</em> way and produce <em>different</em> side effects. Which one should we use, and when?</p>
+<p><strong>3. Little or no added value</strong></p>
+<p>Looking at the code, we can see that many hastily-made Adapters have been designed <a href="https://github.com/PrestaShop/PrestaShop/blob/95683248751795b1e927445d57abaf45708fea09/src/Adapter/Attribute/AttributeDataProvider.php">as dumb bridges to legacy code</a>, even replicating method signatures and design flaws of their legacy counterparts. Some even have static methods!</p>
+<p><strong>The problem:</strong> Many adapters do not even add any value to legacy classes and exist only to comply with the &ldquo;no use of legacy classes in new code&rdquo;.</p>
+<p><strong>4. Hard dependencies</strong></p>
+<p>To make matters worse, most Adapters do not even implement an <a href="https://www.php.net/manual/en/language.oop5.interfaces.php">interface</a>, which makes it impossible to replace them with Core reimplementations without modifying the dependent classes.</p>
+<p><strong>The problem:</strong> Most adapters are hard dependencies and cannot be replaced without changing the dependent code.</p>
+<p><strong>Bonus: No single source of truth</strong></p>
+<p>And finally, there&rsquo;s the matter of Database access. Since most interactions with the database are performed through ObjectModels, and since ObjectModels are too difficult to reimplement with an Adapter (we want to get rid of them anyway), some developers reimplemented them using Doctrine.</p>
+<p><strong>The problem:</strong> Even models have been duplicated. Some of them <em>aren&rsquo;t even in the Adapter namespace</em> and work in a <em>completely different way</em>&hellip; so there&rsquo;s no single source of truth anymore.</p>
+<p>There are many other duplicate systems in 1.7:</p>
+<ul>
+<li>Symfony controllers vs Legacy controllers</li>
+<li>Twig vs Smarty</li>
+<li>Symfony translation system vs Legacy translation system</li>
+<li>New BO theme (based on Bootstrap 4) for Symfony pages vs legacy one (based on Bootstrap 3) for legacy pages</li>
+</ul>
+<h3 id="legacy-layout">Legacy layout</h3>
+<p>Contrary to what it might seem, Symfony-based BO pages are not fully independent from the legacy stack. In fact, not at all: whenever a Symfony controller is loaded, the whole legacy stack (including Smarty) is loaded as well.</p>
+<p>Why? Because the main page layout (top menu &amp; sidebar) hasn&rsquo;t been migrated yet and is handled by the legacy stack. Therefore all the content generated by the Symfony controller is actually being rendered by a legacy controller called <a href="https://github.com/PrestaShop/PrestaShop/blob/1.7.6.0/controllers/admin/AdminLegacyLayoutController.php">LegacyLayout</a> that wraps around it.</p>
+<p>Having it done this way instead of the other way around (wrapping legacy controllers inside Symfony) means that as the migration progresses, complexity increases.</p>
+<p>If you are interested in this topic, <a href="https://github.com/PrestaShop/PrestaShop/issues/12925">join the discussion on GitHub</a>.</p>
+<h3 id="translation-system">Translation system</h3>
+<p>PrestaShop 1.7 introduced the Symfony translator, which is used for all Core and Native modules (the ones bundled with PrestaShop). While the Symfony translator itself is better than the system it replaced, its integration into PrestaShop has some rough edges that need to be worked out:</p>
+<ol>
+<li>The default translation catalogue (a collection of files containing all translatable wordings) is bundled with PrestaShop and frozen at the time of release. This means that even though existing wordings can receive new translations as needed, new wordings cannot be added until the following release is out. Once new wordings are added to the catalogue, existing PrestaShop shops must be updated to be able to use the newly added wordings.</li>
+<li>The wordings of native modules are tied to a given PrestaShop version, because contrary to third-party modules (who are stuck with the legacy translation system), their default catalogues are bundled with PrestaShop itself. This means that a module update containing new wordings will be impossible to translate until the shop is updated to the next PrestaShop version.</li>
+</ol>
+<p>We have already started improving this in PrestaShop 1.7.6, but there is still some way to go. In addition, having two translation systems working in parallel (the legacy one and the Symfony one) is very confusing for newcomers.</p>
+<h2 id="testing-is-very-hard">Testing is very hard</h2>
+<img src="/assets/images/2019/09/tester-cest-douter.jpg" alt="Testing is doubting" style="height:400px">
+<p class="text-center"><em>Testing is doubting, by <a href="http://www.commitstrip.com/">CommitStrip</a></em></p>
+<p>This is one of the classic <em>consequences</em> of complex, static, globally-stateful code. Since components are so tightly interweaved and depend on global states, putting the system in a state that allows testing a feature in an isolated and predictable way is really, really hard. In some cases, dependencies and hidden state can become extremely difficult and time-consuming to understand, especially when dealing with static in-memory cache (i.e. variables that maintain their value between calls to the same method on the same thread).</p>
+<p>Unsurprisingly, hard-to-test code also leads to complex, hard-to-maintain test scripts.</p>
+<p>Ideally, we should be able to classify tests into three types:</p>
+<ul>
+<li><strong>Unit</strong> – Where a single, completely isolated class is tested at a time.</li>
+<li><strong>Integration</strong> – Where a subsystem is tested in its entirety, with carefully selected dependencies replaced by test doubles.</li>
+<li><strong>E2E</strong> – Where the system is tested in its entirety from a user standpoint, using browser automation.</li>
+</ul>
+<p>Here&rsquo;s what we currently have:</p>
+<ul>
+<li>A mix of PhpUnit-based, unit/integration/survival tests, located in the <code>tests-legacy</code> folder (bound to be rewritten).</li>
+<li>PhpUnit-based Unit tests, located in <code>tests/Unit</code>.</li>
+<li>PhpUnit-based Integration tests, located in <code>tests/Integration</code>.</li>
+<li><a href="https://behat.org/en/latest/">Behat</a>-based Behavior tests, located in <code>tests/Integration/Behaviour</code>.</li>
+<li>Two stacks of End-to-end (E2E) tests, based on Mocha and Selenium:
+<ul>
+<li>An old one called &ldquo;starter theme&rdquo;, located in the <code>tests/Selenium</code> folder that we are phasing out.</li>
+<li>A more recent one in the <code>tests/E2E</code> folder.</li>
+</ul>
+</li>
+</ul>
+<p>We have been struggling with automated tests failing unexpectedly, not because the feature they tested had stopped working, but because of diverse, unrelated technical issues:</p>
+<ul>
+<li>Some unit tests aren&rsquo;t really unit (usually because they tested several classes at once).</li>
+<li>Many unit tests that aren&rsquo;t unit were also extremely hard to understand and maintain, because of all the boilerplate code needed to put the shop in the state we needed for testing.</li>
+<li>Some tests were producing side-effects that made other tests fail because of unexpected/inconsistent state (usually due to hidden data caching in legacy code).</li>
+<li>E2E tests fail randomly because of timeouts and/or issues with our task runner (Travis).</li>
+</ul>
+<p>We believe that bugs are a natural side-effect of changing things, and that automated tests are the only way to be able to consistently move forward without breaking stuff&hellip; but for that, we need good-quality tests. Because of PrestaShop legacy architecture, these tests are really hard to write.</p>
+<h2 id="other-problems">Other problems</h2>
+<h3 id="too-many-dependencies-with-external-services">Too many dependencies with external services</h3>
+<p>Have you ever tried installing or even running the PrestaShop BO locally on a slow connection?</p>
+<p>One of the main culprits for PrestaShop&rsquo;s sluggishness is its dependency on several external services, like the language packs repository, Addons marketplace, and such. Most requests to these services are performed synchronously by the back-end. This means that if the external request takes a long time, then the BO will take a long time to load as well. Worse, in some cases it might even timeout, rendering the BO unusable.</p>
+<p>This is of course not acceptable, and <a href="/news/resilient-php-applications/">some measures are already being put in place</a> to improve performance in this respect.</p>
+<h3 id="obsolete-dependencies">Obsolete dependencies</h3>
+<p>PrestaShop depends on several third-party pieces of software to function. The more obvious ones are PHP and MySQL. But it also requires lots of libraries, like Symfony, PhpUnit, jQuery, Bootstrap, and VueJS.</p>
+<p>These pieces of software live a life of their own. Some get abandoned as their community gravitates to another tool, some get updated with new features, and some just receive bug fixes. Keeping up to date with dependencies is very important for several reasons, but mainly:</p>
+<ul>
+<li>It ensures getting security and bug fixes as well as performance improvements and new features.</li>
+<li>Given the choice, most developers will want to avoid working on older technologies.</li>
+</ul>
+<p>However, it&rsquo;s not always easy to keep up <em>while ensuring backward compatibility</em>. For example, PrestaShop uses <a href="http://guzzlephp.org/">Guzzle</a>, a widely-used HTTP library. Currently, we are stuck on version 5 which is no longer maintained, and we cannot upgrade to v6 because it would be considered a breaking change.</p>
+<p>Here&rsquo;s another example. Early 2016, during the development of the Classic theme (the default theme for PrestaShop 1.7), <a href="/news/new-theme-1-7-introduction/">the team chose to use Bootstrap 4</a>, even though it was still in <a href="https://blog.getbootstrap.com/2015/12/08/bootstrap-4-alpha-2/">alpha stages at the time</a>. To my best understanding, they were hoping that the final version would be released in time for 1.7.0.</p>
+<p>As <a href="https://en.wikipedia.org/wiki/Murphy%27s_law">Murphy&rsquo;s Law</a> dictates, this turned out to work out wrong. Not only Bootstrap 4 <em>didn&rsquo;t</em> ship in time for 1.7.0 (which forced the Classic theme to be released based on Boostrap 4 alpha 5), but the Bootstrap team also decided to <a href="https://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/">introduce major layout changes</a> in alpha 6, <em>after PrestaShop 1.7.0 was released</em>. This effectively blocked the team from upgrading Bootstrap on the Classic theme, because that would break all their child themes (and there are lots of them)&hellip; so Classic is now stuck with an obsolete dependency that cannot be upgraded.</p>
+<p><strong>Not all is lost though.</strong> We have encouraged the development a community-driven project called <a href="https://github.com/PrestaShop/classic-rocket">Classic-rocket</a>, which is an improved version of Classic built on top of the latest Bootstrap version. Thanks to this project, merchants can choose between backward compatibility and benefits from the latest Bootstrap version.</p>
+<p>Regarding PHP compatibility, PrestaShop currently supports PHP versions 5.6 through 7.2. Support for older language versions means that PrestaShop cannot benefit from language features introduced in more recent versions. Moreover, PHP 5.6 is no longer maintained as of 2019, even for security fixes. Since most libraries have dropped support for obsolete PHP versions, PrestaShop cannot support newer PHP versions nor update those dependencies without dropping support for older PHP versions as well. This is why we announced recently that PrestaShop would <a href="/news/announcing-end-of-support-for-obsolete-php-versions/">stop supporting obsolete PHP versions</a> starting on the upcoming 1.7.7.</p>
+<p>On another note, as pointed out in the previous article, there are currently three jQuery versions coexisting in PrestaShop 1.7:</p>
+<ul>
+<li>jQuery 1.x in the legacy BO pages,</li>
+<li>jQuery 2.x in core.js,</li>
+<li>jQuery 3.x in the migrated BO pages and in the Classic theme.</li>
+</ul>
+<p>For a long time we have been wary about upgrading older jQuery versions because of backward-incompatible changes. However, for the upcoming PrestaShop 1.7.7, we are upgrading all the outdated jQuery versions to the latest version in all stacks without introducing breaking changes, thanks to <a href="https://github.com/jquery/jquery-migrate">jQuery migrate</a>.</p>
+<p>Finally, as mentioned earlier, another less-visible problem about using older language or library versions is that as the technical stack falls further and further behind the most recent, bleeding-edge, state-of-the-art technology, it becomes harder to find developers who are interested in working with it, and keep them in the ecosystem. Most developers (especially the better ones) enjoy learning new stuff and keeping up to date with the industry advances. If PrestaShop doesn&rsquo;t keep up, it risks being shunned by developers and becoming obsolete out of pure lack of interest.</p>
+<h3 id="inefficient-module-management-system">Inefficient module management system</h3>
+<p>Traditionally, PrestaShop modules have been distributed as self-contained packages. You just drop them in the modules directory and that&rsquo;s it. This works fine, but has some trade-offs:</p>
+<ol>
+<li>Current module development conventions encourage a <a href="https://en.wikipedia.org/wiki/God_object">single God class</a> that does everything.</li>
+<li>Said class must not be namespaced.</li>
+<li>Modules can use dependencies via Composer, but risk collisions with PrestaShop or other modules if they use different versions of the same library.</li>
+<li>Modules cannot declare their compatibility (or requirement dependency) with other modules.</li>
+</ol>
+<p>In PrestaShop 1.7, we started using <a href="https://getcomposer.org/">Composer</a> to manage the libraries on which PrestaShop depends as well as the list of &ldquo;native&rdquo; modules that are bundled with it. Composer is great for that: it allows us to lock the required module versions so that newer, maybe-incompatible versions aren&rsquo;t accidentally installed during the build process, dependencies shared between modules and PrestaShop are installed only once, there&rsquo;s no risk of library incompatibility, and there&rsquo;s no building or packaging needed to distribute the modules. Cool!</p>
+<p>Except most modules aren&rsquo;t distributed this way. Most modules are distributed through the Addons marketplace as self-contained packages. Even native module updates are distributed this way, because PrestaShop only knows how to update modules in production using self-contained packages.</p>
+<p>We are thinking of changing everything to Composer, but it involves several technical challenges. One of them is the fact that Composer requires very large amounts of RAM to run an update (around 1-2 GB) and is therefore unsuitable to run in most server configurations.</p>
+<h3 id="no-specification">No specification</h3>
+<p>A huge challenge when developing PrestaShop is that no formal, written specification record has been kept. This means that the way PrestaShop is <em>supposed</em> to work resides mainly in the brain of a small group of very experienced people who have been working with PrestaShop for years.</p>
+<p>Some people insist that written specifications are not needed, because &ldquo;the code is the specification&rdquo;. According to their logic, if you need to know how a feature works, you just look at the source code and that&rsquo;s it. I have heard this fallacy multiple times in my career, and my conclusion is that these are the same people who also like saying &ldquo;there are no bugs, just undocumented features&rdquo;.</p>
+<p>Because once a bug appears, and specially when it&rsquo;s a consequence of two contradicting pieces of code, things get uncomfortable—if code <em>is</em> the specification, which part is right and which part is a bug?</p>
+<p>In a project as complex as PrestaShop, it&rsquo;s vital that all expected behavior is well-documented. Otherwise, inconsistencies will keep creeping up again and again.</p>
+<p>This is why this year we started the <a href="https://github.com/PrestaShop/prestashop-specs">PrestaShop Specs Project</a>, which aims at documenting the expected behavior of PrestaShop, so that whenever anyone is in doubt regarding how a specific part is <em>supposed</em> to work, it will be written down somewhere. This is a huge project and most of the work is to be done, so the Product team is currently focusing on recording important decisions, tricky or unintuitive behavior, and new features first.</p>
+<h4 id="poor-documentation">Poor documentation</h4>
+<p>Back in 2017 when I joined PrestaShop, I was surprised to learn how little technical documentation there was. It was hard getting around the code with so many things to learn and so little sources of knowledge. At that time, documentation was hosted in a Confluence server and was 100% written by PrestaShop employees. There was little to no information for 1.7. There were some articles for 1.6, but many of them were outdated and didn&rsquo;t apply for 1.7 code anyway. If learning how PrestaShop works is already hard as it is even when you have some teammates around you to help you, how on Earth could we expect the community to adopt and contribute to 1.7 with no documentation?</p>
+<p>For that reason, last year we launched the <a href="https://devdocs.prestashop.com/">DevDocs Project</a>, which contains the technical documentation of PrestaShop 1.7. It&rsquo;s <a href="https://github.com/PrestaShop/docs/">hosted on GitHub</a> so that anyone can contribute. At the time of writing, this doc already has about 200 articles written by over 60 contributors. However, there are still many subjects that <a href="https://github.com/PrestaShop/docs/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">remain to be documented</a>.</p>
+<h2 id="final-words">Final words</h2>
+<p>&ldquo;This has been a very difficult article to write&rdquo;. That&rsquo;s my poor attempt of an excuse for having taken 6 months to put it out the door, and I sincerely apologize for that.</p>
+<p>This piece isn&rsquo;t meant to be a &ldquo;character destruction&rdquo; for PrestaShop 1.7—quite the opposite. After all, I work for PrestaShop and I&rsquo;m writing on the official blog, so I&rsquo;m a little biased. But perfect, pristine, legacy-less software doesn&rsquo;t exist, and it&rsquo;s no news that PrestaShop is not the exception. I think that in the spirit of an open source project, and especially one that aims to become <em>more</em> open, it&rsquo;s important be honest and to tell things as they are. Be proud of our strengths, yes, but also, and above all, acknowledge the things that need improving. Above all, <em>knowing</em> yourself and your weakness is the first step towards doing something meaningful about it.</p>
+<p>And that&rsquo;s precisely what we mean to do.</p>
+<p>In the next part, things will get more interesting: we&rsquo;ll discuss our long-term vision for PrestaShop&rsquo;s <strong>Future Architecture</strong>, and how it will address many of the problems that we currently face.</p>
+<hr>
+<h3 id="about-the-series">About the series</h3>
+<p>In case you forgot, here are the topics that will be covered during this series:</p>
+<ol>
+<li><a href="/news/prestashop-in-2019-and-beyond-part-1-current-architecture/">The Current Architecture</a> (or <em>&ldquo;Point A – Where we are&rdquo;</em>)</li>
+<li>Pain Points (or <em>&ldquo;What needs to be improved&rdquo;</em>)</li>
+<li><a href="/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/">The Future Architecture (or <em>&ldquo;Point B – Where we are going&rdquo;</em>)</a></li>
+<li><a href="/news/from-legacy-to-future-architecture-connecting-the-dots/">Connecting the dots</a> (or <em>&ldquo;Some ideas on how we&rsquo;ll get there&rdquo;</em>)</li>
+</ol>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Oct 7, 2019</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/architecture/">architecture</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Pablo Borowicz
+      <span>VP of Core Engineering</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/eternoendless">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

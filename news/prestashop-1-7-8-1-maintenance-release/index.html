@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Release of PrestaShop 1.7.8.1</title>
+    <link href="/style.css?1670854426" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Release of PrestaShop 1.7.8.1" />
+<meta property="og:description" content="PrestaShop 1.7.8.1 is now available. This maintenance release fixes 44 regressions reported since the initial 1.7.8.0 release." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/prestashop-1-7-8-1-maintenance-release/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2021-11-15T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2021-11-15T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Release of PrestaShop 1.7.8.1"/>
+<meta name="twitter:description" content="Maintenance version of the 1.7.8.x branch"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Release of PrestaShop 1.7.8.1</h1>
+              
+                <h3 class="post-subtitle">Maintenance version of the 1.7.8.x branch</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="/assets/images/authors/prestashop-team.png"
+         alt="PrestaShop team's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">PrestaShop team</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Nov 15, 2021
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Release&#43;of&#43;PrestaShop&#43;1.7.8.1&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fprestashop-1-7-8-1-maintenance-release%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fprestashop-1-7-8-1-maintenance-release%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>PrestaShop 1.7.8.1 is now available. This maintenance release fixes 44 regressions reported since the initial 1.7.8.0 release.</p>
+<p><img src="/assets/images/2021/11/1.7.8.1_build.jpg" alt="1.7.8.1 is available!"></p>
+<p>We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.</p>
+<h2 id="back-office-regressions">Back office regressions</h2>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/26429">Stock page - If a product attribute contains a comma, it is not displayed</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25966">Dashboard page - Selecting a date range doesn&rsquo;t work and causes a jquery error</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/26028">Modules page - Cannot install any module when the employee language is spanish</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/26058">Performance page - Cannot change the settings in a single store context</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25588">Customer view page - The pagination of the voucher block is not working</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25684">SQL Manager page - SQL query return exception</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25422">Invoices page - Longer buttons overflow their container on lower resolutions</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25264">Localization Page - There is no confirmation modal when changing the default currency</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25593">View supplier page - Unexpected error</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25174">View customer page - Incorrect display of the address block</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/26491">Add/edit tax rule page - The state and the postal code fields are not aligned</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/23365">Add/edit category page - The browser is unable to show the error message on an hidden element</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/26342">Add/edit country page - The address format is badly displayed</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/26348">Add/edit customer group page - The &ldquo;Category discount&rdquo; part is misaligned</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/26252">Add/edit attribute and add/edit social title pages - The language dropdown is not well displayed when resizing the window</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25901">Add/edit product page - When we try to delete all combinations, the warning modal is empty</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25705">Edit supplier page - Unable to save &ldquo;meta_keywords&rdquo; field</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25303">If using the multistore and while making a manual upgrade, a new line in ps_configuration is created for PS_VERSION_DB</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25493">In the Credit slip, the Ecotax is displayed in the Tax details while it shouldn&rsquo;t</a></li>
+</ul>
+<h3 id="orders-regressions">Orders regressions</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/22315">Order details page - While adding a discount, the modal is not well displayed</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25510">Order details page - An exception is displayed when the status of the &ldquo;merchandise return&rdquo; is deleted</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25298">Order details page - The errors while deleting a product are not displayed</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25644">Order details page - Debug mode enabled - an exception is displayed when ordering a deleted product with a file customization</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/24911">Orders - Cannot extend the order grid query from a module</a></li>
+</ul>
+<h3 id="display-regressions">Display regressions</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25740">Buttons are not well displayed - part 1</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25980">Buttons are not well displayed - part 2</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/26040">Buttons are not well displayed - part 3</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25423">Floating button over some elements on migrated pages preventing to save form</a></li>
+</ul>
+<h2 id="front-office-regressions">Front office regressions</h2>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25853">Problem when adding images with different ratio</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/26274">After upgrade, theme must be updated to be able to pay into the final step</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/26326">Simple anchors don&rsquo;t work on CMS page</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/26433">The add to cart button is not working when clicking on the cart icon</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25891">Product disabled - An exception is displayed when changing combination or increasing/decreasing a quantity</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25372">Product comment structured data AggregateRating isn&rsquo;t working</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25942">Shopping cart page - An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25371">Product structured data JSON-LD problem when price is not displayed</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25942">An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations</a></li>
+</ul>
+<h3 id="display-regressions-1">Display regressions</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25272">The product-flags are displayed in the same row with no space</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25459">There is an horizontal scrollbar on the homepage under 991px and the carousel overflows the content</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25133">The search button in the header is not responsive on mobile</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25283">Featured product not well displayed with responsive</a></li>
+</ul>
+<h2 id="module-regressions">Module regressions</h2>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25989">Bad display in autoupgrade module</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/issues/25852">Ps_banner module fixed width and height value</a></li>
+</ul>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>Contributors to this patch version, from both the Core team and the community at large:</p>
+<p>Alexandre BRU, Boubker Bribri, Daniel Hlavacek, Franck Lefèvre, Hibatallah Aouadni, Ibrahima Sow, Igor Stępień, Jonathan Lelievre, Khouloud BELGUITH, Krystian Podemski, M. Parvazi, Marwa Chelly, Matthieu Rolland, Nesrine Abdmouleh, Pierre Rambaud, PululuK, Sébastien Alfaiate, Simone, Stéphane Decisy, Thomas Baccelli, Valentin Szczupak, Yohann Tilotti</p>
+<p>Thank you !</p>
+<p class="text-center">
+  <a href="https://www.prestashop.com/versions" class="btn btn-lg btn-success">Download PrestaShop 1.7.8.1 now!</a>
+</p>
+
+<p>To report upgrade problems or bugs in PrestaShop, please create a new issue <a href="https://github.com/PrestaShop/PrestaShop/issues/new/choose">here</a>.</p>
+<p>If you have questions or need help, do not hesitate to take a look at <a href="https://devdocs.prestashop.com/1.7/faq/i-need-help/">our community platforms or support plans.</a></p>
+<p>Since version 1.7.8.1 is a “patch” update to version 1.7.8, upgrading from 1.7.8.0 version will be easy: features will work better, and modules &amp; themes which worked fine on 1.7.8.x will work just as well with 1.7.8.1. Upgrades from a standard 1.7.x version should work just as well.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Nov 15, 2021</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/version/">version</a>
+
+  <a class="label label-primary" href="/tag/maintenance/">maintenance</a>
+
+  <a class="label label-primary" href="/tag/patch/">patch</a>
+
+  <a class="label label-primary" href="/tag/releases/">releases</a>
+
+  <a class="label label-primary" href="/tag/1.7.8.x/">1.7.8.x</a>
+
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      PrestaShop team
+      <span></span>
+    </h4>
+
+    
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://prestashop-project.org">
+        <i class="icon-home"></i> Website
+      </a>
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

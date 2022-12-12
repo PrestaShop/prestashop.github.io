@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Designing the new PrestaShop default theme</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Designing the new PrestaShop default theme" />
+<meta property="og:description" content="When merchants use PrestaShop for the first time, they’re offered a basic shop with demo products and a default theme. This basic theme is essential for the merchants to have a clear insight of what their new shop will look like. For the 1.7 version of the software, we’ve decided to revamp this default theme which we called “Classic”." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/Designing-the-new-PrestaShop-default-theme/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2016-06-06T06:09:47+02:00" />
+    <meta property="article:modified_time" content="2016-06-06T06:09:47+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Designing the new PrestaShop default theme"/>
+<meta name="twitter:description" content="How we rebuilt the front office to suit any merchant"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Designing the new PrestaShop default theme</h1>
+              
+                <h3 class="post-subtitle">How we rebuilt the front office to suit any merchant</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars1.githubusercontent.com/u/16487836?v=3&amp;s=400"
+         alt="Léa Mendes Da Silva's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Léa Mendes Da Silva</div>
+        
+          <div class="author-display-role">Product Designer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jun 6, 2016
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Designing&#43;the&#43;new&#43;PrestaShop&#43;default&#43;theme&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2FDesigning-the-new-PrestaShop-default-theme%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2FDesigning-the-new-PrestaShop-default-theme%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>When merchants use PrestaShop for the first time, they’re offered a basic shop with demo products and a default theme.
+This basic theme is essential for the merchants to have a clear insight of what their new shop will look like. For the 1.7 version of the software, we’ve decided to revamp this default theme which we called “Classic”.</p>
+<img style="border: 1px solid #CCC; padding: 0px;" src="/assets/images/2016/06/PrestaShop17_DefaultTheme_Home.png">
+<h2 id="main-goals-of-the-classic-theme">Main goals of the Classic theme</h2>
+<p>With around 600 free native features, PrestaShop is the ideal software for anyone wishing to get started with e-commerce. But the task is not an easy one when you’re not familiar with all the standards of e-commerce nor a web professional.</p>
+<ul>
+<li>The major aim of the default theme is to <strong>allow any merchant to meet the Web and e-commerce best practices</strong>.</li>
+<li>The second aim is to <strong>be entirely adjustable and customizable</strong>, to allow every online shop to be singular. Do you have any specific requirement? The modules from the Addons marketplace are here to allow you to improve your website using as many features as you like.</li>
+</ul>
+<h2 id="design-challenges">Design challenges</h2>
+<p>Don’t judge a book by its cover. If the final result of the Classic theme might lead you to think it was easy to implement, it was actually a real challenge in terms of graphic design and user experience.
+To make it accessible to everyone, our Product team had to face several challenges, such as:</p>
+<ul>
+<li><strong>Offering a theme compatible with any kind of business</strong> from the textile industry to the food one, ranging from technology, luxury or wholesale outlets).</li>
+<li><strong>Implementing the standard best practices of e-commerce</strong> for any merchant at any level.</li>
+<li><strong>Offering a design of interfaces that is sleek enough</strong> so that merchants can imagine their products in it, and see how easily they can adapt the design to their graphic identity.</li>
+<li><strong>Allowing an optimal user experience</strong>, with a graphic design focused on the products on show as well as a simplified and smoother buying journey.</li>
+<li><strong>Offering adjustable blocks</strong> compatible with the overall graphic design of the shop allowing merchants to choose whatever modules they need.</li>
+<li><strong>Allowing merchants to fulfill any visual identity</strong> at an affordable price for an esthetic and clear website.</li>
+<li><strong>Creating international interfaces</strong>, compatible with e-commerce all around the world, in the 165 countries where Prestashop is being used.</li>
+<li><strong>Being responsive</strong>, to meet with the ever-increasing e-commerce market on mobile phones around the world.</li>
+</ul>
+<p>The choices of this theme’s revamp were not only based on graphic criteria but on our promise to put e-commerce at everyone’s reach.</p>
+<h2 id="graphic-choices">Graphic choices</h2>
+<img style="border: 1px solid #CCC; padding: 0px;" src="/assets/images/2016/06/PrestaShop17_DefaultTheme_ProductPage.png">
+<p>The product constraints described above were used as a common thread for the graphic choices of the theme.</p>
+<p>Imagine that you should sell a house. If your potential buyers see it with furnitures, frames,  porcelain figurines and other wooden duck collections, they will have more difficulties to project themselves into it and to have an idea of its volume and potential rather than if it was painted in white with very minimal furnishing.
+The same applies for the Classic theme. The idea was not to create the perfect visual identity for the next womenswear store to come but on the contrary to offer a <strong>neutral framework</strong>, where products could be easy to identify, as well as a faceted navigation, a fluid purchase funnel and easy-to-identify call to actions. These choices answer some specific project needs:</p>
+<ul>
+<li><strong>The background colors (white and grey)</strong> allow to focus on the products and to simplify the reading process of the interfaces.</li>
+<li><strong>The blue calls to action</strong> contrast with the background and are more easily viewable and identifiable.</li>
+<li><strong>The Open Sans typography</strong> is a Google font that has three major benefits: it is very easy to read, very complete (897 characters), and it allows you to translate in a maximum of Latin alphabet-based languages that are used by a large majority of our merchants.</li>
+<li><strong>The minimum size of the paragraphs</strong> meets readability criteria.</li>
+<li><strong>The flat design combined with shadow effects</strong> allow to have light interfaces while preserving the meaning of dynamic elements.</li>
+<li><strong>The alert colors (orange and red)</strong> answer the standards of most of the merchants and are clearly identifiable by their customers as alert messages.</li>
+<li><strong>The icons</strong> are taken from <a href="https://design.google.com/icons/">Google Material</a>, an Open Source library, just like our software. This aspect is very important to us and the advantage of this library is that our merchants will be able to add icons to their websites for free without leaving the graphical universe.</li>
+<li><strong>The demo products</strong> from the shop are being created. As a matter of fact, we’re aware that our catalog of demo products is mainly about woman clothing. But this is going to change! Our Product team is working on a new products catalog that is more up-to-date and that will allow our merchants to better see how their products can fit in their new store.
+Merchants will then be free to customize their theme’s interfaces, to change all the elements and to add their graphic identity to it.</li>
+</ul>
+<h2 id="one-page-checkout">One-page checkout</h2>
+<img style="border: 1px solid #CCC; padding: 0px;" src="/assets/images/2016/06/PrestaShop17_DefaultTheme_Checkout_Step2.png">
+<p>The purchase funnel is essential for an e-commerce website. A well-built checkout process facilitates the conversion and customer loyalty. On the other way round, if it is not well designed, it can lead to cart abandonments.
+This additional revamping challenge of the basic theme is huge, since here, more than anywhere else, the impact on the success of our merchants will be decisive. You don’t buy pizzas the same way as handbags. And a lot of themes are based on the default PrestaShop theme, so if the conversion is not good enough, that’s the whole ecosystem that might suffer from it.</p>
+<p>So the main goal of the purchase funnel for the Classic theme is <strong>to propose the best possible user experience</strong>. This funnel is intended to:</p>
+<ul>
+<li>Convert as efficiently as possible.</li>
+<li>Present steps identifiable at a glance.</li>
+<li>Have a speedy buying process.</li>
+<li>Put the best practices of online shopping at the merchant’s disposal.</li>
+<li>Better integrate the necessary modules (payment, delivery, etc.).</li>
+<li>Be compatible with foreign languages.</li>
+<li>Be easy to maintain and debug.</li>
+</ul>
+<p>All this while complying with the same design constraints as those mentioned above (interface readability, adjustable blocks, international compatibility, etc.).</p>
+<p>This purchase funnel is built on one page, with unfolding blocks. This choice is not a random one. To reach this conclusion, we have:</p>
+<ul>
+<li>Tested tens of shops and numerous different online selling styles.</li>
+<li>Followed the Design thinking methodology.</li>
+<li>Performed user tests with 25 merchants coming from all backgrounds.</li>
+<li>Iterated the production of those interfaces according to those test results.</li>
+</ul>
+<h2 id="one-page-checkout-vs-five-steps">One-page checkout vs. Five steps</h2>
+<p>The methodology followed for this kind of purchase funnel allowed us to realize that a one-page checkout process (or OPC) presents a lot of benefits for a shop:</p>
+<ul>
+<li>It is considered by customers to be quicker than a funnel with 5 distinct steps on different pages.</li>
+<li>It allows the customers to anticipate the steps to follow before the payment.</li>
+<li>It allows the customer to check its cart at any time during the checkout process.</li>
+<li>Returning to the previous step to make a change appears more reassuring, since the information will not be lost.</li>
+<li>The page structure is responsive (to allow for payments on mobile phones).</li>
+</ul>
+<h2 id="standard-vs-specific">Standard vs. specific</h2>
+<img style="border: 1px solid #CCC; padding: 0px;" src="/assets/images/2016/06/PrestaShop17_DefaultTheme_Checkout_Step2_Form.png">
+<p>One thing we must keep in mind is that PrestaShop is a free and Open Source software designed to meet the needs of all merchants, whether they are small or big. That’s the reason why the Classic theme should meet all standard needs and not only specific ones. For customization purposes, Open Source offers all the necessary tools (modules, access to source code, etc.) to have a unique shop.</p>
+<h2 id="alpha-vs-release-work-in-progress">Alpha vs. Release (work in progress)</h2>
+<p>We’re not quite ready! The Product team is currently working on the 1.7 version. So the Classic theme is not final, and more user tests and iterations should follow. The demo products inherited from version 1.6 will be replaced by an enriched catalog. The site behavior will also be fully responsive&hellip; Exciting challenges are still to come, with the will to place the best of e-commerce at everyone’s reach.</p>
+<h2 id="prestashop-is-hiring">Prestashop is hiring</h2>
+<p>At PrestaShop, we have a mantra: “Work like a Captain, Play like a Pirate”.
+If you want to join the community and take part in the adventure, remember that:</p>
+<ul>
+<li><a href="http://www.jobs.net/jobs/prestashop/en-gb/job/Core-Developer-H-F/J3J7HD6W6G1SCCKM7WJ/">We’re hiring senior PHP developers</a> (in Paris, France)</li>
+<li><a href="http://www.jobs.net/jobs/prestashop/en-gb/job/Product-Designer-Senior-H-F/J3K82Z6M1RBPKQJ28W5/">We’re hiring a senior product designer</a> (in Paris, France)</li>
+<li><a href="http://build.prestashop.com/news/call-for-user-testing-volunteers/">You can take part into user tests</a> (in Paris, France)</li>
+<li><a href="http://build.prestashop.com/howtos/misc/contribute-to-prestashop/">You can contribute to the PrestaShop project</a> (anywhere!)</li>
+</ul>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jun 6, 2016</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/theme/">theme</a>
+
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/design/">design</a>
+
+  <a class="label label-primary" href="/tag/process/">process</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Léa Mendes Da Silva
+      <span>Product Designer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/Leadesign">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/LeaMendesign">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

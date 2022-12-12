@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>How to create the best bug reports</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="How to create the best bug reports" />
+<meta property="og:description" content="Every morning, the Product and QA team gather around a big screen, and review the new Forge tickets that were created since the day before. At the end of the meeting, all new tickets must be asserted, and if need be, placed into the hand of a team member." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/howtos/misc/how-to-create-bug-report/" />
+    <meta property="article:section" content="howtos" />
+    <meta property="article:published_time" content="2017-05-22T09:10:11+02:00" />
+    <meta property="article:modified_time" content="2017-05-22T09:10:11+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="How to create the best bug reports"/>
+<meta name="twitter:description" content="Three rules: up-to-date, reproducible, and detailed."/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">How to create the best bug reports</h1>
+              
+                <h3 class="post-subtitle">Three rules: up-to-date, reproducible, and detailed.</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749"
+         alt="Xavier Borderie's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Xavier Borderie</div>
+        
+          <div class="author-display-role">Open Source Advocate</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    May 22, 2017
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=How&#43;to&#43;create&#43;the&#43;best&#43;bug&#43;reports&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmisc%2Fhow-to-create-bug-report%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmisc%2Fhow-to-create-bug-report%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Every morning, the Product and QA team gather around a big screen, and review the new Forge tickets that were created since the day before. At the end of the meeting, all new tickets must be asserted, and if need be, placed into the hand of a team member.</p>
+<p>Reviewing Forge ticket can be very brain-consuming: sometimes, report incompleteness can make for a need to ask for more info, thus slowing down. On the other hand, we sometimes get tickets that are a pleasure to work with. Here are their most common denominators.</p>
+<div class="alert alert-note" role="alert">
+Quick summary:
+<ul>
+  <li>Always test on the latest version.</li>
+  <li>Always provide step-by-step reproduction instructions.</li>
+  <li>Always give details, such as server configuration</li>
+  <li>Try to add pictures/video.</li>
+  <li>Try to enable the Debug Mode.</li>
+  <li>Try to check if the issue has not already been reported.</li>
+  <li>Try to add log files.</li>
+</ul>
+</div>
+<h3 id="the-basics">The basics</h3>
+<p>Apart from the obvious descriptive title, there is a trifecta of must-haves in a useful Forge ticket.</p>
+<h4 id="up-to-date">Up-to-date</h4>
+<p>Oftentimes, bug reporters provide us with information about what happens in their own situation, chiefly their current version of PrestaShop &ndash; which is seldom the latest version.</p>
+<p>This can make reviewing harder, because there is a number of things that could have changed between the reporter&rsquo;s version and the latest version of PrestaShop &ndash; even fixing that very bug!</p>
+<p>That is why it is always preferable for the reporter to make sure that the bug happens in the latest available version &ndash; either <a href="https://www.prestashop.com/en/download">an official release</a>, or <a href="https://github.com/PrestaShop/PrestaShop/tree/develop">the current in-development version</a>.</p>
+<p>Because not everyone can afford the time to upgrade their online shop to the latest version in hope that their issue is fixed, we encourage the more technical users to make tests on their local machines, using an Apache-PHP-MySQL/MariaDB stack such as <a href="http://www.wampserver.com/">WampServer</a>, <a href="https://www.mamp.info/en/">MAMP</a>, <a href="https://www.apachefriends.org/">XAMPP</a> or any other.<br/>
+Not only will it then be able to easily install the latest version, but it will also make it possible to test in the default conditions &ndash; indeed, third-party themes and modules can create issues that the PrestaShop simply cannot fix.</p>
+<h4 id="reproducible">Reproducible</h4>
+<p>Writing how to reproduce an issue time helps tremendously. Even better if its reproducible in a fresh install of PrestaShop.</p>
+<p>Simply put, if the team cannot reproduce the issue on their side, there is little to no chance that the issue will be fixed. They cannot fix bugs blindly.<br/>
+Often, issues that cannot be reproduced are either due to customization (theme, modules, override, etc.), or by local problems that are specific to the shop.</p>
+<p>The best way to help the team to reproduce issues is to give precise step-by-step instructions. For instance:</p>
+<blockquote>
+Steps to reproduce:
+<ul>
+  <li>Go to Sell > Catalog.</li>
+  <li>Click "Create a product".</li>
+  <li>Save without entering a title.</li>
+</ul>
+<p>Expected result: an empty product is created and saved.</p>
+<p>Actual result: the computer turns into a unicorn. THANK YOU!</p>
+</blockquote>
+<p>Thanks to these steps (which you should test more than once), you can lead the team on the way to reproduce the issue you found &ndash; and thus on a quick fix!</p>
+<h4 id="detailed">Detailed</h4>
+<p>The title and description should bring the team half-way to understanding what is happening. While the reproduction steps are important, sometimes there are implied information that is also useful. This is where a detailed description comes in.</p>
+<p>The idea of the description is not to tell a whole story of how you stumbled upon the issue. You should it keep it to the point: keep the information that is specific to the issue, remove that information this is specific to your situation. Your description should be general enough to apply to any other installation.</p>
+<p>Details such as your software stack can be particularly useful:</p>
+<ul>
+<li>Precise version of PrestaShop (&ldquo;1.6.1.13&rdquo; is more helpful than &ldquo;1.6&rdquo;).</li>
+<li>Server setup:
+<ul>
+<li>Operating system.</li>
+<li>Type and version of webserver (Apache, Nginx, IIS, other).</li>
+<li>Version of PHP.</li>
+<li>Version of MySQL/MariaDB.</li>
+<li>Make sure you have emptied PrestaShop&rsquo;s cache!</li>
+</ul>
+</li>
+<li>Browser setup:
+<ul>
+<li>Operating system.</li>
+<li>Version of the browser.</li>
+<li>Make sure you have emptied your browser&rsquo;s cache!</li>
+</ul>
+</li>
+<li>Any error message.</li>
+</ul>
+<h3 id="the-bonuses">The bonuses</h3>
+<p>Follow the rules above, and your ticket will already be on the path to fix-finding.</p>
+<p>There are a handful of nice things you can do to improve your ticket further.</p>
+<h4 id="checking-past-issues">Checking past issues</h4>
+<p>Of course you may think that you are the first on to stumble upon that wrong behavior &ndash; and you may be right!</p>
+<p>But quite often, a ticket already exists for that issue: you should search the Forge with a couple of keywords, in order to see if you&rsquo;re really first on this one.</p>
+<p>If there is indeed already a ticket for your issue, you can still help! Simply comment the ticket with details that you think are pertinent &ndash; or even better, improve the ticket by adding any of the suggestion from this page: steps to reproduce, test on updated version, etc.</p>
+<h4 id="making-one-issue-per-ticket">Making one issue per ticket</h4>
+<p>It&rsquo;s tempting to finish your ticket with &ldquo;Another issue I found is that (&hellip;)&rdquo;, because to you the two issues happen in the same context.</p>
+<p>On the developer side, the two issues might be completely unrelated, and therefore following-up on any supplementary issue using a single Forge ticket is quite a hassle.</p>
+<p>So, even if it takes you more time, please create one ticket per issue &ndash; and only mention one issue per ticket :)</p>
+<h4 id="adding-logs">Adding logs</h4>
+<p>Sometimes you just don&rsquo;t know what&rsquo;s wrong: something&rsquo;s not happening, that&rsquo;s all.</p>
+<p>That&rsquo;s where log data can be helpful. They keep track of what is happening, and allows to trace back to the moment when the issue happens.</p>
+<p>There are several different log data that you can add as a file to your ticket:</p>
+<ul>
+<li>Server log:
+<ul>
+<li>Apache: /var/log/apache/apache_error.log</li>
+<li>Nginx: /var/log/nginx/nginx_error.log</li>
+<li>IIS: %SystemDrive%\inetpub\logs\LogFiles</li>
+</ul>
+</li>
+<li>PHP error log:
+<ul>
+<li>Apache: /var/log/apache/php_error.log</li>
+<li>Nginx: /var/log/php-fpm/default/error.log</li>
+<li>IIS: %SystemDrive%\inetpub\logs\LogFiles</li>
+</ul>
+</li>
+<li>Console log:
+<ul>
+<li>Firefox and Chrome: press Ctrl+Shit+J or Cmd+Shift+J.</li>
+<li>Internet Explorer and Edge: press F12 then go to the Console tab.</li>
+</ul>
+</li>
+</ul>
+<p>Copy the content relevant to your issue (or to the time the issue appeared), and paste it into the ticket (or in a text file attached to the ticket).</p>
+<h4 id="enabling-debug-mode--cache">Enabling Debug Mode + cache</h4>
+<p>PrestaShop has a debug mode, which can be used to see the non-obvious errors on your shop. For instance, in these situations:</p>
+<ul>
+<li>The browser displays a blank pages.</li>
+<li>The browser displays a 500 Internal Server Error.</li>
+<li>You cannot log into your dashboard, or access certain pages of the back office.</li>
+</ul>
+<p>To turn on the Debug mode on PrestaShop 1.7, follow these steps:</p>
+<ul>
+<li>Got to Advanced Parameters &gt; Performance</li>
+<li>In the Debug Mode section, set &ldquo;Debug Mode&rdquo; to &ldquo;Yes&rdquo;.</li>
+<li>Click the &ldquo;Save&rdquo; button.</li>
+</ul>
+<p>If you can&rsquo;t access your dashboard, you can still enable the Debug Move using an FTP client (for instance the free Filezilla tool) to edit the config/defines.inc.php file. Find the following line in the file:</p>
+<p><code>define('_PS_MODE_DEV_', false);</code></p>
+<p>&hellip; and change it to:</p>
+<p><code>define('_PS_MODE_DEV_', true);</code></p>
+<p>Finally, emptying the cache of PrestaShop can also be useful, because it ensures that your browser only displays newly-generated files instead of old cached ones. In PrestaShop 1.7, you can empty the cache here:</p>
+<ul>
+<li>Go to Advanced Parameters &gt; Performance.</li>
+<li>Click on the &ldquo;Clear Cache&rdquo; button at the top right.</li>
+<li>You&rsquo;re done!</li>
+</ul>
+<h4 id="providing-screenshots">Providing screenshots</h4>
+<p>Most of the time, bugs are visual: whether a button is not displaying well, or a error message pops up, or you want to indicate the content of a form before a failed submission.</p>
+<p>That&rsquo;s where screenshot come in very handy! Providing one or more screen captures right into the ticket&rsquo;s attached file can help visually spot and reproduce the issue, and can save a lot of time in understanding your words.</p>
+<h4 id="providing-a-short-video">Providing a (short) video</h4>
+<p>If your issue is only triggered in a series of steps, it is great to list them textually, but it can also help to provide a video of these steps, so that we can reproduce your problem with certainty.</p>
+<p>To be perfectly useful:</p>
+<ul>
+<li>Keep it short. Less than a minute is best. Do not repeat your bug description; just follow your own step by step instructions.</li>
+<li>Do not talk too much. Accents and even languages other than French and English can be confusing.</li>
+<li>Prefer details to file size. A small screen size or blurry compression can prevent the team from having a clear view of your actions in the video.</li>
+</ul>
+<h4 id="being-patient">Being patient</h4>
+<p>Thank you for reporting your issue! Please understand that it will not be fixed right away: you will have to wait at least for the next bugfix version to be released.</p>
+<p>Several new Forge tickets are created every day, and the team spends a lot of time building the developers&rsquo; workload using these tickets. Depending on its asserted priority and the existing workload, your ticket can either go straight to the top (if your issue is considered blocking or critical), near the top (if it&rsquo;s a major or standard issue), or left for later consideration (if it&rsquo;s a minor or trivial issue).</p>
+<p>Thank you for your patience, then!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">May 22, 2017</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/contribution/">contribution</a>
+
+  <a class="label label-primary" href="/tag/forge/">forge</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Xavier Borderie
+      <span>Open Source Advocate</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

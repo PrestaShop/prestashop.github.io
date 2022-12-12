@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>How to rebase your Git branch</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="How to rebase your Git branch" />
+<meta property="og:description" content="Contributing code to PrestaShop can be scary for first-timers, because not everyone knows how Git works. By the time you have figured how to properly push your changes to GitHub, the codebase has changed, rendering your suggestions impossible to merge – leading to frustration on both sides. It’s high time you learn about git rebase." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/howtos/misc/rebasing-your-git-branch/" />
+    <meta property="article:section" content="howtos" />
+    <meta property="article:published_time" content="2017-05-11T09:10:11+02:00" />
+    <meta property="article:modified_time" content="2017-05-11T09:10:11+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="How to rebase your Git branch"/>
+<meta name="twitter:description" content="git rebase can be tricky, but remains your friend!"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">How to rebase your Git branch</h1>
+              
+                <h3 class="post-subtitle">git rebase can be tricky, but remains your friend!</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749"
+         alt="Xavier Borderie's photo">
+  
+      
+
+      <img class="img-circle" src="https://fr.gravatar.com/userimage/81162371/facaed47afd586951ba446bf68d59273.jpg?size=256"
+         alt="Julien Martin's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Xavier Borderie</div>
+        
+          <div class="author-display-role">Open Source Advocate</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">Julien Martin</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    May 11, 2017
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=How&#43;to&#43;rebase&#43;your&#43;Git&#43;branch&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmisc%2Frebasing-your-git-branch%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Fmisc%2Frebasing-your-git-branch%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Contributing code to PrestaShop can be scary for first-timers, because not everyone knows how Git works. By the time you have figured how to properly push your changes to GitHub, the codebase has changed, rendering your suggestions impossible to merge &ndash; leading to frustration on both sides. It&rsquo;s high time you learn about <code>git rebase</code>.</p>
+<p>Files often change an Open Source project. Between the time you fix an issue and create a pull request, and the time a Core developer takes a look at your PR, the target files can have changed a couple times (or more). &ldquo;Could you rebase?&rdquo;, asks the Core developer. Easier said than done, but we&rsquo;ll give you a step-by-step guide on how to do it.</p>
+<p><i>This article was initially <a href="https://github.com/PrestaShop/PrestaShop/pull/5583#issuecomment-221409795">a comment by @shudrum on a PR by @kpodemski</a>. Thanks for the inspiration, people!</i></p>
+<div class="alert alert-note" role="alert">
+You can only rebase a pull request when its commits were pushed to GitHub using Git's command-line tool. It is NOT possible to rebase code that has been submitted through GitHub's online edition form.
+<p>We therefore advise you to <a href="https://try.github.io/">learn the basics of Git</a> before contributing code. It will be a very valuable addition to your development toolbox. It will also let Core developers know that</p>
+<ul>
+ <li>you know what you are doing,</li>
+ <li>you can work with them in improving your code in the PR,</li>
+ <li>your changes have been tested on your local install (= less likely to contain a typo).</li>
+</ul>
+<p>Go Git!</p>
+</div>
+<h2 id="what-is-rebasing">What is rebasing?</h2>
+<p>Rebasing updates the history of your local Git repository so that it is synchronized with the history of the official Git repository. Once you have rebased your repo, it contains all the changes that have been merged to Core since you created your code changes. This way, your pull request can be merged safely: it won&rsquo;t break the destination codebase.</p>
+<p>In short, rebasing makes for a cleaner history :)</p>
+<h2 id="the-reason-why-core-devs-ask-you-to-rebase">The reason why Core devs ask you to rebase</h2>
+<p>Either you rebase your code, or it takes a lot more time to test your changes and merge them. Therefore, there&rsquo;s a good chance that your suggestion will be either discarded or forgotten if you don’t update it. Better rebase it yourself!</p>
+<p>Also, rebasing is the right way to squash several commits into one. This is often an issue, particularly when you find yourself with a “Merge: XXX” commit out of nowhere. Rebasing avoids merge commits.</p>
+<p>Finally, automated tests sometimes fail for no good reason, so rebasing is one way to trigger them again, until they go green. You don’t have to wait for the Core to restart the tests anymore!</p>
+<h2 id="lets-rebase">Let&rsquo;s rebase!</h2>
+<p>The firsts times using <code>git rebase</code> are not so easy! You have to understand the links between your local repository and PrestaShop&rsquo;s repository, and how Git works with the history of each &ndash; which are essentially two separate branches of the same project.</p>
+<p>If you look at your local history, you should see something like this:</p>
+<p><img src="/assets/images/2017/04/git-rebase-1.png" alt="A messy history"></p>
+<p>As you can see, the branch has 3 commits from the contributor, with various levels of respect for the naming convention. The oldest one respects the convention; the second one certainly does not; the most recent one is better but still superfluous.</p>
+<div class="alert alert-note" role="alert">
+In this example, `git lg` is a shortcode to an improvement over the standard `git log`. <a href="https://coderwall.com/p/euwpig/a-better-git-log">See how you can enjoy the same improvement</a>!
+</div>
+<p>You can see that the latest commit has the <code>9a7b798</code> identifier (short for the <code>9b9b47e9fe591e2f4b1f9bb2dd18c4fa5e715b55</code> sha1 hash, but the seven first characters are unique enough for identification in this context).</p>
+<p>If you have not updated your local repository, the <code>develop</code> branch should be at the same location. To correctly rebase the branch, you can use <code>git rebase -i 9a7b798</code>.</p>
+<p>Let’s break this down:</p>
+<ul>
+<li><code>git rebase</code> is the command to use when rebasing. It reapplies commits on top of another base tip.</li>
+<li><code>-i</code> is short for <code>--interactive</code>. This option of <code>git rebase</code> makes a list of the commits which are about to be rebased, then lets the user edit that list in the default editor in order to squash several commits into one.</li>
+<li><code>9a7b798</code> is the identifier of the commit that you want to work from. Since</li>
+</ul>
+<p>After typing this, your editor starts and you can see a file like this:</p>
+<p><img src="/assets/images/2017/04/git-rebase-2.png" alt="Pick and choose"></p>
+<p>Your recent commits are listed at the top of the file, with a verb, the hash, and the commit name. By default, all three commits are picked as-is &ndash; meaning that the commits are kept unchanged.</p>
+<p>If you read the comments, you can see the different options you have instead of just picking the commits. In our case, you need to squash the commits into the first one, so just edit this file like this:</p>
+<p><img src="/assets/images/2017/04/git-rebase-3.png" alt="Pick and squash"></p>
+<p>With this, the second commit will fuse with the first one, and then the third one will do the same.</p>
+<p>Save and close the file. If your system has you use Vim (command line editor), you can save and quit by hitting the <code>Esc</code>key (Vim goes into command mode) and typing <code>:wq</code> (for “write and quit”).</p>
+<p>Another file will automatically open:</p>
+<p><img src="/assets/images/2017/04/git-rebase-4.png" alt="Naming things"></p>
+<p>On the third line, you can edit the commit names. If it’s fine as it is, keep it that way. It might be a good time to ensure that your commit follow <a href="http://docs.prestashop.com/display/PS16/How+to+write+a+commit+message">PrestaShop’s commit naming convention</a>.</p>
+<p>The other lines describe the two others commit names, set as comments. You can safely remove these and the followin comment lines if you wish.<br/>
+Edit the main commit name as you like, then save and close (Esc+:wq).</p>
+<p>If you look again at your history, you should now see:</p>
+<p><img src="/assets/images/2017/04/git-rebase-5.png" alt="A clean history!"></p>
+<p>TADA! Just one clean commit! Now comes the last step: type <code>git push -f</code>. This will force Git to update your remote reference even if it isn’t an ancestor of the local reference used to overwrite it. Once pushed, your branch is rebased &ndash; and your PR is updated accordingly.</p>
+<p>Yay!</p>
+<h2 id="learn-more-git">Learn more Git</h2>
+<h3 id="first-timer">First timer</h3>
+<ul>
+<li>GitHub&rsquo;s Try Git: <a href="https://try.github.io">https://try.github.io</a></li>
+<li>The official Getting Started: <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</a></li>
+<li>Git - The simple guide: <a href="http://rogerdudler.github.io/git-guide">http://rogerdudler.github.io/git-guide</a></li>
+</ul>
+<h3 id="i-know-how-to-push-whats-next">&ldquo;I know how to push, what&rsquo;s next?&rdquo;</h3>
+<ul>
+<li>Codeschool: <a href="https://www.codeschool.com/courses/git-real">https://www.codeschool.com/courses/git-real</a></li>
+<li>Udacity: <a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775">https://www.udacity.com/course/how-to-use-git-and-github&ndash;ud775</a></li>
+<li>Git Tower Learn: <a href="https://www.git-tower.com/learn">https://www.git-tower.com/learn</a></li>
+</ul>
+<h3 id="advanced">Advanced</h3>
+<ul>
+<li>Learn Git branching: <a href="http://learngitbranching.js.org">http://learngitbranching.js.org</a></li>
+<li>Atlassian&rsquo;s tutorials: <a href="https://www.atlassian.com/git/tutorials/advanced-overview">https://www.atlassian.com/git/tutorials/advanced-overview</a></li>
+</ul>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">May 11, 2017</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/tutorial/">tutorial</a>
+
+  <a class="label label-primary" href="/tag/git/">git</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the authors</h5>
+
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Xavier Borderie
+      <span class="multiple">Open Source Advocate</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Julien Martin
+      <span class="multiple">Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/shudrum">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/shudrum">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+                </div>
+                
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

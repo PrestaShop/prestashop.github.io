@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>8 on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/8/</link>
+    <description>Recent content in 8 on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Oct 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/8/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.0 Is Available</title>
+      <link>https://build.prestashop-project.org/news/prestashop-8-0-0-available/</link>
+      <pubDate>Wed, 26 Oct 2022 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-8-0-0-available/</guid>
+      <description>The maintainers team is pleased to announce that PrestaShop 8.0 is officially available.
+PrestaShop 8, the first major version since the original release of PrestaShop 1.7.0 back in 2016, is an important milestone for the project.
+A significant cleanup has been performed in the codebase, with several internal components updated, modified or removed. PrestaShop 8 is also the project’s first company-neutral release, meaning that it no longer includes commercial products and services built-in.</description>
+    </item>
+    
+    <item>
+      <title>Migrate your solutions from PrestaShop 1.7 to 8.0</title>
+      <link>https://build.prestashop-project.org/news/migrate-your-solutions-from-17-to-80/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/migrate-your-solutions-from-17-to-80/</guid>
+      <description>PrestaShop 8 beta version was released last week. If you are a developer in our ecosystem, create modules or themes, and have clients working with PrestaShop, this is an excellent opportunity to spend some time with this version and test your solutions.
+In this article, I will focus on things that might affect your work. You will read here about changes that are not backward compatible, and could require you to make changes in the code of your solutions.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 8.0 beta is open for feedback!</title>
+      <link>https://build.prestashop-project.org/news/prestashop-8-0-beta-release/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-8-0-beta-release/</guid>
+      <description>The public beta version of PrestaShop 8.0 is now ready for you to test!
+The maintainers team is very happy to announce today the release of the public beta version of PrestaShop 8.0. This version includes many new features, improvements and over 130 bug fixes.
+The main new features for this version include an update to Symfony 4.4, compatibility with PHP 8 and 8.1, an enhanced experimental product page, and a new security page which allows shop administrators to manage user sessions and configure their password policy.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 8.0 Release Candidate Is Ready To Be Tested!</title>
+      <link>https://build.prestashop-project.org/news/prestashop-8-0-rc1-release/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-8-0-rc1-release/</guid>
+      <description>The maintainers team is pleased to announce the first release candidate of PrestaShop 8.0.
+This is the last step before releasing the final 8.0 version. This release candidate is intended to allow the community to verify that all regressions found during the beta have been fixed and that the software is ready for production. If no major or critical regression is reported before October 20th, then the final version of 8.</description>
+    </item>
+    
+  </channel>
+</rss>

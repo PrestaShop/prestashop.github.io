@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>1.6.1.x: what’s next</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="1.6.1.x: what’s next" />
+<meta property="og:description" content="This last year, the PS company has been facing a dilemma: how to dedicate 100% of the developers’ time to move forward faster on the 1.7 version of the open source project, something everybody agrees on. And, at the same time, provide more time for merchants still using the 1.6 version to get ready to upgrade, by keeping them safe in case of critical issue after the official support ends on the 30th of June 2019. We have come up with a solution, thanks to the initiative and support of a few volunteers from the PrestaShop developer community: allowing them to take over the responsibility of maintaining PrestaShop 1.6.1.x beyond the end of official support." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/1.6.1.x-what-s-next/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2019-07-04T11:30:00+02:00" />
+    <meta property="article:modified_time" content="2019-07-04T11:30:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="1.6.1.x: what’s next"/>
+<meta name="twitter:description" content="The end of 1.6 official support by the PrestaShop company. And the beginning of something new."/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">1.6.1.x: what’s next</h1>
+              
+                <h3 class="post-subtitle">The end of 1.6 official support by the PrestaShop company. And the beginning of something new.</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/4619685?s=400&amp;v=4"
+         alt="Antoine Thomas's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Antoine Thomas</div>
+        
+          <div class="author-display-role">Open Source Evangelist</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jul 4, 2019
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=1.6.1.x%3A&#43;what%E2%80%99s&#43;next&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F1.6.1.x-what-s-next%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F1.6.1.x-what-s-next%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>This last year, the PS company has been facing a dilemma: how to dedicate 100% of the developers’ time to move forward faster on the 1.7 version of the open source project, something everybody agrees on. And, at the same time, provide more time for merchants still using the 1.6 version to get ready to upgrade, by keeping them safe in case of critical issue <a href="https://www.prestashop.com/en/blog/maintenance-extension-prestashop-1-6">after the official support ends on the 30th of June 2019</a>. We have come up with a solution, thanks to the initiative and support of a few volunteers from the PrestaShop developer community: allowing them to take over the responsibility of maintaining PrestaShop 1.6.1.x beyond the end of official support.</p>
+<h2 id="what-does-it-mean">What does it mean?</h2>
+<p>Put it simply, from the 1st of July 2019, the maintenance of PrestaShop 1.6.1.x is now being performed exclusively by volunteers. If a critical issue is discovered (we think mainly of security vulnerabilities), this team of volunteers will look for solutions from the community, work on it through a process of code review and extensive testing, in order to release a patch version to solve this critical issue.</p>
+<p>Those patch versions will not be officially issued by PrestaShop nor available on prestashop.com, instead, they will be available on a dedicated GitHub repository:
+<a href="https://github.com/PrestaShop/PrestaShop-1.6">https://github.com/PrestaShop/PrestaShop-1.6</a></p>
+<p>On this repository, it will be possible to submit pull requests in order to fix critical issues to be shipped in a patch version for PrestaShop 1.6.1.x.</p>
+<h2 id="scope-of-the-maintenance">Scope of the maintenance</h2>
+<p>The volunteers and the PrestaShop company have agreed on the following objectives:</p>
+<ul>
+<li>Fix critical issues (like the recent spam attack on account creation form) or security issues</li>
+<li>Eventually, if this is considered possible, allow PrestaShop 1.6 to be run with PHP 7.2</li>
+</ul>
+<p>Consequently, non critical issues and pull requests for the 1.6 version which are not related to one of those objectives will not be merged and will be archived. This will help the new maintainers stay focused on critical patch versions.</p>
+<p>If you find a security vulnerability in the software, the process stays the same:</p>
+<ul>
+<li>Don’t speak about it publicly immediately</li>
+<li>Instead, please send an email to <a href="mailto:security@prestashop.com">security@prestashop.com</a> with details about the issue, how to reproduce it, and any other interesting details</li>
+<li>You can of course submit a patch proposal in the email</li>
+<li>When the patch is approved and the release available, you can speak about it</li>
+</ul>
+<p>If you want to participate in making the 1.6.1.x work with PHP 7.2:</p>
+<ul>
+<li>Please <a href="https://github.com/PrestaShop/PrestaShop-1.6/pulls">open a pull request on the dedicated repository</a></li>
+<li>It will be reviewed by the maintainers, of course they might ask you more information and modifications in order to approve</li>
+<li>The aim is to write good code and use best practices, and avoid “sticking-plaster”</li>
+</ul>
+<p>Similarly to the main open source project repository, each pull request will have to be approved by two maintainers before being merged, in order to be sure that it is well written and that it is not introducing new problems.</p>
+<p>When a patch version has been tested and approved by the maintainers, a build will be released on GitHub with the help of developers from the PrestaShop company.</p>
+<h2 id="the-volunteers">The volunteers</h2>
+<p>A short presentation of the volunteers:</p>
+<ul>
+<li>Olivier Le Corre, who started the discussion about this idea at the PS-Connect Lyon this Spring, a freelancer and long time active member of the ecosystem</li>
+<li>Maxime Varinard, from the software editor Vaisonet, a specialist on synchronization of PrestaShop with other information systems</li>
+<li>Krystian Podemski, Polish ambassador and freelancer, also a long-time and well-known member of the community</li>
+<li>Danoosh Miralayi, from iPresta team, the Iranian agency at the origin of the RTLimplementation for arab and persian languages in PrestaShop</li>
+</ul>
+<h2 id="how-to-upgrade">How to upgrade</h2>
+<p>As eventual upcoming versions will not be official versions by the PrestaShop company, they will not be listed in the auto-upgrade module.</p>
+<p>However, it is possible to provide a zip of the installer to the auto-upgrade module and launch the upgrade anyway. And of course, other ways are available, like Migration Pro and manual updates.</p>
+<p>A usual, it is recommended to be careful before starting to update your website to the latest patch version:</p>
+<ul>
+<li>Backup your database and your files</li>
+<li>Test the update on a testing or pre production server</li>
+<li>If everything is fine, then update on the production environment</li>
+</ul>
+<p>If you don’t have the technical skills, do not hesitate to find an expert. Many freelancers and agencies know how to do that well.</p>
+<h2 id="when-will-this-maintenance-stop">When will this maintenance stop</h2>
+<p>When no volunteers will be available to maintain the 1.6 anymore, it will become obvious that this will be the real end.</p>
+<p>It will of course depend on many things:</p>
+<ul>
+<li>How fast merchants, freelancers and agencies migrate and adopt the 1.7</li>
+<li>How many merchants choose to keep their shop on 1.6, for whatever reason. The most probable one is that some shops have been heavily modified to adapt the software to the business workflow and specificity, and are difficult to migrate in that state.</li>
+<li>How fast web hosting companies will force the use of new versions of PHP.</li>
+<li>How difficult it will be to eventually patch the legacy code to support new versions of PHP.</li>
+</ul>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jul 4, 2019</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.6/">1.6</a>
+
+  <a class="label label-primary" href="/tag/Maintenance/">Maintenance</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Antoine Thomas
+      <span>Open Source Evangelist</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/ttoine">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

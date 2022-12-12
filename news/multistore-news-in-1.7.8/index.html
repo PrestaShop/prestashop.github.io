@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Multistore feature in PrestaShop 1.7.8: What&#39;s new?</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Multistore feature in PrestaShop 1.7.8: What&#39;s new?" />
+<meta property="og:description" content="With the release of the new version 1.7.8 which is in progress, this article details one of the main features revamps of this version: the multistore." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/multistore-news-in-1.7.8/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2021-06-16T09:00:00+02:00" />
+    <meta property="article:modified_time" content="2021-06-16T09:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Multistore feature in PrestaShop 1.7.8: What&#39;s new?"/>
+<meta name="twitter:description" content="Introducing the revamp of the multistore"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Multistore feature in PrestaShop 1.7.8: What&#39;s new?</h1>
+              
+                <h3 class="post-subtitle">Introducing the revamp of the multistore</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/13449658?s=400&amp;v=4"
+         alt="Marion François's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Marion François</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jun 16, 2021
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Multistore&#43;feature&#43;in&#43;PrestaShop&#43;1.7.8%3A&#43;What%27s&#43;new%3F&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fmultistore-news-in-1.7.8%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fmultistore-news-in-1.7.8%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>With the release of the new version 1.7.8 which is in progress, this article details one of the main features revamps of this version: the multistore.</p>
+<p>The multistore feature allows merchants to manage several front offices through a single back office. It’s frequently used by merchants who sell in different countries and therefore have different languages and/or currencies. It is also used by merchants who do both B2B and B2C. And it is more rarely used by merchants who have several brands.</p>
+<p>We are thrilled to introduce you to the new features and changes around the multistore feature. But before jumping into the features awaiting our users in this new version, we would like to share our research and conception process.</p>
+<p><strong>Firstly, why rethinking this feature?</strong></p>
+<p>The multistore feature was introduced in PrestaShop 1.5 and had not been reworked for many years.
+In addition, some features of the multistore having disappeared with the Symfony migration, this feature was becoming particularly unattractive. It was also hard to use in the back office because of its old interface that led to misunderstanding and configuration errors for users.</p>
+<p>In late 2019, the PrestaShop Product team decided to revamp the multistore feature in the back office. At the origins of this project was a thorough investigation to understand the main pain points.</p>
+<p>This decision opened an opportunity to revamp the multistore feature which would be more understandable and easier to use.</p>
+<p><strong>A long process to ensure the full success of the revamp.</strong></p>
+<p>First, to have a better understanding of our users&rsquo; pain points, we interviewed merchants with a different number of shops and different business activities such as B2B / B2C, selling in different countries. We also interviewed web agencies of different sizes.</p>
+<p>Secondly, we made a competitive analysis to identify opportunities and threats.</p>
+<p>Then, once the pain points were well understood and with better knowledge of the market, the Product team and Product designers organized mockup tests to present different solutions to users.</p>
+<p>Finally, pain points encountered were addressed with a new user interface, new features, and more information messages.</p>
+<p><strong>Now, let’s present these changes.</strong></p>
+<h2 id="i--the-new-color-system-and-multistore-header">I.  The new color system and multistore header</h2>
+<p>One of the main difficulties for the merchants was to know which store they were configuring in the back office and this was bringing a lot of configuration errors.</p>
+<p>To solve this problem, a color picker was added to choose a color for each group and shop. The color can be configured while creating or editing the group or the shop (in the back-office &gt; Advanced parameters &gt; Multistore).</p>
+<p><img src="/assets/images/2021/06/multistore_colorpicker.png" alt="The new multistore colorpicker"></p>
+<p>Once configured, the color is displayed in the new multistore header, when a group or a shop is selected, making it easy for the user to know what shop he/she is working on.</p>
+<p><img src="/assets/images/2021/06/multistore_header_maintenance.png" alt="The new multistore header"></p>
+<p>If you have existing groups and shops without colors, the default color is light grey. We highly recommend editing them to add a personalized color. By the way, it’s possible to change it by clicking directly on the color icon, before the name of each group and shop in the drop-down of the header.</p>
+<p><img src="/assets/images/2021/06/multistore_context_dropdown.png" alt="The new multistore drop-down context"></p>
+<p><img src="/assets/images/2021/06/multistore_edit_color.png" alt="Edit color"></p>
+<p>Please note, the “all shops” context is blue by default and this color can’t be changed.</p>
+<p><img src="/assets/images/2021/06/multistore_allshops_context.png" alt="Multistore all shops context"></p>
+<p><strong>The new header</strong></p>
+<p>The new multistore header is displayed on Symfony pages and is more visible than the old shop context selector, still present on legacy pages. Merchants can find in this header everything related to the multistore feature and can perform several actions:</p>
+<ul>
+<li>Changing context through the drop-down: Select “All shops” context to apply a change to all stores, select a group of shops to apply changes to all the stores of this group, or select a specific store.</li>
+<li>Changing context through the search bar with autocompletion: allows you to search and select a shop or a group quickly, this is particularly helpful if you have a lot of shops.</li>
+<li>Configure URL: This link is displayed if no URL has been configured, it redirects to the shop URL edition page and allows to add the URL of the shop.</li>
+<li>View my shop: This link is displayed if an URL has been configured and opens the shop front office to quickly have access to your store.</li>
+</ul>
+<h2 id="ii--checkboxes">II.  Checkboxes</h2>
+<p>Checkboxes are displayed in a specific shop context and a group context.
+They are displayed before each field/toggle/parameter and allow merchants to apply specific settings to a store or a group of shops. Merchants just need to select the parameter to modify, bring their modifications, and then save.</p>
+<p>When checkboxes are not selected, the fields or toggles are disabled.</p>
+<p>Checkboxes allow:</p>
+<ul>
+<li>to select one or many fields/toggles</li>
+<li>to enable selected fields/toggles</li>
+<li>to apply a different configuration for the selected store or group</li>
+<li>the merchant to see which parameters have a different value for the selected store or group</li>
+</ul>
+<p><img src="/assets/images/2021/06/multistore_checkboxes.png" alt="Multistore checkboxes"></p>
+<p>For now, they have been implemented <strong>only on the Maintenance page of the back office</strong>. It will be implemented on the pages not yet migrated during the Symfony migration. For the pages already migrated in Symfony, we are looking for developers to implement it, so if you are willing to do this, please let us know in a comment :)</p>
+<h2 id="iii--specific-settings-drop-down">III.  Specific settings drop-down</h2>
+<p>This drop-down is displayed in the “all shops” context and group contexts. It allows you to see which settings have been customized in one or several specific shops. And therefore, the settings that will not be overridden following a change made in “all shops” or in a group context.</p>
+<p>For now, it has been implemented <strong>only on the Maintenance page of the back office</strong>. It will be implemented on the pages not yet migrated during the Symfony migration. For the pages already migrated in Symfony, we are looking for developers to implement it, so if you are willing to do this, please let us know in a comment :)</p>
+<p><strong>Search bar</strong></p>
+<p>In the specific settings drop-down, there is a search bar with auto-completion allowing you to search and select a shop or a group quickly. If the user chooses one of the listed results, it is automatically selected as context.</p>
+<p>In the specific settings drop-down there are:</p>
+<ul>
+<li>The shop groups’ names with a link to select them as context</li>
+<li>The shops’ names with a link to select them as context</li>
+</ul>
+<p>Next to each shop name, there is a mention:</p>
+<ul>
+<li>&ldquo;Inherited&rdquo; if the parameter has the same value as in the “all shops” context</li>
+<li>&ldquo;Customized&rdquo; if the parameter has a different value in a specific shop</li>
+</ul>
+<p><img src="/assets/images/2021/06/multistore_specific_settings_dropdown.png" alt="Multistore specific settings dropdown"></p>
+<h2 id="iv--information-messages">IV.  Information messages</h2>
+<p>Many information messages have been added on different pages and in different locations of the back office to provide better assistance, to inform of some behaviors as early as possible, and to avoid misunderstandings.</p>
+<p>For example, some pages are available only in the “all shops” context, and consequently, when you arrive on these pages, the context automatically switches to “all shops”. To prevent any issue, an information message has been added: &ldquo;Note that this page is available in all shops context only, this is why your context has just switched.&rdquo;</p>
+<h2 id="v--modules">V.  Modules</h2>
+<p>Another pain identified during the user research step, was the difficulty of knowing whether a module is compatible with the multistore or not.</p>
+<p>To solve this problem the first thing to do was to define the notion of compatibility. A module can be :</p>
+<ul>
+<li>compatible,</li>
+<li>partially compatible,</li>
+<li>incompatible</li>
+<li>or not concerned with the multistore compatibility.</li>
+</ul>
+<p>A module is considered compatible with the multistore feature when it can be either:</p>
+<ul>
+<li>configured differently from one store to another;</li>
+<li>configured quickly in the same way on all stores thanks to the “All shops&quot; context or the group of shops;</li>
+<li>or even activated for one store and deactivated for another.</li>
+</ul>
+<p>A partially compatible module means that some of its options may not be available or may not work in a multistore context.</p>
+<p>An incompatible module means that its configuration applies to all stores.</p>
+<p>A module may also not be concerned with multistore compatibility. For example, a captcha module will have the same configuration for all stores.</p>
+<p>The second thing was to indicate for each module their compatibility or not with the multistore.</p>
+<p>For native modules’, we have indicated the multistore compatibility in the  <a href="https://github.com/PrestaShop/ps_emailalerts/pull/44/files">readme.md</a> of each module.</p>
+<p>Modules developers can now indicate the multistore compatibility in the source code of their module, by declaring a <code>multistoreCompatibility</code> attribute, and give it one of the following constants as a value: <code>MULTISTORE_COMPATIBILITY_YES</code>, <code>MULTISTORE_COMPATIBILITY_PARTIAL</code>, <code>MULTISTORE_COMPATIBILITY_NO</code>, or <code>MULTISTORE_COMPATIBILITY_NOT_CONCERNED</code>.
+Example: <code>public $multistoreCompatibility = self:: MULTISTORE_COMPATIBILITY_YES</code></p>
+<p>This way, the multistore compatibility is indicated for merchants in their back office for the installed modules. This information is displayed when clicking on the “read more” link of installed modules in the Module Manager section.</p>
+<p><img src="/assets/images/2021/06/multistore_module_compatibility.png" alt="Multistore module compatibility"></p>
+<p>The third thing was to help contributors to develop &amp; make their modules compatible with multistore. For this, an <a href="https://github.com/PrestaShop/example-modules/pull/64">example module</a> has been developed and the <a href="https://devdocs.prestashop.com/1.7/development/multistore/configuration-forms/">multistore developer documentation</a> has been updated.</p>
+<h2 id="vi--linklist-module">VI.  Linklist module</h2>
+<p>The <a href="https://github.com/PrestaShop/ps_linklist">linklist module</a> allows displaying links such as Terms &amp; conditions, new products, contact, sitemap … in the footer.</p>
+<p>Many users complained about the fact that <a href="https://github.com/PrestaShop/PrestaShop/issues/9795">the linklist module wasn&rsquo;t compatible with the multistore feature</a>, as it was quite annoying for their activity, not being able to have different links in their footer.</p>
+<p>This is why we decided to make this module <a href="https://github.com/PrestaShop/ps_linklist/pull/114">compatible with the multistore</a> and this was made possible thanks to the great work of <a href="https://github.com/kpodemski">Krystian Podemski</a> 🙏</p>
+<p>To do so, a feature has been added, and you must already know it because it is present on other pages. It’s the shop association block. You know, this block allows you to choose which shop(s) the element will be associated with while creating or editing it?</p>
+<p><img src="/assets/images/2021/06/multistore_shop_association_block.png" alt="Multistore shop association block"></p>
+<p>The new multistore header has also been added to the linklist module.</p>
+<p>The linklist module <a href="https://github.com/PrestaShop/ps_linklist/releases/tag/v5.0.0">version 5.0.0</a> is now 100% compatible with the multistore feature and can be used for shops using PrestaShop 1.7.8 version and above.</p>
+<h2 id="closing-notes">Closing notes</h2>
+<p>Over the last few months, PrestaShop has been working hard to deliver these new features and changes. Overall, the multistore feature revamp ensures a better usage and understanding, and a better global user experience by addressing the main pain points.</p>
+<p>As you may know, big technical changes are not possible in a minor version because we must avoid backward compatibility breaks. We had to make choices, to bring value to users of this feature while maintaining backward compatibility.</p>
+<p>We encourage you to try out the features on the beta version and share any feedback <a href="https://github.com/PrestaShop/PrestaShop/issues/new/choose">here</a>. Your opinion is important to us. We are counting on you to share your feedback and new ideas with us so that we can continue to improve the multistore feature that you need.</p>
+<p>This iterative process was made possible thanks to the contribution of many merchants and web agencies who gave their time to participate in interviews, surveys, and test prototypes, which resulted in useful feedback. We are super grateful to them! That’s the open-source spirit and that’s how we can build the software that our users need.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jun 16, 2021</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7.8/">1.7.8</a>
+
+  <a class="label label-primary" href="/tag/version/">version</a>
+
+  <a class="label label-primary" href="/tag/minor/">minor</a>
+
+  <a class="label label-primary" href="/tag/product/">product</a>
+
+  <a class="label label-primary" href="/tag/ux/">ux</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Marion François
+      <span>Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/marionf">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

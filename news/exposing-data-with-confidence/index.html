@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Exposing data with confidence in PrestaShop 1.7</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Exposing data with confidence in PrestaShop 1.7" />
+<meta property="og:description" content="During the last few months, we have received a lot of feedback from the community pointing out issues with how PrestaShop 1.7 makes shop data available in the front office." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/exposing-data-with-confidence/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2018-04-06T09:10:11+02:00" />
+    <meta property="article:modified_time" content="2018-04-06T09:10:11+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Exposing data with confidence in PrestaShop 1.7"/>
+<meta name="twitter:description" content="We are improving how data is exposed in the front office"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Exposing data with confidence in PrestaShop 1.7</h1>
+              
+                <h3 class="post-subtitle">We are improving how data is exposed in the front office</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/1009343?s=400&amp;v=4"
+         alt="Pablo Borowicz's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Pablo Borowicz</div>
+        
+          <div class="author-display-role">VP of Core Engineering</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Apr 6, 2018
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Exposing&#43;data&#43;with&#43;confidence&#43;in&#43;PrestaShop&#43;1.7&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fexposing-data-with-confidence%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fexposing-data-with-confidence%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>During the last few months, we have received a lot of feedback from the community pointing out issues with how PrestaShop 1.7 makes shop data available in the front office.</p>
+<p>In this article, we&rsquo;ll see how the upcoming PrestaShop 1.7.3.1 will address this problem.</p>
+<p><strong>TL;DR:</strong> We have changed the way PrestaShop filters data going to the browser. If you didn&rsquo;t change your Models, this shouldn&rsquo;t impact you :)</p>
+<h2 id="some-context">Some context</h2>
+<p>PrestaShop 1.7 has several ways of making data available to the front office, including:</p>
+<ul>
+<li>General purpose variables (such as <code>configuration</code>, <code>cart</code>, <code>shop</code>&hellip;) which are automatically added to Smarty templates.</li>
+<li>A <code>prestashop</code> javascript object containing the same general purpose variables, which makes them available everywhere in the Front Office.</li>
+<li>Ajax response objects, such as the one used for search autocomplete.</li>
+</ul>
+<p>Most of the exposed objects are enriched versions of PrestaShops&rsquo; models (<code>ObjectModel</code>) such as <code>Product</code>, <code>Cart</code> and so on.</p>
+<h2 id="the-problem">The problem</h2>
+<p>In the current implementation, the server-side layer (smarty templates) and the client-side layer (prestashop object, ajax response) share <em>the same objects</em>. Why is that a problem?</p>
+<h3 id="1-mixed-concerns">1. Mixed concerns</h3>
+<p>Server-side layers and client-side ones actually have different needs. While the templates need as much information as possible for maximum flexibility, the client-side layer needs to receive as little as possible, both for network-related performance as well as for security reasons.</p>
+<h3 id="2-data-exposure">2. Data exposure</h3>
+<p>Since templates live in the server, it&rsquo;s not a problem allowing them access to sensitive data. However, data being sent to the client is a whole different story, and should be handled carefully. For example, you don&rsquo;t want everyone to know the wholesale price for a product, so it shouldn&rsquo;t be included in data being sent to the client.</p>
+<h3 id="3-extensibility">3. Extensibility</h3>
+<p>PrestaShop is an extensible platform, but with extensibility comes uncertainty: it&rsquo;s impossible to know in advance what data will be added to the models by modules or customizations. This means that PrestaShop needs to be <strong>open to customization</strong> while keeping data <strong>safe by default</strong>.</p>
+<h2 id="the-solution">The solution</h2>
+<p>Starting on 1.7.3.1, PrestaShop will filter all the data it sends to the client-side using a <em>whitelist</em>-based filtering service.</p>
+<p><strong>Remember:</strong> only data sent to the client is filtered. Smarty objects will be kept as they were.</p>
+<h3 id="why-not-a-blacklist">Why not a blacklist?</h3>
+<p>A blacklist is <strong>unsafe by default</strong>. Not only because it needs PrestaShop to know everything it needs to remove <strong>in advance</strong>, which is impossible due to the extensible nature of PrestaShop, where data can be modified by anyone anytime. But it also relies on developers knowing that <em>they</em> need to actively filter new information out, or risk data leaks – and that&rsquo;s too easy to miss. In fact, <strong>it&rsquo;s what has actually happened</strong>.</p>
+<p>In comparison, a whitelist allows shops to be <strong>safe by default</strong>. Models can evolve in any way, and data won&rsquo;t accidentally be leaked – by design. Developers need to <em>add</em> new information into the whitelist if they want to expose it. If it&rsquo;s not used, everything will work fine. But if it is used, they&rsquo;ll notice it right away.</p>
+<h2 id="so-how-does-this-impact-me">So how does this impact me?</h2>
+<p>If you have customized your PrestaShop or if you are a module developer, here&rsquo;s what you need to know.</p>
+<h3 id="i-customized-my-models-but-i-only-use-my-custom-data-in-smarty-templates">I customized my models but I only use my custom data in Smarty templates</h3>
+<p>Good news! You don&rsquo;t need to do anything. As stated before, objects being sent to the templates are not filtered, so everything will work the same as before.</p>
+<h3 id="i-customized-my-models-and-i-need-my-custom-data-on-the-client-side">I customized my models and I need my custom data on the client side</h3>
+<p>You need to add your data keys to the front end filter service. Here&rsquo;s how.</p>
+<p>Since PrestaShop 1.7.3, modules are able to access the dependency container in back office controllers. Starting on 1.7.3.1, they will also have access to the front office dependency container, so accessing the filter service from your module is as simple as:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;prestashop.core.filter.front_end_object.main&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><h4 id="some-examples">Some examples</h4>
+<h5 id="whitelisting-a-property">Whitelisting a property</h5>
+<p>Let&rsquo;s say you have added <code>puffin_product_url</code> to your <code>Product</code> model and you want it to be made available on the browser when the customer adds a product to his cart.</p>
+<p>Here&rsquo;s how you can add <code>puffin_product_url</code> to the whitelist by using a module attached to the <code>actionFrontControllerAfterInit</code> hook:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">function</span> <span class="nf">hookActionFrontControllerAfterInit</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$filterManager</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;prestashop.core.filter.front_end_object.main&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// get list of all filters applied to client-side data
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$filters</span> <span class="o">=</span> <span class="nv">$filterManager</span><span class="o">-&gt;</span><span class="na">getFilters</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// get list of all filters applied to the cart object
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$cartFilters</span> <span class="o">=</span> <span class="nv">$filters</span><span class="p">[</span><span class="s1">&#39;cart&#39;</span><span class="p">]</span><span class="o">-&gt;</span><span class="na">getFilters</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// get list of filters applied to each product inside the cart object
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$productFilterQueue</span> <span class="o">=</span> <span class="nv">$cartFilters</span><span class="p">[</span><span class="s1">&#39;products&#39;</span><span class="p">]</span><span class="o">-&gt;</span><span class="na">getQueue</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$productFilterQueue</span> <span class="k">as</span> <span class="nv">$filter</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// add puffin_product_url to the product whitelist
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">// note: whitelist() needs an array regardless of the number of elements to whitelist
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="nv">$filter</span> <span class="nx">instanceof</span> <span class="nx">PrestaShop\PrestaShop\Core\Filter\FrontEndObject\ProductFilter</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">$filter</span><span class="o">-&gt;</span><span class="na">whitelist</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;puffin_product_url&#39;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h5 id="removing-a-property">Removing a property</h5>
+<p>Let&rsquo;s say you want to remove <code>price</code> from your exposed cart Products.</p>
+<p>Again, you can hook into <code>actionFrontControllerAfterInit</code> and remove <code>price</code> from the product whitelist:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">function</span> <span class="nf">hookActionFrontControllerAfterInit</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$filterManager</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;prestashop.core.filter.front_end_object.main&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// get list of all filters applied to client-side data
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$filters</span> <span class="o">=</span> <span class="nv">$filterManager</span><span class="o">-&gt;</span><span class="na">getFilters</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// get list of all filters applied to the cart object
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$cartFilters</span> <span class="o">=</span> <span class="nv">$filters</span><span class="p">[</span><span class="s1">&#39;cart&#39;</span><span class="p">]</span><span class="o">-&gt;</span><span class="na">getFilters</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// get list of filters applied to each product inside the cart object
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$productFilterQueue</span> <span class="o">=</span> <span class="nv">$cartFilters</span><span class="p">[</span><span class="s1">&#39;products&#39;</span><span class="p">]</span><span class="o">-&gt;</span><span class="na">getQueue</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$productFilterQueue</span> <span class="k">as</span> <span class="nv">$filter</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// remove &#34;price&#34; from the product whitelist
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="nv">$filter</span> <span class="nx">instanceof</span> <span class="nx">PrestaShop\PrestaShop\Core\Filter\FrontEndObject\ProductFilter</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">$filter</span><span class="o">-&gt;</span><span class="na">removeFromWhitelist</span><span class="p">(</span><span class="s1">&#39;price&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h5 id="bonus-make-new-information-available-in-the-front-office">Bonus: make new information available in the Front Office</h5>
+<p>Let&rsquo;s say you want to add an element named <code>my_custom_data</code> to the <code>prestashop</code> object. It&rsquo;s super easy!</p>
+<p>Just hook into <code>actionBuildFrontEndObject</code> and add <code>my_custom_data</code> to <code>$params</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">function</span> <span class="nf">hookActionBuildFrontEndObject</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$params</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// contains all the data in the prestashop object
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$prestashopObject</span> <span class="o">=&amp;</span> <span class="nv">$params</span><span class="p">[</span><span class="s1">&#39;obj&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// add custom data like this
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nv">$prestashopObject</span><span class="p">[</span><span class="s1">&#39;my_custom_data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;foobar&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Alternatively, this lets you <em>alter</em> the prestashop object after it&rsquo;s filtered. Use with caution!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Apr 6, 2018</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/1.7.3.x/">1.7.3.x</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Pablo Borowicz
+      <span>VP of Core Engineering</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/eternoendless">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

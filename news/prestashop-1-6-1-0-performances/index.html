@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop 1.6.1.0: a new level of performances</title>
+    <link href="/style.css?1670854426" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop 1.6.1.0: a new level of performances" />
+<meta property="og:description" content="A lot of things have been improved on PrestaShop 1.6.1.0:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/prestashop-1-6-1-0-performances/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2015-06-22T18:29:47+02:00" />
+    <meta property="article:modified_time" content="2015-06-22T18:29:47+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="PrestaShop 1.6.1.0: a new level of performances"/>
+<meta name="twitter:description" content="Where version 1.6.1.0&#39;s performances shine"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop 1.6.1.0: a new level of performances</h1>
+              
+                <h3 class="post-subtitle">Where version 1.6.1.0&#39;s performances shine</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/1429072"
+         alt="Jocelyn Fournier's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Jocelyn Fournier</div>
+        
+          <div class="author-display-role">CEO &amp; Founder @ Softizy</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jun 22, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;1.6.1.0%3A&#43;a&#43;new&#43;level&#43;of&#43;performances&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fprestashop-1-6-1-0-performances%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fprestashop-1-6-1-0-performances%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>A lot of things have been improved on PrestaShop 1.6.1.0:</p>
+<ul>
+<li>Design.</li>
+<li>Invoices.</li>
+<li>Search.</li>
+<li>Performance.</li>
+</ul>
+<p>We have done a lot of work to improve the overall performances of PrestaShop, and reached in some cases a whooping <strong>10x improvement</strong>.</p>
+<p>Let’s now dig into the optimizations we have put in place, and do some benchmarks.</p>
+<p><em>Note: This article was first published by Jocelyn on his blog at Softizy. <a href="https://www.softizy.com/blog/prestashop-1-6-1-0-performances/">Read the original here</a>.</em></p>
+<h2 id="which-parts-of-prestashop-are-faster">Which parts of PrestaShop are faster?</h2>
+<h3 id="faster-single-threaded-performances">Faster single-threaded performances</h3>
+<p>Thanks to our internal tools (to be publicly released soon!), we quickly identified the bottlenecks of PrestaShop which were directly impacting the generation time of some pages, and hence the SEO and user satisfaction.</p>
+<p>At the PHP level, with the cache deactivated and after launching a crawl on a real shop, we collected all the data we needed in a few minutes:</p>
+<p><img src="/assets/images/2015/06/perfs/php_bottleneck.jpg" alt="PHP bottleneck"></p>
+<p>Same at the SQL level:</p>
+<p><img src="/assets/images/2015/06/perfs/bottleneck.jpg" alt="SQL bottleneck"></p>
+<p>Thanks to these findings, we have rewritten a large amount of SQL queries to improve their efficiency, and we improved the PHP core to remove the detected bottlenecks.</p>
+<h3 id="faster-multi-threaded-performances">Faster multi-threaded performances</h3>
+<p>Beside the huge work on the query performances, we have worked a lot on the SQL queries to make sure the MySQL query cache is used efficiently. We also fixed a few nasty issues in the PrestaShop cache. Actually, most of the time the use of the PrestaShop cache was decreasing the performance. This is no longer the case!</p>
+<h3 id="specific-optimizations-for-multi-front--cloud-environment">Specific optimizations for multi-front / cloud environment</h3>
+<p>PrestaShop is using Smarty to handle the templates. If you are using several front servers, the out of the box Smarty implementation forces you to centralize its cache on a shared filesystem (NFS).</p>
+<p>To remove this limitation, we added a custom Smarty module which makes it work perfectly with a local Smarty cache (no more NFS needed!). Moreover, our implementation sped up a lot the cases where the cache had to be invalidated: instead of flushing all the files at once, each template is flushed asynchronously.</p>
+<p>This quickened a lot all the back office operations!</p>
+<h3 id="better-back-office-performances">Better back office performances</h3>
+<p>We removed the most frustrating bottleneck in the PrestaShop back office:</p>
+<ul>
+<li><strong>Faster imports</strong>: We worked hard to improve the import speed. The more you import products, the more you’ll see the speed up!</li>
+<li><strong>Better search indexing</strong>: We improved both the memory usage and the search indexing speed.</li>
+<li><strong>No more issue with huge cart rules or categories</strong>: Cart rules and categories are now loaded asynchronously.</li>
+</ul>
+<h2 id="lets-bench">Let’s bench!</h2>
+<h3 id="the-configuration">The configuration</h3>
+<p>To do this benchmark, we chose to use a dedicated Mini HG server from OVH, which offers high performances for a fairly decent price:</p>
+<ul>
+<li>CPU: Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz (8 cores, 16 threads)</li>
+<li>Memory: 64 GB</li>
+<li>Disk: 2x SSD 600 GB</li>
+<li>RAID Controller: LSI MegaRAID SAS 9271-4i CacheVault 1G FastPath</li>
+</ul>
+<p>We used a <a href="https://www.debian.org/releases/stable/">Debian Jessie</a>, with the standard packages, and a properly optimized configuration:</p>
+<ul>
+<li>Apache 2.4.10, with <a href="http://httpd.apache.org/docs/2.4/mod/event.html">mpm_event</a> and the following configuration:</li>
+</ul>
+<pre>ServerLimit             16
+MaxClients              400
+StartServers            3
+ThreadLimit             64
+ThreadsPerChild         25
+MaxRequestWorkers       400
+MaxConnectionsPerChild  0</pre>
+<ul>
+<li>PHP 5.6.7 and <a href="https://pecl.php.net/package/APCu">APCu</a> + <a href="https://pecl.php.net/package/ZendOpcache">Zend OpCache</a> v7.0.4-dev in <a href="http://php-fpm.org/">PHP-FPM</a> mode with the following configuration:</li>
+</ul>
+<pre>pm                    = dynamic
+pm.max_children       = 400
+pm.start_servers      = 75
+pm.min_spare_servers  = 50
+pm.max_spare_servers  = 100</pre>
+<ul>
+<li>MariaDB 10.0.0.19, with the following configuration:</li>
+</ul>
+<pre>performance_schema                    = OFF
+innodb_lock_wait_timeout              = 120
+default_storage_engine                = InnoDB
+max_allowed_packet                    = 16M
+key_buffer_size                       = 128M
+table_cache                           = 4096
+read_buffer_size                      = 2M
+read_rnd_buffer_size                  = 1M
+thread_cache_size                     = 80
+join_buffer_size                      = 2M
+sort_buffer_size                      = 2M
+max_connections                       = 400
+tmp_table_size                        = 32M
+max_heap_table_size                   = 32M
+table_definition_cache                = 8192
+query_cache_size                      = 32M
+innodb_buffer_pool_size               = 3G
+innodb_log_file_size                  = 128M
+innodb_log_files_in_group             = 2
+innodb_log_buffer_size                = 8M
+innodb_flush_log_at_trx_commit        = 2
+innodb_thread_concurrency             = 32
+innodb_read_io_threads                = 8
+innodb_write_io_threads               = 8
+innodb_flush_method                   = O_DIRECT
+innodb_file_per_table                 = 1
+innodb_io_capacity                    = 2000
+innodb_file_format                    = Barracuda
+innodb_buffer_pool_dump_at_shutdown   = ON
+innodb_buffer_pool_load_at_startup    = ON
+innodb_checksum_algorithm             = crc32
+innodb_log_compressed_pages           = 0
+# SSD
+innodb_flush_neighbors                = 0
+# Mutex contention
+innodb_adaptive_hash_index_partitions = 16
+innodb_buffer_pool_instances          = 16</pre>
+<p>We tested a real shop with:</p>
+<ul>
+<li>1,827 categories</li>
+<li>10,843 cart rules</li>
+<li>1,904 products</li>
+<li>2M product attributes</li>
+<li>16.5M attribute combinations</li>
+</ul>
+<p>When Memcached is used, it’s configured locally, with 128 MB of memory.</p>
+<p>The single-threaded and multi-threaded benchmarks results are the average of 5 “<a href="https://www.joedog.org/siege-home/">siege</a> -i -b -t 20S” (20s benchmark), on representative pages which have a direct impact on user navigation and SEO:</p>
+<ul>
+<li>Category pages</li>
+<li>Product pages</li>
+<li>Home pages</li>
+<li>Cart pages</li>
+<li>Best sales pages</li>
+<li>Tag search pages</li>
+<li>Manufacturer pages</li>
+<li>New product pages</li>
+<li>Price drop pages</li>
+<li>Supplier pages</li>
+<li>Search pages</li>
+</ul>
+<h3 id="the-results">The results</h3>
+<h4 id="front-performances">Front performances</h4>
+<p>First, the single-threaded performances:</p>
+<p><img src="/assets/images/2015/06/perfs/single-threaded-performances2.jpg" alt="Prestashop 1.6.1.0: single-threaded performances"></p>
+<p>It looks promising: up to <strong>10x improvement</strong> when Memcached is On!</p>
+<p>Let’s take a look at how the new 1.6.1.0 scales:</p>
+<p><img src="/assets/images/2015/06/perfs/multi-threaded-performances1.jpg" alt="Prestashop 1.6.1.0 : Multi-threaded performances with Query Cache and Memcached disabled"></p>
+<p>Even without any cache, 1.6.1.0 scales much better than 1.6.0.14, and is <strong>up to 65% faster with 15 concurrent connections</strong>.</p>
+<p><img src="/assets/images/2015/06/perfs/multi-threaded-performances-qc-on-memcached-off1.png" alt="Prestashop 1.6.1.0: Multi-threaded performances with Query Cache enabled and Memcached disabled"></p>
+<p>If we enable the query cache, the 1.6.1.0 is still <strong>up to 50% faster with 10 concurrent connections</strong>.</p>
+<p><img src="/assets/images/2015/06/perfs/multi-threaded-performances-qc-on-memcached-on3.png" alt="CC0 Logo"></p>
+<p>Well, we definitely fixed the PrestaShop cache issue. We reach almost a <strong>10x improvement with 10 concurrent connections</strong>!</p>
+<p>Here are the performances side by side, at 10 concurrent connections:</p>
+<p><img src="/assets/images/2015/06/perfs/multi-threaded-performances1.jpg" alt="CC0 Logo"></p>
+<h4 id="back-office-performances">Back office performances</h4>
+<p>Here are a few results from the back office.</p>
+<p><strong>Full search reindexing:</strong></p>
+<p><img src="/assets/images/2015/06/perfs/search-index-time3.png" alt="CC0 Logo"></p>
+<p>On the performance side, when Memcached is enabled, 1.6.0.14 times out after 900s, and eats more than 128 MB of memory. When Memcached is disabled, <strong>1.6.1.0 is 2.3x faster than 1.6.0.14, eats 1.7x less memory</strong>, and fixes a bug with multi attributes. Not bad!</p>
+<p><strong>Import speed:</strong></p>
+<p><img src="/assets/images/2015/06/perfs/import-time1.png" alt="CC0 Logo"></p>
+<p>Although those results were not computed on the same machine, I decided to include them as well to show you the potential speed you could expect with the import in 1.6.1.0 (here <strong>almost a 5x speed up</strong>).</p>
+<p>Now let’s measure the time to load some back office pages.</p>
+<p><strong>Product edit:</strong></p>
+<p><img src="/assets/images/2015/06/perfs/edit-product3.png" alt="CC0 Logo"></p>
+<p>In our case, with 1,827 categories, <strong>1.6.1.0 is 1.7x faster</strong>.</p>
+<p><strong>Cart rules:</strong></p>
+<p><img src="/assets/images/2015/06/perfs/edit-cart-rules1.png" alt="CC0 Logo"></p>
+<p>With 10843 cart rules, once again <strong>1.6.1.0 is 1.7x faster</strong>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>1.6.1.0 is a major release in terms of performances, with up to 10x speed up in some cases.</p>
+<p>To achieve those results we have worked really closely with the PrestaShop team, modifying about 6600 lines of code in a few months. We hope you’ll be happy with this version, and don’t hesitate to report any performance issues on <a href="http://forge.prestashop.com">the Forge</a>!</p>
+<p>Final note: Whereas in 1.6.0.14 we recommended to not enable the PrestaShop cache, in 1.6.1.0 we recommend you to enable it, with a local Memcached server (APC should be OK as well).</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jun 22, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.6/">1.6</a>
+
+  <a class="label label-primary" href="/tag/1.6.1.x/">1.6.1.x</a>
+
+  <a class="label label-primary" href="/tag/performance/">performance</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Jocelyn Fournier
+      <span>CEO &amp; Founder @ Softizy</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/jocel1">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/softizy_optim">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.softizy.com">
+        <i class="icon-home"></i> Website
+      </a>
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

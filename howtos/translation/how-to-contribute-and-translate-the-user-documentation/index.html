@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>How to contribute to the User Guide and help translate it</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="How to contribute to the User Guide and help translate it" />
+<meta property="og:description" content="Some of you contacted us to help translate the PrestaShop User Guide into their language. To make things easier for anyone who wants to help write some user documentation, here is a quick guide on how to use Confluence, on which our user documentation is hosted." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/howtos/translation/how-to-contribute-and-translate-the-user-documentation/" />
+    <meta property="article:section" content="howtos" />
+    <meta property="article:published_time" content="2017-01-12T06:09:47+01:00" />
+    <meta property="article:modified_time" content="2017-01-12T06:09:47+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="How to contribute to the User Guide and help translate it"/>
+<meta name="twitter:description" content="A quick guide to writing PrestaShop Documentation on Confluence"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">How to contribute to the User Guide and help translate it</h1>
+              
+                <h3 class="post-subtitle">A quick guide to writing PrestaShop Documentation on Confluence</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/7910738"
+         alt="Alex Even's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Alex Even</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jan 12, 2017
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=How&#43;to&#43;contribute&#43;to&#43;the&#43;User&#43;Guide&#43;and&#43;help&#43;translate&#43;it&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Ftranslation%2Fhow-to-contribute-and-translate-the-user-documentation%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fhowtos%2Ftranslation%2Fhow-to-contribute-and-translate-the-user-documentation%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Some of you contacted us to help translate the <a href="http://doc.prestashop.com/display/PS17/User+Guide">PrestaShop User Guide</a> into their language. To make things easier for anyone who wants to help write some user documentation, here is a quick guide on how to use Confluence, on which our <a href="http://doc.prestashop.com/">user documentation</a> is hosted.</p>
+<h2 id="anatomy-of-a-documentation-page">Anatomy of a documentation page</h2>
+<p>These elements are important and/or recurring in the PrestaShop documentation and here&rsquo;s what you should know about it.</p>
+<h3 id="page-title">Page title</h3>
+<p>It will define the page URL (most of the time), and is repeated each time at the beginning of the page.</p>
+<h3 id="children-display">Children display</h3>
+<p>When the page is a chapter with children page, it often begins with a list of its children, as an entry point to these pages.</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2017/01/Build_PrestaShop_Documentation_Title.png">
+<p>This is done using a macro (see below), so you don&rsquo;t have to list manually all the children pages :)</p>
+<h3 id="table-of-contents">Table of contents</h3>
+<p>When there are no children pages, but the page has a rather long content, there can be a table of contents to display the main sections.</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2017/01/Build_PrestaShop_Documentation_Table.png">
+<p>Again, this can be done using a macro, convenient, isn&rsquo;t it?</p>
+<h3 id="tips-warning-notes-and-info">Tips, Warning, Notes and Info</h3>
+<p>The documentation is scattered with tips, warning, notes and info inserts which all have the same structure. They stand out of the main content with a colored insert, with an icon, and if you choose to have one, its own title.</p>
+<p>Tips are in green and give you hints to go further with the feature described in the page.
+<img src="/assets/images/2017/01/Build_PrestaShop_Documentation_Tip.png" alt="Tip in PrestaShop documentation"></p>
+<p>Info inserts, in blue, give more precision about a certain point discussed on the page, for your information.
+<img src="/assets/images/2017/01/Build_PrestaShop_Documentation_Info.png" alt="Info in PrestaShop documentation"></p>
+<p>Notes, in yellow, are more important and give details on something you should pay attention too.
+<img src="/assets/images/2017/01/Build_PrestaShop_Documentation_Note.png" alt="Notes in PrestaShop documentation"></p>
+<p>Warnings, in red, are must-reads and provide critical information.
+<img src="/assets/images/2017/01/Build_PrestaShop_Documentation_Warning.png" alt="Warnings in PrestaShop documentation"></p>
+<h3 id="images-and-gifs">Images and GIFs</h3>
+<p>To visually guide the user when explaining the interface, the User Guide presents screenshots of the PrestaShop interface. You can use the English images at first, and then update it with screenshots of the interface in your own language, for more accuracy.
+We’ve been introducing GIF images more recently, to show more precisely what can be done in the back office.</p>
+<h3 id="code-quotes">Code quotes</h3>
+<p>Sometimes when referring to files, folders or pieces of code, some pieces of content use the monospace font, to differentiate it from the regular content.</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="650" src="/assets/images/2017/01/Build_PrestaShop_Documentation_Code.png">
+<h3 id="all-the-rest">All the rest</h3>
+<p>The rest of the content is mere text and you can use the WYSIWYG editor provided by Confluence to format it.</p>
+<p>The user documentation is mostly about listing the available options and explaining what they are for, and how to use it. For this reason, the content is often a succession of lists, describing each features:</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2017/01/Build_PrestaShop_Documentation_List.png">
+<h2 id="quick-tips">Quick tips</h2>
+<p>If you are contributing to the PrestaShop User Guide, here are a few tips that could save you some time :)</p>
+<h3 id="how-to-create-a-page">How to create a page</h3>
+<p>When starting a chapter, once you have translated the page, you will need to create children pages. For this:</p>
+<ul>
+<li>Make sure you’re on the page whose children you want to create</li>
+<li>Click on &ldquo;Create&rdquo;</li>
+<li>In the new form, check that you are in the right space (PrestaShop 1.6 or 1.7, depending on which documentation you are translating)</li>
+<li>Select “Blank page”</li>
+<li>Click on Create</li>
+<li>Give the page a title</li>
+<li>Edit it if needed, or simply save it</li>
+</ul>
+<p>There you go, the page is created!
+To see all the children of a page, you can add the Children Display macro.</p>
+<h3 id="how-to-add-a-macro-children-display-table-of-contents-tips">How to add a macro (Children Display, Table of contents, tips)</h3>
+<p>If you need to add a table of contents, a list of children pages, a tip, note, warning or info insert, it all works using macros.</p>
+<p>When editing your page:</p>
+<ul>
+<li>Click on Insert</li>
+<li>Select the macro you want, and fill in the necessary details</li>
+<li>If the macro you are looking for isn’t available, click on “Other macros”</li>
+<li>Use the search bar or menu to find the macro yo need</li>
+<li>Fill in the necessary details</li>
+</ul>
+<h3 id="how-to-order-your-children-pages">How to order your children pages</h3>
+<p>When you have created all the children of a page, their order will not necessarily be the one you expect. To edit it, click on the menu (&quot;&hellip;&quot;) at the top of the page, then click on “View in Hierarchy”.</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2017/01/Build_PrestaShop_Documentation_Hierarchy.png">
+<p>There you have the whole tree for the space you’re editing and you can order the children pages by dragging it where you want.</p>
+<h3 id="how-to-add-an-image">How to add an image</h3>
+<p>If you’re not using the existing images of the English documentation, but want to show the interface in your own language (which we recommend), you’ll have to upload your own images.</p>
+<p>To add an image:</p>
+<ul>
+<li>Click on “Insert”</li>
+<li>Click on “Files and images”</li>
+<li>Upload the file(s) you need on the page</li>
+<li>Click insert</li>
+</ul>
+<p>The image will insert where your cursor was located on the page - if this not the right place for the picture, you can drag it to where you want.
+Most of the images of the documentation are centered on the page. If its borders are white, you should add a border to the image, so that it would stand out from the content.</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2017/01/Build_PrestaShop_Documentation_Image.png">
+<p>The image size depends on its content and how visible it should be. Try to follow what’s been done in the English documentation, if you’re not sure.</p>
+<h3 id="how-to-copy-content-from-the-english-documentation">How to copy content from the English documentation</h3>
+<p>Sometimes you might want to copy the whole English content in your page to translate it afterward. That implies copying images and tips (warning or notes).
+If you copy the English content as-is, you will end up having some troubles in the display of macros.</p>
+<p>It is recommended to:</p>
+<ul>
+<li>“Edit” the English page first,</li>
+<li>Copy from there the whole page,</li>
+<li>Paste in the page your are editing in your language,</li>
+<li>Then don’t forget to close the English page.</li>
+</ul>
+<h3 id="how-to-link-to-another-page-of-the-documentation">How to link to another page of the documentation</h3>
+<p>Sometimes you will need to add links to other pages of the documentation. The most convenient way to do it is to:</p>
+<ul>
+<li>Open the page to which you want to link to</li>
+<li>Go back to your current page</li>
+<li>Create the link by clicking on “Link”</li>
+<li>In “Recently viewed”, you should see the page you just opened before</li>
+<li>Click on “Insert”</li>
+</ul>
+<p>And here it is!</p>
+<h3 id="how-to-write-in-rtl-languages">How to write in RTL languages</h3>
+<p>Confluence is not fully adapted to right-to-left languages, but we found a workaround to have something decent.
+If you need to create pages in an RTL language, select all the content of the page, then click on the right-align button. The main content will switch to an RTL display. However, the macros, titles and the whole page structure will stay LTR unfortunately.
+For the time being, we haven’t found any better solution, but if you hear about something, do let us know!</p>
+<h3 id="how-to-join-the-team-of-contributors">How to join the team of contributors</h3>
+<p>If you want to help translate the PrestaShop documentation into your language, simply drop us a line at <a href="mailto:documentation@prestashop.com?subject=Contribute%to%PrestaShop%Documentation"><a href="mailto:documentation@prestashop.com">documentation@prestashop.com</a></a>.
+We’ll create an account for you and provide all the details you need to know.
+Thanks for your involvement!</p>
+<h2 id="more-resources">More resources</h2>
+<p>Should you need more information, you can also find some help on Confluence&rsquo;s own website:</p>
+<ul>
+<li><a href="https://confluence.atlassian.com/display/DOC/Confluence+Getting+Started">Getting Started Guide</a></li>
+<li><a href="https://confluence.atlassian.com/kb">Confluence Knowledge Base</a></li>
+</ul>
+<p>If you have a question or a comment, let us know!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jan 12, 2017</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/contribute/">contribute</a>
+
+  <a class="label label-primary" href="/tag/documentation/">documentation</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Alex Even
+      <span>Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/AlexEven">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/821016-alex-even">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/alex-even">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/AlexHarryEven">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

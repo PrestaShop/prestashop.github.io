@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.7.0.x on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/1.7.0.x/</link>
+    <description>Recent content in 1.7.0.x on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Mar 2017 09:10:11 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/1.7.0.x/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Release of PrestaShop 1.7.0.6</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-0-6-maintenance-security-release/</link>
+      <pubDate>Mon, 06 Mar 2017 09:10:11 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-0-6-maintenance-security-release/</guid>
+      <description>PrestaShop 1.7.0.6 is now available. This maintenance release closes 5 pull requests, among which a security issue.
+While this is not your regular, 15/20-pull-requests monthly patch release, 1.7.0.6 is an important upgrade nonetheless.
+Fixing a security issue Last week, our security team encountered a security issue in PrestaShop allowing a person with access to the back office to upload modules. This issue mainly concerns Addons contributors with back-office demos. Thank you Tomer Grassiany for your responsible disclosure of the issue, and your help with its resolution!</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.0.5</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-0-5-maintenance-release/</link>
+      <pubDate>Mon, 13 Feb 2017 09:10:11 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-0-5-maintenance-release/</guid>
+      <description>PrestaShop 1.7.0.5 is now available. This maintenance release closes 29 issues. This new version is part our plan to release more monthly patch version for both v1.7 and v1.6.
+We are happy to deliver the fifth &amp;ldquo;patch&amp;rdquo; release of PrestaShop 1.7.0.0. Version 1.7 of PrestaShop keeps being used by new online stores, and we keep working at fixing the issues that are reported to, making regular improvements to the codebase. Have you found an issue in PrestaShop 1.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.0.4</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1704-maintenance-release/</link>
+      <pubDate>Tue, 10 Jan 2017 09:10:11 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1704-maintenance-release/</guid>
+      <description>PrestaShop 1.7.0.4 is now available. This maintenance release closes 29 of the most pressing issues reported since v1.7.0.0 was released.
+The new version is within our plan to release more regular and focused patch versions: packing a few specific fixes (in order to limit regression potential) in regular releases. All this is done thanks in no small part to our SemVer-like versioning and the 1-Click Upgrade module (update it if you haven&amp;rsquo;t already done it for 1.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.0.3</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1703-maintenance-release/</link>
+      <pubDate>Wed, 21 Dec 2016 10:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1703-maintenance-release/</guid>
+      <description>PrestaShop 1.7.0.3 is now available. This maintenance release closes 28 of the most pressing issues reported since v1.7.
+More than a year ago, we announced that we wanted to release more regular and focused patch versions for 1.6 (and eventually 1.7), and that&amp;rsquo;s exactly what we are currently doing: packing a few specific fixes (in order to limit regression potential) in regular releases. All this is done thanks in no small part to our SemVer-like versioning and the 1-Click Upgrade module (update it if you haven&amp;rsquo;t already done it for 1.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.0.2</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1702-maintenance-release/</link>
+      <pubDate>Mon, 28 Nov 2016 09:10:11 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1702-maintenance-release/</guid>
+      <description>PrestaShop 1.7.0.2 is now available. This maintenance release closes 13 of the most pressing issues reported since v1.7.
+More than a year ago, we announced that we wanted to release more regular and focused patch versions for 1.6 (and eventually 1.7), and that&amp;rsquo;s exactly what we are currently doing: packing a few specific fixes (in order to limit regression potential) in regular releases. All this is done thanks in no small part to our SemVer-like versioning and the 1-Click Upgrade module (update it if you haven&amp;rsquo;t already done it for 1.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.0.1 </title>
+      <link>https://build.prestashop-project.org/news/prestashop-1701-maintenance-release/</link>
+      <pubDate>Mon, 21 Nov 2016 09:10:11 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1701-maintenance-release/</guid>
+      <description>PrestaShop 1.7.0.1 is now available. This maintenance release closes 15 of the most pressing issues reported since v1.7.0.0
+We know that some of you may have been waiting for the .1 version of 1.7 to try this new major version of PrestaShop. We are therefore happy to deliver the first &amp;ldquo;patch&amp;rdquo; release of PrestaShop 1.7.0.0 (as per our SemVer-like versioning). The initial release PrestaShop 1.7 was well received, with thousands of downloads and already well over a hundred production stores!</description>
+    </item>
+    
+  </channel>
+</rss>

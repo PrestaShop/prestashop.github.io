@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>A year into 1.6 maintenance: the way forward</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="A year into 1.6 maintenance: the way forward" />
+<meta property="og:description" content="A year ago, we released PrestaShop 1.7.0.0, and put version 1.6 in maintenance mode. The plan is to maintain it for two years, with regular patch releases. Approaching the one-year mark, time for a review!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/a-year-into-1-6-maintenance/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2017-10-06T09:10:11+02:00" />
+    <meta property="article:modified_time" content="2017-10-06T09:10:11+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="A year into 1.6 maintenance: the way forward"/>
+<meta name="twitter:description" content="Preparing for the next 12 months, together"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">A year into 1.6 maintenance: the way forward</h1>
+              
+                <h3 class="post-subtitle">Preparing for the next 12 months, together</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749"
+         alt="Xavier Borderie's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Xavier Borderie</div>
+        
+          <div class="author-display-role">Open Source Advocate</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Oct 6, 2017
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=A&#43;year&#43;into&#43;1.6&#43;maintenance%3A&#43;the&#43;way&#43;forward&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fa-year-into-1-6-maintenance%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fa-year-into-1-6-maintenance%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>A year ago, we released PrestaShop 1.7.0.0, and put version 1.6 in maintenance mode. The plan is to maintain it for two years, with regular patch releases. Approaching the one-year mark, time for a review!</p>
+<p>So, first things first: we are of course as committed as ever to support version 1.6 until October 2018. As you know, we are keeping our promise: A dedicated team of developers has been assigned to process 1.6 tickets one by one: testing, fixing, releasing. Thanks to this effort and the contribution of community members, <strong>we&rsquo;ve been able to release 9 patch versions in 11 months</strong>.</p>
+<p>Since November 7th, 2016, the PrestaShop 1.6 team has handled around 1,400 Forge tickets and more than 210 GitHub pull requests, and we want to keep this pace: reproducing issues, fixing them and testing those fixes for the tens of thousands of stores which use this version.</p>
+<p>October 2017 marks the middle of the official maintenance period: a time to reflect on what has been done so far, and to set up processes for the coming year. The idea is to understand what can be done in the timeframe, and together, to prepare for the end of maintenance of version 1.6.</p>
+<h3 id="our-plan-for-the-remaining-16-forge-tickets">Our plan for the remaining 1.6 Forge tickets</h3>
+<p>In short: our team will focus on resolving important tickets that have been active in the last 18 months.</p>
+<p>Thanks to the pace we&rsquo;ve been going since the start of the maintenance mode, we are confident that the 1.6 Forge can be cleaned of known issues by the time we reach October 2018.</p>
+<p>In order to focus our maintenance effort on bugs that are still relevant, we are planning a closure on some old inactive tickets: by the end of October 2017, we will close all 1.6 Forge tickets that have not been updated for the past year and a half (18 months - or 78 weeks in Jira-speak) &ndash; taking into account the votes and watchers too, in order to not miss important information..</p>
+<p>We’ve been doing a ton of digging through the Forge over the past months, and we&rsquo;re confident that a lot of tickets can be retired as obsolete or non-reproducible.</p>
+<p>Of course, the best person to act on your tickets is you! Read on!</p>
+<h3 id="you-can-help">You can help!</h3>
+<p>This is where you enter the story. As you know, PrestaShop is Open Source, and succeeds thanks to the community. You can contribute through many channels, starting with Forge tickets and GitHub pull requests.</p>
+<h4 id="update-your-tickets">Update your tickets!</h4>
+<p>Should you be the reporter for an old issue, you are welcome to update it with comments and details, thus helping bring it back to relevancy! <a href="http://forge.prestashop.com/issues/?filter=-2">You can see a list of all your reported issues here</a>.</p>
+<p>So please have a look at the Forge tickets that you have created in the past and ask yourself:</p>
+<ul>
+<li>Is this still relevant and 100% reproducible?</li>
+<li>Does this still need to be fixed/answered?</li>
+<li>Is the suggestion still valid?</li>
+</ul>
+<p>If you answer &ldquo;no&rdquo; to any of the above questions, then don&rsquo;t do anything: the ticket will be closed by our team soon.</p>
+<p>If you have answered &ldquo;yes&rdquo;, then please leave a comment on the ticket explaining the situation, and we&rsquo;ll take another look at it.</p>
+<p>Note: if your ticket is about a bug or a suggestion that is still relevant in 1.7, please leave a comment that says so, and we will move it to the 1.7 Forge.
+At best, if you know how to fix the issue, please provide the solution through a GitHub pull request! Being an Open Source project, community pull requests are the best thing to come to on a Monday morning :)</p>
+<p>By following these simple suggestions, you can help us go through the open Forge tickets quicker, spot the real gems faster, and thus make PrestaShop a better e-commerce solution!</p>
+<p>Thank you for giving us an update on every one of your open 1.6 Forge tickets, and for upgrading to 1.7!</p>
+<h4 id="start-migrating">Start migrating!</h4>
+<p>Soon will start the countdown to the last 12 months of maintenance of version 1.6. While we plan on making regular bugfix releases, you should start thinking about migrating to version 1.7 the stores which you are responsible for.
+Of course, v1.6 will not stop working from one day to the next, but the team will stop releasing bugfix releases and supporting it.</p>
+<p>Thousands of stores have already chosen v1.7, either as a first store or as a store upgrade, and this is where the future of PrestaShop lies. The Addons marketplace already has thousands of modules and themes built for 1.7, and the software itself keeps improving, with regular patch releases and a minor version every 3 to 4 months.</p>
+<p>So go ahead, get ready to make the jump to 1.7!</p>
+<p>And if you notice new issues, we always welcome new Forge tickets or new GitHub pull requests (even better!) from the PrestaShop community. Make your voice heard!</p>
+<p>Edit:<br>
+From 1st of July 2019, the maintenance of PrestaShop 1.6.1.x is in the end of community volunteers.
+Read the details in this dedicated article &ldquo;<a href="http://build.prestashop.com/news/1.6.1.x-what-s-next/">1.6.1.X: What’s Next</a>&rdquo;</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Oct 6, 2017</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/forge/">forge</a>
+
+  <a class="label label-primary" href="/tag/1.6/">1.6</a>
+
+  <a class="label label-primary" href="/tag/1.6.1.x/">1.6.1.x</a>
+
+  <a class="label label-primary" href="/tag/gardening/">gardening</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Xavier Borderie
+      <span>Open Source Advocate</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

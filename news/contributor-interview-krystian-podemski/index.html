@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>From contributor to maintainer: Krystian Podemski&#39;s experience with the PrestaShop project</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="From contributor to maintainer: Krystian Podemski&#39;s experience with the PrestaShop project" />
+<meta property="og:description" content="A few years ago, a series of contributor interviews was published on the blog. It was a nice way of putting faces to names and getting to know the people who participate in the PrestaShop project. And this year, we wanted to do it again. So here we go: this section is back on the blog!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/contributor-interview-krystian-podemski/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2022-01-18T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2022-01-18T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="From contributor to maintainer: Krystian Podemski&#39;s experience with the PrestaShop project"/>
+<meta name="twitter:description" content="Discover the faces behind the commits"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">From contributor to maintainer: Krystian Podemski&#39;s experience with the PrestaShop project</h1>
+              
+                <h3 class="post-subtitle">Discover the faces behind the commits</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/70583503?s=400&amp;v=4"
+         alt="Julie Varisellaz's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Julie Varisellaz</div>
+        
+          <div class="author-display-role">Product Content Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jan 18, 2022
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=From&#43;contributor&#43;to&#43;maintainer%3A&#43;Krystian&#43;Podemski%27s&#43;experience&#43;with&#43;the&#43;PrestaShop&#43;project&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fcontributor-interview-krystian-podemski%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fcontributor-interview-krystian-podemski%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>A few years ago, a series of contributor interviews was published on the blog. It was a nice way of putting faces to names and getting to know the people who participate in the PrestaShop project. And this year, we wanted to do it again. So here we go: this section is back on the blog!</p>
+<p>For the first interview of the year 2022, let’s meet Krystian Podemski.</p>
+<img style="border: 1px solid #CCC; float: left; margin: 0 1em 1em 0;" width="240" height="240" src="/assets/images/2022/01/krystian-podemski.jpg">
+<p>Krystian is 31. He comes from Bydgoszcz, Poland, and has been coding for over 15 years. From contributor to maintainer, Krystian has always been a very active member of the community. In July 2021, he even joined the PrestaShop company, as Tech Evangelist in Poland… without ever giving up his role as a maintainer of the open source project!</p>
+<p>So, what does it mean to be a maintainer? What skills do you need to become one, and what can you get out of it?</p>
+<p>Krystian answered these questions and many more.</p>
+<p>Dear readers, meet Krystian!</p>
+<p><strong>Hi Krystian, can you tell us more about yourself?</strong></p>
+<p>Of course, yes. I’m 31. I’m from Poland, Bydgoszcz - which is very hard to spell! I’m just a normal guy, who is very passionate about his job.
+I call myself a developer, even though I’m more of a consultant at the moment, which is a bit different.
+About my hobbies, I like F1, Netflix, and I’m a big fan of La Liga.</p>
+<p><strong>When did you get involved in contributing to the PrestaShop project?</strong></p>
+<p>I think it was in 2008, about 14 years ago. I started by getting involved in the Polish PrestaShop community. I contributed to the translation of the software into Polish and shared some tutorials on how to use PrestaShop. I was also a very active member of the Polish forum that was created at the time.
+After that, I started contributing on SVN, until PrestaShop migrated to GitHub, which made contributing much easier!</p>
+<p><strong>What motivated you to contribute?</strong></p>
+<p>Everyone has their own reasons for contributing to an open source project. In my case, I had just migrated a store to PrestaShop, and I found that the Polish translations needed to be improved. So, I contributed to the translations because, well, I had to! I wanted these translations to be available in the Core, so I did it.</p>
+<p><strong>Do you have any advice for first-time contributors?</strong></p>
+<p>Yes! Don’t be afraid to try, but first, do some research. We have very good <a href="https://devdocs.prestashop.com/1.7/contribute/">documentation</a> about how to start contributing. I’d highly recommend that you take a look at it. Then, when you feel ready, start with a small contribution, something that you need. I think translation and documentation are a great way to start. I’m pretty sure we have typos in the translations or some parts of the documentation that could be clarified. You just have to start with something.</p>
+<p><strong>Now that we’ve talked about your role as a contributor, I’d like to ask you about your role as a maintainer. But first, for the newer people out there, could you please explain the difference between the two?</strong></p>
+<p>Maintainers are contributors with merge rights. They are responsible for keeping the software stable, clean, and safe. We are the last door to open before a contributor’s code can be merged into the project (before QA, of course). So I’d say that the main difference is that, as a maintainer, you have much more responsibility… and maybe a bit more stress.</p>
+<p><strong>Do you have any advice for contributors who’d like to become maintainers?</strong></p>
+<p>First of all, there are about 10 maintainers right now and sometimes we disagree. So to be a maintainer, you need to be patient and open-minded. Being consistent is also important. It’s easier to be a maintainer if you are up-to-date with the software and aware of the latest changes.
+Also, make sure you don’t become a maintainer for the wrong reasons. I applied because I wanted to work closely with the team and have more impact on decisions. But don’t get me wrong, being a maintainer doesn’t mean that all your suggestions will be merged into the project, nor that your pull requests will be given priority. In the end, it’s really important that you care about the software and the community.</p>
+<p><strong>Do you think the PrestaShop project needs more maintainers?</strong></p>
+<p>Yes, I think it’s crucial. We need more maintainers. We need people with experience in DevOps, for example, or Docker, and server stuff. I think we could also have maintainers dedicated to documentation, tests, etc. It’s not only about coding. There are a lot of possibilities!</p>
+<p><strong>Finally, as we enter a new year, how do you hope to see the PrestaShop project evolve in 2022?</strong></p>
+<p>Those are very exciting times for the PrestaShop project, and I’m very much looking forward to seeing the V8. I hope this version will be a new start for PrestaShop. The project has a lot of momentum and I hope that it will continue to grow.</p>
+<p><strong>Thank you, Krystian!</strong></p>
+<p>In addition to learning more about an iconic figure of the PrestaShop community, this interview provides a better understanding of the role of contributor and maintainer. If Krystian’s experience has inspired you and you want to get more involved in the project, don&rsquo;t hesitate to contribute&hellip; and, if you are a regular, why not <a href="https://www.prestashop-project.org/maintainers-guide/how-to-become-a-maintainer/">apply for a maintainer position</a>?</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jan 18, 2022</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/contribute/">contribute</a>
+
+  <a class="label label-primary" href="/tag/community/">community</a>
+
+  <a class="label label-primary" href="/tag/contribution/">contribution</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Julie Varisellaz
+      <span>Product Content Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/Julievrz">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/Julievrz">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

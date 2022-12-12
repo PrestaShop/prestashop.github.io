@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tools/</link>
+    <description>Recent content in Tools on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Aug 2017 11:12:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tools/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop Design Principles</title>
+      <link>https://build.prestashop-project.org/tools/prestashop-design-principles/</link>
+      <pubDate>Tue, 01 Aug 2017 11:12:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/tools/prestashop-design-principles/</guid>
+      <description>Our design principles are made to shape stronger products. They define the experience core values of PrestaShop. They provide a consistent vision of our products and the way they should be build. Follow them if you build an interface, a user flow, a user experience for PrestaShop.
+Build for professionals PrestaShop’s final users are merchants. Interfaces, flows and interactions should serve their professional needs. Go straight to the point. Deliver help and information.</description>
+    </item>
+    
+    <item>
+      <title>.htaccess generator</title>
+      <link>https://build.prestashop-project.org/tools/htaccess-generator-protect-your-prestashop-backoffice/</link>
+      <pubDate>Fri, 03 Apr 2015 11:12:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/tools/htaccess-generator-protect-your-prestashop-backoffice/</guid>
+      <description>Even if your back office is already secured by PrestaShop&amp;rsquo;s login, you might want to add another layer of security from your webserver itself. This is done using the htaccess.txt and htpasswd.txt files. After you&amp;rsquo;ve uploaded them at the root of the folder to secure (in our case, your back office folder), the server will ask you for a username and a password before you can even access your PrestaShop back office login page.</description>
+    </item>
+    
+  </channel>
+</rss>

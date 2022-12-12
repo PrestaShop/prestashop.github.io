@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>howto on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/howto/</link>
+    <description>Recent content in howto on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Jul 2016 09:10:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/howto/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Twelve things to watch out for when coding a PrestaShop module</title>
+      <link>https://build.prestashop-project.org/howtos/module/Common-mistakes-while-coding-module/</link>
+      <pubDate>Mon, 25 Jul 2016 09:10:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/module/Common-mistakes-while-coding-module/</guid>
+      <description>PrestaShop has been around for many years, during which thousands of modules were made by thousands of developers, yet we still see the same simple mistakes being made, even though they could easily be avoided.
+Here is a list of 10+ common mistakes when coding a PrestaShop module, with a short information on how to avoid them.
+Note Several tips only apply to PrestaShop 1.5-1.6 module development. PrestaShop 1.7 changes a few things!</description>
+    </item>
+    
+    <item>
+      <title>Ten ways to improve your PrestaShop modules!</title>
+      <link>https://build.prestashop-project.org/howtos/module/Ten-ways-improve-modules/</link>
+      <pubDate>Tue, 05 Jul 2016 08:07:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/module/Ten-ways-improve-modules/</guid>
+      <description>PrestaShop has numerous features in the API, both hidden in its code as well as in the developer documentation and there are many tools that allow you to create your own module in no time! Unfortunately I have noticed that many developers do not use these features and tools to their advantage, so I think it&amp;rsquo;s time to change all that :) Hopefully, these tips will increase your development speed and save you lots and lots of time.</description>
+    </item>
+    
+  </channel>
+</rss>

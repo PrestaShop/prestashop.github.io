@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop &amp; GDPR</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop &amp; GDPR" />
+<meta property="og:description" content="As you are probably already aware, in a few weeks (May 25th of this year) the new european law on personal data protection will come into effect." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/prestashop-and-gdpr/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2018-04-16T16:00:00+02:00" />
+    <meta property="article:modified_time" content="2018-04-16T16:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="PrestaShop &amp; GDPR"/>
+<meta name="twitter:description" content="PrestaShop actions to help you comply with GDPR"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop &amp; GDPR</h1>
+              
+                <h3 class="post-subtitle">PrestaShop actions to help you comply with GDPR</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/35263827?s=400&amp;v=4"
+         alt="Coline Ginestet's photo">
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/4619685?s=400&amp;v=4"
+         alt="Antoine Thomas's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Coline Ginestet</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">Antoine Thomas</div>
+        
+          <div class="author-display-role">Open Source Evangelist</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Apr 16, 2018
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;%26&#43;GDPR&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fprestashop-and-gdpr%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fprestashop-and-gdpr%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>As you are probably already aware, in a few weeks (May 25th of this year) the new european law on personal data protection will come into effect.</p>
+<p>As an e-commerce software, our goal is to help merchants all around the world to sell their products while complying with legal regulations. This is why it is important for us to provide a tool which will allow your shop to become GDPR compliant.</p>
+<p>Many are concerned about this new regulation (especially in view of possible financial penalties) and what PrestaShop plans to do about it. This article aims at providing answers to the most frequent questions we have received and sharing more details about our forthcoming actions.</p>
+<h2 id="what-is-gdpr">What is GDPR?</h2>
+<p><strong>The General Data Protection Regulation (GDPR)</strong> which will come into effect on May 25th aims at unifying regulations related to data privacy policies in the European Union. This text reinforces people’s rights and imposes a new accountability logic on entities involved by requiring them to take the necessary, appropriate measures to ensure a suitable level of security when processing personal data.</p>
+<p>GDPR is intended to apply to all processing of personal data, whether automated or manual. Processing of data is defined as an operation or set of operations carried out and applied to personal data or data sets (e.g. Collection, storage, modification, extraction, viewing, use, communication, destruction, etc.).</p>
+<p>Personal data comprises all information relating to a natural person and enabling that person to be directly or indirectly identified (E.g. full name, email address, IP address, telephone number, location data, consumer habits, etc.).</p>
+<p>The main requirements of this law include:</p>
+<ul>
+<li><b>For the merchants’ customers</b>
+ <ul>
+ <li>The right to access their personal data;</li>
+ <li>The right to data portability;</li>
+ <li>The right to obtain rectification and/or erasure of their personal data;</li>
+ <li>The right to give and withdraw consent.</li>
+ </ul></li>
+<li><b>For the merchants</b>
+ <ul>
+ <li>The obligation to keep a record of processing activities (especially for access, consent and erasure).</li>
+ </ul></li>
+</ul>
+<p>For more information, you can read our GDPR white paper <a href="https://www.prestashop.com/en/system/files/filedepot/9/gdpr_whitepaper_prestashop_en.pdf">in english</a> or <a href="https://www.prestashop.com/en/system/files/filedepot/9/rgpd_whitepaper_prestashop.pdf">in french</a>.</p>
+<h2 id="who-is-concerned">Who is concerned?</h2>
+<p>Given the extent of these concepts and your e-commerce business, it is highly likely that you process personal data. Furthermore, the GDPR affects not only every european companies, but also companies located outside of Europe which collect european citizens’ personal data. Needless to say that no merchant can avoid it and store compliance upgrade is not an option.</p>
+<p>Modules which collect and stock personal data are also affected <strong>as they must be updated to be GDPR compliant</strong>, so module developers, this applies for you too!</p>
+<h2 id="what-is-prestashop-doing-to-help-you-comply-with-gdpr">What is PrestaShop doing to help you comply with GDPR?</h2>
+<p>In addition to the work being done to ensure our own compliance, we are currently developing new features <strong>to help both merchants and module developers</strong> comply with the main regulation’s requirements listed above.</p>
+<p>More precisely, a specific GDPR module will bring those new features, <strong>available for 1.5, 1.6 and 1.7 versions</strong>. It should have no impact on the core software and should be compatible with most themes (custom ones included).</p>
+<p>Our objective for this module is to handle customers’ personal data collected by the PrestaShop software, native modules <strong>and also</strong> community modules installed on PrestaShop stores. As a module developer, it will require some work on your side, but our module will bring the necessary tools to make updates easier :)</p>
+<p>This module will provide new features for both store merchants and their customers and tools for modules’ developers to help them update their module for GDPR.</p>
+<h3 id="as-a-community-developer">As a community developer</h3>
+<p>The GDPR module will provide:</p>
+<ul>
+<li>new hooks that will enable you to automatically add a new checkbox and a specific text on the front-office of your module (if needed);</li>
+<li>a new hook to select and display the personal data being collected by your module.</li>
+</ul>
+<p>More information will be provided in a few days!</p>
+<h3 id="as-a-e-commerce-merchant">As a e-commerce merchant</h3>
+<p>PrestaShop&rsquo;s official GDPR Module will allow merchants to:</p>
+<ol>
+<li>Make it easier for their customers to give their consent by adding a consent confirmation checkbox to different forms of your store (account creation, newsletter subscription, etc.). You will be able to customize the consent request message for each checkbox and refer to the CMS page of your choice to give more information to your customers.</li>
+<li>Easily manage your customers’ requests related to their personal data erasure and modification. If your customer requests to delete his account, you will be able to:
+ <ul>
+ <li>Download all of his invoices in one click (if he has any);</li>
+ <li>Delete his customer account and his personal data in one click;</li>
+ <li>If he has made one or several orders on your website in the past, they will be automatically transferred to a GDPR anonymous account. This will enable you to keep exact order results, reportings and accountability while deleting your customers’ personal data.</li>
+ </ul></li>
+<li>Keep track of the effective exercise of their right to access and manage their consent actions (obtainment and withdrawal) regarding marketing emails (newsletter).</li>
+</ol>
+<h3 id="as-a-customer">As a customer</h3>
+<p>Eventually, the module will also allow customers to:</p>
+<ol>
+<li>Manage access their personal data, as well as  the portability of it (through a automatic download of a csv file including all their personal data collected on the website) – directly via their customer account.</li>
+<li>Contact you through your contact form for erasure / modification purposes.</li>
+</ol>
+<hr />
+<p>Our Official GDPR module - currently being developed by our team due for release at the beginning of May will be:</p>
+<ul>
+<li><strong>Provided for free for all 1.7 versions</strong></li>
+<li>Available as a <strong>paid plugin</strong> on the Addons PrestaShop marketplace for <strong>1.5 and 1.6 versions</strong>.</li>
+</ul>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Apr 16, 2018</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/release/">release</a>
+
+  <a class="label label-primary" href="/tag/1.5/">1.5</a>
+
+  <a class="label label-primary" href="/tag/1.6/">1.6</a>
+
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the authors</h5>
+
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Coline Ginestet
+      <span class="multiple">Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/colinegin">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Antoine Thomas
+      <span class="multiple">Open Source Evangelist</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/ttoine">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+                </div>
+                
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

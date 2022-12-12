@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop 1.7 patch release lifecycle</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop 1.7 patch release lifecycle" />
+<meta property="og:description" content="Following previous post about Minor Release Lifecycle, here is more explanations about software lifecycle at PrestaShop, focusing on patch releases and the release process." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/ps17-patch-release-lifecycle/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2020-04-28T10:00:00+02:00" />
+    <meta property="article:modified_time" content="2020-04-28T10:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="PrestaShop 1.7 patch release lifecycle"/>
+<meta name="twitter:description" content="The journey of a patch release of PS 1.7, step by step"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop 1.7 patch release lifecycle</h1>
+              
+                <h3 class="post-subtitle">The journey of a patch release of PS 1.7, step by step</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/3830050?s=400&amp;v=4"
+         alt="Mathieu Ferment's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Mathieu Ferment</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Apr 28, 2020
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;1.7&#43;patch&#43;release&#43;lifecycle&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fps17-patch-release-lifecycle%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fps17-patch-release-lifecycle%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Following previous post about <a href="https://build.prestashop.com/news/ps17-minor-release-lifecycle/">Minor Release Lifecycle</a>, here is more explanations about software lifecycle at PrestaShop, focusing on patch releases and the release process.</p>
+<p>This blog post explains:</p>
+<ul>
+<li>The detailed lifecycle for PrestaShop patch releases</li>
+<li>The decision process for patch releases</li>
+<li>The Maintainance scope</li>
+</ul>
+<h2 id="patch-release-lifecycle">Patch release lifecycle</h2>
+<p>Patch releases are &ldquo;maintainance&rdquo; releases: they provide bug fixes and security patches, but do not provide enhancements or new features. They are part of a necessary maintenance process.</p>
+<h3 id="scope-of-maintainance">Scope of maintainance</h3>
+<p>When a minor version is released, such as PrestaShop 1.7.7.0, the related branch becomes the latest and maintained branch.
+This means that, when PrestaShop 1.7.7.0 is out :</p>
+<ul>
+<li>There will be no more PrestaShop 1.7.6 patch releases, for either bug or security issues<a href="#glossary">(1)</a></li>
+<li>There might be, if necessary, patch releases for PrestaShop 1.7.7. (which means: 1.7.7.1, 1.7.7.2 and so on &hellip;) until next minor release is delivered (PrestaShop 1.7.8)</li>
+</ul>
+<p>When PrestaShop 1.7.7.0 will be released, PrestaShop 1.7.6 will reach its <a href="https://en.wikipedia.org/wiki/End-of-life_(product)">End Of Life</a>, just like all previous minor versions.</p>
+<h3 id="when-is-it-decided-to-release-a-patch-">When is it decided to release a patch ?</h3>
+<p>A patch release is scheduled when a &ldquo;trigger bug&rdquo; is reported:</p>
+<ul>
+<li>A major bug in maintained branch</li>
+<li>A security issue in maintained branch</li>
+</ul>
+<p>As of today, since PrestaShop 1.7.7.0 is still not released, the maintained branch is <code>1.7.6.x</code>. Latest patch release is PrestaShop 1.7.6.5.</p>
+<p>This means that <strong>work on 1.7.6.6 release will start if a community contributor or the QA team reports a major regression in PrestaShop 1.7.6.5 or a security issue<a href="#glossary">(2)</a>.</strong></p>
+<p>If minor or trivial regressions are reported for PrestaShop 1.7.6, they are scheduled to be fixed in next minor version. Minor or trivial bugs are considered not important enough to trigger a patch release process which is, as explained below, a costly process for both the PrestaShop company and the PrestaShop community.</p>
+<p>From the moment a &ldquo;trigger bug&rdquo; is reported, there start a <em>6 weeks long timer</em>. Our process states that a patch release must be delivered within these 6 weeks.</p>
+<h3 id="what-happens-in-six-weeks">What happens in six weeks</h3>
+<p>From the moment the 6 weeks timer is started, Product Team register into the dedicated Kanban (today it means the <a href="https://github.com/PrestaShop/PrestaShop/projects/4">1.7.6. Kanban board</a>) the bugs to be fixed in the patch release, whether they are trivial, minor or major.</p>
+<p>Then maintainers start working on fixing them (or merging the bug fixes submitted by the community).</p>
+<p>Obviously, security issues are not processed the same way: when a vulnerability is reported, it is being explored and it is being fixed in a hidden manner in order to make sure hackers unaware of the vulnerability do not hear about it. We use <a href="https://help.github.com/en/github/managing-security-vulnerabilities/about-github-security-advisories">GitHub Security Advisories</a> and temporary private forks to collaborate on the fix. Maintainers only publish the advisory and the fix on the day of the release, following <a href="https://en.wikipedia.org/wiki/Responsible_disclosure">responsible disclosure</a> principle.</p>
+<p>When all bug fixes for the target patch version are merged, and all teams pressure themselves to make it happen before the end of the 6 weeks, maintainers deliver a Release Candidate to QA team for the <strong>standard patch release test campaign</strong>. This test campaign aims to find whether this patch introduces new bugs.</p>
+<p>If the campaign reports that no bugs are found, the new patch release is validated by QA team and can be delivered!</p>
+<h2 id="why-maintain-only-the-latest-minor-version-">Why maintain only the latest minor version ?</h2>
+<p>As explained above, PrestaShop only maintains one minor version.
+When PrestaShop 1.7.7.0 is out, PrestaShop 1.7.6 will be considered <a href="https://en.wikipedia.org/wiki/End-of-life_(product)">End Of Life</a> and not maintained anymore. No more bug fixes for this version, no more patch releases, not even security releases<a href="#glossary">(2)</a>.</p>
+<p>This project management rule might be seen as harsh, because it means that if you do not upgrade to PrestaShop 1.7.7.0, your shop will use an outdated and unmaintained version and become possibly vulnerable to newly found security issues.</p>
+<p>However this rule is actually dictated by the current very wide scope of the PrestaShop project. Very often, maintainers are working both on a patch release and the next minor release. For example one week ago work was happening on both 1.7.6.5 patch release development and 1.7.7.0 Feature Freeze. The scope of PrestaShop project is very wide which is why maintainers need to focus their efforts on the most important components, so the scope ony contains these two versions.</p>
+<p>We are working to make the maintainers team grow (and be able to handle a wider scope) with not only new PrestaShop employees, <a href="https://github.com/PrestaShop/open-source/issues/11">but also with external people</a>.
+When the team grows, it could be able to provide patch releases on more versions, like two or three of them, or provide <a href="https://en.wikipedia.org/wiki/Long-term_support">Long Term Support</a> releases.</p>
+<h3 id="why-six-weeks-and-not-eight-or-two-">Why six weeks, and not eight or two ?</h3>
+<p>This six weeks timeslot is actually a balanced answer to a complex issue : the benefits of releasing often versus the cost of a release.</p>
+<p><strong>There are actually 3 sets of costs to a release.</strong></p>
+<p>The first is the cost of building it.</p>
+<p>Each PrestaShop patch release is a costly operation. It involves:</p>
+<ul>
+<li>Maintainers time to create, validate and merge the bug fixes</li>
+<li>QA team time to validate bug fixes</li>
+<li>Maintainers time to deliver the build and carry out the release process (see below)</li>
+<li>QA team time to run the patch test campaign</li>
+</ul>
+<p>Some other PrestaShop teams also dedicate some time to communicate about the release (marketing team, partnership team &hellip;).</p>
+<p>The second set of costs is the cost of delivering it.</p>
+<p>From the outside it might look &ldquo;just delivering the ZIP archive&rdquo;.</p>
+<p><strong>Actually the release process is a lot more complex than just delivering the ZIP archive to the community.</strong></p>
+<p>Multiple systems in PrestaShop rely on external services needing proper configuration:</p>
+<ul>
+<li>Link with Addons marketplace must be established as modules, both native and third parties, can be downloaded from it, and modules compatibility ranges must be updated</li>
+<li>Localization packs must be updated for new version</li>
+<li>Autoupgrade module and process must be updated for new version</li>
+<li>A release note and a Changelog must be generated, reviewed and published</li>
+<li>Maintainers also provide <a href="https://github.com/PrestaShop/docker">docker images</a> for PrestaShop which need to be updated for new version</li>
+</ul>
+<p>Finally, <strong>releasing a new version is consuming community time</strong>.</p>
+<ul>
+<li>Developers, webmasters, agencies must update the shops they host and maintain</li>
+<li>Module and theme developers need to check that their modules is compatible with latest version</li>
+<li>Host providers and SaaS providers using PrestaShop must update their offers and configurations</li>
+</ul>
+<p>Delivering patch releases more often is an idea regularly being discussed in all teams (2 weeks ? 4 weeks ?). But increasing the release frequency of PrestaShop would pressure the community as it would require more of their time (accordingly for more quality).</p>
+<p>This is why we think six weeks is a good balance between time-to-market, users needs and community / project resources cost.</p>
+<h2 id="further-topics">Further topics</h2>
+<p>After having read this article, you may be asking yourself multiple questions:</p>
+<ul>
+<li>What about next major release? When will it happen?</li>
+<li>What exactly involves this release process which is so costly ?</li>
+</ul>
+<p>As this blog post is already long, these questions might be covered in another post soon. If you have questions you would like to add to this list, please write a comment, and we will do our best to answer it in this next post!</p>
+<h4 id="glossary">Glossary</h4>
+<p>1: If a massive vulnerability is found, this rule might be bypassed and patch releases delivered for previous versions, but this would be only done for critical vulnerabilities.</p>
+<p>2: In case of &lsquo;regular&rsquo; security vulnerabilities this process will be applied. However if a critical vulnerability was found on older, unmaintained versions, maintainers might break this rule and patch these older versions as we also care about the community still using these old versions.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Apr 28, 2020</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/patch/">patch</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Mathieu Ferment
+      <span>Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/matks">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

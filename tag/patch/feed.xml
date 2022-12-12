@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>patch on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/patch/</link>
+    <description>Recent content in patch on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 1.7.8.8 Is Available</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-8-8-maintenance-release/</link>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-8-8-maintenance-release/</guid>
+      <description>It has been decided to deliver a new maintenance release for 1.7.8.x branch. Please note that this will be the last regular 1.7.8.x patch version, as the branch now enters security-only maintenance phase. Next regular patches will now target 8.0.x branch.
+This release fixes some bugs and regressions as well as a security fix.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.8.7</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-8-7-maintenance-release/</link>
+      <pubDate>Mon, 25 Jul 2022 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-8-7-maintenance-release/</guid>
+      <description>PrestaShop version 1.7.8.7 is now available. This release fixes one important security issue, read this article for more information.
+The maintainer team has been made aware that malicious actors are exploiting a combination of known and unknown security vulnerabilities to inject malicious code in PrestaShop websites, allowing them to execute arbitrary instructions, and potentially steal customer’s payment information. You can read our dedicated article to find out what’s happening, how the attack works and what to do to keep your shop safe.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.8.6</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-8-6-maintenance-release/</link>
+      <pubDate>Tue, 17 May 2022 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-8-6-maintenance-release/</guid>
+      <description>It has been decided to deliver a new maintenance release for 1.7.8.X branch.
+In this release we fix a couple of issues, notably :
+2 Major bugs 4 Minor bugs Reminder: the 1-Click Upgrade module’s latest version is v4.14.1, don’t forget to upgrade it.
+Issues addressed in release 1.7.8.6 Front office FO - Create an account - the alert is duplicated when we create a new account with invalid firstname and lastname Back office BO - An unnecessary comma is displayed in the location page BO - An exception is displayed in the Oustanding page when the customer with valid orders is deleted BO - Module manager- Exception is displayed when profiling is active BO - Unable to import &amp;lsquo;United State&amp;rsquo; at localization.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.8.5</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-8-5-maintenance-release/</link>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-8-5-maintenance-release/</guid>
+      <description>Due to a critical regression , it has been decided to deliver a new maintenance release for 1.7.8 branch.
+We also fix 4 minors bugs.
+We suggest upgrading your store quickly to benefit from these bug fixes. Make sure to perform a full manual backup before, so you can roll back the upgrade if something goes wrong.
+Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don&amp;rsquo;t forget to upgrade it.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.8.4</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-8-4-maintenance-release/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-8-4-maintenance-release/</guid>
+      <description>PrestaShop 1.7.8.4 is now available. This maintenance release fixes 23 bugs and feature request.
+We suggest upgrading your store quickly to benefit from these bug fixes. Make sure to perform a full manual backup before, so you can roll back the upgrade if something goes wrong.
+Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don&amp;rsquo;t forget to upgrade it.
+Bug fixes and improvements Reverts the integration of Symfony kernel in the webservice dispatcher Update links to docs : docs.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.8.3</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-8-3-maintenance-release/</link>
+      <pubDate>Thu, 27 Jan 2022 10:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-8-3-maintenance-release/</guid>
+      <description>PrestaShop 1.7.8.3 is now available. This maintenance release fixes 25 bugs and 1 security issue since the 1.7.8.2 release.
+Note that this version introduces two backward-incompatible changes:
+The signature of PrestaShop\PrestaShop\Core\Translation\Storage\Extractor\LegacyModuleExtractor::__construct() has been modified to allow excluding directories from the scan (see the related Pull Request for details). This component is used by the Back Office&amp;rsquo;s translation interface. Themes based on Classic might need to be adapted following this change to fix the layout of the menu and search bar on tablet devices.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.8.2</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-8-2-maintenance-release/</link>
+      <pubDate>Tue, 07 Dec 2021 14:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-8-2-maintenance-release/</guid>
+      <description>The ongoing work on security for PrestaShop software continues. We have identified and fixed a new security issue, it has been decided to deliver a new maintenance release for 1.7.8.X branch.
+This release also fixes 1 regression reported on version 1.7.8.X.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
+Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forget to upgrade it.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.8.1</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-8-1-maintenance-release/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-8-1-maintenance-release/</guid>
+      <description>PrestaShop 1.7.8.1 is now available. This maintenance release fixes 44 regressions reported since the initial 1.7.8.0 release.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
+Back office regressions Stock page - If a product attribute contains a comma, it is not displayed Dashboard page - Selecting a date range doesn&amp;rsquo;t work and causes a jquery error Modules page - Cannot install any module when the employee language is spanish Performance page - Cannot change the settings in a single store context Customer view page - The pagination of the voucher block is not working SQL Manager page - SQL query return exception Invoices page - Longer buttons overflow their container on lower resolutions Localization Page - There is no confirmation modal when changing the default currency View supplier page - Unexpected error View customer page - Incorrect display of the address block Add/edit tax rule page - The state and the postal code fields are not aligned Add/edit category page - The browser is unable to show the error message on an hidden element Add/edit country page - The address format is badly displayed Add/edit customer group page - The &amp;ldquo;Category discount&amp;rdquo; part is misaligned Add/edit attribute and add/edit social title pages - The language dropdown is not well displayed when resizing the window Add/edit product page - When we try to delete all combinations, the warning modal is empty Edit supplier page - Unable to save &amp;ldquo;meta_keywords&amp;rdquo; field If using the multistore and while making a manual upgrade, a new line in ps_configuration is created for PS_VERSION_DB In the Credit slip, the Ecotax is displayed in the Tax details while it shouldn&amp;rsquo;t Orders regressions Order details page - While adding a discount, the modal is not well displayed Order details page - An exception is displayed when the status of the &amp;ldquo;merchandise return&amp;rdquo; is deleted Order details page - The errors while deleting a product are not displayed Order details page - Debug mode enabled - an exception is displayed when ordering a deleted product with a file customization Orders - Cannot extend the order grid query from a module Display regressions Buttons are not well displayed - part 1 Buttons are not well displayed - part 2 Buttons are not well displayed - part 3 Floating button over some elements on migrated pages preventing to save form Front office regressions Problem when adding images with different ratio After upgrade, theme must be updated to be able to pay into the final step Simple anchors don&amp;rsquo;t work on CMS page The add to cart button is not working when clicking on the cart icon Product disabled - An exception is displayed when changing combination or increasing/decreasing a quantity Product comment structured data AggregateRating isn&amp;rsquo;t working Shopping cart page - An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations Product structured data JSON-LD problem when price is not displayed An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations Display regressions The product-flags are displayed in the same row with no space There is an horizontal scrollbar on the homepage under 991px and the carousel overflows the content The search button in the header is not responsive on mobile Featured product not well displayed with responsive Module regressions Bad display in autoupgrade module Ps_banner module fixed width and height value Acknowledgements Contributors to this patch version, from both the Core team and the community at large:</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.8</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-8-maintenance-release/</link>
+      <pubDate>Tue, 14 Sep 2021 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-8-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.8 is now available. This maintenance release fixes 1 major regression.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
+Major issues on the product page The issue #25718 and #25753 appeared due to the implementation of the numeric data format for number fields on the 1.7.7.6 patch version. This regression prevents users to edit the impact of a combination and causes rounding problems on the impact calculation.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.7</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-7-maintenance-release/</link>
+      <pubDate>Thu, 19 Aug 2021 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-7-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.7 is now available. This maintenance release fixes 1 critical regression and 1 minor regression.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
+Critical fix One critical bug has been fixed in 1.7.7.7:
+The checkout at shipping step crashes when a cart rule was used if the database prefix is not ps_ Order page issue Merchants weren&amp;rsquo;t able to download the file from a customized product in the order page if the product wasn&amp;rsquo;t translated in the employee&amp;rsquo;s back office language Acknowledgements Many thanks to @idnovate for reporting the bug and providing a patch!</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.6</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-6-maintenance-release/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-6-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.6 is now available. This maintenance release fixes 31 regressions reported since the 1.7.7.0, including 2 critical regressions.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
+Critical fixes Two critical bugs have been fixed in 1.7.7.6:
+Orders page - an exception is displayed when deleting a customer or a guest Smarty template caching Module::isCached() faulty causes performance loss Other bug fixes Back-office</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.5</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-5-maintenance-release/</link>
+      <pubDate>Mon, 14 Jun 2021 12:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-5-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.5 is now available. This maintenance release fixes 19 regressions reported since the 1.7.7.0.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
+Main fixes Back-office
+Add new order page - Gift message cannot be removed View order page - An exception is displayed when we add a discount with space in the name Missing menu icon on mobile in dashboard page Order message with the same title is not displayed in the &amp;ldquo;order_message&amp;rdquo; list Orders list - The tracking URL is NOK in the preview order Wrong price in the document list for the delivery slip in the admin order page View order page - The order carrier ID is invalid Error when making a delete sql request Wrong escape in ps_1771_update_customer_note() Order page - An error is displayed when changing the addresses for the second time Order page - Ajax issue - The Discount Block is not automatically updated when updating or adding a product In module configuration pages, the &amp;ldquo;Activate module for this shop context&amp;rdquo; checkbox does not work Orders page - missing DNI number in some countries when the DNI is not required Order page - when adding a product which has an ecotax to an old order, the base price is NOK With Safari when creating a catalog price rule the wrong brand is selected View order page - Customized product cannot be added to multi-invoice Front-office</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.4</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-4-maintenance-release/</link>
+      <pubDate>Mon, 03 May 2021 12:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-4-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.4 is now available. This maintenance release fixes 13 issues reported since the 1.7.7.0.
+We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
+Main fixes Back-office
+&amp;ldquo;Expand all&amp;rdquo; button of ps_facetedsearch not working When a cart rule with a free gift and percentage discount is added to the cart, the discount amount displayed is incorrect Product customization file cannot be downloaded if the customization label field contains a dot The gift block in the &amp;lsquo;Add an order&amp;rsquo; page is not updated when changing the carrier When filtering products by category, the chosen category is not selected An error is displayed when deleting an order status with French language Tracking number is not a link on the Order List page Notification of new orders are not displayed An alert is displayed when updating the product quantity in the order page with multistore Front-office</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.3</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-3-maintenance-release/</link>
+      <pubDate>Tue, 30 Mar 2021 14:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-3-maintenance-release/</guid>
+      <description>PrestaShop 1.7.7.3 is now available. This maintenance release fixes 10 bugs reported on previous 1.7.7 versions, as well as one security issue.
+We suggest upgrading your shop quickly in order to benefit from these changes. Of course, don’t forget to make a backup before.
+Reminder: the 1-Click Upgrade module’s latest version is v4.12.0, don’t forget to upgrade it before using it.
+Main fixes Below are listed some main regressions we fixed in this version:</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.7.2</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-2-maintenance-release/</link>
+      <pubDate>Mon, 22 Feb 2021 14:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-2-maintenance-release/</guid>
+      <description>After a few weeks dedicated to fixing upgrades problems, regressions and security issues found on the previous 1.7.7 versions, PrestaShop 1.7.7.2 is finally available!
+This patch release fixes 21 regressions reported on version 1.7.7.0 and 1.7.7.1 and 2 security issues.
+We suggest upgrading your shop quickly in order to benefit from these changes. Of course, don’t forget to make a backup before.
+Reminder: the 1-Click Upgrade module’s latest version is v4.</description>
+    </item>
+    
+  </channel>
+</rss>

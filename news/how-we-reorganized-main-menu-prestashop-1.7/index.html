@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>How we reorganized the main menu in PrestaShop 1.7</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="How we reorganized the main menu in PrestaShop 1.7" />
+<meta property="og:description" content="Did you think everything had been said about PrestaShop 1.7 version? In our quest towards a simpler interface, the main menu was reorganized, mostly to make it easier for you to navigate in PrestaShop. So here are a few things you should be aware of." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/how-we-reorganized-main-menu-prestashop-1.7/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2016-04-29T04:29:00+02:00" />
+    <meta property="article:modified_time" content="2016-04-29T04:29:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="How we reorganized the main menu in PrestaShop 1.7"/>
+<meta name="twitter:description" content="And what you should know about it"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">How we reorganized the main menu in PrestaShop 1.7</h1>
+              
+                <h3 class="post-subtitle">And what you should know about it</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/7910738"
+         alt="Alex Even's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Alex Even</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Apr 29, 2016
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=How&#43;we&#43;reorganized&#43;the&#43;main&#43;menu&#43;in&#43;PrestaShop&#43;1.7&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fhow-we-reorganized-main-menu-prestashop-1.7%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fhow-we-reorganized-main-menu-prestashop-1.7%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Did you think everything had been said about PrestaShop 1.7 version? In our quest towards a simpler interface, the main menu was reorganized, mostly to make it easier for you to navigate in PrestaShop. So here are a few things you should be aware of.</p>
+<p>In short:</p>
+<ul>
+<li>New sections were created</li>
+<li>A new wording has been introduced</li>
+<li>The location of some pages was changed</li>
+<li>Other pages were gathered as tabs of a main page</li>
+</ul>
+<h2 id="the-method-behind-the-new-menu">The method behind the new menu</h2>
+<p>Here’s our recipe to come up with this updated menu:</p>
+<ul>
+<li>A game of card-sorting with the User Club</li>
+<li>A little bit of intuition</li>
+<li>A pinch of logic</li>
+<li>and, well, some of our secret sauce :)</li>
+</ul>
+<p>We hope you’ll like it!</p>
+<p>More seriously, the aim of the reorganization was simply to make the navigation easier in the software. We haven’t reduced the menu, it still has the same number of first-level options, however we did reorder it to what we hope is a logical way of navigating and working with your shop.</p>
+<p>So we conducted a card-sorting experience with the help of the User Club members: 113 users gave us their feedback on which pages they were using the most in PrestaShop. It turns out &ldquo;Orders&rdquo;, &ldquo;Products&rdquo; and &ldquo;Customers&rdquo; were the big winners. Who’d have thought?</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="600" src="/assets/images/2016/04/Prestashop_menu_card_sorting.png">
+<p>From there, we tried to rearrange the sidebar to reflect both what merchants would use the most, while injecting some logic in all this. For instance, to manage your contact information, you previously had to go on both the &ldquo;Store Contacts&rdquo; and the &ldquo;Contacts&rdquo; page. Hence, two different sections for a single action. Now it’s together in one place!</p>
+<p>So hopefully you’ll see what we tried to do here: make it easier to find what you want to do. And when I say we, the whole team took part in this debate (for yes, there were debates!): UX designers, content and product managers too.</p>
+<h2 id="introducing-a-new-wording">Introducing a new wording</h2>
+<p>In addition to actually reorganizing the menu, we thought some menus deserved a better labeling. This is why some names have changed to be more explicit or easier to understand for first-time users. So new concept were introduced as well. Here are the details:</p>
+<h3 id="renaming">Renaming</h3>
+<table>
+<thead>
+<tr>
+<th>1.6</th>
+<th>1.7</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manufacturers</td>
+<td>Brands</td>
+<td>We believe merchants would rather advertise brands on their shops, instead of manufacturers; and from what we’ve seen, merchants were using the &ldquo;manufacturer&rdquo; entity more in the sense of &ldquo;brands&rdquo;.</td>
+</tr>
+<tr>
+<td>Attachments</td>
+<td>Files</td>
+<td>Attachments aren’t always well understood. With a renaming and proper indications within the software, we hope this is now clearer (= adding files to your product page).</td>
+</tr>
+<tr>
+<td>Price Rules</td>
+<td>Discounts</td>
+<td>We’re not really getting rid of price &ldquo;Rules&rdquo; as you’ll still find “Catalog Price Rules” and “Cart Rules”, but we wanted to give it a name easier to grasp for first-time users.</td>
+</tr>
+<tr>
+<td>Themes</td>
+<td>Theme &amp; Logo</td>
+<td>It’s not much, but the way to change the logo wasn’t easy to find, and it’s something merchants want to do as soon as they start their shop. Now it should be even quicker to customize it!</td>
+</tr>
+<tr>
+<td>CMS</td>
+<td>Pages</td>
+<td>Well&hellip; We’re not exactly WordPress, or Drupal — and we don’t plan to be. What this feature allows you to do is to create pages for your static content (About, T&amp;C, etc.). So here you go, that’s where you can create and manage your pages.</td>
+</tr>
+<tr>
+<td>Employees</td>
+<td>Team</td>
+<td>If you work with employees, then you’re a team :) A little renaming to give it a friendlier touch.</td>
+</tr>
+<tr>
+<td>CSV Import</td>
+<td>Import</td>
+<td>Good news! In version 1.7 you can import more formats - no need to be CSV-specific anymore!</td>
+</tr>
+</tbody>
+</table>
+<h3 id="new-labels-or-menus">New labels or menus</h3>
+<h4 id="design">Design</h4>
+<p>We’re aware that it’s not very easy to know where to go when you want to change the look of your shop. In previous versions,  it was split between various menus in various sections. In PrestaShop 1.7, we’ve created a &ldquo;Design&rdquo; section, gathering the main front office sections. From now on, this is where you’ll find the theme settings, the pages (&ldquo;CMS&rdquo;), the modules’ positions page, and the image settings. All in one handy place, at last!</p>
+<h4 id="international">International</h4>
+<p>We haven’t invented anything here, we simply tried to rationalize the &ldquo;Localization&rdquo; menu, by reorganizing it, and giving it this new name, “International”. Because that’s what it is mostly about: you want to grow your business internationally, and PrestaShop helps you reach that goal. New markets, with new languages, new currencies and taxes, customized translations, etc.</p>
+<h4 id="traffic">Traffic</h4>
+<p>We created this new section to gather everything you need to manage in order to bring more visitor traffic to your online store. It means SEO management, but it also means how you deal with specific search engines, as well as the referral programs which you may have. These pages aren’t new, but we decided to put them all together in order to improve your workflow.</p>
+<p>Now that you know most of what’s strictly “new”, let’s dive into how it’s all been reorganized — in other words, the “why” of these evolutions.</p>
+<h2 id="reorganization">Reorganization</h2>
+<h3 id="introducing-tabs">Introducing tabs</h3>
+<p>One of ideas behind this reorganization was to lighten the menu, at least its first level. To do this, and in line with the new 1.7 design, we’ve introduced tabs within various pages. This way we could gather related topics in one page only:</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="550" src="/assets/images/2016/04/Prestashop_menu_tabs_localization.png">
+<h3 id="main-sections-sell-improve-configure">Main sections: Sell, Improve, Configure</h3>
+<p>The most visible change to the back office menu is probably that we introduced three main sections, thus dividing the menu into three logical parts, based on how often merchants use each menu (as per our research). These sections are “Sell”, “Improve”, and “Configure”.</p>
+<h4 id="sell">Sell</h4>
+<img style="float: right; margin: 10px;" width="180" src="/assets/images/2016/04/Prestashop_menu_new_menu.png">
+<p>It’s all about your day-to-day activity. Orders, customers, catalog, etc. This section presents the essence of your business, where you go each day to get your business going.</p>
+<p><em>Submenus:</em>
+Orders, Catalog, Customers, Customers Service, Stats.</p>
+<h4 id="improve">Improve</h4>
+<p>Here you will find everything to customize your shop and take your business further. Set up the look of your front office, adapt your payment methods to your target markets, expand internationally or enhance your shop with new modules and features!</p>
+<p><em>Submenus:</em>
+Modules, Design, Shipping, Payment, International</p>
+<h4 id="configure">Configure</h4>
+<p>It is divided in two submenus.
+The first one is your shop parameters. You’ll find here all the settings you need to configure when you launch your activity. Once you made your initial choices, you won’t go there very often.
+The second menu can be seen as the technical section, with more advanced settings that aren’t used often either.</p>
+<p><em>Submenus:</em>
+Shop Parameters, Advanced Parameters</p>
+<p>Now let&rsquo;s dive into each of these three sections to see what&rsquo;s underneath.</p>
+<h3 id="new-positions-and-subsections">New positions and subsections</h3>
+<h4 id="-sell-">// SELL //</h4>
+<h5 id="orders">Orders</h5>
+<p>Orders now come first, as it’s THE most important concern of your daily activity.</p>
+<p>| <strong>Removed</strong> | Merchandise Returns  | Now in &ldquo;Customer Services&rdquo; (see <a href="#customer-service">below</a>).
+|  				   | Statuses | Now in &ldquo;Shop Parameters&rdquo; &gt; &ldquo;Order Settings&rdquo;, as it’s not related to your daily operations but rather to the global settings for your orders.
+|  				   | Order Messages | Now in &ldquo;Customer Service&rdquo;. Order messages are pre-written messages you can send to your customers via the &ldquo;Order&rdquo; page. We thought it made sense to have it under the &ldquo;Customer Service&rdquo; section, where you can manage your communication with your clientele.
+| <strong>Added</strong> | Shopping Carts  | Previously in &ldquo;Customers&rdquo;, is now in &ldquo;Orders&rdquo;. We think it’s key to monitor your abandoned carts, and moving it to this major section made sense. It’s not yet an order, but could soon become one, so it deserves all this attention.
+| <strong>Submenus</strong> |      | Orders, Invoices, Credit Slip, Delivery Slips, Shopping Carts</p>
+<img  width="500" src="/assets/images/2016/04/Prestashop_menu_catalog_order.png">
+<h5 id="catalog">Catalog</h5>
+<p>This is where the first pages using tabs were introduced as we grouped several pages here. We added or removed others pages to make sure this is the one place where you go to manage your offer and what is available on your shop.</p>
+<p>| <strong>Removed</strong> | Tags  | Went to the new &ldquo;Search&rdquo; pages as they are used to guide your customers through their product search on your shop.
+| <strong>Added</strong>   | Price Rules (now Discounts) | Has been moved in this section as pricing is as important as your products  in defining your catalog and adjusting your offer.
+| <strong>Merged</strong> | Product Attributes + Product Features  | = Attributes &amp; Features
+|   		 | Manufacturers + Suppliers  | = Brands &amp; Suppliers
+| <strong>Submenus</strong> |      | Products, Categories, Monitoring, Attributes &amp; Features, Brands &amp; Suppliers, Files, Price Rules</p>
+<h5 id="customers">Customers</h5>
+<p>This menu has been stripped down to keep the essential: your listing of customers, and their addresses. Everything else, which is considered as settings (groups, titles, etc.), is now in more relevant sections.</p>
+<p>| <strong>Removed</strong> | Groups  | Now to be found as a tab in &ldquo;Shop Parameters&rdquo; &gt; &ldquo;Customers&rdquo;.
+|   		 | Shopping Carts  | Now in &ldquo;Orders&rdquo;, as <a href="#orders">already mentioned</a>.
+|   		 | Customer Service  | Has been <a href="#customer-service">promoted as a first-level menu</a>, to make it easier to follow-up with your customers.
+|   		 | Contacts  | Has been moved to &ldquo;Shop Parameters&rdquo;: once it’s filled-in, you don’t often use this page.
+|   		 | Titles  | Now in &ldquo;Shop Parameters&rdquo; &gt; &ldquo;Customers&rdquo;.
+| <strong>Submenus</strong> |      | Customer Settings, Addresses, Outstanding (in B2B mode)</p>
+<img  width="500" src="/assets/images/2016/04/Prestashop_menu_customer_service_2.png">
+<h5 id="customer-service">Customer Service</h5>
+<p>With more visibility, the &ldquo;Customer Service&rdquo; menu now includes the previously separate &ldquo;Customer Service&rdquo; page as you know it, the &ldquo;Order Messages&rdquo; page and the &ldquo;Merchandise Returns&rdquo; page.</p>
+<p>This is where you can manage interactions with your customers once an order has been placed.</p>
+<p>And finally, the <strong>Stats</strong> menu hasn’t changed a bit: same page, same position.</p>
+<h4 id="-improve-">// IMPROVE //</h4>
+<h5 id="modules">Modules</h5>
+<p>You’re aware <a href="http://build.prestashop.com/news/module-page-awakens/">we’ve revamped the Modules page</a>. We also stripped down this menu to its bare essence:</p>
+<p>| <strong>Removed</strong> | Positions  | Now in &ldquo;Design&rdquo;, as part of the improved way of customizing your front office.
+|   		 | Payment  | In the &ldquo;Improve&rdquo; section, so that it is treated on equal footing with &ldquo;Shipping&rdquo;.
+| <strong>Submenus</strong> |Modules &amp; Services| Redesigned, as you’ve seen in this <a href="http://build.prestashop.com/news/module-page-awakens/">previous article</a>.
+|   		 | Modules Catalog  | Which now only displays modules from Addons Marketplace (and no longer themes, which you will find in &ldquo;Theme Catalog&rdquo;).</p>
+<img  width="500" src="/assets/images/2016/04/Prestashop_menu_design_modules.png">
+<h5 id="design-1">Design</h5>
+<p>I’m not going to dwell much on this one, the why of this section has been explained <a href="#new-labels-or-menus">above</a>.</p>
+<ul>
+<li><em>Submenus:</em> Theme &amp; Logo, Theme Catalog, Pages, Positions, Image Settings</li>
+</ul>
+<h5 id="shipping">Shipping</h5>
+<p>Stays the same, we kinda liked it this way :)</p>
+<ul>
+<li><em>Submenus:</em> Carrier, Preferences</li>
+</ul>
+<img  width="500" src="/assets/images/2016/04/Prestashop_menu_shipping_payment.png">
+<h5 id="payment">Payment</h5>
+<p>The former &ldquo;Payment&rdquo; page has been divided into two new pages: &ldquo;Payments Methods&rdquo; and &ldquo;Preferences&rdquo;. It has been organized to look like the Shipping page.</p>
+<p>In the <strong>Payment Methods</strong> page, you’ll find all the payment methods available in your shop, active or inactive, while the <strong>Preferences</strong> page (formerly at the bottom of the Payment page, thus less visible), allows you to decide which country or which currency to support for each payment method.
+Nothing new here, just a quick reorganization.</p>
+<ul>
+<li><em>Submenus:</em> Payment Methods, Preferences</li>
+</ul>
+<h5 id="international-1">International</h5>
+<p>You can view it as the former &ldquo;Localization&rdquo; menu, where pages have been merged to give a better overview. Nothing new either, only a few merges and an addition.</p>
+<p>| <strong>Added</strong>   | Geolocation | Previously in &ldquo;Preferences&rdquo;, the &ldquo;Geolocation&rdquo; page is now a tab of the &ldquo;Localization&rdquo; page. It seemed logical, as it’s where you define in which countries your shop is accessible (or not).
+| <strong>Merged</strong> | States + Zones + Countries  | = &ldquo;Locations&rdquo;. We grouped under one page everything related to the shipping zone and locations.
+|   		 | Taxes + Tax Rules  | = became two tabs of a general &ldquo;Taxes&rdquo; page.
+| <strong>Submenus</strong> |      | Localization, Locations, Taxes, Translations</p>
+<img  width="250" src="/assets/images/2016/04/Prestashop_menu_international.png">
+<h4 id="-configure-">// CONFIGURE //</h4>
+<p>The Configure section is mostly a reorganization of the former &ldquo;Preferences&rdquo;, &ldquo;Advanced Parameters&rdquo; and &ldquo;Administration&rdquo; tabs.</p>
+<h5 id="shop-parameters">Shop Parameters</h5>
+<p>This section is about settings that will impact how your shop works. Most of these pages were previously found under the “Preferences” menu.</p>
+<p>| <strong>Removed</strong> | Geolocation  | Moved to &ldquo;International&rdquo;.
+| <strong>Added</strong>   | Statuses | Now in &ldquo;Order Settings&rdquo;.
+|   		 | Groups  | Now in &ldquo;Customer Settings&rdquo;.
+|   		 | Titles  | Also in &ldquo;Customer Settings&rdquo;.
+|   		 | Tags  | in &ldquo;Search&rdquo;.
+| <strong>Merged</strong> | General + Maintenance  | = General
+| <strong>Submenus</strong> |      | General, Order Settings, Product Settings, Customer Settings, Contact, Traffic, Search</p>
+<img  width="500" src="/assets/images/2016/04/Prestashop_menu_parameters.png">
+<h5 id="advanced-parameters">Advanced Parameters</h5>
+<p>Here you’ll find advanced and technical settings. Most of these pages are for one-time use: once you’ve set everything up, you’re not supposed to go there very often, but merely for checkups or a few updates.</p>
+<p>| <strong>Added</strong>   | Administration | Formerly a first level tab, it’s been moved here. The &ldquo;Employees&rdquo; page was extracted and moved to the same level (as the &ldquo;Team&rdquo; page).
+| <strong>Merged</strong>  | Employees + Profiles + Permissions  | = Team. Everything to manage your employees (at least, in PrestaShop :)
+|   		 | SQL Manager + DB Backup  | = Database
+| <strong>Submenus</strong> |      | Information, Performance, Administration, E-mail, Import, Team, Database, Logs, Webservice</p>
+<p>That’s it, you know all about it. Let us know what you think! :)
+We’re still in the alpha phase for PrestaShop 1.7, so this new navigation isn’t fully implemented yet if you’re testing it (yes, <a href="http://build.prestashop.com/news/here-comes-prestashop-1-7-alpha-4/">we need you to test it!</a>). But most of it is already there!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Apr 29, 2016</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/product/">product</a>
+
+  <a class="label label-primary" href="/tag/ux/">ux</a>
+
+  <a class="label label-primary" href="/tag/wording/">wording</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Alex Even
+      <span>Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/AlexEven">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/821016-alex-even">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/alex-even">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/AlexHarryEven">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

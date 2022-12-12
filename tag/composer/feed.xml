@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>composer on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/composer/</link>
+    <description>Recent content in composer on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 May 2021 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/composer/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop is now available on Composer</title>
+      <link>https://build.prestashop-project.org/news/prestashop-available-composer/</link>
+      <pubDate>Mon, 24 May 2021 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-available-composer/</guid>
+      <description>Released almost 10 years ago, Composer is the most popular package manager for the PHP ecosystem. PrestaShop has been using it since 1.7.0 to manage its dependencies, including all the native modules.
+Today we are announcing the general availability of PrestaShop itself through Composer. Thanks to this, it is now possible to easily create a new PrestaShop project from the command line, like this:
+composer create-project prestashop/prestashop Or, if you want to download a specific version instead of the latest release:</description>
+    </item>
+    
+    <item>
+      <title>CLDR, Composer, NPM, JSHint, oh my!</title>
+      <link>https://build.prestashop-project.org/news/cldr-composer-jshint/</link>
+      <pubDate>Thu, 24 Sep 2015 18:00:41 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/cldr-composer-jshint/</guid>
+      <description>As those of you who regularly look at the commits being merged in the &amp;lsquo;develop&amp;rsquo; branch know, the forthcoming 1.7.0.0 version of PrestaShop now includes a few notable improvements.
+These are all part of our plan to modernize the codebase, and provide you with a professional e-commerce tool!
+CLDR: managing local numbers the right way PrestaShop 1.7 now implements part of the Unicode Common Locale Data Repository standard in order to better manage currency and price listing.</description>
+    </item>
+    
+    <item>
+      <title>Dropping support for PHP 5.2 and 5.3</title>
+      <link>https://build.prestashop-project.org/news/Dropping-support-php52-and-53/</link>
+      <pubDate>Wed, 24 Jun 2015 17:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/Dropping-support-php52-and-53/</guid>
+      <description>At PrestaShop, we want to make e-commerce possible for everyone. No matter where you are, no matter how much you can (or cannot) spend on your hosting, no matter how big or how small your store is. Because we’ve always made sure your PrestaShop store could run on a cheap shared hosting plan in a far far away land, we had to support PHP all the way back to version 5.</description>
+    </item>
+    
+  </channel>
+</rss>

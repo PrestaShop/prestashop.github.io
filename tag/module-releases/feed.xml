@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>module-releases on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/module-releases/</link>
+    <description>Recent content in module-releases on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/module-releases/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Release Of Module ProductComments 4.2.1</title>
+      <link>https://build.prestashop-project.org/news/productcomments-4-2-1-maintenance-release/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/productcomments-4-2-1-maintenance-release/</guid>
+      <description>We have identified and fixed a new security issue on module Product Comments.
+This issue is fixed in latest version 4.2.1.
+Security fix One security fix has been included in this minor version:
+Blind SQL injection during the CommentGrade process (security advisory) More information about why it is important to update:
+SQL Injection (CWE-89) Other changes The version v4.2.1 of the module also brings some new improvements, you can read the full Changelog here.</description>
+    </item>
+    
+    <item>
+      <title>Release Of Module ProductComments 4.2.0</title>
+      <link>https://build.prestashop-project.org/news/productcomments-4-2-0-maintenance-release/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/productcomments-4-2-0-maintenance-release/</guid>
+      <description>The ongoing work on security for PrestaShop software continues. We have identified and fixed a new security issue on module Product Comments.
+This issue is fixed in latest version 4.2.0.
+Security fix One security fix has been included in this minor version:
+Reflected XSS with parameters in PostComment (security advisory) More information about why it is important to update:
+Cross-site Scripting (CWE-79) Other changes The version v4.2.0 of the module also brings some new improvements, you can read the full Changelog here.</description>
+    </item>
+    
+  </channel>
+</rss>

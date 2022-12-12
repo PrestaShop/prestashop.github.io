@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>The (new) PrestaShop Test Framework</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="The (new) PrestaShop Test Framework" />
+<meta property="og:description" content="For a few months, quality has been a priority for PrestaShop: the QA team and I are proud to announce that we’re making great steps in improving the overall quality of the core project. Automatizing tests is a big part of this process: let’s see what we’re doing, why, and how! Note: this article is focused on the Core only, but that is just a small part of what the QA team is working on. More to come in a future article!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/the-new-prestashop-test-framework/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2020-02-05T12:00:00+01:00" />
+    <meta property="article:modified_time" content="2020-02-05T12:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="The (new) PrestaShop Test Framework"/>
+<meta name="twitter:description" content="And how we&#39;re continually improving the quality of the PrestaShop project"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">The (new) PrestaShop Test Framework</h1>
+              
+                <h3 class="post-subtitle">And how we&#39;re continually improving the quality of the PrestaShop project</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/49909275?s=400&amp;v=4"
+         alt="Simon Garny's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Simon Garny</div>
+        
+          <div class="author-display-role">QA Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Feb 5, 2020
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=The&#43;%28new%29&#43;PrestaShop&#43;Test&#43;Framework&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fthe-new-prestashop-test-framework%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fthe-new-prestashop-test-framework%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>For a few months, quality has been a priority for PrestaShop: the QA team and I are proud to announce that we&rsquo;re making great steps in improving the overall quality of the core project. Automatizing tests is a big part of this process: let’s see what we’re doing, why, and how!
+Note: this article is focused on the Core only, but that is just a small part of what the QA team is working on. More to come in a future article!</p>
+<h2 id="tldr">TL;DR</h2>
+<p>The PrestaShop QA team is dropping Selenium and redoing the whole Core test campaign using another tool called Puppeteer, with another design pattern (Page Object Model).
+We aim for better coverage, faster answers for the devs, less time lost in maintaining and fixing the tests, and overall a real change in the quality of the open source project!</p>
+<h2 id="taking-a-look-back">Taking a look back</h2>
+<p>Historically, the PrestaShop Core continuous integration had a big end-to-end test campaign which purpose was to test the whole application as thoroughly as possible. <a href="https://build.prestashop.com/news/prestashop-test-framework/">This campaign</a> was using Selenium as the automation tool, and was running in two places:</p>
+<ul>
+<li>The whole campaign was running on every nightly build and for every release</li>
+<li>A small subset of the campaign was running for every Pull Request on GitHub through Travis CI</li>
+</ul>
+<p>In March 2019, the QA team decided to stop improving the Selenium campaign (doing only some maintenance) and create a new campaign using Puppeteer. It took quite some time to have a good POC and our engineers started working on it in September. Mid-September there was a sanity campaign up on Travis, and in January 2020 the nightly Selenium campaign was finally dropped and replaced with our growing Puppeteer one.</p>
+<p>There are multiple reasons behind this choice, here are the three main ones:</p>
+<ul>
+<li>Tests were run in <a href="https://en.wikipedia.org/wiki/Headless_software">headless mode</a> (mandatory on Travis). Unfortunately, Selenium is <a href="https://stackoverflow.com/questions/54984306/problem-with-chromedriver-in-headless-mode">quite</a> <a href="https://github.com/SeleniumHQ/selenium/issues/4685">picky</a> <a href="https://github.com/SeleniumHQ/selenium/issues/4477">when</a> used in headless mode. This created multiple issues when tests would fail although the code was bug free. Alas, debugging a failing test without a GUI is very tedious. Our QA engineers used multiple workarounds (screenshots of failing screens, logging every event, &hellip;) but ultimately it was decided to disable the failing tests as it was not possible to make them run in a reliable manner.</li>
+<li>Selenium itself is not very stable: the test campaign could be run 3 or 4 times in a row on Travis and have different results, with different tests failing. Sometimes it could not find a selector, or <a href="https://github.com/PrestaShop/PrestaShop/issues/14384">timed out</a> when waiting for something… it was very difficult and time-consuming to make the tests more robust.</li>
+<li>The campaign was too complex: it was trying to test everything at once. The campaign would test all the features in a page, but also doing some <a href="https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#functional-tests">integration testing</a> (verifying some features work well together) and some <a href="https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#end-to-end-tests-soon">end-to-end testing</a> (running through the application like a real user and testing a bunch of features at once). The result was a very complex test suite, very brittle (end-to-end tests are really fragile by design) and a nightmare to maintain and fix.</li>
+</ul>
+<p>There were some concerns with the structure of the code of this campaign too. Although it did the job, there was no clear architecture behind it. No separation of concerns, no proper use of inheritance, no distinction between the test logic and the page logic. The lack of structure made it very complicated to find the source of a problem sometimes, and with more than 8000 test cases this was a considerable waste of time.</p>
+<p>All these reasons made it clear that it was time to drop the whole thing and start over.</p>
+<h2 id="what-the-team-is-building-now">What the team is building now</h2>
+<p>The QA team decided to work on the three following points.</p>
+<h3 id="automation-tool">Automation tool</h3>
+<p>It was already decided to drop Selenium, but what would be a good replacement? There are a lot of options there, including SaaS solutions (<a href="https://www.cypress.io/">Cypress</a>, <a href="https://docs.qawolf.com/">QAWolf</a>, etc). After reviewing a few possibilities, the best choice was to go for <a href="https://github.com/puppeteer/puppeteer">Puppeteer</a>.</p>
+<p>Puppeteer is a Node library which provides a nice API to control Chrome. It can automate pretty much everything you do manually. It is maintained by Google, which is considered a good indicator of the quality of a project.</p>
+<p>But more importantly, it’s more stable in headless (which was a killer feature for us!) since it was designed with headless in mind.</p>
+<h3 id="new-framework-and-architecture">New framework and architecture</h3>
+<p>As mentioned, the QA team wanted to use this opportunity to create a more robust way to create and maintain tests and avoid the issues encountered with the Selenium implementation. Since Puppeteer is just a component, QA team will create a complete framework around it, and we also introduced the use of <a href="https://martinfowler.com/bliki/PageObject.html">Page Object Pattern</a>. This pattern ensures you separate the test logic from the page logic.</p>
+<p>On one hand, you create separate objects for every page you need to automate things on. Each object will then hold its own logic, from selectors to basic methods to use on the page (for example, fill a form, sort a table, choose an option from a dropdown, etc).</p>
+<p>On the other hand, you create your test logic by using these objects. The goal is to have really small test steps which then use the methods from the objects. This way, your tests don’t know what’s happening behind the scenes. They only call methods which act as an abstraction layer.</p>
+<p>This is a good illustration of <a href="https://en.wikipedia.org/wiki/Separation_of_concerns">Separation of Concerns</a>: when a page is updated, you only change the corresponding object in its separate file so that selectors and methods still work the same. When your test needs an update, you only change the logic in the steps.</p>
+<h3 id="re-focus-the-test-effort">Re-focus the test effort</h3>
+<p>The third point was about the campaign itself. The goal was to redirect the campaign to be more effective, faster (the full Selenium campaign could last for up to 20 hours!) and easier to maintain. That would mean a shift in the focus of the campaign: instead of making a “do-it-all” campaign, it would be splitted up in 3 campaigns:</p>
+<ul>
+<li>A sanity tests campaign</li>
+<li>An integration tests campaign</li>
+<li>An end-to-end tests campaign</li>
+</ul>
+<p>Each of these campaigns has its perks.</p>
+<p>The <strong>sanity campaign</strong> is here to make sure developers do not break some core features of PrestaShop when introducing changes. To be run for every Pull Request, it checks all the critical features of the application: the frontend catalog, the cart, the checkout process; but also the backend with the product section and the order section. It is a fast campaign (about 8 minutes) and it must pass for the PR to be reviewed.</p>
+<p>The <strong>integration campaign</strong> is the biggest one: every feature of every page is tested one by one (with of course a few exceptions when it’s too complicated to automate). The goal here is to verify that all features (taken individually) still work as expected. That means testing tables, filters, and CRUD features (Create, Read, Update, Delete).
+This campaign is the biggest so far, and my team and I are proud to say that it works wonderfully. There are still some errors sometimes but things wil be ironed out with time. It already proved itself useful by finding bugs! It’s also very consistent: when it fails it’s always in the same spot and for the same reason.</p>
+<p>The <strong>end-to-end campaign</strong> will cover what’s left: it is used to test real user journeys. The goal is to make sure all the actions a merchant can do are covered by tests, so that Core maintainers can be confident about the level of quality of the application. The Product team (and the QA team) already have a good idea of these user journeys (gathered through the interviews with merchants) and will try to implement journeys that are the most relevant to a merchant daily and weekly recurring actions.</p>
+<p>There is one last campaign: it&rsquo;s important to make sure old issues stay fixed and don’t come back after a while. A regression campaign aims for that (or at least to get up to a comfortable coverage). It is run after the main campaign is finished. It targets critical and major issues fixed in the last few minor versions.</p>
+<h2 id="thats-nice-but-where-can-i-see-all-the-action">That’s nice, but where can I see all the action?</h2>
+<p>The <a href="https://nightly.prestashop.com/">nightly board is public</a>! You can check it and open every report. The current version was quickly engineered to let us gather the data and present it in an acceptable way, but it’s being redesigned using the UI Kit developed for PrestaShop (thanks to the UX team and our front-end developer!) and should be way easier to read in a few weeks (hopefully). Keep an eye on it!</p>
+<p>All the tests I present in this article are also available in the <a href="https://github.com/PrestaShop/PrestaShop/tree/develop/tests/puppeteer">develop</a> and <a href="https://github.com/PrestaShop/PrestaShop/tree/1.7.7.x/tests/puppeteer">1.7.7.x</a> branches in the GitHub repository. Feel free to explore and execute them.</p>
+<p>Don’t forget that you can help us by <a href="https://devdocs.prestashop.com/1.7/testing/how-to-create-your-own-web-acceptance-tests/#creating-a-web-acceptance-test">writing tests or Page Objects through Pull Requests</a>!</p>
+<p>Addendum: the team behind Puppeteer recently revealed their new project: <a href="https://github.com/microsoft/playwright">PlayWright</a>. Based on their work on Puppeteer, it’s also a Node library but able to communicate with Chromium, Firefox, and Edge. As soon as they release a stable version, the QA team will look seriously into it, as testing all major browsers would be a nice addition.</p>
+<p>As always, at PrestaShop we’re impatient to hear your comments and suggestions.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Feb 5, 2020</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/QA/">QA</a>
+
+  <a class="label label-primary" href="/tag/tests/">tests</a>
+
+  <a class="label label-primary" href="/tag/community/">community</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Simon Garny
+      <span>QA Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/SimonGrn">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

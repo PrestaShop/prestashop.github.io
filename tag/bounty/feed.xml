@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bounty on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/bounty/</link>
+    <description>Recent content in bounty on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Sep 2020 09:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/bounty/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bug Bounty Program, the retrospective</title>
+      <link>https://build.prestashop-project.org/news/bug-bounty-retrospective/</link>
+      <pubDate>Fri, 11 Sep 2020 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/bug-bounty-retrospective/</guid>
+      <description>For several months, we experimented a Bug Bounty Program with the YesWeHack platform. Here is a retrospective, explaining why we did it, and what happened during this period.
+Private program The security of software cannot be assessed unless it is tested by a lot of hunters.
+PrestaShop relies on a lot of dependencies, with hundreds of thousands lines of code, and this has been true since the very first versions.</description>
+    </item>
+    
+    <item>
+      <title>Announcing our first Bug Bounty program</title>
+      <link>https://build.prestashop-project.org/news/bug-bounty-program/</link>
+      <pubDate>Thu, 23 Jul 2020 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/bug-bounty-program/</guid>
+      <description>Protecting the business, data and privacy of PrestaShop&amp;rsquo;s users is one of our top priorities. We build our software with this goal in mind. That&amp;rsquo;s why we decided to put our security to the test. To encourage the security community to help us, today we are announcing our first bug bounty program!
+Why this program Bug bounties are used by many leading companies to improve the security of their products. These programs provide an incentive for researchers to responsibly disclose software bugs and allow security teams to leverage the external community to help keep users safe.</description>
+    </item>
+    
+  </channel>
+</rss>

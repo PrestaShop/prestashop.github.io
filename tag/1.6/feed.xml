@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.6 on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/1.6/</link>
+    <description>Recent content in 1.6 on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jul 2019 11:30:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/1.6/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.6.1.x: what’s next</title>
+      <link>https://build.prestashop-project.org/news/1.6.1.x-what-s-next/</link>
+      <pubDate>Thu, 04 Jul 2019 11:30:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/1.6.1.x-what-s-next/</guid>
+      <description>This last year, the PS company has been facing a dilemma: how to dedicate 100% of the developers’ time to move forward faster on the 1.7 version of the open source project, something everybody agrees on. And, at the same time, provide more time for merchants still using the 1.6 version to get ready to upgrade, by keeping them safe in case of critical issue after the official support ends on the 30th of June 2019.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.5.2 and 1.6.1.24</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-5-2-1-6-1-24-maintenance-release/</link>
+      <pubDate>Fri, 03 May 2019 11:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-5-2-1-6-1-24-maintenance-release/</guid>
+      <description>PrestaShop 1.7.5.2 and 1.6.1.24 are now available. These versions fix a security issue for both 1.7.5.x and 1.6.1.x. For the details, please read below:
+These two security updates address a validation issue on the customer registration form, which is currently being exploited by spammers who were entering URLs as customer name.
+This update mitigates the problem by preventing attackers to use URLs as names. However, as we discussed before, the best protection against this kind of attack still is to add a CAPTCHA module on your shop.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.4.4 and 1.6.1.23</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-4-4-1-6-1-23-maintenance-releases/</link>
+      <pubDate>Wed, 07 Nov 2018 14:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-4-4-1-6-1-23-maintenance-releases/</guid>
+      <description>PrestaShop 1.7.4.4 and 1.6.1.23 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. For the details, please read below:
+These two security updates fix issues on the file manager integrated in the text editor component in the Back Office. By exploiting a combination of security vunerabilities, an authenticated user in the Back Office could upload a malicious file that would then allow him or her to execute arbitrary code on the server.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.6.1.22</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-6-1-22-maintenance-release/</link>
+      <pubDate>Wed, 10 Oct 2018 18:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-6-1-22-maintenance-release/</guid>
+      <description>PrestaShop 1.6.1.22 is now available. It fixes an important bug introduced in 1.6.1.21:
+A backported patch from 1.7.x was missing a line of code. This issue is not noticeable right away, but it can block a shop after a short number of days. Shops in 1.6.1.21 must upgrade to 1.6.1.22 as soon as possible. Download PrestaShop now! Here is the complete list of changes for 1.6.1.22
+Core: Bug fix: #10921: Missing class const on cert refresh Contributor to this patch versions, from the Core team: Thomas Nabord.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.3.3 and 1.6.1.19</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-3-3-1-6-1-19-maintenance-releases/</link>
+      <pubDate>Mon, 28 May 2018 10:30:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-3-3-1-6-1-19-maintenance-releases/</guid>
+      <description>PrestaShop 1.7.3.3 and 1.6.1.19 are now available. Those maintenance releases fixes specific issues for the GDPR compliance.
+Some of the most notable fixes are:
+Add GDPR compliance to native modules Fix some diplay errors Download PrestaShop now! Here is the complete list of changes for 1.7.3.3
+Back Office: Bug fix: #9026: Fixed display error on back office module selection list Front Office: New feature: #9099: Follow-up to: display GDPR consent checkbox in contactform Improvement: #9104: Add compliance to GDPR law for ps_emailsubscription module Here is the complete list of changes for 1.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop &amp; GDPR</title>
+      <link>https://build.prestashop-project.org/news/prestashop-and-gdpr/</link>
+      <pubDate>Mon, 16 Apr 2018 16:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-and-gdpr/</guid>
+      <description>As you are probably already aware, in a few weeks (May 25th of this year) the new european law on personal data protection will come into effect.
+As an e-commerce software, our goal is to help merchants all around the world to sell their products while complying with legal regulations. This is why it is important for us to provide a tool which will allow your shop to become GDPR compliant.</description>
+    </item>
+    
+    <item>
+      <title>Announcing our 2018 release schedule</title>
+      <link>https://build.prestashop-project.org/news/announcing-our-2018-release-schedule/</link>
+      <pubDate>Fri, 23 Mar 2018 09:10:11 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/announcing-our-2018-release-schedule/</guid>
+      <description>Today we are shining a light on a crucial information, long requested: our release calendar for the next versions of PrestaShop 1.7 and 1.6!
+TL;DR In short: we intend to release at least 3 minor versions of PrestaShop 1.7 in 2018, and patch versions for both 1.7 and 1.6, as regularly as possible in-between minor releases.
+When? Keen readers should already know about since it has been published on March 2nd.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 2018 release schedule</title>
+      <link>https://build.prestashop-project.org/howtos/misc/2018-release-schedule/</link>
+      <pubDate>Fri, 02 Mar 2018 09:10:11 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/2018-release-schedule/</guid>
+      <description>Our release calendar for the next versions of PrestaShop 1.7 and 1.6.
+Summary In short: we intend to release minor versions of PrestaShop 1.7 every 3 to 4 months, and patch versions for both 1.7 and 1.6 as regularly as possible in-between minor releases.
+When? When? When? Here’s a handy table to guide you:
+This table was updated on February 26th, 2018. Please note that all dates are estimated, not fixed, and hence subject to change.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.6.1.18</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-6-1-18-maintenance-release/</link>
+      <pubDate>Mon, 05 Feb 2018 09:10:11 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-6-1-18-maintenance-release/</guid>
+      <description>PrestaShop 1.6.1.18 is now available. This maintenance release has seen 25 pull requests merged since version 1.6.1.17.
+Continuing on our promise to support 1.6 with patch releases until October 2018, we are happy to deliver this new maintenance version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
+Download 1.6.1.18 now! As the version number indicates (as per our SemVer-like versioning), this is the 18th patch release for PrestaShop 1.</description>
+    </item>
+    
+    <item>
+      <title>A year into 1.6 maintenance: the way forward</title>
+      <link>https://build.prestashop-project.org/news/a-year-into-1-6-maintenance/</link>
+      <pubDate>Fri, 06 Oct 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/a-year-into-1-6-maintenance/</guid>
+      <description>A year ago, we released PrestaShop 1.7.0.0, and put version 1.6 in maintenance mode. The plan is to maintain it for two years, with regular patch releases. Approaching the one-year mark, time for a review!
+So, first things first: we are of course as committed as ever to support version 1.6 until October 2018. As you know, we are keeping our promise: A dedicated team of developers has been assigned to process 1.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.6.1.17</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-6-1-17-maintenance-release/</link>
+      <pubDate>Thu, 07 Sep 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-6-1-17-maintenance-release/</guid>
+      <description>PrestaShop 1.6.1.17 is now available. This maintenance release has seen 17 pull requests merged since version 1.6.1.16.
+Continuing on our promise to support 1.6 with patch releases until October 2018, we are happy to deliver this new maintenance version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
+Download 1.6.1.17 now! As the version number indicates (as per our SemVer-like versioning), this is the 17th patch release for PrestaShop 1.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.6.1.16</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-6-1-16-maintenance-release/</link>
+      <pubDate>Tue, 01 Aug 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-6-1-16-maintenance-release/</guid>
+      <description>PrestaShop 1.6.1.16 is now available. This maintenance release has seen 20 pull requests merged since version 1.6.1.15.
+Continuing on our promise to support 1.6 with patch releases until October 2018, we are happy to deliver this new version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
+Download 1.6.1.16 now! As the version number indicates (as per our SemVer-like versioning), this is the 16th patch release for PrestaShop 1.</description>
+    </item>
+    
+    <item>
+      <title>6 months of PrestaShop</title>
+      <link>https://build.prestashop-project.org/news/the-six-first-months-of-2017/</link>
+      <pubDate>Tue, 25 Jul 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/the-six-first-months-of-2017/</guid>
+      <description>July is almost over and more than 6 months have come and gone since the beginning of the year. Time to gather some numbers and make sense of them. Infographic included!
+High-level numbers Between January 1st and June 31st of 2017, we&amp;rsquo;ve released 13 updates to PrestaShop:
+1 minor release for 1.7: 1.7.1.0. Version 1.7.2.0 was released in July! Download it today! 5 patch releases for 1.7: from 1.7.0.4, 1.5.0.5, 1.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.6.1.15</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-6-1-15-maintenance-release/</link>
+      <pubDate>Wed, 28 Jun 2017 02:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-6-1-15-maintenance-release/</guid>
+      <description>PrestaShop 1.6.1.15 is now available. This maintenance release has seen 19 pull requests merged since version 1.6.1.14.
+Continuing on our promise to support 1.6 with patch releases, we are happy to deliver this new version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
+Download 1.6.1.15 now! As the version number indicates (as per our SemVer-like versioning), this is the 15th patch release for PrestaShop 1.6.1.0.
+As usual, if you are currently running promotions leading to high traffic on your website, we recommend that you wait for the promotion to end before attempting any upgrade and technical change to your store.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.6.1.14</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-6-1-14-maintenance-release/</link>
+      <pubDate>Mon, 05 Jun 2017 02:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-6-1-14-maintenance-release/</guid>
+      <description>PrestaShop 1.6.1.14 is now available. This maintenance release has seen 21 pull requests merged since version 1.6.1.13.
+Continuing on our promise to support 1.6 with patch releases, we are happy to deliver this new version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
+Download 1.6.1.14 now! As the version number indicates (as per our SemVer-like versioning), this is the 14th patch release for PrestaShop 1.6.1.0.
+As usual, if you are currently running promotions leading to high traffic on your website, we recommend that you wait for the promotion to end before attempting any upgrade and technical change to your store.</description>
+    </item>
+    
+  </channel>
+</rss>

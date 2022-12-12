@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Architecture Improvements in 1.6.1.0</title>
+    <link href="/style.css?1670854426" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Architecture Improvements in 1.6.1.0" />
+<meta property="og:description" content="With the release of PrestaShop 1.6.1.0 we are going to introduce exciting new tools in the codebase that are designed to help write more modular, testable code that enforces separation of concerns." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/new-architecture-1-6-1-0/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2015-05-21T19:13:37+02:00" />
+    <meta property="article:modified_time" content="2015-05-21T19:13:37+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Architecture Improvements in 1.6.1.0"/>
+<meta name="twitter:description" content="Cool new toys for PrestaShop developers"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Architecture Improvements in 1.6.1.0</h1>
+              
+                <h3 class="post-subtitle">Cool new toys for PrestaShop developers</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/1460499"
+         alt="François-Marie de Jouvencel's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">François-Marie de Jouvencel</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    May 21, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Architecture&#43;Improvements&#43;in&#43;1.6.1.0&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fnew-architecture-1-6-1-0%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fnew-architecture-1-6-1-0%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>With the release of PrestaShop 1.6.1.0 we are going to introduce exciting new tools in the codebase that are designed to help write more modular, testable code that enforces <a href="http://en.wikipedia.org/wiki/Separation_of_concerns">separation of concerns</a>.</p>
+<p>We are releasing our work on the software architecture of PrestaShop to start discussing it with our community, gather ideas and feedback, and improve it together.</p>
+<p>Since we are introducing many new concepts we felt a few explanations were in order.</p>
+<h2 id="the-plan">The Plan</h2>
+<p>The driving idea behind this project is that we want our code to be more robust.</p>
+<p>To be robust, code needs unit tests. To have unit tests, code needs to be modular. To write modular code, we need a few tools. The recent changes provide some of these tools, which will be enriched in the coming months.</p>
+<p>First of all, don&rsquo;t panic. We are not breaking anything (yet). We&rsquo;re just adding new abstraction layers that are primarily meant to be used by new code.</p>
+<p>As much as possible, new features will be implemented using the elements from the new architecture. Old code will benefit from the new components where they provide an obvious improvement but we have no intent to systematically rewrite legacy code and move it to the new architecture. This is not a 2.0 version, but a (big) step to bring PrestaShop up to speed.</p>
+<p>Besides architecture improvements, our plan for the coming year includes:</p>
+<ul>
+<li>adopting the PSR-2 norm</li>
+<li>switching to PHP 5.4 (namespaces, closures&hellip;!)</li>
+<li>switching to composer for dependency management (no more submodules!)</li>
+</ul>
+<p>Stay tuned!</p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>Before getting into more details we want to insist on the fact that the architecture changes we have introduced are at this stage still a work in progress.</p>
+<p><em>The code is production ready, but the APIs may change in the near future.</em></p>
+<p>You&rsquo;re of course welcome to experiment with the new classes and services, but please be warned there will likely be short notice breaking changes in the coming months.</p>
+<p>If in doubt, do not directly depend on code in the <code>Core</code> or <code>Adapter</code> folders.</p>
+<h2 id="new-directories-in-the-source-tree">New Directories in the Source Tree</h2>
+<pre><code>PrestaShop/
+    |-- Core/
+    |    |-- Foundation/
+    |    └-- Business/
+    |-- Adapter/
+    └-- *Legacy*/
+</code></pre>
+<p>Two new top-level directories were added to the source tree, <code>Core</code> and <code>Adapter</code>.</p>
+<p>Code in the <code>Core</code> directory is what we refer to when we say &ldquo;the new architecture&rdquo;.</p>
+<p>There are two main requirements for all the code in <code>Core</code> :</p>
+<ul>
+<li>Code in <code>Core</code> MUST HAVE <em>meaningful</em> unit tests</li>
+<li>Code in <code>Core</code> MUST BE modular
+<ul>
+<li>no hidden dependencies: use Dependency Injection</li>
+<li>as a general rule, NO global variables use, direct or indirect (e.g. no access to <code>$_GET</code> so no <code>Tools::getValue()</code>)</li>
+</ul>
+</li>
+</ul>
+<p>The code in <code>Adapter</code> serves as a bridge between the <code>Core</code> and the legacy parts. Code in <code>Core</code> MAY call into legacy code, but only through an <code>Adapter</code>.</p>
+<p>Currently we&rsquo;re using pseudo-namespaces, which leads to cumbersome class names like <code>Core_Foundation_Database_EntityManager</code>.</p>
+<p>They will be replaced as soon as possible with proper namespaces, so:</p>
+<blockquote>
+<p><code>Core_Foundation_Database_EntityManager</code></p>
+</blockquote>
+<p>will soon become:</p>
+<blockquote>
+<p><code>Core\Foundation\Database\EntityManager</code></p>
+</blockquote>
+<p>which will improve readability a lot. Please bear with us for a little longer :)</p>
+<h2 id="key-new-software-components">Key New Software Components</h2>
+<h3 id="dependency-injection">Dependency Injection</h3>
+<p>To better manage the many dependencies between components inside PrestaShop, we introduced an Inversion Of Control component (class <code>Core_Foundation_IoC_Container</code>).</p>
+<p>The job of the <code>Core_Foundation_IoC_Container</code> class is to store all of the application-wide services (like the database, the configuration&hellip;) and pass them on to other components that need them.</p>
+<p>Services are bound to the container at the very early stage of the application initialization (<code>config/bootstrap.php</code>).</p>
+<p>At the moment you mostly access the IoC container through the Service Locator.</p>
+<p>For instance:  <code>Adapter_ServiceLocator::get('Core_Foundation_Database_DatabaseInterface')</code> will retrieve the instance of the database from the container.</p>
+<p><em>In the future, Adapter_ServiceLocator will no longer be needed. The IoC container will be threaded down from the application bootstrapping code to the controllers layer and controllers will pull their dependencies from the container directly. Using the <code>Adapter_ServiceLocator</code> is a temporary measure that enables us to work with the concepts from the new architecture without the need for risky refactoring.</em></p>
+<p>The dependency injection component is already used in one very interesting place: module constructors.</p>
+<p>Now if you declare a dependency in your module constructor, it will be injected into your module automatically.</p>
+<p>This helps make modules safer, because they can specify to the application which components they need to do their work.</p>
+<p>For instance, let&rsquo;s say I need access to the database for my module.</p>
+<p>Instead of writing things like:</p>
+<p>{% highlight php startinline=true %}
+class MyModule extends Module
+{
+public function __construct()
+{
+// initialization code
+}</p>
+<pre><code>public function getSomeData()
+{
+    // Where does Db come from?!
+    Db::getInstance()-&gt;executeS('SELECT x FROM Y');
+}
+</code></pre>
+<p>}
+{% endhighlight %}</p>
+<p>You can now write:</p>
+<p>{% highlight php startinline=true %}
+class MyModule extends Module
+{
+private $db;</p>
+<pre><code>public function __construct(Core_Foundation_Database_DatabaseInterface $db)
+{
+    // initialization code
+    $this-&gt;db = $db;
+}
+
+public function getSomeData()
+{
+    $this-&gt;db-&gt;select('SELECT x FROM Y');
+}
+</code></pre>
+<p>}
+{% endhighlight %}</p>
+<p>There are several benefits to the new approach:</p>
+<ul>
+<li>no access to global variables</li>
+<li>easier to test: you can <code>new</code> the module and pass a database mock to it</li>
+<li>people reading the code know immediately what kind of dependencies the module needs</li>
+</ul>
+<h3 id="entity-repositories">Entity Repositories</h3>
+<p>In PrestaShop many <code>ObjectModel</code> subclasses implement methods to retrieve models from the database according to some criteria.
+The methods are not generic even though they perform very generic tasks.</p>
+<p>For instance in <code>CountryCore</code> you can find this method:</p>
+<p>{% highlight php startinline=true %}
+public static function getByIso($iso_code, $active = false)
+{
+if (!Validate::isLanguageIsoCode($iso_code))
+die(Tools::displayError());
+$result = Db::getInstance(<em>PS_USE_SQL_SLAVE</em>)-&gt;getRow('
+SELECT <code>id_country</code>
+FROM <code>'._DB_PREFIX_.'country</code>
+WHERE <code>iso_code</code> = '&rsquo;.pSQL(strtoupper($iso_code)).&rsquo;''
+.($active ? &rsquo; AND active = 1&rsquo; : &lsquo;&rsquo;)
+);
+return (int)$result[&lsquo;id_country&rsquo;];
+}
+{% endhighlight %}</p>
+<p>Which is not needed any longer thanks to the generic entity retrieving capabilities provided by the new <code>EntityRepository</code> class:</p>
+<p>{% highlight php startinline=true %}
+$countryRepository = $entityManager-&gt;getRepository(&lsquo;Country&rsquo;);
+$country = $countryRepository-&gt;findOneBy([
+&lsquo;iso_code&rsquo; =&gt; &lsquo;us&rsquo;,
+&lsquo;active&rsquo; =&gt; false
+]);
+{% endhighlight %}</p>
+<p>In the code above, you can get access to the <code>$entityManager</code> either by declaring it as a dependency in your constructor if you&rsquo;re inside a module, or using the service locator if there is really no better way to pass the dependency:</p>
+<p>{% highlight php startinline=true %}
+Adapter_ServiceLocator::get(&lsquo;Core_Foundation_Database_EntityManager&rsquo;);
+{% endhighlight %}</p>
+<p><em>Again, <code>Adapter_ServiceLocator</code> will eventually disappear from the API. You should only use it where you cannot do proper dependency injection.</em></p>
+<p>Currently, entity repositories support the following methods:</p>
+<ul>
+<li><code>findOne($id)</code> : finds an entity by its primary key</li>
+<li><code>findOneByXYZ($XYZFieldValue)</code> : finds zero or one entity</li>
+<li><code>findByXYZ($XYZFieldValue)</code> : finds zero or more entities</li>
+<li><code>findOneBy(array $conditions)</code> : finds zero or one entity that matches all of the passed conditions</li>
+<li><code>findBy(array $conditions)</code> : finds zero or more entities that match all of the passed conditions</li>
+</ul>
+<p><em>It remains to be decided how to fit the more complex parts of our ORM into this abstraction: language fields, multishop fields. Ideas?</em></p>
+<p>Going forward, we want to move all of the SQL queries out of the entity (<code>ObjectModel</code>) classes and into repository classes (or dedicated service classes for more complex tasks that involve different types of entities).</p>
+<p>We want models to be as small as possible and <code>EntityRepository</code>s provide a great way to separate the database interaction layer from the business code.</p>
+<p>For database interaction in general, we are considering a hybrid DataMapper / ActiveRecord pattern where <code>EntityRepository</code>s would be used to retrieve models from the database but where we would still have a <code>save</code> method on models that persists them to the database.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>We now have some of the building blocks we need to create more robust code with confidence.</p>
+<p>We&rsquo;re releasing these new technical features knowing that they will need to be improved upon and nothing is set in stone yet.</p>
+<p>Please feel free to comment, share any concerns you may have, or <a href="https://github.com/PrestaShop">join us on GitHub</a> and contribute!</p>
+<p>More articles and examples from the new architecture will follow.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">May 21, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.6/">1.6</a>
+
+  <a class="label label-primary" href="/tag/1.6.1.x/">1.6.1.x</a>
+
+  <a class="label label-primary" href="/tag/releases/">releases</a>
+
+  <a class="label label-primary" href="/tag/architecture/">architecture</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      François-Marie de Jouvencel
+      <span>Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/djfm">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

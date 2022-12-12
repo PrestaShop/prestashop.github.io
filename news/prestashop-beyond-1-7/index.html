@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop beyond 1.7</title>
+    <link href="/style.css?1670854425" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop beyond 1.7" />
+<meta property="og:description" content="Five years ago, PrestaShop 1.7 was released to the world, introducing Symfony, the Classic theme and child theme features, interface improvements, and so much more. With each one of the eight minor versions that followed, 1.7 kept on growing both in features and stability. Its maturity is recognized by its success: with over 170,000 live shops detected at the time of writing, it’s the most popular PrestaShop version used in production shops on the web." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/prestashop-beyond-1-7/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2021-12-14T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2021-12-14T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="PrestaShop beyond 1.7"/>
+<meta name="twitter:description" content="Here is what we are planning next!"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop beyond 1.7</h1>
+              
+                <h3 class="post-subtitle">Here is what we are planning next!</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/1009343?s=400&amp;v=4"
+         alt="Pablo Borowicz's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Pablo Borowicz</div>
+        
+          <div class="author-display-role">VP of Core Engineering</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Dec 14, 2021
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;beyond&#43;1.7&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fprestashop-beyond-1-7%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fprestashop-beyond-1-7%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Five years ago, PrestaShop 1.7 was released to the world, introducing Symfony, the Classic theme and child theme features, interface improvements, and so much more. With each one of the eight minor versions that followed, 1.7 kept on growing both in features and stability. Its maturity is recognized by its success: with over 170,000 live shops detected at the time of writing, it’s the most popular PrestaShop version used in production shops on the web.</p>
+<p>PrestaShop 1.7 also kickstarted an ambitious technical transformation towards what we call <a href="https://build.prestashop.com/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/">The Future Architecture</a>. Last year, we discussed <a href="https://build.prestashop.com/news/from-legacy-to-future-architecture-connecting-the-dots/">some concrete ideas</a> to help make the project advance in that direction, some of which had already started being implemented in 1.7. As we said in that article, the transformation PrestaShop envisions cannot be made in a single shot — there&rsquo;s a lot of work ahead of us, and it will take time.</p>
+<p>In 2018, we said we intended the migration of PrestaShop&rsquo;s Back office to Symfony to be completed within the lifetime of 1.7, so that the next major version could be built with a clean base. However, as the project moved forward, the migration proved to be significantly more complex than it was originally imagined. And although enormous progress has been made in the last five years, a lot is still to be done.</p>
+<p>Although the migration moves forward steadily, many refactoring projects (some of which are required to fix longstanding issues) keep getting pushed farther and farther into the future, waiting for the next major version. Does it make sense to block those projects for another five years until the migration is done?</p>
+<p>In addition, <strong>maintaining a software version without introducing backward-incompatible changes is hard</strong>, and it gets worse with time. PrestaShop doesn&rsquo;t exist in the void, and our ecosystem has an agenda of its own. With new PHP versions being released (and abandoned) every year, libraries are forced to evolve quickly to keep up. Symfony 3.4 has already reached its end of life. PrestaShop cannot risk using obsolete, abandoned libraries, so it needs to keep up as well.</p>
+<p>As we said last year, we think that one of the key challenges for achieving PrestaShop&rsquo;s technical transformation is about finding the right pace, so that it can be delivered both progressively and predictably. We believe that the best answer for that is to steer the project towards an iterative cycle of <strong>smaller, more focused, more frequent releases</strong> — each building on the work laid out by the previous one.</p>
+<h2 id="introducing-a-new-release-roadmap">Introducing a new release roadmap</h2>
+<p>The <a href="https://build.prestashop.com/news/a-more-semantic-versioning-scheme/">Semantic Versioning convention</a> (SemVer) only allows introducing backward-incompatible changes in major versions. This means that in order to boost PrestaShop&rsquo;s technical transformation, major versions need to be published more often than once every five years or more. At the same time, the community needs time to adapt to changes, as they carry a cost for merchants and developers alike. They need visibility to anticipate <strong>what</strong> kind of changes to expect, <strong>when</strong> will they encounter them, and finally, <strong>how long</strong> will their investment last until they need to adapt again.</p>
+<p>This requires a delicate balance: change too slowly, and project becomes obsolete; change too quickly, and it becomes too expensive for the community to keep up. With that in mind, here is our proposal.</p>
+<p>The new release roadmap will adhere more closely to the SemVer definition: a version is considered &ldquo;major&rdquo; when it introduces breaking changes, while minor versions only add features in a retrocompatible way. By following these principles strictly, upgrading from a major version to the minor version following it should be as easy as upgrading to a patch version, as everything is expected to work the same way. In this sense, it also means that a major version doesn&rsquo;t necessarily mean <em>big</em> changes, just <em>some</em> changes.</p>
+<p>Starting with the next release, PrestaShop will begin alternating between major versions, focusing on refactoring and technology advancements, and minor versions, emphasizing on new or improved features. This means that <strong>the next PrestaShop release will be a major version</strong>, which will be followed by a minor version, then a major version, then a minor version, and so on.</p>
+<p>The target is to be able to publish a release every 6–9 months. Since every other release will be a major version, the community will be able to expect a new major version every 12 to 18 months.</p>
+<p>Now let&rsquo;s talk about support. Currently, patch versions are released at most 6 weeks counting from the moment the maintainers decided that a given bug justifies a patch release. Since patches are only published for the latest version, this effectively means that support of a given PrestaShop minor version generally ends the moment the following minor version is published (e.g. support for 1.7.7.x version ended when 1.7.8.0 was released). This will continue to be true with the new release roadmap.</p>
+<p>However, we understand that upgrading to a major version will be harder than upgrading to a minor or patch version, and that people might choose not to upgrade to a new major version as soon as it&rsquo;s released. Because of this, we decided to provide extended critical and security bug fixes for minor versions, as necessary, for up to 12 months after the following major version has been released.</p>
+<p>Here is what our ideal release &amp; support roadmap should look like:</p>
+<p><img src="/assets/images/2021/12/roadmap.png" alt="Ideal roadmap"></p>
+<p>To recap:</p>
+<ul>
+<li>A release every 6~9 months</li>
+<li>Alternating minor and major versions</li>
+<li>Patches when necessary between releases</li>
+<li>Up to 1 year of additional critical fixes for minor versions</li>
+</ul>
+<h2 id="say-hello-to-prestashop-8">Say hello to PrestaShop 8</h2>
+<p>The next release, <strong>PrestaShop 8</strong>, will mark the simplification of the project&rsquo;s version numbering scheme. The &ldquo;1&rdquo; that preceded previous versions, a heritage that didn&rsquo;t carry any semantic meaning, will no longer be included in future releases.</p>
+<p><img src="/assets/images/2021/12/v8-scheme.png" alt="New version scheme"></p>
+<p>Adopting the industry standard 3-group version scheme will allow to simplify the way PrestaShop versions are identified, as well as enhance interoperability with third-party software, like Composer, who depend on standardized versions.</p>
+<h3 id="an-evolutionary-not-revolutionary-release">An evolutionary, not revolutionary, release</h3>
+<p>As explained before, the SemVer convention defines a version in terms of backward compatibility, not &ldquo;big&rdquo; or &ldquo;small&rdquo; changes. This means that a major version doesn&rsquo;t necessarily introduce big, revolutionary changes. It just means that <em>some</em> things won&rsquo;t work the exact same way as before, that&rsquo;s all.</p>
+<p>In that sense, PrestaShop 8 will continue and accelerate the transformative work towards the Future Architecture started in 1.7, but with a more pragmatic and focused approach (which will be covered in a dedicated article).</p>
+<p>This new version will focus on two main initiatives:</p>
+<h5 id="1-technology-update--cleanup">1. Technology update &amp; cleanup</h5>
+<p>In addition to updated libraries (including <a href="https://github.com/guzzle/guzzle/blob/7.0.0/UPGRADING.md">Guzzle 7</a>) and an upgraded <strong>Symfony 4.4</strong> framework, PrestaShop 8 will introduce <strong>compatibility with the newest PHP 8</strong> version. We will also take the opportunity to remove old, deprecated code that had been replaced by newer components in 1.7.</p>
+<h5 id="2-renewed-product-page">2. Renewed product page</h5>
+<p>The all-new Back office product page that was introduced as experimental in 1.7.8.0 will be fully integrated into PrestaShop 8. This new page will provide merchants with an enhanced user experience and increased performance, especially when dealing with a large number of combinations. Developers will also benefit from a fully Symfony-based page, with extendable forms and reusable Commands and Queries.</p>
+<h3 id="a-company-neutral-project">A company neutral project</h3>
+<p>PrestaShop is a community open source project, giving anyone the freedom to download it, use it, and modify it to their needs. During the last few years, a lot of work has been done to clarify how an open source project like PrestaShop is different from a &ldquo;freemium product&rdquo;.</p>
+<p>The maintainer team is committed to strengthening the community-built nature of the project. Last year, the project welcomed its first two maintainers not affiliated with PrestaShop SA. In 2021, to better distinguish the project from the company who originally created it, the project got a website of its own: <a href="https://www.prestashop-project.org/">prestashop-project.org</a>.</p>
+<p>In 2022, the differentiation between the open source project and the homonymous company will be pushed even further, by removing all company-related products and services from the project: PrestaShop 8 will no longer be bundled with the PrestaShop Addons marketplace, nor will it automatically download products from PrestaShop SA, nor will it depend on resources loaded from prestashop.com APIs. This represents a big leap forward in the project&rsquo;s neutrality, as the work on an independent project governance progresses.</p>
+<p>Of course, PrestaShop SA will continue to provide its products and services, for previous and new versions — but they will be distributed differently, as separate packages. These will likely be bundled in future products, which much like Linux distributions, will remain independent from the original open source project.</p>
+<p>Rest assured that contrary to other companies, who have chosen to abandon their open source platforms by treating them as spinoffs of their proprietary developments, PrestaShop SA will continue (and increase) its support to the open source project, and its future products will continue to be built <em>on top</em> of the project — and not the other way around.</p>
+<h3 id="what-happens-with-17">What happens with 1.7?</h3>
+<p>PrestaShop 1.7.8 will follow the same support path described in the release roadmap above, meaning that it will receive:</p>
+<ul>
+<li>Bug fixes until PrestaShop 8 is released</li>
+<li>Critical and security fixes, if needed, for up to one year afterward.</li>
+</ul>
+<p>Upgrading from 1.7.8 to 8.0 should be significantly easier than upgrading from 1.6 to 1.7. Existing themes for 1.7 should remain fully compatible with this new version. While many modules that work with 1.7.8 should also work with PrestaShop 8 without any changes, some of them might need to be updated, in particular those affected by updated core libraries or PHP 8 compatibility.</p>
+<h2 id="final-words">Final words</h2>
+<p>The current target for PrestaShop 8&rsquo;s feature freeze is April 2022, with a final release expected by mid-2022. You can follow our updates on <a href="https://github.com/PrestaShop/PrestaShop/issues/26427">this GitHub issue</a>.</p>
+<p>We are really excited about building the future of PrestaShop with you! Tell us what you think in the comments, or <a href="https://www.prestashop-project.org/slack/">chat with us on Slack</a>.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Dec 14, 2021</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/news/">news</a>
+
+  <a class="label label-primary" href="/tag/version/">version</a>
+
+  <a class="label label-primary" href="/tag/8.0/">8.0</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Pablo Borowicz
+      <span>VP of Core Engineering</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/eternoendless">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

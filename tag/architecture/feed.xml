@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>architecture on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/architecture/</link>
+    <description>Recent content in architecture on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Nov 2020 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/architecture/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From legacy to future architecture: Connecting the dots</title>
+      <link>https://build.prestashop-project.org/news/from-legacy-to-future-architecture-connecting-the-dots/</link>
+      <pubDate>Mon, 30 Nov 2020 09:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/from-legacy-to-future-architecture-connecting-the-dots/</guid>
+      <description>This is the fourth and final article in a series we introduced last year, that aims to describe where we are, where we are going, and some ideas on how we&amp;rsquo;ll get there.
+Connecting the dots (or &amp;ldquo;Some ideas on how we&amp;rsquo;ll get from Point A to Point B&amp;rdquo;)
+During this series &amp;ldquo;PrestaShop in 2019 and beyond&amp;rdquo;, we described the current architecture (or &amp;ldquo;Point A&amp;rdquo;), its pain points, and what we think PrestaShop&amp;rsquo;s future architecture (or &amp;ldquo;Point B&amp;rdquo;) should look like.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop in 2019 and beyond, part 3: The Future Architecture</title>
+      <link>https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/</link>
+      <pubDate>Thu, 26 Dec 2019 09:30:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture/</guid>
+      <description>This is the third in a series of articles we introduced earlier this year, that aims to describe where we are, where we are going, and some ideas on how we&amp;rsquo;ll get there.
+The Future Architecture (or &amp;ldquo;Point B – Where we are going&amp;rdquo;)
+In the first part of the series, we described what the current architecture looks like. Then, the second part covered the fundamental things that were wrong with it.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 1.7 modules - Latest releases &amp; updates</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1.7-modules-latest-releases-and-updates/</link>
+      <pubDate>Mon, 14 Oct 2019 11:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1.7-modules-latest-releases-and-updates/</guid>
+      <description>All product and core teams have been quite busy over the past 6 months, working hard on delivering PrestaShop 1.7.6, but not only! We have also worked on bringing new features and improving the 1.7 version through our PrestaShop modules.
+The PrestaShop software is usually seen as a single “brick” and users tend to forget that it is actually accompanied by more than 80 built-in modules, which bring many features to your store such as design, marketing and statistics tools.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop in 2019 and beyond, part 2: The Pain Points</title>
+      <link>https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-2-pain-points/</link>
+      <pubDate>Mon, 07 Oct 2019 08:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-2-pain-points/</guid>
+      <description>This is the second in a series of articles we introduced earlier this year, which aims to describe where we are, where we are going, and some ideas on how we&amp;rsquo;ll get there.
+The Pain Points (or &amp;ldquo;What needs to be improved&amp;rdquo;)
+In the previous part, we described what the current architecture looks like. This article aims to analyze what are the main &amp;ldquo;pain points&amp;rdquo;, that is, fundamental problems that are dragging the project down.</description>
+    </item>
+    
+    <item>
+      <title>Announcing end of support for obsolete PHP versions</title>
+      <link>https://build.prestashop-project.org/news/announcing-end-of-support-for-obsolete-php-versions/</link>
+      <pubDate>Wed, 22 May 2019 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/announcing-end-of-support-for-obsolete-php-versions/</guid>
+      <description>About a year and a half ago, we announced that PrestaShop 1.7.4.0 would be dropping support for PHP 5.4 and 5.5. At that time, this decision was justified by the impending end-of-maintenance for Symfony 2 and its replacement by Symfony 3, which didn&amp;rsquo;t support PHP versions older than 5.5.
+By late 2018, as the end-of-life of PHP 5.6 approached, a great deal of shared hosting providers started dropping support for that version on their services and upgrading their clients, forcibly or otherwise, to an officially maintained PHP 7.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop in 2019 and beyond, part 1: The current architecture</title>
+      <link>https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-1-current-architecture/</link>
+      <pubDate>Tue, 19 Feb 2019 10:30:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-part-1-current-architecture/</guid>
+      <description>This is the first in a series of articles we introduced a couple days ago, that aims at describing where we are, where we are going, and some ideas on how we&amp;rsquo;ll get there.
+As pointed out in the introduction article, the first step to be able to map a path into the future is to understand where you stand currently. In this article, we&amp;rsquo;ll try and describe the current architecture of PrestaShop.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop in 2019 and beyond</title>
+      <link>https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-introduction/</link>
+      <pubDate>Tue, 05 Feb 2019 09:30:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-in-2019-and-beyond-introduction/</guid>
+      <description>When working in a project as big and complex as PrestaShop, it&amp;rsquo;s easy to get too focused on what you are doing right now, and lose sight of the big picture. However, it&amp;rsquo;s very important not to do that, because every decision we take must be coherent with a bigger plan. In fact, I think that the only way to allow a project such as this to be sustainable, coherent and predictable, is to consistently challenge every decision in light of a long-term vision.</description>
+    </item>
+    
+    <item>
+      <title>An update on the 1.7 architecture</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-and-symfony/</link>
+      <pubDate>Thu, 03 Dec 2015 12:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-and-symfony/</guid>
+      <description>Remember, back in May 2015, when we announced that we were building a new architecture for PrestaShop, with the first bits of code landing in version 1.6.1.0 (released in early July 2015)? Yeah, that was fun. But now that 1.7 is steaming ahead, it&amp;rsquo;s time to let you know about our updated plans about the new architecture&amp;hellip;
+A lot of things have changed since the release of 1.6.1.0. Let&amp;rsquo;s try to address the different aspects of it.</description>
+    </item>
+    
+    <item>
+      <title>Architecture Improvements in 1.6.1.0</title>
+      <link>https://build.prestashop-project.org/news/new-architecture-1-6-1-0/</link>
+      <pubDate>Thu, 21 May 2015 19:13:37 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/new-architecture-1-6-1-0/</guid>
+      <description>With the release of PrestaShop 1.6.1.0 we are going to introduce exciting new tools in the codebase that are designed to help write more modular, testable code that enforces separation of concerns.
+We are releasing our work on the software architecture of PrestaShop to start discussing it with our community, gather ideas and feedback, and improve it together.
+Since we are introducing many new concepts we felt a few explanations were in order.</description>
+    </item>
+    
+  </channel>
+</rss>

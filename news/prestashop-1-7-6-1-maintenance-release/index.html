@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Release of PrestaShop 1.7.6.1</title>
+    <link href="/style.css?1670854426" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Release of PrestaShop 1.7.6.1" />
+<meta property="og:description" content="PrestaShop 1.7.6.1 is now available. This maintenance release fixes 26 issues reported on version 1.7.6.0." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/prestashop-1-7-6-1-maintenance-release/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2019-08-26T16:00:00+02:00" />
+    <meta property="article:modified_time" content="2019-08-26T16:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Release of PrestaShop 1.7.6.1"/>
+<meta name="twitter:description" content="Maintenance version of the 1.7.6.x branch"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="/news/prestashop-1-7-faq/">1.7 FAQ</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Release of PrestaShop 1.7.6.1</h1>
+              
+                <h3 class="post-subtitle">Maintenance version of the 1.7.6.x branch</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="/assets/images/authors/prestashop-team.png"
+         alt="PrestaShop team's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">PrestaShop team</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Aug 26, 2019
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Release&#43;of&#43;PrestaShop&#43;1.7.6.1&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fprestashop-1-7-6-1-maintenance-release%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2Fprestashop-1-7-6-1-maintenance-release%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>PrestaShop 1.7.6.1 is now available. This maintenance release fixes 26 issues reported on version 1.7.6.0.</p>
+<p>We suggest upgrading your shop quickly in order to benefit from this fixes. Of course, don&rsquo;t forget to backup before.</p>
+<h2 id="main-fixes">Main fixes</h2>
+<ul>
+<li>In some circumstances prices would appear with 6 decimal digits (<a href="https://github.com/PrestaShop/PrestaShop/issues/14640">#14640</a>)</li>
+<li>The “convert a guest into a customer” feature wasn’t working (<a href="https://github.com/PrestaShop/PrestaShop/issues/14639">#14639</a>)</li>
+<li>It was possible to circumvent the BO token in some circumstances (Thanks Guillaume Lictevout) (<a href="https://github.com/PrestaShop/PrestaShop/pull/14671">#14671</a>)</li>
+<li>The “erase all” button in the logs page wasn’t working (<a href="https://github.com/PrestaShop/PrestaShop/issues/14686">#14686</a>)</li>
+<li>Mails weren’t completely translated/translatable (<a href="https://github.com/PrestaShop/PrestaShop/issues/14633">#14633</a>)</li>
+<li>Links  pointing to edit/view customers weren’t working on legacy pages like Quick Search (<a href="https://github.com/PrestaShop/PrestaShop/issues/14672">#14672</a>)</li>
+<li>Prices in Czech would sometimes be displayed using the wrong formatting (<a href="https://github.com/PrestaShop/PrestaShop/issues/14657">#14657</a>)</li>
+<li>Applying filters in the logs page would result in an error (<a href="https://github.com/PrestaShop/PrestaShop/issues/14785">#14785</a>)</li>
+<li>Importing a theme would fail it if contained a translations directory with no files (<a href="https://github.com/PrestaShop/PrestaShop/issues/14960">#14960</a>)</li>
+<li>The translation interface wasn’t working when using a theme other than classic (<a href="https://github.com/PrestaShop/PrestaShop/issues/14733">#14733</a> and <a href="https://github.com/PrestaShop/PrestaShop/issues/15133">#15133</a>)</li>
+<li>Module translations edited through the new back office interface were being ignored by the module (<a href="https://github.com/PrestaShop/PrestaShop/issues/14932">#14932</a>)</li>
+<li>Disabled categories were not being shown in the parent category tree when editing categories, resulting in an error (<a href="https://github.com/PrestaShop/PrestaShop/issues/14790">#14790</a>)</li>
+<li>Accessing the suppliers page after an import would result in an error (<a href="https://github.com/PrestaShop/PrestaShop/issues/14908">#14908</a>)</li>
+<li>Following steps in the checkout process were being disabled even when the theme didn’t include a “continue” button (<a href="https://github.com/PrestaShop/PrestaShop/issues/14846">#14846</a>)</li>
+<li>Errors would occur when manipulating orders in some circumstances when working on a multishop environment (<a href="https://github.com/PrestaShop/PrestaShop/issues/14595">#14595</a> and <a href="https://github.com/PrestaShop/PrestaShop/issues/15144">#15144</a>)</li>
+</ul>
+<p>Read the <a href="https://download.prestashop.com/download/releases/changelog_1.7.6.1.txt">full changelog here</a>.</p>
+<h2 id="important-changes">Important changes</h2>
+<p>Following <a href="https://github.com/PrestaShop/PrestaShop/pull/15173">#15173</a> we had to modify <code>CurrencyDataProviderInterface::findAll</code> and add an optional parameter to be able to fetch all currencies regardless of the current shop context. This doesn’t break any previous use of the method since the parameter is optional, but it requires to update any class that implemented that interface.</p>
+<p>Following <a href="https://github.com/PrestaShop/PrestaShop/pull/15139">#15139</a>, module translations are no longer attached to the currently active theme. If you want a different translation for each theme, you will have to edit the theme translations; this requires the specific wording to be physically present in the theme&rsquo;s templates or else it won&rsquo;t appear in the translation interface. Only theme translations are attached to a theme now, all other translations are now global.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>Contributors to this patch version, from both the Core team and the community at large: Dheeraj Sharma, Franck Lefèvre, Jonathan Lelievre, Mathieu Ferment, Matthieu Rolland, Nesrine Abdmouleh, Pablo Borowicz, Pierre Rambaud, Priyank Desai, Roja45, Thomas Nabord and Šarūnas Jonušas. Thank you!</p>
+<p class="text-center">
+  <a href="https://www.prestashop.com/versions" class="btn btn-lg btn-success">Download PrestaShop 1.7.6.1 now!</a>
+</p>
+
+<p>Since version 1.7.6.1 is a “patch” update to version 1.7.6.0, upgrading from any 1.7.6 version will be easy: features will work better, and modules &amp; themes which worked fine on 1.7.6.0 will work just as well with 1.7.6.1. Upgrades from a standard 1.7.x version should work just as well.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Aug 26, 2019</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/version/">version</a>
+
+  <a class="label label-primary" href="/tag/maintenance/">maintenance</a>
+
+  <a class="label label-primary" href="/tag/patch/">patch</a>
+
+  <a class="label label-primary" href="/tag/releases/">releases</a>
+
+  <a class="label label-primary" href="/tag/1.7.6.x/">1.7.6.x</a>
+
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      PrestaShop team
+      <span></span>
+    </h4>
+
+    
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://prestashop-project.org">
+        <i class="icon-home"></i> Website
+      </a>
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('jekyll');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

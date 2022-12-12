@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Create the perfect .gitignore file for your PrestaShop projects</title>
-    <link href="/style.css?1670875746" rel="stylesheet">
+    <link href="/style.css?1670877525" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -223,14 +223,10 @@
 <h3 id="generate-your-own-gitignore-file-with-gitignoreio">Generate your own <code>.gitignore</code> file with gitignore.io</h3>
 <p><a href="http://gitignore.io">gitignore.io</a> is a great tool, based on the official <a href="https://github.com/github/gitignore">GitHub/gitignore</a> repo. You can generate a perfect <code>.gitignore</code> file simply by listing the technologies you use in your project.</p>
 <p>The website offers an easy-to-use interface, but if (like me) you want to show off, you can use the following Git alias in your configuration:</p>
-<p>{% highlight bash %}
-$ git config &ndash;global alias.ignore &ldquo;!gi() { curl -L -s <a href="https://www.gitignore.io/api/$@">https://www.gitignore.io/api/$@</a> &raquo; .gitignore ;}; gi&rdquo;
-{% endhighlight %}</p>
-<p>Next, the following command will generate a <code>.gitignore</code> file inside the current directory <a href="https://www.gitignore.io/api/prestashop,osx,phpstorm">containing these lines</a>.</p>
-<p>{% highlight bash %}
-$ git ignore prestashop,osx,phpstorm
-{% endhighlight %}</p>
-<p>There you go! All of this should give a cleaner Git repository for your PrestaShop projects.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git config --global alias.ignore <span class="s2">&#34;!gi() { curl -L -s https://www.gitignore.io/api/</span><span class="nv">$@</span><span class="s2"> &gt;&gt; .gitignore ;}; gi&#34;</span>
+</span></span></code></pre></div><p>Next, the following command will generate a <code>.gitignore</code> file inside the current directory <a href="https://www.gitignore.io/api/prestashop,osx,phpstorm">containing these lines</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git ignore prestashop,osx,phpstorm
+</span></span></code></pre></div><p>There you go! All of this should give a cleaner Git repository for your PrestaShop projects.</p>
 <p>Do you have ideas on how to improve this? Do you use alternate files? Tell us your story in the comments!</p>
 
 

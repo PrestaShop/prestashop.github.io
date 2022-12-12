@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>How to write on this blog</title>
-    <link href="/style.css?1670875746" rel="stylesheet">
+    <link href="/style.css?1670877525" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -241,13 +241,12 @@ on their respective websites, according to your OS.</p>
 <p>Next, <a href="https://help.github.com/articles/fork-a-repo/">fork</a> <a href="https://github.com/PrestaShop/prestashop.github.io">the prestashop.github.io repo</a> into your GitHub account, then <a href="https://help.github.com/articles/fetching-a-remote/">clone it</a> on your local machine.</p>
 <h3 id="installing-dependencies-and-running-jekyll">Installing dependencies and running Jekyll</h3>
 <p><em>Bundler</em> will install Jekyll and all the Ruby dependencies. We&rsquo;ll also use it to run the blog on a local server.</p>
-<h2 id="-bundle-exec-jekyll-serve">{% highlight bash %}
-$ bundle install
-$ bundle exec jekyll serve</h2>
-<p>Server address: http://0.0.0.0:4000/
-Server running&hellip; press ctrl-c to stop.
-{% endhighlight %}</p>
-<p>Open a browser window, and go to <code>http://0.0.0.0:4000/</code>, and you should see the blog running.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ bundle install
+</span></span><span class="line"><span class="cl">$ bundle <span class="nb">exec</span> jekyll serve
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">Server address: http://0.0.0.0:4000/
+</span></span><span class="line"><span class="cl">Server running... press ctrl-c to stop.
+</span></span></code></pre></div><p>Open a browser window, and go to <code>http://0.0.0.0:4000/</code>, and you should see the blog running.</p>
 <div class="alert alert-note" role="alert">
 <h4><i class='icon-file'></i> Note</h4>
 The `jekyll serve` command only watches content and styles. So if you are changing any plugin or any line in your `_config.yml`, you'll have to quit (`ctrl+C`) and rebuild.
@@ -271,23 +270,21 @@ If you need to create a new topic, create a subfolder in `howtos` and edit the `
 </div>
 <h3 id="file-name">File name</h3>
 <p>Any article of any type has to be in a file named using the following the time-based pattern. Make sure to follow that convention: if you do not, Jekyll won&rsquo;t recognize your file.</p>
-<p>{% highlight bash %}
-YYYY-MM-DD-some-hyphen-separated-name.markdown
-{% endhighlight %}</p>
-<h3 id="file-header-yaml-front-matter">File header (<em>YAML Front Matter</em>)</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">YYYY-MM-DD-some-hyphen-separated-name.markdown
+</span></span></code></pre></div><h3 id="file-header-yaml-front-matter">File header (<em>YAML Front Matter</em>)</h3>
 <p>Jekyll makes it really easy to set your post meta information. The top of your file has to include some information like &lsquo;author&rsquo; or &rsquo;layout&rsquo;, <a href="http://jekyllrb.com/docs/frontmatter/">in YAML format</a>.</p>
 <p>Copy and paste the following lines at the top of your new file, and customize the relevant values.</p>
-<h2 id="-highlight-yaml-">{% highlight yaml %}</h2>
-<h2 id="published-false">layout: post
-title:  &ldquo;Here goes the title of your article&rdquo;
-subtitle: &ldquo;This text will be displayed below your title&rdquo;
-date:   2015-03-04 15:12:00
-authors:  [ julienbourdeau ]
-icon: icon-pen
-tags: [sample, tags, example]
-published: false</h2>
-<p>{% endhighlight %}</p>
-<p>I assume you will understand what you are supposed to change. <em>Icon</em> can be <a href="http://fortawesome.github.io/Font-Awesome/icons/">any icon from FontAwesome</a>. You can also find available icons on the <a href="http://build.prestashop.com/prestashop-icon-font/documentation.html">PrestaShop Icon Font Documentation</a> page.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">layout</span><span class="p">:</span><span class="w"> </span><span class="l">post</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w">  </span><span class="s2">&#34;Here goes the title of your article&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">subtitle</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;This text will be displayed below your title&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w">   </span><span class="ld">2015-03-04 15:12:00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">authors</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w"> </span><span class="l">julienbourdeau ]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l">icon-pen</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">sample, tags, example]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">published</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></div><p>I assume you will understand what you are supposed to change. <em>Icon</em> can be <a href="http://fortawesome.github.io/Font-Awesome/icons/">any icon from FontAwesome</a>. You can also find available icons on the <a href="http://build.prestashop.com/prestashop-icon-font/documentation.html">PrestaShop Icon Font Documentation</a> page.</p>
 <div class="alert alert-important" role="alert">
 <h4><i class='icon-fire'></i> Important</h4>
 Articles must be submitted with the 'published' setting set to false. We will only publish it after review.
@@ -295,23 +292,21 @@ Articles must be submitted with the 'published' setting set to false. We will on
 <h2 id="making-sure-youre-an-author">Making sure you&rsquo;re an author</h2>
 <p>If this is your first article, you will have to add yourself to the author list. Open up the <code>_data/authors.yml</code> file and add your personal details. The first line is your ID and that&rsquo;s what you have to use in your article header.</p>
 <p>Now fill up as much info as you can. <code>display_name</code> and <code>avatar</code> are mandatory.</p>
-<p>Exemple:
-{% highlight yaml %}
-julienbourdeau:
-display_name: Julien Bourdeau
-role: Core developer
-avatar: <a href="https://avatars1.githubusercontent.com/u/1525636">https://avatars1.githubusercontent.com/u/1525636</a>
-email: <a href="mailto:julien@prestashop.com">julien@prestashop.com</a>
-twitter: julienbourdeau
-github: julienbourdeau
-forum: 761923-julien-bourdeau
-crowdin: julienbourdeau
-website: <a href="http://www.example.com">http://www.example.com</a>
-description: &gt;
-This is a description of the author with details about what he really does
-and the cool thing is: it&rsquo;s multiline.
-{% endhighlight %}</p>
-<h2 id="writing-your-article">Writing your article</h2>
+<p>Exemple:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">julienbourdeau</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l">Julien Bourdeau</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="l">Core developer</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">avatar</span><span class="p">:</span><span class="w"> </span><span class="l">https://avatars1.githubusercontent.com/u/1525636</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l">julien@prestashop.com</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">twitter</span><span class="p">:</span><span class="w"> </span><span class="l">julienbourdeau</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">github</span><span class="p">:</span><span class="w"> </span><span class="l">julienbourdeau</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">forum</span><span class="p">:</span><span class="w"> </span><span class="m">761923</span>-<span class="l">julien-bourdeau</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">crowdin</span><span class="p">:</span><span class="w"> </span><span class="l">julienbourdeau</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">website</span><span class="p">:</span><span class="w"> </span><span class="l">http://www.example.com</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="p">&gt;</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">        This is a description of the author with details about what he really does
+</span></span></span><span class="line"><span class="cl"><span class="sd">        and the cool thing is: it&#39;s multiline.</span><span class="w">        
+</span></span></span></code></pre></div><h2 id="writing-your-article">Writing your article</h2>
 <h3 id="markdown--liquid">Markdown &amp; Liquid</h3>
 <p>All article must be written using the Markdown syntax. With Jekyll, we use <a href="http://kramdown.gettalong.org/index.html">Kramdown</a> as a markdown converter, and the <a href="https://github.com/Shopify/liquid">Liquid template engine</a>.</p>
 <p>If you are struggling to get the result you want, you can still use pure HTML.</p>
@@ -326,20 +321,14 @@ and the cool thing is: it&rsquo;s multiline.
 <h3 id="images">Images</h3>
 <p>Images have to be in the <code>assets/images/YYYY/MM</code> folder (with a custom YYYY and MM, of course): find or create the subdirectory according to the date of the article.</p>
 <p>Using Markdown, your image should look like this:</p>
-<p>{% highlight liquid %}
-{% raw %}
-<img src="/assets/images/2015/04/jekyll.png" alt="Jekyll Logo">
-{% endraw %}
-{% endhighlight %}</p>
-<h3 id="code">Code</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">![Jekyll Logo](/assets/images/2015/04/jekyll.png)
+</span></span></code></pre></div><h3 id="code">Code</h3>
 <h4 id="inline-code">Inline code</h4>
 <p>When you need to refer to a <code>CSS property</code>, a <code>specific file</code>, a <code>function name</code> or anything similar, use the following syntax to highlight it in your text:</p>
-<p>{% highlight text %}
-<code>define('_PS_DEV_MODE_')</code> in file  <code>config.inc.php</code> or  <code>Tools::getValue()</code>
-{% endhighlight %}</p>
-<h4 id="block-of-code">Block of code</h4>
-<p>When it comes to serious code blocks, it&rsquo;s always better to use syntax highlighting. With Jekyll, it works a bit differently compared to GitHub (because GitHub uses their own <a href="https://help.github.com/articles/github-flavored-markdown/">GitHub-flavored Markdown</a>): you have to use a <a href="https://github.com/Shopify/liquid">Liquid tag</a>: {% raw %}<code>{% highlight LANG OPT_1 OPT_2 %}</code>{% endraw %}</p>
-<pre><code>{% raw %}{% highlight php startinline=true linenos %}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">`define(&#39;_PS_DEV_MODE_&#39;)` in file  `config.inc.php` or  `Tools::getValue()`
+</span></span></code></pre></div><h4 id="block-of-code">Block of code</h4>
+<p>When it comes to serious code blocks, it&rsquo;s always better to use syntax highlighting. With Jekyll, it works a bit differently compared to GitHub (because GitHub uses their own <a href="https://help.github.com/articles/github-flavored-markdown/">GitHub-flavored Markdown</a>): you have to use a <a href="https://github.com/Shopify/liquid">Liquid tag</a>: <code>{% highlight LANG OPT_1 OPT_2 %}</code></p>
+<pre><code>{% highlight php startinline=true linenos %}
 class IndexControllerCore extends FrontController
 {
 	// SAMPLE CODE
@@ -348,8 +337,8 @@ class IndexControllerCore extends FrontController
 		// SAMPLE CODE
 	}
 }
-{% endhighlight %}
-{% endraw %}</code></pre>
+```
+</code></pre>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -375,23 +364,17 @@ class IndexControllerCore extends FrontController
 </table>
 <h4 id="embed-a-github-gist">Embed a GitHub gist</h4>
 <p>If your code will or may be updated, you can easily embed a a <a href="https://gist.github.com/">GitHub gist</a> using the embeded HTML code.</p>
-<p>{% highlight html %}</p>
-<script src="https://gist.github.com/your-username/your-gist-id.js"></script>
-<p>{% endhighlight %}</p>
-<h3 id="icons">Icons</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://gist.github.com/your-username/your-gist-id.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="icons">Icons</h3>
 <p>We use a simple FontAwesome plugin that lets you display any icon using the following syntax:</p>
-<p>{% highlight html %}
-<i class="icon-store"></i>
-{% endhighlight %}</p>
-<p>You can find available icons on the <a href="http://build.prestashop.com/prestashop-icon-font/documentation.html">PrestaShop Icon Font Documentation</a> page.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;icon-store&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>You can find available icons on the <a href="http://build.prestashop.com/prestashop-icon-font/documentation.html">PrestaShop Icon Font Documentation</a> page.</p>
 <h3 id="alerts">Alerts</h3>
 <p>If you want to highlight some content (hint, note, tip, alert, etc.), we have few types of highlighting available. They are based on <a href="http://getbootstrap.com/components/#alerts">alerts from Bootstrap</a>.</p>
-<p>{% highlight html %}</p>
-<div class="alert alert-note" role="alert">
-You content goes here. **Markdown** _is_ `supported`.
-</div>
-{% endhighlight %}
-<p>You can use: <code>alert-note</code>, <code>alert-info</code>, <code>alert-important</code>, <code>alert-tips</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;alert alert-note&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">You content goes here. **Markdown** _is_ `supported`.
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>You can use: <code>alert-note</code>, <code>alert-info</code>, <code>alert-important</code>, <code>alert-tips</code>.</p>
 
 
           </article>

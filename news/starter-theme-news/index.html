@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Starter Theme: fresh news from the front</title>
-    <link href="/style.css?1670875747" rel="stylesheet">
+    <link href="/style.css?1670877526" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -205,38 +205,76 @@
 <p>Template inheritance is a common concept shared among all major template engines (<a href="http://www.smarty.net/inheritance">among which Smarty</a>), so it should make no difference when PrestaShop starts supporting other template engines, like <a href="http://twig.sensiolabs.org/">Twig</a> (see <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Twig&rsquo;s documentation</a>).</p>
 <p>Rendering is now performed in a single step, and the <code>header.tpl</code> &amp; <code>footer.tpl</code> files are no longer mandatory.</p>
 <p>It means it is now the template rendered by the controller which chooses the layout.</p>
-<p>{% highlight smarty startinline=true linenos %}
-{extends &ldquo;{$layout}&rdquo;}</p>
-<p>{block &ldquo;content&rdquo;}
-Hello, world!
-{/block}
-{% endhighlight %}</p>
-<p>In the layout file, template blocks are used to define the content areas.</p>
-<p>{% highlight smarty startinline=true linenos %}</p>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    {include "_partials/head.tpl"}
-  </head>
-  <body>
-    {block "content"}{/block}
-  </body>
-</html>
-{% endhighlight %}
-<p>The <code>$layout</code> variable will always be available, but you can always change the layout if you want.</p>
-<p>{% highlight smarty startinline=true linenos %}
-{extends &ldquo;path/to/crazy_layout.tpl&rdquo;}</p>
-<p>{block &ldquo;content&rdquo;}
-Hello, world!
-{/block}
-{% endhighlight %}</p>
-<h3 id="relative-template-path">Relative template path</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">extends</span> <span class="s2">&#34;{$layout}&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">block</span> <span class="s2">&#34;content&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">  Hello, world!
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>In the layout file, template blocks are used to define the content areas.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="x">&lt;!DOCTYPE html&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">&lt;html lang=&#34;en&#34;&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">  &lt;head&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">    </span><span class="cp">{</span><span class="nf">include</span> <span class="s2">&#34;_partials/head.tpl&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">  &lt;/head&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">  &lt;body&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">    </span><span class="cp">{</span><span class="nf">block</span> <span class="s2">&#34;content&#34;</span><span class="cp">}{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">  &lt;/body&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">&lt;/html&gt;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>The <code>$layout</code> variable will always be available, but you can always change the layout if you want.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">extends</span> <span class="s2">&#34;path/to/crazy_layout.tpl&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">block</span> <span class="s2">&#34;content&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">  Hello, world!
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="relative-template-path">Relative template path</h3>
 <p>You can now include a template without using the <code>$tpl_dir</code> variable.</p>
 <p>Templates will be resolved starting from the current theme root directory.</p>
-<p>{% highlight smarty startinline=true linenos %}
-{include &ldquo;_partials/head.tpl&rdquo;}
-{% endhighlight %}</p>
-<h3 id="new-directory-structure">New directory structure</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">include</span> <span class="s2">&#34;_partials/head.tpl&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="new-directory-structure">New directory structure</h3>
 <p>Templates have been reorganized into functional (and more logical) subfolders:</p>
 <pre>
 └── templates
@@ -269,25 +307,45 @@ Hello, world!
 <h3 id="widgetizable-modules">Widgetizable modules</h3>
 <p>The <code>WidgetInterface</code> has been introduced: any module implementing this interface can be rendered <strong>anywhere</strong>, even outside of the hooks it was designed to work with.</p>
 <p>Right now, only a few modules implement this interface, but more and more modules will be &ldquo;widgetized&rdquo;.</p>
-<p>{% highlight php startinline=true linenos %}
-interface WidgetInterface {
-public function renderWidget($hookName, array $configuration);
-public function getWidgetVariables($hookName, array $configuration);
-}
-{% endhighlight %}</p>
-<p>The <code>{widget_block}</code> block function allows to customize the HTML code even more.
-Really handy when you need to prototype a theme quickly without knowing anything about the hooks for a module!</p>
-<p>{% highlight smarty startinline=true linenos %}
-{widget_block name=&ldquo;blocklanguages&rdquo;}</p>
-<div>
-  <div>{$current_language.name}</div>
-  {foreach $languages as $language}
-    {$language.name}
-  {/foreach}
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">interface</span> <span class="nx">WidgetInterface</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">renderWidget</span><span class="p">(</span><span class="nv">$hookName</span><span class="p">,</span> <span class="k">array</span> <span class="nv">$configuration</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">getWidgetVariables</span><span class="p">(</span><span class="nv">$hookName</span><span class="p">,</span> <span class="k">array</span> <span class="nv">$configuration</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
-{/widget_block}
-{% endhighlight %}
-<p>If you want to have a further look, these two modules have been widgetized:</p>
+</div><p>The <code>{widget_block}</code> block function allows to customize the HTML code even more.
+Really handy when you need to prototype a theme quickly without knowing anything about the hooks for a module!</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">widget_block</span> <span class="na">name</span><span class="o">=</span><span class="s2">&#34;blocklanguages&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">&lt;div&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">  &lt;div&gt;</span><span class="cp">{</span><span class="nv">$current_language.name</span><span class="cp">}</span><span class="x">&lt;/div&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">  </span><span class="cp">{</span><span class="nf">foreach</span> <span class="nv">$languages</span> <span class="na">as</span> <span class="nv">$language</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">    </span><span class="cp">{</span><span class="nv">$language.name</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">  </span><span class="cp">{</span><span class="nf">/foreach</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">&lt;/div&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">/widget_block</span><span class="cp">}</span><span class="x">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>If you want to have a further look, these two modules have been widgetized:</p>
 <ul>
 <li><a href="https://github.com/PrestaShop/blocklanguages/tree/feat/starter-theme">blocklanguages</a></li>
 <li><a href="https://github.com/PrestaShop/blocktopmenu/tree/feat/starter-theme">blocktopmenu</a></li>
@@ -296,17 +354,30 @@ Really handy when you need to prototype a theme quickly without knowing anything
 <p>You can now embed your own custom <a href="http://www.smarty.net/docs/en/plugins">Smarty plugins</a> in a theme.</p>
 <p>Just add files following the <a href="http://www.smarty.net/docs/en/plugins.naming.conventions.tpl" target="_blank">naming conventions</a> in the <code>plugins</code> folder of your theme.</p>
 <p>For example, to have a modifier that adds stars to a string, create a file named <code>plugins/modifier.stars.php</code></p>
-<p>{% highlight php startinline=true linenos %}
-function smarty_modifier_stars($string)
-{
-return &ldquo;<em>{$string}</em>&rdquo;;
-}
-{% endhighlight %}</p>
-<p>Then, you can use it in your theme:</p>
-<p>{% highlight smarty startinline=true linenos %}
-{&ldquo;Hello, world!&quot;|stars}
-{% endhighlight %}</p>
-<h3 id="deprecations">Deprecations</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">function</span> <span class="nf">smarty_modifier_stars</span><span class="p">(</span><span class="nv">$string</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="s2">&#34;*</span><span class="si">{</span><span class="nv">$string</span><span class="si">}</span><span class="s2">*&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then, you can use it in your theme:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="s2">&#34;Hello, world!&#34;</span><span class="o">|</span><span class="na">stars</span><span class="cp">}</span><span class="x">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="deprecations">Deprecations</h3>
 <p>As expected with major releases, some features will no longer be supported or available in 1.7</p>
 <h4 id="mobile-theme">Mobile theme</h4>
 <p>The Starter Theme will be considered responsive by default, so the mobile theme feature has been <a href="https://github.com/PrestaShop/PrestaShop/pull/3931">removed</a>.</p>

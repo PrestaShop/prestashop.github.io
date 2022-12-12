@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Evolution of the PrestaShop Coding Standards</title>
-    <link href="/style.css?1670875746" rel="stylesheet">
+    <link href="/style.css?1670877525" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -236,31 +236,26 @@ Yes, we are aware that Yoda conditions can feel awkward at first -- even though 
 <li>Use soft tabulations with two spaces to indent.</li>
 <li>Use braces with all multi-line blocks.</li>
 </ul>
-<p>{% highlight javascript startinline=true %}
-(function () {
-if (test) {
-return false;
-}
-}());
-{% endhighlight %}</p>
-<p>Do not hesitate to look at their <a href="https://github.com/airbnb/javascript">complete documentation</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">test</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}());</span>
+</span></span></code></pre></div><p>Do not hesitate to look at their <a href="https://github.com/airbnb/javascript">complete documentation</a>.</p>
 <h3 id="css--html">CSS &amp; HTML</h3>
 <p>Regarding the CSS and HTML codebase, because we have integrated Bootstrap 4 both in the back office and front office, we have decided to follow their <a href="http://codeguide.co">coding standards</a>, maintained by @mdo.</p>
 <p>When you are writing HTML code, if your line is longer than 120 characters, we have chosen to do a line break after each attributes with an indentation. For example, it will look like this:</p>
-<p>{% highlight html startinline=true %}
-&lt;img
-class=&ldquo;test&rdquo;
-id=&quot;&hellip;&quot;
-name=&quot;&hellip;&quot;
-data=&quot;&hellip;&quot;
-src=&quot;&hellip;&quot;
-title=&quot;&hellip;&quot;
-alt=&quot;&hellip;&quot;
-role=&quot;&hellip;&quot;</p>
-<blockquote>
-</blockquote>
-<p>{% endhighlight %}</p>
-<p>Some noteworthy rules:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span>
+</span></span><span class="line"><span class="cl">  <span class="na">class</span><span class="o">=</span><span class="s">&#34;test&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">id</span><span class="o">=</span><span class="s">&#34;...&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">name</span><span class="o">=</span><span class="s">&#34;...&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">data</span><span class="o">=</span><span class="s">&#34;...&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">title</span><span class="o">=</span><span class="s">&#34;...&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">role</span><span class="o">=</span><span class="s">&#34;...&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Some noteworthy rules:</p>
 <ul>
 <li>HTML
 <ul>
@@ -277,21 +272,17 @@ role=&quot;&hellip;&quot;</p>
 </ul>
 </li>
 </ul>
-<p>{% highlight html startinline=true %}
-<img class="test" src="...">
-{% endhighlight %}</p>
-<p>{% highlight css startinline=true %}
-img,
-a,
-input[type=&ldquo;text&rdquo;] {
-display: block;
-padding: 15px;
-margin-bottom: 15px;
-background-color: rgba(0,0,0,.5);
-box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
-}
-{% endhighlight %}</p>
-<h3 id="smarty--twig">Smarty / Twig</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;test&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">img</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">a</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&#34;text&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">padding</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">.5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">1</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span> <span class="mh">#ccc</span><span class="p">,</span> <span class="kc">inset</span> <span class="mi">0</span> <span class="mi">1</span><span class="kt">px</span> <span class="mi">0</span> <span class="mh">#fff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="smarty--twig">Smarty / Twig</h3>
 <p>PrestaShop 1.7 uses both the Smarty and Twig template engine. Since those are mostly used to generate HTML, we expect the Smarty/Twig code to comply with the HTML standards above &ndash; as well as the one used by SensioLabs for Twig.</p>
 <p>Some noteworthy rules:</p>
 <ul>
@@ -299,14 +290,10 @@ box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
 <li>Use single quotes to surround strings.</li>
 <li>Use <a href="https://en.wikipedia.org/wiki/Snake_case">snake case</a> (underscores) to name your blocks.</li>
 </ul>
-<p>{% highlight twig startinline=true %}
-{% raw %}
-{% block my_block_name %}
-{% set foo = &lsquo;foo&rsquo; %}
-{% endblock %}
-{% endraw %}
-{% endhighlight %}</p>
-<h2 id="commits--pull-requests">Commits &amp; Pull-requests</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-twig" data-lang="twig"><span class="line"><span class="cl"><span class="cp">{%</span> <span class="k">block</span> <span class="nv">my_block_name</span> <span class="cp">%}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">   </span><span class="cp">{%</span> <span class="k">set</span> <span class="nv">foo</span> <span class="o">=</span> <span class="s1">&#39;foo&#39;</span> <span class="cp">%}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x">
+</span></span></span></code></pre></div><h2 id="commits--pull-requests">Commits &amp; Pull-requests</h2>
 <h3 id="commits">Commits</h3>
 <p>In the past, we used to have only one commit by pull request. This was a bad habit. We now require contributors to make <strong>atomic commits</strong>, so you will surely have more than one commit in a single pull request. This will be helpful to review, cherry-pick or revert (we hope to never have to do that 😉 ) the changes.</p>
 <p><strong>What&rsquo;s an atomic commit?</strong>

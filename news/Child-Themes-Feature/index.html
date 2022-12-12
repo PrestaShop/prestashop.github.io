@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Parent/Child theme feature in PrestaShop 1.7</title>
-    <link href="/style.css?1670875746" rel="stylesheet">
+    <link href="/style.css?1670877525" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -224,35 +224,29 @@ Please, note that you may still encounter some issues if the parent theme&rsquo;
 <p><strong>use_parent_assets:</strong> a sub entry to <code>assets</code> to set if you want to use the CSS and JS files from the parent (true) or not (false).</p>
 </li>
 </ul>
-<p>{% highlight yml %}
-parent: classic
-name: childtheme
-display_name: My first child Theme
-version: 1.0.0
-assets:
-use_parent_assets: true
-{% endhighlight %}</p>
-<p>Once this file is in place, you can go ahead and select this theme in your back office: you&rsquo;re all set.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l">classic</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">childtheme</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l">My first child Theme</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="m">1.0.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">assets</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">use_parent_assets</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></div><p>Once this file is in place, you can go ahead and select this theme in your back office: you&rsquo;re all set.</p>
 <h3 id="template-inheritance">Template inheritance</h3>
 <p>In a <a href="http://build.prestashop.com/news/starter-theme-news/#template-inheritance">previous article</a>, we already talked about extending templates within the same theme introduced in 1.7.0.0. But you can also extend template files from another theme.</p>
 <p>With the <code>theme.yml</code> configuration above, your child theme will use every template from the parent theme. There are two ways to enjoy the feature of extending templates from another theme: either by modifying only the blocks you want to edit, or by modifying the whole template structure.</p>
 <p>Here&rsquo;s an example where we modify the category template. First, you should create the category template in your child theme: <code>templates/catalog/listing/category.tpl</code>.</p>
 <h4 id="modifying-some-blocks">Modifying some blocks</h4>
 <p>Extend the template you want to modify in your parent theme and define just the block you need. You need to add the <code>parent:</code> keyword (as you can see in the example below) to indicate that the template comes from the parent theme.</p>
-<p>{% highlight smarty %}
-{extends file=&lsquo;parent:catalog/listing/category.tpl&rsquo;}
-{% endhighlight %}</p>
-<p><img src="/assets/images/2017/09/child-theme-some-blocks.png" alt="Modify blocks"></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">extends</span> <span class="na">file</span><span class="o">=</span><span class="s1">&#39;parent:catalog/listing/category.tpl&#39;</span><span class="cp">}</span><span class="x">
+</span></span></span></code></pre></div><p><img src="/assets/images/2017/09/child-theme-some-blocks.png" alt="Modify blocks"></p>
 <h4 id="modifying-the-whole-template-structure">Modifying the whole template structure</h4>
 <p>At this point you can do anything you want with this template but most likely you&rsquo;ll still want to extend the product-list template. If so, you don&rsquo;t have to copy the product-list template to your child theme, PrestaShop will use the parent file.</p>
 <p>Extend product-list the normal way and override the block you need. Let&rsquo;s say you want to change the <code>product_list_header</code> block:</p>
-<p>{% highlight smarty %}
-{extends file=&lsquo;catalog/listing/product-list.tpl&rsquo;}
-{block name=&lsquo;product_list_header&rsquo;}</p>
-  <div class="title">{$listing.label}</div>
-{/block}
-{% endhighlight %}
-<p><img src="/assets/images/2017/09/child-theme-whole-template.png" alt="Modify whole template"></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">extends</span> <span class="na">file</span><span class="o">=</span><span class="s1">&#39;catalog/listing/product-list.tpl&#39;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">block</span> <span class="na">name</span><span class="o">=</span><span class="s1">&#39;product_list_header&#39;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">  &lt;div class=&#34;title&#34;&gt;</span><span class="cp">{</span><span class="nv">$listing.label</span><span class="cp">}</span><span class="x">&lt;/div&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
+</span></span></span></code></pre></div><p><img src="/assets/images/2017/09/child-theme-whole-template.png" alt="Modify whole template"></p>
 <h4 id="going-further">Going further</h4>
 <p>You can also create new template files. Then, follow the previous methods of extension and include your file into one of the block of the file you&rsquo;re extending.</p>
 <h2 id="translations">Translations</h2>

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>The Product Page - Evolution Revolution</title>
-    <link href="/style.css?1670875746" rel="stylesheet">
+    <link href="/style.css?1670877525" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -287,21 +287,17 @@ If you coded your modules by following the best-practices of both PHP and Presta
 <p>Here are the main information that you will need to update your module:</p>
 <h3 id="hook-parameters">Hook Parameters</h3>
 <p>Parameters cannot be obtained from a query string anymore. From now on, an array of parameters is directly passed onto the <code>hookDisplayAdminProductsExtra</code> method.</p>
-<p>See this sample hook:
-{% highlight php startinline=true %}
-public function hookDisplayAdminProductsExtra($params)
-{% endhighlight %}</p>
-<p>With <code>$params</code> taking these values:
-{% highlight php startinline=true %}
-$params [
-&ldquo;_ps_version&rdquo;
-&ldquo;id_product&rdquo;
-&ldquo;cookie&rdquo;
-&ldquo;cart&rdquo;
-&ldquo;altern&rdquo;
-]
-{% endhighlight %}</p>
-<h4 id="assets">Assets</h4>
+<p>See this sample hook:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">function</span> <span class="nf">hookDisplayAdminProductsExtra</span><span class="p">(</span><span class="nv">$params</span><span class="p">)</span>
+</span></span></code></pre></div><p>With <code>$params</code> taking these values:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$params</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;_ps_version&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;id_product&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;cookie&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;cart&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;altern&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span></code></pre></div><h4 id="assets">Assets</h4>
 <p>Assets’ URLs must be absolute (meaning, they must start with <code>http://</code> or <code>https://</code>).</p>
 <h4 id="form-fields">Form fields</h4>
 <p>The form field names must be created in an array hook of this format: <code>[MODULE_NAME][INPUT_NAME]</code>.</p>

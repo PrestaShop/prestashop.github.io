@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>PrestaShop &amp;&amp; the PSR-2 coding style guide</title>
-    <link href="/style.css?1670875746" rel="stylesheet">
+    <link href="/style.css?1670877525" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -239,71 +239,57 @@ At the time of writing, namespaces and closures are not allowed, because we firs
 <h4 id="5-conditions">5. Conditions</h4>
 <h5 id="51-if-elseif-else">5.1. if, elseif, else</h5>
 <p>An <code>if</code> structure looks like the following. Note the placement of parenthesis, spaces, and braces; and that <code>else</code> and <code>elseif</code> are on the same line as the closing brace from the earlier body.</p>
-<p>{% highlight php startinline=true %}
-if ($expr1) {
-// if body
-} elseif ($expr2) {
-// elseif body
-} else {
-// else body;
-}
-{% endhighlight %}</p>
-<h5 id="52-switch-case">5.2. switch, case</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nv">$expr1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// if body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">elseif</span> <span class="p">(</span><span class="nv">$expr2</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// elseif body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// else body;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><h5 id="52-switch-case">5.2. switch, case</h5>
 <p>A <code>switch</code> structure looks like the following. Note the placement of parenthesis, spaces, and braces. The case statement MUST be indented once from switch, and the break keyword (or other terminating keyword) MUST be indented at the same level as the case body. There MUST be a comment such as <code>// no break</code> when fall-through is intentional in a non-empty case body.</p>
-<p>{% highlight php startinline=true %}
-switch ($expr) {
-case 0:
-echo &lsquo;First case, with a break&rsquo;;
-break;
-case 1:
-echo &lsquo;Second case, which falls through&rsquo;;
-// no break
-case 2:
-case 3:
-case 4:
-echo &lsquo;Third case, return instead of break&rsquo;;
-return;
-default:
-echo &lsquo;Default case&rsquo;;
-break;
-}
-{% endhighlight %}</p>
-<h5 id="53-while-do-while-for-foreach-try-catch">5.3. while, do while, for, foreach, try, catch</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">switch</span> <span class="p">(</span><span class="nv">$expr</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="mi">0</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">echo</span> <span class="s1">&#39;First case, with a break&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">echo</span> <span class="s1">&#39;Second case, which falls through&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// no break
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="mi">3</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="mi">4</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">echo</span> <span class="s1">&#39;Third case, return instead of break&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">default</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">echo</span> <span class="s1">&#39;Default case&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h5 id="53-while-do-while-for-foreach-try-catch">5.3. while, do while, for, foreach, try, catch</h5>
 <p>A <code>while</code> statement looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
-<p>{% highlight php startinline=true %}
-while ($expr) {
-// structure body
-}
-{% endhighlight %}</p>
-<p>Similarly, a <code>do while</code> statement looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
-<p>{% highlight php startinline=true %}
-do {
-// structure body;
-} while ($expr);
-{% endhighlight %}</p>
-<p>A <code>for</code> statement looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
-<p>{% highlight php startinline=true %}
-for ($i = 0; $i &lt; 10; $i++) {
-// for body
-}
-{% endhighlight %}</p>
-<p>A <code>foreach</code> statement looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
-<p>{% highlight php startinline=true %}
-foreach ($iterable as $key =&gt; $value) {
-// foreach body
-}
-{% endhighlight %}</p>
-<p>A try catch block looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
-<p>{% highlight php startinline=true %}
-try {
-// try body
-} catch (FirstExceptionType $e) {
-// catch body
-} catch (OtherExceptionType $e) {
-// catch body
-}
-{% endhighlight %}</p>
-<h3 id="end-of-an-era-beginning-of-a-new-one">End of an era, beginning of a new one!</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="nv">$expr</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// structure body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>Similarly, a <code>do while</code> statement looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">do</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// structure body;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="nv">$expr</span><span class="p">);</span>
+</span></span></code></pre></div><p>A <code>for</code> statement looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// for body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>A <code>foreach</code> statement looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="nv">$iterable</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// foreach body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>A try catch block looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// try body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">FirstExceptionType</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// catch body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">OtherExceptionType</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// catch body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><h3 id="end-of-an-era-beginning-of-a-new-one">End of an era, beginning of a new one!</h3>
 <p>The switch to PSR-2 is just another mark of the changes that are happening at PrestaShop. More exciting things are coming, stay tuned!</p>
 <p>If you have any question about this switch, let us know in the comments!</p>
 

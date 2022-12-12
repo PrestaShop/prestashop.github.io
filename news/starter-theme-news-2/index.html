@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Starter Theme: fresh news from the front #2</title>
-    <link href="/style.css?1670875747" rel="stylesheet">
+    <link href="/style.css?1670877526" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -207,10 +207,8 @@ easy, because we constantly needed to have the Core repository in sync with the 
 way to keep the whole commit history.</p>
 <p>Basically, we had to move the StarterTheme repo into a subdirectory, then we merged it
 into the PrestaShop repo. For those looking to do the same in their own project, enjoy the command we used:</p>
-<p>{% highlight bash %}
-git filter-branch &ndash;tree-filter &lsquo;mkdir -p themes/StarterTheme; for f in *; do if ! [ $f = themes ]; then mv $f themes/StarterTheme; fi; done;&rsquo; HEAD
-{% endhighlight %}</p>
-<h2 id="minimal-css-for-developers">Minimal CSS for developers</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git filter-branch --tree-filter <span class="s1">&#39;mkdir -p themes/StarterTheme; for f in *; do if ! [ $f = themes ]; then mv $f themes/StarterTheme; fi; done;&#39;</span> HEAD
+</span></span></code></pre></div><h2 id="minimal-css-for-developers">Minimal CSS for developers</h2>
 <p>We decided from that the StarterTheme will ship with no CSS at all.</p>
 <p>As we were developing various section of the theme, we needed some styles, at least to understand what we were looking at when testing.
 It also helps us improve the markup.</p>
@@ -224,144 +222,138 @@ all the pages (product page, home page, category page, etc.).</p>
 <a href="http://forge.prestashop.com/browse/PSCSX-2359">this</a> or <a href="http://forge.prestashop.com/browse/PSCSX-3607">this</a>? <strong>It&rsquo;s all over</strong>.</p>
 <p>Here is a nice example for you.</p>
 <h3 id="before">Before</h3>
-<p>{% highlight smarty %}
-{if $product-&gt;show_price &amp;&amp; !isset($restricted_country_mode) &amp;&amp; !$PS_CATALOG_MODE}
-<!-- prices -->
-<div>
-<p class="our_price_display" itemprop="offers" itemscope itemtype="https://schema.org/Offer">{strip}
-{if $product-&gt;quantity &gt; 0}<link itemprop="availability" href="https://schema.org/InStock"/>{/if}
-{if $priceDisplay &gt;= 0 &amp;&amp; $priceDisplay &lt;= 2}
-<span id="our_price_display" class="price" itemprop="price" content="{$productPrice}">{convertPrice price=$productPrice|floatval}</span>
-{if $tax_enabled  &amp;&amp; ((isset($display_tax_label) &amp;&amp; $display_tax_label == 1) || !isset($display_tax_label))}
-{if $priceDisplay == 1} {l s=&lsquo;tax excl.&rsquo;}{else} {l s=&lsquo;tax incl.&rsquo;}{/if}
-{/if}
-<meta itemprop="priceCurrency" content="{$currency->iso_code}" />
-{hook h=&ldquo;displayProductPriceBlock&rdquo; product=$product type=&ldquo;price&rdquo;}
-{/if}
-{/strip}</p>
-&lt;p id=&ldquo;reduction_percent&rdquo; {if $productPriceWithoutReduction &lt;= 0 || !$product-&gt;specificPrice || $product-&gt;specificPrice.reduction_type != &lsquo;percentage&rsquo;} style=&ldquo;display:none;&rdquo;{/if}&gt;{strip}
-<span id="reduction_percent_display">
-{if $product-&gt;specificPrice &amp;&amp; $product-&gt;specificPrice.reduction_type == &lsquo;percentage&rsquo;}-{$product-&gt;specificPrice.reduction*100}%{/if}
-</span>
-{/strip}</p>
-&lt;p id=&ldquo;reduction_amount&rdquo; {if $productPriceWithoutReduction &lt;= 0 || !$product-&gt;specificPrice || $product-&gt;specificPrice.reduction_type != &lsquo;amount&rsquo; || $product-&gt;specificPrice.reduction|floatval ==0} style=&ldquo;display:none&rdquo;{/if}&gt;{strip}
-<span id="reduction_amount_display">
-{if $product-&gt;specificPrice &amp;&amp; $product-&gt;specificPrice.reduction_type == &lsquo;amount&rsquo; &amp;&amp; $product-&gt;specificPrice.reduction|floatval !=0}
--{convertPrice price=$productPriceWithoutReduction|floatval-$productPrice|floatval}
-{/if}
-</span>
-{/strip}</p>
-&lt;p id=&ldquo;old_price&rdquo;{if (!$product-&gt;specificPrice || !$product-&gt;specificPrice.reduction)} class=&ldquo;hidden&rdquo;{/if}&gt;{strip}
-{if $priceDisplay &gt;= 0 &amp;&amp; $priceDisplay &lt;= 2}
-{hook h=&ldquo;displayProductPriceBlock&rdquo; product=$product type=&ldquo;old_price&rdquo;}
-<span id="old_price_display"><span class="price">{if $productPriceWithoutReduction &gt; $productPrice}{convertPrice price=$productPriceWithoutReduction|floatval}{/if}</span>{if $productPriceWithoutReduction &gt; $productPrice &amp;&amp; $tax_enabled &amp;&amp; $display_tax_label == 1} {if $priceDisplay == 1}{l s=&lsquo;tax excl.&rsquo;}{else}{l s=&lsquo;tax incl.&rsquo;}{/if}{/if}</span>
-{/if}
-{/strip}</p>
-{if $priceDisplay == 2}
-<br />
-<span id="pretaxe_price">{strip}
-<span id="pretaxe_price_display">{convertPrice price=$product-&gt;getPrice(false, $smarty.const.NULL)}</span> {l s=&lsquo;tax excl.&rsquo;}
-{/strip}</span>
-{/if}
-</div>
-<!-- end prices --></p>
-<pre><code>{if $packItems|@count &amp;&amp; $productPrice &lt; $product-&gt;getNoPackPrice()}
-    &lt;p class=&quot;pack_price&quot;&gt;{l s='Instead of'} &lt;span style=&quot;text-decoration: line-through;&quot;&gt;{convertPrice price=$product-&gt;getNoPackPrice()}&lt;/span&gt;&lt;/p&gt;
-{/if}
-{if $product-&gt;ecotax != 0}
-    &lt;p class=&quot;price-ecotax&quot;&gt;{l s='Including'} &lt;span id=&quot;ecotax_price_display&quot;&gt;{if $priceDisplay == 2}{$ecotax_tax_exc|convertAndFormatPrice}{else}{$ecotax_tax_inc|convertAndFormatPrice}{/if}&lt;/span&gt; {l s='for ecotax'}
-        {if $product-&gt;specificPrice &amp;&amp; $product-&gt;specificPrice.reduction}
-        &lt;br /&gt;{l s='(not impacted by the discount)'}
-        {/if}
-    &lt;/p&gt;
-{/if}
-{if !empty($product-&gt;unity) &amp;&amp; $product-&gt;unit_price_ratio &gt; 0.000000}
-    {math equation=&quot;pprice / punit_price&quot; pprice=$productPrice  punit_price=$product-&gt;unit_price_ratio assign=unit_price}
-    &lt;p class=&quot;unit-price&quot;&gt;&lt;span id=&quot;unit_price_display&quot;&gt;{convertPrice price=$unit_price}&lt;/span&gt; {l s='per'} {$product-&gt;unity|escape:'html':'UTF-8'}&lt;/p&gt;
-    {hook h=&quot;displayProductPriceBlock&quot; product=$product type=&quot;unit_price&quot;}
-{/if}
-</code></pre>
-<p>{/if}
-{% endhighlight %}</p>
-<h3 id="after">After</h3>
-<p>{% highlight smarty %}
-{block name=&ldquo;product_prices&rdquo;}
-{if $product.show_price}
-<div class="product-prices">
-{block name=&ldquo;product_price&rdquo;}
-<p class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-<link itemprop="availability" href="https://schema.org/InStock"/>
-<span itemprop="price" content="{$productPrice}">{$product.price}</span>
-{if $display_taxes_label}
-{if $priceDisplay} {l s=&lsquo;tax excl.&rsquo;}{else} {l s=&lsquo;tax incl.&rsquo;}{/if}
-{/if}
-<meta itemprop="priceCurrency" content="{$currency.iso_code}" />
-{hook h=&ldquo;displayProductPriceBlock&rdquo; product=$product type=&ldquo;price&rdquo;}
-</p>
-{/block}</p>
-<pre><code>  {block name=&quot;product_discount&quot;}
-    {if $product.has_discount}
-      &lt;p class=&quot;product-discount&quot;&gt;
-        &lt;span class=&quot;regular-price&quot;&gt;{$product.regular_price}&lt;/span&gt;
-        {if $product.discount_type === 'percentage'}
-          &lt;span class=&quot;discount-percentage&quot;&gt;{$product.discount_percentage}&lt;/span&gt;
-        {/if}
-        {hook h=&quot;displayProductPriceBlock&quot; product=$product type=&quot;old_price&quot;}
-      &lt;/p&gt;
-    {/if}
-  {/block}
-
-  {block name=&quot;product_without_taxes&quot;}
-    {if $priceDisplay == 2}
-      &lt;p calss=&quot;product-without-taxes&quot;&gt;{$product.price_tax_exc}&lt;/span&gt; {l s='tax excl.'}&lt;/p&gt;
-    {/if}
-  {/block}
-
-  {block name=&quot;product_pack_price&quot;}
-    {if $displayPackPrice}
-      &lt;p class=&quot;product-pack-price&quot;&gt;{l s='Instead of %s' sprintf=$noPackPrice}&lt;/span&gt;&lt;/p&gt;
-    {/if}
-  {/block}
-
-  {block name=&quot;product_ecotax&quot;}
-    {if $displayEcotax}
-      &lt;p class=&quot;price-ecotax&quot;&gt;{l s='Including %s for ecotax' sprintf=$ecotax}
-        {if $product.has_discount}
-          {l s='(not impacted by the discount)'}
-        {/if}
-      &lt;/p&gt;
-    {/if}
-  {/block}
-
-  {block name=&quot;product_unit_price&quot;}
-    {if $displayUnitPrice}
-      &lt;p class=&quot;product-unit-price&quot;&gt;{convertPrice price=$unit_price} {l s='per %s' sprintf=$product.unity}&lt;/p&gt;
-      {hook h=&quot;displayProductPriceBlock&quot; product=$product type=&quot;unit_price&quot;}
-    {/if}
-  {/block}
-
-  {hook h=&quot;displayProductPriceBlock&quot; product=$product type=&quot;weight&quot; hook_origin='product_sheet'}
-  {hook h=&quot;displayProductPriceBlock&quot; product=$product type=&quot;after_price&quot;}
-&lt;/div&gt;
-</code></pre>
-<p>{/if}
-{/block}
-{% endhighlight %}</p>
-<p>Soon we&rsquo;ll start using Ajax and <a href="http://rivetsjs.com/">Rivets.js</a> to improve this page.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">if</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">show_price</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="na">isset</span><span class="o">(</span><span class="nv">$restricted_country_mode</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nv">$PS_CATALOG_MODE</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">    &lt;!-- prices --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">    &lt;div&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        &lt;p class=&#34;our_price_display&#34; itemprop=&#34;offers&#34; itemscope itemtype=&#34;https://schema.org/Offer&#34;&gt;</span><span class="cp">{</span><span class="nf">strip</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">quantity</span> <span class="o">&gt;</span> <span class="m">0</span><span class="cp">}</span><span class="x">&lt;link itemprop=&#34;availability&#34; href=&#34;https://schema.org/InStock&#34;/&gt;</span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$priceDisplay</span> <span class="o">&gt;=</span> <span class="m">0</span> <span class="o">&amp;&amp;</span> <span class="nv">$priceDisplay</span> <span class="o">&lt;=</span> <span class="m">2</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">                &lt;span id=&#34;our_price_display&#34; class=&#34;price&#34; itemprop=&#34;price&#34; content=&#34;</span><span class="cp">{</span><span class="nv">$productPrice</span><span class="cp">}</span><span class="x">&#34;&gt;</span><span class="cp">{</span><span class="nf">convertPrice</span> <span class="na">price</span><span class="o">=</span><span class="nv">$productPrice</span><span class="o">|</span><span class="na">floatval</span><span class="cp">}</span><span class="x">&lt;/span&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">                </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$tax_enabled</span>  <span class="o">&amp;&amp;</span> <span class="o">((</span><span class="na">isset</span><span class="o">(</span><span class="nv">$display_tax_label</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="nv">$display_tax_label</span> <span class="o">==</span> <span class="m">1</span><span class="o">)</span> <span class="o">||</span> <span class="o">!</span><span class="na">isset</span><span class="o">(</span><span class="nv">$display_tax_label</span><span class="o">))</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">                    </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$priceDisplay</span> <span class="o">==</span> <span class="m">1</span><span class="cp">}</span><span class="x"> </span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;tax excl.&#39;</span><span class="cp">}{</span><span class="nf">else</span><span class="cp">}</span><span class="x"> </span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;tax incl.&#39;</span><span class="cp">}{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">                </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">                &lt;meta itemprop=&#34;priceCurrency&#34; content=&#34;</span><span class="cp">{</span><span class="nv">$currency</span><span class="o">-&gt;</span><span class="na">iso_code</span><span class="cp">}</span><span class="x">&#34; /&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">                </span><span class="cp">{</span><span class="nf">hook</span> <span class="na">h</span><span class="o">=</span><span class="s2">&#34;displayProductPriceBlock&#34;</span> <span class="na">product</span><span class="o">=</span><span class="nv">$product</span> <span class="na">type</span><span class="o">=</span><span class="s2">&#34;price&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">/strip</span><span class="cp">}</span><span class="x">&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        &lt;p id=&#34;reduction_percent&#34; </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$productPriceWithoutReduction</span> <span class="o">&lt;=</span> <span class="m">0</span> <span class="o">||</span> <span class="o">!</span><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span> <span class="o">||</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span><span class="o">.</span><span class="na">reduction_type</span> <span class="o">!=</span> <span class="s1">&#39;percentage&#39;</span><span class="cp">}</span><span class="x"> style=&#34;display:none;&#34;</span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">&gt;</span><span class="cp">{</span><span class="nf">strip</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            &lt;span id=&#34;reduction_percent_display&#34;&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">                </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span> <span class="o">&amp;&amp;</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span><span class="o">.</span><span class="na">reduction_type</span> <span class="o">==</span> <span class="s1">&#39;percentage&#39;</span><span class="cp">}</span><span class="x">-</span><span class="cp">{</span><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span><span class="o">.</span><span class="na">reduction</span><span class="o">*</span><span class="m">100</span><span class="cp">}</span><span class="x">%</span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            &lt;/span&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">/strip</span><span class="cp">}</span><span class="x">&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        &lt;p id=&#34;reduction_amount&#34; </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$productPriceWithoutReduction</span> <span class="o">&lt;=</span> <span class="m">0</span> <span class="o">||</span> <span class="o">!</span><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span> <span class="o">||</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span><span class="o">.</span><span class="na">reduction_type</span> <span class="o">!=</span> <span class="s1">&#39;amount&#39;</span> <span class="o">||</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span><span class="o">.</span><span class="na">reduction</span><span class="o">|</span><span class="na">floatval</span> <span class="o">==</span><span class="m">0</span><span class="cp">}</span><span class="x"> style=&#34;display:none&#34;</span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">&gt;</span><span class="cp">{</span><span class="nf">strip</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            &lt;span id=&#34;reduction_amount_display&#34;&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span> <span class="o">&amp;&amp;</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span><span class="o">.</span><span class="na">reduction_type</span> <span class="o">==</span> <span class="s1">&#39;amount&#39;</span> <span class="o">&amp;&amp;</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span><span class="o">.</span><span class="na">reduction</span><span class="o">|</span><span class="na">floatval</span> <span class="o">!=</span><span class="m">0</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">                -</span><span class="cp">{</span><span class="nf">convertPrice</span> <span class="na">price</span><span class="o">=</span><span class="nv">$productPriceWithoutReduction</span><span class="o">|</span><span class="na">floatval</span><span class="o">-</span><span class="nv">$productPrice</span><span class="o">|</span><span class="na">floatval</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            &lt;/span&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">/strip</span><span class="cp">}</span><span class="x">&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        &lt;p id=&#34;old_price&#34;</span><span class="cp">{</span><span class="nf">if</span> <span class="o">(!</span><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span> <span class="o">||</span> <span class="o">!</span><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span><span class="o">.</span><span class="na">reduction</span><span class="o">)</span><span class="cp">}</span><span class="x"> class=&#34;hidden&#34;</span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">&gt;</span><span class="cp">{</span><span class="nf">strip</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$priceDisplay</span> <span class="o">&gt;=</span> <span class="m">0</span> <span class="o">&amp;&amp;</span> <span class="nv">$priceDisplay</span> <span class="o">&lt;=</span> <span class="m">2</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">                </span><span class="cp">{</span><span class="nf">hook</span> <span class="na">h</span><span class="o">=</span><span class="s2">&#34;displayProductPriceBlock&#34;</span> <span class="na">product</span><span class="o">=</span><span class="nv">$product</span> <span class="na">type</span><span class="o">=</span><span class="s2">&#34;old_price&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">                &lt;span id=&#34;old_price_display&#34;&gt;&lt;span class=&#34;price&#34;&gt;</span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$productPriceWithoutReduction</span> <span class="o">&gt;</span> <span class="nv">$productPrice</span><span class="cp">}{</span><span class="nf">convertPrice</span> <span class="na">price</span><span class="o">=</span><span class="nv">$productPriceWithoutReduction</span><span class="o">|</span><span class="na">floatval</span><span class="cp">}{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">&lt;/span&gt;</span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$productPriceWithoutReduction</span> <span class="o">&gt;</span> <span class="nv">$productPrice</span> <span class="o">&amp;&amp;</span> <span class="nv">$tax_enabled</span> <span class="o">&amp;&amp;</span> <span class="nv">$display_tax_label</span> <span class="o">==</span> <span class="m">1</span><span class="cp">}</span><span class="x"> </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$priceDisplay</span> <span class="o">==</span> <span class="m">1</span><span class="cp">}{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;tax excl.&#39;</span><span class="cp">}{</span><span class="nf">else</span><span class="cp">}{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;tax incl.&#39;</span><span class="cp">}{</span><span class="nf">/if</span><span class="cp">}{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">&lt;/span&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">/strip</span><span class="cp">}</span><span class="x">&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$priceDisplay</span> <span class="o">==</span> <span class="m">2</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            &lt;br /&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">            &lt;span id=&#34;pretaxe_price&#34;&gt;</span><span class="cp">{</span><span class="nf">strip</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">                &lt;span id=&#34;pretaxe_price_display&#34;&gt;</span><span class="cp">{</span><span class="nf">convertPrice</span> <span class="na">price</span><span class="o">=</span><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">getPrice</span><span class="o">(</span><span class="kc">false</span><span class="o">,</span> <span class="nv">$smarty.const.NULL</span><span class="o">)</span><span class="cp">}</span><span class="x">&lt;/span&gt; </span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;tax excl.&#39;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">/strip</span><span class="cp">}</span><span class="x">&lt;/span&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">    &lt;/div&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">    &lt;!-- end prices --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">    </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$packItems</span><span class="o">|@</span><span class="na">count</span> <span class="o">&amp;&amp;</span> <span class="nv">$productPrice</span> <span class="o">&lt;</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">getNoPackPrice</span><span class="o">()</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        &lt;p class=&#34;pack_price&#34;&gt;</span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;Instead of&#39;</span><span class="cp">}</span><span class="x"> &lt;span style=&#34;text-decoration: line-through;&#34;&gt;</span><span class="cp">{</span><span class="nf">convertPrice</span> <span class="na">price</span><span class="o">=</span><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">getNoPackPrice</span><span class="o">()</span><span class="cp">}</span><span class="x">&lt;/span&gt;&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">    </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">    </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">ecotax</span> <span class="o">!=</span> <span class="m">0</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        &lt;p class=&#34;price-ecotax&#34;&gt;</span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;Including&#39;</span><span class="cp">}</span><span class="x"> &lt;span id=&#34;ecotax_price_display&#34;&gt;</span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$priceDisplay</span> <span class="o">==</span> <span class="m">2</span><span class="cp">}{</span><span class="nv">$ecotax_tax_exc</span><span class="o">|</span><span class="na">convertAndFormatPrice</span><span class="cp">}{</span><span class="nf">else</span><span class="cp">}{</span><span class="nv">$ecotax_tax_inc</span><span class="o">|</span><span class="na">convertAndFormatPrice</span><span class="cp">}{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">&lt;/span&gt; </span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;for ecotax&#39;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span> <span class="o">&amp;&amp;</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">specificPrice</span><span class="o">.</span><span class="na">reduction</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            &lt;br /&gt;</span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;(not impacted by the discount)&#39;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        &lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">    </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">    </span><span class="cp">{</span><span class="nf">if</span> <span class="o">!</span><span class="na">empty</span><span class="o">(</span><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">unity</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="nv">$product</span><span class="o">-&gt;</span><span class="na">unit_price_ratio</span> <span class="o">&gt;</span> <span class="m">0.000000</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">math</span> <span class="na">equation</span><span class="o">=</span><span class="s2">&#34;pprice / punit_price&#34;</span> <span class="na">pprice</span><span class="o">=</span><span class="nv">$productPrice</span>  <span class="na">punit_price</span><span class="o">=</span><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">unit_price_ratio</span> <span class="na">assign</span><span class="o">=</span><span class="na">unit_price</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        &lt;p class=&#34;unit-price&#34;&gt;&lt;span id=&#34;unit_price_display&#34;&gt;</span><span class="cp">{</span><span class="nf">convertPrice</span> <span class="na">price</span><span class="o">=</span><span class="nv">$unit_price</span><span class="cp">}</span><span class="x">&lt;/span&gt; </span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;per&#39;</span><span class="cp">}</span><span class="x"> </span><span class="cp">{</span><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">unity</span><span class="o">|</span><span class="na">escape</span><span class="o">:</span><span class="s1">&#39;html&#39;</span><span class="o">:</span><span class="s1">&#39;UTF-8&#39;</span><span class="cp">}</span><span class="x">&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">hook</span> <span class="na">h</span><span class="o">=</span><span class="s2">&#34;displayProductPriceBlock&#34;</span> <span class="na">product</span><span class="o">=</span><span class="nv">$product</span> <span class="na">type</span><span class="o">=</span><span class="s2">&#34;unit_price&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">    </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span></code></pre></div><h3 id="after">After</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">block</span> <span class="na">name</span><span class="o">=</span><span class="s2">&#34;product_prices&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">  </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$product.show_price</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">    &lt;div class=&#34;product-prices&#34;&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">block</span> <span class="na">name</span><span class="o">=</span><span class="s2">&#34;product_price&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        &lt;p class=&#34;product-price&#34; itemprop=&#34;offers&#34; itemscope itemtype=&#34;https://schema.org/Offer&#34;&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">          &lt;link itemprop=&#34;availability&#34; href=&#34;https://schema.org/InStock&#34;/&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">          &lt;span itemprop=&#34;price&#34; content=&#34;</span><span class="cp">{</span><span class="nv">$productPrice</span><span class="cp">}</span><span class="x">&#34;&gt;</span><span class="cp">{</span><span class="nv">$product.price</span><span class="cp">}</span><span class="x">&lt;/span&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">          </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$display_taxes_label</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">           </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$priceDisplay</span><span class="cp">}</span><span class="x"> </span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;tax excl.&#39;</span><span class="cp">}{</span><span class="nf">else</span><span class="cp">}</span><span class="x"> </span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;tax incl.&#39;</span><span class="cp">}{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">          </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">          &lt;meta itemprop=&#34;priceCurrency&#34; content=&#34;</span><span class="cp">{</span><span class="nv">$currency.iso_code</span><span class="cp">}</span><span class="x">&#34; /&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">          </span><span class="cp">{</span><span class="nf">hook</span> <span class="na">h</span><span class="o">=</span><span class="s2">&#34;displayProductPriceBlock&#34;</span> <span class="na">product</span><span class="o">=</span><span class="nv">$product</span> <span class="na">type</span><span class="o">=</span><span class="s2">&#34;price&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        &lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">block</span> <span class="na">name</span><span class="o">=</span><span class="s2">&#34;product_discount&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$product.has_discount</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">          &lt;p class=&#34;product-discount&#34;&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">            &lt;span class=&#34;regular-price&#34;&gt;</span><span class="cp">{</span><span class="nv">$product.regular_price</span><span class="cp">}</span><span class="x">&lt;/span&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$product.discount_type</span> <span class="o">===</span> <span class="s1">&#39;percentage&#39;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">              &lt;span class=&#34;discount-percentage&#34;&gt;</span><span class="cp">{</span><span class="nv">$product.discount_percentage</span><span class="cp">}</span><span class="x">&lt;/span&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">hook</span> <span class="na">h</span><span class="o">=</span><span class="s2">&#34;displayProductPriceBlock&#34;</span> <span class="na">product</span><span class="o">=</span><span class="nv">$product</span> <span class="na">type</span><span class="o">=</span><span class="s2">&#34;old_price&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">          &lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">block</span> <span class="na">name</span><span class="o">=</span><span class="s2">&#34;product_without_taxes&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$priceDisplay</span> <span class="o">==</span> <span class="m">2</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">          &lt;p calss=&#34;product-without-taxes&#34;&gt;</span><span class="cp">{</span><span class="nv">$product.price_tax_exc</span><span class="cp">}</span><span class="x">&lt;/span&gt; </span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;tax excl.&#39;</span><span class="cp">}</span><span class="x">&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">block</span> <span class="na">name</span><span class="o">=</span><span class="s2">&#34;product_pack_price&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$displayPackPrice</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">          &lt;p class=&#34;product-pack-price&#34;&gt;</span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;Instead of %s&#39;</span> <span class="na">sprintf</span><span class="o">=</span><span class="nv">$noPackPrice</span><span class="cp">}</span><span class="x">&lt;/span&gt;&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">block</span> <span class="na">name</span><span class="o">=</span><span class="s2">&#34;product_ecotax&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$displayEcotax</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">          &lt;p class=&#34;price-ecotax&#34;&gt;</span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;Including %s for ecotax&#39;</span> <span class="na">sprintf</span><span class="o">=</span><span class="nv">$ecotax</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$product.has_discount</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">              </span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;(not impacted by the discount)&#39;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">            </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">          &lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">block</span> <span class="na">name</span><span class="o">=</span><span class="s2">&#34;product_unit_price&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$displayUnitPrice</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">          &lt;p class=&#34;product-unit-price&#34;&gt;</span><span class="cp">{</span><span class="nf">convertPrice</span> <span class="na">price</span><span class="o">=</span><span class="nv">$unit_price</span><span class="cp">}</span><span class="x"> </span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;per %s&#39;</span> <span class="na">sprintf</span><span class="o">=</span><span class="nv">$product.unity</span><span class="cp">}</span><span class="x">&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">          </span><span class="cp">{</span><span class="nf">hook</span> <span class="na">h</span><span class="o">=</span><span class="s2">&#34;displayProductPriceBlock&#34;</span> <span class="na">product</span><span class="o">=</span><span class="nv">$product</span> <span class="na">type</span><span class="o">=</span><span class="s2">&#34;unit_price&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">hook</span> <span class="na">h</span><span class="o">=</span><span class="s2">&#34;displayProductPriceBlock&#34;</span> <span class="na">product</span><span class="o">=</span><span class="nv">$product</span> <span class="na">type</span><span class="o">=</span><span class="s2">&#34;weight&#34;</span> <span class="na">hook_origin</span><span class="o">=</span><span class="s1">&#39;product_sheet&#39;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">hook</span> <span class="na">h</span><span class="o">=</span><span class="s2">&#34;displayProductPriceBlock&#34;</span> <span class="na">product</span><span class="o">=</span><span class="nv">$product</span> <span class="na">type</span><span class="o">=</span><span class="s2">&#34;after_price&#34;</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">    &lt;/div&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">  </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
+</span></span></span></code></pre></div><p>Soon we&rsquo;ll start using Ajax and <a href="http://rivetsjs.com/">Rivets.js</a> to improve this page.</p>
 <h2 id="notifications">Notifications</h2>
 <p>If you ever worked with PrestaShop, surely you know <code>$this-&gt;errors</code>, the array where we
 store all error messages across the whole software. We now have introduced the
 same thing for <code>success</code>, <code>info</code>, <code>warning</code>.
 This may look like a small improvement but it&rsquo;s actually a big step forward.</p>
 <p>If you look at many templates in <code>default-bootstrap</code>, you&rsquo;ll find a lot of pieces of code like this:</p>
-<p>{% highlight smarty  %}
-{if $category-&gt;id AND $category-&gt;active}
-// Do something
-{elseif $category-&gt;id}</p>
-  <p class="alert alert-warning">{l s='This category is currently unavailable.'}</p>
-{/if}
-{% endhighlight %}
-<p>Hence the new notification arrays will help remove A LOT of logic from the templates.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">if</span> <span class="nv">$category</span><span class="o">-&gt;</span><span class="na">id</span> <span class="na">AND</span> <span class="nv">$category</span><span class="o">-&gt;</span><span class="na">active</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">  // Do something
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">elseif</span> <span class="nv">$category</span><span class="o">-&gt;</span><span class="na">id</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">  &lt;p class=&#34;alert alert-warning&#34;&gt;</span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;This category is currently unavailable.&#39;</span><span class="cp">}</span><span class="x">&lt;/p&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span></code></pre></div><p>Hence the new notification arrays will help remove A LOT of logic from the templates.</p>
 <p>Plus, now that messages are set in the controllers, they won&rsquo;t change, which means that they can be translated easily.</p>
 <h2 id="smarty">Smarty</h2>
 <p>You may have noticed that <strong>Twig</strong> appeared in the back office. @xgouley and @kelu95 worked
@@ -370,42 +362,41 @@ out a way to have both Twig and Smarty working side by side.</p>
 <h3 id="secure-by-default">Secure by default</h3>
 <p>We told you <a href="http://build.prestashop.com/news/starter-theme-kickoff/">from the begining</a> that we wanted to escape all Smarty variables in PrestaShop 1.7.0.0. <a href="https://github.com/PrestaShop/PrestaShop/commit/2a4118947e2a9b1d0cf3d039d5c28a63ddfe7a69">It&rsquo;s done</a>!
 If you want NOT to escape your Smarty vars, you&rsquo;ll have to use <code>nofilter</code>.</p>
-<p>{% highlight smarty  %}</p>
-<section id="content" class="page-content page-cms page-cms-{$cms.id}">
-  {$cms.content nofilter}
-</section>
-{% endhighlight %}
-<h3 id="new-functions-and-modifiers">New functions and modifiers</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="x">&lt;section id=&#34;content&#34; class=&#34;page-content page-cms page-cms-</span><span class="cp">{</span><span class="nv">$cms.id</span><span class="cp">}</span><span class="x">&#34;&gt;
+</span></span></span><span class="line"><span class="cl"><span class="x">  </span><span class="cp">{</span><span class="nv">$cms.content</span> <span class="na">nofilter</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">&lt;/section&gt;
+</span></span></span></code></pre></div><h3 id="new-functions-and-modifiers">New functions and modifiers</h3>
 <p>We recently introduced a few Smarty helpers. They will be described in the upcoming theme documentation
 (<em>yeah I swear there will be one!</em>).</p>
 <p>In the meantime, here is a little preview.</p>
 <h3 id="url-function"><code>{url}</code> function</h3>
 <p><code>{url}</code> will help you generate any URL you need.</p>
-<p>{% highlight smarty %}
-{url entity=cms id=2}
-{url entity=category id=3}
-{url entity=address id=1 params=[&lsquo;delete&rsquo; =&gt; true]}</p>
-<p>&hellip;will generate, respectively:</p>
-<p><a href="http://prestashop.ps/en/content/2-legal-notice">http://prestashop.ps/en/content/2-legal-notice</a>
-<a href="http://prestashop.ps/en/3-women">http://prestashop.ps/en/3-women</a>
-<a href="http://prestashop.ps/en/address?id_address=1&amp;delete=1">http://prestashop.ps/en/address?id_address=1&amp;delete=1</a></p>
-<p>{% endhighlight %}</p>
-<h3 id="classname-and-classnames-modifiers"><code>classname</code> and <code>classnames</code> modifiers</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">url</span> <span class="na">entity</span><span class="o">=</span><span class="na">cms</span> <span class="na">id</span><span class="o">=</span><span class="m">2</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">url</span> <span class="na">entity</span><span class="o">=</span><span class="na">category</span> <span class="na">id</span><span class="o">=</span><span class="m">3</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">url</span> <span class="na">entity</span><span class="o">=</span><span class="na">address</span> <span class="na">id</span><span class="o">=</span><span class="m">1</span> <span class="na">params</span><span class="o">=[</span><span class="s1">&#39;delete&#39;</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="o">]</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">...will generate, respectively:
+</span></span></span><span class="line"><span class="cl"><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="x">http://prestashop.ps/en/content/2-legal-notice
+</span></span></span><span class="line"><span class="cl"><span class="x">http://prestashop.ps/en/3-women
+</span></span></span><span class="line"><span class="cl"><span class="x">http://prestashop.ps/en/address?id_address=1&amp;delete=1
+</span></span></span></code></pre></div><h3 id="classname-and-classnames-modifiers"><code>classname</code> and <code>classnames</code> modifiers</h3>
 <p>The <code>classname</code> modifier will sanitize any string into a nice CSS class or id.</p>
 <p>The <code>classnames</code> modifier will transform an array into class names (see example below).</p>
-<p>{% highlight php %}
-// PHP
-$classes = [
-&lsquo;class1&rsquo; =&gt; true,
-&rsquo;nice_layout&rsquo; =&gt; true,
-&lsquo;another-class&rsquo; =&gt; false,
-]</p>
-<p>// Smarty
-class=&quot;{$classes|classnames}&quot;</p>
-<p>&hellip;will generate:</p>
-<p>class=&ldquo;class1 nice-layout&rdquo;</p>
-<p>{% endhighlight %}</p>
-<h3 id="integration-tests">Integration tests</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="c1">// PHP
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$classes</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;class1&#39;</span> <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;nice_layout&#39;</span> <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;another-class&#39;</span> <span class="o">=&gt;</span> <span class="k">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Smarty
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">class</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">{</span><span class="nv">$classes</span><span class="o">|</span><span class="nx">classnames</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">...</span><span class="nx">will</span> <span class="nx">generate</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">class</span><span class="o">=</span><span class="s2">&#34;class1 nice-layout&#34;</span>
+</span></span></code></pre></div><h3 id="integration-tests">Integration tests</h3>
 <p>We are writing tests for the StarterTheme! You&rsquo;ll be able to use them for your theme to ensure full-compatibilty.</p>
 <p>Tests are written in JavaScript on top of <a href="http://www.seleniumhq.org/">Selenium</a>, <a href="http://webdriver.io/">WebdriverIO</a> and <a href="http://chaijs.com/">Chai</a>.</p>
 <p>If you want to launch the test suite or even write some new ones, you should <a href="https://github.com/PrestaShop/PrestaShop/blob/feat/starter-theme/tests/StarterTheme/README.md">read the existing documentation</a>.</p>

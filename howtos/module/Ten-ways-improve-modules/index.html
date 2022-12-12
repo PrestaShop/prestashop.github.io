@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Ten ways to improve your PrestaShop modules!</title>
-    <link href="/style.css?1670875746" rel="stylesheet">
+    <link href="/style.css?1670877525" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -219,7 +219,8 @@ If you use these standards and rules that have (originally) been designed for op
 <p>When working with PrestaShop modules you might have seen the fancied configuration pages. Notice how many of them are different? Some include wizard pages or popups, others have millions of tabs to separate the different configuration types.
 At first sight, some of them might look cool and you might get tempted to copy these as well, but don&rsquo;t forget that this will cost you some maintainability. This is particularly true when having to support multiple versions of PrestaShop. The <code>HelperForm</code> and <code>HelperOptions</code> classes were designed to help you with this.
 Did you know that it is possible to extend these templates and that you can define your own configuration elements? Here&rsquo;s a code snippet that will allow you to use PrestaShop 1.6&rsquo;s switch element on an older version of PrestaShop:</p>
-<p>{% gist firstred/b5016aab980ade678d741691e5b15c5b %}</p>
+<script type="application/javascript" src="https://gist.github.com/firstred/b5016aab980ade678d741691e5b15c5b.js"></script>
+
 <p>You can simply place this file in the location <code>views/templates/admin/_configure/helper/form/form.tpl</code> relative to the root of your module&rsquo;s folder and the <code>HelperForm</code> template has been extended.
 Do you see the <code>$smarty.const._PS_VERSION_|@addcslashes:'\'' &lt; '1.6'</code> check? This simply allows us to define several templates for different versions of PrestaShop. Pretty cool if you want to keep your code together and the view separated in a different file.
 It also keeps your main module file readable as you will only need to define an array with the right values in order to generate the form. Remember PrestaShop&rsquo;s MVC nature? You&rsquo;re perfectly respecting this pattern by implementing your configuration page this way.</p>
@@ -250,24 +251,23 @@ Luckily, most of the basics can be figured out by having a look at the basic mod
 <h3 id="7-avoid-magic-numbers-and-magic-strings">7. Avoid &ldquo;magic numbers&rdquo; and &ldquo;magic strings&rdquo;</h3>
 <p>When creating a module for PrestaShop there will be dozens of times in which you will need to access a configuration key (e.g. <code>Configuration::get('MYMODULE_ACCEPT_PAYMENTS')</code>). By using strings all the time you increase the chance of making a typo.
 Since these strings never change during runtime you can define them as constants at the top of your module&rsquo;s class. By using an IDE which immediately warns you when the constant cannot be found, it&rsquo;s easier to prevent bugs.
-You can define the constants as follows:
-{% highlight php %}
-class IndexControllerCore extends FrontController
-{
-const ACCEPT_PAYMENTS = &lsquo;MYMODULE_ACCEPT_PAYMENTS&rsquo;;</p>
-<pre><code>public function __construct()
-{
-	// CONSTRUCTOR
-}
-</code></pre>
-<p>}
-{% endhighlight %}</p>
-<p>Configuration values can now be loaded like: <code>Configuration::get(self::ACCEPT_PAYMENTS)</code>.
+You can define the constants as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">IndexControllerCore</span> <span class="k">extends</span> <span class="nx">FrontController</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">const</span> <span class="no">ACCEPT_PAYMENTS</span> <span class="o">=</span> <span class="s1">&#39;MYMODULE_ACCEPT_PAYMENTS&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// CONSTRUCTOR
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Configuration values can now be loaded like: <code>Configuration::get(self::ACCEPT_PAYMENTS)</code>.
 You can do the same for &ldquo;magic&rdquo; numbers. If you use numbers which do not change during runtime, make sure that you turn those into constants, as much as possible.</p>
 <h3 id="8-create-a-gruntfile">8. Create a Gruntfile</h3>
 <p>Not necessarily a direct improvement for your code, but it allows you to pack your modules with ease, thus saving you time which you can then spend on improving your modules instead.</p>
 <p>Here&rsquo;s an example of a Gruntfile:</p>
-<p>{% gist firstred/1f6a589625ac65b2d10e07628587e9fb %}</p>
+<script type="application/javascript" src="https://gist.github.com/firstred/1f6a589625ac65b2d10e07628587e9fb.js"></script>
+
 <h3 id="9-use-the-validator">9. Use the validator</h3>
 <p>This is a very simple one. You can use the validator at <a href="https://validator.prestashop.com/">https://validator.prestashop.com/</a>. It will show you if your module could use some improvements.
 It doesn&rsquo;t cover all cases and might miss some problems you might have in your module, but it will give you a basic understanding of the improvements you will need. Not everything is equally important. Focusing on security has (of course) a higher priority than having enough spaces before a single opening bracket. Use your best judgement!</p>

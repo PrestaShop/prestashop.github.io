@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Twelve things to watch out for when coding a PrestaShop module</title>
-    <link href="/style.css?1670875746" rel="stylesheet">
+    <link href="/style.css?1670877525" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -239,12 +239,14 @@ Several tips only apply to PrestaShop 1.5-1.6 module development. <a href="http:
 <li><a href="http://php.net/manual/en/language.oop5.typehinting.php">Type hinting</a> makes sure the value has the correct type: use <code>(int)</code>, <code>(bool)</code>, <code>(float)</code> properly, check the public methods available in the <a href="https://github.com/PrestaShop/PrestaShop/blob/develop/classes/Validate.php"><code>classes/Validate.php</code></a> file, such as  <a href="https://github.com/PrestaShop/PrestaShop/blob/develop/classes/Validate.php#L686-L695"><code>isUnsignedInt()</code></a>.</li>
 <li>The PrestaShop token is your friend: always check the token when doing action for logged in customers. Need an example?</li>
 </ul>
-<p>{% gist kpodemski/13a33eba6b43e9b6db7d29e491104ae1 %}</p>
+<script type="application/javascript" src="https://gist.github.com/kpodemski/13a33eba6b43e9b6db7d29e491104ae1.js"></script>
+
 <p>You can also check the token for guest users: I suggested <a href="https://github.com/PrestaShop/PrestaShop/pull/5863/files">these two methods</a>.</p>
 <ul>
 <li>Secure your files: files outside your module&rsquo;s base file (such as <code>ajax.php</code>, <code>upload.php</code>, etc.) should have a check at their very beginning in order to make sure they cannot be triggered directly. Here is example:</li>
 </ul>
-<p>{% gist kpodemski/5717d7c36d4277a71fa67746bb8efade %}</p>
+<script type="application/javascript" src="https://gist.github.com/kpodemski/5717d7c36d4277a71fa67746bb8efade.js"></script>
+
 <h3 id="4-setup-module-compatibility-and-restrictions">4. Setup module compatibility and restrictions</h3>
 <p>Let&rsquo;s be honest, sometimes it&rsquo;s hard to maintain a module from version to version, and sometimes you&rsquo;d like to release a module only for specific versions of PrestaShop, even specific countries!</p>
 <p>How to set the compatibility of your module? In your <code>__construct</code> method:</p>
@@ -256,18 +258,16 @@ Several tips only apply to PrestaShop 1.5-1.6 module development. <a href="http:
 <h3 id="5-do-not-trigger-code-if-it-is-for-a-specific-page">5. Do not trigger code if it is for a specific page</h3>
 <p>If you are using the <code>displayHeader</code> hook to add features to the Product Page (for instance), do not use this code if you&rsquo;re not on page where you have a single product.</p>
 <p>You can easily contextualize your code by simply using <code>if</code> statements:</p>
-<p>{% highlight php %}
-public function hookDisplayHeader($params)
-{
-// A good practice is to stop code as soon as possible if we don&rsquo;t need it.
-if ($this-&gt;context-&gt;controller-&gt;php_self !== &lsquo;product&rsquo;) {
-return;
-}</p>
-<pre><code>// Rest of the code
-</code></pre>
-<p>}
-{% endhighlight %}</p>
-<p>Quick tip: it&rsquo;s worth noting that if you want to get some information from the Product object, you can do this with this code:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">function</span> <span class="nf">hookDisplayHeader</span><span class="p">(</span><span class="nv">$params</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// A good practice is to stop code as soon as possible if we don&#39;t need it.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">context</span><span class="o">-&gt;</span><span class="na">controller</span><span class="o">-&gt;</span><span class="na">php_self</span> <span class="o">!==</span> <span class="s1">&#39;product&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Rest of the code
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>Quick tip: it&rsquo;s worth noting that if you want to get some information from the Product object, you can do this with this code:
 <code>$product = $this-&gt;context-&gt;controller-&gt;getProduct()</code>.<br>
 There is no need to do <code>new Product(...)</code>. This code will work on a single-product page.</p>
 <h3 id="6-too-much-going-on-in-your-__constructor">6. Too much going on in your __constructor</h3>
@@ -282,7 +282,8 @@ Now a customer bought another carousel module, one with product reviews, and it 
 <h3 id="9-weird-ways-to-do-module-updates">9. Weird ways to do module updates</h3>
 <p>The day has come, you have a new version of your module and you&rsquo;d like to change its database schema, add some new hooks etc. There&rsquo;s no need to implement your own update mechanisms, PrestaShop already has one!</p>
 <p>Let&rsquo;s assume that you have MyModule v1.0.0 and you&rsquo;d like to update it to v1.1.0, this is example file:</p>
-<p>{% gist kpodemski/51d470da4ced53fd946f5d774044f69f %}</p>
+<script type="application/javascript" src="https://gist.github.com/kpodemski/51d470da4ced53fd946f5d774044f69f.js"></script>
+
 <p>You need to remember about few things:</p>
 <ul>
 <li>This code will fire only if your current module&rsquo;s version is 1.0.0 and you visit the Module&rsquo;s page.</li>

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Architecture Improvements in 1.6.1.0</title>
-    <link href="/style.css?1670875747" rel="stylesheet">
+    <link href="/style.css?1670877526" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -260,40 +260,36 @@
 <p>This helps make modules safer, because they can specify to the application which components they need to do their work.</p>
 <p>For instance, let&rsquo;s say I need access to the database for my module.</p>
 <p>Instead of writing things like:</p>
-<p>{% highlight php startinline=true %}
-class MyModule extends Module
-{
-public function __construct()
-{
-// initialization code
-}</p>
-<pre><code>public function getSomeData()
-{
-    // Where does Db come from?!
-    Db::getInstance()-&gt;executeS('SELECT x FROM Y');
-}
-</code></pre>
-<p>}
-{% endhighlight %}</p>
-<p>You can now write:</p>
-<p>{% highlight php startinline=true %}
-class MyModule extends Module
-{
-private $db;</p>
-<pre><code>public function __construct(Core_Foundation_Database_DatabaseInterface $db)
-{
-    // initialization code
-    $this-&gt;db = $db;
-}
-
-public function getSomeData()
-{
-    $this-&gt;db-&gt;select('SELECT x FROM Y');
-}
-</code></pre>
-<p>}
-{% endhighlight %}</p>
-<p>There are several benefits to the new approach:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MyModule</span> <span class="k">extends</span> <span class="nx">Module</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// initialization code
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">getSomeData</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Where does Db come from?!
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">Db</span><span class="o">::</span><span class="na">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">executeS</span><span class="p">(</span><span class="s1">&#39;SELECT x FROM Y&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>You can now write:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MyModule</span> <span class="k">extends</span> <span class="nx">Module</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">private</span> <span class="nv">$db</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nx">Core_Foundation_Database_DatabaseInterface</span> <span class="nv">$db</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// initialization code
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span> <span class="o">=</span> <span class="nv">$db</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">getSomeData</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">select</span><span class="p">(</span><span class="s1">&#39;SELECT x FROM Y&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>There are several benefits to the new approach:</p>
 <ul>
 <li>no access to global variables</li>
 <li>easier to test: you can <code>new</code> the module and pass a database mock to it</li>
@@ -303,33 +299,27 @@ public function getSomeData()
 <p>In PrestaShop many <code>ObjectModel</code> subclasses implement methods to retrieve models from the database according to some criteria.
 The methods are not generic even though they perform very generic tasks.</p>
 <p>For instance in <code>CountryCore</code> you can find this method:</p>
-<p>{% highlight php startinline=true %}
-public static function getByIso($iso_code, $active = false)
-{
-if (!Validate::isLanguageIsoCode($iso_code))
-die(Tools::displayError());
-$result = Db::getInstance(<em>PS_USE_SQL_SLAVE</em>)-&gt;getRow('
-SELECT <code>id_country</code>
-FROM <code>'._DB_PREFIX_.'country</code>
-WHERE <code>iso_code</code> = '&rsquo;.pSQL(strtoupper($iso_code)).&rsquo;''
-.($active ? &rsquo; AND active = 1&rsquo; : &lsquo;&rsquo;)
-);
-return (int)$result[&lsquo;id_country&rsquo;];
-}
-{% endhighlight %}</p>
-<p>Which is not needed any longer thanks to the generic entity retrieving capabilities provided by the new <code>EntityRepository</code> class:</p>
-<p>{% highlight php startinline=true %}
-$countryRepository = $entityManager-&gt;getRepository(&lsquo;Country&rsquo;);
-$country = $countryRepository-&gt;findOneBy([
-&lsquo;iso_code&rsquo; =&gt; &lsquo;us&rsquo;,
-&lsquo;active&rsquo; =&gt; false
-]);
-{% endhighlight %}</p>
-<p>In the code above, you can get access to the <code>$entityManager</code> either by declaring it as a dependency in your constructor if you&rsquo;re inside a module, or using the service locator if there is really no better way to pass the dependency:</p>
-<p>{% highlight php startinline=true %}
-Adapter_ServiceLocator::get(&lsquo;Core_Foundation_Database_EntityManager&rsquo;);
-{% endhighlight %}</p>
-<p><em>Again, <code>Adapter_ServiceLocator</code> will eventually disappear from the API. You should only use it where you cannot do proper dependency injection.</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">getByIso</span><span class="p">(</span><span class="nv">$iso_code</span><span class="p">,</span> <span class="nv">$active</span> <span class="o">=</span> <span class="k">false</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">Validate</span><span class="o">::</span><span class="na">isLanguageIsoCode</span><span class="p">(</span><span class="nv">$iso_code</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">die</span><span class="p">(</span><span class="nx">Tools</span><span class="o">::</span><span class="na">displayError</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$result</span> <span class="o">=</span> <span class="nx">Db</span><span class="o">::</span><span class="na">getInstance</span><span class="p">(</span><span class="nx">_PS_USE_SQL_SLAVE_</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getRow</span><span class="p">(</span><span class="s1">&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">        SELECT `id_country`
+</span></span></span><span class="line"><span class="cl"><span class="s1">        FROM `&#39;</span><span class="o">.</span><span class="nx">_DB_PREFIX_</span><span class="o">.</span><span class="s1">&#39;country`
+</span></span></span><span class="line"><span class="cl"><span class="s1">        WHERE `iso_code` = \&#39;&#39;</span><span class="o">.</span><span class="nx">pSQL</span><span class="p">(</span><span class="nx">strtoupper</span><span class="p">(</span><span class="nv">$iso_code</span><span class="p">))</span><span class="o">.</span><span class="s1">&#39;\&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">.</span><span class="p">(</span><span class="nv">$active</span> <span class="o">?</span> <span class="s1">&#39; AND active = 1&#39;</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span><span class="nv">$result</span><span class="p">[</span><span class="s1">&#39;id_country&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Which is not needed any longer thanks to the generic entity retrieving capabilities provided by the new <code>EntityRepository</code> class:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$countryRepository</span> <span class="o">=</span> <span class="nv">$entityManager</span><span class="o">-&gt;</span><span class="na">getRepository</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$country</span> <span class="o">=</span> <span class="nv">$countryRepository</span><span class="o">-&gt;</span><span class="na">findOneBy</span><span class="p">([</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;iso_code&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;us&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;active&#39;</span> <span class="o">=&gt;</span> <span class="k">false</span>
+</span></span><span class="line"><span class="cl"><span class="p">]);</span>
+</span></span></code></pre></div><p>In the code above, you can get access to the <code>$entityManager</code> either by declaring it as a dependency in your constructor if you&rsquo;re inside a module, or using the service locator if there is really no better way to pass the dependency:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nx">Adapter_ServiceLocator</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;Core_Foundation_Database_EntityManager&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><p><em>Again, <code>Adapter_ServiceLocator</code> will eventually disappear from the API. You should only use it where you cannot do proper dependency injection.</em></p>
 <p>Currently, entity repositories support the following methods:</p>
 <ul>
 <li><code>findOne($id)</code> : finds an entity by its primary key</li>

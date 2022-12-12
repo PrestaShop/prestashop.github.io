@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>CLDR, Composer, NPM, JSHint, oh my!</title>
-    <link href="/style.css?1670875746" rel="stylesheet">
+    <link href="/style.css?1670877525" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -220,22 +220,14 @@ We also chose to introduce NPM in order to manage frontend dependencies. CLDR da
 <h4 id="jshint-javascript-unit-testing">JSHint: JavaScript unit testing</h4>
 <p>We are introducing the usage of <a href="http://gruntjs.com/">Grunt</a>/<a href="http://jasmine.github.io/">Jasmine</a>+<a href="http://jshint.com/">JSHint</a> in order to continually check the syntax of our JS code, and make sure they pass our unit tests.</p>
 <p>Its use is tied to <a href="https://www.npmjs.com/">npm</a>, so if you want to launch our test suite, type this in your command line:</p>
-<p>{% highlight text %}</p>
-<blockquote>
-<p>npm test
-{% endhighlight %}</p>
-</blockquote>
-<h4 id="how-to-test-these-goodies">How to test these goodies?</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">&gt; npm test
+</span></span></code></pre></div><h4 id="how-to-test-these-goodies">How to test these goodies?</h4>
 <p>All of these improvements are available from the current &lsquo;develop&rsquo; branch of PrestaShop, which contains the in-development code for PrestaShop 1.7.0.0. If you want to work with this branch, you need to install both <a href="https://getcomposer.org/">Composer</a> and <a href="https://nodejs.org/en/">Node.js</a> (which contains npm).</p>
 <p>Then, type these commands in your command-line interface:</p>
-<p>{% highlight text %}</p>
-<blockquote>
-<p>composer install
-npm install -g grunt-cli
-npm install
-{% endhighlight %}</p>
-</blockquote>
-<p>Note that the Grunt line is optional.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">&gt; composer install
+</span></span><span class="line"><span class="cl">&gt; npm install -g grunt-cli
+</span></span><span class="line"><span class="cl">&gt; npm install
+</span></span></code></pre></div><p>Note that the Grunt line is optional.</p>
 <p>Regular users are therefore not able to install PS 1.7 easily in its current state - and this is quite intentional: we want developers to dive into the code, and give them fun, modern and interesting tools to play with. Be at ease: once 1.7&rsquo;s development is done, its package will be just as easy to set up as any previous version, with a full installer.</p>
 <h4 id="one-last-thing">One last thing</h4>
 <p>These are just the first part of big changes which are coming in PrestaShop 1.7. Come back soon on the Build devblog to learn how we plan on using <a href="http://symfony.com/components">Symfony2 components</a>, the <a href="http://twig.sensiolabs.org/">Twig template engine</a> and more. Let’s keep in touch!</p>

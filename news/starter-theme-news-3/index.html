@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Starter Theme: fresh news from the front #3</title>
-    <link href="/style.css?1670875747" rel="stylesheet">
+    <link href="/style.css?1670877526" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -225,29 +225,32 @@
 <p>in iframe: payment form displayed inside an iframe, like Paypal Integral Evolution</p>
 </li>
 </ul>
-<p>{% highlight php %}
-// PHP
-public function hookPaymentOptions($params)
-{
-if (!$this-&gt;active) {
-return;
-}</p>
-<p>if (!$this-&gt;checkCurrency($params[&lsquo;cart&rsquo;])) {
-return;
-}</p>
-<p>$this-&gt;getTemplateVarInfos();</p>
-<p>$newOption = new PaymentOption();
-$newOption-&gt;setCallToActionText($this-&gt;l(&lsquo;Pay by Bank Wire&rsquo;))
--&gt;setAction($this-&gt;context-&gt;link-&gt;getModuleLink($this-&gt;name, &lsquo;validation&rsquo;, array(), true))
--&gt;setAdditionalInformation($this-&gt;context-&gt;smarty-&gt;fetch(implode(DIRECTORY_SEPARATOR, [<strong>DIR</strong>, &lsquo;views&rsquo;, &rsquo;templates&rsquo;, &lsquo;front&rsquo;, &lsquo;payment_execution.tpl&rsquo;])))
--&gt;setLogo(Media::getMediaPath(<em>PS_MODULE_DIR</em>.$this-&gt;name.&rsquo;/bankwire.jpg&rsquo;));</p>
-<p>$payment_options = [
-$newOption,
-];</p>
-<p>return $payment_options;
-}</p>
-<p>{% endhighlight %}</p>
-<h2 id="facetedlayered-navigation-pagination-and-search">Faceted/layered navigation, pagination and search</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="c1">// PHP
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">public</span> <span class="k">function</span> <span class="nf">hookPaymentOptions</span><span class="p">(</span><span class="nv">$params</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">active</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">checkCurrency</span><span class="p">(</span><span class="nv">$params</span><span class="p">[</span><span class="s1">&#39;cart&#39;</span><span class="p">]))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">getTemplateVarInfos</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nv">$newOption</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PaymentOption</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">$newOption</span><span class="o">-&gt;</span><span class="na">setCallToActionText</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">l</span><span class="p">(</span><span class="s1">&#39;Pay by Bank Wire&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="o">-&gt;</span><span class="na">setAction</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">context</span><span class="o">-&gt;</span><span class="na">link</span><span class="o">-&gt;</span><span class="na">getModuleLink</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">,</span> <span class="s1">&#39;validation&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(),</span> <span class="k">true</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="o">-&gt;</span><span class="na">setAdditionalInformation</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">context</span><span class="o">-&gt;</span><span class="na">smarty</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">implode</span><span class="p">(</span><span class="nx">DIRECTORY_SEPARATOR</span><span class="p">,</span> <span class="p">[</span><span class="no">__DIR__</span><span class="p">,</span> <span class="s1">&#39;views&#39;</span><span class="p">,</span> <span class="s1">&#39;templates&#39;</span><span class="p">,</span> <span class="s1">&#39;front&#39;</span><span class="p">,</span> <span class="s1">&#39;payment_execution.tpl&#39;</span><span class="p">])))</span>
+</span></span><span class="line"><span class="cl">                <span class="o">-&gt;</span><span class="na">setLogo</span><span class="p">(</span><span class="nx">Media</span><span class="o">::</span><span class="na">getMediaPath</span><span class="p">(</span><span class="nx">_PS_MODULE_DIR_</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="o">.</span><span class="s1">&#39;/bankwire.jpg&#39;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nv">$payment_options</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">$newOption</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nv">$payment_options</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="facetedlayered-navigation-pagination-and-search">Faceted/layered navigation, pagination and search</h2>
 <p>In order to simplify the <code>.tpl</code> and <code>.js</code> files for all the faceted navigation, pagination and search, and to remove all the calculation from the front office (which is one of the main purpose of the StarterTheme) we have fully rewritten the whole thing. @djfm was responsible for that part. It would be too complicated to easily explain or transcript the work here, so don&rsquo;t hesitate to look at it on <a href="https://github.com/PrestaShop/PrestaShop/pull/4548/files">GitHub</a>.</p>
 <p>Accordind to standards, we have chosen to call “Filter” a value which helps us to find the corresponding products (like red, XL or a price range) and to call “Facet” a collection of filters (like color, size or price). From now on we&rsquo;ll also refer to “Faceted navigation” when in previous version we were mentioning layered navigation.</p>
 <p>One of the main innovations in this part of the theme is that now all product listing controllers (Manufacturer, Supplier, Search&hellip;) share the same behavior and can all delegate the search to modules in a nice, standard fashion. From now on, modules only need to do the search, no rendering.</p>

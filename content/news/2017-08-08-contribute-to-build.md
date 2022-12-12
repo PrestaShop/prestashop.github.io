@@ -36,7 +36,7 @@ What we'd like to see the community submit:
 
 ## How to do it?
 
-First and foremost, contact us about your article idea(s)! Write to [{{ site.email }}](mailto:{{ site.email }}) and tell us which story you would like to tell to the Build readership. Once we agree on it, it's on you to deliver!
+First and foremost, contact us about your article idea(s)! Write to [{{< param "email" >}}](mailto:{{< param "email" >}}) and tell us which story you would like to tell to the Build readership. Once we agree on it, it's on you to deliver!
 
 Second, Build is managed using [GitHub Pages](https://pages.github.com/), which uses the [Jekyll](https://jekyllrb.com/) static site tool -- and hence relies on [Markdown](https://daringfireball.net/projects/markdown/) as its base format. No CMS here: it all happens through text files on [the blog's Git repository](https://github.com/PrestaShop/prestashop.github.io)!<br/>
 

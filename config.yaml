@@ -22,6 +22,7 @@ googleAnalytics: "UA-2753771-31"
 disqusShortname: prestashopbuild
 
 params:
+  email: build@prestashop.com
   algolia:
     application_id: '17LZR6CZEL'
     index_name: 'jekyll'

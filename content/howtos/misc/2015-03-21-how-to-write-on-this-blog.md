@@ -77,13 +77,13 @@ Next, [fork](https://help.github.com/articles/fork-a-repo/) [the prestashop.gith
 
 *Bundler* will install Jekyll and all the Ruby dependencies. We'll also use it to run the blog on a local server.
 
-{% highlight bash %}
+```bash
 $ bundle install
 $ bundle exec jekyll serve
 ---
 Server address: http://0.0.0.0:4000/
 Server running... press ctrl-c to stop.
-{% endhighlight %}
+```
 
 Open a browser window, and go to `http://0.0.0.0:4000/`, and you should see the blog running.
 
@@ -124,9 +124,9 @@ Please ask us before creating a brand new topic!
 
 Any article of any type has to be in a file named using the following the time-based pattern. Make sure to follow that convention: if you do not, Jekyll won't recognize your file.
 
-{% highlight bash %}
+```bash
 YYYY-MM-DD-some-hyphen-separated-name.markdown
-{% endhighlight %}
+```
 
 
 ### File header (*YAML Front Matter*)
@@ -135,7 +135,7 @@ Jekyll makes it really easy to set your post meta information. The top of your f
 
 Copy and paste the following lines at the top of your new file, and customize the relevant values.
 
-{% highlight yaml %}
+```yaml
 ---
 layout: post
 title:  "Here goes the title of your article"
@@ -146,7 +146,7 @@ icon: icon-pen
 tags: [sample, tags, example]
 published: false
 ---
-{% endhighlight %}
+```
 
 I assume you will understand what you are supposed to change. *Icon* can be [any icon from FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/). You can also find available icons on the [PrestaShop Icon Font Documentation](http://build.prestashop.com/prestashop-icon-font/documentation.html) page.
 
@@ -163,7 +163,7 @@ If this is your first article, you will have to add yourself to the author list.
 Now fill up as much info as you can. `display_name` and `avatar` are mandatory.
 
 Exemple:
-{% highlight yaml %}
+```yaml
 julienbourdeau:
     display_name: Julien Bourdeau
     role: Core developer
@@ -177,7 +177,7 @@ julienbourdeau:
     description: >
         This is a description of the author with details about what he really does
         and the cool thing is: it's multiline.
-{% endhighlight %}
+```
 
 
 ## Writing your article
@@ -207,11 +207,9 @@ Images have to be in the `assets/images/YYYY/MM` folder (with a custom YYYY and 
 
 Using Markdown, your image should look like this:
 
-{% highlight liquid %}
-{% raw %}
+```liquid
 ![Jekyll Logo](/assets/images/2015/04/jekyll.png)
-{% endraw %}
-{% endhighlight %}
+```
 
 
 ### Code
@@ -220,16 +218,16 @@ Using Markdown, your image should look like this:
 
 When you need to refer to a `CSS property`, a `specific file`, a `function name` or anything similar, use the following syntax to highlight it in your text:
 
-{% highlight text %}
+```text
 `define('_PS_DEV_MODE_')` in file  `config.inc.php` or  `Tools::getValue()`
-{% endhighlight %}
+```
 
 
 #### Block of code
 
-When it comes to serious code blocks, it's always better to use syntax highlighting. With Jekyll, it works a bit differently compared to GitHub (because GitHub uses their own [GitHub-flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)): you have to use a [Liquid tag](https://github.com/Shopify/liquid): {% raw %}`{% highlight LANG OPT_1 OPT_2 %}`{% endraw %}
+When it comes to serious code blocks, it's always better to use syntax highlighting. With Jekyll, it works a bit differently compared to GitHub (because GitHub uses their own [GitHub-flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)): you have to use a [Liquid tag](https://github.com/Shopify/liquid): `{% highlight LANG OPT_1 OPT_2 %}`
 
-<pre><code>{% raw %}{% highlight php startinline=true linenos %}
+<pre><code>{% highlight php startinline=true linenos %}
 class IndexControllerCore extends FrontController
 {
 	// SAMPLE CODE
@@ -238,8 +236,8 @@ class IndexControllerCore extends FrontController
 		// SAMPLE CODE
 	}
 }
-{% endhighlight %}
-{% endraw %}</code></pre>
+```
+</code></pre>
 
 **Parameters:**
 
@@ -255,9 +253,9 @@ class IndexControllerCore extends FrontController
 
 If your code will or may be updated, you can easily embed a a [GitHub gist](https://gist.github.com/) using the embeded HTML code.
 
-{% highlight html %}
+```html
 <script src="https://gist.github.com/your-username/your-gist-id.js"></script>
-{% endhighlight %}
+```
 
 
 
@@ -265,9 +263,9 @@ If your code will or may be updated, you can easily embed a a [GitHub gist](http
 
 We use a simple FontAwesome plugin that lets you display any icon using the following syntax:
 
-{% highlight html %}
+```html
 <i class="icon-store"></i>
-{% endhighlight %}
+```
 
 You can find available icons on the [PrestaShop Icon Font Documentation](http://build.prestashop.com/prestashop-icon-font/documentation.html) page.
 
@@ -276,10 +274,10 @@ You can find available icons on the [PrestaShop Icon Font Documentation](http://
 
 If you want to highlight some content (hint, note, tip, alert, etc.), we have few types of highlighting available. They are based on [alerts from Bootstrap](http://getbootstrap.com/components/#alerts).
 
-{% highlight html %}
+```html
 <div class="alert alert-note" role="alert">
 You content goes here. **Markdown** _is_ `supported`.
 </div>
-{% endhighlight %}
+```
 
 You can use: `alert-note`, `alert-info`, `alert-important`, `alert-tips`.

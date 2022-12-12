@@ -39,21 +39,21 @@ The default theme includes the [Bootstrap 4](http://v4-alpha.getbootstrap.com) f
 
 An example is better than a long speech:
 
-{% highlight smarty %}
+```smarty
 section {
-  {% raw %}@{% endraw %}include linear-gradient(to top, red, orange);
+  @include linear-gradient(to top, red, orange);
 }
-{% endhighlight %}
+```
 
 becomes:
 
-{% highlight smarty %}
+```smarty
 section {
   background-color: red;
   background-image: -webkit-linear-gradient(bottom, red, orange);
   background-image:         linear-gradient(to top, red, orange);
 }
-{% endhighlight %}
+```
 
 Also, we have decided to structure our CSS-naming according to the [rscss](http://rscss.io/) guidelines.
 Here are some of its recommandations:

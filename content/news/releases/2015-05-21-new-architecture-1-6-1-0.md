@@ -108,7 +108,7 @@ For instance, let's say I need access to the database for my module.
 
 Instead of writing things like:
 
-{% highlight php startinline=true %}
+```php
 class MyModule extends Module
 {
     public function __construct()
@@ -122,11 +122,11 @@ class MyModule extends Module
         Db::getInstance()->executeS('SELECT x FROM Y');
     }
 }
-{% endhighlight %}
+```
 
 You can now write:
 
-{% highlight php startinline=true %}
+```php
 class MyModule extends Module
 {
     private $db;
@@ -142,7 +142,7 @@ class MyModule extends Module
         $this->db->select('SELECT x FROM Y');
     }
 }
-{% endhighlight %}
+```
 
 There are several benefits to the new approach:
 
@@ -157,7 +157,7 @@ The methods are not generic even though they perform very generic tasks.
 
 For instance in `CountryCore` you can find this method:
 
-{% highlight php startinline=true %}
+```php
 public static function getByIso($iso_code, $active = false)
 {
     if (!Validate::isLanguageIsoCode($iso_code))
@@ -170,23 +170,23 @@ public static function getByIso($iso_code, $active = false)
     );
     return (int)$result['id_country'];
 }
-{% endhighlight %}
+```
 
 Which is not needed any longer thanks to the generic entity retrieving capabilities provided by the new `EntityRepository` class:
 
-{% highlight php startinline=true %}
+```php
 $countryRepository = $entityManager->getRepository('Country');
 $country = $countryRepository->findOneBy([
     'iso_code' => 'us',
     'active' => false
 ]);
-{% endhighlight %}
+```
 
 In the code above, you can get access to the `$entityManager` either by declaring it as a dependency in your constructor if you're inside a module, or using the service locator if there is really no better way to pass the dependency:
 
-{% highlight php startinline=true %}
+```php
 Adapter_ServiceLocator::get('Core_Foundation_Database_EntityManager');
-{% endhighlight %}
+```
 
 *Again, `Adapter_ServiceLocator` will eventually disappear from the API. You should only use it where you cannot do proper dependency injection.*
 

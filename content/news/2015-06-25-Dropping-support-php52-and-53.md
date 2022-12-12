@@ -53,26 +53,26 @@ I recommend reading [this article from Fabien Potencier](http://fabien.potencier
 
 I know, it's a much smaller improvement, but a few shorthands have been introduced in PHP 5.3 and PHP 5.4 and they usually make life way easier. For instance:
 
-{% highlight php startinline=true %}
+```php
   ($this->name) ?: "John Doe"
   // instead of
   ($this->name) ? $this->name : "John Doe"
-{% endhighlight %}
+```
 
 
-{% highlight php startinline=true %}
+```php
   $var = [1, 2, 3];
   // instead of
   $var = array(1, 2, 3);
-{% endhighlight %}
+```
 
 
-{% highlight php startinline=true %}
+```php
   $var = (new Customer(1))->firstname;
   // instead of
   $customer = new Customer(1);
   $var = $customer->firstname;
-{% endhighlight %}
+```
 
 
 

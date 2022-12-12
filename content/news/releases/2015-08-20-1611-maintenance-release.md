@@ -41,7 +41,7 @@ Since version 1.6.1.1 is a "patch" update to version 1.6.1.0, upgrading from tha
 
 This release had 32 contributors, both from PrestaShop and from the Community at large. A huge "thank you!" to each of them!
 
-{% highlight text %}
+```text
 (adapted from the following Git command: "git shortlog --summary --since="2015-07-08" --until="2015-08-20")
     14	Alexandra Even
      1	Alphacom IT Solutions - Macedonia
@@ -75,7 +75,7 @@ This release had 32 contributors, both from PrestaShop and from the Community at
      2	Thomas Nabord
      8	Vincent Hadjedj
     33	Xavier Gouley
-{% endhighlight %}
+```
 
 Let's go, [upgrade your store(s)](http://doc.prestashop.com/display/PS16/Updating+PrestaShop)! Upgrading from 1.6.1.0 is completely safe, upgrades from a standard 1.6.0.x version should work just as well, and those upgrading from version 1.5, 1.4 or even 1.3 should take their time and pay attention to their modules, their theme and their custom modifications!
 

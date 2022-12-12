@@ -56,9 +56,9 @@ We are introducing the usage of [Grunt](http://gruntjs.com/)/[Jasmine](http://ja
 
 Its use is tied to [npm](https://www.npmjs.com/), so if you want to launch our test suite, type this in your command line:
 
-{% highlight text %}
+```text
 > npm test
-{% endhighlight %}
+```
 
 #### How to test these goodies?
 
@@ -66,11 +66,11 @@ All of these improvements are available from the current 'develop' branch of Pre
 
 Then, type these commands in your command-line interface:
 
-{% highlight text %}
+```text
 > composer install
 > npm install -g grunt-cli
 > npm install
-{% endhighlight %}
+```
 
 Note that the Grunt line is optional.
 

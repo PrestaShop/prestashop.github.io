@@ -60,13 +60,13 @@ Recent events show that even the most popular modules or themes can be affected 
 - [Type hinting](http://php.net/manual/en/language.oop5.typehinting.php) makes sure the value has the correct type: use `(int)`, `(bool)`, `(float)` properly, check the public methods available in the [`classes/Validate.php`](https://github.com/PrestaShop/PrestaShop/blob/develop/classes/Validate.php) file, such as  [`isUnsignedInt()`](https://github.com/PrestaShop/PrestaShop/blob/develop/classes/Validate.php#L686-L695).
 - The PrestaShop token is your friend: always check the token when doing action for logged in customers. Need an example?
 
-{% gist kpodemski/13a33eba6b43e9b6db7d29e491104ae1 %}
+{{< gist kpodemski 13a33eba6b43e9b6db7d29e491104ae1 >}}
 
   You can also check the token for guest users: I suggested [these two methods](https://github.com/PrestaShop/PrestaShop/pull/5863/files).
 
 - Secure your files: files outside your module's base file (such as `ajax.php`, `upload.php`, etc.) should have a check at their very beginning in order to make sure they cannot be triggered directly. Here is example:
 
-{% gist kpodemski/5717d7c36d4277a71fa67746bb8efade %}
+{{< gist kpodemski 5717d7c36d4277a71fa67746bb8efade >}}
 
 
 ### 4. Setup module compatibility and restrictions
@@ -92,7 +92,7 @@ If you are using the `displayHeader` hook to add features to the Product Page (f
 
 You can easily contextualize your code by simply using `if` statements:
 
-{% highlight php %}
+```php
 public function hookDisplayHeader($params)
 {
     // A good practice is to stop code as soon as possible if we don't need it.
@@ -102,7 +102,7 @@ public function hookDisplayHeader($params)
 
     // Rest of the code
 }
-{% endhighlight %}
+```
 
 Quick tip: it's worth noting that if you want to get some information from the Product object, you can do this with this code:
 `$product = $this->context->controller->getProduct()`.  
@@ -135,7 +135,7 @@ The day has come, you have a new version of your module and you'd like to change
 
 Let's assume that you have MyModule v1.0.0 and you'd like to update it to v1.1.0, this is example file:
 
-{% gist kpodemski/51d470da4ced53fd946f5d774044f69f %}
+{{< gist kpodemski 51d470da4ced53fd946f5d774044f69f >}}
 
 You need to remember about few things:
 

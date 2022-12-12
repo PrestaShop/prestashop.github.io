@@ -28,17 +28,17 @@ Rendering is now performed in a single step, and the `header.tpl` & `footer.tpl`
 
 It means it is now the template rendered by the controller which chooses the layout.
 
-{% highlight smarty startinline=true linenos %}
+```smarty {linenos=true}
 {extends "{$layout}"}
 
 {block "content"}
   Hello, world!
 {/block}
-{% endhighlight %}
+```
 
 In the layout file, template blocks are used to define the content areas.
 
-{% highlight smarty startinline=true linenos %}
+```smarty {linenos=true}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -48,17 +48,17 @@ In the layout file, template blocks are used to define the content areas.
     {block "content"}{/block}
   </body>
 </html>
-{% endhighlight %}
+```
 
 The `$layout` variable will always be available, but you can always change the layout if you want.
 
-{% highlight smarty startinline=true linenos %}
+```smarty {linenos=true}
 {extends "path/to/crazy_layout.tpl"}
 
 {block "content"}
   Hello, world!
 {/block}
-{% endhighlight %}
+```
 
 ### Relative template path
 
@@ -66,9 +66,9 @@ You can now include a template without using the `$tpl_dir` variable.
 
 Templates will be resolved starting from the current theme root directory.
 
-{% highlight smarty startinline=true linenos %}
+```smarty {linenos=true}
 {include "_partials/head.tpl"}
-{% endhighlight %}
+```
 
 ### New directory structure
 
@@ -109,17 +109,17 @@ The `WidgetInterface` has been introduced: any module implementing this interfac
 
 Right now, only a few modules implement this interface, but more and more modules will be "widgetized".
 
-{% highlight php startinline=true linenos %}
+```php {linenos=true}
 interface WidgetInterface {
     public function renderWidget($hookName, array $configuration);
     public function getWidgetVariables($hookName, array $configuration);
 }
-{% endhighlight %}
+```
 
 The `{widget_block}` block function allows to customize the HTML code even more.
 Really handy when you need to prototype a theme quickly without knowing anything about the hooks for a module!
 
-{% highlight smarty startinline=true linenos %}
+```smarty {linenos=true}
 {widget_block name="blocklanguages"}
 <div>
   <div>{$current_language.name}</div>
@@ -128,7 +128,7 @@ Really handy when you need to prototype a theme quickly without knowing anything
   {/foreach}
 </div>
 {/widget_block}
-{% endhighlight %}
+```
 
 If you want to have a further look, these two modules have been widgetized:
 
@@ -143,18 +143,18 @@ Just add files following the <a href="http://www.smarty.net/docs/en/plugins.nami
 
 For example, to have a modifier that adds stars to a string, create a file named `plugins/modifier.stars.php`
 
-{% highlight php startinline=true linenos %}
+```php {linenos=true}
 function smarty_modifier_stars($string)
 {
   return "*{$string}*";
 }
-{% endhighlight %}
+```
 
 Then, you can use it in your theme:
 
-{% highlight smarty startinline=true linenos %}
+```smarty {linenos=true}
 {"Hello, world!"|stars}
-{% endhighlight %}
+```
 
 ### Deprecations
 

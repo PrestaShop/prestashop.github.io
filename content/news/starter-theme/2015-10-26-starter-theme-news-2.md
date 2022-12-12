@@ -28,9 +28,9 @@ way to keep the whole commit history.
 Basically, we had to move the StarterTheme repo into a subdirectory, then we merged it
 into the PrestaShop repo. For those looking to do the same in their own project, enjoy the command we used:
 
-{% highlight bash %}
+```bash
 git filter-branch --tree-filter 'mkdir -p themes/StarterTheme; for f in *; do if ! [ $f = themes ]; then mv $f themes/StarterTheme; fi; done;' HEAD
-{% endhighlight %}
+```
 
 
 
@@ -59,7 +59,7 @@ Here is a nice example for you.
 
 ### Before
 
-{% highlight smarty %}
+```smarty
 {if $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
     <!-- prices -->
     <div>
@@ -117,11 +117,11 @@ Here is a nice example for you.
         {hook h="displayProductPriceBlock" product=$product type="unit_price"}
     {/if}
 {/if}
-{% endhighlight %}
+```
 
 ### After
 
-{% highlight smarty %}
+```smarty
 {block name="product_prices"}
   {if $product.show_price}
     <div class="product-prices">
@@ -183,7 +183,7 @@ Here is a nice example for you.
     </div>
   {/if}
 {/block}
-{% endhighlight %}
+```
 
 Soon we'll start using Ajax and [Rivets.js](http://rivetsjs.com/) to improve this page.
 
@@ -198,13 +198,13 @@ This may look like a small improvement but it's actually a big step forward.
 
 If you look at many templates in `default-bootstrap`, you'll find a lot of pieces of code like this:
 
-{% highlight smarty  %}
+```smarty
 {if $category->id AND $category->active}
   // Do something
 {elseif $category->id}
   <p class="alert alert-warning">{l s='This category is currently unavailable.'}</p>
 {/if}
-{% endhighlight %}
+```
 
 Hence the new notification arrays will help remove A LOT of logic from the templates.
 
@@ -225,11 +225,11 @@ As of today, we don't plan on using Twig for the front office, which means that 
 We told you [from the begining](http://build.prestashop.com/news/starter-theme-kickoff/) that we wanted to escape all Smarty variables in PrestaShop 1.7.0.0. [It's done](https://github.com/PrestaShop/PrestaShop/commit/2a4118947e2a9b1d0cf3d039d5c28a63ddfe7a69)!
 If you want NOT to escape your Smarty vars, you'll have to use `nofilter`.
 
-{% highlight smarty  %}
+```smarty
 <section id="content" class="page-content page-cms page-cms-{$cms.id}">
   {$cms.content nofilter}
 </section>
-{% endhighlight %}
+```
 
 
 ### New functions and modifiers
@@ -244,7 +244,7 @@ In the meantime, here is a little preview.
 
 `{url}` will help you generate any URL you need.
 
-{% highlight smarty %}
+```smarty
 {url entity=cms id=2}
 {url entity=category id=3}
 {url entity=address id=1 params=['delete' => true]}
@@ -255,7 +255,7 @@ http://prestashop.ps/en/content/2-legal-notice
 http://prestashop.ps/en/3-women
 http://prestashop.ps/en/address?id_address=1&delete=1
 
-{% endhighlight %}
+```
 
 
 
@@ -265,7 +265,7 @@ The `classname` modifier will sanitize any string into a nice CSS class or id.
 
 The `classnames` modifier will transform an array into class names (see example below).
 
-{% highlight php %}
+```php
 // PHP
 $classes = [
   'class1' => true,
@@ -280,7 +280,7 @@ class="{$classes|classnames}"
 
 class="class1 nice-layout"
 
-{% endhighlight %}
+```
 
 
 

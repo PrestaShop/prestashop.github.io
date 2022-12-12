@@ -95,7 +95,7 @@ Method names SHOULD NOT be prefixed with a single underscore to indicate protect
 
 An `if` structure looks like the following. Note the placement of parenthesis, spaces, and braces; and that `else` and `elseif` are on the same line as the closing brace from the earlier body.
 
-{% highlight php startinline=true %}
+```php
 if ($expr1) {
     // if body
 } elseif ($expr2) {
@@ -103,13 +103,13 @@ if ($expr1) {
 } else {
     // else body;
 }
-{% endhighlight %}
+```
 
 ##### 5.2. switch, case
 
 A `switch` structure looks like the following. Note the placement of parenthesis, spaces, and braces. The case statement MUST be indented once from switch, and the break keyword (or other terminating keyword) MUST be indented at the same level as the case body. There MUST be a comment such as `// no break` when fall-through is intentional in a non-empty case body.
 
-{% highlight php startinline=true %}
+```php
 switch ($expr) {
     case 0:
         echo 'First case, with a break';
@@ -126,45 +126,45 @@ switch ($expr) {
         echo 'Default case';
         break;
 }
-{% endhighlight %}
+```
 
 ##### 5.3. while, do while, for, foreach, try, catch
 
 A `while` statement looks like the following. Note the placement of parenthesis, spaces, and braces.
 
-{% highlight php startinline=true %}
+```php
 while ($expr) {
     // structure body
 }
-{% endhighlight %}
+```
 
 Similarly, a `do while` statement looks like the following. Note the placement of parenthesis, spaces, and braces.
 
-{% highlight php startinline=true %}
+```php
 do {
     // structure body;
 } while ($expr);
-{% endhighlight %}
+```
 
 A `for` statement looks like the following. Note the placement of parenthesis, spaces, and braces.
 
-{% highlight php startinline=true %}
+```php
 for ($i = 0; $i < 10; $i++) {
     // for body
 }
-{% endhighlight %}
+```
 
 A `foreach` statement looks like the following. Note the placement of parenthesis, spaces, and braces.
 
-{% highlight php startinline=true %}
+```php
 foreach ($iterable as $key => $value) {
     // foreach body
 }
-{% endhighlight %}
+```
 
 A try catch block looks like the following. Note the placement of parenthesis, spaces, and braces.
 
-{% highlight php startinline=true %}
+```php
 try {
     // try body
 } catch (FirstExceptionType $e) {
@@ -172,7 +172,7 @@ try {
 } catch (OtherExceptionType $e) {
     // catch body
 }
-{% endhighlight %}
+```
 
 ### End of an era, beginning of a new one!
 

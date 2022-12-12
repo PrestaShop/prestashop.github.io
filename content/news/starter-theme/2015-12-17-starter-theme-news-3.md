@@ -47,7 +47,7 @@ To help you to create or adapt your payment modules, we have reworked the [bankw
 
 * in iframe: payment form displayed inside an iframe, like Paypal Integral Evolution
 
-{% highlight php %}
+```php
 // PHP
 public function hookPaymentOptions($params)
 {
@@ -74,7 +74,7 @@ public function hookPaymentOptions($params)
   return $payment_options;
 }
 
-{% endhighlight %}
+```
 
 ## Faceted/layered navigation, pagination and search
 

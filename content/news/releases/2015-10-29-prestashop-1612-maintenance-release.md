@@ -79,7 +79,7 @@ Since version 1.6.1.2 is a "patch" update to version 1.6.1.0, upgrading from tha
 
 This release had 36 contributors, both from PrestaShop and from the Community at large. A huge "thank you!" to each of them!
 
-{% highlight text %}
+```text
 (adapted from the following Git command: git shortlog --summary --since="2015-08-20" --until="2015-10-30")
 	   9	Alexandra Even
 	   1	Alfonso Jiménez
@@ -117,7 +117,7 @@ This release had 36 contributors, both from PrestaShop and from the Community at
 	  33	Thibaud Chauviere
 	   2	Thomas N
 	   5	Xavier Gouley
-{% endhighlight %}
+```
 
 ...and let's not forget the whole Product/Tech team here at PrestaShop, who double-checked the code before it was merged, and applied our QA tests!
 

@@ -381,6 +381,24 @@ li code {
     font-size: 0.9em;
 }
 
+// fix for code blocks with line numbers
+.highlight {
+  table {
+    td {
+      padding: 0;
+      border: 0;
+
+      &:first-child {
+        width: 3em;
+      }
+
+      pre {
+        margin: 0;
+        border: 0;
+      }
+    }
+  }
+}
 
 /**
  * Header

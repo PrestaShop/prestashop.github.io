@@ -55,14 +55,14 @@ Once you have this, you just need to add two entries in your child theme's `them
 * **use_parent_assets:** a sub entry to `assets` to set if you want to use the CSS and JS files from the parent (true) or not (false).
 
 
-{% highlight yml %}
+```yml
 parent: classic
 name: childtheme
 display_name: My first child Theme
 version: 1.0.0
 assets:
   use_parent_assets: true
-{% endhighlight %}
+```
 
 Once this file is in place, you can go ahead and select this theme in your back office: you're all set.
 
@@ -78,9 +78,9 @@ Here's an example where we modify the category template. First, you should creat
 
 Extend the template you want to modify in your parent theme and define just the block you need. You need to add the `parent:` keyword (as you can see in the example below) to indicate that the template comes from the parent theme.
 
-{% highlight smarty %}
+```smarty
 {extends file='parent:catalog/listing/category.tpl'}
-{% endhighlight %}
+```
 
 ![Modify blocks](/assets/images/2017/09/child-theme-some-blocks.png)
 
@@ -90,12 +90,12 @@ At this point you can do anything you want with this template but most likely yo
 
 Extend product-list the normal way and override the block you need. Let's say you want to change the `product_list_header` block:
 
-{% highlight smarty %}
+```smarty
 {extends file='catalog/listing/product-list.tpl'}
 {block name='product_list_header'}
   <div class="title">{$listing.label}</div>
 {/block}
-{% endhighlight %}
+```
 
 ![Modify whole template](/assets/images/2017/09/child-theme-whole-template.png)
 

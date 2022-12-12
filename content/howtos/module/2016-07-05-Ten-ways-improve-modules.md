@@ -40,7 +40,7 @@ When working with PrestaShop modules you might have seen the fancied configurati
 At first sight, some of them might look cool and you might get tempted to copy these as well, but don't forget that this will cost you some maintainability. This is particularly true when having to support multiple versions of PrestaShop. The `HelperForm` and `HelperOptions` classes were designed to help you with this.
 Did you know that it is possible to extend these templates and that you can define your own configuration elements? Here's a code snippet that will allow you to use PrestaShop 1.6's switch element on an older version of PrestaShop:
 
-{% gist firstred/b5016aab980ade678d741691e5b15c5b %}
+{{< gist firstred b5016aab980ade678d741691e5b15c5b >}}
 
 You can simply place this file in the location `views/templates/admin/_configure/helper/form/form.tpl` relative to the root of your module's folder and the `HelperForm` template has been extended.
 Do you see the `$smarty.const._PS_VERSION_|@addcslashes:'\'' < '1.6'` check? This simply allows us to define several templates for different versions of PrestaShop. Pretty cool if you want to keep your code together and the view separated in a different file.
@@ -84,7 +84,7 @@ These are (in general) complex and/or extensive modules. Search around on GitHub
 When creating a module for PrestaShop there will be dozens of times in which you will need to access a configuration key (e.g. `Configuration::get('MYMODULE_ACCEPT_PAYMENTS')`). By using strings all the time you increase the chance of making a typo.
 Since these strings never change during runtime you can define them as constants at the top of your module's class. By using an IDE which immediately warns you when the constant cannot be found, it's easier to prevent bugs.
 You can define the constants as follows:
-{% highlight php %}
+```php
 class IndexControllerCore extends FrontController
 {
 	const ACCEPT_PAYMENTS = 'MYMODULE_ACCEPT_PAYMENTS';
@@ -94,7 +94,7 @@ class IndexControllerCore extends FrontController
 		// CONSTRUCTOR
 	}
 }
-{% endhighlight %}
+```
 
 Configuration values can now be loaded like: `Configuration::get(self::ACCEPT_PAYMENTS)`.
 You can do the same for "magic" numbers. If you use numbers which do not change during runtime, make sure that you turn those into constants, as much as possible.
@@ -104,7 +104,7 @@ Not necessarily a direct improvement for your code, but it allows you to pack yo
 
 Here's an example of a Gruntfile:
 
-{% gist firstred/1f6a589625ac65b2d10e07628587e9fb %}
+{{< gist firstred 1f6a589625ac65b2d10e07628587e9fb >}}
 
 ### 9. Use the validator
 This is a very simple one. You can use the validator at [https://validator.prestashop.com/](https://validator.prestashop.com/). It will show you if your module could use some improvements.

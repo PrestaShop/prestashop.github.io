@@ -175,12 +175,12 @@ Here are the main information that you will need to update your module:
 Parameters cannot be obtained from a query string anymore. From now on, an array of parameters is directly passed onto the `hookDisplayAdminProductsExtra` method.
 
 See this sample hook:
-{% highlight php startinline=true %}
+```php
 public function hookDisplayAdminProductsExtra($params)
-{% endhighlight %}
+```
 
 With `$params` taking these values:
-{% highlight php startinline=true %}
+```php
 $params [
   "_ps_version"
   "id_product"
@@ -188,7 +188,7 @@ $params [
   "cart"
   "altern"
 ]
-{% endhighlight %}
+```
 
 
 #### Assets

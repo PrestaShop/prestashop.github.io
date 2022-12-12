@@ -71,13 +71,13 @@ Some noteworthy rules:
 * Use soft tabulations with two spaces to indent.
 * Use braces with all multi-line blocks.
 
-{% highlight javascript startinline=true %}
+```javascript
 (function () {
   if (test) {
     return false;
   }
 }());
-{% endhighlight %}
+```
 
 Do not hesitate to look at their [complete documentation](https://github.com/airbnb/javascript).
 
@@ -87,7 +87,7 @@ Regarding the CSS and HTML codebase, because we have integrated Bootstrap 4 both
 
 When you are writing HTML code, if your line is longer than 120 characters, we have chosen to do a line break after each attributes with an indentation. For example, it will look like this:
 
-{% highlight html startinline=true %}
+```html
 <img
   class="test"
   id="..."
@@ -98,7 +98,7 @@ When you are writing HTML code, if your line is longer than 120 characters, we h
   alt="..."
   role="..."
 >
-{% endhighlight %}
+```
 
 Some noteworthy rules:
 
@@ -111,11 +111,11 @@ Some noteworthy rules:
   * When grouping selectors, keep individual selectors to a single line.
   * End all declarations with a semicolon, even the last one.
 
-{% highlight html startinline=true %}
+```html
 <img class="test" src="...">
-{% endhighlight %}
+```
 
-{% highlight css startinline=true %}
+```css
 img,
 a,
 input[type="text"] {
@@ -125,7 +125,7 @@ input[type="text"] {
   background-color: rgba(0,0,0,.5);
   box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
 }
-{% endhighlight %}
+```
 
 ### Smarty / Twig
 
@@ -137,13 +137,11 @@ Some noteworthy rules:
 * Use single quotes to surround strings.
 * Use [snake case](https://en.wikipedia.org/wiki/Snake_case) (underscores) to name your blocks.
 
-{% highlight twig startinline=true %}
-{% raw %}
+```twig
 {% block my_block_name %}
    {% set foo = 'foo' %}
 {% endblock %}
-{% endraw %}
-{% endhighlight %}
+```
 
 
 ## Commits & Pull-requests

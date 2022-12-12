@@ -13,9 +13,8 @@ tags: [news]
 
 As part of PrestaShop's product redesign, we decided to replace Font Awesome and start using our own icon pack. We're sharing here the very first version of this new icon set, and we'll keep you updated when it evolves.
 
-<br/>
 ![Icon Pack Beta](/assets/images/2015/08/icon_beta_blog.png)
-<br/>
+{.text-center style="margin-top: 40px; margin-bottom: 40px"}
 
 ### Why these icons?
 We're busy improving the global design experience in PrestaShop. It means giving a new identity to the software, and it starts with our own and unique icon set.

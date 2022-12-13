@@ -6,7 +6,18 @@
     <description>Recent content in event on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Nov 2022 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/event/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Dec 2022 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/event/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Announcing December PrestaShop Project Public Demo</title>
+      <link>https://build.prestashop-project.org/news/upcoming-demo-9-2022/</link>
+      <pubDate>Tue, 13 Dec 2022 09:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/upcoming-demo-9-2022/</guid>
+      <description>Friendly reminder, that the public demo for the PrestaShop Project will happen tomorrow, on Wednesday, December 14th, 2022 at 4pm CET!
+I expect to share with you project news. Additionally, a few demos are planned:
+Availability labels for product combinations, by @Hlavtox New options for discountinued products, by @Hlavtox Better managing the order state for backorder products, by @Hlavtox At the end of every meeting, there is a Q&amp;amp;A session. You can ask your questions beforehand.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Project Public Demo - November 2022 Session</title>
       <link>https://build.prestashop-project.org/news/public-demo-8-2022/</link>
@@ -160,17 +171,6 @@ The session&amp;rsquo;s agenda was as follows:
       <description>Friendly reminder, the next session of public demonstration from the maintainers team will happen Wednesday, August 4, 2021 at 4pm CEST!
 We expect to present 2 topics:
 First a focus on 1.7.8.0 Release candidate process and timeline by @marionf Then a Focus on some 1.7.8.0 RC1 most interesting bug fixes: bug #25332: a display issue for product details when using a specific layout, presented by @matthieu-rolland bug #24103: adding payment with comma would fail in Order Back office page, presented by @matks bug #24143: a error happened when visting a disabled category page, presented by @matks Join us on YouTube!</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop Public OSS Demo - June 2021 session</title>
-      <link>https://build.prestashop-project.org/news/public-oss-demo-6-2021/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/public-oss-demo-6-2021/</guid>
-      <description>The project&amp;rsquo;s sixth monthly public demo session was held and streamed live on June 30, 2021.
-The session&amp;rsquo;s agenda was as follows:
-00:00 Beginning of the session, introduction 00:34 Presentation of the agenda 01:14 Event rules 02:28 Project announcements 04:53 Demonstration #1 - How to develop a module 100% multistore compatible by @marionf and @matthieu-rolland 25:25 Demonstration #2 - Introduce DKIM signing for emails by @Hlavtox 47:10 Demonstration #3 - Upgrade to Symfony 4 by @atomiix 58:38 Closure You can use the timestamps to jump directly to the parts you want to watch.</description>
     </item>
     
   </channel>

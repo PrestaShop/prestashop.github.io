@@ -27,8 +27,29 @@ jobs:
       - name: Build site
         run: hugo
 
-      - name: Create a CNAME file which mapping to our custom domain
+      - name: Create a CNAME file mapping to our custom domain
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
         run: echo 'build.prestashop-project.org' > public/CNAME
+
+      - name: Set up algolia CLI
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+        uses: algolia/setup-algolia-cli@master
+        with:
+          version: '1.2.1'
+        env:
+          ALGOLIA_APPLICATION_ID: ${{ secrets.BLOG_ALGOLIA_APPLICATION_ID }}
+          ALGOLIA_ADMIN_API_KEY: ${{ secrets.BLOG_ALGOLIA_ADMIN_API_KEY }}
+
+      - name: Update algolia index
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+        run: |
+          algolia --version
+          echo "Clear algolia blog index"
+          algolia indices clear blog
+          echo "Push new objects"
+          algolia objects import blog -F public/algolia.ndjson 
+          echo "Clean up"
+          rm public/algolia.ndjson
 
       - name: Deploy
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}

@@ -12,6 +12,7 @@ mainSections:
   - news
 
 cascade:
+  # default social image
   twitter_image: "/assets/images/theme/meta-logo-build.png"
 
 permalinks:
@@ -23,19 +24,36 @@ disqusShortname: prestashopbuild
 
 params:
   email: build@prestashop.com
+  # algolia search settings
   algolia:
     application_id: '17LZR6CZEL'
-    index_name: 'jekyll'
+    index_name: 'blog'
 
 social:
   twitter: "PrestaShopOrg"
   github: "PrestaShop"
 
+mediaTypes:
+  application/ndjson:
+    suffixes: ['ndjson']
+
 rssLimit: 15
+
 outputFormats:
+  # rss feed generation
   RSS:
     mediaType: application/rss+xml
     basename: feed
+  # algolia index generation
+  algolia:
+    baseName: "algolia"
+    isPlainText: true
+    mediaType: "application/ndjson"
+    notAlternative: true
+
+outputs:
+  home:
+    ["HTML", "RSS", "algolia"]
 
 markup:
   highlight:

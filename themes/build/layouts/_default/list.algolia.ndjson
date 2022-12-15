@@ -1,0 +1,19 @@
+{{- $section := $.Site.GetPage "section" .Section }}
+{{- $items := slice -}}
+{{- range where (where .Site.Pages "Type" "in" (slice "howtos" "news" "tools")) "IsPage" true -}}
+    {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
+        {{- $item := (dict
+              "objectID" .File.UniqueID
+              "content" (partial "partials/post-summary" .)
+              "title" .Title
+              "categories" (slice .Section)
+              "tags" .Params.Tags
+              "date" .Date.UTC.Unix
+              "lang" .Lang
+              "url" .RelPermalink
+            )
+        -}}
+        {{- $items = $items | append (jsonify $item) -}}
+    {{- end -}}
+{{- end -}}
+{{- delimit $items "\n" -}}

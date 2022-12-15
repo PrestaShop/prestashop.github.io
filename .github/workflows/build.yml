@@ -48,7 +48,7 @@ jobs:
         run: |
           algolia --version
           echo "Clear algolia blog index"
-          algolia indices clear blog
+          algolia indices clear blog --confirm
           echo "Push new objects"
           algolia objects import blog -F public/algolia.ndjson 
           echo "Clean up"

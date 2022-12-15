@@ -6,7 +6,18 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Dec 2022 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Dec 2022 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop Project Public Demo - December 2022 Session</title>
+      <link>https://build.prestashop-project.org/news/public-demo-9-2022/</link>
+      <pubDate>Thu, 15 Dec 2022 09:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/public-demo-9-2022/</guid>
+      <description>The project&amp;rsquo;s public demo was held for the ninth time this year and streamed live on December 14th, 2022.
+The session&amp;rsquo;s agenda was as follows:
+00:00 Beginning of the session: introduction 02:24 Project news: PrestaShop 1.7.8.8 04:04 Project news: new project members 04:36 Project news: Hummingbird theme, status update 08:53 Project news: core monthly 10:04 Demo: availability labels per combination by @Hlavtox 16:08 Demo: more options for discontinued products by @Hlavtox 22:03 Demo: ability to configure backorder status by @Hlavtox 24:23 Pull Requests overview 33:48 Questions &amp;amp; answers (do you have any questions?</description>
+    </item>
+    
     <item>
       <title>Announcing December PrestaShop Project Public Demo</title>
       <link>https://build.prestashop-project.org/news/upcoming-demo-9-2022/</link>
@@ -160,17 +171,6 @@ How to get started If you are wondering how to get started, we are listing in th
 General messages Dear developers,
 The Quality Assurance team completed tests of PrestaShop release candidate 1, finding some bugs blocking the final release. You can read the full report here.
 We managed to fix issues with the search in the developer documentation. There are still improvements to be made, which we plan to address.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop Project Public Demo - October 2022 Session</title>
-      <link>https://build.prestashop-project.org/news/public-demo-7-2022/</link>
-      <pubDate>Thu, 06 Oct 2022 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/public-demo-7-2022/</guid>
-      <description>The project&amp;rsquo;s public demo was held for the seventh time this year and streamed live on October 5th, 2022.
-The session&amp;rsquo;s agenda was as follows:
-00:00 Beginning of the session: the introduction 02:11 Project news: PrestaShop 8.0 - status update 03:12 Project news: Hacktoberfest 2022 05:10 Project news: Q&amp;amp;A - new format 06:04 Project news: new members in the project 06:55 Pull Requests overview 17:43 Demo: upgrade from 1.7.8 to your own PrestaShop 8.</description>
     </item>
     
   </channel>

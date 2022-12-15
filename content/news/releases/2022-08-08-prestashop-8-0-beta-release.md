@@ -3,7 +3,7 @@ layout: post
 slug: "prestashop-8-0-beta-release"
 title:  "PrestaShop 8.0 beta is open for feedback!"
 subtitle: "You can download it and test it"
-date: 2022-08-08 15:30
+date: 2022-08-08 15:30:00
 authors: [ PrestaShop ]
 image: /assets/images/2022/08/banner-8-0-beta.png
 icon: icon-leaf

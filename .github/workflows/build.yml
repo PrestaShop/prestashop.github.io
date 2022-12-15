@@ -42,6 +42,9 @@ jobs:
 
       - name: Update algolia index
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+        env:
+          ALGOLIA_APPLICATION_ID: ${{ secrets.BLOG_ALGOLIA_APPLICATION_ID }}
+          ALGOLIA_ADMIN_API_KEY: ${{ secrets.BLOG_ALGOLIA_ADMIN_API_KEY }}
         run: |
           algolia --version
           echo "Clear algolia blog index"

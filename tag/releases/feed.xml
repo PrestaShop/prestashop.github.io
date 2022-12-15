@@ -30,6 +30,27 @@ A significant cleanup has been performed in the codebase, with several internal 
     </item>
     
     <item>
+      <title>PrestaShop 8.0 Release Candidate Is Ready To Be Tested!</title>
+      <link>https://build.prestashop-project.org/news/prestashop-8-0-rc1-release/</link>
+      <pubDate>Thu, 13 Oct 2022 14:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-8-0-rc1-release/</guid>
+      <description>The maintainers team is pleased to announce the first release candidate of PrestaShop 8.0.
+This is the last step before releasing the final 8.0 version. This release candidate is intended to allow the community to verify that all regressions found during the beta have been fixed and that the software is ready for production. If no major or critical regression is reported before October 20th, then the final version of 8.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 8.0 beta is open for feedback!</title>
+      <link>https://build.prestashop-project.org/news/prestashop-8-0-beta-release/</link>
+      <pubDate>Mon, 08 Aug 2022 15:30:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-8-0-beta-release/</guid>
+      <description>The public beta version of PrestaShop 8.0 is now ready for you to test!
+The maintainers team is very happy to announce today the release of the public beta version of PrestaShop 8.0. This version includes many new features, improvements and over 130 bug fixes.
+The main new features for this version include an update to Symfony 4.4, compatibility with PHP 8 and 8.1, an enhanced experimental product page, and a new security page which allows shop administrators to manage user sessions and configure their password policy.</description>
+    </item>
+    
+    <item>
       <title>Release of PrestaShop 1.7.8.7</title>
       <link>https://build.prestashop-project.org/news/prestashop-1-7-8-7-maintenance-release/</link>
       <pubDate>Mon, 25 Jul 2022 00:00:00 +0200</pubDate>
@@ -152,30 +173,6 @@ Major issues on the product page The issue #25718 and #25753 appeared due to the
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
 Critical fix One critical bug has been fixed in 1.7.7.7:
 The checkout at shipping step crashes when a cart rule was used if the database prefix is not ps_ Order page issue Merchants weren&amp;rsquo;t able to download the file from a customized product in the order page if the product wasn&amp;rsquo;t translated in the employee&amp;rsquo;s back office language Acknowledgements Many thanks to @idnovate for reporting the bug and providing a patch!</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.7.6</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-6-maintenance-release/</link>
-      <pubDate>Mon, 09 Aug 2021 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-6-maintenance-release/</guid>
-      <description>PrestaShop 1.7.7.6 is now available. This maintenance release fixes 31 regressions reported since the 1.7.7.0, including 2 critical regressions.
-We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
-Critical fixes Two critical bugs have been fixed in 1.7.7.6:
-Orders page - an exception is displayed when deleting a customer or a guest Smarty template caching Module::isCached() faulty causes performance loss Other bug fixes Back-office</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.7.5</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-7-5-maintenance-release/</link>
-      <pubDate>Mon, 14 Jun 2021 12:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-7-5-maintenance-release/</guid>
-      <description>PrestaShop 1.7.7.5 is now available. This maintenance release fixes 19 regressions reported since the 1.7.7.0.
-We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
-Main fixes Back-office
-Add new order page - Gift message cannot be removed View order page - An exception is displayed when we add a discount with space in the name Missing menu icon on mobile in dashboard page Order message with the same title is not displayed in the &amp;ldquo;order_message&amp;rdquo; list Orders list - The tracking URL is NOK in the preview order Wrong price in the document list for the delivery slip in the admin order page View order page - The order carrier ID is invalid Error when making a delete sql request Wrong escape in ps_1771_update_customer_note() Order page - An error is displayed when changing the addresses for the second time Order page - Ajax issue - The Discount Block is not automatically updated when updating or adding a product In module configuration pages, the &amp;ldquo;Activate module for this shop context&amp;rdquo; checkbox does not work Orders page - missing DNI number in some countries when the DNI is not required Order page - when adding a product which has an ecotax to an old order, the base price is NOK With Safari when creating a catalog price rule the wrong brand is selected View order page - Customized product cannot be added to multi-invoice Front-office</description>
     </item>
     
   </channel>

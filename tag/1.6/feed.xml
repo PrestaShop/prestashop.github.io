@@ -49,6 +49,31 @@ Core: Bug fix: #10921: Missing class const on cert refresh Contributor to this p
     </item>
     
     <item>
+      <title>Release of PrestaShop 1.7.4.3 and 1.6.1.21</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</link>
+      <pubDate>Wed, 03 Oct 2018 15:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</guid>
+      <description>PrestaShop 1.7.4.3 and 1.6.1.21 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. Some important issues are also fixed for 1.6.1.x. For the details, please read below.
+Since these versions fix security problems, we strongly encourage you to upgrade your shop as soon as possible.
+The most notable fix for 1.7.4.3 is:
+Fixed a bug where sensitive configuration information could be disclosed when an fatal error occurred.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.3.4 and 1.6.1.20</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-3-4-1-6-1-20-maintenance-releases/</link>
+      <pubDate>Wed, 27 Jun 2018 14:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-3-4-1-6-1-20-maintenance-releases/</guid>
+      <description>PrestaShop 1.7.3.4 and 1.6.1.20 are now available. These versions fix security and PHP compatiblity issues.
+Since these versions fix security problems, we strongly encourage you to upgrade your shop as soon as possible.
+The most notable fix for 1.7.3.x is:
+Improve cookies encryption Some of the most notable fixes for 1.6.1.x are:
+Improve cookies encryption Improve compatibility with PHP 7.1 and 7.2 Download PrestaShop now! Here is the complete list of changes for 1.</description>
+    </item>
+    
+    <item>
       <title>Release of PrestaShop 1.7.3.3 and 1.6.1.19</title>
       <link>https://build.prestashop-project.org/news/prestashop-1-7-3-3-1-6-1-19-maintenance-releases/</link>
       <pubDate>Mon, 28 May 2018 10:30:00 +0200</pubDate>
@@ -145,30 +170,6 @@ Download 1.6.1.16 now! As the version number indicates (as per our SemVer-like v
       <description>July is almost over and more than 6 months have come and gone since the beginning of the year. Time to gather some numbers and make sense of them. Infographic included!
 High-level numbers Between January 1st and June 31st of 2017, we&amp;rsquo;ve released 13 updates to PrestaShop:
 1 minor release for 1.7: 1.7.1.0. Version 1.7.2.0 was released in July! Download it today! 5 patch releases for 1.7: from 1.7.0.4, 1.5.0.5, 1.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.6.1.15</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-6-1-15-maintenance-release/</link>
-      <pubDate>Wed, 28 Jun 2017 02:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/prestashop-1-6-1-15-maintenance-release/</guid>
-      <description>PrestaShop 1.6.1.15 is now available. This maintenance release has seen 19 pull requests merged since version 1.6.1.14.
-Continuing on our promise to support 1.6 with patch releases, we are happy to deliver this new version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
-Download 1.6.1.15 now! As the version number indicates (as per our SemVer-like versioning), this is the 15th patch release for PrestaShop 1.6.1.0.
-As usual, if you are currently running promotions leading to high traffic on your website, we recommend that you wait for the promotion to end before attempting any upgrade and technical change to your store.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.6.1.14</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-6-1-14-maintenance-release/</link>
-      <pubDate>Mon, 05 Jun 2017 02:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/prestashop-1-6-1-14-maintenance-release/</guid>
-      <description>PrestaShop 1.6.1.14 is now available. This maintenance release has seen 21 pull requests merged since version 1.6.1.13.
-Continuing on our promise to support 1.6 with patch releases, we are happy to deliver this new version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
-Download 1.6.1.14 now! As the version number indicates (as per our SemVer-like versioning), this is the 14th patch release for PrestaShop 1.6.1.0.
-As usual, if you are currently running promotions leading to high traffic on your website, we recommend that you wait for the promotion to end before attempting any upgrade and technical change to your store.</description>
     </item>
     
   </channel>

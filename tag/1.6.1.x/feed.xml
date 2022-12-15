@@ -40,6 +40,31 @@ Core: Bug fix: #10921: Missing class const on cert refresh Contributor to this p
     </item>
     
     <item>
+      <title>Release of PrestaShop 1.7.4.3 and 1.6.1.21</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</link>
+      <pubDate>Wed, 03 Oct 2018 15:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</guid>
+      <description>PrestaShop 1.7.4.3 and 1.6.1.21 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. Some important issues are also fixed for 1.6.1.x. For the details, please read below.
+Since these versions fix security problems, we strongly encourage you to upgrade your shop as soon as possible.
+The most notable fix for 1.7.4.3 is:
+Fixed a bug where sensitive configuration information could be disclosed when an fatal error occurred.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.3.4 and 1.6.1.20</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-3-4-1-6-1-20-maintenance-releases/</link>
+      <pubDate>Wed, 27 Jun 2018 14:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-3-4-1-6-1-20-maintenance-releases/</guid>
+      <description>PrestaShop 1.7.3.4 and 1.6.1.20 are now available. These versions fix security and PHP compatiblity issues.
+Since these versions fix security problems, we strongly encourage you to upgrade your shop as soon as possible.
+The most notable fix for 1.7.3.x is:
+Improve cookies encryption Some of the most notable fixes for 1.6.1.x are:
+Improve cookies encryption Improve compatibility with PHP 7.1 and 7.2 Download PrestaShop now! Here is the complete list of changes for 1.</description>
+    </item>
+    
+    <item>
       <title>Release of PrestaShop 1.7.3.3 and 1.6.1.19</title>
       <link>https://build.prestashop-project.org/news/prestashop-1-7-3-3-1-6-1-19-maintenance-releases/</link>
       <pubDate>Mon, 28 May 2018 10:30:00 +0200</pubDate>
@@ -150,28 +175,6 @@ As usual, if you are currently running promotions leading to high traffic on you
       <description>PrestaShop 1.6.1.12 is now available. This maintenance release has seen 21 pull requests merged since version 1.6.1.11.
 Continuing on our promise to support 1.6 with patch releases, we are happy to deliver this new version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
 This version is also important because it fixes a security issue in PrestaShop allowing a person with access to the back office to upload modules.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.6.1.11</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-6-1-11-maintenance-release/</link>
-      <pubDate>Mon, 16 Jan 2017 09:10:11 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/prestashop-1-6-1-11-maintenance-release/</guid>
-      <description>PrestaShop 1.6.1.11 is now available. This maintenance release has seen 19 pull requests merged since version 1.6.1.10.
-Continuing on our promise to support 1.6 with patch releases, we are happy to deliver this new version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
-This version is also important because it fixes several long-standing issues with Advanced Stock Management, as explained in the article presenting the beta of 1.</description>
-    </item>
-    
-    <item>
-      <title>Beta version of PrestaShop 1.6.1.11 - An ASM-focused release</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-6-1-11-beta/</link>
-      <pubDate>Thu, 22 Dec 2016 10:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/prestashop-1-6-1-11-beta/</guid>
-      <description>It has been in the pipeline for a while, it&amp;rsquo;s now official, PrestaShop 1.6.1.11 will ship soon, most notably with some patches concerning the advanced stock management.
-Try 1.6.1.11 beta now! In beta at first, it will allow you to judge the stability of this release, and of the important fixes that have been applied to this version. So your feedback is really important to us!
-Important You should not use this beta version in production.</description>
     </item>
     
   </channel>

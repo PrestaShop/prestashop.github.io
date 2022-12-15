@@ -156,15 +156,15 @@ These two security updates fix issues on the file manager integrated in the text
     </item>
     
     <item>
-      <title>Release of PrestaShop 1.7.2.5</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-2-5-maintenance-release/</link>
-      <pubDate>Wed, 21 Feb 2018 09:10:11 +0100</pubDate>
+      <title>Release of PrestaShop 1.7.4.3 and 1.6.1.21</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</link>
+      <pubDate>Wed, 03 Oct 2018 15:00:00 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-2-5-maintenance-release/</guid>
-      <description>PrestaShop 1.7.2.5 is now available. This is a security release for all previous versions of PrestaShop 1.7.
-Security researchers recently reported the Core team of two vulnerabilities affecting the Back Office, one of them critical.
-Issue 1 - Critical Parameter unserializing could be exploited by an authentified attacker in order to execute arbitrary code on the server, with the same user level as the PHP binary.
-This issue was introduced by a PR merged in September 2016.</description>
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</guid>
+      <description>PrestaShop 1.7.4.3 and 1.6.1.21 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. Some important issues are also fixed for 1.6.1.x. For the details, please read below.
+Since these versions fix security problems, we strongly encourage you to upgrade your shop as soon as possible.
+The most notable fix for 1.7.4.3 is:
+Fixed a bug where sensitive configuration information could be disclosed when an fatal error occurred.</description>
     </item>
     
   </channel>

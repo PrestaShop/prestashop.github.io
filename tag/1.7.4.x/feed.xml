@@ -18,6 +18,18 @@ These two security updates fix issues on the file manager integrated in the text
     </item>
     
     <item>
+      <title>Release of PrestaShop 1.7.4.3 and 1.6.1.21</title>
+      <link>https://build.prestashop-project.org/news/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</link>
+      <pubDate>Wed, 03 Oct 2018 15:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</guid>
+      <description>PrestaShop 1.7.4.3 and 1.6.1.21 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. Some important issues are also fixed for 1.6.1.x. For the details, please read below.
+Since these versions fix security problems, we strongly encourage you to upgrade your shop as soon as possible.
+The most notable fix for 1.7.4.3 is:
+Fixed a bug where sensitive configuration information could be disclosed when an fatal error occurred.</description>
+    </item>
+    
+    <item>
       <title>Release of PrestaShop 1.7.4.2</title>
       <link>https://build.prestashop-project.org/news/prestashop-1-7-4-2-maintenance-release/</link>
       <pubDate>Fri, 27 Jul 2018 12:30:00 +0200</pubDate>
@@ -50,18 +62,6 @@ Back Office: Improvement: #9311: Apply shop context in configuration Bug fix: #9
       <guid>https://build.prestashop-project.org/news/prestashop-1-7-4-0-available/</guid>
       <description>Dear community, after a little bit more than four months, the new minor version of PrestaShop is available: please welcome 1.7.4.0!
 Download PrestaShop 1.7.4.0 now! Be careful! If you plan to upgrade, we recommend you to use the version 4.0 of the 1-click upgrade, currently available as a beta on GitHub, instead of the version 3.0 available on the marketplace. What’s new Let’s have a look at the new features and improvements that will enhance the merchants’ experience, like UI and performance.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.4.3 and 1.6.1.21</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</guid>
-      <description>PrestaShop 1.7.4.3 and 1.6.1.21 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. Some important issues are also fixed for 1.6.1.x. For the details, please read below.
-Since these versions fix security problems, we strongly encourage you to upgrade your shop as soon as possible.
-The most notable fix for 1.7.4.3 is:
-Fixed a bug where sensitive configuration information could be disclosed when an fatal error occurred.</description>
     </item>
     
   </channel>

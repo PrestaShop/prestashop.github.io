@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Contribute to the UI kit of the 1.7 back office</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Contribute to the UI kit of the 1.7 back office" />
+<meta property="og:description" content="PrestaShop is 10 years old this year. 10 years and a software that have experienced 7 major evolutions." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2017/PrestaShop-UI-Kit/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2017-09-06T09:10:11+02:00" />
+    <meta property="article:modified_time" content="2017-09-06T09:10:11+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Contribute to the UI kit of the 1.7 back office"/>
+<meta name="twitter:description" content="Yes, yes, we have a UI kit :)"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Contribute to the UI kit of the 1.7 back office</h1>
+              
+                <h3 class="post-subtitle">Yes, yes, we have a UI kit :)</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars1.githubusercontent.com/u/16487836?v=3&amp;s=400"
+         alt="Léa Mendes Da Silva's photo">
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/2203436"
+         alt="Maxime Biloé's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Léa Mendes Da Silva</div>
+        
+          <div class="author-display-role">Product Designer</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">Maxime Biloé</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Sep 6, 2017
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Contribute&#43;to&#43;the&#43;UI&#43;kit&#43;of&#43;the&#43;1.7&#43;back&#43;office&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2017%2FPrestaShop-UI-Kit%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2017%2FPrestaShop-UI-Kit%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>PrestaShop is 10 years old this year. 10 years and a software that have experienced 7 major evolutions.</p>
+<p>Over the years, the core of the software has added many features, serving both small and large merchants.</p>
+<p>With 10 years of development behind us, a general observation is that PrestaShop offers a flexible software, rich of  hundreds features, but this richness has, over the years and evolutions, brought graphical inconsistencies. Also, it is difficult for contributors to design modules which are perfectly aligned with our branding, because our product design guidelines have evolved while not being documented enough.</p>
+<p>With the release of 1.7, we decided to focus on the user experience and thus improve what is already in place, instead of bringing in dozens of new features. We have therefore embarked on a vast project of redesigning very important parts of the software, such as the Product Creation page, the default theme, and the Stock Management feature.</p>
+<p>Among these projects, there is one that is a real challenge for us: the UI Kit (and the accompanying design guidelines). The community has regularly asked for both. It&rsquo;s an ambitious project for an open source software used by tens of thousands of people around the world. We would like to make it collaborative. So in addition to pull requests, translations, and debugging, we would like to open this new project to the community and invite you to collaborate on the UI Kit of the 1.7 Back Office!</p>
+<h2 id="why-a-ui-kit">Why a UI Kit?</h2>
+<h3 id="consistency">Consistency</h3>
+<p>A UI kit is a library of HTML/CSS elements, allowing developers and designers to build their product interfaces. It provides consistency, which is one of the basics of a good user experience (UX).</p>
+<p>Therefore, having a real UI kit for the back office will help us improve the quality of the user’s experience and stay consistent with PrestaShop’s branding.</p>
+<h3 id="scalability">Scalability</h3>
+<p>A UI kit facilitates the scalability of the product interfaces. If you need to update the style of an element, you just have to update the element in the UI kit once, and it will have an impact on the whole product interface.</p>
+<h3 id="community">Community</h3>
+<p>A UI kit is also a powerful tool to build a product with the community, because it provides elements that already apply to the product branding. Hence, it makes it possible work with the community maintaining the identity of the product in the same time.</p>
+<img width="500" src="/assets/images/2017/09/PrestaShop_UIKit_buttons.png">
+<h2 id="why-is-it-a-huge-challenge-for-prestashop">Why is it a huge challenge for PrestaShop?</h2>
+<h3 id="technical-challenges">Technical challenges</h3>
+<h4 id="where-we-are-now">Where we are now</h4>
+<p>Nowadays, we have two coexisting themes in PrestaShop 1.7’s back office. One is a legacy theme from 1.6, called “default”; the new one, introduced in 1.7, is called “new-theme”. We needed to have two back office themes, because the “default” theme is using Bootstrap 3 with hardcoded modifications, whereas the new one uses Bootstrap 4.<br/>
+Already at that time, we wanted to offer a better user experience and improve the user interface: we therefore began to create a first <a href="http://build.prestashop.com/prestashop-ui-kit/">PrestaShop UI Kit</a>. Sadly, we couldn’t just plug the UI Kit on top of the “default” theme because of that Bootstrap issue. Creating a separate theme for the new pages in 1.7 was the only solution.</p>
+<p>It would have taken a long time to develop a whole new theme based on a new UI Kit. So, we chose to do it step-by-step, with each back office page being upgraded to the new system. As we migrate the pages on Symfony and Twig, we will integrate them using a new theme which includes the UI Kit. This is the case for five back office pages for now:</p>
+<ul>
+<li>Catalog</li>
+<li>Product Creation</li>
+<li>Stock Management</li>
+<li>Modules</li>
+<li>Translations</li>
+</ul>
+<h4 id="what-do-we-need-to-get-started">What do we need to get started?</h4>
+<p>We need to overhaul the current UI Kit: currently it’s not perfect. We need to migrate it to use Webpack instead of Gulp, and it does not fully reflect the mockups we designed. Once that will be done, we will be able to begin to add the missing components and to make it evolve.</p>
+<img width="500" src="/assets/images/2017/09/PrestaShop_UIKit_alerts.png">
+<h3 id="design-challenges">Design challenges</h3>
+<p>In addition to the technical constraints, there are design challenges to take into account when building our back office UI Kit:</p>
+<ul>
+<li>Respect <a href="http://build.prestashop.com/tools/prestashop-design-principles/">our design principles</a></li>
+<li>Preserve PrestaShop&rsquo;s identity</li>
+<li>Be aligned with the redesign of our <a href="https://www.prestashop.com">.com</a> and <a href="https://addons.prestashop.com/">Addons marketplace</a></li>
+<li>Share our design principles, guidelines and UI Kit with the community so you can use it to create modules that blend well with the PrestaShop interfaces</li>
+<li>Succeed in preserving interface coherence over the long term</li>
+<li>Deliver a UI kit that is scalable and maintainable</li>
+</ul>
+<h2 id="action-plan">Action plan</h2>
+<p>PrestaShop is quite massive and having a UI kit that answers to all the different cases is a long-term task. This is why the UI Kit project will be carried out in several stages.</p>
+<h3 id="right-now">Right now</h3>
+<p>You can already:</p>
+<ul>
+<li>Access <a href="http://build.prestashop.com/tools/prestashop-design-principles/">our design principles</a></li>
+<li>Comment on the <a href="https://invis.io/BY8V90JEQ">current UI Kit on InVision</a></li>
+<li>Contact us at <a href="mailto:uikit@prestashop.com?subject=Contributing%to%PrestaShop%UI%Kit"><a href="mailto:uikit@prestashop.com">uikit@prestashop.com</a></a> if you would like to contribute or submit ideas related to this project</li>
+</ul>
+<img width="500" src="/assets/images/2017/09/PrestaShop_UIKit_alerts.png">
+<h3 id="coming-soon">Coming soon</h3>
+<ul>
+<li>We’ll release a first version of the UI Kit together with PrestaShop 1.7.3. We will iterate on this version as new components are added and updates are made.</li>
+<li>You can contribute by integrating parts of the UI kit and work directly with our designers. We’ll let you know as soon as possible how we can work together!</li>
+</ul>
+<p>Let&rsquo;s improve the UI Kit together!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Sep 6, 2017</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/design/">design</a>
+
+  <a class="label label-primary" href="/tag/back-office/">back office</a>
+
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/contribute/">contribute</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the authors</h5>
+
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Léa Mendes Da Silva
+      <span class="multiple">Product Designer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/Leadesign">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/LeaMendesign">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Maxime Biloé
+      <span class="multiple">Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/maximebiloe">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/732692-maxime-bilo%c3%a9">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/maximebiloe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/maximebiloe">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+                </div>
+                
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

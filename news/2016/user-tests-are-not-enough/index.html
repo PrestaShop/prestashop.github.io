@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>User tests are not enough</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="User tests are not enough" />
+<meta property="og:description" content="As a designer, product manager or entrepreneur you’ve probably been told countless times that user feedback is gold (and that’s true!). There’s no shortage of books and articles that describe the benefits of testing your product with your users. While these documents provide good advice on how the test is done, they often lack explanations on how to make sense of this feedback and how this process fits inside a team." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2016/user-tests-are-not-enough/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2016-11-30T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2016-11-30T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="User tests are not enough"/>
+<meta name="twitter:description" content="We created Lean Feedback, a collaborative workshop to help you deal with user tests results"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">User tests are not enough</h1>
+              
+                <h3 class="post-subtitle">We created Lean Feedback, a collaborative workshop to help you deal with user tests results</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://fr.gravatar.com/userimage/91609995/38361fbb8f44093203780a23155f280d.jpg"
+         alt="Guillaume Bruere's photo">
+  
+      
+
+      <img class="img-circle" src="https://avatars1.githubusercontent.com/u/16487836?v=3&amp;s=400"
+         alt="Léa Mendes Da Silva's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Guillaume Bruere</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">Léa Mendes Da Silva</div>
+        
+          <div class="author-display-role">Product Designer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Nov 30, 2016
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=User&#43;tests&#43;are&#43;not&#43;enough&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fuser-tests-are-not-enough%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fuser-tests-are-not-enough%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>As a designer, product manager or entrepreneur you’ve probably been told countless times that user feedback is gold (and that’s true!). There’s no shortage of books and articles that describe the benefits of testing your product with your users. While these documents provide good advice on how the test is done, they often lack explanations on how to make sense of this feedback and how this process fits inside a team.</p>
+<p>That’s why we wanted to share our experience of user tests at PrestaShop. When we’ve set up user tests at PrestaShop, we’ve overcome many challenges, summarized a lot of advice and built our own methodology. To us, one critical aspect was to collect truly useful and actionable feedback from these tests: that’s how we came up with the idea of the <strong>Lean Feedback workshop</strong>.</p>
+<h2 id="background">Background</h2>
+<p>At PrestaShop, our baseline is “WeCommerce is better eCommerce”, a sentence which reflects that our community is our biggest asset and how much we value the voice of our users. PrestaShop is an Open Source e-commerce solution that powers more than 250,000 online stores worldwide and has a community of 1 million members (merchants, developers, partners, web agencies…).
+With our new <a href="https://www.prestashop.com/1.7/index.php">1.7 version</a> focused on helping the merchants be more efficient in their daily tasks, user tests have played a key role in validating our product choices and refining the UX of PrestaShop back-office (merchants&rsquo; administration panel).</p>
+<p>We’re also convinced that everyone should be involved in user testing: not only designers or product managers but also developers, QA or members of other teams. Like Jeff Gothelf explains in <a href="http://www.jeffgothelf.com/lean-ux-book/">Lean UX</a>, it’s an opportunity for everyone to see where your efforts are paying (or not) and that’s an excellent source of motivation. What we’ve seen is that this good practice also raised a collaboration challenge that led us to the creation of Lean Feedback (more on this later).</p>
+<h2 id="iterative-design">Iterative Design</h2>
+<p>When working on a new user journey, we organize a test session that consists in testing a part of the product with 5 individual testers. What we’ve experienced is that we don’t actually need 10 people to identify an issue. With 5 tests, we can already see what the recurring problems are, which corroborates <a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/">Nielsen’s graph</a>.</p>
+<p><img src="/assets/images/2016/11/nielsens-graph.png" alt="Nielsen&amp;rsquo;s graph"></p>
+<p>We usually invite the testers to come to our office, and install them in front of an interface in order to see how they complete a given mission. While we could argue that having a user come to our office creates a bias, we’ve also seen it’s a good way to create a lasting relationship. To limit this bias, we carefully set the level of expectations right from the beginning.
+The tester is not alone in the room: two members of PrestaShop assist her/him, and the whole session is recorded for later use.</p>
+<p>This face-to-face discovery gives invaluable feedback on what we’ve done so far, and shows us what is left to do in order to be as close to perfection as possible. From these weekly real-life feedback, we iterate between UX designers, product managers and developers, and the next batch of testers can already see our improvements.</p>
+<p>Now, let’s go through our recipe!</p>
+<h2 id="preparation">Preparation</h2>
+<p>A good preparation is essential to make the most out of the user tests. Here are the key 6 steps:</p>
+<h3 id="set-your-learning-goals">Set your learning goals</h3>
+<p>Testing just for the sake of testing is not enough, at best the tester would give you a Christmas feature list. Each time we prepare a new user test session, the product manager and UX designer meet to define the learning goals, i.e. assumptions that need to be be verified or might be proven wrong. For instance, when we redesigned the page dedicated to product creation, one assumption we had to test was that every essential information was easily accessible in the first tab.</p>
+<p><img src="/assets/images/2016/11/product-page-test.png" alt="Product page test"></p>
+<div style="color:grey;font-size:14px;text-align:center;">The test should prove that a simple product can be created using only basic settings. Our tests showed us that the product’s reference number was lacking here.</div>
+<h3 id="define-your-target-population">Define your target population</h3>
+<p>A test result is reliable only if it has been performed with the right kind of users. In our case, many different profiles may interact with the back office (merchant’s administration panel) of PrestaShop: managers, interns, accountants, fulfillment operators… so we make sure to target the right persona. If you don’t follow this rule and ask a tester to play a role, you’ll only get hypothetical answers to hypothetical problems.</p>
+<p>For instance, at first we tested the creation of new products (above screenshot) with e-commerce managers. We then realized that it’s mostly the job of interns and then refined our screening in later iterations.</p>
+<h3 id="prepare-a-medium">Prepare a medium</h3>
+<p>The medium might be a clickable prototype that looks real (we use Sketch+Invision) or a development version. You should make sure to use the same version during the 5 tests. It might be tempting to fix a seemingly small issue between two tests but that leads to inconsistent results.</p>
+<h3 id="source-and-invite-testers">Source and invite testers</h3>
+<p>One of the challenges being an Open Source on-premise software is that we don’t have a list of all of our users, unlike full-SaaS products. So we take advantage of e-commerce events like trade show or Meetups to collect emails of people interested in participating. Screening the testers over the phone and setting up the appointments is the most time-consuming part of our preparation.</p>
+<p><img src="/assets/images/2016/11/managing-interviews.png" alt="Managing interviews"></p>
+<div style="color:grey;font-size:14px;text-align:center;">An example of the kind of spreadsheet we use to manage face-to-face or remote interviews. We’ve kept it simple!</div>
+<h3 id="write-a-script">Write a script</h3>
+<p>Before the test, the product manager or UX designer writes a script that will serve as a roadmap and that can be shared with all the PrestaShop members who will lead the tests. It is a way to have consistent and comparable results. This script consists in:</p>
+<ul>
+<li>A reminder of the learning goals.</li>
+<li>A check-list of the set-up elements that should be available for the test.</li>
+<li>A “mission”: the job the tester has to complete. It generally implies achieving smaller tasks related to the learning goals.</li>
+<li>A few demographic questions to ask at the end.</li>
+</ul>
+<h3 id="choose-examiners-roles">Choose examiners roles</h3>
+<p>Two members of PrestaShop assist the tester during the interview and each one has a role:</p>
+<ul>
+<li>A “<strong>guide</strong>”, who leads the test and makes sure it sticks to the script. It is recommended to choose a person who’s been involved in the writing of the script or has a good knowledge of the new product to test.</li>
+<li>A “<strong>scribe</strong>”, who sees, hears and writes down everything silently during the test. It can be any team member, as long as she/he is volunteering and motivated.</li>
+</ul>
+<p>Therefore, the examiners are not always the same UX designer + product manager duo. We try to have 5 different examiner duos so that up to 10 different PrestaShop members have the opportunity to see a user test the product.</p>
+<h3 id="bonus-set-up-a-recording-device">Bonus: Set up a recording device</h3>
+<p>Sometimes it can be useful to <a href="https://hackernoon.com/how-to-build-your-own-diy-user-testing-setup-for-just-129-9ead745a6a74#.s2fu80kkj">record the test</a>. You may watch it again if you’ve forgotten something that slipped through the notes. We also used these videos internally to share some feedbacks with stakeholders or the developer team during sprint meetings. If you choose to record the test, don’t forget to ask permission and ask the user to sign an agreement.</p>
+<h2 id="test-process">Test process</h2>
+<p>Like we explained earlier, there’s little mystery here. There are <a href="http://build.prestashop.com/news/user-tests-are-not-enough/#Bonus">really good books</a> that suggest efficient scripts of test processes and our own method is mainly a summary of lots of advice. The test itself generally last 30 minutes, which can be split as follow:</p>
+<h3 id="welcome-and-brief-5">Welcome and brief (5’)</h3>
+<p>Start by thanking the user for taking the time to talk with you and break the ice with small chit-chat.
+Reassure the interviewee about the test. For some people, it can feel like an exam! So dispel any stress and set the right level of expectation by explaining that:</p>
+<ul>
+<li>The tester is not here to be judged, but instead to judge the product</li>
+<li>There is no wrong or right answer</li>
+<li>If it doesn’t work that’s always the product’s fault (not the tester’s nor even your fault!)</li>
+<li>They might get blocked or lost and that’s perfectly normal because that’s the kind of issue you want to identify</li>
+</ul>
+<p>You then can describe the context and introduce the testers with their mission.
+Choose a general goal that is close to the job the users do in their routine instead of making a list of small tasks that tests every single feature.
+Don’t forget to ask the testers to think aloud at any time.</p>
+<h3 id="testing-20">Testing (20’)</h3>
+<p>During the test, let the users progress towards their mission without indications. If there are feature they didn’t test spontaneously, you can still go back to it at the end.
+Be aware that in the tester’s mind, everything’s new. So give them time to observe and analyze your product. Let them get lost and stop them only if you feel you’re deviating too much from the script.
+The less you speak, the better. You’re not here to pitch your product or to convince the tester.</p>
+<h3 id="debrief-5-or-more">Debrief (5’ or more)</h3>
+<p>Once the mission is completed (or not!), you may take time to ask open questions about the overall experience or about the testers’ routine. Generally, they feel more confident telling you about their life at this point.
+You can then thank them again and give them a compensation. Many companies offer a gift card, at PrestaShop we chose to offer a tote bag full of goodies.</p>
+<h3 id="just-after-the-test">Just after the test</h3>
+<p>Take time to put your notes in a shared document (like Google Sheets) and make it clean. It might seem a tedious job but you get many advantages from this task: now your notes can easily be shared, it can’t be lost and it’s easy to search anything in it. Bonus thing: when making it clean, you’ll even remember a few things you didn’t have the time to write down.</p>
+<p><img src="/assets/images/2016/11/feedback.png" alt="Gathering feedback"></p>
+<div style="color:grey;font-size:14px;text-align:center;">An example of spreadsheet we use to put our notes - in French, so allow us to explain it ;). Each line represents an individual task, which is part a global mission. We fill in three columns: if the feature was tested or not, how the user completed the task (easy/with difficulties/failed), and additional comments giving context.</div>
+<h2 id="lean-feedback">Lean Feedback</h2>
+<p>It’s a good thing to get feedback from your users, but it’s even better to do something with it! You can’t afford to let your feedbacks rot inside an excel sheet and be forgotten in a few weeks. And at this point you probably ask yourself:
+<em>“How do we make the most of these feedbacks?”</em>
+<em>“How can we prioritize what to do next?”</em></p>
+<p>At PrestaShop, we try to bring everyone together around our users’ needs. It might seem obvious but in reality it’s not always easy to raise awareness on UX topics among the technical or marketing teams. That’s why we involve everyone in the test process either as guide or scribe. However, involving so many team members during the tests (up to 10) comes with an additional challenge:
+<em>“How do we centralize and summarize all these feedbacks when many different team members have led the tests?”</em></p>
+<p>There is a significant quantity of data, collected as notes or videos, and for us it seemed a too tedious task for one single person (designer or product manager) to absorb it and summarize it. In addition to this problem, some important clues might also get lost between the lines.</p>
+<p>To solve this challenge, we thus have come up with the idea of a workshop that would allow everyone to share their feedbacks and prioritize the tasks to do afterwards. We call it Lean Feedback. Once all 5 tests are finished, we gather all examiners duos during 40’ for a workshop consisting in two steps.</p>
+<h3 id="1-sort-the-feedbacks-30">1. Sort the feedbacks (30’)</h3>
+<p>In the first 5’, each examiner duo sorts their notes into 4 categories. For each feedback they write down a post-it note.</p>
+<p>The 4 categories are:</p>
+<ul>
+<li>
+<p><strong>UX problems</strong>
+Any issue related to the user’s experience that might have mislead or confused her/him and prevented her/him from completing a task partially or totally. It also includes UI  and wording issues.</p>
+</li>
+<li>
+<p><strong>Bugs</strong>
+Any technical bug, when the product doesn’t work like it’s supposed to work.</p>
+</li>
+<li>
+<p><strong>Feature requests</strong>
+When the user suggests a feature to fulfill a job. In that case, the “guide” examiner should have followed up with questions to make sure there is a real problem behind this feature request.</p>
+</li>
+<li>
+<p><strong>“Aha” moments</strong>
+The things the user particularly enjoyed. It’s the kind of moment when the tester has a “click” in her/his head and suddenly understands your product’s added value. It’s important to identify these moments to preserve it and put it as early as you can in the global experience.</p>
+</li>
+</ul>
+<p>Then each duo comes in turn to a whiteboard or a craft paper where the 4 categories are mapped and sticks the feedbacks in the corresponding category. During 5’, the examiners duo has the opportunity to describe how the issue (or “aha” moment) occurred and what the tester’s background is. Each time another duo recognizes a feedback they’ve seen in their test, they can upvote (stick a +1 post-it note) and explain how their feedback is similar.</p>
+<p>By the end of this first step, the board may look like this:</p>
+<p><img src="/assets/images/2016/11/feedback-priorization.png" alt="Sorting the feedback"></p>
+<p>Thanks to this exercise, it has become easy to see what the most frequent feedback are and in the process we’ve created a shared understanding of our user’s issues among all team members.</p>
+<h3 id="2-prioritize-10">2. Prioritize (10’)</h3>
+<p>Now that we’ve identified the main issues, it’s time for the product lead (either product manager or UX designer) to choose what to do next.</p>
+<p>The product lead can move the post-it notes created in the previous step in a simplified backlog with 2 columns:</p>
+<ul>
+<li>
+<p>To Do
+Issues that require an immediate action for the next iteration. For instance, technical bugs, UX elements to iterate on, features to add, or even “aha” moments to bring early in the process.</p>
+</li>
+<li>
+<p>To Check
+Issues that did not exactly make unanimity between the examiners. Here the product lead puts feedbacks that should be further investigated before taking action.</p>
+</li>
+</ul>
+<p>A good rule of thumb is to put the most frequent feedback in “To Do” and the less frequent ones in “To Check”, but it’s the product lead’s role to take other inputs (business requirements, marketing…) into account and estimate the importance of a given feedback. When the product lead chooses to put a single feedback in “To Do” or a recurrent feedback in “To Check”, the other team members have the opportunity to challenge her/his decision and the product lead may explain the reasons.</p>
+<p>At the end of this step, the backlog looks like this:</p>
+<p><img src="/assets/images/2016/11/backlog.png" alt="Prioritization"></p>
+<p>Be aware that you don’t have to move every post-it note from the previous step in the backlog, the idea here is to focus on the essential issues.</p>
+<p>Thanks to this step, there is a clear list of issues to work on in the next iteration, which can either feed the dev backlog or design backlog. And everyone understands why we tackle these specific issues.</p>
+<p>For the next test session, you also know what to look out for and how you can change the script to check uncertain issues.</p>
+<h3 id="theres-only-one-rule">There’s only one rule</h3>
+<p>Never talk about solutions during this workshop!</p>
+<p><img src="/assets/images/2016/11/dont-talk-about-it.gif" alt="Don&amp;rsquo;t talk about solutions"></p>
+<p>The purpose of Lean Feedback is to identify and prioritize <strong>problems</strong>. Searching for solutions comes afterwards and should involve a smaller dedicated team. If you allow people to talk directly about solutions, you’ll spend 3 hours of inefficient discussion.</p>
+<h2 id="the-lessons-we-learned">The lessons we learned</h2>
+<h3 id="benefits">Benefits</h3>
+<p>We have seen numerous positive impacts of implementing user testing at PrestaShop and setting up Lean Feedback, namely:</p>
+<ul>
+<li>Save a lot of time. In less than 1 hour, you’ve summarized and prioritized the issues and created consensus among the team.</li>
+<li>A great motivation among the teams (product guys, developers and QA) and a stronger user-centric culture</li>
+<li>The end of conflicts on why we choose to deal with some specific issues</li>
+<li>Dozens of key-learnings on what we got wrong or right for the users</li>
+<li>We even identified and built an essential feature</li>
+<li>It helped us have a clearer product vision and fed our roadmap</li>
+</ul>
+<h3 id="traps-weve-felt-into">Traps we’ve felt into</h3>
+<p><img src="/assets/images/2016/11/trap.gif" alt="It&amp;rsquo;s a trap"></p>
+<p>Of course, we’ve also done many things wrong and learned a lot from our failures. Here’s our list:</p>
+<ul>
+<li>Never test two different versions of an interface during a session. When we didn’t resist the temptation to do a few “quick fixes” between two tests, we actually ended up with new unexpected bugs and inconsistent results.</li>
+<li>Don’t wait too long to debrief the test session with Lean Feedback. 1 or 2 days is ideal after the tests, but after 1 week you’ll have forgotten too many things.</li>
+<li>Screen carefully the testers to avoid “consultant-testers”. These persons try to be nice by explaining what they would do if they were you (as a product manager or UX designer). It’s not their job and this kind of feedback is useless. If you can, gently refocus them on their mission. Otherwise just end the test.</li>
+<li>Too many or too few testers. We tried test user sessions with only 3 testers or 8 testers. In the first case it was too few to draw clear conclusions and in the second case the Lean Feedback workshop was too long and many people lost focus. Our magic number is 5 testers.</li>
+<li>Don’t deviate from the test script. Sometimes you’ll hear something very interesting from a tester but not exactly related to the topic you’re testing. Just write it down and wait till the end of the test to follow up with questions. Every time we took a break inside the script, we didn’t have time to finish the test.</li>
+<li>Never try to justify your choices. When you’re doing so, you’re basically explaining it’s the tester’s fault if she/he did not understand something. As a consequence, she/he will be too afraid to speak freely until the end of the test. If you hear an irritating critique about a specific item, resist the urge to explain why you designed it this way. Instead, follow up with a question like “I’m aware I can improve this point. What are your needs about this?”</li>
+</ul>
+<h3 id="its-never-finished">It’s never finished</h3>
+<p>The road towards perfection never ends! There are still a few things we’ll be working on to improve our user test process.</p>
+<h4 id="remote-and-international-testing">Remote and international testing</h4>
+<p>It’s great to meet testers in face-to-face interviews in our office. But it also implies a fair amount of logistics. In the future we’ll try to mix more remote-testing in our test sessions.</p>
+<p>Another challenge we also want to tackle is how to take advantage of our international community. With more than <a href="https://ambassadors.prestashop.com/">70 PrestaShop ambassadors</a> worldwide, we believe we could outsource some tests to identify even more issues and opportunities.</p>
+<h4 id="internal-video-database">Internal video database</h4>
+<p>Finding an easy way to record the tests was not an easy task. After trying several recording software we’ve settled with Screencast-O-Matic. We’ve also ended up with a lot of videos dispatched on many computers. One of our projects today is to create a private YouTube channel where the team can easily access the feedbacks from our users.</p>
+<h2 id="one-final-word">One final word</h2>
+<p>We neither pretend to have found the ultimate recipe for user testing, nor to have invented it. We merely absorbed and digested many good practices found elsewhere and tried to summarize it into our own process. What worked for our organization’s size and product might not work “as is” for yours, but we hope it will help you get started with user tests or maybe serve as an inspiration for improvements.</p>
+<p>When we presented Lean Feedback for the first time at the <a href="http://uxday.flupa.eu/">FLUPA UX days</a> (a French UX conference) in June 2016, we were thrilled to see how the audience applied and adapted the workshop in their respective organizations. So let us know what you think of it and how it worked for you!</p>
+<h2 id="bonus">Bonus</h2>
+<p>If you want to go further, we recommend our favorite books:</p>
+<ul>
+<li><a href="http://leanuxbook.com/">Lean UX</a>, Jeff Gothelf with Josh Seiden</li>
+<li>Running Lean, Ash Maurya</li>
+<li><a href="http://momtestbook.com/">The Mom Test</a>, Rob Fitzpatrick</li>
+<li>Inspired, Marty Cagan</li>
+<li><a href="http://www.thesprintbook.com/">Sprint</a>, Jake Knapp</li>
+<li>Value Proposition Design, Alex Osterwalder</li>
+</ul>
+<p>And this <a href="https://www.youtube.com/watch?v=5azTk_QY9kY">excellent video from Arthur Bodolec</a>.</p>
+<p>If you want to reach out, feel free to connect with us at <a href="https://twitter.com/guillaumebruere">@guillaumebruere</a> and <a href="https://twitter.com/leamendesign">@Leamendesign</a> or tweet this article with the #LeanFeedback tag :)</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Nov 30, 2016</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/design/">design</a>
+
+  <a class="label label-primary" href="/tag/product/">product</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the authors</h5>
+
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Guillaume Bruere
+      <span class="multiple">Product Manager</span>
+    </h4>
+
+    
+    
+    
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Léa Mendes Da Silva
+      <span class="multiple">Product Designer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/Leadesign">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/LeaMendesign">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+                </div>
+                
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Do you speak PrestaShop? – September 2016 edition</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Do you speak PrestaShop? – September 2016 edition" />
+<meta property="og:description" content="Here is the latest report to inform you of what happened on the PrestaShop translation project on Crowdin in September." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2016/do-you-speak-prestashop-sept-2016-edition/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2016-10-19T06:09:47+02:00" />
+    <meta property="article:modified_time" content="2016-10-19T06:09:47+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Do you speak PrestaShop? – September 2016 edition"/>
+<meta name="twitter:description" content="It&#39;s time to get busy with 1.7 translations!"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Do you speak PrestaShop? – September 2016 edition</h1>
+              
+                <h3 class="post-subtitle">It&#39;s time to get busy with 1.7 translations!</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/7910738"
+         alt="Alex Even's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Alex Even</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Oct 19, 2016
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Do&#43;you&#43;speak&#43;PrestaShop%3F&#43;%E2%80%93&#43;September&#43;2016&#43;edition&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fdo-you-speak-prestashop-sept-2016-edition%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fdo-you-speak-prestashop-sept-2016-edition%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Here is the latest report to inform you of what happened on the <a href="https://crowdin.com/project/prestashop-official">PrestaShop translation project on Crowdin</a> in September.</p>
+<h2 id="project-news">Project news</h2>
+<h3 id="get-ready-with-17-translations">Get ready with 1.7 translations</h3>
+<p>The 1.7 project is moving forward with the recent release of a <a href="http://build.prestashop.com/news/prestashop-1-7-RC2/">second release candidate</a>. As things evolve, we&rsquo;re getting closer to a 1.7 final release. So now is a good time to get involved in the translation of this version, <a href="https://crowdin.com/project/prestashop-official">join us on Crowdin</a> to translate PrestaShop in your own language! :)</p>
+<h3 id="translations-for-prestashop-17">Translations for PrestaShop 1.7</h3>
+<p>There have been some strings movements in 1.7. Some new strings appeared, correcting old ones who were removed from the project. We are still modifying some translations domains as well, so strings are moving from the &ldquo;messages&rdquo; folder to more relevant ones. All this have an impact on the project, modifying percentages of completion for some folders or the whole project.
+Even though some modifications are still to come, the strings should stabilize in the coming weeks.</p>
+<h3 id="prestashop-installation-in-danish">PrestaShop installation in Danish</h3>
+<p>We&rsquo;ve also added the Danish language to the installer of PrestaShop 1.7. From now on, right from the start, you will be able to install your shop in Danish and retrieve data in Danish (while previously it was all in English - for instance, order statuses).
+The translation isn&rsquo;t complete and does not take place on Crowdin, but works with <a href="https://github.com/PrestaShop/PrestaShop/tree/develop/install-dev/langs/da/data">files hosted on GitHub</a>.
+If you want to help further translating in Danish, you can contribute directly on GitHub, or, if you have no clue as to how to do it, contact us at <a href="mailto:translation@prestashop.com">translation@prestashop.com</a>. We&rsquo;d be happy to help :)</p>
+<p>The installer data can be completed and/or added in other languages too, so if you&rsquo;re interested, don&rsquo;t hesitate to reach out!</p>
+<h3 id="16-translations-update">1.6 translations update</h3>
+<p>We&rsquo;ve had some issues with the 1.6 language pack update recently, and we&rsquo;re doing our best to provide you with updated translation!</p>
+<p>Now let&rsquo;s get back to our Crowdin project, and the full report of its activity in September:</p>
+<h2 id="a-few-stats">A few stats</h2>
+<ul>
+<li><strong>80 contributors</strong> joined the project this month, for a <strong>total of 3,229 members</strong> at the end of September. Welcome to all of them!</li>
+<li><strong>66 members</strong> were active on the project this month.</li>
+<li>A total of <strong>92,283 words have been translated</strong> (+252% ^) and <strong>89,869 validated</strong> (+ 135%).</li>
+<li>All this in <strong>33 different languages</strong> (+52%).</li>
+</ul>
+<p>Thank you for your involvement!</p>
+<h2 id="top-contributors">Top contributors</h2>
+<p>A lot of you are working every day on Crowdin to have PrestaShop available in many languages, and we can&rsquo;t thank you enough for your dedication! Here are the <strong>most active translators and proofreaders</strong> this September.</p>
+<h4 id="top-10-translators-in-september">Top 10 translators in September:</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Translator</th>
+<th>Language</th>
+<th># Words</th>
+</tr>
+</thead>
+</table>
+<ol>
+<li>| Alper Demir (alper-demir) | Turkish  | 16,032</li>
+<li>| A Petapouca (petapouca) | Galician | 8,320</li>
+<li>| Roy (rstvMacRoy)| Swedish | 5,228</li>
+<li>| Koral | Polish | 3,193</li>
+<li>| Patrik Lindblom (extendus) | Swedish | 2,709</li>
+<li>| DaoKakao | Russian | 2,609</li>
+<li>| maurizioag | Spanish, Venezuela | 2,400</li>
+<li>| Monika (monikaraciunaite) | Lithuanian | 2,144</li>
+<li>| transmetent | Catalan | 1,995</li>
+<li>| eleazar | German | 1,994</li>
+</ol>
+<h4 id="top-10-proofreaders-in-september">Top 10 proofreaders in September:</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Proofreader</th>
+<th>Language</th>
+<th># Words</th>
+</tr>
+</thead>
+</table>
+<ol>
+<li>| Morten Borg (mortenborg) | Danish | 22,321</li>
+<li>| A Petapouca (petapouca) | Galician | 20,778</li>
+<li>| Alper Demir (alper-demir) | Turkish  | 20,626</li>
+<li>| Patrik Lindblom (extendus) | Swedish | 5,833</li>
+<li>| SkaZun (raidhunters) | Ukrainian | 2,869</li>
+<li>| DaoKakao | Russian | 2,609</li>
+<li>| Gytis Šk (gytis) | Lithuanian | 1,995</li>
+<li>| Enzo Ferrara (ferribbotte) | Italian | 1,671</li>
+<li>| Cha (cafetango) | Chinese Traditional | 1,616</li>
+<li>| lolypop000 | Slovenian | 1,589</li>
+</ol>
+<p><strong>A big applause to them!</strong> And welcome to our new top contributors!</p>
+<h2 id="complete-translations">Complete translations</h2>
+<h4 id="fully-translated-languages">Fully translated languages</h4>
+<p>At the end of September, PrestaShop 1.6.1 was fully available (= 100% translated and validated) in <strong>14 languages</strong>:</p>
+<ul>
+<li>Bulgarian</li>
+<li>Croatian</li>
+<li>Czech</li>
+<li>Dutch</li>
+<li>English</li>
+<li>French</li>
+<li>Indonesian</li>
+<li>Lithuanian</li>
+<li>Norwegian</li>
+<li>Persian</li>
+<li>Russian</li>
+<li>Slovak</li>
+<li>Slovenian</li>
+<li>Swedish</li>
+</ul>
+<h4 id="98-99-translated-languages">98-99% translated languages</h4>
+<p>PrestaShop was also <em>almost</em> fully translated (and/or validated) in these 9 languages:</p>
+<ul>
+<li>German</li>
+<li>Greek</li>
+<li>Italian</li>
+<li>Polish</li>
+<li>Portuguese</li>
+<li>Portuguese, Brazilian</li>
+<li>Romanian</li>
+<li>Spanish</li>
+<li>Vietnamese</li>
+</ul>
+<p>A little bit of work and these languages can be 100% translated and validated too! If you feel like you want to help, <a href="https://crowdin.com/project/prestashop-official">join the project</a>!</p>
+<h2 id="languages-with-the-best-evolution">Languages with the best evolution</h2>
+<p>In comparison with August 2016, the following languages had the best progress in September:</p>
+<p>(these numbers are mostly issued from the progress of the 1.7 project, as this is where most of the work took place this month.)</p>
+<ul>
+<li><strong>Azerbaijani</strong> (+25% to reach 10% translated in 1.7)</li>
+<li><strong>Albanian</strong> (+17% to reach 21% translated in 1.7)</li>
+<li><strong>Galician</strong> (+10% to reach 74% translated in 1.6)</li>
+<li><strong>Danish</strong> (+19% to reach 93% translated in 1.7)</li>
+<li><strong>Polish</strong> (+4% to reach 98% translated in 1.7)</li>
+</ul>
+<p><img src="/assets/images/2016/10/Build_Crowdin_progress_Sept16.png" alt="September 2016 best translation progress"></p>
+<p>Other languages performed well like Swedish, Turkish, Russian, and Catalan. Thanks to all the contributors!</p>
+<p>Of course, this is highlighting the languages that made some progress with new translations; but it doesn&rsquo;t mean that the languages that aren&rsquo;t mentioned here aren&rsquo;t active. Indeed, some editing and rewriting could be going on, but the % of translation wouldn&rsquo;t be modified (since it&rsquo;s working on strings that are already translated). So let&rsquo;s not forget about the work of these proofreaders! Thank you too!</p>
+<h2 id="languages-that-need-more-proofreaders">Languages that need (more) proofreaders</h2>
+<p>A translated string will not be available in PrestaShop as long as it is not validated. For this reason, it’s important we should keep a good level of validated strings vs. translated strings, to make sure everyone benefits from the latest translations!</p>
+<p>At the end of September, 7 languages would still benefit from more proofreading:</p>
+<ul>
+<li>Ukrainian (100% vs 68%)</li>
+<li>Arabic (54% vs 28%)</li>
+<li>Galician (74% vs 49%)</li>
+<li>Turkish (100% translated vs 77% validated - getting better every month!)</li>
+<li>Greek (99% translated vs 81% validated)</li>
+<li>Finnish (99% translated vs 83% validated)</li>
+</ul>
+<p><img src="/assets/images/2016/10/Build_Crowdin_proofreading_Sept16.png" alt="September 2016 best translation progress"></p>
+<p>If you wish to help to proofread what has been translated, please <a href="https://crowdin.com/profile/alex-even">contact me on Crowdin</a> with the language you’d like to proofread. We need your help!</p>
+<p>If you haven’t joined us on Crowdin yet, <a href="https://crowdin.com/project/prestashop-official">it&rsquo;s never too late</a>!</p>
+<p>If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let us know: we’ll include a word about it in the next monthly report.</p>
+<p>Do you have a question, a remark? Don’t hesitate to leave a comment. See you next month!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Oct 19, 2016</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/translation/">translation</a>
+
+  <a class="label label-primary" href="/tag/i18n/">i18n</a>
+
+  <a class="label label-primary" href="/tag/l10n/">l10n</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Alex Even
+      <span>Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/AlexEven">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/821016-alex-even">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/alex-even">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/AlexHarryEven">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

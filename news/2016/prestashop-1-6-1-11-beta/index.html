@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Beta version of PrestaShop 1.6.1.11 - An ASM-focused release</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Beta version of PrestaShop 1.6.1.11 - An ASM-focused release" />
+<meta property="og:description" content="It has been in the pipeline for a while, it’s now official, PrestaShop 1.6.1.11 will ship soon, most notably with some patches concerning the advanced stock management." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2016/prestashop-1-6-1-11-beta/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2016-12-22T10:00:00+01:00" />
+    <meta property="article:modified_time" content="2016-12-22T10:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Beta version of PrestaShop 1.6.1.11 - An ASM-focused release"/>
+<meta name="twitter:description" content="Help us test our many fixes for Advanced Stock Management"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Beta version of PrestaShop 1.6.1.11 - An ASM-focused release</h1>
+              
+                <h3 class="post-subtitle">Help us test our many fixes for Advanced Stock Management</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/9074610?v=3&amp;s=400"
+         alt="Alex Sampaio's photo">
+  
+      
+
+      <img class="img-circle" src="https://avatars1.githubusercontent.com/u/1053622?v=3&amp;s=400"
+         alt="Thierry Marianne's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Alex Sampaio</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">Thierry Marianne</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Dec 22, 2016
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Beta&#43;version&#43;of&#43;PrestaShop&#43;1.6.1.11&#43;-&#43;An&#43;ASM-focused&#43;release&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fprestashop-1-6-1-11-beta%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fprestashop-1-6-1-11-beta%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>It has been in the pipeline for a while, it&rsquo;s now official, PrestaShop 1.6.1.11 will ship soon, most notably with some patches concerning the advanced stock management.</p>
+<p class="text-center">
+  <a href="https://download.prestashop.com/download/old/prestashop_1.6.1.11-beta.zip" class="btn btn-lg btn-success">Try 1.6.1.11 beta now!</a>
+</p>
+
+<p><strong>In beta at first</strong>, it will allow you to judge the stability of this release, and of the important fixes that have been applied to this version. <strong>So your feedback is really important to us!</strong></p>
+
+
+
+<div class="alert alert-important"><h4><i class="icon-fire"></i>
+        Important
+    </h4>You should not use this beta version in production.
+</div>
+
+<h2 id="reorganization-of-advanced-stock-management-screen">Reorganization of advanced stock management screen</h2>
+<p>We have simplified the views of advanced stock management, to bring more consistency.</p>
+<h4 id="stock-management">Stock management</h4>
+<p>This tab now only displays products for which advanced stock management is enabled. This makes it impossible to add stock to ineligible products.</p>
+<p>Besides, products transfers and stock line removals are only allowed with the <code>id_stock</code> parameter, which prevents errors linked to stock movements.</p>
+<p><img src="/assets/images/2016/12/asm-remove.png" alt="Stock management"></p>
+<h4 id="stock-movement">Stock movement</h4>
+<p>In this tab, a few changes:</p>
+<ul>
+<li>we have fixed movement order: movements are now proposed from the newest to the oldest.</li>
+<li>we have fixed the icons display.</li>
+</ul>
+<p><img src="/assets/images/2016/12/asm-stock-movement.png" alt="Stock movement"></p>
+<h4 id="instant-stock-status">Instant stock status</h4>
+<p>This tab is the one that has been the least affected by these fixes, only columns with wrong outputs have been corrected.</p>
+<p>Products are listed by combinations, with stock quantities (<code>physical</code> and <code>usable</code>) which are now valid.</p>
+<p>We removed the <code>real quantity</code> column altogether: it was supposed to take supply orders into account, which in fact were never linked to stock quantities. So the column was simply useless in this state.</p>
+<p><img src="/assets/images/2016/12/asm-stock-instant.png" alt="Instant stock status"></p>
+<h4 id="supply-orders">Supply orders</h4>
+<p>With regards to supplier orders, a bug related to status changes (specifically the <code>completely received</code> status) has been fixed.<br/>
+Previously, stock quantities were not updated in physical receipts.<br/>
+Now, when an order is fully received, stock movement is added to the history and stocks are updated properly!</p>
+<p><img src="/assets/images/2016/12/asm-supply-order.png" alt="Supply orders"></p>
+<h2 id="see-github--forge">See Github &amp; Forge</h2>
+<p>All the changes that have been made to advanced stock management can be found here: <a href="https://github.com/PrestaShop/PrestaShop/pull/7117">#7117</a>.</p>
+<p>This PR fixes a lot of Forge issues! Here are some of them:</p>
+<ul>
+<li>Can&rsquo;t remove stock in ASM: <a href="http://forge.prestashop.com/browse/PSCSX-3476">PSCSX-3476</a>, <a href="http://forge.prestashop.com/browse/PSCSX-6823">PSCSX-6823</a>, <a href="http://forge.prestashop.com/browse/PSCSX-8599">PSCSX-8599</a></li>
+<li>Physical &amp; usable quantities values aren&rsquo;t good: <a href="http://forge.prestashop.com/browse/PSCSX-5991">PSCSX-5991</a>, <a href="http://forge.prestashop.com/browse/PSCSX-7135">PSCSX-7135</a></li>
+<li>ASM supply orders didn&rsquo;t update the inventory (completely receive): <a href="http://forge.prestashop.com/browse/PSCSX-6628">PSCSX-6628</a>, <a href="http://forge.prestashop.com/browse/PSCSX-6894">PSCSX-6894</a>, <a href="http://forge.prestashop.com/browse/PSCSX-7549">PSCSX-7549</a></li>
+</ul>
+<h2 id="remember">Remember</h2>
+<p>These patches focus on improving the display and edition of stocks. So they don&rsquo;t solve every other problems that advanced stock management might have.</p>
+<p>Ideally, you should enable advanced stock management only on new products, or on products which do not have an order in progress. Otherwise, a problem of consistency between the product page (available quantity) and the stock page (real quantity) is known to happen.</p>
+<p>To solve this consistency problem, you&rsquo;ll have to process all open customer orders that were created before you activated ASM.</p>
+<ol>
+<li>To do so, it is important you use (or create) an order status that considers the products as shipped or delivered, then switch the current orders to this new status.</li>
+<li>This will remove the reservation of the products but won&rsquo;t decrease the physical stock since no warehouse was attached to the order at that time. So you might then have to adjust your physical quantity.</li>
+</ol>
+<h2 id="how-to-help-us">How to help us</h2>
+<p>You can test this release, <strong>only in a test environment</strong> and tell us what works and what doesn&rsquo;t.<br/>
+You can open a <a href="http://forge.prestashop.com">Forge issue</a> and flag your problem with <code>advanced_stock_management</code> label, also, you can  give us your impression by reacting to this post.</p>
+<p><strong>We hope you&rsquo;ll like these fixes!</strong></p>
+<p class="text-center">
+  <a href="https://download.prestashop.com/download/old/prestashop_1.6.1.11-beta.zip" class="btn btn-lg btn-success">Try 1.6.1.11 beta now!</a>
+</p>
+
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Dec 22, 2016</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/advanced-stock-management/">advanced-stock-management</a>
+
+  <a class="label label-primary" href="/tag/patch/">patch</a>
+
+  <a class="label label-primary" href="/tag/1.6/">1.6</a>
+
+  <a class="label label-primary" href="/tag/1.6.1.x/">1.6.1.x</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the authors</h5>
+
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Alex Sampaio
+      <span class="multiple">Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/aleeks">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/alexsampaio_fr">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="http://alexsampaio.fr/">
+        <i class="icon-home"></i> Website
+      </a>
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Thierry Marianne
+      <span class="multiple">Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/thierrymarianne">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+                </div>
+                
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

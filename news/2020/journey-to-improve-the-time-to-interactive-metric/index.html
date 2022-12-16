@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>A journey to improve the Time To Interactive metric in Classic Theme</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="A journey to improve the Time To Interactive metric in Classic Theme" />
+<meta property="og:description" content="The project Core Web Vitals from Google has announced that loading time and performance will have an impact on the website ranking in search results. Google mentions lazy loading in their suggestions. Lazy loading will be available on Classic Theme in version 1.7.8 thanks to Progi1984 and it will definitely improve both user experience and loading time on your site!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2020/journey-to-improve-the-time-to-interactive-metric/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2020-07-21T09:00:00+02:00" />
+    <meta property="article:modified_time" content="2020-07-21T09:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="A journey to improve the Time To Interactive metric in Classic Theme"/>
+<meta name="twitter:description" content="When the lazy loading allow us to improve the LightHouse Score"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">A journey to improve the Time To Interactive metric in Classic Theme</h1>
+              
+                <h3 class="post-subtitle">When the lazy loading allow us to improve the LightHouse Score</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/1533248"
+         alt="Franck Lefèvre's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Franck Lefèvre</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jul 21, 2020
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=A&#43;journey&#43;to&#43;improve&#43;the&#43;Time&#43;To&#43;Interactive&#43;metric&#43;in&#43;Classic&#43;Theme&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fjourney-to-improve-the-time-to-interactive-metric%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fjourney-to-improve-the-time-to-interactive-metric%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>The project <a href="https://webmasters.googleblog.com/2020/05/evaluating-page-experience.html">Core Web Vitals</a> from Google has announced that loading time and performance will have an impact on the website ranking in search results. Google mentions lazy loading in their suggestions. Lazy loading will be available on Classic Theme in version 1.7.8 thanks to <a href="https://github.com/Progi1984">Progi1984</a> and it will definitely improve both user experience and loading time on your site!</p>
+<h2 id="what-is-lazy-loading-">What is lazy loading ?</h2>
+<p>Lazy loading is a technique that defers loading of non-critical resources at page load time. Instead, these non-critical resources are loaded only when needed. For example, images which are at the bottom of the page are less critical than images at the top of the page and should consequently be loaded later.</p>
+<p>This feature used to be provided by third party plugins or modules but is now supported natively in all modern browsers.</p>
+<h2 id="how-can-i-enable-native-lazy-loading-on-my-theme-">How can I enable native lazy loading on my theme ?</h2>
+<p>Browsers use the <code>loading</code> attribute on the <code>&lt;img&gt;</code> tag to defer loading of images that are off-screen until the user scrolls near them. Consequently on all your <code>&lt;img&gt;</code> tags, you must set a <code>loading</code> attribute with value <code>lazy</code>. And it&rsquo;s done.</p>
+<h3 id="what-browsers-support-this-feature-">What browsers support this feature ?</h3>
+<p>This information can be found on multiple sources, such as &ldquo;<a href="https://caniuse.com/#feat=loading-lazy-attr">Can I Use</a>&rdquo;.</p>
+<p><img src="/assets/images/2020/07/lazy-loading-support.png" alt="Lazy Loading Support"></p>
+<p>In 2020, native lazy loading is enabled on 68% of used browsers. And if the feature is not active on the browser, images will be loaded as usual.</p>
+<h2 id="prestashop-classic-theme-performance-analysis">PrestaShop Classic Theme performance analysis</h2>
+<p>At first, we considered using <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a> which is an open-source, automated tool for improving the quality of web pages. But after a few attempts, we encountered an <a href="https://github.com/GoogleChrome/lighthouse/issues/11071">issue</a> in Lighthouse that prevented us to do so. It turns out the detection of lazy loading images is only performed in heavy pages (<a href="https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/renderer/core/frame/settings.json5;drc=e8f3cf0bbe085fee0d1b468e84395aad3ebb2cad;l=971-1003?originalUrl=https:%2F%2Fcs.chromium.org%2Fchromium%2Fsrc%2Fthird_party%2Fblink%2Frenderer%2Fcore%2Fframe%2Fsettings.json5">min 5000px</a>).</p>
+<p>Core developer <a href="https://github.com/Progi1984">Progi1984</a> chose to use the Google Chrome console and its Network tab in order to show you the performances evolution before and after lazy loading usage.</p>
+<p>This test is based on the New Products page with 50 products (and so 50 images minimum) per page.</p>
+<p>The benchmark is performed on <code>develop</code> and <code>lazyloading</code> branches.</p>
+<p>First scenario is performed against <code>develop</code> branch.</p>
+<p>Two measures are performed:</p>
+<ul>
+<li>the first on desktop mode with no throlling</li>
+</ul>
+<p><img src="/assets/images/2020/07/lazy-loading-test-before-desktop-no-throlling.png" alt="Test without Lazy Loading on desktop mode with no throlling"></p>
+<ul>
+<li>the second on emulated device &ldquo;iPad Pro&rdquo; mode with Fast 3G throlling</li>
+</ul>
+<p><img src="/assets/images/2020/07/lazy-loading-test-before-mobile-3G-throlling.png" alt="Test without Lazy Loading on emulated device &amp;ldquo;iPad Pro&amp;rdquo; mode with Fast 3G throlling"></p>
+<p>Second scenario happens on <code>lazyloading</code> branch.</p>
+<p>Two measures are performed again:</p>
+<ul>
+<li>the first on desktop mode with no throlling</li>
+</ul>
+<p><img src="/assets/images/2020/07/lazy-loading-test-after-desktop-no-throlling.png" alt="Test with Lazy Loading on desktop mode with no throlling"></p>
+<ul>
+<li>the second on emulated device &ldquo;iPad Pro&rdquo; mode with Fast 3G throlling</li>
+</ul>
+<p><img src="/assets/images/2020/07/lazy-loading-test-after-mobile-3G-throlling.png" alt="Test with Lazy Loading on emulated device &amp;ldquo;iPad Pro&amp;rdquo; mode with Fast 3G throlling"></p>
+<p>A gain of 21% to 28% can be observed with lazyloading.</p>
+<p>You are left to imagine the possible gains for users who browse your websites all around the world, with different connections profiles.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>As a developer or theme provider, implementing this feature is a very good investment. The implementation is easy and the gain is huge is all we have to say.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jul 21, 2020</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/development/">development</a>
+
+  <a class="label label-primary" href="/tag/ux/">ux</a>
+
+  <a class="label label-primary" href="/tag/theme/">theme</a>
+
+  <a class="label label-primary" href="/tag/1.7.8/">1.7.8</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Franck Lefèvre
+      <span>Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/Progi1984">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/Progi1984">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/Progi1984">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

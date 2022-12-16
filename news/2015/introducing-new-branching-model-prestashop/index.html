@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Introducing a new branching model for PrestaShop</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Introducing a new branching model for PrestaShop" />
+<meta property="og:description" content="PrestaShop has recently moved towards a more semantic versioning scheme, which is impacting the way we release new versions, and how we work on our GitHub repositories. If you want to contribute code, here’s a full explanation on how you should do it from now on." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2015/introducing-new-branching-model-prestashop/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2015-08-27T18:13:37+02:00" />
+    <meta property="article:modified_time" content="2015-08-27T18:13:37+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Introducing a new branching model for PrestaShop"/>
+<meta name="twitter:description" content="Do the right thing!"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Introducing a new branching model for PrestaShop</h1>
+              
+                <h3 class="post-subtitle">Do the right thing!</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars1.githubusercontent.com/u/1525636"
+         alt="Julien Bourdeau's photo">
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/7910738"
+         alt="Alex Even's photo">
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749"
+         alt="Xavier Borderie's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Julien Bourdeau</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">Alex Even</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">Xavier Borderie</div>
+        
+          <div class="author-display-role">Open Source Advocate</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Aug 27, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Introducing&#43;a&#43;new&#43;branching&#43;model&#43;for&#43;PrestaShop&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fintroducing-new-branching-model-prestashop%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fintroducing-new-branching-model-prestashop%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>PrestaShop has recently moved towards a <a href="http://build.prestashop.com/news/a-more-semantic-versioning-scheme/">more semantic versioning scheme</a>, which is impacting the way we release new versions, and how we work on our GitHub repositories. If you want to contribute code, here&rsquo;s a full explanation on how you should do it from now on.</p>
+<p>Basically, we follow the <a href="http://semver.org/">SemVer 2.0.0 specification</a>, which means that, as of version 1.6.1.0:</p>
+<ul>
+<li>&lsquo;patch&rsquo; releases include bug fixes only. This means version 1.6.1.1 (<a href="http://build.prestashop.com/news/1611-maintenance-release/">already released</a>), and potentially, versions 1.6.1.2, 1.6.1.3 and so on.</li>
+<li>&lsquo;minor&rsquo; releases introduce retrocompatible, new features, along with bug fixes. This means that we could potentially have version 1.6.2.0, 1.6.3.0, and so on.</li>
+<li>&lsquo;major&rsquo; releases introduce new features that can break backward compatibility, along with retrocompatible, new features and bug fixes. The means that we could potentially have versions 1.7.0.0, 1.8.0.0, and so on.</li>
+</ul>
+<p>Because we changed the way we manage our version numbers, we had to adapt our workflow to match these requirements. Please make sure you follow our recommendations in this article, in order to place your pull requests on the correct branch!</p>
+<p>If you, as a contributor, want to submit a pull request, you have to choose the branch you will work with wisely, since it will determine the branch you will fork and set as a destination of your pull request.</p>
+<h2 id="tldr">TL;DR</h2>
+<p>Long story short:</p>
+<ul>
+<li>Bug fix &gt; next &lsquo;patch&rsquo; branch (currently: the &lsquo;1.6.1.x&rsquo; branch).</li>
+<li>Backward compatible new feature &gt; next &lsquo;minor&rsquo; branch (always: the &lsquo;develop&rsquo; branch).</li>
+<li>Backward <strong>incompatible</strong> new feature &gt; next &lsquo;major&rsquo; branch (always: the &lsquo;develop&rsquo; branch).</li>
+</ul>
+<p>To make it simple: the &lsquo;develop&rsquo; branch results in a minor or a major version depending on the compatibility of its new features.</p>
+<p>Other branches might exist. They are used by the PrestaShop Core team, and you should not use them unless asked by the team.
+<strong>Remember not to use &lsquo;1.6&rsquo; branch anymore</strong>, nor the &lsquo;master&rsquo; branch.</p>
+<p>The diagram below should help you choose the correct branch for your pull request:</p>
+<p>![Choose your branch]({{ &lsquo;/assets/images/2015/08/prestashop-choose-branch.png&rsquo; | prepend: site.baseurl }})</p>
+<h2 id="prestashops-new-branching-model">PrestaShop&rsquo;s new branching model</h2>
+<h3 id="a-bit-of-history">A bit of history</h3>
+<p>Before we adopted the <a href="http://build.prestashop.com/news/a-more-semantic-versioning-scheme/">current SemVer-like versioning</a>, we used to have only one branch, &lsquo;1.6&rsquo;, and developers would commit whatever they had to do on it. We would then make a release out of it, including all of its changes (new feature, bug fixes, etc.) in the new version.</p>
+<p>This was simply the legacy of our days when we used the Subversion system, which we had been using for years. It turned out confusing and not very stable, resulting in inconsistent version numbers.</p>
+<p>We looked around to understand how other open-source projects manage their code with Git, and we came up with the following model.</p>
+
+
+
+<div class="alert alert-info"><h4><i class="icon-pin"></i>
+        Info
+    </h4>I&rsquo;m writing this article in August 2015, as PrestaShop 1.6.1.1 just came out. All version numbers and branch names are based on the current situation. They might have changed as you&rsquo;re reading this article, so be sure to check what the current situation is.
+</div>
+
+<h3 id="two-branches-to-understand">Two branches to understand</h3>
+<p>Two main branches will now live side by side: &lsquo;develop&rsquo; for the next minor/major release, and the latest minor release&rsquo;s branch (currently: &lsquo;1.6.1.x&rsquo;).</p>
+<p>The &lsquo;develop&rsquo; branch is always the next release. Depending on the PrestaShop roadmap, it can be the next minor version or the next major version. If you don&rsquo;t know where to commit, it&rsquo;s always safer to commit to this branch.</p>
+<p>The &lsquo;1.6.1.x&rsquo; branch is the latest version released (as of August 2015). It should be used to apply bug fixes for future &lsquo;patch&rsquo; versions.</p>
+<p>When contributing, you have to choose which branch to fork according to what you want to do. The following table shows what you can do in each branch.</p>
+<table>
+  <tr>
+    <th rowspan="2">What can be done<br></th>
+    <th>patch</th>
+    <th>minor</th>
+    <th>major</th>
+  </tr>
+  <tr>
+    <td>1.6.1.x</td>
+    <td colspan="2">develop<br></td>
+  </tr>
+  <tr>
+    <td>Fix bugs</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+    <tr>
+    <td>Fix security issues</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Fix wording issues</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Add backward compatible new features</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Add new database tables/rows</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Mark anything as 'deprecated'</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Add backward **incompatible** new features</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Remove existing feature(s)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Remove anything marked as 'deprecated'</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Change/remove existing database tables/rows</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>x</td>
+  </tr>
+</table>
+<p>Note that the Core team uses the same decision table for its own pull requests.</p>
+<h3 id="the-model">The model</h3>
+<p>I heard that <em>a picture is worth a thousand words</em>, I hope they didn&rsquo;t lie to me:</p>
+<p>![PrestaShop Branching Model]({{ &lsquo;/assets/images/2015/08/prestashop-branching-model.png&rsquo; | prepend: site.baseurl }})</p>
+<p><strong>N.B.:</strong> No one should commit directly on PrestaShop&rsquo;s &lsquo;develop&rsquo; and release branches. Instead, you should submit pull requests based on your own fork of these forks. This is not shown on the graph for simplicity&rsquo;s sake.</p>
+<h3 id="about-the-next-release">About the next release</h3>
+<p>The next release of PrestaShop is being worked on in the &lsquo;develop&rsquo; branch. Depending on whether it contains changes which are backward compatible or not, it may result in a minor <strong>or</strong> a major release.</p>
+<p>If your pull request breaks backward compatibility, the Core Team can only merge your changes if the next release is a major one. There is therefore a risk that your branch may become a long-running branch, and at some point it might bring some issues: merge conflicts, outdated contribution, already-fixed issue, target branch has changed from &lsquo;1.6.1.x&rsquo; to &lsquo;1.6.2.x&rsquo;, etc.</p>
+<p>Before making such a ground-breaking pull request, check the planned version number for the next release from the &lsquo;develop&rsquo; branch. You can use the <a href="https://github.com/PrestaShop/PrestaShop/blob/develop/install-dev/install_version.php#L27">install_version.php file</a> to see what kind of version is the next version (if it&rsquo;s a major one, go ahead!) &ndash; it is updated according to PrestaShop&rsquo;s roadmap. Make sure you <a href="https://git-scm.com/book/en/v2/Git-Branching-Rebasing">rebase your branch</a> often in order to keep it up to date!</p>
+<h3 id="maintaining-multiple-minor-versions">Maintaining multiple minor versions</h3>
+<p>At some point there will be many simultaneous release branches. For example, 1.6.1.x next to 1.6.2.x, next to 1.6.3.x.</p>
+<p>We don&rsquo;t intend to maintain multiple versions of PrestaShop at the same time, but by keep those branches, if a major bug or security issue appears, we can easily and quickly make a new &lsquo;patch&rsquo; release for many minor versions. This will definitely improve our process for <a href="https://www.prestashop.com/blog/en/prestashop-security-release/">security patches</a>.</p>
+<h2 id="faq">FAQ</h2>
+<h4 id="i-want-to-fix-a-bug-it-can-be-merged-into-all-the-branches-which-branch-should-i-use">I want to fix a bug. It can be merged into all the branches, which branch should I use?</h4>
+<p>This isn&rsquo;t an easy question, you&rsquo;ll have to make the call, as it depends on what kind of bug you are fixing.</p>
+<p>If it&rsquo;s a small bug, it can probably be easily integrated in the next &lsquo;patch&rsquo; version. So, currently, that would be the &lsquo;1.6.1.x&rsquo; branch (check for yourself which is the latest stable version.</p>
+<p>If it&rsquo;s a massive bug, like on <code>PaymentModule.php</code>for instance, you might want to play it safe and include it in the next minor version, as it will probably require more testing. This goes to the &lsquo;develop&rsquo; branch.</p>
+<h4 id="i-want-to-change-some-wording-is-it-a-bug-fix">I want to change some wording, is it a bug fix?</h4>
+<p>If the change you want to make is really improving the user experience, and it cannot wait for a next major or minor release, then go ahead and do it on the current release&rsquo;s branch. We&rsquo;ll consider it as a bug fix.</p>
+<p>However, to make sure your wording is included in the <a href="http://crowdin.net/project/prestashop-official">translation project on Crowdin</a>, and for the sake of our workflow (and our sanity), it is better to submit it on the &lsquo;develop&rsquo; branch.</p>
+<h4 id="what-about-the-modules">What about the modules?</h4>
+<p>We&rsquo;ll keep the current way of working with modules. We use only 2 branches: &lsquo;master&rsquo; for stable release, and &lsquo;dev&rsquo; for the work in progress.</p>
+<p>If you want to <strong>contribute to a module, make your pull request on the &lsquo;dev&rsquo; branch.</strong> When doing so, please do not update the version number in your pull request.</p>
+<h4 id="why-is-the-16-branch-still-out-there">Why is the &lsquo;1.6&rsquo; branch still out there?</h4>
+<p>The &lsquo;1.6&rsquo; branch is no longer active. <strong>Please do not open a pull request on this branch.</strong></p>
+<p>The reason for its existence is pragmatic. We still have a lot of open pull requests on &lsquo;1.6&rsquo; branch which we need to rework in order to move them to our active branches.</p>
+<p>Deleting this branch would mean losing all these pull requests &ndash; GitHub doesn&rsquo;t make it possible to change the target branch of a PR (<a href="https://github.com/isaacs/github/issues/18">voice your opinion here</a>!). Because of this, we must manually port each PR onto the &lsquo;develop&rsquo; branch. As long as we are not done with this, the &lsquo;1.6&rsquo; branch will still be open. Eventually, it will disappear.</p>
+<h4 id="whats-the-point-of-the-master-branch">What&rsquo;s the point of the &lsquo;master&rsquo; branch?</h4>
+<p>As of today, we merge the latest stable release into &lsquo;master&rsquo;. This is a kind of safeguard, and some of our internal tools still rely on this branch. Its future is unsure though. Therefore, just like the &lsquo;1.6&rsquo; branch, please do not use the &lsquo;master&rsquo; branch either.</p>
+<h2 id="going-further">Going further</h2>
+<p>It you want to go further with branching models, you must read this legendary article from nvie.com: <a href="http://nvie.com/posts/a-successful-git-branching-model/">a-successful-git-branching-model</a>.</p>
+<p>Also, I particularly enjoyed Symfony&rsquo;s versioning strategy and branching model. Fabien Potencier (Founder of Symfony) <a href="https://youtu.be/pAFdmBxmt5Y?t=10m30s">speaks about it in a keynote</a> &ndash; unfortunately it&rsquo;s in French. You can find similar information in English <a href="https://www.youtube.com/watch?v=pAFdmBxmt5Y&amp;feature=youtu.be&amp;t=10m30s">in this video</a>.</p>
+<p>We&rsquo;ll update you whenever a change occurs in our branching model. In the meantime, if you have any question, don&rsquo;t hesitate!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Aug 27, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/releases/">releases</a>
+
+  <a class="label label-primary" href="/tag/contributing/">contributing</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the authors</h5>
+
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Julien Bourdeau
+      <span class="multiple">Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/julienbourdeau">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/761923-julien-bourdeau">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/julienbourdeau">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/julienbourdeau">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Alex Even
+      <span class="multiple">Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/AlexEven">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/821016-alex-even">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/alex-even">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/AlexHarryEven">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Xavier Borderie
+      <span class="multiple">Open Source Advocate</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+                </div>
+                
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

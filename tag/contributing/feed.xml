@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 28 Nov 2016 08:09:10 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/contributing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PrestonBot has reached stable version</title>
-      <link>https://build.prestashop-project.org/news/prestonbot-reaches-stable-version/</link>
+      <link>https://build.prestashop-project.org/news/2016/prestonbot-reaches-stable-version/</link>
       <pubDate>Mon, 28 Nov 2016 08:09:10 +0100</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestonbot-reaches-stable-version/</guid>
+      <guid>https://build.prestashop-project.org/news/2016/prestonbot-reaches-stable-version/</guid>
       <description>Some weeks ago, we welcomed a new team member in the core team: Preston(Bot)!
 Today, I&amp;rsquo;m glad to announce that Preston(Bot) reaches his first stable version. Let&amp;rsquo;s see together the main features already available:
 Make the contribution easy again This is one of our main objective: make the contribution to PrestaShop easier, keeping our quality standards high.
@@ -21,10 +21,10 @@ Previously, we have described why we have introduced a pull request template and
     
     <item>
       <title>Introducing PrestonBot</title>
-      <link>https://build.prestashop-project.org/news/introducing-prestonbot/</link>
+      <link>https://build.prestashop-project.org/news/2016/introducing-prestonbot/</link>
       <pubDate>Mon, 26 Sep 2016 11:00:00 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/introducing-prestonbot/</guid>
+      <guid>https://build.prestashop-project.org/news/2016/introducing-prestonbot/</guid>
       <description>Some of you may have noticed that a few weeks ago, we have a new team member in the core team: Preston!
 PrestonBot aims to help both maintainers and contributors of PrestaShop. Let&amp;rsquo;s see together what he&amp;rsquo;s already able to do and what you may expect from him in the future.
 Be able to merge faster, with confidence We are continuously improving the way we work with GitHub, for instance we recently added a new mandatory pull request template:</description>
@@ -32,10 +32,10 @@ Be able to merge faster, with confidence We are continuously improving the way w
     
     <item>
       <title>Introducing a new branching model for PrestaShop</title>
-      <link>https://build.prestashop-project.org/news/introducing-new-branching-model-prestashop/</link>
+      <link>https://build.prestashop-project.org/news/2015/introducing-new-branching-model-prestashop/</link>
       <pubDate>Thu, 27 Aug 2015 18:13:37 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/introducing-new-branching-model-prestashop/</guid>
+      <guid>https://build.prestashop-project.org/news/2015/introducing-new-branching-model-prestashop/</guid>
       <description>PrestaShop has recently moved towards a more semantic versioning scheme, which is impacting the way we release new versions, and how we work on our GitHub repositories. If you want to contribute code, here&amp;rsquo;s a full explanation on how you should do it from now on.
 Basically, we follow the SemVer 2.0.0 specification, which means that, as of version 1.6.1.0:
 &amp;lsquo;patch&amp;rsquo; releases include bug fixes only. This means version 1.6.1.1 (already released), and potentially, versions 1.</description>

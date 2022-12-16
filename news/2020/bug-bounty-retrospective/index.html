@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Bug Bounty Program, the retrospective</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Bug Bounty Program, the retrospective" />
+<meta property="og:description" content="For several months, we experimented a Bug Bounty Program with the YesWeHack platform. Here is a retrospective, explaining why we did it, and what happened during this period." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2020/bug-bounty-retrospective/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2020-09-11T09:00:00+02:00" />
+    <meta property="article:modified_time" content="2020-09-11T09:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Bug Bounty Program, the retrospective"/>
+<meta name="twitter:description" content="When hunters make your business safer!"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Bug Bounty Program, the retrospective</h1>
+              
+                <h3 class="post-subtitle">When hunters make your business safer!</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/1462701?s=400&amp;v=4"
+         alt="Pierre Rambaud's photo">
+  
+      
+
+      <img class="img-circle" src="/assets/images/authors/prestashop-team.png"
+         alt="PrestaShop team's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Pierre Rambaud</div>
+        
+          <div class="author-display-role">Senior Core Developer</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">PrestaShop team</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Sep 11, 2020
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Bug&#43;Bounty&#43;Program%2C&#43;the&#43;retrospective&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fbug-bounty-retrospective%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fbug-bounty-retrospective%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>For several months, we experimented a Bug Bounty Program with the <a href="https://yeswehack.com">YesWeHack</a> platform. Here is a retrospective, explaining why we did it, and what happened during this period.</p>
+<h2 id="private-program">Private program</h2>
+<p>The security of software cannot be assessed unless it is tested by a lot of hunters.</p>
+<p>PrestaShop relies on a lot of dependencies, with hundreds of thousands lines of code, and this has been true since the very first versions.</p>
+<p>We considered that publishing a public program, available for all, in the first place was risky as it could bring a huge volume of duplicated reports and create frustration among hunters. That is why we chose a private program first.</p>
+<p>The benefit of the private program is to limit the number of hunters and manage the reporting flow. For each reported security issue, resources must be dedicated to understand it, reproduce it, build a patch, test the patch by the QA Team, etc. This can be quite expensive, so it is important to be able to adjust how many issues are reported thanks to the private program settings.</p>
+<p>The process can appear quite slow and boring but it is nevertheless necessary to leave no room for doubt.</p>
+<h2 id="public-program">Public program</h2>
+<p>After a few months running this private program, we noticed the number of reports had decreased significantly. We finally released the program to the public on the 23rd of July 2020.</p>
+<p>We thought that the public opening would bring in a huge volume of new reports, but this did not happen to our great surprise. It seems the hunters who participated in the private program helped us fix a large majority of security issues.</p>
+<p>At the time we write this article, only one report submitted after the opening of the program to the public has been validated.</p>
+<p>The big aim of having a Bug Bounty Program in public is to show everyone, and particularly our community, that our software can be trusted. We know it is secured because it has been tested by dozens of hunters and will be continuously tested by new hunters.</p>
+<h2 id="some-statistics">Some statistics</h2>
+<p>At the opening in March, more than <strong>70</strong> hunters were invited to the program.</p>
+<p>Since then, we received a total of <strong>98</strong> reports</p>
+<ul>
+<li>Invalid: <strong>4</strong></li>
+<li>Out of Scope: <strong>6</strong></li>
+<li>Informative: <strong>26</strong></li>
+<li>Duplicate: <strong>17</strong></li>
+<li>Won&rsquo;t fix: <strong>2</strong></li>
+<li>Valid: <strong>43</strong></li>
+<li>CVSS Score average: <strong>5.59</strong></li>
+</ul>
+<p>The following graphs cover the full period and highlight the reason why we decided to open the program to the public.
+Only valid reports are considered.</p>
+<p>The graph below is a representation of the number of reports we received during the period.</p>
+<p><a href="/assets/images/2020/09/bug-bounty-all-valid-reports.png"><img src="/assets/images/2020/09/bug-bounty-all-valid-reports.png" alt="Valid reports"></a></p>
+<p>Here is the representation of the CVSS3 Score results.</p>
+<p><a href="/assets/images/2020/09/bug-bounty-all-valid-cvss.png"><img src="/assets/images/2020/09/bug-bounty-all-valid-cvss.png" alt="CVSS3 Score"></a></p>
+<p>List of main vulnerabilities.</p>
+<p><a href="/assets/images/2020/09/bug-bounty-all-valid-types.png"><img src="/assets/images/2020/09/bug-bounty-all-valid-types.png" alt="Common vulnerabilities"></a></p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>There is no plan to modify the program in the short term. For now, the Security team of PrestaShop continues to examine incoming bug reports with dedication. We are quite happy to use YesWeHack and the platform is really smooth, elegant and make the security reports easier to manage than our old security mailing list.</p>
+<p>For next release, hunters will be notified automatically, so we are waiting for you hunters on <a href="https://yeswehack.com/programs/prestashop">YesWeHack platform</a>!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Sep 11, 2020</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/bug/">bug</a>
+
+  <a class="label label-primary" href="/tag/bounty/">bounty</a>
+
+  <a class="label label-primary" href="/tag/program/">program</a>
+
+  <a class="label label-primary" href="/tag/maintenance/">maintenance</a>
+
+  <a class="label label-primary" href="/tag/security/">security</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the authors</h5>
+
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Pierre Rambaud
+      <span class="multiple">Senior Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/PierreRambaud">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      PrestaShop team
+      <span class="multiple"></span>
+    </h4>
+
+    
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://prestashop-project.org">
+        <i class="icon-home"></i> Website
+      </a>
+    
+  
+
+
+                </div>
+                
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

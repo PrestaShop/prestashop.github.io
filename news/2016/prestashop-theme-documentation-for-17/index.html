@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop theme documentation first draft is out</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop theme documentation first draft is out" />
+<meta property="og:description" content="With PrestaShop 1.7 we completely rewrote the way shop theme works. Along with these changes, we intended to publish a full documentation that would help you create an amazing and creative new theme or adapt your theme to PrestaShop 1.7." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2016/prestashop-theme-documentation-for-17/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2016-04-25T09:00:00+02:00" />
+    <meta property="article:modified_time" content="2016-04-25T09:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="PrestaShop theme documentation first draft is out"/>
+<meta name="twitter:description" content="Read it and tell us what else you want to know"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop theme documentation first draft is out</h1>
+              
+                <h3 class="post-subtitle">Read it and tell us what else you want to know</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars1.githubusercontent.com/u/1525636"
+         alt="Julien Bourdeau's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Julien Bourdeau</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Apr 25, 2016
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;theme&#43;documentation&#43;first&#43;draft&#43;is&#43;out&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fprestashop-theme-documentation-for-17%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fprestashop-theme-documentation-for-17%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>With PrestaShop 1.7 we completely rewrote the way shop theme works.
+Along with these changes, we intended to publish a full documentation that would help you create an amazing and creative new theme or adapt your theme to PrestaShop 1.7.</p>
+<p>Throughout the development process we wrote <a href="/tag/starter-theme/">many articles</a> to keep you up-to-date with our progresses on the <em>StarterTheme</em>. We talked about the introduction of new features and also deprecation/removal of existing features.</p>
+<p>With the Starter Theme, we introduce many new ways of developing themes, we reorganized the whole directory, moved templates, changed module override folders and deleted assets. Hence there is no backward-compatibility with PrestaShop 1.5/1.6 themes.</p>
+<p>Obviously we had to provide documentation since all you already knew about theme development with prestashop might have changed. Don&rsquo;t worry, there is nothing crazy about it, it still relies on Smarty and (pretty much) the same front controller list. <strong>After 15 minutes you will feel at home again</strong>.</p>
+<p class="text-center">
+  <a href="https://github.com/PrestaShop/docs" class="btn btn-lg btn-default">Read PrestaShop Theme Documentation</a>
+</p>
+
+<h2 id="the-state-of-the-documentation">The state of the documentation</h2>
+<p>We wanted to publish the documentation as soon as possible, so today we made the <a href="https://github.com/PrestaShop/docs">GitHub repository</a> public. We hope you&rsquo;ll read it through and tell us what&rsquo;s missing and what else you&rsquo;d like to find in it.</p>
+<p>Please keep in mind that <strong>the content is far from being finished</strong> (is a documentation ever finished?).</p>
+<p>As of today, the documentation is a collection of text files, without any rendering system (see <a href="#adopting-sphynx-and-restructuredtext">below</a>).</p>
+<p>It includes <a href="https://github.com/PrestaShop/docs/tree/master/themes/templates/datasets/side-wide">JSON files</a>, which hold an example of the data passed to the templates like: <code>$customer</code>, <code>$page</code>, <code>$breadcrumb</code>, <code>$cart</code>&hellip; These data will be irrevocable when PrestaShop 1.7 final is released, and they will be maintained during the whole 1.7 life cycle. <strong>Trust these datasets</strong>.</p>
+<img style="border: 1px solid #CCC; padding: 10px;" src="/assets/images/2016/04/docs-repo.png">
+<h2 id="adopting-sphynx-and-restructuredtext">Adopting Sphynx and reStructuredText</h2>
+<p>We decided to move from <em>Atlassian Confluence</em> to <em>Sphynx</em> (at least for the developer documentation), and use <a href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">reStructuredText</a> files, available on our GitHub repository.</p>
+<blockquote>
+<p>reStructuredText is a lightweight markup language designed to be both (a) processable by documentation-processing software such as Docutils, and (b) easily readable by human programmers.
+&ndash; <a href="https://en.wikipedia.org/wiki/ReStructuredText">Wikipedia</a>)</p>
+</blockquote>
+<p>We now have a bunch of nice reStructuredText files, so we can enjoy the power of Git for our documentation: compared to the Confluence system, it&rsquo;s much more flexible.</p>
+<blockquote>
+<p>Sphinx converts reStructuredText files into HTML websites and other formats including PDF, EPub and man.</p>
+<p>reStructuredText is extensible, and Sphinx exploits its extensible nature through a number of extensions &ndash; for autogenerating documentation from source code, writing mathematical notation or highlighting source code, etc.
+&ndash; <a href="https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)">Wikipedia</a></p>
+</blockquote>
+<p>Then, of course, anyone can contribute through pull-requests on the GitHub repository. That is another big advantage compare to Confluence.</p>
+<p>Finally, this stack is also used for <a href="https://github.com/symfony/symfony-docs">Symfony documentation</a>, so if you&rsquo;re already a Symfony contributor: there is nothing new to learn. Easier for everybody, as we&rsquo;re using Symfony in PrestaShop 1.7.</p>
+<h2 id="how-to-contribute">How to contribute</h2>
+<p>Contribution guidelines can be easily summarized: <strong>Use the power of GitHub!</strong></p>
+<p>The documentation is fully managed on GitHub (exactly like this blog) so don&rsquo;t hesitate to open an issue or a pull-request.</p>
+<h4 id="if-you-want-more-details-about-something">If you want more details about something</h4>
+<p>Open an <a href="https://github.com/PrestaShop/docs/issues/new">issue</a> here and <strong>detail as much as possible</strong> what you are trying to do. You can also join us on <a href="https://gitter.im/PrestaShop/docs">Gitter</a>.</p>
+<h4 id="if-you-want-to-edit-the-doc">If you want to edit the doc</h4>
+<p>If you want to modify content or fix a typo, please do it through a pull-request. We will soon publish the guidelines for writing the doc :)</p>
+<h4 id="dont-use-workarounds">Don&rsquo;t use &ldquo;workarounds&rdquo;</h4>
+<p>If you are trying to do something in particular with your theme or module, <strong>please, please, please don&rsquo;t try to find a workaround on your own!</strong> Tell us about it on <a href="https://gitter.im/PrestaShop/docs">Gitter</a> (ping us) or open a <a href="https://github.com/PrestaShop/docs/issues/new">GitHub issue</a> where we can have a conversation about it. You are probably not the only one in the community who need this feature or this change of behavior.</p>
+<p>Enjoy!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Apr 25, 2016</li>
+
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Julien Bourdeau
+      <span>Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/julienbourdeau">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/761923-julien-bourdeau">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/julienbourdeau">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/julienbourdeau">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

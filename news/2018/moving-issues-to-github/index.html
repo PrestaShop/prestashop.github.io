@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>We are moving Issues to GitHub</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="We are moving Issues to GitHub" />
+<meta property="og:description" content="Next week, we will enable issues on PrestaShop project’s GitHub repository. This is going to be the new way to report bugs and to open feature requests. This way, the roadmap, issues, pull requests and source code will all be in the same platform." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2018/moving-issues-to-github/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2018-08-13T11:15:00+02:00" />
+    <meta property="article:modified_time" content="2018-08-13T11:15:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="We are moving Issues to GitHub"/>
+<meta name="twitter:description" content="A big move from the good old Forge in order to have everything in one place for everyone."/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">We are moving Issues to GitHub</h1>
+              
+                <h3 class="post-subtitle">A big move from the good old Forge in order to have everything in one place for everyone.</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/4619685?s=400&amp;v=4"
+         alt="Antoine Thomas's photo">
+  
+      
+
+      <img class="img-circle" src="/assets/images/authors/prestashop-team.png"
+         alt="PrestaShop team's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Antoine Thomas</div>
+        
+          <div class="author-display-role">Open Source Evangelist</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">PrestaShop team</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Aug 13, 2018
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=We&#43;are&#43;moving&#43;Issues&#43;to&#43;GitHub&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2018%2Fmoving-issues-to-github%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2018%2Fmoving-issues-to-github%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Next week, we will enable issues on <a href="https://github.com/PrestaShop/PrestaShop">PrestaShop project’s GitHub repository</a>. This is going to be the new way to report bugs and to open feature requests. This way, the roadmap, issues, pull requests and source code will all be in the same platform.</p>
+<h2 id="introducing-issues">Introducing issues</h2>
+<p>There will be two templates for creating issues: one for bug reports, and one for feature requests. Of course, please search if your issue has already been reported, before opening a new one.</p>
+<h3 id="bug-report">Bug report</h3>
+<p>As usual, a bug report must be detailed, include steps to reproduce, and eventually screenshots or other useful resources. That part doesn’t really change. For non developer people, you might have to learn a bit how to use Markdown to add style to your messages on GitHub, but you will see that this very easy. And that’s why it’s a great platform to develop a project. If you are not familiar with it, I recommend you to read the very interesting <a href="https://guides.github.com/features/issues/">Mastering Issues</a> and <a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a> documentations.</p>
+<p>There will be one place to create issue for the core and for the modules: everything has to be created on the main project, <a href="https://github.com/PrestaShop/PrestaShop">PrestaShop’s Core repository </a>. It should make it easy both for project maintainers and the community at large to track issues and then for developers and contributors to link them to pull requests.</p>
+<h3 id="feature-request">Feature request</h3>
+<p>If your ticket is not a bug, but instead you want to ask for a new feature, use the dedicated template. Same as for a bug, please give details about your idea, and do not hesitate to provide some mockups.</p>
+<h3 id="linking-issues-and-pull-requests">Linking issues and pull requests</h3>
+<p>If you are submitting a PR to fix an issue, don’t forget to mention it in the description or in the commit message. It’s easy, just add a reference to the number of the issue (e.g “#123” or Organisation/repository/#123) and GitHub will create a link.</p>
+<h2 id="steps-before-opening-the-issues-feature-on-github">Steps before opening the Issues feature on GitHub</h2>
+<p>Of course, the current Forge, based on Jira, will not be closed right away. Below is a checklist of different steps we need to complete in order to keep the information available at all time:</p>
+<ul>
+<li>Check all issues and feature requests in the current Forge and close the ones that are no longer valid (done)
+*On GitHub, create <a href="https://github.com/PrestaShop/PrestaShop/labels">Labels</a> so it is possible to keep all the sorting information and fields from Jira (done)</li>
+<li>Prepare a migration script to import the open tickets from the Forge to GitHub issues, with cross links and comment history (done)</li>
+<li>When GitHub issues are open, freeze the Forge and import the history (BOOM, FF, BOGOSS done)</li>
+<li>Update links on documentations and websites or provide redirections (done)</li>
+<li>The Forge will become a read-only resource and it will stay available until its content becomes useless (done)</li>
+</ul>
+<p>Once done, all new issues must be open on GitHub. The aim is to finish this work before the end of the summer.</p>
+<p>Last update: 2018-09-03 11:45</p>
+<h2 id="please-be-patient">Please, be patient</h2>
+<p>We started speaking with people inside and outside the company about moving to GitHub Issues during Spring and at PrestaShop Day Paris. The feedback was very positive, with a lot of enthusiasm and interest. We really hope that this will allow contributors to become more active, and that the overall development process will to be more efficient and more open.</p>
+<p>However, it seems that some people are a bit hasty. Recently, we saw some off-topic questions and comments on pull requests, in order to discuss with developers. Please, don’t do that, and continue using the Forge until the move to GitHub is complete. And then, create issues. <strong>Pull requests are about code and development, it’s not the place to ask questions</strong>.</p>
+<p>In order to keep everyone up to date with this migration, this article will be updated as the migration moves forward.</p>
+<h2 id="prestashop-16x">PrestaShop 1.6.x</h2>
+<p>Tickets open on the Forge for v1.6.x will not be migrated to GitHub. Of course, like the other projects, they will still be available as a read-only resource. If you discover a new bug, please open a new bug report directly on GitHub.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Aug 13, 2018</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/community/">community</a>
+
+  <a class="label label-primary" href="/tag/contribution/">contribution</a>
+
+  <a class="label label-primary" href="/tag/forge/">forge</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the authors</h5>
+
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Antoine Thomas
+      <span class="multiple">Open Source Evangelist</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/ttoine">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      PrestaShop team
+      <span class="multiple"></span>
+    </h4>
+
+    
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://prestashop-project.org">
+        <i class="icon-home"></i> Website
+      </a>
+    
+  
+
+
+                </div>
+                
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

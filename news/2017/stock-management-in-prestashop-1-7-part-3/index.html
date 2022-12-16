@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Stock management in PrestaShop 1.7 - part 3</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Stock management in PrestaShop 1.7 - part 3" />
+<meta property="og:description" content="In the previous episodes, we’ve seen the motivations for designing a new stock management interface and how we’ve built it. By now, you must be pretty eager to see what it looks like for real… So let’s dive into the features of this new page of PrestaShop 1.7.2.0." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2017/stock-management-in-prestashop-1-7-part-3/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2017-07-13T09:10:11+02:00" />
+    <meta property="article:modified_time" content="2017-07-13T09:10:11+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Stock management in PrestaShop 1.7 - part 3"/>
+<meta name="twitter:description" content="As much details as we can give you!"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Stock management in PrestaShop 1.7 - part 3</h1>
+              
+                <h3 class="post-subtitle">As much details as we can give you!</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://fr.gravatar.com/userimage/91609995/38361fbb8f44093203780a23155f280d.jpg"
+         alt="Guillaume Bruere's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Guillaume Bruere</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jul 13, 2017
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Stock&#43;management&#43;in&#43;PrestaShop&#43;1.7&#43;-&#43;part&#43;3&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2017%2Fstock-management-in-prestashop-1-7-part-3%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2017%2Fstock-management-in-prestashop-1-7-part-3%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>In the previous episodes, we’ve seen the <a href="http://build.prestashop.com/news/stock-management-in-prestashop-1-7/">motivations for designing a new stock management interface</a> and <a href="http://build.prestashop.com/news/stock-management-in-prestashop-1-7-part-2/">how we’ve built it</a>. By now, you must be pretty eager to see what it looks like for real… So let’s dive into the features of this new page of PrestaShop 1.7.2.0.</p>
+<h2 id="how-do-you-get-started">How do you get started?</h2>
+<p>From the back-office left menu, just click on Catalog / Stock. That’s it!</p>
+<p><img src="/assets/images/2017/07/stockmanagement3-menu_stock.gif" alt="Stock"></p>
+<p>No need to activate an “advanced stock management” option from an obscure configuration page, nor to create a warehouse and then assign products to a warehouse and then assign every product to this stock management system… You see the point: contrary to PrestaShop 1.6, there’s no setup at all.</p>
+<h2 id="features">Features</h2>
+<h3 id="stock-overview">Stock overview</h3>
+<p>Our goal here was pretty simple: allow users to have an overview of their catalog stock at a glance.</p>
+<p>A table presents the products in the catalog and their corresponding stock:</p>
+<p><img src="/assets/images/2017/07/stockmanagement3-stock_tab.png" alt="Stock table"></p>
+<p>Each line represents a product (either standard, virtual or bundle) or one of its combinations. The only difference is that combination attributes are displayed just below the product’s name.</p>
+<ul>
+<li>The table contains the following columns:</li>
+<li>Image thumbnail, to help fast visual recognition.</li>
+<li>Product’s name and when it’s a combination, its attributes’ values.</li>
+<li>Product reference. In case a combination has its own reference then it’ll be used instead of the parent’s reference.</li>
+<li>Supplier. In case several suppliers are assigned to a product, only the default supplier will be shown here.</li>
+<li>Physical stock, which represents the quantity you actually have physically in your storage.</li>
+<li>Reserved stock, which represents the quantity of products that are currently in an open customer order that has not been shipped yet.</li>
+<li>Available stock, which is the quantity available for sale.</li>
+<li>Edit quantity. This input allows modifying the quantity manually. More on that in the next part.</li>
+</ul>
+<p>At any time, these 3 notions of stock are linked by the following equation:</p>
+<p><code>Physical stock - Reserved stock = Available stock</code></p>
+<p>By default, products are sorted by decreasing product_id, meaning that the most recently created product will be on top. If there are more than 100 products and combinations, then the table is paginated.</p>
+<h3 id="quick-edition-of-quantities">Quick edition of quantities</h3>
+<p>The goal here was to make it lightning-fast to edit a quantity when you need to.</p>
+<p>With Advanced Stock Management in PrestaShop 1.6, it took you up to 20 seconds to edit a single quantity… Now it’s just a matter of 3 seconds!</p>
+<p>In version 1.6, with advanced stock management activated, you had to follow these steps:</p>
+<p><img src="/assets/images/2017/07/stockmanagement3-ASM16_edit_qty.gif" alt="Quantity edition in PS 1.6"></p>
+<p>Now with version 1.7.2.0, an input to modify the quantity is directly reachable from the stock table. It works like this:</p>
+<p><img src="/assets/images/2017/07/stockmanagement3-stock_update.gif" alt="Quantity edition in PS 1.7"></p>
+<p>What you’re typing in this input is a quantity delta, meaning it’s not the desired final stock value but the quantity you’re adding or removing. You can either type in the quantity to add or to remove (with a minus sign), or use the up and down arrows to adjust the quantity.</p>
+<p>While editing the quantity, you’ll see an overview of the resulting final stock:</p>
+<p><img src="/assets/images/2017/07/stockmanagement3-overview.png" alt="Stock overview"></p>
+<p>This feature is here to help you see at the same time the starting point, the end point and the difference between those before validating. If you used to manually edit the quantity of a product directly in the product page by deleting the previous quantity and then entering the new one, it’ll save you a mental arithmetic operation and prevent you from forgetting the starting point when you’ve deleted it and a colleague interrupts you&hellip;</p>
+<p>If you want to edit multiple quantities at the same time, you can also edit the quantities of several products and then validate it all with the “apply new quantity” button.</p>
+<p><img src="/assets/images/2017/07/stockmanagement3-multiple_quantity_update.gif" alt="Multiple quantity update"></p>
+<h3 id="stock-movements">Stock movements</h3>
+<p><img src="/assets/images/2017/07/stockmanagement3-movements_tab.png" alt="Movement table"></p>
+<p>The table of stock movements provides you with a log of all the stock changes. Because it’s an history of previous stock movements, this table only has an informative role and therefore cannot be edited.</p>
+<p>The structure looks similar to the stock table but here each line corresponds to a change in <strong>physical</strong> quantity for a product or combination. It contains the following columns:</p>
+<ul>
+<li>Image thumbnail, to help fast visual recognition.</li>
+<li>Product’s name and when it’s a combination, its attributes’ values.</li>
+<li>Product reference. In case a combination has its own reference then it’ll be used instead of the parent’s reference.</li>
+<li>Movement type. It represents the reason why a product’s physical quantity has changed.</li>
+<li>Quantity added or removed. This delta is formatted with a + or - label to facilitate visual recognition.</li>
+<li>Date and time, which is the exact server time stamp when the change occurred.</li>
+<li>Employee, which is the name of the person responsible for the change.</li>
+</ul>
+<p>With version 1.7.2.0, we listed a minimum number of movement types in accordance with events that can trigger a movement:</p>
+<ul>
+<li>Manual edition by an employee, when for instance you modify a product’s quantity inside the stock table.</li>
+<li>Customer order, when an order switches from a status equivalent to ‘not shipped’ to another status equivalent to ‘shipped’ (and vice-versa). For instance, when you ship an order that was under preparation, this will create a stock movement, as the physical quantity of items shipped literally leaves your warehouse.</li>
+<li>Returned products, when you refill a product’s stock after receiving and accepting the merchandise return.
+In the last two cases, the movement type in the table becomes an hyperlink to the corresponding customer order, so you have more context about this type of movement and don’t have to cross-check time stamps between the stock movements and orders tables.</li>
+</ul>
+<p>By default, stock movements are sorted by descending date, so that the most recent stock movements are on the top.</p>
+<h3 id="search-and-filters">Search and filters</h3>
+<p>At the top of both tabs, you’ll find two features to quickly look for any product. The search bar is designed for use-cases where you know which product you’re looking for because you either have in mind its reference, name or supplier. While the advanced filters allow you to browse more options to fine-tune your search.</p>
+<p>The search bar works the same in both tabs and looks for:</p>
+<ul>
+<li>product’s name</li>
+<li>product’s reference</li>
+<li>supplier</li>
+<li>[beta] attributes’ values. This allows you to look for a specific attribute value like color. When typing ‘green’, you’ll see all products which share this color attribute value. This is still in beta though, and might not work with too short attribute values like with sizes: ‘S’, ‘M’, ‘L’.</li>
+</ul>
+<p><img src="/assets/images/2017/07/stockmanagement3-search_live.gif" alt="Live search"></p>
+<p>Each tab has different advanced filters, in order to adapt to the search context.</p>
+<p>In the ‘Stock’ tab, advanced filters contain:</p>
+<ul>
+<li>a supplier filter, which allows you to quickly browse available suppliers and choose one or several.</li>
+<li>a category filter with an expandable tree.</li>
+</ul>
+<p><img src="/assets/images/2017/07/stockmanagement3-adv_filters_stock_tab.png" alt="Advanced stock filters"></p>
+<p>In the ‘Movements’ tab, advanced filters contain:</p>
+<ul>
+<li>a movement type filter, which allows you for instance to look for stock movements related to customer orders.</li>
+<li>an employee filter.</li>
+<li>a date range filter, if you’re looking for stock movements which happened during a specific period.</li>
+<li>and a category filter, like in the ‘Stock’ tab.</li>
+</ul>
+<p><img src="/assets/images/2017/07/stockmanagement3-adv_filters_mvt_tab.png" alt="Advanced movement filters"></p>
+<h3 id="multi-store">Multi-store</h3>
+<p>This new stock management system is compatible with multi-store. For obvious reasons, if you have multiple shops inside a group where stocks are not shared, you cannot manage your stock in “all shops” or “group” context. If you try to do so, you might see the following error message:</p>
+<p><img src="/assets/images/2017/07/stockmanagement3-multi-store_warning.png" alt="Multiestore warning"></p>
+<p>Instead you have to select a shop in which you can work to edit its stock.</p>
+<p>If you’re using a group of shops that share the same quantities, you’ll also have to select a unique shop context instead of a group but any change you make in a shop will also affect the other shops.</p>
+<p><img src="/assets/images/2017/07/stockmanagement3-multi-store_context.png" alt="Multistore context"></p>
+<h2 id="technical-implementation">Technical implementation</h2>
+<p>This page was developed using a combination of a custom Symfony-based API with VueJS. An upcoming article will tell you all about it :)</p>
+<h2 id="whats-next">What’s next</h2>
+<p>Maybe you’re enthusiastic about what you see and want to see more like this? Or you have ideas for improvements? Then if you haven’t already, complete <a href="https://prestashop-testing.typeform.com/to/OJ0UFi">this subscription form</a> and be part of the community members who will help us build the next versions! We have plenty of ideas worth testing ;)</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jul 13, 2017</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/1.7.2.x/">1.7.2.x</a>
+
+  <a class="label label-primary" href="/tag/feature/">feature</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Guillaume Bruere
+      <span>Product Manager</span>
+    </h4>
+
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

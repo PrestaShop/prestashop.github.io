@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>We&#39;re building a Starter Theme for PrestaShop 1.7.0.0</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="We&#39;re building a Starter Theme for PrestaShop 1.7.0.0" />
+<meta property="og:description" content="If you’ve ever tried to create a PrestaShop theme from scratch, you might have noticed it requires quite a large skillset: not only must you know HTML, CSS and Smarty, but you also need to be very familiar with the inner workings of PrestaShop itself. There is a lot of business logic going on in the templates, it is hard to tell apart classes that are used for styling from classes that are used by JavaScript-powered features, etc." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2015/starter-theme-kickoff/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2015-08-28T12:00:00+02:00" />
+    <meta property="article:modified_time" content="2015-08-28T12:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="We&#39;re building a Starter Theme for PrestaShop 1.7.0.0"/>
+<meta name="twitter:description" content="What we have in mind and how you can contribute"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">We&#39;re building a Starter Theme for PrestaShop 1.7.0.0</h1>
+              
+                <h3 class="post-subtitle">What we have in mind and how you can contribute</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/1460499"
+         alt="François-Marie de Jouvencel's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">François-Marie de Jouvencel</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Aug 28, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=We%27re&#43;building&#43;a&#43;Starter&#43;Theme&#43;for&#43;PrestaShop&#43;1.7.0.0&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fstarter-theme-kickoff%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fstarter-theme-kickoff%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>If you&rsquo;ve ever tried to create a PrestaShop theme from scratch, you might have noticed it requires quite a large skillset: not only must you know HTML, CSS and Smarty, but you also need to be very familiar with the inner workings of PrestaShop itself. There is a lot of business logic going on in the templates, it is hard to tell apart classes that are used for styling from classes that are used by JavaScript-powered features, etc.</p>
+<p>With the Starter Theme project we are starting today, we want to re-think the way our themes work so that <em>anybody with only HTML and CSS skills can create a really cool, feature-complete PrestaShop theme from scratch in just a few days</em>.</p>
+<p>Our goal is to deliver the Starter Theme with PrestaShop 1.7.0.0. We will also say goodbye to our old default-bootstrap theme. It will be replaced with a new theme based on the Starter Theme.</p>
+<h2 id="so-whats-a-starter-theme">So What&rsquo;s a Starter Theme?</h2>
+<blockquote>
+<p>&ldquo;It seems that perfection is attained, not when there is nothing more to add, but when there is nothing more to take away.&rdquo;</p>
+<p>Antoine de Saint Exupéry</p>
+</blockquote>
+<h3 id="a-tool-for-designers-to-work-efficiently">A Tool for Designers to Work Efficiently</h3>
+<p>We call Starter Theme a minimal PrestaShop theme: it is feature-complete but has no styling, nothing to take away.</p>
+<p>But wait&hellip; no styling?! It might not be perfect for a customer, sure, but it should be perfect for a designer as turning the Starter Theme into a real, production-ready theme will be very easy.</p>
+<h3 id="an-easy-to-follow-documented-standard-that-we-all-agree-on">An Easy to Follow, Documented Standard that We All Agree On</h3>
+<p>It is sometimes hard to know whether a particular extension or feature will work correctly with a particular theme. There are so many themes out there! How can I, as a developer, know that my module will work correctly?</p>
+<p>In principle if an extension or feature is designed to work with the Starter Theme it will always work with any theme that is based on the starter theme.</p>
+<p>For the Starter Theme to play this role it will need a <strong>comprehensive documentation</strong>, including:</p>
+<ul>
+<li>the list of mandatory templates</li>
+<li>the description of all variables available to each template</li>
+<li>the list of all hooks found in a given template</li>
+</ul>
+<h2 id="what-will-prestashops-starter-theme-look-like">What Will PrestaShop&rsquo;s Starter Theme Look Like?</h2>
+<p><em>Well it will look like ****, that&rsquo;s the point.</em></p>
+<p>Jokes aside, here are the main design principles we have in mind. As usual we&rsquo;re telling you this so that you can comment, contribute, or alert us if you think we&rsquo;re making a mistake. So please feel free to join the conversation!</p>
+<h3 id="logic-belongs-to-controllers">Logic Belongs to Controllers</h3>
+<p>Over the years lots of logic has crept into the templates (contrary to the <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC principles</a>). None of this in the Starter Theme!</p>
+<p>This rule will be very strongly enforced. To help us keep on track while building the Starter Theme, we&rsquo;re considering limiting the depth of control structures in templates to 2 (we&rsquo;ll relax this if it turns out to be too impractical, but you get the idea).</p>
+<p>If you&rsquo;re nesting 3 <code>if</code>s inside a template then your controller is probably not doing its job right.</p>
+<h3 id="controllers-pass-arrays-to-templates-not-objects">Controllers Pass Arrays to Templates, not Objects</h3>
+<p>Today some controllers pass lists of <code>Product</code>s to templates, while some other controllers pass lists of arrays representing <code>Product</code>s. This is true for other types of entities too.</p>
+<p>We need to standardize this, one way or the other. We&rsquo;ve opted for arrays because of the additional safety guarantees it offers: separation of concerns mandates that the view layer just manages the view. Passing a <code>Product</code> object to a template allows the view layer to do things like deleting the product from the database.</p>
+<h3 id="a-real-layout">A Real Layout</h3>
+<p>No more opening the <code>&lt;body&gt;</code> tag in <code>header.tpl</code> and closing it in <code>footer.tpl</code>. Each and every template will make sense to a designer (and to a linter!) by itself.</p>
+<h3 id="secure-by-default">Secure by Default</h3>
+<p>Tired of writing <code>|escape:'html':'UTF-8'</code> all over the place?</p>
+<p>We too. We&rsquo;ll adopt the generally accepted best-practice that everything is escaped by default and you need to do extra work when you don&rsquo;t want to escape text (which is rare).</p>
+<h3 id="as-few-classes-as-possible">As Few Classes as Possible</h3>
+<p>In our templates today, almost every HTML tag has at least one class. This feels like a bit much.</p>
+<p>We&rsquo;re going to put a few classes in the Starter Theme markup, but as few as possible. Just the really important ones.</p>
+<h3 id="classes-are-for-styling-not-for-javascript-mostly">Classes are for Styling, Not for JavaScript (mostly)</h3>
+<p>In the Starter Theme we will try to remove all HTML classes that are not used for styling.</p>
+<p>JavaScript (from modules, the theme or the core) should not rely on classes to bind on events or perform other operations on the DOM.</p>
+<p>JavaScript should only rely on:</p>
+<ul>
+<li><code>id</code>s</li>
+<li><code>data-*</code> attributes</li>
+<li>named inputs</li>
+<li>as a last resort, if none of the above makes sense, on classes, but prefixed by <code>js-</code></li>
+</ul>
+<p>And probably other things too, but almost never HTML classes and when using classes, always prefixed by <code>js-</code>.</p>
+<p>The goal of this convention is to:</p>
+<ul>
+<li>Avoid bloating the HTML markup with things designers are not interested in – a designer expects a class to be used for styling and knows they can remove any class they wish without breaking functionality.</li>
+<li>Make it easy to keep the Javascript working with different themes – we&rsquo;ll keep our selectors simple in the Starter Theme, adding <code>data-*</code> attributes or <code>id</code>s where needed so that when you move things around everything keeps working smoothly.</li>
+</ul>
+<h3 id="no-bootstrap">No Bootstrap</h3>
+<p>This was a tough one.</p>
+<p>You can do a lot with CSS but some layouts cannot be implemented with only CSS and you need to add some markup, for instance wrap your columns in a <code>&lt;div class=&quot;row&quot;&gt;</code>.</p>
+<p>But since in the Starter Theme we wanted to make no assumption about which technologies designers will use, we decided to implement no layout at all. You will get columns that are displayed one after another vertically.</p>
+<p>Want your columns to look like real columns? Then it&rsquo;s your job to add the necessary classes and/or markup. If you think your customers have recent browsers you may just use flexbox and be done with it - we&rsquo;re not imposing anything, so no bootstrap.</p>
+<h3 id="ongoing-reflection-about-hooks">Ongoing Reflection about Hooks</h3>
+<p>We&rsquo;re keeping the existing hooks and we&rsquo;re probably going to add a few.</p>
+<p>In the future we&rsquo;d also like to implement a system of widgets that you could add to any zone of your theme, thus generalizing a little bit what hooks are capable of.</p>
+<p>We don&rsquo;t know the details yet, but if you have ideas how we can make hooks better let us know!</p>
+<h2 id="how-are-we-going-to-do-it-want-to-get-involved">How Are We Going to Do It? Want to Get Involved?</h2>
+<p>We believe that starting from scratch will give the best results to achieve the cleanest possible theme structure.</p>
+<p>We&rsquo;ve created a <a href="https://github.com/PrestaShop/StarterTheme" target="_blank">dedicated repository on GitHub</a> and issues will be tracked there (not on forge.prestashop.com). We will also create a PrestaShop branch called <code>starter-theme</code> where all necessary changes to the PrestaShop core will happen.</p>
+<p>We know many people are interested in this project and wish to contribute. Contributions are very welcome as there will be more than enough work for everyone :)</p>
+<p>As usual you can send us pull requests but if you want to work more closely with us, just write to us and we&rsquo;ll work something out.</p>
+<p>To make discussing the project between all involved easier we&rsquo;ve created a <a href="https://gitter.im/PrestaShop/StarterTheme" target="_blank">Gitter channel</a> so come talk with us!</p>
+<p><a href="https://gitter.im/PrestaShop/StarterTheme?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/PrestaShop/StarterTheme"></a></p>
+<h2 id="but-arent-you-going-to-break-everything">But Aren&rsquo;t You Going to Break Everything?</h2>
+<p>To be honest, it is likely. But it&rsquo;s a necessary evil.</p>
+<p>We&rsquo;re not sure at this point if 1.6 themes will be compatible with 1.7.0.0. We have huge plans related to the Starter Theme and we do not want to sacrifice good software design in favor of backward compatibility. So for now we&rsquo;re not holding back.</p>
+<p>Existing modules will probably require adjustments too, but they should be minimal.</p>
+<p>If we break things you&rsquo;ll be the first to know and we&rsquo;ll give you time to adjust.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Aug 28, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/starter-theme/">starter-theme</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      François-Marie de Jouvencel
+      <span>Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/djfm">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

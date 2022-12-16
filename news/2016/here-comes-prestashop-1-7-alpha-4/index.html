@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Here comes PrestaShop 1.7.0.0 alpha 4!</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Here comes PrestaShop 1.7.0.0 alpha 4!" />
+<meta property="og:description" content="Three weeks ago we released PrestaShop 1.7.0.0 alpha 3. Since then, and with the help of the community, we’ve been working on it to fix the bugs you’ve reported and to keep improving this new version. We’re now releasing PrestaShop 1.7.0.0 alpha 4 version, so we can keep gathering feedback and make sure that the final and stable version will be the best it can be!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2016/here-comes-prestashop-1-7-alpha-4/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2016-04-25T02:30:00+02:00" />
+    <meta property="article:modified_time" content="2016-04-25T02:30:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Here comes PrestaShop 1.7.0.0 alpha 4!"/>
+<meta name="twitter:description" content="Less bugs, more fun: test it now!"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Here comes PrestaShop 1.7.0.0 alpha 4!</h1>
+              
+                <h3 class="post-subtitle">Less bugs, more fun: test it now!</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/1247388"
+         alt="Mickaël Andrieu's photo">
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/2203436"
+         alt="Maxime Biloé's photo">
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749"
+         alt="Xavier Borderie's photo">
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/7910738"
+         alt="Alex Even's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Mickaël Andrieu</div>
+        
+          <div class="author-display-role">Technical evangelist / Creator of PrestonBot</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">Maxime Biloé</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">Xavier Borderie</div>
+        
+          <div class="author-display-role">Open Source Advocate</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">Alex Even</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Apr 25, 2016
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Here&#43;comes&#43;PrestaShop&#43;1.7.0.0&#43;alpha&#43;4%21&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fhere-comes-prestashop-1-7-alpha-4%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fhere-comes-prestashop-1-7-alpha-4%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Three weeks ago <a href="http://build.prestashop.com/news/prestashop-1-7-alpha-3-is-here/">we released PrestaShop 1.7.0.0 alpha 3</a>. Since then, and with the help of the community, we&rsquo;ve been working on it to fix the bugs you&rsquo;ve reported and to keep improving this new version. We&rsquo;re now <strong>releasing PrestaShop 1.7.0.0 alpha 4 version</strong>, so we can keep gathering feedback and make sure that the final and stable version will be the best it can be!</p>
+
+
+
+<div class="alert alert-important"><p>While this alpha version is not ready for production stores, it is a great basis for us to get your feedbacks.</p>
+<p>We’re are still working on some features and know some parts are broken. <a href="/news/prestashop-1-7-alpha-3-is-here/#whats-in-progress">Check out the list in this article</a>.</p>
+
+</div>
+
+<p>Let’s insist on this: this is NOT the stable version of PS 1.7, and IT SHOULD NOT BE USED IN PRODUCTION. Do not create a new store with this alpha version, it is by definition not finished yet.</p>
+<p>You SHOULD however install this alpha version as a test store, either on your machine or your web hosting, and play with it &ndash; and give us your feedback!</p>
+<p>The release date for the stable version is not yet set, so you have a few weeks and beta/RC versions ahead of you!</p>
+<p class="text-center">
+  <a href="https://www.prestashop.com/versions" class="btn btn-lg btn-success">Test PrestaShop 1.7.0.0 alpha 4</a>
+</p>
+
+<h2 id="how-to-give-feedback">How to give feedback</h2>
+<p>Have you found a bug? A curious behavior? An unexpected reaction? Let us know! <a href="http://forge.prestashop.com/secure/CreateIssue!default.jspa?selectedProjectId=11322&amp;issuetype=1">Create a ticket on the 1.7 Forge project</a>, and give us as much details as possible!</p>
+<p>Please note that we are not looking for feedback on the overall technical or design choices: Symfony2, the new theming system, the back office design and other global aspects of 1.7 are pretty much set in stone. However, do let us know about bugs or possible improvements!</p>
+<h2 id="updates-since-alpha-3">Updates since alpha 3</h2>
+<p>You&rsquo;ll find more details about the previous alpha 3 in this <a href="http://build.prestashop.com/news/prestashop-1-7-alpha-3-is-here/">previous article</a>.</p>
+<p>Here are the main improvements this new alpha version brings:</p>
+<h3 id="front-office">Front office</h3>
+<ul>
+<li>Fix invoice address not being asked in checkout <a href="https://github.com/PrestaShop/PrestaShop/pull/5305">#5305</a> by @jtabet</li>
+<li>Checkout - displays voucher value in the shopping cart <a href="https://github.com/PrestaShop/PrestaShop/pull/5312">#5312</a> by @shine-neko</li>
+<li>Fix warnings in the quick-view  <a href="https://github.com/PrestaShop/PrestaShop/pull/5317">#5317</a> by @shine-neko</li>
+<li>Fix Prices drop, Best sales &amp; New products display <a href="https://github.com/PrestaShop/PrestaShop/pull/5351">#5351</a> by @maximebiloe</li>
+<li>Display tax in shopping cart by default <a href="https://github.com/PrestaShop/PrestaShop/pull/5353">#5353</a> by @maximebiloe</li>
+<li>Display product image in confirmation order <a href="https://github.com/PrestaShop/PrestaShop/pull/5361">#5361</a> by @shine-neko</li>
+<li>Fix checkout behavior when simplified URLs are disabled <a href="https://github.com/PrestaShop/PrestaShop/pull/5376">#5376</a> by @maximebiloe</li>
+<li>Form error messages are now displayed in the website language (only English for now), instead of browser language  <a href="https://github.com/PrestaShop/PrestaShop/pull/5399">#5399</a> by @maximebiloe</li>
+<li>Improved the legal compliancy <a href="https://github.com/PrestaShop/PrestaShop/pull/5394">#5394</a>, <a href="https://github.com/PrestaShop/PrestaShop/pull/5445">#5445</a>. Thank you @paeddl!</li>
+<li>Fix shipping tax when proportionate is enabled in AEU <a href="https://github.com/PrestaShop/PrestaShop/pull/5325">#5325</a> by @maximebiloe</li>
+</ul>
+<h3 id="back-office">Back office</h3>
+<ul>
+<li>TinyMCE improvements on style and loading perfs <a href="https://github.com/PrestaShop/PrestaShop/pull/5420">#5420</a> by @tchauviere</li>
+<li>Added a feature to be able to remove birthdate in subscription form <a href="https://github.com/PrestaShop/PrestaShop/pull/5343">#5343</a>. Thank you @firstred!</li>
+</ul>
+<h3 id="product-page">Product page</h3>
+<ul>
+<li>The bottom bar for the product page has been redesigned <a href="https://github.com/PrestaShop/PrestaShop/pull/">#5391</a> by @nihco2</li>
+<li>Introduced a Category management system on Page product <a href="https://github.com/PrestaShop/PrestaShop/pull/5293">#5293</a>, <a href="https://github.com/PrestaShop/PrestaShop/pull/5323">#5323</a>, and <a href="https://github.com/PrestaShop/PrestaShop/pull/5401">#5401</a> by @mickaelandrieu</li>
+<li>Introduced tooltips and improved wording <a href="https://github.com/PrestaShop/PrestaShop/pull/5424">#5424</a> by @julienbourdeau</li>
+</ul>
+<h3 id="modules-page">Modules page</h3>
+<ul>
+<li>The &ldquo;enable/disable on mobile&rdquo; action is back! <a href="https://github.com/PrestaShop/PrestaShop/pull/5319">#5319</a> by @quetzacoalt91</li>
+<li>Improve the loading time of the module catalog <a href="https://github.com/PrestaShop/PrestaShop/pull/5368">#5368</a> by @quetzacoalt91</li>
+<li>Modules to be configured are now displaying <a href="https://github.com/PrestaShop/PrestaShop/pull/5395">#5395</a> by @quetzacoalt91</li>
+<li>Improved Module class to handle more potential issues <a href="https://github.com/PrestaShop/PrestaShop/pull/5397">#5397</a> by @quetzacoalt91</li>
+<li>Fix zip module installation for complex modules <a href="https://github.com/PrestaShop/PrestaShop/pull/5380">#5380</a> by @mickaelandrieu</li>
+<li>Improved list display <a href="https://github.com/PrestaShop/PrestaShop/pull/5371">#5371</a>. Thank you @shepherdv8!</li>
+<li>Modules scoring is now displayed <a href="https://github.com/PrestaShop/PrestaShop/pull/5405">#5405</a> by @quetzacoalt91</li>
+</ul>
+<h3 id="core">Core</h3>
+<ul>
+<li>Added PHP 7 tests on Travis CI <a href="https://github.com/PrestaShop/PrestaShop/pull/5439">#5439</a>. Thank you @firstred!</li>
+<li>Introduced a new <code>dump</code> function from Symfony VarDumper component <a href="https://github.com/PrestaShop/PrestaShop/pull/5381">#5381</a> by @shine-neko</li>
+<li>Disallow indexing of admin pages <a href="https://github.com/PrestaShop/PrestaShop/pull/5357">#5357</a>. Thank you @firstred!</li>
+<li>Updated SwiftMailer to the latest version <a href="https://github.com/PrestaShop/PrestaShop/pull/5233">#5233</a>. Thank you @firstred!</li>
+</ul>
+<p>This alpha 4 version was made possible by the hard work of the PrestaShop Core Team, with additional commits by the following contributors: @firstred (responsible for no less than 8 contributions already accepted the last 3 weeks, thank you!), @paeddl and @shepherdv8. Thank you!</p>
+<h2 id="whats-still-in-progress">What’s (still) in progress</h2>
+<p>Remember that this is alpha 4: a lot of things are not ready yet, or are ready but not yet available.</p>
+<p>We tried to gather the most important ones, so you have a clear idea of what still needs to be implemented. All of this will eventually be fixed for the stable version &ndash; and you can help with pull-requests on GitHub, and feedback of your tests!</p>
+<h3 id="core-1">Core</h3>
+<ul>
+<li>If your web hosting uses PHP-FPM, some links (and images) will not work.</li>
+<li>Multistore &amp; Advanced Stock Management aren’t yet connected to the Create a Product Page.</li>
+<li>The header and navigation can vary (slightly) between pages.</li>
+<li>Employees permissions are not yet suited for the new navigation in place</li>
+<li>If a problem occurs while uploading a theme, we may not be able to tell you why currently :) In effect, errors and warnings are not fully set yet. And in any case, your 1.5-1.6 theme will NOT work with the new theme system.</li>
+</ul>
+<h3 id="front-office-1">Front office</h3>
+<ul>
+<li>Some links may be broken during your navigation on the shop</li>
+</ul>
+<h3 id="back-office-1">Back office</h3>
+<ul>
+<li>Some images are broken for now, some buttons and tab could behave in a weird way, and you might stumble on other weird artefacts. We know about this, and they will all be fixed in time.</li>
+<li>We’re still working on the responsiveness of the back-office, and 13” screens could particularly be affected.</li>
+</ul>
+<h3 id="modules-page-1">Modules page</h3>
+<ul>
+<li>We’re improving the modules discovery page: better sorting, more information, reworked categories, etc.</li>
+</ul>
+<h3 id="content">Content</h3>
+<ul>
+<li>Interface copywriting is not final yet. Some parts need to be written, others are waiting for a rewrite and others are in proofreading.</li>
+<li>Default products are still the ones used in version 1.6. Version 1.7 should have a brand new set of products.</li>
+<li>Translations are on hold for now while we’re working on improving the system: the interface is only in English for now.</li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li>Contextual help still displays 1.6 documentation as we’re updating it to 1.7. Expect it to be final during our RC period.</li>
+<li>Technical documentation for modules &amp; themes should follow the same timeline.</li>
+</ul>
+<h2 id="final-note">Final note!</h2>
+<p>So cheers for the second public glance at the brand new 1.7, made with &lt;3 by our team and our wonderful Community. It’s not fully baked yet, but we’re very proud of the work done.</p>
+<p class="text-center">
+  <a href="https://www.prestashop.com/versions" class="btn btn-lg btn-success">Test PrestaShop 1.7.0.0 alpha 4</a>
+</p>
+
+<p>We’ll closely monitor your feedback and are eager to hear from you!</p>
+<p>Happy testing!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Apr 25, 2016</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/1.7.0.0/">1.7.0.0</a>
+
+  <a class="label label-primary" href="/tag/version/">version</a>
+
+  <a class="label label-primary" href="/tag/alpha/">alpha</a>
+
+  <a class="label label-primary" href="/tag/major/">major</a>
+
+  <a class="label label-primary" href="/tag/releases/">releases</a>
+
+  <a class="label label-primary" href="/tag/development/">development</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the authors</h5>
+
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Mickaël Andrieu
+      <span class="multiple">Technical evangelist / Creator of PrestonBot</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/mickaelandrieu">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/mickael_andrieu">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Maxime Biloé
+      <span class="multiple">Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/maximebiloe">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/732692-maxime-bilo%c3%a9">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/maximebiloe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/maximebiloe">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Xavier Borderie
+      <span class="multiple">Open Source Advocate</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+                </div>
+                
+                <div class="author-item">
+
+                  
+    <h4>
+      Alex Even
+      <span class="multiple">Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/AlexEven">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/821016-alex-even">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/alex-even">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/AlexHarryEven">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+                </div>
+                
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop Core Weekly - Week 10 of 2015</title>
+    <link href="/style.css?1671216106" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop Core Weekly - Week 10 of 2015" />
+<meta property="og:description" content="Hi everyone, and welcome to the second edition of the PrestaShop Core Weekly post, focusing on the activity from March 2nd to March 8th of 2015. As last week’s Core Weekly, I’ll highlight some of the more important happenings in and around the Core of PrestaShop." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2015/prestashop-core-weekly-week-10/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2015-03-12T14:14:47+01:00" />
+    <meta property="article:modified_time" content="2015-03-12T14:14:47+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="PrestaShop Core Weekly - Week 10 of 2015"/>
+<meta name="twitter:description" content="An inside look at PrestaShop"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop Core Weekly - Week 10 of 2015</h1>
+              
+                <h3 class="post-subtitle">An inside look at PrestaShop</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749"
+         alt="Xavier Borderie's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Xavier Borderie</div>
+        
+          <div class="author-display-role">Open Source Advocate</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Mar 12, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;Core&#43;Weekly&#43;-&#43;Week&#43;10&#43;of&#43;2015&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fprestashop-core-weekly-week-10%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fprestashop-core-weekly-week-10%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Hi everyone, and welcome to the second edition of the PrestaShop Core Weekly post, focusing on the activity from March 2nd to March 8th of 2015.
+As last week&rsquo;s Core Weekly, I&rsquo;ll highlight some of the more important happenings in and around the Core of PrestaShop.</p>
+<h2 id="milestones">Milestones</h2>
+<p>Last week saw the release of <a href="https://www.prestashop.com/forums/topic/423651-new-release-prestashop-16014/">version 1.6.0.14</a>, right after a big week which saw two releases on two consecutive days, <a href="https://www.prestashop.com/forums/topic/428304-prestashop-core-weekly-week-10/">1.6.0.12 and 1.6.0.13</a>. As you can see, the PrestaShop team is willing to go the extra mile to make sure that the user have the best e-commerce software in the industry, and are not willing to compromise, even if it means pushing a new version because of newfound blocker bug.
+<a href="https://www.prestashop.com/en/developers-versions/changelog/1.6.0.14">See the (short) changelog for 1.6.0.14</a>.</p>
+<h2 id="code-changes">Code changes</h2>
+<p>Now, onto the past week, starting from Monday, March 2nd to Sunday, March 8th.</p>
+<h3 id="notable-accepted-pull-requests">Notable accepted pull requests:</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/2567">2567</a>: PHPDocs + Code formatting + Refractoring for CategoryController. Thank you gskema!</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/2547">2547</a>: FO: re-open customer thread from history page. Thanks Axome!</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/2544">2544</a>: Project: Huge work on code standardization. Thanks PrestaEdit!</li>
+</ul>
+<p>Find all PRs closed last week <a href="https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-03-02+is%3Aclosed">here</a></p>
+<h3 id="notable-closed-forge-tickets">Notable closed Forge tickets:</h3>
+<ul>
+<li><a href="http://forge.prestashop.com/browse/PSCSX-4733">PSCSX-4733</a>: threads statuses could not be translated</li>
+<li><a href="http://forge.prestashop.com/browse/PSCSX-4857">PSCSX-4857</a>: Wrong product url translation</li>
+<li><a href="http://forge.prestashop.com/browse/PSCSX-4853">PSCSX-4853</a>: classes/productsale.php crash</li>
+<li><a href="http://forge.prestashop.com/browse/PSCSX-4850">PSCSX-4850</a>: employee permissions: employee has no access to state in addresses when Localization -&gt; state is not selected</li>
+<li><a href="http://forge.prestashop.com/browse/PSCSX-4816">PSCSX-4816</a>: Property Carrier-&gt;name is not valid causes multiple bugs</li>
+<li><a href="http://forge.prestashop.com/browse/PSCSX-4791">PSCSX-4791</a>: Unable to add stock (classic system) after disabling advanced stock</li>
+</ul>
+<p>Find all Forge tickets closed last week here: <a href="http://forge.prestashop.com/browse/PSCSX-4775?jql=project%20%3D%20PSCSX%20AND%20status%20in%20%28Resolved%2C%20Closed%29%20AND%20resolution%20in%20%28Fixed%2C%20Done%29%20AND%20resolved%20%3E%3D%202015-03-02%20AND%20resolved%20%3C%3D%202015-03-08%20ORDER%20BY%20updated%20DESC">click here!</a></p>
+<h3 id="notable-commits-to-the-16-branch">Notable commits to the 1.6 branch:</h3>
+<ul>
+<li>Modules names should be lowercase <a href="https://github.com/PrestaShop/PrestaShop/commit/e501e7fecb8d7f1fe621458665faf544d9fe9108">here</a></li>
+<li>Cleaner tests directory, removed useless files, separated unit tests from integration tests <a href="https://github.com/PrestaShop/PrestaShop/commit/c04c8aeec1a779b07dd4fde42366c3085124e79b">here</a></li>
+<li>IN =&gt; EXISTS optimizations <a href="https://github.com/PrestaShop/PrestaShop/commit/c55f7dfa5303dd485aab8bcb82494667a2591c4e">here</a></li>
+<li>Merge remote-tracking branch &lsquo;upstream/1.6&rsquo; into 1.6-upstream <a href="https://github.com/PrestaShop/PrestaShop/commit/de73e84bff780a125038070454c3198c1621670f">here</a></li>
+</ul>
+<p>That&rsquo;s it for last week!
+It&rsquo;s the second edition of Core Weekly, so if you have suggestions or see anything that I missed, please comment!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Mar 12, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/core-weekly/">core-weekly</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Xavier Borderie
+      <span>Open Source Advocate</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

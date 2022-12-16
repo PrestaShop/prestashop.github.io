@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop &amp;&amp; the PSR-2 coding style guide</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop &amp;&amp; the PSR-2 coding style guide" />
+<meta property="og:description" content="We are planning to switch to PSR-2, here is the why, the how and the when!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2015/prestashop-moves-to-psr-2/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2015-06-03T18:54:00+02:00" />
+    <meta property="article:modified_time" content="2015-06-03T18:54:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="PrestaShop &amp;&amp; the PSR-2 coding style guide"/>
+<meta name="twitter:description" content="Adopting a common coding standard"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop &amp;&amp; the PSR-2 coding style guide</h1>
+              
+                <h3 class="post-subtitle">Adopting a common coding standard</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars1.githubusercontent.com/u/4747745"
+         alt="Jérôme Nadaud's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Jérôme Nadaud</div>
+        
+          <div class="author-display-role">R&amp;D Director</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jun 3, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;%26%26&#43;the&#43;PSR-2&#43;coding&#43;style&#43;guide&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fprestashop-moves-to-psr-2%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fprestashop-moves-to-psr-2%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>We are planning to switch to PSR-2, here is the why, the how and the when!</p>
+<h3 id="the-current-situation">The current situation</h3>
+<p>PrestaShop currently uses its own <a href="http://doc.prestashop.com/display/PS16/Coding+Standards">Coding Standards</a>, based on <a href="http://www.php-fig.org/psr/psr-1/">PSR-1</a>, with a few adaptations for historical reasons.</p>
+<p>For a long time, we&rsquo;ve wanted to move to a more generally-accepted coding standard. PrestaShop is loved by its community and we love our community, and we wanted to adopt a common coding standard in order to ease code contribution.</p>
+<p>There are a few coding standards in use: <a href="https://pear.php.net/manual/en/standards.php">PHP&rsquo;s PEAR project has its own</a>, <a href="http://framework.zend.com/manual/current/en/ref/coding.standard.html">the Zend Framework has one</a>, <a href="https://make.wordpress.org/core/handbook/coding-standards/php/">WordPress has one too</a>, <a href="https://www.drupal.org/coding-standards">Drupal derives its standard from the PEAR one</a>, &hellip;and then there is the <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md">PSR-1 coding standard</a>, along with the <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">PSR-2 coding style guide</a>.</p>
+<p>PSR-1 and PSR-2, named &ldquo;Basic Coding Standard&rdquo; and &ldquo;Coding Style Guide&rdquo;, were conceived by the PHP Framework Interop Group, an informal group of representatives from major PHP projects, which offers a place to &ldquo;talk about the commonalities between our projects and find ways we can work together&rdquo; (<a href="http://www.php-fig.org/faq/">see the FAQ</a>). The group issues a series of standards (PSRs, or PHP Standard Recommendation) on how to best build a PHP project.</p>
+<p>We started a <a href="https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/">poll about moving the PrestaShop codebase to PSR-2</a> (and therefore PSR-1 too) back on April 1st, and the result was clearly positive: 84.62% of the respondents agreed that this was a good idea!</p>
+<p>So, time to prepare for that move!</p>
+<h3 id="when-will-it-happen-and-how">When will it happen, and how?</h3>
+<h4 id="1-state-of-the-current-code">1. State of the current code</h4>
+<p><a href="http://build.prestashop.com/news/new-architecture-1-6-1-0/">PrestaShop&rsquo;s planned new architecture</a> already follows the PSR-2 coding style. For instance, check <a href="https://github.com/PrestaShop/PrestaShop/blob/1.6/Core/Business/Payment/Core_Business_Payment_PaymentOption.php">the new Core_Business_Payment_PaymentOption.php class</a>.</p>
+<p>For the remaining PrestaShop core code (classes, controllers, etc.), we will start moving all files from the PrestaShop coding standards to PSR-2 once PrestaShop 1.6.1.0 has been released.</p>
+<p>Please be bear with us, as there might bugs along the way: changing coding style is not automatic, and it will be a way for us to revise some old code and make the whole codebase stronger.</p>
+<p>In any case, you can participate to this project just by making a pull request! Please have a look at <a href="https://github.com/PrestaShop/PrestaShop/blob/1.6/CONTRIBUTING.md">PrestaShop contribution process</a> in order to help us move things faster and with more confidence! We will need code contributors, but also reviewers and testers!</p>
+<h4 id="2-start-of-the-psr-2-era">2. Start of the PSR-2 era</h4>
+<p>In effect, from the moment PrestaShop 1.6.1.0 is released, the <strong>next pull requests will HAVE TO follow the PSR-1 and PSR-2 standards</strong>. Update your tools and methods!</p>
+<h4 id="3-about-pull-requests-that-are-currently-waiting-for-a-code-review">3. About pull requests that are currently waiting for a code review</h4>
+<p>Many pull requests were written before we announced the project to move to PSR-2.</p>
+<p>Don&rsquo;t worry, we will merge them as-is, and correct their use of PSR-2 afterwards ourselves.</p>
+<p>Obviously, you are more than welcome to upgrade your PRs to PSR-2 yourself :)</p>
+<h4 id="4-about-existing-prestashop-modules">4. About existing PrestaShop modules</h4>
+<p>All existing modules&rsquo; contributors have worked hard to follow the PrestaShop Coding Standards over the years.</p>
+<p>The fact that PrestaShop is changing and is going to use a common coding standard doesn&rsquo;t mean existing modules will suddenly stop being valid!</p>
+<p>The <a href="https://validator.prestashop.com">PrestaShop validator</a> will not reject modules if they follow the old standard for quite some time.</p>
+<p>For your future modules, please follow the PSR-2 coding standards: this will benefit the whole community.</p>
+<h3 id="the-main-differences-between-the-current-norm-and-psr-2">The main differences between the current norm and PSR-2</h3>
+<p>Now it is time to see where the PrestaShop Coding Standards and PSR-2 differ.</p>
+
+
+
+<div class="alert alert-important"><h4><i class="icon-fire"></i>
+        Important
+    </h4><p>At the time of writing, namespaces and closures are not allowed, because we first need to announce the switch to PHP 5.4 as the minimum version supported by PrestaShop.</p>
+<p>This will be announced very soon, and applied in the coming year.</p>
+
+</div>
+
+<h4 id="1-lines">1. Lines</h4>
+<p>The soft limit on line length MUST be 120 characters; automated style checkers MUST warn but MUST NOT error at the soft limit.</p>
+<h4 id="2-keywords">2. Keywords</h4>
+<p>The PHP constants true, false, and null MUST be in lower case.</p>
+<h4 id="3-properties">3. Properties</h4>
+<p>Property names SHOULD NOT be prefixed with a single underscore to indicate protected or private visibility.</p>
+<h4 id="4-methods">4. Methods</h4>
+<p>Method names SHOULD NOT be prefixed with a single underscore to indicate protected or private visibility.</p>
+<h4 id="5-conditions">5. Conditions</h4>
+<h5 id="51-if-elseif-else">5.1. if, elseif, else</h5>
+<p>An <code>if</code> structure looks like the following. Note the placement of parenthesis, spaces, and braces; and that <code>else</code> and <code>elseif</code> are on the same line as the closing brace from the earlier body.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nv">$expr1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// if body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">elseif</span> <span class="p">(</span><span class="nv">$expr2</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// elseif body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// else body;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><h5 id="52-switch-case">5.2. switch, case</h5>
+<p>A <code>switch</code> structure looks like the following. Note the placement of parenthesis, spaces, and braces. The case statement MUST be indented once from switch, and the break keyword (or other terminating keyword) MUST be indented at the same level as the case body. There MUST be a comment such as <code>// no break</code> when fall-through is intentional in a non-empty case body.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">switch</span> <span class="p">(</span><span class="nv">$expr</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="mi">0</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">echo</span> <span class="s1">&#39;First case, with a break&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">echo</span> <span class="s1">&#39;Second case, which falls through&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// no break
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="mi">3</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="mi">4</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">echo</span> <span class="s1">&#39;Third case, return instead of break&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">default</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">echo</span> <span class="s1">&#39;Default case&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h5 id="53-while-do-while-for-foreach-try-catch">5.3. while, do while, for, foreach, try, catch</h5>
+<p>A <code>while</code> statement looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="nv">$expr</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// structure body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>Similarly, a <code>do while</code> statement looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">do</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// structure body;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="nv">$expr</span><span class="p">);</span>
+</span></span></code></pre></div><p>A <code>for</code> statement looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// for body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>A <code>foreach</code> statement looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="nv">$iterable</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// foreach body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>A try catch block looks like the following. Note the placement of parenthesis, spaces, and braces.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// try body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">FirstExceptionType</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// catch body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">OtherExceptionType</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// catch body
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><h3 id="end-of-an-era-beginning-of-a-new-one">End of an era, beginning of a new one!</h3>
+<p>The switch to PSR-2 is just another mark of the changes that are happening at PrestaShop. More exciting things are coming, stay tuned!</p>
+<p>If you have any question about this switch, let us know in the comments!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jun 3, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/coding-standards/">coding-standards</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Jérôme Nadaud
+      <span>R&amp;D Director</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/jeromenadaud">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/JeromeNadaud">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="http://www.nadaud.org">
+        <i class="icon-home"></i> Website
+      </a>
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

@@ -9,60 +9,60 @@
     <lastBuildDate>Tue, 02 Mar 2021 14:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/modules/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Focusing on essential modules</title>
-      <link>https://build.prestashop-project.org/news/focusing-on-essential-modules/</link>
+      <link>https://build.prestashop-project.org/news/2021/focusing-on-essential-modules/</link>
       <pubDate>Tue, 02 Mar 2021 14:00:00 +0100</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/focusing-on-essential-modules/</guid>
+      <guid>https://build.prestashop-project.org/news/2021/focusing-on-essential-modules/</guid>
       <description>Over the years, the PrestaShop project became host and maintainer for a very large number of open source modules. Last year, over 160 of them were present in our GitHub organization. As you probably know already, maintaining them requires a lot of work, and the maintainer team&amp;rsquo;s resources are limited. Proof of this is that some of these modules have not been updated in years.
 For this reason, the product team recently did a survey of almost 600 PrestaShop users to find out which modules were essential for their business and which ones they used the least.</description>
     </item>
     
     <item>
       <title>Security issue with PHPUnit, post-incident analysis</title>
-      <link>https://build.prestashop-project.org/news/phpunit-security-issue-post-analysis/</link>
+      <link>https://build.prestashop-project.org/news/2020/phpunit-security-issue-post-analysis/</link>
       <pubDate>Fri, 28 Feb 2020 10:00:00 +0100</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/phpunit-security-issue-post-analysis/</guid>
+      <guid>https://build.prestashop-project.org/news/2020/phpunit-security-issue-post-analysis/</guid>
       <description>Early January, we encountered a security issue with PHPUnit in some modules that allowed attackers to perform arbitrary code execution without authorization through the PHPUnit dependency. This vulnerability was discovered through a merchant whose shops were compromised.
 Background At PrestaShop, we use an automated system to build packages for native modules and make them available through the Addons Marketplace API. This process uses Composer to install dependencies before creating the zip package.</description>
     </item>
     
     <item>
       <title>Critical security vulnerability in PrestaShop modules</title>
-      <link>https://build.prestashop-project.org/news/critical-security-vulnerability-in-prestashop-modules/</link>
+      <link>https://build.prestashop-project.org/news/2020/critical-security-vulnerability-in-prestashop-modules/</link>
       <pubDate>Tue, 07 Jan 2020 14:15:00 +0100</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/critical-security-vulnerability-in-prestashop-modules/</guid>
+      <guid>https://build.prestashop-project.org/news/2020/critical-security-vulnerability-in-prestashop-modules/</guid>
       <description>Attackers are using a vulnerability in a popular dependency used by modules to take control of PrestaShop sites. For details, please read the entire article.
 What’s happening It has come to our attention that attackers are exploiting a vulnerability in PHPUnit to perform arbitrary code execution in servers running PrestaShop websites. The issue is fixed in PHPUnit 7.5.19 and 8.5.1. To our knowledge, all previous versions are vulnerable, at least for certain server configurations.</description>
     </item>
     
     <item>
       <title>Native modules and smart menu</title>
-      <link>https://build.prestashop-project.org/news/native-modules-and-smart-menu/</link>
+      <link>https://build.prestashop-project.org/news/2018/native-modules-and-smart-menu/</link>
       <pubDate>Thu, 29 Nov 2018 12:00:00 +0100</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/native-modules-and-smart-menu/</guid>
+      <guid>https://build.prestashop-project.org/news/2018/native-modules-and-smart-menu/</guid>
       <description>As an open source project, PrestaShop is continuously being enriched by the company teams, external contributors, developers, etc. Thanks to all the community, it keeps growing in the right direction. The PrestaShop Team is proud and honored to read everybody&amp;rsquo;s feedback, ideas, translations and pull requests, it helps improving the PrestaShop project and making it better for everyone!
 It is the strength of this community that renders each version of the software more powerful, with new features and contributions added.</description>
     </item>
     
     <item>
       <title>The Integration Fund is still alive</title>
-      <link>https://build.prestashop-project.org/news/integration-fund-is-still-alive/</link>
+      <link>https://build.prestashop-project.org/news/2018/integration-fund-is-still-alive/</link>
       <pubDate>Fri, 09 Feb 2018 09:10:11 +0100</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/integration-fund-is-still-alive/</guid>
+      <guid>https://build.prestashop-project.org/news/2018/integration-fund-is-still-alive/</guid>
       <description>Dear contributors, remember when, about two years ago, we presented you the Integration Fund? We even made an amazing video where we talk about this no less amazing Integration Fund. Well, we are still here and running, and for all this we would like to thank you.
 Now, some of you may be wondering: “Integration Fund? Never heard of it!”. So if you&amp;rsquo;ve missed the previous articles, here is where you should go:</description>
     </item>
     
     <item>
       <title>The Integration Fund explained by the team and its contributors</title>
-      <link>https://build.prestashop-project.org/news/integration_fund_explained/</link>
+      <link>https://build.prestashop-project.org/news/2016/integration_fund_explained/</link>
       <pubDate>Fri, 21 Oct 2016 06:09:47 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/integration_fund_explained/</guid>
+      <guid>https://build.prestashop-project.org/news/2016/integration_fund_explained/</guid>
       <description>Still not sure what the Integration Fund is? Take a look at this video:
 It is still time to get involved We are very proud of all the contributors we have funded until now. Together, we are building the ecommerce of tomorrow, in the spirit of WeCommerce.
 But you know the old saying, the more the merrier :) We still have funds to allocate to many local modules.
@@ -82,10 +82,10 @@ Note Several tips only apply to PrestaShop 1.5-1.6 module development. PrestaSho
     
     <item>
       <title>A year of our $1M Fund: Already $200,000 granted, and you too can be a part of it!</title>
-      <link>https://build.prestashop-project.org/news/a-year-of-our-integration-fund/</link>
+      <link>https://build.prestashop-project.org/news/2016/a-year-of-our-integration-fund/</link>
       <pubDate>Wed, 06 Jul 2016 09:10:11 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/a-year-of-our-integration-fund/</guid>
+      <guid>https://build.prestashop-project.org/news/2016/a-year-of-our-integration-fund/</guid>
       <description>Last year PrestaShop launched its 1$ Million Integration Fund, conceived as a way to support a selection of developers by granting them funds to develop local modules. At the Paris PrestaShop Day 2016, we celebrated the first anniversary of the program.
 Here are the figures that we achieved together with contributors from all over the world: $200,000 were granted to fund 130 modules that improve PrestaShop stores in more than 100 countries.</description>
     </item>
@@ -101,19 +101,19 @@ Here are the figures that we achieved together with contributors from all over t
     
     <item>
       <title>PrestaShop episode 1.7: the module page awakens</title>
-      <link>https://build.prestashop-project.org/news/module-page-awakens/</link>
+      <link>https://build.prestashop-project.org/news/2016/module-page-awakens/</link>
       <pubDate>Fri, 15 Jan 2016 15:30:00 +0100</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/module-page-awakens/</guid>
+      <guid>https://build.prestashop-project.org/news/2016/module-page-awakens/</guid>
       <description>We’ve been working on this project for a while now, and it is about time we tell you about the new module page we are planning for PrestaShop 1.7.0! Since September, our team (Thibaud, Thomas, Melvin, Guilhem, Léa and myself) has been busy redesigning the outdated module page of version 1.6. Needless to say, it is an important subject for PrestaShop’s business, but most importantly a key step in merchants’ journey to a successful online store.</description>
     </item>
     
     <item>
       <title>Benefit from the $1M Integration Fund to build your own PrestaShop modules</title>
-      <link>https://build.prestashop-project.org/news/prestashop-integration-fund/</link>
+      <link>https://build.prestashop-project.org/news/2015/prestashop-integration-fund/</link>
       <pubDate>Thu, 08 Oct 2015 14:29:47 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-integration-fund/</guid>
+      <guid>https://build.prestashop-project.org/news/2015/prestashop-integration-fund/</guid>
       <description>One of the strengths of PrestaShop is how it reaches merchants all around the world through a highly customizable code, a high number of available languages and a rich catalog of local modules. We’re going a step further by making a big effort to offer local modules on PrestaShop Addons marketplace, thanks to the $1 million Integration Fund, launched in June, 2015.
 The PrestaShop community is at the heart of this program, with two main goals:</description>
     </item>

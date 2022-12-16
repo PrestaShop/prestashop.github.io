@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Introducing a new bug severity classification</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Introducing a new bug severity classification" />
+<meta property="og:description" content="According to the Information Technology Infrastructure Library (ITIL), a bug is an “event that is not part of the standard operation of a service and causes an unplanned interruption or decrease the quality of service”. And it is everybody’s job to chase them all!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2019/severity-classification/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2019-05-29T11:30:00+02:00" />
+    <meta property="article:modified_time" content="2019-05-29T11:30:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Introducing a new bug severity classification"/>
+<meta name="twitter:description" content="Discover how issues related to PrestaShop software are qualified and prioritized"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Introducing a new bug severity classification</h1>
+              
+                <h3 class="post-subtitle">Discover how issues related to PrestaShop software are qualified and prioritized</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/13449658?s=400&amp;v=4"
+         alt="Marion François's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Marion François</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    May 29, 2019
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Introducing&#43;a&#43;new&#43;bug&#43;severity&#43;classification&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2019%2Fseverity-classification%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2019%2Fseverity-classification%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>According to the <a href="https://fr.wikipedia.org/wiki/Information_Technology_Infrastructure_Library">Information Technology Infrastructure Library (ITIL)</a>, a bug is an &ldquo;event that is not part of the standard operation of a service and causes an unplanned interruption or decrease the quality of service&rdquo;. And it is everybody’s job to chase them all!</p>
+<p>At the PrestaShop Quality Assurance team (aka QA), we browse issues on GitHub all day long. As we go about doing that, we often come across messages from people who are annoyed about a bug taking a long time to be fixed, and saying &ldquo;this is a major issue, why is it still not fixed?”, or “This bug is marked as minor but it should be major”. Everyone agrees that not all bugs can be fixed at once, and that the more critical bugs should be fixed first. The problem is that since this appreciation is subjective, any opinion will almost always be challenged by the people who are personally affected by that specific issue, and who want to get it resolved first.</p>
+<p>In order to avoid frustration and misunderstandings, it was time to come up with a better, more formal and transparent definition for the criteria used to qualify issues’ severity, and how they should be applied.</p>
+<p>The first thing to learn is that severity is to be distinguished from priority. Indeed, severity is used to measure the negative impact that a bug has on a system, a feature, a component or on the project development. It is usually defined by the QA team. As for the priority, it is used to organize all the tasks (bugs, improvements, features, technical tasks) that have to be done in order to meet the project’s deadlines.</p>
+<h2 id="issue-severity-criteria">Issue Severity Criteria</h2>
+<p>When a new issue is created, the first step is to understand what the problem is and then reproduce it. Once that work is done, the second step is to define the severity of that bug.</p>
+<p>Four severity levels have been defined, as explained below.</p>
+<h3 id="critical">Critical</h3>
+<p>The bug affects critical functionality or critical data and there is no workaround (no way to avoid it).
+A critical issue affects a very large percentage of users (&gt; 60%) and matches at least one of the following:</p>
+<ul>
+<li>It can lead to data loss, introduce a security vulnerability or break the automatic end to end tests</li>
+<li>It prevents the essential shop operations or puts your business at great risk</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Difficulty accessing the front office or back office (significant slowdown, error during installation or update, fatal error)</li>
+<li>Difficulty to globally manage categories, products or customers</li>
+<li>Difficulty to globally place and manage orders</li>
+</ul>
+<p>A critical issue should result in a patch version that should be released as soon as possible. <a href="http://build.prestashop.com/news/prestashop-1-7-2-5-maintenance-release/">PrestaShop 1.7.2.5</a> is a good example: this patch release fixes two vulnerabilities affecting the Back Office.</p>
+<h3 id="major">Major</h3>
+<p>The bug affects major functionality or major data and there is a workaround, but it is not obvious or can be difficult to put in practice.</p>
+<p>A major issue affects a large percentage of users (&gt; 30%) and matches at least one of the following:</p>
+<ul>
+<li>It impacts law compliance</li>
+<li>It has a strong impact on the usability of the front-office / back-office or blocks another project</li>
+<li>It is an important problem but not necessarily blocking the main activity of the seller</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Being unable to add, configure or delete a theme or a module</li>
+<li>Difficulty in operating a module properly</li>
+<li>Impacts the price the customer pays</li>
+</ul>
+<h3 id="minor">Minor</h3>
+<p>The bug affects minor functionality or non-critical data and there is a reasonable workaround, even if it can be annoying when using your shop.</p>
+<p>Examples:</p>
+<ul>
+<li>A tolerable slowdown</li>
+<li>A display problem that prevents users from doing something non-critical (eg: can’t click on an element that can be accessible in another way)</li>
+<li>An error message displayed in your back-office that can be dismissed</li>
+<li>Cloning a product doesn&rsquo;t copy all of it&rsquo;s data</li>
+<li>Inaccurate statistics</li>
+</ul>
+<h3 id="trivial">Trivial</h3>
+<p>The bug doesn’t affect any functionality or data. It does not impact productivity or efficiency. It is only an inconvenience without functional impact and it does not even need a workaround.</p>
+<p>Examples:</p>
+<ul>
+<li>Cosmetic issues</li>
+<li>Wrong translation in a specific language: that can be solved on <a href="https://crowdin.com/project/prestashop-official">Crowdin</a></li>
+<li>Missing confirmation message after an action</li>
+<li>A link opened in the same tab instead of a new tab</li>
+</ul>
+<h2 id="issue-prioritization">Issue Prioritization</h2>
+<p>Assessing severity helps to prioritize issues but it is not the only criterion at stake. Given two equally severe issues, how to choose one over the other ?</p>
+<p>At PrestaShop, prioritization is done by representatives of the Development team, the Product Management team, and the Quality Assurance team. Together, during regular meetings, we look at the new confirmed issues and we sort them.</p>
+<p>One of the things we value a lot is making sure that a given bug does not damage PrestaShop’s image nor it affects the confidence merchants can have in PrestaShop. This factor is really important as it can durably damage the adoption of the project and its long-term survival.</p>
+<p>We take special care and strive to make every version of PrestaShop better than the one before. Since no one wants to introduce new bugs while fixing other bugs, regressions (new bugs created accidentally when fixing or improving an existing feature) are usually prioritized higher than older bugs. By doing this, we can assure that the overall software stability is ever increasing.</p>
+<p>In addition, we also study the issue&rsquo;s technical complexity, that is, whether the bug is easy or complex to fix. In some cases we will choose to prioritize a smaller bug over a bigger one, not because we are lazy, but because a complex bug may require big technical changes which are not suitable until a later version. This may be because a would require applying backwards-incompatible changes (which are bad for module developers), or because it can be better addressed as a part of a larger project – there is no use fixing a bug if the whole feature is due to be revamped in the near future. Speaking of which, sometimes we will prioritize some bugs just because of the “opportunity cost” of fixing them together, as it’s usually easier to fix several bugs within the same component. For example, during the migration of a page to Symfony, the bugs of this page are prioritized higher in order to fix them all at once.</p>
+<p>Finally, we pay attention to the business impact. Since we care a lot about PrestaShop users (merchants, agencies, developers &hellip;), we are eager to find a solution when it affects their sales proceeds. Or ours. After all, we need to eat as well, and we use PrestaShop too.</p>
+<p>In the end, handling bugs requires two points of view: micro and macro. Severity analyzes the issue on its own, while Priority analyzes the issue in the context of the whole project.</p>
+<p>If you encounter an issue, please <a href="https://github.com/PrestaShop/PrestaShop/issues/new?template=bug_report.md">create a bug report</a>. And if you have a solution, do not be shy and submit a pull request with your fix. This way, issues have better chances to be solved quickly, for everyone!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">May 29, 2019</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/qa/">qa</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Marion François
+      <span>Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/marionf">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

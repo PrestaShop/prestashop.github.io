@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>All about PrestaShop 1.7</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="All about PrestaShop 1.7" />
+<meta property="og:description" content="For those who want to dive into the new major version of PrestaShop, version 1.7, this page summarizes the available information so far – mostly published on the Build devblog, which you should read every week [:)]" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2015/all-about-prestashop-1-7/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2015-11-03T09:10:11+01:00" />
+    <meta property="article:modified_time" content="2015-11-03T09:10:11+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="All about PrestaShop 1.7"/>
+<meta name="twitter:description" content="All the 1.7-related articles published on Build, Curated just for you"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">All about PrestaShop 1.7</h1>
+              
+                <h3 class="post-subtitle">All the 1.7-related articles published on Build, Curated just for you</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749"
+         alt="Xavier Borderie's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Xavier Borderie</div>
+        
+          <div class="author-display-role">Open Source Advocate</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Nov 3, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=All&#43;about&#43;PrestaShop&#43;1.7&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fall-about-prestashop-1-7%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fall-about-prestashop-1-7%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>For those who want to dive into the new major version of PrestaShop, version 1.7, this page summarizes the available information so far &ndash; mostly published on the Build devblog, which you should read every week [:)]</p>
+<p>Public releases:</p>
+<ul>
+<li>On April 4th 2016, the first public test version was released, <a href="http://build.prestashop.com/news/prestashop-1-7-alpha-3-is-here/">version 1.7.0.0 alpha 3</a>.</li>
+<li>On April 25th 2016, <a href="http://build.prestashop.com/news/here-comes-prestashop-1-7-alpha-4/">we released 1.7.0.0 alpha 4</a>.</li>
+<li>On June 2nd 2016, <a href="http://build.prestashop.com/news/prestashop-1-7-beta-1-open-for-feedback/">we released 1.7.0.0 Beta 1</a>.</li>
+<li>On July 18th 2016, <a href="http://build.prestashop.com/news/prestashop-17-beta2/">we released 1.7.0.0 Beta 2</a>.</li>
+<li>On August 1st 2016, <a href="http://build.prestashop.com/news/prestashop-1-7-beta-3/">we released 1.7.0.0 Beta 3</a>.</li>
+<li>On August 29th 2016, <a href="http://build.prestashop.com/news/prestashop-1-7-RC0/">we released 1.7.0.0 RC0</a>.</li>
+<li>On September 20th 2016, <a href="http://build.prestashop.com/news/prestashop-1-7-RC1/">we released 1.7.0.0 RC1</a>.</li>
+<li>On October 10th 2016, <a href="http://build.prestashop.com/news/prestashop-1-7-RC2/">we released 1.7.0.0 RC2</a>.</li>
+<li>On October 27th 2016, <a href="http://build.prestashop.com/news/prestashop-1-7-RC3/">we released 1.7.0.0 RC3</a>.</li>
+<li><strong>Version 1.7.0.0 was released on November 7th 2016!</strong> Read the <a href="https://www.prestashop.com/blog/en/prestashop-1-7-now-available-discover-new-functions/">official announcement</a>, and the <a href="http://build.prestashop.com/news/prestashop-1-7-0-0-released/">Build article</a>.</li>
+</ul>
+<p>In general, you really should pay a visit to the Build devblog on a regular basis.
+This is where we update the Community on the latest news from the Dev team!</p>
+<p>Quick selection of articles about v1.7:</p>
+<ul>
+<li><strong><a href="http://build.prestashop.com/news/Dropping-support-php52-and-53/">Dropping support for PHP 5.2 and 5.3</a></strong><br/>
+June 2015: The team wants to modernize PrestaShop&rsquo;s codebase by adopting PHP 5.4. Together with the adoption of SemVer, this change will mean the arrival of a new major version: PrestaShop 1.7.</li>
+<li><strong><a href="http://build.prestashop.com/news/version-1-7-0-0-is-underway/">1.7 initial announcement</a></strong><br/>
+September 2015: Presentation of our intentions and objectives.</li>
+<li><strong><a href="http://build.prestashop.com/news/cldr-composer-jshint/">Information about CLDR, Composer, JSHint&hellip;</a></strong><br/>
+September 2015: The arrival of CLDR and the use of Composer in the development of version 1.7.</li>
+<li><strong><a href="http://build.prestashop.com/news/meet-prestashop-team-prestashop-1-7/">Meet the team behind PS 1.7</a></strong><br/>
+January 2016: Sébastien and his team present the main details for the 1.7 project, in video format.</li>
+<li><strong><a href="http://build.prestashop.com/news/module-page-awakens/">PrestaShop episode 1.7: the module page awakens</a></strong><br/>
+January 2016: Presentation of one of the main projects for 1.7, the remaking of the Modules page.</li>
+<li><strong><a href="http://build.prestashop.com/news/product-page-evolution/">The Product Page - Evolution Revolution</a></strong><br/>
+February 2016: Another main project of PS 1.7, the UI/UX evolution of the Product page.</li>
+<li><strong><a href="http://build.prestashop.com/news/prestashop-1-7-faq/">Everything you need to know about PrestaShop 1.7.0.0</a></strong><br/>
+February 2016: The FAQ for the PS 1.7 project.</li>
+<li><strong><a href="http://build.prestashop.com/news/prestashop-theme-documentation-for-17/">PrestaShop theme documentation first draft is out</a></strong><br/>
+April 2016: Contribute to the creation of the theme documentation!</li>
+<li><strong><a href="http://build.prestashop.com/news/how-we-reorganized-main-menu-prestashop-1.7/">How we reorganized the main menu in PrestaShop 1.7</a></strong><br/>
+April 2016: It&rsquo;s the User Experience, baby!</li>
+<li><strong><a href="http://build.prestashop.com/news/module-development-changes-in-17/">Module development changes in PrestaShop 1.7.0.0</a></strong><br/>
+June 2016: Prepare your 1.6 modules to ensure maximum 1.7 compatibility</li>
+<li><strong><a href="http://build.prestashop.com/news/new-translation-system-prestashop-17/">A New Translation System for PrestaShop 1.7</a></strong><br/>
+July 2016: it should be easier to translate PrestaShop from now on.</li>
+<li><strong><a href="http://build.prestashop.com/news/developer-documentation/">New developer documentation for PrestaShop 1.7</a></strong><br/>
+September 2016: Dive into 1.7 module development &ndash; and contribute to the doc with pull requests!</li>
+<li><strong><a href="http://build.prestashop.com/news/prestashop-1-7-performances/">PrestaShop 1.7 &amp; performances</a></strong><br/>
+October 2016: Hard work pays off!</li>
+</ul>
+<p>Articles about the new architecture:</p>
+<ul>
+<li><strong><a href="http://build.prestashop.com/news/new-architecture-1-6-1-0/">New architecture initial announcement</a></strong>
+May 2015: Presenting our first architecture modernization effort, which will lead to the (pre-SemVer) major version 1.6.1.0.</li>
+<li><strong><a href="http://build.prestashop.com/news/prestashop-1-7-and-symfony/">Introducing Symfony2</a></strong>
+December 2015: The dev team has chosen to include the Symfony 2.8 framework in the new architecture for PS 1.7. The article details the integration plan.</li>
+</ul>
+<p>Articles about the Starter Theme:</p>
+<ul>
+<li><strong><a href="http://build.prestashop.com/news/starter-theme-kickoff/">Starter Theme announcement</a></strong>
+August 2015: Launch of the Starter Theme project, which rebuilds the PrestaShop&rsquo;s Theme API while offering a skeleton theme which developers will be able to use in order to create their own theme way more easily. The 1.7 default theme will be built upon this Starter Theme.</li>
+<li><strong><a href="http://build.prestashop.com/news/starter-theme-news/">Project update 1</a></strong>
+October 2015: Template inheritance, relative template path, new directory structure, widgetizable modules, use of custom Smarty plugins, deprecations (Mobile theme, Live Edit, scenes).</li>
+<li><strong><a href="http://build.prestashop.com/news/starter-theme-news-2/">Project update 2</a></strong>
+October 2015: Minimal CSS, product page, notifications, use of Smarty, integration tests.</li>
+<li><strong><a href="http://build.prestashop.com/news/starter-theme-news-3/">Project update 3</a></strong>
+December 2015: Page layout, checkout process, Payment API, layered navigation, pagination, search, contact form, cleaning (removal of Live Edit and Theme Configurator).</li>
+</ul>
+<p>Articles about the new default theme:</p>
+<ul>
+<li><strong><a href="http://build.prestashop.com/news/new-theme-1-7-introduction/">New default theme for PrestaShop 1.7</a></strong>
+February 2016: Introducing the new default theme for PS 1.7, based on the Starter Theme. Screenshots!</li>
+<li><strong><a href="http://build.prestashop.com/news/Designing-the-new-PrestaShop-default-theme/">Designing the new PrestaShop default theme</a></strong>
+June 216: How we rebuilt the front office to suit any merchant</li>
+</ul>
+<p>Articles that go beyond the scope of v1.7:</p>
+<ul>
+<li><strong><a href="http://build.prestashop.com/news/a-more-semantic-versioning-scheme/">Adopting SemVer for our version numbers</a></strong>
+June 2015: Announcing the adoption of Semantic Versioning (SemVer) for the version after 1.6.1.0, which introduce major/minor/patch releases.</li>
+<li><strong><a href="http://build.prestashop.com/news/introducing-new-branching-model-prestashop/">Introducing a new branching model</a></strong>
+August 2015: After adopting SemVer, the team adopts a new way of managing its Git branches (and therefore the Community pull requests on GitHub), with &lsquo;develop&rsquo; for the development version (1.7) and &lsquo;1.6.1.x&rsquo; for the maintenance of 1.6.</li>
+<li><strong><a href="http://build.prestashop.com/news/prestashop-moves-to-psr-2/">Moving to PSR-2 code style guide</a></strong>
+June 2015: Announcing the adoption of the PSR-2 standard instead of using PrestaShop own coding standard.</li>
+<li><strong><a href="http://build.prestashop.com/news/prestashop-coding-standards/">Evolution of the PrestaShop Coding Standards</a></strong>
+May 2016: How to best contribute code to the PrestaShop project</li>
+<li><strong><a href="http://build.prestashop.com/news/introducing-prestonbot/">Introducing PrestonBot</a></strong>
+September 2016: Automating the pre-review of pull requests.</li>
+<li><strong><a href="http://build.prestashop.com/news/prestashop-community-framework/">Introducing PrestaShop&rsquo;s Community Framework</a></strong>
+October 2016: Improving pull request, and welcoming Michael Dekker as a Code Reviewer</li>
+</ul>
+<p>Also: <a href="http://www.jobs.net/jobs/prestashop/en-gb/">we&rsquo;re hiring</a>!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Nov 3, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Xavier Borderie
+      <span>Open Source Advocate</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

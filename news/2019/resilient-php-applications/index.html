@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Resilient PHP applications</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Resilient PHP applications" />
+<meta property="og:description" content="No matter how well designed is your project and how many tests you have, at some point your website can become inaccessible." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2019/resilient-php-applications/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2019-01-23T11:10:00+01:00" />
+    <meta property="article:modified_time" content="2019-01-23T11:10:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Resilient PHP applications"/>
+<meta name="twitter:description" content="Introducing the PrestaShop Circuit Breaker library"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Resilient PHP applications</h1>
+              
+                <h3 class="post-subtitle">Introducing the PrestaShop Circuit Breaker library</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/1247388"
+         alt="Mickaël Andrieu's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Mickaël Andrieu</div>
+        
+          <div class="author-display-role">Technical evangelist / Creator of PrestonBot</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jan 23, 2019
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Resilient&#43;PHP&#43;applications&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2019%2Fresilient-php-applications%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2019%2Fresilient-php-applications%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>No matter how well designed is your project and how many tests you have, at some point your website can become inaccessible.</p>
+<p>And this because of your database, or calls to third-party services that are unavailable (e.g: payment methods API, PrestaShop REST API to retrieve modules information, synchronization with an ERP, automatization of warehouse &amp; logistic, etc.).</p>
+<p>Instead of thinking everything will be ok, we - as developers - need to manage our systems&rsquo; failures.</p>
+<p>Indeed, we need to create both resilient systems and websites able to recover quickly from network disasters.</p>
+<h2 id="the-risks-of-depending-on-external-services">The risks of depending on external services</h2>
+<p>Assuming that all external services will work just fine is risky because you don&rsquo;t think about what could happen in case of unavailability:</p>
+<ul>
+<li>If the payment APIs are not reachable, instead of freezing your shop, you could suggest your customer to come back once the system is ok and offer them a little discount;</li>
+<li>You ought to be able to install PrestaShop even if translations APIs are not reachable, at least in English;</li>
+<li>You ought to be able to access your back office, no matter how many external APIs respond.</li>
+</ul>
+<p><strong>The collapse of a third-party service should never impact your shop.</strong></p>
+<p>Another issue with this kind of naive assumptions is that your system will try to contact again and again the third-party service. As a consequence, it slows down your system and makes the user experience terrible when you could instead find out an alternative response.</p>
+<blockquote>
+<p>There is no good reason to provide such a terrible user experience! period.</p>
+</blockquote>
+<h2 id="introducing-the-prestashop-circuit-breaker-library">Introducing the PrestaShop Circuit Breaker library</h2>
+<p>The <a href="https://martinfowler.com/bliki/CircuitBreaker.html">Circuit Breaker</a> design pattern provides strategies and functions to manage the unavailability of the third-party services.</p>
+<p>The idea behind the circuit breaker is very simple:</p>
+<ul>
+<li>Every call to a third-party service is wrapped into a function call from the Circuit Breaker;</li>
+<li>Once we reach a defined numbers of failures (means the service is unreachable), the Circuit Breaker is &ldquo;Open&rdquo;: an alternative response is provided and no calls to the service are done;</li>
+<li>After a defined amount of time (sometimes called &ldquo;reset timeout&rdquo;), the Circuit Breaker tries to access the service: if the service is available it will be used again, otherwise it provides an alternative response.</li>
+</ul>
+<p><img src="https://martinfowler.com/bliki/images/circuitBreaker/sketch.png" alt="https://martinfowler.com/bliki/CircuitBreaker.html"></p>
+<blockquote>
+<p>Schema from Martin Fowler&rsquo;s blog.</p>
+</blockquote>
+<p>It implies a big change of mindset for both e-merchants and developers. Indeed, for each process, they will have to think about/anticipate what should be done in case a service is not available.</p>
+<p>Just like web developers do when handling old web browsers to design a website, it is possible to think since the beginning about a &ldquo;degraded experience&rdquo; when some third-party services are not available, using a &ldquo;circuit breaker&rdquo;.</p>
+<h3 id="how-works-the-prestashop-circuit-breaker">How works the PrestaShop Circuit Breaker?</h3>
+<p>We were not satisfied with the quality and the constraints of the existing libraries or Symfony bundles:</p>
+<ul>
+<li>We want something <strong>really</strong> extensible;</li>
+<li>We want something <strong>fully tested</strong> and with <strong>high quality</strong> standards;</li>
+<li>We want something that doesn&rsquo;t require uncommon PHP extensions (like <em>pcntl</em>);</li>
+<li>And &hellip; we stil need to provide PHP 5.6+ compatibility.</li>
+</ul>
+<p>This is why we have worked on our own implementation of the design pattern, that relies on the popular HTTP Client <a href="http://docs.guzzlephp.org/en/stable/index.html">Guzzle</a> to make third-party service calls, and on the <a href="https://symfony.com/doc/3.4/components/cache.html#simple-caching-psr-16">Symfony Cache</a> component to store and log every call.</p>
+<p>Let&rsquo;s see how it will be used in PrestaShop modules controllers starting from PrestaShop 1.7.6:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$fallbackResponse</span> <span class="o">=</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;{
+</span></span></span><span class="line"><span class="cl"><span class="s1">        &#34;error&#34;: &#34;service is unreachable right now.&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s1">    }&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">call</span><span class="p">(</span><span class="s1">&#39;https://api.some-domain.com&#39;</span><span class="p">,</span> <span class="nv">$fallbackResponse</span><span class="p">);</span>
+</span></span></code></pre></div><p>As this library doesn&rsquo;t depend on PrestaShop core libraries, you can use it in every PHP project:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">PrestaShop\CircuitBreaker\SimpleCircuitBreakerFactory</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$circuitBreakerFactory</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SimpleCircuitBreakerFactory</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$circuitBreaker</span> <span class="o">=</span> <span class="nv">$circuitBreakerFactory</span><span class="o">-&gt;</span><span class="na">create</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;closed&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;open&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;half_open&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;client&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">&#39;proxy&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;192.168.16.1:10&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$fallbackResponse</span> <span class="o">=</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;{}&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$circuitBreaker</span><span class="o">-&gt;</span><span class="na">call</span><span class="p">(</span><span class="s1">&#39;https://api.domain.com&#39;</span><span class="p">,</span> <span class="nv">$fallbackResponse</span><span class="p">);</span>
+</span></span></code></pre></div><h2 id="whats-next">What’s next?</h2>
+<p>We will start to use it on the &ldquo;so well-known&rdquo; gamification module soon, and the library will be available in the PrestaShop next minor version (1.7.6). Step by step, we will make PrestaShop&rsquo;s core and native modules resilient to networks failures.</p>
+<p>The Circuit Breaker library is developed and distributed under the MIT license, like many other librairies and dependencies already included in the PrestaShop project (example: Symfony). This way, it is possible for anyone to use it with any other project. Your feedback and your contribution are welcome: feel free to open pull requests and issues about your needs.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jan 23, 2019</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Mickaël Andrieu
+      <span>Technical evangelist / Creator of PrestonBot</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/mickaelandrieu">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/mickael_andrieu">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

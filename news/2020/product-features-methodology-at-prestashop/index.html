@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Product development at PrestaShop</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Product development at PrestaShop" />
+<meta property="og:description" content="In March 2020, the Core product team at PrestaShop, in charge of building and prioritizing new features, decided to work with a new tool: Productboard." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2020/product-features-methodology-at-prestashop/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2020-07-09T09:00:00+02:00" />
+    <meta property="article:modified_time" content="2020-07-09T09:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Product development at PrestaShop"/>
+<meta name="twitter:description" content="What happens in the team when working on new features"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Product development at PrestaShop</h1>
+              
+                <h3 class="post-subtitle">What happens in the team when working on new features</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/25405887?s=400&amp;v=4"
+         alt="Samuel Pirès's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Samuel Pirès</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jul 9, 2020
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Product&#43;development&#43;at&#43;PrestaShop&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fproduct-features-methodology-at-prestashop%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fproduct-features-methodology-at-prestashop%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>In March 2020, the Core product team at PrestaShop, in charge of building and prioritizing new features, decided to work with a new tool: Productboard.</p>
+<p>The team thought it was the right occasion to talk more about the product development at PrestaShop, the steps, the roles and responsibilities and what happens behind the scenes before a new feature is added to PrestaShop.</p>
+<h2 id="prestashops-product-development-cycle">PrestaShop’s product development cycle</h2>
+<h3 id="core-product-team">Core product team</h3>
+<p>In the PrestaShop company, a cross-functional team is dedicated to maintaining the PrestaShop open source project: the Core team.</p>
+<p>Its mission is to make sure the software is stable, usable, and valuable to all of its users while following the industry standards. All this requires many people and several different skills. Currently, the Core team counts 9 developers, 5 QA engineers, 2 designers, 1 content manager, and 4 product managers.</p>
+<p>Editing and maintaining a software like PrestaShop means fixing bugs but also adding improvements and new features.</p>
+<p>Fixing a bug does not require the same skills that defining a new feature. Most of the time, the functional scope of a bug is obvious: the &lsquo;save&rsquo; button does not work, let&rsquo;s fix it so that it can save. Adding a feature is a bit more complex: in-depth search must be done to specify the functional scope.</p>
+<p>Why so? Because <strong>the goal of any feature is to solve a problem</strong>. So we need to answer the following questions get a better definition of the issue: what exactly is the problem? how many users encounter it? how painful is it? is there any workaround?</p>
+<p>But each added feature makes the software more complex again - more complex to maintain and in some cases more complex to use&hellip; So, on one hand, we cannot afford to add useless features and, on the other hand, we must make sure that any added feature will be usable. And that’s where our product team is needed!</p>
+<p>Our product managers are responsible for delivering value to all PrestaShop users. And the first step to do so is to decide which features must be improved or built. How? By getting insights on the users’ needs and issues to solve.</p>
+<p>Once we know what problem to address, it is time to design the feature. It will allow us to create a tangible and usable solution, coherent with the software. That is the designers’ and the product content manager&rsquo;s responsibility.</p>
+<p>While the product manager’s job is to identify the problem to solve, the designer&rsquo;s job is to design the best solution. Of course, this is done in collaboration with everyone. And then the whole team can start building the feature.</p>
+<h3 id="how-to-know-what-to-focus-on">How to know what to focus on?</h3>
+<p>Everything starts with feedback. Without feedback, without talking with users, we are blind, lost in the fog.</p>
+<p>PrestaShop being an open source project, the team can rely on its tremendous community to gather feedback, identify pain points, and discuss many topics. So collecting feedback is not that difficult, GitHub is probably the main source, but there are also events such as <a href="http://ambassadors.prestashop.com/ambassadors">ambassadors&rsquo; meetups</a>, <a href="https://events.prestashop.com/">PrestaShop events</a>, user interviews regularly conducted by the product team, and the <a href="https://github.com/PrestaShop/open-source/blob/master/slack/readme.md">community Slack</a>. We also keep an eye on what happens around in the e-commerce and CMS industries to make sure the software goes in the right direction regarding the market&rsquo;s evolutions and expectations.</p>
+<p>Collecting feedback is easy. What is more difficult is to centralize and analyze it in order to identify the users’ needs lying behind.</p>
+<p>Productboard will help the team here. By making it easier and automatic to centralize feedback directly in the same place. Wherever it comes from. We call these feedback <strong>insights</strong>. On Productboard, product managers can create topics to group <strong>insights</strong> together, this step helps form a first <strong>expression of needs</strong>. Sometimes the expression of needs already gives the best solution, sometimes it is still a bit early to know how it could be solved.</p>
+<p>How interesting is it for the community? Well, Productboard allows us to share this work externally! This is great to inform the community about the problems the team has identified and to keep collecting more information about them. It is crucial to help us understand all the possible use cases of a problem.</p>
+<p><strong>You will soon be able to see these expressions of needs on the PrestaShop Feedback website.</strong></p>
+<h3 id="how-to-go-from-a-need-to-a-feature">How to go from a need to a feature?</h3>
+<p>Centralizing and analyzing insights is difficult. But the next step of our product development is even more difficult: prioritizing the users&rsquo; needs.</p>
+<p>PrestaShop is used on 300k+ online stores around the world, and its community gathers more than 1 million people.
+There are hundreds of needs out there, waiting to be solved. So how does the team decide what to build next?</p>
+<p>The Core product team uses several criteria to evaluate the importance of a need. There is no scientific, or magical, formula. It is a list of aspects that the team reviews in light of the research and analysis previously run. Among these aspects are:</p>
+<ul>
+<li>legal requirements,</li>
+<li>the impact on the merchants’ businesses,</li>
+<li>the impact on merchant productivity,</li>
+<li>the impact on the developer experience,</li>
+<li>and many more&hellip;</li>
+</ul>
+<p>As you can see, it is important for the team to take into account all the impacts of solving a need and building features. It is also crucial for us to keep in touch with the users at all steps, especially while doing some research and during the conception phase, so that we can never lose sight of the initial need.</p>
+<h3 id="designing-a-feature">Designing a feature</h3>
+<p>Lastly, once you know what to focus on, and what you should work on next, it is actually time to design the feature, to define what to build.</p>
+<p>Designing a feature means defining what is the best solution to a problem, a need. There are many ways to solve a problem. But design is not about solving a problem, it is about solving a problem the best way possible and with elegance.</p>
+<p>The usual process to design and build a feature is the following:</p>
+<ul>
+<li>User Research</li>
+<li>Prototyping and design</li>
+<li>Specifications</li>
+<li>Development</li>
+<li>QA testing</li>
+<li>Release</li>
+</ul>
+<p>And sometimes there are several iterations in between to reach a complete feature.</p>
+<p>Once the prototyping and design phases approved, we create an EPIC on <a href="https://github.com/PrestaShop/PrestaShop/labels/Epic">GitHub</a> including the feature description and all of the related user stories (each US being a specific issue) that need to be addressed. It can also contain a few bugs to fix in the meantime.</p>
+<p>In parallel, we write down functional specifications and add it to the dedicated <a href="https://github.com/PrestaShop/prestashop-specs">repository</a> with all prototypes screenshots and links to the mockups.</p>
+<p>If all the stakeholders of the feature (PM, CM, designer, developer, and QA engineer) agree on it, the development phase starts. Step by step, the user stories reach the <a href="https://github.com/PrestaShop/PrestaShop/projects">version kanban</a>. When all issues are developed and their pull requests merged, we close the EPIC.</p>
+<p>This process stays the same, whether the development is done internally or with the help of the community. We do so to ensure alignment before the development phase.</p>
+<p>Here is how feature development goes at the Core product team, dealing with feedback and skills from both the external and the internal contributors! Product development on such a huge project is quite challenging, that is why the team makes a point of keeping this workflow clear and available for all. As usual, feel free to comment and let us know what you think about it. Even better, tell us about how do you prioritize, organize your own development process&hellip; we would love to have your feedback!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jul 9, 2020</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/design/">design</a>
+
+  <a class="label label-primary" href="/tag/feature/">feature</a>
+
+  <a class="label label-primary" href="/tag/process/">process</a>
+
+  <a class="label label-primary" href="/tag/product/">product</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Samuel Pirès
+      <span>Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/sam-pires">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/Sam__Pires">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

@@ -20,10 +20,10 @@ Page title It will define the page URL (most of the time), and is repeated each 
     
     <item>
       <title>New developer documentation for PrestaShop 1.7</title>
-      <link>https://build.prestashop-project.org/news/developer-documentation/</link>
+      <link>https://build.prestashop-project.org/news/2016/developer-documentation/</link>
       <pubDate>Wed, 28 Sep 2016 10:00:00 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/developer-documentation/</guid>
+      <guid>https://build.prestashop-project.org/news/2016/developer-documentation/</guid>
       <description>PrestaShop 1.7 is a major release: a lot of code has been refactored, new features have been added, and a new way of building themes has been introduced. So, very early in the development release cycle, we decided to write more doc in order to support the designers and developers intending to switch to 1.7.
 The documentation&amp;rsquo;s very first draft is now online: http://developers.prestashop.com/
 New website Historically, PrestaShop hosted its documentation on http://doc.</description>
@@ -31,10 +31,10 @@ New website Historically, PrestaShop hosted its documentation on http://doc.</de
     
     <item>
       <title>Module development changes in PrestaShop 1.7.0.0</title>
-      <link>https://build.prestashop-project.org/news/module-development-changes-in-17/</link>
+      <link>https://build.prestashop-project.org/news/2016/module-development-changes-in-17/</link>
       <pubDate>Thu, 16 Jun 2016 09:10:11 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/module-development-changes-in-17/</guid>
+      <guid>https://build.prestashop-project.org/news/2016/module-development-changes-in-17/</guid>
       <description>Existing modules should mostly work as-is with version 1.7. In this article, we dive into that “mostly”!
 As you certainly know, all well-written 1.6 modules should work with little to no changes in version 1.7, except:
 Those which target the theme/front office – because we rewrote the way themes are written. Those which target the Product page – because the DOM of this page has changed. Those which target the Modules page – again, because the DOM of this page has changed.</description>

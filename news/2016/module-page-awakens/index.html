@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop episode 1.7: the module page awakens</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop episode 1.7: the module page awakens" />
+<meta property="og:description" content="We’ve been working on this project for a while now, and it is about time we tell you about the new module page we are planning for PrestaShop 1.7.0! Since September, our team (Thibaud, Thomas, Melvin, Guilhem, Léa and myself) has been busy redesigning the outdated module page of version 1.6. Needless to say, it is an important subject for PrestaShop’s business, but most importantly a key step in merchants’ journey to a successful online store." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2016/module-page-awakens/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2016-01-15T15:30:00+01:00" />
+    <meta property="article:modified_time" content="2016-01-15T15:30:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="PrestaShop episode 1.7: the module page awakens"/>
+<meta name="twitter:description" content="Why we’re making a new module page, and what’s in it"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop episode 1.7: the module page awakens</h1>
+              
+                <h3 class="post-subtitle">Why we’re making a new module page, and what’s in it</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://fr.gravatar.com/userimage/91609995/38361fbb8f44093203780a23155f280d.jpg"
+         alt="Guillaume Bruere's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Guillaume Bruere</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jan 15, 2016
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;episode&#43;1.7%3A&#43;the&#43;module&#43;page&#43;awakens&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fmodule-page-awakens%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fmodule-page-awakens%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>We’ve been working on this project for a while now, and it is about time we tell you about the new module page we are planning for PrestaShop 1.7.0!
+Since September, our team (Thibaud, Thomas, Melvin, Guilhem, Léa and myself) has been busy redesigning the outdated module page of version 1.6.
+Needless to say, it is an important subject for PrestaShop’s business, but most importantly a key step in merchants’ journey to a successful online store.</p>
+<p><em>This article has been updated on January the 22nd, to answer some comments, <a href="http://build.prestashop.com/news/module-page-awakens/#update-on-module-actions-2201">see at the end of the article</a>.</em></p>
+<h2 id="why-now">Why now?</h2>
+<h4 id="and-what-are-the-problems-we-want-to-solve">And what are the problems we want to solve?</h4>
+<ul>
+<li><strong>A difficult onboarding for beginners</strong><br/>Many of our new users struggle with the concept of modules when they discover the software. They often don’t understand what modules are for, don’t know when a module is fitted to their needs or when it’s adapted to their business maturity. We believe the module page is an important step in learning how you can leverage the power of modules and how you can take advantage of our official marketplace (<a href="http://addons.prestashop.com/">PrestaShop Addons</a>) when you’re looking to improve the features of your store.</li>
+<li><strong>A complex user experience</strong><br/>In addition to this, the current UX is too complicated and misleading: users get confused by the mix of installed and non-installed modules, surprised by the number of pre-installed modules at shop creation, and puzzled by the bare minimum description of modules. And I could also add the low performance and repeated page refresh every time you use the filters.
+As a consequence, the module page was limiting the productivity of our users.</li>
+</ul>
+<h2 id="what-do-we-really-really-want-aka-the-spice-girls-questionhttpswwwyoutubecomwatchvgjliif15wjq">What do we really really want? (a.k.a. <a href="https://www.youtube.com/watch?v=gJLIiF15wjQ">the Spice Girls question</a>)</h2>
+<p>Our ambition is simple: we want to create an “app store” that is as simple and clear as any app store on a smartphone.
+Redesigning the module page in PrestaShop version 1.7.0 is a first but important step towards this objective. For merchants building their store, it means the new module page will help them easily find the modules that fit their needs and manage their installed modules.</p>
+<p>Of course this project is part of a bigger picture: shape a new user experience in PrestaShop 1.7.0 to make it more user-friendly, and assist our users in building a successful online shop.</p>
+<h2 id="output-and-important-choices">Output and important choices</h2>
+<h4 id="whats-the-role-of-the-module-page-anyway">What’s the role of the module page anyway?</h4>
+<p>We identified 3 use cases, depending on the user profile:</p>
+<ul>
+<li><strong>discover and install new modules</strong> to improve your store, when you’re beginning or growing with PrestaShop,</li>
+<li><strong>manage your installed modules</strong>, when you have an active shop and need to make it evolve on a daily or weekly basis,</li>
+<li><strong>maintain your modules</strong>, when you need to take action (updates or configuration) to guarantee the good functioning of your modules</li>
+</ul>
+<p>This is why we divided the navigation in the page into three tabs, each corresponding to a use case. We’ll see them one by one in this article and explain what is underway.</p>
+<p><em>Caveat: the mockups displayed in this post are still work in progress and should not be considered as definitive. Moreover, we’ve added a header and a side menu just for the purpose of seeing the module page in its context - these elements are also work in progress but we’ll talk about this in another post.</em></p>
+<h4 id="selection">Selection</h4>
+<p>The “Selection” tab is about discovering new modules to improve your store. Here you’ll find a list of all the modules you can install (and not the ones you’ve already installed).</p>
+<p><img src="/assets/images/2016/01/Build_module_page_selection.png" alt="1.7 Module page, Selection tab"></p>
+<p>A quick sum-up:</p>
+<ul>
+<li>Modules are displayed in a new <strong>card design</strong> that is more suited for product discovery,</li>
+<li>Categories are now consistent with the categories in our official marketplace,</li>
+<li>An <strong>improved search bar</strong>: we now provide a JavaScript-powered per-keyword search, without any page refresh. We released the code of the <a href="https://github.com/PrestaShop/pstagger">PSTagger jQuery plugin</a> under an open source license, so that anybody can reuse it &ndash; and improve upon it (it’s still a beta version)!</li>
+</ul>
+<h4 id="installed-modules">Installed modules</h4>
+<p>In the “Installed modules” tab, you can manage all your installed modules (of course!)</p>
+<p><img src="/assets/images/2016/01/Build_module_page_installed_modules.png" alt="1.7 Module page, Installed modules tab"></p>
+<p>A quick sum-up:</p>
+<ul>
+<li>Because we wanted to make it simple to manage, we’ve separated the modules you’ve personally installed from the modules that are preinstalled at shop creation.</li>
+<li>By default, only activated modules are visible, but you still can display the disabled modules if you want.</li>
+<li>We also removed actions&hellip;:
+<ul>
+<li>&hellip;that had become obsolete: disable on mobile/tablet/PC. Since all Themes in 1.7.0 will be responsive by design, these feature was no longer needed.</li>
+<li>&hellip;that were redundant: now, there’s no distinction between Uninstall and Delete. When you uninstall a module, its files are deleted. You still can disable a module if you wish to keep your files and configuration.</li>
+</ul>
+</li>
+<li>An extra point we’re also investigating is to have a section dedicated to modules associated with your theme. It should make it easier to avoid conflicts when installing a new theme. We’ll keep you updated!</li>
+</ul>
+<h4 id="notifications">Notifications</h4>
+<p>Finally, in the “Notification” tab, you’ll find all the modules to configure, update or install (if you purchased modules on PrestaShop Addons but didn’t install them yet).</p>
+<p><img src="/assets/images/2016/01/Build_module_page_notification.png" alt="1.7 Module page, Notifications tab"></p>
+<p>Our goal here is to provide you with an overview of all the actions to take, and save you from the cluttered interface of 1.6 that had a pile of notifications.</p>
+<p>What we’ve added:</p>
+<ul>
+<li>A <strong>configuration key</strong>: modules will be able to say if they’re correctly configured. More on that soon in a forthcoming post on the Build devblog.</li>
+<li>A <strong>changelog</strong>: now you can see what is introduced in a new version (when the changelog is available). You won’t have to blindly trust the update and cross your fingers anymore!</li>
+<li>A <strong>list of your purchased modules</strong>, if you’ve connected your store to your PrestaShop Addons account.</li>
+</ul>
+<h4 id="symfony2-architecture-and-debugging">Symfony2 architecture and debugging</h4>
+<p>Of course, we’re also taking advantage of the Sf2 architecture that is introduced in version 1.7 to refactor the controller and several methods. We’re also improving stability to prevent crashes and simplify debugging. This implies refactoring the ObjectModel class and creating a new class that will handle the functions that don’t belong to Module instances. We’ll talk more about this in a forthcoming post focused on the technical changes.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>We’re working hard to release a beta version very soon. Until then, some other news will follow this post. This article was focused on UX and the next posts will be the opportunity to dive into the technical side of the new modules page.</p>
+<p>If you wish to share your questions, feedback and ideas, you’re welcome to do it on our <a href="https://gitter.im/PrestaShop/ModulePage?utm_source=share-link&amp;utm_medium=link&amp;utm_campaign=share-link">Gitter channel</a>. Looking forward to hearing from you!</p>
+<p><em>May the Force be with you</em> :)</p>
+<p>Guillaume &lt;3</p>
+<h3 id="update-on-module-actions-2201"><em>Update on module actions (22/01)</em></h3>
+<p>I’m following up about module actions:</p>
+<h4 id="1-about-keeping-both-the-delete-and-the-uninstall-options">1. About keeping both the “delete” and the “uninstall” options</h4>
+<p>Providing both is redundant and confusing for users, and as you know, our goal with 1.7 is to simplify these kinds of interaction. However, deleting the module folder when uninstalling a module would indeed create too much problems if the module contains some custom data.
+<strong>So, thanks to your feedback, we decided to keep the “uninstall” option available, and to remove the “delete” option</strong>. Deleting the folder can still be done using your favorite FTP software.</p>
+<h4 id="2-about-keeping-the-disable-on-mobiletabletcomputer-option">2. About keeping the &ldquo;disable on mobile/tablet/computer&rdquo; option:</h4>
+<p>After receiving your feedback, I asked PrestaShop’s <a href="http://www.prestashop.com/club/">User Club</a> members to answer a short survey about how merchants and developers use the module display options.</p>
+<p>Here’s a summary of the results.</p>
+<p>We’ve had many answers: 106, mostly from dev/designers and merchants.</p>
+<p>Roughly half of our respondents use the option to disable on mobile/tablet/computer. In the vast majority, only a few modules are concerned (less than 5 in 77% of cases), and almost systematically for disabling on mobile (98%). Disabling on other devices, like tablet or computer, is much less used (33% and 28% cases respectively).</p>
+<p>What are the modules typically disabled on mobile? Almost only front office features, starting with sliders, and then some others, such as top menu, banner, footer and a few content blocks (contact, tags, CMS, etc.). The main reason invoked for disabling on mobile is performance: for instance, to avoid loading HD images in a slider on a mobile with a poor 3G.</p>
+<p>And here are our decisions:</p>
+<ul>
+<li><strong>Remove the “disable on tablet/computer” option</strong>. If a module is specifically made for mobile, it shouldn’t be up to the user to disable it on other devices. Developers should adapt their mobile modules accordingly.</li>
+<li><strong>Keep the “disable on mobile” option</strong>. It would be better to limit this option to front office modules, but we don&rsquo;t have an easy way to do it <em>right now</em>. Given the small number of concerned modules, it doesn’t make sense to make this option available for all modules. By limiting it to front office modules, we would gain clarity and keep flexibility for customizing the shop appearance on mobile.</li>
+</ul>
+<p>Thank to our community members for their insightful feedback!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jan 15, 2016</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/modules/">modules</a>
+
+  <a class="label label-primary" href="/tag/ux/">ux</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Guillaume Bruere
+      <span>Product Manager</span>
+    </h4>
+
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Test the updated 1-Click Upgrade module!</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Test the updated 1-Click Upgrade module!" />
+<meta property="og:description" content="After much work and hair-pulling, we finally did it: the 1-Click Upgrade module supports upgrading from 1.6 to 1.7.1.0. Are you ready to test it before the release?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2017/updated-1-click-upgrade-module/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2017-03-27T09:10:11+02:00" />
+    <meta property="article:modified_time" content="2017-03-27T09:10:11+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Test the updated 1-Click Upgrade module!"/>
+<meta name="twitter:description" content="We heard you like upgrades, so we upgraded your upgrades"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Test the updated 1-Click Upgrade module!</h1>
+              
+                <h3 class="post-subtitle">We heard you like upgrades, so we upgraded your upgrades</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749"
+         alt="Xavier Borderie's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Xavier Borderie</div>
+        
+          <div class="author-display-role">Open Source Advocate</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Mar 27, 2017
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Test&#43;the&#43;updated&#43;1-Click&#43;Upgrade&#43;module%21&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2017%2Fupdated-1-click-upgrade-module%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2017%2Fupdated-1-click-upgrade-module%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>After much work and hair-pulling, we finally did it: the 1-Click Upgrade module supports upgrading from 1.6 to 1.7.1.0. Are you ready to test it before the release?</p>
+<p><img src="/assets/images/2017/03/upgrade-module00-yo-we-heard-you-like-upgrading.png" alt="We heard you like upgrading!"></p>
+<p>This is your chance to try your hand at the updated 1-Click Upgrade module! We’ve tested it in many configurations, but there’s nothing like community feedback!</p>
+<p class="text-center">
+  <a href="https://github.com/PrestaShop/autoupgrade/releases/download/16-to-17-beta-1/autoupgrade.zip" class="btn btn-lg btn-success">Download the update 1-Click upgrade module now!</a>
+</p>
+
+<h3 id="the-story-so-far">The story so far</h3>
+<p>Those of you who follow our Git history know this: the ‘autoupgrade’ project had not received serious attention for a long time when the team started cleaning up the code in November 2016.</p>
+<p>In order to prepare for the release of 1.7.1.0 and its patch versions, a lot of moving parts were fixed, much refactoring was done in order to improve the codebase, and a special 1.7 channel was added.</p>
+<h3 id="upgrading-to-171-gets-easier">Upgrading to 1.7.1 gets easier</h3>
+<p>A lot of work was therefore done in order to upgrade between versions of PrestaShop 1.7, but nothing so far to upgrade from 1.6 to 1.7 in one click.</p>
+<p>For there remained a fact: PrestaShop 1.7 is a major version, and thus upgrading from 1.6 is not easy.
+The theme has been completely rewritten or changed, modules have to be checked for compatibility (or replaced by equivalent modules), and a couple of major features have been pushed back for later release (such as the Stock Management feature, <a href="http://build.prestashop.com/news/announcing-our-2017-release-schedule/">currently expected for 1.7.2.0, in June</a>).</p>
+<p>All this cannot be magically checked and fixed by the module. While we wanted to ensure that those wanting to move from 1.5/1.6 to 1.7 could do so, we couldn’t make it appear like a simple click on a button would solve all of the merchant’s issue.</p>
+
+
+
+<div class="alert alert-note">The update 1-Click Upgrade module can only upgrade your store from 1.6 to v1.7.1.0 of PrestaShop. Versions 1.7.0.0 to 1.7.0.6 are skipped altogether, ensuring that you only get the best and latest 1.7 version.
+</div>
+
+<h3 id="how-we-chose-to-update-the-16-upgrade-module">How we chose to update the 1.6 upgrade module</h3>
+<p>Upgrading from PrestaShop 1.6 to 1.7.1 switches your theme to the default theme (Classic), and disables all non-native modules.</p>
+<p>The idea is to allow upgrading from 1.6 to 1.7.1, and at the same time insisting of the implications of such a move (theme, modules, stock management, etc.). While we wanted to improve the code, the most important part was reordering the information, in order to give as much context and warnings as possible.</p>
+<p>A full rewrite for 1.7.1 was out of question, since the module had to remain compatible with PrestaShop 1.5/1.6. The interface is extremely old-school but we chose to work with and include new phrasings within the design constraints.</p>
+<p>Also, in order discourage non-technical merchants to move to 1.7 with a single click, we changed the default setting so that the module targets only minor versions by default. If you really want to upgrade to 1.7 using the module, you have to select the Expert mode. This ensures that only the ones who upgrade to a major version are those who really mean it.</p>
+<h3 id="step-and-validation-forms">Step and validation forms</h3>
+<h4 id="upgrading-to-the-right-version">Upgrading to the right version</h4>
+<p>Graphically, the changes are minor as long as you remain in default (minor) mode.</p>
+<p><img src="/assets/images/2017/03/upgrade-module01-minor.png" alt="The interface for a minor upgrade"></p>
+<p>Next, in the Expert Mode section, change the &ldquo;Channel&rdquo; setting to “Major release”, and click the &ldquo;Save&rdquo; button: now the real changes happen.</p>
+<p><img src="/assets/images/2017/03/upgrade-module02-majorNext.png" alt="The interface for a major upgrade"></p>
+<p>As you can see, the whole interface cleans up: all the various informational blocks disappear, leaving only a green “Next” button. Click that button will make the blocks appear again, but the point is made: pay attention now.
+Furthermore, most of the settings in the “Upgrade options” and “Backup options” block are grayed out:</p>
+<ul>
+<li>Server performance is set at “Low” by default, but you can set it to high if you feel adventurous.</li>
+<li>Theme, module and email options are disabled, since they have become useless: by switching to 1.7.1.0, you understand that your store will be switched to the default theme (“Classic”), with its default email templates and all non-native modules disabled.</li>
+<li>Your database, images and files are always backed up (that being said, you should always double that with your own backup, for safety purpose).</li>
+</ul>
+<p>Scroll to the bottom and click the “Upgrade to PrestaShop 1.7.1.0” button. The option blocks make way to a block full of checkboxes</p>
+<h4 id="last-chance-to-get-fully-ready">Last chance to get fully ready</h4>
+<p><img src="/assets/images/2017/03/upgrade-module03-block.png" alt="Such block. Much checkboxes. Wow."></p>
+<p>This block is purposefully blocking (pun intended): you cannot upgrade without checking all of its boxes. This further pushes those who upgrade to make sure that they really know what they are doing.
+When all conditions are met, check the corresponding boxes. Only then can you click the “Switch to 1.7.1.0 for good” button.</p>
+<h4 id="the-upgrade-itself">The upgrade itself</h4>
+<p>The update is now triggered. Depending on your settings and server configuration, this can take several minutes: please do not reload the page!</p>
+<p><img src="/assets/images/2017/03/upgrade-module04-upgrading.png" alt="so many lines&amp;hellip;"></p>
+<p>This is your time to grab a cup of coffee/tea :)</p>
+<h4 id="success">Success!</h4>
+<p>After a few minutes, the upgrader will indicate whether everything has gone according to plan (green lines galore!), or if there was an issue (the upgrade log is here to help!).</p>
+<p><img src="/assets/images/2017/03/upgrade-module05-finished.png" alt="Everything&amp;rsquo;s A-OK."></p>
+<p>We wish you a good many green lines! If not, that’s when the module’s “Revert” button shows its usefulness. At worst, you will have to use the backups for your files and your database&hellip;</p>
+<p>Let’s assume the upgrade went as expected. Leave the module by clicking on the “Dashboard” link in PrestaShop&rsquo;s navigation menu. After logging in again, PrestaShop brings up the new 1.7 back office interface &ndash; with a few kinks, because of usual CSS caching issues. Just press Ctrl-Shift-R to reload the page with fresh CSS files, and you should be good to go.</p>
+<p><img src="/assets/images/2017/03/upgrade-module06-dashboard.png" alt="Hello, good lookin’!"></p>
+<h4 id="checking-everything-up">Checking everything up</h4>
+<p>Now is the time to test your store:</p>
+<ul>
+<li>First, empty the server cache. Go to Advanced Parameters &gt; Performance, and click on the “Clear cache” button at the top right of the screen.</li>
+<li>Next, go to your front office and navigate from page to page. Try buying a product or creating a customer account.</li>
+<li>Finally browse your catalog and settings in order to make sure that everything is as expected.
+<ul>
+<li>Pay attention to your permission, you may have to reconfigure them.</li>
+<li>Have a look at your modules. You may also have to reconfigure them.</li>
+<li>Work on customizing your store!</li>
+</ul>
+</li>
+</ul>
+<h3 id="get-ready">Get ready!</h3>
+<p>The update 1-Click Upgrade module is ready for you to test! The download link we’re giving leads to a special version of the module &ndash; because 1.7.1.0 is not ready yet :)</p>
+<p>That being said, 1.7.1.0 will be available real soon, so if you wish to test this module, go ahead now!</p>
+<p>Thank you for your feedback!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Mar 27, 2017</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/1.7.1.x/">1.7.1.x</a>
+
+  <a class="label label-primary" href="/tag/autoupgrade/">autoupgrade</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Xavier Borderie
+      <span>Open Source Advocate</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

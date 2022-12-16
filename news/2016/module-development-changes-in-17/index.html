@@ -1,0 +1,2990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Module development changes in PrestaShop 1.7.0.0</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Module development changes in PrestaShop 1.7.0.0" />
+<meta property="og:description" content="Existing modules should mostly work as-is with version 1.7. In this article, we dive into that “mostly”!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2016/module-development-changes-in-17/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2016-06-16T09:10:11+02:00" />
+    <meta property="article:modified_time" content="2016-06-16T09:10:11+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Module development changes in PrestaShop 1.7.0.0"/>
+<meta name="twitter:description" content="Prepare your 1.6 modules to ensure maximum 1.7 compatibility"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Module development changes in PrestaShop 1.7.0.0</h1>
+              
+                <h3 class="post-subtitle">Prepare your 1.6 modules to ensure maximum 1.7 compatibility</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749"
+         alt="Xavier Borderie's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Xavier Borderie</div>
+        
+          <div class="author-display-role">Open Source Advocate</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jun 16, 2016
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Module&#43;development&#43;changes&#43;in&#43;PrestaShop&#43;1.7.0.0&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fmodule-development-changes-in-17%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fmodule-development-changes-in-17%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Existing modules should mostly work as-is with version 1.7. In this article, we dive into that “mostly”!</p>
+<p>As you certainly know, all well-written 1.6 modules should work with little to no changes in version 1.7, except:</p>
+<ul>
+<li>Those which target the theme/front office – because we rewrote the way themes are written.</li>
+<li>Those which target the Product page – because the DOM of this page has changed.</li>
+<li>Those which target the Modules page – again, because the DOM of this page has changed.</li>
+</ul>
+<p>What this means for any upgrade is that in order for a PS 1.6 to migrate to PS 1.7, you (or your agency) will have to:</p>
+<ul>
+<li>Rewrite the theme, ideally using the Starter Theme or the default theme.</li>
+<li>Adapt the Product page modules (CSS and JavaScript).</li>
+<li>Adapt the Modules page modules (CSS and JavaScript).</li>
+<li>Test all the other modules – as you would for any new release.</li>
+</ul>
+<p>In any case, we advise you to make sure that your module does work in PrestaShop 1.7.</p>
+<p>(the information above comes straight from the <a href="http://build.prestashop.com/news/prestashop-1-7-faq/">PrestaShop 1.7 Project FAQ</a>. Read it if you haven’t yet!)</p>
+<p>Now, let’s dive into the details.</p>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#general-information">General information</a></li>
+        <li><a href="#overrides-and-namespaces">Overrides and namespaces</a></li>
+        <li><a href="#introducing-the-prestashop-ui-kit">Introducing the PrestaShop UI Kit</a></li>
+        <li><a href="#payment-api-change">Payment API change</a></li>
+        <li><a href="#hook-changes">Hook changes</a>
+          <ul>
+            <li><a href="#before">Before</a></li>
+            <li><a href="#after">After</a></li>
+            <li><a href="#sample-code">Sample code</a></li>
+          </ul>
+        </li>
+        <li><a href="#changes-for-modules-targeting-the-product-page">Changes for modules targeting the Product page</a>
+          <ul>
+            <li><a href="#handling-tabs">Handling tabs</a></li>
+            <li><a href="#back-office-hook-parameters">Back office hook Parameters</a></li>
+            <li><a href="#assets">Assets</a></li>
+            <li><a href="#form-fields">Form fields</a></li>
+            <li><a href="#dom">DOM</a></li>
+          </ul>
+        </li>
+        <li><a href="#changes-for-modules-targeting-the-default-theme">Changes for modules targeting the default theme.</a>
+          <ul>
+            <li><a href="#the-theme-documentation">The Theme documentation</a></li>
+            <li><a href="#widgets">Widgets</a></li>
+            <li><a href="#hook-changes-1">Hook changes</a>
+              <ul>
+                <li><a href="#16-hooks-that-are-not-available-in-17">1.6 hooks that are not available in 1.7</a></li>
+                <li><a href="#hooks-that-were-added-in-170x">Hooks that were added in 1.7.0.x</a></li>
+                <li><a href="#common-hooks">Common hooks</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#thats-it-for-now">That&rsquo;s it for now!</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<h2 id="general-information">General information</h2>
+<ul>
+<li>We changed all variables passed to Smarty: make sure what you use is still assigned!</li>
+<li>Objects are no longer passed to Smarty. We only use arrays now.</li>
+<li>Smarty&rsquo;s strings are now automatically escaped:</li>
+<li>You should remove all your <code>|escape:'html':'UTF-8'</code> (FOR FRONT OFFICE TEMPLATES ONLY).</li>
+<li>You should add the <code>nofilter</code> tag if you print HTML.</li>
+<li><code>$link</code> is deprecated. Use the <code>{url}</code> helper instead.
+<ul>
+<li>Even if <code>$link</code> is still passed to Smarty, it will be removed at some point in a future version.</li>
+</ul>
+</li>
+<li>Make sure you use the new way of calling templates: <code>fetch(module:modulename/views/template.tpl)</code>.</li>
+<li>Make sure you do not add your assets with a hardcoded path in the <code>displayHeader</code> hook.
+<ul>
+<li>Nothing new from v1.6 here, but it&rsquo;s a bad practice.</li>
+</ul>
+</li>
+<li>Only rely on documented variables!</li>
+</ul>
+<h2 id="overrides-and-namespaces">Overrides and namespaces</h2>
+<p>PrestaShop 1.7 introduces the use of <a href="http://php.net/manual/en/language.namespaces.php">namespaces</a> with its new architecture, and in short, anything that has namespaces cannot be overridden.<br />
+The legacy architecture can still be overridden, though. But in general, we advise against overriding code. It is better to extend it.<br />
+Also, overrides are <em>currently</em> forbidden in the Symfony-based pages (namely, the Product page and the Modules page).</p>
+<p>Overrides are a nice system to have, but the issue with it is that it is an uncontrolled extension system. We are working on a carefully planned process that will allow developers to extend the PrestaShop code in a much cleaner way. The gist of it would be that the developer team would integrate your needs for overrides in the next version of PrestaShop &ndash; kind of what <a href="https://en.wikipedia.org/wiki/Polyfill">polyfills do for HTML5 features</a> :) In short, you tell us what you need, and while we include it in the next version, you can use an override.</p>
+<p>Again: <strong>the override system is not going away</strong>, you will still be able to easily extend PrestaShop. We&rsquo;re just changing the way we want this to happen: instead of each developer having a separate set of overrides, we want developers who need an override to let us know about it, so that the next version of PrestaShop includes it directly.</p>
+<h2 id="introducing-the-prestashop-ui-kit">Introducing the PrestaShop UI Kit</h2>
+<p>The Product page and the Modules page are the only two pages that have been rewritten using Symfony, and they still work fine with pre-1.7 modules &ndash; albeit with a necessary design adaptation, as happened in all major version of PrestaShop before, only this time we provide a UI Kit to help developers easily have a consistent style for their module screens.</p>
+<p>The whole PrestaShop 1.7 back office has its design based on the UI Kit. This UI Kit was built so that designers and developers can create interfaces which are consistent in style with the administration interface.</p>
+<p>Check its reference documentation here: <a href="http://build.prestashop.com/prestashop-ui-kit/">http://build.prestashop.com/prestashop-ui-kit/</a><br/>
+Check its code here: <a href="https://github.com/PrestaShop/prestashop-ui-kit">https://github.com/PrestaShop/prestashop-ui-kit</a></p>
+<p>Note that it is still a work in progress, and should not be considered stable until 1.7 is released.</p>
+<h2 id="payment-api-change">Payment API change</h2>
+<p>Payment modules should be particularly looked after, as we wrote in the <a href="http://build.prestashop.com/news/starter-theme-news-3/">third article about the Starter Theme</a>.</p>
+<p>To provide the best user experience possible for customers, and to guarantee that PrestaShop orders respect the law in all countries, we slightly changed the payment API.<br/>
+For example, the Terms &amp; Conditions checkbox is now displayed with the payment options, and there is only one button to click in order to pay.<br/>
+That way, theme designers have more control of the layout of payment options.</p>
+<h2 id="hook-changes">Hook changes</h2>
+<p>The updated payment API changes the parameters passed to these two hooks:</p>
+<ul>
+<li>hookPaymentReturn</li>
+<li>hookDisplayOrderConfirmation</li>
+</ul>
+<h3 id="before">Before</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Key</th>
+<th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>total_to_pay</code></td>
+<td style="text-align:center">The result of <code>$order-&gt;getOrdersTotalPaid()</code>.</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>currency</code></td>
+<td style="text-align:center">The currency sign (string).</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>currencyObj</code></td>
+<td style="text-align:center">The loaded currency (Currency class).</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>objOrder</code></td>
+<td style="text-align:center">The current order object (Order class).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="after">After</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Key</th>
+<th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>order</code></td>
+<td style="text-align:center">The current <code>order</code> object (Order class).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sample-code">Sample code</h3>
+<p>Everything can be retrieved from <code>order</code>. For instance.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$currency</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Currency</span><span class="p">(</span><span class="nv">$params</span><span class="p">[</span><span class="s1">&#39;order&#39;</span><span class="p">]</span><span class="o">-&gt;</span><span class="na">id_currency</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$total_to_pay</span> <span class="o">=</span> <span class="nv">$params</span><span class="p">[</span><span class="s1">&#39;order&#39;</span><span class="p">]</span><span class="o">-&gt;</span><span class="na">getOrdersTotalPaid</span><span class="p">();</span>
+</span></span></code></pre></div><p>We advise you to dive into the <a href="https://github.com/PrestaShop/paymentexample">Payment Example sample module</a>, or to explore the <a href="https://github.com/PrestaShop/bankwire">native Bankwire module</a> &ndash; most notably <a href="https://github.com/PrestaShop/bankwire/pull/18/files?diff=unified">the commit that updated this module for 1.7</a>.</p>
+<h2 id="changes-for-modules-targeting-the-product-page">Changes for modules targeting the Product page</h2>
+<p>The Product page has been entirely rewritten for PrestaShop 1.7 in order to make the product creation easier, faster, and more logical. 6 default tabs instead of the previous 12, with the main tab containing much more information; a greatly improved Combination generator/manager; new shortcuts; an in-page catalog browser; and other niceties&hellip;</p>
+<p>If you created modules which target the Product Page, you may be impacted by these changes. To make them work as expected in the new Product page, you will need to adapt your code.</p>
+<p>Here are the main information that you will need to update your modules.</p>
+<h3 id="handling-tabs">Handling tabs</h3>
+<p>In PrestaShop 1.6, it is allowed to have a dedicated tab per module on the Product page. In version 1.7, we changed this and added a dedicated tab for all the Product page’s modules, via a new hook called <code>hookDisplayAdminProductsExtra</code>.</p>
+<p>If you coded your modules by following the best practices of both PHP and PrestaShop 1.5-1.6, it should not take you too much time to update your code.</p>
+<h3 id="back-office-hook-parameters">Back office hook Parameters</h3>
+<p>Parameters cannot be obtained from a query string anymore. From now on, an array of parameters is directly passed onto the <code>hookDisplayAdminProductsExtra</code> method.</p>
+<p>See this sample hook:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">function</span> <span class="nf">hookDisplayAdminProductsExtra</span><span class="p">(</span><span class="nv">$params</span><span class="p">)</span>
+</span></span></code></pre></div><p>With <code>$params</code> taking these values:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$params</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;_ps_version&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;id_product&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;cookie&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;cart&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;altern&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span></code></pre></div><h3 id="assets">Assets</h3>
+<p>The URLs of back office assets (CSS, JavaScript, images, etc.) must be absolute, meaning that they must start with <code>http://</code> or <code>https://</code>.</p>
+<p>You can use the <code>Tools::getCurrentUrlProtocolPrefix()</code> method to make sure you always use the correct protocol.</p>
+<h3 id="form-fields">Form fields</h3>
+<p>The form field names must be created in an array hook of this format: <code>[MODULE_NAME][INPUT_NAME]</code>.</p>
+<h3 id="dom">DOM</h3>
+<p>The format of the ID for the module’s container has been modified. Here is its new format: <code>module_MODULE_NAME</code>.</p>
+<h2 id="changes-for-modules-targeting-the-default-theme">Changes for modules targeting the default theme.</h2>
+<p>All the 1.6 modules targeting the theme will likely be impacted (to various degrees) by the changes and need to be adapted for 1.7. From the moment your module targets the theme, it will have to be updated.</p>
+<h3 id="the-theme-documentation">The Theme documentation</h3>
+<p>The Designer Guide is currently being entirely rewritten to focus on the 1.7 Theme system. We expect it to be available online in the coming weeks.</p>
+<p>In the meantime, we invite you to dive into the source code:</p>
+<ul>
+<li>The Starter Theme, which you can use as a skeleton template for your 1.7 theme: <br/>
+<a href="https://github.com/PrestaShop/StarterTheme/tree/master">https://github.com/PrestaShop/StarterTheme/tree/master</a></li>
+<li>The 1.7 default theme, called &ldquo;Classic&rdquo;, which can you can learn from: <br/>
+<a href="https://github.com/PrestaShop/PrestaShop/tree/develop/themes/classic">https://github.com/PrestaShop/PrestaShop/tree/develop/themes/classic</a></li>
+</ul>
+<h3 id="widgets">Widgets</h3>
+<p>PrestaShop 1.7 introduces widgets, which you can use to place your module&rsquo;s content directly in your theme.</p>
+<p>Widgets introduce 2 major features for theme developer:</p>
+<ul>
+<li>You can use a module directly within a theme.</li>
+<li>Widgets can be hooked to any display hook.</li>
+</ul>
+<p>More information about this will be available in the soon-to-be-available PrestaShop 1.7 Designer Guide.</p>
+<h3 id="hook-changes-1">Hook changes</h3>
+<p>The front office hooks have seen a bit of evolution. Some have been moved, some have been removed, and some have been created. Here are the lists!</p>
+<h4 id="16-hooks-that-are-not-available-in-17">1.6 hooks that are not available in 1.7</h4>
+<p>These hooks were only available in 1.6. They are removed from 1.7.</p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Hook name</th>
+      <th>File(s)</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>DisplayOverrideTemplate</td>
+    <td>
+      <ul>
+        <li>/classes/controller/FrontController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>PDFInvoice</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAfterDeleteProductInCart</td>
+    <td>
+      <ul>
+        <li>/controllers/front/CartController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionBeforeAuthentication</td>
+    <td>
+      <ul>
+        <li>/controllers/front/AuthController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionBeforeSubmitAccount</td>
+    <td>
+      <ul>
+        <li>/controllers/front/AuthController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCartListOverride</td>
+    <td>
+      <ul>
+        <li>/controllers/front/CartController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionEmailAddAfterContent</td>
+    <td>
+      <ul>
+        <li>/classes/Mail.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionEmailAddBeforeContent</td>
+    <td>
+      <ul>
+        <li>/classes/Mail.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionOrderDetail</td>
+    <td>
+      <ul>
+        <li>/controllers/front/GuestTrackingController.php</li>
+        <li>/controllers/front/OrderDetailController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionProductListModifier</td>
+    <td>
+      <ul>
+        <li>/controllers/front/CategoryController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionProductListOverride</td>
+    <td>
+      <ul>
+        <li>/controllers/front/CategoryController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionSearch</td>
+    <td>
+      <ul>
+        <li>/controllers/front/SearchController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>addProduct</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>advancedPaymentOptions</td>
+    <td>
+      <ul>
+        <li>/controllers/front/OrderOpcController.php</li>
+        <li>/controllers/front/ParentOrderController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>backBeforePayment</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>deleteProduct</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayAfterShoppingCartBlock</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/shopping-cart-advanced.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayBanner</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/header.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayBeforePayment</td>
+    <td>
+      <ul>
+        <li>/controllers/front/OrderController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayBeforeShoppingCartBlock</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/shopping-cart-advanced.tpl</li>
+        <li>/themes/default-bootstrap/shopping-cart.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCartTotalPriceLabel</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/shopping-cart-advanced.tpl</li>
+        <li>/themes/default-bootstrap/shopping-cart.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCompareExtraInformation</td>
+    <td>
+      <ul>
+        <li>/controllers/front/CompareController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCustomerIdentityForm</td>
+    <td>
+      <ul>
+        <li>/controllers/front/IdentityController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayHomeTab</td>
+    <td>
+      <ul>
+        <li>/controllers/front/IndexController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayHomeTabContent</td>
+    <td>
+      <ul>
+        <li>/controllers/front/IndexController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayMobileHeader</td>
+    <td>
+      <ul>
+        <li>/classes/controller/FrontController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayNav</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/header.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayPayment</td>
+    <td>
+      <ul>
+        <li>/classes/module/Module.php</li>
+        <li>/controllers/front/OrderOpcController.php</li>
+        <li>/controllers/front/ParentOrderController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayProductComparison</td>
+    <td>
+      <ul>
+        <li>/controllers/front/CompareController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayProductContent</td>
+    <td>
+      <ul>
+        <li>/controllers/front/ProductController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayProductDeliveryTime</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/product-list.tpl</li>
+        <li>/themes/default-bootstrap/product.tpl</li>
+        <li>/themes/default-bootstrap/products-comparison.tpl</li>
+        <li>/themes/default-bootstrap/shopping-cart-product-line.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayProductListFunctionalButtons</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/product-list.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayProductListReviews</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/product-list.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayProductTab</td>
+    <td>
+      <ul>
+        <li>/controllers/front/ProductController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayProductTabContent</td>
+    <td>
+      <ul>
+        <li>/controllers/front/ProductController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayTopColumn</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/header.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>newOrder</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>orderConfirmation</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>overrideTOSDisplay</td>
+    <td>
+      <ul>
+        <li>/controllers/front/OrderController.php</li>
+        <li>/controllers/front/ParentOrderController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>paymentConfirm</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>paymentReturn</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>postUpdateOrderStatus</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>productFooter</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>productOutOfStock</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>updateCarrier</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>updateOrderStatus</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>updateProductAttribute</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>updateQuantity</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+<h4 id="hooks-that-were-added-in-170x">Hooks that were added in 1.7.0.x</h4>
+<p>These hooks are only available in the 1.7.0.x branch</p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Hook name</th>
+      <th>File(s)</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>actionAjaxDie</td>
+    <td>
+      <ul>
+        <li>/classes/controller/Controller.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAjaxDieBefore</td>
+    <td>
+      <ul>
+        <li>/classes/controller/Controller.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAttributeCombinationDelete</td>
+    <td>
+      <ul>
+        <li>/classes/Combination.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAttributeCombinationSave</td>
+    <td>
+      <ul>
+        <li>/classes/Combination.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAuthenticationBefore</td>
+    <td>
+      <ul>
+        <li>/classes/form/CustomerLoginForm.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCartUpdateQuantityBefore</td>
+    <td>
+      <ul>
+        <li>/classes/Cart.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCustomerAccountUpdate</td>
+    <td>
+      <ul>
+        <li>/classes/form/CustomerPersister.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCustomerAddGroups</td>
+    <td>
+      <ul>
+        <li>/classes/Customer.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCustomerBeforeUpdateGroup</td>
+    <td>
+      <ul>
+        <li>/classes/Customer.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionDeleteProductInCartAfter</td>
+    <td>
+      <ul>
+        <li>/controllers/front/CartController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionGetProductPropertiesAfter</td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionGetProductPropertiesBefore</td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionOnImageCutAfter</td>
+    <td>
+      <ul>
+        <li>/classes/ImageManager.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionOnImageResizeAfter</td>
+    <td>
+      <ul>
+        <li>/classes/ImageManager.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionProductSearchComplete</td>
+    <td>
+      <ul>
+        <li>/classes/controller/ProductListingFrontController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionValidateCustomerAddressForm</td>
+    <td>
+      <ul>
+        <li>/classes/form/CustomerAddressForm.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>addWebserviceResources</td>
+    <td>
+      <ul>
+        <li>/classes/webservice/WebserviceRequest.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>additionalCustomerFormFields</td>
+    <td>
+      <ul>
+        <li>/classes/form/CustomerFormatter.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayAfterBodyOpeningTag</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/checkout.tpl</li>
+        <li>/themes/classic/templates/layouts/layout-both-columns.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayAfterCarrier</td>
+    <td>
+      <ul>
+        <li>/classes/checkout/CheckoutDeliveryStep.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayBeforeBodyClosingTag</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/checkout.tpl</li>
+        <li>/themes/classic/templates/layouts/layout-both-columns.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCMSDisputeInformation</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/cms/page.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCMSPrintButton</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/cms/page.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCarrierExtraContent</td>
+    <td>
+      <ul>
+        <li>/classes/checkout/DeliveryOptionsFinder.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCheckoutSubtotalDetails</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/_partials/cart-detailed-totals.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCheckoutSummaryTop</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/_partials/cart-summary.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCrossSellingShoppingCart</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/cart-empty.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCustomerLoginFormAfter</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/customer/authentication.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCustomization</td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayExpressCheckout</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/_partials/cart-detailed-actions.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayFooterAfter</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/_partials/footer.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayFooterBefore</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/_partials/footer.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayNav1</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/_partials/header.tpl</li>
+        <li>/themes/classic/templates/checkout/_partials/header.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayNav2</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/_partials/header.tpl</li>
+        <li>/themes/classic/templates/checkout/_partials/header.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayNavFullWidth</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/_partials/header.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayNotFound</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/errors/not-found.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayOrderConfirmation1</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/order-confirmation.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayOrderConfirmation2</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/order-confirmation.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayPaymentByBinaries</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/_partials/steps/payment.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayReassurance</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/catalog/product.tpl</li>
+        <li>/themes/classic/templates/checkout/cart.tpl</li>
+        <li>/themes/classic/templates/checkout/checkout.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displaySearch</td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/errors/not-found.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>overrideMinimalPurchasePrice</td>
+    <td>
+      <ul>
+        <li>/classes/controller/ModuleFrontController.php</li>
+        <li>/src/Adapter/Cart/CartPresenter.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>termsAndConditions</td>
+    <td>
+      <ul>
+        <li>/classes/checkout/ConditionsToApproveFinder.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>validateCustomerFormFields</td>
+    <td>
+      <ul>
+        <li>/classes/form/CustomerForm.php</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+<h4 id="common-hooks">Common hooks</h4>
+<p>These hooks are common to PrestaShop 1.6 and 1.7. Some have seen their location change in 1.7.</p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Hook name</th>
+      <th>File(s) in 1.6</th>
+      <th>File(s) in 1.7.0</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>action</td>
+    <td>
+      <ul>
+        <li>/classes/controller/AdminController.php</li>
+        <li>/controllers/admin/AdminPerformanceController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/controller/AdminController.php</li>
+        <li>/controllers/admin/AdminPerformanceController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAdmin</td>
+    <td>
+      <ul>
+        <li>/classes/controller/AdminController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/controller/AdminController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAdminControllerSetMedia</td>
+    <td>
+      <ul>
+        <li>/classes/controller/AdminController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/controller/AdminController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAdminLoginControllerSetMedia</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminLoginController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminLoginController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAdminMetaAfterWriteRobotsFile</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminMetaController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminMetaController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAdminMetaBeforeWriteRobotsFile</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminMetaController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminMetaController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAdminMetaSave</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminMetaController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminMetaController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAdminOrdersTrackingNumberUpdate</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAdminThemesControllerUpdate_optionsAfter</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminThemesController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminThemesController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAttributeDelete</td>
+    <td>
+      <ul>
+        <li>/classes/Attribute.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Attribute.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAttributeGroupDelete</td>
+    <td>
+      <ul>
+        <li>/classes/AttributeGroup.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/AttributeGroup.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAttributeGroupSave</td>
+    <td>
+      <ul>
+        <li>/classes/AttributeGroup.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/AttributeGroup.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAttributeSave</td>
+    <td>
+      <ul>
+        <li>/classes/Attribute.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Attribute.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionAuthentication</td>
+    <td>
+      <ul>
+        <li>/controllers/front/AuthController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/form/CustomerLoginForm.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionBeforeAjaxDie</td>
+    <td>
+      <ul>
+        <li>/classes/controller/Controller.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/controller/Controller.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionBeforeCartUpdateQty</td>
+    <td>
+      <ul>
+        <li>/classes/Cart.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Cart.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCarrierProcess</td>
+    <td>
+      <ul>
+        <li>/controllers/front/ParentOrderController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/checkout/CheckoutDeliveryStep.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCarrierUpdate</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminCarrierWizardController.php</li>
+        <li>/controllers/admin/AdminCarriersController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminCarrierWizardController.php</li>
+        <li>/controllers/admin/AdminCarriersController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCartSave</td>
+    <td>
+      <ul>
+        <li>/classes/Cart.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Cart.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCartSummary</td>
+    <td>
+      <ul>
+        <li>/classes/Cart.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Cart.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCategoryAdd</td>
+    <td>
+      <ul>
+        <li>/classes/Category.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Category.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCategoryDelete</td>
+    <td>
+      <ul>
+        <li>/classes/Category.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Category.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCategoryUpdate</td>
+    <td>
+      <ul>
+        <li>/classes/Category.php</li>
+        <li>/controllers/admin/AdminProductsController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Category.php</li>
+        <li>/controllers/admin/AdminProductsController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCustomerAccountAdd</td>
+    <td>
+      <ul>
+        <li>/controllers/front/AuthController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/form/CustomerPersister.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCustomerLogoutAfter</td>
+    <td>
+      <ul>
+        <li>/classes/Customer.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Customer.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionCustomerLogoutBefore</td>
+    <td>
+      <ul>
+        <li>/classes/Customer.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Customer.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionDeliveryPriceByPrice</td>
+    <td>
+      <ul>
+        <li>/classes/Carrier.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Carrier.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionDeliveryPriceByWeight</td>
+    <td>
+      <ul>
+        <li>/classes/Carrier.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Carrier.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionDispatcher</td>
+    <td>
+      <ul>
+        <li>/classes/Dispatcher.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Dispatcher.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionDownloadAttachment</td>
+    <td>
+      <ul>
+        <li>/controllers/front/AttachmentController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/front/AttachmentController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionFeatureDelete</td>
+    <td>
+      <ul>
+        <li>/classes/Feature.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Feature.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionFeatureSave</td>
+    <td>
+      <ul>
+        <li>/classes/Feature.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Feature.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionFeatureValueDelete</td>
+    <td>
+      <ul>
+        <li>/classes/FeatureValue.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/FeatureValue.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionFeatureValueSave</td>
+    <td>
+      <ul>
+        <li>/classes/FeatureValue.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/FeatureValue.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionFrontControllerSetMedia</td>
+    <td>
+      <ul>
+        <li>/classes/controller/FrontController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/controller/FrontController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionGetExtraMailTemplateVars</td>
+    <td>
+      <ul>
+        <li>/classes/Mail.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Mail.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionGetIDZoneByAddressID</td>
+    <td>
+      <ul>
+        <li>/classes/Address.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Address.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionHtaccessCreate</td>
+    <td>
+      <ul>
+        <li>/classes/Tools.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Tools.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionInvoiceNumberFormatted</td>
+    <td>
+      <ul>
+        <li>/classes/order/OrderInvoice.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/order/OrderInvoice.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionModuleInstallAfter</td>
+    <td>
+      <ul>
+        <li>/classes/module/Module.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/module/Module.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionModuleInstallBefore</td>
+    <td>
+      <ul>
+        <li>/classes/module/Module.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/module/Module.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionModuleRegisterHookAfter</td>
+    <td>
+      <ul>
+        <li>/classes/module/Module.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionModuleRegisterHookBefore</td>
+    <td>
+      <ul>
+        <li>/classes/module/Module.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionModuleUnRegisterHookAfter</td>
+    <td>
+      <ul>
+        <li>/classes/module/Module.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionModuleUnRegisterHookBefore</td>
+    <td>
+      <ul>
+        <li>/classes/module/Module.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionObject</td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionObjectAddAfter</td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionObjectAddBefore</td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionObjectAttributeAddBefore</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminAttributesGroupsController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminAttributesGroupsController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionObjectAttributeGroupAddBefore</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminAttributesGroupsController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminAttributesGroupsController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionObjectDeleteAfter</td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionObjectDeleteBefore</td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionObjectUpdateAfter</td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionObjectUpdateBefore</td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/ObjectModel.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionOrderEdited</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionOrderHistoryAddAfter</td>
+    <td>
+      <ul>
+        <li>/classes/order/OrderHistory.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/order/OrderHistory.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionOrderReturn</td>
+    <td>
+      <ul>
+        <li>/controllers/front/OrderFollowController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/front/OrderFollowController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionOrderSlipAdd</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionOrderStatusPostUpdate</td>
+    <td>
+      <ul>
+        <li>/classes/order/OrderHistory.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/order/OrderHistory.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionOrderStatusUpdate</td>
+    <td>
+      <ul>
+        <li>/classes/order/OrderHistory.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/order/OrderHistory.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionPDFInvoiceRender</td>
+    <td>
+      <ul>
+        <li>/classes/PaymentModule.php</li>
+        <li>/classes/order/OrderHistory.php</li>
+        <li>/controllers/admin/AdminPdfController.php</li>
+        <li>/controllers/front/PdfInvoiceController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/PaymentModule.php</li>
+        <li>/classes/order/OrderHistory.php</li>
+        <li>/controllers/admin/AdminPdfController.php</li>
+        <li>/controllers/front/PdfInvoiceController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionPasswordRenew</td>
+    <td>
+      <ul>
+        <li>/controllers/front/PasswordController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/front/PasswordController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionPaymentCCAdd</td>
+    <td>
+      <ul>
+        <li>/classes/order/OrderPayment.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/order/OrderPayment.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionPaymentConfirmation</td>
+    <td>
+      <ul>
+        <li>/classes/order/OrderHistory.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/order/OrderHistory.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionProductAdd</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminProductsController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminProductsController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionProductAttributeDelete</td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionProductAttributeUpdate</td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionProductCancel</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionProductCoverage</td>
+    <td>
+      <ul>
+        <li>/classes/stock/StockManager.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/stock/StockManager.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionProductDelete</td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionProductOutOfStock</td>
+    <td>
+      <ul>
+        <li>/controllers/front/ProductController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/catalog/_partials/product-details.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionProductSave</td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionProductUpdate</td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+        <li>/controllers/admin/AdminProductsController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+        <li>/controllers/admin/AdminProductsController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionSetInvoice</td>
+    <td>
+      <ul>
+        <li>/classes/order/Order.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/order/Order.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionShopDataDuplication</td>
+    <td>
+      <ul>
+        <li>/classes/shop/Shop.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/shop/Shop.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionUpdateQuantity</td>
+    <td>
+      <ul>
+        <li>/classes/stock/StockAvailable.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/stock/StockAvailable.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionValidateOrder</td>
+    <td>
+      <ul>
+        <li>/classes/PaymentModule.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/PaymentModule.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>actionWatermark</td>
+    <td>
+      <ul>
+        <li>/classes/FileUploader.php</li>
+        <li>/classes/webservice/WebserviceSpecificManagementImages.php</li>
+        <li>/controllers/admin/AdminImportController.php</li>
+        <li>/controllers/admin/AdminProductsController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/FileUploader.php</li>
+        <li>/classes/webservice/WebserviceSpecificManagementImages.php</li>
+        <li>/controllers/admin/AdminImportController.php</li>
+        <li>/controllers/admin/AdminProductsController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>dashboardData</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminDashboardController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminDashboardController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>dashboardZoneOne</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminDashboardController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminDashboardController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>dashboardZoneTwo</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminDashboardController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminDashboardController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayAdminOrderContentOrder</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayAdminOrderContentShip</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayAdminOrderTabOrder</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayAdminOrderTabShip</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminOrdersController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayAdminProductsExtra</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminProductsController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminProductsController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayAdminStatsModules</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminStatsTabController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminStatsTabController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayBackOfficeCategory</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminCategoriesController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminCategoriesController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayBackOfficeHeader</td>
+    <td>
+      <ul>
+        <li>/classes/controller/AdminController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/controller/AdminController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayBackOfficeTop</td>
+    <td>
+      <ul>
+        <li>/classes/controller/AdminController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/controller/AdminController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayBeforeCarrier</td>
+    <td>
+      <ul>
+        <li>/controllers/front/OrderOpcController.php</li>
+        <li>/controllers/front/ParentOrderController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/checkout/CheckoutDeliveryStep.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCarrierList</td>
+    <td>
+      <ul>
+        <li>/classes/Cart.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Cart.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCartExtraProductActions</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/shopping-cart-product-line.tpl</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/_partials/cart-detailed-product-line.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCustomerAccount</td>
+    <td>
+      <ul>
+        <li>/controllers/front/MyAccountController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/customer/my-account.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCustomerAccountForm</td>
+    <td>
+      <ul>
+        <li>/controllers/front/AuthController.php</li>
+        <li>/controllers/front/OrderOpcController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/form/CustomerForm.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayCustomerAccountFormTop</td>
+    <td>
+      <ul>
+        <li>/controllers/front/AuthController.php</li>
+        <li>/controllers/front/OrderOpcController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/front/AuthController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayFeaturePostProcess</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminFeaturesController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminFeaturesController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayFeatureValuePostProcess</td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminFeaturesController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/admin/AdminFeaturesController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayFooter</td>
+    <td>
+      <ul>
+        <li>/classes/controller/FrontController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/_partials/footer.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayFooterProduct</td>
+    <td>
+      <ul>
+        <li>/controllers/front/ProductController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/catalog/product.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayHeader</td>
+    <td>
+      <ul>
+        <li>/classes/controller/FrontController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/controller/FrontController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayHome</td>
+    <td>
+      <ul>
+        <li>/controllers/front/IndexController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/front/IndexController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayInvoiceLegalFreeText</td>
+    <td>
+      <ul>
+        <li>/classes/pdf/HTMLTemplateInvoice.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/pdf/HTMLTemplateInvoice.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayLeftColumn</td>
+    <td>
+      <ul>
+        <li>/classes/controller/FrontController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/layouts/layout-both-columns.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayLeftColumnProduct</td>
+    <td>
+      <ul>
+        <li>/controllers/front/ProductController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/layouts/layout-both-columns.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayMaintenance</td>
+    <td>
+      <ul>
+        <li>/classes/controller/FrontController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/controller/FrontController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayOrderConfirmation</td>
+    <td>
+      <ul>
+        <li>/controllers/front/OrderConfirmationController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/front/OrderConfirmationController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayOrderDetail</td>
+    <td>
+      <ul>
+        <li>/controllers/front/GuestTrackingController.php</li>
+        <li>/controllers/front/OrderDetailController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/front/GuestTrackingController.php</li>
+        <li>/controllers/front/OrderDetailController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayPaymentReturn</td>
+    <td>
+      <ul>
+        <li>/controllers/front/OrderConfirmationController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/controllers/front/OrderConfirmationController.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayPaymentTop</td>
+    <td>
+      <ul>
+        <li>/controllers/front/OrderOpcController.php</li>
+        <li>/controllers/front/ParentOrderController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/_partials/steps/payment.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayProductButtons</td>
+    <td>
+      <ul>
+        <li>/controllers/front/ProductController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/catalog/_partials/quickview.tpl</li>
+        <li>/themes/classic/templates/catalog/product.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayProductPriceBlock</td>
+    <td>
+      <ul>
+        <li>/themes/default-bootstrap/product-list.tpl</li>
+        <li>/themes/default-bootstrap/product.tpl</li>
+        <li>/themes/default-bootstrap/products-comparison.tpl</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/catalog/_partials/miniatures/product.tpl</li>
+        <li>/themes/classic/templates/catalog/_partials/product-prices.tpl</li>
+        <li>/themes/classic/templates/checkout/_partials/cart-summary-product-line.tpl</li>
+        <li>/themes/classic/templates/checkout/_partials/order-confirmation-table.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayRightColumn</td>
+    <td>
+      <ul>
+        <li>/classes/controller/FrontController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/layouts/layout-both-columns.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayRightColumnProduct</td>
+    <td>
+      <ul>
+        <li>/controllers/front/ProductController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/layouts/layout-both-columns.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayShoppingCart</td>
+    <td>
+      <ul>
+        <li>/controllers/front/CartController.php</li>
+        <li>/controllers/front/ParentOrderController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/cart.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayShoppingCartFooter</td>
+    <td>
+      <ul>
+        <li>/controllers/front/CartController.php</li>
+        <li>/controllers/front/ParentOrderController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/checkout/cart.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>displayTop</td>
+    <td>
+      <ul>
+        <li>/classes/controller/FrontController.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/themes/classic/templates/_partials/header.tpl</li>
+        <li>/themes/classic/templates/checkout/_partials/header.tpl</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>moduleRoutes</td>
+    <td>
+      <ul>
+        <li>/classes/Dispatcher.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Dispatcher.php</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>updateProduct</td>
+    <td>
+      <ul>
+        <li>/classes/Hook.php</li>
+        <li>/classes/Product.php</li>
+        <li>/classes/webservice/WebserviceSpecificManagementImages.php</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>/classes/Product.php</li>
+        <li>/classes/webservice/WebserviceSpecificManagementImages.php</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+<h2 id="thats-it-for-now">That&rsquo;s it for now!</h2>
+<p>More information is coming soon!</p>
+<p>If you have specific questions about module development that are not answered in this article, let us know in the comments: it will help us build a better Developer Guide!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jun 16, 2016</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/module/">module</a>
+
+  <a class="label label-primary" href="/tag/documentation/">documentation</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Xavier Borderie
+      <span>Open Source Advocate</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

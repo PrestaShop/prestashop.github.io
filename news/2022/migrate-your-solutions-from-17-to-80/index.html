@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Migrate your solutions from PrestaShop 1.7 to 8.0</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Migrate your solutions from PrestaShop 1.7 to 8.0" />
+<meta property="og:description" content="PrestaShop 8 beta version was released last week. If you are a developer in our ecosystem, create modules or themes, and have clients working with PrestaShop, this is an excellent opportunity to spend some time with this version and test your solutions." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2022/migrate-your-solutions-from-17-to-80/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2022-08-15T00:00:00+02:00" />
+    <meta property="article:modified_time" content="2022-08-15T00:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Migrate your solutions from PrestaShop 1.7 to 8.0"/>
+<meta name="twitter:description" content="Summary of notable changes for developers"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Migrate your solutions from PrestaShop 1.7 to 8.0</h1>
+              
+                <h3 class="post-subtitle">Summary of notable changes for developers</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/2137763?v=3&amp;s=400"
+         alt="Krystian Podemski's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Krystian Podemski</div>
+        
+          <div class="author-display-role">Tech Evangelist @ PrestaShop</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Aug 15, 2022
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Migrate&#43;your&#43;solutions&#43;from&#43;PrestaShop&#43;1.7&#43;to&#43;8.0&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2022%2Fmigrate-your-solutions-from-17-to-80%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2022%2Fmigrate-your-solutions-from-17-to-80%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>PrestaShop 8 beta version was <a href="https://build.prestashop.com/news/prestashop-8-0-beta-release/">released last week.</a> If you are a developer in our ecosystem, create modules or themes, and have clients working with PrestaShop, this is an excellent opportunity to spend some time with this version and test your solutions.</p>
+<p>In this article, I will focus on things that might affect your work. You will read here about changes that are not backward compatible, and could require you to make changes in the code of your solutions.</p>
+<p>It is worth noting that PrestaShop 8 is a new major version. Although it is an evolution rather than a revolution, you will find several software code changes that can significantly impact some of you.</p>
+<p>As always, we have done our best to make all important information about changes available in the <a href="https://devdocs.prestashop.com/8/">developer documentation</a>. This article is an introduction and explanation to the content you will find there.</p>
+<h2 id="php-80-and-81">PHP 8.0 and 8.1</h2>
+<p>PrestaShop 8 brings support for&hellip; PHP 8 and 8.1. This is one of the most important elements of the upgrade to version 8. Each new PHP version brings better performance and many features that will make the developers&rsquo; work easier. This does not mean that PrestaShop will require PHP 8.1, the <a href="https://devdocs.prestashop.com/8/basics/installation/system-requirements/#php-compatibility-chart">minimum compatible version is PHP 7.2.5</a>, but we recommend using the latest available PHP version when possible. Security is a serious matter (always), and PHP 8.1 <a href="https://www.php.net/supported-versions.php">guarantees support with security updates</a> until November 2024.</p>
+<p>We recommend making your solutions compatible with the same range of PHP versions as PrestaShop is compatible with (that is, 7.2~8.1). For this, you must make sure not to use the language features introduced in PHP versions that are more recent than PHP 7.2. At the same time, in order to make your code work with PHP 8.1, you must make sure to take into account all features that might have been deprecated or removed in PHP 8 and 8.1, and avoid using them. The list of backward incompatible changes and new deprecations is available on the PHP website:</p>
+<ul>
+<li><a href="https://www.php.net/manual/en/migration80.php">Migrating from PHP 7.4 to PHP 8</a></li>
+<li><a href="https://www.php.net/manual/en/migration81.php">Migrating from PHP 8 to PHP 8.1</a></li>
+</ul>
+<p>PrestaShop’s code also had to be modified to become compatible with the two PHP versions. You can find details of modifications in these Pull Requests:</p>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/25296">Update to PHP 8.0</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/28402">Update to PHP 8.1</a></li>
+</ul>
+<p>This could give you an overview of what you might face while upgrading.</p>
+<p>One of the changes that can directly impact many solutions that work with PrestaShop is the <code>Attribute</code> class change, which has been renamed to <code>ProductAttribute</code>. The word <code>Attribute</code> is now reserved in PHP, hence the need for this change.</p>
+<p>Updating PHP and Symfony required some of the dependencies used in the project to be updated. You can find the list of updates here: <a href="https://devdocs.prestashop.com/8/modules/core-updates/8.0/#updated-dependencies">List of updated dependencies</a>.</p>
+<p>If your solution uses one of the updated libraries, you may need to update your code to be compatible with the updated versions. Check the websites of the library creators for more details.</p>
+<p>The <a href="https://github.com/guzzle/guzzle">Guzzle</a> library has been upgraded from version 5.3 to 7.4. This is worth noting because many libraries use Guzzle as their own dependency, and this library now behaves very differently compared to previous versions. If you use a library that depends on Guzzle 5.3, you might need to update it.</p>
+<p>You can find more information and an upgrade guide in the Guzzle repository:
+<a href="https://github.com/guzzle/guzzle/blob/master/UPGRADING.md">Upgrading guide for Guzzle</a>.</p>
+<h2 id="symfony-44">Symfony 4.4</h2>
+<p>PrestaShop 1.7 was the revolution that began the migration to Symfony, first with version 2.8 in earlier releases, and 3.4 since PrestaShop 1.7.4. PrestaShop 8 introduces Symfony 4.4. As major PrestaShop versions are released in the future, expect updates to the Symfony framework as well. This can also affect your solutions.</p>
+<p>The notable changes that directly impact PrestaShop users are available here: <a href="https://devdocs.prestashop.com/8/modules/core-updates/8.0/#symfony-update">Notable changes related to Symfony update</a>.</p>
+<p>If you have modules based on Symfony and noticed any elements that need clarification in the documentation, please <a href="https://devdocs.prestashop.com/8/contribute/documentation/how/">add it</a> or <a href="https://github.com/PrestaShop/docs/issues/new">let us know</a>.</p>
+<p>You can find all changes related to adapting PrestaShop to Symfony 4.4 in this Pull Request: <a href="https://github.com/PrestaShop/PrestaShop/pull/24609">​​Upgrade to Symfony 4.4</a>.</p>
+<h2 id="deprecations-and-removals">Deprecations and removals</h2>
+<p>This is probably one of the changes that might have the most significant impact on your solutions.</p>
+<p>Many classes and methods marked as &ldquo;deprecated&rdquo; in previous versions have been removed in PrestaShop 8. These were methods that the core no longer used or that no longer made sense to keep, like wrappers around natively available PHP functions. A typical example of these functions are<code>Tools::jsonEncode()</code> and <code>Tools::jsonDecode()</code>.</p>
+<p>In this case the change is simple, <code>Tools::jsonEncode()</code> must be replaced with <code>json_encode()</code>, and <code>Tools::jsonDecode()</code> with <code>json_decode()</code>. These two functions are natively available in PHP.</p>
+<p>Depending on your development environment, you might have already noticed these deprecations, as many IDEs like PHPStorm or VSCodehighlight call to deprecated methods and classes. You can find a list of deleted methods, classes, properties, constants, files, Symfony services, and others on this page:
+<a href="https://devdocs.prestashop.com/8/modules/core-updates/8.0/#removals">Code removals</a>.</p>
+<p>Starting with PrestaShop 8, you should see deprecation warnings on the shop’s logs and front office after enabling developer mode. Alternatively, you can configure the display of deprecation errors by setting the <a href="https://www.php.net/manual/en/errorfunc.configuration.php#ini.error_reporting">error_reporting directive</a> in your PHP configuration to <code>E_DEPRECATED</code>.</p>
+<p>I encourage you to read this list, and if you find any missing items, please <a href="https://github.com/PrestaShop/docs/issues/new">let us know</a>.</p>
+<h2 id="changes-in-methods-and-their-behavior">Changes in methods and their behavior</h2>
+<p>Removed classes and methods are not the only changes that may cause the need to adjust your solutions.</p>
+<p>Several methods have seen changes in their signatures, return types, parameter types, internal behavior, etc. The <a href="https://devdocs.prestashop.com/8/modules/core-updates/8.0/#api-changes">complete list of changes</a> might give you a better understanding of what changes you will need to apply to update your products.
+These changes will affect you if your solutions decorate or override default services or classes, or if you invoke the impacted classes and methods directly. We expect typical solutions to require minimal to no changes at all.</p>
+<h2 id="changes-in-the-hook-component">Changes in the Hook component</h2>
+<p>With version 8, PrestaShop will be stricter regarding the implementation and use of hooks in your modules. You must be aware of two changes that may impact your solutions.</p>
+<p>The first change concerns Hook registrations that your module does not use. If PrestaShop detects that a module registers for a Hook but doesn’t implement a method for it, an exception will be thrown when in developer mode. This error message is meant to help developers identify errors during module development and should not affect modules in production.</p>
+<p>If your PHP configuration is set up to display <code>E_DEPRECATED</code> errors, you can also expect to see deprecation messages when using hook aliases. For example, when you register <code>hookLeftColumn</code> instead of its correct counterpart, <code>hookDisplayLeftColumn</code>.</p>
+<h2 id="security">Security</h2>
+<p>With the introduction of the new <a href="https://github.com/PrestaShop/PrestaShop/pull/28127">password policy management feature</a> in PrestaShop 8, some solutions may need to be updated. For example, those that generate passwords for customers, or create fake users for external integration purposes.</p>
+<p>Pay special attention to the field definitions of the <code>Customer</code> and <code>Employee</code> classes. From now on, these classes require passwords provided as a hash of appropriate strength according to the settings from the back office.</p>
+<p>If you happen to have a code similar to this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$customer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Customer</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$customer</span><span class="o">-&gt;</span><span class="na">passwd</span> <span class="o">=</span> <span class="nx">‘SomeWeakPassword’</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//…
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$customer</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span>
+</span></span></code></pre></div><p>It might not work in this version, as the password score validation can fail.</p>
+<p>Since the method <code>Validate::isPasswd()</code> has been removed, here is a better way to handle this scenario:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">PrestaShop\PrestaShop\Adapter\ServiceLocator</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">PrestaShop\PrestaShop\Core\Crypto\Hashing</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$customer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Customer</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$crypto</span> <span class="o">=</span> <span class="nx">ServiceLocator</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="nx">Hashing</span><span class="o">::</span><span class="na">class</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$customer</span><span class="o">-&gt;</span><span class="na">passwd</span> <span class="o">=</span> <span class="nv">$crypto</span><span class="o">-&gt;</span><span class="na">hash</span><span class="p">(</span><span class="nx">Tools</span><span class="o">::</span><span class="na">passwdGen</span><span class="p">(</span><span class="mi">64</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//…
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$customer</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span>
+</span></span></code></pre></div><p>This example comes from the <a href="https://github.com/PrestaShop/psgdpr/blob/v1.4.2/upgrade/upgrade-1.4.2.php">psgdpr module upgrade</a> file, which had to be upgraded for that exact reason.</p>
+<p>To learn more, see the implementation of the new password policy in this Pull Request: <a href="https://github.com/PrestaShop/PrestaShop/pull/28127">​​Implement a new password policy based on zxcvbn</a>.</p>
+<h2 id="front-office-and-classic-theme">Front office and Classic theme</h2>
+<p>PrestaShop 8 does not include many important changes in the Classic theme. You can see a list here: <a href="https://devdocs.prestashop.com/8/modules/core-updates/8.0/#classic-theme">Change in the classic theme</a>.</p>
+<p>The new password policy feature, however, also impacts the storefront. You can put a special widget on the front end that measures password strength. To learn how this was implemented on the Classic Theme: <a href="https://github.com/PrestaShop/classic-theme/pull/21">Add strict password policy</a>.</p>
+<p>Besides, if you are a theme developer, you might be interested in tracking the improvements <a href="https://github.com/PrestaShop/classic-theme/pulls?q=is%3Apr+is%3Amerged">implemented in the official Classic repository</a> and porting them to your own theme.</p>
+<h2 id="your-feedback-is-key">Your feedback is key</h2>
+<p>The maintainers team is doing its best to keep the documentation up-to-date with all the important changes. However, if you see any irregularities or notice behaviors that should be documented, I encourage you to <a href="https://devdocs.prestashop.com/8/contribute/documentation/how/">contribute to the developer documentation</a>.</p>
+<p>In upcoming articles, I will introduce you to new features for developers included in PrestaShop 8.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Aug 15, 2022</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/tutorial/">tutorial</a>
+
+  <a class="label label-primary" href="/tag/major/">major</a>
+
+  <a class="label label-primary" href="/tag/8/">8</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Krystian Podemski
+      <span>Tech Evangelist @ PrestaShop</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/kpodemski">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/30365-krystian_podemski">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/kpodemski">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/podemski">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

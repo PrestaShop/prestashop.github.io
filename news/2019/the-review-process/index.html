@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>What happens to pull requests after they are submitted</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="What happens to pull requests after they are submitted" />
+<meta property="og:description" content="The PrestaShop project currently (September 2019) has 389 pull requests open and new Pull Requests are opened almost everyday. All of these pull requests go through a thorough process which aims to provide a stable, consistent and reliable software that we all know under the name PrestaShop. Here is this process in details." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2019/the-review-process/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2019-09-12T11:00:00+02:00" />
+    <meta property="article:modified_time" content="2019-09-12T11:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="What happens to pull requests after they are submitted"/>
+<meta name="twitter:description" content="Discover what happens behind scenes during code review"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">What happens to pull requests after they are submitted</h1>
+              
+                <h3 class="post-subtitle">Discover what happens behind scenes during code review</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/3830050?s=400&amp;v=4"
+         alt="Mathieu Ferment's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Mathieu Ferment</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Sep 12, 2019
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=What&#43;happens&#43;to&#43;pull&#43;requests&#43;after&#43;they&#43;are&#43;submitted&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2019%2Fthe-review-process%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2019%2Fthe-review-process%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>The PrestaShop project currently (September 2019) has 389 pull requests open and new Pull Requests are opened almost everyday. All of these pull requests go through a thorough process which aims to provide a stable, consistent and reliable software that we all know under the name PrestaShop. Here is this process in details.</p>
+<h2 id="automatic-tasks-when-you-open-a-pull-request">Automatic tasks when you open a Pull Request</h2>
+<p>When you submit a new Pull Request to the project repository <a href="https://github.com/PrestaShop/PrestaShop">https://github.com/PrestaShop/PrestaShop</a>, a long journey starts.</p>
+<h3 id="continuous-integration">Continuous Integration</h3>
+<p>We have set up three<a href="#glossary">(1)</a> great tools on the project that help us verify the quality of contributions.</p>
+<p>The first tool is a <a href="https://github.com/FriendsOfPHP/PHP-CS-Fixer">PHP CS Fixer</a> <a href="https://github.com/features/actions">GitHub Action</a>. This tool<a href="#glossary">(2)</a> will look at your Pull Request and check whether the php syntax and code-style is correct. If not, it will block the PR from being merged and tell you what is wrong.</p>
+<p>It might appear trivial, but having a unified code-style on the project actually helps a lot. It is a lot easier to work on a big codebase like PrestaShop if all code is written following the same conventions: snake_case or camelCase, how to write the phpDoc, when to use white spaces &hellip; it makes the code look like if it was written by a single developer. Just like reading a book with two different styles in it, having a codebase with different styles is making it harder to navigate. A unified code-style also makes the pull requests easier to review!</p>
+<p>If the Github Action states that your pull request has issues, you need to fix the issues by looking at the Github Action output to understand what needs to be fixed.</p>
+<p>The second tool is a <a href="https://eslint.org/">ESLint</a> <a href="https://github.com/features/actions">GitHub Action</a>. This one checks whether the Javascript syntax and code-style is correct. Likewise, it will block the PR from being merged if there is a syntax or code-style issue.</p>
+<p>The third tool is <a href="http://travis-ci.org/">Travis</a>. Travis is a Continous Integration system that will look at the Pull Request and run several checks, be it code-style checkers, format checkers or automated tests, and provide us the result in the Pull Request. If something is wrong it will block the PR from being merged. This is a standard approach to ensure that new contributions in a codebase do not break existing features and behaviors.</p>
+<p>If Travis states that your pull request has issues, you need to fix the issues by looking at Travis output to understand what needs to be fixed.</p>
+<p>These tools are executed automatically for every Pull Request, so we know that every contribution has been checked. This is a great asset to help us ensure the quality of the project.</p>
+<p><img src="/assets/images/2019/09/CI-github-tools-2.png" alt="CI tools on github"></p>
+<h3 id="prestonbot">Prestonbot</h3>
+<p><a href="https://github.com/PrestaShop/prestonbot">Prestonbot</a> is a custom bot we have built that looks at all Pull Requests and try to help us manage the project. He does a lot of things! For example he detects mistakes in the pull request description and adds some labels to help us classify the pull requests and he also welcomes new contributors to the project :D . <a href="http://build.prestashop.com/news/prestonbot-reaches-stable-version/">Read his story to learn more about him.</a></p>
+<p>If something is wrong, Prestonbot will write a comment in the pull request to tell you what to fix.</p>
+<h2 id="the-code-review-a-human-task">The code review, a human task</h2>
+<p>Now that all the bots have done their job, humans finally come on the stage! Your Pull Request will be reviewed by a Core maintainer.</p>
+<h3 id="what-do-we-check-in-code-review">What do we check in code review?</h3>
+<p>When a Core maintainer sees a pull request, they will review it and decide whether it should be accepted, if it needs changes, or if it cannot be accepted.</p>
+<p>The review process is quite thorough in order to make sure that PrestaShop codebase gets better with each contribution. Here is all the things we look for in a Pull Request, when reviewing it:</p>
+<ul>
+<li>Of course we start by checking that the code is correct. This means both from a behavior point of view as well as from a technical point of view. This is simply an assessment of the quality of the Pull Request code, just like it happens in a lot of software teams. We check the code works as intended, it uses the right functions, it handles expectable edge-cases, has no obvious vulnerabilities, scales well, etc. We also keep in mind that PrestaShop is a CMS and consequently must provide all the necessary extension points to allow developers to customize or extend its behavior.</li>
+<li>We also assess the readability of the code. There is a statement that says &ldquo;when a code file is opened by a developer, 9 times out of 10 it will only to be read, not to be modified&rdquo;. Because PrestaShop is a huge and complex codebase and because it has so many people reading through it, it is very important that its code is made as readable as possible. This is obtained by adding comments, carefully choosing function and variable names, and building an architecture that makes sense so it is easy to grasp and navigate for people who have never worked on it before.</li>
+<li>We also check that best practices are implemented into the Pull Request, be it standard conventions or practices like <a href="https://www.php-fig.org/psr/">PSR</a> or best security recommandations like the ones from <a href="https://www.owasp.org/">OWASP</a>. When people use PrestaShop to build a shop, it is likely that they will follow the practices they see implemented in the Core, so we try to think of the code we merge as an example that people will use.</li>
+<li>PrestaShop has grown huge over the years, both as a codebase and as a software. There are hundreds of features built in the software, and some are more commonly used than others. Some contributions sometimes need to be reworked because they did not take into account one of the less popular features of the software, or are not compatible with them. Common examples are the multi-store mode or the RTL (Right-To-Left) mode, two features that adress very specific needs and that many developers are not aware of.</li>
+<li>PrestaShop follows <a href="https://semver.org/">SemVer</a>. This means that we strive not to introduce breaking compatibility changes when releasing minor and patch versions. Therefore, we make sure the Pull Request does not introduce such changes, as some developers submit pull requests without being aware of this constraint.</li>
+<li>We also have a vision of what PrestaShop should evolve to in order to follow the new trends in the software world. Although a big codebase like PrestaShop evolves slowly, we keep the future architecture   and features we want to include in mind, and we check whether the Pull Request is following this direction. For example today PrestaShop relies heavily on jQuery for its frontend features, and we started introducing Vue.js. So if tomorrow we see a Pull Request that is using React.js we might refuse it in order to keep a consistency in the technology stack used for the project.</li>
+</ul>
+<p>So as you can see, in a Pull Request we review a lot of things! To do all of these checks, we do not only look at the code on Github. We sometimes pull the branch on our own computer to test and navigate the code in order to make sure all of these requirements are met. We discuss with other maintainers about parts we are not sure. We can even sometimes run benchmarks or audits for critical pieces of code.</p>
+<p>Some Pull Requests are very easy to review because they are related to a part of the code we know very well, other instead are very hard to review because they are related to a complex topic, a complex area of the code or have a huge global impact on the software that is very hard to estimate and assess. Reviews can take hours or days as we try our very best to make sure every contribution merged in the project meets the level of quality we want for it.</p>
+<p>Most of the time, if an issue is found during the review, the Core maintainer will provide feedback about the issue and requests the author to modify the parts of the Pull Request that cannot be accepted as they are. After the author of the Pull Request has implemented the requested changes, then the Pull Request can be approved and move forward to the next step.</p>
+<p>At this moment, this button becomes green:</p>
+<p><img src="/assets/images/2019/09/Merge-Button.png" alt="Merge button on github"></p>
+<p>But it cannot be clicked yet&hellip;</p>
+<h3 id="it-is-not-only-about-code">It is not only about code</h3>
+<p>For some Pull Requests, we might look for help and ask people of the PrestaShop Product Team:</p>
+<ul>
+<li>We ask the UX design team to review changes that have a significant UX impact</li>
+<li>We ask the Product team to review changes that introduce a significant behavior modification (either an existing feature or a new feature)</li>
+<li>We ask the Content team to review Pull Requests that introduce wording changes (labels, titles, error and information messages)</li>
+</ul>
+<p>Once the Pull Request has been validated by all of the relevant people, it is finally verified by the QA team. The QA team will then make sure that the behavior of the proposed change is correct and that it does not produce any regressions (new errors).</p>
+<p>After the Pull Request has finally passed the QA validation, it is merged in the project and the author becomes (if they weren&rsquo;t already) a contributor to this great open source project :) .</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>As you can see, the process between the submission of Pull Request and its merge is a long journey. This journey is not meaningless: the goal is to make sure we build a consistent and reliable software in the end, and when you consider the size of this project, it actually does not look too much!</p>
+<p>A downside of this long journey and the level of commitment it requires from both the reviewers and the authors is that some Pull Requests require a very long time to be reviewed. Also, we are actually not a big team. As of September of 2019, there are only 6 Core maintainers available to review more than 400 Pull Requests&hellip; this is why PrestaShop is currently hiring!</p>
+<p>We also are working on other ideas to bring more people in the maintainer team and to be able to review/merge everything, so we hope to get better in the following months.</p>
+<h4 id="glossary">Glossary</h4>
+<p>1: At the time of publication of this article, there was only two: PrettyCI and TravisCI.</p>
+<p>2: This used to be done by a 3rd party service known as PrettyCI but it has <a href="https://prettyci.com/goodbye">shut down</a>.</p>
+<p>Note: the original article has been edited on Friday 3rd of April 2020 to remove PrettyCI and replace it in the content by new solutions.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Sep 12, 2019</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/community/">community</a>
+
+  <a class="label label-primary" href="/tag/contribution/">contribution</a>
+
+  <a class="label label-primary" href="/tag/review/">review</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Mathieu Ferment
+      <span>Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/matks">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

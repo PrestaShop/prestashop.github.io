@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Coming Soon: A New Translation System for PrestaShop 1.7</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Coming Soon: A New Translation System for PrestaShop 1.7" />
+<meta property="og:description" content="With the introduction of Symfony in PrestaShop 1.7, we had to rethink how our system of translation worked, to make sure new pages were translatable too. Instead of merely adapting our current system to Symfony, we took this opportunity to rethink how it works, to optimize it a bit." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2016/new-translation-system-prestashop-17/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2016-07-01T06:09:47+02:00" />
+    <meta property="article:modified_time" content="2016-07-01T06:09:47+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Coming Soon: A New Translation System for PrestaShop 1.7"/>
+<meta name="twitter:description" content="Or how it should be easier to translate PrestaShop from now on"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Coming Soon: A New Translation System for PrestaShop 1.7</h1>
+              
+                <h3 class="post-subtitle">Or how it should be easier to translate PrestaShop from now on</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars0.githubusercontent.com/u/7910738"
+         alt="Alex Even's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Alex Even</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jul 1, 2016
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Coming&#43;Soon%3A&#43;A&#43;New&#43;Translation&#43;System&#43;for&#43;PrestaShop&#43;1.7&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fnew-translation-system-prestashop-17%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fnew-translation-system-prestashop-17%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>With the <a href="">introduction of Symfony in PrestaShop 1.7</a>, we had to rethink how our system of translation worked, to make sure new pages were translatable too. Instead of merely adapting our current system to Symfony, we took this opportunity to rethink how it works, to optimize it a bit.</p>
+<p><em>This article has been updated on January the 9th, 2017 as <a href="/news/new-translation-system-prestashop-17/#as-a-module-contributor">this new system doesn&rsquo;t work for third-party modules</a>.</em></p>
+<p>In short:</p>
+<ul>
+<li>We’re introducing a new translation system to be compatible with Symfony</li>
+<li>There are new standards on how to write strings</li>
+<li>Using translations domains, that are organized functionally</li>
+<li>So words like “Save” will be translated only once across the whole project</li>
+<li>And the Crowdin project will have more folders and smaller files for 1.7 version</li>
+</ul>
+<h2 id="why-we-needed-a-new-system">Why we needed a new system</h2>
+<p>The big WHY is that we had to <strong>adapt our former in-house translation system to Symfony</strong>, to technically support translations in PrestaShop 1.7. From there, it seemed to be a good occasion to improve how the translation system works in Crowdin too.</p>
+<p>For those of you who are familiar with the Crowdin translation project, its organization is not that optimal. Among its flaws, users have unanimously elected the following ones as most annoying:</p>
+<ul>
+<li><strong>Lack of context</strong>: The only context given was the name of the source file - if you knew where to find the information.</li>
+<li><strong>Duplicated strings</strong>: Strings with many occurrences like “Save”, “Products”, “Order” had to be translated several (many) times, because they came from different files, and therefore different “contexts”.</li>
+<li><strong>Massive, endless files</strong>: Everything that was related to admin (or theme, for that matter) was gathered inside one big file.</li>
+</ul>
+<p>All this has one main cause: both context and project organization rely on the source file from where the string comes from.</p>
+<p>For instance, most of the content from the back office is gathered in the “Admin” folder, but each string is given a different context, based on the exact file from which it was extracted.
+Which gave something like:</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2016/07/string_context_crowdin2.png">
+<p><a href="http://192.168.10.56:4000/assets/images/2016/06/duplicated_strings_crowdin.png">(And a lot of duplicated strings)</a></p>
+<p>We also have 46% of the whole translatable strings in one file, split down in 104 pages in Crowdin. You need much courage if you want to translate the PrestaShop 1.6 back office (and many of you didn’t stop at this, thanks a lot for your dedication!!).</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="500" src="/assets/images/2016/07/strings_distribution_16_2.png">
+<p>So, we came up with what we hope is a better translation system, which:</p>
+<ul>
+<li>Avoids duplications - no need to translate 10 times “Edit” or “Add to Cart”</li>
+<li>Provides richer context with
+<ul>
+<li>Comments from the source file</li>
+<li>Line number from the source file</li>
+</ul>
+</li>
+<li>Is better organized in Crowdin
+<ul>
+<li>More folders to provide a global context</li>
+<li>Smaller files to make it easier to see one’s progress</li>
+<li>Folder organization to help prioritize (translate feature-related content in priority, help text later for instance)</li>
+</ul>
+</li>
+</ul>
+<p>It’s mostly based on domains.</p>
+<h2 id="what-is-a-domain-and-how-to-code-strings">What is a domain and how to code strings?</h2>
+<p>PrestaShop 1.7 having introduced the use of Symfony framework, we’re adapting the translation system to follow the <a href="http://symfony.com/doc/current/components/translation/introduction.html">Symfony way</a>.
+<a href="http://api.symfony.com/3.0/Symfony/Component/Translation/TranslatorInterface.html#method_trans">Domains</a> will give the functional context for a string, <a href="news/new-translation-system-prestashop-17/#domains-structure">as explained below</a>.</p>
+<h3 id="whats-changing-from-now-on">What’s changing from now on</h3>
+<ul>
+<li>We are ditching our <code>l()</code> PHP method in favor of <a href="http://symfony.com/doc/current/components/translation/usage.html"><strong>Symfony’s Translator component method <code>trans()</code></strong></a>.
+<ul>
+<li>Smarty files will still be able to use <code>{l}</code>, but we&rsquo;re ditching its <code>mod=</code> modifier and will use the new <code>d=</code> one, for domains.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong>All strings should have a domain</strong>, for instance ‘Shop.Notifications.Error’. See below for an explanation of the domain structure.</li>
+</ul>
+</li>
+<li>We’re adding a <strong>compulsory array() parameter for variables</strong>, whether there are variables in the string or not. It should be here in all cases, in .php files.</li>
+<li><strong>Variables should be named clearly</strong> after what they depict (i.e.%productname%), and no longer be a mere %s or %1$s.</li>
+</ul>
+<p>The translation files structure and format in PrestaShop will also change:</p>
+<ul>
+<li>There will be folders, matching the domain architecture.</li>
+<li>Translation files will be in <a href="https://en.wikipedia.org/wiki/XLIFF">.xlf</a> format, instead of .php. They will contain the source strings too (a big big improvement!).</li>
+<li>Files will be named like “Domains.Locale.xlf”, e.g. “Error.es-ES.xlf” for the <em>Shop.Notifications.Error</em> domain, and included in the relevant folders (“Shop &gt; Notification” in this example)</li>
+</ul>
+<h4 id="calling-symfonys-translator">Calling Symfony’s translator</h4>
+<h5 id="example-for-a-php-file">Example for a .php file:</h5>
+<p><img src="/assets/images/2016/07/domains_php_example.png" alt="String adaption for a php file"></p>
+<h5 id="example-for-a-tpl-file">Example for a .tpl file:</h5>
+<p><img src="/assets/images/2016/07/domains_tpl_example.png" alt="String adaption for a tpl file"></p>
+<h5 id="example-for-a-twig-file">Example for a .twig file:</h5>
+<p><img src="/assets/images/2016/07/domains_twig_example.png" alt="String adaption for a twig file"></p>
+<h4 id="naming-variables">Naming variables</h4>
+<p><img src="/assets/images/2016/07/domains_variables_example.png" alt="Rewriting variables"></p>
+<p>That way, translators will have much more context from the source string than before, when they had to guess what was behind these %s.</p>
+<p>Please refer to the following pull-requests to see how we worked on the adaptation:</p>
+<ul>
+<li>#<a href="https://github.com/PrestaShop/PrestaShop/pull/5722/files">5722</a> - Remove PrestaShop Translator Adapter and use Symfony default one</li>
+<li>#<a href="https://github.com/PrestaShop/PrestaShop/pull/5754">5754</a> - Adapting the module page</li>
+<li>#<a href="https://github.com/PrestaShop/PrestaShop/pull/5707/files">5707</a> - Adapting the Classic theme</li>
+<li>ps_imageslider&rsquo;s #<a href="https://github.com/PrestaShop/ps_imageslider/pull/5/files">5</a>  - Adapting ImageSlider module</li>
+</ul>
+<h3 id="what-it-means-for-you">What it means for you</h3>
+<h4 id="as-a-developer">As a developer</h4>
+<p>If you’re creating new strings, they must use the new <code>trans()</code> method, and have the relevant domain (more on this below).
+If you’re modifying existing strings, inherited from the 1.6 version, you can adapt it to the new system as you go: make sure it uses the new <code>trans()</code> method, add the relevant domain and name variables according to the new convention.</p>
+<h4 id="as-a-module-contributor">As a module contributor</h4>
+<p>If you have 1.6 modules compatible with the 1.7 version, don&rsquo;t worry! The new system will be compatible with PrestaShop 1.6 translations, so there is nothing to do. Your current translations will still be working.
+On the other hand, if you&rsquo;re developing 1.7-specific modules, we encourage you to follow the new standards explained above.</p>
+
+
+
+<div class="alert alert-important"><h4><i class="icon-fire"></i>
+        Update - January 2017
+    </h4><p>We’ve been too optimistic when we said the new translation system would be available for contributors’ modules built specifically for PrestaShop 1.7.</p>
+<p>This is not working. I repeat, this is not working. You should <b>keep using the legacy translation system</b> and it will work just like before. Otherwise you won’t be able to translate your modules, which we want to avoid.</p>
+<p>We’re still trying to find a workaround so that new modules can benefit from the new translation system, but that is not going to happen in a near future, unfortunately.</p>
+<p>These comments do not apply to theme development, for the whole theme structure has been redesigned in 1.7. 1.7-specific themes should use the new translation system. Just not modules :(</p>
+
+</div>
+
+<h4 id="as-a-translator">As a translator</h4>
+<p>Well, it will be much easier to help translating PrestaShop on Crowdin! :)</p>
+<h4 id="crowdin-availability">Crowdin availability</h4>
+<p>We’re doing our best to upload the 1.7 project onto Crowdin as soon as possible, so that translators will have time to help before the Release Candidate is ready. We’re still running some tests but it should be a matter of weeks now! :)
+Of course we’ll let you know here on Build when it’s finally there.</p>
+<p>Now, your next question should be, “but how do I know which domain to use?”, or “what does it mean when I see one?” Glad you asked!</p>
+<h2 id="domains-structure">Domains structure</h2>
+<p>We’ve organized domains in 4 major sections <strong>Shop</strong>, <strong>Admin</strong>, <strong>Modules</strong> and <strong>Install</strong>. All the PrestaShop translatable strings are spread across these 4 domains, according to the following definition:</p>
+<p><img src="/assets/images/2016/07/main_domains2.png" alt="Translation domains for PrestaShop 1.7"></p>
+<p>These are called “first-level” domains. They are strictly informational, no domain should be <em>Modules</em>, <em>Shop</em>, or <em>Admin</em> only, as it should have at least two levels. Only strings from the installer have <em>Install</em> only as a domain.
+Each domain is thus subdivided into sections, more or less according to the complexity of its content.</p>
+<p>In the end a domain is like <em>Shop.Theme.Checkout</em> and it will correspond to a specific folder in Crowdin, where you’ll find all the strings from the default theme, related to the checkout process (funnel, shopping cart, etc.).</p>
+<ul>
+<li>In a given source file, several domains can appear.</li>
+<li>For a page displayed (either front or back), several domains can be used.</li>
+<li>For a Crowdin folder, only one domain is called.</li>
+</ul>
+<p>Some explanations on how we organized domains and what they contain in details:</p>
+<h3 id="install">Install</h3>
+<p>That’s the easiest one, there’s only one domain: Install. It’s the content from the installation wizard.</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="400" src="/assets/images/2016/07/domains_install.png">
+<p>There&rsquo;s nothing new here, it corresponds to the former “install” file we had in 1.6 project in Crowdin.</p>
+<h3 id="modules">Modules</h3>
+<p>For modules, it’s rather simple. We still have a “Modules” folder (first-level), which contains either a file or folder for each module: this the second level.
+The third level is here to say whether the string appears in the front office or the back office.</p>
+<p>Not all modules have a third level: Some modules only have strings for the back office, so in that case we’d use only the second level domain, e.g. <em>Modules.ImageSlider</em> for the &ldquo;Image Slider&rdquo; module, in order to keep it as simple as possible. The strings for these modules will be gathered under a simple file, and not a folder.</p>
+<p><img src="/assets/images/2016/07/domains_modules.png" alt="Install translation domain for PrestaShop 1.7"></p>
+<p>In Crowdin, you will then have a mix of files and folders, like this:</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="350" src="/assets/images/2016/07/modules_domains_crowdin.png">
+<p>Some strings might be rather generic (like “Search” or “Settings updated”) and can be shared with other modules or pages. In that case, we’ll use the <em>Admin</em>. or <em>Shop</em>. domains to avoid unnecessary duplicates. It means that in some modules folder you will see some <em>Admin.Actions</em> or <em>Shop.Theme</em> domains.</p>
+<h3 id="shop">Shop</h3>
+<p>For the front office, it’s getting a little bit more complex. Any string related to the front office goes into a <em>Shop</em> domain. That’s the first level. Then it’s split in various sections, mostly functional. Here’s how it works for the second level:</p>
+<table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>Strings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emails</td>
+<td>The emails sent from the shop to a customer (order confirmation, account creation, etc.).</td>
+</tr>
+<tr>
+<td>PDFs</td>
+<td>The PDFs sent to a customer (invoice, delivery slip, credit slip, etc.).</td>
+</tr>
+<tr>
+<td>Theme</td>
+<td>The strings attached to the default theme “Classic”.</td>
+</tr>
+<tr>
+<td>Demo</td>
+<td>The content from the demo products and demo pages (“About us”, “Terms and conditions of use”, etc.). If you remove the demo content, you shouldn’t need any of these strings.</td>
+</tr>
+<tr>
+<td>Notifications</td>
+<td>The warning, error or success messages that can appear in the shop.</td>
+</tr>
+<tr>
+<td>Forms</td>
+<td>The forms available in the shop (“Contact us” page, addresses, etc.).</td>
+</tr>
+</tbody>
+</table>
+<p>Each of this domain can be further divided to provide even more context.</p>
+<ol>
+<li>The <strong>Theme</strong> section is divided into 4 additional sections:</li>
+</ol>
+<ul>
+<li>Catalog: all the strings needed to display your catalog (product page, categories, etc.).</li>
+<li>Customer Account: anything related to the management of a customer account and the orders.</li>
+<li>Checkout: everything related to the act of buying - i.e. if you’re in catalog mode, you shouldn’t need these strings.</li>
+<li>Actions: all the call-to-actions, buttons or links that you find on the shop and that aren’t specific to a page or context.</li>
+</ul>
+<ol start="2">
+<li>The <strong>Demo</strong> section has only two sections:</li>
+</ol>
+<ul>
+<li>Catalog: content for demo product and categories (descriptions).</li>
+<li>Pages: content inside the demo pages (formerly known as CMS pages).</li>
+</ul>
+<ol start="3">
+<li>
+<p><strong>Notifications</strong> are split according to their level of alert: error, warning or success. They are the messages showing up on your shop.</p>
+</li>
+<li>
+<p>As for the <strong>Form</strong> sections, you’ll have</p>
+</li>
+</ol>
+<ul>
+<li>the form labels,</li>
+<li>its corresponding errors (distinct from the theme errors, these one are specific to the form and will display inline),</li>
+<li>and what we’ve called “help” - mainly the hints to help you fill in the form (special characters, etc.).</li>
+</ul>
+<p><img src="/assets/images/2016/07/domains_front.png" alt="Front office domains on Crowdin"></p>
+<h3 id="admin">Admin</h3>
+<p>Now, let’s see how things are organized for the strings from the back office.</p>
+<table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>Strings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Global</td>
+<td>Anything which doesn’t fall in the below categories, but is still related to the back office, that can be found in a lot of occurrences (“Max”, “Settings”, “Enabled”, etc.) AND in different parts of the software too. <br/>If a string is specific to a given page, then it shouldn’t be in the global domain.</td>
+</tr>
+<tr>
+<td>Actions</td>
+<td>All the call-to-actions, buttons or links that you find on the back office, and that are quite generic (“Save”, “Add”, “Delete”, etc.). Again, if it applies to one page and one functional domain only, then this is not the domain to use.</td>
+</tr>
+<tr>
+<td>Notifications</td>
+<td>All the warning, error or success messages that can appear in the back office.They must be general notifications applying to any part of the software (e.g. “Settings updated”).<br/> In case you have a specific notification (“Friendly URLs are currently disabled”), then it should fall under the notification subdomain for its functional domain (here <em>Admin.Catalog.Notification</em>).</td>
+</tr>
+<tr>
+<td>Navigation</td>
+<td>The structure shared by all pages of the back office.</td>
+</tr>
+<tr>
+<td>Orders &amp; Customers</td>
+<td>Strings for the “Orders”, “Customers” and “Customer Service” sections from the back office.</td>
+</tr>
+<tr>
+<td>Catalog</td>
+<td>Strings from the “Catalog” section.</td>
+</tr>
+<tr>
+<td>Modules</td>
+<td>Strings from the Modules page.</td>
+</tr>
+<tr>
+<td>Design</td>
+<td>Strings from the “Design” section.</td>
+</tr>
+<tr>
+<td>Shipping</td>
+<td>Strings from the “Shipping” section.</td>
+</tr>
+<tr>
+<td>Payment</td>
+<td>Strings from the “Payment” section.</td>
+</tr>
+<tr>
+<td>International</td>
+<td>Strings form the “International” section.</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td>Content from the “Shop Parameters” and “Advanced Settings” sections.</td>
+</tr>
+</tbody>
+</table>
+<p>If you’re not familiar with the new sections in PrestaShop 1.7, <a href="http://build.prestashop.com/news/how-we-reorganized-main-menu-prestashop-1.7/">read this article about the new menu</a>.</p>
+<p>From “Orders &amp; Customers” to “Parameters”, the third levels are organized the same way, as functional domains. Each of these third levels will include three sublevels:</p>
+<ul>
+<li><strong>Feature</strong>: everything specific to a functional domain. If you’re in the “Shipping” section, the domain <em>Admin.Shipping.Feature</em> will contain all the strings displaying in the Shipping menu, that are particular to these pages.</li>
+<li><strong>Notification</strong>: info, success, warning or error messages specific to the functional domain and the pages it includes.</li>
+<li><strong>Help</strong>: help text and placeholders.</li>
+</ul>
+<p><img src="/assets/images/2016/07/domains_admin.png" alt="Back office domains on Crowdin"></p>
+<p>For example, here’s what it will give for a specific page from the back office (Design &gt; Image settings)</p>
+<p><img src="/assets/images/2016/07/domains_example2.png" alt="Domains example for back office"></p>
+<p>With the following domains being used:</p>
+<img style="border: 1px solid #CCC; padding: 10px;" width="250" src="/assets/images/2016/07/domains_example3.png">
+<h2 id="limitations">Limitations</h2>
+<p>While we wanted to have a great system, there are nevertheless a few drawbacks.</p>
+<ul>
+<li>Help texts are now separated from the features. When translating 1.6, the feature string and its attached help text were place one after the other in the Crowdin interface. With the changes in 1.7, these two strings will be in two different files. But we ignored this limitation since separating features and help texts:
+<ul>
+<li>Allows a better prioritization (= you’d want to translate the features first, which is the core of the software, then the help, which can be seen as a plus)</li>
+<li>Allows a differentiation in tone (features are often using infinitives and are more neutral, while help is more personal and talks directly to the merchant)</li>
+</ul>
+</li>
+<li>That’s more files to get lost in on Crowdin, but it’s a trade-off: each file will be shorter to complete and it will provide a better overall context.</li>
+<li>With their new format, the PrestaShop translation files will be heavier. However the .xlf format makes it possible to have the English source associated with its translations. It’s much more convenient to read (before you had only the translations keys, which aren’t very helpful).</li>
+</ul>
+<h2 id="disclaimer-work-in-progress">Disclaimer: work in progress</h2>
+<p>There a few things you need to know about this new system, as we’ve just started to deploy it.</p>
+<ul>
+<li>It’s currently being worked on. We’ve started to map the front office and new 1.7 pages (modules, product) with the domains. The rest will come as the beta phase moves forward. In the meantime, strings which haven’t got any domain will fall under a generic “messages.xlf” file on Crowdin. As time will go by, more strings will have domains, and it will move from the “messages.xlf” file to the relevant mapped file.</li>
+<li>We’ve presented here the ideal we want to reach. The reality might differ a bit (= we might not be able to get the demo content in Crowdin after all, this kind of things&hellip;).</li>
+<li>Please understand that this system is in beta phase as well. At first some strings might still have duplicates, some will move from a domain to another, etc. We’re in a trial &amp; error mode.</li>
+</ul>
+<p>So please bear with us while we’re doing our best to improve things, and if you have any suggestions, they are more than welcome!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jul 1, 2016</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/translation/">translation</a>
+
+  <a class="label label-primary" href="/tag/i18n/">i18n</a>
+
+  <a class="label label-primary" href="/tag/l10n/">l10n</a>
+
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Alex Even
+      <span>Product Manager</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/AlexEven">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/821016-alex-even">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/alex-even">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/AlexHarryEven">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

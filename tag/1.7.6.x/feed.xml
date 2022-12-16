@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 16 Nov 2020 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/1.7.6.x/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Release Of PrestaShop 1.7.6.9</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-9-maintenance-release/</link>
+      <link>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-9-maintenance-release/</link>
       <pubDate>Mon, 16 Nov 2020 00:00:00 +0100</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-9-maintenance-release/</guid>
+      <guid>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-9-maintenance-release/</guid>
       <description>The ongoing work on security for PrestaShop software continues. We have identified and fixed a new security issue, it has been decided to deliver a new maintenance release for 1.7.6.X branch.
 Reminder: the 1-Click Upgrade module’s latest version is v4.10.1, don’t forget to upgrade it.
 Security fixes 1 security fix has been included in this patch version:
@@ -21,10 +21,10 @@ Improper Access Control with submitReorder function (security advisory) More inf
     
     <item>
       <title>Release Of PrestaShop 1.7.6.8</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-8-maintenance-release/</link>
+      <link>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-8-maintenance-release/</link>
       <pubDate>Thu, 24 Sep 2020 14:00:00 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-8-maintenance-release/</guid>
+      <guid>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-8-maintenance-release/</guid>
       <description>The ongoing work on security for PrestaShop software continues. We have identified and fixed new minor security issues, it has been decided to deliver a new maintenance release for 1.7.6.X branch.
 Reminder: the 1-Click Upgrade module’s latest version is v4.10.1, don’t forget to upgrade it.
 Security fixes 4 security fixes have been included in this patch version:
@@ -33,10 +33,10 @@ Stored XSS in upload files (security advisory) Blind SQLi in Catalog Product edi
     
     <item>
       <title>Release Of PrestaShop 1.7.6.7</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-7-maintenance-release/</link>
+      <link>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-7-maintenance-release/</link>
       <pubDate>Mon, 06 Jul 2020 11:40:00 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-7-maintenance-release/</guid>
+      <guid>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-7-maintenance-release/</guid>
       <description>PrestaShop 1.7.6.7 is now available. It fixes an important regression introduced in 1.7.6.6.
 In 1.7.6.6, one of the Front Office JavaScript files was modified through the usage of a linter. The modification inadvertently introduced a regression resulting in a script error in the Product page.
 The main consequence of this regression is that some events usually fired on product page are not executed. This may produce a malfunction in Front Office modules which expect the updateProduct event to be dispatched on this page.</description>
@@ -44,40 +44,40 @@ The main consequence of this regression is that some events usually fired on pro
     
     <item>
       <title>Release Of PrestaShop 1.7.6.6</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-6-maintenance-release/</link>
+      <link>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-6-maintenance-release/</link>
       <pubDate>Thu, 02 Jul 2020 16:30:00 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-6-maintenance-release/</guid>
+      <guid>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-6-maintenance-release/</guid>
       <description>The ongoing work on security for PrestaShop software continues. We have identified and fixed new minor security issues and since we don&amp;rsquo;t expect PrestaShop 1.7.7.0 final to be released before a few weeks, it has been decided to deliver a new maintenance release for 1.7.6.X branch.
 Similarly to 1.7.6.5, this maintenance release fixes not only regressions found on versions 1.7.6.0 to 1.7.6.5, but also a few security issues from 1.5, 1.</description>
     </item>
     
     <item>
       <title>Release Of PrestaShop 1.7.6.5</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-5-maintenance-release/</link>
+      <link>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-5-maintenance-release/</link>
       <pubDate>Mon, 20 Apr 2020 16:30:00 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-5-maintenance-release/</guid>
+      <guid>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-5-maintenance-release/</guid>
       <description>A few months ago, the PrestaShop core team has decided to make a forthright patch release process and deliver patch versions on a more regular basis, every time it’s needed. So here we are, 6 weeks after the release of 1.7.6.4, PrestaShop 1.7.6.5 is now available!
 This maintenance release is a bit special as it does not only fix regressions found on version 1.7.6.0 to 1.7.6.4, but it also has put a focus on fixing many security issues, from 1.</description>
     </item>
     
     <item>
       <title>Release Of PrestaShop 1.7.6.4</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-4-maintenance-release/</link>
+      <link>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-4-maintenance-release/</link>
       <pubDate>Thu, 05 Mar 2020 12:00:00 +0100</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-4-maintenance-release/</guid>
+      <guid>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-4-maintenance-release/</guid>
       <description>PrestaShop 1.7.6.4 is finally available! A critical security issue and regressions found on the previous 1.7.6 versions have been fixed. Upgrading your shop is highly recommended.
 This maintenance release fixes 9 issues reported from versions 1.7.6.0 to 1.7.6.3. Since this version fixes a security problem, we strongly encourage you to upgrade your shop as soon as possible. We suggest upgrading your shop quickly to benefit from these fixes. Of course, don’t forget to backup before.</description>
     </item>
     
     <item>
       <title>Release Of PrestaShop 1.7.6.3</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-3-maintenance-release/</link>
+      <link>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-3-maintenance-release/</link>
       <pubDate>Tue, 21 Jan 2020 09:10:11 +0100</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-3-maintenance-release/</guid>
+      <guid>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-3-maintenance-release/</guid>
       <description>After a few months dedicated to fixing all regressions found on the previous 1.7.6 versions, PrestaShop 1.7.6.3 is finally available!
 This maintenance release fixes 16 issues reported on versions 1.7.6.0, 1.7.6.1, and 1.7.6.2.
 Obviously, you should upgrade your shop quickly in order to benefit from those fixes - and do not forget to backup before. ;-)
@@ -86,10 +86,10 @@ Reminder: the 1-Click Upgrade module’s latest version is v4.10.1 (read here), 
     
     <item>
       <title>Release Of PrestaShop 1.7.6.2</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-2-maintenance-release/</link>
+      <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-2-maintenance-release/</link>
       <pubDate>Thu, 28 Nov 2019 16:15:00 +0100</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-2-maintenance-release/</guid>
+      <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-2-maintenance-release/</guid>
       <description>After a few months dedicated to fixing all regressions found on the previous 1.7.6 versions, PrestaShop 1.7.6.2 is finally available!
 This maintenance release fixes 31 issues reported on version 1.7.6.0 and 1.7.6.1. We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 Reminder: the 1-Click Upgrade module’s latest version is v4.10.0, don’t forget to upgrade it.
@@ -98,10 +98,10 @@ Main fixes Below are listed some of the main regression issues we fixed in this 
     
     <item>
       <title>Release of PrestaShop 1.7.6.1</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-1-maintenance-release/</link>
+      <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-1-maintenance-release/</link>
       <pubDate>Mon, 26 Aug 2019 16:00:00 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-1-maintenance-release/</guid>
+      <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-1-maintenance-release/</guid>
       <description>PrestaShop 1.7.6.1 is now available. This maintenance release fixes 26 issues reported on version 1.7.6.0.
 We suggest upgrading your shop quickly in order to benefit from this fixes. Of course, don&amp;rsquo;t forget to backup before.
 Main fixes In some circumstances prices would appear with 6 decimal digits (#14640) The “convert a guest into a customer” feature wasn’t working (#14639) It was possible to circumvent the BO token in some circumstances (Thanks Guillaume Lictevout) (#14671) The “erase all” button in the logs page wasn’t working (#14686) Mails weren’t completely translated/translatable (#14633) Links pointing to edit/view customers weren’t working on legacy pages like Quick Search (#14672) Prices in Czech would sometimes be displayed using the wrong formatting (#14657) Applying filters in the logs page would result in an error (#14785) Importing a theme would fail it if contained a translations directory with no files (#14960) The translation interface wasn’t working when using a theme other than classic (#14733 and #15133) Module translations edited through the new back office interface were being ignored by the module (#14932) Disabled categories were not being shown in the parent category tree when editing categories, resulting in an error (#14790) Accessing the suppliers page after an import would result in an error (#14908) Following steps in the checkout process were being disabled even when the theme didn’t include a “continue” button (#14846) Errors would occur when manipulating orders in some circumstances when working on a multishop environment (#14595 and #15144) Read the full changelog here.</description>
@@ -109,10 +109,10 @@ Main fixes In some circumstances prices would appear with 6 decimal digits (#146
     
     <item>
       <title>PrestaShop 1.7.6.0 is available!</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-0-available/</link>
+      <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-available/</link>
       <pubDate>Wed, 10 Jul 2019 17:00:00 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-0-available/</guid>
+      <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-available/</guid>
       <description>We are happy to announce PrestaShop 1.7.6.0 is officially available!
 It has been quite a journey to deliver this huge release, our biggest yet since 1.7.1.0. Six months of development, a six week-long Beta, two Release Candidates&amp;hellip; Was it worth it? We absolutely think so, and hope that you will enjoy using it.
 In this version we focused on improving and bringing back important 1.6 features to merchants, and kept working on code quality and performance improvements.</description>
@@ -120,10 +120,10 @@ In this version we focused on improving and bringing back important 1.6 features
     
     <item>
       <title>Release note 1.7.6 RC2</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-0-rc2-release/</link>
+      <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-rc2-release/</link>
       <pubDate>Fri, 05 Jul 2019 16:00:00 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-0-rc2-release/</guid>
+      <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-rc2-release/</guid>
       <description>Once again the PrestaShop community actively participated in the testing of the PrestaShop 1.7.6 Release Candidate. Thanks to your involvement, 3 regressions were identified and fixed.
 Our team is glad to announce PrestaShop 1.7.6.0 Release Candidate 2. If no new regression is reported in the next days, we will make the final version of 1.7.6.0 available by the end of next week (28).
 Fixed in this Release Candidate 2 Front Office:</description>
@@ -131,20 +131,20 @@ Fixed in this Release Candidate 2 Front Office:</description>
     
     <item>
       <title>Release note 1.7.6 RC1</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-0-rc-release/</link>
+      <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-rc-release/</link>
       <pubDate>Tue, 25 Jun 2019 17:30:00 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-0-rc-release/</guid>
+      <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-rc-release/</guid>
       <description>This is the last step before releasing the final 1.7.6.0. It aims at making sure that all regressions found during the beta have been fixed, and that no new ones appeared. If no new regression is reported by July 1st, we will make the final version of 1.7.6.0 available.
 Please note that it is not currently possible to perform an automatic upgrade from the Beta to the Release Candidate. Furthermore, it will not be possible to upgrade from this Release Candidate to the final release.</description>
     </item>
     
     <item>
       <title>PrestaShop 1.7.6.0 beta is open for feedback!</title>
-      <link>https://build.prestashop-project.org/news/prestashop-1-7-6-0-beta-release/</link>
+      <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-beta-release/</link>
       <pubDate>Mon, 13 May 2019 15:00:00 +0200</pubDate>
       
-      <guid>https://build.prestashop-project.org/news/prestashop-1-7-6-0-beta-release/</guid>
+      <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-beta-release/</guid>
       <description>The first Beta version for PrestaShop 1.7.6.0 is now ready for you to test!
 We are really happy to announce that we are close to releasing 1.7.6.0.
 Over 6 months in the making, PrestaShop 1.7.6.0 will be a huge release, our biggest one yet, with over 600 merged Pull Requests at the time of writing.

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Introducing PrestaShop&#39;s Community Framework</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Introducing PrestaShop&#39;s Community Framework" />
+<meta property="og:description" content="Open Source is in the DNA of PrestaShop, and with it comes the great responsibility that the Core team has towards the project and its community – both users and contributors." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2016/prestashop-community-framework/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2016-10-12T09:10:11+02:00" />
+    <meta property="article:modified_time" content="2016-10-12T09:10:11+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Introducing PrestaShop&#39;s Community Framework"/>
+<meta name="twitter:description" content="Listing best practices and responsibility in order to involve the community more."/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Introducing PrestaShop&#39;s Community Framework</h1>
+              
+                <h3 class="post-subtitle">Listing best practices and responsibility in order to involve the community more.</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749"
+         alt="Xavier Borderie's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Xavier Borderie</div>
+        
+          <div class="author-display-role">Open Source Advocate</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Oct 12, 2016
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Introducing&#43;PrestaShop%27s&#43;Community&#43;Framework&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fprestashop-community-framework%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2016%2Fprestashop-community-framework%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Open Source is in the DNA of PrestaShop, and with it comes the great responsibility that the Core team has towards the project and its community &ndash; both users and contributors.</p>
+<p>PrestaShop values greatly the contributions of its community members, and as contributors improve their skills, the PS codebase gets better. By growing the community of knowledgeable contributors, the Core team hopes to fully realize the Open Source potential of the PrestaShop project.</p>
+<p>To support that growth, we decided to create a Community Framework a few months ago: a definitive set of rules and obligations which, together with tools such as <a href="http://build.prestashop.com/news/introducing-prestonbot/">PrestonBot</a> and the keen eye of Core contributors, should make it possible to better handle pull requests &ndash; and in a more timely fashion!</p>
+<p>This Community Framework is made of two sides: the Contributor’s Rules, and the Project Roles. One is for both everyday contributors AND Core developers; the other is for trusted contributors who want to be involved further with the project.</p>
+<h2 id="contribution-rules">Contribution rules</h2>
+<p>As a contributor, there are certain things which are expected from your contribution in order to help the Core team review and possibly merge your code contribution in no time.</p>
+<p>The following rules are what the Core team looks at in a contribution in order to review it and build trust with the contributor. Note that they are cumulative: don’t skip a rule, they are all important.</p>
+<ol>
+<li>The commits are made on the <strong>correct branch</strong> (<code>develop</code> for PS 1.7, <code>1.6.1.x</code> for PS 1.6), thanks to a clear understanding of <a href="http://build.prestashop.com/news/a-more-semantic-versioning-scheme/">PrestaShop’s SemVer-like versioning scheme</a>.</li>
+<li>The commits are made from an <strong>up-to-date branch</strong>.</li>
+<li>The commits pass the <strong>PrestaShop automatic unit tests</strong> (as shown by the Travis CI indicator at the bottom of the PR in GitHub).</li>
+<li>The code of the commits follows the <strong><a href="http://doc.prestashop.com/display/PS16/Coding+Standards">PSR-2 coding style guide</a></strong> (which implies PSR-1 too).</li>
+</ol>
+<ul>
+<li><a href="http://symfony.com/doc/current/contributing/code/standards.html">Symfony’s coding standards</a> are also an inspiration to keep in mind.</li>
+</ul>
+<ol start="5">
+<li>The commits are <strong><a href="http://seesparkbox.com/foundry/atomic_commits_with_git">atomic</a></strong>.</li>
+<li>The commits are named in accordance with the <strong><a href="http://doc.prestashop.com/display/PS16/How+to+write+a+commit+message">PrestaShop naming convention</a></strong>.</li>
+<li>The pull request for the commits has a <strong>short and descriptive title in English</strong>.</li>
+<li>The pull request for the commits contains a table with a <strong>clear description of what the contained commits do</strong>, with <strong>steps to reproduce/test the issue(s)</strong>, and if necessary a <strong>link to the Forge ticket(s)</strong> that is/are fixed by the commits. All texts (including the PR discussion) are to be written in English.</li>
+<li>The pull request does not contain any “<em><code>Merge branch ‘xxx’...</code></em>” commit (which breaks the project’s Git history). Use <code>git pull --rebase</code> whenever in doubt. &ndash; see the <a href="https://git-scm.com/docs/git-pull">official <code>git pull</code> documentation</a>, or <a href="http://gitready.com/advanced/2009/02/11/pull-with-rebase.html">this tutorial</a>.</li>
+<li>The code changes have been fully tested and present <strong>no unexpected side-effects</strong> anywhere in the back office or the front office, for a clean PrestaShop installation on a standard PHP/MySQL server.</li>
+</ol>
+<p>A contributor can be more noticed with the quality AND quantity of pull requests submitted, and also if (s)he contributes in other ways: feedback on <a href="https://github.com/PrestaShop/PrestaShop/pulls">other PRs than his/her own</a>, feedback on <a href="http://forge.prestashop.com/">Forge tickets</a>, participation to the <a href="http://doc.prestashop.com/">documentation wiki</a> or the <a href="https://github.com/PrestaShop/docs">1.7 techdoc repo</a>, translation on the <a href="http://crowdin.net/project/prestashop-official">PrestaShop project on Crowdin</a>, participation in the <a href="http://www.prestashop.com/forums/">PrestaShop forums</a>, etc. This shows that the contributor is a thorough member of the PrestaShop ecosystem.</p>
+<h2 id="prestashop-project-roles">PrestaShop project roles</h2>
+<p>The PrestaShop project is wide and far-reaching, between the Core codebase and native modules which go from the mundane to the advanced. All were initially built by the PrestaShop team, and all are open to developer contributions.</p>
+<p>Contributors who respect the above rules and become quite involved with the PrestaShop project will now follow a path of roles, which naturally result from a strong and healthy relationship.</p>
+<p>Climbing up the “role ladder” can take from a few weeks to several months, depending on the responsibilities of the role and the feedback from the Core team, and eventually anyone who makes contributions that at are regularly merged, can become part of the group of people in charge of the PrestaShop project.</p>
+<p>Let’s see these cumulative roles:</p>
+<h3 id="1-pr-reviewer">1) PR reviewer</h3>
+<p>Help the Core team by asserting the “mergeability” of PRs, with a thorough code review, and by possibly completing the PR description with the necessary information for testing the issue (if none is available).</p>
+<p>Reviews, whether positive or negative, are to be submitted directly in each PR’s comment section, through GitHub’s own code reviewing tools. The reviewer should follow the PR’s subsequent comments and commit, until merge or closure. In short, taking care of the PR during its whole lifetime.</p>
+<h3 id="2-cherry-picker">2) Cherry-picker</h3>
+<p>Help the Core team by making it possible to merge interesting pull requests that are either made on the wrong branch or that have too many conflicts, and therefore cannot be merged as is. Cherry-picking means the “Cherry-pickability” will be asserted by the Core team or the Product Managers first, and you are welcome to rebase that code into a new PR.</p>
+<p>The original PR must be kept open until the new PR is closed/merged. The author of the original PR must be named in the resulting PR.</p>
+<h3 id="3-patch-release-merger">3) Patch release merger</h3>
+<p>Once a patch version’s release date has been chosen (by the Product Managers and the Core team), the PRs attached to its GitHub milestone (which must have been code-reviewed and QA-approved) can be merged, one by one and with a final test in order to make sure that there is no unwanted side-effect (such as a behavioral change or a break of backward compatibility).</p>
+<p><em>Note: A contributor MUST only merge other contributors’ PRs, not his/her own.</em></p>
+<h3 id="4-minor-release-merger">4) Minor release merger</h3>
+<p>Once a minor version’s release date has been chosen (by the Product Managers and the Core team), the PRs attached to its GitHub milestone (which must have all been code-reviewed and QA-approved) can be merged, one by one and with a final QA session in order to make sure that there is no unwanted side-effect (such as a break of backward compatibility).</p>
+<p><em>Note: A contributor MUST only merge other contributors’ PRs, not his/her own.</em></p>
+<h3 id="5-major-release-merger">5) Major release merger</h3>
+<p>Once a major version’s release date has been chosen (by the Product Managers and the Core team), the PRs attached to its GitHub milestone (which must have been code-reviewed and QA-approved) can be merged, one by one and with a final QA session in order to make sure that there is no unwanted side-effect.</p>
+<p><em>Note: This role is mostly reserved to employees from the PrestaShop company.</em></p>
+<p>You’ll understand that the last two roles (merger for minor versions and merged for major versions), which involve responsibilities that can have an impact on both 250,000+ online stores and the PrestaShop business itself, can only be reached after months of trustful work with the Core team &ndash; at least for the time being.</p>
+<h2 id="onwards">Onwards!</h2>
+<p>So, there you have it: the contributor role ladder within the PrestaShop project, and the rules to follow in order to reach its first step. While seemingly strict, they allow enough freedom to let anyone enter the team of caretakers for the Core codebase and the native modules, and helps build a circle of exceptional trust upon which thousands of online merchants will be able to rely for their daily activity.</p>
+<h2 id="introducing-our-first-code-reviewer-from-the-community-michael-dekker">Introducing our first Code Reviewer from the Community: Michael Dekker!</h2>
+<p>Michael comes from the Netherlands. Comparatively, he has only recently joined the community of contributors, but he has done a lot already:</p>
+<ul>
+<li>In May 2015, he joined PrestaShop’s translation project on Crowdin, and has since made sure the Dutch language was always among the top-translated.</li>
+<li>In July 2015, he asked to translate the 1.6 User Guide into Dutch. <a href="http://doc.prestashop.com/display/PS16/Gebruikershandleiding">By September, it was all done</a>!</li>
+<li>In August, 2015, he made his first pull request. Since then, <a href="https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&amp;q=is%3Apr%20author%3Afirstred%20">he has made 183 PRs</a>, <a href="https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&amp;q=is%3Apr%20author%3Afirstred%20is%3Amerged">127 of which have been merged into the codebase</a>. Recently, he has been on a spree of “simple” but very useful PRs, added proper comments to PHP methods: <a href="https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&amp;q=is%3Apr%20author%3Afirstred%20doc%20class%20">he has suggested updates to 78 classes</a> so far!</li>
+<li>In September 2015, he became part of the <a href="https://ambassadors.prestashop.com/">PrestaShop Ambassadors program</a>, and has been proactive in promoting PrestaShop in his country, both through local modules and visits to meetups.</li>
+</ul>
+<p>You can understand that Michael has become a well-known name among the PrestaCrew, and we are pleased to welcome him as the first one to “climb the role ladder” that the Community Framework puts in place.</p>
+<p>We took this as an opportunity to introduce Michael to the community at large through this small interview:</p>
+<blockquote>
+<p><em><strong>Hi Michael! What is your day job?</strong></em></p>
+<p>Hi there! I am a fullstack developer, meaning that I work with both PHP and JavaScript.</p>
+<p><em><strong>What pushed you to start contributing to the PrestaShop project?</strong></em></p>
+<p>The first version of PrestaShop I used was a beta of 1.6. I noticed that the software had great potential, but it was hard to launch a store in the Netherlands with it. I noticed that it missed a lot of local stuff. Apparently PrestaShop noticed that as well, because shortly after that the Ambassador project and the Integration fund were launched. I was a little ahead of that :)</p>
+<p><em><strong>What do you think are your biggest contribution(s) to PS so far?</strong></em></p>
+<p>Oh, probably modifying more than 100,000 lines of code, and of course translating the whole User Guide into Dutch.</p>
+</blockquote>
+<p>Thanks lot for being part of the Community, Michael! We hope to see you soon giving code reviews to the project’s pull requests!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Oct 12, 2016</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/development/">development</a>
+
+  <a class="label label-primary" href="/tag/community/">community</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Xavier Borderie
+      <span>Open Source Advocate</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+        <i class="icon-chat-alt"></i> Forum
+      </a>
+    
+    
+      <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+        <i class="icon-globe"></i> Crowdin
+      </a>
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

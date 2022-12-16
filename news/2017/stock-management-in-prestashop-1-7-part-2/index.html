@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Stock Management in PrestaShop 1.7 - part 2</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Stock Management in PrestaShop 1.7 - part 2" />
+<meta property="og:description" content="In a previous article, we’ve explained the reasons why we’re rebuilding the stock management system in 1.7. We detailed the initial brief of this project: the context, our intentions, what was out-of-scope and the expected outcome. In this article, I want to dive into our methodologies and the main steps of this project." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2017/stock-management-in-prestashop-1-7-part-2/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2017-06-22T09:10:11+02:00" />
+    <meta property="article:modified_time" content="2017-06-22T09:10:11+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Stock Management in PrestaShop 1.7 - part 2"/>
+<meta name="twitter:description" content="Second overview on how we’re rebuilding this feature"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Stock Management in PrestaShop 1.7 - part 2</h1>
+              
+                <h3 class="post-subtitle">Second overview on how we’re rebuilding this feature</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://fr.gravatar.com/userimage/91609995/38361fbb8f44093203780a23155f280d.jpg"
+         alt="Guillaume Bruere's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Guillaume Bruere</div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jun 22, 2017
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Stock&#43;Management&#43;in&#43;PrestaShop&#43;1.7&#43;-&#43;part&#43;2&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2017%2Fstock-management-in-prestashop-1-7-part-2%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2017%2Fstock-management-in-prestashop-1-7-part-2%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>In a <a href="http://build.prestashop.com/news/stock-management-in-prestashop-1-7/">previous article</a>, we’ve explained the reasons why we’re rebuilding the stock management system in 1.7. We detailed the initial brief of this project: the context, our intentions, what was out-of-scope and the expected outcome. In this article, I want to dive into our methodologies and the main steps of this project.</p>
+<p>Remember this diagram?</p>
+<p><img src="/assets/images/2017/04/stockmanagement-productprocess.png" alt="Product process"></p>
+<p>It outlines the workflow of product management, design and development we’ve put into practice to ship a new major feature.
+Now we’re going to explain how we followed the 2 first main steps of this workflow (Discovery, Solution) and what we learned on the way, i.e. how we narrowed down problems worth fixing and how we looked for appropriate solutions.</p>
+<h2 id="1--discovery--user-research">1- Discovery = user research</h2>
+<p>Our goal during this step was to get a good understanding of the challenges and problems PrestaShop users are facing regarding stock management.</p>
+<h3 id="qualitative-discovery-with-11-interviews">Qualitative discovery with 1:1 interviews</h3>
+<p>During the first weeks of user research, I spent hours interviewing PrestaShop merchants to really understand how they manage their stock. When I had the chance, I visited their warehouse or their shop to see how they’re organized.</p>
+<p><img src="/assets/images/2017/06/stockmanagement2-warehouse1.jpg" alt="Warehouse">
+<img src="/assets/images/2017/06/stockmanagement2-warehouse2.jpg" alt="Warehouse">
+<img src="/assets/images/2017/06/stockmanagement2-warehouse3.jpg" alt="Warehouse"></p>
+<p>My questions to them were about:</p>
+<ul>
+<li>Their profile, the size of their online business.</li>
+<li>Their workflows, the tools they use.</li>
+<li>Their use-cases of PrestaShop.</li>
+<li>The problems or frustrations they were facing at the time with their tools.</li>
+</ul>
+<p>After 15 of these interviews I was starting already to see what were the most common problems, needs and behaviors. I had identified 5 use-cases for stock management:</p>
+<ul>
+<li>Overview of stock level.</li>
+<li>Procurement: prepare purchase orders.</li>
+<li>Provisioning and adjustments: update the stocks when receiving purchase orders or when doing an inventory regulation.</li>
+<li>Preparation of customer orders.</li>
+<li>Accounting.</li>
+</ul>
+<p>And the main problems with Advanced Stock Management (ASM) in version 1.6 were the following:</p>
+<ul>
+<li>Too much setup at the beginning, after enabling ASM.</li>
+<li>Many bugs (especially inconsistent stock values).</li>
+<li>Too complex to use: updating a quantity required many steps, it wasn’t adapted to supply order management nor multi-warehouse management.</li>
+</ul>
+<h3 id="quantitative-validation-with-online-survey">Quantitative validation with online survey</h3>
+<p>Based on these interviews but also on feedback on our <a href="http://forge.prestashop.com/">bug tracking tool</a>, I started drawing hypotheses about PrestaShop merchants’ needs regarding stock management. In order to confirm or invalidate these assumptions, I sent a <a href="https://docs.google.com/a/prestashop.com/forms/d/1n8k1TREwRh1wfrtW_gGUaL-3AFDfm3m_TaCVIgTRpgY/prefill">survey</a> to our <a href="https://www.prestashop.com/club/">User Club</a>. It received 65 responses, from 10 different countries. The results were the following.</p>
+<h4 id="hypothesis-1-very-few-merchants-actually-use-advanced-stock-management-in-prestashop-16">Hypothesis #1: “Very few merchants actually use Advanced Stock Management in PrestaShop 1.6.”</h4>
+<p><strong>=&gt; TRUE</strong></p>
+<p>The result of the survey was a bit surprising at first. When I asked the merchants about the tools they use to manage their stocks, 26% of them answered they only relied on 1.6&rsquo;s Advanced Stock Management feature, which was a lot more than I expected. However, looking at their comments in the next question, I discovered they were actually struggling to make it work.</p>
+<p>Verbatims from these very same people were:</p>
+<blockquote>
+<p>“Products that have physical stock but there is nothing in stock!”</p>
+</blockquote>
+<blockquote>
+<p>“Quantity at adv mgmt doesn&rsquo;t tally with available stocks.”</p>
+</blockquote>
+<blockquote>
+<p>“Stock management is not stable.”</p>
+</blockquote>
+<blockquote>
+<p>“I have problems with certain articles. I cannot remove them because there is physical stock. But there is no stock!”</p>
+</blockquote>
+<p>In the end, it turned out they were trying to use ASM but not actually using it.</p>
+<h4 id="hypothesis-2-most-of-the-small-sized-merchants-only-have-one-warehouse">Hypothesis #2: “Most of the small-sized merchants only have one warehouse.”</h4>
+<p><strong>=&gt; FALSE</strong></p>
+<p>I assumed that only larger merchants (with many products in catalog and many orders per day) would have more than 1 warehouse.</p>
+<p>But the survey showed that there’s no significant difference between small and large merchants in their number of warehouses they have, and about 20% of them actually had more than one warehouse… which brings us to the next hypothesis ;)</p>
+<h4 id="hypothesis-3-asm-does-not-meet-the-merchants-most-essential-needs">Hypothesis #3: “ASM does not meet the merchants’ most essential needs.”</h4>
+<p><strong>=&gt; TRUE</strong></p>
+<p>Based on the qualitative interviews and my own experience of ASM, I already had a hunch that this hypothesis was true.</p>
+<p>What the survey confirmed is that for 35% of the people who tried ASM and gave up, the main reasons were that it didn’t fit their needs or it didn’t work correctly.</p>
+<p>More interestingly, the survey allowed to rank the features merchants look for and want to rely on with PrestaShop’s ASM:</p>
+<ol>
+<li>Track stock movements.</li>
+<li>Overview of catalog stock.</li>
+<li>Procurement / Manage supply orders.</li>
+<li>Estimate stock coverage.</li>
+<li>Multi-warehouse.</li>
+</ol>
+<p>If we also consider the corresponding comments which described&hellip;:</p>
+<ul>
+<li>The interfaces to increment/decrement stock as too clunky,</li>
+<li>The quantities displayed in different parts of the back-office as inconsistent,</li>
+<li>The global lack of reliability&hellip;</li>
+</ul>
+<p>&hellip;then the conclusion was that PrestaShop ASM didn’t do its job well, even for simple tasks like displaying a stock overview or editing quantities. It also showed that “ERP-like” features such as multi-warehouse management were not the merchants’ top need.</p>
+<h2 id="2--solution--build-a-solution-that-meets-users-needs">2- Solution = build a solution that meets users’ needs</h2>
+<p>Once user research was completed, we formalized an initial brief, described in the <a href="http://build.prestashop.com/news/stock-management-in-prestashop-1-7/">previous article</a>, and stated our intention: provide merchants with a new inventory management interface that allows them to get a clear and consistent overview of their stock, to quickly edit quantities and to track stock movements.</p>
+<p>To complete this goal:</p>
+<ul>
+<li>We assembled a team consisting of 1 product manager + 1 product designer + 2 developers.</li>
+<li>We adopted an iterative process to test our ideas.</li>
+</ul>
+<p>During each of the 4 sprints*, our routine was the following:</p>
+<ul>
+<li><a href="https://medium.com/@leamendes/making-your-product-design-collaborative-b0fc84a920e7">Ideation workshop</a>: the team assembled to sketch solutions ideas to specific problems.</li>
+<li>Prototype crafting.</li>
+<li>Test the prototype with 5 users.</li>
+<li><a href="http://medium.com/prestashop/user-tests-are-not-enough-7dba6c17d77d">Debrief together</a> and decide what to work on during the next sprint.</li>
+</ul>
+<p>* a sprint is a development iteration. It lasts 2 weeks at PrestaShop.</p>
+<h3 id="sprint-1">Sprint #1</h3>
+<h4 id="what-we-wanted-to-test">What we wanted to test</h4>
+<ul>
+<li>If the table presentation of stocks is easy to understand.</li>
+<li>If people catch the meaning of physical, reserved and available stock.</li>
+<li>If users can edit product quantities, either one by one or in bulk.</li>
+</ul>
+<h4 id="prototype">Prototype</h4>
+<p>The first prototype was made with <a href="https://balsamiq.com/">Balsamiq</a>. It looks “low-fidelity” but allowed to quickly test our first interfaces without over-designing it.</p>
+<p><a href="https://myprestashop.mybalsamiq.com/projects/lea-stockmanagement17/prototype/step%201%20-%20Stock%20overview?key=1e171ed8295e8975d0b03ef2d67c4b259dc06bed"><img src="/assets/images/2017/06/stockmanagement2-prototype1.png" alt="First prototype"></a></p>
+<h4 id="what-we-learned">What we learned</h4>
+<ul>
+<li>The table’s structure was clear and the notions of physical, reserved and available stocks easy to understand.</li>
+<li>The process to edit quantities was too long, with too many steps.</li>
+<li>The presentation of products with combinations wasn’t clear… and unfortunately it took us time to realize we got it wrong!</li>
+</ul>
+<p>Reflecting on that last point now, the problem is that we tried to over-anticipate a technical limitation that actually didn’t exist - remember the “premature optimization is the root of all evil!”. In order to avoid performance limitations when displaying products that have hundreds or even thousands of combinations (as we wrongly thought so), we designed a specific table for the combinations of a product, accessible with the “view all combinations” button. In the next prototypes we stuck with it, looking for a local optimum by marginally improving the UI instead of questioning the UX. Fortunately we realized the issue afterwards!</p>
+<h3 id="sprint-2">Sprint #2</h3>
+<h4 id="what-we-wanted-to-test-1">What we wanted to test</h4>
+<ul>
+<li>If the new steps to edit the quantities were simple and fast enough.</li>
+<li>If people would better understand the presentation of product with combinations.</li>
+<li>If testers could use the bulk edition of quantities.</li>
+<li>If users understood how they could specify a movement label for a stock edition.</li>
+</ul>
+<h4 id="prototype-1">Prototype</h4>
+<p>This one was made with <a href="https://www.sketchapp.com/">Sketch</a> and the flow was set up on <a href="https://www.invisionapp.com/">Invision</a> in order to give a more “real” experience and help users project themselves in the prototype.</p>
+<p><a href="https://invis.io/HTA13HC8J#/210846588_Step_1a"><img src="/assets/images/2017/06/stockmanagement2-prototype2.png" alt="Second prototype"></a></p>
+<h4 id="what-we-learned-1">What we learned</h4>
+<ul>
+<li>Edition of quantities was simple enough and the input field to edit quantities was fine.</li>
+<li>Most of the testers didn’t understand the steps to follow to edit quantities in bulk. After this test, we decided to put this feature of bulk edition on hold since it wasn’t clear how we could solve this problem and it wasn’t a critical need.</li>
+<li>Users didn’t see / need / understand how they could give a movement reason.</li>
+</ul>
+<h3 id="sprint-3">Sprint #3</h3>
+<h4 id="what-we-wanted-to-test-2">What we wanted to test</h4>
+<ul>
+<li>How users look for products: either with the search bar + filters, or with quick search fields above the table.</li>
+<li>If the ‘advanced filters’ were relevant.</li>
+<li>If this interface could be enough to prepare supply purchases (procurement).</li>
+</ul>
+<h4 id="prototype-2">Prototype</h4>
+<p><a href="https://invis.io/6ZA0604B2#/213992799_Step1_-_Task1"><img src="/assets/images/2017/06/stockmanagement2-prototype3.png" alt="Third prototype"></a></p>
+<h4 id="what-we-learned-2">What we learned</h4>
+<ul>
+<li>The search bar and filters were users’ first instinctive choice. There was no real case to keep the quick search fields above the table.</li>
+<li>This interface would not be convenient to prepare procurement: it lacked essential information like alert stock level, ideal stock level, purchase prices, sales stats…</li>
+</ul>
+<h3 id="sprint-4">Sprint #4</h3>
+<h4 id="what-we-wanted-to-test-3">What we wanted to test</h4>
+<ul>
+<li>If users can specify a stock movement label when editing quantities, whether it’s for one product or for several products at once.</li>
+<li>If users find how they can have an overview of the stock movements history and if the stock movements table is understandable.</li>
+<li>If the stock movement history table could be suitable for accounting purposes.</li>
+</ul>
+<h4 id="prototype-3">Prototype</h4>
+<p><a href="https://invis.io/K6A7R0LVH"><img src="/assets/images/2017/06/stockmanagement2-prototype4.png" alt="Fourth prototype"></a></p>
+<h4 id="what-we-learned-3">What we learned</h4>
+<ul>
+<li>Users succeeded in using movement type labels, but with difficulties. It seemed the steps order was not was they expected. Moreover, it lacked labels: users wanted to add their own labels. Since it wasn’t very conclusive, we decided to put this feature on hold and work on other solution candidates after the launch of a first version of this interface.</li>
+<li>The table of stock movements would absolutely not be convenient for accounting: it lacked too many information. That would be a topic for a more advanced feature.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>At the end of these 4 iterations we estimated we had collected enough feedback to move on with the development of the interfaces. Inevitably, we spotted new issues during the development and we had to find other creative solutions. When we felt stuck we always arbitrated in favor of the simplest solution. So please don’t assume the first version will look exactly the same as in the prototypes.</p>
+<p>The 8 weeks we spent iterating over a new stock management interface were really exciting for the whole team. We contacted 20 people from all around the world and collected extremely useful feedback. Thanks to doing the test remotely over Skype, testers could share their screen and show us how the creative features and workarounds they developed to solve their stock management needs: it was a great source of inspiration!</p>
+<h2 id="call-for-volunteers">Call for volunteers</h2>
+<p>It is thanks to this precious user feedback that we could iterate upon several prototype versions. You want to be part of the next test sessions and help us improve PrestaShop’s stock management system? Then register today!</p>
+<p class="text-center">
+  <a href="https://prestashop-testing.typeform.com/to/OJ0UFi" class="btn btn-lg btn-success">Register!</a>
+</p>
+
+<p>Of course your participation is optional but we would be really happy if you accept to take part in the tests. The more people participate, the more we can improve PrestaShop. If you accept, depending on your profile, you’ll receive an invitation in the coming weeks for a test session. Tests are done remotely (on Skype or Google Hangouts) and usually last 30 minutes. It can be done in English or French.</p>
+<p>See you in the third an final article about stock management in 1.7 &ndash; or at the next test session!</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jun 22, 2017</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.7/">1.7</a>
+
+  <a class="label label-primary" href="/tag/1.7.2.x/">1.7.2.x</a>
+
+  <a class="label label-primary" href="/tag/feature/">feature</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Guillaume Bruere
+      <span>Product Manager</span>
+    </h4>
+
+    
+    
+    
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

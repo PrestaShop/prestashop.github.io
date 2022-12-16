@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Presenting the Advanced EU Compliance module</title>
+    <link href="/style.css?1671216107" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Presenting the Advanced EU Compliance module" />
+<meta property="og:description" content="As good news never come alone, let us introduce you to the new module that is included natively in PrestaShop from 1.6.1.0 version: Advanced EU Compliance." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2015/advanced-eu-compliance/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2015-07-07T14:00:00+02:00" />
+    <meta property="article:modified_time" content="2015-07-07T14:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Presenting the Advanced EU Compliance module"/>
+<meta name="twitter:description" content="Helping merchants make their shops more compliant with the recent EU regulations."/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script type="application/javascript">
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-2753771-31', 'auto');
+				
+				ga('send', 'pageview');
+			}
+		</script>
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-weekly/">Core Weekly</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop.com/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/1.7/contribute/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Presenting the Advanced EU Compliance module</h1>
+              
+                <h3 class="post-subtitle">Helping merchants make their shops more compliant with the recent EU regulations.</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="https://avatars3.githubusercontent.com/u/5026142"
+         alt="Thibaud Chauvière's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">Thibaud Chauvière</div>
+        
+          <div class="author-display-role">Core Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jul 7, 2015
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Presenting&#43;the&#43;Advanced&#43;EU&#43;Compliance&#43;module&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fadvanced-eu-compliance%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fadvanced-eu-compliance%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>As good news never come alone, let us introduce you to the new module that is included natively in PrestaShop from 1.6.1.0 version: <strong><a href="https://github.com/PrestaShop/advancedeucompliance">Advanced EU Compliance</a></strong>.</p>
+<h2 id="why-did-we-create-this-module">Why did we create this module?</h2>
+<p>E-commerce evolves at a very fast pace, and the more it evolves the more new legislations are appearing to frame it. These legislations can - over time - become a real headache for e-shop owners, who have to adapt their website themselves, or to hire someone to do it for them.</p>
+<p>One of the main goals we have at PrestaShop is to make e-commerce accessible to all, and we have decided to integrate some new great features to easily help merchants to get as compliant as possible to their own country&rsquo;s legislations.</p>
+<h2 id="how-did-we-build-it">How did we build it?</h2>
+<p>Since legislations can be very different from one country to another, we had to decide from which perspective we had to start making this module. And we noticed that a German company called <a href="http://www.silbersaiten.de">Silbersaiten</a> was producing a very good free module to help Germans and Austrians shops to get compliant with their legislations. You can find their GitHub repositories page <a href="https://github.com/EU-Legal">here</a>, which contains all their modules.</p>
+<p>The only issue with this module was that it is using a lot of overrides, which could collide with other modules.</p>
+<p>That is why started to work with them in order to implement a native version of their module in PrestaShop, aimed (at first) at the German and Austrian merchants, just like they did. We can&rsquo;t thank them enough for their contribution and dedication to the PrestaShop community!</p>
+<p><strong>&ldquo;Wait! What about me? I&rsquo;m a not German nor Austrian!&rdquo;</strong></p>
+<p>Don&rsquo;t panic ;) Some options already included in this module will also be useful to merchants outside of Germany or Austria. We aim to make as much &ldquo;compliancy helping&rdquo; as possible through this module in the long haul. This is why we built these new features based on the latest European legislation.</p>
+<h2 id="where-can-i-find-it">Where can I find it?</h2>
+<p>The module is available natively, in the archive for PrestaShop 1.6.1.0. You just have to go to the Modules page, and activate it.</p>
+<h2 id="what-are-the-available-options">What are the available options?</h2>
+<p>Most of these new options are meant to provide more transparency to the final customers, with:</p>
+<ul>
+<li>More detailed price labels (&ldquo;From&rdquo; price, tax, shipping fees and delays, product weight, etc.)</li>
+<li>Advanced checkout page</li>
+<li>Legal content attachment for emails</li>
+</ul>
+<p>As usual, <a href="http://doc.prestashop.com/display/PS16/Administration+modules#Administrationmodules-AdvancedEUCompliance">the documentation page details all these options</a>, one by one.</p>
+<h2 id="is-it-feature-complete">Is it feature-complete?</h2>
+<p>The module does a lot of things, but there are still a couple of &ldquo;nice to have&rdquo; features that we want to implement. Also, e-commerce regulations are being voted all the time, so this module will always need to be updated. We&rsquo;ll do our best to keep up with each new law!</p>
+<h2 id="why-is-it-not-a-default-page-in-the-prestashop-back-office">Why is it not a default page in the PrestaShop back office?</h2>
+<p>There are two reasons why all stores do not have this module by default:</p>
+<ul>
+<li>Being about EU Laws compliancy, we couldn&rsquo;t just force non-EU stores to have yet another page of options to check/uncheck. It might eventually make its way in the back office if it proves useful to everyone, but for now it shall remain a module.</li>
+<li>The module still has some options to come. By building this feature as a module, separate from the PrestaShop Core codebase, we can improve it without being tied to PrestaShop&rsquo;s release cycles.</li>
+</ul>
+<h2 id="some-technical-details">Some technical details</h2>
+<ul>
+<li>
+<p>This module is built on top of the forthcoming <a href="http://build.prestashop.com/news/new-architecture-1-6-1-0/">new PrestaShop architecture</a>, of which developers can see a first version in PrestaShop 1.6.1.0. This means that <strong>it will not work with any release lower than 1.6.1.0</strong>.</p>
+</li>
+<li>
+<p>Because we have introduced in the default-bootstrap theme a few template files required by the new options, <strong>your custom themes may not work with some of the module&rsquo;s options</strong>. Here&rsquo;s the list of these new template files, which you should take into account:</p>
+<ul>
+<li>order-address-advanced.tpl</li>
+<li>order-carrier-advanced.tpl</li>
+<li>order-carrier-opc-advanced.tpl</li>
+<li>order-opc-advanced.tpl</li>
+<li>order-opc-new-account-advanced.tpl</li>
+<li>order-payment-advanced.tpl</li>
+<li>shopping-cart-advanced.tpl</li>
+</ul>
+</li>
+<li>
+<p>This module also introduces some new hooks that can be reused outside of the AdvancedEUCompliance context, such as:</p>
+<ul>
+<li><code>overrideTOSDisplay</code>: Enables you to change the content of the Terms and Conditions box.</li>
+<li><code>actionEmailAdd(Before|After)Content</code>: Enables you to insert some extra content to emails.</li>
+<li><code>display(Before|After)ShoppingCartBlock</code>: Enables you to add extra content before/after the shopping cart (in the order process).</li>
+<li><code>displayCartTotalPriceLabel</code>: Enables you to add extra content in the Cart on each product line.</li>
+<li><code>advancedPaymentOptions</code>: This is a proxy for payment modules. It makes these modules work through a unique and consistent process.</li>
+</ul>
+</li>
+</ul>
+<h3 id="special-thanks">Special thanks</h3>
+<ul>
+<li>
+<p>We would like to thank everybody who worked actively to make this module, and contributed through the GitHub repo:</p>
+<ul>
+<li><a href="https://github.com/panploenes">panploenes</a></li>
+<li><a href="https://github.com/alexsimple">alexsimple</a></li>
+<li><a href="https://github.com/jBangiev">jBangiev</a></li>
+<li><a href="https://github.com/Nobodaddy">Nobodaddy</a></li>
+</ul>
+</li>
+</ul>
+<p>Thank you guys!</p>
+<p>We hope you will like this module and that it will help you to make better e-commerce! As usual, do not hesitate to report any issue on the <a href="https://forge.prestashop.com">Forge</a>, or to make some pull requests on the <a href="https://github.com/PrestaShop/advancedeucompliance">module&rsquo;s repository</a>.</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jul 7, 2015</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/1.6.1.x/">1.6.1.x</a>
+
+  <a class="label label-primary" href="/tag/legal/">legal</a>
+
+  <a class="label label-primary" href="/tag/eu/">eu</a>
+
+  <a class="label label-primary" href="/tag/europe/">europe</a>
+
+  <a class="label label-primary" href="/tag/module/">module</a>
+
+  <a class="label label-primary" href="/tag/feature/">feature</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      Thibaud Chauvière
+      <span>Core Developer</span>
+    </h4>
+
+    
+      <a class="btn btn-default btn-sm" href="https://github.com/tchauviere">
+        <i class="icon-github-alt"></i> GitHub
+      </a>
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://twitter.com/ChoviChova">
+        <i class="icon-twitter-alt"></i> Twitter
+      </a>
+    
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development written by
+          <a href="/authors">the product and core dev team, and PrestaShop contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop.com" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

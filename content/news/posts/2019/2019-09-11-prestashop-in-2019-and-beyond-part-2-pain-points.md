@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-in-2019-and-beyond-part-2-pain-points"]
 slug: "prestashop-in-2019-and-beyond-part-2-pain-points"
 title:  "PrestaShop in 2019 and beyond, part 2: The Pain Points"
 subtitle: "aka What needs to be improved"

@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/call-for-user-testing-volunteers"]
 slug: "call-for-user-testing-volunteers"
 title:  "Calling for user-testing volunteers (Paris, France)"
 subtitle: "Come tell us what you think!"

@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/have-you-ever-heard-of-the-ambassador-program"]
 slug: "have-you-ever-heard-of-the-ambassador-program"
 title:  "Have you ever heard of the Ambassador Program?"
 subtitle: "You can also be PrestaShop's voice of tomorrow"

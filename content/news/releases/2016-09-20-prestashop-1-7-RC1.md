@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1-7-RC1"]
 slug: "prestashop-1-7-RC1"
 title:  "PrestaShop 1.7.0.0 RC1: The Real Deal"
 subtitle: "Delivering a quality 1.7, one RC at a time!"

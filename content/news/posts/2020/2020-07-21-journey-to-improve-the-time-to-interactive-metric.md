@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/journey-to-improve-the-time-to-interactive-metric"]
 slug: "journey-to-improve-the-time-to-interactive-metric"
 title: "A journey to improve the Time To Interactive metric in Classic Theme"
 subtitle: "When the lazy loading allow us to improve the LightHouse Score"

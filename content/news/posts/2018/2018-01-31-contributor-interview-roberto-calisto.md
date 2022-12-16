@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-roberto-calisto"]
 slug: "contributor-interview-roberto-calisto"
 title:  "Contributor interview: Roberto Calisto"
 subtitle: "Discover the faces behind the commits"

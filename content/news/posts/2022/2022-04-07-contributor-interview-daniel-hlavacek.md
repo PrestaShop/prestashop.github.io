@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-daniel-hlavacek"]
 slug: "contributor-interview-daniel-hlavacek"
 title: "Merchant, freelance developer, and top contributor: Daniel Hlaváček’s experience with the PrestaShop project"
 subtitle: "Discover the faces behind the commits"

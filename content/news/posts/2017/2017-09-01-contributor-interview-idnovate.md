@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-idnovate"]
 slug: "contributor-interview-idnovate"
 title:  "Contributor interview: idnovate"
 subtitle: "Discover the faces behind the commits"

@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/introducing-new-branching-model-prestashop"]
 slug: "introducing-new-branching-model-prestashop"
 title:  "Introducing a new branching model for PrestaShop"
 subtitle: "Do the right thing!"

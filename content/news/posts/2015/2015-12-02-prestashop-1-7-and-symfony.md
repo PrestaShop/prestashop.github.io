@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1-7-and-symfony"]
 slug: "prestashop-1-7-and-symfony"
 title:  "An update on the 1.7 architecture"
 subtitle: "What's happening in NewArchi land?"

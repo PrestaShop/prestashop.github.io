@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/more-focused-patch-versions"]
 slug: "more-focused-patch-versions"
 title:  "Our plan for more regular & focused patch versions"
 subtitle: "Fixing more issues in due time!"

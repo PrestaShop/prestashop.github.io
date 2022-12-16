@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1-7-is-moving-to-symfony-3-4-and-php-5-6"]
 slug: "prestashop-1-7-is-moving-to-symfony-3-4-and-php-5-6"
 title:  "PrestaShop 1.7 is moving to Symfony 3.4 and PHP 5.6"
 subtitle: "Why we decided to forget about Symfony 2.8"

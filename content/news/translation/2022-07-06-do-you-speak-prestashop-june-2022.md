@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/do-you-speak-prestashop-june-2022"]
 slug: "do-you-speak-prestashop-june-2022"
 title: "Do you speak PrestaShop? – June 2022 edition"
 subtitle: "Where you'll learn that PrestaShop 1.7.8 is now available in 2 new languages"

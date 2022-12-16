@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1-7-0-0-released"]
 slug: "prestashop-1-7-0-0-released"
 title:  "PrestaShop 1.7.0.0 released!"
 subtitle: "The beginning of a beautiful friendship"

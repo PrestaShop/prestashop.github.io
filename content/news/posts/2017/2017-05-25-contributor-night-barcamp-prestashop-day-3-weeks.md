@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-night-barcamp-prestashop-day-3-weeks"]
 slug: "contributor-night-barcamp-prestashop-day-3-weeks"
 title:  "Contributor Night & barcamp: PrestaShop Day Paris is in 3 weeks!"
 subtitle: "Come meet and share with the community in Paris!"

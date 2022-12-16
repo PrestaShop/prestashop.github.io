@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/coreweekly-week-catchup"]
 slug: "coreweekly-week-catchup"
 title:  "PrestaShop Core Weekly - 'Catching up' edition for January 2017"
 subtitle: "An inside look at the PrestaShop codebase"

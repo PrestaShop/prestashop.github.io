@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/product-features-methodology-at-prestashop"]
 slug: "product-features-methodology-at-prestashop"
 title: "Product development at PrestaShop"
 subtitle: "What happens in the team when working on new features"

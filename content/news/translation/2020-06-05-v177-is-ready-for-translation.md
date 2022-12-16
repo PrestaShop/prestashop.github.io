@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/v177-is-ready-for-translation"]
 slug: "v177-is-ready-for-translation"
 title:  "1.7.7 is ready for translation"
 subtitle: "On your marks, set, translate"

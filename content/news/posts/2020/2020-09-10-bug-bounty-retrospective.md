@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/bug-bounty-retrospective"]
 slug: "bug-bounty-retrospective"
 title:  "Bug Bounty Program, the retrospective"
 subtitle: "When hunters make your business safer!"

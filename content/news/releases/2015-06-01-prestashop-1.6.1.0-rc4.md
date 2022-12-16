@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1.6.1.0-rc4"]
 slug: "prestashop-1.6.1.0-rc4"
 title:  "Test PrestaShop 1.6.1.0 RC4!"
 subtitle: "Let's make it unbreakable!"

@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-beyond-1-7"]
 slug: "prestashop-beyond-1-7"
 title: PrestaShop beyond 1.7
 subtitle: Here is what we are planning next!

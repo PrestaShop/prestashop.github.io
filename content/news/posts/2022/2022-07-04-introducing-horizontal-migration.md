@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/introducing-horizontal-migration"]
 slug: "introducing-horizontal-migration"
 title: An update on the Symfony migration
 subtitle: What's next?

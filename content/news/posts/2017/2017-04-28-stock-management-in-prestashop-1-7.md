@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/stock-management-in-prestashop-1-7"]
 slug: "stock-management-in-prestashop-1-7"
 title:  "Stock Management in PrestaShop 1.7"
 subtitle: "How we’re rebuilding a feature from the ground up"

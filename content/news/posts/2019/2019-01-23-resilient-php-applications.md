@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/resilient-php-applications"]
 slug: "resilient-php-applications"
 title:  "Resilient PHP applications"
 subtitle: "Introducing the PrestaShop Circuit Breaker library"

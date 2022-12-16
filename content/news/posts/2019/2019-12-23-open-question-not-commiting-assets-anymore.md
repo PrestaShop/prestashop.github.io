@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/open-question-not-commiting-assets-anymore"]
 slug: "open-question-not-commiting-assets-anymore"
 title:  "Open Question: What about not committing generated files anymore?"
 subtitle: "Let’s talk assets, we want your opinion!"

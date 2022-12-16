@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/do-you-speak-prestashop-march-2016-edition"]
 slug: "do-you-speak-prestashop-march-2016-edition"
 title:  "Do you speak PrestaShop? – March 2016 edition"
 subtitle: "Where you learn that PrestaShop is available in Slovak and that you can translate it in Tatar, should you want to!"

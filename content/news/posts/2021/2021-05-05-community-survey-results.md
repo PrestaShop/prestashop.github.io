@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/community-survey-results"]
 slug: "community-survey-results"
 title: "Results of community survey – April 2021"
 subtitle: "Thank you for your feedback about the open source project and the contributions"

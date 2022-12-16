@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/new-architecture-1-6-1-0"]
 slug: "new-architecture-1-6-1-0"
 title:  "Architecture Improvements in 1.6.1.0"
 subtitle: "Cool new toys for PrestaShop developers"

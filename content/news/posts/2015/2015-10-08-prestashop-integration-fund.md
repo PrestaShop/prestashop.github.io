@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-integration-fund"]
 slug: "prestashop-integration-fund"
 title:  "Benefit from the $1M Integration Fund to build your own PrestaShop modules"
 subtitle: "What it’s all about and how to get involved"

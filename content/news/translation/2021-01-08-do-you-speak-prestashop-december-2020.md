@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/do-you-speak-prestashop-december-2020"]
 slug: "do-you-speak-prestashop-december-2020"
 title: "Do you speak PrestaShop? – December 2020 edition"
 subtitle: "Where you'll learn that the Bosnian language is now fully available"

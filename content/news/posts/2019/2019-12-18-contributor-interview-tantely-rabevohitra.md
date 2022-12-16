@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-tantely-rabevohitra"]
 slug: "contributor-interview-tantely-rabevohitra"
 title:  "Contributor interview: Tantely Rabevohitra"
 subtitle: "Discover the faces behind the commits"

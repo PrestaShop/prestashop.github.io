@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1-7-2-0-available"]
 slug: "prestashop-1-7-2-0-available"
 title:  "PrestaShop 1.7.2.0 is available!"
 subtitle: "Stock management is just one of the many aspects you'll love"

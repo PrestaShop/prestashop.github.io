@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/ps17-minor-release-lifecycle"]
 slug: "ps17-minor-release-lifecycle"
 title: "PrestaShop 1.7 minor release lifecycle"
 subtitle: "The journey of a minor release of PS 1.7, step by step"

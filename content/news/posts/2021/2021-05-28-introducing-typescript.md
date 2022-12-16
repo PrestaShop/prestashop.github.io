@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/introducing-typescript"]
 slug: "introducing-typescript"
 title: "Introducing TypeScript"
 subtitle: "Moving our Javascript code to the next level"

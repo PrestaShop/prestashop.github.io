@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/do-you-speak-prestashop-july-2016-edition"]
 slug: "do-you-speak-prestashop-july-2016-edition"
 title:  "Do you speak PrestaShop? – July 2016 edition"
 subtitle: "Thanks to our community for this crazy month!"

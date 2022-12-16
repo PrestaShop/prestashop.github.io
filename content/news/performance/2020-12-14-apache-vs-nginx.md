@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/apache-vs-nginx"]
 slug: "apache-vs-nginx"
 title:  "Apache vs. NGINX: Match of the Millennium"
 subtitle: "Dream match never ends"

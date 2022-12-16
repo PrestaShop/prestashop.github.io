@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/cms-security-summit"]
 slug: "cms-security-summit"
 title:  "We were at Google's CMS Security Summit 2020"
 subtitle: "PrestaShop continues working together with Google and the top CMS vendors for a safer web."

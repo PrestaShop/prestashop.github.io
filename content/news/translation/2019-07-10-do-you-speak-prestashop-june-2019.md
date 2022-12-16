@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/do-you-speak-prestashop-june-2019"]
 slug: "do-you-speak-prestashop-june-2019"
 title:  "Do you speak PrestaShop? – June 2019 edition"
 subtitle: "Where you'll learn that Serbian is finally completed for 1.7.6"

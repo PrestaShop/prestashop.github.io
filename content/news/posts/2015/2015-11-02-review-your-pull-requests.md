@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/review-your-pull-requests"]
 slug: "review-your-pull-requests"
 title:  "Let's review pull requests!"
 subtitle: "Making sure that your code makes it to Core"

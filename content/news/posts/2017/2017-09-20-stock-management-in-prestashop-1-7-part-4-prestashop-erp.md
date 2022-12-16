@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/stock-management-in-prestashop-1-7-part-4-prestashop-erp"]
 slug: "stock-management-in-prestashop-1-7-part-4-prestashop-erp"
 title:  "Stock management in PrestaShop 1.7 - part 4"
 subtitle: "Introducing PrestaShop ERP!"

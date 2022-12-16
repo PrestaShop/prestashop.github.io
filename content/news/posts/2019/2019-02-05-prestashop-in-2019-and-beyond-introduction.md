@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-in-2019-and-beyond-introduction"]
 slug: "prestashop-in-2019-and-beyond-introduction"
 title:  "PrestaShop in 2019 and beyond"
 subtitle: "Where we are, where we are going, and how will we get there"

@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/2020-call-for-papers-quick-tour"]
 slug: "2020-call-for-papers-quick-tour"
 title:  "2020 Call for Papers: that was great!"
 subtitle: "A quick tour of the result"

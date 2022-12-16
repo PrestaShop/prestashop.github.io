@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1-7-beta-3"]
 slug: "prestashop-1-7-beta-3"
 title:  "PrestaShop 1.7.0.0 Beta 3 is out!"
 subtitle: "Step by step, ooooh babay!"

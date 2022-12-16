@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/regular-public-oss-demo-schedule"]
 slug: "regular-public-oss-demo-schedule"
 title:  "PrestaShop Public OSS Demo - Choosing the pace"
 subtitle: "We aim to host open source project's public demo every month"

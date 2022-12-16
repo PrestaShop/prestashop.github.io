@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/fighting-against-spamming"]
 slug: "fighting-against-spamming"
 title:  "Fighting against spamming"
 subtitle: "Don't play spam invaders"

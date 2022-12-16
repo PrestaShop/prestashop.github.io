@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/module-development-changes-in-17"]
 slug: "module-development-changes-in-17"
 title:  "Module development changes in PrestaShop 1.7.0.0"
 subtitle: "Prepare your 1.6 modules to ensure maximum 1.7 compatibility"

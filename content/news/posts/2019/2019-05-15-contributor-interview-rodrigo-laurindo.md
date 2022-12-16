@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-rodrigo-laurindo"]
 slug: "contributor-interview-rodrigo-laurindo"
 title:  "Contributor interview: Rodrigo Laurindo"
 subtitle: "Discover the faces behind the commits"

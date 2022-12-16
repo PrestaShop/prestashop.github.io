@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/pr-testing-on-prestashop"]
 slug: "pr-testing-on-prestashop"
 title:  "Testing Pull Requests on PrestaShop"
 subtitle: "How does the QA team handle the testing of Pull Requests?"

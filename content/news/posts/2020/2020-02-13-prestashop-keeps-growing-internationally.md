@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-keeps-growing-internationally"]
 slug: "prestashop-keeps-growing-internationally"
 title:  "PrestaShop keeps growing internationally"
 subtitle: "PrestaShop and its community extend the frontiers of your business"

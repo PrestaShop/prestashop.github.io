@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-martin-fojtik"]
 slug: "contributor-interview-martin-fojtik"
 title:  "Contributor interview: Martin Fojtik"
 subtitle: "Discover the faces behind the commits."

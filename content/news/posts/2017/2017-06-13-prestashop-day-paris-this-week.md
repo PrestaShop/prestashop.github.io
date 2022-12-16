@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-day-paris-this-week"]
 slug: "prestashop-day-paris-this-week"
 title:  "PrestaShop Day Paris is coming this week!"
 subtitle: "Here is what we will talk about at the PrestaShop Day barcamp"

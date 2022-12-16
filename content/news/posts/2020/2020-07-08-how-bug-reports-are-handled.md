@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/how-bug-reports-are-handled"]
 slug: "how-bug-reports-are-handled"
 title:  "How bug reports are handled"
 subtitle: "And how we want to improve the quality of the process"

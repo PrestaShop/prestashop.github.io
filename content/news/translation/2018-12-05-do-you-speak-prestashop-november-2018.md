@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/do-you-speak-prestashop-november-2018"]
 slug: "do-you-speak-prestashop-november-2018"
 title:  "Do you speak PrestaShop? – November 2018 edition"
 subtitle: "Where you'll learn that Galician is looking for proofreaders"

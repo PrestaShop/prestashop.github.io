@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-day-paris-2016-barcamp-schedule"]
 slug: "prestashop-day-paris-2016-barcamp-schedule"
 title:  "Barcamp conversations: Symfony, PHP performance, Cloud e-commerce, SEO, Customer Returns and more!"
 subtitle: "What we will talk about at the PrestaShop Day barcamp"

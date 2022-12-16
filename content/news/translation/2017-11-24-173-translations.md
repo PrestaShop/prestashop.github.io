@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/173-translations"]
 slug: "173-translations"
 title:  "1.7.3 is ready for translation"
 subtitle: "New features equal new strings"

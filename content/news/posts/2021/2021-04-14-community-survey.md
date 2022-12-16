@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/community-survey"]
 slug: "community-survey"
 title: "Community survey – April 2021"
 subtitle: "Give your feedbacks about the open source project and the contributions"

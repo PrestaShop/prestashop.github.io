@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1-7-7-0-beta2-release"]
 slug: "prestashop-1-7-7-0-beta2-release"
 title:  "PrestaShop 1.7.7.0 Beta 2 Is Ready To Be Tested!"
 subtitle: "The second beta for PrestaShop 1.7.7.0 is now ready for you to test!"

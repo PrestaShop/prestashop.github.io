@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/introduction-to-the-fuzzy-search"]
 slug: "introduction-to-the-fuzzy-search"
 title:  "Introduction to the fuzzy search"
 subtitle: "When the community implements the Levenshtein algorithm"

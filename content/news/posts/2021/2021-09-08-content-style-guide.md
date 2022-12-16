@@ -1,5 +1,6 @@
 --- 
 layout: post
+aliases: ["/news/content-style-guide"]
 slug: "content-style-guide"
 title: "Content style guide: a reference for better harmonization"
 subtitle: "A reference document for writing content" 

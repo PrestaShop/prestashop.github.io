@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/starter-theme-news-2"]
 slug: "starter-theme-news-2"
 title:  "Starter Theme: fresh news from the front #2"
 subtitle: "What's up about Starter Theme"

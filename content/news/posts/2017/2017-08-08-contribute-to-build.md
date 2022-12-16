@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contribute-to-build"]
 slug: "contribute-to-build"
 title:  "Contribute to this devblog!"
 subtitle: "Make your voice heard!"

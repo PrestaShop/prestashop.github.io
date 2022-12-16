@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/translations-prestashop-17"]
 slug: "translations-prestashop-17"
 title:  "PrestaShop 1.7 is now open for translation"
 subtitle: "Ready... Set... Go!"

@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/announcing-prestashop-1-6-1-1"]
 slug: "announcing-prestashop-1-6-1-1"
 title:  "Announcing PrestaShop 1.6.1.1"
 subtitle: "Fixing the non-critical issues"

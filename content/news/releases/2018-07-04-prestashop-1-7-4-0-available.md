@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1-7-4-0-available"]
 slug: "prestashop-1-7-4-0-available"
 title:  "PrestaShop 1.7.4.0 is available!"
 subtitle: "New features for merchants and technical improvements for developers"

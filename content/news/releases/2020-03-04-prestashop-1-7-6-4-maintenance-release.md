@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1-7-6-4-maintenance-release"]
 slug: "prestashop-1-7-6-4-maintenance-release"
 title:  "Release Of PrestaShop 1.7.6.4"
 subtitle: "MAINTENANCE VERSION OF THE 1.7.6.X BRANCH"

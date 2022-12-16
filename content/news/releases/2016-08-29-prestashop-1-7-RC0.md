@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1-7-RC0"]
 slug: "prestashop-1-7-RC0"
 title:  "Recommended for testing: PrestaShop 1.7.0.0 RC0"
 subtitle: "Now's the time to roll up your sleeves, community!"

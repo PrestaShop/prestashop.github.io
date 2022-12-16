@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1-7-beta-1-open-for-feedback"]
 slug: "prestashop-1-7-beta-1-open-for-feedback"
 title:  "PrestaShop 1.7.0.0 Beta 1 is open for feedback!"
 subtitle: "Dear community, this is your time to shine!"

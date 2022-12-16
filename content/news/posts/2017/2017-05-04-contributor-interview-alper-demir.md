@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-alper-demir"]
 slug: "contributor-interview-alper-demir"
 title:  "Contributor interview: Alper Demir"
 subtitle: "Discover the faces behind the commits"

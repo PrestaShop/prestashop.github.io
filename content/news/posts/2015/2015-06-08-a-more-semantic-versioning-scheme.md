@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/a-more-semantic-versioning-scheme"]
 slug: "a-more-semantic-versioning-scheme"
 title:  "A more semantic versioning scheme"
 subtitle: "Moving towards SemVer"

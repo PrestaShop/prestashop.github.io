@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/native-modules-and-smart-menu"]
 slug: "native-modules-and-smart-menu"
 title:  "Native modules and smart menu"
 subtitle: "A bit of historical background and the refactoring plan"

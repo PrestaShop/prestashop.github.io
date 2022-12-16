@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-translators"]
 slug: "prestashop-translators"
 title:  "Paying tribute to our community of translators"
 subtitle: "Let's thank them for making PrestaShop available worldwide"

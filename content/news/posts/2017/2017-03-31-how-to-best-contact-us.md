@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/how-to-best-contact-us"]
 slug: "how-to-best-contact-us"
 title:  "How to best contact us"
 subtitle: "Connect and Collaborate with the PrestaShop Teams"

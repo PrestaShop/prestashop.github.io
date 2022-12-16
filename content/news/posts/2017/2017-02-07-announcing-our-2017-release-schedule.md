@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/announcing-our-2017-release-schedule"]
 slug: "announcing-our-2017-release-schedule"
 title:  "Announcing our 2017 release schedule"
 subtitle: "What to expect, and when to expect it"

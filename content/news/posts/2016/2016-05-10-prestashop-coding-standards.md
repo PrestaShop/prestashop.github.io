@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-coding-standards"]
 slug: "prestashop-coding-standards"
 title:  "Evolution of the PrestaShop Coding Standards"
 subtitle: "How to best contribute code to the PrestaShop project"

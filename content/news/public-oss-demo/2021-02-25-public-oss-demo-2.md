@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/public-oss-demo-2"]
 slug: "public-oss-demo-2"
 title:  "PrestaShop Public OSS Demo - February 2021 session"
 subtitle: "We held the second session of the open source project's public demo"

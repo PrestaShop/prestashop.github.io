@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/new-theme-1-7-introduction"]
 slug: "new-theme-1-7-introduction"
 title:  "New default theme for PrestaShop 1.7"
 subtitle: "What will the new PrestaShop look like?"

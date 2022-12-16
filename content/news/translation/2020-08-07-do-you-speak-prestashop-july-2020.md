@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/do-you-speak-prestashop-july-2020"]
 slug: "do-you-speak-prestashop-july-2020"
 title:  "Do you speak PrestaShop? – July 2020 edition"
 subtitle: "Where you'll learn that the Thai translation is back on track"

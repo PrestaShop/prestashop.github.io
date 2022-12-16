@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/Designing-the-new-PrestaShop-default-theme"]
 slug: "Designing-the-new-PrestaShop-default-theme"
 title:  "Designing the new PrestaShop default theme"
 subtitle: "How we rebuilt the front office to suit any merchant"

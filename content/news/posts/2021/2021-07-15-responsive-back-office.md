@@ -1,5 +1,6 @@
 --- 
 layout: post
+aliases: ["/news/responsive-back-office"]
 slug: "responsive-back-office"
 title: "Towards a more mobile-friendly back office"
 subtitle: "Quick wins for a responsive back office"

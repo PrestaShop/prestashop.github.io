@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1-7-6-0-rc-release"]
 slug: "prestashop-1-7-6-0-rc-release"
 title:  "Release note 1.7.6 RC1"
 subtitle: "A few weeks after the beta, here it is: the first release candidate for PrestaShop 1.7.6.0 is now ready for you to test!"

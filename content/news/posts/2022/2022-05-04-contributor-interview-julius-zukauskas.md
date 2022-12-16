@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-julius-zukauskas"]
 slug: "contributor-interview-julius-zukauskas"
 title: "Julius Zukauskas: Partner Agency Employee and Top Contributor"
 subtitle: "Discover the faces behind the commits"

@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/make-back-office-modules-great-again"]
 slug: "make-back-office-modules-great-again"
 title:  "Make modules on the back office great again!"
 subtitle: "What is coming on 1.7.3 for module developers"

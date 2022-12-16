@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-david-julian-buch"]
 slug: "contributor-interview-david-julian-buch"
 title:  "Contributor interview: David-Julian Buch"
 subtitle: "Discover the faces behind the commits"

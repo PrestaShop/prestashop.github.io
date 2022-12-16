@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-loves-its-community"]
 slug: "prestashop-loves-its-community"
 title:  "PrestaShop loves its community"
 subtitle: "Bye 2017, you've been great!"

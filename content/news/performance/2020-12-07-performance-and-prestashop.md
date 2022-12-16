@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/performance-and-prestashop"]
 slug: "performance-and-prestashop"
 title:  "Performance (& PrestaShop)"
 subtitle: "Sorry, Goose, but it's time to buzz the tower."

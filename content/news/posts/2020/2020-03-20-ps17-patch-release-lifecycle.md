@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/ps17-patch-release-lifecycle"]
 slug: "ps17-patch-release-lifecycle"
 title: "PrestaShop 1.7 patch release lifecycle"
 subtitle: "The journey of a patch release of PS 1.7, step by step"

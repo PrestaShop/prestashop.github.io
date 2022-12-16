@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/a-definition-of-the-good-first-issue-label"]
 slug: "a-definition-of-the-good-first-issue-label"
 title:  "A definition of the 'good first issue' label"
 subtitle: "A new way to onboard contributors on the PrestaShop project"

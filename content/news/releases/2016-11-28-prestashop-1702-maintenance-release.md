@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-1702-maintenance-release"]
 slug: "prestashop-1702-maintenance-release"
 title:  "Release of PrestaShop 1.7.0.2"
 subtitle: "Maintenance version of the 1.7.0.x branch"

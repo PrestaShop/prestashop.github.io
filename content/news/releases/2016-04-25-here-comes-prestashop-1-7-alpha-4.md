@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/here-comes-prestashop-1-7-alpha-4"]
 slug: "here-comes-prestashop-1-7-alpha-4"
 title:  "Here comes PrestaShop 1.7.0.0 alpha 4!"
 subtitle: "Less bugs, more fun: test it now!"

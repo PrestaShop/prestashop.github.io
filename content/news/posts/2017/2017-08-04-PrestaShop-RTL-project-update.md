@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/PrestaShop-RTL-project-update"]
 slug: "PrestaShop-RTL-project-update"
 title:  "An update on the 1.7 RTL project"
 subtitle: "(: tcejorp LTR eht no etadpu nA"

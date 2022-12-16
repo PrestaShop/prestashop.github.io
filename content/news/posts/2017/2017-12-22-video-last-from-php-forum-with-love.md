@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/video-last-from-php-forum-with-love"]
 slug: "video-last-from-php-forum-with-love"
 title:  "Video: Last from PHP Forum with love"
 subtitle: "Because elephpants is not the only thing we brought back"

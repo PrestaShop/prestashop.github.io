@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-8-0-0-available"]
 slug: "prestashop-8-0-0-available"
 title:  PrestaShop 8.0 Is Available
 subtitle: The final version is here!

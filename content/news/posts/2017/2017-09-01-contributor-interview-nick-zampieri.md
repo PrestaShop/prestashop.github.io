@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-nick-zampieri"]
 slug: "contributor-interview-nick-zampieri"
 title:  "Contributor interview: Nick Zampieri"
 subtitle: "Discover the faces behind the commits"

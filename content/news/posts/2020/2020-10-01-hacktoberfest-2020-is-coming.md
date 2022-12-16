@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/hacktoberfest-2020-is-coming"]
 slug: "hacktoberfest-2020-is-coming"
 title:  "Hacktoberfest 2020 is coming"
 subtitle: "Bring the lights on open source projects"

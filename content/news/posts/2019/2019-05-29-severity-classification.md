@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/severity-classification"]
 slug: "severity-classification"
 title: "Introducing a new bug severity classification"
 subtitle: "Discover how issues related to PrestaShop software are qualified and prioritized"

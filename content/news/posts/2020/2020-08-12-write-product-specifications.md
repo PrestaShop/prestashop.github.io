@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/write-product-specifications"]
 slug: "write-product-specifications"
 title:  "Help us write product specifications"
 subtitle: "Contribute without typing a single code line"

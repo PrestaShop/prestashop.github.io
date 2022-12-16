@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-and-gdpr"]
 slug: "prestashop-and-gdpr"
 title:  "PrestaShop & GDPR"
 subtitle: "PrestaShop actions to help you comply with GDPR"

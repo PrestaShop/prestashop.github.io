@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-moves-to-psr-2"]
 slug: "prestashop-moves-to-psr-2"
 title:  "PrestaShop && the PSR-2 coding style guide"
 subtitle: "Adopting a common coding standard"

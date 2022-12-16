@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-pululu-kinanga-andre"]
 slug: "contributor-interview-pululu-kinanga-andre"
 title:  "Contributor interview: Pululu Kinanga André"
 subtitle: "Discover the faces behind the commits"

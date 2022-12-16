@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/new-translation-system-prestashop-17"]
 slug: "new-translation-system-prestashop-17"
 title:  "Coming Soon: A New Translation System for PrestaShop 1.7"
 subtitle: "Or how it should be easier to translate PrestaShop from now on"

@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/do-you-speak-prestashop-january-2021"]
 slug: "do-you-speak-prestashop-january-2021"
 title: "Do you speak PrestaShop? – January 2021 edition"
 subtitle: "Where you'll learn that Romanian and Spanish reached 100%"

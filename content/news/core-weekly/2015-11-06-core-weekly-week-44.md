@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/core-weekly-week-44"]
 slug: "core-weekly-week-44"
 title:  "PrestaShop Core Weekly - Week 44 of 2015"
 subtitle: "An inside look at PrestaShop's codebase"

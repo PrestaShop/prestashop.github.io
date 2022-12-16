@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/do-you-speak-prestashop-may-2021"]
 slug: "do-you-speak-prestashop-may-2021"
 title: "Do you speak PrestaShop? – May 2021 edition"
 subtitle: "Where you'll learn that 1.7.8 strings are available for translation!"

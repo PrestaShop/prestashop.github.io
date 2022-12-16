@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/do-you-speak-prestashop-may-2019"]
 slug: "do-you-speak-prestashop-may-2019"
 title:  "Do you speak PrestaShop? – May 2019 edition"
 subtitle: "Where you'll learn that the 1.7.6 catalog is now complete"

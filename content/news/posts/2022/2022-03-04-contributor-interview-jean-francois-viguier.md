@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-jean-francois-viguier"]
 slug: "contributor-interview-jean-francois-viguier"
 title: "Jean-François Viguier: a top contributor and a friend of PrestaShop"
 subtitle: "Discover the faces behind the commits"

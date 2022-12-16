@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/migrate-your-solutions-from-17-to-80"]
 slug: "migrate-your-solutions-from-17-to-80"
 title: "Migrate your solutions from PrestaShop 1.7 to 8.0"
 subtitle: "Summary of notable changes for developers"

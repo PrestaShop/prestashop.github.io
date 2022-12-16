@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/PrestaShop-UI-Kit"]
 slug: "PrestaShop-UI-Kit"
 title:  "Contribute to the UI kit of the 1.7 back office"
 subtitle: "Yes, yes, we have a UI kit :)"

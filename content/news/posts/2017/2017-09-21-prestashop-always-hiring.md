@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/prestashop-always-hiring"]
 slug: "prestashop-always-hiring"
 title:  "The PrestaCrew is always hiring!"
 subtitle: "Come change e-commerce for +270.000 merchants"

@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/uncle-build-makes-an-assessment"]
 slug: "uncle-build-makes-an-assessment"
 title:  "Uncle Build makes an assessment"
 subtitle: "You are now part of the devblog evolution"

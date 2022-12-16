@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/introducing-prestonbot"]
 slug: "introducing-prestonbot"
 title:  "Introducing PrestonBot"
 subtitle: "The PrestaShop community best friend"

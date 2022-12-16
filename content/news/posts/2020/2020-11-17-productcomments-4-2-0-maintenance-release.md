@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/productcomments-4-2-0-maintenance-release"]
 slug: "productcomments-4-2-0-maintenance-release"
 title:  "Release Of Module ProductComments 4.2.0"
 subtitle: "Maintenance version of the ProductComments module"

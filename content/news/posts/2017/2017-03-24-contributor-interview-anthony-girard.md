@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-anthony-girard"]
 slug: "contributor-interview-anthony-girard"
 title:  "Contributor interview: Anthony Girard"
 subtitle: "Discover the faces behind the commits."

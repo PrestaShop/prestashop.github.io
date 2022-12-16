@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/contributor-interview-marcin-szperlik-iqit"]
 slug: "contributor-interview-marcin-szperlik-iqit"
 title:  "Contributor interview: Marcin Szperlik"
 subtitle: "Discover the faces behind the commits"

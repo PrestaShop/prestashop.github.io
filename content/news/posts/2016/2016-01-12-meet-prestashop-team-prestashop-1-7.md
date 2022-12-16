@@ -1,5 +1,6 @@
 ---
 layout: post
+aliases: ["/news/meet-prestashop-team-prestashop-1-7"]
 slug: "meet-prestashop-team-prestashop-1-7"
 title:  "Meet the team building PrestaShop 1.7"
 subtitle: What’s under the hood!

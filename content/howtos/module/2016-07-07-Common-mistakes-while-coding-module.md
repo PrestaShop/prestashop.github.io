@@ -15,7 +15,7 @@ PrestaShop has been around for many years, during which thousands of modules wer
 Here is a list of 10+ common mistakes when coding a PrestaShop module, with a short information on how to avoid them.
 
 {{% notice type="note" title="Note" icon="file" %}}
-Several tips only apply to PrestaShop 1.5-1.6 module development. [PrestaShop 1.7 changes a few things]({{< relref "/news/posts/2016/2016-06-16-module-development-changes-in-17" >}})!
+Several tips only apply to PrestaShop 1.5-1.6 module development. [PrestaShop 1.7 changes a few things]({{< relref "/news/posts/2016/module-development-changes-in-17" >}})!
 {{% /notice %}}
 
 ### 1. Creating/using a module with hardcoded database prefix

@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/do-you-speak-prestashop-may-2016-edition"]
-slug: "do-you-speak-prestashop-may-2016-edition"
 title:  "Do you speak PrestaShop? – May 2016 edition"
 subtitle: "The latest news about PrestaShop translation project (yep, including 1.7 translations)"
 date:   2016-06-20 06:09:47

@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/a-year-of-our-integration-fund"]
-slug: "a-year-of-our-integration-fund"
 title:  "A year of our $1M Fund: Already $200,000 granted, and you too can be a part of it!"
 subtitle: "Build modules your nearby merchants need "
 date:   2016-07-06 09:10:11

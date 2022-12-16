@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/public-demo-4-2022"]
-slug: "public-demo-4-2022"
 title:  "PrestaShop Project Public Demo - June 2022 session"
 subtitle: "We held the fourth session of this year open source project's public demo"
 date:   2022-06-02 10:00:00

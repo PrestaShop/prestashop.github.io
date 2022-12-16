@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-1-7-8-3-maintenance-release"]
-slug: "prestashop-1-7-8-3-maintenance-release"
 title:  "Release of PrestaShop 1.7.8.3"
 subtitle: "Maintenance version of the 1.7.8.x branch"
 date:   2022-01-27 10:00:00

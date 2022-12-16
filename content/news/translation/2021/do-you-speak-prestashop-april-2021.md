@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/do-you-speak-prestashop-april-2021"]
-slug: "do-you-speak-prestashop-april-2021"
 title: "Do you speak PrestaShop? – April 2021 edition"
 subtitle: "Where you'll learn that Hebrew is now fully available"
 date: 2021-05-05 09:00:00

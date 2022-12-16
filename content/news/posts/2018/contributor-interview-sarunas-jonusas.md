@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/contributor-interview-sarunas-jonusas"]
-slug: "contributor-interview-sarunas-jonusas"
 title:  "Contributor interview: Šarūnas Jonušas"
 subtitle: "Discover the faces behind the commits"
 date:   2018-03-14 09:10:11

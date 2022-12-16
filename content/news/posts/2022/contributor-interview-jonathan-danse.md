@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/contributor-interview-jonathan-danse"]
-slug: "contributor-interview-jonathan-danse"
 title: "Jonathan Danse: module developer and one of the first contributors"
 subtitle: "Discover the faces behind the commits"
 date: 2022-06-01

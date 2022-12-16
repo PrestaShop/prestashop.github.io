@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/cldr-composer-jshint"]
-slug: "cldr-composer-jshint"
 title:  "CLDR, Composer, NPM, JSHint, oh my!"
 subtitle: "PrestaShop development getting real"
 date:   2015-09-24 18:00:41

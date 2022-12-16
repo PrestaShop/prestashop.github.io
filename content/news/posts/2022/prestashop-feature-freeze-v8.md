@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-feature-freeze-v8"]
-slug: "prestashop-feature-freeze-v8"
 title:  "PrestaShop Version 8.0 Feature Freeze: Important Features"
 subtitle: "Feature Freeze: an Inside Look at Most Important Features"
 date:   2022-06-09 12:00:00

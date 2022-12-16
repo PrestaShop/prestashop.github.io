@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-translation-project-2016"]
-slug: "prestashop-translation-project-2016"
 title:  "A look back on PrestaShop translation project in 2016"
 subtitle: "And cheers to Tristan for his first infographic :)"
 date:   2017-01-23 06:09:47

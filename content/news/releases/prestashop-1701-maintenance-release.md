@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-1701-maintenance-release"]
-slug: "prestashop-1701-maintenance-release"
 title:  "Release of PrestaShop 1.7.0.1 "
 subtitle: "Maintenance version of the 1.7.0.x branch"
 date:   2016-11-21 09:10:11

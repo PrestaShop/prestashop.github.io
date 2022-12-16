@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/contributor-interview-sunghyeon-cho"]
-slug: "contributor-interview-sunghyeon-cho"
 title:  "Contributor interview: SungHyeon Cho"
 subtitle: "Discover the faces behind the commits"
 date:   2017-12-01 09:10:11

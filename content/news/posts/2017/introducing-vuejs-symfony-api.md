@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/introducing-vuejs-symfony-api"]
-slug: "introducing-vuejs-symfony-api"
 title:  "How we're introducing Vue JS & a Symfony API"
 subtitle: "Great oaks from little acorns grow"
 date:   2017-07-19 09:12:11

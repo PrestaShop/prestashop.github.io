@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/starter-theme-news-3"]
-slug: "starter-theme-news-3"
 title:  "Starter Theme: fresh news from the front #3"
 subtitle: "What's up about Starter Theme"
 date:   2015-12-17 15:00:00

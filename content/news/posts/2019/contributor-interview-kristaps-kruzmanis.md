@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/contributor-interview-kristaps-kruzmanis"]
-slug: "contributor-interview-kristaps-kruzmanis"
 title:  "Contributor interview: Kristaps Kruzmanis"
 subtitle: "Discover the faces behind the commits"
 date:   2019-01-16 09:10:11

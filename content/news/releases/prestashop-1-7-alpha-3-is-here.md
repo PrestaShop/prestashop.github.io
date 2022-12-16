@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-1-7-alpha-3-is-here"]
-slug: "prestashop-1-7-alpha-3-is-here"
 title:  "Test PrestaShop 1.7.0.0 alpha 3 now!"
 subtitle: "This is your chance to contribute!"
 date:   2016-04-04 02:30:00

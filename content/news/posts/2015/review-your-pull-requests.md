@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/review-your-pull-requests"]
-slug: "review-your-pull-requests"
 title:  "Let's review pull requests!"
 subtitle: "Making sure that your code makes it to Core"
 date:   2015-11-02 12:00:41

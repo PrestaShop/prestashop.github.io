@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/hacktoberfest-2021"]
-slug: "hacktoberfest-2021"
 title:  "Hacktoberfest 2021"
 subtitle: "October is here, so is Hacktoberfest!"
 date:  2021-10-01 09:00:00

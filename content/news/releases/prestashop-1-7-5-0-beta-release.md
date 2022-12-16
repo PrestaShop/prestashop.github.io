@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-1-7-5-0-beta-release"]
-slug: "prestashop-1-7-5-0-beta-release"
 title:  "PrestaShop 1.7.5.0 beta is open for feedback!"
 subtitle: "You can download it and test it"
 date:   2018-11-08 10:45:00

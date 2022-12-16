@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-and-docker"]
-slug: "prestashop-and-docker"
 title:  "Docker and PrestaShop - A Beautiful Image"
 subtitle: "How we use Docker to improve PrestaShop development"
 date:   2017-02-17 09:10:11

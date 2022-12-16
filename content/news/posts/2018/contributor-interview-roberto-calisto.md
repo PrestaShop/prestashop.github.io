@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/contributor-interview-roberto-calisto"]
-slug: "contributor-interview-roberto-calisto"
 title:  "Contributor interview: Roberto Calisto"
 subtitle: "Discover the faces behind the commits"
 date:   2018-01-31 09:10:11

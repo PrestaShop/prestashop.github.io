@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-in-2019-and-beyond-part-3-the-future-architecture"]
-slug: "prestashop-in-2019-and-beyond-part-3-the-future-architecture"
 title:  "PrestaShop in 2019 and beyond, part 3: The Future Architecture"
 subtitle: "aka Point B – Where we are going"
 date:   2019-12-26 09:30:00

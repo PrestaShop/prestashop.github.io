@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/PHP-scalability-and-filesystem"]
-slug: "PHP-scalability-and-filesystem"
 title:  "PHP, scalability & filesystems"
 subtitle: "One elephant went out to play 🎶"
 date:   2021-02-04 15:50:00

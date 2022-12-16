@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/do-you-speak-prestashop-may-2022"]
-slug: "do-you-speak-prestashop-may-2022"
 title: "Do you speak PrestaShop? – May 2022 edition"
 subtitle: "Where you'll learn that PrestaShop 1.7.8 is now fully available in Portuguese BR"
 date: 2022-06-07 08:00:00

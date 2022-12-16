@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/contributor-interview-sullivan-senechal"]
-slug: "contributor-interview-sullivan-senechal"
 title:  "Contributor interview: Sullivan Sénéchal"
 subtitle: "Discover the faces behind the commits"
 date:   2017-10-20 09:10:11

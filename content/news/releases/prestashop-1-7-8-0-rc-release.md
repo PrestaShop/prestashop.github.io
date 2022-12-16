@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-1-7-8-0-rc-release"]
-slug: "prestashop-1-7-8-0-rc-release"
 title:  "PrestaShop 1.7.8.0 RC1 Is Ready To Be Tested!"
 subtitle: "A few months after the beta, here it is: the first release candidate for PrestaShop 1.7.8.0 is now ready for you to test!"
 date:   2021-09-21

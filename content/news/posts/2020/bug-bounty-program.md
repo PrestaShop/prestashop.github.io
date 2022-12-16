@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/bug-bounty-program"]
-slug: "bug-bounty-program"
 title:  "Announcing our first Bug Bounty program"
 subtitle: "It's time to make PrestaShop better and safer that it already is!"
 date:   2020-07-23 09:00:00

@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-1-7-performances"]
-slug: "prestashop-1-7-performances"
 title:  "PrestaShop 1.7 & performances"
 subtitle: "Hey! Not so fast!"
 date:   2016-10-28 11:00:00

@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-1-7-0-6-maintenance-security-release"]
-slug: "prestashop-1-7-0-6-maintenance-security-release"
 title:  "Release of PrestaShop 1.7.0.6"
 subtitle: "Maintenance and security version of the 1.7.0.x branch"
 date:   2017-03-06 09:10:11

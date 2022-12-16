@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/phpunit-security-issue-post-analysis"]
-slug: "phpunit-security-issue-post-analysis"
 title:  "Security issue with PHPUnit, post-incident analysis"
 subtitle: "The mysterious development dependencies!"
 date:   2020-02-28 10:00:00

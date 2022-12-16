@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/upcoming-demo-1-2022"]
-slug: "upcoming-demo-1-2022"
 title:  "Announcing February PrestaShop Public OSS Demo"
 subtitle: "Meet us for the first session of the open source project's public demo in 2022"
 date:   2022-01-31

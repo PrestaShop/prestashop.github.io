@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/update-your-prestashop-store"]
-slug: "update-your-prestashop-store"
 title:  "Update your store for GDPR"
 subtitle: "Modules and PrestaShop core have been updated"
 date: 2018-05-29 19:00:00

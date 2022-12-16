@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-1-6-1-1-rc1"]
-slug: "prestashop-1-6-1-1-rc1"
 title:  "Test PrestaShop 1.6.1.1 RC1"
 subtitle: "Have you tried turning it off and on again?"
 date:   2015-08-04 17:37:41

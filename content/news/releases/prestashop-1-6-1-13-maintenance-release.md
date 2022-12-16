@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-1-6-1-13-maintenance-release"]
-slug: "prestashop-1-6-1-13-maintenance-release"
 title:  "Release of PrestaShop 1.6.1.13"
 subtitle: "Maintenance version of the 1.6.1.x branch"
 date:   2017-04-25 02:10:11

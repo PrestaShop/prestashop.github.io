@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/the-review-process"]
-slug: "the-review-process"
 title: "What happens to pull requests after they are submitted"
 subtitle: "Discover what happens behind scenes during code review"
 date:   2019-09-12 11:00:00

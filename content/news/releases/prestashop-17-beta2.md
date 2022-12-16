@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-17-beta2"]
-slug: "prestashop-17-beta2"
 title:  "PrestaShop 1.7.0.0 reaches Beta 2 stage"
 subtitle: "Making progress!"
 date:   2016-07-18 09:00:01

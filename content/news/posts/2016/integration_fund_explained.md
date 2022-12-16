@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/integration_fund_explained"]
-slug: "integration_fund_explained"
 title:  "The Integration Fund explained by the team and its contributors"
 subtitle: "Build modules your nearby merchants need"
 date:   2016-10-21 06:09:47

@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/E2E-testing-from-the-trenches-our-new-approach"]
-slug: "E2E-testing-from-the-trenches-our-new-approach"
 title:  "E2E testing from the trenches: Our new approach"
 subtitle: "Testing the last version of Prestashop before using it … a long story"
 date:   2019-04-03 11:00:00

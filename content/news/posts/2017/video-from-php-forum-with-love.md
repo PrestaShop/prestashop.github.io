@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/video-from-php-forum-with-love"]
-slug: "video-from-php-forum-with-love"
 title:  "Video: From PHP Forum with love"
 subtitle: "Because elephpants is not the only thing we brought back"
 date:   2017-11-17 09:00:00

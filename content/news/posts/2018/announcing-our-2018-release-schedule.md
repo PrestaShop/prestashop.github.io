@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/announcing-our-2018-release-schedule"]
-slug: "announcing-our-2018-release-schedule"
 title:  "Announcing our 2018 release schedule"
 subtitle: "What to expect, and when to expect it"
 date: 2018-03-23 09:10:11

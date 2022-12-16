@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-1-7-6-0-rc2-release"]
-slug: "prestashop-1-7-6-0-rc2-release"
 title:  "Release note 1.7.6 RC2"
 subtitle: "This second release candidate for the 1.7.6 fixes the regressions identified in the RC1."
 date:   2019-07-05 16:00:00

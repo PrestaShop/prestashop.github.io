@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/do-you-speak-prestashop-february-2021"]
-slug: "do-you-speak-prestashop-february-2021"
 title: "Do you speak PrestaShop? – February 2021 edition"
 subtitle: "Where you'll learn that Esperanto is now available in the back office"
 date: 2021-03-03 17:00:00

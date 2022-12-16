@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/multistore-news-in-1.7.8"]
-slug: "multistore-news-in-1.7.8"
 title:  "Multistore feature in PrestaShop 1.7.8: What's new?"
 subtitle: "Introducing the revamp of the multistore"
 date:   2021-06-16 09:00:00

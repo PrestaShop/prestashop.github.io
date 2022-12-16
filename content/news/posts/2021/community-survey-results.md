@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/community-survey-results"]
-slug: "community-survey-results"
 title: "Results of community survey – April 2021"
 subtitle: "Thank you for your feedback about the open source project and the contributions"
 date: 2021-05-04 12:00:00

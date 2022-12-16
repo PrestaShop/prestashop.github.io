@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestacrew-hiring"]
-slug: "prestacrew-hiring"
 title:  "The PrestaCrew is hiring more sailors"
 subtitle: "Join the fun!"
 date:   2015-12-01 12:00:41

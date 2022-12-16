@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/video-contributing-to-the-prestashop-project"]
-slug: "video-contributing-to-the-prestashop-project"
 title:  "Video: Contributing to the PrestaShop project"
 subtitle: "♫ There are many shades of black ♪ ... and many ways to contribute "
 date:   2017-04-05 09:10:11

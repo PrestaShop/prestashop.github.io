@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-1.7.5-rc-release"]
-slug: "prestashop-1.7.5-rc-release"
 title:  "PrestaShop 1.7.5.0 release candidate is open for feedback!"
 subtitle: "You can download it and test it"
 date:   2018-12-10 18:30:00

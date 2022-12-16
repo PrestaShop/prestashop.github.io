@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/productcomments-4-2-1-maintenance-release"]
-slug: "productcomments-4-2-1-maintenance-release"
 title:  "Release Of Module ProductComments 4.2.1"
 subtitle: "Maintenance version of the ProductComments module"
 date:   2020-12-03

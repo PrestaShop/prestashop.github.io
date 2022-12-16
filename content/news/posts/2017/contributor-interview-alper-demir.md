@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/contributor-interview-alper-demir"]
-slug: "contributor-interview-alper-demir"
 title:  "Contributor interview: Alper Demir"
 subtitle: "Discover the faces behind the commits"
 date:   2017-05-04 09:10:11

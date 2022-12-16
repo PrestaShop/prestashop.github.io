@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/contributor-interview-lorenz-meyer"]
-slug: "contributor-interview-lorenz-meyer"
 title:  "Lorenz Meyer: a dedicated contributor supported by his employer"
 subtitle: "Discover the faces behind the commits"
 date:   2022-02-10

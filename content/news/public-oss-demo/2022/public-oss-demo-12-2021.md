@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/public-oss-demo-12-2021"]
-slug: "public-oss-demo-12-2021"
 title:  "PrestaShop Public OSS Demo - January 2022 session"
 subtitle: "We held the twelfth session of the open source project's public demo"
 date:   2022-01-06

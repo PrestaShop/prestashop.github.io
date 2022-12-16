@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/starter-theme-kickoff"]
-slug: "starter-theme-kickoff"
 title:  "We're building a Starter Theme for PrestaShop 1.7.0.0"
 subtitle: "What we have in mind and how you can contribute"
 date:   2015-08-28 12:00:00

@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/old-branches-are-going-away"]
-slug: "old-branches-are-going-away"
 title:  "Heads up: old development branches are going away"
 subtitle: "We are cleaning up old branches from our repository"
 date:   2021-05-25

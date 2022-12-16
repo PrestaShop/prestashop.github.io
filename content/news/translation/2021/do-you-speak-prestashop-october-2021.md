@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/do-you-speak-prestashop-october-2021"]
-slug: "do-you-speak-prestashop-october-2021"
 title: "Do you speak PrestaShop? – October 2021 edition"
 subtitle: "Where you'll learn that PrestaShop 1.7.8 is now fully available in Serbian"
 date: 2021-11-10

@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/do-you-speak-prestashop-april-2020"]
-slug: "do-you-speak-prestashop-april-2020"
 title:  "Do you speak PrestaShop? – April 2020 edition"
 subtitle: "Where you'll learn that PrestaShop is fully available in Danish"
 date:  2020-05-20 10:00:00

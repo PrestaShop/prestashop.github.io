@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/do-you-speak-prestashop-february-2018"]
-slug: "do-you-speak-prestashop-february-2018"
 title:  "Do you speak PrestaShop? – February 2018 edition"
 subtitle: "Where you'll learn that 176,097 words have been translated"
 date:   2018-03-09 09:10:11

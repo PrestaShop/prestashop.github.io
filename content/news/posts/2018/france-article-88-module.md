@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/france-article-88-module"]
-slug: "france-article-88-module"
 title:  "[FR] Article 88 de la loi 2015-1785 : date de livraison du module"
 subtitle: "Souriez, vous êtes certifiés !"
 date:   2018-03-07 09:10:11

@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/introducing-prestonbot"]
-slug: "introducing-prestonbot"
 title:  "Introducing PrestonBot"
 subtitle: "The PrestaShop community best friend"
 date:   2016-09-26 11:00:00

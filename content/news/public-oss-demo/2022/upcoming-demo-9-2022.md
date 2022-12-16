@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/upcoming-demo-9-2022"]
-slug: "upcoming-demo-9-2022"
 title:  "Announcing December PrestaShop Project Public Demo"
 subtitle: "Let's meet for the ninth, and the last session of the PrestaShop project public demo in 2022"
 date:   2022-12-13 09:00:00

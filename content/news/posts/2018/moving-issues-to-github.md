@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/moving-issues-to-github"]
-slug: "moving-issues-to-github"
 title:  "We are moving Issues to GitHub"
 subtitle: "A big move from the good old Forge in order to have everything in one place for everyone."
 date:   2018-08-13 11:15:00

@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/all-about-prestashop-1-7"]
-slug: "all-about-prestashop-1-7"
 title:  "All about PrestaShop 1.7"
 subtitle: "All the 1.7-related articles published on Build, Curated just for you"
 date:   2015-11-03 09:10:11

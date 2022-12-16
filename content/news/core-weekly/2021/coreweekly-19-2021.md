@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/coreweekly-19-2021"]
-slug: "coreweekly-19-2021"
 title:  "PrestaShop Core Weekly - Week 19 of 2021"
 subtitle: "An inside look at the PrestaShop codebase"
 date:   2021-05-17

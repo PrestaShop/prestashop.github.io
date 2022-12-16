@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/new-updated-hooks-1-7-1-0"]
-slug: "new-updated-hooks-1-7-1-0"
 title:  "New and updated hooks in PrestaShop 1.7.1.0"
 subtitle: "Get up to speed with the next version!"
 date:   2017-03-17 09:10:11

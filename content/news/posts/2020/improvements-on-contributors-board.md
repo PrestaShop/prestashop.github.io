@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/improvements-on-contributors-board"]
-slug: "improvements-on-contributors-board"
 title:  "Improvements to come on contributors board"
 subtitle: "More features, more modern, and more information about contributors"
 date:  2020-03-12 15:30:00

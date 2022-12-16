@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/the-six-first-months-of-2017"]
-slug: "the-six-first-months-of-2017"
 title:  "6 months of PrestaShop"
 subtitle: "Let's sit back and count up those commits"
 date:   2017-07-25 09:10:11

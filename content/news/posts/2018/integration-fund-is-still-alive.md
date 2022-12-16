@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/integration-fund-is-still-alive"]
-slug: "integration-fund-is-still-alive"
 title:  "The Integration Fund is still alive"
 subtitle: "Get the chance to build modules your nearby merchants need"
 date:   2018-02-09 09:10:11

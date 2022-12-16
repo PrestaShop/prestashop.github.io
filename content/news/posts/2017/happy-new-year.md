@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/happy-new-year"]
-slug: "happy-new-year"
 title:  "Happy new year to the PrestaShop community!"
 subtitle: "A look back at 2016, and best wishes for 2017."
 date:   2017-01-20 09:10:11

@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-1-7-7-0-available"]
-slug: "prestashop-1-7-7-0-available"
 title:  "PrestaShop 1.7.7.0 is available"
 subtitle: "You waited for it, here it is!"
 date:   2020-12-03 9:00:00

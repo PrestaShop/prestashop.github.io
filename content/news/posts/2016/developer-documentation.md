@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/developer-documentation"]
-slug: "developer-documentation"
 title:  "New developer documentation for PrestaShop 1.7"
 subtitle: "It's online and focusing on differences between 1.6 and 1.7"
 date:   2016-09-28 10:00:00

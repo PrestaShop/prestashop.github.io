@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/stock-management-in-prestashop-1-7-part-2"]
-slug: "stock-management-in-prestashop-1-7-part-2"
 title:  "Stock Management in PrestaShop 1.7 - part 2"
 subtitle: "Second overview on how we’re rebuilding this feature"
 date:   2017-06-22 09:10:11

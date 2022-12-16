@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/coreweekly-week-51-2018"]
-slug: "coreweekly-week-51-2018"
 title:  "PrestaShop Core Weekly - Week 51 of 2018"
 subtitle: "An inside look at the PrestaShop codebase"
 date:   2019-01-04 16:15:00

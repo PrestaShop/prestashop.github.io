@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/do-you-speak-prestashop-september-2022"]
-slug: "do-you-speak-prestashop-september-2022"
 title: "Do you speak PrestaShop? – September 2022 edition"
 subtitle: "Where you'll learn that Afrikaans is open to translation"
 date: 2022-10-19

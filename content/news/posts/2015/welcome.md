@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/welcome"]
-slug: "welcome"
 title:  "Welcome to build.prestashop.com!"
 subtitle: "Ready, set… go!"
 date:   2015-04-03 11:12:00

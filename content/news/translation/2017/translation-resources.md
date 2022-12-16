@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/translation-resources"]
-slug: "translation-resources"
 title:  "Some resources to help you with the translation of PrestaShop"
 subtitle: "Everyone needs a bit of help sometimes"
 date:   2017-09-13 06:09:47

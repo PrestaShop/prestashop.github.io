@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/france-article-88-loi-2015-1785"]
-slug: "france-article-88-loi-2015-1785"
 title:  "[FR] Article 88 de la loi 2015-1785 : c'est tout de suite !"
 subtitle: "Dispositif de mise en conformité des logiciels de caisse : l’approche de PrestaShop"
 date:   2018-01-03 09:10:11

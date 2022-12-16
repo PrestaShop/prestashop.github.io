@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/we-were-at-the-cms-security-summit-with-google"]
-slug: "we-were-at-the-cms-security-summit-with-google"
 title:  "We were at the CMS Security Summit with Google"
 subtitle: "Security is very important for PrestaShop"
 date:   2019-03-04 10:00:00

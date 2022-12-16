@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/prestashop-test-framework"]
-slug: "prestashop-test-framework"
 title:  "The PrestaShop Test Framework"
 subtitle: "Why this will make development easier"
 date:   2018-02-16 09:10:11

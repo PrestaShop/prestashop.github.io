@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/everything-you-always-wanted-to-know-about-prestatrust"]
-slug: "everything-you-always-wanted-to-know-about-prestatrust"
 title:  "Everything you always wanted to know about PrestaTrust"
 subtitle: "Introducing the first Trust Label for PrestaShop modules"
 date:   2017-12-13 09:10:11

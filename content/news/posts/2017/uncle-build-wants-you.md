@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/uncle-build-wants-you"]
-slug: "uncle-build-wants-you"
 title:  "Uncle Build wants you!"
 subtitle: "Be part of the devblog evolution"
 date:   2017-11-22 09:10:11

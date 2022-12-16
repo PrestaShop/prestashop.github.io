@@ -1,7 +1,6 @@
 ---
 layout: post
 aliases: ["/news/how-we-reorganized-main-menu-prestashop-1.7"]
-slug: "how-we-reorganized-main-menu-prestashop-1.7"
 title:  "How we reorganized the main menu in PrestaShop 1.7"
 subtitle: "And what you should know about it"
 date:   2016-04-29 04:29:00

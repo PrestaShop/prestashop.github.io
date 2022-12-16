@@ -16,7 +16,7 @@ cascade:
   twitter_image: "/assets/images/theme/meta-logo-build.png"
 
 permalinks:
-  news: /news/:slug/
+  news: /news/:year/:slugorfilename/
   tags: /tag/:slug/
 
 googleAnalytics: "UA-2753771-31"

@@ -60,9 +60,9 @@ Before you start writing, please send us a short proposal by opening a GitHub is
 
 Also, if we merge one of your cool pull requests on [the PrestaShop project](http://github.com/PrestaShop/PrestaShop), we may invite you to tell us more about it here.
 
-All content on the build.prestashop-project.org site is licensed under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/) -- meaning that it is in the Public Domain. Use it however you want!
+All content on the build.prestashop-project.org site is licensed under the [CC-BY-SA license](https://creativecommons.org/licenses/by-sa/4.0/) -- meaning that you can redistribute, remix, adapt, and build upon the content, so long as you give attribution and license the modified content under identical terms.
 
-<img src="/assets/images/2015/06/cc-zero.png" style="margin-right:auto;margin-left:auto;display:block;" />
+<img alt="CC-BY-SA" src="static/assets/images/theme/cc-by-sa.png" width="120" style="margin-right:auto;margin-left:auto;display:block;" />
 
 ## Guidelines
 

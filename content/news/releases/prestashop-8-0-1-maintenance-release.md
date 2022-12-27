@@ -26,7 +26,7 @@ Reminder: the 1-Click Upgrade module’s latest version is v4.15, don’t forget
 
 ---
 
-## Issues involved in the milestone 8.0.1
+## Issues fixed in this release
 
 TO BE COMPLETED
 

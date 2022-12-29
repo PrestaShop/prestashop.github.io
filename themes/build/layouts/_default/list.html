@@ -33,7 +33,7 @@
                   {{ .Date.Format "Jan 2, 2006" }}
                 </span>
               <span class="separator"></span>
-              <span class="disqus-comment-count" data-disqus-url="{{ default .Permalink .Params.Disqus_url }}"></span>
+              <span class="disqus-comment-count" data-disqus-url="{{ partial "partials/disqus/disqus-url.html" . }}"></span>
             </div>
 
             <h2>

@@ -6,9 +6,9 @@
         {{ if .Site.DisqusShortname }}<div id="disqus_thread"></div>
         <script type="application/javascript">
           window.disqus_config = function () {
-              {{with .Params.disqus_identifier }}this.page.identifier = '{{ . }}';{{end}}
-              {{with .Params.disqus_title }}this.page.title = '{{ . }}';{{end}}
-              {{with .Params.disqus_url }}this.page.url = '{{ . | html  }}';{{end}}
+              {{ with .Params.disqus_identifier }}this.page.identifier = '{{ . }}';{{ end }}
+              {{ with .Params.disqus_title }}this.page.title = '{{ . }}';{{ end }}
+              this.page.url = '{{ partial "partials/disqus/disqus-url" . }}';
           };
           (function() {
             if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {

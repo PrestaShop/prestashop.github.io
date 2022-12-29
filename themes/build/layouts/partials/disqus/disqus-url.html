@@ -1,0 +1,7 @@
+{{ $url := .Permalink }}
+{{ if .Params.Disqus_url }}
+    {{ $url = .Params.Disqus_url }}
+{{ else if (gt (len .Aliases) 0) }}
+    {{ $url = printf "%s%s" .Site.BaseURL (index .Aliases 0) }}
+{{ end }}
+{{ return $url }}

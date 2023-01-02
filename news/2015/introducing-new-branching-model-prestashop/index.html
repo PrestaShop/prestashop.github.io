@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Introducing a new branching model for PrestaShop</title>
-    <link href="/style.css?1672308053" rel="stylesheet">
+    <link href="/style.css?1672679399" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -240,7 +240,7 @@
 <p>Other branches might exist. They are used by the PrestaShop Core team, and you should not use them unless asked by the team.
 <strong>Remember not to use &lsquo;1.6&rsquo; branch anymore</strong>, nor the &lsquo;master&rsquo; branch.</p>
 <p>The diagram below should help you choose the correct branch for your pull request:</p>
-<p>![Choose your branch]({{ &lsquo;/assets/images/2015/08/prestashop-choose-branch.png&rsquo; | prepend: site.baseurl }})</p>
+<p><img src="/assets/images/2015/08/prestashop-choose-branch.png" alt="Choose your branch"></p>
 <h2 id="prestashops-new-branching-model">PrestaShop&rsquo;s new branching model</h2>
 <h3 id="a-bit-of-history">A bit of history</h3>
 <p>Before we adopted the <a href="http://build.prestashop.com/news/a-more-semantic-versioning-scheme/">current SemVer-like versioning</a>, we used to have only one branch, &lsquo;1.6&rsquo;, and developers would commit whatever they had to do on it. We would then make a release out of it, including all of its changes (new feature, bug fixes, etc.) in the new version.</p>
@@ -334,7 +334,7 @@
 <p>Note that the Core team uses the same decision table for its own pull requests.</p>
 <h3 id="the-model">The model</h3>
 <p>I heard that <em>a picture is worth a thousand words</em>, I hope they didn&rsquo;t lie to me:</p>
-<p>![PrestaShop Branching Model]({{ &lsquo;/assets/images/2015/08/prestashop-branching-model.png&rsquo; | prepend: site.baseurl }})</p>
+<p><img src="/assets/images/2015/08/prestashop-branching-model.png" alt="PrestaShop Branching Model"></p>
 <p><strong>N.B.:</strong> No one should commit directly on PrestaShop&rsquo;s &lsquo;develop&rsquo; and release branches. Instead, you should submit pull requests based on your own fork of these forks. This is not shown on the graph for simplicity&rsquo;s sake.</p>
 <h3 id="about-the-next-release">About the next release</h3>
 <p>The next release of PrestaShop is being worked on in the &lsquo;develop&rsquo; branch. Depending on whether it contains changes which are backward compatible or not, it may result in a minor <strong>or</strong> a major release.</p>

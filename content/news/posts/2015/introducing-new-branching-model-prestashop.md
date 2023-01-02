@@ -39,7 +39,7 @@ Other branches might exist. They are used by the PrestaShop Core team, and you s
 
 The diagram below should help you choose the correct branch for your pull request:
 
-![Choose your branch]({{ '/assets/images/2015/08/prestashop-choose-branch.png' | prepend: site.baseurl }})
+![Choose your branch](/assets/images/2015/08/prestashop-choose-branch.png)
 
 
 ## PrestaShop's new branching model
@@ -147,7 +147,7 @@ Note that the Core team uses the same decision table for its own pull requests.
 
 I heard that _a picture is worth a thousand words_, I hope they didn't lie to me:
 
-![PrestaShop Branching Model]({{ '/assets/images/2015/08/prestashop-branching-model.png' | prepend: site.baseurl }})
+![PrestaShop Branching Model](/assets/images/2015/08/prestashop-branching-model.png)
 
 **N.B.:** No one should commit directly on PrestaShop's 'develop' and release branches. Instead, you should submit pull requests based on your own fork of these forks. This is not shown on the graph for simplicity's sake.
 

@@ -133,7 +133,7 @@ The following languages had the best progress in December thanks to the translat
 
 Congratulations! 
 
-![Best translation progress in December 2022](/assets/images/2022/12/build-crowdin-progress-december22.png)
+![Best translation progress in December 2022](/assets/images/2023/01/build-crowdin-progress-december22.png)
 
 A huge thank you to all the contributors!
  

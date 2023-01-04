@@ -25,7 +25,7 @@ Overall, in 2022,
 
 On the Crowdin side of the Project, 146 members translated 339,246 words and approved 319,197 words. Did you know that there are more words in the PrestaShop software than in George R. R. Martin’s Game of Thrones? 
 
-April and August were the most active months, with a total of 122,405 translated words. 
+April and August were the most active months, with a combined total of 122,405 translated words. 
 Overall, 177 new contributors joined the Crowdin Project this year, adding up to a total of 3,658 members at the end of 2022.
 
 We warmly welcome each and every one of you. ☕️
@@ -111,7 +111,7 @@ Remember, you can see who has been contributing to our translation project thank
  
 At the end of December, PrestaShop 8 was fully available (= 100% translated and validated) in **11 languages**. That’s great! Thank you for your involvement. :tada:
  
-| Catalan | Chinese (CN) | Chinese (TW) | Czech |
+| Catalan | Chinese (CN) | **Chinese (TW)** | Czech |
 | Dutch | French | Greek | Italian | 
 | Portuguese (BR) | Spanish (ES) | Ukrainian | 
 

@@ -23,7 +23,7 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 Overall, in 2022,
 [120 contributors](https://build.prestashop-project.org/news/2022/prestashop-8-0-0-available) contributed to 1100 pull requests on the GitHub side of the Project.
 
-On the Crowdin side of the Project, 146 members translated 47,723 strings, containing 339,246 words, and approved 319,197 words. Did you know that there are more words in the PrestaShop software than George R. R. Martin’s Game of Thrones? 
+On the Crowdin side of the Project, 146 members translated 339,246 words and approved 319,197 words. Did you know that there are more words in the PrestaShop software than in George R. R. Martin’s Game of Thrones? 
 
 April and August were the most active months, with a total of 122,405 translated words. 
 Overall, 177 new contributors joined the Crowdin Project this year, adding up to a total of 3,658 members at the end of 2022.

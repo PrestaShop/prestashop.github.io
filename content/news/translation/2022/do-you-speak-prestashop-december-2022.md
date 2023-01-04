@@ -2,7 +2,7 @@
 layout: post
 aliases: ["/news/do-you-speak-prestashop-december-2022"]
 title: "Do you speak PrestaShop? – December 2022 edition"
-subtitle: "Where you'll learn about the Project’s 2022 retrospective"
+subtitle: "Where you'll learn about the project’s 2022 retrospective"
 date: 2022-12-03
 authors: [LéaDelin]
 icon: icon-world

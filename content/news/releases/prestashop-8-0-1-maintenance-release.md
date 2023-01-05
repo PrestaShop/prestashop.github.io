@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.0.1 is available
 subtitle: Maintenance version of the 8.0.x branch
-date: 2023-01-05
+date: 2023-01-06
 authors: [ PrestaShop ]
 image: /assets/images/2023/01/release801.png
 icon: icon-leaf

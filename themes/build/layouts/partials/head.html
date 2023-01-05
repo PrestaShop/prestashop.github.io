@@ -18,5 +18,7 @@
     {{- partial "seo.html" . -}}
     {{- partial "twitter-card.html" . -}}
 
+    {{ if hugo.IsProduction }}
     {{- partial "analytics.html" . }}
+    {{ end }}
 </head>

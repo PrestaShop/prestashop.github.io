@@ -10,8 +10,8 @@ tags:
 - version
 - patch
 - releases
-- 8.0.1
-- 8.0.x
+- "8.0.1"
+- "8.0.x"
 ---
 
 The first patch version for PrestaShop 8 is now available to download!

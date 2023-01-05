@@ -147,5 +147,5 @@ You can also join the #translation channel of the PrestaShop Open Source Slack. 
 
 Thanks everyone! 🙌
 
-{{< cta "https://join.slack.com/t/prestashop/shared_invite/zt-dkmbz5qf-I~FlEWwmRUOXunc5ui0Ucg" >}}Join us on Slack{{< /cta >}}
+{{< cta "https://www.prestashop-project.org/slack/" >}}Join us on Slack{{< /cta >}}
 

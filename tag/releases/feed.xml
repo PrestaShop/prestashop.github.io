@@ -6,7 +6,18 @@
     <description>Recent content in releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 1.7.8 is now a LTS</title>
+      <link>https://build.prestashop-project.org/news/2023/178-lts-80/</link>
+      <pubDate>Thu, 05 Jan 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/178-lts-80/</guid>
+      <description>Now that PrestaShop 8.0 is out, here is a focus on maintained branches of the PrestaShop project and what to expect.
+Reminder: PrestaShop branching strategy In August 2015 PrestaShop adopted a new branching model for the project.
+The model was refined over the years, for example with this page on the developer documentation about what bugs do qualify for a patch version or the Backward Compatibility Promise that defines what changes can be introduced in a version, but we can say the model has lived quite well as the project is still following it in 2023.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 1.7.8.8 Is Available</title>
       <link>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-8-maintenance-release/</link>
@@ -161,18 +172,6 @@ This is the last step before releasing the final 1.7.8.0. This version aims to v
       <description>PrestaShop 1.7.7.8 is now available. This maintenance release fixes 1 major regression.
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 Major issues on the product page The issue #25718 and #25753 appeared due to the implementation of the numeric data format for number fields on the 1.7.7.6 patch version. This regression prevents users to edit the impact of a combination and causes rounding problems on the impact calculation.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.7.7</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-1-7-7-7-maintenance-release/</link>
-      <pubDate>Thu, 19 Aug 2021 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-1-7-7-7-maintenance-release/</guid>
-      <description>PrestaShop 1.7.7.7 is now available. This maintenance release fixes 1 critical regression and 1 minor regression.
-We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
-Critical fix One critical bug has been fixed in 1.7.7.7:
-The checkout at shipping step crashes when a cart rule was used if the database prefix is not ps_ Order page issue Merchants weren&amp;rsquo;t able to download the file from a customized product in the order page if the product wasn&amp;rsquo;t translated in the employee&amp;rsquo;s back office language Acknowledgements Many thanks to @idnovate for reporting the bug and providing a patch!</description>
     </item>
     
   </channel>

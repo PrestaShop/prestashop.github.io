@@ -6,7 +6,18 @@
     <description>Recent content in version on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 1.7.8 is now a LTS</title>
+      <link>https://build.prestashop-project.org/news/2023/178-lts-80/</link>
+      <pubDate>Thu, 05 Jan 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/178-lts-80/</guid>
+      <description>Now that PrestaShop 8.0 is out, here is a focus on maintained branches of the PrestaShop project and what to expect.
+Reminder: PrestaShop branching strategy In August 2015 PrestaShop adopted a new branching model for the project.
+The model was refined over the years, for example with this page on the developer documentation about what bugs do qualify for a patch version or the Backward Compatibility Promise that defines what changes can be introduced in a version, but we can say the model has lived quite well as the project is still following it in 2023.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 1.7.8.8 Is Available</title>
       <link>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-8-maintenance-release/</link>
@@ -160,16 +171,6 @@ Back office regressions Stock page - If a product attribute contains a comma, it
 Each version of PrestaShop is getting bigger and bigger, with more and more regular contributors. We are very proud of having such a strong community working with us on a daily basis.
 This new version brings many features that should please both merchants and developers.
 New in 1.7.8.0 Support for PHP 7.4 PrestaShop 1.7.8 introduces compatibility with PHP 7.4, which allows you to benefit from bug fixes and security patches from PHP until December 2023.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 1.7.8.0 RC1 Is Ready To Be Tested!</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-1-7-8-0-rc-release/</link>
-      <pubDate>Tue, 21 Sep 2021 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-1-7-8-0-rc-release/</guid>
-      <description>A few months after the beta, the first release candidate for PrestaShop 1.7.8.0 is now ready for you to test!
-This is the last step before releasing the final 1.7.8.0. This version aims to verify that all regressions found during the beta have been fixed and that the software is ready for production. If no major or critical regression is reported by October 5, then the final version of 1.7.8.0 will be made available.</description>
     </item>
     
   </channel>

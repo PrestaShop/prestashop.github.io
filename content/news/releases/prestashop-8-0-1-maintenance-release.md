@@ -34,7 +34,7 @@ TO BE COMPLETED
 
 Contributors to this patch version, from both the Core team and the community at large:
 
-TO BE COMPLETED
+Abramo Franchetti, Boubker Bribri, Chedly Farhani, Daniel Hlavacek, David Gonzalez, Fabien Papet, Franck Lefèvre, Javier García, Jonathan Danse, Jonathan Lelievre, Julius Žukauskas, Khouloud Belguith, Krystian Podemski, Marco Salvatore, Marius Gudauskis, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, okom3pom, Pablo Borowicz, panariga, Pierre-Yves Christmann, Prestaworks, Salim Benouamer, Sarah Dib, sefirosweb, Thomas Baccelli, Valentin Szczupak, Yani Makouf
 
 Thank you!
 

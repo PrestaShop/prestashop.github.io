@@ -22,9 +22,9 @@ After a few weeks of intensive work from all project members, the first maintena
 
 In this patch, you can find more than [30 bug fixes](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.0.1+label%3A%22Bug+fix%22+) and one performance improvement that [prevents clearing the system's cache for bulk actions performed from the modules list](https://github.com/PrestaShop/PrestaShop/pull/29695).
 
-We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
+It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 
-Reminder: the 1-Click Upgrade module’s latest version is [v4.15.0](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.15.0), don’t forget to upgrade it.
+Reminder: by the time this article is published, the 1-Click Upgrade module’s latest version is [v4.15.0](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.15.0), don’t forget to upgrade it.
 
 ---
 

@@ -28,7 +28,7 @@ On the Crowdin side of the Project, 146 members translated 339,246 words and app
 April and August were the most active months, with a combined total of 122,405 translated words. 
 Overall, 177 new contributors joined the Crowdin Project this year, adding up to a total of 3,658 members at the end of 2022.
 
-We warmly welcome each and every one of you. ☕️
+A warm welcome to each and every one of you. ☕️
 
 ### 💕 Many thanks to December’s newcomers
 

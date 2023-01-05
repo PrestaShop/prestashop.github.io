@@ -101,7 +101,7 @@ A lot of you are working every day on Crowdin to have PrestaShop available in ma
 | 2. | danielshapiro9 | Hebrew | 161
 | 3. | M. Mirena (mmirena) | Albanian | 58
 
-Congratulations, and welcome to our new top contributors! :clap:
+Congratulations, and welcome to the project's new top contributors! :clap:
  
 Remember, you can see who has been contributing to our translation project thanks to the [Translators page](https://translators.prestashop.com/).
  

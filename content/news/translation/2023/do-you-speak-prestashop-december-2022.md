@@ -3,7 +3,7 @@ layout: post
 aliases: ["/news/do-you-speak-prestashop-december-2022"]
 title: "Do you speak PrestaShop? – December 2022 edition"
 subtitle: "Where you'll learn about the project’s 2022 retrospective"
-date: 2023-01-09
+date: 2023-01-05
 authors: [LéaDelin]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg
@@ -21,18 +21,18 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 2023 is here, happy new year! Thank you all for your contributions. With the help of every single one of you, PrestaShop 8.0 was released on October 26, 2022.  
 
 Overall, in 2022,
-[120 contributors](https://build.prestashop-project.org/news/2022/prestashop-8-0-0-available) contributed to 1100 pull requests on the GitHub side of the Project.
+[120 contributors](https://build.prestashop-project.org/news/2022/prestashop-8-0-0-available) contributed to 1100 pull requests on the GitHub side of the project.
 
-On the Crowdin side of the Project, 146 members translated 339,246 words and approved 319,197 words. Did you know that there are more words in the PrestaShop software than in George R. R. Martin’s Game of Thrones? 
+On the Crowdin side of the project, 146 members translated 339,246 words and approved 319,197 words. Did you know that there are more words in the PrestaShop software than in George R. R. Martin’s Game of Thrones? 
 
 April and August were the most active months, with a combined total of 122,405 translated words. 
-Overall, 177 new contributors joined the Crowdin Project this year, adding up to a total of 3,658 members at the end of 2022.
+Overall, 177 new contributors joined the Crowdin project this year, adding up to a total of 3,658 members at the end of 2022.
 
 A warm welcome to each and every one of you. ☕️
 
 ### 💕 Many thanks to December’s newcomers
 
-Many people subscribe to the project(s) of their choice each month, but not so many start translating straight away. For that reason, I would like to thank [Monika](https://crowdin.com/profile/monikaraciunaite/activity)  who rushed into the efforts immediately!
+Many people subscribe to the project(s) of their choice each month, but not so many start translating straight away. For that reason, I would like to thank [Monika](https://crowdin.com/profile/monikaraciunaite/activity) who rushed into the efforts immediately!
 
 ## A few stats
 

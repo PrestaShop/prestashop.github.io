@@ -32,7 +32,7 @@ A warm welcome to each and every one of you. ☕️
 
 ### 💕 Many thanks to December’s newcomers
 
-Many people subscribe to the project(s) of their choice each month, but not so many start translating straight away. For that reason, we would like to thank [Monika](https://crowdin.com/profile/monikaraciunaite/activity)  who rushed into the efforts immediately!
+Many people subscribe to the project(s) of their choice each month, but not so many start translating straight away. For that reason, I would like to thank [Monika](https://crowdin.com/profile/monikaraciunaite/activity)  who rushed into the efforts immediately!
 
 ## A few stats
 

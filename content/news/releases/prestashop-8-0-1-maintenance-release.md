@@ -18,7 +18,9 @@ The first patch version for PrestaShop 8 is now available to download!
 
 ![8.0.1 is available!](/assets/images/2023/01/release801.png)
 
-[wip]
+After a few weeks of intensive work from all project members, the first maintenance release for version 8 is now available.
+
+In this patch, you can find more than [30 bug fixes](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.0.1+label%3A%22Bug+fix%22+) and one performance improvement that [prevents clearing the system's cache for bulk actions performed from the modules list](https://github.com/PrestaShop/PrestaShop/pull/29695).
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 
@@ -154,4 +156,8 @@ Thank you!
 
 {{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.1" >}}Download PrestaShop 8.0.1 now!{{< /cta >}}
 
-Since version 8.0.1 is a “patch” update, upgrading from version 8.0.0 shouldn't be hard. Features will work better, modules and themes which worked fine on 8.0.0, will work just as well with 8.0.1. As for every upgrade, it's highly recommended to do a full manual backup beforehand.
+Since version 8.0.1 is a “patch” update, upgrading from version 8.0.0 should happen without any issues.
+
+Features will work better, and modules and themes, which worked fine on 8.0.0, will work just as well with 8.0.1. As for every upgrade, it's highly recommended to do a full manual backup beforehand.
+
+If you encounter any problems during the upgrade that, in your opinion, are not caused by third-party modules or modifications used in your shop, [submit a bug report](https://www.prestashop-project.org/get-involved/report-issues/).

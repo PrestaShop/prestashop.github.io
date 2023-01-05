@@ -18,11 +18,11 @@ The first patch version for PrestaShop 8 is now available to download!
 
 ![8.0.1 is available!](/assets/images/2023/01/release801.png)
 
-TO BE COMPLETED
+[wip]
 
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 
-Reminder: the 1-Click Upgrade module’s latest version is v4.15, don’t forget to upgrade it.
+Reminder: the 1-Click Upgrade module’s latest version is [v4.15.0](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.15.0), don’t forget to upgrade it.
 
 ---
 
@@ -146,7 +146,7 @@ Reminder: the 1-Click Upgrade module’s latest version is v4.15, don’t forget
 
 ## Acknowledgments
 
-Contributors to this patch version, from both the Core team and the community at large:
+Contributors to this patch version, from both the project members and the community at large:
 
 Abramo Franchetti, Boubker Bribri, Chedly Farhani, Daniel Hlavacek, David Gonzalez, Fabien Papet, Franck Lefèvre, Javier García, Jonathan Danse, Jonathan Lelievre, Julius Žukauskas, Khouloud Belguith, Krystian Podemski, Marco Salvatore, Marius Gudauskis, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, okom3pom, Pablo Borowicz, panariga, Pierre-Yves Christmann, Prestaworks, Salim Benouamer, Sarah Dib, sefirosweb, Thomas Baccelli, Valentin Szczupak, Yani Makouf
 
@@ -154,4 +154,4 @@ Thank you!
 
 {{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.1" >}}Download PrestaShop 8.0.1 now!{{< /cta >}}
 
-Since version 8.0.1 is a “patch” update to version 8.0.0, upgrading from any 8.0.x version will be easy: features will work better, modules and themes which worked fine on 8.0.0, will work just as well with 8.0.1. Upgrades from a standard 8.0.x version should work just as well.
+Since version 8.0.1 is a “patch” update, upgrading from version 8.0.0 shouldn't be hard. Features will work better, modules and themes which worked fine on 8.0.0, will work just as well with 8.0.1. As for every upgrade, it's highly recommended to do a full manual backup beforehand.

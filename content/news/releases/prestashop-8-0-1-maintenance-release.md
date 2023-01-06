@@ -5,6 +5,7 @@ subtitle: Maintenance version of the 8.0.x branch
 date: 2023-01-06
 authors: [ PrestaShop ]
 image: /assets/images/2023/01/release801.png
+twitter_image: /assets/images/2023/01/release801.png
 icon: icon-leaf
 tags:
 - version

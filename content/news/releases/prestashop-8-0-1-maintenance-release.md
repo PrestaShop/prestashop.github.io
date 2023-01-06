@@ -20,7 +20,7 @@ The first patch version for PrestaShop 8 is now available to download!
 
 After a few weeks of intensive work from all project members, the first maintenance release for version 8 is now available.
 
-In this patch, you can find more than [30 bug fixes](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.0.1+label%3A%22Bug+fix%22+) and one performance improvement that [prevents clearing the system's cache for bulk actions performed from the modules list](https://github.com/PrestaShop/PrestaShop/pull/29695).
+In this patch, you can find more than [30 bug fixes](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.0.1+label%3A%22Bug+fix%22+) and one performance improvement that [prevents clearing the system's cache for bulk actions performed from the modules list](https://github.com/PrestaShop/PrestaShop/pull/29695). You will also get changes from the recent [PrestaShop patch release 1.7.8.8]({{< relref "/news/releases/prestashop-1-7-8-8-maintenance-release" >}}).
 
 It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 

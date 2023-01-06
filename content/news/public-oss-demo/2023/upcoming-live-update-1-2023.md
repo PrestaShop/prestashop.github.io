@@ -5,7 +5,7 @@ subtitle: "Let's meet for the first Live Update in 2023"
 date:   2023-01-06 09:00:00
 authors: [ kpodemski ]
 icon: icon-video-camera
-tags: [contribute, event, community]
+tags: [contribute, event, community, live-update]
 ---
 
 Dear community,

@@ -6,7 +6,18 @@
     <description>Recent content in releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Jan 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.0.1 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-1-maintenance-release/</link>
+      <pubDate>Fri, 06 Jan 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-1-maintenance-release/</guid>
+      <description>The first patch version for PrestaShop 8 is now available to download!
+After a few weeks of intensive work from all project members, the first maintenance release for version 8 is now available.
+In this patch, you can find more than 30 bug fixes and one performance improvement that prevents clearing the system&amp;rsquo;s cache for bulk actions performed from the modules list. You will also get changes from the recent PrestaShop patch release 1.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 1.7.8 is now a LTS</title>
       <link>https://build.prestashop-project.org/news/2023/178-lts-80/</link>
@@ -161,17 +172,6 @@ New in 1.7.8.0 Support for PHP 7.4 PrestaShop 1.7.8 introduces compatibility wit
       <guid>https://build.prestashop-project.org/news/2021/prestashop-1-7-8-0-rc-release/</guid>
       <description>A few months after the beta, the first release candidate for PrestaShop 1.7.8.0 is now ready for you to test!
 This is the last step before releasing the final 1.7.8.0. This version aims to verify that all regressions found during the beta have been fixed and that the software is ready for production. If no major or critical regression is reported by October 5, then the final version of 1.7.8.0 will be made available.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.7.8</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-1-7-7-8-maintenance-release/</link>
-      <pubDate>Tue, 14 Sep 2021 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-1-7-7-8-maintenance-release/</guid>
-      <description>PrestaShop 1.7.7.8 is now available. This maintenance release fixes 1 major regression.
-We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
-Major issues on the product page The issue #25718 and #25753 appeared due to the implementation of the numeric data format for number fields on the 1.7.7.6 patch version. This regression prevents users to edit the impact of a combination and causes rounding problems on the impact calculation.</description>
     </item>
     
   </channel>

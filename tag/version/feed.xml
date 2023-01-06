@@ -6,7 +6,18 @@
     <description>Recent content in version on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Jan 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.0.1 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-1-maintenance-release/</link>
+      <pubDate>Fri, 06 Jan 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-1-maintenance-release/</guid>
+      <description>The first patch version for PrestaShop 8 is now available to download!
+After a few weeks of intensive work from all project members, the first maintenance release for version 8 is now available.
+In this patch, you can find more than 30 bug fixes and one performance improvement that prevents clearing the system&amp;rsquo;s cache for bulk actions performed from the modules list. You will also get changes from the recent PrestaShop patch release 1.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 1.7.8 is now a LTS</title>
       <link>https://build.prestashop-project.org/news/2023/178-lts-80/</link>
@@ -159,18 +170,6 @@ Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forg
       <description>PrestaShop 1.7.8.1 is now available. This maintenance release fixes 44 regressions reported since the initial 1.7.8.0 release.
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 Back office regressions Stock page - If a product attribute contains a comma, it is not displayed Dashboard page - Selecting a date range doesn&amp;rsquo;t work and causes a jquery error Modules page - Cannot install any module when the employee language is spanish Performance page - Cannot change the settings in a single store context Customer view page - The pagination of the voucher block is not working SQL Manager page - SQL query return exception Invoices page - Longer buttons overflow their container on lower resolutions Localization Page - There is no confirmation modal when changing the default currency View supplier page - Unexpected error View customer page - Incorrect display of the address block Add/edit tax rule page - The state and the postal code fields are not aligned Add/edit category page - The browser is unable to show the error message on an hidden element Add/edit country page - The address format is badly displayed Add/edit customer group page - The &amp;ldquo;Category discount&amp;rdquo; part is misaligned Add/edit attribute and add/edit social title pages - The language dropdown is not well displayed when resizing the window Add/edit product page - When we try to delete all combinations, the warning modal is empty Edit supplier page - Unable to save &amp;ldquo;meta_keywords&amp;rdquo; field If using the multistore and while making a manual upgrade, a new line in ps_configuration is created for PS_VERSION_DB In the Credit slip, the Ecotax is displayed in the Tax details while it shouldn&amp;rsquo;t Orders regressions Order details page - While adding a discount, the modal is not well displayed Order details page - An exception is displayed when the status of the &amp;ldquo;merchandise return&amp;rdquo; is deleted Order details page - The errors while deleting a product are not displayed Order details page - Debug mode enabled - an exception is displayed when ordering a deleted product with a file customization Orders - Cannot extend the order grid query from a module Display regressions Buttons are not well displayed - part 1 Buttons are not well displayed - part 2 Buttons are not well displayed - part 3 Floating button over some elements on migrated pages preventing to save form Front office regressions Problem when adding images with different ratio After upgrade, theme must be updated to be able to pay into the final step Simple anchors don&amp;rsquo;t work on CMS page The add to cart button is not working when clicking on the cart icon Product disabled - An exception is displayed when changing combination or increasing/decreasing a quantity Product comment structured data AggregateRating isn&amp;rsquo;t working Shopping cart page - An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations Product structured data JSON-LD problem when price is not displayed An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations Display regressions The product-flags are displayed in the same row with no space There is an horizontal scrollbar on the homepage under 991px and the carousel overflows the content The search button in the header is not responsive on mobile Featured product not well displayed with responsive Module regressions Bad display in autoupgrade module Ps_banner module fixed width and height value Acknowledgements Contributors to this patch version, from both the Core team and the community at large:</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 1.7.8.0 is available</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-1-7-8-0-available/</link>
-      <pubDate>Thu, 07 Oct 2021 10:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-1-7-8-0-available/</guid>
-      <description>We are happy to announce PrestaShop 1.7.8.0 is officially available!
-Each version of PrestaShop is getting bigger and bigger, with more and more regular contributors. We are very proud of having such a strong community working with us on a daily basis.
-This new version brings many features that should please both merchants and developers.
-New in 1.7.8.0 Support for PHP 7.4 PrestaShop 1.7.8 introduces compatibility with PHP 7.4, which allows you to benefit from bug fixes and security patches from PHP until December 2023.</description>
     </item>
     
   </channel>

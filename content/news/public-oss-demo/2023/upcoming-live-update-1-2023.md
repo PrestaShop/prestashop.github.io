@@ -11,7 +11,7 @@ tags: [contribute, event, community, live-update]
 Dear community,
 
 The first Live Update for the PrestaShop Project will happen on **Wednesday, January 11th, 2023** at [4 pm (Paris time)](https://time.is/1600_11_Jan_2023_in_Paris) on [YouTube](https://www.youtube.com/watch?v=YDS51o48W1I)!
-_Public Demo_ is now called _Live update_, as it is planned to experiment with formats other than you could see in previous sessions. Live coding sessions, interviews, etc.
+_Public Demo_ is now called _Live update_, as it is planned to experiment with formats other than you could see in previous sessions, like live coding, interviews, etc.
 
 This time, as always, I expect to share with you project news, and a couple of demos are planned:
 - Overview of the Hummingbird theme, by [@NeOMaking](https://github.com/NeOMaking)

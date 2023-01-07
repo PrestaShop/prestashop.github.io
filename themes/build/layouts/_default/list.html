@@ -10,6 +10,11 @@
               {{- with (index . 0) }}{{ $tagname = index . "name"}}{{ end -}}
           {{- end -}}
           <h1>Articles by tag: {{ $tagname }}</h1>
+          {{ if (eq .Page.Params.title "core-weekly") }}
+            <div class="alert alert-info">
+              Starting December 2022 the Core Weekly is replaced by <a href="{{ relref . "/tags/core-monthly" }}">Core Monthly</a>
+            </div>
+          {{ end }}
       {{- else if not .IsHome -}}
          <h1>{{ .Title }}</h1>
       {{- end -}}

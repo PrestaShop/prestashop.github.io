@@ -8,7 +8,7 @@ authors: [ PrestaShop ]
 image: /assets/images/2017/04/core_weekly_banner.jpg
 icon: icon-calendar
 tags:
- - core-weekly
+ - core-monthly
 ---
 
 This edition of the Core Weekly report highlights changes in PrestaShop's core codebase from Monday 25th to Sunday 31st of May 2020.

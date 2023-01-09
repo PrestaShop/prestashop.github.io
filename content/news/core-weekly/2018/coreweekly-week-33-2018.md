@@ -7,7 +7,7 @@ date:   2018-08-21 15:40:00
 authors: [ AntoineThomas ]
 icon: icon-calendar
 tags:
- - core-weekly
+ - core-monthly
 ---
 
 This edition of the Core Weekly report highlights changes in PrestaShop's core codebase during the last week, from Monday 13rd to Sunday 19th of August 2018.

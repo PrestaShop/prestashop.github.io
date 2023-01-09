@@ -7,7 +7,7 @@ date:   2015-05-05 18:29:47
 authors:  [ xavierborderie ]
 icon: icon-calendar
 tags:
- - core-weekly
+ - core-monthly
 ---
 
 Missed a week, but the Core Weekly report is still alive and kicking!

@@ -7,7 +7,7 @@ date:   2015-03-12 14:14:47
 authors:  [ xavierborderie ]
 icon: icon-calendar
 tags:
- - core-weekly
+ - core-monthly
 ---
 
 Hi everyone, and welcome to the second edition of the PrestaShop Core Weekly post, focusing on the activity from March 2nd to March 8th of 2015.

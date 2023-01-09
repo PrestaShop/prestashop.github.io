@@ -7,7 +7,7 @@ date:   2015-05-20 18:29:47
 authors:  [ xavierborderie ]
 icon: icon-calendar
 tags:
- - core-weekly
+ - core-monthly
 ---
 
 Another set of short weeks here in Paris, which means another edition of the Core Weekly report that spans two weeks of change to the PrestaShop codebase.

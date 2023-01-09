@@ -7,7 +7,7 @@ date:   2015-04-16 16:12:00
 authors:  [ xavierborderie ]
 icon: icon-calendar
 tags:
- - core-weekly
+ - core-monthly
 ---
 
 Welcome to Week 15 in PrestaShop Core development! This is the Core Weekly!

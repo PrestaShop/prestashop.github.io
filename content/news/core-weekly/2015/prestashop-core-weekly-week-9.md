@@ -7,7 +7,7 @@ date:   2015-03-04 17:17:47
 authors:  [ xavierborderie ]
 icon: icon-calendar
 tags:
- - core-weekly
+ - core-monthly
 ---
 
 Welcome to the inaugural post relating what has been going on in the development side of PrestaShop!

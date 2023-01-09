@@ -7,7 +7,7 @@ date:   2015-04-10 11:45:00
 authors:  [ xavierborderie ]
 icon: icon-calendar
 tags:
- - core-weekly
+ - core-monthly
 ---
 
 ...and we're back for another Core Weekly report!

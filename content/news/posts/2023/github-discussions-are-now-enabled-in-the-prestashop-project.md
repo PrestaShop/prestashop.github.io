@@ -5,7 +5,7 @@ subtitle: "A better place for the community to discuss the project"
 date:   2023-01-12 14:00:00
 authors: [ PrestaShop ]
 icon: icon-chat
-tags: [ news, contribute, community, ]
+tags: [ news, contribute, community ]
 ---
 
 
@@ -67,7 +67,7 @@ From now on, **issues should be used for bug reports only**. Feature requests ar
 
 There are over 1,200 open feature requests currently on GitHub issues. To avoid polluting the newly created Discussions space with hundreds of topics, project members will progressively go through all existing feature requests and either close them or migrate them over to the Discussions platform, based on engagement criteria like the number of reactions and duplicate reports. Rest assured that nothing will be lost in the process: migrated topics will keep a link to the previous issue, and all previous comments can be retrieved even if the original issue is closed. 
 
-If a feature request is closed, it doesn’t mean it cannot be done and never will never be: it just means that at right now, it hasn’t gained enough traction to get done by anyone. If you think one of those is still worth doing, consider submitting it again as a Discussion, and see if it is upvoted by the community. Remember: ideas are most useful when people get interested in making them come true.
+If a feature request is closed, it doesn’t mean it cannot be done and never will never be: it just means that right now, it hasn’t gained enough traction to get done by anyone. If you think one of those is still worth doing, consider submitting it again as a Discussion, and see if it is upvoted by the community. Remember: ideas are most useful when people get interested in making them come true.
 
 ## Join the discussion
 

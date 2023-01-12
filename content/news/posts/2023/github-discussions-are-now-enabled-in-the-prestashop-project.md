@@ -3,7 +3,7 @@ layout: post
 title:  "GitHub Discussions are now enabled in the PrestaShop Project!"
 subtitle: "A better place for the community to discuss the project"
 date:   2023-01-12 14:00:00
-authors: [ PrestaShop ]
+authors: [ kpodemski ]
 icon: icon-chat
 tags: [ news, contribute, community ]
 ---

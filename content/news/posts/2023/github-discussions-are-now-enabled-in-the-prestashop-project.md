@@ -42,7 +42,7 @@ This is where we share news, updates, and important information about the Presta
 
 This is a place for open discussion about ideas you find valuable for the PrestaShop project. Feel free to share your thoughts on how PrestaShop could be improved for everyone. 
 
-You can also browse through other ideas and vote on your favorites by giving them a thumb-up. This helps project members and contributors understand which ideas are most popular, and the higher visibility will encourage the community to engage in them - and perhaps even submit a pull request!
+You can also browse through other ideas and vote on your favorites by giving them a thumbs-up. This helps project members and contributors understand which ideas are most popular, and the higher visibility will encourage the community to engage in them - and perhaps even submit a pull request!
 
 Let's have a constructive and respectful conversation about improving PrestaShop together.
 
@@ -67,7 +67,7 @@ From now on, **issues should be used for bug reports only**. Feature requests ar
 
 There are over 1,200 open feature requests currently on GitHub issues. To avoid polluting the newly created Discussions space with hundreds of topics, project members will progressively go through all existing feature requests and either close them or migrate them over to the Discussions platform, based on engagement criteria like the number of reactions and duplicate reports. Rest assured that nothing will be lost in the process: migrated topics will keep a link to the previous issue, and all previous comments can be retrieved even if the original issue is closed. 
 
-If a feature request is closed, it doesn’t mean it cannot be done and never will never be: it just means that right now, it hasn’t gained enough traction to get done by anyone. If you think one of those is still worth doing, consider submitting it again as a Discussion, and see if it is upvoted by the community. Remember: ideas are most useful when people get interested in making them come true.
+If a feature request is closed, it doesn’t mean it cannot be done and never will be: it just means that right now, it hasn’t gained enough traction to get done by anyone. If you think one of those is still worth doing, consider submitting it again as a Discussion, and see if it is upvoted by the community. Remember: ideas are most useful when people get interested in making them come true.
 
 ## Join the discussion
 

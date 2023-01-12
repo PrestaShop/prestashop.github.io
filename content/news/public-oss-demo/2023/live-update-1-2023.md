@@ -23,7 +23,7 @@ You can use the timestamps to jump directly to the parts you want to watch.
 
 {{< cta "https://www.youtube.com/watch?v=YDS51o48W1I" "info" >}}Watch replay on YouTube{{< /cta >}}
 
-Links to projects mentioned during live update:
+Below are links to projects mentioned during this live update:
 - [PrestaShop 8.0.1](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.1)
 - [Autoupgrade 4.15](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.15.0)
 - [Hummingbird](https://github.com/PrestaShop/hummingbird)

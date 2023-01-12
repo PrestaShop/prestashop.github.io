@@ -3,22 +3,22 @@ layout: page
 title: About
 ---
 
-## Why this blog
+## What is PrestaShop Build Blog?
 
-This devblog is where the PrestaCrew communicates directly with the community. It's especially targeted at those who contribute (Core, translations, documentation, modules/themes, etc.)
+This blog is where project members communicates directly with the community. It's especially targeted at those who contribute (to core, translations, documentation, modules/themes, etc.)
 
-This blog is about everything that has to do with PrestaShop development. The whole PrestaShop product team contributes: developers, product managers, designers, tech writers, etc. [We welcome your contributions](#contribute)!
+This blog is about everything that has to do with PrestaShop project. The whole PrestaShop project team contributes: developers, product managers, designers, tech writers, etc. [We welcome your contributions](#contribute)!
 
 We write about everything that happens to the PrestaShop software:
 
 * New releases,
-* Code activity in the past week,
-* The upcoming improvement in the codebase, 
-* Current and future architectures, 
+* Activity in the project in the past month,
+* The upcoming improvements in the codebase, 
+* Current and future architecture changes, 
 
 ...and all behavior changes that might affect you as a developer, a module/theme author, or simply as a Open Source fan :)
 
-This devblog also hosts How-Tos on certain features, before they find their way in the Developer Guide or the Designer Guide.
+This blog also hosts How-Tos on certain features, we share best practices and tips on how to work with PrestaShop.
 
 ## Contribute
 
@@ -38,7 +38,7 @@ Unless specified otherwise on the article, all content on the build.prestashop-p
 
 **Support**
 
-This blog is not for support. If you need help, you can search [our forum](http://www.prestashop.com/forums) or open a new thread there.
+This blog is not for support. If you need help, you can see [available options here](https://www.prestashop-project.org/support/).
 
 **Feature requests**
 

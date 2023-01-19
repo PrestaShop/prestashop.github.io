@@ -5,7 +5,7 @@ title: About
 
 ## What is PrestaShop Build Blog?
 
-This blog is where project members communicates directly with the community. It's especially targeted at those who contribute (to core, translations, documentation, modules/themes, etc.)
+This blog is where project members communicate directly with the community. It's especially targeted at those who contribute (to core, translations, documentation, modules/themes, etc.)
 
 This blog is about everything that has to do with PrestaShop project. The whole PrestaShop project team contributes: developers, product managers, designers, tech writers, etc. [We welcome your contributions](#contribute)!
 

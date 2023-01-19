@@ -11,8 +11,8 @@ tags:
 - version
 - major
 - releases
-- 8.0
-- 8.0.x
+- "8.0"
+- "8.0.x"
 ---
 
 The maintainers team is pleased to announce that PrestaShop 8.0 is officially available.

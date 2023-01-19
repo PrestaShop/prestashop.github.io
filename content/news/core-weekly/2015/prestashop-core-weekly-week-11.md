@@ -7,7 +7,7 @@ date:   2015-03-19 08:06:00
 authors:  [ xavierborderie ]
 icon: icon-calendar
 tags:
- - core-weekly
+ - core-monthly
 ---
 
 Howdy everyone!

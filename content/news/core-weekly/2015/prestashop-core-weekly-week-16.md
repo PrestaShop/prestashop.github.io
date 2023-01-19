@@ -7,7 +7,7 @@ date:   2015-04-22 16:12:00
 authors:  [ xavierborderie ]
 icon: icon-calendar
 tags:
- - core-weekly
+ - core-monthly
 ---
 
 Core Weekly, expectedly back again for Week 16 of 2015!

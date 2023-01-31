@@ -14,7 +14,7 @@ tags:
 ---
 
 
-As of February 1, 2023, PrestaShop version 8.1 has entered the feature freeze phase. This article will provide more information about the feature freeze, what the next steps will be, and what to expect from PrestaShop 8.1.
+As of February 1, 2023, PrestaShop version 8.1 has entered the feature freeze phase. This article provides more information about the feature freeze, what the next steps will be, and what to expect from PrestaShop 8.1.
 
 ![PrestaShop 8.1](/assets/images/2023/02/banner_8.1_1534x424.png)
 
@@ -48,8 +48,8 @@ Here are the most notable features that will be included in this version:
 
 ### PrestaShop 9
 
-Feature freeze for PrestaShop 8.1 also means that work around PrestaShop 9.0 starts. The `develop` branch will become a home for the next major version. This allows anyone to contribute with changes without worrying about [backward compatibility promise](https://github.com/PrestaShop/ADR/blob/master/0017-backward-compatibility-promise.md). For many, it’s the best time to contribute! You can often suggest impactful changes that were impossible to merge during work on the minor version. If you have any plan to contribute, let's discuss [your idea here](https://github.com/PrestaShop/PrestaShop/discussions/categories/ideas).
+Feature freeze for PrestaShop 8.1 also means that work around PrestaShop 9.0 can begin. The `develop` branch will become a home for the next major version, and contributions introducing [backward-incompatible changes](https://github.com/PrestaShop/ADR/blob/master/0017-backward-compatibility-promise.md) can now be merged. For many, it’s the best time to contribute! You can often suggest impactful changes that were impossible to merge during work on the minor version. If you plan to contribute, let's discuss [your idea here](https://github.com/PrestaShop/PrestaShop/discussions/categories/ideas).
 
-Make sure to follow this blog, Live Updates, and other project communication channels because we’ll have more news to share about PrestaShop 9.0 soon!
+Make sure to follow this blog, [Live Updates](/tag/live-update/), and other project communication channels – we’ll have more news to share about PrestaShop 9.0 soon!
 
-In the meantime, if you want to stay updated regarding PrestaShop 8.1.0 release, make sure to follow [this issue](https://github.com/PrestaShop/PrestaShop/issues/30719) to get the latest updates.
+In the meantime, if you want to stay updated regarding the release of PrestaShop 8.1, make sure to [subscribe to this GitHub issue](https://github.com/PrestaShop/PrestaShop/issues/30719).

@@ -10,7 +10,7 @@ twitter_image: /assets/images/2023/02/banner_8.1_1024x512.jpg
 tags:
  - news
  - version
- - “8.1”
+ - "8.1"
 ---
 
 

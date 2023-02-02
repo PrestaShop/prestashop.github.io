@@ -84,7 +84,7 @@ Korean, Lithuanian, Romanian, and Polish are almost fully available. There is on
 
 ## Languages with the best evolution
 
-The following languages had the best progress in December thanks to the translation community:
+The following languages had the best progress in January thanks to the translation community:
  
 * **Bosnian** (+13% to reach 99% translated and 94% validated)
 * **Hebrew** (+6% to reach 90% translated and 89% validated) 

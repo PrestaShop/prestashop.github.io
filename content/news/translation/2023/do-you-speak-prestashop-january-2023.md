@@ -77,6 +77,7 @@ At the end of December, PrestaShop 8 was fully available (= 100% translated and 
 | Portuguese (BR) | Spanish (ES) | Ukrainian | 
 
  Thank you for your involvement. :tada:
+ 
 #### Almost there!
 
 Korean, Lithuanian, Romanian, and Polish are almost fully available. There is only 1% of strings to translate and proofread! 💪

@@ -27,7 +27,7 @@ For that reason, I would like to thank [OnlyHardOfficial](https://crowdin.com/pr
 
 ### 📖 The translation guide is there to help
 
-Ever wondered how the translation process works? or how to become a proofreader? The translation guide is there to help. You can find it [here](https://docs.prestashop-project.org/translating-prestashop/).
+Ever wondered how the translation process works? Or how to become a proofreader? The translation guide is there to help. You can find it [here](https://docs.prestashop-project.org/translating-prestashop/).
 
 ## A few stats
 

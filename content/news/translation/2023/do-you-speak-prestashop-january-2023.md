@@ -70,7 +70,7 @@ Remember, you can see who has been contributing to our translation project thank
  
 #### Fully available languages
  
-At the end of December, PrestaShop 8 was fully available (= 100% translated and validated) in **14 languages**. That’s great!
+At the end of January, PrestaShop 8 was fully available (= 100% translated and validated) in **14 languages**. That’s great!
 
 | Catalan | Chinese (CN) | Chinese (TW) | Czech |
 | Dutch | French | Greek | Hungarian | Italian | 

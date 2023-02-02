@@ -10,7 +10,7 @@ image: /assets/images/2019/01/Build-Crowdin-banner.jpg
 tags: [translation, i18n, l10n]
 ---
 
-Contributing to PrestaShop is not only about the code, it is also about taking part in the [PrestaShop translation project](https://crowdin.com/project/prestashop-official)! This report will tell you how the software translations evolved in December!
+Contributing to PrestaShop is not only about the code, it is also about taking part in the [PrestaShop translation project](https://crowdin.com/project/prestashop-official)! This report will tell you how the software translations evolved in January!
 
 ![Crowdin Monthly banner](/assets/images/2019/01/Build-Crowdin-banner.jpg)
 

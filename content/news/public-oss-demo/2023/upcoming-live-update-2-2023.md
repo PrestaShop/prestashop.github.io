@@ -2,7 +2,7 @@
 layout: post
 title:  "Announcing February PrestaShop Project Live Update"
 subtitle: "Let's meet for the second Live Update in 2023"
-date:   2023-02-02
+date:   2023-02-03
 authors: [ kpodemski ]
 icon: icon-video-camera
 tags: [contribute, event, community, live-update]

@@ -57,7 +57,7 @@ If you don't want to version the core files, PrestaShop contributor Adonis Karav
 
 ### Generate your own `.gitignore` file with gitignore.io
 
-[gitignore.io](http://gitignore.io) is a great tool, based on the official [GitHub/gitignore](https://github.com/github/gitignore) repo. You can generate a perfect `.gitignore` file simply by listing the technologies you use in your project.
+[gitignore.io](https://www.toptal.com/developers/gitignore) is a great tool, based on the official [GitHub/gitignore](https://github.com/github/gitignore) repo. You can generate a perfect `.gitignore` file simply by listing the technologies you use in your project.
 
 The website offers an easy-to-use interface, but if (like me) you want to show off, you can use the following Git alias in your configuration:
 

@@ -14,13 +14,13 @@ The project's live update was held for the second time this year and [streamed l
 
 Safe to say, this was one of the best, if not the best, live updates we ever held. During February's event, we had a chance to see one of the most popular PrestaShop community projects. [Integration between PrestaShop and Vue Storefront](https://vuestorefront.io/blog/prestashop-integration-with-vue-storefront) created by [BinShops](https://www.binshops.com/prestashop-api).
 
-That was not all! The following demo about the [faceted search module](https://github.com/PrestaShop/ps_facetedsearch/releases/) presented by Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox)) was something that the community has wanted to see for a long time. Starting with version 3.11, you can filter products not only on the category pages but also on the new products, price drops, and bestsellers. There is also support for filtering search results which is now in the experimental phase.
+That was not all! The following demo about the [faceted search module](https://github.com/PrestaShop/ps_facetedsearch/releases/) presented by Daniel Hlavacek ([@Hlavtox](https://github.com/Hlavtox)) was something the community wanted to see for a long time. Starting with version 3.11, you can filter products not only on the category pages but also on new products, price drops, and bestsellers. There is also support for filtering search results which is now in the experimental phase.
 
-Last but not least, a cherry on the cake! Overview of the new product page, which is coming to PrestaShop 8.1. It was created from scratch with hundreds of improvements, new features, and bug fixes. This new page addresses merchants' feedback: revamped combinations management, a new way of working with multi-store, and much more.
+Last but not least, the new product page overview, coming to PrestaShop 8.1, was like the cherry on top. It was created from scratch with hundreds of improvements, new features, and bug fixes. This new page addresses merchants' feedback: revamped combinations management, a new way of working with multi-store, and much more.
 
 You can watch parts you're interested in using the links below.
 
-- [00:00](https://www.youtube.com/watch?v=XguCHCNlthA) Beginning of the session: the introduction
+- [00:00](https://www.youtube.com/watch?v=XguCHCNlthA) Beginning of the session: introduction
 - [02:41](https://youtu.be/XguCHCNlthA?t=161) Project news: PrestaShop 8.1 feature freeze
 - [09:34](https://youtu.be/XguCHCNlthA?t=574) Demo: PrestaShop x Vue Storefront integration, by [@samberrry](https://github.com/samberrry)
 - [29:57](https://youtu.be/XguCHCNlthA?t=1797) Demo: Evolution of the faceted search module, by [@Hlavtox](https://github.com/Hlavtox)

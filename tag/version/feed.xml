@@ -6,7 +6,18 @@
     <description>Recent content in version on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Feb 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1 beta is open for feedback!</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-beta-release/</link>
+      <pubDate>Fri, 17 Feb 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-beta-release/</guid>
+      <description>The beta version of PrestaShop 8.1 is now ready for you to test!
+We’re delighted to announce that PrestaShop 8.1 has reached the beta stage. PrestaShop 8.1 is still in development, but we hope you will help us test this release so we can have the best quality release possible, available for everyone, as soon as possible!
+Test PrestaShop 8.1.0 beta 1 now! Version 8.1 fixes over 30 bugs found in the previous release and introduces many improvements and new features.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1 is now in feature freeze</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-feature-freeze/</link>
@@ -157,18 +168,6 @@ The signature of PrestaShop\PrestaShop\Core\Translation\Storage\Extractor\Legacy
       
       <guid>https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/</guid>
       <description>Five years ago, PrestaShop 1.7 was released to the world, introducing Symfony, the Classic theme and child theme features, interface improvements, and so much more. With each one of the eight minor versions that followed, 1.7 kept on growing both in features and stability. Its maturity is recognized by its success: with over 170,000 live shops detected at the time of writing, it’s the most popular PrestaShop version used in production shops on the web.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.8.2</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-1-7-8-2-maintenance-release/</link>
-      <pubDate>Tue, 07 Dec 2021 14:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-1-7-8-2-maintenance-release/</guid>
-      <description>The ongoing work on security for PrestaShop software continues. We have identified and fixed a new security issue, it has been decided to deliver a new maintenance release for 1.7.8.X branch.
-This release also fixes 1 regression reported on version 1.7.8.X.
-We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
-Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forget to upgrade it.</description>
     </item>
     
   </channel>

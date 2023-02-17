@@ -13,7 +13,7 @@ tags:
 - beta
 - minor
 - releases
-- “8.1”
+- "8.1"
 ---
 
 The beta version of PrestaShop 8.1 is now ready for you to test!
@@ -56,7 +56,7 @@ After months of intensive work, the new version of this page is now available fo
 
 The changes made in the new product page are not only about merchants. Thanks to the complete rework of the page, developers have [new and powerful means to customize it](https://github.com/PrestaShop/example-modules/tree/master/demoproductform).
 
-The new product page is now enabled by default for new shops, but can be disabled using the dedicated toggle in the “Experimental features” section. Whether it is kept on by default for the final release depends on your feedback!
+The new product page is now enabled by default for new shops, but can be disabled using the dedicated toggle in the "Experimental features" section. Whether it is kept on by default for the final release depends on your feedback!
 
 An article showing the full overview of the product page is coming soon to the build blog. For now, I recommend you [watch the demo from our last Live Update](https://youtu.be/XguCHCNlthA?t=2725).
 {{< youtube id="XguCHCNlthA?start=2728" >}}
@@ -81,7 +81,7 @@ This feature is only available on the new product page.
 ### Better control over product availability
 
 Another improvement worth mentioning is [the enhanced configuration for inactive products](https://github.com/PrestaShop/PrestaShop/pull/29720).
-In the past, every product had a hardcoded 404 redirection setting as the default behavior. To change the behavior for all products, users would have to run a database query or go through the process manually. In PrestaShop 8.1, a new field has been added to the settings, allowing users to configure this behavior more easily by setting a default value: for example, “410 Gone” for all the inactive products. It is, of course, still possible to customize the settings for each product individually.
+In the past, every product had a hardcoded 404 redirection setting as the default behavior. To change the behavior for all products, users would have to run a database query or go through the process manually. In PrestaShop 8.1, a new field has been added to the settings, allowing users to configure this behavior more easily by setting a default value: for example, "410 Gone" for all the inactive products. It is, of course, still possible to customize the settings for each product individually.
 
 Users can set their desired HTTP response depending on their SEO strategy. For example, some users may want to keep sending a 200 response and keep the products indexed, while others may want to send a 410 response to tell Google to remove the product from the index.
 
@@ -130,8 +130,8 @@ As with every big release, this version includes new Hooks and many other modifi
 - [[FO] Wrong datas in order return with multiple products](https://github.com/PrestaShop/PrestaShop/issues/29839)
 - [BO - Bad icon display on left menu in French or another long language](https://github.com/PrestaShop/PrestaShop/issues/29826)
 - [BO - Modules - Titles & subtitles are too close on any configure module's page](https://github.com/PrestaShop/PrestaShop/issues/29825)
-- [APIS08 - Display the lists of authorized applications in the page “Authorization server”](https://github.com/PrestaShop/PrestaShop/issues/29810)
-- [APIS07 - Add “Authorization server” in the side menu of the BO](https://github.com/PrestaShop/PrestaShop/issues/29809)
+- [APIS08 - Display the lists of authorized applications in the page "Authorization server"](https://github.com/PrestaShop/PrestaShop/issues/29810)
+- [APIS07 - Add "Authorization server" in the side menu of the BO](https://github.com/PrestaShop/PrestaShop/issues/29809)
 - [APIS04 - Choose an Authorization server supporting OAuth2](https://github.com/PrestaShop/PrestaShop/issues/29786)
 - [APIS05 - Implement the Client Credential Grant Flow](https://github.com/PrestaShop/PrestaShop/issues/29774)
 - [APIS01 - Implement a CQRS based API endpoint to allow API security testing](https://github.com/PrestaShop/PrestaShop/issues/29769)

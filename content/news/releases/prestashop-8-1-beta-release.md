@@ -55,14 +55,14 @@ After months of intensive work, the new version of this page is now available fo
 
 The changes made in the new product page are not only about merchants. Thanks to the complete rework of the page, developers have [new and powerful means to customize it](https://github.com/PrestaShop/example-modules/tree/master/demoproductform).
 
-The new product page is now enabled by default for new shops, but can be disabled using the dedicated toggle in the “Experimental features” section. Whether it is kept on by default for the final release depends on your feedback!.
+The new product page is now enabled by default for new shops, but can be disabled using the dedicated toggle in the “Experimental features” section. Whether it is kept on by default for the final release depends on your feedback!
 
 An article showing the full overview of the product page is coming soon to the build blog. For now, I recommend you [watch the demo from our last Live Update](https://youtu.be/XguCHCNlthA?t=2725).
 {{< youtube id="XguCHCNlthA?start=2728" >}}
 
 ### Multiple image format generation
 
-Version 8.1 allows users to convert existing images to WebP and the newly-supported format Avif. Images in formats other from JPEG are now saved with their appropriate extension, like .webp for WebP, .png for PNG, and so on.
+Version 8.1 allows users to convert existing images to WebP and the newly-supported format Avif. Images in formats other than JPEG are now saved with their appropriate extension, like .webp for WebP, .png for PNG, and so on.
 
 This new release also introduces support for multiple image format generation, allowing browsers to choose the best format for the browser.
 This feature requires some extra work to have it working on your theme. You can check [this PR from the `classic` theme](https://github.com/PrestaShop/classic-theme/pull/103) repository implementing this feature.
@@ -71,7 +71,7 @@ Please note that this feature is still considered experimental, and to access it
 
 ### Manage availability labels for each combination separately
 
-Starting from PrestaSho 8.1, users can set dedicated text informing about product availability for each combination of products. Until version 8.0, users could only set it up on the product level. PrestaShop 8.1 allows you to change it for combinations as well.
+Starting from PrestaShop 8.1, users can set dedicated text informing about product availability for each combination of products. Until version 8.0, users could only set it up on the product level. PrestaShop 8.1 allows you to change it for combinations as well.
 
 For example, a merchant selling a t-shirt in three combinations of sizes (S, M, L) can now set a different _available_later_ text for each size combination. This means they can inform customers that ordering size M will take 3 days to arrive, while size L is available on request and may take a month to deliver.
 
@@ -104,7 +104,7 @@ PrestaShop 8.1 simplifies Symfony service configuration for PrestaShop modules. 
 
 #### Miscellaneous
 
-As with every big release, this version includes new Hooks and many other modifications aim to improve the developer’s experience with PrestaShop. A [new page in the developer documentation is available](https://devdocs.prestashop-project.org/8/modules/core-updates/8.1/) informing about all notable changes in PrestaShop 8.1.
+As with every big release, this version includes new Hooks and many other modifications aimed to improve the developer’s experience with PrestaShop. A [new page in the developer documentation is available](https://devdocs.prestashop-project.org/8/modules/core-updates/8.1/) informing about all notable changes in PrestaShop 8.1.
 
 
 ## Issues involved in the milestone 8.1.0

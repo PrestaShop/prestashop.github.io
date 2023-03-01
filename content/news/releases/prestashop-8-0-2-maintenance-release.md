@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.0.2 is available
 subtitle: Second maintenance version of the 8.0.x branch is available
-date: 2023-02-29
+date: 2023-02-28
 authors: [ PrestaShop ]
 image: /assets/images/2023/02/banner_8.0.2_1200x627.png
 opengraph_image: /assets/images/2023/02/banner_8.0.2_1200x627.png
@@ -20,9 +20,7 @@ The second patch version for PrestaShop 8 is now available to download!
 
 ![8.0.2 is available!](/assets/images/2023/02/banner_8.0.2_1534x424.png)
 
-[wip]
-
-In this patch, you can find almost [20 bug fixes](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.0.2+label%3A%22Bug+fix%22+).
+Version 8.0.2 is available! In this patch, you can find almost [20 bug fixes](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.0.2+label%3A%22Bug+fix%22+). There were several noteworthy issues addressed in the milestone 8.0.2 of PrestaShop. The upgrade mechanism had a problem where it couldn't check if the PHP session had started on some webservers, which was reported by many community members. Additionally, significant problems with web services were resolved, including the inability to create new customers. Another noteworthy fix was made for enabling themes that use Symfony routes for their modules, which was reported by a community member. Finally, there were several under-the-hood fixes and a new version of [Distribution API client](https://github.com/PrestaShop/ps_distributionapiclient/releases/tag/v1.0.3) released to enhance the module upgrade process.
 
 It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. You can upgrade to the latest version using 1-Click Upgrade [v4.15.0](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.15.0).
 
@@ -53,7 +51,7 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 - [Guests were detected as a logged-in user](https://github.com/PrestaShop/PrestaShop/issues/30991)
 - [It was impossible to add a first address with error "Invalid postcode" in some circumstances](https://github.com/PrestaShop/PrestaShop/issues/30973)
 
-### Webservoces
+### Webservices
 
 - [The category was not well-formed from the Webservices](https://github.com/PrestaShop/PrestaShop/issues/30987)
 - [Webservice was not working properly on PrestaShop 8.0 with PHP 8.1](https://github.com/PrestaShop/PrestaShop/issues/30165)

@@ -75,7 +75,7 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 
 Contributors to this patch version, from both the project members and the community at large:
 
-Alexandre Hellin, Boubker Bribri, Daniel Hlavacek, Ibrahima Sow, Krystian Podemski, Lea Delin, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, Thomas Baccelli
+Alexandre Hellin, Boubker Bribri, Daniel Hlavacek, Ibrahima Sow, Krystian Podemski, Léa Delin, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, Thomas Baccelli
 
 Thank you!
 

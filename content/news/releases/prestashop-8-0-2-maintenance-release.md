@@ -50,7 +50,7 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 
 ### Front office
 
-- [Guest were detected as logged user](https://github.com/PrestaShop/PrestaShop/issues/30991)
+- [Guests were detected as a logged-in user](https://github.com/PrestaShop/PrestaShop/issues/30991)
 - [It was impossible to add a first address with error "Invalid postcode" in some circumstances](https://github.com/PrestaShop/PrestaShop/issues/30973)
 
 ### Webservoces

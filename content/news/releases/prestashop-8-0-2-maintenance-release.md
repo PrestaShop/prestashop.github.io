@@ -20,7 +20,9 @@ The second patch version for PrestaShop 8 is now available to download!
 
 ![8.0.2 is available!](/assets/images/2023/02/banner_8.0.2_1534x424.png)
 
-Version 8.0.2 is available! In this patch, you can find almost [20 bug fixes](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.0.2+label%3A%22Bug+fix%22+). There were several noteworthy issues addressed in the milestone 8.0.2 of PrestaShop. The upgrade mechanism had a problem where it couldn't check if the PHP session had started on some webservers, which was reported by many community members. Additionally, significant problems with web services were resolved, including the inability to create new customers. Another noteworthy fix was made for enabling themes that use Symfony routes for their modules, which was reported by a community member. Finally, there were several under-the-hood fixes and a new version of [Distribution API client](https://github.com/PrestaShop/ps_distributionapiclient/releases/tag/v1.0.3) released to enhance the module upgrade process.
+Version 8.0.2 is available! In this patch, you can find almost [20 bug fixes](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.0.2+label%3A%22Bug+fix%22+). As a patch version, 8.0.2 brings further goodness and stability to the 8.0 branch.
+
+There were several noteworthy issues addressed in the milestone 8.0.2 of PrestaShop. The upgrade mechanism had a problem where it couldn't check if the PHP session had started on some webservers, which was reported by many community members. Additionally, significant problems with web services were resolved, including the inability to create new customers. Another noteworthy fix was made for enabling themes that use Symfony routes for their modules, which was reported by a community member. Finally, there were several under-the-hood fixes and a new version of [Distribution API client](https://github.com/PrestaShop/ps_distributionapiclient/releases/tag/v1.0.3) released to enhance the module upgrade process.
 
 It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. You can upgrade to the latest version using 1-Click Upgrade [v4.15.0](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.15.0).
 
@@ -73,7 +75,7 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 
 Contributors to this patch version, from both the project members and the community at large:
 
-[contributors list]
+Alexandre Hellin, Boubker Bribri, Daniel Hlavacek, Ibrahima Sow, Krystian Podemski, Lea Delin, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, Thomas Baccelli
 
 Thank you!
 

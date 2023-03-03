@@ -3,7 +3,7 @@ layout: post
 aliases: ["/news/do-you-speak-prestashop-february-2023"]
 title: "Do you speak PrestaShop? – February 2023 edition"
 subtitle: "Where you'll learn that the top translators page is back"
-date: 2023-03-06
+date: 2023-03-03
 authors: [LéaDelin]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

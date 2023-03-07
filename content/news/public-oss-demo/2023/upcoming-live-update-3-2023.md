@@ -10,7 +10,7 @@ tags: [contribute, event, community, live-update]
 
 The third Live Update for the PrestaShop Project will happen on **Wednesday, March 8th, 2023** at [4 pm (Paris time)](https://time.is/1600_8_Mar_2023_in_Paris) on [YouTube](https://www.youtube.com/watch?v=wSNbRVRjAWk)!
 
-Tomorrow we'll discuss what happened in the project in February, We'll show you recent changes in the developer documentation, and some of the new features from PrestaShop 8.1.
+Tomorrow we'll discuss what happened in the project in February. We'll show you recent changes in the developer documentation, and some of the new features from PrestaShop 8.1.
 
 At the end of every meeting, there is a Q&A session. You can ask your questions beforehand.
 **If you have some, about things related to the open source project**, feel free to ask [using this form](https://forms.gle/FWazuZnXBtFPauFZ7). They will be answered during the Q&A session.

@@ -6,7 +6,18 @@
     <description>Recent content in patch on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Jan 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Mar 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.0.2 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-2-maintenance-release/</link>
+      <pubDate>Mon, 13 Mar 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-2-maintenance-release/</guid>
+      <description>The second patch version for PrestaShop 8 is now available to download!
+Version 8.0.2 is available! In this patch, you can find over 20 bug fixes. As a patch version, 8.0.2 brings further goodness and stability to the 8.0 branch.
+There were several noteworthy issues addressed in PrestaShop&amp;rsquo;s 8.0.2 milestone. The upgrade mechanism had a problem where it couldn&amp;rsquo;t check if the PHP session had started on some webservers, which was reported by many community members.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.0.1 is available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-1-maintenance-release/</link>
@@ -166,18 +177,6 @@ Add new order page - Gift message cannot be removed View order page - An excepti
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
 Main fixes Back-office
 &amp;ldquo;Expand all&amp;rdquo; button of ps_facetedsearch not working When a cart rule with a free gift and percentage discount is added to the cart, the discount amount displayed is incorrect Product customization file cannot be downloaded if the customization label field contains a dot The gift block in the &amp;lsquo;Add an order&amp;rsquo; page is not updated when changing the carrier When filtering products by category, the chosen category is not selected An error is displayed when deleting an order status with French language Tracking number is not a link on the Order List page Notification of new orders are not displayed An alert is displayed when updating the product quantity in the order page with multistore Front-office</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.7.3</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-1-7-7-3-maintenance-release/</link>
-      <pubDate>Tue, 30 Mar 2021 14:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-1-7-7-3-maintenance-release/</guid>
-      <description>PrestaShop 1.7.7.3 is now available. This maintenance release fixes 10 bugs reported on previous 1.7.7 versions, as well as one security issue.
-We suggest upgrading your shop quickly in order to benefit from these changes. Of course, don’t forget to make a backup before.
-Reminder: the 1-Click Upgrade module’s latest version is v4.12.0, don’t forget to upgrade it before using it.
-Main fixes Below are listed some main regressions we fixed in this version:</description>
     </item>
     
   </channel>

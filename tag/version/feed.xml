@@ -6,7 +6,18 @@
     <description>Recent content in version on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Feb 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Mar 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.0.2 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-2-maintenance-release/</link>
+      <pubDate>Mon, 13 Mar 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-2-maintenance-release/</guid>
+      <description>The second patch version for PrestaShop 8 is now available to download!
+Version 8.0.2 is available! In this patch, you can find over 20 bug fixes. As a patch version, 8.0.2 brings further goodness and stability to the 8.0 branch.
+There were several noteworthy issues addressed in PrestaShop&amp;rsquo;s 8.0.2 milestone. The upgrade mechanism had a problem where it couldn&amp;rsquo;t check if the PHP session had started on some webservers, which was reported by many community members.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1 beta is open for feedback!</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-beta-release/</link>
@@ -159,15 +170,6 @@ Bug fixes and improvements Reverts the integration of Symfony kernel in the webs
       <description>PrestaShop 1.7.8.3 is now available. This maintenance release fixes 25 bugs and 1 security issue since the 1.7.8.2 release.
 Note that this version introduces two backward-incompatible changes:
 The signature of PrestaShop\PrestaShop\Core\Translation\Storage\Extractor\LegacyModuleExtractor::__construct() has been modified to allow excluding directories from the scan (see the related Pull Request for details). This component is used by the Back Office&amp;rsquo;s translation interface. Themes based on Classic might need to be adapted following this change to fix the layout of the menu and search bar on tablet devices.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop beyond 1.7</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/</link>
-      <pubDate>Tue, 14 Dec 2021 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/</guid>
-      <description>Five years ago, PrestaShop 1.7 was released to the world, introducing Symfony, the Classic theme and child theme features, interface improvements, and so much more. With each one of the eight minor versions that followed, 1.7 kept on growing both in features and stability. Its maturity is recognized by its success: with over 170,000 live shops detected at the time of writing, it’s the most popular PrestaShop version used in production shops on the web.</description>
     </item>
     
   </channel>

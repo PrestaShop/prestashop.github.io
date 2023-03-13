@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.0.2 is available
 subtitle: Second maintenance version of the 8.0.x branch is available
-date: 2023-02-28
+date: 2023-03-13
 authors: [ PrestaShop ]
 image: /assets/images/2023/02/banner_8.0.2_1200x627.png
 opengraph_image: /assets/images/2023/02/banner_8.0.2_1200x627.png

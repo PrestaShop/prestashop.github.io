@@ -47,6 +47,8 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 - [HTML tags are not taken into accoung in some pages](https://github.com/PrestaShop/PrestaShop/issues/29940)
 - [An exception was thrown when import a file with non .csv extension and download the csv created file](https://github.com/PrestaShop/PrestaShop/issues/28761)
 - [The alternative currency symbol is not displayed in the product V2 & V1](https://github.com/PrestaShop/PrestaShop/issues/28430)
+- [Icon fonts were not properly preloaded in back office and it is now fixed](https://github.com/PrestaShop/PrestaShop/pull/31603)
+- [Fixed an exception when adding a bad query with an alias in a wrong position (only PHP 8+)](https://github.com/PrestaShop/PrestaShop/issues/31551)
 
 ### Front office
 

@@ -44,7 +44,7 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 - [An exception was displayed in all migrated page after deleting language used by the employee](https://github.com/PrestaShop/PrestaShop/issues/30091)
 - [Enabling new theme was failing due to routes caching](https://github.com/PrestaShop/PrestaShop/issues/30011)
 - [The popup for data import was not well escape](https://github.com/PrestaShop/PrestaShop/issues/29959)
-- [HTML tags are not taken into accoung in some pages](https://github.com/PrestaShop/PrestaShop/issues/29940)
+- [HTML tags are not taken into account in some pages](https://github.com/PrestaShop/PrestaShop/issues/29940)
 - [An exception was thrown when import a file with non .csv extension and download the csv created file](https://github.com/PrestaShop/PrestaShop/issues/28761)
 - [The alternative currency symbol is not displayed in the product V2 & V1](https://github.com/PrestaShop/PrestaShop/issues/28430)
 - [Icon fonts were not properly preloaded in back office and it is now fixed](https://github.com/PrestaShop/PrestaShop/pull/31603)

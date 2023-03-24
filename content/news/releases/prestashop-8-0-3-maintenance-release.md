@@ -20,7 +20,7 @@ The third patch version for PrestaShop 8 is now available to download!
 
 ![8.0.3 is available!](/assets/images/2023/03/banner_8.0.3_1534x424.png)
 
-In the newest patch version for PrestaShop 8 you can find [security improvement](https://github.com/PrestaShop/PrestaShop/pull/31647), and two fixes, one related to [inaccurate wording in web services configuration](https://github.com/PrestaShop/PrestaShop/pull/31772), one which [fixes the link to the user documentation in the installer](https://github.com/PrestaShop/PrestaShop/pull/31787).
+In the newest patch version for PrestaShop 8 you can find [security improvement](https://github.com/PrestaShop/PrestaShop/pull/31647), and three fixes, one related to [inaccurate wording in web services configuration](https://github.com/PrestaShop/PrestaShop/pull/31772), one which [fixes the link to the user documentation in the installer](https://github.com/PrestaShop/PrestaShop/pull/31787), and one [significant fix which improves how clearing the cache behaves](https://github.com/PrestaShop/PrestaShop/pull/31820) in the software.
 
 Apart from the things mentioned above, [from now](https://github.com/PrestaShop/PrestaShop/pull/31697), in the installer, you can find the "Privacy note" section explaining possible telemetry included in modules installed in PrestaShop with the link to the new ["Data transparency"](https://www.prestashop-project.org/data-transparency/) page on the project's website. You can read [this announcement](#) for more information.
 

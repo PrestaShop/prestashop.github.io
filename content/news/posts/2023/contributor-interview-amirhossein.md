@@ -36,7 +36,7 @@ Fasleaval, on the other hand, is an agency specializing in PrestaShop products a
 
 When I co-founded Gruccia in 2015, there was little to no training available to work with PrestaShop (at least in Persian). I remember that it was very difficult for me to get to know PrestaShop and start using it. From there, I promised myself that I would provide training for others – I was, myself, learning to work with PrestaShop at the same time.
 
-And that’s how, less than a year later, Fasleaval was founded. We started uploading free PrestaShop training videos and I guess many people have used those videos so far to start their own e-commerce by PrestaShop.
+And that’s how, less than a year later, Fasleaval was founded. We started uploading free PrestaShop training videos and I guess many people have used those videos so far to start their own ecommerce by PrestaShop.
 
 A bit later, I signed up for the Ambassador Program. Since then, I have been the Ambassador of PrestaShop in Iran.
 

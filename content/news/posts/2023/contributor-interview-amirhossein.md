@@ -32,7 +32,7 @@ Hello! I’m Amirhossein Rezazadeh. I was born in 1987 in Tehran, Iran. I studie
 
 I am currently CEO [Chief Executive Officer] at Gruccia. We are 18 people and we have more than 27000 SKUs [Stock Keeping Units]. Gruccia is an ecommerce company specializing in underwear, socks, and some other related categories, and it uses PrestaShop.
 
-Fasleaval, on the other hand, is an agency specializing in PrestaShop products and services. We have provided tens of hours of [free training videos](https://fasleaval.com/blog/آموزش-پرستاشاپ-رایگان-ویدیوی) from downloading PrestaShop up to some advanced configurations. We also offer some themes and modules.
+Fasleaval, on the other hand, is an agency specializing in PrestaShop products and services. We have provided tens of hours of [free training videos](https://fasleaval.com/blog/آموزش-پرستاشاپ-رایگان-ویدیوی) from downloading PrestaShop up to some more advanced configurations. We also offer some themes and modules.
 
 When I co-founded Gruccia in 2015, there was little to no training available to work with PrestaShop (at least in Persian). I remember that it was very difficult for me to get to know PrestaShop and start using it. From there, I promised myself that I would provide training for others – I was, myself, learning to work with PrestaShop at the same time.
 

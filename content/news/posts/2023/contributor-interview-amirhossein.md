@@ -47,7 +47,7 @@ There are some other areas in PrestaShop in which I have volunteered:
 -   Translating the [PrestaShop Documentation](https://docs.prestashop-project.org/1.7-documentation/v/farsi/))
     
 
-I have also helped to teach PrestaShop in high schools in Iran. There’s one chapter in textbooks dedicated to PrestaShop and tens of thousands of students learn to use PrestaShop every year since 2018.
+I have also helped to teach PrestaShop in high schools in Iran. There’s one chapter in textbooks dedicated to PrestaShop and tens of thousands of students learn how to use PrestaShop every year since 2018.
 
 I think PrestaShop is a proper platform to start and grow an ecommerce business. It has helped me create one and I try my best to let other people know PrestaShop is one of the best options for small-to-medium companies to take their business online.
 

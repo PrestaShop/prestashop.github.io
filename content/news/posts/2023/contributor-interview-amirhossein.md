@@ -6,7 +6,7 @@ subtitle: "Discover the faces behind the commits"
 date: 2023-04-06
 authors: [LéaDelin]
 icon: icon-world
-image: static/assets/images/2023/03/amirhossein.png
+image: static/assets/images/2023/amirhossein.png
 
 tags:
 - contribute
@@ -20,7 +20,7 @@ tags:
 
 **For the first interview of 2023, I interviewed Amirhossein, aka [AmirRzd](https://crowdin.com/profile/AmirRzd)**.
 
-<img style="border: 1px solid #CCC; float: center; margin: 0 1em 1em 0;" width="517" height="388" src="static/assets/images/2023/03/amirhossein.png">
+<img style="border: 1px solid #CCC; float: center; margin: 0 1em 1em 0;" width="517" height="388" src="static/assets/images/2023/amirhossein.png">
 
 **Ranked 31st on the [top translator page](https://translators.prestashop.com/), Amirhossein is a translator and proofreader on the Persian project.**
 

@@ -36,11 +36,13 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 - [[Spike] Study cache managment during modules installation](https://github.com/PrestaShop/PrestaShop/issues/31562)
 - [BO - WS - Text helper is confusing](https://github.com/PrestaShop/PrestaShop/issues/31423)
 
+You can go to the [release page](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.3) to see a full changelog.
+
 ## Acknowledgments
 
 Contributors to this patch version, from both the project members and the community at large:
 
-TBD
+jolelievre, MathiasReker, boherm, matthieu-rolland, lartist, Progi1984
 
 Thank you!
 

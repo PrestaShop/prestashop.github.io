@@ -20,9 +20,9 @@ The third patch version for PrestaShop 8 is now available to download!
 
 ![8.0.3 is available!](/assets/images/2023/03/banner_8.0.3_1534x424.png)
 
-It was a rather bumpy road at the end because of the issues we found during the release process, but here it is! In the newest patch version for PrestaShop 8 you can find a [security improvement](https://github.com/PrestaShop/PrestaShop/pull/31647), and three fixes: one related to [inaccurate wording in web services configuration](https://github.com/PrestaShop/PrestaShop/pull/31772), one which [fixes the link to the user documentation in the installer](https://github.com/PrestaShop/PrestaShop/pull/31787), and one [significant fix which improves how clearing the cache behaves](https://github.com/PrestaShop/PrestaShop/pull/31820) in the software.
+It was a rather bumpy road at the end because of issues we found during the release process, but here it is! In the newest patch version for PrestaShop 8 you can find a [security improvement](https://github.com/PrestaShop/PrestaShop/pull/31647), and three fixes: one related to [inaccurate wording in web services configuration](https://github.com/PrestaShop/PrestaShop/pull/31772), one which [fixes the link to the user documentation in the installer](https://github.com/PrestaShop/PrestaShop/pull/31787), and one [significant fix which improves how clearing the cache behaves](https://github.com/PrestaShop/PrestaShop/pull/31820) in the software.
 
-Apart from the things mentioned above, [from now](https://github.com/PrestaShop/PrestaShop/pull/31697), in the installer, you can find the "Privacy note" section explaining the potential telemetry included in modules installed in PrestaShop, with the link to the new ["Data transparency"](https://www.prestashop-project.org/data-transparency/) page on the project's website. You can read [this announcement](https://github.com/PrestaShop/PrestaShop/discussions/31906) for more information.
+Apart from the things mentioned above, [from now](https://github.com/PrestaShop/PrestaShop/pull/31697), in the installer, you can find the "Privacy note" section explaining the potential telemetry included in modules installed in PrestaShop, with the link to the new ["data transparency"](https://www.prestashop-project.org/data-transparency/) page on the project's website. You can read [this announcement](https://github.com/PrestaShop/PrestaShop/discussions/31906) for more information.
 
 It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. You can upgrade to the latest version using the 1-Click Upgrade [v4.15.0](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.15.0).
 
@@ -31,7 +31,7 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 ## Issues involved in the milestone 8.0.3
 
 - [Autoupgrade - 8.0.1 to 8.0.3 break the FO](https://github.com/PrestaShop/PrestaShop/issues/31945)
-- [The user is alerted during the installation of the module that data is being saved. The user can disable the tracker before installation.](https://github.com/PrestaShop/PrestaShop/issues/31625) and [#31627](https://github.com/PrestaShop/PrestaShop/issues/31627)
+- [The user is alerted during the installation of the module that data is being saved. The user can disable the tracker before installation.](https://github.com/PrestaShop/PrestaShop/issues/31625) And [#31627](https://github.com/PrestaShop/PrestaShop/issues/31627).
 - [Study cache managment during modules installation](https://github.com/PrestaShop/PrestaShop/issues/31562)
 - [The key's text helper in the Webservice page is confusing regarding the expected length](https://github.com/PrestaShop/PrestaShop/issues/31423)
 

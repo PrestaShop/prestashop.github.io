@@ -6,7 +6,17 @@
     <description>Recent content in patch on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Mar 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.0.3 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</guid>
+      <description>The third patch version for PrestaShop 8 is now available to download!
+It was a rather bumpy road at the end because of issues we found during the release process, but here it is! In the newest patch version for PrestaShop 8 you can find a security improvement, and three fixes: one related to inaccurate wording in web services configuration, one which fixes the link to the user documentation in the installer, and one significant fix which improves how clearing the cache behaves in the software.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.0.2 is available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-2-maintenance-release/</link>
@@ -165,18 +175,6 @@ Orders page - an exception is displayed when deleting a customer or a guest Smar
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
 Main fixes Back-office
 Add new order page - Gift message cannot be removed View order page - An exception is displayed when we add a discount with space in the name Missing menu icon on mobile in dashboard page Order message with the same title is not displayed in the &amp;ldquo;order_message&amp;rdquo; list Orders list - The tracking URL is NOK in the preview order Wrong price in the document list for the delivery slip in the admin order page View order page - The order carrier ID is invalid Error when making a delete sql request Wrong escape in ps_1771_update_customer_note() Order page - An error is displayed when changing the addresses for the second time Order page - Ajax issue - The Discount Block is not automatically updated when updating or adding a product In module configuration pages, the &amp;ldquo;Activate module for this shop context&amp;rdquo; checkbox does not work Orders page - missing DNI number in some countries when the DNI is not required Order page - when adding a product which has an ecotax to an old order, the base price is NOK With Safari when creating a catalog price rule the wrong brand is selected View order page - Customized product cannot be added to multi-invoice Front-office</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.7.4</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-1-7-7-4-maintenance-release/</link>
-      <pubDate>Mon, 03 May 2021 12:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-1-7-7-4-maintenance-release/</guid>
-      <description>PrestaShop 1.7.7.4 is now available. This maintenance release fixes 13 issues reported since the 1.7.7.0.
-We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don&amp;rsquo;t forget to backup before.
-Main fixes Back-office
-&amp;ldquo;Expand all&amp;rdquo; button of ps_facetedsearch not working When a cart rule with a free gift and percentage discount is added to the cart, the discount amount displayed is incorrect Product customization file cannot be downloaded if the customization label field contains a dot The gift block in the &amp;lsquo;Add an order&amp;rsquo; page is not updated when changing the carrier When filtering products by category, the chosen category is not selected An error is displayed when deleting an order status with French language Tracking number is not a link on the Order List page Notification of new orders are not displayed An alert is displayed when updating the product quantity in the order page with multistore Front-office</description>
     </item>
     
   </channel>

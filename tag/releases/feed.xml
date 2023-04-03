@@ -6,7 +6,17 @@
     <description>Recent content in releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Mar 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.0.3 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</guid>
+      <description>The third patch version for PrestaShop 8 is now available to download!
+It was a rather bumpy road at the end because of issues we found during the release process, but here it is! In the newest patch version for PrestaShop 8 you can find a security improvement, and three fixes: one related to inaccurate wording in web services configuration, one which fixes the link to the user documentation in the installer, and one significant fix which improves how clearing the cache behaves in the software.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.0.2 is available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-2-maintenance-release/</link>
@@ -161,17 +171,6 @@ The signature of PrestaShop\PrestaShop\Core\Translation\Storage\Extractor\Legacy
 This release also fixes 1 regression reported on version 1.7.8.X.
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
 Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forget to upgrade it.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.8.1</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-1-7-8-1-maintenance-release/</link>
-      <pubDate>Mon, 15 Nov 2021 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-1-7-8-1-maintenance-release/</guid>
-      <description>PrestaShop 1.7.8.1 is now available. This maintenance release fixes 44 regressions reported since the initial 1.7.8.0 release.
-We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
-Back office regressions Stock page - If a product attribute contains a comma, it is not displayed Dashboard page - Selecting a date range doesn&amp;rsquo;t work and causes a jquery error Modules page - Cannot install any module when the employee language is spanish Performance page - Cannot change the settings in a single store context Customer view page - The pagination of the voucher block is not working SQL Manager page - SQL query return exception Invoices page - Longer buttons overflow their container on lower resolutions Localization Page - There is no confirmation modal when changing the default currency View supplier page - Unexpected error View customer page - Incorrect display of the address block Add/edit tax rule page - The state and the postal code fields are not aligned Add/edit category page - The browser is unable to show the error message on an hidden element Add/edit country page - The address format is badly displayed Add/edit customer group page - The &amp;ldquo;Category discount&amp;rdquo; part is misaligned Add/edit attribute and add/edit social title pages - The language dropdown is not well displayed when resizing the window Add/edit product page - When we try to delete all combinations, the warning modal is empty Edit supplier page - Unable to save &amp;ldquo;meta_keywords&amp;rdquo; field If using the multistore and while making a manual upgrade, a new line in ps_configuration is created for PS_VERSION_DB In the Credit slip, the Ecotax is displayed in the Tax details while it shouldn&amp;rsquo;t Orders regressions Order details page - While adding a discount, the modal is not well displayed Order details page - An exception is displayed when the status of the &amp;ldquo;merchandise return&amp;rdquo; is deleted Order details page - The errors while deleting a product are not displayed Order details page - Debug mode enabled - an exception is displayed when ordering a deleted product with a file customization Orders - Cannot extend the order grid query from a module Display regressions Buttons are not well displayed - part 1 Buttons are not well displayed - part 2 Buttons are not well displayed - part 3 Floating button over some elements on migrated pages preventing to save form Front office regressions Problem when adding images with different ratio After upgrade, theme must be updated to be able to pay into the final step Simple anchors don&amp;rsquo;t work on CMS page The add to cart button is not working when clicking on the cart icon Product disabled - An exception is displayed when changing combination or increasing/decreasing a quantity Product comment structured data AggregateRating isn&amp;rsquo;t working Shopping cart page - An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations Product structured data JSON-LD problem when price is not displayed An exception is displayed when a product added to the cart is transformed from simple product to a product with combinations Display regressions The product-flags are displayed in the same row with no space There is an horizontal scrollbar on the homepage under 991px and the carousel overflows the content The search button in the header is not responsive on mobile Featured product not well displayed with responsive Module regressions Bad display in autoupgrade module Ps_banner module fixed width and height value Acknowledgements Contributors to this patch version, from both the Core team and the community at large:</description>
     </item>
     
   </channel>

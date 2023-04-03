@@ -6,7 +6,17 @@
     <description>Recent content in 8.0 on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Mar 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/8.0/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/8.0/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.0.3 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</guid>
+      <description>The third patch version for PrestaShop 8 is now available to download!
+It was a rather bumpy road at the end because of issues we found during the release process, but here it is! In the newest patch version for PrestaShop 8 you can find a security improvement, and three fixes: one related to inaccurate wording in web services configuration, one which fixes the link to the user documentation in the installer, and one significant fix which improves how clearing the cache behaves in the software.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.0.2 is available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-2-maintenance-release/</link>

@@ -6,7 +6,17 @@
     <description>Recent content in version on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Mar 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.0.3 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</guid>
+      <description>The third patch version for PrestaShop 8 is now available to download!
+It was a rather bumpy road at the end because of issues we found during the release process, but here it is! In the newest patch version for PrestaShop 8 you can find a security improvement, and three fixes: one related to inaccurate wording in web services configuration, one which fixes the link to the user documentation in the installer, and one significant fix which improves how clearing the cache behaves in the software.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.0.2 is available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-2-maintenance-release/</link>
@@ -159,17 +169,6 @@ Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don&amp;r
 We suggest upgrading your store quickly to benefit from these bug fixes. Make sure to perform a full manual backup before, so you can roll back the upgrade if something goes wrong.
 Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don&amp;rsquo;t forget to upgrade it.
 Bug fixes and improvements Reverts the integration of Symfony kernel in the webservice dispatcher Update links to docs : docs.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.8.3</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-3-maintenance-release/</link>
-      <pubDate>Thu, 27 Jan 2022 10:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-3-maintenance-release/</guid>
-      <description>PrestaShop 1.7.8.3 is now available. This maintenance release fixes 25 bugs and 1 security issue since the 1.7.8.2 release.
-Note that this version introduces two backward-incompatible changes:
-The signature of PrestaShop\PrestaShop\Core\Translation\Storage\Extractor\LegacyModuleExtractor::__construct() has been modified to allow excluding directories from the scan (see the related Pull Request for details). This component is used by the Back Office&amp;rsquo;s translation interface. Themes based on Classic might need to be adapted following this change to fix the layout of the menu and search bar on tablet devices.</description>
     </item>
     
   </channel>

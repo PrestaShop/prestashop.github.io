@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.0.3 is available
 subtitle: Third maintenance version of the 8.0.x branch is available
-date: 2023-03-22
+date: 2023-04-03
 authors: [ PrestaShop ]
 image: /assets/images/2023/03/banner_8.0.3_1200x627.png
 opengraph_image: /assets/images/2023/03/banner_8.0.3_1200x627.png

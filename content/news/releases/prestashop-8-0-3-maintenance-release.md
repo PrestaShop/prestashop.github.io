@@ -31,10 +31,9 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 ## Issues involved in the milestone 8.0.3
 
 - [Autoupgrade - 8.0.1 to 8.0.3 break the FO](https://github.com/PrestaShop/PrestaShop/issues/31945)
-- [As a merchant I want to know what is tracked during modules installation (disable by env)](https://github.com/PrestaShop/PrestaShop/issues/31627)
-- [As a merchant I want to know what is tracked during the modules installation step (installer)](https://github.com/PrestaShop/PrestaShop/issues/31625)
+- [The user is alerted during the installation of the module that data is being saved. The user can disable the tracker before installation.](https://github.com/PrestaShop/PrestaShop/issues/31625) and [#31627](https://github.com/PrestaShop/PrestaShop/issues/31627)
 - [Study cache managment during modules installation](https://github.com/PrestaShop/PrestaShop/issues/31562)
-- [Web services: Text helper is confusing](https://github.com/PrestaShop/PrestaShop/issues/31423)
+- [The key's text helper in the Webservice page is confusing regarding the expected length](https://github.com/PrestaShop/PrestaShop/issues/31423)
 
 You can go to the [release page](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.3) to see a full changelog.
 

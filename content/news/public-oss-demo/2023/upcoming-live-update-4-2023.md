@@ -12,8 +12,8 @@ The fourth Live Update for the PrestaShop Project will happen on **Wednesday, Ap
 
 Tomorrow we'll discuss what's going on in the project, show you recent changes in the developer documentation, and, most importantly, [@eternoendless](https://github.com/eternoendless) will share exciting news about a project organization.
 
-Remember that at the end of every meeting, there is a Q&A session. You can ask your questions beforehand.
-**If you have some, about things related to the open source project**, feel free to ask [using this form](https://forms.gle/FWazuZnXBtFPauFZ7). They will be answered during the Q&A session.
+Remember that at the end of every meeting, there is a Q&A session. You can ask your questions during the presentation or beforehand.
+**If you have questions related to the open source project**, feel free to let us know in advance [using this form](https://forms.gle/FWazuZnXBtFPauFZ7). We will do our best to answer them during the Q&A session.
 
 {{< cta "https://www.youtube.com/watch?v=SVbAQ__A6ns" "info" >}}Join us on YouTube!{{< /cta >}}
 

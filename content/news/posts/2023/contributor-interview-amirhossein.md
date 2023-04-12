@@ -3,7 +3,7 @@ layout: post
 aliases: ["/news/contributor-interview-amirhossein"]
 title: "PrestaShop ambassador, merchant and contributor: meet AmirRzd"
 subtitle: "Discover the faces behind the commits"
-date: 2023-04-06
+date: 2023-04-12
 authors: [LéaDelin]
 icon: icon-world
 image: static/assets/images/2023/amirhossein.png

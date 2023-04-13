@@ -22,7 +22,7 @@ Dear developers,
 
 Last Friday maintainer [@pululuk](https://github.com/pululuk), helped by [@sowbiba](https://github.com/sowbiba) and many others built the ZIP archive for [PrestaShop 1.7.7.2](https://github.com/PrestaShop/PrestaShop/issues/22783) and delivered it to QA team for validation. This is the second time a PrestaShop release is built by someone who is not an employee of PrestaShop company! Congratulations [@pululuk](https://github.com/pululuk)!
 
-Another interesting news: thanks to the [awesome work](https://github.com/PrestaShop/autoupgrade/pull/377) of [@atomiix](https://github.com/atomiix), the upgrades between PrestaShop versions using the autoupgrade module are now being run every night and results can be looked at in the [Nightly build dashboard](https://nightly.prestashop.com/)
+Another interesting news: thanks to the [awesome work](https://github.com/PrestaShop/autoupgrade/pull/377) of [@atomiix](https://github.com/atomiix), the upgrades between PrestaShop versions using the autoupgrade module are now being run every night and results can be looked at in the [Nightly build dashboard](https://nightly.prestashop-project.org/)
 
 In the meantime, [@NeOMakinG](https://github.com/NeOMakinG) also upgraded the [jQuery version to v3.5 for Classic Theme and default Back Office theme](https://github.com/PrestaShop/PrestaShop/pull/23122).
 

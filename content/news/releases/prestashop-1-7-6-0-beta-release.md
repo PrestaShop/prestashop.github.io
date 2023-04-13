@@ -104,7 +104,7 @@ SEO optimization for combination products:
 -   Support of legacy translations of modules in Translations Manager of
     BO [\#11321](https://github.com/PrestaShop/PrestaShop/pull/11321)
 -   Support for translation in modules’ twig templates
--   Nightly builds and nightly board [https://nightly.prestashop.com/](https://nightly.prestashop.com/)
+-   Nightly builds and nightly board [https://nightly.prestashop-project.org/](https://nightly.prestashop-project.org/)
 -   Support of Doctrine for modules and annotated Entities (both Front
     and Back-office) [\#12564](https://github.com/PrestaShop/PrestaShop/pull/12564)
 -   Price computation are now covered by Integration tests powered by Behat (human-readable tests) [\#12634](https://github.com/PrestaShop/PrestaShop/pull/12634)

@@ -28,7 +28,7 @@ A quick look at the work done on 1.7.6:
 
 What a huge amount of work!
 
-If you can't wait for an Alpha build, don't forget that you can use the [nightly builds](https://nightly.prestashop.com/). And of course, test it with your infrastructure, your modules and themes, your data, your configuration. And then, please, let us know if you find something to fix: [open an issue on GitHub](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
+If you can't wait for an Alpha build, don't forget that you can use the [nightly builds](https://nightly.prestashop-project.org/). And of course, test it with your infrastructure, your modules and themes, your data, your configuration. And then, please, let us know if you find something to fix: [open an issue on GitHub](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
 
 
 ## A quick update about PrestaShop's GitHub issues and pull requests:

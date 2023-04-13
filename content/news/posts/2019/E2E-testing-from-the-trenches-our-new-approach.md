@@ -124,7 +124,7 @@ Installations and dependencies required:
 ### The new Nightly Builds & Tests Dashboard
 
 Aside from the classic tests, a new dashboard has been introduced recently with the automatic nightly builds. A report is joined when the testing suite was able to run. You can find it at this brand new URL:
-[https://nightly.prestashop.com/](https://nightly.prestashop.com/)
+[https://nightly.prestashop-project.org/](https://nightly.prestashop-project.org/)
 
 With a quick look, you can identify if tests have been done on a successful build, how much tests failed, and there is a link to download the entire report. Once a report is open in your browser, click on the left menu icon to use the filters. There, you can find code to improve, or tests to fix ;-)
 

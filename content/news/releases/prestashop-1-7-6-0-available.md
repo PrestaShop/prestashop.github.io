@@ -101,7 +101,7 @@ This minor version is our biggest since 1.7.1. Here is 1.7.6 in numbers:
 
 ### Technical improvements
 
-- Nightly builds and nightly board are [now available](https://nightly.prestashop.com/).
+- Nightly builds and nightly board are [now available](https://nightly.prestashop-project.org/).
 - Translation Manager of Back Office can now manage legacy translations of modules as well as symfony modules
 - Added support for Doctrine Entities in modules (both Front and Back-office)
 - Price computation is now covered by Integration tests powered by Behat (human-readable tests)

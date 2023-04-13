@@ -21,7 +21,7 @@ Contributing to PrestaShop is not only about the code, it is also about taking p
 You’ve read that right – contributor interviews are back! 
 The first interview sheds light on PrestaShop ambassador, merchant and contributor [AmirRzd](https://crowdin.com/profile/amirrzd), who’s been contributing to the translation project for nearly 8 years. 
 
-If you wish to learn more, check out the article [here](PLACEHOLDER)!
+If you wish to learn more, check out the article [here](https://build.prestashop-project.org/news/2023/contributor-interview-amirhossein/)!
 
 💡 Are you interested in sharing your experience with the community or sharing tips with translators in a contributor interview? 
 Feel free to contact me at translation@prestashop.com or on Crowdin! ✉️

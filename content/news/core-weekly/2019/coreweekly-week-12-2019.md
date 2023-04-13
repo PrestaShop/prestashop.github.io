@@ -21,7 +21,7 @@ Dear Developers,
 
 This is the very last week to submit a pull request and make it approved: code freeze is due on Friday, 29th of March.
 
-The work of the maintainers is currently focused on code review and merge, plus finalizing their current work. Don't forget that each morning, you can download a fresh [nightly build](https://nightly.prestashop.com/) with the latest code merged in the PrestaShop open source project. That should help to build and test an Alpha release, hopefully next week.
+The work of the maintainers is currently focused on code review and merge, plus finalizing their current work. Don't forget that each morning, you can download a fresh [nightly build](https://nightly.prestashop-project.org/) with the latest code merged in the PrestaShop open source project. That should help to build and test an Alpha release, hopefully next week.
 
 
 ## A quick update about PrestaShop's GitHub issues and pull requests:

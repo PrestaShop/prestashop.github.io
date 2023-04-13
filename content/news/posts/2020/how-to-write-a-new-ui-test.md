@@ -362,7 +362,7 @@ TEST_PATH="functional/BO/02_orders/01_orders/08_viewCustomer" URL_FO=shopUrl/ np
 
 ## VII. Adding steps Identifiers
 
-Steps identifiers help track failing steps between different runs thanks to the [nightly](https://nightly.prestashop.com/) algorithm.
+Steps identifiers help track failing steps between different runs thanks to the [nightly](https://nightly.prestashop-project.org/) algorithm.
 
 Each step should have its own! You can found more information [here](https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#test-identifier).
 

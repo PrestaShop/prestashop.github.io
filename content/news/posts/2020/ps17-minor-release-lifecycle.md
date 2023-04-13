@@ -39,7 +39,7 @@ Once this phase is started, Core maintainers create a git branch from `develop` 
 
 Also, since stabilization is performed in a separate branch (`1.7.7.x` in our example), development for the next minor release (1.7.8) can start on the `develop` branch! This means that the development of any given minor version development actually starts (albeit slowly) precisely the moment the previous version enters feature freeze.
 
-The QA team picks up the latest [nightly build](https://nightly.prestashop.com/) and starts a huge test campaign. The goal of this campaign is to find and register all regressions of this build.
+The QA team picks up the latest [nightly build](https://nightly.prestashop-project.org/) and starts a huge test campaign. The goal of this campaign is to find and register all regressions of this build.
 
 As the QA team verifies the build, they will populate the Kanban with all the bugs they find.
 All important regressions must be fixed quickly. Although it depends heavily on the number of regressions found, this phase should last about one month. Once all major bugs have been fixed, the [Beta phase](https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta) can be launched.

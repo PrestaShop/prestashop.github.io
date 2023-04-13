@@ -19,7 +19,7 @@ This edition of the Core Weekly report highlights changes in PrestaShop's core c
 
 Dear Developers,
 
-It seems that the progress on the 1.7.6 is going well. For the first time with the PrestaShop open source project, this is possible to test it with the [nightly builds](https://nightly.prestashop.com/), a lot of feedback is collected this way. So, there is no need to spend too much time on an Alpha release. In fact, this will give more time to the team to finish the upcoming [1.6.1.24](https://github.com/PrestaShop/PrestaShop/milestone/52) and [1.7.5.2](https://github.com/PrestaShop/PrestaShop/milestone/55) releases.
+It seems that the progress on the 1.7.6 is going well. For the first time with the PrestaShop open source project, this is possible to test it with the [nightly builds](https://nightly.prestashop-project.org/), a lot of feedback is collected this way. So, there is no need to spend too much time on an Alpha release. In fact, this will give more time to the team to finish the upcoming [1.6.1.24](https://github.com/PrestaShop/PrestaShop/milestone/52) and [1.7.5.2](https://github.com/PrestaShop/PrestaShop/milestone/55) releases.
 
 More news about the 1.7.6 in the next core-weekly.
 

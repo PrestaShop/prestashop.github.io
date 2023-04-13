@@ -8,14 +8,14 @@ icon: icon-video-camera
 tags: [contribute, event, community, live-update]
 ---
 
-The project's live update was held for the fourth time this year and [streamed live](hhttps://www.youtube.com/watch?v=SVbAQ__A6ns) on March 8th, 2023.
+The project's live update was held for the fourth time this year and [streamed live](hhttps://www.youtube.com/watch?v=SVbAQ__A6ns) on April 12th, 2023.
 
 ## The session's agenda was as follows:
 
 - [00:00](hhttps://www.youtube.com/watch?v=SVbAQ__A6ns) Beginning of the session: the introduction
 - [01:54](https://youtu.be/SVbAQ__A6ns?t=114) Project news: PrestaShop 8.0.2 and 8.0.3 releases
-- [03:11](https://youtu.be/SVbAQ__A6ns?t=191) Project news: A new organization for the project
-- [44:05](https://youtu.be/SVbAQ__A6ns?t=2644) Demo: Developer documentation improvements, by [@kpodemski](https://github.com/kpodemski) and [@thomasnares](https://github.com/thomasnares)
+- [03:11](https://youtu.be/SVbAQ__A6ns?t=191) Project news: a new organization for the project
+- [44:05](https://youtu.be/SVbAQ__A6ns?t=2644) Demo: developer documentation improvements, by [@kpodemski](https://github.com/kpodemski) and [@thomasnares](https://github.com/thomasnares)
 
 You can use the timestamps to jump directly to the parts you want to watch.
 

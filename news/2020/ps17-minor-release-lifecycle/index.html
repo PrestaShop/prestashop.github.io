@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>PrestaShop 1.7 minor release lifecycle</title>
-    <link href="/style.css?1681370293" rel="stylesheet">
+    <link href="/style.css?1681376920" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -80,7 +80,7 @@
         <li><a href="/tag/8.0/">Articles on 8.0</a></li>
         <li><a href="/tag/1.7/">Articles on 1.7</a></li>
         <li><a href="/tag/1.6/">Articles on 1.6</a></li>
-        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
       </ul>
     </li>
     <li class="dropdown">
@@ -214,7 +214,7 @@
 <p>Feature freeze means that all features of this version have been done and no new ones may be accepted in its scope. The project enters a phase of <em>stabilization</em> whose aim is to identify and fix all regressions(<a href="#glossary">2</a>) before it&rsquo;s released.</p>
 <p>Once this phase is started, Core maintainers create a git branch from <code>develop</code> branch which will carry the work to be done until the release (for 1.7.7.0, the branch name is <code>1.7.7.x</code>). From this moment on, only bug fixes can be merged into this branch. Incidentally, this is also the branch where all future patch versions for this minor version will be developed on (hence the <code>.x</code> at the end).</p>
 <p>Also, since stabilization is performed in a separate branch (<code>1.7.7.x</code> in our example), development for the next minor release (1.7.8) can start on the <code>develop</code> branch! This means that the development of any given minor version development actually starts (albeit slowly) precisely the moment the previous version enters feature freeze.</p>
-<p>The QA team picks up the latest <a href="https://nightly.prestashop.com/">nightly build</a> and starts a huge test campaign. The goal of this campaign is to find and register all regressions of this build.</p>
+<p>The QA team picks up the latest <a href="https://nightly.prestashop-project.org/">nightly build</a> and starts a huge test campaign. The goal of this campaign is to find and register all regressions of this build.</p>
 <p>As the QA team verifies the build, they will populate the Kanban with all the bugs they find.
 All important regressions must be fixed quickly. Although it depends heavily on the number of regressions found, this phase should last about one month. Once all major bugs have been fixed, the <a href="https://en.wikipedia.org/wiki/Software_release_life_cycle#Beta">Beta phase</a> can be launched.</p>
 <p>For PrestaShop 1.7.7.0, QA team is currently finishing the test campaign.</p>

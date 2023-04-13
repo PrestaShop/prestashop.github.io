@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Automated UI tests tutorial</title>
-    <link href="/style.css?1681370293" rel="stylesheet">
+    <link href="/style.css?1681376920" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -80,7 +80,7 @@
         <li><a href="/tag/8.0/">Articles on 8.0</a></li>
         <li><a href="/tag/1.7/">Articles on 1.7</a></li>
         <li><a href="/tag/1.6/">Articles on 1.6</a></li>
-        <li><a href="https://nightly.prestashop.com">Nightly Builds</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
       </ul>
     </li>
     <li class="dropdown">
@@ -462,7 +462,7 @@ The directory in which we create our file should be chosen wisely (Which campaig
 </span></span><span class="line"><span class="cl">    ✓ should check customer link
 </span></span><span class="line"><span class="cl"> 5 passing (19s)
 </span></span></code></pre></div><h2 id="vii-adding-steps-identifiers">VII. Adding steps Identifiers</h2>
-<p>Steps identifiers help track failing steps between different runs thanks to the <a href="https://nightly.prestashop.com/">nightly</a> algorithm.</p>
+<p>Steps identifiers help track failing steps between different runs thanks to the <a href="https://nightly.prestashop-project.org/">nightly</a> algorithm.</p>
 <p>Each step should have its own! You can found more information <a href="https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#test-identifier">here</a>.</p>
 <p>After adding this identifier, each step should look like this:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should check customer link&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>

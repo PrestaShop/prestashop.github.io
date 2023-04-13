@@ -97,7 +97,7 @@ Indeed, some editing and rewriting may be going on, but the percentage of transl
 
 If you have not joined us on Crowdin yet, [it is never too late](https://crowdin.com/project/prestashop-official)! :wink:
 
-You can also join the #translation channel of the PrestaShop Open Source Slack. On this channel, I share information about the translation project. You will also be informed about the publication of the Crowdin monthly report. Of course, you will also be able to ask questions, suggest ideas, or get in touch with other translators.
+You can also join the #translation channel of the PrestaShop Open Source Project's Slack. On this channel, I share information about the translation project. You will also be informed about the publication of the Crowdin monthly report. Of course, you will also be able to ask questions, suggest ideas, or get in touch with other translators.
 
 Thanks, everyone! 🙌
 

@@ -106,6 +106,9 @@ figure > img {
 
 figcaption {
     font-size: $small-font-size;
+    text-align: center;
+    font-style: italic;
+    margin: $spacing-unit/2 0 $spacing-unit;
 }
 
 table {

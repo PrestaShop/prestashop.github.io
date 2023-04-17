@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  A new organization for the Open Source project
+title:  A New Organization For The Open Source Project
 subtitle: "A clearer, more transparent, more collaborative organization"
 date:   2023-04-17
 authors: [ PabloBorowicz ]
@@ -12,7 +12,7 @@ Today, I’m going to share the new organization for decision-making that will b
 
 ## Why do we need a new organization?
 
-During the last years, we have been observing a steady growth in the number of community Pull Requests being merged every year. 
+During the last years, we have been observing a steady growth in the number of community pull requests being merged every year. 
 
 ![Community PRs merged yearly](/assets/images/2023/04/community-prs-yearly.png)
 
@@ -33,7 +33,7 @@ In general, whenever a contribution is submitted, several different decisions ne
 
 The higher the volume of contributions, the larger the number of decisions that need to be made in the same timeframe. Successful open-source projects like PrestaShop all suffer from the same problem: the volume of contributions quickly exceeds the capacity of project members to process them all quickly. 
 
-Facing this situation, project members will prioritize the subjects that seem the most important for them, or the ones that are easiest to decide on. But naturally, opinions on what's the priority often differ from one person to the next. In consequence, many feature requests, issues and Pull Requests pile up, waiting for decisions to be made, frustrating contributors and discouraging them from participating in the project.
+Facing this situation, project members will prioritize the subjects that seem the most important for them, or the ones that are easiest to decide on. But naturally, opinions on what's the priority often differ from one person to the next. In consequence, many feature requests, issues and pull requests pile up, waiting for decisions to be made, frustrating contributors and discouraging them from participating in the project.
 
 This leads me to believe that today, **the key to increasing contribution is lifting the main barrier to it: time to decision**. 
 
@@ -87,11 +87,11 @@ With that in mind, and inspired on the first principle of the agile manifesto, _
 * We cherish the humility to ask when we don't know, recognize when we are wrong, accept when we have made a mistake, learn from it, and improve.
 * Less is more. We strive not to overthink things!
 
-## Initial composition of Project Councils
+## Initial composition of project Councils
 
 The initial composition of the project's Councils is largely based on the established roles from our previous structure. Current maintainers (including scoped maintainers) will automatically join the Technical Council. The rest of the Councils will be initially populated with the people currently performing similar roles.
 
-As we roll out the new structure out and Councils begin to function, new members may be invited, and inactive members may be removed.
+As we roll out the new structure and Councils begin to function, new members may be invited, and inactive members may be removed.
 
 **Leadership Council**
 
@@ -131,7 +131,7 @@ We think that this structure will provide many advantages:
 
 It will **facilitate decision-making**, thanks to a clearly-defined project structure, including the people responsible for each domain, that clears out any misunderstanding as to who is responsible for what decision (and especially who has the "final-final-final" word on it).
 
-It will **enable more people to participate in the project,** by opening decision-making roles that were previously closed to community members, including the creation of new lower-stakes roles that are easier to join to.
+It will **enable more people to participate in the project,** by opening decision-making roles that were previously closed to community members, including the creation of new lower-stakes roles that are easier to join.
 
 It will **progressively accelerate decision-making,** by the means of simplified processes, and above all, more people to make them!
 

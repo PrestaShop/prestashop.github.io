@@ -2,13 +2,13 @@
 layout: post
 title:  A New Organization For The Open Source Project
 subtitle: "A clearer, more transparent, more collaborative organization"
-date:   2023-04-17
+date:   2023-04-19
 authors: [ PabloBorowicz ]
 icon: icon-compass
 tags: [ news, contribute, community ]
 ---
 
-Today, I’m going to share the new organization for decision-making that will be set up for the PrestaShop project. We think this organization will help our community grow, get even more involved, and work together in building a better PrestaShop, faster.
+Today, I want to share the new organization for decision-making that will be set up for the PrestaShop project. We believe this organization will help our community grow, get even more involved, and work together in building a better PrestaShop, faster.
 
 ## Why do we need a new organization?
 
@@ -65,7 +65,7 @@ Existing groups like committers, QA Functional, and other similar groups will be
 
 {{< figure src="/assets/images/2023/04/council-delegate.png" caption="Example of Council and delegate group" >}}
 
-Membership to councils is invite-only, but not necessarily based on employer affiliation. Contributors may get invited in (or out) of councils mainly on the basis of trust, reputation, and engagement level. Depending on their skills, a person may be invited and seat in more than one Council at a time.
+Membership to councils is invite-only, but not necessarily based on employer affiliation. Contributors may get invited in (or out) of councils mainly on the basis of trust, reputation, and engagement level. Depending on their skills, a person may be invited and sit in more than one Council at a time.
 
 Each Council has a lead. Council leads are responsible for ensuring that the Council is effectively pronouncing on decisions, providing guidance for his or her council colleagues, and guaranteeing that subjects move forward coherently. For that, **leads benefit from a power of veto and override** over their own Council's decisions – to be used sparingly, of course.
 

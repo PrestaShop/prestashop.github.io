@@ -89,7 +89,7 @@ With that in mind, and inspired on the first principle of the agile manifesto, _
 
 ## Initial composition of project Councils
 
-The initial composition of the project's Councils is largely based on the established roles from our previous structure. Current maintainers (including scoped maintainers) will automatically join the Technical Council. The rest of the Councils will be initially populated with the people currently performing similar roles.
+The initial composition of the project's Councils is largely based on the established roles from our previous structure. Current maintainers (including scoped maintainers) will automatically join the Technical Council. The rest of the Councils will initially be populated with the people already performing similar roles, and some notable community members.
 
 As we roll out the new structure and Councils begin to function, new members may be invited, and inactive members may be removed.
 
@@ -97,6 +97,8 @@ As we roll out the new structure and Councils begin to function, new members may
 
 * Pablo Borowicz (@eternoendless) **– Project Lead**
 * Fabien Vallon (@fabienvallon)
+* Jonathan Lelièvre (@jolelievre)
+* Mateus Shirlaw (@MatShir)
 * Mathieu Ferment (@matks)
 * Robin Fischer (@Robin-Fischer-PS)
 
@@ -116,6 +118,8 @@ As we roll out the new structure and Councils begin to function, new members may
 **Product Council**
 
 * Fabien Vallon (@fabienvallon) **– Lead**
+* Daniel Hlavacek (@Hlavtox)
+* Jean-François Viguier (@jf-viguier)
 * Mateus Shirlaw (@MatShir)
 * Rosa Benouamer (@RosaBenouamer)
 * Zoé Finders (@Zoefinders)

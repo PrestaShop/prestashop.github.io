@@ -31,7 +31,7 @@ In general, whenever a contribution is submitted, several different decisions ne
 * Which technical implementation is best for this solution?
 * How do I assess that this solution works as expected?
 
-The higher the volume of contributions, the larger the number of decisions that need to be made in the same timeframe. Successful open-source projects like PrestaShop all suffer from the same problem: the volume of contributions quickly exceeds the capacity of project members to process them all quickly. 
+The higher the volume of contributions, the larger the number of decisions that need to be made in the same timeframe. Successful open source projects like PrestaShop all suffer from the same problem: the volume of contributions quickly exceeds the capacity of project members to process them all quickly. 
 
 Facing this situation, project members will prioritize the subjects that seem the most important for them, or the ones that are easiest to decide on. But naturally, opinions on what's the priority often differ from one person to the next. In consequence, many feature requests, issues and pull requests pile up, waiting for decisions to be made, frustrating contributors and discouraging them from participating in the project.
 

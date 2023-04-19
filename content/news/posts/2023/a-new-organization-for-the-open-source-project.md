@@ -147,7 +147,7 @@ This new organization will progressively roll out in the coming weeks.
 
 Our objective is to accelerate time-to-decision to prevent contributors from getting stuck, and through that help more contributors succeed in participating in the project. Remember, **the more people contribute, the better PrestaShop becomes.**
 
-To that end, we intend to invite as many people in Councils (or delegate groups) as we can. The idea is to reach a point where if enough community members think a feature is interesting and are willing to contribute it, they will be able to self-organize to work on it, and Councils will be numerous enough to quickly react and provide guidance on the best way to include it. 
+To that end, we intend to invite as many people in Councils (or delegate groups) as we can. The idea is to reach a point where if enough community members think a feature is interesting and are willing to contribute it, they will be able to self-organize to work on it autonomously, and count on the numerous Council members to quickly react and guide them on the best way to include their feature in the project.
 
 We expect this new organization to be a key enabler for this kind of collaboration, that we call _community initiatives_. This subject will be covered in a dedicated article soon. 
 

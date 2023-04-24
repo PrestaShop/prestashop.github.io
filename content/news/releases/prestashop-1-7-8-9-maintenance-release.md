@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  PrestaShop 1.7.8.9 is available
-subtitle: Maintenance release for PrestaShop 1.7.8
-date: 2023-04-11
+subtitle: Security release for PrestaShop 1.7.8
+date: 2023-04-24
 authors: [ PrestaShop ]
 image: /assets/images/2023/04/banner_1789_1200_627.jpeg
 opengraph_image: /assets/images/2023/04/banner_1789_1200_627.jpeg
@@ -15,26 +15,21 @@ tags:
 - 1.7.8.x
 ---
 
-It has been decided to deliver a new maintenance release for 1.7.8.x branch.
+Security patch for PrestaShop 1.7 is now available.
 
 ![1.7.8.9 is available!](/assets/images/2023/04/banner_1789_1534_424.jpeg)
 
-[TBD]]
+As part of the extended support policy for PrestaShop 1.7, which involves taking care of critical and security fixes for 1.7.8.x branch, we are releasing today a new patch for this version. This release fixes a few security issues reported by community researchers and upgrades some third-party libraries to their latest versions to ensure the stability and security of your shop.
 
 It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. You can upgrade to the latest version using the 1-Click Upgrade [v4.15.0](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.15.0).
 
 ---
 
-## Issues involved in the milestone 1.7.8.9
-
-[TBD]
-
-
 ## Acknowledgments
 
 Contributors to this patch version, from both the project members and the community at large:
 
-[TBD]
+Franck Lefèvre, Jonathan Lelievre, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin
 
 Thank you!
 

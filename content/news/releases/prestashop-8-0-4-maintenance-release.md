@@ -32,7 +32,7 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 
 - [Back office: the translation of the pagination label in products list and combinations list is not correct](https://github.com/PrestaShop/PrestaShop/issues/32053)
 - [Back office: translations - 2 exceptions displayed when trying to add/update language Breton](https://github.com/PrestaShop/PrestaShop/issues/31384)
-- [Back office: unable to update settings for products with combinations](https://github.com/PrestaShop/PrestaShop/issues/30179)
+- [Back office: unable to update settings for products with combinations with stock management disabled](https://github.com/PrestaShop/PrestaShop/issues/30179)
 - [Webservice error when adding new product](https://github.com/PrestaShop/PrestaShop/issues/29315)
 - [Link widget module: error when changing shop context](https://github.com/PrestaShop/PrestaShop/issues/29005)
 - [Link widget module: error in 'Design > link widget' page](https://github.com/PrestaShop/PrestaShop/issues/32052)

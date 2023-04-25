@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.0.4 is available
 subtitle: New patch version of the 8.0.x branch is available
-date: 2023-04-24 09:00:00
+date: 2023-04-25 17:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2023/04/banner_804_1200_627.png
 opengraph_image: /assets/images/2023/04/banner_804_1200_627.png

@@ -6,7 +6,28 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Apr 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Apr 2023 17:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.0.4 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-4-maintenance-release/</link>
+      <pubDate>Tue, 25 Apr 2023 17:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-4-maintenance-release/</guid>
+      <description>The fourth patch version for PrestaShop 8 is now available to download! This release contains a few security fixes, so we recommend you to upgrade your shop as soon as possible.
+PrestaShop 8.0.4 is now available. This time there are three security fixes thanks to reports from community researchers. This release also contains a few bug fixes besides security fixes. The incorrect translation of pagination labels in products and combinations lists has been fixed.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 1.7.8.9 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-1-7-8-9-maintenance-release/</link>
+      <pubDate>Tue, 25 Apr 2023 16:20:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-1-7-8-9-maintenance-release/</guid>
+      <description>Security patch for PrestaShop 1.7 is now available.
+As part of the extended support policy for PrestaShop 1.7, which involves taking care of critical and security fixes for 1.7.8.x branch, we are releasing today a new patch for this version. This release fixes a few security issues reported by community researchers and upgrades some third-party libraries to their latest versions to ensure the stability and security of your shop.
+It is recommended to upgrade your shop quickly in order to benefit from these fixes.</description>
+    </item>
+    
     <item>
       <title>A New Organization For The Open Source Project</title>
       <link>https://build.prestashop-project.org/news/2023/a-new-organization-for-the-open-source-project/</link>
@@ -140,27 +161,6 @@ Project news 🌐 The top translators page is back up After a short interruption
       <description>The beta version of PrestaShop 8.1 is now ready for you to test!
 We’re delighted to announce that PrestaShop 8.1 has reached the beta stage. PrestaShop 8.1 is still in development, but we hope you will help us test this release so we can have the best quality release possible, available for everyone, as soon as possible!
 Test PrestaShop 8.1.0 beta 1 now! Version 8.1 fixes over 30 bugs found in the previous release and introduces many improvements and new features.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop Live Update - February 2023</title>
-      <link>https://build.prestashop-project.org/news/2023/live-update-2-2023/</link>
-      <pubDate>Tue, 14 Feb 2023 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/live-update-2-2023/</guid>
-      <description>The project&amp;rsquo;s live update was held for the second time this year and streamed live on February 8th, 2023.
-Demos that you don&amp;rsquo;t want to miss! Safe to say, this was one of the best, if not the best, live updates we ever held. During February&amp;rsquo;s event, we had a chance to see one of the most popular PrestaShop community projects. Integration between PrestaShop and Vue Storefront created by BinShops.</description>
-    </item>
-    
-    <item>
-      <title>Do you speak PrestaShop? – January 2023 edition</title>
-      <link>https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-january-2023/</link>
-      <pubDate>Mon, 13 Feb 2023 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-january-2023/</guid>
-      <description>Contributing to PrestaShop is not only about the code, it is also about taking part in the PrestaShop translation project! This report will tell you how the software translations evolved in January!
-Project news ➕ A new language is available for translation! Thanks to Ali Zhumagaliev, the Karakalpak language is now available for translation on the Crowdin project!
-💕 Many thanks to January’s newcomers Many people subscribe to the project(s) of their choice each month, but not so many start translating straight away.</description>
     </item>
     
   </channel>

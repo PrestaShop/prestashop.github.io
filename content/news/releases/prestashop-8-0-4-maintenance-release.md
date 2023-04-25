@@ -16,7 +16,7 @@ tags:
 - "8.0.x"
 ---
 
-The fourth patch version for PrestaShop 8 is now available to download! This release contains few security fixes, so we recommend you to upgrade your shop as soon as possible.
+The fourth patch version for PrestaShop 8 is now available to download! This release contains a few security fixes, so we recommend you to upgrade your shop as soon as possible.
 
 ![8.0.4 is available!](/assets/images/2023/04/banner_804_1534_424.png)
 
@@ -28,7 +28,7 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 
 ---
 
-## Issues involved in the milestone 8.0.4
+## Issues involved in the 8.0.4 patch release
 
 - [Back office: the translation of the pagination label in products list and combinations list is not correct](https://github.com/PrestaShop/PrestaShop/issues/32053)
 - [Back office: translations - 2 exceptions displayed when trying to add/update language Breton](https://github.com/PrestaShop/PrestaShop/issues/31384)

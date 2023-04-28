@@ -37,4 +37,4 @@ We are available for feedback about the project and the software. We also invite
 
 ## Next live update in May
 
-Save the date: the next live update will be streamed live on **Wednesday, May 10th, 2023** at [4 pm (Paris time)](https://time.is/1600_10_May_2023_in_Paris) on [YouTube](https://www.youtube.com/watch?v=MnUXQ60hL_g). See you then!
+Save the date: the next live update will be streamed live on **Wednesday, May 17th, 2023** at [4 pm (Paris time)](https://time.is/1600_17_May_2023_in_Paris) on [YouTube](https://www.youtube.com/watch?v=MnUXQ60hL_g). See you then!

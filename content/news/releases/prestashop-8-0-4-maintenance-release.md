@@ -40,6 +40,12 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 
 You can go to the [release page](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.4) to see a full changelog.
 
+## Security advisories
+
+- [Possible XSS injection through Validate::isCleanHTML method](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-fh7r-996q-gvcp)
+- [Arbitrary file read](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-8r4m-5p6p-52rp)
+- [SQL filter bypass leading to arbitrary write requests using "SQL Manager"](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-p379-cxqh-q822)
+
 ## Acknowledgments
 
 Contributors to this patch version, from both the project members and the community at large:

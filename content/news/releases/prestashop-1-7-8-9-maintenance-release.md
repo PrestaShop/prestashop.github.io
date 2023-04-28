@@ -25,6 +25,12 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 
 ---
 
+## Security advisories
+
+- [Possible XSS injection through Validate::isCleanHTML method](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-fh7r-996q-gvcp)
+- [Arbitrary file read](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-8r4m-5p6p-52rp)
+- [SQL filter bypass leading to arbitrary write requests using "SQL Manager"](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-p379-cxqh-q822)
+
 ## Acknowledgments
 
 Contributors to this patch version, from both the project members and the community at large:

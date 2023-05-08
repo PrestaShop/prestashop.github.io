@@ -8,7 +8,7 @@ icon: icon-video-camera
 tags: [contribute, event, community, live-update]
 ---
 
-The project's live update was held for the fourth time this year and [streamed live](hhttps://www.youtube.com/watch?v=SVbAQ__A6ns) on April 12th, 2023.
+The project's live update was held for the fourth time this year and [streamed live](https://www.youtube.com/watch?v=SVbAQ__A6ns) on April 12th, 2023.
 
 ## The session's agenda was as follows:
 
@@ -19,7 +19,7 @@ The project's live update was held for the fourth time this year and [streamed l
 
 You can use the timestamps to jump directly to the parts you want to watch.
 
-{{< cta "hhttps://www.youtube.com/watch?v=SVbAQ__A6ns" "info" >}}Watch replay on YouTube{{< /cta >}}
+{{< cta "https://www.youtube.com/watch?v=SVbAQ__A6ns" "info" >}}Watch replay on YouTube{{< /cta >}}
 
 Below are links to projects mentioned during this live update:
 - [Developer documentation](https://devdocs.prestashop-project.org/)

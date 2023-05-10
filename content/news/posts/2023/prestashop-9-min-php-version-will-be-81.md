@@ -14,7 +14,7 @@ tags:
 
 The `develop` branch contains the source code that will give birth to PrestaShop 9. This is the future of PrestaShop: it will be released either at the end of the year 2023 or in the beginning of the year 2024 and must carry on the ambition of the project for 2024. This major version must also embrace the change of the PHP ecosystem and consequently it must drop the support of obsolete PHP versions.
 
-## The PHP ecosysme is moving forward
+## The PHP ecosystem is moving forward
 
 As of today, the 12th of May 2023, there is only [two officially supported versions](https://www.php.net/supported-versions.php) of PHP: PHP8.1 which will be supported until November 2023 and PHP8.2 which support ends on December 2024. PHP8.0 has already reached the security support phase which ends on November 2023.
 
@@ -26,7 +26,7 @@ The PHP ecosystem is moving swiftly, and open source projects are taking the pac
 
 The project team has been thinking about PrestaShop 9 PHP support for a while. We know plenty users continue to use PHP7.x versions or PHP8.0 and we know upgrading PHP can be tedious. However after careful considerations and [asking the community](https://github.com/PrestaShop/PrestaShop/discussions/32358) we have finally chosen to **drop the support of PHP versions older than PHP8.1** in PrestaShop 9.
 
-This means that PrestaShop 8 will be compatible with PHP8.1 and higher.
+This means that PrestaShop 9 will be compatible with PHP8.1 and higher.
 
 This choice is driven by multiple reasons:
 

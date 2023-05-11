@@ -26,12 +26,12 @@ The PHP ecosystem is moving swiftly, and open source projects are taking the pac
 
 The project team has been thinking about PrestaShop 9 PHP support for a while. We know plenty users continue to use PHP7.x versions or PHP8.0 and we know upgrading PHP can be tedious. However after careful considerations and [asking the community](https://github.com/PrestaShop/PrestaShop/discussions/32358) we have finally chosen to **drop the support of PHP versions older than PHP8.1** in PrestaShop 9.
 
-This means that PrestaShop 9 will be compatible with PHP8.1 and higher.
+We are bumping the minimum PHP compatible PHP version for PrestaShop 9 to 8.1. This means that PrestaShop 9.0.0 will be compatible with PHP8.1 and higher.
 
 This choice is driven by multiple reasons:
 
-1. PrestaShop does rely on Composer dependencies, and some of these dependencies have chosen, in the latest released versions, to drop the support of PHP8.0 and lower. Earlier versions do support PHP8.0 but are not maintained anymore. We cannot use these earlier versions without putting the software at risk.
+1. PrestaShop does rely on Composer dependencies, and some of these dependencies have chosen, in the latest released versions, to drop the support of PHP8.0 and lower. Earlier versions do support PHP8.0 but are not maintained anymore. We cannot use these earlier versions without putting the software at risk. In order to be able to use safe and maintained dependencies, the bump is necessary.
 
 2. Support of PHP7.x versions prevent the project from benefitting from latest PHP language improvements. If we want the code to be compatible with both PHP7 and PHP8, we have to use language features that exist in both versions. Now, contributions against the `develop` branch can use features introduced in PHP8.1 (and even features introduced in PHP8.0).
 
-3. We are aware the project acts as a pioneer in the PrestaShop ecosystem: by moving forward, we want to show a path forward and motivate PrestaShop users to upgrade to latest PHP versions, which will make the whole ecosystem more secure. Outdated PHP versions being used on servers is a security risk.
+3. We are aware the project acts as a pioneer in the PrestaShop ecosystem: by moving ahead, we want to show a path forward and motivate PrestaShop users to upgrade to latest PHP versions, which will make the whole ecosystem more secure. Outdated PHP versions being used on servers is a security risk.

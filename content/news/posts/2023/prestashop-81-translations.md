@@ -6,7 +6,7 @@ subtitle: "New features equal new strings"
 date: 2023-05-15 10:00:00
 authors: [LéaDelin]
 icon: icon-world
-tags: [translation, i18n, l10n, "1.7"]
+tags: [translation, i18n, l10n, "8.1"]
 ---
 
 PrestaShop’s [8.1 beta release](https://build.prestashop-project.org/news/2023/prestashop-8-1-beta-release/) was announced a few months ago. The stable release is now just around the corner. While it brings new features, a new version also means new strings. A file containing all 8.1 strings has been pushed to Crowdin, and is ready for translation!

@@ -18,7 +18,7 @@ The `develop` branch contains the source code that will give birth to PrestaShop
 
 As of today, the 12th of May 2023, there are only [two officially supported versions](https://www.php.net/supported-versions.php) of PHP: PHP8.1, which will be supported until November 2023, and PHP8.2, whose support ends on December 2024. PHP8.0 has already reached the security support phase, which ends on November 2023.
 
-Many open source PHP projects have already left PHP8.0 behind. For example [Symfony 6](https://symfony.com/releases) and [Drupal 10](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements) minimum PHP version is PHP8.1.0.
+Many open source PHP projects have already left PHP8.0 behind. For example, [Symfony 6](https://symfony.com/releases) and [Drupal 10](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements) minimum PHP versions are PHP8.1.0.
 
 The PHP ecosystem is moving swiftly, and open source projects are taking the pace.
 
@@ -32,6 +32,6 @@ This choice is driven by multiple reasons:
 
 1. PrestaShop does rely on Composer dependencies, and some of these dependencies have chosen, in the latest released versions, to drop the support of PHP8.0 and lower. Earlier versions do support PHP8.0 but are not maintained anymore. We cannot use these earlier versions without putting the software at risk. In order to be able to use safe and maintained dependencies, the bump is necessary.
 
-2. Support of PHP7.x versions prevent the project from benefitting from the latest PHP language improvements. If we want the code to be compatible with both PHP7 and PHP8, we have to use language features that exist in both versions. Now, contributions against the `develop` branch can use features introduced in PHP8.1 (and even features introduced in PHP8.0).
+2. Support of PHP7.x versions prevents the project from benefitting from the latest PHP language improvements. If we want the code to be compatible with both PHP7 and PHP8, we have to use language features that exist in both versions. Now, contributions against the `develop` branch can use features introduced in PHP8.1 (and even features introduced in PHP8.0).
 
 3. We are aware the project acts as a pioneer in the PrestaShop ecosystem: by moving ahead, we want to show a path forward and motivate PrestaShop users to upgrade to the latest PHP versions, which will make the whole ecosystem more secure. Outdated PHP versions being used on servers is a security risk.

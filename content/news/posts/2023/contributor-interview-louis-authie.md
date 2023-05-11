@@ -19,7 +19,7 @@ tags:
 
 <img style="border: 1px solid #CCC; float: center; margin: 0 1em 1em 0;" width="517" height="388" src="/assets/images/2023/05/lauthie.jpg">
 
-**Louis is a freelance full stack developer at Web Helpers, with over 120 contributions on GitHub. He’s also a member of [Friends of Presta](https://friendsofpresta.org/en), an association that gathers a community of developers and integrators around the open-source ecommerce solution PrestaShop.**
+**Louis is a freelance full stack developer at Web Helpers, with over 120 contributions on GitHub. He’s also a member of [Friends of Presta](https://friendsofpresta.org/en), an association that gathers a community of developers and integrators around the open source ecommerce solution PrestaShop.**
 
 <div style="clear:both"></div>
 

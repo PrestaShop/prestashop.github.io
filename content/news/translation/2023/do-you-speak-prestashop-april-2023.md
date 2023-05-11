@@ -2,7 +2,7 @@
 layout: post
 aliases: ["/news/do-you-speak-prestashop-april-2023"]
 title: "Do You Speak PrestaShop? – April 2023 Edition"
-subtitle: "Where you'll learn that the QA checker is in place"
+subtitle: "Where you'll learn that the 8.1 translation catalog is coming soon"
 date: 2023-05-11 10:00:00
 authors: [LéaDelin]
 icon: icon-world

@@ -29,7 +29,7 @@ Dear readers, meet Louis. 🙌  (And stick with us until the end for a little su
 
 Hello! I’m Louis Authie, I’m 36 years old and I’m a full stack developer. I use iOS, Swift, Javascript, and Python, but PHP will always be my favorite. I’ve been a freelancer for 12 years, but I’ve been coding using PHP over the last 20 years for personal projects.
 I discovered PrestaShop when I started freelancing online. Ecommerce is a great way to make money these days.
-I installed PrestaShop for the first time back in 2012, (I can’t recall if it was 1.2 or 1.5!), but it was very different, and anyone could understand PHP. Then again, it was much simpler back then, even though I was a noob. 😄
+I installed PrestaShop for the first time back in 2012 (I can’t recall if it was 1.2 or 1.5!), but it was very different, and anyone could understand PHP. Then again, it was much simpler back then, even though I was a noob. 😄
 
 I wanted to customize my PrestaShop store so I sort of ran into it blindly without following the community’s advice and best practices. To be fair, there was a lot less documentation and the community was much smaller back then.
 

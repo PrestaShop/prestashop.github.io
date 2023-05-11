@@ -83,7 +83,7 @@ So I took all of my contributions and knowledge and decided to share it with oth
 My book should be of great help to the community. It answers the most commonly asked questions in module development.
 I’m not promoting my book for money: all royalties and benefits will go to FOP.
 
-If you buy the book on Amazon and use the voucher **20LOUIS**, you get 20% off, here: https://www.amazon.com/gp/mpc/A1C6DNDDRD3ZU5. The voucher’s active until May 31st.
+If you buy the book on Amazon and use the voucher **20LOUIS**, [you get 20% off, here](https://a.co/d/eOsfniP). The voucher’s active until May 31st.
 
 **That’s great news! Where can we follow you?**
 

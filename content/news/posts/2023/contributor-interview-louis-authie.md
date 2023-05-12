@@ -1,6 +1,5 @@
 ---
 layout: post
-aliases: ["/news/contributor-interview-louis-authie"]
 title:  "Louis Authie: Freelancer, Contributor and Author"
 subtitle: "Discover the faces behind the commits"
 date:   2023-05-12 10:00:00
@@ -92,5 +91,5 @@ My personal GitHub is [LouisAUTHIE](https://github.com/LouisAUTHIE), and my agen
 **Thank you so much for your help! Keep up the great work** 🙌
 Thank you! 😄
 
-**Do you wish to contribute to the PrestaShop Project? Everything you need to know is available [here]([https://docs.prestashop-project.org/v.8-documentation/v/english]). You can join us on the PrestaShop Project, available on [GitHub]([https://github.com/PrestaShopl).**
+**Do you wish to contribute to the PrestaShop Project? Everything you need to know is available [here]([https://docs.prestashop-project.org/v.8-documentation/v/english]). You can join us on the PrestaShop Project, available on  [GitHub](https://github.com/PrestaShop).**
 

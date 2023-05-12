@@ -28,7 +28,7 @@ The 8.1 version has not been released yet, so some strings may appear a bit uncl
 If you don’t know what a variable is, it’s a value that can change depending on its context in the software. On Crowdin, these variables are highlighted in green in the source string and must **not be translated**, as they can result in major software bugs.
 In the Crowdin editor, you can simply click on a variable to copy and paste it into the target language. Always make sure to copy and paste the variable **exactly as displayed on the original string**!
 
-Note that the QA checker will be enabled in the project in the upcoming weeks. Variables will then be automatically checked in target translations to make sure no variables slip through the cracks anymore. If you wish to know more about these changes, keep an eye out for next Crowdin Monthly, or check out the PrestaShop Open Source project's Slack translation channel.
+Note that the QA checker will be enabled in the project in the upcoming weeks. Variables will then be automatically checked in target translations to make sure no variables slip through the cracks anymore. If you wish to know more about these changes, keep an eye out for the next Crowdin Monthly, or check out the PrestaShop Open Source project's Slack translation channel.
 
 ### Translation guide: all you need to know
 Are you new to the Crowdin translation project or simply curious about it? 

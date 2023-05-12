@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 9 minimum PHP version will be PHP8.1"
 subtitle: "The project moves forward and drops obsolete PHP versions"
-date:   2023-05-12 14:00:00
+date:   2023-05-12 12:00:00
 authors: [ MathieuFerment ]
 icon: icon-code
 tags:

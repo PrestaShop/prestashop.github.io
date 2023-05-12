@@ -61,7 +61,7 @@ The QA checker currently checks for:
 
 Note that since this is the first time QA checks are enabled for the project, some settings may still need adjustment. Of course, if you want to give your feedback or if you have any questions, feel free to contact me at translation@prestashop.com or on Crowdin ✉️
 
-If you wish to learn more about the QA checker and how it works, can check out the [Crowdin documentation](https://support.crowdin.com/qa-checks/).
+If you wish to learn more about the QA checker and how it works, you can check out the [Crowdin documentation](https://support.crowdin.com/qa-checks/).
 
 ### Translation guide: all you need to know
 

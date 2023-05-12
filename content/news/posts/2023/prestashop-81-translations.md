@@ -24,7 +24,7 @@ Even though the wording is always reviewed when a pull request is submitted, som
 ### Context
 The 8.1 version has not been released yet, so some strings may appear a bit unclear because of a lack of context. If this is the case, please don’t hesitate to ask for help! You can [open an issue](https://docs.prestashop-project.org/translating-prestashop/translating-prestashop-software-basics/translating-on-crowdin/the-dos-and-donts-of-crowdin-translation#use-the-comments-and-issue-features) in the “Comments” section of a string and I will do my best to answer your questions. In any case, don’t forget that you will still be able to edit the translations when the new version is released.
 
-### A note on variables & QA checker
+### A note on variables and QA checker
 If you don’t know what a variable is, it’s a value that can change depending on its context in the software. On Crowdin, these variables are highlighted in green in the source string and must **not be translated**, as they can result in major software bugs.
 In the Crowdin editor, you can simply click on a variable to copy and paste it into the target language. Always make sure to copy and paste the variable **exactly as displayed on the original string**!
 

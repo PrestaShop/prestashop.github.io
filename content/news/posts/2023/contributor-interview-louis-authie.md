@@ -12,7 +12,7 @@ tags:
  - contribution
 ---
 
-**Have you ever wondered who’s hiding behind a Crowdin username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project.**
+**Have you ever wondered who’s hiding behind a GitHub username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project.**
 
 **This month, meet Louis Authie, aka [LouisAUTHIE](https://github.com/LouisAUTHIE).**
 
@@ -42,8 +42,8 @@ When PrestaShop 1.7 switched to Symfony (I’m a big Symfony fan!), I got intrig
 And so, my first contributions were mostly doc-related. Little tweaks here and there, adding missing information, and so on. These were a great way of understanding GitHub contributions and their inner workings.
 The thing that really made me want to contribute to the Symfony core was Friends of Presta (or FOP, for short). They were really friendly and useful in explaining how the Symfony migration works.
 
-A little while after that, Frank Lefebvre (aka [Progi1984](https://github.com/Progi1984)) organized a workshop to explain how to migrate a back office controller to those who were interested. For me, having an actual project to work on is a great opportunity to understand how things work.
-So, to get familiar with the process and how branching and pull requests work, I submitted contributions (labeled as “Good first issues”) to the project. Then, I decided to take part in Frank’s workshop. He assigned work to every participant and each of us had tasks to complete. That’s how I really got into contributing and understanding the migration.
+A little while after that, Franck Lefèvre (aka [Progi1984](https://github.com/Progi1984)) organized a workshop to explain how to migrate a back office controller to those who were interested. For me, having an actual project to work on is a great opportunity to understand how things work.
+So, to get familiar with the process and how branching and pull requests work, I submitted contributions (labeled as “Good first issues”) to the project. Then, I decided to take part in Franck’s workshop. He assigned work to every participant and each of us had tasks to complete. That’s how I really got into contributing and understanding the migration.
 
 Overall I’ve been involved in contributing for 2 years. Even though I’m not a hard-core contributor, I still like to follow the project’s GitHub and news.
 

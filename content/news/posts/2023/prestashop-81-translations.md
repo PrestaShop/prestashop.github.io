@@ -15,7 +15,7 @@ PrestaShop’s [8.1 beta release](https://build.prestashop-project.org/news/2023
 Translators, proofreaders… your project needs you! Feel free to take a look at those new strings and help your language reach 100% translation. 💪
 In this article, I will address the key elements of the translation process of this new catalog.
 
-### New strings & completion rates 
+### New strings and completion rates 
 If you visited Crowdin in the last few days, you probably noticed that the completion rates for all projects have slightly decreased and that the projects that used to be 100% translated and validated are no longer complete. Don’t worry, that’s completely normal! New untranslated and unapproved strings were added to the project. To get back to a 100% completion rate, all the new strings should be translated and validated.
 
 ### Mistakes in the source strings

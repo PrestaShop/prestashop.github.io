@@ -6,7 +6,16 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 May 2023 10:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 May 2023 12:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 9 minimum PHP version will be PHP8.1</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-9-min-php-version-will-be-81/</link>
+      <pubDate>Fri, 12 May 2023 12:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-9-min-php-version-will-be-81/</guid>
+      <description>The develop branch contains the source code that will give birth to PrestaShop 9. This is the future of PrestaShop: it will be released either at the end of the year 2023 or at the beginning of the year 2024 and must carry on the ambition of the project for 2024. This major version must also embrace the change in the PHP ecosystem, and consequently, it must drop the support of obsolete PHP versions.</description>
+    </item>
+    
     <item>
       <title>Louis Authie: Freelancer, Contributor and Author</title>
       <link>https://build.prestashop-project.org/news/2023/contributor-interview-louis-authie/</link>
@@ -152,17 +161,6 @@ The session&amp;rsquo;s agenda was as follows: 00:00 Beginning of the session: t
       <description>The second patch version for PrestaShop 8 is now available to download!
 Version 8.0.2 is available! In this patch, you can find over 20 bug fixes. As a patch version, 8.0.2 brings further goodness and stability to the 8.0 branch.
 There were several noteworthy issues addressed in PrestaShop&amp;rsquo;s 8.0.2 milestone. The upgrade mechanism had a problem where it couldn&amp;rsquo;t check if the PHP session had started on some webservers, which was reported by many community members.</description>
-    </item>
-    
-    <item>
-      <title>Announcing March PrestaShop Project Live Update</title>
-      <link>https://build.prestashop-project.org/news/2023/upcoming-live-update-3-2023/</link>
-      <pubDate>Tue, 07 Mar 2023 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/upcoming-live-update-3-2023/</guid>
-      <description>The third Live Update for the PrestaShop Project will happen on Wednesday, March 8th, 2023 at 4 pm (Paris time) on YouTube!
-Tomorrow we&amp;rsquo;ll discuss what happened in the project in February. We&amp;rsquo;ll show you recent changes in the developer documentation, and some of the new features from PrestaShop 8.1.
-At the end of every meeting, there is a Q&amp;amp;A session. You can ask your questions beforehand. If you have some, about things related to the open source project, feel free to ask using this form.</description>
     </item>
     
   </channel>

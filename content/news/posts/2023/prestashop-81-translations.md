@@ -3,7 +3,7 @@ layout: post
 aliases: ["/news/prestashop-81-translations"]
 title: "PrestaShop 8.1 is ready for translation"
 subtitle: "New features equal new strings"
-date: 2023-05-15 10:00:00
+date: 2023-05-16 10:00:00
 authors: [LéaDelin]
 icon: icon-world
 tags: [translation, i18n, l10n, "8.1"]

@@ -6,7 +6,17 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 May 2023 10:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop Live Update - May 2023</title>
+      <link>https://build.prestashop-project.org/news/2023/live-update-5-2023/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/live-update-5-2023/</guid>
+      <description>The project&amp;rsquo;s live update was held for the fifth time this year and streamed live on May 17th, 2023.
+The session&amp;rsquo;s agenda was as follows: 00:00 Beginning of the session: the introduction 02:07 Project news: PrestaShop 8.0.4 and 1.7.8.9 releases 03:06 Project news: PrestaShop 8.1 is ready for translation 04:47 Project news: two new interviews with the community 05:30 Project news: Classic theme and PrestaShop 9.0 09:09 Project news: minimum PHP compatibility for PrestaShop 9.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1 is ready for translation</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-81-translations/</link>
@@ -151,16 +161,6 @@ Hello AmirRzd! :-) Can you tell us more about yourself?</description>
       <description>The fourth Live Update for the PrestaShop Project will happen on Wednesday, April 12th, 2023 at 4 pm (Paris time) on YouTube!
 Tomorrow we&amp;rsquo;ll discuss what&amp;rsquo;s going on in the project, show you recent changes in the developer documentation, and, most importantly, @eternoendless will share exciting news about the project&amp;rsquo;s organization.
 Remember that at the end of every meeting, there is a Q&amp;amp;A session. You can ask your questions during the presentation or beforehand.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.0.3 is available</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</link>
-      <pubDate>Mon, 03 Apr 2023 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</guid>
-      <description>The third patch version for PrestaShop 8 is now available to download!
-It was a rather bumpy road at the end because of issues we found during the release process, but here it is! In the newest patch version for PrestaShop 8 you can find a security improvement, and three fixes: one related to inaccurate wording in web services configuration, one which fixes the link to the user documentation in the installer, and one significant fix which improves how clearing the cache behaves in the software.</description>
     </item>
     
   </channel>

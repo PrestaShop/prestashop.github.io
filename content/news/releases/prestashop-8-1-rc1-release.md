@@ -19,9 +19,9 @@ We are happy to announce the first release candidate of PrestaShop 8.1.
 
 ![PrestaShop 8.1 Release Candidate 1 is available](/assets/images/2023/02/banner_8.1_1534x424.png)
 
-We're on the brink of releasing the final 8.1 version. This time, the Release Candidate version is being shared simultaneously to the community and the project's Quality Assurance (QA) team. The idea is for everyone to collectively confirm that all issues identified in the beta version have been resolved, ensuring its suitability for production use. If no major problems are reported by June X, we'll move ahead and launch the final version of 8.1.
+We're on the brink of releasing the final 8.1 version. This time, the Release Candidate version is being shared simultaneously with the community and the project's Quality Assurance (QA) team. The idea is for everyone to collectively confirm that all issues identified in the beta version have been resolved, ensuring their suitability for production use. If no major problems are reported by June X, we'll move ahead and launch the final version of 8.1.
 
-Remember, this version might still have some problems. So, it's not safe to use it in production environment yet! Also, please remember that ight now you can't move from the beta to the release candidate version, and you also can't move from this RC version to the final version using the upgrade module.
+Remember, this version might still have some problems. So, it's not safe to use it in a production environment yet! Also, please remember that right now, you can't move from the beta to the release candidate version, and you also can't move from this RC version to the final version using the upgrade module.
 
 ## Your feedback is important!
 
@@ -50,7 +50,7 @@ And if everything is working well, feel free to comment on this article to tell 
 Besides that, numerous modifications were made to the new product page and additional features that are now accessible in version 8.1.
 Check out the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0-rc.1) to see all the changes in detail.
 
-All the major bugs have been fixed, and [the remaining minor ones](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.1.x+label%3ABug+label%3ARegression) will be fixed in the upcoming 8.1.1 patch release.
+All the critical bugs have been fixed, and [the remaining ones](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.1.x+label%3ABug+label%3ARegression) will be fixed in the upcoming 8.1.1 patch release.
 
 If you're curious about all the changes and new things coming in 8.1, the [8.1 beta version release note]({{< relref "/news/releases/prestashop-8-1-beta-release" >}}) is just the right thing for you to look at!
 

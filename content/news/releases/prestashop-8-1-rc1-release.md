@@ -47,8 +47,7 @@ And if everything is working well, feel free to comment on this article to tell 
 - [Some of the smarty functions are now registered manually, these changes may impact some of the third-party solutions](https://github.com/PrestaShop/PrestaShop/pull/32197)
 - [Classic theme has been updated to version 2.1.1](https://github.com/PrestaShop/PrestaShop/pull/32574)
 
-Other than that, there was a lot of changes regarding the new product page and other new features that are available in the 8.1 version.
-
+Besides that, numerous modifications were made to the new product page and additional features that are now accessible in version 8.1.
 Check out the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0-rc.1) to see all the changes in detail.
 
 All the major bugs have been fixed, and [the remaining minor ones](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.1.x+label%3ABug+label%3ARegression) will be fixed in the upcoming 8.1.1 patch release.

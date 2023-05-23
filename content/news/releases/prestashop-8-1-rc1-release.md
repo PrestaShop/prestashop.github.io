@@ -28,7 +28,6 @@ Remember, this version might still have some problems. So, it's not safe to use 
 Much like the public beta, the release candidate phase holds great significance in gearing up for the forthcoming release. At this stage, we're urging all community members to get this version, install it, and see how it performs in their individual settings.
 
 Here are some examples of how you can help:
-* If you have access to a real shop, set up a copy of it in a separate environment and update it to PrestaShop 8 using the [upgrade module](https://github.com/PrestaShop/autoupgrade/releases). See if you notice any issues on the shop compared to your previous version.
 * If you are a module or theme developer, check if they work well with this new version.
 * If you notice any problem and you think it is caused by the new version, please [report it on GitHub](https://github.com/PrestaShop/PrestaShop/issues/new/choose).
 * Don’t hesitate to [contribute to fixing bugs](https://devdocs.prestashop-project.org/8/contribute/contribute-pull-requests/) if you can!
@@ -41,10 +40,14 @@ If you have any questions about the version and its features, feel free to share
 
 And if everything is working well, feel free to comment on this article to tell us, and share your thoughts on social networks, we also need this kind of feedback! ;-)
 
-
 ## Notable changes since the beta release
 
-WIP
+- [Code related to the old product page has been deprecated and will be removed in PrestaShop 9.0](https://github.com/PrestaShop/PrestaShop/pull/32194)
+- [New image management system is now under the "New feature" flag](https://github.com/PrestaShop/PrestaShop/pull/31662)
+- [Some of the smarty functions are now registered manually, these changes may impact some of the third-party solutions](https://github.com/PrestaShop/PrestaShop/pull/32197)
+- [Classic theme has been updated to version 2.1.1](https://github.com/PrestaShop/PrestaShop/pull/32574)
+
+Other than that, there was a lot of changes regarding the new product page and other new features that are available in the 8.1 version.
 
 Check out the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0-rc.1) to see all the changes in detail.
 

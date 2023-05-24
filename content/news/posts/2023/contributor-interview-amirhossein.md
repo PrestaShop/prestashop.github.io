@@ -1,7 +1,7 @@
 ---
 layout: post
 aliases: ["/news/contributor-interview-amirhossein"]
-title: "PrestaShop ambassador, merchant and contributor: meet AmirRzd"
+title: "PrestaShop ambassador, merchant and contributor: meet Amirhossein Rezazadeh"
 subtitle: "Discover the faces behind translations"
 date: 2023-04-12
 authors: [LéaDelin]
@@ -18,7 +18,7 @@ tags:
 
 **Have you ever wondered who’s hiding behind a Crowdin username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project.**
 
-**For the first interview of 2023, I interviewed Amirhossein, aka [AmirRzd](https://crowdin.com/profile/AmirRzd)**.
+**For the first interview of 2023, I interviewed Amirhossein Rezazadeh, aka [AmirRzd](https://crowdin.com/profile/AmirRzd)**.
 
 <img style="border: 1px solid #CCC; float: center; margin: 0 1em 1em 0;" width="517" height="388" src="/assets/images/2023/amirhossein.png">
 
@@ -90,5 +90,3 @@ And a special thanks to Alex Even and iPresta for their work to make PrestaShop 
 **Thank you so much for your help! Keep up the great work** 🙌
 
 **Are you interested in becoming a translator? Everything you need to know is available in our new [translation guide](https://docs.prestashop-project.org/translating-prestashop/translating-prestashop-software-basics/translating-on-crowdin). You can join us on the PrestaShop project, available on [Crowdin](https://crowdin.com/project/prestashop-official).**
-
-

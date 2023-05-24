@@ -50,7 +50,7 @@ And if everything is working well, feel free to comment on this article to tell 
 Besides that, numerous modifications were made to the new product page and additional features that are now accessible in version 8.1.
 Check out the [changelog](https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0-rc.1) to see all the changes in detail.
 
-All the critical bugs have been fixed, and [the remaining ones](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.1.x+label%3ABug+label%3ARegression) will be fixed in the upcoming 8.1.1 patch release.
+All the critical bugs have been fixed, and [the remaining ones](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.1.x+label%3ABug+label%3ARegression) will be fixed in the upcoming 8.1.x patch release.
 
 If you're curious about all the changes and new things coming in 8.1, the [8.1 beta version release note]({{< relref "/news/releases/prestashop-8-1-beta-release" >}}) is just the right thing for you to look at!
 
@@ -63,4 +63,4 @@ You can download PrestaShop 8.1 release candidate here:
 
 A big thank you to the 36 people who contributed to this release candidate:
 
-0x346e3730, Alexandre Hellin, Antonin Clauzier, bibips, Boris Hermans, Boubker Bribri, Cedric Vangout, Codencode, Daniel Hlavacek, Fabien Papet, Franck Lefèvre, Ibrahima Sow, Jakub Łach, Jens Wilke, jevgenijvisockij, Jonathan Lelievre, Julius Žukauskas, Krystian Podemski, Léa Delin, Lorenz Meyer, Mathias Reker, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, Pablo Borowicz, PICHAT Morgan, Prestaworks, PrestonBot, Robin Fischer, Salim Benouamer, Sharak, Thomas Baccelli, Thomas Nares, Thomas Leone
+Alexandre Hellin, Antonin Clauzier, bibips, Boris Hermans, Boubker Bribri, Cedric Vangout, Codencode, Daniel Hlavacek, Fabien Papet, Franck Lefèvre, Ibrahima Sow, Jakub Łach, Jens Wilke, jevgenijvisockij, Jonathan Lelievre, Julius Žukauskas, Krystian Podemski, Léa Delin, Lorenz Meyer, Mathias Reker, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, Pablo Borowicz, PICHAT Morgan, Prestaworks, PrestonBot, Robin Fischer, Salim Benouamer, Sharak, Thomas Baccelli, Thomas Nares, Thomas Leone

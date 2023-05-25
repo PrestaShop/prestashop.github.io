@@ -6,7 +6,17 @@
     <description>Recent content in releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Apr 2023 17:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1 Release Candidate Is Ready To Be Tested!</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/</guid>
+      <description>We are happy to announce the first release candidate of PrestaShop 8.1.
+We&amp;rsquo;re on the brink of releasing the final 8.1 version. This time, the release candidate version is being shared simultaneously with the community and the project&amp;rsquo;s Quality Assurance (QA) team. The idea is for everyone to collectively confirm that all issues identified in the beta version have been resolved, ensuring their suitability for production use. If no major problems are reported by June 26th, we&amp;rsquo;ll move ahead and launch the final version of 8.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.0.4 is available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-4-maintenance-release/</link>
@@ -157,18 +167,6 @@ Issues addressed in release 1.7.8.6 Front office FO - Create an account - the al
 We also fix 4 minors bugs.
 We suggest upgrading your store quickly to benefit from these bug fixes. Make sure to perform a full manual backup before, so you can roll back the upgrade if something goes wrong.
 Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don&amp;rsquo;t forget to upgrade it.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.8.4</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-4-maintenance-release/</link>
-      <pubDate>Wed, 09 Mar 2022 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-4-maintenance-release/</guid>
-      <description>PrestaShop 1.7.8.4 is now available. This maintenance release fixes 23 bugs and feature request.
-We suggest upgrading your store quickly to benefit from these bug fixes. Make sure to perform a full manual backup before, so you can roll back the upgrade if something goes wrong.
-Reminder: the latest version of the 1-Click Upgrade module is v4.14.0, don&amp;rsquo;t forget to upgrade it.
-Bug fixes and improvements Reverts the integration of Symfony kernel in the webservice dispatcher Update links to docs : docs.</description>
     </item>
     
   </channel>

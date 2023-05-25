@@ -6,7 +6,17 @@
     <description>Recent content in version on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Apr 2023 17:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1 Release Candidate Is Ready To Be Tested!</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/</guid>
+      <description>We are happy to announce the first release candidate of PrestaShop 8.1.
+We&amp;rsquo;re on the brink of releasing the final 8.1 version. This time, the release candidate version is being shared simultaneously with the community and the project&amp;rsquo;s Quality Assurance (QA) team. The idea is for everyone to collectively confirm that all issues identified in the beta version have been resolved, ensuring their suitability for production use. If no major problems are reported by June 26th, we&amp;rsquo;ll move ahead and launch the final version of 8.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.0.4 is available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-4-maintenance-release/</link>
@@ -154,18 +164,6 @@ The maintainer team has been made aware that malicious actors are exploiting a c
       <description>Dear developers and contributors,
 We are very pleased to be announcing the feature freeze of PrestaShop version 8.0. In this post, we will be looking at the most important features of this feature freeze, letting you know why we have frozen new features and explain what this means for the next few months.
 Feature freeze is now effective Therefore, as of today, the feature freeze is now effective and no new features will be added to version 8.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.8.6</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-6-maintenance-release/</link>
-      <pubDate>Tue, 17 May 2022 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-6-maintenance-release/</guid>
-      <description>It has been decided to deliver a new maintenance release for 1.7.8.X branch.
-In this release we fix a couple of issues, notably :
-2 Major bugs 4 Minor bugs Reminder: the 1-Click Upgrade module’s latest version is v4.14.1, don’t forget to upgrade it.
-Issues addressed in release 1.7.8.6 Front office FO - Create an account - the alert is duplicated when we create a new account with invalid firstname and lastname Back office BO - An unnecessary comma is displayed in the location page BO - An exception is displayed in the Oustanding page when the customer with valid orders is deleted BO - Module manager- Exception is displayed when profiling is active BO - Unable to import &amp;lsquo;United State&amp;rsquo; at localization.</description>
     </item>
     
   </channel>

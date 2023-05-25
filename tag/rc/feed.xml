@@ -6,7 +6,17 @@
     <description>Recent content in rc on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Oct 2022 14:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/rc/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/rc/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1 Release Candidate Is Ready To Be Tested!</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/</guid>
+      <description>We are happy to announce the first release candidate of PrestaShop 8.1.
+We&amp;rsquo;re on the brink of releasing the final 8.1 version. This time, the release candidate version is being shared simultaneously with the community and the project&amp;rsquo;s Quality Assurance (QA) team. The idea is for everyone to collectively confirm that all issues identified in the beta version have been resolved, ensuring their suitability for production use. If no major problems are reported by June 26th, we&amp;rsquo;ll move ahead and launch the final version of 8.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.0 Release Candidate Is Ready To Be Tested!</title>
       <link>https://build.prestashop-project.org/news/2022/prestashop-8-0-rc1-release/</link>
@@ -151,16 +161,6 @@ Like we did for v1.6.1.1, we want to give v1.6.1.2 a solid testing phase: we are
       <description>Following the publication of version 1.6.1.1 Release Candidate 1, we have fixed a few more issues that had been identified. Thanks for helping with the tests and for the feedback!
 As announced earlier, version 1.6.1.0 turned out great, but there were still a few bumps here and there. We have fixed the main issues that were reported: 163 pull requests were merged into this version!
 We&amp;rsquo;d like to keep testing it with the help of our Community!</description>
-    </item>
-    
-    <item>
-      <title>Test PrestaShop 1.6.1.1 RC1</title>
-      <link>https://build.prestashop-project.org/news/2015/prestashop-1-6-1-1-rc1/</link>
-      <pubDate>Tue, 04 Aug 2015 17:37:41 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2015/prestashop-1-6-1-1-rc1/</guid>
-      <description>As announced two weeks ago, version 1.6.1.0 turned out great, but there were still a few bumps here and there. We have fixed the main issues that were reported: 140 pull requests were merged into this version!
-We are now ready to start the testing phase with our Community! We want to give this version a solid testing phase: we are planning two weeks for feedback on the issues that were fixed in this 1.</description>
     </item>
     
   </channel>

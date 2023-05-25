@@ -6,7 +6,17 @@
     <description>Recent content in minor on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Feb 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/minor/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/minor/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1 Release Candidate Is Ready To Be Tested!</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/</guid>
+      <description>We are happy to announce the first release candidate of PrestaShop 8.1.
+We&amp;rsquo;re on the brink of releasing the final 8.1 version. This time, the release candidate version is being shared simultaneously with the community and the project&amp;rsquo;s Quality Assurance (QA) team. The idea is for everyone to collectively confirm that all issues identified in the beta version have been resolved, ensuring their suitability for production use. If no major problems are reported by June 26th, we&amp;rsquo;ll move ahead and launch the final version of 8.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1 beta is open for feedback!</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-beta-release/</link>
@@ -152,18 +162,6 @@ Fixed in this Release Candidate 2 Front Office:</description>
       <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-rc-release/</guid>
       <description>This is the last step before releasing the final 1.7.6.0. It aims at making sure that all regressions found during the beta have been fixed, and that no new ones appeared. If no new regression is reported by July 1st, we will make the final version of 1.7.6.0 available.
 Please note that it is not currently possible to perform an automatic upgrade from the Beta to the Release Candidate. Furthermore, it will not be possible to upgrade from this Release Candidate to the final release.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 1.7.6.0 beta is open for feedback!</title>
-      <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-beta-release/</link>
-      <pubDate>Mon, 13 May 2019 15:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-beta-release/</guid>
-      <description>The first Beta version for PrestaShop 1.7.6.0 is now ready for you to test!
-We are really happy to announce that we are close to releasing 1.7.6.0.
-Over 6 months in the making, PrestaShop 1.7.6.0 will be a huge release, our biggest one yet, with over 600 merged Pull Requests at the time of writing.
-As they say, an image is worth a thousand words, so here&amp;rsquo;s a graph to show how this beta compares with previous final releases in terms of number of contributions:</description>
     </item>
     
   </channel>

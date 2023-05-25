@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop 8.1 Release Candidate Is Ready To Be Tested!</title>
+    <link href="/style.css?1685008015" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop 8.1 Release Candidate Is Ready To Be Tested!" />
+<meta property="og:description" content="We are happy to announce the first release candidate of PrestaShop 8.1." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2023-05-25T00:00:00+02:00" />
+    <meta property="article:modified_time" content="2023-05-25T00:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/2023/02/banner_8.1_1024x512.jpg">
+<meta name="twitter:title" content="PrestaShop 8.1 Release Candidate Is Ready To Be Tested!"/>
+<meta name="twitter:description" content="After the Beta, the first release candidate for PrestaShop 8.1 is now ready for you to test!"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip': false });
+			}
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop 8.1 Release Candidate Is Ready To Be Tested!</h1>
+              
+                <h3 class="post-subtitle">After the Beta, the first release candidate for PrestaShop 8.1 is now ready for you to test!</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      
+
+      <img class="img-circle" src="/assets/images/authors/prestashop-team.png"
+         alt="PrestaShop team's photo">
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">PrestaShop team</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    May 25, 2023
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;8.1&#43;Release&#43;Candidate&#43;Is&#43;Ready&#43;To&#43;Be&#43;Tested%21&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2023%2Fprestashop-8-1-rc1-release%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2023%2Fprestashop-8-1-rc1-release%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>We are happy to announce the first release candidate of PrestaShop 8.1.</p>
+<p><img src="/assets/images/2023/02/banner_8.1_1534x424.png" alt="PrestaShop 8.1 release candidate 1 is available"></p>
+<p>We&rsquo;re on the brink of releasing the final 8.1 version. This time, the release candidate version is being shared simultaneously with the community and the project&rsquo;s Quality Assurance (QA) team. The idea is for everyone to collectively confirm that all issues identified in the beta version have been resolved, ensuring their suitability for production use. If no major problems are reported by June 26th, we&rsquo;ll move ahead and launch the final version of 8.1.</p>
+<p>Remember, this version might still have some problems. So, it&rsquo;s not safe to use it in a production environment yet! Also, please remember that right now, you can&rsquo;t move from the beta to the release candidate version, and you also can&rsquo;t move from this RC version to the final version using the upgrade module.</p>
+<h2 id="your-feedback-is-important">Your feedback is important!</h2>
+<p>Much like the public beta, the release candidate phase holds great significance in gearing up for the forthcoming release. At this stage, we&rsquo;re urging all community members to get this version, install it, and see how it performs in their individual settings.</p>
+<p>Here are some examples of how you can help:</p>
+<ul>
+<li>If you are a module or theme developer, check if they work well with this new version.</li>
+<li>If you notice any problem and you think it is caused by the new version, please <a href="https://github.com/PrestaShop/PrestaShop/issues/new/choose">report it on GitHub</a>.</li>
+<li>Don’t hesitate to <a href="https://devdocs.prestashop-project.org/8/contribute/contribute-pull-requests/">contribute to fixing bugs</a> if you can!</li>
+</ul>
+<p><strong>Your feedback is essential.</strong> The more issues you report right now, the fewer bugs there will be on the final release, which means fewer patch versions and fewer problems on your (or your customer’s) online store.</p>
+<p><strong>Please submit all your feedback by June 26th, 2023.</strong> If no new critical or major issue remains to be fixed by then, the final release will be made available. This is the final chance to test this new version before the final release is out!</p>
+<p>If you have any questions about the version and its features, feel free to share them on <a href="https://www.prestashop-project.org/slack/">the PrestaShop project’s Slack</a>.</p>
+<p>And if everything is working well, feel free to comment on this article to tell us, and share your thoughts on social networks, we also need this kind of feedback! ;-)</p>
+<h2 id="upgrade-from-178-and-80-to-81">Upgrade from 1.7.8 and 8.0 to 8.1</h2>
+<p>The upgrade path to PrestaShop 8.1.0 is not available yet. We are prioritizing the development of the autoupgrade module which will let you upgrade your shops from versions 8.0.x and 1.7.8.x to the upcoming 8.1.0 version. We set a one-month goal to complete this module before the 8.1.0 final release on June 26th, 2023. However, regardless of the module&rsquo;s completion status, the 8.1.0 release will proceed.</p>
+<h2 id="notable-changes-since-the-beta-release">Notable changes since the beta release</h2>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/32194">Code related to the old product page has been deprecated and will be removed in PrestaShop 9.0</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/31662">New image management system is now under the &ldquo;New feature&rdquo; flag</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/32197">Some of the smarty functions are now registered manually, these changes may impact some of the third-party solutions</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/32574">Classic theme has been updated to version 2.1.1</a></li>
+</ul>
+<p>Besides that, numerous modifications were made to the new product page and additional features that are now accessible in version 8.1.
+Check out the <a href="https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0-rc.1">changelog</a> to see all the changes in detail.</p>
+<p>All the critical bugs have been fixed, and <a href="https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A8.1.x+label%3ABug+label%3ARegression">the remaining ones</a> will be fixed in the upcoming 8.1.x patch release.</p>
+<p>If you&rsquo;re curious about all the changes and new things coming in 8.1, the <a href="/news/2023/prestashop-8-1-beta-release/">8.1 beta version release note</a> is just the right thing for you to look at!</p>
+<h2 id="download">Download</h2>
+<p>You can download PrestaShop 8.1 release candidate here:
+<a href="https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0-rc.1">Download PrestaShop 8.1 release candidate now!</a></p>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>A big thank you to the 36 people who contributed to this release candidate:</p>
+<p>Alexandre Hellin, Antonin Clauzier, bibips, Boris Hermans, Boubker Bribri, Cedric Vangout, Codencode, Daniel Hlavacek, Fabien Papet, Franck Lefèvre, Ibrahima Sow, Jakub Łach, Jens Wilke, jevgenijvisockij, Jonathan Lelievre, Julius Žukauskas, Krystian Podemski, Léa Delin, Lorenz Meyer, Mathias Reker, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, Pablo Borowicz, PICHAT Morgan, Prestaworks, PrestonBot, Robin Fischer, Salim Benouamer, Sharak, Thomas Baccelli, Thomas Nares, Thomas Leone</p>
+
+
+          </article>
+
+            
+
+
+            
+
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">May 25, 2023</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+
+              
+  <a class="label label-primary" href="/tag/version/">version</a>
+
+  <a class="label label-primary" href="/tag/rc/">rc</a>
+
+  <a class="label label-primary" href="/tag/minor/">minor</a>
+
+  <a class="label label-primary" href="/tag/releases/">releases</a>
+
+  <a class="label label-primary" href="/tag/8.1/">8.1</a>
+
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      PrestaShop team
+      <span></span>
+    </h4>
+
+    
+    
+    
+    
+    
+      <a class="btn btn-default btn-sm" href="https://prestashop-project.org">
+        <i class="icon-home"></i> Website
+      </a>
+    
+  
+
+
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2023\/prestashop-8-1-rc1-release\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

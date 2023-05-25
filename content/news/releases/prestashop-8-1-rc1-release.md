@@ -62,7 +62,8 @@ If you're curious about all the changes and new things coming in 8.1, the [8.1 b
 ## Download
 
 You can download PrestaShop 8.1 release candidate here:
-[Download PrestaShop 8.1 release candidate now!](https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0-rc.1)
+
+{{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0-rc.1" >}}Download PrestaShop 8.1 release candidate now!!{{< /cta >}}
 
 ## Acknowledgments
 

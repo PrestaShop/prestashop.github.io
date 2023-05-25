@@ -5,6 +5,7 @@ subtitle: "After the Beta, the first release candidate for PrestaShop 8.1 is now
 date: 2023-05-25
 authors: [ PrestaShop ]
 image: /assets/images/2023/02/banner_8.1_1200x627.jpg
+opengraph_image: /assets/images/2023/02/banner_8.1_1200x627.jpg
 twitter_image: /assets/images/2023/02/banner_8.1_1024x512.jpg
 icon: icon-leaf
 tags:

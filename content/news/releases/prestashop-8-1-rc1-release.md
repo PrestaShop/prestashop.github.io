@@ -40,6 +40,10 @@ If you have any questions about the version and its features, feel free to share
 
 And if everything is working well, feel free to comment on this article to tell us, and share your thoughts on social networks, we also need this kind of feedback! ;-)
 
+## Upgrade from 1.7.8 and 8.0 to 8.1
+
+The upgrade path to PrestaShop 8.1.0 is not available yet. We are prioritizing the development of the autoupgrade module which will let you upgrade your shops from versions 8.0.x and 1.7.8.x to the upcoming 8.1.0 version. We set a one-month goal to complete this module before the 8.1.0 final release on June 26th, 2023. However, regardless of the module's completion status, the 8.1.0 release will proceed.
+
 ## Notable changes since the beta release
 
 - [Code related to the old product page has been deprecated and will be removed in PrestaShop 9.0](https://github.com/PrestaShop/PrestaShop/pull/32194)

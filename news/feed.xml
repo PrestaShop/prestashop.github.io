@@ -6,7 +6,18 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop ZIP archives repository is available</title>
+      <link>https://build.prestashop-project.org/news/2023/we-publish-old-zip-archives/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/we-publish-old-zip-archives/</guid>
+      <description>In order to make sure old release packages remain available for anyone who needs them, we published a new GitHub repository &amp;ldquo;ZIP Archives&amp;rdquo;, which aims to store all published PrestaShop ZIP archives.
+Keeping trace of the past All the past versions of PrestaShop that the team could get their hands on were added to the repository since version 1.0.0.0.
+Past versions of the software can be useful for developers who have to intervene on a PrestaShop application running an old version, for example, to perform maintenance or upgrade.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1 Release Candidate Is Ready To Be Tested!</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/</link>
@@ -148,18 +159,6 @@ Project news 🎤 Contributor interviews are back! You’ve read that right – 
       <guid>https://build.prestashop-project.org/news/2023/live-update-4-2023/</guid>
       <description>The project&amp;rsquo;s live update was held for the fourth time this year and streamed live on April 12th, 2023.
 The session&amp;rsquo;s agenda was as follows: 00:00 Beginning of the session: the introduction 01:54 Project news: PrestaShop 8.0.2 and 8.0.3 releases 03:11 Project news: a new organization for the project 44:05 Demo: developer documentation improvements, by @kpodemski and @thomasnares You can use the timestamps to jump directly to the parts you want to watch.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop ambassador, merchant and contributor: meet Amirhossein Rezazadeh</title>
-      <link>https://build.prestashop-project.org/news/2023/contributor-interview-amirhossein/</link>
-      <pubDate>Wed, 12 Apr 2023 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/contributor-interview-amirhossein/</guid>
-      <description>Have you ever wondered who’s hiding behind a Crowdin username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project.
-For the first interview of 2023, I interviewed Amirhossein Rezazadeh, aka AmirRzd.
-Ranked 31st on the top translator page, Amirhossein is a translator and proofreader on the Persian project.
-Hello AmirRzd! :-) Can you tell us more about yourself?</description>
     </item>
     
   </channel>

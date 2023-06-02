@@ -18,7 +18,7 @@ tags:
 
 We are happy to announce the first release candidate of PrestaShop 8.1.
 
-![PrestaShop 8.1 release candidate 1 is available](/assets/images/2023/02/banner_8.1_1534x424.png)
+![PrestaShop 8.1 release candidate 1 is available](/assets/images/2023/05/banner_8.1release_1534x424.jpg)
 
 We're on the brink of releasing the final 8.1 version. This time, the release candidate version is being shared simultaneously with the community and the project's Quality Assurance (QA) team. The idea is for everyone to collectively confirm that all issues identified in the beta version have been resolved, ensuring their suitability for production use. If no major problems are reported by June 26th, we'll move ahead and launch the final version of 8.1.
 

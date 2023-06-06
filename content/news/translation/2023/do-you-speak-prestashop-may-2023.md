@@ -18,13 +18,13 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ## 🧰 The QA checker is up and running!
  
-As you’ve probably noticed, the Quality Assurance checker is now enabled on the translation project.
+The Quality Assurance checker is now enabled on the translation project.
 
 It doesn’t change anything to the current translation process, but it does add a final check to make sure translation strings don’t contain any typos or missing variables, among other things. The QA checker has been implemented to avoid bugs resulting from poor and unfinished translations.
 
 If you wish to learn more, check out [the 8.1 translation catalog release article](https://build.prestashop-project.org/news/2023/prestashop-81-translations/), in which I explain the current QA checker settings. Note that these may change in the future, as these settings are still being fine-tuned to best fit the translation project.
 
-Documentation regarding the QA checker will be added to [the PrestaShop Translation documentation](https://docs.prestashop-project.org/translating-prestashop/) soon. If there is anything you’d like me to clarify, feel free to contact me!
+Documentation regarding the QA checker has been added to [the PrestaShop Translation documentation](https://docs.prestashop-project.org/translating-prestashop/translating-prestashop-software-basics/translating-on-crowdin/proofreaders-qa-checker-ensuring-quality-translations). If there is anything you’d like me to clarify, feel free to contact me!
 
 ## 📖 PrestaShop 8.1 is still ready for translation!
 

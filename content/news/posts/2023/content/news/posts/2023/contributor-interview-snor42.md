@@ -18,7 +18,7 @@ tags:
 
 **For the second interview of 2023, we interview Norbert, aka [SNor42](https://crowdin.com/profile/snor42).**
 
-<img style="border: 1px solid #CCC; float: center; margin: 0 1em 1em 0;" width="517" height="388" src="static/assets/images/2023/snor42.jpg">
+<img src="https://github.com/PrestaShop/prestashop.github.io/assets/113511191/5a649c1c-bb2c-465a-9e49-e1e4f737da67" width="384" height="512">
 
 **Ranked 29th on the [top translator page](https://translators.prestashop.com/), Norbert is a translator and proofreader on the Hungarian project.**
 

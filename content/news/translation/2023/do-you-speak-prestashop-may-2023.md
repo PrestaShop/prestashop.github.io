@@ -2,7 +2,7 @@
 layout: post
 title: "Do You Speak PrestaShop? – May 2023 Edition"
 subtitle: "Where you'll learn that PrestaShop 8.1 is ready to be translated"
-date: 2023-06-9 10:00:00
+date: 2023-06-09
 authors: [LéaDelin]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

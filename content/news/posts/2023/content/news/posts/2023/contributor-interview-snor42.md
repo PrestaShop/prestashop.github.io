@@ -22,7 +22,6 @@ tags:
 
 **Ranked 29th on the [top translator page](https://translators.prestashop.com/), Norbert is a translator and proofreader on the Hungarian project.**
 
-<div style="clear:both"></div>
 
 **Hello SNor! :-) 👋 Can you tell me more about yourself? How many languages do you speak?**
 

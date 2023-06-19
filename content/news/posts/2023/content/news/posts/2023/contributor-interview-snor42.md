@@ -1,7 +1,7 @@
 ---
 layout: post
 aliases: ["/news/contributor-interview-snor42"]
-title: "Freelance developper and Translator: meet SNor42"
+title: "Freelance Developer and Translator: Meet SNor42"
 subtitle: "Discover the faces behind translations"
 date: 2023-06-20
 authors: [LéaDelin]

@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop Live Update - June 2023"
 subtitle: "A summary of what happened during the Live Update June 2023"
-date:   2023-06-21
+date:   2023-06-22
 authors: [ kpodemski ]
 icon: icon-video-camera
 tags: [contribute, event, community, live-update]

@@ -20,11 +20,11 @@ We are pleased to announce that PrestaShop 8.1 is officially available.
 
 ![PrestaShop 8.1 is available!](/assets/images/2023/02/banner_8.1_1534x424.png)
 
-PrestaShop 8.1, is a minor upgrade with major improvements. It's focused on making things faster and easier for you, transforming the way you use PrestaShop.
+PrestaShop 8.1 is a minor upgrade with major improvements. It's focused on making things faster and easier for you, transforming the way you use PrestaShop.
 
-The entirely reworked product management page delivers a more efficient and user-friendly experience. This new page make managing product combinations, prices, taxes, stock, and images quicker and easier. Multistore product management also has been drastically improved. Performance-wise, the new product management page is a whole new level, especially for stores with a large number of combinations.
+The entirely reworked product management page delivers a more efficient and user-friendly experience. This new page makes managing product combinations, prices, taxes, stock, and images quicker and easier. Multistore product management has also been drastically improved. Performance-wise, the new product management page is taken to a new level, especially for stores with a large number of combinations.
 
-Additional new features include improved control over product availability labels, enhanced SEO settings for products, and support for multiple format image generation (WebP, AVIF). There are also a few improvements for developers, such as simiplified access to the store's performance profiler.
+Additional new features include improved control over product availability labels, enhanced SEO settings for products, and support for multiple format image generation (WebP, AVIF). There are also a few improvements for developers, such as simplified access to the store's performance profiler.
 
 For a deeper dive into these changes, check out the "What's New in PrestaShop 8.1 Page".
 
@@ -54,6 +54,6 @@ PrestaShop is above all a community project: the vast majority of contributors a
 
 We would also like to thank the people who contributed aside from code:
 
-- Product management: Fabien Vallon, Mateus Shirlaw, Zoé Finders and Rosa Benouamer 
+- Product management: Fabien Vallon, Mateus Shirlaw, Zoé Finders and Rosa Benouamer.
 - Quality assurance: Achraf Kchaou, Anis Zouari, Aurélien Rita, Emna Chouichi, Faten Mhiri, Florine Hea, Hana Rebai, Hejer Elleuch, Hibatallah Aouadni, Ines Sallemi, Khouloud Belguith, Paul-Noël Cholot, Robin Fischer, Sarah Dib and Serhii Zavadskyi.
 - Wording management and proofreading: Léa Delin and Patrick Coffre.

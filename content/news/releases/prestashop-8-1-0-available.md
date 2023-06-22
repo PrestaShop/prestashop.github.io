@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.1 Is Available
 subtitle: Minor version, major improvements!
-date: 2023-06-20
+date: 2023-06-26
 authors: [ PrestaShop ]
 image: /assets/images/2023/02/banner_8.1_1200x627.jpg
 opengraph_image: /assets/images/2023/02/banner_8.1_1200x627.jpg
@@ -46,9 +46,9 @@ You can find the list of known issues here: [List of known issues on PrestaShop 
 
 ## Acknowledgments
 
-A big thank you to the X people who contributed to Y Pull Requests included in this version:
+A big thank you to people who contributed to Pull Requests included in this version:
 
-TO DO
+Abramo Franchetti, Alejandro Ramos, Aleksandro Sansan, Amit Kumar Tiwari, Angelo Romano, Antonin Clauzier, Arnaud Drieux, Arťom Evsin, Boris Hermans, Boubker Bribri, Cedric Vangout, Cesar Quintini, Chedly Farhani, Clotaire Renaud, Codencode, Daniel Hlavacek, David Gonzalez, David Oury, Dingedi, Fabien Papet, Florine Hea, Franck Lefèvre, hendaghanmi, Hugo Posnic, Ibrahima Sow, idnovate, Igor Stępień, Jakub Łach, Javi Domenech, Jean-François Viguier, Jens Wilke, Jeremie Legrand, Jérôme Weill, Jevgenij Visockij, jevgenijvisockij, Jonathan Danse, Jonathan Lelievre, Julius Žukauskas, Karel Balej, Karlis Suvi, Khouloud Belguith, Korbinian Lechner, Krystian Podemski, Laurent Rousseau, leemyongpakvn, Lorenz Meyer, Mahmoud Parvazi, Marco Ingraiti, Marco Salvatore, Marius Gudauskis, Markus Staab, Martin Kučera, Massimo Caroccia, Mateus Shirlaw, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Michał Kaleta, Mickaël Fernandez, Naveen Srinivasan, Nesrine Abdmouleh, Nicolas Lœuillet, okom3pom, Olivier Clemence, Òscar Casajuana, Pablo Borowicz, Paul Coudeville, PICHAT Morgan, Pierre-Yves Christmann, Prestaplugins, Prestasafe, Prestaworks, PrestonBot, PululuK, Rafał Miłecki, Robin Fischer, Roman Kotyra, Salim Benouamer, Sébastien Alfaiate, Sharak, Simone, SLRkingRing, Store Commander dev team, Tanguy JACQUET, Thomas Baccelli, Thomas Nabord, Thomas Nares, Thomas Leon, Tom Combet, Tuni-Soft, Valentin Szczupak, Yani Makouf
 
 PrestaShop is above all a community project: the vast majority of contributors are not directly affiliated with PrestaShop SA.
 

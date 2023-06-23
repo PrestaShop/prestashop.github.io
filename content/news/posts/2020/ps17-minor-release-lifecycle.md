@@ -12,6 +12,10 @@ tags:
  - beta
 ---
 
+{{% notice type="warning" title="Watch out!" icon="misc" %}}
+This article is outdated. Head to the [developer documentation](https://devdocs.prestashop-project.org/8/project/release/minor-release-lifecycle/) if you want to read about the current process.
+{{% /notice %}}
+
 
 The journey of the release of PrestaShop 1.7.7.0 has started. This moment is a nice opportunity to explain PrestaShop's minor release lifecycle.
 

@@ -1,24 +1,22 @@
 ---
 layout: post
-aliases: ["/news/contributor-interview-snor42"]
 title: "Freelance Developer and Translator: Meet SNor42"
 subtitle: "Discover the faces behind translations"
 date: 2023-06-23
 authors: [LéaDelin]
 icon: icon-world
-image: static/assets/images/2023/snor42.jpg
+image: static/assets/images/contributor-interviews/snor42.jpeg
 tags:
 - contribute
-
 - community
-
 - contribution
 ---
+
 **Have you ever wondered who’s hiding behind a Crowdin username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project.**
 
 **For the second interview of 2023, we interview Norbert, aka [SNor42](https://crowdin.com/profile/snor42).**
 
-<img src="https://github.com/PrestaShop/prestashop.github.io/assets/113511191/5a649c1c-bb2c-465a-9e49-e1e4f737da67" width="384" height="512">
+![Meet SNor42](/assets/images/contributor-interviews/snor42.jpeg)
 
 **Ranked 29th on the [top translator page](https://translators.prestashop.com/), Norbert is a translator and proofreader on the Hungarian project.**
 

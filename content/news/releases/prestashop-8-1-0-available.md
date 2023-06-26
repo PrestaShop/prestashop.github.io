@@ -38,7 +38,7 @@ PrestaShop 8.1 is available on GitHub:
 
 ## Upgrade
 
-**Important:** The [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade) is not yet able to safely upgrade shops to PrestaShop 8.1. The v4.16 release, enabling the upgrade to 8.1, is expected in the next few weeks. Stay tuned for news.
+The [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade) for this version is available. You can download the v4.16 release, enabling the upgrade to 8.1 [directly from GitHub](https://github.com/PrestaShop/autoupgrade/releases/download/v4.16.0/autoupgrade.zip).
 
 ## Known issues
 

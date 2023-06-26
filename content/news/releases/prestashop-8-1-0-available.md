@@ -28,7 +28,7 @@ Additional new features include improved control over product availability label
 
 For a deeper dive into these changes, check out the "What's New in PrestaShop 8.1 Page".
 
-{{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0" >}}What's new in version 8.1?{{< /cta >}}
+{{< cta "https://www.prestashop-project.org/releases/prestashop81/" >}}What's new in version 8.1?{{< /cta >}}
 
 ## Download
 

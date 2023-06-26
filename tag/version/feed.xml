@@ -6,7 +6,18 @@
     <description>Recent content in version on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Jun 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-0-available/</link>
+      <pubDate>Mon, 26 Jun 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-0-available/</guid>
+      <description>We are pleased to announce that PrestaShop 8.1 is officially available.
+PrestaShop 8.1 is a minor upgrade with major improvements. It&amp;rsquo;s focused on making things faster and easier for you, transforming the way you use PrestaShop.
+The entirely reworked product management page delivers a more efficient and user-friendly experience. This new page makes managing product combinations, prices, taxes, stock, and images quicker and easier. Multistore product management has also been drastically improved.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1 Release Candidate Is Ready To Be Tested!</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/</link>
@@ -153,17 +164,6 @@ The main new features for this version include an update to Symfony 4.4, compati
       <guid>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-7-maintenance-release/</guid>
       <description>PrestaShop version 1.7.8.7 is now available. This release fixes one important security issue, read this article for more information.
 The maintainer team has been made aware that malicious actors are exploiting a combination of known and unknown security vulnerabilities to inject malicious code in PrestaShop websites, allowing them to execute arbitrary instructions, and potentially steal customer’s payment information. You can read our dedicated article to find out what’s happening, how the attack works and what to do to keep your shop safe.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop Version 8.0 Feature Freeze: Important Features</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-feature-freeze-v8/</link>
-      <pubDate>Thu, 09 Jun 2022 12:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-feature-freeze-v8/</guid>
-      <description>Dear developers and contributors,
-We are very pleased to be announcing the feature freeze of PrestaShop version 8.0. In this post, we will be looking at the most important features of this feature freeze, letting you know why we have frozen new features and explain what this means for the next few months.
-Feature freeze is now effective Therefore, as of today, the feature freeze is now effective and no new features will be added to version 8.</description>
     </item>
     
   </channel>

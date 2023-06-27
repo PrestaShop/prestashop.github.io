@@ -54,6 +54,6 @@ PrestaShop is above all a community project: the vast majority of contributors a
 
 We would also like to thank the people who contributed aside from code:
 
-- Product management: Fabien Vallon, Mateus Shirlaw, Zoé Finders and Rosa Benouamer.
+- Product and project management: Rosa Benouamer, Zoé Finders, Fabien Vallon, Mateus Shirlaw and Wahbi Maaoui.
 - Quality assurance: Achraf Kchaou, Anis Zouari, Aurélien Rita, Emna Chouichi, Faten Mhiri, Florine Hea, Hana Rebai, Hejer Elleuch, Hibatallah Aouadni, Ines Sallemi, Khouloud Belguith, Paul-Noël Cholot, Robin Fischer, Sarah Dib and Serhii Zavadskyi.
 - Wording management and proofreading: Léa Delin and Patrick Coffre.

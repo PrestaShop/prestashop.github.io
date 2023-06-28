@@ -36,11 +36,13 @@ PrestaShop 8.1 is available on GitHub:
 
 {{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.0" >}}Download PrestaShop 8.1 now!{{< /cta >}}
 
+## New product management page
+
+Keep in mind that if you upgrade from the previous version and want to use the new product management page, you have to enable it in the "Advanced Parameters > New & Experimental Features > New product page". For new installations, this page is automatically available.
+
 ## Upgrade
 
 The [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade) for this version is available. You can download the v4.16 release, enabling the upgrade to 8.1 [directly from GitHub](https://github.com/PrestaShop/autoupgrade/releases/download/v4.16.0/autoupgrade.zip). For technical and backward compatibility reasons, upgrade for PrestaShop 8.1 is available under "Major upgrades" channel.
-
-If you upgrade from the previous version and want to use the new product management page, enable it in the "Advanced Parameters > New & Experimental Features > New product page".
 
 ## Known issues
 

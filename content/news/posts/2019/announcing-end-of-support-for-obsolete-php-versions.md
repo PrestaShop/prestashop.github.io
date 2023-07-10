@@ -12,6 +12,10 @@ tags:
  - development
 ---
 
+{{% notice type="success" title="Current PHP compatibility in PrestaShop" icon="megpahone" %}}
+You can check the current PHP compatibility of PrestaShop on [our documentation](https://devdocs.prestashop-project.org/8/basics/installation/system-requirements/#php-requirements). For PrestaShop 1.7 you can check [this page](https://devdocs.prestashop-project.org/1.7/basics/installation/system-requirements/#php-requirements).
+{{% /notice %}}
+
 About a year and a half ago, we announced that PrestaShop 1.7.4.0 would be [dropping support for PHP 5.4 and 5.5](http://build.prestashop.com/news/prestashop-1-7-is-moving-to-symfony-3-4-and-php-5-6/). At that time, this decision was justified by the impending end-of-maintenance for Symfony 2 and its replacement by Symfony 3, which didn't support PHP versions older than 5.5. 
 
 By late 2018, as the end-of-life of PHP 5.6 approached, a great deal of shared hosting providers started dropping support for that version on their services and upgrading their clients, forcibly or otherwise, to an officially maintained PHP 7.x version. Our metrics show that during the last year, the number of active shops running PrestaShop 1.7 on a PHP 7 or greater has increased significantly and is now over 75%.

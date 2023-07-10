@@ -9,6 +9,10 @@ icon: icon-laptop
 tags: [news, theme, "8.x"]
 ---
 
+{{% notice type="success" title="July 2023: Hummingbird is coming to PrestaShop 9!" icon="megpahone" %}}
+ It's been decided that Hummingbird will be the default theme for PrestaShop 9. You can take an active part in developing this new theme by [joining the discussion on Slack](https://www.prestashop-project.org/slack/), testing the theme and helping us to improve it. Make sure to check the theme's repository on [GitHub](https://github.com/PrestaShop/hummingbird).
+{{% /notice %}}
+
 For a long time, many community members have been pushing for a rework of the Classic front-office theme. The maintainer team is happy to announce that a new front-office theme is being built, and you can [find it here](https://github.com/PrestaShop/theme-refacto).
 
 ## Why such a decision?

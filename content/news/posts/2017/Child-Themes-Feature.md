@@ -12,6 +12,10 @@ tags:
  - theme
 ---
 
+{{% notice type="success" title="Documentation available!" icon="megpahone" %}}
+If you want to use child-themes in PrestaShop, make sure to check the latest documentation on [how Parent/child theme feature works in PrestaShop](https://devdocs.prestashop-project.org/8/themes/reference/template-inheritance/parent-child-feature/).
+{{% /notice %}}
+
 There is a feature introduced in PrestaShop 1.7.0 that we would like to dive back in: the child theme feature!
 
 PrestaShop 1.7 introduced a whole new way of working with themes, and with it came the possibility to have parent/child themes. It was a late addition to PrestaShop 1.7 -- kind of a bonus! So, let's talk about this child theme feature and how you can use it to customize themes more easily.

@@ -12,6 +12,9 @@ tags:
  - patch
 ---
 
+{{% notice type="warning" title="Watch out!" icon="misc" %}}
+This article is outdated. Head to the [developer documentation](https://devdocs.prestashop-project.org/8/project/release/patch-release-lifecycle/) if you want to read about the current process.
+{{% /notice %}}
 
 Following previous post about [Minor Release Lifecycle](https://build.prestashop.com/news/ps17-minor-release-lifecycle/), here is more explanations about software lifecycle at PrestaShop, focusing on patch releases and the release process.
 

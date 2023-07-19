@@ -42,7 +42,7 @@ Keep in mind that if you upgrade from the previous version and want to use the n
 
 ## Upgrade
 
-The [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade) for this version is available. You can download the v4.16 release, enabling the upgrade to 8.1 [directly from GitHub](https://github.com/PrestaShop/autoupgrade/releases/download/v4.16.0/autoupgrade.zip). For technical and backward compatibility reasons, upgrade for PrestaShop 8.1 is available under "Major upgrades" channel.
+The [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade) for this version is available. You can download the latest release, enabling the upgrade to 8.1 [directly from GitHub](https://github.com/PrestaShop/autoupgrade/releases). For technical and backward compatibility reasons, upgrade for PrestaShop 8.1 is available under "Major upgrades" channel.
 
 ## Known issues
 

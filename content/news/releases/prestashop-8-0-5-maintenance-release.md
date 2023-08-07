@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PrestaShop 8.0.5 is available
+title:  PrestaShop 8.0.5 Is Available
 subtitle: Security patch for 8.0.x branch is available
 date: 2023-08-07
 authors: [ PrestaShop ]
@@ -17,11 +17,11 @@ tags:
 - "8.0.x"
 ---
 
-The fith patch version for PrestaShop 8 is now available to download! This release contains a few security fixes, so we highly recommend you to upgrade your shop as soon as possible.
+The fifth patch version for PrestaShop 8 is now available to download! This release contains a few security fixes, so we highly recommend you to upgrade your shop as soon as possible.
 
 ![8.0.5 is available!](/assets/images/2023/07/805_banner_1534x424.png)
 
-PrestaShop 8.0.x branch is [no longer supported since release of PrestaShop 8.1](https://www.prestashop-project.org/project-organization/release-cycle/), but due to the high severity of the security issues fixed in this release, we decided to release a patch version for this branch.
+PrestaShop 8.0.x branch is [no longer supported since the release of PrestaShop 8.1](https://www.prestashop-project.org/project-organization/release-cycle/), but due to the high severity of the security issues fixed in this release, we decided to release a patch version for this branch.
 
 Apart from the security fixes, this release also contains [a few bug fixes](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.0.5+label%3A%22Bug+fix%22+-label%3A%22E2E+Tests%22). Most notable are:
 - [Fix disabling a module for a specific shop applied to all shops](https://github.com/PrestaShop/PrestaShop/pull/31379)
@@ -43,9 +43,9 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 
 ## Acknowledgments
 
-Contributors to this patch version, from both the project members and the community at large:
+Contributors to this patch version, from both the project members and the community at large, include:
 
-Boubker Bribri, Codencode, Daniel Hlavacek, Fabien Papet, Franck Lefèvre, Jonathan Lelievre, Krystian Podemski, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, PICHAT Morgan, Thomas Leone
+Boubker Bribri, Codencode, Daniel Hlavacek, Fabien Papet, Franck Lefèvre, Jonathan Lelievre, Krystian Podemski, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, PICHAT Morgan, Thomas Leone.
 
 Thank you!
 
@@ -53,6 +53,6 @@ Thank you!
 Download PrestaShop 8.0.5 now!
 {{< /cta >}}
 
-Since version 8.0.5 is a "patch" update, upgrading from previous 8.0.x versions should happen without any issues As for every upgrade, it's highly recommended to do a full manual backup beforehand.
+Since version 8.0.5 is a "patch" update, upgrading from previous 8.0.x versions should happen without any issues. As for every upgrade, it's highly recommended to do a full manual backup beforehand.
 
 If you encounter any problems during the upgrade that, in your opinion, are not caused by third-party modules or modifications used in your shop, [submit a bug report](https://www.prestashop-project.org/get-involved/report-issues/).

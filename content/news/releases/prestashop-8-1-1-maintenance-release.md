@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PrestaShop 8.1.1 is available
+title:  PrestaShop 8.1.1 Is Available
 subtitle: First patch for branch 8.1.x is available
 date: 2023-08-07
 authors: [ PrestaShop ]
@@ -31,7 +31,7 @@ You can go to the [release page](https://github.com/PrestaShop/PrestaShop/releas
 - [Fix for child themes/multishop themes translations](https://github.com/PrestaShop/PrestaShop/pull/33133)
 - [Fix for issue with PDF files being always in English if generated from back office](https://github.com/PrestaShop/PrestaShop/issues/32530)
 
-Some of those issues were reported on multiple occasions, so we are happy to finally have them fixed. We would like to thank everyone who reported those issues and helped us to fix them.
+Some of those issues were reported on multiple occasions, so we are happy to finally have them fixed. We would like to thank everyone who reported the issues and helped us fix them.
 
 For more details regarding security fixes, you can check the [security advisories](#security-advisories) section below.
 
@@ -52,9 +52,9 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 
 ## Acknowledgments
 
-Contributors to this patch version, from both the project members and the community at large:
+Contributors to this patch version, from both the project members and the community at large, include:
 
-Antonin Clauzier, Boris Hermans, Boubker Bribri, Codencode, Daniel Hlavacek, Fabien Papet, Fatima Mazhit, Franck Lefèvre, Ibrahima Sow, Jens Wilke, jolelievre, Jonathan Lelievre, Krystian Podemski, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, PICHAT Morgan, Thomas Leone
+Antonin Clauzier, Boris Hermans, Boubker Bribri, Codencode, Daniel Hlavacek, Fabien Papet, Fatima Mazhit, Franck Lefèvre, Ibrahima Sow, Jens Wilke, jolelievre, Jonathan Lelievre, Krystian Podemski, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, PICHAT Morgan, Thomas Leone.
 
 Thank you!
 

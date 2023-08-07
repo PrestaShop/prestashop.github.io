@@ -6,7 +6,41 @@
     <description>Recent content in releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jun 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Aug 2023 10:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1.1 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-1-maintenance-release/</link>
+      <pubDate>Mon, 07 Aug 2023 10:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-1-maintenance-release/</guid>
+      <description>The first patch for PrestaShop 8.1 is available. This release contains a few security fixes, so we highly recommend you to upgrade your shop as soon as possible.
+Version 8.1.1 fixes a few security issues found by security researchers and solves a great number of bugs reported by the community and project&amp;rsquo;s Quality Assurance team.
+You can go to the release page to see a full changelog, but it&amp;rsquo;s worth mentioning a few notable bug fixes:</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 8.0.5 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-5-maintenance-release/</link>
+      <pubDate>Mon, 07 Aug 2023 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-5-maintenance-release/</guid>
+      <description>The fifth patch version for PrestaShop 8 is now available to download! This release contains a few security fixes, so we highly recommend you to upgrade your shop as soon as possible.
+PrestaShop 8.0.x branch is no longer supported since the release of PrestaShop 8.1, but due to the high severity of the security issues fixed in this release, we decided to release a patch version for this branch.
+Apart from the security fixes, this release also contains a few bug fixes.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 1.7.8.10 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-1-7-8-10-maintenance-release/</link>
+      <pubDate>Mon, 07 Aug 2023 08:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-1-7-8-10-maintenance-release/</guid>
+      <description>A security patch for PrestaShop 1.7 is now available.
+As part of the extended support policy for PrestaShop 1.7, which involves taking care of critical and security fixes for the 1.7.8.x branch, we are releasing today a new patch for this version. This release fixes a few security issues found by security researchers.
+For more details regarding security fixes, you can check the security advisories section below.
+It is recommended to upgrade your shop quickly in order to benefit from these fixes.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1 Is Available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-0-available/</link>
@@ -133,39 +167,6 @@ A significant cleanup has been performed in the codebase, with several internal 
       <guid>https://build.prestashop-project.org/news/2022/prestashop-8-0-rc1-release/</guid>
       <description>The maintainers team is pleased to announce the first release candidate of PrestaShop 8.0.
 This is the last step before releasing the final 8.0 version. This release candidate is intended to allow the community to verify that all regressions found during the beta have been fixed and that the software is ready for production. If no major or critical regression is reported before October 20th, then the final version of 8.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.0 beta is open for feedback!</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-8-0-beta-release/</link>
-      <pubDate>Mon, 08 Aug 2022 15:30:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-8-0-beta-release/</guid>
-      <description>The public beta version of PrestaShop 8.0 is now ready for you to test!
-The maintainers team is very happy to announce today the release of the public beta version of PrestaShop 8.0. This version includes many new features, improvements and over 130 bug fixes.
-The main new features for this version include an update to Symfony 4.4, compatibility with PHP 8 and 8.1, an enhanced experimental product page, and a new security page which allows shop administrators to manage user sessions and configure their password policy.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.8.7</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-7-maintenance-release/</link>
-      <pubDate>Mon, 25 Jul 2022 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-7-maintenance-release/</guid>
-      <description>PrestaShop version 1.7.8.7 is now available. This release fixes one important security issue, read this article for more information.
-The maintainer team has been made aware that malicious actors are exploiting a combination of known and unknown security vulnerabilities to inject malicious code in PrestaShop websites, allowing them to execute arbitrary instructions, and potentially steal customer’s payment information. You can read our dedicated article to find out what’s happening, how the attack works and what to do to keep your shop safe.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.8.6</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-6-maintenance-release/</link>
-      <pubDate>Tue, 17 May 2022 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-6-maintenance-release/</guid>
-      <description>It has been decided to deliver a new maintenance release for 1.7.8.X branch.
-In this release we fix a couple of issues, notably :
-2 Major bugs 4 Minor bugs Reminder: the 1-Click Upgrade module’s latest version is v4.14.1, don’t forget to upgrade it.
-Issues addressed in release 1.7.8.6 Front office FO - Create an account - the alert is duplicated when we create a new account with invalid firstname and lastname Back office BO - An unnecessary comma is displayed in the location page BO - An exception is displayed in the Oustanding page when the customer with valid orders is deleted BO - Module manager- Exception is displayed when profiling is active BO - Unable to import &amp;lsquo;United State&amp;rsquo; at localization.</description>
     </item>
     
   </channel>

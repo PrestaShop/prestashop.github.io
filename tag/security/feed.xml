@@ -6,7 +6,41 @@
     <description>Recent content in security on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/security/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Aug 2023 10:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/security/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1.1 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-1-maintenance-release/</link>
+      <pubDate>Mon, 07 Aug 2023 10:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-1-maintenance-release/</guid>
+      <description>The first patch for PrestaShop 8.1 is available. This release contains a few security fixes, so we highly recommend you to upgrade your shop as soon as possible.
+Version 8.1.1 fixes a few security issues found by security researchers and solves a great number of bugs reported by the community and project&amp;rsquo;s Quality Assurance team.
+You can go to the release page to see a full changelog, but it&amp;rsquo;s worth mentioning a few notable bug fixes:</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 8.0.5 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-5-maintenance-release/</link>
+      <pubDate>Mon, 07 Aug 2023 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-5-maintenance-release/</guid>
+      <description>The fifth patch version for PrestaShop 8 is now available to download! This release contains a few security fixes, so we highly recommend you to upgrade your shop as soon as possible.
+PrestaShop 8.0.x branch is no longer supported since the release of PrestaShop 8.1, but due to the high severity of the security issues fixed in this release, we decided to release a patch version for this branch.
+Apart from the security fixes, this release also contains a few bug fixes.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 1.7.8.10 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-1-7-8-10-maintenance-release/</link>
+      <pubDate>Mon, 07 Aug 2023 08:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-1-7-8-10-maintenance-release/</guid>
+      <description>A security patch for PrestaShop 1.7 is now available.
+As part of the extended support policy for PrestaShop 1.7, which involves taking care of critical and security fixes for the 1.7.8.x branch, we are releasing today a new patch for this version. This release fixes a few security issues found by security researchers.
+For more details regarding security fixes, you can check the security advisories section below.
+It is recommended to upgrade your shop quickly in order to benefit from these fixes.</description>
+    </item>
+    
     <item>
       <title>Major Security Vulnerability on PrestaShop Websites</title>
       <link>https://build.prestashop-project.org/news/2022/major-security-vulnerability-on-prestashop-websites/</link>
@@ -132,39 +166,6 @@ What’s happening It has come to our attention that attackers are exploiting a 
       <description>PrestaShop 1.7.5.2 and 1.6.1.24 are now available. These versions fix a security issue for both 1.7.5.x and 1.6.1.x. For the details, please read below:
 These two security updates address a validation issue on the customer registration form, which is currently being exploited by spammers who were entering URLs as customer name.
 This update mitigates the problem by preventing attackers to use URLs as names. However, as we discussed before, the best protection against this kind of attack still is to add a CAPTCHA module on your shop.</description>
-    </item>
-    
-    <item>
-      <title>We were at the CMS Security Summit with Google</title>
-      <link>https://build.prestashop-project.org/news/2019/we-were-at-the-cms-security-summit-with-google/</link>
-      <pubDate>Mon, 04 Mar 2019 10:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2019/we-were-at-the-cms-security-summit-with-google/</guid>
-      <description>PrestaShop and other open source CMSs are working together to improve the security of websites.
-Winter is not coming, it is already here! As a member of the Open Source community, a few weeks ago PrestaShop went to the coldest place on earth, even colder than Antarctica, even colder than Siberia: YES, we went to Chicago on January 30th 2019 (-40º C)
-You’re all asking: &amp;ldquo;But what can we do on January in Chicago except eating Deep Dish pizza and drinking India Pale Ale?</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.4.4 and 1.6.1.23</title>
-      <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-4-4-1-6-1-23-maintenance-releases/</link>
-      <pubDate>Wed, 07 Nov 2018 14:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-4-4-1-6-1-23-maintenance-releases/</guid>
-      <description>PrestaShop 1.7.4.4 and 1.6.1.23 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. For the details, please read below:
-These two security updates fix issues on the file manager integrated in the text editor component in the Back Office. By exploiting a combination of security vunerabilities, an authenticated user in the Back Office could upload a malicious file that would then allow him or her to execute arbitrary code on the server.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.4.3 and 1.6.1.21</title>
-      <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</link>
-      <pubDate>Wed, 03 Oct 2018 15:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</guid>
-      <description>PrestaShop 1.7.4.3 and 1.6.1.21 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. Some important issues are also fixed for 1.6.1.x. For the details, please read below.
-Since these versions fix security problems, we strongly encourage you to upgrade your shop as soon as possible.
-The most notable fix for 1.7.4.3 is:
-Fixed a bug where sensitive configuration information could be disclosed when an fatal error occurred.</description>
     </item>
     
   </channel>

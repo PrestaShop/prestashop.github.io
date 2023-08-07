@@ -21,7 +21,7 @@ The first patch for PrestaShop 8.1 is available. This release contains a few sec
 
 ![8.1.1 is available!](/assets/images/2023/07/811_banner_1534x424.png)
 
-Version 8.1.1 fixes a few security issues found by security researchers and solves [a number of bugs](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.1+label%3A%22Bug+fix%22+-label%3A%22E2E+Tests%22+) reported by the community and project's Quality Assurance team.
+Version 8.1.1 fixes a few security issues found by security researchers and solves [a great number of bugs](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.1+label%3A%22Bug+fix%22+-label%3A%22E2E+Tests%22+) reported by the community and project's Quality Assurance team.
 
 You can go to the [release page](https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.1) to see a full changelog, but it's worth mentioning a few notable bug fixes:
 
@@ -29,16 +29,13 @@ You can go to the [release page](https://github.com/PrestaShop/PrestaShop/releas
 - [Fix for product editor not storing some fields in multi shop context](https://github.com/PrestaShop/PrestaShop/pull/33151)
 - [Register commonly used deprecated modifiers to Smarty config to avoid warnings in back office](https://github.com/PrestaShop/PrestaShop/pull/33136)
 - [Fix for child themes/multishop themes translations](https://github.com/PrestaShop/PrestaShop/pull/33133)
+- [Fix for issue with PDF files being always in English if generated from back office](https://github.com/PrestaShop/PrestaShop/issues/32530)
 
 Some of those issues were reported on multiple occasions, so we are happy to finally have them fixed. We would like to thank everyone who reported those issues and helped us to fix them.
 
 For more details regarding security fixes, you can check the [security advisories](#security-advisories) section below.
 
 It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. You can upgrade to the latest version using the [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade/releases/).
-
-{{% notice type="warning" title="Information about vulnerabilities" icon="warning" %}}
-<p>It's important to note that exploiting any fixed vulnerabilities requires valid authentication to access the back office.</p>
-{{% /notice %}}
 
 ---
 
@@ -63,6 +60,6 @@ Thank you!
 
 {{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.1" >}}Download PrestaShop 8.1.1 now!{{< /cta >}}
 
-Since version 8.1.1 is a "patch" update, upgrading from version 8.0.0 should happen without any issues.As for every upgrade, it's highly recommended to do a full manual backup beforehand.
+Since version 8.1.1 is a "patch" update, upgrading from previous 8.1.x versions should happen without any issues. As for every upgrade, it's highly recommended to do a full manual backup beforehand.
 
 If you encounter any problems during the upgrade that, in your opinion, are not caused by third-party modules or modifications used in your shop, [submit a bug report](https://www.prestashop-project.org/get-involved/report-issues/).

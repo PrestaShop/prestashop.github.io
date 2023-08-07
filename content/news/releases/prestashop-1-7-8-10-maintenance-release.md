@@ -26,10 +26,6 @@ For more details regarding security fixes, you can check the [security advisorie
 
 It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. You can upgrade to the latest version using the [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade/releases/).
 
-{{% notice type="warning" title="Information about vulnerabilities" icon="warning" %}}
-<p>It's important to note that exploiting any fixed vulnerabilities requires valid authentication to access the back office.</p>
-{{% /notice %}}
-
 ---
 
 ## Security advisories
@@ -38,7 +34,7 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 
 {{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.10" >}}Download PrestaShop 1.7.8.10 now!{{< /cta >}}
 
-Since version 1.7.8.10 is a "patch" update, upgrading from version 1.7.8.8 should happen without any issues.
+Since version 1.7.8.10 is a "patch" update, upgrading from version 1.7.8.9 should happen without any issues.
 
 Features will work better, and modules and themes, which worked fine on previous 1.7.8 release, will work just as well with 1.7.8.10. As for every upgrade, it's highly recommended to do a full manual backup beforehand.
 

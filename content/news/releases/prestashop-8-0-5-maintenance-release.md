@@ -26,16 +26,13 @@ PrestaShop 8.0.x branch is [no longer supported since release of PrestaShop 8.1]
 Apart from the security fixes, this release also contains [a few bug fixes](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.0.5+label%3A%22Bug+fix%22+-label%3A%22E2E+Tests%22). Most notable are:
 - [Fix disabling a module for a specific shop applied to all shops](https://github.com/PrestaShop/PrestaShop/pull/31379)
 - [Add string casting for boolean fields to avoid critical issues on PHP8+](https://github.com/PrestaShop/PrestaShop/pull/33048)
+- [Fix for issue with PDF files being always in English if generated from back office](https://github.com/PrestaShop/PrestaShop/issues/32530)
 
 For more details regarding security fixes, you can check the [security advisories](#security-advisories) section below.
 
 You can go to the [release page](https://github.com/PrestaShop/PrestaShop/releases/tag/8.0.5) to see a full changelog.
 
 It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. You can upgrade to the latest version using the [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade/releases/).
-
-{{% notice type="warning" title="Information about vulnerabilities" icon="warning" %}}
-<p>It's important to note that exploiting any fixed vulnerabilities requires valid authentication to access the back office.</p>
-{{% /notice %}}
 
 ---
 
@@ -56,6 +53,6 @@ Thank you!
 Download PrestaShop 8.0.5 now!
 {{< /cta >}}
 
-Since version 8.0.5 is a "patch" update, upgrading from version 8.0.0 should happen without any issues As for every upgrade, it's highly recommended to do a full manual backup beforehand.
+Since version 8.0.5 is a "patch" update, upgrading from previous 8.0.x versions should happen without any issues As for every upgrade, it's highly recommended to do a full manual backup beforehand.
 
 If you encounter any problems during the upgrade that, in your opinion, are not caused by third-party modules or modifications used in your shop, [submit a bug report](https://www.prestashop-project.org/get-involved/report-issues/).

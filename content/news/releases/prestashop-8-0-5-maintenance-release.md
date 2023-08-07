@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.0.5 Is Available
 subtitle: Security patch for 8.0.x branch is available
-date: 2023-08-07
+date: 2023-08-07 09:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2023/07/805_banner_1200x627.png
 opengraph_image: /assets/images/2023/07/805_banner_1200x627.png

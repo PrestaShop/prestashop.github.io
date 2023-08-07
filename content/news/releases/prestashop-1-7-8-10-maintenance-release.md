@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 1.7.8.10 Is Available
 subtitle: Security release for PrestaShop 1.7.8
-date: 2023-08-07
+date: 2023-08-07 08:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2023/07/17810_banner_1200_627.jpeg
 opengraph_image: /assets/images/2023/07/17810_banner_1200_627.jpeg

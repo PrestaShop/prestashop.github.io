@@ -2,7 +2,7 @@
 layout: post
 title: "Do You Speak PrestaShop? – July 2023 Edition"
 subtitle: "Where you'll learn that the PrestaShop project is looking for Japanese and Bosnian proofreaders"
-date: 2023-08-30
+date: 2023-08-21
 authors: [LéaDelin]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

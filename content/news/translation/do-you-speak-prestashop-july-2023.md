@@ -15,7 +15,7 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ## Project news
 
-## 🇯🇵/ 🇧🇦Looking for Japanese & Bosnian translators and proofeaders
+## 🇯🇵/ 🇧🇦Looking for Japanese/Bosnian translators and proofreaders
 
 🇯🇵The Japanese translation project is looking for translators and proofreaders! If you wish to join efforts and help contributor [momo-i](https://crowdin.com/profile/momo-i) translate PrestaShop into Japanese — or if you simply want to ask a question, [send me a message on Crowdin](https://crowdin.com/profile/lea.delin) or on Slack! 📨
 
@@ -23,7 +23,8 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ## 📖 New Basque proofreader
 
-This month, Basque and Spanish translator [Aitor Salaberria](https://crowdin.com/profile/a_mento) joined the Basque proofreading team. Congrats and thank you for your help! Keep up the great work 👏
+This month, Basque and Spanish translator [Aitor Salaberria](https://crowdin.com/profile/a_mento) joined the Basque proofreading team. 🎉
+Congrats and thank you for your help! Keep up the great work 👏
 
 ## A few stats
 
@@ -76,7 +77,6 @@ Remember, you can see who has been contributing to our translation project thank
  
 At the end of July, PrestaShop 8 was fully available (= 100% translated and validated) in **9 languages**. Congrats, everyone!
 
-
 ||||||
 |-----------|--------------|--------------|--------------|-----------------|
 | Catalan | Dutch | French | **Hungarian** | Italian |
@@ -108,4 +108,3 @@ If you have not joined us on Crowdin yet, [it is never too late](https://crowdin
 Thanks, everyone! 🙌
 
 {{< cta "https://www.prestashop-project.org/slack/" >}}Join us on Slack{{< /cta >}}
-

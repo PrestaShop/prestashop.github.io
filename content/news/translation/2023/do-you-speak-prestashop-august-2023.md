@@ -2,7 +2,7 @@
 layout: post
 title: "Do You Speak PrestaShop? – August 2023 Edition"
 subtitle: "Where you'll learn that the PrestaShop translation project has new managers"
-date: 2023-09-17
+date: 2023-09-18
 authors: [LéaDelin]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

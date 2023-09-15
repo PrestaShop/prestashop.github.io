@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "Do You Speak PrestaShop? – August 2023 Edition"
-subtitle: "Where you'll learn that the PrestaShop project is looking for Japanese and Bosnian proofreaders"
-date: 2023-09-14
+subtitle: "Where you'll learn that the PrestaShop translation project has new managers"
+date: 2023-09-17
 authors: [LéaDelin]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg
 tags: [translation, i18n, l10n]
 ---
 
-Contributing to PrestaShop is not only about the code, it's also about taking part in the [PrestaShop translation project](https://crowdin.com/project/prestashop-official)! This report will tell you how the software translations evolved in August.
+Contributing to PrestaShop is not only about the code, it's also about taking part in the [PrestaShop translation project](https://crowdin.com/project/prestashop-official)! This report will tell you how the software translations evolved in August 2023.
 
 ![Crowdin Monthly banner](/assets/images/2019/01/Build-Crowdin-banner.jpg)
 
@@ -17,11 +17,9 @@ Contributing to PrestaShop is not only about the code, it's also about taking pa
 
 ## Some updates on the translation project
 
+Starting September 18th 2023, the PrestaShop translation project will be managed by both [@Julievrz](https://crowdin.com/profile/julievrz) and [@axel.viersac](https://crowdin.com/profile/axel.viersac). As such, they will be the ones taking care of everything related to the project, including this newsletter. Feel free to message them if you need anything. 
 
-
-🇯🇵The Japanese translation project is looking for translators and proofreaders! If you wish to join efforts and help contributor [momo-i](https://crowdin.com/profile/momo-i) translate PrestaShop into Japanese — or if you simply want to ask a question, [send me a message on Crowdin](https://crowdin.com/profile/lea.delin) or on Slack! 📨
-
-🇧🇦The Bosnian translation project is also looking for proofreaders: the project is almost fully translated. There is only 7% of strings left to proofread and validate! With your help, the Bosnian project could reach 100% availability next month! 💪
+Keep up the great work, everyone! Over and out 🛫 
 
 ## A few stats
 
@@ -74,7 +72,7 @@ At the end of August, PrestaShop 8 was fully available (= 100% translated and va
  
 #### Almost there!
 
-**18** languages are almost fully available (99%/99%):
+**18** languages are almost fully available (99% translated/99% validated):
 
 ||||||
 |-----------|--------------|--------------|--------------|-----------------|
@@ -94,12 +92,12 @@ Indeed, some editing and rewriting may be going on, but the percentage of transl
 ## Translating PrestaShop: documentation
 
 Ever had a question regarding the translation project but never knew where to look exactly?  We've taken all your comments and suggestions and put them into a specific documentation, dedicated to you, translators! 📖
-In it, you'll find everything about Crowdin & documentation translations, as well as the project's Terms of Use along with a few userful resources, including the PrestaShop glossary.
 
-You can access the translator documentation anytime [here](https://docs.prestashop-project.org/translating-prestashop/)
-https://docs.prestashop-project.org/translating-prestashop/
+In it, you'll find everything about Crowdin & documentation translations, as well as the project's Terms of Use along with a few useful resources, including the PrestaShop glossary.
 
-Feel free to let us know if you have any suggestion or question at (mailto:translation@prestashop.com) 📩
+You can access the translator documentation anytime [here](https://docs.prestashop-project.org/translating-prestashop/).
+
+Feel free to let us know if you have any suggestions or questions by [sending us an email](mailto:translation@prestashop.com) 📩
 
 ## Let’s keep in touch!
 

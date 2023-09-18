@@ -51,4 +51,4 @@ If you find a bug or something that doesn't work as expected, please open a ['Bu
 
 ## Contributors
 
-{{< partial "partials/authors" >}}
+Read the [full list list of article contributors](/authors/).

@@ -88,12 +88,28 @@ img.emoji {
     display: inline;
 }
 
-.thumbnail.contributor {
-  border: none;
-  > img {
-    width: 200px;
-    height: 200px;
-  }
+.authors-list {
+    margin-top: 4rem;
+
+    .author-item {
+      text-align: center;
+      padding-bottom: 2rem;
+
+      .thumbnail {
+        border: none;
+        > img {
+          width: 180px;
+          height: 180px;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .author-name {
+        font-size: 1.8rem;
+        color: $text-color;
+        font-weight: 600;
+      }
+    }
 }
 
 
@@ -152,6 +168,7 @@ li {
             font-weight: 500;
             margin-bottom: $spacing-unit/3;
         }
+        // author name
         h4 {
             margin-top: 0;
             font-weight: 600;
@@ -164,6 +181,9 @@ li {
             }
             span.multiple {
                 display: inline;
+            }
+            a {
+              color: $text-color;
             }
         }
         p {
@@ -645,14 +665,32 @@ $autocomplete-width: 600px;
           margin-top: .8em;
       }
     }
+
     .author-display-name {
         font-weight: 600;
         margin-top: .2em;
+        a {
+            color: $text-color;
+        }
     }
     .author-display-role {
         font-size: .9em;
         margin-top: .2em;
     }
+}
+
+// appears on the "all posts by" page
+.author-header {
+  .author-avatar > img {
+    width: 140px;
+    margin-right: 4rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+  .author-display-role {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 /**

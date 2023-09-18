@@ -1,0 +1,26 @@
+<div class="author-avatar clearfix">
+  {{ $page := . }}
+  {{ range .Params.Authors }}
+      {{ if not (isset site.Data.authors .) }}
+          {{ errorf "The author \"%s\" is not defined! File: %s" . $page.File.Path }}
+      {{ end }}
+      {{- $author := index site.Data.authors . -}}
+      <a href="{{ partialCached "helper/getAuthorUrlFromName" . . }}">
+        <img class="img-circle" src="{{ $author.avatar }}" alt="{{ $author.display_name }}'s picture">
+      </a>
+  {{ end }}
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  {{ range .Params.Authors }}
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="{{ partialCached "helper/getAuthorUrlFromName" . . }}">{{ index $.Site.Data.authors . "display_name" }}</a>
+      </div>
+        {{ if index site.Data.authors . "role" }}
+          <div class="author-display-role">{{ index $.Site.Data.authors . "role" }}</div>
+        {{ end }}
+    </div>
+  {{ end }}
+</div>

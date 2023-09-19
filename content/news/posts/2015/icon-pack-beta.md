@@ -10,7 +10,7 @@ icon: icon-bonnet
 tags: [news]
 ---
 
-{{% notice type="warning" title="No longer supported" icon="megaphone" %}}
+{{% notice type="warning" title="No longer supported" icon="warning" %}}
 PrestaShop Icon Pack is no longer maintained. You can still use it, but we won't provide any support or updates for it.
 {{% /notice %}}
 

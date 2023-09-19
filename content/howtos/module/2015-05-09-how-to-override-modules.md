@@ -11,7 +11,7 @@ tags: [override, module]
 published: true
 ---
 
-{{% notice type="danger" title="This article may be outdated" icon="megaphone" %}}
+{{% notice type="danger" title="This article may be outdated" icon="warning" %}}
 Please note that this article refers to very old versions of PrestaShop. Check out the documentation to learn [how to override modules](https://devdocs.prestashop-project.org/8/modules/concepts/overrides/#override-a-module).
 {{% /notice %}}
 

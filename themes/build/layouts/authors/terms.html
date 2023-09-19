@@ -1,0 +1,26 @@
+{{/* This template displays the list of authors */}}
+{{ define "main" }}
+  <div class="home">
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <h1>Authors</h1>
+
+        <div class="row authors-list">
+            {{ range $page := .Pages }}
+                {{- with (index $.Site.Data.authors .Title) -}}
+                    <div class="col-xs-4 col-md-3 author-item">
+                      <a href="{{ $page.Permalink }}" class="thumbnail" title="{{ .display_name }}">
+                        <img src="{{ .avatar }}" class="img-responsive img-circle" alt="{{ .display_name }}'s profile picture">
+                        <span class="author-name">{{ .display_name }}</span>
+                      </a>
+                    </div>
+                {{- end -}}
+            {{ end }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+{{ end }}

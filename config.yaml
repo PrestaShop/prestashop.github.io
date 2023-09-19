@@ -51,6 +51,10 @@ outputFormats:
     mediaType: "application/ndjson"
     notAlternative: true
 
+taxonomies:
+  author: "authors"
+  tag: "tags"
+
 outputs:
   home:
     ["HTML", "RSS", "algolia"]

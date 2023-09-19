@@ -5,11 +5,31 @@
     <div class="col-md-12">
 
       {{- if (eq .Kind "term") -}}
+        {{- if (eq .Data.Singular "tag") -}}
           {{- $tagname := .Title -}}
           {{- with (where $.Site.Data.tags "slug" $tagname) -}}
               {{- with (index . 0) }}{{ $tagname = index . "name"}}{{ end -}}
           {{- end -}}
-          <h1>Articles by tag: {{ $tagname }}</h1>
+          <h1>Articles about {{ $tagname }}</h1>
+        {{- else if (eq .Data.Singular "author") -}}
+          {{- $authorData := index site.Data.authors .Title -}}
+
+          <div class="author-header clearfix">
+            <div class="author-avatar">
+              <img class="img-circle" src="{{ $authorData.avatar }}" alt="{{ $authorData.display_name }}'s picture">
+            </div>
+            <div>
+              <h1>All articles by {{ $authorData.display_name }}</h1>
+                {{ with $authorData.role }}
+                  <div class="author-display-role">{{ . }}</div>
+                {{ end }}
+                <div class="social">
+                  {{ partial "partials/author/social-buttons.html" $authorData }}
+                </div>
+            </div>
+          </div>
+
+        {{- end -}}
       {{- else if not .IsHome -}}
          <h1>{{ .Title }}</h1>
       {{- end -}}

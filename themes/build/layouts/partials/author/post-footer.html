@@ -1,0 +1,42 @@
+{{- define "partials/author-data" -}}
+    {{- $multiple := (index . "multiple") -}}
+    {{- $authorName := (index . "authorName") -}}
+    {{- $author := (index . "author") }}
+    <h4>
+      <a href="{{ partialCached "helper/getAuthorUrlFromName" $authorName $authorName }}">{{ $author.display_name }}</a>
+      <span{{ if $multiple }} class="multiple"{{ end }}>{{ $author.role }}</span>
+    </h4>
+
+    {{ partial "partials/author/social-buttons.html" . }}
+{{- end -}}
+
+<div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          {{ if gt (len .) 1 }}
+
+            <h5>About the authors</h5>
+
+            {{ range . }}
+              <div class="author-item">
+                  {{ partial "partials/author-data" (dict "author" (index site.Data.authors .) "multiple" true "authorName" . ) }}
+              </div>
+            {{ end }}
+
+          {{ else }}
+              {{ with (index . 0)}}
+
+                <h5>About the author</h5>
+
+                {{ partial "partials/author-data" (dict "author" (index site.Data.authors .) "multiple" false "authorName" . ) }}
+              {{ end }}
+          {{ end }}
+
+      </div>
+
+    </div>
+  </div>
+</div>

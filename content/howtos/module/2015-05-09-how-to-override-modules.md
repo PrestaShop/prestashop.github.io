@@ -11,7 +11,7 @@ tags: [override, module]
 published: true
 ---
 
-{{% notice type="danger" title="This article may be outdated" icon="megpahone" %}}
+{{% notice type="danger" title="This article may be outdated" icon="megaphone" %}}
 Please note that this article may be outdated and could potentially include inaccurate information. We recommend checking the latest documentation regarding [how to override modules](https://devdocs.prestashop-project.org/8/modules/concepts/overrides/#override-a-module).
 {{% /notice %}}
 

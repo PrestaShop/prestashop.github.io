@@ -10,8 +10,8 @@ tags:
  - development
 ---
 
-{{% notice type="success" title="Documentation available!" icon="megpahone" %}}
-If you want to read more about Docker in PrestaShop, make sure to check the latest documentation on [how to install and use PrestaShop with docker](https://devdocs.prestashop-project.org/8/basics/installation/environments/docker/).
+{{% notice type="success" title="Documentation available!" icon="megaphone" %}}
+If you want to learn more about Docker in PrestaShop, make sure to check the latest documentation on [how to install and use PrestaShop with docker](https://devdocs.prestashop-project.org/8/basics/installation/environments/docker/).
 {{% /notice %}}
 
 You’ve most probably heard about Docker and how great it is for development (and even maybe for production). Good news: we’ve cooked some things to help you develop on PrestaShop, thanks to Docker!

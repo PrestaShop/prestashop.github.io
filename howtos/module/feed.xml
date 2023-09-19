@@ -43,9 +43,8 @@ Note Several tips only apply to PrestaShop 1.5-1.6 module development. PrestaSho
       <pubDate>Sun, 10 May 2015 12:15:00 +0200</pubDate>
       
       <guid>https://build.prestashop-project.org/howtos/module/how-to-override-modules/</guid>
-      <description>Since version 1.6.0.11 of PrestaShop, there is a new feature that allows developers to override a module&amp;rsquo;s instance classes (ie. its main module files, see the PR by @axometeam).
-Since PrestaShop uses lots of modules for both core and custom features, module overrides are a welcome addition to an already great override system in PrestaShop. Let&amp;rsquo;s take a look on how to use it.
-Note Remember that overrides in PrestaShop are exclusive.</description>
+      <description>This article may be outdated Please note that this article refers to very old versions of PrestaShop. Check out the documentation to learn how to override modules. Since version 1.6.0.11 of PrestaShop, there is a new feature that allows developers to override a module&amp;rsquo;s instance classes (ie. its main module files, see the PR by @axometeam).
+Since PrestaShop uses lots of modules for both core and custom features, module overrides are a welcome addition to an already great override system in PrestaShop.</description>
     </item>
     
   </channel>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>boubkerbribri on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/boubkerbribri/</link>
+    <description>Recent content in boubkerbribri on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Oct 2020 12:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/boubkerbribri/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automated UI tests tutorial</title>
+      <link>https://build.prestashop-project.org/news/2020/how-to-write-a-new-ui-test/</link>
+      <pubDate>Mon, 26 Oct 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2020/how-to-write-a-new-ui-test/</guid>
+      <description>One year ago, the QA team started to develop a new test framework, based on Puppeteer, Mocha, and Chai. You can read more about the framework in this previous article: The (new) PrestaShop Test Framework. Since then, the tests coverage has been continually increasing, and we recently improved our framework by switching to Playwright.
+In this article, we will explain how to create a new UI (User Interface) test for the PrestaShop core project.</description>
+    </item>
+    
+  </channel>
+</rss>

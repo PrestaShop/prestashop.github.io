@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MathieuFerment on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/MathieuFerment/</link>
+    <description>Recent content in MathieuFerment on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/MathieuFerment/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop ZIP archives repository is available</title>
+      <link>https://build.prestashop-project.org/news/2023/we-publish-old-zip-archives/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/we-publish-old-zip-archives/</guid>
+      <description>In order to make sure old release packages remain available for anyone who needs them, we published a new GitHub repository &amp;ldquo;ZIP Archives&amp;rdquo;, which aims to store all published PrestaShop ZIP archives.
+Keeping trace of the past All the past versions of PrestaShop that the team could get their hands on were added to the repository since version 1.0.0.0.
+Past versions of the software can be useful for developers who have to intervene on a PrestaShop application running an old version, for example, to perform maintenance or upgrade.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 9 minimum PHP version will be PHP8.1</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-9-min-php-version-will-be-81/</link>
+      <pubDate>Fri, 12 May 2023 12:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-9-min-php-version-will-be-81/</guid>
+      <description>The develop branch contains the source code that will give birth to PrestaShop 9. This is the future of PrestaShop: it will be released either at the end of the year 2023 or at the beginning of the year 2024 and must carry on the ambition of the project for 2024. This major version must also embrace the change in the PHP ecosystem, and consequently, it must drop the support of obsolete PHP versions.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 1.7.8 is now in the extended support phase</title>
+      <link>https://build.prestashop-project.org/news/2023/178-in-extended-support-phase/</link>
+      <pubDate>Thu, 05 Jan 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/178-in-extended-support-phase/</guid>
+      <description>Now that PrestaShop 8.0 is out, here is a focus on maintained branches of the PrestaShop project and what to expect.
+Reminder: PrestaShop branching strategy In August 2015 PrestaShop adopted a new branching model for the project.
+The model was refined over the years, for example with this page on the developer documentation about what bugs do qualify for a patch version or the Backward Compatibility Promise that defines what changes can be introduced in a version, but we can say the model has lived quite well as the project is still following it in 2023.</description>
+    </item>
+    
+    <item>
+      <title>An update on the Symfony migration</title>
+      <link>https://build.prestashop-project.org/news/2022/introducing-horizontal-migration/</link>
+      <pubDate>Mon, 04 Jul 2022 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2022/introducing-horizontal-migration/</guid>
+      <description>In December 2015, a groundbreaking change in PrestaShop was announced: the introduction of the Symfony framework into the CMS. The goal was to gradually replace PrestaShop’s custom framework with Symfony, and switch its templating system from Smarty to Twig. This project was known as “The Symfony migration”. Looking back, we realize that referring to this project as a &amp;ldquo;migration&amp;rdquo; wasn&amp;rsquo;t really accurate at all.
+Currently, migrating one page to Symfony involves several steps:</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop Public OSS Demo - May 2021 session</title>
+      <link>https://build.prestashop-project.org/news/2021/public-oss-demo-5-2021/</link>
+      <pubDate>Wed, 26 May 2021 18:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2021/public-oss-demo-5-2021/</guid>
+      <description>The project&amp;rsquo;s fifth monthly public demo session was held and streamed live on May 26, 2021.
+The session&amp;rsquo;s agenda was as follows:
+00:00 Waiting for the stream to begin 00:46 Beginning of the session, introduction 00:59 Presentation of the agenda 02:05 Event rules 03:20 Project announcements 04:12 Demonstration #1 - Experimental Product Page in 1.7.8 by @MatShir and @jolelievre 33:50 Demonstration #2 - How to declare your module’s multistore compatibility by @matthieu-rolland 38:46 Demonstration #3 - Linklist module v5.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop Public OSS Demo - April 2021 session</title>
+      <link>https://build.prestashop-project.org/news/2021/public-oss-demo-4-2021/</link>
+      <pubDate>Thu, 29 Apr 2021 12:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2021/public-oss-demo-4-2021/</guid>
+      <description>The project&amp;rsquo;s fourth monthly public demo session was held and streamed live on April 28, 2021.
+The session&amp;rsquo;s agenda was as follows:
+00:00 Waiting for the stream to begin 00:20 Beginning of the session, introduction 00:51 Presentation of the agenda 01:31 Event rules 02:25 Project announcements 03:30 Demonstration #1 - Multistore news in 1.7.8 by @marionf 15:45 Demonstration #2 - Blockwishlist v2.0.0 by @lolath-presta and @Quetzacoalt91 19:17 Small network outage 21:35 Resuming demonstration #2 31:42 Demonstration #3 - Translation news in 1.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop Public OSS Demo - March 2021 session</title>
+      <link>https://build.prestashop-project.org/news/2021/public-oss-demo-3/</link>
+      <pubDate>Fri, 09 Apr 2021 12:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2021/public-oss-demo-3/</guid>
+      <description>The project&amp;rsquo;s third monthly public demo session was held and streamed live on March 31, 2021.
+The session&amp;rsquo;s agenda was as follows:
+00:00 Waiting for everybody to join 01:30 Beginning of the session, introduction 02:05 Presentation of the agenda 03:18 Event rules 04:33 Project announcements 05:12 First demonstration - 1.7.8 Feature Flags by @matks 10:00 Second demonstration - Backlog cleaning by @hibatallahAouadni 24:15 Questions &amp;amp; Answers 01:02:30 Closure You can use the timestamps to jump directly to the parts you want to watch.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop Public OSS Demo - Choosing the pace</title>
+      <link>https://build.prestashop-project.org/news/2021/regular-public-oss-demo-schedule/</link>
+      <pubDate>Mon, 22 Mar 2021 10:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2021/regular-public-oss-demo-schedule/</guid>
+      <description>Following the February session of the open source project&amp;rsquo;s public demo, we now feel confident to set a pace for these events.
+PrestaShop open source project&amp;rsquo;s public demo every month We aim to host open source project&amp;rsquo;s public demos the last Wednesday of each month at 2pm CET.
+In July 2021 we have chosen to move the demo to the first Wednesday of each month at 4pm CET to better accommodate PrestaShop community worldwide schedule.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop Public OSS Demo - February 2021 session</title>
+      <link>https://build.prestashop-project.org/news/2021/public-oss-demo-2/</link>
+      <pubDate>Mon, 01 Mar 2021 10:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2021/public-oss-demo-2/</guid>
+      <description>Last week, the maintainers team held again a video conferencing for the project public demonstrations session, streamed live on YouTube.
+The second Public open source demonstrations setup This was our second attempt to this type of meeting, in English.
+After exploring the different setups and tools capacities to host this event, we found that a suitable solution would be to host the session on Jitsi while streaming the video into a YouTube channel.</description>
+    </item>
+    
+    <item>
+      <title>Second public demo from the maintainers team</title>
+      <link>https://build.prestashop-project.org/news/2021/meet-us-second-oss-demo/</link>
+      <pubDate>Wed, 24 Feb 2021 13:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2021/meet-us-second-oss-demo/</guid>
+      <description>As announced previously, the next session of public demonstration from the maintainers team will happen tomorrow, Thursday 25th of February, at 2 pm CET!
+It will be streamed live on our newly created YouTube channel. Please find the link to join us below:
+Join us on YouTube! The session will be kept in record on YouTube, so that even if you can&amp;rsquo;t attend to the live stream, you will still be able to catch up later.</description>
+    </item>
+    
+    <item>
+      <title>Announcing public demos from the maintainers team</title>
+      <link>https://build.prestashop-project.org/news/2021/first-public-oss-demo/</link>
+      <pubDate>Fri, 19 Feb 2021 16:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2021/first-public-oss-demo/</guid>
+      <description>Last month, the maintainers team held a special event for the open source project: a public demonstrations session. To better understand what this is about, let&amp;rsquo;s provide some context.
+Demonstrations at PrestaShop Historically, the maintainers team of the PrestaShop open source project was only composed of employees from the PrestaShop company, developers assigned by the company to work on the project. This team used many forms of organizations over years, the most recent being a mix of Scrum rituals and Kanban method.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 1.7 patch release lifecycle</title>
+      <link>https://build.prestashop-project.org/news/2020/ps17-patch-release-lifecycle/</link>
+      <pubDate>Tue, 28 Apr 2020 10:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2020/ps17-patch-release-lifecycle/</guid>
+      <description>Watch out! This article is outdated. Head to the developer documentation if you want to read about the current process. Following previous post about Minor Release Lifecycle, here is more explanations about software lifecycle at PrestaShop, focusing on patch releases and the release process.
+This blog post explains:
+The detailed lifecycle for PrestaShop patch releases The decision process for patch releases The Maintainance scope Patch release lifecycle Patch releases are &amp;ldquo;maintainance&amp;rdquo; releases: they provide bug fixes and security patches, but do not provide enhancements or new features.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 1.7 minor release lifecycle</title>
+      <link>https://build.prestashop-project.org/news/2020/ps17-minor-release-lifecycle/</link>
+      <pubDate>Tue, 24 Mar 2020 14:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2020/ps17-minor-release-lifecycle/</guid>
+      <description>Watch out! This article is outdated. Head to the developer documentation if you want to read about the current process. The journey of the release of PrestaShop 1.7.7.0 has started. This moment is a nice opportunity to explain PrestaShop&amp;rsquo;s minor release lifecycle.
+The journey begins: Kanban and scope Each minor version is defined by a feature scope, that is, a number of GitHub issues that we put in a version Kanban (see 1.</description>
+    </item>
+    
+    <item>
+      <title>What happens to pull requests after they are submitted</title>
+      <link>https://build.prestashop-project.org/news/2019/the-review-process/</link>
+      <pubDate>Thu, 12 Sep 2019 11:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2019/the-review-process/</guid>
+      <description>The PrestaShop project currently (September 2019) has 389 pull requests open and new Pull Requests are opened almost everyday. All of these pull requests go through a thorough process which aims to provide a stable, consistent and reliable software that we all know under the name PrestaShop. Here is this process in details.
+Automatic tasks when you open a Pull Request When you submit a new Pull Request to the project repository https://github.</description>
+    </item>
+    
+  </channel>
+</rss>

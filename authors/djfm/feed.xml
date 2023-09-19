@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>djfm on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/djfm/</link>
+    <description>Recent content in djfm on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Aug 2015 12:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/djfm/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>We&#39;re building a Starter Theme for PrestaShop 1.7.0.0</title>
+      <link>https://build.prestashop-project.org/news/2015/starter-theme-kickoff/</link>
+      <pubDate>Fri, 28 Aug 2015 12:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2015/starter-theme-kickoff/</guid>
+      <description>If you&amp;rsquo;ve ever tried to create a PrestaShop theme from scratch, you might have noticed it requires quite a large skillset: not only must you know HTML, CSS and Smarty, but you also need to be very familiar with the inner workings of PrestaShop itself. There is a lot of business logic going on in the templates, it is hard to tell apart classes that are used for styling from classes that are used by JavaScript-powered features, etc.</description>
+    </item>
+    
+    <item>
+      <title>Architecture Improvements in 1.6.1.0</title>
+      <link>https://build.prestashop-project.org/news/2015/new-architecture-1-6-1-0/</link>
+      <pubDate>Thu, 21 May 2015 19:13:37 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2015/new-architecture-1-6-1-0/</guid>
+      <description>With the release of PrestaShop 1.6.1.0 we are going to introduce exciting new tools in the codebase that are designed to help write more modular, testable code that enforces separation of concerns.
+We are releasing our work on the software architecture of PrestaShop to start discussing it with our community, gather ideas and feedback, and improve it together.
+Since we are introducing many new concepts we felt a few explanations were in order.</description>
+    </item>
+    
+  </channel>
+</rss>

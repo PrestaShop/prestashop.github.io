@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MehdiBadrani on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/MehdiBadrani/</link>
+    <description>Recent content in MehdiBadrani on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Apr 2019 11:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/MehdiBadrani/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>E2E testing from the trenches: Our new approach</title>
+      <link>https://build.prestashop-project.org/news/2019/E2E-testing-from-the-trenches-our-new-approach/</link>
+      <pubDate>Wed, 03 Apr 2019 11:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2019/E2E-testing-from-the-trenches-our-new-approach/</guid>
+      <description>This article is intended to catch you up with the most important changes in our testing framework. Terms, architecture, tools, and approaches to E2E testing in Prestashop in 2019.
+It combines many good practices in testing well working at Prestashop where we implemented different testing solutions for different projects and contexts. I invite you to have a look on our previous article to refresh your memory.
+But what are E2E tests?</description>
+    </item>
+    
+    <item>
+      <title>The PrestaShop Test Framework</title>
+      <link>https://build.prestashop-project.org/news/2018/prestashop-test-framework/</link>
+      <pubDate>Fri, 16 Feb 2018 09:10:11 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2018/prestashop-test-framework/</guid>
+      <description>Last time we announced a new suite of functional tests to ensure our software quality, today we are proud to present you our new feature, the PrestaShop Test Framework!
+It is a cool toolkit like a Swiss knife which will help to save a lot of time by running at least 50 automated functional tests on your browser&amp;hellip; and this is only the beginning! It makes easier to create basic acceptance testing when adding Addons, submitting pull requests or making some customizations on your Prestashop.</description>
+    </item>
+    
+  </channel>
+</rss>

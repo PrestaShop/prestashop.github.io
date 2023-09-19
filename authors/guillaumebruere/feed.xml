@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>guillaumebruere on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/guillaumebruere/</link>
+    <description>Recent content in guillaumebruere on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Jul 2017 09:10:11 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/guillaumebruere/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stock management in PrestaShop 1.7 - part 3</title>
+      <link>https://build.prestashop-project.org/news/2017/stock-management-in-prestashop-1-7-part-3/</link>
+      <pubDate>Thu, 13 Jul 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/stock-management-in-prestashop-1-7-part-3/</guid>
+      <description>In the previous episodes, we’ve seen the motivations for designing a new stock management interface and how we’ve built it. By now, you must be pretty eager to see what it looks like for real… So let’s dive into the features of this new page of PrestaShop 1.7.2.0.
+How do you get started? From the back-office left menu, just click on Catalog / Stock. That’s it!
+No need to activate an “advanced stock management” option from an obscure configuration page, nor to create a warehouse and then assign products to a warehouse and then assign every product to this stock management system… You see the point: contrary to PrestaShop 1.</description>
+    </item>
+    
+    <item>
+      <title>Stock Management in PrestaShop 1.7 - part 2</title>
+      <link>https://build.prestashop-project.org/news/2017/stock-management-in-prestashop-1-7-part-2/</link>
+      <pubDate>Thu, 22 Jun 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/stock-management-in-prestashop-1-7-part-2/</guid>
+      <description>In a previous article, we’ve explained the reasons why we’re rebuilding the stock management system in 1.7. We detailed the initial brief of this project: the context, our intentions, what was out-of-scope and the expected outcome. In this article, I want to dive into our methodologies and the main steps of this project.
+Remember this diagram?
+It outlines the workflow of product management, design and development we’ve put into practice to ship a new major feature.</description>
+    </item>
+    
+    <item>
+      <title>Stock Management in PrestaShop 1.7</title>
+      <link>https://build.prestashop-project.org/news/2017/stock-management-in-prestashop-1-7/</link>
+      <pubDate>Fri, 28 Apr 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/stock-management-in-prestashop-1-7/</guid>
+      <description>In late 2016, the PrestaShop product team took a challenging decision: rebuild the stock management system of PrestaShop 1.7. At the origins of this project was a thorough investigation and a truth-facing moment.
+To present the project’s outline, I’ll use a framework called “Auftragsklärung” (German for “Clarification Briefing”) created by Xing, itself inspired by “The Art of Action” by Stephen Bungay. This is an exercise we’ve put into practice in the product team: it helped us align the understanding and goals of various stakeholders in top management, developers, designers, and other business units.</description>
+    </item>
+    
+    <item>
+      <title>User tests are not enough</title>
+      <link>https://build.prestashop-project.org/news/2016/user-tests-are-not-enough/</link>
+      <pubDate>Wed, 30 Nov 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2016/user-tests-are-not-enough/</guid>
+      <description>As a designer, product manager or entrepreneur you’ve probably been told countless times that user feedback is gold (and that’s true!). There’s no shortage of books and articles that describe the benefits of testing your product with your users. While these documents provide good advice on how the test is done, they often lack explanations on how to make sense of this feedback and how this process fits inside a team.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop &#43; Azure: meet the team behind it all!</title>
+      <link>https://build.prestashop-project.org/news/2016/PrestaShop-Azure-Technical-event/</link>
+      <pubDate>Thu, 30 Jun 2016 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2016/PrestaShop-Azure-Technical-event/</guid>
+      <description>Our core team worked closely in the past few months with the Microsoft Azure Team to build 4 ready-to-use PrestaShop cloud hosting plans. You’re invited to discover an exclusive preview of it in Paris next week!
+From standalone virtual machines to multi-VMs solutions, these 4 offers have been built to help you be more adaptable and scalable. They include powerful tools and services, such as high availability, SQL clusters and load balancers with auto-scaling web servers just to name a few.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop episode 1.7: the module page awakens</title>
+      <link>https://build.prestashop-project.org/news/2016/module-page-awakens/</link>
+      <pubDate>Fri, 15 Jan 2016 15:30:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2016/module-page-awakens/</guid>
+      <description>We’ve been working on this project for a while now, and it is about time we tell you about the new module page we are planning for PrestaShop 1.7.0! Since September, our team (Thibaud, Thomas, Melvin, Guilhem, Léa and myself) has been busy redesigning the outdated module page of version 1.6. Needless to say, it is an important subject for PrestaShop’s business, but most importantly a key step in merchants’ journey to a successful online store.</description>
+    </item>
+    
+  </channel>
+</rss>

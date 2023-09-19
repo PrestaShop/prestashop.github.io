@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xavierborderie on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/xavierborderie/</link>
+    <description>Recent content in xavierborderie on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Oct 2017 09:10:11 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/xavierborderie/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Release of PrestaShop 1.7.2.4</title>
+      <link>https://build.prestashop-project.org/news/2017/prestashop-1-7-2-4-maintenance-release/</link>
+      <pubDate>Tue, 24 Oct 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/prestashop-1-7-2-4-maintenance-release/</guid>
+      <description>PrestaShop 1.7.2.4 is now available. This is a security release for all previous versions of PrestaShop 1.7.
+It was recently reported to the Core team that the PrestaShop front office leaked some sensitive cart product details, among which wholesale and supplier.
+The issue was introduced by a PR merged in February 2017. Therefore, the issue impacts versions 1.7.1.0 to 1.7.2.3 of PrestaShop.
+The fixing changes can be found in PR #8433.</description>
+    </item>
+    
+    <item>
+      <title>Contributor interview: Sullivan Sénéchal</title>
+      <link>https://build.prestashop-project.org/news/2017/contributor-interview-sullivan-senechal/</link>
+      <pubDate>Fri, 20 Oct 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/contributor-interview-sullivan-senechal/</guid>
+      <description>An Open Source community is more than just PR made by faceless strangers. In order to better understand the people who contribute time and skills to the PrestaShop project, we&amp;rsquo;re launching a series of interviews with contributors of all ranges. This week, meet Sullivan Sénéchal!
+Hi Sullivan! First, could you tell us a bit about yourself?
+I am a 26 years old web development expert working at a hosting company in Roubaix, France.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop Core Weekly - Week 41 of 2017</title>
+      <link>https://build.prestashop-project.org/news/2017/2017-10-20-coreweekly-week-41-2017/</link>
+      <pubDate>Fri, 20 Oct 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/2017-10-20-coreweekly-week-41-2017/</guid>
+      <description>This edition of the Core Weekly report highlights changes in PrestaShop&amp;rsquo;s core codebase during the last week, from Monday 09th to Sunday 15th of October 2017.
+General messages No doubt that you are already aware of it as you read each article as soon as published (right?) but let us say it again : PrestaShop 1.7.2.3 is now available! It contains numerous fixes, all listed here that will help all features, modules and themes to work better.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop Core Weekly - Weeks 39-40 of 2017</title>
+      <link>https://build.prestashop-project.org/news/2017/2017-10-12-coreweekly-weeks-39-40-2017/</link>
+      <pubDate>Thu, 12 Oct 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/2017-10-12-coreweekly-weeks-39-40-2017/</guid>
+      <description>This edition of the Core Weekly report highlights changes in PrestaShop&amp;rsquo;s core codebase during the last two weeks, from Monday 25th of September to Sunday 8th of October 2017.
+General messages This week, you should really read our article about the future of PrestaShop 1.6: &amp;ldquo;A year into 1.6 maintenance: the way forward&amp;rdquo;.
+From the day we released version 1.7.0.0 in late 2016, version 1.6 has been put in &amp;ldquo;maintenance mode&amp;rdquo;, with regular bugfix versions until October 2018 &amp;ndash; two full years after the release.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.2.3</title>
+      <link>https://build.prestashop-project.org/news/2017/prestashop-1-7-2-3-maintenance-release/</link>
+      <pubDate>Mon, 09 Oct 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/prestashop-1-7-2-3-maintenance-release/</guid>
+      <description>PrestaShop 1.7.2.3 is now available. This maintenance release fixes 17 issues reported on version 1.7.2.x.
+Some of the most notable fixes are:
+New loading spinner in Product Creation page. New Context mocker for FrontController tests. Fix for a voucher issue. Fix currency display in supply order. Fix cart rules conflict issue. Fix web service product update. Download PrestaShop 1.7.2.3 now! Here is the complete list of changes:
+Back Office:
+Improvement: #7810: Add a loading spinner into product page Bug fix: #7938: Update bulk action combinations number after delete or add combination #8232: Fixed bug in AdminCartRulesController when limiting the validity … #8287: Fix the category search in the product page #8288: Fix displaying empty zip code of tax rule #8346: Fix the currency display in supply order #8366: Use default country instead of translator locale for marketplace API Front Office:</description>
+    </item>
+    
+    <item>
+      <title>A year into 1.6 maintenance: the way forward</title>
+      <link>https://build.prestashop-project.org/news/2017/a-year-into-1-6-maintenance/</link>
+      <pubDate>Fri, 06 Oct 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/a-year-into-1-6-maintenance/</guid>
+      <description>A year ago, we released PrestaShop 1.7.0.0, and put version 1.6 in maintenance mode. The plan is to maintain it for two years, with regular patch releases. Approaching the one-year mark, time for a review!
+So, first things first: we are of course as committed as ever to support version 1.6 until October 2018. As you know, we are keeping our promise: A dedicated team of developers has been assigned to process 1.</description>
+    </item>
+    
+    <item>
+      <title>Contributor interview: Andrej Staš</title>
+      <link>https://build.prestashop-project.org/news/2017/contributor-interview-andrej-stas/</link>
+      <pubDate>Wed, 04 Oct 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/contributor-interview-andrej-stas/</guid>
+      <description>An Open Source community is more than just PR made by faceless strangers. In order to better understand the people who contribute time and skills to the PrestaShop project, we&amp;rsquo;re launching a series of interviews with contributors of all ranges. This week, meet Andrej Staš!
+Hi Andrej! First, could you tell us a bit about yourself?
+Hi Xavier! I&amp;rsquo;m an IT freelancer working on several projects, and one of them is also PrestaBuilder.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop Core Weekly - Weeks 37-38 of 2017</title>
+      <link>https://build.prestashop-project.org/news/2017/2017-09-25-coreweekly-weeks-37-38-2017/</link>
+      <pubDate>Mon, 25 Sep 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/2017-09-25-coreweekly-weeks-37-38-2017/</guid>
+      <description>This edition of the Core Weekly report highlights changes in PrestaShop&amp;rsquo;s core codebase during the last two weeks, from Monday 11th to Sunday 24th of September 2017.
+General messages Aaaaaand we&amp;rsquo;re back with a new set of merged pull requests!
+A good many things were published here since the last Core Weekly, so let&amp;rsquo;s review those, and some more:
+Contribute to the UI kit of the 1.7 back office: A call for the community to participate in the design and development of the UI Kit for the PrestaShop 1.</description>
+    </item>
+    
+    <item>
+      <title>The PrestaCrew is always hiring!</title>
+      <link>https://build.prestashop-project.org/news/2017/prestashop-always-hiring/</link>
+      <pubDate>Thu, 21 Sep 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/prestashop-always-hiring/</guid>
+      <description>Looking to have an impact on +270.000 users all at once? Look no further! PrestaShop is always willing to hire new talents, and this special post will point to some specific roles we are looking to add to our current roster.
+Always hiring?! First and foremost: we are always looking to add members to the team, most particularly PHP developers &amp;ndash; but not limited to that!
+So if you find yourself wandering around aimlessly in Paris, come visit us!</description>
+    </item>
+    
+    <item>
+      <title>Contributor interview: Nick Zampieri</title>
+      <link>https://build.prestashop-project.org/news/2017/contributor-interview-nick-zampieri/</link>
+      <pubDate>Fri, 15 Sep 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/contributor-interview-nick-zampieri/</guid>
+      <description>An Open Source community is more than just PR made by faceless strangers. In order to better understand the people who contribute time and skills to the PrestaShop project, we&amp;rsquo;re launching a series of interviews with contributors of all ranges. This week, meet Nick Zampieri!
+Hi Nick! First, could you tell us a bit about yourself?
+I have been an IT Professional for more than 20 years, primarily with large global enterprises.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop Core Weekly - Week 36 of 2017</title>
+      <link>https://build.prestashop-project.org/news/2017/2017-09-11-coreweekly-week-36-2017/</link>
+      <pubDate>Mon, 11 Sep 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/2017-09-11-coreweekly-week-36-2017/</guid>
+      <description>This edition of the Core Weekly report highlights changes in PrestaShop&amp;rsquo;s core codebase during the last week, from Monday 4th to Sunday 10th of September 2017.
+General messages Didn&amp;rsquo;t I tell you last week that version 1.6.1.17 was coming soon? Well, it did a couple of days later. Onwards!
+We also told you more about the UI Kit projet, which we would love to see community members participate in! Contact us at uikit@prestashop.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.6.1.17</title>
+      <link>https://build.prestashop-project.org/news/2017/prestashop-1-6-1-17-maintenance-release/</link>
+      <pubDate>Thu, 07 Sep 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/prestashop-1-6-1-17-maintenance-release/</guid>
+      <description>PrestaShop 1.6.1.17 is now available. This maintenance release has seen 17 pull requests merged since version 1.6.1.16.
+Continuing on our promise to support 1.6 with patch releases until October 2018, we are happy to deliver this new maintenance version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
+Download 1.6.1.17 now! As the version number indicates (as per our SemVer-like versioning), this is the 17th patch release for PrestaShop 1.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop Core Weekly - Week 35 of 2017</title>
+      <link>https://build.prestashop-project.org/news/2017/2017-09-04-coreweekly-week-35-2017/</link>
+      <pubDate>Mon, 04 Sep 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/2017-09-04-coreweekly-week-35-2017/</guid>
+      <description>This edition of the Core Weekly report highlights changes in PrestaShop&amp;rsquo;s core codebase during the last week, from Monday 28th of August to Sunday 3rd of September 2017.
+General messages It&amp;rsquo;s September! This means new ideas, new projects, new versions, new everything!
+For starters, PrestaShop 1.7.2.2 was released last week, and as you can see from the merged commits below, version 1.6.1.17 is coming soon. What&amp;rsquo;s not to like?
+The team is also working on version 1.</description>
+    </item>
+    
+    <item>
+      <title>Contributor interview: idnovate</title>
+      <link>https://build.prestashop-project.org/news/2017/contributor-interview-idnovate/</link>
+      <pubDate>Fri, 01 Sep 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/contributor-interview-idnovate/</guid>
+      <description>An Open Source community is more than just PR made by faceless strangers. In order to better understand the people who contribute time and skills to the PrestaShop project, we&amp;rsquo;re launching a series of interviews with contributors of all ranges. This week, meet the idnovate team!
+Could you tell us a bit about yourself, and how you got involved in Prestashop?
+We are three Barcelona-based developers (David, Jose and Sergi) who focus exclusively on developing e-commerce solutions.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.2.2</title>
+      <link>https://build.prestashop-project.org/news/2017/prestashop-1-7-2-2-maintenance-release/</link>
+      <pubDate>Thu, 31 Aug 2017 05:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/prestashop-1-7-2-2-maintenance-release/</guid>
+      <description>PrestaShop 1.7.2.2 is now available. This maintenance release fixes 8 issues reported on version 1.7.2.
+Some of the most notable fixes are:
+Price and VAT fixes. Price computing performance improvement: 1.7 front-end should now be faster than 1.6&amp;rsquo;s for popular stores! Fix error while reaching AdminModules Download PrestaShop 1.7.2.2 now! Here is the complete list of changes:
+Back Office:
+Bug fix: #8266 Fix error while reaching AdminModules #8238 Fix wrong final combination price if BC Math is not available #8063 Display texture image in combination form #8057 Save before generate combinations Front Office:</description>
+    </item>
+    
+  </channel>
+</rss>

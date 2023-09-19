@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>julienbourdeau on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/julienbourdeau/</link>
+    <description>Recent content in julienbourdeau on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Sep 2016 10:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/julienbourdeau/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New developer documentation for PrestaShop 1.7</title>
+      <link>https://build.prestashop-project.org/news/2016/developer-documentation/</link>
+      <pubDate>Wed, 28 Sep 2016 10:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2016/developer-documentation/</guid>
+      <description>PrestaShop 1.7 is a major release: a lot of code has been refactored, new features have been added, and a new way of building themes has been introduced. So, very early in the development release cycle, we decided to write more doc in order to support the designers and developers intending to switch to 1.7.
+The documentation&amp;rsquo;s very first draft is now online: http://developers.prestashop.com/
+New website Historically, PrestaShop hosted its documentation on http://doc.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop theme documentation first draft is out</title>
+      <link>https://build.prestashop-project.org/news/2016/prestashop-theme-documentation-for-17/</link>
+      <pubDate>Mon, 25 Apr 2016 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2016/prestashop-theme-documentation-for-17/</guid>
+      <description>With PrestaShop 1.7 we completely rewrote the way shop theme works. Along with these changes, we intended to publish a full documentation that would help you create an amazing and creative new theme or adapt your theme to PrestaShop 1.7.
+Throughout the development process we wrote many articles to keep you up-to-date with our progresses on the StarterTheme. We talked about the introduction of new features and also deprecation/removal of existing features.</description>
+    </item>
+    
+    <item>
+      <title>Starter Theme: fresh news from the front #2</title>
+      <link>https://build.prestashop-project.org/news/2015/starter-theme-news-2/</link>
+      <pubDate>Mon, 26 Oct 2015 15:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2015/starter-theme-news-2/</guid>
+      <description>We already have more exciting news about the StarterTheme.
+Last week, @djfm came up with a photo to summarize what we aim to do with the StarterTheme:
+The StarterTheme is now part of PrestaShop/PrestaShop When we started this project, we wanted to start from scratch so bad that we even wanted to have a standalone Git repository. After few days, we realized it wasn&amp;rsquo;t so easy, because we constantly needed to have the Core repository in sync with the StarterTheme repo.</description>
+    </item>
+    
+    <item>
+      <title>Introducing a new branching model for PrestaShop</title>
+      <link>https://build.prestashop-project.org/news/2015/introducing-new-branching-model-prestashop/</link>
+      <pubDate>Thu, 27 Aug 2015 18:13:37 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2015/introducing-new-branching-model-prestashop/</guid>
+      <description>PrestaShop has recently moved towards a more semantic versioning scheme, which is impacting the way we release new versions, and how we work on our GitHub repositories. If you want to contribute code, here&amp;rsquo;s a full explanation on how you should do it from now on.
+Basically, we follow the SemVer 2.0.0 specification, which means that, as of version 1.6.1.0:
+&amp;lsquo;patch&amp;rsquo; releases include bug fixes only. This means version 1.6.1.1 (already released), and potentially, versions 1.</description>
+    </item>
+    
+    <item>
+      <title>Set up your Git for contributing</title>
+      <link>https://build.prestashop-project.org/howtos/misc/set-up-your-git-for-contributing/</link>
+      <pubDate>Thu, 30 Jul 2015 11:21:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/set-up-your-git-for-contributing/</guid>
+      <description>Any open source project comes with its own set of rules to harmonize everybody&amp;rsquo;s contributions. Usually the guidelines are described in a CONTRIBUTING.md file inside the project root directory.
+To follow these guidelines, you often need to adapt your development environment. You will find here all you need to know to set up your development environment! This will help your contribution get validated more quickly and without further modifications.
+We&amp;rsquo;ll be talking about working with the PrestaShop project, but what you&amp;rsquo;ll read here applies to most PHP open source projects.</description>
+    </item>
+    
+    <item>
+      <title>Dropping support for PHP 5.2 and 5.3</title>
+      <link>https://build.prestashop-project.org/news/2015/Dropping-support-php52-and-53/</link>
+      <pubDate>Wed, 24 Jun 2015 17:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2015/Dropping-support-php52-and-53/</guid>
+      <description>At PrestaShop, we want to make e-commerce possible for everyone. No matter where you are, no matter how much you can (or cannot) spend on your hosting, no matter how big or how small your store is. Because we’ve always made sure your PrestaShop store could run on a cheap shared hosting plan in a far far away land, we had to support PHP all the way back to version 5.</description>
+    </item>
+    
+    <item>
+      <title>Create the perfect .gitignore file for your PrestaShop projects</title>
+      <link>https://build.prestashop-project.org/howtos/misc/prestashop-perfect-gitignore/</link>
+      <pubDate>Mon, 20 Apr 2015 11:21:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/prestashop-perfect-gitignore/</guid>
+      <description>As a serious developer, you need to use versioning (or &amp;ldquo;revision control&amp;rdquo;) for your projects, in order to track changes to your files&amp;hellip; and be able to travel back in time when a disaster happens. There are many CVS (Concurrent Versions System) available out there today, but Git is by far the most popular in 2015, and one of the most used in the Open Source world, right behind Subversion (svn).</description>
+    </item>
+    
+    <item>
+      <title>.htaccess generator</title>
+      <link>https://build.prestashop-project.org/tools/htaccess-generator-protect-your-prestashop-backoffice/</link>
+      <pubDate>Fri, 03 Apr 2015 11:12:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/tools/htaccess-generator-protect-your-prestashop-backoffice/</guid>
+      <description>Even if your back office is already secured by PrestaShop&amp;rsquo;s login, you might want to add another layer of security from your webserver itself. This is done using the htaccess.txt and htpasswd.txt files. After you&amp;rsquo;ve uploaded them at the root of the folder to secure (in our case, your back office folder), the server will ask you for a username and a password before you can even access your PrestaShop back office login page.</description>
+    </item>
+    
+    <item>
+      <title>How to write on this blog</title>
+      <link>https://build.prestashop-project.org/howtos/misc/how-to-write-on-this-blog/</link>
+      <pubDate>Wed, 04 Mar 2015 15:12:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/how-to-write-on-this-blog/</guid>
+      <description>When we started talking about a dev blog among us, we thought about who could write, what we wanted to talk about, who was going to review the articles&amp;hellip;
+Technically, WordPress was the first solution we reviewed but after giving it more thought we realized it would be too much of a hassle to maintain: plugin updates, core updates, database backups, security issues, etc.
+We then came up with a better idea: Jekyll.</description>
+    </item>
+    
+  </channel>
+</rss>

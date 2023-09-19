@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SimonGarny on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/SimonGarny/</link>
+    <description>Recent content in SimonGarny on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jul 2020 10:45:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/SimonGarny/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How bug reports are handled</title>
+      <link>https://build.prestashop-project.org/news/2020/how-bug-reports-are-handled/</link>
+      <pubDate>Wed, 08 Jul 2020 10:45:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2020/how-bug-reports-are-handled/</guid>
+      <description>PrestaShop is a successful Open Source project – with more than 300 000 shops worldwide, merchants trust us to help them build their ecommerce shop.
+However this success has a cost: every day our users discover new bugs and inconsistencies in the project, and they come to GitHub to report them. On average, 10 new issues are created every day on GitHub (counting bug reports and feedback about features), and 2 out of 3 issues are either invalid or duplicates.</description>
+    </item>
+    
+    <item>
+      <title>The (new) PrestaShop Test Framework</title>
+      <link>https://build.prestashop-project.org/news/2020/the-new-prestashop-test-framework/</link>
+      <pubDate>Wed, 05 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2020/the-new-prestashop-test-framework/</guid>
+      <description>For a few months, quality has been a priority for PrestaShop: the QA team and I are proud to announce that we&amp;rsquo;re making great steps in improving the overall quality of the core project. Automatizing tests is a big part of this process: let’s see what we’re doing, why, and how! Note: this article is focused on the Core only, but that is just a small part of what the QA team is working on.</description>
+    </item>
+    
+  </channel>
+</rss>

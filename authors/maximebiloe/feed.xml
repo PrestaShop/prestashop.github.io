@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>maximebiloe on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/maximebiloe/</link>
+    <description>Recent content in maximebiloe on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Sep 2017 09:10:11 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/maximebiloe/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parent/Child theme feature in PrestaShop 1.7</title>
+      <link>https://build.prestashop-project.org/news/2017/Child-Themes-Feature/</link>
+      <pubDate>Fri, 08 Sep 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/Child-Themes-Feature/</guid>
+      <description>There is a feature introduced in PrestaShop 1.7.0 that we would like to dive back in: the child theme feature!
+PrestaShop 1.7 introduced a whole new way of working with themes, and with it came the possibility to have parent/child themes. It was a late addition to PrestaShop 1.7 &amp;ndash; kind of a bonus! So, let&amp;rsquo;s talk about this child theme feature and how you can use it to customize themes more easily.</description>
+    </item>
+    
+    <item>
+      <title>Contribute to the UI kit of the 1.7 back office</title>
+      <link>https://build.prestashop-project.org/news/2017/PrestaShop-UI-Kit/</link>
+      <pubDate>Wed, 06 Sep 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/PrestaShop-UI-Kit/</guid>
+      <description>PrestaShop is 10 years old this year. 10 years and a software that have experienced 7 major evolutions.
+Over the years, the core of the software has added many features, serving both small and large merchants.
+With 10 years of development behind us, a general observation is that PrestaShop offers a flexible software, rich of hundreds features, but this richness has, over the years and evolutions, brought graphical inconsistencies. Also, it is difficult for contributors to design modules which are perfectly aligned with our branding, because our product design guidelines have evolved while not being documented enough.</description>
+    </item>
+    
+    <item>
+      <title>How we&#39;re introducing Vue JS &amp; a Symfony API</title>
+      <link>https://build.prestashop-project.org/news/2017/introducing-vuejs-symfony-api/</link>
+      <pubDate>Wed, 19 Jul 2017 09:12:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/introducing-vuejs-symfony-api/</guid>
+      <description>If you follow the Core Weekly or our recent GitHub activity, you may have seen that we introduced a new front-end technology in the PrestaShop back office: Vue.js. So, let’s talk a little about it to see what’s coming up.
+Vue.JS késako? As it describes itself, &amp;ldquo;Vue is a progressive framework for building user interfaces.&amp;rdquo; It is component-driven, meaning that you have one file per component (=html element). You can create your own components, as many as you want.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.6.1.14</title>
+      <link>https://build.prestashop-project.org/news/2017/prestashop-1-6-1-14-maintenance-release/</link>
+      <pubDate>Mon, 05 Jun 2017 02:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/prestashop-1-6-1-14-maintenance-release/</guid>
+      <description>PrestaShop 1.6.1.14 is now available. This maintenance release has seen 21 pull requests merged since version 1.6.1.13.
+Continuing on our promise to support 1.6 with patch releases, we are happy to deliver this new version. Please do upgrade to this latest and greatest version of PrestaShop 1.6!
+Download 1.6.1.14 now! As the version number indicates (as per our SemVer-like versioning), this is the 14th patch release for PrestaShop 1.6.1.0.
+As usual, if you are currently running promotions leading to high traffic on your website, we recommend that you wait for the promotion to end before attempting any upgrade and technical change to your store.</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.7.0.3</title>
+      <link>https://build.prestashop-project.org/news/2016/prestashop-1703-maintenance-release/</link>
+      <pubDate>Wed, 21 Dec 2016 10:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2016/prestashop-1703-maintenance-release/</guid>
+      <description>PrestaShop 1.7.0.3 is now available. This maintenance release closes 28 of the most pressing issues reported since v1.7.
+More than a year ago, we announced that we wanted to release more regular and focused patch versions for 1.6 (and eventually 1.7), and that&amp;rsquo;s exactly what we are currently doing: packing a few specific fixes (in order to limit regression potential) in regular releases. All this is done thanks in no small part to our SemVer-like versioning and the 1-Click Upgrade module (update it if you haven&amp;rsquo;t already done it for 1.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 1.7 &amp; performances</title>
+      <link>https://build.prestashop-project.org/news/2016/prestashop-1-7-performances/</link>
+      <pubDate>Fri, 28 Oct 2016 11:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2016/prestashop-1-7-performances/</guid>
+      <description>With PrestaShop 1.7, our main purposes were to improve the user experience on the Product Creation page and the Modules page, and also to make it easier to create a front office theme.
+As you may know, version 1.7 now includes the Symfony2 framework. If you were afraid that it may slow PrestaShop down, be sure we wanted to avoid that and even do better than PrestaShop 1.6.1.x in terms of Performances!</description>
+    </item>
+    
+    <item>
+      <title>Evolution of the PrestaShop Coding Standards</title>
+      <link>https://build.prestashop-project.org/news/2016/prestashop-coding-standards/</link>
+      <pubDate>Tue, 10 May 2016 03:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2016/prestashop-coding-standards/</guid>
+      <description>Working on an open source project as massive as the PrestaShop codebase, a few ground rules have long been established in order to ease the participation of developers, be they from the PrestaShop Core team or the Community at large.
+For long, we used our own coding standards. We then switched to PSR-2 last year.
+Because we want to have an always better codebase, clearer, easier to read and to maintain, we have decided to follow some more established standards for the languages used in PrestaShop.</description>
+    </item>
+    
+    <item>
+      <title>Here comes PrestaShop 1.7.0.0 alpha 4!</title>
+      <link>https://build.prestashop-project.org/news/2016/here-comes-prestashop-1-7-alpha-4/</link>
+      <pubDate>Mon, 25 Apr 2016 02:30:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2016/here-comes-prestashop-1-7-alpha-4/</guid>
+      <description>Three weeks ago we released PrestaShop 1.7.0.0 alpha 3. Since then, and with the help of the community, we&amp;rsquo;ve been working on it to fix the bugs you&amp;rsquo;ve reported and to keep improving this new version. We&amp;rsquo;re now releasing PrestaShop 1.7.0.0 alpha 4 version, so we can keep gathering feedback and make sure that the final and stable version will be the best it can be!
+While this alpha version is not ready for production stores, it is a great basis for us to get your feedbacks.</description>
+    </item>
+    
+    <item>
+      <title>New default theme for PrestaShop 1.7</title>
+      <link>https://build.prestashop-project.org/news/2016/new-theme-1-7-introduction/</link>
+      <pubDate>Thu, 04 Feb 2016 09:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2016/new-theme-1-7-introduction/</guid>
+      <description>The first beta version for PrestaShop 1.7 is approaching quickly, so we have started to work on the new 1.7 default theme, currently named &amp;ldquo;He who must be named&amp;rdquo; — tentatively named &amp;ldquo;classic&amp;rdquo; for now, for lack of a better name :) It is based on the Starter Theme that we&amp;rsquo;ve been telling you about here on Build — what best way to test what we&amp;rsquo;ve been working on for a while?</description>
+    </item>
+    
+    <item>
+      <title>Starter Theme: fresh news from the front #3</title>
+      <link>https://build.prestashop-project.org/news/2015/starter-theme-news-3/</link>
+      <pubDate>Thu, 17 Dec 2015 15:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2015/starter-theme-news-3/</guid>
+      <description>It&amp;rsquo;s been a while since we gave you any news about the StarterTheme. So, let&amp;rsquo;s sum up what happened since Starter Theme: Fresh News From The Front #2.
+Page layout We don&amp;rsquo;t want to impose a 3 columns layout for template developers anymore. We want to make something more flexible. As a theme developer, you will be able to ship your theme with as many layouts as you want. For example you can have a full width layout, 2 columns split in 2 halves or one third/two third.</description>
+    </item>
+    
+  </channel>
+</rss>

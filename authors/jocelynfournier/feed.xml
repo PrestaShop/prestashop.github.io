@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jocelynfournier on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/jocelynfournier/</link>
+    <description>Recent content in jocelynfournier on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Sep 2017 01:10:11 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/jocelynfournier/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About the 1.7.2.2 performance improvement</title>
+      <link>https://build.prestashop-project.org/news/2017/prestashop-1-7-2-2-performance/</link>
+      <pubDate>Fri, 22 Sep 2017 01:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/prestashop-1-7-2-2-performance/</guid>
+      <description>A small line might have gone unnoticed in the PrestaShop 1.7.2.2 release announcement: &amp;ldquo;1.7 front-end should now be faster than 1.6’s for popular stores&amp;rdquo;. What does it apply to, and how did we test for such performances? Here&amp;rsquo;s how.
+With the release of PrestaShop 1.7.2.2, we have tried to remove a few point of contention which were affecting badly overall PrestaShop performance:
+Specific price computation Bad sale page pagination, which loaded too many products on one page Let&amp;rsquo;s check the specific price improvement!</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 1.6.1.0: a new level of performances</title>
+      <link>https://build.prestashop-project.org/news/2015/prestashop-1-6-1-0-performances/</link>
+      <pubDate>Mon, 22 Jun 2015 18:29:47 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2015/prestashop-1-6-1-0-performances/</guid>
+      <description>A lot of things have been improved on PrestaShop 1.6.1.0:
+Design. Invoices. Search. Performance. We have done a lot of work to improve the overall performances of PrestaShop, and reached in some cases a whooping 10x improvement.
+Let’s now dig into the optimizations we have put in place, and do some benchmarks.
+Note: This article was first published by Jocelyn on his blog at Softizy. Read the original here.
+Which parts of PrestaShop are faster?</description>
+    </item>
+    
+  </channel>
+</rss>

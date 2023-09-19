@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jeromenadaud on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/jeromenadaud/</link>
+    <description>Recent content in jeromenadaud on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Nov 2015 14:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/jeromenadaud/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Our plan for more regular &amp; focused patch versions</title>
+      <link>https://build.prestashop-project.org/news/2015/more-focused-patch-versions/</link>
+      <pubDate>Wed, 04 Nov 2015 14:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2015/more-focused-patch-versions/</guid>
+      <description>With the adoption of SemVer-like versioning, we know that a patch version will only feature non-breaking changes, making it far safer to update to PrestaShop than ever before&amp;hellip; and thus safer for us to release patch version more regularly.
+As a reminder, this is how SemVer works:
+Given a version number MAJOR.MINOR.PATCH, increment the:
+MAJOR version when you make incompatible API changes, MINOR version when you add functionality in a backwards-compatible manner, and PATCH version when you make backwards-compatible bug fixes.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop &amp;&amp; the PSR-2 coding style guide</title>
+      <link>https://build.prestashop-project.org/news/2015/prestashop-moves-to-psr-2/</link>
+      <pubDate>Wed, 03 Jun 2015 18:54:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2015/prestashop-moves-to-psr-2/</guid>
+      <description>We are planning to switch to PSR-2, here is the why, the how and the when!
+The current situation PrestaShop currently uses its own Coding Standards, based on PSR-1, with a few adaptations for historical reasons.
+For a long time, we&amp;rsquo;ve wanted to move to a more generally-accepted coding standard. PrestaShop is loved by its community and we love our community, and we wanted to adopt a common coding standard in order to ease code contribution.</description>
+    </item>
+    
+  </channel>
+</rss>

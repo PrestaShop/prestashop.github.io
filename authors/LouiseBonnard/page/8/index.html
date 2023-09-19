@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>LouiseBonnard</title>
+    <link href="/style.css?1695125493" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="alternate" type="application/rss+xml" href="https://build.prestashop-project.org/authors/LouiseBonnard/feed.xml" title="PrestaShop Developers' blog" />
+    
+<meta property="og:title" content="LouiseBonnard" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://build.prestashop-project.org/authors/LouiseBonnard/" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="LouiseBonnard"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip': false });
+			}
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <div class="conference-banner">
+  <a href="https://events.prestashop.com/prestashop-developer-conference/en">
+    PrestaShop Developer Conference
+  </a>
+  <div class="container">
+    <div class="conference-title">
+      PrestaShop Developer Conference
+    </div>
+    <div class="conference-location">
+      Paris, France - November 30, 2023
+    </div>
+    <div class="conference-slogan">
+      Let's talk code, commerce and open source.
+    </div>
+  </div>
+</div>
+<header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+<div class="home">
+
+  <div class="row">
+    <div class="col-md-12"><div class="author-header clearfix">
+            <div class="author-avatar">
+              <img class="img-circle" src="https://avatars2.githubusercontent.com/u/32565890" alt="Louise Bonnard's picture">
+            </div>
+            <div>
+              <h1>All articles by Louise Bonnard</h1>
+                
+                  <div class="author-display-role">Product Manager</div>
+                
+                <div class="social">
+                  
+  <a class="btn btn-default btn-sm" href="https://github.com/LouiseBonnard">
+    <i class="icon-github-alt"></i> GitHub
+  </a>
+
+
+
+  <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/LouiseBonnard">
+    <i class="icon-globe"></i> Crowdin
+  </a>
+
+
+
+
+                </div>
+            </div>
+          </div><ul class="post-list">
+        
+        
+        
+
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Dec 4, 2017
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/coreweekly-week-48-2017"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-calendar"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/2017/2017-12-04-coreweekly-week-48-2017/">PrestaShop Core Weekly - Week 48 of 2017</a>
+            </h2>
+
+            
+            <h4>An inside look at the PrestaShop codebase</h4>
+            
+
+            <p>This edition of the Core Weekly report highlights changes in PrestaShop’s core codebase during the last week, from Monday 27th of November to Sunday 04th of December 2017.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2017/2017-12-04-coreweekly-week-48-2017/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Dec 1, 2017
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/contributor-interview-sunghyeon-cho"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-leaf"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/2017/contributor-interview-sunghyeon-cho/">Contributor interview: SungHyeon Cho</a>
+            </h2>
+
+            
+            <h4>Discover the faces behind the commits</h4>
+            
+
+            <p>An Open Source community is more than just PR made by faceless strangers. In order to better understand the people who contribute time and skills to the PrestaShop project, we’re launching a series of interviews with contributors of all ranges. This week, meet SungHyeon Cho!</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2017/contributor-interview-sunghyeon-cho/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Nov 27, 2017
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/coreweekly-week-47-2017"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-calendar"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/2017/2017-11-27-coreweekly-week-47-2017/">PrestaShop Core Weekly - Week 47 of 2017</a>
+            </h2>
+
+            
+            <h4>An inside look at the PrestaShop codebase</h4>
+            
+
+            <p>This edition of the Core Weekly report highlights changes in PrestaShop’s core codebase during the last week, from Monday 20th to Sunday 26th of November 2017.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2017/2017-11-27-coreweekly-week-47-2017/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Nov 24, 2017
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/173-translations"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-world"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/2017/173-translations/">1.7.3 is ready for translation</a>
+            </h2>
+
+            
+            <h4>New features equal new strings</h4>
+            
+
+            <p>Many “When is the next version out?” later, we are glad to tell you PrestaShop 1.7.3 is on its way, with new strings in it! A new branch (that will replace the 1.7.2) has been added to the Crowdin projects. In other words: PrestaShop 1.7.3 is now ready for translation and validation!</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2017/173-translations/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Nov 22, 2017
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/uncle-build-wants-you"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-daft-punk"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/2017/uncle-build-wants-you/">Uncle Build wants you!</a>
+            </h2>
+
+            
+            <h4>Be part of the devblog evolution</h4>
+            
+
+            <p>Dear readers, followers, developers, translators, PrestaShopers from all sides, it is time to lean over what will be next for Build!</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2017/uncle-build-wants-you/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Nov 20, 2017
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/coreweekly-week-46-2017"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-calendar"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/2017/2017-11-20-coreweekly-week-46-2017/">PrestaShop Core Weekly - Week 46 of 2017</a>
+            </h2>
+
+            
+            <h4>An inside look at the PrestaShop codebase</h4>
+            
+
+            <p>This edition of the Core Weekly report highlights changes in PrestaShop’s core codebase during the last week, from Monday 13th to Sunday 19th of November 2017.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2017/2017-11-20-coreweekly-week-46-2017/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Nov 17, 2017
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/video-from-php-forum-with-love"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-laptop"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/2017/video-from-php-forum-with-love/">Video: From PHP Forum with love</a>
+            </h2>
+
+            
+            <h4>Because elephpants is not the only thing we brought back</h4>
+            
+
+            <p>Remember I told you about weird blue elephpants two weeks ago? You got it, it was our dream team of developers that attended the AFUP’s annual conference in Paris! As agreed, they came back with a lot to share on Build. Here, @tomlev will told you about Jean-François Lépine and the lecture he gave at the PHP Forum:</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2017/video-from-php-forum-with-love/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Nov 13, 2017
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/coreweekly-week-45-2017"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-calendar"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/2017/2017-11-13-coreweekly-week-45-2017/">PrestaShop Core Weekly - Week 45 of 2017</a>
+            </h2>
+
+            
+            <h4>An inside look at the PrestaShop codebase</h4>
+            
+
+            <p>This edition of the Core Weekly report highlights changes in PrestaShop’s core codebase during the last week, from Monday 06th to Sunday 12th of November 2017.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2017/2017-11-13-coreweekly-week-45-2017/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Nov 10, 2017
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/do-you-speak-prestashop-october-2017"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-world"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/2017/do-you-speak-prestashop-october-2017/">Do you speak PrestaShop? – October 2017 edition</a>
+            </h2>
+
+            
+            <h4>Where you&#39;ll learn that 1.7 is fully translated in 18 languages</h4>
+            
+
+            <p>Contributing to PrestaShop is not only about the code, it’s also about taking part in the PrestaShop translation project! This report tells you how the translations of the software evolved in October.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2017/do-you-speak-prestashop-october-2017/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+          
+          <li>
+            <div class="post-divider"></div>
+          </li>
+          
+
+          
+          <li>
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Nov 6, 2017
+                </span>
+              <span class="separator"></span>
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/coreweekly-week-44-2017"></span>
+            </div>
+
+            <h2>
+              
+              <i class="fa icon-calendar"></i>
+              
+              <a class="post-link" href="https://build.prestashop-project.org/news/2017/2017-11-06-coreweekly-week-44-2017/">PrestaShop Core Weekly - Week 44 of 2017</a>
+            </h2>
+
+            
+            <h4>An inside look at the PrestaShop codebase</h4>
+            
+
+            <p>This edition of the Core Weekly report highlights changes in PrestaShop’s core codebase during the last week, from Monday 30th of October to Sunday 05th of November 2017.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2017/2017-11-06-coreweekly-week-44-2017/">Continue reading &rarr;</a>
+          </li>
+
+          
+        
+
+      </ul>
+
+    </div>
+  </div>
+
+  
+    
+    <div class="row">
+      <div class="col-md-12">
+
+        <nav>
+          <ul class="pager">
+
+            <li class="previous ">
+              
+              <a href="/authors/LouiseBonnard/page/7/">
+                <span aria-hidden="true">&larr;</span> Newer
+              </a>
+              
+            </li>
+            <li>
+              <span class="page_number">Page 8 of 9</span>
+            </li>
+            <li class="next ">
+              
+              <a href="/authors/LouiseBonnard/page/9/">
+                Older <span aria-hidden="true">&rarr;</span>
+              </a>
+              
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

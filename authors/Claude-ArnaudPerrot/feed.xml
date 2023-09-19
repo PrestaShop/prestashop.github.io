@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Claude-ArnaudPerrot on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/Claude-ArnaudPerrot/</link>
+    <description>Recent content in Claude-ArnaudPerrot on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Feb 2021 15:50:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/Claude-ArnaudPerrot/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PHP, scalability &amp; filesystems</title>
+      <link>https://build.prestashop-project.org/news/2021/PHP-scalability-and-filesystem/</link>
+      <pubDate>Thu, 04 Feb 2021 15:50:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2021/PHP-scalability-and-filesystem/</guid>
+      <description>In this third article in the performance series we started last year, we&amp;rsquo;ll talk about PHP, scalability and its impact on the filesystem!
+Also, we&amp;rsquo;re glad to announce that our White Paper about PrestaShop Performance is now published. So, if you&amp;rsquo;re interested by performance in general and PrestaShop in particular, have a look at it and let us know what you think!
+Without further ado, let&amp;rsquo;s dive into PHP, filetystem and scalability!</description>
+    </item>
+    
+    <item>
+      <title>Apache vs. NGINX: Match of the Millennium</title>
+      <link>https://build.prestashop-project.org/news/2021/apache-vs-nginx/</link>
+      <pubDate>Wed, 20 Jan 2021 16:30:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2021/apache-vs-nginx/</guid>
+      <description>Here is the second article in the performance series we started last year, dealing with the old feud between Apache and NGINX.
+As you may have heard of, we will soon publish a White Paper about PrestaShop&amp;rsquo;s performances, how to tune your shop, enhance its response time, and so on.
+During these benchmarks, we did compare performances between Apache &amp;amp; NGINX, the usual contenders, with identical setups.
+Though this article probably won&amp;rsquo;t end the long debate between those two, let&amp;rsquo;s hope it will help you find some clarity on the matter and find out which one is best suited for your configuration.</description>
+    </item>
+    
+    <item>
+      <title>Performance (&amp; PrestaShop)</title>
+      <link>https://build.prestashop-project.org/news/2020/performance-and-prestashop/</link>
+      <pubDate>Mon, 14 Dec 2020 09:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2020/performance-and-prestashop/</guid>
+      <description>Introducing a new series of article to talk about performance, benchmarking and PrestaShop!
+You may have heard of it, but we&amp;rsquo;ll soon release a White Paper, which is all about PrestaShop&amp;rsquo;s performance, how to benchmark it and how it behaves under loads. And what to do to keep it responding under 300ms.
+Still, there are a number of matters that can&amp;rsquo;t be covered in a White Paper - hopefully the first in a series, fingers crossed.</description>
+    </item>
+    
+  </channel>
+</rss>

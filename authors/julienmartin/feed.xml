@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>julienmartin on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/julienmartin/</link>
+    <description>Recent content in julienmartin on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 May 2017 09:10:11 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/julienmartin/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to rebase your Git branch</title>
+      <link>https://build.prestashop-project.org/howtos/misc/rebasing-your-git-branch/</link>
+      <pubDate>Thu, 11 May 2017 09:10:11 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/howtos/misc/rebasing-your-git-branch/</guid>
+      <description>Contributing code to PrestaShop can be scary for first-timers, because not everyone knows how Git works. By the time you have figured how to properly push your changes to GitHub, the codebase has changed, rendering your suggestions impossible to merge &amp;ndash; leading to frustration on both sides. It&amp;rsquo;s high time you learn about git rebase.
+Files often change an Open Source project. Between the time you fix an issue and create a pull request, and the time a Core developer takes a look at your PR, the target files can have changed a couple times (or more).</description>
+    </item>
+    
+    <item>
+      <title>Release of PrestaShop 1.6.1.4</title>
+      <link>https://build.prestashop-project.org/news/2016/prestashop-1614-maintenance-release/</link>
+      <pubDate>Thu, 07 Jan 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2016/prestashop-1614-maintenance-release/</guid>
+      <description>PrestaShop 1.6.1.4 is now available. This maintenance release closes 19 issues since version 1.6.1.3 (released on November 26th, 2015).
+As the version number indicates (as per our SemVer-like versioning), this is the fourth patch release for PrestaShop 1.6.1.0.
+Our main motivation for releasing this version was to fix the MySQL 5.7 and PHP 7 compatibility.
+As usual, we do not recommend upgrading your store when you are running promotions leading to a high traffic on your website.</description>
+    </item>
+    
+  </channel>
+</rss>

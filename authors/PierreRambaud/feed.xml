@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PierreRambaud on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/PierreRambaud/</link>
+    <description>Recent content in PierreRambaud on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Sep 2020 09:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PierreRambaud/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bug Bounty Program, the retrospective</title>
+      <link>https://build.prestashop-project.org/news/2020/bug-bounty-retrospective/</link>
+      <pubDate>Fri, 11 Sep 2020 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2020/bug-bounty-retrospective/</guid>
+      <description>For several months, we experimented a Bug Bounty Program with the YesWeHack platform. Here is a retrospective, explaining why we did it, and what happened during this period.
+Private program The security of software cannot be assessed unless it is tested by a lot of hunters.
+PrestaShop relies on a lot of dependencies, with hundreds of thousands lines of code, and this has been true since the very first versions.</description>
+    </item>
+    
+    <item>
+      <title>Announcing our first Bug Bounty program</title>
+      <link>https://build.prestashop-project.org/news/2020/bug-bounty-program/</link>
+      <pubDate>Thu, 23 Jul 2020 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2020/bug-bounty-program/</guid>
+      <description>Protecting the business, data and privacy of PrestaShop&amp;rsquo;s users is one of our top priorities. We build our software with this goal in mind. That&amp;rsquo;s why we decided to put our security to the test. To encourage the security community to help us, today we are announcing our first bug bounty program!
+Why this program Bug bounties are used by many leading companies to improve the security of their products. These programs provide an incentive for researchers to responsibly disclose software bugs and allow security teams to leverage the external community to help keep users safe.</description>
+    </item>
+    
+    <item>
+      <title>We were at Google&#39;s CMS Security Summit 2020</title>
+      <link>https://build.prestashop-project.org/news/2020/cms-security-summit/</link>
+      <pubDate>Thu, 04 Jun 2020 17:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2020/cms-security-summit/</guid>
+      <description>Once again, open source CMSs Security leads shared knowledge together last February at an event organized by Google in Munich.
+Lightning talks &amp;amp; Security technologies After spending the first evening with stakeholders and meeting the newcomers over a few beers, the attendees and I spent two days at Google&amp;rsquo;s Munich office and Information Security Hub (ISH) to talk about what we have achieved since last year and about what&amp;rsquo;s coming. And of course we learned a lot about each other.</description>
+    </item>
+    
+    <item>
+      <title>Security issue with PHPUnit, post-incident analysis</title>
+      <link>https://build.prestashop-project.org/news/2020/phpunit-security-issue-post-analysis/</link>
+      <pubDate>Fri, 28 Feb 2020 10:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2020/phpunit-security-issue-post-analysis/</guid>
+      <description>Early January, we encountered a security issue with PHPUnit in some modules that allowed attackers to perform arbitrary code execution without authorization through the PHPUnit dependency. This vulnerability was discovered through a merchant whose shops were compromised.
+Background At PrestaShop, we use an automated system to build packages for native modules and make them available through the Addons Marketplace API. This process uses Composer to install dependencies before creating the zip package.</description>
+    </item>
+    
+    <item>
+      <title>Open Question: What about not committing generated files anymore?</title>
+      <link>https://build.prestashop-project.org/news/2020/open-question-not-commiting-assets-anymore/</link>
+      <pubDate>Fri, 17 Jan 2020 08:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2020/open-question-not-commiting-assets-anymore/</guid>
+      <description>This post is the first of a new kind. We decided to open up more with you about technical questioning and decisions for the PrestaShop project. This one is about generated asset files.
+[EDIT] February 7th 2020: Considered the positive feedback we received after publishing the article, we decided to remove the generated files and to add the make assets command. Learn more in the devdoc.
+Details of the feedback: 27 &amp;ldquo;Upvote&amp;rdquo; and 1 &amp;ldquo;Sad&amp;rdquo; reactions in Disqus.</description>
+    </item>
+    
+    <item>
+      <title>We were at the CMS Security Summit with Google</title>
+      <link>https://build.prestashop-project.org/news/2019/we-were-at-the-cms-security-summit-with-google/</link>
+      <pubDate>Mon, 04 Mar 2019 10:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2019/we-were-at-the-cms-security-summit-with-google/</guid>
+      <description>PrestaShop and other open source CMSs are working together to improve the security of websites.
+Winter is not coming, it is already here! As a member of the Open Source community, a few weeks ago PrestaShop went to the coldest place on earth, even colder than Antarctica, even colder than Siberia: YES, we went to Chicago on January 30th 2019 (-40º C)
+You’re all asking: &amp;ldquo;But what can we do on January in Chicago except eating Deep Dish pizza and drinking India Pale Ale?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MatthieuRolland on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/MatthieuRolland/</link>
+    <description>Recent content in MatthieuRolland on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/MatthieuRolland/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Symfony multistore configuration forms</title>
+      <link>https://build.prestashop-project.org/news/2022/multistore-configuration-forms/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2022/multistore-configuration-forms/</guid>
+      <description>With the release of PrestaShop 1.7.8, we expanded PrestaShop multistore capabilities to Symfony forms in order to build a reusable form component to make configuration forms multishop-compatible.
+Multishop affects a lof ot PrestaShop behaviors and components. One aspect of this feature is that user can use configuration forms to set different values for different shops, which is dealt with using shop contexts.
+What does this mean In a configuration form, a merchant can set different values for three different shop contexts, in this order of inheritance:</description>
+    </item>
+    
+  </channel>
+</rss>

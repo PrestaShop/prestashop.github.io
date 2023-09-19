@@ -10,6 +10,9 @@ icon: icon-bonnet
 tags: [news]
 ---
 
+{{% notice type="warning" title="No longer supported" icon="warning" %}}
+PrestaShop Icon Pack is no longer maintained. You can still use it, but we won't provide any support or updates for it.
+{{% /notice %}}
 
 As part of PrestaShop's product redesign, we decided to replace Font Awesome and start using our own icon pack. We're sharing here the very first version of this new icon set, and we'll keep you updated when it evolves.
 

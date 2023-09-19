@@ -1,1 +1,2 @@
-{{ return plainify (htmlUnescape (index (split .Content "</p>") 0)) }}
+{{/* This will pick everyting until the end of the first paragraph and remove anything within divs */}}
+{{- return ((index (split .Content "</p>") 0) | replaceRE `(?ms)(<div.*</div>)` "" | htmlUnescape | plainify) -}}

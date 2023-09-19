@@ -10,7 +10,7 @@ tags: [translation, theme, "1.7", development, i18n]
 ---
 
 {{% notice type="warning" title="This article is outdated" icon="megaphone" %}}
-The translation system in PrestaShop evolved since 2017. Make sure to read the latest documentation on how to use translations in PrestaShop [for modules](https://devdocs.prestashop-project.org/8/modules/creation/module-translation/), and [for themes](https://devdocs.prestashop-project.org/8/themes/reference/theme-translation/).
+PrestaShop's translation system has evolved since this article was originally published in 2017. Make sure to read the latest documentation on how to use translations in PrestaShop [for modules](https://devdocs.prestashop-project.org/8/modules/creation/module-translation/), and [for themes](https://devdocs.prestashop-project.org/8/themes/reference/theme-translation/).
 {{% /notice %}}
 
 By now you’re probably aware that the 1.7 version comes with a new translation system and that the theme you are building can benefit from it. However, we didn’t give much details on how it works yet, so here is what you should know if you want to translate your theme for PrestaShop 1.7.

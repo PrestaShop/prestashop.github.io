@@ -12,7 +12,7 @@ published: true
 ---
 
 {{% notice type="danger" title="This article may be outdated" icon="megaphone" %}}
-Please note that this article may be outdated and could potentially include inaccurate information. We recommend checking the latest documentation regarding [how to override modules](https://devdocs.prestashop-project.org/8/modules/concepts/overrides/#override-a-module).
+Please note that this article refers to very old versions of PrestaShop. Check out the documentation to learn [how to override modules](https://devdocs.prestashop-project.org/8/modules/concepts/overrides/#override-a-module).
 {{% /notice %}}
 
 Since version 1.6.0.11 of PrestaShop, there is a new feature that allows developers to override a module's instance classes (ie. its main module files, [see the PR by @axometeam](https://github.com/PrestaShop/PrestaShop/pull/2133)).

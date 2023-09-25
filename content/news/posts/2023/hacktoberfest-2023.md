@@ -3,16 +3,25 @@ layout: post
 aliases: ["/news/hacktoberfest-2023"]
 title:  "Hacktoberfest 2023"
 subtitle: "OCTOBER IS AROUND THE CORNER, SO IS HACKTOBERFEST!"
-date:  2023-09-26
+date:  2023-09-25
 authors: [ PrestaShop ]
 image: 
 icon: icon-github-alt2
 tags: [community, contribution, github, contribute]
+image: /assets/images/2023/09/Hacktoberfest2023.png
+opengraph_image: /assets/images/2023/09/Hacktoberfest2023.png
+twitter_image: /assets/images/2023/09/Hacktoberfest2023.png
 ---
 
-The month of October is coming quickly! So be prepared for Hacktoberfest, a month-long celebration of open source software. The online event has been happening every October since 2013 and is sponsored by [DigitalOcean](https://www.digitalocean.com/). This year marks the 10th anniversary of the event, with changes to help ensure its sustainability for the next decade. You’ll learn about these right below. How can you participate? Very simple: people are encouraged to create at least 4 pull requests for open source projects on GitHub. Hopefully, you'll take some time to contribute to PrestaShop.
+The month of October is coming quickly! So be prepared for Hacktoberfest, a month-long celebration of open source software.
+
+## Hacktoberfest 2023
+
+The online event has been happening every October since 2013 and is sponsored by [DigitalOcean](https://www.digitalocean.com/). This year marks the 10th anniversary of the event, with changes to help ensure its sustainability for the next decade. You’ll learn about these right below. How can you participate? Very simple: people are encouraged to create at least 4 pull requests for open source projects on GitHub. Hopefully, you'll take some time to contribute to PrestaShop.
 
 If you are not sure how to get involved in open source projects and where to start, Hacktoberfest might be the perfect opportunity.
+
+![Hacktoberfest 2023](/assets/images/2023/09/Hacktoberfest2023.png)
 
 ## Getting involved and contributor prizes ##
 Your goal is to contribute with at least 4 quality pull requests to the open source project you like. DigitalOcean will send every contributor achieving this goal prizes. As mentioned earlier, the change for this year is the prize. The organization will [offer an exclusive digital reward kit](https://hacktoberfest.com/about/#digital-rewards). Winners will receive unique badges featuring surprises and gifts from sponsors.

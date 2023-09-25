@@ -2,7 +2,7 @@
 layout: post
 title:  "Hacktoberfest 2023"
 subtitle: "OCTOBER IS AROUND THE CORNER, SO IS HACKTOBERFEST!"
-date:  2023-09-25
+date:  2023-09-26
 authors: [ PrestaShop ]
 image: 
 icon: icon-github-alt2

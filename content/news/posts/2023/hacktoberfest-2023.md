@@ -48,7 +48,7 @@ We hope you will help with your contributions now and in the future. Project mem
 
 Best contributors and their companies will also be featured in a summary Build post on this blog and during the monthly Live Update.
 
-To start contributing, the dedicated page in the documentation should help you. You can find it [here](https://devdocs.prestashop-project.org/8/contribute/). You can also contribute to the [developer documentation](https://devdocs.prestashop-project.org/8/) or any module or theme on [PrestaShop Github](https://gituhb.com/PrestaShop/).
+To start contributing, the dedicated page in the documentation should help you. You can find it [here](https://devdocs.prestashop-project.org/8/contribute/). You can also contribute to the [developer documentation](https://devdocs.prestashop-project.org/8/) or any module or theme on [PrestaShop Github](https://github.com/PrestaShop/).
 
 We're here to assist you in getting started! This year, we've created a special page to guide you in selecting a project to work on and contribute to. You can access it via [this link](https://github.com/PrestaShop/PrestaShop/issues/33205). If you have any inquiries about PrestaShop or Hacktoberfest, please don't hesitate to ask in the comments section or join our [Slack community](https://www.prestashop-project.org/slack/).
 

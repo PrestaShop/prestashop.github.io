@@ -43,15 +43,15 @@ This patch benefits greatly from the combined efforts of our community and inter
 | Author     | Company         | PRs       | Percentage |
 |------------|-----------------|-----------|------------|
 | Hlavtox    | [Daniel Hlavacek](https://danielhlavacek.cz/en)       | 32 PRs    | 50.00%     |
-| jolelievre | PrestaShop SA      | 7 PRs     | 10.94%     |
-| Progi1984  | PrestaShop SA      | 6 PRs     | 9.38%      |
-| nicosomb   | PrestaShop SA      | 4 PRs     | 6.25%      |
-| M0rgan01   | PrestaShop SA      | 3 PRs     | 4.69%      |
-| tleon      | PrestaShop SA      | 3 PRs     | 4.69%      |
-| matks      | PrestaShop SA      | 3 PRs     | 4.69%      |
-| boherm     | PrestaShop SA      | 2 PRs     | 3.13%      |
-| boubkerbribri | PrestaShop SA  | 2 PRs     | 3.13%      |
-| sowbiba    | PrestaShop SA      | 2 PRs     | 3.13%      |
+| jolelievre | [PrestaShop SA](https://prestashop.com)      | 7 PRs     | 10.94%     |
+| Progi1984  | [PrestaShop SA](https://prestashop.com)      | 6 PRs     | 9.38%      |
+| nicosomb   | [PrestaShop SA](https://prestashop.com)      | 4 PRs     | 6.25%      |
+| M0rgan01   | [PrestaShop SA](https://prestashop.com)      | 3 PRs     | 4.69%      |
+| tleon      | [PrestaShop SA](https://prestashop.com)      | 3 PRs     | 4.69%      |
+| matks      | [PrestaShop SA](https://prestashop.com)      | 3 PRs     | 4.69%      |
+| boherm     | [PrestaShop SA](https://prestashop.com)      | 2 PRs     | 3.13%      |
+| boubkerbribri | [PrestaShop SA](https://prestashop.com)  | 2 PRs     | 3.13%      |
+| sowbiba    | [PrestaShop SA](https://prestashop.com)      | 2 PRs     | 3.13%      |
 
 ## Security advisories
 

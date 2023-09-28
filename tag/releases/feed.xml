@@ -6,7 +6,17 @@
     <description>Recent content in releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Aug 2023 10:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Sep 2023 10:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1.2 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-2-maintenance-release/</link>
+      <pubDate>Tue, 26 Sep 2023 10:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-2-maintenance-release/</guid>
+      <description>The second patch for PrestaShop 8.1 is available! This release contains 2 security fixes, over 30 bugs have been fixed and some minor improvements have been integrated.
+Version 8.1.2 fixes a few security issues found by security researchers and solves a great number of bugs reported by the community and project&amp;rsquo;s Quality Assurance team. It also includes some minor improvements, especially for the new product page and new multi-format image generation system.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1.1 Is Available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-1-maintenance-release/</link>
@@ -157,16 +167,6 @@ We suggest upgrading your shop quickly in order to benefit from these fixes. Of 
       <description>The maintainers team is pleased to announce that PrestaShop 8.0 is officially available.
 PrestaShop 8, the first major version since the original release of PrestaShop 1.7.0 back in 2016, is an important milestone for the project.
 A significant cleanup has been performed in the codebase, with several internal components updated, modified or removed. PrestaShop 8 is also the project’s first company-neutral release, meaning that it no longer includes commercial products and services built-in.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.0 Release Candidate Is Ready To Be Tested!</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-8-0-rc1-release/</link>
-      <pubDate>Thu, 13 Oct 2022 14:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-8-0-rc1-release/</guid>
-      <description>The maintainers team is pleased to announce the first release candidate of PrestaShop 8.0.
-This is the last step before releasing the final 8.0 version. This release candidate is intended to allow the community to verify that all regressions found during the beta have been fixed and that the software is ready for production. If no major or critical regression is reported before October 20th, then the final version of 8.</description>
     </item>
     
   </channel>

@@ -6,7 +6,17 @@
     <description>Recent content in patch on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Aug 2023 10:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Sep 2023 10:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1.2 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-2-maintenance-release/</link>
+      <pubDate>Tue, 26 Sep 2023 10:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-2-maintenance-release/</guid>
+      <description>The second patch for PrestaShop 8.1 is available! This release contains 2 security fixes, over 30 bugs have been fixed and some minor improvements have been integrated.
+Version 8.1.2 fixes a few security issues found by security researchers and solves a great number of bugs reported by the community and project&amp;rsquo;s Quality Assurance team. It also includes some minor improvements, especially for the new product page and new multi-format image generation system.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1.1 Is Available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-1-maintenance-release/</link>
@@ -160,18 +170,6 @@ Bug fixes and improvements Reverts the integration of Symfony kernel in the webs
       <description>PrestaShop 1.7.8.3 is now available. This maintenance release fixes 25 bugs and 1 security issue since the 1.7.8.2 release.
 Note that this version introduces two backward-incompatible changes:
 The signature of PrestaShop\PrestaShop\Core\Translation\Storage\Extractor\LegacyModuleExtractor::__construct() has been modified to allow excluding directories from the scan (see the related Pull Request for details). This component is used by the Back Office&amp;rsquo;s translation interface. Themes based on Classic might need to be adapted following this change to fix the layout of the menu and search bar on tablet devices.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.8.2</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-1-7-8-2-maintenance-release/</link>
-      <pubDate>Tue, 07 Dec 2021 14:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-1-7-8-2-maintenance-release/</guid>
-      <description>The ongoing work on security for PrestaShop software continues. We have identified and fixed a new security issue, it has been decided to deliver a new maintenance release for 1.7.8.X branch.
-This release also fixes 1 regression reported on version 1.7.8.X.
-We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.
-Reminder: the 1-Click Upgrade module’s latest version is v4.13.0, don’t forget to upgrade it.</description>
     </item>
     
   </channel>

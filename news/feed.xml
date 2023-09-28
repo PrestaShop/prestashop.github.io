@@ -6,7 +6,17 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Sep 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Sep 2023 10:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1.2 is available</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-2-maintenance-release/</link>
+      <pubDate>Tue, 26 Sep 2023 10:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-2-maintenance-release/</guid>
+      <description>The second patch for PrestaShop 8.1 is available! This release contains 2 security fixes, over 30 bugs have been fixed and some minor improvements have been integrated.
+Version 8.1.2 fixes a few security issues found by security researchers and solves a great number of bugs reported by the community and project&amp;rsquo;s Quality Assurance team. It also includes some minor improvements, especially for the new product page and new multi-format image generation system.</description>
+    </item>
+    
     <item>
       <title>Hacktoberfest 2023</title>
       <link>https://build.prestashop-project.org/news/2023/hacktoberfest-2023/</link>
@@ -153,16 +163,6 @@ Remember that at the end of every meeting, there is a Q&amp;amp;A session. You c
       <guid>https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-june-2023/</guid>
       <description>Contributing to PrestaShop is not only about the code, it&amp;rsquo;s also about taking part in the PrestaShop translation project! This report will tell you how the software translations evolved in June.
 Project news 🌍 Translating the PrestaShop documentation If you didn’t know, you can help translate the PrestaShop 8 documentation into your own language! For now, the PrestaShop 8 docs are only available in English and French, but if you wish to help translate it, let me know.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop Core Monthly - June</title>
-      <link>https://build.prestashop-project.org/news/2023/core-monthly-2023-06-01-2023-06-30/</link>
-      <pubDate>Tue, 04 Jul 2023 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/core-monthly-2023-06-01-2023-06-30/</guid>
-      <description>The new PrestaShop 8.1, ongoing work on PrestaShop 9.0, new content in the developer documentation and more! Read about all this news in the Core Monthly report for June.
-PrestaShop 8.1 is out! You read that right! The new PrestaShop 8.1 is out! 🎉 Congratulations to the whole PrestaShop project team, contributors and community members who made this release possible. Version 8.1 is a minor upgrade, with major improvements. The all-new product management page, full support for WebP and Avif and lots of other improvements are waiting for you.</description>
     </item>
     
   </channel>

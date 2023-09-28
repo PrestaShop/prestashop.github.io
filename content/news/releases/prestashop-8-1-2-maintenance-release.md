@@ -35,12 +35,30 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
 
 ---
 
+## Contribution overview
+
+This patch benefits greatly from the combined efforts of our community and internal PrestaShop team. A notable mention goes to [@Hlavtox](https://github.com/Hlavtox), who alone contributed 32 PRs, making up 50% of all merged Pull Requests. While the core work is largely driven by the PrestaShop team, contributions like those from Hlavtox are invaluable in enhancing the project. A big thank you to [@Hlavtox](https://github.com/Hlavtox) and to everyone else who made this patch version that good!
+
+
+| Author     | Company         | PRs       | Percentage |
+|------------|-----------------|-----------|------------|
+| Hlavtox    | Community       | 32 PRs    | 50.00%     |
+| jolelievre | PrestaShop      | 7 PRs     | 10.94%     |
+| Progi1984  | PrestaShop      | 6 PRs     | 9.38%      |
+| nicosomb   | PrestaShop      | 4 PRs     | 6.25%      |
+| M0rgan01   | PrestaShop      | 3 PRs     | 4.69%      |
+| tleon      | PrestaShop      | 3 PRs     | 4.69%      |
+| matks      | PrestaShop      | 3 PRs     | 4.69%      |
+| boherm     | PrestaShop      | 2 PRs     | 3.13%      |
+| boubkerbribri | PrestaShop  | 2 PRs     | 3.13%      |
+| sowbiba    | PrestaShop      | 2 PRs     | 3.13%      |
+
 ## Security advisories
 
 Two security issues have been fixed in this release. Both required back office access to be exploited.
 
-- [x](y)
-- [x](y)
+- [Uninstall modules from backoffice, even with low rights](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-6jmf-2pfc-q9m7)
+- [Employee without any access rights can list all installed modules](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-gvrg-62jp-rf7j)
 
 ## Acknowledgments
 

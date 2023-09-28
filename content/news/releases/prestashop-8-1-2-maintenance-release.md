@@ -42,7 +42,7 @@ This patch benefits greatly from the combined efforts of our community and inter
 
 | Author     | Company         | PRs       | Percentage |
 |------------|-----------------|-----------|------------|
-| Hlavtox    | ]Daniel Hlavacek](https://danielhlavacek.cz/en)       | 32 PRs    | 50.00%     |
+| Hlavtox    | [Daniel Hlavacek](https://danielhlavacek.cz/en)       | 32 PRs    | 50.00%     |
 | jolelievre | PrestaShop      | 7 PRs     | 10.94%     |
 | Progi1984  | PrestaShop      | 6 PRs     | 9.38%      |
 | nicosomb   | PrestaShop      | 4 PRs     | 6.25%      |

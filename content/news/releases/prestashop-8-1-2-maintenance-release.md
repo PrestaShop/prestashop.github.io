@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.1.2 is available
 subtitle: Second patch for branch 8.1.x is available
-date: 2023-09-26 10:00:00
+date: 2023-09-28 10:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2023/09/ps812_1200x627.png
 opengraph_image: /assets/images/2023/09/ps812_1200x627.png

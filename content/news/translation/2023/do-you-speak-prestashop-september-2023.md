@@ -100,10 +100,20 @@ Congratulations and a huge thank you to all of you, contributors! :party-popper:
 Of course, this is highlighting the languages that made some progress with new translations; but it does not mean that the languages that are not mentioned here are not active.
 Indeed, some editing and rewriting may be going on, but the percentage of translation would not be modified (since the work happens on strings that are already translated). So let's not forget about the work of other contributors! Thanks to you too!
 
+## Translating PrestaShop: documentation
+
+Ever had a question regarding the translation project but never knew where to look exactly?  We've taken all your comments and suggestions and put them into specific documentation. 📖
+
+In it, you'll find everything about Crowdin and documentation translations, as well as the project's Terms of Use along with a few useful resources, including the PrestaShop glossary.
+
+You can access the translator documentation anytime [here](https://docs.prestashop-project.org/translating-prestashop/).
 
 ## Let’s keep in touch!
 
-If you have not joined us on Crowdin yet, [it’s never too late](https://crowdin.com/project/prestashop-official)! :wink:
+
+Feel free to let us know if you have any suggestions or questions by [sending us an email](mailto:translation@prestashop.com) 📩
+
+And if you have not joined us on Crowdin yet, [it’s never too late](https://crowdin.com/project/prestashop-official)! :wink:
 
 You can also join the #translation channel of the PrestaShop open source Slack. On this channel, I share information about the translation project. You will be informed about the publication of the Crowdin monthly report. You can also ask questions, suggest ideas, or get in touch with other translators.
 

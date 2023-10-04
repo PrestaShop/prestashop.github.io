@@ -98,7 +98,7 @@ There are less than 2% of strings to translate and proofread! You can do it! :mu
 Congratulations and a huge thank you to all of you, contributors! :party-popper: 
  
 Of course, this is highlighting the languages that made some progress with new translations; but it does not mean that the languages that are not mentioned here are not active.
-Indeed, some editing and rewriting may be going on, but the percentage of translation would not be modified (since the work happens on strings that are already translated). So let's not forget about the work of other contributors! Thanks to you too!
+Indeed, some editing and rewriting may be going on, but the translation percentage would not be modified (since the work happens on strings that are already translated). So let's not forget about the work of other contributors! Thanks to you too!
 
 ## Translating PrestaShop: documentation
 

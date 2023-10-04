@@ -2,7 +2,7 @@
 layout: post
 title: "Do You Speak PrestaShop? – September 2023 Edition"
 subtitle: "Where you'll learn that new strings are ready for translation"
-date: 2023-10-04
+date: 2023-10-05
 authors: [JulieVarisellaz]
 icon: icon-world
 image: /assets/images/2019/01/Build-Crowdin-banner.jpg

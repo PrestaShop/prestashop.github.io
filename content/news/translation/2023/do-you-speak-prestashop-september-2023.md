@@ -18,7 +18,7 @@ Contributing to PrestaShop is not only about coding, it's also about taking part
 ## New strings are ready for translation
 
 As you may have noticed, new strings were added to Crowdin on September 28. It's usually not possible to add new strings outside the release of a minor or major version of PrestaShop but we had to do it to fix a [bug](https://github.com/PrestaShop/PrestaShop/issues/32212).
-To go back to a 100% completion rate, those strings will need to be translated and validated. You can find the untranslated strings in the 8 file. Your project needs you! :muscle: 
+To go back to a 100% completion rate, those strings will need to be translated and validated. You can find the untranslated strings in the "8" file. Your project needs you! :muscle: 
 
 ## A few stats
 

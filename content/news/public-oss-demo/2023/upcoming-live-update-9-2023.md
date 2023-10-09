@@ -10,7 +10,7 @@ tags: [contribute, event, community, live-update]
 
 The ninth Live Update for the PrestaShop Project will happen on **Wednesday, October 11th, 2023** at [4 pm (Paris time)](https://time.is/1600_11_Oct_2023_in_Paris) on [YouTube](https://www.youtube.com/watch?v=tNAfcQhVmVM)!
 
-We will go over the latest project updates, take a look at recent changes in the software, changes made in the developer documentation and at the end of the session we'll have a special announcement to make.
+We will go over the latest project updates, take a look at recent changes in the software, changes made in the developer documentation and at the end of the session we will make a very special announcement.
 
 {{< cta "https://www.youtube.com/watch?v=tNAfcQhVmVM" "info" >}}Join us on YouTube!{{< /cta >}} 
 

@@ -8,7 +8,7 @@ icon: icon-video-camera
 tags: [contribute, event, community, live-update]
 ---
 
-The project's live update was held for the nineth time this year and [streamed live](https://www.youtube.com/watch?v=tNAfcQhVmVM) on October 11th, 2023.
+The project's live update was held for the ninth time this year and [streamed live](https://www.youtube.com/watch?v=tNAfcQhVmVM) on October 11th, 2023.
 
 ## PrestaShop Live Update - October 2023
 

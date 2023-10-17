@@ -12,7 +12,7 @@ The project's live update was held for the nineth time this year and [streamed l
 
 ## PrestaShop Live Update - October 2023
 
-It was a special Live Update where we said goodbye to the project leader, [Pablo Borowicz](https://github.com/eternoendless), who, after over six years here, is leaving PrestaShop company. On behalf of everyone in the project, I would like to thank him for all the work he has done for the project and wish him all the best in his future endeavors.
+It was a special Live Update where we said goodbye to the project leader, [Pablo Borowicz](https://github.com/eternoendless), who, after over six years, is leaving the PrestaShop company. On behalf of everyone in the project, I would like to thank him for all the work he has done for the project and wish him all the best in his future endeavors.
 
 ## The session's agenda was as follows:
 

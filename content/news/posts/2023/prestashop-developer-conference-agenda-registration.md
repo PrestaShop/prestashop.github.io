@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  PrestaShop Developer Conference in Paris: Program and Registration
+title:  "PrestaShop Developer Conference in Paris: Program and Registration"
 subtitle: "Let’s go over the event’s program and registration process, taking place on November 30, 2023"
 date:   2023-11-08
-authors: [ Patrick Coffre ]
+authors: [ coffrep ]
 icon: icon-leaf
 tags: [ news, event, community ]
 ---

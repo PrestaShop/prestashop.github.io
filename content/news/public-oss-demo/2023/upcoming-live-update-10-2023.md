@@ -10,7 +10,7 @@ tags: [contribute, event, community, live-update]
 
 The tenth Live Update for the PrestaShop Project will happen on **Wednesday, December 20th, 2023** at [4 pm (Paris time)](https://time.is/1600_20_Dec_2023_in_Paris) on [YouTube](https://www.youtube.com/watch?v=7CQ2Sg-v4XQ)!
 
-This time, we will announce project updates and present two demos originally shown at the PrestaShop Developer Conference in Paris:
+This time, we will announce project updates and follow two presentations originally given at the PrestaShop Developer Conference in Paris:
 
 - PrestaShop news - where we are and where we're going by [@matks](https://github.com/matks)
 - API OAuth/CQRS in PrestaShop 9 by [@jolelievre](https://github.com/jolelievre)

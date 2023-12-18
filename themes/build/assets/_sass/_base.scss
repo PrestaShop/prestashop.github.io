@@ -211,6 +211,7 @@ ul.post-list {
                 width: 32px;
                 text-align: center;
                 font-size: 70%;
+                font-weight: bold;
                 margin: 6px 0 0 -40px;
                 position: absolute;
                 color: $grey-color;
@@ -226,12 +227,21 @@ ul.post-list {
             margin: ($spacing-unit / 4) 0 0 0;
             color: $brand-color-2;
             font-size: 75%;
-            text-transform: uppercase;
             font-weight: 600;
         }
         p {
             margin-top: $spacing-unit / 2;
         }
+    }
+    .post-date {
+        color: #65bbcf;
+        font-weight: bold;
+    }
+    .post-link {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .post-summary {
+        font-family: Arial, Helvetica, sans-serif;
     }
     .post-divider {
         height: 0px;
@@ -779,9 +789,27 @@ footer.site-footer {
 }
 
 .read-more {
-    font-size: 0.7em;
+    font-size: 15px;
     text-align: right;
     display: block;
+    margin-right: 0;
+    margin-left: auto;
+    background-color: #000000;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    font-family: IBMPlexSans, Arial;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    width: 200px;
+}
+
+.arrow-svg {
+    filter: invert(1);
+    width: 10px;
+    padding-bottom: 4px;
 }
 
 .pager {

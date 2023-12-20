@@ -13,11 +13,11 @@ tags: [news, theme, hummingbird, hook]
 
 ## What is a hook?
 
-As described in the [the developer documentation](https://devdocs.prestashop-project.org/8/modules/concepts/hooks/):
+As described in the [developer documentation](https://devdocs.prestashop-project.org/8/modules/concepts/hooks/):
 
 > Hooks are a way to associate your code to some specific PrestaShop events.
 
-Primarily, hooks are utilized for embedding content into various page sections, such as the header, footer, or side columns, based on the chosen hook. Additionally, hooks can trigger specific actions under particular conditions, like sending an email when an order is created. This article will concentrate on the display hooks in the front office of your store.
+Primarily, hooks are utilized for embedding content into various page sections, such as the header, footer, or side columns, based on the chosen hook. Additionally, hooks can trigger specific actions under particular conditions, like sending an email when an order is created. This project will concentrate on the display hooks in the front office of your store.
 
 ## The Hook Mapping Project
 

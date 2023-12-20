@@ -6,7 +6,18 @@
     <description>Recent content in PrestaShop on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Sep 2023 10:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Dec 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Branding For The Project</title>
+      <link>https://build.prestashop-project.org/news/2023/new-project-branding/</link>
+      <pubDate>Wed, 20 Dec 2023 12:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/new-project-branding/</guid>
+      <description>This week will see some changes with the Project. PrestaShop SA, the company, is making the open source Project consistent with the new PrestaShop branding.
+New PrestaShop Project branding Unveiled earlier this year, PrestaShop launched its new brand identity to affirm PrestaShop’s strengths, showing more credibility and trust.
+Therefore, in the next few days, to align with this new identity, all materials related to the Project will change. You’ll see the rebranded Project’s website, developer documentation, this blog, and other Project-related content.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1.2 is available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-2-maintenance-release/</link>
@@ -154,17 +165,6 @@ Test PrestaShop 8.1.0 beta 1 now! Version 8.1 fixes over 30 bugs found in the pr
       <description>The first patch version for PrestaShop 8 is now available to download!
 After a few weeks of intensive work from all project members, the first maintenance release for version 8 is now available.
 In this patch, you can find more than 30 bug fixes and one performance improvement that prevents clearing the system&amp;rsquo;s cache for bulk actions performed from the modules list. You will also get changes from the recent PrestaShop patch release 1.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 1.7.8.8 Is Available</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-8-maintenance-release/</link>
-      <pubDate>Thu, 08 Dec 2022 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-8-maintenance-release/</guid>
-      <description>It has been decided to deliver a new maintenance release for 1.7.8.x branch. Please note that this will be the last regular 1.7.8.x patch version, as the branch now enters security-only maintenance phase. Next regular patches will now target 8.0.x branch.
-This release fixes some bugs and regressions as well as a security fix.
-We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.</description>
     </item>
     
   </channel>

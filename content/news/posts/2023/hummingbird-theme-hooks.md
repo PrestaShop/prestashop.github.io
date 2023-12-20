@@ -45,6 +45,6 @@ For further guidance on navigating the Figma file, visit the [Read me page](http
 
 ## Contributing
 
-Have you spotted an error in the file? Would you like to update it, or do you have an idea for improving the resource? Just like all the other PrestaShop resources, your ideas are welcome! All you have to do is [join the dedicated GitHub Discussion](https://github.com/PrestaShop/PrestaShop/discussions/) and let us know. Share your thoughts and add screenshots or your own mock-ups.
+Have you spotted an error in the file? Would you like to update it, or do you have an idea for improving the resource? Just like all the other PrestaShop resources, your ideas are welcome! All you have to do is [join the dedicated GitHub Discussion](https://github.com/PrestaShop/PrestaShop/discussions/34884) and let us know. Share your thoughts and add screenshots or your own mock-ups.
 
 {{< cta "https://devdocs.prestashop-project.org/8/themes/hummingbird/hooks/" >}}Visit the project page in the DevDocs{{< /cta >}}

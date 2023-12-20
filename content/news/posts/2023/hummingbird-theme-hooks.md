@@ -9,7 +9,7 @@ tags: [news, theme, hummingbird, hook]
 ---
 
 
-[Hummingbird](https://github.com/PrestaShop/hummingbird) is the new theme set to be introduced in PrestaShop 9. This theme represents a complete overhaul of the Classic theme, featuring a fresh design and new functionalities. The Product Design team at PrestaShop has developed a visual guide to the hooks available in this theme, aimed at simplifying customization for front-end developers who wants to work with it.
+[Hummingbird](https://github.com/PrestaShop/hummingbird) is the new theme set to be introduced in PrestaShop 9. This theme represents a complete overhaul of the Classic theme, featuring a fresh design and new functionalities. The Product Design team at PrestaShop has developed a visual guide to the hooks available in this theme, aimed at simplifying customization for front-end developers who want to work with it.
 
 ## What is a hook?
 

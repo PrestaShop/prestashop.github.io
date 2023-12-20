@@ -2,7 +2,7 @@
 layout: post
 title:  "Hooks in the Hummingbird theme"
 subtitle: "Visual representation of the hooks in the Hummingbird theme"
-date:   2023-12-19
+date:   2023-12-20 09:00:00
 authors: [ elodieprokhoroff ]
 icon: icon-laptop
 tags: [news, theme, hummingbird, hook]

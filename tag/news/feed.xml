@@ -6,7 +6,17 @@
     <description>Recent content in news on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Nov 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Dec 2023 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hooks in the Hummingbird theme</title>
+      <link>https://build.prestashop-project.org/news/2023/hummingbird-theme-hooks/</link>
+      <pubDate>Wed, 20 Dec 2023 09:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/hummingbird-theme-hooks/</guid>
+      <description>Hummingbird is the new theme set to be introduced in PrestaShop 9. This theme represents a complete overhaul of the Classic theme, featuring a fresh design and new functionalities. The Product Design team at PrestaShop has developed a visual guide to the hooks available in this theme, aimed at simplifying customization for front-end developers who want to work with it.
+What is a hook? As described in the developer documentation:</description>
+    </item>
+    
     <item>
       <title>PrestaShop Developer Conference in Paris: Program and Registration</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-developer-conference-agenda-registration/</link>
@@ -148,17 +158,6 @@ composer create-project prestashop/prestashop Or, if you want to download a spec
       <guid>https://build.prestashop-project.org/news/2021/focusing-on-essential-modules/</guid>
       <description>Over the years, the PrestaShop project became host and maintainer for a very large number of open source modules. Last year, over 160 of them were present in our GitHub organization. As you probably know already, maintaining them requires a lot of work, and the maintainer team&amp;rsquo;s resources are limited. Proof of this is that some of these modules have not been updated in years.
 For this reason, the product team recently did a survey of almost 600 PrestaShop users to find out which modules were essential for their business and which ones they used the least.</description>
-    </item>
-    
-    <item>
-      <title>A new place to contribute to the PrestaShop project and share your feedback on the next features</title>
-      <link>https://build.prestashop-project.org/news/2020/productboard-portal-launch/</link>
-      <pubDate>Thu, 30 Jul 2020 16:30:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2020/productboard-portal-launch/</guid>
-      <description>As announced here, the Core product team recently adopted a new working tool to gather feedback and prioritize features: Productboard. No more teasing, it is now time to have a look at how it will look and how we will all be able to handle it!
-Productboard makes two things possible for the team:
-On the one hand, having a dedicated internal interface to centralize all feedback, group them into topics, define features, and prioritize them.</description>
     </item>
     
   </channel>

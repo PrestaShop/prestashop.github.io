@@ -6,7 +6,17 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Dec 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Dec 2023 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hooks in the Hummingbird theme</title>
+      <link>https://build.prestashop-project.org/news/2023/hummingbird-theme-hooks/</link>
+      <pubDate>Wed, 20 Dec 2023 09:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/hummingbird-theme-hooks/</guid>
+      <description>Hummingbird is the new theme set to be introduced in PrestaShop 9. This theme represents a complete overhaul of the Classic theme, featuring a fresh design and new functionalities. The Product Design team at PrestaShop has developed a visual guide to the hooks available in this theme, aimed at simplifying customization for front-end developers who want to work with it.
+What is a hook? As described in the developer documentation:</description>
+    </item>
+    
     <item>
       <title>Announcing December PrestaShop Project Live Update</title>
       <link>https://build.prestashop-project.org/news/2023/upcoming-live-update-10-2023/</link>
@@ -148,17 +158,6 @@ The session&amp;rsquo;s agenda was as follows: 00:00 Beginning of the session: t
       <guid>https://build.prestashop-project.org/news/2023/core-monthly-2023-08-01-2023-08-31/</guid>
       <description>A little later than usual, discover the latest happenings in the PrestaShop Project for August 2023. We had a productive month, successfully merging more than 240 pull requests and releasing PrestaShop 8.1.1 and some security patches. Read on to find out more!
 PrestaShop 8.1.1, 8.0.5, 1.7.8.10 The first patch for PrestaShop 8.1 and security patches for 8.0.5 and 1.7.8.10 are all available to download. You can read the details about these versions in the release notes:</description>
-    </item>
-    
-    <item>
-      <title>Announcing September PrestaShop Project Live Update</title>
-      <link>https://build.prestashop-project.org/news/2023/upcoming-live-update-8-2023/</link>
-      <pubDate>Wed, 06 Sep 2023 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/upcoming-live-update-8-2023/</guid>
-      <description>The eighth Live Update for the PrestaShop Project will happen on Wednesday, September 13th, 2023 at 4 pm (Paris time) on YouTube!
-We will go over the latest project updates, take a look at recent changes in the software, changes made in the developer documentation, and more!
-Remember that at the end of every meeting, there is a Q&amp;amp;A session. You can ask your questions during the presentation or beforehand. If you have questions related to the open source project, feel free to let us know in advance using this form.</description>
     </item>
     
   </channel>

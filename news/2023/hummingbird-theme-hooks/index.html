@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Hooks in the Hummingbird theme</title>
+    <link href="/style.css?1703070271" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Hooks in the Hummingbird theme" />
+<meta property="og:description" content="Hummingbird is the new theme set to be introduced in PrestaShop 9. This theme represents a complete overhaul of the Classic theme, featuring a fresh design and new functionalities. The Product Design team at PrestaShop has developed a visual guide to the hooks available in this theme, aimed at simplifying customization for front-end developers who want to work with it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2023/hummingbird-theme-hooks/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2023-12-20T09:00:00+01:00" />
+    <meta property="article:modified_time" content="2023-12-20T09:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build.png">
+<meta name="twitter:title" content="Hooks in the Hummingbird theme"/>
+<meta name="twitter:description" content="Visual representation of the hooks in the Hummingbird theme"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip': false });
+			}
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/new-logo.png" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Hooks in the Hummingbird theme</h1>
+              
+                <h3 class="post-subtitle">Visual representation of the hooks in the Hummingbird theme</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/elodieprokhoroff/">
+        <img class="img-circle" src="https://ca.slack-edge.com/T029HS3DQ-U040THHALEL-f1e5cc52454e-512" alt="Elodie Prokhoroff's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/elodieprokhoroff/">Elodie Prokhoroff</a>
+      </div>
+        
+          <div class="author-display-role">Product Designer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Dec 20, 2023
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Hooks&#43;in&#43;the&#43;Hummingbird&#43;theme&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2023%2Fhummingbird-theme-hooks%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2023%2Fhummingbird-theme-hooks%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p><a href="https://github.com/PrestaShop/hummingbird">Hummingbird</a> is the new theme set to be introduced in PrestaShop 9. This theme represents a complete overhaul of the Classic theme, featuring a fresh design and new functionalities. The Product Design team at PrestaShop has developed a visual guide to the hooks available in this theme, aimed at simplifying customization for front-end developers who want to work with it.</p>
+<h2 id="what-is-a-hook">What is a hook?</h2>
+<p>As described in the <a href="https://devdocs.prestashop-project.org/8/modules/concepts/hooks/">developer documentation</a>:</p>
+<blockquote>
+<p>Hooks are a way to associate your code to some specific PrestaShop events.</p>
+</blockquote>
+<p>Primarily, hooks are utilized for embedding content into various page sections, such as the header, footer, or side columns, based on the chosen hook. Additionally, hooks can trigger specific actions under particular conditions, like sending an email when an order is created. This project will concentrate on the display hooks in the front office of your store.</p>
+<h2 id="the-hook-mapping-project">The Hook Mapping Project</h2>
+<p>The hook mapping project was initiated by the Product Design team from PrestaShop. The aim is to list all the hooks present in the front office. This project is a good complement to the <a href="https://devdocs.prestashop-project.org/8/modules/concepts/hooks/list-of-hooks/">existing documentation</a>.</p>
+<p>Hook mapping has been created based on the upcoming default theme for PrestaShop - Hummingbird.</p>
+<h2 id="why-create-it">Why create it?</h2>
+<p>The project’s goal is to provide a visual and accurate guide to front office hook locations for the community. For beginners, identifying and locating hooks can be challenging due to the complex naming that doesn’t always clearly indicate the hook&rsquo;s position. This expertise typically requires a deep understanding of PrestaShop.</p>
+<p>By making hooks more accessible to contributors and module developers, this project seeks to enhance the development and customization experience for PrestaShop stores.</p>
+<h2 id="project-overview">Project Overview</h2>
+<p>To simplify hook identification, we have created a visual map using Figma, interacting directly with the Hummingbird theme templates. This map can be accessed <a href="https://www.figma.com/file/HKGzVBx5p2JaFrFocGe6p0/Hook-Cartography?type=design&amp;node-id=0%3A1&amp;mode=design&amp;t=VhQey8OlJv2UkDuf-1">here</a> or in the <a href="https://devdocs.prestashop-project.org/8/themes/hummingbird/hooks/">developer documentation</a>.</p>
+<p>Each hook location is marked by a blue zone corresponding to its name.</p>
+<p>To locate a specific hook, you have two options:</p>
+<ul>
+<li><strong>If you know the front office page you want to modify:</strong> find the corresponding mock-up in the file, either in the left-hand column, or directly in the central area. You can then browse the hooks available for the page.</li>
+<li><strong>If you know the hook&rsquo;s name but not its location:</strong> use the shortcut Ctrl+F or Cmd+F and enter the name of the hook you&rsquo;re looking for. You can also display the search bar using the magnifying glass icon at the top left of the interface. <strong>Note:</strong> if your search is unsuccessful, make sure your search applies to all pages in the file. If you still can&rsquo;t find what you&rsquo;re looking for, it may be because the hook hasn&rsquo;t yet been added to the map. Feel free to contribute to the project!</li>
+</ul>
+<p>For further guidance on navigating the Figma file, visit the <a href="https://www.figma.com/file/HKGzVBx5p2JaFrFocGe6p0/Hook-Cartography?type=design&amp;node-id=128-15445&amp;mode=design&amp;t=lnfRmcHsGwpqfBK1-0">Read me page</a>.</p>
+<h2 id="contributing">Contributing</h2>
+<p>Have you spotted an error in the file? Would you like to update it, or do you have an idea for improving the resource? Just like all the other PrestaShop resources, your ideas are welcome! All you have to do is <a href="https://github.com/PrestaShop/PrestaShop/discussions/">join the dedicated GitHub Discussion</a> and let us know. Share your thoughts and add screenshots or your own mock-ups.</p>
+<p class="text-center">
+  <a href="https://devdocs.prestashop-project.org/8/themes/hummingbird/hooks/" class="btn btn-lg btn-success">Visit the project page in the DevDocs</a>
+</p>
+
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Dec 20, 2023</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/news/">news</a>
+
+  <a class="label label-primary" href="/tag/theme/">theme</a>
+
+  <a class="label label-primary" href="/tag/hummingbird/">hummingbird</a>
+
+  <a class="label label-primary" href="/tag/hook/">hook</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/elodieprokhoroff/">Elodie Prokhoroff</a>
+      <span>Product Designer</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2023\/hummingbird-theme-hooks\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

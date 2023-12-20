@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New Branding for the project"
+title:  "New Branding For The Project"
 subtitle: "Change of identity with the new PrestaShop branding"
 date:  2023-12-20 12:00:00
 authors: [ PrestaShop ]

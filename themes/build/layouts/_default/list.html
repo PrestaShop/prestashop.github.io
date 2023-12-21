@@ -57,11 +57,6 @@
             </div>
 
             <h2>
-              {{ if .Params.Icon }}
-              <i class="fa {{ .Params.Icon }}"></i>
-              {{ else }}
-              <i class="icon-anchor"></i>
-              {{ end }}
               <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
             </h2>
 
@@ -69,8 +64,11 @@
             <h4>{{ .Params.Subtitle }}</h4>
             {{ end }}
 
-            <p>{{ partial "partials/post-summary" . }}</p>
-            <a class="read-more" href="{{ .Permalink }}">Continue reading &rarr;</a>
+            <p class="post-summary">{{ partial "partials/post-summary" . }}</p>
+            <a class="read-more" href="{{ .Permalink }}">
+              Continue reading
+              <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+            </a>
           </li>
 
           {{ end }}

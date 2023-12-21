@@ -6,7 +6,17 @@
     <description>Recent content in news on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Dec 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Dec 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop Developer Conference in Paris: Synopsis Of The Day</title>
+      <link>https://build.prestashop-project.org/news/2023/prestashop-developer-conference-2023/</link>
+      <pubDate>Thu, 21 Dec 2023 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2023/prestashop-developer-conference-2023/</guid>
+      <description>The European community of PrestaShop developers gathered to talk code, commerce and also open source in Paris, on November 30, 2023, at the PrestaShop Developer Conference. It was so exciting to see approximately 150 people come to follow conferences and other technical presentations, as well as network during the day.
+PrestaShop Developer Conference 2023 The event opened its doors at 9AM and very quickly the venue filled up. Attendees were able to enjoy breakfast before diving into the day&amp;rsquo;s introduction in the main room.</description>
+    </item>
+    
     <item>
       <title>New Branding For The Project</title>
       <link>https://build.prestashop-project.org/news/2023/new-project-branding/</link>
@@ -148,17 +158,6 @@ On June 1st, 2021 we will delete all branches from our main repository that are 
 The affected branches are:
 1.7.0.x 1.7.1.x 1.7.2.x 1.7.3.x 1.7.4.x 1.7.5.x 1.7.6.x Future branches will be deleted as well once they will become stale (e.g. 1.7.7.x will be deleted shortly after 1.7.8 is out).
 Important note: Please be aware that this is a routine cleanup and has absolutely no impact on source code availability for previous versions.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop is now available on Composer</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-available-composer/</link>
-      <pubDate>Mon, 24 May 2021 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-available-composer/</guid>
-      <description>Released almost 10 years ago, Composer is the most popular package manager for the PHP ecosystem. PrestaShop has been using it since 1.7.0 to manage its dependencies, including all the native modules.
-Today we are announcing the general availability of PrestaShop itself through Composer. Thanks to this, it is now possible to easily create a new PrestaShop project from the command line, like this:
-composer create-project prestashop/prestashop Or, if you want to download a specific version instead of the latest release:</description>
     </item>
     
   </channel>

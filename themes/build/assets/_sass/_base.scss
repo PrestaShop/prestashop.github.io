@@ -246,7 +246,7 @@ ul.post-list {
     .post-divider {
         height: 0px;
         margin: $spacing-unit 0 100px 0;
-        border-top: 1px solid $grey-color-light;
+        border-top: 1px solid #000000;
     }
     .list-post-meta {
         color: $grey-color;
@@ -789,7 +789,7 @@ footer.site-footer {
 
 .read-more {
     font-size: 15px;
-    text-align: right;
+    text-align: center;
     display: block;
     margin-right: 0;
     margin-left: auto;

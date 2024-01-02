@@ -6,7 +6,29 @@
     <description>Recent content in security on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Aug 2023 10:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/security/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Jan 2024 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/security/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1.3 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-3-maintenance-release/</link>
+      <pubDate>Tue, 02 Jan 2024 09:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-3-maintenance-release/</guid>
+      <description>We are entering the new year with the release of PrestaShop 8.1.3. The latest update for PrestaShop 8.1 is now available. This version brings two security updates, addresses close to 30 known issues, and introduces various enhancements.
+To welcome the new year well, we are releasing a new version of PrestaShop! Version 8.1.3 is available with a slight delay, but this is due to the time it took to complete work on it.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 1.7.8.11 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2024/prestashop-1-7-8-11-maintenance-release/</link>
+      <pubDate>Tue, 02 Jan 2024 08:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/prestashop-1-7-8-11-maintenance-release/</guid>
+      <description>A security patch for PrestaShop 1.7 is now available.
+As part of the extended support policy for PrestaShop 1.7, which involves taking care of critical and security fixes for the 1.7.8.x branch, we are releasing today a new patch for this version. This release fixes one high severity security issue found by security researchers.
+For more details regarding security fixes, you can check the security advisories section below.
+It is recommended to upgrade your shop quickly in order to benefit from these fixes.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1.1 Is Available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-1-maintenance-release/</link>
@@ -145,27 +167,6 @@ This maintenance release fixes 9 issues reported from versions 1.7.6.0 to 1.7.6.
       <guid>https://build.prestashop-project.org/news/2020/phpunit-security-issue-post-analysis/</guid>
       <description>Early January, we encountered a security issue with PHPUnit in some modules that allowed attackers to perform arbitrary code execution without authorization through the PHPUnit dependency. This vulnerability was discovered through a merchant whose shops were compromised.
 Background At PrestaShop, we use an automated system to build packages for native modules and make them available through the Addons Marketplace API. This process uses Composer to install dependencies before creating the zip package.</description>
-    </item>
-    
-    <item>
-      <title>Critical security vulnerability in PrestaShop modules</title>
-      <link>https://build.prestashop-project.org/news/2020/critical-security-vulnerability-in-prestashop-modules/</link>
-      <pubDate>Tue, 07 Jan 2020 14:15:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2020/critical-security-vulnerability-in-prestashop-modules/</guid>
-      <description>Attackers are using a vulnerability in a popular dependency used by modules to take control of PrestaShop sites. For details, please read the entire article.
-What’s happening It has come to our attention that attackers are exploiting a vulnerability in PHPUnit to perform arbitrary code execution in servers running PrestaShop websites. The issue is fixed in PHPUnit 7.5.19 and 8.5.1. To our knowledge, all previous versions are vulnerable, at least for certain server configurations.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.5.2 and 1.6.1.24</title>
-      <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-5-2-1-6-1-24-maintenance-release/</link>
-      <pubDate>Fri, 03 May 2019 11:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-5-2-1-6-1-24-maintenance-release/</guid>
-      <description>PrestaShop 1.7.5.2 and 1.6.1.24 are now available. These versions fix a security issue for both 1.7.5.x and 1.6.1.x. For the details, please read below:
-These two security updates address a validation issue on the customer registration form, which is currently being exploited by spammers who were entering URLs as customer name.
-This update mitigates the problem by preventing attackers to use URLs as names. However, as we discussed before, the best protection against this kind of attack still is to add a CAPTCHA module on your shop.</description>
     </item>
     
   </channel>

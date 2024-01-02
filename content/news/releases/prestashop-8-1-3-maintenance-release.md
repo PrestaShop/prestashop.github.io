@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.1.3 is available
 subtitle: Third patch for branch 8.1.x is available
-date: 2023-12-27 09:00:00
+date: 2024-01-02 09:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2024/01/banner_8.1.3_1200x627.jpg
 opengraph_image: /assets/images/2024/01/banner_8.1.3_1200x627.jpg
@@ -17,7 +17,7 @@ tags:
 - "security"
 ---
 
-We are entering the new year with the new release of PrestaShop 8.1. The latest update for PrestaShop 8.1 is now available. This version brings with it two security updates, addresses close to 30 known issues, and introduces various enhancements.
+We are entering the new year with the release of PrestaShop 8.1. The latest update for PrestaShop 8.1 is now available. This version brings with it two security updates, addresses close to 30 known issues, and introduces various enhancements.
 
 ![8.1.3 is available!](/assets/images/2024/01/banner_8.1.3_1534x424.jpg)
 
@@ -31,7 +31,7 @@ You can go to the [release page](https://github.com/PrestaShop/PrestaShop/releas
 
 In the past few weeks, we have received quite a few reports that the new product edition page has a performance problem when using more product features. In version 8.1.3, [optimizations have been implemented](https://github.com/PrestaShop/PrestaShop/pull/34606) to improve the performance of the entire product features management interface.
 
-Btw: In version 8.1.3 we also have an [other performance improvement](https://github.com/PrestaShop/PrestaShop/pull/34458) related to how products with combinations have been handled.
+Btw: In version 8.1.3 we also have [another performance improvement](https://github.com/PrestaShop/PrestaShop/pull/34458) related to how products with combinations have been handled.
 
 ### Other improvements
 

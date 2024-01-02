@@ -2,11 +2,11 @@
 layout: post
 title:  PrestaShop 1.7.8.11 Is Available
 subtitle: Security release for PrestaShop 1.7.8
-date: 2023-12-27 08:00:00
+date: 2024-01-02 08:00:00
 authors: [ PrestaShop ]
-image: /assets/images/2023/07/17810_banner_1200_627.jpeg
-opengraph_image: /assets/images/2023/07/17810_banner_1200_627.jpeg
-twitter_image: /assets/images/2023/07/17810_banner_1024_512.jpeg
+# image: /assets/images/2023/07/17810_banner_1200_627.jpeg
+# opengraph_image: /assets/images/2023/07/17810_banner_1200_627.jpeg
+# twitter_image: /assets/images/2023/07/17810_banner_1024_512.jpeg
 icon: icon-leaf
 tags:
 - security
@@ -18,7 +18,7 @@ tags:
 
 A security patch for PrestaShop 1.7 is now available.
 
-![1.7.8.11 is available!](/assets/images/2023/07/17810_banner_1534_424.jpeg)
+<!--![1.7.8.11 is available!](/assets/images/2023/07/17810_banner_1534_424.jpeg)-->
 
 As part of the extended support policy for PrestaShop 1.7, which involves taking care of critical and security fixes for the 1.7.8.x branch, we are releasing today a new patch for this version. This release fixes one, high-serverity security issue found by security researchers.
 

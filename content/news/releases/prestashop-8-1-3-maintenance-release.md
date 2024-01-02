@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PrestaShop 8.1.3 is available
+title:  PrestaShop 8.1.3 Is Available
 subtitle: Third patch for branch 8.1.x is available
 date: 2024-01-02 09:00:00
 authors: [ PrestaShop ]
@@ -17,11 +17,11 @@ tags:
 - "security"
 ---
 
-We are entering the new year with the release of PrestaShop 8.1. The latest update for PrestaShop 8.1 is now available. This version brings with it two security updates, addresses close to 30 known issues, and introduces various enhancements.
+We are entering the new year with the release of PrestaShop 8.1.3. The latest update for PrestaShop 8.1 is now available. This version brings two security updates, addresses close to 30 known issues, and introduces various enhancements.
 
 ![8.1.3 is available!](/assets/images/2024/01/banner_8.1.3_1534x424.jpg)
 
-In order to enter the new year well, we are releasing a new version of PrestaShop! Version 8.1.3 is released with a slight delay, but this was due to the time it took to complete work on it. We didn't want to release the new version just before the Christmas/New Year period. The new version fixes [almost 30 reported bugs](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.3+label%3A%22Bug+fix%22+-label%3A%22E2E+Tests%22+) and also has security patches, while last but not least it also introduces a number of improvements, which we will write about in a moment.
+To welcome the new year well, we are releasing a new version of PrestaShop! Version 8.1.3 is available with a slight delay, but this is due to the time it took to complete work on it. We didn't want to release the new version just before the holiday period. The new version fixes [almost 30 reported bugs](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.3+label%3A%22Bug+fix%22+-label%3A%22E2E+Tests%22+) and also contains security patches. Last but not least, it introduces a number of improvements, which you will be able to read about in a moment.
 
 It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. You can upgrade to the latest version using the [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade/releases/).
 
@@ -31,13 +31,13 @@ You can go to the [release page](https://github.com/PrestaShop/PrestaShop/releas
 
 In the past few weeks, we have received quite a few reports that the new product edition page has a performance problem when using more product features. In version 8.1.3, [optimizations have been implemented](https://github.com/PrestaShop/PrestaShop/pull/34606) to improve the performance of the entire product features management interface.
 
-Btw: In version 8.1.3 we also have [another performance improvement](https://github.com/PrestaShop/PrestaShop/pull/34458) related to how products with combinations have been handled.
+By the way, in version 8.1.3, we also have [another performance improvement](https://github.com/PrestaShop/PrestaShop/pull/34458) related to how products with combinations have been handled.
 
 ### Other improvements
 
-Two minor improvements have been made to the back office user interface. The first one is on the new product page where ["Details" tab has been slightly upgraded with an improved design](https://github.com/PrestaShop/PrestaShop/pull/34738). The second improvement is related to the wording available in back office. We know how important it is to have a consistent and clear language in the back office, so we have [improved some of the wording](https://github.com/PrestaShop/PrestaShop/pull/34563) that is available on the "Product settings" tab.
+Two minor improvements have been made to the back office user interface. The first one is on the new product page where the ["Details" tab has been slightly upgraded with an improved design](https://github.com/PrestaShop/PrestaShop/pull/34738). The second improvement is related to the wording available in back office. We know how important it is to have a consistent and clear language in the back office, so we have [improved some of the wording](https://github.com/PrestaShop/PrestaShop/pull/34563) that is available on the "Product settings" tab.
 
-Those two are not the only improvements that have been implemented in this version. You can find [the list of all improvements on Github](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.3+label%3AImprovement).
+The two improvements are not the only ones implemented in this version. You can find [a full list on Github](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.3+label%3AImprovement).
 
 ## Security fixes
 

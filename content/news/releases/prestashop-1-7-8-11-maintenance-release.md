@@ -20,7 +20,7 @@ A security patch for PrestaShop 1.7 is now available.
 
 <!--![1.7.8.11 is available!](/assets/images/2023/07/17810_banner_1534_424.jpeg)-->
 
-As part of the extended support policy for PrestaShop 1.7, which involves taking care of critical and security fixes for the 1.7.8.x branch, we are releasing today a new patch for this version. This release fixes one, high-serverity security issue found by security researchers.
+As part of the extended support policy for PrestaShop 1.7, which involves taking care of critical and security fixes for the 1.7.8.x branch, we are releasing today a new patch for this version. This release fixes one high severity security issue found by security researchers.
 
 For more details regarding security fixes, you can check the [security advisories](#security-advisories) section below.
 

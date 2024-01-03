@@ -12,7 +12,7 @@ The project's live update was held for the tenth time this year and [streamed li
 
 ## PrestaShop Live Update - December 2023
 
-The first Live Update after a month's break due to the [PrestaShop Developer Conference]({{< relref "/news/posts/2023/prestashop-developer-conference-2023" >}}) was the occasion for an important announcement, which probably comes as no surprise now that you're reading this blog. The project now has the same branding that [PrestaShop SA](https://www.prestashop.com) has used for several months. We also had a chance to see a keynote from [@matks](https://github.com/matks) about the project's accomplishments in 2023 and plans for the next major release, version 9.0.0, and a look at the new PrestaShop API thanks to the presentation from [@jolelievre](https://github.com/jolelievre).
+The first Live Update after a month-long break, due to the [PrestaShop Developer Conference]({{< relref "/news/posts/2023/prestashop-developer-conference-2023" >}}), was the occasion for an important announcement, which probably comes as no surprise now that you're reading this blog. The project now has the same branding [PrestaShop SA](https://www.prestashop.com) has been using for several months. We also had a chance to see a keynote from [@matks](https://github.com/matks) about the project's accomplishments in 2023 and plans for the next major release, version 9.0.0. And also a look at the new PrestaShop API, thanks to the presentation from [@jolelievre](https://github.com/jolelievre).
 
 ## The session's agenda was as follows:
 

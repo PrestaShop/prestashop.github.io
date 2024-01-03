@@ -18,7 +18,7 @@ The first Live Update after a month's break due to the [PrestaShop Developer Con
 
 - [00:00](https://www.youtube.com/watch?v=7CQ2Sg-v4XQ) Beginning of the session: the introduction
 - [01:31](https://youtu.be/7CQ2Sg-v4XQ?t=91) Project news: New PrestaShop Project branding
-- [02:34](https://youtu.be/7CQ2Sg-v4XQ?t=154) Project news: Hooks in Hummingbird theme new project from [@ElodieOS](https://github.com/ElodieOS)
+- [02:34](https://youtu.be/7CQ2Sg-v4XQ?t=154) Project news: Hooks in Hummingbird theme. New project created by [@ElodieOS](https://github.com/ElodieOS)
 - [05:45](https://youtu.be/7CQ2Sg-v4XQ?t=345) Project news: PrestaShop Developer Conference
 - [07:25](https://youtu.be/7CQ2Sg-v4XQ?t=445) Demo: PrestaShop News. Where we are, and where we are going, by [@matks](https://github.com/matks)
 - [20:15](https://youtu.be/7CQ2Sg-v4XQ?t=1215) Demo: API OAuth/CQRS in PrestaShop 9, by [@jolelievre](https://github.com/jolelievre)

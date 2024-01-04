@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PSDevCon 2023: PrestaShop News - Where We Are And Where We’re Going
+title: "PSDevCon 2023: PrestaShop News - Where We Are And Where We’re Going"
 subtitle: "PrestaShop Project Progress: Reflecting on 2023 and Beyond"
 date:   2024-01-04
 authors: [ MathieuFerment ]

@@ -6,7 +6,17 @@
     <description>Recent content in news on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Dec 2023 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Jan 2024 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PSDevCon 2023: PrestaShop News - Where We Are And Where We’re Going</title>
+      <link>https://build.prestashop-project.org/news/2024/prestashop-news-where-we-are-and-where-we-are-going/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/prestashop-news-where-we-are-and-where-we-are-going/</guid>
+      <description>The PrestaShop Developer Conference happened on the 30th of November 2023. During the day, I was able to present a conference, titled “PrestaShop news - Where we are and where we&amp;rsquo;re going”. This blog post is a written version of the presentation that I also partially presented at the December Live Update on December 20th.
+This post does not cover the first part of the presentation titled “PrestaShop 8.1 &amp;amp; 2023 - What’s new” because PrestaShop 8.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Developer Conference in Paris: Synopsis Of The Day</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-developer-conference-2023/</link>
@@ -145,19 +155,6 @@ Feature freeze is now effective Therefore, as of today, the feature freeze is no
       <description>Following a recent Architecture Decision Records (ADR) submission and a Proof of Concept (POC), the Core Maintainers team has decided to introduce TypeScript (TS) on the project.
 Why TypeScript? During the last few years, the PrestaShop Project has been increasingly raising the code quality bar. To help maintainers ensure that quality keeps increasing, a number of automatic quality verification tools have been added to the CI pipeline:
 ESLint analyzes the whole JavaScript codebase to ensure it follows our code style and find problems.</description>
-    </item>
-    
-    <item>
-      <title>Heads up: old development branches are going away</title>
-      <link>https://build.prestashop-project.org/news/2021/old-branches-are-going-away/</link>
-      <pubDate>Tue, 25 May 2021 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/old-branches-are-going-away/</guid>
-      <description>The month of June is fast approaching, so it&amp;rsquo;s time for a late Spring clean!
-On June 1st, 2021 we will delete all branches from our main repository that are no longer subject to new releases.
-The affected branches are:
-1.7.0.x 1.7.1.x 1.7.2.x 1.7.3.x 1.7.4.x 1.7.5.x 1.7.6.x Future branches will be deleted as well once they will become stale (e.g. 1.7.7.x will be deleted shortly after 1.7.8 is out).
-Important note: Please be aware that this is a routine cleanup and has absolutely no impact on source code availability for previous versions.</description>
     </item>
     
   </channel>

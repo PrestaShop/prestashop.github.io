@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PSDevCon 2023: PrestaShop News - Where We Are And Where We’re Going</title>
+    <link href="/style.css?1704386837" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PSDevCon 2023: PrestaShop News - Where We Are And Where We’re Going" />
+<meta property="og:description" content="The PrestaShop Developer Conference happened on the 30th of November 2023. During the day, I was able to present a conference, titled “PrestaShop news - Where we are and where we’re going”. This blog post is a written version of the presentation that I also partially presented at the December Live Update on December 20th." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2024/prestashop-news-where-we-are-and-where-we-are-going/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2024-01-04T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2024-01-04T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build-2024.png">
+<meta name="twitter:title" content="PSDevCon 2023: PrestaShop News - Where We Are And Where We’re Going"/>
+<meta name="twitter:description" content="PrestaShop Project Progress: Reflecting on 2023 and Beyond"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip': false });
+			}
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PSDevCon 2023: PrestaShop News - Where We Are And Where We’re Going</h1>
+              
+                <h3 class="post-subtitle">PrestaShop Project Progress: Reflecting on 2023 and Beyond</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/MathieuFerment/">
+        <img class="img-circle" src="https://avatars2.githubusercontent.com/u/3830050?s=400&amp;v=4" alt="Mathieu Ferment's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/MathieuFerment/">Mathieu Ferment</a>
+      </div>
+        
+          <div class="author-display-role">Tech Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jan 4, 2024
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PSDevCon&#43;2023%3A&#43;PrestaShop&#43;News&#43;-&#43;Where&#43;We&#43;Are&#43;And&#43;Where&#43;We%E2%80%99re&#43;Going&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2024%2Fprestashop-news-where-we-are-and-where-we-are-going%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2024%2Fprestashop-news-where-we-are-and-where-we-are-going%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>The PrestaShop Developer Conference happened on the 30th of November 2023. During the day, I was able to present a conference, titled “PrestaShop news - Where we are and where we&rsquo;re going”. This blog post is a written version of the presentation that I also partially presented at the December <a href="https://www.youtube.com/watch?v=7CQ2Sg-v4XQ">Live Update</a> on December 20th.</p>
+<p>This post does not cover the first part of the presentation titled “PrestaShop 8.1 &amp; 2023 - What’s new” because PrestaShop 8.1 has already been covered quite well <a href="https://www.prestashop-project.org/releases/prestashop81/">in this page</a>.</p>
+<h2 id="project-evolution-over-time">Project evolution over time</h2>
+<p>The beginning of a new year is always a nice moment to take a step back and look how far we’ve come! Let’s take this occasion to have a look at some numbers from the PrestaShop open source project for 2023.</p>
+<h3 id="merged-pull-requests-per-version-and-per-year">Merged Pull Requests per version and per year</h3>
+<img src="/assets/images/2024/01/ps-where-we-are-overview-img1.png" style="height:400px; margin: 20px auto;">
+<p>This chart shows the number of merged PRs (Pull Requests) per version from 1.7.4.0 to 8.1.0. At first, the last 2 columns (8.0.0 and 8.1.0) might look suspicious: they are way smaller than the two before, 1.7.7.0 and 1.7.8.0. This is actually deceiving: the number of PRs is strongly correlated to how long the version has been built.</p>
+<p>Versions 1.7.7.0 and 1.7.8.0 both had a development duration close to 18 months, while version 8.0.0 was built over one year and version 8.1.0 in 9 months. The shorter time windows during which PRs could be merged into these versions created this effect. However when looking at the ratio between development duration and merged PRs, the numbers are a lot more good looking.</p>
+<img src="/assets/images/2024/01/ps-where-we-are-overview-img2.png" style="height:400px; margin: 20px auto;">
+<p>Another way to look at this topic is to check not only the PRs merged in one version but also during a year. I actually prefer this chart because the previous one does not acknowledge the contributions made outside of the PrestaShop core repository: the work done on modules, documentation, websites, services, and libraries is omitted. In that sense, this chart is more honest about the full project activity.</p>
+<p>This chart shows that we had a high peak of contribution in 2020, and since then, contribution numbers have been steady.</p>
+<p>However, on this chart, you’ll find something else I truly appreciate. The chart shows two columns: the first is the total number of contributions, no matter who is the author, and the second one excludes the people from the Open Source Tribe of PrestaShop SA, which is the main task force appointed by the PrestaShop company to work on the software. People in the Open Source Tribe of PrestaShop SA (whom I belong to) are paid full-time to contribute, hence their impact on the number of PRs. So the second column shows PRs authored by people whose job is not targeted at contribution, who contribute because they see it useful. This number has been growing every year since 2019 and has reached an all time record in 2023: more than 1000 Pull Requests merged! This demonstrates that contributions do not have to be money-driven.</p>
+<h3 id="committers-number-evolution">Committers number evolution</h3>
+<img src="/assets/images/2024/01/ps-where-we-are-overview-img3.png" style="height:400px; margin: 20px auto;">
+<p>This final chart shows the evolution of <a href="https://www.prestashop-project.org/project-organization/people-and-roles/#committers">committers</a> and <a href="https://www.prestashop-project.org/project-organization/people-and-roles/#technical-council">members of the technical council</a> in the last 2 years. Again I made a distinction between people employed by PrestaShop SA and people who are not. Both numbers of committers paid by PrestaShop SA and other non-employees of the company have grown quite well in 2 years, a testimony of how the project attracts new people every year. 20 people joined the committers&rsquo; team in 2 years, however not all of them are still active in the project.</p>
+<h2 id="prestashop-900-takeaways">PrestaShop 9.0.0 takeaways</h2>
+<h3 id="symfony-and-php">Symfony and PHP</h3>
+<p>PrestaShop 9.0.0 will be a new major version, and this means it will introduce new breaking changes. Among them, one was very important: bumping the version of Symfony used, as PrestaShop 8.x relies on Symfony 4, <a href="https://symfony.com/releases/4.4">which is now EOL</a>.</p>
+<p>In the first months of PrestaShop 9.0&rsquo;s development, the Symfony version <a href="https://github.com/PrestaShop/PrestaShop/pull/31216">was first bumped to 5.4</a>, but after careful analysis of the Symfony roadmap and the needs of the software in 2024… we finally decided to go one step further: <strong>PrestaShop 9.0.0 will be powered by Symfony 6.4, which was just recently released</strong> and thanks to this change, the software will benefit from the Symfony LTS branch until November 2027!</p>
+<p>As for the PHP version, it was <a href="https://build.prestashop-project.org/news/2023/prestashop-9-min-php-version-will-be-81/">previously announced</a> that PrestaShop 9.0’s minimum PHP version will be PHP8.1. PrestaShop 9.0 is already compatible with PHP8.1 and 8.2. As of PHP8.3, it was <a href="https://www.php.net/releases/8.3/en.php">released just recently</a>, so it’s too early to be able to declare that PrestaShop 9.0 will be compatible with it… but this is something we are actively monitoring.</p>
+<h3 id="hummingbird-and-classic-theme">Hummingbird and Classic theme</h3>
+<p>The Hummingbird theme has been maturing for more than a year now and we are fully confident it is ready to be pushed forth to PrestaShop users. It will be embedded into PrestaShop 9.0 as a second theme, next to the Classic theme, however Classic theme will remain the default theme.
+This choice is motivated by the will to help developers transition from Classic to Hummingbird. PrestaShop 9.0 will push both, but PrestaShop 10.0 will be the turning point where Classic is no longer shipped with the core software.</p>
+<p>This will be synchronized with the 1.0.0 version of Hummingbird.</p>
+<h3 id="back-office-api">Back office API</h3>
+<p>The back office API we started <a href="https://github.com/PrestaShop/PrestaShop/pull/29931">experiencing with one year ago</a> is nearing the completion of its first milestone.</p>
+<p>During December’s Live Update on December 20th, <a href="https://github.com/jolelievre">@jolelievre</a> gave more information about the API. You can <a href="https://www.youtube.com/watch?v=7CQ2Sg-v4XQ">watch a replay</a> on the project’s channel.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>2023 was a busy year for the PrestaShop open source project, just like it has been for the PHP ecosystem. Today I was able to tell you about 4 changes to expect from PrestaShop 9: Symfony 6.4, PHP 8.1 minimum, the Hummingbird theme arrival together with a new Back office API.</p>
+<p>But PrestaShop 9.0 will contain much more. Remember, it is an open source project: it grows with every single contribution. If you really want to see something new in PrestaShop 9.0, then isn’t it time to start <a href="https://www.prestashop-project.org/get-involved/">getting involved</a>?</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jan 4, 2024</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/news/">news</a>
+
+  <a class="label label-primary" href="/tag/event/">event</a>
+
+  <a class="label label-primary" href="/tag/community/">community</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/MathieuFerment/">Mathieu Ferment</a>
+      <span>Tech Manager</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2024\/prestashop-news-where-we-are-and-where-we-are-going\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

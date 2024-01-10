@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Announcing PrestaShop Project Live Update January"
+title:  "Announcing PrestaShop Project Live Update January 2024"
 subtitle: "Let's meet for the first time in 2024"
 date:   2024-01-10
 authors: [ kpodemski ]

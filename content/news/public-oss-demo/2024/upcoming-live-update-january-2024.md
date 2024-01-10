@@ -10,7 +10,7 @@ tags: [contribute, event, community, live-update]
 
 The first Live Update for the PrestaShop Project in 2024 will happen on **Wednesday, January 17th, 2024** at [4 pm (Paris time)](https://time.is/1600_17_Jan_2024_in_Paris) on [YouTube](https://www.youtube.com/watch?v=RTPeZ-YYi3Q)!
 
-In the first Live Update of the year, we have some news to share, and we will have a special guest. [Łukasz Janik](https://www.linkedin.com/in/ljanik/) from the [e-commerce agency Waynet](https://www.waynet.io/) will join us to talk about CI/CD processes for PrestaShop, they use in their projects.
+In the first Live Update of the year, we have some news to share, and we will have a special guest. [Łukasz Janik](https://www.linkedin.com/in/ljanik/) from the [e-commerce agency Waynet](https://www.waynet.io/) will join us to talk about CI/CD processes for PrestaShop, they use in their projects. This presentation was originally presented during [PrestaShop Developer Conference](https://events.prestashop.com/prestashop-developer-conference/en) in Paris.
 
 {{< cta "https://www.youtube.com/watch?v=RTPeZ-YYi3Q" "info" >}}Join us on YouTube!{{< /cta >}} 
 

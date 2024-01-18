@@ -8,7 +8,7 @@ icon: icon-video-camera
 tags: [contribute, event, community, live-update]
 ---
 
-The project's live update was held for the tenth time this year and [streamed live](https://www.youtube.com/watch?v=RTPeZ-YYi3Q) on January 17th, 2024.
+The project's live update was held the first time in 2024 and [streamed live](https://www.youtube.com/watch?v=RTPeZ-YYi3Q) on January 17th, 2024.
 
 ## PrestaShop Live Update - January 2024
 

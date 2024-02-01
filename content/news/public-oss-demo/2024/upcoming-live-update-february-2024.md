@@ -12,7 +12,7 @@ The second Live Update for the PrestaShop Project in 2024 will happen on **Wedne
 
 The upcoming Live Update in February 2024 will feature presentation of two very interesting subjects!
 
-[Fabien Vallon](https://fr.linkedin.com/in/fabienvallon71655722) who is Lead Product Manager at [PrestaShop](https://www.prestashop.com) will present an overview of the new Upgrade tool that is planned to be released this year.
+[Fabien Vallon](https://github.com/fabienvallon) who is Lead Product Manager at [PrestaShop](https://www.prestashop.com) will present an overview of the new Core Upgrade tool that is planned to be released this year.
 
 We will also have a special guest, [Tomas Ilginis](https://github.com/tomas862), a developer from [Invertus](https://invertus.eu/en/), one of the leading agencies specializing in PrestaShop. Tomas will share insights on how he and his colleagues at Invertus prefer to work with PrestaShop modules. This presentation was originally delivered during the [PrestaShop Developer Conference](https://events.prestashop.com/prestashop-developer-conference/en) in Paris.
 

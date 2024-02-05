@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop Core Monthly - January</title>
+    <link href="/style.css?1707169982" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop Core Monthly - January" />
+<meta property="og:description" content="The first Core Monthly of 2024 is here! 🎉 Let’s dive into the progress we’ve made together in the first month of this promising year." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2024/core-monthly-2024-01-01-2024-01-31/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2024-02-05T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2024-02-05T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/banner-core-monthly.jpg">
+<meta name="twitter:title" content="PrestaShop Core Monthly - January"/>
+<meta name="twitter:description" content="An inside look at the PrestaShop codebase"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip': false });
+			}
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop Core Monthly - January</h1>
+              
+                <h3 class="post-subtitle">An inside look at the PrestaShop codebase</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/kpodemski/">
+        <img class="img-circle" src="https://avatars3.githubusercontent.com/u/2137763?v=3&amp;s=400" alt="Krystian Podemski's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/kpodemski/">Krystian Podemski</a>
+      </div>
+        
+          <div class="author-display-role">Tech Evangelist @ PrestaShop</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Feb 5, 2024
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;Core&#43;Monthly&#43;-&#43;January&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2024%2Fcore-monthly-2024-01-01-2024-01-31%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2024%2Fcore-monthly-2024-01-01-2024-01-31%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>The first Core Monthly of 2024 is here! 🎉  Let&rsquo;s dive into the progress we&rsquo;ve made together in the first month of this promising year.</p>
+<p><img src="/assets/images/theme/banner-core-monthly-wide.jpg" alt="Core Monthly banner"></p>
+<h3 id="release-of-prestashop-813-and-17811">Release of PrestaShop 8.1.3 and 1.7.8.11</h3>
+<p>In January we released security updates for PrestaShop 8.1 and 1.7.8. The updates fixed security vulnerabilities discovered by community researchers. We recommend that you update your store to the latest version of PrestaShop to ensure that your store is secure.</p>
+<p>Want to know more about those releases? Head into the release notes for <a href="/news/2024/prestashop-8-1-3-maintenance-release/">PrestaShop 8.1.3</a> and <a href="/news/2024/prestashop-1-7-8-11-maintenance-release/">PrestaShop 1.7.8.11</a>.</p>
+<p>It is important to note that the upgrade to PrestaShop 8.1.3 includes more than just security fixes. Therefore, it is recommended to use the <a href="https://github.com/PrestaShop/autoupgrade/releases">autoupgrade</a> module for the upgrade process. For updating your PrestaShop 1.7.8 store, you can consider using the manual method. This involves replacing the files on your server with the new ones. You can find the list of changed files <a href="https://github.com/PrestaShop/PrestaShop/compare/1.7.8.10...1.7.8.11">here</a>.</p>
+<h3 id="migration-to-symfony-6">Migration to Symfony 6</h3>
+<p>In January, we continued the migration to Symfony 6: as introduced last year, PrestaShop 9 will run on Symfony 6.4. We are making progress and we are getting closer to the finish line. The migration to Symfony 6 itself is, of course, a complicated process that will affect the community&rsquo;s solutions. We have this in mind and will present the first materials summarizing the impact of those changes on your work in March, during the Live Update. As with every major version of PrestaShop, and this time too, there will be a &ldquo;Notable changes&rdquo; page in the <a href="https://devdocs.prestashop-project.org/8/modules/core-updates/">developer documentation</a> that will summarize the essentials and present strategies for adaptation of your solutions.</p>
+<h3 id="new-api-in-prestashop-9">New API in PrestaShop 9</h3>
+<p>Another big project in PrestaShop 9 certainly is the new API. The new API will be based on <a href="https://api-platform.com/">API Platform</a> and will be a significant improvement over the current one. In January, <a href="https://github.com/jolelievre">@jolelievre</a> has been working on the new API and has made significant progress in this area, including the <a href="https://github.com/PrestaShop/PrestaShop/pull/34892">handling of basic multi-shop and multi-lang endpoints</a>. We will soon be preparing a series of content that will allow you to better understand the project&rsquo;s premise and, most importantly, how to take advantage of its capabilities in your solutions.</p>
+<h3 id="prestashop-9">PrestaShop 9</h3>
+<p>Work on version 9 of PrestaShop is underway. In the list of changes from branch <code>develop</code> you can again notice cleaning the codebase from old projects, unused functions or mechanisms. This is also a great opportunity to refactor some methods. One interesting change that was merged to the core in January is an improvement around the use of CLI in PrestaShop, making the life of developers working with PrestaShop a bit easier. You can learn more about these changes in the description of <a href="https://github.com/PrestaShop/PrestaShop/pull/35011">this pull request</a>. The coming months will undoubtedly allow us to present you with even more information about the upcoming version.</p>
+<h3 id="prestashop-814">PrestaShop 8.1.4</h3>
+<p>Version 8.1.3 was released in January: meanwhile, a number of <a href="https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.4">improvements and fixes are ready for version 8.1.4</a>, which will make this version more stable. I won&rsquo;t discuss them in detail now I encourage you to click through and check the list. However, if you are using PrestaShop 8.1.3, you can pick up some of them today and implement them into your stores manually. I will be providing more information on 8.1.4 next month.</p>
+<h3 id="changes-in-the-modules">Changes in the modules</h3>
+<p>PrestaShop is not only the Core, but also many native modules supported each month by project members. You may notice a lot of new versions that were released in January. A lot of these releases are small changes, to raise the minimum PHP version compatible with the module or to set a minimum compatible version of PrestaShop, that will work with it. This is to make it easier to maintain native modules. Of the work that went on in January, it is worth mentioning the great work done by <a href="https://github.com/Hlavtox">@Hlavtox</a> on fixing potential problems with updating some modules. You can see one example <a href="https://github.com/PrestaShop/gsitemap/pull/177">here</a>. Another contribution worth mentioning is the work done by <a href="https://github.com/leemyongpakvn">@leemyongpakvn</a> on the <a href="https://github.com/PrestaShop/productcomments">productcomments</a> module. He has <a href="https://github.com/PrestaShop/productcomments/pulls?q=is%3Apr+author%3Aleemyongpakvn+milestone%3A6.0.3">made a lot of changes</a> to the module which will be part of the next release.</p>
+<h3 id="hummingbird">Hummingbird</h3>
+<p>The Hummingbird is a new theme that will be available for PrestaShop 9. It is a modern and clean theme that will be a great starting point for developers to create their own themes. The work on the theme is still in progress, but you can already see the progress on the <a href="https://github.com/PrestaShop/hummingbird/">Hummingbird repository</a>. Discussions between project members are currently underway to establish a plan to complete the theme so that version 1.0 will be released at the same time as PrestaShop 9.</p>
+<h3 id="qa">QA</h3>
+<p>We don&rsquo;t write about them often, but I think the beginning of the year is a great opportunity to remind people of how important a part of the project they are. Who am I writing about? About QA (Quality Assurance) team members. In every Core Monthly statement, you see a great deal of changes related to automated testing, and January was no different. The quality, quantity and accuracy of automated tests and tools used in the project continue to increase the stability of the software. If you want to know more about the work of the QA team, I encourage you to read the <a href="https://www.prestashop-project.org/project-organization/quality-council/">PrestaShop Quality Council</a> page on the project&rsquo;s website and <a href="https://devdocs.prestashop-project.org/8/testing/ui-tests/">UI Tests</a> section in the developer documentation.</p>
+<p>The testing area of our project is also open. So, if you are interested in helping with it and getting involved, I invite you to visit our <a href="https://www.prestashop-project.org/slack/">Slack</a> channel <code>#quality-assurance</code>.</p>
+<h3 id="live-update">Live Update</h3>
+<p>In January we had the opportunity to meet again during the Live Update. The meeting was held on January 17th and was a great opportunity to learn about the progress of the project and to ask questions. If you missed the meeting, you can watch the recording on the <a href="https://www.youtube.com/@prestashopproject">PrestaShop Project YouTube channel</a>.</p>
+<p>In the first Live Update of the year <a href="https://www.linkedin.com/in/ljanik/">Łukasz Janik</a>, CEO of <a href="https://waynet.io/">Waynet E-commerce Agency</a>, presented his talk from the PrestaShop Developer Conference 2023 about the development optimization of PrestaShop stores and modules through the CI/CD process. The presentation was very interesting and I encourage you to watch it.</p>
+<p>The next Live Update is scheduled for February 7th. This time, we will have yet another special guest: <a href="https://github.com/tomas862">Tomas Ilginis</a>, a developer from <a href="https://invertus.eu/en/">Invertus</a>, which is one of the leading agencies specializing in PrestaShop. Tomas will share insights on how himself and his colleagues at Invertus prefer to work with PrestaShop modules. This presentation was originally delivered during the <a href="https://events.prestashop.com/prestashop-developer-conference/en">PrestaShop Developer Conference</a> in Paris.</p>
+<p>Make sure to mark your calendar and join us on February 7th at <a href="https://time.is/1600_7_Feb_2024_in_Paris">4 pm (Paris time)</a> on <a href="https://www.youtube.com/watch?v=HthBm3cbuno">YouTube</a>!</p>
+<h3 id="summary">Summary</h3>
+<p>We started 2024 with a lot of work and a lot of plans. The project is moving forward and we are getting closer to the release of PrestaShop 9. The Live Update is a great opportunity to learn more about the project and to ask questions. I encourage you to join us in February and to watch the recording of the January meeting.</p>
+<h2 id="project-releases">Project releases</h2>
+<ul>
+<li>
+<p><a href="https://github.com/PrestaShop/PrestaShop">PrestaShop</a>, <a href="https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.3">PrestaShop 8.1.3</a> released on 2024-01-02.</p>
+</li>
+<li>
+<p><a href="https://github.com/PrestaShop/PrestaShop">PrestaShop</a>, <a href="https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.8.11">PrestaShop 1.7.8.11</a> released on 2024-01-02.</p>
+</li>
+<li>
+<p><a href="https://github.com/PrestaShop/contactform">Contact Form module</a>, <a href="https://github.com/PrestaShop/contactform/releases/tag/v4.4.2">v4.4.2</a> released on 2024-01-12.</p>
+</li>
+<li>
+<p><a href="https://github.com/PrestaShop/gamification">Gamification module</a>, <a href="https://github.com/PrestaShopCorp/gamification/releases/tag/v3.0.4">v3.0.4</a> released on 2024-01-17.</p>
+</li>
+<li>
+<p><a href="https://github.com/PrestaShop/gsitemap">Google Sitemap module</a>, <a href="https://github.com/PrestaShop/gsitemap/releases/tag/v4.4.0">v4.4.0</a> released on 2024-01-10.</p>
+</li>
+<li>
+<p><a href="https://github.com/PrestaShop/ps_distributionapiclient">Distribution API Client</a>, <a href="https://github.com/PrestaShop/ps_distributionapiclient/releases/tag/v1.1.1">v1.1.1</a> released on 2024-01-19.</p>
+</li>
+<li>
+<p><a href="https://github.com/PrestaShop/ps_emailalerts">Email Alerts module</a>, <a href="https://github.com/PrestaShop/ps_emailalerts/releases/tag/v3.0.0">v3.0.0</a> released on 2024-01-10.</p>
+</li>
+<li>
+<p><a href="https://github.com/PrestaShop/ps_emailsubscription">Email subscription module</a>, <a href="https://github.com/PrestaShop/ps_emailsubscription/releases/tag/v2.8.1">v2.8.1</a> released on 2024-01-11.</p>
+</li>
+<li>
+<p><a href="https://github.com/PrestaShop/ps_imageslider">Image slider module</a>, <a href="https://github.com/PrestaShop/ps_imageslider/releases/tag/v3.1.4">v3.1.4</a> released on 2024-01-16.</p>
+</li>
+<li>
+<p><a href="https://github.com/PrestaShop/ps_mainmenu">Main menu module</a>, <a href="https://github.com/PrestaShop/ps_mainmenu/releases/tag/v2.3.4">v2.3.4</a> released on 2024-01-10.</p>
+</li>
+<li>
+<p><a href="https://github.com/PrestaShop/ps_socialfollow">Social Follow module</a>, <a href="https://github.com/PrestaShop/ps_socialfollow/releases/tag/v2.3.2">v2.3.2</a> released on 2024-01-10.</p>
+</li>
+</ul>
+<h2 id="a-quick-update-about-prestashops-github-issues-and-pull-requests">A quick update about PrestaShop&rsquo;s GitHub issues and pull requests:</h2>
+<ul>
+<li><a href="https://github.com/search?q=repo%3APrestaShop%2FPrestaShop+is%3Apublic++is%3Aissue+created%3A2024-01-01..2024-01-31">150 new issues</a> have been created in the project repositories;</li>
+<li><a href="https://github.com/search?q=repo%3APrestaShop%2FPrestaShop+is%3Apublic++is%3Aissue+closed%3A2024-01-01..2024-01-31">118 have been closed</a>, including <a href="https://github.com/search?q=repo%3APrestaShop%2FPrestaShop+is%3Apublic++is%3Aissue+label%3Afixed+closed%3A2024-01-01..2024-01-31">19 fixed issues</a> on the core;</li>
+<li><a href="https://github.com/search?q=org%3APrestaShop+is%3Apublic++-repo%3Aprestashop%2Fprestashop.github.io++is%3Apr+created%3A2024-01-01..2024-01-31">318 pull requests have been opened</a> in the project repositories;</li>
+<li><a href="https://github.com/search?q=org%3APrestaShop+is%3Apublic++-repo%3Aprestashop%2Fprestashop.github.io++is%3Apr+closed%3A2024-01-01..2024-01-31">332 pull requests have been closed</a>, including <a href="https://github.com/search?q=org%3APrestaShop+is%3Apublic++-repo%3Aprestashop%2Fprestashop.github.io++is%3Apr+merged%3A2024-01-01..2024-01-31">295 merged pull requests</a>.</li>
+</ul>
+<h2 id="code-changes-in-the-develop-branch">Code changes in the ‘develop’ branch</h2>
+<h3 id="back-office">Back office</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35191">#35191</a>: Clean horizontal migration code. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35180">#35180</a>: Enable symfony layout feature flag by default. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35142">#35142</a>: Update symfony to 6.4. Thank you, <a href="https://github.com/M0rgan01">@M0rgan01</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35129">#35129</a>: Update symfony to 6.3. Thank you, <a href="https://github.com/M0rgan01">@M0rgan01</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35069">#35069</a>: Migrate to Symfony 6, part 2. Thank you, <a href="https://github.com/M0rgan01">@M0rgan01</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34892">#34892</a>: API handle basic multi shop and multi lang endpoint. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34836">#34836</a>: SF6- Remove deprecated code from FrameworkBundle. Thank you, <a href="https://github.com/M0rgan01">@M0rgan01</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34783">#34783</a>: Creation of a LegacyController for display a legacy page in a symfony layout. Thank you, <a href="https://github.com/M0rgan01">@M0rgan01</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34763">#34763</a>: Features UX improvement. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+</ul>
+<h3 id="ci">CI</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34969">#34969</a>: Fix Nightly build workflow for 8.0.x and Develop. Thank you, <a href="https://github.com/boubkerbribri">@boubkerbribri</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34903">#34903</a>: Nightly: Add nightly.zip for prestashop/flashLight use. Thank you, <a href="https://github.com/boubkerbribri">@boubkerbribri</a></li>
+</ul>
+<h3 id="core">Core</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35011">#35011</a>: CLI improvement before and during install. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34939">#34939</a>: Remove confusing french method calls. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34927">#34927</a>: Add comments, remove unused constants. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34907">#34907</a>: Remove generation of unused file &ldquo;fileType&rdquo; in every image folder. Thank you, <a href="https://github.com/ShaiMagal">@ShaiMagal</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34816">#34816</a>: Remove file CACHEDIR.TAG - reverting changes. Thank you, <a href="https://github.com/ShaiMagal">@ShaiMagal</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34525">#34525</a>: Remove some old deprecations. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34172">#34172</a>: Remove image feature flag and fix original images. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/32208">#32208</a>: Add maildev for docker dev environments. Thank you, <a href="https://github.com/tswfi">@tswfi</a></li>
+</ul>
+<h3 id="fo--bo">FO / BO</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35008">#35008</a>: Improving Clarity: Refactor Image Link Handling in Link.php. Thank you, <a href="https://github.com/dali-rajab">@dali-rajab</a></li>
+</ul>
+<h3 id="front-office">Front office</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35075">#35075</a>: Add avif support to theme files. Thank you, <a href="https://github.com/buggyzap">@buggyzap</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34975">#34975</a>: Getjqueryuipath correct return value. Thank you, <a href="https://github.com/web-cooking-factory">@web-cooking-factory</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34948">#34948</a>: Correct warning with substr if $component is an array. Thank you, <a href="https://github.com/web-cooking-factory">@web-cooking-factory</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34431">#34431</a>: Add a hook &lsquo;actionValidateOrderBefore&rsquo; called before actionValidateOrder. Thank you, <a href="https://github.com/bibips">@bibips</a></li>
+</ul>
+<h3 id="installer">Installer</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34940">#34940</a>: Remove smarty precompilation and fix notices. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="lo">LO</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35070">#35070</a>: Fix default Finnish date_format. Thank you, <a href="https://github.com/tswfi">@tswfi</a></li>
+</ul>
+<h3 id="tests">Tests</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35222">#35222</a>: Functional tests - Add new test &lsquo;BO &gt; Sort link list table&rsquo;. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35210">#35210</a>: Bump @typescript-eslint/parser from 6.19.0 to 6.20.0 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35203">#35203</a>: Functional tests - Fix nightly 29-01. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35202">#35202</a>: Functional tests - Move classic theme pages in classic directory. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35199">#35199</a>: Bump dotenv from 16.3.2 to 16.4.1 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35198">#35198</a>: Bump @faker-js/faker from 8.3.1 to 8.4.0 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35197">#35197</a>: Bump mysql2 from 3.7.1 to 3.9.0 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35196">#35196</a>: Bump @typescript-eslint/eslint-plugin from 6.19.0 to 6.19.1 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35173">#35173</a>: Functional tests - Refacto &lsquo;BO &gt; Stock &gt; Bulk edit quantity&rsquo;. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35145">#35145</a>: Functional tests - Add new test &lsquo;BO &gt; Design &gt; Export current theme&rsquo;. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35132">#35132</a>: Functional tests - Add/Refacto tests in &lsquo;BO &gt; Stocks &rsquo; page. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35120">#35120</a>: Bump @typescript-eslint/parser from 6.18.1 to 6.19.0 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35119">#35119</a>: Bump mysql2 from 3.7.0 to 3.7.1 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35118">#35118</a>: Bump dotenv from 16.3.1 to 16.3.2 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35117">#35117</a>: Bump playwright from 1.40.1 to 1.41.1 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35116">#35116</a>: Bump @typescript-eslint/eslint-plugin from 6.18.1 to 6.19.0 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35077">#35077</a>: Functional tests - Fix Nightly 18-01 : Fix slider URL. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35068">#35068</a>: Functional tests - Add some steps to check welcome and payment emails. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35060">#35060</a>: Functional tests - Add test to check received email when send a message from FO &gt; order details page. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35059">#35059</a>: Functional tests - Add new steps to check received emails when change merchandise returns status. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35057">#35057</a>: Functional tests - Add test to check the email when change the order status to refunded. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35056">#35056</a>: Functional tests - Add steps to check voucher email when return a product . Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35055">#35055</a>: Functional tests - Add steps to check received email log. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35051">#35051</a>: Functional tests - Add steps to check emails when change the order status to on backorder. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35050">#35050</a>: Fix(dbdump): add complete insert in databasedump. Thank you, <a href="https://github.com/tleon">@tleon</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35049">#35049</a>: Nightly : Externalize Push Reports &amp; Define the maximum number of concurrent jobs. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35048">#35048</a>: Functional tests - Add test to check received email in customer service page. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35047">#35047</a>: Bump fast-xml-parser from 4.3.2 to 4.3.3 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35046">#35046</a>: Bump chai from 4.4.0 to 4.4.1 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35045">#35045</a>: Bump @typescript-eslint/parser from 6.18.0 to 6.18.1 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35039">#35039</a>: Functional tests : Email subscription - Add some steps to check validation email. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35036">#35036</a>: Functional tests : Email subscription - Fix check confirmation email. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35032">#35032</a>: Functional tests : Mail subscription - Add new test to check &lsquo;Welcome voucher&rsquo; email. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35031">#35031</a>: Functional tests - Add test to check email when the merchant change the order status. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35018">#35018</a>: Functional tests - Add steps to check emails in &lsquo;Enable/Disable product availability&rsquo; test. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35002">#35002</a>: Bump @typescript-eslint/eslint-plugin from 6.16.0 to 6.18.1 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34994">#34994</a>: Bump @typescript-eslint/parser from 6.16.0 to 6.18.0 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34993">#34993</a>: Bump mysql2 from 3.6.5 to 3.7.0 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34992">#34992</a>: Bump chai from 4.3.10 to 4.4.0 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34983">#34983</a>: Functional Tests : Mail subscription - check verification and confirmation email after subscribe to newsletter. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34959">#34959</a>: Functional tests - Add steps to check email when transform a guest to customer . Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34944">#34944</a>: Bump @typescript-eslint/parser from 6.15.0 to 6.16.0 in /tests/UI. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34902">#34902</a>: Nightly: use composite actions. Thank you, <a href="https://github.com/boubkerbribri">@boubkerbribri</a></li>
+</ul>
+<h3 id="web-services">Web services</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/31251">#31251</a>: Fix position in category setter from WS. Thank you, <a href="https://github.com/TomLorenzi">@TomLorenzi</a></li>
+</ul>
+<h2 id="code-changes-in-the-81x-branch">Code changes in the ‘8.1.x’ branch</h2>
+<h3 id="back-office-1">Back office</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35064">#35064</a>: Add Length  constraint to MetaType. Thank you, <a href="https://github.com/danilocarta">@danilocarta</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35006">#35006</a>: Backport newer method in filemanager. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34982">#34982</a>: Always set HelperKpi source and use conditional refresh. Thank you, <a href="https://github.com/PrestaEdit">@PrestaEdit</a></li>
+</ul>
+<h3 id="core-1">Core</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35217">#35217</a>: Bump version to 8.1.4. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35215">#35215</a>: Fix alias hooks and add the missing ones. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35058">#35058</a>: Disable autofill of password for SMTP. Thank you, <a href="https://github.com/ShaiMagal">@ShaiMagal</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35000">#35000</a>: Prevent Internal Server Error 500 - opcache_reset with restrict_api. Thank you, <a href="https://github.com/ShaiMagal">@ShaiMagal</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34957">#34957</a>: Remove old Czech lower VAT 10% and 15%. Thank you, <a href="https://github.com/ShaiMagal">@ShaiMagal</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34951">#34951</a>: Fix CI for <code>8.1.x</code> branch after 8.1.3 release. Thank you, <a href="https://github.com/boherm">@boherm</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34946">#34946</a>: Added id_shop param to actionAfterLoadRoutes Hook. Thank you, <a href="https://github.com/hherreros-webimpacto">@hherreros-webimpacto</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34873">#34873</a>: Prevent uncheck cast. Thank you, <a href="https://github.com/gross-nvs">@gross-nvs</a></li>
+</ul>
+<h3 id="front-office-1">Front office</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35134">#35134</a>: Implement canonical urls and remove not needed parameters. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35021">#35021</a>: Fix Address form not work properly in customer account area. Thank you, <a href="https://github.com/Codencode">@Codencode</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35017">#35017</a>: Fix and comment address deletion process. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34698">#34698</a>: Allow Front controller called in cli if ssl is on or maintenance mode is on in 8.1. Thank you, <a href="https://github.com/jf-viguier">@jf-viguier</a></li>
+</ul>
+<h3 id="tests-1">Tests</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/35079">#35079</a>: Functional tests - Fix nightly 8.1.x : Fix slider URL. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34931">#34931</a>: feat: Backport and add node and dev mode for composite on 8.1.x. Thank you, <a href="https://github.com/boubkerbribri">@boubkerbribri</a></li>
+</ul>
+<h2 id="code-changes-in-the-178x-branch">Code changes in the ‘1.7.8.x’ branch</h2>
+<h3 id="back-office-2">Back office</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34950">#34950</a>: Fix CI on 1.7.8.x after 1.7.8.11 release. Thank you, <a href="https://github.com/tleon">@tleon</a></li>
+</ul>
+<h3 id="tests-2">Tests</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34953">#34953</a>: feat: Backport and add node and dev mode for composite on 1.7.8.x. Thank you, <a href="https://github.com/boubkerbribri">@boubkerbribri</a></li>
+</ul>
+<h2 id="code-changes-in-the-80x-branch">Code changes in the ‘8.0.x’ branch</h2>
+<h3 id="tests-3">Tests</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34945">#34945</a>: feat: Backport and add node and dev mode for composite on 8.0.x. Thank you, <a href="https://github.com/boubkerbribri">@boubkerbribri</a></li>
+</ul>
+<h2 id="code-changes-in-modules-themes-and-tools">Code changes in modules, themes and tools</h2>
+<h3 id="auto-upgrade-module">Auto Upgrade module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/667">#667</a>: Add missing hooks. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/666">#666</a>: Nightly Upgrade : Fixed date formatting (Use of DateTime::RFC3339_EXTENDED). Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/665">#665</a>: Nightly Upgrade : Fixed date formatting. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/664">#664</a>: Nightly : Migrate from endpoint <code>hook/add</code> to <code>hook/reports/import</code>. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/663">#663</a>: Bump follow-redirects from 1.15.3 to 1.15.4 in /tests/e2e. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/662">#662</a>: Check if function get_magic_quotes_gpc() exists before use it. Thank you, <a href="https://github.com/xsbr">@xsbr</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/661">#661</a>: Fix normalizeVersion() levels on 8.x. Thank you, <a href="https://github.com/Seb33300">@Seb33300</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/659">#659</a>: Adapt upgraded installs to recent changes. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="automated-tests-on-pull-requests">Automated tests on Pull Requests</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ga.tests.ui.pr/pull/61">#61</a>: Use symfony layout by default when running UI tests. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/ga.tests.ui.pr/pull/60">#60</a>: feat: add PR security testing without cache. Thank you, <a href="https://github.com/boubkerbribri">@boubkerbribri</a></li>
+<li><a href="https://github.com/PrestaShop/ga.tests.ui.pr/pull/59">#59</a>: feat: Migrate action to use main repo composite actions. Thank you, <a href="https://github.com/boubkerbribri">@boubkerbribri</a></li>
+<li><a href="https://github.com/PrestaShop/ga.tests.ui.pr/pull/52">#52</a>: <code>ga.tests.ui.pr</code> : Disable Maildev use. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+</ul>
+<h3 id="bootstrap-compatibility-layer">Bootstrap-compatibility-layer</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/bootstrap-compatibility-layer/pull/13">#13</a>: chore(deps): bump follow-redirects from 1.15.3 to 1.15.4. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+</ul>
+<h3 id="changes-in-developer-documentation-sources">Changes in developer documentation sources</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/docs/pull/1778">#1778</a>: Clarify postProcess. Thank you, <a href="https://github.com/jf-viguier">@jf-viguier</a></li>
+<li><a href="https://github.com/PrestaShop/docs/pull/1777">#1777</a>: Replace git checkout example with version 8.0.0. Thank you, <a href="https://github.com/helioalb">@helioalb</a></li>
+<li><a href="https://github.com/PrestaShop/docs/pull/1776">#1776</a>: 📝 Small indent fix. Thank you, <a href="https://github.com/davidismeurt">@davidismeurt</a></li>
+</ul>
+<h3 id="contact-form-module">Contact Form module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/contactform/pull/77">#77</a>: Release 4.4.2. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/contactform/pull/76">#76</a>: Bump version number to 4.4.2. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/contactform/pull/75">#75</a>: Standardize upgrade files. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/contactform/pull/73">#73</a>: Undefined array key 0 in Subject select input. Thank you, <a href="https://github.com/NicolasCador">@NicolasCador</a></li>
+</ul>
+<h3 id="customer-data-privacy-block-module">Customer data privacy block module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_dataprivacy/pull/46">#46</a>: Bump version number to 2.1.2. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_dataprivacy/pull/45">#45</a>: Standardize upgrade files. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="customer-reassurance-block-module">Customer reassurance block module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/blockreassurance/pull/644">#644</a>: Bump css-loader from 6.7.4 to 6.10.0. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/blockreassurance/pull/642">#642</a>: Bump @babel/core from 7.23.7 to 7.23.9. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/blockreassurance/pull/640">#640</a>: Bump webpack from 5.89.0 to 5.90.0. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/blockreassurance/pull/637">#637</a>: Bump sortablejs from 1.15.1 to 1.15.2. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/blockreassurance/pull/636">#636</a>: Bump mini-css-extract-plugin from 2.7.6 to 2.7.7. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/blockreassurance/pull/635">#635</a>: Bump style-loader from 3.3.3 to 3.3.4. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/blockreassurance/pull/633">#633</a>: Bump @babel/core from 7.23.6 to 7.23.7. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/blockreassurance/pull/630">#630</a>: Replace jQueryAJAX by FetchAPI. Thank you, <a href="https://github.com/leemyongpakvn">@leemyongpakvn</a></li>
+</ul>
+<h3 id="dashboard-products-module">Dashboard Products module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/dashproducts/pull/57">#57</a>: Dashboard recent orders : display &ldquo;Deleted customer&rdquo;. Thank you, <a href="https://github.com/HiCharly">@HiCharly</a></li>
+</ul>
+<h3 id="data-mining-for-statistics-module">Data mining for statistics module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/statsdata/pull/32">#32</a>: Stop using deprecated hook. Thank you, <a href="https://github.com/metacreo">@metacreo</a></li>
+</ul>
+<h3 id="distribution-api-client">Distribution API Client</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_distributionapiclient/pull/34">#34</a>: Merge master into main - 24/01/2024. Thank you, <a href="https://github.com/matks">@matks</a></li>
+<li><a href="https://github.com/PrestaShop/ps_distributionapiclient/pull/33">#33</a>: Bump version 1.1.1. Thank you, <a href="https://github.com/M0rgan01">@M0rgan01</a></li>
+<li><a href="https://github.com/PrestaShop/ps_distributionapiclient/pull/32">#32</a>: Release 1.1.1. Thank you, <a href="https://github.com/M0rgan01">@M0rgan01</a></li>
+</ul>
+<h3 id="docker-images">Docker images</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/docker/pull/368">#368</a>: Github Action Publish : Rework (Base &amp; Fetch versions before push images). Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/docker/pull/366">#366</a>: Publish in multiples steps. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/docker/pull/365">#365</a>: Force publish if there are modifications in base directory. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/docker/pull/363">#363</a>: Fixed copy of dotenv files (for 9.0 versions) for Nightly. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/docker/pull/362">#362</a>: Fixed copy of dotenv files (for 9.0 versions). Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/docker/pull/360">#360</a>: Do not run publish GH job on PR. Thank you, <a href="https://github.com/matks">@matks</a></li>
+<li><a href="https://github.com/PrestaShop/docker/pull/359">#359</a>: Add versions 1.7.8.11 and 8.1.3. Thank you, <a href="https://github.com/matthieu-rolland">@matthieu-rolland</a></li>
+</ul>
+<h3 id="email-alerts-module">Email Alerts module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_emailalerts/pull/139">#139</a>: Release version 3.0.0. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="email-subscription-module">Email subscription module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_emailsubscription/pull/107">#107</a>: Release version 2.8.1. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_emailsubscription/pull/106">#106</a>: Properly cast bool values. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_emailsubscription/pull/105">#105</a>: Bump version number to 2.8.1. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_emailsubscription/pull/104">#104</a>: Standardize upgrade files. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_emailsubscription/pull/103">#103</a>: Pass proper config values. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_emailsubscription/pull/102">#102</a>: Add default data into configuration. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_emailsubscription/pull/101">#101</a>: Release 2.8.0. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_emailsubscription/pull/100">#100</a>: Delete deprecated files and bump version. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="example-modules">Example modules</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/example-modules/pull/171">#171</a>: fetchOne &ndash;&gt; fetch. Thank you, <a href="https://github.com/NKoonen">@NKoonen</a></li>
+<li><a href="https://github.com/PrestaShop/example-modules/pull/170">#170</a>: Bump follow-redirects from 1.15.2 to 1.15.4 in /example_module_mailtheme. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+</ul>
+<h3 id="faceted-search-module">Faceted search module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_facetedsearch/pull/975">#975</a>: Bump css-loader from 6.8.1 to 6.10.0. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/ps_facetedsearch/pull/973">#973</a>: Bump @babel/node from 7.22.19 to 7.23.9. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/ps_facetedsearch/pull/972">#972</a>: Bump @babel/cli from 7.23.4 to 7.23.9. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/ps_facetedsearch/pull/967">#967</a>: Bump webpack from 5.89.0 to 5.90.0. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/ps_facetedsearch/pull/963">#963</a>: Bump @babel/preset-env from 7.23.7 to 7.23.8. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/ps_facetedsearch/pull/962">#962</a>: Bump @babel/register from 7.22.15 to 7.23.7. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/ps_facetedsearch/pull/961">#961</a>: Bump @babel/preset-env from 7.23.6 to 7.23.7. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/ps_facetedsearch/pull/960">#960</a>: Bump @babel/core from 7.23.6 to 7.23.7. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+</ul>
+<h3 id="google-analytics-module">Google Analytics module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_googleanalytics/pull/156">#156</a>: Update readme compatibility info. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="google-sitemap-module">Google Sitemap module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/gsitemap/pull/178">#178</a>: Bump version number to 4.4.1. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/gsitemap/pull/177">#177</a>: Standardize upgrade files. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/gsitemap/pull/176">#176</a>: Release version 4.4.0. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/gsitemap/pull/175">#175</a>: Add controller for CRON tasks and minor fixes. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/gsitemap/pull/174">#174</a>: Remove old way of getting product images. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/gsitemap/pull/173">#173</a>: Re added manufacturers list. Thank you, <a href="https://github.com/Uhor">@Uhor</a></li>
+</ul>
+<h3 id="hummingbird-theme">Hummingbird theme</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/583">#583</a>: Fix html close tag for <img >. Thank you, <a href="https://github.com/sharkooon">@sharkooon</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/573">#573</a>: add psgdpr displayCustomerAccount, fixes #525. Thank you, <a href="https://github.com/tswfi">@tswfi</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/572">#572</a>: Usability improvements for search widget. Thank you, <a href="https://github.com/tswfi">@tswfi</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/571">#571</a>: Add &lsquo;Back to Home page&rsquo; button on not-found page, fixes #554. Thank you, <a href="https://github.com/tswfi">@tswfi</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/570">#570</a>: Fix: Separate product reference and manufacturer. Thank you, <a href="https://github.com/dennispw">@dennispw</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/568">#568</a>: fix: productcomments issues. Thank you, <a href="https://github.com/tblivet">@tblivet</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/565">#565</a>: Change pager scrolling behaviour, Fixes #562. Thank you, <a href="https://github.com/tswfi">@tswfi</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/550">#550</a>: fix: multiple slider update on facetsearch. Thank you, <a href="https://github.com/tblivet">@tblivet</a></li>
+</ul>
+<h3 id="image-slider-module">Image slider module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_imageslider/pull/98">#98</a>: Release 3.1.4. Thank you, <a href="https://github.com/tblivet">@tblivet</a></li>
+<li><a href="https://github.com/PrestaShop/ps_imageslider/pull/97">#97</a>: Bump version to 3.1.4. Thank you, <a href="https://github.com/tblivet">@tblivet</a></li>
+</ul>
+<h3 id="keycloak_connector_demo">Keycloak_connector_demo</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/keycloak_connector_demo/pull/49">#49</a>: Bump phpstan/phpstan from 1.10.56 to 1.10.57. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/keycloak_connector_demo/pull/48">#48</a>: Bump phpstan/phpstan from 1.10.55 to 1.10.56. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/keycloak_connector_demo/pull/47">#47</a>: Bump phpstan/phpstan from 1.10.54 to 1.10.55. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/keycloak_connector_demo/pull/46">#46</a>: Bump phpstan/phpstan from 1.10.51 to 1.10.54. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/keycloak_connector_demo/pull/45">#45</a>: Bump phpstan/phpstan from 1.10.50 to 1.10.51. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+</ul>
+<h3 id="links-list-module">Links list module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_linklist/pull/188">#188</a>: Bump version number to 6.0.5. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_linklist/pull/187">#187</a>: Standardize upgrade files. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="localizationfiles">LocalizationFiles</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/LocalizationFiles/pull/48">#48</a>: Update czech localization pack to reflect changes in the core. Thank you, <a href="https://github.com/ShaiMagal">@ShaiMagal</a></li>
+</ul>
+<h3 id="main-menu-module">Main menu module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_mainmenu/pull/78">#78</a>: Release version 2.3.4. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_mainmenu/pull/77">#77</a>: Bump version to 2.3.4. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_mainmenu/pull/75">#75</a>: Release version 2.3.3. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="nightly-board">Nightly board</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/nightly-board/pull/135">#135</a>: Fix/ci deployment. Thank you, <a href="https://github.com/elodie-bil3">@elodie-bil3</a></li>
+<li><a href="https://github.com/PrestaShop/nightly-board/pull/134">#134</a>: build(deps): bump follow-redirects from 1.15.1 to 1.15.4. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+</ul>
+<h3 id="prestashop-core-autoloader">PrestaShop Core Autoloader</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/autoload/pull/6">#6</a>: Migrate to Symfony 6 and PHP 8.1. Thank you, <a href="https://github.com/M0rgan01">@M0rgan01</a></li>
+</ul>
+<h3 id="prestashop-test-scenarios">PrestaShop test scenarios</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/test-scenarios/pull/365">#365</a>: Add Specs for Scenario. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+</ul>
+<h3 id="prestashop-flashlight">Prestashop-flashlight</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/prestashop-flashlight/pull/67">#67</a>: Move from 8M to 20M to support more modules. Thank you, <a href="https://github.com/jokesterfr">@jokesterfr</a></li>
+<li><a href="https://github.com/PrestaShop/prestashop-flashlight/pull/65">#65</a>: add config variables to env. Thank you, <a href="https://github.com/Clap404">@Clap404</a></li>
+<li><a href="https://github.com/PrestaShop/prestashop-flashlight/pull/64">#64</a>: chore(example): add a dynamic module installation example. Thank you, <a href="https://github.com/jokesterfr">@jokesterfr</a></li>
+<li><a href="https://github.com/PrestaShop/prestashop-flashlight/pull/63">#63</a>: fix(build): the latest tag was misgiven. Thank you, <a href="https://github.com/jokesterfr">@jokesterfr</a></li>
+<li><a href="https://github.com/PrestaShop/prestashop-flashlight/pull/55">#55</a>: fix(build): add support for 8.1.3 and 1.7.8.11. Thank you, <a href="https://github.com/jokesterfr">@jokesterfr</a></li>
+</ul>
+<h3 id="presthubot">Presthubot</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/presthubot/pull/206">#206</a>: Bump symfony/yaml from 5.4.31 to 5.4.35. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/presthubot/pull/205">#205</a>: Bump symfony/dotenv from 5.4.34 to 5.4.35. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/presthubot/pull/204">#204</a>: Bump symfony/console from 5.4.34 to 5.4.35. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/presthubot/pull/203">#203</a>: Bump symfony/var-dumper from 5.4.29 to 5.4.35. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/presthubot/pull/202">#202</a>: Bump phpstan/phpstan from 1.10.56 to 1.10.57. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/presthubot/pull/201">#201</a>: Bump phpunit/phpunit from 9.6.15 to 9.6.16. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/presthubot/pull/200">#200</a>: Bump phpstan/phpstan from 1.10.55 to 1.10.56. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/presthubot/pull/199">#199</a>: Bump phpstan/phpstan from 1.10.54 to 1.10.55. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/presthubot/pull/198">#198</a>: Bump phpstan/phpstan from 1.10.51 to 1.10.54. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/presthubot/pull/197">#197</a>: Bump phpstan/phpstan from 1.10.50 to 1.10.51. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/presthubot/pull/196">#196</a>: Bump symfony/console from 5.4.32 to 5.4.34. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/presthubot/pull/195">#195</a>: Bump symfony/dotenv from 5.4.30 to 5.4.34. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+</ul>
+<h3 id="product-comments-module">Product Comments module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/productcomments/pull/195">#195</a>: Bump version number to 6.0.3. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/productcomments/pull/194">#194</a>: Standardize upgrade files. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/productcomments/pull/193">#193</a>: disable Write your view in QuickView refresh. Thank you, <a href="https://github.com/leemyongpakvn">@leemyongpakvn</a></li>
+<li><a href="https://github.com/PrestaShop/productcomments/pull/191">#191</a>: Replace manual lang process by standard DoctrineRelation and SymfonyFormData. Thank you, <a href="https://github.com/leemyongpakvn">@leemyongpakvn</a></li>
+</ul>
+<h3 id="ps_apiresources">Ps_apiresources</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/9">#9</a>: chore(ci): move tests and endpoint from core. Thank you, <a href="https://github.com/tleon">@tleon</a></li>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/8">#8</a>: Setup integration tests for API endpoints. Thank you, <a href="https://github.com/tleon">@tleon</a></li>
+</ul>
+<h3 id="qa-nightly-results">QA nightly results</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/117">#117</a>: Merge <code>develop</code> into <code>master</code>. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/116">#116</a>: Import Playwright Report. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/115">#115</a>: Remove code about Mocha5/6. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/114">#114</a>: Added Coveralls. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/113">#113</a>: PHPUnit : Refactoring Tests (Use local resource). Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/112">#112</a>: Merge <code>develop</code> into <code>master</code>. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/111">#111</a>: build(deps-dev): bump phpstan/phpstan from 1.10.56 to 1.10.57. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/110">#110</a>: build(deps): bump doctrine/orm from 2.17.3 to 2.17.4. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/109">#109</a>: build(deps-dev): bump phpunit/phpunit from 10.5.8 to 10.5.9. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/108">#108</a>: Remove support for Mocha 5. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/107">#107</a>: build(deps-dev): bump phpunit/phpunit from 10.5.7 to 10.5.8. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/106">#106</a>: build(deps-dev): bump phpstan/phpstan from 1.10.55 to 1.10.56. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/105">#105</a>: build(deps): bump doctrine/orm from 2.17.2 to 2.17.3. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/104">#104</a>: build(deps-dev): bump friendsofphp/php-cs-fixer from 3.46.0 to 3.48.0. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/103">#103</a>: Merge <code>develop</code> into <code>master</code>. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/102">#102</a>: Doctrine : Optimize import with batch processing. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/101">#101</a>: Fix/ci deployment. Thank you, <a href="https://github.com/elodie-bil3">@elodie-bil3</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/100">#100</a>: build(deps-dev): bump phpunit/phpunit from 10.5.5 to 10.5.7. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/99">#99</a>: Merge <code>develop</code> into <code>master</code>. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/98">#98</a>: Updated environment variables. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/97">#97</a>: PHPCSFixer : Fix finder. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/96">#96</a>: PHPUnit : Fixed tests. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/95">#95</a>: Merge <code>develop</code> into <code>master</code>. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/94">#94</a>: Merge <code>develop</code> into <code>master</code>. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/92">#92</a>: build(deps-dev): bump phpunit/phpunit from 9.6.13 to 10.5.5. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/91">#91</a>: build(deps): bump symfony/dotenv from 7.0.0 to 7.0.2. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/90">#90</a>: build(deps): bump symfony/flex from 2.4.1 to 2.4.3. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/89">#89</a>: build(deps): bump doctrine/orm from 2.17.1 to 2.17.2. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/88">#88</a>: build(deps): bump symfony/framework-bundle from 7.0.0 to 7.0.2. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/87">#87</a>: build(deps-dev): bump symfony/phpunit-bridge from 7.0.0 to 7.0.2. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/86">#86</a>: build(deps-dev): bump phpstan/phpstan from 1.10.50 to 1.10.55. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/85">#85</a>: build(deps): bump tj-actions/branch-names from 5.1 to 7.0.7 in /.github/workflows. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/84">#84</a>: Fix/php version dockerfile. Thank you, <a href="https://github.com/elodie-bil3">@elodie-bil3</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/83">#83</a>: Clean old files. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/82">#82</a>: Added CI Dependabot. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/81">#81</a>: Added CI PHPUnit. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/80">#80</a>: Added CI PHPStan. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/QANightlyResults/pull/78">#78</a>: Migrate from Slim to Symfony. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+</ul>
+<h3 id="quality-assurance-module">Quality Assurance module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_qualityassurance/pull/44">#44</a>: Bump follow-redirects from 1.15.2 to 1.15.4. Thank you, <a href="https://github.com/dependabot">@dependabot</a></li>
+</ul>
+<h3 id="social-follow-module">Social Follow module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_socialfollow/pull/45">#45</a>: Release version 2.3.2. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_socialfollow/pull/44">#44</a>: Bump version to 2.3.2. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_socialfollow/pull/43">#43</a>: Release version 2.3.1. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="the-prestashop-open-source-project">The PrestaShop open source project</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/open-source/pull/251">#251</a>: Improve release process: publish release note after upgrade API. Thank you, <a href="https://github.com/matks">@matks</a></li>
+<li><a href="https://github.com/PrestaShop/open-source/pull/250">#250</a>: fix: add directory for each file and move images to each process directory. Thank you, <a href="https://github.com/boubkerbribri">@boubkerbribri</a></li>
+<li><a href="https://github.com/PrestaShop/open-source/pull/249">#249</a>: Fix images on quality council folder. Thank you, <a href="https://github.com/boubkerbribri">@boubkerbribri</a></li>
+<li><a href="https://github.com/PrestaShop/open-source/pull/248">#248</a>: Move @0x346e3730 to alumni. Thank you, <a href="https://github.com/matks">@matks</a></li>
+<li><a href="https://github.com/PrestaShop/open-source/pull/247">#247</a>: Add alumni role. Thank you, <a href="https://github.com/matks">@matks</a></li>
+<li><a href="https://github.com/PrestaShop/open-source/pull/246">#246</a>: Add tblivet to committers. Thank you, <a href="https://github.com/kpodemski">@kpodemski</a></li>
+</ul>
+<h3 id="translationtools-bundle">TranslationTools Bundle</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/TranslationToolsBundle/pull/110">#110</a>: Update Symfony to version 6.4. Thank you, <a href="https://github.com/M0rgan01">@M0rgan01</a></li>
+</ul>
+<h3 id="ui-testing-library">Ui-testing-library</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/13">#13</a>: Fixed use of getPSVersion. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/12">#12</a>: Bump version to 0.0.5. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/11">#11</a>: Manage PS Versions (Nightly or versions). Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/10">#10</a>: Fixed selector for closing the debug bar. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/9">#9</a>: Bump version to 0.0.3. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/8">#8</a>: Added support for multiples pages. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/7">#7</a>: Export types. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/6">#6</a>: Create index.js &amp; index.d.ts. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/5">#5</a>: test: commonjs build. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/3">#3</a>: Bump version to 0.0.2. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/2">#2</a>: feat: fix build. Thank you, <a href="https://github.com/boubkerbribri">@boubkerbribri</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/1">#1</a>: Basic UI Testing Library. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+</ul>
+<h3 id="viewed-products-block-module">Viewed products block module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_viewedproduct/pull/35">#35</a>: Bump version number to 1.2.5. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_viewedproduct/pull/34">#34</a>: Standardize upgrade files. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="wire-payment-module">Wire payment module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_wirepayment/pull/84">#84</a>: Delete deprecated files and bump version. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="wishlist-block-module">Wishlist block module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/blockwishlist/pull/238">#238</a>: Bump version number to 3.0.2. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/blockwishlist/pull/237">#237</a>: Standardize upgrade files. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="zip-archives">Zip-archives</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/zip-archives/pull/5">#5</a>: Add ZIP 8.1.3 and 1.7.8.11. Thank you, <a href="https://github.com/matks">@matks</a></li>
+</ul>
+<hr />
+<p>Thank you to the contributors whose pull requests were merged since the last Core Monthly Report: <a href="https://github.com/Clap404">@Clap404</a>, <a href="https://github.com/Codencode">@Codencode</a>, <a href="https://github.com/HiCharly">@HiCharly</a>, <a href="https://github.com/Hlavtox">@Hlavtox</a>, <a href="https://github.com/M0rgan01">@M0rgan01</a>, <a href="https://github.com/MHostinato">@MHostinato</a>, <a href="https://github.com/NKoonen">@NKoonen</a>, <a href="https://github.com/NicolasCador">@NicolasCador</a>, <a href="https://github.com/PrestaEdit">@PrestaEdit</a>, <a href="https://github.com/Progi1984">@Progi1984</a>, <a href="https://github.com/Seb33300">@Seb33300</a>, <a href="https://github.com/ShaiMagal">@ShaiMagal</a>, <a href="https://github.com/TomLorenzi">@TomLorenzi</a>, <a href="https://github.com/Uhor">@Uhor</a>, <a href="https://github.com/bibips">@bibips</a>, <a href="https://github.com/boherm">@boherm</a>, <a href="https://github.com/boubkerbribri">@boubkerbribri</a>, <a href="https://github.com/buggyzap">@buggyzap</a>, <a href="https://github.com/dali-rajab">@dali-rajab</a>, <a href="https://github.com/danilocarta">@danilocarta</a>, <a href="https://github.com/davidismeurt">@davidismeurt</a>, <a href="https://github.com/dennispw">@dennispw</a>, <a href="https://github.com/dependabot">@dependabot</a>, <a href="https://github.com/elodie-bil3">@elodie-bil3</a>, <a href="https://github.com/github-actions">@github-actions</a>, <a href="https://github.com/gross-nvs">@gross-nvs</a>, <a href="https://github.com/helioalb">@helioalb</a>, <a href="https://github.com/hherreros-webimpacto">@hherreros-webimpacto</a>, <a href="https://github.com/jf-viguier">@jf-viguier</a>, <a href="https://github.com/jokesterfr">@jokesterfr</a>, <a href="https://github.com/jolelievre">@jolelievre</a>, <a href="https://github.com/kpodemski">@kpodemski</a>, <a href="https://github.com/leemyongpakvn">@leemyongpakvn</a>, <a href="https://github.com/matks">@matks</a>, <a href="https://github.com/matthieu-rolland">@matthieu-rolland</a>, <a href="https://github.com/metacreo">@metacreo</a>, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a>, <a href="https://github.com/nicosomb">@nicosomb</a>, <a href="https://github.com/sharkooon">@sharkooon</a>, <a href="https://github.com/tblivet">@tblivet</a>, <a href="https://github.com/tleon">@tleon</a>, <a href="https://github.com/tswfi">@tswfi</a>, <a href="https://github.com/web-cooking-factory">@web-cooking-factory</a>, <a href="https://github.com/xsbr">@xsbr</a>!</p>
+<p>Thank you to the contributors whose PRs haven&rsquo;t been merged yet! And of course, a big thank you to all those who contribute with issues and comments <a href="https://github.com/PrestaShop/PrestaShop">on GitHub</a>!</p>
+<p>Coding is only just one of the ways you can contribute. Here are some ideas on how you can <a href="https://www.prestashop-project.org/get-involved/">get involved in the project</a>.</p>
+<p>If you need help with contributing or have questions about it, feel free to contact me, <strong>@kpodemski</strong>, on the <a href="https://www.prestashop-project.org/slack/">project&rsquo;s Slack</a>.</p>
+<p>Happy contributin&rsquo; everyone!</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Feb 5, 2024</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/core-monthly/">core-monthly</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/kpodemski/">Krystian Podemski</a>
+      <span>Tech Evangelist @ PrestaShop</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2024\/core-monthly-2024-01-01-2024-01-31\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

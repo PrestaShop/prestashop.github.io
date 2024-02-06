@@ -75,7 +75,7 @@ At PrestaShop, we use it in many cases:
 - Builds of our Docker images
 - Update and deployment of our “Top contributors” and “Top translators” sites
 
-And of course ... for translation management!
+And of course... for translation management!
 
 Several months ago, a code rewriting project was launched to facilitate the work of the Content and Developer teams. This rewriting was done on our translation tool. For now, this repository is private as it contains sensitive data.
 

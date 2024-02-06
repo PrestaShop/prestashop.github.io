@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PrestaShop DevCon 2023: Do you speak PrestaShop"
+title: "PSDevCon 2023: Do you speak PrestaShop"
 subtitle: "How the community works to translate the software into multiple languages."
 date:   2024-02-06
 authors: [ JulieVarisellaz, NicolasLoeuillet ]

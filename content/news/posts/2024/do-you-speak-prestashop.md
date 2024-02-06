@@ -35,7 +35,7 @@ Once a proofreader has translated and validated a string, it is sent to PrestaSh
 Coding isn't the only way to contribute to an open source project. Translation is another way to contribute!
 Join the translator community [on Crowdin](https://crowdin.com/project/prestashop-official). Either your language is already 100% translated and you can suggest improvements or the language is not yet 100% translated and you can contribute to help achieve this goal.
 
-If you're interested, you can check our monthly blog post on the blog. We also have a [Slack channel]([prestashop.slack.com](http://prestashop.slack.com/)) dedicated to translations.
+If you're interested, you can check our monthly blog post on the blog. We also have a [Slack channel](https://www.prestashop-project.org/slack/) dedicated to translations.
 
 ## How we used to handle translations
 

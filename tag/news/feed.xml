@@ -6,7 +6,18 @@
     <description>Recent content in news on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jan 2024 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Feb 2024 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PSDevCon 2023: Do you speak PrestaShop</title>
+      <link>https://build.prestashop-project.org/news/2024/do-you-speak-prestashop/</link>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/do-you-speak-prestashop/</guid>
+      <description>Do you speak PrestaShop? On November 30, Nicolas Lœuillet and Julie Varisellaz gave a presentation about the project’s translations at the first-ever PrestaShop Developer Conference.
+Their presentation aimed to explain the path of a translation string, from the code to the merchant’s back office. The presentation was in French, but we’re happy to share a summary in English on the blog. Let’s get started!
+Crowdin: Localization management platform There are 2 ways of translating your PrestaShop store.</description>
+    </item>
+    
     <item>
       <title>PSDevCon 2023: PrestaShop News - Where We Are And Where We’re Going</title>
       <link>https://build.prestashop-project.org/news/2024/prestashop-news-where-we-are-and-where-we-are-going/</link>
@@ -144,17 +155,6 @@ Feature freeze is now effective Therefore, as of today, the feature freeze is no
       
       <guid>https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/</guid>
       <description>Five years ago, PrestaShop 1.7 was released to the world, introducing Symfony, the Classic theme and child theme features, interface improvements, and so much more. With each one of the eight minor versions that followed, 1.7 kept on growing both in features and stability. Its maturity is recognized by its success: with over 170,000 live shops detected at the time of writing, it’s the most popular PrestaShop version used in production shops on the web.</description>
-    </item>
-    
-    <item>
-      <title>Introducing TypeScript</title>
-      <link>https://build.prestashop-project.org/news/2021/introducing-typescript/</link>
-      <pubDate>Fri, 28 May 2021 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/introducing-typescript/</guid>
-      <description>Following a recent Architecture Decision Records (ADR) submission and a Proof of Concept (POC), the Core Maintainers team has decided to introduce TypeScript (TS) on the project.
-Why TypeScript? During the last few years, the PrestaShop Project has been increasingly raising the code quality bar. To help maintainers ensure that quality keeps increasing, a number of automatic quality verification tools have been added to the CI pipeline:
-ESLint analyzes the whole JavaScript codebase to ensure it follows our code style and find problems.</description>
     </item>
     
   </channel>

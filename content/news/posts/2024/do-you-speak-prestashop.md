@@ -55,7 +55,7 @@ In the end, it was really hard work and time-consuming.
 
 ## How we handle translations now
 
-Thanks to GitHub actions!
+Thanks to GitHub actions, we automated many of the steps we mentioned above!
 
 What’s a GitHub action?
 

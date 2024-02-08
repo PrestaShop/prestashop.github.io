@@ -8,7 +8,7 @@ icon: icon-video-camera
 tags: [contribute, event, community, live-update]
 ---
 
-The project's live update was held the second time in 2024. Read on for a recap of the session.
+The project's live update was held for the second time in 2024. Read on for a recap of the session.
 
 ## PrestaShop Live Update - February 2024
 
@@ -21,8 +21,8 @@ The second live update in 2024 was held on February 7th, 2024. During the sessio
 ## The session's agenda was as follows:
 
 - [00:00](https://www.youtube.com/watch?v=HthBm3cbuno) Beginning of the session: the introduction
-- [01:35](https://youtu.be/HthBm3cbuno?t=95) Presentation: The plan for the Upgrade application, by [Fabien Vallon](https://github.com/fabienvallon)
-- [17:58](https://youtu.be/HthBm3cbuno?t=1073) Presentation: Module developments techniques I wish I would use, by [Tomas Ilginis](https://github.com/tomas862)
+- [01:35](https://youtu.be/HthBm3cbuno?t=95) Presentation: the plan for the Upgrade application, by [Fabien Vallon](https://github.com/fabienvallon)
+- [17:58](https://youtu.be/HthBm3cbuno?t=1073) Presentation: module developments techniques I wish I would use, by [Tomas Ilginis](https://github.com/tomas862)
 
 You can use the timestamps to jump directly to the parts you want to watch.
 
@@ -38,7 +38,7 @@ and links to resources shared by Tomas Ilginis:
 - [Prestashopdevcon2023 module](https://github.com/Invertus/prestashopdevcon2023)
 - [Reusable UI components example](https://github.com/Invertus/prestashopdevcon2023-ui)
 
-PS: During the Live Update presentation, Fabien Vallon showed a sneak peek of the new Upgrade application interface on Figma, which is still being designed. We will share more details and share the mockups with the community soon.
+PS: during the live update presentation, Fabien Vallon showed a sneak peek of the new Upgrade application interface on Figma, which is still being designed. We will share more details and share the mockups with the community soon.
 
 Also, you can take a look at the slides presented during the demo [here](https://docs.google.com/presentation/d/1LgFKKbkkZOWeSHzhrZWJm8qyvnXJ-QYMPq7dNHVtl9Q/edit?usp=sharing).
 

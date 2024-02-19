@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.1.4 Is Available
 subtitle: Security patch for version 8.1 of PrestaShop
-date: 2024-02-13 09:00:00
+date: 2024-02-19 09:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2024/02/banner_8.1.4_1200x627.png
 opengraph_image: /assets/images/2024/02/banner_8.1.4_1200x627.png

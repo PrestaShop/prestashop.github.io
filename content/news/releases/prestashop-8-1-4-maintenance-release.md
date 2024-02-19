@@ -31,7 +31,7 @@ You can see a full changelog on the [release page](https://github.com/PrestaShop
 
 One security issue has been fixed in this release.
 
-- [TBD](https://github.com/PrestaShop/PrestaShop/security/advisories/TBD)
+- [Path disclosure in JavaScript variable](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-3366-9287-7qpr)
 
 ## Download
 

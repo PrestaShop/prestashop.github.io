@@ -6,7 +6,18 @@
     <description>Recent content in version on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jan 2024 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Feb 2024 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/version/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1.4 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-4-maintenance-release/</link>
+      <pubDate>Mon, 19 Feb 2024 09:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-4-maintenance-release/</guid>
+      <description>It&amp;rsquo;s been decided to release a security patch for version 8.1 of PrestaShop.
+The security patch for version 8.1 of PrestaShop is now available. This is the first release where it&amp;rsquo;s been decided to separate the security fixes from other bug fixes and improvements, allowing for a quick release of the security patch.
+It is recommended that you upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to create a backup before.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1.3 Is Available</title>
       <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-3-maintenance-release/</link>
@@ -155,17 +166,6 @@ Test PrestaShop 8.1.0 beta 1 now! Version 8.1 fixes over 30 bugs found in the pr
       <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-feature-freeze/</guid>
       <description>As of February 1, 2023, PrestaShop version 8.1 has entered the feature freeze phase. This article provides more information about the feature freeze, what the next steps will be, and what to expect from PrestaShop 8.1.
 Feature freeze for PrestaShop 8.1 As of today, PrestaShop version 8.1 has entered a feature freeze. What is a feature freeze? Feature freeze refers to a specific stage in the software development process after which no new features can be added to a version.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.0.1 is available</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-1-maintenance-release/</link>
-      <pubDate>Fri, 06 Jan 2023 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-1-maintenance-release/</guid>
-      <description>The first patch version for PrestaShop 8 is now available to download!
-After a few weeks of intensive work from all project members, the first maintenance release for version 8 is now available.
-In this patch, you can find more than 30 bug fixes and one performance improvement that prevents clearing the system&amp;rsquo;s cache for bulk actions performed from the modules list. You will also get changes from the recent PrestaShop patch release 1.</description>
     </item>
     
   </channel>

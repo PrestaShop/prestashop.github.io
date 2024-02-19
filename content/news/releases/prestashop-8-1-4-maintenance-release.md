@@ -21,7 +21,7 @@ It's been decided to release a security patch for version 8.1 of PrestaShop.
 
 ![8.1.4 is available!](/assets/images/2024/02/banner_8.1.4_1534x424.png)
 
-The security patch for version 8.1 of PrestaShop is now available. This is the first release where it's been decided to separate the security fixes from the other bug fixes and improvements, allowing the release of the security patch as soon as possible.
+The security patch for version 8.1 of PrestaShop is now available. This is the first release where it's been decided to separate the security fixes from other bug fixes and improvements, allowing for a quick release of the security patch.
 
 It is recommended that you upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to create a backup before. You can upgrade to the latest version using the [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade/releases/).
 

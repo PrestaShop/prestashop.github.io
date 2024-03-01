@@ -46,6 +46,14 @@ The "Pack" products feature has been improved in this version. There was a serio
 
 [@Hlavtox](https://github.com/Hlavtox) took the first step to improve the validation of cart rules. The [pull request #35166](https://github.com/PrestaShop/PrestaShop/pull/35166) introduced an extra check for cart rules that don't met the conditions. This will prevent the cart rules from being applied when they shouldn't be. This doesn't fix all the issues with cart rules, but it's a step in the right direction.
 
+### Fix for multi-lang boolean fields in ObjectModel
+
+Recently introduced changes to `EntityMapper` turned out to be non-backward compatible, and caused a bug in the handling of multi-lang boolean fields in `ObjectModel`. This has been fixed in [pull request #34873](https://github.com/PrestaShop/PrestaShop/pull/34873). Thank you, [@gross-nvs](https://github.com/gross-nvs).
+
+### Product CSV import wiping out category associations
+
+This was a serious bug that caused the category associations to be wiped out when importing products via CSV. This has been fixed in [pull request #34857](https://github.com/PrestaShop/PrestaShop/pull/34857). Thank you, [@tswfi](https://github.com/tswfi).
+
 ### Other bug fixes
 
 You can see rest of pull requests with bug fixes on [Github](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.5+label%3A%22Bug+fix%22).

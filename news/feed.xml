@@ -6,7 +6,17 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Feb 2024 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop Core Monthly - February 2024</title>
+      <link>https://build.prestashop-project.org/news/2024/core-monthly-2024-02-01-2024-02-29/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/core-monthly-2024-02-01-2024-02-29/</guid>
+      <description>With over 250 pull requests merged in the project repositories, February was a busy month for the PrestaShop open source project. We released the security patch, PrestaShop 8.1.4, and made significant progress on the new API. Let&amp;rsquo;s take a look at the most important changes in the codebase.
+Release of PrestaShop 8.1.4 The 8.1.4 maintenance release of PrestaShop was a dedicated security release. This was the first instance where the decision was made to separate security fixes from other bug fixes and improvements, allowing for a quicker release of the security patch.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1.4 Is Available</title>
       <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-4-maintenance-release/</link>
@@ -41,7 +51,7 @@ Crowdin: Localization management platform There are 2 ways of translating your P
     </item>
     
     <item>
-      <title>PrestaShop Core Monthly - January</title>
+      <title>PrestaShop Core Monthly - January 2024</title>
       <link>https://build.prestashop-project.org/news/2024/core-monthly-2024-01-01-2024-01-31/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0100</pubDate>
       
@@ -154,16 +164,6 @@ PrestaShop Developer Conference 2023 The event opened its doors at 9AM and very 
       <description>This week will see some changes with the Project. PrestaShop SA, the company, is making the open source Project consistent with the new PrestaShop branding.
 New PrestaShop Project branding Unveiled earlier this year, PrestaShop launched its new brand identity to affirm PrestaShop’s strengths, showing more credibility and trust.
 Therefore, in the next few days, to align with this new identity, all materials related to the Project will change. You’ll see the rebranded Project’s website, developer documentation, this blog, and other Project-related content.</description>
-    </item>
-    
-    <item>
-      <title>Hooks in the Hummingbird theme</title>
-      <link>https://build.prestashop-project.org/news/2023/hummingbird-theme-hooks/</link>
-      <pubDate>Wed, 20 Dec 2023 09:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/hummingbird-theme-hooks/</guid>
-      <description>Hummingbird is the new theme set to be introduced in PrestaShop 9. This theme represents a complete overhaul of the Classic theme, featuring a fresh design and new functionalities. The Product Design team at PrestaShop has developed a visual guide to the hooks available in this theme, aimed at simplifying customization for front-end developers who want to work with it.
-What is a hook? As described in the developer documentation:</description>
     </item>
     
   </channel>

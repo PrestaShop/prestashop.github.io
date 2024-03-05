@@ -6,9 +6,19 @@
     <description>Recent content in core-monthly on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/core-monthly/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/core-monthly/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>PrestaShop Core Monthly - January</title>
+      <title>PrestaShop Core Monthly - February 2024</title>
+      <link>https://build.prestashop-project.org/news/2024/core-monthly-2024-02-01-2024-02-29/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/core-monthly-2024-02-01-2024-02-29/</guid>
+      <description>With over 250 pull requests merged in the project repositories, February was a busy month for the PrestaShop open source project. We released the security patch, PrestaShop 8.1.4, and made significant progress on the new API. Let&amp;rsquo;s take a look at the most important changes in the codebase.
+Release of PrestaShop 8.1.4 The 8.1.4 maintenance release of PrestaShop was a dedicated security release. This was the first instance where the decision was made to separate security fixes from other bug fixes and improvements, allowing for a quicker release of the security patch.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop Core Monthly - January 2024</title>
       <link>https://build.prestashop-project.org/news/2024/core-monthly-2024-01-01-2024-01-31/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0100</pubDate>
       
@@ -150,18 +160,6 @@ Welcome to the first Core Monthly of 2023! 2022 was a fantastic year for the Pre
       <description>In this Core Monthly, I will focus on a few important topics that are being worked on inside the project, the new product page, initiatives, new releases, and some great contributions from the community.
 Dear developers,
 Here it is! The first edition of the Core Monthly. I know through community feedback about the impact weekly summaries recently had, this is why it was decided to summarize the entire month in one article to make them more useful.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop Core Weekly - Week 43 of 2022</title>
-      <link>https://build.prestashop-project.org/news/2022/coreweekly-43-2022/</link>
-      <pubDate>Mon, 31 Oct 2022 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2022/coreweekly-43-2022/</guid>
-      <description>This edition of the Core Weekly report highlights changes in PrestaShop&amp;rsquo;s core codebase from Monday 24th to Sunday 30th of October 2022.
-General messages Dear developers,
-PrestaShop 8 is available! This is an important moment for everyone involved in the project. All project members would like to thank the community for their involvement in this new version.
-The Hummingbird theme maintainers team decided to release its early version. If you are working with PrestaShop themes, this is a great chance to get your hands on this new version to see what the future holds.</description>
     </item>
     
   </channel>

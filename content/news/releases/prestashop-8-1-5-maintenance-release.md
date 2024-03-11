@@ -87,7 +87,7 @@ Thank you [@Hlavtox](https://github.com) for your hard work on release 8.1.5!
 
 Contributors to this patch version, from project members and individual community contributors, include:
 
-TBD
+Benoît Gross, Boris Hermans, Boubker Bribri, Codencode, Daniel Hlavacek, Danilo Carta, Dariusz Tryba, Dominik Shaim Ulrich, Fabien Papet, Franck Lefèvre, Hherreros, Jean-François Viguier, Jonathan Danse, Jonathan Lelievre, Krystian Podemski, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, Tatu Wikman
 
 Thank you!
 

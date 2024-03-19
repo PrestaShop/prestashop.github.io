@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.1.5 Is Available
 subtitle: New patch for branch 8.1.x is available
-date: 2024-03-01 09:00:00
+date: 2024-03-19 09:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2024/03/banner_8.1.5_1200x627.jpg
 opengraph_image: /assets/images/2024/03/banner_8.1.5_1200x627.jpg
@@ -30,9 +30,9 @@ You can go to the [release page](https://github.com/PrestaShop/PrestaShop/releas
 
 Let's focus on some notable bug fixes that have been implemented in this version.
 
-### Improvements to the discounts marked as "highlight"
+### Improvements to discounts marked as "highlight"
 
-Thanks to [@Hlavtox](https://github.com/Hlavtox), version 8.1.5 adds quite a few improvements to discounts added with the "Highlight" option. The previous implementation of this feature could cause unwanted discounts to appear in the available discounts in the user's account. The [pull request with a fix](https://github.com/PrestaShop/PrestaShop/pull/35464), clearly explains all the scenario and when, where, how discounts will display depending on this setting.
+Thanks to [@Hlavtox](https://github.com/Hlavtox), version 8.1.5 adds quite a few improvements to discounts, added with the "highlight" option. The previous implementation of this feature could cause unwanted discounts to appear in the available discounts in the user's account. The [pull request that includes the fix](https://github.com/PrestaShop/PrestaShop/pull/35464), clearly explains the scenario and also the when, where, how discounts will display depending on this setting.
 
 ### Fixes to deletion of customer's addresses
 
@@ -40,11 +40,11 @@ Error "No carriers available". Does it ring a bell? This error was caused by a b
 
 ### Major bug fixes for the "Pack" products
 
-The "Pack" products feature has been improved in this version. There was a serious bug that caused the "Pack" products not to work corrently if they were set to "Decrement products in pack only". This has been fixed in [pull request #35372](https://github.com/PrestaShop/PrestaShop/pull/35372) from [@Codencode](https://github.com/Codencode) and [@Hlavtox](https://github.com/Hlavtox). After constructing a test scenario, they were able to identify the issue and fix it. Thank you to both of them for their hard work!
+The "Pack" products feature has been improved in this version. There was a serious bug that caused the "Pack" products to not work correctly if they were set to "Decrement products in pack only". This has been fixed in [pull request #35372](https://github.com/PrestaShop/PrestaShop/pull/35372) from [@Codencode](https://github.com/Codencode) and [@Hlavtox](https://github.com/Hlavtox). After constructing a test scenario, they were able to identify the issue and fix it. Thank you to both of them for their hard work!
 
 ### Better cart rules validation
 
-[@Hlavtox](https://github.com/Hlavtox) took the first step to improve the validation of cart rules. The [pull request #35166](https://github.com/PrestaShop/PrestaShop/pull/35166) introduced an extra check for cart rules that don't met the conditions. This will prevent the cart rules from being applied when they shouldn't be. This doesn't fix all the issues with cart rules, but it's a step in the right direction.
+[@Hlavtox](https://github.com/Hlavtox) took the first step to improve the validation of cart rules. The [pull request #35166](https://github.com/PrestaShop/PrestaShop/pull/35166) introduced an extra check for cart rules that don't meet the conditions. This will prevent the cart rules from being applied when they shouldn't be. This doesn't fix all the issues with cart rules, but it's a step in the right direction.
 
 ### Fix for multi-lang boolean fields in ObjectModel
 
@@ -56,7 +56,7 @@ This was a serious bug that caused the category associations to be wiped out whe
 
 ### Other bug fixes
 
-You can see rest of pull requests with bug fixes on [Github](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.5+label%3A%22Bug+fix%22).
+You can see the rest of pull requests with bug fixes on [Github](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.5+label%3A%22Bug+fix%22).
 
 ## Improvements
 
@@ -72,7 +72,7 @@ Thanks to [@Hlavtox](https://github.com/Hlavtox), the tax rule group is now auto
 
 ### Improved cart view page in back office
 
-Last but not least, the cart view page in the back office has been improved. Thanks to [@Hlavtox](https://github.com/PrestaShop/PrestaShop/pull/34682), we have a few changes, his pull request:
+Last but not least, the cart view page in the back office has been improved. Thanks to [@Hlavtox](https://github.com/PrestaShop/PrestaShop/pull/34682), we have a few changes. His pull request:
 
 * Introduced a shareable link for carts pending order placement.
 * Incorporated display of cart creation date on the cart page.

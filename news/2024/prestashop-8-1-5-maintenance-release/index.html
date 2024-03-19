@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop 8.1.5 Is Available</title>
+    <link href="/style.css?1710843756" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop 8.1.5 Is Available" />
+<meta property="og:description" content="Another patch for PrestaShop 8.1 is available. This time without security updates but instead with some interesting improvements, as well as a number of bug fixes. In this article we’ll lean into them because there’s plenty to write about!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2024/prestashop-8-1-5-maintenance-release/" />
+    <meta property="og:image" content="https://build.prestashop-project.org/assets/images/2024/03/banner_8.1.5_1200x627.jpg"/>
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2024-03-01T09:00:00+01:00" />
+    <meta property="article:modified_time" content="2024-03-01T09:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/2024/03/banner_8.1.5_1024x512.jpg">
+<meta name="twitter:title" content="PrestaShop 8.1.5 Is Available"/>
+<meta name="twitter:description" content="New patch for branch 8.1.x is available"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip': false });
+			}
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop 8.1.5 Is Available</h1>
+              
+                <h3 class="post-subtitle">New patch for branch 8.1.x is available</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/PrestaShop/">
+        <img class="img-circle" src="/assets/images/authors/prestashop-team.png" alt="PrestaShop team's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/PrestaShop/">PrestaShop team</a>
+      </div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Mar 1, 2024
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;8.1.5&#43;Is&#43;Available&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2024%2Fprestashop-8-1-5-maintenance-release%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2024%2Fprestashop-8-1-5-maintenance-release%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Another patch for PrestaShop 8.1 is available. This time without security updates but instead with some interesting improvements, as well as a number of bug fixes. In this article we&rsquo;ll lean into them because there&rsquo;s plenty to write about!</p>
+<p><img src="/assets/images/2024/03/banner_8.1.5_1534x424.jpg" alt="8.1.5 is available!"></p>
+<p>PrestaShop 8.1.5 is available. This release fixes some bugs but also brings a lot of improvements.</p>
+<p>It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. Upgrade is possible using the latest version of the <a href="https://github.com/PrestaShop/autoupgrade/releases/">1-Click Upgrade module</a>.</p>
+<p>You can go to the <a href="https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.5">release page</a> to see a full changelog, but now let&rsquo;s dive into the details of this release.</p>
+<h2 id="bug-fixes">Bug fixes</h2>
+<p>Let&rsquo;s focus on some notable bug fixes that have been implemented in this version.</p>
+<h3 id="improvements-to-the-discounts-marked-as-highlight">Improvements to the discounts marked as &ldquo;highlight&rdquo;</h3>
+<p>Thanks to <a href="https://github.com/Hlavtox">@Hlavtox</a>, version 8.1.5 adds quite a few improvements to discounts added with the &ldquo;Highlight&rdquo; option. The previous implementation of this feature could cause unwanted discounts to appear in the available discounts in the user&rsquo;s account. The <a href="https://github.com/PrestaShop/PrestaShop/pull/35464">pull request with a fix</a>, clearly explains all the scenario and when, where, how discounts will display depending on this setting.</p>
+<h3 id="fixes-to-deletion-of-customers-addresses">Fixes to deletion of customer&rsquo;s addresses</h3>
+<p>Error &ldquo;No carriers available&rdquo;. Does it ring a bell? This error was caused by a bug in the deletion of a customer&rsquo;s address. It has been fixed in <a href="https://github.com/PrestaShop/PrestaShop/pull/35017">pull request #35017</a> from <a href="https://github.com/Hlavtox">@Hlavtox</a>.</p>
+<h3 id="major-bug-fixes-for-the-pack-products">Major bug fixes for the &ldquo;Pack&rdquo; products</h3>
+<p>The &ldquo;Pack&rdquo; products feature has been improved in this version. There was a serious bug that caused the &ldquo;Pack&rdquo; products not to work corrently if they were set to &ldquo;Decrement products in pack only&rdquo;. This has been fixed in <a href="https://github.com/PrestaShop/PrestaShop/pull/35372">pull request #35372</a> from <a href="https://github.com/Codencode">@Codencode</a> and <a href="https://github.com/Hlavtox">@Hlavtox</a>. After constructing a test scenario, they were able to identify the issue and fix it. Thank you to both of them for their hard work!</p>
+<h3 id="better-cart-rules-validation">Better cart rules validation</h3>
+<p><a href="https://github.com/Hlavtox">@Hlavtox</a> took the first step to improve the validation of cart rules. The <a href="https://github.com/PrestaShop/PrestaShop/pull/35166">pull request #35166</a> introduced an extra check for cart rules that don&rsquo;t met the conditions. This will prevent the cart rules from being applied when they shouldn&rsquo;t be. This doesn&rsquo;t fix all the issues with cart rules, but it&rsquo;s a step in the right direction.</p>
+<h3 id="fix-for-multi-lang-boolean-fields-in-objectmodel">Fix for multi-lang boolean fields in ObjectModel</h3>
+<p>Recently introduced changes to <code>EntityMapper</code> turned out to be non-backward compatible, and caused a bug in the handling of multi-lang boolean fields in <code>ObjectModel</code>. This has been fixed in <a href="https://github.com/PrestaShop/PrestaShop/pull/34873">pull request #34873</a>. Thank you, <a href="https://github.com/gross-nvs">@gross-nvs</a>.</p>
+<h3 id="product-csv-import-wiping-out-category-associations">Product CSV import wiping out category associations</h3>
+<p>This was a serious bug that caused the category associations to be wiped out when importing products via CSV. This has been fixed in <a href="https://github.com/PrestaShop/PrestaShop/pull/34857">pull request #34857</a>. Thank you, <a href="https://github.com/tswfi">@tswfi</a>.</p>
+<h3 id="other-bug-fixes">Other bug fixes</h3>
+<p>You can see rest of pull requests with bug fixes on <a href="https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.5+label%3A%22Bug+fix%22">Github</a>.</p>
+<h2 id="improvements">Improvements</h2>
+<p>See some of the most notable improvements that have been implemented in this version.</p>
+<h3 id="set-most-used-tax-rule-group-to-new-products-automatically">Set most used tax rule group to new products automatically</h3>
+<p>Thanks to <a href="https://github.com/Hlavtox">@Hlavtox</a>, the tax rule group is now automatically set to the most used tax rule group when adding a new product. This is a small improvement, but it can save a lot of time for merchants who are adding a lot of products. You can see the <a href="https://github.com/PrestaShop/PrestaShop/pull/35495">pull request #35495</a> for more details.</p>
+<h3 id="do-not-autofill-passwords-for-smtp-configuration">Do not autofill passwords for SMTP configuration</h3>
+<p><a href="https://github.com/ShaiMagal">@ShaiMagal</a> has made a small but important improvement to the back office. The password field for the e-mail SMTP configuration is no longer autofilled. This is a small change, but can prevent mistakes and improve security. You can check the <a href="https://github.com/PrestaShop/PrestaShop/pull/35058">pull request #35058</a> to see the details.</p>
+<h3 id="improved-cart-view-page-in-back-office">Improved cart view page in back office</h3>
+<p>Last but not least, the cart view page in the back office has been improved. Thanks to <a href="https://github.com/PrestaShop/PrestaShop/pull/34682">@Hlavtox</a>, we have a few changes, his pull request:</p>
+<ul>
+<li>Introduced a shareable link for carts pending order placement.</li>
+<li>Incorporated display of cart creation date on the cart page.</li>
+<li>Integrated display of last update date for the cart on the cart page.</li>
+<li>Enhanced the visual appeal and functionality of buttons on the cart page.</li>
+</ul>
+<p>You can see the details and before/after screenshots in the <a href="https://github.com/PrestaShop/PrestaShop/pull/34682">pull request #34682</a>.</p>
+<p>Thank you <a href="https://github.com">@Hlavtox</a> for your hard work on release 8.1.5!</p>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>Contributors to this patch version, from project members and individual community contributors, include:</p>
+<p>Benoît Gross, Boris Hermans, Boubker Bribri, Codencode, Daniel Hlavacek, Danilo Carta, Dariusz Tryba, Dominik Shaim Ulrich, Fabien Papet, Franck Lefèvre, Hherreros, Jean-François Viguier, Jonathan Danse, Jonathan Lelievre, Krystian Podemski, Mathieu Ferment, Matthieu Rolland, Maxime Flasquin, Nesrine Abdmouleh, Nicolas Lœuillet, Tatu Wikman</p>
+<p>Thank you!</p>
+<p class="text-center">
+  <a href="https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.5" class="btn btn-lg btn-success">Download PrestaShop 8.1.5 now!</a>
+</p>
+
+<p>Since version 8.1.5 is a &ldquo;patch&rdquo; update, upgrading from previous 8.1.x versions should happen without any issues. As for every upgrade, it&rsquo;s highly recommended to do a full manual backup beforehand.</p>
+<p>If you encounter any problems during the upgrade that, in your opinion, are not caused by third-party modules or modifications used in your shop, <a href="https://www.prestashop-project.org/get-involved/report-issues/">submit a bug report</a>.</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Mar 1, 2024</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/version/">version</a>
+
+  <a class="label label-primary" href="/tag/patch/">patch</a>
+
+  <a class="label label-primary" href="/tag/releases/">releases</a>
+
+  <a class="label label-primary" href="/tag/8.1/">8.1</a>
+
+  <a class="label label-primary" href="/tag/8.1.x/">8.1.x</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/PrestaShop/">PrestaShop team</a>
+      <span></span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2024\/prestashop-8-1-5-maintenance-release\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

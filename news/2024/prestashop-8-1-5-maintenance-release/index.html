@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>PrestaShop 8.1.5 Is Available</title>
-    <link href="/style.css?1710843756" rel="stylesheet">
+    <link href="/style.css?1710845989" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -18,8 +18,8 @@
 <meta property="og:url" content="https://build.prestashop-project.org/news/2024/prestashop-8-1-5-maintenance-release/" />
     <meta property="og:image" content="https://build.prestashop-project.org/assets/images/2024/03/banner_8.1.5_1200x627.jpg"/>
     <meta property="article:section" content="news" />
-    <meta property="article:published_time" content="2024-03-01T09:00:00+01:00" />
-    <meta property="article:modified_time" content="2024-03-01T09:00:00+01:00" />
+    <meta property="article:published_time" content="2024-03-19T09:00:00+01:00" />
+    <meta property="article:modified_time" content="2024-03-19T09:00:00+01:00" />
 
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/2024/03/banner_8.1.5_1024x512.jpg">
@@ -174,7 +174,7 @@
           <aside class="post-meta-sidebar">
               <div class="aside-meta">Published</div>
 <p class="publish-date">
-    Mar 1, 2024
+    Mar 19, 2024
 </p>
 
           </aside>
@@ -205,20 +205,20 @@
 <p>You can go to the <a href="https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.5">release page</a> to see a full changelog, but now let&rsquo;s dive into the details of this release.</p>
 <h2 id="bug-fixes">Bug fixes</h2>
 <p>Let&rsquo;s focus on some notable bug fixes that have been implemented in this version.</p>
-<h3 id="improvements-to-the-discounts-marked-as-highlight">Improvements to the discounts marked as &ldquo;highlight&rdquo;</h3>
-<p>Thanks to <a href="https://github.com/Hlavtox">@Hlavtox</a>, version 8.1.5 adds quite a few improvements to discounts added with the &ldquo;Highlight&rdquo; option. The previous implementation of this feature could cause unwanted discounts to appear in the available discounts in the user&rsquo;s account. The <a href="https://github.com/PrestaShop/PrestaShop/pull/35464">pull request with a fix</a>, clearly explains all the scenario and when, where, how discounts will display depending on this setting.</p>
+<h3 id="improvements-to-discounts-marked-as-highlight">Improvements to discounts marked as &ldquo;highlight&rdquo;</h3>
+<p>Thanks to <a href="https://github.com/Hlavtox">@Hlavtox</a>, version 8.1.5 adds quite a few improvements to discounts, added with the &ldquo;highlight&rdquo; option. The previous implementation of this feature could cause unwanted discounts to appear in the available discounts in the user&rsquo;s account. The <a href="https://github.com/PrestaShop/PrestaShop/pull/35464">pull request that includes the fix</a>, clearly explains the scenario and also the when, where, how discounts will display depending on this setting.</p>
 <h3 id="fixes-to-deletion-of-customers-addresses">Fixes to deletion of customer&rsquo;s addresses</h3>
 <p>Error &ldquo;No carriers available&rdquo;. Does it ring a bell? This error was caused by a bug in the deletion of a customer&rsquo;s address. It has been fixed in <a href="https://github.com/PrestaShop/PrestaShop/pull/35017">pull request #35017</a> from <a href="https://github.com/Hlavtox">@Hlavtox</a>.</p>
 <h3 id="major-bug-fixes-for-the-pack-products">Major bug fixes for the &ldquo;Pack&rdquo; products</h3>
-<p>The &ldquo;Pack&rdquo; products feature has been improved in this version. There was a serious bug that caused the &ldquo;Pack&rdquo; products not to work corrently if they were set to &ldquo;Decrement products in pack only&rdquo;. This has been fixed in <a href="https://github.com/PrestaShop/PrestaShop/pull/35372">pull request #35372</a> from <a href="https://github.com/Codencode">@Codencode</a> and <a href="https://github.com/Hlavtox">@Hlavtox</a>. After constructing a test scenario, they were able to identify the issue and fix it. Thank you to both of them for their hard work!</p>
+<p>The &ldquo;Pack&rdquo; products feature has been improved in this version. There was a serious bug that caused the &ldquo;Pack&rdquo; products to not work correctly if they were set to &ldquo;Decrement products in pack only&rdquo;. This has been fixed in <a href="https://github.com/PrestaShop/PrestaShop/pull/35372">pull request #35372</a> from <a href="https://github.com/Codencode">@Codencode</a> and <a href="https://github.com/Hlavtox">@Hlavtox</a>. After constructing a test scenario, they were able to identify the issue and fix it. Thank you to both of them for their hard work!</p>
 <h3 id="better-cart-rules-validation">Better cart rules validation</h3>
-<p><a href="https://github.com/Hlavtox">@Hlavtox</a> took the first step to improve the validation of cart rules. The <a href="https://github.com/PrestaShop/PrestaShop/pull/35166">pull request #35166</a> introduced an extra check for cart rules that don&rsquo;t met the conditions. This will prevent the cart rules from being applied when they shouldn&rsquo;t be. This doesn&rsquo;t fix all the issues with cart rules, but it&rsquo;s a step in the right direction.</p>
+<p><a href="https://github.com/Hlavtox">@Hlavtox</a> took the first step to improve the validation of cart rules. The <a href="https://github.com/PrestaShop/PrestaShop/pull/35166">pull request #35166</a> introduced an extra check for cart rules that don&rsquo;t meet the conditions. This will prevent the cart rules from being applied when they shouldn&rsquo;t be. This doesn&rsquo;t fix all the issues with cart rules, but it&rsquo;s a step in the right direction.</p>
 <h3 id="fix-for-multi-lang-boolean-fields-in-objectmodel">Fix for multi-lang boolean fields in ObjectModel</h3>
 <p>Recently introduced changes to <code>EntityMapper</code> turned out to be non-backward compatible, and caused a bug in the handling of multi-lang boolean fields in <code>ObjectModel</code>. This has been fixed in <a href="https://github.com/PrestaShop/PrestaShop/pull/34873">pull request #34873</a>. Thank you, <a href="https://github.com/gross-nvs">@gross-nvs</a>.</p>
 <h3 id="product-csv-import-wiping-out-category-associations">Product CSV import wiping out category associations</h3>
 <p>This was a serious bug that caused the category associations to be wiped out when importing products via CSV. This has been fixed in <a href="https://github.com/PrestaShop/PrestaShop/pull/34857">pull request #34857</a>. Thank you, <a href="https://github.com/tswfi">@tswfi</a>.</p>
 <h3 id="other-bug-fixes">Other bug fixes</h3>
-<p>You can see rest of pull requests with bug fixes on <a href="https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.5+label%3A%22Bug+fix%22">Github</a>.</p>
+<p>You can see the rest of pull requests with bug fixes on <a href="https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.5+label%3A%22Bug+fix%22">Github</a>.</p>
 <h2 id="improvements">Improvements</h2>
 <p>See some of the most notable improvements that have been implemented in this version.</p>
 <h3 id="set-most-used-tax-rule-group-to-new-products-automatically">Set most used tax rule group to new products automatically</h3>
@@ -226,7 +226,7 @@
 <h3 id="do-not-autofill-passwords-for-smtp-configuration">Do not autofill passwords for SMTP configuration</h3>
 <p><a href="https://github.com/ShaiMagal">@ShaiMagal</a> has made a small but important improvement to the back office. The password field for the e-mail SMTP configuration is no longer autofilled. This is a small change, but can prevent mistakes and improve security. You can check the <a href="https://github.com/PrestaShop/PrestaShop/pull/35058">pull request #35058</a> to see the details.</p>
 <h3 id="improved-cart-view-page-in-back-office">Improved cart view page in back office</h3>
-<p>Last but not least, the cart view page in the back office has been improved. Thanks to <a href="https://github.com/PrestaShop/PrestaShop/pull/34682">@Hlavtox</a>, we have a few changes, his pull request:</p>
+<p>Last but not least, the cart view page in the back office has been improved. Thanks to <a href="https://github.com/PrestaShop/PrestaShop/pull/34682">@Hlavtox</a>, we have a few changes. His pull request:</p>
 <ul>
 <li>Introduced a shareable link for carts pending order placement.</li>
 <li>Incorporated display of cart creation date on the cart page.</li>
@@ -257,7 +257,7 @@
 
       <div class="col-md-4">
         <ul class="details">
-          <li class="hidden-md hidden-lg">Mar 1, 2024</li>
+          <li class="hidden-md hidden-lg">Mar 19, 2024</li>
 
           
             <li>

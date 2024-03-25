@@ -16,7 +16,7 @@ tags:
 - "8.1.x"
 ---
 
-Another patch for PrestaShop 8.1 is available. This time without security updates but instead with some interesting improvements, as well as a number of bug fixes. In this article we'll lean into them because there's plenty to write about!
+Another patch for PrestaShop 8.1 is available. This release contains interesting improvements as well as a number of bug fixes. In this article, we’ll lean into them because there’s plenty to write about!
 
 ![8.1.5 is available!](/assets/images/2024/03/banner_8.1.5_1534x424.jpg)
 

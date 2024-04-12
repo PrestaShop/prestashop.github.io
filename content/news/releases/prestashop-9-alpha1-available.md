@@ -16,15 +16,15 @@ tags:
 
 Here it is. The first public alpha of PrestaShop 9 is available. We decided it was time to share with you the first results of our work on PrestaShop 9.
 
-We're excited to announce the alpha release of PrestaShop 9! Please note that this version is in the early stages of development. To achieve a stable release, we anticipate several months of further work. As we are prior to the feature-freeze phase, the features and content of PrestaShop 9 are subject to change.
+Please note that this version is in the early stages of development. To achieve a stable release, we anticipate several months of further work. As we are prior to the feature-freeze phase, the features and content of PrestaShop 9 are subject to change.
 
 [screenshot]
+
+The next big PrestaShop version delivers many new features, but as a major release, it also means many changes that are not backward compatible. We want to give you, the community, a chance to anticipate any changes you need to implement in your solutions to make them compatible with the new version. Equally important, we want to gather feedback from you about new features, improvements, and other changes that are part of this version.
 
 {{% notice type="danger" title="This is not a production-ready release" icon="warning" %}}
 Be aware that this alpha version is not yet complete or stable enough for production environments.
 {{% /notice %}}
-
-The next big PrestaShop version delivers many new features, but as a major release, it also means many changes that are not backward compatible. We want to give you, the community, a chance to anticipate any changes you need to implement in your solutions to make them compatible with the new version. Equally important, we want to gather feedback from you about new features, improvements, and other changes that are part of this version.
 
 This article does not fully summarize the changes in the new version. Still, it should give you a better understanding of what to expect from the new release and what to test, especially if you are developing new solutions in the PrestaShop ecosystem.
 

@@ -8,13 +8,13 @@ icon: icon-video-camera
 tags: [contribute, event, community, live-update]
 ---
 
-Meet the PrestaShop Performance project, which aims to enhance loading times and reliability of PrestaShop solution by discovering and tackling key performance issues.
+Participants were able to know about the PrestaShop Performance project, which aims to enhance loading times and reliability of the PrestaShop solution by discovering and tackling key performance issues.
 
 ## PrestaShop Live Update - April 2024
 
-In our fourth live update, our special guest, QA Performance Specialist at PrestaShop, [Elyes Naouar](https://github.com/elyesnaouar) introduced the community to the PrestaShop Performance project. This initiative is focused on identifying, measuring, and addressing performance issues to improve the loading times and reliability of the PrestaShop solution.
+In our fourth Live Update, our special guest, [Elyes Naouar](https://github.com/elyesnaouar), QA Performance Specialist at PrestaShop, introduced the community to the PrestaShop Performance project. This initiative is focused on identifying, measuring, and addressing performance issues to improve the loading times and reliability of the PrestaShop solution.
 
-You can download the slides from Elyes presentation [here](https://drive.google.com/file/d/1pyPUetjxdRyKXdIuqA7SHjaWJkWw5Zii/view?usp=sharing).
+You can download the slides from Elyes' presentation [here](https://drive.google.com/file/d/1pyPUetjxdRyKXdIuqA7SHjaWJkWw5Zii/view?usp=sharing).
 
 ## The session's agenda was as follows:
 

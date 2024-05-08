@@ -9,7 +9,7 @@ icon: icon-laptop
 tags: [news, theme, "8.x"]
 ---
 
-{{% notice type="warning" title="April 2024: Hummingbird situation" icon="megpahone" %}}
+{{% notice type="warning" title="April 2024: Hummingbird situation" icon="megaphone" %}}
 In 2023, it was decided that Hummingbird should be implemented in PrestaShop 9. While we would love to see Hummingbird in PrestaShop 9, integrating it as a default theme comes at a price. It impacts the entire ecosystem, and we are currently evaluating the feasibility of this move. We will keep you updated on the progress.
 
 You can take an active part in developing this new theme by [joining the discussion on Slack](https://www.prestashop-project.org/slack/), testing the theme, and submitting improvements. Make sure to check out the [theme's repository on GitHub](https://github.com/PrestaShop/hummingbird).

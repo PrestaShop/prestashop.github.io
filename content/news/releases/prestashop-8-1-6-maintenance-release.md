@@ -2,11 +2,11 @@
 layout: post
 title:  PrestaShop 8.1.6 Is Available
 subtitle: Security patch for version 8.1 of PrestaShop
-date: 2024-05-07 09:00:00
+date: 2024-05-14 09:00:00
 authors: [ PrestaShop ]
-image: /assets/images/2024/05/banner_8.1.6_1200x627.png
-opengraph_image: /assets/images/2024/05/banner_8.1.6_1200x627.png
-twitter_image: /assets/images/2024/05/banner_8.1.6_1024x512.png
+#image: /assets/images/2024/05/banner_8.1.6_1200x627.png
+#opengraph_image: /assets/images/2024/05/banner_8.1.6_1200x627.png
+#twitter_image: /assets/images/2024/05/banner_8.1.6_1024x512.png
 icon: icon-leaf
 tags:
 - version
@@ -19,7 +19,7 @@ tags:
 
 A new patch version for PrestaShop 8.1 is now available. This maintenance release fixes 2 security issues.
 
-![8.1.6 is available!](/assets/images/2024/05/banner_8.1.6_1534x424.png)
+<!-- ![8.1.6 is available!](/assets/images/2024/05/banner_8.1.6_1534x424.png) -->
 
 The security patch for version 8.1 of PrestaShop is now available. It is recommended that you upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to create a backup before. You can upgrade to the latest version using the [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade/releases/). There are no database changes in this release.
 

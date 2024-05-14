@@ -29,8 +29,8 @@ You can see a full changelog on the [release page](https://github.com/PrestaShop
 
 Two security issue were fixed in this release. If you want to learn more about the details of these issues you can visit the PrestaShop Security Advisories pages:
 
-- [XSS via customer contact form in FO, through file upload](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-45vm-3j38-7p78)
-- [Anonymous customer can download other customers's invoices](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-7pjr-2rgh-fc5g)
+- [XSS via customer contact form in FO, through file upload](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-45vm-3j38-7p78) - thank you to Ayoub Ait Elmokhtar for the report
+- [Anonymous customer can download other customers's invoices](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-7pjr-2rgh-fc5g) - thank you to Samuel Bodevin for the report
 
 ## Download
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 9 Alpha 1 is Available!"
 subtitle: "We need your help! Check the new major PrestaShop version."
-date:   2024-04-12
+date:   2024-05-15
 authors: [ PrestaShop ]
 icon: icon-gift
 tags:
@@ -38,6 +38,7 @@ Most notable changes in PrestaShop 9 are:
 * Completely new API based on [API Platform](https://api-platform.com/).
 * Ability to include Symfony container in the front office.
 * Refactored back office layout, which is now rendered fully by Symfony.
+* Login page in the back office has been migrated to Symfony
 * Smaller and larger improvements throughout the system, which we will announce in the coming months.
 
 ### Symfony 6.4
@@ -48,7 +49,7 @@ Upgrading to Symfony 6.4 (from version 4.4 used in PrestaShop 8.1) is a signific
 
 ### PHP 8.1, 8.2 and 8.3
 
-At the time of writing this article, PHP 8.1 is no longer supported when it comes to security patches. We know the ecosystem needs time to adapt all solutions, therefore the decision to support this version. However, we have made sure that PrestaShop 9 will also be compatible with PHP 8.3, the latest version released in November, 2023.
+At the time of writing this article, 8.2, and 8.3 are actively supported or, like PHP 8.1, receive security fixes. We have ensured that PrestaShop 9 is compatible with these three PHP versions, allowing you to choose the one that best suits your needs.
 
 [screenshot]
 
@@ -60,11 +61,15 @@ This is an important milestone for the entire PrestaShop ecosystem. A modern, fl
 
 ### Symfony in front office
 
-TBC
+Symfony container is now available in the front office. This is a significant change that will allow developers to use Symfony components in the front office. For the moment this feature is still behind a feature flag, but we encourage you to test it and provide feedback.
 
 ###  Symfony layout in back office
 
 TBC
+
+### Login page in the back office has been migrated to Symfony
+
+As part of the Symfony migration, the login page in the back office has been migrated to Symfony. This is a quite a significant which will allow us to improve the security of the login process and make it more flexible in the future. There are still some improvements to be made, but the first step has been taken. If you want to know more about the changes, you can read the [pull request](https://github.com/PrestaShop/PrestaShop/pull/35983) and follow EPIC [Migrate Login backoffice page and authentication system to Symfony](https://github.com/PrestaShop/PrestaShop/issues/36001).
 
 –
 
@@ -103,16 +108,19 @@ Front office:
 Documentation:
 * We will work to document all significant changes to the software to make it easier for developers to adapt their solutions to PrestaShop 9.
 
-## FAQ - last update on X of April, 2024
+## FAQ - last update on 15th of May, 2024
 
-*Can I upgrade to PrestaShop 9 Alpha?*
+**Can I upgrade to PrestaShop 9 Alpha?**
 
 No, the autoupgrade module is not ready for upgrading from previous versions to PrestaShop 9. We’ll update it later this year.
 
-*Can I upgrade from PrestaShop 9 Alpha or Beta to the final PrestaShop version when ready?*
+**Can I upgrade from PrestaShop 9 Alpha or Beta to the final PrestaShop version when ready?**
 
 No, it’s never been possible, and there are no plans to implement this possibility in the upgrade module.
 
+**Do you plan to make Hummingbird default theme in PrestaShop 9?**
+
+While the Hummingbird theme is a great step forward, we are still considering the best approach to the theme in PrestaShop 9. We will probably add it as a secondary theme, but the decision has not been made yet. We will keep you updated on this matter.
 
 ## Get involved
 

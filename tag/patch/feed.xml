@@ -6,7 +6,17 @@
     <description>Recent content in patch on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Mar 2024 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1.6 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-6-maintenance-release/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-6-maintenance-release/</guid>
+      <description>A new patch version for PrestaShop 8.1 is now available. This maintenance release fixes 2 security issues.
+The security patch for version 8.1 of PrestaShop is now available. It is recommended that you upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to create a backup before. You can upgrade to the latest version using the 1-Click Upgrade module. There are no database changes in this release.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1.5 Is Available</title>
       <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-5-maintenance-release/</link>
@@ -157,16 +167,6 @@ In this patch, you can find more than 30 bug fixes and one performance improveme
       <description>It has been decided to deliver a new maintenance release for 1.7.8.x branch. Please note that this will be the last regular 1.7.8.x patch version, as the branch now enters security-only maintenance phase. Next regular patches will now target 8.0.x branch.
 This release fixes some bugs and regressions as well as a security fix.
 We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.8.7</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-7-maintenance-release/</link>
-      <pubDate>Mon, 25 Jul 2022 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-7-maintenance-release/</guid>
-      <description>PrestaShop version 1.7.8.7 is now available. This release fixes one important security issue, read this article for more information.
-The maintainer team has been made aware that malicious actors are exploiting a combination of known and unknown security vulnerabilities to inject malicious code in PrestaShop websites, allowing them to execute arbitrary instructions, and potentially steal customer’s payment information. You can read our dedicated article to find out what’s happening, how the attack works and what to do to keep your shop safe.</description>
     </item>
     
   </channel>

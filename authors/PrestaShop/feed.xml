@@ -6,7 +6,17 @@
     <description>Recent content in PrestaShop on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Mar 2024 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1.6 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-6-maintenance-release/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-6-maintenance-release/</guid>
+      <description>A new patch version for PrestaShop 8.1 is now available. This maintenance release fixes 2 security issues.
+The security patch for version 8.1 of PrestaShop is now available. It is recommended that you upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to create a backup before. You can upgrade to the latest version using the 1-Click Upgrade module. There are no database changes in this release.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1.5 Is Available</title>
       <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-5-maintenance-release/</link>
@@ -155,17 +165,6 @@ We&amp;rsquo;re on the brink of releasing the final 8.1 version. This time, the 
       <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-4-maintenance-release/</guid>
       <description>The fourth patch version for PrestaShop 8 is now available to download! This release contains a few security fixes, so we recommend you to upgrade your shop as soon as possible.
 PrestaShop 8.0.4 is now available. This time there are three security fixes thanks to reports from community researchers. This release also contains a few bug fixes besides security fixes. The incorrect translation of pagination labels in products and combinations lists has been fixed.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 1.7.8.9 is available</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-1-7-8-9-maintenance-release/</link>
-      <pubDate>Tue, 25 Apr 2023 16:20:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-1-7-8-9-maintenance-release/</guid>
-      <description>Security patch for PrestaShop 1.7 is now available.
-As part of the extended support policy for PrestaShop 1.7, which involves taking care of critical and security fixes for 1.7.8.x branch, we are releasing today a new patch for this version. This release fixes a few security issues reported by community researchers and upgrades some third-party libraries to their latest versions to ensure the stability and security of your shop.
-It is recommended to upgrade your shop quickly in order to benefit from these fixes.</description>
     </item>
     
   </channel>

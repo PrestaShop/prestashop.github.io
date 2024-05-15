@@ -6,7 +6,17 @@
     <description>Recent content in security on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Feb 2024 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/security/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/security/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1.6 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-6-maintenance-release/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-6-maintenance-release/</guid>
+      <description>A new patch version for PrestaShop 8.1 is now available. This maintenance release fixes 2 security issues.
+The security patch for version 8.1 of PrestaShop is now available. It is recommended that you upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to create a backup before. You can upgrade to the latest version using the 1-Click Upgrade module. There are no database changes in this release.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1.4 Is Available</title>
       <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-4-maintenance-release/</link>
@@ -158,16 +168,6 @@ Lightning talks &amp;amp; Security technologies After spending the first evening
       <guid>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-5-maintenance-release/</guid>
       <description>A few months ago, the PrestaShop core team has decided to make a forthright patch release process and deliver patch versions on a more regular basis, every time it’s needed. So here we are, 6 weeks after the release of 1.7.6.4, PrestaShop 1.7.6.5 is now available!
 This maintenance release is a bit special as it does not only fix regressions found on version 1.7.6.0 to 1.7.6.4, but it also has put a focus on fixing many security issues, from 1.</description>
-    </item>
-    
-    <item>
-      <title>Release Of PrestaShop 1.7.6.4</title>
-      <link>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-4-maintenance-release/</link>
-      <pubDate>Thu, 05 Mar 2020 12:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-4-maintenance-release/</guid>
-      <description>PrestaShop 1.7.6.4 is finally available! A critical security issue and regressions found on the previous 1.7.6 versions have been fixed. Upgrading your shop is highly recommended.
-This maintenance release fixes 9 issues reported from versions 1.7.6.0 to 1.7.6.3. Since this version fixes a security problem, we strongly encourage you to upgrade your shop as soon as possible. We suggest upgrading your shop quickly to benefit from these fixes. Of course, don’t forget to backup before.</description>
     </item>
     
   </channel>

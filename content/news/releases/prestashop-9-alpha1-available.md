@@ -102,17 +102,20 @@ If you plan to test the new API, it's important to look at the tutorial explaini
 We are continuing our efforts to reach a stable version, with several key areas of development still in progress. Here is a brief outline of the crucial elements needed to achieve the release of the final version:
 
 Core:
-* work on the new API continues to lay a great foundation for the future
-* 
+* Work on the new API continues to lay a great foundation for the future.
 
 Back office:
-* Symfony login page requires further improvements to be fully functional
+* Symfony login page requires further improvements to be fully functional.
 
 Front office:
 * The decision regarding the Hummingbird theme and its presence in PrestaShop 9 has not yet been made.
 
 Documentation:
 * We will work to document all significant changes to the software to make it easier for developers to adapt their solutions to PrestaShop 9.
+* We will also prepare a guide on how to use the new API effectively and explain the basics of the new solution.
+
+Upgrade path:
+* We are working on the upgrade path from PrestaShop 8 to PrestaShop 9. This is a significant task that requires a lot of work, but the plan is to have it ready later this year.
 
 ## FAQ - last update on 15th of May, 2024
 

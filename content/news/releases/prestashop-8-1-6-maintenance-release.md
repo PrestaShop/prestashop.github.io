@@ -25,6 +25,10 @@ The security patch for version 8.1 of PrestaShop is now available. It is recomme
 
 You can see a full changelog on the [release page](https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.6).
 
+## Important note
+
+This patch introduced backward incompatible change: files uploaded into the `upload` folder can't be served directly by Apache anymore, you will need to use the `admin_common_secured_file_image_reader` route as specified in the [developer documentation](https://devdocs.prestashop-project.org/8/modules/sample-modules/read_uploaded_files_securely/).
+
 ## Security fixes
 
 Two security issues were fixed in this release. If you want to learn more about the details of these issues you can visit the PrestaShop Security Advisories pages:

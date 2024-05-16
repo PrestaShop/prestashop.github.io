@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>PrestaShop 8.1.6 Is Available</title>
-    <link href="/style.css?1715766256" rel="stylesheet">
+    <link href="/style.css?1715867360" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -202,6 +202,8 @@
 <p><img src="/assets/images/2024/05/image816banner2000x553.jpeg" alt="8.1.6 is available!"></p>
 <p>The security patch for version 8.1 of PrestaShop is now available. It is recommended that you upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to create a backup before. You can upgrade to the latest version using the <a href="https://github.com/PrestaShop/autoupgrade/releases/">1-Click Upgrade module</a>. There are no database changes in this release.</p>
 <p>You can see a full changelog on the <a href="https://github.com/PrestaShop/PrestaShop/releases/tag/8.1.6">release page</a>.</p>
+<h2 id="important-note">Important note</h2>
+<p>This patch introduced backward incompatible change: files uploaded into the <code>upload</code> folder can&rsquo;t be served directly by Apache anymore, you will need to use the <code>admin_common_secured_file_image_reader</code> route as specified in the <a href="https://devdocs.prestashop-project.org/8/modules/sample-modules/read_uploaded_files_securely/">developer documentation</a>.</p>
 <h2 id="security-fixes">Security fixes</h2>
 <p>Two security issues were fixed in this release. If you want to learn more about the details of these issues you can visit the PrestaShop Security Advisories pages:</p>
 <ul>

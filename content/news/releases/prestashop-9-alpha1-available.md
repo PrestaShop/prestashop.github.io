@@ -129,7 +129,7 @@ No, it’s never been possible, and there are no plans to implement this possibi
 
 **Do you plan to make Hummingbird default theme in PrestaShop 9?**
 
-While the Hummingbird theme is a great step forward, we are still considering the best approach to the theme in PrestaShop 9. We will probably add it as a secondary theme, but the decision has not been made yet. We will keep you updated on this matter.
+While the [Hummingbird theme](https://github.com/PrestaShop/hummingbird) is a great step forward, we are still considering the best approach to the theme in PrestaShop 9. We will probably add it as a secondary theme, but the decision has not been made yet. We will keep you updated on this matter.
 
 ## Get involved
 

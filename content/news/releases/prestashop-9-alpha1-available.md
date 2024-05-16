@@ -71,7 +71,10 @@ Symfony container is now available in the front office. This is a significant ch
 
 ###  Symfony layout in back office
 
-TBC
+In PrestaShop 9.0, the back office layout is now fully managed by Symfony and Twig components. This makes the code cleaner and easier to maintain.
+We prioritized backward compatibility, so your modules should work as usual. However, we need the community's help to test and spot any issues.
+
+We will share more information about the changes in the back office layout in the developer documentation.
 
 ### Login page in the back office has been migrated to Symfony
 
@@ -115,13 +118,13 @@ Documentation:
 * We will also prepare a guide on how to use the new API effectively and explain the basics of the new solution.
 
 Upgrade path:
-* We are working on the upgrade path from PrestaShop 8 to PrestaShop 9. This is a significant task that requires a lot of work, but the plan is to have it ready later this year.
+* You can use the "Local archive" method in the 1-Click Upgrade module to try upgrading to PrestaShop 9 Alpha. There might be some issues, so please be cautious. We plan to test the upgrade path in the coming weeks.
 
 ## FAQ - last update on 15th of May, 2024
 
 **Can I upgrade to PrestaShop 9 Alpha?**
 
-No, the autoupgrade module is not ready for upgrading from previous versions to PrestaShop 9. We’ll update it later this year.
+You can try upgrading using "Local archive" method in the 1-Click Upgrade module. However, please remember that this version is not stable and should not be used in production environments. We haven't tested the upgrade path yet, so it may not work as expected.
 
 **Can I upgrade from PrestaShop 9 Alpha or Beta to the final PrestaShop version when ready?**
 

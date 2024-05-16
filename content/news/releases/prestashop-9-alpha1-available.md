@@ -71,7 +71,7 @@ Symfony container is now available in the front office. This is a significant ch
 
 ###  Symfony layout in back office
 
-In PrestaShop 9.0, the back office layout is now fully managed by Symfony and Twig components. This makes the code cleaner and easier to maintain.
+In PrestaShop 9.0, the back office layout is now fully managed by Symfony and [Twig components](https://symfony.com/bundles/ux-twig-component/current/index.html). This makes the code cleaner and easier to maintain.
 We prioritized backward compatibility, so your modules should work as usual. However, we need the community's help to test and spot any issues.
 
 We will share more information about the changes in the back office layout in the developer documentation.

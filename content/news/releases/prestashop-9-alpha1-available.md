@@ -45,23 +45,29 @@ Most notable changes in PrestaShop 9 are:
 
 Upgrading to Symfony 6.4 (from version 4.4 used in PrestaShop 8.1) is a significant step for the project, to be up to date with the PHP ecosystem. Symfony 6.4 is the latest available long-term-support version, which provides security updates until November 2027. This is also great news for developers, who will be able to enjoy all the benefits of the latest version of this framework.
 
-[screenshot]
+![PrestaShop 9 is based on Symfony 6.4](/assets/images/2024/05/symfony64.jpeg)
+<p class="text-center mt-0"><small>Screenshot from Symfony debug profiler in PrestaShop back office</small></p>
 
 ### PHP 8.1, 8.2 and 8.3
 
-At the time of writing this article, 8.2, and 8.3 are actively supported or, like PHP 8.1, receive security fixes. We have ensured that PrestaShop 9 is compatible with these three PHP versions, allowing you to choose the one that best suits your needs.
+At the time of writing this article, PHP in versions 8.2, and 8.3 are actively supported or, like PHP 8.1, receive security fixes. We have ensured that PrestaShop 9 is compatible with these three PHP versions, allowing you to choose the one that best suits your needs.
 
-[screenshot]
+![PrestaShop 9 supports PHP 8.1, 8.2 and 8.3](/assets/images/2024/05/phpsupport.jpeg)
+<p class="text-center"><small>Actively supported PHP versions</small></p>
 
 ### New API
 
 This is an important milestone for the entire PrestaShop ecosystem. A modern, flexible API that the community has been asking for over the past years. The first version of the new API will be in PrestaShop 9. You can [watch a presentation](https://youtu.be/7CQ2Sg-v4XQ?t=1219) by [@jolelievre](https://github.com/jolelievre), who talked about the basics of the new solution, explained the foundations behind it and showed how to use it.
 
-[screenshot]
+If you want to test the new API, make sure to follow article written by [@kpodemski](https://github.com/kpodemski) - [How to use the new API in PrestaShop 9](#). This tutorial will guide you through the process of using the new API, explaining how to authorize to the new API, create a new resource, and how to work with the API in general.
+
+![New API in PrestaShop 9](/assets/images/2024/05/adminapi.jpeg)
 
 ### Symfony in front office
 
 Symfony container is now available in the front office. This is a significant change that will allow developers to use Symfony components in the front office. For the moment this feature is still behind a feature flag, but we encourage you to test it and provide feedback.
+
+![Symfony container in front office](/assets/images/2024/05/sfcontainer.jpeg)
 
 ###  Symfony layout in back office
 
@@ -73,7 +79,7 @@ As part of the Symfony migration, the login page in the back office has been mig
 
 –
 
-Developers working on PrestaShop solutions should pay close attention to the first two items. We also invite you to experiment with our new API, which marks an important step towards PrestaShop's development into a headless platform.
+Developers working on PrestaShop solutions should pay close attention to the first two items. We also invite you to experiment with our new API.
 
 Although we are in the process of preparing documentation on the notable changes for the community, you can start by familiarizing yourself with the migration guides from PHP and release notes from Symfony:
 
@@ -100,7 +106,7 @@ Core:
 * 
 
 Back office:
-* TBD
+* Symfony login page requires further improvements to be fully functional
 
 Front office:
 * The decision regarding the Hummingbird theme and its presence in PrestaShop 9 has not yet been made.

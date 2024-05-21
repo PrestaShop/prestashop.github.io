@@ -382,4 +382,4 @@ If you are motivated to contribute to the development of the new API, we encoura
 
 ### Let's keep in touch on Slack
 
-If you have any questions or feedback, come [talk with us on Slack](https://www.prestashop-project.org/slack/).
+If you have any questions or feedback, come [talk with us on Slack](https://www.prestashop-project.org/slack/). We are always happy to help you with any issues you may have. You can join the `#dev-core` channel to discuss the new API in PrestaShop 9.

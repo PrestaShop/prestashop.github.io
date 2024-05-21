@@ -12,9 +12,9 @@ A new feature in PrestaShop 9 provides the community a new, secure, modern, and 
 
 ## New API in PrestaShop 9
 
-As [it was announced last year](https://youtu.be/jzKBQM3fprY?t=1341), one of the most significant projects for PrestaShop 9 has been the start of work on a new API that will eventually replace the currently available [Web Services](https://devdocs.prestashop-project.org/8/webservice/). Current web services are an outdated solution based on ObjectModel (which is expected to eventually disappear from PrestaShop in the next few years) and, apart from other flaws, are also complicated to maintain (no tests, spaghetti code).
+As [it was announced last year](https://youtu.be/jzKBQM3fprY?t=1341), one of the most significant projects for PrestaShop 9 has been the start of work on a new API that will eventually replace the currently available [Web Services](https://devdocs.prestashop-project.org/8/webservice/). Current web services are an outdated solution based on ObjectModel (which is expected to disappear from PrestaShop in the next few years eventually) and, apart from other flaws, are also complicated to maintain (no tests, spaghetti code).
 
-The new solution is based on the popular [API Platform](https://api-platform.com/) version 3 and fully takes advantage of its benefits. Using a solution popular in the Symfony ecosystem should not only make it easier for developers to work with the API but also allow them to use all the complementary tools available in it.
+The new solution is based on the popular [API Platform](https://api-platform.com/) version 3 and fully takes advantage of its benefits. Using a solution popular in the Symfony ecosystem should make it easier for developers to work with the API and allow them to use all the complementary tools available in it.
 
 The new API utilizes the OAuth authorization protocol and CQRS commands for its endpoints. CQRS-based endpoints are more domain-oriented and enhance business logic management compared to traditional web services connected to ObjectModel. This approach allows us to better separate concerns, align API operations closely with business requirements, and improve maintainability and scalability.
 
@@ -26,11 +26,11 @@ The video linked above is outdated in a few places. We plan to release extensive
 
 ## Setting up PrestaShop 9
 
-To test the new API, you need to have PrestaShop 9 installed and available. [PrestaShop 9 Alpha 1 is now available](#), which means you can follow the normal installation process as with any other version of PrestaShop. You are also free to use a [local environment](https://devdocs.prestashop-project.org/9/basics/installation/) to work with PrestaShop and the API. This will be similar to creating a working version of PrestaShop locally from sources available on GitHub or a downloaded ZIP.
+To test the new API, you need to have PrestaShop 9 installed and available. [PrestaShop 9 Alpha 1 is now available](#), which means you can follow the normal installation process as with any other version of PrestaShop. To work with PrestaShop and the API, you can also use a [local environment](https://devdocs.prestashop-project.org/9/basics/installation/). This will be similar to creating a working version of PrestaShop locally from sources available on GitHub or a downloaded ZIP.
 
 Keep in mind that PrestaShop 9.0 requires a minimal PHP version of 8.1. You can check the [system requirements](https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/) page in the developer documentation.
 
-You may want to disable checking for HTTPS with TLSv1.2. You can do that by going to Advanced Parameters -> Admin AP -> Configuration and disabling "Force security in debug mode" option. If you don't see this option make sure to enable *Debug mode* first in Advanced Parameters -> Performance.
+You may want to disable checking for HTTPS with TLSv1.2. To do that, go to Advanced Parameters -> Admin Api -> Configuration and disable the "Force security in debug mode" option. If you don't see this option, make sure to enable Debug mode first in Advanced Parameters -> Performance.
 
 {{% notice warning %}}
 You can disable the forced secured protocol in the configuration but **only** with the debug mode enabled, production mode is strictly secured and you need HTTPS to connect to the API.
@@ -40,7 +40,7 @@ You can disable the forced secured protocol in the configuration but **only** wi
 
 ## Ouath2 terminology
 
-Before I continue with the tutorial, below you will find a helpful table that should help you understand some of the terms used in this article.
+Before I continue with the tutorial, I have included a table below that will help you understand some of the terms used in this article.
 
 ![PrestaShop 9 API terminology](/assets/images/2024/05/api/terminology.png)
 
@@ -48,13 +48,13 @@ Now, let's proceed to the next step.
 
 ## Create API client
 
-Let's create our first application. You can add as many applications to API as you want. In the real-world scenario, you probably want to create separate applications for each service you want to integrate. You will probably have clients like “My ERP integration”, “Some marketing automation tool client”, etc.
+Let's create our first application. You can add as many applications to API as you want. In the real-world scenario, you probably want to create separate applications for each service you want to integrate. You will probably have clients like "My ERP integration", "Some marketing automation tool client", etc. 
 
-To add a new API client, navigate to Advanced Parameters -> Admin API page. Here you can see a list of all API clients, you can add a new one by clicking the “Add new API Client” button.
+To add a new API client, navigate to Advanced Parameters -> Admin API page. Here you can see a list of all API clients, you can add a new one by clicking the "Add new API Client" button.
 
 ![PrestaShop 9 API Client](/assets/images/2024/05/api/api_add_new_client1.jpeg)
 
-If you want to add a new client you need to provide information about it. In the form below you have to provide all the necessary information about the client. After you do that, you can click the "Generate client secret and save" button. This will generate a client secret for you and save the client in the database. **It's important to save the client secret because you won't be able to see it again.**
+If you want to add a new client, you must provide information about it. In the form below, you must provide all the necessary information about the client. After that, you can click the "Generate client secret and save" button. This will generate a client secret for you and save the client in the database. **It's important to save the client secret because you won't be able to see it again.**
 
 ![PrestaShop 9 Form for adding a new API client](/assets/images/2024/05/api/api_add_new_client2.jpeg)
 <p class="text-center text-muted small">Form for adding a new API client</p>
@@ -70,19 +70,20 @@ If you want to add a new client you need to provide information about it. In the
 As part of API extensibility, you can add new scopes to the API. This will allow you to create more granular permissions for your clients. You can find [example module here](https://github.com/PrestaShop/example-modules/tree/master/api_module) and in [ps_apiresources](https://github.com/PrestaShop/ps_apiresources) repository.
 {{% /notice %}}
 
-After you save the client, you will see the client secret, but you won't be able to see it again. You can only see it once when you generate it. It's important to save it because you will need it to authenticate your client.
+After you save the client, you will see the client secret, but you won't be able to see it again. You can only see it once when you generate it. It's important to save it because you need it to authenticate your client.
 
 ![PrestaShop 9 API client secret](/assets/images/2024/05/api/api_add_new_client3.jpeg)
 <p class="text-center text-muted small">Remember to copy secret for your API Client</p>
 
 ## Client credentials grant
 
-Now that you created your first API client, you can test the connection to the API. You can do this by sending a GET request to the `/admin-api` endpoint. You need to provide the client ID and client secret you generated earlier. You can use Postman or any other tool that allows you to make HTTP requests.
+Now that you created your first API client, you can test the connection to the API. You can send a GET request to the `/admin-api` endpoint. You need to provide the client ID and client secret you generated earlier. You can use Postman or any other tool to make HTTP requests.
 
-{{% notice %}}You have number of tools to debug APIs. You can use Postman, [curl](https://curl.se/), or any other tool (even open source like [Insomnia](https://insomnia.rest/)) that allows you to make HTTP requests. In this tutorial, I will use [Postman API client](https://www.postman.com/api-platform/api-client/), so that you can easily test the API with a user-friendly interface.
+{{% notice %}}
+You have many tools to debug APIs. You can use Postman, [curl](https://curl.se/), or any other tool (even open source like [Insomnia](https://insomnia.rest/)) that allows you to make HTTP requests. In this tutorial, I will use [Postman API client](https://www.postman.com/api-platform/api-client/), so that you can quickly test the API with a user-friendly interface.
 {{% /notice %}}
 
-First we are going to do is to get the access token. To do that you need to send a POST request to the `/admin-api/access_token` endpoint. You need to provide the following parameters:
+The first thing we are going to do is get the access token. You need to send a POST request to the `/admin-api/access_token` endpoint to do that. You need to provide the following parameters:
 
 * **client_id** - the ID of the client you created
 * **client_secret** - the secret of the client you created
@@ -108,14 +109,14 @@ Example request using Postman:
 <p class="text-center text-muted small">Screenshot from Postman where we retrieve access token for our client</p>
 
 {{% notice %}}
-As you can see on the screenshot, I am using project variables in Postman. This way you can easily switch between different environments (like development, staging, production) and you don't have to change the request data (URL, client_id, etc.) every time you switch the environment.
+As you can see in the screenshot, I am using project variables in Postman. This way, you can easily switch between different environments (like development, staging, and production) and don't have to change the request data (URL, client_id, etc.) every time you switch environments.
 {{% /notice %}}
 
-Now, after you send the request, you should receive a response with the access token. If you receive information saying "Use HTTPS response", it means that you need to use HTTPS to connect to the API. You can disable this check in the PrestaShop back office as mentioned earlier.
+After you send the request, you should receive a response with the access token. If you receive information saying "Use HTTPS response", it means that you need to use HTTPS to connect to the API. As mentioned earlier, you can turn off this check in the PrestaShop back office.
 
 If you still have problems with the connection, make sure that the API is enabled in the PrestaShop back office. You can check this in the Advanced Parameters -> Admin API -> Configuration page.
 
-If everything goes well, the response should look like similar to this:
+If everything goes well, the response should look similar to this:
 
 ```json
 {
@@ -127,11 +128,11 @@ If everything goes well, the response should look like similar to this:
 
 You can now use the access token to authenticate your client in the next requests. You can use it by providing the `Authorization` header with the value `Bearer YOUR_ACCESS_TOKEN`.
 
-Remember that the access token is valid for a limited time. After it expires, you need to get a new one. It is also crucial to provide scopes that your client can use. If you don't provide the correct scopes, you won't be able to access some endpoints.
+Remember that the access token is valid for a limited time. After it expires, you need to get a new one. It is also crucial to provide scopes that your client can use. If you don't give the correct scopes, you won't be able to access some endpoints.
 
 ## Information about the API Client
 
-Now that we have the access token, we can use it to get information about the API client. To do that, you need to send a GET request to the `/admin-api/api-client/info` endpoint. You need to provide the access token in the `Authorization` header.
+Now that we have the access token, we can get information about the API client. To do that, you need to send a GET request to the `/admin-api/api-client/info` endpoint and provide the access token in the `Authorization` header.
 
 Example request using curl:
 
@@ -172,9 +173,9 @@ If everything goes well, you should receive a response with information about th
 
 Congrats! You have successfully authenticated your client and retrieved information about it. You can now use the access token to access other endpoints in the API.
 
-Please note, that list of scopes may vary depending on the client you created. It is also important to note that the list of scopes here is the list of all scopes the client can use, not the list of scopes the client is using at the moment, with the generated access token.
+Please note that the list of scopes may vary depending on the client you created. It is also important to note that the list of scopes here is the list of all scopes the client can use, not the list of scopes the client is using at the moment, with the generated access token.
 
-If you request for an endpoint without the required scope, you will receive an error message. For example, if you try to access the `/admin-api/products` endpoint without the `product_read` scope, you will receive the following response:
+If you request an endpoint without the required scope, you will receive an error message. For example, if you try to access the `/admin-api/products` endpoint without the `product_read` scope, you will receive the following response:
 
 ```json
 {
@@ -191,7 +192,7 @@ If you request for an endpoint without the required scope, you will receive an e
 
 Now that you have a better understanding of how to authenticate your client and retrieve information about it, you can try to retrieve other resources from the API. You can use the access token you generated earlier to authenticate your client.
 
-In the following example we will try to retrieve, and save, information about user groups. To do that, you need to send a `GET` request to the `/admin-api/customers/group/{customerGroupId}` endpoint, where `{customerGroupId}` is the ID of the user group you want to retrieve. You need to provide the access token in the `Authorization` header.
+In the following example, we will try retrieving and saving user group information. To do that, you need to send a `GET` request to the `/admin-api/customers/group/{customerGroupId}` endpoint, where `{customerGroupId}` is the ID of the user group you want to retrieve. You need to provide the access token in the `Authorization` header.
 
 ```bash
 curl --location 'http://yourdomain.test/admin-api/customers/group/1' \
@@ -216,7 +217,7 @@ If everything goes well, you should receive a response with information about th
 }
 ```
 
-Notice, that you can have access to the localized names of the user group and all other relevant information.
+Notice that you can access the localized names of the user group and all other relevant information.
 
 If you access the endpoint with the wrong ID, you will receive an error message. For example, if you try to access the `/admin-api/customers/group/999999` endpoint, you will receive the following response:
 
@@ -231,7 +232,7 @@ If you access the endpoint with the wrong ID, you will receive an error message.
 }
 ```
 
-The endpoint will return 404 status code and an error message saying that the group was not found.
+The endpoint will return a 404 status code and an error message saying the group was not found.
 
 {{% notice success %}}
 If you search for a list of all available resources, you can use the http://yourdomain.test/admin-api/docs.html URL to access the API documentation. The documentation is generated automatically and provides information about all available endpoints, request methods, and parameters.
@@ -241,7 +242,7 @@ If you search for a list of all available resources, you can use the http://your
 
 Now that you know how to retrieve information about a single resource, you can try to edit it. To do that, you need to send a `PUT` request to the `/admin-api/customers/group/{customerGroupId}` endpoint, where `{customerGroupId}` is the ID of the user group you want to edit. You need to provide the access token in the `Authorization` header and the data you want to change in the request body.
 
-You can send following JSON data to change the user group name:
+You can send the following JSON data to change the user group name:
 
 ```json
 {
@@ -284,13 +285,13 @@ If everything goes well, you should receive a response with information about th
 }
 ```
 
-Notice, that the user group name has been changed. You can now use the same method to edit other resources in the API. Let's now proceed to the next step.
+Notice that the user group name has been changed. You can now use the same method to edit other resources in the API. Let's now proceed to the next step.
 
 ## Adding a new resource
 
-Now that you know how to retrieve and edit information about a single resource, you can try to add a new resource. To do that, you need to send a `POST` request to the `/admin-api/customers/group` endpoint. You need to provide the access token in the `Authorization` header and the data you want to add in the request body.
+Now that you know how to retrieve and edit information about a single resource, you can try to add a new resource. To do that, you must send a `POST` request to the `/admin-api/customers/group` endpoint. You need to provide the access token in the `Authorization` header and the data you want to add to the request body.
 
-You can send following JSON data to add a new user group:
+You can send the following JSON data to add a new user group:
 
 ```json
 {
@@ -327,7 +328,7 @@ curl --location 'http://yourdomain.test/admin-api/customers/group' \
 }'
 ```
 
-This time you should receive a response with information about the newly created user group. The response should look like this:
+This time, you should receive a response with information about the newly created user group. The response should look like this:
 
 ```json
 {
@@ -364,21 +365,21 @@ curl --location --request DELETE 'http://yourdomain.test/admin-api/customers/gro
 
 ## Importing API collection to your API client
 
-Thanks to the automatically generated documentation, you can easily import the API collection into Postman or other API client of your choice. You can find the collection in the `http://yourdomain.test/admin-api/docs.json` URL. The collection is available in the OpenAPI format, which is compatible with Postman and other API clients.
+Thanks to the automatically generated documentation, you can easily import the API collection into Postman or another API client of your choice. You can find the collection in the `http://yourdomain.test/admin-api/docs.json` URL. The collection is available in the OpenAPI format, compatible with Postman and other API clients.
 
 ## Extending API
 
 The new API in PrestaShop 9 is designed to be extensible. You can add new endpoints, scopes, and other features to the API. We plan to release extensive developer documentation for the API soon. In the meantime, you can check the [example module](#) and the [ps_apiresources](#).
 
 {{% notice %}}
-The new API in PrestaShop 9 is still in development. We encourage you to test the new API and provide feedback to help us improve it further.
+The new API in PrestaShop 9 is still under development. We encourage you to test it and provide feedback to help us improve it further.
 {{% /notice %}}
 
 ## Get involved
 
 The new API in PrestaShop 9 is a significant step forward for the platform. It will provide developers with a modern, secure, and extensible API that will allow them to create new integrations and services. We encourage you to test the new API and provide feedback to help us improve it further.
 
-If you are motivated to contribute to the development of the new API, we encourage you to join the PrestaShop community. You can find more information about contributing to PrestaShop on the [Contribute to PrestaShop](https://devdocs.prestashop-project.org/9/contribute/) page.
+If you are motivated to contribute to developing the new API, we encourage you to join the PrestaShop community. More information about contributing to PrestaShop is on the [Contribute to PrestaShop](https://devdocs.prestashop-project.org/9/contribute/) page.
 
 ### Let's keep in touch on Slack
 

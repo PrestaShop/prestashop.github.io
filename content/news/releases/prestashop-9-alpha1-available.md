@@ -5,6 +5,9 @@ subtitle: "We need your help! Check the new major PrestaShop version."
 date:   2024-05-15
 authors: [ PrestaShop ]
 icon: icon-gift
+image: /assets/images/2024/05/v9alpha1/blog_1534x424_black.jpeg
+opengraph_image: /assets/images/2024/05/v9alpha1/LK-FB_1200 x 627_black.jpeg
+twitter_image: /assets/images/2024/05/v9alpha1/TW_1024 x 512_black.jpeg
 tags:
 - 9.0
 - version
@@ -18,7 +21,7 @@ Here it is. The first public alpha of PrestaShop 9 is available. We decided it w
 
 Please note that this version is in the early stages of development. To achieve a stable release, we anticipate several months of further work. As we are prior to the feature-freeze phase, the features and content of PrestaShop 9 are subject to change.
 
-[screenshot]
+![PrestaShop 9 Alpha 1 is Available!](/assets/images/2024/05/v9alpha1/blog_1534x424_black.jpeg)
 
 The next big PrestaShop version delivers many new features, but as a major release, it also means many changes that are not backward compatible. We want to give you, the community, a chance to anticipate any changes you need to implement in your solutions to make them compatible with the new version. Equally important, we want to gather feedback from you about new features, improvements, and other changes that are part of this version.
 
@@ -69,13 +72,13 @@ Symfony container is now available in the front office. This is a significant ch
 
 ![Symfony container in front office](/assets/images/2024/05/sfcontainer.jpeg)
 
-###  Symfony layout in back office
+### Symfony layout in back office
 
 In PrestaShop 9.0, the back office layout is now fully managed by Symfony and [Twig components](https://symfony.com/bundles/ux-twig-component/current/index.html). This makes the code cleaner and easier to maintain. We prioritized backward compatibility, so your modules should work as usual. However, we need the community's help to test and spot any issues. We will share more information about these changes in the developer documentation.
 
 ### Login page in the back office has been migrated to Symfony
 
-As part of the Symfony migration, the login page in the back office has been migrated to Symfony. This is a quite a significant which will allow us to improve the security of the login process and make it more flexible in the future. There are still some improvements to be made, but the first step has been taken. If you want to know more about the changes, you can read the [pull request](https://github.com/PrestaShop/PrestaShop/pull/35983) and follow EPIC [Migrate Login backoffice page and authentication system to Symfony](https://github.com/PrestaShop/PrestaShop/issues/36001).
+As part of the Symfony migration, the login page in the back office has been migrated to Symfony. This is a quite a significant change which will allow us to improve the security of the login process and make it more flexible in the future. There are still some improvements to be made, but the first step has been taken. If you want to know more about the changes, you can read the [pull request](https://github.com/PrestaShop/PrestaShop/pull/35983) and follow EPIC [Migrate Login backoffice page and authentication system to Symfony](https://github.com/PrestaShop/PrestaShop/issues/36001).
 
 –
 

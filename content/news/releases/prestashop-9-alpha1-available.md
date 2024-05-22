@@ -6,8 +6,8 @@ date:   2024-05-15
 authors: [ PrestaShop ]
 icon: icon-gift
 image: /assets/images/2024/05/v9alpha1/blog_1534x424_black.jpeg
-opengraph_image: /assets/images/2024/05/v9alpha1/LK-FB_1200 x 627_black.jpeg
-twitter_image: /assets/images/2024/05/v9alpha1/TW_1024 x 512_black.jpeg
+opengraph_image: /assets/images/2024/05/v9alpha1/LK-FB_1200x627_black.jpeg
+twitter_image: /assets/images/2024/05/v9alpha1/TW_1024x512_black.jpeg
 tags:
 - 9.0
 - version
@@ -118,13 +118,15 @@ Documentation:
 * We will also prepare a guide on how to use the new API effectively and explain the basics of the new solution.
 
 Upgrade path:
-* You can use the "Local archive" method in the 1-Click Upgrade module to try upgrading to PrestaShop 9 Alpha. There might be some issues, so please be cautious. We plan to test the upgrade path in the coming weeks.
+* You can use the "Local archive" method in the [autoupgrade](https://github.com/PrestaShop/autoupgrade) to try upgrading to PrestaShop 9 Alpha. There might be some issues, so please be cautious. We plan to test the upgrade path in the coming weeks.
+
+This list is not exhaustive, and we will continue to work on other areas of the software to ensure a stable release.
 
 ## FAQ - last update on 15th of May, 2024
 
 **Can I upgrade to PrestaShop 9 Alpha?**
 
-You can try upgrading using "Local archive" method in the 1-Click Upgrade module. However, please remember that this version is not stable and should not be used in production environments. We haven't tested the upgrade path yet, so it may not work as expected.
+You can try upgrading using "Local archive" method in the [autoupgrade](https://github.com/PrestaShop/autoupgrade). However, please remember that this version is not stable and should not be used in production environments. We haven't tested the upgrade path yet, so it may not work as expected.
 
 **Can I upgrade from PrestaShop 9 Alpha or Beta to the final PrestaShop version when ready?**
 

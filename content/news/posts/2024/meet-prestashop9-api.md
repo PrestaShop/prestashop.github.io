@@ -12,7 +12,7 @@ A new feature in PrestaShop 9 provides the community a new, secure, modern, and 
 
 ## New API in PrestaShop 9
 
-As [it was announced last year](https://youtu.be/jzKBQM3fprY?t=1341), one of the most significant projects for PrestaShop 9 has been the start of work on a new API that will eventually replace the currently available [Web Services](https://devdocs.prestashop-project.org/8/webservice/). Current web services are an outdated solution based on ObjectModel (which is expected to disappear from PrestaShop in the next few years eventually) and, apart from other flaws, are also complicated to maintain (no tests, spaghetti code).
+As [it was announced last year](https://youtu.be/jzKBQM3fprY?t=1341), one of the most significant projects for PrestaShop 9 has been the start of work on a new API that will eventually replace the currently available [Web Services](https://devdocs.prestashop-project.org/8/webservice/). Current web services are an outdated solution based on ObjectModel - which is expected to disappear from PrestaShop in the next few years eventually - and, apart from other flaws, are also complicated to maintain (no tests, spaghetti code).
 
 The new solution is based on the popular [API Platform](https://api-platform.com/) version 3 and fully takes advantage of its benefits. Using a solution popular in the Symfony ecosystem should make it easier for developers to work with the API and allow them to use all the complementary tools available in it.
 
@@ -33,7 +33,7 @@ Keep in mind that PrestaShop 9.0 requires a minimal PHP version of 8.1. You can 
 You may want to disable checking for HTTPS with TLSv1.2. To do that, go to Advanced Parameters -> Admin Api -> Configuration and disable the "Force security in debug mode" option. If you don't see this option, make sure to enable Debug mode first in Advanced Parameters -> Performance.
 
 {{% notice warning %}}
-You can disable the forced secured protocol in the configuration but **only** with the debug mode enabled, production mode is strictly secured and you need HTTPS to connect to the API.
+You can disable the forced secured protocol in the configuration but **only** with the debug mode enabled. Production mode is strictly secured and you need HTTPS to connect to the API.
 {{% /notice %}}
 
 ![PrestaShop 9 API Configuration](/assets/images/2024/05/api/api_ssl_configuration.jpeg)
@@ -48,7 +48,7 @@ Now, let's proceed to the next step.
 
 ## Create API client
 
-Let's create our first application. You can add as many applications to API as you want. In the real-world scenario, you probably want to create separate applications for each service you want to integrate. You will probably have clients like "My ERP integration", "Some marketing automation tool client", etc. 
+Let's create our first application. You can add as many applications to the API as you want. In the real-world scenario, you probably want to create separate applications for each service you want to integrate. You will probably have clients like "My ERP integration", "Some marketing automation tool client", etc. 
 
 To add a new API client, navigate to Advanced Parameters -> Admin API page. Here you can see a list of all API clients, you can add a new one by clicking the "Add new API Client" button.
 
@@ -59,15 +59,15 @@ If you want to add a new client, you must provide information about it. In the f
 ![PrestaShop 9 Form for adding a new API client](/assets/images/2024/05/api/api_add_new_client2.jpeg)
 <p class="text-center text-muted small">Form for adding a new API client</p>
 
-* **Client name** - the name of the client, it can be anything you want. It's just for your reference.
-* **Client ID** - the ID of the client, it's a unique identifier for the client. It should be written without spaces or special characters.
-* **Description** - a description of the client, it can be anything you want. It's just for your reference.
+* **Client name** - the name of the client: it can be anything you want. It's just for your reference.
+* **Client ID** - the ID of the client, which is a unique identifier for the client. It should be written without spaces or special characters.
+* **Description** - a description of the client: it can be anything you want. It's just for your reference.
 * **Lifetime** - the lifetime of the client. It's the time after which the client access token will expire. In seconds.
 * **Enabled** - if the client is enabled or not. If it's not enabled, the client won't be able to use the API.
-* **Scopes** - the scopes the client can use. You can enable multiple scopes. Each time you add a new scope, you will have to adjust client's settings.
+* **Scopes** - the scopes the client can use. You can enable multiple scopes. Each time you add a new scope, you will have to adjust the client's settings.
 
 {{% notice %}}
-As part of API extensibility, you can add new scopes to the API. This will allow you to create more granular permissions for your clients. You can find [example module here](https://github.com/PrestaShop/example-modules/tree/master/api_module) and in [ps_apiresources](https://github.com/PrestaShop/ps_apiresources) repository.
+As part of API extensibility, you can add new scopes to the API. This will allow you to create more granular permissions for your clients. You can find an [example module here](https://github.com/PrestaShop/example-modules/tree/master/api_module) and in [ps_apiresources](https://github.com/PrestaShop/ps_apiresources) repository.
 {{% /notice %}}
 
 After you save the client, you will see the client secret, but you won't be able to see it again. You can only see it once when you generate it. It's important to save it because you need it to authenticate your client.
@@ -88,7 +88,7 @@ The first thing we are going to do is get the access token. You need to send a P
 * **client_id** - the ID of the client you created
 * **client_secret** - the secret of the client you created
 * **grant_type** - the type of grant you want to use. In this case, it's `client_credentials`
-* **scope** - the scopes you want to use. You can provide multiple scopes. In this case, we are going to use `api_client_read`, `api_client_write`, `customer_group_read`, `customer_group_write`
+* **scope** - the scopes you want to use. You can provide multiple scopes. In this case, we are going to use `api_client_read`, `api_client_write`, `customer_group_read`, `customer_group_write`.
 
 Example request using curl:
 

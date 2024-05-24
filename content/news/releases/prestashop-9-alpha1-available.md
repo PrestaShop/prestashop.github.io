@@ -39,21 +39,21 @@ Most notable changes in PrestaShop 9 are:
 * Symfony framework update to version [6.4](https://symfony.com/releases/6.4), marked as LTS (long-term-support) version.
 * Minimum compatible PHP version bumped to PHP 8.1 as well as support for PHP 8.2 and 8.3.
 * Completely new API based on [API Platform](https://api-platform.com/).
-* Ability to include Symfony container in the front office.
+* Ability to include a Symfony container in the front office.
 * Refactored back office layout, which is now rendered fully by Symfony.
-* Login page in the back office has been migrated to Symfony
+* Login page in the back office has been migrated to Symfony.
 * Smaller and larger improvements throughout the system, which we will announce in the coming months.
 
 ### Symfony 6.4
 
-Upgrading to Symfony 6.4 (from version 4.4 used in PrestaShop 8.1) is a significant step for the project, to be up to date with the PHP ecosystem. Symfony 6.4 is the latest available long-term-support version, which provides security updates until November 2027. This is also great news for developers, who will be able to enjoy all the benefits of the latest version of this framework.
+Upgrading to Symfony 6.4 (compared to version 4.4 used in PrestaShop 8.1) is a significant step for the project, to be up to date with the PHP ecosystem. Symfony 6.4 is the latest available long-term-support version, which provides security updates until November 2027. This is also great news for developers, who will be able to enjoy all the benefits of the latest version of this framework.
 
 ![PrestaShop 9 is based on Symfony 6.4](/assets/images/2024/05/symfony64.jpeg)
 <p class="text-center mt-0"><small>Screenshot from Symfony debug profiler in PrestaShop back office</small></p>
 
 ### PHP 8.1, 8.2 and 8.3
 
-At the time of writing this article, PHP in versions 8.2, and 8.3 are actively supported or, like PHP 8.1, receive security fixes. We have ensured that PrestaShop 9 is compatible with these three PHP versions, allowing you to choose the one that best suits your needs.
+At the time of writing this article, PHP in versions 8.2 and 8.3 are actively supported or, like PHP 8.1, receive security fixes. We have ensured that PrestaShop 9 is compatible with these three PHP versions, allowing you to choose the one that best suits your needs.
 
 ![PrestaShop 9 supports PHP 8.1, 8.2 and 8.3](/assets/images/2024/05/phpsupport.jpeg)
 <p class="text-center"><small>Actively supported PHP versions</small></p>
@@ -62,13 +62,13 @@ At the time of writing this article, PHP in versions 8.2, and 8.3 are actively s
 
 This is an important milestone for the entire PrestaShop ecosystem. A modern, flexible API that the community has been asking for over the past years. The first version of the new API will be in PrestaShop 9. You can [watch a presentation](https://youtu.be/7CQ2Sg-v4XQ?t=1219) by [@jolelievre](https://github.com/jolelievre), who talked about the basics of the new solution, explained the foundations behind it and showed how to use it.
 
-If you want to test the new API, make sure to follow article written by [@kpodemski](https://github.com/kpodemski) - [How to use the new API in PrestaShop 9](#). This tutorial will guide you through the process of using the new API, explaining how to authorize to the new API, create a new resource, and how to work with the API in general.
+If you want to test the new API, make sure to follow the article written by [@kpodemski](https://github.com/kpodemski) - [How to use the new API in PrestaShop 9](#). This tutorial will guide you through the process of using the new API, explaining how to authorize the new API, create a new resource, and how to work with the API in general.
 
 ![New API in PrestaShop 9](/assets/images/2024/05/adminapi.jpeg)
 
 ### Symfony in front office
 
-Symfony container is now available in the front office. This is a significant change that will allow developers to use Symfony components in the front office. For the moment this feature is still behind a feature flag, but we encourage you to test it and provide feedback.
+The Symfony container is now available in the front office. This is a significant change that will allow developers to use Symfony components in the front office. For the moment, this feature is still behind a feature flag, but we encourage you to test it and provide feedback.
 
 ![Symfony container in front office](/assets/images/2024/05/sfcontainer.jpeg)
 
@@ -78,7 +78,7 @@ In PrestaShop 9.0, the back office layout is now fully managed by Symfony and [T
 
 ### Login page in the back office has been migrated to Symfony
 
-As part of the Symfony migration, the login page in the back office has been migrated to Symfony. This is a quite a significant change which will allow us to improve the security of the login process and make it more flexible in the future. There are still some improvements to be made, but the first step has been taken. If you want to know more about the changes, you can read the [pull request](https://github.com/PrestaShop/PrestaShop/pull/35983) and follow EPIC [Migrate Login backoffice page and authentication system to Symfony](https://github.com/PrestaShop/PrestaShop/issues/36001).
+As part of the Symfony migration, the login page in the back office has been migrated to Symfony. This is quite a significant change which will allow us to improve the security of the login process and make it more flexible in the future. There are still some improvements to be made, but the first step has been taken. If you want to know more about the changes, you can read the [pull request](https://github.com/PrestaShop/PrestaShop/pull/35983) and follow the EPIC [Migrate Login backoffice page and authentication system to Symfony](https://github.com/PrestaShop/PrestaShop/issues/36001).
 
 –
 
@@ -126,13 +126,13 @@ This list is not exhaustive, and we will continue to work on other areas of the 
 
 **Can I upgrade to PrestaShop 9 Alpha?**
 
-You can try upgrading using "Local archive" method in the [autoupgrade](https://github.com/PrestaShop/autoupgrade). However, please remember that this version is not stable and should not be used in production environments. We haven't tested the upgrade path yet, so it may not work as expected.
+You can try upgrading using the "Local archive" method in the [autoupgrade](https://github.com/PrestaShop/autoupgrade). However, please remember that this version is not stable and should not be used in production environments. We haven't tested the upgrade path yet, so it may not work as expected.
 
 **Can I upgrade from PrestaShop 9 Alpha or Beta to the final PrestaShop version when ready?**
 
-No, it’s never been possible, and there are no plans to implement this possibility in the upgrade module.
+No, it has never been possible, and there are no plans to implement this possibility in the upgrade module.
 
-**Do you plan to make Hummingbird default theme in PrestaShop 9?**
+**Do you plan to make Hummingbird the default theme in PrestaShop 9?**
 
 While the [Hummingbird theme](https://github.com/PrestaShop/hummingbird) is a great step forward, we are still considering the best approach to the theme in PrestaShop 9. We will probably add it as a secondary theme, but the decision has not been made yet. We will keep you updated on this matter.
 
@@ -141,7 +141,7 @@ While the [Hummingbird theme](https://github.com/PrestaShop/hummingbird) is a gr
 It's a great time to [get involved](https://www.prestashop-project.org/get-involved/). One of the main goals of this release is to discuss the new version openly with you. We would like your feedback on PrestaShop 9.
 
 * If you found a bug, [report it to us](https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&labels=Bug%2CNew&projects=&template=1_bug_report.yml).
-* If you are not sure if the software behavior is a bug, have questions or other concerns, [open a discussion here](https://github.com/PrestaShop/PrestaShop/discussions/new?category=q-a)
+* If you are not sure if the software behavior is a bug, have questions or other concerns, [open a discussion here](https://github.com/PrestaShop/PrestaShop/discussions/new?category=q-a).
 * We are also available on [Slack](https://www.prestashop-project.org/slack/).
 
-We believe that together we can make PrestaShop 9 a great release that we can consider stable later this year.
+We believe that together we can make PrestaShop 9 a great release, which would be considered stable later this year.

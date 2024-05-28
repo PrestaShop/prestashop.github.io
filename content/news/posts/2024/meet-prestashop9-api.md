@@ -77,11 +77,7 @@ After you save the client, you will see the client secret, but you won't be able
 
 ## Client credentials grant
 
-Now that you created your first API client, you can test the connection to the API. You can send a GET request to the `/admin-api` endpoint. You need to provide the client ID and client secret you generated earlier. You can use Postman or any other tool to make HTTP requests.
-
-{{% notice %}}
-You have many tools to debug APIs. You can use Postman, [curl](https://curl.se/), or any other tool (even open source like [Insomnia](https://insomnia.rest/)) that allows you to make HTTP requests. In this tutorial, I will use [Postman API client](https://www.postman.com/api-platform/api-client/), so that you can quickly test the API with a user-friendly interface.
-{{% /notice %}}
+Now that you created your first API client, you can perform connection to the API. You can use Postman or any other tool to make HTTP requests.
 
 The first thing we are going to do is get the access token. You need to send a POST request to the `/admin-api/access_token` endpoint to do that. You need to provide the following parameters:
 
@@ -89,6 +85,10 @@ The first thing we are going to do is get the access token. You need to send a P
 * **client_secret** - the secret of the client you created
 * **grant_type** - the type of grant you want to use. In this case, it's `client_credentials`
 * **scope** - the scopes you want to use. You can provide multiple scopes. In this case, we are going to use `api_client_read`, `api_client_write`, `customer_group_read`, `customer_group_write`.
+
+{{% notice %}}
+You have many tools to debug APIs. You can use Postman, [curl](https://curl.se/), or any other tool (like [Insomnia](https://insomnia.rest/)) that allows you to make HTTP requests. In this tutorial, I will use [Postman API client](https://www.postman.com/api-platform/api-client/), so that you can quickly test the API with a user-friendly interface.
+{{% /notice %}}
 
 Example request using curl:
 
@@ -109,7 +109,7 @@ Example request using Postman:
 <p class="text-center text-muted small">Screenshot from Postman where we retrieve access token for our client</p>
 
 {{% notice %}}
-As you can see in the screenshot, I am using project variables in Postman. This way, you can easily switch between different environments (like development, staging, and production) and don't have to change the request data (URL, client_id, etc.) every time you switch environments.
+As you can see in the screenshot, I am using project variables in Postman. This way, you can easily switch between different environments (like development, staging, and production) and don't have to change the request data (URL, client_id, etc.) every time you switch environments. You also won't find Authorization header in the request because it's generated automatically by Postman, thanks to ["Inherit authorization from parent"](https://learning.postman.com/docs/sending-requests/authorization/specifying-authorization-details/#inherit-authorization) option.
 {{% /notice %}}
 
 After you send the request, you should receive a response with the access token. If you receive information saying "Use HTTPS response", it means that you need to use HTTPS to connect to the API. As mentioned earlier, you can turn off this check in the PrestaShop back office.
@@ -129,6 +129,14 @@ If everything goes well, the response should look similar to this:
 You can now use the access token to authenticate your client in the next requests. You can use it by providing the `Authorization` header with the value `Bearer YOUR_ACCESS_TOKEN`.
 
 Remember that the access token is valid for a limited time. After it expires, you need to get a new one. It is also crucial to provide scopes that your client can use. If you don't give the correct scopes, you won't be able to access some endpoints.
+
+Access token is a JWT token. JWT stands for JSON Web Token that contains information about the client and the scopes it can use. It's signed with a secret key, so you can be sure that the token is valid and hasn't been tampered with. You can go to [jwt.io](https://jwt.io/) to see the token's content after you decode it.
+
+### Authorization server
+
+The authorization server is responsible for issuing access tokens to the client after successfully authenticating the client. It is also responsible for validating the client's credentials and providing the client with the necessary scopes.
+
+In the new PrestaShop API implementation, the authorization server is built into the API itself, but it is modular and can be replaced with any other OAuth2 server implementation. One example is [Keycloak](https://www.keycloak.org/), which is a popular open-source identity and access management solution. You can use Keycloak to manage your clients and their access to the API, and here's an [example module](https://github.com/PrestaShop/keycloak_connector_demo) that shows how to integrate Keycloak with PrestaShop.
 
 ## Information about the API Client
 
@@ -175,7 +183,7 @@ Congrats! You have successfully authenticated your client and retrieved informat
 
 Please note that the list of scopes may vary depending on the client you created. It is also important to note that the list of scopes here is the list of all scopes the client can use, not the list of scopes the client is using at the moment, with the generated access token.
 
-If you request an endpoint without the required scope, you will receive an error message. For example, if you try to access the `/admin-api/products` endpoint without the `product_read` scope, you will receive the following response:
+If you request an endpoint without the required scope, you will receive an error message. For example, if you try to access the `/admin-api/products` endpoint without the `product_read` scope in your access token, you will receive the following response:
 
 ```json
 {
@@ -237,6 +245,8 @@ The endpoint will return a 404 status code and an error message saying the group
 {{% notice success %}}
 If you search for a list of all available resources, you can use the http://yourdomain.test/admin-api/docs.html URL to access the API documentation. The documentation is generated automatically and provides information about all available endpoints, request methods, and parameters.
 {{% /notice %}}
+
+![PrestaShop 9 API documentation](/assets/images/2024/05/api/api_docs.png)
 
 ## Editing a single resource
 

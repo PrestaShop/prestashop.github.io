@@ -30,6 +30,6 @@ The single Zip will be hosted on [PrestaShop.com](https://prestashop.com/prestas
 
 **Open Source is and will remain in PrestaShop's DNA.**
 
-We understand that questions might arise from this change. While we do not have all the answers today, we are committed to transparency and would like to address your questions during our upcoming [Live Update session on YouTube](https://www.youtube.com/watch?v=QeVNLHY1Onc&ab_channel=PrestaShopProject) on June 12, 2024, at [4 pm (Paris time)](https://time.is/1600_12_Jun_2024_in_Paris).
+We understand that questions might arise from this change. While we do not have all the answers today, we are committed to transparency and would like to address your questions during our upcoming [Live Update session on YouTube](https://www.youtube.com/watch?v=QeVNLHY1Onc&ab_channel=PrestaShopProject) on June 19, 2024, at [4 pm (Paris time)](https://time.is/1600_19_Jun_2024_in_Paris).
 
 If you have questions, feel free to let us know in advance [using this form](https://forms.gle/FWazuZnXBtFPauFZ7). We will do our best to answer them during the Q&A session.

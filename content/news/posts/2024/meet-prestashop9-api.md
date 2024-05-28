@@ -48,7 +48,7 @@ Now, let's proceed to the next step.
 
 ## Create API client
 
-Let's create our first application. You can add as many applications to the API as you want. In the real-world scenario, you probably want to create separate applications for each service you want to integrate. You will probably have clients like "My ERP integration", "Some marketing automation tool client", etc. 
+Let's create our first client. You can add as many clients to the API as you want. In the real-world scenario, you probably want to create separate client for each service you want to integrate. You will probably have clients like "My ERP integration", "Some marketing automation tool client", etc. 
 
 To add a new API client, navigate to Advanced Parameters -> Admin API page. Here you can see a list of all API clients, you can add a new one by clicking the "Add new API Client" button.
 

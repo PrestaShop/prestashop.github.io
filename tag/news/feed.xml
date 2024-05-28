@@ -6,7 +6,17 @@
     <description>Recent content in news on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Feb 2024 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 May 2024 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simplifying releases with a single Zip</title>
+      <link>https://build.prestashop-project.org/news/2024/new-zip-distribution-channel/</link>
+      <pubDate>Tue, 28 May 2024 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/new-zip-distribution-channel/</guid>
+      <description>As we continue to evolve and adapt to the global e-commerce landscape, we are implementing changes to streamline our operations and enhance our project’s trajectory. In 2022, we aimed to make PrestaShop a company-neutral open source project. Today, while keeping the project neutral, we are changing how we distribute the PrestaShop solution.
+One release, one Zip As you know, versions are distributed as two separate Zips, one on GitHub and a later one on prestashop.</description>
+    </item>
+    
     <item>
       <title>PSDevCon 2023: Do you speak PrestaShop?</title>
       <link>https://build.prestashop-project.org/news/2024/do-you-speak-prestashop/</link>
@@ -147,15 +157,6 @@ Feature freeze is now effective Therefore, as of today, the feature freeze is no
       <guid>https://build.prestashop-project.org/news/2022/new-theme-announce/</guid>
       <description>April 2024: Hummingbird situation In 2023, it was decided that Hummingbird should be implemented in PrestaShop 9. While we would love to see Hummingbird in PrestaShop 9, integrating it as a default theme comes at a price. It impacts the entire ecosystem, and we are currently evaluating the feasibility of this move. We will keep you updated on the progress.
 You can take an active part in developing this new theme by joining the discussion on Slack, testing the theme, and submitting improvements.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop beyond 1.7</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/</link>
-      <pubDate>Tue, 14 Dec 2021 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/</guid>
-      <description>Five years ago, PrestaShop 1.7 was released to the world, introducing Symfony, the Classic theme and child theme features, interface improvements, and so much more. With each one of the eight minor versions that followed, 1.7 kept on growing both in features and stability. Its maturity is recognized by its success: with over 170,000 live shops detected at the time of writing, it’s the most popular PrestaShop version used in production shops on the web.</description>
     </item>
     
   </channel>

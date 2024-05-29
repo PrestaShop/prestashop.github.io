@@ -37,4 +37,4 @@ If you have questions, feel free to let us know in advance [using this form](htt
 
 **Important note:**
 
-This article has been updated on May 29, 2024, to precise that the single Zip distribution will be only for the upcoming PrestaShop 9.0 release and future versions.
+This article has been updated on May 29, 2024, to precise that the single Zip distribution will be only for the upcoming PrestaShop 9.0 release and future versions. It is not retroactive to previous versions, e.g., PrestaShop 8.1.

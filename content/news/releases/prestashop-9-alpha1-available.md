@@ -128,7 +128,7 @@ Core:
 * Work on the new API continues to lay a great foundation for the future.
 
 Back office:
-* Symfony login page requires further improvements to be fully functional.
+* Symfony login page still requires some improvements to be fully functional. You can track the progress in the [EPIC](https://github.com/PrestaShop/PrestaShop/issues/36001).
 
 Front office:
 * The decision regarding the Hummingbird theme and its presence in PrestaShop 9 has not yet been made.

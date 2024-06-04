@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 9 Alpha 1 is Available!"
 subtitle: "We need your help! Check the new major PrestaShop version."
-date:   2024-05-15
+date:   2024-06-04
 authors: [ PrestaShop ]
 icon: icon-gift
 image: /assets/images/2024/05/v9alpha1/blog_1534x424_black.jpeg
@@ -94,9 +94,29 @@ Although we are in the process of preparing documentation on the notable changes
 
 ## How to test PrestaShop 9
 
-Click the button below to download the new version. The installation process remains the same as in previous versions. Please note: this version requires PHP 8.1 or higher.
+To build ZIP file with PrestaShop 9 Alpha 1, you can use [PrestaShop Release Creation](https://github.com/PrestaShop/PrestaShop/tree/develop/tools/build) tool.
 
-{{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/9.0.0-alpha1" >}}Download PrestaShop 9 Alpha 1 now!{{< /cta >}}
+### Requirements
+
+To build PrestaShop 9 Alpha, you need to have a fully working environment, either a server or Docker, that meets the following requirements:
+
+* PHP 8.1 (PHP 8.2 and 8.3 are also supported)
+* Composer 2
+* Node.js 16 and NPM 8
+
+You can check all system requirements in the [documentation](https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/).
+
+### Create a new PrestaShop 9 distribution
+
+1. Clone the PrestaShop repository and switch to the "alpha-1" tag or download the ZIP file with sources from the [release page]().
+2. Run `php tools/build/CreateRelease.php --version="9.0.0"` in the root directory of the PrestaShop source code.
+3. The script will create a ZIP file with the PrestaShop 9 Alpha 1 distribution in the `build` directory.
+
+### Install PrestaShop 9
+
+The installation process remains the same as in previous versions.
+
+{{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/9.0.0-alpha1" >}}Download PrestaShop 9 Alpha 1 sources now!{{< /cta >}}
 
 If you plan to test the new API, it's important to look at the tutorial explaining how to use it properly. [This tutorial](#) will give you a clear idea of how to work with the API effectively, ensuring you can get the most out of your testing.
 
@@ -122,7 +142,7 @@ Upgrade path:
 
 This list is not exhaustive, and we will continue to work on other areas of the software to ensure a stable release.
 
-## FAQ - last update on 15th of May, 2024
+## FAQ - last update on 4th of June, 2024
 
 **Can I upgrade to PrestaShop 9 Alpha?**
 

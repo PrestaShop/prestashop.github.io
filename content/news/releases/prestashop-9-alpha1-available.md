@@ -82,7 +82,7 @@ As part of the Symfony migration, the login page in the back office has been mig
 
 Full changelog is available in the [release notes](https://github.com/PrestaShop/PrestaShop/releases/tag/9.0.0-alpha.1).
 
-–
+<hr>
 
 Developers working on PrestaShop solutions should pay close attention to the first two items. We also invite you to experiment with our new API.
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 9 Alpha 1 is Available!"
 subtitle: "We need your help! Check the new major PrestaShop version."
-date:   2024-06-04
+date:   2024-06-06 09:00:00
 authors: [ PrestaShop ]
 icon: icon-gift
 image: /assets/images/2024/05/v9alpha1/blog_1534x424_black.jpeg

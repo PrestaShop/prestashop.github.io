@@ -26,9 +26,9 @@ The video linked above is outdated in a few places. We plan to release extensive
 
 ## Setting up PrestaShop 9
 
-To test the new API, you need to have PrestaShop 9 installed and available. [PrestaShop 9 Alpha 1 is now available](#), which means you can follow the normal installation process as with any other version of PrestaShop. To work with PrestaShop and the API, you can also use a [local environment](https://devdocs.prestashop-project.org/9/basics/installation/). This will be similar to creating a working version of PrestaShop locally from sources available on GitHub or a downloaded ZIP.
+To test the new API, you need to have PrestaShop 9 installed. [PrestaShop 9 Alpha 1 is now available](https://github.com/PrestaShop/PrestaShop/tree/9.0.0-alpha.1), which means you can test the API today. Please note that for PrestaShop 9 Alpha 1, you need to build the installation ZIP from the source code.
 
-Keep in mind that PrestaShop 9.0 requires a minimal PHP version of 8.1. You can check the [system requirements](https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/) page in the developer documentation.
+PrestaShop 9.0 requires a minimal PHP version of 8.1. You can check the [system requirements](https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/) page in the developer documentation.
 
 You may want to disable checking for HTTPS with TLSv1.2. To do that, go to Advanced Parameters -> Admin Api -> Configuration and disable the "Force security in debug mode" option. If you don't see this option, make sure to enable Debug mode first in Advanced Parameters -> Performance.
 

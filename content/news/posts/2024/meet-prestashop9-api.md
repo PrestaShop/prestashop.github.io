@@ -2,7 +2,7 @@
 layout: post
 title:  "Meet the new API Platform-based API in PrestaShop 9"
 subtitle: "Read how to use the new API in PrestaShop 9"
-date:   2024-05-21
+date:   2024-06-06 10:00:00
 authors:  [ kpodemski ]
 icon: icon-laptop
 tags: [api, tutorial, "9.0", "9.x", "9.0"]

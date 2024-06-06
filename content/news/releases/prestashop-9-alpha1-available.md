@@ -80,6 +80,8 @@ In PrestaShop 9.0, the back office layout is now fully managed by Symfony and [T
 
 As part of the Symfony migration, the login page in the back office has been migrated to Symfony. This is quite a significant change which will allow us to improve the security of the login process and make it more flexible in the future. There are still some improvements to be made, but the first step has been taken. If you want to know more about the changes, you can read the [pull request](https://github.com/PrestaShop/PrestaShop/pull/35983) and follow the EPIC [Migrate Login backoffice page and authentication system to Symfony](https://github.com/PrestaShop/PrestaShop/issues/36001).
 
+Full changelog is available in the [release notes](https://github.com/PrestaShop/PrestaShop/releases/tag/9.0.0-alpha.1).
+
 –
 
 Developers working on PrestaShop solutions should pay close attention to the first two items. We also invite you to experiment with our new API.

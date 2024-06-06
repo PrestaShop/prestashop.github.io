@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Meet the new API Platform-based API in PrestaShop 9</title>
+    <link href="/style.css?1717685830" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Meet the new API Platform-based API in PrestaShop 9" />
+<meta property="og:description" content="A new feature in PrestaShop 9 provides the community a new, secure, modern, and extensible API based on the API Platform. In this article I will show you how to start using it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2024/meet-prestashop9-api/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2024-06-06T10:00:00+02:00" />
+    <meta property="article:modified_time" content="2024-06-06T10:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build-2024.png">
+<meta name="twitter:title" content="Meet the new API Platform-based API in PrestaShop 9"/>
+<meta name="twitter:description" content="Read how to use the new API in PrestaShop 9"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip': false });
+			}
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Meet the new API Platform-based API in PrestaShop 9</h1>
+              
+                <h3 class="post-subtitle">Read how to use the new API in PrestaShop 9</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/kpodemski/">
+        <img class="img-circle" src="https://avatars3.githubusercontent.com/u/2137763?v=3&amp;s=400" alt="Krystian Podemski's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/kpodemski/">Krystian Podemski</a>
+      </div>
+        
+          <div class="author-display-role">Tech Evangelist @ PrestaShop</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jun 6, 2024
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Meet&#43;the&#43;new&#43;API&#43;Platform-based&#43;API&#43;in&#43;PrestaShop&#43;9&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2024%2Fmeet-prestashop9-api%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2024%2Fmeet-prestashop9-api%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>A new feature in PrestaShop 9 provides the community a new, secure, modern, and extensible API based on the API Platform. In this article I will show you how to start using it.</p>
+<h2 id="new-api-in-prestashop-9">New API in PrestaShop 9</h2>
+<p>As <a href="https://youtu.be/jzKBQM3fprY?t=1341">it was announced last year</a>, one of the most significant projects for PrestaShop 9 has been the start of work on a new API that will eventually replace the currently available <a href="https://devdocs.prestashop-project.org/8/webservice/">Web Services</a>. Current web services are an outdated solution based on ObjectModel - which is expected to disappear from PrestaShop in the next few years eventually - and, apart from other flaws, are also complicated to maintain (no tests, spaghetti code).</p>
+<p>The new solution is based on the popular <a href="https://api-platform.com/">API Platform</a> version 3 and fully takes advantage of its benefits. Using a solution popular in the Symfony ecosystem should make it easier for developers to work with the API and allow them to use all the complementary tools available in it.</p>
+<p>The new API utilizes the OAuth authorization protocol and CQRS commands for its endpoints. CQRS-based endpoints are more domain-oriented and enhance business logic management compared to traditional web services connected to ObjectModel. This approach allows us to better separate concerns, align API operations closely with business requirements, and improve maintainability and scalability.</p>
+
+
+
+<div class="alert alert-info"><p>For an in-depth understanding of API implementation in PrestaShop 9, I recommend <a href="https://youtu.be/7CQ2Sg-v4XQ?t=1216">viewing Jonathan Lelievre&rsquo;s presentation</a>. Jonathan is the Tech Lead at PrestaShop, and he offered a comprehensive overview of the new API during the PrestaShop Project Live Update.</p>
+<p>The video linked above is outdated in a few places. We plan to release extensive developer documentation for the API soon.</p>
+
+</div>
+
+<h2 id="setting-up-prestashop-9">Setting up PrestaShop 9</h2>
+<p>To test the new API, you need to have PrestaShop 9 installed. <a href="https://github.com/PrestaShop/PrestaShop/tree/9.0.0-alpha.1">PrestaShop 9 Alpha 1 is now available</a>, which means you can test the API today. Please note that for PrestaShop 9 Alpha 1, you need to build the installation ZIP from the source code.</p>
+<p>PrestaShop 9.0 requires a minimal PHP version of 8.1. You can check the <a href="https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/">system requirements</a> page in the developer documentation.</p>
+<p>You may want to disable checking for HTTPS with TLSv1.2. To do that, go to Advanced Parameters -&gt; Admin Api -&gt; Configuration and disable the &ldquo;Force security in debug mode&rdquo; option. If you don&rsquo;t see this option, make sure to enable Debug mode first in Advanced Parameters -&gt; Performance.</p>
+
+
+
+<div class="alert alert-warning">You can disable the forced secured protocol in the configuration but <strong>only</strong> with the debug mode enabled. Production mode is strictly secured and you need HTTPS to connect to the API.
+</div>
+
+<p><img src="/assets/images/2024/05/api/api_ssl_configuration.jpeg" alt="PrestaShop 9 API Configuration"></p>
+<h2 id="ouath2-terminology">Ouath2 terminology</h2>
+<p>Before I continue with the tutorial, I have included a table below that will help you understand some of the terms used in this article.</p>
+<p><img src="/assets/images/2024/05/api/terminology.png" alt="PrestaShop 9 API terminology"></p>
+<p>Now, let&rsquo;s proceed to the next step.</p>
+<h2 id="create-api-client">Create API client</h2>
+<p>Let&rsquo;s create our first client. You can add as many clients to the API as you want. In the real-world scenario, you probably want to create separate client for each service you want to integrate. You will probably have clients like &ldquo;My ERP integration&rdquo;, &ldquo;Some marketing automation tool client&rdquo;, etc.</p>
+<p>To add a new API client, navigate to Advanced Parameters -&gt; Admin API page. Here you can see a list of all API clients, you can add a new one by clicking the &ldquo;Add new API Client&rdquo; button.</p>
+<p><img src="/assets/images/2024/05/api/api_add_new_client1.jpeg" alt="PrestaShop 9 API Client"></p>
+<p>If you want to add a new client, you must provide information about it. In the form below, you must provide all the necessary information about the client. After that, you can click the &ldquo;Generate client secret and save&rdquo; button. This will generate a client secret for you and save the client in the database. <strong>It&rsquo;s important to save the client secret because you won&rsquo;t be able to see it again.</strong></p>
+<p><img src="/assets/images/2024/05/api/api_add_new_client2.jpeg" alt="PrestaShop 9 Form for adding a new API client"></p>
+<p class="text-center text-muted small">Form for adding a new API client</p>
+<ul>
+<li><strong>Client name</strong> - the name of the client: it can be anything you want. It&rsquo;s just for your reference.</li>
+<li><strong>Client ID</strong> - the ID of the client, which is a unique identifier for the client. It should be written without spaces or special characters.</li>
+<li><strong>Description</strong> - a description of the client: it can be anything you want. It&rsquo;s just for your reference.</li>
+<li><strong>Lifetime</strong> - the lifetime of the client. It&rsquo;s the time after which the client access token will expire. In seconds.</li>
+<li><strong>Enabled</strong> - if the client is enabled or not. If it&rsquo;s not enabled, the client won&rsquo;t be able to use the API.</li>
+<li><strong>Scopes</strong> - the scopes the client can use. You can enable multiple scopes. Each time you add a new scope, you will have to adjust the client&rsquo;s settings.</li>
+</ul>
+
+
+
+<div class="alert alert-info">As part of API extensibility, you can add new scopes to the API. This will allow you to create more granular permissions for your clients. You can find an <a href="https://github.com/PrestaShop/example-modules/tree/master/api_module">example module here</a> and in <a href="https://github.com/PrestaShop/ps_apiresources">ps_apiresources</a> repository.
+</div>
+
+<p>After you save the client, you will see the client secret, but you won&rsquo;t be able to see it again. You can only see it once when you generate it. It&rsquo;s important to save it because you need it to authenticate your client.</p>
+<p><img src="/assets/images/2024/05/api/api_add_new_client3.jpeg" alt="PrestaShop 9 API client secret"></p>
+<p class="text-center text-muted small">Remember to copy secret for your API Client</p>
+<h2 id="client-credentials-grant">Client credentials grant</h2>
+<p>Now that you created your first API client, you can perform connection to the API. You can use Postman or any other tool to make HTTP requests.</p>
+<p>The first thing we are going to do is get the access token. You need to send a POST request to the <code>/admin-api/access_token</code> endpoint to do that. You need to provide the following parameters:</p>
+<ul>
+<li><strong>client_id</strong> - the ID of the client you created</li>
+<li><strong>client_secret</strong> - the secret of the client you created</li>
+<li><strong>grant_type</strong> - the type of grant you want to use. In this case, it&rsquo;s <code>client_credentials</code></li>
+<li><strong>scope</strong> - the scopes you want to use. You can provide multiple scopes. In this case, we are going to use <code>api_client_read</code>, <code>api_client_write</code>, <code>customer_group_read</code>, <code>customer_group_write</code>.</li>
+</ul>
+
+
+
+<div class="alert alert-info">You have many tools to debug APIs. You can use Postman, <a href="https://curl.se/">curl</a>, or any other tool (like <a href="https://insomnia.rest/">Insomnia</a>) that allows you to make HTTP requests. In this tutorial, I will use <a href="https://www.postman.com/api-platform/api-client/">Postman API client</a>, so that you can quickly test the API with a user-friendly interface.
+</div>
+
+<p>Example request using curl:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl --location <span class="s1">&#39;http://yourdomain.test/admin-api/access_token&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--form <span class="s1">&#39;grant_type=&#34;client_credentials&#34;&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--form <span class="s1">&#39;client_id=&#34;your_client_id&#34;&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--form <span class="s1">&#39;client_secret=&#34;your_client_secret&#34;&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--form <span class="s1">&#39;scope[]=&#34;api_client_read&#34;&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--form <span class="s1">&#39;scope[]=&#34;api_client_write&#34;&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--form <span class="s1">&#39;scope[]=&#34;customer_group_read&#34;&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--form <span class="s1">&#39;scope[]=&#34;customer_group_write&#34;&#39;</span>
+</span></span></code></pre></div><p>Example request using Postman:</p>
+<p><img src="/assets/images/2024/05/api/postman_access_token.png" alt="PrestaShop 9 API Access Token request using Postman"></p>
+<p class="text-center text-muted small">Screenshot from Postman where we retrieve access token for our client</p>
+
+
+
+<div class="alert alert-info">As you can see in the screenshot, I am using project variables in Postman. This way, you can easily switch between different environments (like development, staging, and production) and don&rsquo;t have to change the request data (URL, client_id, etc.) every time you switch environments. You also won&rsquo;t find Authorization header in the request because it&rsquo;s generated automatically by Postman, thanks to <a href="https://learning.postman.com/docs/sending-requests/authorization/specifying-authorization-details/#inherit-authorization">&ldquo;Inherit authorization from parent&rdquo;</a> option.
+</div>
+
+<p>After you send the request, you should receive a response with the access token. If you receive information saying &ldquo;Use HTTPS response&rdquo;, it means that you need to use HTTPS to connect to the API. As mentioned earlier, you can turn off this check in the PrestaShop back office.</p>
+<p>If you still have problems with the connection, make sure that the API is enabled in the PrestaShop back office. You can check this in the Advanced Parameters -&gt; Admin API -&gt; Configuration page.</p>
+<p>If everything goes well, the response should look similar to this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;token_type&#34;</span><span class="p">:</span> <span class="s2">&#34;Bearer&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;expires_in&#34;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;access_token&#34;</span><span class="p">:</span> <span class="s2">&#34;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ0ZXN0X2NsaWVudCIsImp0aSI6ImQ5OTQzYWQzNDgwNDA3N2QyZGQ5MTBmM2E3YTVmYTdiZTQ1YmMyNzZmM2VmMjA2MGJmZjg2MzhlMzA4ZWE3OWY1ZWI1NzQ0ZmI0N2Y4MDU2IiwiaWF0IjoxNzE2Mjg2MjE5LjQ2NDA3OCwibmJmIjoxNzE2Mjg2MjE5LjQ2NDA4LCJleHAiOjE3MTYyODk4MTkuNDYzMDEsInN1YiI6IiIsInNjb3BlcyI6WyJpc19hdXRoZW50aWNhdGVkIiwiYXBpX2NsaWVudF9yZWFkIiwiYXBpX2NsaWVudF93cml0ZSIsImN1c3RvbWVyX2dyb3VwX3JlYWQiLCJjdXN0b21lcl9ncm91cF93cml0ZSJdfQ.Q6kK0Pl1HVAVrzn5xUrzRO1VSUaw-ygTn9D_rKlfjW3gllUWJiWRaA_pM53RtLId1LkcAfW8nW27CFhQH7TQqLCn4vUPD2t6_s7-3WX_HIqe6MHExib2mW7u_ZXT3bSOyPUOjWIcZsISQR1-noZfOEYDkvgnKDC250zieVqMELgxclMFXKdiLhn83GJnCW35llB1TwAACxdV1uJ_emZGCR3Tsy2IK1pSKPRAb2h-gBre8hqtCmUZ5pdM_L6D_EuUM-aB6iQENiCD6ECmSvqvsqkd3RB73s7PntwniUUafD2GHap1Ttw8pOF7omtT3X0ZLssSX1eQMPDw6JGLFz9caw&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>You can now use the access token to authenticate your client in the next requests. You can use it by providing the <code>Authorization</code> header with the value <code>Bearer YOUR_ACCESS_TOKEN</code>.</p>
+<p>Remember that the access token is valid for a limited time. After it expires, you need to get a new one. It is also crucial to provide scopes that your client can use. If you don&rsquo;t give the correct scopes, you won&rsquo;t be able to access some endpoints.</p>
+<p>Access token is a JWT token. JWT stands for JSON Web Token that contains information about the client and the scopes it can use. It&rsquo;s signed with a secret key, so you can be sure that the token is valid and hasn&rsquo;t been tampered with. You can go to <a href="https://jwt.io/">jwt.io</a> to see the token&rsquo;s content after you decode it.</p>
+<h3 id="authorization-server">Authorization server</h3>
+<p>The authorization server is responsible for issuing access tokens to the client after successfully authenticating the client. It is also responsible for validating the client&rsquo;s credentials and providing the client with the necessary scopes.</p>
+<p>In the new PrestaShop API implementation, the authorization server is built into the API itself, but it is modular and can be replaced with any other OAuth2 server implementation. One example is <a href="https://www.keycloak.org/">Keycloak</a>, which is a popular open-source identity and access management solution. You can use Keycloak to manage your clients and their access to the API, and here&rsquo;s an <a href="https://github.com/PrestaShop/keycloak_connector_demo">example module</a> that shows how to integrate Keycloak with PrestaShop.</p>
+<h2 id="information-about-the-api-client">Information about the API Client</h2>
+<p>Now that we have the access token, we can get information about the API client. To do that, you need to send a GET request to the <code>/admin-api/api-client/info</code> endpoint and provide the access token in the <code>Authorization</code> header.</p>
+<p>Example request using curl:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl --location <span class="s1">&#39;http://yourdomain.test/admin-api/api-client/infos&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--header <span class="s1">&#39;Authorization: Bearer YOUR_ACCESS_TOKEN&#39;</span>
+</span></span></code></pre></div><p>Example request using Postman:</p>
+<p><img src="/assets/images/2024/05/api/postman_client_info.png" alt="PrestaShop 9 API Client Info request using Postman"></p>
+<p>If everything goes well, you should receive a response with information about the API client. The response should look like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;apiClientId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;clientId&#34;</span><span class="p">:</span> <span class="s2">&#34;test_client&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;clientName&#34;</span><span class="p">:</span> <span class="s2">&#34;Test client&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;enabled&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;lifetime&#34;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;scopes&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;api_client_read&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;api_client_write&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;cart_rule_write&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;customer_group_read&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;customer_group_write&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;hook_read&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;hook_write&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;module_read&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;module_write&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;product_read&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;product_write&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Congrats! You have successfully authenticated your client and retrieved information about it. You can now use the access token to access other endpoints in the API.</p>
+<p>Please note that the list of scopes may vary depending on the client you created. It is also important to note that the list of scopes here is the list of all scopes the client can use, not the list of scopes the client is using at the moment, with the generated access token.</p>
+<p>If you request an endpoint without the required scope, you will receive an error message. For example, if you try to access the <code>/admin-api/products</code> endpoint without the <code>product_read</code> scope in your access token, you will receive the following response:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;https://tools.ietf.org/html/rfc2616#section-10&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;An error occurred&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">403</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;detail&#34;</span><span class="p">:</span> <span class="s2">&#34;Invalid scope.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;class&#34;</span><span class="p">:</span> <span class="s2">&#34;Symfony\\Component\\HttpKernel\\Exception\\AccessDeniedHttpException&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;trace&#34;</span><span class="p">:</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="retrieve-a-single-resource">Retrieve a single resource</h2>
+<p>Now that you have a better understanding of how to authenticate your client and retrieve information about it, you can try to retrieve other resources from the API. You can use the access token you generated earlier to authenticate your client.</p>
+<p>In the following example, we will try retrieving and saving user group information. To do that, you need to send a <code>GET</code> request to the <code>/admin-api/customers/group/{customerGroupId}</code> endpoint, where <code>{customerGroupId}</code> is the ID of the user group you want to retrieve. You need to provide the access token in the <code>Authorization</code> header.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl --location <span class="s1">&#39;http://yourdomain.test/admin-api/customers/group/1&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--header <span class="s1">&#39;Authorization: Bearer YOUR_ACCESS_TOKEN&#39;</span>
+</span></span></code></pre></div><p>If everything goes well, you should receive a response with information about the user group. The response should look like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;customerGroupId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;localizedNames&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;1&#34;</span><span class="p">:</span> <span class="s2">&#34;Odwiedzający&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;2&#34;</span><span class="p">:</span> <span class="s2">&#34;Visitor&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;reductionPercent&#34;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;displayPriceTaxExcluded&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;showPrice&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;shopIds&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Notice that you can access the localized names of the user group and all other relevant information.</p>
+<p>If you access the endpoint with the wrong ID, you will receive an error message. For example, if you try to access the <code>/admin-api/customers/group/999999</code> endpoint, you will receive the following response:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;https://tools.ietf.org/html/rfc2616#section-10&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;title&#34;</span><span class="p">:</span> <span class="s2">&#34;An error occurred&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;detail&#34;</span><span class="p">:</span> <span class="s2">&#34;Group #4 was not found&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;class&#34;</span><span class="p">:</span> <span class="s2">&#34;PrestaShop\\PrestaShop\\Core\\Domain\\Customer\\Group\\Exception\\GroupNotFoundException&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;trace&#34;</span><span class="p">:</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>The endpoint will return a 404 status code and an error message saying the group was not found.</p>
+
+
+
+<div class="alert alert-success">If you search for a list of all available resources, you can use the <a href="http://yourdomain.test/admin-api/docs.html">http://yourdomain.test/admin-api/docs.html</a> URL to access the API documentation. The documentation is generated automatically and provides information about all available endpoints, request methods, and parameters.
+</div>
+
+<p><img src="/assets/images/2024/05/api/api_docs.png" alt="PrestaShop 9 API documentation"></p>
+<h2 id="editing-a-single-resource">Editing a single resource</h2>
+<p>Now that you know how to retrieve information about a single resource, you can try to edit it. To do that, you need to send a <code>PUT</code> request to the <code>/admin-api/customers/group/{customerGroupId}</code> endpoint, where <code>{customerGroupId}</code> is the ID of the user group you want to edit. You need to provide the access token in the <code>Authorization</code> header and the data you want to change in the request body.</p>
+<p>You can send the following JSON data to change the user group name:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;localizedNames&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;1&#34;</span><span class="p">:</span> <span class="s2">&#34;Odwiedzający - Edytowany&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;2&#34;</span><span class="p">:</span> <span class="s2">&#34;Visitor - Edited&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Full <code>curl</code> request:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl --location --request PUT <span class="s1">&#39;http://yourdomain.test/admin-api/customers/group/1&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--header <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--header <span class="s1">&#39;Authorization: Bearer YOUR_ACCESS_TOKEN&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--data <span class="s1">&#39;{
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;localizedNames&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="s1">        &#34;1&#34;: &#34;Odwiedzający - Edytowany&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="s1">        &#34;2&#34;: &#34;Visitor - Edited&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s1">    }
+</span></span></span><span class="line"><span class="cl"><span class="s1">}&#39;</span>
+</span></span></code></pre></div><p>If everything goes well, you should receive a response with information about the user group. The response should look like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;customerGroupId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;localizedNames&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;1&#34;</span><span class="p">:</span> <span class="s2">&#34;Odwiedzający - Edytowany&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;2&#34;</span><span class="p">:</span> <span class="s2">&#34;Visitor - Edited&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;reductionPercent&#34;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;displayPriceTaxExcluded&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;showPrice&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;shopIds&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Notice that the user group name has been changed. You can now use the same method to edit other resources in the API. Let&rsquo;s now proceed to the next step.</p>
+<h2 id="adding-a-new-resource">Adding a new resource</h2>
+<p>Now that you know how to retrieve and edit information about a single resource, you can try to add a new resource. To do that, you must send a <code>POST</code> request to the <code>/admin-api/customers/group</code> endpoint. You need to provide the access token in the <code>Authorization</code> header and the data you want to add to the request body.</p>
+<p>You can send the following JSON data to add a new user group:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;localizedNames&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;1&#34;</span><span class="p">:</span> <span class="s2">&#34;Nowa grupa&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;2&#34;</span><span class="p">:</span> <span class="s2">&#34;New group&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;reductionPercent&#34;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;displayPriceTaxExcluded&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;showPrice&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;shopIds&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Full <code>curl</code> request:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl --location <span class="s1">&#39;http://yourdomain.test/admin-api/customers/group&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--header <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--header <span class="s1">&#39;Authorization: Bearer YOUR_ACCESS_TOKEN&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--data <span class="s1">&#39;{
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;localizedNames&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="s1">        &#34;1&#34;: &#34;Nowa grupa&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="s1">        &#34;2&#34;: &#34;New group&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s1">    },
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;reductionPercent&#34;: 0.0,
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;displayPriceTaxExcluded&#34;: false,
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;showPrice&#34;: true,
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;shopIds&#34;: [
+</span></span></span><span class="line"><span class="cl"><span class="s1">        1
+</span></span></span><span class="line"><span class="cl"><span class="s1">    ]
+</span></span></span><span class="line"><span class="cl"><span class="s1">}&#39;</span>
+</span></span></code></pre></div><p>This time, you should receive a response with information about the newly created user group. The response should look like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;customerGroupId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;localizedNames&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;1&#34;</span><span class="p">:</span> <span class="s2">&#34;Nowa grupa&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;2&#34;</span><span class="p">:</span> <span class="s2">&#34;New group&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;reductionPercent&#34;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;displayPriceTaxExcluded&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;showPrice&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;shopIds&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>and you will see the new user group in the PrestaShop back office.</p>
+<p><img src="/assets/images/2024/05/api/bo_groups.jpeg" alt="New group added via the API available in the back office"></p>
+<p>If you don&rsquo;t provide all the necessary information, you will receive an error message. For example, if you try to add a new user group without providing the <code>localizedNames</code> parameter, you will receive the following response:</p>
+<p><img src="/assets/images/2024/05/api/postman_add_group_error.png" alt="Error when adding a new resource without providing required information"></p>
+<h2 id="deleting-a-single-resource">Deleting a single resource</h2>
+<p>To delete a resource, you need to send a <code>DELETE</code> request to the <code>/admin-api/customers/group/{customerGroupId}</code> endpoint, where <code>{customerGroupId}</code> is the ID of the user group you want to delete.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl --location --request DELETE <span class="s1">&#39;http://yourdomain.test/admin-api/customers/group/4&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--header <span class="s1">&#39;Authorization: Bearer YOUR_ACCESS_TOKEN&#39;</span>
+</span></span></code></pre></div><h2 id="importing-api-collection-to-your-api-client">Importing API collection to your API client</h2>
+<p>Thanks to the automatically generated documentation, you can easily import the API collection into Postman or another API client of your choice. You can find the collection in the <code>http://yourdomain.test/admin-api/docs.json</code> URL. The collection is available in the OpenAPI format, compatible with Postman and other API clients.</p>
+<h2 id="extending-api">Extending API</h2>
+<p>The new API in PrestaShop 9 is designed to be extensible. You can add new endpoints, scopes, and other features to the API. We plan to release extensive developer documentation for the API soon. In the meantime, you can check the <a href="https://github.com/PrestaShop/example-modules/tree/master/api_module">example module</a> and the <a href="https://github.com/PrestaShop/ps_apiresources">ps_apiresources</a>.</p>
+
+
+
+<div class="alert alert-info">The new API in PrestaShop 9 is still under development. We encourage you to test it and provide feedback to help us improve it further.
+</div>
+
+<h2 id="get-involved">Get involved</h2>
+<p>The new API in PrestaShop 9 is a significant step forward for the platform. It will provide developers with a modern, secure, and extensible API that will allow them to create new integrations and services. We encourage you to test the new API and provide feedback to help us improve it further.</p>
+<p>If you are motivated to contribute to developing the new API, we encourage you to join the PrestaShop community. More information about contributing to PrestaShop is on the <a href="https://devdocs.prestashop-project.org/9/contribute/">Contribute to PrestaShop</a> page.</p>
+<h3 id="lets-keep-in-touch-on-slack">Let&rsquo;s keep in touch on Slack</h3>
+<p>If you have any questions or feedback, come <a href="https://www.prestashop-project.org/slack/">talk with us on Slack</a>. We are always happy to help you with any issues you may have. You can join the <code>#dev-core</code> channel to discuss the new API in PrestaShop 9.</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jun 6, 2024</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/api/">api</a>
+
+  <a class="label label-primary" href="/tag/tutorial/">tutorial</a>
+
+  <a class="label label-primary" href="/tag/9.0/">9.0</a>
+
+  <a class="label label-primary" href="/tag/9.x/">9.x</a>
+
+  <a class="label label-primary" href="/tag/9.0/">9.0</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/kpodemski/">Krystian Podemski</a>
+      <span>Tech Evangelist @ PrestaShop</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2024\/meet-prestashop9-api\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/logo-prestashop-com.png" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

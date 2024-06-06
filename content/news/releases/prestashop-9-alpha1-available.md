@@ -94,7 +94,7 @@ Although we are in the process of preparing documentation on the notable changes
 
 ## How to test PrestaShop 9
 
-To build ZIP file with PrestaShop 9 Alpha 1, you can use [PrestaShop Release Creation](https://github.com/PrestaShop/PrestaShop/tree/develop/tools/build) tool.
+To build the ZIP file with PrestaShop 9 Alpha 1, you can use the [PrestaShop Release Creation](https://github.com/PrestaShop/PrestaShop/tree/develop/tools/build) tool.
 
 ### Requirements
 
@@ -108,9 +108,9 @@ You can check all system requirements in the [documentation](https://devdocs.pre
 
 ### Create a new PrestaShop 9 distribution
 
-1. Clone the PrestaShop repository and switch to the "alpha-1" tag or download the ZIP file with sources from the [release page]().
-2. Run `php tools/build/CreateRelease.php --version="9.0.0"` in the root directory of the PrestaShop source code.
-3. The script will create a ZIP file with the PrestaShop 9 Alpha 1 distribution in the `build` directory.
+1. Clone the PrestaShop repository from "9.0.0-alpha.1" tag: `git clone git@github.com:PrestaShop/PrestaShop.git --branch "9.0.0-alpha.1 ."`. Note: use a different directory name than `.` if you want to clone the repository to a different directory.
+2. Run `php tools/build/CreateRelease.php` or `composer create-release` in the root directory of the PrestaShop source code.
+3. The script will create a ZIP file with the PrestaShop 9 Alpha 1 distribution in the `tools/build/releases/9.0.0_date_time/` directory.
 
 ### Install PrestaShop 9
 

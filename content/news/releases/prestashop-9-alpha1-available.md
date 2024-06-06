@@ -62,7 +62,7 @@ At the time of writing this article, PHP in versions 8.2 and 8.3 are actively su
 
 This is an important milestone for the entire PrestaShop ecosystem. A modern, flexible API that the community has been asking for over the past years. The first version of the new API will be in PrestaShop 9. You can [watch a presentation](https://youtu.be/7CQ2Sg-v4XQ?t=1219) by [@jolelievre](https://github.com/jolelievre), who talked about the basics of the new solution, explained the foundations behind it and showed how to use it.
 
-If you want to test the new API, make sure to follow the article written by [@kpodemski](https://github.com/kpodemski) - [How to use the new API in PrestaShop 9](#). This tutorial will guide you through the process of using the new API, explaining how to authorize the new API, create a new resource, and how to work with the API in general.
+If you want to test the new API, make sure to follow the article written by [@kpodemski](https://github.com/kpodemski) - [How to use the new API in PrestaShop 9]({{< relref "/news/posts/2024/meet-prestashop9-api" >}}). This tutorial will guide you through the process of using the new API, explaining how to authorize the new API, create a new resource, and how to work with the API in general.
 
 ![New API in PrestaShop 9](/assets/images/2024/05/adminapi.jpeg)
 
@@ -116,7 +116,7 @@ Make sure to check all system requirements in the [documentation](https://devdoc
 
 The installation process remains the same as in previous versions.
 
-If you plan to test the new API, it's important to look at the tutorial explaining how to use it properly. [This tutorial](#) will give you a clear idea of how to work with the API effectively, ensuring you can get the most out of your testing.
+If you plan to test the new API, it's important to look at the tutorial explaining how to use it properly. [This tutorial]({{< relref "/news/posts/2024/meet-prestashop9-api" >}}) will give you a clear idea of how to work with the API effectively, ensuring you can get the most out of your testing.
 
 ## What’s next
 

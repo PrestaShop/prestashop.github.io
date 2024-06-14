@@ -38,7 +38,7 @@ You can disable the forced secured protocol in the configuration but **only** wi
 
 ![PrestaShop 9 API Configuration](/assets/images/2024/05/api/api_ssl_configuration.jpeg)
 
-## Ouath2 terminology
+## Oauth2 terminology
 
 Before I continue with the tutorial, I have included a table below that will help you understand some of the terms used in this article.
 

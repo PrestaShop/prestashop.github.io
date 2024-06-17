@@ -51,7 +51,11 @@ In version 8.1.7, you will find several improvements. Some of the most notable o
 - Size of fields meta_title and meta_description has been corrected by [@M0rgan01](https://github.com/M0rgan01). ([#35564](https://github.com/PrestaShop/PrestaShop/pull/35564)).
 - [@jolelievre](https://github.com/jolelievre) fixed miscellaneous bugs on the new product page related to combinations and features management. ([#36244](https://github.com/PrestaShop/PrestaShop/pull/36244)).
 
-Improvements above should make your daily work with managing products easier and more efficient. There are more improvements in this version, so make sure to check the [full list of them](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.7+label%3ARefactoring%2CImprovement).
+Improvements above should make your daily work with managing products easier and more efficient.
+
+Apart from the ones mentioned above, there are other notable improvements in this version. One worth mentioning is the improvement of the performance for cart rules. You can check more details in the [pull request](https://github.com/PrestaShop/PrestaShop/pull/35962) by [@ShaiMagal](https://github.com/ShaiMagal), also, to make life easier for developers, the `EntitySearchInput` component [is now available](https://github.com/PrestaShop/PrestaShop/pull/36306) in the `window.prestashop.component` thanks to [@thomasDelaporte](https://github.com/thomasDelaporte).
+
+Make sure to check the [full list of them](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.7+label%3ARefactoring%2CImprovement).
 
 ### PrestaShop 8.1.7 is now available for you
 

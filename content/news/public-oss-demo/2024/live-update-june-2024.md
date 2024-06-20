@@ -12,7 +12,7 @@ On June 20th, 2024, we hosted the fifth Live Update of the year. We had the oppo
 
 ## PrestaShop Live Update - June 2024
 
-This Live Update was a great opportunity to meet the Seamless Upgrade & Extensibility team. They are working on the PrestaShop [autoupgrade](https://github.com/PrestaShop/autoupgrade) module and upgrades in general, which is a key component of the PrestaShop ecosystem. The team shared their latest wins, vision, and challenges. We also had a Q&A session where we answered questions from the community.
+During this Live Update, we had the opportunity to meet the Seamless Upgrade & Extensibility team, who are actively involved in various projects within the PrestaShop ecosystem. One of their key focuses is the development of the PrestaShop [autoupgrade](https://github.com/PrestaShop/autoupgrade) module, which plays a crucial role in system upgrades. The team shared their recent achievements, discussed their vision, and addressed challenges. At the end of Live Update, we had a Q&A session where we addressed questions from the community.
 
 {{< youtube QeVNLHY1Onc >}}
 
@@ -31,8 +31,16 @@ Remember that you can ask your questions during the presentation or beforehand. 
 
 {{< cta "https://www.youtube.com/watch?v=QeVNLHY1Onc&t" "info" >}}Watch replay on YouTube{{< /cta >}}
 
-Below are links to projects mentioned during this Live Update:
-- [Performance issue for generating invoice for an important number of orders](https://github.com/PrestaShop/PrestaShop/issues/35850)
+Below are links to projects mentioned during this live update:
+- [PrestaShop 8.1.6 release notes]({{< relref "/news/releases/prestashop-8-1-6-maintenance-release" >}})
+- [PrestaShop 9 Alpha 1 release notes]({{< relref "/news/releases/prestashop-9-alpha1-available" >}})
+- [Documentation for PrestaShop 9](https://devdocs.prestashop-project.org/9/)
+- [Notable changes in PrestaShop 9](https://devdocs.prestashop-project.org/9/modules/core-updates/9.0/)
+- [Meet PrestaShop 9 Admin API - user guide]({{< relref "/news/posts/2024/meet-prestashop9-api" >}})
+- [Auto Upgrade module](https://github.com/PrestaShop/autoupgrade)
+- [Seamless Upgrade Toolbox](https://github.com/PrestaShop/SeamlessUpgradeToolbox)
+
+Also, you can take a look at the slides presented during the demo [here](https://docs.google.com/presentation/d/1vQsQZHd8T-ldfU_ilKFe-VeCmrNAFJGqEzw8YU90Dl8/edit?usp=sharing).
 
 We are available for feedback about the project and the software. We also invite everyone to join us on [Slack](https://www.prestashop-project.org/slack/).
 

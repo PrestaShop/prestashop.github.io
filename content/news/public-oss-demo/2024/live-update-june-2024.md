@@ -8,11 +8,11 @@ icon: icon-video-camera
 tags: [contribute, event, community, live-update]
 ---
 
-On June 20th, 2024, we hosted the fifth Live Update of the year. We had the opportunity to talk about PrestaShop 9 and get to know the team that is working on, among other things, the PrestaShop autoupgrade module.
+On June 19th, 2024, we hosted the fifth Live Update of the year. We had the opportunity to talk about PrestaShop 9 and get to know the team working on, among other things, the PrestaShop autoupgrade module.
 
 ## PrestaShop Live Update - June 2024
 
-During this Live Update, we had the opportunity to meet the Seamless Upgrade & Extensibility team, who are actively involved in various projects within the PrestaShop ecosystem. One of their key focuses is the development of the PrestaShop [autoupgrade](https://github.com/PrestaShop/autoupgrade) module, which plays a crucial role in system upgrades. The team shared their recent achievements, discussed their vision, and addressed challenges. At the end of Live Update, we had a Q&A session where we addressed questions from the community.
+During this Live Update, we had the opportunity to meet the Seamless Upgrade & Extensibility team, who are actively involved in various projects within the PrestaShop ecosystem. One of their key focuses is the development of the PrestaShop [autoupgrade](https://github.com/PrestaShop/autoupgrade) module, which plays a crucial role in system upgrades. The team shared their recent achievements, discussed their vision, and addressed challenges. At the end of the Live Update, we had a Q&A session where we addressed questions from the community.
 
 {{< youtube QeVNLHY1Onc >}}
 
@@ -27,7 +27,7 @@ You can use the timestamps to jump directly to the parts you want to watch.
 
 ## Q&A session
 
-Remember that you can ask your questions during the presentation or beforehand. **If you have questions related to the open source project**, feel free to let us know in advance [using this form](https://forms.gle/FWazuZnXBtFPauFZ7). We will do our best to answer them during the Q&A session.
+Remember that you can ask your questions during the presentation or beforehand. **If you have questions related to the open source project**, feel free to let us know in advance [using this form](https://forms.gle/FWazuZnXBtFPauFZ7). We will do our best to answer them during the next Q&A session.
 
 {{< cta "https://www.youtube.com/watch?v=QeVNLHY1Onc&t" "info" >}}Watch replay on YouTube{{< /cta >}}
 

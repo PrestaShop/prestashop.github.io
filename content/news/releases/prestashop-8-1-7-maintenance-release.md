@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.1.7 Is Available
 subtitle: New patch for branch 8.1.x is available
-date: 2024-06-17 09:00:00
+date: 2024-06-24 09:00:00
 authors: [ PrestaShop ]
 image: /assets/images/2024/06/banner_8.1.7_1200x627.jpg
 opengraph_image: /assets/images/2024/06/banner_8.1.7_1200x627.jpg

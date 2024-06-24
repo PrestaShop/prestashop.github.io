@@ -71,7 +71,7 @@ If you encounter any problems during the upgrade that, in your opinion, are not 
 
 Contributors to this patch version, from project members and individual community contributors, include:
 
-A,B,C
+Boris Hermans, ChronoBrake, CodeOlympus, ComonSoft, Daniel Hlavacek, Dominik Shaim Ulrich, Fabien Papet, Franck Lefèvre, George Filippakis, Jonathan Lelievre, Krystian Podemski, Marco Salvatore, Mathieu Ferment, Matthias Goudjil, Matthieu Rolland, Maxime Flasquin, Morgan Pichat, Nicolas Lœuillet, Philipp Vujic, Roman Kotyra, Rudolf Kastl, Tomasz Zając, theoalloin, Thomas Delaporte
 
 Thank you! Your involvement in making PrestaShop better is invaluable.
 

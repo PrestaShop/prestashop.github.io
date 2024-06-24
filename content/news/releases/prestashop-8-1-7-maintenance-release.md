@@ -34,9 +34,9 @@ Check out some of the most notable improvements and bug fixes from this version.
 
 There are a few bug fixes in this version that are worth mentioning.
 
-- [@Progi1984](https://github.com/Progi1984) backported a fix from [@unlocomqx](https://github.com/unlocomqx) to fix the issue with the quantity check when there are customized products in cart. ([#36342](https://github.com/PrestaShop/PrestaShop/pull/36342)).
-- [@Hlavtox](https://github.com/Hlavtox) fixed the issue with a specific scenario when multiple carriers are used. ([#36074](https://github.com/PrestaShop/PrestaShop/pull/36074)).
-- [@rudolfkastl](https://github.com/rudolfkastl) fixed problem with credit slip creation. ([#35861](https://github.com/PrestaShop/PrestaShop/pull/35861)).
+- [@Progi1984](https://github.com/Progi1984) backported a fix from [@unlocomqx](https://github.com/unlocomqx) to fix the issue with the quantity check when there are customized products in a cart. ([#36342](https://github.com/PrestaShop/PrestaShop/pull/36342)).
+- [@Hlavtox](https://github.com/Hlavtox) fixed the issue where multiple carriers are used and a package does not have an assigned carrier. ([#36074](https://github.com/PrestaShop/PrestaShop/pull/36074)).
+- [@rudolfkastl](https://github.com/rudolfkastl) fixed a problem with the credit slip creation. ([#35861](https://github.com/PrestaShop/PrestaShop/pull/35861)).
 
 You can see the rest of pull requests with bug fixes on [Github](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.7+label%3A%22Bug+fix%22).
 
@@ -45,17 +45,17 @@ You can see the rest of pull requests with bug fixes on [Github](https://github.
 In version 8.1.7, you will find several improvements. Some of the most notable ones are:
 
 - Thanks to [@webeshop](https://github.com/PrestaShop/PrestaShop/pull/34823), when you duplicate a product, the product date is now correctly set to the current date. ([#34823](https://github.com/PrestaShop/PrestaShop/pull/34823))
-- Export button is now available on the product page. Thank you, [@ChronoBrake](https://github.com/ChronoBrake). ([#35488](https://github.com/PrestaShop/PrestaShop/pull/35488)).
+- The export button is now available on the product page. Thank you, [@ChronoBrake](https://github.com/ChronoBrake). ([#35488](https://github.com/PrestaShop/PrestaShop/pull/35488)).
 - [@mattgoud](https://github.com/mattgoud) has improved the product page responsiveness. ([#35775](https://github.com/PrestaShop/PrestaShop/pull/35775)).
 - The wording related to managing pack products has been improved by [@Hlavtox](https://github.com/Hlavtox). ([#35434](https://github.com/PrestaShop/PrestaShop/pull/35434)).
-- Size of fields meta_title and meta_description has been corrected by [@M0rgan01](https://github.com/M0rgan01). ([#35564](https://github.com/PrestaShop/PrestaShop/pull/35564)).
+- The field size for meta_title and meta_description has been corrected by [@M0rgan01](https://github.com/M0rgan01). ([#35564](https://github.com/PrestaShop/PrestaShop/pull/35564)).
 - [@jolelievre](https://github.com/jolelievre) fixed miscellaneous bugs on the new product page related to combinations and features management. ([#36244](https://github.com/PrestaShop/PrestaShop/pull/36244)).
 
 Improvements above should make your daily work with managing products easier and more efficient.
 
-Apart from the ones mentioned above, there are other notable improvements in this version. One worth mentioning is the improvement of the performance for cart rules. You can check more details in the [pull request](https://github.com/PrestaShop/PrestaShop/pull/35962) by [@ShaiMagal](https://github.com/ShaiMagal), also, to make life easier for developers, the `EntitySearchInput` component [is now available](https://github.com/PrestaShop/PrestaShop/pull/36306) in the `window.prestashop.component` thanks to [@thomasDelaporte](https://github.com/thomasDelaporte).
+Apart from the ones mentioned above, there are other notable improvements in this version. One worth mentioning is the cart rules performance improvement. You can check for more details in the [pull request](https://github.com/PrestaShop/PrestaShop/pull/35962) by [@ShaiMagal](https://github.com/ShaiMagal). Also, to make life easier for developers, the `EntitySearchInput` component [is now available](https://github.com/PrestaShop/PrestaShop/pull/36306) in the `window.prestashop.component` thanks to [@thomasDelaporte](https://github.com/thomasDelaporte).
 
-Make sure to check the [full list of them](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.7+label%3ARefactoring%2CImprovement).
+Make sure to check the [full list here](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+milestone%3A8.1.7+label%3ARefactoring%2CImprovement).
 
 ### PrestaShop 8.1.7 is now available for you
 

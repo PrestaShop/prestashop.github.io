@@ -6,7 +6,18 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Jun 2024 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Jun 2024 09:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.1.7 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-7-maintenance-release/</link>
+      <pubDate>Tue, 25 Jun 2024 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-7-maintenance-release/</guid>
+      <description>A new patch for PrestaShop 8.1 is now available! This release includes several significant improvements and numerous bug fixes. In this article, we&amp;rsquo;ll explore these updates in detail.
+PrestaShop 8.1.7 is now available. This release addresses several bugs and brings various improvements.
+It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. Upgrade is possible using the latest version of the 1-Click Upgrade module.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Live Update - June 2024</title>
       <link>https://build.prestashop-project.org/news/2024/live-update-june-2024/</link>
@@ -150,17 +161,6 @@ It is recommended that you upgrade your shop quickly in order to benefit from th
       <description>The project&amp;rsquo;s live update was held for the second time in 2024. Read on for a recap of the session.
 PrestaShop Live Update - February 2024 The second live update in 2024 was held on February 7th, 2024. During the session, we had two presentations.
 Fabien Vallon, Lead Product Manager at PrestaShop, provided an exciting glimpse into the upcoming Core Upgrade application. This tool, set to be released later this year, promises to streamline the PrestaShop upgrade process, and we can&amp;rsquo;t wait to share more details with you.</description>
-    </item>
-    
-    <item>
-      <title>PSDevCon 2023: Do you speak PrestaShop?</title>
-      <link>https://build.prestashop-project.org/news/2024/do-you-speak-prestashop/</link>
-      <pubDate>Tue, 06 Feb 2024 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/do-you-speak-prestashop/</guid>
-      <description>Do you speak PrestaShop? On November 30, Nicolas Lœuillet and Julie Varisellaz gave a presentation about the project’s translations at the first-ever PrestaShop Developer Conference.
-Their presentation aimed to explain the path of a translation string, from the code to the merchant’s back office. The presentation was in French, but we’re happy to share a summary in English on the blog. Let’s get started!
-Crowdin: Localization management platform There are 2 ways of translating your PrestaShop store.</description>
     </item>
     
   </channel>

@@ -2,7 +2,7 @@
 layout: post
 title: Second PrestaShop Developer Conference - Participate as a Speaker
 subtitle: PARTICIPATE AS A SPEAKER IN THE EVENT ON NOVEMBER 6, 2024
-date: 2024-07-09 10:00:00
+date: 2024-07-09 09:55:00
 authors: [ PrestaShop ]
 icon: icon-leaf
 tags:

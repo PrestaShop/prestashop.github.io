@@ -48,4 +48,4 @@ If you encounter any problems during the update that, in your opinion, are not c
 
 ### Thank you, contributors
 
-The release of this new version of the module Autoupgrade is the result of a collective effort by all contributors to the project. We would therefore like to take this opportunity to thank all our contributors, from both the PrestaShop SA team and the community at large.
+This new version release of the Autoupgrade module is the result of a collective effort by all project contributors. We are therefore taking this opportunity to thank all our contributors, from both the PrestaShop SA team and the community at large.

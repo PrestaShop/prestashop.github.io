@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Autoupgrade module v6.0.0 is Available (1-Click Upgrade)"
-subtitle: "We are pleased to introduce the release of this new major version of the Autoupgrade module (also known as 1-Click Upgrade)."
+subtitle: "We are pleased to introduce the new major version release of the Autoupgrade module, also known as 1-Click Upgrade."
 date:   2024-07-29
 authors: [ GericFosse ]
 icon: icon-leaf
 tags: [ module, autoupgrade ]
 ---
 
-In the footsteps of the latest module releases ([see versions 5.0.2 and 5.0.3 live presentation](https://build.prestashop-project.org/news/2024/live-update-june-2024/)), this version brings a number of improvements to streamline PrestaShop updates. Explore the changelog below to find out what version 6.0.0 of the Autoupgrade module has to offer.
+In the footsteps of the latest module releases ([see versions 5.0.2 and 5.0.3 live presentation](https://build.prestashop-project.org/news/2024/live-update-june-2024/)), this version brings a number of improvements to streamline PrestaShop updates. Explore the changelog below to find out what version 6.0.0 brings to the Autoupgrade module.
 
 ![1-click upgrade module logo](/assets/images/2024/07/autoupgrade-logo.png)
 
@@ -27,14 +27,14 @@ In the footsteps of the latest module releases ([see versions 5.0.2 and 5.0.3 li
 
 #### For developers:
 
-* **Crowdin translation management -** Rework the management and distribution of translations of the first native & open-source module with Crowdin and PrestaShop module translation tool.
+* **Crowdin translation management -** Rework the management and distribution of translations of the first native and open source module with Crowdin and PrestaShop module translation tool.
 * **Update translation format -** Switch to translations in XLIFF format.
-* **Storybook front preview -** Introduce Storybook on the project to easy the incoming UI rework.
+* **Storybook front preview -** Introduce Storybook on the project to ease the incoming UI rework.
 * **Deploying automated tests -** Introduce UI tests running nightly.
 * **Improving code quality -** Increase number of checks made by PHPStan.
 
 
-The version v6.0.0 of the module also brings some new improvements, you can read the full Changelog by clicking on the link below.
+The version 6.0.0 of the module also brings other new improvements, you can read the full changelog by clicking on the link below.
 
 {{< cta "https://github.com/PrestaShop/autoupgrade/releases/tag/v6.0.0" >}}Check out what’s new{{< /cta >}}
 

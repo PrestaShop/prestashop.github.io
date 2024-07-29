@@ -2,7 +2,7 @@
 layout: post
 title: "Autoupgrade module v6.0.0 is Available (1-Click Upgrade)"
 subtitle: "We are pleased to introduce the release of this new major version of the Autoupgrade module (also known as 1-Click Upgrade)."
-date:   2024-07-26
+date:   2024-07-29
 authors: [ GericFosse ]
 icon: icon-leaf
 tags: [ module, autoupgrade ]

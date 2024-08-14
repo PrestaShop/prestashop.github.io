@@ -11,7 +11,7 @@ tags:
 - community
 ---
 
-Are you a passionate PrestaShop developer or enthusiast? We are happy to announce that the [call for presentations](https://forms.gle/nBrP7Y1uYa5ZtE3z8) is now open for the second edition of the PrestaShop Developer Conference, happening on November 6, 2024. This event offers a prime opportunity to engage in developer discussions, better understand solutions, and connect with fellow community members.
+Are you a passionate PrestaShop developer or enthusiast? We are happy to announce that the [call for presentations](https://forms.gle/nBrP7Y1uYa5ZtE3z8) is now open for the second edition of the PrestaShop Developer Conference, happening on November 6, 2024 in Paris, France. This event offers a prime opportunity to engage in developer discussions, better understand solutions, and connect with fellow community members.
 
 ### What is this event about?
 
@@ -36,3 +36,7 @@ For this year’s conference, we are interested in hearing from you and what you
 **To submit your presentation, fill out the [submission form](https://forms.gle/nBrP7Y1uYa5ZtE3z8). The deadline for submission is September 9, 2024.**
 
 Join us on November 6, 2024, for a day of knowledge-sharing, networking, and inspiration. During the event, elevate your skills and contribute to the PrestaShop community.
+
+**Important note:**
+
+This article has been updated on August 14th of 2024, to precise the location of the event.

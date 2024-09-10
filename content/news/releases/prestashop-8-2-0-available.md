@@ -28,7 +28,7 @@ PrestaShop 8.2 is a minor version that includes a few new features and improveme
 - Improvement: TBD
 - Bug fix: TBD
 
-## Changes to the release schedule
+## Changed release schedule
 
 We understand that the release of PrestaShop 8.2 may come as a surprise to some, as it deviates from our previously announced release schedule. Initially, our plan was to follow a versioning cycle of 8.0, 8.1, followed by 9.0, 9.1, and beyond. However, in order to fully comply with semantic versioning principles, we have made the decision to introduce this new minor release.
 

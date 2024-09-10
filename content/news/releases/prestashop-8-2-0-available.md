@@ -32,8 +32,6 @@ PrestaShop 8.2 is a minor version that includes a few new features and improveme
 
 We understand that the release of PrestaShop 8.2 may come as a surprise to some, as it deviates from our previously announced release schedule. Initially, our plan was to follow a versioning cycle of 8.0, 8.1, followed by 9.0, 9.1, and beyond. However, in order to fully comply with semantic versioning principles, we have made the decision to introduce this new minor release.
 
-PrestaShop 8.2 includes several new features, enhancements, and bug fixes that we believe required a minor release.
-
 We have also updated the [release schedule page](https://www.prestashop-project.org/project-organization/release-cycle/) on the PrestaShop Project website to reflect these adjustments. While our goal is typically to release one minor version per major release, this update demonstrates our flexibility in issuing additional minor versions when necessary.
 
 Meanwhile, work on PrestaShop 9 is progressing steadily, and we are preparing the first beta release. More details on this upcoming version will be shared in the coming weeks.

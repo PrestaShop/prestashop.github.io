@@ -41,7 +41,7 @@ We would like to take the opportunity to stress once more the importance of keep
 ## Acknowledgements
 
 Contributors to PrestaShop version 1.7.8.7:
-* Dominik Shaim who first reached out to the security team and helped investigate the vulnerability
+* Dominik Shaim Ulrich who first reached out to the security team and helped investigate the vulnerability
 * Maintainers Daniel Hlavacek and Krystian Podemski who helped investigate the vulnerability
 * Maintainer and security lead Thomas Baccelli who helped investigate the vulnerability and build the fix
 * QA analysts and engineers who tested this release and the upgrade process: Florine Hea, Sarah Cavrot, Khouloud Belguith, Hana Rebai, Marwa Chelly, Hibatallah Aouadni, Boubker Bribri and Aurelien Rita.

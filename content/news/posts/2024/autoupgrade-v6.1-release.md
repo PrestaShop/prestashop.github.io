@@ -2,7 +2,7 @@
 layout: post
 title: "Autoupgrade module v6.1.0 is Available (1-Click Upgrade)"
 subtitle: "We are pleased to introduce the new minor version release of the Autoupgrade module, also known as 1-Click Upgrade."
-date:   2024-09-12
+date:   2024-09-17
 authors: [ GericFosse ]
 icon: icon-leaf
 tags: [ module, autoupgrade ]
@@ -17,7 +17,7 @@ In the footsteps of the latest module releases ([see version 6.0.0 release blogp
 #### Global improvements:
 
 * **Version comparison** - Fix an issue where the number of altered or deleted core files is always zero.
-* **UX optimization** - Improve user experience during update & restore processes with newer to-do lists & simplification of UI.
+* **UX optimization** - Improve user experience during update and restore processes with newer to-do lists and simplification of UI.
 * **Improved module updates** - Revamping of module migration methods and integration of new dedicated logs.
 * **CLI enrichment** - Homogenize CLI and module UI configuration system to deliver a consistent experience.
 

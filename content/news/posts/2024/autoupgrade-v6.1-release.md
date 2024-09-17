@@ -30,7 +30,7 @@ In the footsteps of the latest module releases ([see version 6.0.0 release blogp
 * **Multiple tech improvements** - JS format standardization, JS error handler, local archive check, new logs exception… Many corrections and tech optimizations have been added in this version.
 
 
-The versions 6.1.0 and 6.2.0 of the module also brings other new improvements, you can read the full changelog by clicking on the links below.
+The versions 6.1.0 and 6.2.0 of the module also bring other new improvements, you can read the full changelog by clicking on the links below.
 
 {{< cta "https://github.com/PrestaShop/autoupgrade/releases/tag/v6.1.0" >}}Check out what’s new on v6.1{{< /cta >}}
 

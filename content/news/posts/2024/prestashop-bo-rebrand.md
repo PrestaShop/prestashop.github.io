@@ -3,7 +3,7 @@ layout: post
 title:  "PrestaShop Back Office rebranding with PrestaShop 9"
 subtitle: "PrestaShop 9 Embarks The Newly Rebranded Back Office Themes"
 date:   2024-09-17
-author: [ ThibaultBlivet ]
+authors: [ ThibaultBlivet ]
 icon: icon-leaf
 tags: [ "9.0", design, ux ]
 ---

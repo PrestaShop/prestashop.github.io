@@ -16,17 +16,49 @@ tags:
 - "8.2.x"
 ---
 
-It's been decided to release a new minor version of PrestaShop, 8.2. This version includes a few new features and improvements, as well as bug fixes.
+It's been decided to release a new minor version of PrestaShop, 8.2. This version includes a few improvements, as well as bug fixes.
 
 ![PrestaShop 8.2 is available!](/assets/images/2024/09/banner_8.2_1534x424.jpg)
 
 ## What's new in PrestaShop 8.2?
 
-PrestaShop 8.2 is a minor version that includes a few new features and improvements, as well as bug fixes, and it is relatively small compared to the previous minor versions. Here are some of the highlights:
+PrestaShop 8.2 is a minor version that includes a few improvements, as well as bug fixes, and it is relatively small compared to the previous minor versions. Here are some of the highlights.
 
-- New feature: TBD
-- Improvement: TBD
-- Bug fix: TBD
+### Improvements
+
+**New hook `actionFrontControllerSetVariablesBefore`**
+
+A [new hook is available](https://github.com/PrestaShop/PrestaShop/pull/36657) for assigning general purpose variables before the core does it. This hook is called `actionFrontControllerSetVariablesBefore` and is available in the `FrontController` class. You can read about potential use cases in the pull request.
+
+**Introducing of a `CartLazyArray`**
+
+[`CartLazyArray` has been introduced](https://github.com/PrestaShop/PrestaShop/pull/36575) as a first step to improve the performance of the cart object. This class is a lazy array that will only load the cart data when needed. This change introduced minor backward compatibility breaks, but it will be beneficial for the performance.
+
+**Improvement of the Mail class**
+
+The `reply-to` parameter [is no longer allowed](https://github.com/PrestaShop/PrestaShop/pull/36576) to be the same as the `to` parameter in the `Mail` class. This change has been made to prevent emails from being marked as spam.
+
+You can see the full list of improvements [here](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Amerged+is%3Apr+milestone%3A8.2.0+label%3AImprovement).
+
+### Bug fixes
+
+There are more than 10 bug fixes in this version. You can check the full list of bug fixes [here](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Amerged+is%3Apr+milestone%3A8.2.0+label%3A%22Bug+fix%22). Below you can find information about some of the most important fixes.
+
+**Fixed installation process on certain environments configurations**
+
+Due to different configuration of some environments, the installation process was failing on the database creation step. This issue [has been fixed](https://github.com/PrestaShop/PrestaShop/pull/36840) in this version.
+
+**Fixed incompatibility issue with PDO returning integer values on PHP 8.1**
+
+In PHP 8.1, PDO started returning integer values for some fields that were previously returned as strings. This change caused compatibility issues with PrestaShop, and it has been [fixed](https://github.com/PrestaShop/PrestaShop/pull/36875) in version 8.2.
+
+**Fixed issue with creating duplicate customers in a specific scenarios**
+
+There was an issue where customers could be created multiple times when the same email address was used. This issue has been [fixed](https://github.com/PrestaShop/PrestaShop/pull/36454) and you can read more about it in the pull request.
+
+**Solved some problems with ordering customized products**
+
+Thanks to [@Codencode](https://github.com/Codencode), some issues with ordering customized products have been fixed. They [fixed](https://github.com/PrestaShop/PrestaShop/pull/36834) the issue with the "Total products" column on the order confirmation, and with [deleting images for customized products](https://github.com/PrestaShop/PrestaShop/pull/36905).
 
 ## Changed release schedule
 

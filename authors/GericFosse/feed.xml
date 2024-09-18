@@ -6,7 +6,17 @@
     <description>Recent content in GericFosse on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jul 2024 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/GericFosse/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Sep 2024 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/GericFosse/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autoupgrade module v6.1.0 and 6.2.0 are Available (1-Click Upgrade)</title>
+      <link>https://build.prestashop-project.org/news/2024/autoupgrade-v6.1-release/</link>
+      <pubDate>Wed, 18 Sep 2024 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/autoupgrade-v6.1-release/</guid>
+      <description>In the footsteps of the latest module releases (see version 6.0.0 release blogpost), these versions bring a number of improvements to streamline PrestaShop updates. Explore the changelog below to find out what version 6.1.0 and 6.2.0 bring to the upgrade module.
+What’s inside Global improvements: Version comparison - Fix an issue on the PHP version check before starting an upgrade, which was reporting some valid versions as incompatible. Version comparison - Fix an issue where the number of altered or deleted core files is always zero.</description>
+    </item>
+    
     <item>
       <title>Autoupgrade module v6.0.0 is Available (1-Click Upgrade)</title>
       <link>https://build.prestashop-project.org/news/2024/autoupgrade-v6-release/</link>

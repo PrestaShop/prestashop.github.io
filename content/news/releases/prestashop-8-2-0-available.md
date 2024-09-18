@@ -34,6 +34,8 @@ A [new hook is available](https://github.com/PrestaShop/PrestaShop/pull/36657) f
 
 [`CartLazyArray` has been introduced](https://github.com/PrestaShop/PrestaShop/pull/36575) as a first step to improve the performance of the cart object. This class is a lazy array that will only load the cart data when needed. This change introduced minor backward compatibility breaks, but it will be beneficial for the performance.
 
+If you are a developer and encounter any issues with this change, please let us know by [creating a new issue](https://github.com/PrestaShop/PrestaShop/issues/new?assignees=&labels=Bug%2CNew&projects=&template=1_bug_report.yml) on GitHub.
+
 **Improvement of the Mail class**
 
 The `reply-to` parameter [is no longer allowed](https://github.com/PrestaShop/PrestaShop/pull/36576) to be the same as the `to` parameter in the `Mail` class. This change has been made to prevent emails from being marked as spam.

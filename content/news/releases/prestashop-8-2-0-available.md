@@ -26,6 +26,10 @@ PrestaShop 8.2 is a minor version that includes a few improvements, as well as b
 
 ### Improvements
 
+**Correclty checking overrides during module installation**
+
+PrestaShop used to check for overrides during module installation, but the process didn’t fully block installation if a conflicting override was found. Even with a conflict and warning message, the module would still appear as installed in the database, potentially causing side effects.  This issue has been [fixed](https://github.com/PrestaShop/PrestaShop/pull/36639) and mechanism for checking overrides during the module installation has been improved.
+
 **New hook `actionFrontControllerSetVariablesBefore`**
 
 A [new hook is available](https://github.com/PrestaShop/PrestaShop/pull/36657) for assigning general purpose variables before the core does it. This hook is called `actionFrontControllerSetVariablesBefore` and is available in the `FrontController` class. You can read about potential use cases in the pull request.

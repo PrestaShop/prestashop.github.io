@@ -12,7 +12,7 @@ tags:
 
 On September 26, the [OW2 organization](https://www.ow2.org/) will hold a webinar, presented in part by [Clément Désiles](https://github.com/jokesterfr) from PrestaShop. 
 
-![SocialCard_Project_Prestashop](https://github.com/user-attachments/assets/b852e60f-d1eb-4903-b472-515664f79fd6)
+![SocialCard_Project_Prestashop](/assets/images/2024/09/SocialCard_Project_Prestashop.png)
 
 During [this event](https://www.ow2.org/view/webinar/webinar_2), PrestaShop will be presenting alongside ALLMA, a project based on the /e/OS fork of Android and integrating the best of open source modern LLMs. The project is sponsored by a European fund, NGI Search. Pierre-Yves Gibello, OW2’s CEO, will be introducing the webinar at the beginning of the event. 
 

@@ -82,7 +82,7 @@ PrestaShop 8.2 is available on GitHub:
 
 ## Upgrade
 
-The [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade) for this version is available. You can download the latest release, enabling the upgrade to 8.2 [directly from GitHub](https://github.com/PrestaShop/autoupgrade/releases). Upgrade for PrestaShop 8.2 is available under "Minor upgrades" channel.
+The [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade) for this version is available. You can download the latest release, enabling the upgrade to 8.2 [directly from GitHub](https://github.com/PrestaShop/autoupgrade/releases). The upgrade for PrestaShop 8.2 is available under "Minor upgrades" channel.
 
 ## Acknowledgments
 

@@ -6,7 +6,19 @@
     <description>Recent content in minor on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jun 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/minor/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Sep 2024 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/minor/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.2 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2024/prestashop-8-2-0-available/</link>
+      <pubDate>Thu, 26 Sep 2024 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-2-0-available/</guid>
+      <description>It&amp;rsquo;s been decided to release a new minor version of PrestaShop 8.2. This version includes a few improvements, as well as bug fixes.
+What&amp;rsquo;s new in PrestaShop 8.2? PrestaShop 8.2 is a minor version that includes a few improvements, as well as bug fixes, and it is relatively small compared to the previous minor versions. Here are some highlights.
+Improvements Correctly checking overrides during module installation
+PrestaShop used to check for overrides during module installation, but the process didn’t fully block installation if a conflicting override was found.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.1 Is Available</title>
       <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-0-available/</link>
@@ -152,17 +164,6 @@ We are thrilled to introduce to you the new features around the order process. B
       <description>We are happy to announce PrestaShop 1.7.6.0 is officially available!
 It has been quite a journey to deliver this huge release, our biggest yet since 1.7.1.0. Six months of development, a six week-long Beta, two Release Candidates&amp;hellip; Was it worth it? We absolutely think so, and hope that you will enjoy using it.
 In this version we focused on improving and bringing back important 1.6 features to merchants, and kept working on code quality and performance improvements.</description>
-    </item>
-    
-    <item>
-      <title>Release note 1.7.6 RC2</title>
-      <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-rc2-release/</link>
-      <pubDate>Fri, 05 Jul 2019 16:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-rc2-release/</guid>
-      <description>Once again the PrestaShop community actively participated in the testing of the PrestaShop 1.7.6 Release Candidate. Thanks to your involvement, 3 regressions were identified and fixed.
-Our team is glad to announce PrestaShop 1.7.6.0 Release Candidate 2. If no new regression is reported in the next days, we will make the final version of 1.7.6.0 available by the end of next week (28).
-Fixed in this Release Candidate 2 Front Office:</description>
     </item>
     
   </channel>

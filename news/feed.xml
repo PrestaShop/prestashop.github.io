@@ -6,7 +6,19 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Sep 2024 09:55:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Sep 2024 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.2 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2024/prestashop-8-2-0-available/</link>
+      <pubDate>Thu, 26 Sep 2024 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-2-0-available/</guid>
+      <description>It&amp;rsquo;s been decided to release a new minor version of PrestaShop 8.2. This version includes a few improvements, as well as bug fixes.
+What&amp;rsquo;s new in PrestaShop 8.2? PrestaShop 8.2 is a minor version that includes a few improvements, as well as bug fixes, and it is relatively small compared to the previous minor versions. Here are some highlights.
+Improvements Correctly checking overrides during module installation
+PrestaShop used to check for overrides during module installation, but the process didn’t fully block installation if a conflicting override was found.</description>
+    </item>
+    
     <item>
       <title>OW2 Webinar - PrestaShop Presentation on September 26</title>
       <link>https://build.prestashop-project.org/news/2024/OW2WebinarPrestaShopPresentation/</link>
@@ -146,17 +158,6 @@ PrestaShop Live Update - April 2024 In our fourth Live Update, our special guest
       <guid>https://build.prestashop-project.org/news/2024/upcoming-live-update-april-2024/</guid>
       <description>The next Live Update for the PrestaShop Project in 2024 will happen on Wednesday, April 17th, 2024 at 4 pm (Paris time) on YouTube!
 In the upcoming Live Update, we will be providing updates on the latest developments in the PrestaShop Project, including PrestaShop 8.1.5 and the upcoming version 9. Additionally, we are excited to announce a presentation introducing the Performance Project by QA Performance Specialist from PrestaShop SA, @elyesnaouar.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.1.5 Is Available</title>
-      <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-5-maintenance-release/</link>
-      <pubDate>Tue, 19 Mar 2024 09:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-5-maintenance-release/</guid>
-      <description>Another patch for PrestaShop 8.1 is available. This release contains interesting improvements as well as a number of bug fixes. In this article, we’ll lean into them because there’s plenty to write about!
-PrestaShop 8.1.5 is available. This release fixes some bugs but also brings a lot of improvements.
-It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.</description>
     </item>
     
   </channel>

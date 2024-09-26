@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>8.2.x on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/8.2.x/</link>
+    <description>Recent content in 8.2.x on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Sep 2024 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/8.2.x/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.2 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2024/prestashop-8-2-0-available/</link>
+      <pubDate>Thu, 26 Sep 2024 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-2-0-available/</guid>
+      <description>It&amp;rsquo;s been decided to release a new minor version of PrestaShop 8.2. This version includes a few improvements, as well as bug fixes.
+What&amp;rsquo;s new in PrestaShop 8.2? PrestaShop 8.2 is a minor version that includes a few improvements, as well as bug fixes, and it is relatively small compared to the previous minor versions. Here are some highlights.
+Improvements Correctly checking overrides during module installation
+PrestaShop used to check for overrides during module installation, but the process didn’t fully block installation if a conflicting override was found.</description>
+    </item>
+    
+  </channel>
+</rss>

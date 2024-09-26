@@ -88,4 +88,4 @@ The [1-Click Upgrade module](https://github.com/PrestaShop/autoupgrade) for this
 
 A big thank you to people who contributed to Pull Requests included in this version:
 
-TBD
+ChronoBrake, Codencode, Hlavtox, Jonathan Renard, Ludovic Cardinale, Mathieu Ferment, Matthieu Rolland, Max Azan, maxldn5, Mouleeswaran Ganapathi, PrestaEdit, ShaiMagal

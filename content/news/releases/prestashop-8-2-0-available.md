@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.2 Is Available
 subtitle: A new minor version of PrestaShop is now available
-date: 2024-09-10
+date: 2024-09-26
 authors: [ PrestaShop ]
 image: /assets/images/2024/09/banner_8.2_1200x627.jpg
 opengraph_image: /assets/images/2024/09/banner_8.2_1200x627.jpg

@@ -13,7 +13,7 @@ tags:
 
 The world of ecommerce is constantly evolving, and staying on top of the latest trends and innovations is essential for developers and businesses. That’s why we are thrilled to [invite you](https://events.prestashop.com/prestashop-developer-conference/fr) to the second edition of the PrestaShop Developer Conference, taking place on November 6, 2024, in Paris. 
 
-![Register_Developer_Conference](/assets/images/2024/10/RegisterDeveloperConference24.jpeg)
+![Register_Developer_Conference](/assets/images/2024/10/PrestaShopDeveloperConferenceRegistrationTalk.jpeg)
 
 ## Why Attend the Conference?
 

@@ -42,19 +42,19 @@ Discover the latest community-driven projects, get details on upcoming events, a
   </div>
 </div>
 
-<a href="javascript:void(0);" onclick="toggleTerms()">Show terms and conditions</a>
+<a href="javascript:void(0);" onclick="toggleTerms()">* Show terms and conditions</a>
 
 <div id="terms" style="display: none;">
 This offer is organized by PrestaShop SA.
 
-Participants who have registered with a valid email address for the PrestaShop Project Newsletter between October 8th and November 5th are eligible for the contest.
+Participants who have registered with a valid email address for the PrestaShop Project Newsletter between October 21st and November 5th are eligible for the contest.
 
 The PrestaShop team will randomly select 6 winners and announce them during the PrestaShop Developer Conference on November 6, 2024. The draws are not cumulative. In the days following the draw, the winners will also be notified using the email address they provided when registering for the newsletter.
 
 The prizes are awarded in the form of:
-- 2 vouchers for 100 EUR valid on the PrestaShop Marketplace, usable until DD/MM/YYYY
-- 2 vouchers for free annual subscription on the PrestaShop Academy, usable until DD/MM/YYYY
-- 2 vouchers for 25% off for training sessions on the PrestaShop Academy, usable until DD/MM/YY
+- 2 vouchers for 100 EUR valid on the PrestaShop Marketplace, usable until 21/04/2025
+- 2 vouchers for free annual subscription on the PrestaShop Academy, usable until 21/04/2025
+- 2 vouchers for 25% off for training sessions on the PrestaShop Academy, usable until 21/04/2025
 
 The voucher is received as is and may not be exchanged, taken back, or subject to any financial consideration. 
 

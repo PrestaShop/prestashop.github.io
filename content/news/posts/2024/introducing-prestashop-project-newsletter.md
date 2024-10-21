@@ -28,11 +28,11 @@ Learn about the details of new versions, releases, and enhancements that can imp
 Discover the latest community-driven projects, get details on upcoming events, and enjoy exclusive content that gives you a broader perspective on what’s happening in the PrestaShop ecosystem. 
 
 <style>
-  #prizes-for-our-newsletter-subscribers- { margin-top: 0; border-bottom: 1px solid #000; }
+  #prizes-for-our-newsletter-subscribers { margin-top: 0; border-bottom: 1px solid #000; }
 </style>
 <div class="newsletter-prizes-announcement" style="padding: 10px; background:  #a2e2ef;">
   <div style="padding: 30px 20px; background: #a2e2ef; border: 10px solid white;">
-  ## Prizes for Our Newsletter Subscribers! 🏆 
+  <h2 id="prizes-for-our-newsletter-subscribers">Prizes for Our Newsletter Subscribers! 🏆</h2> 
 
   To celebrate the launch, PrestaShop SA is offering 6 exciting prizes* for those who subscribe before the Developer Conference. The prize winners will be announced during the PrestaShop Developer Conference on November 6, 2024. The prizes include:
 

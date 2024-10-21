@@ -15,15 +15,15 @@ The launch of this newsletter is happening now, and the timing is no coincidence
 
 The PrestaShop Project Newsletter will keep you updated on all technical things in the PrestaShop ecosystem. Here's what you can expect when you sign up:
 
-**1. Exclusive Technical Insights and Updates**
+**1. Exclusive technical insights and updates**
 
-Stay informed about the latest advancements, features, and technical improvements in the PrestaShop software. Our newsletter will be your go-to source for deep dives into updates, best practices, and behind-the-scenes information that will help you make the most of the platform.
+Stay informed about the latest advancements, features, and technical improvements in PrestaShop software. Our newsletter will be your go-to source for deep dives into updates, best practices, and behind-the-scenes information that will help you make the most of the platform.
 
-**2. Regular Software Releases and New Features**
+**2. Regular software releases and new features**
 
 Learn about the details of new versions, releases, and enhancements that can improve your online store's performance, security, and functionality.
 
-**3. Community Projects, Events and more**
+**3. Community projects, events and more**
 
 Discover the latest community-driven projects, get details on upcoming events, and enjoy exclusive content that gives you a broader perspective on what’s happening in the PrestaShop ecosystem. 
 

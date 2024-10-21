@@ -1,9 +1,10 @@
 ---
 layout: page
 title: PrestaShop Project Newsletter
+hidden: true
 ---
 
-To stay up-to-date with the latest news and updates from the PrestaShop project, subscribe to our newsletter!
+To stay up-to-date with regular updates on the PrestaShop Project, software releases as well as features, upcoming events and technical news, subscribe to our newsletter!
 
 <hr>
 

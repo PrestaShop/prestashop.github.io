@@ -24,10 +24,10 @@ It was over an hour of speaking about the project and the future of PrestaShop. 
 
 - [00:00](https://www.youtube.com/watch?v=BfQzUWhQJCE&t) Beginning of the session: the introduction
 - [03:29](https://youtu.be/BfQzUWhQJCE?t=205) Project news: PrestaShop 8.2 is available
-- [15:13](https://youtu.be/BfQzUWhQJCE?t=909) Project news: launch of the PrestaShop Project Newsletter
+- [15:13](https://youtu.be/BfQzUWhQJCE?t=909) Project news: launch of the PrestaShop Project newsletter
 - [20:29](https://youtu.be/BfQzUWhQJCE?t=1228) Project news: PrestaShop Developer Conference 2024
 - [37:34](https://youtu.be/BfQzUWhQJCE?t=2254) Project news: PrestaShop 9
-- [46:01](https://youtu.be/BfQzUWhQJCE?t=2756) Project news: PrestaShop Developer Documentation
+- [46:01](https://youtu.be/BfQzUWhQJCE?t=2756) Project news: PrestaShop developer documentation
 - [54:42](https://youtu.be/BfQzUWhQJCE?t=3282) Q&A session
 
 You can use the timestamps to jump directly to the parts you want to watch.
@@ -38,11 +38,11 @@ Remember that you can ask your questions during the presentation or beforehand. 
 
 {{< cta "https://www.youtube.com/watch?v=BfQzUWhQJCE&t" "info" >}}Watch replay on YouTube{{< /cta >}}
 
-Below are links to projects mentioned during this live update:
+Below are links to projects mentioned during this Live Update:
 
 - [PrestaShop 8.2 release notes]({{< relref "/news/releases/prestashop-8-2-0-available" >}})
 - [PrestaShop 9 Alpha 1 release notes]({{< relref "/news/releases/prestashop-9-alpha1-available" >}})
-- [PrestaShop Project Newsletter]({{< relref "/news/posts/2024/introducing-prestashop-project-newsletter" >}})
+- [PrestaShop Project newsletter]({{< relref "/news/posts/2024/introducing-prestashop-project-newsletter" >}})
 - [PrestaShop Developer Conference 2024](https://events.prestashop.com/prestashop-developer-conference/en/sessions)
 - [PrestaShop 9.0.x branch on GitHub](https://github.com/PrestaShop/PrestaShop/tree/9.0.x)
 - [Documentation for PrestaShop 9](https://devdocs.prestashop-project.org/9/)

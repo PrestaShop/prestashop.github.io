@@ -2,7 +2,7 @@
 layout: post
 title: Event Synopsis - PrestaShop Developer Conference 2024
 subtitle: Discover what happened at PrestaShop's second Developer Conference in Paris
-date: 2024-11-19 10:00:00
+date: 2024-11-19
 authors: [ coffrep ]
 icon: icon-leaf
 tags:

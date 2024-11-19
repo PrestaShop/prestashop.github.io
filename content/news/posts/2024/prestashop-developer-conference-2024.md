@@ -2,7 +2,7 @@
 layout: post
 title: Event Synopsis - PrestaShop Developer Conference 2024
 subtitle: Discover what happened at PrestaShop's second Developer Conference in Paris
-date: 2024-11-18 10:00:00
+date: 2024-11-19 10:00:00
 authors: [ coffrep ]
 icon: icon-leaf
 tags:
@@ -38,7 +38,7 @@ The day featured more than 20 presentations by 33 speakers, many of whom travele
 
 After the tech room closed, the main stage hosted a presentation with Alexis Guyomar, Thomas Nabord, and Géric Fossé from PrestaShop, where they talked about the critical topic of upgrades - a longstanding focus in our ecosystem. Géric's team is dedicated to delivering the best possible experience, making upgrades even more secure and steady for users. You’ll soon have the chance to learn more about the Upgrade Assistant in an upcoming Live Update! 
 
-Then came the Q&A session with the PrestaShop Team, where Eric Sénéchal, PrestaShop’s Managing Director, Olivier Fontenelle, PrestaShop’s Chief Technology Officer and Clément Paillasse, PrestaShop’s Chief Product Officer, came to answer questions the audience had for them. Many topics were discussed, including PrestaShop’s upcoming releases, the transition to versions 8 and 9 where a deprecation policy is being prepared to facilitate upgrades, the PrestaShop Marketplace - Dimitri Mouillard joined to help answer questions. Mathieu Ferment also emphasized security is a collective effort within the PrestaShop module ecosystem, which should be strengthened from the design phase to reduce associated risks and costs. There were many questions that received detailed answers, making this session undeniably one of the most impactful moments of the conference.
+Then came the Q&A session with the PrestaShop Team, where Eric Sénéchal, PrestaShop’s Managing Director, Olivier Fontenelle, PrestaShop’s Chief Technology Officer and Clément Paillasse, PrestaShop’s Chief Product Officer, came to answer questions the audience had for them. Many topics were discussed, including PrestaShop’s upcoming releases, the transition to versions 8 and 9 where a deprecation policy is being prepared to facilitate upgrades, the PrestaShop Marketplace - Dimitri Mouillard joined to help answer those questions. Mathieu Ferment also emphasized security is a collective effort within the PrestaShop module ecosystem, which should be strengthened from the design phase to reduce associated risks and costs. There were many questions that received detailed answers, making this session undeniably one of the most impactful moments of the conference.
 
 At the end of the day, the PrestaShop Project newsletter prize winners were announced. For this special occasion, Dimitri Mouillard came on stage, with Cécile Biedermann, PrestaShop’s Global Head of Communication and Events, Mathieu Ferment, Engineering Manager at PrestaShop and Thomas Rayrat, Profileo’s Managing Director. Thomas had the task of picking out winners from a PrestaShop tote bag that included names of all contest entries, to select winners for six different prizes.
 

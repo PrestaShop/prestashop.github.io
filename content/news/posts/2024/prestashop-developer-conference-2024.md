@@ -56,4 +56,4 @@ If you couldn’t attend, look out for our upcoming blog posts for more conferen
 
 ### Get all your news from the project
 
-Want to be the first to know about the next edition of the PrestaShop Developer Conference? Curious about exclusive content, session recaps, and insights from the 2024 conference? Don’t miss out! By subscribing to our newsletter, you’ll stay informed on all the latest PrestaShop news, upcoming events, and valuable resources for developers and agencies alike. Join our community and subscribe below to make sure you’re always in the loop!
+Want to be the first to know about the next edition of the PrestaShop Developer Conference? Curious about exclusive content, session recaps, and insights from the 2024 conference? Don’t miss out! By [subscribing to our newsletter](#subscribe-button), you’ll stay informed on all the latest PrestaShop news, upcoming events, and valuable resources for developers and agencies alike. Join our community and subscribe below to make sure you’re always in the loop!

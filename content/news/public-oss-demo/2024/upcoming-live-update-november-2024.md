@@ -12,7 +12,7 @@ The next Live Update for the PrestaShop Project in 2024 will happen on **Wednesd
 
 We promised to bring you presentations from the PrestaShop Developer Conference 2024, and we are keeping our word!
 
-One of the highlights of this upcoming Live Update will be the presentation titled **"Long live Update Assistant!"** by members of the Seamless Upgrade & Extensibility team. This presentation, originally showcased at the PrestaShop Developer Conference 2024, has been highly anticipated by the community. It will be a great opportunity to learn more about the developments in the [autoupgrade](https://github.com/PrestaShop/autoupgrade) module, and to see how the *Update Assistant* will help you update your PrestaShop store to the latest version in the future.
+One of the highlights of this upcoming Live Update will be the presentation titled **"Long live the update assistant: strengthening trust in your shop's updates"** by members of the Seamless Upgrade & Extensibility team from PrestaShop SA. This presentation, originally showcased at the PrestaShop Developer Conference 2024, has been highly anticipated by the community. It will be a great opportunity to learn more about the developments in the [autoupgrade](https://github.com/PrestaShop/autoupgrade) module, and to see how the *Update Assistant* will help you update your PrestaShop store to the latest version in the future.
 
 Make sure to mark your calendars and join us for this exciting event!
 

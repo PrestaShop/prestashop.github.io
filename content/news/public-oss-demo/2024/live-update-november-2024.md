@@ -12,7 +12,7 @@ On November 27th, 2024, we held another Live Update for the PrestaShop Project w
 
 ## PrestaShop Live Update - November 2024
 
-During this Live Update, members of the Seamless Upgrade and extensibility team from PrestaShop SA presented an upcoming seventh version of the [autoupgrade](https://github.com/PrestaShop/autoupgrade) module, which will now be called the Upgrade Assistant module.
+During this Live Update, members of the Seamless Upgrade and extensibility team from PrestaShop SA presented an upcoming seventh version of the [autoupgrade](https://github.com/PrestaShop/autoupgrade) module, which will now be called the Upgrade Assistant module. This presentation was originally showcased at the PrestaShop Developer Conference 2024, and we were happy to bring it to you during this Live Update.
 
 I also talked briefly about the [PrestaShop Developer Conference](https://events.prestashop.com/prestashop-developer-conference/en/sessions) and reminded you about the [PrestaShop Project Newsletter]({{< relref "/news/posts/2024/introducing-prestashop-project-newsletter" >}}), a new initiative we launched recently.
 

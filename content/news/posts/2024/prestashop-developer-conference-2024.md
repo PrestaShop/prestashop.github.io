@@ -58,6 +58,12 @@ If you couldn’t attend, look out for our upcoming blog posts for more conferen
 
 Want to be the first to know about the next edition of the PrestaShop Developer Conference? Curious about exclusive content, session recaps, and insights from the 2024 conference? Don’t miss out! By [subscribing to our newsletter](#subscribe-button), you’ll stay informed on all the latest PrestaShop news, upcoming events, and valuable resources for developers and agencies alike. Join our community and subscribe below to make sure you’re always in the loop!
 
+### Video interviews during the conference
+
+In this video, filmed at the PrestaShop Developer Conference, you'll hear from various speakers and PrestaShop team members as they share their insights as well as advice.
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="fr" dir="ltr">Découvrez les voix qui façonnent notre écosystème 🎙️<br>Lors de la récente <a href="https://twitter.com/hashtag/PrestaShopDevCon?src=hash&amp;ref_src=twsrc%5Etfw">#PrestaShopDevCon</a>, nous avons interviewé des experts qui ont partagé leurs visions et leurs conseils 📹 <a href="https://t.co/55jUS9QoAR">pic.twitter.com/55jUS9QoAR</a></p>&mdash; PrestaShop (@PrestaShop) <a href="https://twitter.com/PrestaShop/status/1862175984360870209?ref_src=twsrc%5Etfw">November 28, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Thank you to our sponsors
 
 We would like to extend a special thank you to our sponsors for their support of the 2024 PrestaShop Developer Conference.

@@ -83,7 +83,7 @@ Each package now has its own Vite configuration: `vite.config` files, except for
 
 ![desired_changeset](/assets/images/2024/12/desiredchangeset.png)
 
-Use of Chromatic to facilitate reviews and testing by the Design team.
+Use of Chromatic to facilitate reviews and testing by the design team.
 
 ![use_chromatic](/assets/images/2024/12/usechromatic.png)
 

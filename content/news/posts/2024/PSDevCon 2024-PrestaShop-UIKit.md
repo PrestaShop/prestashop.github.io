@@ -3,7 +3,7 @@ layout: post
 title: PSDevCon 2024 - PUIK (PrestaShop UI Kit) - The new UI kit from PrestaShop
 subtitle: Explore a summary of the PUIK presentation delivered at the second PrestaShop Developer Conference
 date: 2024-12-12
-authors: [ PrestaShop ]
+authors: [ mattgoud ]
 icon: icon-leaf
 tags: [news, event]
 ---

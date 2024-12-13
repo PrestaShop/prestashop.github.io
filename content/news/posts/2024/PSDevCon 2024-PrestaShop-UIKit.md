@@ -20,7 +20,7 @@ The initial objective was to provide the same components to ensure consistency a
 
 The choice of Vue.js was driven by its widespread use among the teams. Another major reason is that the PrestaShop solution itself incorporates this framework: some back office pages and modules already use Vue.js.
 
-### Architecture version 2
+### Architecture in version 2
 
 The current version of PUIK at the time of writing this article is 2.3.0.
 

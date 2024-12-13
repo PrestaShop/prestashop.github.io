@@ -29,11 +29,11 @@ While still maintained for critical bugs, the first version will eventually be d
 For the remainder of this article, we will focus on this new iteration of PUIK!
 
 Version 2 is characterized by a significant architectural change, adopting a more modern monorepo structure. PUIK is now divided into five packages available on the public NPM registry, including the introduction of a new component library using web-components:  
-**@prestashopcorp/puik-components** : Vue.js component library  
-**@prestashopcorp/puik-web-components** : Library of Web-components  
-**@prestashopcorp/puik-resolver** : Resolver for on-demand auto-import of Vue components (unplugin-vue-components).  
-**@prestashopcorp/puik-theme** : Library containing all the CSS component classes.  
-**@prestashopcorp/puik-tailwind-preset** : Tailwind CSS preset containing all the design tokens.  
+**@prestashopcorp/puik-components**: Vue.js component library  
+**@prestashopcorp/puik-web-components**: Library of Web-components  
+**@prestashopcorp/puik-resolver**: Resolver for on-demand auto-import of Vue components (unplugin-vue-components).  
+**@prestashopcorp/puik-theme**: Library containing all the CSS component classes.  
+**@prestashopcorp/puik-tailwind-preset**: Tailwind CSS preset containing all the design tokens.  
 
 ## Discovering the library
 

@@ -73,7 +73,7 @@ packages:
   - docs
   - playground
 ```
-Each package now has its own Vite configuration: vite.config files, except for puik-theme, which is processed with Sass and PostCSS during compilation.
+Each package now has its own Vite configuration: `vite.config` files, except for `puik-theme`, which is processed with Sass and PostCSS during compilation.
 
 ### Versioning with changesets
 

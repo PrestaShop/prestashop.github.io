@@ -87,7 +87,7 @@ Use of Chromatic to facilitate reviews and testing by the design team.
 
 ![use_chromatic](/assets/images/2024/12/usechromatic.png)
 
-Chromatic is a solution that provides a graphical interface, integrated with Storybook, enabling the Design team to perform the review and validate visual tests.
+Chromatic is a solution that provides a graphical interface, integrated with Storybook, enabling the design team to perform the review and validate visual tests.
 Through a GitHub Action, a new Chromatic build is created for each pull request made on the main branch of the repository. 
 
 Chromatic interface: 

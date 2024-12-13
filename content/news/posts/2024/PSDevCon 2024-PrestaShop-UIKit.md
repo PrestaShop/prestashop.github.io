@@ -149,7 +149,7 @@ The main advantage of this method is that it allows retaining all the existing l
 
 For more details, refer to the official documentation [here](https://vuejs.org/guide/extras/web-components).
 
-However, there are some limitations. For example, certain advanced features of Vue, such as slotProps, are not available when used as web-components. This may require adjustments or compromises when implementing complex components.
+However, there are some limitations. For example, certain advanced features of Vue, such as `slotProps`, are not available when used as web-components. This may require adjustments or compromises when implementing complex components.
 
 Despite these constraints, using defineCustomElement offers an elegant solution to easily integrate PUIK components into non-Vue projects, thus promoting greater flexibility and interoperability of the library.
 

@@ -24,7 +24,7 @@ The choice of Vue.js was driven by its widespread use among the teams. Another m
 
 The current version of PUIK at the time of writing this article is 2.3.0.
 
-The first version, while still maintained for critical bugs, will eventually be deprecated once all teams have migrated to the second version.
+While still maintained for critical bugs, the first version will eventually be deprecated.
 
 For the remainder of this article, we will focus on this new iteration of PUIK!
 

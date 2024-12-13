@@ -164,7 +164,7 @@ Usage example:
 ## Areas for improvements
 
 Puik is still under development, and many improvements are on the way!
-Here are some ideas being considered:
+Here are some ideas being considered by the PrestaShop SA team working on PUIK:
 
 **Documentation**
 

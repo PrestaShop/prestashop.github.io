@@ -18,7 +18,7 @@ Learn how this library aims to provide a complete set of reusable components for
 PUIK is a library of UI components developed in Vue 3. It is an open source project under the MIT license, not to be confused with the [UI kit]( https://github.com/PrestaShop/prestashop-ui-kit) of PrestaShop, which is integrated into the PrestaShop solution and uses Bootstrap for styling and jQuery for interactivity.
 The initial objective was to provide the same components to ensure consistency and address the need for design uniformity across the products and services offered within the PrestaShop ecosystem.
 
-The choice of Vue.Js was driven by its widespread use among the teams. Another major reason is that the PrestaShop solution itself incorporates this framework: some back-office pages and modules already use Vue.Js.
+The choice of Vue.js was driven by its widespread use among the teams. Another major reason is that the PrestaShop solution itself incorporates this framework: some back office pages and modules already use Vue.js.
 
 ### Architecture version 2
 

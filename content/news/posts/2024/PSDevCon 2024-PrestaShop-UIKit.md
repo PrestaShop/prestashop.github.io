@@ -161,7 +161,7 @@ Usage example:
 
 ![custom_usage](/assets/images/2024/12/customusage.png)
 
-## AREAS FOR IMPROVEMENT ##
+## Areas for improvements
 
 Puik is still under development, and many improvements are on the way!
 Here are some ideas being considered:

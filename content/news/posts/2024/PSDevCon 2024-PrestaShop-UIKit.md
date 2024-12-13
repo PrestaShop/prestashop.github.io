@@ -8,7 +8,7 @@ icon: icon-leaf
 tags: [news, event]
 ---
 
-During the second PrestaShop Developer Conference on November 6, 2024, Matthias Goudjil introduced PUIK (PrestaShop UI Kit). This blog post provides a written summary of his presentation. During the talk, participants gained a clearer understanding of PrestaShop's UI Kit, based on the new PrestaShop Design System. 
+During the second PrestaShop Developer Conference on November 6, 2024, [Matthias Goudjil](https://github.com/mattgoud) introduced PUIK (PrestaShop UI Kit). This blog post provides a written summary of his presentation. During the talk, participants gained a clearer understanding of PrestaShop's UI Kit, based on the new PrestaShop Design System. 
 Learn how this library aims to provide a complete set of reusable components for the entire PrestaShop ecosystem. The GitHub repository is [available here](https://github.com/PrestaShopCorp/puik).
 
 ## Introduction

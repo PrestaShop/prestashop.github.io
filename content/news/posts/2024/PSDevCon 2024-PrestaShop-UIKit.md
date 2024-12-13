@@ -104,7 +104,7 @@ Example - creating the awesome-component:
 pnpm component awesome-component
 ```
 
-From the root folder _templates, Hygen generates all the necessary files for the component or injects new lines of code as needed if existing files need to be updated.
+From the root folder `_templates`, Hygen generates all the necessary files for the component or injects new lines of code as needed if existing files need to be updated.
 
 Example of a Hygen file (EJS template language) with configuration options (file path, position of code lines to inject into existing files, etc.):  
 

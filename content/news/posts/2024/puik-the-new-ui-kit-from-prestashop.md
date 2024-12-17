@@ -2,10 +2,10 @@
 layout: post
 title: PSDevCon 2024 - PUIK (PrestaShop UI Kit) - The new UI kit from PrestaShop
 subtitle: Explore a summary of the PUIK presentation delivered at the second PrestaShop Developer Conference
-date: 2024-12-12
+date: 2024-12-18
 authors: [ mattgoud ]
 icon: icon-leaf
-tags: [news, event]
+tags: [news, event, puik, design, ui, ux]
 ---
 
 During the second PrestaShop Developer Conference on November 6, 2024, I was able to introduce PUIK (PrestaShop UI Kit) to participants. This blog post provides a written summary of the presentation. During the talk, the audience gained a clearer understanding of PrestaShop's UI Kit, based on the new PrestaShop Design System. 
@@ -15,25 +15,26 @@ Learn how this library aims to provide a complete set of reusable components for
 
 ### Initial objective: create a library of UI components in Vue.js
 
-PUIK is a library of UI components developed in Vue 3. It is an open source project under the MIT license, not to be confused with the [UI kit]( https://github.com/PrestaShop/prestashop-ui-kit) of PrestaShop, which is integrated into the PrestaShop solution and uses Bootstrap for styling and jQuery for interactivity.
+PUIK is a library of UI components developed in [Vue 3](https://vuejs.org/). It is an open source project under the MIT license, not to be confused with the [UI kit]( https://github.com/PrestaShop/prestashop-ui-kit) of PrestaShop, which is integrated into the PrestaShop solution and uses Bootstrap for styling and jQuery for interactivity.
 The initial objective was to provide the same components to ensure consistency and address the need for design uniformity across the products and services offered within the PrestaShop ecosystem.
 
-The choice of Vue.js was driven by its widespread use among the teams. Another major reason is that the PrestaShop solution itself incorporates this framework: some back office pages and modules already use Vue.js.
+The choice of Vue.js was driven by its widespread use among the PrestaShop SA teams. Another major reason is that the PrestaShop solution itself incorporates this framework: some back office pages and modules already use Vue.js.
 
 ### Architecture in version 2
 
-The current version of PUIK at the time of writing this article is 2.3.0.
+The current version of PUIK at the time of writing this article is 2.3.0. While still maintained for critical bugs, the first version will eventually be deprecated.
 
-While still maintained for critical bugs, the first version will eventually be deprecated.
-
-For the remainder of this article, we will focus on this new iteration of PUIK!
+For the remainder of this article, we will focus on this **new** iteration of PUIK!
 
 Version 2 is characterized by a significant architectural change, adopting a more modern monorepo structure. PUIK is now divided into five packages available on the public NPM registry, including the introduction of a new component library using web-components:  
-**@prestashopcorp/puik-components**: Vue.js component library  
-**@prestashopcorp/puik-web-components**: Library of Web-components  
-**@prestashopcorp/puik-resolver**: Resolver for on-demand auto-import of Vue components (unplugin-vue-components).  
-**@prestashopcorp/puik-theme**: Library containing all the CSS component classes.  
-**@prestashopcorp/puik-tailwind-preset**: Tailwind CSS preset containing all the design tokens.  
+| Package Name | Description |
+|--------------|-------------|
+| @prestashopcorp/puik-components | Vue.js component library |
+| @prestashopcorp/puik-web-components | Library of Web-components |
+| @prestashopcorp/puik-resolver | Resolver for on-demand auto-import of Vue components (unplugin-vue-components) |
+| @prestashopcorp/puik-theme | Library containing all the CSS component classes |
+| @prestashopcorp/puik-tailwind-preset | Tailwind CSS preset containing all the design tokens |
+
 
 ## Discovering the library
 
@@ -46,17 +47,19 @@ You can explore and test them through the Storybook documentation [here](https:/
 ### The technical stack
 
 PUIK is built on a modern technical stack, integrating current best practices and technologies:  
-**Package manager**: PNPM  
-**Versioning**: Changesets  
-**Framework**: Vue 3  
-**Bundler**: Vite  
-**Documentation**: Storybook, Zeroheight  
-**External Libraries**: Headless UI, Radix Vue, Popper Js, Sortable Js  
-**Style**: Tailwind, Sass, PostCSS  
-**Tests**: Vitest  
-**Lint**: Eslint  
-**Review**: Chromatic  
-**DX**: Hygen.  
+| **Category**       | **Technology**                          |
+|--------------------|------------------------------------------|
+| **Package manager**| PNPM                                     |
+| **Versioning**     | Changesets                               |
+| **Framework**      | Vue 3                                    |
+| **Bundler**        | Vite                                     |
+| **Documentation**  | Storybook, Zeroheight                    |
+| **External Libraries** | Headless UI, Radix Vue, Popper Js, Sortable Js |
+| **Style**          | Tailwind, Sass, PostCSS                  |
+| **Tests**          | Vitest                                   |
+| **Lint**           | Eslint                                   |
+| **Review**         | Chromatic                                |
+| **DX**             | Hygen                                    |
 
 Let’s take a closer look at the technologies used:
 
@@ -77,9 +80,9 @@ Each package now has its own Vite configuration: `vite.config` files, except for
 
 ### Versioning with changesets
 
-[Changesets](https://github.com/changesets/changesets) allows for interactively incrementing version numbers while adhering to the [semVer](https://github.com/semver/semver) specification. The tool automatically detects version changes and applies necessary patches by identifying dependencies between packages within the workspace.
+[Changesets](https://github.com/changesets/changesets) allows for interactively incrementing version numbers while adhering to the [SemVer](https://github.com/semver/semver) specification. The tool automatically detects version changes and applies necessary patches by identifying dependencies between packages within the workspace.
 
-![versioning_changesets](/assets/images/2024/14/versioningchangesets.png)
+![versioning_changesets](/assets/images/2024/12/versioningchangesets.png)
 
 ![desired_changeset](/assets/images/2024/12/desiredchangeset.png)
 
@@ -98,7 +101,7 @@ Chromatic interface:
 
 Creating components with PUIK is simplified thanks to the Hygen template generator, allowing the creation of all files with a single command line! 
 
-Example - creating the awesome-component:
+**Example - creating the awesome-component:**
 
 ```
 pnpm component awesome-component
@@ -110,15 +113,15 @@ Example of a Hygen file (EJS template language) with configuration options (file
 
 ![hygen_configuration](/assets/images/2024/12/hygenconfiguration.png)
 
-Review of main files
+**Review of main files**
 
 In the component's src folder, there is an SFC file in Vue 3 (Composition API, using the script setup with the TS language, and a style tag configured with the SCSS language) and a TypeScript file primarily for defining props and emits.
 
-Example - PuikBadge component and its Vue file:
+**Example - PuikBadge component and its Vue file:**
 
 ![puik_vue_file](/assets/images/2024/12/puikvuefile.png)
 
-Example - PuikBadge component and its TypeScript file:
+**Example - PuikBadge component and its TypeScript file:**
 
 ![puik_tsfile](/assets/images/2024/12/puiktsfile.png)
 
@@ -168,7 +171,7 @@ Here are some ideas being considered by the PrestaShop SA team working on PUIK:
 
 **Documentation**
 
-In addition to Storybook, we are also considering creating more comprehensive documentation with Vitepress for a better user experience, providing, for example, templates with multiple components (Puik Experience project).
+In addition to Storybook, we are also considering creating more comprehensive documentation with [Vitepress](https://vitepress.dev/) for a better user experience, providing, for example, templates with multiple components (Puik Experience project).
 
 **Development of new components and refactoring**
 
@@ -192,7 +195,7 @@ In parallel, the open source PrestaShop project is also continuously evolving. T
 
 ## Acknowledgements ##
 
-To conclude this presentation, we would like to take the opportunity to remind everyone that the success of PUIK relies on an active and engaged community. The current and voluntary contributions come from all the different squads of PrestaShop.
+To conclude this presentation, we would like to take the opportunity to remind everyone that the success of PUIK relies on an active and engaged community. The current and voluntary contributions come from all the different squads of PrestaShop SA.
 
 We would like to warmly thank all the contributors for their efforts and dedication.
 
@@ -200,7 +203,7 @@ Thank you to them!
 
 ### Here are some useful links ###
 
-Github Repository: https://github.com/PrestaShopCorp/puik  
-NPM registry: https://www.npmjs.com/package/@prestashopcorp/puik  
-Documentation: https://uikit.prestashop.com  
-Medium articles: https://medium.com/prestashop-product-tech/design-system-5-biblioth%C3%A8ques-pour-une-contribution-structur%C3%A9e-sans-perdre-en-cr%C3%A9ativit%C3%A9-819fd1b7913a  
+- [Github Repository](https://github.com/PrestaShopCorp/puik)
+- [NPM registry](https://www.npmjs.com/package/@prestashopcorp/puik)
+- [Documentation](https://uikit.prestashop.com)
+- [Medium articles (in French)](https://medium.com/prestashop-product-tech/design-system-5-biblioth%C3%A8ques-pour-une-contribution-structur%C3%A9e-sans-perdre-en-cr%C3%A9ativit%C3%A9-819fd1b7913a)

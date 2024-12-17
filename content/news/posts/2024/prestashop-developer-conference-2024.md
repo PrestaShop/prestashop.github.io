@@ -5,7 +5,7 @@ subtitle: Discover what happened at PrestaShop's second Developer Conference in 
 date: 2024-11-19
 authors: [ coffrep ]
 icon: icon-leaf
-tags: [news, event]
+tags: [psdevcon, news, event]
 ---
 
 On November 6, 2024, the PrestaShop developer community gathered in Paris for a day of learning and networking at the second PrestaShop Developer Conference. The agenda was filled with insightful sessions and demonstrations. The event provided a platform to grow and learn more about PrestaShop’s ecosystem, get project information as well as explore advancements usable in daily professional activities.

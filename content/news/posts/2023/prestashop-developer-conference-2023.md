@@ -5,7 +5,7 @@ subtitle: "What happened at PrestaShop’s first technical conference?"
 date:   2023-12-21
 authors: [ coffrep ]
 icon: icon-leaf
-tags: [ news, event, community ]
+tags: [ psdevcon, news, event, community ]
 ---
 
 The European community of PrestaShop developers gathered to talk code, commerce and also open source in Paris, on November 30, 2023, at the [PrestaShop Developer Conference](https://events.prestashop.com/prestashop-developer-conference/en). It was so exciting to see approximately 150 people come to follow conferences and other technical presentations, as well as network during the day.

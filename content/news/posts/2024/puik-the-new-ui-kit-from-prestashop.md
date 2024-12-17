@@ -5,7 +5,7 @@ subtitle: Explore a summary of the PUIK presentation delivered at the second Pre
 date: 2024-12-18
 authors: [ mattgoud ]
 icon: icon-leaf
-tags: [news, event, puik, design, ui, ux]
+tags: [psdevcon, news, event, puik, design, ui, ux]
 ---
 
 During the second PrestaShop Developer Conference on November 6, 2024, I was able to introduce PUIK (PrestaShop UI Kit) to participants. This blog post provides a written summary of the presentation. During the talk, the audience gained a clearer understanding of PrestaShop's UI Kit, based on the new PrestaShop Design System. 

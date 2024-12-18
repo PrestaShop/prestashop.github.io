@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PSDevCon 2024 - PUIK (PrestaShop UI Kit) - The new UI kit from PrestaShop</title>
+    <link href="/style.css?1734509653" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PSDevCon 2024 - PUIK (PrestaShop UI Kit) - The new UI kit from PrestaShop" />
+<meta property="og:description" content="During the second PrestaShop Developer Conference on November 6, 2024, I was able to introduce PUIK (PrestaShop UI Kit) to participants. This blog post provides a written summary of the presentation. During the talk, the audience gained a clearer understanding of PrestaShop’s UI Kit, based on the new PrestaShop Design System. Learn how this library aims to provide a complete set of reusable components for the entire PrestaShop ecosystem. The GitHub repository is available here." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2024/puik-the-new-ui-kit-from-prestashop/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2024-12-18T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2024-12-18T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build-2024.png">
+<meta name="twitter:title" content="PSDevCon 2024 - PUIK (PrestaShop UI Kit) - The new UI kit from PrestaShop"/>
+<meta name="twitter:description" content="Explore a summary of the PUIK presentation delivered at the second PrestaShop Developer Conference"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip': false });
+			}
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PSDevCon 2024 - PUIK (PrestaShop UI Kit) - The new UI kit from PrestaShop</h1>
+              
+                <h3 class="post-subtitle">Explore a summary of the PUIK presentation delivered at the second PrestaShop Developer Conference</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/mattgoud/">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/99822883?v=4" alt="Matthias Goudjil's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/mattgoud/">Matthias Goudjil</a>
+      </div>
+        
+          <div class="author-display-role">Front-end Developer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Dec 18, 2024
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PSDevCon&#43;2024&#43;-&#43;PUIK&#43;%28PrestaShop&#43;UI&#43;Kit%29&#43;-&#43;The&#43;new&#43;UI&#43;kit&#43;from&#43;PrestaShop&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2024%2Fpuik-the-new-ui-kit-from-prestashop%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2024%2Fpuik-the-new-ui-kit-from-prestashop%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>During the second PrestaShop Developer Conference on November 6, 2024, I was able to introduce PUIK (PrestaShop UI Kit) to participants. This blog post provides a written summary of the presentation. During the talk, the audience gained a clearer understanding of PrestaShop&rsquo;s UI Kit, based on the new PrestaShop Design System.
+Learn how this library aims to provide a complete set of reusable components for the entire PrestaShop ecosystem. The GitHub repository is <a href="https://github.com/PrestaShopCorp/puik">available here</a>.</p>
+<h2 id="introduction">Introduction</h2>
+<h3 id="initial-objective-create-a-library-of-ui-components-in-vuejs">Initial objective: create a library of UI components in Vue.js</h3>
+<p>PUIK is a library of UI components developed in <a href="https://vuejs.org/">Vue 3</a>. It is an open source project under the MIT license, not to be confused with the <a href="https://github.com/PrestaShop/prestashop-ui-kit">UI kit</a> of PrestaShop, which is integrated into the PrestaShop solution and uses Bootstrap for styling and jQuery for interactivity.
+The initial objective was to provide the same components to ensure consistency and address the need for design uniformity across the products and services offered within the PrestaShop ecosystem.</p>
+<p>The choice of Vue.js was driven by its widespread use among the PrestaShop SA teams. Another major reason is that the PrestaShop solution itself incorporates this framework: some back office pages and modules already use Vue.js.</p>
+<h3 id="architecture-in-version-2">Architecture in version 2</h3>
+<p>The current version of PUIK at the time of writing this article is 2.3.0. While still maintained for critical bugs, the first version will eventually be deprecated.</p>
+<p>For the remainder of this article, we will focus on this <strong>new</strong> iteration of PUIK!</p>
+<p>Version 2 is characterized by a significant architectural change, adopting a more modern monorepo structure. PUIK is now divided into five packages available on the public NPM registry, including the introduction of a new component library using web-components:</p>
+<table>
+<thead>
+<tr>
+<th>Package Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@prestashopcorp/puik-components</td>
+<td>Vue.js component library</td>
+</tr>
+<tr>
+<td>@prestashopcorp/puik-web-components</td>
+<td>Library of Web-components</td>
+</tr>
+<tr>
+<td>@prestashopcorp/puik-resolver</td>
+<td>Resolver for on-demand auto-import of Vue components (unplugin-vue-components)</td>
+</tr>
+<tr>
+<td>@prestashopcorp/puik-theme</td>
+<td>Library containing all the CSS component classes</td>
+</tr>
+<tr>
+<td>@prestashopcorp/puik-tailwind-preset</td>
+<td>Tailwind CSS preset containing all the design tokens</td>
+</tr>
+</tbody>
+</table>
+<h2 id="discovering-the-library">Discovering the library</h2>
+<h3 id="available-components">Available components</h3>
+<p>Since its creation in late 2021, PUIK has matured and currently offers a fairly wide range of 35 Vue components as well as 27 web-components.</p>
+<p>You can explore and test them through the Storybook documentation <a href="https://uikit.prestashop.com/?path=/docs/docs-introduction--docs">here</a>.</p>
+<h3 id="the-technical-stack">The technical stack</h3>
+<p>PUIK is built on a modern technical stack, integrating current best practices and technologies:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Category</strong></th>
+<th><strong>Technology</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Package manager</strong></td>
+<td>PNPM</td>
+</tr>
+<tr>
+<td><strong>Versioning</strong></td>
+<td>Changesets</td>
+</tr>
+<tr>
+<td><strong>Framework</strong></td>
+<td>Vue 3</td>
+</tr>
+<tr>
+<td><strong>Bundler</strong></td>
+<td>Vite</td>
+</tr>
+<tr>
+<td><strong>Documentation</strong></td>
+<td>Storybook, Zeroheight</td>
+</tr>
+<tr>
+<td><strong>External Libraries</strong></td>
+<td>Headless UI, Radix Vue, Popper Js, Sortable Js</td>
+</tr>
+<tr>
+<td><strong>Style</strong></td>
+<td>Tailwind, Sass, PostCSS</td>
+</tr>
+<tr>
+<td><strong>Tests</strong></td>
+<td>Vitest</td>
+</tr>
+<tr>
+<td><strong>Lint</strong></td>
+<td>Eslint</td>
+</tr>
+<tr>
+<td><strong>Review</strong></td>
+<td>Chromatic</td>
+</tr>
+<tr>
+<td><strong>DX</strong></td>
+<td>Hygen</td>
+</tr>
+</tbody>
+</table>
+<p>Let’s take a closer look at the technologies used:</p>
+<p><strong>Package Manager</strong>: <a href="https://pnpm.io/">PNPM</a> since version 1.</p>
+<p>PNPM is perfectly suited to the project&rsquo;s new monorepo architecture as it natively supports the Workspace protocol.</p>
+<p>All the packages are located in the packages folder at the root of the repository, and the Storybook documentation is in the docs folder. The project also includes a Vue application for testing the components (playground).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//pnpm-workspace.yaml
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">packages:
+</span></span><span class="line"><span class="cl">  - packages/*
+</span></span><span class="line"><span class="cl">  - docs
+</span></span><span class="line"><span class="cl">  - playground
+</span></span></code></pre></div><p>Each package now has its own Vite configuration: <code>vite.config</code> files, except for <code>puik-theme</code>, which is processed with Sass and PostCSS during compilation.</p>
+<h3 id="versioning-with-changesets">Versioning with changesets</h3>
+<p><a href="https://github.com/changesets/changesets">Changesets</a> allows for interactively incrementing version numbers while adhering to the <a href="https://github.com/semver/semver">SemVer</a> specification. The tool automatically detects version changes and applies necessary patches by identifying dependencies between packages within the workspace.</p>
+<p><img src="/assets/images/2024/12/versioningchangesets.png" alt="versioning_changesets"></p>
+<p><img src="/assets/images/2024/12/desiredchangeset.png" alt="desired_changeset"></p>
+<p>Use of Chromatic to facilitate reviews and testing by the design team.</p>
+<p><img src="/assets/images/2024/12/usechromatic.png" alt="use_chromatic"></p>
+<p>Chromatic is a solution that provides a graphical interface, integrated with Storybook, enabling the design team to perform the review and validate visual tests.
+Through a GitHub Action, a new Chromatic build is created for each pull request made on the main branch of the repository.</p>
+<p>Chromatic interface:</p>
+<p><img src="/assets/images/2024/12/chromaticinterface.png" alt="chromatic_interface"></p>
+<h3 id="structure-of-a-component">Structure of a component</h3>
+<p>Creating components with PUIK is simplified thanks to the Hygen template generator, allowing the creation of all files with a single command line!</p>
+<p><strong>Example - creating the awesome-component:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pnpm component awesome-component
+</span></span></code></pre></div><p>From the root folder <code>_templates</code>, Hygen generates all the necessary files for the component or injects new lines of code as needed if existing files need to be updated.</p>
+<p>Example of a Hygen file (EJS template language) with configuration options (file path, position of code lines to inject into existing files, etc.):</p>
+<p><img src="/assets/images/2024/12/hygenconfiguration.png" alt="hygen_configuration"></p>
+<p><strong>Review of main files</strong></p>
+<p>In the component&rsquo;s src folder, there is an SFC file in Vue 3 (Composition API, using the script setup with the TS language, and a style tag configured with the SCSS language) and a TypeScript file primarily for defining props and emits.</p>
+<p><strong>Example - PuikBadge component and its Vue file:</strong></p>
+<p><img src="/assets/images/2024/12/puikvuefile.png" alt="puik_vue_file"></p>
+<p><strong>Example - PuikBadge component and its TypeScript file:</strong></p>
+<p><img src="/assets/images/2024/12/puiktsfile.png" alt="puik_tsfile"></p>
+<p>Two other subfolders (test and stories) contain, respectively, the Vitest file (based on Jest) for unit testing and the Storybook documentation files.</p>
+<p>Example - draft of <code>awesome-component.spec.ts</code> generated by Hygen with an initial test to verify that the component is indeed an instance of Vue.</p>
+<p><img src="/assets/images/2024/12/instancevue.png" alt="instance_vue"></p>
+<p>Example - draft of <code>awesome-component.storie.ts</code> generated by Hygen for Storybook documentation:</p>
+<p><img src="/assets/images/2024/12/storybookdocumentation.png" alt="storybook_documentation"></p>
+<p><strong>Puik-theme package and style conventions</strong></p>
+<p>The classes are prefixed with <code>puik-</code> and use Tailwind directives (@apply, @extend) within the SCSS classes.</p>
+<p>Thus, Tailwind classes are never used directly in the Vue template.
+Example - SCSS file <code>badge.scss</code>:</p>
+<p><img src="/assets/images/2024/12/scssfile.png" alt="scss_file"></p>
+<p><strong>Puik-web-component package</strong></p>
+<p>Web-components are created from Vue files using the native defineCustomElement method. This approach allows converting Vue components into web-components without having to fully recreate a dedicated variant.</p>
+<p>The main advantage of this method is that it allows retaining all the existing logic and code of the Vue components, thus making it easier to reuse them in different contexts, including those where using Vue is not possible or desired.</p>
+<p>For more details, refer to the official documentation <a href="https://vuejs.org/guide/extras/web-components">here</a>.</p>
+<p>However, there are some limitations. For example, certain advanced features of Vue, such as <code>slotProps</code>, are not available when used as web-components. This may require adjustments or compromises when implementing complex components.</p>
+<p>Despite these constraints, using <code>defineCustomElement</code> offers an elegant solution to easily integrate PUIK components into non-Vue projects, thus promoting greater flexibility and interoperability of the library.</p>
+<p>Creation of the custom element awesome-component:</p>
+<p><img src="/assets/images/2024/12/customelement.png" alt="custom_element"></p>
+<p>Usage example:</p>
+<p><img src="/assets/images/2024/12/customusage.png" alt="custom_usage"></p>
+<h2 id="areas-for-improvements">Areas for improvements</h2>
+<p>Puik is still under development, and many improvements are on the way!
+Here are some ideas being considered by the PrestaShop SA team working on PUIK:</p>
+<p><strong>Documentation</strong></p>
+<p>In addition to Storybook, we are also considering creating more comprehensive documentation with <a href="https://vitepress.dev/">Vitepress</a> for a better user experience, providing, for example, templates with multiple components (Puik Experience project).</p>
+<p><strong>Development of new components and refactoring</strong></p>
+<p>We will also continue to enhance the library and adapt certain components to make them compatible as a web-component.</p>
+<p><strong>Performance improvements</strong></p>
+<p>Optimizations are also planned to enhance performance and reduce the size of builds.</p>
+<p><strong>New features</strong></p>
+<p>We also plan to implement new features such as dark mode and RTL/LTR support.</p>
+<p><strong>New translations</strong></p>
+<p>Some textual elements (e.g., placeholders, etc.) are currently translated only into French and English. We aim to expand support for additional languages.</p>
+<h3 id="explore-new-use-cases-for-prestashop-with-puik">Explore new use cases for PrestaShop with PUIK</h3>
+<p>In parallel, the open source PrestaShop project is also continuously evolving. The next major release, version 9, will notably introduce a new API for the Back Office (API platform), paving the way for new interactions with the solution, such as the creation of Admin - headless - dashboards, where PUIK will naturally play a key role.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>To conclude this presentation, we would like to take the opportunity to remind everyone that the success of PUIK relies on an active and engaged community. The current and voluntary contributions come from all the different squads of PrestaShop SA.</p>
+<p>We would like to warmly thank all the contributors for their efforts and dedication.</p>
+<p>Thank you to them!</p>
+<h3 id="here-are-some-useful-links">Here are some useful links</h3>
+<ul>
+<li><a href="https://github.com/PrestaShopCorp/puik">Github Repository</a></li>
+<li><a href="https://www.npmjs.com/package/@prestashopcorp/puik">NPM registry</a></li>
+<li><a href="https://uikit.prestashop.com">Documentation</a></li>
+<li><a href="https://medium.com/prestashop-product-tech/design-system-5-biblioth%C3%A8ques-pour-une-contribution-structur%C3%A9e-sans-perdre-en-cr%C3%A9ativit%C3%A9-819fd1b7913a">Medium articles (in French)</a></li>
+</ul>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Dec 18, 2024</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/psdevcon/">psdevcon</a>
+
+  <a class="label label-primary" href="/tag/news/">news</a>
+
+  <a class="label label-primary" href="/tag/event/">event</a>
+
+  <a class="label label-primary" href="/tag/puik/">puik</a>
+
+  <a class="label label-primary" href="/tag/design/">design</a>
+
+  <a class="label label-primary" href="/tag/ui/">ui</a>
+
+  <a class="label label-primary" href="/tag/ux/">ux</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/mattgoud/">Matthias Goudjil</a>
+      <span>Front-end Developer</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2024\/puik-the-new-ui-kit-from-prestashop\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

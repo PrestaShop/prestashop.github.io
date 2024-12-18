@@ -6,7 +6,16 @@
     <description>Recent content in event on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/event/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Dec 2024 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/event/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PSDevCon 2024 - PUIK (PrestaShop UI Kit) - The new UI kit from PrestaShop</title>
+      <link>https://build.prestashop-project.org/news/2024/puik-the-new-ui-kit-from-prestashop/</link>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/puik-the-new-ui-kit-from-prestashop/</guid>
+      <description>During the second PrestaShop Developer Conference on November 6, 2024, I was able to introduce PUIK (PrestaShop UI Kit) to participants. This blog post provides a written summary of the presentation. During the talk, the audience gained a clearer understanding of PrestaShop&amp;rsquo;s UI Kit, based on the new PrestaShop Design System. Learn how this library aims to provide a complete set of reusable components for the entire PrestaShop ecosystem. The GitHub repository is available here.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Live Update - November 2024</title>
       <link>https://build.prestashop-project.org/news/2024/live-update-november-2024/</link>
@@ -149,17 +158,6 @@ Morgan highlighted some of the significant changes for solution authors in the P
       <guid>https://build.prestashop-project.org/news/2024/upcoming-live-update-march-2024/</guid>
       <description>The third Live Update for the PrestaShop Project in 2024 will happen on Wednesday, March 13th, 2024 at 4 pm (Paris time) on YouTube!
 In the upcoming Live Update, we turn our attention to PrestaShop 9, a version yet to be released. We&amp;rsquo;ll explore the significant breaking changes introduced in this new version. @M0rgan01 will specifically address the backward incompatible changes due to the new Symfony Framework version, changes that are especially relevant for module developers using the Symfony Framework in their solutions.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop Live Update - February 2024</title>
-      <link>https://build.prestashop-project.org/news/2024/live-update-february-2024/</link>
-      <pubDate>Thu, 08 Feb 2024 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/live-update-february-2024/</guid>
-      <description>The project&amp;rsquo;s live update was held for the second time in 2024. Read on for a recap of the session.
-PrestaShop Live Update - February 2024 The second live update in 2024 was held on February 7th, 2024. During the session, we had two presentations.
-Fabien Vallon, Lead Product Manager at PrestaShop, provided an exciting glimpse into the upcoming Core Upgrade application. This tool, set to be released later this year, promises to streamline the PrestaShop upgrade process, and we can&amp;rsquo;t wait to share more details with you.</description>
     </item>
     
   </channel>

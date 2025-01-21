@@ -31,7 +31,7 @@ Before getting to the matter, let's first explore the necessary setup. We are go
 
 *About this topic, you could pass the module name directly in the GitHub workflow by using the repository name. This will not be covered in this article.*
 
-/tests/phpstan.sh
+**/tests/phpstan.sh**
 
 ```
 #!/bin/bash
@@ -59,11 +59,11 @@ docker run --rm --volumes-from temp-ps \
        --configuration=/var/www/html/modules/modulenine/tests/phpstan/phpstan-$PS_VERSION.neon
 ```
 
-/tests/phpstan-v9.sh
+**/tests/phpstan-v9.sh**
 
 This is necessary to enable the `prestaedit/prestashop` registry use instead of prestashop/prestashop, as the Docker image for PrestaShop 9 will only be available upon its official release. Furthermore, the PhpStan version utilized is different, as it is compatible with PHP 8.1, among others.
 
-```
+```bash
 #!/bin/bash
 PS_VERSION=$1
 
@@ -124,7 +124,7 @@ Just like me [Editor’s Note: Jonathan Danse], you might feel the urge to modif
 
 Up next in the article, we will design a module aimed at illustrating the handling of errors.
 
-```
+```php
 <?php
 
 class ModuleNine extends Module
@@ -177,13 +177,13 @@ By viewing the details of a failed job, you can obtain the desired information:
 
 By modifying the module as follows, to add a condition on the code execution, you can rerun your job and the error will be gone.
 
-```
-    protected function prestashop8()
-    {
-        if (version_compare(_PS_VERSION_, '8.0.0', '<')) {
-            $temp = Carrier::getCarrierNameFromShopName();
-        }
+```php
+protected function prestashop8()
+{
+    if (version_compare(_PS_VERSION_, '8.0.0', '<')) {
+        $temp = Carrier::getCarrierNameFromShopName();
     }
+}
 ```
 
 You just reran the job and the error didn’t go away?! In reality, PhpStan - *although it knows the value of the constant PS_VERSION* - cannot interpret the conditional in the same way it doesn't know that your methods are never called.
@@ -201,7 +201,7 @@ parameters:
 For the sake of this article, we wanted to start with the introduction and the expected result regarding the use of PhpStan. With the goal of making this more automated, we will now write the GitHub workflow configuration.
 
 .github/workflows/php.yml
-```
+```yaml
 name: PHP tests
 on: [workflow_dispatch, pull_request]
 jobs:
@@ -407,3 +407,7 @@ act -j 'phpstan' --matrix presta-versions:8.1.7
 
 To conclude, thanks to the tips shared by Jonathan Danse during the PrestaShop Developer Conference 2024, you now have all the tools to automate the testing and analysis of your modules as well as ensure their quality. By adopting these best practices, you can deploy reliable and high-performing modules.
 To explore further, feel free to check the module sources presented in this article on this GitHub repository: [PrestaEdit/modulenine](https://github.com/PrestaEdit/modulenine).
+
+{{% notice type="note" title="Note" icon="file" %}}
+This article is a contribution from a member of the PrestaShop community, and not a PrestaShop employee. If you too want to help the community by sharing tips and advice on the Build devblog, [read this]({{< relref "/about#contribute" >}})!
+{{% /notice %}}

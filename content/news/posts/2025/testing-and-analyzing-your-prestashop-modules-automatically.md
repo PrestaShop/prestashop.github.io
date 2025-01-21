@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PSDevCon 2024 - testing and analyzing your modules automatically
+title: PSDevCon 2024 - testing and analyzing your PrestaShop modules automatically
 subtitle: Learn more about Jonathan Danse’s PrestaShop Developer Conference module presentation
 date: 2025-01-21
 authors: [ prestashop ]

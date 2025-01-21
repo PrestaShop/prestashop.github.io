@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>PSDevCon 2024 - testing and analyzing your PrestaShop modules automatically</title>
-    <link href="/style.css?1737469434" rel="stylesheet">
+    <link href="/style.css?1737470251" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -212,7 +212,7 @@ Over the course of both minor and major versions, PrestaShop introduces code cha
 <h3 id="configuration">Configuration</h3>
 <p>Before getting to the matter, let&rsquo;s first explore the necessary setup. We are going to create two shell script files. In our example, we use the module name directly in the file, without using a variable.</p>
 <p><em>About this topic, you could pass the module name directly in the GitHub workflow by using the repository name. This will not be covered in this article.</em></p>
-<p>/tests/phpstan.sh</p>
+<p><strong>/tests/phpstan.sh</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">PS_VERSION</span><span class="o">=</span><span class="nv">$1</span>
 </span></span><span class="line"><span class="cl">
@@ -236,7 +236,7 @@ Over the course of both minor and major versions, PrestaShop introduces code cha
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>       --workdir<span class="o">=</span>/var/www/html/modules/modulenine phpstan/phpstan:0.12.54 <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>       analyse <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>       --configuration<span class="o">=</span>/var/www/html/modules/modulenine/tests/phpstan/phpstan-<span class="nv">$PS_VERSION</span>.neon
-</span></span></code></pre></div><p>/tests/phpstan-v9.sh</p>
+</span></span></code></pre></div><p><strong>/tests/phpstan-v9.sh</strong></p>
 <p>This is necessary to enable the <code>prestaedit/prestashop</code> registry use instead of prestashop/prestashop, as the Docker image for PrestaShop 9 will only be available upon its official release. Furthermore, the PhpStan version utilized is different, as it is compatible with PHP 8.1, among others.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">PS_VERSION</span><span class="o">=</span><span class="nv">$1</span>
@@ -288,42 +288,42 @@ Over the course of both minor and major versions, PrestaShop introduces code cha
 <p>Just like me [Editor’s Note: Jonathan Danse], you might feel the urge to modify the call to PhpStan configuration files - which we will write later - to use a single file, as the content is identical. But no, you will not do that. This division into files will be necessary for us later.</p>
 <h2 id="module">Module</h2>
 <p>Up next in the article, we will design a module aimed at illustrating the handling of errors.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;?php
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">class ModuleNine extends Module
-</span></span><span class="line"><span class="cl">{
-</span></span><span class="line"><span class="cl">    public function __construct()
-</span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl">        $this-&gt;name = &#39;modulenine&#39;;
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">ModuleNine</span> <span class="k">extends</span> <span class="nx">Module</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="s1">&#39;modulenine&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        parent::__construct();
-</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">        <span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    protected function prestashop16()
-</span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl">        // Methods are more times deprecated, but not removed.
-</span></span><span class="line"><span class="cl">        // So, use a newer one
-</span></span><span class="line"><span class="cl">        $temp = new EmployeeSession();
-</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    <span class="k">protected</span> <span class="k">function</span> <span class="nf">prestashop16</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Methods are more times deprecated, but not removed.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">// So, use a newer one
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nv">$temp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">EmployeeSession</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    protected function prestashop17()
-</span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl">        // Methods are more times deprecated, but not removed, again.
-</span></span><span class="line"><span class="cl">        // So, use a newer one
-</span></span><span class="line"><span class="cl">        $temp = new CustomerSession();
-</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    <span class="k">protected</span> <span class="k">function</span> <span class="nf">prestashop17</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Methods are more times deprecated, but not removed, again.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">// So, use a newer one
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nv">$temp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">CustomerSession</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    protected function prestashop8()
-</span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl">        $temp = Carrier::getCarrierNameFromShopName();
-</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    <span class="k">protected</span> <span class="k">function</span> <span class="nf">prestashop8</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$temp</span> <span class="o">=</span> <span class="nx">Carrier</span><span class="o">::</span><span class="na">getCarrierNameFromShopName</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    protected function prestashop9()
-</span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl">        $temp = new Order(1);
-</span></span><span class="line"><span class="cl">        $temp-&gt;getDiscounts();
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">    <span class="k">protected</span> <span class="k">function</span> <span class="nf">prestashop9</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$temp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Order</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$temp</span><span class="o">-&gt;</span><span class="na">getDiscounts</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>As an experienced developer, you might quickly dismiss an objection - and you would be right to do so: calls to non-existent methods for a specific version of PrestaShop are isolated in methods that are never invoked by our module. Therefore, using this module on any version of PrestaShop, would not cause any issues, at least for now.</p>
 <p>Since the code analysis is performed statically and without your developer&rsquo;s eye, an error will still be reported to you. Take it seriously and ensure you address it with conditions as soon as possible, especially since it involves unused code that should be corrected (or removed, if necessary!).</p>
 <p>Here is an output from the GitHub console during the execution of our jobs. <em>During this test, we had not yet introduced errors in the functions for PrestaShop 1.6 and 1.7.</em></p>
@@ -331,12 +331,12 @@ Over the course of both minor and major versions, PrestaShop introduces code cha
 <p>By viewing the details of a failed job, you can obtain the desired information:</p>
 <p><img src="/assets/images/2025/01/phpstan.png" alt="php_stan"></p>
 <p>By modifying the module as follows, to add a condition on the code execution, you can rerun your job and the error will be gone.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    protected function prestashop8()
-</span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl">        if (version_compare(_PS_VERSION_, &#39;8.0.0&#39;, &#39;&lt;&#39;)) {
-</span></span><span class="line"><span class="cl">            $temp = Carrier::getCarrierNameFromShopName();
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">    }
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">protected</span> <span class="k">function</span> <span class="nf">prestashop8</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">version_compare</span><span class="p">(</span><span class="nx">_PS_VERSION_</span><span class="p">,</span> <span class="s1">&#39;8.0.0&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;&#39;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$temp</span> <span class="o">=</span> <span class="nx">Carrier</span><span class="o">::</span><span class="na">getCarrierNameFromShopName</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>You just reran the job and the error didn’t go away?! In reality, PhpStan - <em>although it knows the value of the constant PS_VERSION</em> - cannot interpret the conditional in the same way it doesn&rsquo;t know that your methods are never called.</p>
 <p>As a result, the static code analysis will always return the encountered error. Once it is handled, you will be able to modify your neon file for the affected version (hence the previous separation) to tell it to ignore the error.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">parameters:
@@ -345,160 +345,160 @@ Over the course of both minor and major versions, PrestaShop introduces code cha
 </span></span></code></pre></div><h2 id="workflow-github">Workflow GitHub</h2>
 <p>For the sake of this article, we wanted to start with the introduction and the expected result regarding the use of PhpStan. With the goal of making this more automated, we will now write the GitHub workflow configuration.</p>
 <p>.github/workflows/php.yml</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-v" data-lang="v"><span class="line"><span class="cl"><span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">tests</span>
-</span></span><span class="line"><span class="cl"><span class="nv">on</span><span class="p">:</span> <span class="p">[</span><span class="nv">workflow_dispatch</span><span class="p">,</span> <span class="nv">pull_request</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nl">jobs</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">php</span><span class="o">-</span><span class="nl">linter</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nc">Syntax</span> <span class="nv">check</span> <span class="mf">7.1</span> <span class="o">=</span><span class="p">&gt;</span> <span class="mf">8.3</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">runs</span><span class="o">-</span><span class="nv">on</span><span class="p">:</span> <span class="nv">ubuntu</span><span class="o">-</span><span class="mf">22.04</span>
-</span></span><span class="line"><span class="cl">    <span class="nl">steps</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Checkout</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">checkout</span><span class="o">@</span><span class="nv">v4</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">7.1</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">7.1</span><span class="o">@</span><span class="nv">master</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">7.2</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">7.2</span><span class="o">@</span><span class="nv">master</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">7.3</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">7.3</span><span class="o">@</span><span class="nv">master</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">7.4</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">7.4</span><span class="o">@</span><span class="nv">master</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">8.0</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">8.0</span><span class="o">@</span><span class="nv">master</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">8.1</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">8.1</span><span class="o">@</span><span class="nv">master</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">8.2</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">8.2</span><span class="o">@</span><span class="nv">master</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">8.3</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">8.3</span><span class="o">@</span><span class="nv">master</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="nv">php</span><span class="o">-</span><span class="nv">cs</span><span class="o">-</span><span class="nl">fixer</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span><span class="o">-</span><span class="nc">CS</span><span class="o">-</span><span class="nc">Fixer</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">runs</span><span class="o">-</span><span class="nv">on</span><span class="p">:</span> <span class="nv">ubuntu</span><span class="o">-</span><span class="mf">22.04</span>
-</span></span><span class="line"><span class="cl">    <span class="nl">steps</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Checkout</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">checkout</span><span class="o">@</span><span class="nv">v4</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Run</span> <span class="nc">PHP</span><span class="o">-</span><span class="nc">CS</span><span class="o">-</span><span class="nc">Fixer</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashopcorp</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">cs</span><span class="o">-</span><span class="nv">fixer</span><span class="o">@</span><span class="nv">master</span>
-</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">other</span><span class="o">-</span><span class="nv">cmds</span><span class="p">:</span> <span class="s2">&#34;--config=.php-cs-fixer.dist.php&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="o">#</span> <span class="nc">Run</span> <span class="nc">PHPStan</span> <span class="nv">against</span> <span class="nv">the</span> <span class="kn">module</span> <span class="nv">and</span> <span class="nv">a</span> <span class="nc">PrestaShop</span> <span class="nv">release</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">phpstan</span><span class="o">-</span><span class="nl">v16</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">name</span><span class="p">:</span> <span class="nc">PHPStan</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">runs</span><span class="o">-</span><span class="nv">on</span><span class="p">:</span> <span class="nv">ubuntu</span><span class="o">-</span><span class="nv">latest</span>
-</span></span><span class="line"><span class="cl">    <span class="k">continue</span><span class="o">-</span><span class="nv">on</span><span class="o">-</span><span class="kt">error</span><span class="p">:</span> <span class="kc">true</span>
-</span></span><span class="line"><span class="cl">    <span class="nl">strategy</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">      <span class="nl">matrix</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;1.6.1.23&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="nl">steps</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Setup</span> <span class="nc">PHP</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">shivammathur</span><span class="o">/</span><span class="nv">setup</span><span class="o">-</span><span class="nv">php</span><span class="o">@</span><span class="nv">v2</span>
-</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">php</span><span class="o">-</span><span class="nv">version</span><span class="p">:</span> <span class="s2">&#34;7.1&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Checkout</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">checkout</span><span class="o">@</span><span class="nv">v3</span><span class="mf">.1.0</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Add</span> <span class="nv">vendor</span> <span class="nv">folder</span> <span class="k">in</span> <span class="nv">cache</span> <span class="nv">to</span> <span class="nv">make</span> <span class="nv">next</span> <span class="nv">builds</span> <span class="nv">faster</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Cache</span> <span class="nv">vendor</span> <span class="nv">folder</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">cache</span><span class="o">@</span><span class="nv">v3</span>
-</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">path</span><span class="p">:</span> <span class="nv">vendor</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">key</span><span class="p">:</span> <span class="nv">php</span><span class="o">-</span><span class="err">$</span><span class="p">{{</span> <span class="nf">hashFiles</span><span class="p">(</span><span class="s1">&#39;composer.lock&#39;</span><span class="p">)</span> <span class="p">}}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Add</span> <span class="nv">composer</span> <span class="nv">local</span> <span class="nv">folder</span> <span class="k">in</span> <span class="nv">cache</span> <span class="nv">to</span> <span class="nv">make</span> <span class="nv">next</span> <span class="nv">builds</span> <span class="nv">faster</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Cache</span> <span class="nv">composer</span> <span class="nv">folder</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">cache</span><span class="o">@</span><span class="nv">v3</span>
-</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">path</span><span class="p">:</span> <span class="o">~/</span><span class="p">.</span><span class="nv">composer</span><span class="o">/</span><span class="nv">cache</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">key</span><span class="p">:</span> <span class="nv">php</span><span class="o">-</span><span class="nv">composer</span><span class="o">-</span><span class="nv">cache</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">run</span><span class="p">:</span> <span class="nv">composer</span> <span class="nv">install</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Docker</span> <span class="nv">images</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">prestashop</span> <span class="nv">may</span> <span class="nv">be</span> <span class="nv">used</span><span class="p">,</span> <span class="nv">even</span> <span class="k">if</span> <span class="nv">the</span> <span class="nv">shop</span> <span class="nv">remains</span> <span class="nv">uninstalled</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Execute</span> <span class="nc">PHPStan</span> <span class="nv">on</span> <span class="nc">PrestaShop</span> <span class="p">(</span><span class="nc">Tag</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}})</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">run</span><span class="p">:</span> <span class="nv">chmod</span> <span class="o">+</span><span class="nv">x</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="p">.</span><span class="nv">sh</span> <span class="o">&amp;&amp;</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="p">.</span><span class="nv">sh</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="nl">phpstan</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">name</span><span class="p">:</span> <span class="nc">PHPStan</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">runs</span><span class="o">-</span><span class="nv">on</span><span class="p">:</span> <span class="nv">ubuntu</span><span class="o">-</span><span class="nv">latest</span>
-</span></span><span class="line"><span class="cl">    <span class="k">continue</span><span class="o">-</span><span class="nv">on</span><span class="o">-</span><span class="kt">error</span><span class="p">:</span> <span class="kc">true</span>
-</span></span><span class="line"><span class="cl">    <span class="nl">strategy</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">      <span class="nl">matrix</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;1.7.8&#34;</span><span class="p">,</span> <span class="s2">&#34;8.1.7&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="nl">steps</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Setup</span> <span class="nc">PHP</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">shivammathur</span><span class="o">/</span><span class="nv">setup</span><span class="o">-</span><span class="nv">php</span><span class="o">@</span><span class="nv">v2</span>
-</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">php</span><span class="o">-</span><span class="nv">version</span><span class="p">:</span> <span class="s2">&#34;7.4&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Checkout</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">checkout</span><span class="o">@</span><span class="nv">v3</span><span class="mf">.1.0</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Add</span> <span class="nv">vendor</span> <span class="nv">folder</span> <span class="k">in</span> <span class="nv">cache</span> <span class="nv">to</span> <span class="nv">make</span> <span class="nv">next</span> <span class="nv">builds</span> <span class="nv">faster</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Cache</span> <span class="nv">vendor</span> <span class="nv">folder</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">cache</span><span class="o">@</span><span class="nv">v3</span>
-</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">path</span><span class="p">:</span> <span class="nv">vendor</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">key</span><span class="p">:</span> <span class="nv">php</span><span class="o">-</span><span class="err">$</span><span class="p">{{</span> <span class="nf">hashFiles</span><span class="p">(</span><span class="s1">&#39;composer.lock&#39;</span><span class="p">)</span> <span class="p">}}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Add</span> <span class="nv">composer</span> <span class="nv">local</span> <span class="nv">folder</span> <span class="k">in</span> <span class="nv">cache</span> <span class="nv">to</span> <span class="nv">make</span> <span class="nv">next</span> <span class="nv">builds</span> <span class="nv">faster</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Cache</span> <span class="nv">composer</span> <span class="nv">folder</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">cache</span><span class="o">@</span><span class="nv">v3</span>
-</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">path</span><span class="p">:</span> <span class="o">~/</span><span class="p">.</span><span class="nv">composer</span><span class="o">/</span><span class="nv">cache</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">key</span><span class="p">:</span> <span class="nv">php</span><span class="o">-</span><span class="nv">composer</span><span class="o">-</span><span class="nv">cache</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">run</span><span class="p">:</span> <span class="nv">composer</span> <span class="nv">install</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Docker</span> <span class="nv">images</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">prestashop</span> <span class="nv">may</span> <span class="nv">be</span> <span class="nv">used</span><span class="p">,</span> <span class="nv">even</span> <span class="k">if</span> <span class="nv">the</span> <span class="nv">shop</span> <span class="nv">remains</span> <span class="nv">uninstalled</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Execute</span> <span class="nc">PHPStan</span> <span class="nv">on</span> <span class="nc">PrestaShop</span> <span class="p">(</span><span class="nc">Tag</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}})</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">run</span><span class="p">:</span> <span class="nv">chmod</span> <span class="o">+</span><span class="nv">x</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="p">.</span><span class="nv">sh</span> <span class="o">&amp;&amp;</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="p">.</span><span class="nv">sh</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="nv">phpstan</span><span class="o">-</span><span class="nl">v9</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">name</span><span class="p">:</span> <span class="nc">PHPStan</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">runs</span><span class="o">-</span><span class="nv">on</span><span class="p">:</span> <span class="nv">ubuntu</span><span class="o">-</span><span class="nv">latest</span>
-</span></span><span class="line"><span class="cl">    <span class="nl">strategy</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">      <span class="nl">matrix</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;9.0.0-alpha.1&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="nl">steps</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Setup</span> <span class="nc">PHP</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">shivammathur</span><span class="o">/</span><span class="nv">setup</span><span class="o">-</span><span class="nv">php</span><span class="o">@</span><span class="nv">v2</span>
-</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">php</span><span class="o">-</span><span class="nv">version</span><span class="p">:</span> <span class="s2">&#34;8.1&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Checkout</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">checkout</span><span class="o">@</span><span class="nv">v4</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Add</span> <span class="nv">vendor</span> <span class="nv">folder</span> <span class="k">in</span> <span class="nv">cache</span> <span class="nv">to</span> <span class="nv">make</span> <span class="nv">next</span> <span class="nv">builds</span> <span class="nv">faster</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Cache</span> <span class="nv">vendor</span> <span class="nv">folder</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">cache</span><span class="o">@</span><span class="nv">v3</span>
-</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">path</span><span class="p">:</span> <span class="nv">vendor</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">key</span><span class="p">:</span> <span class="nv">php</span><span class="o">-</span><span class="err">$</span><span class="p">{{</span> <span class="nf">hashFiles</span><span class="p">(</span><span class="s1">&#39;composer.lock&#39;</span><span class="p">)</span> <span class="p">}}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Add</span> <span class="nv">composer</span> <span class="nv">local</span> <span class="nv">folder</span> <span class="k">in</span> <span class="nv">cache</span> <span class="nv">to</span> <span class="nv">make</span> <span class="nv">next</span> <span class="nv">builds</span> <span class="nv">faster</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Cache</span> <span class="nv">composer</span> <span class="nv">folder</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">cache</span><span class="o">@</span><span class="nv">v3</span>
-</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">path</span><span class="p">:</span> <span class="o">~/</span><span class="p">.</span><span class="nv">composer</span><span class="o">/</span><span class="nv">cache</span>
-</span></span><span class="line"><span class="cl">          <span class="nv">key</span><span class="p">:</span> <span class="nv">php</span><span class="o">-</span><span class="nv">composer</span><span class="o">-</span><span class="nv">cache</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">run</span><span class="p">:</span> <span class="nv">composer</span> <span class="nv">install</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Docker</span> <span class="nv">images</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">prestashop</span> <span class="nv">may</span> <span class="nv">be</span> <span class="nv">used</span><span class="p">,</span> <span class="nv">even</span> <span class="k">if</span> <span class="nv">the</span> <span class="nv">shop</span> <span class="nv">remains</span> <span class="nv">uninstalled</span>
-</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Execute</span> <span class="nc">PHPStan</span> <span class="nv">on</span> <span class="nc">PrestaShop</span> <span class="p">(</span><span class="nc">Tag</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}})</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">run</span><span class="p">:</span> <span class="nv">chmod</span> <span class="o">+</span><span class="nv">x</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="o">-</span><span class="nv">v9</span><span class="p">.</span><span class="nv">sh</span> <span class="o">&amp;&amp;</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="o">-</span><span class="nv">v9</span><span class="p">.</span><span class="nv">sh</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}}</span>
-</span></span></code></pre></div><p>For every pull request made to the repository or via an automatic trigger - thanks to the <em>workflow_dispatch</em> event - you will be able to run all the jobs defined previously. Going further, you will notice that we also use a syntax check for a set of PHP versions as well as PHP CS Fixer. Since these steps are not part of our article, we will not go into further detail about them.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHP tests</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">workflow_dispatch, pull_request]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">php-linter</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHP Syntax check 7.1 =&gt; 8.3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-22.04</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v4</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHP syntax checker 7.1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">prestashop/github-action-php-lint/7.1@master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHP syntax checker 7.2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">prestashop/github-action-php-lint/7.2@master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHP syntax checker 7.3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">prestashop/github-action-php-lint/7.3@master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHP syntax checker 7.4</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">prestashop/github-action-php-lint/7.4@master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHP syntax checker 8.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">prestashop/github-action-php-lint/8.0@master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHP syntax checker 8.1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">prestashop/github-action-php-lint/8.1@master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHP syntax checker 8.2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">prestashop/github-action-php-lint/8.2@master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHP syntax checker 8.3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">prestashop/github-action-php-lint/8.3@master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">php-cs-fixer</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHP-CS-Fixer</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-22.04</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v4</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Run PHP-CS-Fixer</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">prestashopcorp/github-action-php-cs-fixer@master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">other-cmds</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;--config=.php-cs-fixer.dist.php&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Run PHPStan against the module and a PrestaShop release</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">phpstan-v16</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHPStan</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">continue-on-error</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">strategy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">matrix</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">presta-versions</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;1.6.1.23&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup PHP</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">shivammathur/setup-php@v2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">php-version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;7.1&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v3.1.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># Add vendor folder in cache to make next builds faster</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Cache vendor folder</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/cache@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">vendor</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">php-${{ hashFiles(&#39;composer.lock&#39;) }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># Add composer local folder in cache to make next builds faster</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Cache composer folder</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/cache@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">~/.composer/cache</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">php-composer-cache</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">composer install</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># Docker images prestashop/prestashop may be used, even if the shop remains uninstalled</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Execute PHPStan on PrestaShop (Tag ${{ matrix.presta-versions }})</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">chmod +x ./tests/phpstan.sh &amp;&amp; ./tests/phpstan.sh ${{ matrix.presta-versions }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">phpstan</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHPStan</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">continue-on-error</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">strategy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">matrix</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">presta-versions</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;1.7.8&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;8.1.7&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup PHP</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">shivammathur/setup-php@v2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">php-version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;7.4&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v3.1.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># Add vendor folder in cache to make next builds faster</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Cache vendor folder</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/cache@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">vendor</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">php-${{ hashFiles(&#39;composer.lock&#39;) }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># Add composer local folder in cache to make next builds faster</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Cache composer folder</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/cache@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">~/.composer/cache</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">php-composer-cache</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">composer install</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># Docker images prestashop/prestashop may be used, even if the shop remains uninstalled</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Execute PHPStan on PrestaShop (Tag ${{ matrix.presta-versions }})</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">chmod +x ./tests/phpstan.sh &amp;&amp; ./tests/phpstan.sh ${{ matrix.presta-versions }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">phpstan-v9</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PHPStan</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">strategy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">matrix</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">presta-versions</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;9.0.0-alpha.1&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup PHP</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">shivammathur/setup-php@v2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">php-version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;8.1&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v4</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># Add vendor folder in cache to make next builds faster</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Cache vendor folder</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/cache@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">vendor</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">php-${{ hashFiles(&#39;composer.lock&#39;) }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># Add composer local folder in cache to make next builds faster</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Cache composer folder</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/cache@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">~/.composer/cache</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">php-composer-cache</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">composer install</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># Docker images prestashop/prestashop may be used, even if the shop remains uninstalled</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Execute PHPStan on PrestaShop (Tag ${{ matrix.presta-versions }})</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">chmod +x ./tests/phpstan-v9.sh &amp;&amp; ./tests/phpstan-v9.sh ${{ matrix.presta-versions }}</span><span class="w">
+</span></span></span></code></pre></div><p>For every pull request made to the repository or via an automatic trigger - thanks to the <em>workflow_dispatch</em> event - you will be able to run all the jobs defined previously. Going further, you will notice that we also use a syntax check for a set of PHP versions as well as PHP CS Fixer. Since these steps are not part of our article, we will not go into further detail about them.</p>
 <h2 id="alternative-location-act">Alternative location: act</h2>
 <p>During the development of a module, as with any development, you won&rsquo;t necessarily push changes to Git after every function. Therefore, since the GitHub workflow is only triggered by a code push and on the code available in the repository at the time of execution, you wouldn&rsquo;t be able to visualize the issues during development.</p>
 <p>To do this, you can use <a href="https://nektosact.com/">nektos/act, &ldquo;Run your GitHub Actions locally&rdquo;</a> to use a runner locally. Workflows using Docker images require you to run Docker (e.g., Docker Desktop). The advantage of this solution, in addition to being local, is the ability to use the same workflow as the one defined in GitHub without having to interchange it to a solution with its own naming conventions. Regarding its installation, I leave it to you to choose the method that best suits your environment. Working on MacOS, the installation via <a href="https://brew.sh/">Homebrew</a> was preferred.</p>
@@ -519,6 +519,14 @@ Over the course of both minor and major versions, PrestaShop introduces code cha
 </span></span></code></pre></div><h2 id="conclusion-module-quality-and-automated-testing">Conclusion: module quality and automated testing</h2>
 <p>To conclude, thanks to the tips shared by Jonathan Danse during the PrestaShop Developer Conference 2024, you now have all the tools to automate the testing and analysis of your modules as well as ensure their quality. By adopting these best practices, you can deploy reliable and high-performing modules.
 To explore further, feel free to check the module sources presented in this article on this GitHub repository: <a href="https://github.com/PrestaEdit/modulenine">PrestaEdit/modulenine</a>.</p>
+
+
+
+<div class="alert alert-note"><h4><i class="icon-file"></i>
+        Note
+    </h4>This article is a contribution from a member of the PrestaShop community, and not a PrestaShop employee. If you too want to help the community by sharing tips and advice on the Build devblog, <a href="/about/#contribute">read this</a>!
+</div>
+
 
 
           </article>

@@ -10,7 +10,7 @@ tags: [psdevcon, news, event, module, test, analyze]
 
 During the PrestaShop Developer Conference 2024, [Jonathan Danse](https://github.com/prestaedit) presented methods for automatically testing and analyzing modules, ensuring their quality and reliability. In this guest article, Jonathan shares the key points from his conference and offers practical advice. Learn how to ensure high-performing modules with every deployment. 
 
-You can find the sources for the module created in this article on the following GitHub repository: PrestaEdit/modulenine. Jonathan, the floor is now yours!
+You can find the sources for the module created in this article on the following GitHub repository: [PrestaEdit/modulenine](https://github.com/PrestaEdit/modulenine). Jonathan, the floor is now yours!
 
 # Preamble
 
@@ -23,7 +23,7 @@ Performing these tests at the end of development can also prove more complicated
 # PhpStan
 ### Introduction
 
-[PHPStan](https://phpstan.org/) is a static code analysis tool specifically for PHP. It analyzes your code for errors and potential issues, helping you improve the quality of your code and avoid common mistakes. At the PrestaShop level, you can already use PhpStan outside of this project. For that, see the [official documentation](https://devdocs.prestashop-project.org/1.7/modules/testing/advanced-checks/#static-analysis).
+[PHPStan](https://phpstan.org/) is a static code analysis tool specifically for PHP. It analyzes your code for errors and potential issues, helping you improve the quality of your code and avoid common mistakes. At the PrestaShop level, you can already use PhpStan outside of this project. For that, see the [official documentation](https://devdocs.prestashop-project.org/8/modules/testing/advanced-checks/#static-analysis).
 
 ### Configuration
 
@@ -61,7 +61,7 @@ docker run --rm --volumes-from temp-ps \
 
 /tests/phpstan-v9.sh
 
-This is necessary to enable the prestaedit/prestashop registry use instead of prestashop/prestashop, as the Docker image for PrestaShop 9 will only be available upon its official release. Furthermore, the PhpStan version utilized is different, as it is compatible with PHP 8.1, among others.
+This is necessary to enable the `prestaedit/prestashop` registry use instead of prestashop/prestashop, as the Docker image for PrestaShop 9 will only be available upon its official release. Furthermore, the PhpStan version utilized is different, as it is compatible with PHP 8.1, among others.
 
 ```
 #!/bin/bash
@@ -91,7 +91,7 @@ docker run --rm --volumes-from ps9-php8 \
        --configuration=/var/www/html/modules/modulenine/tests/phpstan/phpstan-$PS_VERSION.neon
 ```
 
-Next, we will add all the files corresponding to a tested version of PrestaShop. These files will have the .neon extension. Its basic content will be as follows: 
+Next, we will add all the files corresponding to a tested version of PrestaShop. These files will have the `.neon` extension. Its basic content will be as follows: 
 
 ```
 includes:
@@ -365,7 +365,7 @@ For every pull request made to the repository or via an automatic trigger - than
 
 During the development of a module, as with any development, you won't necessarily push changes to Git after every function. Therefore, since the GitHub workflow is only triggered by a code push and on the code available in the repository at the time of execution, you wouldn't be able to visualize the issues during development.
 
-To do this, you can use [nektos/act, "Run your GitHub Actions locally"](https://nektosact.com/) to use a runner locally. Workflows using Docker images require you to run Docker (e.g., Docker Desktop). The advantage of this solution, in addition to being local, is the ability to use the same workflow as the one defined in GitHub without having to interchange it to a solution with its own naming conventions. Regarding its installation, I leave it to you to choose the method that best suits your environment. Working on MacOS, the installation via Homebrew was preferred.
+To do this, you can use [nektos/act, "Run your GitHub Actions locally"](https://nektosact.com/) to use a runner locally. Workflows using Docker images require you to run Docker (e.g., Docker Desktop). The advantage of this solution, in addition to being local, is the ability to use the same workflow as the one defined in GitHub without having to interchange it to a solution with its own naming conventions. Regarding its installation, I leave it to you to choose the method that best suits your environment. Working on MacOS, the installation via [Homebrew](https://brew.sh/) was preferred.
 
 In the command line, at the root of your repository, you can now write this command to run all your jobs:
 ```
@@ -406,4 +406,4 @@ act -j 'phpstan' --matrix presta-versions:8.1.7
 # Conclusion: module quality and automated testing
 
 To conclude, thanks to the tips shared by Jonathan Danse during the PrestaShop Developer Conference 2024, you now have all the tools to automate the testing and analysis of your modules as well as ensure their quality. By adopting these best practices, you can deploy reliable and high-performing modules.
-To explore further, feel free to check the module sources presented in this article on this GitHub repository: PrestaEdit/modulenine.
+To explore further, feel free to check the module sources presented in this article on this GitHub repository: [PrestaEdit/modulenine](https://github.com/PrestaEdit/modulenine).

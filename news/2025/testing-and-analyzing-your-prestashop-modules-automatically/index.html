@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PSDevCon 2024 - testing and analyzing your PrestaShop modules automatically</title>
+    <link href="/style.css?1737469109" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PSDevCon 2024 - testing and analyzing your PrestaShop modules automatically" />
+<meta property="og:description" content="During the PrestaShop Developer Conference 2024, Jonathan Danse presented methods for automatically testing and analyzing modules, ensuring their quality and reliability. In this guest article, Jonathan shares the key points from his conference and offers practical advice. Learn how to ensure high-performing modules with every deployment." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2025/testing-and-analyzing-your-prestashop-modules-automatically/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2025-01-21T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2025-01-21T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build-2024.png">
+<meta name="twitter:title" content="PSDevCon 2024 - testing and analyzing your PrestaShop modules automatically"/>
+<meta name="twitter:description" content="Learn more about Jonathan Danse’s PrestaShop Developer Conference module presentation"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip': false });
+			}
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PSDevCon 2024 - testing and analyzing your PrestaShop modules automatically</h1>
+              
+                <h3 class="post-subtitle">Learn more about Jonathan Danse’s PrestaShop Developer Conference module presentation</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/PrestaEdit/">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/2631425?v=4" alt="Jonathan Danse's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/PrestaEdit/">Jonathan Danse</a>
+      </div>
+        
+          <div class="author-display-role">PrestaShop Developer at PrestaEdit</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jan 21, 2025
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PSDevCon&#43;2024&#43;-&#43;testing&#43;and&#43;analyzing&#43;your&#43;PrestaShop&#43;modules&#43;automatically&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2025%2Ftesting-and-analyzing-your-prestashop-modules-automatically%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2025%2Ftesting-and-analyzing-your-prestashop-modules-automatically%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>During the PrestaShop Developer Conference 2024, <a href="https://github.com/prestaedit">Jonathan Danse</a> presented methods for automatically testing and analyzing modules, ensuring their quality and reliability. In this guest article, Jonathan shares the key points from his conference and offers practical advice. Learn how to ensure high-performing modules with every deployment.</p>
+<p>You can find the sources for the module created in this article on the following GitHub repository: <a href="https://github.com/PrestaEdit/modulenine">PrestaEdit/modulenine</a>. Jonathan, the floor is now yours!</p>
+<h1 id="preamble">Preamble</h1>
+<p>When developing a module, it is very often created on a single instance and primarily on a more recent version of PrestaShop. However, the users of these modules are not always on the same platform.
+Over the course of both minor and major versions, PrestaShop introduces code changes that can impact the proper functioning of the module. Nevertheless, manually testing on each version of PrestaShop and with each batch of new methods is tedious.</p>
+<p>Performing these tests at the end of development can also prove more complicated than expected, especially if an entire section of code is not backward compatible. Let us then see how to test the code of your module automatically for compatibility across all versions.</p>
+<h1 id="phpstan">PhpStan</h1>
+<h3 id="introduction">Introduction</h3>
+<p><a href="https://phpstan.org/">PHPStan</a> is a static code analysis tool specifically for PHP. It analyzes your code for errors and potential issues, helping you improve the quality of your code and avoid common mistakes. At the PrestaShop level, you can already use PhpStan outside of this project. For that, see the <a href="https://devdocs.prestashop-project.org/8/modules/testing/advanced-checks/#static-analysis">official documentation</a>.</p>
+<h3 id="configuration">Configuration</h3>
+<p>Before getting to the matter, let&rsquo;s first explore the necessary setup. We are going to create two shell script files. In our example, we use the module name directly in the file, without using a variable.</p>
+<p><em>About this topic, you could pass the module name directly in the GitHub workflow by using the repository name. This will not be covered in this article.</em></p>
+<p>/tests/phpstan.sh</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">PS_VERSION</span><span class="o">=</span><span class="nv">$1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> -e
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Docker images prestashop/prestashop may be used, even if the shop remains uninstalled</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Pull PrestaShop files (Tag </span><span class="si">${</span><span class="nv">PS_VERSION</span><span class="si">}</span><span class="s2">)&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker rm -f temp-ps <span class="o">||</span> <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">docker volume rm -f ps-volume <span class="o">||</span> <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run -tid --rm -v ps-volume:/var/www/html --name temp-ps prestashop/prestashop:<span class="nv">$PS_VERSION</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Run a container for PHPStan, having access to the module content and PrestaShop sources.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># This tool is outside the composer.json because of the compatibility with PHP 5.6</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Run PHPStan using phpstan-</span><span class="si">${</span><span class="nv">PS_VERSION</span><span class="si">}</span><span class="s2">.neon file&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run --rm --volumes-from temp-ps <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>       -v <span class="nv">$PWD</span>:/var/www/html/modules/modulenine <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>       -e <span class="nv">_PS_ROOT_DIR_</span><span class="o">=</span>/var/www/html <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>       --workdir<span class="o">=</span>/var/www/html/modules/modulenine phpstan/phpstan:0.12.54 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>       analyse <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>       --configuration<span class="o">=</span>/var/www/html/modules/modulenine/tests/phpstan/phpstan-<span class="nv">$PS_VERSION</span>.neon
+</span></span></code></pre></div><p>/tests/phpstan-v9.sh</p>
+<p>This is necessary to enable the <code>prestaedit/prestashop</code> registry use instead of prestashop/prestashop, as the Docker image for PrestaShop 9 will only be available upon its official release. Furthermore, the PhpStan version utilized is different, as it is compatible with PHP 8.1, among others.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">PS_VERSION</span><span class="o">=</span><span class="nv">$1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> -e
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Docker images prestashop/prestashop may be used, even if the shop remains uninstalled</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Pull PrestaShop files (Tag </span><span class="si">${</span><span class="nv">PS_VERSION</span><span class="si">}</span><span class="s2">)&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker rm -f ps9-php8 <span class="o">||</span> <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">docker volume rm -f ps9-php8 <span class="o">||</span> <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run -tid --rm -v ps9-php8:/var/www/html --name ps9-php8 prestaedit/prestashop:<span class="nv">$PS_VERSION</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker <span class="nb">exec</span> -i ps9-php8 php -v
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Run a container for PHPStan, having access to the module content and PrestaShop sources.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># This tool is outside the composer.json because of the compatibility with PHP 5.6</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Run PHPStan using phpstan-</span><span class="si">${</span><span class="nv">PS_VERSION</span><span class="si">}</span><span class="s2">.neon file&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run --rm --volumes-from ps9-php8 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>       -v <span class="nv">$PWD</span>:/var/www/html/modules/modulenine <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>       -e <span class="nv">_PS_ROOT_DIR_</span><span class="o">=</span>/var/www/html <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>       --workdir<span class="o">=</span>/var/www/html/modules/modulenine ghcr.io/phpstan/phpstan:nightly-php8.1 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>       analyse <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>       --configuration<span class="o">=</span>/var/www/html/modules/modulenine/tests/phpstan/phpstan-<span class="nv">$PS_VERSION</span>.neon
+</span></span></code></pre></div><p>Next, we will add all the files corresponding to a tested version of PrestaShop. These files will have the <code>.neon</code> extension. Its basic content will be as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">includes:
+</span></span><span class="line"><span class="cl">	- %currentWorkingDirectory%/vendor/prestashop/php-dev-tools/phpstan/ps-module-extension.neon
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">parameters:
+</span></span><span class="line"><span class="cl">  paths:
+</span></span><span class="line"><span class="cl">    # From PHPStan 0.12, paths to check are relative to the neon file
+</span></span><span class="line"><span class="cl">    - ../../modulenine.php
+</span></span><span class="line"><span class="cl">    - ../../classes/
+</span></span><span class="line"><span class="cl">    - ../../controllers/
+</span></span><span class="line"><span class="cl">  reportUnmatchedIgnoredErrors: false
+</span></span><span class="line"><span class="cl">  level: 5
+</span></span><span class="line"><span class="cl">  ignoreErrors:
+</span></span></code></pre></div><h3 id="about-ps-module-extensionneon">About ps-module-extension.neon</h3>
+<p>This initial configuration file will handle the definition of useful constants related to a PrestaShop instance. It will also set up stubs for the Module and Tab classes. Subsequently, we will establish a workflow to test the module under PrestaShop versions 1.6.1.23, 1.7.8, 8.1.7, and 9.0.0-alpha.1.</p>
+<p>We will therefore have these four files:</p>
+<ul>
+<li>tests/phpstan/phpstan-1.6.1.23.neon</li>
+<li>tests/phpstan/phpstan-1.7.8.neon</li>
+<li>tests/phpstan/phpstan-8.1.7.neon</li>
+<li>tests/phpstan/phpstan-9.0.0-alpha.1.neon</li>
+</ul>
+<p>Just like me [Editor’s Note: Jonathan Danse], you might feel the urge to modify the call to PhpStan configuration files - which we will write later - to use a single file, as the content is identical. But no, you will not do that. This division into files will be necessary for us later.</p>
+<h1 id="module">Module</h1>
+<p>Up next in the article, we will design a module aimed at illustrating the handling of errors.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;?php
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">class ModuleNine extends Module
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">    public function __construct()
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        $this-&gt;name = &#39;modulenine&#39;;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        parent::__construct();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    protected function prestashop16()
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        // Methods are more times deprecated, but not removed.
+</span></span><span class="line"><span class="cl">        // So, use a newer one
+</span></span><span class="line"><span class="cl">        $temp = new EmployeeSession();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    protected function prestashop17()
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        // Methods are more times deprecated, but not removed, again.
+</span></span><span class="line"><span class="cl">        // So, use a newer one
+</span></span><span class="line"><span class="cl">        $temp = new CustomerSession();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    protected function prestashop8()
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        $temp = Carrier::getCarrierNameFromShopName();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    protected function prestashop9()
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        $temp = new Order(1);
+</span></span><span class="line"><span class="cl">        $temp-&gt;getDiscounts();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><p>As an experienced developer, you might quickly dismiss an objection - and you would be right to do so: calls to non-existent methods for a specific version of PrestaShop are isolated in methods that are never invoked by our module. Therefore, using this module on any version of PrestaShop, would not cause any issues, at least for now.</p>
+<p>Since the code analysis is performed statically and without your developer&rsquo;s eye, an error will still be reported to you. Take it seriously and ensure you address it with conditions as soon as possible, especially since it involves unused code that should be corrected (or removed, if necessary!).</p>
+<p>Here is an output from the GitHub console during the execution of our jobs. <em>During this test, we had not yet introduced errors in the functions for PrestaShop 1.6 and 1.7.</em></p>
+<p><img src="/assets/images/2025/01/phptest47.png" alt="php_test47"></p>
+<p>By viewing the details of a failed job, you can obtain the desired information:</p>
+<p><img src="/assets/images/2025/01/phpstan.png" alt="php_stan"></p>
+<p>By modifying the module as follows, to add a condition on the code execution, you can rerun your job and the error will be gone.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    protected function prestashop8()
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        if (version_compare(_PS_VERSION_, &#39;8.0.0&#39;, &#39;&lt;&#39;)) {
+</span></span><span class="line"><span class="cl">            $temp = Carrier::getCarrierNameFromShopName();
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">    }
+</span></span></code></pre></div><p>You just reran the job and the error didn’t go away?! In reality, PhpStan - <em>although it knows the value of the constant PS_VERSION</em> - cannot interpret the conditional in the same way it doesn&rsquo;t know that your methods are never called.</p>
+<p>As a result, the static code analysis will always return the encountered error. Once it is handled, you will be able to modify your neon file for the affected version (hence the previous separation) to tell it to ignore the error.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">parameters:
+</span></span><span class="line"><span class="cl">  ignoreErrors:
+</span></span><span class="line"><span class="cl">    - &#39;~^Call to an undefined static method Carrier::getCarrierNameFromShopName\(\)\.$~&#39;
+</span></span></code></pre></div><h1 id="workflow-github">Workflow GitHub</h1>
+<p>For the sake of this article, we wanted to start with the introduction and the expected result regarding the use of PhpStan. With the goal of making this more automated, we will now write the GitHub workflow configuration.</p>
+<p>.github/workflows/php.yml</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-v" data-lang="v"><span class="line"><span class="cl"><span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">tests</span>
+</span></span><span class="line"><span class="cl"><span class="nv">on</span><span class="p">:</span> <span class="p">[</span><span class="nv">workflow_dispatch</span><span class="p">,</span> <span class="nv">pull_request</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nl">jobs</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">php</span><span class="o">-</span><span class="nl">linter</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nc">Syntax</span> <span class="nv">check</span> <span class="mf">7.1</span> <span class="o">=</span><span class="p">&gt;</span> <span class="mf">8.3</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">runs</span><span class="o">-</span><span class="nv">on</span><span class="p">:</span> <span class="nv">ubuntu</span><span class="o">-</span><span class="mf">22.04</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">steps</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Checkout</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">checkout</span><span class="o">@</span><span class="nv">v4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">7.1</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">7.1</span><span class="o">@</span><span class="nv">master</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">7.2</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">7.2</span><span class="o">@</span><span class="nv">master</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">7.3</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">7.3</span><span class="o">@</span><span class="nv">master</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">7.4</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">7.4</span><span class="o">@</span><span class="nv">master</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">8.0</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">8.0</span><span class="o">@</span><span class="nv">master</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">8.1</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">8.1</span><span class="o">@</span><span class="nv">master</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">8.2</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">8.2</span><span class="o">@</span><span class="nv">master</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">syntax</span> <span class="nv">checker</span> <span class="mf">8.3</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">lint</span><span class="o">/</span><span class="mf">8.3</span><span class="o">@</span><span class="nv">master</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nv">php</span><span class="o">-</span><span class="nv">cs</span><span class="o">-</span><span class="nl">fixer</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span><span class="o">-</span><span class="nc">CS</span><span class="o">-</span><span class="nc">Fixer</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">runs</span><span class="o">-</span><span class="nv">on</span><span class="p">:</span> <span class="nv">ubuntu</span><span class="o">-</span><span class="mf">22.04</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">steps</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Checkout</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">checkout</span><span class="o">@</span><span class="nv">v4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Run</span> <span class="nc">PHP</span><span class="o">-</span><span class="nc">CS</span><span class="o">-</span><span class="nc">Fixer</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">prestashopcorp</span><span class="o">/</span><span class="nv">github</span><span class="o">-</span><span class="nv">action</span><span class="o">-</span><span class="nv">php</span><span class="o">-</span><span class="nv">cs</span><span class="o">-</span><span class="nv">fixer</span><span class="o">@</span><span class="nv">master</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">other</span><span class="o">-</span><span class="nv">cmds</span><span class="p">:</span> <span class="s2">&#34;--config=.php-cs-fixer.dist.php&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="o">#</span> <span class="nc">Run</span> <span class="nc">PHPStan</span> <span class="nv">against</span> <span class="nv">the</span> <span class="kn">module</span> <span class="nv">and</span> <span class="nv">a</span> <span class="nc">PrestaShop</span> <span class="nv">release</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">phpstan</span><span class="o">-</span><span class="nl">v16</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">name</span><span class="p">:</span> <span class="nc">PHPStan</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">runs</span><span class="o">-</span><span class="nv">on</span><span class="p">:</span> <span class="nv">ubuntu</span><span class="o">-</span><span class="nv">latest</span>
+</span></span><span class="line"><span class="cl">    <span class="k">continue</span><span class="o">-</span><span class="nv">on</span><span class="o">-</span><span class="kt">error</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">strategy</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">matrix</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;1.6.1.23&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">steps</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Setup</span> <span class="nc">PHP</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">shivammathur</span><span class="o">/</span><span class="nv">setup</span><span class="o">-</span><span class="nv">php</span><span class="o">@</span><span class="nv">v2</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">php</span><span class="o">-</span><span class="nv">version</span><span class="p">:</span> <span class="s2">&#34;7.1&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Checkout</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">checkout</span><span class="o">@</span><span class="nv">v3</span><span class="mf">.1.0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Add</span> <span class="nv">vendor</span> <span class="nv">folder</span> <span class="k">in</span> <span class="nv">cache</span> <span class="nv">to</span> <span class="nv">make</span> <span class="nv">next</span> <span class="nv">builds</span> <span class="nv">faster</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Cache</span> <span class="nv">vendor</span> <span class="nv">folder</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">cache</span><span class="o">@</span><span class="nv">v3</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">path</span><span class="p">:</span> <span class="nv">vendor</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">key</span><span class="p">:</span> <span class="nv">php</span><span class="o">-</span><span class="err">$</span><span class="p">{{</span> <span class="nf">hashFiles</span><span class="p">(</span><span class="s1">&#39;composer.lock&#39;</span><span class="p">)</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Add</span> <span class="nv">composer</span> <span class="nv">local</span> <span class="nv">folder</span> <span class="k">in</span> <span class="nv">cache</span> <span class="nv">to</span> <span class="nv">make</span> <span class="nv">next</span> <span class="nv">builds</span> <span class="nv">faster</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Cache</span> <span class="nv">composer</span> <span class="nv">folder</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">cache</span><span class="o">@</span><span class="nv">v3</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">path</span><span class="p">:</span> <span class="o">~/</span><span class="p">.</span><span class="nv">composer</span><span class="o">/</span><span class="nv">cache</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">key</span><span class="p">:</span> <span class="nv">php</span><span class="o">-</span><span class="nv">composer</span><span class="o">-</span><span class="nv">cache</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">run</span><span class="p">:</span> <span class="nv">composer</span> <span class="nv">install</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Docker</span> <span class="nv">images</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">prestashop</span> <span class="nv">may</span> <span class="nv">be</span> <span class="nv">used</span><span class="p">,</span> <span class="nv">even</span> <span class="k">if</span> <span class="nv">the</span> <span class="nv">shop</span> <span class="nv">remains</span> <span class="nv">uninstalled</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Execute</span> <span class="nc">PHPStan</span> <span class="nv">on</span> <span class="nc">PrestaShop</span> <span class="p">(</span><span class="nc">Tag</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}})</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">run</span><span class="p">:</span> <span class="nv">chmod</span> <span class="o">+</span><span class="nv">x</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="p">.</span><span class="nv">sh</span> <span class="o">&amp;&amp;</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="p">.</span><span class="nv">sh</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nl">phpstan</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">name</span><span class="p">:</span> <span class="nc">PHPStan</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">runs</span><span class="o">-</span><span class="nv">on</span><span class="p">:</span> <span class="nv">ubuntu</span><span class="o">-</span><span class="nv">latest</span>
+</span></span><span class="line"><span class="cl">    <span class="k">continue</span><span class="o">-</span><span class="nv">on</span><span class="o">-</span><span class="kt">error</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">strategy</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">matrix</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;1.7.8&#34;</span><span class="p">,</span> <span class="s2">&#34;8.1.7&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">steps</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Setup</span> <span class="nc">PHP</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">shivammathur</span><span class="o">/</span><span class="nv">setup</span><span class="o">-</span><span class="nv">php</span><span class="o">@</span><span class="nv">v2</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">php</span><span class="o">-</span><span class="nv">version</span><span class="p">:</span> <span class="s2">&#34;7.4&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Checkout</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">checkout</span><span class="o">@</span><span class="nv">v3</span><span class="mf">.1.0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Add</span> <span class="nv">vendor</span> <span class="nv">folder</span> <span class="k">in</span> <span class="nv">cache</span> <span class="nv">to</span> <span class="nv">make</span> <span class="nv">next</span> <span class="nv">builds</span> <span class="nv">faster</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Cache</span> <span class="nv">vendor</span> <span class="nv">folder</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">cache</span><span class="o">@</span><span class="nv">v3</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">path</span><span class="p">:</span> <span class="nv">vendor</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">key</span><span class="p">:</span> <span class="nv">php</span><span class="o">-</span><span class="err">$</span><span class="p">{{</span> <span class="nf">hashFiles</span><span class="p">(</span><span class="s1">&#39;composer.lock&#39;</span><span class="p">)</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Add</span> <span class="nv">composer</span> <span class="nv">local</span> <span class="nv">folder</span> <span class="k">in</span> <span class="nv">cache</span> <span class="nv">to</span> <span class="nv">make</span> <span class="nv">next</span> <span class="nv">builds</span> <span class="nv">faster</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Cache</span> <span class="nv">composer</span> <span class="nv">folder</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">cache</span><span class="o">@</span><span class="nv">v3</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">path</span><span class="p">:</span> <span class="o">~/</span><span class="p">.</span><span class="nv">composer</span><span class="o">/</span><span class="nv">cache</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">key</span><span class="p">:</span> <span class="nv">php</span><span class="o">-</span><span class="nv">composer</span><span class="o">-</span><span class="nv">cache</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">run</span><span class="p">:</span> <span class="nv">composer</span> <span class="nv">install</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Docker</span> <span class="nv">images</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">prestashop</span> <span class="nv">may</span> <span class="nv">be</span> <span class="nv">used</span><span class="p">,</span> <span class="nv">even</span> <span class="k">if</span> <span class="nv">the</span> <span class="nv">shop</span> <span class="nv">remains</span> <span class="nv">uninstalled</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Execute</span> <span class="nc">PHPStan</span> <span class="nv">on</span> <span class="nc">PrestaShop</span> <span class="p">(</span><span class="nc">Tag</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}})</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">run</span><span class="p">:</span> <span class="nv">chmod</span> <span class="o">+</span><span class="nv">x</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="p">.</span><span class="nv">sh</span> <span class="o">&amp;&amp;</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="p">.</span><span class="nv">sh</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nv">phpstan</span><span class="o">-</span><span class="nl">v9</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">name</span><span class="p">:</span> <span class="nc">PHPStan</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">runs</span><span class="o">-</span><span class="nv">on</span><span class="p">:</span> <span class="nv">ubuntu</span><span class="o">-</span><span class="nv">latest</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">strategy</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="nl">matrix</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;9.0.0-alpha.1&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">steps</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Setup</span> <span class="nc">PHP</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">shivammathur</span><span class="o">/</span><span class="nv">setup</span><span class="o">-</span><span class="nv">php</span><span class="o">@</span><span class="nv">v2</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">php</span><span class="o">-</span><span class="nv">version</span><span class="p">:</span> <span class="s2">&#34;8.1&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Checkout</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">checkout</span><span class="o">@</span><span class="nv">v4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Add</span> <span class="nv">vendor</span> <span class="nv">folder</span> <span class="k">in</span> <span class="nv">cache</span> <span class="nv">to</span> <span class="nv">make</span> <span class="nv">next</span> <span class="nv">builds</span> <span class="nv">faster</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Cache</span> <span class="nv">vendor</span> <span class="nv">folder</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">cache</span><span class="o">@</span><span class="nv">v3</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">path</span><span class="p">:</span> <span class="nv">vendor</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">key</span><span class="p">:</span> <span class="nv">php</span><span class="o">-</span><span class="err">$</span><span class="p">{{</span> <span class="nf">hashFiles</span><span class="p">(</span><span class="s1">&#39;composer.lock&#39;</span><span class="p">)</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Add</span> <span class="nv">composer</span> <span class="nv">local</span> <span class="nv">folder</span> <span class="k">in</span> <span class="nv">cache</span> <span class="nv">to</span> <span class="nv">make</span> <span class="nv">next</span> <span class="nv">builds</span> <span class="nv">faster</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Cache</span> <span class="nv">composer</span> <span class="nv">folder</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">uses</span><span class="p">:</span> <span class="nv">actions</span><span class="o">/</span><span class="nv">cache</span><span class="o">@</span><span class="nv">v3</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">with</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">path</span><span class="p">:</span> <span class="o">~/</span><span class="p">.</span><span class="nv">composer</span><span class="o">/</span><span class="nv">cache</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">key</span><span class="p">:</span> <span class="nv">php</span><span class="o">-</span><span class="nv">composer</span><span class="o">-</span><span class="nv">cache</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">run</span><span class="p">:</span> <span class="nv">composer</span> <span class="nv">install</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">#</span> <span class="nc">Docker</span> <span class="nv">images</span> <span class="nv">prestashop</span><span class="o">/</span><span class="nv">prestashop</span> <span class="nv">may</span> <span class="nv">be</span> <span class="nv">used</span><span class="p">,</span> <span class="nv">even</span> <span class="k">if</span> <span class="nv">the</span> <span class="nv">shop</span> <span class="nv">remains</span> <span class="nv">uninstalled</span>
+</span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Execute</span> <span class="nc">PHPStan</span> <span class="nv">on</span> <span class="nc">PrestaShop</span> <span class="p">(</span><span class="nc">Tag</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}})</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">run</span><span class="p">:</span> <span class="nv">chmod</span> <span class="o">+</span><span class="nv">x</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="o">-</span><span class="nv">v9</span><span class="p">.</span><span class="nv">sh</span> <span class="o">&amp;&amp;</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="o">-</span><span class="nv">v9</span><span class="p">.</span><span class="nv">sh</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}}</span>
+</span></span></code></pre></div><p>For every pull request made to the repository or via an automatic trigger - thanks to the <em>workflow_dispatch</em> event - you will be able to run all the jobs defined previously. Going further, you will notice that we also use a syntax check for a set of PHP versions as well as PHP CS Fixer. Since these steps are not part of our article, we will not go into further detail about them.</p>
+<h1 id="alternative-location-act">Alternative location: act</h1>
+<p>During the development of a module, as with any development, you won&rsquo;t necessarily push changes to Git after every function. Therefore, since the GitHub workflow is only triggered by a code push and on the code available in the repository at the time of execution, you wouldn&rsquo;t be able to visualize the issues during development.</p>
+<p>To do this, you can use <a href="https://nektosact.com/">nektos/act, &ldquo;Run your GitHub Actions locally&rdquo;</a> to use a runner locally. Workflows using Docker images require you to run Docker (e.g., Docker Desktop). The advantage of this solution, in addition to being local, is the ability to use the same workflow as the one defined in GitHub without having to interchange it to a solution with its own naming conventions. Regarding its installation, I leave it to you to choose the method that best suits your environment. Working on MacOS, the installation via <a href="https://brew.sh/">Homebrew</a> was preferred.</p>
+<p>In the command line, at the root of your repository, you can now write this command to run all your jobs:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">act workflow_dispatch
+</span></span></code></pre></div><p>We specify the GitHub event so that act knows which jobs to run. You can also specify a particular workflow file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">act workflow_dispatch -W &#39;.github/workflows/php.yml&#39;
+</span></span></code></pre></div><p>Alternatively, you can get the list of available jobs in your workflow and make a direct call to them:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">act --list
+</span></span></code></pre></div><p>And then make a direct call of this type (omitting the GitHub event):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">act -j &#39;php-linter&#39;
+</span></span><span class="line"><span class="cl">act -j &#39;phpstan-v9&#39;
+</span></span></code></pre></div><p>You should obtain a result similar to the GitHub console output.</p>
+<p><img src="/assets/images/2025/01/detectedversion.png" alt="detected_version"></p>
+<h3 id="parallelism-issue">Parallelism issue</h3>
+<p>For convenience and to run the same job on a series of PrestaShop versions, we use a matrix in the GitHub workflow. However, with Act, this can cause issues with concurrent execution. You can then choose to modify your workflow to avoid using matrices, or you can alter the matrix without changing your configuration.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">act -j &#39;phpstan&#39; --matrix presta-versions:8.1.7
+</span></span></code></pre></div><h1 id="conclusion-module-quality-and-automated-testing">Conclusion: module quality and automated testing</h1>
+<p>To conclude, thanks to the tips shared by Jonathan Danse during the PrestaShop Developer Conference 2024, you now have all the tools to automate the testing and analysis of your modules as well as ensure their quality. By adopting these best practices, you can deploy reliable and high-performing modules.
+To explore further, feel free to check the module sources presented in this article on this GitHub repository: <a href="https://github.com/PrestaEdit/modulenine">PrestaEdit/modulenine</a>.</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jan 21, 2025</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/psdevcon/">psdevcon</a>
+
+  <a class="label label-primary" href="/tag/news/">news</a>
+
+  <a class="label label-primary" href="/tag/event/">event</a>
+
+  <a class="label label-primary" href="/tag/module/">module</a>
+
+  <a class="label label-primary" href="/tag/test/">test</a>
+
+  <a class="label label-primary" href="/tag/analyze/">analyze</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/PrestaEdit/">Jonathan Danse</a>
+      <span>PrestaShop Developer at PrestaEdit</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2025\/testing-and-analyzing-your-prestashop-modules-automatically\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

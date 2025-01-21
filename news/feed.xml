@@ -6,7 +6,17 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Dec 2024 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Jan 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PSDevCon 2024 - testing and analyzing your PrestaShop modules automatically</title>
+      <link>https://build.prestashop-project.org/news/2025/testing-and-analyzing-your-prestashop-modules-automatically/</link>
+      <pubDate>Tue, 21 Jan 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/testing-and-analyzing-your-prestashop-modules-automatically/</guid>
+      <description>During the PrestaShop Developer Conference 2024, Jonathan Danse presented methods for automatically testing and analyzing modules, ensuring their quality and reliability. In this guest article, Jonathan shares the key points from his conference and offers practical advice. Learn how to ensure high-performing modules with every deployment.
+You can find the sources for the module created in this article on the following GitHub repository: PrestaEdit/modulenine. Jonathan, the floor is now yours!</description>
+    </item>
+    
     <item>
       <title>PSDevCon 2024 - PUIK (PrestaShop UI Kit) - The new UI kit from PrestaShop</title>
       <link>https://build.prestashop-project.org/news/2024/puik-the-new-ui-kit-from-prestashop/</link>
@@ -147,17 +157,6 @@ What’s inside Global improvements: Ensure update path - Optimization of the up
       <guid>https://build.prestashop-project.org/news/2024/Second-PrestaShop-Developer-Conference-Participate-as-Speaker/</guid>
       <description>Are you a passionate PrestaShop developer or enthusiast? We are happy to announce that the call for presentations is now open for the second edition of the PrestaShop Developer Conference, happening on November 6, 2024 in Paris, France. This event offers a prime opportunity to engage in developer discussions, better understand solutions, and connect with fellow community members.
 What is this event about? The PrestaShop Developer Conference empowers the developer community within the PrestaShop ecosystem.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.1.7 Is Available</title>
-      <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-7-maintenance-release/</link>
-      <pubDate>Tue, 25 Jun 2024 09:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-7-maintenance-release/</guid>
-      <description>A new patch for PrestaShop 8.1 is now available! This release includes several significant improvements and numerous bug fixes. In this article, we&amp;rsquo;ll explore these updates in detail.
-PrestaShop 8.1.7 is now available. This release addresses several bugs and brings various improvements.
-It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. Upgrade is possible using the latest version of the 1-Click Upgrade module.</description>
     </item>
     
   </channel>

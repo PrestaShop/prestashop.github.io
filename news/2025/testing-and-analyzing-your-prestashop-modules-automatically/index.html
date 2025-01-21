@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>PSDevCon 2024 - testing and analyzing your PrestaShop modules automatically</title>
-    <link href="/style.css?1737469109" rel="stylesheet">
+    <link href="/style.css?1737469434" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -202,11 +202,11 @@
 
               <p>During the PrestaShop Developer Conference 2024, <a href="https://github.com/prestaedit">Jonathan Danse</a> presented methods for automatically testing and analyzing modules, ensuring their quality and reliability. In this guest article, Jonathan shares the key points from his conference and offers practical advice. Learn how to ensure high-performing modules with every deployment.</p>
 <p>You can find the sources for the module created in this article on the following GitHub repository: <a href="https://github.com/PrestaEdit/modulenine">PrestaEdit/modulenine</a>. Jonathan, the floor is now yours!</p>
-<h1 id="preamble">Preamble</h1>
+<h2 id="preamble">Preamble</h2>
 <p>When developing a module, it is very often created on a single instance and primarily on a more recent version of PrestaShop. However, the users of these modules are not always on the same platform.
 Over the course of both minor and major versions, PrestaShop introduces code changes that can impact the proper functioning of the module. Nevertheless, manually testing on each version of PrestaShop and with each batch of new methods is tedious.</p>
 <p>Performing these tests at the end of development can also prove more complicated than expected, especially if an entire section of code is not backward compatible. Let us then see how to test the code of your module automatically for compatibility across all versions.</p>
-<h1 id="phpstan">PhpStan</h1>
+<h2 id="phpstan">PhpStan</h2>
 <h3 id="introduction">Introduction</h3>
 <p><a href="https://phpstan.org/">PHPStan</a> is a static code analysis tool specifically for PHP. It analyzes your code for errors and potential issues, helping you improve the quality of your code and avoid common mistakes. At the PrestaShop level, you can already use PhpStan outside of this project. For that, see the <a href="https://devdocs.prestashop-project.org/8/modules/testing/advanced-checks/#static-analysis">official documentation</a>.</p>
 <h3 id="configuration">Configuration</h3>
@@ -286,7 +286,7 @@ Over the course of both minor and major versions, PrestaShop introduces code cha
 <li>tests/phpstan/phpstan-9.0.0-alpha.1.neon</li>
 </ul>
 <p>Just like me [Editor’s Note: Jonathan Danse], you might feel the urge to modify the call to PhpStan configuration files - which we will write later - to use a single file, as the content is identical. But no, you will not do that. This division into files will be necessary for us later.</p>
-<h1 id="module">Module</h1>
+<h2 id="module">Module</h2>
 <p>Up next in the article, we will design a module aimed at illustrating the handling of errors.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;?php
 </span></span><span class="line"><span class="cl">
@@ -342,7 +342,7 @@ Over the course of both minor and major versions, PrestaShop introduces code cha
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">parameters:
 </span></span><span class="line"><span class="cl">  ignoreErrors:
 </span></span><span class="line"><span class="cl">    - &#39;~^Call to an undefined static method Carrier::getCarrierNameFromShopName\(\)\.$~&#39;
-</span></span></code></pre></div><h1 id="workflow-github">Workflow GitHub</h1>
+</span></span></code></pre></div><h2 id="workflow-github">Workflow GitHub</h2>
 <p>For the sake of this article, we wanted to start with the introduction and the expected result regarding the use of PhpStan. With the goal of making this more automated, we will now write the GitHub workflow configuration.</p>
 <p>.github/workflows/php.yml</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-v" data-lang="v"><span class="line"><span class="cl"><span class="nv">name</span><span class="p">:</span> <span class="nc">PHP</span> <span class="nv">tests</span>
@@ -499,7 +499,7 @@ Over the course of both minor and major versions, PrestaShop introduces code cha
 </span></span><span class="line"><span class="cl">      <span class="o">-</span> <span class="nv">name</span><span class="p">:</span> <span class="nc">Execute</span> <span class="nc">PHPStan</span> <span class="nv">on</span> <span class="nc">PrestaShop</span> <span class="p">(</span><span class="nc">Tag</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}})</span>
 </span></span><span class="line"><span class="cl">        <span class="nv">run</span><span class="p">:</span> <span class="nv">chmod</span> <span class="o">+</span><span class="nv">x</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="o">-</span><span class="nv">v9</span><span class="p">.</span><span class="nv">sh</span> <span class="o">&amp;&amp;</span> <span class="p">.</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">phpstan</span><span class="o">-</span><span class="nv">v9</span><span class="p">.</span><span class="nv">sh</span> <span class="err">$</span><span class="p">{{</span> <span class="nv">matrix</span><span class="p">.</span><span class="nv">presta</span><span class="o">-</span><span class="nv">versions</span> <span class="p">}}</span>
 </span></span></code></pre></div><p>For every pull request made to the repository or via an automatic trigger - thanks to the <em>workflow_dispatch</em> event - you will be able to run all the jobs defined previously. Going further, you will notice that we also use a syntax check for a set of PHP versions as well as PHP CS Fixer. Since these steps are not part of our article, we will not go into further detail about them.</p>
-<h1 id="alternative-location-act">Alternative location: act</h1>
+<h2 id="alternative-location-act">Alternative location: act</h2>
 <p>During the development of a module, as with any development, you won&rsquo;t necessarily push changes to Git after every function. Therefore, since the GitHub workflow is only triggered by a code push and on the code available in the repository at the time of execution, you wouldn&rsquo;t be able to visualize the issues during development.</p>
 <p>To do this, you can use <a href="https://nektosact.com/">nektos/act, &ldquo;Run your GitHub Actions locally&rdquo;</a> to use a runner locally. Workflows using Docker images require you to run Docker (e.g., Docker Desktop). The advantage of this solution, in addition to being local, is the ability to use the same workflow as the one defined in GitHub without having to interchange it to a solution with its own naming conventions. Regarding its installation, I leave it to you to choose the method that best suits your environment. Working on MacOS, the installation via <a href="https://brew.sh/">Homebrew</a> was preferred.</p>
 <p>In the command line, at the root of your repository, you can now write this command to run all your jobs:</p>
@@ -516,7 +516,7 @@ Over the course of both minor and major versions, PrestaShop introduces code cha
 <h3 id="parallelism-issue">Parallelism issue</h3>
 <p>For convenience and to run the same job on a series of PrestaShop versions, we use a matrix in the GitHub workflow. However, with Act, this can cause issues with concurrent execution. You can then choose to modify your workflow to avoid using matrices, or you can alter the matrix without changing your configuration.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">act -j &#39;phpstan&#39; --matrix presta-versions:8.1.7
-</span></span></code></pre></div><h1 id="conclusion-module-quality-and-automated-testing">Conclusion: module quality and automated testing</h1>
+</span></span></code></pre></div><h2 id="conclusion-module-quality-and-automated-testing">Conclusion: module quality and automated testing</h2>
 <p>To conclude, thanks to the tips shared by Jonathan Danse during the PrestaShop Developer Conference 2024, you now have all the tools to automate the testing and analysis of your modules as well as ensure their quality. By adopting these best practices, you can deploy reliable and high-performing modules.
 To explore further, feel free to check the module sources presented in this article on this GitHub repository: <a href="https://github.com/PrestaEdit/modulenine">PrestaEdit/modulenine</a>.</p>
 

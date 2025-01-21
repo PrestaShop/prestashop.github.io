@@ -12,7 +12,7 @@ During the PrestaShop Developer Conference 2024, [Jonathan Danse](https://github
 
 You can find the sources for the module created in this article on the following GitHub repository: [PrestaEdit/modulenine](https://github.com/PrestaEdit/modulenine). Jonathan, the floor is now yours!
 
-# Preamble
+## Preamble
 
 When developing a module, it is very often created on a single instance and primarily on a more recent version of PrestaShop. However, the users of these modules are not always on the same platform. 
 Over the course of both minor and major versions, PrestaShop introduces code changes that can impact the proper functioning of the module. Nevertheless, manually testing on each version of PrestaShop and with each batch of new methods is tedious.
@@ -20,7 +20,7 @@ Over the course of both minor and major versions, PrestaShop introduces code cha
 Performing these tests at the end of development can also prove more complicated than expected, especially if an entire section of code is not backward compatible. Let us then see how to test the code of your module automatically for compatibility across all versions.
 
 
-# PhpStan
+## PhpStan
 ### Introduction
 
 [PHPStan](https://phpstan.org/) is a static code analysis tool specifically for PHP. It analyzes your code for errors and potential issues, helping you improve the quality of your code and avoid common mistakes. At the PrestaShop level, you can already use PhpStan outside of this project. For that, see the [official documentation](https://devdocs.prestashop-project.org/8/modules/testing/advanced-checks/#static-analysis).
@@ -120,7 +120,7 @@ We will therefore have these four files:
 
 Just like me [Editor’s Note: Jonathan Danse], you might feel the urge to modify the call to PhpStan configuration files - which we will write later - to use a single file, as the content is identical. But no, you will not do that. This division into files will be necessary for us later.
 
-# Module
+## Module
 
 Up next in the article, we will design a module aimed at illustrating the handling of errors.
 
@@ -196,7 +196,7 @@ parameters:
     - '~^Call to an undefined static method Carrier::getCarrierNameFromShopName\(\)\.$~'
 ```
 
-# Workflow GitHub
+## Workflow GitHub
 
 For the sake of this article, we wanted to start with the introduction and the expected result regarding the use of PhpStan. With the goal of making this more automated, we will now write the GitHub workflow configuration.
 
@@ -361,7 +361,7 @@ jobs:
 For every pull request made to the repository or via an automatic trigger - thanks to the *workflow_dispatch* event - you will be able to run all the jobs defined previously. Going further, you will notice that we also use a syntax check for a set of PHP versions as well as PHP CS Fixer. Since these steps are not part of our article, we will not go into further detail about them.
 
 
-# Alternative location: act
+## Alternative location: act
 
 During the development of a module, as with any development, you won't necessarily push changes to Git after every function. Therefore, since the GitHub workflow is only triggered by a code push and on the code available in the repository at the time of execution, you wouldn't be able to visualize the issues during development.
 
@@ -403,7 +403,7 @@ For convenience and to run the same job on a series of PrestaShop versions, we u
 act -j 'phpstan' --matrix presta-versions:8.1.7
 ```
 
-# Conclusion: module quality and automated testing
+## Conclusion: module quality and automated testing
 
 To conclude, thanks to the tips shared by Jonathan Danse during the PrestaShop Developer Conference 2024, you now have all the tools to automate the testing and analysis of your modules as well as ensure their quality. By adopting these best practices, you can deploy reliable and high-performing modules.
 To explore further, feel free to check the module sources presented in this article on this GitHub repository: [PrestaEdit/modulenine](https://github.com/PrestaEdit/modulenine).

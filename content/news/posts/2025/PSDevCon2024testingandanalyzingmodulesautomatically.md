@@ -81,7 +81,7 @@ docker run --rm --volumes-from temp-ps \
 /tests/phpstan-v9.sh
 
 
-This is necessary to enable the use of the registry prestaedit/prestashop instead of prestashop/prestashop, as the Docker image for PrestaShop 9 will only be available upon its official release.
+This is necessary to enable the prestaedit/prestashop registry use instead of prestashop/prestashop, as the Docker image for PrestaShop 9 will only be available upon its official release.
 
 
 Furthermore, the PhpStan version utilized is different, as it is compatible with PHP 8.1, among others.

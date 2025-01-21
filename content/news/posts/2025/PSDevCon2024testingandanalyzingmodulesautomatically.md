@@ -8,48 +8,30 @@ icon: icon-leaf
 tags: [psdevcon, news, event, module, test, analyze]
 ---
 
-During the PrestaShop Developer Conference 2024, [Jonathan Danse](https://github.com/prestaedit) presented methods for automatically testing and analyzing modules, ensuring their quality and reliability.
-
-In this guest article, Jonathan shares the key points from his conference and offers practical advice. Learn how to ensure high-performing modules with every deployment.
+During the PrestaShop Developer Conference 2024, [Jonathan Danse](https://github.com/prestaedit) presented methods for automatically testing and analyzing modules, ensuring their quality and reliability. In this guest article, Jonathan shares the key points from his conference and offers practical advice. Learn how to ensure high-performing modules with every deployment. 
 
 You can find the sources for the module created in this article on the following GitHub repository: PrestaEdit/modulenine. Jonathan, the floor is now yours!
 
 # Preamble
 
-When developing a module, it is very often created on a single instance and primarily on a more recent version of PrestaShop. 
+When developing a module, it is very often created on a single instance and primarily on a more recent version of PrestaShop. However, the users of these modules are not always on the same platform. 
+Over the course of both minor and major versions, PrestaShop introduces code changes that can impact the proper functioning of the module. Nevertheless, manually testing on each version of PrestaShop and with each batch of new methods is tedious.
 
-However, the users of these modules are not always on the same platform. 
-
-Over the course of both minor and major versions, PrestaShop introduces code changes that can impact the proper functioning of the module.
-
-Nevertheless, manually testing on each version of PrestaShop and with each batch of new methods is tedious.
-
-Performing these tests at the end of development can also prove more complicated than expected, especially if an entire section of code is not backward compatible.
-
-Let us then see how to test the code of your module automatically for compatibility across all versions.
+Performing these tests at the end of development can also prove more complicated than expected, especially if an entire section of code is not backward compatible. Let us then see how to test the code of your module automatically for compatibility across all versions.
 
 
 # PhpStan
 ### Introduction
 
-[PHPStan](https://phpstan.org/) is a static code analysis tool specifically for PHP. 
-
-It analyzes your code for errors and potential issues, helping you improve the quality of your code and avoid common mistakes. 
-
-At the PrestaShop level, you can already use PhpStan outside of this project. For that, see the [official documentation](https://devdocs.prestashop-project.org/1.7/modules/testing/advanced-checks/#static-analysis).
+[PHPStan](https://phpstan.org/) is a static code analysis tool specifically for PHP. It analyzes your code for errors and potential issues, helping you improve the quality of your code and avoid common mistakes. At the PrestaShop level, you can already use PhpStan outside of this project. For that, see the [official documentation](https://devdocs.prestashop-project.org/1.7/modules/testing/advanced-checks/#static-analysis).
 
 ### Configuration
 
-Before getting to the matter, let's first explore the necessary setup.
-
-We are going to create two shell script files.
-
-In our example, we use the module name directly in the file, without using a variable.
+Before getting to the matter, let's first explore the necessary setup. We are going to create two shell script files. In our example, we use the module name directly in the file, without using a variable.
 
 *About this topic, you could pass the module name directly in the GitHub workflow by using the repository name. This will not be covered in this article.*
 
 /tests/phpstan.sh
-
 
 ```
 #!/bin/bash
@@ -77,15 +59,9 @@ docker run --rm --volumes-from temp-ps \
        --configuration=/var/www/html/modules/modulenine/tests/phpstan/phpstan-$PS_VERSION.neon
 ```
 
-
 /tests/phpstan-v9.sh
 
-
-This is necessary to enable the prestaedit/prestashop registry use instead of prestashop/prestashop, as the Docker image for PrestaShop 9 will only be available upon its official release.
-
-
-Furthermore, the PhpStan version utilized is different, as it is compatible with PHP 8.1, among others.
-
+This is necessary to enable the prestaedit/prestashop registry use instead of prestashop/prestashop, as the Docker image for PrestaShop 9 will only be available upon its official release. Furthermore, the PhpStan version utilized is different, as it is compatible with PHP 8.1, among others.
 
 ```
 #!/bin/bash
@@ -115,12 +91,7 @@ docker run --rm --volumes-from ps9-php8 \
        --configuration=/var/www/html/modules/modulenine/tests/phpstan/phpstan-$PS_VERSION.neon
 ```
 
-
-Next, we will add all the files corresponding to a tested version of PrestaShop. These files will have the .neon extension. 
-
-
-Its basic content will be as follows: 
-
+Next, we will add all the files corresponding to a tested version of PrestaShop. These files will have the .neon extension. Its basic content will be as follows: 
 
 ```
 includes:
@@ -137,31 +108,17 @@ parameters:
   ignoreErrors:
 ```
 
-
 ### About ps-module-extension.neon 
 
-
-This initial configuration file will handle the definition of useful constants related to a PrestaShop instance. It will also set up stubs for the Module and Tab classes.
-
-
-Subsequently, we will establish a workflow to test the module under PrestaShop versions 1.6.1.23, 1.7.8, 8.1.7, and 9.0.0-alpha.1.
-
+This initial configuration file will handle the definition of useful constants related to a PrestaShop instance. It will also set up stubs for the Module and Tab classes. Subsequently, we will establish a workflow to test the module under PrestaShop versions 1.6.1.23, 1.7.8, 8.1.7, and 9.0.0-alpha.1.
 
 We will therefore have these four files:
-tests/phpstan/phpstan-1.6.1.23.neon
-tests/phpstan/phpstan-1.7.8.neon
-tests/phpstan/phpstan-8.1.7.neon
-tests/phpstan/phpstan-9.0.0-alpha.1.neon
+* tests/phpstan/phpstan-1.6.1.23.neon
+* tests/phpstan/phpstan-1.7.8.neon
+* tests/phpstan/phpstan-8.1.7.neon
+* tests/phpstan/phpstan-9.0.0-alpha.1.neon
 
-
-Just like me [Editor’s Note: Jonathan Danse], you might feel the urge to modify the call to PhpStan configuration files - which we will write later - to use a single file, as the content is identical.
-
-
-But no, you will not do that.
-
-
-This division into files will be necessary for us later.
-
+Just like me [Editor’s Note: Jonathan Danse], you might feel the urge to modify the call to PhpStan configuration files - which we will write later - to use a single file, as the content is identical. But no, you will not do that. This division into files will be necessary for us later.
 
 # Module
 
@@ -206,29 +163,17 @@ class ModuleNine extends Module
 }
 ```
 
-
 As an experienced developer, you might quickly dismiss an objection - and you would be right to do so: calls to non-existent methods for a specific version of PrestaShop are isolated in methods that are never invoked by our module. Therefore, using this module on any version of PrestaShop, would not cause any issues, at least for now.
 
-
-Since the code analysis is performed statically and without your developer's eye, an error will still be reported to you.
-
-
-Take it seriously and ensure you address it with conditions as soon as possible, especially since it involves unused code that should be corrected (or removed, if necessary!).
-
+Since the code analysis is performed statically and without your developer's eye, an error will still be reported to you. Take it seriously and ensure you address it with conditions as soon as possible, especially since it involves unused code that should be corrected (or removed, if necessary!).
 
 Here is an output from the GitHub console during the execution of our jobs. *During this test, we had not yet introduced errors in the functions for PrestaShop 1.6 and 1.7.*
 
-
 ![php_test47](/assets/images/2025/01/phptest47.png)
-
-
-
 
 By viewing the details of a failed job, you can obtain the desired information:
 
 ![php_stan](/assets/images/2025/01/phpstan.png)
-
-
 
 By modifying the module as follows, to add a condition on the code execution, you can rerun your job and the error will be gone.
 
@@ -241,18 +186,9 @@ By modifying the module as follows, to add a condition on the code execution, yo
     }
 ```
 
+You just reran the job and the error didn’t go away?! In reality, PhpStan - *although it knows the value of the constant PS_VERSION* - cannot interpret the conditional in the same way it doesn't know that your methods are never called.
 
-You just reran the job and the error didn’t go away?!
-
-
-In reality, PhpStan - *although it knows the value of the constant PS_VERSION* - cannot interpret the conditional in the same way it doesn't know that your methods are never called.
-
-
-As a result, the static code analysis will always return the encountered error.
-
-
-Once it is handled, you will be able to modify your neon file for the affected version (hence the previous separation) to tell it to ignore the error.
-
+As a result, the static code analysis will always return the encountered error. Once it is handled, you will be able to modify your neon file for the affected version (hence the previous separation) to tell it to ignore the error.
 
 ```
 parameters:
@@ -260,15 +196,9 @@ parameters:
     - '~^Call to an undefined static method Carrier::getCarrierNameFromShopName\(\)\.$~'
 ```
 
-
-
-
 # Workflow GitHub
 
-For the sake of this article, we wanted to start with the introduction and the expected result regarding the use of PhpStan.
-
-With the goal of making this more automated, we will now write the GitHub workflow configuration.
-
+For the sake of this article, we wanted to start with the introduction and the expected result regarding the use of PhpStan. With the goal of making this more automated, we will now write the GitHub workflow configuration.
 
 .github/workflows/php.yml
 ```
@@ -428,79 +358,46 @@ jobs:
 ```
 
 
-For every pull request made to the repository or via an automatic trigger - thanks to the *workflow_dispatch* event - you will be able to run all the jobs defined previously.
-
-
-Going further, you will notice that we also use a syntax check for a set of PHP versions as well as PHP CS Fixer. Since these steps are not part of our article, we will not go into further detail about them.
+For every pull request made to the repository or via an automatic trigger - thanks to the *workflow_dispatch* event - you will be able to run all the jobs defined previously. Going further, you will notice that we also use a syntax check for a set of PHP versions as well as PHP CS Fixer. Since these steps are not part of our article, we will not go into further detail about them.
 
 
 # Alternative location: act
 
-During the development of a module, as with any development, you won't necessarily push changes to Git after every function.
+During the development of a module, as with any development, you won't necessarily push changes to Git after every function. Therefore, since the GitHub workflow is only triggered by a code push and on the code available in the repository at the time of execution, you wouldn't be able to visualize the issues during development.
 
-
-Therefore, since the GitHub workflow is only triggered by a code push and on the code available in the repository at the time of execution, you wouldn't be able to visualize the issues during development.
-
-
-To do this, you can use [nektos/act, "Run your GitHub Actions locally"](https://nektosact.com/) to use a runner locally. 
-
-
-Workflows using Docker images require you to run Docker (e.g., Docker Desktop).
-
-
-The advantage of this solution, in addition to being local, is the ability to use the same workflow as the one defined in GitHub without having to interchange it to a solution with its own naming conventions.
-
-
-Regarding its installation, I leave it to you to choose the method that best suits your environment. Working on MacOS, the installation via Homebrew was preferred.
-
+To do this, you can use [nektos/act, "Run your GitHub Actions locally"](https://nektosact.com/) to use a runner locally. Workflows using Docker images require you to run Docker (e.g., Docker Desktop). The advantage of this solution, in addition to being local, is the ability to use the same workflow as the one defined in GitHub without having to interchange it to a solution with its own naming conventions. Regarding its installation, I leave it to you to choose the method that best suits your environment. Working on MacOS, the installation via Homebrew was preferred.
 
 In the command line, at the root of your repository, you can now write this command to run all your jobs:
 ```
 act workflow_dispatch
 ```
 
-
-We specify the GitHub event so that act knows which jobs to run.
-
-
-You can also specify a particular workflow file:
-
+We specify the GitHub event so that act knows which jobs to run. You can also specify a particular workflow file:
 
 ```
 act workflow_dispatch -W '.github/workflows/php.yml'
 ```
 
-
 Alternatively, you can get the list of available jobs in your workflow and make a direct call to them:
-
 
 ```
 act --list
 ```
 
-
 And then make a direct call of this type (omitting the GitHub event):
-
 
 ```
 act -j 'php-linter'
 act -j 'phpstan-v9'
 ```
 
-
 You should obtain a result similar to the GitHub console output.
-
 
 ![detected_version](/assets/images/2025/01/detectedversion.png)
 
-
 ### Parallelism issue
 
-For convenience and to run the same job on a series of PrestaShop versions, we use a matrix in the GitHub workflow.
-
-However, with Act, this can cause issues with concurrent execution.
-
-You can then choose to modify your workflow to avoid using matrices, or you can alter the matrix without changing your configuration.
+For convenience and to run the same job on a series of PrestaShop versions, we use a matrix in the GitHub workflow. However, with Act, this can cause issues with concurrent execution. You can then choose to modify your workflow to avoid using matrices, or you can alter the matrix without changing your configuration.
 
 ```
 act -j 'phpstan' --matrix presta-versions:8.1.7
@@ -509,5 +406,4 @@ act -j 'phpstan' --matrix presta-versions:8.1.7
 # Conclusion: module quality and automated testing
 
 To conclude, thanks to the tips shared by Jonathan Danse during the PrestaShop Developer Conference 2024, you now have all the tools to automate the testing and analysis of your modules as well as ensure their quality. By adopting these best practices, you can deploy reliable and high-performing modules.
-
 To explore further, feel free to check the module sources presented in this article on this GitHub repository: PrestaEdit/modulenine.

@@ -9,8 +9,6 @@ icon: icon-checked
 tags: [module, module-releases, security]
 ---
 
-## Introduction
-
 A recent wave of attacks has targeted PrestaShop stores, leveraging SQL Injection vulnerabilities in third-party modules to compromise data security. Malicious actors exploit these vulnerabilities to inject harmful code into the PrestaShop database, enabling the theft of sensitive customer information by loading unauthorized JavaScript scripts.
 
 According to the investigation, this vulnerability is not in the PrestaShop core but in third-party modules. Stores using a custom database prefix and without SQL Injection-vulnerable modules installed should remain unaffected. To address potential security concerns, we have released an updated version of the [ps_contactinfo](https://github.com/PrestaShop/ps_contactinfo) module and strongly encourage all store owners to adopt best practices to safeguard their PrestaShop installations.

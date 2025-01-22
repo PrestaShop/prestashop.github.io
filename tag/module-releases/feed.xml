@@ -6,7 +6,17 @@
     <description>Recent content in module-releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/module-releases/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/module-releases/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL Injection attacks alert and security enhancements for PrestaShop</title>
+      <link>https://build.prestashop-project.org/news/2025/sql-injection-attacks-alert-and-security-enhancements-for-prestashop/</link>
+      <pubDate>Wed, 22 Jan 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/sql-injection-attacks-alert-and-security-enhancements-for-prestashop/</guid>
+      <description>A recent wave of attacks has targeted PrestaShop stores, leveraging SQL Injection vulnerabilities in third-party modules to compromise data security. Malicious actors exploit these vulnerabilities to inject harmful code into the PrestaShop database, enabling the theft of sensitive customer information by loading unauthorized JavaScript scripts.
+According to the investigation, this vulnerability is not in the PrestaShop core but in third-party modules. Stores using a custom database prefix and without SQL Injection-vulnerable modules installed should remain unaffected.</description>
+    </item>
+    
     <item>
       <title>Release Of Module ProductComments 4.2.1</title>
       <link>https://build.prestashop-project.org/news/2020/productcomments-4-2-1-maintenance-release/</link>

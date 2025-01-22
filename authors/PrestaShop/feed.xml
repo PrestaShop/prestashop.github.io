@@ -6,7 +6,17 @@
     <description>Recent content in PrestaShop on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL Injection attacks alert and security enhancements for PrestaShop</title>
+      <link>https://build.prestashop-project.org/news/2025/sql-injection-attacks-alert-and-security-enhancements-for-prestashop/</link>
+      <pubDate>Wed, 22 Jan 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/sql-injection-attacks-alert-and-security-enhancements-for-prestashop/</guid>
+      <description>A recent wave of attacks has targeted PrestaShop stores, leveraging SQL Injection vulnerabilities in third-party modules to compromise data security. Malicious actors exploit these vulnerabilities to inject harmful code into the PrestaShop database, enabling the theft of sensitive customer information by loading unauthorized JavaScript scripts.
+According to the investigation, this vulnerability is not in the PrestaShop core but in third-party modules. Stores using a custom database prefix and without SQL Injection-vulnerable modules installed should remain unaffected.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Project Newsletter Launch: Stay Informed!</title>
       <link>https://build.prestashop-project.org/news/2024/introducing-prestashop-project-newsletter/</link>
@@ -153,16 +163,6 @@ Therefore, in the next few days, to align with this new identity, all materials 
       <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-2-maintenance-release/</guid>
       <description>The second patch for PrestaShop 8.1 is available! This release contains 2 security fixes, over 30 bugs have been fixed and some minor improvements have been integrated.
 Version 8.1.2 fixes a few security issues found by security researchers and solves a great number of bugs reported by the community and project&amp;rsquo;s Quality Assurance team. It also includes some minor improvements, especially for the new product page and new multi-format image generation system.</description>
-    </item>
-    
-    <item>
-      <title>Hacktoberfest 2023</title>
-      <link>https://build.prestashop-project.org/news/2023/hacktoberfest-2023/</link>
-      <pubDate>Tue, 26 Sep 2023 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/hacktoberfest-2023/</guid>
-      <description>The month of October is coming quickly! So be prepared for Hacktoberfest, a month-long celebration of open source software.
-Hacktoberfest 2023 The online event has been happening every October since 2013 and is sponsored by DigitalOcean. This year marks the 10th anniversary of the event, with changes to help ensure its sustainability for the next decade. You’ll learn about these right below. How can you participate? Very simple: people are encouraged to create at least 4 pull requests for open source projects on GitHub.</description>
     </item>
     
   </channel>

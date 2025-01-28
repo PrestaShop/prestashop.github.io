@@ -4,11 +4,16 @@ title:  "Announcing PrestaShop Project Live Update January 2025"
 subtitle: "Join us on YouTube on January 29th, 2025 at 4pm (Paris time) for the next Live Update!"
 date:   2025-01-28
 authors: [ kpodemski ]
+image: /assets/images/live-update/liveupdate-banner-linkedin.png
+opengraph_image: /assets/images/live-update/liveupdate-banner-facebook.png
+twitter_image: /assets/images/live-update/liveupdate-banner-twitter.png
 icon: icon-video-camera
 tags: [contribute, event, community, live-update]
 ---
 
 The first Live Update for the PrestaShop Project in 2025 will be hosted on **Wednesday, January 29th, 2025** at [4pm (Paris time)](https://time.is/1600_29_Jan_2025_in_Paris) on [YouTube](https://www.youtube.com/watch?v=JljSmYH-vdg)!
+
+![PrestaShop Project Live Update](/assets/images/live-update/liveupdate-banner-linkedin.png)
 
 Join us for the upcoming Live Update where we will share the latest advancements in the PrestaShop Project. This session is a fantastic opportunity to connect with the Software Components Squad from PrestaShop SA. Learn about their ongoing work and the exciting improvements planned for the multicarrier feature in PrestaShop!
 

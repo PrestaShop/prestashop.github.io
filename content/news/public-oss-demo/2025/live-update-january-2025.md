@@ -11,13 +11,13 @@ icon: icon-video-camera
 tags: [contribute, event, community, live-update]
 ---
 
-On January 29th, 2025, we hosted another Live Update for the PrestaShop Project with the latest news, announcements, and had a pleasure to host members of Software Components Squad from PrestaShop SA.
+On January 29th, 2025, we hosted another Live Update for the PrestaShop Project with the latest news, announcements, and had the pleasure to host Software Components Squad members from PrestaShop SA.
 
 ![PrestaShop Project Live Update](/assets/images/live-update/liveupdate-banner-linkedin.png)
 
 ## PrestaShop Live Update - January 2025
 
-During this Live Update, you could learn about the status of the upcoming PrestaShop 9 Beta 1, and the patch for PrestaShop 8.2. We also talked about the new experiment called "Targeted Contributions", which is our idea on how to streamline the process of contributing to the project. The key point of the session was the presentation of the improved multi-carrier feature in PrestaShop, which is ongoing project run by the Software Components Squad.
+During this Live Update, you could learn about the upcoming PrestaShop 9 Beta 1 status, and the patch for PrestaShop 8.2. We also talked about the new experiment called "Targeted Contributions", which is our idea on how to streamline the process of contributing to the project. This session's key point was the presentation of the improved multi-carrier feature in PrestaShop, which is an ongoing project run by the Software Components Squad.
 
 If you have any questions or feedback about the multi-carrier feature, feel free to share it with us. We are looking forward to hearing from you!
 

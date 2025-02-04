@@ -6,7 +6,17 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Feb 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop Core Monthly - January</title>
+      <link>https://build.prestashop-project.org/news/2025/core-monthly-2025-01-01-2025-01-31/</link>
+      <pubDate>Tue, 04 Feb 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/core-monthly-2025-01-01-2025-01-31/</guid>
+      <description>We are back with the first Core Monthly of 2025! 🎉 Discover the latest updates in the PrestaShop project, including new releases, project highlights, community contributions, and more.
+Want to stay up to date with the latest developments in the PrestaShop project? Core Monthly is your go-to source for the most important news, updates, and changes in the project. In this edition, we will show you what happened in January 2025.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Live Update - January 2025</title>
       <link>https://build.prestashop-project.org/news/2025/live-update-january-2025/</link>
@@ -148,16 +158,6 @@ PrestaShop used to check for overrides during module installation, but the proce
       <guid>https://build.prestashop-project.org/news/2024/OW2WebinarPrestaShopPresentation/</guid>
       <description>On September 26, the OW2 organization will hold a webinar, presented in part by Clément Désiles from PrestaShop.
 During this event, PrestaShop will be presenting alongside ALLMA, a project based on the /e/OS fork of Android and integrating the best of open source modern LLMs. The project is sponsored by a European fund, NGI Search. Pierre-Yves Gibello, OW2’s CEO, will be introducing the webinar at the beginning of the event.</description>
-    </item>
-    
-    <item>
-      <title>Autoupgrade module v6.1.0 and 6.2.0 are Available (1-Click Upgrade)</title>
-      <link>https://build.prestashop-project.org/news/2024/autoupgrade-v6.1-release/</link>
-      <pubDate>Wed, 18 Sep 2024 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/autoupgrade-v6.1-release/</guid>
-      <description>In the footsteps of the latest module releases (see version 6.0.0 release blogpost), these versions bring a number of improvements to streamline PrestaShop updates. Explore the changelog below to find out what version 6.1.0 and 6.2.0 bring to the upgrade module.
-What’s inside Global improvements: Version comparison - Fix an issue on the PHP version check before starting an upgrade, which was reporting some valid versions as incompatible. Version comparison - Fix an issue where the number of altered or deleted core files is always zero.</description>
     </item>
     
   </channel>

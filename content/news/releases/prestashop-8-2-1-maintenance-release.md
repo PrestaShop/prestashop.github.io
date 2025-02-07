@@ -16,7 +16,7 @@ tags:
 - "8.2.x"
 ---
 
-The first patch for PrestaShop 8.2 is available. This release contains a bunch of bug fixes and improvements, including a new way to handle filtering of the modules in the front office.
+The first patch for PrestaShop 8.2 is available. This release contains many bug fixes and improvements, including a new way to handle module filtering in the front office.
 
 ![PrestaShop 8.2.1 is available!](/assets/images/2024/09/banner_8.2_1534x424.jpg)
 
@@ -32,17 +32,17 @@ By reducing the reliance on overrides, this enhancement improves the overall sta
 
 **Filtering of the modules in the front office**
 
-The method `Hook::getHookModuleExecList` [is now customizable by module developers](https://github.com/PrestaShop/PrestaShop/pull/37125). This method, which filters the list of modules executed for a given hook, normally filtered based on the hook's name. With the new update, developers can customize this filtering process using other criteria. This addition is particularly beneficial for module developers aiming to minimize the use of overrides, especially for modules that filter the list of executed modules for specific hooks (e.g., solutions for handling Consent Mode and privacy solutions).
+The method `Hook::getHookModuleExecList` [is now customizable by module developers](https://github.com/PrestaShop/PrestaShop/pull/37125). This method, which filters the list of modules executed for a given hook, normally filters based on the hook's name. With the new update, developers can customize this filtering process using other criteria. This addition is particularly beneficial for module developers aiming to minimize the use of overrides, especially for modules that filter the list of executed modules for specific hooks (e.g., solutions for handling Consent Mode and privacy solutions).
 
 Typically, we do not introduce such new features in patch versions, as they are primarily intended for bug fixes and minor improvements. However, the significance of this new feature has led us to make an exception.
 
-You can find more information about this new feature in the [pull request](https://github.com/PrestaShop/PrestaShop/pull/37125/), and download the example module from the [PrestaShop Example Modules GitHub repository](https://github.com/PrestaShop/example-modules/demofiltermodules). We believe that including this feature in the patch version will help module developers enhance their modules and ensure better compatibility with future versions of PrestaShop by reducing the reliance on overrides.
+You can find more information about this new feature in the [pull request](https://github.com/PrestaShop/PrestaShop/pull/37125/), and download the example module from the [PrestaShop Example Modules GitHub repository](https://github.com/PrestaShop/example-modules/demofiltermodules). We believe that including this feature in the patch version will help module developers enhance their modules and ensure better compatibility with future PrestaShop versions by reducing the reliance on overrides.
 
-PS: It is worth mentioning that it is possible to filter the back office modules as well. The use case is not as common as for the front office, but it is possible.
+PS: it is worth mentioning that it is possible to filter the back office modules as well. The use case is not as common as for the front office, but it is possible.
 
 **Better way to handle errors when installing a module**
 
-In [this pull request](https://github.com/PrestaShop/PrestaShop/pull/36612/) we improved the way we handle errors when installing a module. Previously, it was not possible to prevent the installation of a module even if certain essential criteria were not met in the `actionModuleInstallBefore` hook, which could lead to issues with, for example, required modules.
+In [this pull request](https://github.com/PrestaShop/PrestaShop/pull/36612/), we improved the way we handle errors when installing a module. Previously, it was not possible to prevent the installation of a module even if certain essential criteria were not met in the `actionModuleInstallBefore` hook, which could lead to issues with, for example, required modules.
 
 **More options in the pagination**
 

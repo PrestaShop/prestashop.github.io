@@ -190,3 +190,11 @@ We would also like to thank the people who contributed aside from code:
 
 We also extend our gratitude to former PrestaShop SA employees for their contributions to this version:
 Hibatallah Aouadni, Rosa Benouamer, Léa Delin, Hajer Elleuch, Zoé Finders, Faten Mhiri, Elodie Prokhoroff, Hana Rebai, Ines Sallemi, Mateus Shirlaw, Fabien Vallon, Anis Zouari.
+
+## PrestaShop 9.0 beta 1
+
+We extend our gratitude to all community members who tested the alpha version and provided feedback.
+
+With the launch of the first beta, we are entering a [feature freeze period](https://en.wikipedia.org/wiki/Freeze_(software_engineering)). This means no new features will be added until the final release. Our focus will now be on fixing bugs, stabilizing the software, and preparing it for the final release.
+
+Once again, we encourage everyone to download this version, test it, and provide feedback. Your input is invaluable in helping us deliver a stable and reliable software solution for the entire PrestaShop community.

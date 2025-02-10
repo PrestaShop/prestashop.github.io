@@ -180,7 +180,7 @@ A big thank you to over **65 people** who contributed between the PrestaShop 9 a
 
 Boris Hermans, ChronoBrake, clement-hvt, Codencode, CodeOlympus, ComonSoft, Damien Tupinier, Daniel Black, Daniel Hlavacek, David Gonzalez, dependabot[bot], Dindault Lucas, Dominik Shaim Ulrich, DylanDenizon, Fabien Papet, Florine Hea, Franck Lefèvre, idnovate, Jackoske, Jean-François Viguier, jeremie, Jin JI, John.R, JohnPAfr, Jonathan Danse, Jonathan Lelievre, Jonathan Renard, Julien Gissinger, Karlis Suvi, Krystian Podemski, ludovic cardinale, Markus Staab, Mathieu Ferment, Matthias Goudjil, Matthieu Rolland, Max, Maxime Poulain, Michal Macek, Morgan Pichat, Mouleeswaran Ganapathi, mrkalchemy, Nesrine Abdmouleh, Nicko, Nicolas Lœuillet,Thomas Roux, Olivier Le Corre, Prestaworks, PrestonBot, PululuK, r.fabiani, Robin Fischer, Romain PIOT, Romain Soulard, Shivam7-1, Simone Gennari, Sullivan, Tafaz, Tanguy JACQUET, Thibault Blivet, Thomas Delaporte, Thomas Leone, Tom Girou, William Entriken
 
-...and a warm welcome to the those of them who contributed for the first time!
+...and a warm welcome to those who contributed for the first time!
 
 We would also like to thank the people who contributed aside from code:
 - Product management: Iliès Bahloul and Wahbi Maaoui.

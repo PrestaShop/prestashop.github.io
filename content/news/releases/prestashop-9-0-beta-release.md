@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 9.0 beta is now available!"
 subtitle: "The first beta version of PrestaShop 9.0 is ready for testing"
-date: 2025-02-10
+date: 2025-02-11
 authors: [ PrestaShop ]
 image: /assets/images/2024/12/ps9beta_LK-FB_1200x627_blue.jpg
 opengraph_image: /assets/images/2024/12/ps9beta_LK-FB_1200x627_blue.jpg

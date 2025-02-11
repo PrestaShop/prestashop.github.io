@@ -6,7 +6,17 @@
     <description>Recent content in PrestaShop on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 9.0 beta is now available!</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-beta-release/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-beta-release/</guid>
+      <description>The first beta version of PrestaShop 9.0 is now available for testing. This version includes many new features and improvements, a new Hummingbird theme, a new Admin API, PHP 8.4 and Symfony 6.4 support, many bug fixes, and a significant codebase cleanup. Read on to learn more about the new features and improvements.
+PrestaShop 9.0 beta 1 In June, when we released the alpha 1 version, we also published the first overview of new features and improvements that PrestaShop 9 will bring.</description>
+    </item>
+    
     <item>
       <title>SQL Injection attacks alert and security enhancements for PrestaShop</title>
       <link>https://build.prestashop-project.org/news/2025/sql-injection-attacks-alert-and-security-enhancements-for-prestashop/</link>
@@ -153,16 +163,6 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
       <description>This week will see some changes with the Project. PrestaShop SA, the company, is making the open source Project consistent with the new PrestaShop branding.
 New PrestaShop Project branding Unveiled earlier this year, PrestaShop launched its new brand identity to affirm PrestaShop’s strengths, showing more credibility and trust.
 Therefore, in the next few days, to align with this new identity, all materials related to the Project will change. You’ll see the rebranded Project’s website, developer documentation, this blog, and other Project-related content.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.1.2 is available</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-2-maintenance-release/</link>
-      <pubDate>Thu, 28 Sep 2023 10:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-2-maintenance-release/</guid>
-      <description>The second patch for PrestaShop 8.1 is available! This release contains 2 security fixes, over 30 bugs have been fixed and some minor improvements have been integrated.
-Version 8.1.2 fixes a few security issues found by security researchers and solves a great number of bugs reported by the community and project&amp;rsquo;s Quality Assurance team. It also includes some minor improvements, especially for the new product page and new multi-format image generation system.</description>
     </item>
     
   </channel>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop 9.0 beta is now available!</title>
+    <link href="/style.css?1739285728" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop 9.0 beta is now available!" />
+<meta property="og:description" content="The first beta version of PrestaShop 9.0 is now available for testing. This version includes many new features and improvements, a new Hummingbird theme, a new Admin API, PHP 8.4 and Symfony 6.4 support, many bug fixes, and a significant codebase cleanup. Read on to learn more about the new features and improvements." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2025/prestashop-9-0-beta-release/" />
+    <meta property="og:image" content="https://build.prestashop-project.org/assets/images/2024/12/ps9beta_LK-FB_1200x627_blue.jpg"/>
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2025-02-10T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2025-02-10T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/2024/12/ps9beta_TW_1024x512_blue.jpg">
+<meta name="twitter:title" content="PrestaShop 9.0 beta is now available!"/>
+<meta name="twitter:description" content="The first beta version of PrestaShop 9.0 is ready for testing"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip': false });
+			}
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop 9.0 beta is now available!</h1>
+              
+                <h3 class="post-subtitle">The first beta version of PrestaShop 9.0 is ready for testing</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/PrestaShop/">
+        <img class="img-circle" src="/assets/images/authors/prestashop-team.png" alt="PrestaShop team's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/PrestaShop/">PrestaShop team</a>
+      </div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Feb 10, 2025
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;9.0&#43;beta&#43;is&#43;now&#43;available%21&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2025%2Fprestashop-9-0-beta-release%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2025%2Fprestashop-9-0-beta-release%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>The first beta version of PrestaShop 9.0 is now available for testing. This version includes many new features and improvements, a new Hummingbird theme, a new Admin API, PHP 8.4 and Symfony 6.4 support, many bug fixes, and a significant codebase cleanup. Read on to learn more about the new features and improvements.</p>
+<p><img src="/assets/images/2024/12/ps9beta_LK-FB_1200x627_blue.jpg" alt="PrestaShop 9.0 beta is available!"></p>
+<h2 id="prestashop-90-beta-1">PrestaShop 9.0 beta 1</h2>
+<p><img src="/assets/images/2024/12/prestashop9.jpeg" alt="PrestaShop 9.0 Beta 1"></p>
+<p>In June, when we released the alpha 1 version, we also <a href="/news/2024/prestashop-9-alpha1-available/">published</a> the first overview of new features and improvements that PrestaShop 9 will bring. Since then, we&rsquo;ve worked hard with the community to improve and prepare the software for the next major release.</p>
+<p>Below are descriptions of some notable changes implemented in this version. This list highlights only the most important updates. The final release notes will provide a complete overview, including all improvements and bug fixes.</p>
+
+
+
+<div class="alert alert-important"><h4><i class="icon-fire"></i>
+        Important
+    </h4><strong>You should not use this beta version in production</strong>. Upgrading from PrestaShop 9.0 beta to a final version 9 is also impossible. We recommend testing this version on a copy of your shop or using a clean installation.
+</div>
+
+<h3 id="symfony-64">Symfony 6.4</h3>
+<p>PrestaShop 9.0 is now based on Symfony 6.4. This change improves the software&rsquo;s performance, security, and maintainability. Symfony 6.4 is this framework&rsquo;s latest long-term support version, which provides security updates until November 2027.</p>
+<img src="/assets/images/2024/12/symfony_black_02.png" alt="PrestaShop 9 is based on Symfony 6.4" style="max-width: 400px;">
+<h3 id="php-84-support">PHP 8.4 support</h3>
+<p>It&rsquo;s a last-minute addition, but we&rsquo;re happy to announce that PrestaShop 9.0 now supports PHP 8.4. This version, which was released in November 2024, brings many new additions to the language, and we&rsquo;re excited to be able to support it from the start. Thanks to <a href="https://github.com/PrestaShop/PrestaShop/pull/37417">joint efforts</a> from the community and the PrestaShop team, we were able to make this happen.</p>
+<p>This is fantastic news for developers working with PrestaShop, as it ensures access to the latest language features and tools, empowering you to build faster, smarter, and more efficient solutions.</p>
+
+
+
+<div class="alert alert-info">Our CI (Continuous Integration) processes, which continuously test the PrestaShop core on GitHub, are already compatible with PHP 8.4. However, there may be a few edge cases that require additional adjustments to ensure complete support. If you encounter any issues, please let us know by submitting a bug report.
+</div>
+
+<p>As a reminder, the minimum PHP version required to run PrestaShop 9.0 is PHP 8.1.</p>
+<h3 id="the-new-admin-api-with-api-platform">The new Admin API with API Platform</h3>
+<p>The new Admin API is a key feature of PrestaShop 9.0, enabling developers to interact more efficiently with the back office through the API. While this is an exciting first step, it&rsquo;s important to note that the API is still in its early stages, with some endpoints yet to be implemented and further refinements needed. However, your testing and feedback will play a crucial role in shaping its future development.
+You can <a href="https://youtu.be/7CQ2Sg-v4XQ?t=1219">watch a presentation</a> by <a href="https://github.com/jolelievre">@jolelievre</a>, where he covers the new solution’s basics, explains its foundations, and demonstrates how to use it.</p>
+<p>If you want to test the new API, make sure to follow the article written by <a href="https://github.com/kpodemski">@kpodemski</a> - <a href="/news/2024/meet-prestashop9-api/">How to use the new API in PrestaShop 9</a>. This tutorial will guide you through using the new API, explaining how to authorize the new API, create a new resource, and work with the API in general.</p>
+<p>A <a href="https://devdocs.prestashop-project.org/9/admin-api/">dedicated section in the documentation</a> explains how to use the new API and how the new API works under the hood.</p>
+<p>We’re excited to share this new tool with you and are eager to hear your feedback as we refine and expand the API. Your input is vital in helping us build a robust solution for the entire PrestaShop community.</p>
+<img src="/assets/images/2024/12/wabby_logo_api-platform.png" alt="API Platform Admin API for PrestaShop" style="max-width: 300px;">
+<h3 id="hummingbird-theme">Hummingbird theme</h3>
+<p>The <a href="https://github.com/PrestaShop/hummingbird">Hummingbird theme</a> is an exciting new addition to PrestaShop 9.0! Built on Bootstrap 5, it introduces a modernized directory structure, utilizes TypeScript, and adopts the BEM methodology for CSS naming. These improvements, along with other enhancements, lay a strong foundation for future theme development.</p>
+
+
+
+<div class="alert alert-info">Hummingbird is the default theme in PrestaShop 9.0 beta 1, but it won&rsquo;t be the default one in the final release.
+</div>
+
+<p>While Hummingbird is still under active development and won&rsquo;t be the default theme for PrestaShop 9, it represents a significant step forward. We strongly encourage developers to begin exploring, testing, and building their themes based on Hummingbird. Its robust foundation promises to make your projects more efficient and maintainable, while helping shape the future of PrestaShop themes.</p>
+<p>Your feedback is invaluable as we refine Hummingbird. Our aim is to make it the default theme in the next major release, and your input will play a critical role in that journey.</p>
+<p>Learn more about the Hummingbird theme and its features in <a href="(/news/2022/new-theme-announce/)">this article</a>.</p>
+<h3 id="the-new-product-page">The new product page</h3>
+<p>The new product page, introduced in a previous version of PrestaShop, has now fully replaced the legacy page in PrestaShop 9. As a result, developers must migrate their solutions to align with the updated standard. To learn how to customize the new product page, visit the <a href="https://devdocs.prestashop-project.org/9/modules/sample-modules/extend-product-page/">dedicated section inside the developer documentation</a>.</p>
+<p><strong>Symfony migration</strong></p>
+<p>Undoubtedly, one of the most significant parts of this update is the continued migration to Symfony. Much work has gone into this release, bringing us closer to this project&rsquo;s end.</p>
+<p>As we have already informed you in the alpha 1 version release notes, the layout in the back office is now entirely managed by Symfony, which makes the code cleaner and easier to maintain. Additionally, several pages have been fully migrated to Symfony. Some have transitioned from being gated behind a feature flag to being enabled by default, while others are introduced directly as default features in version 9. Here’s the list of all migrated pages:</p>
+<p><em>Enabled by default</em></p>
+<ul>
+<li>Back office login page</li>
+<li>Sell -&gt; Orders -&gt; Shopping carts</li>
+<li>Sell -&gt; Catalog -&gt; Attributes &amp; Features</li>
+<li>Sell -&gt; Catalog -&gt; Products (new page version introduced in PrestaShop 8.1 is now the only available one)</li>
+<li>Improve -&gt; Design -&gt; Image Settings</li>
+<li>Improve -&gt; International -&gt; Locations -&gt; States</li>
+<li>Configure -&gt; Shop Parameters -&gt; Customer Settings -&gt; Titles</li>
+<li>Configure -&gt; Shop Parameters -&gt; Order Settings -&gt; Statuses</li>
+</ul>
+<p><em>New pages behind a feature flag</em></p>
+<ul>
+<li>Sell -&gt; Customer Service -&gt; Merchandise Returns</li>
+<li>Configure -&gt; Shop Parameters -&gt; Customer Settings -&gt; Groups</li>
+<li>Configure -&gt; Shop Parameters -&gt; Contact -&gt; Stores</li>
+<li>Configure -&gt; Shop Parameters -&gt; Search</li>
+</ul>
+<p>There are two additional updates to highlight: the Carriers page, still hidden behind a feature flag, has been significantly revamped in this beta version. We encourage you to explore and test its updates by enabling it in Advanced Parameters &gt; New &amp; Experimental Features. Additionally, in the same tab, you can enable the &lsquo;New front container,&rsquo; which introduces a full Symfony container in the front office.</p>
+<h3 id="changes-deep-under-the-hood">Changes deep under the hood</h3>
+<p>Much work has been carried out under the hood to improve the software. We&rsquo;ve made many codebase changes to make it more maintainable and easier to work with. Some were required to make the software compatible with Symfony 6.4 or PHP 8.4, while others were made to improve the overall code quality, for example, by removing deprecated code or improving the software performance.</p>
+<p>We created a dedicated section in the documentation that explains the <a href="https://devdocs.prestashop-project.org/9/modules/core-updates/9.0/">notable changes in PrestaShop 9</a>. This section will be updated with more information about the changes in the final release notes.</p>
+<p>If you are a developer, if you create solutions for PrestaShop, or are interested in the technical side of the software, we encourage you to check out this section to learn more about the changes that have been made.</p>
+<p>In the upcoming months, we will continue improving the software, fixing bugs, and preparing it for the final release. We will also work on updating the documentation and creating new resources to help you get started with PrestaShop 9 and take full advantage of new features.</p>
+<h2 id="how-to-test-prestashop-9">How to test PrestaShop 9</h2>
+<p>You can download a fully featured PrestaShop 9 Classic beta 1 version from <a href="https://prestashop.com/versions/">PrestaShop.com</a>. This version includes a core of PrestaShop 9 and additional modules from <a href="https://prestashop.com/">PrestaShop SA</a> that are compatible with this version:</p>
+<ul>
+<li>ps_accounts</li>
+<li>gamification</li>
+<li>ps_mbo</li>
+<li>ps_classic_edition</li>
+</ul>
+<p class="text-center">
+  <a href="https://prestashop.com/versions#9.0.0-beta1" class="btn btn-lg btn-success">Download PrestaShop 9.0 beta 1</a>
+</p>
+
+<h3 id="requirements-for-prestashop-9-beta-1">Requirements for PrestaShop 9 beta 1</h3>
+<p>You need to have a fully working environment, either a server or Docker available, that meets the following requirements:</p>
+<ul>
+<li>PHP 8.1 (PHP up to 8.4 is supported)</li>
+<li>Composer 2</li>
+<li>Node.js 20 and NPM 10</li>
+</ul>
+<p>Make sure to check all system requirements in the <a href="https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/">documentation</a>. You must also have <a href="https://www.git-scm.com/">Git</a> installed on your machine.</p>
+<p><strong>Creating a custom ZIP</strong></p>
+<p>If you don&rsquo;t want to use a Classic version, you can build your custom ZIP file with the PrestaShop 9 beta 1 installer, which has no PrestaShop SA modules included. To do so, use the <a href="https://github.com/PrestaShop/PrestaShop/tree/develop/tools/build">PrestaShop Release Creation</a> tool.</p>
+<ol>
+<li>Clone the <a href="https://github.com/PrestaShop/PrestaShop/tree/9.0.0-beta.1">PrestaShop repository</a> from &ldquo;9.0.0-beta.1&rdquo; tag: <code>git clone git@github.com:PrestaShop/PrestaShop.git --branch &quot;9.0.0-beta.1 .&quot;</code>. Note: use a different directory name than <code>.</code> if you want to clone the repository to a different directory.</li>
+<li>Run <code>composer create-release</code> or <code>php tools/build/CreateRelease.php</code> in the root directory of the PrestaShop repository.</li>
+<li>The script will create a ZIP file with the PrestaShop 9 beta 1 distribution in the <code>tools/build/releases/9.0.0_date_time/</code> directory.</li>
+</ol>
+<h3 id="install-prestashop-9">Install PrestaShop 9</h3>
+<p>The installation process remains the same as in previous versions.</p>
+<p>If you plan to test the new API, it&rsquo;s important to look at the tutorial explaining how to use it properly. <a href="/news/2024/meet-prestashop9-api/">This tutorial</a> will give you a clear idea of how to work with the API effectively, ensuring you can get the most out of your testing.</p>
+<h2 id="your-feedback-is-essential">Your feedback is essential!</h2>
+<p>The public beta period is crucial in preparing for the upcoming release. During this period, we encourage everyone in the community to download this version and test how it behaves in their unique environment.</p>
+<p>Here are some examples of how you can help:</p>
+<ul>
+<li>If you are a module or theme developer, check if those work well with this new version.</li>
+<li>If you notice any problem and you think the new version causes it, please <a href="https://github.com/PrestaShop/PrestaShop/issues/new/choose">report it on GitHub</a>.</li>
+<li>Don’t hesitate to <a href="https://devdocs.prestashop.com/9/contribute/contribute-pull-requests/">contribute to fixing bugs</a> if you can!</li>
+</ul>
+<p><strong>Your feedback on this beta is essential.</strong> The more issues you report right now, the fewer bugs will be on the final release, which means fewer patch versions and fewer solutions to find on your (or your customer’s) online store.</p>
+<p>If you have any questions about the version and its features, feel free to share them on <a href="https://www.prestashop-project.org/slack/">the PrestaShop project’s Slack</a>.</p>
+<h2 id="known-issues">Known issues</h2>
+<p>The <a href="https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aopen+is%3Aissue+label%3A9.0.x+label%3ABug">complete list of known bugs</a>, visible through the link, is constantly updated on GitHub.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>A big thank you to over <strong>65 people</strong> who contributed between the PrestaShop 9 alpha 1 and the PrestaShop 9 beta 1.</p>
+<p>Boris Hermans, ChronoBrake, clement-hvt, Codencode, CodeOlympus, ComonSoft, Damien Tupinier, Daniel Black, Daniel Hlavacek, David Gonzalez, dependabot[bot], Dindault Lucas, Dominik Shaim Ulrich, DylanDenizon, Fabien Papet, Florine Hea, Franck Lefèvre, idnovate, Jackoske, Jean-François Viguier, jeremie, Jin JI, John.R, JohnPAfr, Jonathan Danse, Jonathan Lelievre, Jonathan Renard, Julien Gissinger, Karlis Suvi, Krystian Podemski, ludovic cardinale, Markus Staab, Mathieu Ferment, Matthias Goudjil, Matthieu Rolland, Max, Maxime Poulain, Michal Macek, Morgan Pichat, Mouleeswaran Ganapathi, mrkalchemy, Nesrine Abdmouleh, Nicko, Nicolas Lœuillet,Thomas Roux, Olivier Le Corre, Prestaworks, PrestonBot, PululuK, r.fabiani, Robin Fischer, Romain PIOT, Romain Soulard, Shivam7-1, Simone Gennari, Sullivan, Tafaz, Tanguy JACQUET, Thibault Blivet, Thomas Delaporte, Thomas Leone, Tom Girou, William Entriken</p>
+<p>&hellip;and a warm welcome to those who contributed for the first time!</p>
+<p>We would also like to thank the people who contributed aside from code:</p>
+<ul>
+<li>Product management: Iliès Bahloul and Wahbi Maaoui.</li>
+<li>Quality assurance: Paul-Noël Cholot, Florine Hea, Aurélien Rita, Ingrid Ustaoglu, Theodoros Zampetoglou and Robin Fischer.</li>
+<li>UX design: Scott Cosio.</li>
+<li>Wording management and proofreading: Julie Varisellaz, and Patrick Coffre.</li>
+</ul>
+<p>We also extend our gratitude to former PrestaShop SA employees for their contributions to this version:
+Hibatallah Aouadni, Rosa Benouamer, Léa Delin, Hajer Elleuch, Zoé Finders, Faten Mhiri, Elodie Prokhoroff, Hana Rebai, Ines Sallemi, Mateus Shirlaw, Fabien Vallon, Anis Zouari.</p>
+<h2 id="prestashop-90-beta-1-1">PrestaShop 9.0 beta 1</h2>
+<p>We extend our gratitude to all community members who tested the alpha version and provided feedback.</p>
+<p>With the launch of the first beta, we are entering a <a href="https://en.wikipedia.org/wiki/Freeze_(software_engineering)">feature freeze period</a>. This means no new features will be added until the final release. Our focus will now be on fixing bugs, stabilizing the software, and preparing it for the final release.</p>
+<p>Once again, we encourage everyone to download this version, test it, and provide feedback. Your input is invaluable in helping us deliver a stable and reliable software solution for the entire PrestaShop community.</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Feb 10, 2025</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/version/">version</a>
+
+  <a class="label label-primary" href="/tag/beta/">beta</a>
+
+  <a class="label label-primary" href="/tag/major/">major</a>
+
+  <a class="label label-primary" href="/tag/releases/">releases</a>
+
+  <a class="label label-primary" href="/tag/9.0/">9.0</a>
+
+  <a class="label label-primary" href="/tag/9.x/">9.x</a>
+
+  <a class="label label-primary" href="/tag/9.0.x/">9.0.x</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/PrestaShop/">PrestaShop team</a>
+      <span></span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2025\/prestashop-9-0-beta-release\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

@@ -70,7 +70,7 @@ We’re excited to share this new tool with you and are eager to hear your feedb
 The [Hummingbird theme](https://github.com/PrestaShop/hummingbird) is an exciting new addition to PrestaShop 9.0! Built on Bootstrap 5, it introduces a modernized directory structure, utilizes TypeScript, and adopts the BEM methodology for CSS naming. These improvements, along with other enhancements, lay a strong foundation for future theme development.
 
 {{% notice %}}
-Hummingbird is the default theme in PrestaShop 9.0 beta 1, but it won't be the default one in the final release.
+Hummingbird is an optional theme in PrestaShop 9.0 beta 1, available for selection during installation, but it won't be the default theme in the final release.
 {{% /notice %}}
 
 While Hummingbird is still under active development and won't be the default theme for PrestaShop 9, it represents a significant step forward. We strongly encourage developers to begin exploring, testing, and building their themes based on Hummingbird. Its robust foundation promises to make your projects more efficient and maintainable, while helping shape the future of PrestaShop themes.

@@ -79,6 +79,6 @@ Don't wait any longer and download PrestaShop 8.2.1 now!
 
 Contributors to this patch version, from both the project members and the community at large, include:
 
-TBD
+Boris Hermans, Codencode, Daniel Hlavacek, Dominik Shaim Ulrich, Franck Lefèvre, idnovate, JohnPAfr, Jonathan Lelievre, Julien Gissinger, Krystian Podemski, Marco Salvatore, Mathieu Ferment, Matthias Goudjil, Matthieu Rolland, Morgan Pichat, mrkalchemy, Nicolas Lœuillet, Pawel Szostok, r.fabiani, Romain PIOT, Romain Soulard, Tatu Wikman, Touxten
 
 Thank you!

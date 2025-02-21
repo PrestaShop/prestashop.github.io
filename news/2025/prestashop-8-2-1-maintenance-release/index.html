@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>PrestaShop 8.2.1 is available</title>
-    <link href="/style.css?1740129849" rel="stylesheet">
+    <link href="/style.css?1740140830" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -209,7 +209,7 @@
 <p><strong>Filtering of the modules in the front office</strong></p>
 <p>The method <code>Hook::getHookModuleExecList</code> <a href="https://github.com/PrestaShop/PrestaShop/pull/37125">is now customizable by module developers</a>. This method, which filters the list of modules executed for a given hook, normally filters based on the hook&rsquo;s name. With the new update, developers can customize this filtering process using other criteria. This addition is particularly beneficial for module developers aiming to minimize the use of overrides, especially for modules that filter the list of executed modules for specific hooks (e.g., solutions for handling Consent Mode and privacy solutions).</p>
 <p>Typically, we do not introduce such new features in patch versions, as they are primarily intended for bug fixes and minor improvements. However, the significance of this new feature has led us to make an exception.</p>
-<p>You can find more information about this new feature in the <a href="https://github.com/PrestaShop/PrestaShop/pull/37125/">pull request</a>, and download the example module from the <a href="https://github.com/PrestaShop/example-modules/demofiltermodules">PrestaShop Example Modules GitHub repository</a>. We believe that including this feature in the patch version will help module developers enhance their modules and ensure better compatibility with future PrestaShop versions by reducing the reliance on overrides.</p>
+<p>You can find more information about this new feature in the <a href="https://github.com/PrestaShop/PrestaShop/pull/37125/">pull request</a>, and download the example module from the <a href="https://github.com/PrestaShop/example-modules/tree/master/demofiltermodules">PrestaShop Example Modules GitHub repository</a>. We believe that including this feature in the patch version will help module developers enhance their modules and ensure better compatibility with future PrestaShop versions by reducing the reliance on overrides.</p>
 <p>PS: it is worth mentioning that it is possible to filter the back office modules as well. The use case is not as common as for the front office, but it is possible.</p>
 <p><strong>Better way to handle errors when installing a module</strong></p>
 <p>In <a href="https://github.com/PrestaShop/PrestaShop/pull/36612/">this pull request</a>, we improved the way we handle errors when installing a module. Previously, it was not possible to prevent the installation of a module even if certain essential criteria were not met in the <code>actionModuleInstallBefore</code> hook, which could lead to issues with, for example, required modules.</p>

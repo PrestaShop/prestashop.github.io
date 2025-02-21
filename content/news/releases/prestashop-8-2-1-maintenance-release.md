@@ -4,9 +4,9 @@ title:  PrestaShop 8.2.1 is available
 subtitle: The first patch for branch 8.2.x is available
 date: 2025-02-21
 authors: [ PrestaShop ]
-image: /assets/images/2024/09/banner_8.2_1200x627.jpg
-opengraph_image: /assets/images/2024/09/banner_8.2_1200x627.jpg
-twitter_image: /assets/images/2024/09/banner_8.2_1024x512.jpg
+image: /assets/images/2025/02/banner_8.2.1_1200x627.jpg
+opengraph_image: /assets/images/2025/02/banner_8.2.1_1200x627.jpg
+twitter_image: /assets/images/2025/02/banner_8.2.1_1024x512.jpg
 icon: icon-leaf
 tags:
 - version
@@ -18,7 +18,7 @@ tags:
 
 The first patch for PrestaShop 8.2 is available. This release contains many bug fixes and improvements, including a new way to handle module filtering in the front office.
 
-![PrestaShop 8.2.1 is available!](/assets/images/2024/09/banner_8.2_1534x424.jpg)
+![PrestaShop 8.2.1 is available!](/assets/images/2025/02/banner_8.2.1_1200x627.jpg)
 
 <hr>
 

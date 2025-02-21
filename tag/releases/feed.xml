@@ -6,7 +6,17 @@
     <description>Recent content in releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Feb 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Feb 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.2.1 is available</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-8-2-1-maintenance-release/</link>
+      <pubDate>Fri, 21 Feb 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-8-2-1-maintenance-release/</guid>
+      <description>The first patch for PrestaShop 8.2 is available. This release contains many bug fixes and improvements, including a new way to handle module filtering in the front office.
+We are excited to announce the release of PrestaShop 8.2.1, a new patch that not only addresses a significant number of bugs reported by our dedicated community and Quality Assurance team but also introduces a valuable new feature. This feature allows module developers to filter the display of other modules in PrestaShop, helping them avoid the use of overrides.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 9.0 beta is now available!</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-beta-release/</link>
@@ -157,16 +167,6 @@ It is recommended to upgrade your shop quickly in order to benefit from these fi
       <description>We are pleased to announce that PrestaShop 8.1 is officially available.
 PrestaShop 8.1 is a minor upgrade with major improvements. It&amp;rsquo;s focused on making things faster and easier for you, transforming the way you use PrestaShop.
 The entirely reworked product management page delivers a more efficient and user-friendly experience. This new page makes managing product combinations, prices, taxes, stock, and images quicker and easier. Multistore product management has also been drastically improved.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.1 Release Candidate Is Ready To Be Tested!</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/</link>
-      <pubDate>Thu, 25 May 2023 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-rc1-release/</guid>
-      <description>We are happy to announce the first release candidate of PrestaShop 8.1.
-We&amp;rsquo;re on the brink of releasing the final 8.1 version. This time, the release candidate version is being shared simultaneously with the community and the project&amp;rsquo;s Quality Assurance (QA) team. The idea is for everyone to collectively confirm that all issues identified in the beta version have been resolved, ensuring their suitability for production use. If no major problems are reported by June 26th, we&amp;rsquo;ll move ahead and launch the final version of 8.</description>
     </item>
     
   </channel>

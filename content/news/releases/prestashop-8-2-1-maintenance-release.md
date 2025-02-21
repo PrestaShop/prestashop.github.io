@@ -36,7 +36,7 @@ The method `Hook::getHookModuleExecList` [is now customizable by module develope
 
 Typically, we do not introduce such new features in patch versions, as they are primarily intended for bug fixes and minor improvements. However, the significance of this new feature has led us to make an exception.
 
-You can find more information about this new feature in the [pull request](https://github.com/PrestaShop/PrestaShop/pull/37125/), and download the example module from the [PrestaShop Example Modules GitHub repository](https://github.com/PrestaShop/example-modules/demofiltermodules). We believe that including this feature in the patch version will help module developers enhance their modules and ensure better compatibility with future PrestaShop versions by reducing the reliance on overrides.
+You can find more information about this new feature in the [pull request](https://github.com/PrestaShop/PrestaShop/pull/37125/), and download the example module from the [PrestaShop Example Modules GitHub repository](https://github.com/PrestaShop/example-modules/tree/master/demofiltermodules). We believe that including this feature in the patch version will help module developers enhance their modules and ensure better compatibility with future PrestaShop versions by reducing the reliance on overrides.
 
 PS: it is worth mentioning that it is possible to filter the back office modules as well. The use case is not as common as for the front office, but it is possible.
 

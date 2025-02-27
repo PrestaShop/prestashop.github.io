@@ -6,7 +6,17 @@
     <description>Recent content in community on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/community/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Feb 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/community/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Announcing PrestaShop Project Live Update March 2025</title>
+      <link>https://build.prestashop-project.org/news/2025/upcoming-live-update-march-2025/</link>
+      <pubDate>Thu, 27 Feb 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/upcoming-live-update-march-2025/</guid>
+      <description>The second Live Update for the PrestaShop Project in 2025 will be hosted on Wednesday, March 5th, 2025 at 4pm (Paris time) on YouTube!
+Join us for the upcoming Live Update where we will provide an in-depth walkthrough of the changes under the hood introduced in PrestaShop 9 Beta 1. This session will be particularly valuable for those looking to adapt their PrestaShop solutions or solutions integrating with PrestaShop to the new version.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Live Update - January 2025</title>
       <link>https://build.prestashop-project.org/news/2025/live-update-january-2025/</link>
@@ -149,16 +159,6 @@ In the upcoming Live Update, we will be providing updates on the latest developm
       <description>In our third Live Update this year, we reviewed the already implemented compatibility of PrestaShop with Symfony Framework 6.4, focusing on its impact and the backward incompatible changes it introduces.
 PrestaShop Live Update - March 2024 In this Live Update, Morgan Pichat, one of the core developers at PrestaShop SA, delivered a presentation showing some of the details and challenges regarding the integration of Symfony 6.4 into PrestaShop 9.
 Morgan highlighted some of the significant changes for solution authors in the PrestaShop ecosystem following the upgrade and the challenges overcome during this project.</description>
-    </item>
-    
-    <item>
-      <title>Announcing PrestaShop Project Live Update March 2024</title>
-      <link>https://build.prestashop-project.org/news/2024/upcoming-live-update-march-2024/</link>
-      <pubDate>Tue, 12 Mar 2024 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/upcoming-live-update-march-2024/</guid>
-      <description>The third Live Update for the PrestaShop Project in 2024 will happen on Wednesday, March 13th, 2024 at 4 pm (Paris time) on YouTube!
-In the upcoming Live Update, we turn our attention to PrestaShop 9, a version yet to be released. We&amp;rsquo;ll explore the significant breaking changes introduced in this new version. @M0rgan01 will specifically address the backward incompatible changes due to the new Symfony Framework version, changes that are especially relevant for module developers using the Symfony Framework in their solutions.</description>
     </item>
     
   </channel>

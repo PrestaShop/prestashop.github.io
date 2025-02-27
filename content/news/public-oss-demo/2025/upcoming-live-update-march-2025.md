@@ -15,7 +15,9 @@ The second Live Update for the PrestaShop Project in 2025 will be hosted on **We
 
 ![PrestaShop Project Live Update](/assets/images/live-update/liveupdate-banner-linkedin.png)
 
-Join us for the upcoming Live Update where we will provide an in-depth walkthrough of the changes under the hood introduced in PrestaShop 9 Beta 1. This session will be particularly valuable for those looking to adapt their PrestaShop solutions or solutions integrating with PrestaShop to the new version. There's more! During the upcoming Live Update we will also offer you a sneak peek into what's coming in PrestaShop 9.1, including a redesigned user experience for managing ~~CartRules~~ Discounts!
+Join us for the upcoming Live Update where we will provide an in-depth walkthrough of the changes under the hood introduced in PrestaShop 9 Beta 1. This session will be particularly valuable for those looking to adapt their PrestaShop solutions or solutions integrating with PrestaShop to the new version.
+
+There's more! During the upcoming Live Update we will also offer you a sneak peek into what's coming in PrestaShop 9.1, including a redesigned user experience for managing ~~CartRules~~ Discounts!
 
 {{< cta "https://www.youtube.com/watch?v=8PL0dwdRiho" "info" >}}Join us on YouTube!{{< /cta >}} 
 

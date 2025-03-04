@@ -54,7 +54,7 @@ We then conducted a performance analysis to identify what was overloading the br
 
 ## The adopted solution
 
-To address this challenge, we implemented a virtual scrolling mechanism—a solution inspired in part by [this article about virtual scrolling](https://blog.logrocket.com/virtual-scrolling-core-principles-and-basic-implementation-in-react/). The concept is simple: instead of rendering all log entries at once, we only render those that are visible in the viewport (with a small buffer above and below to ensure smooth scrolling). The viewport refers to the portion of the list that is currently visible to the user, while all other logs are kept in memory and not inserted into the DOM.
+To address this challenge, we implemented a virtual scrolling mechanism—a solution inspired in part by <a href="https://blog.logrocket.com/virtual-scrolling-core-principles-and-basic-implementation-in-react/" target="_blank">this article about virtual scrolling</a>. The concept is simple: instead of rendering all log entries at once, we only render those that are visible in the viewport (with a small buffer above and below to ensure smooth scrolling). The viewport refers to the portion of the list that is currently visible to the user, while all other logs are kept in memory and not inserted into the DOM.
 
 This technique is commonly used for lists with fixed item heights—like what you’d find in a spreadsheet application—but our case introduced two additional complexities:
 
@@ -73,6 +73,6 @@ In practice, this optimization allowed us to reduce the update time—from over 
 
 The overhaul of Update Assistant V7 required significant improvements in both technical architecture (code structure, quality controls, build process) and user experience (segmented workflows, clearer interface). Despite these advancements, managing the log display proved to be a considerable challenge—one we successfully addressed with a custom virtual scrolling solution that accommodates variable element heights.
 
-We invite you to test the V7-beta of the module by downloading it from the [Autoupgrade GitHub repository](https://github.com/PrestaShop/autoupgrade/releases) and sharing your feedback. To do so, please create an issue on the [PrestaShop GitHub repository](https://github.com/PrestaShop/PrestaShop/issues) and add the "Autoupgrade" label. Your input is invaluable in helping us refine this new version and make PrestaShop an even more powerful and user-friendly platform.
+We invite you to test the V7-beta of the module by downloading it from the <a href="https://github.com/PrestaShop/autoupgrade/releases" target="_blank">Autoupgrade GitHub repository</a> and sharing your feedback. To do so, please create an issue on the <a href="https://github.com/PrestaShop/PrestaShop/issues" target="_blank">PrestaShop GitHub repository</a> and add the "Autoupgrade" label. Your input is invaluable in helping us refine this new version and make PrestaShop an even more powerful and user-friendly platform.
 
 Thank you for your time and happy updating!

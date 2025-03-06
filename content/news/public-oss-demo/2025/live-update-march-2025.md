@@ -11,7 +11,7 @@ icon: icon-video-camera
 tags: [contribute, event, community, live-update]
 ---
 
-On March 5th, 2025, we hosted another Live Update for the PrestaShop Project where we shared more about PrestaShop 9 Beta 1. We also took a sneak peek at what's coming to PrestaShop 9.1 thanks to the special guest from the PrestaShop's Product Team.
+On March 5th, 2025, we hosted another Live Update for the PrestaShop Project where we shared more information about PrestaShop 9 Beta 1. We also took a sneak peek at what's coming to PrestaShop 9.1 thanks to a special guest from PrestaShop's product team.
 
 ![PrestaShop Project Live Update](/assets/images/live-update/liveupdate-banner-linkedin.png)
 

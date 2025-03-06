@@ -27,8 +27,8 @@ In this session, we focused on PrestaShop 9 Beta 1, stressing the need for devel
 - [01:55](https://youtu.be/8PL0dwdRiho?t=115) Project news: PrestaShop 8.2.1 release
 - [04:34](https://youtu.be/8PL0dwdRiho?t=274) Project news: PrestaShop 9 Beta 1 release
 - [05:53](https://youtu.be/8PL0dwdRiho?t=353) Project news: Friends of Presta (FOP) Days 2025
-- [07:41](https://youtu.be/8PL0dwdRiho?t=461) Presentations: PrestaShop 9 - how to prepare for the new version
-- [32:21](https://youtu.be/8PL0dwdRiho?t=1941) Presentations: New user journey for discounts creation in PrestaShop 9.1
+- [07:41](https://youtu.be/8PL0dwdRiho?t=461) Presentations: PrestaShop 9 - how to prepare for the new version by [@kpodemski](https://github.com/kpodemski)
+- [32:21](https://youtu.be/8PL0dwdRiho?t=1941) Presentations: New user journey for discounts creation in PrestaShop 9.1 by [@ibahloul-ps](https://github.com/ibahloul-ps)
 - [47:50](https://youtu.be/8PL0dwdRiho?t=2870) Q&A session
 
 You can use the timestamps to jump directly to the parts you want to watch.
@@ -42,10 +42,12 @@ Remember that you can ask your questions during the presentation or beforehand. 
 Below are links to projects mentioned during this Live Update:
 
 - [Friends of Presta (FOP) Days 2025](https://friendsofpresta.org/friends-of-presta-day-fop-day/)
-- [PrestaShop's Github Discussions](https://github.com/PrestaShop/PrestaShop/discussions/)
 - [PrestaShop 8.2.1 release notes]({{< ref "/news/releases/prestashop-8-2-1-maintenance-release" >}})
 - [PrestaShop 9.0 Beta 1 release notes]({{< ref "/news/releases/prestashop-9-0-beta-release" >}})
 - [Notable changes for PrestaShop 9](https://devdocs.prestashop-project.org/9/modules/core-updates/9.0/)
+- [Discussion about the new dDiscounts feature in PrestaShop 9.1](https://github.com/PrestaShop/PrestaShop/discussions/37972)
+- [Mockups for the new discounts feature in PrestaShop 9.1](https://www.figma.com/design/EuEiXX0isa1S43MBZ2O9ON/Discounts?node-id=740-86653&p=f&t=zuojsAUU2JnwBCKQ-0)
+- [PrestaShop's Github discussions](https://github.com/PrestaShop/PrestaShop/discussions/)
 
 Also, you can take a look at the slides presented during the demo [here](https://docs.google.com/presentation/d/1eJZbyiYSxkB5gqI2QrLjZVMHJmR8dwBcgEHwfVuDmFI/edit?usp=sharing).
 

@@ -46,7 +46,7 @@ Below are links to projects mentioned during this Live Update:
 - [PrestaShop 9.0 Beta 1 release notes]({{< ref "/news/releases/prestashop-9-0-beta-release" >}})
 - [Notable changes for PrestaShop 9](https://devdocs.prestashop-project.org/9/modules/core-updates/9.0/)
 - [Discussion about the new Discounts feature in PrestaShop 9.1](https://github.com/PrestaShop/PrestaShop/discussions/37972)
-- [Mockups for the new discounts feature in PrestaShop 9.1](https://www.figma.com/design/EuEiXX0isa1S43MBZ2O9ON/Discounts?node-id=740-86653&p=f&t=zuojsAUU2JnwBCKQ-0)
+- [Mockups for the new Discounts feature in PrestaShop 9.1](https://www.figma.com/design/EuEiXX0isa1S43MBZ2O9ON/Discounts?node-id=740-86653&p=f&t=zuojsAUU2JnwBCKQ-0)
 - [PrestaShop's Github discussions](https://github.com/PrestaShop/PrestaShop/discussions/)
 
 Also, you can take a look at the slides presented during the demo [here](https://docs.google.com/presentation/d/1eJZbyiYSxkB5gqI2QrLjZVMHJmR8dwBcgEHwfVuDmFI/edit?usp=sharing).

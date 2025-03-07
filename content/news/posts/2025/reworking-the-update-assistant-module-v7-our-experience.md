@@ -2,23 +2,27 @@
 layout: post
 title:  "Reworking the \"Update Assistant\" Module V7: Our Experience"
 subtitle: "Transforming Complexity into Efficiency: The Story Behind Update Assistant V7"
-date:   2025-03-04
+date:   2025-03-11
 authors: [ AlexisGuyomar ]
 icon: icon-rocket
-tags: [module revamp, update assistant, virtual scrolling, UX improvements, performance optimization, frontend, code quality, user experience]
+tags: [autoupgrade, module, beta, releases, community, contribution, development, qa]
 ---
 
-Let’s be real—our **Update Assistant** module was a mess. The front-end was tangled, the user experience was frustrating, and every small tweak felt like defusing a bomb.
-So, when we set out to build **version 7**, we knew it wasn’t just about fixing bugs—it was about **reinventing the entire experience**. Cleaner code, a smarter structure, and a user journey that actually makes sense.
+Let’s face it—our Update Assistant module was chaotic. The front-end was confusing, the user experience was challenging, and even minor adjustments felt like defusing a bomb.
+
+As part of the Seamless Upgrade & Extensibility squad, one of our key missions is to improve the reliability of PrestaShop upgrades. And to do that, we knew the Update Assistant module needed more than just a few patches—it needed a complete reinvention.
+
+So, when we set out to build version 7, we didn’t just fix bugs—we redesigned the whole experience. Cleaner code, a smarter structure, and a user journey that actually makes sense.
+
 Here’s how we tore it down and rebuilt it from the ground up. 🚀
 
 ![Update Assistant V7](/assets/images/2025/03/banner_autoupgrade_v7.png)
 
 ## Technical and UX Overhaul
 
-Before we started working on this complete rework, the module had accumulated a number of technical and usability issues that were becoming harder and harder to manage. On the technical side, all the front-end code was crammed into a single JavaScript file and a single CSS file. There were no quality checks in place—no linting, no frontend unit tests, no style validation. Every small change meant diving into a large, unstructured file, which made even minor updates risky and time-consuming. The interface itself was built as a single-page layout where everything was shown or hidden purely through CSS, with `display: none`, making it fragile and not particularly efficient.
+Before we started working on this complete rework, the module had accumulated a number of technical and usability issues that were becoming harder and harder to manage. On the technical side, all the front-end code was crammed into a single JavaScript and CSS file. There were no quality checks in place—no linting, front-end unit tests, or style validation. Every small change meant diving into a large, unstructured file, which made even minor updates risky and time-consuming. The interface was built as a single-page layout where everything was shown or hidden purely through CSS, with `display: none`, making it fragile and inefficient.
 
-On top of that, the user experience wasn’t great either. All the different features—update, backup, restore—were squeezed onto the same page, with a flood of messages, alerts, and options all fighting for attention. It was hard to know where to start, what was important, and what could wait. This lack of hierarchy, combined with the fact that the page was slow to load, made for a frustrating experience. The main reason for this slowness came from a process running in the background that checked whether the shop met all the technical requirements to perform the update, a necessary step before displaying the page.
+On top of that, the user experience wasn’t great either. All the different features—update, backup, restore—were squeezed onto the same page, with a flood of messages, alerts, and options all fighting for attention. Knowing where to start, what was important, and what could wait was hard. This lack of hierarchy, combined with the fact that the page was slow to load, made for a frustrating experience. The main reason for this slowness came from a process running in the background that checked whether the shop met all the technical requirements to perform the update, a necessary step before displaying the page.
 
 To tackle these issues, we made several structural and technical improvements. We introduced a clear project structure with a `_dev` directory, switched to Vite to handle asset compilation and optimization, and added proper quality tools like ESLint, Stylelint, and Prettier. We also introduced Jest to cover our logic with unit tests. External libraries are now managed via NPM, which gives us better control over dependencies and makes future updates easier.
 
@@ -48,13 +52,13 @@ In the end, we decided to leave the icons as they were and shifted our focus to 
 
 ## Second axis of investigation – Performance
 
-We then conducted a performance analysis to identify what was overloading the browser. Although having many `<div>` elements (each log entry in its own container) was a concern, our analysis revealed an even more significant issue. We discovered that forcing the scroll to the bottom of the list triggered a full re-render of the container. Each time a new log was added, the browser had to recalculate the maximum length of the logs and update the entire `<div>`, significantly impacting performance, especially when new entries were continuously added.
+We then conducted a performance analysis to identify what was overloading the browser. Although having many `<div>` elements (each log entry in its own container) was a concern, our analysis revealed an even more significant issue. We discovered that forcing the scroll to the bottom of the list triggered a full re-render of the container. Each time the module returned a new log, the browser had to recalculate the maximum length of the logs and update the entire `<div>`, significantly impacting performance, especially when new entries were continuously added.
 
 ![Log diagram without virtual scroll](/assets/images/2025/03/banner_no_virtual_scroll.png)
 
 ## The adopted solution
 
-To address this challenge, we implemented a virtual scrolling mechanism—a solution inspired in part by <a href="https://blog.logrocket.com/virtual-scrolling-core-principles-and-basic-implementation-in-react/" target="_blank">this article about virtual scrolling</a>. The concept is simple: instead of rendering all log entries at once, we only render those that are visible in the viewport (with a small buffer above and below to ensure smooth scrolling). The viewport refers to the portion of the list that is currently visible to the user, while all other logs are kept in memory and not inserted into the DOM.
+To address this challenge, we implemented a virtual scrolling mechanism—a solution inspired in part by <a href="https://blog.logrocket.com/virtual-scrolling-core-principles-and-basic-implementation-in-react/" target="_blank">this article about virtual scrolling</a>. The concept is simple: instead of rendering all log entries at once, we only render those visible in the viewport (with a small buffer above and below to ensure smooth scrolling). The viewport refers to the portion of the list that is currently visible to the user, while all other logs are kept in memory and not inserted into the DOM.
 
 This technique is commonly used for lists with fixed item heights—like what you’d find in a spreadsheet application—but our case introduced two additional complexities:
 

@@ -6,7 +6,17 @@
     <description>Recent content in development on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jun 2024 09:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/development/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/development/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reworking the &#34;Update Assistant&#34; Module V7: Our Experience</title>
+      <link>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</link>
+      <pubDate>Tue, 11 Mar 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</guid>
+      <description>Let’s face it—our Update Assistant module was messy. The front-end was confusing, the user experience was challenging, and even minor adjustments were a little more complex than what we would have liked.
+As part of the Seamless Upgrade &amp;amp; Extensibility squad, one of our key missions is to improve the reliability of PrestaShop upgrades. And to do that, we knew the Update Assistant module needed more than just a few patches—it needed a complete reinvention.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 9 Alpha 1 is Available!</title>
       <link>https://build.prestashop-project.org/news/2024/prestashop-9-alpha1-available/</link>
@@ -151,16 +161,6 @@ After six months of blood, sweat, and tears (okay, we’re just kidding), here i
       <description>PrestaShop 1.7.3.0 Release Candidate is now ready for you to test!
 We are happy to announce that we are very close to releasing 1.7.3.0. This minor version (in the SemVer meaning of the term) brings several improvements, some new features and innovative tools to the 1.7 codebase. We can’t wait to receive your feedback about it!
 Test PrestaShop 1.7.3.0 RC1 now! This release candidate is a great opportunity for you to start playing with it before we release the final version!</description>
-    </item>
-    
-    <item>
-      <title>The PrestaShop Test Framework</title>
-      <link>https://build.prestashop-project.org/news/2018/prestashop-test-framework/</link>
-      <pubDate>Fri, 16 Feb 2018 09:10:11 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2018/prestashop-test-framework/</guid>
-      <description>Last time we announced a new suite of functional tests to ensure our software quality, today we are proud to present you our new feature, the PrestaShop Test Framework!
-It is a cool toolkit like a Swiss knife which will help to save a lot of time by running at least 50 automated functional tests on your browser&amp;hellip; and this is only the beginning! It makes easier to create basic acceptance testing when adding Addons, submitting pull requests or making some customizations on your Prestashop.</description>
     </item>
     
   </channel>

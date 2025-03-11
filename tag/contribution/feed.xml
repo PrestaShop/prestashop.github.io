@@ -6,7 +6,17 @@
     <description>Recent content in contribution on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Sep 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/contribution/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/contribution/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reworking the &#34;Update Assistant&#34; Module V7: Our Experience</title>
+      <link>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</link>
+      <pubDate>Tue, 11 Mar 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</guid>
+      <description>Let’s face it—our Update Assistant module was messy. The front-end was confusing, the user experience was challenging, and even minor adjustments were a little more complex than what we would have liked.
+As part of the Seamless Upgrade &amp;amp; Extensibility squad, one of our key missions is to improve the reliability of PrestaShop upgrades. And to do that, we knew the Update Assistant module needed more than just a few patches—it needed a complete reinvention.</description>
+    </item>
+    
     <item>
       <title>Hacktoberfest 2023</title>
       <link>https://build.prestashop-project.org/news/2023/hacktoberfest-2023/</link>
@@ -153,17 +163,6 @@ How does that work? Your goal is to contribute with at least 4 quality pull requ
       <guid>https://build.prestashop-project.org/news/2020/how-to-write-a-new-ui-test/</guid>
       <description>One year ago, the QA team started to develop a new test framework, based on Puppeteer, Mocha, and Chai. You can read more about the framework in this previous article: The (new) PrestaShop Test Framework. Since then, the tests coverage has been continually increasing, and we recently improved our framework by switching to Playwright.
 In this article, we will explain how to create a new UI (User Interface) test for the PrestaShop core project.</description>
-    </item>
-    
-    <item>
-      <title>Contributor interview: Pululu Kinanga André</title>
-      <link>https://build.prestashop-project.org/news/2020/contributor-interview-pululu-kinanga-andre/</link>
-      <pubDate>Wed, 14 Oct 2020 09:10:11 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2020/contributor-interview-pululu-kinanga-andre/</guid>
-      <description>An open source community is more than just pull requests made by faceless strangers. In order to better understand the people who contribute time and skills to the PrestaShop project, we&amp;rsquo;re writing a series of interviews with contributors of all ranges. This week, meet Pululu Kinanga André, one of our great developers on GitHub!
-Hi Pululu! First, could you tell us a bit about yourself?
-I am Pululu and I come from Angola.</description>
     </item>
     
   </channel>

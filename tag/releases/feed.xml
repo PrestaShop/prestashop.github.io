@@ -6,7 +6,17 @@
     <description>Recent content in releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Feb 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reworking the &#34;Update Assistant&#34; Module V7: Our Experience</title>
+      <link>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</link>
+      <pubDate>Tue, 11 Mar 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</guid>
+      <description>Let’s face it—our Update Assistant module was messy. The front-end was confusing, the user experience was challenging, and even minor adjustments were a little more complex than what we would have liked.
+As part of the Seamless Upgrade &amp;amp; Extensibility squad, one of our key missions is to improve the reliability of PrestaShop upgrades. And to do that, we knew the Update Assistant module needed more than just a few patches—it needed a complete reinvention.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.2.1 is available</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-8-2-1-maintenance-release/</link>
@@ -156,17 +166,6 @@ Apart from the security fixes, this release also contains a few bug fixes.</desc
 As part of the extended support policy for PrestaShop 1.7, which involves taking care of critical and security fixes for the 1.7.8.x branch, we are releasing today a new patch for this version. This release fixes a few security issues found by security researchers.
 For more details regarding security fixes, you can check the security advisories section below.
 It is recommended to upgrade your shop quickly in order to benefit from these fixes.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.1 Is Available</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-8-1-0-available/</link>
-      <pubDate>Mon, 26 Jun 2023 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-1-0-available/</guid>
-      <description>We are pleased to announce that PrestaShop 8.1 is officially available.
-PrestaShop 8.1 is a minor upgrade with major improvements. It&amp;rsquo;s focused on making things faster and easier for you, transforming the way you use PrestaShop.
-The entirely reworked product management page delivers a more efficient and user-friendly experience. This new page makes managing product combinations, prices, taxes, stock, and images quicker and easier. Multistore product management has also been drastically improved.</description>
     </item>
     
   </channel>

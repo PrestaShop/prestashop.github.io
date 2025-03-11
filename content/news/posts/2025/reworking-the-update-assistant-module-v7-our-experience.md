@@ -8,13 +8,13 @@ icon: icon-rocket
 tags: [autoupgrade, module, beta, releases, community, contribution, development, qa]
 ---
 
-Let’s face it—our Update Assistant module was chaotic. The front-end was confusing, the user experience was challenging, and even minor adjustments felt like defusing a bomb.
+Let’s face it—our Update Assistant module was messy. The front-end was confusing, the user experience was challenging, and even minor adjustments were a little more complex than what we would have liked.
 
 As part of the Seamless Upgrade & Extensibility squad, one of our key missions is to improve the reliability of PrestaShop upgrades. And to do that, we knew the Update Assistant module needed more than just a few patches—it needed a complete reinvention.
 
 So, when we set out to build version 7, we didn’t just fix bugs—we redesigned the whole experience. Cleaner code, a smarter structure, and a user journey that actually makes sense.
 
-Here’s how we tore it down and rebuilt it from the ground up. 🚀
+Here’s how we dismantled it and rebuilt it from the ground up. 🚀
 
 ![Update Assistant V7](/assets/images/2025/03/banner_autoupgrade_v7.png)
 

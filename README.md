@@ -52,7 +52,7 @@ This devblog also hosts How-Tos on certain features, before they find their way 
 
    Any change you perform on your data will be updated almost instantly.
 
-### Launching the site with docker
+### Launching the site with Docker
 
 1. Make sure you're at the root of the project.
 

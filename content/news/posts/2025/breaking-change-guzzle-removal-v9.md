@@ -22,11 +22,11 @@ Since PrestaShop no longer relies on Guzzle, keeping it in the core is unnecessa
 
 With Guzzle no longer available by default, you must adjust your module. Here are a few solutions to replace it effectively.
 
-### Use Symfony HTTP Client (recommended)
+### Use Symfony HTTP client (recommended)
 
-The best way to avoid conflicts is to minimize external dependencies and rely on core libraries whenever possible. Since Symfony is the foundation of PrestaShop and will continue to be so in the future, it's a safe and stable dependency that won't be removed.
+The best way to avoid conflicts is to minimize external dependencies and rely on core libraries whenever possible. Since Symfony is the foundation of PrestaShop and will continue to be in the future, it's a safe and stable dependency that won't be removed.
 
-Symfony includes an HTTP client component, which has been integrated into PrestaShop since version 1.7.7. If your module targets PrestaShop 1.7.7 or later, you can safely use the Symfony HTTP Client. You can find more details on how to implement it in the [Symfony documentation](https://symfony.com/doc/current/http_client.html).
+Symfony includes an HTTP client component, which has been integrated into PrestaShop since version 1.7.7. If your module targets PrestaShop 1.7.7 or later, you can safely use the Symfony HTTP client. You can find more details on how to implement it in the [Symfony documentation](https://symfony.com/doc/current/http_client.html).
 
 ```php
 use Symfony\Component\HttpClient\HttpClient;
@@ -51,7 +51,7 @@ If you're developing a custom module for a specific shop with a controlled envir
 
 ## What if I want my module to work across multiple PrestaShop versions?
 
-Since the Symfony HTTP Client is only available from PrestaShop 1.7.7 onward, you'll need to adapt your code based on the PrestaShop version your module is running on.
+Since the Symfony HTTP client is only available from PrestaShop 1.7.7 onward, you'll need to adapt your code based on the PrestaShop version your module is running on.
 
 Here's a very quick and simple example:
 

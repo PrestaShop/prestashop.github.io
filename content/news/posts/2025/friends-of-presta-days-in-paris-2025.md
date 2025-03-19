@@ -8,9 +8,9 @@ icon: icon-calendar
 tags: [event, community]
 ---
 
-![FOP Days visual](/assets/images/2025/03/FOPdaysPrestaShop.png)
-
 The Friends of Presta (FOP) Days is an event for PrestaShop and open source ecommerce enthusiasts. Taking place on March 26-27, 2025, at Le Nida, Issy-les-Moulineaux, in the Paris region, this event is dedicated to open source collaboration, technical innovation, and business insights dedicated to the PrestaShop community. You will be able to meet other professionals, exchange ideas, and contribute to the community's future.
+
+![FOP Days visual](/assets/images/2025/03/FOPdaysPrestaShop.png)
 
 ### Friends of Presta and the PrestaShop ecosystem
 

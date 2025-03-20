@@ -2,7 +2,7 @@
 layout: post
 title:  "Adapting to PrestaShop 9: Guzzle is gone, what's next?"
 subtitle: "PrestaShop 9 no longer includes Guzzle by default. Here's how to adapt your module."
-date:   2025-03-18
+date:   2025-03-20
 authors: [ JonathanLelievre ]
 icon: icon-code
 tags: [autoupgrade, module, beta, releases, community, contribution, development, qa]

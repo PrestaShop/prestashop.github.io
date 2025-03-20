@@ -14,8 +14,8 @@ We write about everything that happens to the PrestaShop software:
 
 * New releases,
 * Code activity in the past week,
-* The upcoming improvement in the codebase, 
-* Current and future architectures, 
+* The upcoming improvement in the codebase,
+* Current and future architectures,
 
 ...and all behavior changes that might affect you as a developer, a module/theme author, or simply as a Open Source fan :)
 
@@ -25,9 +25,9 @@ This devblog also hosts How-Tos on certain features, before they find their way 
 
 ### Setup
 
-1. [Install Hugo](https://gohugo.io/getting-started/installing). You will need v0.104.3+ (extended binary). 
-
+1. [Install Hugo](https://gohugo.io/getting-started/installing). You will need v0.118.2 (extended binary).
 2. Clone the repository somewhere on your system
+
    ```
    git clone https://github.com/PrestaShop/prestashop.github.io.git
    ```
@@ -35,16 +35,35 @@ This devblog also hosts How-Tos on certain features, before they find their way 
 ### Launching the site
 
 1. Make sure you're at the root of the project.
+
    ```
    cd /path/to/repository/
    ```
-
 2. Launch Hugo server:
-   ``` 
+
+   ```
    hugo server
    ```
 
    Note: You may need to change the path to the `hugo` binary depending on where it is on your system
+3. Done! You can open up the site on your browser.
+
+   It's usually available at http://localhost:1313
+
+   Any change you perform on your data will be updated almost instantly.
+
+### Launching the site with Docker
+
+1. Make sure you're at the root of the project.
+
+   ```
+   cd /path/to/repository/
+   ```
+2. Launch Hugo server:
+
+   ```
+   docker compose up server
+   ```
 
 3. Done! You can open up the site on your browser.
 

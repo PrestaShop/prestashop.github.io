@@ -6,7 +6,17 @@
     <description>Recent content in beta on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/beta/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/beta/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
+      <link>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</link>
+      <pubDate>Thu, 20 Mar 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
+      <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.
+If your module depends on Guzzle, it will no longer be available by default in PrestaShop 9. In this article, we’ll explain why Guzzle was removed, what this means for your module, and how to migrate to a suitable alternative.</description>
+    </item>
+    
     <item>
       <title>Reworking the &#34;Update Assistant&#34; Module V7: Our Experience</title>
       <link>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</link>
@@ -155,17 +165,6 @@ However, note that it is a beta version, not a release candidate.</description>
       <description>The first Beta version for PrestaShop 1.7.1.0 is now ready for you to test!
 We are happy to announce that we are close to releasing 1.7.1.0. This minor version (in the SemVer meaning of the term) brings several new features and improvements to the 1.7 codebase, and we can’t wait to receive your feedback!
 Test PrestaShop 1.7.1.0 Beta 1 now! This Beta release is a great opportunity for you to start working with it before we release a stable version!</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 1.7.0.0 Beta 3 is out!</title>
-      <link>https://build.prestashop-project.org/news/2016/prestashop-1-7-beta-3/</link>
-      <pubDate>Mon, 01 Aug 2016 09:00:01 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2016/prestashop-1-7-beta-3/</guid>
-      <description>Hot on the heels of Beta 2, here&amp;rsquo;s PrestaShop 1.7.0.0 Beta 3, ready for you to test and give feedback about!
-As always during this period of testing and fixing, we need feedback from any merchant, service provider, module developer or theme designer who is reading this.
-The release of this Beta 3 is another step in the current period of intensive testing and debugging by the PrestaShop developers, towards a proper RC and eventual release.</description>
     </item>
     
   </channel>

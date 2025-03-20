@@ -6,7 +6,17 @@
     <description>Recent content in autoupgrade on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/autoupgrade/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/autoupgrade/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
+      <link>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</link>
+      <pubDate>Thu, 20 Mar 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
+      <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.
+If your module depends on Guzzle, it will no longer be available by default in PrestaShop 9. In this article, we’ll explain why Guzzle was removed, what this means for your module, and how to migrate to a suitable alternative.</description>
+    </item>
+    
     <item>
       <title>Reworking the &#34;Update Assistant&#34; Module V7: Our Experience</title>
       <link>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</link>

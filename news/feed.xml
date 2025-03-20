@@ -6,7 +6,17 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
+      <link>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</link>
+      <pubDate>Thu, 20 Mar 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
+      <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.
+If your module depends on Guzzle, it will no longer be available by default in PrestaShop 9. In this article, we’ll explain why Guzzle was removed, what this means for your module, and how to migrate to a suitable alternative.</description>
+    </item>
+    
     <item>
       <title>Join the community at the FOP (Friends of Presta) Days in Paris</title>
       <link>https://build.prestashop-project.org/news/2025/friends-of-presta-days-in-paris-2025/</link>
@@ -145,16 +155,6 @@ PrestaShop Live Update - November 2024 During this Live Update, members of the S
       <description>The next Live Update for the PrestaShop Project in 2024 will happen on Wednesday, November 27th, 2024 at 4pm (Paris time) on YouTube!
 We promised to bring you presentations from the PrestaShop Developer Conference 2024, and we are keeping our word!
 One of the highlights of this upcoming Live Update will be the presentation titled &amp;ldquo;Long live the update assistant: strengthening trust in your shop&amp;rsquo;s updates&amp;rdquo; by members of the Seamless Upgrade &amp;amp; Extensibility team from PrestaShop SA.</description>
-    </item>
-    
-    <item>
-      <title>Event Synopsis - PrestaShop Developer Conference 2024</title>
-      <link>https://build.prestashop-project.org/news/2024/prestashop-developer-conference-2024/</link>
-      <pubDate>Tue, 19 Nov 2024 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/prestashop-developer-conference-2024/</guid>
-      <description>On November 6, 2024, the PrestaShop developer community gathered in Paris for a day of learning and networking at the second PrestaShop Developer Conference. The agenda was filled with insightful sessions and demonstrations. The event provided a platform to grow and learn more about PrestaShop’s ecosystem, get project information as well as explore advancements usable in daily professional activities.
-Insightful sessions during the day Throughout the day, the main stage hosted presentations by experts in the PrestaShop community, who shared insights on optimizing performance, leveraging advanced new Admin APIs, implementing continuous integration and workflows.</description>
     </item>
     
   </channel>

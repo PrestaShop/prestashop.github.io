@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
+    <link href="/style.css?1742464840" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?" />
+<meta property="og:description" content="PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2025-03-20T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2025-03-20T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build-2024.png">
+<meta name="twitter:title" content="Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?"/>
+<meta name="twitter:description" content="PrestaShop 9 no longer includes Guzzle by default. Here&#39;s how to adapt your module."/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip': false });
+			}
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</h1>
+              
+                <h3 class="post-subtitle">PrestaShop 9 no longer includes Guzzle by default. Here&#39;s how to adapt your module.</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/JonathanLelievre/">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/13801017?v=4" alt="Jonathan Lelievre's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/JonathanLelievre/">Jonathan Lelievre</a>
+      </div>
+        
+          <div class="author-display-role">Lead Developer Open Source Project</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Mar 20, 2025
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Adapting&#43;to&#43;PrestaShop&#43;9%3A&#43;Guzzle&#43;is&#43;gone%2C&#43;what%27s&#43;next%3F&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2025%2Fbreaking-change-guzzle-removal-v9%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2025%2Fbreaking-change-guzzle-removal-v9%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>PrestaShop 9 is a major release, meaning it <a href="https://devdocs.prestashop-project.org/9/modules/core-updates/9.0/">introduces breaking changes</a>, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.</p>
+<p>If your module depends on Guzzle, it will no longer be available by default in PrestaShop 9. In this article, we’ll explain why Guzzle was removed, what this means for your module, and how to migrate to a suitable alternative.</p>
+<h2 id="why-remove-guzzle-in-the-first-place">Why remove Guzzle in the first place?</h2>
+<p>For many years, PrestaShop included Guzzle as a core dependency, allowing modules to use it for external HTTP requests. However, the core and PrestaShop tools used in it have gradually moved to using Symfony&rsquo;s HTTP Client instead, leaving Guzzle largely unused.</p>
+<p>Since PrestaShop no longer relies on Guzzle, keeping it in the core is unnecessary. Additionally, dependency management has been a recurring issue. In PrestaShop 8, upgrading Guzzle from version 5 to 7 already caused compatibility problems for modules. Some developers had to bundle their own Guzzle version, but when multiple modules included different versions, it led to conflicts. To prevent such issues and improve overall stability, we decided to remove Guzzle entirely.</p>
+<h2 id="how-can-i-adapt-my-module">How can I adapt my module?</h2>
+<p>With Guzzle no longer available by default, you must adjust your module. Here are a few solutions to replace it effectively.</p>
+<h3 id="use-symfony-http-client-recommended">Use Symfony HTTP client (recommended)</h3>
+<p>The best way to avoid conflicts is to minimize external dependencies and rely on core libraries whenever possible. Since Symfony is the foundation of PrestaShop and will continue to be in the future, it&rsquo;s a safe and stable dependency that won&rsquo;t be removed.</p>
+<p>Symfony includes an HTTP client component, which has been integrated into PrestaShop since version 1.7.7. If your module targets PrestaShop 1.7.7 or later, you can safely use the Symfony HTTP client. You can find more details on how to implement it in the <a href="https://symfony.com/doc/current/http_client.html">Symfony documentation</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">use</span> <span class="nx">Symfony\Component\HttpClient\HttpClient</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$client</span> <span class="o">=</span> <span class="nx">HttpClient</span><span class="o">::</span><span class="na">create</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$response</span> <span class="o">=</span> <span class="nv">$client</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;https://api.domain.com&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><h3 id="use-a-custom-http-client-implementation">Use a custom HTTP client implementation</h3>
+<p>You can create your own HTTP client, ensuring complete control and eliminating the risk of conflicts with other modules using different library versions.</p>
+<p>However, the downside is that you&rsquo;ll need to maintain it yourself, which can lead to unnecessary complexity and duplicating existing solutions.</p>
+<p>Here&rsquo;s an example of a custom HTTP client used in the PrestaShop EventBus module: <a href="https://github.com/PrestaShopCorp/ps_eventbus/blob/27ca0e360d88345e57e945ad6369a215f4e615d0/src/Api/HttpClient.php">PrestaShop EventBus HTTP Client</a></p>
+<h3 id="forcefully-include-guzzle-in-my-modules-vendors-not-recommended">Forcefully include Guzzle in my module&rsquo;s vendors (not recommended)</h3>
+<p>This is the <strong>quick and dirty solution</strong> - it allows you to keep your existing code without modifications. However, as mentioned earlier, we strongly discourage this approach because it increases the risk of conflicts with other modules that may include different Guzzle versions.</p>
+<p>If you&rsquo;re developing a custom module for a specific shop with a controlled environment and a limited set of modules, this might work as a short-term fix. But if you distribute your module (e.g., on the PrestaShop Marketplace) for multiple shops, avoid this solution, as it can lead to unpredictable compatibility issues.</p>
+<h2 id="what-if-i-want-my-module-to-work-across-multiple-prestashop-versions">What if I want my module to work across multiple PrestaShop versions?</h2>
+<p>Since the Symfony HTTP client is only available from PrestaShop 1.7.7 onward, you&rsquo;ll need to adapt your code based on the PrestaShop version your module is running on.</p>
+<p>Here&rsquo;s a very quick and simple example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">version_compare</span><span class="p">(</span><span class="nx">_PS_VERSION_</span><span class="p">,</span> <span class="s1">&#39;1.7.7&#39;</span><span class="p">,</span> <span class="s1">&#39;&gt;=&#39;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$clientOptions</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$client</span> <span class="o">=</span> <span class="nx">call_user_func</span><span class="p">(</span><span class="s1">&#39;Symfony\\Component\\HttpClient\\HttpClient::create&#39;</span><span class="p">,</span> <span class="nv">$clientOptions</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$response</span> <span class="o">=</span> <span class="nv">$client</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;https://api.domain.com&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GuzzleHttp\Client</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$response</span> <span class="o">=</span> <span class="nv">$client</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;https://api.domain.com&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>If your module makes more HTTP calls around the code, you might consider adding an abstraction layer to simplify maintenance and improve code organization.</p>
+<h2 id="preparing-for-prestashop-9">Preparing for PrestaShop 9</h2>
+<p>The removal of Guzzle is just one of the many changes introduced in PrestaShop 9. It may not be immediately obvious but it can impact module compatibility. As PrestaShop evolves, adapting to these updates ensures your modules remain functional and future-proof.</p>
+<p>In this article, we focused on migrating away from Guzzle, but we&rsquo;ll be covering other important changes in separate articles to help you smoothly transition your modules to PrestaShop 9.</p>
+<p>We would love to hear from you if you have any feedback, questions, or specific challenges while adapting your module! Your input helps us improve our guidance and support the community through these changes.</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Mar 20, 2025</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/autoupgrade/">autoupgrade</a>
+
+  <a class="label label-primary" href="/tag/module/">module</a>
+
+  <a class="label label-primary" href="/tag/beta/">beta</a>
+
+  <a class="label label-primary" href="/tag/releases/">releases</a>
+
+  <a class="label label-primary" href="/tag/community/">community</a>
+
+  <a class="label label-primary" href="/tag/contribution/">contribution</a>
+
+  <a class="label label-primary" href="/tag/development/">development</a>
+
+  <a class="label label-primary" href="/tag/qa/">qa</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/JonathanLelievre/">Jonathan Lelievre</a>
+      <span>Lead Developer Open Source Project</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2025\/breaking-change-guzzle-removal-v9\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

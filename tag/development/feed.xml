@@ -6,7 +6,17 @@
     <description>Recent content in development on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/development/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/development/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
+      <link>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</link>
+      <pubDate>Thu, 20 Mar 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
+      <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.
+If your module depends on Guzzle, it will no longer be available by default in PrestaShop 9. In this article, we’ll explain why Guzzle was removed, what this means for your module, and how to migrate to a suitable alternative.</description>
+    </item>
+    
     <item>
       <title>Reworking the &#34;Update Assistant&#34; Module V7: Our Experience</title>
       <link>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</link>
@@ -150,17 +160,6 @@ Download PrestaShop 1.7.4.0 now! Be careful! If you plan to upgrade, we recommen
       <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-available/</guid>
       <description>Dear community, it is a great day for us all. Many “when will it be released?” later, we are thrilled to announce the birth of PrestaShop 1.7.3!
 After six months of blood, sweat, and tears (okay, we’re just kidding), here it is, the new minor version has come. We are aware that these six months of work have raised some very high expectations. You won’t be disappointed, because we have spent a lot of time improving and testing it for you!</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 1.7.3.0 RC1 is open for feedback!</title>
-      <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-rc-1/</link>
-      <pubDate>Mon, 19 Feb 2018 10:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-rc-1/</guid>
-      <description>PrestaShop 1.7.3.0 Release Candidate is now ready for you to test!
-We are happy to announce that we are very close to releasing 1.7.3.0. This minor version (in the SemVer meaning of the term) brings several improvements, some new features and innovative tools to the 1.7 codebase. We can’t wait to receive your feedback about it!
-Test PrestaShop 1.7.3.0 RC1 now! This release candidate is a great opportunity for you to start playing with it before we release the final version!</description>
     </item>
     
   </channel>

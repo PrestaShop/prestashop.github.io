@@ -6,7 +6,17 @@
     <description>Recent content in contribution on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/contribution/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/contribution/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
+      <link>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</link>
+      <pubDate>Thu, 20 Mar 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
+      <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.
+If your module depends on Guzzle, it will no longer be available by default in PrestaShop 9. In this article, we’ll explain why Guzzle was removed, what this means for your module, and how to migrate to a suitable alternative.</description>
+    </item>
+    
     <item>
       <title>Reworking the &#34;Update Assistant&#34; Module V7: Our Experience</title>
       <link>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</link>
@@ -153,16 +163,6 @@ Krystian is 31.</description>
       <description>Hacktoberfest is a month-long celebration of open-source software that happens online every October, sponsored by the American cloud hosting company DigitalOcean. People are encouraged to engage and create at least 4 pull requests for open-source projects on GitHub.
 If you want to contribute to open-source projects but don’t know where to start, Hacktoberfest might be the perfect opportunity for you.
 How does that work? Your goal is to contribute with at least 4 quality pull requests to the open-source project you like.</description>
-    </item>
-    
-    <item>
-      <title>Automated UI tests tutorial</title>
-      <link>https://build.prestashop-project.org/news/2020/how-to-write-a-new-ui-test/</link>
-      <pubDate>Mon, 26 Oct 2020 12:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2020/how-to-write-a-new-ui-test/</guid>
-      <description>One year ago, the QA team started to develop a new test framework, based on Puppeteer, Mocha, and Chai. You can read more about the framework in this previous article: The (new) PrestaShop Test Framework. Since then, the tests coverage has been continually increasing, and we recently improved our framework by switching to Playwright.
-In this article, we will explain how to create a new UI (User Interface) test for the PrestaShop core project.</description>
     </item>
     
   </channel>

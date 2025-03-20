@@ -6,7 +6,17 @@
     <description>Recent content in community on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/community/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/community/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
+      <link>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</link>
+      <pubDate>Thu, 20 Mar 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
+      <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.
+If your module depends on Guzzle, it will no longer be available by default in PrestaShop 9. In this article, we’ll explain why Guzzle was removed, what this means for your module, and how to migrate to a suitable alternative.</description>
+    </item>
+    
     <item>
       <title>Join the community at the FOP (Friends of Presta) Days in Paris</title>
       <link>https://build.prestashop-project.org/news/2025/friends-of-presta-days-in-paris-2025/</link>
@@ -148,16 +158,6 @@ PrestaShop Live Update - June 2024 During this Live Update, we had the opportuni
       <description>The next Live Update for the PrestaShop Project in 2024 will happen on Wednesday, June 19th, 2024 at 4 pm (Paris time) on YouTube!
 We will present an overview of the recently released PrestaShop 9 Alpha. This session will cover some of the new features and improvements introduced in this latest version.
 Additionally, the Seamless Upgrade &amp;amp; Extensibility team from PrestaShop SA will join us to share their latest projects, with a focus on the recent improvements to the autoupgrade module.</description>
-    </item>
-    
-    <item>
-      <title>Simplifying releases with a single Zip</title>
-      <link>https://build.prestashop-project.org/news/2024/new-zip-distribution-channel/</link>
-      <pubDate>Tue, 28 May 2024 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/new-zip-distribution-channel/</guid>
-      <description>As we continue to evolve and adapt to the global e-commerce landscape, we are implementing changes to streamline our operations and enhance our project’s trajectory. In 2022, we aimed to make PrestaShop a company-neutral open source project. Today, while keeping the project neutral, we are changing how we distribute the PrestaShop solution, starting with the upcoming 9.0 release.
-One release, one Zip As you know, versions are distributed as two separate Zips, one on GitHub and a later one on prestashop.</description>
     </item>
     
   </channel>

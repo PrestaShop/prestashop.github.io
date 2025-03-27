@@ -20,6 +20,7 @@ permalinks:
   tags: /tag/:slug/
 
 googleAnalytics: "G-QVW3BYSGJJ"
+      
 disqusShortname: prestashopbuild
 
 params:
@@ -28,6 +29,11 @@ params:
   algolia:
     application_id: '17LZR6CZEL'
     index_name: 'blog'
+  privacy:
+    googleAnalytics:
+        defaultGtagStorageDenied: true
+        waitForUpdate: 500
+        anonymizeIP: true
 
 social:
   twitter: "PrestaShopOrg"

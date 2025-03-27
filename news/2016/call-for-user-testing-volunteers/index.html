@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Calling for user-testing volunteers (Paris, France)</title>
-    <link href="/style.css?1742464839" rel="stylesheet">
+    <link href="/style.css?1743065857" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -28,13 +28,19 @@
 
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
 		<script>
-			var doNotTrack = false;
-			if (!doNotTrack) {
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-				gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip': false });
-			}
+		  var doNotTrack = false;
+		  if (!doNotTrack) {
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('consent', 'default', {
+			  ad_storage: 'denied',
+			  analytics_storage: 'denied',
+			  wait_for_update:  500 ,
+			  region: ['US-CA', 'BE', 'BG', 'CZ', 'DK', 'DE', 'EE', 'IE', 'GR', 'ES', 'FR', 'HR', 'IT', 'CY', 'LV', 'LT', 'LU', 'HU', 'MT', 'NL', 'AT', 'PL', 'PT', 'RO', 'SI', 'SK', 'FI', 'SE']
+			});
+			gtag('js', new Date());
+			gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip':  true  });
+		  }
 		</script>
 	
     

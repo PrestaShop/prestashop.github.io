@@ -49,13 +49,13 @@ With these enhancements, the new CLI makes managing PrestaShop updates more effi
 
 ### Faster Update, Backup, and Restoration
 
-We have optimized the module’s core processes to reduce execution times and minimize the risk of failures. Update, backup, and restoration management has been improved to ensure greater reliability, even for large stores. Now, every update is faster, more robust, and more secure.
+We have optimized the module’s core processes to reduce execution times and minimize the risk of failures. Update, backup, and restoration management have been improved to ensure greater reliability, even for large stores. Now, every update is faster, more robust, and more secure.
 
 ![Better. Faster. Stronger.](/assets/images/2025/03/autoupgrade-v7-better-faster-stronger.png)
 
 Here are some key improvements:
 
-- **Separation of update, backup and restore processes** for better overall performance.
+- **Separation of update, backup, and restore processes** for better overall performance.
 - **Optimized database queries** to process large data volumes more efficiently.
 - **Redesigned update file manager** for improved efficiency and reliability.
 - **Faster execution** for update and backup processes.
@@ -73,7 +73,7 @@ Here’s what’s been improved:
 - **Enhanced requirement validation** and version management for a smoother update process.
 - **Contextualized logs** tailored to each process (update, backup, and restore).
 - **Redesigned error tracking** with a unified experience across the web UI and CLI.
-- **Improved ZIP log management**, with dedicated logs available for every process (update, backup, and restore).
+- **Improved log management**, with dedicated logs available for every process (update, backup, and restore).
 
 These enhancements provide greater visibility into the update, backup, and restore processes, while improving troubleshooting, error prevention, and overall quality.
 
@@ -94,7 +94,7 @@ These improvements make the Update Assistant more robust, maintainable, and futu
 
 ### A new dedicated documentation: clearer and more comprehensive
 
-Update Assistant 7.0.0 now comes with a brand-new, dedicated documentation to help you navigate the update process with confidence (available in the PrestaShop Developer Documentation). Whether you're a merchant or a developer, you’ll find all the information you need to ensure a smooth update.
+Update Assistant 7.0.0 now comes with a brand-new, dedicated documentation to help you navigate the update process with confidence ([available in the PrestaShop Developer Documentation](https://devdocs.prestashop-project.org/8/basics/keeping-up-to-date/update/)). Whether you're a merchant or a developer, you’ll find all the information you need to ensure a smooth update.
 
 Here’s what you can expect in this documentation:
 

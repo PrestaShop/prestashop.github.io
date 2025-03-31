@@ -10,13 +10,13 @@ tags: [ module, autoupgrade ]
 
 We are pleased to introduce the latest major release of the Update Assistant module (formerly known as 1-Click Upgrade).
 
-First launched in 2012, this module takes a significant leap forward with this new version, which is the result of several months of development and over 350 merged Pull Requests. As announced at the PrestaShop Developer Conference and [Live Update](https://build.prestashop-project.org/news/2024/live-update-november-2024/) in November 2024, this release pushes the boundaries of PrestaShop store updates even further.
+First launched in 2012, this module takes a significant leap forward with this new version, which is the result of several months of development and over 350 merged Pull Requests. As announced at the PrestaShop Developer Conference and on the [Live Update](https://build.prestashop-project.org/news/2024/live-update-november-2024/) in November 2024, this release pushes the boundaries of PrestaShop store updates even further.
 
-What's new? A redesigned user interface, a new Command-Line Interface (CLI), optimized update management, enhanced performance, greater reliability, technical improvements, and brand-new dedicated documentation. Explore all the features of Update Assistant version 7 in the changelog below!
+What's new? A redesigned user interface, a new Command-Line Interface (CLI), optimized update management, enhanced performance, greater reliability, technical improvements, and brand-new dedicated documentation. Explore all the Update Assistant version 7 features in the changelog below!
 
 ## **Welcome to Update Assistant 7!**
 
-### A Brand-New User Interface: more intuitive and efficient
+### A brand-new user interface: more intuitive and efficient
 
 Update Assistant 7.0.0 introduces a completely redesigned interface for a smoother and more accessible experience. With a modernized design and simplified navigation, every step of the update process is now clearer and more intuitive. 
 
@@ -47,7 +47,7 @@ New features and enhancements:
 
 With these enhancements, the new CLI makes managing PrestaShop updates more efficient and user-friendly.
 
-### Faster Update, Backup, and Restoration
+### Faster update, backup, and restoration
 
 We have optimized the module’s core processes to reduce execution times and minimize the risk of failures. Update, backup, and restoration management have been improved to ensure greater reliability, even for large stores. Now, every update is faster, more robust, and more secure.
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Update Assistant module v7.0.0 is available (Autoupgrade)"
 subtitle: "A New Era for PrestaShop updates"
-date:   2025-04-01
+date:   2025-03-31
 authors: [ GericFosse ]
 icon: icon-leaf
 tags: [ module, autoupgrade ]

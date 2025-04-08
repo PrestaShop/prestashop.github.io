@@ -3,7 +3,7 @@ layout: post
 title: "FOP Days 2025 - a wrap-up"
 subtitle: "Know what happened at the event organized by Friends of Presta"
 date: 2025-04-08
-authors: [ pcoffre ]
+authors: [ coffrep ]
 icon: icon-leaf
 tags: [news, event, community]
 ---

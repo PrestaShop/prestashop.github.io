@@ -243,7 +243,7 @@ If you access the endpoint with the wrong ID, you will receive an error message.
 The endpoint will return a 404 status code and an error message saying the group was not found.
 
 {{% notice success %}}
-If you search for a list of all available resources, you can access the API documentation thanks to theURL available in your back office (go to Advanced Parameters -> Admin Api). The documentation is generated automatically and provides information about all available endpoints, request methods, and parameters.
+If you search for a list of all available resources, you can access the API documentation thanks to the URL in your back office (go to Advanced Parameters -> Admin Api). The documentation is generated automatically and provides information about all available endpoints, request methods, and parameters.
 Furthermore, there is also [the documentation available in the developer documentation](https://devdocs.prestashop-project.org/9/admin-api/), with [the Swagger view](https://devdocs.prestashop-project.org/9/admin-api/swagger-doc/).
 {{% /notice %}}
 

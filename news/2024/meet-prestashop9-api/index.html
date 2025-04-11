@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Meet the new API Platform-based API in PrestaShop 9</title>
-    <link href="/style.css?1744268597" rel="stylesheet">
+    <link href="/style.css?1744366095" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -378,9 +378,11 @@
 
 
 
-<div class="alert alert-success">If you search for a list of all available resources, you can use the <a href="http://yourdomain.test/admin-api/docs.html">http://yourdomain.test/admin-api/docs.html</a> URL to access the API documentation. The documentation is generated automatically and provides information about all available endpoints, request methods, and parameters.
+<div class="alert alert-success">If you search for a list of all available resources, you can access the API documentation thanks to the URL in your back office (go to Advanced Parameters -&gt; Admin Api). The documentation is generated automatically and provides information about all available endpoints, request methods, and parameters.
+Furthermore, there is also <a href="https://devdocs.prestashop-project.org/9/admin-api/">the documentation available in the developer documentation</a>, with <a href="https://devdocs.prestashop-project.org/9/admin-api/swagger-doc/">the Swagger view</a>.
 </div>
 
+<p><img src="/assets/images/2024/05/api/api_url.png" alt="PrestaShop 9 API documentation"></p>
 <p><img src="/assets/images/2024/05/api/api_docs.png" alt="PrestaShop 9 API documentation"></p>
 <h2 id="editing-a-single-resource">Editing a single resource</h2>
 <p>Now that you know how to retrieve information about a single resource, you can try to edit it. To do that, you need to send a <code>PUT</code> request to the <code>/admin-api/customers/group/{customerGroupId}</code> endpoint, where <code>{customerGroupId}</code> is the ID of the user group you want to edit. You need to provide the access token in the <code>Authorization</code> header and the data you want to change in the request body.</p>

@@ -48,7 +48,7 @@ Now, let's proceed to the next step.
 
 ## Create API client
 
-Let's create our first client. You can add as many clients to the API as you want. In the real-world scenario, you probably want to create separate client for each service you want to integrate. You will probably have clients like "My ERP integration", "Some marketing automation tool client", etc. 
+Let's create our first client. You can add as many clients to the API as you want. In the real-world scenario, you probably want to create separate client for each service you want to integrate. You will probably have clients like "My ERP integration", "Some marketing automation tool client", etc.
 
 To add a new API client, navigate to Advanced Parameters -> Admin API page. Here you can see a list of all API clients, you can add a new one by clicking the "Add new API Client" button.
 
@@ -243,8 +243,11 @@ If you access the endpoint with the wrong ID, you will receive an error message.
 The endpoint will return a 404 status code and an error message saying the group was not found.
 
 {{% notice success %}}
-If you search for a list of all available resources, you can use the http://yourdomain.test/admin-api/docs.html URL to access the API documentation. The documentation is generated automatically and provides information about all available endpoints, request methods, and parameters.
+If you search for a list of all available resources, you can access the API documentation thanks to the URL in your back office (go to Advanced Parameters -> Admin Api). The documentation is generated automatically and provides information about all available endpoints, request methods, and parameters.
+Furthermore, there is also [the documentation available in the developer documentation](https://devdocs.prestashop-project.org/9/admin-api/), with [the Swagger view](https://devdocs.prestashop-project.org/9/admin-api/swagger-doc/).
 {{% /notice %}}
+
+![PrestaShop 9 API documentation](/assets/images/2024/05/api/api_url.png)
 
 ![PrestaShop 9 API documentation](/assets/images/2024/05/api/api_docs.png)
 

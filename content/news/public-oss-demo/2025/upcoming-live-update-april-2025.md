@@ -17,7 +17,7 @@ The upcoming PrestaShop Project Live Update will take place on **Wednesday, Apri
 
 This edition will focus on the latest developments in PrestaShop 8.2.2 and PrestaShop 9. We’ll discuss recent improvements, new features, and what these changes mean for the community and merchants.
 
-A special highlight of this Live Update: we will be joined by team members responsible for the Update Assistant module. They will present and demo the brand new **version 7** of the module, sharing insights into its new capabilities and how it simplifies the update process for PrestaShop stores.
+A special highlight of this Live Update: we will be joined by PrestaShop SA Core Extensions team members responsible for the Update Assistant module. They will present and demo the brand [new **version 7** of the module](https://github.com/PrestaShop/autoupgrade/releases/tag/v7.0.0), sharing insights into its new capabilities and how it simplifies the update process for PrestaShop stores.
 
 Whether you’re a developer, merchant, or contributor, this session is a great opportunity to learn directly from the people driving these updates and to ask your questions live.
 

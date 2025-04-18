@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Announcing PrestaShop Project Live Update April 2025"
-subtitle: "Join us on YouTube on April 5th, 2025 at 4pm (Paris time) for the next Live Update!"
+subtitle: "Join us on YouTube on April 23rd, 2025 at 4pm (Paris time) for the next Live Update!"
 date:   2025-04-18
 authors: [ kpodemski ]
 image: /assets/images/live-update/liveupdate-banner-linkedin.png

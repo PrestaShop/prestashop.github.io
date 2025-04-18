@@ -6,7 +6,16 @@
     <description>Recent content on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Announcing PrestaShop Project Live Update April 2025</title>
+          <link>https://build.prestashop-project.org/news/2025/upcoming-live-update-april-2025/</link>
+          <pubDate>Fri, 18 Apr 2025 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/upcoming-live-update-april-2025/</guid>
+          <description>The upcoming PrestaShop Project Live Update will take place on Wednesday, April 23rd, 2025 at 4pm (Paris time) on YouTube!</description>
+        </item>
+      
         <item>
           <title>PrestaShop Core Monthly - March 2025</title>
           <link>https://build.prestashop-project.org/news/2025/core-monthly-2025-03-01-2025-03-31/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2025/sql-injection-attacks-alert-and-security-enhancements-for-prestashop/</guid>
           <description>A recent wave of attacks has targeted PrestaShop stores, leveraging SQL Injection vulnerabilities in third-party modules to compromise data security. Malicious actors exploit these vulnerabilities to inject harmful code into the PrestaShop database, enabling the theft of sensitive customer information by loading unauthorized JavaScript scripts.</description>
-        </item>
-      
-        <item>
-          <title>PSDevCon 2024 - testing and analyzing your PrestaShop modules automatically</title>
-          <link>https://build.prestashop-project.org/news/2025/testing-and-analyzing-your-prestashop-modules-automatically/</link>
-          <pubDate>Tue, 21 Jan 2025 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2025/testing-and-analyzing-your-prestashop-modules-automatically/</guid>
-          <description>During the PrestaShop Developer Conference 2024, Jonathan Danse presented methods for automatically testing and analyzing modules, ensuring their quality and reliability. In this guest article, Jonathan shares the key points from his conference and offers practical advice. Learn how to ensure high-performing modules with every deployment.</description>
         </item>
       
   </channel>

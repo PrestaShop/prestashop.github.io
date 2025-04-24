@@ -11,22 +11,22 @@ icon: icon-video-camera
 tags: [contribute, event, community, live-update]
 ---
 
-On April 23rd, 2025, we hosted another Live Update for the PrestaShop Project. This time we focused on two subjects, the release of Update Assistant and the Targeted Contributions initiative.
+On April 23rd, 2025, we hosted another Live Update for the PrestaShop Project. This time we focused on two subjects, the Update Assistant release and the Targeted Contributions initiative.
 
 ![PrestaShop Project Live Update](/assets/images/live-update/liveupdate-banner-linkedin.png)
 
 ## PrestaShop Live Update - April 2025
 
-In this session, I presented the latest news about the PrestaShop Project, including the Targeted Contributions initiative. This initiative is a great opportunity for contributors to work on projects that matter to them and the community. It also allows us to better allocate resources and ensure that we are working on the most important projects.
+In this session, I presented the latest news about the PrestaShop Project, including the Targeted Contributions initiative. This initiative is a great opportunity for contributors to work on projects that matter to them and the community. It also allows us to better allocate resources and ensure we are working on the most important projects.
 
-We also had a presentation from Geric Fosse, the Product Manager from PrestaShop SA, who presented the new features of the Update Assistant module. He explained how to use it and what to expect in the future. Session ended with a Q&A session where we answered questions from the community.
+We also had a presentation from Geric Fosse, the Product Manager from PrestaShop SA, who presented new features of the Update Assistant module. He explained how to use it and what to expect in the future. The session ended with a Q&A where we answered questions from the community.
 
 {{< youtube hkXkYbITS4A >}}
 
 ## The session's agenda was as follows:
 
 - [00:00](https://www.youtube.com/watch?v=hkXkYbITS4A) Beginning of the session: the introduction
-- [01:49](https://youtu.be/hkXkYbITS4A?t=109) Project news: Targeted contributions
+- [01:49](https://youtu.be/hkXkYbITS4A?t=109) Project news: Targeted Contributions
 - [09:29](https://youtu.be/hkXkYbITS4A?t=569) Presentations: Update Assistant by [@gericfo](https://github.com/gericfo)
 - [30:04](https://youtu.be/hkXkYbITS4A?t=1804) Q&A session
 

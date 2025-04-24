@@ -17,7 +17,7 @@ On April 23rd, 2025, we hosted another Live Update for the PrestaShop Project. T
 
 ## PrestaShop Live Update - April 2025
 
-In this session, I presented the latest news about the PrestaShop Project, including the Targeted Contributions initiative. It aims to improve the PrestaShop ecosystem by allowing contributors to work on specific projects that benefit the community. The Targeted Contributions initiative is a great opportunity for contributors to work on projects that matter to them and the community. It also allows us to better allocate resources and ensure that we are working on the most important projects.
+In this session, I presented the latest news about the PrestaShop Project, including the Targeted Contributions initiative. This initiative is a great opportunity for contributors to work on projects that matter to them and the community. It also allows us to better allocate resources and ensure that we are working on the most important projects.
 
 We also had a presentation from Geric Fosse, the Product Manager from PrestaShop SA, who presented the new features of the Update Assistant module. He explained how to use it and what to expect in the future. Session ended with a Q&A session where we answered questions from the community.
 

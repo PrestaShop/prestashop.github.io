@@ -5,8 +5,8 @@ subtitle: "Discover the faces behind the commits"
 date:   2025-04-29
 authors: [ coffrep ]
 icon: icon-leaf
-image: /assets/images/theme/banner-ps-project.png
-twitter_image: /assets/images/theme/banner-ps-project.png
+opengraph_image: assets/images/theme/banner-ps-project.png
+twitter_image: assets/images/theme/banner-ps-project.png
 tags: [contribute, community, contribution]
 ---
 

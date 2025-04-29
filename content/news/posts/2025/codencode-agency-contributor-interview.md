@@ -70,4 +70,4 @@ Find my account on GitHub, which is also my agency’s profile, visible on the C
 
 **Paolo, thank you so much for this interview and your help! Keep up the great contributions!** 
 
-**Do you wish to contribute to the PrestaShop Project? Everything you need to know to get involved is available [here](https://www.prestashop-project.org/get-involved/). You can join us on the PrestaShop Project, available on [GitHub](https://github.com/PrestaShop).**
+**Do you wish to contribute to the PrestaShop Project? Everything you need to know to get involved is available [here](https://www.prestashop-project.org/get-involved/). You can join us on the PrestaShop Project, available on [GitHub](https://github.com/PrestaShop).** You may also want to join our [PrestaShop Project Slack](https://www.prestashop-project.org/slack/).

@@ -10,6 +10,8 @@ tags: [contribute, community, contribution]
 
 Ever wondered who's behind a GitHub username? Now’s your chance to find out! Contributor interviews, like the one you are about to read, let you connect with the people driving the PrestaShop project forward.
 
+### Meet Paolo and CODENCODE
+
 Dear readers, meet Paolo from [CODENCODE](https://github.com/Codencode). Paolo has been one of the most active members of the community in recent months. We wanted to get to know him and his company and understand what motivated him to contribute to the PrestaShop project.
 
 ![team_codencode](/assets/images/2025/04/teamcodencode.jpg)

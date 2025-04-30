@@ -3,7 +3,7 @@ layout: post
 title:  "PSDevCon2024: Cybersecurity – What No One Dares to Say"
 subtitle: "Read a summary of Vincent Guesnard’s cybersecurity presentation at the Developer Conference 2024"
 date:   2025-04-30
-authors: [ prestashop ]
+authors: [ VincentGuesnard ]
 icon: icon-leaf
 tags: [psdevcon, news, event, cybersecurity]
 ---

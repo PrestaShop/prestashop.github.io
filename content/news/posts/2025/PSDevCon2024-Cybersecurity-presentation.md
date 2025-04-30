@@ -85,7 +85,7 @@ We remind you that failing to report a large-scale credit card theft to the auth
 
 At TouchWeb, we’re proud to be leading the charge in actively publishing security alerts and funding real-world cybersecurity actions – like Bug Bounty programs, audits, and public reports. While we’re not obligated to do this, we believe deeply in building a safer, stronger PrestaShop ecosystem for everyone.
 
-We know that talking about vulnerabilities isn’t always easy – but it’s necessary. Transparency can be uncomfortable, but it’s also a sign of commitment. With support from PrestaShop SA and our network, we’ve taken the first steps. But real change requires a community effort.
+We know that talking about vulnerabilities isn’t always easy – but it’s necessary. Transparency can be uncomfortable, but it’s also a sign of commitment. With support from [PrestaShop SA](https://prestashop.com/) and our network, we’ve taken the first steps. But real change requires a community effort.
 
 Why does this matter?
 Because every action we take – every bug identified, every issue fixed, every security solution funded – is designed to protect merchants, developers, agencies, and customers alike.

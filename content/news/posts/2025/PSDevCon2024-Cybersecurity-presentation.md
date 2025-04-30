@@ -111,3 +111,7 @@ If you are a module creator, join the [TouchWeb charter for responsible cybersec
 
 Thank you to everyone who already believes in and supports this cause.
 Vincent from [TouchWeb](https://www.touchweb.fr/).
+
+{{% notice type="note" title="Note" icon="file" %}}
+This article is a contribution from a member of the PrestaShop community, and not a PrestaShop employee. If you too want to help the community by sharing tips and advice on the Build devblog, [read this]({{< relref "/about#contribute" >}})!
+{{% /notice %}}

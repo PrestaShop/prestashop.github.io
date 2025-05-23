@@ -5,7 +5,7 @@ subtitle: "PrestaShop 9 no longer includes Guzzle by default. Here's how to adap
 date:   2025-03-20
 authors: [ JonathanLelievre ]
 icon: icon-code
-tags: [autoupgrade, module, beta, releases, community, contribution, development, qa]
+tags: [autoupgrade, module, beta, releases, community, contribution, development, qa, ps9dev]
 ---
 
 PrestaShop 9 is a major release, meaning it [introduces breaking changes](https://devdocs.prestashop-project.org/9/modules/core-updates/9.0/), including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.

@@ -5,7 +5,7 @@ subtitle: "Read how to use the new API in PrestaShop 9"
 date:   2024-06-06 10:00:00
 authors:  [ kpodemski ]
 icon: icon-laptop
-tags: [api, tutorial, "9.0", "9.x", "9.0"]
+tags: [api, tutorial, "9.0", "9.x", "9.0", ps9dev]
 ---
 
 A new feature in PrestaShop 9 provides the community a new, secure, modern, and extensible API based on the API Platform. In this article I will show you how to start using it.

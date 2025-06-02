@@ -2,11 +2,11 @@
 layout: post
 title:  "PrestaShop 9.0 RC1 is now available!"
 subtitle: "The first release candidate of PrestaShop 9.0 is now available for testing!"
-date: 2025-05-22
+date: 2025-06-02
 authors: [ PrestaShop ]
-image: /assets/images/2025/12/ps9RC1_LK-FB_1200x627_blue.jpg
-opengraph_image: /assets/images/2025/12/ps9RC1_LK-FB_1200x627_blue.jpg
-twitter_image: /assets/images/2025/12/ps9beta_TW_1024x512_blue.jpg
+image: /assets/images/2025/05/PrestaShop9-RC1-1200x627.png
+opengraph_image: /assets/images/2025/05/PrestaShop9-RC1-1200x627.png
+twitter_image: /assets/images/2025/05/PrestaShop9-RC1-1024x512.png
 icon: icon-lab
 tags:
 - version
@@ -20,7 +20,7 @@ tags:
 
 The first Release Candidate of PrestaShop 9.0 is now available for testing. This is a significant milestone in the development cycle, and we encourage all users to test it thoroughly.
 
-![PrestaShop 9.0 RC1 is available!](/assets/images/2024/12/ps9beta_LK-FB_1200x627_blue.jpg)
+![PrestaShop 9.0 RC1 is available!](/assets/images/2025/05/PrestaShop9-RC1-1200x627.png)
 
 ## PrestaShop 9.0 Release Candidate 1
 

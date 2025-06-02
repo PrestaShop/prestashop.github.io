@@ -6,7 +6,17 @@
     <description>Recent content in releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 9.0 RC1 is now available!</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-rc1/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-rc1/</guid>
+      <description>The first Release Candidate of PrestaShop 9.0 is now available for testing. This is a significant milestone in the development cycle, and we encourage all users to test it thoroughly.
+PrestaShop 9.0 Release Candidate 1 This version marks the final stage before the stable release. It includes all planned features, improvements, and changes introduced since the alpha and beta phases — including the new Hummingbird theme, Admin API, PHP 8.4 and Symfony 6.</description>
+    </item>
+    
     <item>
       <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
       <link>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</link>
@@ -153,17 +163,6 @@ Version 8.1.2 fixes a few security issues found by security researchers and solv
       <description>The first patch for PrestaShop 8.1 is available. This release contains a few security fixes, so we highly recommend you to upgrade your shop as soon as possible.
 Version 8.1.1 fixes a few security issues found by security researchers and solves a great number of bugs reported by the community and project&amp;rsquo;s Quality Assurance team.
 You can go to the release page to see a full changelog, but it&amp;rsquo;s worth mentioning a few notable bug fixes:</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.0.5 Is Available</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-5-maintenance-release/</link>
-      <pubDate>Mon, 07 Aug 2023 09:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-5-maintenance-release/</guid>
-      <description>The fifth patch version for PrestaShop 8 is now available to download! This release contains a few security fixes, so we highly recommend you to upgrade your shop as soon as possible.
-PrestaShop 8.0.x branch is no longer supported since the release of PrestaShop 8.1, but due to the high severity of the security issues fixed in this release, we decided to release a patch version for this branch.
-Apart from the security fixes, this release also contains a few bug fixes.</description>
     </item>
     
   </channel>

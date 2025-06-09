@@ -2,10 +2,10 @@
 layout: post
 title:  PrestaShop 9 is available
 subtitle: Better foundation for your ecommerce
-date: 2025-06-XX
+date: 2025-06-10
 authors: [ PrestaShop ]
-image: /assets/images/theme/banner-core-monthly.jpg
-twitter_image: /assets/images/theme/banner-core-monthly.jpg
+image: /assets/images/2025/06/PS901201x629.png
+twitter_image: /assets/images/2025/06/PS901201x629.png
 icon: icon-leaf
 tags:
 - version
@@ -19,13 +19,13 @@ It's finally here! PrestaShop 9 is available for download. This new version brin
 
 ## PrestaShop 9 is here!
 
+![PrestaShop 9 is available!](/assets/images/2025/06/PS901535x425.png)
+
 After over two years of development and collaboration with the community, it's time to take another major step forward. **PrestaShop 9** is here. This version brings valuable improvements and marks a significant advancement for anyone looking to grow their business online.
 
 This new major version introduces long-term supported technologies like **Symfony 6.4**, compatibility with **PHP 8.4**, a brand-new **Admin API**, and an improved developer experience both in the back office and the front. It's a strong, forward-compatible foundation for merchants, developers, and integrators alike.
 
 > ⚠️ PrestaShop 9 is a **major version**: some modules and themes may require updates to work correctly. We recommend testing thoroughly before upgrading your shop.
-
-![PrestaShop 9 is available!](/assets/images/2025/05/bannerPS9.png)
 
 ## Highlights of PrestaShop 9
 
@@ -45,6 +45,10 @@ Let’s take a quick look at the key features:
 Read more about the new features and what they mean below!
 
 ## What's new in PrestaShop 9
+
+<a href="/assets/images/2025/06/PS9-screenshots/dashboard-more-details.png" target="_blank">
+    <img src="/assets/images/2025/06/PS9-screenshots/dashboard-more-details.png" alt="PrestaShop 9 is available!" class="img-fluid rn-image" loading="lazy">
+</a>
 
 ### Symfony 6.4 and PHP 8.4 support
 
@@ -78,23 +82,33 @@ It is important to note that the Admin API is still a **work in progress**. Whil
 - Check the API documentation: [Admin API documentation](https://devdocs.prestashop-project.org/9/admin-api/)
 - [Meet PrestaShop 9 Admin API - user guide]({{< relref "/news/posts/2024/meet-prestashop9-api" >}}).
 
+<a href="/assets/images/2025/06/PS9-screenshots/admin-api2.jpeg" target="_blank">
+    <img src="/assets/images/2025/06/PS9-screenshots/admin-api2.jpeg" alt="PrestaShop 9 new Admin API based on API Platform" class="img-fluid rn-image" loading="lazy">
+</a>
+<a href="/assets/images/2025/06/PS9-screenshots/admin-api.jpeg" target="_blank">
+    <img src="/assets/images/2025/06/PS9-screenshots/admin-api.jpeg" alt="PrestaShop 9 new Admin API based on API Platform" class="img-fluid rn-image" loading="lazy">
+</a>
+
 ### Hummingbird theme
 
 PrestaShop 9 introduces **Hummingbird**, a brand-new front office theme that represents the next generation of PrestaShop themes. Built with **Bootstrap 5**, **TypeScript**, and the **BEM** (Block Element Modifier) CSS naming convention, [Hummingbird](https://github.com/PrestaShop/hummingbird) responds directly to years of feedback and requests from the community for a modern, clean, and flexible theme base.
 
 The community has asked for a refreshed, modernized front-end foundation, but updating the Classic theme without breaking ecosystem compatibility was nearly impossible. Hummingbird solves this by offering:
 
-- Bootstrap 5 LTS integration for modern design components.
-- A reorganized directory structure (moving away from the old `_dev` layout) for better clarity.
-- Consistent BEM-based CSS naming for easier maintenance and clearer structure.
-- Reduced third-party dependencies, focusing on Bootstrap's built-in components where possible.
-- Separation between **functional CSS** and **styling CSS**, allowing developers to start from a clean Bootstrap base if desired.
+- *Bootstrap 5 LTS integration* for modern, consistent design components.
+- A *reorganized directory structure*, moving away from the legacy `_dev` layout for better clarity and maintainability.
+- Consistent *BEM-based CSS naming convention* for easier maintenance and clearer structure.
+- A *new SCSS architecture* based on CSS `@layer`, enabling modular and scalable styling
+- *Reduced third-party dependencies*, favoring Bootstrap’s built-in components.
+- *Clear separation between Bootstrap and PrestaShop-specific styles*, simplifying custom overrides.
+- Supports *Bootstrap dark mode*, which can be easily enabled via an SCSS variable.
+- Major template refactors for consistency, modularity, and scalability.
+
+<a href="/assets/images/2025/06/PS9-screenshots/hummingbird.jpeg" target="_blank">
+    <img src="/assets/images/2025/06/PS9-screenshots/hummingbird.jpeg" alt="PrestaShop 9 new Hummingbird theme" class="img-fluid rn-image" loading="lazy">
+</a>
 
 This is not a full break from Classic - think of it as a rebuilt and improved foundation, preserving the best parts while modernizing where it matters most.
-
-For theme developers, Hummingbird is a great starting point:
-- You can quickly spin up a pure Bootstrap 5 base by commenting out `@import "custom/_custom";` in the `theme.scss` file.
-- You avoid wasting time stripping away legacy code and instead build directly on a streamlined, maintainable, modern base.
 
 While Hummingbird is not the default theme in PrestaShop 9, it sets the direction for the future of PrestaShop theming. We encourage developers to test it, build on it, and share feedback to help shape its evolution.
 
@@ -161,13 +175,23 @@ To make the upgrade process smoother and more reliable, you can use the brand-ne
 
 With Update Assistant, upgrading to PrestaShop 9 is faster, safer, and easier than ever. Don't miss out on the powerful improvements of PrestaShop 9 and start planning your update today to take full advantage of everything the new version has to offer.
 
+<a href="/assets/images/2025/06/PS9-screenshots/update-assistant.png" target="_blank">
+    <img src="/assets/images/2025/06/PS9-screenshots/update-assistant.png" alt="PrestaShop 9 Update Assistant" class="img-fluid rn-image" loading="lazy">
+</a>
+<a href="/assets/images/2025/06/PS9-screenshots/update-assistant2.png" target="_blank">
+    <img src="/assets/images/2025/06/PS9-screenshots/update-assistant2.png" alt="PrestaShop 9 Update Assistant" class="img-fluid rn-image" loading="lazy">
+</a>
+
 ## Download PrestaShop 9
 
 Download the Classic version from the official PrestaShop website. This version includes the PrestaShop SA modules, such as:
 - PrestaShop Checkout
 - PrestaShop Account
 - PrestaShop Marketplace in back office
-- TBD.
+- PrestaShop CloudSync
+- PrestaShop Shipping
+- PrestaShop Marketing
+- PrestaShop Socials
 
 {{< cta "https://prestashop.com/versions/" >}}Download PrestaShop 9 now!{{< /cta >}}
 
@@ -175,7 +199,7 @@ Download the Classic version from the official PrestaShop website. This version 
 
 **Creating a custom ZIP**
 
-If you don't want to use a Classic version, you can build your custom ZIP file with the PrestaShop 9 installer, which has no PrestaShop SA modules included. You can read the instructions on how to do it [in the developer documentation](#).
+If you don't want to use a Classic version, you can build your custom ZIP file with the PrestaShop 9 installer, which has no PrestaShop SA modules included. You can read the instructions on how to do it [PrestaShop Release Creation Tool readme](https://github.com/PrestaShop/PrestaShop/tree/develop/tools/build).
 
 ## Adapt your solutions to PrestaShop 9
 
@@ -207,20 +231,74 @@ Whether you are a developer, designer, merchant, or simply passionate about open
 
 ## Acknowledgments
 
-A big thank you to the X people who already contributed to Y Pull Requests included in this version:
+PrestaShop is an open-source platform where many contributors, though not directly connected to PrestaShop SA, play vital roles in its development alongside the community.
 
-TBD - list of contributors from the changelog tool
+This release is made possible thanks to [PrestaShop SA](https://prestashop.com/) who contributed around 80% of pull requests, but also individual contributors from the community, and companies from our ecosystem.
 
-This release is made possible thanks to PrestaShop SA, individual contributors from the community, but also companies from our ecosystem such as:
+A big **thank you** to all contributors (in alphabetical order):
 
-TBD - list of companies from PS Project Dashboard
+adrianllopis, Adrien Foulon, AdrienPlx, Aimé Dubuisson, Alejandro Ramos, Alexis Guyomar, Amazzing, Antonin Clauzier, Arnaud Dohogne, Aurélien Rita, bibips, Boris Hermans, Boubker Bribri, Carotte, Cedric Vangout, Cesar Quintini, Charly Caillon, clement-hvt, Clotaire Renaud, Codencode, ComonSoft, crezzur, Damien Tupinier, Daniel Black, Daniel Hlavacek, Danilo Carta, Darius Aleksiunas, Dariusz Tryba, David Gonzalez, David Paris, David-Julian Buch, Denys Bezuhlyi, Dindault Lucas, Dominik Shaim Ulrich, DylanDenizon, Edel Muñoz Macias, Fabien Papet, Felipe Espinosa, Florine Hea, Franck Lefèvre, George Filippakis, Grzegorz Wójcik, Hugo Posnic, Ibrahima Sow, idnovate, Jackoske, Jakub Łach, Jean-François Viguier, Jens Wilke, jeremie, Jevgenij Visockij, Jin JI, John Botella, johnk0306, Jonathan Danse, Jonathan Lelievre, Jonathan Renard, Julien Gissinger, Julius Žukauskas, justeen35, Kaikina, Karlis Suvi, Kijam Lopez, Klemart3D, Krystian Podemski, Laurent Rousseau, Léa Gris, leemyongpakvn, Lorenz Meyer, Louis Authie, Manuel Jose Pulgar Anguita, Marco Ingraiti, Marius Gudauskis, Markus, Markus Staab, Mateus Shirlaw, Mateusz Nastalski, Mathieu Ferment, Matthias Goudjil, Matthieu Rolland, Mattia, Maxime, Maxime Flasquin, Maxime Morel, Maxime Poulain, Michal Macek, Mickaël Fernandez, Mohamed Ali Rajab, Morgan Pichat, mrkalchemy, Nesrine Abdmouleh, Nicko, Nicolas Lœuillet, Nicolas Sotron, okom3pom, Olivier Le Corre, Pablo Borowicz, Paul Campbell, Paul Coudeville, PrestaAlba, Prestaworks, Progi1984, PululuK, Robin Fischer, Roman Daniel Gabriel, Salim Benouamer, sas-adilis, Sauli Maijala, Sharak, Shivam7-1, Simone Gennari, Sullivan, Tafaz, Tanguy, Tanguy Jacquet, Tatu Wikman, tess, Thibault Blivet, Thomas, Thomas Baccelli, Thomas Delorenzi, Thomas Leone, Thomas Nabord, Thomas Nares, Tom Combet, Tom Girou, Tuni-Soft, Ugur Celik, William Entriken
 
-PrestaShop is above all a community project: the vast majority of contributors are not directly affiliated with PrestaShop SA.
+Thanks to companies whose members completed the "Sponsor company" section:
+
+<style>
+.ps-contributors {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    margin-bottom: 20px;
+}
+.ps-contributors li {
+    list-style: none;
+}
+@media (max-width: 600px) {
+    .ps-contributors {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+    }
+}
+</style>
+
+<div class="ps-contributors">
+
+- 🏆 202 ecommerce  
+- 🏆 Avalanche Media  
+- 🏆 Codencode  
+- 🏆 ComonSoft  
+- 🏆 Creabilis  
+- 🏆 Evolutive  
+- 🏆 FriendsOfPresta  
+- 🏆 Griiv  
+- 🏆 Hostinato.it  
+- 🏆 KIWIK  
+- 🏆 Lefevre.dev  
+- 🏆 MariaDB Foundation  
+- 🏆 Mediacom87.fr  
+- 🏆 OpenServis CZ  
+- 🏆 Pliciweb  
+- 🏆 PrestaEdit  
+- 🏆 Prestaworks AB  
+- 🏆 TRENDO s.r.o.  
+- 🏆 Wepika  
+</div>
 
 We would also like to thank the people who contributed aside from code:
 
-- Product management: 
-- Quality assurance: 
-- UX design: 
-- Wording management and proofreading: 
+- Product management: Iliès Bahloul
+- Delivery Manager: Wahbi Maaoui
+- Quality assurance: Sira Diouara, Paul-Noël Cholot, and all the QA team
+- UX design: Scott Cosio
+- Wording management and proofreading: Patrick Coffre
 
+## Final words
+
+PrestaShop 9 is a major step forward for the platform, bringing a modernized architecture, new developer tools, and powerful features designed to support the future of ecommerce. We are excited to see how the community will embrace these changes and continue to innovate on top of this new foundation.
+
+<style>
+    .rn-image {
+        display: block;
+        margin-bottom: 20px !important;
+        border: 1px solid #ddd;
+    }
+</style>

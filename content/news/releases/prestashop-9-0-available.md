@@ -5,6 +5,7 @@ subtitle: Better foundation for your ecommerce
 date: 2025-06-10
 authors: [ PrestaShop ]
 image: /assets/images/2025/06/PS901201x629.png
+opengraph_image: /assets/images/2025/06/PS901201x629.png
 twitter_image: /assets/images/2025/06/PS901201x629.png
 icon: icon-leaf
 tags:

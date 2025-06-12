@@ -6,6 +6,8 @@ date:   2025-06-12
 authors: [ coffrep ]
 icon: icon-leaf
 tags: [contribute, community, contribution]
+opengraph_image: /assets/images/theme/banner-ps-project.png
+twitter_image: /assets/images/theme/banner-ps-project.png
 ---
 
 Ever wondered who's behind a GitHub username? Now’s your chance to find out! Contributor interviews, like the one you are about to read, let you connect with the people driving the PrestaShop project forward.

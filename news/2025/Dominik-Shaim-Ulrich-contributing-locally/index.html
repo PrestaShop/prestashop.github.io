@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Dominik Shaim Ulrich: contributing locally with a business providing hosting services</title>
+    <link href="/style.css?1749716306" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Dominik Shaim Ulrich: contributing locally with a business providing hosting services" />
+<meta property="og:description" content="Ever wondered who’s behind a GitHub username? Now’s your chance to find out! Contributor interviews, like the one you are about to read, let you connect with the people driving the PrestaShop project forward." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2025/Dominik-Shaim-Ulrich-contributing-locally/" />
+    <meta property="og:image" content="https://build.prestashop-project.org/assets/images/theme/banner-ps-project.png"/>
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2025-06-12T00:00:00+02:00" />
+    <meta property="article:modified_time" content="2025-06-12T00:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/banner-ps-project.png">
+<meta name="twitter:title" content="Dominik Shaim Ulrich: contributing locally with a business providing hosting services"/>
+<meta name="twitter:description" content="Discover the faces behind the commits"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+		  var doNotTrack = false;
+		  if (!doNotTrack) {
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('consent', 'default', {
+			  ad_storage: 'denied',
+			  analytics_storage: 'denied',
+			  wait_for_update:  500 ,
+			  region: ['US-CA', 'BE', 'BG', 'CZ', 'DK', 'DE', 'EE', 'IE', 'GR', 'ES', 'FR', 'HR', 'IT', 'CY', 'LV', 'LT', 'LU', 'HU', 'MT', 'NL', 'AT', 'PL', 'PT', 'RO', 'SI', 'SK', 'FI', 'SE']
+			});
+			gtag('js', new Date());
+			gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip':  true  });
+		  }
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Dominik Shaim Ulrich: contributing locally with a business providing hosting services</h1>
+              
+                <h3 class="post-subtitle">Discover the faces behind the commits</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/coffrep/">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/103060695?v=4" alt="Patrick Coffre's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/coffrep/">Patrick Coffre</a>
+      </div>
+        
+          <div class="author-display-role">OS Communication Specialist</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jun 12, 2025
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Dominik&#43;Shaim&#43;Ulrich%3A&#43;contributing&#43;locally&#43;with&#43;a&#43;business&#43;providing&#43;hosting&#43;services&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2025%2FDominik-Shaim-Ulrich-contributing-locally%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2025%2FDominik-Shaim-Ulrich-contributing-locally%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Ever wondered who&rsquo;s behind a GitHub username? Now’s your chance to find out! Contributor interviews, like the one you are about to read, let you connect with the people driving the PrestaShop project forward.</p>
+<p>Dear readers, meet Dominik from <a href="https://www.openservis.cz/en/">OpenServis.cz</a>. Dominik, his company, and team members have been very active contributors to the project in the last few years. We wanted to get to know him and his company and understand what motivated him to contribute to the PrestaShop project.</p>
+<p><img src="/assets/images/2025/06/DominikShaimUlrichContributor.jpg" alt="Dominik Shaim Ulrich picture"></p>
+<h3 id="can-you-introduce-yourself-and-your-company">Can you introduce yourself and your company?</h3>
+<p>My name is Dominik Shaim Ulrich (<a href="https://github.com/ShaiMagal">@ShaiMagal</a>), and I’m an official <a href="https://www.prestashop-project.org/project-organization/people-and-roles/#committers">PrestaShop committer</a>. I’ve been in business since 2009, with a primary focus on the Czech and Slovak markets, as well as PrestaShop hosting through my company, <a href="https://www.openservis.cz/en/">OpenServis.cz</a>.</p>
+<p>Personally, I specialize in performance and security. Together with my team at OpenServis, we provide top-tier PrestaShop hosting for low TTFB and real-world speed.</p>
+<p>One of our key team members is Daniel Hlaváček (<a href="https://github.com/Hlavtox">@Hlavtox</a>), who is also an official PrestaShop committer and a very good friend of mine. To be honest, Daniel has submitted even more PRs than I have – but we work as a team, so it doesn’t really matter who submits what. It&rsquo;s a team effort.</p>
+<p>Here are a few numbers for context:</p>
+<ul>
+<li>Our hosting serves over 1,000 customers.</li>
+<li>More than 90% of them enjoy TTFB under 500ms.</li>
+<li>99% of our clients run PrestaShop 1.6 to 8.x.</li>
+<li>We’re the only two PrestaShop committers from the Czech/Slovak region – myself and Daniel.</li>
+</ul>
+<p>In short, PrestaShop hosting is our core business.</p>
+<h3 id="what-type-of-work-does-your-company-do-with-prestashop">What type of work does your company do with PrestaShop?</h3>
+<p>We build and support online stores for small and medium-sized businesses.</p>
+<p>Most of our clients already use PrestaShop, so they’re familiar with the system. Our role is to help them take their store to the next level – and the first step in almost every case is upgrading to the latest PrestaShop version, selecting the right theme, and choosing reliable modules (for Czech / Slovak customers we suggest <a href="https://psmoduly.cz/">PSModuly</a>).</p>
+<p>Running the latest version of PrestaShop is essential. Older versions often come with numerous issues – from security vulnerabilities to SEO problems and poorly optimized database queries.</p>
+<p>We’ve contributed several pull requests specifically aimed at improving performance and optimizing queries.</p>
+<h3 id="why-did-your-company-choose-to-contribute-to-the-project">Why did your company choose to contribute to the project?</h3>
+<p>We were a bit disappointed to see that no one from the Czech or Slovak community was significantly contributing to the project. That made us pretty much the only ones in our region doing so.</p>
+<p>The main reason we got involved is that we kept facing the same recurring issues with new customers – especially those upgrading from older versions of PrestaShop. We were fixing the same problems over and over again, which is not only time-consuming but also quite frustrating.</p>
+<p><strong>So we decided to address these issues directly in PrestaShop&rsquo;s core, to save time for ourselves and improve the experience for everyone.</strong></p>
+<p>It just made more sense to fix things once – properly – rather than repeatedly patching them for each project.</p>
+<h3 id="what-benefits-have-you-seen-from-contributing">What benefits have you seen from contributing?</h3>
+<p>As I mentioned earlier, fixing recurring bugs directly in PrestaShop saves us a huge amount of time.</p>
+<p>Even though we’re contributing for free, it&rsquo;s actually an investment – it pays off in future development. Every hour saved matters, especially with the number of clients we support. We&rsquo;re constantly racing against the clock, so anything that makes our workflow more efficient is incredibly valuable.</p>
+<p>And of course, we contribute because we genuinely like PrestaShop and want to help move it forward.</p>
+<h3 id="would-you-encourage-other-companies-and-community-members-to-contribute-why">Would you encourage other companies and community members to contribute? Why?</h3>
+<p>I don’t think we need to push everyone to contribute. I believe contributions should come from experienced professionals who understand what they’re doing. If someone has the skills and knowledge, then absolutely – I’d be happy to see them get involved.
+Working together, we can move the PrestaShop project forward much faster. I’d love to see more skilled developers join in.</p>
+<h3 id="any-notable-projects-or-contributions-youd-like-to-highlight">Any notable projects or contributions you’d like to highlight?</h3>
+<p>If you&rsquo;re referring to PrestaShop PRs contributions, there are many important pull requests. But I’d rather not single any of them out – it’s hard to say which are the most “notable,” as it depends on perspective. In our view, all contributions are valuable, so we prefer not to rank them. Of course, some are more important and some less, but it makes up the whole project, so nearly every single PR is important in my eyes.</p>
+<h3 id="also-where-can-we-follow-you">Also, where can we follow you?</h3>
+<p>If you&rsquo;re a reader from the Czech or Slovak Republic, don’t forget to follow our blog – it’s the only long-term, regularly updated PrestaShop blog in the CZ/SK region.
+We publish 2–4 articles each month for PrestaShop store owners:
+<a href="https://www.openservis.cz/prestashop-blog/">https://www.openservis.cz/prestashop-blog/</a></p>
+<p>Our blog is completely free for everyone.
+Since 2020, we’ve published over 250 posts – and we still have plenty of ideas for more PrestaShop content :) Stay tuned!</p>
+<p><strong>Thank you so much for this interview and your help Dominik! Keep up the great contributions.</strong></p>
+<h3 id="lets-make-prestashop-better-together">Let&rsquo;s make PrestaShop better, together</h3>
+<p><strong>Do you wish to contribute to the PrestaShop Project?</strong> Everything you need to know to get involved is available <a href="https://www.prestashop-project.org/get-involved/">here</a>. You can join us on the PrestaShop Project, available on <a href="https://github.com/PrestaShop">GitHub</a>.</p>
+<p>You may also want to join our <a href="https://www.prestashop-project.org/slack/">PrestaShop Project Slack</a>.</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jun 12, 2025</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/contribute/">contribute</a>
+
+  <a class="label label-primary" href="/tag/community/">community</a>
+
+  <a class="label label-primary" href="/tag/contribution/">contribution</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/coffrep/">Patrick Coffre</a>
+      <span>OS Communication Specialist</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2025\/Dominik-Shaim-Ulrich-contributing-locally\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

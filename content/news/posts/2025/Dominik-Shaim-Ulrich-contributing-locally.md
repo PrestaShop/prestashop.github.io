@@ -16,7 +16,7 @@ Dear readers, meet Dominik from [OpenServis.cz](https://www.openservis.cz/en/). 
 
 ### Can you introduce yourself and your company?
 
-My name is Dominik Shaim Ulrich ([@ShaiMagal](https://github.com/ShaiMagal)), and I’m an official PrestaShop committer. I’ve been in business since 2009, with a primary focus on the Czech and Slovak markets, as well as PrestaShop hosting through my company, [OpenServis.cz](https://www.openservis.cz/en/).
+My name is Dominik Shaim Ulrich ([@ShaiMagal](https://github.com/ShaiMagal)), and I’m an official [PrestaShop committer](https://www.prestashop-project.org/project-organization/people-and-roles/#committers). I’ve been in business since 2009, with a primary focus on the Czech and Slovak markets, as well as PrestaShop hosting through my company, [OpenServis.cz](https://www.openservis.cz/en/).
 
 Personally, I specialize in performance and security. Together with my team at OpenServis, we provide top-tier PrestaShop hosting for low TTFB and real-world speed.
 
@@ -46,7 +46,9 @@ We were a bit disappointed to see that no one from the Czech or Slovak community
 
 The main reason we got involved is that we kept facing the same recurring issues with new customers – especially those upgrading from older versions of PrestaShop. We were fixing the same problems over and over again, which is not only time-consuming but also quite frustrating.
 
-So we decided to address these issues directly in PrestaShop's core, to save time for ourselves and improve the experience for everyone. It just made more sense to fix things once – properly – rather than repeatedly patching them for each project.
+**So we decided to address these issues directly in PrestaShop's core, to save time for ourselves and improve the experience for everyone.**
+
+It just made more sense to fix things once – properly – rather than repeatedly patching them for each project.
 
 ### What benefits have you seen from contributing?
 

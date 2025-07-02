@@ -2,7 +2,7 @@
 layout: post
 title: "PrestaShop 8.2.x is now in the extended support phase"
 subtitle: "What to expect for PrestaShop 8.2 and 9"
-date: 2025-07-01
+date: 2025-07-04
 authors: [CyrilNavarro]
 icon: icon-code
 tags:

@@ -40,7 +40,7 @@ This maintenance period will end when PrestaShop 10.0.0 is released. When this d
 
 Branch `9.0.x` is the branch that introduced PrestaShop 9.0.0 and the patches that will follow. It was taken out from the `develop` branch when [PrestaShop 9.0 beta](https://build.prestashop-project.org/news/2025/prestashop-9-0-beta-release/) happened in February 2025.
 
-Following PrestaShop 9.0.0 release, the `9.0.x` branch is now the supported patch branch. It receives critical bug fixes, security bug fixes, and same-version regression fixes. You can read more about a patch version lifecycle [here](https://build.prestashop-project.org/news/2020/ps17-patch-release-lifecycle/).
+Following PrestaShop 9.0.0 release, the `9.0.x` branch is now the supported patch branch. It receives critical bug fixes, security bug fixes, and fixes for same-version regressions, as well as community-contributed fixes. You can read more about a patch version lifecycle [here](https://build.prestashop-project.org/news/2020/ps17-patch-release-lifecycle/).
 
 Patches for branch `9.0.x` will be delivered until PrestaShop 9.1.0 is released.
 

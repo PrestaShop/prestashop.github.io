@@ -6,7 +6,17 @@
     <description>Recent content in kpodemski on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Apr 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/kpodemski/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Jul 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/kpodemski/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Call for contributions: hooks - initiative summary</title>
+      <link>https://build.prestashop-project.org/news/2025/call-for-contributions-hooks-summary/</link>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/call-for-contributions-hooks-summary/</guid>
+      <description>During this year’s FoP Days, we launched a new community initiative focused on improving a specific part of the PrestaShop project: hooks. Rather than casting a wide net, we deliberately concentrated on a single topic. The goal was to make it easier and faster for contributors to submit changes, and for project members to validate them.
+Why hooks? Hooks are essential for extending and customizing PrestaShop without overriding core files. They empower developers to build features in a clean, future-proof way.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Live Update - April 2025</title>
       <link>https://build.prestashop-project.org/news/2025/live-update-april-2025/</link>
@@ -149,16 +159,6 @@ PrestaShop Live Update - June 2024 During this Live Update, we had the opportuni
       <description>The next Live Update for the PrestaShop Project in 2024 will happen on Wednesday, June 19th, 2024 at 4 pm (Paris time) on YouTube!
 We will present an overview of the recently released PrestaShop 9 Alpha. This session will cover some of the new features and improvements introduced in this latest version.
 Additionally, the Seamless Upgrade &amp;amp; Extensibility team from PrestaShop SA will join us to share their latest projects, with a focus on the recent improvements to the autoupgrade module.</description>
-    </item>
-    
-    <item>
-      <title>Meet the new API Platform-based API in PrestaShop 9</title>
-      <link>https://build.prestashop-project.org/news/2024/meet-prestashop9-api/</link>
-      <pubDate>Thu, 06 Jun 2024 10:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/meet-prestashop9-api/</guid>
-      <description>A new feature in PrestaShop 9 provides the community a new, secure, modern, and extensible API based on the API Platform. In this article I will show you how to start using it.
-New API in PrestaShop 9 As it was announced last year, one of the most significant projects for PrestaShop 9 has been the start of work on a new API that will eventually replace the currently available Web Services.</description>
     </item>
     
   </channel>

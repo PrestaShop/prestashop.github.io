@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Call for contributions: hooks - initiative summary</title>
+    <link href="/style.css?1751452955" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Call for contributions: hooks - initiative summary" />
+<meta property="og:description" content="During this year’s FoP Days, we launched a new community initiative focused on improving a specific part of the PrestaShop project: hooks. Rather than casting a wide net, we deliberately concentrated on a single topic. The goal was to make it easier and faster for contributors to submit changes, and for project members to validate them." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2025/call-for-contributions-hooks-summary/" />
+    <meta property="og:image" content="https://build.prestashop-project.org/assets/images/theme/banner-ps-project.png"/>
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2025-07-02T00:00:00+02:00" />
+    <meta property="article:modified_time" content="2025-07-02T00:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/banner-ps-project.png">
+<meta name="twitter:title" content="Call for contributions: hooks - initiative summary"/>
+<meta name="twitter:description" content="We invited the community to improve PrestaShop’s hook system"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW3BYSGJJ"></script>
+		<script>
+		  var doNotTrack = false;
+		  if (!doNotTrack) {
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('consent', 'default', {
+			  ad_storage: 'denied',
+			  analytics_storage: 'denied',
+			  wait_for_update:  500 ,
+			  region: ['US-CA', 'BE', 'BG', 'CZ', 'DK', 'DE', 'EE', 'IE', 'GR', 'ES', 'FR', 'HR', 'IT', 'CY', 'LV', 'LT', 'LU', 'HU', 'MT', 'NL', 'AT', 'PL', 'PT', 'RO', 'SI', 'SK', 'FI', 'SE']
+			});
+			gtag('js', new Date());
+			gtag('config', 'G-QVW3BYSGJJ', { 'anonymize_ip':  true  });
+		  }
+		</script>
+	
+    
+</head>
+
+
+  <body>
+
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Call for contributions: hooks - initiative summary</h1>
+              
+                <h3 class="post-subtitle">We invited the community to improve PrestaShop’s hook system</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/kpodemski/">
+        <img class="img-circle" src="https://avatars3.githubusercontent.com/u/2137763?v=3&amp;s=400" alt="Krystian Podemski's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/kpodemski/">Krystian Podemski</a>
+      </div>
+        
+          <div class="author-display-role">Tech Evangelist @ PrestaShop</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jul 2, 2025
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Call&#43;for&#43;contributions%3A&#43;hooks&#43;-&#43;initiative&#43;summary&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2025%2Fcall-for-contributions-hooks-summary%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2025%2Fcall-for-contributions-hooks-summary%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>During this year’s FoP Days, we launched a new community initiative focused on improving a specific part of the PrestaShop project: hooks. Rather than casting a wide net, we deliberately concentrated on a single topic. The goal was to make it easier and faster for contributors to submit changes, and for project members to validate them.</p>
+<h3 id="why-hooks">Why hooks?</h3>
+<p>Hooks are essential for extending and customizing PrestaShop without overriding core files. They empower developers to build features in a clean, future-proof way.</p>
+<p>That’s why we decided to launch a &ldquo;hook challenge&rdquo; - to add or improve at least 10 hooks in the core, and to encourage the community to take part in this focused effort.</p>
+<h3 id="a-smoother-contribution-process">A smoother contribution process</h3>
+<p>To make the process easier and more transparent:</p>
+<ul>
+<li>We automatically tagged relevant pull requests with the “hook contribution” label to ensure visibility and easier tracking.</li>
+<li>We improved the documentation on how to propose a new hook, what makes a good one, and how to structure the contribution.</li>
+<li>We monitored incoming PRs actively during the challenge period.</li>
+<li>We promoted the initiative on GitHub, Build Blog, and during FoP Days to attract more contributors.</li>
+</ul>
+<h3 id="what-we-achieved">What we achieved</h3>
+<p>Our initial goal was to add or improve at least 10 hooks, and we’re proud to say that we exceeded it, with <strong><a href="https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+label%3A%22Hook+Contribution%22">14 merged contributions</a></strong> 🚀.</p>
+<p>Even better, some contributions are still in the review or validation phase, meaning we’re likely to increase that number very soon.</p>
+<h3 id="more-than-just-merged-code">More than just merged code</h3>
+<p>In total, we received over 25 contributions during the challenge. As of now, 14 have been merged, a great achievement on its own.</p>
+<p>Not every pull request was merged: some proposed hooks already existed under a different name. Others tackled problems that could be solved using existing extension points or different architectural patterns.</p>
+<p>They opened up important discussions about how and where to extend PrestaShop, and allowed us to share knowledge with the community, explaining alternatives, clarifying use cases, and helping contributors better understand the inner workings of the software.</p>
+<p>This initiative was not only about adding code - it was about collaborating, learning, and evolving together.</p>
+<h3 id="who-contributed">Who contributed?</h3>
+<p>New contributors joined the effort, and many agencies took part in this community challenge. The result? New extension points that make PrestaShop more modular and flexible.</p>
+<p>Merged contributions came from:</p>
+<ul>
+<li><a href="https://openservis.cz">OpenServis.cz</a></li>
+<li><a href="https://creabilis.com">Creabilis.com</a></li>
+<li><a href="https://griiv.fr">griiv.fr</a> (2x)</li>
+<li><a href="https://gurkcity.de">gurkcity.de</a> (2x)</li>
+<li><a href="https://arkonsoft.pl">arkonsoft.pl</a> (2x)</li>
+<li><a href="https://github.com/unlocomqx">@unlocomqx</a></li>
+<li><a href="https://evolutive.com">evolutive.com</a></li>
+<li><a href="https://pliciweb.com">pliciweb.com</a></li>
+<li><a href="https://prestashop.com">PrestaShop.com</a></li>
+<li><a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://kiwik.com">Kiwik.com</a></li>
+</ul>
+<h3 id="new-and-improved-hooks">New and improved hooks</h3>
+<p><strong>New hooks added:</strong></p>
+<ul>
+<li><code>displayCustomerAccountTop</code></li>
+<li><code>displayCartExtraProductInfo</code></li>
+<li><code>actionGetPdfRenderer</code></li>
+<li><code>actionGetPdfTemplateObject</code></li>
+<li><code>actionPaymentModuleProductVarTplAfter</code></li>
+<li><code>actionProductGetAttributesGroupsAfter</code></li>
+<li><code>actionCartDuplicate</code></li>
+<li><code>actionObjectDuplicateAfter</code></li>
+<li><code>actionPresentObject</code></li>
+<li><code>overrideImageLink</code></li>
+<li><code>adaptImageLink</code></li>
+<li><code>actionGetCartRuleContextualValue</code></li>
+<li><code>actionApplyCartRule</code></li>
+<li><code>actionModuleUpgradeAfter</code></li>
+<li><code>actionModuleEnable</code></li>
+<li><code>actionModuleDisable</code></li>
+<li><code>additionalHtmlAttributesFormFields</code></li>
+</ul>
+<p><strong>Improved hooks:</strong></p>
+<ul>
+<li><code>actionOrderSlipAdd</code></li>
+<li><code>actionHtaccessCreate</code></li>
+</ul>
+<h3 id="what-these-hooks-enable">What these hooks enable</h3>
+<p><strong>New hooks will help you:</strong></p>
+<ul>
+<li>Display custom data in previously limited areas (e.g. cart, customer account, PDFs).</li>
+<li>Extend and modify how PDFs are rendered. <a href="https://github.com/PrestaShop/PrestaShop/pull/38487">See more details</a>.</li>
+<li>Extend order confirmation emails. <a href="https://github.com/PrestaShop/PrestaShop/pull/38480">See more details</a>.</li>
+<li>Alter product attribute rendering in the front office. <a href="https://github.com/PrestaShop/PrestaShop/pull/38408">See more details</a>.</li>
+<li>Run custom logic after duplicating carts or other entities. <a href="https://github.com/PrestaShop/PrestaShop/pull/38371">See more details</a>.</li>
+<li>Modify data presented via object presenters. <a href="https://github.com/PrestaShop/PrestaShop/pull/37947">See more details</a>.</li>
+<li>Override image link generation logic to customize image URLs. <a href="https://github.com/PrestaShop/PrestaShop/pull/38952">See more details</a>.</li>
+<li>Custom cart rule application from modules. Allows to create infinite possibilities of rules. <a href="https://github.com/PrestaShop/PrestaShop/pull/38881/">See more details</a>.</li>
+<li>React to module upgrades and enable/disable actions, allowing for custom logic when modules are updated or toggled. <a href="https://github.com/PrestaShop/PrestaShop/pull/38839">See more details</a>.</li>
+<li>Add custom HTML attributes to form fields, enabling better integration with third-party libraries or custom scripts. <a href="https://github.com/PrestaShop/PrestaShop/pull/38586/">See more details</a>.</li>
+</ul>
+<p><strong>Improved hooks now let you:</strong></p>
+<ul>
+<li>Trigger logic after an order slip is created, e.g. for customization. <a href="https://github.com/PrestaShop/PrestaShop/pull/38491">See more details</a>.</li>
+<li>Add custom <code>.htaccess</code> rules more easily by having access to the generated file path. <a href="https://github.com/PrestaShop/PrestaShop/pull/37535">See more details</a>.</li>
+</ul>
+<h3 id="hooks-as-a-better-alternative-to-overrides">Hooks as a better alternative to overrides</h3>
+<p>One of the major advantages of adding new hooks to PrestaShop’s core is that they allow module developers to move away from using file overrides which are often fragile, hard to maintain, and incompatible across PrestaShop versions.
+With a proper hook in place, you can inject behavior or data at the right moment without touching core files. This improves forward compatibility and simplifies maintenance.
+But what if you still need to support older PrestaShop versions that don’t include these new hooks?
+The solution is simple: you can make your module smart enough to check the current PrestaShop version and conditionally skip installing overrides.
+Here’s how:
+In your module, override the <code>installOverrides()</code> method. Inside it, use <code>version_compare</code> to detect if the PrestaShop version in use already includes the hook. If so, skip installing the override:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">function</span> <span class="nf">installOverrides</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">version_compare</span><span class="p">(</span><span class="nx">_PS_VERSION_</span><span class="p">,</span> <span class="s1">&#39;8.2.2&#39;</span><span class="p">,</span> <span class="s1">&#39;&gt;=&#39;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// The hook exists in the core, no need for override
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Fallback to parent logic for older versions
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="k">parent</span><span class="o">::</span><span class="na">installOverrides</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This way, you can safely support both older and newer PrestaShop versions in a single module without compromising maintainability. As more hooks are added to the core, this approach will help reduce reliance on overrides across the ecosystem.</p>
+<h3 id="what-we-learned">What we learned</h3>
+<p>This initiative brought great energy to the project and demonstrated the strength of our community.</p>
+<p>✅ Contributions were easier to follow thanks to the automatic &ldquo;Hook contribution&rdquo; label.</p>
+<p>✅ The announcement during FoP Days encouraged many of you to jump in and participate.</p>
+<p>✅ Sharing updates on social media gave visibility to contributors and their work.</p>
+<p>✅ The updated documentation helped new contributors get started quickly.</p>
+<p>✅ We welcomed several new contributors - a clear sign that the project remains open and growing.</p>
+<p>Focusing on a single topic, like hooks, allowed us to streamline contributions and improve the validation process. It also helped us identify a few areas where we can still do better, particularly when it comes to reviewing submissions faster and planning around release timelines.</p>
+<p>We’ve taken note of these lessons and will use them to improve the next edition of this initiative.</p>
+<h3 id="thank-you-for-contributing">Thank you for contributing</h3>
+<p>This challenge was a success because of you - developers, agencies, and individuals who took the time to contribute, test, review, and share the initiative.</p>
+<p>Whether you submitted a pull request, helped others in discussions, or simply gave visibility to the project by sharing our updates: thank you.</p>
+<p>Every new hook merged into the core is a step toward a more modular, flexible, and future-proof PrestaShop. Your contributions have a direct impact on the ecosystem and help thousands of merchants and developers build better solutions.</p>
+<p><strong>We’re already preparing the next “Call for contributions” initiative</strong>, and we’ll be sharing the details very soon. Our goal is to keep improving the process, focus on meaningful topics, and give contributors even more opportunities to make a difference.</p>
+<p>Stay connected, and let’s keep building PrestaShop together.</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jul 2, 2025</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/contribute/">contribute</a>
+
+  <a class="label label-primary" href="/tag/community/">community</a>
+
+  <a class="label label-primary" href="/tag/contribution/">contribution</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/kpodemski/">Krystian Podemski</a>
+      <span>Tech Evangelist @ PrestaShop</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2025\/call-for-contributions-hooks-summary\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+
+</html>

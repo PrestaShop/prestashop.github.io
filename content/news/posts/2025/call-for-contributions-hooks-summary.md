@@ -57,7 +57,7 @@ Merged contributions came from:
 - [@unlocomqx](https://github.com/unlocomqx)  
 - [evolutive.com](https://evolutive.com)  
 - [pliciweb.com](https://pliciweb.com)  
-- [PrestaShop S.A.](https://prestashop.com)
+- [PrestaShop.com](https://prestashop.com)
 - [@Hlavtox](https://github.com/Hlavtox)
 - [Kiwik.com](https://kiwik.com)
 

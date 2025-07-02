@@ -32,7 +32,7 @@ Branch `8.2.x` is the branch that gave birth to PrestaShop 8.2.0 and the patches
 
 Following PrestaShop 9.0.0 release, the `8.2.x` branch has entered the security-only maintenance phase. It means that patch releases of PrestaShop 8.2.2 and newer will only be published if critical bugs are reported, if security fixes are needed or to introduce new hooks if needed.
 
-Consequently, please do not open a pull request against this branch unless it is a bug fix that solves a critical or security bug. Other pull requests will not be accepted.
+Consequently, please avoid opening pull requests against this branch unless they address critical or security-related bugs. While we aim to follow this policy strictly, we reserve the right to make exceptions or revise it if circumstances change.
 
 This maintenance period will end when PrestaShop 10.0.0 is released. When this day comes, PrestaShop 8.2 will not be maintained anymore.
 

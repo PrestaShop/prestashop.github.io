@@ -29,7 +29,7 @@ To make the process easier and more transparent:
 
 ### What we achieved
 
-Our initial goal was to add or improve at least 10 hooks, and we’re proud to say that we exceeded it, with 14 merged contributions 🚀.
+Our initial goal was to add or improve at least 10 hooks, and we’re proud to say that we exceeded it, with **[14 merged contributions](https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+is%3Amerged+label%3A%22Hook+Contribution%22)** 🚀.
 
 Even better, some contributions are still in the review or validation phase, meaning we’re likely to increase that number very soon.
 
@@ -51,12 +51,15 @@ Merged contributions came from:
 
 - [OpenServis.cz](https://openservis.cz)
 - [Creabilis.com](https://creabilis.com)
-- [griiv.fr](https://griiv.fr)  
+- [griiv.fr](https://griiv.fr) (2x)
 - [gurkcity.de](https://gurkcity.de) (2x)  
 - [arkonsoft.pl](https://arkonsoft.pl) (2x)  
 - [@unlocomqx](https://github.com/unlocomqx)  
 - [evolutive.com](https://evolutive.com)  
 - [pliciweb.com](https://pliciweb.com)  
+- [PrestaShop S.A.](https://prestashop.com)
+- [@Hlavtox](https://github.com/Hlavtox)
+- [Kiwik.com](https://kiwik.com)
 
 ### New and improved hooks
 
@@ -71,6 +74,14 @@ Merged contributions came from:
 - `actionCartDuplicate`  
 - `actionObjectDuplicateAfter`  
 - `actionPresentObject`  
+- `overrideImageLink`
+- `adaptImageLink`
+- `actionGetCartRuleContextualValue`
+- `actionApplyCartRule`
+- `actionModuleUpgradeAfter`
+- `actionModuleEnable`
+- `actionModuleDisable`
+- `additionalHtmlAttributesFormFields`
 
 **Improved hooks:**
 
@@ -82,16 +93,21 @@ Merged contributions came from:
 **New hooks will help you:**
 
 - Display custom data in previously limited areas (e.g. cart, customer account, PDFs).
-- Extend and modify how PDFs are rendered.
-- Extend order confirmation emails.
-- Alter product attribute rendering in the front office.
-- Run custom logic after duplicating carts or other entities.
-- Modify data presented via object presenters.
+- Extend and modify how PDFs are rendered. [See more details](https://github.com/PrestaShop/PrestaShop/pull/38487).
+- Extend order confirmation emails. [See more details](https://github.com/PrestaShop/PrestaShop/pull/38480).
+- Alter product attribute rendering in the front office. [See more details](https://github.com/PrestaShop/PrestaShop/pull/38408).
+- Run custom logic after duplicating carts or other entities. [See more details](https://github.com/PrestaShop/PrestaShop/pull/38371).
+- Modify data presented via object presenters. [See more details](https://github.com/PrestaShop/PrestaShop/pull/37947).
+- Override image link generation logic to customize image URLs. [See more details](https://github.com/PrestaShop/PrestaShop/pull/38952).
+- Custom cart rule application from modules. Allows to create infinite possibilities of rules. [See more details](https://github.com/PrestaShop/PrestaShop/pull/38881/).
+- React to module upgrades and enable/disable actions, allowing for custom logic when modules are updated or toggled. [See more details](https://github.com/PrestaShop/PrestaShop/pull/38839).
+- Add custom HTML attributes to form fields, enabling better integration with third-party libraries or custom scripts. [See more details](https://github.com/PrestaShop/PrestaShop/pull/38586/).
+
 
 **Improved hooks now let you:**
 
-- Trigger logic after an order slip is created, e.g. for customization.
-- Add custom `.htaccess` rules more easily by having access to the generated file path.
+- Trigger logic after an order slip is created, e.g. for customization. [See more details](https://github.com/PrestaShop/PrestaShop/pull/38491).
+- Add custom `.htaccess` rules more easily by having access to the generated file path. [See more details](https://github.com/PrestaShop/PrestaShop/pull/37535).
 
 ### Hooks as a better alternative to overrides
 One of the major advantages of adding new hooks to PrestaShop’s core is that they allow module developers to move away from using file overrides which are often fragile, hard to maintain, and incompatible across PrestaShop versions.

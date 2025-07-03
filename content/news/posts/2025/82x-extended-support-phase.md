@@ -46,7 +46,7 @@ Patches for branch `9.0.x` will be delivered until PrestaShop 9.1.0 is released.
 
 ### develop
 
-The `develop` branch is always the next minor or major release. As of today, code changes merged inside this branch will be shipped with the next minor PrestaShop 9 version: PrestaShop 9.1.0. When PrestaShop 9.1.0 feature freeze happens, a `9.1.x` branch will be created from `develop`, and `develop` will become the recipient for changes for the version after PrestaShop 9.1.0, version 10.0.0.
+The `develop` branch is always the next minor or major release. As of today, code changes merged inside this branch will be shipped with the next minor PrestaShop 9 version: PrestaShop 9.1.0. When PrestaShop 9.1.0 feature freeze happens, a `9.1.x` branch will be created from `develop`, and `develop` will become the recipient for changes for the version after PrestaShop 9.1.0: version 10.0.0.
 
 You can read more about a minor version lifecycle [here](https://build.prestashop-project.org/news/2020/ps17-minor-release-lifecycle/).
 

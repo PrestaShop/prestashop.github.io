@@ -24,7 +24,7 @@ The model was refined over the years, for example with [this developer documenta
 
 As of today, June 2025, what are the maintained branches and how do they comply with this model?
 
-On [PrestaShop main repository](https://github.com/prestashop/prestashop), three branches are maintained.
+On the [PrestaShop main repository](https://github.com/prestashop/prestashop), three branches are maintained.
 
 ### 8.2.x
 

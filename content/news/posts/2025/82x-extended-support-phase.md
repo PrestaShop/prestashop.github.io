@@ -18,7 +18,7 @@ Now that PrestaShop 9.0 is out, here is a focus on maintained branches of the Pr
 
 In [August 2015](https://build.prestashop-project.org/news/2015/introducing-new-branching-model-prestashop/) PrestaShop adopted a new branching model for the project.
 
-The model was refined over the years, for example with [this page on the developer documentation](https://devdocs.prestashop-project.org/9/contribute/contribution-guidelines/supported-branches/#bug-fixes-and-patch-branches) about what bugs do qualify for a patch version or the [Backward Compatibility Promise](https://github.com/PrestaShop/ADR/blob/master/0017-backward-compatibility-promise.md) that defines what changes can be introduced in a version, but we can say the model has lived quite well as the project is still following it in 2025.
+The model was refined over the years, for example with [this developer documentation page](https://devdocs.prestashop-project.org/9/contribute/contribution-guidelines/supported-branches/#bug-fixes-and-patch-branches) about which bugs qualify for a patch version or the [Backward Compatibility Promise](https://github.com/PrestaShop/ADR/blob/master/0017-backward-compatibility-promise.md) that defines which changes can be introduced in a version. We can say the model has lived quite well as the project is still following it in 2025.
 
 ## PrestaShop branches in 2025
 

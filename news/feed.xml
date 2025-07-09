@@ -6,7 +6,18 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop Core Monthly - June 2025</title>
+      <link>https://build.prestashop-project.org/news/2025/core-monthly-2025-06-01-2025-06-30/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/core-monthly-2025-06-01-2025-06-30/</guid>
+      <description>We are back with yet another edition of the PrestaShop Core Monthly, your monthly digest of the PrestaShop codebase&amp;rsquo;s latest changes and news from the PrestaShop project.
+PrestaShop 9.0.0 is out! 🎉 June marks the completion of one month since the PrestaShop 9.0.0 release, which is now available for download!
+This release is a major milestone for the PrestaShop project, as it brings a lot of new features and improvements. We hope you will enjoy it as much as we do.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.2.x is now in the extended support phase</title>
       <link>https://build.prestashop-project.org/news/2025/82x-extended-support-phase/</link>
@@ -149,16 +160,6 @@ First launched in 2012, this module takes a significant leap forward with this n
       <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
       <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.
 If your module depends on Guzzle, it will no longer be available by default in PrestaShop 9. In this article, we’ll explain why Guzzle was removed, what this means for your module, and how to migrate to a suitable alternative.</description>
-    </item>
-    
-    <item>
-      <title>Join the community at the FOP (Friends of Presta) Days in Paris</title>
-      <link>https://build.prestashop-project.org/news/2025/friends-of-presta-days-in-paris-2025/</link>
-      <pubDate>Wed, 19 Mar 2025 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/friends-of-presta-days-in-paris-2025/</guid>
-      <description>The Friends of Presta (FOP) Days is an event for PrestaShop and open source ecommerce enthusiasts. Taking place on March 26-27, 2025, at Le Nida, Issy-les-Moulineaux, in the Paris region, this event is dedicated to open source collaboration, technical innovation, and business insights dedicated to the PrestaShop community. You will be able to meet other professionals, exchange ideas, and contribute to the community&amp;rsquo;s future.
-Friends of Presta and the PrestaShop ecosystem This event is organized by Friends of Presta, which is a French non-profit and brings together developers, integrators and agencies, among other types of members.</description>
     </item>
     
   </channel>

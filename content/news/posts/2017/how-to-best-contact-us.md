@@ -4,6 +4,7 @@ aliases: ["/news/how-to-best-contact-us"]
 title:  "How to best contact us"
 subtitle: "Connect and Collaborate with the PrestaShop Teams"
 date:   2017-03-31 09:10:11
+lastmod: 2025-07-25
 authors: [ xavierborderie ]
 icon: icon-mail-stamp
 tags:
@@ -150,16 +151,15 @@ No software is perfect, and PrestaShop is no exception. Our team spends its whol
 
 We'd love to have you on the team! Join the ranks of users who help to improve PrestaShop: provide us with detailed report of any reproducible issue you stumble upon, and we'll do our best to get it fixed!
 
-Please use [this reference guide](https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/) to better understand what makes a great Github issue.
+Please use [this reference guide](https://www.prestashop-project.org/get-involved/report-issues/) to better understand what makes a great Github issue.
 
 Then, create your report for the right context. The Core team will review your report and answer back with any questions and /or ideas.
 
-* [PrestaShop 1.7 and modules](https://github.com/PrestaShop/PrestaShop/issues)
-* [PrestaShop 1.6 (now end of life)](https://github.com/PrestaShop/PrestaShop-1.6/issues)
+* [PrestaShop 9.x and modules](https://github.com/PrestaShop/PrestaShop/issues)
 
 Thank you for your contribution and support to the PrestaShop community!
 
-We also have [a Slack chat](https://github.com/PrestaShop/open-source/blob/master/slack/readme.md) for you to join, where you can chat with other contributors, and where the team sometimes hangs out :)
+We also have [a Slack chat](https://www.prestashop-project.org/slack/) for you to join, where you can chat with other contributors, and where the team sometimes hangs out :)
 
 
 #### Talking to the Addons team about bought modules/themes
@@ -187,9 +187,9 @@ The documentation site is also a wiki, so you can fix an issue directly!
 You will need an account for that: contact the team at documentation@prestashop.com and they will email you back.
 
 
-#### Contributing to the 1.7 Developer/Designer documentation
+#### Contributing to the 9.x Developer/Designer documentation
 
-The PrestaShop 1.7 techdocs (theme & modules) has a dedicated site, generated from static text files in order to be closer to what developers know.
+The PrestaShop 9.x techdocs (theme & modules) has a dedicated site, generated from static text files in order to be closer to what developers know.
 
 You can contribute to it through [the GitHub repository](https://github.com/PrestaShop/docs/issues). You can create issues AND pull requests. Thank you!
 
@@ -207,16 +207,15 @@ What’s not to like? :)
 
 Core contributors are expected to know the PrestaShop technologies and tools in order to best contribute:
 
-* PHP 5, MySQL 5, Smarty 3, etc.
+* PHP 7, MySQL 5, Smarty 3, etc.
 * Git and GitHub
-* Our [coding standards](https://devdocs.prestashop.com/1.7/development/coding-standards/)
-* Our [commit convention](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/)
+* Our [coding standards](https://devdocs.prestashop-project.org/9/development/coding-standards/)
+* Our [commit convention](https://devdocs.prestashop-project.org/9/contribute/contribution-guidelines/)
 
 Got everything set up? Find the branch you want to work with:
 
-* [Current development branch](https://github.com/PrestaShop/PrestaShop/tree/develop) (for the next 1.7 minor version).
-* [Current 1.6.1.x branch](https://github.com/PrestaShop/PrestaShop-1.6).
-
+* [Current development branch](https://github.com/PrestaShop/PrestaShop/tree/develop).
+* [Current branch](https://github.com/PrestaShop/PrestaShop/tree/9.0.x).
 
 #### To the Addons catalog
 

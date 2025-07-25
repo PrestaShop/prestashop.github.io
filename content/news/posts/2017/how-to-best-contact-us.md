@@ -4,6 +4,7 @@ aliases: ["/news/how-to-best-contact-us"]
 title:  "How to best contact us"
 subtitle: "Connect and Collaborate with the PrestaShop Teams"
 date:   2017-03-31 09:10:11
+lastmod: 2025-07-25
 authors: [ xavierborderie ]
 icon: icon-mail-stamp
 tags:

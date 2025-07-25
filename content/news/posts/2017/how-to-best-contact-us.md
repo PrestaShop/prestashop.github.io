@@ -208,8 +208,8 @@ Core contributors are expected to know the PrestaShop technologies and tools in 
 
 * PHP 7, MySQL 5, Smarty 3, etc.
 * Git and GitHub
-* Our [coding standards](https://devdocs.prestashop.com/1.7/development/coding-standards/)
-* Our [commit convention](https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/)
+* Our [coding standards](https://devdocs.prestashop-project.org/9/development/coding-standards/)
+* Our [commit convention](https://devdocs.prestashop-project.org/9/contribute/contribution-guidelines/)
 
 Got everything set up? Find the branch you want to work with:
 

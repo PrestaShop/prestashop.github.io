@@ -7,7 +7,7 @@ authors: [ PrestaShop ]
 icon: icon-leaf
 tags: [news, event, psdevcon, community]
 ---
-We are very excited to announce that the call for presentations is now open for the third edition of the PrestaShop Developer Conference, happening on the week of November 3, 2025 (exact date to be confirmed) and either virtually or in-person.
+We are very excited to announce that the call for presentations is now open for the third edition of the PrestaShop Developer Conference, happening on November 19, 2025 in Paris, France and virtually.
 
 This event is your chance to engage with the tech community, participate in discussions, explore more practical solutions, and connect with other professionals from the community.
 
@@ -52,4 +52,4 @@ Keeping shops secure, accessible, and compliant with modern web standards and re
 ### Ready to speak? Submit your proposal
 To submit your presentation, [fill out the submission form](https://forms-prestashop.typeform.com/to/gqoXjaLY). **The deadline for submission is September 5, 2025 at 6PM**.
 
-**Join us in November 2025** for a day of learning, sharing, and connecting with the PrestaShop community. Whether you're writing code, shaping product strategy, or leading teams, this is your chance to grow, get inspired, and make your voice heard!
+**Join us on November 19, 2025** for a day of learning, sharing, and connecting with the PrestaShop community. Whether you're writing code, shaping product strategy, or leading teams, this is your chance to grow, get inspired, and make your voice heard!

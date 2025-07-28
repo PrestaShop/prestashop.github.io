@@ -30,7 +30,7 @@ As part of the Call for Contributions challenge, PrestaShop 8.2.2 includes sever
 
 ## What's new in PrestaShop 8.2.2?
 
-This release includes a variety of improvements and bug fixes across different areas of PrestaShop, including the Back Office, Front Office, Core, Installer, and Web Services. Here are some highlights:
+This release includes a variety of improvements and bug fixes across different areas of PrestaShop, including the back office, front office, core, installer, and web services. Here are some highlights:
 
 ### Back Office
 
@@ -43,7 +43,7 @@ This release includes a variety of improvements and bug fixes across different a
 
 - The HelperCard now uses v8 documentation for better alignment with the current version. [More info](https://github.com/PrestaShop/PrestaShop/pull/38717).
 - Improved regex in `StringModifier` for better string handling. [See changes](https://github.com/PrestaShop/PrestaShop/pull/38634).
-- Autofill of passwords has been disabled when editing customer details in the Back Office. [Read more](https://github.com/PrestaShop/PrestaShop/pull/38773).
+- Autofill of passwords has been disabled when editing customer details in the back office. [Read more](https://github.com/PrestaShop/PrestaShop/pull/38773).
 - Mail template directories are now checked before reading, preventing errors. [Details](https://github.com/PrestaShop/PrestaShop/pull/38073).
 - Improved tax rule selection query for better performance. [See changes](https://github.com/PrestaShop/PrestaShop/pull/38251).
 
@@ -51,9 +51,9 @@ This release includes a variety of improvements and bug fixes across different a
 
 - Support added for brands named as numbers. [Fix details](https://github.com/PrestaShop/PrestaShop/pull/38810).
 - Corrected misleading maximum attachment upload size in advanced settings. [Learn more](https://github.com/PrestaShop/PrestaShop/pull/38549).
-- Resolved error related to displaying the product price in Back Office in some scenarios. [See fix](https://github.com/PrestaShop/PrestaShop/pull/37933).
+- Resolved error related to displaying the product price in back office in some scenarios. [See fix](https://github.com/PrestaShop/PrestaShop/pull/37933).
 - Fixed the configuration for maximum file size in the product form. [Details](https://github.com/PrestaShop/PrestaShop/pull/38982).
-- Addressed issues with translations saving process in the Back Office. [More info](https://github.com/PrestaShop/PrestaShop/pull/38593).
+- Addressed issues with translations saving process in the back office. [More info](https://github.com/PrestaShop/PrestaShop/pull/38593).
 - Resolved errors with CMS page creation in multistore setups. [Fix details](https://github.com/PrestaShop/PrestaShop/pull/38532).
 - Corrected password policy to align with bcrypt limitations. [Learn more](https://github.com/PrestaShop/PrestaShop/pull/38337).
 - Fixed refund functionality for orders linked to deleted customers. [Details](https://github.com/PrestaShop/PrestaShop/pull/38581).

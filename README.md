@@ -91,8 +91,8 @@ This blog is not for support. If you need help, you can search [our forum](http:
 
 **Feature requests**
 
-If you want to see some feature added to PrestaShop, please open an 'Improvement' ticket on [Github](https://github.com/PrestaShop/PrestaShop/issues/new?template=feature_request.md).
+If you want to see some feature added to PrestaShop, please open an 'Improvement' ticket on [Github](https://github.com/PrestaShop/PrestaShop/discussions/new?category=ideas).
 
 **Bug report**
 
-If you find a bug or something that doesn't work as expected, please open a 'Bug' ticket on [Github](https://github.com/PrestaShop/PrestaShop/issues/new?template=bug_report.md).
+If you find a bug or something that doesn't work as expected, please open a 'Bug' ticket on [Github](https://github.com/PrestaShop/PrestaShop/issues/new?template=1_bug_report.yml).

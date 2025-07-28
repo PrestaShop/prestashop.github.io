@@ -6,7 +6,18 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Jul 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.2.2 is available</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-8-2-2-maintenance-release/</link>
+      <pubDate>Mon, 28 Jul 2025 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-8-2-2-maintenance-release/</guid>
+      <description>PrestaShop 8.2.2 is here! This latest patch version brings a range of updates, addressing reported issues and introducing enhancements to improve the platform for merchants and developers alike.
+We are happy to announce the release of PrestaShop 8.2.2, a patch version that not only resolves numerous bugs reported by our dedicated community and Quality Assurance team but also introduces some improvements.
+As part of the Call for Contributions challenge, PrestaShop 8.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Core Monthly - June 2025</title>
       <link>https://build.prestashop-project.org/news/2025/core-monthly-2025-06-01-2025-06-30/</link>
@@ -150,16 +161,6 @@ Collaboration and improving expertise Organized by Friends of Presta, a French n
       <guid>https://build.prestashop-project.org/news/2025/autoupgrade-v7.0-release/</guid>
       <description>We are pleased to introduce the latest major release of the Update Assistant module (formerly known as 1-Click Upgrade).
 First launched in 2012, this module takes a significant leap forward with this new version, which is the result of several months of development and over 350 merged Pull Requests. As announced at the PrestaShop Developer Conference and on the Live Update in November 2024, this release pushes the boundaries of PrestaShop store updates even further.</description>
-    </item>
-    
-    <item>
-      <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
-      <link>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</link>
-      <pubDate>Thu, 20 Mar 2025 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
-      <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.
-If your module depends on Guzzle, it will no longer be available by default in PrestaShop 9. In this article, we’ll explain why Guzzle was removed, what this means for your module, and how to migrate to a suitable alternative.</description>
     </item>
     
   </channel>

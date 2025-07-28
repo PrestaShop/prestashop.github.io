@@ -103,7 +103,7 @@ PrestaShop 8.2.2 brings these updates and more to enhance your experience. For a
 
 We strongly encourage you to update your shop to PrestaShop 8.2.2 promptly to benefit from the extensive bug fixes and enhancements included in this release. Prior to updating, make sure to create a full backup of your shop to safeguard your data.
 
-Updating to the latest version of PrestaShop 8.2.x is straightforward with the [Update Assistant](https://github.com/PrestaShop/autoupdate/releases/). This tool streamlines the update process, ensuring your shop remains current with minimal effort and maximum reliability.
+Updating to the latest version of PrestaShop 8.2.x is straightforward with the [Update Assistant](https://github.com/PrestaShop/autoupgrade/releases). This tool streamlines the update process, ensuring your shop remains current with minimal effort and maximum reliability.
 
 As highlighted in our recent article ([PrestaShop 8.2.x enters the extended support phase]({{< relref "/news/posts/2025/82x-extended-support-phase" >}})), **version 8.2.x will now only receive security patches and critical updates**. To take advantage of the latest features and enhancements, we recommend starting your migration plan to PrestaShop 9.
 

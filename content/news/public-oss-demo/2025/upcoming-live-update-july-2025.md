@@ -17,7 +17,7 @@ Yet another Live Update for the PrestaShop Project in 2025 will be hosted on **W
 
 Join us for the upcoming Live Update, where we will share exciting news about the PrestaShop Project! 
 
-We will provide a summary of the **Call for Contributions: Hooks Initiative**, highlighting the community's efforts and achievements. Additionally, we are excited to announce a brand-new initiative, so stay tuned for all the details!
+We will provide a summary of the **Call for Contributions: Hooks Initiative**, highlighting the community's efforts and achievements.
 
 But that's not all! One of the highlights of this session will be an exclusive presentation on the highly anticipated **One Page Checkout** feature, coming in PrestaShop 9.1. This feature aims to revolutionize the checkout experience, making it faster and more user-friendly.
 

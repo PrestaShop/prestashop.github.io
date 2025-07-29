@@ -11,11 +11,11 @@ icon: icon-video-camera
 tags: [contribute, event, community, live-update]
 ---
 
-Yet another Live Update for the PrestaShop Project in 2025 will be hosted on **Wednesday, July 30th, 2025** at [4pm (Paris time)](https://time.is/1600_30_Jul_2025_in_Paris) on [YouTube](https://www.youtube.com/watch?v=GqfSJD3MYF4)!
+Yet another Live Update for the PrestaShop Project in 2025 will be hosted on **Wednesday, July 30th, 2025**, at [4 PM (Paris time)](https://time.is/1600_30_Jul_2025_in_Paris) on [YouTube](https://www.youtube.com/watch?v=GqfSJD3MYF4)!
 
 ![PrestaShop Project Live Update](/assets/images/live-update/liveupdate-banner-linkedin.png)
 
-Join us for the upcoming Live Update where we will share exciting news about the PrestaShop Project! 
+Join us for the upcoming Live Update, where we will share exciting news about the PrestaShop Project! 
 
 We will provide a summary of the **Call for Contributions: Hooks Initiative**, highlighting the community's efforts and achievements. Additionally, we are excited to announce a brand-new initiative, so stay tuned for all the details!
 
@@ -28,6 +28,6 @@ Don't miss this opportunity to stay updated and be part of the conversation!
 Remember that at the end of every meeting, there is a Q&A session. You can ask your questions during the presentation or beforehand.
 **If you have questions related to the open source project**, feel free to let us know in advance [using this form](https://forms.gle/FWazuZnXBtFPauFZ7). We will do our best to answer them during the Q&A session.
 
-The session will be kept in record on YouTube, so even if you can't attend the live stream, you will still be able to catch up later.
+The session will be recorded on YouTube, so even if you can't attend the live stream, you will still be able to catch up later.
 
 See you then!

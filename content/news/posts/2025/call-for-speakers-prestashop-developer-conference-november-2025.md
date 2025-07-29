@@ -7,7 +7,7 @@ authors: [ PrestaShop ]
 icon: icon-leaf
 tags: [news, event, psdevcon, community]
 ---
-We are very excited to announce that the call for presentations is now open for the third edition of the PrestaShop Developer Conference, happening on November 19, 2025 in Paris, France and virtually.
+We are very excited to announce that the call for presentations is now open for the third edition of the PrestaShop Developer Conference, taking place in Paris on November 19, 2025, in a hybrid format, with both onsite and online attendance options.
 
 This event is your chance to engage with the tech community, participate in discussions, explore more practical solutions, and connect with other professionals from the community.
 

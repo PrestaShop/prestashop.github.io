@@ -19,7 +19,7 @@ Join us for the upcoming Live Update, where we will share exciting news about th
 
 We will provide a summary of the **Call for Contributions: Hooks Initiative**, highlighting the community's efforts and achievements.
 
-But that's not all! One of the highlights of this session will be an exclusive presentation on the highly anticipated **One Page Checkout** feature, coming in PrestaShop 9.1. This feature aims to revolutionize the checkout experience, making it faster and more user-friendly.
+But that's not all! One of the highlights of this session will be an exclusive presentation on the highly anticipated **One Page Checkout** feature, coming in PrestaShop 9.1. This feature aims to revolutionize the checkout experience in PrestaShop, making it faster and more user-friendly.
 
 Don't miss this opportunity to stay updated and be part of the conversation!
 

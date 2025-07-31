@@ -21,7 +21,7 @@ On July 30th, 2025, we hosted another Live Update for the PrestaShop Project, hi
 
 ## The session's agenda was as follows:
 
-- [00:00](https://youtu.be/GqfSJD3MYF4) Beginning of the session: the introduction
+- [00:00](https://youtu.be/GqfSJD3MYF4) Beginning of the session: introduction
 - [02:21](https://youtu.be/GqfSJD3MYF4?t=141) Project news: PrestaShop 9.0 is available
 - [10:23](https://youtu.be/GqfSJD3MYF4?t=623) Project news: PrestaShop 8.2.2 release
 - [12:43](https://youtu.be/GqfSJD3MYF4?t=763) Hummingbird 2 - progress and roadmap
@@ -43,7 +43,7 @@ We answered several community-submitted questions covering:
 
 If you have questions for the next session, use [this form](https://forms.gle/FWazuZnXBtFPauFZ7).
 
-{{< cta "https://www.youtube.com/watch?v=GqfSJD3MYF4" "info" >}}Watch replay on YouTube{{< /cta >}}
+{{< cta "https://www.youtube.com/watch?v=GqfSJD3MYF4" "info" >}}Watch the replay on YouTube{{< /cta >}}
 
 ## Links shared during the event
 
@@ -63,12 +63,13 @@ If you have questions for the next session, use [this form](https://forms.gle/FW
 
 **Admin API**
 - [Admin API documentation](https://devdocs.prestashop-project.org/9/api/admin-api/)
-- [Admin API - keycloak integration example](https://github.com/PrestaShop/keycloak_connector_demo) & [documentation](https://devdocs.prestashop-project.org/9/admin-api/authorization_server/external_authorization/)
+- [Admin API - Keycloak integration example](https://github.com/PrestaShop/keycloak_connector_demo) & [documentation](https://devdocs.prestashop-project.org/9/admin-api/authorization_server/external_authorization/)
 
-We will be sharing article announcing the new Call for Contributions for Admin API in the coming days, so stay tuned!
+We will be sharing an article announcing the new Call for Contributions for Admin API in the coming days, so stay tuned!
 
 ## Next Live Update
 
 Stay tuned for announcements on the next Live Update session. We’ll continue to share progress on PrestaShop 9.1 and the evolution of the open source project. The date is not set yet, but we will keep you posted.
 
 See you next time!
+

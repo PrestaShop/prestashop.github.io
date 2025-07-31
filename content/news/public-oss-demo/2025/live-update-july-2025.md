@@ -67,6 +67,10 @@ If you have questions for the next session, use [this form](https://forms.gle/FW
 
 We will be sharing an article announcing the new Call for Contributions for Admin API in the coming days, so stay tuned!
 
+## Slides and resources
+
+You can find the slides presented during the Live Update session [here](https://docs.google.com/presentation/d/1TdzHrAKUYJeQ_fsVCy4Pkjv0BQUti5ERQqKFLvm5V80/edit?usp=sharing).
+
 ## Next Live Update
 
 Stay tuned for announcements on the next Live Update session. We’ll continue to share progress on PrestaShop 9.1 and the evolution of the open source project. The date is not set yet, but we will keep you posted.

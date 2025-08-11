@@ -35,7 +35,7 @@ Project members will begin reviewing contributions for the Admin API initiative 
 
 - [Admin API documentation](https://devdocs.prestashop-project.org/9/admin-api/)
 - [How to contribute a new endpoint](https://devdocs.prestashop-project.org/9/admin-api/contribute-to-core-api/)
-- [Meet PrestaShop 9 Admin API - user guide](/news/posts/2024/meet-prestashop9-api)
+- [Meet PrestaShop 9 Admin API - user guide]({{< relref "/news/posts/2024/meet-prestashop9-api" >}})
 - [How to use the new Admin API](https://devdocs.prestashop-project.org/9/admin-api/how-to-use/)
 - [List of existing endpoints](https://devdocs.prestashop-project.org/9/admin-api/swagger-doc/)
 

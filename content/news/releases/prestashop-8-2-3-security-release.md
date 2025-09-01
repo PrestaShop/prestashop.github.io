@@ -16,7 +16,7 @@ tags:
 - "8.2.x"
 ---
 
-PrestaShop 8.2.3 is a security‑driven patch release for the 8.2 branch. Its primary goal is to address an email enumeration vulnerability in the back office password reset feature. A handful of low-risk improvements and bug fixes that have already been validated have also been included.
+PrestaShop 8.2.3 is available. It is a security‑driven patch release for the 8.2 branch. Its primary goal is to address an email enumeration vulnerability in the back office password reset feature. A handful of low-risk improvements and bug fixes that have already been validated have also been included.
 
 ![PrestaShop 8.2.3 is available!](/assets/images/2025/09/banner_8.2.3_1534x424.jpg)
 
@@ -36,9 +36,9 @@ Update to 8.2.3 or apply the manual patch below. Full details are available in t
 
 It is recommended to update to version 8.2.3 as soon as possible. The [Update Assistant](https://github.com/PrestaShop/autoupgrade/releases/) makes the update process mostly point-and-click: enable maintenance mode, run the update, review logs, test, and then reopen your store.
 
-Since (as noted in [PrestaShop 8.2.x enters the extended support phase]({{< relref "/news/posts/2025/82x-extended-support-phase" >}})) the 8.2.x branch receives only security and critical fixes now. You should begin planning your move to PrestaShop 9 to gain new features and its strengthened security architecture.
-
-If you encounter an issue that appears to be a core problem (not caused by custom modules, overrides, or themes), please [open a bug report](https://www.prestashop-project.org/get-involved/report-issues/) with clear reproduction steps.
+{{% notice %}}
+If you're on PrestaShop 8 with PHP 8, updating to PrestaShop 8.2.3 requires either downgrading to PHP 7.4 (for the time of update) or selecting the Local archive option. This limitation is known and will be addressed in future versions of the Update Assistant. 
+{{% /notice %}}
 
 ## Download
 {{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/8.2.3" >}}Download PrestaShop 8.2.3 now!{{< /cta >}}
@@ -59,6 +59,8 @@ Remember: these steps reduce risk but do not replace updating or fixing the unde
 ## PrestaShop 9
 
 PrestaShop 9, built on a modern Symfony flow for authentication and password resets, is not affected by this issue. We encourage merchants to plan their migration to benefit from its hardened security architecture and ongoing feature development.
+
+Since (as noted in [PrestaShop 8.2.x enters the extended support phase]({{< relref "/news/posts/2025/82x-extended-support-phase" >}})) the 8.2.x branch receives only security and critical fixes now. You should begin planning your move to PrestaShop 9 to gain access to new features and its enhanced security architecture.
 
 ## Manual patch instructions (advanced users)
 
@@ -114,3 +116,4 @@ We extend our sincere thanks to:
 * [@Codencode](https://github.com/Codencode), [@touxten](https://github.com/touxten) for their bug fix contributions included in this release.
 
 Your collaboration helps keep the ecosystem secure.
+

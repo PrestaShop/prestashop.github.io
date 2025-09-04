@@ -6,7 +6,17 @@
     <description>Recent content in patch on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Jul 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.2.3 is available</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-8-2-3-security-release/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-8-2-3-security-release/</guid>
+      <description>PrestaShop 8.2.3 is available. It is a security‑driven patch release for the 8.2 branch. Its primary goal is to address an email enumeration vulnerability in the back office password reset feature. A handful of low-risk improvements and bug fixes that have already been validated have also been included.
+Why this release now? PrestaShop 8.2 is in the extended support phase, so only security and critical fixes are shipped. Over the past days, we observed (via community reports and partners) automated probes abusing the back office password reset page to enumerate employee emails.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.2.2 is available</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-8-2-2-maintenance-release/</link>
@@ -156,16 +166,6 @@ PrestaShop 8.0.4 is now available. This time there are three security fixes than
       <description>Security patch for PrestaShop 1.7 is now available.
 As part of the extended support policy for PrestaShop 1.7, which involves taking care of critical and security fixes for 1.7.8.x branch, we are releasing today a new patch for this version. This release fixes a few security issues reported by community researchers and upgrades some third-party libraries to their latest versions to ensure the stability and security of your shop.
 It is recommended to upgrade your shop quickly in order to benefit from these fixes.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.0.3 is available</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</link>
-      <pubDate>Mon, 03 Apr 2023 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</guid>
-      <description>The third patch version for PrestaShop 8 is now available to download!
-It was a rather bumpy road at the end because of issues we found during the release process, but here it is! In the newest patch version for PrestaShop 8 you can find a security improvement, and three fixes: one related to inaccurate wording in web services configuration, one which fixes the link to the user documentation in the installer, and one significant fix which improves how clearing the cache behaves in the software.</description>
     </item>
     
   </channel>

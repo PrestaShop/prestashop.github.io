@@ -6,7 +6,17 @@
     <description>Recent content in security on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jan 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/security/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/security/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.2.3 is available</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-8-2-3-security-release/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-8-2-3-security-release/</guid>
+      <description>PrestaShop 8.2.3 is available. It is a security‑driven patch release for the 8.2 branch. Its primary goal is to address an email enumeration vulnerability in the back office password reset feature. A handful of low-risk improvements and bug fixes that have already been validated have also been included.
+Why this release now? PrestaShop 8.2 is in the extended support phase, so only security and critical fixes are shipped. Over the past days, we observed (via community reports and partners) automated probes abusing the back office password reset page to enumerate employee emails.</description>
+    </item>
+    
     <item>
       <title>SQL Injection attacks alert and security enhancements for PrestaShop</title>
       <link>https://build.prestashop-project.org/news/2025/sql-injection-attacks-alert-and-security-enhancements-for-prestashop/</link>
@@ -158,16 +168,6 @@ Why this program Bug bounties are used by many leading companies to improve the 
       <guid>https://build.prestashop-project.org/news/2020/prestashop-1-7-6-6-maintenance-release/</guid>
       <description>The ongoing work on security for PrestaShop software continues. We have identified and fixed new minor security issues and since we don&amp;rsquo;t expect PrestaShop 1.7.7.0 final to be released before a few weeks, it has been decided to deliver a new maintenance release for 1.7.6.X branch.
 Similarly to 1.7.6.5, this maintenance release fixes not only regressions found on versions 1.7.6.0 to 1.7.6.5, but also a few security issues from 1.5, 1.</description>
-    </item>
-    
-    <item>
-      <title>We were at Google&#39;s CMS Security Summit 2020</title>
-      <link>https://build.prestashop-project.org/news/2020/cms-security-summit/</link>
-      <pubDate>Thu, 04 Jun 2020 17:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2020/cms-security-summit/</guid>
-      <description>Once again, open source CMSs Security leads shared knowledge together last February at an event organized by Google in Munich.
-Lightning talks &amp;amp; Security technologies After spending the first evening with stakeholders and meeting the newcomers over a few beers, the attendees and I spent two days at Google&amp;rsquo;s Munich office and Information Security Hub (ISH) to talk about what we have achieved since last year and about what&amp;rsquo;s coming. And of course we learned a lot about each other.</description>
     </item>
     
   </channel>

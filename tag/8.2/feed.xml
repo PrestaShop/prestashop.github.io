@@ -6,7 +6,17 @@
     <description>Recent content in 8.2 on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Jul 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/8.2/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/8.2/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.2.3 is available</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-8-2-3-security-release/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-8-2-3-security-release/</guid>
+      <description>PrestaShop 8.2.3 is available. It is a security‑driven patch release for the 8.2 branch. Its primary goal is to address an email enumeration vulnerability in the back office password reset feature. A handful of low-risk improvements and bug fixes that have already been validated have also been included.
+Why this release now? PrestaShop 8.2 is in the extended support phase, so only security and critical fixes are shipped. Over the past days, we observed (via community reports and partners) automated probes abusing the back office password reset page to enumerate employee emails.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.2.2 is available</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-8-2-2-maintenance-release/</link>

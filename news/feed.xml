@@ -6,7 +6,17 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Aug 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 8.2.3 is available</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-8-2-3-security-release/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-8-2-3-security-release/</guid>
+      <description>PrestaShop 8.2.3 is available. It is a security‑driven patch release for the 8.2 branch. Its primary goal is to address an email enumeration vulnerability in the back office password reset feature. A handful of low-risk improvements and bug fixes that have already been validated have also been included.
+Why this release now? PrestaShop 8.2 is in the extended support phase, so only security and critical fixes are shipped. Over the past days, we observed (via community reports and partners) automated probes abusing the back office password reset page to enumerate employee emails.</description>
+    </item>
+    
     <item>
       <title>Meet the PrestaShop Wall of Fame</title>
       <link>https://build.prestashop-project.org/news/2025/meet-prestashop-wall-of-fame/</link>
@@ -154,16 +164,6 @@ PrestaShop 9.0 Release Candidate 1 This version marks the final stage before the
       <description>Application security is often a forgotten aspect of the digital world. Everyone agrees that it is essential, but no one really wants to face its consequences. Today, in this guest blog post, it&amp;rsquo;s time to share the truths that no one wants to say.
 This PrestaShop Developer Conference 2024 guest blog post is authored by Vincent Guesnard from TouchWeb and summarizes the presentation given during the event.
 1. Why does no one want to publish vulnerabilities?</description>
-    </item>
-    
-    <item>
-      <title>Codencode agency - contributing to work more sustainably over time</title>
-      <link>https://build.prestashop-project.org/news/2025/codencode-agency-contributor-interview/</link>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/codencode-agency-contributor-interview/</guid>
-      <description>Ever wondered who&amp;rsquo;s behind a GitHub username? Now’s your chance to find out! Contributor interviews, like the one you are about to read, let you connect with the people driving the PrestaShop project forward.
-Meet Paolo and CODENCODE Dear readers, meet Paolo from CODENCODE. Paolo has been one of the most active members of the community in recent months. We wanted to get to know him and his company and understand what motivated him to contribute to the PrestaShop project.</description>
     </item>
     
   </channel>

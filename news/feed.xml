@@ -6,7 +6,17 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Sep 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop Core Monthly - August 2025</title>
+      <link>https://build.prestashop-project.org/news/2025/core-monthly-2025-08-01-2025-08-31/</link>
+      <pubDate>Wed, 17 Sep 2025 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/core-monthly-2025-08-01-2025-08-31/</guid>
+      <description>Welcome to the August edition of Core Monthly. This month brought an important security patch for 8.2, a new community feature in the back office, and a fresh call for contributions to expand the Admin API in PrestaShop 9.
+Security: PrestaShop 8.2.3 A security-driven patch release for PrestaShop 8.2 is out. Version 8.2.3 fixes an email enumeration vulnerability on the back office password reset page. While PrestaShop 9 is not affected, we strongly recommend updating if you are on the 8.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 8.2.3 is available</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-8-2-3-security-release/</link>
@@ -153,17 +163,6 @@ PrestaShop 9 is here! After over two years of development and collaboration with
       <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-rc1/</guid>
       <description>The first Release Candidate of PrestaShop 9.0 is now available for testing. This is a significant milestone in the development cycle, and we encourage all users to test it thoroughly.
 PrestaShop 9.0 Release Candidate 1 This version marks the final stage before the stable release. It includes all planned features, improvements, and changes introduced since the alpha and beta phases — including the new Hummingbird theme, Admin API, PHP 8.4 and Symfony 6.</description>
-    </item>
-    
-    <item>
-      <title>PSDevCon2024: Cybersecurity – What No One Dares to Say</title>
-      <link>https://build.prestashop-project.org/news/2025/PSDevCon2024-Cybersecurity-presentation/</link>
-      <pubDate>Wed, 30 Apr 2025 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/PSDevCon2024-Cybersecurity-presentation/</guid>
-      <description>Application security is often a forgotten aspect of the digital world. Everyone agrees that it is essential, but no one really wants to face its consequences. Today, in this guest blog post, it&amp;rsquo;s time to share the truths that no one wants to say.
-This PrestaShop Developer Conference 2024 guest blog post is authored by Vincent Guesnard from TouchWeb and summarizes the presentation given during the event.
-1. Why does no one want to publish vulnerabilities?</description>
     </item>
     
   </channel>

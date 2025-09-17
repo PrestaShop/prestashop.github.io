@@ -6,7 +6,17 @@
     <description>Recent content in kpodemski on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Aug 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/kpodemski/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Sep 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/kpodemski/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop Core Monthly - August 2025</title>
+      <link>https://build.prestashop-project.org/news/2025/core-monthly-2025-08-01-2025-08-31/</link>
+      <pubDate>Wed, 17 Sep 2025 00:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/core-monthly-2025-08-01-2025-08-31/</guid>
+      <description>Welcome to the August edition of Core Monthly. This month brought an important security patch for 8.2, a new community feature in the back office, and a fresh call for contributions to expand the Admin API in PrestaShop 9.
+Security: PrestaShop 8.2.3 A security-driven patch release for PrestaShop 8.2 is out. Version 8.2.3 fixes an email enumeration vulnerability on the back office password reset page. While PrestaShop 9 is not affected, we strongly recommend updating if you are on the 8.</description>
+    </item>
+    
     <item>
       <title>Meet the PrestaShop Wall of Fame</title>
       <link>https://build.prestashop-project.org/news/2025/meet-prestashop-wall-of-fame/</link>
@@ -151,16 +161,6 @@ Want to stay up to date with the latest developments in the PrestaShop project? 
       <guid>https://build.prestashop-project.org/news/2025/live-update-january-2025/</guid>
       <description>On January 29th, 2025, we hosted another Live Update for the PrestaShop Project with the latest news, announcements, and had the pleasure to host Software Components Squad members from PrestaShop SA.
 PrestaShop Live Update - January 2025 During this Live Update, you could learn about the upcoming PrestaShop 9 Beta 1 status, and the patch for PrestaShop 8.2. We also talked about the new experiment called &amp;ldquo;Targeted Contributions&amp;rdquo;, which is our idea on how to streamline the process of contributing to the project.</description>
-    </item>
-    
-    <item>
-      <title>Announcing PrestaShop Project Live Update January 2025</title>
-      <link>https://build.prestashop-project.org/news/2025/upcoming-live-update-january-2025/</link>
-      <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/upcoming-live-update-january-2025/</guid>
-      <description>The first Live Update for the PrestaShop Project in 2025 will be hosted on Wednesday, January 29th, 2025 at 4pm (Paris time) on YouTube!
-Join us for the upcoming Live Update where we will share the latest advancements in the PrestaShop Project. This session is a fantastic opportunity to connect with the Software Components Squad from PrestaShop SA. Learn about their ongoing work and the exciting improvements planned for the multicarrier feature in PrestaShop!</description>
     </item>
     
   </channel>

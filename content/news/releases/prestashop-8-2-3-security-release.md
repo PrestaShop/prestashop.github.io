@@ -77,20 +77,18 @@ The patch ensures that:
 In simplified form, the corrected code now resembles:
 
 ```php
+// For reset password feature
 $reset_token = Tools::getValue('reset_token');
-$id_employee = (int) Tools::getValue('id_employee');
+$id_employee = Tools::getValue('id_employee');
+if ($reset_token !== false && $id_employee !== false) {
+	$this->context->smarty->assign('reset_token', $reset_token);
+	$this->context->smarty->assign('id_employee', $id_employee);
 
-if ($reset_token && $id_employee) {
 	$employee = new Employee($id_employee);
-	if (Validate::isLoadedObject($employee)) {
-		$valid_reset_token = $employee->getValidResetPasswordToken();
-		if ($valid_reset_token !== false && $valid_reset_token === $reset_token) {
-			$this->context->smarty->assign([
-				'reset_token' => $reset_token,
-				'id_employee' => $id_employee,
-				'reset_email' => $employee->email,
-			]);
-		}
+	$valid_reset_token = $employee->getValidResetPasswordToken();
+
+	if ($valid_reset_token !== false && $valid_reset_token === $reset_token) {
+		$this->context->smarty->assign('reset_email', $employee->email);
 	}
 }
 ```

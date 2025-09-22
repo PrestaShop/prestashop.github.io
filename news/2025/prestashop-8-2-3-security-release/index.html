@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>PrestaShop 8.2.3 is available</title>
-    <link href="/style.css?1758103965" rel="stylesheet">
+    <link href="/style.css?1758535646" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -244,20 +244,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li>Only then are the <code>reset_email</code>, <code>reset_token</code>, and <code>id_employee</code> values assigned to the template. Otherwise, nothing is revealed that confirms an association between an email and an employee.</li>
 </ol>
 <p>In simplified form, the corrected code now resembles:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$reset_token</span> <span class="o">=</span> <span class="nx">Tools</span><span class="o">::</span><span class="na">getValue</span><span class="p">(</span><span class="s1">&#39;reset_token&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$id_employee</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="nx">Tools</span><span class="o">::</span><span class="na">getValue</span><span class="p">(</span><span class="s1">&#39;id_employee&#39;</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="c1">// For reset password feature
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$reset_token</span> <span class="o">=</span> <span class="nx">Tools</span><span class="o">::</span><span class="na">getValue</span><span class="p">(</span><span class="s1">&#39;reset_token&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$id_employee</span> <span class="o">=</span> <span class="nx">Tools</span><span class="o">::</span><span class="na">getValue</span><span class="p">(</span><span class="s1">&#39;id_employee&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nv">$reset_token</span> <span class="o">!==</span> <span class="k">false</span> <span class="o">&amp;&amp;</span> <span class="nv">$id_employee</span> <span class="o">!==</span> <span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">context</span><span class="o">-&gt;</span><span class="na">smarty</span><span class="o">-&gt;</span><span class="na">assign</span><span class="p">(</span><span class="s1">&#39;reset_token&#39;</span><span class="p">,</span> <span class="nv">$reset_token</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">context</span><span class="o">-&gt;</span><span class="na">smarty</span><span class="o">-&gt;</span><span class="na">assign</span><span class="p">(</span><span class="s1">&#39;id_employee&#39;</span><span class="p">,</span> <span class="nv">$id_employee</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nv">$reset_token</span> <span class="o">&amp;&amp;</span> <span class="nv">$id_employee</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nv">$employee</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Employee</span><span class="p">(</span><span class="nv">$id_employee</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span><span class="nx">Validate</span><span class="o">::</span><span class="na">isLoadedObject</span><span class="p">(</span><span class="nv">$employee</span><span class="p">))</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">		<span class="nv">$valid_reset_token</span> <span class="o">=</span> <span class="nv">$employee</span><span class="o">-&gt;</span><span class="na">getValidResetPasswordToken</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="p">(</span><span class="nv">$valid_reset_token</span> <span class="o">!==</span> <span class="k">false</span> <span class="o">&amp;&amp;</span> <span class="nv">$valid_reset_token</span> <span class="o">===</span> <span class="nv">$reset_token</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">			<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">context</span><span class="o">-&gt;</span><span class="na">smarty</span><span class="o">-&gt;</span><span class="na">assign</span><span class="p">([</span>
-</span></span><span class="line"><span class="cl">				<span class="s1">&#39;reset_token&#39;</span> <span class="o">=&gt;</span> <span class="nv">$reset_token</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">				<span class="s1">&#39;id_employee&#39;</span> <span class="o">=&gt;</span> <span class="nv">$id_employee</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">				<span class="s1">&#39;reset_email&#39;</span> <span class="o">=&gt;</span> <span class="nv">$employee</span><span class="o">-&gt;</span><span class="na">email</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">			<span class="p">]);</span>
-</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$valid_reset_token</span> <span class="o">=</span> <span class="nv">$employee</span><span class="o">-&gt;</span><span class="na">getValidResetPasswordToken</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span><span class="nv">$valid_reset_token</span> <span class="o">!==</span> <span class="k">false</span> <span class="o">&amp;&amp;</span> <span class="nv">$valid_reset_token</span> <span class="o">===</span> <span class="nv">$reset_token</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">context</span><span class="o">-&gt;</span><span class="na">smarty</span><span class="o">-&gt;</span><span class="na">assign</span><span class="p">(</span><span class="s1">&#39;reset_email&#39;</span><span class="p">,</span> <span class="nv">$employee</span><span class="o">-&gt;</span><span class="na">email</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><h3 id="how-to-patch-manually">How to patch manually</h3>

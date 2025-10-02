@@ -7,7 +7,7 @@ authors: [ PrestaShop ]
 icon: icon-leaf
 tags: [news, event, psdevcon, community]
 ---
-The ecommerce world is advancing at an exciting pace, creating fresh opportunities for developers and businesses. That’s why we are excited to announce the third edition of the PrestaShop Developer Conference, taking place on November 19, 2025, in Paris and online.
+The ecommerce world is advancing at an exciting pace, creating fresh opportunities for developers and businesses. That’s why we are excited to announce the third edition of the PrestaShop Developer Conference, taking place on November 19, 2025, in Paris and, for the first time, online.
 
 ![PrestaShop Developer Conference 2025 Visual](/assets/images/2025/10/DEVCON_2025_1200x628.png)
 

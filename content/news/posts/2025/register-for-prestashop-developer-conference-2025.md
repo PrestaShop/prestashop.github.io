@@ -15,7 +15,7 @@ The ecommerce world is advancing at an exciting pace, creating fresh opportuniti
 
 The PrestaShop Developer Conference is more than just a day of talks, it’s a hub for passionate developers to connect, collaborate, and learn from leading voices in the PrestaShop community.
 
-This year, the PrestaShop Developer Conference will take place in a hybrid format. Join us in Paris for the full experience or tune in online. Following virtually will give you access to the main room conferences via live broadcast, while attending on-site will unlock the full program, including interactive workshops and the unique opportunity to connect face-to-face with other developers.
+This year, the PrestaShop Developer Conference will take place in a hybrid format. Join us in Paris for the full experience or tune in online. The virtual experience includes live broadcasts with automatic subtitles translated into 35 languages, providing accessible content for a global audience. Attending on-site will unlock the full program, including interactive workshops and the unique opportunity to connect face-to-face with other developers.
 
 The 2025 edition will also feature:
 * Live technical sessions that go deep into PrestaShop’s ecosystem

@@ -2,7 +2,7 @@
 layout: post
 title:  "Register now for the PrestaShop Developer Conference 2025"
 subtitle: "Conference registration is now open"
-date:   2025-10-02
+date:   2025-10-02 09:00:00
 authors: [ PrestaShop ]
 icon: icon-leaf
 tags: [news, event, psdevcon, community]

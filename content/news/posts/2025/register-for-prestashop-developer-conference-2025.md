@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Register now for the PrestaShop Developer Conference 2025"
+title:  "PrestaShop Developer Conference 2025: Register now!"
 subtitle: "Registration for the third PrestaShop Developer Conference is now open"
 date:   2025-10-02 09:00:00
 authors: [ PrestaShop ]

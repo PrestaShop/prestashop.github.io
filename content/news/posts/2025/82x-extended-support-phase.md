@@ -30,7 +30,7 @@ On the [PrestaShop main repository](https://github.com/prestashop/prestashop), t
 
 Branch `8.2.x` is the branch that gave birth to PrestaShop 8.2.0 and the patches that followed. As of today, the last 8.2 version is [PrestaShop patch release 8.2.1](https://github.com/PrestaShop/PrestaShop/tree/8.2.1).
 
-Following the PrestaShop 9.0.0 release, the `8.2.x` branch has entered in the extended support phase. It means that patch releases of PrestaShop 8.2.2 and newer will only be published if critical bugs are reported, if security fixes are needed or to introduce new hooks if necessary.
+Following the PrestaShop 9.0.0 release, the `8.2.x` branch has entered in the extended support phase. It means that patch releases of PrestaShop 8.2.2 and newer will only be published if critical bugs are reported, if security fixes are needed or to introduce new hooks during the call for hook contributions only (until September 2025).
 
 Consequently, please avoid opening pull requests against this branch unless they address critical or security-related bugs. While we aim to follow this policy strictly, we reserve the right to make exceptions or revise it if circumstances change.
 

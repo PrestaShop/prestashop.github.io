@@ -12,6 +12,8 @@ tags: [contribute, community, contribution]
 
 Two months ago, we launched our [second Call for Contributions initiative]({{< relref "/news/posts/2025/call-for-contributions-admin-api" >}}), this time focusing on the Admin API. We're excited to share the progress that's been made!
 
+![Admin API Contributions Progress](/assets/images/theme/banner-ps-project.png)
+
 ## What is this initiative about?
 
 Following the success of our [first Call for Contributions focused on hooks]({{< relref "/news/posts/2025/call-for-contributions-hooks-summary" >}}), we asked the community during the FoP Days to vote on what to tackle next. The Admin API emerged as a top priority, alongside hooks and web accessibility.

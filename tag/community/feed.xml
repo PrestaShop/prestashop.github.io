@@ -6,7 +6,17 @@
     <description>Recent content in community on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Oct 2025 09:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/community/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Nov 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/community/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Call for contributions: Admin API - great start!</title>
+      <link>https://build.prestashop-project.org/news/2025/call-for-contributions-admin-api-progress/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/call-for-contributions-admin-api-progress/</guid>
+      <description>Two months ago, we launched our second Call for Contributions initiative, this time focusing on the Admin API. We&amp;rsquo;re excited to share the progress that&amp;rsquo;s been made!
+What is this initiative about? Following the success of our first Call for Contributions focused on hooks, we asked the community during the FoP Days to vote on what to tackle next. The Admin API emerged as a top priority, alongside hooks and web accessibility.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Developer Conference 2025: Register now!</title>
       <link>https://build.prestashop-project.org/news/2025/register-for-prestashop-developer-conference-2025/</link>
@@ -149,16 +159,6 @@ If your module depends on Guzzle, it will no longer be available by default in P
       <guid>https://build.prestashop-project.org/news/2025/friends-of-presta-days-in-paris-2025/</guid>
       <description>The Friends of Presta (FOP) Days is an event for PrestaShop and open source ecommerce enthusiasts. Taking place on March 26-27, 2025, at Le Nida, Issy-les-Moulineaux, in the Paris region, this event is dedicated to open source collaboration, technical innovation, and business insights dedicated to the PrestaShop community. You will be able to meet other professionals, exchange ideas, and contribute to the community&amp;rsquo;s future.
 Friends of Presta and the PrestaShop ecosystem This event is organized by Friends of Presta, which is a French non-profit and brings together developers, integrators and agencies, among other types of members.</description>
-    </item>
-    
-    <item>
-      <title>Reworking the &#34;Update Assistant&#34; Module V7: Our Experience</title>
-      <link>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</link>
-      <pubDate>Tue, 11 Mar 2025 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</guid>
-      <description>Let’s face it—our Update Assistant module was messy. The front-end was confusing, the user experience was challenging, and even minor adjustments were a little more complex than what we would have liked.
-As part of the Seamless Upgrade &amp;amp; Extensibility squad, one of our key missions is to improve the reliability of PrestaShop upgrades. And to do that, we knew the Update Assistant module needed more than just a few patches—it needed a complete reinvention.</description>
     </item>
     
   </channel>

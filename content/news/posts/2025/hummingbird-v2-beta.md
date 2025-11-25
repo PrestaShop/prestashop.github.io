@@ -14,7 +14,7 @@ We are thrilled to announce the release of **Hummingbird v2.0.0 Beta**. This mil
 
 Hummingbird will become the **new default theme** in PrestaShop starting from **version 9.1**, while the Classic theme will remain available. It is fully compatible with **PrestaShop 9 and above**.
 
-Unlike traditional themes designed primarily for end users, Hummingbird provides a structured, scalable foundation that enables developers and agencies to build and customize e-commerce stores with ease and efficiency.
+Unlike traditional themes designed primarily for end users, Hummingbird provides a structured, scalable foundation that enables developers and agencies to build and customize ecommerce stores with ease and efficiency.
 
 ## 1. Vision: A Developer-Centric Foundation
 

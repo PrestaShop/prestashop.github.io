@@ -68,7 +68,7 @@ To modernize the ecosystem, several changes were necessary.
 
 To get the most out of Hummingbird v2.0.0, we recommend following these guidelines:
 
-- **Leverage native components:** Use as many native Bootstrap components as possible. This reduces technical debt and ensures maximum flexibility.
+- **Leverage native components:** use as many native Bootstrap components as possible. This reduces technical debt and ensures maximum flexibility.
 - **CSS layers:** We have introduced the use of `@layer` in CSS. Theme styles are now scoped into layers, and additional unlayered styles should take priority over theme styles. This provides more flexibility for customization or module style overrides, improves style-priority management, and helps prevent conflicts.
 - **Follow the architecture:** Adhere to the new logical file structure and BEM conventions. Non-Bootstrap components should follow the BEM convention to ensure reusability across the theme when needed.
 - **Bootstrap overrides:** A new Bootstrap override architecture has been implemented, allowing you to easily override SCSS variables by component, as well as override the components themselves if needed. This system is also based on the `@layer` functionality and ensures clean customization with a clear separation of concerns between Bootstrap and PrestaShop custom components.

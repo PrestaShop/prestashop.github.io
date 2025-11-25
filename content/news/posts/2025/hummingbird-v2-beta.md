@@ -31,7 +31,7 @@ This major release introduces a modernized tech stack and a fully rethought arch
 
 ### Modern Tech Stack and Bootstrap 5
 
-- **Bootstrap 5:** Full adoption of Bootstrap **5.3.3**, taking advantage of native components and reducing reliance on external libraries.  
+- **Bootstrap 5:** full adoption of Bootstrap **5.3.3**, taking advantage of native components and reducing reliance on external libraries.  
 - **SCSS + TypeScript:** A transition to modern, scalable technologies that improve maintainability.  
 - **Dark mode support:** Hummingbird is "Dark Mode Ready," leveraging native Bootstrap 5.3.0 dark mode capabilities.
 

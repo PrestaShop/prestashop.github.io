@@ -39,7 +39,7 @@ This major release introduces a modernized tech stack and a fully rethought arch
 
 - **Modular architecture:** a logical file structure makes it easier for developers to read, extend, and maintain code.
 - **Style harmonization:** cleaner, more consistent templates and styles across the theme for a higher-quality rendering.
-- **BEM convention:** Adoption of the <a href="https://getbem.com/" target="_blank">BEM (Block Element Modifier)</a> methodology for non-Bootstrap components to improve readability and reusability.
+- **BEM convention:** adoption of the <a href="https://getbem.com/" target="_blank">BEM (Block Element Modifier)</a> methodology for non-Bootstrap components to improve readability and reusability.
 
 ### Performance, SEO & Accessibility
 

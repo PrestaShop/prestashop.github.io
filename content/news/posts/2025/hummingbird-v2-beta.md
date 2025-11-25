@@ -2,7 +2,7 @@
 layout: post
 title: "Hummingbird v2.0.0 Beta"
 subtitle: "A new era for PrestaShop themes"
-date:   2025-11-20
+date:   2025-11-26
 authors: [ GericFosse, ThibaultBlivet ]
 icon: icon-leaf
 tags: [ theme ]

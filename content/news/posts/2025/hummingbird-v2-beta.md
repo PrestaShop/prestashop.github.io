@@ -43,7 +43,7 @@ This major release introduces a modernized tech stack and a fully rethought arch
 
 ### Performance, SEO and Accessibility
 
-- **Pre-optimized for Core Web Vitals:** Faster loading, better UX, and improved responsiveness.
+- **Pre-optimized for Core Web Vitals:** faster loading, better UX, and improved responsiveness.
 - **Native lazy loading:** Reduces resource usage and speeds up navigation.  
 - **SEO optimization:** Embedded in-sight SEO optimizations and structured data (JSON-LD) for better search engine visibility.
 - **Accessibility:** Compliant with **over 95%** of the requirements of the European Accessibility Act (EAA), ensuring inclusive user experiences.

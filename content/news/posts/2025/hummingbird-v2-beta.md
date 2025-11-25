@@ -6,6 +6,8 @@ date:   2025-11-26
 authors: [ GericFosse, ThibaultBlivet ]
 icon: icon-leaf
 tags: [ theme ]
+opengraph_image: /assets/images/theme/banner-ps-project.png
+twitter_image: /assets/images/theme/banner-ps-project.png
 ---
 
 We are thrilled to announce the release of **Hummingbird v2.0.0 Beta**. This milestone is the result of a monumental effort, representing more than **320 commits, 500 file changes, 50,000 additions**, and **30,000 deletions**. The goal is to deliver a developer-first, lightweight, and modular theme that establishes a new standard for the PrestaShop ecosystem.

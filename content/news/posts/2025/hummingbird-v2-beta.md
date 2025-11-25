@@ -21,7 +21,7 @@ Unlike traditional themes designed primarily for end users, Hummingbird provides
 The current ecosystem faces limitations due to the rigid Classic theme. Hummingbird resolves these issues with an approach that is:
 
 - **Developer-first:** built by developers, for developers, focusing on customization and flexibility.
-- **Performance-driven:** Optimized for speed, efficiency, and Core Web Vitals.
+- **Performance-driven:** optimized for speed, efficiency, and Core Web Vitals.
 - **Future-proof:** A modern base theme designed to evolve alongside PrestaShop and modern web standards.  
 - **High-quality integration:** Cleaner, more consistent integration across the entire theme, resulting in higher overall implementation quality.
 

@@ -35,7 +35,7 @@ This major release introduces a modernized tech stack and a fully rethought arch
 - **SCSS + TypeScript:** a transition to modern, scalable technologies that improve maintainability.  
 - **Dark mode support:** Hummingbird is "Dark Mode Ready," leveraging native Bootstrap 5.3.0 dark mode capabilities.
 
-### Architecture & Developer Experience
+### Architecture and Developer Experience
 
 - **Modular architecture:** A logical file structure makes it easier for developers to read, extend, and maintain code.
 - **Style harmonization:** Cleaner, more consistent templates and styles across the theme for a higher-quality rendering.

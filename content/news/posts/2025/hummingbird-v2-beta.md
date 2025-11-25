@@ -45,7 +45,7 @@ This major release introduces a modernized tech stack and a fully rethought arch
 
 - **Pre-optimized for Core Web Vitals:** faster loading, better UX, and improved responsiveness.
 - **Native lazy loading:** reduces resource usage and speeds up navigation.  
-- **SEO optimization:** Embedded in-sight SEO optimizations and structured data (JSON-LD) for better search engine visibility.
+- **SEO optimization:** embedded in-sight SEO optimizations and structured data (JSON-LD) for better search engine visibility.
 - **Accessibility:** Compliant with **over 95%** of the requirements of the European Accessibility Act (EAA), ensuring inclusive user experiences.
 
 ## 3. Lighthouse Performance

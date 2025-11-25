@@ -39,7 +39,7 @@ This major release introduces a modernized tech stack and a fully rethought arch
 
 - **Modular architecture:** A logical file structure makes it easier for developers to read, extend, and maintain code.
 - **Style harmonization:** Cleaner, more consistent templates and styles across the theme for a higher-quality rendering.
-- **BEM convention:** Adoption of the BEM (Block Element Modifier) methodology for non-Bootstrap components to improve readability and reusability.
+- **BEM convention:** Adoption of the <a href="https://www.markdownguide.org" target="_blank">BEM (Block Element Modifier)</a> methodology for non-Bootstrap components to improve readability and reusability.
 
 ### Performance, SEO & Accessibility
 
@@ -73,6 +73,8 @@ To get the most out of Hummingbird v2.0.0, we recommend following these guidelin
 - **Follow the architecture:** Adhere to the new logical file structure and BEM conventions. Non-Bootstrap components should follow the BEM convention to ensure reusability across the theme when needed.
 - **Bootstrap overrides:** A new Bootstrap override architecture has been implemented, allowing you to easily override SCSS variables by component, as well as override the components themselves if needed. This system is also based on the `@layer` functionality and ensures clean customization with a clear separation of concerns between Bootstrap and PrestaShop custom components.
 - **Don't rely on classes for JS:** For many years, JavaScript interactivity relied on custom classes, often using the `js-` prefix though sometimes not. Over time, this led to inconsistent practices and made the ecosystem more complex to maintain. This is why we recommend using data attributes to define JavaScript interactions. Migration from classes to attributes has already begun and should continue over time to make maintenance and evolution easier.
+
+A more detailed technical blog post will follow soon, providing in-depth explanations and examples for these best practices.
 
 ## 6. Call to Action
 

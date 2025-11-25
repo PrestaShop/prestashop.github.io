@@ -59,7 +59,7 @@ This major release introduces a modernized tech stack and a fully rethought arch
 To modernize the ecosystem, several changes were necessary.
 
 - **jQuery removed from theme:** Hummingbird no longer uses jQuery internally. It remains available for modules that still rely on it, but we strongly recommend migrating away from it, as we plan to remove it in the future.
-- **Bootstrap 5 migration:** Moving from Bootstrap 4 (Classic Theme) to Bootstrap 5 requires updates to class names and utilities. Modules should align with Bootstrap 5 for full compatibility.
+- **Bootstrap 5 migration:** moving from Bootstrap 4 (Classic Theme) to Bootstrap 5 requires updates to class names and utilities. Modules should align with Bootstrap 5 for full compatibility.
 - **Refactored native modules:** Key native modules have undergone major refactoring, including `ps_mainmenu`, `ps_facetedsearch`, `ps_featuredproducts`, and `productcomments`, among others.
 
 ## 5. Best Practices for Developers

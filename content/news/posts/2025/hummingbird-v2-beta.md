@@ -18,7 +18,7 @@ Unlike traditional themes designed primarily for end users, Hummingbird provides
 
 ## 1. Vision: A Developer-Centric Foundation
 
-The current ecosystem faces limitations due to the rigid and outdated Classic theme. Hummingbird resolves these issues with an approach that is:
+The current ecosystem faces limitations due to the rigid Classic theme. Hummingbird resolves these issues with an approach that is:
 
 - **Developer-first:** Built by developers, for developers, focusing on customization and flexibility.
 - **Performance-driven:** Optimized for speed, efficiency, and Core Web Vitals.

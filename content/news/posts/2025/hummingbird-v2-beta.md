@@ -54,7 +54,7 @@ This major release introduces a modernized tech stack and a fully rethought arch
 
 > Results are based on three key pages **Homepage**, **Category**, and **Product** and represent the average scores for **Performance**, **Accessibility**, **Best Practices**, and **SEO**.
 
-## 4. Backward Compatibility Breaks & Ecosystem Impact
+## 4. Backward Compatibility Breaks and Ecosystem Impact
 
 To modernize the ecosystem, several changes were necessary.
 

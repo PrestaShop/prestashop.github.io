@@ -23,7 +23,7 @@ The current ecosystem faces limitations due to the rigid Classic theme. Hummingb
 - **Developer-first:** built by developers, for developers, focusing on customization and flexibility.
 - **Performance-driven:** optimized for speed, efficiency, and Core Web Vitals.
 - **Future-proof:** a modern base theme designed to evolve alongside PrestaShop and modern web standards.  
-- **High-quality integration:** Cleaner, more consistent integration across the entire theme, resulting in higher overall implementation quality.
+- **High-quality integration:** cleaner, more consistent integration across the entire theme, resulting in higher overall implementation quality.
 
 ## 2. Key New Features in v2.0
 

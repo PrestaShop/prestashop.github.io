@@ -6,7 +6,17 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Nov 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Nov 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sunsetting the PrestaShop cron service</title>
+      <link>https://build.prestashop-project.org/news/2025/sunsetting-the-prestashop-cron-service/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/sunsetting-the-prestashop-cron-service/</guid>
+      <description>The PrestaShop cron service will be officially shut down in December 2025, marking the end of a legacy component that once helped stores without full server access automate scheduled tasks.
+What is the PrestaShop cron service? This service was originally introduced to assist merchants on shared hosting environments that did not allow setting up native cron jobs. It worked together with the cronjobs module, sending periodic requests to execute scheduled actions such as currency rate updates or module maintenance routines.</description>
+    </item>
+    
     <item>
       <title>Call for contributions: Admin API - great start!</title>
       <link>https://build.prestashop-project.org/news/2025/call-for-contributions-admin-api-progress/</link>
@@ -151,17 +161,6 @@ As part of the Call for Contributions challenge, PrestaShop 8.</description>
       <description>We are back with yet another edition of the PrestaShop Core Monthly, your monthly digest of the PrestaShop codebase&amp;rsquo;s latest changes and news from the PrestaShop project.
 PrestaShop 9.0.0 is out! 🎉 June marks the completion of one month since the PrestaShop 9.0.0 release, which is now available for download!
 This release is a major milestone for the PrestaShop project, as it brings a lot of new features and improvements. We hope you will enjoy it as much as we do.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.2.x is now in the extended support phase</title>
-      <link>https://build.prestashop-project.org/news/2025/82x-extended-support-phase/</link>
-      <pubDate>Fri, 04 Jul 2025 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/82x-extended-support-phase/</guid>
-      <description>Now that PrestaShop 9.0 is out, here is a focus on maintained branches of the PrestaShop project and what to expect.
-Reminder: PrestaShop branching strategy In August 2015 PrestaShop adopted a new branching model for the project.
-The model was refined over the years, for example with this developer documentation page about which bugs qualify for a patch version or the Backward Compatibility Promise that defines which changes can be introduced in a version.</description>
     </item>
     
   </channel>

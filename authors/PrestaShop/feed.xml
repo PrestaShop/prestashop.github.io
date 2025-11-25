@@ -6,7 +6,17 @@
     <description>Recent content in PrestaShop on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Oct 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Nov 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sunsetting the PrestaShop cron service</title>
+      <link>https://build.prestashop-project.org/news/2025/sunsetting-the-prestashop-cron-service/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/sunsetting-the-prestashop-cron-service/</guid>
+      <description>The PrestaShop cron service will be officially shut down in December 2025, marking the end of a legacy component that once helped stores without full server access automate scheduled tasks.
+What is the PrestaShop cron service? This service was originally introduced to assist merchants on shared hosting environments that did not allow setting up native cron jobs. It worked together with the cronjobs module, sending periodic requests to execute scheduled actions such as currency rate updates or module maintenance routines.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 9.0.1 is available</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-1-maintenance-release/</link>
@@ -149,17 +159,6 @@ PrestaShop used to check for overrides during module installation, but the proce
       <guid>https://build.prestashop-project.org/news/2024/Second-PrestaShop-Developer-Conference-Participate-as-Speaker/</guid>
       <description>Are you a passionate PrestaShop developer or enthusiast? We are happy to announce that the call for presentations is now open for the second edition of the PrestaShop Developer Conference, happening on November 6, 2024 in Paris, France. This event offers a prime opportunity to engage in developer discussions, better understand solutions, and connect with fellow community members.
 What is this event about? The PrestaShop Developer Conference empowers the developer community within the PrestaShop ecosystem.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.1.7 Is Available</title>
-      <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-7-maintenance-release/</link>
-      <pubDate>Tue, 25 Jun 2024 09:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-7-maintenance-release/</guid>
-      <description>A new patch for PrestaShop 8.1 is now available! This release includes several significant improvements and numerous bug fixes. In this article, we&amp;rsquo;ll explore these updates in detail.
-PrestaShop 8.1.7 is now available. This release addresses several bugs and brings various improvements.
-It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. Upgrade is possible using the latest version of the 1-Click Upgrade module.</description>
     </item>
     
   </channel>

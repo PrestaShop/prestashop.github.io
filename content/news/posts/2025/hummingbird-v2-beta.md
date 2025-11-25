@@ -81,5 +81,5 @@ A more detailed technical blog post will follow soon, providing in-depth explana
 Hummingbird is intended to be the **new testing standard** for PrestaShop Marketplace modules. We need your expertise to refine it further.
 
 - **Download the release:** [Hummingbird v2.0.0 Beta on GitHub](https://github.com/PrestaShop/hummingbird/releases).
-- **Contribute:** Review our updated README and CONTRIBUTING file to get started.
+- **Contribute:** review our updated README and CONTRIBUTING file to get started.
 - **Report issues:** Help us stabilize the project for the official release by reporting issues/bugs on our [GitHub repository](https://github.com/PrestaShop/hummingbird/issues).

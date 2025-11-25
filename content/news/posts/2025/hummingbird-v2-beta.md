@@ -29,7 +29,7 @@ The current ecosystem faces limitations due to the rigid Classic theme. Hummingb
 
 This major release introduces a modernized tech stack and a fully rethought architecture to streamline development.
 
-### Modern Tech Stack & Bootstrap 5
+### Modern Tech Stack and Bootstrap 5
 
 - **Bootstrap 5:** Full adoption of Bootstrap **5.3.3**, taking advantage of native components and reducing reliance on external libraries.  
 - **SCSS + TypeScript:** A transition to modern, scalable technologies that improve maintainability.  

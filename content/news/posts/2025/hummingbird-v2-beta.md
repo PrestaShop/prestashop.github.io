@@ -25,7 +25,7 @@ The current ecosystem faces limitations due to the rigid Classic theme. Hummingb
 - **Future-proof:** a modern base theme designed to evolve alongside PrestaShop and modern web standards.  
 - **High-quality integration:** cleaner, more consistent integration across the entire theme, resulting in higher overall implementation quality.
 
-## 2. Key New Features in v2.0
+## 2. Key New Features in v2.0.0
 
 This major release introduces a modernized tech stack and a fully rethought architecture to streamline development.
 

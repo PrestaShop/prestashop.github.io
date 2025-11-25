@@ -41,7 +41,7 @@ This major release introduces a modernized tech stack and a fully rethought arch
 - **Style harmonization:** cleaner, more consistent templates and styles across the theme for a higher-quality rendering.
 - **BEM convention:** adoption of the <a href="https://getbem.com/" target="_blank">BEM (Block Element Modifier)</a> methodology for non-Bootstrap components to improve readability and reusability.
 
-### Performance, SEO & Accessibility
+### Performance, SEO and Accessibility
 
 - **Pre-optimized for Core Web Vitals:** Faster loading, better UX, and improved responsiveness.
 - **Native lazy loading:** Reduces resource usage and speeds up navigation.  

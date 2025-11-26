@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Hummingbird v2.0.0 Beta</title>
+    <link href="/style.css?1764171420" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Hummingbird v2.0.0 Beta" />
+<meta property="og:description" content="We are thrilled to announce the release of Hummingbird v2.0.0 Beta. This milestone is the result of a monumental effort, representing more than 320 commits, 500 file changes, 50,000 additions, and 30,000 deletions. The goal is to deliver a developer-first, lightweight, and modular theme that establishes a new standard for the PrestaShop ecosystem." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2025/hummingbird-v2-beta/" />
+    <meta property="og:image" content="https://build.prestashop-project.org/assets/images/theme/banner-ps-project.png"/>
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2025-11-26T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2025-11-26T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/banner-ps-project.png">
+<meta name="twitter:title" content="Hummingbird v2.0.0 Beta"/>
+<meta name="twitter:description" content="A new era for PrestaShop themes"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF9S835S');</script>
+
+    
+</head>
+
+
+  <body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF9S835S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  
+  <div class="conference-banner">
+  <a href="/news/2025/register-for-prestashop-developer-conference-2025/">
+    PrestaShop Developer Conference
+  </a>
+  <div class="container">
+    <div class="conference-title">
+      PrestaShop Developer Conference
+    </div>
+    <div class="conference-location">
+      Hybrid format! Paris, France & Online - November 19, 2025
+    </div>
+    <div class="conference-slogan">
+      Let's talk code, commerce and open source.
+    </div>
+  </div>
+</div>
+<header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/9.0/">Articles on 9.0</a></li>
+        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Hummingbird v2.0.0 Beta</h1>
+              
+                <h3 class="post-subtitle">A new era for PrestaShop themes</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/GericFosse/">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/52211274?v=4" alt="Géric Fossé's picture">
+      </a>
+  
+      <a href="https://build.prestashop-project.org/authors/ThibaultBlivet/">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/110676325?v=4" alt="Thibault Blivet's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/GericFosse/">Géric Fossé</a>
+      </div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/ThibaultBlivet/">Thibault Blivet</a>
+      </div>
+        
+          <div class="author-display-role">Web Integrator</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Nov 26, 2025
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Hummingbird&#43;v2.0.0&#43;Beta&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2025%2Fhummingbird-v2-beta%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2025%2Fhummingbird-v2-beta%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>We are thrilled to announce the release of <strong>Hummingbird v2.0.0 Beta</strong>. This milestone is the result of a monumental effort, representing more than <strong>320 commits, 500 file changes, 50,000 additions</strong>, and <strong>30,000 deletions</strong>. The goal is to deliver a developer-first, lightweight, and modular theme that establishes a new standard for the PrestaShop ecosystem.</p>
+<p><img src="/assets/images/2025/11/banner-hummingbird-v2-beta.png" alt="Hummingbird v2.0.0 Beta"></p>
+<p>Hummingbird will become the <strong>new default theme</strong> in PrestaShop starting from <strong>version 9.1</strong>, while the Classic theme will remain available. It is fully compatible with <strong>PrestaShop 9 and above</strong>.</p>
+<p>Unlike traditional themes designed primarily for end users, Hummingbird provides a structured, scalable foundation that enables developers and agencies to build and customize ecommerce stores with ease and efficiency.</p>
+<h2 id="1-vision-a-developer-centric-foundation">1. Vision: A Developer-Centric Foundation</h2>
+<p>The current ecosystem faces limitations due to the rigid Classic theme. Hummingbird resolves these issues with an approach that is:</p>
+<ul>
+<li><strong>Developer-first:</strong> built by developers, for developers, focusing on customization and flexibility.</li>
+<li><strong>Performance-driven:</strong> optimized for speed, efficiency, and Core Web Vitals.</li>
+<li><strong>Future-proof:</strong> a modern base theme designed to evolve alongside PrestaShop and modern web standards.</li>
+<li><strong>High-quality integration:</strong> cleaner, more consistent integration across the entire theme, resulting in higher overall implementation quality.</li>
+</ul>
+<h2 id="2-key-new-features-in-v200">2. Key New Features in v2.0.0</h2>
+<p>This major release introduces a modernized tech stack and a fully rethought architecture to streamline development.</p>
+<h3 id="modern-tech-stack-and-bootstrap-5">Modern Tech Stack and Bootstrap 5</h3>
+<ul>
+<li><strong>Bootstrap 5:</strong> full adoption of Bootstrap <strong>5.3.3</strong>, taking advantage of native components and reducing reliance on external libraries.</li>
+<li><strong>SCSS + TypeScript:</strong> a transition to modern, scalable technologies that improve maintainability.</li>
+<li><strong>Dark mode support:</strong> Hummingbird is &ldquo;Dark Mode Ready,&rdquo; leveraging native Bootstrap 5.3.0 dark mode capabilities.</li>
+</ul>
+<h3 id="architecture-and-developer-experience">Architecture and Developer Experience</h3>
+<ul>
+<li><strong>Modular architecture:</strong> a logical file structure makes it easier for developers to read, extend, and maintain code.</li>
+<li><strong>Style harmonization:</strong> cleaner, more consistent templates and styles across the theme for a higher-quality rendering.</li>
+<li><strong>BEM convention:</strong> adoption of the <a href="https://getbem.com/" target="_blank">BEM (Block Element Modifier)</a> methodology for non-Bootstrap components to improve readability and reusability.</li>
+</ul>
+<h3 id="performance-seo-and-accessibility">Performance, SEO and Accessibility</h3>
+<ul>
+<li><strong>Pre-optimized for Core Web Vitals:</strong> faster loading, better UX, and improved responsiveness.</li>
+<li><strong>Native lazy loading:</strong> reduces resource usage and speeds up navigation.</li>
+<li><strong>SEO optimization:</strong> embedded in-sight SEO optimizations and structured data (JSON-LD) for better search engine visibility.</li>
+<li><strong>Accessibility:</strong> compliant with <strong>over 95%</strong> of the requirements of the European Accessibility Act (EAA), ensuring inclusive user experiences.<br><span style="color: #999;"><em>Audit performed during the development phase using <a href="https://accessibilityinsights.io/" target="_blank">Accessibility Insights tools</a>. Another audit will be performed post-release to refine the compatibility rate.</em></span></li>
+</ul>
+<h2 id="3-lighthouse-performance">3. Lighthouse Performance</h2>
+<p><img src="/assets/images/2025/11/banner-performance.png" alt="Hummingbird Lighthouse Performance"></p>
+<blockquote>
+<p>Results are based on three key pages <strong>Homepage</strong>, <strong>Category</strong>, and <strong>Product</strong> and represent the average scores for <strong>Performance</strong>, <strong>Accessibility</strong>, <strong>Best Practices</strong>, and <strong>SEO</strong>.</p>
+</blockquote>
+<h2 id="4-backward-compatibility-breaks-and-ecosystem-impact">4. Backward Compatibility Breaks and Ecosystem Impact</h2>
+<p>To modernize the ecosystem, several changes were necessary.</p>
+<ul>
+<li><strong>jQuery removed from theme:</strong> Hummingbird no longer uses jQuery internally. It remains available for modules that still rely on it, but we strongly recommend migrating away from it, as we plan to remove it in the future.</li>
+<li><strong>Bootstrap 5 migration:</strong> moving from Bootstrap 4 (Classic Theme) to Bootstrap 5 requires updates to class names and utilities. Modules should align with Bootstrap 5 for full compatibility.</li>
+<li><strong>Refactored native modules:</strong> key native modules have undergone major refactoring, including <code>ps_mainmenu</code>, <code>ps_facetedsearch</code>, <code>ps_featuredproducts</code>, and <code>productcomments</code>, among others.</li>
+</ul>
+<h2 id="5-best-practices-for-developers">5. Best Practices for Developers</h2>
+<p><img src="/assets/images/2025/11/banner-best-practices.png" alt="Hummingbird Best Practice"></p>
+<p>To get the most out of Hummingbird v2.0.0, we recommend following these guidelines:</p>
+<ul>
+<li><strong>Leverage native components:</strong> use as many native Bootstrap components as possible. This reduces technical debt and ensures maximum flexibility.</li>
+<li><strong>CSS layers:</strong> we have introduced the use of <code>@layer</code> in CSS. Theme styles are now scoped into layers, and additional unlayered styles should take priority over theme styles. This provides more flexibility for customization or module style overrides, improves style-priority management, and helps prevent conflicts.</li>
+<li><strong>Follow the architecture:</strong> adhere to the new logical file structure and BEM conventions. Non-Bootstrap components should follow the BEM convention to ensure reusability across the theme when needed.</li>
+<li><strong>Bootstrap overrides:</strong> a new Bootstrap override architecture has been implemented, allowing you to easily override SCSS variables by component, as well as override the components themselves if needed. This system is also based on the <code>@layer</code> functionality and ensures clean customization with a clear separation of concerns between Bootstrap and PrestaShop custom components.</li>
+<li><strong>Don&rsquo;t rely on classes for JS:</strong> for many years, JavaScript interactivity relied on custom classes, often using the <code>js-</code> prefix though sometimes not. Over time, this led to inconsistent practices and made the ecosystem more complex to maintain. This is why we recommend using data attributes to define JavaScript interactions. Migration from classes to attributes has already begun and should continue over time to make maintenance and evolution easier.</li>
+</ul>
+<p>A more detailed technical blog post will follow soon, providing in-depth explanations and examples for these best practices.</p>
+<h2 id="6-call-to-action">6. Call to Action</h2>
+<p>Hummingbird is intended to be the <strong>new testing standard</strong> for PrestaShop Marketplace modules. We need your expertise to refine it further.</p>
+<ul>
+<li><strong>Download the release:</strong> <a href="https://github.com/PrestaShop/hummingbird/releases">Hummingbird v2.0.0 Beta on GitHub</a>.</li>
+<li><strong>Contribute:</strong> review our updated README and CONTRIBUTING file to get started.</li>
+<li><strong>Report issues:</strong> help us stabilize the project for the official release by reporting issues/bugs on our <a href="https://github.com/PrestaShop/hummingbird/issues">GitHub repository</a>.</li>
+</ul>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Nov 26, 2025</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/theme/">theme</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+
+            <h5>About the authors</h5>
+
+            
+              <div class="author-item">
+                  
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/GericFosse/">Géric Fossé</a>
+      <span class="multiple">Product Manager</span>
+    </h4>
+
+    
+
+
+
+
+
+              </div>
+            
+              <div class="author-item">
+                  
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/ThibaultBlivet/">Thibault Blivet</a>
+      <span class="multiple">Web Integrator</span>
+    </h4>
+
+    
+
+
+
+
+
+              </div>
+            
+
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2025\/hummingbird-v2-beta\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+    
+    <script>
+      window.axeptioSettings = {
+        userCookiesDomain: "prestashop-project.org",
+        clientId: "6859145f7baee141c249caa3",
+        cookiesVersion: "fr-eu-23-06-2025",
+        googleConsentMode: {
+          default: {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            wait_for_update: 500
+          }
+        }
+      };
+      (function(d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+      })(document, "script");
+    </script>
+    
+  </body>
+</html>

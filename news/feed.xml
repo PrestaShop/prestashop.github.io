@@ -6,7 +6,17 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Nov 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Nov 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hummingbird v2.0.0 Beta</title>
+      <link>https://build.prestashop-project.org/news/2025/hummingbird-v2-beta/</link>
+      <pubDate>Wed, 26 Nov 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/hummingbird-v2-beta/</guid>
+      <description>We are thrilled to announce the release of Hummingbird v2.0.0 Beta. This milestone is the result of a monumental effort, representing more than 320 commits, 500 file changes, 50,000 additions, and 30,000 deletions. The goal is to deliver a developer-first, lightweight, and modular theme that establishes a new standard for the PrestaShop ecosystem.
+Hummingbird will become the new default theme in PrestaShop starting from version 9.1, while the Classic theme will remain available.</description>
+    </item>
+    
     <item>
       <title>Sunsetting the PrestaShop cron service</title>
       <link>https://build.prestashop-project.org/news/2025/sunsetting-the-prestashop-cron-service/</link>
@@ -150,17 +160,6 @@ But that&amp;rsquo;s not all! One of the highlights of this session will be an e
       <description>PrestaShop 8.2.2 is here! This latest patch version brings a range of updates, addressing reported issues and introducing enhancements to improve the platform for merchants and developers alike.
 We are happy to announce the release of PrestaShop 8.2.2, a patch version that not only resolves numerous bugs reported by our dedicated community and Quality Assurance team but also introduces some improvements.
 As part of the Call for Contributions challenge, PrestaShop 8.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop Core Monthly - June 2025</title>
-      <link>https://build.prestashop-project.org/news/2025/core-monthly-2025-06-01-2025-06-30/</link>
-      <pubDate>Wed, 09 Jul 2025 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/core-monthly-2025-06-01-2025-06-30/</guid>
-      <description>We are back with yet another edition of the PrestaShop Core Monthly, your monthly digest of the PrestaShop codebase&amp;rsquo;s latest changes and news from the PrestaShop project.
-PrestaShop 9.0.0 is out! 🎉 June marks the completion of one month since the PrestaShop 9.0.0 release, which is now available for download!
-This release is a major milestone for the PrestaShop project, as it brings a lot of new features and improvements. We hope you will enjoy it as much as we do.</description>
     </item>
     
   </channel>

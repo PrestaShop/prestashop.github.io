@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hummingbird v2.0.0 Beta"
+title: "Hummingbird v2.0.0 Beta Is Available"
 subtitle: "A new era for PrestaShop themes"
 date:   2025-11-26
 authors: [ GericFosse, ThibaultBlivet ]

@@ -65,13 +65,15 @@ Hummingbird is one of PrestaShop Core's flagship projects, and it deserves its o
 
 ## The pilot phase starts TODAY!
 
+![PilotBanner](/assets/images/2025/12/pilotBanner.png)
+
 ### Week 1 (Dec 8 - 15): Themes lead the way
 - Hummingbird and Classic test the new workflow.
 
-### Week 2 (Dec 15 - Jan 05): Popular modules follow
+### Week 2- 3 (Dec 15 - Jan 05): Popular modules follow
 - [autoupgrade](https://github.com/PrestaShop/autoupgrade) and [ps_facetedsearch](https://github.com/PrestaShop/ps_facetedsearch) join the movement.
 
-### Week 3 (Jan 05 - 09): Generalization (if all green)
+### Week 4 (Jan 05 - 09): Generalization (if all green)
 
 **Transparent success criteria:**
 - Less than 50% misrouted issues

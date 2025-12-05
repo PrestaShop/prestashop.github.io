@@ -9,7 +9,7 @@ tags: [ issues ]
 opengraph_image: /assets/images/theme/banner-ps-project.png
 twitter_image: /assets/images/theme/banner-ps-project.png
 ---
-## 2,300 issues. One number. One Challenge.
+## 2,300 issues. One number. One challenge.
 
 Imagine searching for a needle in a haystack of 2,300 straws. That's exactly what PrestaShop contributors experience today when trying to check if their bug has already been reported. It's also the daily challenge for our QA teams navigating this ocean of issues, some dating back to 2018.
 

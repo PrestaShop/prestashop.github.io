@@ -71,7 +71,7 @@ Hummingbird is one of PrestaShop Core's flagship projects, and it deserves its o
 - Hummingbird and Classic test the new workflow.
 
 ### Week 2 - 3 (December 15 - January 5): popular modules follow
-- [autoupgrade](https://github.com/PrestaShop/autoupgrade), [ps_facetedsearch](https://github.com/PrestaShop/ps_facetedsearch) & [ps_apiresources](https://github.com/PrestaShop/ps_apiresources)  join the movement.
+- [autoupgrade](https://github.com/PrestaShop/autoupgrade), [ps_facetedsearch](https://github.com/PrestaShop/ps_facetedsearch) & [ps_apiresources](https://github.com/PrestaShop/ps_apiresources) join the movement.
 
 ### Week 4 (January 5 - 9): generalization (if all green)
 

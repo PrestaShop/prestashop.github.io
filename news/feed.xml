@@ -6,7 +6,18 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Fresh Start for PrestaShop Issues: Bringing Clarity to Chaos</title>
+      <link>https://build.prestashop-project.org/news/2025/reorganization-of-prestashop-issue-management/</link>
+      <pubDate>Mon, 08 Dec 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/reorganization-of-prestashop-issue-management/</guid>
+      <description>2,300 issues. One number. One challenge. Imagine searching for a needle in a haystack of 2,300 straws. That&amp;rsquo;s exactly what PrestaShop contributors experience today when trying to check if their bug has already been reported. It&amp;rsquo;s also the daily challenge for our QA teams navigating this ocean of issues, some dating back to 2018.
+This historical centralization in PrestaShop/PrestaShop made sense&amp;hellip; until it didn&amp;rsquo;t. Today, we&amp;rsquo;re changing course.
+Our vision: every issue in its place, a place for every issue We&amp;rsquo;re opening issues directly in each repository that needs them (Core, Themes, Modules) so every repo tracks its own bugs.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Developer Conference 2025 - Event Recap</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-developer-conference-2025-event-recap/</link>
@@ -147,18 +158,6 @@ PrestaShop 8.2.2 maintenance release We released PrestaShop 8.2.2 on July 28th, 
       <guid>https://build.prestashop-project.org/news/2025/live-update-july-2025/</guid>
       <description>On July 30th, 2025, we hosted another Live Update for the PrestaShop Project, highlighting the announcement of the upcoming One Page Checkout (OPC) feature in PrestaShop 9.1. We also covered the current state of the project, recent releases, and ongoing contribution initiatives, including the Admin API.
 PrestaShop Live Update - July 2025 The session&amp;rsquo;s agenda was as follows: 00:00 Beginning of the session: introduction 02:21 Project news: PrestaShop 9.0 is available 10:23 Project news: PrestaShop 8.</description>
-    </item>
-    
-    <item>
-      <title>Announcing PrestaShop Project Live Update July 2025</title>
-      <link>https://build.prestashop-project.org/news/2025/upcoming-live-update-july-2025/</link>
-      <pubDate>Tue, 29 Jul 2025 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/upcoming-live-update-july-2025/</guid>
-      <description>Yet another Live Update for the PrestaShop Project in 2025 will be hosted on Wednesday, July 30th, 2025, at 4 PM (Paris time) on YouTube!
-Join us for the upcoming Live Update, where we will share exciting news about the PrestaShop Project!
-We will provide a summary of the Call for Contributions: Hooks Initiative, highlighting the community&amp;rsquo;s efforts and achievements.
-But that&amp;rsquo;s not all! One of the highlights of this session will be an exclusive presentation on the highly anticipated One Page Checkout feature, coming in PrestaShop 9.</description>
     </item>
     
   </channel>

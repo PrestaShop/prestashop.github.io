@@ -90,7 +90,7 @@ Do you maintain a popular module? Want to be a pioneer of this change?
 
 1. **Use "Search existing issues" links** in templates before opening an issue.
 2. **Provide maximum context**: reproduction steps, versions, screenshots.
-3. **Follow your issues** in the new [BUG] projects.
+3. **Follow your issues** in the new `[BUG] Name of the area` projects. See all the projects [here](https://github.com/orgs/PrestaShop/projects).
 4. **Share your feedback**: your experience helps us improve the system.
 
 ## Together, let's transform complexity into clarity

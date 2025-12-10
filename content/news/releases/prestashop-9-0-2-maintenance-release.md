@@ -218,5 +218,4 @@ This release is made possible thanks to [PrestaShop SA](https://prestashop.com/)
 
 A big **thank you** to all contributors (in alphabetical order):
 
-Boris Hermans, ChillCode, Codencode, Daniel Hlavacek, Dominik Shaim Ulrich, Franck Lefèvre, jolelievre, Jonathan LELIEVRE, Julien Bonvarlet, Krystian Podemski, Manuel Valentin, Mathieu Ferment, mattgoud, Matthias Goudjil, Maxime Sieczkowski, Nesrine Abdmouleh, Nicolas Lœuillet, Presta Module, Prestaworks, Progi1984, Thomas Leone, Thomas Roux ( Old Okom3pom ), tyloo, yebor974, Yoan Ballesteros
-
+Boris Hermans, ChillCode, Codencode, Daniel Hlavacek, Dominik Shaim Ulrich, Franck Lefèvre, Jonathan LELIEVRE, Julien Bonvarlet, Krystian Podemski, Manuel Valentin, Mathieu Ferment, Matthias Goudjil, Maxime Sieczkowski, Nesrine Abdmouleh, Nicolas Lœuillet, Presta Module, Prestaworks, Thomas Leone, Thomas Roux ( Old Okom3pom ), Yoan Ballesteros

@@ -6,7 +6,17 @@
     <description>Recent content in PrestaShop on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Nov 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 9.0.2 is available</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-maintenance-release/</link>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-maintenance-release/</guid>
+      <description>PrestaShop 9.0.2 is now available! This second patch version represents yet another step in making PrestaShop 9 more reliable. It focuses on fixing some reported issues to provide a more stable and seamless experience for merchants and developers.
+PrestaShop 9 continues to focus on stability and polish With the second maintenance release, our attention has shifted from broad feature work to refining the platform based on real-world feedback. 9.0.2 brings targeted fixes that improve reliability, developer experience, and daily merchant operations.</description>
+    </item>
+    
     <item>
       <title>Sunsetting the PrestaShop cron service</title>
       <link>https://build.prestashop-project.org/news/2025/sunsetting-the-prestashop-cron-service/</link>
@@ -149,16 +159,6 @@ Why Attend the Conference? The PrestaShop Developer Conference is more than just
 What&amp;rsquo;s new in PrestaShop 8.2? PrestaShop 8.2 is a minor version that includes a few improvements, as well as bug fixes, and it is relatively small compared to the previous minor versions. Here are some highlights.
 Improvements Correctly checking overrides during module installation
 PrestaShop used to check for overrides during module installation, but the process didn’t fully block installation if a conflicting override was found.</description>
-    </item>
-    
-    <item>
-      <title>Second PrestaShop Developer Conference - Participate as a Speaker</title>
-      <link>https://build.prestashop-project.org/news/2024/Second-PrestaShop-Developer-Conference-Participate-as-Speaker/</link>
-      <pubDate>Tue, 09 Jul 2024 09:55:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/Second-PrestaShop-Developer-Conference-Participate-as-Speaker/</guid>
-      <description>Are you a passionate PrestaShop developer or enthusiast? We are happy to announce that the call for presentations is now open for the second edition of the PrestaShop Developer Conference, happening on November 6, 2024 in Paris, France. This event offers a prime opportunity to engage in developer discussions, better understand solutions, and connect with fellow community members.
-What is this event about? The PrestaShop Developer Conference empowers the developer community within the PrestaShop ecosystem.</description>
     </item>
     
   </channel>

@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 9.0.2 is available
 subtitle: The second maintenance release for PrestaShop 9 is here!
-date: 2025-12-09
+date: 2025-12-10
 authors: [ PrestaShop ]
 opengraph_image: /assets/images/2025/12/PrestaShop-9.0.2-LinkedIn_Facebook.png
 twitter_image: /assets/images/2025/12/PrestaShop-9.0.2-X.png

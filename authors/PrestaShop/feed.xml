@@ -6,7 +6,17 @@
     <description>Recent content in PrestaShop on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 9.1 is in feature freeze</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-9-1-feature-freeze/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-1-feature-freeze/</guid>
+      <description>As of December 12th, 2025, PrestaShop version 9.1 has entered the feature freeze phase. Learn more about the feature freeze, the next steps, and what’s coming in PrestaShop 9.1.
+PrestaShop 9.1 feature freeze is in effect As of today, PrestaShop 9.1 is in feature freeze. What is a feature freeze? Feature freeze marks a stage in development when no new features are accepted. The focus shifts to polishing what’s built and validating quality before release.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 9.0.2 is available</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-maintenance-release/</link>
@@ -147,18 +157,6 @@ The launch of this newsletter is happening now, and the timing is no coincidence
       <guid>https://build.prestashop-project.org/news/2024/register-for-the-prestashop-developer-conference-2024/</guid>
       <description>The world of ecommerce is constantly evolving, and staying on top of the latest trends and innovations is essential for developers and businesses. That’s why we are thrilled to invite you to the second edition of the PrestaShop Developer Conference, taking place on November 6, 2024, in Paris.
 Why Attend the Conference? The PrestaShop Developer Conference is more than just a series of presentations - it’s a space where passionate developers come together to exchange ideas, learn from one another, and engage with some of the leading voices in the PrestaShop community.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.2 Is Available</title>
-      <link>https://build.prestashop-project.org/news/2024/prestashop-8-2-0-available/</link>
-      <pubDate>Thu, 26 Sep 2024 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-2-0-available/</guid>
-      <description>It&amp;rsquo;s been decided to release a new minor version of PrestaShop 8.2. This version includes a few improvements, as well as bug fixes.
-What&amp;rsquo;s new in PrestaShop 8.2? PrestaShop 8.2 is a minor version that includes a few improvements, as well as bug fixes, and it is relatively small compared to the previous minor versions. Here are some highlights.
-Improvements Correctly checking overrides during module installation
-PrestaShop used to check for overrides during module installation, but the process didn’t fully block installation if a conflicting override was found.</description>
     </item>
     
   </channel>

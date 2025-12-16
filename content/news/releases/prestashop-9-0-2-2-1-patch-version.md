@@ -15,13 +15,13 @@ tags:
 - "maintenance"
 ---
 
-Some of you hit an unexpected issue when installing **PrestaShop 9.0.2-2.1** from prestashop.com, and some also noticed a slightly unusual version number: 9.0.2-2.1, which has been used since the start of PrestaShop 9 but hadn’t been explicitly explained until now.
+Some of you hit an unexpected issue when installing **PrestaShop 9.0.2-2.0** from prestashop.com, and some also noticed a slightly unusual version number: 9.0.2-2.1, which has been used since the start of PrestaShop 9 but hadn’t been explicitly explained until now.
 
 This post is not release notes. It's a transparency update: what happened, what we changed in response, and what we're doing to reduce the chance of a similar incident.
 
 ## A blocking installation issue reported by the community
 
-A community [report on GitHub](https://github.com/PrestaShop/PrestaShop/issues/40314) described a problem during a fresh installation of PrestaShop 9.0.2-2.1. The installer got stuck while installing the [**ps_checkout**](https://github.com/PrestaShopCorp/ps_checkout) module and failed with this SQL error:
+A community [report on GitHub](https://github.com/PrestaShop/PrestaShop/issues/40314) described a problem during a fresh installation of PrestaShop 9.0.2-2.0. The installer got stuck while installing the [**ps_checkout**](https://github.com/PrestaShopCorp/ps_checkout) module and failed with this SQL error:
 
 `SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mc.id' in 'on clause'`
 

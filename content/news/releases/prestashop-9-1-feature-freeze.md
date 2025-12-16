@@ -83,7 +83,7 @@ There may be further `9.x` minor releases, or the cycle may finish at 9.2 - that
 
 Our priority is stability and quality so that decisions will be guided by readiness rather than by a fixed count of versions. We’ll share updates as plans firm up.
 
-In the meantime, if you want to stay updated regarding the release of PrestaShop 9.1, make sure to [subscribe to this GitHub issue](https://github.com/PrestaShop/PrestaShop/issues/30719).
+In the meantime, if you want to stay updated regarding the release of PrestaShop 9.1, make sure to [subscribe to this GitHub issue](https://github.com/PrestaShop/PrestaShop/issues/40051).
 
 ## Your feedback is essential!
 

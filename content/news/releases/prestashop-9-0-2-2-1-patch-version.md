@@ -2,6 +2,8 @@
 layout: post
 title:  "PrestaShop 9.0.2-2.1: what happened and why the version looks different"
 subtitle: "A transparency update about an installer-blocking issue and our Classic version numbering"
+opengraph_image: /assets/images/theme/banner-ps-project.png
+twitter_image: /assets/images/theme/banner-ps-project.png
 date: 2025-12-16
 authors: [ PrestaShop ]
 icon: icon-info

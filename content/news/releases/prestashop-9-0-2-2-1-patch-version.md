@@ -21,7 +21,7 @@ This post is not release notes. It's a transparency update: what happened, what 
 
 ## A blocking installation issue reported by the community
 
-A community [report on GitHub](https://github.com/PrestaShop/PrestaShop/issues/40314) described a problem during a fresh installation of PrestaShop 9.0.2. The installer got stuck while installing the [**ps_checkout**](https://github.com/PrestaShopCorp/ps_checkout) module and failed with this SQL error:
+A community [report on GitHub](https://github.com/PrestaShop/PrestaShop/issues/40314) described a problem during a fresh installation of PrestaShop  9.0.2-2.1. The installer got stuck while installing the [**ps_checkout**](https://github.com/PrestaShopCorp/ps_checkout) module and failed with this SQL error:
 
 `SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mc.id' in 'on clause'`
 

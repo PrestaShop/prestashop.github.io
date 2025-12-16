@@ -6,7 +6,18 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 9.0.2-2.1: what happened and why the version looks different</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</guid>
+      <description>Some of you hit an unexpected issue when installing PrestaShop 9.0.2 from prestashop.com, and some also noticed a slightly unusual version number: 9.0.2-2.1, which has been used since the start of PrestaShop 9 but hadn’t been explicitly explained until now.
+This post is not release notes. It&amp;rsquo;s a transparency update: what happened, what we changed in response, and what we&amp;rsquo;re doing to reduce the chance of a similar incident.
+A blocking installation issue reported by the community A community report on GitHub described a problem during a fresh installation of PrestaShop 9.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 9.1 is in feature freeze</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-9-1-feature-freeze/</link>
@@ -146,16 +157,6 @@ Why this release now? PrestaShop 8.2 is in the extended support phase, so only s
       <guid>https://build.prestashop-project.org/news/2025/meet-prestashop-wall-of-fame/</guid>
       <description>From its very first release, PrestaShop has been built and improved thanks to the dedication of its open source community. Today, we&amp;rsquo;re introducing a new way to celebrate that dedication - directly in your back office.
 The Wall of Fame is a new tab in the back office available through the ps_distributionapiclient (version 1.2.0) module that showcases the top companies and individuals contributing to PrestaShop. Merchants can now see, right where they manage their store, the vibrant community making the software better every day.</description>
-    </item>
-    
-    <item>
-      <title>Call for contributions: Admin API</title>
-      <link>https://build.prestashop-project.org/news/2025/call-for-contributions-admin-api/</link>
-      <pubDate>Thu, 07 Aug 2025 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/call-for-contributions-admin-api/</guid>
-      <description>After the success of our first Call for Contributions focused on hooks, it&amp;rsquo;s time to launch a new round. This time, we&amp;rsquo;re inviting the community to contribute to one of the most significant changes in PrestaShop 9: the new Admin API.
-Why the Admin API? During FoP Days, we asked attendees to vote on future contribution topics. Three stood out: Hooks, Admin API, and Web Accessibility (EAA). We started with Hooks, work on the EAA subject will be part of Hummingbird 2, led by PrestaShop S.</description>
     </item>
     
   </channel>

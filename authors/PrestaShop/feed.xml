@@ -6,7 +6,18 @@
     <description>Recent content in PrestaShop on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/PrestaShop/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 9.0.2-2.1: what happened and why the version looks different</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</guid>
+      <description>Some of you hit an unexpected issue when installing PrestaShop 9.0.2 from prestashop.com, and some also noticed a slightly unusual version number: 9.0.2-2.1, which has been used since the start of PrestaShop 9 but hadn’t been explicitly explained until now.
+This post is not release notes. It&amp;rsquo;s a transparency update: what happened, what we changed in response, and what we&amp;rsquo;re doing to reduce the chance of a similar incident.
+A blocking installation issue reported by the community A community report on GitHub described a problem during a fresh installation of PrestaShop 9.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 9.1 is in feature freeze</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-9-1-feature-freeze/</link>
@@ -147,16 +158,6 @@ According to the investigation, this vulnerability is not in the PrestaShop core
       <guid>https://build.prestashop-project.org/news/2024/introducing-prestashop-project-newsletter/</guid>
       <description>At PrestaShop, we are always looking for ways to strengthen our relationship with the community. In line with this, we are thrilled to announce the launch of the PrestaShop Project Newsletter, a new initiative designed to bring you technical insights, exclusive updates, and educational content like never before.
 The launch of this newsletter is happening now, and the timing is no coincidence! With the PrestaShop Developer Conference just around the corner on November 6, 2024, we want to highlight our commitment to the technical community.</description>
-    </item>
-    
-    <item>
-      <title>Register Now for the PrestaShop Developer Conference 2024</title>
-      <link>https://build.prestashop-project.org/news/2024/register-for-the-prestashop-developer-conference-2024/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/register-for-the-prestashop-developer-conference-2024/</guid>
-      <description>The world of ecommerce is constantly evolving, and staying on top of the latest trends and innovations is essential for developers and businesses. That’s why we are thrilled to invite you to the second edition of the PrestaShop Developer Conference, taking place on November 6, 2024, in Paris.
-Why Attend the Conference? The PrestaShop Developer Conference is more than just a series of presentations - it’s a space where passionate developers come together to exchange ideas, learn from one another, and engage with some of the leading voices in the PrestaShop community.</description>
     </item>
     
   </channel>

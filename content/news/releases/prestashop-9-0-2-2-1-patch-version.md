@@ -13,6 +13,7 @@ tags:
 - "version"
 - "patch"
 - "maintenance"
+- "release"
 ---
 
 Some of you hit an unexpected issue when installing **PrestaShop 9.0.2** from prestashop.com, and some also noticed a slightly unusual version number: 9.0.2-2.1, which has been used since the start of PrestaShop 9 but hadn’t been explicitly explained until now.

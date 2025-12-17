@@ -59,7 +59,7 @@ So in this case:
 
 That is exactly what happened here, and why the Classic version increment became more visible: the Core stayed the same, while Classic needed a patched module version to prevent the installer from blocking.
 
-You can find the complete explanation and examples in the dedicated documentation [https://github.com/PrestaShopCorp/prestashop-classic/wiki/Classic-version-numbers](here).
+You can find the complete explanation and examples in the dedicated documentation [https://github.com/PrestaShopCorp/prestashop-classic/wiki/Classic-version-numbers](https://github.com/PrestaShopCorp/prestashop-classic/wiki/Classic-version-numbers).
 
 ## What we will improve
 

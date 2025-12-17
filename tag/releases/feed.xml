@@ -6,7 +6,18 @@
     <description>Recent content in releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 9.0.2-2.1: what happened and why the version looks different</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</guid>
+      <description>Some of you hit an unexpected issue when installing PrestaShop 9.0.2 from prestashop.com, and some also noticed a slightly unusual version number: 9.0.2-2.1, which has been used since the start of PrestaShop 9 but hadn’t been explicitly explained until now.
+This post is not release notes. It&amp;rsquo;s a transparency update: what happened, what we changed in response, and what we&amp;rsquo;re doing to reduce the chance of a similar incident.
+A blocking installation issue reported by the community A community report on GitHub described a problem during a fresh installation of PrestaShop 9.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 9.1 is in feature freeze</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-9-1-feature-freeze/</link>
@@ -150,16 +161,6 @@ PrestaShop used to check for overrides during module installation, but the proce
       <description>A new patch for PrestaShop 8.1 is now available! This release includes several significant improvements and numerous bug fixes. In this article, we&amp;rsquo;ll explore these updates in detail.
 PrestaShop 8.1.7 is now available. This release addresses several bugs and brings various improvements.
 It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. Upgrade is possible using the latest version of the 1-Click Upgrade module.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 9 Alpha 1 is Available!</title>
-      <link>https://build.prestashop-project.org/news/2024/prestashop-9-alpha1-available/</link>
-      <pubDate>Thu, 06 Jun 2024 09:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/prestashop-9-alpha1-available/</guid>
-      <description>Here it is. The first public alpha of PrestaShop 9 is available. We decided it was time to share with you the first results of our work on PrestaShop 9.
-Please note that this version is in the early stages of development. To achieve a stable release, we anticipate several months of further work. As we are prior to the feature-freeze phase, the features and content of PrestaShop 9 are subject to change.</description>
     </item>
     
   </channel>

@@ -6,7 +6,17 @@
     <description>Recent content in community on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Nov 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/community/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/community/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Good Intentions to Measurable Impact: PrestaShop&#39;s Call for Contributions at Open Source Experience</title>
+      <link>https://build.prestashop-project.org/news/2025/call-for-contributions-open-source-experience/</link>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/call-for-contributions-open-source-experience/</guid>
+      <description>This month of December, Paule Morizot and Fabien Moreau of PrestaShop spoke at Open Source Experience about the project’s Call for Contributions. What a great place to give an update on this topic and to show an experienced crowd what we are currently doing at PrestaShop.
+Open Source Experience, held at the Cité des Sciences in Paris, is one of Europe&amp;rsquo;s premier events for open source software, bringing together maintainers, contributors, and organizations committed to collaborative development.</description>
+    </item>
+    
     <item>
       <title>Call for contributions: Admin API - great start!</title>
       <link>https://build.prestashop-project.org/news/2025/call-for-contributions-admin-api-progress/</link>
@@ -149,16 +159,6 @@ Collaboration and improving expertise Organized by Friends of Presta, a French n
       <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
       <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.
 If your module depends on Guzzle, it will no longer be available by default in PrestaShop 9. In this article, we’ll explain why Guzzle was removed, what this means for your module, and how to migrate to a suitable alternative.</description>
-    </item>
-    
-    <item>
-      <title>Join the community at the FOP (Friends of Presta) Days in Paris</title>
-      <link>https://build.prestashop-project.org/news/2025/friends-of-presta-days-in-paris-2025/</link>
-      <pubDate>Wed, 19 Mar 2025 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/friends-of-presta-days-in-paris-2025/</guid>
-      <description>The Friends of Presta (FOP) Days is an event for PrestaShop and open source ecommerce enthusiasts. Taking place on March 26-27, 2025, at Le Nida, Issy-les-Moulineaux, in the Paris region, this event is dedicated to open source collaboration, technical innovation, and business insights dedicated to the PrestaShop community. You will be able to meet other professionals, exchange ideas, and contribute to the community&amp;rsquo;s future.
-Friends of Presta and the PrestaShop ecosystem This event is organized by Friends of Presta, which is a French non-profit and brings together developers, integrators and agencies, among other types of members.</description>
     </item>
     
   </channel>

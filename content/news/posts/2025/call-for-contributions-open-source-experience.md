@@ -5,6 +5,8 @@ subtitle: "How we shared our structured approach to community collaboration at E
 date:   2025-12-30
 authors: [ coffrep ]
 icon: icon-calendar
+opengraph_image: /assets/images/theme/banner-ps-project.png
+twitter_image: /assets/images/theme/banner-ps-project.png
 tags: [event, community]
 ---
 This month of December, Paule Morizot and Fabien Moreau of PrestaShop spoke at [Open Source Experience](https://www.opensource-experience.com/en) about the project’s Call for Contributions. What a great place to give an update on this topic and to show an experienced crowd what we are currently doing at PrestaShop.

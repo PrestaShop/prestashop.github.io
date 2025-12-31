@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PrestaShop Year in Review 2025"
+title: "PrestaShop 2025: Year in Review"
 subtitle: "A look back at a year of major releases, community events, and new initiatives"
 date: 2025-12-31
 authors: [ kpodemski ]
@@ -14,7 +14,7 @@ As 2025 comes to a close, it's time to reflect on an incredible year for the Pre
 
 We’ve seen major technical advancements, new contribution initiatives, and a renewed focus on developer experience. Let’s take a month-by-month journey through the milestones that shaped 2025.
 
-## January: Kicking off with knowledge sharing
+## January: kicking off with knowledge sharing
 
 The year started with a focus on learning, transparency, and security. We issued an important [alert regarding SQL injection attacks]({{< relref "news/posts/2025/sql-injection-attacks-alert-and-security-enhancements-for-prestashop.md" >}}), reinforcing our commitment to keeping the ecosystem safe.
 
@@ -24,13 +24,13 @@ We also held our first [Live Update of the year]({{< relref "news/public-oss-dem
 
 Additionally, the Software Components Squad presented the improved [**multi-carrier feature**](https://youtu.be/JljSmYH-vdg?t=775), showcasing a significant enhancement for logistics and shipping management in PrestaShop.
 
-## February: Preparing for the next major version
+## February: preparing for the next major version
 
 February was a pivotal month as we unveiled the [PrestaShop 9.0 Beta]({{< relref "news/releases/prestashop-9-0-beta-release.md" >}}). This gave developers their first hands-on experience with the upgraded technology stack - including Symfony 6.4 and PHP 8.4 support - and the new Admin API, setting the stage for the major release later in the year.
 
 We also continued to support the 8.2 branch with the release of [PrestaShop 8.2.1]({{< relref "news/releases/prestashop-8-2-1-maintenance-release.md" >}}), ensuring stability for existing shops.
 
-## March: Major tools and community events
+## March: major tools and community events
 
 March was a month of significant releases and gatherings. We launched the **Update Assistant module v7.0.0** (formerly 1-Click Upgrade), a complete rewrite featuring a new UI and CLI to make upgrades smoother and more reliable. We shared the [story behind this rework]({{< relref "news/posts/2025/reworking-the-update-assistant-module-v7-our-experience.md" >}}) and announced the [official release]({{< relref "news/posts/2025/autoupgrade-v7.0-release.md" >}}).
 
@@ -40,7 +40,7 @@ The community also gathered in Paris for **FOP Days 2025** (March 26-27). Organi
 
 We also hosted the [March Live Update]({{< relref "news/public-oss-demo/2025/live-update-march-2025.md" >}}), focusing on PrestaShop 9 Beta 1 and upcoming features in 9.1. To help developers prepare for v9, we published a guide on [adapting to the removal of Guzzle]({{< relref "news/posts/2025/breaking-change-guzzle-removal-v9.md" >}}).
 
-## April: Keeping the momentum
+## April: keeping the momentum
 
 Following the excitement of March, we hosted the [April Live Update]({{< relref "news/public-oss-demo/2025/live-update-april-2025.md" >}}). This session provided a deeper dive into the **Update Assistant module**, with a presentation of its new features and future roadmap. We also shared updates on the **Targeted Contributions** initiative, highlighting opportunities for the community to get involved in high-impact projects.
 
@@ -48,7 +48,7 @@ We also published an insightful [interview with Codencode]({{< relref "news/post
 
 To round out the month, we shared a recap of the [cybersecurity presentation from PSDevCon 2024]({{< relref "news/posts/2025/PSDevCon2024-Cybersecurity-presentation.md" >}}), reminding everyone that security is a shared responsibility.
 
-## May: The calm before the storm
+## May: the calm before the storm
 
 May was a quieter month on the public front, but behind the scenes, the core team and community were hard at work. The focus was entirely on polishing **PrestaShop 9.0**, fixing bugs reported during the beta phase, and preparing for the major launch.
 
@@ -64,7 +64,7 @@ To support this release, we updated the documentation with a comprehensive guide
 
 In the spirit of community, we also shared an inspiring [interview with Dominik Shaim Ulrich]({{< relref "news/posts/2025/Dominik-Shaim-Ulrich-contributing-locally.md" >}}), highlighting how local businesses contribute to the global project.
 
-## July: Extended support and new initiatives
+## July: extended support and new initiatives
 
 In July, we announced that [PrestaShop 8.2.x entered its extended support phase]({{< relref "news/posts/2025/82x-extended-support-phase.md" >}}), clarifying the roadmap for merchants and agencies.
 
@@ -72,7 +72,7 @@ We also published the [summary of the Call for Contributions focused on hooks]({
 
 The month wrapped up with a feature-packed [Live Update]({{< relref "news/public-oss-demo/2025/live-update-july-2025.md" >}}). We unveiled the  **One Page Checkout (OPC)** feature for future versions of PrestaShop 9, shared progress on **Hummingbird 2**, and announced the **PrestaShop Developer Conference 2025**. We also released [PrestaShop 8.2.2]({{< relref "news/releases/prestashop-8-2-2-maintenance-release.md" >}}).
 
-## August: Celebrating contributors and API progress
+## August: celebrating contributors and API progress
 
 August was all about the people and the tech. Building on the success of the hooks initiative, we launched a new [Call for Contributions for the Admin API]({{< relref "news/posts/2025/call-for-contributions-admin-api.md" >}}). This campaign is a key part of our strategy to decouple the back office and improve developer experience, and we were thrilled to see the community's enthusiasm to participate once again.
 
@@ -82,13 +82,13 @@ We also took a moment to celebrate our top contributors with the launch of the [
 
 This new feature, available directly in the back office, showcases the individuals and companies who power the project. It's a small way to say a big thank you to those who dedicate their time and expertise to making PrestaShop better for everyone.
 
-## September & October: Security and stability
+## September & October: security and stability
 
 Security remains a top priority. In September, we released [PrestaShop 8.2.3]({{< relref "news/releases/prestashop-8-2-3-security-release.md" >}}) to address security issues.
 
 October saw the first maintenance release for the new major version, [PrestaShop 9.0.1]({{< relref "news/releases/prestashop-9-0-1-maintenance-release.md" >}}). This release was a testament to the community's engagement, incorporating over **60 bug fixes** and **140 pull requests**. The feedback and contributions from developers, agencies, and merchants have been invaluable in refining PrestaShop 9, ensuring a smoother experience for everyone.
 
-## November: A new era for themes and developer conference
+## November: a new era for themes and developer conference
 
 November was a busy month! We gathered in Paris for the [PrestaShop Developer Conference 2025]({{< relref "news/posts/2025/prestashop-developer-conference-2025-event-recap.md" >}}).
 
@@ -112,7 +112,7 @@ We also shared a [progress update on the Admin API Call for Contributions]({{< r
 
 We also announced the [sunsetting of the legacy PrestaShop cron service]({{< relref "news/posts/2025/sunsetting-the-prestashop-cron-service.md" >}}), streamlining our infrastructure.
 
-## December: Connecting and Looking Ahead
+## December: connecting and looking ahead
 
 We closed the year with significant activity in project management and releases.
 

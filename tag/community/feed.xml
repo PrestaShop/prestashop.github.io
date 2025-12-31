@@ -6,7 +6,17 @@
     <description>Recent content in community on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/community/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/community/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 2025: Year in Review</title>
+      <link>https://build.prestashop-project.org/news/2025/prestashop-year-in-review-2025/</link>
+      <pubDate>Wed, 31 Dec 2025 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2025/prestashop-year-in-review-2025/</guid>
+      <description>As 2025 comes to a close, it&amp;rsquo;s time to reflect on an incredible year for the PrestaShop project. From the highly anticipated release of PrestaShop 9 to the vibrant gatherings at FOP Days and the Developer Conference, this year has been defined by innovation, collaboration, and the unwavering dedication of our community.
+We’ve seen major technical advancements, new contribution initiatives, and a renewed focus on developer experience. Let’s take a month-by-month journey through the milestones that shaped 2025.</description>
+    </item>
+    
     <item>
       <title>From Good Intentions to Measurable Impact: PrestaShop&#39;s Call for Contributions at Open Source Experience</title>
       <link>https://build.prestashop-project.org/news/2025/call-for-contributions-open-source-experience/</link>
@@ -149,16 +159,6 @@ A special highlight of this Live Update: we will be joined by PrestaShop SA Core
       <guid>https://build.prestashop-project.org/news/2025/fop-days-2025/</guid>
       <description>The 2025 edition of Friends of Presta (FOP) Days has come to an end, leaving behind two days of discussions, technical insights, and networking. Held on March 26-27 at Le Nida in Issy-les-Moulineaux, the event brought together developers, agencies, and ecommerce professionals from the PrestaShop community.
 Collaboration and improving expertise Organized by Friends of Presta, a French non-profit association in the PrestaShop ecosystem, this event was all about collaboration and innovation.</description>
-    </item>
-    
-    <item>
-      <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
-      <link>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</link>
-      <pubDate>Thu, 20 Mar 2025 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
-      <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.
-If your module depends on Guzzle, it will no longer be available by default in PrestaShop 9. In this article, we’ll explain why Guzzle was removed, what this means for your module, and how to migrate to a suitable alternative.</description>
     </item>
     
   </channel>

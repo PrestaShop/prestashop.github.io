@@ -2,7 +2,7 @@
 layout: post
 title: "PrestaShop Year in Review 2025"
 subtitle: "A look back at a year of major releases, community events, and new initiatives"
-date: 2025-12-30
+date: 2025-12-31
 authors: [ kpodemski ]
 icon: icon-calendar
 opengraph_image: /assets/images/theme/banner-ps-project.png

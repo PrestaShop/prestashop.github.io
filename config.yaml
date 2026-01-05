@@ -16,10 +16,12 @@ cascade:
   twitter_image: "/assets/images/theme/meta-logo-build-2024.png"
 
 permalinks:
-  news: /news/:year/:slugorfilename/
+  news: /news/:year/:slugorcontentbasename/
   tags: /tag/:slug/
 
-googleAnalytics: "GTM-KF9S835S"
+services:
+  googleAnalytics:
+    ID: "GTM-KF9S835S"
       
 disqusShortname: prestashopbuild
 

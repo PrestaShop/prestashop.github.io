@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {{ partial "partials/head.html" . }}
+  {{ partial "head.html" . }}
 
   <body>
   {{ if hugo.IsProduction }}
-  {{- partial "partials/analytics_noscript.html" . }}
+  {{- partial "analytics_noscript.html" . }}
   {{ end }}
-  {{ partial "partials/header.html" . }}
+  {{ partial "header.html" . }}
 
     <div class="page-content">
       <div class="container">
@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    {{ partial "partials/footer.html" . }}
+    {{ partial "footer.html" . }}
     {{ if hugo.IsProduction }}
     <script>
       window.axeptioSettings = {

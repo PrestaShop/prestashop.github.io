@@ -8,7 +8,6 @@ disqus_url: "http://build.prestashop.com/misc/how-to-write-on-this-blog/"
 authors:  [ julienbourdeau ]
 icon: icon-pen
 tags: [help]
-published: true
 ---
 
 When we started talking about a dev blog among us, we thought about who could write, what we wanted to talk about,

@@ -7,7 +7,6 @@ date: 2016-07-05 8:07:11
 authors: [ mdekker ]
 icon: icon-puzzle
 tags: [ howto, tutorial, modules ]
-published: true
 ---
 
 PrestaShop has numerous features in the API, both hidden in its code as well as in the developer documentation and there are many tools that allow you to create your own module in no time!
@@ -40,7 +39,7 @@ When working with PrestaShop modules you might have seen the fancied configurati
 At first sight, some of them might look cool and you might get tempted to copy these as well, but don't forget that this will cost you some maintainability. This is particularly true when having to support multiple versions of PrestaShop. The `HelperForm` and `HelperOptions` classes were designed to help you with this.
 Did you know that it is possible to extend these templates and that you can define your own configuration elements? Here's a code snippet that will allow you to use PrestaShop 1.6's switch element on an older version of PrestaShop:
 
-{{< gist firstred b5016aab980ade678d741691e5b15c5b >}}
+<script src="https://gist.github.com/firstred/b5016aab980ade678d741691e5b15c5b.js"></script>
 
 You can simply place this file in the location `views/templates/admin/_configure/helper/form/form.tpl` relative to the root of your module's folder and the `HelperForm` template has been extended.
 Do you see the `$smarty.const._PS_VERSION_|@addcslashes:'\'' < '1.6'` check? This simply allows us to define several templates for different versions of PrestaShop. Pretty cool if you want to keep your code together and the view separated in a different file.
@@ -104,7 +103,7 @@ Not necessarily a direct improvement for your code, but it allows you to pack yo
 
 Here's an example of a Gruntfile:
 
-{{< gist firstred 1f6a589625ac65b2d10e07628587e9fb >}}
+<script src="https://gist.github.com/firstred/1f6a589625ac65b2d10e07628587e9fb.js"></script>
 
 ### 9. Use the validator
 This is a very simple one. You can use the validator at [https://validator.prestashop.com/](https://validator.prestashop.com/). It will show you if your module could use some improvements.

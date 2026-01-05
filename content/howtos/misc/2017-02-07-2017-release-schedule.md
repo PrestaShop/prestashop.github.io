@@ -10,7 +10,6 @@ tags:
  - release
  - "1.6"
  - "1.7"
-published: true
 ---
 
 Our release calendar for the next versions of PrestaShop 1.7 and 1.6.

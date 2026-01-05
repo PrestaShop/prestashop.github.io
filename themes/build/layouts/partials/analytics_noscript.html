@@ -1,4 +1,5 @@
-{{- $gaID := .Site.GoogleAnalytics -}}
+{{- $gaID := site.Config.Services.GoogleAnalytics.ID | default "" -}}
+{{- if not $gaID -}}{{- return -}}{{- end -}}
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ $gaID}}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->

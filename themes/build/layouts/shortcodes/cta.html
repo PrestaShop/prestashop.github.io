@@ -6,7 +6,7 @@
   {{ $url = relref . (.Get "ref") }}
 {{ end }}
 
-{{ $class := "success" }}
+{{ $class := "" }}
 {{ if .Get 1 }}
   {{ $class = .Get 1 }}
 {{ end }}
@@ -14,10 +14,19 @@
   {{ $class = .Get "class" }}
 {{ end }}
 
+{{/* Build CSS classes */}}
+{{ $ctaClasses := "cta cta--pattern" }}
+{{ if eq $class "dark" }}
+  {{ $ctaClasses = printf "%s cta-dark" $ctaClasses }}
+{{ end }}
+{{ if eq $class "sm" }}
+  {{ $ctaClasses = printf "%s cta-sm" $ctaClasses }}
+{{ end }}
+
 {{ if .Get "inline" }}
-<a href="{{ $url }}" class="btn btn-lg btn-{{ $class }} btn-inline">{{ .Inner }}</a>
+<a href="{{ $url }}" class="{{ $ctaClasses }} btn-inline"><span>{{ .Inner }}</span></a>
 {{ else }}
 <p class="text-center">
-  <a href="{{ $url }}" class="btn btn-lg btn-{{ $class }}">{{ .Inner }}</a>
+  <a href="{{ $url }}" class="{{ $ctaClasses }}"><span>{{ .Inner }}</span></a>
 </p>
 {{ end }}

@@ -4,7 +4,6 @@ title:  "Hacktoberfest 2023"
 subtitle: "OCTOBER IS AROUND THE CORNER, SO IS HACKTOBERFEST!"
 date:  2023-09-26
 authors: [ PrestaShop ]
-image: 
 icon: icon-github-alt2
 tags: [community, contribution, github, contribute]
 image: /assets/images/2023/09/Hacktoberfest2023.png

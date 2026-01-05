@@ -8,7 +8,6 @@ disqus_url: "http://build.prestashop.com/module/how-to-help-with-prestashop-tran
 authors:  [ alexeven ]
 icon: icon-globe
 tags: [translation, i18n, l10n]
-published: true
 ---
 
 It's not always easy to begin [translating PrestaShop](https://crowdin.com/project/prestashop-official) when the project has already been started by other contributors.

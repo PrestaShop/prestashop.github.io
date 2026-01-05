@@ -13,6 +13,7 @@ tags:
 - releases
 - "9.0"
 - "9.0.x"
+- "9.x"
 ---
 
 PrestaShop 9.0.2 is now available! This second patch version represents yet another step in making PrestaShop 9 more reliable. It focuses on fixing some reported issues to provide a more stable and seamless experience for merchants and developers.

@@ -2,7 +2,7 @@
 layout: post  
 title: PrestaShop Developer Conference 2025 - Filmed Morning Sessions and Q&A Now Available  
 subtitle: Follow the opening sessions and questions & answers from the 2025 event  
-date: 2026-01-08  
+date: 2026-01-06  
 authors: [ coffrep ]  
 icon: icon-leaf  
 tags: [psdevcon, news, event]  

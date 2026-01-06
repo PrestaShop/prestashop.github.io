@@ -1,12 +1,15 @@
 ---
 layout: post
 title: "Introducing Shipments in PrestaShop: finally solving the Multicarrier problem"
-subtitle: "What to expect for PrestaShop 8.2 and 9"
-date: 2025-12-18
+subtitle: "A flexible multicarrier shipping system arriving in PrestaShop 9.1"
+date: 2026-01-08
 authors: [GericFosse]
 icon: icon-code
 tags:
-  - news
+- "9.1"
+- "9.1.x"
+- "9.x"
+- feature
 ---
 We are introducing a fundamental paradigm shift in PrestaShop's core: moving the order management center of gravity from the **Carrier** to the **Shipment**.
 

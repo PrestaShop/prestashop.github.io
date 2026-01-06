@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing Shipments in PrestaShop: finally solving the Multicarrier problem"
 subtitle: "A flexible multicarrier shipping system arriving in PrestaShop 9.1"
-date: 2026-01-06
+date: 2026-01-07
 authors: [GericFosse]
 icon: icon-code
 tags:

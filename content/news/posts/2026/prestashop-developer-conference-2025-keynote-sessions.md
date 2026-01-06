@@ -11,7 +11,7 @@ tags: [psdevcon, news, event]
 The PrestaShop Developer Conference happened a few weeks ago, and this year's edition brought together our vibrant community for a day packed with technical insights, product announcements, and open discussions about the future of PrestaShop.   
 Over the coming weeks, we'll be publishing a series of blog posts, similar to this one, diving into the event’s sessions, giving you insights and takeaways. Each post will spotlight different talks and themes from the conference.
 
-If you missed the event or want to revisit the key moments, we've made all sessions available on PrestaShop’s [YouTube channel](https://www.youtube.com/@prestashop).
+If you missed the event or want to revisit the key moments, we've made all [sessions available on PrestaShop’s YouTube channel](https://www.youtube.com/watch?v=4vavpAx3MdY&list=PLyZYn1MMU7-zV2l3LNEQh78Fjp83ip_Da).
 
 In this post, we'll focus on two key moments: the opening sessions that set the tone for the day and the closing Q&A where the community asked their questions. Below you will find what you need to watch.
 

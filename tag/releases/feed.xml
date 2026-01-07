@@ -6,18 +6,7 @@
     <description>Recent content in releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Jan 2026 10:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PrestaShop 9.1 Beta is open for feedback!</title>
-      <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-beta1/</link>
-      <pubDate>Wed, 07 Jan 2026 10:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-beta1/</guid>
-      <description>PrestaShop 9.1 Beta is here, and it includes several major improvements that you can already start exploring and sharing feedback on. Your input is valuable for the final release of PrestaShop 9.1.
-We are excited to announce the availability of the first beta version of PrestaShop 9.1. This release brings significant changes, including a new default Hummingbird theme, a revamped discount system, and multi-carrier support.
-Remember, this beta version is pre-release software.</description>
-    </item>
-    
+    <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PrestaShop 9.0.2-2.1: what happened and why the version looks different</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</link>
@@ -161,6 +150,17 @@ PrestaShop 9.0 beta 1 In June, when we released the alpha 1 version, we also pub
 What&amp;rsquo;s new in PrestaShop 8.2? PrestaShop 8.2 is a minor version that includes a few improvements, as well as bug fixes, and it is relatively small compared to the previous minor versions. Here are some highlights.
 Improvements Correctly checking overrides during module installation
 PrestaShop used to check for overrides during module installation, but the process didn’t fully block installation if a conflicting override was found.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 8.1.7 Is Available</title>
+      <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-7-maintenance-release/</link>
+      <pubDate>Tue, 25 Jun 2024 09:00:00 +0200</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-7-maintenance-release/</guid>
+      <description>A new patch for PrestaShop 8.1 is now available! This release includes several significant improvements and numerous bug fixes. In this article, we&amp;rsquo;ll explore these updates in detail.
+PrestaShop 8.1.7 is now available. This release addresses several bugs and brings various improvements.
+It is recommended to upgrade your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before. Upgrade is possible using the latest version of the 1-Click Upgrade module.</description>
     </item>
     
   </channel>

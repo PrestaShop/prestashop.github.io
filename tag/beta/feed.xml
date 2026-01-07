@@ -6,18 +6,7 @@
     <description>Recent content in beta on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Jan 2026 10:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/beta/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PrestaShop 9.1 Beta is open for feedback!</title>
-      <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-beta1/</link>
-      <pubDate>Wed, 07 Jan 2026 10:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-beta1/</guid>
-      <description>PrestaShop 9.1 Beta is here, and it includes several major improvements that you can already start exploring and sharing feedback on. Your input is valuable for the final release of PrestaShop 9.1.
-We are excited to announce the availability of the first beta version of PrestaShop 9.1. This release brings significant changes, including a new default Hummingbird theme, a revamped discount system, and multi-carrier support.
-Remember, this beta version is pre-release software.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/beta/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PrestaShop 9.1 is in feature freeze</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-9-1-feature-freeze/</link>
@@ -164,6 +153,17 @@ This Beta release is a great opportunity for you to start working with it before
 Done:
 All pull requests have been merged New features:
 Improved back office design Works better on mobile devices (all pages are accessible on mobile now!) New menu, can be scrolled Improved header (looks the same on legacy and symfon pages) Based on Bootstrap 4 final Theme customization New pages migrated to symfony Advanced Parameters &amp;gt; Administration Advanced Parameters &amp;gt; Import Shop Parameters &amp;gt; General Shop Parameters &amp;gt; General &amp;gt; Maintenance Shop Parameters &amp;gt; Product Settings Shop Parameters &amp;gt; Customer Settings Added support for PHP 7.</description>
+    </item>
+    
+    <item>
+      <title>PrestaShop 1.7.3.0 beta 1 is out!</title>
+      <link>https://build.prestashop-project.org/news/2017/prestashop-1-7-3-0-beta-1/</link>
+      <pubDate>Fri, 15 Dec 2017 09:10:11 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2017/prestashop-1-7-3-0-beta-1/</guid>
+      <description>The first beta version for PrestaShop 1.7.3.0 is now ready for you to test and give feedback about!
+We said it earlier, many times. Now it is the right time to announce proudly that we are close to releasing 1.7.3.0. Features and improvements have found their way to the 1.7 codebase, we are thrilled to let you have a look at it and play with it before everyone else!
+However, note that it is a beta version, not a release candidate.</description>
     </item>
     
   </channel>

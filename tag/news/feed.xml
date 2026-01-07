@@ -6,7 +6,18 @@
     <description>Recent content in news on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jan 2026 10:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop 9.1 Beta is open for feedback!</title>
+      <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-beta1/</link>
+      <pubDate>Wed, 07 Jan 2026 10:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-beta1/</guid>
+      <description>PrestaShop 9.1 Beta is here, and it includes several major improvements that you can already start exploring and sharing feedback on. Your input is valuable for the final release of PrestaShop 9.1.
+We are excited to announce the availability of the first beta version of PrestaShop 9.1. This release brings significant changes, including a new default Hummingbird theme, a revamped discount system, and multi-carrier support.
+Remember, this beta version is pre-release software.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Developer Conference 2025 - Filmed Morning Sessions and Q&amp;A Now Available</title>
       <link>https://build.prestashop-project.org/news/2026/prestashop-developer-conference-2025-keynote-sessions/</link>
@@ -146,16 +157,6 @@ During this event, PrestaShop will be presenting alongside ALLMA, a project base
       <guid>https://build.prestashop-project.org/news/2024/Second-PrestaShop-Developer-Conference-Participate-as-Speaker/</guid>
       <description>Are you a passionate PrestaShop developer or enthusiast? We are happy to announce that the call for presentations is now open for the second edition of the PrestaShop Developer Conference, happening on November 6, 2024 in Paris, France. This event offers a prime opportunity to engage in developer discussions, better understand solutions, and connect with fellow community members.
 What is this event about? The PrestaShop Developer Conference empowers the developer community within the PrestaShop ecosystem.</description>
-    </item>
-    
-    <item>
-      <title>Simplifying releases with a single Zip</title>
-      <link>https://build.prestashop-project.org/news/2024/new-zip-distribution-channel/</link>
-      <pubDate>Tue, 28 May 2024 00:00:00 +0200</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2024/new-zip-distribution-channel/</guid>
-      <description>As we continue to evolve and adapt to the global e-commerce landscape, we are implementing changes to streamline our operations and enhance our project’s trajectory. In 2022, we aimed to make PrestaShop a company-neutral open source project. Today, while keeping the project neutral, we are changing how we distribute the PrestaShop solution, starting with the upcoming 9.0 release.
-One release, one Zip As you know, versions are distributed as two separate Zips, one on GitHub and a later one on prestashop.</description>
     </item>
     
   </channel>

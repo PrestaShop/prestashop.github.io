@@ -6,7 +6,28 @@
     <description>Recent content in 9.x on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/9.x/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jan 2026 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/9.x/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Improved Discounts System in PrestaShop 9.1</title>
+      <link>https://build.prestashop-project.org/news/2026/improved-discounts-system/</link>
+      <pubDate>Wed, 07 Jan 2026 09:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2026/improved-discounts-system/</guid>
+      <description>Discounts are a pivotal element in ecommerce, driving sales and customer loyalty. As shops grow, the complexity of managing these promotions increases, often highlighting limitations in flexibility and performance. Recognizing these challenges, we embarked on a mission to revamp the discounts system in PrestaShop, aiming for a solution that is both powerful and easy to use.
+Here is a closer look at the improved discounts system coming to PrestaShop 9.1.</description>
+    </item>
+    
+    <item>
+      <title>Introducing Shipments in PrestaShop: finally solving the Multicarrier problem</title>
+      <link>https://build.prestashop-project.org/news/2026/introducing-shipments/</link>
+      <pubDate>Wed, 07 Jan 2026 09:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2026/introducing-shipments/</guid>
+      <description>We are introducing a fundamental paradigm shift in PrestaShop&amp;rsquo;s core: moving the order management center of gravity from the Carrier to the Shipment.
+This major architectural change is already partially available for testing. Starting with PrestaShop 9.1, you can access these new features under a feature flag. This allows merchants, agencies and developers to start adapting to the new &amp;ldquo;Shipment&amp;rdquo; logic today, without disrupting existing stores.
+Work in progress This feature is currently available for testing purposes.</description>
+    </item>
+    
     <item>
       <title>PrestaShop 9.1 is in feature freeze</title>
       <link>https://build.prestashop-project.org/news/2025/prestashop-9-1-feature-freeze/</link>

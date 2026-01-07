@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Introducing Shipments in PrestaShop: finally solving the Multicarrier problem</title>
+    <link href="/style.css?1767788407" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Introducing Shipments in PrestaShop: finally solving the Multicarrier problem" />
+<meta property="og:description" content="We are introducing a fundamental paradigm shift in PrestaShop’s core: moving the order management center of gravity from the Carrier to the Shipment." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2026/introducing-shipments/" />
+    <meta property="og:image" content="https://build.prestashop-project.org/assets/images/theme/banner-ps-project.png"/>
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2026-01-07T09:00:00+01:00" />
+    <meta property="article:modified_time" content="2026-01-07T09:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/banner-ps-project.png">
+<meta name="twitter:title" content="Introducing Shipments in PrestaShop: finally solving the Multicarrier problem"/>
+<meta name="twitter:description" content="A flexible multicarrier shipping system arriving in PrestaShop 9.1"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF9S835S');</script>
+
+    
+</head>
+
+
+  <body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF9S835S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/9.0/">Articles on 9.0</a></li>
+        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">Introducing Shipments in PrestaShop: finally solving the Multicarrier problem</h1>
+              
+                <h3 class="post-subtitle">A flexible multicarrier shipping system arriving in PrestaShop 9.1</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/GericFosse/">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/52211274?v=4" alt="Géric Fossé's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/GericFosse/">Géric Fossé</a>
+      </div>
+        
+          <div class="author-display-role">Product Manager</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jan 7, 2026
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=Introducing&#43;Shipments&#43;in&#43;PrestaShop%3A&#43;finally&#43;solving&#43;the&#43;Multicarrier&#43;problem&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fintroducing-shipments%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fintroducing-shipments%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>We are introducing a fundamental paradigm shift in PrestaShop&rsquo;s core: moving the order management center of gravity from the <strong>Carrier</strong> to the <strong>Shipment</strong>.</p>
+<p>This major architectural change is already partially available for testing. Starting with <strong>PrestaShop 9.1</strong>, you can access these new features under a <strong>feature flag</strong>. This allows merchants, agencies and developers to start adapting to the new &ldquo;Shipment&rdquo; logic today, without disrupting existing stores.</p>
+
+
+
+<div class="alert alert-warning"><h4><i class="icon-warning"></i>
+        Work in progress
+    </h4>This feature is currently available for <strong>testing purposes</strong>. While we encourage you to try it out and provide feedback, please keep in mind that it is still under active development and should be used with caution.
+</div>
+
+<h2 id="the-legacy-problem-1-order--1-carrier">The legacy problem: 1 order = 1 carrier</h2>
+<p>For years, PrestaShop has operated on a strict model: <strong>1 order = 1 payment = 1 carrier</strong>. While simple, this legacy architecture fails to support modern ecommerce needs where a single order often requires multiple packages or shipments.
+Let&rsquo;s take this example: A customer orders a sofa (freight carrier) and a lamp (standard carrier).</p>
+<ul>
+<li>Checkout shows <em>one</em> carrier.</li>
+<li>Order is silently duplicated.</li>
+<li>Merchant sees two orders, same reference.</li>
+<li>Customer receives confusing emails and invoices.</li>
+</ul>
+<p>This is not a UX bug - it&rsquo;s a structural limitation that creates significant friction:</p>
+<ul>
+<li><strong>Manual workarounds:</strong> If products require different carriers, merchants are forced to use manual workarounds or third-party modules that only partially solve the problem.</li>
+<li><strong>Confusing splits:</strong> Currently, PrestaShop automatically splits the order into separate orders, one per carrier, sharing the same reference. This confuses both merchants and customers.</li>
+<li><strong>Checkout friction:</strong> The system attempts to find a &ldquo;best carrier&rdquo; combination (price/grade), but often displays the carrier details (name, delivery time) of only the <em>last</em> product added to the cart, even if the price is a sum of multiple carriers.</li>
+</ul>
+<p>We realized that to fix this, we couldn&rsquo;t just patch the existing logic. <strong>We needed a structural change.</strong></p>
+<h3 id="a-confusing-legacy-customer-experience">A confusing legacy customer experience:</h3>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+ <div style="flex: 1 1 48%; margin: 1%;">
+  <figure style="text-align: center;">
+    <a href="/assets/images/2026/01/old_frontend_order.jpg" target="_blank" rel="noopener">
+    <img style="max-width: 100%; height: auto; border-radius: 0.25rem;" src="/assets/images/2026/01/old_frontend_order.jpg" alt="Old frontend order">
+    </a>
+    <figcaption style="font-size: 0.875em; color: #6c757d;">In this checkout screenshot, only one carrier is displayed, even though multiple carriers are actually involved. This is misleading.</figcaption>
+  </figure>
+ </div>
+ <div style="flex: 1 1 48%; margin: 1%;">
+  <figure style="text-align: center;">
+    <a href="/assets/images/2026/01/order_duplication.png" target="_blank" rel="noopener">
+    <img style="max-width: 100%; height: auto; border-radius: 0.25rem;" src="/assets/images/2026/01/order_duplication.png" alt="Order duplication">
+    </a>
+    <figcaption style="font-size: 0.875em; color: #6c757d;">As a result, the order is automatically duplicated: one order per carrier. This behavior is confusing for both customers and merchants (the same happens in the Back Office).</figcaption>
+  </figure>
+ </div>
+</div>
+<h2 id="the-solution-shifting-from-carrier-to-shipment">The solution: shifting from &ldquo;Carrier&rdquo; to &ldquo;Shipment&rdquo;</h2>
+<p>We are making a fundamental paradigm shift, redefining order management around <strong>shipments</strong> rather than <strong>carriers</strong>.</p>
+<p>We are introducing the concept of a &ldquo;Shipment&rdquo; via 2 new database tables:</p>
+<ol>
+<li><code>PREFIX_shipment</code></li>
+<li><code>PREFIX_shipment_product</code></li>
+</ol>
+<h3 id="why-new-tables">Why new tables?</h3>
+<p>We believe this structural change is necessary for clarity and scalability. By adding dedicated shipment tables, we ensure:</p>
+<ul>
+<li><strong>Explicit structure:</strong> An order can clearly have multiple shipments, different carriers, and distinct product references per shipment.</li>
+<li><strong>Granular control:</strong> Each shipment will have its own status, opening the door for future &ldquo;partially shipped&rdquo; or &ldquo;partially delivered&rdquo; features.</li>
+<li><strong>Future-proofing:</strong> This unlocks potential for B2B features (shipping to multiple addresses) and Multi-warehousing (shipping from different locations).</li>
+<li><strong>Safe adoption:</strong> By introducing new tables rather than modifying existing ones, we avoid breaking changes and allow for a smooth transition via a feature flag.</li>
+</ul>
+<h3 id="the-new-improved-shipment-feature-flag">The new “Improved shipment” feature flag:</h3>
+<p><img src="/assets/images/2026/01/Improved_shipments_feature_flag.png" alt="Improved shipments feature flag"></p>
+<h2 id="what-we-are-delivering">What we are delivering</h2>
+<p>Our goal is to stop the confusing order splitting and provide true Multishipping capabilities.</p>
+<h3 id="1-implementing-shipments">1. Implementing Shipments</h3>
+<p>Merchants will gain control over fulfillment directly from the order page:</p>
+<ul>
+<li><strong>Manual splitting:</strong> Merchants can manually split fulfillment into multiple shipments.</li>
+<li><strong>Shipment merging:</strong> Conversely, merchants can merge shipments back into one if needed.</li>
+</ul>
+<h3 id="2-improving-multicarrier-display">2. Improving Multicarrier display</h3>
+<p>We are fixing the user interface while maintaining the current selection logic (best price/grade):</p>
+<ul>
+<li><strong>Checkout clarity:</strong> We will properly display all available shipping options. For the displayed options, all carrier info (name, time) will be visible, no more guessing games.</li>
+<li><strong>Consistent data:</strong> Carrier-related details will be correctly shown on Order Confirmation pages, Order Details, Invoices, Delivery Slips, and Emails.</li>
+<li><strong>No more duplication:</strong> We will stop splitting orders when multiple shipments are needed.</li>
+</ul>
+<h3 id="the-new-shipment-splitting-and-merging-experience-in-the-bo">The new Shipment splitting and merging experience in the BO:</h3>
+<video width="100%" controls>
+    <source src="/assets/video/2026/01/multishipping_split_merge.mp4" type="video/mp4">"
+</video>
+<h2 id="project-status--roadmap">Project status &amp; roadmap</h2>
+<p>This feature is being released under a <strong>feature flag</strong> to allow gradual adoption and community feedback.</p>
+<h3 id="where-we-stand-available-in-feature-flag">Where we stand (available in Feature Flag)</h3>
+<p>With the help of the community, we have completed the initial 5 development batches:</p>
+<ul>
+<li>Feature flag and dedicated database creation.</li>
+<li>Stopped order duplication for Multicarrier cases.</li>
+<li>Added Shipments to the Order Detail page in the Back Office.</li>
+<li>Implemented Shipment merging and splitting logic.</li>
+<li>Displaying Multicarrier info during Front Office Checkout, Order Final Summary, and Order History.</li>
+</ul>
+<h3 id="how-to-enable-it">How to enable it?</h3>
+<p>Like all feature previews, you need to enable the corresponding feature flag in your back office administration panel to test it:</p>
+<ol>
+<li>Go to <strong>Advanced Parameters</strong> &gt; <strong>New &amp; Experimental Features</strong>.</li>
+<li>Find &ldquo;<strong>Improved shipment</strong>&rdquo; in the list.</li>
+<li>Switch the toggle to <strong>Enabled</strong>.</li>
+<li><strong>Save</strong> the settings.</li>
+<li>When the warning modal appears (&quot;<em>You are about to enable a feature that is not stable yet&hellip;</em>&quot;), click &ldquo;<strong>Enable</strong>&rdquo;.</li>
+</ol>
+<h3 id="whats-next-target-q1-2026">What’s next (target: Q1 2026)</h3>
+<p>One final batch remains to complete the MVP of this feature:</p>
+<ul>
+<li><strong>Back office improvements:</strong> handling product addition/deletion within the Order Detail page.</li>
+<li><strong>Emails:</strong> displaying Multicarrier details in Order Confirmation emails.</li>
+<li><strong>Documents:</strong> updating Invoices to reflect multiple carriers.</li>
+<li><strong>Edge cases:</strong> handling order creation directly from the Back Office cart.</li>
+</ul>
+<p>We plan to develop this final part in <strong>Q1 2026</strong>.</p>
+<h2 id="summary">Summary</h2>
+<p>This shipment-based model represents a major step forward in how PrestaShop handles fulfillment, but it is being introduced carefully and without risk for existing stores. <strong>As long as the feature flag remains disabled, current behavior stays exactly the same</strong>, with no impact on checkout, orders, or existing modules.</p>
+<p>For those who want to help shape this evolution, the feature flag provides a safe way to explore the new Shipment logic on staging environments, confront it with real multicarrier use cases, and identify edge cases or integration issues early. Feedback, questions, and observations can be shared in a <a href="https://github.com/PrestaShop/PrestaShop/discussions/40463">dedicated GitHub Discussion</a>.</p>
+<p>Input from merchants, agencies, and module developers at this stage is essential to ensure this new foundation is robust, extensible, and ready for long-term use in PrestaShop’s core.</p>
+<p>This is a foundational change, and we’re building it together with the community - thank you for the feedback and the positive reception when we shared this work during recent events.</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jan 7, 2026</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/9.1/">9.1</a>
+
+  <a class="label label-primary" href="/tag/9.1.x/">9.1.x</a>
+
+  <a class="label label-primary" href="/tag/9.x/">9.x</a>
+
+  <a class="label label-primary" href="/tag/feature/">feature</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/GericFosse/">Géric Fossé</a>
+      <span>Product Manager</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2026\/introducing-shipments\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+    
+    <script>
+      window.axeptioSettings = {
+        userCookiesDomain: "prestashop-project.org",
+        clientId: "6859145f7baee141c249caa3",
+        cookiesVersion: "fr-eu-23-06-2025",
+        googleConsentMode: {
+          default: {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            wait_for_update: 500
+          }
+        }
+      };
+      (function(d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+      })(document, "script");
+    </script>
+    
+  </body>
+</html>

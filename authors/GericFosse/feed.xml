@@ -6,7 +6,18 @@
     <description>Recent content in GericFosse on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Nov 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/GericFosse/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jan 2026 09:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/GericFosse/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing Shipments in PrestaShop: finally solving the Multicarrier problem</title>
+      <link>https://build.prestashop-project.org/news/2026/introducing-shipments/</link>
+      <pubDate>Wed, 07 Jan 2026 09:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2026/introducing-shipments/</guid>
+      <description>We are introducing a fundamental paradigm shift in PrestaShop&amp;rsquo;s core: moving the order management center of gravity from the Carrier to the Shipment.
+This major architectural change is already partially available for testing. Starting with PrestaShop 9.1, you can access these new features under a feature flag. This allows merchants, agencies and developers to start adapting to the new &amp;ldquo;Shipment&amp;rdquo; logic today, without disrupting existing stores.
+Work in progress This feature is currently available for testing purposes.</description>
+    </item>
+    
     <item>
       <title>Hummingbird v2.0.0 Beta Is Available</title>
       <link>https://build.prestashop-project.org/news/2025/hummingbird-v2-beta/</link>

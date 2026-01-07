@@ -5,6 +5,8 @@ subtitle: "A flexible multicarrier shipping system arriving in PrestaShop 9.1"
 date: 2026-01-07 09:00:00
 authors: [GericFosse]
 icon: icon-code
+opengraph_image: /assets/images/theme/banner-ps-project.png
+twitter_image: /assets/images/theme/banner-ps-project.png
 tags:
 - "9.1"
 - "9.1.x"

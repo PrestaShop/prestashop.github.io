@@ -5,7 +5,11 @@ subtitle: "A complete overhaul of how discounts work in PrestaShop"
 date:   2026-01-07 09:00:00
 authors: [ ibahloul-ps ]
 icon: icon-leaf
-tags: [ feature, "9.x", "9.1.x" ]
+tags:
+- "9.1"
+- "9.1.x"
+- "9.x"
+- feature
 opengraph_image: /assets/images/theme/banner-ps-project.png
 twitter_image: /assets/images/theme/banner-ps-project.png
 ---

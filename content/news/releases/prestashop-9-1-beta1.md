@@ -127,6 +127,8 @@ When you find a problem, please [file a clear bug report on GitHub](https://gith
 
 If you are a developer, you can also [submit a pull request](https://devdocs.prestashop.com/9/contribute/contribute-pull-requests/) to fix bugs.
 
+We encourage you to share your feedback in the [dedicated GitHub discussion](https://github.com/PrestaShop/PrestaShop/discussions/40465) or on [Slack](https://www.prestashop-project.org/slack/).
+
 ## PrestaShop 9.1 - What's next?
 
 Every version is the result of major contributions from our entire ecosystem, including our PrestaShop Experts. Stay tuned for the announcement of the 9.1 release.

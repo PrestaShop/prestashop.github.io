@@ -2,7 +2,7 @@
 layout: post
 title: "Improved Discounts System in PrestaShop 9.1"
 subtitle: "A complete overhaul of how discounts work in PrestaShop"
-date:   2026-01-07
+date:   2026-01-07 09:00:00
 authors: [ IliesBahloul ]
 icon: icon-leaf
 tags: [ feature, "9.x", "9.1.x" ]
@@ -12,7 +12,7 @@ twitter_image: /assets/images/theme/banner-ps-project.png
 
 Discounts are a pivotal element in e-commerce, driving sales and customer loyalty. As shops grow, the complexity of managing these promotions increases, often highlighting limitations in flexibility and performance. Recognizing these challenges, we embarked on a mission to revamp the discounts system in PrestaShop, aiming for a solution that is both powerful and easy to use.
 
-Here is a closer look at the improved discounts system coming to PrestaShop.
+Here is a closer look at the improved discounts system coming to PrestaShop 9.1.
 
 {{% notice type="warning" title="Work in progress" icon="warning" %}}
 This feature is currently available for **testing purposes**. While we encourage you to try it out and provide feedback, please keep in mind that it is still under active development and should be used with caution.
@@ -109,12 +109,6 @@ We introduced a new compatibility system that operates at the discount type leve
     4.  **Free Gift**.
 3.  **Same-Type Compatibility**: Multiple eligible discounts of the same type are applied based on priority (lowest to highest). If priorities match, they are ordered by creation date.
 4.  **Dynamic Re-evaluation**: Eligible discounts are re-evaluated and applied with every order modification or promo code application.
-
-## Availability
-
-This feature is available starting from **PrestaShop 9.1**.
-
-{{< cta "https://prestashop.com/versions" >}}Download PrestaShop 9.1 to test the feature{{< /cta >}}
 
 ### How to enable it?
 

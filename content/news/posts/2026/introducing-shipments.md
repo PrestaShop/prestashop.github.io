@@ -23,8 +23,8 @@ This feature is currently available for **testing purposes**. While we encourage
 
 ## The legacy problem: 1 order = 1 carrier
 
-For years, PrestaShop has operated on a strict model: **1 order = 1 payment = 1 carrier**. While simple, this legacy architecture fails to support modern e-commerce needs where a single order often requires multiple packages or shipments.
-Let's take this example: A customer order's sofa (freight carrier) and a lamp (standard carrier).
+For years, PrestaShop has operated on a strict model: **1 order = 1 payment = 1 carrier**. While simple, this legacy architecture fails to support modern ecommerce needs where a single order often requires multiple packages or shipments.
+Let's take this example: A customer orders a sofa (freight carrier) and a lamp (standard carrier).
 
 - Checkout shows *one* carrier.
 - Order is silently duplicated.
@@ -98,7 +98,7 @@ Merchants will gain control over fulfillment directly from the order page:
 
 We are fixing the user interface while maintaining the current selection logic (best price/grade):
 
-- **Checkout clarity:** We will properly display all available shipping options. For the displayed options, all carrier info (Name, Time) will be visible, no more guessing games.
+- **Checkout clarity:** We will properly display all available shipping options. For the displayed options, all carrier info (name, time) will be visible, no more guessing games.
 - **Consistent data:** Carrier-related details will be correctly shown on Order Confirmation pages, Order Details, Invoices, Delivery Slips, and Emails.
 - **No more duplication:** We will stop splitting orders when multiple shipments are needed.
 
@@ -136,10 +136,10 @@ Like all feature previews, you need to enable the corresponding feature flag in 
 
 One final batch remains to complete the MVP of this feature:
 
-- **Back office improvements:** Handling product addition/deletion within the Order Detail page.
-- **Emails:** Displaying Multicarrier details in Order Confirmation emails.
-- **Documents:** Updating Invoices to reflect multiple carriers.
-- **Edge cases:** Handling order creation directly from the Back Office cart.
+- **Back office improvements:** handling product addition/deletion within the Order Detail page.
+- **Emails:** displaying Multicarrier details in Order Confirmation emails.
+- **Documents:** updating Invoices to reflect multiple carriers.
+- **Edge cases:** handling order creation directly from the Back Office cart.
 
 We plan to develop this final part in **Q1 2026**.
 

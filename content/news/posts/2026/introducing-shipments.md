@@ -42,13 +42,17 @@ We realized that to fix this, we couldn't just patch the existing logic. **We ne
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
  <div style="flex: 1 1 48%; margin: 1%;">
   <figure style="text-align: center;">
+    <a href="/assets/images/2026/01/old_frontend_order.jpg" target="_blank" rel="noopener">
     <img style="max-width: 100%; height: auto; border-radius: 0.25rem;" src="/assets/images/2026/01/old_frontend_order.jpg" alt="Old frontend order">
+    </a>
     <figcaption style="font-size: 0.875em; color: #6c757d;">In this checkout screenshot, only one carrier is displayed, even though multiple carriers are actually involved. This is misleading.</figcaption>
   </figure>
  </div>
  <div style="flex: 1 1 48%; margin: 1%;">
   <figure style="text-align: center;">
+    <a href="/assets/images/2026/01/order_duplication.png" target="_blank" rel="noopener">
     <img style="max-width: 100%; height: auto; border-radius: 0.25rem;" src="/assets/images/2026/01/order_duplication.png" alt="Order duplication">
+    </a>
     <figcaption style="font-size: 0.875em; color: #6c757d;">As a result, the order is automatically duplicated: one order per carrier. This behavior is confusing for both customers and merchants (the same happens in the Back Office).</figcaption>
   </figure>
  </div>
@@ -141,7 +145,7 @@ We plan to develop this final part in **Q1 2026**.
 
 This shipment-based model represents a major step forward in how PrestaShop handles fulfillment, but it is being introduced carefully and without risk for existing stores. **As long as the feature flag remains disabled, current behavior stays exactly the same**, with no impact on checkout, orders, or existing modules.
 
-For those who want to help shape this evolution, the feature flag provides a safe way to explore the new Shipment logic on staging environments, confront it with real multicarrier use cases, and identify edge cases or integration issues early. Feedback, questions, and observations can be shared in a [dedicated GitHub Discussion](https://www.notion.so/BlogPost-Introducing-Shipments-in-PrestaShop-finally-solving-the-Multicarrier-problem-2ca5d6cf071f8024adfcc34a9ab23ec5?pvs=21).
+For those who want to help shape this evolution, the feature flag provides a safe way to explore the new Shipment logic on staging environments, confront it with real multicarrier use cases, and identify edge cases or integration issues early. Feedback, questions, and observations can be shared in a [dedicated GitHub Discussion](#).
 
 Input from merchants, agencies, and module developers at this stage is essential to ensure this new foundation is robust, extensible, and ready for long-term use in PrestaShop’s core.
 

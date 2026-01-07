@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing Shipments in PrestaShop: finally solving the Multicarrier problem"
 subtitle: "A flexible multicarrier shipping system arriving in PrestaShop 9.1"
-date: 2026-01-07
+date: 2026-01-07 09:00:00
 authors: [GericFosse]
 icon: icon-code
 tags:
@@ -14,6 +14,10 @@ tags:
 We are introducing a fundamental paradigm shift in PrestaShop's core: moving the order management center of gravity from the **Carrier** to the **Shipment**.
 
 This major architectural change is already partially available for testing. Starting with **PrestaShop 9.1**, you can access these new features under a **feature flag**. This allows merchants, agencies and developers to start adapting to the new "Shipment" logic today, without disrupting existing stores.
+
+{{% notice type="warning" title="Work in progress" icon="warning" %}}
+This feature is currently available for **testing purposes**. While we encourage you to try it out and provide feedback, please keep in mind that it is still under active development and should be used with caution.
+{{% /notice %}}
 
 ## The legacy problem: 1 order = 1 carrier
 
@@ -111,6 +115,16 @@ With the help of the community, we have completed the initial 5 development batc
 - Added Shipments to the Order Detail page in the Back Office.
 - Implemented Shipment merging and splitting logic.
 - Displaying Multicarrier info during Front Office Checkout, Order Final Summary, and Order History.
+
+### How to enable it?
+
+Like all feature previews, you need to enable the corresponding feature flag in your back office administration panel to test it:
+
+1.  Go to **Advanced Parameters** > **New & Experimental Features**.
+2.  Find "**Improved shipment**" in the list.
+3.  Switch the toggle to **Enabled**.
+4.  **Save** the settings.
+5.  When the warning modal appears ("*You are about to enable a feature that is not stable yet...*"), click "**Enable**".
 
 ### What’s next (target: Q1 2026)
 

@@ -14,7 +14,7 @@ opengraph_image: /assets/images/theme/banner-ps-project.png
 twitter_image: /assets/images/theme/banner-ps-project.png
 ---
 
-Discounts are a pivotal element in e-commerce, driving sales and customer loyalty. As shops grow, the complexity of managing these promotions increases, often highlighting limitations in flexibility and performance. Recognizing these challenges, we embarked on a mission to revamp the discounts system in PrestaShop, aiming for a solution that is both powerful and easy to use.
+Discounts are a pivotal element in ecommerce, driving sales and customer loyalty. As shops grow, the complexity of managing these promotions increases, often highlighting limitations in flexibility and performance. Recognizing these challenges, we embarked on a mission to revamp the discounts system in PrestaShop, aiming for a solution that is both powerful and easy to use.
 
 Here is a closer look at the improved discounts system coming to PrestaShop 9.1.
 
@@ -22,7 +22,7 @@ Here is a closer look at the improved discounts system coming to PrestaShop 9.1.
 This feature is currently available for **testing purposes**. While we encourage you to try it out and provide feedback, please keep in mind that it is still under active development and should be used with caution.
 {{% /notice %}}
 
-## Why the change?
+## Why this change?
 
 This update represents more than just a functional migration. During our discovery phases, consistent feedback pointed to specific pain points: a lack of simplicity and, more critically, performance issues related to how cart rules interacted with each other.
 

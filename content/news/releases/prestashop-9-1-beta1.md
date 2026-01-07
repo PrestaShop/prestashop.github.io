@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 9.1 Beta is open for feedback!"
 subtitle: "Start testing Hummingbird 2, Multi-carrier, and improved Discounts."
-date:   2026-01-07
+date:   2026-01-07 10:00:00
 authors: [ PrestaShop ]
 icon: icon-compass
 image: /assets/images/2026/01/PrestaShop-9.1.0-Beta1-LinkedIn_Facebook.png

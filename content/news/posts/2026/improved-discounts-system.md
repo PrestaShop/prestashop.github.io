@@ -2,7 +2,7 @@
 layout: post
 title: "Improved Discounts System in PrestaShop 9.1"
 subtitle: "A complete overhaul of how discounts work in PrestaShop"
-date:   2026-01-06
+date:   2026-01-07
 authors: [ IliesBahloul ]
 icon: icon-leaf
 tags: [ feature, "9.x", "9.1.x" ]

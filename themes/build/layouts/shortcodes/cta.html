@@ -1,3 +1,23 @@
+{{ $url := .Get 0 }}
+{{ if .Get "url" }}
+  {{ $url = .Get "url" }}
+{{ end }}
+{{ if .Get "ref" }}
+  {{ $url = relref . (.Get "ref") }}
+{{ end }}
+
+{{ $class := "success" }}
+{{ if .Get 1 }}
+  {{ $class = .Get 1 }}
+{{ end }}
+{{ if .Get "class" }}
+  {{ $class = .Get "class" }}
+{{ end }}
+
+{{ if .Get "inline" }}
+<a href="{{ $url }}" class="btn btn-lg btn-{{ $class }} btn-inline">{{ .Inner }}</a>
+{{ else }}
 <p class="text-center">
-  <a href="{{ .Get 0 }}" class="btn btn-lg btn-{{ with .Get 1 }}{{ . }}{{ else }}success{{ end }}">{{ .Inner }}</a>
+  <a href="{{ $url }}" class="btn btn-lg btn-{{ $class }}">{{ .Inner }}</a>
 </p>
+{{ end }}

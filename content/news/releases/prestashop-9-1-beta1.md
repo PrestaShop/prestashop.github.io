@@ -88,9 +88,9 @@ Of course, there are many other improvements and bug fixes in this release.
 
 ## How to test PrestaShop 9.1
 
-You can download a fully featured PrestaShop 9.1 Classic Beta 1 version from [PrestaShop.com](https://prestashop.com/versions/). This version includes the PrestaShop 9.1 core, additional modules from [PrestaShop SA](https://prestashop.com/essentials/) compatible with this version, and integration with the PrestaShop Marketplace.
+You can download a fully featured PrestaShop 9.1 Classic Beta 1 version from [here](https://github.com/PrestaShopCorp/prestashop-classic/releases/download/9.1.0-3.0-beta.1/prestashop_9.1.0-3.0-beta.1.zip). This version includes the PrestaShop 9.1 core, additional modules from [PrestaShop SA](https://prestashop.com/essentials/) compatible with this version, and integration with the PrestaShop Marketplace.
 
-{{< cta "https://prestashop.com/versions#9.1.0-beta1" >}}Download PrestaShop 9.1 Beta 1{{< /cta >}}
+{{< cta "https://assets.prestashop3.com/dst/edition/corporate/9.1.0-3.0-beta.1/prestashop_edition_classic_version_9.1.0-3.0-beta.1.zip" >}}Download PrestaShop 9.1 Beta 1{{< /cta >}}
 
 ### Requirements for PrestaShop 9.1 Beta 1
 

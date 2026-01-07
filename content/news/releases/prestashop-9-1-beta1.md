@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 9.1 Beta is open for feedback!"
 subtitle: "Start testing Hummingbird 2, Multi-carrier, and improved Discounts."
-date:   2025-12-30
+date:   2026-01-07
 authors: [ PrestaShop ]
 icon: icon-compass
 image: /assets/images/2026/01/PrestaShop-9.1.0-Beta1-LinkedIn_Facebook.png
@@ -37,23 +37,28 @@ Here are the main features you will find in this new version, along with more in
 
 ### Hummingbird 2.0 Beta - new default theme
 
-Hummingbird 2 is a major evolution of the theme architecture and is planned to become the default theme starting from PrestaShop 9.1. It provides a structured, scalable foundation that enables developers and agencies to build and customize ecommerce stores more easily.
+[Hummingbird 2](https://github.com/PrestaShop/hummingbird/) represents a major evolution in theme architecture, set to become the default standard in PrestaShop 9.1. It provides a structured, scalable foundation that empowers developers and agencies to built and customize online stores with ease. Built on a modern tech stack including Bootstrap 5, it prioritizes performance and inclusivity, achieving over 95% compliance with the European Accessibility Act (EAA).
 
 ![Hummingbird v2.0.0 Beta](/assets/images/2025/11/banner-hummingbird-v2-beta.png)
 
-{{< cta ref="/news/posts/2025/hummingbird-v2-beta" >}}Learn more about Hummingbird 2.0{{< /cta >}}
+{{< cta-group >}}
+{{< cta ref="/news/posts/2025/hummingbird-v2-beta" inline="true" >}}Learn more about Hummingbird 2.0{{< /cta >}}
+{{< cta url="https://github.com/PrestaShop/hummingbird/discussions" inline="true" >}}Discussion & feedback{{< /cta >}}
+{{< /cta-group >}}
+
+Since Hummingbird is one of the biggest projects in PrestaShop, we decided to open a dedicated discussion space on [GitHub Discussions](https://github.com/PrestaShop/hummingbird/discussions) for you to share your feedback and report any issues you may encounter while testing it.
 
 ---
 
 ### Multi-carrier / Multi-shipping feature
 
-PrestaShop 9.1 Beta addresses the complexity of the “1 order = 1 carrier” limitation by moving toward a shipment-based approach. This includes split and merge shipments, clearer displays across key touchpoints, and improved clarity for both merchants and customers.
+PrestaShop 9.1 Beta addresses the complexity of the "1 order = 1 carrier" limitation by moving toward a shipment-based approach. This includes split and merge shipments, clearer displays across key touchpoints, and improved clarity for both merchants and customers.
 
-<small>*Note: This feature is behind a feature flag.*</small>
+<small>*Note: this feature is behind a feature flag.*</small>
 
 {{< cta-group >}}
 {{< cta url="https://www.youtube.com/watch?v=JljSmYH-vdg&t=775s" inline="true" >}}Watch the demo{{< /cta >}}
-{{< cta url="#" inline="true" >}}Read article{{< /cta >}}
+{{< cta url="/news/2026/introducing-shipments/" inline="true" >}}Read article{{< /cta >}}
 {{< /cta-group >}}
 
 ---
@@ -62,17 +67,17 @@ PrestaShop 9.1 Beta addresses the complexity of the “1 order = 1 carrier” li
 
 Discounts have been redesigned to simplify their creation and improve performance and clarity compared to the legacy cart rules approach. The new structure is based on four types: Catalog, Cart, Free Shipping, and Free Gift.
 
-<small>*Note: This feature is behind a feature flag.*</small>
+<small>*Note: this feature is behind a feature flag.*</small>
 
 {{< cta-group >}}
 {{< cta url="https://www.youtube.com/watch?v=8PL0dwdRiho&t=1941s" inline="true" >}}Watch the demo{{< /cta >}}
-{{< cta url="#" inline="true" >}}Read article{{< /cta >}}
+{{< cta url="/news/2026/improved-discounts-system/" inline="true" >}}Read article{{< /cta >}}
 {{< /cta-group >}}
 
 ---
 
 {{% notice type="info" title="What is a feature flag?" %}}
-Some 9.1 Beta features are experimental and are available under Feature Flags. You will need to enable them to test them in your environment. You can find these settings in the "New & Experimental Features" page in the Advanced Parameters menu.
+Some 9.1 Beta features are experimental and are available under feature flags. You will need to enable them to test them in your environment. You can find these settings in the "New & Experimental Features" page in the Advanced Parameters menu.
 {{% /notice %}}
 
 ### What else is new in PrestaShop 9.1 Beta?
@@ -101,7 +106,7 @@ Make sure to check all system requirements in the [documentation](https://devdoc
 
 If you prefer not to use the Classic version, you can build a custom ZIP file using the PrestaShop 9.1 Beta 1 installer, which does not include PrestaShop SA modules. To do so, use the [PrestaShop Release Creation](https://github.com/PrestaShop/PrestaShop/tree/develop/tools/build) tool.
 
-1. Clone the [PrestaShop repository](https://github.com/PrestaShop/PrestaShop/tree/9.1.0-beta.1) using the "9.1.0-beta.1" tag: `git clone git@github.com:PrestaShop/PrestaShop.git --branch "9.1.0-beta.1" .`. Note: Use a directory name other than `.` if you wish to clone the repository elsewhere.
+1. Clone the [PrestaShop repository](https://github.com/PrestaShop/PrestaShop/tree/9.1.0-beta.1-build) using the "9.1.0-beta.1-build" tag: `git clone git@github.com:PrestaShop/PrestaShop.git --branch "9.1.0-beta.1-build" .`. Note: use a directory name other than `.` if you wish to clone the repository elsewhere.
 2. Run `composer create-release` or `php tools/build/CreateRelease.php` in the root directory of the PrestaShop repository.
 3. The script will create a ZIP file with the PrestaShop 9.1 Beta 1 distribution in the `tools/build/releases/9.1.0_date_time/` directory.
 
@@ -114,7 +119,7 @@ We are focusing on stabilizing 9.1. You can help by testing this beta version an
 ### How you can help
 
 1.  **Install PrestaShop 9.1 Beta** in a test environment.
-2.  **Enable the relevant Feature Flags** to test the new capabilities.
+2.  **Enable the relevant feature flags** to test the new capabilities.
 3.  **Read the articles** linked above to better understand the new features and start testing.
 4.  **Report issues** if you find any and share the feedback as early as possible.
 

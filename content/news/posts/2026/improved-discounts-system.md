@@ -134,5 +134,5 @@ This improved discount system is a significant step forward in making PrestaShop
 
 We invite you to test this feature in your **development environments** and share your thoughts. Did we miss a specific use case? Is the new interface intuitive?
 
-Please share your feedback, report bugs, or suggest improvements on [GitHub Discussions](https://github.com/PrestaShop/PrestaShop/discussions). Your input is invaluable in helping us polish this feature for the stable release.
+Please share your feedback, report bugs, or suggest improvements on [GitHub Discussions](https://github.com/PrestaShop/PrestaShop/discussions/40464). Your input is invaluable in helping us polish this feature for the stable release.
 

@@ -147,7 +147,7 @@ We plan to develop this final part in **Q1 2026**.
 
 This shipment-based model represents a major step forward in how PrestaShop handles fulfillment, but it is being introduced carefully and without risk for existing stores. **As long as the feature flag remains disabled, current behavior stays exactly the same**, with no impact on checkout, orders, or existing modules.
 
-For those who want to help shape this evolution, the feature flag provides a safe way to explore the new Shipment logic on staging environments, confront it with real multicarrier use cases, and identify edge cases or integration issues early. Feedback, questions, and observations can be shared in a [dedicated GitHub Discussion](#).
+For those who want to help shape this evolution, the feature flag provides a safe way to explore the new Shipment logic on staging environments, confront it with real multicarrier use cases, and identify edge cases or integration issues early. Feedback, questions, and observations can be shared in a [dedicated GitHub Discussion](https://github.com/PrestaShop/PrestaShop/discussions/40463).
 
 Input from merchants, agencies, and module developers at this stage is essential to ensure this new foundation is robust, extensible, and ready for long-term use in PrestaShop’s core.
 

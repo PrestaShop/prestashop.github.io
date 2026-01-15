@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PrestaShop Developer Conference 2025 Filmed Sessions - Modern Development Practices and Architecture
+title: "PrestaShop Developer Conference 2025 Filmed Sessions - Modern Development Practices and Architecture"
 subtitle: Key insights and practical takeaways from PrestaShop's technical sessions
 date: 2026-01-15
 authors: [ coffrep ]

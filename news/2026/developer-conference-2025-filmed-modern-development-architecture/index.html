@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop Developer Conference 2025 Filmed Sessions - Modern Development Practices and Architecture</title>
+    <link href="/style.css?1768555141" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop Developer Conference 2025 Filmed Sessions - Modern Development Practices and Architecture" />
+<meta property="og:description" content="The PrestaShop Developer Conference took place a few months ago: last week, we’ve started publishing a series of blog posts diving into the event’s sessions, sharing insights and key takeaways with you. We are continuing the series with another spotlight on modern development practices and architectural approaches." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2026/developer-conference-2025-filmed-modern-development-architecture/" />
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2026-01-16T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2026-01-16T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build-2024.png">
+<meta name="twitter:title" content="PrestaShop Developer Conference 2025 Filmed Sessions - Modern Development Practices and Architecture"/>
+<meta name="twitter:description" content="Key insights and practical takeaways from PrestaShop&#39;s technical sessions"/>
+<meta name="twitter:site" content="@PrestaShopOrg"/>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF9S835S');</script>
+
+    
+</head>
+
+
+  <body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF9S835S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <div class="menu-button"><i class="icon icon-store"></i></div>
+      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        News <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Project <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/9.0/">Articles on 9.0</a></li>
+        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
+        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
+        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
+        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
+        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
+        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Contribute <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
+        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Learn <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/howtos/">How-tos</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
+        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="post-title">PrestaShop Developer Conference 2025 Filmed Sessions - Modern Development Practices and Architecture</h1>
+              
+                <h3 class="post-subtitle">Key insights and practical takeaways from PrestaShop&#39;s technical sessions</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/coffrep/">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/103060695?v=4" alt="Patrick Coffre's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/coffrep/">Patrick Coffre</a>
+      </div>
+        
+          <div class="author-display-role">OS Communication Specialist</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jan 16, 2026
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;Developer&#43;Conference&#43;2025&#43;Filmed&#43;Sessions&#43;-&#43;Modern&#43;Development&#43;Practices&#43;and&#43;Architecture&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fdeveloper-conference-2025-filmed-modern-development-architecture%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
+    <i class="icon-twitter-alt"></i>
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fdeveloper-conference-2025-filmed-modern-development-architecture%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>The PrestaShop Developer Conference took place a few months ago: last week, we&rsquo;ve started publishing a series of blog posts diving into the event&rsquo;s sessions, sharing insights and key takeaways with you. We are continuing the series with another spotlight on modern development practices and architectural approaches.</p>
+<p>If you missed the event or want to revisit the key moments, we&rsquo;ve made all sessions available on PrestaShop’s <a href="https://www.youtube.com/watch?v=4vavpAx3MdY&amp;list=PLyZYn1MMU7-zV2l3LNEQh78Fjp83ip_Da">YouTube channel</a>.</p>
+<p>From automated deployment strategies to innovative module architecture patterns, the talks provide practical knowledge you can immediately apply to your projects. Let&rsquo;s dive into the key takeaways from each session.</p>
+<h2 id="streamlining-deployments-with-deployer">Streamlining Deployments with Deployer</h2>
+<p><a href="https://www.youtube.com/watch?v=pYJhqWNwyy8"><img src="https://img.youtube.com/vi/pYJhqWNwyy8/0.jpg" alt="Automated Deployment with Deployer"></a></p>
+<p>Ivan Ramirez (Chief Technology Officer, KIWIK) and Jérémie Legrand (Lead Developer and IT Architect, KIWIK) share their hands-on experience implementing automated deployment with Deployer, addressing the real-world challenges that many development teams face. Their talk covers critical technical hurdles including translation management, asset handling, and module-specific deployment issues.</p>
+<p>The speakers provide valuable insights on managing module updates while maintaining deployment flexibility for production environments. They also tackle the complex challenge of version and theme fragmentation.</p>
+<p>This session is essential viewing for teams looking to reduce deployment friction and establish reliable automated processes without sacrificing the agility needed for quick production fixes.</p>
+<h2 id="rethinking-module-architecture-with-modern-symfony-principles">Rethinking Module Architecture with Modern Symfony Principles</h2>
+<p><a href="https://www.youtube.com/watch?v=HAz_Beg3p-8&amp;t=49s"><img src="https://img.youtube.com/vi/HAz_Beg3p-8/0.jpg" alt="What if we structured our modules differently?"></a></p>
+<p>Arnaud Scoté is PHP Symfony Developer / PrestaShop Ecommerce Expert at Griiv: during the event, Arnaud presents a fresh approach to module design that aligns with contemporary Symfony development practices. His methodology focuses on leveraging services and creating dedicated classes for hook calls, significantly improving code readability and maintainability.</p>
+<p>The session then demonstrates how to implement SOLID principles. Arnaud also introduces a base abstract class concept that can serve as a foundation for robust module development.</p>
+<p>This talk is particularly valuable for developers looking to modernize their module architecture and adopt best practices that will make their code more scalable and easier to maintain over time.</p>
+<h2 id="prestaflow-automated-testing-framework">PrestaFlow: Automated Testing Framework</h2>
+<p><a href="https://www.youtube.com/watch?v=iSdFNKe1EOw&amp;t=34s"><img src="https://img.youtube.com/vi/iSdFNKe1EOw/0.jpg" alt="PrestaFlow: automated testing framework"></a></p>
+<p>Jonathan Danse, PrestaShop Developer and Designer at PrestaEdit, introduces PrestaFlow, an open source automated testing framework that became publicly available in August 2025. The presentation covers the framework&rsquo;s philosophy and ecosystem, demonstrating its practical application through a live demo on an existing store.</p>
+<p>The session showcases how PrestaFlow can accelerate production deployments while significantly reducing regression risks.</p>
+<p>For teams struggling with manual testing bottlenecks or seeking to improve their continuous integration processes, this session offers a practical solution with immediate implementation potential.</p>
+<h2 id="evolution-of-infrastructure-as-code-at-prestashop">Evolution of Infrastructure as Code at PrestaShop</h2>
+<p><a href="https://www.youtube.com/watch?v=ZcqLyd1UZqY&amp;t=46s"><img src="https://img.youtube.com/vi/ZcqLyd1UZqY/0.jpg" alt="Infrastructure as Code Evolution"></a></p>
+<p>Joseph Morin (DevOps, PrestaShop) and Claude-Arnaud Perrot (Lead DevOps, PrestaShop) provide an inside look at PrestaShop&rsquo;s infrastructure evolution, sharing lessons learned from their journey from basic Terraform deployments to a sophisticated Terragrunt-based architecture.</p>
+<p>The presentation addresses the scalability challenges that emerged as PrestaShop&rsquo;s infrastructure grew and details the strategic decisions that led to their architectural refactoring. They share best practices encountered during this transition, providing valuable guidance for other organizations facing similar scaling challenges.</p>
+<p>This session is valuable for DevOps professionals and technical leads responsible for infrastructure decisions, offering real-world insights from a successful large-scale infrastructure transformation.</p>
+<h2 id="building-enterprise-grade-erp-connectors">Building Enterprise-Grade ERP Connectors</h2>
+<p><a href="https://www.youtube.com/watch?v=0qm3HemQYHY"><img src="https://img.youtube.com/vi/0qm3HemQYHY/0.jpg" alt="ERP Integration Patterns"></a></p>
+<p>Mauricio Dinamarca, General Manager, Canal Cero, addresses one of the most challenging aspects of scaling PrestaShop stores: robust integration with enterprise ERP systems like BSale, Microsoft Dynamics, and SAP Business One. Drawing from Canal Cero&rsquo;s extensive implementation experience, he shares battle-tested patterns for building reliable, real-time synchronization systems.</p>
+<p>The session covers critical architecture patterns for bi-directional synchronization, graceful handling of rate limits and failures, and queue management strategies for high-volume operations. Mauricio provides practical insights into testing complex integration scenarios and optimizing performance for large product catalogs.</p>
+<p>Whether you&rsquo;re an agency serving your clients or managing your own large-scale store, this session delivers actionable strategies for building robust ERP integrations that scale reliably in production environments.</p>
+<p>The sessions represent just a fraction of the valuable content from the PrestaShop Developer Conference 2025. Each talk provides practical, implementable solutions for common development challenges, backed by real-world experience from industry experts.
+We encourage you to explore these sessions, share them with your team, and contribute to shaping the future of PrestaShop development.</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jan 16, 2026</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/psdevcon/">psdevcon</a>
+
+  <a class="label label-primary" href="/tag/news/">news</a>
+
+  <a class="label label-primary" href="/tag/event/">event</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/coffrep/">Patrick Coffre</a>
+      <span>OS Communication Specialist</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2026\/developer-conference-2025-filmed-modern-development-architecture\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>
+          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+        <a href="https://github.com/PrestaShop" title="GitHub repository">
+          <i class="icon-github-alt"></i>
+        </a>
+        
+
+        
+        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
+          <i class="icon-twitter-alt"></i>
+        </a>
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+    
+    <script>
+      window.axeptioSettings = {
+        userCookiesDomain: "prestashop-project.org",
+        clientId: "6859145f7baee141c249caa3",
+        cookiesVersion: "fr-eu-23-06-2025",
+        googleConsentMode: {
+          default: {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            wait_for_update: 500
+          }
+        }
+      };
+      (function(d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+      })(document, "script");
+    </script>
+    
+  </body>
+</html>

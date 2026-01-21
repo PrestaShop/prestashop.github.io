@@ -26,7 +26,7 @@ This presentation explores how to leverage MCP to extend PrestaShop's modular ar
 
 ## AI and productivity: measuring the real impact of code assistants
 
-In this video, Julien Bonvarlet is Engineering Manager at Core Engine, PrestaShop. This presentation explores how AI-powered coding assistants like Copilot, Cursor, and Claude are reshaping software development workflows. But what value do they actually deliver to development teams?
+In this video, Julien Bonvarlet explores how AI-powered coding assistants like Copilot, Cursor, and Claude are reshaping software development workflows. But what value do they actually deliver to development teams?
 
 This session dives into practical applications of these tools: generating boilerplate, refactoring legacy code, writing tests, producing documentation, and streamlining migrations. Through live demonstrations, you'll discover how AI assistants reduce cognitive overhead and free developers to concentrate on solving business problems instead of repetitive coding tasks.
 

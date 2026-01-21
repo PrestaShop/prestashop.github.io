@@ -6,7 +6,17 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Jan 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrestaShop Developer Conference 2025 Filmed Sessions - AI and Productivity</title>
+      <link>https://build.prestashop-project.org/news/2026/developer-conference-2025-film-AI-productivity/</link>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 +0100</pubDate>
+      
+      <guid>https://build.prestashop-project.org/news/2026/developer-conference-2025-film-AI-productivity/</guid>
+      <description>The third PrestaShop Developer Conference took place in November 2025: two weeks ago, we started publishing a series of blog posts diving into the event&amp;rsquo;s sessions, sharing insights and key takeaways with you. Last week, we spotlighted modern development practices and architectural approaches. This week, we&amp;rsquo;re continuing the series with a focus on artificial intelligence and productivity.
+If you missed the event or want to revisit the key moments, we&amp;rsquo;ve made all sessions available on PrestaShop&amp;rsquo;s YouTube channel.</description>
+    </item>
+    
     <item>
       <title>PrestaShop Developer Conference 2025 Filmed Sessions - Modern Development Practices and Architecture</title>
       <link>https://build.prestashop-project.org/news/2026/developer-conference-2025-filmed-modern-development-architecture/</link>
@@ -150,16 +160,6 @@ Hummingbird will become the new default theme in PrestaShop starting from versio
       <guid>https://build.prestashop-project.org/news/2025/sunsetting-the-prestashop-cron-service/</guid>
       <description>The PrestaShop cron service will be officially shut down in December 2025, marking the end of a legacy component that once helped stores without full server access automate scheduled tasks.
 What is the PrestaShop cron service? This service was originally introduced to assist merchants on shared hosting environments that did not allow setting up native cron jobs. It worked together with the cronjobs module, sending periodic requests to execute scheduled actions such as currency rate updates or module maintenance routines.</description>
-    </item>
-    
-    <item>
-      <title>Call for contributions: Admin API - great start!</title>
-      <link>https://build.prestashop-project.org/news/2025/call-for-contributions-admin-api-progress/</link>
-      <pubDate>Wed, 12 Nov 2025 00:00:00 +0100</pubDate>
-      
-      <guid>https://build.prestashop-project.org/news/2025/call-for-contributions-admin-api-progress/</guid>
-      <description>Two months ago, we launched our second Call for Contributions initiative, this time focusing on the Admin API. We&amp;rsquo;re excited to share the progress that&amp;rsquo;s been made!
-What is this initiative about? Following the success of our first Call for Contributions focused on hooks, we asked the community during the FoP Days to vote on what to tackle next. The Admin API emerged as a top priority, alongside hooks and web accessibility.</description>
     </item>
     
   </channel>

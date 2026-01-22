@@ -1,0 +1,11 @@
+<p>A huge thank you to everyone who contributed to this release! Your dedication helps make PrestaShop stronger, more secure, and better for everyone. We truly appreciate your time and expertise.</p>
+<p>Want to join the movement? <a href="https://www.prestashop-project.org/get-involved/">Start contributing today</a> and help shape the future of open source e-commerce!</p>
+
+<div class="avatars-grid">
+    {{ range sort .Params }}
+        <a href="https://github.com/{{ . }}" title="{{ . }}" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/{{ . }}.png?size=200" width="96" height="96" alt="{{ . }}">
+            <span class="contributor-name">{{ . }}</span>
+        </a>
+    {{ end }}
+</div>

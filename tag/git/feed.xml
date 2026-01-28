@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/git/</link>
+    <description>Recent content in Git on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+  <language>en-us</language>
+      <lastBuildDate>Wed, 31 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/git/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop ZIP archives repository is available</title>
+          <link>https://build.prestashop-project.org/news/2023/we-publish-old-zip-archives/</link>
+          <pubDate>Wed, 31 May 2023 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2023/we-publish-old-zip-archives/</guid>
+          <description>In order to make sure old release packages remain available for anyone who needs them, we published a new GitHub repository “ZIP Archives”, which aims to store all published PrestaShop ZIP archives.</description>
+        </item>
+      
+        <item>
+          <title>How to rebase your Git branch</title>
+          <link>https://build.prestashop-project.org/howtos/misc/rebasing-your-git-branch/</link>
+          <pubDate>Thu, 11 May 2017 09:10:11 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/howtos/misc/rebasing-your-git-branch/</guid>
+          <description>Contributing code to PrestaShop can be scary for first-timers, because not everyone knows how Git works. By the time you have figured how to properly push your changes to GitHub, the codebase has changed, rendering your suggestions impossible to merge – leading to frustration on both sides. It’s high time you learn about git rebase.</description>
+        </item>
+      
+        <item>
+          <title>Set up your Git for contributing</title>
+          <link>https://build.prestashop-project.org/howtos/misc/set-up-your-git-for-contributing/</link>
+          <pubDate>Thu, 30 Jul 2015 11:21:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/howtos/misc/set-up-your-git-for-contributing/</guid>
+          <description>Any open source project comes with its own set of rules to harmonize everybody’s contributions. Usually the guidelines are described in a CONTRIBUTING.md file inside the project root directory.</description>
+        </item>
+      
+        <item>
+          <title>Create the perfect .gitignore file for your PrestaShop projects</title>
+          <link>https://build.prestashop-project.org/howtos/misc/prestashop-perfect-gitignore/</link>
+          <pubDate>Mon, 20 Apr 2015 11:21:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/howtos/misc/prestashop-perfect-gitignore/</guid>
+          <description>As a serious developer, you need to use versioning (or “revision control”) for your projects, in order to track changes to your files… and be able to travel back in time when a disaster happens. There are many CVS (Concurrent Versions System) available out there today, but Git is by far the most popular in 2015, and one of the most used in the Open Source world, right behind Subversion (svn).</description>
+        </item>
+      
+  </channel>
+</rss>

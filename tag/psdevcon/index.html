@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Psdevcon</title>
+    <link href="/style.css?1769601046" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="alternate" type="application/rss+xml" href="https://build.prestashop-project.org/tag/psdevcon/feed.xml" title="PrestaShop Developers' blog" />
+    
+<meta property="og:title" content="Psdevcon" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://build.prestashop-project.org/tag/psdevcon/" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/theme/meta-logo-build-2024.png">
+<meta name="twitter:title" content="Psdevcon"/>
+<meta name="twitter:description" content=""/>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF9S835S');</script>
+
+    
+</head>
+
+
+  <body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF9S835S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org/">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/news/2017/how-to-best-contact-us/">
+            How to contact us
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+    </li>
+  </ul>
+</nav>
+          </div>
+
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+<div class="home">
+
+  <div class="row">
+    <div class="col-md-12"><header class="page-title-block">
+            <h1 class="page-title">Articles about Psdevcon</h1>
+          </header><ul class="post-list">
+        
+        
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Jan 21, 2026
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Patrick Coffre</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2026/developer-conference-2025-film-ai-productivity/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2026/developer-conference-2025-film-ai-productivity/">PrestaShop Developer Conference 2025 Filmed Sessions - AI and Productivity</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Exploring AI agents, code assistants, and the future of ecommerce</p>
+            
+
+            <p class="post-summary">The third PrestaShop Developer Conference took place in November 2025: two weeks ago, we started publishing a series of blog posts diving into the event’s sessions, sharing insights and key takeaways with you. Last week, we spotlighted modern development practices and architectural approaches. This week, we’re continuing the series with a focus on artificial intelligence and productivity.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2026/developer-conference-2025-film-ai-productivity/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Jan 16, 2026
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Patrick Coffre</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2026/developer-conference-2025-filmed-modern-development-architecture/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2026/developer-conference-2025-filmed-modern-development-architecture/">PrestaShop Developer Conference 2025 Filmed Sessions - Modern Development Practices and Architecture</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Key insights and practical takeaways from PrestaShop&#39;s technical sessions</p>
+            
+
+            <p class="post-summary">The PrestaShop Developer Conference took place a few months ago: last week, we’ve started publishing a series of blog posts diving into the event’s sessions, sharing insights and key takeaways with you. We are continuing the series with another spotlight on modern development practices and architectural approaches.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2026/developer-conference-2025-filmed-modern-development-architecture/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Jan 6, 2026
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Patrick Coffre</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2026/prestashop-developer-conference-2025-keynote-sessions/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2026/prestashop-developer-conference-2025-keynote-sessions/">PrestaShop Developer Conference 2025 - Filmed Morning Sessions and Q&amp;A Now Available</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Follow the opening sessions and questions &amp; answers from the 2025 event</p>
+            
+
+            <p class="post-summary">The PrestaShop Developer Conference happened a few weeks ago, and this year’s edition brought together our vibrant community for a day packed with technical insights, product announcements, and open discussions about the future of PrestaShop.
+Over the coming weeks, we’ll be publishing a series of blog posts, similar to this one, diving into the event’s sessions, giving you insights and takeaways. Each post will spotlight different talks and themes from the conference.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2026/prestashop-developer-conference-2025-keynote-sessions/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Dec 2, 2025
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Patrick Coffre</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2025/prestashop-developer-conference-2025-event-recap/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2025/prestashop-developer-conference-2025-event-recap/">PrestaShop Developer Conference 2025 - Event Recap</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Highlights and takeaways from the third Developer Conference in Paris</p>
+            
+
+            <p class="post-summary">On November 19, 2025, the PrestaShop developer community convened in Paris, and online via a global livestream, for the third PrestaShop Developer Conference. The program featured hands-on sessions, live demonstrations, and expert talks, alongside a major announcement. Attendees deepened their understanding of the PrestaShop ecosystem, gained project information, and explored practical advancements they can apply in their daily work.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2025/prestashop-developer-conference-2025-event-recap/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Oct 2, 2025
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By PrestaShop team</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2025/register-for-prestashop-developer-conference-2025/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2025/register-for-prestashop-developer-conference-2025/">PrestaShop Developer Conference 2025: Register now!</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Registration for the third PrestaShop Developer Conference is now open</p>
+            
+
+            <p class="post-summary">The ecommerce world is advancing at an exciting pace, creating fresh opportunities for developers and businesses. That’s why we are excited to announce the third edition of the PrestaShop Developer Conference, taking place on November 19, 2025, in Paris and, for the first time, online.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2025/register-for-prestashop-developer-conference-2025/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Jul 3, 2025
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By PrestaShop team</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2025/call-for-speakers-prestashop-developer-conference-november-2025/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2025/call-for-speakers-prestashop-developer-conference-november-2025/">Call for Speakers: PrestaShop Developer Conference Returns in November 2025</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Share your expertise at the third edition of our annual event</p>
+            
+
+            <p class="post-summary">We are very excited to announce that the call for presentations is now open for the third edition of the PrestaShop Developer Conference, taking place in Paris on November 19, 2025, in a hybrid format, with both onsite and online attendance options.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2025/call-for-speakers-prestashop-developer-conference-november-2025/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Apr 30, 2025
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Vincent Guesnard</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2025/psdevcon2024-cybersecurity-presentation/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2025/psdevcon2024-cybersecurity-presentation/">PSDevCon2024: Cybersecurity – What No One Dares to Say</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Read a summary of Vincent Guesnard’s cybersecurity presentation at the Developer Conference 2024</p>
+            
+
+            <p class="post-summary">Application security is often a forgotten aspect of the digital world. Everyone agrees that it is essential, but no one really wants to face its consequences. Today, in this guest blog post, it’s time to share the truths that no one wants to say.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2025/psdevcon2024-cybersecurity-presentation/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Jan 21, 2025
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Jonathan Danse</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2025/testing-and-analyzing-your-prestashop-modules-automatically/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2025/testing-and-analyzing-your-prestashop-modules-automatically/">PSDevCon 2024 - testing and analyzing your PrestaShop modules automatically</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Learn more about Jonathan Danse’s PrestaShop Developer Conference module presentation</p>
+            
+
+            <p class="post-summary">During the PrestaShop Developer Conference 2024, Jonathan Danse presented methods for automatically testing and analyzing modules, ensuring their quality and reliability. In this guest article, Jonathan shares the key points from his conference and offers practical advice. Learn how to ensure high-performing modules with every deployment.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2025/testing-and-analyzing-your-prestashop-modules-automatically/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Dec 18, 2024
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Matthias Goudjil</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2024/puik-the-new-ui-kit-from-prestashop/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2024/puik-the-new-ui-kit-from-prestashop/">PSDevCon 2024 - PUIK (PrestaShop UI Kit) - The new UI kit from PrestaShop</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Explore a summary of the PUIK presentation delivered at the second PrestaShop Developer Conference</p>
+            
+
+            <p class="post-summary">During the second PrestaShop Developer Conference on November 6, 2024, I was able to introduce PUIK (PrestaShop UI Kit) to participants. This blog post provides a written summary of the presentation. During the talk, the audience gained a clearer understanding of PrestaShop’s UI Kit, based on the new PrestaShop Design System. Learn how this library aims to provide a complete set of reusable components for the entire PrestaShop ecosystem. The GitHub repository is available here.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2024/puik-the-new-ui-kit-from-prestashop/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Nov 19, 2024
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Patrick Coffre</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2024/prestashop-developer-conference-2024/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2024/prestashop-developer-conference-2024/">Event Synopsis - PrestaShop Developer Conference 2024</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Discover what happened at PrestaShop&#39;s second Developer Conference in Paris</p>
+            
+
+            <p class="post-summary">On November 6, 2024, the PrestaShop developer community gathered in Paris for a day of learning and networking at the second PrestaShop Developer Conference. The agenda was filled with insightful sessions and demonstrations. The event provided a platform to grow and learn more about PrestaShop’s ecosystem, get project information as well as explore advancements usable in daily professional activities.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2024/prestashop-developer-conference-2024/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+
+      </ul>
+
+    </div>
+  </div>
+
+  
+    
+    <div class="row">
+      <div class="col-md-12">
+
+        <nav>
+          <ul class="pager">
+
+            <li class="previous disabled">
+              
+              <span aria-hidden="true">&larr; Newer</span>
+              
+            </li>
+            <li>
+              <span class="page_number">Page 1 of 2</span>
+            </li>
+            <li class="next ">
+              
+              <a href="/tag/psdevcon/page/2/">
+                Older <span aria-hidden="true">&rarr;</span>
+              </a>
+              
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/news/2017/how-to-best-contact-us/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+    
+    <script>
+      window.axeptioSettings = {
+        userCookiesDomain: "prestashop-project.org",
+        clientId: "6859145f7baee141c249caa3",
+        cookiesVersion: "fr-eu-23-06-2025",
+        googleConsentMode: {
+          default: {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            wait_for_update: 500
+          }
+        }
+      };
+      (function(d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+      })(document, "script");
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PabloBorowicz on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/authors/pabloborowicz/</link>
+    <description>Recent content in PabloBorowicz on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+  <language>en-us</language>
+      <lastBuildDate>Wed, 19 Apr 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/pabloborowicz/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>A New Organization For The Open Source Project</title>
+          <link>https://build.prestashop-project.org/news/2023/a-new-organization-for-the-open-source-project/</link>
+          <pubDate>Wed, 19 Apr 2023 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2023/a-new-organization-for-the-open-source-project/</guid>
+          <description>Today, I want to share the new organization for decision-making that will be set up for the PrestaShop project. We believe this organization will help our community grow, get even more involved, and work together in building a better PrestaShop, faster.</description>
+        </item>
+      
+        <item>
+          <title>An update on the Symfony migration</title>
+          <link>https://build.prestashop-project.org/news/2022/introducing-horizontal-migration/</link>
+          <pubDate>Mon, 04 Jul 2022 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2022/introducing-horizontal-migration/</guid>
+          <description>In December 2015, a groundbreaking change in PrestaShop was announced: the introduction of the Symfony framework into the CMS. The goal was to gradually replace PrestaShop’s custom framework with Symfony, and switch its templating system from Smarty to Twig. This project was known as “The Symfony migration”. Looking back, we realize that referring to this project as a “migration” wasn’t really accurate at all.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop beyond 1.7</title>
+          <link>https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/</link>
+          <pubDate>Tue, 14 Dec 2021 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/</guid>
+          <description>Five years ago, PrestaShop 1.7 was released to the world, introducing Symfony, the Classic theme and child theme features, interface improvements, and so much more. With each one of the eight minor versions that followed, 1.7 kept on growing both in features and stability. Its maturity is recognized by its success: with over 170,000 live shops detected at the time of writing, it’s the most popular PrestaShop version used in production shops on the web.</description>
+        </item>
+      
+        <item>
+          <title>Announcing public demos from the maintainers team</title>
+          <link>https://build.prestashop-project.org/news/2021/first-public-oss-demo/</link>
+          <pubDate>Fri, 19 Feb 2021 16:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2021/first-public-oss-demo/</guid>
+          <description>Last month, the maintainers team held a special event for the open source project: a public demonstrations session. To better understand what this is about, let’s provide some context.</description>
+        </item>
+      
+        <item>
+          <title>From legacy to future architecture: Connecting the dots</title>
+          <link>https://build.prestashop-project.org/news/2020/from-legacy-to-future-architecture-connecting-the-dots/</link>
+          <pubDate>Mon, 30 Nov 2020 09:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2020/from-legacy-to-future-architecture-connecting-the-dots/</guid>
+          <description>This is the fourth and final article in a series we introduced last year, that aims to describe where we are, where we are going, and some ideas on how we’ll get there.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop in 2019 and beyond, part 3: The Future Architecture</title>
+          <link>https://build.prestashop-project.org/news/2019/prestashop-in-2019-and-beyond-part-3-the-future-architecture/</link>
+          <pubDate>Thu, 26 Dec 2019 09:30:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2019/prestashop-in-2019-and-beyond-part-3-the-future-architecture/</guid>
+          <description>This is the third in a series of articles we introduced earlier this year, that aims to describe where we are, where we are going, and some ideas on how we’ll get there.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop in 2019 and beyond, part 2: The Pain Points</title>
+          <link>https://build.prestashop-project.org/news/2019/prestashop-in-2019-and-beyond-part-2-pain-points/</link>
+          <pubDate>Mon, 07 Oct 2019 08:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2019/prestashop-in-2019-and-beyond-part-2-pain-points/</guid>
+          <description>This is the second in a series of articles we introduced earlier this year, which aims to describe where we are, where we are going, and some ideas on how we’ll get there.</description>
+        </item>
+      
+        <item>
+          <title>Announcing end of support for obsolete PHP versions</title>
+          <link>https://build.prestashop-project.org/news/2019/announcing-end-of-support-for-obsolete-php-versions/</link>
+          <pubDate>Wed, 22 May 2019 09:10:11 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2019/announcing-end-of-support-for-obsolete-php-versions/</guid>
+          <description> About a year and a half ago, we announced that PrestaShop 1.7.4.0 would be dropping support for PHP 5.4 and 5.5. At that time, this decision was justified by the impending end-of-maintenance for Symfony 2 and its replacement by Symfony 3, which didn’t support PHP versions older than 5.5.</description>
+        </item>
+      
+        <item>
+          <title>Release of PrestaShop 1.7.5.2 and 1.6.1.24</title>
+          <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-5-2-1-6-1-24-maintenance-release/</link>
+          <pubDate>Fri, 03 May 2019 11:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-5-2-1-6-1-24-maintenance-release/</guid>
+          <description>PrestaShop 1.7.5.2 and 1.6.1.24 are now available. These versions fix a security issue for both 1.7.5.x and 1.6.1.x. For the details, please read below:</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop in 2019 and beyond, part 1: The current architecture</title>
+          <link>https://build.prestashop-project.org/news/2019/prestashop-in-2019-and-beyond-part-1-current-architecture/</link>
+          <pubDate>Tue, 19 Feb 2019 10:30:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2019/prestashop-in-2019-and-beyond-part-1-current-architecture/</guid>
+          <description>This is the first in a series of articles we introduced a couple days ago, that aims at describing where we are, where we are going, and some ideas on how we’ll get there.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop in 2019 and beyond</title>
+          <link>https://build.prestashop-project.org/news/2019/prestashop-in-2019-and-beyond-introduction/</link>
+          <pubDate>Tue, 05 Feb 2019 09:30:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2019/prestashop-in-2019-and-beyond-introduction/</guid>
+          <description>When working in a project as big and complex as PrestaShop, it’s easy to get too focused on what you are doing right now, and lose sight of the big picture. However, it’s very important not to do that, because every decision we take must be coherent with a bigger plan. In fact, I think that the only way to allow a project such as this to be sustainable, coherent and predictable, is to consistently challenge every decision in light of a long-term vision.</description>
+        </item>
+      
+        <item>
+          <title>Release of PrestaShop 1.7.4.3 and 1.6.1.21</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</link>
+          <pubDate>Wed, 03 Oct 2018 15:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-4-3-1-6-1-21-maintenance-releases/</guid>
+          <description>PrestaShop 1.7.4.3 and 1.6.1.21 are now available. These versions fix a security issue for both 1.7.4.x and 1.6.1.x. Some important issues are also fixed for 1.6.1.x. For the details, please read below.</description>
+        </item>
+      
+        <item>
+          <title>Release of PrestaShop 1.7.3.4 and 1.6.1.20</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-4-1-6-1-20-maintenance-releases/</link>
+          <pubDate>Wed, 27 Jun 2018 14:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-4-1-6-1-20-maintenance-releases/</guid>
+          <description>PrestaShop 1.7.3.4 and 1.6.1.20 are now available. These versions fix security and PHP compatiblity issues.</description>
+        </item>
+      
+        <item>
+          <title>Release of PrestaShop 1.7.3.3 and 1.6.1.19</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-3-1-6-1-19-maintenance-releases/</link>
+          <pubDate>Mon, 28 May 2018 10:30:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-3-1-6-1-19-maintenance-releases/</guid>
+          <description>PrestaShop 1.7.3.3 and 1.6.1.19 are now available. Those maintenance releases fixes specific issues for the GDPR compliance.</description>
+        </item>
+      
+        <item>
+          <title>Release of PrestaShop 1.7.3.2</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-2-maintenance-release/</link>
+          <pubDate>Thu, 03 May 2018 14:20:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-2-maintenance-release/</guid>
+          <description>PrestaShop 1.7.3.2 is now available. This maintenance release fixes 17 issues reported on version 1.7.3.x.</description>
+        </item>
+      
+  </channel>
+</rss>

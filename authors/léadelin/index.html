@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>LéaDelin</title>
+    <link href="/style.css?1769601044" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="alternate" type="application/rss+xml" href="https://build.prestashop-project.org/authors/l%C3%A9adelin/feed.xml" title="PrestaShop Developers' blog" />
+    
+<meta property="og:title" content="LéaDelin" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://build.prestashop-project.org/authors/l%C3%A9adelin/" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/theme/meta-logo-build-2024.png">
+<meta name="twitter:title" content="LéaDelin"/>
+<meta name="twitter:description" content=""/>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF9S835S');</script>
+
+    
+</head>
+
+
+  <body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF9S835S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org/">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/news/2017/how-to-best-contact-us/">
+            How to contact us
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+    </li>
+  </ul>
+</nav>
+          </div>
+
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+<div class="home">
+
+  <div class="row">
+    <div class="col-md-12"><div class="author-header clearfix">
+            <div class="author-avatar"><img class="img-circle" src="https://avatars.githubusercontent.com/u/113511191?v=4" alt="Léa Delin's picture"></div>
+            <div>
+              <header class="page-title-block">
+                <h1 class="page-title">All articles by Léa Delin</h1>
+              </header><div class="author-display-role">Content Manager OS Project</div><div class="social">
+                    
+  <a class="btn btn-default btn-sm" href="https://github.com/l-delin">
+    <i class="icon-github-alt"></i> GitHub
+  </a>
+
+
+
+
+
+
+                  </div></div>
+          </div><ul class="post-list">
+        
+        
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Sep 18, 2023
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Léa Delin</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-august-2023/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-august-2023/">Do You Speak PrestaShop? – August 2023 Edition</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Where you&#39;ll learn that the PrestaShop translation project has new managers</p>
+            
+
+            <p class="post-summary">Contributing to PrestaShop is not only about the code, it’s also about taking part in the PrestaShop translation project! This report will tell you how the software translations evolved in August 2023.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-august-2023/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Aug 21, 2023
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Léa Delin</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-july-2023/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-july-2023/">Do You Speak PrestaShop? – July 2023 Edition</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Where you&#39;ll learn that the PrestaShop project is looking for Japanese and Bosnian proofreaders</p>
+            
+
+            <p class="post-summary">Contributing to PrestaShop is not only about the code, it’s also about taking part in the PrestaShop translation project! This report will tell you how the software translations evolved in July.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-july-2023/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Jul 7, 2023
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Léa Delin</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-june-2023/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-june-2023/">Do You Speak PrestaShop? – June 2023 Edition</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Where you&#39;ll learn that PrestaShop 8.1 is available in 8 languages</p>
+            
+
+            <p class="post-summary">Contributing to PrestaShop is not only about the code, it’s also about taking part in the PrestaShop translation project! This report will tell you how the software translations evolved in June.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-june-2023/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Jun 23, 2023
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Léa Delin</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2023/contributor-interview-snor42/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2023/contributor-interview-snor42/">Freelance Developer and Translator: Meet SNor42</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Discover the faces behind translations</p>
+            
+
+            <p class="post-summary">Have you ever wondered who’s hiding behind a Crowdin username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2023/contributor-interview-snor42/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Jun 9, 2023
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Léa Delin</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-may-2023/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-may-2023/">Do You Speak PrestaShop? – May 2023 Edition</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Where you&#39;ll learn that PrestaShop 8.1 is ready to be translated</p>
+            
+
+            <p class="post-summary">Contributing to PrestaShop is not only about the code, it’s also about taking part in the PrestaShop translation project! This report will tell you how the software translations evolved in May.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-may-2023/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  May 16, 2023
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Léa Delin</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org//news/prestashop-81-translations"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2023/prestashop-81-translations/">PrestaShop 8.1 is ready for translation</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">New features equal new strings</p>
+            
+
+            <p class="post-summary">PrestaShop’s 8.1 beta release was announced a few months ago. The stable release is now just around the corner. While it brings new features, a new version also means new strings. A file containing all 8.1 strings has been pushed to Crowdin, and is ready for translation!</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2023/prestashop-81-translations/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  May 12, 2023
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Léa Delin</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2023/contributor-interview-louis-authie/"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2023/contributor-interview-louis-authie/">Louis Authie: Freelancer, Contributor and Author</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Discover the faces behind the commits</p>
+            
+
+            <p class="post-summary">Have you ever wondered who’s hiding behind a GitHub username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2023/contributor-interview-louis-authie/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  May 11, 2023
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Léa Delin</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org//news/do-you-speak-prestashop-april-2023"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-april-2023/">Do You Speak PrestaShop? – April 2023 Edition</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Where you&#39;ll learn that the 8.1 translation catalog is coming soon</p>
+            
+
+            <p class="post-summary">Contributing to PrestaShop is not only about the code, it is also about taking part in the PrestaShop translation project! This report will tell you how the software translations evolved in April.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-april-2023/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Apr 14, 2023
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Léa Delin</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org//news/do-you-speak-prestashop-march-2023"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-march-2023/">Do You Speak PrestaShop? – March 2023 Edition</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Where you&#39;ll learn that contributor interviews are back</p>
+            
+
+            <p class="post-summary">Contributing to PrestaShop is not only about the code, it is also about taking part in the PrestaShop translation project! This report will tell you how the software translations evolved in March.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2023/do-you-speak-prestashop-march-2023/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+          
+          <li class="post-list-item">
+
+            <article>
+
+              
+
+            <div class="list-post-meta">
+                <span class="post-date">
+                  Apr 12, 2023
+                </span>
+              <span class="separator"></span>
+              <span class="post-authors">By Léa Delin</span>
+                <span class="separator"></span>
+              
+              <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org//news/contributor-interview-amirhossein"></span>
+            </div>
+
+            <h2>
+              <a class="post-link" href="https://build.prestashop-project.org/news/2023/contributor-interview-amirhossein/">PrestaShop ambassador, merchant and contributor: meet Amirhossein Rezazadeh</a>
+            </h2>
+
+            
+            <p class="post-list-subtitle">Discover the faces behind translations</p>
+            
+
+            <p class="post-summary">Have you ever wondered who’s hiding behind a Crowdin username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project.</p>
+            <a class="read-more" href="https://build.prestashop-project.org/news/2023/contributor-interview-amirhossein/">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
+            </a>
+
+            </article>
+          </li>
+
+          
+        
+
+      </ul>
+
+    </div>
+  </div>
+
+  
+    
+    <div class="row">
+      <div class="col-md-12">
+
+        <nav>
+          <ul class="pager">
+
+            <li class="previous disabled">
+              
+              <span aria-hidden="true">&larr; Newer</span>
+              
+            </li>
+            <li>
+              <span class="page_number">Page 1 of 2</span>
+            </li>
+            <li class="next ">
+              
+              <a href="/authors/l%C3%A9adelin/page/2/">
+                Older <span aria-hidden="true">&rarr;</span>
+              </a>
+              
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/news/2017/how-to-best-contact-us/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+    
+    <script>
+      window.axeptioSettings = {
+        userCookiesDomain: "prestashop-project.org",
+        clientId: "6859145f7baee141c249caa3",
+        cookiesVersion: "fr-eu-23-06-2025",
+        googleConsentMode: {
+          default: {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            wait_for_update: 500
+          }
+        }
+      };
+      (function(d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+      })(document, "script");
+    </script>
+    
+  </body>
+</html>

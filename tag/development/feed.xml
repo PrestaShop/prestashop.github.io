@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/development/</link>
+    <description>Recent content in Development on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+  <language>en-us</language>
+      <lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/development/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
+          <link>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</link>
+          <pubDate>Thu, 20 Mar 2025 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
+          <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.</description>
+        </item>
+      
+        <item>
+          <title>Reworking the &#34;Update Assistant&#34; Module V7: Our Experience</title>
+          <link>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</link>
+          <pubDate>Tue, 11 Mar 2025 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</guid>
+          <description>Let’s face it—our Update Assistant module was messy. The front-end was confusing, the user experience was challenging, and even minor adjustments were a little more complex than what we would have liked.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop 9 Alpha 1 is Available!</title>
+          <link>https://build.prestashop-project.org/news/2024/prestashop-9-alpha1-available/</link>
+          <pubDate>Thu, 06 Jun 2024 09:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2024/prestashop-9-alpha1-available/</guid>
+          <description>Here it is. The first public alpha of PrestaShop 9 is available. We decided it was time to share with you the first results of our work on PrestaShop 9.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop 9 minimum PHP version will be PHP8.1</title>
+          <link>https://build.prestashop-project.org/news/2023/prestashop-9-min-php-version-will-be-81/</link>
+          <pubDate>Fri, 12 May 2023 12:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2023/prestashop-9-min-php-version-will-be-81/</guid>
+          <description>The develop branch contains the source code that will give birth to PrestaShop 9. This is the future of PrestaShop: it will be released either at the end of the year 2023 or at the beginning of the year 2024 and must carry on the ambition of the project for 2024. This major version must also embrace the change in the PHP ecosystem, and consequently, it must drop the support of obsolete PHP versions.</description>
+        </item>
+      
+        <item>
+          <title>Introducing TypeScript</title>
+          <link>https://build.prestashop-project.org/news/2021/introducing-typescript/</link>
+          <pubDate>Fri, 28 May 2021 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2021/introducing-typescript/</guid>
+          <description>Following a recent Architecture Decision Records (ADR) submission and a Proof of Concept (POC), the Core Maintainers team has decided to introduce TypeScript (TS) on the project.</description>
+        </item>
+      
+        <item>
+          <title>Heads up: old development branches are going away</title>
+          <link>https://build.prestashop-project.org/news/2021/old-branches-are-going-away/</link>
+          <pubDate>Tue, 25 May 2021 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2021/old-branches-are-going-away/</guid>
+          <description>The month of June is fast approaching, so it’s time for a late Spring clean!</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop is now available on Composer</title>
+          <link>https://build.prestashop-project.org/news/2021/prestashop-available-composer/</link>
+          <pubDate>Mon, 24 May 2021 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2021/prestashop-available-composer/</guid>
+          <description>Released almost 10 years ago, Composer is the most popular package manager for the PHP ecosystem. PrestaShop has been using it since 1.7.0 to manage its dependencies, including all the native modules.</description>
+        </item>
+      
+        <item>
+          <title>A journey to improve the Time To Interactive metric in Classic Theme</title>
+          <link>https://build.prestashop-project.org/news/2020/journey-to-improve-the-time-to-interactive-metric/</link>
+          <pubDate>Tue, 21 Jul 2020 09:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2020/journey-to-improve-the-time-to-interactive-metric/</guid>
+          <description>The project Core Web Vitals from Google has announced that loading time and performance will have an impact on the website ranking in search results. Google mentions lazy loading in their suggestions. Lazy loading will be available on Classic Theme in version 1.7.8 thanks to Progi1984 and it will definitely improve both user experience and loading time on your site!</description>
+        </item>
+      
+        <item>
+          <title>Open Question: What about not committing generated files anymore?</title>
+          <link>https://build.prestashop-project.org/news/2020/open-question-not-commiting-assets-anymore/</link>
+          <pubDate>Fri, 17 Jan 2020 08:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2020/open-question-not-commiting-assets-anymore/</guid>
+          <description>This post is the first of a new kind. We decided to open up more with you about technical questioning and decisions for the PrestaShop project. This one is about generated asset files.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop 1.7.6.0 is available!</title>
+          <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-available/</link>
+          <pubDate>Wed, 10 Jul 2019 17:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-0-available/</guid>
+          <description>We are happy to announce PrestaShop 1.7.6.0 is officially available!</description>
+        </item>
+      
+        <item>
+          <title>PSD Paris 2019: a space dedicated to developers</title>
+          <link>https://build.prestashop-project.org/news/2019/psd-2019-developer-space/</link>
+          <pubDate>Fri, 24 May 2019 14:15:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2019/psd-2019-developer-space/</guid>
+          <description>That’s official, there will be a dedicated space for developers at the PSD Paris 2019. If you are developing themes and modules or contributing to the core, this is the place to be the 4th of June 2019.</description>
+        </item>
+      
+        <item>
+          <title>Announcing end of support for obsolete PHP versions</title>
+          <link>https://build.prestashop-project.org/news/2019/announcing-end-of-support-for-obsolete-php-versions/</link>
+          <pubDate>Wed, 22 May 2019 09:10:11 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2019/announcing-end-of-support-for-obsolete-php-versions/</guid>
+          <description> About a year and a half ago, we announced that PrestaShop 1.7.4.0 would be dropping support for PHP 5.4 and 5.5. At that time, this decision was justified by the impending end-of-maintenance for Symfony 2 and its replacement by Symfony 3, which didn’t support PHP versions older than 5.5.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop 1.7.5.0 is available!</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-5-0-available/</link>
+          <pubDate>Tue, 18 Dec 2018 10:15:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-5-0-available/</guid>
+          <description>After a Beta and a Release Candidate, the long awaited PrestaShop 1.7.5.0 has been released and is available for download. As usual, you can upgrade with the Auto upgrade module. However, considering that the current period is usually critical for merchants sales, for sure, some might prefer to wait for a more appropriate time :-)</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop 1.7.4.0 is available!</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-4-0-available/</link>
+          <pubDate>Wed, 04 Jul 2018 17:10:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-4-0-available/</guid>
+          <description>Dear community, after a little bit more than four months, the new minor version of PrestaShop is available: please welcome 1.7.4.0!</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop 1.7.3.0 is available!</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-available/</link>
+          <pubDate>Wed, 28 Feb 2018 09:10:11 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-available/</guid>
+          <description>Dear community, it is a great day for us all. Many “when will it be released?” later, we are thrilled to announce the birth of PrestaShop 1.7.3!</description>
+        </item>
+      
+  </channel>
+</rss>

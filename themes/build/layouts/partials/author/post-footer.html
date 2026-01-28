@@ -7,7 +7,7 @@
       <span{{ if $multiple }} class="multiple"{{ end }}>{{ $author.role }}</span>
     </h4>
 
-    {{ partial "partials/author/social-buttons.html" . }}
+    {{ partial "author/social-buttons.html" . }}
 {{- end -}}
 
 <div class="col-md-8">
@@ -22,7 +22,7 @@
 
             {{ range . }}
               <div class="author-item">
-                  {{ partial "partials/author-data" (dict "author" (index site.Data.authors .) "multiple" true "authorName" . ) }}
+                  {{ partial "author-data" (dict "author" (index site.Data.authors .) "multiple" true "authorName" . ) }}
               </div>
             {{ end }}
 
@@ -31,7 +31,7 @@
 
                 <h5>About the author</h5>
 
-                {{ partial "partials/author-data" (dict "author" (index site.Data.authors .) "multiple" false "authorName" . ) }}
+                {{ partial "author-data" (dict "author" (index site.Data.authors .) "multiple" false "authorName" . ) }}
               {{ end }}
           {{ end }}
 
@@ -48,7 +48,7 @@
   </div>
 
   <div class="subscribe-btn-container">
-    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+    <a id="subscribe-button" class="cta cta--pattern cta-dark"><span>Subscribe to our newsletter</span></a>
   </div>
 
   <div id="subscription-form" class="subscription-form">

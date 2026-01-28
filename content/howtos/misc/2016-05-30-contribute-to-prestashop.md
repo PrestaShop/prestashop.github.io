@@ -7,7 +7,6 @@ date:   2016-05-30 10:12:00
 authors:  [ PrestaShop ]
 icon: icon-fried-egg
 tags: [contribute]
-published: true
 ---
 
 Hey, welcome! If you landed here, it means that you’re interested in participating, testing, improving or giving your thoughts about PrestaShop Project.

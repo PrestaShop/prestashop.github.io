@@ -7,7 +7,6 @@ date:   2015-06-18 10:29:47
 authors:  [ alexeven ]
 icon: icon-world
 tags: [translation, i18n, l10n]
-published: true
 
 ---
 

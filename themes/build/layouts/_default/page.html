@@ -4,10 +4,10 @@
     <div class="row">
       <div class="col-sm-12">
 
-        <header class="post-header">
-          <h1 class="post-title">{{ .Title }}</h1>
+        <header class="page-title-block">
+          <h1 class="page-title">{{ .Title }}</h1>
           {{ with .Params.Subtitle }}
-          <h3 class="post-subtitle">{{ . }}</h3>
+            <p class="page-subtitle">{{ . }}</p>
           {{ end }}
         </header>
 

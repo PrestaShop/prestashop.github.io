@@ -8,7 +8,6 @@ disqus_url: "http://build.prestashop.com/misc/prestashop-perfect-gitignore/"
 authors:  [ julienbourdeau ]
 icon: icon-branch
 tags: [git, gitignore]
-published: true
 ---
 
 As a serious developer, you need to use versioning (or "[revision control](http://en.wikipedia.org/wiki/Revision_control)") for your projects, in order to track changes to your files... and be able to travel back in time when a disaster happens. There are many CVS ([_Concurrent Versions System_](http://en.wikipedia.org/wiki/Concurrent_Versions_System)) available out there today, but **Git** is by far [the most popular in 2015](http://stackoverflow.com/research/developer-survey-2015#tech-sourcecontrol), and [one of the most used in the Open Source world](https://www.openhub.net/repositories/compare), right behind Subversion (svn).

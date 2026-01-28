@@ -14,8 +14,8 @@
   </a>
 {{ end }}
 {{ if index . "twitter" }}
-  <a class="btn btn-default btn-sm" href="https://twitter.com/{{ index . "twitter" }}">
-    <i class="icon-twitter-alt"></i> Twitter
+  <a class="btn btn-default btn-sm" href="https://x.com/{{ index . "twitter" }}">
+    {{ partial "icons/x.html" . }} X
   </a>
 {{ end }}
 {{ if index . "website" }}

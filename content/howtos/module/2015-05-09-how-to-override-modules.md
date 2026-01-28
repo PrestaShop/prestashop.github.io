@@ -8,7 +8,6 @@ disqus_url: "http://build.prestashop.com/module/how-to-override-modules/"
 authors:  [ gskema ]
 icon: icon-code
 tags: [override, module]
-published: true
 ---
 
 {{% notice type="danger" title="This article may be outdated" icon="warning" %}}

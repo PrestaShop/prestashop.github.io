@@ -8,7 +8,7 @@
           {{ if .Params.tags }}
             <li>
               <i class="icon-tag"></i>
-              {{ partial "partials/post-tags" . }}
+              {{ partial "post-tags" . }}
             </li>
           {{ end }}
 
@@ -16,7 +16,7 @@
       </div>
 
       {{ if .Params.Authors }}
-          {{ partial "partials/author/post-footer.html" .Params.Authors }}
+          {{ partial "author/post-footer.html" .Params.Authors }}
       {{ end }}
 
     </div>

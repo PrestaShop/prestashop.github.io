@@ -25,7 +25,7 @@ This devblog also hosts How-Tos on certain features, before they find their way 
 
 ### Setup
 
-1. [Install Hugo](https://gohugo.io/getting-started/installing). You will need v0.118.2 (extended binary).
+1. [Install Hugo](https://gohugo.io/getting-started/installing). You will need v0.154.2 (extended binary).
 2. Clone the repository somewhere on your system
 
    ```

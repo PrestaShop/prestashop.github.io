@@ -7,7 +7,6 @@ date:   2015-06-03 18:54:00
 authors:  [ jeromenadaud ]
 icon: icon-code
 tags: [coding-standards]
-published: true
 ---
 
 We are planning to switch to PSR-2, here is the why, the how and the when!

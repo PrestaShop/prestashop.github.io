@@ -8,7 +8,6 @@ disqus_url: "http://build.prestashop.com/module/how-to-help-translating-prestash
 authors:  [ jesusruizgarcia ]
 icon: icon-globe
 tags: [translation, i18n, l10n, spanish]
-published: true
 ---
 
 This article, in Spanish, has been written by Jesús Ruiz Garcia, an active contributor to the [Spanish documentation](http://doc.prestashop.com/pages/viewpage.action?pageId=26148899) and software translation. Jesús has started a project to **improve and harmonize the Spanish translation** of PrestaShop. If you want to join him and contribute to the Spanish translation, watch these short videos to know how it works!<br><br>

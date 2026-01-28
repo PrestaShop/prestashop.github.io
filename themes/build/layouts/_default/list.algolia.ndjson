@@ -4,7 +4,7 @@
     {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
         {{- $item := (dict
               "objectID" .File.UniqueID
-              "content" (partial "partials/post-summary" .)
+              "content" (partial "post-summary.html" .)
               "title" .Title
               "categories" (slice .Section)
               "tags" .Params.Tags

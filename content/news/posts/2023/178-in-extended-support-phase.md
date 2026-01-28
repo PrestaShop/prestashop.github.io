@@ -5,13 +5,12 @@ title:  "PrestaShop 1.7.8 is now in the extended support phase"
 subtitle: "What to expect for PrestaShop 1.7 and 8"
 date:   2023-01-05
 authors: [ MathieuFerment ]
-icon: icon-code
+icon: icon-warning
 tags:
  - version
  - releases
  - 1.7.8.x
  - 8.0.x
-icon: icon-warning
 ---
 
 Now that PrestaShop 8.0 is out, here is a focus on maintained branches of the PrestaShop project and what to expect.

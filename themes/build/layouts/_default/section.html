@@ -18,16 +18,18 @@
 
 {{ define "main" }}
 <div class="">
-  <h1 class="page-heading">{{ .Title }}</h1>
-  <p class="page-subtitle">{{ .Params.Subtitle }}</p>
+  <header class="page-title-block">
+    <h1 class="page-title">{{ .Title }}</h1>
+    <p class="page-subtitle">{{ .Params.Subtitle }}</p>
+  </header>
 
   {{ if .Sections }}
     {{- range .Sections -}}
       <h3 class="topic">{{ .Title }}</h3>
-      {{ partial "partials/section/page-list" . }}
+      {{ partial "section/page-list" . }}
     {{- end -}}
   {{ else }}
-    {{ partial "partials/section/page-list" . }}
+    {{ partial "section/page-list" . }}
   {{ end }}
 </div>
 {{ end }}

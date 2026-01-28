@@ -10,6 +10,7 @@ icon: icon-info
 tags:
 - "9.0"
 - "9.0.x"
+- "9.x"
 - "version"
 - "patch"
 - "maintenance"

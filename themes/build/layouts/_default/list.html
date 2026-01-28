@@ -10,50 +10,106 @@
           {{- with (where $.Site.Data.tags "slug" $tagname) -}}
               {{- with (index . 0) }}{{ $tagname = index . "name"}}{{ end -}}
           {{- end -}}
-          <h1>Articles about {{ $tagname }}</h1>
+          <header class="page-title-block">
+            <h1 class="page-title">Articles about {{ $tagname }}</h1>
+          </header>
         {{- else if (eq .Data.Singular "author") -}}
-          {{- $authorData := index site.Data.authors .Title -}}
+          {{- $authorKey := .Data.Term -}}
+          {{- $authorData := index site.Data.authors $authorKey -}}
+          {{- if not $authorData -}}
+            {{- $authorData = index site.Data.authors .Title -}}
+          {{- end -}}
+
+          {{- $authorName := .Title -}}
+          {{- with $authorData -}}
+            {{- with .display_name -}}
+              {{- $authorName = . -}}
+            {{- end -}}
+          {{- end -}}
 
           <div class="author-header clearfix">
             <div class="author-avatar">
-              <img class="img-circle" src="{{ $authorData.avatar }}" alt="{{ $authorData.display_name }}'s picture">
+              {{- with $authorData -}}
+                {{- with .avatar -}}
+                  <img class="img-circle" src="{{ . | replaceRE "^http://" "https://" }}" alt="{{ $authorName }}'s picture">
+                {{- end -}}
+              {{- end -}}
             </div>
             <div>
-              <h1>All articles by {{ $authorData.display_name }}</h1>
-                {{ with $authorData.role }}
-                  <div class="author-display-role">{{ . }}</div>
-                {{ end }}
-                <div class="social">
-                  {{ partial "partials/author/social-buttons.html" $authorData }}
-                </div>
+              <header class="page-title-block">
+                <h1 class="page-title">All articles by {{ $authorName }}</h1>
+              </header>
+                {{- with $authorData -}}
+                  {{- with .role -}}
+                    <div class="author-display-role">{{ . }}</div>
+                  {{- end -}}
+                  <div class="social">
+                    {{ partial "author/social-buttons.html" . }}
+                  </div>
+                {{- end -}}
             </div>
           </div>
 
         {{- end -}}
       {{- else if not .IsHome -}}
-         <h1>{{ .Title }}</h1>
+          <header class="page-title-block">
+            <h1 class="page-title">{{ .Title }}</h1>
+          </header>
       {{- end -}}
 
       <ul class="post-list">
         {{ $pages := cond .IsHome (where .Site.RegularPages "Section" "news") .Pages }}
         {{ $paginator := .Paginate $pages.ByDate.Reverse }}
         {{ range $idx, $page := $paginator.Pages }}
-
-          {{ if ne $idx 0 }}
-          <li>
-            <div class="post-divider"></div>
-          </li>
-          {{ end }}
-
           {{ with $page }}
-          <li>
+          <li class="post-list-item">
+
+            <article>
+
+              <!--
+            {{- /* Featured image support */ -}}
+            {{- $image := "" -}}
+            {{- if .Params.image -}}
+              {{- $image = .Params.image -}}
+            {{- else if .Params.opengraph_image -}}
+              {{- $image = .Params.opengraph_image -}}
+            {{- else -}}
+              {{- $featuredImage := .Resources.GetMatch "*featured*" -}}
+              {{- if not $featuredImage -}}
+                {{- $featuredImage = .Resources.GetMatch "cover.*" -}}
+              {{- end -}}
+              {{- if $featuredImage -}}
+                {{- $image = $featuredImage.RelPermalink -}}
+              {{- end -}}
+            {{- end -}}
+
+            {{- if $image -}}
+            <div class="post-list-image">
+              <a href="{{ .Permalink }}">
+                <img src="{{ $image }}" alt="{{ .Title }}" loading="lazy">
+              </a>
+            </div>
+            {{- end -}}-->
 
             <div class="list-post-meta">
                 <span class="post-date">
                   {{ .Date.Format "Jan 2, 2006" }}
                 </span>
               <span class="separator"></span>
-              <span class="disqus-comment-count" data-disqus-url="{{ partial "partials/disqus/disqus-url.html" . }}"></span>
+              {{ with .Params.authors }}
+                {{- $names := slice -}}
+                {{- range . -}}
+                  {{- $authorData := index site.Data.authors . -}}
+                  {{- if $authorData -}}
+                    {{- $names = $names | append $authorData.display_name -}}
+                  {{- else -}}
+                    {{- $names = $names | append . -}}
+                  {{- end -}}
+                {{- end -}}
+                <span class="post-authors">By {{ delimit $names ", " }}</span>
+                <span class="separator"></span>
+              {{ end }}
+              <span class="disqus-comment-count" data-disqus-url="{{ partial "disqus/disqus-url.html" . }}"></span>
             </div>
 
             <h2>
@@ -61,14 +117,18 @@
             </h2>
 
             {{ if .Params.Subtitle }}
-            <h4>{{ .Params.Subtitle }}</h4>
+            <p class="post-list-subtitle">{{ .Params.Subtitle }}</p>
             {{ end }}
 
-            <p class="post-summary">{{ partial "partials/post-summary" . }}</p>
+            <p class="post-summary">{{ partial "post-summary" . }}</p>
             <a class="read-more" href="{{ .Permalink }}">
-              Continue reading
-              <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
             </a>
+
+            </article>
           </li>
 
           {{ end }}

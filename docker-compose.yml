@@ -2,8 +2,8 @@ name: PrestaShop Build
 
 services:
   server:
-    image: hugomods/hugo:exts-0.118.2
-    command: hugo server --bind 0.0.0.0 --port 1313
+    image: hugomods/hugo:exts-0.154.2
+    command: hugo server --bind 0.0.0.0 --port 1313 --baseURL / --appendPort=false
     volumes:
       - ./:/src
       - ~/hugo_cache:/tmp/hugo_cache

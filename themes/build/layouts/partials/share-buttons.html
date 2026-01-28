@@ -1,7 +1,7 @@
 <div class="aside-meta">Share this</div>
 
-<a href="https://twitter.com/intent/tweet?text={{ .Title | urlquery }}&amp;url={{ .Permalink | urlquery }}&amp;via={{ .Site.Social.twitter }}&amp;related={{ .Site.Social.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter">
-    <i class="icon-twitter-alt"></i>
+<a href="https://x.com/intent/post?text={{ .Title | urlquery }}&amp;url={{ .Permalink | urlquery }}&amp;via={{ .Site.Params.social.twitter }}&amp;related={{ .Site.Params.social.twitter }}" rel="nofollow" target="_blank" title="Share on X">
+    {{ partial "icons/x.html" . }}
 </a>
 
 <a href="https://facebook.com/sharer.php?u={{ .Permalink | urlquery }}" rel="nofollow" target="_blank" title="Share on Facebook">

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "PSDevCon2024: Cybersecurity – What No One Dares to Say"
+aliases: ["/news/2025/PSDevCon2024-Cybersecurity-presentation/"]
 subtitle: "Read a summary of Vincent Guesnard’s cybersecurity presentation at the Developer Conference 2024"
 date:   2025-04-30
 authors: [ VincentGuesnard ]

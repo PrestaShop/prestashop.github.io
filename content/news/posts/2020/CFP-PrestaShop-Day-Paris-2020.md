@@ -1,6 +1,6 @@
 ---
 layout: post
-aliases: ["/news/CFP-PrestaShop-Day-Paris-2020"]
+aliases: ["/news/CFP-PrestaShop-Day-Paris-2020", "/news/2020/CFP-PrestaShop-Day-Paris-2020/"]
 title:  "PrestaShop Day Paris 2020: Call for Papers is open"
 subtitle: "It's time to submit a talk to speak in front of the community"
 date:  2020-02-21 16:30:00

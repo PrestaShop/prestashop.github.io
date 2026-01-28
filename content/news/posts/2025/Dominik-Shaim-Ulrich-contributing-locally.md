@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Dominik Shaim Ulrich: contributing locally with a business providing hosting services"
+aliases: ["/news/2025/Dominik-Shaim-Ulrich-contributing-locally/"]
 subtitle: "Discover the faces behind the commits"
 date:   2025-06-12
 authors: [ coffrep ]

@@ -1,6 +1,6 @@
 ---
 layout: post
-aliases: ["/news/Designing-the-new-PrestaShop-default-theme"]
+aliases: ["/news/Designing-the-new-PrestaShop-default-theme", "/news/2016/Designing-the-new-PrestaShop-default-theme/"]
 title:  "Designing the new PrestaShop default theme"
 subtitle: "How we rebuilt the front office to suit any merchant"
 date:   2016-06-06 06:09:47

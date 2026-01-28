@@ -1,6 +1,7 @@
 ---
 layout: post
 title: OW2 Webinar - PrestaShop Presentation on September 26
+aliases: ["/news/2024/OW2WebinarPrestaShopPresentation/"]
 subtitle: This Open Source Webinar Series Will Showcase The Project
 date: 2024-09-19 09:55:00
 authors: [ coffrep ]

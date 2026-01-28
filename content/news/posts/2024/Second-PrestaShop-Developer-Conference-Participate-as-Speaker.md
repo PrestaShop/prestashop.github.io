@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Second PrestaShop Developer Conference - Participate as a Speaker
+aliases: ["/news/2024/Second-PrestaShop-Developer-Conference-Participate-as-Speaker/"]
 subtitle: PARTICIPATE AS A SPEAKER IN THE EVENT ON NOVEMBER 6, 2024
 date: 2024-07-09 09:55:00
 authors: [ PrestaShop ]

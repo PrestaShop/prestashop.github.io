@@ -1,6 +1,6 @@
 ---
 layout: post
-aliases: ["/news/Dropping-support-php52-and-53"]
+aliases: ["/news/Dropping-support-php52-and-53", "/news/2015/Dropping-support-php52-and-53/"]
 title:  "Dropping support for PHP 5.2 and 5.3"
 subtitle: "Welcome Namespaces, Closures, Traits, Composer, and much more!"
 date:   2015-06-24 17:00:00

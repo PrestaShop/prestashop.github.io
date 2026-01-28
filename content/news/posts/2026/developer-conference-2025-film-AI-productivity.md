@@ -1,6 +1,7 @@
 ---
 layout: post
 title: PrestaShop Developer Conference 2025 Filmed Sessions - AI and Productivity
+aliases: ["/news/2026/developer-conference-2025-film-AI-productivity/"]
 subtitle: Exploring AI agents, code assistants, and the future of ecommerce 
 date: 2026-01-21
 authors: [ coffrep ]

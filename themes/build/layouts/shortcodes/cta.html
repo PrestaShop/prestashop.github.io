@@ -16,7 +16,9 @@
 
 {{/* Build CSS classes */}}
 {{ $ctaClasses := "cta cta--pattern" }}
-{{ if eq $class "dark" }}
+{{ if eq $class "light" }}
+  {{ $ctaClasses = printf "%s cta-light" $ctaClasses }}
+{{ else if eq $class "dark" }}
   {{ $ctaClasses = printf "%s cta-dark" $ctaClasses }}
 {{ end }}
 {{ if eq $class "sm" }}

@@ -39,8 +39,8 @@
 
   & > span {
     align-items: center;
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     display: inline-flex;
     padding: 1.4rem 2rem;
     position: relative;
@@ -78,6 +78,13 @@
   & > span {
     padding: 12px 14px;
     font-size: 15px;
+  }
+}
+
+.cta-light {
+  & > span {
+    background-color: #fff;
+    color: #000;
   }
 }
 

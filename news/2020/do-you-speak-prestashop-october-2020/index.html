@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Do you speak PrestaShop? – October 2020 edition</title>
-    <link href="/style.css?1769011252" rel="stylesheet">
+    <link href="/style.css?1769600299" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -21,10 +21,9 @@
     <meta property="article:modified_time" content="2020-11-06T15:00:00+01:00" />
 
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build-2024.png">
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/theme/meta-logo-build-2024.png">
 <meta name="twitter:title" content="Do you speak PrestaShop? – October 2020 edition"/>
 <meta name="twitter:description" content="Where you&#39;ll learn that the last 1.7.7 translations are available"/>
-<meta name="twitter:site" content="@PrestaShopOrg"/>
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -46,71 +45,127 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="container">
     <div class="row clearfix">
 
-      <div class="menu-button"><i class="icon icon-store"></i></div>
-      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
 
       <div id="logo" class="">
         
-        <a href="https://build.prestashop-project.org">
+        <a href="https://build.prestashop-project.org/">
           <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
         </a>
       </div>
 
       <div id="navigation" class="">
-        <nav>
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
   <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        News <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
         <li><a href="/tag/core-monthly/">Core Monthly</a></li>
-        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Project <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/tag/9.0/">Articles on 9.0</a></li>
-        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
-        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
-        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
-        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
-        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
-        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Contribute <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
-        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
-        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Learn <span class="caret"></span>
-      </a>
-      <ul class="dropdown-menu">
-        <li><a href="/howtos/">How-tos</a></li>
-        <li><a href="/tools/">Tools</a></li>
-        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
-        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/news/2017/how-to-best-contact-us/">
+            How to contact us
+          </a>
+        </li>
       </ul>
     </li>
     <li class="">
-      <a href="/about/">About</a>
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
     </li>
   </ul>
 </nav>
+          </div>
 
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
       </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
 
       <div id="algolia-container">
         <div class="aa-input-container" id="aa-input-container">
@@ -118,10 +173,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
 
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
     </div>
   </div>
-
-</header>
+</div>
 
 
     <div class="page-content">
@@ -133,7 +188,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="col-sm-12">
 
           <header class="post-header">
-            <h1 class="post-title">Do you speak PrestaShop? – October 2020 edition</h1>
+            <h1 class="page-title">Do you speak PrestaShop? – October 2020 edition</h1>
               
                 <h3 class="post-subtitle">Where you&#39;ll learn that the last 1.7.7 translations are available</h3>
               
@@ -183,8 +238,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <aside class="share-buttons">
               <div class="aside-meta">Share this</div>
 
-<a href="https://twitter.com/intent/tweet?text=Do&#43;you&#43;speak&#43;PrestaShop%3F&#43;%E2%80%93&#43;October&#43;2020&#43;edition&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fdo-you-speak-prestashop-october-2020%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
-    <i class="icon-twitter-alt"></i>
+<a href="https://x.com/intent/post?text=Do&#43;you&#43;speak&#43;PrestaShop%3F&#43;%E2%80%93&#43;October&#43;2020&#43;edition&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fdo-you-speak-prestashop-october-2020%2F&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Share on X">
+    <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
 </a>
 
 <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fdo-you-speak-prestashop-october-2020%2F" rel="nofollow" target="_blank" title="Share on Facebook">
@@ -208,11 +266,11 @@ This report will tell you how the translations of the software evolved in Octobe
 This means that the completion rate for all projects has slightly decreased. Some projects that used to be 100% translated and validated are no longer complete.</p>
 <p>Translators, proofreaders&hellip; your project needs you! Feel free to take a look at the new translations and help it reach 100%!</p>
 <h3 id="a-new-project-has-been-opened-sorani-kurdish">A new project has been opened: Sorani (Kurdish)</h3>
-<p>A new language project has been opened on Crowdin following the request of <a href="https://crowdin.com/profile/fb.nanosoft">Fatah Barzangy</a>&hellip; It is the Sorani (Kurdish) project. Do not hesitate to get involved! 😊</p>
-<h3 id="-special-thanks-to-newcomers">💕 Special thanks to newcomers</h3>
+<p>A new language project has been opened on Crowdin following the request of <a href="https://crowdin.com/profile/fb.nanosoft">Fatah Barzangy</a>&hellip; It is the Sorani (Kurdish) project. Do not hesitate to get involved! &#x1f60a;</p>
+<h3 id="two_hearts-special-thanks-to-newcomers">&#x1f495; Special thanks to newcomers</h3>
 <p>Many people subscribe to the project(s) of their choice each month, but not so many start translating straight away. For that reason, we would like to thank the ones who rushed into the effort immediately!</p>
 <p>So lots of love to the dedicated: <a href="https://crowdin.com/profile/okom3pom">okom3pom</a>, <a href="https://crowdin.com/profile/kianjuan">Kian Yuan</a>, <a href="https://crowdin.com/profile/dev.niebla">dev.niebla</a>, <a href="https://crowdin.com/profile/bbbenjie">bbbenjie</a>, <a href="https://crowdin.com/profile/repa69">René Paolozzi</a>, <a href="https://crowdin.com/profile/ahteewat123">Athiwat Klauythong</a>, <a href="https://crowdin.com/profile/axel584">Axel Rousseau</a>, <a href="https://crowdin.com/profile/danielshapiro9">danielshapiro9</a>.</p>
-<p>See you soon on Crowdin… and in PrestaShop. 😜</p>
+<p>See you soon on Crowdin… and in PrestaShop. &#x1f61c;</p>
 <h2 id="a-few-stats">A few stats</h2>
 <ul>
 <li><strong>48 members</strong> were active on the project this month.</li>
@@ -224,151 +282,151 @@ This means that the completion rate for all projects has slightly decreased. Som
 <p>A lot of you are working every day on Crowdin to have PrestaShop available in many languages, and PrestaShop can&rsquo;t thank you enough for your dedication! Here are the 10 most active translators and proofreaders for October 2020.</p>
 <h4 id="top-10-translators-in-october">Top 10 translators in October:</h4>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>Translator</th>
-<th>Language</th>
-<th># Words</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.</td>
-<td>Girdman.com (anargaragezov)</td>
-<td>Azerbaijani</td>
-<td>8,067</td>
-</tr>
-<tr>
-<td>2.</td>
-<td>Athiwat Klauythong (ahteewat123)</td>
-<td>Thai</td>
-<td>2,108</td>
-</tr>
-<tr>
-<td>3.</td>
-<td>mirmal</td>
-<td>Esperanto</td>
-<td>1,788</td>
-</tr>
-<tr>
-<td>4.</td>
-<td>webdvl (megashopba)</td>
-<td>Czech &amp; Slovak</td>
-<td>1,869</td>
-</tr>
-<tr>
-<td>5.</td>
-<td>Daniele1970</td>
-<td>Esperanto</td>
-<td>1,454</td>
-</tr>
-<tr>
-<td>6.</td>
-<td>Lauri Lepik (laurilllepik)</td>
-<td>Estonian</td>
-<td>1,440</td>
-</tr>
-<tr>
-<td>7.</td>
-<td>Enzo Ferrara (ferribbotte)</td>
-<td>Italian</td>
-<td>944</td>
-</tr>
-<tr>
-<td>8.</td>
-<td>Rodrigo Laurindo (rblaurin)</td>
-<td>Portuguese, Brazilian</td>
-<td>941</td>
-</tr>
-<tr>
-<td>9.</td>
-<td>Goedkoopsteverf</td>
-<td>Dutch</td>
-<td>941</td>
-</tr>
-<tr>
-<td>10.</td>
-<td>David Gonzalez (davidglezz)</td>
-<td>Spanish</td>
-<td>862</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Translator</th>
+          <th>Language</th>
+          <th># Words</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1.</td>
+          <td>Girdman.com (anargaragezov)</td>
+          <td>Azerbaijani</td>
+          <td>8,067</td>
+      </tr>
+      <tr>
+          <td>2.</td>
+          <td>Athiwat Klauythong (ahteewat123)</td>
+          <td>Thai</td>
+          <td>2,108</td>
+      </tr>
+      <tr>
+          <td>3.</td>
+          <td>mirmal</td>
+          <td>Esperanto</td>
+          <td>1,788</td>
+      </tr>
+      <tr>
+          <td>4.</td>
+          <td>webdvl (megashopba)</td>
+          <td>Czech &amp; Slovak</td>
+          <td>1,869</td>
+      </tr>
+      <tr>
+          <td>5.</td>
+          <td>Daniele1970</td>
+          <td>Esperanto</td>
+          <td>1,454</td>
+      </tr>
+      <tr>
+          <td>6.</td>
+          <td>Lauri Lepik (laurilllepik)</td>
+          <td>Estonian</td>
+          <td>1,440</td>
+      </tr>
+      <tr>
+          <td>7.</td>
+          <td>Enzo Ferrara (ferribbotte)</td>
+          <td>Italian</td>
+          <td>944</td>
+      </tr>
+      <tr>
+          <td>8.</td>
+          <td>Rodrigo Laurindo (rblaurin)</td>
+          <td>Portuguese, Brazilian</td>
+          <td>941</td>
+      </tr>
+      <tr>
+          <td>9.</td>
+          <td>Goedkoopsteverf</td>
+          <td>Dutch</td>
+          <td>941</td>
+      </tr>
+      <tr>
+          <td>10.</td>
+          <td>David Gonzalez (davidglezz)</td>
+          <td>Spanish</td>
+          <td>862</td>
+      </tr>
+  </tbody>
 </table>
 <h4 id="top-10-proofreaders-in-october">Top 10 proofreaders in October:</h4>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>Proofreader</th>
-<th>Language</th>
-<th># Words</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.</td>
-<td>Girdman.com (anargaragezov)</td>
-<td>Azerbaijani</td>
-<td>8,378</td>
-</tr>
-<tr>
-<td>2.</td>
-<td>Daniele1970</td>
-<td>Esperanto &amp; Italian</td>
-<td>2,873</td>
-</tr>
-<tr>
-<td>3.</td>
-<td>webdvl (megashopba)</td>
-<td>Czech &amp; Slovak</td>
-<td>2,486</td>
-</tr>
-<tr>
-<td>4.</td>
-<td>Marcin Orzechowski (Martinovy)</td>
-<td>Polish</td>
-<td>1,180</td>
-</tr>
-<tr>
-<td>5.</td>
-<td>Enzo Ferrara (ferribbotte)</td>
-<td>Italian</td>
-<td>977</td>
-</tr>
-<tr>
-<td>6.</td>
-<td>Rodrigo Laurindo (rblaurin)</td>
-<td>Portuguese, Brazilian</td>
-<td>941</td>
-</tr>
-<tr>
-<td>7.</td>
-<td>Patrik Lindblom (extendus)</td>
-<td>Swedish</td>
-<td>941</td>
-</tr>
-<tr>
-<td>8.</td>
-<td>Cha (cafetango)</td>
-<td>Chinese Traditional</td>
-<td>635</td>
-</tr>
-<tr>
-<td>9.</td>
-<td>David Gonzalez (davidglezz)</td>
-<td>Spanish</td>
-<td>595</td>
-</tr>
-<tr>
-<td>10.</td>
-<td>Jesús Ruiz (jruiz)</td>
-<td>Spanish</td>
-<td>346</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Proofreader</th>
+          <th>Language</th>
+          <th># Words</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1.</td>
+          <td>Girdman.com (anargaragezov)</td>
+          <td>Azerbaijani</td>
+          <td>8,378</td>
+      </tr>
+      <tr>
+          <td>2.</td>
+          <td>Daniele1970</td>
+          <td>Esperanto &amp; Italian</td>
+          <td>2,873</td>
+      </tr>
+      <tr>
+          <td>3.</td>
+          <td>webdvl (megashopba)</td>
+          <td>Czech &amp; Slovak</td>
+          <td>2,486</td>
+      </tr>
+      <tr>
+          <td>4.</td>
+          <td>Marcin Orzechowski (Martinovy)</td>
+          <td>Polish</td>
+          <td>1,180</td>
+      </tr>
+      <tr>
+          <td>5.</td>
+          <td>Enzo Ferrara (ferribbotte)</td>
+          <td>Italian</td>
+          <td>977</td>
+      </tr>
+      <tr>
+          <td>6.</td>
+          <td>Rodrigo Laurindo (rblaurin)</td>
+          <td>Portuguese, Brazilian</td>
+          <td>941</td>
+      </tr>
+      <tr>
+          <td>7.</td>
+          <td>Patrik Lindblom (extendus)</td>
+          <td>Swedish</td>
+          <td>941</td>
+      </tr>
+      <tr>
+          <td>8.</td>
+          <td>Cha (cafetango)</td>
+          <td>Chinese Traditional</td>
+          <td>635</td>
+      </tr>
+      <tr>
+          <td>9.</td>
+          <td>David Gonzalez (davidglezz)</td>
+          <td>Spanish</td>
+          <td>595</td>
+      </tr>
+      <tr>
+          <td>10.</td>
+          <td>Jesús Ruiz (jruiz)</td>
+          <td>Spanish</td>
+          <td>346</td>
+      </tr>
+  </tbody>
 </table>
-<p>Congrats, and welcome to our new top contributors! 👏</p>
+<p>Congrats, and welcome to our new top contributors! &#x1f44f;</p>
 <p>Remember, you can see who&rsquo;s been contributing to our translation project thanks to the <a href="http://translators.prestashop.com/">Translators page</a>.</p>
 <h2 id="complete-translations">Complete translations</h2>
 <h4 id="fully-translated-languages">Fully translated languages</h4>
@@ -391,7 +449,7 @@ This means that the completion rate for all projects has slightly decreased. Som
 <p>At the end of October 2020, some languages would still benefit from some proofreading:</p>
 <ul>
 <li><strong>Spanish, Argentina</strong> (98% translated vs 13% validated).</li>
-<li><strong>Esperanto</strong> (59% translated vs 19% validated). (But we can observe an increase of 6% since last month! Congratulations! 🔥)</li>
+<li><strong>Esperanto</strong> (59% translated vs 19% validated). (But we can observe an increase of 6% since last month! Congratulations! &#x1f525;)</li>
 <li><strong>Spanish, Venezuela</strong> (51% translated vs 11% validated).</li>
 <li><strong>Galician</strong> (98% translated vs 58% validated).</li>
 <li><strong>Spanish, Mexico</strong> (91% translated vs 56% validated).</li>
@@ -400,9 +458,9 @@ This means that the completion rate for all projects has slightly decreased. Som
 <p>He is looking for volunteers to discuss and help him on the project, and in particular proofreaders to validate the strings. If you are Belgian, and you want to join him, do not hesitate to join the French, Belgium project on Crowdin!</p>
 <p><img src="/assets/images/2020/11/build-crowdin-proofreading-oct20.png" alt="Languages that need proofreading"></p>
 <p>If you wish to help to proofread what has been translated, please contact PrestaShop with the language you&rsquo;d like to proofread: just send an email to <a href="mailto:translation@prestashop.com">translation@prestashop.com</a>. Your help is needed!</p>
-<p>If you haven&rsquo;t joined us on Crowdin yet, <a href="https://crowdin.com/project/prestashop-official">it&rsquo;s never too late</a>! 😉</p>
+<p>If you haven&rsquo;t joined us on Crowdin yet, <a href="https://crowdin.com/project/prestashop-official">it&rsquo;s never too late</a>! &#x1f609;</p>
 <p>If you want to gather your fellow translators to work towards a better harmonization, start a glossary, or anything else, do let me know: I&rsquo;ll include a word about it in the next monthly report.</p>
-<p>Do you have a question, a remark? Don&rsquo;t hesitate to leave a comment. See you next month! 🙋‍♀️</p>
+<p>Do you have a question, a remark? Don&rsquo;t hesitate to leave a comment. See you next month! &#x1f64b;</p>
 
 
           </article>
@@ -474,7 +532,7 @@ This means that the completion rate for all projects has slightly decreased. Som
   </div>
 
   <div class="subscribe-btn-container">
-    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+    <a id="subscribe-button" class="cta cta--pattern cta-dark"><span>Subscribe to our newsletter</span></a>
   </div>
 
   <div id="subscription-form" class="subscription-form">
@@ -543,7 +601,7 @@ This means that the completion rate for all projects has slightly decreased. Som
           window.disqus_config = function () {
               
               
-              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/do-you-speak-prestashop-october-2020';
+              this.page.url = 'https:\/\/build.prestashop-project.org\/\/news\/do-you-speak-prestashop-october-2020';
           };
           (function() {
             if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
@@ -567,26 +625,70 @@ This means that the completion rate for all projects has slightly decreased. Som
     <footer class="site-footer">
   <div class="container">
 
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <p>Official PrestaShop project blog written by
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
           <a href="/authors">its members and contributors</a>.
         </p>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <p>
-          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
-            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
-          </a>
-        </p>
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/news/2017/how-to-best-contact-us/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
 
         
 
@@ -595,15 +697,7 @@ This means that the completion rate for all projects has slightly decreased. Som
         </a>
 
         
-        <a href="https://github.com/PrestaShop" title="GitHub repository">
-          <i class="icon-github-alt"></i>
-        </a>
-        
 
-        
-        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
-          <i class="icon-twitter-alt"></i>
-        </a>
         
 
         

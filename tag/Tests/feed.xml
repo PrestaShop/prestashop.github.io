@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tests on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/Tests/</link>
+    <description>Recent content in Tests on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+  <language>en-us</language>
+      <lastBuildDate>Tue, 15 Dec 2020 18:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/Tests/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Testing Pull Requests on PrestaShop</title>
+          <link>https://build.prestashop-project.org/news/2020/pr-testing-on-prestashop/</link>
+          <pubDate>Tue, 15 Dec 2020 18:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2020/pr-testing-on-prestashop/</guid>
+          <description>The PrestaShop company created a Quality Assurance team 4 years ago, in 2016, to improve the quality of the open source project – but also of its products and services. Over the last year, the team has grown quickly, taking quality to the next level! Its field of action has been widening (tests of new services like Prestashop Checkout, specifications reviews, etc.) but the core of the manual testers’ activity remains the same: verifying Pull Requests (“PRs”) on GitHub, and testing every release.</description>
+        </item>
+      
+        <item>
+          <title>Automated UI tests tutorial</title>
+          <link>https://build.prestashop-project.org/news/2020/how-to-write-a-new-ui-test/</link>
+          <pubDate>Mon, 26 Oct 2020 12:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2020/how-to-write-a-new-ui-test/</guid>
+          <description>One year ago, the QA team started to develop a new test framework, based on Puppeteer, Mocha, and Chai. You can read more about the framework in this previous article: The (new) PrestaShop Test Framework. Since then, the tests coverage has been continually increasing, and we recently improved our framework by switching to Playwright.</description>
+        </item>
+      
+        <item>
+          <title>The (new) PrestaShop Test Framework</title>
+          <link>https://build.prestashop-project.org/news/2020/the-new-prestashop-test-framework/</link>
+          <pubDate>Wed, 05 Feb 2020 12:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2020/the-new-prestashop-test-framework/</guid>
+          <description>For a few months, quality has been a priority for PrestaShop: the QA team and I are proud to announce that we’re making great steps in improving the overall quality of the core project. Automatizing tests is a big part of this process: let’s see what we’re doing, why, and how! Note: this article is focused on the Core only, but that is just a small part of what the QA team is working on. More to come in a future article!</description>
+        </item>
+      
+        <item>
+          <title>E2E testing from the trenches: Our new approach</title>
+          <link>https://build.prestashop-project.org/news/2019/E2E-testing-from-the-trenches-our-new-approach/</link>
+          <pubDate>Wed, 03 Apr 2019 11:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2019/E2E-testing-from-the-trenches-our-new-approach/</guid>
+          <description>This article is intended to catch you up with the most important changes in our testing framework. Terms, architecture, tools, and approaches to E2E testing in Prestashop in 2019.</description>
+        </item>
+      
+  </channel>
+</rss>

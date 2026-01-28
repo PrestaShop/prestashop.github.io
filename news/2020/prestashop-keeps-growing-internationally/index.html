@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>PrestaShop keeps growing internationally</title>
-    <link href="/style.css?1769011252" rel="stylesheet">
+    <link href="/style.css?1769600298" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -21,10 +21,9 @@
     <meta property="article:modified_time" content="2020-02-12T09:10:11+01:00" />
 
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build-2024.png">
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/theme/meta-logo-build-2024.png">
 <meta name="twitter:title" content="PrestaShop keeps growing internationally"/>
 <meta name="twitter:description" content="PrestaShop and its community extend the frontiers of your business"/>
-<meta name="twitter:site" content="@PrestaShopOrg"/>
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -46,71 +45,127 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="container">
     <div class="row clearfix">
 
-      <div class="menu-button"><i class="icon icon-store"></i></div>
-      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
 
       <div id="logo" class="">
         
-        <a href="https://build.prestashop-project.org">
+        <a href="https://build.prestashop-project.org/">
           <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
         </a>
       </div>
 
       <div id="navigation" class="">
-        <nav>
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
   <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        News <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
         <li><a href="/tag/core-monthly/">Core Monthly</a></li>
-        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Project <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/tag/9.0/">Articles on 9.0</a></li>
-        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
-        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
-        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
-        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
-        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
-        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Contribute <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
-        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
-        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Learn <span class="caret"></span>
-      </a>
-      <ul class="dropdown-menu">
-        <li><a href="/howtos/">How-tos</a></li>
-        <li><a href="/tools/">Tools</a></li>
-        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
-        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/news/2017/how-to-best-contact-us/">
+            How to contact us
+          </a>
+        </li>
       </ul>
     </li>
     <li class="">
-      <a href="/about/">About</a>
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
     </li>
   </ul>
 </nav>
+          </div>
 
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
       </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
 
       <div id="algolia-container">
         <div class="aa-input-container" id="aa-input-container">
@@ -118,10 +173,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
 
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
     </div>
   </div>
-
-</header>
+</div>
 
 
     <div class="page-content">
@@ -133,7 +188,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="col-sm-12">
 
           <header class="post-header">
-            <h1 class="post-title">PrestaShop keeps growing internationally</h1>
+            <h1 class="page-title">PrestaShop keeps growing internationally</h1>
               
                 <h3 class="post-subtitle">PrestaShop and its community extend the frontiers of your business</h3>
               
@@ -183,8 +238,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <aside class="share-buttons">
               <div class="aside-meta">Share this</div>
 
-<a href="https://twitter.com/intent/tweet?text=PrestaShop&#43;keeps&#43;growing&#43;internationally&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fprestashop-keeps-growing-internationally%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
-    <i class="icon-twitter-alt"></i>
+<a href="https://x.com/intent/post?text=PrestaShop&#43;keeps&#43;growing&#43;internationally&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fprestashop-keeps-growing-internationally%2F&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Share on X">
+    <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
 </a>
 
 <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fprestashop-keeps-growing-internationally%2F" rel="nofollow" target="_blank" title="Share on Facebook">
@@ -204,7 +262,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Yes, a lot had to be corrected and this is why the PrestaShop team and its community (agencies, ambassadors, translators, GitHub contributors) have spent some time this summer having a close look at each file to improve PrestaShop’s localization with relevant and more accurate data, available for all 1.7.x versions. Among numerous minor changes, here are the main lines of this project.</p>
 <p><img src="/assets/images/2020/01/Localization-Packs-banner.jpg" alt="Localization packs banner"></p>
 <h2 id="about-localization-packs">About localization packs</h2>
-<h3 id="-why-add-a-localization-pack">📌 Why add a localization pack?</h3>
+<h3 id="pushpin-why-add-a-localization-pack">&#x1f4cc; Why add a localization pack?</h3>
 <p>When you install PrestaShop, you already benefit from no less than 89 localization packs! It is pretty huge, and will surely continue growing depending on the development of the PrestaShop community. Indeed, we make a point of staying connected to users, wherever they are located, and it implies providing local data.</p>
 <p>When should a new localization pack be added to PrestaShop? We take two things into account: countries where there is a big activity and/or community involved locally and countries that are considered strategic for PrestaShop.</p>
 <p>For instance, we have ambassadors in some countries which are not localized in PrestaShop, it is kind of counterproductive. Offering them a friendly native environment with common local information is important to give more impact on their commitment and therefore increase PrestaShop’s adoption internationally.</p>
@@ -212,7 +270,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p><strong>Ivory Coast</strong>, thanks to <a href="https://ambassadors.prestashop.com/ambassador/sylvestre-niki">Sylvestre Nicky</a>, our great ambassador there. And many others such as <strong>Bangladesh</strong>, <strong>Bosnia-Herzegovina</strong>, <strong>Cameroon</strong>, <strong>Madagascar</strong>, and <strong>Senegal</strong>, raising to 14 the number of localization packs added to the 1.7 version!</p>
 <p><em><strong>Want to contribute?</strong></em></p>
 <p>Gather all official data (languages, units, taxes, etc.) and create a pull request on GitHub to add a new file in <a href="https://github.com/PrestaShop/LocalizationFiles">localization</a>, then read the following instructions&hellip;</p>
-<h3 id="-and-how-to-do-so">🤓 And how to do so?</h3>
+<h3 id="nerd_face-and-how-to-do-so">&#x1f913; And how to do so?</h3>
 <p>Here is an example of how a localization pack file should look like:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="nt">&lt;localizationPack</span> <span class="na">name=</span><span class="s">&#34;[type the English name of the country]&#34;</span> <span class="na">version=</span><span class="s">&#34;1.0&#34;</span><span class="nt">&gt;</span>
@@ -263,27 +321,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 When entering information about the currency in a localization pack, note the CLDR handles most of it. Such as the format, decimals or blank fields. However, this information is still read (<a href="https://github.com/PrestaShop/PrestaShop/blob/1.7.0.x/classes/LocalizationPack.php#L304-L312">here</a>) so it has to be filled.
 </div>
 
-<h3 id="-relocate-to-better-localize">📁 Relocate to better localize</h3>
+<h3 id="file_folder-relocate-to-better-localize">&#x1f4c1; Relocate to better localize</h3>
 <p>In order to better understand how localization works, we need to dive into the Core. Localization files are bundled physically with PrestaShop, they are located in the <code>/localization</code> folder, but they are also distributed through our services via <a href="http://api.prestashop.com/localization/%7BmajorVersion%7D/%7BcountryIsoCode%7D.xml">http://api.prestashop.com/localization/{majorVersion}/{countryIsoCode}.xml</a> (where {majorVersion} is something like &ldquo;17&rdquo; (for 1.7) and {countryIsoCode} is a 2-letter country iso code like &ldquo;fr&rdquo;) so that older PrestaShop versions can benefit from updated localization packs.</p>
 <p>Problem: it is irrelevant to have files that often need to be updated at this place, complicating our ability to quickly deliver up-to-date data.</p>
 <p>Localization data evolves, this is why it made more sense, in our opinion, to extract those files and put them in a dedicated repository. It would allow localization data to be kept up-to-date as regularly as needed since they will be separated from the releases cycle. And it happens right <a href="https://github.com/PrestaShop/LocalizationFiles">here</a>!</p>
 <p><img src="/assets/images/2020/01/Localization-Packs-image.jpg" alt="Localization packs image"></p>
 <h2 id="about-languages">About languages</h2>
-<h3 id="-packs-now-include-official-languages-only">🐧 Packs now include official languages only</h3>
+<h3 id="penguin-packs-now-include-official-languages-only">&#x1f427; Packs now include official languages only</h3>
 <p>As PrestaShop evolved since version 1.7.0, languages have been added but last additions have not been redistributed in the concerned localization packs. Our first idea was thus to put isolated available languages in the right localization pack.</p>
 <p>Indeed, a few languages are available only in the International &gt; Translations section of the back office. For instance, it is the case for Hindi, Malayalam or Bengali. But when you import the Indian localization pack (International &gt; Localization), you can only get Tamil. Whaaaaat?</p>
 <p>It does not make sense to look for all the Indian languages available in two different places. Importing the Indian localization pack should give access to all Indian languages available in PrestaShop.</p>
 <p>But there is a “but”: the versioning of the software prevents us from relocating isolated languages in the matching pack. Let me explain why: logically, late versions of PrestaShop contain more supported languages than the previous ones. In 1.7.7, there will be more supported languages than in 1.7.1. Yet, distributing recently added languages in old localization pack would introduce breaking changes when upgrading packs - which is definitely not recommended. Sooo we made the decision to handle languages in packs differently.</p>
 <p>From now on, no matter the version, any pack will have to contain the official language(s), from a country point of view rather than regionally. In short, you will only find official languages in a localization pack, other related languages will have to be imported.</p>
-<p>For instance, the 🇫🇷 localization pack (in International &gt; Localization) will only contain French (since it is the only official language). If you are looking for Breton (a regional language), you will be able to download it (in International &gt; Translations &gt; Add / Update a language).</p>
-<h3 id="-new-available-languages-in-the-installer">🚀 New available languages in the installer</h3>
+<p>For instance, the &#x1f1eb;&#x1f1f7; localization pack (in International &gt; Localization) will only contain French (since it is the only official language). If you are looking for Breton (a regional language), you will be able to download it (in International &gt; Translations &gt; Add / Update a language).</p>
+<h3 id="rocket-new-available-languages-in-the-installer">&#x1f680; New available languages in the installer</h3>
 <p>Since the installer is the first entry point to the software, it must be accessible to all. And this is why we aim at having it translated in as many languages as possible. In 1.7.7, the number of available languages in the install will raise to 46. Pretty nice, right?</p>
 <p>So when a language has a high level of translation on <a href="https://crowdin.com/project/prestashop-official">Crowdin</a> (the Install.xlf file must be 100% translated and validated) without being available in the installer, we simply add it.</p>
 <p><em><strong>What is next?</strong></em></p>
 <p><strong>Albanian</strong> and <strong>Korean</strong> will be joining the installer’s languages drop-down!</p>
 <p><em><strong>Want to contribute?</strong></em></p>
 <p>Create a pull request on GitHub to add a new folder in <a href="https://github.com/PrestaShop/PrestaShop/tree/develop/install-dev/langs">install-dev/langs</a>, named with the code of the language you want to add.</p>
-<h3 id="-new-supported-languages-in-the-software">🌎 New supported languages in the software</h3>
+<h3 id="earth_americas-new-supported-languages-in-the-software">&#x1f30e; New supported languages in the software</h3>
 <p>Some languages are available for translation but not available in PrestaShop because of a low completion rate on Crowdin. When translators are very active and/or showed a lot of interest in an unavailable language, it is relevant to add it to the software so that they can see the result of their translation work quickly in their shop.</p>
 <p>Khmer is a nice example. A translator, the great <a href="https://crowdin.com/profile/TuxyVarman">Tuxy Varman</a>, recently asked me to re-open the Khmer project so that he could contribute to it. At the time I re-opened it, the translation was nil. He started translating, then asked Khmer translators he knows to join him in this effort and now, a few weeks later, Khmer has reached a completion rate of 5%, i.e. 11,600 words!</p>
 <p>It seems therefore useful to activate the Khmer in PrestaShop. It is the whole point of adding supported languages: translators can contribute with more context and merchants can quickly benefit from it! As a result, the 1.7.7 version will make the Khmer translations available in the software.</p>
@@ -370,7 +428,7 @@ When entering information about the currency in a localization pack, note the CL
   </div>
 
   <div class="subscribe-btn-container">
-    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+    <a id="subscribe-button" class="cta cta--pattern cta-dark"><span>Subscribe to our newsletter</span></a>
   </div>
 
   <div id="subscription-form" class="subscription-form">
@@ -439,7 +497,7 @@ When entering information about the currency in a localization pack, note the CL
           window.disqus_config = function () {
               
               
-              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/prestashop-keeps-growing-internationally';
+              this.page.url = 'https:\/\/build.prestashop-project.org\/\/news\/prestashop-keeps-growing-internationally';
           };
           (function() {
             if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
@@ -463,26 +521,70 @@ When entering information about the currency in a localization pack, note the CL
     <footer class="site-footer">
   <div class="container">
 
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <p>Official PrestaShop project blog written by
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
           <a href="/authors">its members and contributors</a>.
         </p>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <p>
-          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
-            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
-          </a>
-        </p>
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/news/2017/how-to-best-contact-us/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
 
         
 
@@ -491,15 +593,7 @@ When entering information about the currency in a localization pack, note the CL
         </a>
 
         
-        <a href="https://github.com/PrestaShop" title="GitHub repository">
-          <i class="icon-github-alt"></i>
-        </a>
-        
 
-        
-        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
-          <i class="icon-twitter-alt"></i>
-        </a>
         
 
         

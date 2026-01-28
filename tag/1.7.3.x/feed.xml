@@ -5,110 +5,88 @@
     <link>https://build.prestashop-project.org/tag/1.7.3.x/</link>
     <description>Recent content in 1.7.3.x on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jun 2018 14:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/1.7.3.x/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Release of PrestaShop 1.7.3.4 and 1.6.1.20</title>
-      <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-4-1-6-1-20-maintenance-releases/</link>
-      <pubDate>Wed, 27 Jun 2018 14:00:00 +0200</pubDate>
+  <language>en-us</language>
+      <lastBuildDate>Wed, 27 Jun 2018 14:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/1.7.3.x/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Release of PrestaShop 1.7.3.4 and 1.6.1.20</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-4-1-6-1-20-maintenance-releases/</link>
+          <pubDate>Wed, 27 Jun 2018 14:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-4-1-6-1-20-maintenance-releases/</guid>
+          <description>PrestaShop 1.7.3.4 and 1.6.1.20 are now available. These versions fix security and PHP compatiblity issues.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-4-1-6-1-20-maintenance-releases/</guid>
-      <description>PrestaShop 1.7.3.4 and 1.6.1.20 are now available. These versions fix security and PHP compatiblity issues.
-Since these versions fix security problems, we strongly encourage you to upgrade your shop as soon as possible.
-The most notable fix for 1.7.3.x is:
-Improve cookies encryption Some of the most notable fixes for 1.6.1.x are:
-Improve cookies encryption Improve compatibility with PHP 7.1 and 7.2 Download PrestaShop now! Here is the complete list of changes for 1.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.3.3 and 1.6.1.19</title>
-      <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-3-1-6-1-19-maintenance-releases/</link>
-      <pubDate>Mon, 28 May 2018 10:30:00 +0200</pubDate>
+        <item>
+          <title>Release of PrestaShop 1.7.3.3 and 1.6.1.19</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-3-1-6-1-19-maintenance-releases/</link>
+          <pubDate>Mon, 28 May 2018 10:30:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-3-1-6-1-19-maintenance-releases/</guid>
+          <description>PrestaShop 1.7.3.3 and 1.6.1.19 are now available. Those maintenance releases fixes specific issues for the GDPR compliance.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-3-1-6-1-19-maintenance-releases/</guid>
-      <description>PrestaShop 1.7.3.3 and 1.6.1.19 are now available. Those maintenance releases fixes specific issues for the GDPR compliance.
-Some of the most notable fixes are:
-Add GDPR compliance to native modules Fix some diplay errors Download PrestaShop now! Here is the complete list of changes for 1.7.3.3
-Back Office: Bug fix: #9026: Fixed display error on back office module selection list Front Office: New feature: #9099: Follow-up to: display GDPR consent checkbox in contactform Improvement: #9104: Add compliance to GDPR law for ps_emailsubscription module Here is the complete list of changes for 1.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.3.2</title>
-      <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-2-maintenance-release/</link>
-      <pubDate>Thu, 03 May 2018 14:20:00 +0200</pubDate>
+        <item>
+          <title>Release of PrestaShop 1.7.3.2</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-2-maintenance-release/</link>
+          <pubDate>Thu, 03 May 2018 14:20:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-2-maintenance-release/</guid>
+          <description>PrestaShop 1.7.3.2 is now available. This maintenance release fixes 17 issues reported on version 1.7.3.x.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-2-maintenance-release/</guid>
-      <description>PrestaShop 1.7.3.2 is now available. This maintenance release fixes 17 issues reported on version 1.7.3.x.
-Some of the most notable fixes are:
-Updating combinations wasn’t working with PHP &amp;lt; 7.1 Installing a Theme with PrestaTrust modules was failing Various issues with product stock availability The &amp;ldquo;Install_prestashop.html&amp;rdquo; file was not visible on some systems Download PrestaShop 1.7.3.2 now! Here is the complete list of changes:
-Back Office: Improvement: #8834: Adds missing Persian translations for data and samples Bug fix: #8752: Check product availability before validating orders #8975: Fix broken &amp;ldquo;you must first create a new language&amp;rdquo; link in BO Translations #8965: Fix theme install with prestatrust modules #8517: Fixed bug when using 2 swap in 1 form #8948: Fixed update of combinations #8762: Specific price created for a cart is displayed in the front end as the product price Front Office: Improvement: #8835: Replace Noto Sans font with Vazir font for Farsi in Classic theme Bug fix: #9005: Fix cannot order oos product even if it&amp;rsquo;s allowed #8951: Fix error display on cart quantity edition #8946: Fix button show password height on Safari #8940: Check product availability in order step #8931: Out of stock message display only if customer can order the product Core: Bug fix: #8973: Fixed undefined class constant #8850: Fix profile permission array construction #8679: Catch Throwable errors on CLI install and check Theme instance in context Installer: Improvement: #8843: Minor install improvements Bug fix: #8949: Remove addition of .</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.3.1</title>
-      <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-1-maintenance-release/</link>
-      <pubDate>Tue, 10 Apr 2018 09:10:11 +0200</pubDate>
+        <item>
+          <title>Release of PrestaShop 1.7.3.1</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-1-maintenance-release/</link>
+          <pubDate>Tue, 10 Apr 2018 09:10:11 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-1-maintenance-release/</guid>
+          <description>PrestaShop 1.7.3.1 is now available. This maintenance release fixes 17 issues reported on version 1.7.3.x.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-1-maintenance-release/</guid>
-      <description>PrestaShop 1.7.3.1 is now available. This maintenance release fixes 17 issues reported on version 1.7.3.x.
-Some of the most notable fixes are:
-Data sent to the front end is now filtered (learn more) General speed of the Back Office has been greatly improved (up to 3x faster!) #8780 Improved Product page performance when there&amp;rsquo;s a high number of product combinations BOOM-2950 The stock quantity for packs is now correctly calculated BOOM-4361 Download PrestaShop 1.</description>
-    </item>
-    
-    <item>
-      <title>Exposing data with confidence in PrestaShop 1.7</title>
-      <link>https://build.prestashop-project.org/news/2018/exposing-data-with-confidence/</link>
-      <pubDate>Fri, 06 Apr 2018 09:10:11 +0200</pubDate>
+        <item>
+          <title>Exposing data with confidence in PrestaShop 1.7</title>
+          <link>https://build.prestashop-project.org/news/2018/exposing-data-with-confidence/</link>
+          <pubDate>Fri, 06 Apr 2018 09:10:11 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/exposing-data-with-confidence/</guid>
+          <description>During the last few months, we have received a lot of feedback from the community pointing out issues with how PrestaShop 1.7 makes shop data available in the front office.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2018/exposing-data-with-confidence/</guid>
-      <description>During the last few months, we have received a lot of feedback from the community pointing out issues with how PrestaShop 1.7 makes shop data available in the front office.
-In this article, we&amp;rsquo;ll see how the upcoming PrestaShop 1.7.3.1 will address this problem.
-TL;DR: We have changed the way PrestaShop filters data going to the browser. If you didn&amp;rsquo;t change your Models, this shouldn&amp;rsquo;t impact you :)
-Some context PrestaShop 1.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 1.7.3.0 is available!</title>
-      <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-available/</link>
-      <pubDate>Wed, 28 Feb 2018 09:10:11 +0100</pubDate>
+        <item>
+          <title>PrestaShop 1.7.3.0 is available!</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-available/</link>
+          <pubDate>Wed, 28 Feb 2018 09:10:11 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-available/</guid>
+          <description>Dear community, it is a great day for us all. Many “when will it be released?” later, we are thrilled to announce the birth of PrestaShop 1.7.3!</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-available/</guid>
-      <description>Dear community, it is a great day for us all. Many “when will it be released?” later, we are thrilled to announce the birth of PrestaShop 1.7.3!
-After six months of blood, sweat, and tears (okay, we’re just kidding), here it is, the new minor version has come. We are aware that these six months of work have raised some very high expectations. You won’t be disappointed, because we have spent a lot of time improving and testing it for you!</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 1.7.3.0 RC1 is open for feedback!</title>
-      <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-rc-1/</link>
-      <pubDate>Mon, 19 Feb 2018 10:00:00 +0100</pubDate>
+        <item>
+          <title>PrestaShop 1.7.3.0 RC1 is open for feedback!</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-rc-1/</link>
+          <pubDate>Mon, 19 Feb 2018 10:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-rc-1/</guid>
+          <description>PrestaShop 1.7.3.0 Release Candidate is now ready for you to test!</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-3-0-rc-1/</guid>
-      <description>PrestaShop 1.7.3.0 Release Candidate is now ready for you to test!
-We are happy to announce that we are very close to releasing 1.7.3.0. This minor version (in the SemVer meaning of the term) brings several improvements, some new features and innovative tools to the 1.7 codebase. We can’t wait to receive your feedback about it!
-Test PrestaShop 1.7.3.0 RC1 now! This release candidate is a great opportunity for you to start playing with it before we release the final version!</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 1.7.3.0 beta 1 is out!</title>
-      <link>https://build.prestashop-project.org/news/2017/prestashop-1-7-3-0-beta-1/</link>
-      <pubDate>Fri, 15 Dec 2017 09:10:11 +0100</pubDate>
+        <item>
+          <title>PrestaShop 1.7.3.0 beta 1 is out!</title>
+          <link>https://build.prestashop-project.org/news/2017/prestashop-1-7-3-0-beta-1/</link>
+          <pubDate>Fri, 15 Dec 2017 09:10:11 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2017/prestashop-1-7-3-0-beta-1/</guid>
+          <description>The first beta version for PrestaShop 1.7.3.0 is now ready for you to test and give feedback about!</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2017/prestashop-1-7-3-0-beta-1/</guid>
-      <description>The first beta version for PrestaShop 1.7.3.0 is now ready for you to test and give feedback about!
-We said it earlier, many times. Now it is the right time to announce proudly that we are close to releasing 1.7.3.0. Features and improvements have found their way to the 1.7 codebase, we are thrilled to let you have a look at it and play with it before everyone else!
-However, note that it is a beta version, not a release candidate.</description>
-    </item>
-    
-    <item>
-      <title>Make modules on the back office great again!</title>
-      <link>https://build.prestashop-project.org/news/2017/make-back-office-modules-great-again/</link>
-      <pubDate>Wed, 29 Nov 2017 09:10:11 +0100</pubDate>
+        <item>
+          <title>Make modules on the back office great again!</title>
+          <link>https://build.prestashop-project.org/news/2017/make-back-office-modules-great-again/</link>
+          <pubDate>Wed, 29 Nov 2017 09:10:11 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2017/make-back-office-modules-great-again/</guid>
+          <description>Since the release of 1.7.0, we are working hard on improving the way developers can customize and enhancing the quality of PrestaShop.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2017/make-back-office-modules-great-again/</guid>
-      <description>Since the release of 1.7.0, we are working hard on improving the way developers can customize and enhancing the quality of PrestaShop.
-An extra theme system has been integrated that introduces new helpers, widgets and inheritance scheme between templates. It&amp;rsquo;s now easier for everyone to create new themes with PrestaShop, especially for those who are more designers than developers.
-We have also started the migration of the back office with the framework Symfony 2, first with the Product and Modules pages and then with the Translation and Stock Management pages.</description>
-    </item>
-    
   </channel>
 </rss>

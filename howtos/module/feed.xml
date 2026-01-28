@@ -5,47 +5,43 @@
     <link>https://build.prestashop-project.org/howtos/module/</link>
     <description>Recent content in Modules on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 04 May 2018 12:30:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/howtos/module/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to make your module compliant with PrestaShop’s Official GDPR Compliance Module</title>
-      <link>https://build.prestashop-project.org/howtos/module/how-to-make-your-module-compliant-with-prestashop-official-gdpr-compliance-module/</link>
-      <pubDate>Fri, 04 May 2018 12:30:00 +0200</pubDate>
+  <language>en-us</language>
+      <lastBuildDate>Fri, 04 May 2018 12:30:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/howtos/module/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>How to make your module compliant with PrestaShop’s Official GDPR Compliance Module</title>
+          <link>https://build.prestashop-project.org/howtos/module/how-to-make-your-module-compliant-with-prestashop-official-gdpr-compliance-module/</link>
+          <pubDate>Fri, 04 May 2018 12:30:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/howtos/module/how-to-make-your-module-compliant-with-prestashop-official-gdpr-compliance-module/</guid>
+          <description>Everybody must already know, there are a few steps to follow in order to make your module compliant with the General Data Protection Regulation (GDPR)</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/howtos/module/how-to-make-your-module-compliant-with-prestashop-official-gdpr-compliance-module/</guid>
-      <description>Everybody must already know, there are a few steps to follow in order to make your module compliant with the General Data Protection Regulation (GDPR)
-Add a consent confirmation checkbox if the module collects personal data Allow users to ask for total removal of their personal data Allow users to ask for a comprehensive export of their personal data owned by the site The Official GDPR Compliance Module by PrestaShop will be available soon, and it provides you with 4 new hooks to help you meet these requirements.</description>
-    </item>
-    
-    <item>
-      <title>Twelve things to watch out for when coding a PrestaShop module</title>
-      <link>https://build.prestashop-project.org/howtos/module/Common-mistakes-while-coding-module/</link>
-      <pubDate>Mon, 25 Jul 2016 09:10:00 +0200</pubDate>
+        <item>
+          <title>Twelve things to watch out for when coding a PrestaShop module</title>
+          <link>https://build.prestashop-project.org/howtos/module/Common-mistakes-while-coding-module/</link>
+          <pubDate>Mon, 25 Jul 2016 09:10:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/howtos/module/Common-mistakes-while-coding-module/</guid>
+          <description>PrestaShop has been around for many years, during which thousands of modules were made by thousands of developers, yet we still see the same simple mistakes being made, even though they could easily be avoided.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/howtos/module/Common-mistakes-while-coding-module/</guid>
-      <description>PrestaShop has been around for many years, during which thousands of modules were made by thousands of developers, yet we still see the same simple mistakes being made, even though they could easily be avoided.
-Here is a list of 10+ common mistakes when coding a PrestaShop module, with a short information on how to avoid them.
-Note Several tips only apply to PrestaShop 1.5-1.6 module development. PrestaShop 1.7 changes a few things!</description>
-    </item>
-    
-    <item>
-      <title>Ten ways to improve your PrestaShop modules!</title>
-      <link>https://build.prestashop-project.org/howtos/module/Ten-ways-improve-modules/</link>
-      <pubDate>Tue, 05 Jul 2016 08:07:11 +0200</pubDate>
+        <item>
+          <title>Ten ways to improve your PrestaShop modules!</title>
+          <link>https://build.prestashop-project.org/howtos/module/Ten-ways-improve-modules/</link>
+          <pubDate>Tue, 05 Jul 2016 08:07:11 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/howtos/module/Ten-ways-improve-modules/</guid>
+          <description>PrestaShop has numerous features in the API, both hidden in its code as well as in the developer documentation and there are many tools that allow you to create your own module in no time! Unfortunately I have noticed that many developers do not use these features and tools to their advantage, so I think it’s time to change all that :) Hopefully, these tips will increase your development speed and save you lots and lots of time. And if not satisfied, you’ll get your money back! (Oh, wait…)</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/howtos/module/Ten-ways-improve-modules/</guid>
-      <description>PrestaShop has numerous features in the API, both hidden in its code as well as in the developer documentation and there are many tools that allow you to create your own module in no time! Unfortunately I have noticed that many developers do not use these features and tools to their advantage, so I think it&amp;rsquo;s time to change all that :) Hopefully, these tips will increase your development speed and save you lots and lots of time.</description>
-    </item>
-    
-    <item>
-      <title>How to override modules in PrestaShop</title>
-      <link>https://build.prestashop-project.org/howtos/module/how-to-override-modules/</link>
-      <pubDate>Sun, 10 May 2015 12:15:00 +0200</pubDate>
+        <item>
+          <title>How to override modules in PrestaShop</title>
+          <link>https://build.prestashop-project.org/howtos/module/how-to-override-modules/</link>
+          <pubDate>Sun, 10 May 2015 12:15:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/howtos/module/how-to-override-modules/</guid>
+          <description> Since version 1.6.0.11 of PrestaShop, there is a new feature that allows developers to override a module’s instance classes (ie. its main module files, see the PR by @axometeam).</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/howtos/module/how-to-override-modules/</guid>
-      <description>This article may be outdated Please note that this article refers to very old versions of PrestaShop. Check out the documentation to learn how to override modules. Since version 1.6.0.11 of PrestaShop, there is a new feature that allows developers to override a module&amp;rsquo;s instance classes (ie. its main module files, see the PR by @axometeam).
-Since PrestaShop uses lots of modules for both core and custom features, module overrides are a welcome addition to an already great override system in PrestaShop.</description>
-    </item>
-    
   </channel>
 </rss>

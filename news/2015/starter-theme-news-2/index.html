@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Starter Theme: fresh news from the front #2</title>
-    <link href="/style.css?1769011252" rel="stylesheet">
+    <link href="/style.css?1769600299" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -21,10 +21,9 @@
     <meta property="article:modified_time" content="2015-10-26T15:00:00+01:00" />
 
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build-2024.png">
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/theme/meta-logo-build-2024.png">
 <meta name="twitter:title" content="Starter Theme: fresh news from the front #2"/>
 <meta name="twitter:description" content="What&#39;s up about Starter Theme"/>
-<meta name="twitter:site" content="@PrestaShopOrg"/>
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -46,71 +45,127 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="container">
     <div class="row clearfix">
 
-      <div class="menu-button"><i class="icon icon-store"></i></div>
-      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
 
       <div id="logo" class="">
         
-        <a href="https://build.prestashop-project.org">
+        <a href="https://build.prestashop-project.org/">
           <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
         </a>
       </div>
 
       <div id="navigation" class="">
-        <nav>
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
   <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        News <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
         <li><a href="/tag/core-monthly/">Core Monthly</a></li>
-        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Project <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/tag/9.0/">Articles on 9.0</a></li>
-        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
-        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
-        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
-        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
-        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
-        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Contribute <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
-        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
-        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Learn <span class="caret"></span>
-      </a>
-      <ul class="dropdown-menu">
-        <li><a href="/howtos/">How-tos</a></li>
-        <li><a href="/tools/">Tools</a></li>
-        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
-        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/news/2017/how-to-best-contact-us/">
+            How to contact us
+          </a>
+        </li>
       </ul>
     </li>
     <li class="">
-      <a href="/about/">About</a>
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
     </li>
   </ul>
 </nav>
+          </div>
 
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
       </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
 
       <div id="algolia-container">
         <div class="aa-input-container" id="aa-input-container">
@@ -118,10 +173,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
 
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
     </div>
   </div>
-
-</header>
+</div>
 
 
     <div class="page-content">
@@ -133,7 +188,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="col-sm-12">
 
           <header class="post-header">
-            <h1 class="post-title">Starter Theme: fresh news from the front #2</h1>
+            <h1 class="page-title">Starter Theme: fresh news from the front #2</h1>
               
                 <h3 class="post-subtitle">What&#39;s up about Starter Theme</h3>
               
@@ -183,8 +238,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <aside class="share-buttons">
               <div class="aside-meta">Share this</div>
 
-<a href="https://twitter.com/intent/tweet?text=Starter&#43;Theme%3A&#43;fresh&#43;news&#43;from&#43;the&#43;front&#43;%232&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fstarter-theme-news-2%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
-    <i class="icon-twitter-alt"></i>
+<a href="https://x.com/intent/post?text=Starter&#43;Theme%3A&#43;fresh&#43;news&#43;from&#43;the&#43;front&#43;%232&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fstarter-theme-news-2%2F&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Share on X">
+    <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
 </a>
 
 <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2015%2Fstarter-theme-news-2%2F" rel="nofollow" target="_blank" title="Share on Facebook">
@@ -202,7 +260,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <p>We already have more exciting news about the StarterTheme.</p>
 <p>Last week, @djfm came up with a photo to summarize what we aim to do with the StarterTheme:</p>
 <p><img src="/assets/images/2015/10/default-bootstrap-vs-starter-theme.gif" alt="PrestaShop StarterTheme Test Suite"></p>
-<h2 id="the-startertheme-is-now-part-of-prestashopprestashophttpsgithubcomprestashopprestashoptreefeatstarter-themethemesstartertheme">The StarterTheme is now part of <a href="https://github.com/PrestaShop/PrestaShop/tree/feat/starter-theme/themes/StarterTheme">PrestaShop/PrestaShop</a></h2>
+<h2 id="the-startertheme-is-now-part-of-prestashopprestashop">The StarterTheme is now part of <a href="https://github.com/PrestaShop/PrestaShop/tree/feat/starter-theme/themes/StarterTheme">PrestaShop/PrestaShop</a></h2>
 <p>When we started this project, we wanted to start from scratch so bad that we
 even wanted to have a standalone Git repository. After few days, we realized it wasn&rsquo;t so
 easy, because we constantly needed to have the Core repository in sync with the StarterTheme repo.</p>
@@ -281,7 +339,7 @@ all the pages (product page, home page, category page, etc.).</p>
 </span></span></span><span class="line"><span class="cl"><span class="x">        &lt;p class=&#34;unit-price&#34;&gt;&lt;span id=&#34;unit_price_display&#34;&gt;</span><span class="cp">{</span><span class="nf">convertPrice</span> <span class="na">price</span><span class="o">=</span><span class="nv">$unit_price</span><span class="cp">}</span><span class="x">&lt;/span&gt; </span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;per&#39;</span><span class="cp">}</span><span class="x"> </span><span class="cp">{</span><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">unity</span><span class="o">|</span><span class="na">escape</span><span class="o">:</span><span class="s1">&#39;html&#39;</span><span class="o">:</span><span class="s1">&#39;UTF-8&#39;</span><span class="cp">}</span><span class="x">&lt;/p&gt;
 </span></span></span><span class="line"><span class="cl"><span class="x">        </span><span class="cp">{</span><span class="nf">hook</span> <span class="na">h</span><span class="o">=</span><span class="s2">&#34;displayProductPriceBlock&#34;</span> <span class="na">product</span><span class="o">=</span><span class="nv">$product</span> <span class="na">type</span><span class="o">=</span><span class="s2">&#34;unit_price&#34;</span><span class="cp">}</span><span class="x">
 </span></span></span><span class="line"><span class="cl"><span class="x">    </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
-</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
 </span></span></span></code></pre></div><h3 id="after">After</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">block</span> <span class="na">name</span><span class="o">=</span><span class="s2">&#34;product_prices&#34;</span><span class="cp">}</span><span class="x">
 </span></span></span><span class="line"><span class="cl"><span class="x">  </span><span class="cp">{</span><span class="nf">if</span> <span class="nv">$product.show_price</span><span class="cp">}</span><span class="x">
@@ -343,7 +401,7 @@ all the pages (product page, home page, category page, etc.).</p>
 </span></span></span><span class="line"><span class="cl"><span class="x">      </span><span class="cp">{</span><span class="nf">hook</span> <span class="na">h</span><span class="o">=</span><span class="s2">&#34;displayProductPriceBlock&#34;</span> <span class="na">product</span><span class="o">=</span><span class="nv">$product</span> <span class="na">type</span><span class="o">=</span><span class="s2">&#34;after_price&#34;</span><span class="cp">}</span><span class="x">
 </span></span></span><span class="line"><span class="cl"><span class="x">    &lt;/div&gt;
 </span></span></span><span class="line"><span class="cl"><span class="x">  </span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
-</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">/block</span><span class="cp">}</span><span class="x">
 </span></span></span></code></pre></div><p>Soon we&rsquo;ll start using Ajax and <a href="http://rivetsjs.com/">Rivets.js</a> to improve this page.</p>
 <h2 id="notifications">Notifications</h2>
 <p>If you ever worked with PrestaShop, surely you know <code>$this-&gt;errors</code>, the array where we
@@ -353,9 +411,9 @@ This may look like a small improvement but it&rsquo;s actually a big step forwar
 <p>If you look at many templates in <code>default-bootstrap</code>, you&rsquo;ll find a lot of pieces of code like this:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">if</span> <span class="nv">$category</span><span class="o">-&gt;</span><span class="na">id</span> <span class="na">AND</span> <span class="nv">$category</span><span class="o">-&gt;</span><span class="na">active</span><span class="cp">}</span><span class="x">
 </span></span></span><span class="line"><span class="cl"><span class="x">  // Do something
-</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">elseif</span> <span class="nv">$category</span><span class="o">-&gt;</span><span class="na">id</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">elseif</span> <span class="nv">$category</span><span class="o">-&gt;</span><span class="na">id</span><span class="cp">}</span><span class="x">
 </span></span></span><span class="line"><span class="cl"><span class="x">  &lt;p class=&#34;alert alert-warning&#34;&gt;</span><span class="cp">{</span><span class="nf">l</span> <span class="na">s</span><span class="o">=</span><span class="s1">&#39;This category is currently unavailable.&#39;</span><span class="cp">}</span><span class="x">&lt;/p&gt;
-</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">/if</span><span class="cp">}</span><span class="x">
 </span></span></span></code></pre></div><p>Hence the new notification arrays will help remove A LOT of logic from the templates.</p>
 <p>Plus, now that messages are set in the controllers, they won&rsquo;t change, which means that they can be translated easily.</p>
 <h2 id="smarty">Smarty</h2>
@@ -375,8 +433,8 @@ If you want NOT to escape your Smarty vars, you&rsquo;ll have to use <code>nofil
 <h3 id="url-function"><code>{url}</code> function</h3>
 <p><code>{url}</code> will help you generate any URL you need.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">url</span> <span class="na">entity</span><span class="o">=</span><span class="na">cms</span> <span class="na">id</span><span class="o">=</span><span class="m">2</span><span class="cp">}</span><span class="x">
-</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">url</span> <span class="na">entity</span><span class="o">=</span><span class="na">category</span> <span class="na">id</span><span class="o">=</span><span class="m">3</span><span class="cp">}</span><span class="x">
-</span></span></span><span class="line"><span class="cl"><span class="x"></span><span class="cp">{</span><span class="nf">url</span> <span class="na">entity</span><span class="o">=</span><span class="na">address</span> <span class="na">id</span><span class="o">=</span><span class="m">1</span> <span class="na">params</span><span class="o">=[</span><span class="s1">&#39;delete&#39;</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="o">]</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">url</span> <span class="na">entity</span><span class="o">=</span><span class="na">category</span> <span class="na">id</span><span class="o">=</span><span class="m">3</span><span class="cp">}</span><span class="x">
+</span></span></span><span class="line"><span class="cl"><span class="cp">{</span><span class="nf">url</span> <span class="na">entity</span><span class="o">=</span><span class="na">address</span> <span class="na">id</span><span class="o">=</span><span class="m">1</span> <span class="na">params</span><span class="o">=[</span><span class="s1">&#39;delete&#39;</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="o">]</span><span class="cp">}</span><span class="x">
 </span></span></span><span class="line"><span class="cl"><span class="x">
 </span></span></span><span class="line"><span class="cl"><span class="x">...will generate, respectively:
 </span></span></span><span class="line"><span class="cl"><span class="x">
@@ -387,14 +445,14 @@ If you want NOT to escape your Smarty vars, you&rsquo;ll have to use <code>nofil
 <p>The <code>classname</code> modifier will sanitize any string into a nice CSS class or id.</p>
 <p>The <code>classnames</code> modifier will transform an array into class names (see example below).</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="c1">// PHP
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$classes</span> <span class="o">=</span> <span class="p">[</span>
+</span></span></span><span class="line"><span class="cl"><span class="nv">$classes</span> <span class="o">=</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">  <span class="s1">&#39;class1&#39;</span> <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="s1">&#39;nice_layout&#39;</span> <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="s1">&#39;another-class&#39;</span> <span class="o">=&gt;</span> <span class="k">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="p">]</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// Smarty
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">class</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">{</span><span class="nv">$classes</span><span class="o">|</span><span class="nx">classnames</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span></span><span class="line"><span class="cl"><span class="nx">class</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">{</span><span class="nv">$classes</span><span class="o">|</span><span class="nx">classnames</span><span class="si">}</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">...</span><span class="nx">will</span> <span class="nx">generate</span><span class="o">:</span>
 </span></span><span class="line"><span class="cl">
@@ -472,7 +530,7 @@ If you want NOT to escape your Smarty vars, you&rsquo;ll have to use <code>nofil
   </div>
 
   <div class="subscribe-btn-container">
-    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+    <a id="subscribe-button" class="cta cta--pattern cta-dark"><span>Subscribe to our newsletter</span></a>
   </div>
 
   <div id="subscription-form" class="subscription-form">
@@ -541,7 +599,7 @@ If you want NOT to escape your Smarty vars, you&rsquo;ll have to use <code>nofil
           window.disqus_config = function () {
               
               
-              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/starter-theme-news-2';
+              this.page.url = 'https:\/\/build.prestashop-project.org\/\/news\/starter-theme-news-2';
           };
           (function() {
             if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
@@ -565,26 +623,70 @@ If you want NOT to escape your Smarty vars, you&rsquo;ll have to use <code>nofil
     <footer class="site-footer">
   <div class="container">
 
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <p>Official PrestaShop project blog written by
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
           <a href="/authors">its members and contributors</a>.
         </p>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <p>
-          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
-            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
-          </a>
-        </p>
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/news/2017/how-to-best-contact-us/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
 
         
 
@@ -593,15 +695,7 @@ If you want NOT to escape your Smarty vars, you&rsquo;ll have to use <code>nofil
         </a>
 
         
-        <a href="https://github.com/PrestaShop" title="GitHub repository">
-          <i class="icon-github-alt"></i>
-        </a>
-        
 
-        
-        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
-          <i class="icon-twitter-alt"></i>
-        </a>
         
 
         

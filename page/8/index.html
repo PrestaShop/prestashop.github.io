@@ -2,10 +2,10 @@
 <html lang="en">
 
   <head>
-	<meta name="generator" content="Hugo 0.118.2">
+	<meta name="generator" content="Hugo 0.154.2">
     <meta charset="utf-8">
     <title>PrestaShop Developers&#39; blog</title>
-    <link href="/style.css?1769011253" rel="stylesheet">
+    <link href="/style.css?1769600297" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -20,10 +20,9 @@
 <meta property="og:url" content="https://build.prestashop-project.org/" />
 
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build-2024.png">
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/theme/meta-logo-build-2024.png">
 <meta name="twitter:title" content="PrestaShop Developers&#39; blog"/>
 <meta name="twitter:description" content=""/>
-<meta name="twitter:site" content="@PrestaShopOrg"/>
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -45,73 +44,129 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="container">
     <div class="row clearfix">
 
-      <div class="menu-button"><i class="icon icon-store"></i></div>
-      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
 
       <div id="logo" class="">
         
           <h1 class="sr-only">PrestaShop Developers&#39; blog</h1>
         
-        <a href="https://build.prestashop-project.org">
+        <a href="https://build.prestashop-project.org/">
           <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
         </a>
       </div>
 
       <div id="navigation" class="">
-        <nav>
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
   <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        News <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
         <li><a href="/tag/core-monthly/">Core Monthly</a></li>
-        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Project <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/tag/9.0/">Articles on 9.0</a></li>
-        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
-        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
-        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
-        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
-        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
-        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Contribute <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
-        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
-        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Learn <span class="caret"></span>
-      </a>
-      <ul class="dropdown-menu">
-        <li><a href="/howtos/">How-tos</a></li>
-        <li><a href="/tools/">Tools</a></li>
-        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
-        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/news/2017/how-to-best-contact-us/">
+            How to contact us
+          </a>
+        </li>
       </ul>
     </li>
     <li class="">
-      <a href="/about/">About</a>
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
     </li>
   </ul>
 </nav>
+          </div>
 
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
       </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
 
       <div id="algolia-container">
         <div class="aa-input-container" id="aa-input-container">
@@ -119,10 +174,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
 
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
     </div>
   </div>
-
-</header>
+</div>
 
 
     <div class="page-content">
@@ -135,17 +190,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         
         
-
           
+          <li class="post-list-item">
 
-          
-          <li>
+            <article>
+
+              
 
             <div class="list-post-meta">
                 <span class="post-date">
                   Jun 14, 2024
                 </span>
               <span class="separator"></span>
+              <span class="post-authors">By Krystian Podemski</span>
+                <span class="separator"></span>
+              
               <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2024/upcoming-live-update-june-2024/"></span>
             </div>
 
@@ -154,33 +213,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </h2>
 
             
-            <h4>Let&#39;s meet for the second time in 2024</h4>
+            <p class="post-list-subtitle">Let&#39;s meet for the second time in 2024</p>
             
 
             <p class="post-summary">The next Live Update for the PrestaShop Project in 2024 will happen on Wednesday, June 19th, 2024 at 4 pm (Paris time) on YouTube!</p>
             <a class="read-more" href="https://build.prestashop-project.org/news/2024/upcoming-live-update-june-2024/">
-              Continue reading
-              <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
             </a>
+
+            </article>
           </li>
 
           
         
+          
+          <li class="post-list-item">
 
-          
-          <li>
-            <div class="post-divider"></div>
-          </li>
-          
+            <article>
 
-          
-          <li>
+              
 
             <div class="list-post-meta">
                 <span class="post-date">
                   Jun 6, 2024
                 </span>
               <span class="separator"></span>
+              <span class="post-authors">By Krystian Podemski</span>
+                <span class="separator"></span>
+              
               <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2024/meet-prestashop9-api/"></span>
             </div>
 
@@ -189,33 +252,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </h2>
 
             
-            <h4>Read how to use the new API in PrestaShop 9</h4>
+            <p class="post-list-subtitle">Read how to use the new API in PrestaShop 9</p>
             
 
             <p class="post-summary">A new feature in PrestaShop 9 provides the community a new, secure, modern, and extensible API based on the API Platform. In this article I will show you how to start using it.</p>
             <a class="read-more" href="https://build.prestashop-project.org/news/2024/meet-prestashop9-api/">
-              Continue reading
-              <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
             </a>
+
+            </article>
           </li>
 
           
         
+          
+          <li class="post-list-item">
 
-          
-          <li>
-            <div class="post-divider"></div>
-          </li>
-          
+            <article>
 
-          
-          <li>
+              
 
             <div class="list-post-meta">
                 <span class="post-date">
                   Jun 6, 2024
                 </span>
               <span class="separator"></span>
+              <span class="post-authors">By PrestaShop team</span>
+                <span class="separator"></span>
+              
               <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2024/prestashop-9-alpha1-available/"></span>
             </div>
 
@@ -224,33 +291,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </h2>
 
             
-            <h4>We need your help! Check the new major PrestaShop version.</h4>
+            <p class="post-list-subtitle">We need your help! Check the new major PrestaShop version.</p>
             
 
             <p class="post-summary">Here it is. The first public alpha of PrestaShop 9 is available. We decided it was time to share with you the first results of our work on PrestaShop 9.</p>
             <a class="read-more" href="https://build.prestashop-project.org/news/2024/prestashop-9-alpha1-available/">
-              Continue reading
-              <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
             </a>
+
+            </article>
           </li>
 
           
         
+          
+          <li class="post-list-item">
 
-          
-          <li>
-            <div class="post-divider"></div>
-          </li>
-          
+            <article>
 
-          
-          <li>
+              
 
             <div class="list-post-meta">
                 <span class="post-date">
                   May 28, 2024
                 </span>
               <span class="separator"></span>
+              <span class="post-authors">By PrestaShop team</span>
+                <span class="separator"></span>
+              
               <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2024/new-zip-distribution-channel/"></span>
             </div>
 
@@ -259,33 +330,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </h2>
 
             
-            <h4>We change how new releases of PrestaShop will be distributed</h4>
+            <p class="post-list-subtitle">We change how new releases of PrestaShop will be distributed</p>
             
 
             <p class="post-summary">As we continue to evolve and adapt to the global e-commerce landscape, we are implementing changes to streamline our operations and enhance our project’s trajectory. In 2022, we aimed to make PrestaShop a company-neutral open source project. Today, while keeping the project neutral, we are changing how we distribute the PrestaShop solution, starting with the upcoming 9.0 release.</p>
             <a class="read-more" href="https://build.prestashop-project.org/news/2024/new-zip-distribution-channel/">
-              Continue reading
-              <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
             </a>
+
+            </article>
           </li>
 
           
         
+          
+          <li class="post-list-item">
 
-          
-          <li>
-            <div class="post-divider"></div>
-          </li>
-          
+            <article>
 
-          
-          <li>
+              
 
             <div class="list-post-meta">
                 <span class="post-date">
                   May 15, 2024
                 </span>
               <span class="separator"></span>
+              <span class="post-authors">By PrestaShop team</span>
+                <span class="separator"></span>
+              
               <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2024/prestashop-8-1-6-maintenance-release/"></span>
             </div>
 
@@ -294,33 +369,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </h2>
 
             
-            <h4>Security patch for version 8.1 of PrestaShop</h4>
+            <p class="post-list-subtitle">Security patch for version 8.1 of PrestaShop</p>
             
 
             <p class="post-summary">A new patch version for PrestaShop 8.1 is now available. This maintenance release fixes 2 security issues.</p>
             <a class="read-more" href="https://build.prestashop-project.org/news/2024/prestashop-8-1-6-maintenance-release/">
-              Continue reading
-              <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
             </a>
+
+            </article>
           </li>
 
           
         
+          
+          <li class="post-list-item">
 
-          
-          <li>
-            <div class="post-divider"></div>
-          </li>
-          
+            <article>
 
-          
-          <li>
+              
 
             <div class="list-post-meta">
                 <span class="post-date">
                   Apr 19, 2024
                 </span>
               <span class="separator"></span>
+              <span class="post-authors">By Krystian Podemski</span>
+                <span class="separator"></span>
+              
               <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2024/live-update-april-2024/"></span>
             </div>
 
@@ -329,33 +408,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </h2>
 
             
-            <h4>A summary of the fourth Live Update in 2024</h4>
+            <p class="post-list-subtitle">A summary of the fourth Live Update in 2024</p>
             
 
             <p class="post-summary">Participants were able to know about the PrestaShop Performance project, which aims to enhance loading times and reliability of the PrestaShop solution by discovering and tackling key performance issues.</p>
             <a class="read-more" href="https://build.prestashop-project.org/news/2024/live-update-april-2024/">
-              Continue reading
-              <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
             </a>
+
+            </article>
           </li>
 
           
         
+          
+          <li class="post-list-item">
 
-          
-          <li>
-            <div class="post-divider"></div>
-          </li>
-          
+            <article>
 
-          
-          <li>
+              
 
             <div class="list-post-meta">
                 <span class="post-date">
                   Apr 12, 2024
                 </span>
               <span class="separator"></span>
+              <span class="post-authors">By Krystian Podemski</span>
+                <span class="separator"></span>
+              
               <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2024/upcoming-live-update-april-2024/"></span>
             </div>
 
@@ -364,33 +447,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </h2>
 
             
-            <h4>Join us on YouTube on April 17th, 2024 at 4 pm (Paris time) for the next Live Update!</h4>
+            <p class="post-list-subtitle">Join us on YouTube on April 17th, 2024 at 4 pm (Paris time) for the next Live Update!</p>
             
 
             <p class="post-summary">The next Live Update for the PrestaShop Project in 2024 will happen on Wednesday, April 17th, 2024 at 4 pm (Paris time) on YouTube!</p>
             <a class="read-more" href="https://build.prestashop-project.org/news/2024/upcoming-live-update-april-2024/">
-              Continue reading
-              <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
             </a>
+
+            </article>
           </li>
 
           
         
+          
+          <li class="post-list-item">
 
-          
-          <li>
-            <div class="post-divider"></div>
-          </li>
-          
+            <article>
 
-          
-          <li>
+              
 
             <div class="list-post-meta">
                 <span class="post-date">
                   Mar 19, 2024
                 </span>
               <span class="separator"></span>
+              <span class="post-authors">By PrestaShop team</span>
+                <span class="separator"></span>
+              
               <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2024/prestashop-8-1-5-maintenance-release/"></span>
             </div>
 
@@ -399,33 +486,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </h2>
 
             
-            <h4>New patch for branch 8.1.x is available</h4>
+            <p class="post-list-subtitle">New patch for branch 8.1.x is available</p>
             
 
             <p class="post-summary">Another patch for PrestaShop 8.1 is available. This release contains interesting improvements as well as a number of bug fixes. In this article, we’ll lean into them because there’s plenty to write about!</p>
             <a class="read-more" href="https://build.prestashop-project.org/news/2024/prestashop-8-1-5-maintenance-release/">
-              Continue reading
-              <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
             </a>
+
+            </article>
           </li>
 
           
         
+          
+          <li class="post-list-item">
 
-          
-          <li>
-            <div class="post-divider"></div>
-          </li>
-          
+            <article>
 
-          
-          <li>
+              
 
             <div class="list-post-meta">
                 <span class="post-date">
                   Mar 15, 2024
                 </span>
               <span class="separator"></span>
+              <span class="post-authors">By Krystian Podemski</span>
+                <span class="separator"></span>
+              
               <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2024/live-update-march-2024/"></span>
             </div>
 
@@ -434,33 +525,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </h2>
 
             
-            <h4>A recap of the third Live Update in 2024</h4>
+            <p class="post-list-subtitle">A recap of the third Live Update in 2024</p>
             
 
             <p class="post-summary">In our third Live Update this year, we reviewed the already implemented compatibility of PrestaShop with Symfony Framework 6.4, focusing on its impact and the backward incompatible changes it introduces.</p>
             <a class="read-more" href="https://build.prestashop-project.org/news/2024/live-update-march-2024/">
-              Continue reading
-              <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
             </a>
+
+            </article>
           </li>
 
           
         
+          
+          <li class="post-list-item">
 
-          
-          <li>
-            <div class="post-divider"></div>
-          </li>
-          
+            <article>
 
-          
-          <li>
+              
 
             <div class="list-post-meta">
                 <span class="post-date">
                   Mar 12, 2024
                 </span>
               <span class="separator"></span>
+              <span class="post-authors">By Krystian Podemski</span>
+                <span class="separator"></span>
+              
               <span class="disqus-comment-count" data-disqus-url="https://build.prestashop-project.org/news/2024/upcoming-live-update-march-2024/"></span>
             </div>
 
@@ -469,14 +564,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </h2>
 
             
-            <h4>Join us on YouTube on March 13th, 2024 at 4 pm (Paris time) for the next Live Update!</h4>
+            <p class="post-list-subtitle">Join us on YouTube on March 13th, 2024 at 4 pm (Paris time) for the next Live Update!</p>
             
 
             <p class="post-summary">The third Live Update for the PrestaShop Project in 2024 will happen on Wednesday, March 13th, 2024 at 4 pm (Paris time) on YouTube!</p>
             <a class="read-more" href="https://build.prestashop-project.org/news/2024/upcoming-live-update-march-2024/">
-              Continue reading
-              <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              <span class="read-more-inner">
+                Continue reading
+                <img src="/assets/ext/arrow.svg" class="arrow-svg" alt="Arrow">
+              </span>
             </a>
+
+            </article>
           </li>
 
           
@@ -528,26 +627,70 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <footer class="site-footer">
   <div class="container">
 
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <p>Official PrestaShop project blog written by
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
           <a href="/authors">its members and contributors</a>.
         </p>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <p>
-          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
-            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
-          </a>
-        </p>
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/news/2017/how-to-best-contact-us/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
 
         
 
@@ -556,15 +699,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </a>
 
         
-        <a href="https://github.com/PrestaShop" title="GitHub repository">
-          <i class="icon-github-alt"></i>
-        </a>
-        
 
-        
-        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
-          <i class="icon-twitter-alt"></i>
-        </a>
         
 
         

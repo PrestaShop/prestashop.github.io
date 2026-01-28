@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/Module/</link>
+    <description>Recent content in Module on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+  <language>en-us</language>
+      <lastBuildDate>Mon, 31 Mar 2025 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/Module/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Update Assistant module v7.0.0 is available (Autoupgrade)</title>
+          <link>https://build.prestashop-project.org/news/2025/autoupgrade-v7.0-release/</link>
+          <pubDate>Mon, 31 Mar 2025 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/autoupgrade-v7.0-release/</guid>
+          <description>We are pleased to introduce the latest major release of the Update Assistant module (formerly known as 1-Click Upgrade).</description>
+        </item>
+      
+        <item>
+          <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
+          <link>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</link>
+          <pubDate>Thu, 20 Mar 2025 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
+          <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.</description>
+        </item>
+      
+        <item>
+          <title>Reworking the &#34;Update Assistant&#34; Module V7: Our Experience</title>
+          <link>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</link>
+          <pubDate>Tue, 11 Mar 2025 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</guid>
+          <description>Let’s face it—our Update Assistant module was messy. The front-end was confusing, the user experience was challenging, and even minor adjustments were a little more complex than what we would have liked.</description>
+        </item>
+      
+        <item>
+          <title>SQL Injection attacks alert and security enhancements for PrestaShop</title>
+          <link>https://build.prestashop-project.org/news/2025/sql-injection-attacks-alert-and-security-enhancements-for-prestashop/</link>
+          <pubDate>Wed, 22 Jan 2025 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/sql-injection-attacks-alert-and-security-enhancements-for-prestashop/</guid>
+          <description>A recent wave of attacks has targeted PrestaShop stores, leveraging SQL Injection vulnerabilities in third-party modules to compromise data security. Malicious actors exploit these vulnerabilities to inject harmful code into the PrestaShop database, enabling the theft of sensitive customer information by loading unauthorized JavaScript scripts.</description>
+        </item>
+      
+        <item>
+          <title>PSDevCon 2024 - testing and analyzing your PrestaShop modules automatically</title>
+          <link>https://build.prestashop-project.org/news/2025/testing-and-analyzing-your-prestashop-modules-automatically/</link>
+          <pubDate>Tue, 21 Jan 2025 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/testing-and-analyzing-your-prestashop-modules-automatically/</guid>
+          <description>During the PrestaShop Developer Conference 2024, Jonathan Danse presented methods for automatically testing and analyzing modules, ensuring their quality and reliability. In this guest article, Jonathan shares the key points from his conference and offers practical advice. Learn how to ensure high-performing modules with every deployment.</description>
+        </item>
+      
+        <item>
+          <title>Autoupgrade module v6.1.0 and 6.2.0 are Available (1-Click Upgrade)</title>
+          <link>https://build.prestashop-project.org/news/2024/autoupgrade-v6.1-release/</link>
+          <pubDate>Wed, 18 Sep 2024 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2024/autoupgrade-v6.1-release/</guid>
+          <description>In the footsteps of the latest module releases (see version 6.0.0 release blogpost), these versions bring a number of improvements to streamline PrestaShop updates. Explore the changelog below to find out what version 6.1.0 and 6.2.0 bring to the upgrade module.</description>
+        </item>
+      
+        <item>
+          <title>Autoupgrade module v6.0.0 is Available (1-Click Upgrade)</title>
+          <link>https://build.prestashop-project.org/news/2024/autoupgrade-v6-release/</link>
+          <pubDate>Mon, 29 Jul 2024 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2024/autoupgrade-v6-release/</guid>
+          <description>In the footsteps of the latest module releases (see versions 5.0.2 and 5.0.3 live presentation), this version brings a number of improvements to streamline PrestaShop updates. Explore the changelog below to find out what version 6.0.0 brings to the Autoupgrade module.</description>
+        </item>
+      
+        <item>
+          <title>How to solve the search bar issue after upgrading to PrestaShop 1.7.8</title>
+          <link>https://build.prestashop-project.org/howtos/misc/178-and-searchbar/</link>
+          <pubDate>Tue, 07 Dec 2021 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/howtos/misc/178-and-searchbar/</guid>
+          <description>We have recently been informed that many of you have encountered a display problem with the search bar in Front office, right after upgrading to PrestaShop 1.7.8. This problem also affected shops using the built-in “classic” theme.</description>
+        </item>
+      
+        <item>
+          <title>Release Of Module ProductComments 4.2.1</title>
+          <link>https://build.prestashop-project.org/news/2020/productcomments-4-2-1-maintenance-release/</link>
+          <pubDate>Thu, 03 Dec 2020 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2020/productcomments-4-2-1-maintenance-release/</guid>
+          <description>We have identified and fixed a new security issue on module Product Comments.</description>
+        </item>
+      
+        <item>
+          <title>Release Of Module ProductComments 4.2.0</title>
+          <link>https://build.prestashop-project.org/news/2020/productcomments-4-2-0-maintenance-release/</link>
+          <pubDate>Tue, 17 Nov 2020 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2020/productcomments-4-2-0-maintenance-release/</guid>
+          <description>The ongoing work on security for PrestaShop software continues. We have identified and fixed a new security issue on module Product Comments.</description>
+        </item>
+      
+        <item>
+          <title>Everything you always wanted to know about PrestaTrust</title>
+          <link>https://build.prestashop-project.org/news/2017/everything-you-always-wanted-to-know-about-prestatrust/</link>
+          <pubDate>Wed, 13 Dec 2017 09:10:11 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2017/everything-you-always-wanted-to-know-about-prestatrust/</guid>
+          <description>It allows to authenticate the code of modules and to safely keep track of the sales data in the blockchain.</description>
+        </item>
+      
+        <item>
+          <title>Module development changes in PrestaShop 1.7.0.0</title>
+          <link>https://build.prestashop-project.org/news/2016/module-development-changes-in-17/</link>
+          <pubDate>Thu, 16 Jun 2016 09:10:11 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2016/module-development-changes-in-17/</guid>
+          <description>Existing modules should mostly work as-is with version 1.7. In this article, we dive into that “mostly”!</description>
+        </item>
+      
+        <item>
+          <title>Presenting the Advanced EU Compliance module</title>
+          <link>https://build.prestashop-project.org/news/2015/advanced-eu-compliance/</link>
+          <pubDate>Tue, 07 Jul 2015 14:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2015/advanced-eu-compliance/</guid>
+          <description>As good news never come alone, let us introduce you to the new module that is included natively in PrestaShop from 1.6.1.0 version: Advanced EU Compliance.</description>
+        </item>
+      
+        <item>
+          <title>How to override modules in PrestaShop</title>
+          <link>https://build.prestashop-project.org/howtos/module/how-to-override-modules/</link>
+          <pubDate>Sun, 10 May 2015 12:15:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/howtos/module/how-to-override-modules/</guid>
+          <description> Since version 1.6.0.11 of PrestaShop, there is a new feature that allows developers to override a module’s instance classes (ie. its main module files, see the PR by @axometeam).</description>
+        </item>
+      
+  </channel>
+</rss>

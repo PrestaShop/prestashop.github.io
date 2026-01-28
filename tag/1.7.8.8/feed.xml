@@ -5,18 +5,16 @@
     <link>https://build.prestashop-project.org/tag/1.7.8.8/</link>
     <description>Recent content in 1.7.8.8 on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/1.7.8.8/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PrestaShop 1.7.8.8 Is Available</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-8-maintenance-release/</link>
-      <pubDate>Thu, 08 Dec 2022 00:00:00 +0100</pubDate>
+  <language>en-us</language>
+      <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/1.7.8.8/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop 1.7.8.8 Is Available</title>
+          <link>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-8-maintenance-release/</link>
+          <pubDate>Thu, 08 Dec 2022 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-8-maintenance-release/</guid>
+          <description>It has been decided to deliver a new maintenance release for 1.7.8.x branch. Please note that this will be the last regular 1.7.8.x patch version, as the branch now enters security-only maintenance phase. Next regular patches will now target 8.0.x branch.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-1-7-8-8-maintenance-release/</guid>
-      <description>It has been decided to deliver a new maintenance release for 1.7.8.x branch. Please note that this will be the last regular 1.7.8.x patch version, as the branch now enters security-only maintenance phase. Next regular patches will now target 8.0.x branch.
-This release fixes some bugs and regressions as well as a security fix.
-We suggest upgrading your shop quickly in order to benefit from these fixes. Of course, don’t forget to backup before.</description>
-    </item>
-    
   </channel>
 </rss>

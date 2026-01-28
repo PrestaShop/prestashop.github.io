@@ -5,91 +5,79 @@
     <link>https://build.prestashop-project.org/tag/8.0/</link>
     <description>Recent content in 8.0 on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 07 Aug 2023 09:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/8.0/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PrestaShop 8.0.5 Is Available</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-5-maintenance-release/</link>
-      <pubDate>Mon, 07 Aug 2023 09:00:00 +0200</pubDate>
+  <language>en-us</language>
+      <lastBuildDate>Mon, 07 Aug 2023 09:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/8.0/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop 8.0.5 Is Available</title>
+          <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-5-maintenance-release/</link>
+          <pubDate>Mon, 07 Aug 2023 09:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-5-maintenance-release/</guid>
+          <description>The fifth patch version for PrestaShop 8 is now available to download! This release contains a few security fixes, so we highly recommend you to upgrade your shop as soon as possible.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-5-maintenance-release/</guid>
-      <description>The fifth patch version for PrestaShop 8 is now available to download! This release contains a few security fixes, so we highly recommend you to upgrade your shop as soon as possible.
-PrestaShop 8.0.x branch is no longer supported since the release of PrestaShop 8.1, but due to the high severity of the security issues fixed in this release, we decided to release a patch version for this branch.
-Apart from the security fixes, this release also contains a few bug fixes.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.0.4 is available</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-4-maintenance-release/</link>
-      <pubDate>Tue, 25 Apr 2023 17:00:00 +0200</pubDate>
+        <item>
+          <title>PrestaShop 8.0.4 is available</title>
+          <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-4-maintenance-release/</link>
+          <pubDate>Tue, 25 Apr 2023 17:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-4-maintenance-release/</guid>
+          <description>The fourth patch version for PrestaShop 8 is now available to download! This release contains a few security fixes, so we recommend you to upgrade your shop as soon as possible.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-4-maintenance-release/</guid>
-      <description>The fourth patch version for PrestaShop 8 is now available to download! This release contains a few security fixes, so we recommend you to upgrade your shop as soon as possible.
-PrestaShop 8.0.4 is now available. This time there are three security fixes thanks to reports from community researchers. This release also contains a few bug fixes besides security fixes. The incorrect translation of pagination labels in products and combinations lists has been fixed.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.0.3 is available</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</link>
-      <pubDate>Mon, 03 Apr 2023 00:00:00 +0200</pubDate>
+        <item>
+          <title>PrestaShop 8.0.3 is available</title>
+          <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</link>
+          <pubDate>Mon, 03 Apr 2023 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</guid>
+          <description>The third patch version for PrestaShop 8 is now available to download!</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-3-maintenance-release/</guid>
-      <description>The third patch version for PrestaShop 8 is now available to download!
-It was a rather bumpy road at the end because of issues we found during the release process, but here it is! In the newest patch version for PrestaShop 8 you can find a security improvement, and three fixes: one related to inaccurate wording in web services configuration, one which fixes the link to the user documentation in the installer, and one significant fix which improves how clearing the cache behaves in the software.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.0.2 is available</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-2-maintenance-release/</link>
-      <pubDate>Mon, 13 Mar 2023 00:00:00 +0100</pubDate>
+        <item>
+          <title>PrestaShop 8.0.2 is available</title>
+          <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-2-maintenance-release/</link>
+          <pubDate>Mon, 13 Mar 2023 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-2-maintenance-release/</guid>
+          <description>The second patch version for PrestaShop 8 is now available to download!</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-2-maintenance-release/</guid>
-      <description>The second patch version for PrestaShop 8 is now available to download!
-Version 8.0.2 is available! In this patch, you can find over 20 bug fixes. As a patch version, 8.0.2 brings further goodness and stability to the 8.0 branch.
-There were several noteworthy issues addressed in PrestaShop&amp;rsquo;s 8.0.2 milestone. The upgrade mechanism had a problem where it couldn&amp;rsquo;t check if the PHP session had started on some webservers, which was reported by many community members.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.0.1 is available</title>
-      <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-1-maintenance-release/</link>
-      <pubDate>Fri, 06 Jan 2023 00:00:00 +0100</pubDate>
+        <item>
+          <title>PrestaShop 8.0.1 is available</title>
+          <link>https://build.prestashop-project.org/news/2023/prestashop-8-0-1-maintenance-release/</link>
+          <pubDate>Fri, 06 Jan 2023 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-1-maintenance-release/</guid>
+          <description>The first patch version for PrestaShop 8 is now available to download!</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2023/prestashop-8-0-1-maintenance-release/</guid>
-      <description>The first patch version for PrestaShop 8 is now available to download!
-After a few weeks of intensive work from all project members, the first maintenance release for version 8 is now available.
-In this patch, you can find more than 30 bug fixes and one performance improvement that prevents clearing the system&amp;rsquo;s cache for bulk actions performed from the modules list. You will also get changes from the recent PrestaShop patch release 1.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 8.0 Is Available</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-8-0-0-available/</link>
-      <pubDate>Wed, 26 Oct 2022 00:00:00 +0200</pubDate>
+        <item>
+          <title>PrestaShop 8.0 Is Available</title>
+          <link>https://build.prestashop-project.org/news/2022/prestashop-8-0-0-available/</link>
+          <pubDate>Wed, 26 Oct 2022 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2022/prestashop-8-0-0-available/</guid>
+          <description>The maintainers team is pleased to announce that PrestaShop 8.0 is officially available.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-8-0-0-available/</guid>
-      <description>The maintainers team is pleased to announce that PrestaShop 8.0 is officially available.
-PrestaShop 8, the first major version since the original release of PrestaShop 1.7.0 back in 2016, is an important milestone for the project.
-A significant cleanup has been performed in the codebase, with several internal components updated, modified or removed. PrestaShop 8 is also the project’s first company-neutral release, meaning that it no longer includes commercial products and services built-in.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop Version 8.0 Feature Freeze: Important Features</title>
-      <link>https://build.prestashop-project.org/news/2022/prestashop-feature-freeze-v8/</link>
-      <pubDate>Thu, 09 Jun 2022 12:00:00 +0200</pubDate>
+        <item>
+          <title>PrestaShop Version 8.0 Feature Freeze: Important Features</title>
+          <link>https://build.prestashop-project.org/news/2022/prestashop-feature-freeze-v8/</link>
+          <pubDate>Thu, 09 Jun 2022 12:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2022/prestashop-feature-freeze-v8/</guid>
+          <description>Dear developers and contributors,</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2022/prestashop-feature-freeze-v8/</guid>
-      <description>Dear developers and contributors,
-We are very pleased to be announcing the feature freeze of PrestaShop version 8.0. In this post, we will be looking at the most important features of this feature freeze, letting you know why we have frozen new features and explain what this means for the next few months.
-Feature freeze is now effective Therefore, as of today, the feature freeze is now effective and no new features will be added to version 8.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop beyond 1.7</title>
-      <link>https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/</link>
-      <pubDate>Tue, 14 Dec 2021 00:00:00 +0100</pubDate>
+        <item>
+          <title>PrestaShop beyond 1.7</title>
+          <link>https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/</link>
+          <pubDate>Tue, 14 Dec 2021 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/</guid>
+          <description>Five years ago, PrestaShop 1.7 was released to the world, introducing Symfony, the Classic theme and child theme features, interface improvements, and so much more. With each one of the eight minor versions that followed, 1.7 kept on growing both in features and stability. Its maturity is recognized by its success: with over 170,000 live shops detected at the time of writing, it’s the most popular PrestaShop version used in production shops on the web.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2021/prestashop-beyond-1-7/</guid>
-      <description>Five years ago, PrestaShop 1.7 was released to the world, introducing Symfony, the Classic theme and child theme features, interface improvements, and so much more. With each one of the eight minor versions that followed, 1.7 kept on growing both in features and stability. Its maturity is recognized by its success: with over 170,000 live shops detected at the time of writing, it’s the most popular PrestaShop version used in production shops on the web.</description>
-    </item>
-    
   </channel>
 </rss>

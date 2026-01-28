@@ -5,41 +5,34 @@
     <link>https://build.prestashop-project.org/tag/1.7.5.x/</link>
     <description>Recent content in 1.7.5.x on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 03 May 2019 11:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/1.7.5.x/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Release of PrestaShop 1.7.5.2 and 1.6.1.24</title>
-      <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-5-2-1-6-1-24-maintenance-release/</link>
-      <pubDate>Fri, 03 May 2019 11:00:00 +0200</pubDate>
+  <language>en-us</language>
+      <lastBuildDate>Fri, 03 May 2019 11:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/1.7.5.x/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Release of PrestaShop 1.7.5.2 and 1.6.1.24</title>
+          <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-5-2-1-6-1-24-maintenance-release/</link>
+          <pubDate>Fri, 03 May 2019 11:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-5-2-1-6-1-24-maintenance-release/</guid>
+          <description>PrestaShop 1.7.5.2 and 1.6.1.24 are now available. These versions fix a security issue for both 1.7.5.x and 1.6.1.x. For the details, please read below:</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-5-2-1-6-1-24-maintenance-release/</guid>
-      <description>PrestaShop 1.7.5.2 and 1.6.1.24 are now available. These versions fix a security issue for both 1.7.5.x and 1.6.1.x. For the details, please read below:
-These two security updates address a validation issue on the customer registration form, which is currently being exploited by spammers who were entering URLs as customer name.
-This update mitigates the problem by preventing attackers to use URLs as names. However, as we discussed before, the best protection against this kind of attack still is to add a CAPTCHA module on your shop.</description>
-    </item>
-    
-    <item>
-      <title>Release of PrestaShop 1.7.5.1</title>
-      <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-5-1-maintenance-release/</link>
-      <pubDate>Mon, 18 Feb 2019 17:00:00 +0100</pubDate>
+        <item>
+          <title>Release of PrestaShop 1.7.5.1</title>
+          <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-5-1-maintenance-release/</link>
+          <pubDate>Mon, 18 Feb 2019 17:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-5-1-maintenance-release/</guid>
+          <description>PrestaShop 1.7.5.1 is now available.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-5-1-maintenance-release/</guid>
-      <description>PrestaShop 1.7.5.1 is now available.
-This version fixes bugs and regressions of the 1.7.5.0 version. It also integrates the latest security fixes from Symfony, a core dependency. We strongly encourage you to upgrade your shop as soon as possible.
-This version will be available on the upgrade module as soon as the version 4.6 is released on the Addons Marketplace.
-Of course, don&amp;rsquo;t forget to backup before.
-Main fixes Merchants can now choose if they want the attribute names on the product page title (“Display attributes in the product meta title” in Shop Parameters &amp;gt; SEO &amp;amp; Urls) Fixed a bug preventing module developers to extend grids Latests security fixes from Symfony Fixed visual problems in the BO when using right-to-left languages Fixed pagination issues in pages using the new grids Switching combinations in the FO is now faster Fixed an exception when sending an email in some systems Full Changelog Back Office:</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 1.7.5.0 is available!</title>
-      <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-5-0-available/</link>
-      <pubDate>Tue, 18 Dec 2018 10:15:00 +0100</pubDate>
+        <item>
+          <title>PrestaShop 1.7.5.0 is available!</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-5-0-available/</link>
+          <pubDate>Tue, 18 Dec 2018 10:15:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-5-0-available/</guid>
+          <description>After a Beta and a Release Candidate, the long awaited PrestaShop 1.7.5.0 has been released and is available for download. As usual, you can upgrade with the Auto upgrade module. However, considering that the current period is usually critical for merchants sales, for sure, some might prefer to wait for a more appropriate time :-)</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-5-0-available/</guid>
-      <description>After a Beta and a Release Candidate, the long awaited PrestaShop 1.7.5.0 has been released and is available for download. As usual, you can upgrade with the Auto upgrade module. However, considering that the current period is usually critical for merchants sales, for sure, some might prefer to wait for a more appropriate time :-)
-Changes A lot has been done to make this “minor” PrestaShop version a reality. Here’s 1.</description>
-    </item>
-    
   </channel>
 </rss>

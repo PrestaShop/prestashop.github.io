@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Migration on PrestaShop Developers&#39; blog</title>
+    <link>https://build.prestashop-project.org/tag/Migration/</link>
+    <description>Recent content in Migration on PrestaShop Developers&#39; blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+  <language>en-us</language>
+      <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/Migration/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>An update on the Symfony migration</title>
+          <link>https://build.prestashop-project.org/news/2022/introducing-horizontal-migration/</link>
+          <pubDate>Mon, 04 Jul 2022 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2022/introducing-horizontal-migration/</guid>
+          <description>In December 2015, a groundbreaking change in PrestaShop was announced: the introduction of the Symfony framework into the CMS. The goal was to gradually replace PrestaShop’s custom framework with Symfony, and switch its templating system from Smarty to Twig. This project was known as “The Symfony migration”. Looking back, we realize that referring to this project as a “migration” wasn’t really accurate at all.</description>
+        </item>
+      
+  </channel>
+</rss>

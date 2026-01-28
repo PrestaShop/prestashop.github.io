@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>thomasn on PrestaShop Developers&#39; blog</title>
+    <title>Thomasn on PrestaShop Developers&#39; blog</title>
     <link>https://build.prestashop-project.org/authors/thomasn/</link>
-    <description>Recent content in thomasn on PrestaShop Developers&#39; blog</description>
+    <description>Recent content in Thomasn on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 22 Dec 2017 09:10:11 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/thomasn/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Video: Last from PHP Forum with love</title>
-      <link>https://build.prestashop-project.org/news/2017/video-last-from-php-forum-with-love/</link>
-      <pubDate>Fri, 22 Dec 2017 09:10:11 +0100</pubDate>
+  <language>en-us</language>
+      <lastBuildDate>Fri, 22 Dec 2017 09:10:11 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/thomasn/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Video: Last from PHP Forum with love</title>
+          <link>https://build.prestashop-project.org/news/2017/video-last-from-php-forum-with-love/</link>
+          <pubDate>Fri, 22 Dec 2017 09:10:11 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2017/video-last-from-php-forum-with-love/</guid>
+          <description>Remember I told you about weird blue elephpants? You got it, it was our dream team of developers that attended the AFUP’s annual conference in Paris! As agreed, they came back with a lot to share on Build. Here, @Quetzacoalt91 will told you about Nicolas Grekas and the lecture he gave at the PHP Forum:</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2017/video-last-from-php-forum-with-love/</guid>
-      <description>Remember I told you about weird blue elephpants? You got it, it was our dream team of developers that attended the AFUP’s annual conference in Paris! As agreed, they came back with a lot to share on Build. Here, @Quetzacoalt91 will told you about Nicolas Grekas and the lecture he gave at the PHP Forum:
-Quality processes: the Symfony case &amp;ldquo;You may have heard about Nicolas Grekas, a core team member of the Symfony project and CTO of Blackfire.</description>
-    </item>
-    
-    <item>
-      <title>Docker and PrestaShop - A Beautiful Image</title>
-      <link>https://build.prestashop-project.org/news/2017/prestashop-and-docker/</link>
-      <pubDate>Fri, 17 Feb 2017 09:10:11 +0100</pubDate>
+        <item>
+          <title>Docker and PrestaShop - A Beautiful Image</title>
+          <link>https://build.prestashop-project.org/news/2017/prestashop-and-docker/</link>
+          <pubDate>Fri, 17 Feb 2017 09:10:11 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2017/prestashop-and-docker/</guid>
+          <description> You’ve most probably heard about Docker and how great it is for development (and even maybe for production). Good news: we’ve cooked some things to help you develop on PrestaShop, thanks to Docker!</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2017/prestashop-and-docker/</guid>
-      <description>Documentation available! If you want to learn more about Docker in PrestaShop, make sure to check the latest documentation on how to install and use PrestaShop with docker. You’ve most probably heard about Docker and how great it is for development (and even maybe for production). Good news: we’ve cooked some things to help you develop on PrestaShop, thanks to Docker!
-Quick reminder for those of you not familiar with Docker.</description>
-    </item>
-    
   </channel>
 </rss>

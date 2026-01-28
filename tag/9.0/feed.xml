@@ -5,87 +5,79 @@
     <link>https://build.prestashop-project.org/tag/9.0/</link>
     <description>Recent content in 9.0 on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/9.0/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PrestaShop 9.0.2-2.1: what happened and why the version looks different</title>
-      <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</link>
-      <pubDate>Tue, 16 Dec 2025 00:00:00 +0100</pubDate>
+  <language>en-us</language>
+      <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/9.0/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop 9.0.2-2.1: what happened and why the version looks different</title>
+          <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</link>
+          <pubDate>Tue, 16 Dec 2025 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</guid>
+          <description>Some of you hit an unexpected issue when installing PrestaShop 9.0.2 from prestashop.com, and some also noticed a slightly unusual version number: 9.0.2-2.1, which has been used since the start of PrestaShop 9 but hadn’t been explicitly explained until now.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</guid>
-      <description>Some of you hit an unexpected issue when installing PrestaShop 9.0.2 from prestashop.com, and some also noticed a slightly unusual version number: 9.0.2-2.1, which has been used since the start of PrestaShop 9 but hadn’t been explicitly explained until now.
-This post is not release notes. It&amp;rsquo;s a transparency update: what happened, what we changed in response, and what we&amp;rsquo;re doing to reduce the chance of a similar incident.
-A blocking installation issue reported by the community A community report on GitHub described a problem during a fresh installation of PrestaShop 9.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 9.0.2 is available</title>
-      <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-maintenance-release/</link>
-      <pubDate>Wed, 10 Dec 2025 00:00:00 +0100</pubDate>
+        <item>
+          <title>PrestaShop 9.0.2 is available</title>
+          <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-maintenance-release/</link>
+          <pubDate>Wed, 10 Dec 2025 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-maintenance-release/</guid>
+          <description>PrestaShop 9.0.2 is now available! This second patch version represents yet another step in making PrestaShop 9 more reliable. It focuses on fixing some reported issues to provide a more stable and seamless experience for merchants and developers.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-maintenance-release/</guid>
-      <description>PrestaShop 9.0.2 is now available! This second patch version represents yet another step in making PrestaShop 9 more reliable. It focuses on fixing some reported issues to provide a more stable and seamless experience for merchants and developers.
-PrestaShop 9 continues to focus on stability and polish With the second maintenance release, our attention has shifted from broad feature work to refining the platform based on real-world feedback. 9.0.2 brings targeted fixes that improve reliability, developer experience, and daily merchant operations.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 9.0.1 is available</title>
-      <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-1-maintenance-release/</link>
-      <pubDate>Mon, 13 Oct 2025 00:00:00 +0200</pubDate>
+        <item>
+          <title>PrestaShop 9.0.1 is available</title>
+          <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-1-maintenance-release/</link>
+          <pubDate>Mon, 13 Oct 2025 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-1-maintenance-release/</guid>
+          <description>The first patch version for PrestaShop 9 is now available! This maintenance release focuses on resolving some of the key issues to ensure a smoother experience for all users.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-1-maintenance-release/</guid>
-      <description>The first patch version for PrestaShop 9 is now available! This maintenance release focuses on resolving some of the key issues to ensure a smoother experience for all users.
-A strong start for PrestaShop 9 Since its release, PrestaShop 9 has been met with great enthusiasm from our community. Many developers, agencies, and merchants have actively tested the new version and shared their valuable feedback. This collaborative effort has been instrumental in helping us refine the new version.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 9 is available</title>
-      <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-available/</link>
-      <pubDate>Tue, 10 Jun 2025 00:00:00 +0200</pubDate>
+        <item>
+          <title>PrestaShop 9 is available</title>
+          <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-available/</link>
+          <pubDate>Tue, 10 Jun 2025 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-available/</guid>
+          <description>It’s finally here! PrestaShop 9 is available for download. This new version brings a modernized architecture, new developer tools, and powerful features designed to support the future of ecommerce.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-available/</guid>
-      <description>It&amp;rsquo;s finally here! PrestaShop 9 is available for download. This new version brings a modernized architecture, new developer tools, and powerful features designed to support the future of ecommerce.
-PrestaShop 9 is here! After over two years of development and collaboration with the community, it&amp;rsquo;s time to take another major step forward. PrestaShop 9 is here. This version brings valuable improvements and marks a significant advancement for anyone looking to grow their business online.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 9.0 RC1 is now available!</title>
-      <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-rc1/</link>
-      <pubDate>Mon, 02 Jun 2025 00:00:00 +0200</pubDate>
+        <item>
+          <title>PrestaShop 9.0 RC1 is now available!</title>
+          <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-rc1/</link>
+          <pubDate>Mon, 02 Jun 2025 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-rc1/</guid>
+          <description>The first Release Candidate of PrestaShop 9.0 is now available for testing. This is a significant milestone in the development cycle, and we encourage all users to test it thoroughly.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-rc1/</guid>
-      <description>The first Release Candidate of PrestaShop 9.0 is now available for testing. This is a significant milestone in the development cycle, and we encourage all users to test it thoroughly.
-PrestaShop 9.0 Release Candidate 1 This version marks the final stage before the stable release. It includes all planned features, improvements, and changes introduced since the alpha and beta phases — including the new Hummingbird theme, Admin API, PHP 8.4 and Symfony 6.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop 9.0 beta is now available!</title>
-      <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-beta-release/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0100</pubDate>
+        <item>
+          <title>PrestaShop 9.0 beta is now available!</title>
+          <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-beta-release/</link>
+          <pubDate>Tue, 11 Feb 2025 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-beta-release/</guid>
+          <description>The first beta version of PrestaShop 9.0 is now available for testing. This version includes many new features and improvements, a new Hummingbird theme, a new Admin API, PHP 8.4 and Symfony 6.4 support, many bug fixes, and a significant codebase cleanup. Read on to learn more about the new features and improvements.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-beta-release/</guid>
-      <description>The first beta version of PrestaShop 9.0 is now available for testing. This version includes many new features and improvements, a new Hummingbird theme, a new Admin API, PHP 8.4 and Symfony 6.4 support, many bug fixes, and a significant codebase cleanup. Read on to learn more about the new features and improvements.
-PrestaShop 9.0 beta 1 In June, when we released the alpha 1 version, we also published the first overview of new features and improvements that PrestaShop 9 will bring.</description>
-    </item>
-    
-    <item>
-      <title>PrestaShop Back Office rebranding with PrestaShop 9</title>
-      <link>https://build.prestashop-project.org/news/2024/prestashop-bo-rebrand/</link>
-      <pubDate>Tue, 17 Sep 2024 00:00:00 +0200</pubDate>
+        <item>
+          <title>PrestaShop Back Office rebranding with PrestaShop 9</title>
+          <link>https://build.prestashop-project.org/news/2024/prestashop-bo-rebrand/</link>
+          <pubDate>Tue, 17 Sep 2024 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2024/prestashop-bo-rebrand/</guid>
+          <description>By the end of 2023, PrestaShop unveiled a new brand identity to strengthen its position, enhance credibility, and build trust. We already announced the new branding for the project, and the PrestaShop back office is one of the last assets to follow this change. The release of PrestaShop 9 provided the perfect opportunity for this update. The rebranding involved significant changes to the PrestaShop back office, focusing on its two themes.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2024/prestashop-bo-rebrand/</guid>
-      <description>By the end of 2023, PrestaShop unveiled a new brand identity to strengthen its position, enhance credibility, and build trust. We already announced the new branding for the project, and the PrestaShop back office is one of the last assets to follow this change. The release of PrestaShop 9 provided the perfect opportunity for this update. The rebranding involved significant changes to the PrestaShop back office, focusing on its two themes.</description>
-    </item>
-    
-    <item>
-      <title>Meet the new API Platform-based API in PrestaShop 9</title>
-      <link>https://build.prestashop-project.org/news/2024/meet-prestashop9-api/</link>
-      <pubDate>Thu, 06 Jun 2024 10:00:00 +0200</pubDate>
+        <item>
+          <title>Meet the new API Platform-based API in PrestaShop 9</title>
+          <link>https://build.prestashop-project.org/news/2024/meet-prestashop9-api/</link>
+          <pubDate>Thu, 06 Jun 2024 10:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2024/meet-prestashop9-api/</guid>
+          <description>A new feature in PrestaShop 9 provides the community a new, secure, modern, and extensible API based on the API Platform. In this article I will show you how to start using it.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2024/meet-prestashop9-api/</guid>
-      <description>A new feature in PrestaShop 9 provides the community a new, secure, modern, and extensible API based on the API Platform. In this article I will show you how to start using it.
-New API in PrestaShop 9 As it was announced last year, one of the most significant projects for PrestaShop 9 has been the start of work on a new API that will eventually replace the currently available Web Services.</description>
-    </item>
-    
   </channel>
 </rss>

@@ -5,19 +5,16 @@
     <link>https://build.prestashop-project.org/tag/1.7.4/</link>
     <description>Recent content in 1.7.4 on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 13 Jun 2018 16:40:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/1.7.4/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PrestaShop 1.7.4.0 beta 1 is open for feedback!</title>
-      <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-4-0-beta-1-release/</link>
-      <pubDate>Wed, 13 Jun 2018 16:40:00 +0200</pubDate>
+  <language>en-us</language>
+      <lastBuildDate>Wed, 13 Jun 2018 16:40:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/1.7.4/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop 1.7.4.0 beta 1 is open for feedback!</title>
+          <link>https://build.prestashop-project.org/news/2018/prestashop-1-7-4-0-beta-1-release/</link>
+          <pubDate>Wed, 13 Jun 2018 16:40:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-4-0-beta-1-release/</guid>
+          <description>PrestaShop 1.7.4 is available for download. Please read important informations about it.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2018/prestashop-1-7-4-0-beta-1-release/</guid>
-      <description>PrestaShop 1.7.4 is available for download. Please read important informations about it.
-Done:
-All pull requests have been merged New features:
-Improved back office design Works better on mobile devices (all pages are accessible on mobile now!) New menu, can be scrolled Improved header (looks the same on legacy and symfon pages) Based on Bootstrap 4 final Theme customization New pages migrated to symfony Advanced Parameters &amp;gt; Administration Advanced Parameters &amp;gt; Import Shop Parameters &amp;gt; General Shop Parameters &amp;gt; General &amp;gt; Maintenance Shop Parameters &amp;gt; Product Settings Shop Parameters &amp;gt; Customer Settings Added support for PHP 7.</description>
-    </item>
-    
   </channel>
 </rss>

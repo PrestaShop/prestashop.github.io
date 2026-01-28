@@ -5,28 +5,25 @@
     <link>https://build.prestashop-project.org/authors/NeOMakinG/</link>
     <description>Recent content in NeOMakinG on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 17 Feb 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/NeOMakinG/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hello 2022, meet our new Front office theme</title>
-      <link>https://build.prestashop-project.org/news/2022/new-theme-announce/</link>
-      <pubDate>Thu, 17 Feb 2022 00:00:00 +0100</pubDate>
+  <language>en-us</language>
+      <lastBuildDate>Thu, 17 Feb 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/NeOMakinG/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Hello 2022, meet our new Front office theme</title>
+          <link>https://build.prestashop-project.org/news/2022/new-theme-announce/</link>
+          <pubDate>Thu, 17 Feb 2022 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2022/new-theme-announce/</guid>
+          <description> April 2024: Hummingbird situation In 2023, it was decided that Hummingbird should be implemented in PrestaShop 9. While we would love to see Hummingbird in PrestaShop 9, integrating it as a default theme comes at a price. It impacts the entire ecosystem, and we are currently evaluating the feasibility of this move. We will keep you updated on the progress.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2022/new-theme-announce/</guid>
-      <description>April 2024: Hummingbird situation In 2023, it was decided that Hummingbird should be implemented in PrestaShop 9. While we would love to see Hummingbird in PrestaShop 9, integrating it as a default theme comes at a price. It impacts the entire ecosystem, and we are currently evaluating the feasibility of this move. We will keep you updated on the progress.
-You can take an active part in developing this new theme by joining the discussion on Slack, testing the theme, and submitting improvements.</description>
-    </item>
-    
-    <item>
-      <title>Introducing TypeScript</title>
-      <link>https://build.prestashop-project.org/news/2021/introducing-typescript/</link>
-      <pubDate>Fri, 28 May 2021 00:00:00 +0200</pubDate>
+        <item>
+          <title>Introducing TypeScript</title>
+          <link>https://build.prestashop-project.org/news/2021/introducing-typescript/</link>
+          <pubDate>Fri, 28 May 2021 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2021/introducing-typescript/</guid>
+          <description>Following a recent Architecture Decision Records (ADR) submission and a Proof of Concept (POC), the Core Maintainers team has decided to introduce TypeScript (TS) on the project.</description>
+        </item>
       
-      <guid>https://build.prestashop-project.org/news/2021/introducing-typescript/</guid>
-      <description>Following a recent Architecture Decision Records (ADR) submission and a Proof of Concept (POC), the Core Maintainers team has decided to introduce TypeScript (TS) on the project.
-Why TypeScript? During the last few years, the PrestaShop Project has been increasingly raising the code quality bar. To help maintainers ensure that quality keeps increasing, a number of automatic quality verification tools have been added to the CI pipeline:
-ESLint analyzes the whole JavaScript codebase to ensure it follows our code style and find problems.</description>
-    </item>
-    
   </channel>
 </rss>

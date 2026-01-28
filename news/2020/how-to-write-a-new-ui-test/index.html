@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Automated UI tests tutorial</title>
-    <link href="/style.css?1769011252" rel="stylesheet">
+    <link href="/style.css?1769600298" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -21,10 +21,9 @@
     <meta property="article:modified_time" content="2020-10-26T12:00:00+01:00" />
 
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image" content="https://build.prestashop-project.org/assets/images/theme/meta-logo-build-2024.png">
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/theme/meta-logo-build-2024.png">
 <meta name="twitter:title" content="Automated UI tests tutorial"/>
 <meta name="twitter:description" content="Step by step - Adding a new PrestaShop UI test"/>
-<meta name="twitter:site" content="@PrestaShopOrg"/>
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -46,71 +45,127 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="container">
     <div class="row clearfix">
 
-      <div class="menu-button"><i class="icon icon-store"></i></div>
-      <div class="search-button"><i class="icon icon-magnifying-glass"></i></div>
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
 
       <div id="logo" class="">
         
-        <a href="https://build.prestashop-project.org">
+        <a href="https://build.prestashop-project.org/">
           <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
         </a>
       </div>
 
       <div id="navigation" class="">
-        <nav>
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
   <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        News <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/tag/releases/">Latest releases</a></li>
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
         <li><a href="/tag/core-monthly/">Core Monthly</a></li>
-        <li><a href="/tag/event/">Events &amp; Live Updates</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Project <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/tag/9.0/">Articles on 9.0</a></li>
-        <li><a href="/tag/8.2/">Articles on 8.2</a></li>
-        <li><a href="/tag/8.1/">Articles on 8.1</a></li>
-        <li><a href="/tag/8.0/">Articles on 8.0</a></li>
-        <li><a href="/tag/1.7/">Articles on 1.7</a></li>
-        <li><a href="/tag/1.6/">Articles on 1.6</a></li>
-        <li><a href="https://nightly.prestashop-project.org">Nightly Builds</a></li>
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Contribute <span class="caret"></span>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
       </a>
       <ul class="dropdown-menu">
-        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's guide</a></li>
-        <li><a href="http://contributors.prestashop-project.org/">Contributor's page</a></li>
-        <li><a href="http://translators.prestashop.com/">Translators' page</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Learn <span class="caret"></span>
-      </a>
-      <ul class="dropdown-menu">
-        <li><a href="/howtos/">How-tos</a></li>
-        <li><a href="/tools/">Tools</a></li>
-        <li><a href="https://devdocs.prestashop-project.org/">Devdocs</a></li>
-        <li><a href="/news/how-to-best-contact-us/">How to best contact us</a></li>
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/news/2017/how-to-best-contact-us/">
+            How to contact us
+          </a>
+        </li>
       </ul>
     </li>
     <li class="">
-      <a href="/about/">About</a>
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
     </li>
   </ul>
 </nav>
+          </div>
 
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
       </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
 
       <div id="algolia-container">
         <div class="aa-input-container" id="aa-input-container">
@@ -118,10 +173,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
 
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
     </div>
   </div>
-
-</header>
+</div>
 
 
     <div class="page-content">
@@ -133,7 +188,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="col-sm-12">
 
           <header class="post-header">
-            <h1 class="post-title">Automated UI tests tutorial</h1>
+            <h1 class="page-title">Automated UI tests tutorial</h1>
               
                 <h3 class="post-subtitle">Step by step - Adding a new PrestaShop UI test</h3>
               
@@ -183,8 +238,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <aside class="share-buttons">
               <div class="aside-meta">Share this</div>
 
-<a href="https://twitter.com/intent/tweet?text=Automated&#43;UI&#43;tests&#43;tutorial&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fhow-to-write-a-new-ui-test%2F&amp;via=PrestaShopOrg&amp;related=PrestaShopOrg" rel="nofollow" target="_blank" title="Share on Twitter">
-    <i class="icon-twitter-alt"></i>
+<a href="https://x.com/intent/post?text=Automated&#43;UI&#43;tests&#43;tutorial&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fhow-to-write-a-new-ui-test%2F&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Share on X">
+    <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
 </a>
 
 <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2020%2Fhow-to-write-a-new-ui-test%2F" rel="nofollow" target="_blank" title="Share on Facebook">
@@ -218,7 +276,7 @@ Since then, the tests coverage has been continually increasing, and we recently 
 The directory in which we create our file should be chosen wisely (Which campaign? BO or FO? Which page in BO? &hellip;). This file organization is very important since Mocha lets you run test by folders (recursively or not), so grouping your tests by features or meta-features (pages) is a very good idea.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// &#39;describe&#39; = scenario
 </span></span></span><span class="line"><span class="cl"><span class="c1">// &#39;it&#39; = step
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">describe</span><span class="p">(</span><span class="s1">&#39;View customer form orders page&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span><span class="p">(){</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should login in BO&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
@@ -285,7 +343,7 @@ The directory in which we create our file should be chosen wisely (Which campaig
 <p>Some steps are used repeatedly in a lot of scenarios, so the QA team decided to store them in a folder called <code>commonTests</code>.</p>
 <p>First we need to require the file containing the steps we&rsquo;re interested in, still using the require module like before:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Require common test login
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">loginCommon</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@commonTests/loginBO&#39;</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">loginCommon</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@commonTests/loginBO&#39;</span><span class="p">);</span>
 </span></span></code></pre></div><p><code>Login BO</code> (with the default admin account) is a part of these common tests, and we can use it in our new test like this:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should login in BO&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">loginCommon</span><span class="p">.</span><span class="nx">loginBO</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">page</span><span class="p">);</span>
@@ -299,7 +357,7 @@ The directory in which we create our file should be chosen wisely (Which campaig
 <p>After writing the scenario, we now know which pages are needed. For this example, we need the following Back Office pages: &ldquo;dashboard&rdquo;, &ldquo;orders&rdquo;, and &ldquo;view customer&rdquo;.</p>
 <p>To find the exact locations of the pages to require, read <a href="https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/#pages">How to contribute and create UI tests</a>, or explore the <code>pages</code> folder.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Import pages
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">dashboardPage</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@pages/BO/dashboard&#39;</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">dashboardPage</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@pages/BO/dashboard&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">ordersPage</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@pages/BO/orders&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">viewCustomerPage</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@pages/BO/customers/view&#39;</span><span class="p">);</span>
 </span></span></code></pre></div><p>Note: If a page doesn&rsquo;t exist yet, you need to create it (in the right folder).</p>
@@ -310,77 +368,77 @@ The directory in which we create our file should be chosen wisely (Which campaig
 <p>Actions replicate what a user would do in the page (click on an item, fill out text field, etc).</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should go to orders page&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// Action
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Open Menu and go to orders page
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">goToSubMenu</span><span class="p">(</span>
+</span></span></span><span class="line"><span class="cl">  <span class="c1">// Open Menu and go to orders page
+</span></span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">goToSubMenu</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span> <span class="c1">// Browser tab
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">ordersParentLink</span><span class="p">,</span> <span class="c1">// Parent menu item: Sell -&gt; orders
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">ordersLink</span><span class="p">,</span> <span class="c1">// Child menu item: Sell -&gt; orders -&gt; orders
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">    <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">ordersParentLink</span><span class="p">,</span> <span class="c1">// Parent menu item: Sell -&gt; orders
+</span></span></span><span class="line"><span class="cl">    <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">ordersLink</span><span class="p">,</span> <span class="c1">// Child menu item: Sell -&gt; orders -&gt; orders
+</span></span></span><span class="line"><span class="cl">  <span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should reset all filters&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// Action
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Reset filter in orders list and get number of element
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">resetAndGetNumberOfLines</span><span class="p">(</span>
+</span></span></span><span class="line"><span class="cl">  <span class="c1">// Reset filter in orders list and get number of element
+</span></span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">resetAndGetNumberOfLines</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span> <span class="c1">// Browser tab
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">  <span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should filter order by customer name&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// Action
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Filter order by filling &#34;customer&#34; input with &#34;DOE&#34; (lastname of FO default account) 
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">filterOrders</span><span class="p">(</span>
+</span></span></span><span class="line"><span class="cl">  <span class="c1">// Filter order by filling &#34;customer&#34; input with &#34;DOE&#34; (lastname of FO default account) 
+</span></span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">filterOrders</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span> <span class="c1">// Browser tab
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="s1">&#39;input&#39;</span><span class="p">,</span> <span class="c1">// Filter type (input or select)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="s1">&#39;customer&#39;</span><span class="p">,</span> <span class="c1">// Filter column
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">DefaultAccount</span><span class="p">.</span><span class="nx">lastName</span><span class="p">,</span> <span class="c1">// Filter value &#34;DOE&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">    <span class="s1">&#39;input&#39;</span><span class="p">,</span> <span class="c1">// Filter type (input or select)
+</span></span></span><span class="line"><span class="cl">    <span class="s1">&#39;customer&#39;</span><span class="p">,</span> <span class="c1">// Filter column
+</span></span></span><span class="line"><span class="cl">    <span class="nx">DefaultAccount</span><span class="p">.</span><span class="nx">lastName</span><span class="p">,</span> <span class="c1">// Filter value &#34;DOE&#34;
+</span></span></span><span class="line"><span class="cl">  <span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should check customer link&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// Action
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Click on customer link in first row
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">viewCustomer</span><span class="p">(</span>
+</span></span></span><span class="line"><span class="cl">  <span class="c1">// Click on customer link in first row
+</span></span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">viewCustomer</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span> <span class="c1">// Browser tab
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="mi">1</span><span class="p">,</span> <span class="c1">// First row in list
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">    <span class="mi">1</span><span class="p">,</span> <span class="c1">// First row in list
+</span></span></span><span class="line"><span class="cl">  <span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
 </span></span></code></pre></div><p>Here we use different <strong>actions</strong> methods, like <code>goToSubMenu()</code> in the dashboard page, or <code>resetAndGetNumberOfLines()</code> in the orders page.</p>
 <p>Note: To filter orders, the method uses the FO default account which is part of demo data stored in <em>data</em> directory. For this scenario, you need to require this file:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Import customer &#34;J. DOE&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="p">{</span><span class="nx">DefaultAccount</span><span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@data/demo/customer&#39;</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span><span class="nx">DefaultAccount</span><span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@data/demo/customer&#39;</span><span class="p">);</span>
 </span></span></code></pre></div><h3 id="expected-results">Expected results</h3>
 <p>Data reporting (or &ldquo;expected results&rdquo;) is done by checking elements in the page and returning a value (number of lines in a table, content of a modal, value of an input, etc).</p>
 <p>This framework uses the <em>expect</em> element from the <a href="https://www.chaijs.com/">Chai library</a>, so we need to require it:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// Import expect from chai
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="p">{</span><span class="nx">expect</span><span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;chai&#39;</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span><span class="nx">expect</span><span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;chai&#39;</span><span class="p">);</span>
 </span></span></code></pre></div><p>You can then add your <code>expect</code> calls in the test logic:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should go to orders page&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// Action
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">goToSubMenu</span><span class="p">(</span>
+</span></span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">goToSubMenu</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">ordersParentLink</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">dashboardPage</span><span class="p">.</span><span class="nx">ordersLink</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="p">);</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1">// Expected result
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Verify that the current page is orders by checking the title
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">pageTitle</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">getPageTitle</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">  <span class="c1">// Verify that the current page is orders by checking the title
+</span></span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">pageTitle</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">getPageTitle</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">pageTitle</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="nx">ordersPage</span><span class="p">.</span><span class="nx">pageTitle</span><span class="p">);</span> <span class="c1">// We compare with the value stored in the page object
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">});</span>
+</span></span></span><span class="line"><span class="cl"><span class="p">});</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should reset all filters&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// Action
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">numberOfOrders</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">resetAndGetNumberOfLines</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">numberOfOrders</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">resetAndGetNumberOfLines</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1">// Expected result
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Check that number of orders &gt; 0 (that there&#39;s at least one element in the list) 
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">numberOfOrders</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="nx">above</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">  <span class="c1">// Check that number of orders &gt; 0 (that there&#39;s at least one element in the list) 
+</span></span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">numberOfOrders</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="nx">above</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should filter order by customer name&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// Action
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">filterOrders</span><span class="p">(</span>
+</span></span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">filterOrders</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">page</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;input&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="s1">&#39;customer&#39;</span><span class="p">,</span>
@@ -388,18 +446,18 @@ The directory in which we create our file should be chosen wisely (Which campaig
 </span></span><span class="line"><span class="cl">  <span class="p">);</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1">// Expected result
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Check that we have at least 1 order for the customer named &#34;J. DOE&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">numberOfOrders</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">getNumberOfElementInGrid</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">  <span class="c1">// Check that we have at least 1 order for the customer named &#34;J. DOE&#34;
+</span></span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">numberOfOrders</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">getNumberOfElementInGrid</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">numberOfOrders</span><span class="p">).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="nx">at</span><span class="p">.</span><span class="nx">least</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">it</span><span class="p">(</span><span class="s1">&#39;should check customer link&#39;</span><span class="p">,</span> <span class="kr">async</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1">// Action
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">page</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">viewCustomer</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">  <span class="nx">page</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">viewCustomer</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1">// Expected result
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Verify that the current page is &#34;view customer&#34; by checking the title &#39;View information about J. DOE&#39;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">pageTitle</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">viewCustomerPage</span><span class="p">.</span><span class="nx">getPageTitle</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">  <span class="c1">// Verify that the current page is &#34;view customer&#34; by checking the title &#39;View information about J. DOE&#39;
+</span></span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">pageTitle</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">viewCustomerPage</span><span class="p">.</span><span class="nx">getPageTitle</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">pageTitle</span><span class="p">).</span><span class="nx">to</span>
 </span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">viewCustomerPage</span><span class="p">.</span><span class="nx">pageTitle</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">DefaultAccount</span><span class="p">.</span><span class="nx">firstName</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="sb">. </span><span class="si">${</span><span class="nx">DefaultAccount</span><span class="p">.</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
@@ -427,7 +485,7 @@ The directory in which we create our file should be chosen wisely (Which campaig
 </span></span><span class="line"><span class="cl">      <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">filterBy</span><span class="si">}</span><span class="sb"> was not found as a column filter.`</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// Click on search
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">clickAndWaitForNavigation</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">filterSearchButton</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">    <span class="kr">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">clickAndWaitForNavigation</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">filterSearchButton</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span></code></pre></div><p>But there&rsquo;s a chance that some functions you need are not implemented yet. It&rsquo;s the case here for the <code>viewCustomer()</code> function.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/**
@@ -470,10 +528,10 @@ The directory in which we create our file should be chosen wisely (Which campaig
 </span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">testContext</span><span class="p">.</span><span class="nx">addContextItem</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s1">&#39;testIdentifier&#39;</span><span class="p">,</span> <span class="s1">&#39;viewCustomer&#39;</span><span class="p">,</span> <span class="nx">baseContext</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1">// Click on customer link in first row
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">page</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">viewCustomer</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">  <span class="nx">page</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">ordersPage</span><span class="p">.</span><span class="nx">viewCustomer</span><span class="p">(</span><span class="nx">page</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1">// Verify that the current page is view customer by checking the title
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">pageTitle</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">viewCustomerPage</span><span class="p">.</span><span class="nx">getPageTitle</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
+</span></span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">pageTitle</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">viewCustomerPage</span><span class="p">.</span><span class="nx">getPageTitle</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="kr">await</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">pageTitle</span><span class="p">).</span><span class="nx">to</span>
 </span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">viewCustomerPage</span><span class="p">.</span><span class="nx">pageTitle</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">DefaultAccount</span><span class="p">.</span><span class="nx">firstName</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="sb">. </span><span class="si">${</span><span class="nx">DefaultAccount</span><span class="p">.</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
@@ -561,7 +619,7 @@ The directory in which we create our file should be chosen wisely (Which campaig
   </div>
 
   <div class="subscribe-btn-container">
-    <a id="subscribe-button" class="btn btn-lg btn-success">Subscribe to our newsletter</a>
+    <a id="subscribe-button" class="cta cta--pattern cta-dark"><span>Subscribe to our newsletter</span></a>
   </div>
 
   <div id="subscription-form" class="subscription-form">
@@ -630,7 +688,7 @@ The directory in which we create our file should be chosen wisely (Which campaig
           window.disqus_config = function () {
               
               
-              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/how-to-write-a-new-ui-test';
+              this.page.url = 'https:\/\/build.prestashop-project.org\/\/news\/how-to-write-a-new-ui-test';
           };
           (function() {
             if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
@@ -654,26 +712,70 @@ The directory in which we create our file should be chosen wisely (Which campaig
     <footer class="site-footer">
   <div class="container">
 
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <p>Official PrestaShop project blog written by
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
           <a href="/authors">its members and contributors</a>.
         </p>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <p>
-          <a href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
-            <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
-          </a>
-        </p>
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/news/2017/how-to-best-contact-us/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
 
         
 
@@ -682,15 +784,7 @@ The directory in which we create our file should be chosen wisely (Which campaig
         </a>
 
         
-        <a href="https://github.com/PrestaShop" title="GitHub repository">
-          <i class="icon-github-alt"></i>
-        </a>
-        
 
-        
-        <a href="https://twitter.com/PrestaShopOrg" title="Twitter account">
-          <i class="icon-twitter-alt"></i>
-        </a>
         
 
         

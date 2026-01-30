@@ -178,6 +178,10 @@ li {
             float: left;
             padding: 5px;
         }
+
+        .icon-tag {
+          margin-right: 10px;
+        }
     }
     .author-details {
         h5 {
@@ -1426,8 +1430,13 @@ footer.site-footer {
 }
 
 .label-primary {
-    background-color: #000;
-    color: #fff;
+    background-color: #a4dbe8;
+    color: #000;
+    padding: .3em .8em;
+}
+
+.label-primary:hover {
+    background-color: darken(#a4dbe8, 10%) !important;
 }
 
 .label {

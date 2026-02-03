@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.2.4 is available
 subtitle: Security improvements for branch 8.2.x
-date: 2026-02-02
+date: 2026-02-03
 authors: [ PrestaShop ]
 image: /assets/images/2026/01/banner_8.2.4_1200x627.jpg
 opengraph_image: /assets/images/2026/01/banner_8.2.4_1200x627.jpg

@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 9.0.3 is available
 subtitle: Security improvements and fixes for PrestaShop 9
-date: 2026-02-02
+date: 2026-02-03
 authors: [ PrestaShop ]
 opengraph_image: /assets/images/2026/01/PrestaShop-9.0.3-LinkedIn_Facebook.png
 twitter_image: /assets/images/2026/01/PrestaShop-9.0.3-X.png

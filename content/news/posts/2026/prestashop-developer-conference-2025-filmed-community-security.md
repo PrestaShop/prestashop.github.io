@@ -2,7 +2,7 @@
 layout: post
 title: PrestaShop Developer Conference 2025 Filmed Sessions - Community and Security
 subtitle: Friends of Presta, Cybersecurity and Ecommerce Development
-date: 2026-02-04
+date: 2026-02-05
 authors: [ coffrep ]
 icon: icon-leaf
 tags: [psdevcon, news, event]

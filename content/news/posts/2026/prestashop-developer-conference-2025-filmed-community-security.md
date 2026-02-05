@@ -32,4 +32,6 @@ In this session, Estelle Naudin, Director Security Solutions at Mastercard Franc
 
 Mastercard provides in the filmed presentation a straightforward assessment tool that identifies and prioritizes cybersecurity threats without requiring any coding. 
 
+## That's it for the PrestaShop Developer Conference 2025. See you in 2026!
+
 This final blog installment explores community building and cybersecurity, two pillars of sustainable ecommerce success. Dive into the videos, discover a thriving tech community, understand emerging cyber threats, and elevate your PrestaShop expertise. This concludes our series on the PrestaShop Developer Conference: we hope these insights have equipped you with the knowledge and tools to build, secure, and grow with the PrestaShop ecosystem. We look forward to meeting again in 2026!

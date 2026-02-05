@@ -8,11 +8,11 @@ icon: icon-leaf
 tags: [psdevcon, news, event]
 --- 
 
-In November 2025 took place the third PrestaShop Developer Conference. Over the past month, we've been sharing highlights from the event through a dedicated blog series. We've explored topics such as developer enablement, growth, AI, productivity and modern development. Today, we're bringing this series to a close with our final focus: community and security.
+The PrestaShop Developer Conference 2025 edition was another successful gathering! Over 140 people attended in person to connect, share experiences, and strengthen our community. For the first time, we offered a hybrid format, welcoming both onsite and online participants. Special thanks to **PayPal** for sponsoring the 2025 PrestaShop Developer Conference and presenting during the event.
+
+Since then, we've been sharing highlights from the conference through a dedicated blog series, exploring topics like developer enablement, growth, AI, productivity, and modern development. Today, we're concluding this series with our final focus, community and security. From Friends of Presta to cybersecurity, the sessions in this post cover the community’s strength as well as cyberthreats for small and medium-sized businesses.
 
 If you missed the event or want to revisit the key moments, we've made all sessions available on PrestaShop's [YouTube channel](https://www.youtube.com/watch?v=4vavpAx3MdY&list=PLyZYn1MMU7-zV2l3LNEQh78Fjp83ip_Da).
-
-From Friends of Presta to cybersecurity, the sessions in this post cover the community’s strength as well as cyberthreats for small and medium-sized businesses.
 
 ## Friends of Presta and the strength of the PrestaShop tech community
 
@@ -32,4 +32,4 @@ In this session, Estelle Naudin, Director Security Solutions at Mastercard Franc
 
 Mastercard provides in the filmed presentation a straightforward assessment tool that identifies and prioritizes cybersecurity threats without requiring any coding. 
 
-This final blog installment explores community building and cybersecurity, two pillars of sustainable ecommerce success. Dive into the videos, discover a thriving tech community, understand emerging cyber threats, and elevate your PrestaShop expertise. This concludes our series on the PrestaShop Developer Conference: we hope these insights have equipped you with the knowledge and tools to build, secure, and grow with the PrestaShop ecosystem.
+This final blog installment explores community building and cybersecurity, two pillars of sustainable ecommerce success. Dive into the videos, discover a thriving tech community, understand emerging cyber threats, and elevate your PrestaShop expertise. This concludes our series on the PrestaShop Developer Conference: we hope these insights have equipped you with the knowledge and tools to build, secure, and grow with the PrestaShop ecosystem. We look forward to meeting again in 2026!

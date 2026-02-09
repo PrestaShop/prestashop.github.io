@@ -147,4 +147,4 @@ If you encounter any problems during the update that, in your opinion, are not c
 
 ## Acknowledgments
 
-{{< contributors-grid "boherm" "ChillCode" "Codencode" "Hlavtox" "ilsalvopss" "jolelievre" "kpodemski" "M0rgan01" "matthieu-rolland" "matrixino" "nesrineabdmouleh" "nicosomb" "NKoonen" "Progi1984" "Quetzacoalt91" "tleon" "tswfi" "tyloo"  >}}
+{{< contributors-grid "boherm" "ChillCode" "Codencode" "Hlavtox" "ilsalvopss" "jolelievre" "kpodemski" "M0rgan01" "matthieu-rolland" "matrixino" "nesrineabdmouleh" "nicosomb" "NKoonen" "Progi1984" "Quetzacoalt91" "tleon" "tswfi" "tyloo" / >}}

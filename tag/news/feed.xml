@@ -6,7 +6,16 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Thu, 05 Feb 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/news/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Cleaning up old branches: a routine maintenance for a healthier repository</title>
+          <link>https://build.prestashop-project.org/news/2026/cleaning-old-branches/</link>
+          <pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/cleaning-old-branches/</guid>
+          <description>Keeping the PrestaShop repository tidy is part of routine maintenance. In January 2026, we are cleaning up a few stale branches from our main repository that are no longer used for releases or active development.</description>
+        </item>
+      
         <item>
           <title>PrestaShop Developer Conference 2025 Filmed Sessions - Community and Security</title>
           <link>https://build.prestashop-project.org/news/2026/prestashop-developer-conference-2025-filmed-community-security/</link>
@@ -132,15 +141,6 @@ Over the coming weeks, we’ll be publishing a series of blog posts, similar to 
             
           <guid>https://build.prestashop-project.org/news/2025/testing-and-analyzing-your-prestashop-modules-automatically/</guid>
           <description>During the PrestaShop Developer Conference 2024, Jonathan Danse presented methods for automatically testing and analyzing modules, ensuring their quality and reliability. In this guest article, Jonathan shares the key points from his conference and offers practical advice. Learn how to ensure high-performing modules with every deployment.</description>
-        </item>
-      
-        <item>
-          <title>PSDevCon 2024 - PUIK (PrestaShop UI Kit) - The new UI kit from PrestaShop</title>
-          <link>https://build.prestashop-project.org/news/2024/puik-the-new-ui-kit-from-prestashop/</link>
-          <pubDate>Wed, 18 Dec 2024 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2024/puik-the-new-ui-kit-from-prestashop/</guid>
-          <description>During the second PrestaShop Developer Conference on November 6, 2024, I was able to introduce PUIK (PrestaShop UI Kit) to participants. This blog post provides a written summary of the presentation. During the talk, the audience gained a clearer understanding of PrestaShop’s UI Kit, based on the new PrestaShop Design System. Learn how this library aims to provide a complete set of reusable components for the entire PrestaShop ecosystem. The GitHub repository is available here.</description>
         </item>
       
   </channel>

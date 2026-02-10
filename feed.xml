@@ -6,7 +6,16 @@
     <description>Recent content on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Mon, 09 Feb 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Cleaning up old branches: a routine maintenance for a healthier repository</title>
+          <link>https://build.prestashop-project.org/news/2026/cleaning-old-branches/</link>
+          <pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/cleaning-old-branches/</guid>
+          <description>Keeping the PrestaShop repository tidy is part of routine maintenance. In January 2026, we are cleaning up a few stale branches from our main repository that are no longer used for releases or active development.</description>
+        </item>
+      
         <item>
           <title>PrestaShop Core Monthly - January 2026</title>
           <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-01-01-2026-01-31/</link>
@@ -132,15 +141,6 @@ Over the coming weeks, we’ll be publishing a series of blog posts, similar to 
             
           <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</guid>
           <description>Some of you hit an unexpected issue when installing PrestaShop 9.0.2 from prestashop.com, and some also noticed a slightly unusual version number: 9.0.2-2.1, which has been used since the start of PrestaShop 9 but hadn’t been explicitly explained until now.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop 9.1 is in feature freeze</title>
-          <link>https://build.prestashop-project.org/news/2025/prestashop-9-1-feature-freeze/</link>
-          <pubDate>Mon, 15 Dec 2025 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2025/prestashop-9-1-feature-freeze/</guid>
-          <description>As of December 12th, 2025, PrestaShop version 9.1 has entered the feature freeze phase. Learn more about the feature freeze, the next steps, and what’s coming in PrestaShop 9.1.</description>
         </item>
       
   </channel>

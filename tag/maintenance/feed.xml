@@ -6,7 +6,16 @@
     <description>Recent content in Maintenance on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/maintenance/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/maintenance/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Cleaning up old branches: a routine maintenance for a healthier repository</title>
+          <link>https://build.prestashop-project.org/news/2026/cleaning-old-branches/</link>
+          <pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/cleaning-old-branches/</guid>
+          <description>Keeping the PrestaShop repository tidy is part of routine maintenance. In January 2026, we are cleaning up a few stale branches from our main repository that are no longer used for releases or active development.</description>
+        </item>
+      
         <item>
           <title>PrestaShop 9.0.2-2.1: what happened and why the version looks different</title>
           <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-2-2-1-patch-version/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2020/critical-security-vulnerability-in-prestashop-modules/</guid>
           <description>Attackers are using a vulnerability in a popular dependency used by modules to take control of PrestaShop sites. For details, please read the entire article.</description>
-        </item>
-      
-        <item>
-          <title>Release Of PrestaShop 1.7.6.2</title>
-          <link>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-2-maintenance-release/</link>
-          <pubDate>Thu, 28 Nov 2019 16:15:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2019/prestashop-1-7-6-2-maintenance-release/</guid>
-          <description>After a few months dedicated to fixing all regressions found on the previous 1.7.6 versions, PrestaShop 1.7.6.2 is finally available!</description>
         </item>
       
   </channel>

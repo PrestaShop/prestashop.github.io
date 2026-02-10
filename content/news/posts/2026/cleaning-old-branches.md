@@ -13,7 +13,7 @@ tags:
 - maintenance
 ---
 
-Keeping the PrestaShop repository tidy is part of routine maintenance. In January 2026, we are cleaning up a few stale branches from our [main repository](https://github.com/PrestaShop/PrestaShop/) that are no longer used for releases.
+Keeping the PrestaShop repository tidy is part of routine maintenance. In January 2026, we are cleaning up a few stale branches from our [main repository](https://github.com/PrestaShop/PrestaShop/) that are no longer used for releases or active development.
 
 ## Which branches are being removed
 

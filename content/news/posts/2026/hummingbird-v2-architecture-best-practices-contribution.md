@@ -30,7 +30,7 @@ This article is primarily aimed at theme developers, module authors, and front-e
 - A forward-looking discussion on JavaScript conventions and patterns
 - Guidance for contributing effectively
 
-## What’s New in Hummingbird v2
+## 🚀 What’s New in Hummingbird v2
 
 ### 1) Clear Separation Between Bootstrap and PrestaShop
 
@@ -109,11 +109,9 @@ Beyond architecture, Hummingbird v2 brings improvements in performance, accessib
 
 Highlights include faster loading, improved SEO foundations, stronger accessibility compliance, removal of jQuery as a theme dependency, new module hooks, and a modernized workflow.
 
-👉 **See the official release notes for the full changelog:**
+🔗 **<a href="https://github.com/PrestaShop/hummingbird/releases/tag/v2.0.0" target="_blank">See the official release notes for the full changelog</a>**
 
-[https://github.com/PrestaShop/hummingbird/releases/tag/v2.0.0](https://github.com/PrestaShop/hummingbird/releases/tag/v2.0.0)
-
-## 6 Best Practices for Hummingbird v2 Developers
+## ✅ 6 Best Practices for Hummingbird v2 Developers
 
 ![Best Practices](/assets/images/2026/02/hummingbird-v2-best-practices.png)
 
@@ -185,7 +183,7 @@ A good contribution is easy to understand and build upon.
 - Prefer native browser features
 - Consider performance
 
-**Illustrative example:**
+**💡 Illustrative example:**
 
 Instead of attaching JavaScript to `.cart-item` (a styling class), using `data-ps-component="cart-item"` helps avoid breakage when styles change.
 
@@ -202,7 +200,7 @@ Accessibility should be treated as a baseline expectation, not an optional enhan
 
 Accessibility benefits everyone, helps future-proof your theme, and is increasingly a requirement in many regions and markets — not just a best practice.
 
-## A Note on JavaScript Conventions
+## 🎓 A Note on JavaScript Conventions
 
 ![JavaScript Conventions](/assets/images/2026/02/hummingbird-v2-js-conventions.png)
 
@@ -227,11 +225,11 @@ Moving toward documented behavioral attributes like `data-ps-*` reduces accident
 
 can improve modularity and resilience.
 
-This is a forward-looking topic that deserves community discussion and experimentation. A dedicated discussion is [available here](https://github.com/PrestaShop/hummingbird/discussions/934), where we outline the direction we aim to explore for JavaScript conventions in themes — and potentially in PrestaShop core.
+This is a forward-looking topic that deserves community discussion and experimentation. A dedicated discussion is 🔗 **<a href="https://github.com/PrestaShop/hummingbird/discussions/934" target="_blank">available here</a>**, where we outline the direction we aim to explore for JavaScript conventions in themes — and potentially in PrestaShop core.
 
 Feedback, experiments, and real-world testing are very welcome. Insights from theme and module developers will be essential in shaping conventions that are practical, robust, and beneficial for the entire ecosystem.
 
-## How to Contribute
+## 🔨 How to Contribute
 
 Hummingbird evolves through community input.
 
@@ -245,7 +243,7 @@ Hummingbird evolves through community input.
 
 Think in terms of long-term ecosystem value.
 
-## Final Thoughts
+## 🏁 Final Thoughts
 
 ![Shaping The Future](/assets/images/2026/02/hummingbird-v2-shaping-future.png)
 

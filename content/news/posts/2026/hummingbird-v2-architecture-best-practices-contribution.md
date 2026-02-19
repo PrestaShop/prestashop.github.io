@@ -2,7 +2,7 @@
 layout: post
 title: "Hummingbird v2: Architecture, Best Practices, and Contribution Guide"
 subtitle: "A developer-oriented foundation for modern and scalable PrestaShop themes"
-date:   2026-02-17
+date:   2026-02-19
 authors: [ ThibaultBlivet ]
 icon: icon-leaf
 tags: [ theme ]
@@ -16,7 +16,7 @@ Following the beta phase and valuable community feedback, Hummingbird v2 introdu
 
 With v2, Hummingbird becomes the new reference theme for PrestaShop, offering a structured and scalable baseline for building, customizing, and extending storefronts.
 
-Hummingbird v2 is not just an incremental update — it’s a structural evolution. It revisits how SCSS is organized, how Bootstrap and PrestaShop styles are integrated and overridden, and how developers can approach customization and contribution in a more predictable way.
+Hummingbird v2 is not just an incremental update — it’s a structural evolution. It revisits how SCSS is organized, how Bootstrap and PrestaShop styles are integrated and overridden, as well as how developers can approach customization and contribution in a more predictable way.
 
 Whether you are building a custom theme, extending a store, or contributing to the ecosystem, Hummingbird v2 provides a reliable foundation to build upon.
 

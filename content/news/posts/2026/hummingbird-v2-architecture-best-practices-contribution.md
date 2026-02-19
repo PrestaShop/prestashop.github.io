@@ -169,7 +169,7 @@ Contributions should improve clarity and maintainability.
 - Respect separation of concerns
 - Prefer readable solutions
 - Follow <a href="https://getbem.com/" target="_blank">BEM methodology</a>
-- Default to vanilla JS
+- Use vanilla JS, Bootstrap, and PrestaShop built-in JS instead of jQuery
 - Align with existing patterns
 
 A good contribution is easy to understand and build upon.

@@ -107,7 +107,7 @@ This responsibility-driven structure provides a more solid foundation for future
 
 Beyond architecture, Hummingbird v2 brings improvements in performance, accessibility, and developer experience.
 
-Highlights include faster loading, improved SEO foundations, stronger accessibility compliance, removal of jQuery as a theme dependency, new module hooks, and a modernized workflow.
+Highlights include faster loading, improved SEO foundations, stronger accessibility compliance, removal of jQuery as a theme dependency, and a modernized workflow.
 
 🔗 **<a href="https://github.com/PrestaShop/hummingbird/releases/tag/v2.0.0" target="_blank">See the official release notes for the full changelog</a>**
 
@@ -131,19 +131,19 @@ Respecting layer order keeps styling predictable and avoids specificity wars.
 
 Customize through configuration first, overrides second.
 
-**Ask yourself:**
+**Before adding custom CSS or modifying templates, ask yourself:**
 
-- Can SCSS variables solve this?
-- Can utilities solve this?
-- Can configuration solve this?
+- Can this be solved by adjusting existing SCSS variables or design tokens?
+- Can I achieve this using existing utility classes?
+- Can I extend the component without rewriting it?
 
-**For Bootstrap:**
+**For Bootstrap specifically:**
 
-- Prefer variable overrides
-- Follow Bootstrap’s documented customization
-- Add custom CSS only as a last resort
+- Prefer overriding Bootstrap variables rather than rewriting component styles
+- Follow Bootstrap’s documented customization patterns
+- Add custom CSS only when configuration is insufficient
 
-Heavy overrides increase maintenance and upgrade risks. Small layered changes scale better.
+Large overrides and template rewrites increase maintenance cost and upgrade risk. Smaller, layered adjustments are easier to maintain and scale better over time.
 
 ### 3) Treat PrestaShop Core Templates Carefully
 
@@ -167,9 +167,8 @@ When possible, extend markup rather than restructuring it.
 Contributions should improve clarity and maintainability.
 
 - Respect separation of concerns
-- Keep changes scoped
 - Prefer readable solutions
-- Follow BEM
+- Follow <a href="https://getbem.com/" target="_blank">BEM methodology</a>
 - Default to vanilla JS
 - Align with existing patterns
 

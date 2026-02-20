@@ -6,6 +6,7 @@ subtitle: "Defining the core User Experience values for PrestaShop"
 date:   2017-08-01 11:12:00
 authors: [ leamendes ]
 icon: icon-sign
+alias: [ "tools/prestashop-design-principles" ]
 ---
 
 Our design principles are made to shape stronger products. They define the experience core values of PrestaShop. They provide a consistent vision of our products and the way they should be build. Follow them if you build an interface, a user flow, a user experience for PrestaShop.

@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="">
+  <header class="page-title-block">
+    <h1 class="page-title">{{ .Title }}</h1>
+    <p class="page-subtitle">{{ .Params.Subtitle }}</p>
+  </header>
+
+  {{- with .Content }}
+    <div class="page-intro">{{ . }}</div>
+  {{- end }}
+
+  <ul class="howtos-list">
+    {{- range .Paginator.Pages }}
+      {{- if not .Draft }}
+        <li>
+          <a href="{{ .Permalink }}">
+            <h4>&rarr; {{ .Title }}</h4>
+            {{- with .Params.Subtitle }}
+              <span class="subtitle">{{ . }}</span>
+            {{- end }}
+          </a>
+        </li>
+      {{- end }}
+    {{- end }}
+
+    {{- range .Params.sectionTools }}
+      <li>
+        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+          <h4>&rarr; {{ .title }}</h4>
+          {{- with .description }}
+            <span class="subtitle">{{ . }}</span>
+          {{- end }}
+        </a>
+      </li>
+    {{- end }}
+  </ul>
+</div>
+{{ end }}

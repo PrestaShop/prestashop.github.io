@@ -7,6 +7,9 @@ date:   2021-12-07
 authors:  [ kpodemski ]
 icon: icon-laptop
 tags: [module, issue, searchbar, upgrade, theme]
+build:
+  list: never
+  render: always
 ---
 
 We have recently been informed that many of you have encountered a display problem with the search bar in Front office, right after upgrading to PrestaShop 1.7.8. This problem also affected shops using the built-in "classic" theme.

@@ -7,7 +7,14 @@ date:   2017-01-12 06:09:47
 authors: [ alexeven ]
 icon: icon-book-tag
 tags: [contribute, documentation]
+build:
+  list: never
+  render: always
 ---
+
+{{% notice type="warning" title="This article is outdated" icon="megaphone" %}}
+PrestaShop's user documentation is now created using GitBook, and is hosted on GitHub. If you want to contribute to the documentation, please check out our [contribution guidelines](https://docs.prestashop-project.org/welcome/#contribute)
+{{% /notice %}}
 
 Some of you contacted us to help translate the [PrestaShop User Guide](http://doc.prestashop.com/display/PS17/User+Guide) into their language. To make things easier for anyone who wants to help write some user documentation, here is a quick guide on how to use Confluence, on which our [user documentation](http://doc.prestashop.com/) is hosted.
 

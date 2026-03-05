@@ -250,7 +250,7 @@ Please check all system requirements in the [documentation](https://devdocs.pres
 
 If you prefer not to use the Classic version, you can build a custom ZIP file with the [PrestaShop Release Creation](https://github.com/PrestaShop/PrestaShop/tree/develop/tools/build) tool:
 
-1. Clone the repository using the `9.1.0-rc.1-build` tag: `git clone git@github.com:PrestaShop/PrestaShop.git --branch "9.1.0-rc.1-build" .`
+1. Clone the repository using the `9.1.0-rc.1` tag: `git clone git@github.com:PrestaShop/PrestaShop.git --branch "9.1.0-rc.1" .`
 2. Run `composer create-release` or `php tools/build/CreateRelease.php` in the root of the repository.
 3. The ZIP file will be generated in the `tools/build/releases/` directory.
 

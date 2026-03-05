@@ -25,9 +25,7 @@ The first Release Candidate of PrestaShop 9.1 is now available for testing. This
 
 ---
 
-{{% notice type="warning" %}}
-This is a pre-release version. Do not install it on a production shop. Test it in a dedicated staging or development environment only.
-{{% /notice %}}
+{{< cta "#how-to-test-prestashop-91-rc1" >}}Download & testing instructions{{< /cta >}}
 
 ## What is a Release Candidate?
 
@@ -230,6 +228,10 @@ Some 9.1 features are experimental and must be enabled manually before you can t
 {{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/9.1.0-rc.1" >}}See the changelog on GitHub{{< /cta >}}
 
 ## How to test PrestaShop 9.1 RC1
+
+{{% notice type="warning" %}}
+This is a pre-release version. Do not install it on a production shop. Test it in a dedicated staging or development environment only.
+{{% /notice %}}
 
 {{< cta "https://prestashop.com/versions" >}}Download PrestaShop 9.1 RC1{{< /cta >}}
 

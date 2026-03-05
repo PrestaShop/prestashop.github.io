@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 9.1 RC1 is open for testing!"
 subtitle: "The first Release Candidate of PrestaShop 9.1 is here. Help us validate it before the final release."
-date:   2026-03-04 10:00:00
+date:   2026-03-05
 authors: [ PrestaShop ]
 icon: icon-lab
 image: /assets/images/2026/03/PrestaShop-9.1RC1-LinkedIn_Facebook.png

@@ -233,7 +233,7 @@ Some 9.1 features are experimental and must be enabled manually before you can t
 This is a pre-release version. Do not install it on a production shop. Test it in a dedicated staging or development environment only.
 {{% /notice %}}
 
-{{< cta "https://prestashop.com/versions" >}}Download PrestaShop 9.1 RC1{{< /cta >}}
+{{< cta "https://assets.prestashop3.com/dst/edition/corporate/9.1.0-4.0-rc.1/prestashop_edition_classic_version_9.1.0-4.0-rc.1.zip" >}}Download PrestaShop 9.1 RC1{{< /cta >}}
 
 1. Download and install RC1 in a **test or staging environment** (never on a live shop).
 2. Enable the relevant **feature flags** to test experimental capabilities.

@@ -279,7 +279,9 @@ You're also welcome to discuss your findings in the [GitHub Discussions](https:/
 
 ## Thank you to our contributors
 
-PrestaShop 9.1 RC1 would not exist without the dedication of our community. A warm welcome to the new contributors joining for the first time in this release cycle: [Salvo Passaro](https://github.com/ilsalvopss), [Giuseppe Tripiciano](https://github.com/matrixino), [rsoulard-prolaser](https://github.com/rsoulard-prolaser), and [semicolonSimp](https://github.com/semicolonSimp). Thank you for your contributions!
+PrestaShop 9.1 RC1 would not exist without the dedication of our community. A warm welcome to the new contributors joining for the first time in this release cycle: [Salvo Passaro](https://github.com/ilsalvopss), [Giuseppe Tripiciano](https://github.com/matrixino), [rsoulard-prolaser](https://github.com/rsoulard-prolaser), and [semicolonSimp](https://github.com/semicolonSimp).
+
+Thank you for your contributions!
 
 {{< contributors-grid "boherm" "ChillCode" "Codencode" "Hlavtox" "ilsalvopss" "jf-viguier" "jolelievre" "kpodemski" "M0rgan01" "matrixino" "mattgoud" "nesrineabdmouleh" "nicosomb" "Progi1984" "rsoulard-prolaser" "semicolonSimp" "ShaiMagal" "tleon" "Touxten" "tswfi" / >}}
 

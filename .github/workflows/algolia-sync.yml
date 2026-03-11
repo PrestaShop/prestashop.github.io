@@ -1,0 +1,49 @@
+name: Algolia Index Sync
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.154.2'
+          extended: true
+
+      - name: Clean public directory
+        run: rm -rf public
+
+      - name: Build site
+        run: hugo
+
+      - name: Set up algolia CLI
+        uses: algolia/setup-algolia-cli@master
+        with:
+          version: '1.6.11'
+        env:
+          ALGOLIA_APPLICATION_ID: ${{ secrets.BLOG_ALGOLIA_APPLICATION_ID }}
+          ALGOLIA_ADMIN_API_KEY: ${{ secrets.BLOG_ALGOLIA_ADMIN_API_KEY }}
+
+      - name: Update algolia index
+        env:
+          ALGOLIA_APPLICATION_ID: ${{ secrets.BLOG_ALGOLIA_APPLICATION_ID }}
+          ALGOLIA_ADMIN_API_KEY: ${{ secrets.BLOG_ALGOLIA_ADMIN_API_KEY }}
+        run: |
+          algolia --version
+          echo "Clear algolia blog index"
+          algolia indices clear blog --confirm
+          echo "Push new objects"
+          algolia objects import blog -F public/algolia.ndjson
+          echo "Clean up"
+          rm public/algolia.ndjson

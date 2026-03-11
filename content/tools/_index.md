@@ -23,6 +23,9 @@ sectionTools:
   - title: "Example Modules"
     url: "https://github.com/PrestaShop/example-modules"
     description: "A curated collection of example modules built and maintained by PrestaShop, demonstrating use cases for developers willing to customize the software. Most modules target PrestaShop 9.0.0 and above, you can check the 8.x branch for earlier versions."
+  - title: "Architectural Decision Records for PrestaShop projects"
+    url: "https://github.com/PrestaShop/ADR"
+    description: "A collection of Architectural Decision Records (ADRs) for PrestaShop projects, documenting important architectural decisions and their context."
 ---
 
 The PrestaShop team develops and maintains a range of open-source tools to support the community.

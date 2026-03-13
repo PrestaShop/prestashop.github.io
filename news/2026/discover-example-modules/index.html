@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Discover the PrestaShop example modules repository</title>
+    <link href="/style.css?1773404224" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Discover the PrestaShop example modules repository" />
+<meta property="og:description" content="If you’ve ever read through the PrestaShop developer documentation and thought “this makes sense in theory, but I wish I could see it working in a real module”: the example-modules repository is exactly what you’re looking for." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2026/discover-example-modules/" />
+    <meta property="og:image" content="https://build.prestashop-project.org//assets/images/theme/banner-ps-project.png"/>
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2026-03-13T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2026-03-13T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/theme/banner-ps-project.png">
+<meta name="twitter:title" content="Discover the PrestaShop example modules repository"/>
+<meta name="twitter:description" content="A hands-on library of working code examples to help you understand how PrestaShop module development really works."/>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF9S835S');</script>
+
+    
+</head>
+
+
+  <body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF9S835S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org/">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tools">Useful Tools</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/contact/">
+            Contact us
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+    </li>
+  </ul>
+</nav>
+          </div>
+
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="page-title">Discover the PrestaShop example modules repository</h1>
+              
+                <h3 class="post-subtitle">A hands-on library of working code examples to help you understand how PrestaShop module development really works.</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/kpodemski/">
+        <img class="img-circle" src="https://avatars3.githubusercontent.com/u/2137763?v=3&amp;s=400" alt="Krystian Podemski's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/kpodemski/">Krystian Podemski</a>
+      </div>
+        
+          <div class="author-display-role">Tech Evangelist @ PrestaShop</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Mar 13, 2026
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://x.com/intent/post?text=Discover&#43;the&#43;PrestaShop&#43;example&#43;modules&#43;repository&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fdiscover-example-modules%2F&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Share on X">
+    <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fdiscover-example-modules%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>If you&rsquo;ve ever read through the <a href="https://devdocs.prestashop-project.org/">PrestaShop developer documentation</a> and thought &ldquo;this makes sense in theory, but I wish I could see it working in a real module&rdquo;: the <a href="https://github.com/PrestaShop/example-modules">example-modules repository</a> is exactly what you&rsquo;re looking for.</p>
+<p>Maintained by the PrestaShop project, this repository contains over 20 small, focused modules, each built to demonstrate a specific feature or technique. They&rsquo;re not production modules, and they don&rsquo;t try to do everything at once. Each one has a clear purpose: show you how a particular pattern is implemented in practice.</p>
+<h2 id="learning-by-reading-code">Learning by reading code</h2>
+<p>The developer documentation does a solid job of explaining concepts. But there&rsquo;s a gap between reading how something works and knowing what the actual files should look like, how they fit together, and what pitfalls to watch for. Example modules bridge that gap.</p>
+<p>Because they&rsquo;re real, installable modules, you can install them on a test PrestaShop instance, explore what they produce in the back office, and then trace that back to the source code. That loop (behavior to code to understanding) is often the fastest way to build solid knowledge.</p>
+
+
+
+<div class="alert alert-note"><h4>A note on the examples
+    </h4><p>The example modules cover a wide range of techniques, and they were written at different points in time by different contributors. Some of them approach the same problem in slightly different ways. Some use patterns that were standard at the time but may have since been refined.</p>
+<p>Rather than treating any single module as a definitive template for your production code, treat the repository as a learning space: a set of working references to help you understand the options available, the APIs you can use, and how the framework behaves. Once you understand the examples, the documentation and your own judgment will guide you toward the most appropriate approach for your specific case.</p>
+
+</div>
+
+<h2 id="whats-in-the-repository">What&rsquo;s in the repository</h2>
+<p>The modules are organized loosely by topic. Here&rsquo;s a tour of what you&rsquo;ll find.</p>
+<h3 id="configuration-pages-and-basic-forms">Configuration pages and basic forms</h3>
+<p>The best place to start is <strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demosymfonyformsimple">demosymfonyformsimple</a></strong>, which shows you how to create a simple module configuration page using Symfony form types. If you&rsquo;ve ever needed a settings page in a module, this is the reference to start from. Its companion, <strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demosymfonyform">demosymfonyform</a></strong>, goes further, showing how to reuse PrestaShop&rsquo;s own Symfony form types on a custom admin page.</p>
+<p>Both modules are a practical complement to the <a href="https://devdocs.prestashop-project.org/9/development/components/form/">Forms</a> section of the developer documentation.</p>
+<p><img src="https://raw.githubusercontent.com/PrestaShop/example-modules/master/demosymfonyform/demosymfonyform-screenshot.png" alt="demosymfonyform in action"></p>
+<h3 id="grids-listing-data-in-the-back-office">Grids: listing data in the back office</h3>
+<p>PrestaShop&rsquo;s grid system is one of the most powerful tools available for displaying tabular data in the back office, and it comes with a learning curve. <strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demo_grid">demo_grid</a></strong> walks you through building a grid from scratch: defining columns, row actions, bulk actions, filters, and search. Once you understand the base structure, <strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demoextendgrid">demoextendgrid</a></strong> shows how to inject new row actions into an existing PrestaShop grid using hooks, without modifying the core.</p>
+<p>The <a href="https://devdocs.prestashop-project.org/9/development/components/grid/">Grid component documentation</a> is the natural companion to these modules.</p>
+<p><img src="https://raw.githubusercontent.com/PrestaShop/example-modules/master/demo_grid/demo_grid_screenshot.png" alt="demo_grid in action"></p>
+<h3 id="extending-symfony-forms-with-hooks">Extending Symfony forms with hooks</h3>
+<p>Three modules are dedicated to extending existing PrestaShop forms, each tackling the problem from a different angle.</p>
+<p><strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demoextendsymfonyform1">demoextendsymfonyform1</a></strong> demonstrates how to add fields to an existing identifiable object form (the Customer form, in this case) and connect it to grid hooks. <strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demoextendsymfonyform2">demoextendsymfonyform2</a></strong> takes this further by showing how to handle image uploads in such a form, using DoctrineORM to persist the data. <strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demoextendsymfonyform3">demoextendsymfonyform3</a></strong> then introduces the CQRS pattern into this workflow, showing how hooks can interact with command and query objects.</p>
+<p>Reading all three together gives you a progressive understanding of how form extension works at increasing levels of complexity. The <a href="https://devdocs.prestashop-project.org/9/modules/concepts/hooks/">Hooks</a> and <a href="https://devdocs.prestashop-project.org/9/development/architecture/domain/cqrs/">CQRS</a> documentation pages are worth keeping open alongside.</p>
+<p><img src="https://raw.githubusercontent.com/PrestaShop/example-modules/master/demoextendsymfonyform1/demo_form.png" alt="demoextendsymfonyform1: extra field added to the Customer form"></p>
+<p><img src="https://raw.githubusercontent.com/PrestaShop/example-modules/master/demoextendsymfonyform1/demo_list.png" alt="demoextendsymfonyform1: extra column in the Customers grid"></p>
+<p>For multistore setups, <strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demomultistoreform">demomultistoreform</a></strong> shows how to create a CRUD page with proper multistore awareness built in, which is a genuinely tricky area to get right.</p>
+<p>The <strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demoformdataproviders">demoformdataproviders</a></strong> module demonstrates the <code>FormDataProviderData</code> and <code>FormDataProviderDefaultData</code> hooks, which allow modules to inject or modify form data before a form is displayed.</p>
+<h3 id="controllers-and-admin-tabs">Controllers and admin tabs</h3>
+<p><strong><a href="https://github.com/PrestaShop/example-modules/tree/master/democontrollertabs">democontrollertabs</a></strong> is a focused example of creating modern Symfony-based admin controllers and associating them with tabs in the back office navigation. If you&rsquo;re building a new admin section for your module and want to follow the modern approach rather than legacy controllers, this is the right reference.</p>
+<p>The module pairs well with the <a href="https://devdocs.prestashop-project.org/9/modules/concepts/controllers/admin-controllers/tabs/">Tabs</a> &amp; <a href="https://devdocs.prestashop-project.org/9/modules/concepts/controllers/admin-controllers/">Admin Controllers</a> documentation.</p>
+<p><img src="https://raw.githubusercontent.com/PrestaShop/example-modules/master/democontrollertabs/democontrollertabs-screenshot.png" alt="democontrollertabs: module tab registered in the back office navigation"></p>
+<h3 id="database-doctrine-and-objectmodel">Database: Doctrine and ObjectModel</h3>
+<p>PrestaShop supports two approaches to working with the database: the legacy ObjectModel system and Doctrine ORM. Both have their place.</p>
+<p><strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demodoctrine">demodoctrine</a></strong> demonstrates how to define a Doctrine entity inside a module and interact with it using repositories. <strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demooverrideobjectmodel">demooverrideobjectmodel</a></strong> shows how to extend an existing PrestaShop ObjectModel to add custom database fields. It&rsquo;s worth knowing this technique exists, but it is generally not recommended for production modules, as ObjectModel overrides can conflict with other modules and make upgrades fragile. If you need to store extra data alongside core entities, a separate Doctrine entity with a foreign key is the safer approach.</p>
+<p><strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demowsextend">demowsextend</a></strong> shows how to expose module data through the PrestaShop WebService API by registering an ObjectModel as a new API resource. This is useful for integrations that rely on the REST API.</p>
+<h3 id="hooks-on-product-and-order-pages">Hooks on product and order pages</h3>
+<p>Two modules cover one of the most common module use cases: adding custom content or behavior to the product and order pages.</p>
+<p><strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demoproductextracontent">demoproductextracontent</a></strong> adds extra content to the front office product page using hooks. <strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demoproductform">demoproductform</a></strong> explores the product form extendability options in the back office, showing how modules can add custom fields to the product editor. And <strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demovieworderhooks">demovieworderhooks</a></strong> catalogs the hooks available on the order detail view page, which is useful when you need to inject content into the order management interface.</p>
+<h3 id="templates-and-the-js-router">Templates and the JS router</h3>
+<p><strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demoextendtemplates">demoextendtemplates</a></strong> demonstrates how to extend or override Twig templates used in the back office, which is how modules can modify the appearance of existing pages without touching the core files.</p>
+<p><strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demojsrouting">demojsrouting</a></strong> shows how to use the JavaScript Router component that PrestaShop provides, allowing your front-end JavaScript to call back-end routes by name rather than hardcoding URLs.</p>
+<h3 id="modern-infrastructure-api-console-commands-and-routing">Modern infrastructure: API, console commands, and routing</h3>
+<p><strong><a href="https://github.com/PrestaShop/example-modules/tree/master/api_module">api_module</a></strong> covers the modern Admin API (built on API Platform), showing how modules can extend it with new endpoints. This is particularly relevant for PrestaShop 9.0+ projects that rely on API-driven integrations.</p>
+<p><strong><a href="https://github.com/PrestaShop/example-modules/tree/master/democonsolecommand">democonsolecommand</a></strong> demonstrates how to register a Symfony console command inside a module, which is useful for maintenance scripts, data migration, and scheduled tasks.</p>
+<p><strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demomoduleroutes">demomoduleroutes</a></strong> shows how modules can register custom front office routes using the <code>moduleRoutes</code> hook, giving them clean URLs.</p>
+<h3 id="email-themes">Email themes</h3>
+<p><strong><a href="https://github.com/PrestaShop/example-modules/tree/master/example_module_mailtheme">example_module_mailtheme</a></strong> demonstrates how to add a custom mail theme to PrestaShop, including how to structure the templates and hook into the theme system.</p>
+<h3 id="filtering-modules">Filtering modules</h3>
+<p><strong><a href="https://github.com/PrestaShop/example-modules/tree/master/demofiltermodules">demofiltermodules</a></strong> shows how to prevent specific modules from being executed by filtering them out by name. The practical use case is cookie consent and privacy compliance: if you&rsquo;re building a module that manages user consent, you can use this technique to block tracking or analytics modules from injecting their code until the visitor has explicitly agreed.</p>
+<h2 id="where-to-go-next">Where to go next</h2>
+<p>The example modules work best alongside the official documentation. The <a href="https://devdocs.prestashop-project.org/9/modules/concepts/">Module concepts</a> section is the most relevant starting point, covering hooks, controllers, services, and more.</p>
+<p>If you want to go deeper on the architecture patterns used by the core, the <a href="https://devdocs.prestashop-project.org/9/development/architecture/domain/cqrs/">Domain layer and CQRS</a> documentation explains the approach that several of the more advanced example modules are built around.</p>
+<p>All modules are available in the <a href="https://github.com/PrestaShop/example-modules">PrestaShop/example-modules</a> repository under the AFL-3.0 license, and they are compatible with the upcoming PrestaShop 9.1. If you&rsquo;re preparing modules for the new release, the examples are a great way to get familiar with the APIs and patterns that 9.1 builds on. If you spot something outdated, have a question, or want to contribute an example of your own, the repository welcomes issues and pull requests.</p>
+<p>Happy coding.</p>
+<hr>
+<p>Is there a pattern or use case you&rsquo;d like to see covered by a new example module? Or do you have a question about one of the existing ones? Let us know in the comments below.</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Mar 13, 2026</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/module/">module</a>
+
+  <a class="label label-primary" href="/tag/tutorial/">tutorial</a>
+
+  <a class="label label-primary" href="/tag/development/">development</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/kpodemski/">Krystian Podemski</a>
+      <span>Tech Evangelist @ PrestaShop</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="cta cta--pattern cta-dark"><span>Subscribe to our newsletter</span></a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2026\/discover-example-modules\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/contact/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+    
+    <script>
+      window.axeptioSettings = {
+        userCookiesDomain: "prestashop-project.org",
+        clientId: "6859145f7baee141c249caa3",
+        cookiesVersion: "fr-eu-23-06-2025",
+        googleConsentMode: {
+          default: {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            wait_for_update: 500
+          }
+        }
+      };
+      (function(d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+      })(document, "script");
+    </script>
+    
+  </body>
+</html>

@@ -2,7 +2,7 @@
 layout: post
 title: "AI-Powered API Hackathon: 14+ Endpoints in a Single Day"
 subtitle: "How PrestaShop teams used Claude Code to accelerate Admin API contributions"
-date: 2026-03-17
+date: 2026-03-18
 authors: [ kpodemski ]
 icon: icon-rocket
 tags:

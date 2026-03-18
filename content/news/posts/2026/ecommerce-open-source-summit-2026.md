@@ -14,7 +14,7 @@ On **March 26, 2026**, the inaugural **Ecommerce Open Source Summit (EO2S)** tak
 
 Organized by [Friends of Presta](https://friendsofpresta.org/fr/evenements/eo2s-2026), this event, formerly known as FOP Days, has a new name to match a bigger scope: bringing together open source ecommerce professionals from across Europe — powered by France's thriving open source ecommerce scene — under one roof.
 
-And for the first time since the acquisition of Cyber_Pixel earlier this year, **PrestaShop and Sylius will be together on the same stage** — a moment you don't want to miss.
+And for the first time since the acquisition of PrestaShop by cyber_Pixel earlier this year, **PrestaShop and Sylius representatives will be together on the same stage** — a moment you don't want to miss.
 
 ### 🤝 About Friends of Presta
 EO2S is organized by [Friends of Presta](https://friendsofpresta.org/), a French non-profit association that brings together developers, integrators, agencies, and other professionals from the PrestaShop ecosystem. Founded in 2021, the association has grown into a key network of technical experts, operating independently and collaborating on projects ranging from security advisories to module development. Friends of Presta is also behind major community events — including the former FOP Days, now reborn as EO2S. With a thriving Slack community of over 1,000 members, it's a driving force for open source collaboration and mutual support among PrestaShop professionals.

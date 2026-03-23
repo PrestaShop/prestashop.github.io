@@ -590,4 +590,4 @@ PrestaShop 9.1 is the result of contributions from both the PrestaShop team and 
 
 Work on the next version of PrestaShop is already underway. Stay tuned to the [build blog](https://build.prestashop-project.org/) and follow the project on [GitHub](https://github.com/PrestaShop/PrestaShop) to keep up with the latest developments.
 
-We encourage you to share your feedback on PrestaShop 9.1 in [GitHub Discussions](https://github.com/PrestaShop/PrestaShop/discussions) or on [Slack](https://www.prestashop-project.org/slack/).
+We encourage you to share your feedback on PrestaShop 9.1 in the [dedicated discussion thread](https://github.com/PrestaShop/PrestaShop/discussions/41049) or on [Slack](https://www.prestashop-project.org/slack/).

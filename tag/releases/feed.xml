@@ -6,7 +6,25 @@
     <description>Recent content in Releases on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Mon, 23 Mar 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/releases/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop 8.2.5 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-8-2-5-maintenance-release/</link>
+          <pubDate>Mon, 23 Mar 2026 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-8-2-5-maintenance-release/</guid>
+          <description>PrestaShop 8.2.5 is available. This security patch for the 8.2 branch addresses two vulnerabilities: a stored XSS issue in back office templates and an improper use of the validation framework.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop 9.1 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-0-available/</link>
+          <pubDate>Mon, 23 Mar 2026 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-0-available/</guid>
+          <description>PrestaShop 9.1 is now available for download. The headline of this release is Hummingbird 2.0, which becomes the default front office theme, delivering a modern, accessible, and high-performance storefront out of the box. This version also introduces two experimental features (multi-carrier shipping and a redesigned discount system), along with dozens of improvements and bug fixes.</description>
+        </item>
+      
         <item>
           <title>PrestaShop 9.1 RC1 is open for testing!</title>
           <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-rc1/</link>
@@ -122,24 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-rc1/</guid>
           <description>The first Release Candidate of PrestaShop 9.0 is now available for testing. This is a significant milestone in the development cycle, and we encourage all users to test it thoroughly.</description>
-        </item>
-      
-        <item>
-          <title>Adapting to PrestaShop 9: Guzzle is gone, what&#39;s next?</title>
-          <link>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</link>
-          <pubDate>Thu, 20 Mar 2025 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2025/breaking-change-guzzle-removal-v9/</guid>
-          <description>PrestaShop 9 is a major release, meaning it introduces breaking changes, including the removal of certain dependencies. One of the most impactful changes for module developers is the removal of Guzzle, a popular HTTP client that many modules relied on.</description>
-        </item>
-      
-        <item>
-          <title>Reworking the &#34;Update Assistant&#34; Module V7: Our Experience</title>
-          <link>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</link>
-          <pubDate>Tue, 11 Mar 2025 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2025/reworking-the-update-assistant-module-v7-our-experience/</guid>
-          <description>Let’s face it—our Update Assistant module was messy. The front-end was confusing, the user experience was challenging, and even minor adjustments were a little more complex than what we would have liked.</description>
         </item>
       
   </channel>

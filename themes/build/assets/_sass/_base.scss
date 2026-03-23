@@ -1630,3 +1630,33 @@ footer.site-footer {
         }
     }
 }
+
+// Collapsible changelog toggles
+.changelog-toggle {
+    margin-bottom: 8px;
+
+    summary {
+        cursor: pointer;
+        list-style: none;
+        padding: 8px 12px;
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1em;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        &::before {
+            content: "\25B8\00a0";
+            font-size: 0.8em;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+    }
+
+    &[open] summary::before {
+        transform: rotate(90deg);
+    }
+}

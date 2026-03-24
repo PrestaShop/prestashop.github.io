@@ -15,7 +15,7 @@ The first PrestaShop Project Live Update of 2026 will take place on **Tuesday, M
 
 ![PrestaShop Project Live Update](/assets/images/live-update/liveupdate-banner-linkedin.png)
 
-We're kicking off the year with a special edition. [**Mikołaj Król**](https://www.linkedin.com/in/bitbager/), CEO of PrestaShop, and [**Olivier Binet**](https://www.linkedin.com/in/olivierbinet/), Managing Director, will be joining the Live Update together for the first time since PrestaShop's acquisition to answer your questions directly. This is a great opportunity to hear from PrestaShop's leadership and share your thoughts with them.
+We're kicking off the year with a special edition. [**Mikołaj Król**](https://www.linkedin.com/in/bitbager/), CEO of PrestaShop, [**Damian Murawski**](https://www.linkedin.com/in/damian-murawski/), COO, and [**Olivier Binet**](https://www.linkedin.com/in/olivierbinet/), Managing Director, will be joining the Live Update together for the first time since PrestaShop's acquisition to answer your questions directly. This is a great opportunity to hear from PrestaShop's leadership and share your thoughts with them.
 
 We'll also cover the latest project news, including the recent releases of **PrestaShop 9.1** and **PrestaShop 8.2.5**, and take a closer look at the upcoming **One Page Checkout** feature, which aims to simplify and speed up the buying experience for customers.
 
@@ -23,7 +23,7 @@ Whether you have questions about the project's direction, the new releases, or a
 
 {{< cta "https://www.youtube.com/watch?v=xa6sVBFXD9E" "info" >}}Join us on YouTube!{{< /cta >}}
 
-We'll wrap up with a Q&A session. You can ask your questions live during the stream, or submit them in advance [using this form](https://forms.gle/FWazuZnXBtFPauFZ7). This is also a great way to send your questions directly to Mikołaj and Olivier before the event, so don't hesitate to share what's on your mind.
+We'll wrap up with a Q&A session. You can ask your questions live during the stream, or submit them in advance [using this form](https://forms.gle/FWazuZnXBtFPauFZ7). This is also a great way to send your questions directly to Mikołaj, Damian, and Olivier before the event, so don't hesitate to share what's on your mind.
 
 The session will be available for replay on YouTube if you can't join us live.
 

@@ -23,7 +23,7 @@ Whether you have questions about the project's direction, the new releases, or a
 
 {{< cta "https://www.youtube.com/watch?v=xa6sVBFXD9E" "info" >}}Join us on YouTube!{{< /cta >}}
 
-We'll wrap up with a Q&A session. You can ask your questions live during the stream, or submit them in advance [using this form](https://forms.gle/FWazuZnXBtFPauFZ7). This is also a great way to send your questions directly to Mikolaj and Olivier before the event, so don't hesitate to share what's on your mind.
+We'll wrap up with a Q&A session. You can ask your questions live during the stream, or submit them in advance [using this form](https://forms.gle/FWazuZnXBtFPauFZ7). This is also a great way to send your questions directly to Mikołaj and Olivier before the event, so don't hesitate to share what's on your mind.
 
 The session will be available for replay on YouTube if you can't join us live.
 

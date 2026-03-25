@@ -568,7 +568,7 @@ Please check all system requirements in the [documentation](https://devdocs.pres
 
 ## Update to PrestaShop 9.1
 
-If you are running PrestaShop 9.0.x, you will be able to update to 9.1 using the [Update Assistant module](https://github.com/PrestaShop/autoupgrade). A compatible version of the Update Assistant is being finalized and will be available in the coming days. We will update this article once it is ready.
+If you are running PrestaShop 9.0.x, you can update to 9.1 using the [Update Assistant module](https://github.com/PrestaShop/autoupgrade). [Version 7.6.0](https://github.com/PrestaShop/autoupgrade/releases/tag/v7.6.0) is now available with full support for PrestaShop 9.1. This release also introduces incompatible module detection, which checks your installed modules against the target version before updating and automatically uninstalls any that are not compatible.
 
 As with any update, we strongly recommend:
 

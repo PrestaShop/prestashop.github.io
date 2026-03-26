@@ -37,6 +37,8 @@ Beyond the scheduled sessions, EO2S was also a place for spontaneous conversatio
 
 The day concluded with an exceptional closing keynote by Mikołaj Król, CEO of PrestaShop and Sylius, who shared his vision for the future of open source ecommerce — a powerful way to end the first edition of EO2S.
 
+![EO2S](/assets/images/2026/03/ClosingEO2S.jpg)
+
 ### What's next?
 
 With EO2S 2026 now in the books, the momentum is far from over. The conversations sparked throughout the day are already carrying on within the Friends of Presta Slack community, and the relationships built at Le Nida are set to translate into concrete projects and new collaborations across the open source ecommerce ecosystem.

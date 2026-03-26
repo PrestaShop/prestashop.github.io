@@ -35,7 +35,7 @@ Beyond the scheduled sessions, EO2S was also a place for spontaneous conversatio
 
 ### A closing keynote to remember
 
-The day concluded with an exceptional closing keynote by Mikołaj Król, CEO of PrestaShop and Sylius, who shared his vision for the future of open source ecommerce — a powerful way to end the first edition of EO2S.
+The day concluded with an exceptional closing keynote by Mikołaj Król, CEO of PrestaShop and Sylius, who shared his vision for PrestaShop's future and then answered questions coming from attendees on topics such as the Marketplace, vision for ecommerce as well as reasons for the acquisition of PrestaShop — a powerful way to end the first edition of EO2S.
 
 ![EO2S](/assets/images/2026/03/ClosingEO2S.jpg)
 

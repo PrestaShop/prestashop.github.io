@@ -6,7 +6,25 @@
     <description>Recent content on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop 8.2.6 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-8-2-6-security-release/</link>
+          <pubDate>Tue, 28 Apr 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-8-2-6-security-release/</guid>
+          <description>PrestaShop 8.2.6 is available. This security patch for the 8.2 branch addresses a Critical stored Cross-Site Scripting vulnerability. Updating as soon as possible is strongly recommended.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop 9.1.1 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-1-security-release/</link>
+          <pubDate>Tue, 28 Apr 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-1-security-release/</guid>
+          <description>PrestaShop 9.1.1 is available. This security patch for the 9.1 branch addresses a Critical stored Cross-Site Scripting vulnerability. Updating as soon as possible is strongly recommended.</description>
+        </item>
+      
         <item>
           <title>PrestaShop Core Monthly - March 2026</title>
           <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-03-01-2026-03-31/</link>
@@ -122,24 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2026/hummingbird-v2-architecture-best-practices-contribution/</guid>
           <description>Following the beta phase and valuable community feedback, Hummingbird v2 introduces a clearer architecture, stronger separation of concerns and a solid foundation for modern theme development.</description>
-        </item>
-      
-        <item>
-          <title>Cleaning up old branches: a routine maintenance for a healthier repository</title>
-          <link>https://build.prestashop-project.org/news/2026/cleaning-old-branches/</link>
-          <pubDate>Tue, 10 Feb 2026 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2026/cleaning-old-branches/</guid>
-          <description>Keeping the PrestaShop repository tidy is part of routine maintenance. In January 2026, we are cleaning up a few stale branches from our main repository that are no longer used for releases or active development.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop Core Monthly - January 2026</title>
-          <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-01-01-2026-01-31/</link>
-          <pubDate>Mon, 09 Feb 2026 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2026/core-monthly-2026-01-01-2026-01-31/</guid>
-          <description>We welcomed 2026 with a lot of exciting news and progress across the PrestaShop ecosystem. Read on for a recap of the biggest highlights from January, including the release of PrestaShop 9.1 Beta, deep dives into the new multi-carrier and discounts features, and the first videos from our Developer Conference 2025.</description>
         </item>
       
   </channel>

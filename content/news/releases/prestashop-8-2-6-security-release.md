@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.2.6 is available
 subtitle: "Critical security patch for branch 8.2.x: stored XSS in the back office Customer Service view (GHSA-w9f3-qc75-qgx9)."
-date: 2026-04-27
+date: 2026-04-28
 authors: [ PrestaShop ]
 image: /assets/images/2026/04/banner_8.2.6_1200x627.jpg
 opengraph_image: /assets/images/2026/04/banner_8.2.6_1200x627.jpg

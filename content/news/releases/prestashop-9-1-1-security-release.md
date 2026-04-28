@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 9.1.1 is available
 subtitle: "Critical security patch for branch 9.1.x: stored XSS in the back office Customer Service view (GHSA-w9f3-qc75-qgx9)."
-date: 2026-04-27
+date: 2026-04-28
 authors: [ PrestaShop ]
 icon: icon-leaf
 image: /assets/images/2026/04/PrestaShop-9.1.1-BuildBlog.png

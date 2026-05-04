@@ -6,7 +6,16 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Mon, 04 May 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop Core Monthly - April 2026</title>
+          <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-04-01-2026-04-30/</link>
+          <pubDate>Mon, 04 May 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/core-monthly-2026-04-01-2026-04-30/</guid>
+          <description>A busy month in the codebase: a critical security release, fast iteration on bringing AI into the project’s workflows, and a save-the-date for PS Summit in Lyon.</description>
+        </item>
+      
         <item>
           <title>PrestaShop 8.2.6 is available</title>
           <link>https://build.prestashop-project.org/news/2026/prestashop-8-2-6-security-release/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2026/core-monthly-2026-02-01-2026-02-28/</guid>
           <description>February was a month of meaningful progress for PrestaShop. Two new releases (9.0.3, 8.2.4), a major milestone for the Hummingbird theme, and two important announcements about upcoming features make it a month worth looking back at in detail.</description>
-        </item>
-      
-        <item>
-          <title>Hummingbird v2: Architecture, Best Practices, and Contribution Guide</title>
-          <link>https://build.prestashop-project.org/news/2026/hummingbird-v2-architecture-best-practices-contribution/</link>
-          <pubDate>Thu, 19 Feb 2026 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2026/hummingbird-v2-architecture-best-practices-contribution/</guid>
-          <description>Following the beta phase and valuable community feedback, Hummingbird v2 introduces a clearer architecture, stronger separation of concerns and a solid foundation for modern theme development.</description>
         </item>
       
   </channel>

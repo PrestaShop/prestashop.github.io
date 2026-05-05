@@ -6,7 +6,16 @@
     <description>Recent content in Architecture on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Wed, 31 May 2023 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/architecture/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Tue, 05 May 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/architecture/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Teaching AI to speak PrestaShop</title>
+          <link>https://build.prestashop-project.org/news/2026/teaching-ai-to-speak-prestashop/</link>
+          <pubDate>Tue, 05 May 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/teaching-ai-to-speak-prestashop/</guid>
+          <description>You ask your AI assistant to add a new Back Office listing page. It dutifully reaches for HelperList, configures a few fields, drops in a legacy admin controller, and produces something that would have looked perfectly correct in PrestaShop 1.7. The code compiles, the page renders, and you ship it. Six months later, you end up rewriting it on top of the Grid component, a GridDefinitionFactory, and a CQRS-aware controller wiring, because that is the architecture the rest of the codebase has been using for years.</description>
+        </item>
+      
         <item>
           <title>PrestaShop ZIP archives repository is available</title>
           <link>https://build.prestashop-project.org/news/2023/we-publish-old-zip-archives/</link>

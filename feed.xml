@@ -6,7 +6,16 @@
     <description>Recent content on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Mon, 04 May 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Tue, 05 May 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Teaching AI to speak PrestaShop</title>
+          <link>https://build.prestashop-project.org/news/2026/teaching-ai-to-speak-prestashop/</link>
+          <pubDate>Tue, 05 May 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/teaching-ai-to-speak-prestashop/</guid>
+          <description>You ask your AI assistant to add a new Back Office listing page. It dutifully reaches for HelperList, configures a few fields, drops in a legacy admin controller, and produces something that would have looked perfectly correct in PrestaShop 1.7. The code compiles, the page renders, and you ship it. Six months later, you end up rewriting it on top of the Grid component, a GridDefinitionFactory, and a CQRS-aware controller wiring, because that is the architecture the rest of the codebase has been using for years.</description>
+        </item>
+      
         <item>
           <title>PrestaShop Core Monthly - April 2026</title>
           <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-04-01-2026-04-30/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-rc1/</guid>
           <description>The first Release Candidate of PrestaShop 9.1 is now available for testing. This is the last major milestone before the stable release, and your feedback is what determines whether 9.1 ships on schedule and in great shape.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop Core Monthly - February 2026</title>
-          <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-02-01-2026-02-28/</link>
-          <pubDate>Wed, 04 Mar 2026 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2026/core-monthly-2026-02-01-2026-02-28/</guid>
-          <description>February was a month of meaningful progress for PrestaShop. Two new releases (9.0.3, 8.2.4), a major milestone for the Hummingbird theme, and two important announcements about upcoming features make it a month worth looking back at in detail.</description>
         </item>
       
   </channel>

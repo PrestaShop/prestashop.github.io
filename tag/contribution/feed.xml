@@ -6,7 +6,16 @@
     <description>Recent content in Contribution on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Wed, 12 Nov 2025 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/contribution/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Tue, 05 May 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/contribution/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Teaching AI to speak PrestaShop</title>
+          <link>https://build.prestashop-project.org/news/2026/teaching-ai-to-speak-prestashop/</link>
+          <pubDate>Tue, 05 May 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/teaching-ai-to-speak-prestashop/</guid>
+          <description>You ask your AI assistant to add a new Back Office listing page. It dutifully reaches for HelperList, configures a few fields, drops in a legacy admin controller, and produces something that would have looked perfectly correct in PrestaShop 1.7. The code compiles, the page renders, and you ship it. Six months later, you end up rewriting it on top of the Grid component, a GridDefinitionFactory, and a CQRS-aware controller wiring, because that is the architecture the rest of the codebase has been using for years.</description>
+        </item>
+      
         <item>
           <title>Call for contributions: Admin API - great start!</title>
           <link>https://build.prestashop-project.org/news/2025/call-for-contributions-admin-api-progress/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2022/hacktoberfest-2022/</guid>
           <description>With the month of October coming in a few days, be prepared for Hacktoberfest, a month-long celebration of open source software. The online event has been happening every October for the last 9 years and is sponsored by the American cloud hosting company DigitalOcean. How can you participate? Very simple: people are encouraged to create at least 4 pull requests for open source projects on GitHub.</description>
-        </item>
-      
-        <item>
-          <title>Jonathan Danse: module developer and one of the first contributors</title>
-          <link>https://build.prestashop-project.org/news/2022/contributor-interview-jonathan-danse/</link>
-          <pubDate>Wed, 01 Jun 2022 00:00:00 +0200</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2022/contributor-interview-jonathan-danse/</guid>
-          <description>Have you ever wondered who was hiding behind a GitHub username? It’s time to find out! Contributor interviews are a great way of getting to know the people who participate in the PrestaShop project. This month, meet Jonathan Danse, aka PrestaEdit.</description>
         </item>
       
   </channel>

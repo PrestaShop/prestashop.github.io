@@ -6,7 +6,16 @@
     <description>Recent content in Kpodemski on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Mon, 04 May 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/kpodemski/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Tue, 05 May 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/kpodemski/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Teaching AI to speak PrestaShop</title>
+          <link>https://build.prestashop-project.org/news/2026/teaching-ai-to-speak-prestashop/</link>
+          <pubDate>Tue, 05 May 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/teaching-ai-to-speak-prestashop/</guid>
+          <description>You ask your AI assistant to add a new Back Office listing page. It dutifully reaches for HelperList, configures a few fields, drops in a legacy admin controller, and produces something that would have looked perfectly correct in PrestaShop 1.7. The code compiles, the page renders, and you ship it. Six months later, you end up rewriting it on top of the Grid component, a GridDefinitionFactory, and a CQRS-aware controller wiring, because that is the architecture the rest of the codebase has been using for years.</description>
+        </item>
+      
         <item>
           <title>PrestaShop Core Monthly - April 2026</title>
           <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-04-01-2026-04-30/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2025/core-monthly-2025-08-01-2025-08-31/</guid>
           <description>Welcome to the August edition of Core Monthly. This month brought an important security patch for 8.2, a new community feature in the back office, and a fresh call for contributions to expand the Admin API in PrestaShop 9.</description>
-        </item>
-      
-        <item>
-          <title>Meet the PrestaShop Wall of Fame</title>
-          <link>https://build.prestashop-project.org/news/2025/meet-prestashop-wall-of-fame/</link>
-          <pubDate>Tue, 12 Aug 2025 00:00:00 +0200</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2025/meet-prestashop-wall-of-fame/</guid>
-          <description>From its very first release, PrestaShop has been built and improved thanks to the dedication of its open source community. Today, we’re introducing a new way to celebrate that dedication - directly in your back office.</description>
         </item>
       
   </channel>

@@ -219,6 +219,8 @@ This is months of behind-the-scenes infrastructure work that most users will nev
 - [@boherm](https://github.com/boherm) added AI context to [ps_apiresources](https://github.com/PrestaShop/ps_apiresources) and connected the skill endpoint inside the API platform.
 - [@Quetzacoalt91](https://github.com/Quetzacoalt91) bootstrapped the standalone [`PrestaShop/skills`](https://github.com/PrestaShop/skills) repository, the home for global operational skills installable across the ecosystem.
 
+{{< contributors-grid "cnavarro-prestashop" "jolelievre" "tleon" "tblivet" "boherm" "Quetzacoalt91" >}}<!-- suppress default release thank-you text -->{{< /contributors-grid >}}
+
 There is a longer list of contributors who have reviewed early drafts, opened linked PRs, and helped pick the right examples. They will be mentioned in upcoming Core Monthly recaps.
 
 ## How you can help
@@ -232,7 +234,7 @@ The component and domain context files are not going to write themselves. If you
 
 You do not have to start from a blank page. The team has already shipped a few skills under [`.ai/skills/`](https://github.com/PrestaShop/PrestaShop/tree/develop/.ai/skills) to make this easier. The [`component-context-generator`](https://github.com/PrestaShop/PrestaShop/tree/develop/.ai/skills/component-context-generator) and [`domain-context-generator`](https://github.com/PrestaShop/PrestaShop/tree/develop/.ai/skills/domain-context-generator) skills help write a `CONTEXT.md` that follows the project's structure and conventions. Even if you prefer to write the context by hand, running the matching generator on your draft is a useful self-review pass before committing, just to confirm the structure and conventions are respected. And if you spot a missing capability, the [`create-skill`](https://github.com/PrestaShop/PrestaShop/tree/develop/.ai/skills/create-skill) skill is there to help you define and structure a new one.
 
-If you would rather start with a conversation, reach out to us in the `#general` channel on the [project's Slack](https://www.prestashop-project.org/slack/), or join the [dedicated GitHub Discussion](TODO-DISCUSSION-URL) where we are gathering feedback as the work progresses.
+If you would rather start with a conversation, reach out to us in the `#general` channel on the [project's Slack](https://www.prestashop-project.org/slack/), or join the [dedicated GitHub Discussion](https://github.com/PrestaShop/PrestaShop/discussions/41399) where we are gathering feedback as the work progresses.
 
 ## What's next
 

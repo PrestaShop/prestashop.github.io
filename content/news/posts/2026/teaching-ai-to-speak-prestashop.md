@@ -216,10 +216,11 @@ This is months of behind-the-scenes infrastructure work that most users will nev
 - [@jolelievre](https://github.com/jolelievre) built the AI pre-review GitHub Action, packaged it for reuse, piloted it on `ps_apiresources`, and authored the public [docs page on AI-assisted development](https://devdocs.prestashop-project.org/9/development/ai-assisted-development/).
 - [@tleon](https://github.com/tleon) opened the door for AI assistants to operate inside the core itself, with the foundational AI structure ([#41205](https://github.com/PrestaShop/PrestaShop/pull/41205)) and the first Symfony migration skill ([#41279](https://github.com/PrestaShop/PrestaShop/pull/41279)).
 - [@tblivet](https://github.com/tblivet) brought the same pattern to [Hummingbird](https://github.com/PrestaShop/hummingbird) and worked on AI context enhancement there.
+- [@ga-devfront](https://github.com/ga-devfront) contributed to [Hummingbird's AI context](https://github.com/PrestaShop/hummingbird), and [skills for the standalone repository](https://github.com/PrestaShop/skills).
 - [@boherm](https://github.com/boherm) added AI context to [ps_apiresources](https://github.com/PrestaShop/ps_apiresources) and connected the skill endpoint inside the API platform.
 - [@Quetzacoalt91](https://github.com/Quetzacoalt91) bootstrapped the standalone [`PrestaShop/skills`](https://github.com/PrestaShop/skills) repository, the home for global operational skills installable across the ecosystem.
 
-{{< contributors-grid "cnavarro-prestashop" "jolelievre" "tleon" "tblivet" "boherm" "Quetzacoalt91" >}}<!-- suppress default release thank-you text -->{{< /contributors-grid >}}
+{{< contributors-grid "cnavarro-prestashop" "jolelievre" "tleon" "tblivet" "ga-devfront" "boherm" "Quetzacoalt91" >}}<!-- suppress default release thank-you text -->{{< /contributors-grid >}}
 
 There is a longer list of contributors who have reviewed early drafts, opened linked PRs, and helped pick the right examples. They will be mentioned in upcoming Core Monthly recaps.
 

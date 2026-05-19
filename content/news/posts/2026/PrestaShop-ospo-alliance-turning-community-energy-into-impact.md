@@ -5,7 +5,7 @@ subtitle: Turning open source commitment into lasting community-driven progress
 date: 2026-05-19
 authors: [ coffrep ]
 icon: icon-leaf
-tags: [news, open source]
+tags: [news]
 ---
 We recently had the opportunity to be interviewed by the OSPO Alliance to discuss what open source means at PrestaShop - and, more importantly, what we do to keep a long-running project healthy, collaborative, and sustainable. Open source isn’t a side track for us: it’s part of PrestaShop’s DNA, and it influences how we build, ship, and improve the software together with the community.
 

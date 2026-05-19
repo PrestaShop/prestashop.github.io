@@ -9,7 +9,7 @@ tags: [news]
 ---
 We recently had the opportunity to be interviewed by the OSPO Alliance to discuss what open source means at PrestaShop - and, more importantly, what we do to keep a long-running project healthy, collaborative, and sustainable. Open source isn’t a side track for us: it’s part of PrestaShop’s DNA, and it influences how we build, ship, and improve the software together with the community.
 
-In the [interview](https://ospo-alliance.org/ospo-stories/#Culture-&-Community:-PrestaShop-thriving-contributions-and-community), we focused on two concrete initiatives that help us scale that collaboration: Call for Contributions, to channel effort toward roadmap priorities, and the Wall of Fame, to make contributions visible and meaningful, directly for merchants in the back office.
+In the [OSPO Stories interview](https://ospo-alliance.org/en/ospo-stories/), we focused on two concrete initiatives that help us scale that collaboration: Call for Contributions, to channel effort toward roadmap priorities, and the Wall of Fame, to make contributions visible and meaningful, directly for merchants in the back office.
 
 ## OSPO Alliance and why it matters
 
@@ -32,4 +32,4 @@ We’re genuinely grateful to the OSPO Alliance for the invitation and the quali
 
 ## Conclusion
 
-If [the interview](https://ospo-alliance.org/ospo-stories/#Culture-&-Community:-PrestaShop-thriving-contributions-and-community) has one core message, it’s that strong open source projects don’t happen by accident. They need structure to focus effort on meaningful outcomes and recognition to make contribution visible, valued, and sustainable. We hope Call for Contributions and the Wall of Fame can be useful examples for other projects facing similar challenges, and we’re glad to continue the conversation within the OSPO Alliance community.
+If [the OSPO Stories interview](https://ospo-alliance.org/en/ospo-stories/) has one core message, it’s that strong open source projects don’t happen by accident. They need structure to focus effort on meaningful outcomes and recognition to make contribution visible, valued, and sustainable. We hope Call for Contributions and the Wall of Fame can be useful examples for other projects facing similar challenges, and we’re glad to continue the conversation within the OSPO Alliance community.

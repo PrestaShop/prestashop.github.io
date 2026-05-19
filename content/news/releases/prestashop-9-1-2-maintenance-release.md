@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 9.1.2 is available
 subtitle: "First maintenance release for the 9.1 branch: dozens of bug fixes across the back office, front office, and core, plus updated Symfony components."
-date: 2026-05-19
+date: 2026-05-19 12:00:00
 authors: [ PrestaShop ]
 icon: icon-leaf
 image: /assets/images/2026/05/9.1.2_1534x434.png

@@ -2,7 +2,7 @@
 layout: post
 title: PrestaShop and OSPO Alliance - Turning Community Energy Into Impact
 subtitle: Turning open source commitment into lasting community-driven progress
-date: 2026-05-19
+date: 2026-05-19 08:00:00
 authors: [ coffrep ]
 icon: icon-leaf
 tags: [news]

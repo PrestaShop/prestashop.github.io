@@ -6,7 +6,16 @@
     <description>Recent content in PrestaShop on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Tue, 19 May 2026 12:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/prestashop/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Thu, 21 May 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/prestashop/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop 9.1.3 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-3-maintenance-release/</link>
+          <pubDate>Thu, 21 May 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-3-maintenance-release/</guid>
+          <description>PrestaShop 9.1.3 is now available. This is a small security maintenance release for the 9.1 branch that brings in the latest patch versions of two key upstream dependencies, Symfony and Twig, following their coordinated security advisories published on 2026-05-20.</description>
+        </item>
+      
         <item>
           <title>PrestaShop 9.1.2 is available</title>
           <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-2-maintenance-release/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2025/sunsetting-the-prestashop-cron-service/</guid>
           <description>The PrestaShop cron service will be officially shut down in December 2025, marking the end of a legacy component that once helped stores without full server access automate scheduled tasks.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop 9.0.1 is available</title>
-          <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-1-maintenance-release/</link>
-          <pubDate>Mon, 13 Oct 2025 00:00:00 +0200</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-1-maintenance-release/</guid>
-          <description>The first patch version for PrestaShop 9 is now available! This maintenance release focuses on resolving some of the key issues to ensure a smoother experience for all users.</description>
         </item>
       
   </channel>

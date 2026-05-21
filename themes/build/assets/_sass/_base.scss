@@ -1660,3 +1660,49 @@ footer.site-footer {
         transform: rotate(90deg);
     }
 }
+
+// Subtle inline disclosure for an "advanced" alternative below a primary CTA
+.advanced-toggle {
+    display: block;
+    text-align: center;
+    margin: 16px 0 24px;
+    font-size: 0.9em;
+
+    summary {
+        cursor: pointer;
+        list-style: none;
+        display: inline-block;
+        color: #777;
+        padding: 4px 8px;
+        border-radius: 3px;
+        transition: color 0.2s ease, background 0.2s ease;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        &::before {
+            content: "\25B8\00a0";
+            font-size: 0.85em;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+
+        &:hover {
+            color: #333;
+            background: #f5f5f5;
+        }
+    }
+
+    &[open] summary::before {
+        transform: rotate(90deg);
+    }
+
+    > *:not(summary) {
+        text-align: left;
+        max-width: 720px;
+        margin: 12px auto 0;
+        color: #555;
+        font-size: 0.95em;
+    }
+}

@@ -58,7 +58,7 @@ The main conference language is **English**, and we also want to accept a few pr
 
 Interested?
 
-{{< cta "https://docs.google.com/forms/d/e/1FAIpQLSf9ZKRfdZbXJhx7zCoB7c4YbEkqEVipsu-M9jThS7opmMD-EA/viewform](https://docs.google.com/forms/d/e/1FAIpQLSf9ZKRfdZbXJhx7zCoB7c4YbEkqEVipsu-M9jThS7opmMD-EA/viewform)" >}}Submit your proposal here{{< /cta >}}
+{{< cta "https://docs.google.com/forms/d/e/1FAIpQLSf9ZKRfdZbXJhx7zCoB7c4YbEkqEVipsu-M9jThS7opmMD-EA/viewform" >}}Submit your proposal here{{< /cta >}}
 
 More information about the event [ps-summit.com](https://www.ps-summit.com/).
 

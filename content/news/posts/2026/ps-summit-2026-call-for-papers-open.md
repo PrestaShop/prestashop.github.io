@@ -56,10 +56,10 @@ The main conference language is **English**, and we also want to accept a few pr
 
 ## Submit your proposal
 
-Interested? Submit your proposal here:  
-https://docs.google.com/forms/d/e/1FAIpQLSf9ZKRfdZbXJhx7zCoB7c4YbEkqEVipsu-M9jThS7opmMD-EA/viewform
+Interested?
 
-More information about the event:  
-https://www.ps-summit.com/
+{{< cta "https://docs.google.com/forms/d/e/1FAIpQLSf9ZKRfdZbXJhx7zCoB7c4YbEkqEVipsu-M9jThS7opmMD-EA/viewform](https://docs.google.com/forms/d/e/1FAIpQLSf9ZKRfdZbXJhx7zCoB7c4YbEkqEVipsu-M9jThS7opmMD-EA/viewform)" >}}Submit your proposal here{{< /cta >}}
+
+More information about the event [ps-summit.com](https://www.ps-summit.com/).
 
 If you’ve ever wanted to share your experience with the community, this is a great opportunity to do it and to be part of the first edition of PS Summit in Lyon.

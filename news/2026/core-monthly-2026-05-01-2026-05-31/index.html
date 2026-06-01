@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop Core Monthly - May 2026</title>
+    <link href="/style.css?1780315679" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop Core Monthly - May 2026" />
+<meta property="og:description" content="Welcome to the May 2026 Core Monthly. It was a month with a strong maintenance rhythm, two releases on the 9.1 branch, and a lot of quieter groundwork: a fresh take on how the project shares its conventions with AI tools, a one-page checkout slowly coming together in the open, and the usual steady flow of migrations on the develop branch." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2026/core-monthly-2026-05-01-2026-05-31/" />
+    <meta property="og:image" content="https://build.prestashop-project.org//assets/images/theme/banner-core-monthly-linkedin.jpg"/>
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2026-06-01T00:00:00+02:00" />
+    <meta property="article:modified_time" content="2026-06-01T00:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/theme/banner-core-monthly-linkedin.jpg">
+<meta name="twitter:title" content="PrestaShop Core Monthly - May 2026"/>
+<meta name="twitter:description" content="Two maintenance releases, teaching AI to speak PrestaShop, and a one-page checkout taking shape"/>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF9S835S');</script>
+
+    
+</head>
+
+
+  <body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF9S835S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org/">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tools">Useful Tools</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/contact/">
+            Contact us
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+    </li>
+  </ul>
+</nav>
+          </div>
+
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="page-title">PrestaShop Core Monthly - May 2026</h1>
+              
+                <h3 class="post-subtitle">Two maintenance releases, teaching AI to speak PrestaShop, and a one-page checkout taking shape</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/kpodemski/">
+        <img class="img-circle" src="https://avatars3.githubusercontent.com/u/2137763?v=3&amp;s=400" alt="Krystian Podemski's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/kpodemski/">Krystian Podemski</a>
+      </div>
+        
+          <div class="author-display-role">Tech Evangelist @ PrestaShop</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jun 1, 2026
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://x.com/intent/post?text=PrestaShop&#43;Core&#43;Monthly&#43;-&#43;May&#43;2026&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fcore-monthly-2026-05-01-2026-05-31%2F&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Share on X">
+    <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fcore-monthly-2026-05-01-2026-05-31%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Welcome to the May 2026 Core Monthly. It was a month with a strong maintenance rhythm, two releases on the 9.1 branch, and a lot of quieter groundwork: a fresh take on how the project shares its conventions with AI tools, a one-page checkout slowly coming together in the open, and the usual steady flow of migrations on the develop branch.</p>
+<p><img src="/assets/images/theme/banner-core-monthly-wide.jpg" alt="Core Monthly banner"></p>
+<p>Dear community,</p>
+<p>May was, above all, a maintenance month. The 9.1 branch received its first regular bug-fix release and a quick security follow-up just two days later, both driven largely by community contributors. Alongside that, we published an article about how we are teaching AI assistants to actually understand PrestaShop&rsquo;s architecture, the one-page checkout module kept moving toward being a first-class native module, and we opened the call for papers for PS Summit 2026 in Lyon. Let&rsquo;s walk through it.</p>
+<h2 id="two-releases-on-the-91-branch">Two releases on the 9.1 branch</h2>
+<p>The headline of the month was a pair of releases. On May 19th we shipped <a href="/news/2026/prestashop-9-1-2-maintenance-release/">PrestaShop 9.1.2</a>, the first regular maintenance release for the 9.1 branch. It bundles more than fifty merged pull requests from over twenty contributors into one update, with no new features and no breaking changes, which makes it a safe and recommended update for anyone running 9.1. Most of the work landed in the back office, with a strong focus on multishop and catalog management, order handling, and customer-facing flows, plus the usual round of Symfony component bumps under the hood.</p>
+<p>Just two days later, on May 21st, we followed up with <a href="/news/2026/prestashop-9-1-3-maintenance-release/">PrestaShop 9.1.3</a>, a small but important security maintenance release. It contains no application code changes at all: it simply pulls in the latest patched versions of Symfony (6.4.40) and Twig (3.26.0) following their coordinated security advisories published on May 20th. The practical exposure for a default shop is narrow, but because PrestaShop 9 runs on a Symfony version that still receives upstream security support, we ship these fixes as soon as they land. It is the right thing to do regardless of how limited the risk might be.</p>
+<p><img src="/assets/images/2026/05/9.1.2_1534x434.png" alt="PrestaShop 9.1.2 is available!"></p>
+<h2 id="teaching-ai-to-speak-prestashop">Teaching AI to speak PrestaShop</h2>
+<p>If you write PrestaShop code with an AI assistant, you have probably watched it confidently reach for <code>HelperList</code> and a legacy admin controller to build a listing page, only to produce something that would have looked correct in PrestaShop 1.7. The model is not inventing anything: it is faithfully reproducing the largest public corpus of PrestaShop code it could find, which is full of patterns the project moved away from years ago.</p>
+<p><img src="/assets/images/2026/05/teaching-ai-to-speak-prestashop.png" alt="Teaching AI to speak PrestaShop"></p>
+<p>In <a href="/news/2026/teaching-ai-to-speak-prestashop/">Teaching AI to speak PrestaShop</a>, we described what we are doing about it. Every PrestaShop repository now ships a small set of pointer files at its root that direct any AI tool to a shared context written in plain Markdown, and the core has gone further with a dedicated <code>.ai/</code> directory holding a hierarchical, machine-readable description of its conventions. The approach is deliberately tool-agnostic: any AI tool can read these files, and any contributor can write them, so the project avoids locking itself into one vendor&rsquo;s format. You can see this convention spreading across repositories in the PR list below, including work on the <a href="https://github.com/PrestaShop/skills">skills</a> repository that asks agents to diff changes while checking update compatibility.</p>
+<h2 id="a-one-page-checkout-taking-shape">A one-page checkout taking shape</h2>
+<p>Quietly, but steadily, the <a href="https://github.com/PrestaShop/ps_onepagecheckout">ps_onepagecheckout</a> module continued its journey toward becoming a proper native module. May saw a configuration entry added for the module in the <a href="https://github.com/PrestaShop/native-modules">native-modules</a> repository, and a series of improvements to the module itself: imported and decoupled Hummingbird templates, a new submit event, payment HTML comparison, and better error recovery during checkout. It is the kind of incremental, behind-the-scenes work that does not make a flashy announcement, but it is exactly how a feature graduates from experiment to something merchants will be able to rely on.</p>
+<h2 id="community-and-events">Community and events</h2>
+<p>Beyond the code, we shared two community-focused pieces this month. In <a href="/news/2026/prestashop-ospo-alliance-turning-community-energy-into-impact/">PrestaShop and OSPO Alliance</a>, we reflected on what open source means at PrestaShop through an interview with the OSPO Alliance, focusing on two concrete initiatives: Call for Contributions, which channels effort toward roadmap priorities, and the Wall of Fame, which makes contributions visible to merchants directly in the back office.</p>
+<p>We also <a href="/news/2026/ps-summit-2026-call-for-papers-open/">opened the call for papers</a> for PS Summit 2026, the first-ever PS Summit powered by PrestaShop and Sylius, taking place November 4th and 5th in Lyon, France. If you have an experience, an idea, or a project worth sharing with the open source ecommerce community, we would love to see you on stage.</p>
+<p><img src="/assets/images/2026/05/PS_Summit_Buildblog.png" alt="PS Summit 2026"></p>
+<h2 id="most-active-contributors">Most active contributors</h2>
+<p>Here are the five contributors with the most merged pull requests across the project&rsquo;s repositories in May:</p>
+<ol>
+<li><a href="https://github.com/Progi1984">@Progi1984</a> (25 PRs) kept the testing infrastructure moving, with a steady stream of work on functional tests and the <a href="https://github.com/PrestaShop/ui-testing-library">UI Testing Library</a>, alongside several back office fixes.</li>
+<li><a href="https://github.com/nicosomb">@nicosomb</a> (13 PRs) handled the recurring Symfony component updates, version bumps, and release plumbing across the core, <a href="https://github.com/PrestaShop/docs">docs</a>, and <a href="https://github.com/PrestaShop/autoupgrade">Auto Upgrade module</a>.</li>
+<li><a href="https://github.com/jolelievre">@jolelievre</a> (12 PRs) focused on architecture in the develop branch, making the HookRegistry stateless, refining the AI Forms context pattern, and advancing the Admin API multishop work in <a href="https://github.com/PrestaShop/ps_apiresources">ps_apiresources</a>.</li>
+<li><a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a> (11 PRs) drove the <a href="https://github.com/PrestaShop/autoupgrade">Auto Upgrade module</a> forward with migration files, module compatibility checks, and version bumps, plus an API endpoint in ps_apiresources.</li>
+<li><a href="https://github.com/Codencode">@Codencode</a> (10 PRs) was the most active community contributor, fixing a long list of back office and multishop bugs in the core.</li>
+</ol>
+<h2 id="spotlight-on-community-contributors">Spotlight on community contributors</h2>
+
+    <p>Every month we like to shine a light on the contributors who volunteer their time to make PrestaShop better. This month we want to thank five of them:</p>
+<ul>
+<li><a href="https://github.com/Codencode">@Codencode</a> tackled a remarkable number of back office and multishop bugs, from URL schema updates for a single shop to currency import on shop copy and reserved quantity handling.</li>
+<li><a href="https://github.com/Hlavtox">@Hlavtox</a> shipped the <a href="https://github.com/PrestaShop/ps_specials">ps_specials</a> 2.0.0 release, worked on the <a href="https://github.com/PrestaShop/ps_newproducts">New Products module</a>, and refined route handling in the core.</li>
+<li><a href="https://github.com/jf-viguier">@jf-viguier</a> added a <code>prestashop:module:list</code> console command and improved <code>Connection::isBot()</code> to recognize modern crawlers and AI bots, preventing ghost carts and fake connections.</li>
+<li><a href="https://github.com/PrestaEdit">@PrestaEdit</a> contributed across several repositories, adding a <code>getHighestPosition</code> alias in the core, improving the <a href="https://github.com/PrestaShop/php-dev-tools">PHP Developer Tools</a>, and adding pagination to the <a href="https://github.com/PrestaShop/TopContributors">PrestaShop contributors website</a>.</li>
+<li><a href="https://github.com/Kaikina">@Kaikina</a> contributed to the Admin API campaign in <a href="https://github.com/PrestaShop/ps_apiresources">ps_apiresources</a> with a partial update on TaxRulesGroup status and a new hook in the <a href="https://github.com/PrestaShop/ps_emailalerts">Email Alerts module</a>.</li>
+</ul>
+
+
+<div class="avatars-grid">
+    
+        <a href="https://github.com/Codencode" title="Codencode" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/Codencode.png?size=200" width="96" height="96" alt="Codencode">
+            <span class="contributor-name">Codencode</span>
+        </a>
+    
+        <a href="https://github.com/Hlavtox" title="Hlavtox" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/Hlavtox.png?size=200" width="96" height="96" alt="Hlavtox">
+            <span class="contributor-name">Hlavtox</span>
+        </a>
+    
+        <a href="https://github.com/jf-viguier" title="jf-viguier" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/jf-viguier.png?size=200" width="96" height="96" alt="jf-viguier">
+            <span class="contributor-name">jf-viguier</span>
+        </a>
+    
+        <a href="https://github.com/Kaikina" title="Kaikina" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/Kaikina.png?size=200" width="96" height="96" alt="Kaikina">
+            <span class="contributor-name">Kaikina</span>
+        </a>
+    
+        <a href="https://github.com/PrestaEdit" title="PrestaEdit" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/PrestaEdit.png?size=200" width="96" height="96" alt="PrestaEdit">
+            <span class="contributor-name">PrestaEdit</span>
+        </a>
+    
+</div>
+
+<h2 id="and-much-more">And much more</h2>
+<p>There was plenty more activity this month that did not fit into a dedicated section: continued Symfony migrations of back office pages, B2B data model work in the installer and Auto Upgrade module, a refactor of the themes documentation, fixes across the <a href="https://github.com/PrestaShop/hummingbird">Hummingbird theme</a>, and improvements to the <a href="https://github.com/PrestaShop/TopContributors">PrestaShop contributors website</a>. You will find the complete list of merged pull requests below.</p>
+<h2 id="project-releases">Project releases</h2>
+<ul>
+<li>
+<p><a href="https://github.com/PrestaShop/PrestaShop">PrestaShop</a>, <a href="https://github.com/PrestaShop/PrestaShop/releases/tag/9.1.3">PrestaShop 9.1.3</a> released on 2026-05-21.</p>
+</li>
+<li>
+<p><a href="https://github.com/PrestaShop/dashactivity">Dashboard Activity module</a>, <a href="https://github.com/PrestaShop/dashactivity/releases/tag/v2.1.2">v2.1.2</a> released on 2026-05-26.</p>
+</li>
+<li>
+<p><a href="https://github.com/PrestaShop/ps_specials">Special offers module</a>, <a href="https://github.com/PrestaShop/ps_specials/releases/tag/v2.0.0">v2.0.0</a> released on 2026-05-21.</p>
+</li>
+</ul>
+<h2 id="a-quick-update-about-prestashops-github-issues-and-pull-requests">A quick update about PrestaShop&rsquo;s GitHub issues and pull requests:</h2>
+<ul>
+<li><a href="https://github.com/search?q=repo%3APrestaShop%2FPrestaShop+is%3Apublic++is%3Aissue+created%3A2026-05-01..2026-05-31">64 new issues</a> have been created in the project repositories;</li>
+<li><a href="https://github.com/search?q=repo%3APrestaShop%2FPrestaShop+is%3Apublic++is%3Aissue+closed%3A2026-05-01..2026-05-31">80 have been closed</a>, including <a href="https://github.com/search?q=repo%3APrestaShop%2FPrestaShop+is%3Apublic++is%3Aissue+label%3Afixed+closed%3A2026-05-01..2026-05-31">0 fixed issues</a> on the core;</li>
+<li><a href="https://github.com/search?q=org%3APrestaShop+is%3Apublic++-repo%3Aprestashop%2Fprestashop.github.io++is%3Apr+created%3A2026-05-01..2026-05-31">362 pull requests have been opened</a> in the project repositories;</li>
+<li><a href="https://github.com/search?q=org%3APrestaShop+is%3Apublic++-repo%3Aprestashop%2Fprestashop.github.io++is%3Apr+closed%3A2026-05-01..2026-05-31">360 pull requests have been closed</a>, including <a href="https://github.com/search?q=org%3APrestaShop+is%3Apublic++-repo%3Aprestashop%2Fprestashop.github.io++is%3Apr+merged%3A2026-05-01..2026-05-31">286 merged pull requests</a>.</li>
+</ul>
+<h2 id="code-changes-in-the-91x-branch">Code changes in the ‘9.1.x’ branch</h2>
+<h3 id="back-office">Back office</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41552">#41552</a>: Fix #41189 - Allow changing discount status on edit page. Thank you, <a href="https://github.com/mattgoud">@mattgoud</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41530">#41530</a>: Shopping Carts : For combinations, if no image defined, use the cover  image. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41524">#41524</a>: Invoice : If no payments, display the payment method. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41457">#41457</a>: Enhance invoice filename safety by sanitizing number. Thank you, <a href="https://github.com/Maofree">@Maofree</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41394">#41394</a>: Fix: [Multishop] Error when updating &ldquo;Schema of URLs&rdquo; for a single shop. Thank you, <a href="https://github.com/Codencode">@Codencode</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41334">#41334</a>: Fix theme import from web throwing PHP warnings on invalid URLs. Thank you, <a href="https://github.com/mattgoud">@mattgoud</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41327">#41327</a>: Throw exception on order detail insert failure during conversion. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41320">#41320</a>: Fix unable to delete order product when catalog product is deleted. Thank you, <a href="https://github.com/mattgoud">@mattgoud</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41307">#41307</a>: Fix PDF downloads using Symfony responses. Thank you, <a href="https://github.com/Codencode">@Codencode</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41303">#41303</a>: Fix address state selection after country states reload. Thank you, <a href="https://github.com/Codencode">@Codencode</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41204">#41204</a>: Change the redirection of combination button learn more. Thank you, <a href="https://github.com/AureRita">@AureRita</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41036">#41036</a>: Fix: Error 500 if I enter a space in a customer&rsquo;s first or last name field. Thank you, <a href="https://github.com/Codencode">@Codencode</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/40999">#40999</a>: Fix/40997 default currency import on shop copy. Thank you, <a href="https://github.com/Codencode">@Codencode</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/40898">#40898</a>: Fix: Bug: reserved_quantity not updated when &ldquo;Share available quantities for sale&rdquo; is enabled (Multishop). Thank you, <a href="https://github.com/Codencode">@Codencode</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/40099">#40099</a>: Fix: Cart rule combinations lost when saving if lazy-loaded list (jscroll) is not fully loaded. Thank you, <a href="https://github.com/Codencode">@Codencode</a></li>
+</ul>
+<h3 id="core">Core</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41567">#41567</a>: Update Symfony components after 6.4.41 release. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41529">#41529</a>: Set version to 9.1.4. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41465">#41465</a>: Update Symfony components after 6.4.39 release. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41431">#41431</a>: Backport #41356 : Add CartId into product search handler when employeeId not provided. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41419">#41419</a>: Update Symfony components after 6.4.38 release. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41412">#41412</a>: Fix sending test emails from/to idn domains. Thank you, <a href="https://github.com/boherm">@boherm</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41410">#41410</a>: Switch employee email from ps_shop_email when forwarding customer threads to another employee. Thank you, <a href="https://github.com/boherm">@boherm</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41386">#41386</a>: Fix route management and comment Dispatcher. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41383">#41383</a>: Update Symfony components after 6.4.37 release. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41317">#41317</a>: Fix module uninstall failing when override contains multi-line property or constant value. Thank you, <a href="https://github.com/mattgoud">@mattgoud</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41273">#41273</a>: Fix: cast bool field in get cms page category for editing handler. Thank you, <a href="https://github.com/axel-paillaud">@axel-paillaud</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41225">#41225</a>: Fix attribute and attribute group position ordering in core methods. Thank you, <a href="https://github.com/nicohery">@nicohery</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/40654">#40654</a>: Theme helper to check framework&rsquo;s compatibility. Thank you, <a href="https://github.com/kpodemski">@kpodemski</a></li>
+</ul>
+<h3 id="front-office">Front office</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41509">#41509</a>: Avoid bad URL on invalid media with media servers enabled and CCC disabled. Thank you, <a href="https://github.com/gross-nvs">@gross-nvs</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41319">#41319</a>: Fix product details overridden when changing attribute in quickview modal. Thank you, <a href="https://github.com/mattgoud">@mattgoud</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41316">#41316</a>: Fix wrong state saved when country is changed quickly before AJAX completes. Thank you, <a href="https://github.com/mattgoud">@mattgoud</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41299">#41299</a>: Guard product page when product is null. Thank you, <a href="https://github.com/Codencode">@Codencode</a></li>
+</ul>
+<h3 id="tests">Tests</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41518">#41518</a>: Functional Tests : Bump @prestashop-core/ui-testing. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41503">#41503</a>: Functional Tests : Bump @prestashop-core/ui-testing. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41476">#41476</a>: Functional Tests : Remove numbering in endpoints directoriess. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41475">#41475</a>: Functional Tests : @prestashop-core/ui-testing. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41462">#41462</a>: Functional Tests : @prestashop-core/ui-testing. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41347">#41347</a>: Functional Tests : Bump @prestashop-core/ui-testing. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+</ul>
+<h2 id="code-changes-in-the-develop-branch">Code changes in the ‘develop’ branch</h2>
+<h3 id="back-office-1">Back office</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41559">#41559</a>: Migrate &ldquo;International &gt; Taxes &gt; Tax Rules&rdquo; page. Thank you, <a href="https://github.com/boherm">@boherm</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41555">#41555</a>: Make HookRegistry stateless and name-keyed. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41495">#41495</a>: Improve countries list Symfony migration. Thank you, <a href="https://github.com/mattgoud">@mattgoud</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41433">#41433</a>: SF Migration - Email body translations. Thank you, <a href="https://github.com/boherm">@boherm</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41420">#41420</a>: Migration - Add KPI strip and listing statistics to migrated Customer Service page. Thank you, <a href="https://github.com/ga-devfront">@ga-devfront</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41406">#41406</a>: Migrate country options. Thank you, <a href="https://github.com/tleon">@tleon</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41397">#41397</a>: Country Address format: replace legacy widget with Vue 3 visual builder. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41050">#41050</a>: Handle inelegible products &ldquo;free gift&rdquo; discount. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/40995">#40995</a>: Disabled discount when only customer or customer group is deleted. Thank you, <a href="https://github.com/tleon">@tleon</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/40234">#40234</a>: Delete specific prices when group is removed. Thank you, <a href="https://github.com/aomaxime">@aomaxime</a></li>
+</ul>
+<h3 id="core-1">Core</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41561">#41561</a>: Update Symfony components after 6.4.41 release. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41492">#41492</a>: Fix matrix generation workflow. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41455">#41455</a>: Improve AI Forms context (settings vs CRUD) and introduce the sub-context pattern. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41449">#41449</a>: Make branch input a simple input to use build branches. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41446">#41446</a>: Add a console command to list modules: prestashop:module:list. Thank you, <a href="https://github.com/jf-viguier">@jf-viguier</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41435">#41435</a>: Add getHighestPosition alias. Thank you, <a href="https://github.com/PrestaEdit">@PrestaEdit</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41416">#41416</a>: Build Creator : Filter only Copilot Instructions and not all workflows. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41356">#41356</a>: Add CartId into product search handler when employeeId not provided. Thank you, <a href="https://github.com/boherm">@boherm</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41305">#41305</a>: Improve Connection::isBot() with modern crawlers and AI bots to prevent ghost carts and fake connections. Thank you, <a href="https://github.com/jf-viguier">@jf-viguier</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/39837">#39837</a>: Change matching method in ShopContextSubscriber. Thank you, <a href="https://github.com/djbuch">@djbuch</a></li>
+</ul>
+<h3 id="front-office-1">Front office</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41404">#41404</a>: Improvement: add back parameter in FO customer template URLs. Thank you, <a href="https://github.com/ThbPS">@ThbPS</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41006">#41006</a>: Refacto: remove One-Page Checkout feature flag. Thank you, <a href="https://github.com/ThbPS">@ThbPS</a></li>
+</ul>
+<h3 id="installer">Installer</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41556">#41556</a>: Merge set-pr-milestone into validate-pr-metadata to fix ordering and rerun staleness. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41354">#41354</a>: Amend B2B data model to align with revised hybrid-mode schema. Thank you, <a href="https://github.com/soledis-contributeur">@soledis-contributeur</a></li>
+</ul>
+<h3 id="tests-1">Tests</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41560">#41560</a>: Functional Tests : Fixed WS - Products : CRUD. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41528">#41528</a>: Functional Tests : API : DELETE /admin-api/discounts/{discountId}. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41514">#41514</a>: Functional Tests : Remove <code>@todo</code> #41241. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41456">#41456</a>: Functional Tests : Fixed &ldquo;API : GET /products/search&rdquo;. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41430">#41430</a>: Functional Tests : Sync Title with JIRA. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41418">#41418</a>: Migration - Add Behat coverage for CustomerService status, bulk delete, and error paths. Thank you, <a href="https://github.com/ga-devfront">@ga-devfront</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41415">#41415</a>: Functional tests : WS - CRUD category . Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41355">#41355</a>: TEST-12859 - Hall of Fame Our Community. Thank you, <a href="https://github.com/paulnoelcholot">@paulnoelcholot</a></li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/41311">#41311</a>: Fix [TEST-1115] BO - Shop Parameters - SEO &amp; URLs - Generate robots.txt file. Thank you, <a href="https://github.com/mattgoud">@mattgoud</a></li>
+</ul>
+<h3 id="web-services">Web services</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/34286">#34286</a>: Fix field new not displayed on GET from API. Thank you, <a href="https://github.com/Prestaworks">@Prestaworks</a></li>
+</ul>
+<h2 id="code-changes-in-modules-themes-and-tools">Code changes in modules, themes and tools</h2>
+<h3 id="github">.github</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/.github/pull/47">#47</a>: Fix validate-pr-metadata: refresh PR data on rerun and parse trailing pipes. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/.github/pull/46">#46</a>: Clarify stale issue confirmation message to include verification on supported PrestaShop versions. Thank you, <a href="https://github.com/cnavarro-prestashop">@cnavarro-prestashop</a></li>
+</ul>
+<h3 id="api-resources">API Resources</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/207">#207</a>: Release 0.7.0. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/206">#206</a>: Bump 0.7.0. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/205">#205</a>: Document admin_api_multistore feature flag prerequisite in CONTEXT.md. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/204">#204</a>: Add projection of coverage after merging PRs from queue. Thank you, <a href="https://github.com/kpodemski">@kpodemski</a></li>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/203">#203</a>: Implement Country - Patch endpoint. Thank you, <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a></li>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/191">#191</a>: fix(category): rename parentId to parentCategoryId. Thank you, <a href="https://github.com/alexll">@alexll</a></li>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/187">#187</a>: feat: add SearchCartRules Query. Thank you, <a href="https://github.com/MatthieuCutin">@MatthieuCutin</a></li>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/158">#158</a>: Add delete country API endpoint . Thank you, <a href="https://github.com/AureRita">@AureRita</a></li>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/125">#125</a>: feat(TaxRulesGroup): Add partial update on status. Thank you, <a href="https://github.com/Kaikina">@Kaikina</a></li>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/124">#124</a>: feat(composer): Add no-timeout option to long running script. Thank you, <a href="https://github.com/Kaikina">@Kaikina</a></li>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/104">#104</a>: Product category endpoints. Thank you, <a href="https://github.com/Codencode">@Codencode</a></li>
+<li><a href="https://github.com/PrestaShop/ps_apiresources/pull/63">#63</a>: Add manufacturer endpoints. Thank you, <a href="https://github.com/MattKelvin">@MattKelvin</a></li>
+</ul>
+<h3 id="auto-upgrade-module">Auto Upgrade module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/1831">#1831</a>: [Backport] UI tests - Update UI testing library and fix errors in CLI tests and rollback. Thank you, <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/1817">#1817</a>: UI tests - Update UI testing library and fix errors in CLI tests and rollback. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/1811">#1811</a>: Bump to v7.6.5. Thank you, <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/1809">#1809</a>: [Backport] Update B2B foundation SQL for 9.2.0. Thank you, <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/1806">#1806</a>: Add migration file for 9.1.2. Thank you, <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/1805">#1805</a>: Add migration file for 9.1.2. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/1800">#1800</a>: Bump to v7.6.4. Thank you, <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/1796">#1796</a>: Update B2B foundation SQL for 9.2.0. Thank you, <a href="https://github.com/soledis-contributeur">@soledis-contributeur</a></li>
+<li><a href="https://github.com/PrestaShop/autoupgrade/pull/1794">#1794</a>: Check module compatibility with both source and destination versions of PrestaShop. Thank you, <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a></li>
+</ul>
+<h3 id="changes-in-developer-documentation-sources">Changes in developer documentation sources</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/docs/pull/2146">#2146</a>: Document multi-shop usage of the Admin API. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+<li><a href="https://github.com/PrestaShop/docs/pull/2145">#2145</a>: Rename variable for clarity in hookActionCombinationForm. Thank you, <a href="https://github.com/dali-rajab">@dali-rajab</a></li>
+<li><a href="https://github.com/PrestaShop/docs/pull/2144">#2144</a>: Update hooks for 9.1.2. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/docs/pull/2143">#2143</a>: fix getting started link. Thank you, <a href="https://github.com/jf-viguier">@jf-viguier</a></li>
+<li><a href="https://github.com/PrestaShop/docs/pull/2131">#2131</a>: Synchronize hook reference pages with PrestaShop 9.1 metadata. Thank you, <a href="https://github.com/MAX-IT-Tech">@MAX-IT-Tech</a></li>
+<li><a href="https://github.com/PrestaShop/docs/pull/2129">#2129</a>: Global refactor of themes section. Thank you, <a href="https://github.com/tblivet">@tblivet</a></li>
+</ul>
+<h3 id="classic-theme">Classic theme</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/classic-theme/pull/213">#213</a>: Bump version 3.1.2. Thank you, <a href="https://github.com/jolelievre">@jolelievre</a></li>
+</ul>
+<h3 id="dashboard-activity-module">Dashboard Activity module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/dashactivity/pull/52">#52</a>: Release 2.1.2. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/dashactivity/pull/51">#51</a>: Bump module to 2.1.2. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+</ul>
+<h3 id="distribution-api">Distribution API</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/distribution-api/pull/90">#90</a>: Update to 9.1.3. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/distribution-api/pull/89">#89</a>: Enable updates to PS 9.1.2 with Update Assistant 7.6.5. Thank you, <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a></li>
+<li><a href="https://github.com/PrestaShop/distribution-api/pull/88">#88</a>: Add release notes of PrestaShop 8.2.6 and 9.1.1. Thank you, <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a></li>
+</ul>
+<h3 id="docker-images">Docker images</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/docker/pull/479">#479</a>: Sync backlog of Docker images. Thank you, <a href="https://github.com/ps-jarvis">@ps-jarvis</a></li>
+<li><a href="https://github.com/PrestaShop/docker/pull/478">#478</a>: Sync backlog of Docker images. Thank you, <a href="https://github.com/ps-jarvis">@ps-jarvis</a></li>
+</ul>
+<h3 id="email-alerts-module">Email Alerts module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_emailalerts/pull/150">#150</a>: feat(hook): Add id product attribute to hook. Thank you, <a href="https://github.com/Kaikina">@Kaikina</a></li>
+</ul>
+<h3 id="faceted-search-module">Faceted search module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_facetedsearch/pull/1231">#1231</a>: Revert PR 1224. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_facetedsearch/pull/1224">#1224</a>: Refactor out_of_stock filter conditions for availability. Thank you, <a href="https://github.com/PululuK">@PululuK</a></li>
+</ul>
+<h3 id="hummingbird-theme">Hummingbird theme</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/1019">#1019</a>: [FORWARDPORT] Sync 2.x into develop. Thank you, <a href="https://github.com/tblivet">@tblivet</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/1018">#1018</a>: Fix json ld encode. Thank you, <a href="https://github.com/tblivet">@tblivet</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/1014">#1014</a>: Fix color swatch issue. Thank you, <a href="https://github.com/tblivet">@tblivet</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/1010">#1010</a>: Update storybook workflow trigger branch from dev to develop. Thank you, <a href="https://github.com/ga-devfront">@ga-devfront</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/1009">#1009</a>: Update storybook workflow trigger branch from dev to develop. Thank you, <a href="https://github.com/ga-devfront">@ga-devfront</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/1005">#1005</a>: Backport/2.x. Thank you, <a href="https://github.com/ga-devfront">@ga-devfront</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/1004">#1004</a>: Fix/release action. Thank you, <a href="https://github.com/ga-devfront">@ga-devfront</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/1003">#1003</a>: Fix release GitHub Action. Thank you, <a href="https://github.com/ga-devfront">@ga-devfront</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/1002">#1002</a>: Fix GitHub actions. Thank you, <a href="https://github.com/ga-devfront">@ga-devfront</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/1001">#1001</a>: bump: to version 2.1.0. Thank you, <a href="https://github.com/ga-devfront">@ga-devfront</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/1000">#1000</a>: Fix display order detail hook. Thank you, <a href="https://github.com/tblivet">@tblivet</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/998">#998</a>: Fix layer issue created by the use of SCSS extend. Thank you, <a href="https://github.com/tblivet">@tblivet</a></li>
+<li><a href="https://github.com/PrestaShop/hummingbird/pull/997">#997</a>: Fix issue: The WebPack preloadFonts configuration incorrectly resolves font URLs in npm run watch mode.. Thank you, <a href="https://github.com/metineren">@metineren</a></li>
+</ul>
+<h3 id="native-modules">Native-modules</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/native-modules/pull/4">#4</a>: Feat: add config for module ps_onepagecheckout. Thank you, <a href="https://github.com/ThbPS">@ThbPS</a></li>
+</ul>
+<h3 id="new-products-module">New Products module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_newproducts/pull/37">#37</a>: Bump version to 2.0.1. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+<li><a href="https://github.com/PrestaShop/ps_newproducts/pull/36">#36</a>: Revert removed condition. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="nightly-board">Nightly board</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/nightly-board/pull/155">#155</a>: Revert &ldquo;Update Node.js version to 26.1 in Dockerfile&rdquo;. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/nightly-board/pull/154">#154</a>: Update Node.js version to 26.1 in Dockerfile. Thank you, <a href="https://github.com/arthurzenika">@arthurzenika</a></li>
+</ul>
+<h3 id="php-developer-tools">PHP Developer Tools</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/php-dev-tools/pull/86">#86</a>: Update PHP version for PHPStan Custom rules check. Thank you, <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a></li>
+<li><a href="https://github.com/PrestaShop/php-dev-tools/pull/82">#82</a>: Update run.sh. Thank you, <a href="https://github.com/PrestaEdit">@PrestaEdit</a></li>
+<li><a href="https://github.com/PrestaShop/php-dev-tools/pull/81">#81</a>: Update Config.php fix #80. Thank you, <a href="https://github.com/cdigruttola">@cdigruttola</a></li>
+</ul>
+<h3 id="prestashop-contributors-website">PrestaShop contributors website</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/TopContributors/pull/218">#218</a>: MEP Master 20260515. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/TopContributors/pull/211">#211</a>: Add pagination to TopCard and show full lists. Thank you, <a href="https://github.com/PrestaEdit">@PrestaEdit</a></li>
+</ul>
+<h3 id="ps_onepagecheckout">Ps_onepagecheckout</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_onepagecheckout/pull/54">#54</a>: Improvement/decouple hummingbird. Thank you, <a href="https://github.com/ThbPS">@ThbPS</a></li>
+<li><a href="https://github.com/PrestaShop/ps_onepagecheckout/pull/48">#48</a>: [SPE-134] Added payment_html comparison. Thank you, <a href="https://github.com/L3RAZ">@L3RAZ</a></li>
+<li><a href="https://github.com/PrestaShop/ps_onepagecheckout/pull/47">#47</a>: [SPE-133] Adds OPC submit event. Thank you, <a href="https://github.com/L3RAZ">@L3RAZ</a></li>
+<li><a href="https://github.com/PrestaShop/ps_onepagecheckout/pull/46">#46</a>: [SPE-129] Imported needed templates from hummingbird and replaced includes with…. Thank you, <a href="https://github.com/L3RAZ">@L3RAZ</a></li>
+<li><a href="https://github.com/PrestaShop/ps_onepagecheckout/pull/41">#41</a>: Fix: missing OPC checkout templates . Thank you, <a href="https://github.com/ThbPS">@ThbPS</a></li>
+<li><a href="https://github.com/PrestaShop/ps_onepagecheckout/pull/33">#33</a>: [SPE-115] - Problème d&rsquo;affichage et sauvegarde des champs de la modale. Thank you, <a href="https://github.com/sylardiere">@sylardiere</a></li>
+<li><a href="https://github.com/PrestaShop/ps_onepagecheckout/pull/29">#29</a>: Feat: improve checkout robustness and error recovery. Thank you, <a href="https://github.com/ThbPS">@ThbPS</a></li>
+</ul>
+<h3 id="skills">Skills</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/skills/pull/3">#3</a>: Request agents to diff the changes while checking the compatibility with the update. Thank you, <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a></li>
+</ul>
+<h3 id="social-follow-module">Social Follow module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_socialfollow/pull/57">#57</a>: Fix social links keys preservation when applying order. Thank you, <a href="https://github.com/Codencode">@Codencode</a></li>
+</ul>
+<h3 id="special-offers-module">Special offers module</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ps_specials/pull/28">#28</a>: Fix CI with tag 9.0.3. Thank you, <a href="https://github.com/jf-viguier">@jf-viguier</a></li>
+<li><a href="https://github.com/PrestaShop/ps_specials/pull/27">#27</a>: Release version 2.0.0. Thank you, <a href="https://github.com/Hlavtox">@Hlavtox</a></li>
+</ul>
+<h3 id="the-prestashop-open-source-project">The PrestaShop open source project</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/open-source/pull/309">#309</a>: Download page. Thank you, <a href="https://github.com/kpodemski">@kpodemski</a></li>
+</ul>
+<h3 id="traces">Traces</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/traces/pull/224">#224</a>: <code>traces:fetch:contributors</code> : Fixed blog with scheme. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+</ul>
+<h3 id="ui-testing-library">UI Testing Library</h3>
+<ul>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/982">#982</a>: Chrome change some  native error messages. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/980">#980</a>: Fix BOBasePage help sidebar methods to support legacy pages. Thank you, <a href="https://github.com/mattgoud">@mattgoud</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/979">#979</a>: Add methods in Addresses page. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/977">#977</a>: <code>boDiscountsPage</code> : Added methods <code>getDiscountStatus</code> &amp; <code>setDiscountStatus</code>. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/972">#972</a>: Adapt test for free gift. Thank you, <a href="https://github.com/nicosomb">@nicosomb</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/971">#971</a>: <code>ProductCombination</code> : Added prices in TE &amp; TI. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/965">#965</a>: <code>boProductPage</code> : Fixed method <code>getTextColumn</code>. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/964">#964</a>: <code>boProductPage</code> : Added some methods to get more informations. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/956">#956</a>: Create category - Add methods to get fr values and get tinymce input. Thank you, <a href="https://github.com/nesrineabdmouleh">@nesrineabdmouleh</a></li>
+<li><a href="https://github.com/PrestaShop/ui-testing-library/pull/955">#955</a>: Remove eslint-plugin-deprecation. Thank you, <a href="https://github.com/Progi1984">@Progi1984</a></li>
+</ul>
+<hr />
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+    <strong>Thank you</strong> to all contributors this month! And a big thank you to everyone who contributes with issues, reviews, and comments <a href="https://github.com/PrestaShop/PrestaShop">on GitHub</a>, including those whose pull requests have not been merged yet.
+
+
+<div class="avatars-grid">
+    
+        <a href="https://github.com/alexll" title="alexll" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/alexll.png?size=200" width="96" height="96" alt="alexll">
+            <span class="contributor-name">alexll</span>
+        </a>
+    
+        <a href="https://github.com/aomaxime" title="aomaxime" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/aomaxime.png?size=200" width="96" height="96" alt="aomaxime">
+            <span class="contributor-name">aomaxime</span>
+        </a>
+    
+        <a href="https://github.com/arthurzenika" title="arthurzenika" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/arthurzenika.png?size=200" width="96" height="96" alt="arthurzenika">
+            <span class="contributor-name">arthurzenika</span>
+        </a>
+    
+        <a href="https://github.com/AureRita" title="AureRita" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/AureRita.png?size=200" width="96" height="96" alt="AureRita">
+            <span class="contributor-name">AureRita</span>
+        </a>
+    
+        <a href="https://github.com/axel-paillaud" title="axel-paillaud" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/axel-paillaud.png?size=200" width="96" height="96" alt="axel-paillaud">
+            <span class="contributor-name">axel-paillaud</span>
+        </a>
+    
+        <a href="https://github.com/boherm" title="boherm" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/boherm.png?size=200" width="96" height="96" alt="boherm">
+            <span class="contributor-name">boherm</span>
+        </a>
+    
+        <a href="https://github.com/cdigruttola" title="cdigruttola" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/cdigruttola.png?size=200" width="96" height="96" alt="cdigruttola">
+            <span class="contributor-name">cdigruttola</span>
+        </a>
+    
+        <a href="https://github.com/cnavarro-prestashop" title="cnavarro-prestashop" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/cnavarro-prestashop.png?size=200" width="96" height="96" alt="cnavarro-prestashop">
+            <span class="contributor-name">cnavarro-prestashop</span>
+        </a>
+    
+        <a href="https://github.com/Codencode" title="Codencode" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/Codencode.png?size=200" width="96" height="96" alt="Codencode">
+            <span class="contributor-name">Codencode</span>
+        </a>
+    
+        <a href="https://github.com/dali-rajab" title="dali-rajab" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/dali-rajab.png?size=200" width="96" height="96" alt="dali-rajab">
+            <span class="contributor-name">dali-rajab</span>
+        </a>
+    
+        <a href="https://github.com/djbuch" title="djbuch" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/djbuch.png?size=200" width="96" height="96" alt="djbuch">
+            <span class="contributor-name">djbuch</span>
+        </a>
+    
+        <a href="https://github.com/ga-devfront" title="ga-devfront" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/ga-devfront.png?size=200" width="96" height="96" alt="ga-devfront">
+            <span class="contributor-name">ga-devfront</span>
+        </a>
+    
+        <a href="https://github.com/gross-nvs" title="gross-nvs" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/gross-nvs.png?size=200" width="96" height="96" alt="gross-nvs">
+            <span class="contributor-name">gross-nvs</span>
+        </a>
+    
+        <a href="https://github.com/Hlavtox" title="Hlavtox" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/Hlavtox.png?size=200" width="96" height="96" alt="Hlavtox">
+            <span class="contributor-name">Hlavtox</span>
+        </a>
+    
+        <a href="https://github.com/jf-viguier" title="jf-viguier" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/jf-viguier.png?size=200" width="96" height="96" alt="jf-viguier">
+            <span class="contributor-name">jf-viguier</span>
+        </a>
+    
+        <a href="https://github.com/jolelievre" title="jolelievre" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/jolelievre.png?size=200" width="96" height="96" alt="jolelievre">
+            <span class="contributor-name">jolelievre</span>
+        </a>
+    
+        <a href="https://github.com/Kaikina" title="Kaikina" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/Kaikina.png?size=200" width="96" height="96" alt="Kaikina">
+            <span class="contributor-name">Kaikina</span>
+        </a>
+    
+        <a href="https://github.com/kpodemski" title="kpodemski" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/kpodemski.png?size=200" width="96" height="96" alt="kpodemski">
+            <span class="contributor-name">kpodemski</span>
+        </a>
+    
+        <a href="https://github.com/L3RAZ" title="L3RAZ" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/L3RAZ.png?size=200" width="96" height="96" alt="L3RAZ">
+            <span class="contributor-name">L3RAZ</span>
+        </a>
+    
+        <a href="https://github.com/Maofree" title="Maofree" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/Maofree.png?size=200" width="96" height="96" alt="Maofree">
+            <span class="contributor-name">Maofree</span>
+        </a>
+    
+        <a href="https://github.com/mattgoud" title="mattgoud" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/mattgoud.png?size=200" width="96" height="96" alt="mattgoud">
+            <span class="contributor-name">mattgoud</span>
+        </a>
+    
+        <a href="https://github.com/MatthieuCutin" title="MatthieuCutin" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/MatthieuCutin.png?size=200" width="96" height="96" alt="MatthieuCutin">
+            <span class="contributor-name">MatthieuCutin</span>
+        </a>
+    
+        <a href="https://github.com/MattKelvin" title="MattKelvin" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/MattKelvin.png?size=200" width="96" height="96" alt="MattKelvin">
+            <span class="contributor-name">MattKelvin</span>
+        </a>
+    
+        <a href="https://github.com/MAX-IT-Tech" title="MAX-IT-Tech" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/MAX-IT-Tech.png?size=200" width="96" height="96" alt="MAX-IT-Tech">
+            <span class="contributor-name">MAX-IT-Tech</span>
+        </a>
+    
+        <a href="https://github.com/metineren" title="metineren" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/metineren.png?size=200" width="96" height="96" alt="metineren">
+            <span class="contributor-name">metineren</span>
+        </a>
+    
+        <a href="https://github.com/nesrineabdmouleh" title="nesrineabdmouleh" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/nesrineabdmouleh.png?size=200" width="96" height="96" alt="nesrineabdmouleh">
+            <span class="contributor-name">nesrineabdmouleh</span>
+        </a>
+    
+        <a href="https://github.com/nicohery" title="nicohery" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/nicohery.png?size=200" width="96" height="96" alt="nicohery">
+            <span class="contributor-name">nicohery</span>
+        </a>
+    
+        <a href="https://github.com/nicosomb" title="nicosomb" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/nicosomb.png?size=200" width="96" height="96" alt="nicosomb">
+            <span class="contributor-name">nicosomb</span>
+        </a>
+    
+        <a href="https://github.com/paulnoelcholot" title="paulnoelcholot" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/paulnoelcholot.png?size=200" width="96" height="96" alt="paulnoelcholot">
+            <span class="contributor-name">paulnoelcholot</span>
+        </a>
+    
+        <a href="https://github.com/PrestaEdit" title="PrestaEdit" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/PrestaEdit.png?size=200" width="96" height="96" alt="PrestaEdit">
+            <span class="contributor-name">PrestaEdit</span>
+        </a>
+    
+        <a href="https://github.com/Prestaworks" title="Prestaworks" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/Prestaworks.png?size=200" width="96" height="96" alt="Prestaworks">
+            <span class="contributor-name">Prestaworks</span>
+        </a>
+    
+        <a href="https://github.com/Progi1984" title="Progi1984" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/Progi1984.png?size=200" width="96" height="96" alt="Progi1984">
+            <span class="contributor-name">Progi1984</span>
+        </a>
+    
+        <a href="https://github.com/ps-jarvis" title="ps-jarvis" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/ps-jarvis.png?size=200" width="96" height="96" alt="ps-jarvis">
+            <span class="contributor-name">ps-jarvis</span>
+        </a>
+    
+        <a href="https://github.com/PululuK" title="PululuK" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/PululuK.png?size=200" width="96" height="96" alt="PululuK">
+            <span class="contributor-name">PululuK</span>
+        </a>
+    
+        <a href="https://github.com/Quetzacoalt91" title="Quetzacoalt91" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/Quetzacoalt91.png?size=200" width="96" height="96" alt="Quetzacoalt91">
+            <span class="contributor-name">Quetzacoalt91</span>
+        </a>
+    
+        <a href="https://github.com/soledis-contributeur" title="soledis-contributeur" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/soledis-contributeur.png?size=200" width="96" height="96" alt="soledis-contributeur">
+            <span class="contributor-name">soledis-contributeur</span>
+        </a>
+    
+        <a href="https://github.com/sylardiere" title="sylardiere" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/sylardiere.png?size=200" width="96" height="96" alt="sylardiere">
+            <span class="contributor-name">sylardiere</span>
+        </a>
+    
+        <a href="https://github.com/tblivet" title="tblivet" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/tblivet.png?size=200" width="96" height="96" alt="tblivet">
+            <span class="contributor-name">tblivet</span>
+        </a>
+    
+        <a href="https://github.com/ThbPS" title="ThbPS" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/ThbPS.png?size=200" width="96" height="96" alt="ThbPS">
+            <span class="contributor-name">ThbPS</span>
+        </a>
+    
+        <a href="https://github.com/tleon" title="tleon" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/tleon.png?size=200" width="96" height="96" alt="tleon">
+            <span class="contributor-name">tleon</span>
+        </a>
+    
+</div>
+
+<p>Coding is only just one of the ways you can contribute. Here are some ideas on how you can <a href="https://www.prestashop-project.org/get-involved/">get involved in the project</a>.</p>
+<p>If you need help with contributing or have questions about it, feel free to contact me, <strong>@kpodemski</strong>, on the <a href="https://www.prestashop-project.org/slack/">project&rsquo;s Slack</a>.</p>
+<p>Happy contributin&rsquo; everyone!</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jun 1, 2026</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/core-monthly/">core-monthly</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/kpodemski/">Krystian Podemski</a>
+      <span>Tech Evangelist @ PrestaShop</span>
+    </h4>
+
+    
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="cta cta--pattern cta-dark"><span>Subscribe to our newsletter</span></a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2026\/core-monthly-2026-05-01-2026-05-31\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/contact/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+    
+    <script>
+      window.axeptioSettings = {
+        userCookiesDomain: "prestashop-project.org",
+        clientId: "6859145f7baee141c249caa3",
+        cookiesVersion: "fr-eu-23-06-2025",
+        googleConsentMode: {
+          default: {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            wait_for_update: 500
+          }
+        }
+      };
+      (function(d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+      })(document, "script");
+    </script>
+    
+  </body>
+</html>

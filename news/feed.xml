@@ -6,7 +6,16 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Thu, 28 May 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop Core Monthly - May 2026</title>
+          <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-05-01-2026-05-31/</link>
+          <pubDate>Mon, 01 Jun 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/core-monthly-2026-05-01-2026-05-31/</guid>
+          <description>Welcome to the May 2026 Core Monthly. It was a month with a strong maintenance rhythm, two releases on the 9.1 branch, and a lot of quieter groundwork: a fresh take on how the project shares its conventions with AI tools, a one-page checkout slowly coming together in the open, and the usual steady flow of migrations on the develop branch.</description>
+        </item>
+      
         <item>
           <title>PS Summit 2026 - Call for Papers now open (Lyon)</title>
           <link>https://build.prestashop-project.org/news/2026/ps-summit-2026-call-for-papers-open/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-0-available/</guid>
           <description>PrestaShop 9.1 is now available for download. The headline of this release is Hummingbird 2.0, which becomes the default front office theme, delivering a modern, accessible, and high-performance storefront out of the box. This version also introduces two experimental features (multi-carrier shipping and a redesigned discount system), along with dozens of improvements and bug fixes.</description>
-        </item>
-      
-        <item>
-          <title>Sunsetting translations for legacy PrestaShop versions</title>
-          <link>https://build.prestashop-project.org/news/2026/sunsetting-translations-for-legacy-prestashop-versions/</link>
-          <pubDate>Mon, 23 Mar 2026 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2026/sunsetting-translations-for-legacy-prestashop-versions/</guid>
-          <description>The translations.prestashop.com service will be shut down on April 1st, 2026. For stores running PrestaShop 1.6 and older, this means language packs will no longer be generated or available for download. For newer versions (1.7, 8, and 9), translations will continue to work as usual through a different workflow.</description>
         </item>
       
   </channel>

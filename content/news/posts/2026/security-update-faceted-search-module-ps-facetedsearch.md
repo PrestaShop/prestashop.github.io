@@ -99,4 +99,4 @@ The key functions to consider disabling are `exec`, `system`, `shell_exec`, `pas
 
 Update ps_facetedsearch to **v4.0.4** now if you run version 3.0.0 or later. Check your `modules/ps_facetedsearch/` directory and access logs for signs of past activity, and add a WAF, edge filtering, and restricted PHP functions as additional layers. If you find any indication that your shop was compromised, treat it as a security incident and bring in an expert.
 
-Thank you Frédéric Moreau (Antadis) and Gilles Caudal (Datalinx) for reporting, and helping keep the PrestaShop ecosystem secure.
+Thank you Frédéric Moreau (Antadis), Gilles Caudal (Datalinx) for reporting, and helping keep the PrestaShop ecosystem secure. Special thanks to `[@clotairer](https://github.com/clotairer)` for the help with the validation and testing of the fix.

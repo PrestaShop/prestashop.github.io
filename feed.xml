@@ -6,7 +6,16 @@
     <description>Recent content on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Wed, 03 Jun 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Security update for the Faceted Search module (ps_facetedsearch)</title>
+          <link>https://build.prestashop-project.org/news/2026/security-update-faceted-search-module-ps-facetedsearch/</link>
+          <pubDate>Wed, 03 Jun 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/security-update-faceted-search-module-ps-facetedsearch/</guid>
+          <description>A security vulnerability has been identified in the Faceted Search module (ps_facetedsearch). Under certain conditions, specially crafted requests could be processed unsafely by the module and lead to the execution of unauthorized code on the server. The issue does not require an account or authentication, so any shop running an affected version is exposed.</description>
+        </item>
+      
         <item>
           <title>PrestaShop Core Monthly - May 2026</title>
           <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-05-01-2026-05-31/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2026/prestashop-8-2-5-maintenance-release/</guid>
           <description>PrestaShop 8.2.5 is available. This security patch for the 8.2 branch addresses two vulnerabilities: a stored XSS issue in back office templates and an improper use of the validation framework.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop 9.1 is available</title>
-          <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-0-available/</link>
-          <pubDate>Mon, 23 Mar 2026 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-0-available/</guid>
-          <description>PrestaShop 9.1 is now available for download. The headline of this release is Hummingbird 2.0, which becomes the default front office theme, delivering a modern, accessible, and high-performance storefront out of the box. This version also introduces two experimental features (multi-carrier shipping and a redesigned discount system), along with dozens of improvements and bug fixes.</description>
         </item>
       
   </channel>

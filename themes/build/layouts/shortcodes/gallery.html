@@ -1,0 +1,95 @@
+{{- /*
+  gallery.html - responsive thumbnail grid with click-to-zoom lightbox.
+
+  Usage (positional params, one per image, optional "::caption" suffix):
+
+  {{< gallery
+      "/assets/images/2026/07/OPC1.png::All checkout steps on a single page"
+      "/assets/images/2026/07/OPC2.png::Delivery and payment, no page reload"
+  >}}
+
+  The lightbox CSS/markup/JS is emitted only once per page.
+*/ -}}
+<div class="ps-gallery">
+  {{- range .Params }}
+    {{- $parts := split . "::" }}
+    {{- $src := index $parts 0 }}
+    {{- $caption := "" }}
+    {{- if gt (len $parts) 1 }}{{ $caption = index $parts 1 }}{{ end }}
+    <a class="ps-gallery__item" href="{{ $src }}" data-caption="{{ $caption }}" aria-label="{{ with $caption }}Enlarge: {{ . }}{{ else }}Enlarge image{{ end }}">
+      <img src="{{ $src }}" alt="{{ $caption }}" loading="lazy">
+      {{- with $caption }}<span class="ps-gallery__caption">{{ . }}</span>{{ end }}
+    </a>
+  {{- end }}
+</div>
+{{- if not ($.Page.Store.Get "psGalleryAssets") }}
+{{- $.Page.Store.Set "psGalleryAssets" true }}
+<style>
+.ps-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:3rem 0;width:min(calc(100vw - 32px),1400px);position:relative;left:50%;transform:translateX(-50%)}
+.ps-gallery__item{position:relative;display:block;overflow:hidden;border-radius:8px;border:1px solid rgba(0,0,0,.12);cursor:zoom-in;background:#f5f5f5;line-height:0}
+.ps-gallery__item img{width:100%;height:190px;object-fit:cover;object-position:top center;display:block;transition:transform .35s ease}
+.ps-gallery__item:hover img{transform:scale(1.04)}
+.ps-gallery__item:focus-visible{outline:2px solid #2b2be0;outline-offset:2px}
+.ps-gallery__caption{position:absolute;left:0;right:0;bottom:0;padding:8px 10px;font-size:12px;line-height:1.3;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.75),rgba(0,0,0,0));opacity:0;transition:opacity .25s ease}
+.ps-gallery__item:hover .ps-gallery__caption,.ps-gallery__item:focus-visible .ps-gallery__caption{opacity:1}
+.ps-lightbox{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.92);padding:24px}
+.ps-lightbox.is-open{display:flex}
+.ps-lightbox__img{max-width:92vw;max-height:82vh;object-fit:contain;border-radius:4px;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+.ps-lightbox__caption{position:absolute;left:0;right:0;bottom:18px;text-align:center;color:#fff;font-size:14px;padding:0 24px}
+.ps-lightbox__btn{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;cursor:pointer;font-size:24px;line-height:1;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background .2s ease}
+.ps-lightbox__btn:hover{background:rgba(255,255,255,.28)}
+.ps-lightbox__close{top:18px;right:18px;font-size:22px}
+.ps-lightbox__open{top:18px;right:74px;text-decoration:none}
+.ps-lightbox__prev{left:18px;top:50%;transform:translateY(-50%)}
+.ps-lightbox__next{right:18px;top:50%;transform:translateY(-50%)}
+@media(max-width:600px){.ps-lightbox__prev{left:8px}.ps-lightbox__next{right:8px}.ps-gallery__item img{height:150px}}
+</style>
+<div class="ps-lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <a class="ps-lightbox__btn ps-lightbox__open" href="#" target="_blank" rel="noopener" aria-label="Open original image in a new tab" title="Open original in a new tab">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+  </a>
+  <button class="ps-lightbox__btn ps-lightbox__close" type="button" aria-label="Close">&times;</button>
+  <button class="ps-lightbox__btn ps-lightbox__prev" type="button" aria-label="Previous image">&#8249;</button>
+  <img class="ps-lightbox__img" src="" alt="">
+  <button class="ps-lightbox__btn ps-lightbox__next" type="button" aria-label="Next image">&#8250;</button>
+  <div class="ps-lightbox__caption"></div>
+</div>
+<script>
+(function(){
+  var box=document.querySelector('.ps-lightbox');
+  if(!box)return;
+  var img=box.querySelector('.ps-lightbox__img'),
+      cap=box.querySelector('.ps-lightbox__caption'),
+      openLink=box.querySelector('.ps-lightbox__open'),
+      items=[],idx=0;
+  function show(i){
+    var n=items.length;if(!n)return;
+    idx=(i+n)%n;
+    var a=items[idx],src=a.getAttribute('href');
+    img.src=src;
+    img.alt=a.getAttribute('data-caption')||'';
+    cap.textContent=a.getAttribute('data-caption')||'';
+    openLink.href=src;
+  }
+  function open(i){items=Array.prototype.slice.call(document.querySelectorAll('.ps-gallery__item'));show(i);box.classList.add('is-open');document.body.style.overflow='hidden';}
+  function close(){box.classList.remove('is-open');img.src='';document.body.style.overflow='';}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('.ps-gallery__item');
+    if(!a)return;
+    e.preventDefault();
+    var all=Array.prototype.slice.call(document.querySelectorAll('.ps-gallery__item'));
+    open(all.indexOf(a));
+  });
+  box.querySelector('.ps-lightbox__close').addEventListener('click',close);
+  box.querySelector('.ps-lightbox__next').addEventListener('click',function(){show(idx+1);});
+  box.querySelector('.ps-lightbox__prev').addEventListener('click',function(){show(idx-1);});
+  box.addEventListener('click',function(e){if(e.target===box)close();});
+  document.addEventListener('keydown',function(e){
+    if(!box.classList.contains('is-open'))return;
+    if(e.key==='Escape')close();
+    else if(e.key==='ArrowRight')show(idx+1);
+    else if(e.key==='ArrowLeft')show(idx-1);
+  });
+})();
+</script>
+{{- end }}

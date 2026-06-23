@@ -2,7 +2,7 @@
 layout: post
 title: "Hummingbird v2 now has an official public Figma file"
 subtitle: "The reference design file for PrestaShop's default theme is now publicly available including inspect components, tokens, and layouts to build on top of Hummingbird with confidence."
-date:   2026-06-24
+date:   2026-06-23
 authors: [ hwaseonchoi ]
 icon: icon-leaf
 tags: [ theme, design ]

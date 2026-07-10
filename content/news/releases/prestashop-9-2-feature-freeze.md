@@ -5,9 +5,9 @@ subtitle: "Explore the next steps and what's coming in PrestaShop 9.2"
 date:   2026-07-09
 authors: [ PrestaShop ]
 icon: icon-compass
-image: /assets/images/2026/06/1200x728_9.2_Beta.png
-opengraph_image: /assets/images/2026/06/1200x728_9.2_Beta.png
-twitter_image: /assets/images/2026/06/1024x512_9.2_Beta.png
+image: /assets/images/theme/banner-core-monthly.jpg
+twitter_image: /assets/images/theme/banner-core-monthly-linkedin.jpg
+opengraph_image: /assets/images/theme/banner-core-monthly-linkedin.jpg
 tags:
 - news
 - version
@@ -20,8 +20,6 @@ tags:
 ---
 
 As of July 9th, 2026, PrestaShop version 9.2 has entered the feature freeze phase. Learn more about the feature freeze, the next steps, and what's coming in PrestaShop 9.2.
-
-![PrestaShop 9.2](/assets/images/2026/06/1534x434_9.2_Beta.png)
 
 ### PrestaShop 9.2 feature freeze is in effect
 

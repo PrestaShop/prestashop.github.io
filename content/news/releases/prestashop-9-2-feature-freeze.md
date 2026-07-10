@@ -5,9 +5,8 @@ subtitle: "Explore the next steps and what's coming in PrestaShop 9.2"
 date:   2026-07-09
 authors: [ PrestaShop ]
 icon: icon-compass
-image: /assets/images/theme/banner-core-monthly.jpg
-twitter_image: /assets/images/theme/banner-core-monthly-linkedin.jpg
-opengraph_image: /assets/images/theme/banner-core-monthly-linkedin.jpg
+opengraph_image: /assets/images/theme/banner-ps-project.png
+twitter_image: /assets/images/theme/banner-ps-project.png
 tags:
 - news
 - version

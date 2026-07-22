@@ -1560,23 +1560,19 @@ footer.site-footer {
  */
 .table-of-contents {
     margin: $spacing-unit 0;
-    padding: $spacing-unit;
-    background: linear-gradient(135deg, #e8f6f9 0%, #f0f9fb 100%);
-    border-radius: 8px;
-    border-left: 4px solid #5ec3d9;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: ($spacing-unit / 1.5) 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 
     &::before {
         content: "Table of Contents";
         display: block;
-        font-size: 0.9em;
+        font-size: 0.8em;
         font-weight: 600;
-        color: #333;
+        color: #888;
         text-transform: uppercase;
         letter-spacing: 0.05em;
         margin-bottom: $spacing-unit / 2;
-        padding-bottom: $spacing-unit / 3;
-        border-bottom: 1px solid rgba(94, 195, 217, 0.2);
     }
 
     #TableOfContents {
@@ -1586,46 +1582,29 @@ footer.site-footer {
             padding-left: 0;
 
             ul {
-                margin-left: $spacing-unit / 1.5;
+                margin-left: $spacing-unit;
                 padding-left: 0;
                 margin-top: $spacing-unit / 4;
             }
         }
 
-        // Top-level items only (arrows)
         > ul > li {
             margin-bottom: ($spacing-unit / 3);
-            position: relative;
-            padding-left: 20px;
-
-            &::before {
-                content: "→";
-                position: absolute;
-                left: 0;
-                color: #5ec3d9;
-                font-weight: 600;
-                opacity: 0.6;
-            }
         }
 
-        // Nested items (no custom bullets)
         ul ul li {
             margin-bottom: ($spacing-unit / 4);
-            padding-left: 0;
-
-            &::before {
-                content: none;
-            }
+            font-size: 0.95em;
         }
 
         a {
             text-decoration: none;
-            color: #333;
-            font-weight: 500;
+            color: #444;
             transition: color 0.2s ease;
 
             &:hover {
-                color: #5ec3d9;
+                color: $brand-color;
+                text-decoration: underline;
             }
         }
     }

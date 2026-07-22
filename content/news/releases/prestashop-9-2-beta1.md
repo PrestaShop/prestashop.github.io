@@ -556,16 +556,6 @@ You can download a fully featured PrestaShop 9.2 Classic Beta 1 package from [he
 
 {{< cta "https://assets.prestashop3.com/dst/edition/corporate/9.2.0-6.0-beta.1/prestashop_edition_classic_version_9.2.0-6.0-beta.1.zip" >}}Download PrestaShop 9.2 Beta 1{{< /cta >}}
 
-### Requirements for PrestaShop 9.2 Beta 1
-
-You need a fully working environment, either a server or Docker, that meets the following requirements:
-
-* PHP 8.1 (PHP up to 8.5 is supported)
-* Composer 2
-* Node.js 20 and NPM 10
-
-Make sure to check all system requirements in the [documentation](https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/). You must also have [Git](https://www.git-scm.com/) installed on your machine.
-
 ## Known limitations
 
 {{% notice type="important" title="About upgrades" %}}

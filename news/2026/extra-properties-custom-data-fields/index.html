@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Extra properties: custom data fields for every PrestaShop entity</title>
+    <link href="/style.css?1784709622" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Extra properties: custom data fields for every PrestaShop entity" />
+<meta property="og:description" content="At PrestaShop, extensibility has always been a key principle, and the platform already gives modules plenty of room to enrich it through hooks, including ones that let you adjust Symfony form builders, grids, and more." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2026/extra-properties-custom-data-fields/" />
+    <meta property="og:image" content="https://build.prestashop-project.org//assets/images/theme/banner-ps-project.png"/>
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2026-07-22T04:00:00+02:00" />
+    <meta property="article:modified_time" content="2026-07-22T04:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/theme/banner-ps-project.png">
+<meta name="twitter:title" content="Extra properties: custom data fields for every PrestaShop entity"/>
+<meta name="twitter:description" content="A native way to attach extra fields to any PrestaShop entity, with multistore, multilang, Back Office, Front Office, and Admin API support, and no overrides."/>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF9S835S');</script>
+
+    
+</head>
+
+
+  <body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF9S835S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org/">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tools">Useful Tools</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/contact/">
+            Contact us
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+    </li>
+  </ul>
+</nav>
+          </div>
+
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="page-title">Extra properties: custom data fields for every PrestaShop entity</h1>
+              
+                <h3 class="post-subtitle">A native way to attach extra fields to any PrestaShop entity, with multistore, multilang, Back Office, Front Office, and Admin API support, and no overrides.</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/studiokiwik/">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/4717939?v=4" alt="Studio Kiwik's picture">
+      </a>
+  
+      <a href="https://build.prestashop-project.org/authors/jonathanlelievre/">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/13801017?v=4" alt="Jonathan Lelievre's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/studiokiwik/">Studio Kiwik</a>
+      </div>
+        
+          <div class="author-display-role">PrestaShop Agency</div>
+        
+    </div>
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/jonathanlelievre/">Jonathan Lelievre</a>
+      </div>
+        
+          <div class="author-display-role">Lead Developer Open Source Project</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Jul 22, 2026
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://x.com/intent/post?text=Extra&#43;properties%3A&#43;custom&#43;data&#43;fields&#43;for&#43;every&#43;PrestaShop&#43;entity&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fextra-properties-custom-data-fields%2F&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Share on X">
+    <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fextra-properties-custom-data-fields%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>At PrestaShop, extensibility has always been a key principle, and the platform already gives modules plenty of room to enrich it through hooks, including ones that let you adjust Symfony form builders, grids, and more.</p>
+<p>Storing additional data on a core entity, however, has been more involved: adding extra fields to a Product, Customer, Order, or any other entity usually meant creating your own tables, wiring up the relations by hand, and repeating that same persistence logic in every module.</p>
+<p>There are clean ways to do this today, but they ask each developer to rebuild the same plumbing every time.</p>
+<p>Today, we&rsquo;re introducing extra properties: a new native way to attach extra fields to PrestaShop entities, with built-in support for multistore, multilang, Back Office forms and grids, Front Office access, and the Admin API. No overrides required.</p>
+<h2 id="why-extra-properties">Why extra properties?</h2>
+<p>Adding business-specific data to core entities is a very common need. A merchant may want to store an additional product specification, an ERP reference on an order, customer-specific internal metadata, or custom content displayed in the storefront.</p>
+<p>Until now, module developers often had to choose between altering existing database tables, creating their own side tables and wiring everything manually, or overriding core classes. All of these approaches work, but they also create maintenance complexity and make upgrades harder.</p>
+<p>Extra properties provide a standard way to extend entities while keeping the core database and domain model clean.</p>
+<h2 id="a-native-extension-point-for-any-entity">A native extension point for any entity</h2>
+<p>With extra properties, modules (or the core itself) can register additional fields on any supported entity, such as:</p>
+<ul>
+<li>Product</li>
+<li>Combination</li>
+<li>Customer</li>
+<li>Order</li>
+<li>and more.</li>
+</ul>
+<p>Each property belongs to a namespace (usually the owning module), and can define:</p>
+<ul>
+<li>a SQL type (<code>int</code>, <code>float</code>, <code>date</code>, <code>varchar</code>, and so on)</li>
+<li>a default value</li>
+<li>validation rules</li>
+<li>visibility options</li>
+<li>labels (internationalized)</li>
+<li>indexing or uniqueness constraints</li>
+</ul>
+<p>Properties can also define their data scope:</p>
+<ul>
+<li><strong>Common:</strong> one value shared everywhere.</li>
+<li><strong>Lang:</strong> a translated value per language.</li>
+<li><strong>Shop:</strong> a specific value per shop.</li>
+</ul>
+<p>These scopes can also be combined depending on the entity model. That means extra properties work naturally with PrestaShop&rsquo;s multilingual and multistore architecture, without module developers having to rebuild that logic themselves.</p>
+<h2 id="available-everywhere-in-prestashop">Available everywhere in PrestaShop</h2>
+<p>Once registered, extra properties are automatically exposed across the platform.</p>
+<h3 id="back-office">Back Office</h3>
+<p>They can appear in entity edit forms, inside admin grids, and positioned either after existing fields or within a dedicated section. Because they use native Symfony form types, they integrate with existing Back Office UI patterns, and labels are translated automatically.</p>
+<h3 id="front-office">Front Office</h3>
+<p>Extra properties are available directly on <code>ObjectModels</code> through the <code>extraProperties</code> accessor. For example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">extraProperties</span><span class="p">[</span><span class="s1">&#39;my_module&#39;</span><span class="p">][</span><span class="s1">&#39;erp_reference&#39;</span><span class="p">];</span>
+</span></span></code></pre></div><p>Or in Smarty:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nv">$product.extraProperties.my_module.erp_reference</span><span class="cp">}</span><span class="x">
+</span></span></span></code></pre></div><p>They are lazy-loaded, so no query runs unless the data is actually requested. Properties can also be hidden from the storefront when needed.</p>
+<h3 id="admin-api">Admin API</h3>
+<p>Extra properties are serialized automatically in the <code>extraProperties</code> JSON node. They remain grouped by module namespace and follow the same permissions as the parent entity. For example: if a client can write products, it can also write product extra properties.</p>
+<h2 id="under-the-hood-why-dedicated-_extra-tables">Under the hood: why dedicated <code>_extra</code> tables?</h2>
+<p>One important design decision was not to modify existing core tables. Instead, extra properties are stored in dedicated tables such as:</p>
+<ul>
+<li><code>PREFIX_product_extra</code></li>
+<li><code>PREFIX_product_extra_lang</code></li>
+<li><code>PREFIX_product_extra_shop</code></li>
+</ul>
+<p>You may wonder why we decided to do that.</p>
+<h3 id="core-tables-stay-stable">Core tables stay stable</h3>
+<p>PrestaShop&rsquo;s database schema remains predictable: no migration burden on existing entities, and no growing number of nullable columns.</p>
+<h3 id="sql-stays-efficient">SQL stays efficient</h3>
+<p>Each extra property is stored in a real typed SQL column. That allows efficient joins, indexes, unique constraints, and simple querying. We deliberately avoided a generic EAV/meta-value model because performance and query readability matter at scale.</p>
+<h3 id="database-grows-only-when-needed">Database grows only when needed</h3>
+<p>Extra tables and columns are created automatically when a property is registered. If no extra properties exist for an entity, no extra table is used. Unused structures can also be removed automatically when no longer required. This keeps the feature lightweight while remaining scalable.</p>
+<h3 id="a-shared-registry">A shared registry</h3>
+<p>All registered properties are tracked in a dedicated registry table: <code>extra_property_definition</code>. This central definition stores metadata such as:</p>
+<ul>
+<li>property name</li>
+<li>owning module (<code>null</code> for native/core-managed properties)</li>
+<li>SQL type</li>
+<li>scope</li>
+<li>default value</li>
+<li>validation</li>
+<li>visibility options</li>
+<li>translated labels</li>
+</ul>
+<p>This registry gives PrestaShop a single source of truth for how extra properties behave everywhere in the platform.</p>
+<h2 id="a-better-foundation-for-extensibility">A better foundation for extensibility</h2>
+<p>Extra properties bring a native, structured way to extend PrestaShop entities: no overrides, multilang support, multistore support, Back Office integration, Front Office access, Admin API support, typed SQL storage, and lazy loading.</p>
+<p>For module developers, it means less boilerplate and cleaner integrations. For the core, it creates a reusable extension point that can power future features consistently. And for merchants, it makes extra data easier to manage without sacrificing maintainability.</p>
+<h2 id="a-joint-effort-between-prestashop-and-kiwik">A joint effort between PrestaShop and Kiwik</h2>
+<p>Extra properties is the result of a close collaboration between the PrestaShop SA teams and the <a href="https://www.kiwik.com/">Kiwik</a> agency. Designing an extension point that feels native across the Back Office, Front Office, and Admin API, while keeping the core database clean and predictable, took a great deal of shared work on the architecture, the edge cases, and the developer experience.</p>
+<p>A big thank you to the Kiwik team for their ideas, their code, and their commitment throughout the project. This feature is a wonderful example of what the community and PrestaShop can achieve when they build together, and every developer and merchant on the platform will benefit from it.</p>
+
+
+
+<div class="alert alert-info">Extra properties was built jointly by the PrestaShop SA teams and <a href="https://www.kiwik.com/">Kiwik</a>. Thank you to everyone involved for bringing this feature to life.
+</div>
+
+<p>In the next article, we&rsquo;ll go deeper and show how to register extra properties in a module, display them in the Back Office, and access them in PHP and the Admin API.</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Jul 22, 2026</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/9.2/">9.2</a>
+
+  <a class="label label-primary" href="/tag/9.2.x/">9.2.x</a>
+
+  <a class="label label-primary" href="/tag/9.x/">9.x</a>
+
+  <a class="label label-primary" href="/tag/feature/">feature</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+
+            <h5>About the authors</h5>
+
+            
+              <div class="author-item">
+                  
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/studiokiwik/">Studio Kiwik</a>
+      <span class="multiple">PrestaShop Agency</span>
+    </h4>
+
+    
+
+
+
+
+
+              </div>
+            
+              <div class="author-item">
+                  
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/jonathanlelievre/">Jonathan Lelievre</a>
+      <span class="multiple">Lead Developer Open Source Project</span>
+    </h4>
+
+    
+
+
+
+
+
+              </div>
+            
+
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="cta cta--pattern cta-dark"><span>Subscribe to our newsletter</span></a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2026\/extra-properties-custom-data-fields\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/contact/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+    
+    <script>
+      window.axeptioSettings = {
+        userCookiesDomain: "prestashop-project.org",
+        clientId: "6859145f7baee141c249caa3",
+        cookiesVersion: "fr-eu-23-06-2025",
+        googleConsentMode: {
+          default: {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            wait_for_update: 500
+          }
+        }
+      };
+      (function(d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+      })(document, "script");
+    </script>
+    
+  </body>
+</html>

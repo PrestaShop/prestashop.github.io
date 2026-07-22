@@ -86,6 +86,10 @@ One important addition to the core supports this work: a new `actionCheckoutBuil
 
 This is where things get interesting for the developer community.
 
+{{% notice type="important" title="Payment and shipping module developers, this is for you" %}}
+If you maintain a payment or shipping (carrier) module, please review the checkout documentation to make sure your solution behaves correctly in the one-page flow. Two guides cover everything you need: the [module developers guide](https://devdocs.prestashop-project.org/9/modules/checkout/module-developers/) and the [theme developers guide](https://devdocs.prestashop-project.org/9/modules/checkout/theme-developers/).
+{{% /notice %}}
+
 **For module developers**, the OPC introduces some patterns worth understanding. Because the checkout updates asynchronously, modules that inject into carrier or payment sections need to be ready to re-render their content after an AJAX refresh. A key design goal throughout the project was to preserve as many of the hooks that modules already depend on as possible.
 
 Rather than rethinking the hook architecture from scratch, we mapped the classic checkout's existing hook surface to the new flow and kept it intact wherever feasible, specifically to limit the compatibility work module developers would need to do. On top of that, the module ships a rich JavaScript event system built on `prestashop.emit()`: events like `opcCarriersUpdated`, `opcPaymentMethodSelected`, and `opcDeliveryAddressSelected` let modules react to checkout state changes without tightly coupling to the checkout's internals.
@@ -100,13 +104,13 @@ We started in March. The first weeks were spent on architecture, particularly th
 
 The frontend work was substantial. The OPC required building a full AJAX orchestration layer from scratch: guest initialization, address management with modal-based editing, carrier selection with live total updates, payment method loading and selection, and final form validation and submission. Each concern is handled by a dedicated JavaScript bundle, loaded in a specific order to ensure dependencies are always satisfied.
 
-We also wrote thorough documentation for both module and theme developers, because a checkout is one of the most integration-heavy parts of any PrestaShop store, and we wanted to make the ecosystem transition as smooth as possible.
+We also wrote thorough documentation for both [module developers](https://devdocs.prestashop-project.org/9/modules/checkout/module-developers/) and [theme developers](https://devdocs.prestashop-project.org/9/modules/checkout/theme-developers/), because a checkout is one of the most integration-heavy parts of any PrestaShop store, and we wanted to make the ecosystem transition as smooth as possible.
 
 ## Try it
 
 `ps_onepagecheckout` ships as a native module in PrestaShop 9.2. To enable it, go to **Design > Checkout** in the back office and select the One-page checkout layout. You can switch back to the classic four-page checkout at any time from the same screen.
 
-If you're a module developer or theme developer, we'd especially love your feedback during this beta period. The documentation for module developers and theme developers covers everything you need to know: hooks, JavaScript events, DOM contracts, template override paths, and compatibility checklists.
+If you're a module developer or theme developer, we'd especially love your feedback during this beta period. The documentation for [module developers](https://devdocs.prestashop-project.org/9/modules/checkout/module-developers/) and [theme developers](https://devdocs.prestashop-project.org/9/modules/checkout/theme-developers/) covers everything you need to know: hooks, JavaScript events, DOM contracts, template override paths, and compatibility checklists.
 
 We believe this is a genuine step forward for PrestaShop, a feature the community has been asking for, built natively into the platform, and open to everyone. We're excited to see what merchants and developers do with it, and we're listening closely to your feedback as we move from beta to stable.
 

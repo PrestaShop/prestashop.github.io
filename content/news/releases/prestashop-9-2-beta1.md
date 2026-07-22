@@ -61,6 +61,9 @@ In the article below, we also share the documentation for module & theme authors
 {{< cta url="/news/2026/introducing-one-page-checkout/" inline="true" >}}Read article{{< /cta >}}
 {{< /cta-group >}}
 
+{{% notice type="important" title="Payment and shipping module developers, this is for you" %}}
+If you maintain a payment or shipping (carrier) module, please review the checkout documentation to make sure your solution behaves correctly in the one-page flow: the [module developers guide](https://devdocs.prestashop-project.org/9/modules/checkout/module-developers/) and the [theme developers guide](https://devdocs.prestashop-project.org/9/modules/checkout/theme-developers/).
+{{% /notice %}}
 
 ---
 
@@ -540,6 +543,12 @@ Of course, there are many other improvements and bug fixes in this release.
     - [#40739](https://github.com/PrestaShop/PrestaShop/pull/40739): Nightly : Clean the workflow (by [@Progi1984](https://github.com/Progi1984))
     - [#40584](https://github.com/PrestaShop/PrestaShop/pull/40584): Functional tests : Add UI tests to check multicarrier on FO (Hummingbird & classic) (by [@nesrineabdmouleh](https://github.com/nesrineabdmouleh))
     - [#37161](https://github.com/PrestaShop/PrestaShop/pull/37161): Functional tests - Migrate link list pages to ui-testing-library and refacto CRUD linkList (by [@nesrineabdmouleh](https://github.com/nesrineabdmouleh))
+
+## Adapt your solutions to PrestaShop 9.2
+
+If you develop modules, themes, or custom integrations for PrestaShop, we recommend reviewing the notable changes introduced in this version. The documentation covers breaking changes, deprecated components, and updated best practices that may affect your solutions. Testing against this beta now is the best way to be ready for the stable release.
+
+{{< cta "https://devdocs.prestashop-project.org/9/modules/core-updates/9.2/" >}}Review notable changes in PrestaShop 9.2{{< /cta >}}
 
 ## How to test PrestaShop 9.2
 

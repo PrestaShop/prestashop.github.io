@@ -31,6 +31,8 @@ We are excited to announce the availability of the first beta version of PrestaS
 Remember, this beta version is pre-release software. It is possible that you will encounter some issues. Do not use it in your production shop!
 {{% /notice %}}
 
+{{< cta "#how-to-test-prestashop-92" >}}Download & testing instructions{{< /cta >}}
+
 {{< toc >}}
 
 ## What's inside PrestaShop 9.2 Beta?
@@ -541,7 +543,7 @@ Of course, there are many other improvements and bug fixes in this release.
 
 ## How to test PrestaShop 9.2
 
-You can download a fully featured PrestaShop 9.2 Classic Beta 1 package directly using the link below. This version includes the PrestaShop 9.2 core, additional modules from [PrestaShop SA](https://prestashop.com/essentials/) compatible with this version, and integration with the PrestaShop Marketplace.
+You can download a fully featured PrestaShop 9.2 Classic Beta 1 package from [here](https://assets.prestashop3.com/dst/edition/corporate/9.2.0-6.0-beta.1/prestashop_edition_classic_version_9.2.0-6.0-beta.1.zip). This version includes the PrestaShop 9.2 core, additional modules from [PrestaShop SA](https://prestashop.com/essentials/) compatible with this version, and integration with the PrestaShop Marketplace.
 
 {{< cta "https://assets.prestashop3.com/dst/edition/corporate/9.2.0-6.0-beta.1/prestashop_edition_classic_version_9.2.0-6.0-beta.1.zip" >}}Download PrestaShop 9.2 Beta 1{{< /cta >}}
 

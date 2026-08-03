@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Extra properties: custom data fields for every PrestaShop entity</title>
-    <link href="/style.css?1784710237" rel="stylesheet">
+    <link href="/style.css?1785744690" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -311,9 +311,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>They can appear in entity edit forms, inside admin grids, and positioned either after existing fields or within a dedicated section. Because they use native Symfony form types, they integrate with existing Back Office UI patterns, and labels are translated automatically.</p>
 <h3 id="front-office">Front Office</h3>
 <p>Extra properties are available directly on <code>ObjectModels</code> through the <code>extraProperties</code> accessor. For example:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">extraProperties</span><span class="p">[</span><span class="s1">&#39;my_module&#39;</span><span class="p">][</span><span class="s1">&#39;erp_reference&#39;</span><span class="p">];</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$product</span><span class="o">-&gt;</span><span class="na">extra_properties</span><span class="p">[</span><span class="s1">&#39;my_module&#39;</span><span class="p">][</span><span class="s1">&#39;erp_reference&#39;</span><span class="p">];</span>
 </span></span></code></pre></div><p>Or in Smarty:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nv">$product.extraProperties.my_module.erp_reference</span><span class="cp">}</span><span class="x">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-smarty" data-lang="smarty"><span class="line"><span class="cl"><span class="cp">{</span><span class="nv">$product.extra_properties.my_module.erp_reference</span><span class="cp">}</span><span class="x">
 </span></span></span></code></pre></div><p>They are lazy-loaded, so no query runs unless the data is actually requested. Properties can also be hidden from the storefront when needed.</p>
 <h3 id="admin-api">Admin API</h3>
 <p>Extra properties are serialized automatically in the <code>extraProperties</code> JSON node. They remain grouped by module namespace and follow the same permissions as the parent entity. For example: if a client can write products, it can also write product extra properties.</p>

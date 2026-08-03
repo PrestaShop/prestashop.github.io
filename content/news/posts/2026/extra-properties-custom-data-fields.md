@@ -70,13 +70,13 @@ They can appear in entity edit forms, inside admin grids, and positioned either 
 Extra properties are available directly on `ObjectModels` through the `extraProperties` accessor. For example:
 
 ```php
-$product->extraProperties['my_module']['erp_reference'];
+$product->extra_properties['my_module']['erp_reference'];
 ```
 
 Or in Smarty:
 
 ```smarty
-{$product.extraProperties.my_module.erp_reference}
+{$product.extra_properties.my_module.erp_reference}
 ```
 
 They are lazy-loaded, so no query runs unless the data is actually requested. Properties can also be hidden from the storefront when needed.

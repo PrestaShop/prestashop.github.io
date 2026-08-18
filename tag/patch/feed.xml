@@ -6,7 +6,25 @@
     <description>Recent content in Patch on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Thu, 04 Jun 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Tue, 18 Aug 2026 07:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/patch/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop 9.1.5 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-5-security-release/</link>
+          <pubDate>Tue, 18 Aug 2026 07:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-5-security-release/</guid>
+          <description>PrestaShop 9.1.5 is now available. This release combines two things: five security fixes reported through coordinated disclosure, and the largest batch of bug fixes the 9.1 branch has received since 9.1.2. It is also the last planned release of the 9.1.x line before PrestaShop 9.2. Updating as soon as possible is strongly recommended.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop 8.2.8 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-8-2-8-security-release/</link>
+          <pubDate>Tue, 18 Aug 2026 06:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-8-2-8-security-release/</guid>
+          <description>PrestaShop 8.2.8 is available. This is a security-only release for the 8.2 branch that fixes five vulnerabilities, three of them rated High. Updating as soon as possible is strongly recommended.</description>
+        </item>
+      
         <item>
           <title>PrestaShop 9.1.4 and 8.2.7 are available</title>
           <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-4-and-8-2-7-available/</link>
@@ -122,24 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2025/prestashop-8-2-2-maintenance-release/</guid>
           <description>PrestaShop 8.2.2 is here! This latest patch version brings a range of updates, addressing reported issues and introducing enhancements to improve the platform for merchants and developers alike.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop 8.2.1 is available</title>
-          <link>https://build.prestashop-project.org/news/2025/prestashop-8-2-1-maintenance-release/</link>
-          <pubDate>Fri, 21 Feb 2025 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2025/prestashop-8-2-1-maintenance-release/</guid>
-          <description>The first patch for PrestaShop 8.2 is available. This release contains many bug fixes and improvements, including a new way to handle module filtering in the front office.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop 8.1.7 Is Available</title>
-          <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-7-maintenance-release/</link>
-          <pubDate>Tue, 25 Jun 2024 09:00:00 +0200</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-7-maintenance-release/</guid>
-          <description>A new patch for PrestaShop 8.1 is now available! This release includes several significant improvements and numerous bug fixes. In this article, we’ll explore these updates in detail.</description>
         </item>
       
   </channel>

@@ -6,7 +6,25 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Tue, 18 Aug 2026 07:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop 9.1.5 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-5-security-release/</link>
+          <pubDate>Tue, 18 Aug 2026 07:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-5-security-release/</guid>
+          <description>PrestaShop 9.1.5 is now available. This release combines two things: five security fixes reported through coordinated disclosure, and the largest batch of bug fixes the 9.1 branch has received since 9.1.2. It is also the last planned release of the 9.1.x line before PrestaShop 9.2. Updating as soon as possible is strongly recommended.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop 8.2.8 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-8-2-8-security-release/</link>
+          <pubDate>Tue, 18 Aug 2026 06:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-8-2-8-security-release/</guid>
+          <description>PrestaShop 8.2.8 is available. This is a security-only release for the 8.2 branch that fixes five vulnerabilities, three of them rated High. Updating as soon as possible is strongly recommended.</description>
+        </item>
+      
         <item>
           <title>PrestaShop Core Monthly - July 2026</title>
           <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-07-01-2026-07-31/</link>
@@ -122,24 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2026/ps-summit-2026-call-for-papers-open/</guid>
           <description>This November, the PrestaShop and Sylius communities will meet in Lyon, France for the first-ever PS Summit powered by PrestaShop &amp; Sylius: a two-day conference designed to bring together the open source ecommerce community and the wider ecosystem.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop 9.1.3 is available</title>
-          <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-3-maintenance-release/</link>
-          <pubDate>Thu, 21 May 2026 00:00:00 +0200</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-3-maintenance-release/</guid>
-          <description>PrestaShop 9.1.3 is now available. This is a small security maintenance release for the 9.1 branch that brings in the latest patch versions of two key upstream dependencies, Symfony and Twig, following their coordinated security advisories published on 2026-05-20.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop 9.1.2 is available</title>
-          <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-2-maintenance-release/</link>
-          <pubDate>Tue, 19 May 2026 12:00:00 +0200</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-2-maintenance-release/</guid>
-          <description>PrestaShop 9.1.2 is now available. This is the first regular maintenance release for the 9.1 branch, focused entirely on bug fixes, stability improvements, and dependency updates. After the security-only 9.1.1 release at the end of April, this version consolidates several weeks of community-driven fixes into one update.</description>
         </item>
       
   </channel>

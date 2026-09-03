@@ -18,6 +18,11 @@
     {{ partial "icons/x.html" . }} X
   </a>
 {{ end }}
+{{ if index . "linkedin" }}
+  <a class="btn btn-default btn-sm" href="{{ index . " linkedin" }}">
+    <i class="icon-linkedin-alt"></i> LinkedIn
+  </a>
+{{ end }}
 {{ if index . "website" }}
   <a class="btn btn-default btn-sm" href="{{ index . "website" }}">
     <i class="icon-home"></i> Website

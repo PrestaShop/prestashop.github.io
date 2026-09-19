@@ -1,0 +1,6 @@
+# The UI test statistics dashboard carries its own noindex meta tag. Its raw JSON
+# datasets cannot, so they are kept out of crawls here.
+User-agent: *
+Disallow: /ga.tests.ui.pr/data/
+
+Sitemap: https://build.prestashop-project.org/sitemap.xml

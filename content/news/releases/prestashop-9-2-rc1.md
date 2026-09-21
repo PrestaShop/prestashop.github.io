@@ -215,8 +215,6 @@ This is a pre-release version. Do not install it on a production shop. Test it i
 
 {{< cta "https://github.com/PrestaShop/PrestaShop/archive/refs/tags/9.2.0-rc.1.zip" >}}Download PrestaShop 9.2 RC1{{< /cta >}}
 
-<small><em>Note: this link provides the source archive from GitHub. It will be updated after the release.</em></small>
-
 1. Download and install RC1 in a **test or staging environment** (never on a live shop).
 2. Enable the relevant **feature flags** to test experimental capabilities.
 3. Test your themes, modules, and customizations for compatibility.

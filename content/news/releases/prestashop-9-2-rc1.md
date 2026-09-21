@@ -2,7 +2,7 @@
 layout: post
 title:  "PrestaShop 9.2 RC1 is open for testing!"
 subtitle: "The first Release Candidate of PrestaShop 9.2 is here, with One Page Checkout, Ask AI, and Extra Properties. Help us validate it before the final release."
-date:   2026-09-14
+date:   2026-09-21
 authors: [ PrestaShop ]
 icon: icon-lab
 image: /assets/images/2026/09/1200x728_9.2_RC1.png

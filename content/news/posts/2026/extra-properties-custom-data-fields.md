@@ -134,8 +134,8 @@ Extra properties is the result of a close collaboration between the PrestaShop S
 
 A big thank you to the Kiwik team for their ideas, their code, and their commitment throughout the project. This feature is a wonderful example of what the community and PrestaShop can achieve when they build together, and every developer and merchant on the platform will benefit from it.
 
-{{% notice type="info" %}}
-Extra properties was built jointly by the PrestaShop SA teams and [Kiwik](https://www.kiwik.com/). Thank you to everyone involved for bringing this feature to life.
+{{% notice type="info" title="Read Kiwik's side of the story" %}}
+Extra properties was built jointly by the PrestaShop SA teams and [Kiwik](https://www.kiwik.com/). Kiwik has since published its own article (in French) about the feature. It focuses on the merchant needs behind it, like attaching video links to products, keeping internal notes on customers, or storing ERP data on orders: [Extra Properties : Kiwik fait évoluer PrestaShop avec les champs personnalisés natifs](https://www.kiwik.com/extra-properties-kiwik-fait-evoluer-prestashop-avec-les-champs-personnalises-natifs/).
 {{% /notice %}}
 
 In the next article, we'll go deeper and show how to register extra properties in a module, display them in the Back Office, and access them in PHP and the Admin API.

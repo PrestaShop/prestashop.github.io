@@ -26,6 +26,9 @@ disqusShortname: prestashopbuild
 
 params:
   email: build@prestashop.com
+  # PS Summit banner displayed above the site header (content in themes/build/layouts/partials/top-banner.html)
+  topBanner:
+    enabled: true
   # algolia search settings
   algolia:
     application_id: '17LZR6CZEL'

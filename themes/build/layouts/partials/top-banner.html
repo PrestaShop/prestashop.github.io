@@ -1,0 +1,35 @@
+{{- /*
+  PS Summit 2026 banner, toggled with `params.topBanner.enabled` in config.yaml.
+  It hides itself once the event is over: at build time, and in the browser
+  (inline script below) so it goes away even if the site is not rebuilt.
+  Change `data-banner-id` for a new campaign, so visitors who dismissed this one see it.
+*/ -}}
+{{- $expires := "2026-11-06T00:00:00+01:00" -}}
+{{- if and site.Params.topBanner.enabled (now.Before (time.AsTime $expires)) -}}
+<aside class="top-banner" id="top-banner" data-banner-id="ps-summit-2026" data-expires="{{ $expires }}" aria-label="PS Summit 2026">
+  <script>
+    (function () {
+      var el = document.getElementById('top-banner');
+      var dismissed = false;
+      try { dismissed = localStorage.getItem('top-banner-dismissed') === el.getAttribute('data-banner-id'); } catch (e) {}
+      if (dismissed || Date.now() >= new Date(el.getAttribute('data-expires')).getTime()) {
+        el.parentNode.removeChild(el);
+      }
+    })();
+  </script>
+  <div class="container">
+    <a class="top-banner-link" href="https://www.ps-summit.com/en" target="_blank" rel="noopener noreferrer">
+      <span class="top-banner-brand">
+        <img class="top-banner-logo" src="/assets/images/2026/09/ps-summit-2026-logo.png" alt="PS Summit 2026, powered by PrestaShop & Sylius" width="651" height="235">
+      </span>
+      <span class="top-banner-pitch">
+        <span class="top-banner-tagline">Two ecosystems,</span>
+        <span class="top-banner-tagline-serif"><em>One</em> big event.</span>
+        <span class="top-banner-details">November 5, 2026 · Lyon</span>
+      </span>
+      <span class="top-banner-cta">Save your seat <span aria-hidden="true">&gt;&gt;</span><span class="sr-only"> (external link)</span></span>
+    </a>
+    <button type="button" class="top-banner-close" aria-label="Dismiss banner">&times;</button>
+  </div>
+</aside>
+{{- end -}}

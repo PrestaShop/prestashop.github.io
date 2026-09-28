@@ -75,10 +75,27 @@ $(document).ready(() => {
     $nav.find(SELECTORS.mobileNavSubmenu).attr('aria-hidden', 'true');
   };
 
+  // Top banner dismissal
+  $(document).on('click', '.top-banner-close', function() {
+    const $banner = $(this).closest('.top-banner');
+    try {
+      localStorage.setItem('top-banner-dismissed', $banner.data('banner-id'));
+    } catch (e) {}
+    $banner.remove();
+  });
+
   // Mobile menu toggle
   $(document).on('click', SELECTORS.menuToggle, function() {
     const $nav = $(SELECTORS.navigation);
     const isOpen = $(this).attr('aria-expanded') === 'true';
+
+    if (!isOpen) {
+      // Open the panel right below the header, which may be pushed down by the top banner
+      const headerBottom = Math.max(0, $('.site-header')[0].getBoundingClientRect().bottom);
+      $nav.css({ top: headerBottom + 'px', height: `calc(100vh - ${headerBottom}px)` });
+    } else {
+      $nav.css({ top: '', height: '' });
+    }
 
     $nav.toggle(!isOpen);
     resetMobileSubmenu();

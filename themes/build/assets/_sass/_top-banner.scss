@@ -1,0 +1,171 @@
+/**
+ * Top announcement banner (see layouts/partials/top-banner.html)
+ *
+ * Fonts are ASCII-only subsets (generated with the Google Fonts `text=` parameter),
+ * plus "·", so other non-ASCII characters fall back to the next font in the stack.
+ */
+@font-face {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("#{$thm-fonts-path}/top-banner/inter-tight-700-ascii.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("#{$thm-fonts-path}/top-banner/instrument-serif-italic-ascii.woff2") format("woff2");
+}
+
+$top-banner-accent: #00bfa1;
+$top-banner-sans: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
+$top-banner-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+
+.top-banner {
+  position: relative;
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(ellipse 420px 140px at 0% 0%, rgba($top-banner-accent, 0.22), transparent 70%),
+    radial-gradient(ellipse 480px 160px at 100% 100%, rgba($top-banner-accent, 0.35), transparent 70%);
+  border-bottom: 1px solid $grey-color-light;
+  color: #000000;
+  font-family: $top-banner-sans;
+  font-weight: 700;
+
+  .container {
+    position: relative;
+  }
+
+  .top-banner-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 14px 40px 14px 0;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: inherit;
+      text-decoration: none;
+
+      .top-banner-cta {
+        background-color: $top-banner-accent;
+        color: #000000;
+      }
+    }
+  }
+
+  .top-banner-brand {
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .top-banner-logo {
+    display: block;
+    width: auto;
+    height: 58px;
+  }
+
+
+  .top-banner-pitch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  .top-banner-tagline {
+    font-size: 18px;
+  }
+
+  .top-banner-tagline-serif {
+    font-family: $top-banner-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+
+    em {
+      font-style: italic;
+      color: $top-banner-accent;
+    }
+  }
+
+  .top-banner-details {
+    margin-top: 6px;
+    font-size: 14px;
+  }
+
+  .top-banner-cta {
+    flex-shrink: 0;
+    padding: 10px 40px;
+    border-radius: 999px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 15px;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .top-banner-close {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    padding: 4px 8px;
+    background: transparent;
+    border: 0;
+    color: #000000;
+    font-size: 22px;
+    line-height: 1;
+    opacity: 0.6;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (max-width : 989px) {
+  .top-banner {
+    .top-banner-link {
+      gap: 12px;
+      padding: 10px 36px 10px 0;
+    }
+
+    .top-banner-logo {
+      height: 44px;
+    }
+
+
+    .top-banner-tagline,
+    .top-banner-tagline-serif {
+      display: none;
+    }
+
+    .top-banner-details {
+      margin-top: 0;
+      font-size: 13px;
+    }
+
+    .top-banner-cta {
+      padding: 8px 18px;
+      font-size: 13px;
+    }
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .top-banner {
+    .top-banner-pitch {
+      display: none;
+    }
+  }
+}

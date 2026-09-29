@@ -18,9 +18,7 @@ tags:
 - "9.2.x"
 ---
 
-PrestaShop 9.2 is here, and it is a big one! 🎉 This release brings some of the most requested features of recent years straight into the platform: a native One Page Checkout module to make buying faster and smoother, an AI assistant right inside the back office with Ask AI, and a brand new Extra Properties system that lets developers extend any core entity natively.
-
-That's not all. PrestaShop 9.2 also ships Klaviyo marketing automation in the Classic edition, another batch of pages migrated to Symfony, and a long list of improvements and bug fixes. Months of work by the PrestaShop teams and our amazing community come together in this version, and we can't wait for you to try it!
+PrestaShop 9.2 is here, and it is a big one! 🎉 This release brings some of the most requested features of recent years straight into the platform: a native One Page Checkout module to make buying faster and smoother, an AI assistant right inside the back office with Ask AI, and a brand new Extra Properties system that lets developers extend any core entity natively, and merchants create their own custom fields directly from the back office. That's not all; this release also ships another batch of pages migrated to Symfony, and a long list of improvements and bug fixes. Months of work by the PrestaShop teams and our amazing community come together in this version, and we can't wait for you to try it!
 
 ![PrestaShop 9.2 is available!](/assets/images/2026/09/1534x434_9.2.png)
 
@@ -58,6 +56,8 @@ If you maintain a payment or shipping (carrier) module, check that it behaves co
 Extra Properties is a new native way to attach extra fields to core entities such as Product, Combination, Customer, or Order. Each field has its own type and rules, understands languages and shops out of the box, and shows up automatically in Back Office forms and grids, on the Front Office, and in the Admin API.
 
 For module developers, this means less boilerplate and a single, reusable extension point instead of rebuilding the same persistence logic in every module.
+
+Merchants can also create and manage their own extra fields directly from the back office, under **Advanced Parameters > Extra Properties**, and choose where each field appears: in forms, in grids, or in the Admin API.
 
 ![Editing an extra property in the back office](/assets/images/2026/07/ExtraProperties.png)
 
@@ -117,28 +117,52 @@ These migrated pages are available behind a feature flag, so you can switch to t
 Feature flags let you enable experimental features individually. Find them under **Advanced Parameters > New & Experimental Features** in the back office.
 {{% /notice %}}
 
+## Hummingbird 2.1.2
+
+[Hummingbird](https://github.com/PrestaShop/hummingbird/), the default front office theme since PrestaShop 9.1, keeps evolving alongside the core. PrestaShop 9.2 ships with **Hummingbird 2.1.2**, which builds on the 2.1.1 maintenance release with checkout and order fixes, accessibility improvements, and small product and store page enhancements. Version 2.1.2 also removes development files from the theme package for security.
+
+**Checkout and orders**
+
+- The checkout address step no longer nests forms, so the Continue button works while editing an address with a separate billing address.
+- The guest order tracking form now submits with `POST`, and the order lookup is kept in the guest-to-customer transformation form.
+- A new `displayOrderDetailProductLine` hook call on every order product line lets modules display information next to a single product of an order.
+
+**Accessibility**
+
+- Store page accordion toggles are now real `<button>` elements.
+- Reassurance icons are marked as decorative.
+
+**Customization and features**
+
+- A new `manufacturer_product_page` image type uses the thumbnail fitment feature introduced in PrestaShop 9.2, so brand logos on the product page no longer get extra whitespace.
+- Phone number, fax number, and email address are now clickable links in store details.
+- The account menu sidebar is now sticky.
+- Breadcrumb styles are updated so the breadcrumb displays correctly on error pages.
+
+**Notable fixes**
+
+- B2B tax-excluded prices are now formatted with the currency.
+- The country tax label setting is respected on the product page, and the tax info block only renders when there is something to show.
+- The product list rating display (productcomments) no longer throws an error.
+
+**Developer experience**
+
+- A new QA testing checklist (beta) covers a full theme test pass: pages, back office settings, native modules, overrides, accessibility, and responsive, plus a seed script to prepare a test shop. It also serves as the reference for an AI agent skill that runs QA on the theme. Both are still evolving, so feedback is welcome.
+
+{{% notice type="info" %}}
+Building the theme from source now requires **Node.js 24** and **npm 11** (see `.nvmrc`). This does not affect shops using the packaged theme.
+{{% /notice %}}
+
+{{< cta-group >}}
+{{< cta url="https://github.com/PrestaShop/hummingbird/releases/tag/v2.1.2" inline="true" >}}Hummingbird 2.1.2 release notes{{< /cta >}}
+{{< cta url="https://github.com/PrestaShop/hummingbird/releases/tag/v2.1.1" inline="true" >}}Hummingbird 2.1.1 release notes{{< /cta >}}
+{{< /cta-group >}}
+
 ## Adapt your solutions to PrestaShop 9.2
 
 If you develop modules, themes, or custom integrations for PrestaShop, we recommend reviewing the notable changes introduced in this version. The documentation covers breaking changes, deprecated components, and updated best practices that may affect your solutions.
 
 {{< cta "https://devdocs.prestashop-project.org/9/modules/core-updates/9.2/" >}}Review notable changes in PrestaShop 9.2{{< /cta >}}
-
-## Hummingbird 2.1.1
-
-[Hummingbird](https://github.com/PrestaShop/hummingbird/), the default front office theme since PrestaShop 9.1, keeps evolving alongside the core. Its latest release, **Hummingbird 2.1.1**, is compatible with PrestaShop 9.2 and brings checkout and order fixes, accessibility improvements, and small product and store page enhancements:
-
-- The checkout address step no longer nests forms, so the Continue button works when editing an address with a separate billing address.
-- A new `displayOrderDetailProductLine` hook call on every order product line lets modules display information next to a single product of an order.
-- A new `manufacturer_product_page` image type uses the thumbnail fitment feature introduced in PrestaShop 9.2.
-- Store page accordion toggles are now real buttons, and reassurance icons are marked as decorative.
-
-{{% notice type="info" %}}
-Building the theme from source now requires **Node.js 24** and **npm 11**. This does not affect shops using the packaged theme.
-{{% /notice %}}
-
-{{< cta-group >}}
-{{< cta url="https://github.com/PrestaShop/hummingbird/releases/tag/v2.1.1" inline="true" >}}Hummingbird 2.1.1 release notes{{< /cta >}}
-{{< /cta-group >}}
 
 ## Changelog
 
@@ -695,7 +719,7 @@ The version of the [Update Assistant module](https://github.com/PrestaShop/autou
 
 PrestaShop 9.2 is the result of contributions from both the PrestaShop team and the open source community. A warm welcome to the new contributors who joined during this release cycle: [Sayed Nabhan](https://github.com/nabhan06) and [samilmarekrygula](https://github.com/samilmarekrygula).
 
-{{< contributors-grid "aeyoll" "aleksiuno" "aomaxime" "AureRita" "axel-paillaud" "boherm" "boo-code" "cnavarro-prestashop" "Codencode" "david-prochazka" "djbuch" "ga-devfront" "gross-nvs" "guillaume60240" "hadjedjvincent" "Hlavtox" "Jeremie-Kiwik" "jf-viguier" "jolelievre" "kevin-carangeot" "kpodemski" "LaBisquerie" "M0rgan01" "Maofree" "mattgoud" "matthieu-rolland" "mgielecinski" "nabhan06" "Nakahiru" "nesrineabdmouleh" "nicohery" "nicosomb" "paulnoelcholot" "paulschwahn" "pjouglet" "Poulinhoo" "PrestaEdit" "prestamodule" "Prestaworks" "Progi1984" "PululuK" "Quetzacoalt91" "samilmarekrygula" "soledis-contributeur" "tblivet" "tfayolle" "ThbPS" "the-ge" "tleon" "Touxten" "tswfi" "yannicka" / >}}
+{{< contributors-grid "aeyoll" "aleksiuno" "aomaxime" "AureRita" "axel-paillaud" "boherm" "boo-code" "cnavarro-prestashop" "Codencode" "david-prochazka" "djbuch" "ga-devfront" "gross-nvs" "guillaume60240" "hadjedjvincent" "Hlavtox" "Jeremie-Kiwik" "jf-viguier" "jolelievre" "Kaikina" "kevin-carangeot" "kpodemski" "LaBisquerie" "M0rgan01" "Maofree" "mattgoud" "matthieu-rolland" "mgielecinski" "nabhan06" "Nakahiru" "nesrineabdmouleh" "nicohery" "nicosomb" "paulnoelcholot" "paulschwahn" "pjouglet" "Poulinhoo" "PrestaEdit" "prestamodule" "Prestaworks" "Progi1984" "PululuK" "Quetzacoalt91" "samilmarekrygula" "soledis-contributeur" "tblivet" "tfayolle" "ThbPS" "the-ge" "tleon" "Touxten" "tswfi" "yannicka" / >}}
 
 ## What's next?
 

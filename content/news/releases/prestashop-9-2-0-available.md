@@ -63,6 +63,7 @@ Merchants can also create and manage their own extra fields directly from the ba
 
 {{< cta-group >}}
 {{< cta url="/news/2026/extra-properties-custom-data-fields/" inline="true" >}}Read the article{{< /cta >}}
+{{< cta url="https://devdocs.prestashop-project.org/9/development/components/extra-properties/" inline="true" >}}Read the documentation{{< /cta >}}
 {{< /cta-group >}}
 
 {{% notice type="info" %}}
@@ -181,11 +182,16 @@ If you develop modules, themes, or custom integrations for PrestaShop, we recomm
 <details open class="changelog-toggle">
 <summary><strong>v9.2.0</strong></summary>
 
-<!-- CHANGELOG PLACEHOLDER
-Paste here the changes merged since RC1, with links to individual PRs.
-Format: - [#XXXXX](https://github.com/PrestaShop/PrestaShop/pull/XXXXX): Description (by [@user](https://github.com/user))
-Full list: https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.0
--->
+- Core:
+  - New feature:
+    - [#42972](https://github.com/PrestaShop/PrestaShop/pull/42972): Update composer for hummingbird v2.1.2 (by [@tblivet](https://github.com/tblivet))
+  - Improvement:
+    - [#43018](https://github.com/PrestaShop/PrestaShop/pull/43018): Update missing hooks (by [@jolelievre](https://github.com/jolelievre))
+    - [#42856](https://github.com/PrestaShop/PrestaShop/pull/42856): Update Symfony components after 6.4.46 release (by [@nicosomb](https://github.com/nicosomb))
+    - [#42851](https://github.com/PrestaShop/PrestaShop/pull/42851): Harden extra property definitions on the write and read paths (by [@jolelievre](https://github.com/jolelievre))
+- Installer:
+  - Improvement:
+    - [#43020](https://github.com/PrestaShop/PrestaShop/pull/43020): Update default catalog build-920 (by [@ps-jarvis](https://github.com/ps-jarvis))
 
 </details>
 
@@ -731,7 +737,7 @@ The version of the [Update Assistant module](https://github.com/PrestaShop/autou
 
 PrestaShop 9.2 is the result of contributions from both the PrestaShop team and the open source community. A warm welcome to the new contributors who joined during this release cycle: [Sayed Nabhan](https://github.com/nabhan06) and [samilmarekrygula](https://github.com/samilmarekrygula).
 
-{{< contributors-grid "aeyoll" "aleksiuno" "aomaxime" "AureRita" "axel-paillaud" "boherm" "boo-code" "cnavarro-prestashop" "Codencode" "david-prochazka" "djbuch" "ga-devfront" "gross-nvs" "guillaume60240" "hadjedjvincent" "Hlavtox" "Jeremie-Kiwik" "jf-viguier" "jolelievre" "Kaikina" "kevin-carangeot" "kpodemski" "LaBisquerie" "M0rgan01" "Maofree" "mattgoud" "matthieu-rolland" "mgielecinski" "nabhan06" "Nakahiru" "nesrineabdmouleh" "nicohery" "nicosomb" "paulnoelcholot" "paulschwahn" "pjouglet" "Poulinhoo" "PrestaEdit" "prestamodule" "Prestaworks" "Progi1984" "PululuK" "Quetzacoalt91" "samilmarekrygula" "soledis-contributeur" "tblivet" "tfayolle" "ThbPS" "the-ge" "tleon" "Touxten" "tswfi" "yannicka" / >}}
+{{< contributors-grid "aeyoll" "aleksiuno" "aomaxime" "AureRita" "axel-paillaud" "boherm" "boo-code" "cnavarro-prestashop" "Codencode" "david-prochazka" "djbuch" "ga-devfront" "gross-nvs" "guillaume60240" "hadjedjvincent" "Hlavtox" "Jeremie-Kiwik" "jf-viguier" "jolelievre" "kevin-carangeot" "kpodemski" "LaBisquerie" "M0rgan01" "Maofree" "mattgoud" "matthieu-rolland" "mgielecinski" "nabhan06" "Nakahiru" "nesrineabdmouleh" "nicohery" "nicosomb" "paulnoelcholot" "paulschwahn" "pjouglet" "Poulinhoo" "PrestaEdit" "prestamodule" "Prestaworks" "Progi1984" "PululuK" "Quetzacoalt91" "samilmarekrygula" "soledis-contributeur" "tblivet" "tfayolle" "ThbPS" "the-ge" "tleon" "Touxten" "tswfi" "yannicka" / >}}
 
 ## What's next?
 

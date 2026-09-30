@@ -729,8 +729,16 @@ Please check all system requirements in the [documentation](https://devdocs.pres
 
 ## Update to PrestaShop 9.2
 
-{{% notice type="info" title="Upgrade instructions coming soon" %}}
-The version of the [Update Assistant module](https://github.com/PrestaShop/autoupgrade) supporting PrestaShop 9.2 is still in development. We will update this article with the upgrade instructions as soon as it is released.
+If you are running PrestaShop 9.0.x or 9.1.x, you can update to 9.2 using the [Update Assistant module](https://github.com/PrestaShop/autoupgrade). [Version 7.6.6](https://github.com/PrestaShop/autoupgrade/releases/tag/v7.6.6) is now available with full support for PrestaShop 9.2. It also makes the update process more resilient: it can now move forward even when the cache cannot be entirely removed, and it gives priority to the modules bundled in the release over the ones downloaded from the Marketplace when both provide the same version.
+
+As with any update, we strongly recommend:
+
+1. **Back up your shop** (files and database) before starting.
+2. **Test the update in a staging environment** before applying it to your production shop.
+3. **Review your modules and themes** for compatibility with 9.2.
+
+{{% notice type="important" title="Important" %}}
+If you were testing a pre-release version (Beta or RC1), you cannot upgrade from it to the final release using the Update Assistant. Please use a **fresh installation** instead.
 {{% /notice %}}
 
 ## Acknowledgments

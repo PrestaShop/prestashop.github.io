@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>PrestaShop 9.2 is available</title>
-    <link href="/style.css?1790764216" rel="stylesheet">
+    <link href="/style.css?1790770934" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -1467,11 +1467,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ul>
 <p>Please check all system requirements in the <a href="https://devdocs.prestashop-project.org/9/basics/installation/system-requirements/">documentation</a>.</p>
 <h2 id="update-to-prestashop-92">Update to PrestaShop 9.2</h2>
+<p>If you are running PrestaShop 9.0.x or 9.1.x, you can update to 9.2 using the <a href="https://github.com/PrestaShop/autoupgrade">Update Assistant module</a>. <a href="https://github.com/PrestaShop/autoupgrade/releases/tag/v7.6.6">Version 7.6.6</a> is now available with full support for PrestaShop 9.2. It also makes the update process more resilient: it can now move forward even when the cache cannot be entirely removed, and it gives priority to the modules bundled in the release over the ones downloaded from the Marketplace when both provide the same version.</p>
+<p>As with any update, we strongly recommend:</p>
+<ol>
+<li><strong>Back up your shop</strong> (files and database) before starting.</li>
+<li><strong>Test the update in a staging environment</strong> before applying it to your production shop.</li>
+<li><strong>Review your modules and themes</strong> for compatibility with 9.2.</li>
+</ol>
 
 
 
-<div class="alert alert-info"><h4>Upgrade instructions coming soon
-    </h4>The version of the <a href="https://github.com/PrestaShop/autoupgrade">Update Assistant module</a> supporting PrestaShop 9.2 is still in development. We will update this article with the upgrade instructions as soon as it is released.
+<div class="alert alert-important"><h4>Important
+    </h4>If you were testing a pre-release version (Beta or RC1), you cannot upgrade from it to the final release using the Update Assistant. Please use a <strong>fresh installation</strong> instead.
 </div>
 
 <h2 id="acknowledgments">Acknowledgments</h2>

@@ -6,7 +6,16 @@
     <description>Recent content in 9.x on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/9.x/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/9.x/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop 9.2 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-9-2-0-available/</link>
+          <pubDate>Wed, 30 Sep 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-9-2-0-available/</guid>
+          <description>PrestaShop 9.2 is here, and it is a big one! 🎉 This release brings some of the most requested features of recent years straight into the platform: a native One Page Checkout module to make buying faster and smoother, an AI assistant right inside the back office with Ask AI, and a brand new Extra Properties system that lets developers extend any core entity natively, and merchants create their own custom fields directly from the back office. That’s not all; this release also ships another batch of pages migrated to Symfony, and a long list of improvements and bug fixes. Months of work by the PrestaShop teams and our amazing community come together in this version, and we can’t wait for you to try it!</description>
+        </item>
+      
         <item>
           <title>PrestaShop 9.2 RC1 is open for testing!</title>
           <link>https://build.prestashop-project.org/news/2026/prestashop-9-2-rc1/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-rc1/</guid>
           <description>The first Release Candidate of PrestaShop 9.0 is now available for testing. This is a significant milestone in the development cycle, and we encourage all users to test it thoroughly.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop 9.0 beta is now available!</title>
-          <link>https://build.prestashop-project.org/news/2025/prestashop-9-0-beta-release/</link>
-          <pubDate>Tue, 11 Feb 2025 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2025/prestashop-9-0-beta-release/</guid>
-          <description>The first beta version of PrestaShop 9.0 is now available for testing. This version includes many new features and improvements, a new Hummingbird theme, a new Admin API, PHP 8.4 and Symfony 6.4 support, many bug fixes, and a significant codebase cleanup. Read on to learn more about the new features and improvements.</description>
         </item>
       
   </channel>

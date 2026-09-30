@@ -117,6 +117,18 @@ These migrated pages are available behind a feature flag, so you can switch to t
 Feature flags let you enable experimental features individually. Find them under **Advanced Parameters > New & Experimental Features** in the back office.
 {{% /notice %}}
 
+## What’s more in the core?
+
+### Thumbnail fitment for image types
+
+Image types now come with a new **image fitment** setting that defines how source images are resized when thumbnails are generated. You can pick one of three modes for each image type:
+
+- **Fit**: fit the image into the thumbnail and fill the rest with empty space (the default, same as before).
+- **Crop**: fill the thumbnail entirely and crop the overflowing parts, for clean miniatures.
+- **Bound**: keep the original image ratio within the configured maximum bounds, for large gallery images or brand logos without extra whitespace.
+
+Hummingbird 2.1.2 already takes advantage of it with its new `manufacturer_product_page` image type. Thank you to [@Hlavtox](https://github.com/Hlavtox) for this contribution, sponsored by TRENDO s.r.o. ([#41977](https://github.com/PrestaShop/PrestaShop/pull/41977)).
+
 ## Hummingbird 2.1.2
 
 [Hummingbird](https://github.com/PrestaShop/hummingbird/), the default front office theme since PrestaShop 9.1, keeps evolving alongside the core. PrestaShop 9.2 ships with **Hummingbird 2.1.2**, which builds on the 2.1.1 maintenance release with checkout and order fixes, accessibility improvements, and small product and store page enhancements. Version 2.1.2 also removes development files from the theme package for security.
@@ -701,7 +713,7 @@ Full list: https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.0
 
 Download the Classic version, which includes the PrestaShop core along with additional modules from [PrestaShop SA](https://prestashop.com/essentials/) compatible with this version, and integration with the PrestaShop Marketplace.
 
-{{< cta "REPLACE" >}}Download PrestaShop 9.2.0 now!{{< /cta >}}
+{{< cta "https://prestashop.com/versions/" >}}Download PrestaShop 9.2.0 now!{{< /cta >}}
 
 ### Requirements for PrestaShop 9.2
 

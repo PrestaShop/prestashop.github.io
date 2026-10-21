@@ -82,7 +82,9 @@ PHP 8.1 and older versions no longer receive official updates from the PHP proje
 
 The PHP project has published minimal backports of the fix for [PHP 7.4](https://github.com/php/php-src/tree/PHP-7.4-CVE-2026-109618-109619), [PHP 8.0](https://github.com/php/php-src/tree/PHP-8.0-CVE-2026-109618-109619) and [PHP 8.1](https://github.com/php/php-src/tree/PHP-8.1-CVE-2026-109618-109619), and many Linux distributions and LTS vendors ship patched packages for the PHP versions they still support. Ask your hosting provider whether your PHP version has been patched.
 
-In the longer term, this event is a good reminder that running an end-of-life PHP version leaves you dependent on others to backport critical fixes. If your shop is still on PrestaShop 1.7 or 8.x, now is a good time to plan an upgrade to **PrestaShop 9**, which supports PHP 8.1 up to PHP 8.5. Also note that **PHP 8.2 reaches end of life on December 31, 2026**, so if you are on PHP 8.2 today, plan your move to a newer PHP version as well. A major upgrade involves checking your theme and modules for compatibility, so this is a good project to plan with a [PrestaShop Expert](https://experts.prestashop.com/en) if you do not have a technical team.
+Getting a patched PHP build for the version you run today is the immediate priority. Upgrading PrestaShop is a separate, longer-term topic: it is **not** an emergency fix for these vulnerabilities, and you should not rush a major upgrade to respond to them.
+
+That said, this event is a good reminder that running an end-of-life PHP version leaves you dependent on others to backport critical fixes. If your shop is still on PrestaShop 1.7 or 8.x, consider planning an upgrade to **PrestaShop 9**, which supports PHP 8.1 up to PHP 8.5. Also note that **PHP 8.2 reaches end of life on December 31, 2026**, so if you are on PHP 8.2 today, plan your move to a newer PHP version as well. A major upgrade involves checking your theme and modules for compatibility, so schedule it according to your compatibility checks and business constraints, ideally with a [PrestaShop Expert](https://experts.prestashop.com/en) if you do not have a technical team.
 
 ## If PHP cannot be updated right away
 
@@ -90,9 +92,9 @@ The PHP Security Team is very clear: **there are no complete mitigations, updati
 
 **For CVE-2026-109618** (out-of-memory handling):
 
-- Limit request sizes. Set `post_max_size` to a reasonable value (the advisory suggests `8M` if you do not need uploads, `32M` if you do) and keep `upload_max_filesize` below it. In PrestaShop, uploads are used in the Back Office for product images, CSV imports and module installation, so `32M` is usually the relevant value.
+- Limit request sizes. Lower `post_max_size` (the advisory suggests `8M` if you do not need uploads, `32M` if you do) and keep `upload_max_filesize` below it. In PrestaShop, choose values that match your shop's real needs: product images, catalog imports, module and theme installation, and any third-party module that accepts uploads. Limits set too low can break these features.
 - Enforce request size limits at the web server or reverse proxy level as well.
-- The advisory also describes setting `memory_limit=-1` through `php_admin_value` in the PHP-FPM pool or Apache configuration, combined with a container or cgroup memory limit. Do not use `RLIMIT_AS` or `RLIMIT_DATA` for this, as they can trigger the vulnerable behavior.
+- **Advanced, for experienced server administrators only:** the advisory also describes setting `memory_limit=-1` through `php_admin_value` in the PHP-FPM pool or Apache configuration. This removes PHP's own memory limit, so it must **never** be applied without a properly configured and enforced external memory limit (container or cgroup). Without one, a single request could consume all available memory and take the server down. Do not use `RLIMIT_AS` or `RLIMIT_DATA` for this, as they can trigger the vulnerable behavior.
 
 **For CVE-2026-109619** (stale state between requests):
 
@@ -104,6 +106,8 @@ Hiding errors (with `error_reporting`, `display_errors` or the `@` operator) doe
 ### Web Application Firewall (WAF)
 
 A WAF can filter malicious requests before they reach PHP, which is particularly useful here since the attack happens before application code runs. Cloudflare, for example, [has deployed dedicated WAF rules for php2shell](https://blog.cloudflare.com/php-vulnerabilities-waf-protection/), active by default on free and paid plans since October 21, 3:02 UTC. If you are on a paid Cloudflare plan, check that the managed ruleset is running in **block** mode.
+
+Keep in mind that a WAF like Cloudflare only protects traffic that goes through its proxy. If your server can also be reached directly (by its IP address or another hostname), an attacker can bypass the WAF entirely. Make sure your origin server only accepts web traffic coming from your WAF provider.
 
 A WAF is a very welcome extra layer during the patching window, but like any signature-based protection it can be bypassed by reshaped payloads (Cloudflare itself reports attackers mutating their payloads). It does not replace the PHP update.
 
@@ -117,13 +121,13 @@ We will update this article if we learn anything that requires specific action f
 
 Events like this one are a reminder that security is not something you set up once and forget. A shop depends on many layers (the server, PHP, PrestaShop, the theme, every installed module) and a weakness in any of them can put the whole shop at risk, even when the layer at fault is not PrestaShop itself.
 
-This is even more true in the AI era. AI tools help researchers find vulnerabilities faster (OpenAI is among the teams that reported these two), which is good news for the ecosystem. But the same tools also help attackers analyze security fixes and turn them into working attacks, sometimes within hours of a disclosure. On disclosure day, Cloudflare was already seeing attackers rework their payloads to get past the new protections. The window between "a fix is published" and "the vulnerability is actively exploited" keeps getting shorter.
+AI makes this even more pressing: it helps find vulnerabilities faster, but it can also help attackers exploit them faster once they are disclosed. The time you have to apply a fix keeps getting shorter.
 
 That is why regular updates matter more than ever. Make keeping PHP, PrestaShop and your modules up to date a routine rather than a reaction, and choose hosting providers and partners who apply security updates quickly. If you would rather not handle this alone, a [PrestaShop Expert](https://experts.prestashop.com/en) can help you put a regular maintenance plan in place.
 
 ## In short
 
-The vulnerabilities are in PHP, not in PrestaShop, and the fix is a PHP update. Check your PHP version, contact your hosting provider (or update and restart PHP yourself if you manage your server), and keep a WAF in front of your shop if you can. If you are still running an end-of-life PHP or PrestaShop version, use this opportunity to plan your upgrade.
+The vulnerabilities are in PHP, not in PrestaShop, and the fix is a PHP update. Check your PHP version, contact your hosting provider (or update and restart PHP yourself if you manage your server), and keep a WAF in front of your shop if you can. Separately, if you are still running an end-of-life PHP or PrestaShop version, use this opportunity to plan your upgrade at your own pace.
 
 To follow security news about the PrestaShop ecosystem, keep an eye on the [PrestaShop security advisories](https://github.com/PrestaShop/PrestaShop/security/advisories) and the [Friends of Presta security site](https://security.friendsofpresta.org/).
 

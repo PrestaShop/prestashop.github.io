@@ -6,7 +6,16 @@
     <description>Recent content in Security on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Tue, 18 Aug 2026 07:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/security/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/security/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Critical PHP security updates: what PrestaShop users need to know</title>
+          <link>https://build.prestashop-project.org/news/2026/php-security-updates-october-2026/</link>
+          <pubDate>Wed, 21 Oct 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/php-security-updates-october-2026/</guid>
+          <description>Today, October 21, the PHP Security Team published security releases fixing two critical vulnerabilities in PHP itself, both rated CVSS 9.2. PHP is the language PrestaShop is built on, so this concerns virtually every PrestaShop shop, as well as most other PHP applications on the web.</description>
+        </item>
+      
         <item>
           <title>PrestaShop 9.1.5 is available</title>
           <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-5-security-release/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-4-maintenance-release/</guid>
           <description>It’s been decided to release a security patch for version 8.1 of PrestaShop.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop 8.1.3 Is Available</title>
-          <link>https://build.prestashop-project.org/news/2024/prestashop-8-1-3-maintenance-release/</link>
-          <pubDate>Tue, 02 Jan 2024 09:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2024/prestashop-8-1-3-maintenance-release/</guid>
-          <description>We are entering the new year with the release of PrestaShop 8.1.3. The latest update for PrestaShop 8.1 is now available. This version brings two security updates, addresses close to 30 known issues, and introduces various enhancements.</description>
         </item>
       
   </channel>

@@ -6,7 +6,16 @@
     <description>Recent content in Kpodemski on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/kpodemski/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/kpodemski/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Critical PHP security updates: what PrestaShop users need to know</title>
+          <link>https://build.prestashop-project.org/news/2026/php-security-updates-october-2026/</link>
+          <pubDate>Wed, 21 Oct 2026 00:00:00 +0200</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/php-security-updates-october-2026/</guid>
+          <description>Today, October 21, the PHP Security Team published security releases fixing two critical vulnerabilities in PHP itself, both rated CVSS 9.2. PHP is the language PrestaShop is built on, so this concerns virtually every PrestaShop shop, as well as most other PHP applications on the web.</description>
+        </item>
+      
         <item>
           <title>PrestaShop Core Monthly - July 2026</title>
           <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-07-01-2026-07-31/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2025/prestashop-year-in-review-2025/</guid>
           <description>As 2025 comes to a close, it’s time to reflect on an incredible year for the PrestaShop project. From the highly anticipated release of PrestaShop 9 to the vibrant gatherings at FOP Days and the Developer Conference, this year has been defined by innovation, collaboration, and the unwavering dedication of our community.</description>
-        </item>
-      
-        <item>
-          <title>Call for contributions: Admin API - great start!</title>
-          <link>https://build.prestashop-project.org/news/2025/call-for-contributions-admin-api-progress/</link>
-          <pubDate>Wed, 12 Nov 2025 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2025/call-for-contributions-admin-api-progress/</guid>
-          <description>Two months ago, we launched our second Call for Contributions initiative, this time focusing on the Admin API. We’re excited to share the progress that’s been made!</description>
         </item>
       
   </channel>

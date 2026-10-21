@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Critical PHP security updates: what PrestaShop users need to know</title>
+    <link href="/style.css?1792599114" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Critical PHP security updates: what PrestaShop users need to know" />
+<meta property="og:description" content="Today, October 21, the PHP Security Team published security releases fixing two critical vulnerabilities in PHP itself, both rated CVSS 9.2. PHP is the language PrestaShop is built on, so this concerns virtually every PrestaShop shop, as well as most other PHP applications on the web." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2026/php-security-updates-october-2026/" />
+    <meta property="og:image" content="https://build.prestashop-project.org//assets/images/theme/banner-ps-project.png"/>
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2026-10-21T00:00:00+02:00" />
+    <meta property="article:modified_time" content="2026-10-21T00:00:00+02:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/theme/banner-ps-project.png">
+<meta name="twitter:title" content="Critical PHP security updates: what PrestaShop users need to know"/>
+<meta name="twitter:description" content="Two critical vulnerabilities in the PHP runtime were fixed on October 21. Here is what happened, how it relates to PrestaShop, and what to do now."/>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF9S835S');</script>
+
+    
+</head>
+
+
+  <body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF9S835S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  
+  <aside class="top-banner" id="top-banner" data-banner-id="ps-summit-2026" data-expires="2026-11-06T00:00:00&#43;01:00" aria-label="PS Summit 2026">
+  <script>
+    (function () {
+      var el = document.getElementById('top-banner');
+      var dismissed = false;
+      try { dismissed = localStorage.getItem('top-banner-dismissed') === el.getAttribute('data-banner-id'); } catch (e) {}
+      if (dismissed || Date.now() >= new Date(el.getAttribute('data-expires')).getTime()) {
+        el.parentNode.removeChild(el);
+      }
+    })();
+  </script>
+  <div class="container">
+    <a class="top-banner-link" href="https://www.ps-summit.com/en" target="_blank" rel="noopener noreferrer">
+      <span class="top-banner-brand">
+        <img class="top-banner-logo" src="/assets/images/2026/09/ps-summit-2026-logo.png" alt="PS Summit 2026, powered by PrestaShop & Sylius" width="651" height="235">
+      </span>
+      <span class="top-banner-pitch">
+        <span class="top-banner-tagline">Two ecosystems,</span>
+        <span class="top-banner-tagline-serif"><em>One</em> big event.</span>
+        <span class="top-banner-details">November 5, 2026 · Lyon</span>
+      </span>
+      <span class="top-banner-cta">Save your seat <span aria-hidden="true">&gt;&gt;</span><span class="sr-only"> (external link)</span></span>
+    </a>
+    <button type="button" class="top-banner-close" aria-label="Dismiss banner">&times;</button>
+  </div>
+</aside>
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org/">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tools">Useful Tools</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/contact/">
+            Contact us
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+    </li>
+  </ul>
+</nav>
+          </div>
+
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="page-title">Critical PHP security updates: what PrestaShop users need to know</h1>
+              
+                <h3 class="post-subtitle">Two critical vulnerabilities in the PHP runtime were fixed on October 21. Here is what happened, how it relates to PrestaShop, and what to do now.</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/kpodemski/">
+        <img class="img-circle" src="https://avatars3.githubusercontent.com/u/2137763?v=3&amp;s=400" alt="Krystian Podemski's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/kpodemski/">Krystian Podemski</a>
+      </div>
+        
+          <div class="author-display-role">VP of Technology &amp; Community @ PrestaShop</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Oct 21, 2026
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://x.com/intent/post?text=Critical&#43;PHP&#43;security&#43;updates%3A&#43;what&#43;PrestaShop&#43;users&#43;need&#43;to&#43;know&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fphp-security-updates-october-2026%2F&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Share on X">
+    <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fphp-security-updates-october-2026%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Today, October 21, the PHP Security Team published security releases fixing two critical vulnerabilities in PHP itself, both rated <strong>CVSS 9.2</strong>. PHP is the language PrestaShop is built on, so this concerns virtually every PrestaShop shop, as well as most other PHP applications on the web.</p>
+<p>There is no need to panic, but there is a need to act. The fix is a PHP update, which in most cases is handled by your hosting provider. This article explains what happened, how it relates to PrestaShop, and the steps we recommend.</p>
+
+
+
+<div class="alert alert-warning"><h4>The short version
+    </h4>Make sure the server running your shop is updated to <strong>PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35</strong> (or a patched package from your Linux distribution or hosting provider). If your host manages PHP for you, contact them today and ask them to confirm the update has been applied.
+</div>
+
+<nav class="table-of-contents" role="navigation">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-happened">What happened?</a></li>
+        <li><a href="#how-is-this-related-to-prestashop">How is this related to PrestaShop?</a></li>
+        <li><a href="#what-should-merchants-do">What should merchants do?</a>
+          <ul>
+            <li><a href="#1-check-your-php-version">1. Check your PHP version</a></li>
+            <li><a href="#2-contact-your-hosting-provider">2. Contact your hosting provider</a></li>
+            <li><a href="#3-if-you-manage-your-own-server">3. If you manage your own server</a></li>
+            <li><a href="#4-running-php-81-or-older">4. Running PHP 8.1 or older?</a></li>
+          </ul>
+        </li>
+        <li><a href="#if-php-cannot-be-updated-right-away">If PHP cannot be updated right away</a>
+          <ul>
+            <li><a href="#web-application-firewall-waf">Web Application Firewall (WAF)</a></li>
+          </ul>
+        </li>
+        <li><a href="#what-are-we-doing-at-prestashop">What are we doing at PrestaShop?</a></li>
+        <li><a href="#security-is-a-continuous-effort">Security is a continuous effort</a></li>
+        <li><a href="#in-short">In short</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</nav>
+
+<h2 id="what-happened">What happened?</h2>
+<p>On October 20, the PHP project gave <a href="https://www.php.net/archive/2026.php#2026-10-20-1">advance notice</a> of an upcoming security release, scheduled for October 21 at 14:00 UTC (16:00 Paris time). The releases are now out, together with an <a href="https://www.php.net/archive/2026.php#2026-10-21-5">official security advisory</a>.</p>
+<p>The two vulnerabilities, nicknamed <strong>php2shell</strong> by the researchers who reported them (Calif.io, Wiz, OpenAI and Quarkslab), are:</p>
+<ul>
+<li><strong>CVE-2026-109618</strong> (<a href="https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w">GHSA-w8hw-w9fx-j79w</a>): when PHP runs out of memory, it can be interrupted while internal request data is only partially initialized. The cleanup that follows may then treat that incomplete data as valid.</li>
+<li><strong>CVE-2026-109619</strong> (<a href="https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp">GHSA-6wmf-4rv5-p3rp</a>): some internal state belonging to a request can survive after its memory has been freed. A later request handled by the same PHP worker may then use that stale state.</li>
+</ul>
+<p>In plain words, both are memory-handling flaws in the PHP engine. By sending specially crafted HTTP requests, an attacker could crash PHP processes, expose sensitive data or, in the worst case, <strong>execute their own code on the server without any authentication</strong>. According to the PHP Security Team, all PHP installations serving web requests are at risk (PHP-FPM, Apache with mod_php, php-cgi, FrankenPHP, LiteSpeed), with the highest risk for mod_php, where a working exploit triggers the attack before any application code runs.</p>
+<h2 id="how-is-this-related-to-prestashop">How is this related to PrestaShop?</h2>
+<p>These vulnerabilities are <strong>not in PrestaShop</strong>, nor in any PrestaShop module. They are in the PHP runtime that executes PrestaShop (and WordPress, Magento, Drupal, Laravel applications and many more).</p>
+<p>This has two important consequences:</p>
+<ol>
+<li><strong>Updating PrestaShop or your modules will not fix this.</strong> There is no PrestaShop patch to install. The only complete fix is updating PHP on the server.</li>
+<li><strong>The attack can happen before PrestaShop code runs.</strong> Security measures implemented at the application level, in PrestaShop or in modules, cannot block it. The protection has to come from the PHP update itself, and in the meantime from the server or network layer.</li>
+</ol>
+<p>Because these flaws are exploitable remotely and without authentication, we consider applying the PHP update a top priority for every merchant, whatever PrestaShop version you run.</p>
+<h2 id="what-should-merchants-do">What should merchants do?</h2>
+<h3 id="1-check-your-php-version">1. Check your PHP version</h3>
+<p>In your Back Office, go to <strong>Advanced Parameters &gt; Information</strong>. The PHP version used by your shop is listed in the server information section.</p>
+<p>The fixed versions published by the PHP project are:</p>
+<table>
+  <thead>
+      <tr>
+          <th>PHP branch</th>
+          <th>Fixed version</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>PHP 8.5</td>
+          <td>8.5.12</td>
+      </tr>
+      <tr>
+          <td>PHP 8.4</td>
+          <td>8.4.27</td>
+      </tr>
+      <tr>
+          <td>PHP 8.3</td>
+          <td>8.3.36</td>
+      </tr>
+      <tr>
+          <td>PHP 8.2</td>
+          <td>8.2.35</td>
+      </tr>
+  </tbody>
+</table>
+<p>Keep in mind that Linux distributions often backport security fixes without changing the main version number (for example, a Debian or Ubuntu package may still display an older <code>8.2.x</code> version while including the fix). If your version is lower than the one in the table, it does not automatically mean you are vulnerable, but it does mean you should check with whoever manages your server.</p>
+<h3 id="2-contact-your-hosting-provider">2. Contact your hosting provider</h3>
+<p>If you use shared hosting, managed hosting or a PrestaShop-specialized host, PHP is managed for you. Linux distributions and long-term support vendors received the patches in advance, so most serious hosting providers are already rolling out updates.</p>
+<p>Contact your hosting provider and ask them a simple question: <strong>&ldquo;Has the fix for CVE-2026-109618 and CVE-2026-109619 been applied to the PHP version running my shop?&rdquo;</strong> Ask for a written confirmation.</p>
+<h3 id="3-if-you-manage-your-own-server">3. If you manage your own server</h3>
+<p>If you or your agency manage the server (VPS, dedicated server, cloud instance, containers):</p>
+<ul>
+<li>Install the updated PHP packages from your Linux distribution, or from the official PHP releases, as soon as possible.</li>
+<li><strong>Restart every PHP process</strong> after the update (PHP-FPM pools, Apache, LiteSpeed, FrankenPHP workers). An update that is installed but not loaded does not protect you.</li>
+<li>If you rely on the volunteer-maintained <code>rpms.remirepo.net</code> repository, note that the PHP project has announced it will not have updates today. They recommend switching to distribution packages or building from source so you can patch immediately.</li>
+<li>If you run your shop in Docker, rebuild your images on the updated base image and redeploy.</li>
+</ul>
+<p>If you are not comfortable updating PHP on a production server, or if your agency is no longer around to do it, you can find an agency or freelancer specialized in PrestaShop on the <a href="https://experts.prestashop.com/en">PrestaShop Experts portal</a>.</p>
+<h3 id="4-running-php-81-or-older">4. Running PHP 8.1 or older?</h3>
+<p>PHP 8.1 and older versions no longer receive official updates from the PHP project. This is a common situation in the PrestaShop ecosystem, since PrestaShop 1.7 and 8.x shops typically run on PHP 7.x or 8.1.</p>
+<p>The PHP project has published minimal backports of the fix for <a href="https://github.com/php/php-src/tree/PHP-7.4-CVE-2026-109618-109619">PHP 7.4</a>, <a href="https://github.com/php/php-src/tree/PHP-8.0-CVE-2026-109618-109619">PHP 8.0</a> and <a href="https://github.com/php/php-src/tree/PHP-8.1-CVE-2026-109618-109619">PHP 8.1</a>, and many Linux distributions and LTS vendors ship patched packages for the PHP versions they still support. Ask your hosting provider whether your PHP version has been patched.</p>
+<p>In the longer term, this event is a good reminder that running an end-of-life PHP version leaves you dependent on others to backport critical fixes. If your shop is still on PrestaShop 1.7 or 8.x, now is a good time to plan an upgrade to <strong>PrestaShop 9</strong>, which supports PHP 8.1 up to PHP 8.5. Also note that <strong>PHP 8.2 reaches end of life on December 31, 2026</strong>, so if you are on PHP 8.2 today, plan your move to a newer PHP version as well. A major upgrade involves checking your theme and modules for compatibility, so this is a good project to plan with a <a href="https://experts.prestashop.com/en">PrestaShop Expert</a> if you do not have a technical team.</p>
+<h2 id="if-php-cannot-be-updated-right-away">If PHP cannot be updated right away</h2>
+<p>The PHP Security Team is very clear: <strong>there are no complete mitigations, updating is the only safe choice.</strong> The measures below only reduce exposure to specific attack paths while the update is being scheduled. They are meant for technical teams, hosting providers and <a href="https://experts.prestashop.com/en">PrestaShop Experts</a>, and should be tested on a staging environment first.</p>
+<p><strong>For CVE-2026-109618</strong> (out-of-memory handling):</p>
+<ul>
+<li>Limit request sizes. Set <code>post_max_size</code> to a reasonable value (the advisory suggests <code>8M</code> if you do not need uploads, <code>32M</code> if you do) and keep <code>upload_max_filesize</code> below it. In PrestaShop, uploads are used in the Back Office for product images, CSV imports and module installation, so <code>32M</code> is usually the relevant value.</li>
+<li>Enforce request size limits at the web server or reverse proxy level as well.</li>
+<li>The advisory also describes setting <code>memory_limit=-1</code> through <code>php_admin_value</code> in the PHP-FPM pool or Apache configuration, combined with a container or cgroup memory limit. Do not use <code>RLIMIT_AS</code> or <code>RLIMIT_DATA</code> for this, as they can trigger the vulnerable behavior.</li>
+</ul>
+<p><strong>For CVE-2026-109619</strong> (stale state between requests):</p>
+<ul>
+<li>Set <code>session.upload_progress.enabled=0</code> in <code>php.ini</code>, the PHP-FPM pool or the server configuration, then restart all PHP workers. Do not rely on <code>ini_set()</code> or <code>.user.ini</code> files for this.</li>
+<li>On PHP 8.5, also set <code>fatal_error_backtraces=0</code> and restart the workers.</li>
+</ul>
+<p>Hiding errors (with <code>error_reporting</code>, <code>display_errors</code> or the <code>@</code> operator) does not help. Refer to the <a href="https://www.php.net/archive/2026.php#2026-10-21-5">official advisory</a> for the complete and authoritative list of interim measures.</p>
+<h3 id="web-application-firewall-waf">Web Application Firewall (WAF)</h3>
+<p>A WAF can filter malicious requests before they reach PHP, which is particularly useful here since the attack happens before application code runs. Cloudflare, for example, <a href="https://blog.cloudflare.com/php-vulnerabilities-waf-protection/">has deployed dedicated WAF rules for php2shell</a>, active by default on free and paid plans since October 21, 3:02 UTC. If you are on a paid Cloudflare plan, check that the managed ruleset is running in <strong>block</strong> mode.</p>
+<p>A WAF is a very welcome extra layer during the patching window, but like any signature-based protection it can be bypassed by reshaped payloads (Cloudflare itself reports attackers mutating their payloads). It does not replace the PHP update.</p>
+<h2 id="what-are-we-doing-at-prestashop">What are we doing at PrestaShop?</h2>
+<p>We have been following this closely since the advance notice was published. Our technical and infrastructure teams monitored the situation ahead of the release and are assessing and updating our services, as part of our standard security process.</p>
+<p>We will update this article if we learn anything that requires specific action from the PrestaShop community.</p>
+<h2 id="security-is-a-continuous-effort">Security is a continuous effort</h2>
+<p>Events like this one are a reminder that security is not something you set up once and forget. A shop depends on many layers (the server, PHP, PrestaShop, the theme, every installed module) and a weakness in any of them can put the whole shop at risk, even when the layer at fault is not PrestaShop itself.</p>
+<p>This is even more true in the AI era. AI tools help researchers find vulnerabilities faster (OpenAI is among the teams that reported these two), which is good news for the ecosystem. But the same tools also help attackers analyze security fixes and turn them into working attacks, sometimes within hours of a disclosure. On disclosure day, Cloudflare was already seeing attackers rework their payloads to get past the new protections. The window between &ldquo;a fix is published&rdquo; and &ldquo;the vulnerability is actively exploited&rdquo; keeps getting shorter.</p>
+<p>That is why regular updates matter more than ever. Make keeping PHP, PrestaShop and your modules up to date a routine rather than a reaction, and choose hosting providers and partners who apply security updates quickly. If you would rather not handle this alone, a <a href="https://experts.prestashop.com/en">PrestaShop Expert</a> can help you put a regular maintenance plan in place.</p>
+<h2 id="in-short">In short</h2>
+<p>The vulnerabilities are in PHP, not in PrestaShop, and the fix is a PHP update. Check your PHP version, contact your hosting provider (or update and restart PHP yourself if you manage your server), and keep a WAF in front of your shop if you can. If you are still running an end-of-life PHP or PrestaShop version, use this opportunity to plan your upgrade.</p>
+<p>To follow security news about the PrestaShop ecosystem, keep an eye on the <a href="https://github.com/PrestaShop/PrestaShop/security/advisories">PrestaShop security advisories</a> and the <a href="https://security.friendsofpresta.org/">Friends of Presta security site</a>.</p>
+<p>Thank you to the PHP Security Team and to the researchers who reported and coordinated the disclosure of these issues, giving the whole PHP ecosystem time to prepare.</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Oct 21, 2026</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/security/">security</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/kpodemski/">Krystian Podemski</a>
+      <span>VP of Technology &amp; Community @ PrestaShop</span>
+    </h4>
+
+    
+
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="cta cta--pattern cta-dark"><span>Subscribe to our newsletter</span></a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2026\/php-security-updates-october-2026\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/contact/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+    
+    <script>
+      window.axeptioSettings = {
+        userCookiesDomain: "prestashop-project.org",
+        clientId: "6859145f7baee141c249caa3",
+        cookiesVersion: "fr-eu-23-06-2025",
+        googleConsentMode: {
+          default: {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            wait_for_update: 500
+          }
+        }
+      };
+      (function(d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+      })(document, "script");
+    </script>
+    
+  </body>
+</html>

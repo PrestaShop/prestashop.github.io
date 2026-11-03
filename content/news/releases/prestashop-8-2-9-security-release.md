@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 8.2.9 is available
 subtitle: "Security release for the 8.2 branch, fixing fifteen vulnerabilities reported through coordinated disclosure."
-date: 2026-11-03 06:00:00 # REPLACE with the publication date: not before the advisories are public (step V.6)
+date: 2026-11-09 06:00:00
 authors: [ PrestaShop ]
 icon: icon-leaf
 image: /assets/images/2026/11/banner_8.2.9_1200x627.jpg

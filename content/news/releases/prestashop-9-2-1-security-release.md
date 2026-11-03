@@ -2,7 +2,7 @@
 layout: post
 title:  PrestaShop 9.2.1 is available
 subtitle: "Eighteen security fixes reported through coordinated disclosure, two back office bug fixes, and updated dependencies."
-date: 2026-11-03 07:00:00 # REPLACE with the publication date: not before the advisories are public (step V.6)
+date: 2026-11-09 07:00:00
 authors: [ PrestaShop ]
 icon: icon-leaf
 image: /assets/images/2026/11/9.2.1_1534x434.png

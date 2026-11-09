@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrestaShop 9.2.1 is available</title>
+    <link href="/style.css?1794230402" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="PrestaShop 9.2.1 is available" />
+<meta property="og:description" content="PrestaShop 9.2.1 is now available. It fixes eighteen vulnerabilities reported through coordinated disclosure, fifteen of them rated High, and ships two updated modules (newsletter and GDPR). Several of them can be exploited without any account on the shop. It also brings two back office bug fixes and updated dependencies. Updating as soon as possible is strongly recommended." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2026/prestashop-9-2-1-security-release/" />
+    <meta property="og:image" content="https://build.prestashop-project.org//assets/images/2026/11/9.2.1_1200x728.png"/>
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2026-11-09T07:00:00+01:00" />
+    <meta property="article:modified_time" content="2026-11-09T07:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/2026/11/9.2.1_1024x512.png">
+<meta name="twitter:title" content="PrestaShop 9.2.1 is available"/>
+<meta name="twitter:description" content="Eighteen security fixes reported through coordinated disclosure, two back office bug fixes, and updated dependencies."/>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF9S835S');</script>
+
+    
+</head>
+
+
+  <body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF9S835S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  
+  
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org/">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tools">Useful Tools</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/contact/">
+            Contact us
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+    </li>
+  </ul>
+</nav>
+          </div>
+
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="page-title">PrestaShop 9.2.1 is available</h1>
+              
+                <h3 class="post-subtitle">Eighteen security fixes reported through coordinated disclosure, two back office bug fixes, and updated dependencies.</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/prestashop/">
+        <img class="img-circle" src="/assets/images/authors/prestashop-team.png" alt="PrestaShop team's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/prestashop/">PrestaShop team</a>
+      </div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Nov 9, 2026
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://x.com/intent/post?text=PrestaShop&#43;9.2.1&#43;is&#43;available&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fprestashop-9-2-1-security-release%2F&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Share on X">
+    <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fprestashop-9-2-1-security-release%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>PrestaShop 9.2.1 is now available. It fixes eighteen vulnerabilities reported through coordinated disclosure, fifteen of them rated High, and ships two updated modules (newsletter and GDPR). Several of them can be exploited without any account on the shop. It also brings two back office bug fixes and updated dependencies. Updating as soon as possible is strongly recommended.</p>
+<p><img src="/assets/images/2026/11/9.2.1_1534x434.png" alt="PrestaShop 9.2.1 is available!"></p>
+<h2 id="security-fixes">Security fixes</h2>
+<ul>
+<li><strong>Admin API client holding <code>api_client_write</code> can grant itself any scope, leading to code execution</strong> (Severity: High 8.8/10, CWE-269)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-p292-3rh4-vm4p">GHSA-p292-3rh4-vm4p</a></li>
+<li><strong>Requires admin access:</strong> an Admin API client with the <code>api_client_write</code> scope.</li>
+<li>An Admin API client allowed to manage API clients could add any scope to its own configuration, gaining full access to the Admin API and, from there, the ability to execute code on the server.</li>
+</ul>
+</li>
+<li><strong>Stored XSS through SVG files uploaded with the back office file manager and logo uploader</strong> (Severity: High 8.7/10, CWE-79)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-99cp-c6mm-p7h5">GHSA-99cp-c6mm-p7h5</a></li>
+<li><strong>Requires admin access:</strong> a back office employee account.</li>
+<li>SVG files uploaded through the back office file manager or as the shop logo were accepted even when they contained scripts. A crafted file could then run JavaScript in the browser of whoever displayed it, including other employees. Such SVG files are now rejected.</li>
+</ul>
+</li>
+<li><strong>Path traversal in attachments allows file read and deletion outside the download directory</strong> (Severity: High 8.5/10, CWE-22)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-wrmc-gmx5-9hhc">GHSA-wrmc-gmx5-9hhc</a></li>
+<li><strong>Requires a webservice key:</strong> a webservice key with write permission on attachments.</li>
+<li>Attachment files were not strictly kept inside the download directory, so an attacker with write access to attachments could read or delete files elsewhere on the server. This completes the fix of CVE-2023-39529.</li>
+</ul>
+</li>
+<li><strong>Webservice API cross-tenant customer takeover via missing record-level shop check</strong> (Severity: High 8.1/10, CWE-639, CWE-862)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-hjwq-7qvv-qxj4">GHSA-hjwq-7qvv-qxj4</a>, <a href="https://www.cve.org/CVERecord?id=CVE-2026-71519">CVE-2026-71519</a></li>
+<li><strong>Requires a webservice key:</strong> a webservice key allowed on at least one shop of a multistore installation.</li>
+<li>On multistore installations, the webservice did not check that a requested record belonged to a shop the API key was allowed on. A key limited to one shop could reach the customers of another shop, up to taking over their accounts.</li>
+</ul>
+</li>
+<li><strong>Installer can be re-run without an already-installed check, allowing configuration overwrite</strong> (Severity: High 8.1/10, CWE-306, CWE-862)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-8rxw-79mh-gmm5">GHSA-8rxw-79mh-gmm5</a></li>
+<li>The web installer did not check whether the shop was already installed. When the installer was still reachable, anyone could run it again and overwrite the shop configuration. It now refuses to run on an installed shop.</li>
+</ul>
+</li>
+<li><strong>Unauthenticated PHP object injection in the installer session cookie leads to remote code execution</strong> (Severity: High 8.1/10, CWE-502)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-h2q4-7fp7-m5jp">GHSA-h2q4-7fp7-m5jp</a></li>
+<li>The installer restored its session from a cookie without making sure the content was safe to unserialize. A visitor sending a crafted cookie to a reachable installer could execute code on the server.</li>
+</ul>
+</li>
+<li><strong>Webservice API multishop scope bypass via <code>id_shop=all</code> / <code>id_shop_group</code></strong> (Severity: High 8.1/10, CWE-862, CWE-863)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-3f36-4qv4-vfgh">GHSA-3f36-4qv4-vfgh</a>, <a href="https://www.cve.org/CVERecord?id=CVE-2026-71531">CVE-2026-71531</a></li>
+<li><strong>Requires a webservice key:</strong> a webservice key restricted to some shops.</li>
+<li>By adding <code>id_shop=all</code> or an <code>id_shop_group</code> parameter to a request, an API key restricted to some shops could reach the data of every shop in the installation. Keys now stay within the shops they are allowed on.</li>
+</ul>
+</li>
+<li><strong>Cart rule usage limits can be bypassed through a race condition in order validation</strong> (Severity: High 7.5/10, CWE-367)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-r246-6gw4-pj3p">GHSA-r246-6gw4-pj3p</a></li>
+<li>By validating several orders at the same time, a customer could use a cart rule more times than its quantity allows. The remaining quantity is now taken into account when the order validation checks the cart rule.</li>
+</ul>
+</li>
+<li><strong>Duplicate orders can be created from a single cart through a race condition in free-order checkout</strong> (Severity: High 7.5/10, CWE-362, CWE-367)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-2676-hc74-gg7v">GHSA-2676-hc74-gg7v</a></li>
+<li>When the order total was zero, concurrent checkout requests on the same cart could each create an order. A single cart now leads to a single order.</li>
+</ul>
+</li>
+<li><strong>Path traversal in theme and module import allows an authenticated administrator to write files outside the intended folder</strong> (Severity: High 7.2/10, CWE-22, CWE-434)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-7q68-ch46-pxmc">GHSA-7q68-ch46-pxmc</a></li>
+<li><strong>Requires admin access:</strong> a back office employee allowed to import themes or modules.</li>
+<li>The content of an imported theme or module archive was not kept inside its destination folder, so a crafted archive could write files anywhere the web server can write, leading to code execution.</li>
+</ul>
+</li>
+<li><strong>Arbitrary file inclusion through the module parameter of the back office translations page</strong> (Severity: High 7.2/10, CWE-98)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-fxq4-2mc8-99pr">GHSA-fxq4-2mc8-99pr</a></li>
+<li><strong>Requires admin access:</strong> a back office employee with access to the translations page.</li>
+<li>The module name passed to the translations page was used to load a file without being checked, which allowed an employee with access to that page to execute code. Translation files are now only loaded for installed modules, and PHP archives are rejected in import uploads.</li>
+</ul>
+</li>
+<li><strong>Remote code execution through the theme &ldquo;Import from the web&rdquo; feature</strong> (Severity: High 7.2/10, CWE-434)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-95w6-v2wq-cv8w">GHSA-95w6-v2wq-cv8w</a></li>
+<li><strong>Requires admin access:</strong> a back office employee allowed to import themes.</li>
+<li>A theme archive imported from a URL was saved into the admin directory, where a crafted file could be executed. Downloaded archives now go to the cache directory.</li>
+</ul>
+</li>
+<li><strong>Path traversal in back office email translations allows arbitrary file write</strong> (Severity: High 7.2/10, CWE-22, CWE-94)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-5p6p-mx64-96jf">GHSA-5p6p-mx64-96jf</a></li>
+<li><strong>Requires admin access:</strong> a back office employee with access to email translations.</li>
+<li>The mail template name was not always validated before translation files were written, so an employee with access to email translations could write a PHP file outside the mails folder and execute it.</li>
+</ul>
+</li>
+<li><strong>PHP code injection through the back office Debug Mode cookie fields</strong> (Severity: High 7.2/10, CWE-94)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-95f5-jc9c-gg3q">GHSA-95f5-jc9c-gg3q</a></li>
+<li><strong>Requires admin access:</strong> a back office employee with the Performance permissions.</li>
+<li>The cookie fields of the Debug Mode settings were written into a PHP file without being sanitized, which allowed an employee with only the Performance permissions to execute arbitrary code.</li>
+</ul>
+</li>
+<li><strong>Admin API client disable and access-token revocation are ineffective</strong> (Severity: High 7.1/10, CWE-613, CWE-863)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-6c2j-pgwm-95m9">GHSA-6c2j-pgwm-95m9</a></li>
+<li><strong>Requires admin access:</strong> an Admin API client, even after it was disabled or its tokens revoked.</li>
+<li>Disabling an Admin API client or revoking its access tokens did not stop tokens that had already been issued from being accepted, so a client meant to be cut off could keep using the API.</li>
+</ul>
+</li>
+<li><strong>Unauthenticated disclosure of a customer&rsquo;s customization file through the order reference</strong> (Severity: Medium 5.9/10, CWE-639, CWE-863)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-fg9q-mm4c-h5xc">GHSA-fg9q-mm4c-h5xc</a></li>
+<li>Files uploaded by customers to customize a product could be downloaded by anyone knowing the order reference. The download now also requires the order secure key.</li>
+</ul>
+</li>
+<li><strong>Back office employees with create-only order permission can modify existing orders</strong> (Severity: Medium 4.9/10, CWE-862, CWE-863)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-mgcf-mrg4-mcxv">GHSA-mgcf-mrg4-mcxv</a></li>
+<li><strong>Requires admin access:</strong> a back office employee with the create permission on orders.</li>
+<li>An employee only allowed to create orders could add products to existing ones. This now requires the order edit permission.</li>
+</ul>
+</li>
+<li><strong>Predictable password reset token allows a customer account takeover</strong> (Severity: Medium 4.8/10, CWE-330)
+<ul>
+<li>Identifier: <a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-g6p7-cx52-hcrj">GHSA-g6p7-cx52-hcrj</a></li>
+<li>Password reset tokens were derived from predictable values, so someone who knew a customer&rsquo;s secure key could guess the token and take over the account. Tokens are now generated with a cryptographically secure random generator.</li>
+</ul>
+</li>
+</ul>
+<p>Full technical details, attack vectors, and workarounds are documented in each advisory.</p>
+<p>Fifteen of these issues are also fixed in PrestaShop 8.2.9, released simultaneously. The three others (the two Admin API issues and the Debug Mode one) only concern PrestaShop 9.</p>
+<h3 id="module-updates">Module updates</h3>
+<p>PrestaShop 9.2.1 also ships version 3.0.1 of the <strong>ps_emailsubscription</strong> module, which fixes a CSV injection in the subscribers export (<a href="https://github.com/PrestaShop/ps_emailsubscription/security/advisories/GHSA-pg6j-qf29-gc43">GHSA-pg6j-qf29-gc43</a>, Medium 6.1/10, CWE-1236). Email addresses starting with a formula character were accepted at newsletter sign-up and written as-is in the export, so they could be interpreted as formulas when an administrator opened the file in a spreadsheet application.</p>
+<p>PrestaShop 9.2.1 also ships version 1.4.4 of the <strong>psgdpr</strong> module, which fixes an insecure direct object reference in the front office consent logging (<a href="https://github.com/PrestaShop/psgdpr/security/advisories/GHSA-wwqh-cf9m-347f">GHSA-wwqh-cf9m-347f</a>, <a href="https://www.cve.org/CVERecord?id=CVE-2026-92809">CVE-2026-92809</a>, Medium 5.3/10, CWE-639). The module trusted the customer id sent in the request, so anyone, even a visitor without an account, could record a consent on behalf of another customer in the GDPR log.</p>
+<p>If you do not update the shop right away, you can update these modules on their own from the Module Manager.</p>
+<h2 id="what-else-is-in-921">What else is in 9.2.1?</h2>
+<p>Besides the security work, this release contains a few maintenance changes, with no breaking changes:</p>
+<ul>
+<li>On the view order page, <a href="https://github.com/PrestaShop/PrestaShop/pull/43171">messages created in the same second are now displayed in their creation order</a>. This was always the case for an order created from the back office with an order message, where the employee note could show up above the customer message.</li>
+<li>In back office grids sorted by position, <a href="https://github.com/PrestaShop/PrestaShop/pull/43159">dropping a row over a clickable cell no longer opens that row</a>. The unwanted page load could swallow the &ldquo;Successful update&rdquo; message of the position change.</li>
+<li>Symfony components have been updated to <code>6.4.50</code>, along with other dependencies.</li>
+</ul>
+<h2 id="download-prestashop-921">Download PrestaShop 9.2.1</h2>
+<p>You can download the Classic version from the official PrestaShop website. This version includes the PrestaShop SA modules, such as PrestaShop Checkout, PrestaShop Account, PrestaShop Marketplace in the back office, PrestaShop CloudSync, PrestaShop Shipping, PrestaShop Marketing, PrestaShop Socials, PrestaShop Ask AI, PrestaShop MCP Server, and PrestaShop Automation.</p>
+<p>The Classic edition now ships PrestaShop Checkout 5.5.6 (9.5.5.6), which includes the fixes of the module advisories <a href="https://github.com/PrestaShopCorp/ps_checkout/security/advisories/GHSA-6q9v-2g94-hxm5">GHSA-6q9v-2g94-hxm5</a> and <a href="https://github.com/PrestaShopCorp/ps_checkout/security/advisories/GHSA-678f-q3v5-9fw4">GHSA-678f-q3v5-9fw4</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-center">
+  <a href="https://prestashop.com/versions/" class="cta cta--pattern"><span>Download PrestaShop 9.2.1 now!</span></a>
+</p>
+
+
+<details class="advanced-toggle">
+<summary>Need a custom ZIP without PrestaShop SA modules?</summary>
+<p>If you don&rsquo;t want to use the Classic version, you can build your custom ZIP file with the PrestaShop 9.2.1 installer, which doesn&rsquo;t include any PrestaShop SA modules. You can read the instructions on how to do it in the <a href="https://github.com/PrestaShop/PrestaShop/tree/develop/tools/build">PrestaShop Release Creation Tool readme</a>.</p>
+</details>
+<h2 id="update-to-prestashop-921">Update to PrestaShop 9.2.1</h2>
+<p>Because this release fixes eighteen security issues, we recommend applying it on any shop running 9.2.0 as soon as possible. Before updating, ensure you create a full backup of your database and files to safeguard your data.</p>
+<p>Updating to the latest version of PrestaShop <code>9.2.x</code> is straightforward with the <a href="https://github.com/PrestaShop/autoupgrade/releases/">Update Assistant</a>. This tool streamlines the update process, ensuring your shop remains current with minimal effort.</p>
+<p>If you encounter any problems during the update that, in your opinion, are not caused by third-party modules or modifications used in your shop, <a href="https://www.prestashop-project.org/get-involved/report-issues/">submit a bug report</a>.</p>
+<h2 id="full-changelog">Full changelog</h2>
+<ul>
+<li>Back Office:
+<ul>
+<li>Bug fix:
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/43171">#43171</a>: Keep the creation order of order messages created in the same second (by <a href="https://github.com/mattgoud">@mattgoud</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/43159">#43159</a>: Only open the row link when the press started on a clickable cell (by <a href="https://github.com/mattgoud">@mattgoud</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-95w6-v2wq-cv8w">GHSA-95w6-v2wq-cv8w</a>: Download theme archives from a URL into the cache directory (by <a href="https://github.com/mattgoud">@mattgoud</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-fxq4-2mc8-99pr">GHSA-fxq4-2mc8-99pr</a>: Only load translation files of installed modules and reject PHP archives in import uploads (by <a href="https://github.com/nicosomb">@nicosomb</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-95f5-jc9c-gg3q">GHSA-95f5-jc9c-gg3q</a>: Validate the debug cookie name and value before writing the debug mode (by <a href="https://github.com/mattgoud">@mattgoud</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Front Office:
+<ul>
+<li>Bug fix:
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-fg9q-mm4c-h5xc">GHSA-fg9q-mm4c-h5xc</a>: Require the order secure key to download a customization file by reference (by <a href="https://github.com/M0rgan01">@M0rgan01</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Core:
+<ul>
+<li>Bug fix:
+<ul>
+<li>Update dependencies (by <a href="https://github.com/jolelievre">@jolelievre</a>)</li>
+<li>Update Symfony components to 6.4.50 (by <a href="https://github.com/mattgoud">@mattgoud</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/43443">#43443</a>: Update psgdpr to 1.4.4 (by <a href="https://github.com/nicosomb">@nicosomb</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-wrmc-gmx5-9hhc">GHSA-wrmc-gmx5-9hhc</a>: Keep attachment files inside the download directory (by <a href="https://github.com/nicosomb">@nicosomb</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-6c2j-pgwm-95m9">GHSA-6c2j-pgwm-95m9</a>: Cut the Admin API access of a disabled or deleted API client (by <a href="https://github.com/M0rgan01">@M0rgan01</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-99cp-c6mm-p7h5">GHSA-99cp-c6mm-p7h5</a>: Block corrupted SVG files uploaded through the FileManager and the logo uploader (by <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-2676-hc74-gg7v">GHSA-2676-hc74-gg7v</a>: Prevent duplicate orders from a single cart in concurrent checkouts (by <a href="https://github.com/M0rgan01">@M0rgan01</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-mgcf-mrg4-mcxv">GHSA-mgcf-mrg4-mcxv</a>: Require the order edit permission to add a product to an existing order (by <a href="https://github.com/M0rgan01">@M0rgan01</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-r246-6gw4-pj3p">GHSA-r246-6gw4-pj3p</a>: Take the cart rule quantity when the order validation checks it (by <a href="https://github.com/mattgoud">@mattgoud</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-7q68-ch46-pxmc">GHSA-7q68-ch46-pxmc</a>: Keep extracted archives and installed themes inside their destination folder (by <a href="https://github.com/nicosomb">@nicosomb</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-5p6p-mx64-96jf">GHSA-5p6p-mx64-96jf</a>: Always validate the mail template name before writing translation files (by <a href="https://github.com/mattgoud">@mattgoud</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-p292-3rh4-vm4p">GHSA-p292-3rh4-vm4p</a>: Fix privilege escalation via unrestricted scope assignment on API clients (by <a href="https://github.com/matthieu-rolland">@matthieu-rolland</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-g6p7-cx52-hcrj">GHSA-g6p7-cx52-hcrj</a>: Generate the password reset tokens with a CSPRNG (by <a href="https://github.com/clotairer">@clotairer</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Installer:
+<ul>
+<li>Bug fix:
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-8rxw-79mh-gmm5">GHSA-8rxw-79mh-gmm5</a>: Refuse to run the web installer on an already installed shop (by <a href="https://github.com/mattgoud">@mattgoud</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-h2q4-7fp7-m5jp">GHSA-h2q4-7fp7-m5jp</a>: Fix dangerous unserialization in the installer session (by <a href="https://github.com/clotairer">@clotairer</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Web Services:
+<ul>
+<li>Bug fix:
+<ul>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-hjwq-7qvv-qxj4">GHSA-hjwq-7qvv-qxj4</a>: Keep webservice record access within the shops a key is allowed on (by <a href="https://github.com/clotairer">@clotairer</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-3f36-4qv4-vfgh">GHSA-3f36-4qv4-vfgh</a>: Keep webservice keys within the shops they are allowed on (by <a href="https://github.com/clotairer">@clotairer</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Tests:
+<ul>
+<li>Bug fix:
+<ul>
+<li>Create the API client enabled in the authorization endpoint UI test (by <a href="https://github.com/mattgoud">@mattgoud</a>)</li>
+<li><a href="https://github.com/PrestaShop/PrestaShop/pull/43368">#43368</a>: Update tests UI dependencies (by <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-center">
+  <a href="https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.1" class="cta cta--pattern"><span>See the full release notes</span></a>
+</p>
+
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>This security release was made possible thanks to a coordinated disclosure process between external researchers and the PrestaShop maintainers team. Many of these issues were reported by several researchers independently: each of them is credited below.</p>
+<p>We would like to thank:</p>
+<ul>
+<li><strong>Ricardo Felipe</strong>, and independently <strong>Gurvir Bajwa</strong>, for the Admin API scope escalation;</li>
+<li><strong>Nguyễn Vương Tuấn Hiệp (nvth)</strong> for the stored XSS through SVG uploads;</li>
+<li><strong>Jean-Jamil Khalife</strong> (HDW Sec), and independently <strong>Abraxas Labs</strong>, <strong>Calif.io</strong> in collaboration with Anthropic, <strong>Nikhil Thomas</strong> and <strong>Ayushman Dubey</strong> (Warpnet), and <strong>Bani Montoya</strong>, for the path traversal in attachments;</li>
+<li>a researcher coordinated by <strong>VulnCheck</strong>, and independently <strong>boo-code</strong> and <strong>Gurvir Bajwa</strong>, for the webservice cross-tenant customer takeover;</li>
+<li>a researcher coordinated by <strong>VulnCheck</strong>, and independently <strong>Sakil Ahamed Gayen</strong> and <strong>Gurvir Bajwa</strong>, for the webservice multishop scope bypass;</li>
+<li><strong>Bilguundalai</strong>, and independently <strong>Wenhao Wu</strong> (Southeast University), for the installer re-run;</li>
+<li><strong>Wenhao Wu</strong> (Southeast University) for the ineffective Admin API client revocation and the customization file disclosure;</li>
+<li><strong>Kamaldeep Rajal</strong>, and independently <strong>Santhoshkumar S</strong>, for the object injection in the installer session cookie;</li>
+<li><strong>NEC Security</strong>, and independently <strong>Mufeed VH</strong> (Winfunc Research), for the cart rule usage limit bypass;</li>
+<li><strong>Mufeed VH</strong> (Winfunc Research) for the duplicate orders in free-order checkout and the order permission issue;</li>
+<li><strong>Vitish Bhardwaj</strong>, and independently <strong>tuan nguyen</strong>, <strong>VulnCheck</strong>, <strong>Duc Anh Le</strong> and <strong>JoyBoy</strong>, for the path traversal in theme and module import;</li>
+<li><strong>Leonardo Kauan</strong> for the file inclusion through the translations page;</li>
+<li><strong>Viet Son</strong> for the remote code execution through the theme &ldquo;Import from the web&rdquo; feature;</li>
+<li><strong>Mukul Goyal</strong> (parameter.ai), and independently <strong>boo-code</strong>, for the path traversal in email translations;</li>
+<li><strong>Deflask13</strong> for the code injection through the Debug Mode cookie fields;</li>
+<li><strong>Savio</strong> (<a href="https://www.doyensec.com/">Doyensec</a>) in collaboration with Anthropic Research, and independently <strong>Sanghyeon Lee</strong>, <strong>Dawit Jeong</strong>, <strong>Amit Chavan</strong> and <strong>abraxas</strong>, for the predictable password reset token.</li>
+</ul>
+<p>On the maintainers side, thank you to <a href="https://github.com/clotairer">@clotairer</a>, <a href="https://github.com/jolelievre">@jolelievre</a>, <a href="https://github.com/M0rgan01">@M0rgan01</a>, <a href="https://github.com/mattgoud">@mattgoud</a>, <a href="https://github.com/matthieu-rolland">@matthieu-rolland</a>, <a href="https://github.com/nicosomb">@nicosomb</a> and <a href="https://github.com/Quetzacoalt91">@Quetzacoalt91</a> for analysing the reports and preparing the patches, and to <a href="https://github.com/seiwan">@seiwan</a> for the PrestaShop Checkout advisories.</p>
+
+    <p>Thank you to everyone who contributes to keeping PrestaShop secure! Reporting responsibly, reviewing a patch, or testing a fix before it ships all make a real difference.</p>
+<p>Want to help? <a href="https://www.prestashop-project.org/get-involved/">Start contributing today</a>, or report a security issue to <a href="mailto:security-core@prestashop.com">security-core@prestashop.com</a>.</p>
+
+
+
+<div class="avatars-grid">
+    
+        <a href="https://github.com/clotairer" title="clotairer" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/clotairer.png?size=200" width="96" height="96" alt="clotairer">
+            <span class="contributor-name">clotairer</span>
+        </a>
+    
+        <a href="https://github.com/jolelievre" title="jolelievre" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/jolelievre.png?size=200" width="96" height="96" alt="jolelievre">
+            <span class="contributor-name">jolelievre</span>
+        </a>
+    
+        <a href="https://github.com/M0rgan01" title="M0rgan01" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/M0rgan01.png?size=200" width="96" height="96" alt="M0rgan01">
+            <span class="contributor-name">M0rgan01</span>
+        </a>
+    
+        <a href="https://github.com/mattgoud" title="mattgoud" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/mattgoud.png?size=200" width="96" height="96" alt="mattgoud">
+            <span class="contributor-name">mattgoud</span>
+        </a>
+    
+        <a href="https://github.com/matthieu-rolland" title="matthieu-rolland" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/matthieu-rolland.png?size=200" width="96" height="96" alt="matthieu-rolland">
+            <span class="contributor-name">matthieu-rolland</span>
+        </a>
+    
+        <a href="https://github.com/nicosomb" title="nicosomb" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/nicosomb.png?size=200" width="96" height="96" alt="nicosomb">
+            <span class="contributor-name">nicosomb</span>
+        </a>
+    
+        <a href="https://github.com/Quetzacoalt91" title="Quetzacoalt91" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/Quetzacoalt91.png?size=200" width="96" height="96" alt="Quetzacoalt91">
+            <span class="contributor-name">Quetzacoalt91</span>
+        </a>
+    
+        <a href="https://github.com/seiwan" title="seiwan" target="_blank" rel="noopener noreferrer">
+            <img loading="lazy" src="https://github.com/seiwan.png?size=200" width="96" height="96" alt="seiwan">
+            <span class="contributor-name">seiwan</span>
+        </a>
+    
+</div>
+
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Nov 9, 2026</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/version/">version</a>
+
+  <a class="label label-primary" href="/tag/patch/">patch</a>
+
+  <a class="label label-primary" href="/tag/releases/">releases</a>
+
+  <a class="label label-primary" href="/tag/security/">security</a>
+
+  <a class="label label-primary" href="/tag/9.2/">9.2</a>
+
+  <a class="label label-primary" href="/tag/9.2.x/">9.2.x</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/prestashop/">PrestaShop team</a>
+      <span></span>
+    </h4>
+
+    
+
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="cta cta--pattern cta-dark"><span>Subscribe to our newsletter</span></a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2026\/prestashop-9-2-1-security-release\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/contact/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+    
+    <script>
+      window.axeptioSettings = {
+        userCookiesDomain: "prestashop-project.org",
+        clientId: "6859145f7baee141c249caa3",
+        cookiesVersion: "fr-eu-23-06-2025",
+        googleConsentMode: {
+          default: {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            wait_for_update: 500
+          }
+        }
+      };
+      (function(d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+      })(document, "script");
+    </script>
+    
+  </body>
+</html>

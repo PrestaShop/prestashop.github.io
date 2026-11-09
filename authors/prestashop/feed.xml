@@ -6,7 +6,25 @@
     <description>Recent content in PrestaShop on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/prestashop/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Mon, 09 Nov 2026 07:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/authors/prestashop/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop 9.2.1 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-9-2-1-security-release/</link>
+          <pubDate>Mon, 09 Nov 2026 07:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-9-2-1-security-release/</guid>
+          <description>PrestaShop 9.2.1 is now available. It fixes eighteen vulnerabilities reported through coordinated disclosure, fifteen of them rated High, and ships two updated modules (newsletter and GDPR). Several of them can be exploited without any account on the shop. It also brings two back office bug fixes and updated dependencies. Updating as soon as possible is strongly recommended.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop 8.2.9 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-8-2-9-security-release/</link>
+          <pubDate>Mon, 09 Nov 2026 06:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-8-2-9-security-release/</guid>
+          <description>PrestaShop 8.2.9 is available. This is a security-only release for the 8.2 branch that fixes fifteen vulnerabilities, twelve of them rated High, and ships two updated modules (newsletter and GDPR). Several of them can be exploited without any account on the shop. Updating as soon as possible is strongly recommended.</description>
+        </item>
+      
         <item>
           <title>PrestaShop 9.2 is available</title>
           <link>https://build.prestashop-project.org/news/2026/prestashop-9-2-0-available/</link>
@@ -122,24 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2026/prestashop-8-2-6-security-release/</guid>
           <description>PrestaShop 8.2.6 is available. This security patch for the 8.2 branch addresses a Critical stored Cross-Site Scripting vulnerability. Updating as soon as possible is strongly recommended.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop 9.1.1 is available</title>
-          <link>https://build.prestashop-project.org/news/2026/prestashop-9-1-1-security-release/</link>
-          <pubDate>Tue, 28 Apr 2026 00:00:00 +0200</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2026/prestashop-9-1-1-security-release/</guid>
-          <description>PrestaShop 9.1.1 is available. This security patch for the 9.1 branch addresses a Critical stored Cross-Site Scripting vulnerability. Updating as soon as possible is strongly recommended.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop 8.2.5 is available</title>
-          <link>https://build.prestashop-project.org/news/2026/prestashop-8-2-5-maintenance-release/</link>
-          <pubDate>Mon, 23 Mar 2026 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2026/prestashop-8-2-5-maintenance-release/</guid>
-          <description>PrestaShop 8.2.5 is available. This security patch for the 8.2 branch addresses two vulnerabilities: a stored XSS issue in back office templates and an improper use of the validation framework.</description>
         </item>
       
   </channel>

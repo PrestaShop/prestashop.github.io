@@ -6,7 +6,25 @@
     <description>Recent content in News on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Tue, 03 Nov 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Mon, 09 Nov 2026 07:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/news/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>PrestaShop 9.2.1 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-9-2-1-security-release/</link>
+          <pubDate>Mon, 09 Nov 2026 07:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-9-2-1-security-release/</guid>
+          <description>PrestaShop 9.2.1 is now available. It fixes eighteen vulnerabilities reported through coordinated disclosure, fifteen of them rated High, and ships two updated modules (newsletter and GDPR). Several of them can be exploited without any account on the shop. It also brings two back office bug fixes and updated dependencies. Updating as soon as possible is strongly recommended.</description>
+        </item>
+      
+        <item>
+          <title>PrestaShop 8.2.9 is available</title>
+          <link>https://build.prestashop-project.org/news/2026/prestashop-8-2-9-security-release/</link>
+          <pubDate>Mon, 09 Nov 2026 06:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/prestashop-8-2-9-security-release/</guid>
+          <description>PrestaShop 8.2.9 is available. This is a security-only release for the 8.2 branch that fixes fifteen vulnerabilities, twelve of them rated High, and ships two updated modules (newsletter and GDPR). Several of them can be exploited without any account on the shop. Updating as soon as possible is strongly recommended.</description>
+        </item>
+      
         <item>
           <title>PrestaShop Core Monthly - October 2026</title>
           <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-10-01-2026-10-31/</link>
@@ -122,24 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2026/prestashop-9-2-feature-freeze/</guid>
           <description>As of July 9th, 2026, PrestaShop version 9.2 has entered the feature freeze phase. Learn more about the feature freeze, the next steps, and what’s coming in PrestaShop 9.2.</description>
-        </item>
-      
-        <item>
-          <title>PrestaShop Core Monthly - June 2026</title>
-          <link>https://build.prestashop-project.org/news/2026/core-monthly-2026-06-01-2026-06-30/</link>
-          <pubDate>Fri, 03 Jul 2026 00:00:00 +0200</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2026/core-monthly-2026-06-01-2026-06-30/</guid>
-          <description>Welcome to the June 2026 Core Monthly. It was a month that balanced two very different rhythms: the urgency of shipping a security fix across the whole ecosystem, and the quieter, steady progress of features and tooling maturing in the background.</description>
-        </item>
-      
-        <item>
-          <title>PS Summit 2026 in Lyon - Registrations, Call for Papers and Workshops</title>
-          <link>https://build.prestashop-project.org/news/2026/ps-summit-2026-lyon-registrations-call-for-papers-workshops/</link>
-          <pubDate>Thu, 02 Jul 2026 00:00:00 +0200</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2026/ps-summit-2026-lyon-registrations-call-for-papers-workshops/</guid>
-          <description>We are excited to announce that the first-ever PS Summit powered by PrestaShop &amp; Sylius is officially taking shape! This November, our communities will meet in Lyon, France, to bring together the open source ecommerce community and the wider ecosystem. Registrations are now open, our Call for Papers is ready for your proposals, and we have an exclusive cross-community workshop planned just before the main event.</description>
         </item>
       
   </channel>

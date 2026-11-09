@@ -17,9 +17,6 @@ tags:
 - "8.2.x"
 ---
 
-<!-- DO NOT PUBLISH before the GHSA advisories are public (step V.6): the links below are private drafts until then.
-     CVE ids are pending at GitHub except CVE-2026-71519 and CVE-2026-71531: add the others to the Identifier lines once assigned. -->
-
 PrestaShop 8.2.9 is available. This is a security-only release for the 8.2 branch that fixes fifteen vulnerabilities, twelve of them rated High, and ships two updated modules (newsletter and GDPR). Several of them can be exploited without any account on the shop. Updating as soon as possible is strongly recommended.
 
 ![PrestaShop 8.2.9 is available!](/assets/images/2026/11/banner_8.2.9_1534x424.jpg)

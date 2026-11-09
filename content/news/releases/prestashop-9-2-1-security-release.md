@@ -17,9 +17,6 @@ tags:
 - "9.2.x"
 ---
 
-<!-- DO NOT PUBLISH before the GHSA advisories are public (step V.6): the links below are private drafts until then.
-     CVE ids are pending at GitHub except CVE-2026-71519 and CVE-2026-71531: add the others to the Identifier lines once assigned. -->
-
 PrestaShop 9.2.1 is now available. It fixes eighteen vulnerabilities reported through coordinated disclosure, fifteen of them rated High, and ships two updated modules (newsletter and GDPR). Several of them can be exploited without any account on the shop. It also brings two back office bug fixes and updated dependencies. Updating as soon as possible is strongly recommended.
 
 ![PrestaShop 9.2.1 is available!](/assets/images/2026/11/9.2.1_1534x434.png)

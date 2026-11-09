@@ -118,13 +118,6 @@ The Classic edition now ships PrestaShop Checkout 5.5.6 (9.5.5.6), which include
 
 {{< cta "https://prestashop.com/versions/" >}}Download PrestaShop 9.2.1 now!{{< /cta >}}
 
-<details class="advanced-toggle">
-<summary>Need a custom ZIP without PrestaShop SA modules?</summary>
-
-If you don't want to use the Classic version, you can build your custom ZIP file with the PrestaShop 9.2.1 installer, which doesn't include any PrestaShop SA modules. You can read the instructions on how to do it in the [PrestaShop Release Creation Tool readme](https://github.com/PrestaShop/PrestaShop/tree/develop/tools/build).
-
-</details>
-
 ## Update to PrestaShop 9.2.1
 
 Because this release fixes eighteen security issues, we recommend applying it on any shop running 9.2.0 as soon as possible. Before updating, ensure you create a full backup of your database and files to safeguard your data.
@@ -172,8 +165,6 @@ If you encounter any problems during the update that, in your opinion, are not c
   - Bug fix:
     - Create the API client enabled in the authorization endpoint UI test (by [@mattgoud](https://github.com/mattgoud))
     - [#43368](https://github.com/PrestaShop/PrestaShop/pull/43368): Update tests UI dependencies (by [@Quetzacoalt91](https://github.com/Quetzacoalt91))
-
-{{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/9.2.1" >}}See the full release notes{{< /cta >}}
 
 ## Acknowledgments
 

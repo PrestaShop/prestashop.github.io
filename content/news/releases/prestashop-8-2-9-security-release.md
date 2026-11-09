@@ -140,8 +140,6 @@ As a reminder, [PrestaShop 8.2.x is in its extended support phase]({{< relref "/
     - [GHSA-hjwq-7qvv-qxj4](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-hjwq-7qvv-qxj4): Keep webservice record access within the shops a key is allowed on (by [@M0rgan01](https://github.com/M0rgan01))
     - [GHSA-3f36-4qv4-vfgh](https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-3f36-4qv4-vfgh): Keep webservice keys within the shops they are allowed on (by [@M0rgan01](https://github.com/M0rgan01))
 
-{{< cta "https://github.com/PrestaShop/PrestaShop/releases/tag/8.2.9" >}}See the full release notes{{< /cta >}}
-
 ## Acknowledgments
 
 This security release was made possible thanks to a coordinated disclosure process between external researchers and the PrestaShop maintainers team. Many of these issues were reported by several researchers independently: each of them is credited below.

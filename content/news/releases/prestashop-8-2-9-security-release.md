@@ -105,7 +105,7 @@ If you encounter any problems during the update that, in your opinion, are not c
 
 The Classic edition now ships PrestaShop Checkout 5.5.6 (8.5.5.6), which includes the fixes of the module advisories [GHSA-6q9v-2g94-hxm5](https://github.com/PrestaShopCorp/ps_checkout/security/advisories/GHSA-6q9v-2g94-hxm5) and [GHSA-678f-q3v5-9fw4](https://github.com/PrestaShopCorp/ps_checkout/security/advisories/GHSA-678f-q3v5-9fw4).
 
-{{< cta "https://prestashop.com/versions/#:~:text=PrestaShop%208.2.9" >}}Download PrestaShop 8.2.9 now!{{< /cta >}}
+{{< cta "https://prestashop.com/versions/" >}}Download PrestaShop 8.2.9 now!{{< /cta >}}
 
 ## PrestaShop 9
 
@@ -166,9 +166,9 @@ We would like to thank:
 * **Mukul Goyal** (parameter.ai), and independently **boo-code**, for the path traversal in email translations;
 * **Savio** ([Doyensec](https://www.doyensec.com/)) in collaboration with Anthropic Research, and independently **Sanghyeon Lee**, **Dawit Jeong**, **Amit Chavan** and **abraxas**, for the predictable password reset token.
 
-On the maintainers side, thank you to [@M0rgan01](https://github.com/M0rgan01), [@mattgoud](https://github.com/mattgoud), [@nicosomb](https://github.com/nicosomb), [@clotairer](https://github.com/clotairer), [@Quetzacoalt91](https://github.com/Quetzacoalt91), [@jolelievre](https://github.com/jolelievre) and [@matthieu-rolland](https://github.com/matthieu-rolland) for analysing the reports and preparing the patches, and to [@seiwan](https://github.com/seiwan) for the PrestaShop Checkout advisories.
+On the maintainers side, thank you to [@M0rgan01](https://github.com/M0rgan01), [@mattgoud](https://github.com/mattgoud), [@nicosomb](https://github.com/nicosomb), [@clotairer](https://github.com/clotairer), [@Quetzacoalt91](https://github.com/Quetzacoalt91) and [@jolelievre](https://github.com/jolelievre) for analysing the reports and preparing the patches, and to [@seiwan](https://github.com/seiwan) for the PrestaShop Checkout advisories.
 
-{{< contributors-grid "M0rgan01" "mattgoud" "nicosomb" "clotairer" "Quetzacoalt91" "jolelievre" "matthieu-rolland" "seiwan" >}}
+{{< contributors-grid "M0rgan01" "mattgoud" "nicosomb" "clotairer" "Quetzacoalt91" "jolelievre" "seiwan" >}}
 Thank you to everyone who contributes to keeping PrestaShop secure! Reporting responsibly, reviewing a patch, or testing a fix before it ships all make a real difference.
 
 Want to help? [Start contributing today](https://www.prestashop-project.org/get-involved/), or report a security issue to security-core@prestashop.com.

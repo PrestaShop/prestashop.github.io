@@ -119,7 +119,7 @@ You can download the Classic version from the official PrestaShop website. This 
 
 The Classic edition now ships PrestaShop Checkout 5.5.6 (9.5.5.6), which includes the fixes of the module advisories [GHSA-6q9v-2g94-hxm5](https://github.com/PrestaShopCorp/ps_checkout/security/advisories/GHSA-6q9v-2g94-hxm5) and [GHSA-678f-q3v5-9fw4](https://github.com/PrestaShopCorp/ps_checkout/security/advisories/GHSA-678f-q3v5-9fw4).
 
-{{< cta "https://prestashop.com/versions/#:~:text=PrestaShop%209.2.1" >}}Download PrestaShop 9.2.1 now!{{< /cta >}}
+{{< cta "https://prestashop.com/versions/" >}}Download PrestaShop 9.2.1 now!{{< /cta >}}
 
 <details class="advanced-toggle">
 <summary>Need a custom ZIP without PrestaShop SA modules?</summary>

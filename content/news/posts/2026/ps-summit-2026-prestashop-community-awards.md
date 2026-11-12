@@ -2,7 +2,7 @@
 layout: post
 title: "PS Summit 2026: the first PrestaShop Community Awards"
 subtitle: "Meet the people and teams who stood out in the PrestaShop community this year"
-date: 2026-11-11
+date: 2026-11-12
 authors: [ marsaldev ]
 icon: icon-leaf
 tags: [news, event, community]

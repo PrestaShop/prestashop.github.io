@@ -17,7 +17,7 @@ tags:
 - "9.2.x"
 ---
 
-PrestaShop 9.2.1 is now available. It fixes eighteen vulnerabilities reported through coordinated disclosure, fifteen of them rated High, and ships two updated modules (newsletter and GDPR). Several of them can be exploited without any account on the shop. It also brings two back office bug fixes and updated dependencies. Updating as soon as possible is strongly recommended.
+PrestaShop 9.2.1 is now available. It fixes eighteen vulnerabilities reported through coordinated disclosure, fifteen of them rated High, and ships two updated modules (newsletter and GDPR). It also brings two back office bug fixes and updated dependencies. Updating as soon as possible is strongly recommended.
 
 ![PrestaShop 9.2.1 is available!](/assets/images/2026/11/9.2.1_1534x434.png)
 
@@ -98,7 +98,7 @@ Fifteen of these issues are also fixed in PrestaShop 8.2.9, released simultaneou
 
 PrestaShop 9.2.1 also ships version 3.0.1 of the **ps_emailsubscription** module, which fixes a CSV injection in the subscribers export ([GHSA-pg6j-qf29-gc43](https://github.com/PrestaShop/ps_emailsubscription/security/advisories/GHSA-pg6j-qf29-gc43), Medium 6.1/10, CWE-1236). Email addresses starting with a formula character were accepted at newsletter sign-up and written as-is in the export, so they could be interpreted as formulas when an administrator opened the file in a spreadsheet application.
 
-PrestaShop 9.2.1 also ships version 1.4.4 of the **psgdpr** module, which fixes an insecure direct object reference in the front office consent logging ([GHSA-wwqh-cf9m-347f](https://github.com/PrestaShop/psgdpr/security/advisories/GHSA-wwqh-cf9m-347f), [CVE-2026-92809](https://www.cve.org/CVERecord?id=CVE-2026-92809), Medium 5.3/10, CWE-639). The module trusted the customer id sent in the request, so anyone, even a visitor without an account, could record a consent on behalf of another customer in the GDPR log.
+It also includes version 1.4.4 of the **psgdpr** module, which fixes an insecure direct object reference in the front office consent logging ([GHSA-wwqh-cf9m-347f](https://github.com/PrestaShop/psgdpr/security/advisories/GHSA-wwqh-cf9m-347f), [CVE-2026-92809](https://www.cve.org/CVERecord?id=CVE-2026-92809), Medium 5.3/10, CWE-639). The module trusted the customer id sent in the request, so anyone, even a visitor without an account, could record a consent on behalf of another customer in the GDPR log.
 
 If you do not update the shop right away, you can update these modules on their own from the Module Manager.
 

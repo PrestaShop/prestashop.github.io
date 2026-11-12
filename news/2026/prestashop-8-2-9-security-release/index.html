@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>PrestaShop 8.2.9 is available</title>
-    <link href="/style.css?1794231915" rel="stylesheet">
+    <link href="/style.css?1794483457" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
@@ -13,7 +13,7 @@
 
     
 <meta property="og:title" content="PrestaShop 8.2.9 is available" />
-<meta property="og:description" content="PrestaShop 8.2.9 is available. This is a security-only release for the 8.2 branch that fixes fifteen vulnerabilities, twelve of them rated High, and ships two updated modules (newsletter and GDPR). Several of them can be exploited without any account on the shop. Updating as soon as possible is strongly recommended." />
+<meta property="og:description" content="PrestaShop 8.2.9 is available. This is a security-only release for the 8.2 branch that fixes fifteen vulnerabilities, twelve of them rated High, and ships two updated modules (newsletter and GDPR). Updating as soon as possible is strongly recommended." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://build.prestashop-project.org/news/2026/prestashop-8-2-9-security-release/" />
     <meta property="og:image" content="https://build.prestashop-project.org//assets/images/2026/11/banner_8.2.9_1200x627.jpg"/>
@@ -258,7 +258,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <article class="post-content">
 
-              <p>PrestaShop 8.2.9 is available. This is a security-only release for the 8.2 branch that fixes fifteen vulnerabilities, twelve of them rated High, and ships two updated modules (newsletter and GDPR). Several of them can be exploited without any account on the shop. Updating as soon as possible is strongly recommended.</p>
+              <p>PrestaShop 8.2.9 is available. This is a security-only release for the 8.2 branch that fixes fifteen vulnerabilities, twelve of them rated High, and ships two updated modules (newsletter and GDPR). Updating as soon as possible is strongly recommended.</p>
 <p><img src="/assets/images/2026/11/banner_8.2.9_1534x424.jpg" alt="PrestaShop 8.2.9 is available!"></p>
 <h2 id="security-fixes">Security fixes</h2>
 <ul>
@@ -366,7 +366,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>These issues are also fixed in PrestaShop 9.2.1, released simultaneously, which additionally fixes three vulnerabilities that only concern PrestaShop 9.</p>
 <h3 id="module-updates">Module updates</h3>
 <p>PrestaShop 8.2.9 also ships version 3.0.1 of the <strong>ps_emailsubscription</strong> module, which fixes a CSV injection in the subscribers export (<a href="https://github.com/PrestaShop/ps_emailsubscription/security/advisories/GHSA-pg6j-qf29-gc43">GHSA-pg6j-qf29-gc43</a>, Medium 6.1/10, CWE-1236). Email addresses starting with a formula character were accepted at newsletter sign-up and written as-is in the export, so they could be interpreted as formulas when an administrator opened the file in a spreadsheet application.</p>
-<p>PrestaShop 8.2.9 also ships version 1.4.4 of the <strong>psgdpr</strong> module, which fixes an insecure direct object reference in the front office consent logging (<a href="https://github.com/PrestaShop/psgdpr/security/advisories/GHSA-wwqh-cf9m-347f">GHSA-wwqh-cf9m-347f</a>, <a href="https://www.cve.org/CVERecord?id=CVE-2026-92809">CVE-2026-92809</a>, Medium 5.3/10, CWE-639). The module trusted the customer id sent in the request, so anyone, even a visitor without an account, could record a consent on behalf of another customer in the GDPR log.</p>
+<p>It also includes version 1.4.4 of the <strong>psgdpr</strong> module, which fixes an insecure direct object reference in the front office consent logging (<a href="https://github.com/PrestaShop/psgdpr/security/advisories/GHSA-wwqh-cf9m-347f">GHSA-wwqh-cf9m-347f</a>, <a href="https://www.cve.org/CVERecord?id=CVE-2026-92809">CVE-2026-92809</a>, Medium 5.3/10, CWE-639). The module trusted the customer id sent in the request, so anyone, even a visitor without an account, could record a consent on behalf of another customer in the GDPR log.</p>
 <p>If you do not update the shop right away, you can update these modules on their own from the Module Manager.</p>
 <h2 id="update-to-prestashop-829">Update to PrestaShop 8.2.9</h2>
 <p>Updating your shop to version 8.2.9 is highly recommended. You can use the <a href="https://github.com/PrestaShop/autoupgrade/releases/">Update Assistant</a> to perform the update.</p>

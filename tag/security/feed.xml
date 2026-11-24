@@ -6,7 +6,16 @@
     <description>Recent content in Security on PrestaShop Developers&#39; blog</description>
     <generator>Hugo -- gohugo.io</generator>
   <language>en-us</language>
-      <lastBuildDate>Mon, 09 Nov 2026 07:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/security/feed.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://build.prestashop-project.org/tag/security/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Security hygiene for your PrestaShop store: a practical checklist</title>
+          <link>https://build.prestashop-project.org/news/2026/security-hygiene-for-prestashop-stores/</link>
+          <pubDate>Tue, 24 Nov 2026 00:00:00 +0100</pubDate>
+            
+          <guid>https://build.prestashop-project.org/news/2026/security-hygiene-for-prestashop-stores/</guid>
+          <description>Earlier this month, we released PrestaShop 9.2.1 and 8.2.9, security releases for vulnerabilities reported through coordinated disclosure. Of the eighteen fixed in 9.2.1, twelve could only be exploited with a Back Office account or a webservice key. In other words, how much damage a flaw can do depends a lot on how well everything around the software is protected.</description>
+        </item>
+      
         <item>
           <title>PrestaShop 9.2.1 is available</title>
           <link>https://build.prestashop-project.org/news/2026/prestashop-9-2-1-security-release/</link>
@@ -131,15 +140,6 @@
             
           <guid>https://build.prestashop-project.org/news/2025/prestashop-8-2-3-security-release/</guid>
           <description>PrestaShop 8.2.3 is available. It is a security‑driven patch release for the 8.2 branch. Its primary goal is to address an email enumeration vulnerability in the back office password reset feature. A handful of low-risk improvements and bug fixes that have already been validated have also been included.</description>
-        </item>
-      
-        <item>
-          <title>SQL Injection attacks alert and security enhancements for PrestaShop</title>
-          <link>https://build.prestashop-project.org/news/2025/sql-injection-attacks-alert-and-security-enhancements-for-prestashop/</link>
-          <pubDate>Wed, 22 Jan 2025 00:00:00 +0100</pubDate>
-            
-          <guid>https://build.prestashop-project.org/news/2025/sql-injection-attacks-alert-and-security-enhancements-for-prestashop/</guid>
-          <description>A recent wave of attacks has targeted PrestaShop stores, leveraging SQL Injection vulnerabilities in third-party modules to compromise data security. Malicious actors exploit these vulnerabilities to inject harmful code into the PrestaShop database, enabling the theft of sensitive customer information by loading unauthorized JavaScript scripts.</description>
         </item>
       
   </channel>

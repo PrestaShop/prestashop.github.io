@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Security hygiene for your PrestaShop store: a practical checklist</title>
+    <link href="/style.css?1795542001" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+<meta property="og:title" content="Security hygiene for your PrestaShop store: a practical checklist" />
+<meta property="og:description" content="Earlier this month, we released PrestaShop 9.2.1 and 8.2.9, security releases for vulnerabilities reported through coordinated disclosure. Of the eighteen fixed in 9.2.1, twelve could only be exploited with a Back Office account or a webservice key. In other words, how much damage a flaw can do depends a lot on how well everything around the software is protected." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://build.prestashop-project.org/news/2026/security-hygiene-for-prestashop-stores/" />
+    <meta property="og:image" content="https://build.prestashop-project.org//assets/images/theme/banner-security.jpg"/>
+    <meta property="article:section" content="news" />
+    <meta property="article:published_time" content="2026-11-24T00:00:00+01:00" />
+    <meta property="article:modified_time" content="2026-11-24T00:00:00+01:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://build.prestashop-project.org//assets/images/theme/banner-security.jpg">
+<meta name="twitter:title" content="Security hygiene for your PrestaShop store: a practical checklist"/>
+<meta name="twitter:description" content="WAF, Back Office lockdown, 2FA, database isolation, and why you can stop changing your password every 90 days."/>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KF9S835S');</script>
+
+    
+</head>
+
+
+  <body>
+  
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF9S835S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  
+  
+  <header class="site-header">
+
+  <div class="container">
+    <div class="row clearfix">
+
+      <button class="menu-button" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+      </button>
+
+      <div id="logo" class="">
+        
+        <a href="https://build.prestashop-project.org/">
+          <img src="/assets/images/theme/2024-logo.svg" alt="PrestaShop Developers&#39; blog Logo">
+        </a>
+      </div>
+
+      <div id="navigation" class="">
+        <div class="mobile-nav-panels">
+          <div class="mobile-nav-panel mobile-nav-main">
+            <nav>
+  <ul id="main-navigation" class="nav navbar-nav navbar-collapse">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Start Developing <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer
+            Documentation <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+        </li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tools">Useful Tools</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Stay Updated <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="/tag/releases/">Latest Releases</a></li>
+        <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+        <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+        <li><a href="/tag/live-update/">Live Updates</a></li>
+        <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+        <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube
+            Channel <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/tag/event/">Events</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Community <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack
+            Community
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+        <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://contributors.prestashop-project.org/">Top Contributors
+            <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+        <li><a href="http://translators.prestashop.com/">Top Translators <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span
+              class="sr-only"> (external link)</span></a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        Contact <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="https://www.prestashop-project.org/support" target="_blank" rel="noopener noreferrer">
+            Support <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank"
+            rel="noopener noreferrer">GitHub
+            Discussions <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span>
+          </a>
+        </li>
+        <li>
+          <a href="/contact/">
+            Contact us
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="">
+      <a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs
+        <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a>
+    </li>
+  </ul>
+</nav>
+          </div>
+
+          <div class="mobile-nav-panel mobile-nav-submenu" aria-hidden="true">
+            <button type="button" class="mobile-nav-back" aria-label="Back">Back</button>
+            <div class="mobile-nav-submenu-title" aria-hidden="true"></div>
+            <ul class="mobile-nav-submenu-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="search-icon-wrapper">
+        <button id="search-toggle" aria-label="Search">
+          <i class="icon icon-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <i class="icon icon-magnifying-glass search-overlay-icon" aria-hidden="true"></i>
+
+      <div id="algolia-container">
+        <div class="aa-input-container" id="aa-input-container">
+          <input type="search" id="aa-search-input" class="aa-input-search form-control" placeholder="Search..." name="search" autocomplete="off" />
+        </div>
+      </div>
+
+      <button id="search-close" class="search-close" aria-label="Close search">×</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="page-content">
+      <div class="container">
+        
+  <div class="post">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <header class="post-header">
+            <h1 class="page-title">Security hygiene for your PrestaShop store: a practical checklist</h1>
+              
+                <h3 class="post-subtitle">WAF, Back Office lockdown, 2FA, database isolation, and why you can stop changing your password every 90 days.</h3>
+              
+          </header>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="post-sidebar" class="col-md-2">
+
+          <aside class="author">
+              <div class="author-avatar clearfix">
+  
+  
+      <a href="https://build.prestashop-project.org/authors/marsaldev/">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/48283112?v=4" alt="Marco Salvatore's picture">
+      </a>
+  
+</div>
+
+<div class="aside-meta">Written by</div>
+<div class="author-name">
+  
+    <div class="author-item">
+      <div class="author-display-name">
+        <a href="https://build.prestashop-project.org/authors/marsaldev/">Marco Salvatore</a>
+      </div>
+        
+          <div class="author-display-role">Solution Engineer</div>
+        
+    </div>
+  
+</div>
+
+          </aside>
+
+          <aside class="post-meta-sidebar">
+              <div class="aside-meta">Published</div>
+<p class="publish-date">
+    Nov 24, 2026
+</p>
+
+          </aside>
+
+          <aside class="share-buttons">
+              <div class="aside-meta">Share this</div>
+
+<a href="https://x.com/intent/post?text=Security&#43;hygiene&#43;for&#43;your&#43;PrestaShop&#43;store%3A&#43;a&#43;practical&#43;checklist&amp;url=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fsecurity-hygiene-for-prestashop-stores%2F&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Share on X">
+    <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+  <path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+</a>
+
+<a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fbuild.prestashop-project.org%2Fnews%2F2026%2Fsecurity-hygiene-for-prestashop-stores%2F" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="icon-facebook-alt"></i>
+</a>
+
+          </aside>
+
+        </div>
+
+        <div class="col-md-10">
+
+          <article class="post-content">
+
+              <p>Earlier this month, we released <a href="/news/2026/prestashop-9-2-1-security-release/">PrestaShop 9.2.1</a> and <a href="/news/2026/prestashop-8-2-9-security-release/">8.2.9</a>, security releases for vulnerabilities reported through coordinated disclosure. Of the eighteen fixed in 9.2.1, twelve could only be exploited with a Back Office account or a webservice key. In other words, how much damage a flaw can do depends a lot on how well everything around the software is protected.</p>
+<p>Fixing vulnerabilities in PrestaShop is our job. Protecting the store around it is in the hands of merchants, agencies, and hosting providers, so we&rsquo;ve gathered the practices we recommend most often. None of them needs a security team, most take less than an hour, and together they form layers: when one fails, the next one is still standing.</p>
+<h2 id="1-keep-everything-up-to-date">1. Keep everything up to date</h2>
+<p>This one comes first because it matters most. The vast majority of PrestaShop security advisories concern modules, and fixes only protect you once they are installed.</p>
+<ul>
+<li><strong>Update the core</strong> to the latest patch release of your branch. Patch releases are drop-in and often contain security fixes. See <a href="https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/">Keep PrestaShop up-to-date</a>.</li>
+<li><strong>Update your modules and theme</strong>, not only the core.</li>
+<li><strong>Remove modules you don&rsquo;t use.</strong> A disabled module is still code on your server, and its files may still be reachable.</li>
+<li><strong>Never install &ldquo;nulled&rdquo; or pirated modules.</strong> Backdoors in cracked modules are a classic, and they are designed to stay invisible.</li>
+<li><strong>Run a supported PHP version.</strong> An end-of-life PHP no longer receives security fixes.</li>
+<li><strong>Follow the advisories:</strong> the <a href="https://github.com/PrestaShop/PrestaShop/security/advisories">PrestaShop security advisories on GitHub</a> for the core and native modules, and the <a href="https://security.friendsofpresta.org/">Friends of Presta security advisories</a> (with an <a href="https://security.friendsofpresta.org/feed.xml">RSS feed</a>) for the wider module ecosystem.</li>
+</ul>
+<h2 id="2-put-a-waf-in-front-of-your-store">2. Put a WAF in front of your store</h2>
+<p>A Web Application Firewall filters malicious requests before they reach PrestaShop: SQL injection payloads, known exploit patterns, vulnerability scanners, credential stuffing bots. It won&rsquo;t replace updates, but it buys you time between the disclosure of a vulnerability and the moment you patch it.</p>
+<p>You have several options:</p>
+<ul>
+<li><strong>A CDN/WAF service</strong> such as Cloudflare (the free plan already provides a lot), or an equivalent offered by your hosting provider.</li>
+<li><strong>A self-hosted WAF</strong>, such as ModSecurity (or a compatible engine) with the <a href="https://coreruleset.org/">OWASP Core Rule Set</a>.</li>
+</ul>
+<p>A few tips if you go the CDN route:</p>
+<ul>
+<li><strong>Make sure the origin server only accepts traffic from the CDN.</strong> If your server&rsquo;s IP is reachable directly, attackers can simply bypass the WAF. Restrict ports 80/443 to your provider&rsquo;s published IP ranges.</li>
+<li><strong>Add rate limiting on the Back Office login</strong> and on the customer login and password recovery pages.</li>
+<li><strong>Start in &ldquo;log&rdquo; mode</strong> for custom rules, check that nothing legitimate is blocked (payment callbacks, webhooks, your ERP), then enforce.</li>
+</ul>
+<h2 id="3-lock-down-the-back-office">3. Lock down the Back Office</h2>
+<p>The Back Office is the keys to the kingdom: customer data, orders, payment configuration, and the ability to upload modules, which in practice means running code on your server. It deserves several layers.</p>
+<h3 id="use-a-non-guessable-admin-url">Use a non-guessable admin URL</h3>
+<p>The PrestaShop installer renames the <code>admin</code> folder with a random suffix, and that&rsquo;s a good thing: keep it that way. Don&rsquo;t rename it to <code>/admin</code>, <code>/backoffice</code>, <code>/administration</code>, or your shop name. A random URL won&rsquo;t stop a targeted attacker, but it removes you from the bulk of automated scans that hammer <code>/admin</code> all day long.</p>
+<h3 id="restrict-it-to-known-ip-addresses">Restrict it to known IP addresses</h3>
+<p>If your team works from fixed IP addresses (an office, a VPN), only allow those to reach the Back Office. With nginx:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">location</span> <span class="s">^~</span> <span class="s">/admin-a1b2c3d4/</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">allow</span> <span class="n">203.0.113.10</span><span class="p">;</span>   <span class="c1"># office
+</span></span></span><span class="line"><span class="cl">    <span class="kn">allow</span> <span class="n">198.51.100.0</span><span class="s">/24</span><span class="p">;</span> <span class="c1"># VPN
+</span></span></span><span class="line"><span class="cl">    <span class="kn">deny</span> <span class="s">all</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># ...your usual PHP handling for the admin folder
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>With Apache, in the admin folder&rsquo;s <code>.htaccess</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-apache" data-lang="apache"><span class="line"><span class="cl"><span class="nb">Require</span> ip <span class="m">203.0.113.10</span> <span class="m">198.51.100.0/24</span>
+</span></span></code></pre></div><p>If you use Cloudflare, you can achieve the same with a WAF rule or with Cloudflare Access (Zero Trust) in front of the admin path.</p>
+<h3 id="add-an-extra-http-authentication-layer">Add an extra HTTP authentication layer</h3>
+<p>When IP restriction isn&rsquo;t practical (remote team, dynamic IPs), HTTP Basic Authentication on the admin folder adds a second, independent password prompt in front of the PrestaShop login. Bots that try leaked PrestaShop credentials never even reach the login form.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">location</span> <span class="s">^~</span> <span class="s">/admin-a1b2c3d4/</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">auth_basic</span>           <span class="s">&#34;Restricted&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">auth_basic_user_file</span> <span class="s">/etc/nginx/.htpasswd-admin</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># ...
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Generate the credentials file with <code>htpasswd -c /etc/nginx/.htpasswd-admin yourname</code>, and keep it <strong>outside</strong> the web root.</p>
+<p>After enabling IP restriction or Basic Auth, test your integrations: some modules, payment providers, or external tools may call URLs inside the admin folder and will need an exception.</p>
+<h3 id="enable-two-factor-authentication">Enable two-factor authentication</h3>
+<p>A password alone is no longer enough. Credential stuffing, phishing kits, and infostealer malware are routine, and a stolen password with no second factor means full access to the Back Office. Two-factor authentication (2FA) means a stolen password is not enough to log in.</p>
+<p>Today, you can add 2FA to the Back Office with a module. And we have good news: <strong>native Back Office 2FA is planned for PrestaShop 9.3</strong>, thanks to a contribution from Paolo Cunti of <a href="https://github.com/Codencode">Codencode</a>, who has been working on it with the core team since the <a href="https://github.com/PrestaShop/PrestaShop/discussions/40318">initial discussion</a>. The <a href="https://github.com/PrestaShop/PrestaShop/pull/40848">pull request</a>, built on the Symfony <code>scheb/2fa</code> bundles, brings:</p>
+<ul>
+<li>one-time codes sent <strong>by email</strong>, or generated by an <strong>authenticator app (TOTP)</strong> set up by scanning a QR code;</li>
+<li><strong>trusted devices</strong>, so you&rsquo;re not asked for a code on every login from your own computer;</li>
+<li><strong>backup codes</strong> to recover access if you lose your phone;</li>
+<li><strong>rate limiting</strong> on code verification and resend.</li>
+</ul>
+<p>It&rsquo;s enabled shop-wide from <strong>Advanced Parameters &gt; Security</strong>, then each employee activates it from their profile. The pull request is still under review, so if you&rsquo;d like to see it land, testing it and leaving feedback is the best way to help. A big thank you to Paolo and Codencode for this contribution!</p>
+<h3 id="manage-employees-properly">Manage employees properly</h3>
+<ul>
+<li><strong>One account per person.</strong> No shared <code>admin@shop.com</code> account: you lose traceability and can&rsquo;t revoke access for one person.</li>
+<li><strong>Least privilege.</strong> Use employee profiles and permissions: your content editor doesn&rsquo;t need access to modules or Advanced Parameters.</li>
+<li><strong>Offboard immediately.</strong> Disable the account the day someone leaves, including agency and freelancer accounts once a project is over.</li>
+<li><strong>Protect the mailbox.</strong> Password recovery (and email-based 2FA) goes through the employee&rsquo;s inbox. If that inbox has no 2FA, it&rsquo;s the weakest link.</li>
+</ul>
+<p>Also have a look at the <strong>Advanced Parameters &gt; Security</strong> page, which lets you configure the <a href="https://docs.prestashop-project.org/v.8-documentation/user-guide/configuring-shop/advanced-parameters/security">password policy</a> and review or clear employee and customer sessions.</p>
+<h2 id="4-stop-forcing-password-changes-every-90-days">4. Stop forcing password changes every 90 days</h2>
+<p>This one might surprise you: <strong>changing passwords on a fixed schedule doesn&rsquo;t make you safer.</strong> It&rsquo;s a long-standing habit, and many security policies still require it, but the research and the official guidance have moved on.</p>
+<p>When people are forced to change passwords often, they don&rsquo;t pick a strong new one: they pick a predictable variation of the old one (<code>Summer2026!</code> becomes <code>Autumn2026!</code>). Attackers know this, and so does the research:</p>
+<ul>
+<li>A <a href="https://doi.org/10.1145/1866307.1866328">University of North Carolina study</a> of more than 7,700 accounts subject to mandatory expiration found that, knowing a user&rsquo;s previous password, an attacker could guess the new one in fewer than 5 attempts for 17% of accounts, and crack 41% of them offline within seconds, as <a href="https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2016/03/time-rethink-mandatory-password-changes">summarized by the FTC</a>.</li>
+<li>The FTC&rsquo;s then Chief Technologist, Lorrie Cranor, wrote in 2016 that &ldquo;requiring regular password changes may actually do more harm than good in some cases&rdquo; (<a href="https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2016/03/time-rethink-mandatory-password-changes">Time to rethink mandatory password changes</a>).</li>
+<li>The UK&rsquo;s National Cyber Security Centre: &ldquo;The NCSC now recommend organisations do not force regular password expiry&rdquo; (<a href="https://www.ncsc.gov.uk/blog-post/problems-forcing-regular-password-expiry">The problems with forcing regular password expiry</a>).</li>
+<li>Microsoft removed password expiration from its Windows security baseline in 2019, calling periodic expiration &ldquo;an ancient and obsolete mitigation of very low value&rdquo; (<a href="https://learn.microsoft.com/en-us/archive/blogs/secguide/security-baseline-final-for-windows-10-v1903-and-windows-server-v1903">Security baseline for Windows 10 v1903</a>).</li>
+<li>And the reference standard, <a href="https://pages.nist.gov/800-63-4/sp800-63b.html">NIST SP 800-63B</a> (revision 4, 2025), is now explicit: &ldquo;Verifiers and CSPs SHALL NOT require subscribers to change passwords periodically. However, verifiers SHALL force a change if there is evidence that the authenticator has been compromised.&rdquo;</li>
+</ul>
+<p>So what should you do instead?</p>
+<ul>
+<li><strong>Use long, unique passwords</strong>, one per service, stored in a <strong>password manager</strong>. Uniqueness is what protects you when <em>another</em> site gets breached.</li>
+<li><strong>Enable 2FA</strong> wherever you can (see above).</li>
+<li><strong>Change a password immediately when there&rsquo;s a reason to:</strong> a breach, a phishing click, malware on a laptop, someone leaving the team.</li>
+<li><strong>Check against known breaches</strong>, for example with <a href="https://haveibeenpwned.com/Passwords">Have I Been Pwned</a>.</li>
+<li><strong>Rely on the built-in password policy.</strong> Since PrestaShop 8, password strength is evaluated with <a href="https://devdocs.prestashop-project.org/9/modules/core-updates/new-password-policy/">zxcvbn</a>, which estimates how hard a password is to guess, rather than just checking for &ldquo;one uppercase, one digit, one symbol&rdquo;.</li>
+</ul>
+<h2 id="5-isolate-the-database">5. Isolate the database</h2>
+<h3 id="use-a-custom-table-prefix">Use a custom table prefix</h3>
+<p>PrestaShop lets you choose the table prefix at installation, and the default is <code>ps_</code>. Many automated SQL injection payloads blindly target <code>ps_employee</code> or <code>ps_customer</code>. A custom prefix (for example <code>k7x_</code>) won&rsquo;t fix an injection vulnerability, but it can turn a ready-made, copy-paste exploit into one that fails. It costs nothing at install time, so pick one.</p>
+<h3 id="never-expose-the-database-to-the-internet">Never expose the database to the internet</h3>
+<p>Your database should only accept connections from your web server.</p>
+<ul>
+<li>If MySQL/MariaDB runs on the same machine, bind it to localhost (<code>bind-address = 127.0.0.1</code>).</li>
+<li>If it runs on a separate server, use a private network and a firewall rule that only allows the web server&rsquo;s IP on port 3306.</li>
+<li>Don&rsquo;t leave <strong>phpMyAdmin</strong> or Adminer publicly reachable. If you need one, put it behind a VPN, IP restriction, or at least Basic Auth.</li>
+<li>Give PrestaShop a <strong>dedicated database user</strong> with privileges only on its own schema, never <code>root</code>.</li>
+</ul>
+<h2 id="6-harden-the-server-and-the-files">6. Harden the server and the files</h2>
+<ul>
+<li><strong>HTTPS everywhere</strong>, with HSTS once you&rsquo;re sure everything works over HTTPS.</li>
+<li><strong>Disable debug mode in production</strong> (<code>_PS_MODE_DEV_</code> set to <code>false</code>). Error messages and stack traces leak paths, versions, and sometimes credentials.</li>
+<li><strong>Remove the <code>install</code> folder</strong> after installation, and don&rsquo;t leave <code>.git</code>, <code>.env</code>, SQL dumps, or <code>backup.zip</code> files in the web root. Scanners look for exactly those.</li>
+<li><strong>Use SFTP or SSH with keys</strong>, not plain FTP.</li>
+<li><strong>Apply sane file permissions:</strong> the web server should not be able to write where it doesn&rsquo;t need to, and PHP execution should be blocked in upload folders.</li>
+<li><strong>Protect your staging and preprod environments</strong> too (Basic Auth, <code>noindex</code>), and avoid copying real customer data into them without anonymizing it.</li>
+</ul>
+<h2 id="7-back-up-and-watch">7. Back up, and watch</h2>
+<ul>
+<li><strong>Back up files and database daily</strong>, keep copies <strong>off the server</strong>, and follow the 3-2-1 rule (3 copies, 2 media, 1 off-site). If an attacker gets on your server, backups stored on the same server can be lost too.</li>
+<li><strong>Test a restore.</strong> A backup you have never restored is a hope, not a backup.</li>
+<li><strong>Monitor file changes</strong>, especially on checkout and payment templates and JavaScript. Card skimmers usually live there, and they are invisible to customers.</li>
+<li><strong>Keep and read your logs:</strong> Back Office logins, WAF events, unusual admin actions.</li>
+</ul>
+<h2 id="the-checklist">The checklist</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Core, modules, theme, and PHP up to date; unused modules removed</li>
+<li><input disabled="" type="checkbox"> Subscribed to PrestaShop and Friends of Presta security advisories</li>
+<li><input disabled="" type="checkbox"> WAF in front of the store, origin not reachable directly</li>
+<li><input disabled="" type="checkbox"> Back Office on a random URL, restricted by IP and/or Basic Auth</li>
+<li><input disabled="" type="checkbox"> 2FA on the Back Office (and on the mailboxes behind it)</li>
+<li><input disabled="" type="checkbox"> One account per employee, least-privilege profiles, prompt offboarding</li>
+<li><input disabled="" type="checkbox"> Long, unique passwords in a password manager, changed on compromise, not on a calendar</li>
+<li><input disabled="" type="checkbox"> Custom database table prefix, database not reachable from the internet, dedicated DB user</li>
+<li><input disabled="" type="checkbox"> HTTPS, debug mode off, no leftover install folder, dumps, or <code>.git</code> in the web root</li>
+<li><input disabled="" type="checkbox"> Off-site backups, tested restore, file change monitoring</li>
+</ul>
+<h2 id="found-a-vulnerability">Found a vulnerability?</h2>
+<p>If you discover a security issue in PrestaShop or one of its native modules, please don&rsquo;t open a public issue. Report it privately by following the <a href="https://github.com/PrestaShop/PrestaShop/security/policy">PrestaShop security policy</a>.</p>
+<p>Security is not a one-time setup, it&rsquo;s a habit. Pick two or three items from the list this week, and keep going from there. If you have other tips that work well for your stores, share them with the community!</p>
+
+
+          </article>
+
+            
+
+
+              <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+          <li class="hidden-md hidden-lg">Nov 24, 2026</li>
+
+          
+            <li>
+              <i class="icon-tag"></i>
+              
+  <a class="label label-primary" href="/tag/security/">security</a>
+
+  <a class="label label-primary" href="/tag/tutorial/">tutorial</a>
+
+  <a class="label label-primary" href="/tag/9.x/">9.x</a>
+
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      
+          <div class="col-md-8">
+  <div class="author-details">
+
+    <div class="row">
+      <div class="col-md-11 col-md-offset-1">
+
+          
+              
+
+                <h5>About the author</h5>
+
+                
+    <h4>
+      <a href="https://build.prestashop-project.org/authors/marsaldev/">Marco Salvatore</a>
+      <span>Solution Engineer</span>
+    </h4>
+
+    
+
+
+
+
+
+
+              
+          
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <p>Want to stay up-to-date with the PrestaShop project and the technical development of PrestaShop?</p>
+  </div>
+
+  <div class="subscribe-btn-container">
+    <a id="subscribe-button" class="cta cta--pattern cta-dark"><span>Subscribe to our newsletter</span></a>
+  </div>
+
+  <div id="subscription-form" class="subscription-form">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4323170",
+        formId: "94e069e0-99ec-4c38-964a-82a27750044e"
+      });
+    </script>
+  </div>
+</div>
+
+<script>
+  document.getElementById('subscribe-button').addEventListener('click', function () {
+    var formDiv = document.getElementById('subscription-form');
+    formDiv.style.display = (formDiv.style.display === 'none' || formDiv.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+<style>
+  .newsletter-section {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; flex-direction: column;
+  }
+
+  .newsletter-text {
+    margin: auto;
+    max-width: 80%;
+    align-content: center;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #595959;
+  }
+
+  .subscribe-btn-container {
+    margin-bottom: 20px;
+  }
+
+  #subscription-form {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+</style>
+      
+
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col-md-12">
+    <div id="disqus_thread"></div><div id="disqus_thread"></div>
+        <script type="application/javascript">
+          window.disqus_config = function () {
+              
+              
+              this.page.url = 'https:\/\/build.prestashop-project.org\/news\/2026\/security-hygiene-for-prestashop-stores\/';
+          };
+          (function() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+              document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+              return;
+            }
+            var d = document, s = d.createElement('script'); s.async = true;
+            s.src = '//' + "prestashopbuild" + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+</div>
+
+    </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="row footer-columns">
+      <div class="col-xs-12 col-md-3 footer-brand">
+        <a class="footer-logo" href="https://www.prestashop-project.org" target="_self" title="Create your online store with PrestaShop">
+          <img id="logo-dotcom" src="/assets/images/theme/2024-logo.svg" alt="Create your online store">
+        </a>
+        <p class="footer-tagline">Official PrestaShop project blog written by
+          <a href="/authors">its members and contributors</a>.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-md-8 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Start developing</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Developer Documentation&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://github.com/PrestaShop/PrestaShop/releases" target="_blank" rel="noopener noreferrer">Download
+                  sources <svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Join Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/">How-to Guides</a></li>
+              <li><a href="/tools/">Development Tools</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Stay updated</h5>
+            <ul class="footer-links">
+              <li><a href="/tag/releases/">Latest Releases</a></li>
+              <li><a href="/tag/live-update/">Live Updates</a></li>
+              <li><a href="/tag/core-monthly/">Core Monthly</a></li>
+              <li><a href="https://www.youtube.com/@prestashopproject" target="_blank" rel="noopener noreferrer">YouTube Channel&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/9.0/">PrestaShop 9.x</a></li>
+              <li><a href="/tag/8.2/">PrestaShop 8.x</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">Community</h5>
+            <ul class="footer-links">
+              <li><a href="https://github.com/PrestaShop/PrestaShop/discussions" target="_blank" rel="noopener noreferrer">GitHub Discussions&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="https://www.prestashop-project.org/slack/" target="_blank" rel="noopener noreferrer">Slack Community&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="http://contributors.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Contributors&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/howtos/misc/contribute-to-prestashop/">Contributor's Guide</a></li>
+              <li><a href="http://translators.prestashop.com/" target="_blank" rel="noopener noreferrer">Translators&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/tag/event/">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 footer-col">
+            <h5 class="footer-title">More</h5>
+            <ul class="footer-links">
+              <li><a href="https://devdocs.prestashop-project.org/" target="_blank" rel="noopener noreferrer">Docs&nbsp;<svg class="nav-external-icon" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 1H15v4.5h-1.5V3.56L8.53 8.53l-1.06-1.06L12.44 2.5H10.5V1ZM2.5 3.5h5V5h-5v8h8v-5H12v5.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1h.5Z"/></svg><span class="sr-only"> (external link)</span></a></li>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/contact/">Contact us</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row footer-bottom">
+      <div id="social-icons" class="col-sm-12">
+
+        
+
+        <a href="https://www.youtube.com/@prestashopproject/" title="YouTube channel">
+          <i class="icon-youtube-alt"></i>
+        </a>
+
+        
+
+        
+
+        
+
+        <a href="/feed.xml" title="RSS feed for this blog">
+          <i class="icon-rss"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/vendors/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/vendors/md5.js"></script>
+
+<script type="text/javascript" src="/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+  <script type="text/javascript">
+
+    var client = algoliasearch("17LZR6CZEL", "79e7d4e77871f415092b78b82a66eaf0");
+    var index = client.initIndex('blog');
+
+    
+    autocomplete('#aa-search-input',
+      { hint: false, debug: false, autoselect: false, minLength: 4 }, {
+        source: autocomplete.sources.hits(index, {hitsPerPage: 6}),
+        
+        displayKey: 'name',
+        
+        templates: {
+          
+          suggestion: function(hit) {
+            var str =
+              '<a href="' + hit.url + '">' +
+              '<span class="hit-title"> ' + hit._highlightResult.title.value + '</span>' +
+              '</a>'
+            ;
+
+            return str;
+          },
+          
+          empty: function() {
+            return '<div class="empty-result">Sorry we couldn\'t find anything.</div>';
+          },
+          footer: function() {
+            return '<p class="algolia-credits">Powered by <img src="/assets/images/theme/algolia.jpg"></p>';
+          }
+        }
+      });
+  </script>
+
+
+
+    
+    <script>
+      window.axeptioSettings = {
+        userCookiesDomain: "prestashop-project.org",
+        clientId: "6859145f7baee141c249caa3",
+        cookiesVersion: "fr-eu-23-06-2025",
+        googleConsentMode: {
+          default: {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            wait_for_update: 500
+          }
+        }
+      };
+      (function(d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true; e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+      })(document, "script");
+    </script>
+    
+  </body>
+</html>
